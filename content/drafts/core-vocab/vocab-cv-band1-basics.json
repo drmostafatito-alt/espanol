@@ -1,0 +1,954 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-band1-basics",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر قد يغيّر المعنى.",
+  "source": {
+    "title": "الأساس الوظيفي: ضمائر وأفعال وأرقام ووقت — إعداد داخلي، يحتاج مراجعة بشرية قبل النشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزمة «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة ومُوثَّقة."
+  },
+  "entries": [
+    {
+      "headword": "estar",
+      "normalized": "estar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/esˈtaɾ/",
+      "pronunciationHintAr": "إستار",
+      "internalRank": 1,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يكون (لحالة أو مكان مؤقت)",
+          "meaningArEg": "يبقى/يكون في حالة",
+          "glossEs": "verbo copulativo de estado y lugar",
+          "exampleEs": "Estoy en casa.",
+          "exampleAr": "أنا في البيت.",
+          "exampleArEg": "أنا في البيت.",
+          "usageNoteAr": "estar للمكان والحالة المؤقتة، وser للصفة الثابتة.",
+          "commonErrorAr": "«Soy en casa» خطأ؛ المكان يكون بـestar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Estoy en casa.",
+          "ar": "أنا في البيت.",
+          "arEg": "أنا في البيت."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "estoy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estás",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "está",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "están",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "tener",
+      "normalized": "tener",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/teˈneɾ/",
+      "pronunciationHintAr": "تِنير",
+      "internalRank": 2,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يملك / عنده",
+          "meaningArEg": "عنده",
+          "glossEs": "verbo de posesión",
+          "exampleEs": "Tengo dos hermanos.",
+          "exampleAr": "عندي أخوان.",
+          "exampleArEg": "عندي أخين.",
+          "usageNoteAr": "tener للتملك والعمر: tengo 25 años.",
+          "commonErrorAr": "لا تُترجم «عندي» حرفيًا بـ«en mí»؛ الصواب tener."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo dos hermanos.",
+          "ar": "عندي أخوان.",
+          "arEg": "عندي أخين."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "tengo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "tienes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "tiene",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "tenemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "tenéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "tienen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "ir",
+      "normalized": "ir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/iɾ/",
+      "pronunciationHintAr": "إير",
+      "internalRank": 3,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يذهب",
+          "meaningArEg": "يروح",
+          "glossEs": "verbo de movimiento",
+          "exampleEs": "Voy al trabajo.",
+          "exampleAr": "أذهب إلى العمل.",
+          "exampleArEg": "أنا رايح الشغل.",
+          "usageNoteAr": "ir + a + مكان. الصيغ: voy, vas, va.",
+          "commonErrorAr": "«Voy casa» خطأ؛ الصواب «voy a casa» مع a قبل المكان."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy al trabajo.",
+          "ar": "أذهب إلى العمل.",
+          "arEg": "أنا رايح الشغل."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "voy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "va",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vais",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "van",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "hacer",
+      "normalized": "hacer",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aˈθeɾ/",
+      "pronunciationHintAr": "أثِير (إسبانيا)",
+      "internalRank": 4,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يفعل / يصنع",
+          "meaningArEg": "يعمل/يعمل حاجة",
+          "glossEs": "verbo de acción general",
+          "exampleEs": "¿Qué haces ahora?",
+          "exampleAr": "ماذا تفعل الآن؟",
+          "exampleArEg": "بتعمل إيه دلوقتي؟",
+          "usageNoteAr": "hacer لكل فعل عام، وللطقس أيضًا: hace frío.",
+          "commonErrorAr": "«hago» ليس «أنا أفعل» بالتشديد على آخر الكلمة فقط؛ النبر على ha."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Qué haces ahora?",
+          "ar": "ماذا تفعل الآن؟",
+          "arEg": "بتعمل إيه دلوقتي؟"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "hago",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "haces",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "hace",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "hacemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "hacéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "hacen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "yo",
+      "normalized": "yo",
+      "kind": "word",
+      "pos": "pron",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ʝo/",
+      "pronunciationHintAr": "يو",
+      "internalRank": 5,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أنا",
+          "meaningArEg": "أنا",
+          "glossEs": "pronombre de primera persona",
+          "exampleEs": "Yo vivo en El Cairo.",
+          "exampleAr": "أنا أعيش في القاهرة.",
+          "exampleArEg": "أنا عايش في القاهرة.",
+          "usageNoteAr": "الضمير غالبًا يُحذف لأن الفعل يدل على الفاعل.",
+          "commonErrorAr": "لا تقل «Yo es»؛ الصواب yo soy."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Yo vivo en El Cairo.",
+          "ar": "أنا أعيش في القاهرة.",
+          "arEg": "أنا عايش في القاهرة."
+        }
+      ]
+    },
+    {
+      "headword": "él",
+      "normalized": "él",
+      "kind": "word",
+      "pos": "pron",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/el/",
+      "pronunciationHintAr": "إل",
+      "internalRank": 6,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هو",
+          "meaningArEg": "هو",
+          "glossEs": "pronombre de tercera persona masculino",
+          "exampleEs": "Él trabaja aquí.",
+          "exampleAr": "هو يعمل هنا.",
+          "exampleArEg": "هو بيشتغل هنا.",
+          "usageNoteAr": "يُكتب بنبرة (él) للتفريق عن أداة التعريف el بلا نبرة.",
+          "commonErrorAr": "«el» بلا نبرة = أداة تعريف، و«él» بنبرة = هو."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Él trabaja aquí.",
+          "ar": "هو يعمل هنا.",
+          "arEg": "هو بيشتغل هنا."
+        }
+      ]
+    },
+    {
+      "headword": "ella",
+      "normalized": "ella",
+      "kind": "word",
+      "pos": "pron",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈeʝa/",
+      "pronunciationHintAr": "إيّا",
+      "internalRank": 7,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هي",
+          "meaningArEg": "هي",
+          "glossEs": "pronombre de tercera persona femenino",
+          "exampleEs": "Ella es profesora.",
+          "exampleAr": "هي مدرّسة.",
+          "exampleArEg": "هي مدرّسة.",
+          "usageNoteAr": "الصيغة نفسها بلا نبرة مكتوبة.",
+          "commonErrorAr": "لا تُنطق «إلا»؛ الـll قريبة من الياء."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ella es profesora.",
+          "ar": "هي مدرّسة.",
+          "arEg": "هي مدرّسة."
+        }
+      ]
+    },
+    {
+      "headword": "nosotros",
+      "normalized": "nosotros",
+      "kind": "word",
+      "pos": "pron",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/noˈsotɾos/",
+      "pronunciationHintAr": "نوسوتروس",
+      "internalRank": 8,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نحن",
+          "meaningArEg": "إحنا",
+          "glossEs": "pronombre de primera persona plural",
+          "exampleEs": "Nosotros estudiamos español.",
+          "exampleAr": "نحن ندرس الإسبانية.",
+          "exampleArEg": "إحنا بندرس إسباني.",
+          "usageNoteAr": "للمؤنث: nosotras.",
+          "commonErrorAr": "لا تخلط nosotros بـvosotros (أنتم)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Nosotros estudiamos español.",
+          "ar": "نحن ندرس الإسبانية.",
+          "arEg": "إحنا بندرس إسباني."
+        }
+      ]
+    },
+    {
+      "headword": "uno",
+      "normalized": "uno",
+      "kind": "word",
+      "pos": "num",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈuno/",
+      "pronunciationHintAr": "أونو",
+      "internalRank": 9,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "واحد",
+          "meaningArEg": "واحد",
+          "glossEs": "número cardinal 1",
+          "exampleEs": "Tengo uno.",
+          "exampleAr": "عندي واحد.",
+          "exampleArEg": "معايا واحد.",
+          "usageNoteAr": "قبل الاسم المذكر يصبح un: un libro.",
+          "commonErrorAr": "«uno libro» خطأ؛ الصواب un libro."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo uno.",
+          "ar": "عندي واحد.",
+          "arEg": "معايا واحد."
+        }
+      ]
+    },
+    {
+      "headword": "dos",
+      "normalized": "dos",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dos/",
+      "pronunciationHintAr": "دوس",
+      "internalRank": 10,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اثنان",
+          "meaningArEg": "اتنين",
+          "glossEs": "número cardinal 2",
+          "exampleEs": "Dos cafés, por favor.",
+          "exampleAr": "قهوتان، من فضلك.",
+          "exampleArEg": "اتنين قهوة، لو سمحت.",
+          "usageNoteAr": "لا يتغير مع الجنس.",
+          "commonErrorAr": "«dos» لا تصير «dosas»؛ الأعداد لا تُؤنَّث هنا."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Dos cafés, por favor.",
+          "ar": "قهوتان، من فضلك.",
+          "arEg": "اتنين قهوة، لو سمحت."
+        }
+      ]
+    },
+    {
+      "headword": "tres",
+      "normalized": "tres",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tɾes/",
+      "pronunciationHintAr": "تريس",
+      "internalRank": 11,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ثلاثة",
+          "meaningArEg": "تلاتة",
+          "glossEs": "número cardinal 3",
+          "exampleEs": "Tres días.",
+          "exampleAr": "ثلاثة أيام.",
+          "exampleArEg": "تلات أيام.",
+          "usageNoteAr": "الأعداد من 1 إلى 30 كلمة واحدة.",
+          "commonErrorAr": "لا تكتب «trés» بنبرة؛ الصيغة بلا نبرة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tres días.",
+          "ar": "ثلاثة أيام.",
+          "arEg": "تلات أيام."
+        }
+      ]
+    },
+    {
+      "headword": "cuatro",
+      "normalized": "cuatro",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkwatɾo/",
+      "pronunciationHintAr": "كواترو",
+      "internalRank": 12,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أربعة",
+          "meaningArEg": "أربعة",
+          "glossEs": "número cardinal 4",
+          "exampleEs": "Cuatro personas.",
+          "exampleAr": "أربعة أشخاص.",
+          "exampleArEg": "أربع أشخاص.",
+          "usageNoteAr": "qu = كو.",
+          "commonErrorAr": "لا تُنطق «كواترو» بـq عربية؛ هي ك."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Cuatro personas.",
+          "ar": "أربعة أشخاص.",
+          "arEg": "أربع أشخاص."
+        }
+      ]
+    },
+    {
+      "headword": "cinco",
+      "normalized": "cinco",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈθinko/",
+      "pronunciationHintAr": "ثينكو (إسبانيا)",
+      "internalRank": 13,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خمسة",
+          "meaningArEg": "خمسة",
+          "glossEs": "número cardinal 5",
+          "exampleEs": "Son las cinco.",
+          "exampleAr": "الساعة الخامسة.",
+          "exampleArEg": "الساعة خمسة.",
+          "usageNoteAr": "تُستخدم مع الساعة: son las cinco.",
+          "commonErrorAr": "«es las cinco» خطأ؛ الساعة تأخذ son las للجمع."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Son las cinco.",
+          "ar": "الساعة الخامسة.",
+          "arEg": "الساعة خمسة."
+        }
+      ]
+    },
+    {
+      "headword": "hoy",
+      "normalized": "hoy",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/oi/",
+      "pronunciationHintAr": "أوي (h صامتة)",
+      "internalRank": 14,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اليوم",
+          "meaningArEg": "النهاردة",
+          "glossEs": "adverbio de tiempo presente",
+          "exampleEs": "Hoy trabajo en casa.",
+          "exampleAr": "اليوم أعمل في المنزل.",
+          "exampleArEg": "النهاردة بشتغل من البيت.",
+          "usageNoteAr": "لا نضيف حرف جر قبلها.",
+          "commonErrorAr": "«en hoy» خطأ؛ نقول hoy وحدها."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hoy trabajo en casa.",
+          "ar": "اليوم أعمل في المنزل.",
+          "arEg": "النهاردة بشتغل من البيت."
+        }
+      ]
+    },
+    {
+      "headword": "mañana",
+      "normalized": "mañana",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/maˈɲana/",
+      "pronunciationHintAr": "مَنْيانا",
+      "internalRank": 15,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غدًا (أو: صباح)",
+          "meaningArEg": "بكرة (أو: الصبح)",
+          "glossEs": "adverbio de tiempo futuro y sustantivo 'mañana'",
+          "exampleEs": "Mañana tengo clase.",
+          "exampleAr": "غدًا عندي درس.",
+          "exampleArEg": "بكرة عندي درس.",
+          "usageNoteAr": "بمعنى «صباح» تكون اسمًا: por la mañana.",
+          "commonErrorAr": "«la mañana» صباح، «mañana» وحدها غدًا — سياق الكلام يحدد."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mañana tengo clase.",
+          "ar": "غدًا عندي درس.",
+          "arEg": "بكرة عندي درس."
+        }
+      ]
+    },
+    {
+      "headword": "ahora",
+      "normalized": "ahora",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aˈoɾa/",
+      "pronunciationHintAr": "أورا",
+      "internalRank": 16,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الآن",
+          "meaningArEg": "دلوقتي",
+          "glossEs": "adverbio de tiempo presente inmediato",
+          "exampleEs": "Ahora no puedo.",
+          "exampleAr": "الآن لا أستطيع.",
+          "exampleArEg": "دلوقتي مش قادر.",
+          "usageNoteAr": "«ahora» = الآن؛ لا تخلطها بـ«hace un momento» (قبل قليل): الأولى للحاضر، والثانية للماضي القريب.",
+          "commonErrorAr": "«en ahora» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ahora no puedo.",
+          "ar": "الآن لا أستطيع.",
+          "arEg": "دلوقتي مش قادر."
+        }
+      ]
+    },
+    {
+      "headword": "aquí",
+      "normalized": "aquí",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aˈki/",
+      "pronunciationHintAr": "أكي",
+      "internalRank": 17,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هنا",
+          "meaningArEg": "هنا",
+          "glossEs": "adverbio de lugar cercano",
+          "exampleEs": "Aquí está tu café.",
+          "exampleAr": "ها هي قهوتك هنا.",
+          "exampleArEg": "أهو قهوتك هنا.",
+          "usageNoteAr": "aquí قريب، ahí متوسط، allí بعيد.",
+          "commonErrorAr": "لا تخلط aquí (هنا) بـallí (هناك)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aquí está tu café.",
+          "ar": "ها هي قهوتك هنا.",
+          "arEg": "أهو قهوتك هنا."
+        }
+      ]
+    },
+    {
+      "headword": "sí",
+      "normalized": "sí",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/si/",
+      "pronunciationHintAr": "سي",
+      "internalRank": 18,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نعم",
+          "meaningArEg": "أيوة",
+          "glossEs": "afirmación",
+          "exampleEs": "Sí, gracias.",
+          "exampleAr": "نعم، شكرًا.",
+          "exampleArEg": "أيوة، شكرًا.",
+          "usageNoteAr": "تُكتب بنبرة للتفريق عن si الشرطية (لو).",
+          "commonErrorAr": "«si» بلا نبرة = لو؛ للنعم نستخدم sí."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sí, gracias.",
+          "ar": "نعم، شكرًا.",
+          "arEg": "أيوة، شكرًا."
+        }
+      ]
+    },
+    {
+      "headword": "no",
+      "normalized": "no",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/no/",
+      "pronunciationHintAr": "نو",
+      "internalRank": 19,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لا",
+          "meaningArEg": "لأ",
+          "glossEs": "negación",
+          "exampleEs": "No, no tengo tiempo.",
+          "exampleAr": "لا، ليس عندي وقت.",
+          "exampleArEg": "لأ، مش معايا وقت.",
+          "usageNoteAr": "النفي بلا يأتي قبل الفعل: no tengo.",
+          "commonErrorAr": "لا تُكرَّر «no no» لغير التأكيد البلاغي."
+        }
+      ],
+      "examples": [
+        {
+          "es": "No, no tengo tiempo.",
+          "ar": "لا، ليس عندي وقت.",
+          "arEg": "لأ، مش معايا وقت."
+        }
+      ]
+    },
+    {
+      "headword": "pero",
+      "normalized": "pero",
+      "kind": "word",
+      "pos": "conj",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈpeɾo/",
+      "pronunciationHintAr": "بيرو",
+      "internalRank": 20,
+      "tags": [
+        "مفردات أساسية",
+        "band1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لكن",
+          "meaningArEg": "بس",
+          "glossEs": "conjunción adversativa",
+          "exampleEs": "Quiero ir, pero no puedo.",
+          "exampleAr": "أريد الذهاب، لكن لا أستطيع.",
+          "exampleArEg": "عايز أروح، بس مش قادر.",
+          "usageNoteAr": "تربط جملتين متعاكستين.",
+          "commonErrorAr": "لا تخلط pero (لكن) بـperro (كلب)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Quiero ir, pero no puedo.",
+          "ar": "أريد الذهاب، لكن لا أستطيع.",
+          "arEg": "عايز أروح، بس مش قادر."
+        }
+      ]
+    }
+  ]
+}

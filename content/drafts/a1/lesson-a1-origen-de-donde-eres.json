@@ -1,0 +1,593 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-origen-de-donde-eres",
+    "titleAr": "من أين أنت؟ التعريف بالبلد والجنسية",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u1-origen",
+    "objectiveAr": "أن يسأل المتعلم عن بلد شخص ويجيب عن بلده وجنسيته بجملة صحيحة، مع مطابقة الجنسية للمذكر والمؤنث، والتفريق بين de (الأصل) و en (المكان).",
+    "estimatedMinutes": 11,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ser",
+      "de",
+      "¿de dónde?",
+      "Egipto",
+      "España",
+      "egipcio",
+      "español"
+    ],
+    "reviewVocabulary": [
+      "hola",
+      "me llamo"
+    ],
+    "targetStructures": [
+      "Soy de + بلد",
+      "¿De dónde eres? / ¿De dónde es usted?",
+      "ser + جنسية (مطابقة الجنس)"
+    ],
+    "grammarTopics": [
+      "ser-presente",
+      "preposicion-de-origen",
+      "concordancia-genero-nacionalidad"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تتعرف على زميلة في دورة إسبانية في القاهرة، وتسألها من أين هي.",
+        "settingAr": "قاعة دراسة، منتصف النهار",
+        "lines": [
+          {
+            "es": "¡Hola! Me llamo Sara. ¿Y tú?",
+            "ar": "مرحبًا! اسمي سارة. وأنت؟",
+            "arEg": "أهلًا! أنا سارة. وإنت؟",
+            "audioKey": "pending/a1-origen-sara-1"
+          },
+          {
+            "es": "Hola, soy Omar. ¿De dónde eres?",
+            "ar": "مرحبًا، أنا عمر. من أين أنتِ؟",
+            "arEg": "أهلًا، أنا عمر. إنتِ منين؟",
+            "audioKey": "pending/a1-origen-omar-1"
+          },
+          {
+            "es": "Soy de España, de Madrid. ¿Y tú?",
+            "ar": "أنا من إسبانيا، من مدريد. وأنت؟",
+            "arEg": "أنا من إسبانيا، من مدريد. وإنت؟",
+            "audioKey": "pending/a1-origen-sara-2"
+          },
+          {
+            "es": "Soy de Egipto. Soy egipcio, de El Cairo.",
+            "ar": "أنا من مصر. أنا مصري، من القاهرة.",
+            "arEg": "أنا من مصر. أنا مصري، من القاهرة.",
+            "audioKey": "pending/a1-origen-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_org_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع واختر البلد الذي ذكره المتحدث.",
+        "audioKey": "pending/a1-origen-omar-2",
+        "speechEs": "Soy de Egipto. Soy egipcio, de El Cairo.",
+        "options": [
+          {
+            "id": "a1_org_1_a",
+            "text": "Egipto",
+            "isCorrect": true,
+            "textAr": "مصر"
+          },
+          {
+            "id": "a1_org_1_b",
+            "text": "España",
+            "isCorrect": false,
+            "textAr": "إسبانيا",
+            "distractorRationaleAr": "بلد سارة في الحوار، لا بلد المتحدث هنا — يميّز من يخلط بين المتحدثين."
+          },
+          {
+            "id": "a1_org_1_c",
+            "text": "México",
+            "isCorrect": false,
+            "textAr": "المكسيك",
+            "distractorRationaleAr": "بلد إسباني مشهور يُستدعى تلقائيًا عند سماع «إسباني»؛ لا يُذكر في المقطع."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_1_a"
+          ]
+        },
+        "explanationAr": "المتحدث قال «Soy de Egipto» أي «أنا من مصر». الكلمة de تعني «من» عند الحديث عن الأصل، وتأتي دائمًا قبل البلد: soy de + بلد.",
+        "errorFeedback": {
+          "a1_org_1_b": "España هي بلد سارة في الحوار. المتحدث نفسه قال Egipto.",
+          "a1_org_1_c": "México لم تُذكر في المقطع. أعد الاستماع إلى «Soy de Egipto»."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "Egipto",
+          "de"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_2_meaning",
+        "type": "word_choice",
+        "instructionAr": "أي سؤال يعني «من أين أنت؟»؟",
+        "contextAr": "تسمع أربعة أسئلة شائعة في أول لقاء. اختر السؤال عن البلد.",
+        "options": [
+          {
+            "id": "a1_org_2_a",
+            "text": "¿De dónde eres?",
+            "isCorrect": true,
+            "textAr": "من أين أنت؟"
+          },
+          {
+            "id": "a1_org_2_b",
+            "text": "¿Adónde vas?",
+            "isCorrect": false,
+            "textAr": "إلى أين أنت ذاهب؟",
+            "distractorRationaleAr": "خلط بين de (من) و a (إلى) — أشهر خطأ عند تعلّم حروف الجر."
+          },
+          {
+            "id": "a1_org_2_c",
+            "text": "¿Cómo estás?",
+            "isCorrect": false,
+            "textAr": "كيف حالك؟",
+            "distractorRationaleAr": "سؤال حالة يُتوقّع في نفس الموقف، لكنه ليس عن البلد."
+          },
+          {
+            "id": "a1_org_2_d",
+            "text": "¿Cómo te llamas?",
+            "isCorrect": false,
+            "textAr": "ما اسمك؟",
+            "distractorRationaleAr": "سؤال تعريف آخر، لكنه عن الاسم لا البلد."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_2_a"
+          ]
+        },
+        "explanationAr": "de = «من»، dónde = «أين»، eres = «أنت تكون» من فعل ser. معًا: «من أين أنت؟». أما ¿Adónde vas? فمعناها «إلى أين ذاهب؟» لأن a تدل على الوجهة.",
+        "errorFeedback": {
+          "a1_org_2_b": "هذا سؤال عن الوجهة: إلى أين ذاهب؟",
+          "a1_org_2_c": "هذا سؤال عن الحال: كيف حالك؟",
+          "a1_org_2_d": "هذا سؤال عن الاسم: ما اسمك؟"
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "¿de dónde?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_3_fill_de",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بحرف الجر المناسب للأصل.",
+        "stemEs": "Soy ____ Egipto.",
+        "stemAr": "أنا من مصر.",
+        "answerKey": {
+          "accepted": [
+            "de"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للحديث عن الأصل نستخدم de بلا استثناء: soy de Egipto, soy de España. الفعل ser هنا بمعنى «أكون من». لو تحدثنا عن المكان الحالي لقلنا estoy en Egipto.",
+        "errorFeedback": {
+          "en": "en تعني «في» للمكان الحالي: estoy en Egipto (أنا موجود في مصر). للأصل نستخدم de.",
+          "a": "a تعني «إلى»: voy a Egipto (سأذهب إلى مصر). الأصل يحتاج de.",
+          "desde": "desde تعني «منذ / من» لبداية زمنية أو مكانية محددة: desde El Cairo حتى القاهرة. للجنسية الأصلية نستخدم de وحدها."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "de",
+          "ser"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_4_order_question",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال صحيح عن البلد.",
+        "items": [
+          {
+            "id": "a1_org_t1",
+            "kind": "token",
+            "text": "eres"
+          },
+          {
+            "id": "a1_org_t2",
+            "kind": "token",
+            "text": "¿De"
+          },
+          {
+            "id": "a1_org_t3",
+            "kind": "token",
+            "text": "dónde"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿De dónde eres?",
+            "¿De dónde eres",
+            "De dónde eres"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "ترتيب السؤال في الإسبانية: أداة الاستفهام + الفعل + الفاعل. هنا: ¿De dónde + eres (أنت)؟ علامة الاستفهام المقلوبة ¿ تُفتح بها الجملة في الإسبانية، ولا تُكتب علامة الإغلاق إلا في النهاية.",
+        "errorFeedback": {
+          "order": "ترتيب السؤال: ¿De dónde eres? — أداة الاستفهام أولًا ثم الفعل."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "¿de dónde?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_5_missing_ser",
+        "type": "type_missing_word",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "____ egipcia, de El Cairo.",
+        "stemAr": "أنا مصرية، من القاهرة.",
+        "answerKey": {
+          "accepted": [
+            "Soy",
+            "soy"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الفعل ser مع الجنسية والأصل دائمًا: soy egipcia / soy egipcio. لا نحذف الفعل كما نفعل في العربية («أنا مصرية» بلا فعل)، فالإسبانية توجب ذكره.",
+        "errorFeedback": {
+          "estoy": "estoy من الفعل estar (الحالة المؤقتة والمكان). الجنسية صفة ثابتة تحتاج ser: soy.",
+          "yo": "«yo» ضمير فقط ولا يُغني عن الفعل. الصحيح yo soy أو soy وحدها.",
+          "mi": "mi تعني «خاصتي»؛ ليست فعلًا."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ser",
+          "egipcio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أنا من مصر.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Soy de Egipto.",
+            "Soy de Egipto",
+            "Yo soy de Egipto.",
+            "Yo soy de Egipto"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«أنا من مصر» = Soy de Egipto. الضمير yo اختياري لأن نهاية الفعل تُبيّن الفاعل، لذلك كلتا الصيغتين صحيحة.",
+        "errorFeedback": {
+          "Soy de Egypto": "اسم مصر بالإسبانية Egipto بحرف g وليس y.",
+          "Estoy de Egipto": "الوجود في مكان يكون بـ estar، لكن الأصل يكون بـ ser: soy de."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "ser",
+          "de",
+          "Egipto"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_7_gender",
+        "type": "word_choice",
+        "instructionAr": "سارة من إسبانيا. أكمل الجملة بالصيغة الصحيحة.",
+        "stemEs": "Sara es de España. Es ____.",
+        "stemAr": "سارة من إسبانيا. هي إسبانية.",
+        "options": [
+          {
+            "id": "a1_org_7_a",
+            "text": "española",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_org_7_b",
+            "text": "español",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة المذكر؛ خطأ مطابقة شائع لأن العربية تقول «إسبانية» بلا تغيير في الجذر."
+          },
+          {
+            "id": "a1_org_7_c",
+            "text": "españolas",
+            "isCorrect": false,
+            "distractorRationaleAr": "جمع مؤنث؛ المتحدثة واحدة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_7_a"
+          ]
+        },
+        "explanationAr": "الجنسية صفة تطابق صاحبها: español للمذكر، española للمؤنث، españoles/españolas للجمع. أضفنا la للمؤنث، وهذا النمط يتكرر: egipcio/egipcia، mexicano/mexicana.",
+        "errorFeedback": {
+          "a1_org_7_b": "español للمذكر. سارة مؤنثة ⇒ española.",
+          "a1_org_7_c": "الجمع لا يناسب شخصًا واحدًا."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "español"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_8_prep_contrast",
+        "type": "preposition_choice",
+        "instructionAr": "اختر حرف الجر: أصل أم مكان حالي؟",
+        "contextAr": "عمر مصري، ويعيش الآن في القاهرة.",
+        "stemEs": "Soy ____ Egipto y vivo ____ El Cairo.",
+        "stemAr": "أنا من مصر وأعيش في القاهرة.",
+        "options": [
+          {
+            "id": "a1_org_8_a",
+            "text": "de / en",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_org_8_b",
+            "text": "en / de",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس الاتجاه الصحيح: يخلط بين وظيفة الأصل ووظيفة المكان."
+          },
+          {
+            "id": "a1_org_8_c",
+            "text": "de / de",
+            "isCorrect": false,
+            "distractorRationaleAr": "تكرار de يوحي بأن العيش أيضًا أصل، وهذا غير صحيح."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_8_a"
+          ]
+        },
+        "explanationAr": "de للأصل والانتساب: soy de Egipto. en للمكان الذي نوجد فيه: vivo en El Cairo. الفرق نفسه بين «أنا من مصر» و«أعيش في القاهرة».",
+        "errorFeedback": {
+          "a1_org_8_b": "الأصل de والمكان en: soy de Egipto, vivo en El Cairo.",
+          "a1_org_8_c": "العيش في مكان يحتاج en لا de."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "de",
+          "Egipto"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_9_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الردّ المناسب للسؤال.",
+        "contextAr": "زميل يسألك: «¿De dónde eres?»",
+        "stemEs": "— ¿De dónde eres?",
+        "stemAr": "— من أين أنت؟",
+        "options": [
+          {
+            "id": "a1_org_9_a",
+            "text": "Soy de Egipto.",
+            "isCorrect": true,
+            "textAr": "أنا من مصر."
+          },
+          {
+            "id": "a1_org_9_b",
+            "text": "Me llamo Omar.",
+            "isCorrect": false,
+            "textAr": "اسمي عمر.",
+            "distractorRationaleAr": "ردّ على سؤال الاسم لا البلد — خلط بين سؤالين تعليميين متجاورين."
+          },
+          {
+            "id": "a1_org_9_c",
+            "text": "Estoy bien, gracias.",
+            "isCorrect": false,
+            "textAr": "أنا بخير، شكرًا.",
+            "distractorRationaleAr": "ردّ على ¿Cómo estás? — سؤال الحال."
+          },
+          {
+            "id": "a1_org_9_d",
+            "text": "Voy a Madrid.",
+            "isCorrect": false,
+            "textAr": "أنا ذاهب إلى مدريد.",
+            "distractorRationaleAr": "ردّ على سؤال الوجهة لا الأصل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_9_a"
+          ]
+        },
+        "explanationAr": "السؤال ¿De dónde eres? يطلب البلد أو المدينة. الردّ الطبيعي: Soy de + بلد، أو Soy de + مدينة.",
+        "errorFeedback": {
+          "a1_org_9_b": "هذا ردّ على ¿Cómo te llamas?",
+          "a1_org_9_c": "هذا ردّ على ¿Cómo estás?",
+          "a1_org_9_d": "هذا ردّ على ¿Adónde vas?"
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "¿de dónde?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_10_formal",
+        "type": "word_choice",
+        "instructionAr": "تسأل مديرًا في العمل بلطف. أي صيغة تختار؟",
+        "contextAr": "مقابلة عمل رسمية؛ تخاطب المدير بصيغة الاحترام.",
+        "options": [
+          {
+            "id": "a1_org_10_a",
+            "text": "¿De dónde es usted?",
+            "isCorrect": true,
+            "textAr": "من أين أنتَ (صيغة احترام)؟"
+          },
+          {
+            "id": "a1_org_10_b",
+            "text": "¿De dónde eres?",
+            "isCorrect": false,
+            "textAr": "من أين أنت؟ (غير رسمي)",
+            "distractorRationaleAr": "صحيحة لغويًا لكنها غير مناسبة في هذا الموقف الرسمي."
+          },
+          {
+            "id": "a1_org_10_c",
+            "text": "¿De dónde soy?",
+            "isCorrect": false,
+            "textAr": "من أين أنا؟",
+            "distractorRationaleAr": "خطأ في الضمير: تسألين عن نفسك لا عن الآخر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_org_10_a"
+          ]
+        },
+        "explanationAr": "usted صيغة الاحترام للمخاطب المفرد، ويأخذ الفعل معه es لا eres: ¿De dónde es usted? أما eres فللأصدقاء والأقران.",
+        "errorFeedback": {
+          "a1_org_10_b": "صحيحة لكنها غير رسمية؛ في مقابلة عمل نستخدم usted.",
+          "a1_org_10_c": "soy تعني «أنا»؛ السؤال المطلوب عن الشخص الآخر."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "¿de dónde?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_org_11_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملتين بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا، ولن يؤثر سلبًا على درجتك.",
+        "stemEs": "Soy de Egipto. Soy egipcio.",
+        "stemAr": "أنا من مصر. أنا مصري.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-origen-11-model-1",
+          "modelAnswer": "Soy de Egipto. Soy egipcio."
+        },
+        "explanationAr": "انطق soy كأنها «سوي» مع ضمّ الشفتين في بداية o. حرف j في egipcio (وكذلك g قبله) يُنطق خاءً مثل «خ» العربية، لا جيمًا مصريًا ولا فصيحًا. النطق التقريبي بالحروف العربية إرشادي فقط.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ser",
+          "Egipto",
+          "egipcio"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح soy",
+              "weight": 50,
+              "code": "pron_soy"
+            },
+            {
+              "labelAr": "نبر de dónde في المقطع الأول",
+              "weight": 50,
+              "code": "stress_de"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد آلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس عيّنة واحد للمراجعة قبل توليد بقية محتوى A1. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي (قرار المصدر والترخيص لم يُتخذ). يحتاج: مراجعة إسبانية أصلية للصياغات والجنسيات، مراجعة ترجمة للعربية، وتأكيد أن مستوى الصعوبة يناسب A1 فعليًا."
+    }
+  }
+}

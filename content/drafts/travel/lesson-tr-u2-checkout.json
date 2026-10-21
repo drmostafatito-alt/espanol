@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u2-checkout",
+    "titleAr": "المغادرة والفاتورة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u2-hotel",
+    "objectiveAr": "أن يسأل المتعلم عن الفاتورة ووقت المغادرة وطريقة الدفع، ويتعامل مع بند غامض في الفاتورة.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "factura",
+      "salida",
+      "efectivo"
+    ],
+    "reviewVocabulary": [
+      "llave",
+      "tarjeta de crédito",
+      "reserva"
+    ],
+    "targetStructures": [
+      "Hago el check-out ahora.",
+      "¿Puede explicarme este cargo?",
+      "Pago con tarjeta."
+    ],
+    "grammarTopics": [
+      "pagos",
+      "preguntas-sobre-factura"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تغادر الفندق صباحًا وتريد دفع الفاتورة.",
+        "settingAr": "الاستقبال، قبل المغادرة",
+        "lines": [
+          {
+            "es": "Buenos días, ¿hace el check-out ahora?",
+            "ar": "صباح الخير، هل ستغادر الآن؟",
+            "arEg": "صباح الخير، هتمشي دلوقتي؟",
+            "audioKey": "pending/tr-u2-l4-recep-1"
+          },
+          {
+            "es": "Sí. ¿Me puede dar la factura, por favor?",
+            "ar": "نعم. هل يمكنك إعطائي الفاتورة من فضلك؟",
+            "arEg": "أيوة. ممكن تديني الفاتورة لو سمحت؟",
+            "audioKey": "pending/tr-u2-l4-omar-1"
+          },
+          {
+            "es": "Claro. ¿Paga en efectivo o con tarjeta?",
+            "ar": "بالتأكيد. هل تدفع نقدًا أم بالبطاقة؟",
+            "arEg": "أكيد. بتدفع كاش ولا بالفيزا؟",
+            "audioKey": "pending/tr-u2-l4-recep-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u2_13_checkout",
+        "type": "word_choice",
+        "instructionAr": "أي صيغة هي المعتادة في السؤال عن الدفع بالبطاقة؟",
+        "options": [
+          {
+            "id": "tr_u2_13_a",
+            "text": "¿Puedo pagar con tarjeta?",
+            "isCorrect": true,
+            "textAr": "هل أستطيع الدفع بالبطاقة؟"
+          },
+          {
+            "id": "tr_u2_13_b",
+            "text": "¿Puedo pagar por tarjeta de crédito?",
+            "isCorrect": false,
+            "distractorRationaleAr": "«por» أقل شيوعًا؛ الصيغة المعتادة «con tarjeta»."
+          },
+          {
+            "id": "tr_u2_13_c",
+            "text": "¿Pago tarjeta?",
+            "isCorrect": false,
+            "textAr": "هل أدفع بطاقة؟",
+            "distractorRationaleAr": "ناقصة حرف الجر والصيغة السليمة: ¿Puedo pagar con tarjeta?"
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_13_a"
+          ]
+        },
+        "explanationAr": "طريقة الدفع: pagar con tarjeta / en efectivo. الفعل «pagar» يتطلب أداة الوسيلة.",
+        "errorFeedback": {
+          "tr_u2_13_b": "الأشيع «con tarjeta».",
+          "tr_u2_13_c": "المطلوب: ¿Puedo pagar con tarjeta?"
+        },
+        "targetVocab": [
+          "efectivo",
+          "tarjeta de crédito"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_14_receipt",
+        "type": "fill_blank",
+        "instructionAr": "أكمل السؤال عن بند في الفاتورة.",
+        "stemEs": "¿Puede ____ este cargo, por favor?",
+        "stemAr": "هل يمكنك تفسير هذا البند من فضلك؟",
+        "answerKey": {
+          "accepted": [
+            "explicarme",
+            "explicar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«explicarme» = أن يشرح لي. تركيب مهذب: ¿Puede explicarme…?",
+        "errorFeedback": {
+          "explica": "بعد ¿Puede? يأتي المصدر.",
+          "explícame": "صيغة أمر غير مناسبة هنا؛ الأفضل ¿Puede explicarme…?"
+        },
+        "targetVocab": [
+          "factura"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_15_departure",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "متى يجب أن أترك الغرفة؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "¿A qué hora tengo que dejar la habitación?",
+            "¿A qué hora debo dejar la habitación?",
+            "¿A qué hora hay que dejar la habitación?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "الالتزام الشخصي: tener que + مصدر أو deber + مصدر. وفي الفنادق يُستخدم أيضًا «la hora de salida».",
+        "errorFeedback": {
+          "¿Cuándo dejo la habitación?": "صحيحة لكنها أقل دقة في سؤال الالتزام.",
+          "¿A qué hora tengo dejar?": "ناقصة «que»: tengo que dejar."
+        },
+        "targetVocab": [
+          "salida"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_16_formal",
+        "type": "choose_reply",
+        "instructionAr": "الموظف يقول: «Ha habido un error con el cargo.» اختر الردّ المناسب.",
+        "stemEs": "— Ha habido un error con el cargo del minibar.",
+        "stemAr": "— حدث خطأ في بند الميني بار.",
+        "options": [
+          {
+            "id": "tr_u2_16_a",
+            "text": "Ah, entiendo. ¿Puede corregirlo, por favor?",
+            "isCorrect": true,
+            "textAr": "آه، أفهم. هل يمكنك تصحيحه من فضلك؟"
+          },
+          {
+            "id": "tr_u2_16_b",
+            "text": "¡Sois unos ladrones!",
+            "isCorrect": false,
+            "textAr": "أنتم لصوص!",
+            "distractorRationaleAr": "إهانة مباشرة تخرج عن اللباقة وقد تكون اتهامًا بلا دليل."
+          },
+          {
+            "id": "tr_u2_16_c",
+            "text": "No entiendo nada de nada.",
+            "isCorrect": false,
+            "textAr": "لا أفهم شيئًا على الإطلاق.",
+            "distractorRationaleAr": "الموظف شرح الخطأ؛ الأفضل طلب التصحيح."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_16_a"
+          ]
+        },
+        "explanationAr": "عند إقرار الموظف بالخطأ: افهم ثم اطلب التصحيح: ¿Puede corregirlo? بلباقة.",
+        "errorFeedback": {
+          "tr_u2_16_b": "تجنّب الاتهام؛ اطلب التصحيح.",
+          "tr_u2_16_c": "الطلب الواضح أفضل من إعلان عدم الفهم."
+        },
+        "targetVocab": [
+          "factura"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الفندق 4/4. يحتاج مراجعة إسبانية أصلية لمصطلح «cargo» في الفواتير، وصيغة «hora de salida». كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

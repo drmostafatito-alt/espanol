@@ -1,0 +1,515 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-presentar-a-otro",
+    "titleAr": "قدّم صديقك: te presento a…",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u1-origen",
+    "objectiveAr": "أن يقدّم المتعلم شخصًا ثالثًا بجملة صحيحة (Te presento a… / Este es… / Esta es…)، ويستخدم es مع الطرف الثالث ويذكر أصله، ويميّز este من esta حسب جنس الاسم.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "señor",
+      "señora",
+      "encantado",
+      "usted"
+    ],
+    "reviewVocabulary": [
+      "ser",
+      "de",
+      "¿de dónde?",
+      "Egipto",
+      "España"
+    ],
+    "targetStructures": [
+      "Te presento a + شخص",
+      "Este es… / Esta es…",
+      "Es de + بلد",
+      "él / ella es"
+    ],
+    "grammarTopics": [
+      "ser-tercera-persona",
+      "demostrativos-este-esta",
+      "presentar-a-alguien"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "في دورة إسبانية، تقدّم صديقتك المصرية إلى زميل إسباني.",
+        "settingAr": "قاعة درس، بعد الحصة",
+        "lines": [
+          {
+            "es": "Hola, Marta. Te presento a mi amiga Nour.",
+            "ar": "مرحبًا مارتا. أقدّم لك صديقتي نور.",
+            "arEg": "أهلًا مارتا. دي صاحبتي نور.",
+            "audioKey": "pending/a1-presentar-omar-1"
+          },
+          {
+            "es": "Encantada, Nour. ¿De dónde eres?",
+            "ar": "تشرفنا يا نور. من أين أنتِ؟",
+            "arEg": "تشرفنا يا نور. إنتِ منين؟",
+            "audioKey": "pending/a1-presentar-marta-1"
+          },
+          {
+            "es": "Soy de Egipto, de Alejandría.",
+            "ar": "أنا من مصر، من الإسكندرية.",
+            "arEg": "أنا من مصر، من إسكندرية.",
+            "audioKey": "pending/a1-presentar-nour-1"
+          },
+          {
+            "es": "Ella es Marta, es de España.",
+            "ar": "هي مارتا، من إسبانيا.",
+            "arEg": "دي مارتا، من إسبانيا.",
+            "audioKey": "pending/a1-presentar-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "fill_blank",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "a1_pres_1_reply",
+        "type": "choose_reply",
+        "instructionAr": "قدّمك صديقك إلى شخص جديد. اختر الردّ المناسب.",
+        "contextAr": "صديقك يقول: «Te presento a Marta.» وأنت رجل.",
+        "stemEs": "— Te presento a Marta.",
+        "stemAr": "— أقدّم لك مارتا.",
+        "options": [
+          {
+            "id": "a1_pres_1_a",
+            "text": "Encantado, Marta. Me llamo Omar.",
+            "textAr": "تشرفنا يا مارتا. اسمي عمر.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pres_1_b",
+            "text": "Encantada, Marta.",
+            "textAr": "تشرفنا يا مارتا. (بصيغة المؤنث)",
+            "isCorrect": false,
+            "distractorRationaleAr": "«Encantada» تقولها امرأة؛ المتحدث هنا رجل فيقول «Encantado»."
+          },
+          {
+            "id": "a1_pres_1_c",
+            "text": "Soy de Egipto.",
+            "textAr": "أنا من مصر.",
+            "isCorrect": false,
+            "distractorRationaleAr": "معلومة صحيحة محتملة لكنها ليست ردًّا على التقديم؛ الرد يبدأ بـEncantado."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pres_1_a"
+          ]
+        },
+        "explanationAr": "الرد المعتاد على التقديم: «Encantado/a» + الاسم، ثم غالبًا «Me llamo…». جنس الصفة يتبع المتحدث: الرجل encantado، المرأة encantada.",
+        "errorFeedback": {
+          "a1_pres_1_b": "أنت رجل ⇒ Encantado بالواو، لا Encantada.",
+          "a1_pres_1_c": "أجب أولًا بالتشرف، ثم يمكنك ذكر بلدك."
+        },
+        "targetVocab": [
+          "encantado"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_2_este",
+        "type": "word_choice",
+        "instructionAr": "أي جملة صحيحة عند تقديم صديق (رجل)؟",
+        "options": [
+          {
+            "id": "a1_pres_2_a",
+            "text": "Este es mi amigo Karim.",
+            "textAr": "هذا صديقي كريم.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pres_2_b",
+            "text": "Esta es mi amigo Karim.",
+            "textAr": "هذه صديقي كريم.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«amigo» مذكر ⇒ «Este es»، لا «Esta es»."
+          },
+          {
+            "id": "a1_pres_2_c",
+            "text": "Este eres mi amigo Karim.",
+            "textAr": "أنت صديقي كريم.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«eres» للمخاطَب (tú)؛ عند الحديث عن شخص ثالث نستخدم «es»."
+          },
+          {
+            "id": "a1_pres_2_d",
+            "text": "Este es mi amiga Karim.",
+            "textAr": "هذا صديقتي كريم.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«amiga» مؤنث؛ الاسم كريم مذكر هنا، والأصح «amigo»."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pres_2_a"
+          ]
+        },
+        "explanationAr": "«Este» للمذكر و«Esta» للمؤنث، ويتبعهما الفعل «es» للشخص الثالث. «amigo/amiga» يحدّد جنس الصديق لا جنس المتحدث.",
+        "errorFeedback": {
+          "a1_pres_2_b": "طابق الجنس: amigo مذكر ⇒ Este es.",
+          "a1_pres_2_c": "«eres» للشخص المخاطَب؛ للشخص الثالث «es».",
+          "a1_pres_2_d": "«amiga» مؤنث ولا يصلح مع اسم مذكر هنا."
+        },
+        "targetVocab": [
+          "señor",
+          "ser"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بفعل الكينونة المناسب للشخص الثالث.",
+        "stemEs": "Mi amiga Nour ____ de Egipto.",
+        "stemAr": "صديقتي نور من مصر.",
+        "answerKey": {
+          "accepted": [
+            "es"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للشخص الثالث (هو/هي) نستخدم «es» من الفعل ser: Nour es de Egipto. الجملة تبقى نفسها مع هو أو هي.",
+        "errorFeedback": {
+          "eres": "«eres» للمخاطَب tú، لا للشخص الثالث.",
+          "soy": "«soy» للمتحدث (أنا)؛ هنا نتحدث عن نور.",
+          "está": "«está» من estar للمكان المؤقت؛ الأصل والجنسية يكونان بـser."
+        },
+        "targetVocab": [
+          "ser"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تقديم صحيحة.",
+        "items": [
+          {
+            "id": "a1_pres_t1",
+            "kind": "token",
+            "text": "Te"
+          },
+          {
+            "id": "a1_pres_t2",
+            "kind": "token",
+            "text": "presento"
+          },
+          {
+            "id": "a1_pres_t3",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "a1_pres_t4",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "a1_pres_t5",
+            "kind": "token",
+            "text": "compañera"
+          },
+          {
+            "id": "a1_pres_t6",
+            "kind": "token",
+            "text": "Nour"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Te presento a mi compañera Nour.",
+            "Te presento a mi compañera Nour",
+            "te presento a mi compañera nour"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "التركيب الثابت: «Te presento a + شخص». حرف الجر «a» واجب قبل الشخص المقدَّم (a mi compañera)، وهو ما يميّز هذا التعبير عن ترجمة حرفية من العربية.",
+        "errorFeedback": {
+          "order": "«Te presento a…» ثم الشخص: a mi compañera Nour."
+        },
+        "targetVocab": [
+          "señora"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_5_fix",
+        "type": "find_fix_error",
+        "instructionAr": "في الجملة خطأ في تقديم شخص. اختر التصحيح.",
+        "stemEs": "Te presento a ella es mi amiga Nour.",
+        "options": [
+          {
+            "id": "a1_pres_5_a",
+            "text": "Te presento a mi amiga Nour.",
+            "textAr": "أقدّم لك صديقتي نور.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pres_5_b",
+            "text": "Te presento a ella es mi amiga.",
+            "isCorrect": false,
+            "distractorRationaleAr": "سوء استخدام الضمير «ella» مع «es» داخل التقديم."
+          },
+          {
+            "id": "a1_pres_5_c",
+            "text": "Te presento mi amiga Nour.",
+            "isCorrect": false,
+            "distractorRationaleAr": "ناقصة حرف الجر «a» قبل الشخص؛ غير صحيحة في هذا التعبير."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pres_5_a"
+          ]
+        },
+        "explanationAr": "«Te presento a + شخص» تركيب كامل، فلا نضيف «ella es» بعده. لو أردنا جملتين: «Ella es mi amiga. Te la presento.»",
+        "errorFeedback": {
+          "a1_pres_5_b": "لا نجمع تقديمًا وجملة وصف في تركيب واحد: «Te presento a…» وحدها كافية.",
+          "a1_pres_5_c": "«a» قبل الشخص واجبة: Te presento a mi amiga."
+        },
+        "targetVocab": [
+          "ser"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_6_formal",
+        "type": "word_choice",
+        "instructionAr": "تقدّم زميلك إلى مديرك. أي صيغة أنسب؟",
+        "options": [
+          {
+            "id": "a1_pres_6_a",
+            "text": "Señor director, le presento a mi compañero Karim.",
+            "textAr": "سيد المدير، أقدّم لك زميلي كريم.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pres_6_b",
+            "text": "Te presento a mi compañero Karim.",
+            "textAr": "أقدّم لك زميلي كريم. (غير رسمي)",
+            "isCorrect": false,
+            "distractorRationaleAr": "«Te» غير رسمية؛ مع المدير نستخدم «le»."
+          },
+          {
+            "id": "a1_pres_6_c",
+            "text": "Le presento a mi compañero Karim, ¿vale?",
+            "isCorrect": false,
+            "distractorRationaleAr": "«¿vale?» عامية غير رسمية وتناقض سجل الجملة الرسمي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pres_6_a"
+          ]
+        },
+        "explanationAr": "في التقديم الرسمي: «le presento a + شخص» بدل «te presento a…». الضمير le يعود على المخاطَب الرسمي (usted)، والاسم يبقى مع «a».",
+        "errorFeedback": {
+          "a1_pres_6_b": "مع المدير استخدم «le presento» لا «te presento».",
+          "a1_pres_6_c": "«¿vale?» غير مناسبة في سياق رسمي."
+        },
+        "targetVocab": [
+          "usted",
+          "señor"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_7_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هي صديقتي، وهي من إسبانيا.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Ella es mi amiga y es de España.",
+            "Ella es mi amiga, es de España.",
+            "Ella es mi amiga y es de España",
+            "Ella es mi amiga. Es de España."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«هي» = Ella، والفعل «es» يخدم الجملتين. لا نحذف الفعل الثاني كما تفعل العربية عند العطف: نكرّره أو نستخدم «y es».",
+        "errorFeedback": {
+          "Ella es mi amiga y de España.": "ناقصة الفعل الثاني: …y es de España.",
+          "Ella es mi amiga, ella de España.": "جملة بلا فعل؛ الإسبانية توجب «es»."
+        },
+        "targetVocab": [
+          "ser",
+          "España"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_8_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع (أو اقرأ النص البديل) واختر من الذي قُدّم.",
+        "audioKey": "pending/a1-presentar-omar-1",
+        "speechEs": "Hola, Marta. Te presento a mi amiga Nour.",
+        "options": [
+          {
+            "id": "a1_pres_8_a",
+            "text": "Nour",
+            "textAr": "نور",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pres_8_b",
+            "text": "Marta",
+            "textAr": "مارتا",
+            "isCorrect": false,
+            "distractorRationaleAr": "مارتا هي المخاطَبة (يُقدَّم لها)، لا المقدَّمة."
+          },
+          {
+            "id": "a1_pres_8_c",
+            "text": "Omar",
+            "textAr": "عمر",
+            "isCorrect": false,
+            "distractorRationaleAr": "عمر هو المتحدث الذي يقدّم، لا المقدَّم."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pres_8_a"
+          ]
+        },
+        "explanationAr": "«Te presento a mi amiga Nour» = أقدّم لك صديقتي نور. التراكيب: te = لك، presento = أقدّم، a = حرف جر قبل الشخص، mi amiga = صديقتي.",
+        "errorFeedback": {
+          "a1_pres_8_b": "مارتا هي من نتحدث إليها (te).",
+          "a1_pres_8_c": "عمر هو المتحدث (presento = أقدّم)."
+        },
+        "targetVocab": [
+          "ser"
+        ],
+        "skills": [
+          "listening",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pres_9_speak",
+        "type": "speak_with_text",
+        "instructionAr": "قدّم صديقك بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا.",
+        "stemEs": "Te presento a mi amigo Karim. Es de Egipto.",
+        "stemAr": "أقدّم لك صديقي كريم. هو من مصر.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-presentar-9-model-1",
+          "modelAnswer": "Te presento a mi amigo Karim. Es de Egipto."
+        },
+        "explanationAr": "«presento» نبرتها على المقطع الثاني: preSENto. «Egipto» تُنطق إخيبتو تقريبًا، والحرف j في الإسبانية لا يُنطق جيمًا مصريًا في معظم الكلمات.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نبر preSENto",
+              "weight": 50,
+              "code": "pron_presento"
+            },
+            {
+              "labelAr": "وصل «a mi amigo» بلا توقف",
+              "weight": 50,
+              "code": "pron_link"
+            }
+          ]
+        },
+        "targetVocab": [
+          "ser",
+          "Egipto"
+        ],
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس وحدة A1 الأولى (3/4). يحتاج مراجعة إسبانية أصلية لطبيعية «le presento a mi compañero» في سياق العمل، ومراجعة ترجمة للعربية. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي (قرار المصدر والترخيص لم يُتخذ). دون صوت، تعمل التمارين السمعية بنص بديل ظاهر للمتعلم ولا تُحتسب خطأً."
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-un-cafe-por-favor",
+    "titleAr": "في المقهى: أطلب وأسأل عن السعر",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u4-food-drink",
+    "objectiveAr": "أن يطلب المتعلم مشروبًا في مقهى، ويسأل عن السعر، ويفهم سؤال العامل «هنا أم للخارج؟»، ويستخدم por favor و gracias في موضعهما.",
+    "estimatedMinutes": 9,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "café",
+      "agua",
+      "zumo",
+      "por favor",
+      "cuánto cuesta",
+      "para llevar",
+      "con leche"
+    ],
+    "reviewVocabulary": [
+      "hola",
+      "gracias"
+    ],
+    "targetStructures": [
+      "Quiero + اسم",
+      "¿Cuánto cuesta …?",
+      "para + infinitivo (para llevar)"
+    ],
+    "grammarTopics": [
+      "articulos-definidos-indefinidos",
+      "agua-el-agua"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تدخل مقهى صغيرًا في مدريد صباحًا وتطلب قهوة بالحليب للخارج.",
+        "settingAr": "مقهى — طلب سريع",
+        "lines": [
+          {
+            "es": "Buenos días, ¿qué le pongo?",
+            "ar": "صباح الخير، ماذا أقدّم لك؟",
+            "arEg": "صباح الخير، تحب إيه؟",
+            "audioKey": "pending/a1-cafe-que-le-pongo"
+          },
+          {
+            "es": "Quiero un café con leche, por favor.",
+            "ar": "أريد قهوة بالحليب من فضلك.",
+            "arEg": "عايز قهوة باللبن لو سمحت.",
+            "audioKey": "pending/a1-cafe-quiero-cafe-con-leche"
+          },
+          {
+            "es": "¿Para tomar aquí o para llevar?",
+            "ar": "هنا أم للخارج؟",
+            "arEg": "هتشربها هنا ولا تاخدها معاك؟",
+            "audioKey": "pending/a1-cafe-para-tomar-o-llevar"
+          },
+          {
+            "es": "Para llevar, por favor. ¿Cuánto cuesta?",
+            "ar": "للخارج من فضلك. كم السعر؟",
+            "arEg": "معايا لو سمحت. بكام؟",
+            "audioKey": "pending/a1-cafe-para-llevar-cuanto-cuesta"
+          },
+          {
+            "es": "Un euro con cincuenta. Gracias.",
+            "ar": "يورو وخمسون سنتًا. شكرًا.",
+            "arEg": "يورو ونص. شكرًا.",
+            "audioKey": "pending/a1-cafe-un-euro-cincuenta"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 80,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "choose_reply",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "requires_lessons",
+      "requires": [
+        "prea1-hola-me-llamo"
+      ],
+      "minAccuracy": 80
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_cafe_1_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الطلب بالكلمة المناسبة.",
+        "stemEs": "Quiero un ____ con leche, por favor.",
+        "stemAr": "أريد قهوة بالحليب من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "café",
+            "cafe"
+          ],
+          "caseSensitive": false,
+          "allowMissingAccent": true
+        },
+        "explanationAr": "café اسم مذكر، لذلك نستخدم un. التعبير café con leche يعني قهوة بالحليب. ملاحظة: كتابة cafe بدون tilde مقبولة هنا كتخفيف، لكن الشكل الصحيح هو café.",
+        "errorFeedback": {
+          "cafetería": "cafetería هي المكان (المقهى)، لا المشروب.",
+          "té": "té = شاي. المطلوب مشروب القهوة."
+        },
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "café"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_2_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سؤال العامل واختر الإجابة المناسبة لما تريده: قهوة للخارج.",
+        "audioKey": "pending/a1-cafe-para-tomar-o-llevar",
+        "options": [
+          {
+            "id": "a1_cafe_2_a",
+            "text": "Para llevar, por favor.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cafe_2_b",
+            "text": "Para tomar aquí.",
+            "distractorRationaleAr": "مقبول لغويًا لكنه يخالف المطلوب في التعليمات (للخارج)."
+          },
+          {
+            "id": "a1_cafe_2_c",
+            "text": "Sí, gracias.",
+            "distractorRationaleAr": "لا يجيب عن سؤال «هنا أم للخارج»، وهو خطأ تواصلي شائع لدى المبتدئ."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cafe_2_a"
+          ]
+        },
+        "explanationAr": "¿Para tomar aquí o para llevar? سؤال بديلان: هنا (para tomar aquí) أو للخارج (para llevar). لاحظ استخدام para + مصدر للتعبير عن الغرض.",
+        "errorFeedback": {
+          "a1_cafe_2_c": "العميل سألك سؤال اختيار، والجواب «sí» لا يحدد اختيارًا. اختر para llevar أو para tomar aquí."
+        },
+        "skills": [
+          "listening",
+          "pragmatics"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "para llevar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_3_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين طلب مهذّب.",
+        "items": [
+          {
+            "id": "a1_cafe_t1",
+            "kind": "token",
+            "text": "por favor"
+          },
+          {
+            "id": "a1_cafe_t2",
+            "kind": "token",
+            "text": "café"
+          },
+          {
+            "id": "a1_cafe_t3",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "a1_cafe_t4",
+            "kind": "token",
+            "text": "Quiero"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero un café por favor",
+            "Quiero un café, por favor"
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "ترتيب الجملة الإسبانية: فعل + مفعول + عبارة تأدب. «Quiero un café, por favor» صحيحة، والترتيب مع الفاصلة أو بدونها كلاهما مقبول في الكلام.",
+        "errorFeedback": {
+          "order": "ابدأ بالفعل Quiero، ثم الطلب un café، واختم بعبارة التأدب por favor."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "café",
+          "por favor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_4_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "تسأل عن السعر بعد أن طلبت مشروبك.",
+        "stemEs": "Tú: ¿Cuánto cuesta el café? — Camarero: ____",
+        "options": [
+          {
+            "id": "a1_cafe_4_a",
+            "text": "Cuesta un euro con cincuenta.",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cafe_4_b",
+            "text": "De nada.",
+            "distractorRationaleAr": "رد على «شكرًا»، لا جواب عن السعر."
+          },
+          {
+            "id": "a1_cafe_4_c",
+            "text": "Mucho gusto.",
+            "distractorRationaleAr": "تعبير تعارف، خطأ وظيفي واضح."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cafe_4_a"
+          ]
+        },
+        "explanationAr": "¿Cuánto cuesta…? = كم سعر…؟ والجواب يبدأ بالفعل cuesta أو cuestan مع الجمع. de nada تعني «عفوًا» وهي رد على الشكر لا على السؤال.",
+        "errorFeedback": {
+          "a1_cafe_4_b": "de nada رد على gracias. هنا يسألك عن السعر."
+        },
+        "skills": [
+          "pragmatics",
+          "listening"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_5_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية بأسلوب مهذّب.",
+        "stemAr": "أريد ماءً من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "Quiero agua, por favor.",
+            "Quiero un agua, por favor.",
+            "Un agua, por favor.",
+            "Quiero agua por favor"
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "أسلوبان طبيعيان: «Quiero agua, por favor» و«Un agua, por favor». لاحظ أن agua مؤنثة، لكنها تأخذ el / un بدل la / una لأنها تبدأ بألف مشددة: نقول el agua fría و un agua، ولا نقول una agua. هذه قاعدة إملائية-صوتية ستتكرر مع كلمات مثل aula وárea.",
+        "errorFeedback": {
+          "una agua": "agua تبدأ بألف مشددة فتأخذ un لا una: un agua. ونقول أيضًا el agua fría."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "agua",
+          "por favor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_6_variant",
+        "type": "word_choice",
+        "instructionAr": "في إسبانيا تطلب عصير البرتقال بكلمة، وفي أمريكا اللاتينية بكلمة أخرى. اختر كلمة إسبانيا.",
+        "options": [
+          {
+            "id": "a1_cafe_6_a",
+            "text": "zumo de naranja",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cafe_6_b",
+            "text": "jugo de naranja",
+            "distractorRationaleAr": "صحيحة في أمريكا اللاتينية؛ يختبرها النظام للتأكد من فهم الفرق الإقليمي لا لوصفها بالخطأ."
+          },
+          {
+            "id": "a1_cafe_6_c",
+            "text": "sopa de naranja",
+            "distractorRationaleAr": "sopa = شوربة؛ تركيب غير موجود."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cafe_6_a"
+          ]
+        },
+        "explanationAr": "في إسبانيا: zumo. في أمريكا اللاتينية (المكسيك وكثير من الدول): jugo. كلتاهما إسبانية صحيحة، والفرق إقليمي لا خطأ لغوي. المنهج يقدّم شكل إسبانيا أولًا ثم يوضّح البديل.",
+        "errorFeedback": {
+          "a1_cafe_6_b": "jugo صحيحة في أمريكا اللاتينية. السؤال يطلب كلمة إسبانيا: zumo."
+        },
+        "skills": [
+          "vocabulary",
+          "register"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "zumo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cafe_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اطلب طلبك بصوت مسموع كما في الموقف. يمكنك التخطي.",
+        "stemEs": "Quiero un café con leche para llevar, por favor. ¿Cuánto cuesta?",
+        "stemAr": "أريد قهوة بالحليب للخارج من فضلك. كم السعر؟",
+        "answerKey": {
+          "mode": "self_assessment",
+          "referenceAudioKey": "pending/a1-cafe-full-order",
+          "modelAnswer": "Quiero un café con leche para llevar, por favor. ¿Cuánto cuesta?"
+        },
+        "explanationAr": "قسّم الجملة إلى وحدتين: الطلب ثم السؤال. الضغط الأساسي في cuesta. لا تحاول نطقها بسرعة أكبر من قدرتك؛ الوضوح أهم من السرعة في الأسبوع الأول.",
+        "skills": [
+          "speaking",
+          "fluency"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "intelligibility",
+              "labelAr": "وضوح الطلب عند سماعه",
+              "weight": 50
+            },
+            {
+              "code": "politeness",
+              "labelAr": "وجود por favor",
+              "weight": 25
+            },
+            {
+              "code": "fluency",
+              "labelAr": "التدفق دون توقف طويل",
+              "weight": 25
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أولي"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "نموذج عمودي A1. الصوت pending. يحتاج مراجعة إسبانية (خصوصًا صياغة un agua) ومراجعة عربية قبل النشر."
+    }
+  }
+}

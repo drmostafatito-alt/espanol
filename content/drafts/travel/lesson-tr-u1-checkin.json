@@ -1,0 +1,355 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u1-checkin",
+    "titleAr": "تسجيل الوصول في المطار",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u1-airport",
+    "objectiveAr": "أن يسجّل المتعلم وصوله في مكتب شركة الطيران، ويعطي جواز سفره وحقيبته، ويفهم سؤال المقعد والبوابة بأجوبة قصيرة صحيحة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "vuelo",
+      "billete",
+      "equipaje",
+      "facturar",
+      "asiento"
+    ],
+    "reviewVocabulary": [
+      "pasaporte",
+      "por favor"
+    ],
+    "targetStructures": [
+      "Quiero facturar el equipaje.",
+      "¿Dónde está la puerta de embarque?",
+      "Un asiento de ventanilla, por favor."
+    ],
+    "grammarTopics": [
+      "facturar-equipaje",
+      "preguntas-de-aeropuerto"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أنت في مطار مدريد لتسجيل الوصول لرحلة إلى القاهرة.",
+        "settingAr": "مكتب تسجيل الوصول، قبل الإقلاع بساعتين",
+        "lines": [
+          {
+            "es": "Buenos días, ¿su pasaporte y su billete, por favor?",
+            "ar": "صباح الخير، جواز سفرك وتذكرتك من فضلك.",
+            "arEg": "صباح الخير، الباسبور والتذكرة لو سمحت.",
+            "audioKey": "pending/tr-u1-l1-agente-1"
+          },
+          {
+            "es": "Buenos días. Aquí tiene. Quiero facturar esta maleta.",
+            "ar": "صباح الخير. تفضل. أريد تسجيل هذه الحقيبة.",
+            "arEg": "صباح الخير. اتفضل. عايز أودّع الشنطة دي.",
+            "audioKey": "pending/tr-u1-l1-omar-1"
+          },
+          {
+            "es": "Muy bien. ¿Prefiere asiento de ventanilla o de pasillo?",
+            "ar": "جيد. هل تفضّل مقعد النافذة أم الممر؟",
+            "arEg": "تمام. تفضل كرسي الشباك ولا الممر؟",
+            "audioKey": "pending/tr-u1-l1-agente-2"
+          },
+          {
+            "es": "De ventanilla, por favor. ¿A qué hora es el embarque?",
+            "ar": "النافذة من فضلك. في أي ساعة الصعود؟",
+            "arEg": "الشباك لو سمحت. الصعود الساعة كام؟",
+            "audioKey": "pending/tr-u1-l1-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u1_1_reply",
+        "type": "choose_reply",
+        "instructionAr": "الموظف سألك عن جواز سفرك. اختر الردّ المناسب.",
+        "contextAr": "الموظف يقول: «¿Su pasaporte, por favor?»",
+        "stemEs": "— ¿Su pasaporte, por favor?",
+        "stemAr": "— جواز سفرك، من فضلك؟",
+        "options": [
+          {
+            "id": "tr_u1_1_a",
+            "text": "Aquí tiene.",
+            "isCorrect": true,
+            "textAr": "تفضل / ها هو."
+          },
+          {
+            "id": "tr_u1_1_b",
+            "text": "De nada.",
+            "isCorrect": false,
+            "textAr": "عفوا (ردًّا على الشكر)",
+            "distractorRationaleAr": "«De nada» ردّ على «gracias» لا تسليم وثيقة."
+          },
+          {
+            "id": "tr_u1_1_c",
+            "text": "No entiendo nada.",
+            "isCorrect": false,
+            "textAr": "لا أفهم شيئًا.",
+            "distractorRationaleAr": "ردّ يوقف الموقف بلا داعٍ؛ المطلوب تسليم الوثيقة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_1_a"
+          ]
+        },
+        "explanationAr": "عند تسليم شيء نقول «Aquí tiene» (تفضل)، وتُقال أيضًا «Aquí está» عند الإشارة إلى الشيء.",
+        "errorFeedback": {
+          "tr_u1_1_b": "«De nada» تعني «عفوا» ردًّا على الشكر.",
+          "tr_u1_1_c": "الطلب واضح؛ سلّم الجواز وقل Aquí tiene."
+        },
+        "targetVocab": [
+          "pasaporte"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_2_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالفعل المناسب لتسجيل الأمتعة.",
+        "stemEs": "Quiero ____ esta maleta.",
+        "stemAr": "أريد تسجيل هذه الحقيبة.",
+        "answerKey": {
+          "accepted": [
+            "facturar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "بعد «querer» يأتي المصدر مباشرة: quiero facturar. facturar تعني هنا تسجيل الأمتعة في المطار.",
+        "errorFeedback": {
+          "facturo": "بعد querer لا نُصرّف الفعل الثاني؛ نقول facturar.",
+          "factura": "«factura» اسم (فاتورة)؛ الفعل facturar."
+        },
+        "targetVocab": [
+          "facturar",
+          "equipaje"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_3_window",
+        "type": "word_choice",
+        "instructionAr": "تريد مقعد النافذة. أي عبارة تستخدم؟",
+        "options": [
+          {
+            "id": "tr_u1_3_a",
+            "text": "Un asiento de ventanilla, por favor.",
+            "isCorrect": true,
+            "textAr": "مقعد النافذة، من فضلك."
+          },
+          {
+            "id": "tr_u1_3_b",
+            "text": "Un asiento de pasillo, por favor.",
+            "isCorrect": false,
+            "textAr": "مقعد الممر، من فضلك.",
+            "distractorRationaleAr": "pasillo = الممر، وليس النافذة."
+          },
+          {
+            "id": "tr_u1_3_c",
+            "text": "Una silla de ventana, por favor.",
+            "isCorrect": false,
+            "textAr": "كرسي النافذة، من فضلك.",
+            "distractorRationaleAr": "«silla» للكرسي المنزلي؛ مقعد الطائرة asiento."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_3_a"
+          ]
+        },
+        "explanationAr": "asiento = مقعد، ventanilla = النافذة الصغيرة (في الطائرة والقطار والمكتب)، pasillo = الممر.",
+        "errorFeedback": {
+          "tr_u1_3_b": "pasillo ممر لا نافذة.",
+          "tr_u1_3_c": "في الطائرة نقول asiento لا silla."
+        },
+        "targetVocab": [
+          "asiento"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لسؤال مهذّب عن بوابة الصعود.",
+        "items": [
+          {
+            "id": "tr_u1_t1",
+            "kind": "token",
+            "text": "¿Dónde"
+          },
+          {
+            "id": "tr_u1_t2",
+            "kind": "token",
+            "text": "está"
+          },
+          {
+            "id": "tr_u1_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "tr_u1_t4",
+            "kind": "token",
+            "text": "puerta"
+          },
+          {
+            "id": "tr_u1_t5",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "tr_u1_t6",
+            "kind": "token",
+            "text": "embarque"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Dónde está la puerta de embarque?",
+            "¿Dónde está la puerta de embarque"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "السؤال عن المكان: ¿Dónde está…? + الاسم. و«puerta de embarque» تعني بوابة الصعود، وde تربط الاسمين.",
+        "errorFeedback": {
+          "order": "الترتيب: ¿Dónde está la puerta de embarque?"
+        },
+        "targetVocab": [
+          "puerta",
+          "embarque"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_5_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "رحلتي تتأخر ساعتين.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Mi vuelo llega con dos horas de retraso.",
+            "Mi vuelo tiene dos horas de retraso.",
+            "Mi vuelo se retrasa dos horas.",
+            "Mi vuelo está retrasado dos horas."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "التأخير يُعبَّر عنه بعدة صيغ شائعة: con dos horas de retraso / tener retraso / estar retrasado. كلها صحيحة في المطار.",
+        "errorFeedback": {
+          "Mi vuelo retrasa dos horas.": "ناقص التعبير: se retrasa أو tiene retraso.",
+          "Mi vuelo es retraso.": "«es retraso» غير صحيحة؛ الصواب tiene retraso."
+        },
+        "targetVocab": [
+          "vuelo",
+          "retraso"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "سجّل وصولك بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Buenos días. Aquí tiene mi pasaporte. Quiero facturar el equipaje.",
+        "stemAr": "صباح الخير. تفضل جواز سفري. أريد تسجيل الأمتعة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u1-6-model-1",
+          "modelAnswer": "Buenos días. Aquí tiene mi pasaporte. Quiero facturar el equipaje."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة: تحية، تسليم، طلب. لا ندّعي قياس نطق آلي؛ الملف الصوتي المرجعي غير متوفر بعد.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح الطلب",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "لباقة الصيغة",
+              "weight": 50,
+              "code": "politeness"
+            }
+          ]
+        },
+        "targetVocab": [
+          "pasaporte",
+          "facturar"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطار 1/4. يحتاج مراجعة إسبانية أصلية لصيغة «¿Su pasaporte, por favor?» في مطارات إسبانيا، وتأكيد أن A2 مناسب للصياغات. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

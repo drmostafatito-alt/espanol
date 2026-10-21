@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u1-roleplay",
+    "titleAr": "محاكاة مكالمة كاملة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u1-opening-verification",
+    "objectiveAr": "أن يدير المتعلم مكالمة شكوى كاملة: افتتاح، تحقق، تشخيص، حل أو بديل، إغلاق — بلا كشف بيانات حساسة وبلا وعود غير قابلة للتنفيذ.",
+    "estimatedMinutes": 15,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "incidencia",
+      "reclamación",
+      "reembolso",
+      "devolución",
+      "importe"
+    ],
+    "reviewVocabulary": [
+      "pedido",
+      "envío",
+      "entrega",
+      "plazo"
+    ],
+    "targetStructures": [
+      "Le atiende…",
+      "Voy a abrir una incidencia.",
+      "¿Hay algo más en lo que pueda ayudarle?"
+    ],
+    "grammarTopics": [
+      "estructura-de-mcacion",
+      "manejo-de-reclamaciones"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محاكاة كاملة: عميل يطلب استرداد مبلغ لطلب وصل متأخرًا وتالفًا. بيانات وهمية.",
+        "settingAr": "مركز اتصال — محاكاة تدريبية (بيانات خيالية)",
+        "lines": [
+          {
+            "es": "Buenos días, llamo por el pedido 48219. Llegó tarde y la caja está rota.",
+            "ar": "صباح الخير، أتصل بخصوص الطلب 48219. وصل متأخرًا والعلبة مكسورة.",
+            "arEg": "صباح الخير، بخصوص الأوردر 48219. وصل متأخر والعلبة مكسورة.",
+            "audioKey": "pending/cc-u1-l4-cliente-1"
+          },
+          {
+            "es": "Buenos días, le atiende Omar. Lamento lo ocurrido. ¿Podría confirmarme su nombre completo, por favor?",
+            "ar": "صباح الخير، يخدمك عمر. أعتذر عمّا حدث. هل يمكنك تأكيد اسمك الكامل؟",
+            "arEg": "صباح الخير، معاك عمر. معلش على اللي حصل. ممكن تأكد اسمك الكامل؟",
+            "audioKey": "pending/cc-u1-l4-agente-1"
+          },
+          {
+            "es": "Lucía Ferrer. ¿Puedo pedir un reembolso?",
+            "ar": "لوسيا فيرير. هل أستطيع طلب استرداد المبلغ؟",
+            "arEg": "لوسيا فيرير. ممكن أطلب استرداد الفلوس؟",
+            "audioKey": "pending/cc-u1-l4-cliente-2"
+          },
+          {
+            "es": "Sí. Voy a abrir una incidencia y tramitar el reembolso del importe total. Recibirá un correo en 24 horas.",
+            "ar": "نعم. سأفتح بلاغًا وأتولّى استرداد المبلغ الإجمالي. ستتلقى بريدًا خلال 24 ساعة.",
+            "arEg": "أيوة. هفتح بلاغ وهعمل استرداد المبلغ كله. هيوصلك إيميل خلال 24 ساعة.",
+            "audioKey": "pending/cc-u1-l4-agente-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u1_14_issue",
+        "type": "word_choice",
+        "instructionAr": "أي تعبير يفتح بلاغ المشكلة رسميًا؟",
+        "options": [
+          {
+            "id": "cc_u1_14_a",
+            "text": "Voy a abrir una incidencia.",
+            "isCorrect": true,
+            "textAr": "سأفتح بلاغ مشكلة."
+          },
+          {
+            "id": "cc_u1_14_b",
+            "text": "Voy a abrir una reclamación de dinero.",
+            "isCorrect": false,
+            "textAr": "سأفتح شكوى مال.",
+            "distractorRationaleAr": "التركيب غير صحيح؛ «reclamación» تُقدَّم لا تُفتح، ولا «reclamación de dinero»."
+          },
+          {
+            "id": "cc_u1_14_c",
+            "text": "Voy a hacer un problema.",
+            "isCorrect": false,
+            "textAr": "سأصنع مشكلة.",
+            "distractorRationaleAr": "المعنى معكوس تمامًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_14_a"
+          ]
+        },
+        "explanationAr": "«abrir una incidencia» = تسجيل بلاغ فني/خدمي. و«presentar una reclamación» = تقديم شكوى رسمية. لكلٍّ موضعه.",
+        "errorFeedback": {
+          "cc_u1_14_b": "الشكوى تُقدَّم (presentar)، والبلاغ يُفتح (abrir).",
+          "cc_u1_14_c": "«hacer un problema» ليست تركيبًا مهنيًا."
+        },
+        "targetVocab": [
+          "incidencia",
+          "reclamación"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_15_refund",
+        "type": "fill_blank",
+        "instructionAr": "أكمل: استرداد المبلغ الإجمالي.",
+        "stemEs": "Voy a tramitar el ____ del importe total.",
+        "stemAr": "سأتولّى استرداد المبلغ الإجمالي.",
+        "answerKey": {
+          "accepted": [
+            "reembolso"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "tramitar = يتولّى إجراءً. وإعادة المال = reembolso، أما إعادة المنتج = devolución.",
+        "errorFeedback": {
+          "devolución": "إعادة المنتج devolución؛ إعادة المال reembolso.",
+          "pago": "pago دفع لا استرداد."
+        },
+        "targetVocab": [
+          "reembolso",
+          "importe"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_16_structure",
+        "type": "dialogue_order",
+        "instructionAr": "رتّب مراحل المكالمة المهنية.",
+        "items": [
+          {
+            "id": "cc_u1_s1",
+            "kind": "token",
+            "text": "Buenos días, le atiende Omar. ¿En qué puedo ayudarle?"
+          },
+          {
+            "id": "cc_u1_s2",
+            "kind": "token",
+            "text": "Entiendo su molestia. ¿Podría confirmarme su nombre completo?"
+          },
+          {
+            "id": "cc_u1_s3",
+            "kind": "token",
+            "text": "Voy a comprobar el pedido. ¿Me permite un momento?"
+          },
+          {
+            "id": "cc_u1_s4",
+            "kind": "token",
+            "text": "Gracias por esperar. Vamos a tramitar el reembolso."
+          },
+          {
+            "id": "cc_u1_s5",
+            "kind": "token",
+            "text": "¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Buenos días, le atiende Omar. ¿En qué puedo ayudarle? Entiendo su molestia. ¿Podría confirmarme su nombre completo? Voy a comprobar el pedido. ¿Me permite un momento? Gracias por esperar. Vamos a tramitar el reembolso. ¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada."
+          ]
+        },
+        "explanationAr": "البنية الثابتة: تحية وتقديم ← تعاطف وتحقق ← فحص ← نتيجة ← إغلاق. أي إعادة ترتيب تُربك العميل.",
+        "errorFeedback": {
+          "order": "البداية دائمًا بالتحية، والنهاية دائمًا بالإغلاق."
+        },
+        "targetVocab": [
+          "incidencia"
+        ],
+        "skills": [
+          "reading",
+          "writing"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_17_roleplay",
+        "type": "roleplay_simulation",
+        "instructionAr": "محاكاة كاملة (غير مُقيَّمة آليًا): أنت الموظف. العميل يطلب استردادًا لطلب متأخر وتالف. أدر المكالمة ثم قيّم نفسك.",
+        "contextAr": "بيانات وهمية للتدريب فقط: العميل «Lucía Ferrer»، رقم الطلب 48219، الطلب متأخر ثلاثة أيام، العلبة تالفة. لا بيانات حقيقية ولا يُخزَّن أي صوت.",
+        "stemEs": "Cliente: Llevo tres días esperando y la caja llegó rota. Quiero el reembolso completo.",
+        "answerKey": {
+          "modelScript": [
+            "— Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
+            "— Lamento lo ocurrido. ¿Podría confirmarme su nombre completo y el número de pedido, por favor?",
+            "— Gracias. ¿Me permite un momento? Voy a comprobar el estado del envío.",
+            "— Le confirmo: el pedido salió con retraso y la incidencia está registrada. Vamos a tramitar el reembolso del importe total.",
+            "— Recibirá un correo de confirmación en 24 horas. ¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada."
+          ],
+          "acceptableVariants": [
+            "Ofrecer sustitución sin coste en lugar del reembolso, si el cliente prefiere."
+          ]
+        },
+        "explanationAr": "لا تعِد بما لا تملك: قل «24 horas» فقط إن كانت سياستك تسمح. لا تطلب كلمة المرور. لا تُقيَّم المحاكاة آليًا؛ قيّم نفسك بمعايير التقييم.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الافتتاح والتحية المهنية",
+              "weight": 25,
+              "code": "opening"
+            },
+            {
+              "labelAr": "طلب البيانات بلباقة بدل افتراضها",
+              "weight": 25,
+              "code": "verification"
+            },
+            {
+              "labelAr": "وضوح الحل وخطواته",
+              "weight": 25,
+              "code": "solution"
+            },
+            {
+              "labelAr": "الإغلاق والشكر",
+              "weight": 25,
+              "code": "closing"
+            }
+          ]
+        },
+        "targetVocab": [
+          "reembolso",
+          "incidencia",
+          "pedido"
+        ],
+        "skills": [
+          "speaking",
+          "listening"
+        ],
+        "difficulty": 4
+      },
+      {
+        "id": "cc_u1_18_closing",
+        "type": "choose_reply",
+        "instructionAr": "اختر الإغلاق المهني الصحيح.",
+        "stemEs": "— Vale, gracias. Eso es todo.",
+        "stemAr": "— حسنًا، شكرًا. هذا كل شيء.",
+        "options": [
+          {
+            "id": "cc_u1_18_a",
+            "text": "¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada. Que tenga un buen día.",
+            "isCorrect": true,
+            "textAr": "هل هناك شيء آخر أساعدك به؟ شكرًا على اتصالك. أتمنى لك يومًا طيبًا."
+          },
+          {
+            "id": "cc_u1_18_b",
+            "text": "Ya está, adiós.",
+            "isCorrect": false,
+            "textAr": "انتهى، وداعًا.",
+            "distractorRationaleAr": "مبتور وغير مهني."
+          },
+          {
+            "id": "cc_u1_18_c",
+            "text": "Vale, vale, vale.",
+            "isCorrect": false,
+            "textAr": "تمام تمام تمام.",
+            "distractorRationaleAr": "عامية متكررة لا تصلح إغلاقًا مهنيًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_18_a"
+          ]
+        },
+        "explanationAr": "الإغلاق المهني: سؤال عن أي حاجة أخرى + شكر + تحية ختامية.",
+        "errorFeedback": {
+          "cc_u1_18_b": "أضف سؤالًا ختاميًا وشكرًا.",
+          "cc_u1_18_c": "استخدم صيغة مهنية."
+        },
+        "targetVocab": [
+          "cliente"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر 4/4 (محاكاة). يحتاج مراجعة بشرية من مدرّب خدمة عملاء، وتأكيد أن بيانات المحاكاة وهمية وأنها غير مُقيَّمة آليًا. كل المقاطع الصوتية pending ولم يُنتج أي ملف. بيانات العملاء وهمية."
+    }
+  }
+}

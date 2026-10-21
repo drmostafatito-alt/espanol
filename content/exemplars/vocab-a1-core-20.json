@@ -1,0 +1,1116 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "a1-core-20",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا ينقل النطق الإسباني بدقة (خاصة الأصوات بين b وv، وحرف r، وحرف j). اعتمد دائمًا على الملف الصوتي حين يتوفر، وعلى رمز IPA كمرجع.",
+  "source": {
+    "title": "ترتيب داخلي مؤقت مبني على تكرار المفردات في مواد المنهج + مراجعة محرر بشري",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "هذا ليس ترتيبًا علميًا لأكثر الكلمات شيوعًا. الأرقام داخلية (internalRank) لتسلسل التدريس فقط، ولا يجوز عرضها للمستخدم بوصفها «الأكثر شيوعًا في الإسبانية» حتى يُربط المصدر المعجمي المرخَّص ويُوثَّق تاريخ مراجعته في content_sources."
+  },
+  "entries": [
+    {
+      "headword": "hola",
+      "normalized": "hola",
+      "kind": "word",
+      "pos": "interj",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈola/",
+      "pronunciationHintAr": "أولا — الـ h صامتة، والضغط على المقطع الأول",
+      "internalRank": 1,
+      "tags": [
+        "تحيات",
+        "أساسيات"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مرحبًا (تحية عامة)",
+          "meaningArEg": "أهلًا / سلام",
+          "glossEs": "saludo informal y general",
+          "exampleEs": "¡Hola! ¿Cómo estás?",
+          "exampleAr": "مرحبًا! كيف حالك؟",
+          "exampleArEg": "أهلًا! إيه أخبارك؟",
+          "usageNoteAr": "تصلح في أي وقت من اليوم، رسمية وغير رسمية. لا تحتاج علامة استفهام.",
+          "commonErrorAr": "لا تُنطق الهاء مطلقًا؛ نطقها «هولا» من أشهر أخطاء المبتدئ.",
+          "audioKey": "pending/voc-hola"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¡Hola, Marta! ¿Qué tal?",
+          "ar": "مرحبًا مارتا! كيف الحال؟",
+          "arEg": "أهلًا مارتا! إيه الأخبار؟"
+        }
+      ],
+      "synonyms": [
+        "buenas"
+      ],
+      "antonyms": [
+        "adiós"
+      ],
+      "related": [
+        "buenos días",
+        "buenas tardes",
+        "mucho gusto"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "buenos días",
+      "normalized": "buenos días",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈbwenos ˈdias/",
+      "pronunciationHintAr": "بْوينوس دِياس",
+      "internalRank": 2,
+      "tags": [
+        "تحيات",
+        "صباح"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صباح الخير (تحية الصباح)",
+          "meaningArEg": "صباح الخير",
+          "glossEs": "saludo de la mañana",
+          "exampleEs": "Buenos días, ¿tiene una mesa para dos?",
+          "exampleAr": "صباح الخير، هل لديكم طاولة لشخصين؟",
+          "usageNoteAr": "تُستخدم حتى منتصف النهار تقريبًا، ثم buenas tardes بعد الظهر و buenas noches ليلًا.",
+          "commonErrorAr": "قول «buenas días» خطأ في الاتفاق: días مذكر جمع فيجب buenos.",
+          "audioKey": "pending/voc-buenos-dias"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, señora López.",
+          "ar": "صباح الخير سيدة لوبيز."
+        }
+      ],
+      "synonyms": [
+        "buenas"
+      ],
+      "antonyms": [
+        "buenas noches"
+      ],
+      "related": [
+        "hola",
+        "buenas tardes"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "me llamo",
+      "normalized": "me llamo",
+      "kind": "collocation",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/me ˈʝamo/",
+      "pronunciationHintAr": "مي يامو — ll تُنطق قريبة من «ي» في إسبانيا وأمريكا اللاتينية",
+      "internalRank": 3,
+      "tags": [
+        "تعارف",
+        "أساسيات"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اسمي … (أُعرِّف بنفسي)",
+          "meaningArEg": "أنا اسمي …",
+          "glossEs": "fórmula para presentarse",
+          "exampleEs": "Me llamo Omar y soy de El Cairo.",
+          "exampleAr": "اسمي عمر وأنا من القاهرة.",
+          "usageNoteAr": "من الفعل الانعكاسي llamarse. الضمير me إلزامي.",
+          "commonErrorAr": "«mi llamo» خطأ شائع؛ mi تعني «خاصتي» ولا تُستخدم هنا.",
+          "audioKey": "pending/voc-me-llamo"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hola, me llamo Sara. ¿Y tú?",
+          "ar": "مرحبًا، اسمي سارة. وأنت؟",
+          "arEg": "أهلًا، أنا سارة. وانت؟"
+        }
+      ],
+      "related": [
+        "llamarse",
+        "mucho gusto",
+        "soy"
+      ],
+      "variantNoteAr": "في أمريكا اللاتينية يُستخدم أيضًا «Mi nombre es…» بشكل أوسع في المواقف الرسمية.",
+      "sourceId": null
+    },
+    {
+      "headword": "mucho gusto",
+      "normalized": "mucho gusto",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈmutʃo ˈɡusto/",
+      "pronunciationHintAr": "موتشو جوستو",
+      "internalRank": 4,
+      "tags": [
+        "تعارف"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تشرّفت بمعرفتك",
+          "meaningArEg": "فرصة سعيدة",
+          "glossEs": "fórmula de cortesía al conocer a alguien",
+          "exampleEs": "Mucho gusto, señor Hassan.",
+          "exampleAr": "تشرّفت بمعرفتك سيد حسن.",
+          "usageNoteAr": "الرد المعتاد: «Igualmente» أو «El gusto es mío».",
+          "commonErrorAr": "لا تُستخدم عند الوداع؛ للوداع نقول hasta luego أو encantado de haberle conocido.",
+          "audioKey": "pending/voc-mucho-gusto"
+        }
+      ],
+      "examples": [
+        {
+          "es": "—Me llamo Nadia. —Mucho gusto, Nadia.",
+          "ar": "—اسمي نادية. —تشرّفت يا نادية."
+        }
+      ],
+      "synonyms": [
+        "encantado",
+        "encantada"
+      ],
+      "related": [
+        "me llamo",
+        "igualmente"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "café",
+      "normalized": "café",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cafés",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kaˈfe/",
+      "pronunciationHintAr": "كافِه — الضغط على المقطع الأخير",
+      "internalRank": 5,
+      "tags": [
+        "طعام",
+        "مقهى"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قهوة (المشروب)",
+          "meaningArEg": "قهوة / قهوة سادة",
+          "glossEs": "bebida obtenida de los granos tostados del cafeto",
+          "exampleEs": "Quiero un café con leche, por favor.",
+          "exampleAr": "أريد قهوة بالحليب من فضلك.",
+          "exampleArEg": "عايز قهوة باللبن لو سمحت.",
+          "usageNoteAr": "في إسبانيا: café solo = قهوة سادة، café con leche = قهوة بالحليب، cortado = قهوة بقطرة حليب.",
+          "commonErrorAr": "طلب «un café con leche» لا يعني «قهوة بحليب بارد»؛ الحليب في العادة ساخن.",
+          "audioKey": "pending/voc-cafe"
+        },
+        {
+          "senseNo": 2,
+          "meaningArFusha": "مقهى (المكان) في بعض الاستخدامات",
+          "meaningArEg": "كافيه / قهوة (المحل)",
+          "glossEs": "establecimiento donde se sirve café",
+          "exampleEs": "Nos vemos en el café de la esquina.",
+          "exampleAr": "نتقابل في المقهى الذي عند الناصية.",
+          "usageNoteAr": "المعنى يعتمد على السياق. للمكان أيضًا «cafetería» وهي أوضح في المواقف الرسمية.",
+          "commonErrorAr": "قد يلتبس المعنى، لذا في المحادثة قل cafetería إن كنت تعني المكان.",
+          "audioKey": "pending/voc-cafe-place"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Dos cafés, por favor.",
+          "ar": "قهوتان من فضلك."
+        }
+      ],
+      "related": [
+        "cafetería",
+        "con leche",
+        "zumo"
+      ],
+      "variantNoteAr": "في أمريكا اللاتينية يُطلب غالبًا «un café solo» أو «un americano» بدل التسميات الإسبانية.",
+      "sourceId": null
+    },
+    {
+      "headword": "agua",
+      "normalized": "agua",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aguas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈaɣwa/",
+      "pronunciationHintAr": "أغوا — حرف g بين متحركين يُنطق خفيفًا جدًا",
+      "internalRank": 6,
+      "tags": [
+        "طعام",
+        "مقهى"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ماء",
+          "meaningArEg": "ميّة / ماء",
+          "glossEs": "sustancia líquida, inodora e insípida",
+          "exampleEs": "¿Me trae un agua sin gas, por favor?",
+          "exampleAr": "هل تجلب لي ماءً بلا غاز من فضلك؟",
+          "usageNoteAr": "المفرد يأخذ el / un لبدئه بألف مشددة: el agua fría، un agua. والجمع مؤنث: las aguas.",
+          "commonErrorAr": "«una agua» غير طبيعية؛ الصحيح un agua. ومع الصفة: el agua fría (صفة مؤنثة).",
+          "audioKey": "pending/voc-agua"
+        }
+      ],
+      "examples": [
+        {
+          "es": "El agua está muy fría.",
+          "ar": "الماء بارد جدًا."
+        }
+      ],
+      "related": [
+        "sin gas",
+        "con gas",
+        "botella"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "zumo",
+      "normalized": "zumo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "zumos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈθumo/",
+      "pronunciationHintAr": "ثومو — في إسبانيا z تُنطق مثل th الإنجليزية؛ في أمريكا اللاتينية s",
+      "internalRank": 7,
+      "tags": [
+        "طعام",
+        "مقهى",
+        "فروق إقليمية"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عصير",
+          "meaningArEg": "عصير",
+          "glossEs": "líquido obtenido al exprimir frutas",
+          "exampleEs": "Un zumo de naranja natural, por favor.",
+          "exampleAr": "عصير برتقال طبيعي من فضلك.",
+          "usageNoteAr": "كلمة إسبانيا الشائعة. في أمريكا اللاتينية: jugo.",
+          "commonErrorAr": "لا تُستخدم zumo في أمريكا اللاتينية بنفس الشيوع، وقد لا تُفهم في بعض الدول.",
+          "audioKey": "pending/voc-zumo"
+        }
+      ],
+      "examples": [
+        {
+          "es": "De postre, un zumo de manzana.",
+          "ar": "كحلوى، عصير تفاح."
+        }
+      ],
+      "synonyms": [
+        "jugo"
+      ],
+      "related": [
+        "naranja",
+        "batido"
+      ],
+      "variantNoteAr": "إسبانيا: zumo · أمريكا اللاتينية: jugo. كلتاهما صحيحة؛ المنهج يعلّم شكل إسبانيا أولًا ثم يوضّح البديل.",
+      "sourceId": null
+    },
+    {
+      "headword": "por favor",
+      "normalized": "por favor",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/poɾ faˈβoɾ/",
+      "pronunciationHintAr": "بور فابور",
+      "internalRank": 8,
+      "tags": [
+        "تأدب",
+        "أساسيات"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "من فضلك / رجاءً",
+          "meaningArEg": "لو سمحت",
+          "glossEs": "fórmula de cortesía para pedir algo",
+          "exampleEs": "Un café, por favor.",
+          "exampleAr": "قهوة من فضلك.",
+          "usageNoteAr": "توضع في نهاية الطلب عادةً، أو في بدايته للتأكيد. لا تُستخدم للرد على الشكر (الرد: de nada).",
+          "commonErrorAr": "لا تُترجم حرفيًا إلى «بسبب خدمة»؛ الوظيفة اجتماعية لا دلالية.",
+          "audioKey": "pending/voc-por-favor"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Por favor, ¿puede repetir más despacio?",
+          "ar": "من فضلك، هل يمكنك التكرار ببطء أكثر؟"
+        }
+      ],
+      "related": [
+        "gracias",
+        "disculpe"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "gracias",
+      "normalized": "gracias",
+      "kind": "word",
+      "pos": "interj",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈɡɾaθjas/",
+      "pronunciationHintAr": "جراثياس — في إسبانيا؛ وفي أمريكا اللاتينية جراسياس",
+      "internalRank": 9,
+      "tags": [
+        "تأدب",
+        "أساسيات"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شكرًا",
+          "meaningArEg": "شكرًا / متشكر",
+          "glossEs": "expresión de agradecimiento",
+          "exampleEs": "Muchas gracias por su ayuda.",
+          "exampleAr": "شكرًا جزيلًا على مساعدتك.",
+          "usageNoteAr": "الرد: «de nada» أو «no hay de qué».",
+          "commonErrorAr": "لا تُضاف إليها حروف جر: نقول gracias por لا gracias de.",
+          "audioKey": "pending/voc-gracias"
+        }
+      ],
+      "examples": [
+        {
+          "es": "—¿Un café? —Sí, gracias.",
+          "ar": "—قهوة؟ —نعم، شكرًا."
+        }
+      ],
+      "related": [
+        "de nada",
+        "muchas gracias",
+        "por favor"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "¿cuánto cuesta?",
+      "normalized": "cuánto cuesta",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkwanto ˈkwesta/",
+      "pronunciationHintAr": "كوانتو كويستا",
+      "internalRank": 10,
+      "tags": [
+        "تسوق",
+        "أسعار"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كم السعر؟ (لمفرد)",
+          "meaningArEg": "بكام؟",
+          "glossEs": "pregunta por el precio de algo",
+          "exampleEs": "¿Cuánto cuesta el billete de autobús?",
+          "exampleAr": "كم سعر تذكرة الحافلة؟",
+          "exampleArEg": "تذكرة الأتوبيس بكام؟",
+          "usageNoteAr": "مع الجمع: ¿Cuánto cuestan los zapatos? وتأتي أيضًا ¿Cuánto es? في الكلام اليومي.",
+          "commonErrorAr": "نسيان الفعل cuesta والاكتفاء بـ ¿Cuánto? قد يُفهم لكنه أقل وضوحًا.",
+          "audioKey": "pending/voc-cuanto-cuesta"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto cuestan estos dos?",
+          "ar": "كم سعر هذين الاثنين؟"
+        }
+      ],
+      "related": [
+        "precio",
+        "euro",
+        "barato",
+        "caro"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "para llevar",
+      "normalized": "para llevar",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/paɾa ʎeˈβaɾ/",
+      "pronunciationHintAr": "بارا يِفار — ll تُنطق «ي» في أغلب المناطق",
+      "internalRank": 11,
+      "tags": [
+        "مقهى",
+        "مطعم"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "للأخذ معك (خارج المطعم)",
+          "meaningArEg": "تيك أواي / معايا",
+          "glossEs": "para consumir fuera del local",
+          "exampleEs": "Es para llevar, por favor.",
+          "exampleAr": "هذا للأخذ معي من فضلك.",
+          "usageNoteAr": "نقيضها: para tomar aquí (هنا). في أمريكا اللاتينية: para llevar también شائعة، وأحيانًا «para llevar» تُقال كما هي.",
+          "commonErrorAr": "«para llevar» ليست «para comprar»؛ المقصود طريقة التقديم لا الشراء.",
+          "audioKey": "pending/voc-para-llevar"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Lo quiere para tomar aquí o para llevar?",
+          "ar": "تريده هنا أم للأخذ معك؟"
+        }
+      ],
+      "related": [
+        "para tomar aquí",
+        "café",
+        "bolsa"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "casa",
+      "normalized": "casa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "casas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkasa/",
+      "pronunciationHintAr": "كاسا — s نطق واضح",
+      "internalRank": 12,
+      "tags": [
+        "منزل",
+        "حياة يومية"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بيت / منزل",
+          "meaningArEg": "بيت",
+          "glossEs": "edificio o vivienda para habitar",
+          "exampleEs": "Mi casa está cerca del metro.",
+          "exampleAr": "بيتي قريب من المترو.",
+          "usageNoteAr": "مع حرف الجر: en casa = في البيت (بدون أداة)، a casa = إلى البيت.",
+          "commonErrorAr": "«en la casa» تعني «في ذلك البيت تحديدًا»، أما «في البيت» بمعنى عندي فتُقال en casa بدون أداة.",
+          "audioKey": "pending/voc-casa"
+        },
+        {
+          "senseNo": 2,
+          "meaningArFusha": "دار / شركة (في أسماء المؤسسات)",
+          "meaningArEg": "دار / شركة",
+          "glossEs": "establecimiento comercial o institución",
+          "exampleEs": "Trabaja en una casa de software.",
+          "exampleAr": "يعمل في شركة برمجيات.",
+          "usageNoteAr": "استخدام محدود؛ في العمل الحديث تُستخدم empresa أكثر.",
+          "commonErrorAr": "لا تُستخدم casa للشركة في السياق المهني الرسمي؛ الأفضل empresa.",
+          "audioKey": "pending/voc-casa-firm"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hoy no salgo: me quedo en casa.",
+          "ar": "لن أخرج اليوم: سأبقى في البيت."
+        }
+      ],
+      "related": [
+        "hogar",
+        "piso",
+        "quedarse en casa"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "quedarse en casa",
+      "normalized": "quedarse en casa",
+      "kind": "collocation",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/keˈðaɾse en ˈkasa/",
+      "pronunciationHintAr": "كِذارسي إن كاسا — d بين متحركين تُنطق مثل th في this",
+      "internalRank": 13,
+      "tags": [
+        "حياة يومية",
+        "أفعال انعكاسية"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يبقى في البيت",
+          "meaningArEg": "يفضل في البيت / يقعد في البيت",
+          "glossEs": "permanecer en la propia vivienda",
+          "exampleEs": "Los domingos me quedo en casa con mi familia.",
+          "exampleAr": "أيام الأحد أبقى في البيت مع أسرتي.",
+          "usageNoteAr": "فعل انعكاسي: me quedo / te quedas / se queda. quedarse وحدها تعني «يبقى»، أما quedar فتعني «يتفق على» أو «يقع».",
+          "commonErrorAr": "«quedo en casa» قد تُفهم «أتفق في البيت». الصحيح me quedo en casa.",
+          "audioKey": "pending/voc-quedarse-en-casa"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Esta noche prefiero quedarme en casa.",
+          "ar": "هذه الليلة أفضل أن أبقى في البيت."
+        }
+      ],
+      "related": [
+        "casa",
+        "salir",
+        "descansar"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "hacer la compra",
+      "normalized": "hacer la compra",
+      "kind": "collocation",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aˈθeɾ la ˈkompɾa/",
+      "pronunciationHintAr": "أثِر لا كومبرا",
+      "internalRank": 14,
+      "tags": [
+        "تسوق",
+        "حياة يومية"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "التسوّق لشراء حوائج البيت (البقالة)",
+          "meaningArEg": "ينزل يجيب حاجيات البيت",
+          "glossEs": "comprar los alimentos y productos básicos",
+          "exampleEs": "Los sábados hago la compra en el supermercado.",
+          "exampleAr": "أيام السبت أتسوق في السوبر ماركت.",
+          "usageNoteAr": "تعبير ثابت بالمفرد la compra في إسبانيا. أما hacer las compras فتعني التسوّق عامة (ملابس وغيرها).",
+          "commonErrorAr": "hacer la compra ≠ «يقوم بالشراء» بأي معنى؛ هي تحديدًا شراء حوائج البيت.",
+          "audioKey": "pending/voc-hacer-la-compra"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo que hacer la compra antes de volver a casa.",
+          "ar": "عليّ أن أشتري حوائج البيت قبل العودة."
+        }
+      ],
+      "related": [
+        "supermercado",
+        "compra",
+        "lista"
+      ],
+      "variantNoteAr": "في أمريكا اللاتينية تُستخدم «hacer las compras» أو «ir al súper» أكثر.",
+      "sourceId": null
+    },
+    {
+      "headword": "tener ganas de",
+      "normalized": "tener ganas de",
+      "kind": "collocation",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/teˈneɾ ˈɡanas ðe/",
+      "pronunciationHintAr": "تِنير جاناس ذي",
+      "internalRank": 15,
+      "tags": [
+        "مشاعر",
+        "أفعال شائعة"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يرغب في / يشتاق إلى (فعل شيء)",
+          "meaningArEg": "نفسه في / عنده رغبة يعمل حاجة",
+          "glossEs": "sentir deseo o ganas de algo",
+          "exampleEs": "Tengo ganas de aprender español de verdad.",
+          "exampleAr": "لديّ رغبة حقيقية في تعلّم الإسبانية.",
+          "usageNoteAr": "تأتي مع مصدر: tener ganas de + infinitivo، ومع اسم: tener ganas de café. ومع فاعل مختلف: tener ganas de que + subjuntivo.",
+          "commonErrorAr": "«tengo ganas a» خطأ؛ الحرف الصحيح de. ولا تُصرَّف ganas مع الفاعل.",
+          "audioKey": "pending/voc-tener-ganas-de"
+        }
+      ],
+      "examples": [
+        {
+          "es": "No tengo ganas de salir hoy.",
+          "ar": "لا أرغب في الخروج اليوم."
+        }
+      ],
+      "related": [
+        "querer",
+        "apetecer",
+        "ganas"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "ser",
+      "normalized": "ser",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/seɾ/",
+      "pronunciationHintAr": "سِر — r خفيفة في النهاية",
+      "internalRank": 16,
+      "tags": [
+        "أفعال أساسية",
+        "قواعد"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يكون (للصفات الثابتة والهوية والأصل وال مهنة)",
+          "meaningArEg": "يكون (في الأصل/الصفة الثابتة)",
+          "glossEs": "verbo copulativo para identidad, origen y características inherentes",
+          "exampleEs": "Soy profesor de matemáticas y soy de Egipto.",
+          "exampleAr": "أنا مدرّس رياضيات وأنا من مصر.",
+          "usageNoteAr": "يُستخدم للهوية والمهنة والجنسية والصفات الجوهرية والوقت: Son las tres.",
+          "commonErrorAr": "الخلط بين ser وestar: «soy cansado» خطأ، والصحيح estoy cansado لأن التعب حالة مؤقتة.",
+          "audioKey": "pending/voc-ser"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "soy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "eres",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "es",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "somos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sois",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "son",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ella es española, de Valencia.",
+          "ar": "هي إسبانية من فالنسيا."
+        }
+      ],
+      "antonyms": [
+        "estar"
+      ],
+      "related": [
+        "estar",
+        "hay",
+        "tener"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "estar",
+      "normalized": "estar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/esˈtaɾ/",
+      "pronunciationHintAr": "إستار — الضغط على المقطع الأخير",
+      "internalRank": 17,
+      "tags": [
+        "أفعال أساسية",
+        "قواعد"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يكون (للحالة والمكان والوضع المؤقت)",
+          "meaningArEg": "يكون (في حالة أو مكان)",
+          "glossEs": "verbo para estados, ubicación y situaciones transitorias",
+          "exampleEs": "Estoy cansado y estoy en casa.",
+          "exampleAr": "أنا متعب وأنا في البيت.",
+          "usageNoteAr": "للحالة المؤقتة والمكان: estoy en Madrid. وللأحوال: está cerrado.",
+          "commonErrorAr": "«estoy de Egipto» خطأ للأصل؛ الأصل بـser: soy de Egipto.",
+          "audioKey": "pending/voc-estar"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "estoy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estás",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "está",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "estáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "están",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está la farmacia?",
+          "ar": "أين الصيدلية؟"
+        }
+      ],
+      "antonyms": [
+        "ser"
+      ],
+      "related": [
+        "ser",
+        "hay",
+        "lugar"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "hay",
+      "normalized": "hay",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aj/",
+      "pronunciationHintAr": "آيْ — مقطع واحد",
+      "internalRank": 18,
+      "tags": [
+        "أفعال أساسية",
+        "وجود"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يوجد / هناك (للمفرد والجمع)",
+          "meaningArEg": "فيه / موجود",
+          "glossEs": "forma impersonal de haber: existencia",
+          "exampleEs": "Hay un banco cerca de aquí.",
+          "exampleAr": "يوجد بنك قريب من هنا.",
+          "exampleArEg": "فيه بنك قريب من هنا.",
+          "usageNoteAr": "لا تتغير مع الجمع: hay dos bancos. وتأتي مع أدوات التنكير لا التعريف: hay un/una، ولا نقول hay el banco.",
+          "commonErrorAr": "«hay el banco» خطأ. الصحيح: está el banco أو hay un banco.",
+          "audioKey": "pending/voc-hay"
+        }
+      ],
+      "examples": [
+        {
+          "es": "No hay problema.",
+          "ar": "لا توجد مشكلة."
+        }
+      ],
+      "related": [
+        "estar",
+        "haber",
+        "existir"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null,
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "hay",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "trabajar",
+      "normalized": "trabajar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tɾaβaˈxaɾ/",
+      "pronunciationHintAr": "تراباخار — j تُنطق خاءً خفيفة",
+      "internalRank": 19,
+      "tags": [
+        "عمل",
+        "أفعال شائعة"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يعمل",
+          "meaningArEg": "يشتغل",
+          "glossEs": "realizar una actividad laboral",
+          "exampleEs": "Trabajo en un centro de llamadas en El Cairo.",
+          "exampleAr": "أعمل في مركز اتصال في القاهرة.",
+          "usageNoteAr": "trabajar en + مكان، trabajar de + مهنة: trabajo de profesor.",
+          "commonErrorAr": "«trabajo como profesor» صحيحة لكن الأكثر شيوعًا في إسبانيا trabajo de profesor.",
+          "audioKey": "pending/voc-trabajar"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "trabajo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trabajas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trabaja",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trabajamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trabajáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p"
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trabajan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿En qué trabajas?",
+          "ar": "في ماذا تعمل؟"
+        }
+      ],
+      "related": [
+        "trabajo",
+        "empresa",
+        "oficina"
+      ],
+      "variantNoteAr": "في أمريكا اللاتينية يُهمل ضمير المخاطب الجمع «trabajáis» وتُستخدم «trabajan» مع ustedes.",
+      "sourceId": null
+    },
+    {
+      "headword": "ir",
+      "normalized": "ir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/iɾ/",
+      "pronunciationHintAr": "إر — r خفيفة جدًا",
+      "internalRank": 20,
+      "tags": [
+        "أفعال أساسية",
+        "حركة"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يذهب",
+          "meaningArEg": "يروح",
+          "glossEs": "desplazarse a un lugar",
+          "exampleEs": "Voy al trabajo en metro.",
+          "exampleAr": "أذهب إلى العمل بالمترو.",
+          "usageNoteAr": "a + el = al: voy al trabajo. وللمستقبل القريب: ir a + infinitivo = voy a estudiar.",
+          "commonErrorAr": "«voy a el trabajo» خطأ؛ تُدمج a + el في al.",
+          "audioKey": "pending/voc-ir"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "voy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "va",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vais",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "van",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy a llamar al cliente ahora.",
+          "ar": "سأتصل بالعميل الآن."
+        }
+      ],
+      "related": [
+        "venir",
+        "viajar",
+        "ir a + infinitivo"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    }
+  ]
+}

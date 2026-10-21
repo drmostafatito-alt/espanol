@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u2-booking",
+    "titleAr": "حجز غرفة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u2-hotel",
+    "objectiveAr": "أن يحجز المتعلم غرفة عبر الهاتف أو الإنترنت: يحدد التواريخ وعدد الليالي ونوع الغرفة، ويسأل عن السعر والإفطار.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "reserva",
+      "habitación doble",
+      "cama"
+    ],
+    "reviewVocabulary": [
+      "noche",
+      "precio",
+      "desayuno"
+    ],
+    "targetStructures": [
+      "Quiero reservar una habitación doble.",
+      "¿Está incluido el desayuno?",
+      "¿Cuánto cuesta la noche?"
+    ],
+    "grammarTopics": [
+      "reservar",
+      "precios-y-fechas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تحجز غرفة بالفندق هاتفيًا لرحلتك القادمة.",
+        "settingAr": "مكالمة مع مكتب الحجز",
+        "lines": [
+          {
+            "es": "Hotel Sol, buenos días. ¿En qué puedo ayudarle?",
+            "ar": "فندق سول، صباح الخير. كيف أساعدك؟",
+            "arEg": "فندق سول، صباح الخير. أساعدك في إيه؟",
+            "audioKey": "pending/tr-u2-l1-hotel-1"
+          },
+          {
+            "es": "Quiero reservar una habitación doble para tres noches.",
+            "ar": "أريد حجز غرفة مزدوجة لثلاث ليالٍ.",
+            "arEg": "عايز أحجز أوضة دوبل تلات ليالي.",
+            "audioKey": "pending/tr-u2-l1-omar-1"
+          },
+          {
+            "es": "¿Está incluido el desayuno?",
+            "ar": "هل الفطور مشمول؟",
+            "arEg": "الفطار مشمول؟",
+            "audioKey": "pending/tr-u2-l1-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u2_1_book",
+        "type": "fill_blank",
+        "instructionAr": "أكمل بفعل الحجز المناسب.",
+        "stemEs": "Quiero ____ una habitación doble.",
+        "stemAr": "أريد حجز غرفة مزدوجة.",
+        "answerKey": {
+          "accepted": [
+            "reservar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "بعد querer يأتي المصدر: reservar. الاسم منها reserva.",
+        "errorFeedback": {
+          "reservo": "بعد querer: reservar لا reservo.",
+          "reserva": "«reserva» اسم؛ الفعل reservar."
+        },
+        "targetVocab": [
+          "reserva",
+          "habitación doble"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_2_nights",
+        "type": "word_choice",
+        "instructionAr": "كيف تسأل عن سعر الليلة؟",
+        "options": [
+          {
+            "id": "tr_u2_2_a",
+            "text": "¿Cuánto cuesta la noche?",
+            "isCorrect": true,
+            "textAr": "كم سعر الليلة؟"
+          },
+          {
+            "id": "tr_u2_2_b",
+            "text": "¿Cuántas noches cuesta?",
+            "isCorrect": false,
+            "textAr": "كم ليلة تُكلّف؟",
+            "distractorRationaleAr": "«cuántas» للسؤال عن العدد لا السعر."
+          },
+          {
+            "id": "tr_u2_2_c",
+            "text": "¿Qué noche es?",
+            "isCorrect": false,
+            "textAr": "أي ليلة؟",
+            "distractorRationaleAr": "سؤال عن تحديد الليلة لا عن السعر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_2_a"
+          ]
+        },
+        "explanationAr": "للسؤال عن السعر: ¿Cuánto cuesta…? ومع «la noche» يبقى الفعل مفردًا: cuesta.",
+        "errorFeedback": {
+          "tr_u2_2_b": "«cuánto» للسعر و«cuántas» للعدد.",
+          "tr_u2_2_c": "«¿Qué noche?» تسأل عن التعيين لا الثمن."
+        },
+        "targetVocab": [
+          "reserva"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_3_breakfast",
+        "type": "choose_reply",
+        "instructionAr": "اسأل عمّا إذا كان الفطور مشمولًا.",
+        "stemEs": "— Son 90 euros por noche.",
+        "stemAr": "— السعر 90 يورو في الليلة.",
+        "options": [
+          {
+            "id": "tr_u2_3_a",
+            "text": "¿Está incluido el desayuno?",
+            "isCorrect": true,
+            "textAr": "هل الفطور مشمول؟"
+          },
+          {
+            "id": "tr_u2_3_b",
+            "text": "¿Dónde está el desayuno?",
+            "isCorrect": false,
+            "textAr": "أين الفطور؟",
+            "distractorRationaleAr": "سؤال مكان لا شمول."
+          },
+          {
+            "id": "tr_u2_3_c",
+            "text": "¿El desayuno es caro?",
+            "isCorrect": false,
+            "textAr": "هل الفطور غالٍ؟",
+            "distractorRationaleAr": "سؤال آخر، لكن الأهم أولًا معرفة الشمول من عدمه."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_3_a"
+          ]
+        },
+        "explanationAr": "«incluido» = مشمول. السؤال الثابت: ¿Está incluido el desayuno? / ¿El desayuno está incluido?",
+        "errorFeedback": {
+          "tr_u2_3_b": "هذا سؤال مكان الفطور.",
+          "tr_u2_3_c": "قبل السعر اسأل: هل هو مشمول أصلًا؟"
+        },
+        "targetVocab": [
+          "desayuno"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_4_dates",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أريد الحجز من الثالث إلى السادس من مايو.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Quiero reservar del 3 al 6 de mayo.",
+            "Quiero reservar del tres al seis de mayo.",
+            "Quiero hacer una reserva del 3 al 6 de mayo."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "نطاق التواريخ: «del … al …» = من … إلى … . في الإسبانية الشهر بعد اليوم بلا حرف جر إضافي: el 3 de mayo.",
+        "errorFeedback": {
+          "del 3 hasta el 6": "الأفصح في الحجوزات: del 3 al 6.",
+          "de 3 a 6 mayo": "ناقص أداة التعريف: del 3 al 6 de mayo."
+        },
+        "targetVocab": [
+          "reserva"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الفندق 1/4. يحتاج مراجعة إسبانية أصلية لصيغ الحجز الهاتفي في إسبانيا (del … al … فعّالة). كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

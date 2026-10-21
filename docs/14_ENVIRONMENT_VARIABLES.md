@@ -1,0 +1,46 @@
+# متغيرات البيئة والأسرار
+
+> لا تُكتب أي قيمة سرية هنا أو في المستودع. هذا الملف يحدد **الأسماء والنطاق** فقط.
+
+## 1. Bindings في `wrangler.toml` (غير سرية)
+
+| الاسم | النوع | الغرض | بيئات |
+| --- | --- | --- | --- |
+| `DB` | D1 binding | قاعدة البيانات | dev/staging/prod |
+| `MEDIA` | R2 binding | قراءة/كتابة الأصول (الإدارة فقط) | staging/prod |
+| `ENVIRONMENT` | var | `development` \| `staging` \| `production` | كلها |
+| `APP_ORIGIN` | var | أصل التطبيق للتحقق من Origin | كلها |
+| `MEDIA_ORIGIN` | var | نطاق الوسائط المخصص | كلها |
+| `PBKDF2_ITERATIONS` | var | عدد التكرارات المعايَر | كلها |
+| `SESSION_TTL_DAYS` | var | 30 افتراضيًا | كلها |
+| `FEATURE_PUSH` | var | `true` عندما يُعد VAPID | staging/prod |
+| `FEATURE_EMAIL` | var | `true` عندما يُعد مزود البريد | staging/prod |
+| `ADMIN_BOOTSTRAP_DONE` | var | يمنع إعادة إنشاء حساب إدارة | staging/prod |
+
+## 2. أسرار (`wrangler secret put`)
+
+| الاسم | الغرض | إلزامي؟ |
+| --- | --- | --- |
+| `SESSION_PEPPER` | إضافة سرية إلى تجزئة كلمة المرور (حماية من هجوم قاموس على قاعدة مسروقة) | **نعم** |
+| `VAPID_PUBLIC_KEY` | Web Push | عند تفعيل Push |
+| `VAPID_PRIVATE_KEY` | Web Push | عند تفعيل Push |
+| `EMAIL_API_KEY` | مزود البريد | عند تفعيل البريد |
+| `TURNSTILE_SECRET` | حماية إنشاء الحساب (اختياري، مجاني) | اختياري |
+
+## 3. متغيرات تطوير محلية (`.dev.vars` — غير مُتتبَّع في Git)
+
+```
+SESSION_PEPPER=<قيمة عشوائية 32B للـdev فقط>
+ENVIRONMENT=development
+APP_ORIGIN=http://localhost:5173
+```
+
+`.gitignore` يجب أن يشمل: `.dev.vars`, `.env*`, `node_modules`, `dist`, `.wrangler`, `reports/*.local.*`.
+
+## 4. قواعد
+
+1. لا سر في كود الواجهة. لا `import.meta.env.VITE_*` لأي سر (القيم التي تُبنى في العميل **عامة**).
+2. `VITE_*` مسموح فقط لـ: `VITE_APP_ORIGIN`, `VITE_MEDIA_ORIGIN`, `VITE_FEATURE_FLAGS` (عامة بطبيعتها).
+3. مفاتيح مختلفة لكل بيئة؛ لا إعادة استخدام مفتاح production في staging.
+4. تدوير `SESSION_PEPPER` يُبطل كل الجلسات (خطة موثقة: تدوير مع نافذة سماح مزدوجة).
+5. عند تغيّر متغير يؤثر على السلوك، يُسجَّل في `CHANGELOG.md`.

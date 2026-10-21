@@ -1,0 +1,754 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-band2-daily",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر قد يغيّر المعنى.",
+  "source": {
+    "title": "الحياة اليومية: طعام ومنزل وتنقّل ووصف — إعداد داخلي، يحتاج مراجعة بشرية قبل النشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزمة «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة ومُوثَّقة."
+  },
+  "entries": [
+    {
+      "headword": "agua",
+      "normalized": "agua",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈaɣwa/",
+      "pronunciationHintAr": "أغوا",
+      "internalRank": 1,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ماء",
+          "meaningArEg": "ميّة",
+          "glossEs": "sustantivo femenino: el agua (con artículo el por la a tónica)",
+          "exampleEs": "Un vaso de agua, por favor.",
+          "exampleAr": "كوب ماء، من فضلك.",
+          "exampleArEg": "كوباية ميّة، لو سمحت.",
+          "usageNoteAr": "مؤنثة لكن تأخذ el: el agua (لأن a في البداية مشددة).",
+          "commonErrorAr": "«la agua» خطأ شائع؛ الصواب el agua مع بقاء الصفة مؤنثة: agua fría."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un vaso de agua, por favor.",
+          "ar": "كوب ماء، من فضلك.",
+          "arEg": "كوباية ميّة، لو سمحت."
+        }
+      ]
+    },
+    {
+      "headword": "pan",
+      "normalized": "pan",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pan/",
+      "pronunciationHintAr": "بان",
+      "internalRank": 2,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خبز",
+          "meaningArEg": "عيش",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "Quiero pan.",
+          "exampleAr": "أريد خبزًا.",
+          "exampleArEg": "عايز عيش.",
+          "usageNoteAr": "غير معدود؛ للقطعة: un pan.",
+          "commonErrorAr": "«una pan» خطأ؛ pan مذكر."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Quiero pan.",
+          "ar": "أريد خبزًا.",
+          "arEg": "عايز عيش."
+        }
+      ]
+    },
+    {
+      "headword": "casa",
+      "normalized": "casa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkasa/",
+      "pronunciationHintAr": "كاسا",
+      "internalRank": 3,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بيت",
+          "meaningArEg": "بيت",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Mi casa es pequeña.",
+          "exampleAr": "بيتي صغير.",
+          "exampleArEg": "بيتي صغير.",
+          "usageNoteAr": "en casa = في البيت (بلا أداة).",
+          "commonErrorAr": "«en la casa» تعني في البيت المحدد؛ التعبير الشائع en casa."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi casa es pequeña.",
+          "ar": "بيتي صغير.",
+          "arEg": "بيتي صغير."
+        }
+      ]
+    },
+    {
+      "headword": "mesa",
+      "normalized": "mesa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈmesa/",
+      "pronunciationHintAr": "ميسا",
+      "internalRank": 4,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طاولة",
+          "meaningArEg": "طرابيزة",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Una mesa para dos.",
+          "exampleAr": "طاولة لشخصين.",
+          "exampleArEg": "طرابيزة لاتنين.",
+          "usageNoteAr": "مؤنثة: la mesa.",
+          "commonErrorAr": "«el mesa» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Una mesa para dos.",
+          "ar": "طاولة لشخصين.",
+          "arEg": "طرابيزة لاتنين."
+        }
+      ]
+    },
+    {
+      "headword": "coche",
+      "normalized": "coche",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkotʃe/",
+      "pronunciationHintAr": "كوتشي",
+      "internalRank": 5,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سيارة",
+          "meaningArEg": "عربية/عجلة",
+          "glossEs": "sustantivo masculino (España); en Latinoamérica: carro/auto",
+          "exampleEs": "Voy en coche.",
+          "exampleAr": "أذهب بالسيارة.",
+          "exampleArEg": "أنا رايح بالعربية.",
+          "usageNoteAr": "وسيلة النقل بـen: en coche.",
+          "commonErrorAr": "«voy con coche» أقل شيوعًا؛ الأفضل en coche."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy en coche.",
+          "ar": "أذهب بالسيارة.",
+          "arEg": "أنا رايح بالعربية."
+        }
+      ]
+    },
+    {
+      "headword": "autobús",
+      "normalized": "autobús",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/autoˈβus/",
+      "pronunciationHintAr": "أوتوبوس",
+      "internalRank": 6,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أتوبيس/حافلة",
+          "meaningArEg": "أتوبيس",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El autobús llega a las ocho.",
+          "exampleAr": "الأتوبيس يصل الساعة الثامنة.",
+          "exampleArEg": "الأتوبيس بيوصل الساعة تمانية.",
+          "usageNoteAr": "النبر على المقطع الأخير ويزيد في الجمع: autobuses.",
+          "commonErrorAr": "الجمع autobuses بلا نبرة مكتوبة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El autobús llega a las ocho.",
+          "ar": "الأتوبيس يصل الساعة الثامنة.",
+          "arEg": "الأتوبيس بيوصل الساعة تمانية."
+        }
+      ]
+    },
+    {
+      "headword": "calle",
+      "normalized": "calle",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkaʎe/",
+      "pronunciationHintAr": "كايي",
+      "internalRank": 7,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شارع",
+          "meaningArEg": "شارع",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Vivo en esta calle.",
+          "exampleAr": "أعيش في هذا الشارع.",
+          "exampleArEg": "أنا عايش في الشارع ده.",
+          "usageNoteAr": "للمكان نستخدم en.",
+          "commonErrorAr": "«a la calle» تعني إلى الشارع (اتجاه)، و«en la calle» في الشارع."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Vivo en esta calle.",
+          "ar": "أعيش في هذا الشارع.",
+          "arEg": "أنا عايش في الشارع ده."
+        }
+      ]
+    },
+    {
+      "headword": "tienda",
+      "normalized": "tienda",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈtjenda/",
+      "pronunciationHintAr": "تييندا",
+      "internalRank": 8,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "متجر",
+          "meaningArEg": "دكان/محل",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "La tienda abre a las nueve.",
+          "exampleAr": "المتجر يفتح الساعة التاسعة.",
+          "exampleArEg": "المحل بيفتح الساعة تسعة.",
+          "usageNoteAr": "مؤنثة: la tienda.",
+          "commonErrorAr": "«el tienda» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tienda abre a las nueve.",
+          "ar": "المتجر يفتح الساعة التاسعة.",
+          "arEg": "المحل بيفتح الساعة تسعة."
+        }
+      ]
+    },
+    {
+      "headword": "dinero",
+      "normalized": "dinero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/diˈneɾo/",
+      "pronunciationHintAr": "دينيرو",
+      "internalRank": 9,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مال / نقود",
+          "meaningArEg": "فلوس",
+          "glossEs": "sustantivo masculino no contable",
+          "exampleEs": "No tengo dinero.",
+          "exampleAr": "ليس عندي نقود.",
+          "exampleArEg": "معايا فلوس.",
+          "usageNoteAr": "غير معدود؛ للورقة النقدية: un billete.",
+          "commonErrorAr": "«dineros» غير مستخدمة في الكلام العادي."
+        }
+      ],
+      "examples": [
+        {
+          "es": "No tengo dinero.",
+          "ar": "ليس عندي نقود.",
+          "arEg": "معايا فلوس."
+        }
+      ]
+    },
+    {
+      "headword": "grande",
+      "normalized": "grande",
+      "kind": "word",
+      "pos": "adj",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈgɾande/",
+      "pronunciationHintAr": "غراندي",
+      "internalRank": 10,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كبير",
+          "meaningArEg": "كبير",
+          "glossEs": "adjetivo invariable en género",
+          "exampleEs": "Una casa grande.",
+          "exampleAr": "بيت كبير.",
+          "exampleArEg": "بيت كبير.",
+          "usageNoteAr": "لا تتغير للمؤنث: casa grande.",
+          "commonErrorAr": "«granda» غير موجودة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Una casa grande.",
+          "ar": "بيت كبير.",
+          "arEg": "بيت كبير."
+        }
+      ]
+    },
+    {
+      "headword": "pequeño",
+      "normalized": "pequeño",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/peˈkeɲo/",
+      "pronunciationHintAr": "بيكينيو",
+      "internalRank": 11,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صغير",
+          "meaningArEg": "صغير",
+          "glossEs": "adjetivo (pequeña en femenino)",
+          "exampleEs": "Un piso pequeño.",
+          "exampleAr": "شقة صغيرة.",
+          "exampleArEg": "شقة صغيرة.",
+          "usageNoteAr": "pequeña للمؤنث.",
+          "commonErrorAr": "«pequeña casa» صحيحة، والخطأ هو «pequeño casa»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un piso pequeño.",
+          "ar": "شقة صغيرة.",
+          "arEg": "شقة صغيرة."
+        }
+      ]
+    },
+    {
+      "headword": "nuevo",
+      "normalized": "nuevo",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈnweβo/",
+      "pronunciationHintAr": "نويبو",
+      "internalRank": 12,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جديد",
+          "meaningArEg": "جديد",
+          "glossEs": "adjetivo (nueva en femenino)",
+          "exampleEs": "Un móvil nuevo.",
+          "exampleAr": "موبايل جديد.",
+          "exampleArEg": "موبايل جديد.",
+          "usageNoteAr": "nueva للمؤنث.",
+          "commonErrorAr": "«nueba» غير صحيحة؛ الصواب nueva."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un móvil nuevo.",
+          "ar": "موبايل جديد.",
+          "arEg": "موبايل جديد."
+        }
+      ]
+    },
+    {
+      "headword": "bueno",
+      "normalized": "bueno",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈbweno/",
+      "pronunciationHintAr": "بْوينو",
+      "internalRank": 13,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جيد / طيب",
+          "meaningArEg": "كويس",
+          "glossEs": "adjetivo (buena en femenino)",
+          "exampleEs": "Es un buen café.",
+          "exampleAr": "إنه قهوة جيدة.",
+          "exampleArEg": "ده قهوة كويسة.",
+          "usageNoteAr": "قبل اسم مذكر مفرد نحذف o: buen café.",
+          "commonErrorAr": "«buen» لا تُستخدم وحدها؛ تلزمها كلمة بعدها."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Es un buen café.",
+          "ar": "إنه قهوة جيدة.",
+          "arEg": "ده قهوة كويسة."
+        }
+      ]
+    },
+    {
+      "headword": "caro",
+      "normalized": "caro",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈkaɾo/",
+      "pronunciationHintAr": "كارو",
+      "internalRank": 14,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غالي",
+          "meaningArEg": "غالي",
+          "glossEs": "adjetivo (cara en femenino)",
+          "exampleEs": "Es muy caro.",
+          "exampleAr": "إنه غالٍ جدًا.",
+          "exampleArEg": "ده غالي أوي.",
+          "usageNoteAr": "عكسها barato.",
+          "commonErrorAr": "«caro» للأسعار لا للأشخاص."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Es muy caro.",
+          "ar": "إنه غالٍ جدًا.",
+          "arEg": "ده غالي أوي."
+        }
+      ]
+    },
+    {
+      "headword": "abierto",
+      "normalized": "abierto",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aˈβjeɾto/",
+      "pronunciationHintAr": "أبييرتو",
+      "internalRank": 15,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مفتوح",
+          "meaningArEg": "مفتوح",
+          "glossEs": "participio irregular de abrir usado como adjetivo",
+          "exampleEs": "La tienda está abierta.",
+          "exampleAr": "المتجر مفتوح.",
+          "exampleArEg": "المحل مفتوح.",
+          "usageNoteAr": "مع estar لأنها حالة: está abierta.",
+          "commonErrorAr": "«es abierta» خطأ؛ الحالة تكون مع estar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tienda está abierta.",
+          "ar": "المتجر مفتوح.",
+          "arEg": "المحل مفتوح."
+        }
+      ]
+    },
+    {
+      "headword": "comida",
+      "normalized": "comida",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/koˈmiða/",
+      "pronunciationHintAr": "كوميذا",
+      "internalRank": 16,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طعام / أكلة",
+          "meaningArEg": "أكل",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "La comida está lista.",
+          "exampleAr": "الطعام جاهز.",
+          "exampleArEg": "الأكل جاهز.",
+          "usageNoteAr": "comer = يأكل، comida = الطعام أو وجبة الغداء.",
+          "commonErrorAr": "«la comida» قد تعني الغداء في إسبانيا (الساعة 14:00)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La comida está lista.",
+          "ar": "الطعام جاهز.",
+          "arEg": "الأكل جاهز."
+        }
+      ]
+    },
+    {
+      "headword": "habitación",
+      "normalized": "habitación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aβitaˈθjon/",
+      "pronunciationHintAr": "أبيتاثيون",
+      "internalRank": 17,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غرفة",
+          "meaningArEg": "أوضة",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Una habitación doble.",
+          "exampleAr": "غرفة مزدوجة.",
+          "exampleArEg": "أوضة دوبل.",
+          "usageNoteAr": "في الفنادق: habitación = غرفة، وفي المنزل قد تعني حجرة النوم.",
+          "commonErrorAr": "«el habitación» خطأ؛ مؤنثة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Una habitación doble.",
+          "ar": "غرفة مزدوجة.",
+          "arEg": "أوضة دوبل."
+        }
+      ]
+    },
+    {
+      "headword": "llave",
+      "normalized": "llave",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈʎaβe/",
+      "pronunciationHintAr": "يابي",
+      "internalRank": 18,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مفتاح",
+          "meaningArEg": "مفتاح",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Aquí tiene su llave.",
+          "exampleAr": "تفضل مفتاحك.",
+          "exampleArEg": "اتفضل مفتاحك.",
+          "usageNoteAr": "ll تُنطق قريبة من الياء المشددة في معظم إسبانيا.",
+          "commonErrorAr": "«la yave» إملاء غير صحيح؛ تُكتب llave."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aquí tiene su llave.",
+          "ar": "تفضل مفتاحك.",
+          "arEg": "اتفضل مفتاحك."
+        }
+      ]
+    },
+    {
+      "headword": "pasaporte",
+      "normalized": "pasaporte",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pasaˈpoɾte/",
+      "pronunciationHintAr": "باسابورتي",
+      "internalRank": 19,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جواز سفر",
+          "meaningArEg": "باسبور",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "Su pasaporte, por favor.",
+          "exampleAr": "جواز سفرك، من فضلك.",
+          "exampleArEg": "الباسبور، لو سمحت.",
+          "usageNoteAr": "في المطار يُطلب بـ«Su pasaporte».",
+          "commonErrorAr": "«la pasaporte» خطأ؛ مذكر."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su pasaporte, por favor.",
+          "ar": "جواز سفرك، من فضلك.",
+          "arEg": "الباسبور، لو سمحت."
+        }
+      ]
+    },
+    {
+      "headword": "maleta",
+      "normalized": "maleta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/maˈleta/",
+      "pronunciationHintAr": "ماليتا",
+      "internalRank": 20,
+      "tags": [
+        "مفردات أساسية",
+        "band2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حقيبة سفر",
+          "meaningArEg": "شنطة",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Mi maleta es pequeña.",
+          "exampleAr": "حقيبتي صغيرة.",
+          "exampleArEg": "شنطتي صغيرة.",
+          "usageNoteAr": "مؤنثة.",
+          "commonErrorAr": "«el maleta» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi maleta es pequeña.",
+          "ar": "حقيبتي صغيرة.",
+          "arEg": "شنطتي صغيرة."
+        }
+      ]
+    }
+  ]
+}

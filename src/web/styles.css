@@ -1,0 +1,246 @@
+/* نظام التصميم — رموز مطابقة لـ docs/07_UI_DESIGN_SYSTEM.md */
+:root {
+  --c-primary: #1f7a5c;
+  --c-primary-strong: #155c44;
+  --c-primary-soft: #e6f2ec;
+  --c-accent: #d97706;
+  --c-accent-soft: #fdf3e4;
+  --c-danger: #b3261e;
+  --c-danger-soft: #fbeceb;
+  --c-success: #146c43;
+  --c-bg: #faf8f4;
+  --c-surface: #ffffff;
+  --c-surface-2: #f2efe9;
+  --c-border: #dcd6cc;
+  --c-text: #1b1a17;
+  --c-text-muted: #57534a;
+  --c-focus: #0b5fff;
+
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px;
+  --r-sm: 8px; --r-md: 12px; --r-lg: 20px; --r-pill: 999px;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --font-ar: "Noto Kufi Arabic", "Segoe UI", "Tahoma", system-ui, sans-serif;
+  --font-es: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-ar);
+  font-size: 17px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+@media (min-width: 900px) { body { font-size: 16px; } }
+
+a { color: var(--c-primary-strong); text-underline-offset: 3px; }
+h1, h2, h3 { line-height: 1.4; margin: 0 0 var(--s-3); }
+h1 { font-size: clamp(1.5rem, 4vw, 2rem); }
+h2 { font-size: clamp(1.2rem, 3vw, 1.4rem); }
+p { margin: 0 0 var(--s-3); }
+
+:focus-visible { outline: 3px solid var(--c-focus); outline-offset: 2px; border-radius: 4px; }
+
+/* النص الإسباني معزول داخل واجهة RTL */
+.es { direction: ltr; unicode-bidi: isolate; font-family: var(--font-es); display: inline-block; }
+.num { direction: ltr; unicode-bidi: isolate; font-variant-numeric: tabular-nums; }
+
+.skip-link {
+  /* يُخفى بالإزاحة العمودية لا الأفقية: `inset-inline-start: -9999px` في RTL يعني
+     right:-9999px فيمدّ الصفحة أفقيًا ويصنع تمريرًا جانبيًا وهميًا على 320px. */
+  position: absolute; inset-inline-start: var(--s-2); top: -100px;
+  background: var(--c-surface); padding: var(--s-2) var(--s-4); border-radius: var(--r-sm); z-index: 100;
+}
+.skip-link:focus { top: var(--s-2); }
+
+/* ---------- التخطيط ---------- */
+.app { min-height: 100%; display: flex; flex-direction: column; }
+.topbar {
+  /* ‏320px: الأزرار الثلاثة + الشعار تتجاوز العرض، وكانت تخرج خارج الشاشة
+     وتصنع تمريرًا أفقيًا. الالتفاف يُبقي كل الأزرار ظاهرة بلا قصّ. */
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  background: var(--c-surface); border-bottom: 1px solid var(--c-border);
+  position: sticky; top: 0; z-index: 20;
+}
+.brand { display: flex; align-items: center; gap: var(--s-2); font-weight: 700; color: var(--c-text); text-decoration: none; }
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 10px; background: var(--c-primary);
+  color: #fff; display: grid; place-items: center; font-family: var(--font-es); font-weight: 700;
+}
+.spacer { flex: 1; }
+.container { width: 100%; max-width: 1080px; margin: 0 auto; padding: var(--s-5) var(--s-4) var(--s-7); }
+.narrow { max-width: 640px; }
+.grid { display: grid; gap: var(--s-4); }
+@media (min-width: 760px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+
+/* ---------- المكوّنات ---------- */
+.card {
+  background: var(--c-surface); border: 1px solid var(--c-border);
+  border-radius: var(--r-lg); padding: var(--s-4); box-shadow: var(--shadow-1);
+}
+.card h2 { margin-top: 0; }
+.muted { color: var(--c-text-muted); }
+.small { font-size: 0.86rem; }
+.stack > * + * { margin-top: var(--s-3); }
+.row { display: flex; gap: var(--s-2); align-items: center; flex-wrap: wrap; }
+
+.btn {
+  appearance: none; border: 1px solid transparent; cursor: pointer;
+  min-height: 44px; padding: var(--s-2) var(--s-4);
+  border-radius: var(--r-pill); font: inherit; font-weight: 700;
+  background: var(--c-primary); color: #fff;
+  transition: background 120ms ease, transform 120ms ease;
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
+  text-decoration: none;
+}
+.btn:hover { background: var(--c-primary-strong); }
+.btn:active { transform: translateY(1px); }
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+.btn.secondary { background: var(--c-surface); color: var(--c-primary-strong); border-color: var(--c-border); }
+.btn.secondary:hover { background: var(--c-surface-2); }
+.btn.ghost { background: transparent; color: var(--c-text); border-color: transparent; }
+.btn.danger { background: var(--c-danger); }
+.btn.block { width: 100%; }
+.btn.sm { min-height: 36px; padding: var(--s-1) var(--s-3); font-size: 0.9rem; }
+
+.field { display: block; margin-bottom: var(--s-4); }
+.field > span { display: block; margin-bottom: var(--s-2); font-weight: 600; font-size: 0.95rem; }
+input[type="email"], input[type="password"], input[type="text"], select {
+  width: 100%; min-height: 46px; padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--c-border); border-radius: var(--r-md);
+  background: var(--c-surface); color: var(--c-text); font: inherit;
+}
+input.ltr { direction: ltr; text-align: left; font-family: var(--font-es); }
+select { appearance: auto; }
+
+.alert {
+  border-radius: var(--r-md); padding: var(--s-3) var(--s-4);
+  border-inline-start: 4px solid var(--c-danger); background: var(--c-danger-soft); margin-bottom: var(--s-4);
+}
+.alert.ok { border-color: var(--c-success); background: var(--c-primary-soft); }
+.alert.info { border-color: var(--c-accent); background: var(--c-accent-soft); }
+.alert ul { margin: var(--s-2) 0 0; padding-inline-start: var(--s-4); }
+
+.badge {
+  display: inline-flex; align-items: center; gap: var(--s-1);
+  padding: 2px var(--s-2); border-radius: var(--r-pill);
+  background: var(--c-surface-2); color: var(--c-text-muted); font-size: 0.8rem; font-weight: 700;
+}
+.badge.primary { background: var(--c-primary-soft); color: var(--c-primary-strong); }
+.badge.accent { background: var(--c-accent-soft); color: #8a5a00; }
+
+.hero { padding: var(--s-6) 0 var(--s-4); }
+.hero p.lead { font-size: 1.05rem; color: var(--c-text-muted); max-width: 60ch; }
+
+.stat-row { display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+.stat { background: var(--c-surface-2); border-radius: var(--r-md); padding: var(--s-3); }
+.stat b { display: block; font-size: 1.25rem; }
+.stat span { font-size: 0.82rem; color: var(--c-text-muted); }
+
+.audio-demo { display: flex; align-items: center; gap: var(--s-3); flex-wrap: wrap; }
+.audio-state { font-size: 0.85rem; color: var(--c-text-muted); }
+
+.list-plain { list-style: none; margin: 0; padding: 0; }
+.list-plain li { padding: var(--s-2) 0; border-bottom: 1px solid var(--c-border); }
+.list-plain li:last-child { border-bottom: 0; }
+
+.footer {
+  margin-top: auto; padding: var(--s-5) var(--s-4);
+  border-top: 1px solid var(--c-border); background: var(--c-surface);
+  color: var(--c-text-muted); font-size: 0.85rem;
+}
+.footer .container { padding-block: 0; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ---------- المرحلة 2: لاعب الدرس ---------- */
+.banner-warn {
+  border-inline-start: 4px solid var(--c-accent);
+  background: var(--c-accent-soft);
+  padding: var(--s-3) var(--s-4);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.progress-track {
+  height: 8px; border-radius: var(--r-pill);
+  background: var(--c-surface-2); overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: var(--c-primary);
+  transition: width 200ms ease;
+}
+
+textarea {
+  width: 100%; padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--c-border); border-radius: var(--r-md);
+  background: var(--c-surface); color: var(--c-text); font: inherit; resize: vertical;
+}
+
+.choice {
+  display: flex; align-items: center; gap: var(--s-3);
+  min-height: 48px; padding: var(--s-3);
+  border: 1px solid var(--c-border); border-radius: var(--r-md);
+  background: var(--c-surface); cursor: pointer; margin-bottom: var(--s-2);
+  transition: border-color 120ms ease, background 120ms ease;
+}
+.choice:hover { background: var(--c-surface-2); }
+.choice.selected { border-color: var(--c-primary); background: var(--c-primary-soft); }
+.choice input { width: 20px; height: 20px; accent-color: var(--c-primary); }
+
+.token-box {
+  display: flex; flex-wrap: wrap; gap: var(--s-2);
+  min-height: 56px; padding: var(--s-2);
+  border: 1px dashed var(--c-border); border-radius: var(--r-md);
+  background: var(--c-surface-2);
+}
+.token {
+  appearance: none; border: 1px solid var(--c-border); cursor: pointer;
+  min-height: 40px; padding: var(--s-1) var(--s-3);
+  border-radius: var(--r-pill); background: var(--c-surface); font: inherit;
+  direction: ltr; unicode-bidi: isolate;
+}
+.token.ghost { background: var(--c-surface); }
+.token:hover { background: var(--c-primary-soft); }
+.token[disabled] { opacity: 0.6; cursor: not-allowed; }
+
+.feedback { padding: var(--s-3); border-radius: var(--r-md); border: 1px solid var(--c-border); }
+.feedback.ok { background: var(--c-primary-soft); border-color: var(--c-success); }
+.feedback.bad { background: var(--c-danger-soft); border-color: var(--c-danger); }
+.feedback.neutral { background: var(--c-accent-soft); border-color: var(--c-accent); }
+
+.error-text { color: var(--c-danger); }
+.lesson-row {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s-3);
+  padding: var(--s-3) 0; border-bottom: 1px solid var(--c-border);
+}
+.lesson-row:last-child { border-bottom: 0; }
+@media (max-width: 420px) {
+  .lesson-row { flex-direction: column; align-items: stretch; }
+}
+
+/* ---------- المرحلة 3: المراجعة المتباعدة ---------- */
+.review-card { min-height: 260px; display: flex; flex-direction: column; justify-content: flex-start; }
+.review-prompt { font-size: 1.7rem; font-weight: 700; margin: var(--s-3) 0 var(--s-2); word-break: break-word; }
+.rating-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2); }
+.rating-grid .btn { justify-content: space-between; padding-inline: var(--s-3); }
+.rating-again { background: #b3261e; }
+.rating-hard  { background: #8a5a00; }
+.rating-good  { background: var(--c-primary); }
+.rating-easy  { background: #1f6f43; }
+.rating-grid .small { font-size: 0.75rem; opacity: 0.85; }
+@media (max-width: 420px) {
+  .rating-grid { grid-template-columns: 1fr; }
+  .review-prompt { font-size: 1.45rem; }
+}

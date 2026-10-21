@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u1-opening",
+    "titleAr": "افتتاح المكالمة بنبرة مهنية",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u1-opening-verification",
+    "objectiveAr": "أن يفتتح المتعلم المكالمة بتحية مؤسسية واضحة، ويقدّم اسمه وشركته، ويسأل عن سبب الاتصال بصيغة مهنية، ويتجنب الصيغ الآمرة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "agente",
+      "cliente",
+      "compañero"
+    ],
+    "reviewVocabulary": [
+      "usted",
+      "por favor"
+    ],
+    "targetStructures": [
+      "Le atiende…",
+      "¿En qué puedo ayudarle?",
+      "¿Podría decirme su nombre, por favor?"
+    ],
+    "grammarTopics": [
+      "registro-formal-telefonico",
+      "usted-en-mcaciones"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مكالمة واردة من عميل يبدو متوترًا. أنت الموظف.",
+        "settingAr": "مركز اتصال، مكالمة واردة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
+            "ar": "صباح الخير، يخدمك عمر من خدمة العملاء. كيف أساعدك؟",
+            "arEg": "صباح الخير، معاك عمر من خدمة العملاء. أساعدك في إيه؟",
+            "audioKey": "pending/cc-u1-l1-agente-1"
+          },
+          {
+            "es": "Llevo dos días esperando mi pedido y nadie me dice nada.",
+            "ar": "أنتظر طلبي منذ يومين ولا أحد يخبرني بشيء.",
+            "arEg": "مستني الأوردر بتاعي يومين ومحدش بيقولي حاجة.",
+            "audioKey": "pending/cc-u1-l1-cliente-1"
+          },
+          {
+            "es": "Entiendo su molestia. Voy a comprobar el estado, ¿me permite un momento?",
+            "ar": "أتفهّم انزعاجك. سأتحقق من الحالة، هل تسمح لي بلحظة؟",
+            "arEg": "فاتهم انزعاجك. هتأكد من الحالة، تسمح لي لحظة؟",
+            "audioKey": "pending/cc-u1-l1-agente-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u1_1_opening",
+        "type": "word_choice",
+        "instructionAr": "أي افتتاح مكالمة أنسب في مركز اتصال؟",
+        "options": [
+          {
+            "id": "cc_u1_1_a",
+            "text": "Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
+            "isCorrect": true,
+            "textAr": "صباح الخير، يخدمك عمر من خدمة العملاء. كيف أساعدك؟"
+          },
+          {
+            "id": "cc_u1_1_b",
+            "text": "Dime, ¿qué quieres?",
+            "isCorrect": false,
+            "textAr": "قل لي، ماذا تريد؟",
+            "distractorRationaleAr": "غير رسمية ومباشرة؛ تخالف سجل الخدمة."
+          },
+          {
+            "id": "cc_u1_1_c",
+            "text": "¿Sí? ¿Quién eres?",
+            "isCorrect": false,
+            "textAr": "نعم؟ من أنت؟",
+            "distractorRationaleAr": "تبدو فظة وبلا تقديم للموظف أو الشركة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_1_a"
+          ]
+        },
+        "explanationAr": "الافتتاح المهني يجمع: تحية + تعريف بالموظف والشركة + سؤال مفتوح عن سبب الاتصال. صيغة usted واجبة.",
+        "errorFeedback": {
+          "cc_u1_1_b": "استخدم usted وصيغة مهنية.",
+          "cc_u1_1_c": "قدّم نفسك أولًا ثم اسأل."
+        },
+        "targetVocab": [
+          "agente"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_2_empathy",
+        "type": "choose_reply",
+        "instructionAr": "العميل غاضب: «¡Nadie me ayuda nunca!» اختر الردّ المهني.",
+        "stemEs": "— ¡Nadie me ayuda nunca en esta empresa!",
+        "stemAr": "— لا أحد يساعدني أبدًا في هذه الشركة!",
+        "options": [
+          {
+            "id": "cc_u1_2_a",
+            "text": "Entiendo su molestia y voy a ayudarle ahora mismo.",
+            "isCorrect": true,
+            "textAr": "أتفهّم انزعاجك وسأساعدك الآن."
+          },
+          {
+            "id": "cc_u1_2_b",
+            "text": "No es mi culpa.",
+            "isCorrect": false,
+            "textAr": "ليس خطئي.",
+            "distractorRationaleAr": "رفض المسؤولية يزيد الغضب."
+          },
+          {
+            "id": "cc_u1_2_c",
+            "text": "Tiene que hablar más despacio.",
+            "isCorrect": false,
+            "textAr": "عليك أن تتحدث أبطأ.",
+            "distractorRationaleAr": "مطلب آمر في لحظة غضب، ويُقابَل بالتجاهل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_2_a"
+          ]
+        },
+        "explanationAr": "الاعتراف بالشعور ثم الالتزام بالفعل: «Entiendo su molestia» + «voy a ayudarle». هذه صيغة تدريب مهني قياسية.",
+        "errorFeedback": {
+          "cc_u1_2_b": "أكّد المساعدة ولا تدفع اللوم.",
+          "cc_u1_2_c": "اطلب اللطف بصيغة مهنية لاحقًا عند الحاجة."
+        },
+        "targetVocab": [
+          "cliente"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_3_formal",
+        "type": "find_fix_error",
+        "instructionAr": "أي صيغة تحفظ الرسمية وتُصوغ الطلب بأدب في المكالمة (لا مجرد سؤال مباشر)؟",
+        "stemEs": "Oye, dime tu número de pedido.",
+        "options": [
+          {
+            "id": "cc_u1_3_a",
+            "text": "Disculpe, ¿podría decirme su número de pedido, por favor?",
+            "isCorrect": true,
+            "textAr": "عفوًا، هل يمكنك إخباري برقم طلبك من فضلك؟"
+          },
+          {
+            "id": "cc_u1_3_b",
+            "text": "Dime tu número de pedido.",
+            "isCorrect": false,
+            "distractorRationaleAr": "أمر مباشر وصيغة tú، تخالف الرسمية."
+          },
+          {
+            "id": "cc_u1_3_c",
+            "text": "¿Cuál es el número de pedido?",
+            "isCorrect": false,
+            "distractorRationaleAr": "صحيحة لكنها أقل لباقة؛ condicional + por favor أنسب في المكالمات."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_3_a"
+          ]
+        },
+        "explanationAr": "في المكالمات: usted + condicional (¿podría…?) + por favor. الصيغة الآمرة قد تُفهم عدوانية عبر الهاتف حيث لا تُرى ملامح الوجه.",
+        "errorFeedback": {
+          "cc_u1_3_b": "الأمر المباشر يبدو حادًّا على الهاتف.",
+          "cc_u1_3_c": "صحيحة لكن الأفضل condicional."
+        },
+        "targetVocab": [
+          "pedido",
+          "agente"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_4_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل العبارة المهنية لطلب وقت.",
+        "stemEs": "¿Me ____ un momento, por favor?",
+        "stemAr": "هل تسمح لي بلحظة من فضلك؟",
+        "answerKey": {
+          "accepted": [
+            "permite"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«¿Me permite un momento?» = هل تسمح لي بلحظة؟ الفاعل usted ⇒ permite.",
+        "errorFeedback": {
+          "permito": "الفاعل usted ⇒ permite.",
+          "permites": "«permites» لـtú؛ في الخدمة نستخدم usted."
+        },
+        "targetVocab": [
+          "agente"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_5_speak",
+        "type": "speak_with_text",
+        "instructionAr": "سجّل افتتاح مكالمتك بصوت واضح وبطيء. تمرين مشاركة لا يُصحَّح آليًا.",
+        "stemEs": "Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
+        "stemAr": "صباح الخير، يخدمك عمر من خدمة العملاء. كيف أساعدك؟",
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u1-l1-agente-1",
+          "modelAnswer": "Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?"
+        },
+        "explanationAr": "في المكالمات: سرعة أبطأ قليلًا، ونطق واضح لنهاية الكلمات، وتوقف قصير بعد التعريف. لا يوجد تقييم نطق آلي.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الافتتاح والتحية المهنية",
+              "weight": 25,
+              "code": "opening"
+            },
+            {
+              "labelAr": "طلب البيانات بلباقة بدل افتراضها",
+              "weight": 25,
+              "code": "verification"
+            },
+            {
+              "labelAr": "وضوح الحل وخطواته",
+              "weight": 25,
+              "code": "solution"
+            },
+            {
+              "labelAr": "الإغلاق والشكر",
+              "weight": 25,
+              "code": "closing"
+            }
+          ]
+        },
+        "targetVocab": [
+          "agente"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر 1/4. يحتاج مراجعة بشرية من مدرّب خدمة عملاء فعلي لصياغات الافتتاح وللنبرة. كل المقاطع الصوتية pending ولم يُنتج أي ملف. بيانات العملاء وهمية."
+    }
+  }
+}

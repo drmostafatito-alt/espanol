@@ -1,0 +1,29 @@
+name = "espanol-balarabi"
+main = "src/worker/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+# يجعل Worker يرى كل طلب (لا الأصول فقط) حتى تُضاف الرؤوس الأمنية إلى مستند HTML نفسه.
+# المقايضة: كل طلب أصل ثابت يُحتسب ضمن 100 ألف طلب/يوم — موثّقة في docs/21 §4.
+run_worker_first = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "es-ar-dev"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+ENVIRONMENT = "development"
+APP_ORIGIN = "http://localhost:5173,http://localhost:8787"
+MEDIA_ORIGIN = "http://localhost:8787/media"
+# قياس workerd الفعلي في reports/kdf-benchmark.md: 30k ≈ 5ms، و600k ≈ 107ms (متطلب OWASP).
+# حد الخطة المجانية 10ms CPU ⇒ 30k أقصى ما يمكن مع هامش. هذا حدّ منصة لا اختيار تصميمي.
+PBKDF2_ITERATIONS = "30000"
+# باب أمان: التسجيل العام يُفتح صراحةً فقط. اتركه "false" في الإنتاج حتى يُعتمد حل تخزين كلمات مرور.
+ALLOW_PUBLIC_SIGNUP = "true"
+# PASSWORD_PEPPER ليس هنا: سر عبر `wrangler secret put PASSWORD_PEPPER` (إلزامي، ≥32 حرفًا)
+SESSION_TTL_DAYS = "30"

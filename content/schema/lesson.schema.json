@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lesson.schema.json",
+  "title": "درس — Español بالعربي",
+  "type": "object",
+  "required": ["schemaVersion", "lesson"],
+  "properties": {
+    "schemaVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "lesson": {
+      "type": "object",
+      "required": [
+        "slug", "titleAr", "level", "programSlug", "unitSlug", "objectiveAr", "estimatedMinutes",
+        "skills", "newVocabulary", "targetStructures", "mastery", "unlock", "exercises", "review"
+      ],
+      "properties": {
+        "slug": { "$ref": "common.schema.json#/$defs/slug" },
+        "titleAr": { "type": "string", "minLength": 4 },
+        "level": { "$ref": "common.schema.json#/$defs/level" },
+        "programSlug": { "$ref": "common.schema.json#/$defs/slug" },
+        "unitSlug": { "$ref": "common.schema.json#/$defs/slug" },
+        "objectiveAr": { "type": "string", "minLength": 20 },
+        "estimatedMinutes": { "type": "integer", "minimum": 2, "maximum": 90 },
+        "skills": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/skill" } },
+        "newVocabulary": { "type": "array", "items": { "type": "string", "minLength": 2 } },
+        "reviewVocabulary": { "type": "array", "items": { "type": "string", "minLength": 2 } },
+        "targetStructures": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+        "grammarTopics": { "type": "array", "items": { "type": "string" } },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["contextAr", "lines"],
+            "properties": {
+              "contextAr": { "type": "string", "minLength": 10 },
+              "settingAr": { "type": "string" },
+              "lines": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/sentencePair" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "mastery": {
+          "type": "object",
+          "required": ["minAccuracy"],
+          "properties": {
+            "minAccuracy": { "type": "integer", "minimum": 50, "maximum": 100 },
+            "minCorrectExercises": { "type": "integer", "minimum": 1 },
+            "requiredExerciseTypes": { "type": "array", "items": { "$ref": "exercise.schema.json#/$defs/typeCode" } }
+          },
+          "additionalProperties": false
+        },
+        "unlock": {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": { "type": "string", "enum": ["sequential", "free", "requires_lessons", "requires_test"] },
+            "requires": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" } },
+            "minAccuracy": { "type": "integer", "minimum": 50, "maximum": 100 }
+          },
+          "additionalProperties": false
+        },
+        "offlinePriority": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "exercises": { "type": "array", "minItems": 4, "items": { "$ref": "exercise.schema.json#/$defs/exercise" } },
+        "review": {
+          "type": "object",
+          "required": ["status", "authors"],
+          "properties": {
+            "status": { "type": "string", "enum": ["draft", "in_review", "approved", "published", "archived"] },
+            "authors": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+            "spanishReviewer": { "type": ["string", "null"] },
+            "translationReviewer": { "type": ["string", "null"] },
+            "reviewedAt": { "type": ["string", "null"] },
+            "notes": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

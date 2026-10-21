@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-10-21T12:39:24.037Z",
+  "dir": "/home/user/content/drafts",
+  "stats": {
+    "lessons": 16,
+    "exercises": 94,
+    "options": 163,
+    "scenarios": 16,
+    "scenarioLines": 56,
+    "vocabPacks": 8,
+    "vocabEntries": 134,
+    "ipa": 134
+  },
+  "findings": [
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "a1/lesson-a1-nacionalidades.json#a1_nac_4_fix",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "a1/lesson-a1-nacionalidades.json#a1_nac_7_pais",
+      "message": "خيارات بلا textAr: a1_nac_7_c"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "a1/lesson-a1-presentar-a-otro.json#a1_pres_5_fix",
+      "message": "خيارات بلا textAr: a1_pres_5_b, a1_pres_5_c"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "a1/lesson-a1-presentar-a-otro.json#a1_pres_5_fix",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "a1/lesson-a1-presentar-a-otro.json#a1_pres_6_formal",
+      "message": "خيارات بلا textAr: a1_pres_6_c"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "a1/lesson-a1-saludos-formalidad.json#a1_sal_6_fix",
+      "message": "خيارات بلا textAr: a1_sal_6_c"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "a1/lesson-a1-saludos-formalidad.json#a1_sal_6_fix",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "callcenter/lesson-cc-u1-hold-transfer.json#cc_u1_13_phone",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "callcenter/lesson-cc-u1-opening.json#cc_u1_3_formal",
+      "message": "targetVocab «pedido» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "callcenter/lesson-cc-u1-opening.json#cc_u1_3_formal",
+      "message": "خيارات بلا textAr: cc_u1_3_b, cc_u1_3_c"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "callcenter/lesson-cc-u1-opening.json#cc_u1_3_formal",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "callcenter/lesson-cc-u1-roleplay.json#cc_u1_17_roleplay",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "callcenter/lesson-cc-u1-roleplay.json#cc_u1_18_closing",
+      "message": "targetVocab «cliente» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "callcenter/lesson-cc-u1-verification.json#cc_u1_9_note",
+      "message": "targetVocab «gestionar» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "travel/lesson-tr-u1-boarding-delay.json#tr_u1_10_fix",
+      "message": "خيارات بلا textAr: tr_u1_10_b"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "travel/lesson-tr-u1-boarding-delay.json#tr_u1_10_fix",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "travel/lesson-tr-u1-checkin.json#tr_u1_4_order",
+      "message": "targetVocab «puerta» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "travel/lesson-tr-u1-checkin.json#tr_u1_4_order",
+      "message": "targetVocab «embarque» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "travel/lesson-tr-u1-checkin.json#tr_u1_5_translate",
+      "message": "targetVocab «retraso» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R14-target-vocab-fit",
+      "where": "travel/lesson-tr-u1-problem-luggage.json#tr_u1_13_fill",
+      "message": "targetVocab «llegada» ليست من مفردات الدرس المعلنة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "travel/lesson-tr-u2-checkin.json#tr_u2_8_fix",
+      "message": "خيارات بلا textAr: tr_u2_8_b"
+    },
+    {
+      "severity": "warn",
+      "rule": "R29-stem-translation",
+      "where": "travel/lesson-tr-u2-checkin.json#tr_u2_8_fix",
+      "message": "stemAr ناقص بينما تمارين أخرى في الدرس مترجمة"
+    },
+    {
+      "severity": "warn",
+      "rule": "R17-option-translation",
+      "where": "travel/lesson-tr-u2-checkout.json#tr_u2_13_checkout",
+      "message": "خيارات بلا textAr: tr_u2_13_b"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "callcenter/vocab-cc-shared.json#transferir.sense1",
+      "message": "المثال لا يحتوي المدخل «transferir» ولا تصريفًا منه"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "callcenter/vocab-cc-shared.json#compañero.sense1",
+      "message": "المثال لا يحتوي المدخل «compañero» ولا تصريفًا منه"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "core-vocab/vocab-cv-band2-daily.json#bueno.sense1",
+      "message": "المثال لا يحتوي المدخل «bueno» ولا تصريفًا منه"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "core-vocab/vocab-cv-band2-daily.json#abierto.sense1",
+      "message": "المثال لا يحتوي المدخل «abierto» ولا تصريفًا منه"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "core-vocab/vocab-cv-band3-verbs.json#dar.sense1",
+      "message": "المثال لا يحتوي المدخل «dar» ولا تصريفًا منه"
+    },
+    {
+      "severity": "warn",
+      "rule": "R36-example-fit",
+      "where": "travel/vocab-tr-shared.json#pasajero.sense1",
+      "message": "المثال لا يحتوي المدخل «pasajero» ولا تصريفًا منه"
+    }
+  ]
+}

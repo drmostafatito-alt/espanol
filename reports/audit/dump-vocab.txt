@@ -1,0 +1,608 @@
+### PACK a1-u1-origen — 7 entries
+NOTE: النقل بالحروف العربية تقريب فقط. لا تعتمد عليه للنطق الدقيق، خاصة الأصوات: j (قريبة من خاء/جيم مصرية)، ñ (نْي)، والحروف 
+[ser] ser | verb | g=None | lvl=A1 | ipa=/seɾ/ | hint=سِر — الراء خفيفة، ليست مشددة | kind=word
+   MSA: يكون (لصفة ثابتة أو هوية أو أصل) || EG: يكون (للصفات الثابتة والأصل)
+   EX: Soy egipcio. Eres estudiante. || أنا مصري. أنت طالب. || أنا مصري. إنت طالب.
+   USE: الصيغ الأساسية: yo soy، tú eres، él/ella es، nosotros somos، vosotros sois، ellos son. || ERR: العربية تحذف فعل الكينونة في الجملة الاسمية؛ الإسبانية توجبه: «أنا مصري» ⇒ Soy egipcio، لا «Yo egipcio».
+   FORMS: 1s=soy, 2s=eres, 3s=es, 1p=somos, 2p=sois, 3p=son
+   EXS: [{"es": "Soy de Egipto.", "ar": "أنا من مصر.", "arEg": "أنا من مصر."}]
+[de] de | prep | g=None | lvl=A1 | ipa=/de/ | hint=دِ — بلا تشديد | kind=word
+   MSA: مِن (للأصل أو الانتساب) || EG: من (الأصل)
+   EX: Soy de Egipto. Ella es de España. || أنا من مصر. هي من إسبانيا. || أنا من مصر. هي من إسبانيا.
+   USE: de + بلد = الأصل. وللمكان الحالي نستخدم en: vivo en El Cairo. || ERR: الخلط بين de (من) و en (في) و a (إلى) هو أكثر خطأ متكرر في هذا المستوى.
+   EXS: [{"es": "¿De dónde eres?", "ar": "من أين أنت؟", "arEg": "إنت منين؟"}]
+[de dónde] ¿de dónde? | phrase | g=None | lvl=A1 | ipa=/de ˈdonde/ | hint=دِ دونْدي — النبر على المقطع الأول من dónde | kind=expression
+   MSA: من أين؟ (سؤال عن الأصل) || EG: منين؟
+   EX: ¿De dónde eres? ¿De dónde es usted? || من أين أنت؟ من أين أنتَ (احترامًا)؟ || إنت منين؟ حضرتك منين؟
+   USE: مع tú نستخدم eres، ومع usted نستخدم es. || ERR: نسيان علامة الاستفهام المقلوبة ¿ في البداية، وهي إلزامية في الكتابة الإسبانية.
+   EXS: [{"es": "— ¿De dónde eres? — Soy de Egipto.", "ar": "— من أين أنت؟ — أنا من مصر.", "arEg": "— إنت منين؟ — أنا من مصر."}]
+[egipto] Egipto | noun | g=m | lvl=A1 | ipa=/eˈxito/ | hint=إخيتو — j هنا خاء خفيفة، والـ g تُنطق خاء قبل i | kind=word
+   MSA: مِصر (البلد) || EG: مصر
+   EX: Soy de Egipto. El Cairo es la capital de Egipto. || أنا من مصر. القاهرة عاصمة مصر. || أنا من مصر. القاهرة عاصمة مصر.
+   USE: يُكتب دائمًا بحرف كبير لأنه اسم بلد، ويأتي بعد de بلا أداة تعريف: soy de Egipto. || ERR: كتابته Egypto بحرف y خطأ شائع؛ الحرف g في Egipto يُنطق خاء.
+   EXS: [{"es": "Soy de Egipto, de El Cairo.", "ar": "أنا من مصر، من القاهرة.", "arEg": "أنا من مصر، من القاهرة."}]
+[españa] España | noun | g=f | lvl=A1 | ipa=/esˈpaɲa/ | hint=إسبانيا — ñ صوت «نْي» وليس ن عادية | kind=word
+   MSA: إسبانيا (البلد) || EG: إسبانيا
+   EX: Sara es de España. || سارة من إسبانيا. || سارة من إسبانيا.
+   USE: اسم مؤنث؛ الجنسية منه español/española. || ERR: نطق ñ كـ«ن» فقط، أو كتابتها Espana بلا علامة.
+   EXS: [{"es": "Madrid está en España.", "ar": "مدريد في إسبانيا.", "arEg": "مدريد في إسبانيا."}]
+[egipcio] egipcio | adj | g=m | lvl=A1 | ipa=/eˈxiptʃjo/ (aproximada) | hint=إخيبتشيو — مجموعة cio تُنطق قريبة من «تشو» في معظم اللهجات | kind=word
+   MSA: مِصري (المذكر) || EG: مصري
+   EX: Omar es egipcio. || عمر مصري. || عمر مصري.
+   USE: المؤنث egipcia، والجمع egipcios / egipcias. || ERR: استخدام egipcio للمؤنث: نقول هي egipcia.
+   FORMS: None=egipcia, None=egipcios
+   EXS: [{"es": "Soy egipcio, de El Cairo.", "ar": "أنا مصري، من القاهرة.", "arEg": "أنا مصري، من القاهرة."}]
+[español] español | adj | g=m | lvl=A1 | ipa=/espaˈɲol/ | hint=إسبانيول — اللام في النهاية واضحة | kind=word
+   MSA: إسباني (المذكر)؛ والإسبانية كلغة || EG: إسباني؛ واللغة الإسبانية
+   EX: Soy español. Hablo español. || أنا إسباني. أتحدث الإسبانية. || أنا إسباني. بتكلم إسباني.
+   USE: المؤنث española، والجمع españoles / españolas. تُستخدم أيضًا اسمًا للغة: el español. || ERR: قول español للأنثى؛ الصحيح española.
+   FORMS: None=española, None=españoles
+   EXS: [{"es": "Ella es española, de Madrid.", "ar": "هي إسبانية، من مدريد.", "arEg": "هي إسبانية، من مدريد."}]
+
+================================================================================
+
+### PACK a1-u2-saludos — 16 entries
+NOTE: النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق؛ خاصة الأصوات: ñ، وd بين حركتين (تُنطق قريبة من «ذ» في إسبانيا)،
+[buenas tardes] buenas tardes | phrase | g=None | lvl=A1 | ipa=/ˈbwenas ˈtaɾðes/ | hint=بوينَس تارْدِس — الـ d بين حركتين تُنطق قريبة من «ذ» في إسبانيا | kind=expression
+   MSA: مساء الخير (من بعد الظهر حتى الغروب) || EG: مساء الخير (بعد الضهر لحد المغرب)
+   EX: Buenas tardes, señora López. || مساء الخير يا سيدة لوبيث. || مساء الخير يا مدام لوبيز.
+   USE: تُقال من بعد الظهر (تقريبًا بعد 14:00) حتى الغروب. مختصرها الشائع: «Buenas». || ERR: لا تُقال صباحًا؛ الصباح «buenos días».
+[buenas noches] buenas noches | phrase | g=None | lvl=A1 | ipa=/ˈbwenas ˈnotʃes/ | hint=بوينَس نوتشِس — ch تُنطق «تش» | kind=expression
+   MSA: مساء الخير بعد الغروب، وتُستخدم أيضًا عند النوم بمعنى «ليلة سعيدة» || EG: مساء الخير بالليل، وبرضه بمعنى «تصبح على خير»
+   EX: Buenas noches, hasta mañana. || مساء الخير، إلى الغد. || مساء الخير، نشوفك بكرة.
+   USE: تصلح للتحية ليلًا وللوداع قبل النوم. || ERR: خطأ شائع: استعمالها نهارًا لأن «noches» تعني ليالٍ.
+[cómo está usted] ¿cómo está usted? | phrase | g=None | lvl=A1 | ipa=/ˈkomo esˈta usˈteð/ | hint=كومو إسْتا أوسْتِذ — النبرة على «tá» | kind=expression
+   MSA: كيف حالك؟ (صيغة رسمية للمفرد المخاطب) || EG: إزيك؟ (بصيغة رسمية لمخاطب واحد)
+   EX: Buenos días, ¿cómo está usted? || صباح الخير، كيف حالك؟ || صباح الخير، إزيك؟
+   USE: الرسمي يقابل «tú» غير الرسمي. الفعل estar للجملة المؤقتة، والنبرة على está. || ERR: لا تقل «¿cómo eres usted?» عند السؤال عن الحال؛ الصحيح estar لا ser.
+[encantado] encantado | pron | g=m | lvl=A1 | ipa=/eŋkanˈtaðo/ | hint=إنكانْتادو — نون قبل k تُنطق من الحلق (ng) | kind=word
+   MSA: تشرفنا / سعيد بلقائك (يقولها المتحدث الذكر) || EG: تشرفنا (الولد بيقولها)
+   EX: Encantado, me llamo Omar. || تشرفنا، اسمي عمر. || تشرفنا، أنا اسمي عمر.
+   USE: المتحدثة الأنثى تقول «encantada». تُقال عادة عند التعارف الأول مع المصافحة. || ERR: الرجل الذي يقول «encantada» يبدو خطأ نحويًا؛ التذكير/التأنيث يتبع المتحدث لا المخاطب.
+[señor] señor | pron | g=m | lvl=A1 | ipa=/seˈɲoɾ/ | hint=سِنْيور — ñ نون مع ياء خفيفة | kind=word
+   MSA: سيد / أستاذ (لقب رسمي للرجل) || EG: أستاذ / سيد (لقب رسمي للراجل)
+   EX: Buenos días, señor García. || صباح الخير يا سيد غارثيا. || صباح الخير يا أستاذ جارسيا.
+   USE: يُستخدم قبل اسم العائلة أو وحده. الاختصار الكتابي: Sr. || ERR: لا تُترجم «señor» إلى «سيدي» في كل سياق ديني؛ هنا لقب مخاطبة محترم فقط.
+[señora] señora | pron | g=f | lvl=A1 | ipa=/seˈɲoɾa/ | hint=سِنْيورا | kind=word
+   MSA: سيدة (لقب رسمي للمرأة) || EG: مدام / سيدة (لقب رسمي للست)
+   EX: Buenas tardes, señora Ruiz. || مساء الخير يا سيدة رويث. || مساء الخير يا مدام رويز.
+   USE: تُستخدم قبل اسم العائلة. للمرأة المتزوجة تقليديًا، وصارت شائعة لكل امرأة في المخاطبة الرسمية. || ERR: «señorita» للمرأة الشابة غير المتزوجة، وقد تُعدّ غير مناسبة في سياقات مهنية؛ «señora» أكثر أمانًا في العمل.
+[hasta luego] hasta luego | phrase | g=None | lvl=A1 | ipa=/ˈasta ˈlweɣo/ | hint=أَسْتا لْويغو — g بين حركتين تُنطق خفيفة كالغين | kind=expression
+   MSA: إلى لقاء قريب || EG: سلام، نشوفك قريب
+   EX: Hasta luego, nos vemos mañana. || إلى لقاء قريب، نلتقي غدًا. || سلام، نشوفك بكرة.
+   USE: وداع شائع في إسبانيا، أقرب إلى «سلام» اليومي من الوداع النهائي. || ERR: ليست بمعنى «إلى الأبد»؛ الوداع النهائي «adiós».
+[adiós] adiós | pron | g=None | lvl=A1 | ipa=/aˈðjos/ | hint=أَديوس — النبرة على «ós» | kind=word
+   MSA: وداعًا / مع السلامة || EG: مع السلامة
+   EX: Adiós, y gracias por todo. || وداعًا، وشكرًا على كل شيء. || مع السلامة، وشكرًا على كل حاجة.
+   USE: أكثر عمومية من «hasta luego»، وتصلح أيضًا في الوداع الطويل. || ERR: لا تُستخدم للتحية عند القدوم.
+[tú] tú | pron | g=None | lvl=A1 | ipa=/tu/ | hint=تو — بدون تشديد ظاهر، والخطأ الشائع نطقها كالإنجليزية | kind=word
+   MSA: أنت (غير رسمي، للمفرد) || EG: إنت (غير رسمي)
+   EX: ¿Tú eres de Egipto? || هل أنت من مصر؟ || إنت من مصر؟
+   USE: مع الأفعال: tú eres, tú tienes. تُستخدم مع الأصدقاء والعائلة والزملاء المقربين. || ERR: خلط «tú» مع صيغة usted («tú está») خطأ شائع؛ الصيغتان لا تختلطان.
+[usted] usted | pron | g=None | lvl=A1 | ipa=/usˈteð/ | hint=أوسْتِذ — النبرة على «ted» | kind=word
+   MSA: أنت / حضرتك (رسمي، للمفرد) || EG: حضرتك (رسمي)
+   EX: ¿Usted trabaja aquí? || هل تعمل هنا؟ || حضرتك بتشتغل هنا؟
+   USE: يأخذ صيغة الفعل للغائب: usted trabaja (لا trabajas). الاختصار: Ud. || ERR: «usted trabaja» لا «usted trabajas» — هذا أشهر خطأ للمبتدئ العربي.
+[con permiso] con permiso | phrase | g=None | lvl=A1 | ipa=/kom peɾˈmiso/ | hint=كوم بيرْميسو | kind=expression
+   MSA: عن إذنك (عند المرور أو الانصراف) || EG: عن إذنك (لما تعدّي أو تمشي)
+   EX: Con permiso, ¿me deja pasar? || عن إذنك، هل تسمح لي بالمرور؟ || عن إذنك، ممكن أعدّي؟
+   USE: تُقال عند المرور بين الناس أو الدخول/الخروج من مكان مزدحم. || ERR: ليست طلب إذن كتابي؛ هي عبارة تهذيب شفهية قصيرة.
+[qué tal] ¿qué tal? | phrase | g=None | lvl=A1 | ipa=/ke ˈtal/ | hint=كي تال — النبرة على «tal» | kind=expression
+   MSA: كيف الحال؟ (غير رسمي) || EG: إيه الأخبار؟ / إزيك؟
+   EX: ¡Hola, Ana! ¿Qué tal? || مرحبًا آنا! كيف الحال؟ || أهلاً آنا! إيه الأخبار؟
+   USE: غير رسمية، تصلح مع الأصدقاء. الرد الشائع: «Bien» أو «Muy bien». || ERR: لا تخلطها بـ«¿qué hora es?» (كم الساعة) — التشابه في البداية فقط.
+[hola] hola | interj | g=None | lvl=A1 | ipa=/ˈola/ | hint=أولا — الـ h صامتة، والضغط على المقطع الأول | kind=word
+   MSA: مرحبًا (تحية عامة) || EG: أهلًا / سلام
+   EX: ¡Hola! ¿Cómo estás? || مرحبًا! كيف حالك؟ || أهلًا! إيه أخبارك؟
+   USE: تصلح في أي وقت من اليوم، رسمية وغير رسمية. لا تحتاج علامة استفهام. || ERR: لا تُنطق الهاء مطلقًا؛ نطقها «هولا» من أشهر أخطاء المبتدئ.
+   EXS: [{"es": "¡Hola, Marta! ¿Qué tal?", "ar": "مرحبًا مارتا! كيف الحال؟", "arEg": "أهلًا مارتا! إيه الأخبار؟"}]
+[buenos días] buenos días | phrase | g=None | lvl=A1 | ipa=/ˈbwenos ˈdias/ | hint=بْوينوس دِياس | kind=expression
+   MSA: صباح الخير (تحية الصباح) || EG: صباح الخير
+   EX: Buenos días, ¿tiene una mesa para dos? || صباح الخير، هل لديكم طاولة لشخصين؟ || None
+   USE: تُستخدم حتى منتصف النهار تقريبًا، ثم buenas tardes بعد الظهر و buenas noches ليلًا. || ERR: قول «buenas días» خطأ في الاتفاق: días مذكر جمع فيجب buenos.
+   EXS: [{"es": "Buenos días, señora López.", "ar": "صباح الخير سيدة لوبيز."}]
+[me llamo] me llamo | phrase | g=None | lvl=A1 | ipa=/me ˈʝamo/ | hint=مي يامو — ll تُنطق قريبة من «ي» في إسبانيا وأمريكا اللاتينية | kind=collocation
+   MSA: اسمي … (أُعرِّف بنفسي) || EG: أنا اسمي …
+   EX: Me llamo Omar y soy de El Cairo. || اسمي عمر وأنا من القاهرة. || None
+   USE: من الفعل الانعكاسي llamarse. الضمير me إلزامي. || ERR: «mi llamo» خطأ شائع؛ mi تعني «خاصتي» ولا تُستخدم هنا.
+   EXS: [{"es": "Hola, me llamo Sara. ¿Y tú?", "ar": "مرحبًا، اسمي سارة. وأنت؟", "arEg": "أهلًا، أنا سارة. وانت؟"}]
+[mucho gusto] mucho gusto | phrase | g=None | lvl=A1 | ipa=/ˈmutʃo ˈɡusto/ | hint=موتشو جوستو | kind=expression
+   MSA: تشرّفت بمعرفتك || EG: فرصة سعيدة
+   EX: Mucho gusto, señor Hassan. || تشرّفت بمعرفتك سيد حسن. || None
+   USE: الرد المعتاد: «Igualmente» أو «El gusto es mío». || ERR: لا تُستخدم عند الوداع؛ للوداع نقول hasta luego أو encantado de haberle conocido.
+   EXS: [{"es": "—Me llamo Nadia. —Mucho gusto, Nadia.", "ar": "—اسمي نادية. —تشرّفت يا نادية."}]
+
+================================================================================
+
+### PACK a1-u3-nacionalidades — 13 entries
+NOTE: النقل بالحروف العربية تقريب فقط. راعِ أن الحرف h صامت دائمًا، وأن j تُنطق قريبة من الخاء، وأن الألف الممدودة في alemán ت
+[egipcia] egipcia | adj | g=f | lvl=A1 | ipa=/eˈxipθja/ | hint=إخيبثيا (إسبانيا) — j خاء خفيفة | kind=word
+   MSA: مصرية (صفة المؤنث) || EG: مصرية
+   EX: Nour es egipcia. || نور مصرية. || نور مصرية.
+   USE: المذكر «egipcio» والمؤنث «egipcia». الصفة تتبع الشخص الموصوف. || ERR: لا تقل «Nour es egipcio» عن امرأة؛ الصحيح egipcia.
+[española] española | adj | g=f | lvl=A1 | ipa=/espaˈɲola/ | hint=إسبانيُولا — ñ نون مع ياء | kind=word
+   MSA: إسبانية (صفة المؤنث) || EG: إسبانية
+   EX: Marta es española. || مارتا إسبانية. || مارتا إسبانية.
+   USE: المذكر «español» بلا علامة، والمؤنث «española» بزيادة a. لاحظ أن حرف o في español يحمل نبرًا. || ERR: «Ella es español» خطأ شائع: المؤنث يحتاج española.
+[francia] Francia | noun | g=f | lvl=A1 | ipa=/ˈfɾanθja/ | hint=فرانثيا | kind=word
+   MSA: فرنسا (اسم البلد) || EG: فرنسا
+   EX: París está en Francia. || باريس في فرنسا. || باريس في فرنسا.
+   USE: أسماء البلدان تُكتب بحرف كبير. فرنسا مؤنثة: «Francia es bonita». || ERR: لا تخلط البلد «Francia» بالجنسية «francés/francesa».
+[francés] francés | adj | g=m | lvl=A1 | ipa=/fɾanˈθes/ | hint=فرانثِس — النبر في الآخر | kind=word
+   MSA: فرنسي (صفة المذكر) || EG: فرنسي
+   EX: Karim es francés. || كريم فرنسي. || كريم فرنسي.
+   USE: الصفات المنتهية بحرف ساكن تُضاف لها a للمؤنث: francés ⇒ francesa (بلا نبر). || ERR: «Karim es Francia» خطأ: البلد ليس جنسية.
+[francesa] francesa | adj | g=f | lvl=A1 | ipa=/fɾanˈθesa/ | hint=فرانثيسا | kind=word
+   MSA: فرنسية (صفة المؤنث) || EG: فرنسية
+   EX: Sara es francesa. || سارة فرنسية. || سارة فرنسية.
+   USE: لاحظ اختفاء النبر المكتوب عند إضافة a: francés ⇒ francesa. || ERR: لا تكتب «francésa» بنبر؛ الصيغة المؤنثة بلا نبر.
+[italia] Italia | noun | g=f | lvl=A1 | ipa=/iˈtalja/ | hint=إيتاليا | kind=word
+   MSA: إيطاليا (اسم البلد) || EG: إيطاليا
+   EX: Roma está en Italia. || روما في إيطاليا. || روما في إيطاليا.
+   USE: يُستخدم معها حرف الجر «en» للمكان و«de» للأصل: soy de Italia. || ERR: «soy de Italiano» خطأ؛ البلد Italia والجنسية italiano.
+[italiano] italiano | adj | g=m | lvl=A1 | ipa=/itaˈljano/ | hint=إيتاليانو | kind=word
+   MSA: إيطالي (صفة المذكر) || EG: إيطالي
+   EX: Marco es italiano. || ماركو إيطالي. || ماركو إيطالي.
+   USE: الصفات المنتهية بـ-o تصير -a للمؤنث: italiano ⇒ italiana. || ERR: الصفة تتبع الموصوف لا المتحدث: «Marta es italiano» غير صحيحة.
+[italiana] italiana | adj | g=f | lvl=A1 | ipa=/itaˈljana/ | hint=إيتاليانا | kind=word
+   MSA: إيطالية (صفة المؤنث) || EG: إيطالية
+   EX: Sara es italiana. || سارة إيطالية. || سارة إيطالية.
+   USE: نفس قاعدة italiano + a. || ERR: لا تقل «Sara es italiano» عند وصف امرأة.
+[marruecos] Marruecos | noun | g=m | lvl=A1 | ipa=/maˈrwekos/ | hint=مَرّويكوس — rr مشددة | kind=word
+   MSA: المغرب (اسم البلد) || EG: المغرب
+   EX: Marruecos está en el norte de África. || المغرب في شمال أفريقيا. || المغرب في شمال أفريقيا.
+   USE: اسم البلد فقط؛ الجنسية «marroquí» لا تتغير بين المذكر والمؤنث. || ERR: «Soy de marroquí» خطأ؛ الصواب «Soy marroquí» أو «Soy de Marruecos».
+[marroquí] marroquí | adj | g=mf | lvl=A1 | ipa=/maroˈki/ | hint=مَرّوكي | kind=word
+   MSA: مغربي/مغربية (صفة لا تتغير) || EG: مغربي/مغربية
+   EX: Yassine es marroquí. Salma es marroquí. || ياسين مغربي. سلمى مغربية. || ياسين مغربي. سلمى مغربية.
+   USE: الصفات المنتهية بـ-í لا تتغير بين المذكر والمؤنث. || ERR: لا تضف a: «marroquía» غير موجودة.
+[alemania] Alemania | noun | g=f | lvl=A1 | ipa=/aleˈmanja/ | hint=أليمانيا | kind=word
+   MSA: ألمانيا (اسم البلد) || EG: ألمانيا
+   EX: Berlín está en Alemania. || برلين في ألمانيا. || برلين في ألمانيا.
+   USE: البلد Alemania والجنسية alemán/alemana. || ERR: لا تقل «soy de alemán»؛ الأصل «soy de Alemania» والجنسية «soy alemán».
+[alemán] alemán | adj | g=m | lvl=A1 | ipa=/aleˈman/ | hint=أليمان — النبر في الآخر | kind=word
+   MSA: ألماني (صفة المذكر) || EG: ألماني
+   EX: Hans es alemán. || هانس ألماني. || هانس ألماني.
+   USE: عند إضافة a للمؤنث يسقط النبر المكتوب: alemán ⇒ alemana. || ERR: «Ella es alemán» غير صحيحة؛ المؤنث alemana.
+[alemana] alemana | adj | g=f | lvl=A1 | ipa=/aleˈmana/ | hint=أليمانا | kind=word
+   MSA: ألمانية (صفة المؤنث) || EG: ألمانية
+   EX: Anna es alemana. || آنا ألمانية. || آنا ألمانية.
+   USE: نفس قاعدة alemana بلا نبر مكتوب. || ERR: لا تكتب «alemána».
+
+================================================================================
+
+### PACK cc-shared — 18 entries
+NOTE: النقل بالحروف العربية تقريب فقط. على الهاتف تزيد صعوبة تمييز b/p وd/t؛ لذلك نطلب التهجئة بدل التخمين.
+[pedido] pedido | noun | g=m | lvl=B1 | ipa=/peˈðiðo/ | hint=بيذيو | kind=word
+   MSA: طلب/طلبية (شراء) || EG: أوردر
+   EX: Su pedido salió ayer. || طلبك خرج أمس. || الأوردر بتاعك خرج إمبارح.
+   USE: número de pedido = رقم الطلب. || ERR: «orden» تعني ترتيبًا أو أمرًا؛ للشراء «pedido».
+[envío] envío | noun | g=m | lvl=B1 | ipa=/emˈbio/ | hint=إمبيو | kind=word
+   MSA: الشحن / الإرسال || EG: الشحن
+   EX: El envío tarda tres días. || الشحن يستغرق ثلاثة أيام. || الشحن بياخد تلات أيام.
+   USE: gastos de envío = تكاليف الشحن. || ERR: «envío» اسم؛ الفعل enviar.
+[entrega] entrega | noun | g=f | lvl=B1 | ipa=/enˈtɾeɣa/ | hint=إنترِيغا | kind=word
+   MSA: التسليم || EG: التسليم
+   EX: La entrega está prevista para mañana. || التسليم متوقع غدًا. || التسليم متوقع بكرة.
+   USE: fecha de entrega = تاريخ التسليم. || ERR: «entrega» ليست «entrada» (دخول).
+[plazo] plazo | noun | g=m | lvl=B1 | ipa=/ˈplaθo/ | hint=بلاثو | kind=word
+   MSA: المدة المحددة / الموعد النهائي || EG: المدة
+   EX: El plazo es de cinco días laborables. || المدة خمسة أيام عمل. || المدة خمس أيام عمل.
+   USE: días laborables = أيام عمل. || ERR: «plazo» مدة محددة، وليست «plaza» (ساحة).
+[incidencia] incidencia | noun | g=f | lvl=B1 | ipa=/inθiˈðenθja/ | hint=إنثيذينثيا | kind=word
+   MSA: مشكلة/حادث طارئ في الخدمة || EG: مشكلة
+   EX: Hemos abierto una incidencia. || فتحنا بلاغ مشكلة. || فتحنا بلاغ مشكلة.
+   USE: abrir una incidencia = تسجيل بلاغ. || ERR: «incidencia» ليست «incidente» بالضرورة؛ الأولى مصطلح خدمة.
+[reclamación] reclamación | noun | g=f | lvl=B1 | ipa=/reklamaˈθjon/ | hint=ريكلاماثيون | kind=word
+   MSA: شكوى رسمية || EG: شكوى
+   EX: Puede presentar una reclamación. || يمكنك تقديم شكوى. || ممكن تقدّم شكوى.
+   USE: presentar una reclamación = تقديم شكوى. || ERR: «reclamación» رسمية؛ «queja» شكوى عامة.
+[reembolso] reembolso | noun | g=m | lvl=B1 | ipa=/reemˈbolso/ | hint=رييمبولسو | kind=word
+   MSA: استرداد المبلغ || EG: استرداد الفلوس
+   EX: El reembolso tarda cinco días. || استرداد المبلغ يستغرق خمسة أيام. || استرداد الفلوس بياخد خمس أيام.
+   USE: solicitar un reembolso = طلب استرداد. || ERR: «devolución» إعادة المنتج، و«reembolso» إعادة المال.
+[devolución] devolución | noun | g=f | lvl=B1 | ipa=/deoβoluˈθjon/ | hint=دييبولوثيون | kind=word
+   MSA: إعادة المنتج || EG: إرجاع المنتج
+   EX: La devolución es gratuita. || إعادة المنتج مجانية. || إرجاع المنتج مجاني.
+   USE: devolver = يعيد؛ devolución اسم. || ERR: لا تخلطها بـreembolso (إعادة المال).
+[importe] importe | noun | g=m | lvl=B1 | ipa=/imˈpoɾte/ | hint=إمبورتي | kind=word
+   MSA: المبلغ (المالي) || EG: المبلغ
+   EX: El importe total es 48,90 euros. || المبلغ الإجمالي 48.90 يورو. || المبلغ الإجمالي 48.90 يورو.
+   USE: importe total = المبلغ الإجمالي. || ERR: «importe» ليس «importante» (مهم).
+[gestionar] gestionar | verb | g=None | lvl=B1 | ipa=/xestjoˈnaɾ/ | hint=خيستيونار | kind=word
+   MSA: يتولّى/يدير (إجراءً) || EG: يتابع/يدير
+   EX: Voy a gestionar su solicitud. || سأتولّى طلبك. || هتابع طلبك.
+   USE: gestión = إدارة/متابعة. || ERR: «gestionar» ليست «gestionar con»؛ الفعل متعدٍّ بلا حرف جر.
+[comprobar] comprobar | verb | g=None | lvl=B1 | ipa=/kompɾoˈβaɾ/ | hint=كومبروبار | kind=word
+   MSA: يتحقق/يفحص || EG: يتأكد
+   EX: Voy a comprobar el estado del envío. || سأتحقق من حالة الشحنة. || هتأكد من حالة الشحنة.
+   USE: comprobar = يتحقق فعليًا؛ verificar = يتحقق رسميًا. || ERR: الصيغة compruebo لا comprobo.
+[verificar] verificar | verb | g=None | lvl=B1 | ipa=/beɾifiˈkaɾ/ | hint=بيريفيكار | kind=word
+   MSA: يتحقق رسميًا من الهوية/البيانات || EG: يتأكد رسميًا
+   EX: Necesito verificar su identidad. || أحتاج التحقق من هويتك. || لازم أتأكد من هويتك.
+   USE: verificación = تحقق؛ تُستخدم في الإجراءات الرسمية. || ERR: «verificar de» خطأ؛ الفعل متعدٍّ مباشرة.
+[anotar] anotar | verb | g=None | lvl=B1 | ipa=/anoˈtaɾ/ | hint=أنوتار | kind=word
+   MSA: يدوّن/يسجّل ملاحظة || EG: يسجّل
+   EX: Voy a anotar su número de contacto. || سأسجّل رقم تواصلك. || هسجّل رقم تواصلك.
+   USE: anotar = تدوين سريع؛ registrar = تسجيل في النظام. || ERR: «apuntar» مرادف شائع في إسبانيا.
+[transferir] transferir | verb | g=None | lvl=B1 | ipa=/tɾansfeˈɾiɾ/ | hint=ترانسفيرير | kind=word
+   MSA: يحوّل المكالمة / يحوّل مبلغًا || EG: يحوّل
+   EX: Le transfiero con mi compañero. || سأحوّلك إلى زميلي. || هحوّلك لزميلي.
+   USE: في المكالمات: le transfiero / le paso con. || ERR: الصيغة transfiero لا transfero.
+[cliente] cliente | noun | g=mf | lvl=B1 | ipa=/ˈkljente/ | hint=كليينتي | kind=word
+   MSA: عميل || EG: عميل
+   EX: El cliente lleva dos días esperando. || العميل ينتظر يومين. || العميل مستني يومين.
+   USE: la clientela = العملاء كمجموعة. || ERR: «clienta» للمؤنث جائزة لكن الشائع clienta في السياق المهني.
+[compañero] compañero | noun | g=m | lvl=B1 | ipa=/kompaˈɲeɾo/ | hint=كومبانييرو | kind=word
+   MSA: زميل || EG: زميل
+   EX: Mi compañera revisará su caso. || زميلتي ستراجع حالتك. || زميلتي هتراجع حالتك.
+   USE: compañera للمؤنث؛ compañero de trabajo = زميل عمل. || ERR: «compañero» ليست «compania» (شركة).
+[identidad] identidad | noun | g=f | lvl=B1 | ipa=/iðentiˈðað/ | hint=إيذينتيذاذ | kind=word
+   MSA: الهوية || EG: الهوية
+   EX: Por seguridad, necesitamos verificar su identidad. || للأمان، نحتاج التحقق من هويتك. || للأمان، لازم نتأكد من هويتك.
+   USE: لا نطلب كلمة المرور كاملة أبدًا في المكالمات؛ نطلب بيانات جزئية. || ERR: لا تُطلب بيانات حساسة كاملة على الهاتف.
+[agente] agente | noun | g=mf | lvl=B1 | ipa=/aˈxente/ | hint=أخينتي | kind=word
+   MSA: موظف الخدمة/الوكيل || EG: الموظف
+   EX: Le atiende el agente Omar. || يخدمك الموظف عمر. || الموظف عمر بيخدمك.
+   USE: le atiende = يخدمك (تعبير ثابت في المكالمات). || ERR: «agente» لا يتغير للمؤنث في هذا السياق عادة.
+
+================================================================================
+
+### PACK cv-band1-basics — 20 entries
+NOTE: النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر 
+[estar] estar | verb | g=None | lvl=A1 | ipa=/esˈtaɾ/ | hint=إستار | kind=word
+   MSA: يكون (لحالة أو مكان مؤقت) || EG: يبقى/يكون في حالة
+   EX: Estoy en casa. || أنا في البيت. || أنا في البيت.
+   USE: estar للمكان والحالة المؤقتة، وser للصفة الثابتة. || ERR: «Soy en casa» خطأ؛ المكان يكون بـestar.
+   FORMS: 1s=estoy, 2s=estás, 3s=está, 1p=estamos, 2p=estáis, 3p=están
+[tener] tener | verb | g=None | lvl=A1 | ipa=/teˈneɾ/ | hint=تِنير | kind=word
+   MSA: يملك / عنده || EG: عنده
+   EX: Tengo dos hermanos. || عندي أخوان. || عندي أخين.
+   USE: tener للتملك والعمر: tengo 25 años. || ERR: لا تُترجم «عندي» حرفيًا بـ«en mí»؛ الصواب tener.
+   FORMS: 1s=tengo, 2s=tienes, 3s=tiene, 1p=tenemos, 2p=tenéis, 3p=tienen
+[ir] ir | verb | g=None | lvl=A1 | ipa=/iɾ/ | hint=إير | kind=word
+   MSA: يذهب || EG: يروح
+   EX: Voy al trabajo. || أذهب إلى العمل. || أنا رايح الشغل.
+   USE: ir + a + مكان. الصيغ: voy, vas, va. || ERR: «Voy a casa» صحيحة بلا a قبل casa؟ لا: نقول voy a casa مع a.
+   FORMS: 1s=voy, 2s=vas, 3s=va, 1p=vamos, 2p=vais, 3p=van
+[hacer] hacer | verb | g=None | lvl=A1 | ipa=/aˈθeɾ/ | hint=أثِير (إسبانيا) | kind=word
+   MSA: يفعل / يصنع || EG: يعمل/يعمل حاجة
+   EX: ¿Qué haces ahora? || ماذا تفعل الآن؟ || بتعمل إيه دلوقتي؟
+   USE: hacer لكل فعل عام، وللطقس أيضًا: hace frío. || ERR: «hago» ليس «أنا أفعل» بالتشديد على آخر الكلمة فقط؛ النبر على ha.
+   FORMS: 1s=hago, 2s=haces, 3s=hace, 1p=hacemos, 2p=hacéis, 3p=hacen
+[yo] yo | pron | g=None | lvl=A1 | ipa=/ʝo/ | hint=يو | kind=word
+   MSA: أنا || EG: أنا
+   EX: Yo vivo en El Cairo. || أنا أعيش في القاهرة. || أنا عايش في القاهرة.
+   USE: الضمير غالبًا يُحذف لأن الفعل يدل على الفاعل. || ERR: لا تقل «Yo es»؛ الصواب yo soy.
+[él] él | pron | g=m | lvl=A1 | ipa=/el/ | hint=إل | kind=word
+   MSA: هو || EG: هو
+   EX: Él trabaja aquí. || هو يعمل هنا. || هو بيشتغل هنا.
+   USE: يُكتب بنبرة (él) للتفريق عن أداة التعريف el بلا نبرة. || ERR: «el» بلا نبرة = أداة تعريف، و«él» بنبرة = هو.
+[ella] ella | pron | g=f | lvl=A1 | ipa=/ˈeʝa/ | hint=إيّا | kind=word
+   MSA: هي || EG: هي
+   EX: Ella es profesora. || هي مدرّسة. || هي مدرّسة.
+   USE: الصيغة نفسها بلا نبرة مكتوبة. || ERR: لا تُنطق «إلا»؛ الـll قريبة من الياء.
+[nosotros] nosotros | pron | g=None | lvl=A1 | ipa=/noˈsotɾos/ | hint=نوسوتروس | kind=word
+   MSA: نحن || EG: إحنا
+   EX: Nosotros estudiamos español. || نحن ندرس الإسبانية. || إحنا بندرس إسباني.
+   USE: للمؤنث: nosotras. || ERR: لا تخلط nosotros بـvosotros (أنتم).
+[uno] uno | num | g=m | lvl=A1 | ipa=/ˈuno/ | hint=أونو | kind=word
+   MSA: واحد || EG: واحد
+   EX: Tengo uno. || عندي واحد. || معايا واحد.
+   USE: قبل الاسم المذكر يصبح un: un libro. || ERR: «uno libro» خطأ؛ الصواب un libro.
+[dos] dos | num | g=None | lvl=A1 | ipa=/dos/ | hint=دوس | kind=word
+   MSA: اثنان || EG: اتنين
+   EX: Dos cafés, por favor. || قهوتان، من فضلك. || اتنين قهوة، لو سمحت.
+   USE: لا يتغير مع الجنس. || ERR: «dos» لا تصير «dosas»؛ الأعداد لا تُؤنَّث هنا.
+[tres] tres | num | g=None | lvl=A1 | ipa=/tɾes/ | hint=تريس | kind=word
+   MSA: ثلاثة || EG: تلاتة
+   EX: Tres días. || ثلاثة أيام. || تلات أيام.
+   USE: الأعداد من 1 إلى 30 كلمة واحدة. || ERR: لا تكتب «trés» بنبرة؛ الصيغة بلا نبرة.
+[cuatro] cuatro | num | g=None | lvl=A1 | ipa=/ˈkwatɾo/ | hint=كواترو | kind=word
+   MSA: أربعة || EG: أربعة
+   EX: Cuatro personas. || أربعة أشخاص. || أربع أشخاص.
+   USE: qu = كو. || ERR: لا تُنطق «كواترو» بـq عربية؛ هي ك.
+[cinco] cinco | num | g=None | lvl=A1 | ipa=/ˈθinko/ | hint=ثينكو (إسبانيا) | kind=word
+   MSA: خمسة || EG: خمسة
+   EX: Son las cinco. || الساعة الخامسة. || الساعة خمسة.
+   USE: تُستخدم مع الساعة: son las cinco. || ERR: «es las cinco» خطأ؛ الساعة تأخذ son las للجمع.
+[hoy] hoy | adv | g=None | lvl=A1 | ipa=/oi/ | hint=أوي (h صامتة) | kind=word
+   MSA: اليوم || EG: النهاردة
+   EX: Hoy trabajo en casa. || اليوم أعمل في المنزل. || النهاردة بشتغل من البيت.
+   USE: لا نضيف حرف جر قبلها. || ERR: «en hoy» خطأ؛ نقول hoy وحدها.
+[mañana] mañana | adv | g=None | lvl=A1 | ipa=/maˈɲana/ | hint=مَنْيانا | kind=word
+   MSA: غدًا (أو: صباح) || EG: بكرة (أو: الصبح)
+   EX: Mañana tengo clase. || غدًا عندي درس. || بكرة عندي درس.
+   USE: بمعنى «صباح» تكون اسمًا: por la mañana. || ERR: «la mañana» صباح، «mañana» وحدها غدًا — سياق الكلام يحدد.
+[ahora] ahora | adv | g=None | lvl=A1 | ipa=/aˈoɾa/ | hint=أورا | kind=word
+   MSA: الآن || EG: دلوقتي
+   EX: Ahora no puedo. || الآن لا أستطيع. || دلوقتي مش قادر.
+   USE: قريبة من «hace un momento» في الاستخدام. || ERR: «en ahora» خطأ.
+[aquí] aquí | adv | g=None | lvl=A1 | ipa=/aˈki/ | hint=أكي | kind=word
+   MSA: هنا || EG: هنا
+   EX: Aquí está tu café. || ها هي قهوتك هنا. || أهو قهوتك هنا.
+   USE: aquí قريب، ahí متوسط، allí بعيد. || ERR: لا تخلط aquí (هنا) بـallí (هناك).
+[sí] sí | adv | g=None | lvl=A1 | ipa=/si/ | hint=سي | kind=word
+   MSA: نعم || EG: أيوة
+   EX: Sí, gracias. || نعم، شكرًا. || أيوة، شكرًا.
+   USE: تُكتب بنبرة للتفريق عن si الشرطية (لو). || ERR: «si» بلا نبرة = لو؛ للنعم نستخدم sí.
+[no] no | adv | g=None | lvl=A1 | ipa=/no/ | hint=نو | kind=word
+   MSA: لا || EG: لأ
+   EX: No, no tengo tiempo. || لا، ليس عندي وقت. || لأ، معايا وقت.
+   USE: النفي بلا يأتي قبل الفعل: no tengo. || ERR: لا تُكرَّر «no no» لغير التأكيد البلاغي.
+[pero] pero | conj | g=None | lvl=A1 | ipa=/ˈpeɾo/ | hint=بيرو | kind=word
+   MSA: لكن || EG: بس
+   EX: Quiero ir, pero no puedo. || أريد الذهاب، لكن لا أستطيع. || عايز أروح، بس مش قادر.
+   USE: تربط جملتين متعاكستين. || ERR: لا تخلط pero (لكن) بـperro (كلب).
+
+================================================================================
+
+### PACK cv-band2-daily — 20 entries
+NOTE: النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر 
+[agua] agua | noun | g=f | lvl=A1 | ipa=/ˈaɣwa/ | hint=أغوا | kind=word
+   MSA: ماء || EG: ميّة
+   EX: Un vaso de agua, por favor. || كوب ماء، من فضلك. || كوباية ميّة، لو سمحت.
+   USE: مؤنثة لكن تأخذ el: el agua (لأن a في البداية مشددة). || ERR: «la agua» خطأ شائع؛ الصواب el agua مع بقاء الصفة مؤنثة: agua fría.
+[pan] pan | noun | g=m | lvl=A1 | ipa=/pan/ | hint=بان | kind=word
+   MSA: خبز || EG: عيش
+   EX: Quiero pan. || أريد خبزًا. || عايز عيش.
+   USE: غير معدود؛ للقطعة: un pan. || ERR: «una pan» خطأ؛ pan مذكر.
+[casa] casa | noun | g=f | lvl=A1 | ipa=/ˈkasa/ | hint=كاسا | kind=word
+   MSA: بيت || EG: بيت
+   EX: Mi casa es pequeña. || بيتي صغير. || بيتي صغير.
+   USE: en casa = في البيت (بلا أداة). || ERR: «en la casa» تعني في البيت المحدد؛ التعبير الشائع en casa.
+[mesa] mesa | noun | g=f | lvl=A1 | ipa=/ˈmesa/ | hint=ميسا | kind=word
+   MSA: طاولة || EG: طرابيزة
+   EX: Una mesa para dos. || طاولة لشخصين. || طرابيزة لاتنين.
+   USE: مؤنثة: la mesa. || ERR: «el mesa» خطأ.
+[coche] coche | noun | g=m | lvl=A1 | ipa=/ˈkotʃe/ | hint=كوتشي | kind=word
+   MSA: سيارة || EG: عربية/عجلة
+   EX: Voy en coche. || أذهب بالسيارة. || أنا رايح بالعربية.
+   USE: وسيلة النقل بـen: en coche. || ERR: «voy con coche» أقل شيوعًا؛ الأفضل en coche.
+[autobús] autobús | noun | g=m | lvl=A1 | ipa=/autoˈβus/ | hint=أوتوبوس | kind=word
+   MSA: أتوبيس/حافلة || EG: أتوبيس
+   EX: El autobús llega a las ocho. || الأتوبيس يصل الساعة الثامنة. || الأتوبيس بيوصل الساعة تمانية.
+   USE: النبر على المقطع الأخير ويزيد في الجمع: autobuses. || ERR: الجمع autobuses بلا نبرة مكتوبة.
+[calle] calle | noun | g=f | lvl=A1 | ipa=/ˈkaʎe/ | hint=كايي | kind=word
+   MSA: شارع || EG: شارع
+   EX: Vivo en esta calle. || أعيش في هذا الشارع. || أنا عايش في الشارع ده.
+   USE: للمكان نستخدم en. || ERR: «a la calle» تعني إلى الشارع (اتجاه)، و«en la calle» في الشارع.
+[tienda] tienda | noun | g=f | lvl=A1 | ipa=/ˈtjenda/ | hint=تييندا | kind=word
+   MSA: متجر || EG: دكان/محل
+   EX: La tienda abre a las nueve. || المتجر يفتح الساعة التاسعة. || المحل بيفتح الساعة تسعة.
+   USE: مؤنثة: la tienda. || ERR: «el tienda» خطأ.
+[dinero] dinero | noun | g=m | lvl=A1 | ipa=/diˈneɾo/ | hint=دينيرو | kind=word
+   MSA: مال / نقود || EG: فلوس
+   EX: No tengo dinero. || ليس عندي نقود. || معايا فلوس.
+   USE: غير معدود؛ للورقة النقدية: un billete. || ERR: «dineros» غير مستخدمة في الكلام العادي.
+[grande] grande | adj | g=None | lvl=A1 | ipa=/ˈgɾande/ | hint=غراندي | kind=word
+   MSA: كبير || EG: كبير
+   EX: Una casa grande. || بيت كبير. || بيت كبير.
+   USE: لا تتغير للمؤنث: casa grande. || ERR: «granda» غير موجودة.
+[pequeño] pequeño | adj | g=m | lvl=A1 | ipa=/peˈkeɲo/ | hint=بيكينيو | kind=word
+   MSA: صغير || EG: صغير
+   EX: Un piso pequeño. || شقة صغيرة. || شقة صغيرة.
+   USE: pequeña للمؤنث. || ERR: «pequeña casa» صحيحة، والخطأ هو «pequeño casa».
+[nuevo] nuevo | adj | g=m | lvl=A1 | ipa=/ˈnweβo/ | hint=نويبو | kind=word
+   MSA: جديد || EG: جديد
+   EX: Un móvil nuevo. || موبايل جديد. || موبايل جديد.
+   USE: nueva للمؤنث. || ERR: «nueba» غير صحيحة؛ الصواب nueva.
+[bueno] bueno | adj | g=m | lvl=A1 | ipa=/ˈbweno/ | hint=بْوينو | kind=word
+   MSA: جيد / طيب || EG: كويس
+   EX: Es un buen café. || إنه قهوة جيدة. || ده قهوة كويسة.
+   USE: قبل اسم مذكر مفرد نحذف o: buen café. || ERR: «buen» لا تُستخدم وحدها؛ تلزمها كلمة بعدها.
+[caro] caro | adj | g=m | lvl=A1 | ipa=/ˈkaɾo/ | hint=كارو | kind=word
+   MSA: غالي || EG: غالي
+   EX: Es muy caro. || إنه غالٍ جدًا. || ده غالي أوي.
+   USE: عكسها barato. || ERR: «caro» للأسعار لا للأشخاص.
+[abierto] abierto | adj | g=m | lvl=A1 | ipa=/aˈβjeɾto/ | hint=أبييرتو | kind=word
+   MSA: مفتوح || EG: مفتوح
+   EX: La tienda está abierta. || المتجر مفتوح. || المحل مفتوح.
+   USE: مع estar لأنها حالة: está abierta. || ERR: «es abierta» خطأ؛ الحالة تكون مع estar.
+[comida] comida | noun | g=f | lvl=A1 | ipa=/koˈmiða/ | hint=كوميذا | kind=word
+   MSA: طعام / أكلة || EG: أكل
+   EX: La comida está lista. || الطعام جاهز. || الأكل جاهز.
+   USE: comer = يأكل، comida = الطعام أو وجبة الغداء. || ERR: «la comida» قد تعني الغداء في إسبانيا (الساعة 14:00).
+[habitación] habitación | noun | g=f | lvl=A1 | ipa=/aβitaˈθjon/ | hint=أبيتاثيون | kind=word
+   MSA: غرفة || EG: أوضة
+   EX: Una habitación doble. || غرفة مزدوجة. || أوضة دوبل.
+   USE: في الفنادق: habitación = غرفة، وفي المنزل قد تعني حجرة النوم. || ERR: «el habitación» خطأ؛ مؤنثة.
+[llave] llave | noun | g=f | lvl=A1 | ipa=/ˈʎaβe/ | hint=يابي | kind=word
+   MSA: مفتاح || EG: مفتاح
+   EX: Aquí tiene su llave. || تفضل مفتاحك. || اتفضل مفتاحك.
+   USE: ll تُنطق قريبة من الياء المشددة في معظم إسبانيا. || ERR: «la yave» إملاء غير صحيح؛ تُكتب llave.
+[pasaporte] pasaporte | noun | g=m | lvl=A1 | ipa=/pasaˈpoɾte/ | hint=باسابورتي | kind=word
+   MSA: جواز سفر || EG: باسبور
+   EX: Su pasaporte, por favor. || جواز سفرك، من فضلك. || الباسبور، لو سمحت.
+   USE: في المطار يُطلب بـ«Su pasaporte». || ERR: «la pasaporte» خطأ؛ مذكر.
+[maleta] maleta | noun | g=f | lvl=A1 | ipa=/maˈleta/ | hint=ماليتا | kind=word
+   MSA: حقيبة سفر || EG: شنطة
+   EX: Mi maleta es pequeña. || حقيبتي صغيرة. || شنطتي صغيرة.
+   USE: مؤنثة. || ERR: «el maleta» خطأ.
+
+================================================================================
+
+### PACK cv-band3-verbs — 20 entries
+NOTE: النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر 
+[querer] querer | verb | g=None | lvl=A1 | ipa=/keˈɾeɾ/ | hint=كيرير | kind=word
+   MSA: يريد / يحب || EG: عايز
+   EX: Quiero un café. || أريد قهوة. || عايز قهوة.
+   USE: الصيغ: quiero, quieres, quiere. e ⇒ ie. || ERR: «quiero un café» صحيحة؛ «quiero de café» خطأ.
+   FORMS: 1s=quiero, 2s=quieres, 3s=quiere, 1p=queremos, 2p=queréis, 3p=quieren
+[poder] poder | verb | g=None | lvl=A1 | ipa=/poˈðeɾ/ | hint=بوذير | kind=word
+   MSA: يستطيع || EG: يقدر
+   EX: ¿Puedo pasar? || هل أستطيع المرور؟ || أقدر أعدّي؟
+   USE: o ⇒ ue: puedo, puedes, puede. || ERR: «podo» غير صحيحة؛ الصواب puedo.
+   FORMS: 1s=puedo, 2s=puedes, 3s=puede, 1p=podemos, 2p=podéis, 3p=pueden
+[saber] saber | verb | g=None | lvl=A1 | ipa=/saˈβeɾ/ | hint=سابير | kind=word
+   MSA: يعرف (معلومة) / يعرف كيف || EG: عارف
+   EX: No sé dónde está. || لا أعرف أين هو. || مش عارف هو فين.
+   USE: saber للمعلومة، conocer للأشخاص والأماكن. || ERR: «No conozco dónde» خطأ؛ المعلومة تكون بـsaber.
+   FORMS: 1s=sé, 2s=sabes, 3s=sabe, 1p=sabemos, 2p=sabéis, 3p=saben
+[ver] ver | verb | g=None | lvl=A1 | ipa=/beɾ/ | hint=بير | kind=word
+   MSA: يرى || EG: يشوف
+   EX: No veo nada. || لا أرى شيئًا. || مش شايف حاجة.
+   USE: v تُنطق قريبة من b. || ERR: لا تخلط ver (يرى) بـmirar (ينظر إلى).
+   FORMS: 1s=veo, 2s=ves, 3s=ve, 1p=vemos, 2p=veis, 3p=ven
+[decir] decir | verb | g=None | lvl=A1 | ipa=/deˈθiɾ/ | hint=ديثير | kind=word
+   MSA: يقول || EG: يقول
+   EX: ¿Cómo se dice…? || كيف نقول…؟ || بنقول … إزاي؟
+   USE: الصيغ: digo, dices, dice. واسم الفاعل dicho. || ERR: «digo» لا تُنطق «ديغو» بقاف؛ g هنا خفيفة.
+   FORMS: 1s=digo, 2s=dices, 3s=dice, 1p=decimos, 2p=decís, 3p=dicen
+[venir] venir | verb | g=None | lvl=A1 | ipa=/beˈniɾ/ | hint=بينير | kind=word
+   MSA: يأتي || EG: ييجي
+   EX: ¿Vienes conmigo? || هل تأتي معي؟ || تيجي معايا؟
+   USE: e ⇒ ie: vengo, vienes, viene. || ERR: «venir a casa» صحيحة، لكن «voy venir» خطأ؛ الصواب voy a venir.
+   FORMS: 1s=vengo, 2s=vienes, 3s=viene, 1p=venimos, 2p=venís, 3p=vienen
+[dar] dar | verb | g=None | lvl=A1 | ipa=/daɾ/ | hint=دار | kind=word
+   MSA: يعطي || EG: يدّي
+   EX: Dame la llave, por favor. || أعطني المفتاح، من فضلك. || إدّيني المفتاح، لو سمحت.
+   USE: الصيغ: doy, das, da, damos. || ERR: «doy» لا تُنطق «دوي» مع تشديد زائد.
+   FORMS: 1s=doy, 2s=das, 3s=da, 1p=damos, 2p=dais, 3p=dan
+[poner] poner | verb | g=None | lvl=A1 | ipa=/poˈneɾ/ | hint=بونير | kind=word
+   MSA: يضع || EG: يحط
+   EX: Pongo el móvil aquí. || أضع الموبايل هنا. || بحط الموبايل هنا.
+   USE: الصيغ: pongo, pones, pone. || ERR: «pono» غير صحيحة؛ الصواب pongo.
+   FORMS: 1s=pongo, 2s=pones, 3s=pone, 1p=ponemos, 2p=ponéis, 3p=ponen
+[salir] salir | verb | g=None | lvl=A1 | ipa=/saˈliɾ/ | hint=سالير | kind=word
+   MSA: يخرج || EG: يخرج
+   EX: Salgo a las ocho. || أخرج الساعة الثامنة. || بخرج الساعة تمانية.
+   USE: الصيغ: salgo, sales, sale. || ERR: «salgo» بلا u قبل g، خلافًا لـllegar.
+   FORMS: 1s=salgo, 2s=sales, 3s=sale, 1p=salimos, 2p=salís, 3p=salen
+[llegar] llegar | verb | g=None | lvl=A1 | ipa=/ʎeˈɣaɾ/ | hint=ييغار | kind=word
+   MSA: يصل || EG: يوصل
+   EX: Llego en diez minutos. || أصل في عشر دقائق. || بوصل في عشر دقايق.
+   USE: llegar a + مكان. || ERR: «llego a casa» صحيحة بـa، لا بـen.
+   FORMS: 1s=llego, 2s=llegas, 3s=llega, 1p=llegamos, 2p=llegáis, 3p=llegan
+[comprar] comprar | verb | g=None | lvl=A1 | ipa=/komˈpɾaɾ/ | hint=كومبرار | kind=word
+   MSA: يشتري || EG: يشتري
+   EX: Quiero comprar pan. || أريد شراء خبز. || عايز أشتري عيش.
+   USE: بعد querer يأتي المصدر مباشرة. || ERR: «quiero compro» خطأ؛ الصواب quiero comprar.
+   FORMS: 1s=compro, 2s=compras, 3s=compra, 1p=compramos, 2p=compráis, 3p=compran
+[comer] comer | verb | g=None | lvl=A1 | ipa=/koˈmeɾ/ | hint=كومير | kind=word
+   MSA: يأكل || EG: ياكل
+   EX: Comemos a las dos. || نأكل الساعة الثانية. || بناكل الساعة اتنين.
+   USE: الصيغ: como, comes, come, comemos. || ERR: «comer» بلا تشديد على الآخر في صيغة المتكلم.
+   FORMS: 1s=como, 2s=comes, 3s=come, 1p=comemos, 2p=coméis, 3p=comen
+[beber] beber | verb | g=None | lvl=A1 | ipa=/beˈβeɾ/ | hint=بيبِر | kind=word
+   MSA: يشرب || EG: يشرب
+   EX: Bebo mucha agua. || أشرب ماء كثيرًا. || بشرب ميّة كتير.
+   USE: في إسبانيا أيضًا tomar: tomo un café. || ERR: لا تخلط beber (يشرب) بـvivir (يعيش).
+   FORMS: 1s=bebo, 2s=bebes, 3s=bebe, 1p=bebemos, 2p=bebéis, 3p=beben
+[vivir] vivir | verb | g=None | lvl=A1 | ipa=/biˈβiɾ/ | hint=بيبِير | kind=word
+   MSA: يعيش / يسكن || EG: عايش
+   EX: Vivo en Madrid. || أعيش في مدريد. || عايش في مدريد.
+   USE: vivir en + مكان. || ERR: «vivo a Madrid» خطأ؛ المكان بـen.
+   FORMS: 1s=vivo, 2s=vives, 3s=vive, 1p=vivimos, 2p=vivís, 3p=viven
+[siempre] siempre | adv | g=None | lvl=A1 | ipa=/ˈsjempɾe/ | hint=سييمبري | kind=word
+   MSA: دائمًا || EG: دايمًا
+   EX: Siempre desayuno café. || أفطر قهوة دائمًا. || بفطر قهوة دايمًا.
+   USE: عكسها nunca. || ERR: مع النفي تصبح «no siempre» (ليس دائمًا).
+[nunca] nunca | adv | g=None | lvl=A1 | ipa=/ˈnunka/ | hint=نونكا | kind=word
+   MSA: أبدًا / قطّ || EG: عمره ما
+   EX: Nunca bebo café por la noche. || لا أشرب القهوة ليلًا أبدًا. || عمري ما بشرب قهوة بالليل.
+   USE: مع النفي: «no ... nunca» جائزة أيضًا. || ERR: «nunca no» خطأ؛ النفي واحد.
+[también] también | adv | g=None | lvl=A1 | ipa=/tamˈbjen/ | hint=تامبيين | kind=word
+   MSA: أيضًا || EG: كمان
+   EX: Yo también quiero agua. || أنا أيضًا أريد ماء. || أنا كمان عايز ميّة.
+   USE: عكسها tampoco (ولا أنا / ولا كذلك). || ERR: «también no» ليست الصيغة الصحيحة؛ الصواب tampoco.
+[porque] porque | conj | g=None | lvl=A1 | ipa=/ˈpoɾke/ | hint=بوركي | kind=word
+   MSA: لأن || EG: علشان
+   EX: No voy porque estoy cansado. || لا أذهب لأنني متعب. || مش رايح علشان أنا تعبان.
+   USE: كلمة واحدة لأن السبب؛ ¿por qué? منفصلتان للسؤال. || ERR: السؤال «¿Por qué?» منفصل بمعنى «لماذا؟».
+[entre] entre | prep | g=None | lvl=A1 | ipa=/ˈentɾe/ | hint=إنترِ | kind=word
+   MSA: بين || EG: بين
+   EX: El banco está entre la tienda y el café. || البنك بين المتجر والمقهى. || البنك بين المحل والقهوة.
+   USE: entre + اسمين بلا تغيير. || ERR: لا تُتبع بـde: «entre de» خطأ.
+[desde] desde | prep | g=None | lvl=A1 | ipa=/ˈdesde/ | hint=ديسدي | kind=word
+   MSA: منذ / من || EG: من
+   EX: Trabajo desde las ocho. || أعمل من الثامنة. || بشتغل من تمانية.
+   USE: للزمن والمكان كبداية. || ERR: للأصل والانتساب نستخدم de لا desde.
+
+================================================================================
+
+### PACK tr-shared — 20 entries
+NOTE: النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنت
+[vuelo] vuelo | noun | g=m | lvl=A2 | ipa=/ˈbwelo/ | hint=بويلو | kind=word
+   MSA: رحلة جوية || EG: طيرانة/رحلة
+   EX: Mi vuelo sale a las siete. || رحلتي تنطلق الساعة السابعة. || رحلتي بتقوم الساعة سبعة.
+   USE: vuelo = الرحلة، volar = يطير. || ERR: لا تخلط vuelo (رحلة) بـvuelta (عودة).
+[aeropuerto] aeropuerto | noun | g=m | lvl=A2 | ipa=/aeɾoˈpweɾto/ | hint=أيروبويرتو | kind=word
+   MSA: مطار || EG: مطار
+   EX: El aeropuerto está lejos. || المطار بعيد. || المطار بعيد.
+   USE: en el aeropuerto = في المطار. || ERR: «la aeropuerto» خطأ؛ مذكر.
+[billete] billete | noun | g=m | lvl=A2 | ipa=/biˈʎete/ | hint=بيييتي | kind=word
+   MSA: تذكرة || EG: تذكرة
+   EX: Aquí tiene su billete. || تفضل تذكرتك. || اتفضل تذكرتك.
+   USE: في أمريكا اللاتينية: boleto/pasaje. || ERR: «la billete» خطأ؛ مذكر.
+[puerta] puerta | noun | g=f | lvl=A2 | ipa=/ˈpweɾta/ | hint=بويرتا | kind=word
+   MSA: بوابة (في المطار) / باب || EG: بوابة
+   EX: El vuelo sale por la puerta 12. || الرحلة من البوابة 12. || الرحلة من بوابة 12.
+   USE: puerta de embarque = بوابة الصعود. || ERR: لا تخلط puerta (باب) بـpuerto (ميناء).
+[embarque] embarque | noun | g=m | lvl=A2 | ipa=/emˈbaɾke/ | hint=إمباركي | kind=word
+   MSA: الصعود إلى الطائرة || EG: الصعود للطيارة
+   EX: El embarque empieza a las seis. || الصعود يبدأ الساعة السادسة. || الصعود بيبدأ الساعة ستة.
+   USE: tarjeta de embarque = بطاقة الصعود. || ERR: «embarcación» قارب، وليست الصعود.
+[retraso] retraso | noun | g=m | lvl=A2 | ipa=/reˈtɾaso/ | hint=ريتراسو | kind=word
+   MSA: تأخير || EG: تأخير
+   EX: Hay un retraso de dos horas. || هناك تأخير ساعتين. || في تأخير ساعتين.
+   USE: con retraso = متأخرًا؛ llegar con retraso = يصل متأخرًا. || ERR: «retrasado» صفة الشخص المتأخر لا التأخير نفسه.
+[equipaje] equipaje | noun | g=m | lvl=A2 | ipa=/ekiˈpaxe/ | hint=إكيباتشي | kind=word
+   MSA: الأمتعة || EG: الشنط
+   EX: Mi equipaje es esta maleta. || أمتعتي هي هذه الحقيبة. || شنطي هي الشنطة دي.
+   USE: equipaje de mano = الأمتعة اليدوية. || ERR: «equipajes» نادر في الكلام اليومي.
+[facturar] facturar | verb | g=None | lvl=A2 | ipa=/faktuˈɾaɾ/ | hint=فاكتورار | kind=word
+   MSA: يسجّل الأمتعة / يصدر فاتورة || EG: يودّع الشنطة
+   EX: Quiero facturar esta maleta. || أريد تسجيل هذه الحقيبة. || عايز أودّع الشنطة دي.
+   USE: في المطار: facturar el equipaje. وفي المحلات: facturar = يصدر فاتورة. || ERR: «facturo la maleta» صحيحة، لكن بلا «a» قبله.
+[asiento] asiento | noun | g=m | lvl=A2 | ipa=/aˈsjento/ | hint=أسيينتو | kind=word
+   MSA: مقعد || EG: كرسي/مقعد
+   EX: ¿Puedo cambiar de asiento? || هل أستطيع تغيير مقعدي؟ || ممكن أغير كرسيي؟
+   USE: asiento de ventanilla = مقعد النافذة، de pasillo = الممر. || ERR: لا تخلط asiento (مقعد) بـacento (نبر).
+[aduanas] aduanas | noun | g=f | lvl=A2 | ipa=/aˈðwanas/ | hint=أذواناس | kind=word
+   MSA: الجمارك || EG: الجمارك
+   EX: Tiene que pasar por aduanas. || عليك المرور بالجمارك. || لازم تعدّي من الجمارك.
+   USE: تأتي جمعًا عادة: las aduanas. || ERR: «la aduana» تستخدم مفردة في سياقات رسمية، والشائع الجمع.
+[reserva] reserva | noun | g=f | lvl=A2 | ipa=/reˈseɾβa/ | hint=ريسيرفا | kind=word
+   MSA: حجز || EG: حجز
+   EX: Tengo una reserva a nombre de Omar. || عندي حجز باسم عمر. || عندي حجز باسم عمر.
+   USE: reservar = يحجز؛ a nombre de = باسم. || ERR: «reservación» أمريكية لاتينية؛ في إسبانيا reserva.
+[habitación doble] habitación doble | phrase | g=f | lvl=A2 | ipa=/aβitaˈθjon ˈdoβle/ | hint=أبيتاثيون دوبلي | kind=word
+   MSA: غرفة مزدوجة || EG: أوضة دوبل
+   EX: Quiero una habitación doble. || أريد غرفة مزدوجة. || عايز أوضة دوبل.
+   USE: habitación individual = فردية، doble = مزدوجة بسرير كبير أو سريرين. || ERR: «habitación doble para una persona» مقبولة لكن تُدفع كاملة.
+[cama] cama | noun | g=f | lvl=A2 | ipa=/ˈkama/ | hint=كامَ | kind=word
+   MSA: سرير || EG: سرير
+   EX: La cama es muy cómoda. || السرير مريح جدًا. || السرير مريح جدًا.
+   USE: cama de matrimonio = سرير مزدوج كبير. || ERR: «el cama» خطأ؛ مؤنث.
+[desayuno] desayuno | noun | g=m | lvl=A2 | ipa=/desaˈʝuno/ | hint=ديسايونو | kind=word
+   MSA: فطور || EG: فطار
+   EX: El desayuno es a las ocho. || الفطور الساعة الثامنة. || الفطار الساعة تمانية.
+   USE: desayuno incluido = فطور مشمول. || ERR: desayunar فعل، desayuno اسم.
+[factura] factura | noun | g=f | lvl=A2 | ipa=/fakˈtuɾa/ | hint=فاكتورا | kind=word
+   MSA: فاتورة || EG: فاتورة
+   EX: ¿Me puede dar la factura? || هل يمكنك إعطائي الفاتورة؟ || ممكن تديني الفاتورة؟
+   USE: في الفندق: factura = فاتورة الإقامة. || ERR: «factura» ليست «facturar»؛ الأولى اسم والثانية فعل.
+[llegada] llegada | noun | g=f | lvl=A2 | ipa=/ʎeˈɣaða/ | hint=ييغاذا | kind=word
+   MSA: الوصول || EG: الوصول
+   EX: La llegada está prevista a las diez. || الوصول المتوقع الساعة العاشرة. || الوصول المتوقع الساعة عشرة.
+   USE: salida = المغادرة، llegada = الوصول. || ERR: لا تخلط llegada (وصول) بـllegar (يصل) فالأولى اسم.
+[salida] salida | noun | g=f | lvl=A2 | ipa=/saˈliða/ | hint=ساليذا | kind=word
+   MSA: المغادرة / مخرج || EG: الخروج
+   EX: ¿A qué hora es la salida? || في أي ساعة المغادرة؟ || المغادرة الساعة كام؟
+   USE: salida de emergencia = مخرج الطوارئ. || ERR: «salida» اسم؛ «salir» فعل.
+[pasajero] pasajero | noun | g=m | lvl=A2 | ipa=/pasaˈxeɾo/ | hint=باساتشيرو | kind=word
+   MSA: مسافر || EG: مسافر
+   EX: Los pasajeros deben esperar aquí. || على المسافرين الانتظار هنا. || المسافرين لازم يستنوا هنا.
+   USE: pasajera للمؤنث. || ERR: «pasajero» ليست صفة للمرور السريع.
+[tarjeta de crédito] tarjeta de crédito | phrase | g=f | lvl=A2 | ipa=/taɾˈxeta de ˈkɾeðito/ | hint=تارخيتا دي كريذيتو | kind=word
+   MSA: بطاقة ائتمان || EG: فيزا
+   EX: ¿Puedo pagar con tarjeta de crédito? || هل أستطيع الدفع ببطاقة الائتمان؟ || ممكن أدفع بالفيزا؟
+   USE: pagary con tarjeta = دفع بالبطاقة؛ en efectivo = نقدًا. || ERR: «pagar por tarjeta» أقل شيوعًا؛ الأفضل con tarjeta.
+[efectivo] efectivo | noun | g=m | lvl=A2 | ipa=/efeɡˈtiβo/ | hint=إفيختيبو | kind=word
+   MSA: نقود سائلة || EG: كاش
+   EX: Lo siento, no aceptamos efectivo. || آسف، لا نقبل النقد. || معلش، مش بنقبل كاش.
+   USE: en efectivo = نقدًا. || ERR: «efectivo» ليست «فعال» بل نقد.
+
+================================================================================
+

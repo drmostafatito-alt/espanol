@@ -1,0 +1,680 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cc-shared",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. على الهاتف تزيد صعوبة تمييز b/p وd/t؛ لذلك نطلب التهجئة بدل التخمين.",
+  "source": {
+    "title": "مفردات خدمة العملاء — إعداد داخلي لمراجعة بشرية قبل النشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأنها الأكثر شيوعًا."
+  },
+  "entries": [
+    {
+      "headword": "pedido",
+      "normalized": "pedido",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/peˈðiðo/",
+      "pronunciationHintAr": "بيذيو",
+      "internalRank": 1,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طلب/طلبية (شراء)",
+          "meaningArEg": "أوردر",
+          "glossEs": "sustantivo masculino: orden de compra",
+          "exampleEs": "Su pedido salió ayer.",
+          "exampleAr": "طلبك خرج أمس.",
+          "exampleArEg": "الأوردر بتاعك خرج إمبارح.",
+          "usageNoteAr": "número de pedido = رقم الطلب.",
+          "commonErrorAr": "«orden» تعني ترتيبًا أو أمرًا؛ للشراء «pedido»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su pedido salió ayer.",
+          "ar": "طلبك خرج أمس.",
+          "arEg": "الأوردر بتاعك خرج إمبارح."
+        }
+      ]
+    },
+    {
+      "headword": "envío",
+      "normalized": "envío",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/emˈbio/",
+      "pronunciationHintAr": "إمبيو",
+      "internalRank": 2,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الشحن / الإرسال",
+          "meaningArEg": "الشحن",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El envío tarda tres días.",
+          "exampleAr": "الشحن يستغرق ثلاثة أيام.",
+          "exampleArEg": "الشحن بياخد تلات أيام.",
+          "usageNoteAr": "gastos de envío = تكاليف الشحن.",
+          "commonErrorAr": "«envío» اسم؛ الفعل enviar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El envío tarda tres días.",
+          "ar": "الشحن يستغرق ثلاثة أيام.",
+          "arEg": "الشحن بياخد تلات أيام."
+        }
+      ]
+    },
+    {
+      "headword": "entrega",
+      "normalized": "entrega",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/enˈtɾeɣa/",
+      "pronunciationHintAr": "إنترِيغا",
+      "internalRank": 3,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "التسليم",
+          "meaningArEg": "التسليم",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "La entrega está prevista para mañana.",
+          "exampleAr": "التسليم متوقع غدًا.",
+          "exampleArEg": "التسليم متوقع بكرة.",
+          "usageNoteAr": "fecha de entrega = تاريخ التسليم.",
+          "commonErrorAr": "«entrega» ليست «entrada» (دخول)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La entrega está prevista para mañana.",
+          "ar": "التسليم متوقع غدًا.",
+          "arEg": "التسليم متوقع بكرة."
+        }
+      ]
+    },
+    {
+      "headword": "plazo",
+      "normalized": "plazo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/ˈplaθo/",
+      "pronunciationHintAr": "بلاثو",
+      "internalRank": 4,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "المدة المحددة / الموعد النهائي",
+          "meaningArEg": "المدة",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El plazo es de cinco días laborables.",
+          "exampleAr": "المدة خمسة أيام عمل.",
+          "exampleArEg": "المدة خمس أيام عمل.",
+          "usageNoteAr": "días laborables = أيام عمل.",
+          "commonErrorAr": "«plazo» مدة محددة، وليست «plaza» (ساحة)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El plazo es de cinco días laborables.",
+          "ar": "المدة خمسة أيام عمل.",
+          "arEg": "المدة خمس أيام عمل."
+        }
+      ]
+    },
+    {
+      "headword": "incidencia",
+      "normalized": "incidencia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/inθiˈðenθja/",
+      "pronunciationHintAr": "إنثيذينثيا",
+      "internalRank": 5,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مشكلة/حادث طارئ في الخدمة",
+          "meaningArEg": "مشكلة",
+          "glossEs": "sustantivo femenino: registro de problema",
+          "exampleEs": "Hemos abierto una incidencia.",
+          "exampleAr": "فتحنا بلاغ مشكلة.",
+          "exampleArEg": "فتحنا بلاغ مشكلة.",
+          "usageNoteAr": "abrir una incidencia = تسجيل بلاغ.",
+          "commonErrorAr": "«incidencia» ليست «incidente» بالضرورة؛ الأولى مصطلح خدمة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hemos abierto una incidencia.",
+          "ar": "فتحنا بلاغ مشكلة.",
+          "arEg": "فتحنا بلاغ مشكلة."
+        }
+      ]
+    },
+    {
+      "headword": "reclamación",
+      "normalized": "reclamación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/reklamaˈθjon/",
+      "pronunciationHintAr": "ريكلاماثيون",
+      "internalRank": 6,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شكوى رسمية",
+          "meaningArEg": "شكوى",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Puede presentar una reclamación.",
+          "exampleAr": "يمكنك تقديم شكوى.",
+          "exampleArEg": "ممكن تقدّم شكوى.",
+          "usageNoteAr": "presentar una reclamación = تقديم شكوى.",
+          "commonErrorAr": "«reclamación» رسمية؛ «queja» شكوى عامة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Puede presentar una reclamación.",
+          "ar": "يمكنك تقديم شكوى.",
+          "arEg": "ممكن تقدّم شكوى."
+        }
+      ]
+    },
+    {
+      "headword": "reembolso",
+      "normalized": "reembolso",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/reemˈbolso/",
+      "pronunciationHintAr": "رييمبولسو",
+      "internalRank": 7,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "استرداد المبلغ",
+          "meaningArEg": "استرداد الفلوس",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El reembolso tarda cinco días.",
+          "exampleAr": "استرداد المبلغ يستغرق خمسة أيام.",
+          "exampleArEg": "استرداد الفلوس بياخد خمس أيام.",
+          "usageNoteAr": "solicitar un reembolso = طلب استرداد.",
+          "commonErrorAr": "«devolución» إعادة المنتج، و«reembolso» إعادة المال."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El reembolso tarda cinco días.",
+          "ar": "استرداد المبلغ يستغرق خمسة أيام.",
+          "arEg": "استرداد الفلوس بياخد خمس أيام."
+        }
+      ]
+    },
+    {
+      "headword": "devolución",
+      "normalized": "devolución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/deoβoluˈθjon/",
+      "pronunciationHintAr": "دييبولوثيون",
+      "internalRank": 8,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إعادة المنتج",
+          "meaningArEg": "إرجاع المنتج",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "La devolución es gratuita.",
+          "exampleAr": "إعادة المنتج مجانية.",
+          "exampleArEg": "إرجاع المنتج مجاني.",
+          "usageNoteAr": "devolver = يعيد؛ devolución اسم.",
+          "commonErrorAr": "لا تخلطها بـreembolso (إعادة المال)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La devolución es gratuita.",
+          "ar": "إعادة المنتج مجانية.",
+          "arEg": "إرجاع المنتج مجاني."
+        }
+      ]
+    },
+    {
+      "headword": "importe",
+      "normalized": "importe",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/imˈpoɾte/",
+      "pronunciationHintAr": "إمبورتي",
+      "internalRank": 9,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "المبلغ (المالي)",
+          "meaningArEg": "المبلغ",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El importe total es 48,90 euros.",
+          "exampleAr": "المبلغ الإجمالي 48.90 يورو.",
+          "exampleArEg": "المبلغ الإجمالي 48.90 يورو.",
+          "usageNoteAr": "importe total = المبلغ الإجمالي.",
+          "commonErrorAr": "«importe» ليس «importante» (مهم)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El importe total es 48,90 euros.",
+          "ar": "المبلغ الإجمالي 48.90 يورو.",
+          "arEg": "المبلغ الإجمالي 48.90 يورو."
+        }
+      ]
+    },
+    {
+      "headword": "gestionar",
+      "normalized": "gestionar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/xestjoˈnaɾ/",
+      "pronunciationHintAr": "خيستيونار",
+      "internalRank": 10,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يتولّى/يدير (إجراءً)",
+          "meaningArEg": "يتابع/يدير",
+          "glossEs": "verbo regular -ar",
+          "exampleEs": "Voy a gestionar su solicitud.",
+          "exampleAr": "سأتولّى طلبك.",
+          "exampleArEg": "هتابع طلبك.",
+          "usageNoteAr": "gestión = إدارة/متابعة.",
+          "commonErrorAr": "«gestionar» ليست «gestionar con»؛ الفعل متعدٍّ بلا حرف جر."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy a gestionar su solicitud.",
+          "ar": "سأتولّى طلبك.",
+          "arEg": "هتابع طلبك."
+        }
+      ]
+    },
+    {
+      "headword": "comprobar",
+      "normalized": "comprobar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/kompɾoˈβaɾ/",
+      "pronunciationHintAr": "كومبروبار",
+      "internalRank": 11,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يتحقق/يفحص",
+          "meaningArEg": "يتأكد",
+          "glossEs": "verbo regular -ar (o ⇒ ue: compruebo)",
+          "exampleEs": "Voy a comprobar el estado del envío.",
+          "exampleAr": "سأتحقق من حالة الشحنة.",
+          "exampleArEg": "هتأكد من حالة الشحنة.",
+          "usageNoteAr": "comprobar = يتحقق فعليًا؛ verificar = يتحقق رسميًا.",
+          "commonErrorAr": "الصيغة compruebo لا comprobo."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy a comprobar el estado del envío.",
+          "ar": "سأتحقق من حالة الشحنة.",
+          "arEg": "هتأكد من حالة الشحنة."
+        }
+      ]
+    },
+    {
+      "headword": "verificar",
+      "normalized": "verificar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/beɾifiˈkaɾ/",
+      "pronunciationHintAr": "بيريفيكار",
+      "internalRank": 12,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يتحقق رسميًا من الهوية/البيانات",
+          "meaningArEg": "يتأكد رسميًا",
+          "glossEs": "verbo regular -ar",
+          "exampleEs": "Necesito verificar su identidad.",
+          "exampleAr": "أحتاج التحقق من هويتك.",
+          "exampleArEg": "لازم أتأكد من هويتك.",
+          "usageNoteAr": "verificación = تحقق؛ تُستخدم في الإجراءات الرسمية.",
+          "commonErrorAr": "«verificar de» خطأ؛ الفعل متعدٍّ مباشرة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Necesito verificar su identidad.",
+          "ar": "أحتاج التحقق من هويتك.",
+          "arEg": "لازم أتأكد من هويتك."
+        }
+      ]
+    },
+    {
+      "headword": "anotar",
+      "normalized": "anotar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/anoˈtaɾ/",
+      "pronunciationHintAr": "أنوتار",
+      "internalRank": 13,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يدوّن/يسجّل ملاحظة",
+          "meaningArEg": "يسجّل",
+          "glossEs": "verbo regular -ar",
+          "exampleEs": "Voy a anotar su número de contacto.",
+          "exampleAr": "سأسجّل رقم تواصلك.",
+          "exampleArEg": "هسجّل رقم تواصلك.",
+          "usageNoteAr": "anotar = تدوين سريع؛ registrar = تسجيل في النظام.",
+          "commonErrorAr": "«apuntar» مرادف شائع في إسبانيا."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Voy a anotar su número de contacto.",
+          "ar": "سأسجّل رقم تواصلك.",
+          "arEg": "هسجّل رقم تواصلك."
+        }
+      ]
+    },
+    {
+      "headword": "transferir",
+      "normalized": "transferir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/tɾansfeˈɾiɾ/",
+      "pronunciationHintAr": "ترانسفيرير",
+      "internalRank": 14,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يحوّل المكالمة / يحوّل مبلغًا",
+          "meaningArEg": "يحوّل",
+          "glossEs": "verbo irregular (e ⇒ ie: transfiero)",
+          "exampleEs": "Le transfiero con mi compañero.",
+          "exampleAr": "سأحوّلك إلى زميلي.",
+          "exampleArEg": "هحوّلك لزميلي.",
+          "usageNoteAr": "في المكالمات: le transfiero / le paso con.",
+          "commonErrorAr": "الصيغة transfiero لا transfero."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le transfiero con mi compañero.",
+          "ar": "سأحوّلك إلى زميلي.",
+          "arEg": "هحوّلك لزميلي."
+        }
+      ]
+    },
+    {
+      "headword": "cliente",
+      "normalized": "cliente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/ˈkljente/",
+      "pronunciationHintAr": "كليينتي",
+      "internalRank": 15,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عميل",
+          "meaningArEg": "عميل",
+          "glossEs": "sustantivo de género común",
+          "exampleEs": "El cliente lleva dos días esperando.",
+          "exampleAr": "العميل ينتظر يومين.",
+          "exampleArEg": "العميل مستني يومين.",
+          "usageNoteAr": "la clientela = العملاء كمجموعة.",
+          "commonErrorAr": "«clienta» للمؤنث جائزة، لكن الشائع في السياق المهني استخدام «cliente» للجنسين."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cliente lleva dos días esperando.",
+          "ar": "العميل ينتظر يومين.",
+          "arEg": "العميل مستني يومين."
+        }
+      ]
+    },
+    {
+      "headword": "compañero",
+      "normalized": "compañero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/kompaˈɲeɾo/",
+      "pronunciationHintAr": "كومبانييرو",
+      "internalRank": 16,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "زميل",
+          "meaningArEg": "زميل",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "Mi compañera revisará su caso.",
+          "exampleAr": "زميلتي ستراجع حالتك.",
+          "exampleArEg": "زميلتي هتراجع حالتك.",
+          "usageNoteAr": "compañera للمؤنث؛ compañero de trabajo = زميل عمل.",
+          "commonErrorAr": "«compañero» ليست «compañía» (شركة)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi compañera revisará su caso.",
+          "ar": "زميلتي ستراجع حالتك.",
+          "arEg": "زميلتي هتراجع حالتك."
+        }
+      ]
+    },
+    {
+      "headword": "identidad",
+      "normalized": "identidad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/iðentiˈðað/",
+      "pronunciationHintAr": "إيذينتيذاذ",
+      "internalRank": 17,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الهوية",
+          "meaningArEg": "الهوية",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "Por seguridad, necesitamos verificar su identidad.",
+          "exampleAr": "للأمان، نحتاج التحقق من هويتك.",
+          "exampleArEg": "للأمان، لازم نتأكد من هويتك.",
+          "usageNoteAr": "لا نطلب كلمة المرور كاملة أبدًا في المكالمات؛ نطلب بيانات جزئية.",
+          "commonErrorAr": "لا تُطلب بيانات حساسة كاملة على الهاتف."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Por seguridad, necesitamos verificar su identidad.",
+          "ar": "للأمان، نحتاج التحقق من هويتك.",
+          "arEg": "للأمان، لازم نتأكد من هويتك."
+        }
+      ]
+    },
+    {
+      "headword": "agente",
+      "normalized": "agente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": null,
+      "level": "B1",
+      "register": "formal",
+      "ipa": "/aˈxente/",
+      "pronunciationHintAr": "أخينتي",
+      "internalRank": 18,
+      "tags": [
+        "كول سنتر",
+        "B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موظف الخدمة/الوكيل",
+          "meaningArEg": "الموظف",
+          "glossEs": "sustantivo de género común",
+          "exampleEs": "Le atiende el agente Omar.",
+          "exampleAr": "يخدمك الموظف عمر.",
+          "exampleArEg": "الموظف عمر بيخدمك.",
+          "usageNoteAr": "le atiende = يخدمك (تعبير ثابت في المكالمات).",
+          "commonErrorAr": "«agente» لا يتغير للمؤنث في هذا السياق عادة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le atiende el agente Omar.",
+          "ar": "يخدمك الموظف عمر.",
+          "arEg": "الموظف عمر بيخدمك."
+        }
+      ]
+    }
+  ]
+}

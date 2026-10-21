@@ -1,0 +1,620 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-saludos-formalidad",
+    "titleAr": "التحية الرسمية: usted وtú وما بينهما",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u1-origen",
+    "objectiveAr": "أن يحيّي المتعلم تحية مناسبة للوقت ويختار صيغة المخاطبة الملائمة (tú للمعتاد وusted للرسمي)، ويقدّم نفسه في موقف رسمي بجملة كاملة صحيحة، ويميّز بين المذكر والمؤنث في encantado/encantada.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "buenas tardes",
+      "buenas noches",
+      "¿cómo está usted?",
+      "encantado",
+      "señor",
+      "señora",
+      "usted",
+      "con permiso"
+    ],
+    "reviewVocabulary": [
+      "hola",
+      "ser",
+      "de",
+      "¿de dónde?"
+    ],
+    "targetStructures": [
+      "Buenos días / Buenas tardes / Buenas noches",
+      "¿Cómo está usted?",
+      "usted + فعل بصيغة الغائب",
+      "Encantado / Encantada"
+    ],
+    "grammarTopics": [
+      "tu-vs-usted",
+      "tercera-persona-formal",
+      "concordancia-encantado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تدخل مكتب شركة في مدريد صباحًا لتسليم ورقة، والموظفة تستقبلك رسميًا.",
+        "settingAr": "مكتب استقبال، صباحًا",
+        "lines": [
+          {
+            "es": "Buenos días. ¿En qué puedo ayudarle?",
+            "ar": "صباح الخير. كيف أستطيع مساعدتك؟",
+            "arEg": "صباح الخير. أقدر أساعدك في إيه؟",
+            "audioKey": "pending/a1-saludos-recep-1"
+          },
+          {
+            "es": "Buenos días, señora. Soy Omar. Traigo un documento para la oficina.",
+            "ar": "صباح الخير يا سيدة. أنا عمر. أحضر ورقة للمكتب.",
+            "arEg": "صباح الخير يا مدام. أنا عمر. جايب ورقة للمكتب.",
+            "audioKey": "pending/a1-saludos-omar-1"
+          },
+          {
+            "es": "Encantada, señor. ¿Cómo está usted hoy?",
+            "ar": "تشرفنا يا سيد. كيف حالك اليوم؟",
+            "arEg": "تشرفنا يا أستاذ. إزيك النهاردة؟",
+            "audioKey": "pending/a1-saludos-recep-2"
+          },
+          {
+            "es": "Muy bien, gracias. ¿Y usted?",
+            "ar": "بخير جدًا، شكرًا. وأنتِ؟",
+            "arEg": "كويس جدًا، شكرًا. وإنتِ؟",
+            "audioKey": "pending/a1-saludos-omar-2"
+          },
+          {
+            "es": "Con permiso, voy a llamar a mi compañera.",
+            "ar": "عن إذنك، سأنادي زميلتي.",
+            "arEg": "عن إذنك، هأنادي زميلتي.",
+            "audioKey": "pending/a1-saludos-recep-3"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "a1_sal_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع (أو اقرأ النص البديل) واختر التحية التي سمعتها.",
+        "audioKey": "pending/a1-saludos-recep-2",
+        "speechEs": "Encantada, señor. ¿Cómo está usted hoy?",
+        "options": [
+          {
+            "id": "a1_sal_1_a",
+            "text": "Encantada, señor. ¿Cómo está usted hoy?",
+            "textAr": "تشرفنا يا سيد. كيف حالك اليوم؟",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_1_b",
+            "text": "Buenos días, ¿cómo estás?",
+            "textAr": "صباح الخير، كيف حالك؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "تحية غير رسمية (estás) — لا تطابق المقطع الرسمي."
+          },
+          {
+            "id": "a1_sal_1_c",
+            "text": "Hasta luego, señor.",
+            "textAr": "إلى لقاء قريب يا سيد.",
+            "isCorrect": false,
+            "distractorRationaleAr": "وداع لا تحية؛ ولا يوجد سؤال عن الحال."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_1_a"
+          ]
+        },
+        "explanationAr": "المقطع رسمي: استُخدمت «señor» وصيغة «¿Cómo está usted?» لا «¿Cómo estás?». كلمة «Encantada» بالتاء المربوطة في النهاية تعني أن المتحدثة امرأة.",
+        "errorFeedback": {
+          "a1_sal_1_b": "استمع إلى الفعل: «está usted» رسمي، وليس «estás» غير رسمي.",
+          "a1_sal_1_c": "التحية تبدأ بـ«Buenos días / Buenas tardes»؛ «Hasta luego» وداع."
+        },
+        "targetVocab": [
+          "¿cómo está usted?",
+          "encantado",
+          "señor"
+        ],
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_2_time",
+        "type": "word_choice",
+        "instructionAr": "الساعة الثامنة مساءً وأنت تدخل مطعمًا. أي تحية تختار؟",
+        "contextAr": "التحية في الإسبانية تتغيّر بحسب وقت اليوم، والخطأ فيها يُلاحَظ بسرعة.",
+        "options": [
+          {
+            "id": "a1_sal_2_a",
+            "text": "Buenas noches.",
+            "textAr": "مساء الخير (بعد الغروب).",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_2_b",
+            "text": "Buenos días.",
+            "textAr": "صباح الخير.",
+            "isCorrect": false,
+            "distractorRationaleAr": "للصباح فقط؛ استخدامها ليلًا خطأ شائع."
+          },
+          {
+            "id": "a1_sal_2_c",
+            "text": "Buenas tardes.",
+            "textAr": "مساء الخير (بعد الظهر).",
+            "isCorrect": false,
+            "distractorRationaleAr": "تصلح بعد الظهر حتى الغروب؛ في الثامنة مساءً نستخدم noches."
+          },
+          {
+            "id": "a1_sal_2_d",
+            "text": "Adiós.",
+            "textAr": "وداعًا.",
+            "isCorrect": false,
+            "distractorRationaleAr": "وداع عند المغادرة، لا تحية عند الدخول."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_2_a"
+          ]
+        },
+        "explanationAr": "التحيات: «Buenos días» صباحًا، «Buenas tardes» من بعد الظهر إلى الغروب، «Buenas noches» بعد الغروب. لاحظ أن días مذكر فتُسبق بـBuenos، وtardes/noches مؤنث فتُسبق بـBuenas.",
+        "errorFeedback": {
+          "a1_sal_2_b": "«Buenos días» للصباح؛ في المساء نقول «Buenas noches».",
+          "a1_sal_2_c": "«Buenas tardes» تنتهي عند الغروب؛ الثامنة مساءً تحتاج «Buenas noches».",
+          "a1_sal_2_d": "«Adiós» عند المغادرة لا عند الدخول."
+        },
+        "targetVocab": [
+          "buenas tardes",
+          "buenas noches"
+        ],
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_3_usted",
+        "type": "word_choice",
+        "instructionAr": "تخاطب مديرًا في العمل للمرة الأولى. أي صيغة مناسبة؟",
+        "contextAr": "tú للمعتاد والأصدقاء، usted للرسمي والغرباء في السياق المهني.",
+        "options": [
+          {
+            "id": "a1_sal_3_a",
+            "text": "¿Cómo está usted?",
+            "textAr": "كيف حالك؟ (رسمي)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_3_b",
+            "text": "¿Cómo estás tú?",
+            "textAr": "كيف حالك؟ (غير رسمي)",
+            "isCorrect": false,
+            "distractorRationaleAr": "غير مناسبة مع مدير في أول لقاء؛ تُستخدم مع الأصدقاء."
+          },
+          {
+            "id": "a1_sal_3_c",
+            "text": "¿Qué tal?",
+            "textAr": "إيه الأخبار؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "غير رسمية جدًا؛ لا تصلح لأول لقاء مهني."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_3_a"
+          ]
+        },
+        "explanationAr": "مع «usted» يأتي الفعل بصيغة الغائب: usted está (لا estás). أما «tú» فتأخذ estás. اختيار الصيغة هنا اجتماعي قبل أن يكون نحويًا.",
+        "errorFeedback": {
+          "a1_sal_3_b": "«estás» غير رسمية؛ في العمل مع مدير استخدم «usted está».",
+          "a1_sal_3_c": "«¿Qué tal?» للأصدقاء؛ في أول لقاء مهني الأفضل «¿Cómo está usted?»."
+        },
+        "targetVocab": [
+          "usted",
+          "¿cómo está usted?"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_4_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بصيغة الفعل المناسبة للمخاطبة الرسمية.",
+        "stemEs": "Buenos días, señora. ¿Cómo ____ usted?",
+        "stemAr": "صباح الخير يا سيدة. كيف حالك؟",
+        "answerKey": {
+          "accepted": [
+            "está",
+            "esta"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع «usted» نستخدم صيغة الغائب: usted está. لو خاطبنا صديقًا لقلنا «¿Cómo estás?» بلا usted.",
+        "errorFeedback": {
+          "estás": "«estás» مع tú وليس مع usted. مع usted: está.",
+          "es": "«es» من الفعل ser للهوية والصفة الثابتة؛ السؤال عن الحال يستخدم estar.",
+          "eres": "«eres» من ser ومع tú؛ هنا نحتاج «está» من estar مع usted."
+        },
+        "targetVocab": [
+          "usted",
+          "¿cómo está usted?"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_5_conjugate",
+        "type": "conjugate_in_context",
+        "instructionAr": "صرّف الفعل بين القوسين بصيغة المخاطبة الرسمية.",
+        "stemEs": "Disculpe, ¿____ (trabajar) usted en esta oficina?",
+        "stemAr": "عن إذنك، هل تعمل في هذا المكتب؟",
+        "answerKey": {
+          "accepted": [
+            "trabaja"
+          ],
+          "caseSensitive": false,
+          "verb": "trabajar",
+          "expectedPerson": "3s",
+          "expectedTense": "presente"
+        },
+        "explanationAr": "أفعال المجموعة الأولى (-ar) مع usted تأخذ النهاية -a: usted trabaja. مع tú تكون -as: tú trabajas. الفرق حرف واحد، لكنه يحدد مستوى اللباقة.",
+        "errorFeedback": {
+          "trabajas": "هذه صيغة tú؛ مع usted نستخدم trabaja.",
+          "trabajo": "هذه صيغة yo (أنا)؛ الفاعل هنا usted.",
+          "trabajan": "هذه صيغة ellos/ustedes (الجمع)؛ للمفرد الرسمي: trabaja."
+        },
+        "targetVocab": [
+          "usted"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_6_fix",
+        "type": "find_fix_error",
+        "instructionAr": "الجملة التالية تخالف صيغة المخاطبة الرسمية. أي تصحيح يعالج الخطأ ويحافظ على الرسمية في الوقت نفسه؟",
+        "stemEs": "Usted trabajas aquí, ¿verdad?",
+        "options": [
+          {
+            "id": "a1_sal_6_a",
+            "text": "¿Usted trabaja aquí?",
+            "textAr": "هل تعمل هنا؟",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_6_b",
+            "text": "¿Tú trabajas aquí?",
+            "textAr": "هل تعمل هنا؟ (غير رسمي)",
+            "isCorrect": false,
+            "distractorRationaleAr": "تصحيح لغوي لكنه يغيّر السجل إلى غير رسمي، ولا يحفظ الرسمية."
+          },
+          {
+            "id": "a1_sal_6_c",
+            "text": "¿Usted trabajar aquí?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصدر لا يصلح فعلًا رئيسيًا هنا؛ الصيغة الصحيحة trabaja."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_6_a"
+          ]
+        },
+        "explanationAr": "القاعدة: usted + الفعل بصيغة الغائب. «Usted trabajas» خلط بين الصيغتين، وهو من أشهر أخطاء المبتدئين العرب لأن العربية لا تُصرّف الفعل مع المخاطب المحترم.",
+        "errorFeedback": {
+          "a1_sal_6_b": "«tú trabajas» صحيحة نحويًا لكنها تُخرج الموقف من الرسمية.",
+          "a1_sal_6_c": "«trabajar» مصدر لا يصلح هنا؛ الصيغة الصحيحة trabaja."
+        },
+        "targetVocab": [
+          "usted"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_7_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الردّ الأنسب في الموقف الرسمي.",
+        "contextAr": "الموظفة تقول لك: «Buenos días, ¿cómo está usted?»",
+        "stemEs": "— Buenos días, ¿cómo está usted?",
+        "stemAr": "— صباح الخير، كيف حالك؟",
+        "options": [
+          {
+            "id": "a1_sal_7_a",
+            "text": "Muy bien, gracias. ¿Y usted?",
+            "textAr": "بخير جدًا، شكرًا. وأنت؟",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_7_b",
+            "text": "Muy bien, gracias, ¿y tú?",
+            "textAr": "بخير، شكرًا، وأنت؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«tú» تكسر الرسمية التي بدأتها الموظفة بـusted."
+          },
+          {
+            "id": "a1_sal_7_c",
+            "text": "Me llamo Omar.",
+            "textAr": "اسمي عمر.",
+            "isCorrect": false,
+            "distractorRationaleAr": "ردّ على سؤال الاسم، لا على سؤال الحال."
+          },
+          {
+            "id": "a1_sal_7_d",
+            "text": "Soy de Egipto.",
+            "textAr": "أنا من مصر.",
+            "isCorrect": false,
+            "distractorRationaleAr": "ردّ على سؤال الأصل، والسؤال هنا عن الحال."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_7_a"
+          ]
+        },
+        "explanationAr": "الرد يتبع سجل السؤال: سؤال بـusted يُجاب بـusted. «¿Y usted?» تعني «وأنت؟» بالرسمية، مقابل «¿Y tú?» غير الرسمية.",
+        "errorFeedback": {
+          "a1_sal_7_b": "احفظ التطابق: usted ⇒ ¿Y usted?",
+          "a1_sal_7_c": "هذا ردّ على «¿Cómo se llama?» لا على سؤال الحال.",
+          "a1_sal_7_d": "هذا ردّ على «¿De dónde es?»."
+        },
+        "targetVocab": [
+          "usted",
+          "¿cómo está usted?"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_8_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تقديم رسمية صحيحة.",
+        "items": [
+          {
+            "id": "a1_sal_t1",
+            "kind": "token",
+            "text": "Encantado"
+          },
+          {
+            "id": "a1_sal_t2",
+            "kind": "token",
+            "text": "señora"
+          },
+          {
+            "id": "a1_sal_t3",
+            "kind": "token",
+            "text": "me"
+          },
+          {
+            "id": "a1_sal_t4",
+            "kind": "token",
+            "text": "llamo"
+          },
+          {
+            "id": "a1_sal_t5",
+            "kind": "token",
+            "text": "Omar"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Encantado, me llamo Omar, señora.",
+            "Encantado, me llamo Omar, señora",
+            "Encantado me llamo Omar señora"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "ترتيب طبيعي: كلمة التحيّة/التشرف أولًا، ثم التعريف بالاسم، ثم لقب المخاطب في النهاية بين فاصلتين. «Encantado» يقولها الرجل، و«Encantada» تقولها المرأة.",
+        "errorFeedback": {
+          "order": "ابدأ بـ«Encantado» ثم «me llamo Omar» ثم لقب المخاطب «señora»."
+        },
+        "targetVocab": [
+          "encantado",
+          "señora"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_9_gender",
+        "type": "word_choice",
+        "instructionAr": "أنتِ امرأة وتعرّفين بنفسك رسميًا لمديرة. أي صيغة مناسبة؟",
+        "options": [
+          {
+            "id": "a1_sal_9_a",
+            "text": "Encantada, señora.",
+            "textAr": "تشرفنا يا سيدة. (المتحدثة امرأة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_sal_9_b",
+            "text": "Encantado, señora.",
+            "textAr": "تشرفنا يا سيدة. (المتحدث رجل)",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدثة امرأة، فالصفة يجب أن تُؤنَّث: encantada."
+          },
+          {
+            "id": "a1_sal_9_c",
+            "text": "Encantada, señor.",
+            "textAr": "تشرفنا يا سيد. (المتحدثة امرأة تخاطب رجلًا)",
+            "isCorrect": false,
+            "distractorRationaleAr": "صحيحة نحويًا لكنها تخاطب رجلًا؛ النص يقول إنك تخاطبين سيدة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_sal_9_a"
+          ]
+        },
+        "explanationAr": "«encantado/encantada» صفة تصف المتحدث لا المخاطب: الرجل يقول «encantado» والمرأة «encantada». الخطأ الشائع أن يتبع الوصفُ جنسَ المخاطَب.",
+        "errorFeedback": {
+          "a1_sal_9_b": "الصفة تتبع جنس المتحدّث: امرأة ⇒ encantada.",
+          "a1_sal_9_c": "اللقب لا يطابق المخاطَب هنا؛ المطلوب مخاطبة سيدة: señora."
+        },
+        "targetVocab": [
+          "encantado",
+          "señora"
+        ],
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_10_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية بصيغة مهذّبة.",
+        "stemAr": "عن إذنك، هل تعمل هنا؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Con permiso, ¿trabaja usted aquí?",
+            "Con permiso, ¿usted trabaja aquí?",
+            "Con permiso, trabaja usted aquí",
+            "Con permiso, ¿trabaja aquí?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«عن إذنك» = Con permiso، ثم سؤال رسمي: ¿trabaja usted aquí? الضمير usted يجوز بعد الفعل أو قبله، والرسمية تُحفظ بالفعل trabaja.",
+        "errorFeedback": {
+          "Con permiso, ¿trabajas aquí?": "«trabajas» غير رسمية؛ استخدم «trabaja».",
+          "Perdón, ¿trabajas aquí?": "«Perdón» للاعتذار عن خطأ؛ للاستئذان بالمرور أو الانصراف نستخدم «Con permiso»."
+        },
+        "targetVocab": [
+          "con permiso",
+          "usted"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_sal_11_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجمل الرسمية بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا.",
+        "stemEs": "Buenos días, señora. Encantado, me llamo Omar. ¿Cómo está usted?",
+        "stemAr": "صباح الخير يا سيدة. تشرفنا، اسمي عمر. كيف حالك؟",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-saludos-11-model-1",
+          "modelAnswer": "Buenos días, señora. Encantado, me llamo Omar. ¿Cómo está usted?"
+        },
+        "explanationAr": "ثبّت النبر: BUEnos DÍas، seÑOra، ¿cómo esTÁ usTED؟ نبرة السؤال ترتفع في النهاية. «ll» في llamo تُنطق قريبة من الياء المشدّدة، لا لامين.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح النبر في está",
+              "weight": 50,
+              "code": "pron_esta"
+            },
+            {
+              "labelAr": "نطق ll في llamo",
+              "weight": 50,
+              "code": "pron_ll"
+            }
+          ]
+        },
+        "targetVocab": [
+          "encantado",
+          "señora",
+          "usted"
+        ],
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس وحدة A1 الأولى (2/4). يحتاج مراجعة إسبانية أصلية: سجل «usted» في سياق المكتب، وطبيعية «Encantado, me llamo Omar» عند تقديم النفس. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي (قرار المصدر والترخيص لم يُتخذ). دون صوت، تعمل التمارين السمعية بنص بديل ظاهر للمتعلم ولا تُحتسب خطأً."
+    }
+  }
+}

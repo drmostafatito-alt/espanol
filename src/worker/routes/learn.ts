@@ -1,0 +1,541 @@
+/* ============================================================================
+   محرك التمارين وحفظ التقدم — الخادم هو المرجع الوحيد
+   ----------------------------------------------------------------------------
+   قواعد غير قابلة للتفاوض:
+   * مفاتيح الإجابة لا تُرسل إلى العميل إطلاقًا (لا في الجلسة ولا في خيارات).
+   * العميل يرسل إجابته فقط. أي `correct` أو `score` أو `xp` أو `passed` في الطلب
+     يُتجاهَل تمامًا — التصحيح والحساب يحدثان هنا.
+   * كل حدث كتابة يحمل `eventId` من العميل، ويُخزَّن كمفتاح فريد ⇒ إعادة الإرسال
+     (شبكة ضعيفة، إعادة محاولة، مزامنة لاحقة) لا تُضاعف المحاولات ولا النقاط.
+   ========================================================================== */
+import type { Env, SessionUser } from '../types';
+import { HttpError, json, readJson } from '../lib/http';
+import { ulid } from '../lib/ids';
+import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
+import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
+
+/** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
+export const XP_PER_LESSON = 30;
+
+const SLUG_RE = /^[a-z0-9-]{3,64}$/;
+const EVENT_ID_RE = /^[A-Za-z0-9_-]{8,64}$/;
+
+interface LessonRow {
+  id: string;
+  slug: string;
+  title_ar: string;
+  level_code: string | null;
+  objective_ar: string;
+  estimated_minutes: number;
+  status: string;
+  unlock_rule_json: string;
+  mastery_criteria_json: string;
+  version_id: string;
+  version_no: number;
+  version_status: string;
+  review_state: string;
+  content_hash: string;
+}
+
+interface ExerciseRow {
+  id: string;
+  type: string;
+  prompt_json: string;
+  answer_key_json: string;
+  explanation_ar: string;
+  error_feedback_json: string;
+  sort_order: number;
+}
+
+function slugFrom(req: Request): string {
+  const parts = new URL(req.url).pathname.split('/');
+  const slug = decodeURIComponent(parts[3] ?? '');
+  if (!SLUG_RE.test(slug)) throw new HttpError(400, 'INVALID_SLUG', 'معرّف الدرس غير صحيح.');
+  return slug;
+}
+
+const allowUnreviewed = allowUnreviewedContent;
+const PROVENANCE = UNREVIEWED_PROVENANCE;
+
+async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
+  const row = await env.DB.prepare(
+    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.objective_ar, l.estimated_minutes, l.status,
+            l.unlock_rule_json, l.mastery_criteria_json, lv.id AS version_id, lv.version_no,
+            lv.status AS version_status, lv.review_state, lv.content_hash
+     FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id
+     WHERE l.slug = ?`,
+  )
+    .bind(slug)
+    .first<LessonRow>();
+
+  if (!row) throw new HttpError(404, 'LESSON_NOT_FOUND', 'هذا الدرس غير متاح.');
+  const published = row.status === 'published' && row.version_status === 'published';
+  if (!published && !allowUnreviewed(env)) {
+    throw new HttpError(404, 'LESSON_NOT_FOUND', 'هذا الدرس غير متاح.');
+  }
+  return row;
+}
+
+/** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية. */
+async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): Promise<void> {
+  let rule: { type?: string; requires?: string[]; minAccuracy?: number };
+  try {
+    rule = JSON.parse(lesson.unlock_rule_json);
+  } catch {
+    return;
+  }
+  if (!rule.requires?.length) return;
+
+  const placeholders = rule.requires.map(() => '?').join(',');
+  const rows = await env.DB.prepare(
+    `SELECT l.slug, COALESCE(p.status, 'not_started') AS status, COALESCE(p.best_accuracy, 0) AS best_accuracy
+     FROM lessons l LEFT JOIN user_lesson_progress p ON p.lesson_id = l.id AND p.user_id = ?
+     WHERE l.slug IN (${placeholders})`,
+  )
+    .bind(user.id, ...rule.requires)
+    .all<{ slug: string; status: string; best_accuracy: number }>();
+
+  const minAccuracy = rule.minAccuracy ?? 0;
+  const missing = rows.results.filter(r => r.status === 'not_started' || r.best_accuracy < minAccuracy);
+  const found = new Set(rows.results.map(r => r.slug));
+  const notFound = rule.requires.filter(s => !found.has(s));
+
+  if (missing.length || notFound.length) {
+    throw new HttpError(403, 'LESSON_LOCKED', 'هذا الدرس مقفل: أكمل الدرس السابق بدقة كافية أولًا.', {
+      requires: rule.requires,
+      minAccuracy,
+      missing: [...missing.map(m => m.slug), ...notFound],
+    });
+  }
+}
+
+function publicPrompt(promptJson: string) {
+  try {
+    const p = JSON.parse(promptJson) as Record<string, unknown>;
+    return {
+      instructionAr: String(p.instructionAr ?? ''),
+      stemEs: (p.stemEs as string | null) ?? null,
+      stemAr: (p.stemAr as string | null) ?? null,
+      audioKey: (p.audioKey as string | null) ?? null,
+      // النص الذي يُنطق احتياطيًا (speechSynthesis) — إسباني دائمًا، ولا يُستنتج من خيارات مشتِّتة
+      speechEs: (p.speechEs as string | null) ?? (p.stemEs as string | null) ?? null,
+    };
+  } catch {
+    return { instructionAr: '', stemEs: null, stemAr: null, audioKey: null, speechEs: null };
+  }
+}
+
+/** جلسة الدرس: بيانات العرض فقط — بلا مفاتيح إجابة ولا خيارات صحيحة */
+export async function lessonSession(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const slug = slugFrom(req);
+  const lesson = await loadLesson(env, slug);
+  await assertUnlocked(env, user, lesson);
+
+  const exercises = await env.DB.prepare(
+    `SELECT id, type, prompt_json, answer_key_json, explanation_ar, error_feedback_json, sort_order
+     FROM exercises WHERE lesson_version_id = ? ORDER BY sort_order`,
+  )
+    .bind(lesson.version_id)
+    .all<ExerciseRow>();
+
+  const options = await env.DB.prepare(
+    `SELECT o.id, o.exercise_id, o.text, o.sort_order FROM exercise_options o
+     JOIN exercises e ON e.id = o.exercise_id WHERE e.lesson_version_id = ? ORDER BY o.sort_order`,
+  )
+    .bind(lesson.version_id)
+    .all<{ id: string; exercise_id: string; text: string; sort_order: number }>();
+
+  const items = await env.DB.prepare(
+    `SELECT i.id, i.exercise_id, i.payload_json, i.ordinal FROM exercise_items i
+     JOIN exercises e ON e.id = i.exercise_id WHERE e.lesson_version_id = ? ORDER BY i.ordinal`,
+  )
+    .bind(lesson.version_id)
+    .all<{ id: string; exercise_id: string; payload_json: string; ordinal: number }>();
+
+  const progress = await env.DB.prepare(
+    `SELECT status, best_accuracy, attempts_count, completed_at FROM user_lesson_progress
+     WHERE user_id = ? AND lesson_id = ?`,
+  )
+    .bind(user.id, lesson.id)
+    .first<{ status: string; best_accuracy: number; attempts_count: number; completed_at: string | null }>();
+
+  const optsByExercise = new Map<string, { id: string; text: string }[]>();
+  for (const o of options.results) {
+    if (!optsByExercise.has(o.exercise_id)) optsByExercise.set(o.exercise_id, []);
+    optsByExercise.get(o.exercise_id)!.push({ id: o.id, text: o.text });
+  }
+  const itemsByExercise = new Map<string, { id: string; text: string }[]>();
+  for (const it of items.results) {
+    if (!itemsByExercise.has(it.exercise_id)) itemsByExercise.set(it.exercise_id, []);
+    let text = '';
+    try {
+      text = String((JSON.parse(it.payload_json) as { text?: string }).text ?? '');
+    } catch { /* عنصر تالف لا يكسر الجلسة */ }
+    itemsByExercise.get(it.exercise_id)!.push({ id: it.id, text });
+  }
+
+  return json(
+    {
+      lesson: {
+        slug: lesson.slug,
+        titleAr: lesson.title_ar,
+        level: lesson.level_code,
+        objectiveAr: lesson.objective_ar,
+        estimatedMinutes: lesson.estimated_minutes,
+        versionId: lesson.version_id,
+        versionNo: lesson.version_no,
+        contentHash: lesson.content_hash,
+        ...(lesson.status === 'published' ? {} : { provenance: PROVENANCE }),
+      },
+      exercises: exercises.results.map(e => {
+        const prompt = publicPrompt(e.prompt_json);
+        const opts = optsByExercise.get(e.id) ?? [];
+        // نص النطق الاحتياطي: إن لم يُحدّده المحتوى صراحةً، يستخدمه الخادم من نص
+        // الإجابة الصحيحة — لا من أول خيار (قد يكون مشتِّتًا فيُنطق نص خاطئ).
+        let speechEs = prompt.speechEs;
+        if (prompt.audioKey && !speechEs) {
+          const key = safeParse<AnswerKey>(e.answer_key_json);
+          const correctId = key?.correctOptionIds?.[0];
+          speechEs = opts.find(o => o.id === correctId)?.text ?? key?.accepted?.[0] ?? null;
+        }
+        return {
+          id: e.id,
+          type: e.type,
+          mode: gradingModeOf(e.type),
+          hasGrader: gradingModeOf(e.type) === 'graded',
+          ...prompt,
+          speechEs,
+          options: opts,
+          items: itemsByExercise.get(e.id) ?? [],
+        };
+      }),
+      progress: progress ?? { status: 'not_started', best_accuracy: 0, attempts_count: 0, completed_at: null },
+      xpPerLesson: XP_PER_LESSON,
+    },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+
+/**
+ * إرسال إجابة واحدة.
+ * الحقول المقبولة: eventId, exerciseId, response, durationMs.
+ * أي حقل آخر (correct/score/xp/passed) يُهمَل.
+ */
+export async function submitAnswer(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const slug = slugFrom(req);
+  const lesson = await loadLesson(env, slug);
+  await assertUnlocked(env, user, lesson);
+
+  const body = await readJson<{ eventId?: string; exerciseId?: string; response?: unknown; durationMs?: number }>(req);
+  const eventId = typeof body.eventId === 'string' ? body.eventId : '';
+  const exerciseId = typeof body.exerciseId === 'string' ? body.exerciseId : '';
+  if (!EVENT_ID_RE.test(eventId)) throw new HttpError(400, 'INVALID_EVENT_ID', 'معرّف الحدث غير صحيح.');
+  if (!exerciseId) throw new HttpError(400, 'INVALID_EXERCISE', 'معرّف التمرين مطلوب.');
+
+  const ex = await env.DB.prepare(
+    `SELECT id, type, answer_key_json, explanation_ar, error_feedback_json
+     FROM exercises WHERE id = ? AND lesson_version_id = ?`,
+  )
+    .bind(exerciseId, lesson.version_id)
+    .first<ExerciseRow>();
+  if (!ex) throw new HttpError(404, 'EXERCISE_NOT_FOUND', 'هذا التمرين لا ينتمي إلى هذا الدرس.');
+
+  // إعادة إرسال نفس الحدث ⇒ نُعيد النتيجة المخزَّنة، بلا محاولة جديدة ولا نقاط
+  const existing = await env.DB.prepare(
+    `SELECT answer_json, is_correct, score, server_recorded_at FROM user_exercise_attempts
+     WHERE client_event_id = ? AND user_id = ?`,
+  )
+    .bind(eventId, user.id)
+    .first<{ answer_json: string; is_correct: number; score: number; server_recorded_at: string }>();
+
+  if (existing) {
+    const replay = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), safeParse(existing.answer_json), safeParse(ex.error_feedback_json));
+    return json(
+      {
+        replay: true,
+        correct: existing.is_correct === 1,
+        score: existing.score,
+        mode: replay.mode,
+        explanationAr: ex.explanation_ar,
+        feedbackAr: replay.chosenFeedbackAr ?? null,
+        recordedAt: existing.server_recorded_at,
+      },
+      {},
+      requestId,
+    );
+  }
+
+  const result = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), body.response, safeParse(ex.error_feedback_json));
+
+  await env.DB.prepare(
+    `INSERT INTO user_exercise_attempts
+       (id, client_event_id, user_id, lesson_id, lesson_version_id, exercise_id, is_correct, score, answer_json,
+        duration_ms, source, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'online', ?)`,
+  )
+    .bind(
+      ulid().toLowerCase(),
+      eventId,
+      user.id,
+      lesson.id,
+      lesson.version_id,
+      exerciseId,
+      result.correct === true ? 1 : 0,
+      result.score ?? 0,
+      JSON.stringify(body.response ?? null),
+      Number.isFinite(Number(body.durationMs)) ? Math.max(0, Math.min(600_000, Number(body.durationMs))) : null,
+      new Date().toISOString(),
+    )
+    .run();
+
+  await env.DB.prepare(
+    `INSERT INTO user_lesson_progress (user_id, lesson_id, lesson_version_id, status, attempts_count, last_activity_at)
+     VALUES (?, ?, ?, 'in_progress', 1, strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+     ON CONFLICT(user_id, lesson_id) DO UPDATE SET
+       attempts_count = attempts_count + 1,
+       last_activity_at = strftime('%Y-%m-%dT%H:%M:%fZ','now')`,
+  )
+    .bind(user.id, lesson.id, lesson.version_id)
+    .run();
+
+  return json(
+    {
+      replay: false,
+      correct: result.correct,
+      score: result.score,
+      mode: result.mode,
+      explanationAr: ex.explanation_ar,
+      feedbackAr: result.chosenFeedbackAr ?? null,
+    },
+    {},
+    requestId,
+  );
+}
+
+interface MasteryCriteria {
+  minAccuracy?: number;
+  minCorrectExercises?: number;
+}
+
+/** إكمال الدرس: كل الحساب من محاولات مخزَّنة في القاعدة، لا من العميل */
+export async function completeLesson(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const slug = slugFrom(req);
+  const lesson = await loadLesson(env, slug);
+  await assertUnlocked(env, user, lesson);
+
+  const body = await readJson<{ eventId?: string }>(req);
+  const eventId = typeof body.eventId === 'string' ? body.eventId : '';
+  if (!EVENT_ID_RE.test(eventId)) throw new HttpError(400, 'INVALID_EVENT_ID', 'معرّف الحدث غير صحيح.');
+
+  const exercises = await env.DB.prepare(
+    `SELECT id, type FROM exercises WHERE lesson_version_id = ?`,
+  )
+    .bind(lesson.version_id)
+    .all<{ id: string; type: string }>();
+
+  const graded = exercises.results.filter(e => gradingModeOf(e.type) === 'graded');
+  const gradedIds = new Set(graded.map(e => e.id));
+  const requiredTypes = (safeParse<{ requiredExerciseTypes?: string[] }>(lesson.mastery_criteria_json)).requiredExerciseTypes ?? [];
+  const missingRequiredTypes = requiredTypes.filter(t => !exercises.results.some(e => e.type === t));
+
+  const attempts = await env.DB.prepare(
+    `SELECT exercise_id, is_correct FROM user_exercise_attempts
+     WHERE user_id = ? AND lesson_version_id = ? AND exercise_id IN (${[...gradedIds].map(() => '?').join(',') || "''"})`,
+  )
+    .bind(user.id, lesson.version_id, ...gradedIds)
+    .all<{ exercise_id: string; is_correct: number }>();
+
+  const solved = new Set(attempts.results.filter(a => a.is_correct === 1).map(a => a.exercise_id));
+  const answered = new Set(attempts.results.map(a => a.exercise_id));
+  const correctCount = solved.size;
+  const gradedTotal = graded.length;
+  const accuracy = gradedTotal ? Math.round((correctCount / gradedTotal) * 100) : 0;
+
+  const criteria = safeParse<MasteryCriteria>(lesson.mastery_criteria_json);
+  const minAccuracy = criteria.minAccuracy ?? 80;
+  const minCorrect = criteria.minCorrectExercises ?? 0;
+  const passed = gradedTotal > 0 && accuracy >= minAccuracy && correctCount >= minCorrect && missingRequiredTypes.length === 0;
+
+  // منع الاحتساب المزدوج: XP مرة واحدة لكل درس في حياة الحساب
+  const prior = await env.DB.prepare(
+    `SELECT status FROM user_lesson_progress WHERE user_id = ? AND lesson_id = ?`,
+  )
+    .bind(user.id, lesson.id)
+    .first<{ status: string }>();
+  const alreadyCompleted = prior?.status === 'completed';
+
+  // سجل الحدث بمفتاح فريد: تكرار نفس eventId لا يضيف شيئًا
+  const eventKey = `${user.id}:lesson_complete:${lesson.id}:${eventId}`;
+  const insertedEvent = await env.DB.prepare(
+    `INSERT INTO learning_events (id, user_id, type, payload_json, content_version_id, idempotency_key, occurred_at)
+     VALUES (?, ?, 'lesson_completed', ?, ?, ?, ?)
+     ON CONFLICT(idempotency_key) DO NOTHING`,
+  )
+    .bind(ulid().toLowerCase(), user.id, JSON.stringify({ accuracy, correctCount, gradedTotal, passed }), lesson.version_id, eventKey, new Date().toISOString())
+    .run();
+  const replay = (insertedEvent.meta?.changes ?? 0) === 0;
+
+  let xpAwarded = 0;
+  if (passed && !alreadyCompleted && !replay) {
+    const xpKey = `${user.id}:xp:lesson_complete:${lesson.id}`;
+    const xpInsert = await env.DB.prepare(
+      `INSERT INTO xp_ledger (id, user_id, amount, reason, ref_type, ref_id, idempotency_key)
+       VALUES (?, ?, ?, 'lesson_complete', 'lesson', ?, ?)
+       ON CONFLICT(idempotency_key) DO NOTHING`,
+    )
+      .bind(ulid().toLowerCase(), user.id, XP_PER_LESSON, lesson.id, xpKey)
+      .run();
+    if ((xpInsert.meta?.changes ?? 0) > 0) xpAwarded = XP_PER_LESSON;
+  }
+
+  await env.DB.prepare(
+    `INSERT INTO user_lesson_progress (user_id, lesson_id, lesson_version_id, status, best_accuracy, attempts_count, completed_at, last_activity_at)
+     VALUES (?, ?, ?, ?, ?, 0, ?, strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+     ON CONFLICT(user_id, lesson_id) DO UPDATE SET
+       status = CASE WHEN excluded.status = 'completed' THEN 'completed' ELSE user_lesson_progress.status END,
+       best_accuracy = MAX(user_lesson_progress.best_accuracy, excluded.best_accuracy),
+       completed_at = COALESCE(user_lesson_progress.completed_at, excluded.completed_at),
+       last_activity_at = strftime('%Y-%m-%dT%H:%M:%fZ','now')`,
+  )
+    .bind(
+      user.id,
+      lesson.id,
+      lesson.version_id,
+      passed ? 'completed' : 'in_progress',
+      accuracy,
+      passed ? new Date().toISOString() : null,
+    )
+    .run();
+
+  // XP الإجمالي يُحسب من السجل دائمًا — لا عدّاد يمكن أن ينحرف
+  await env.DB.prepare(
+    `UPDATE user_stats SET xp_total = (SELECT COALESCE(SUM(amount),0) FROM xp_ledger WHERE user_id = ?),
+            updated_at = strftime('%Y-%m-%dT%H:%M:%fZ','now') WHERE user_id = ?`,
+  )
+    .bind(user.id, user.id)
+    .run();
+
+  // بطاقات مراجعة للمفردات المرتبطة بالدرس — تُنشأ مرة واحدة فقط (ON CONFLICT DO NOTHING)
+  const cardsCreated = await createCardsForLesson(env, user.id, lesson.id);
+
+  const stats = await env.DB.prepare(`SELECT xp_total FROM user_stats WHERE user_id = ?`)
+    .bind(user.id)
+    .first<{ xp_total: number }>();
+
+  return json(
+    {
+      replay,
+      passed,
+      accuracy,
+      correctCount,
+      gradedTotal,
+      answeredCount: answered.size,
+      minAccuracy,
+      minCorrectExercises: minCorrect,
+      missingRequiredTypes,
+      participantOnly: exercises.results.length - gradedTotal,
+      reviewCardsCreated: cardsCreated,
+      xpAwarded,
+      xpTotal: stats?.xp_total ?? 0,
+      alreadyCompleted,
+    },
+    {},
+    requestId,
+  );
+}
+
+
+/**
+ * يُنشئ بطاقات مراجعة للمفردات المرتبطة بالدرس (lesson_vocabulary).
+ * لا يُنشئ بطاقة «استماع»: لا صوت معتمد بعد، والبطاقة التي لا يمكن أداؤها ليست تدريبًا.
+ * التكرار آمن: ON CONFLICT DO NOTHING على (user_id, item_type, item_id).
+ */
+async function createCardsForLesson(env: Env, userId: string, lessonId: string): Promise<number> {
+  try {
+    const rows = await env.DB.prepare(
+      `SELECT lv.entry_id FROM lesson_vocabulary lv WHERE lv.lesson_id = ?`,
+    )
+      .bind(lessonId)
+      .all<{ entry_id: string }>();
+    if (!rows.results.length) return 0;
+
+    const now = new Date().toISOString();
+    let created = 0;
+    for (const r of rows.results) {
+      const res = await env.DB.prepare(
+        `INSERT INTO review_schedule
+           (user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at,
+            card_kind, state, scheduler_version, created_at, origin_ref)
+         VALUES (?, 'vocab', ?, 2.5, 0, 0, 0, ?, 'recognition', 'new', 1, ?, ?)
+         ON CONFLICT(user_id, item_type, item_id) DO NOTHING`,
+      )
+        .bind(userId, r.entry_id, now, now, `lesson:${lessonId}`)
+        .run();
+      if (Number(res.meta?.changes ?? 0) > 0) created++;
+    }
+    if (created > 0) {
+      await env.DB.prepare(
+        `UPDATE user_stats SET words_seen = (SELECT COUNT(*) FROM review_schedule WHERE user_id = ? AND item_type = 'vocab'),
+                updated_at = strftime('%Y-%m-%dT%H:%M:%fZ','now') WHERE user_id = ?`,
+      )
+        .bind(userId, userId)
+        .run();
+    }
+    return created;
+  } catch {
+    // فشل توليد البطاقات لا يُسقط نجاح الدرس: التقدم محفوظ، والبطاقات تُستكمل لاحقًا
+    return 0;
+  }
+}
+
+/** لوحة التقدم: كل رقم هنا من القاعدة، لا رقم محسوب في المتصفح */
+export async function myProgress(_req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const stats = await env.DB.prepare(
+    `SELECT xp_total, minutes_total, streak_current, streak_longest, reviews_done, words_seen, words_stable
+     FROM user_stats WHERE user_id = ?`,
+  )
+    .bind(user.id)
+    .first<Record<string, number>>();
+
+  const lessons = await env.DB.prepare(
+    `SELECT l.slug, l.title_ar, l.level_code, l.status,
+            COALESCE(p.status, 'not_started') AS progress_status,
+            COALESCE(p.best_accuracy, 0) AS best_accuracy,
+            p.completed_at
+     FROM lessons l
+     LEFT JOIN user_lesson_progress p ON p.lesson_id = l.id AND p.user_id = ?
+     ORDER BY l.level_code, l.sort_order`,
+  )
+    .bind(user.id)
+    .all<Record<string, unknown>>();
+
+  const activeStatuses = allowUnreviewed(env) ? "('published','draft')" : "('published')";
+  const totals = await env.DB.prepare(
+    `SELECT (SELECT COUNT(*) FROM lessons WHERE status IN ${activeStatuses}) AS lessons_total,
+            (SELECT COUNT(*) FROM user_lesson_progress p JOIN lessons l ON l.id = p.lesson_id
+              WHERE p.user_id = ? AND p.status = 'completed' AND l.status IN ${activeStatuses}) AS lessons_completed`,
+  )
+    .bind(user.id)
+    .first<{ lessons_total: number; lessons_completed: number }>();
+
+  return json(
+    {
+      stats: stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 },
+      lessons: lessons.results,
+      totals: totals ?? { lessons_total: 0, lessons_completed: 0 },
+      contentProvenance: allowUnreviewed(env) ? PROVENANCE : null,
+    },
+    {},
+    requestId,
+  );
+}
+
+function safeParse<T = Record<string, unknown>>(raw: string | null | undefined): T {
+  if (!raw) return {} as T;
+  try {
+    return JSON.parse(raw) as T;
+  } catch {
+    return {} as T;
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u2-checkin",
+    "titleAr": "تسجيل الدخول إلى الفندق",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u2-hotel",
+    "objectiveAr": "أن يقدّم المتعلم حجزه وجواز سفره عند الاستقبال، ويسأل عن الإفطار والمفتاح والواي فاي.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "llave",
+      "desayuno"
+    ],
+    "reviewVocabulary": [
+      "reserva",
+      "pasaporte",
+      "habitación doble"
+    ],
+    "targetStructures": [
+      "Tengo una reserva a nombre de…",
+      "¿A qué hora es el desayuno?",
+      "¿Hay wifi?"
+    ],
+    "grammarTopics": [
+      "presentar-reserva",
+      "preguntas-en-recepcion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تصل إلى الفندق مساءً وتقدّم حجزك.",
+        "settingAr": "مكتب الاستقبال، الساعة الثامنة مساءً",
+        "lines": [
+          {
+            "es": "Buenas noches, ¿tiene una reserva?",
+            "ar": "مساء الخير، هل لديك حجز؟",
+            "arEg": "مساء الخير، عندك حجز؟",
+            "audioKey": "pending/tr-u2-l2-recep-1"
+          },
+          {
+            "es": "Sí, a nombre de Omar Hassan, para tres noches.",
+            "ar": "نعم، باسم عمر حسن، لثلاث ليالٍ.",
+            "arEg": "أيوة، باسم عمر حسن، تلات ليالي.",
+            "audioKey": "pending/tr-u2-l2-omar-1"
+          },
+          {
+            "es": "Perfecto. Aquí tiene su llave. El desayuno es de siete a diez.",
+            "ar": "تمام. تفضل مفتاحك. الفطور من السابعة إلى العاشرة.",
+            "arEg": "تمام. اتفضل مفتاحك. الفطار من سبعة لعشرة.",
+            "audioKey": "pending/tr-u2-l2-recep-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u2_5_name",
+        "type": "fill_blank",
+        "instructionAr": "أكمل بتركيب الحجز باسمك.",
+        "stemEs": "Tengo una reserva a ____ de Omar Hassan.",
+        "stemAr": "عندي حجز باسم عمر حسن.",
+        "answerKey": {
+          "accepted": [
+            "nombre"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«a nombre de» تركيب ثابت = باسم. لا نستخدم «con el nombre» في هذا السياق.",
+        "errorFeedback": {
+          "name": "لا تستخدم اسمًا إنجليزيًا؛ الصيغة الإسبانية: a nombre de.",
+          "nombres": "المفرد nombre في التركيب الثابت."
+        },
+        "targetVocab": [
+          "reserva"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_6_time",
+        "type": "word_choice",
+        "instructionAr": "الفطور من السابعة إلى العاشرة. أي جملة هي الصيغة المعتادة في جداول الفندق؟",
+        "options": [
+          {
+            "id": "tr_u2_6_a",
+            "text": "El desayuno es de siete a diez.",
+            "isCorrect": true,
+            "textAr": "الفطور من السابعة إلى العاشرة."
+          },
+          {
+            "id": "tr_u2_6_b",
+            "text": "El desayuno es desde siete hasta diez.",
+            "isCorrect": false,
+            "textAr": "الفطور من السابعة حتى العاشرة.",
+            "distractorRationaleAr": "«desde… hasta» مقبولة لكنها أقل شيوعًا في الجداول اليومية؛ «de… a…» هي الصيغة المعتادة."
+          },
+          {
+            "id": "tr_u2_6_c",
+            "text": "El desayuno es en siete y diez.",
+            "isCorrect": false,
+            "textAr": "الفطور في السابعة وعشر دقائق.",
+            "distractorRationaleAr": "معناها وقت محدد 7:10 ولا تعبّر عن فترة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_6_a"
+          ]
+        },
+        "explanationAr": "للجداول اليومية: «de + ساعة + a + ساعة». أما «en» فتفيد وقتًا محددًا لا فترة.",
+        "errorFeedback": {
+          "tr_u2_6_b": "صحيحة لكن أقل طبيعية في جداول الفندق.",
+          "tr_u2_6_c": "هذا وقت 7:10 وليس فترة."
+        },
+        "targetVocab": [
+          "desayuno"
+        ],
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_7_wifi",
+        "type": "choose_reply",
+        "instructionAr": "اختر السؤال الأنسب عن الواي فاي.",
+        "stemEs": "— Aquí tiene su llave.",
+        "stemAr": "— تفضل مفتاحك.",
+        "options": [
+          {
+            "id": "tr_u2_7_a",
+            "text": "Gracias. ¿Hay wifi en la habitación?",
+            "isCorrect": true,
+            "textAr": "شكرًا. هل يوجد واي فاي في الغرفة؟"
+          },
+          {
+            "id": "tr_u2_7_b",
+            "text": "¿Dónde está la wifi?",
+            "isCorrect": false,
+            "textAr": "أين الواي فاي؟",
+            "distractorRationaleAr": "سؤال مكان العدة، لا توفّر الخدمة."
+          },
+          {
+            "id": "tr_u2_7_c",
+            "text": "Quiero wifi.",
+            "isCorrect": false,
+            "textAr": "أريد واي فاي.",
+            "distractorRationaleAr": "صيغة طلب مباشرة بلا سؤال عن التوفّر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_7_a"
+          ]
+        },
+        "explanationAr": "¿Hay…? = هل يوجد…؟ وهي أنسب صيغة للسؤال عن توفّر خدمة.",
+        "errorFeedback": {
+          "tr_u2_7_b": "اسأل أولًا: ¿Hay wifi?",
+          "tr_u2_7_c": "أضف سؤالًا مهذبًا بدل الأمر."
+        },
+        "targetVocab": [
+          "llave"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_8_fix",
+        "type": "find_fix_error",
+        "instructionAr": "أي جملة صحيحة ومهذبة في طلب مفتاح بديل؟",
+        "stemEs": "Quiero la llave otra vez, porque no funciona.",
+        "options": [
+          {
+            "id": "tr_u2_8_a",
+            "text": "Disculpe, mi llave no funciona. ¿Me da otra, por favor?",
+            "isCorrect": true,
+            "textAr": "عفوًا، مفتاحي لا يعمل. هل تعطيني آخر من فضلك؟"
+          },
+          {
+            "id": "tr_u2_8_b",
+            "text": "La llave no funciona. Dame otra ya.",
+            "isCorrect": false,
+            "distractorRationaleAr": "نبرة آمرة بلا لباقة («ya»)."
+          },
+          {
+            "id": "tr_u2_8_c",
+            "text": "Mi llave es roto.",
+            "isCorrect": false,
+            "textAr": "مفتاحي مكسور.",
+            "distractorRationaleAr": "الصيغة صحيحة أخرى: está rota؛ «es roto» خطأ في الفعل والجنس."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_8_a"
+          ]
+        },
+        "explanationAr": "«no funciona» = لا يعمل (لجهاز/مفتاح). واللباقة: Disculpe + الطلب بصيغة سؤال + por favor.",
+        "errorFeedback": {
+          "tr_u2_8_b": "أضف «Disculpe» و«¿Me da…?» بلا «ya».",
+          "tr_u2_8_c": "الحالة تكون بـestar: está rota."
+        },
+        "targetVocab": [
+          "llave"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الفندق 2/4. يحتاج مراجعة إسبانية أصلية لصيغ الاستقبال والصيغة «¿Me da otra?». كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

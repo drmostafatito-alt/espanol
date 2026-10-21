@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u1-hold-transfer",
+    "titleAr": "التعليق والتحويل بلباقة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u1-opening-verification",
+    "objectiveAr": "أن يطلب المتعلم من العميل الانتظار أو يحوّله إلى زميل، مع شرح السبب وتقدير الوقت، والعودة بالشكر والملخص.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "transferir",
+      "compañero",
+      "plazo"
+    ],
+    "reviewVocabulary": [
+      "comprobar",
+      "pedido",
+      "cliente"
+    ],
+    "targetStructures": [
+      "¿Me permite un momento, por favor?",
+      "Le transfiero con mi compañero.",
+      "Gracias por esperar."
+    ],
+    "grammarTopics": [
+      "pedir-espera",
+      "transferencia-de-mcacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تحتاج إلى التحقق من النظام ثم تحويل العميل إلى قسم الشحن.",
+        "settingAr": "مركز اتصال، أثناء مكالمة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "¿Me permite un momento, por favor? Voy a comprobar el estado del envío.",
+            "ar": "هل تسمح لي بلحظة من فضلك؟ سأتحقق من حالة الشحنة.",
+            "arEg": "تسمح لي لحظة لو سمحت؟ هتأكد من حالة الشحنة.",
+            "audioKey": "pending/cc-u1-l3-agente-1"
+          },
+          {
+            "es": "Sí, pero no tarde, por favor.",
+            "ar": "نعم، لكن لا تتأخر من فضلك.",
+            "arEg": "أيوة، بس متتأخرش لو سمحت.",
+            "audioKey": "pending/cc-u1-l3-cliente-1"
+          },
+          {
+            "es": "Gracias por esperar. Le transfiero con mi compañera del departamento de envíos.",
+            "ar": "شكرًا على الانتظار. سأحوّلك إلى زميلتي في قسم الشحن.",
+            "arEg": "شكرًا على استنائك. هحوّلك لزميلتي في قسم الشحن.",
+            "audioKey": "pending/cc-u1-l3-agente-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u1_10_hold",
+        "type": "choose_reply",
+        "instructionAr": "تحتاج وقتًا للتحقق. اختر الصيغة المهنية.",
+        "stemEs": "— Quiero saber el estado de mi pedido ahora.",
+        "stemAr": "— أريد معرفة حالة طلبي الآن.",
+        "options": [
+          {
+            "id": "cc_u1_10_a",
+            "text": "Por supuesto. ¿Me permite un momento, por favor? Voy a comprobarlo.",
+            "isCorrect": true,
+            "textAr": "بالتأكيد. هل تسمح لي بلحظة؟ سأتحقق منه."
+          },
+          {
+            "id": "cc_u1_10_b",
+            "text": "Espere.",
+            "isCorrect": false,
+            "textAr": "انتظر.",
+            "distractorRationaleAr": "أمر جاف بلا تحديد مدة أو سبب."
+          },
+          {
+            "id": "cc_u1_10_c",
+            "text": "No puedo ahora.",
+            "isCorrect": false,
+            "textAr": "لا أستطيع الآن.",
+            "distractorRationaleAr": "رفض بلا حل أو بديل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_10_a"
+          ]
+        },
+        "explanationAr": "طلب الانتظار يشرح السبب ويحدد المهمة: ¿Me permite un momento? Voy a comprobarlo.",
+        "errorFeedback": {
+          "cc_u1_10_b": "أضف سببًا ومدة: «Voy a comprobar…».",
+          "cc_u1_10_c": "قدّم بديلًا أو وقتًا متوقعًا."
+        },
+        "targetVocab": [
+          "comprobar"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_11_transfer",
+        "type": "fill_blank",
+        "instructionAr": "أكمل فعل التحويل مع usted.",
+        "stemEs": "Le ____ con mi compañera del departamento de envíos.",
+        "stemAr": "سأحوّلك إلى زميلتي في قسم الشحن.",
+        "answerKey": {
+          "accepted": [
+            "transfiero",
+            "paso"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Le transfiero con…» أو «Le paso con…» تعبيران مهنيان ثابتان. الفاعل أنا ⇒ transfiero/paso.",
+        "errorFeedback": {
+          "transfiero a": "لا نضيف «a» قبل الشخص بعد «con» في هذا التعبير.",
+          "transfiere": "«transfiere» للغائب؛ المتحدث أنا ⇒ transfiero."
+        },
+        "targetVocab": [
+          "transferir",
+          "compañero"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_12_afterhold",
+        "type": "word_choice",
+        "instructionAr": "بعد الانتظار، أي عبارة تفتتح عودتك؟",
+        "options": [
+          {
+            "id": "cc_u1_12_a",
+            "text": "Gracias por esperar. He comprobado el pedido y sale mañana.",
+            "isCorrect": true,
+            "textAr": "شكرًا على الانتظار. تحققت من الطلب وسيخرج غدًا."
+          },
+          {
+            "id": "cc_u1_12_b",
+            "text": "Ya está.",
+            "isCorrect": false,
+            "textAr": "انتهى.",
+            "distractorRationaleAr": "مبتورة وتنتهك توقع العميل بشرح."
+          },
+          {
+            "id": "cc_u1_12_c",
+            "text": "¿Qué quería usted?",
+            "isCorrect": false,
+            "textAr": "ماذا أردت؟",
+            "distractorRationaleAr": "تُعامِل العميل كأنه مبتدئ، وتنسى ما قاله."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_12_a"
+          ]
+        },
+        "explanationAr": "قاعدة العودة: شكر على الانتظار + ملخص سريع + نتيجة + خطوة تالية.",
+        "errorFeedback": {
+          "cc_u1_12_b": "أضف النتيجة والخطوة التالية.",
+          "cc_u1_12_c": "لا تعِد السؤال عن طلب سبق ذكره."
+        },
+        "targetVocab": [
+          "plazo"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_13_phone",
+        "type": "phone_call_response",
+        "instructionAr": "استمع/اقرأ حالة العميل ثم سجّل ردّك. تمرين مشاركة لا يُصحَّح آليًا.",
+        "contextAr": "العميل يريد التحويل الآن، وزميلك غير متاح قبل عشر دقائق.",
+        "stemEs": "Cliente: No, no quiero esperar diez minutos. Transférieme ahora.",
+        "answerKey": {
+          "modelAnswer": "Entiendo su prisa. Mi compañera está en otra llamada y estará disponible en diez minutos. ¿Prefiere que le llame ella o que anote su número y le devolvamos la llamada?",
+          "acceptableVariants": [
+            "Comprendo su urgencia. En este momento no es posible la transferencia; puedo anotar su número y llamarle en diez minutos.",
+            "Disculpe la espera. Voy a anotar su caso para que mi compañera le llame en cuanto termine."
+          ]
+        },
+        "explanationAr": "لا نَعِد بما لا نملكه. نعطي بديلين واضحين: اتصال من الزميلة أو معاودة الاتصال، مع تسجيل الرقم (بموافقة العميل).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الافتتاح والتحية المهنية",
+              "weight": 25,
+              "code": "opening"
+            },
+            {
+              "labelAr": "طلب البيانات بلباقة بدل افتراضها",
+              "weight": 25,
+              "code": "verification"
+            },
+            {
+              "labelAr": "وضوح الحل وخطواته",
+              "weight": 25,
+              "code": "solution"
+            },
+            {
+              "labelAr": "الإغلاق والشكر",
+              "weight": 25,
+              "code": "closing"
+            }
+          ]
+        },
+        "targetVocab": [
+          "transferir",
+          "compañero"
+        ],
+        "skills": [
+          "speaking",
+          "listening"
+        ],
+        "difficulty": 3
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر 3/4. يحتاج مراجعة بشرية لأزمنة الانتظار الواقعية وسياسة معاودة الاتصال. كل المقاطع الصوتية pending ولم يُنتج أي ملف. بيانات العملاء وهمية."
+    }
+  }
+}

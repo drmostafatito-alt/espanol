@@ -1,0 +1,5 @@
+# Worker قياس فقط — لا قاعدة بيانات، لا أسرار، لا نشر (workers_dev = false).
+name = "kdf-bench"
+main = "bench-worker.ts"
+compatibility_date = "2024-11-01"
+workers_dev = false

@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "exercise.schema.json",
+  "title": "تمرين — Español بالعربي",
+  "$defs": {
+    "typeCode": {
+      "type": "string",
+      "enum": [
+        "image_choice",
+        "word_choice",
+        "fill_blank",
+        "listen_choose",
+        "match_pairs",
+        "word_order",
+        "dialogue_order",
+        "distinguish_similar",
+        "type_missing_word",
+        "write_sentence",
+        "translate_short",
+        "identify_speaker",
+        "choose_reply",
+        "find_fix_error",
+        "conjugate_in_context",
+        "preposition_choice",
+        "reconstruct_audio_sentence",
+        "dictation",
+        "speak_with_text",
+        "speak_free",
+        "roleplay_simulation",
+        "phone_call_response",
+        "resolve_customer_issue",
+        "write_email",
+        "summarize_dialogue",
+        "infer_meaning",
+        "recall_previous_word",
+        "review_common_errors"
+      ]
+    },
+    "option": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "textAr": {
+          "type": "string"
+        },
+        "imageKey": {
+          "type": "string"
+        },
+        "audioKey": {
+          "type": "string"
+        },
+        "isCorrect": {
+          "type": "boolean"
+        },
+        "distractorRationaleAr": {
+          "type": "string",
+          "minLength": 4
+        }
+      },
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "blank",
+            "token",
+            "segment",
+            "pair",
+            "slot",
+            "line"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "textAr": {
+          "type": "string"
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rubricCriterion": {
+      "type": "object",
+      "required": [
+        "code",
+        "labelAr",
+        "weight"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 3
+        },
+        "labelAr": {
+          "type": "string",
+          "minLength": 4
+        },
+        "weight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "descriptionAr": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "exercise": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "instructionAr",
+        "answerKey",
+        "explanationAr",
+        "skills",
+        "difficulty",
+        "scoring"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "type": {
+          "$ref": "#/$defs/typeCode"
+        },
+        "instructionAr": {
+          "type": "string",
+          "minLength": 8
+        },
+        "contextAr": {
+          "type": "string"
+        },
+        "stemEs": {
+          "type": "string"
+        },
+        "stemAr": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/option"
+          }
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "answerKey": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "explanationAr": {
+          "type": "string",
+          "minLength": 20
+        },
+        "errorFeedback": {
+          "type": "object"
+        },
+        "skills": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/skill"
+          }
+        },
+        "difficulty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "audioKey": {
+          "type": "string"
+        },
+        "imageKey": {
+          "type": "string"
+        },
+        "targetVocab": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scoring": {
+          "type": "object",
+          "required": [
+            "mode"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "all_or_nothing",
+                "per_item",
+                "rubric"
+              ]
+            },
+            "rubric": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/rubricCriterion"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "speechEs": {
+          "type": "string",
+          "minLength": 2,
+          "description": "النص الإسباني الذي يُنطق احتياطيًا عبر speechSynthesis عند غياب الملف الصوتي. إسباني دائمًا."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$ref": "#/$defs/exercise"
+}

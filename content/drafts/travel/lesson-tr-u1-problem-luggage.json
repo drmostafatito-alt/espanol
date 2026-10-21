@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u1-problem-luggage",
+    "titleAr": "مشكلة أمتعة أو تذكرة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u1-airport",
+    "objectiveAr": "أن يشرح المتعلم مشكلة (حقيبة مفقودة أو خطأ في الاسم) بلباقة، ويطلب حلًّا بديلًا، ويفهم مواعيد المتابعة.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "equipaje",
+      "factura"
+    ],
+    "reviewVocabulary": [
+      "equipaje",
+      "asiento",
+      "retraso"
+    ],
+    "targetStructures": [
+      "No encuentro mi equipaje.",
+      "Hay un error en mi billete.",
+      "¿Cuándo llega?"
+    ],
+    "grammarTopics": [
+      "reclamaciones",
+      "preguntar-plazos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حقيبتك لم تصل مع الرحلة.",
+        "settingAr": "مكتب المفقودات في صالة الوصول",
+        "lines": [
+          {
+            "es": "Buenas tardes, ¿en qué puedo ayudarle?",
+            "ar": "مساء الخير، كيف أساعدك؟",
+            "arEg": "مساء الخير، أساعدك في إيه؟",
+            "audioKey": "pending/tr-u1-l3-agente-1"
+          },
+          {
+            "es": "No encuentro mi equipaje. Mi vuelo era el 345.",
+            "ar": "لا أجد أمتعتي. رحلتي كانت 345.",
+            "arEg": "مش لاقي شنطي. رحلتي كانت 345.",
+            "audioKey": "pending/tr-u1-l3-omar-1"
+          },
+          {
+            "es": "Lo siento. ¿Puede describir la maleta, por favor?",
+            "ar": "آسف. هل يمكنك وصف الحقيبة من فضلك؟",
+            "arEg": "معلش. ممكن توصف الشنطة لو سمحت؟",
+            "audioKey": "pending/tr-u1-l3-agente-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u1_11_report",
+        "type": "choose_reply",
+        "instructionAr": "اختر صيغة الشكوى المهذبة الأولى.",
+        "contextAr": "أنت في مكتب المفقودات وتريد الإبلاغ عن حقيبة لم تصل.",
+        "stemEs": "— Buenos días, ¿en qué puedo ayudarle?",
+        "stemAr": "— صباح الخير، كيف أساعدك؟",
+        "options": [
+          {
+            "id": "tr_u1_11_a",
+            "text": "Perdone, no encuentro mi equipaje.",
+            "isCorrect": true,
+            "textAr": "عفوًا، لا أجد أمتعتي."
+          },
+          {
+            "id": "tr_u1_11_b",
+            "text": "¡Vosotros habéis perdido mi maleta!",
+            "isCorrect": false,
+            "textAr": "أنتم ضيّعتم حقيبتي!",
+            "distractorRationaleAr": "اتهام مباشر وبنبرة عدوانية، وقد يكون السبب خارج سيطرة الموظف."
+          },
+          {
+            "id": "tr_u1_11_c",
+            "text": "Quiero una factura.",
+            "isCorrect": false,
+            "textAr": "أريد فاتورة.",
+            "distractorRationaleAr": "طلب غير متعلق بالمشكلة في هذه اللحظة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_11_a"
+          ]
+        },
+        "explanationAr": "البداية الهادئة تُنجح الشكوى: وصف الحقيقة («no encuentro») بلا اتهام. ثم يُطلب الوصف ورقم تقرير الشكوى.",
+        "errorFeedback": {
+          "tr_u1_11_b": "الاتهام يوقف التعاون؛ ابدأ بوصف المشكلة.",
+          "tr_u1_11_c": "الفاتورة ليست مطلبك هنا."
+        },
+        "targetVocab": [
+          "equipaje"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_12_describe",
+        "type": "word_choice",
+        "instructionAr": "أي وصف للحقيبة دقيق ومفهوم؟",
+        "options": [
+          {
+            "id": "tr_u1_12_a",
+            "text": "Es negra y grande, con una etiqueta roja.",
+            "isCorrect": true,
+            "textAr": "إنها سوداء وكبيرة، عليها بطاقة حمراء."
+          },
+          {
+            "id": "tr_u1_12_b",
+            "text": "Es la maleta normal.",
+            "isCorrect": false,
+            "textAr": "إنها الحقيبة العادية.",
+            "distractorRationaleAr": "وصف غامض لا يساعد الموظف."
+          },
+          {
+            "id": "tr_u1_12_c",
+            "text": "Es muy bonita.",
+            "isCorrect": false,
+            "textAr": "إنها جميلة جدًا.",
+            "distractorRationaleAr": "جمالها لا يميّزها عن غيرها."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_12_a"
+          ]
+        },
+        "explanationAr": "الوصف المفيد يجمع: اللون + الحجم + علامة مميِّزة. «etiqueta» = بطاقة، «roja» = حمراء (مؤنث).",
+        "errorFeedback": {
+          "tr_u1_12_b": "«normal» لا يميّز شيئًا.",
+          "tr_u1_12_c": "الجمال ليس علامة تعريف."
+        },
+        "targetVocab": [
+          "equipaje"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_13_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل السؤال عن موعد وصول الحقيبة.",
+        "stemEs": "¿Cuándo ____ mi maleta?",
+        "stemAr": "متى تصل حقيبتي؟",
+        "answerKey": {
+          "accepted": [
+            "llega"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«cuándo» للسؤال عن الزمن، والفعل llegar مع المفرد الغائب: llega.",
+        "errorFeedback": {
+          "llego": "«llego» للمتحدث؛ الحقيبة مفرد غائب ⇒ llega.",
+          "llegar": "المصدر لا يصلح سؤالًا بلا فعل مصرَّف."
+        },
+        "targetVocab": [
+          "llegada"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_14_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هل يمكنك أن تعطيني رقم التقرير؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "¿Puede darme el número del informe?",
+            "¿Me puede dar el número del informe?",
+            "¿Puede darme el número de informe?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "لباقة الطلب: ¿Puede + مصدر + مفعول؟ «informe» تقرير، و«número del informe» رقمه.",
+        "errorFeedback": {
+          "Dame el número.": "أمر مباشر؛ استخدم ¿Puede darme…?",
+          "¿Puedo darme el número?": "الفاعل غير صحيح؛ نطلب من الموظف: ¿Puede darme…?"
+        },
+        "targetVocab": [
+          "factura"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطار 3/4. يحتاج مراجعة إسبانية أصلية لمصطلح «informe» في تقارير المفقودات (PIR)، وتأكيد المفردات البديلة. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

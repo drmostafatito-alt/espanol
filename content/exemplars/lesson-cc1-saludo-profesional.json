@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc1-saludo-profesional",
+    "titleAr": "مكالمة احترافية: التحية والتعريف وطلب البيانات",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc1-call-basics",
+    "objectiveAr": "أن يفتح المتعلم مكالمة خدمة عملاء بالتحية المهنية، ويعرّف بنفسه وبالشركة، ويطلب بيانات العميل بلباقة باستخدام usted وصيغ الطلب المؤدبة، دون كشف معلومة غير مؤكدة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "pragmatics",
+      "register"
+    ],
+    "newVocabulary": [
+      "le atiende",
+      "en qué puedo ayudarle",
+      "¿podría facilitarme…?",
+      "no se retire",
+      "deletrear",
+      "comprobar"
+    ],
+    "reviewVocabulary": [
+      "buenos días",
+      "por favor",
+      "gracias"
+    ],
+    "targetStructures": [
+      "¿Podría + infinitivo…?",
+      "le + فعل + a usted",
+      "¿Me permite…?",
+      "Voy a + infinitivo"
+    ],
+    "grammarTopics": [
+      "usted-formal",
+      "perifrasis-ir-a"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميلة تتصل لتلغي طلبًا. أنت موظف الدعم في شركة تجارة إلكترونية. البيانات المستخدمة وهمية بالكامل.",
+        "settingAr": "مركز اتصال — مكالمة واردة",
+        "lines": [
+          {
+            "es": "Buenos días, le atiende Omar del departamento de Atención al Cliente. ¿En qué puedo ayudarle?",
+            "ar": "صباح الخير، معك عمر من قسم خدمة العملاء. كيف يمكنني مساعدتك؟",
+            "audioKey": "pending/cc1-opening-omar"
+          },
+          {
+            "es": "Hola, quiero cancelar mi pedido.",
+            "ar": "مرحبًا، أريد إلغاء طلبي.",
+            "audioKey": "pending/cc1-customer-cancelar"
+          },
+          {
+            "es": "Entiendo. ¿Podría facilitarme su número de pedido, por favor?",
+            "ar": "أفهم ذلك. هل يمكنك إعطائي رقم طلبك من فضلك؟",
+            "audioKey": "pending/cc1-ask-order-number"
+          },
+          {
+            "es": "Sí, es el 4-8-2-1-9.",
+            "ar": "نعم، إنه 48219.",
+            "audioKey": "pending/cc1-customer-order-number"
+          },
+          {
+            "es": "Gracias. ¿Me permite un momento, por favor? Voy a comprobar el estado del pedido. No se retire, por favor.",
+            "ar": "شكرًا. هل تسمح لي بلحظة من فضلك؟ سأتحقق من حالة الطلب. لا تُغلق الخط من فضلك.",
+            "audioKey": "pending/cc1-hold-comprobar"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 80,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "choose_reply",
+        "find_fix_error",
+        "phone_call_response"
+      ]
+    },
+    "unlock": {
+      "type": "free"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc1_1_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر أفضل رد مهني على العميل في هذه اللحظة.",
+        "contextAr": "عميل يقول إنه يريد إلغاء طلبه. أنت في بداية المكالمة وتحتاج بياناته.",
+        "stemEs": "Cliente: Quiero cancelar mi pedido. — Tú: ____",
+        "options": [
+          {
+            "id": "cc1_1_a",
+            "text": "Entiendo. ¿Podría facilitarme su número de pedido, por favor?",
+            "isCorrect": true
+          },
+          {
+            "id": "cc1_1_b",
+            "text": "Vale, dame el número.",
+            "distractorRationaleAr": "مخالفة السجل الرسمي: dame و vale غير مناسبتين في خدمة العملاء، وتفتقدان عبارة التأدب."
+          },
+          {
+            "id": "cc1_1_c",
+            "text": "No se puede cancelar.",
+            "distractorRationaleAr": "ردّ يغلق الحوار ويقدّم معلومة غير متحقَّق منها، وهو ممنوع في سياسة الخدمة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc1_1_a"
+          ]
+        },
+        "explanationAr": "البنية المهنية: تعاطف قصير (Entiendo) + طلب مؤدب (¿Podría facilitarme…?) + por favor. لاحظ usted الضمني في su número. الرفض المباشر قبل التحقق خطر مهني لأنه قد يكون معلومة خاطئة.",
+        "errorFeedback": {
+          "cc1_1_b": "العميل ليس صديقًا: نحتاج usted وصيغة ¿Podría…? لا dame.",
+          "cc1_1_c": "لا تُعلن نتيجة قبل التحقق من الطلب. ابدأ بجمع البيانات."
+        },
+        "skills": [
+          "pragmatics",
+          "register",
+          "speaking"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "¿podría facilitarme…?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc1_2_fix",
+        "type": "find_fix_error",
+        "instructionAr": "الجملة التالية غير مناسبة في مكالمة خدمة عملاء. اختر التصحيح الذي يحفظ اللباقة والوضوح.",
+        "stemEs": "Dime tu nombre y tu pedido.",
+        "options": [
+          {
+            "id": "cc1_2_a",
+            "text": "¿Podría decirme su nombre y su número de pedido, por favor?",
+            "isCorrect": true
+          },
+          {
+            "id": "cc1_2_b",
+            "text": "Di tu nombre ahora.",
+            "distractorRationaleAr": "أمر مباشر يزيد التوتر مع عميل غاضب."
+          },
+          {
+            "id": "cc1_2_c",
+            "text": "¿Cómo te llamas?",
+            "distractorRationaleAr": "صحيحة لغويًا لكنها informal (tú) وتخالف سجل الخدمة الرسمي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc1_2_a"
+          ]
+        },
+        "explanationAr": "في خدمة العملاء: usted + condicional للطلب (¿Podría…?) + por favor. الفعل decir يصبح dígame في صيغة الأمر الرسمية، لكن condicional ألطف في المكالمات. «¿Cómo te llamas?» ليست خطأ لغويًا، لكنها خروج عن السجل الرسمي.",
+        "errorFeedback": {
+          "cc1_2_c": "الجملة صحيحة لكنها غير رسمية. في المكالمة المهنية نستخدم usted: ¿Cómo se llama usted?"
+        },
+        "skills": [
+          "grammar",
+          "register"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "¿podría facilitarme…?"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc1_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل افتتاحية المكالمة بالكلمة الصحيحة.",
+        "stemEs": "Buenos días, le ____ Omar del departamento de Atención al Cliente.",
+        "stemAr": "صباح الخير، معك عمر من قسم خدمة العملاء.",
+        "answerKey": {
+          "accepted": [
+            "atiende"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Le atiende + الاسم» صيغة ثابتة لتعريف الموظف بنفسه في المكالمة، ومعناها حرفيًا «يخدمك». الفعل atender من مجموعة الأفعال التي يتغير فيها جذر e → ie (atiendo)، لكن مع usted نستخدم atiende.",
+        "errorFeedback": {
+          "atiendo": "مع usted (هو/هي المخاطبة) نقول atiende لا atiendo (أنا).",
+          "atender": "الصيغة الصحيحة مصرّفة: le atiende."
+        },
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "le atiende"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc1_4_conjugate",
+        "type": "conjugate_in_context",
+        "instructionAr": "صرّف الفعل بين القوسين في مكانه.",
+        "stemEs": "Un momento, por favor. Ahora le ____ (pasar) con mi compañera.",
+        "stemAr": "لحظة من فضلك. سأحوّلك الآن إلى زميلتي.",
+        "answerKey": {
+          "accepted": [
+            "paso"
+          ],
+          "caseSensitive": false,
+          "verb": "pasar",
+          "expectedPerson": "1s",
+          "expectedTense": "presente"
+        },
+        "explanationAr": "«Le paso con…» تعبير مهني ثابت معناه «أحوّلك إلى…». الفاعل أنا (الموظف) لذلك نستخدم paso. صيغة أخرى مقبولة: «Le voy a pasar con…».",
+        "errorFeedback": {
+          "pasa": "pasa تكون لـ él/ella/usted؛ هنا المتحدث هو الموظف: paso.",
+          "paso a": "لا نضيف a قبل الشخص في هذا التعبير: le paso con mi compañera."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc1_5_phone",
+        "type": "phone_call_response",
+        "instructionAr": "استمع للعميل ثم سجّل ردّك. إن لم يعمل الميكروفون، راجع النموذج وقيّم نفسك.",
+        "contextAr": "العميل يتحدث بسرعة ويذكر رقم طلب غير واضح. لا تفترض الرقم.",
+        "stemEs": "Cliente: Mira, es que el pedido número cuarenta y dos mil... no sé, algo así, y no ha llegado nada.",
+        "answerKey": {
+          "mode": "rubric",
+          "modelAnswer": "Disculpe, ¿podría repetirlo más despacio, por favor? Quiero asegurarme del número de pedido antes de continuar.",
+          "acceptableVariants": [
+            "Perdone, no le he entendido bien el número. ¿Me lo puede repetir más despacio, por favor?",
+            "¿Podría deletrearme el número de pedido, por favor? Quiero evitar un error."
+          ]
+        },
+        "explanationAr": "الأمانة المهنية تعني عدم افتراض البيانات. العبارات المفيدة: ¿Podría repetirlo más despacio? / ¿Me lo deletrea, por favor? / Quiero asegurarme de… لاحظ أن الاعتراف بعدم السماع ليس ضعفًا، بل يمنع خطأً أكبر.",
+        "skills": [
+          "listening",
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 4,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح الطلب",
+              "weight": 30
+            },
+            {
+              "code": "politeness",
+              "labelAr": "اللباقة (usted + por favor)",
+              "weight": 25
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "عدم افتراض معلومة غير مسموعة",
+              "weight": 30
+            },
+            {
+              "code": "task",
+              "labelAr": "إتمام هدف المكالمة الجزئي",
+              "weight": 15
+            }
+          ]
+        },
+        "audioKey": "pending/cc1-customer-fast-speech"
+      },
+      {
+        "id": "cc1_6_roleplay",
+        "type": "roleplay_simulation",
+        "instructionAr": "محاكاة كاملة: أنت الموظف. العميل يريد معرفة موعد وصول طلبه. أدر المكالمة كاملة ثم قيّم نفسك بالمعايير.",
+        "contextAr": "البيانات الوهمية: العميل «Lucía Ferrer»، رقم الطلب 48219، الطلب متأخر يومين، تاريخ الشراء 2026-03-04 (بيانات خيالية للتدريب فقط).",
+        "stemEs": "Cliente: Llevo dos días esperando y nadie me dice nada. ¿Dónde está mi pedido?",
+        "answerKey": {
+          "mode": "rubric",
+          "modelScript": [
+            "— Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
+            "— Entiendo su molestia. ¿Podría facilitarme su número de pedido, por favor?",
+            "— Gracias. ¿Me permite un momento? Voy a comprobar el estado del envío.",
+            "— Le confirmo: el pedido salió el 5 de marzo y la entrega está prevista para mañana. Disculpe la demora.",
+            "— ¿Hay algo más en lo que pueda ayudarle? Gracias por su paciencia. Que tenga un buen día."
+          ],
+          "forbidden": [
+            "Afirmar una fecha de entrega sin comprobarla",
+            "Culpar al cliente o al transportista sin datos",
+            "Prometer una compensación que no está autorizada"
+          ]
+        },
+        "explanationAr": "ترتيب المكالمة المهنية: تحية وتعريف ← تعاطف ← طلب بيانات ← انتظار مؤدب ← معلومة مؤكدة ← إغلاق بسؤال عن حاجة أخرى. الجمل المفتاحية: Disculpe la demora / Le confirmo / ¿Hay algo más…? ولا تُعِد وعدًا غير مؤكد.",
+        "skills": [
+          "speaking",
+          "pragmatics",
+          "register",
+          "fluency"
+        ],
+        "difficulty": 5,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "opening",
+              "labelAr": "تحية وتعريف صحيحان",
+              "weight": 20
+            },
+            {
+              "code": "identification",
+              "labelAr": "طلب بيانات العميل بلباقة",
+              "weight": 20
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "دقة المعلومات وعدم الوعد بما لا يُضمن",
+              "weight": 25
+            },
+            {
+              "code": "empathy",
+              "labelAr": "التعاطف دون لوم",
+              "weight": 20
+            },
+            {
+              "code": "closing",
+              "labelAr": "إغلاق مهني وسؤال عن حاجة أخرى",
+              "weight": 15
+            }
+          ]
+        }
+      },
+      {
+        "id": "cc1_7_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية بسجل رسمي.",
+        "stemAr": "لحظة من فضلك، سأتحقق من الطلب.",
+        "answerKey": {
+          "accepted": [
+            "Un momento, por favor. Voy a comprobar el pedido.",
+            "Un momento, por favor; voy a comprobar el pedido.",
+            "¿Me permite un momento? Voy a comprobar el pedido."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Voy a + مصدر» تعبير عن المستقبل القريب، وهو الأكثر طبيعية في المكالمات الحقيقية بدل futuro simple. comprobar = يتحقق. و«¿Me permite un momento?» ألطف من الأمر المباشر.",
+        "skills": [
+          "writing",
+          "translation",
+          "register"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أولي"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "نموذج عمودي لمسار الكول سنتر (الوحدة 1). البيانات وهمية بالكامل. الصوت pending. معايير التقييم تحتاج ضبطًا بعد تجربة على 5 متعلمين."
+    }
+  }
+}

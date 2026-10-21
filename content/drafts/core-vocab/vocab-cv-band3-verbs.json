@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-band3-verbs",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر قد يغيّر المعنى.",
+  "source": {
+    "title": "الأفعال والصيغ: أفعال شائعة وحروف جر — إعداد داخلي، يحتاج مراجعة بشرية قبل النشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزمة «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة ومُوثَّقة."
+  },
+  "entries": [
+    {
+      "headword": "querer",
+      "normalized": "querer",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/keˈɾeɾ/",
+      "pronunciationHintAr": "كيرير",
+      "internalRank": 1,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يريد / يحب",
+          "meaningArEg": "عايز",
+          "glossEs": "verbo irregular de volición",
+          "exampleEs": "Quiero un café.",
+          "exampleAr": "أريد قهوة.",
+          "exampleArEg": "عايز قهوة.",
+          "usageNoteAr": "الصيغ: quiero, quieres, quiere. e ⇒ ie.",
+          "commonErrorAr": "«quiero un café» صحيحة؛ «quiero de café» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Quiero un café.",
+          "ar": "أريد قهوة.",
+          "arEg": "عايز قهوة."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "quiero",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quieres",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quiere",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "queremos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "queréis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quieren",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "poder",
+      "normalized": "poder",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/poˈðeɾ/",
+      "pronunciationHintAr": "بوذير",
+      "internalRank": 2,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يستطيع",
+          "meaningArEg": "يقدر",
+          "glossEs": "verbo irregular de capacidad/permiso",
+          "exampleEs": "¿Puedo pasar?",
+          "exampleAr": "هل أستطيع المرور؟",
+          "exampleArEg": "أقدر أعدّي؟",
+          "usageNoteAr": "o ⇒ ue: puedo, puedes, puede.",
+          "commonErrorAr": "«podo» غير صحيحة؛ الصواب puedo."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo pasar?",
+          "ar": "هل أستطيع المرور؟",
+          "arEg": "أقدر أعدّي؟"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "puedo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "puedes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "puede",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "podemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "podéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pueden",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "saber",
+      "normalized": "saber",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/saˈβeɾ/",
+      "pronunciationHintAr": "سابير",
+      "internalRank": 3,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يعرف (معلومة) / يعرف كيف",
+          "meaningArEg": "عارف",
+          "glossEs": "verbo de conocimiento",
+          "exampleEs": "No sé dónde está.",
+          "exampleAr": "لا أعرف أين هو.",
+          "exampleArEg": "مش عارف هو فين.",
+          "usageNoteAr": "saber للمعلومة، conocer للأشخاص والأماكن.",
+          "commonErrorAr": "«No conozco dónde» خطأ؛ المعلومة تكون بـsaber."
+        }
+      ],
+      "examples": [
+        {
+          "es": "No sé dónde está.",
+          "ar": "لا أعرف أين هو.",
+          "arEg": "مش عارف هو فين."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "sé",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sabes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sabe",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sabemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sabéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "saben",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "ver",
+      "normalized": "ver",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/beɾ/",
+      "pronunciationHintAr": "بير",
+      "internalRank": 4,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يرى",
+          "meaningArEg": "يشوف",
+          "glossEs": "verbo de percepción visual",
+          "exampleEs": "No veo nada.",
+          "exampleAr": "لا أرى شيئًا.",
+          "exampleArEg": "مش شايف حاجة.",
+          "usageNoteAr": "v تُنطق قريبة من b.",
+          "commonErrorAr": "لا تخلط ver (يرى) بـmirar (ينظر إلى)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "No veo nada.",
+          "ar": "لا أرى شيئًا.",
+          "arEg": "مش شايف حاجة."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "veo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ves",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ve",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "veis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ven",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "decir",
+      "normalized": "decir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/deˈθiɾ/",
+      "pronunciationHintAr": "ديثير",
+      "internalRank": 5,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يقول",
+          "meaningArEg": "يقول",
+          "glossEs": "verbo irregular de comunicación",
+          "exampleEs": "¿Cómo se dice…?",
+          "exampleAr": "كيف نقول…؟",
+          "exampleArEg": "بنقول … إزاي؟",
+          "usageNoteAr": "الصيغ: digo, dices, dice. واسم الفاعل dicho.",
+          "commonErrorAr": "«digo» لا تُنطق «ديغو» بقاف؛ g هنا خفيفة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo se dice…?",
+          "ar": "كيف نقول…؟",
+          "arEg": "بنقول … إزاي؟"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "digo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "dices",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "dice",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "decimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "decís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "dicen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "venir",
+      "normalized": "venir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/beˈniɾ/",
+      "pronunciationHintAr": "بينير",
+      "internalRank": 6,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يأتي",
+          "meaningArEg": "ييجي",
+          "glossEs": "verbo irregular de movimiento hacia el hablante",
+          "exampleEs": "¿Vienes conmigo?",
+          "exampleAr": "هل تأتي معي؟",
+          "exampleArEg": "تيجي معايا؟",
+          "usageNoteAr": "e ⇒ ie: vengo, vienes, viene.",
+          "commonErrorAr": "«venir a casa» صحيحة، لكن «voy venir» خطأ؛ الصواب voy a venir."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Vienes conmigo?",
+          "ar": "هل تأتي معي؟",
+          "arEg": "تيجي معايا؟"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "vengo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vienes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "viene",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "venimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "venís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vienen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "dar",
+      "normalized": "dar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/daɾ/",
+      "pronunciationHintAr": "دار",
+      "internalRank": 7,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يعطي",
+          "meaningArEg": "يدّي",
+          "glossEs": "verbo irregular",
+          "exampleEs": "Dame la llave, por favor.",
+          "exampleAr": "أعطني المفتاح، من فضلك.",
+          "exampleArEg": "إدّيني المفتاح، لو سمحت.",
+          "usageNoteAr": "الصيغ: doy, das, da, damos.",
+          "commonErrorAr": "«doy» لا تُنطق «دوي» مع تشديد زائد."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Dame la llave, por favor.",
+          "ar": "أعطني المفتاح، من فضلك.",
+          "arEg": "إدّيني المفتاح، لو سمحت."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "doy",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "das",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "da",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "damos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "dais",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "dan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "poner",
+      "normalized": "poner",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/poˈneɾ/",
+      "pronunciationHintAr": "بونير",
+      "internalRank": 8,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يضع",
+          "meaningArEg": "يحط",
+          "glossEs": "verbo irregular",
+          "exampleEs": "Pongo el móvil aquí.",
+          "exampleAr": "أضع الموبايل هنا.",
+          "exampleArEg": "بحط الموبايل هنا.",
+          "usageNoteAr": "الصيغ: pongo, pones, pone.",
+          "commonErrorAr": "«pono» غير صحيحة؛ الصواب pongo."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pongo el móvil aquí.",
+          "ar": "أضع الموبايل هنا.",
+          "arEg": "بحط الموبايل هنا."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "pongo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pones",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pone",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ponemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ponéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ponen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "salir",
+      "normalized": "salir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/saˈliɾ/",
+      "pronunciationHintAr": "سالير",
+      "internalRank": 9,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يخرج",
+          "meaningArEg": "يخرج",
+          "glossEs": "verbo irregular",
+          "exampleEs": "Salgo a las ocho.",
+          "exampleAr": "أخرج الساعة الثامنة.",
+          "exampleArEg": "بخرج الساعة تمانية.",
+          "usageNoteAr": "الصيغ: salgo, sales, sale.",
+          "commonErrorAr": "«salgo» بلا u قبل g، خلافًا لـllegar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Salgo a las ocho.",
+          "ar": "أخرج الساعة الثامنة.",
+          "arEg": "بخرج الساعة تمانية."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "salgo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sales",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "sale",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "salimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "salís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "salen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "llegar",
+      "normalized": "llegar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ʎeˈɣaɾ/",
+      "pronunciationHintAr": "ييغار",
+      "internalRank": 10,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يصل",
+          "meaningArEg": "يوصل",
+          "glossEs": "verbo regular de movimiento",
+          "exampleEs": "Llego en diez minutos.",
+          "exampleAr": "أصل في عشر دقائق.",
+          "exampleArEg": "بوصل في عشر دقايق.",
+          "usageNoteAr": "llegar a + مكان.",
+          "commonErrorAr": "«llego a casa» صحيحة بـa، لا بـen."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Llego en diez minutos.",
+          "ar": "أصل في عشر دقائق.",
+          "arEg": "بوصل في عشر دقايق."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "llego",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "llegas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "llega",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "llegamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "llegáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "llegan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "comprar",
+      "normalized": "comprar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/komˈpɾaɾ/",
+      "pronunciationHintAr": "كومبرار",
+      "internalRank": 11,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يشتري",
+          "meaningArEg": "يشتري",
+          "glossEs": "verbo regular -ar",
+          "exampleEs": "Quiero comprar pan.",
+          "exampleAr": "أريد شراء خبز.",
+          "exampleArEg": "عايز أشتري عيش.",
+          "usageNoteAr": "بعد querer يأتي المصدر مباشرة.",
+          "commonErrorAr": "«quiero compro» خطأ؛ الصواب quiero comprar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Quiero comprar pan.",
+          "ar": "أريد شراء خبز.",
+          "arEg": "عايز أشتري عيش."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "compro",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "compras",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "compra",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "compramos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "compráis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "compran",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "comer",
+      "normalized": "comer",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/koˈmeɾ/",
+      "pronunciationHintAr": "كومير",
+      "internalRank": 12,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يأكل",
+          "meaningArEg": "ياكل",
+          "glossEs": "verbo regular -er",
+          "exampleEs": "Comemos a las dos.",
+          "exampleAr": "نأكل الساعة الثانية.",
+          "exampleArEg": "بناكل الساعة اتنين.",
+          "usageNoteAr": "الصيغ: como, comes, come, comemos.",
+          "commonErrorAr": "«comer» بلا تشديد على الآخر في صيغة المتكلم."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Comemos a las dos.",
+          "ar": "نأكل الساعة الثانية.",
+          "arEg": "بناكل الساعة اتنين."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "como",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "comes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "come",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "comemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "coméis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "comen",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "beber",
+      "normalized": "beber",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/beˈβeɾ/",
+      "pronunciationHintAr": "بيبِر",
+      "internalRank": 13,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يشرب",
+          "meaningArEg": "يشرب",
+          "glossEs": "verbo regular -er",
+          "exampleEs": "Bebo mucha agua.",
+          "exampleAr": "أشرب ماء كثيرًا.",
+          "exampleArEg": "بشرب ميّة كتير.",
+          "usageNoteAr": "في إسبانيا أيضًا tomar: tomo un café.",
+          "commonErrorAr": "لا تخلط beber (يشرب) بـvivir (يعيش)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Bebo mucha agua.",
+          "ar": "أشرب ماء كثيرًا.",
+          "arEg": "بشرب ميّة كتير."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "bebo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "bebes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "bebe",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "bebemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "bebéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "beben",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "vivir",
+      "normalized": "vivir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/biˈβiɾ/",
+      "pronunciationHintAr": "بيبِير",
+      "internalRank": 14,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يعيش / يسكن",
+          "meaningArEg": "عايش",
+          "glossEs": "verbo regular -ir",
+          "exampleEs": "Vivo en Madrid.",
+          "exampleAr": "أعيش في مدريد.",
+          "exampleArEg": "عايش في مدريد.",
+          "usageNoteAr": "vivir en + مكان.",
+          "commonErrorAr": "«vivo a Madrid» خطأ؛ المكان بـen."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Vivo en Madrid.",
+          "ar": "أعيش في مدريد.",
+          "arEg": "عايش في مدريد."
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "vivo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vives",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vive",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vivimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "vivís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "viven",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "siempre",
+      "normalized": "siempre",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈsjempɾe/",
+      "pronunciationHintAr": "سييمبري",
+      "internalRank": 15,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دائمًا",
+          "meaningArEg": "دايمًا",
+          "glossEs": "adverbio de frecuencia",
+          "exampleEs": "Siempre desayuno café.",
+          "exampleAr": "أفطر قهوة دائمًا.",
+          "exampleArEg": "بفطر قهوة دايمًا.",
+          "usageNoteAr": "عكسها nunca.",
+          "commonErrorAr": "مع النفي تصبح «no siempre» (ليس دائمًا)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Siempre desayuno café.",
+          "ar": "أفطر قهوة دائمًا.",
+          "arEg": "بفطر قهوة دايمًا."
+        }
+      ]
+    },
+    {
+      "headword": "nunca",
+      "normalized": "nunca",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈnunka/",
+      "pronunciationHintAr": "نونكا",
+      "internalRank": 16,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أبدًا / قطّ",
+          "meaningArEg": "عمره ما",
+          "glossEs": "adverbio de frecuencia negativa",
+          "exampleEs": "Nunca bebo café por la noche.",
+          "exampleAr": "لا أشرب القهوة ليلًا أبدًا.",
+          "exampleArEg": "عمري ما بشرب قهوة بالليل.",
+          "usageNoteAr": "مع النفي: «no ... nunca» جائزة أيضًا.",
+          "commonErrorAr": "«nunca no» خطأ؛ النفي واحد."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Nunca bebo café por la noche.",
+          "ar": "لا أشرب القهوة ليلًا أبدًا.",
+          "arEg": "عمري ما بشرب قهوة بالليل."
+        }
+      ]
+    },
+    {
+      "headword": "también",
+      "normalized": "también",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tamˈbjen/",
+      "pronunciationHintAr": "تامبيين",
+      "internalRank": 17,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أيضًا",
+          "meaningArEg": "كمان",
+          "glossEs": "adverbio de adición",
+          "exampleEs": "Yo también quiero agua.",
+          "exampleAr": "أنا أيضًا أريد ماء.",
+          "exampleArEg": "أنا كمان عايز ميّة.",
+          "usageNoteAr": "عكسها tampoco (ولا أنا / ولا كذلك).",
+          "commonErrorAr": "«también no» ليست الصيغة الصحيحة؛ الصواب tampoco."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Yo también quiero agua.",
+          "ar": "أنا أيضًا أريد ماء.",
+          "arEg": "أنا كمان عايز ميّة."
+        }
+      ]
+    },
+    {
+      "headword": "porque",
+      "normalized": "porque",
+      "kind": "word",
+      "pos": "conj",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈpoɾke/",
+      "pronunciationHintAr": "بوركي",
+      "internalRank": 18,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لأن",
+          "meaningArEg": "علشان",
+          "glossEs": "conjunción causal",
+          "exampleEs": "No voy porque estoy cansado.",
+          "exampleAr": "لا أذهب لأنني متعب.",
+          "exampleArEg": "مش رايح علشان أنا تعبان.",
+          "usageNoteAr": "كلمة واحدة لأن السبب؛ ¿por qué? منفصلتان للسؤال.",
+          "commonErrorAr": "السؤال «¿Por qué?» منفصل بمعنى «لماذا؟»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "No voy porque estoy cansado.",
+          "ar": "لا أذهب لأنني متعب.",
+          "arEg": "مش رايح علشان أنا تعبان."
+        }
+      ]
+    },
+    {
+      "headword": "entre",
+      "normalized": "entre",
+      "kind": "word",
+      "pos": "prep",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈentɾe/",
+      "pronunciationHintAr": "إنترِ",
+      "internalRank": 19,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بين",
+          "meaningArEg": "بين",
+          "glossEs": "preposición de lugar/relación",
+          "exampleEs": "El banco está entre la tienda y el café.",
+          "exampleAr": "البنك بين المتجر والمقهى.",
+          "exampleArEg": "البنك بين المحل والقهوة.",
+          "usageNoteAr": "entre + اسمين بلا تغيير.",
+          "commonErrorAr": "لا تُتبع بـde: «entre de» خطأ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El banco está entre la tienda y el café.",
+          "ar": "البنك بين المتجر والمقهى.",
+          "arEg": "البنك بين المحل والقهوة."
+        }
+      ]
+    },
+    {
+      "headword": "desde",
+      "normalized": "desde",
+      "kind": "word",
+      "pos": "prep",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈdesde/",
+      "pronunciationHintAr": "ديسدي",
+      "internalRank": 20,
+      "tags": [
+        "مفردات أساسية",
+        "band3"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "منذ / من",
+          "meaningArEg": "من",
+          "glossEs": "preposición de punto de partida",
+          "exampleEs": "Trabajo desde las ocho.",
+          "exampleAr": "أعمل من الثامنة.",
+          "exampleArEg": "بشتغل من تمانية.",
+          "usageNoteAr": "للزمن والمكان كبداية.",
+          "commonErrorAr": "للأصل والانتساب نستخدم de لا desde."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Trabajo desde las ocho.",
+          "ar": "أعمل من الثامنة.",
+          "arEg": "بشتغل من تمانية."
+        }
+      ]
+    }
+  ]
+}

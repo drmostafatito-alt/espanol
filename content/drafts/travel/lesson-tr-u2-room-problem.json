@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u2-room-problem",
+    "titleAr": "مشكلة في الغرفة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u2-hotel",
+    "objectiveAr": "أن يشرح المتعلم مشكلة في الغرفة (لا يعمل المكيف، ضجيج، ماء بارد) ويطلب حلًّا أو غرفة بديلة بلباقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "habitación doble"
+    ],
+    "reviewVocabulary": [
+      "llave",
+      "cama",
+      "desayuno"
+    ],
+    "targetStructures": [
+      "El aire acondicionado no funciona.",
+      "Hay mucho ruido.",
+      "¿Puedo cambiar de habitación?"
+    ],
+    "grammarTopics": [
+      "quejas-educadas",
+      "problemas-en-hotel"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "المكيف في غرفتك لا يعمل والجو حار.",
+        "settingAr": "غرفتك في الفندق، العاشرة مساءً",
+        "lines": [
+          {
+            "es": "Recepción, buenas noches. ¿En qué puedo ayudarle?",
+            "ar": "الاستقبال، مساء الخير. كيف أساعدك؟",
+            "arEg": "الاستقبال، مساء الخير. أساعدك في إيه؟",
+            "audioKey": "pending/tr-u2-l3-recep-1"
+          },
+          {
+            "es": "Buenas noches. El aire acondicionado no funciona.",
+            "ar": "مساء الخير. المكيف لا يعمل.",
+            "arEg": "مساء الخير. التكييف مش شغال.",
+            "audioKey": "pending/tr-u2-l3-omar-1"
+          },
+          {
+            "es": "Lo siento. ¿Puedo cambiar de habitación?",
+            "ar": "آسف. هل أستطيع تغيير الغرفة؟",
+            "arEg": "معلش. ممكن أغير الأوضة؟",
+            "audioKey": "pending/tr-u2-l3-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u2_9_notworking",
+        "type": "fill_blank",
+        "instructionAr": "أكمل: المكيف لا يعمل.",
+        "stemEs": "El aire acondicionado no ____.",
+        "stemAr": "المكيف لا يعمل.",
+        "answerKey": {
+          "accepted": [
+            "funciona"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«funcionar» = يعمل (للأجهزة). لا نقول «no trabaja» للجهاز.",
+        "errorFeedback": {
+          "trabaja": "«trabajar» للبشر؛ الجهاز «funciona».",
+          "funciono": "الفاعل الجهاز ⇒ funciona."
+        },
+        "targetVocab": [
+          "habitación doble"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_10_noise",
+        "type": "word_choice",
+        "instructionAr": "أنت تشكو الآن لموظف الاستقبال من ضجيج الممر. أي جملة أنسب للشكوى؟",
+        "options": [
+          {
+            "id": "tr_u2_10_a",
+            "text": "Hay mucho ruido en el pasillo.",
+            "isCorrect": true,
+            "textAr": "هناك ضجيج كثير في الممر."
+          },
+          {
+            "id": "tr_u2_10_b",
+            "text": "Hay muchas ruidos.",
+            "isCorrect": false,
+            "textAr": "هناك ضجيجات كثيرة.",
+            "distractorRationaleAr": "«ruido» مذكر ومن ثمّ «muchos ruidos» إن أردنا الجمع، لكن الشائع «mucho ruido»."
+          },
+          {
+            "id": "tr_u2_10_c",
+            "text": "Es muy ruidoso el pasillo.",
+            "isCorrect": false,
+            "textAr": "الممر صاخب جدًا.",
+            "distractorRationaleAr": "صحيحة لغويًا لكنها لا تُستخدم كشكوى مباشرة عن الليلة الحالية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_10_a"
+          ]
+        },
+        "explanationAr": "«ruido» مذكر: mucho ruido. للتعبير الاسمي «hay» أفضل من الصفة.",
+        "errorFeedback": {
+          "tr_u2_10_b": "المطابقة: «mucho ruido» أو «muchos ruidos».",
+          "tr_u2_10_c": "صحيحة لكنها أقل مباشرة في الشكوى."
+        },
+        "targetVocab": [
+          "habitación doble"
+        ],
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_11_change",
+        "type": "choose_reply",
+        "instructionAr": "اطلب غرفة بديلة بلباقة.",
+        "stemEs": "— Lo sentimos mucho. No sabemos qué pasa.",
+        "stemAr": "— نأسف جدًا. لا نعرف ما المشكلة.",
+        "options": [
+          {
+            "id": "tr_u2_11_a",
+            "text": "¿Sería posible cambiar de habitación, por favor?",
+            "isCorrect": true,
+            "textAr": "هل سيكون ممكنًا تغيير الغرفة من فضلك؟"
+          },
+          {
+            "id": "tr_u2_11_b",
+            "text": "Quiero otra habitación ahora.",
+            "isCorrect": false,
+            "textAr": "أريد غرفة أخرى الآن.",
+            "distractorRationaleAr": "طلب آمر بلا لباقة («ahora»)."
+          },
+          {
+            "id": "tr_u2_11_c",
+            "text": "Entonces me voy a otro hotel.",
+            "isCorrect": false,
+            "textAr": "إذًا سأذهب إلى فندق آخر.",
+            "distractorRationaleAr": "تصعيد قبل محاولة الحل؛ الفندق طلب تعاونًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_11_a"
+          ]
+        },
+        "explanationAr": "«¿Sería posible…?» صيغة شرطية مهذبة عالية، تصلح للطلبات الحساسة. ثم por favor.",
+        "errorFeedback": {
+          "tr_u2_11_b": "أضف لباقة: «¿Sería posible…?».",
+          "tr_u2_11_c": "أعطِ فرصة للحل قبل التصعيد."
+        },
+        "targetVocab": [
+          "habitación doble"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u2_12_summary",
+        "type": "summarize_dialogue",
+        "instructionAr": "أي ملخص يعبّر بدقة عن الشكوى؟",
+        "contextAr": "لخّص ما قلته للموظف: المكيف لا يعمل، والغرفة في ممر صاخب، وتريد غرفة هادئة.",
+        "options": [
+          {
+            "id": "tr_u2_12_a",
+            "text": "El aire no funciona y hay ruido; pido una habitación más tranquila.",
+            "isCorrect": true,
+            "textAr": "المكيف لا يعمل وهناك ضجيج؛ أطلب غرفة أهدأ."
+          },
+          {
+            "id": "tr_u2_12_b",
+            "text": "Todo está perfecto, gracias.",
+            "isCorrect": false,
+            "textAr": "كل شيء ممتاز، شكرًا.",
+            "distractorRationaleAr": "يناقض المشكلة تمامًا."
+          },
+          {
+            "id": "tr_u2_12_c",
+            "text": "Quiero desayunar ahora.",
+            "isCorrect": false,
+            "textAr": "أريد أن أفطر الآن.",
+            "distractorRationaleAr": "مطلب غير متعلق بالشكوى المذكورة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u2_12_a"
+          ],
+          "accepted": [
+            "El aire no funciona y hay ruido; pido una habitación más tranquila."
+          ]
+        },
+        "explanationAr": "الملخص الجيد يجمع المشكلتين ثم الطلب. «más tranquila» = أهدأ (مؤنث تابع لـhabitación).",
+        "errorFeedback": {
+          "tr_u2_12_b": "الملخص يجب أن يعكس الشكوى.",
+          "tr_u2_12_c": "هذا مطلب آخر."
+        },
+        "targetVocab": [
+          "habitación doble"
+        ],
+        "skills": [
+          "reading",
+          "writing"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الفندق 3/4. يحتاج مراجعة إسبانية أصلية لصيغة «¿Sería posible…?» وحساسية مضمون الشكوى. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}
