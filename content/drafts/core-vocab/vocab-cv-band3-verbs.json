@@ -1,1454 +1,5038 @@
 {
-  "schemaVersion": "1.0.0",
-  "bundleSlug": "cv-band3-verbs",
-  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر قد يغيّر المعنى.",
-  "source": {
-    "title": "الأفعال والصيغ: أفعال شائعة وحروف جر — إعداد داخلي، يحتاج مراجعة بشرية قبل النشر",
-    "url": "",
-    "license": "internal-draft",
-    "accessedAt": "2026-10-21",
-    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزمة «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة ومُوثَّقة."
-  },
-  "entries": [
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "cv-band3-verbs",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة دائمًا، وj قريبة من الخاء، وñ = نْي، وأن النبر قد يغيّر المعنى.",
+ "source": {
+  "title": "الأفعال والصيغ: أفعال شائعة وحروف جر — إعداد داخلي، يحتاج مراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزمة «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة ومُوثَّقة."
+ },
+ "entries": [
+  {
+   "headword": "querer",
+   "normalized": "querer",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/keˈɾeɾ/",
+   "pronunciationHintAr": "كيرير",
+   "internalRank": 1,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
     {
-      "headword": "querer",
-      "normalized": "querer",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/keˈɾeɾ/",
-      "pronunciationHintAr": "كيرير",
-      "internalRank": 1,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يريد / يحب",
-          "meaningArEg": "عايز",
-          "glossEs": "verbo irregular de volición",
-          "exampleEs": "Quiero un café.",
-          "exampleAr": "أريد قهوة.",
-          "exampleArEg": "عايز قهوة.",
-          "usageNoteAr": "الصيغ: quiero, quieres, quiere. e ⇒ ie.",
-          "commonErrorAr": "«quiero un café» صحيحة؛ «quiero de café» خطأ."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Quiero un café.",
-          "ar": "أريد قهوة.",
-          "arEg": "عايز قهوة."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "quiero",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "quieres",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "quiere",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "queremos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "queréis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "quieren",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "poder",
-      "normalized": "poder",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/poˈðeɾ/",
-      "pronunciationHintAr": "بوذير",
-      "internalRank": 2,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يستطيع",
-          "meaningArEg": "يقدر",
-          "glossEs": "verbo irregular de capacidad/permiso",
-          "exampleEs": "¿Puedo pasar?",
-          "exampleAr": "هل أستطيع المرور؟",
-          "exampleArEg": "أقدر أعدّي؟",
-          "usageNoteAr": "o ⇒ ue: puedo, puedes, puede.",
-          "commonErrorAr": "«podo» غير صحيحة؛ الصواب puedo."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Puedo pasar?",
-          "ar": "هل أستطيع المرور؟",
-          "arEg": "أقدر أعدّي؟"
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "puedo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "puedes",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "puede",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "podemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "podéis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "pueden",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "saber",
-      "normalized": "saber",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/saˈβeɾ/",
-      "pronunciationHintAr": "سابير",
-      "internalRank": 3,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يعرف (معلومة) / يعرف كيف",
-          "meaningArEg": "عارف",
-          "glossEs": "verbo de conocimiento",
-          "exampleEs": "No sé dónde está.",
-          "exampleAr": "لا أعرف أين هو.",
-          "exampleArEg": "مش عارف هو فين.",
-          "usageNoteAr": "saber للمعلومة، conocer للأشخاص والأماكن.",
-          "commonErrorAr": "«No conozco dónde» خطأ؛ المعلومة تكون بـsaber."
-        }
-      ],
-      "examples": [
-        {
-          "es": "No sé dónde está.",
-          "ar": "لا أعرف أين هو.",
-          "arEg": "مش عارف هو فين."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "sé",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sabes",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sabe",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sabemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sabéis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "saben",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "ver",
-      "normalized": "ver",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/beɾ/",
-      "pronunciationHintAr": "بير",
-      "internalRank": 4,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يرى",
-          "meaningArEg": "يشوف",
-          "glossEs": "verbo de percepción visual",
-          "exampleEs": "No veo nada.",
-          "exampleAr": "لا أرى شيئًا.",
-          "exampleArEg": "مش شايف حاجة.",
-          "usageNoteAr": "v تُنطق قريبة من b.",
-          "commonErrorAr": "لا تخلط ver (يرى) بـmirar (ينظر إلى)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "No veo nada.",
-          "ar": "لا أرى شيئًا.",
-          "arEg": "مش شايف حاجة."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "veo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ves",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ve",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "veis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ven",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "decir",
-      "normalized": "decir",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/deˈθiɾ/",
-      "pronunciationHintAr": "ديثير",
-      "internalRank": 5,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يقول",
-          "meaningArEg": "يقول",
-          "glossEs": "verbo irregular de comunicación",
-          "exampleEs": "¿Cómo se dice…?",
-          "exampleAr": "كيف نقول…؟",
-          "exampleArEg": "بنقول … إزاي؟",
-          "usageNoteAr": "الصيغ: digo, dices, dice. واسم الفاعل dicho.",
-          "commonErrorAr": "«digo» لا تُنطق «ديغو» بقاف؛ g هنا خفيفة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Cómo se dice…?",
-          "ar": "كيف نقول…؟",
-          "arEg": "بنقول … إزاي؟"
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "digo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "dices",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "dice",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "decimos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "decís",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "dicen",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "venir",
-      "normalized": "venir",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/beˈniɾ/",
-      "pronunciationHintAr": "بينير",
-      "internalRank": 6,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يأتي",
-          "meaningArEg": "ييجي",
-          "glossEs": "verbo irregular de movimiento hacia el hablante",
-          "exampleEs": "¿Vienes conmigo?",
-          "exampleAr": "هل تأتي معي؟",
-          "exampleArEg": "تيجي معايا؟",
-          "usageNoteAr": "e ⇒ ie: vengo, vienes, viene.",
-          "commonErrorAr": "«venir a casa» صحيحة، لكن «voy venir» خطأ؛ الصواب voy a venir."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Vienes conmigo?",
-          "ar": "هل تأتي معي؟",
-          "arEg": "تيجي معايا؟"
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "vengo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vienes",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "viene",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "venimos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "venís",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vienen",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "dar",
-      "normalized": "dar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/daɾ/",
-      "pronunciationHintAr": "دار",
-      "internalRank": 7,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يعطي",
-          "meaningArEg": "يدّي",
-          "glossEs": "verbo irregular",
-          "exampleEs": "Dame la llave, por favor.",
-          "exampleAr": "أعطني المفتاح، من فضلك.",
-          "exampleArEg": "إدّيني المفتاح، لو سمحت.",
-          "usageNoteAr": "الصيغ: doy, das, da, damos.",
-          "commonErrorAr": "«doy» لا تُنطق «دوي» مع تشديد زائد."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Dame la llave, por favor.",
-          "ar": "أعطني المفتاح، من فضلك.",
-          "arEg": "إدّيني المفتاح، لو سمحت."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "doy",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "das",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "da",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "damos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "dais",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "dan",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "poner",
-      "normalized": "poner",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/poˈneɾ/",
-      "pronunciationHintAr": "بونير",
-      "internalRank": 8,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يضع",
-          "meaningArEg": "يحط",
-          "glossEs": "verbo irregular",
-          "exampleEs": "Pongo el móvil aquí.",
-          "exampleAr": "أضع الموبايل هنا.",
-          "exampleArEg": "بحط الموبايل هنا.",
-          "usageNoteAr": "الصيغ: pongo, pones, pone.",
-          "commonErrorAr": "«pono» غير صحيحة؛ الصواب pongo."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Pongo el móvil aquí.",
-          "ar": "أضع الموبايل هنا.",
-          "arEg": "بحط الموبايل هنا."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "pongo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "pones",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "pone",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ponemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ponéis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "ponen",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "salir",
-      "normalized": "salir",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/saˈliɾ/",
-      "pronunciationHintAr": "سالير",
-      "internalRank": 9,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يخرج",
-          "meaningArEg": "يخرج",
-          "glossEs": "verbo irregular",
-          "exampleEs": "Salgo a las ocho.",
-          "exampleAr": "أخرج الساعة الثامنة.",
-          "exampleArEg": "بخرج الساعة تمانية.",
-          "usageNoteAr": "الصيغ: salgo, sales, sale.",
-          "commonErrorAr": "«salgo» بلا u قبل g، خلافًا لـllegar."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Salgo a las ocho.",
-          "ar": "أخرج الساعة الثامنة.",
-          "arEg": "بخرج الساعة تمانية."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "salgo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sales",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "sale",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "salimos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "salís",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": true
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "salen",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": true
-        }
-      ]
-    },
-    {
-      "headword": "llegar",
-      "normalized": "llegar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ʎeˈɣaɾ/",
-      "pronunciationHintAr": "ييغار",
-      "internalRank": 10,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يصل",
-          "meaningArEg": "يوصل",
-          "glossEs": "verbo regular de movimiento",
-          "exampleEs": "Llego en diez minutos.",
-          "exampleAr": "أصل في عشر دقائق.",
-          "exampleArEg": "بوصل في عشر دقايق.",
-          "usageNoteAr": "llegar a + مكان.",
-          "commonErrorAr": "«llego a casa» صحيحة بـa، لا بـen."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Llego en diez minutos.",
-          "ar": "أصل في عشر دقائق.",
-          "arEg": "بوصل في عشر دقايق."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "llego",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "llegas",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "llega",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "llegamos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "llegáis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "llegan",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "comprar",
-      "normalized": "comprar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/komˈpɾaɾ/",
-      "pronunciationHintAr": "كومبرار",
-      "internalRank": 11,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يشتري",
-          "meaningArEg": "يشتري",
-          "glossEs": "verbo regular -ar",
-          "exampleEs": "Quiero comprar pan.",
-          "exampleAr": "أريد شراء خبز.",
-          "exampleArEg": "عايز أشتري عيش.",
-          "usageNoteAr": "بعد querer يأتي المصدر مباشرة.",
-          "commonErrorAr": "«quiero compro» خطأ؛ الصواب quiero comprar."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Quiero comprar pan.",
-          "ar": "أريد شراء خبز.",
-          "arEg": "عايز أشتري عيش."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "compro",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "compras",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "compra",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "compramos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "compráis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "compran",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "comer",
-      "normalized": "comer",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/koˈmeɾ/",
-      "pronunciationHintAr": "كومير",
-      "internalRank": 12,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يأكل",
-          "meaningArEg": "ياكل",
-          "glossEs": "verbo regular -er",
-          "exampleEs": "Comemos a las dos.",
-          "exampleAr": "نأكل الساعة الثانية.",
-          "exampleArEg": "بناكل الساعة اتنين.",
-          "usageNoteAr": "الصيغ: como, comes, come, comemos.",
-          "commonErrorAr": "«comer» بلا تشديد على الآخر في صيغة المتكلم."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Comemos a las dos.",
-          "ar": "نأكل الساعة الثانية.",
-          "arEg": "بناكل الساعة اتنين."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "como",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "comes",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "come",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "comemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "coméis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "comen",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "beber",
-      "normalized": "beber",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/beˈβeɾ/",
-      "pronunciationHintAr": "بيبِر",
-      "internalRank": 13,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يشرب",
-          "meaningArEg": "يشرب",
-          "glossEs": "verbo regular -er",
-          "exampleEs": "Bebo mucha agua.",
-          "exampleAr": "أشرب ماء كثيرًا.",
-          "exampleArEg": "بشرب ميّة كتير.",
-          "usageNoteAr": "في إسبانيا أيضًا tomar: tomo un café.",
-          "commonErrorAr": "لا تخلط beber (يشرب) بـvivir (يعيش)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Bebo mucha agua.",
-          "ar": "أشرب ماء كثيرًا.",
-          "arEg": "بشرب ميّة كتير."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "bebo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "bebes",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "bebe",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "bebemos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "bebéis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "beben",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "vivir",
-      "normalized": "vivir",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/biˈβiɾ/",
-      "pronunciationHintAr": "بيبِير",
-      "internalRank": 14,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يعيش / يسكن",
-          "meaningArEg": "عايش",
-          "glossEs": "verbo regular -ir",
-          "exampleEs": "Vivo en Madrid.",
-          "exampleAr": "أعيش في مدريد.",
-          "exampleArEg": "عايش في مدريد.",
-          "usageNoteAr": "vivir en + مكان.",
-          "commonErrorAr": "«vivo a Madrid» خطأ؛ المكان بـen."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Vivo en Madrid.",
-          "ar": "أعيش في مدريد.",
-          "arEg": "عايش في مدريد."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "vivo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vives",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vive",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vivimos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "vivís",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "viven",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "siempre",
-      "normalized": "siempre",
-      "kind": "word",
-      "pos": "adv",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ˈsjempɾe/",
-      "pronunciationHintAr": "سييمبري",
-      "internalRank": 15,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "دائمًا",
-          "meaningArEg": "دايمًا",
-          "glossEs": "adverbio de frecuencia",
-          "exampleEs": "Siempre desayuno café.",
-          "exampleAr": "أفطر قهوة دائمًا.",
-          "exampleArEg": "بفطر قهوة دايمًا.",
-          "usageNoteAr": "عكسها nunca.",
-          "commonErrorAr": "مع النفي تصبح «no siempre» (ليس دائمًا)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Siempre desayuno café.",
-          "ar": "أفطر قهوة دائمًا.",
-          "arEg": "بفطر قهوة دايمًا."
-        }
-      ]
-    },
-    {
-      "headword": "nunca",
-      "normalized": "nunca",
-      "kind": "word",
-      "pos": "adv",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ˈnunka/",
-      "pronunciationHintAr": "نونكا",
-      "internalRank": 16,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "أبدًا / قطّ",
-          "meaningArEg": "عمره ما",
-          "glossEs": "adverbio de frecuencia negativa",
-          "exampleEs": "Nunca bebo café por la noche.",
-          "exampleAr": "لا أشرب القهوة ليلًا أبدًا.",
-          "exampleArEg": "عمري ما بشرب قهوة بالليل.",
-          "usageNoteAr": "مع النفي: «no ... nunca» جائزة أيضًا.",
-          "commonErrorAr": "«nunca no» خطأ؛ النفي واحد."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Nunca bebo café por la noche.",
-          "ar": "لا أشرب القهوة ليلًا أبدًا.",
-          "arEg": "عمري ما بشرب قهوة بالليل."
-        }
-      ]
-    },
-    {
-      "headword": "también",
-      "normalized": "también",
-      "kind": "word",
-      "pos": "adv",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/tamˈbjen/",
-      "pronunciationHintAr": "تامبيين",
-      "internalRank": 17,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "أيضًا",
-          "meaningArEg": "كمان",
-          "glossEs": "adverbio de adición",
-          "exampleEs": "Yo también quiero agua.",
-          "exampleAr": "أنا أيضًا أريد ماء.",
-          "exampleArEg": "أنا كمان عايز ميّة.",
-          "usageNoteAr": "عكسها tampoco (ولا أنا / ولا كذلك).",
-          "commonErrorAr": "«también no» ليست الصيغة الصحيحة؛ الصواب tampoco."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Yo también quiero agua.",
-          "ar": "أنا أيضًا أريد ماء.",
-          "arEg": "أنا كمان عايز ميّة."
-        }
-      ]
-    },
-    {
-      "headword": "porque",
-      "normalized": "porque",
-      "kind": "word",
-      "pos": "conj",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ˈpoɾke/",
-      "pronunciationHintAr": "بوركي",
-      "internalRank": 18,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "لأن",
-          "meaningArEg": "علشان",
-          "glossEs": "conjunción causal",
-          "exampleEs": "No voy porque estoy cansado.",
-          "exampleAr": "لا أذهب لأنني متعب.",
-          "exampleArEg": "مش رايح علشان أنا تعبان.",
-          "usageNoteAr": "كلمة واحدة لأن السبب؛ ¿por qué? منفصلتان للسؤال.",
-          "commonErrorAr": "السؤال «¿Por qué?» منفصل بمعنى «لماذا؟»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "No voy porque estoy cansado.",
-          "ar": "لا أذهب لأنني متعب.",
-          "arEg": "مش رايح علشان أنا تعبان."
-        }
-      ]
-    },
-    {
-      "headword": "entre",
-      "normalized": "entre",
-      "kind": "word",
-      "pos": "prep",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ˈentɾe/",
-      "pronunciationHintAr": "إنترِ",
-      "internalRank": 19,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "بين",
-          "meaningArEg": "بين",
-          "glossEs": "preposición de lugar/relación",
-          "exampleEs": "El banco está entre la tienda y el café.",
-          "exampleAr": "البنك بين المتجر والمقهى.",
-          "exampleArEg": "البنك بين المحل والقهوة.",
-          "usageNoteAr": "entre + اسمين بلا تغيير.",
-          "commonErrorAr": "لا تُتبع بـde: «entre de» خطأ."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El banco está entre la tienda y el café.",
-          "ar": "البنك بين المتجر والمقهى.",
-          "arEg": "البنك بين المحل والقهوة."
-        }
-      ]
-    },
-    {
-      "headword": "desde",
-      "normalized": "desde",
-      "kind": "word",
-      "pos": "prep",
-      "gender": null,
-      "plural": null,
-      "level": "A1",
-      "register": "neutral",
-      "ipa": "/ˈdesde/",
-      "pronunciationHintAr": "ديسدي",
-      "internalRank": 20,
-      "tags": [
-        "مفردات أساسية",
-        "band3"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "منذ / من",
-          "meaningArEg": "من",
-          "glossEs": "preposición de punto de partida",
-          "exampleEs": "Trabajo desde las ocho.",
-          "exampleAr": "أعمل من الثامنة.",
-          "exampleArEg": "بشتغل من تمانية.",
-          "usageNoteAr": "للزمن والمكان كبداية.",
-          "commonErrorAr": "للأصل والانتساب نستخدم de لا desde."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Trabajo desde las ocho.",
-          "ar": "أعمل من الثامنة.",
-          "arEg": "بشتغل من تمانية."
-        }
-      ]
+     "senseNo": 1,
+     "meaningArFusha": "يريد / يحب",
+     "meaningArEg": "عايز",
+     "glossEs": "verbo irregular de volición",
+     "exampleEs": "Quiero un café.",
+     "exampleAr": "أريد قهوة.",
+     "exampleArEg": "عايز قهوة.",
+     "usageNoteAr": "الصيغ: quiero, quieres, quiere. e ⇒ ie.",
+     "commonErrorAr": "«quiero un café» صحيحة؛ «quiero de café» خطأ."
     }
-  ]
+   ],
+   "examples": [
+    {
+     "es": "Quiero un café.",
+     "ar": "أريد قهوة.",
+     "arEg": "عايز قهوة."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "quiero",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quieres",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quiere",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queremos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queréis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quieren",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quise",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quisiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quiso",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quisimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quisisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quisieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quería",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quería",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queríamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queríais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "querrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quiera",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quieras",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quiera",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queramos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "queráis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "quieran",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "queriendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "querido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "poder",
+   "normalized": "poder",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/poˈðeɾ/",
+   "pronunciationHintAr": "بوذير",
+   "internalRank": 2,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يستطيع",
+     "meaningArEg": "يقدر",
+     "glossEs": "verbo irregular de capacidad/permiso",
+     "exampleEs": "¿Puedo pasar?",
+     "exampleAr": "هل أستطيع المرور؟",
+     "exampleArEg": "أقدر أعدّي؟",
+     "usageNoteAr": "o ⇒ ue: puedo, puedes, puede.",
+     "commonErrorAr": "«podo» غير صحيحة؛ الصواب puedo."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Puedo pasar?",
+     "ar": "هل أستطيع المرور؟",
+     "arEg": "أقدر أعدّي؟"
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "puedo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puedes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puede",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pueden",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pude",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pudiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pudo",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pudimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pudisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pudieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pueda",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puedas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pueda",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "podáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puedan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "pudiendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "podido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "saber",
+   "normalized": "saber",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/saˈβeɾ/",
+   "pronunciationHintAr": "سابير",
+   "internalRank": 3,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعرف (معلومة) / يعرف كيف",
+     "meaningArEg": "عارف",
+     "glossEs": "verbo de conocimiento",
+     "exampleEs": "No sé dónde está.",
+     "exampleAr": "لا أعرف أين هو.",
+     "exampleArEg": "مش عارف هو فين.",
+     "usageNoteAr": "saber للمعلومة، conocer للأشخاص والأماكن.",
+     "commonErrorAr": "«No conozco dónde» خطأ؛ المعلومة تكون بـsaber."
+    }
+   ],
+   "examples": [
+    {
+     "es": "No sé dónde está.",
+     "ar": "لا أعرف أين هو.",
+     "arEg": "مش عارف هو فين."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "sé",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabe",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saben",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supe",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supo",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "supieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sabrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepa",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepa",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sepan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "sabiendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "sabido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "ver",
+   "normalized": "ver",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/beɾ/",
+   "pronunciationHintAr": "بير",
+   "internalRank": 4,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يرى",
+     "meaningArEg": "يشوف",
+     "glossEs": "verbo de percepción visual",
+     "exampleEs": "No veo nada.",
+     "exampleAr": "لا أرى شيئًا.",
+     "exampleArEg": "مش شايف حاجة.",
+     "usageNoteAr": "v تُنطق قريبة من b.",
+     "commonErrorAr": "لا تخلط ver (يرى) بـmirar (ينظر إلى)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "No veo nada.",
+     "ar": "لا أرى شيئًا.",
+     "arEg": "مش شايف حاجة."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "veo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ves",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ve",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ven",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vi",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vio",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "visteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vea",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vea",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vean",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "viendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "visto",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "decir",
+   "normalized": "decir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/deˈθiɾ/",
+   "pronunciationHintAr": "ديثير",
+   "internalRank": 5,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يقول",
+     "meaningArEg": "يقول",
+     "glossEs": "verbo irregular de comunicación",
+     "exampleEs": "¿Cómo se dice…?",
+     "exampleAr": "كيف نقول…؟",
+     "exampleArEg": "بنقول … إزاي؟",
+     "usageNoteAr": "الصيغ: digo, dices, dice. واسم الفاعل dicho.",
+     "commonErrorAr": "«digo» لا تُنطق «ديغو» بقاف؛ g هنا خفيفة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Cómo se dice…?",
+     "ar": "كيف نقول…؟",
+     "arEg": "بنقول … إزاي؟"
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "digo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dices",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dice",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dicen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dije",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dijiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dijo",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dijimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dijisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dijeron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "decían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dirás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dirá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dirán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dirías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dirían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "digas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "digamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "digáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "digan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "diciendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "dicho",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "venir",
+   "normalized": "venir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/beˈniɾ/",
+   "pronunciationHintAr": "بينير",
+   "internalRank": 6,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يأتي",
+     "meaningArEg": "ييجي",
+     "glossEs": "verbo irregular de movimiento hacia el hablante",
+     "exampleEs": "¿Vienes conmigo?",
+     "exampleAr": "هل تأتي معي؟",
+     "exampleArEg": "تيجي معايا؟",
+     "usageNoteAr": "e ⇒ ie: vengo, vienes, viene.",
+     "commonErrorAr": "«venir a casa» صحيحة، لكن «voy venir» خطأ؛ الصواب voy a venir."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Vienes conmigo?",
+     "ar": "هل تأتي معي؟",
+     "arEg": "تيجي معايا؟"
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "vengo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vienes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viene",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vienen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vine",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viniste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vino",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vinimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vinisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vinieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veníamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "veníais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vendrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vengas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "venga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vengamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vengáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vengan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "viniendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "venido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "dar",
+   "normalized": "dar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/daɾ/",
+   "pronunciationHintAr": "دار",
+   "internalRank": 7,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعطي",
+     "meaningArEg": "يدّي",
+     "glossEs": "verbo irregular",
+     "exampleEs": "Dame la llave, por favor.",
+     "exampleAr": "أعطني المفتاح، من فضلك.",
+     "exampleArEg": "إدّيني المفتاح، لو سمحت.",
+     "usageNoteAr": "الصيغ: doy, das, da, damos.",
+     "commonErrorAr": "«doy» لا تُنطق «دوي» مع تشديد زائد."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Dame la llave, por favor.",
+     "ar": "أعطني المفتاح، من فضلك.",
+     "arEg": "إدّيني المفتاح، لو سمحت."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "doy",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "das",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "da",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "damos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dais",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "di",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "diste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dio",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "disteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "darás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "darán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "darías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "daríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "darían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dé",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "des",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "dé",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "demos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "deis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "den",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "dando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "dado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "poner",
+   "normalized": "poner",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/poˈneɾ/",
+   "pronunciationHintAr": "بونير",
+   "internalRank": 8,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يضع",
+     "meaningArEg": "يحط",
+     "glossEs": "verbo irregular",
+     "exampleEs": "Pongo el móvil aquí.",
+     "exampleAr": "أضع الموبايل هنا.",
+     "exampleArEg": "بحط الموبايل هنا.",
+     "usageNoteAr": "الصيغ: pongo, pones, pone.",
+     "commonErrorAr": "«pono» غير صحيحة؛ الصواب pongo."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Pongo el móvil aquí.",
+     "ar": "أضع الموبايل هنا.",
+     "arEg": "بحط الموبايل هنا."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "pongo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pones",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pone",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puse",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pusiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "puso",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pusimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pusisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pusieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "poníamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "poníais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pondrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pongas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "ponga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pongamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pongáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pongan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "poniendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "puesto",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "salir",
+   "normalized": "salir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/saˈliɾ/",
+   "pronunciationHintAr": "سالير",
+   "internalRank": 9,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يخرج",
+     "meaningArEg": "يخرج",
+     "glossEs": "verbo irregular",
+     "exampleEs": "Salgo a las ocho.",
+     "exampleAr": "أخرج الساعة الثامنة.",
+     "exampleArEg": "بخرج الساعة تمانية.",
+     "usageNoteAr": "الصيغ: salgo, sales, sale.",
+     "commonErrorAr": "«salgo» بلا u قبل g، خلافًا لـllegar."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Salgo a las ocho.",
+     "ar": "أخرج الساعة الثامنة.",
+     "arEg": "بخرج الساعة تمانية."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "salgo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sales",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sale",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saliste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "saldrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salgas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salgamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salgáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "salgan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "saliendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "salido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "llegar",
+   "normalized": "llegar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ʎeˈɣaɾ/",
+   "pronunciationHintAr": "ييغار",
+   "internalRank": 10,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يصل",
+     "meaningArEg": "يوصل",
+     "glossEs": "verbo regular de movimiento",
+     "exampleEs": "Llego en diez minutos.",
+     "exampleAr": "أصل في عشر دقائق.",
+     "exampleArEg": "بوصل في عشر دقايق.",
+     "usageNoteAr": "llegar a + مكان.",
+     "commonErrorAr": "«llego a casa» صحيحة بـa، لا بـen."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Llego en diez minutos.",
+     "ar": "أصل في عشر دقائق.",
+     "arEg": "بوصل في عشر دقايق."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "llego",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llega",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegué",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegue",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegues",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "llegue",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "lleguemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "lleguéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "lleguen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "llegando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "llegado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "comprar",
+   "normalized": "comprar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/komˈpɾaɾ/",
+   "pronunciationHintAr": "كومبرار",
+   "internalRank": 11,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يشتري",
+     "meaningArEg": "يشتري",
+     "glossEs": "verbo regular -ar",
+     "exampleEs": "Quiero comprar pan.",
+     "exampleAr": "أريد شراء خبز.",
+     "exampleArEg": "عايز أشتري عيش.",
+     "usageNoteAr": "بعد querer يأتي المصدر مباشرة.",
+     "commonErrorAr": "«quiero compro» خطأ؛ الصواب quiero comprar."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quiero comprar pan.",
+     "ar": "أريد شراء خبز.",
+     "arEg": "عايز أشتري عيش."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "compro",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compras",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compra",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compramos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compráis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compran",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compré",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compró",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compramos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compraríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compre",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compres",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compre",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compremos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compréis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "compren",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "comprando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "comprado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "comer",
+   "normalized": "comer",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/koˈmeɾ/",
+   "pronunciationHintAr": "كومير",
+   "internalRank": 12,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يأكل",
+     "meaningArEg": "ياكل",
+     "glossEs": "verbo regular -er",
+     "exampleEs": "Comemos a las dos.",
+     "exampleAr": "نأكل الساعة الثانية.",
+     "exampleArEg": "بناكل الساعة اتنين.",
+     "usageNoteAr": "الصيغ: como, comes, come, comemos.",
+     "commonErrorAr": "«comer» بلا تشديد على الآخر في صيغة المتكلم."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Comemos a las dos.",
+     "ar": "نأكل الساعة الثانية.",
+     "arEg": "بناكل الساعة اتنين."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "como",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "come",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "coméis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comeré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comerás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comerá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comeremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comeréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comerán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comerías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comeríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comeríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comerían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "coma",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "coma",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "coman",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "comiendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "comido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "beber",
+   "normalized": "beber",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/beˈβeɾ/",
+   "pronunciationHintAr": "بيبِر",
+   "internalRank": 13,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يشرب",
+     "meaningArEg": "يشرب",
+     "glossEs": "verbo regular -er",
+     "exampleEs": "Bebo mucha agua.",
+     "exampleAr": "أشرب ماء كثيرًا.",
+     "exampleArEg": "بشرب ميّة كتير.",
+     "usageNoteAr": "في إسبانيا أيضًا tomar: tomo un café.",
+     "commonErrorAr": "لا تخلط beber (يشرب) بـvivir (يعيش)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Bebo mucha agua.",
+     "ar": "أشرب ماء كثيرًا.",
+     "arEg": "بشرب ميّة كتير."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "bebo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebe",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beben",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beberían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beba",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beba",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "bebáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "beban",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "bebiendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "bebido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "vivir",
+   "normalized": "vivir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/biˈβiɾ/",
+   "pronunciationHintAr": "بيبِير",
+   "internalRank": 14,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعيش / يسكن",
+     "meaningArEg": "عايش",
+     "glossEs": "verbo regular -ir",
+     "exampleEs": "Vivo en Madrid.",
+     "exampleAr": "أعيش في مدريد.",
+     "exampleArEg": "عايش في مدريد.",
+     "usageNoteAr": "vivir en + مكان.",
+     "commonErrorAr": "«vivo a Madrid» خطأ؛ المكان بـen."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vivo en Madrid.",
+     "ar": "أعيش في مدريد.",
+     "arEg": "عايش في مدريد."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "vivo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vives",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vive",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viven",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viví",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivirás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivirá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivirán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivirías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viviríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivirían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viva",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viva",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "viváis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "vivan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "viviendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "vivido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "siempre",
+   "normalized": "siempre",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈsjempɾe/",
+   "pronunciationHintAr": "سييمبري",
+   "internalRank": 15,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "دائمًا",
+     "meaningArEg": "دايمًا",
+     "glossEs": "adverbio de frecuencia",
+     "exampleEs": "Siempre desayuno café.",
+     "exampleAr": "أفطر قهوة دائمًا.",
+     "exampleArEg": "بفطر قهوة دايمًا.",
+     "usageNoteAr": "عكسها nunca.",
+     "commonErrorAr": "مع النفي تصبح «no siempre» (ليس دائمًا)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Siempre desayuno café.",
+     "ar": "أفطر قهوة دائمًا.",
+     "arEg": "بفطر قهوة دايمًا."
+    }
+   ]
+  },
+  {
+   "headword": "nunca",
+   "normalized": "nunca",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈnunka/",
+   "pronunciationHintAr": "نونكا",
+   "internalRank": 16,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أبدًا / قطّ",
+     "meaningArEg": "عمره ما",
+     "glossEs": "adverbio de frecuencia negativa",
+     "exampleEs": "Nunca bebo café por la noche.",
+     "exampleAr": "لا أشرب القهوة ليلًا أبدًا.",
+     "exampleArEg": "عمري ما بشرب قهوة بالليل.",
+     "usageNoteAr": "مع النفي: «no ... nunca» جائزة أيضًا.",
+     "commonErrorAr": "«nunca no» خطأ؛ النفي واحد."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Nunca bebo café por la noche.",
+     "ar": "لا أشرب القهوة ليلًا أبدًا.",
+     "arEg": "عمري ما بشرب قهوة بالليل."
+    }
+   ]
+  },
+  {
+   "headword": "también",
+   "normalized": "también",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/tamˈbjen/",
+   "pronunciationHintAr": "تامبيين",
+   "internalRank": 17,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أيضًا",
+     "meaningArEg": "كمان",
+     "glossEs": "adverbio de adición",
+     "exampleEs": "Yo también quiero agua.",
+     "exampleAr": "أنا أيضًا أريد ماء.",
+     "exampleArEg": "أنا كمان عايز ميّة.",
+     "usageNoteAr": "عكسها tampoco (ولا أنا / ولا كذلك).",
+     "commonErrorAr": "«también no» ليست الصيغة الصحيحة؛ الصواب tampoco."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Yo también quiero agua.",
+     "ar": "أنا أيضًا أريد ماء.",
+     "arEg": "أنا كمان عايز ميّة."
+    }
+   ]
+  },
+  {
+   "headword": "porque",
+   "normalized": "porque",
+   "kind": "word",
+   "pos": "conj",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈpoɾke/",
+   "pronunciationHintAr": "بوركي",
+   "internalRank": 18,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لأن",
+     "meaningArEg": "علشان",
+     "glossEs": "conjunción causal",
+     "exampleEs": "No voy porque estoy cansado.",
+     "exampleAr": "لا أذهب لأنني متعب.",
+     "exampleArEg": "مش رايح علشان أنا تعبان.",
+     "usageNoteAr": "كلمة واحدة لأن السبب؛ ¿por qué? منفصلتان للسؤال.",
+     "commonErrorAr": "السؤال «¿Por qué?» منفصل بمعنى «لماذا؟»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "No voy porque estoy cansado.",
+     "ar": "لا أذهب لأنني متعب.",
+     "arEg": "مش رايح علشان أنا تعبان."
+    }
+   ]
+  },
+  {
+   "headword": "entre",
+   "normalized": "entre",
+   "kind": "word",
+   "pos": "prep",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈentɾe/",
+   "pronunciationHintAr": "إنترِ",
+   "internalRank": 19,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بين",
+     "meaningArEg": "بين",
+     "glossEs": "preposición de lugar/relación",
+     "exampleEs": "El banco está entre la tienda y el café.",
+     "exampleAr": "البنك بين المتجر والمقهى.",
+     "exampleArEg": "البنك بين المحل والقهوة.",
+     "usageNoteAr": "entre + اسمين بلا تغيير.",
+     "commonErrorAr": "لا تُتبع بـde: «entre de» خطأ."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El banco está entre la tienda y el café.",
+     "ar": "البنك بين المتجر والمقهى.",
+     "arEg": "البنك بين المحل والقهوة."
+    }
+   ]
+  },
+  {
+   "headword": "desde",
+   "normalized": "desde",
+   "kind": "word",
+   "pos": "prep",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈdesde/",
+   "pronunciationHintAr": "ديسدي",
+   "internalRank": 20,
+   "tags": [
+    "مفردات أساسية",
+    "band3"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "منذ / من",
+     "meaningArEg": "من",
+     "glossEs": "preposición de punto de partida",
+     "exampleEs": "Trabajo desde las ocho.",
+     "exampleAr": "أعمل من الثامنة.",
+     "exampleArEg": "بشتغل من تمانية.",
+     "usageNoteAr": "للزمن والمكان كبداية.",
+     "commonErrorAr": "للأصل والانتساب نستخدم de لا desde."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Trabajo desde las ocho.",
+     "ar": "أعمل من الثامنة.",
+     "arEg": "بشتغل من تمانية."
+    }
+   ]
+  }
+ ]
 }

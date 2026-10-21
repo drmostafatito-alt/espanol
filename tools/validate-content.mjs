@@ -410,7 +410,7 @@ lines.push('');
 lines.push('| المقياس | القيمة | الهدف النهائي |');
 lines.push('| --- | --- | --- |');
 lines.push(`| ملفات الدروس | ${lessonFiles.length} | 236 درسًا |`);
-lines.push(`| مداخل مفردات فريدة | ${vocabEntries.size} | ≥ 5000 |`);
+lines.push(`| مداخل مفردات فريدة | ${vocabEntries.size} | ≥ 8000 |`);
 lines.push(`| تمارين | ${exerciseCount} | — |`);
 lines.push(`| أنواع تمارين مستخدمة | ${typeSet.size} من 28 | 28 |`);
 lines.push(`| كلمات تحريرية عربية | ${arabicWords} | ≥ 7000 (عربي + إسباني) |`);

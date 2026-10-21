@@ -1,754 +1,1060 @@
 {
-  "schemaVersion": "1.0.0",
-  "bundleSlug": "tr-shared",
-  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنتج بعد.",
-  "source": {
-    "title": "مفردات السفر (المطار والفندق) — إعداد داخلي لمراجعة بشرية قبل النشر",
-    "url": "",
-    "license": "internal-draft",
-    "accessedAt": "2026-10-21",
-    "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأن الكلمات الأكثر شيوعًا."
-  },
-  "entries": [
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "tr-shared",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنتج بعد.",
+ "source": {
+  "title": "مفردات السفر (المطار والفندق) — إعداد داخلي لمراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأن الكلمات الأكثر شيوعًا."
+ },
+ "entries": [
+  {
+   "headword": "vuelo",
+   "normalized": "vuelo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈbwelo/",
+   "pronunciationHintAr": "بويلو",
+   "internalRank": 1,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
     {
-      "headword": "vuelo",
-      "normalized": "vuelo",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈbwelo/",
-      "pronunciationHintAr": "بويلو",
-      "internalRank": 1,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "رحلة جوية",
-          "meaningArEg": "طيرانة/رحلة",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Mi vuelo sale a las siete.",
-          "exampleAr": "رحلتي تنطلق الساعة السابعة.",
-          "exampleArEg": "رحلتي بتقوم الساعة سبعة.",
-          "usageNoteAr": "vuelo = الرحلة، volar = يطير.",
-          "commonErrorAr": "لا تخلط vuelo (رحلة) بـvuelta (عودة)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Mi vuelo sale a las siete.",
-          "ar": "رحلتي تنطلق الساعة السابعة.",
-          "arEg": "رحلتي بتقوم الساعة سبعة."
-        }
-      ]
-    },
-    {
-      "headword": "aeropuerto",
-      "normalized": "aeropuerto",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/aeɾoˈpweɾto/",
-      "pronunciationHintAr": "أيروبويرتو",
-      "internalRank": 2,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مطار",
-          "meaningArEg": "مطار",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El aeropuerto está lejos.",
-          "exampleAr": "المطار بعيد.",
-          "exampleArEg": "المطار بعيد.",
-          "usageNoteAr": "en el aeropuerto = في المطار.",
-          "commonErrorAr": "«la aeropuerto» خطأ؛ مذكر."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El aeropuerto está lejos.",
-          "ar": "المطار بعيد.",
-          "arEg": "المطار بعيد."
-        }
-      ]
-    },
-    {
-      "headword": "billete",
-      "normalized": "billete",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/biˈʎete/",
-      "pronunciationHintAr": "بيييتي",
-      "internalRank": 3,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "تذكرة",
-          "meaningArEg": "تذكرة",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Aquí tiene su billete.",
-          "exampleAr": "تفضل تذكرتك.",
-          "exampleArEg": "اتفضل تذكرتك.",
-          "usageNoteAr": "في أمريكا اللاتينية: boleto/pasaje.",
-          "commonErrorAr": "«la billete» خطأ؛ مذكر."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Aquí tiene su billete.",
-          "ar": "تفضل تذكرتك.",
-          "arEg": "اتفضل تذكرتك."
-        }
-      ]
-    },
-    {
-      "headword": "puerta",
-      "normalized": "puerta",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈpweɾta/",
-      "pronunciationHintAr": "بويرتا",
-      "internalRank": 4,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "بوابة (في المطار) / باب",
-          "meaningArEg": "بوابة",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "El vuelo sale por la puerta 12.",
-          "exampleAr": "الرحلة من البوابة 12.",
-          "exampleArEg": "الرحلة من بوابة 12.",
-          "usageNoteAr": "puerta de embarque = بوابة الصعود.",
-          "commonErrorAr": "لا تخلط puerta (باب) بـpuerto (ميناء)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El vuelo sale por la puerta 12.",
-          "ar": "الرحلة من البوابة 12.",
-          "arEg": "الرحلة من بوابة 12."
-        }
-      ]
-    },
-    {
-      "headword": "embarque",
-      "normalized": "embarque",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/emˈbaɾke/",
-      "pronunciationHintAr": "إمباركي",
-      "internalRank": 5,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الصعود إلى الطائرة",
-          "meaningArEg": "الصعود للطيارة",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El embarque empieza a las seis.",
-          "exampleAr": "الصعود يبدأ الساعة السادسة.",
-          "exampleArEg": "الصعود بيبدأ الساعة ستة.",
-          "usageNoteAr": "tarjeta de embarque = بطاقة الصعود.",
-          "commonErrorAr": "«embarcación» قارب، وليست الصعود."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El embarque empieza a las seis.",
-          "ar": "الصعود يبدأ الساعة السادسة.",
-          "arEg": "الصعود بيبدأ الساعة ستة."
-        }
-      ]
-    },
-    {
-      "headword": "retraso",
-      "normalized": "retraso",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/reˈtɾaso/",
-      "pronunciationHintAr": "ريتراسو",
-      "internalRank": 6,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "تأخير",
-          "meaningArEg": "تأخير",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Hay un retraso de dos horas.",
-          "exampleAr": "هناك تأخير ساعتين.",
-          "exampleArEg": "في تأخير ساعتين.",
-          "usageNoteAr": "con retraso = متأخرًا؛ llegar con retraso = يصل متأخرًا.",
-          "commonErrorAr": "«retrasado» صفة الشخص المتأخر لا التأخير نفسه."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Hay un retraso de dos horas.",
-          "ar": "هناك تأخير ساعتين.",
-          "arEg": "في تأخير ساعتين."
-        }
-      ]
-    },
-    {
-      "headword": "equipaje",
-      "normalized": "equipaje",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ekiˈpaxe/",
-      "pronunciationHintAr": "إكيباتشي",
-      "internalRank": 7,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الأمتعة",
-          "meaningArEg": "الشنط",
-          "glossEs": "sustantivo masculino colectivo",
-          "exampleEs": "Mi equipaje es esta maleta.",
-          "exampleAr": "أمتعتي هي هذه الحقيبة.",
-          "exampleArEg": "شنطي هي الشنطة دي.",
-          "usageNoteAr": "equipaje de mano = الأمتعة اليدوية.",
-          "commonErrorAr": "«equipajes» نادر في الكلام اليومي."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Mi equipaje es esta maleta.",
-          "ar": "أمتعتي هي هذه الحقيبة.",
-          "arEg": "شنطي هي الشنطة دي."
-        }
-      ]
-    },
-    {
-      "headword": "facturar",
-      "normalized": "facturar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/faktuˈɾaɾ/",
-      "pronunciationHintAr": "فاكتورار",
-      "internalRank": 8,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يسجّل الأمتعة / يصدر فاتورة",
-          "meaningArEg": "يودّع الشنطة",
-          "glossEs": "verbo regular -ar",
-          "exampleEs": "Quiero facturar esta maleta.",
-          "exampleAr": "أريد تسجيل هذه الحقيبة.",
-          "exampleArEg": "عايز أودّع الشنطة دي.",
-          "usageNoteAr": "في المطار: facturar el equipaje. وفي المحلات: facturar = يصدر فاتورة.",
-          "commonErrorAr": "«facturo la maleta» صحيحة، لكن بلا «a» قبله."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Quiero facturar esta maleta.",
-          "ar": "أريد تسجيل هذه الحقيبة.",
-          "arEg": "عايز أودّع الشنطة دي."
-        }
-      ]
-    },
-    {
-      "headword": "asiento",
-      "normalized": "asiento",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/aˈsjento/",
-      "pronunciationHintAr": "أسيينتو",
-      "internalRank": 9,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مقعد",
-          "meaningArEg": "كرسي/مقعد",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "¿Puedo cambiar de asiento?",
-          "exampleAr": "هل أستطيع تغيير مقعدي؟",
-          "exampleArEg": "ممكن أغير كرسيي؟",
-          "usageNoteAr": "asiento de ventanilla = مقعد النافذة، de pasillo = الممر.",
-          "commonErrorAr": "لا تخلط asiento (مقعد) بـacento (نبر)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Puedo cambiar de asiento?",
-          "ar": "هل أستطيع تغيير مقعدي؟",
-          "arEg": "ممكن أغير كرسيي؟"
-        }
-      ]
-    },
-    {
-      "headword": "aduanas",
-      "normalized": "aduanas",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/aˈðwanas/",
-      "pronunciationHintAr": "أذواناس",
-      "internalRank": 10,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الجمارك",
-          "meaningArEg": "الجمارك",
-          "glossEs": "sustantivo femenino plural",
-          "exampleEs": "Tiene que pasar por aduanas.",
-          "exampleAr": "عليك المرور بالجمارك.",
-          "exampleArEg": "لازم تعدّي من الجمارك.",
-          "usageNoteAr": "تأتي جمعًا عادة: las aduanas.",
-          "commonErrorAr": "«la aduana» تستخدم مفردة في سياقات رسمية، والشائع الجمع."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Tiene que pasar por aduanas.",
-          "ar": "عليك المرور بالجمارك.",
-          "arEg": "لازم تعدّي من الجمارك."
-        }
-      ]
-    },
-    {
-      "headword": "reserva",
-      "normalized": "reserva",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/reˈseɾβa/",
-      "pronunciationHintAr": "ريسيرفا",
-      "internalRank": 11,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "حجز",
-          "meaningArEg": "حجز",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "Tengo una reserva a nombre de Omar.",
-          "exampleAr": "عندي حجز باسم عمر.",
-          "exampleArEg": "عندي حجز باسم عمر.",
-          "usageNoteAr": "reservar = يحجز؛ a nombre de = باسم.",
-          "commonErrorAr": "«reservación» أمريكية لاتينية؛ في إسبانيا reserva."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Tengo una reserva a nombre de Omar.",
-          "ar": "عندي حجز باسم عمر.",
-          "arEg": "عندي حجز باسم عمر."
-        }
-      ]
-    },
-    {
-      "headword": "habitación doble",
-      "normalized": "habitación doble",
-      "kind": "word",
-      "pos": "phrase",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/aβitaˈθjon ˈdoβle/",
-      "pronunciationHintAr": "أبيتاثيون دوبلي",
-      "internalRank": 12,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "غرفة مزدوجة",
-          "meaningArEg": "أوضة دوبل",
-          "glossEs": "expresión nominal femenina",
-          "exampleEs": "Quiero una habitación doble.",
-          "exampleAr": "أريد غرفة مزدوجة.",
-          "exampleArEg": "عايز أوضة دوبل.",
-          "usageNoteAr": "habitación individual = فردية، doble = مزدوجة بسرير كبير أو سريرين.",
-          "commonErrorAr": "«habitación doble para una persona» مقبولة لكن تُدفع كاملة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Quiero una habitación doble.",
-          "ar": "أريد غرفة مزدوجة.",
-          "arEg": "عايز أوضة دوبل."
-        }
-      ]
-    },
-    {
-      "headword": "cama",
-      "normalized": "cama",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈkama/",
-      "pronunciationHintAr": "كامَ",
-      "internalRank": 13,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "سرير",
-          "meaningArEg": "سرير",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "La cama es muy cómoda.",
-          "exampleAr": "السرير مريح جدًا.",
-          "exampleArEg": "السرير مريح جدًا.",
-          "usageNoteAr": "cama de matrimonio = سرير مزدوج كبير.",
-          "commonErrorAr": "«el cama» خطأ؛ مؤنث."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La cama es muy cómoda.",
-          "ar": "السرير مريح جدًا.",
-          "arEg": "السرير مريح جدًا."
-        }
-      ]
-    },
-    {
-      "headword": "desayuno",
-      "normalized": "desayuno",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/desaˈʝuno/",
-      "pronunciationHintAr": "ديسايونو",
-      "internalRank": 14,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "فطور",
-          "meaningArEg": "فطار",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El desayuno es a las ocho.",
-          "exampleAr": "الفطور الساعة الثامنة.",
-          "exampleArEg": "الفطار الساعة تمانية.",
-          "usageNoteAr": "desayuno incluido = فطور مشمول.",
-          "commonErrorAr": "desayunar فعل، desayuno اسم."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El desayuno es a las ocho.",
-          "ar": "الفطور الساعة الثامنة.",
-          "arEg": "الفطار الساعة تمانية."
-        }
-      ]
-    },
-    {
-      "headword": "factura",
-      "normalized": "factura",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/fakˈtuɾa/",
-      "pronunciationHintAr": "فاكتورا",
-      "internalRank": 15,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "فاتورة",
-          "meaningArEg": "فاتورة",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "¿Me puede dar la factura?",
-          "exampleAr": "هل يمكنك إعطائي الفاتورة؟",
-          "exampleArEg": "ممكن تديني الفاتورة؟",
-          "usageNoteAr": "في الفندق: factura = فاتورة الإقامة.",
-          "commonErrorAr": "«factura» ليست «facturar»؛ الأولى اسم والثانية فعل."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Me puede dar la factura?",
-          "ar": "هل يمكنك إعطائي الفاتورة؟",
-          "arEg": "ممكن تديني الفاتورة؟"
-        }
-      ]
-    },
-    {
-      "headword": "llegada",
-      "normalized": "llegada",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ʎeˈɣaða/",
-      "pronunciationHintAr": "ييغاذا",
-      "internalRank": 16,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الوصول",
-          "meaningArEg": "الوصول",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "La llegada está prevista a las diez.",
-          "exampleAr": "الوصول المتوقع الساعة العاشرة.",
-          "exampleArEg": "الوصول المتوقع الساعة عشرة.",
-          "usageNoteAr": "salida = المغادرة، llegada = الوصول.",
-          "commonErrorAr": "لا تخلط llegada (وصول) بـllegar (يصل) فالأولى اسم."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La llegada está prevista a las diez.",
-          "ar": "الوصول المتوقع الساعة العاشرة.",
-          "arEg": "الوصول المتوقع الساعة عشرة."
-        }
-      ]
-    },
-    {
-      "headword": "salida",
-      "normalized": "salida",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/saˈliða/",
-      "pronunciationHintAr": "ساليذا",
-      "internalRank": 17,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "المغادرة / مخرج",
-          "meaningArEg": "الخروج",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "¿A qué hora es la salida?",
-          "exampleAr": "في أي ساعة المغادرة؟",
-          "exampleArEg": "المغادرة الساعة كام؟",
-          "usageNoteAr": "salida de emergencia = مخرج الطوارئ.",
-          "commonErrorAr": "«salida» اسم؛ «salir» فعل."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿A qué hora es la salida?",
-          "ar": "في أي ساعة المغادرة؟",
-          "arEg": "المغادرة الساعة كام؟"
-        }
-      ]
-    },
-    {
-      "headword": "pasajero",
-      "normalized": "pasajero",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/pasaˈxeɾo/",
-      "pronunciationHintAr": "باساتشيرو",
-      "internalRank": 18,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مسافر",
-          "meaningArEg": "مسافر",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Los pasajeros deben esperar aquí.",
-          "exampleAr": "على المسافرين الانتظار هنا.",
-          "exampleArEg": "المسافرين لازم يستنوا هنا.",
-          "usageNoteAr": "pasajera للمؤنث.",
-          "commonErrorAr": "«pasajero» ليست صفة للمرور السريع."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Los pasajeros deben esperar aquí.",
-          "ar": "على المسافرين الانتظار هنا.",
-          "arEg": "المسافرين لازم يستنوا هنا."
-        }
-      ]
-    },
-    {
-      "headword": "tarjeta de crédito",
-      "normalized": "tarjeta de crédito",
-      "kind": "word",
-      "pos": "phrase",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/taɾˈxeta de ˈkɾeðito/",
-      "pronunciationHintAr": "تارخيتا دي كريذيتو",
-      "internalRank": 19,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "بطاقة ائتمان",
-          "meaningArEg": "فيزا",
-          "glossEs": "expresión nominal femenina",
-          "exampleEs": "¿Puedo pagar con tarjeta de crédito?",
-          "exampleAr": "هل أستطيع الدفع ببطاقة الائتمان؟",
-          "exampleArEg": "ممكن أدفع بالفيزا؟",
-          "usageNoteAr": "pagar con tarjeta = دفع بالبطاقة؛ en efectivo = نقدًا.",
-          "commonErrorAr": "«pagar por tarjeta» أقل شيوعًا؛ الأفضل con tarjeta."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Puedo pagar con tarjeta de crédito?",
-          "ar": "هل أستطيع الدفع ببطاقة الائتمان؟",
-          "arEg": "ممكن أدفع بالفيزا؟"
-        }
-      ]
-    },
-    {
-      "headword": "efectivo",
-      "normalized": "efectivo",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/efeɡˈtiβo/",
-      "pronunciationHintAr": "إفيختيبو",
-      "internalRank": 20,
-      "tags": [
-        "سفر",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "نقود سائلة",
-          "meaningArEg": "كاش",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Lo siento, no aceptamos efectivo.",
-          "exampleAr": "آسف، لا نقبل النقد.",
-          "exampleArEg": "معلش، مش بنقبل كاش.",
-          "usageNoteAr": "en efectivo = نقدًا.",
-          "commonErrorAr": "«efectivo» ليست «فعال» بل نقد."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Lo siento, no aceptamos efectivo.",
-          "ar": "آسف، لا نقبل النقد.",
-          "arEg": "معلش، مش بنقبل كاش."
-        }
-      ]
+     "senseNo": 1,
+     "meaningArFusha": "رحلة جوية",
+     "meaningArEg": "طيرانة/رحلة",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Mi vuelo sale a las siete.",
+     "exampleAr": "رحلتي تنطلق الساعة السابعة.",
+     "exampleArEg": "رحلتي بتقوم الساعة سبعة.",
+     "usageNoteAr": "vuelo = الرحلة، volar = يطير.",
+     "commonErrorAr": "لا تخلط vuelo (رحلة) بـvuelta (عودة)."
     }
-  ]
+   ],
+   "examples": [
+    {
+     "es": "Mi vuelo sale a las siete.",
+     "ar": "رحلتي تنطلق الساعة السابعة.",
+     "arEg": "رحلتي بتقوم الساعة سبعة."
+    }
+   ]
+  },
+  {
+   "headword": "aeropuerto",
+   "normalized": "aeropuerto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aeɾoˈpweɾto/",
+   "pronunciationHintAr": "أيروبويرتو",
+   "internalRank": 2,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مطار",
+     "meaningArEg": "مطار",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El aeropuerto está lejos.",
+     "exampleAr": "المطار بعيد.",
+     "exampleArEg": "المطار بعيد.",
+     "usageNoteAr": "en el aeropuerto = في المطار.",
+     "commonErrorAr": "«la aeropuerto» خطأ؛ مذكر."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El aeropuerto está lejos.",
+     "ar": "المطار بعيد.",
+     "arEg": "المطار بعيد."
+    }
+   ]
+  },
+  {
+   "headword": "billete",
+   "normalized": "billete",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/biˈʎete/",
+   "pronunciationHintAr": "بيييتي",
+   "internalRank": 3,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تذكرة",
+     "meaningArEg": "تذكرة",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Aquí tiene su billete.",
+     "exampleAr": "تفضل تذكرتك.",
+     "exampleArEg": "اتفضل تذكرتك.",
+     "usageNoteAr": "في أمريكا اللاتينية: boleto/pasaje.",
+     "commonErrorAr": "«la billete» خطأ؛ مذكر."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Aquí tiene su billete.",
+     "ar": "تفضل تذكرتك.",
+     "arEg": "اتفضل تذكرتك."
+    }
+   ]
+  },
+  {
+   "headword": "puerta",
+   "normalized": "puerta",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈpweɾta/",
+   "pronunciationHintAr": "بويرتا",
+   "internalRank": 4,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بوابة (في المطار) / باب",
+     "meaningArEg": "بوابة",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "El vuelo sale por la puerta 12.",
+     "exampleAr": "الرحلة من البوابة 12.",
+     "exampleArEg": "الرحلة من بوابة 12.",
+     "usageNoteAr": "puerta de embarque = بوابة الصعود.",
+     "commonErrorAr": "لا تخلط puerta (باب) بـpuerto (ميناء)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El vuelo sale por la puerta 12.",
+     "ar": "الرحلة من البوابة 12.",
+     "arEg": "الرحلة من بوابة 12."
+    }
+   ]
+  },
+  {
+   "headword": "embarque",
+   "normalized": "embarque",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/emˈbaɾke/",
+   "pronunciationHintAr": "إمباركي",
+   "internalRank": 5,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الصعود إلى الطائرة",
+     "meaningArEg": "الصعود للطيارة",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El embarque empieza a las seis.",
+     "exampleAr": "الصعود يبدأ الساعة السادسة.",
+     "exampleArEg": "الصعود بيبدأ الساعة ستة.",
+     "usageNoteAr": "tarjeta de embarque = بطاقة الصعود.",
+     "commonErrorAr": "«embarcación» قارب، وليست الصعود."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El embarque empieza a las seis.",
+     "ar": "الصعود يبدأ الساعة السادسة.",
+     "arEg": "الصعود بيبدأ الساعة ستة."
+    }
+   ]
+  },
+  {
+   "headword": "retraso",
+   "normalized": "retraso",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/reˈtɾaso/",
+   "pronunciationHintAr": "ريتراسو",
+   "internalRank": 6,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تأخير",
+     "meaningArEg": "تأخير",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Hay un retraso de dos horas.",
+     "exampleAr": "هناك تأخير ساعتين.",
+     "exampleArEg": "في تأخير ساعتين.",
+     "usageNoteAr": "con retraso = متأخرًا؛ llegar con retraso = يصل متأخرًا.",
+     "commonErrorAr": "«retrasado» صفة الشخص المتأخر لا التأخير نفسه."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay un retraso de dos horas.",
+     "ar": "هناك تأخير ساعتين.",
+     "arEg": "في تأخير ساعتين."
+    }
+   ]
+  },
+  {
+   "headword": "equipaje",
+   "normalized": "equipaje",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ekiˈpaxe/",
+   "pronunciationHintAr": "إكيباتشي",
+   "internalRank": 7,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الأمتعة",
+     "meaningArEg": "الشنط",
+     "glossEs": "sustantivo masculino colectivo",
+     "exampleEs": "Mi equipaje es esta maleta.",
+     "exampleAr": "أمتعتي هي هذه الحقيبة.",
+     "exampleArEg": "شنطي هي الشنطة دي.",
+     "usageNoteAr": "equipaje de mano = الأمتعة اليدوية.",
+     "commonErrorAr": "«equipajes» نادر في الكلام اليومي."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mi equipaje es esta maleta.",
+     "ar": "أمتعتي هي هذه الحقيبة.",
+     "arEg": "شنطي هي الشنطة دي."
+    }
+   ]
+  },
+  {
+   "headword": "facturar",
+   "normalized": "facturar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/faktuˈɾaɾ/",
+   "pronunciationHintAr": "فاكتورار",
+   "internalRank": 8,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يسجّل الأمتعة / يصدر فاتورة",
+     "meaningArEg": "يودّع الشنطة",
+     "glossEs": "verbo regular -ar",
+     "exampleEs": "Quiero facturar esta maleta.",
+     "exampleAr": "أريد تسجيل هذه الحقيبة.",
+     "exampleArEg": "عايز أودّع الشنطة دي.",
+     "usageNoteAr": "في المطار: facturar el equipaje. وفي المحلات: facturar = يصدر فاتورة.",
+     "commonErrorAr": "«facturo la maleta» صحيحة، لكن بلا «a» قبله."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quiero facturar esta maleta.",
+     "ar": "أريد تسجيل هذه الحقيبة.",
+     "arEg": "عايز أودّع الشنطة دي."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "facturo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "factura",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facture",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "factures",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facture",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "facturen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "facturando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "facturado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "asiento",
+   "normalized": "asiento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aˈsjento/",
+   "pronunciationHintAr": "أسيينتو",
+   "internalRank": 9,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مقعد",
+     "meaningArEg": "كرسي/مقعد",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "¿Puedo cambiar de asiento?",
+     "exampleAr": "هل أستطيع تغيير مقعدي؟",
+     "exampleArEg": "ممكن أغير كرسيي؟",
+     "usageNoteAr": "asiento de ventanilla = مقعد النافذة، de pasillo = الممر.",
+     "commonErrorAr": "لا تخلط asiento (مقعد) بـacento (نبر)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Puedo cambiar de asiento?",
+     "ar": "هل أستطيع تغيير مقعدي؟",
+     "arEg": "ممكن أغير كرسيي؟"
+    }
+   ]
+  },
+  {
+   "headword": "aduanas",
+   "normalized": "aduanas",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aˈðwanas/",
+   "pronunciationHintAr": "أذواناس",
+   "internalRank": 10,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الجمارك",
+     "meaningArEg": "الجمارك",
+     "glossEs": "sustantivo femenino plural",
+     "exampleEs": "Tiene que pasar por aduanas.",
+     "exampleAr": "عليك المرور بالجمارك.",
+     "exampleArEg": "لازم تعدّي من الجمارك.",
+     "usageNoteAr": "تأتي جمعًا عادة: las aduanas.",
+     "commonErrorAr": "«la aduana» تستخدم مفردة في سياقات رسمية، والشائع الجمع."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tiene que pasar por aduanas.",
+     "ar": "عليك المرور بالجمارك.",
+     "arEg": "لازم تعدّي من الجمارك."
+    }
+   ]
+  },
+  {
+   "headword": "reserva",
+   "normalized": "reserva",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/reˈseɾβa/",
+   "pronunciationHintAr": "ريسيرفا",
+   "internalRank": 11,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حجز",
+     "meaningArEg": "حجز",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "Tengo una reserva a nombre de Omar.",
+     "exampleAr": "عندي حجز باسم عمر.",
+     "exampleArEg": "عندي حجز باسم عمر.",
+     "usageNoteAr": "reservar = يحجز؛ a nombre de = باسم.",
+     "commonErrorAr": "«reservación» أمريكية لاتينية؛ في إسبانيا reserva."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tengo una reserva a nombre de Omar.",
+     "ar": "عندي حجز باسم عمر.",
+     "arEg": "عندي حجز باسم عمر."
+    }
+   ]
+  },
+  {
+   "headword": "habitación doble",
+   "normalized": "habitación doble",
+   "kind": "word",
+   "pos": "phrase",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aβitaˈθjon ˈdoβle/",
+   "pronunciationHintAr": "أبيتاثيون دوبلي",
+   "internalRank": 12,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غرفة مزدوجة",
+     "meaningArEg": "أوضة دوبل",
+     "glossEs": "expresión nominal femenina",
+     "exampleEs": "Quiero una habitación doble.",
+     "exampleAr": "أريد غرفة مزدوجة.",
+     "exampleArEg": "عايز أوضة دوبل.",
+     "usageNoteAr": "habitación individual = فردية، doble = مزدوجة بسرير كبير أو سريرين.",
+     "commonErrorAr": "«habitación doble para una persona» مقبولة لكن تُدفع كاملة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quiero una habitación doble.",
+     "ar": "أريد غرفة مزدوجة.",
+     "arEg": "عايز أوضة دوبل."
+    }
+   ]
+  },
+  {
+   "headword": "cama",
+   "normalized": "cama",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈkama/",
+   "pronunciationHintAr": "كامَ",
+   "internalRank": 13,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سرير",
+     "meaningArEg": "سرير",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "La cama es muy cómoda.",
+     "exampleAr": "السرير مريح جدًا.",
+     "exampleArEg": "السرير مريح جدًا.",
+     "usageNoteAr": "cama de matrimonio = سرير مزدوج كبير.",
+     "commonErrorAr": "«el cama» خطأ؛ مؤنث."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La cama es muy cómoda.",
+     "ar": "السرير مريح جدًا.",
+     "arEg": "السرير مريح جدًا."
+    }
+   ]
+  },
+  {
+   "headword": "desayuno",
+   "normalized": "desayuno",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/desaˈʝuno/",
+   "pronunciationHintAr": "ديسايونو",
+   "internalRank": 14,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فطور",
+     "meaningArEg": "فطار",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El desayuno es a las ocho.",
+     "exampleAr": "الفطور الساعة الثامنة.",
+     "exampleArEg": "الفطار الساعة تمانية.",
+     "usageNoteAr": "desayuno incluido = فطور مشمول.",
+     "commonErrorAr": "desayunar فعل، desayuno اسم."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El desayuno es a las ocho.",
+     "ar": "الفطور الساعة الثامنة.",
+     "arEg": "الفطار الساعة تمانية."
+    }
+   ]
+  },
+  {
+   "headword": "factura",
+   "normalized": "factura",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/fakˈtuɾa/",
+   "pronunciationHintAr": "فاكتورا",
+   "internalRank": 15,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فاتورة",
+     "meaningArEg": "فاتورة",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "¿Me puede dar la factura?",
+     "exampleAr": "هل يمكنك إعطائي الفاتورة؟",
+     "exampleArEg": "ممكن تديني الفاتورة؟",
+     "usageNoteAr": "في الفندق: factura = فاتورة الإقامة.",
+     "commonErrorAr": "«factura» ليست «facturar»؛ الأولى اسم والثانية فعل."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Me puede dar la factura?",
+     "ar": "هل يمكنك إعطائي الفاتورة؟",
+     "arEg": "ممكن تديني الفاتورة؟"
+    }
+   ]
+  },
+  {
+   "headword": "llegada",
+   "normalized": "llegada",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ʎeˈɣaða/",
+   "pronunciationHintAr": "ييغاذا",
+   "internalRank": 16,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الوصول",
+     "meaningArEg": "الوصول",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "La llegada está prevista a las diez.",
+     "exampleAr": "الوصول المتوقع الساعة العاشرة.",
+     "exampleArEg": "الوصول المتوقع الساعة عشرة.",
+     "usageNoteAr": "salida = المغادرة، llegada = الوصول.",
+     "commonErrorAr": "لا تخلط llegada (وصول) بـllegar (يصل) فالأولى اسم."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La llegada está prevista a las diez.",
+     "ar": "الوصول المتوقع الساعة العاشرة.",
+     "arEg": "الوصول المتوقع الساعة عشرة."
+    }
+   ]
+  },
+  {
+   "headword": "salida",
+   "normalized": "salida",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/saˈliða/",
+   "pronunciationHintAr": "ساليذا",
+   "internalRank": 17,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "المغادرة / مخرج",
+     "meaningArEg": "الخروج",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "¿A qué hora es la salida?",
+     "exampleAr": "في أي ساعة المغادرة؟",
+     "exampleArEg": "المغادرة الساعة كام؟",
+     "usageNoteAr": "salida de emergencia = مخرج الطوارئ.",
+     "commonErrorAr": "«salida» اسم؛ «salir» فعل."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿A qué hora es la salida?",
+     "ar": "في أي ساعة المغادرة؟",
+     "arEg": "المغادرة الساعة كام؟"
+    }
+   ]
+  },
+  {
+   "headword": "pasajero",
+   "normalized": "pasajero",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pasaˈxeɾo/",
+   "pronunciationHintAr": "باساتشيرو",
+   "internalRank": 18,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مسافر",
+     "meaningArEg": "مسافر",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Los pasajeros deben esperar aquí.",
+     "exampleAr": "على المسافرين الانتظار هنا.",
+     "exampleArEg": "المسافرين لازم يستنوا هنا.",
+     "usageNoteAr": "pasajera للمؤنث.",
+     "commonErrorAr": "«pasajero» ليست صفة للمرور السريع."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Los pasajeros deben esperar aquí.",
+     "ar": "على المسافرين الانتظار هنا.",
+     "arEg": "المسافرين لازم يستنوا هنا."
+    }
+   ]
+  },
+  {
+   "headword": "tarjeta de crédito",
+   "normalized": "tarjeta de crédito",
+   "kind": "word",
+   "pos": "phrase",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/taɾˈxeta de ˈkɾeðito/",
+   "pronunciationHintAr": "تارخيتا دي كريذيتو",
+   "internalRank": 19,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بطاقة ائتمان",
+     "meaningArEg": "فيزا",
+     "glossEs": "expresión nominal femenina",
+     "exampleEs": "¿Puedo pagar con tarjeta de crédito?",
+     "exampleAr": "هل أستطيع الدفع ببطاقة الائتمان؟",
+     "exampleArEg": "ممكن أدفع بالفيزا؟",
+     "usageNoteAr": "pagar con tarjeta = دفع بالبطاقة؛ en efectivo = نقدًا.",
+     "commonErrorAr": "«pagar por tarjeta» أقل شيوعًا؛ الأفضل con tarjeta."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Puedo pagar con tarjeta de crédito?",
+     "ar": "هل أستطيع الدفع ببطاقة الائتمان؟",
+     "arEg": "ممكن أدفع بالفيزا؟"
+    }
+   ]
+  },
+  {
+   "headword": "efectivo",
+   "normalized": "efectivo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/efeɡˈtiβo/",
+   "pronunciationHintAr": "إفيختيبو",
+   "internalRank": 20,
+   "tags": [
+    "سفر",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نقود سائلة",
+     "meaningArEg": "كاش",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Lo siento, no aceptamos efectivo.",
+     "exampleAr": "آسف، لا نقبل النقد.",
+     "exampleArEg": "معلش، مش بنقبل كاش.",
+     "usageNoteAr": "en efectivo = نقدًا.",
+     "commonErrorAr": "«efectivo» ليست «فعال» بل نقد."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Lo siento, no aceptamos efectivo.",
+     "ar": "آسف، لا نقبل النقد.",
+     "arEg": "معلش، مش بنقبل كاش."
+    }
+   ]
+  }
+ ]
 }

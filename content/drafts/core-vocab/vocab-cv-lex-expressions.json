@@ -1,0 +1,2123 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "cv-lex-expressions",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+ "source": {
+  "title": "حزمة cv-lex-expressions — إعداد داخلي (بذور TSV قابلة للمراجعة)، تحتاج مراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزم «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة. IPA تلقائي تقريبي من قواعد الإملاء (إسبانية أوروبية) وينتظر مراجعة بشرية. الحزم مُولَّدة من tools/gen/lexicon/ (بذور TSV قابلة للمراجعة)."
+ },
+ "entries": [
+  {
+   "headword": "por favor",
+   "normalized": "por favor",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/pˈoɾ faboɾ/",
+   "pronunciationHintAr": "بور فابور",
+   "internalRank": 1,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من فضلك",
+     "meaningArEg": "لو سمحت",
+     "glossEs": null,
+     "exampleEs": "Un café con leche, por favor.",
+     "exampleAr": "قهوة باللبن من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Un café con leche, por favor.",
+     "ar": "قهوة باللبن من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "gracias",
+   "normalized": "gracias",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/gɾaθˈias/",
+   "pronunciationHintAr": "جراثياس",
+   "internalRank": 2,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شكرًا",
+     "meaningArEg": "متشكر",
+     "glossEs": null,
+     "exampleEs": "Gracias por tu ayuda.",
+     "exampleAr": "شكرًا على مساعدتك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Gracias por tu ayuda.",
+     "ar": "شكرًا على مساعدتك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "de nada",
+   "normalized": "de nada",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/dˈe nada/",
+   "pronunciationHintAr": "دي نادا",
+   "internalRank": 3,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عفوًا",
+     "meaningArEg": "العفو",
+     "glossEs": null,
+     "exampleEs": "— Muchas gracias. — De nada.",
+     "exampleAr": "— شكرًا جدًا. — العفو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "— Muchas gracias. — De nada.",
+     "ar": "— شكرًا جدًا. — العفو.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "lo siento",
+   "normalized": "lo siento",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/lˈo siento/",
+   "pronunciationHintAr": "لو سيينتو",
+   "internalRank": 4,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أنا آسف",
+     "meaningArEg": "أنا آسف",
+     "glossEs": null,
+     "exampleEs": "Lo siento, no fue mi intención.",
+     "exampleAr": "أنا آسف، ما كانش قصدي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Lo siento, no fue mi intención.",
+     "ar": "أنا آسف، ما كانش قصدي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "disculpe",
+   "normalized": "disculpe",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/diskˈulpe/",
+   "pronunciationHintAr": "ديسكولبي",
+   "internalRank": 5,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "المعذرة",
+     "meaningArEg": "عن إذنك",
+     "glossEs": null,
+     "exampleEs": "Disculpe, ¿dónde está la estación?",
+     "exampleAr": "عن إذنك، المحطة فين؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Disculpe, ¿dónde está la estación?",
+     "ar": "عن إذنك، المحطة فين؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "perdón",
+   "normalized": "perdón",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/peɾdˈon/",
+   "pronunciationHintAr": "بيردون",
+   "internalRank": 6,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "آسف أو سامحني",
+     "meaningArEg": "معلش",
+     "glossEs": null,
+     "exampleEs": "Perdón, llegué un poco tarde.",
+     "exampleAr": "معلش، وصلت متأخر شوية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Perdón, llegué un poco tarde.",
+     "ar": "معلش، وصلت متأخر شوية.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "hasta pronto",
+   "normalized": "hasta pronto",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈasta pɾonto/",
+   "pronunciationHintAr": "استا برونتو",
+   "internalRank": 7,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إلى اللقاء قريب",
+     "meaningArEg": "لسه هنشوف بعض",
+     "glossEs": null,
+     "exampleEs": "Hasta pronto, nos vemos el lunes.",
+     "exampleAr": "لسه هنشوف بعض، يوم الاثنين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hasta pronto, nos vemos el lunes.",
+     "ar": "لسه هنشوف بعض، يوم الاثنين.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "buen provecho",
+   "normalized": "buen provecho",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/bˈuen pɾobeko/",
+   "pronunciationHintAr": "بوين بروبيكو",
+   "internalRank": 8,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالهناء والشفاء",
+     "meaningArEg": "بالهنا والشفاء",
+     "glossEs": null,
+     "exampleEs": "— Buen provecho. — Gracias igualmente.",
+     "exampleAr": "— بالهنا والشفاء. — شكرًا، وإنت كمان.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "— Buen provecho. — Gracias igualmente.",
+     "ar": "— بالهنا والشفاء. — شكرًا، وإنت كمان.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "cómo estás",
+   "normalized": "cómo estás",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/kˈomo estas/",
+   "pronunciationHintAr": "كومو يستاس",
+   "internalRank": 9,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "كيف حالك",
+     "meaningArEg": "إنت عامل إيه",
+     "glossEs": null,
+     "exampleEs": "Hola, ¿cómo estás hoy?",
+     "exampleAr": "أهلاً، إنت عامل إيه النهارده؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hola, ¿cómo estás hoy?",
+     "ar": "أهلاً، إنت عامل إيه النهارده؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "muy bien",
+   "normalized": "muy bien",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈuʝ bien/",
+   "pronunciationHintAr": "موي بيين",
+   "internalRank": 10,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جيد جدًا",
+     "meaningArEg": "كويس جدًا",
+     "glossEs": null,
+     "exampleEs": "Hoy me siento muy bien.",
+     "exampleAr": "النهارده حاسس إني كويس جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hoy me siento muy bien.",
+     "ar": "النهارده حاسس إني كويس جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "más o menos",
+   "normalized": "más o menos",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/mˈas o menos/",
+   "pronunciationHintAr": "ماس و مينوس",
+   "internalRank": 11,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هكذا هكذا",
+     "meaningArEg": "كده كده",
+     "glossEs": null,
+     "exampleEs": "— ¿Qué tal el examen? — Más o menos.",
+     "exampleAr": "— إيه أخبار الامتحان؟ — كده كده.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "— ¿Qué tal el examen? — Más o menos.",
+     "ar": "— إيه أخبار الامتحان؟ — كده كده.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "no entiendo",
+   "normalized": "no entiendo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/nˈo entiendo/",
+   "pronunciationHintAr": "نو ينتييندو",
+   "internalRank": 12,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لا أفهم",
+     "meaningArEg": "مش فاهم",
+     "glossEs": null,
+     "exampleEs": "No entiendo esta palabra.",
+     "exampleAr": "مش فاهم الكلمة دي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No entiendo esta palabra.",
+     "ar": "مش فاهم الكلمة دي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "puede repetir",
+   "normalized": "puede repetir",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/puˈede ɾepetiɾ/",
+   "pronunciationHintAr": "بويدي ريبيتير",
+   "internalRank": 13,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يمكنك أن تكرر",
+     "meaningArEg": "ممكن تكرر",
+     "glossEs": null,
+     "exampleEs": "Puede repetir más despacio, por favor.",
+     "exampleAr": "ممكن تكرر أبطأ من فضلك؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Puede repetir más despacio, por favor.",
+     "ar": "ممكن تكرر أبطأ من فضلك؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "habla despacio",
+   "normalized": "habla despacio",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈabla despaθio/",
+   "pronunciationHintAr": "ابلا ديسباثيو",
+   "internalRank": 14,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تكلم ببطء",
+     "meaningArEg": "اتكلم بهدوء",
+     "glossEs": null,
+     "exampleEs": "Habla despacio, por favor.",
+     "exampleAr": "اتكلم بهدوء من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Habla despacio, por favor.",
+     "ar": "اتكلم بهدوء من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "no sé",
+   "normalized": "no sé",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/nˈo se/",
+   "pronunciationHintAr": "نو سي",
+   "internalRank": 15,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لا أعرف",
+     "meaningArEg": "مش عارف",
+     "glossEs": null,
+     "exampleEs": "No sé la respuesta correcta.",
+     "exampleAr": "مش عارف الإجابة الصح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No sé la respuesta correcta.",
+     "ar": "مش عارف الإجابة الصح.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "por supuesto",
+   "normalized": "por supuesto",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈoɾ supuesto/",
+   "pronunciationHintAr": "بور سوبويستو",
+   "internalRank": 16,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالطبع",
+     "meaningArEg": "طبعًا",
+     "glossEs": null,
+     "exampleEs": "¿Puedo pasar? — Por supuesto.",
+     "exampleAr": "أقدر أدخل؟ — طبعًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Puedo pasar? — Por supuesto.",
+     "ar": "أقدر أدخل؟ — طبعًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "vale",
+   "normalized": "vale",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/bˈale/",
+   "pronunciationHintAr": "بالي",
+   "internalRank": 17,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حسنًا أو اتفقنا",
+     "meaningArEg": "تمام",
+     "glossEs": null,
+     "exampleEs": "Vale, nos vemos a las ocho.",
+     "exampleAr": "تمام، هنشوف بعض الساعة تمانة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vale, nos vemos a las ocho.",
+     "ar": "تمام، هنشوف بعض الساعة تمانة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "de acuerdo",
+   "normalized": "de acuerdo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/dˈe akueɾdo/",
+   "pronunciationHintAr": "دي اكويردو",
+   "internalRank": 18,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "موافق",
+     "meaningArEg": "تمام، موافق",
+     "glossEs": null,
+     "exampleEs": "Estoy de acuerdo contigo.",
+     "exampleAr": "موافق معاك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estoy de acuerdo contigo.",
+     "ar": "موافق معاك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "me parece bien",
+   "normalized": "me parece bien",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/mˈe paɾeθe bien/",
+   "pronunciationHintAr": "مي باريثي بيين",
+   "internalRank": 19,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يبدو لي جيدًا",
+     "meaningArEg": "الرأي ده كويس",
+     "glossEs": null,
+     "exampleEs": "Me parece bien tu propuesta.",
+     "exampleAr": "اقتراحك كويس.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me parece bien tu propuesta.",
+     "ar": "اقتراحك كويس.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "qué pena",
+   "normalized": "qué pena",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kuˈe pena/",
+   "pronunciationHintAr": "كوي بينا",
+   "internalRank": 20,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يا للأسف",
+     "meaningArEg": "إيه الحظ ده",
+     "glossEs": null,
+     "exampleEs": "Qué pena que no pudiste venir.",
+     "exampleAr": "إيه الحظ إنك ما قدرتش تيجي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Qué pena que no pudiste venir.",
+     "ar": "إيه الحظ إنك ما قدرتش تيجي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "qué suerte",
+   "normalized": "qué suerte",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kuˈe sueɾte/",
+   "pronunciationHintAr": "كوي سويرتي",
+   "internalRank": 21,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يا للحظ السعيد",
+     "meaningArEg": "إيه الحظ الحلو",
+     "glossEs": null,
+     "exampleEs": "Qué suerte tienes con el trabajo.",
+     "exampleAr": "إيه الحظ الحلو في الشغل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Qué suerte tienes con el trabajo.",
+     "ar": "إيه الحظ الحلو في الشغل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "no importa",
+   "normalized": "no importa",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/nˈo impoɾta/",
+   "pronunciationHintAr": "نو يمبورتا",
+   "internalRank": 22,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لا يهم",
+     "meaningArEg": "مفيش مشكلة",
+     "glossEs": null,
+     "exampleEs": "No importa, lo hago yo.",
+     "exampleAr": "مفيش مشكلة، أنا هعملها.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No importa, lo hago yo.",
+     "ar": "مفيش مشكلة، أنا هعملها.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "con cuidado",
+   "normalized": "con cuidado",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kˈon kuidado/",
+   "pronunciationHintAr": "كون كويدادو",
+   "internalRank": 23,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بحذر",
+     "meaningArEg": "بالراحة",
+     "glossEs": null,
+     "exampleEs": "Con cuidado, el suelo está mojado.",
+     "exampleAr": "بالراحة، الأرضية مبلولة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Con cuidado, el suelo está mojado.",
+     "ar": "بالراحة، الأرضية مبلولة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "buena suerte",
+   "normalized": "buena suerte",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/buˈena sueɾte/",
+   "pronunciationHintAr": "بوينا سويرتي",
+   "internalRank": 24,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حظًا سعيدًا",
+     "meaningArEg": "حظ سعيد",
+     "glossEs": null,
+     "exampleEs": "Buena suerte con tu examen.",
+     "exampleAr": "حظ سعيد في امتحانك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Buena suerte con tu examen.",
+     "ar": "حظ سعيد في امتحانك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "feliz cumpleaños",
+   "normalized": "feliz cumpleaños",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/felˈiθ kumpleaɲos/",
+   "pronunciationHintAr": "فيليث كومبليانيوس",
+   "internalRank": 25,
+   "tags": [
+    "domain:family",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عيد ميلاد سعيد",
+     "meaningArEg": "كل سنة وإنت طيب",
+     "glossEs": null,
+     "exampleEs": "Feliz cumpleaños, abuela.",
+     "exampleAr": "كل سنة وإنتِ طيبة يا ست.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Feliz cumpleaños, abuela.",
+     "ar": "كل سنة وإنتِ طيبة يا ست.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "enhorabuena",
+   "normalized": "enhorabuena",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/enoɾabuˈena/",
+   "pronunciationHintAr": "ينورابوينا",
+   "internalRank": 26,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مبروك",
+     "meaningArEg": "مبروك",
+     "glossEs": null,
+     "exampleEs": "Enhorabuena por tu nuevo empleo.",
+     "exampleAr": "مبروك على الشغل الجديد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Enhorabuena por tu nuevo empleo.",
+     "ar": "مبروك على الشغل الجديد.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "vamos",
+   "normalized": "vamos",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/bˈamos/",
+   "pronunciationHintAr": "باموس",
+   "internalRank": 27,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هيا بنا",
+     "meaningArEg": "يلا",
+     "glossEs": null,
+     "exampleEs": "Vamos al cine esta noche.",
+     "exampleAr": "يلا نروح السينما الليلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vamos al cine esta noche.",
+     "ar": "يلا نروح السينما الليلة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "venga",
+   "normalized": "venga",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/bˈenga/",
+   "pronunciationHintAr": "بينجا",
+   "internalRank": 28,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حسنًا هيا",
+     "meaningArEg": "يلا بينا",
+     "glossEs": null,
+     "exampleEs": "Venga, empezamos la reunión.",
+     "exampleAr": "يلا بينا نبدأ الاجتماع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Venga, empezamos la reunión.",
+     "ar": "يلا بينا نبدأ الاجتماع.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "vaya",
+   "normalized": "vaya",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/bˈaʝa/",
+   "pronunciationHintAr": "بايا",
+   "internalRank": 29,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يا لها من",
+     "meaningArEg": "يا الله",
+     "glossEs": null,
+     "exampleEs": "Vaya, qué sorpresa tan agradable.",
+     "exampleAr": "يا الله، إيه المفاجأة الحلوة دي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vaya, qué sorpresa tan agradable.",
+     "ar": "يا الله، إيه المفاجأة الحلوة دي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "sin problema",
+   "normalized": "sin problema",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/sˈin pɾoblema/",
+   "pronunciationHintAr": "سين بروبليما",
+   "internalRank": 30,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بلا مشكلة",
+     "meaningArEg": "من غير مشكلة",
+     "glossEs": null,
+     "exampleEs": "¿Te ayudo? — Sin problema.",
+     "exampleAr": "أساعدك؟ — من غير مشكلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Te ayudo? — Sin problema.",
+     "ar": "أساعدك؟ — من غير مشكلة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "déjeme ver",
+   "normalized": "déjeme ver",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/dˈexeme beɾ/",
+   "pronunciationHintAr": "ديخيمي بير",
+   "internalRank": 31,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "دعني أرى",
+     "meaningArEg": "خليني أشوف",
+     "glossEs": null,
+     "exampleEs": "Déjeme ver su documento, por favor.",
+     "exampleAr": "خليني أشوف بطاقتك من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Déjeme ver su documento, por favor.",
+     "ar": "خليني أشوف بطاقتك من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "un momento",
+   "normalized": "un momento",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈun momento/",
+   "pronunciationHintAr": "ون مومينتو",
+   "internalRank": 32,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لحظة",
+     "meaningArEg": "ثانية واحدة",
+     "glossEs": null,
+     "exampleEs": "Un momento, por favor.",
+     "exampleAr": "ثانية واحدة من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Un momento, por favor.",
+     "ar": "ثانية واحدة من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ahora mismo",
+   "normalized": "ahora mismo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aˈoɾa mismo/",
+   "pronunciationHintAr": "اورا ميسمو",
+   "internalRank": 33,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الآن مباشرة",
+     "meaningArEg": "حالًا",
+     "glossEs": null,
+     "exampleEs": "Voy ahora mismo a la oficina.",
+     "exampleAr": "رايح المكتب حالًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy ahora mismo a la oficina.",
+     "ar": "رايح المكتب حالًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "poco a poco",
+   "normalized": "poco a poco",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈoko a poko/",
+   "pronunciationHintAr": "بوكو ا بوكو",
+   "internalRank": 34,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قليلاً قليلاً",
+     "meaningArEg": "على مهلي",
+     "glossEs": null,
+     "exampleEs": "Poco a poco se aprende español.",
+     "exampleAr": "على مهلي هنتعلم الإسباني.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Poco a poco se aprende español.",
+     "ar": "على مهلي هنتعلم الإسباني.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "cada día",
+   "normalized": "cada día",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/kˈada dia/",
+   "pronunciationHintAr": "كادا ديا",
+   "internalRank": 35,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "كل يوم",
+     "meaningArEg": "كل يوم",
+     "glossEs": null,
+     "exampleEs": "Cada día mejoro mi pronunciación.",
+     "exampleAr": "كل يوم بحسّن نطقي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cada día mejoro mi pronunciación.",
+     "ar": "كل يوم بحسّن نطقي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "de vez en cuando",
+   "normalized": "de vez en cuando",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/dˈe beθ en kuando/",
+   "pronunciationHintAr": "دي بيث ين كواندو",
+   "internalRank": 36,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من وقت لآخر",
+     "meaningArEg": "كل شوية",
+     "glossEs": null,
+     "exampleEs": "De vez en cuando como en restaurantes.",
+     "exampleAr": "كل شوية باكل في مطاعم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "De vez en cuando como en restaurantes.",
+     "ar": "كل شوية باكل في مطاعم.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "a veces",
+   "normalized": "a veces",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈa beθes/",
+   "pronunciationHintAr": "ا بيثيس",
+   "internalRank": 37,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أحيانًا",
+     "meaningArEg": "أحيانًا",
+     "glossEs": null,
+     "exampleEs": "A veces voy al trabajo andando.",
+     "exampleAr": "أحيانًا بروح الشغل مشي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "A veces voy al trabajo andando.",
+     "ar": "أحيانًا بروح الشغل مشي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "todo el mundo",
+   "normalized": "todo el mundo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tˈodo el mundo/",
+   "pronunciationHintAr": "تودو يل موندو",
+   "internalRank": 38,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الجميع",
+     "meaningArEg": "كل الناس",
+     "glossEs": null,
+     "exampleEs": "Todo el mundo habla español aquí.",
+     "exampleAr": "كل الناس بتتكلم إسباني هنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Todo el mundo habla español aquí.",
+     "ar": "كل الناس بتتكلم إسباني هنا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "en realidad",
+   "normalized": "en realidad",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈen ɾealidad/",
+   "pronunciationHintAr": "ين رياليداد",
+   "internalRank": 39,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "في الحقيقة",
+     "meaningArEg": "في الحقيقة",
+     "glossEs": null,
+     "exampleEs": "En realidad, el precio es muy bajo.",
+     "exampleAr": "في الحقيقة السعر واطي جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En realidad, el precio es muy bajo.",
+     "ar": "في الحقيقة السعر واطي جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "por ejemplo",
+   "normalized": "por ejemplo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈoɾ exemplo/",
+   "pronunciationHintAr": "بور يخيمبلو",
+   "internalRank": 40,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "على سبيل المثال",
+     "meaningArEg": "مثلاً",
+     "glossEs": null,
+     "exampleEs": "Hay muchas frutas, por ejemplo naranjas.",
+     "exampleAr": "فيه فواكه كتير، مثلاً برتقال.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay muchas frutas, por ejemplo naranjas.",
+     "ar": "فيه فواكه كتير، مثلاً برتقال.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "es decir",
+   "normalized": "es decir",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈes deθiɾ/",
+   "pronunciationHintAr": "يس ديثير",
+   "internalRank": 41,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أي أن",
+     "meaningArEg": "يعني",
+     "glossEs": null,
+     "exampleEs": "Es decir, no podemos confirmar aún.",
+     "exampleAr": "يعني مش هنقدر نأكد لسه.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es decir, no podemos confirmar aún.",
+     "ar": "يعني مش هنقدر نأكد لسه.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "o sea",
+   "normalized": "o sea",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈo sea/",
+   "pronunciationHintAr": "و سيا",
+   "internalRank": 42,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعني",
+     "meaningArEg": "يعني",
+     "glossEs": null,
+     "exampleEs": "O sea, ¿no entiendes la pregunta?",
+     "exampleAr": "يعني إنت مش فاهم السؤال؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "O sea, ¿no entiendes la pregunta?",
+     "ar": "يعني إنت مش فاهم السؤال؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "a lo mejor",
+   "normalized": "a lo mejor",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈa lo mexoɾ/",
+   "pronunciationHintAr": "ا لو ميخور",
+   "internalRank": 43,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ربما",
+     "meaningArEg": "يمكن",
+     "glossEs": null,
+     "exampleEs": "A lo mejor viene mañana.",
+     "exampleAr": "يمكن ييجي بكرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "A lo mejor viene mañana.",
+     "ar": "يمكن ييجي بكرة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "qué lástima",
+   "normalized": "qué lástima",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/kuˈe lastima/",
+   "pronunciationHintAr": "كوي لاستيما",
+   "internalRank": 44,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يا للأسف",
+     "meaningArEg": "إيه النحس ده",
+     "glossEs": null,
+     "exampleEs": "Qué lástima que se canceló el vuelo.",
+     "exampleAr": "إيه النحس إن الرحلة اتلغت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Qué lástima que se canceló el vuelo.",
+     "ar": "إيه النحس إن الرحلة اتلغت.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tener razón",
+   "normalized": "tener razón",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tenˈeɾ ɾaθon/",
+   "pronunciationHintAr": "تينير راثون",
+   "internalRank": 45,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يكون محقًا",
+     "meaningArEg": "يبقى معاه حق",
+     "glossEs": null,
+     "exampleEs": "Tienes razón, es mejor esperar.",
+     "exampleAr": "إنت معاك حق، الأفضل نستنى.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tienes razón, es mejor esperar.",
+     "ar": "إنت معاك حق، الأفضل نستنى.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "hacer falta",
+   "normalized": "hacer falta",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/aθˈeɾ falta/",
+   "pronunciationHintAr": "اثير فالتا",
+   "internalRank": 46,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يكون مطلوبًا",
+     "meaningArEg": "يكون مطلوب",
+     "glossEs": null,
+     "exampleEs": "Hace falta más tiempo para el proyecto.",
+     "exampleAr": "محتاجين وقت أكتر للمشروع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hace falta más tiempo para el proyecto.",
+     "ar": "محتاجين وقت أكتر للمشروع.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "echar una mano",
+   "normalized": "echar una mano",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ekˈaɾ una mano/",
+   "pronunciationHintAr": "يكار ونا مانو",
+   "internalRank": 47,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يساعد",
+     "meaningArEg": "يدّي إيده",
+     "glossEs": null,
+     "exampleEs": "¿Me echas una mano con las cajas?",
+     "exampleAr": "تديني إيدك في الصناديق؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Me echas una mano con las cajas?",
+     "ar": "تديني إيدك في الصناديق؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "estar de acuerdo",
+   "normalized": "estar de acuerdo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/estˈaɾ de akueɾdo/",
+   "pronunciationHintAr": "يستار دي اكويردو",
+   "internalRank": 48,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يوافق",
+     "meaningArEg": "يبقى موافق",
+     "glossEs": null,
+     "exampleEs": "Estamos de acuerdo con el plan.",
+     "exampleAr": "إحنا موافقين على الخطة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estamos de acuerdo con el plan.",
+     "ar": "إحنا موافقين على الخطة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tener prisa",
+   "normalized": "tener prisa",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tenˈeɾ pɾisa/",
+   "pronunciationHintAr": "تينير بريسا",
+   "internalRank": 49,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يعجل",
+     "meaningArEg": "يكون مستعجل",
+     "glossEs": null,
+     "exampleEs": "Tengo prisa, el tren sale pronto.",
+     "exampleAr": "أنا مستعجل، القطار هيخرج قريب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tengo prisa, el tren sale pronto.",
+     "ar": "أنا مستعجل، القطار هيخرج قريب.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "dar un paseo",
+   "normalized": "dar un paseo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/dˈaɾ un paseo/",
+   "pronunciationHintAr": "دار ون باسيو",
+   "internalRank": 50,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يتمشّى",
+     "meaningArEg": "يعمل مشوار",
+     "glossEs": null,
+     "exampleEs": "Damos un paseo por el parque.",
+     "exampleAr": "بنعمل مشوار في الحديقة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Damos un paseo por el parque.",
+     "ar": "بنعمل مشوار في الحديقة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "echar de menos",
+   "normalized": "echar de menos",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ekˈaɾ de menos/",
+   "pronunciationHintAr": "يكار دي مينوس",
+   "internalRank": 51,
+   "tags": [
+    "domain:family",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يفتقد",
+     "meaningArEg": "يتوحش",
+     "glossEs": null,
+     "exampleEs": "Echo de menos la comida de mi madre.",
+     "exampleAr": "بتوحش أكل أمي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Echo de menos la comida de mi madre.",
+     "ar": "بتوحش أكل أمي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "meter la pata",
+   "normalized": "meter la pata",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/metˈeɾ la pata/",
+   "pronunciationHintAr": "ميتير لا باتا",
+   "internalRank": 52,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يخطئ بشدة",
+     "meaningArEg": "يجيب آخرته",
+     "glossEs": null,
+     "exampleEs": "Otra vez metí la pata en la reunión.",
+     "exampleAr": "تاني جبت آخرتي في الاجتماع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Otra vez metí la pata en la reunión.",
+     "ar": "تاني جبت آخرتي في الاجتماع.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tirar la toalla",
+   "normalized": "tirar la toalla",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/tiɾˈaɾ la toaʎla/",
+   "pronunciationHintAr": "تيرار لا تواليلا",
+   "internalRank": 53,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يستسلم",
+     "meaningArEg": "يسلّم",
+     "glossEs": null,
+     "exampleEs": "No tires la toalla, sigue intentando.",
+     "exampleAr": "ما تسلّمش، كمّل محاولات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No tires la toalla, sigue intentando.",
+     "ar": "ما تسلّمش، كمّل محاولات.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ir al grano",
+   "normalized": "ir al grano",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/ˈiɾ al gɾano/",
+   "pronunciationHintAr": "ير ال جرانو",
+   "internalRank": 54,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يدخل في صلب الموضوع",
+     "meaningArEg": "يدخل في الموضوع",
+     "glossEs": null,
+     "exampleEs": "Vamos al grano, ¿cuál es el problema?",
+     "exampleAr": "يلا ندخل في الموضوع، إيه المشكلة؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vamos al grano, ¿cuál es el problema?",
+     "ar": "يلا ندخل في الموضوع، إيه المشكلة؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ser pan comido",
+   "normalized": "ser pan comido",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/sˈeɾ pan komido/",
+   "pronunciationHintAr": "سير بان كوميدو",
+   "internalRank": 55,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يكون سهلًا جدًا",
+     "meaningArEg": "يكون سهل قوي",
+     "glossEs": null,
+     "exampleEs": "Este examen será pan comido.",
+     "exampleAr": "الامتحان ده هيبقى سهل قوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este examen será pan comido.",
+     "ar": "الامتحان ده هيبقى سهل قوي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "costar un ojo",
+   "normalized": "costar un ojo",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/kostˈaɾ un oxo/",
+   "pronunciationHintAr": "كوستار ون وخو",
+   "internalRank": 56,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يكون غالياً جدًا",
+     "meaningArEg": "يكون غالي قوي",
+     "glossEs": null,
+     "exampleEs": "Ese coche cuesta un ojo de la cara.",
+     "exampleAr": "العربية دي غالية قوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ese coche cuesta un ojo de la cara.",
+     "ar": "العربية دي غالية قوي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ponerse las pilas",
+   "normalized": "ponerse las pilas",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/ponˈeɾse las pilas/",
+   "pronunciationHintAr": "بونيرسي لاس بيلاس",
+   "internalRank": 57,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أن يجتهد",
+     "meaningArEg": "يمسك في نفسه",
+     "glossEs": null,
+     "exampleEs": "Hay que ponerse las pilas con el español.",
+     "exampleAr": "لازم نمسك في نفسنا في الإسباني.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay que ponerse las pilas con el español.",
+     "ar": "لازم نمسك في نفسنا في الإسباني.",
+     "arEg": null
+    }
+   ]
+  }
+ ]
+}

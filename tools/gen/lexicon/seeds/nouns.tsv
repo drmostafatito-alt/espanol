@@ -1,0 +1,248 @@
+# seeds/nouns.tsv — head, pos, gender, level, msa, eg, ex_es, ex_ar, domain
+familia	noun	f	A1	عائلة	عيلة	Mi familia vive en Toledo.	عيلتي عايشة في طليطلة.	family
+madre	noun	f	A1	أم	أمي	Mi madre cocina muy bien.	أمي بتطبخ كويس جدًا.	family
+padre	noun	m	A1	أب	أبويا	Mi padre trabaja en un banco.	أبويا بيشتغل في بنك.	family
+hijo	noun	m	A1	ابن	ابن	Tiene un hijo pequeño.	عنده ابن صغير.	family
+hija	noun	f	A1	ابنة	بنت	Mi hija estudia música.	بنتي بتدرس مزيكا.	family
+hermano	noun	m	A1	أخ	أخويا	Mi hermano vive en Madrid.	أخويا عايش في مدريد.	family
+hermana	noun	f	A1	أخت	أختي	Mi hermana es doctora.	أختي دكتورة.	family
+abuelo	noun	m	A1	جد	جدو	Mi abuelo cuenta historias.	جدو بيحكي قصص.	family
+abuela	noun	f	A1	جدة	ستي	Mi abuela hace pan riquísimo.	ستي بتعمل عيش حلو جدًا.	family
+tío	noun	m	A2	عم أو خال	عمي أو خالي	Mi tío vive cerca de aquí.	عمي ساكن قريب من هنا.	family
+tía	noun	f	A2	عمة أو خالة	عمتي أو خالتي	Mi tía me visita en verano.	عمتي بتزورني في الصيف.	family
+primo	noun	m	A2	ابن العم	ابن عمي	Mi primo juega al baloncesto.	ابن عمي بيلعب سلة.	family
+prima	noun	f	A2	ابنة العم	بنت عمي	Mi prima habla tres idiomas.	بنت عمي بتتكلم تلات لغات.	family
+esposo	noun	m	A2	زوج	جوزي	Su esposo es ingeniero.	جوزها مهندس.	family
+esposa	noun	f	A2	زوجة	مراتي	Su esposa trabaja en la escuela.	مراته بتشتغل في المدرسة.	family
+nieto	noun	m	A2	حفيد	حفيد	Su nieto tiene cinco años.	عنده حفيد عنده خمس سنين.	family
+nieta	noun	f	A2	حفيدة	حفيدة	Su nieta canta en el coro.	حفيدتها بتغني في الجوقة.	family
+bebé	noun	m	A2	رضيع	بيبي	El bebé duerme mucho.	البيبي بينام كتير.	family
+nombre	noun	m	A1	اسم	اسم	Mi nombre es Daniel.	اسمي دانيال.	family
+apellido	noun	m	A2	لقب	اسم العيلة	Mi apellido es muy común.	اسم عيلتي شائع جدًا.	family
+cumpleaños	noun	m	A1	عيد ميلاد	عيد ميلاد	Mi cumpleaños es en octubre.	عيد ميلادي في أكتوبر.	family
+día	noun	m	A1	يوم	يوم	Hoy es un día muy bonito.	النهارده يوم جميل جدًا.	daily
+noche	noun	f	A1	ليل	ليل	La noche está tranquila.	الليل هادي.	daily
+tarde	noun	f	A1	بعد الظهر أو مساء	العصر	La tarde es perfecta para pasear.	العصر مناسب للتمشي.	daily
+hora	noun	f	A1	ساعة	ساعة	¿Qué hora es ahora?	الساعة كام دلوقتي؟	daily
+minuto	noun	m	A1	دقيقة	دقيقة	Espera un minuto, por favor.	استنى دقيقة من فضلك.	daily
+semana	noun	f	A1	أسبوع	أسبوع	Viajo la semana que viene.	مسافر الأسبوع الجاي.	daily
+mes	noun	m	A1	شهر	شهر	Trabajo aquí desde el mes pasado.	بشتغل هنا من الشهر اللي فات.	daily
+año	noun	m	A1	سنة	سنة	Este año estudio español.	السنة دي بدرس إسباني.	daily
+reloj	noun	m	A2	ساعة يد أو ساعة حائط	ساعة	Mi reloj marca las diez.	ساعتي بتورجي العشرة.	daily
+despertador	noun	m	A2	منبّه	منبه	Pongo el despertador a las seis.	بحطّ المنبه الساعة ستة.	daily
+tiempo	noun	m	A2	وقت أو طقس	وقت	No tengo tiempo hoy.	مفيش عندي وقت النهارده.	daily
+luz	noun	f	A2	ضوء أو نور	نور	La luz de la calle es brillante.	نور الشارع ساطع.	daily
+fuego	noun	m	B1	نار	نار	El fuego está muy caliente.	النار سخنة جدًا.	daily
+sol	noun	m	A2	شمس	شمس	El sol sale a las siete.	الشمس بتطلع الساعة سبعة.	daily
+luna	noun	f	A2	قمر	قمر	La luna está muy clara esta noche.	القمر صافي النهارده.	daily
+cielo	noun	m	A2	سماء	سما	El cielo está despejado hoy.	السما صافية النهارده.	daily
+mundo	noun	m	A2	عالم	عالَم	El mundo es muy grande.	العالم كبير جدًا.	daily
+país	noun	m	A1	بلد	بلد	Este país tiene mucha historia.	البلد دي فيها تاريخ كتير.	daily
+ciudad	noun	f	A1	مدينة	مدينة	La ciudad es muy ruidosa.	المدينة صاخبة جدًا.	daily
+pueblo	noun	m	A2	قرية أو بلدة	بلدة	Mi pueblo está cerca del mar.	بلدتي قريبة من البحر.	daily
+cena	noun	f	A1	عشاء	عشا	La cena está lista.	العشا جاهز.	food
+almuerzo	noun	m	A2	غداء	غدا	El almuerzo es a las dos.	الغدا الساعة اتنين.	food
+fruta	noun	f	A1	فاكهة	فاكهة	La fruta está muy fresca.	الفاكهة طازة جدًا.	food
+verdura	noun	f	A1	خضار	خضار	Como verdura todos los días.	باكل خضار كل يوم.	food
+carne	noun	f	A1	لحم	لحم	La carne está muy tierna.	اللحم طري جدًا.	food
+pescado	noun	m	A1	سمك	سمك	El pescado está delicioso.	السمك لذيذ جدًا.	food
+pollo	noun	m	A1	دجاج	فراخ	El pollo está asado.	الفراخ مشوية.	food
+arroz	noun	m	A1	أرز	رز	El arroz con leche es un postre.	الأرز بالحليب حلوى.	food
+leche	noun	f	A1	حليب	لبن	Quiero un café con leche.	عايز قهوة باللبن.	food
+queso	noun	m	A1	جبن	جبنة	El queso de este pueblo es famoso.	جبن البلد دي مشهور.	food
+huevo	noun	m	A1	بيضة	بيضة	Desayuno dos huevos cocidos.	بفطر بيضتين مسلوقتين.	food
+azúcar	noun	m	A1	سكر	سكر	Sin azúcar, por favor.	من غير سكر من فضلك.	food
+sal	noun	f	A1	ملح	ملح	La sopa necesita más sal.	الشوربة محتاجة ملح أكتر.	food
+aceite	noun	m	A2	زيت	زيت	El aceite de oliva es español.	زيت الزيتون إسباني.	food
+vino	noun	m	A2	نبيذ	نبيذ	Una copa de vino tinto.	كوباية نبيذ أحمر.	food
+cerveza	noun	f	A2	بيرة	بيرة	La cerveza está bien fría.	البيرة باردة كويس.	food
+zumo	noun	m	A2	عصير	عصير	Un zumo de naranja natural.	عصير برتقال طبيعي.	food
+té	noun	m	A1	شاي	شاي	El té está muy caliente.	الشاي سخن جدًا.	food
+café	noun	m	A1	قهوة	قهوة	Tomo un café por la mañana.	باخد قهوة الصبح.	food
+postre	noun	m	A2	حلوى	حلوة	¿Qué hay de postre?	إيه الحلو النهارده؟	food
+sopa	noun	f	A1	شوربة	شوربة	La sopa de verduras es sana.	شوربة الخضار صحية.	food
+ensalada	noun	f	A1	سلطة	سلطة	La ensalada lleva tomate.	السلطة فيها طماطم.	food
+pizza	noun	f	A1	بيتزا	بيتزا	La pizza es para compartir.	البيتزا للمشاركة.	food
+pasta	noun	f	A2	معكرونة	مكرونة	La pasta italiana es famosa.	المكرونة الإيطالية مشهورة.	food
+trabajo	noun	m	A1	عمل	شغل	Voy al trabajo en metro.	رايح الشغل بالمترو.	work
+oficina	noun	f	A1	مكتب	مكتب	La oficina abre a las nueve.	المكتب بيفتح الساعة تسعة.	work
+empresa	noun	f	A2	شركة	شركة	La empresa tiene muchos empleados.	الشركة فيها موظفين كتير.	work
+jefe	noun	m	A2	مدير	مدير	Mi jefe es muy amable.	مدير محترم جدًا.	work
+jefa	noun	f	A2	مديرة	مديرة	Mi jefa organiza todo.	مديريتي بتنظّم كل حاجة.	work
+empleado	noun	m	A2	موظف	موظف	El empleado ayuda al cliente.	الموظف بيساعد العميل.	work
+empleada	noun	f	A2	موظفة	موظفة	La empleada contesta el teléfono.	الموظفة بترد على التليفون.	work
+reunión	noun	f	A2	اجتماع	اجتماع	La reunión es a las diez.	الاجتماع الساعة عشرة.	work
+proyecto	noun	m	A2	مشروع	مشروع	El proyecto termina en junio.	المشروع بينتهي في يونيو.	work
+contrato	noun	m	B1	عقد	عقد	Firmo el contrato mañana.	بوقّع العقد بكرة.	work
+salario	noun	m	B1	راتب	مرتب	Mi salario se paga el día uno.	مرتب بيتدفع أول الشهر.	work
+entrevista	noun	f	B1	مقابلة	مقابلة	Tengo una entrevista de trabajo.	عندي مقابلة شغل.	work
+horario	noun	m	A2	جدول زمني	ميعاد	Mi horario es de nueve a cinco.	مواعيدي من تسعة لخمسة.	work
+tarea	noun	f	A1	واجب أو مهمة	مهمة	La tarea de hoy es fácil.	مهمة النهارده سهلة.	work
+equipo	noun	m	A2	فريق	فريق	Nuestro equipo gana siempre.	فريقنا بيكسب دايمًا.	work
+informe	noun	m	B1	تقرير	تقرير	El informe está en tu escritorio.	التقرير على مكتبك.	work
+correo	noun	m	A2	بريد	إيميل	Leo mi correo por la mañana.	بقرأ إيميلاتي الصبح.	work
+ordenador	noun	m	A2	حاسوب	كمبيوتر	Mi ordenador es muy rápido.	الكمبيوتر بتاعي سريع جدًا.	work
+escuela	noun	f	A1	مدرسة	مدرسة	La escuela está cerca de casa.	المدرسة قريبة من البيت.	study
+universidad	noun	f	A2	جامعة	جامعة	La universidad es muy grande.	الجامعة كبيرة جدًا.	study
+clase	noun	f	A1	حصة أو فصل	حصة	La clase de español es divertida.	حصة الإسباني ممتعة.	study
+curso	noun	m	A1	دورة	كورس	Este curso dura tres meses.	الكورس ده مدته تلات شهور.	study
+examen	noun	m	A2	امتحان	امتحان	El examen es muy difícil.	الامتحان صعب جدًا.	study
+nota	noun	f	A2	درجة	درجة	Sacó una nota excelente.	طلع بدرجة ممتازة.	study
+libro	noun	m	A1	كتاب	كتاب	Este libro es muy interesante.	الكتاب ده مثير جدًا.	study
+cuaderno	noun	m	A1	دفتر	كشكول	Escribe en el cuaderno nuevo.	اكتب في الكشكول الجديد.	study
+lápiz	noun	m	A1	قلم رصاص	قلم رصاص	Mi lápiz está en el cuaderno.	قلمي جوه الكشكول.	study
+bolígrafo	noun	m	A2	قلم حبر	قلم حبر	Mi bolígrafo azul no funciona.	قلمي الأزرق مش شغال.	study
+mochila	noun	f	A2	حقيبة ظهر	شنطة ضهر	La mochila es muy pesada.	شنطة الضهر تقيلة جدًا.	study
+pizarra	noun	f	A2	سبورة	سبورة	El profesor escribe en la pizarra.	الأستاذ بيكتب على السبورة.	study
+idioma	noun	m	A1	لغة	لغة	El español es un idioma global.	الإسباني لغة عالمية.	study
+lección	noun	f	A1	درس	درس	La lección cinco es sobre viajes.	الدرس الخامس عن السفر.	study
+palabra	noun	f	A1	كلمة	كلمة	Esta palabra es muy difícil.	الكلمة دي صعبة جدًا.	study
+gramática	noun	f	A2	قواعد	قواعد	La gramática española es lógica.	قواعد الإسباني منطقية.	study
+profesor	noun	m	A1	أستاذ	أستاذ	Mi profesor explica muy bien.	الأستاذ بيشرح كويس جدًا.	study
+profesora	noun	f	A1	أستاذة	أستاذة	La profesora corrige los ejercicios.	الأستاذة بتصحح التمارين.	study
+alumno	noun	m	A1	طالب	طالب	El alumno hace muchas preguntas.	الطالب بيسأل أسئلة كتير.	study
+alumna	noun	f	A1	طالبة	طالبة	La alumna estudia medicina.	الطالبة بتدرس طب.	study
+precio	noun	m	A1	سعر	سعر	El precio es muy alto aquí.	السعر عالي جدًا هنا.	shopping
+oferta	noun	f	A2	عرض	عرض	La oferta termina hoy.	العرض بينتهي النهارده.	shopping
+descuento	noun	m	A2	خصم	خصم	Hay un descuento del veinte por ciento.	فيه خصم عشرين في المية.	shopping
+talla	noun	f	A2	مقاس	مقاس	¿Qué talla calzas?	لبسك كام؟	shopping
+probador	noun	m	B1	غرفة القياس	أوضة القياس	El probador está al fondo.	أوضة القياس في الآخر.	shopping
+caja	noun	f	A2	صندوق أو صندوق الدفع	كاشير	Pago en la caja del supermercado.	بدفع عند كاشير السوبر ماركت.	shopping
+mercado	noun	m	A2	سوق	سوق	El mercado de los domingos es enorme.	سوق الأحد ضخم.	shopping
+supermercado	noun	m	A2	سوبر ماركت	سوبر ماركت	Compro fruta en el supermercado.	بشتري فاكهة من السوبر ماركت.	shopping
+panadería	noun	f	A2	مخبز	فرن	La panadería abre muy temprano.	الفرن بيفتح بدري جدًا.	shopping
+farmacia	noun	f	A2	صيدلية	صيدلية	La farmacia está en la esquina.	الصيدلية في الناصية.	shopping
+ropa	noun	f	A1	ملابس	هدوم	La ropa de verano es ligera.	هدوم الصيف خفيفة.	shopping
+zapato	noun	m	A1	حذاء	جزمة	Este zapato es muy cómodo.	الجزمة دي مريحة جدًا.	shopping
+camisa	noun	f	A1	قميص	قميص	La camisa blanca es elegante.	القميص الأبيض أنيق.	shopping
+pantalón	noun	m	A2	بنطال	بنطلون	Este pantalón me queda grande.	البنطلون ده واسع عليا.	shopping
+vestido	noun	m	A1	فستان	فستان	El vestido rojo es bonito.	الفستان الأحمر جميل.	shopping
+chaqueta	noun	f	A2	سترة	جاكت	La chaqueta es para el frío.	الجاكت للبرد.	shopping
+bolsa	noun	f	A2	كيس	كيسة	Dame una bolsa, por favor.	اديني كيسة من فضلك.	shopping
+regalo	noun	m	A1	هدية	هدية	Este regalo es para ti.	الهدية دي ليك.	shopping
+lista	noun	f	A2	قائمة	لستة	Hago la lista de la compra.	بعمل لستة المشتريات.	shopping
+médico	noun	m	A1	طبيب	دكتور	Voy al médico esta tarde.	رايح للدكتور العصر.	health
+médica	noun	f	A1	طبيبة	دكتورة	La médica escucha con atención.	الدكتورة بتسمع باهتمام.	health
+enfermero	noun	m	A2	ممرض	ممرض	El enfermero toma la tensión.	الممرض بياخد الضغط.	health
+enfermera	noun	f	A2	ممرضة	ممرضة	La enfermera es muy amable.	الممرضة محترمة جدًا.	health
+hospital	noun	m	A1	مستشفى	مستشفى	El hospital está lejos del centro.	المستشفى بعيد عن وسط البلد.	health
+medicina	noun	f	A2	دواء أو طب	دوا	Tomo la medicina después de comer.	باخد الدوا بعد الأكل.	health
+dolor	noun	m	A2	ألم	ألم	Tengo dolor de cabeza.	عندي صداع.	health
+fiebre	noun	f	A2	حمّى	حمّى	Tiene fiebre desde ayer.	عنده حمى من امبارح.	health
+tos	noun	f	A2	سعال	سعال	La tos no me deja dormir.	السعال مش مخليني أنام.	health
+gripe	noun	f	A2	إنفلونزا	إنفلونزا	La gripe dura una semana.	الإنفلونزا بتستمر أسبوع.	health
+receta	noun	f	A2	وصفة أو روشتة	روشتة	El médico da la receta.	الدكتور بيدي الروشتة.	health
+pastilla	noun	f	A2	حبة دواء	حبة	Tomo una pastilla cada mañana.	باخد حبة كل صباح.	health
+inyección	noun	f	B2	حقنة	حقنة	La inyección no duele mucho.	الحقنة مش بتوجع كتير.	health
+espalda	noun	f	A2	ظهر	ضهر	Me duele la espalda.	ضهري بيوجعني.	health
+cabeza	noun	f	A1	رأس	دماغ	La cabeza me da vueltas.	دماغي بيلف.	health
+estómago	noun	m	A2	معدة	معدة	El estómago protesta hoy.	المعدة بتاعتي مضايقة النهارده.	health
+mano	noun	f	A1	يد	إيد	Lávate las manos antes de comer.	اغسل إيدك قبل الأكل.	health
+pie	noun	m	A1	قدم	رجل	Me duelen los pies.	رجليا بتوجعني.	health
+brazo	noun	m	A1	ذراع	دراع	El brazo derecho está fuerte.	الدراع الأيمن قوي.	health
+pierna	noun	f	A1	ساق	رجل	La pierna izquierda duele al caminar.	الرجل الشمال بتوجع عند المشي.	health
+corazón	noun	m	A2	قلب	قلب	El corazón late rápido.	القلب بيدق بسرعة.	health
+sangre	noun	f	B1	دم	دم	El análisis de sangre es mañana.	تحليل الدم بكرة.	health
+alergia	noun	f	A2	حساسية	حساسية	Tengo alergia al polen.	عندي حساسية من اللقاح.	health
+salud	noun	f	A2	صحة	صحة	La salud es lo más importante.	الصحة أهم حاجة.	health
+cita	noun	f	A2	مواعيد أو موعد	ميعاد	Tengo cita con el dentista.	عندي ميعاد عند دكتور السن.	health
+viaje	noun	m	A1	رحلة	رحلة	El viaje dura dos horas.	الرحلة بتاخد ساعتين.	travel
+hotel	noun	m	A1	فندق	فندق	El hotel tiene piscina.	الفندق فيه بيسين.	travel
+frontera	noun	f	B1	حدود	حدود	La frontera abre a las siete.	الحدود بتفتح الساعة سبعة.	travel
+turista	noun	mf	A2	سائح	سائح	Los turistas visitan el museo.	السياح بيروحوا المتحف.	travel
+guía	noun	mf	A2	دليل	دليل	La guía explica la historia.	الدليل بيشرح التاريخ.	travel
+excursión	noun	f	A2	جولة	جولة	La excursión cuesta veinte euros.	الجولة بعشرين يورو.	travel
+playa	noun	f	A1	شاطئ	شاطئ	La playa es tranquila por la mañana.	الشاطئ هادي الصبح.	travel
+montaña	noun	f	A2	جبل	جبل	La montaña es muy alta.	الجبل عالي جدًا.	travel
+museo	noun	m	A2	متحف	متحف	El museo es gratis los domingos.	المتحف مجاني أيام الأحد.	travel
+monumento	noun	m	B1	نصب تذكاري	نصب تذكاري	El monumento es del siglo XVI.	النصب التذكاري من القرن الستاشر.	travel
+foto	noun	f	A1	صورة	صورة	Una foto del mar, por favor.	صورة للبحر من فضلك.	travel
+cámara	noun	f	A2	كاميرا	كاميرا	La cámara filma en alta calidad.	الكاميرا بتصور بجودة عالية.	travel
+estación	noun	f	A2	محطة	محطة	La estación de trenes está cerca.	محطة القطار قريبة.	travel
+andén	noun	m	B1	رصيف المحطة	رصيف	El tren sale del andén tres.	القطار بيخرج من الرصيف تلاتة.	travel
+tren	noun	m	A1	قطار	قطار	El tren es puntual hoy.	القطار جاي في ميعاده النهارده.	travel
+avión	noun	m	A1	طائرة	طيارة	El avión despega a las ocho.	الطيارة هتقلع الساعة تمانة.	travel
+barco	noun	m	A2	سفينة	مركب	El barco navega por el Mediterráneo.	المركب بيبحر في المتوسط.	travel
+gasolina	noun	f	B1	بنزين	بنزين	La gasolina está cara este año.	البنزين غالي السنة دي.	transport
+carretera	noun	f	B1	طريق سريع	طريق	La carretera está cerrada por obras.	الطريق مقفول بسبب الإصلاح.	transport
+alojamiento	noun	m	B1	سكن	سكن	Busco alojamiento barato.	بدور على سكن رخيص.	travel
+taquilla	noun	f	B1	شباك التذاكر	شباك التذاكر	Compro el billete en la taquilla.	بشتري التذكرة من الشباك.	transport
+trayecto	noun	m	B1	مسافة الرحلة	مسافة	El trayecto es muy largo.	المسافة طويلة جدًا.	transport
+acera	noun	f	B1	رصيف	رصيف	Caminamos por la acera derecha.	بنمشي على الرصيف الأيمن.	transport
+puente	noun	m	B2	جسر	جسر	El puente cruza el río.	الجسر بيعدي النهر.	transport
+túnel	noun	m	B2	نفق	نفق	El túnel tiene un kilómetro.	النفق طوله كيلومتر.	transport
+cruce	noun	m	B1	تقاطع	تقاطع	El cruce es peligroso por la noche.	التقاطع خطير بالليل.	transport
+velocidad	noun	f	B1	سرعة	سرعة	La velocidad máxima es cien.	السرعة القصوى مية.	transport
+piso	noun	m	A2	شقة أو طابق	شقة	Piso de tres habitaciones.	شقة تلات أوض.	housing
+edificio	noun	m	A2	مبنى	عمارة	El edificio tiene diez pisos.	العمارة فيها عشر أدوار.	housing
+escalera	noun	f	A2	درج	سلم	Subo por la escalera.	طالع بالسلم.	housing
+ascensor	noun	m	A2	مصعد	أسانسير	El ascensor no funciona.	الأسانسير مش شغال.	housing
+cocina	noun	f	A1	مطبخ	مطبخ	La cocina es pequeña y luminosa.	المطبخ صغير ومضيء.	housing
+salón	noun	m	A2	غرفة الجلوس	أوضة المعيشة	El salón es muy acogedor.	أوضة المعيشة مريحة جدًا.	housing
+baño	noun	m	A1	حمّام	حمام	El baño está al final del pasillo.	الحمام في آخر الممر.	housing
+dormitorio	noun	m	A2	غرفة نوم	أوضة نوم	El dormitorio tiene una cama grande.	أوضة النوم فيها سرير كبير.	housing
+jardín	noun	m	A2	حديقة	حديقة	El jardín está lleno de flores.	الحديقة مليانة ورود.	housing
+balcón	noun	m	B1	شرفة	بلكونة	El balcón da al mar.	البلكونة بتبص على البحر.	housing
+garaje	noun	m	B1	مرآب	جراج	El garaje es para dos coches.	الجراج لعربيتين.	housing
+techo	noun	m	B2	سقف	سقف	El techo es muy alto.	السقف عالي جدًا.	housing
+suelo	noun	m	B1	أرضية	أرضية	El suelo es de madera.	الأرضية خشب.	housing
+pared	noun	f	B1	جدار	حيطان	La pared necesita pintura.	الحيطان محتاجة دهان.	housing
+ventana	noun	f	A2	نافذة	شباك	La ventana da al patio.	الشباك بيبص على الفناء.	housing
+alquiler	noun	m	B1	إيجار	إيجار	El alquiler se paga el día cinco.	الإيجار بيتدفع يوم خمسة.	housing
+vecino	noun	m	A2	جار	جاري	Mi vecino es muy ruidoso.	جاري صاخب جدًا.	housing
+vecina	noun	f	A2	جارة	جاريتي	Mi vecina ayuda mucho.	جاريتي بتساعد كتير.	housing
+portal	noun	m	B2	مدخل العمارة	بوابة	El portal siempre está abierto.	البوابة دايمًا مفتوحة.	housing
+banco	noun	m	A2	بنك	بنك	El banco cierra a las dos.	البنك بيقفل الساعة اتنين.	services
+cajero	noun	m	A2	صراف آلي	صراف	Saco dinero del cajero.	بطلع فلوس من الصراف.	services
+paquete	noun	m	A2	طرد	طرد	Recibo un paquete esta tarde.	هستلم طرد العصر.	services
+dirección	noun	f	A2	عنوان	عنوان	Mi dirección es fácil de encontrar.	عنواني سهل إنك تلاقيه.	services
+teléfono	noun	m	A1	هاتف	تليفون	Mi teléfono no tiene batería.	التليفون مفيهوش شحن.	services
+móvil	noun	m	A2	هاتف محمول	موبايل	El móvil está en la mesa.	الموبايل على الترابيزة.	services
+internet	noun	m	A2	إنترنت	إنترنت	La conexión a internet es lenta.	النت بطيء.	services
+contraseña	noun	f	B1	كلمة مرور	باسورد	Cambio mi contraseña cada mes.	بغيّر الباسورد كل شهر.	services
+usuario	noun	m	B1	مستخدم	مستخدم	El usuario introduce sus datos.	المستخدم بيدخل بياناته.	services
+documento	noun	m	A2	مستند	مستند	Necesito un documento de identidad.	محتاج بطاقة هوية.	services
+formulario	noun	m	B1	استمارة	استمارة	Rellena el formulario completo.	ملا الاستمارة كاملة.	services
+sello	noun	m	B2	ختم	ختم	La carta lleva un sello.	الخطاب عليه ختم.	services
+ventanilla	noun	f	B1	شبّاك الموظف	شباك	El trámite se hace en la ventanilla.	الإجراءات في الشباك.	services
+urgencia	noun	f	B2	طوارئ	طوارئ	La urgencia está en la planta baja.	الطوارئ في الدور الأرضي.	health
+policía	noun	f	A2	شرطة	شرطة	La policía ayuda en la calle.	الشرطة بتساعد في الشارع.	services
+bombero	noun	m	B1	رجل إطفاء	إطفائي	El bombero apaga el incendio.	الإطفائي بيطفّي الحريق.	services
+ayuntamiento	noun	m	B2	مجلس المدينة	مجلس المدينة	El ayuntamiento organiza la fiesta.	المجلس بينظّم الاحتفال.	services
+amigo	noun	m	A1	صديق	صاحبي	Mi amigo vive en Sevilla.	صاحبي عايش في إشبيلية.	social
+amiga	noun	f	A1	صديقة	صاحبتي	Mi amiga habla árabe.	صاحبتي بتتكلم عربي.	social
+fiesta	noun	f	A1	حفلة	حفلة	La fiesta empieza a las ocho.	الحفلة هتبدأ الساعة تمانة.	social
+boda	noun	f	B1	زفاف	جواز	La boda es en primavera.	الجواز في الربيع.	social
+invitado	noun	m	A2	ضيف	ضيف	El invitado llega a las siete.	الضيف هييجي الساعة سبعة.	social
+invitada	noun	f	A2	ضيفة	ضيفة	La invitada trae flores.	الضيفة جايبة ورود.	social
+sonrisa	noun	f	B1	ابتسامة	ابتسامة	Su sonrisa es muy amable.	ابتسامتها محترمة جدًا.	social
+abrazo	noun	m	B1	عناق	حضن	Un abrazo fuerte para ti.	حضن قوي ليك.	social
+beso	noun	m	B1	قبلة	بوسة	La abuela da un beso a los niños.	الستي بتدي العيال بوسة.	social
+pareja	noun	f	B1	شريك أو زوجين	زوجين	Mi pareja y yo viajamos juntos.	أنا وزوجي بنسافر مع بعض.	social
+relación	noun	f	B1	علاقة	علاقة	La relación entre amigos es importante.	العلاقة بين الصحاب مهمة.	social
+conversación	noun	f	A2	محادثة	محادثة	La conversación es muy interesante.	المحادثة مثيرة جدًا.	social
+chiste	noun	m	B1	نكتة	نكتة	Cuenta un chiste gracioso.	احكي نكتة مضحية.	social
+opinión	noun	f	B1	رأي	رأي	Mi opinión es diferente.	رأيي مختلف.	social
+idea	noun	f	A2	فكرة	فكرة	La idea es muy buena.	الفكرة كويسة جدًا.	social
+problema	noun	m	A2	مشكلة	مشكلة	No hay problema, tranquilo.	مفيش مشكلة، اطمن.	social
+solución	noun	f	B1	حل	حل	La solución es muy sencilla.	الحل بسيط جدًا.	social
+ayuda	noun	f	A1	مساعدة	مساعدة	Gracias por tu ayuda.	شكرًا على مساعدتك.	social
+llamada	noun	f	A2	مكالمة	مكالمة	La llamada dura cinco minutos.	المكالمة بتاخد خمس دقايق.	callcenter
+operador	noun	m	B1	مشغّل أو مُشغّل الهاتف	أوبريتور	El operador responde rápido.	الأوبريتور بيرد بسرعة.	callcenter
+operadora	noun	f	B1	مشغّلة	أوبريتور	La operadora transfiere la llamada.	الأوبريتور بتحوّل المكالمة.	callcenter
+caso	noun	m	B1	حالة	حالة	Este caso es muy urgente.	الحالة دي مستعجلة جدًا.	callcenter
+queja	noun	f	B1	شكوى	شكوى	La queja del cliente está registrada.	شكوى العميل مسجلة.	callcenter
+sistema	noun	m	B1	نظام	نظام	El sistema se actualiza hoy.	النظام بيتحدث النهارده.	callcenter
+red	noun	f	B2	شبكة	شبكة	La red está caída desde las ocho.	الشبكة واقعة من تمانية.	callcenter
+señal	noun	f	B2	إشارة	إشارة	La señal es muy débil aquí.	الإشارة ضعيفة جدًا هنا.	callcenter
+datos	noun	m	B1	بيانات	بيانات	Sus datos están protegidos.	بياناتك محمية.	callcenter
+registro	noun	m	B1	سجل	سجل	El registro se hace en línea.	التسجيل بيتم أونلاين.	callcenter
+asunto	noun	m	B1	موضوع	موضوع	El asunto de hoy es el presupuesto.	موضوع النهارده الميزانية.	callcenter
+consulta	noun	f	B1	استفسار	استفسار	Tengo una consulta sobre mi factura.	عندي استفسار عن فاتورتي.	callcenter
+soporte	noun	m	B1	دعم فني	دعم	Soporte técnico disponible las 24 horas.	الدعم الفني متاح ٢٤ ساعة.	callcenter
+servicio	noun	m	A2	خدمة	خدمة	El servicio es excelente aquí.	الخدمة ممتازة هنا.	callcenter
+calidad	noun	f	B1	جودة	جودة	La calidad del producto es alta.	جودة المنتج عالية.	callcenter
+encuesta	noun	f	B1	استطلاع	استبيان	La encuesta toma dos minutos.	الاستبيان بياخد دقيقتين.	callcenter
+espera	noun	f	B1	انتظار	انتظار	La espera es larga hoy.	الانتظار طويل النهارده.	callcenter
+turno	noun	m	B1	وردية أو دور	وردية	Mi turno empieza a las ocho.	ورديتي بتبدأ الساعة تمانة.	callcenter
+política	noun	f	B2	سياسة	سياسة	La política de devoluciones es clara.	سياسة الإرجاع واضحة.	callcenter

@@ -31,3 +31,7 @@ coverage/
 .env.*
 !.env.example
 .sudo_as_admin_successful
+
+# Python bytecode (مولّدات tools/gen)
+__pycache__/
+*.pyc
