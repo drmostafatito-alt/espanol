@@ -16,6 +16,7 @@
     "db:status": "node tools/db.mjs status",
     "bench:kdf": "node tools/bench-kdf.mjs",
     "audit:security": "node tools/security-audit.mjs",
+    "deploy:preflight": "node tools/check-deploy-ready.mjs",
     "test:e2e": "playwright test",
     "test:ui": "vitest run tests/ui-lesson.test.tsx",
     "content:import": "node tools/import-content.mjs",

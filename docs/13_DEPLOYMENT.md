@@ -52,6 +52,7 @@ npx wrangler deploy --env staging
 
 - [ ] `node tools/check-sql.mjs` PASS
 - [ ] `node tools/validate-content.mjs` PASS (0 أخطاء)
+- [ ] `npm run deploy:preflight` **(إلزامي)** — يجب أن يعطي `PASS` (كود خروج 0). أي `FAIL` (1) = إعداد تطوير لا يُنشر، وأي `BLOCKED` (2) = حاجز إطلاق مفتوح يحتاج قرارًا مكتوبًا في `SECURITY_BLOCKERS.md`.
 - [ ] `npm run test` + `test:integration` + `test:e2e` كلها خضراء
 - [ ] المراجعة البشرية: 100% من الدروس المنشورة لها سجلا مراجعة
 - [ ] لا `pending/` في أي `audioKey` لدرس منشور
