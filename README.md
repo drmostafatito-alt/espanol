@@ -61,19 +61,38 @@
 ## 3. التشغيل والتحقق
 
 ```bash
-npx pnpm@9 install          # الاعتماديات لا تُحفظ بين الجلسات
-npm run db:reset:local      # ترحيل D1 المحلي + البذور المرجعية
+# 1) الاعتماديات (إلزامية: better-sqlite3 وحدة أصلية — لا تعمل الأدوات بدونها)
+npm ci
+
+# 2) سرّ محلي + فتح المحتوى المسودّ في التطوير فقط (الملف مستثنى من Git)
+cat > .dev.vars <<'EOF'
+PASSWORD_PEPPER=local-dev-pepper-0123456789abcdefghijklmnop
+ALLOW_UNREVIEWED_CONTENT="true"
+ALLOW_PUBLIC_SIGNUP="true"
+EOF
+
+# 3) قاعدة D1 المحلية + البذور + استيراد المحتوى بالترتيب الموثّق
+npm run db:migrate:local && npm run db:seed:local
+npm ci --prefix tools/wrangler-env          # wrangler المحلي
+for d in a1 core-vocab travel callcenter exemplars; do
+  node tools/import-content.mjs --dir "content/drafts/$d" 2>/dev/null \
+    || node tools/import-content.mjs --dir "content/$d"
+done
+
+# 4) التشغيل والتحقق
 npm run build               # vite build
 npm run worker:dev          # API + SPA على http://localhost:8787
 
-npm test                    # 78 اختبار vitest
-node tools/security-audit.mjs --with-bench   # تقرير أمني مولَّد آليًا
-node tools/smoke-worker.mjs # 13 اختبار دخان على workerd/D1 (يتطلب worker:dev)
+npm test                    # 200 اختبار vitest (14 ملفًا)
+node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
 npm run validate            # DDL + جودة المحتوى
-node tools/content-metrics.mjs
+node tools/check-curriculum.mjs
+npm run deploy:preflight    # يجب أن يفشل على إعداد التطوير — هذه وظيفته
+node tools/security-audit.mjs --with-bench   # تقرير أمني مولَّد آليًا
 ```
 
-> ملاحظة: هذه الأدوات تعمل على Node 20+ بدون `npm install`، لأن الاعتماديات لا تُحفظ في بيئة العمل الحالية.
+> **بدون `.dev.vars` لن ترى أي درس في التطوير**: كل المحتوى بحالة `draft`، وقراءته محليًا تتطلب
+> `ALLOW_UNREVIEWED_CONTENT="true"` مع `ENVIRONMENT` غير إنتاجي. هذا مفتاح تطوير لا يُستخدم في الإنتاج.
 
 ## 4. الاسم والشعار
 

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u3-getting-table",
+    "titleAr": "طاولة لشخصين",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u3-restaurant",
+    "objectiveAr": "أن يطلب المتعلم طاولة في مطعم، ويحدد عدد الأشخاص، ويفهم سؤال النادل عن العدد وأي الأماكن متاح.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "mesa",
+      "camarero"
+    ],
+    "reviewVocabulary": [
+      "reserva"
+    ],
+    "targetStructures": [
+      "Una mesa para dos, por favor.",
+      "Somos dos.",
+      "¿Hay que esperar?"
+    ],
+    "grammarTopics": [
+      "para-vs-por",
+      "ser-con-numeros"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تدخل مطعمًا في مدريد وقت الغداء وتطلب طاولة.",
+        "settingAr": "مدخل المطعم مع النادل",
+        "lines": [
+          {
+            "es": "Buenas tardes. ¿Cuántas personas son?",
+            "ar": "مساء الخير. كم عدد الأشخاص؟",
+            "arEg": "مساء الخير. أنتم كام واحد؟",
+            "audioKey": "pending/tr-u3-l1-host-1"
+          },
+          {
+            "es": "Una mesa para dos, por favor.",
+            "ar": "طاولة لشخصين من فضلك.",
+            "arEg": "ترابيزة لاتنين لو سمحت.",
+            "audioKey": "pending/tr-u3-l1-learner-1"
+          },
+          {
+            "es": "¿Prefieren dentro o fuera?",
+            "ar": "تفضّلون بالداخل أم بالخارج؟",
+            "arEg": "تحبوا جوه ولا بره؟",
+            "audioKey": "pending/tr-u3-l1-host-2"
+          },
+          {
+            "es": "Dentro, por favor. Hace calor.",
+            "ar": "بالداخل من فضلك. الجو حار.",
+            "arEg": "جوه لو سمحت. الدنيا حر.",
+            "audioKey": "pending/tr-u3-l1-learner-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u3_1_table",
+        "type": "fill_blank",
+        "instructionAr": "أكمل طلب الطاولة.",
+        "stemEs": "Una ____ para dos, por favor.",
+        "stemAr": "طاولة لشخصين من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "mesa"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "طلب الطاولة الصيغة الثابتة: «Una mesa para dos». «para» للغرض/المستفيد، وعدد الأشخاص بعدها.",
+        "errorFeedback": {
+          "tabla": "«tabla» = لوح/خشب. طاولة الطعام mesa.",
+          "mesa para dos personas": "صحيحة، لكن الصيغة المختصرة الأشيع: una mesa para dos."
+        },
+        "targetVocab": [
+          "mesa"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_2_por_para",
+        "type": "word_choice",
+        "instructionAr": "أي صيغة صحيحة لطلب طاولة لشخصين؟",
+        "options": [
+          {
+            "id": "tr_u3_2_a",
+            "text": "Una mesa para dos, por favor.",
+            "isCorrect": true,
+            "textAr": "طاولة لشخصين من فضلك."
+          },
+          {
+            "id": "tr_u3_2_b",
+            "text": "Una mesa por dos, por favor.",
+            "isCorrect": false,
+            "textAr": "طاولة مقابل اثنين؟",
+            "distractorRationaleAr": "«por» هنا تعني المقابل/الوسيلة، لا المستفيد."
+          },
+          {
+            "id": "tr_u3_2_c",
+            "text": "Una mesa a dos, por favor.",
+            "isCorrect": false,
+            "textAr": "طاولة إلى اثنين؟",
+            "distractorRationaleAr": "«a» لا تُستخدم لتحديد عدد الأشخاص في هذه العبارة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u3_2_a"
+          ]
+        },
+        "explanationAr": "«para + عدد» لتحديد المستفيدين: mesa para dos / para tres personas. أما por فتعني «مقابل» أو «بواسطة».",
+        "errorFeedback": {
+          "tr_u3_2_b": "«por dos» تعني «مقابل اثنين»؛ المطلوب para dos.",
+          "tr_u3_2_c": "لا نقول «mesa a dos»؛ الصواب para dos."
+        },
+        "targetVocab": [
+          "mesa"
+        ],
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_3_count",
+        "type": "choose_reply",
+        "instructionAr": "النادل يسأل: «¿Cuántas personas son؟» اختر الردّ السليم.",
+        "stemEs": "— ¿Cuántas personas son?",
+        "stemAr": "— كم عدد الأشخاص؟",
+        "options": [
+          {
+            "id": "tr_u3_3_a",
+            "text": "Somos dos.",
+            "isCorrect": true,
+            "textAr": "نحن اثنان."
+          },
+          {
+            "id": "tr_u3_3_b",
+            "text": "Estamos dos.",
+            "isCorrect": false,
+            "textAr": "موجودان اثنان؟",
+            "distractorRationaleAr": "«estar» للمكان والحال؛ العدد الثابت يُقال بـser."
+          },
+          {
+            "id": "tr_u3_3_c",
+            "text": "Tenemos dos.",
+            "isCorrect": false,
+            "textAr": "لدينا اثنان؟",
+            "distractorRationaleAr": "«tener» للملكية؛ السؤال عن العدد لا عمّا نملك."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u3_3_a"
+          ]
+        },
+        "explanationAr": "عدد الأشخاص الثابت يُعبَّر عنه بـser: Somos dos / Somos tres. وتُستخدم صيغة الجمع لأن المتحدث جزء من العدد.",
+        "errorFeedback": {
+          "tr_u3_3_b": "العبارة الصحيحة للعدد: Somos dos.",
+          "tr_u3_3_c": "«Tenemos dos» تعني «لدينا اثنان» ولا تجيب عن العدد."
+        },
+        "targetVocab": [
+          "mesa"
+        ],
+        "skills": [
+          "speaking",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_4_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هل عندكم طاولة لثلاثة أشخاص؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "¿Tienen una mesa para tres?",
+            "¿Tienen una mesa para tres personas?",
+            "¿Hay una mesa para tres?",
+            "¿Hay una mesa para tres personas?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "للسؤال المهذّب في المطعم: ¿Tienen…? أو ¿Hay…? مع para + العدد.",
+        "errorFeedback": {
+          "¿Tienen mesa por tres?": "الصواب para tres.",
+          "¿Hay una mesa a tres personas?": "الصواب para tres personas."
+        },
+        "targetVocab": [
+          "mesa"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_getting_table_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اطلب طاولة بصوت واضح، ثم أجِب عن عدد الأشخاص. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Buenas tardes. Una mesa para dos, por favor. Somos dos.",
+        "stemAr": "مساء الخير. طاولة لشخصين من فضلك. نحن اثنان.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u3-getting-table-model-1",
+          "modelAnswer": "Buenas tardes. Una mesa para dos, por favor. Somos dos."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "mesa"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطعم 1/4 (طلب الطاولة). يحتاج مراجعة إسبانية أصلية لصيغ الاستقبال في مطاعم إسبانيا (dentro/fuera، و¿Cuántas personas son?). كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

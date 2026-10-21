@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "tr-u3-restaurant",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنتج بعد.",
+  "source": {
+    "title": "مفردات المطعم والدفع — إعداد داخلي لمراجعة بشرية قبل النشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأن الكلمات الأكثر شيوعًا."
+  },
+  "entries": [
+    {
+      "headword": "camarero",
+      "normalized": "camarero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kamaˈɾeɾo/",
+      "pronunciationHintAr": "كاماريرو",
+      "internalRank": 2,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نادل",
+          "meaningArEg": "جرسون",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "El camarero nos trae el menú.",
+          "exampleAr": "النادل يُحضر لنا قائمة الطعام.",
+          "exampleArEg": "الجرسون بيجيب لنا المنيو.",
+          "usageNoteAr": "camarera للنادلة. للمناداة: «Perdón» أو «Disculpe» أفصح من رفع الصوت بـ«¡Camarero!».",
+          "commonErrorAr": "لا تنادِ «¡Oye!» فهي غير مهذّبة مع الغرباء."
+        }
+      ],
+      "examples": [
+        {
+          "es": "El camarero nos trae el menú.",
+          "ar": "النادل يُحضر لنا قائمة الطعام.",
+          "arEg": "الجرسون بيجيب لنا المنيو."
+        }
+      ]
+    },
+    {
+      "headword": "menú",
+      "normalized": "menú",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/meˈnu/",
+      "pronunciationHintAr": "مينو",
+      "internalRank": 3,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قائمة الطعام",
+          "meaningArEg": "المنيو",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "¿Nos trae el menú, por favor?",
+          "exampleAr": "هل تُحضر لنا القائمة من فضلك؟",
+          "exampleArEg": "تجيب لنا المنيو لو سمحت؟",
+          "usageNoteAr": "menú del día = قائمة اليوم بسعر ثابت. carta = القائمة الكاملة بالأسعار.",
+          "commonErrorAr": "«menú» ليست دائمًا القائمة الكاملة؛ في إسبانيا غالبًا وجبة اليوم الثابتة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Nos trae el menú, por favor?",
+          "ar": "هل تُحضر لنا القائمة من فضلك؟",
+          "arEg": "تجيب لنا المنيو لو سمحت؟"
+        }
+      ]
+    },
+    {
+      "headword": "pedir",
+      "normalized": "pedir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/peˈðiɾ/",
+      "pronunciationHintAr": "بيدير",
+      "internalRank": 4,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يطلب",
+          "meaningArEg": "يطلب",
+          "glossEs": "verbo irregular (e→i)",
+          "exampleEs": "¿Puedo pedir ahora?",
+          "exampleAr": "هل يمكنني أن أطلب الآن؟",
+          "exampleArEg": "أقدر أطلب دلوقتي؟",
+          "usageNoteAr": "فعل شاذ: pido, pides, pide, pedimos. الأمر الرسمي: pida.",
+          "commonErrorAr": "لا تخلط pedir (يطلب) بـpreguntar (يسأل)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo pedir ahora?",
+          "ar": "هل يمكنني أن أطلب الآن؟",
+          "arEg": "أقدر أطلب دلوقتي؟"
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "pido",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pides",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pide",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pedimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "pedís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "piden",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        }
+      ]
+    },
+    {
+      "headword": "plato",
+      "normalized": "plato",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ˈplato/",
+      "pronunciationHintAr": "بلاتو",
+      "internalRank": 5,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طبق",
+          "meaningArEg": "طبق",
+          "glossEs": "sustantivo masculino",
+          "exampleEs": "Este plato lleva queso.",
+          "exampleAr": "هذا الطبق يحتوي على جبن.",
+          "exampleArEg": "الطبق ده فيه جبنة.",
+          "usageNoteAr": "primer plato / segundo plato = الطبق الأول/الثاني في القائمة.",
+          "commonErrorAr": "لا تخلط plato (طبق) بـplata (فضة)."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Este plato lleva queso.",
+          "ar": "هذا الطبق يحتوي على جبن.",
+          "arEg": "الطبق ده فيه جبنة."
+        }
+      ]
+    },
+    {
+      "headword": "bebida",
+      "normalized": "bebida",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/beˈβiða/",
+      "pronunciationHintAr": "بيبيدا",
+      "internalRank": 6,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مشروب",
+          "meaningArEg": "مشروب",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "¿Qué bebida quiere?",
+          "exampleAr": "أي مشروب تريد؟",
+          "exampleArEg": "عايز تشرب إيه؟",
+          "usageNoteAr": "para beber = للشرب، وهي الصيغة الأكثر شيوعًا في المطاعم.",
+          "commonErrorAr": "bebida مؤنثة: una bebida، لا «un bebida»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Qué bebida quiere?",
+          "ar": "أي مشروب تريد؟",
+          "arEg": "عايز تشرب إيه؟"
+        }
+      ]
+    },
+    {
+      "headword": "cuenta",
+      "normalized": "cuenta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ˈkwenta/",
+      "pronunciationHintAr": "كوينتا",
+      "internalRank": 7,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الحساب (في المطعم)",
+          "meaningArEg": "الحساب",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "La cuenta, por favor.",
+          "exampleAr": "الحساب من فضلك.",
+          "exampleArEg": "الحساب لو سمحت.",
+          "usageNoteAr": "في المطعم: la cuenta. أمّا factura فهي فاتورة ضريبية/تجارية. في إسبانيا قد يُسأل: ¿Todo junto o por separado?",
+          "commonErrorAr": "لا تطلب «la factura» في مطعم عادي؛ المطلوب «la cuenta»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cuenta, por favor.",
+          "ar": "الحساب من فضلك.",
+          "arEg": "الحساب لو سمحت."
+        }
+      ]
+    },
+    {
+      "headword": "propina",
+      "normalized": "propina",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾoˈpina/",
+      "pronunciationHintAr": "بروبينا",
+      "internalRank": 8,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بقشيش",
+          "meaningArEg": "إكرامية",
+          "glossEs": "sustantivo femenino",
+          "exampleEs": "¿Está incluida la propina?",
+          "exampleAr": "هل البقشيش مشمول؟",
+          "exampleArEg": "الإكرامية متحسبة ولا لأ؟",
+          "usageNoteAr": "في إسبانيا البقشيش ليس إلزاميًا (5–10% إن كانت الخدمة جيدة). «servicio incluido» تعني أن الخدمة مشمولة في السعر.",
+          "commonErrorAr": "لا تفترض الشمول؛ اسأل: ¿Está incluida la propina?"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Está incluida la propina?",
+          "ar": "هل البقشيش مشمول؟",
+          "arEg": "الإكرامية متحسبة ولا لأ؟"
+        }
+      ]
+    },
+    {
+      "headword": "alérgico",
+      "normalized": "alérgico",
+      "kind": "word",
+      "pos": "adj",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aˈleɾxiko/",
+      "pronunciationHintAr": "أليرخيكو",
+      "internalRank": 9,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مصاب بحساسية",
+          "meaningArEg": "عنده حساسية",
+          "glossEs": "adjetivo",
+          "exampleEs": "Soy alérgico al marisco.",
+          "exampleAr": "عندي حساسية من المأكولات البحرية.",
+          "exampleArEg": "عندي حساسية من السي فود.",
+          "usageNoteAr": "تطابق مع الجنس: alérgico / alérgica. وحرف الجرّ: alérgico a.",
+          "commonErrorAr": "لا تقل «alérgico de marisco»؛ الصواب «al marisco»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Soy alérgico al marisco.",
+          "ar": "عندي حساسية من المأكولات البحرية.",
+          "arEg": "عندي حساسية من السي فود."
+        }
+      ]
+    },
+    {
+      "headword": "sin gluten",
+      "normalized": "sin gluten",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sin ˈɡluten/",
+      "pronunciationHintAr": "سين غلوتين",
+      "internalRank": 10,
+      "tags": [
+        "سفر",
+        "مطعم",
+        "A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خالٍ من الغلوتين",
+          "meaningArEg": "بدون جلوتين",
+          "glossEs": "locución adjetiva",
+          "exampleEs": "¿Tiene algún plato sin gluten?",
+          "exampleAr": "هل لديكم طبق خالٍ من الغلوتين؟",
+          "exampleArEg": "عندكم طبق بدون جلوتين؟",
+          "usageNoteAr": "مفهومة في المطاعم. لمرضى السيلياك الأدقّ: «apto para celíacos».",
+          "commonErrorAr": "«sin de gluten» خطأ؛ sin يتبعها الاسم مباشرة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene algún plato sin gluten?",
+          "ar": "هل لديكم طبق خالٍ من الغلوتين؟",
+          "arEg": "عندكم طبق بدون جلوتين؟"
+        }
+      ]
+    }
+  ]
+}
