@@ -63,6 +63,7 @@
 ```bash
 # 1) الاعتماديات (إلزامية: better-sqlite3 وحدة أصلية — لا تعمل الأدوات بدونها)
 npm ci
+npm ci --prefix tools/wrangler-env          # wrangler المحلي (يحتاجه db:migrate:local أدناه)
 
 # 2) سرّ محلي + فتح المحتوى المسودّ في التطوير فقط (الملف مستثنى من Git)
 cat > .dev.vars <<'EOF'
@@ -73,7 +74,6 @@ EOF
 
 # 3) قاعدة D1 المحلية + البذور + استيراد المحتوى بالترتيب الموثّق
 npm run db:migrate:local && npm run db:seed:local
-npm ci --prefix tools/wrangler-env          # wrangler المحلي
 for d in a1 core-vocab travel callcenter exemplars; do
   node tools/import-content.mjs --dir "content/drafts/$d" 2>/dev/null \
     || node tools/import-content.mjs --dir "content/$d"
@@ -87,7 +87,8 @@ npm test                    # 200 اختبار vitest (14 ملفًا)
 node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
 npm run validate            # DDL + جودة المحتوى
 node tools/check-curriculum.mjs
-npm run deploy:preflight    # يجب أن يفشل على إعداد التطوير — هذه وظيفته
+npm run deploy:preflight    # يجب أن يفشل (exit 1) على إعداد التطوير — هذه وظيفته
+                            # ولاختبار قسم إنتاج: --file <path> [--env production]
 node tools/security-audit.mjs --with-bench   # تقرير أمني مولَّد آليًا
 ```
 

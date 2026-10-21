@@ -62,6 +62,30 @@ describe('بوابة الجاهزية للنشر', () => {
     expect(res.json.blockers.map((b: any) => b.code)).toContain('PUBLIC_SIGNUP_OPEN');
   });
 
+  it('تقرأ [env.production.vars] لا [vars] التطويري (عيب حقيقي كان موجودًا)', () => {
+    // إعداد wrangler المعتاد: [vars] للتطوير + [env.production.vars] للنشر.
+    // النسخة السابقة كانت تقرأ [vars] فقط ⇒ ترفض إعدادًا إنتاجيًا صحيحًا.
+    const file = 'tests/fixtures/wrangler.env-sections.sample.toml';
+    const j = jsonOf(['--file', file]);
+    expect(j.section).toBe('env.production.vars');
+    expect(j.status).toBe('PASS');
+    expect(j.errors).toEqual([]);
+    expect(j.blockers).toEqual([]);
+
+    // ونفس النتيجة مع تحديد القسم صراحةً
+    const withEnv = jsonOf(['--file', file, '--env', 'production']);
+    expect(withEnv.section).toBe('env.production.vars');
+    expect(withEnv.status).toBe('PASS');
+  });
+
+  it('قسم صريح غير موجود لا يتراجع بصمت إلى [vars] التطويري', () => {
+    const res = run(['--file', 'tests/fixtures/wrangler.env-sections.sample.toml', '--env', 'staging', '--json']);
+    expect(res.code).toBe(1);
+    expect(res.json.status).toBe('FAIL');
+    expect(res.json.errors.map((e: any) => e.code)).toContain('VARS_SECTION_MISSING');
+    expect(res.json.section).toBeNull();
+  });
+
   it('تكتشف السرّ المكتوب داخل ملف الإعداد', () => {
     const j = jsonOf(['--file', 'tests/fixtures/wrangler.secret-leak.sample.toml']);
     expect(j.status).toBe('FAIL');

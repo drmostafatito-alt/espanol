@@ -9,7 +9,11 @@
  * الاستخدام:
  *   node tools/check-deploy-ready.mjs                     # يفحص wrangler.toml الافتراضي
  *   node tools/check-deploy-ready.mjs --file wrangler.production.toml
+ *   node tools/check-deploy-ready.mjs --file wrangler.toml --env production
  *   node tools/check-deploy-ready.mjs --json
+ *
+ * قسم المتغيّرات: يُقرأ [env.<name>.vars] عند تمرير --env، وإلا [env.production.vars] إن وُجد،
+ * وإلا [vars]. مع --env صريح لا تراجع إلى [vars] التطويري بالصمت.
  *
  * كود الخروج: 0 = كل الفحوص تمر (نشر مسموح تقنيًا) · 1 = الفحص فشل · 2 = وجدت حواجز إطلاق مفتوحة.
  * ملاحظة: هذا الفحص لا ينشر شيئًا ولا يتصل بالشبكة.
@@ -36,17 +40,43 @@ const warnings = [];
 const err = (code, msg, fix) => errors.push({ code, msg, fix });
 const block = (code, msg, fix) => blockers.push({ code, msg, fix });
 const warn = (code, msg, fix) => warnings.push({ code, msg, fix });
+/** قسم المتغيّرات الذي قُرئ فعلًا — يُذكر في التقرير ليعرف المستخدم أي قيم فُحصت. */
+let usedSection = null;
 
 const abs = join(ROOT, TARGET);
 if (!existsSync(abs)) {
   err('CONFIG_MISSING', `ملف الإعداد غير موجود: ${TARGET}`, 'تأكد من المسار أو مرّر --file');
 } else {
   const text = readFileSync(abs, 'utf8');
-  const varsBlock = text.split('[vars]')[1]?.split(/\n\[/)[0] ?? '';
-  const getVar = name => {
-    const m = varsBlock.match(new RegExp(`^\\s*${name}\\s*=\\s*"([^"]*)"`, 'm'));
-    return m ? m[1] : undefined;
-  };
+
+  // قراءة المتغيّرات من الأقسام لا من نص مسطّح:
+  // إعداد النشر المعتاد في wrangler يحمل [vars] للتطوير و[env.production.vars] للإنتاج،
+  // والاكتفاء بقسم [vars] يجعل البوابة ترفض الإعداد الإنتاجي الصحيح (خطأ كان موجودًا فعلًا).
+  const sections = new Map();
+  let current = '';
+  for (const line of text.split('\n')) {
+    const header = line.match(/^\s*\[([^\]]+)\]\s*$/);
+    if (header) {
+      current = header[1].trim();
+      if (!sections.has(current)) sections.set(current, new Map());
+      continue;
+    }
+    const kv = line.match(/^\s*([A-Za-z0-9_]+)\s*=\s*"([^"]*)"\s*$/);
+    if (kv && current) sections.get(current).set(kv[1], kv[2]);
+  }
+
+  // القسم المختار: --env <name> إن مُرِّر ووُجد، ثم env.production.vars، ثم [vars]
+  const ENV_NAME = arg('env', '');
+  // مع --env صريح لا نتراجع إلى [vars] التطويري بالصمت: قسم مفقود = خطأ واضح.
+  const candidates = ENV_NAME ? [`env.${ENV_NAME}.vars`] : ['env.production.vars', 'vars'];
+  const picked = candidates.find(s => sections.has(s));
+  usedSection = picked ?? null;
+  const vars = picked ? sections.get(picked) : new Map();
+  const getVar = name => vars.get(name);
+
+  if (!picked) {
+    err('VARS_SECTION_MISSING', 'لا يوجد قسم متغيّرات ([vars] أو [env.<name>.vars]).', 'أضف قسم متغيّرات صريحًا.');
+  }
 
   // 1) البيئة
   const environment = getVar('ENVIRONMENT');
@@ -54,7 +84,7 @@ if (!existsSync(abs)) {
     err(
       'NOT_PRODUCTION',
       `ENVIRONMENT = ${environment === undefined ? '(غير موجود)' : `"${environment}"`} — يجب "production" للنشر.`,
-      'أنشئ قسم [env.production.vars] بالقيم الإنتاجية بدل نشر قسم [vars] التطويري.',
+      'ضع ENVIRONMENT="production" في قسم الإنتاج: [env.production.vars]، أو استخدم --env <name> لاختيار قسم آخر.',
     );
   }
 
@@ -119,9 +149,9 @@ if (!existsSync(abs)) {
 const status = errors.length ? 'FAIL' : blockers.length ? 'BLOCKED' : 'PASS';
 
 if (AS_JSON) {
-  console.log(JSON.stringify({ file: TARGET, status, errors, blockers, warnings }, null, 2));
+  console.log(JSON.stringify({ file: TARGET, section: usedSection ?? null, status, errors, blockers, warnings }, null, 2));
 } else {
-  console.log(`# فحص الجاهزية للنشر — ${TARGET}\n`);
+  console.log(`# فحص الجاهزية للنشر — ${TARGET}${usedSection ? ` (قسم المتغيّرات: [${usedSection}])` : ''}\n`);
   console.log(`- أخطاء تمنع النشر: ${errors.length}`);
   console.log(`- حواجز إطلاق مفتوحة (قرار مالك): ${blockers.length}`);
   console.log(`- تنبيهات: ${warnings.length}\n`);
