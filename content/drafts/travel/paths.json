@@ -40,6 +40,23 @@
           "vocabularyBundles": [
             "tr-shared"
           ]
+        },
+        {
+          "slug": "tr-u3-restaurant",
+          "levelCode": "A2",
+          "titleAr": "المطعم: الطلب والدفع",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "tr-u3-getting-table",
+            "tr-u3-ordering",
+            "tr-u3-allergy-diet",
+            "tr-u3-paying"
+          ],
+          "vocabularyBundles": [
+            "tr-shared",
+            "tr-u3-restaurant"
+          ]
         }
       ]
     }

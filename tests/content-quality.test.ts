@@ -45,10 +45,14 @@ const packs = vocabFiles.map(f => ({ file: f.replace(ROOT + '/', ''), pack: JSON
 
 describe('نطاق التدقيق', () => {
   it('التدقيق يرى كل مسودات المحتوى فعلًا (لا عيّنة)', () => {
-    expect(lessonFiles.length).toBe(16);
-    expect(vocabFiles.length).toBe(8);
-    expect(audit.stats.lessons).toBe(16);
-    expect(audit.stats.vocabEntries).toBe(134);
+    // لا نثبّت أعدادًا صريحة (كل دفعة محتوى جديدة كانت تُسقط الاختبار بلا داعٍ).
+    // المطلوب إثبات أن الأداة ترى العدد نفسه الذي تراه القراءة المباشرة من القرص،
+    // وأن المحتوى لا يتقلّص عن الأرضية المعروفة (16 درسًا و134 مدخلًا لحظة كتابة الاختبار).
+    expect(audit.stats.lessons).toBe(lessonFiles.length);
+    expect(audit.stats.vocabPacks).toBe(vocabFiles.length);
+    expect(audit.stats.vocabEntries).toBe(packs.reduce((n, p) => n + p.pack.entries.length, 0));
+    expect(lessonFiles.length).toBeGreaterThanOrEqual(16);
+    expect(audit.stats.vocabEntries).toBeGreaterThanOrEqual(134);
     // كل درس له تمارين مقروءة، وكل حزمة لها مداخل
     for (const { lesson } of lessons) expect(lesson.exercises.length, lesson.slug).toBeGreaterThan(0);
     for (const { pack } of packs) expect(pack.entries.length, pack.bundleSlug).toBeGreaterThan(0);

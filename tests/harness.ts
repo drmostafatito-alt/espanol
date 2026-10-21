@@ -22,6 +22,8 @@ export function makeHarness(overrides: Partial<Env> = {}): Harness {
     PBKDF2_ITERATIONS: '20000', // أرضية السياسة؛ القياس والقرار في reports/kdf-benchmark.md
     SESSION_TTL_DAYS: '30',
     PASSWORD_PEPPER: 'test-pepper-0123456789abcdefghijklmnop',
+    // مفتاح صريح: التسجيل مغلق افتراضيًا في الكود، فتُعلنه الاختبارات هنا بدلًا من الاعتماد على غيابه.
+    ALLOW_PUBLIC_SIGNUP: 'true',
     ...overrides,
   };
 

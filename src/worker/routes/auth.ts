@@ -64,7 +64,10 @@ function policyFor(env: Env): PasswordPolicy {
 }
 
 export async function signup(req: Request, env: Env, requestId: string): Promise<Response> {
-  if (env.ALLOW_PUBLIC_SIGNUP === 'false') {
+  // فشل مغلق: التسجيل يُفتح بمفتاح صريح `true` فقط.
+  // أي قيمة أخرى — بما فيها المتغيّر الغائب تمامًا (نسيان `[vars]` في بيئة نشر) — تُغلق التسجيل.
+  // سابقًا كان الشرط `=== 'false'`، فكان غياب المتغيّر يفتح التسجيل العام بلا قرار صريح.
+  if (env.ALLOW_PUBLIC_SIGNUP !== 'true') {
     throw new HttpError(503, 'SIGNUP_DISABLED', 'التسجيل غير متاح حاليًا. نفتحه بعد اعتماد سياسة حماية كلمات المرور.');
   }
   const policy = policyFor(env);

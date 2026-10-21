@@ -49,6 +49,44 @@ describe('S-A: سياسة كلمات المرور والفشل المغلق', ()
     env.close();
   });
 
+  it('غياب ALLOW_PUBLIC_SIGNUP تمامًا يغلق التسجيل (فشل مغلق، لا فتح بالنسيان)', async () => {
+    // سيناريو النشر الحقيقي: بيئة إنتاج بلا `[vars]` أو بمتغيّر منسي.
+    // قبل الإصلاح كان الشرط `=== 'false'` ⇒ الغياب يعني تسجيلًا عامًا مفتوحًا.
+    const env = makeHarness({ ENVIRONMENT: 'production', ALLOW_PUBLIC_SIGNUP: undefined });
+    const res = await env.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: 'x@example.com', password: 'Cairo2026learn' }),
+    });
+    expect(res.status).toBe(503);
+    expect((await env.json(res)).error.code).toBe('SIGNUP_DISABLED');
+    // ولا يُنشأ أي مستخدم فعليًا
+    const n = env.db.raw.prepare('SELECT COUNT(*) AS n FROM users').get() as { n: number };
+    expect(n.n).toBe(0);
+    env.close();
+  });
+
+  it('أي قيمة غير true تُغلق التسجيل (fail-closed على القيم غير المتوقعة)', async () => {
+    for (const value of ['1', 'TRUE', 'yes', '', ' true']) {
+      const env = makeHarness({ ALLOW_PUBLIC_SIGNUP: value });
+      const res = await env.call('/api/auth/signup', {
+        method: 'POST',
+        body: JSON.stringify({ email: 'x@example.com', password: 'Cairo2026learn' }),
+      });
+      expect(res.status, `القيمة: "${value}"`).toBe(503);
+      env.close();
+    }
+  });
+
+  it('ALLOW_PUBLIC_SIGNUP=true يفتح التسجيل صراحةً (المفتاح يعمل في الاتجاهين)', async () => {
+    const env = makeHarness({ ALLOW_PUBLIC_SIGNUP: 'true' });
+    const res = await env.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: 'x@example.com', password: 'Cairo2026learn' }),
+    });
+    expect(res.status).toBe(201);
+    env.close();
+  });
+
   it('كلمة المرور المخزَّنة لا تحتوي السر ولا الصيغة القديمة', async () => {
     await signupAndGetCookie(h);
     const row = h.db.raw.prepare('SELECT password_hash FROM users WHERE email_normalized = ?').get(VALID_EMAIL) as { password_hash: string };

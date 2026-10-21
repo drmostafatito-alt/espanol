@@ -1,0 +1,292 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u3-ordering",
+    "titleAr": "الطلب من القائمة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u3-restaurant",
+    "objectiveAr": "أن يطلب المتعلم القائمة، ويسمّي طبقًا ومشروبًا، ويستخدم صيغة مهذّبة للطلب، ويفهم سؤال النادل عن الطبق الأول.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "menú",
+      "pedir",
+      "plato",
+      "bebida"
+    ],
+    "reviewVocabulary": [
+      "mesa"
+    ],
+    "targetStructures": [
+      "¿Nos trae el menú, por favor?",
+      "De primero, una sopa.",
+      "Para beber, agua."
+    ],
+    "grammarTopics": [
+      "pedir-irregular",
+      "primero-segundo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تجلس على الطاولة وتطلب من القائمة.",
+        "settingAr": "طاولة في المطعم مع النادل",
+        "lines": [
+          {
+            "es": "Aquí tiene el menú. ¿Qué le traigo de primero?",
+            "ar": "تفضّل القائمة. ماذا أحضر لك أولًا؟",
+            "arEg": "اتفضل المنيو. أجيبلك إيه الأول؟",
+            "audioKey": "pending/tr-u3-l2-waiter-1"
+          },
+          {
+            "es": "¿Nos trae el menú del día, por favor?",
+            "ar": "هل تُحضر لنا قائمة اليوم من فضلك؟",
+            "arEg": "تجيب لنا منيو اليوم لو سمحت؟",
+            "audioKey": "pending/tr-u3-l2-learner-1"
+          },
+          {
+            "es": "De primero, una sopa. Y de segundo, pollo.",
+            "ar": "أولًا شوربة، وثانيًا دجاج.",
+            "arEg": "الأول شوربة، والتاني فراخ.",
+            "audioKey": "pending/tr-u3-l2-learner-2"
+          },
+          {
+            "es": "¿Y para beber?",
+            "ar": "وللشرب؟",
+            "arEg": "وتشرب إيه؟",
+            "audioKey": "pending/tr-u3-l2-waiter-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u3_5_menu",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الطلب المهذّب للقائمة.",
+        "stemEs": "¿Nos ____ el menú, por favor?",
+        "stemAr": "هل تُحضر لنا القائمة من فضلك؟",
+        "answerKey": {
+          "accepted": [
+            "trae"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "بعد «nos» يأتي الفعل مصرّفًا للنادل (usted): ¿Nos trae…? = هل تُحضر لنا…؟",
+        "errorFeedback": {
+          "traer": "بعد ¿Nos…? يأتي الفعل مصرّفًا: trae.",
+          "traes": "«traes» لمخاطبة tú؛ مع النادل نستخدم usted: trae."
+        },
+        "targetVocab": [
+          "menú"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_6_polite",
+        "type": "word_choice",
+        "instructionAr": "أي صيغة أليق لطلب طبق في مطعم؟",
+        "options": [
+          {
+            "id": "tr_u3_6_a",
+            "text": "Quisiera pedir, por favor.",
+            "isCorrect": true,
+            "textAr": "أودّ أن أطلب من فضلك."
+          },
+          {
+            "id": "tr_u3_6_b",
+            "text": "Dame la comida.",
+            "isCorrect": false,
+            "textAr": "أعطني الطعام.",
+            "distractorRationaleAr": "صيغة أمر مباشرة بلا «من فضلك»؛ غير مناسبة مع النادل."
+          },
+          {
+            "id": "tr_u3_6_c",
+            "text": "Quiero comer ya.",
+            "isCorrect": false,
+            "textAr": "أريد أن آكل الآن.",
+            "distractorRationaleAr": "تلحّ على السرعة ولا تطلب بلباقة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u3_6_a"
+          ]
+        },
+        "explanationAr": "«Quisiera» (أودّ) ألطف من «Quiero» (أريد)، خاصة مع الغرباء وفي الخدمة.",
+        "errorFeedback": {
+          "tr_u3_6_b": "الأمر المباشر «Dame» خشن في المطعم؛ استخدم Quisiera + por favor.",
+          "tr_u3_6_c": "«ya» توحي بالإلحاح؛ الطلب المهذّب أنسب."
+        },
+        "targetVocab": [
+          "pedir"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_7_first_course",
+        "type": "choose_reply",
+        "instructionAr": "النادل يسأل: «¿Qué le traigo de primero؟» اختر الردّ السليم.",
+        "stemEs": "— ¿Qué le traigo de primero?",
+        "stemAr": "— ماذا أحضر لك أولًا؟",
+        "options": [
+          {
+            "id": "tr_u3_7_a",
+            "text": "De primero, una sopa, por favor.",
+            "isCorrect": true,
+            "textAr": "أولًا شوربة من فضلك."
+          },
+          {
+            "id": "tr_u3_7_b",
+            "text": "De primero, una bebida, por favor.",
+            "isCorrect": false,
+            "textAr": "أولًا مشروب من فضلك.",
+            "distractorRationaleAr": "المشروب يُطلب في «para beber» لا كطبق أول."
+          },
+          {
+            "id": "tr_u3_7_c",
+            "text": "Primero la cuenta, por favor.",
+            "isCorrect": false,
+            "textAr": "أولًا الحساب من فضلك.",
+            "distractorRationaleAr": "الحساب في نهاية الوجبة لا في بدايتها."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u3_7_a"
+          ]
+        },
+        "explanationAr": "ترتيب الوجبة: de primero (طبق أول) ثم de segundo ثم para beber ثم el postre.",
+        "errorFeedback": {
+          "tr_u3_7_b": "المشروب ليس طبقًا أول؛ يُطلب «para beber».",
+          "tr_u3_7_c": "الحساب في النهاية: la cuenta, por favor."
+        },
+        "targetVocab": [
+          "plato",
+          "bebida"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_8_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أريد طبق دجاج ومشروبًا باردًا.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Quiero un plato de pollo y una bebida fría.",
+            "Quisiera un plato de pollo y una bebida fría.",
+            "Quiero un plato de pollo y una bebida fría, por favor.",
+            "Quisiera un plato de pollo y una bebida fría, por favor."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«un plato de + نوع الطعام» لوصف الطبق. ولأن bebida مؤنثة: una bebida fría.",
+        "errorFeedback": {
+          "un bebida frío": "bebida مؤنثة ⇒ una bebida fría.",
+          "un plato de pollo y una bebida": "أضف الصفة: fría، ليطابق المطلوب."
+        },
+        "targetVocab": [
+          "plato",
+          "bebida"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u3_ordering_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اطلب القائمة ثم طبقًا ومشروبًا بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "¿Nos trae el menú, por favor? De primero, una sopa. Para beber, agua.",
+        "stemAr": "هل تُحضر لنا القائمة من فضلك؟ أولًا شوربة. وللشرب ماء.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u3-ordering-model-1",
+          "modelAnswer": "¿Nos trae el menú, por favor? De primero, una sopa. Para beber, agua."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "menú",
+          "plato",
+          "bebida"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطعم 2/4 (الطلب). يحتاج مراجعة إسبانية أصلية لصيغة «de primero/de segundo» و«menú del día» في مطاعم إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

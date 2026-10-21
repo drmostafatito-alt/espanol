@@ -1371,7 +1371,82 @@
               "objectiveAr": "أن يطلب المتعلم طعامًا ويتعامل مع الحساب.",
               "levelCode": "A1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "tr-u3-allergy-diet",
+                  "titleAr": "الحساسية والنظام الغذائي",
+                  "objectiveAr": "أن يعبّر المتعلم عن حساسية غذائية بوضوح، ويسأل هل يحتوي الطبق على مكوّن معيّن، ويطلب بديلًا خاليًا من الغلوتين.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-allergy-diet.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-ordering"
+                  ]
+                },
+                {
+                  "slug": "tr-u3-getting-table",
+                  "titleAr": "طاولة لشخصين",
+                  "objectiveAr": "أن يطلب المتعلم طاولة في مطعم، ويحدد عدد الأشخاص، ويفهم سؤال النادل عن العدد وأي الأماكن متاح.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-getting-table.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": []
+                },
+                {
+                  "slug": "tr-u3-ordering",
+                  "titleAr": "الطلب من القائمة",
+                  "objectiveAr": "أن يطلب المتعلم القائمة، ويسمّي طبقًا ومشروبًا، ويستخدم صيغة مهذّبة للطلب، ويفهم سؤال النادل عن الطبق الأول.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-ordering.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-getting-table"
+                  ]
+                },
+                {
+                  "slug": "tr-u3-paying",
+                  "titleAr": "الفاتورة والدفع",
+                  "objectiveAr": "أن يطلب المتعلم الحساب، ويسأل عن طريقة الدفع والبقشيش، ويفهم سؤال النادل عن الدفع منفصلًا أو مجتمعًا.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-paying.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-allergy-diet"
+                  ]
+                }
+              ]
             },
             {
               "slug": "tr-u4-directions",
