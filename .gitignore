@@ -26,3 +26,8 @@ coverage/
 *.sqlite3
 *.db
 *.db-journal
+.dev.vars
+.env
+.env.*
+!.env.example
+.sudo_as_admin_successful
