@@ -57,6 +57,23 @@
             "tr-shared",
             "tr-u3-restaurant"
           ]
+        },
+        {
+          "slug": "tr-u4-directions",
+          "levelCode": "A2",
+          "titleAr": "الاتجاهات والمواصلات",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "tr-u4-asking-directions",
+            "tr-u4-walking-route",
+            "tr-u4-bus-metro",
+            "tr-u4-taxi"
+          ],
+          "vocabularyBundles": [
+            "tr-shared",
+            "tr-u4-directions"
+          ]
         }
       ]
     }

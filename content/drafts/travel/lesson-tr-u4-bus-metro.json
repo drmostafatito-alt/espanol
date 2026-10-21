@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u4-bus-metro",
+    "titleAr": "المترو والباص",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u4-directions",
+    "objectiveAr": "أن يسأل المتعلم عن الخط المناسب، ويشتري تذكرة، ويفهم تعليمة التحويل بين خطين، ويعرف أين الموقف.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "metro",
+      "línea",
+      "parada",
+      "transbordo"
+    ],
+    "reviewVocabulary": [
+      "billete"
+    ],
+    "targetStructures": [
+      "¿Qué línea va al centro?",
+      "Tiene que hacer transbordo en Goya.",
+      "¿Dónde está la parada del autobús?"
+    ],
+    "grammarTopics": [
+      "tener-que",
+      "linea-parada"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "في محطة المترو، تسأل موظف المحطة عن الطريق إلى المركز.",
+        "settingAr": "شبّاك معلومات محطة المترو",
+        "lines": [
+          {
+            "es": "Perdone, ¿qué línea va al centro?",
+            "ar": "عفوًا، أي خط يذهب إلى المركز؟",
+            "arEg": "لو سمحت، أنهي خط رايح الداون تاون؟",
+            "audioKey": "pending/tr-u4-l3-learner-1"
+          },
+          {
+            "es": "La línea dos. Tiene que hacer transbordo en Goya.",
+            "ar": "الخط الثاني. عليك التحويل في جويا.",
+            "arEg": "الخط التاني. لازم تبدّل في جويا.",
+            "audioKey": "pending/tr-u4-l3-staff-1"
+          },
+          {
+            "es": "¿Cuánto cuesta el billete?",
+            "ar": "كم سعر التذكرة؟",
+            "arEg": "التذكرة بكام؟",
+            "audioKey": "pending/tr-u4-l3-learner-2"
+          },
+          {
+            "es": "Dos euros. La parada del autobús está enfrente.",
+            "ar": "يوروان. موقف الباص في الجهة المقابلة.",
+            "arEg": "اتنين يورو. موقف الأتوبيس قصادك.",
+            "audioKey": "pending/tr-u4-l3-staff-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u4_9_transfer",
+        "type": "fill_blank",
+        "instructionAr": "أكمل تعليمة التحويل بين خطين.",
+        "stemEs": "Tiene que hacer ____ en la próxima estación.",
+        "stemAr": "عليك التحويل في المحطة القادمة.",
+        "answerKey": {
+          "accepted": [
+            "transbordo"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«hacer transbordo» = يغيّر الخط. والفعل المساعد: tener que + مصدر.",
+        "errorFeedback": {
+          "cambio": "«cambio» تعني «تغيير» عمومًا؛ في المواصلات المصطلح «transbordo».",
+          "transferencia": "«transferencia» للحوالات البنكية لا للمترو."
+        },
+        "targetVocab": [
+          "transbordo"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_10_line",
+        "type": "word_choice",
+        "instructionAr": "كيف تسأل: «أي خط يذهب إلى المركز؟»",
+        "options": [
+          {
+            "id": "tr_u4_10_a",
+            "text": "¿Qué línea va al centro?",
+            "isCorrect": true,
+            "textAr": "أي خط يذهب إلى المركز؟"
+          },
+          {
+            "id": "tr_u4_10_b",
+            "text": "¿Qué línea es al centro?",
+            "isCorrect": false,
+            "textAr": "أي خط يكون إلى المركز؟",
+            "distractorRationaleAr": "الحركة تُعبَّر عنها بـir: va al centro، لا ser."
+          },
+          {
+            "id": "tr_u4_10_c",
+            "text": "¿Qué línea va centro?",
+            "isCorrect": false,
+            "textAr": "أي خط يذهب مركز؟",
+            "distractorRationaleAr": "ناقصة «a» + أداة التعريف: al centro."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_10_a"
+          ]
+        },
+        "explanationAr": "a + el = al. و«ir al centro» = يذهب إلى المركز.",
+        "errorFeedback": {
+          "tr_u4_10_b": "الحركة بـir: ¿Qué línea va al centro?",
+          "tr_u4_10_c": "«al» ضرورية: al centro."
+        },
+        "targetVocab": [
+          "línea",
+          "metro"
+        ],
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_11_transfer_reply",
+        "type": "choose_reply",
+        "instructionAr": "قال الموظف: «Tiene que hacer transbordo en Goya». اختر الردّ الأنسب.",
+        "stemEs": "— Tiene que hacer transbordo en Goya.",
+        "stemAr": "— عليك التحويل في جويا.",
+        "options": [
+          {
+            "id": "tr_u4_11_a",
+            "text": "Entendido. ¿Y luego qué línea tomo?",
+            "isCorrect": true,
+            "textAr": "فهمت. وأي خط آخذ بعد ذلك؟"
+          },
+          {
+            "id": "tr_u4_11_b",
+            "text": "No, gracias, voy a pie.",
+            "isCorrect": false,
+            "textAr": "لا، شكرًا، سأذهب مشيًا.",
+            "distractorRationaleAr": "ردّ يرفض المعلومة بلا سبب داخل المحطة."
+          },
+          {
+            "id": "tr_u4_11_c",
+            "text": "¿Dónde está la cuenta?",
+            "isCorrect": false,
+            "textAr": "أين الحساب؟",
+            "distractorRationaleAr": "الحساب في المطعم لا في محطة المترو."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_11_a"
+          ]
+        },
+        "explanationAr": "تأكيد الفهم ثم سؤال الخط التالي: ¿Y luego qué línea tomo?",
+        "errorFeedback": {
+          "tr_u4_11_b": "الرفض لا معنى له بعد التعليمة.",
+          "tr_u4_11_c": "خلط بين سياق المطعم وسياق المواصلات."
+        },
+        "targetVocab": [
+          "transbordo",
+          "línea"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_12_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أين موقف الباص من فضلك؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "¿Dónde está la parada del autobús, por favor?",
+            "¿Dónde está la parada del autobús por favor?",
+            "Perdone, ¿dónde está la parada del autobús?",
+            "¿Dónde está la parada de autobús, por favor?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«la parada del autobús»: de + el = del. والتذكير/التأنيث: parada مؤنثة.",
+        "errorFeedback": {
+          "¿Dónde está el parada?": "parada مؤنثة: la parada.",
+          "¿Dónde está la parada de el autobús?": "تُدمج: del autobús."
+        },
+        "targetVocab": [
+          "parada",
+          "billete"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_bus_metro_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اسأل عن الخط المناسب ثم عن سعر التذكرة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Perdone, ¿qué línea va al centro? ¿Cuánto cuesta el billete?",
+        "stemAr": "عفوًا، أي خط يذهب إلى المركز؟ كم سعر التذكرة؟",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u4-bus-metro-model-1",
+          "modelAnswer": "Perdone, ¿qué línea va al centro? ¿Cuánto cuesta el billete?"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "línea",
+          "metro",
+          "billete"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الاتجاهات 3/4 (المترو والباص). يحتاج مراجعة إسبانية أصلية لمصطلح «transbordo» مقابل «cambio» و«parada» مقابل «estación» في مدن إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

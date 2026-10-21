@@ -1454,7 +1454,82 @@
               "objectiveAr": "أن يسأل المتعلم عن الاتجاه ويستخدم المواصلات.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "tr-u4-asking-directions",
+                  "titleAr": "أين ...؟ أسأل عن مكان",
+                  "objectiveAr": "أن يسأل المتعلم عن مكان في الشارع بصيغة مهذّبة، ويفهم جوابًا قصيرًا فيه يمين أو يسار أو «على طول»، ويسأل عن خريطة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-asking-directions.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": []
+                },
+                {
+                  "slug": "tr-u4-bus-metro",
+                  "titleAr": "المترو والباص",
+                  "objectiveAr": "أن يسأل المتعلم عن الخط المناسب، ويشتري تذكرة، ويفهم تعليمة التحويل بين خطين، ويعرف أين الموقف.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-bus-metro.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-walking-route"
+                  ]
+                },
+                {
+                  "slug": "tr-u4-taxi",
+                  "titleAr": "التاكسي",
+                  "objectiveAr": "أن يطلب المتعلم تاكسيًا ويحدد الوجهة، ويسأل عن السعر التقريبي، ويطلب التوقف، ويسأل عن طريقة الدفع.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-taxi.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-bus-metro"
+                  ]
+                },
+                {
+                  "slug": "tr-u4-walking-route",
+                  "titleAr": "امشِ واستدر واعبر",
+                  "objectiveAr": "أن يتبع المتعلم تعليمات سير متتابعة (استدر، اعبر، عند الناصية، عند الإشارة)، ويسأل هل المكان قريب أو بعيد وكم دقيقة مشيًا.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-walking-route.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-asking-directions"
+                  ]
+                }
+              ]
             },
             {
               "slug": "tr-u5-shopping-travel",
