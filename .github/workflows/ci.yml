@@ -51,6 +51,9 @@ jobs:
       - name: تدقيق جودة المحتوى
         run: node tools/audit-content-quality.mjs
 
+      - name: عدّاد المفردات الفريدة (ضد التكرار بين الحزم)
+        run: node tools/count-lexicon.mjs --ci
+
       - name: بناء الإنتاج
         run: npx vite build
 

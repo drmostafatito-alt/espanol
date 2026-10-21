@@ -1,680 +1,2210 @@
 {
-  "schemaVersion": "1.0.0",
-  "bundleSlug": "cc-shared",
-  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. على الهاتف تزيد صعوبة تمييز b/p وd/t؛ لذلك نطلب التهجئة بدل التخمين.",
-  "source": {
-    "title": "مفردات خدمة العملاء — إعداد داخلي لمراجعة بشرية قبل النشر",
-    "url": "",
-    "license": "internal-draft",
-    "accessedAt": "2026-10-21",
-    "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأنها الأكثر شيوعًا."
-  },
-  "entries": [
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "cc-shared",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. على الهاتف تزيد صعوبة تمييز b/p وd/t؛ لذلك نطلب التهجئة بدل التخمين.",
+ "source": {
+  "title": "مفردات خدمة العملاء — إعداد داخلي لمراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأنها الأكثر شيوعًا."
+ },
+ "entries": [
+  {
+   "headword": "pedido",
+   "normalized": "pedido",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/peˈðiðo/",
+   "pronunciationHintAr": "بيذيو",
+   "internalRank": 1,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
     {
-      "headword": "pedido",
-      "normalized": "pedido",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/peˈðiðo/",
-      "pronunciationHintAr": "بيذيو",
-      "internalRank": 1,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "طلب/طلبية (شراء)",
-          "meaningArEg": "أوردر",
-          "glossEs": "sustantivo masculino: orden de compra",
-          "exampleEs": "Su pedido salió ayer.",
-          "exampleAr": "طلبك خرج أمس.",
-          "exampleArEg": "الأوردر بتاعك خرج إمبارح.",
-          "usageNoteAr": "número de pedido = رقم الطلب.",
-          "commonErrorAr": "«orden» تعني ترتيبًا أو أمرًا؛ للشراء «pedido»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Su pedido salió ayer.",
-          "ar": "طلبك خرج أمس.",
-          "arEg": "الأوردر بتاعك خرج إمبارح."
-        }
-      ]
-    },
-    {
-      "headword": "envío",
-      "normalized": "envío",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/emˈbio/",
-      "pronunciationHintAr": "إمبيو",
-      "internalRank": 2,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الشحن / الإرسال",
-          "meaningArEg": "الشحن",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El envío tarda tres días.",
-          "exampleAr": "الشحن يستغرق ثلاثة أيام.",
-          "exampleArEg": "الشحن بياخد تلات أيام.",
-          "usageNoteAr": "gastos de envío = تكاليف الشحن.",
-          "commonErrorAr": "«envío» اسم؛ الفعل enviar."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El envío tarda tres días.",
-          "ar": "الشحن يستغرق ثلاثة أيام.",
-          "arEg": "الشحن بياخد تلات أيام."
-        }
-      ]
-    },
-    {
-      "headword": "entrega",
-      "normalized": "entrega",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/enˈtɾeɣa/",
-      "pronunciationHintAr": "إنترِيغا",
-      "internalRank": 3,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "التسليم",
-          "meaningArEg": "التسليم",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "La entrega está prevista para mañana.",
-          "exampleAr": "التسليم متوقع غدًا.",
-          "exampleArEg": "التسليم متوقع بكرة.",
-          "usageNoteAr": "fecha de entrega = تاريخ التسليم.",
-          "commonErrorAr": "«entrega» ليست «entrada» (دخول)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La entrega está prevista para mañana.",
-          "ar": "التسليم متوقع غدًا.",
-          "arEg": "التسليم متوقع بكرة."
-        }
-      ]
-    },
-    {
-      "headword": "plazo",
-      "normalized": "plazo",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/ˈplaθo/",
-      "pronunciationHintAr": "بلاثو",
-      "internalRank": 4,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "المدة المحددة / الموعد النهائي",
-          "meaningArEg": "المدة",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El plazo es de cinco días laborables.",
-          "exampleAr": "المدة خمسة أيام عمل.",
-          "exampleArEg": "المدة خمس أيام عمل.",
-          "usageNoteAr": "días laborables = أيام عمل.",
-          "commonErrorAr": "«plazo» مدة محددة، وليست «plaza» (ساحة)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El plazo es de cinco días laborables.",
-          "ar": "المدة خمسة أيام عمل.",
-          "arEg": "المدة خمس أيام عمل."
-        }
-      ]
-    },
-    {
-      "headword": "incidencia",
-      "normalized": "incidencia",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/inθiˈðenθja/",
-      "pronunciationHintAr": "إنثيذينثيا",
-      "internalRank": 5,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مشكلة/حادث طارئ في الخدمة",
-          "meaningArEg": "مشكلة",
-          "glossEs": "sustantivo femenino: registro de problema",
-          "exampleEs": "Hemos abierto una incidencia.",
-          "exampleAr": "فتحنا بلاغ مشكلة.",
-          "exampleArEg": "فتحنا بلاغ مشكلة.",
-          "usageNoteAr": "abrir una incidencia = تسجيل بلاغ.",
-          "commonErrorAr": "«incidencia» ليست «incidente» بالضرورة؛ الأولى مصطلح خدمة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Hemos abierto una incidencia.",
-          "ar": "فتحنا بلاغ مشكلة.",
-          "arEg": "فتحنا بلاغ مشكلة."
-        }
-      ]
-    },
-    {
-      "headword": "reclamación",
-      "normalized": "reclamación",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/reklamaˈθjon/",
-      "pronunciationHintAr": "ريكلاماثيون",
-      "internalRank": 6,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "شكوى رسمية",
-          "meaningArEg": "شكوى",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "Puede presentar una reclamación.",
-          "exampleAr": "يمكنك تقديم شكوى.",
-          "exampleArEg": "ممكن تقدّم شكوى.",
-          "usageNoteAr": "presentar una reclamación = تقديم شكوى.",
-          "commonErrorAr": "«reclamación» رسمية؛ «queja» شكوى عامة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Puede presentar una reclamación.",
-          "ar": "يمكنك تقديم شكوى.",
-          "arEg": "ممكن تقدّم شكوى."
-        }
-      ]
-    },
-    {
-      "headword": "reembolso",
-      "normalized": "reembolso",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/reemˈbolso/",
-      "pronunciationHintAr": "رييمبولسو",
-      "internalRank": 7,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "استرداد المبلغ",
-          "meaningArEg": "استرداد الفلوس",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El reembolso tarda cinco días.",
-          "exampleAr": "استرداد المبلغ يستغرق خمسة أيام.",
-          "exampleArEg": "استرداد الفلوس بياخد خمس أيام.",
-          "usageNoteAr": "solicitar un reembolso = طلب استرداد.",
-          "commonErrorAr": "«devolución» إعادة المنتج، و«reembolso» إعادة المال."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El reembolso tarda cinco días.",
-          "ar": "استرداد المبلغ يستغرق خمسة أيام.",
-          "arEg": "استرداد الفلوس بياخد خمس أيام."
-        }
-      ]
-    },
-    {
-      "headword": "devolución",
-      "normalized": "devolución",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/deoβoluˈθjon/",
-      "pronunciationHintAr": "دييبولوثيون",
-      "internalRank": 8,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "إعادة المنتج",
-          "meaningArEg": "إرجاع المنتج",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "La devolución es gratuita.",
-          "exampleAr": "إعادة المنتج مجانية.",
-          "exampleArEg": "إرجاع المنتج مجاني.",
-          "usageNoteAr": "devolver = يعيد؛ devolución اسم.",
-          "commonErrorAr": "لا تخلطها بـreembolso (إعادة المال)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La devolución es gratuita.",
-          "ar": "إعادة المنتج مجانية.",
-          "arEg": "إرجاع المنتج مجاني."
-        }
-      ]
-    },
-    {
-      "headword": "importe",
-      "normalized": "importe",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/imˈpoɾte/",
-      "pronunciationHintAr": "إمبورتي",
-      "internalRank": 9,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "المبلغ (المالي)",
-          "meaningArEg": "المبلغ",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "El importe total es 48,90 euros.",
-          "exampleAr": "المبلغ الإجمالي 48.90 يورو.",
-          "exampleArEg": "المبلغ الإجمالي 48.90 يورو.",
-          "usageNoteAr": "importe total = المبلغ الإجمالي.",
-          "commonErrorAr": "«importe» ليس «importante» (مهم)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El importe total es 48,90 euros.",
-          "ar": "المبلغ الإجمالي 48.90 يورو.",
-          "arEg": "المبلغ الإجمالي 48.90 يورو."
-        }
-      ]
-    },
-    {
-      "headword": "gestionar",
-      "normalized": "gestionar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/xestjoˈnaɾ/",
-      "pronunciationHintAr": "خيستيونار",
-      "internalRank": 10,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يتولّى/يدير (إجراءً)",
-          "meaningArEg": "يتابع/يدير",
-          "glossEs": "verbo regular -ar",
-          "exampleEs": "Voy a gestionar su solicitud.",
-          "exampleAr": "سأتولّى طلبك.",
-          "exampleArEg": "هتابع طلبك.",
-          "usageNoteAr": "gestión = إدارة/متابعة.",
-          "commonErrorAr": "«gestionar» ليست «gestionar con»؛ الفعل متعدٍّ بلا حرف جر."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Voy a gestionar su solicitud.",
-          "ar": "سأتولّى طلبك.",
-          "arEg": "هتابع طلبك."
-        }
-      ]
-    },
-    {
-      "headword": "comprobar",
-      "normalized": "comprobar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/kompɾoˈβaɾ/",
-      "pronunciationHintAr": "كومبروبار",
-      "internalRank": 11,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يتحقق/يفحص",
-          "meaningArEg": "يتأكد",
-          "glossEs": "verbo regular -ar (o ⇒ ue: compruebo)",
-          "exampleEs": "Voy a comprobar el estado del envío.",
-          "exampleAr": "سأتحقق من حالة الشحنة.",
-          "exampleArEg": "هتأكد من حالة الشحنة.",
-          "usageNoteAr": "comprobar = يتحقق فعليًا؛ verificar = يتحقق رسميًا.",
-          "commonErrorAr": "الصيغة compruebo لا comprobo."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Voy a comprobar el estado del envío.",
-          "ar": "سأتحقق من حالة الشحنة.",
-          "arEg": "هتأكد من حالة الشحنة."
-        }
-      ]
-    },
-    {
-      "headword": "verificar",
-      "normalized": "verificar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/beɾifiˈkaɾ/",
-      "pronunciationHintAr": "بيريفيكار",
-      "internalRank": 12,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يتحقق رسميًا من الهوية/البيانات",
-          "meaningArEg": "يتأكد رسميًا",
-          "glossEs": "verbo regular -ar",
-          "exampleEs": "Necesito verificar su identidad.",
-          "exampleAr": "أحتاج التحقق من هويتك.",
-          "exampleArEg": "لازم أتأكد من هويتك.",
-          "usageNoteAr": "verificación = تحقق؛ تُستخدم في الإجراءات الرسمية.",
-          "commonErrorAr": "«verificar de» خطأ؛ الفعل متعدٍّ مباشرة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Necesito verificar su identidad.",
-          "ar": "أحتاج التحقق من هويتك.",
-          "arEg": "لازم أتأكد من هويتك."
-        }
-      ]
-    },
-    {
-      "headword": "anotar",
-      "normalized": "anotar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/anoˈtaɾ/",
-      "pronunciationHintAr": "أنوتار",
-      "internalRank": 13,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يدوّن/يسجّل ملاحظة",
-          "meaningArEg": "يسجّل",
-          "glossEs": "verbo regular -ar",
-          "exampleEs": "Voy a anotar su número de contacto.",
-          "exampleAr": "سأسجّل رقم تواصلك.",
-          "exampleArEg": "هسجّل رقم تواصلك.",
-          "usageNoteAr": "anotar = تدوين سريع؛ registrar = تسجيل في النظام.",
-          "commonErrorAr": "«apuntar» مرادف شائع في إسبانيا."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Voy a anotar su número de contacto.",
-          "ar": "سأسجّل رقم تواصلك.",
-          "arEg": "هسجّل رقم تواصلك."
-        }
-      ]
-    },
-    {
-      "headword": "transferir",
-      "normalized": "transferir",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/tɾansfeˈɾiɾ/",
-      "pronunciationHintAr": "ترانسفيرير",
-      "internalRank": 14,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يحوّل المكالمة / يحوّل مبلغًا",
-          "meaningArEg": "يحوّل",
-          "glossEs": "verbo irregular (e ⇒ ie: transfiero)",
-          "exampleEs": "Le transfiero con mi compañero.",
-          "exampleAr": "سأحوّلك إلى زميلي.",
-          "exampleArEg": "هحوّلك لزميلي.",
-          "usageNoteAr": "في المكالمات: le transfiero / le paso con.",
-          "commonErrorAr": "الصيغة transfiero لا transfero."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Le transfiero con mi compañero.",
-          "ar": "سأحوّلك إلى زميلي.",
-          "arEg": "هحوّلك لزميلي."
-        }
-      ]
-    },
-    {
-      "headword": "cliente",
-      "normalized": "cliente",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "mf",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/ˈkljente/",
-      "pronunciationHintAr": "كليينتي",
-      "internalRank": 15,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "عميل",
-          "meaningArEg": "عميل",
-          "glossEs": "sustantivo de género común",
-          "exampleEs": "El cliente lleva dos días esperando.",
-          "exampleAr": "العميل ينتظر يومين.",
-          "exampleArEg": "العميل مستني يومين.",
-          "usageNoteAr": "la clientela = العملاء كمجموعة.",
-          "commonErrorAr": "«clienta» للمؤنث جائزة، لكن الشائع في السياق المهني استخدام «cliente» للجنسين."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El cliente lleva dos días esperando.",
-          "ar": "العميل ينتظر يومين.",
-          "arEg": "العميل مستني يومين."
-        }
-      ]
-    },
-    {
-      "headword": "compañero",
-      "normalized": "compañero",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/kompaˈɲeɾo/",
-      "pronunciationHintAr": "كومبانييرو",
-      "internalRank": 16,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "زميل",
-          "meaningArEg": "زميل",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Mi compañera revisará su caso.",
-          "exampleAr": "زميلتي ستراجع حالتك.",
-          "exampleArEg": "زميلتي هتراجع حالتك.",
-          "usageNoteAr": "compañera للمؤنث؛ compañero de trabajo = زميل عمل.",
-          "commonErrorAr": "«compañero» ليست «compañía» (شركة)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Mi compañera revisará su caso.",
-          "ar": "زميلتي ستراجع حالتك.",
-          "arEg": "زميلتي هتراجع حالتك."
-        }
-      ]
-    },
-    {
-      "headword": "identidad",
-      "normalized": "identidad",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/iðentiˈðað/",
-      "pronunciationHintAr": "إيذينتيذاذ",
-      "internalRank": 17,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "الهوية",
-          "meaningArEg": "الهوية",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "Por seguridad, necesitamos verificar su identidad.",
-          "exampleAr": "للأمان، نحتاج التحقق من هويتك.",
-          "exampleArEg": "للأمان، لازم نتأكد من هويتك.",
-          "usageNoteAr": "لا نطلب كلمة المرور كاملة أبدًا في المكالمات؛ نطلب بيانات جزئية.",
-          "commonErrorAr": "لا تُطلب بيانات حساسة كاملة على الهاتف."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Por seguridad, necesitamos verificar su identidad.",
-          "ar": "للأمان، نحتاج التحقق من هويتك.",
-          "arEg": "للأمان، لازم نتأكد من هويتك."
-        }
-      ]
-    },
-    {
-      "headword": "agente",
-      "normalized": "agente",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "mf",
-      "plural": null,
-      "level": "B1",
-      "register": "formal",
-      "ipa": "/aˈxente/",
-      "pronunciationHintAr": "أخينتي",
-      "internalRank": 18,
-      "tags": [
-        "كول سنتر",
-        "B1"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "موظف الخدمة/الوكيل",
-          "meaningArEg": "الموظف",
-          "glossEs": "sustantivo de género común",
-          "exampleEs": "Le atiende el agente Omar.",
-          "exampleAr": "يخدمك الموظف عمر.",
-          "exampleArEg": "الموظف عمر بيخدمك.",
-          "usageNoteAr": "le atiende = يخدمك (تعبير ثابت في المكالمات).",
-          "commonErrorAr": "«agente» لا يتغير للمؤنث في هذا السياق عادة."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Le atiende el agente Omar.",
-          "ar": "يخدمك الموظف عمر.",
-          "arEg": "الموظف عمر بيخدمك."
-        }
-      ]
+     "senseNo": 1,
+     "meaningArFusha": "طلب/طلبية (شراء)",
+     "meaningArEg": "أوردر",
+     "glossEs": "sustantivo masculino: orden de compra",
+     "exampleEs": "Su pedido salió ayer.",
+     "exampleAr": "طلبك خرج أمس.",
+     "exampleArEg": "الأوردر بتاعك خرج إمبارح.",
+     "usageNoteAr": "número de pedido = رقم الطلب.",
+     "commonErrorAr": "«orden» تعني ترتيبًا أو أمرًا؛ للشراء «pedido»."
     }
-  ]
+   ],
+   "examples": [
+    {
+     "es": "Su pedido salió ayer.",
+     "ar": "طلبك خرج أمس.",
+     "arEg": "الأوردر بتاعك خرج إمبارح."
+    }
+   ]
+  },
+  {
+   "headword": "envío",
+   "normalized": "envío",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/emˈbio/",
+   "pronunciationHintAr": "إمبيو",
+   "internalRank": 2,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الشحن / الإرسال",
+     "meaningArEg": "الشحن",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El envío tarda tres días.",
+     "exampleAr": "الشحن يستغرق ثلاثة أيام.",
+     "exampleArEg": "الشحن بياخد تلات أيام.",
+     "usageNoteAr": "gastos de envío = تكاليف الشحن.",
+     "commonErrorAr": "«envío» اسم؛ الفعل enviar."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El envío tarda tres días.",
+     "ar": "الشحن يستغرق ثلاثة أيام.",
+     "arEg": "الشحن بياخد تلات أيام."
+    }
+   ]
+  },
+  {
+   "headword": "entrega",
+   "normalized": "entrega",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/enˈtɾeɣa/",
+   "pronunciationHintAr": "إنترِيغا",
+   "internalRank": 3,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "التسليم",
+     "meaningArEg": "التسليم",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "La entrega está prevista para mañana.",
+     "exampleAr": "التسليم متوقع غدًا.",
+     "exampleArEg": "التسليم متوقع بكرة.",
+     "usageNoteAr": "fecha de entrega = تاريخ التسليم.",
+     "commonErrorAr": "«entrega» ليست «entrada» (دخول)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La entrega está prevista para mañana.",
+     "ar": "التسليم متوقع غدًا.",
+     "arEg": "التسليم متوقع بكرة."
+    }
+   ]
+  },
+  {
+   "headword": "plazo",
+   "normalized": "plazo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/ˈplaθo/",
+   "pronunciationHintAr": "بلاثو",
+   "internalRank": 4,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "المدة المحددة / الموعد النهائي",
+     "meaningArEg": "المدة",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El plazo es de cinco días laborables.",
+     "exampleAr": "المدة خمسة أيام عمل.",
+     "exampleArEg": "المدة خمس أيام عمل.",
+     "usageNoteAr": "días laborables = أيام عمل.",
+     "commonErrorAr": "«plazo» مدة محددة، وليست «plaza» (ساحة)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El plazo es de cinco días laborables.",
+     "ar": "المدة خمسة أيام عمل.",
+     "arEg": "المدة خمس أيام عمل."
+    }
+   ]
+  },
+  {
+   "headword": "incidencia",
+   "normalized": "incidencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/inθiˈðenθja/",
+   "pronunciationHintAr": "إنثيذينثيا",
+   "internalRank": 5,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مشكلة/حادث طارئ في الخدمة",
+     "meaningArEg": "مشكلة",
+     "glossEs": "sustantivo femenino: registro de problema",
+     "exampleEs": "Hemos abierto una incidencia.",
+     "exampleAr": "فتحنا بلاغ مشكلة.",
+     "exampleArEg": "فتحنا بلاغ مشكلة.",
+     "usageNoteAr": "abrir una incidencia = تسجيل بلاغ.",
+     "commonErrorAr": "«incidencia» ليست «incidente» بالضرورة؛ الأولى مصطلح خدمة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hemos abierto una incidencia.",
+     "ar": "فتحنا بلاغ مشكلة.",
+     "arEg": "فتحنا بلاغ مشكلة."
+    }
+   ]
+  },
+  {
+   "headword": "reclamación",
+   "normalized": "reclamación",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/reklamaˈθjon/",
+   "pronunciationHintAr": "ريكلاماثيون",
+   "internalRank": 6,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شكوى رسمية",
+     "meaningArEg": "شكوى",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "Puede presentar una reclamación.",
+     "exampleAr": "يمكنك تقديم شكوى.",
+     "exampleArEg": "ممكن تقدّم شكوى.",
+     "usageNoteAr": "presentar una reclamación = تقديم شكوى.",
+     "commonErrorAr": "«reclamación» رسمية؛ «queja» شكوى عامة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Puede presentar una reclamación.",
+     "ar": "يمكنك تقديم شكوى.",
+     "arEg": "ممكن تقدّم شكوى."
+    }
+   ]
+  },
+  {
+   "headword": "reembolso",
+   "normalized": "reembolso",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/reemˈbolso/",
+   "pronunciationHintAr": "رييمبولسو",
+   "internalRank": 7,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "استرداد المبلغ",
+     "meaningArEg": "استرداد الفلوس",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El reembolso tarda cinco días.",
+     "exampleAr": "استرداد المبلغ يستغرق خمسة أيام.",
+     "exampleArEg": "استرداد الفلوس بياخد خمس أيام.",
+     "usageNoteAr": "solicitar un reembolso = طلب استرداد.",
+     "commonErrorAr": "«devolución» إعادة المنتج، و«reembolso» إعادة المال."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El reembolso tarda cinco días.",
+     "ar": "استرداد المبلغ يستغرق خمسة أيام.",
+     "arEg": "استرداد الفلوس بياخد خمس أيام."
+    }
+   ]
+  },
+  {
+   "headword": "devolución",
+   "normalized": "devolución",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/deoβoluˈθjon/",
+   "pronunciationHintAr": "دييبولوثيون",
+   "internalRank": 8,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إعادة المنتج",
+     "meaningArEg": "إرجاع المنتج",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "La devolución es gratuita.",
+     "exampleAr": "إعادة المنتج مجانية.",
+     "exampleArEg": "إرجاع المنتج مجاني.",
+     "usageNoteAr": "devolver = يعيد؛ devolución اسم.",
+     "commonErrorAr": "لا تخلطها بـreembolso (إعادة المال)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La devolución es gratuita.",
+     "ar": "إعادة المنتج مجانية.",
+     "arEg": "إرجاع المنتج مجاني."
+    }
+   ]
+  },
+  {
+   "headword": "importe",
+   "normalized": "importe",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/imˈpoɾte/",
+   "pronunciationHintAr": "إمبورتي",
+   "internalRank": 9,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "المبلغ (المالي)",
+     "meaningArEg": "المبلغ",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "El importe total es 48,90 euros.",
+     "exampleAr": "المبلغ الإجمالي 48.90 يورو.",
+     "exampleArEg": "المبلغ الإجمالي 48.90 يورو.",
+     "usageNoteAr": "importe total = المبلغ الإجمالي.",
+     "commonErrorAr": "«importe» ليس «importante» (مهم)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El importe total es 48,90 euros.",
+     "ar": "المبلغ الإجمالي 48.90 يورو.",
+     "arEg": "المبلغ الإجمالي 48.90 يورو."
+    }
+   ]
+  },
+  {
+   "headword": "gestionar",
+   "normalized": "gestionar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/xestjoˈnaɾ/",
+   "pronunciationHintAr": "خيستيونار",
+   "internalRank": 10,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتولّى/يدير (إجراءً)",
+     "meaningArEg": "يتابع/يدير",
+     "glossEs": "verbo regular -ar",
+     "exampleEs": "Voy a gestionar su solicitud.",
+     "exampleAr": "سأتولّى طلبك.",
+     "exampleArEg": "هتابع طلبك.",
+     "usageNoteAr": "gestión = إدارة/متابعة.",
+     "commonErrorAr": "«gestionar» ليست «gestionar con»؛ الفعل متعدٍّ بلا حرف جر."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy a gestionar su solicitud.",
+     "ar": "سأتولّى طلبك.",
+     "arEg": "هتابع طلبك."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "gestiono",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestiona",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestioné",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestione",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestiones",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestione",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gestionen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "gestionando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "gestionado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "comprobar",
+   "normalized": "comprobar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/kompɾoˈβaɾ/",
+   "pronunciationHintAr": "كومبروبار",
+   "internalRank": 11,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتحقق/يفحص",
+     "meaningArEg": "يتأكد",
+     "glossEs": "verbo regular -ar (o ⇒ ue: compruebo)",
+     "exampleEs": "Voy a comprobar el estado del envío.",
+     "exampleAr": "سأتحقق من حالة الشحنة.",
+     "exampleArEg": "هتأكد من حالة الشحنة.",
+     "usageNoteAr": "comprobar = يتحقق فعليًا؛ verificar = يتحقق رسميًا.",
+     "commonErrorAr": "الصيغة compruebo لا comprobo."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy a comprobar el estado del envío.",
+     "ar": "سأتحقق من حالة الشحنة.",
+     "arEg": "هتأكد من حالة الشحنة."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "comprobo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comproba",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comproban",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobe",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobe",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comprobéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "comproben",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "comprobando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "comprobado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "verificar",
+   "normalized": "verificar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/beɾifiˈkaɾ/",
+   "pronunciationHintAr": "بيريفيكار",
+   "internalRank": 12,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتحقق رسميًا من الهوية/البيانات",
+     "meaningArEg": "يتأكد رسميًا",
+     "glossEs": "verbo regular -ar",
+     "exampleEs": "Necesito verificar su identidad.",
+     "exampleAr": "أحتاج التحقق من هويتك.",
+     "exampleArEg": "لازم أتأكد من هويتك.",
+     "usageNoteAr": "verificación = تحقق؛ تُستخدم في الإجراءات الرسمية.",
+     "commonErrorAr": "«verificar de» خطأ؛ الفعل متعدٍّ مباشرة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Necesito verificar su identidad.",
+     "ar": "أحتاج التحقق من هويتك.",
+     "arEg": "لازم أتأكد من هويتك."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "verifico",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifica",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifican",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifiqué",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verificarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifique",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifiques",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifique",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifiquemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifiquéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "verifiquen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "verificando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "verificado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "anotar",
+   "normalized": "anotar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/anoˈtaɾ/",
+   "pronunciationHintAr": "أنوتار",
+   "internalRank": 13,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يدوّن/يسجّل ملاحظة",
+     "meaningArEg": "يسجّل",
+     "glossEs": "verbo regular -ar",
+     "exampleEs": "Voy a anotar su número de contacto.",
+     "exampleAr": "سأسجّل رقم تواصلك.",
+     "exampleArEg": "هسجّل رقم تواصلك.",
+     "usageNoteAr": "anotar = تدوين سريع؛ registrar = تسجيل في النظام.",
+     "commonErrorAr": "«apuntar» مرادف شائع في إسبانيا."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy a anotar su número de contacto.",
+     "ar": "سأسجّل رقم تواصلك.",
+     "arEg": "هسجّل رقم تواصلك."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "anoto",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anota",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anoté",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anote",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anote",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anotéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "anoten",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "anotando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "anotado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "transferir",
+   "normalized": "transferir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/tɾansfeˈɾiɾ/",
+   "pronunciationHintAr": "ترانسفيرير",
+   "internalRank": 14,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يحوّل المكالمة / يحوّل مبلغًا",
+     "meaningArEg": "يحوّل",
+     "glossEs": "verbo irregular (e ⇒ ie: transfiero)",
+     "exampleEs": "Le transfiero con mi compañero.",
+     "exampleAr": "سأحوّلك إلى زميلي.",
+     "exampleArEg": "هحوّلك لزميلي.",
+     "usageNoteAr": "في المكالمات: le transfiero / le paso con.",
+     "commonErrorAr": "الصيغة transfiero لا transfero."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Le transfiero con mi compañero.",
+     "ar": "سأحوّلك إلى زميلي.",
+     "arEg": "هحوّلك لزميلي."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "transfero",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transfere",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transfería",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transfería",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferirás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferirá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferirán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferirías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferiríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferirían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transfera",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transfera",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transferan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "transferiendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "transferido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "cliente",
+   "normalized": "cliente",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/ˈkljente/",
+   "pronunciationHintAr": "كليينتي",
+   "internalRank": 15,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عميل",
+     "meaningArEg": "عميل",
+     "glossEs": "sustantivo de género común",
+     "exampleEs": "El cliente lleva dos días esperando.",
+     "exampleAr": "العميل ينتظر يومين.",
+     "exampleArEg": "العميل مستني يومين.",
+     "usageNoteAr": "la clientela = العملاء كمجموعة.",
+     "commonErrorAr": "«clienta» للمؤنث جائزة، لكن الشائع في السياق المهني استخدام «cliente» للجنسين."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El cliente lleva dos días esperando.",
+     "ar": "العميل ينتظر يومين.",
+     "arEg": "العميل مستني يومين."
+    }
+   ]
+  },
+  {
+   "headword": "compañero",
+   "normalized": "compañero",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/kompaˈɲeɾo/",
+   "pronunciationHintAr": "كومبانييرو",
+   "internalRank": 16,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "زميل",
+     "meaningArEg": "زميل",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Mi compañera revisará su caso.",
+     "exampleAr": "زميلتي ستراجع حالتك.",
+     "exampleArEg": "زميلتي هتراجع حالتك.",
+     "usageNoteAr": "compañera للمؤنث؛ compañero de trabajo = زميل عمل.",
+     "commonErrorAr": "«compañero» ليست «compañía» (شركة)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mi compañera revisará su caso.",
+     "ar": "زميلتي ستراجع حالتك.",
+     "arEg": "زميلتي هتراجع حالتك."
+    }
+   ]
+  },
+  {
+   "headword": "identidad",
+   "normalized": "identidad",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/iðentiˈðað/",
+   "pronunciationHintAr": "إيذينتيذاذ",
+   "internalRank": 17,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الهوية",
+     "meaningArEg": "الهوية",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "Por seguridad, necesitamos verificar su identidad.",
+     "exampleAr": "للأمان، نحتاج التحقق من هويتك.",
+     "exampleArEg": "للأمان، لازم نتأكد من هويتك.",
+     "usageNoteAr": "لا نطلب كلمة المرور كاملة أبدًا في المكالمات؛ نطلب بيانات جزئية.",
+     "commonErrorAr": "لا تُطلب بيانات حساسة كاملة على الهاتف."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Por seguridad, necesitamos verificar su identidad.",
+     "ar": "للأمان، نحتاج التحقق من هويتك.",
+     "arEg": "للأمان، لازم نتأكد من هويتك."
+    }
+   ]
+  },
+  {
+   "headword": "agente",
+   "normalized": "agente",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "formal",
+   "ipa": "/aˈxente/",
+   "pronunciationHintAr": "أخينتي",
+   "internalRank": 18,
+   "tags": [
+    "كول سنتر",
+    "B1"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "موظف الخدمة/الوكيل",
+     "meaningArEg": "الموظف",
+     "glossEs": "sustantivo de género común",
+     "exampleEs": "Le atiende el agente Omar.",
+     "exampleAr": "يخدمك الموظف عمر.",
+     "exampleArEg": "الموظف عمر بيخدمك.",
+     "usageNoteAr": "le atiende = يخدمك (تعبير ثابت في المكالمات).",
+     "commonErrorAr": "«agente» لا يتغير للمؤنث في هذا السياق عادة."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Le atiende el agente Omar.",
+     "ar": "يخدمك الموظف عمر.",
+     "arEg": "الموظف عمر بيخدمك."
+    }
+   ]
+  }
+ ]
 }

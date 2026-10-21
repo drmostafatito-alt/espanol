@@ -1,827 +1,1595 @@
 {
-  "schemaVersion": "1.0.0",
-  "bundleSlug": "tr-u4-directions",
-  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنتج بعد.",
-  "source": {
-    "title": "مفردات الاتجاهات والمواصلات — إعداد داخلي لمراجعة بشرية قبل النشر",
-    "url": "",
-    "license": "internal-draft",
-    "accessedAt": "2026-10-21",
-    "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأن الكلمات الأكثر شيوعًا."
-  },
-  "entries": [
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "tr-u4-directions",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. في إسبانيا تُنطق z وce قريبة من «ث»، وفي أمريكا اللاتينية «س» — الملفات الصوتية لم تُنتج بعد.",
+ "source": {
+  "title": "مفردات الاتجاهات والمواصلات — إعداد داخلي لمراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "internalRank داخلي لسَلسَلة التدريس، وليس ادعاءً بأن الكلمات الأكثر شيوعًا."
+ },
+ "entries": [
+  {
+   "headword": "izquierda",
+   "normalized": "izquierda",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/iθˈkjeɾða/",
+   "pronunciationHintAr": "إيثكييردا",
+   "internalRank": 1,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
     {
-      "headword": "izquierda",
-      "normalized": "izquierda",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/iθˈkjeɾða/",
-      "pronunciationHintAr": "إيثكييردا",
-      "internalRank": 1,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يسار",
-          "meaningArEg": "شمال",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "El banco está a la izquierda.",
-          "exampleAr": "البنك على اليسار.",
-          "exampleArEg": "البنك على الشمال.",
-          "usageNoteAr": "الاتجاه يُقال بـ«a la izquierda» («إلى اليسار»). الصفة izquierdo/izquierda تُطابق الاسم: la mano izquierda.",
-          "commonErrorAr": "لا تقل «en la izquierda» للاتجاه؛ الصواب «a la izquierda»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El banco está a la izquierda.",
-          "ar": "البنك على اليسار.",
-          "arEg": "البنك على الشمال."
-        }
-      ]
-    },
-    {
-      "headword": "derecha",
-      "normalized": "derecha",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/deˈɾetʃa/",
-      "pronunciationHintAr": "ديريتشا",
-      "internalRank": 2,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يمين",
-          "meaningArEg": "يمين",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "Gira a la derecha en la esquina.",
-          "exampleAr": "استدر يمينًا عند الناصية.",
-          "exampleArEg": "خد يمين عند الناصية.",
-          "usageNoteAr": "«a la derecha» للاتجاه، و«la mano derecha» لليد اليمنى. في إسبانيا تُنطق «d» بين الحركتين قريبة من «ذ» الخفيفة.",
-          "commonErrorAr": "«la derecha» ليست «الحق» بالمعنى القانوني؛ للحق: el derecho."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Gira a la derecha en la esquina.",
-          "ar": "استدر يمينًا عند الناصية.",
-          "arEg": "خد يمين عند الناصية."
-        }
-      ]
-    },
-    {
-      "headword": "todo recto",
-      "normalized": "todo recto",
-      "kind": "expression",
-      "pos": "phrase",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈtoðo ˈrekto/",
-      "pronunciationHintAr": "تودو ريكتو",
-      "internalRank": 3,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "على طول / مستقيم",
-          "meaningArEg": "على طول",
-          "glossEs": "locución adverbial",
-          "exampleEs": "Sigue todo recto hasta el semáforo.",
-          "exampleAr": "امشِ على طول حتى إشارة المرور.",
-          "exampleArEg": "امشي على طول لحد الإشارة.",
-          "usageNoteAr": "«todo recto» أو «siempre recto» بمعنى «على طول». وفي أمريكا اللاتينية: «derecho» بدل «recto».",
-          "commonErrorAr": "«recto» ليست «right» الإنجليزية؛ معناها «مستقيم». اليمين = derecha."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Sigue todo recto hasta el semáforo.",
-          "ar": "امشِ على طول حتى إشارة المرور.",
-          "arEg": "امشي على طول لحد الإشارة."
-        }
-      ]
-    },
-    {
-      "headword": "girar",
-      "normalized": "girar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/xiˈɾaɾ/",
-      "pronunciationHintAr": "خيرار",
-      "internalRank": 4,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يستدير / يلتف",
-          "meaningArEg": "يلفّ",
-          "glossEs": "verbo regular",
-          "exampleEs": "Gira a la izquierda después del banco.",
-          "exampleAr": "استدر يسارًا بعد البنك.",
-          "exampleArEg": "خد شمال بعد البنك.",
-          "usageNoteAr": "girar = يستدير. ومنها «gire» بصيغة المخاطبة الرسمية (usted) في اللافتات.",
-          "commonErrorAr": "«girar» تحتاج حرف «a» مع الاتجاه: girar a la derecha."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Gira a la izquierda después del banco.",
-          "ar": "استدر يسارًا بعد البنك.",
-          "arEg": "خد شمال بعد البنك."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "giro",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "giras",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "gira",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "giramos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "giráis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "giran",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "cruzar",
-      "normalized": "cruzar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/kɾuˈθaɾ/",
-      "pronunciationHintAr": "كروثار",
-      "internalRank": 5,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يعبر (الشارع)",
-          "meaningArEg": "يعدّي",
-          "glossEs": "verbo regular (تغيّر إملائي في 1sg)",
-          "exampleEs": "Cruza la calle en el semáforo.",
-          "exampleAr": "اعبر الشارع عند إشارة المرور.",
-          "exampleArEg": "عدّي الشارع عند الإشارة.",
-          "usageNoteAr": "cruzar la calle = يعبر الشارع. في المتكلم المفرد تُكتب «cruzo» (z→c قبل o) وإن كانت الصيغة منتظمة لفظًا.",
-          "commonErrorAr": "لا تقل «cruzar en la calle» للعبور؛ المفعول به مباشر: cruzar la calle."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Cruza la calle en el semáforo.",
-          "ar": "اعبر الشارع عند إشارة المرور.",
-          "arEg": "عدّي الشارع عند الإشارة."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "cruzo",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "cruzas",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "cruza",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "cruzamos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "cruzáis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "cruzan",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "esquina",
-      "normalized": "esquina",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/esˈkina/",
-      "pronunciationHintAr": "إسكينا",
-      "internalRank": 6,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "ناصية / زاوية الشارع",
-          "meaningArEg": "ناصية",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "El quiosco está en la esquina.",
-          "exampleAr": "الكشك عند الناصية.",
-          "exampleArEg": "الكشك عند الناصية.",
-          "usageNoteAr": "«en la esquina» = عند الناصية (مكان)، بينما الاتجاه «a la derecha/izquierda».",
-          "commonErrorAr": "«en la esquina» للمكان؛ لا تستخدم «a la esquina» إلا مع الحركة نحوها."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El quiosco está en la esquina.",
-          "ar": "الكشك عند الناصية.",
-          "arEg": "الكشك عند الناصية."
-        }
-      ]
-    },
-    {
-      "headword": "semáforo",
-      "normalized": "semáforo",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/seˈmafoɾo/",
-      "pronunciationHintAr": "سيمافورو",
-      "internalRank": 7,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "إشارة المرور",
-          "meaningArEg": "إشارة المرور",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Espera en el semáforo en rojo.",
-          "exampleAr": "انتظر عند الإشارة الحمراء.",
-          "exampleArEg": "استنى عند الإشارة الحمرا.",
-          "usageNoteAr": "«en verde» أخضر، «en rojo» أحمر، «en ámbar» برتقالي (يُسمى أيضًا amarillo في أمريكا اللاتينية).",
-          "commonErrorAr": "«semáforo» مذكّر: el semáforo، لا «la semáforo»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Espera en el semáforo en rojo.",
-          "ar": "انتظر عند الإشارة الحمراء.",
-          "arEg": "استنى عند الإشارة الحمرا."
-        }
-      ]
-    },
-    {
-      "headword": "cerca",
-      "normalized": "cerca",
-      "kind": "word",
-      "pos": "adv",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈθeɾka/",
-      "pronunciationHintAr": "ثيركا",
-      "internalRank": 8,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "قريب",
-          "meaningArEg": "قريب",
-          "glossEs": "adverbio",
-          "exampleEs": "La estación está cerca de aquí.",
-          "exampleAr": "المحطة قريبة من هنا.",
-          "exampleArEg": "المحطة قريبة من هنا.",
-          "usageNoteAr": "cerca de + مكان = قريب من. و«más cerca» = أقرب.",
-          "commonErrorAr": "«cerca» تحتاج «de» قبل المكان: cerca de aquí، لا «cerca aquí»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La estación está cerca de aquí.",
-          "ar": "المحطة قريبة من هنا.",
-          "arEg": "المحطة قريبة من هنا."
-        }
-      ]
-    },
-    {
-      "headword": "lejos",
-      "normalized": "lejos",
-      "kind": "word",
-      "pos": "adv",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈlexos/",
-      "pronunciationHintAr": "ليخوس",
-      "internalRank": 9,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "بعيد",
-          "meaningArEg": "بعيد",
-          "glossEs": "adverbio",
-          "exampleEs": "¿Está lejos el museo?",
-          "exampleAr": "هل المتحف بعيد؟",
-          "exampleArEg": "المتحف بعيد؟",
-          "usageNoteAr": "lejos de + مكان = بعيد عن. وللقياس: «a diez minutos a pie».",
-          "commonErrorAr": "«lejos» لا تُوصف بـmuy قبلها؟ صحيحة «muy lejos». الخطأ الشائع: «lejos de a aquí»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Está lejos el museo?",
-          "ar": "هل المتحف بعيد؟",
-          "arEg": "المتحف بعيد؟"
-        }
-      ]
-    },
-    {
-      "headword": "a pie",
-      "normalized": "a pie",
-      "kind": "expression",
-      "pos": "phrase",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/a ˈpje/",
-      "pronunciationHintAr": "آ بيه",
-      "internalRank": 10,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مشيًا / على القدمين",
-          "meaningArEg": "على رجليك",
-          "glossEs": "locución adverbial",
-          "exampleEs": "Voy al hotel a pie.",
-          "exampleAr": "أذهب إلى الفندق مشيًا.",
-          "exampleArEg": "أروح الفندق على رجليا.",
-          "usageNoteAr": "«a pie» = مشيًا. و«ir andando» صيغة أخرى شائعة في إسبانيا.",
-          "commonErrorAr": "«a pie» بلا أداة تعريف: لا تقل «al pie» للتنقّل (al pie = عند قدم الشيء)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Voy al hotel a pie.",
-          "ar": "أذهب إلى الفندق مشيًا.",
-          "arEg": "أروح الفندق على رجليا."
-        }
-      ]
-    },
-    {
-      "headword": "metro",
-      "normalized": "metro",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈmetɾo/",
-      "pronunciationHintAr": "ميترو",
-      "internalRank": 11,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "مترو الأنفاق",
-          "meaningArEg": "المترو",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "¿Dónde está la estación de metro?",
-          "exampleAr": "أين محطة المترو؟",
-          "exampleArEg": "محطة المترو فين؟",
-          "usageNoteAr": "«el metro» في إسبانيا؛ وفي بعض بلدان أمريكا اللاتينية «el subte» (الأرجنتين) أو «el subterráneo».",
-          "commonErrorAr": "«metro» مذكّر: el metro. ولا تخلطه بـ«el metro» بمعنى وحدة القياس (متر)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Dónde está la estación de metro?",
-          "ar": "أين محطة المترو؟",
-          "arEg": "محطة المترو فين؟"
-        }
-      ]
-    },
-    {
-      "headword": "línea",
-      "normalized": "línea",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈlinea/",
-      "pronunciationHintAr": "لينيا",
-      "internalRank": 12,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "خط (مترو/باص)",
-          "meaningArEg": "خط",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "Tome la línea dos.",
-          "exampleAr": "خذ الخط الثاني.",
-          "exampleArEg": "خد الخط التاني.",
-          "usageNoteAr": "«la línea 2» أو «la línea dos». وفي المحطات: «línea de metro».",
-          "commonErrorAr": "«línea» مؤنثة: la línea، لا «el línea»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Tome la línea dos.",
-          "ar": "خذ الخط الثاني.",
-          "arEg": "خد الخط التاني."
-        }
-      ]
-    },
-    {
-      "headword": "parada",
-      "normalized": "parada",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "f",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/paˈɾaða/",
-      "pronunciationHintAr": "بارادا",
-      "internalRank": 13,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "موقف (باص)",
-          "meaningArEg": "موقف",
-          "glossEs": "sustantivo femenino",
-          "exampleEs": "La parada del autobús está enfrente.",
-          "exampleAr": "موقف الباص في الجهة المقابلة.",
-          "exampleArEg": "موقف الأتوبيس قصادك.",
-          "usageNoteAr": "«parada» للباص، و«estación» للمترو/القطار. و«parada de taxi» = موقف التاكسي.",
-          "commonErrorAr": "لا تخلط «parada» (موقف) بـ«paradero» (شائع في أمريكا اللاتينية للموقف النهائي)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "La parada del autobús está enfrente.",
-          "ar": "موقف الباص في الجهة المقابلة.",
-          "arEg": "موقف الأتوبيس قصادك."
-        }
-      ]
-    },
-    {
-      "headword": "transbordo",
-      "normalized": "transbordo",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/tɾanzˈβoɾðo/",
-      "pronunciationHintAr": "ترانسبوردو",
-      "internalRank": 14,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "تحويل بين خطين",
-          "meaningArEg": "تبديل خط",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Tiene que hacer transbordo en la línea tres.",
-          "exampleAr": "عليك التحويل عند الخط الثالث.",
-          "exampleArEg": "لازم تبدّل عند الخط التالت.",
-          "usageNoteAr": "«hacer transbordo» = يغيّر الخط. وفي بعض المدن «cambio de línea».",
-          "commonErrorAr": "«transbordo» لا يُستخدم بمعنى «تذكرة»؛ التذكرة billete."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Tiene que hacer transbordo en la línea tres.",
-          "ar": "عليك التحويل عند الخط الثالث.",
-          "arEg": "لازم تبدّل عند الخط التالت."
-        }
-      ]
-    },
-    {
-      "headword": "taxi",
-      "normalized": "taxi",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈtaksi/",
-      "pronunciationHintAr": "تاكسي",
-      "internalRank": 15,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "سيارة أجرة",
-          "meaningArEg": "تاكسي",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "Vamos en taxi al aeropuerto.",
-          "exampleAr": "نذهب بالتاكسي إلى المطار.",
-          "exampleArEg": "نروح المطار بالتاكسي.",
-          "usageNoteAr": "«coger un taxi» (إسبانيا) و«tomar un taxi» (أمريكا اللاتينية) = يستقل تاكسيًا.",
-          "commonErrorAr": "«taxi» مذكّر: el taxi. ولا تستخدم «coche» للتاكسي في الحوار."
-        }
-      ],
-      "examples": [
-        {
-          "es": "Vamos en taxi al aeropuerto.",
-          "ar": "نذهب بالتاكسي إلى المطار.",
-          "arEg": "نروح المطار بالتاكسي."
-        }
-      ]
-    },
-    {
-      "headword": "parar",
-      "normalized": "parar",
-      "kind": "word",
-      "pos": "verb",
-      "gender": null,
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/paˈɾaɾ/",
-      "pronunciationHintAr": "بارار",
-      "internalRank": 16,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "يتوقف / يوقف",
-          "meaningArEg": "يقف",
-          "glossEs": "verbo regular",
-          "exampleEs": "El autobús para en la esquina.",
-          "exampleAr": "الباص يتوقف عند الناصية.",
-          "exampleArEg": "الأتوبيس بيقف عند الناصية.",
-          "usageNoteAr": "مع سائق التاكسي نستخدم صيغة usted: «Pare aquí». وللسيارة نفسها: «el coche para».",
-          "commonErrorAr": "«parar» ≠ «pararse» (الأخيرة تعني يتوقّف عن الحركة، وفي بعض البلدان يقف واقفًا)."
-        }
-      ],
-      "examples": [
-        {
-          "es": "El autobús para en la esquina.",
-          "ar": "الباص يتوقف عند الناصية.",
-          "arEg": "الأتوبيس بيقف عند الناصية."
-        }
-      ],
-      "forms": [
-        {
-          "kind": "conjugation",
-          "formEs": "paro",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "paras",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "para",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3s",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "paramos",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "1p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "paráis",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "2p",
-          "irregular": false
-        },
-        {
-          "kind": "conjugation",
-          "formEs": "paran",
-          "tense": "presente",
-          "mood": "indicativo",
-          "person": "3p",
-          "irregular": false
-        }
-      ]
-    },
-    {
-      "headword": "mapa",
-      "normalized": "mapa",
-      "kind": "word",
-      "pos": "noun",
-      "gender": "m",
-      "plural": null,
-      "level": "A2",
-      "register": "neutral",
-      "ipa": "/ˈmapa/",
-      "pronunciationHintAr": "مابا",
-      "internalRank": 17,
-      "tags": [
-        "سفر",
-        "اتجاهات",
-        "مواصلات",
-        "A2"
-      ],
-      "senses": [
-        {
-          "senseNo": 1,
-          "meaningArFusha": "خريطة",
-          "meaningArEg": "خريطة",
-          "glossEs": "sustantivo masculino",
-          "exampleEs": "¿Tiene un mapa de la ciudad?",
-          "exampleAr": "هل لديك خريطة للمدينة؟",
-          "exampleArEg": "عندك خريطة للمدينة؟",
-          "usageNoteAr": "«el mapa» مذكّر رغم انتهائه بـ-a (كلمة يونانية الأصل) — مثل el problema وel idioma.",
-          "commonErrorAr": "«la mapa» خطأ شائع لأن الكلمة تنتهي بـ-a؛ الصواب «el mapa»."
-        }
-      ],
-      "examples": [
-        {
-          "es": "¿Tiene un mapa de la ciudad?",
-          "ar": "هل لديك خريطة للمدينة؟",
-          "arEg": "عندك خريطة للمدينة؟"
-        }
-      ]
+     "senseNo": 1,
+     "meaningArFusha": "يسار",
+     "meaningArEg": "شمال",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "El banco está a la izquierda.",
+     "exampleAr": "البنك على اليسار.",
+     "exampleArEg": "البنك على الشمال.",
+     "usageNoteAr": "الاتجاه يُقال بـ«a la izquierda» («إلى اليسار»). الصفة izquierdo/izquierda تُطابق الاسم: la mano izquierda.",
+     "commonErrorAr": "لا تقل «en la izquierda» للاتجاه؛ الصواب «a la izquierda»."
     }
-  ]
+   ],
+   "examples": [
+    {
+     "es": "El banco está a la izquierda.",
+     "ar": "البنك على اليسار.",
+     "arEg": "البنك على الشمال."
+    }
+   ]
+  },
+  {
+   "headword": "derecha",
+   "normalized": "derecha",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/deˈɾetʃa/",
+   "pronunciationHintAr": "ديريتشا",
+   "internalRank": 2,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يمين",
+     "meaningArEg": "يمين",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "Gira a la derecha en la esquina.",
+     "exampleAr": "استدر يمينًا عند الناصية.",
+     "exampleArEg": "خد يمين عند الناصية.",
+     "usageNoteAr": "«a la derecha» للاتجاه، و«la mano derecha» لليد اليمنى. في إسبانيا تُنطق «d» بين الحركتين قريبة من «ذ» الخفيفة.",
+     "commonErrorAr": "«la derecha» ليست «الحق» بالمعنى القانوني؛ للحق: el derecho."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Gira a la derecha en la esquina.",
+     "ar": "استدر يمينًا عند الناصية.",
+     "arEg": "خد يمين عند الناصية."
+    }
+   ]
+  },
+  {
+   "headword": "todo recto",
+   "normalized": "todo recto",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈtoðo ˈrekto/",
+   "pronunciationHintAr": "تودو ريكتو",
+   "internalRank": 3,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "على طول / مستقيم",
+     "meaningArEg": "على طول",
+     "glossEs": "locución adverbial",
+     "exampleEs": "Sigue todo recto hasta el semáforo.",
+     "exampleAr": "امشِ على طول حتى إشارة المرور.",
+     "exampleArEg": "امشي على طول لحد الإشارة.",
+     "usageNoteAr": "«todo recto» أو «siempre recto» بمعنى «على طول». وفي أمريكا اللاتينية: «derecho» بدل «recto».",
+     "commonErrorAr": "«recto» ليست «right» الإنجليزية؛ معناها «مستقيم». اليمين = derecha."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Sigue todo recto hasta el semáforo.",
+     "ar": "امشِ على طول حتى إشارة المرور.",
+     "arEg": "امشي على طول لحد الإشارة."
+    }
+   ]
+  },
+  {
+   "headword": "girar",
+   "normalized": "girar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/xiˈɾaɾ/",
+   "pronunciationHintAr": "خيرار",
+   "internalRank": 4,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يستدير / يلتف",
+     "meaningArEg": "يلفّ",
+     "glossEs": "verbo regular",
+     "exampleEs": "Gira a la izquierda después del banco.",
+     "exampleAr": "استدر يسارًا بعد البنك.",
+     "exampleArEg": "خد شمال بعد البنك.",
+     "usageNoteAr": "girar = يستدير. ومنها «gire» بصيغة المخاطبة الرسمية (usted) في اللافتات.",
+     "commonErrorAr": "«girar» تحتاج حرف «a» مع الاتجاه: girar a la derecha."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Gira a la izquierda después del banco.",
+     "ar": "استدر يسارًا بعد البنك.",
+     "arEg": "خد شمال بعد البنك."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "giro",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giras",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gira",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giramos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giráis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giran",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giré",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giró",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giramos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giraríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "girarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gire",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gires",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "gire",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giremos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giréis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "giren",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "girando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "girado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "cruzar",
+   "normalized": "cruzar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kɾuˈθaɾ/",
+   "pronunciationHintAr": "كروثار",
+   "internalRank": 5,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعبر (الشارع)",
+     "meaningArEg": "يعدّي",
+     "glossEs": "verbo regular (تغيّر إملائي في 1sg)",
+     "exampleEs": "Cruza la calle en el semáforo.",
+     "exampleAr": "اعبر الشارع عند إشارة المرور.",
+     "exampleArEg": "عدّي الشارع عند الإشارة.",
+     "usageNoteAr": "cruzar la calle = يعبر الشارع. في المتكلم المفرد تُكتب «cruzo» (z→c قبل o) وإن كانت الصيغة منتظمة لفظًا.",
+     "commonErrorAr": "لا تقل «cruzar en la calle» للعبور؛ المفعول به مباشر: cruzar la calle."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cruza la calle en el semáforo.",
+     "ar": "اعبر الشارع عند إشارة المرور.",
+     "arEg": "عدّي الشارع عند الإشارة."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "cruzo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruza",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "crucé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruzarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruce",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruces",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "cruce",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "crucemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "crucéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "crucen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "cruzando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "cruzado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "esquina",
+   "normalized": "esquina",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/esˈkina/",
+   "pronunciationHintAr": "إسكينا",
+   "internalRank": 6,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ناصية / زاوية الشارع",
+     "meaningArEg": "ناصية",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "El quiosco está en la esquina.",
+     "exampleAr": "الكشك عند الناصية.",
+     "exampleArEg": "الكشك عند الناصية.",
+     "usageNoteAr": "«en la esquina» = عند الناصية (مكان)، بينما الاتجاه «a la derecha/izquierda».",
+     "commonErrorAr": "«en la esquina» للمكان؛ لا تستخدم «a la esquina» إلا مع الحركة نحوها."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El quiosco está en la esquina.",
+     "ar": "الكشك عند الناصية.",
+     "arEg": "الكشك عند الناصية."
+    }
+   ]
+  },
+  {
+   "headword": "semáforo",
+   "normalized": "semáforo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/seˈmafoɾo/",
+   "pronunciationHintAr": "سيمافورو",
+   "internalRank": 7,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إشارة المرور",
+     "meaningArEg": "إشارة المرور",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Espera en el semáforo en rojo.",
+     "exampleAr": "انتظر عند الإشارة الحمراء.",
+     "exampleArEg": "استنى عند الإشارة الحمرا.",
+     "usageNoteAr": "«en verde» أخضر، «en rojo» أحمر، «en ámbar» برتقالي (يُسمى أيضًا amarillo في أمريكا اللاتينية).",
+     "commonErrorAr": "«semáforo» مذكّر: el semáforo، لا «la semáforo»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Espera en el semáforo en rojo.",
+     "ar": "انتظر عند الإشارة الحمراء.",
+     "arEg": "استنى عند الإشارة الحمرا."
+    }
+   ]
+  },
+  {
+   "headword": "cerca",
+   "normalized": "cerca",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈθeɾka/",
+   "pronunciationHintAr": "ثيركا",
+   "internalRank": 8,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قريب",
+     "meaningArEg": "قريب",
+     "glossEs": "adverbio",
+     "exampleEs": "La estación está cerca de aquí.",
+     "exampleAr": "المحطة قريبة من هنا.",
+     "exampleArEg": "المحطة قريبة من هنا.",
+     "usageNoteAr": "cerca de + مكان = قريب من. و«más cerca» = أقرب.",
+     "commonErrorAr": "«cerca» تحتاج «de» قبل المكان: cerca de aquí، لا «cerca aquí»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La estación está cerca de aquí.",
+     "ar": "المحطة قريبة من هنا.",
+     "arEg": "المحطة قريبة من هنا."
+    }
+   ]
+  },
+  {
+   "headword": "lejos",
+   "normalized": "lejos",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈlexos/",
+   "pronunciationHintAr": "ليخوس",
+   "internalRank": 9,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بعيد",
+     "meaningArEg": "بعيد",
+     "glossEs": "adverbio",
+     "exampleEs": "¿Está lejos el museo?",
+     "exampleAr": "هل المتحف بعيد؟",
+     "exampleArEg": "المتحف بعيد؟",
+     "usageNoteAr": "lejos de + مكان = بعيد عن. وللقياس: «a diez minutos a pie».",
+     "commonErrorAr": "«lejos» لا تُوصف بـmuy قبلها؟ صحيحة «muy lejos». الخطأ الشائع: «lejos de a aquí»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Está lejos el museo?",
+     "ar": "هل المتحف بعيد؟",
+     "arEg": "المتحف بعيد؟"
+    }
+   ]
+  },
+  {
+   "headword": "a pie",
+   "normalized": "a pie",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/a ˈpje/",
+   "pronunciationHintAr": "آ بيه",
+   "internalRank": 10,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مشيًا / على القدمين",
+     "meaningArEg": "على رجليك",
+     "glossEs": "locución adverbial",
+     "exampleEs": "Voy al hotel a pie.",
+     "exampleAr": "أذهب إلى الفندق مشيًا.",
+     "exampleArEg": "أروح الفندق على رجليا.",
+     "usageNoteAr": "«a pie» = مشيًا. و«ir andando» صيغة أخرى شائعة في إسبانيا.",
+     "commonErrorAr": "«a pie» بلا أداة تعريف: لا تقل «al pie» للتنقّل (al pie = عند قدم الشيء)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy al hotel a pie.",
+     "ar": "أذهب إلى الفندق مشيًا.",
+     "arEg": "أروح الفندق على رجليا."
+    }
+   ]
+  },
+  {
+   "headword": "metro",
+   "normalized": "metro",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈmetɾo/",
+   "pronunciationHintAr": "ميترو",
+   "internalRank": 11,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مترو الأنفاق",
+     "meaningArEg": "المترو",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "¿Dónde está la estación de metro?",
+     "exampleAr": "أين محطة المترو؟",
+     "exampleArEg": "محطة المترو فين؟",
+     "usageNoteAr": "«el metro» في إسبانيا؛ وفي بعض بلدان أمريكا اللاتينية «el subte» (الأرجنتين) أو «el subterráneo».",
+     "commonErrorAr": "«metro» مذكّر: el metro. ولا تخلطه بـ«el metro» بمعنى وحدة القياس (متر)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Dónde está la estación de metro?",
+     "ar": "أين محطة المترو؟",
+     "arEg": "محطة المترو فين؟"
+    }
+   ]
+  },
+  {
+   "headword": "línea",
+   "normalized": "línea",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈlinea/",
+   "pronunciationHintAr": "لينيا",
+   "internalRank": 12,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خط (مترو/باص)",
+     "meaningArEg": "خط",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "Tome la línea dos.",
+     "exampleAr": "خذ الخط الثاني.",
+     "exampleArEg": "خد الخط التاني.",
+     "usageNoteAr": "«la línea 2» أو «la línea dos». وفي المحطات: «línea de metro».",
+     "commonErrorAr": "«línea» مؤنثة: la línea، لا «el línea»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tome la línea dos.",
+     "ar": "خذ الخط الثاني.",
+     "arEg": "خد الخط التاني."
+    }
+   ]
+  },
+  {
+   "headword": "parada",
+   "normalized": "parada",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/paˈɾaða/",
+   "pronunciationHintAr": "بارادا",
+   "internalRank": 13,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "موقف (باص)",
+     "meaningArEg": "موقف",
+     "glossEs": "sustantivo femenino",
+     "exampleEs": "La parada del autobús está enfrente.",
+     "exampleAr": "موقف الباص في الجهة المقابلة.",
+     "exampleArEg": "موقف الأتوبيس قصادك.",
+     "usageNoteAr": "«parada» للباص، و«estación» للمترو/القطار. و«parada de taxi» = موقف التاكسي.",
+     "commonErrorAr": "لا تخلط «parada» (موقف) بـ«paradero» (شائع في أمريكا اللاتينية للموقف النهائي)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "La parada del autobús está enfrente.",
+     "ar": "موقف الباص في الجهة المقابلة.",
+     "arEg": "موقف الأتوبيس قصادك."
+    }
+   ]
+  },
+  {
+   "headword": "transbordo",
+   "normalized": "transbordo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tɾanzˈβoɾðo/",
+   "pronunciationHintAr": "ترانسبوردو",
+   "internalRank": 14,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تحويل بين خطين",
+     "meaningArEg": "تبديل خط",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Tiene que hacer transbordo en la línea tres.",
+     "exampleAr": "عليك التحويل عند الخط الثالث.",
+     "exampleArEg": "لازم تبدّل عند الخط التالت.",
+     "usageNoteAr": "«hacer transbordo» = يغيّر الخط. وفي بعض المدن «cambio de línea».",
+     "commonErrorAr": "«transbordo» لا يُستخدم بمعنى «تذكرة»؛ التذكرة billete."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tiene que hacer transbordo en la línea tres.",
+     "ar": "عليك التحويل عند الخط الثالث.",
+     "arEg": "لازم تبدّل عند الخط التالت."
+    }
+   ]
+  },
+  {
+   "headword": "taxi",
+   "normalized": "taxi",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈtaksi/",
+   "pronunciationHintAr": "تاكسي",
+   "internalRank": 15,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سيارة أجرة",
+     "meaningArEg": "تاكسي",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "Vamos en taxi al aeropuerto.",
+     "exampleAr": "نذهب بالتاكسي إلى المطار.",
+     "exampleArEg": "نروح المطار بالتاكسي.",
+     "usageNoteAr": "«coger un taxi» (إسبانيا) و«tomar un taxi» (أمريكا اللاتينية) = يستقل تاكسيًا.",
+     "commonErrorAr": "«taxi» مذكّر: el taxi. ولا تستخدم «coche» للتاكسي في الحوار."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vamos en taxi al aeropuerto.",
+     "ar": "نذهب بالتاكسي إلى المطار.",
+     "arEg": "نروح المطار بالتاكسي."
+    }
+   ]
+  },
+  {
+   "headword": "parar",
+   "normalized": "parar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/paˈɾaɾ/",
+   "pronunciationHintAr": "بارار",
+   "internalRank": 16,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتوقف / يوقف",
+     "meaningArEg": "يقف",
+     "glossEs": "verbo regular",
+     "exampleEs": "El autobús para en la esquina.",
+     "exampleAr": "الباص يتوقف عند الناصية.",
+     "exampleArEg": "الأتوبيس بيقف عند الناصية.",
+     "usageNoteAr": "مع سائق التاكسي نستخدم صيغة usted: «Pare aquí». وللسيارة نفسها: «el coche para».",
+     "commonErrorAr": "«parar» ≠ «pararse» (الأخيرة تعني يتوقّف عن الحركة، وفي بعض البلدان يقف واقفًا)."
+    }
+   ],
+   "examples": [
+    {
+     "es": "El autobús para en la esquina.",
+     "ar": "الباص يتوقف عند الناصية.",
+     "arEg": "الأتوبيس بيقف عند الناصية."
+    }
+   ],
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "paro",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paras",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "para",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paramos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paráis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paran",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paré",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paraste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paró",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paramos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "parasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararon",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "parabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paraba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "parábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "parabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paraban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "parará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pararían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pare",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pares",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pare",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paremos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paréis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "paren",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "parando",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "parado",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "mapa",
+   "normalized": "mapa",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈmapa/",
+   "pronunciationHintAr": "مابا",
+   "internalRank": 17,
+   "tags": [
+    "سفر",
+    "اتجاهات",
+    "مواصلات",
+    "A2"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خريطة",
+     "meaningArEg": "خريطة",
+     "glossEs": "sustantivo masculino",
+     "exampleEs": "¿Tiene un mapa de la ciudad?",
+     "exampleAr": "هل لديك خريطة للمدينة؟",
+     "exampleArEg": "عندك خريطة للمدينة؟",
+     "usageNoteAr": "«el mapa» مذكّر رغم انتهائه بـ-a (كلمة يونانية الأصل) — مثل el problema وel idioma.",
+     "commonErrorAr": "«la mapa» خطأ شائع لأن الكلمة تنتهي بـ-a؛ الصواب «el mapa»."
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Tiene un mapa de la ciudad?",
+     "ar": "هل لديك خريطة للمدينة؟",
+     "arEg": "عندك خريطة للمدينة؟"
+    }
+   ]
+  }
+ ]
 }

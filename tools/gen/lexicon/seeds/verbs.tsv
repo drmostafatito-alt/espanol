@@ -1,0 +1,178 @@
+# seeds/verbs.tsv — lemma, paradigm, level, msa, eg, ex_es, ex_ar, domain
+abrir		A1	يفتح	يفتح	Abre la puerta, por favor.	افتح الباب من فضلك.	daily
+aceptar		A2	يقبل	يقبل	Acepto tu oferta.	أنا أقبل عرضك.	work
+ayudar		A1	يساعد	يساعد	¿Puedes ayudarme?	تقدر تساعدني؟	social
+bailar		A1	يرقص	يرقص	Bailamos salsa los viernes.	إحنا بنرقص سالسا أيام الجمعة.	social
+buscar		A1	يبحث عن	يدور على	Busco una farmacia cerca.	أنا بدور على صيدلية قريبة.	shopping
+cambiar		A1	يغيّر أو يستبدل	يغيّر	Quiero cambiar la camiseta.	عايز أغير التي شيرت.	shopping
+caminar		A1	يمشي	يمشي	Camino al trabajo cada día.	بمشي للشغل كل يوم.	daily
+cantar		A1	يغنّي	يغنّي	Ella canta muy bien.	هي بتغني كويس جدًا.	social
+cerrar	e-ie	A1	يغلق	يقفل	La tienda cierra a las nueve.	المحل بيقفل الساعة تسعة.	shopping
+cocinar		A1	يطبخ	يطبخ	Cocino arroz con pollo.	بطبخ رز بالفراخ.	food
+comenzar	e-ie	A2	يبدأ	يبدأ	La clase comienza pronto.	الحصة هتبدأ قريب.	study
+conducir	irreg	B1	يقود مركبة	يسوق	Conduzco un autobús urbano.	بسوق أوتوبيس في المدينة.	transport
+conocer	irreg	A1	يعرف شخصًا أو مكانًا	يعرف	Conozco Madrid muy bien.	أنا أعرف مدريد كويس جدًا.	travel
+continuar		A2	يستمر	يكمل	El viaje continúa mañana.	الرحلة هتكمل بكرة.	travel
+correr		A1	يجري	يجري	Corro por las mañanas.	بجري الصبح.	health
+creer		A2	يعتقد	يفتكر	Creo que tienes razón.	أعتقد إنك معاك حق.	social
+decidir		A2	يقرر	يقرر	Decidimos viajar en tren.	قررنا نسافر بالقطار.	travel
+dejar		A2	يترك	يسيب	Deja las llaves aquí.	سيب المفاتيح هنا.	daily
+descansar		A1	يستريح	يرتاح	Descanso los domingos.	برتاح أيام الأحد.	daily
+descubrir		B1	يكتشف	يكتشف	Descubrí un restaurante nuevo.	اكتشفت مطعم جديد.	food
+dibujar		A2	يرسم	يرسم	Dibujo paisajes del campo.	برسم مناظر طبيعية.	study
+dormir	o-ue	A1	ينام	ينام	Duermo ocho horas cada noche.	بنام تمان ساعات كل ليلة.	health
+elegir	irreg	B1	يختار	يختار	Elige un asiento libre.	اختر مقعد فاضي.	travel
+empezar	e-ie	A1	يبدأ	يبدأ	La película empieza a las ocho.	الفيلم بيبدأ الساعة تمانة.	daily
+encontrar	o-ue	A2	يجد	يلاقي	Encontré mi teléfono perdido.	لقيت تليفوني المفقود.	daily
+enseñar		A2	يعلّم	يعلّم	Enseño español a niños.	بعلم إسباني للأطفال.	study
+entrar		A1	يدخل	يدخل	Entra, por favor.	ادخل من فضلك.	daily
+escuchar		A1	يستمع	يسمع	Escucho música en el metro.	بسمع مزيكا في المترو.	daily
+escribir		A1	يكتب	يكتب	Escribo un correo de trabajo.	بكتب إيميل شغل.	work
+esperar		A1	ينتظر أو يأمل	يستنى	Espero el autobús quince minutos.	مستنى الأوتوبيس ربع ساعة.	transport
+estudiar		A1	يدرس	يذاكر	Estudio medicina en la universidad.	بدرس طب في الجامعة.	study
+explicar		A2	يشرح	يشرح	Explico la lección con ejemplos.	بشرح الدرس بأمثلة.	study
+ganar		A2	يربح أو يكسب	يكسب	Gano mil euros al mes.	بكسب ألف يورو في الشهر.	work
+guardar		A2	يحفظ أو يخزّن	يخزّن	Guardo los documentos importantes.	بخزن الأوراق المهمة.	work
+gustar		A1	يعجب	يعجب	Me gusta el café sin azúcar.	القهوة من غير سكر عاجباني.	daily
+intentar		A2	يحاول	يحاول	Intento hablar despacio.	بحاول أتكلم بهدوء.	study
+jugar	u-ue	A1	يلعب	يلعب	Juego al fútbol los sábados.	بلعب كورة أيام السبت.	social
+leer		A1	يقرأ	يقرأ	Leo un libro cada semana.	بقرأ كتاب كل أسبوع.	study
+limpiar		A1	ينظّف	ينظّف	Limpio la casa los sábados.	بنضف البيت أيام السبت.	housing
+llamar		A1	يتصل أو ينادي	يكلم	Te llamo más tarde.	هكلمك بعدين.	social
+llevar		A2	يحمل أو يرتدي	يشيل	Llevo una maleta pesada.	شايل شنطة سفر تقيلة.	travel
+manejar		B1	يدير أو يقود	يدير	Manejo proyectos grandes.	بدير مشاريع كبيرة.	work
+mirar		A1	ينظر	يتفرج	Mira el mapa de la ciudad.	بص على خريطة المدينة.	travel
+molestar		B1	يزعج	يضايق	¿Te molesta el ruido?	الصوت مضايقك؟	social
+necesitar		A1	يحتاج	محتاج	Necesito ayuda ahora.	محتاج مساعدة دلوقتي.	daily
+notar		B1	يلاحظ	يلاحظ	No noté el error ayer.	انتبهتش للغلطة إمبارح.	work
+oír	irreg	A2	يسمع	يسمع	Oigo un ruido extraño.	سامع صوت غريب.	daily
+olvidar		A2	ينسى	ينسى	Olvidé la contraseña.	نسيت الباسورد.	services
+ordenar		A2	يرتّب	يرتّب	Ordeno mi escritorio.	برتب مكتبي.	work
+pagar		A1	يدفع	يدفع	Pago con tarjeta siempre.	بدفع بالكارت دايمًا.	shopping
+parecer	irreg	A2	يبدو	يبان	Parece una buena idea.	شكلها فكرة كويسة.	social
+pasar		A2	يمرّ أو يحدث	يحصل	Pasa algo interesante aquí.	بيحصل حاجة مثيرة هنا.	daily
+pasear		A1	يتمشّى	يتمشّى	Paseamos por el parque.	بنتمشى في الحديقة.	social
+perder	e-ie	A2	يفقد أو يخسر	يخسر	Pierdo el autobús a menudo.	بفوّت الأوتوبيس كتير.	transport
+practicar		A2	يتمرّن	يتمرّن	Practico español cada día.	بتدرّب على الإسباني كل يوم.	study
+preguntar		A1	يسأل	يسأل	Pregunta al agente de la calle.	اسأل الشرطي في الشارع.	travel
+preparar		A1	يحضّر	يحضّر	Preparo la cena por la noche.	بحضر العشا بالليل.	food
+presentar		B1	يقدّم	يقدّم	Presento mi proyecto nuevo.	بقدّم مشروعي الجديد.	work
+prestar		B1	يعير أو يُقرض	يسلّف	Me presta su coche a veces.	بيسلفني عربيته أحيانًا.	social
+probar	o-ue	A2	يجرّب أو يتذوّق	يجرّب	Prueba esta sopa caliente.	جرّب الشوربة السخنة دي.	food
+recoger		A2	يجمع أو يستلم	يلمّ	Recogo a los niños del colegio.	بلمّ العيال من المدرسة.	family
+reconocer		B1	يتعرّف على	يتعرّف	Reconozco su voz al teléfono.	متعرف على صوته في التليفون.	social
+recordar	o-ue	A2	يتذكّر	يفتكر	Recuerdo tu nombre perfectamente.	فاكر اسمك تمامًا.	daily
+resolver		B1	يحلّ مشكلة	يحلّ	Resuelvo el problema del cliente.	بحل مشكلة العميل.	callcenter
+responder		A2	يردّ	يردّ	Respondo al correo urgente.	بردّ على الإيميل المستعجل.	work
+romper		B1	يكسر	يكسر	Rompí un vaso de cristal.	كسرت كوباية زجاج.	housing
+sacar		A2	يُخرج أو يحصل على	يطلع	Saco dinero del cajero.	بطلع فلوس من الصراف.	services
+seguir	irreg	A2	يتابع أو يستمر	يكمل	Sigue recto hasta la esquina.	كمّل على طول لحد الناصية.	travel
+sentarse	e-ie	A2	يجلس	يقعد	Me siento aquí en la silla.	أنا بقعد هنا على الكرسي.	daily
+soñar	o-ue	B1	يحلم	يحلم	Sueño con viajar por el mundo.	بحلم أسافر العالم.	social
+subir		A1	يصعد	يطلع	Sube las escaleras despacio.	اطلع السلم على مهلك.	housing
+sufrir		B1	يعاني	يعاني	Sufro de alergias en primavera.	أعاني من حساسية في الربيع.	health
+tardar		A2	يتأخر أو يستغرق	يتأخر	Tardo veinte minutos en llegar.	بتأخر عشرين دقيقة للوصول.	transport
+tocar		A2	يلمس أو يعزف آلة	يعزف	Toco la guitarra los fines de semana.	بعزف الجيتار في الويكند.	social
+tomar		A1	يأخذ أو يشرب	ياخد	Tomo el tren de las siete.	باخد قطار الساعة سبعة.	transport
+trabajar		A1	يعمل	يشتغل	Trabajo en un hospital grande.	بشتغل في مستشفى كبير.	work
+traer	irreg	A2	يجلب	يجيب	Trae tu pasaporte mañana.	جيب باسبورتك بكرة.	travel
+usar		A1	يستخدم	يستخدم	Uso esta aplicación a diario.	بستخدم التطبيق ده يوميًا.	services
+vender		A2	يبيع	يبيع	Venden fruta fresca aquí.	بيبيعوا فاكهة طازة هنا.	shopping
+viajar		A1	يسافر	يسافر	Viajo en tren el verano.	بسافر بالقطار في الصيف.	travel
+volver	o-ue	A2	يعود	يرجع	Vuelvo a casa a las seis.	بررجع البيت الساعة ستة.	daily
+acabar		A2	ينهي أو ينتهي	يخلّص	Acabo el trabajo temprano.	بخلّص الشغل بدري.	work
+almorzar	o-ue	A2	يتغدّى	يتغدّى	Almuerzo a las dos de la tarde.	بتغدى الساعة اتنين الظهر.	food
+apagar		A2	يطفئ	يطفي	Apaga la luz de la cocina.	طفّي نور المطبخ.	housing
+aparecer		B1	يظهر	يظهر	Aparece un mensaje en la pantalla.	بيظهر رسالة على الشاشة.	services
+arreglar		B1	يصلح	يصلح	Arreglo el grifo de la cocina.	بحقن الحنفية في المطبخ.	housing
+asistir		B1	يحضر	يحضر	Asisto a la reunión de mañana.	بحضر اجتماع بكرة.	work
+atender		B1	يخدم أو يعالج	يخدم	Atiendo a los clientes con paciencia.	بخدم العملاء بصبر.	callcenter
+aumentar		B1	يزيد	يزيد	Aumentan los precios del pan.	أسعار العيش بتزيد.	shopping
+avisar		A2	يُنبّه	يبلّغ	Avísame si hay cambios.	بلّغني لو فيه تغييرات.	work
+aprender		A1	يتعلّم	يتعلم	Aprendo español con entusiasmo.	بتعلم إسباني بحماس.	study
+andar		A2	يمشي ببطء	يمشي	Ando despacio por la acera.	بمشي على مهلي على الرصيف.	daily
+alcanzar		B1	يلحق أو يبلغ	يلحق	Alcanzo el tren por poco.	ألحق القطار بالعافية.	transport
+admitir		B1	يقرّ بخطأ	يقرّ	Admito mi error sinceramente.	مقرّ بغلطتي بصراحة.	work
+agradecer		B2	يشكر	يشكر	Le agradezco mucho la ayuda.	بشكره جدًا على المساعدة.	social
+alegrarse		A2	يفرح	يفرح	Me alegro de verte otra vez.	فرحان إني شايفك تاني.	social
+aprovechar		B1	يستفيد من	يستفيد	Aprovecho la oferta de hoy.	أستفيد من عرض النهارده.	shopping
+averiguar		B2	يتحقّق من	يتأكد	Averiguo la dirección exacta.	بتأكد من العنوان بالظبط.	services
+celebrar		B1	يحتفل	يحتفل	Celebramos el cumpleaños en casa.	بنحتفل بعيد الميلاد في البيت.	family
+confirmar		A2	يؤكد	يأكد	Confirmo la reserva por teléfono.	أأكد الحجز بالتليفون.	services
+confundir		B1	يربك أو يخلط	يلخبط	Confundo las palabras parecidas.	بلخبط الكلمات المتشابهة.	study
+consultar		B1	يستشير	يراجع	Consulto al médico sobre el dolor.	بستشير الدكتور عن الألم.	health
+contar	o-ue	A2	يحكي أو يعدّ	يحكي	Cuento una historia divertida.	بحكي قصة مضحية.	social
+crear		B1	ينشئ	يعمل	Creo un documento nuevo.	بعمل مستند جديد.	work
+cuidar		A2	يعتني	يعتني	Cuido a mi abuela enferma.	بعتني بجدتي المريضة.	family
+cumplir		B1	يوفّي بعهد أو يبلغ عمرًا	يوفّي	Cumplo treinta años en mayo.	بتمّ ليا تلاتين سنة في مايو.	family
+charlar		A2	يتحادث	يتكلم	Charlamos un rato en el café.	اتكلمنا شوية في الكافيه.	social
+depender		B1	يعتمد على	يتوقف على	Depende del tráfico de la mañana.	حسب زحمة الصبح.	transport
+dirigir		B1	يوجّه أو يدير	يدير	Dirijo el equipo de ventas.	بدير فريق المبيعات.	work
+discutir		B1	يناقش	يناقش	Discutimos el plan con calma.	ناقشنا الخطة بهدوء.	work
+dudar		B1	يشكّ	يشكّ	Dudo de la respuesta correcta.	شكّ في الإجابة الصح.	study
+eliminar		B1	يحذف	يمسح	Elimino el archivo antiguo.	بمسح الملف القديم.	work
+enviar		A2	يرسل	يبعت	Envío un mensaje importante.	ببعت رسالة مهمة.	services
+equivocarse		B1	يخطئ	يغلط	Me equivoco de tren a veces.	بغلط وأخد قطار غلط أحيانًا.	social
+esconder		B1	يخفي	يخبّي	Esconde la carta en el cajón.	بيخبّي الخطاب في الدرج.	family
+evitar		B1	يتجنّب	يتجنب	Evito el azúcar en la dieta.	بتجنب السكر في الأكل.	health
+faltar		A2	ينقص أو يغيب	ينقص	Falta una silla para la mesa.	ناقص كرسي للترابيزة.	housing
+firmar		B1	يوقّع	يوقّع	Firmo el contrato hoy.	بوقّع العقد النهارده.	work
+fumar		A2	يدخّن	يدخّن	No fumo en interiores.	ما بدخنش جوه الأماكن.	health
+funcionar		B1	يعمل جهازًا	يشتغل	El ascensor no funciona bien.	الأسانسير مش شغال كويس.	housing
+gastar		A2	ينفق	يصرف	Gasto mucho en transporte.	بصرف كتير على المواصلات.	shopping
+grabar		B1	يسجّل	يسجّل	Grabo la llamada para revisarla.	بسجل المكالمة عشان أراجعها.	callcenter
+gritar		B1	يصخب	يصخب	Grita muy fuerte en la calle.	بيصخب بقوة في الشارع.	social
+imaginar		B1	يتخيّل	يتخيّل	Imagino una solución mejor.	بتخيل حل أحسن.	work
+incluir		B1	يشمل	يشمل	El precio incluye el desayuno.	السعر شامل الفطار.	travel
+indicar		A2	يشير إلى	يوضّح	Indica la salida de emergencia.	بيوضح مخرج الطوارئ.	travel
+informar		B1	يُبلّغ	يبلّغ	Informamos al cliente del retraso.	بنبلّغ العميل بالتأخير.	callcenter
+insistir		B1	يصرّ	يصرّ	Insiste en ayudar siempre.	مصّر يساعد دايمًا.	social
+investigar		B1	يبحث أو يحقق	يحقق	Investigo la causa del error.	بحقّق في سبب الغلط.	callcenter
+invitar		A2	يدعو	يعزم	Invito a mis amigos a cenar.	بعزم صحابي على العشا.	social
+lavar		A1	يغسل	يغسل	Lavo la ropa los fines de semana.	بغسل الهدوم في الويكند.	housing
+mandar		A2	يرسل أو يأمر	يبعت	Mando un correo urgente al jefe.	ببعت إيميل مستعجل للمدير.	work
+mejorar		B1	يحسّن	يحسّن	Mejoro mi pronunciación con práctica.	بحسّن نطقي بالتدرّب.	study
+mentir	e-ie	B1	يكذب	يكذب	No mientas sobre el precio.	متكدبش عن السعر.	social
+meter		B2	يضع داخل	يحطّ في	Mete la ropa en la maleta.	حطّ الهدوم في الشنطة.	travel
+morir	o-ue	B1	يموت	يموت	Su abuelo murió el año pasado.	جده مات السنة اللي فاتت.	family
+nadar		A1	يسبح	يسبح	Nado en la piscina pública.	بسبح في البيسين العام.	health
+obedecer	irreg	B2	يطيع	يطيع	Obedece las normas del centro.	بيسمع كلام قواعد المركز.	work
+ofrecer	irreg	B1	يعرض	يعرض	Ofrecemos un descuento especial.	بنقدّم خصم خاص.	callcenter
+opinar		B1	يبدّي رأيًا	يدي رأيه	Opino sobre el tema con libertad.	بحرر رأيي في الموضوع بحرية.	social
+organizar		B1	ينظّم	ينظّم	Organizo la reunión del lunes.	بنظّم اجتماع الاثنين.	work
+participar		B1	يشارك	يشارك	Participo en el curso de verano.	بشارك في كورس الصيف.	study
+pensar	e-ie	A2	يفكّر أو ينوي	يفكر	Pienso en ti a menudo.	بفكر فيك كتير.	social
+permitir		B1	يسمح	يسمح	No se permite fumar aquí.	التدخين ممنوع هنا.	health
+pertenecer	irreg	B2	ينتمي	ينتمي	Pertenecemos al mismo equipo.	بننتمي لنفس الفريق.	work
+preocuparse		A2	يقلق	يقلق	No me preocupo por eso.	ما بقلقش على ده.	social
+producir	irreg	B1	يُنتج	ينتج	La fábrica produce coches eléctricos.	المصنع ينتج عربيات كهربائية.	work
+programar		B1	يجدول أو يبرمج	يحدد	Programo una cita para el lunes.	بحدد ميعاد يوم الاثنين.	services
+prometer		B1	يعد	يوعد	Prometo llamar esta noche.	أوعدك أكلمك الليلة.	social
+proteger		B2	يحمي	يحمي	Protege tu piel del sol.	حمي بشرتك من الشمس.	health
+publicar		B1	ينشر	ينشر	Publico un artículo cada mes.	بنشر مقال كل شهر.	work
+quejarse		B1	يشتكي	يشتكي	Se queja del servicio lento.	بيشتكي من الخدمة البطيئة.	callcenter
+realizar		B1	ينفّذ	ينفّذ	Realizamos el pedido hoy mismo.	بننفّذ الطلب النهارده.	callcenter
+recibir		A1	يستلم أو يتلقّى	يستلم	Recibo un paquete esta tarde.	باستلم طرد العصر.	services
+reclamar		B1	يطالب أو يشتكي	يطالب	Reclamo mi dinero de vuelta.	بطالب بفلوسي تاني.	callcenter
+recomendar	e-ie	B1	ينصح	ينصح	Recomiendo este hotel tranquilo.	بنصح بالفندق الهادي ده.	travel
+reducir	irreg	B2	يقلّل	يقلّل	Reducimos los costes de producción.	بنقلّل تكاليف الإنتاج.	work
+rellenar		A2	يملأ	يملأ	Rellena el formulario de inscripción.	املا استمارة التسجيل.	services
+repetir	e-i	A2	يكرّر	يكرّر	Repite la frase en voz alta.	كرّر الجملة بصوت عالي.	study
+reservar		A1	يحجز	يحجز	Reservo una mesa para dos.	بحجز ترابيزة لاثنين.	food
+respetar		B1	يحترم	يحترم	Respeto sus ideas distintas.	بحترم أفكاره المختلفة.	social
+revisar		A2	يراجع	يراجع	Reviso los documentos antes de firmar.	براجع الأوراق قبل التوقيع.	work
+saltar		A2	يقفز	يقفز	Salto de alegría cuando ganamos.	بنط من الفرح لما كسبنا.	social
+seleccionar		B1	يختار من قائمة	يختار	Selecciono el idioma español.	بختار اللغة الإسبانية.	services
+sentir	e-ie	A2	يشعر	يحس	Siento dolor en la espalda.	حاسّ بألم في ضهري.	health
+señalar		B1	يشير إلى	يشاور	Señala la puerta de salida.	بيشاور على باب المخرج.	travel
+servir	e-i	A2	يخدم أو يصلح لـ	يخدم	¿Para qué sirve este botón?	الزر ده بيفيد في إيه؟	services
+sonar	o-ue	A2	يرنّ	يرنّ	Suena el teléfono otra vez.	التليفون بيرنّ تاني.	daily
+suceder		B1	يحدث	يحصل	Sucede algo muy extraño aquí.	بيحصل حاجة غريبة جدًا هنا.	daily
+sugerir	e-ie	B2	يقترح	يقترح	Sugiero otra opción más barata.	باقتراح اختيار أرخص.	work
+superar		B1	يتغلّب على	يتغلّب	Supero el obstáculo con esfuerzo.	بتغلّب على العقبة بمجهود.	study
+traducir	irreg	B2	يترجم	يترجم	Traduzco el texto al árabe.	بترجم النص للعربي.	work
+tratar		B1	يعالج أو يتعامل	يتعامل	Trato el problema con calma.	بتعامل مع المشكلة بهدوء.	callcenter
+valer	irreg	B1	يساوي قيمة	يسوى	Vale veinte euros la entrada.	التذكرة قيمتها عشرين يورو.	shopping
+vestirse	e-i	A2	يلبس ملابسه	يلبس	Me visto rápido por la mañana.	بلبس بسرعة الصبح.	daily
+visitar		A1	يزور	يزور	Visito a mi tía los viernes.	بزور خالتي أيام الجمعة.	family
+volar	o-ue	A2	يطير	يطير	El avión vuela muy alto.	الطيارة بتطير عالي جدًا.	travel
