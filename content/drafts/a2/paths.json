@@ -10,6 +10,20 @@
       "objectiveAr": "المسار الأساسي للمستوى A2.",
       "units": [
         {
+          "slug": "a2-u1-travel",
+          "levelCode": "A2",
+          "titleAr": "السفر والإجازات",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "a2-viajes-experiencias",
+            "a2-alojamiento-hotel",
+            "a2-transporte-billetes",
+            "a2-anecdotas-viaje"
+          ],
+          "vocabularyBundles": []
+        },
+        {
           "slug": "a2-u2-past",
           "levelCode": "A2",
           "titleAr": "الحكاية في الماضي",

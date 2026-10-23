@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-viajes-experiencias",
+    "titleAr": "حكاية تجارب السفر: سرد أحداث الرحلة بالماضي البسيط",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u1-travel",
+    "objectiveAr": "أن يصف المتعلم رحلة سابقة ويسرد تجارب السفر وأحداث العطلة في الماضي البسيط مستخدمًا علامات الزمن الدالة على الفترات المنتهية بدقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "viajar",
+      "viaje",
+      "visitar",
+      "ciudad",
+      "pasado",
+      "anoche",
+      "ayer",
+      "verano"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "año",
+      "semana",
+      "español"
+    ],
+    "targetStructures": [
+      "El verano pasado viajé a Andalucía y visité monumentos increíbles.",
+      "Marcadores de tiempo: el año pasado, hace dos meses, el verano pasado"
+    ],
+    "grammarTopics": [
+      "preterito-indefinido-viajes",
+      "marcadores-temporales-experiencias"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار بين ماريا وخالد في مدريد عن تجربة خالد في رحلته الصيفية إلى جنوب إسبانيا.",
+        "settingAr": "في بهو الكلية بعد الإجازة الصيفية",
+        "lines": [
+          {
+            "es": "¡Hola, Jalid! ¿Qué tal tus vacaciones de verano?",
+            "ar": "أهلًا خالد! كيف كانت إجازتك الصيفية؟",
+            "arEg": "أهلًا يا خالد! إجازة الصيف كانت عاملة إيه معاك؟",
+            "audioKey": "pending/a2-viajes-sc-1"
+          },
+          {
+            "es": "El verano pasado viajé a Granada y visité la Alhambra.",
+            "ar": "في الصيف الماضي سافرتُ إلى غرناطة وزرتُ قصر الحمراء.",
+            "arEg": "الصيف اللي فات سافرت غرناطة وزرت قصر الحمراء.",
+            "audioKey": "pending/a2-viajes-sc-2"
+          },
+          {
+            "es": "¿Fue un viaje largo o solo de fin de semana?",
+            "ar": "هل كانت رحلة طويلة أم لعطلة نهاية الأسبوع فقط؟",
+            "arEg": "كانت رحلة طويلة ولا بتاعة ويك إند بس؟",
+            "audioKey": "pending/a2-viajes-sc-3"
+          },
+          {
+            "es": "Fue un viaje de dos semanas; conocí una ciudad fascinante.",
+            "ar": "كانت رحلة لمدة أسبوعين؛ تعرّفتُ على مدينة ساحرة.",
+            "arEg": "كانت رحلة أسبوعين؛ شفت مدينة تجنن.",
+            "audioKey": "pending/a2-viajes-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_viaj_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى خالد واختر الوجهة التي سافر إليها في الصيف الماضي.",
+        "audioKey": "pending/a2-viajes-sc-2",
+        "speechEs": "El verano pasado viajé a Granada y visité la Alhambra.",
+        "options": [
+          {
+            "id": "a2_viaj_1_a",
+            "text": "Granada",
+            "isCorrect": true,
+            "textAr": "غرناطة"
+          },
+          {
+            "id": "a2_viaj_1_b",
+            "text": "Valencia",
+            "isCorrect": false,
+            "textAr": "بلنسية",
+            "distractorRationaleAr": "لم تُذكر بلنسية في التسجيل إطلاقًا."
+          },
+          {
+            "id": "a2_viaj_1_c",
+            "text": "Sevilla",
+            "isCorrect": false,
+            "textAr": "إشبيلية",
+            "distractorRationaleAr": "إشبيلية لم تُذكر كوجهة للرحلة في حديث خالد."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_viaj_1_a"
+          ]
+        },
+        "explanationAr": "ذكر المتحدث صراحة: «El verano pasado viajé a Granada». غرناطة هي الوجهة الصحيحة.",
+        "errorFeedback": {
+          "a2_viaj_1_b": "استمع مجددًا: ذكر المتحدث مدينة غرناطة.",
+          "a2_viaj_1_c": "لم يذكر المتحدث مدينة إشبيلية."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "viajar"
+        ]
+      },
+      {
+        "id": "a2_viaj_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الظرف الزمني المناسب الذي يدل على الماضي المنتهي مع الفعل «viajé».",
+        "stemEs": "El ____ pasado viajé a Granada con mis amigos.",
+        "stemAr": "الـ____ الماضي سافرتُ إلى غرناطة مع أصدقائي.",
+        "options": [
+          {
+            "id": "a2_viaj_2_a",
+            "text": "verano",
+            "isCorrect": true,
+            "textAr": "الصيف"
+          },
+          {
+            "id": "a2_viaj_2_b",
+            "text": "mañana",
+            "isCorrect": false,
+            "textAr": "غدًا",
+            "distractorRationaleAr": "كلمة mañana تدل على المستقبل ولا تتوافق مع pasado أو الماضي."
+          },
+          {
+            "id": "a2_viaj_2_c",
+            "text": "hoy",
+            "isCorrect": false,
+            "textAr": "اليوم",
+            "distractorRationaleAr": "كلمة hoy تدل على الحاضر ولا تُوصف بـ pasado."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_viaj_2_a"
+          ]
+        },
+        "explanationAr": "نقول «El verano pasado» للتعبير عن الصيف الماضي المنتهي مع الماضي البسيط viajé.",
+        "errorFeedback": {
+          "a2_viaj_2_b": "mañana تعني غدًا ولا تركب مع pasado.",
+          "a2_viaj_2_c": "hoy تعني اليوم الحاضر ولا تركب مع pasado."
+        },
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "verano",
+          "pasado"
+        ]
+      },
+      {
+        "id": "a2_viaj_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل «visitar» في الماضي البسيط مع ضمير المتكلم (yo).",
+        "stemEs": "En Granada yo ____ la Alhambra y sus jardines.",
+        "stemAr": "في غرناطة أنا ____ قصر الحمراء وحدائقه.",
+        "answerKey": {
+          "accepted": [
+            "visité"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "تصريف أفعال المجموعة الأولى (-ar) مع المتكلم yo في الماضي البسيط ينتهي بـ -é مع نبرة مكتوبة: visité.",
+        "errorFeedback": {
+          "visito": "visito مضارع، والمطلوب ماضٍ بسيط منتهي.",
+          "visitaba": "visitaba ماضٍ مستمر، والحديث هنا عن زيارة محددة منتهية."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "visitar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_viaj_4_reply",
+        "type": "word_choice",
+        "instructionAr": "يسألك صديقك: «¿Qué tal fue tu viaje?». ما هو الرد الطبيعي الأنسب؟",
+        "stemEs": "¿Qué tal fue tu viaje?",
+        "stemAr": "كيف كانت رحلتك؟",
+        "options": [
+          {
+            "id": "a2_viaj_4_a",
+            "text": "Fue maravilloso, conocí una ciudad increíble.",
+            "isCorrect": true,
+            "textAr": "كانت رائعة، تعرّفتُ على مدينة مذهلة."
+          },
+          {
+            "id": "a2_viaj_4_b",
+            "text": "Tengo que comprar pan ahora.",
+            "isCorrect": false,
+            "textAr": "يجب أن أشتري خبزًا الآن.",
+            "distractorRationaleAr": "هذا رد لا علاقة له بالسؤال عن الرحلة الماضية."
+          },
+          {
+            "id": "a2_viaj_4_c",
+            "text": "Viajaré mañana por la tarde.",
+            "isCorrect": false,
+            "textAr": "سأسافر غدًا بعد الظهر.",
+            "distractorRationaleAr": "السؤال fue في الماضي عن رحلة تمت بالفعل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_viaj_4_a"
+          ]
+        },
+        "explanationAr": "السؤال كان في الماضي عن انطباع الرحلة، لذا الرد الصحيح يبدأ بـ «Fue maravilloso...».",
+        "errorFeedback": {
+          "a2_viaj_4_b": "هذا رد خارج السياق تمامًا.",
+          "a2_viaj_4_c": "صديقك يسأل عن رحلة ماضية تمت بالفعل وليس عن سفر مستقبلي."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "viaje",
+          "ciudad"
+        ]
+      },
+      {
+        "id": "a2_viaj_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة صحيحة تصف حدثًا تم في الليلة الماضية.",
+        "items": [
+          {
+            "id": "a2_vj_t1",
+            "kind": "token",
+            "text": "Anoche"
+          },
+          {
+            "id": "a2_vj_t2",
+            "kind": "token",
+            "text": "llegamos"
+          },
+          {
+            "id": "a2_vj_t3",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "a2_vj_t4",
+            "kind": "token",
+            "text": "hotel"
+          },
+          {
+            "id": "a2_vj_t5",
+            "kind": "token",
+            "text": "tarde."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Anoche llegamos al hotel tarde."
+          ],
+          "tokenOrder": [
+            "a2_vj_t1",
+            "a2_vj_t2",
+            "a2_vj_t3",
+            "a2_vj_t4",
+            "a2_vj_t5"
+          ]
+        },
+        "explanationAr": "الترتيب الطبيعي: الظرف الزمني Anoche (الليلة الماضية) يليه الفعل llegamos ثم المجرور al hotel ثم الظرف tarde.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "anoche"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_viaj_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة التالية بصوت واضح وركّز على نطق حرف j ونبرة الفعل الماضي.",
+        "stemEs": "El año pasado viajé por España.",
+        "stemAr": "في العام الماضي سافرتُ عبر إسبانيا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-viajes-speak-1",
+          "modelAnswer": "El año pasado viajé por España."
+        },
+        "explanationAr": "انتبه لنطق حرف j في «viajé» كحرف الخاء العربية الخفيفة والنبرة الحادة على -jé في نهاية الفعل.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "viajar"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق صوت الخاء في viajé",
+              "weight": 50,
+              "code": "pron_j"
+            },
+            {
+              "labelAr": "النبر على المقطع الأخير -jé",
+              "weight": 50,
+              "code": "stress_je"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 2 وEn Vocabulario A1-A2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

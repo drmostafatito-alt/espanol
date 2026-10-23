@@ -108,4 +108,58 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     expect(data.lesson.level).toBe('C1');
     expect(data.lesson.titleAr).toContain('الدقة الأسلوبية');
   });
+
+  it('وحدة السفر A2 (a2-viajes-experiencias) تُسلَّم جلساتها وتصحح تمارين الماضي بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_travel@example.com');
+    const res = await h.call('/api/lessons/a2-viajes-experiencias/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('حكاية تجارب السفر');
+    expect(data.exercises.length).toBe(6);
+
+    // تمرين ملء الفراغ (visité)
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-viajes-experiencias/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'visité',
+        eventId: 'evt_test_travel_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('visité');
+  });
+
+  it('وحدة السرد B1 (b1-pluscuamperfecto-narracion) تتيح جلسات الماضي الأسبق وتصحح على الخادم', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_narrate@example.com');
+    const res = await h.call('/api/lessons/b1-pluscuamperfecto-narracion/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الماضي الأسبق');
+    expect(data.exercises.length).toBe(6);
+
+    // تمرين ملء الفراغ (había)
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-pluscuamperfecto-narracion/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'había',
+        eventId: 'evt_test_plus_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('había salido');
+  });
 });

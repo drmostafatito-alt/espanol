@@ -811,10 +811,85 @@
             {
               "slug": "a2-u1-travel",
               "titleAr": "السفر والإجازات",
-              "objectiveAr": "أن يحكي المتعلم عن رحلة ماضية ويحجز إقامة.",
+              "objectiveAr": "أن يصف المتعلم رحلة سابقة ويسرد تجارب السفر وأحداث العطلة ويحجز إقامة ووسيلة نقل بثقة.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-viajes-experiencias",
+                  "titleAr": "حكاية تجارب السفر: سرد أحداث الرحلة بالماضي البسيط",
+                  "objectiveAr": "أن يصف المتعلم رحلة سابقة ويسرد تجارب السفر وأحداث العطلة في الماضي البسيط مستخدمًا علامات الزمن الدالة على الفترات المنتهية بدقة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-viajes-experiencias.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-alojamiento-hotel",
+                  "titleAr": "حجز الإقامة والتعامل في الفندق: الخدمات وتفاصيل الغرفة",
+                  "objectiveAr": "أن يطلب المتعلم غرفة في فندق ويستفهم عن الخدمات والإفطار وتأكيد الحجز واستلام المفتاح باللغة الإسبانية المناسبة لبيئة الاستقبال.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-alojamiento-hotel.json",
+                  "requires": [
+                    "a2-viajes-experiencias"
+                  ]
+                },
+                {
+                  "slug": "a2-transporte-billetes",
+                  "titleAr": "خدمات التنقل ومحطات القطار: شراء التذاكر والاستعلام عن المواعيد",
+                  "objectiveAr": "أن يشتري المتعلم تذكرة قطار أو حافلة، ويستعلم عن مواعيد الإقلاع والوصول وأسعار الرحلات وأرقام الأرصفة في المحطة بثقة ووضوح.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-transporte-billetes.json",
+                  "requires": [
+                    "a2-alojamiento-hotel"
+                  ]
+                },
+                {
+                  "slug": "a2-anecdotas-viaje",
+                  "titleAr": "المواقف الطارئة وعقبات السفر: رواية المشكلات وحلها في الماضي",
+                  "objectiveAr": "أن يروي المتعلم موقفًا طارئًا أو مشكلة واجهته أثناء السفر (كتأخر رحلة أو فقدان حقيبة) ويوضح كيف تم حلها مستخدمًا الماضي البسيط وروابط التتابع.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-anecdotas-viaje.json",
+                  "requires": [
+                    "a2-transporte-billetes"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u2-past",
@@ -970,10 +1045,85 @@
             {
               "slug": "b1-u1-narrating",
               "titleAr": "السرد والتفصيل",
-              "objectiveAr": "أن يروي المتعلم قصة مترابطة بأزمنة مختلفة.",
+              "objectiveAr": "أن يروي المتعلم أحداثًا مفصلة في الماضي مستخدمًا الماضي الأسبق وتناغم أزمنة السرد والروابط بدقة.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-pluscuamperfecto-narracion",
+                  "titleAr": "الماضي الأسبق: تركيب واستخدام Pretérito Pluscuamperfecto في السرد",
+                  "objectiveAr": "أن يستخدم المتعلم زمن الماضي الأسبق (Había + Participio) لربط الأحداث السابقة لحدث ماضٍ آخر، ويفهم دلالته التتابعية بدقة مقارنة مع الماضي البسيط.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-pluscuamperfecto-narracion.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-relacionar-tiempos-pasado",
+                  "titleAr": "تناغم أزمنة الماضي الثلاثة في السرد: البسيط والمستمر والأسبق",
+                  "objectiveAr": "أن يربط المتعلم بين أزمنة الماضي الثلاثة (Indefinido, Imperfecto, Pluscuamperfecto) في قصة متماسكة تعكس الظرف والحدث القاطع والحدث الأسبق.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-relacionar-tiempos-pasado.json",
+                  "requires": [
+                    "b1-pluscuamperfecto-narracion"
+                  ]
+                },
+                {
+                  "slug": "b1-marcadores-temporales-relato",
+                  "titleAr": "علامات السرد والربط الزمني: Mientras و De repente و Al final",
+                  "objectiveAr": "أن يستخدم المتعلم الروابط الزمنية المتقدمة في السرد (mientras, de repente, al cabo de, cuando, al final) لتنظيم تسلسل الأحداث وإبراز المفاجأة بدقة وبلاغة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-marcadores-temporales-relato.json",
+                  "requires": [
+                    "b1-relacionar-tiempos-pasado"
+                  ]
+                },
+                {
+                  "slug": "b1-anecdotas-biografias",
+                  "titleAr": "سرد السير والتحولات الشخصية: المحطات الفارقة في مسار الحياة",
+                  "objectiveAr": "أن يسرد المتعلم سيرة ذاتية موجزة أو تجربة مفصلية من حياته، مبيّنًا البدايات، التغيرات، والنتائج بأسلوب متماسك ولغة دقيقة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-anecdotas-biografias.json",
+                  "requires": [
+                    "b1-marcadores-temporales-relato"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u2-opinions",

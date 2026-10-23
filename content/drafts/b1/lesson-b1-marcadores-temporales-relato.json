@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-marcadores-temporales-relato",
+    "titleAr": "علامات السرد والربط الزمني: Mientras و De repente و Al final",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u1-narrating",
+    "objectiveAr": "أن يستخدم المتعلم الروابط الزمنية المتقدمة في السرد (mientras, de repente, al cabo de, cuando, al final) لتنظيم تسلسل الأحداث وإبراز المفاجأة بدقة وبلاغة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "mientras",
+      "sonar",
+      "estudiar",
+      "biblioteca",
+      "final",
+      "luego",
+      "pronto",
+      "entonces"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "tiempo",
+      "tarde",
+      "momento"
+    ],
+    "targetStructures": [
+      "Mientras estudiábamos en la biblioteca, de repente sonó la campana.",
+      "Luego hablamos con el encargado y al final todo se aclaró.",
+      "Marcadores de sucesión: primero, entonces, luego, al final"
+    ],
+    "grammarTopics": [
+      "marcadores-temporales-narracion",
+      "conectores-de-sucesion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار جامعي بين طالبين عن حدث غير متوقع وقع أثناء المذاكرة في مكتبة الكلية بعد الظهر.",
+        "settingAr": "باحة الكلية بعد انتهاء المحاضرات",
+        "lines": [
+          {
+            "es": "¿Qué pasó ayer por la tarde en la biblioteca?",
+            "ar": "ماذا حدث بعد ظهر أمس في المكتبة؟",
+            "arEg": "إيه اللي حصل إمبارح بعد الظهر في المكتبة؟",
+            "audioKey": "pending/b1-marcad-sc-1"
+          },
+          {
+            "es": "Mientras estudiábamos tranquilamente, de repente sonó una alarma ruidosa.",
+            "ar": "بينما كنا ندرس بهدوء، فجأة انطلق جرس إنذار صاخب.",
+            "arEg": "وإحنا بنذاكر في هدوء، فجأة جرس إنذار عالي ضرب.",
+            "audioKey": "pending/b1-marcad-sc-2"
+          },
+          {
+            "es": "¿Y qué hicisteis entonces? ¿Salisteis todos corriendo?",
+            "ar": "وماذا فعلتم حينئذٍ؟ هل خرجتم جميعًا راكضين؟",
+            "arEg": "وعملتوا إيه وقتها؟ خرجتوا كلكم بتجروا؟",
+            "audioKey": "pending/b1-marcad-sc-3"
+          },
+          {
+            "es": "No, pronto llegó el conserje y al final supimos que era solo un simulacro.",
+            "ar": "لا، سرعان ما وصل الحارس وفي النهاية عرفنا أنه مجرد تدريب افتراضي.",
+            "arEg": "لا، المسئول جه بسرعة وفي الآخر عرفنا إنه كان مجرد تجربة.",
+            "audioKey": "pending/b1-marcad-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_marc_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الطالب واختر ما كان الطلاب يفعلونه عندما انطلق الإنذار.",
+        "audioKey": "pending/b1-marcad-sc-2",
+        "speechEs": "Mientras estudiábamos tranquilamente, de repente sonó una alarma ruidosa.",
+        "options": [
+          {
+            "id": "b1_marc_1_a",
+            "text": "Estudiaban en silencio",
+            "isCorrect": true,
+            "textAr": "كانوا يدرسون بهدوء في المكتبة"
+          },
+          {
+            "id": "b1_marc_1_b",
+            "text": "Comían en el restaurante",
+            "isCorrect": false,
+            "textAr": "كانوا يتناولون الطعام في المطعم",
+            "distractorRationaleAr": "لم يُذكر أي مطعم في التسجيل."
+          },
+          {
+            "id": "b1_marc_1_c",
+            "text": "Jugaban al fútbol",
+            "isCorrect": false,
+            "textAr": "كانوا يلعبون كرة القدم",
+            "distractorRationaleAr": "الطلاب كانوا في المكتبة الجامعية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_marc_1_a"
+          ]
+        },
+        "explanationAr": "الطالب قال صراحة: «Mientras estudiábamos tranquilamente» أي بينما كنا ندرس بهدوء.",
+        "errorFeedback": {
+          "b1_marc_1_b": "لم يُذكر أي مطعم في التسجيل.",
+          "b1_marc_1_c": "الحدث وقع في المكتبة الجامعية."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "estudiar",
+          "mientras"
+        ]
+      },
+      {
+        "id": "b1_marc_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الرابط الزمني المناسب للتعبير عن التزامن بين حدثين مستمرين في الماضي.",
+        "stemEs": "____ yo leía un libro en la biblioteca, mi amigo repasaba sus notas.",
+        "stemAr": "____ كنتُ أقرأ كتابًا في المكتبة، كان صديقي يراجع ملاحظاته.",
+        "options": [
+          {
+            "id": "b1_marc_2_a",
+            "text": "Mientras",
+            "isCorrect": true,
+            "textAr": "بينما (للتزامن)"
+          },
+          {
+            "id": "b1_marc_2_b",
+            "text": "Al final",
+            "isCorrect": false,
+            "textAr": "في النهاية (للخاتمة)",
+            "distractorRationaleAr": "Al final يأتي في ختام تسلسل الأحداث وليس في بدايتها."
+          },
+          {
+            "id": "b1_marc_2_c",
+            "text": "Pronto",
+            "isCorrect": false,
+            "textAr": "قريبًا (للسرعة)",
+            "distractorRationaleAr": "Pronto ظرف زمان ولا يربط بين جملتين متزامنتين."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_marc_2_a"
+          ]
+        },
+        "explanationAr": "الرابط «Mientras» هو الرابط المعياري الدال على التزامن بين فعلين مستمرين في الماضي.",
+        "errorFeedback": {
+          "b1_marc_2_b": "Al final يأتي في ختام تسلسل الأحداث.",
+          "b1_marc_2_c": "Pronto ظرف زمني وليس رابط جمل."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "mientras",
+          "biblioteca"
+        ]
+      },
+      {
+        "id": "b1_marc_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل sonar في الماضي البسيط لوصف المفاجأة.",
+        "stemEs": "De repente ____ el teléfono en medio del silencio.",
+        "stemAr": "فجأة ____ رنين الهاتف وسط الصمت.",
+        "answerKey": {
+          "accepted": [
+            "sonó"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الفعل sonar مع الفاعل المفرد الغائب (el teléfono) في الماضي البسيط ينتهي بـ -ó: sonó.",
+        "errorFeedback": {
+          "suena": "suena في المضارع، وسياق الجملة في الماضي.",
+          "sonaba": "sonaba ماضٍ مستمر، والحدث هنا مفاجئ وقاطع بعد De repente."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "sonar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_marc_4_reply",
+        "type": "word_choice",
+        "instructionAr": "اختر العبارة الختامية الأنسب لإنهاء قصة سردية وإظهار النتيجة النهائية.",
+        "stemEs": "____ pudimos resolver todos los ejercicios del examen.",
+        "stemAr": "____ تمكنا من حل جميع تمارين الامتحان.",
+        "options": [
+          {
+            "id": "b1_marc_4_a",
+            "text": "Al final",
+            "isCorrect": true,
+            "textAr": "في النهاية (محصلة المطاف)"
+          },
+          {
+            "id": "b1_marc_4_b",
+            "text": "Mientras",
+            "isCorrect": false,
+            "textAr": "بينما (للمزامنة)",
+            "distractorRationaleAr": "Mientras تفيد التزامن وتحتاج إلى جملة استمرار."
+          },
+          {
+            "id": "b1_marc_4_c",
+            "text": "Primero",
+            "isCorrect": false,
+            "textAr": "أولًا (للبداية)",
+            "distractorRationaleAr": "Primero تفيد الخطوة الأولى في الترتيب."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_marc_4_a"
+          ]
+        },
+        "explanationAr": "نستخدم «Al final» للإشارة إلى الخاتمة والنتيجة الإيجابية بعد سلسلة من الأحداث.",
+        "errorFeedback": {
+          "b1_marc_4_b": "Mientras تحتاج جملة تابعة تفيد الاستمرار.",
+          "b1_marc_4_c": "Primero تفيد الخطوة الأولى وليس الخاتمة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "final"
+        ]
+      },
+      {
+        "id": "b1_marc_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة سردية متتابعة باستخدام luego و entonces.",
+        "items": [
+          {
+            "id": "b1_mc_t1",
+            "kind": "token",
+            "text": "Primero"
+          },
+          {
+            "id": "b1_mc_t2",
+            "kind": "token",
+            "text": "estudiamos"
+          },
+          {
+            "id": "b1_mc_t3",
+            "kind": "token",
+            "text": "y luego"
+          },
+          {
+            "id": "b1_mc_t4",
+            "kind": "token",
+            "text": "fuimos"
+          },
+          {
+            "id": "b1_mc_t5",
+            "kind": "token",
+            "text": "a casa."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Primero estudiamos y luego fuimos a casa."
+          ],
+          "tokenOrder": [
+            "b1_mc_t1",
+            "b1_mc_t2",
+            "b1_mc_t3",
+            "b1_mc_t4",
+            "b1_mc_t5"
+          ]
+        },
+        "explanationAr": "الترتيب المنطقي للتعاقب الزمني: Primero (أولًا) + الفعل الأول + y luego (ثم) + الفعل الثاني.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "luego"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_marc_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة السرد بطلاقة ووضوح مع إبراز النبرة على الكلمات المفتاحية.",
+        "stemEs": "Primero hablamos con el profesor y luego salimos.",
+        "stemAr": "أولًا تحدثنا مع الأستاذ ثم خرجنا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-marcad-speak-1",
+          "modelAnswer": "Primero hablamos con el profesor y luego salimos."
+        },
+        "explanationAr": "احرص على النبر على مقطع -bla- في hablamos ونطق حرف s النقي في salimos.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "luego"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "سلاسة الانتقال الصوتي في y luego salimos",
+              "weight": 50,
+              "code": "linking_luego"
+            },
+            {
+              "labelAr": "نطق الراء المرققة في Primero وprofesor",
+              "weight": 50,
+              "code": "pron_r_tap"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 3 وSueña 2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

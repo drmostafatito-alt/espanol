@@ -10,6 +10,20 @@
       "objectiveAr": "المسار الأساسي للمستوى B1.",
       "units": [
         {
+          "slug": "b1-u1-narrating",
+          "levelCode": "B1",
+          "titleAr": "السرد والتفصيل",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "b1-pluscuamperfecto-narracion",
+            "b1-relacionar-tiempos-pasado",
+            "b1-marcadores-temporales-relato",
+            "b1-anecdotas-biografias"
+          ],
+          "vocabularyBundles": []
+        },
+        {
           "slug": "b1-u2-opinions",
           "levelCode": "B1",
           "titleAr": "الرأي والاتفاق والمنصوب",
