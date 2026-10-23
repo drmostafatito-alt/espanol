@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-dialogo-atencion-cliente",
+    "unitSlug": "b1-u6-problems",
+    "levelCode": "B1",
+    "titleAr": "حوار متكامل: الاتصال بخدمة العملاء وحل نزاع تجاري بفاعلية",
+    "titleEs": "Diálogo completo: Atención al cliente y resolución de conflictos",
+    "subtitleAr": "تقديم رقم المشترك، شرح المشكلة بهدوء، ومتابعة رقم البلاغ والحل",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقود المتعلم محادثة حقيقية ناجحة مع قسم خدمة العملاء لحل نزاع تجاري أو تقني.",
+        "أن يزود الموظف بالبيانات المرجعية: número de incidencia, código de cliente, fecha de facturación.",
+        "أن يطلب حلاً ملزماً بجدول زمني ومتابعة حالة التذكرة أو البلاغ."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "عبارات التخاطب وحل النزاعات مع خدمة العملاء",
+          "explanationAr": "1. **افتتاح المكالمة وتحديد الهوية**:\n- Llamo en relación con una factura incorrecta / con una avería en mi línea.\n- Mi número de cliente o de abonado es el... y el número de incidencia es...\n2. **طلب الحل الملموس بمهنية**:\n- ¿Me puede confirmar qué medidas van a tomar para solucionarlo?\n- ¿En qué plazo se pondrán en contacto conmigo?\n3. **تدوين مرجع البلاغ**:\n- Por favor, facilíteme el número de referencia de esta llamada."
+        }
+      ],
+      "commonMistakesAr": [
+        "إنهاء المكالمة دون الحصول على رقم البلاغ الرسمي المعتمد (el número de incidencia).",
+        "استخدام أسلوب هجومي شخصي على الموظف الهاتف؛ الأسلوب المهني يركز بموضوعية على المشكلة وحلها."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر مع خدمة العملاء بنقول: «أنا عندي مشكلة في الفاتورة والخدمة مقطوعة، عايز رقم الشكوى والحل هيخلص إمتى؟». بالإسبانية: Tengo una incidencia con la factura; deme el número de referencia y el plazo de solución."
+        }
+      ],
+      "culturalNoteAr": "خدمات العملاء في إسبانيا تسجل المكالمات لأغراض الجودة ('esta llamada puede ser grabada')، ويمكن للمستهلك طلب تفريغ المكالمة كدليل قانوني."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-dialogo-atencion-cliente-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات خدمة العملاء والمتابعة",
+        "bodyAr": "المفردات التفاعلية:\n- **la atención al cliente**: خدمة العملاء ورعاية المشتركين\n- **el número de incidencia**: رقم البلاغ أو التذكرة الفنية\n- **la facturación**: الفوترة وحساب الرسوم\n- **resolver**: يحل المشكلة جذرياً\n- **el operador**: موظف أو ممثل خدمة العملاء\n- **el compromiso**: التعهد والالتزام بتقديم الحل",
+        "examples": [
+          {
+            "es": "El servicio de atención al cliente me asignó un número de incidencia.",
+            "ar": "حدد لي قسم خدمة العملاء رقم بلاغ لمتابعة المشكلة."
+          },
+          {
+            "es": "El operador se comprometió a resolver el error en la facturación en 24 horas.",
+            "ar": "تعهد الموظف بحل الخطأ الوارد في الفاتورة خلال 24 ساعة."
+          },
+          {
+            "es": "Necesito un compromiso firme para restablecer el servicio.",
+            "ar": "أحتاج إلى التزام قاطع بإعادة تشغيل الخدمة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "atención al cliente",
+      "número de incidencia",
+      "facturación",
+      "resolver",
+      "operador",
+      "compromiso"
+    ],
+    "reviewVocabulary": [
+      "cliente",
+      "llamada"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقود المتعلم محادثة حقيقية ناجحة مع قسم خدمة العملاء لحل نزاع تجاري أو تقني.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-dia-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يمنحه الموظف للعميل لمتابعة حالة الشكوى",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا يسمى الرمز أو الرقم المرجعي المخصص لتتبع المشكلة الفنية؟",
+        "stemEs": "Guarde este _____ para cualquier consulta posterior sobre su caso.",
+        "stemAr": "احتفظ بهذا ... لأي استفسار لاحق بخصوص حالتك.",
+        "options": [
+          {
+            "id": "ex-b1-dia-1_a",
+            "text": "número de incidencia",
+            "textAr": "رقم البلاغ / التذكرة الفنية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dia-1_b",
+            "text": "facturación",
+            "textAr": "عملية الفوترة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرقم المرجعي يسمى número de incidencia."
+          },
+          {
+            "id": "ex-b1-dia-1_c",
+            "text": "operador",
+            "textAr": "الموظف نفسه",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلوب هو الرمز الرقمي المرجعي."
+          }
+        ],
+        "targetVocab": [
+          "número de incidencia",
+          "facturación",
+          "operador"
+        ],
+        "explanationAr": "el número de incidencia هو الرقم المرجعي للبلاغ أو التذكرة الفنية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dia-1_a"
+          ],
+          "selectedOptionId": "ex-b1-dia-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dia-1_b": "الرقم المرجعي يسمى número de incidencia.",
+          "ex-b1-dia-1_c": "المطلوب هو الرمز الرقمي المرجعي."
+        }
+      },
+      {
+        "id": "ex-b1-dia-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على حل المشكلة جذرياً في المصدر (resolver)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الإسباني الذي يعني 'يحل مشكلة أو مسألة' في صيغة المصدر (resolver)",
+        "stemEs": "Llamo para exigir que vengan a _____ esta avería de inmediato.",
+        "stemAr": "أتصل للمطالبة بأن يأتوا لحل هذا العطل فوراً.",
+        "targetVocab": [
+          "resolver"
+        ],
+        "explanationAr": "فعل resolver يعني يحل المشكلة أو النزاع بشكل قاطع.",
+        "answerKey": {
+          "accepted": [
+            "resolver"
+          ],
+          "acceptableAnswers": [
+            "resolver"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-dia-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد القسم المسؤول عن تلقي شكاوى المشتركين بالهاتف",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف يسمى القسم المتخصص في مساعدة العملاء والرد على استفساراتهم؟",
+        "stemEs": "Me puse en contacto con el departamento de _____ de la compañía.",
+        "stemAr": "تواصلت مع قسم ... في الشركة.",
+        "options": [
+          {
+            "id": "ex-b1-dia-3_a",
+            "text": "atención al cliente",
+            "textAr": "خدمة العملاء (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dia-3_b",
+            "text": "compromiso",
+            "textAr": "التعهد فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "القسم المعني يسمى atención al cliente."
+          },
+          {
+            "id": "ex-b1-dia-3_c",
+            "text": "facturación",
+            "textAr": "الفوترة المالية",
+            "isCorrect": false,
+            "distractorRationaleAr": "القسم العام لاستقبال شكاوى المشتركين هو atención al cliente."
+          }
+        ],
+        "targetVocab": [
+          "atención al cliente",
+          "compromiso",
+          "facturación"
+        ],
+        "explanationAr": "el departamento de atención al cliente هو قسم خدمة العملاء ورعاية المشتركين.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dia-3_a"
+          ],
+          "selectedOptionId": "ex-b1-dia-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dia-3_b": "القسم المعني يسمى atención al cliente.",
+          "ex-b1-dia-3_c": "القسم العام لاستقبال شكاوى المشتركين هو atención al cliente."
+        }
+      },
+      {
+        "id": "ex-b1-dia-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب التزام حقيقي من الشركة بحل العطل",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-dia-4_t1",
+            "kind": "token",
+            "text": "Exijo"
+          },
+          {
+            "id": "ex-b1-dia-4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b1-dia-4_t3",
+            "kind": "token",
+            "text": "compromiso"
+          },
+          {
+            "id": "ex-b1-dia-4_t4",
+            "kind": "token",
+            "text": "firme"
+          },
+          {
+            "id": "ex-b1-dia-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-dia-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-dia-4_t7",
+            "kind": "token",
+            "text": "cliente"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Exijo un compromiso firme para el cliente"
+          ],
+          "tokenOrder": [
+            "ex-b1-dia-4_t1",
+            "ex-b1-dia-4_t2",
+            "ex-b1-dia-4_t3",
+            "ex-b1-dia-4_t4",
+            "ex-b1-dia-4_t5",
+            "ex-b1-dia-4_t6",
+            "ex-b1-dia-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Exijo ثم المفعول un compromiso firme ثم شبه الجملة para el cliente.",
+        "targetVocab": [
+          "compromiso",
+          "cliente"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-dia-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد خطأ الحسابات الذي يشكو منه العميل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشكوى العميل عبر الهاتف وحدد ما يشكو منه",
+        "stemEs": "Hay un cobro indebido en la facturación del mes pasado.",
+        "stemAr": "توجد رسوم غير مبررة في الفوترة للشهر الماضي.",
+        "options": [
+          {
+            "id": "ex-b1-dia-5_a",
+            "text": "facturación",
+            "textAr": "الفوترة والحسابات (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dia-5_b",
+            "text": "operador",
+            "textAr": "الموظف",
+            "isCorrect": false,
+            "distractorRationaleAr": "العميل يشكو من خطأ الفوترة (la facturación)."
+          },
+          {
+            "id": "ex-b1-dia-5_c",
+            "text": "compromiso",
+            "textAr": "تعهد",
+            "isCorrect": false,
+            "distractorRationaleAr": "المشكلة تتعلق بالفوترة المالية."
+          }
+        ],
+        "targetVocab": [
+          "facturación",
+          "operador",
+          "compromiso"
+        ],
+        "explanationAr": "العميل قال: 'Hay un cobro indebido en la facturación'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_cobro_indebido_facturacion.mp3",
+        "speechEs": "Hay un cobro indebido en la facturación del mes pasado.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dia-5_a"
+          ],
+          "selectedOptionId": "ex-b1-dia-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dia-5_b": "العميل يشكو من خطأ الفوترة (la facturación).",
+          "ex-b1-dia-5_c": "المشكلة تتعلق بالفوترة المالية."
+        }
+      },
+      {
+        "id": "ex-b1-dia-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلبك الاحترافي لرقم البلاغ وتأكيد موعد الحل",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح وثقة لممثل خدمة العملاء قبل إنهاء المكالمة:",
+        "stemEs": "Por favor, facilíteme el número de incidencia y la fecha límite para resolverlo.",
+        "stemAr": "من فضلك، أعطني رقم البلاغ والمهلة المحددة لحل المشكلة.",
+        "audioKey": "pending/b1_numero_incidencia_resolver.mp3",
+        "targetVocab": [
+          "número de incidencia",
+          "resolver"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في incidencia كـ ثاء ونطق resolver بسلاسة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_numero_incidencia_resolver.mp3",
+          "modelAnswer": "Por favor, facilíteme la fecha límite y el número de incidencia."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

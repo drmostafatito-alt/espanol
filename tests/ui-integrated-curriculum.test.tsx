@@ -590,4 +590,196 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     const submitData = await h.json<any>(submitRes);
     expect(submitData.correct).toBe(true);
   });
+
+  it('وحدة العمل والمقابلات B1 (b1-entrevistas-trabajo) تُسلَّم وتصحح llevo بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_work@example.com');
+    const res = await h.call('/api/lessons/b1-entrevistas-trabajo/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('المقابلات الوظيفية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-entrevistas-trabajo/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'llevo',
+        eventId: 'evt_test_b1_w01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الدراسة والتعليم B1 (b1-estudios-universidad) تُسلَّم وتصحح matricularse بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_study@example.com');
+    const res = await h.call('/api/lessons/b1-estudios-universidad/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('التعليم الجامعي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-estudios-universidad/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'matricularse',
+        eventId: 'evt_test_b1_s01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة السفر المستقل B1 (b1-viajes-imprevistos) تُسلَّم وتصحح التعويض بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_travel@example.com');
+    const res = await h.call('/api/lessons/b1-viajes-imprevistos/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('السفر المستقل');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-viajes-imprevistos/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'indemnizacion',
+        eventId: 'evt_test_b1_t01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الشكاوى والحلول B1 (b1-hoja-reclamaciones) تُسلَّم وتصحح حماية المستهلك بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_claims@example.com');
+    const res = await h.call('/api/lessons/b1-hoja-reclamaciones/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('ورقة الشكاوى');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-hoja-reclamaciones/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'consumidor',
+        eventId: 'evt_test_b1_c01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الإعلام والأخبار B1 (b1-noticias-prensa) تُسلَّم وتصحح desmentir بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_media@example.com');
+    const res = await h.call('/api/lessons/b1-noticias-prensa/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الصحافة والإعلام');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-noticias-prensa/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'desmentir',
+        eventId: 'evt_test_b1_m01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة نمط الحياة والصحة B1 (b1-habitos-saludables) تُسلَّم وتصحح الوقاية بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_hl@example.com');
+    const res = await h.call('/api/lessons/b1-habitos-saludables/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('العادات الصحية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-habitos-saludables/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'prevenir',
+        eventId: 'evt_test_b1_h01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة العلاقات والمجتمع B1 (b1-relaciones-personales) تُسلَّم وتصحح التعاطف بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_rel@example.com');
+    const res = await h.call('/api/lessons/b1-relaciones-personales/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('العلاقات الإنسانية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-relaciones-personales/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'empatia',
+        eventId: 'evt_test_b1_r01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الكتابة الوظيفية B1 (b1-conectores-discursivos) تُسلَّم وتصحح أدوات الربط بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b1_wr@example.com');
+    const res = await h.call('/api/lessons/b1-conectores-discursivos/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أدوات الربط المنطقي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b1-conectores-discursivos/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'embargo',
+        eventId: 'evt_test_b1_w01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
 });

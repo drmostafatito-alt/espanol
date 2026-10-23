@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-consulta-especialista",
+    "unitSlug": "b1-u8-health-lifestyle",
+    "levelCode": "B1",
+    "titleAr": "استشارة الأخصائي: الحوار الطبي المعمق في التغذية والعلاج الطبيعي",
+    "titleEs": "Consulta con el especialista: Nutrición, fisioterapia y diagnóstico",
+    "subtitleAr": "شرح التاريخ الصحي، قراءة التحاليل، والاتفاق على برنامج علاجي",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يجري المتعلم حواراً متقدماً مع طبيب أخصائي (especialista / nutricionista / fisioterapeuta).",
+        "أن يشرح نتائج الفحوصات والتحاليل الطبية: análisis de sangre, radiografía, resonancia.",
+        "أن يستفسر عن الآثار الجانبية للأدوية (efectos secundarios) والجرعات المقررة ومتابعة العلاج."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب الاستشارة الطبية المعمقة",
+          "explanationAr": "1. **الاستفسار عن التحاليل والتشخيص**:\n- Los resultados del análisis de sangre indican un nivel bajo de hierro (تدل نتائج تحليل الدم على نقص في الحديد).\n- ¿Cuál es el diagnóstico definitivo? (ما هو التشخيص النهائي للحالة؟).\n2. **السؤال عن الآثار الجانبية والجرعات**:\n- ¿Este fármaco tiene algún efecto secundario? (هل لهذا العقار أي أثر جانبي؟).\n- ¿Durante cuánto tiempo debo seguir este tratamiento de fisioterapia?\n3. **المتابعة والمراجعة الطبية**:\n- Le programo una cita de revisión dentro de un mes (سأحدد لك موعد مراجعة بعد شهر)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمة *efecto malo* بدلاً من المصطلح الطبي العلمي المعياري el efecto secundario.",
+        "ترجمة 'العلاج الطبيعي' بـ *tratamiento natural*؛ الاسم الطبي الدقيق هو la fisioterapia."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر عند الأخصائي بنقول: «عملت تحاليل الدم وأشعة عشان الركبة، وعايز أعرف العلاج الطبيعي هياخد كام جلسة؟». بالإسبانية: Me hice análisis de sangre y radiografía; ¿cuántas sesiones de fisioterapia necesito?"
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا للوصول إلى الطبيب الأخصائي (el especialista) عبر التأمين الصحي الحكومي، يجب المرور أولاً بطبيب الأسرة (médico de cabecera) ليمنحك إحالة رسمية (el volante)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-consulta-especialista-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات العيادة التخصصية",
+        "bodyAr": "المفردات السريرية:\n- **el especialista**: الطبيب الأخصائي في فرع محدد\n- **el análisis de sangre**: تحليل الدم المخبري\n- **el diagnóstico**: التشخيص الطبي للحالة\n- **el efecto secundario**: العَرَض أو الأثر الجانبي للدواء\n- **la fisioterapia**: العلاج الطبيعي والتأهيلي\n- **la sesión**: الجلسة العلاجية المقررة",
+        "examples": [
+          {
+            "es": "El especialista revisó el análisis de sangre y confirmó el diagnóstico.",
+            "ar": "راجع الأخصائي تحليل الدم وأكد التشخيص."
+          },
+          {
+            "es": "El médico me advirtió de los posibles efectos secundarios del antibiótico.",
+            "ar": "حذرني الطبيب من الآثار الجانبية المحتملة للمضاد الحيوي."
+          },
+          {
+            "es": "Necesito realizar diez sesiones de fisioterapia para recuperar la movilidad.",
+            "ar": "أحتاج لإجراء عشر جلسات علاج طبيعي لاستعادة الحركة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "especialista",
+      "análisis de sangre",
+      "diagnóstico",
+      "efecto secundario",
+      "fisioterapia",
+      "sesión"
+    ],
+    "reviewVocabulary": [
+      "consulta",
+      "medicamento",
+      "médico"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يجري المتعلم حواراً متقدماً مع طبيب أخصائي (especialista / nutricionista / fisioterapeuta).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-ces-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني التشخيص الطبي للحالة المرضية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'تحديد الطبيب لنوع المرض وسببه'؟",
+        "stemEs": "Tras revisar todas las pruebas, el médico dio un _____ claro y preciso.",
+        "stemAr": "بعد مراجعة جميع الفحوصات، أعطى الطبيب ... واضحاً ودقيقاً.",
+        "options": [
+          {
+            "id": "ex-b1-ces-1_a",
+            "text": "diagnóstico",
+            "textAr": "تشخيص طبي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ces-1_b",
+            "text": "efecto secundario",
+            "textAr": "أثر جانبي",
+            "isCorrect": false,
+            "distractorRationaleAr": "النتيجة الشاملة للفحوصات هي التشخيص diagnóstico."
+          },
+          {
+            "id": "ex-b1-ces-1_c",
+            "text": "sesión",
+            "textAr": "جلسة علاجية",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقييم يسمى التشخيص."
+          }
+        ],
+        "targetVocab": [
+          "diagnóstico",
+          "efecto secundario",
+          "sesión"
+        ],
+        "explanationAr": "el diagnóstico هو التشخيص الطبي الذي يحدد طبيعة المرض بناءً على الفحوصات.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ces-1_a"
+          ],
+          "selectedOptionId": "ex-b1-ces-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ces-1_b": "النتيجة الشاملة للفحوصات هي التشخيص diagnóstico.",
+          "ex-b1-ces-1_c": "التقييم يسمى التشخيص."
+        }
+      },
+      {
+        "id": "ex-b1-ces-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني العلاج الطبيعي والتأهيلي: (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'العلاج الطبيعي للحركة والمفاصل' (la _____)",
+        "stemEs": "Para recuperarse de la lesión en la rodilla tuvo que hacer _____ durante dos meses.",
+        "stemAr": "للتعافي من إصابة الركبة اضطر للخضوع لـ ... مدة شهرين.",
+        "targetVocab": [
+          "fisioterapia"
+        ],
+        "explanationAr": "كلمة fisioterapia تعني العلاج الطبيعي والتأهيلي للأوتار والمفاصل.",
+        "answerKey": {
+          "accepted": [
+            "fisioterapia"
+          ],
+          "acceptableAnswers": [
+            "fisioterapia"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ces-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد ما يسمى بالأثر غير المرغوب فيه الذي قد يسببه الدواء",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي الأعراض غير المستحبة التي تصاحب تناول بعض العقاقير الطبية؟",
+        "stemEs": "La somnolencia es el principal _____ de este medicamento para la alergia.",
+        "stemAr": "النعاس هو ... الرئيسي لهذا الدواء المعالج للحساسية.",
+        "options": [
+          {
+            "id": "ex-b1-ces-3_a",
+            "text": "efecto secundario",
+            "textAr": "أثر جانبي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ces-3_b",
+            "text": "análisis de sangre",
+            "textAr": "تحليل دم",
+            "isCorrect": false,
+            "distractorRationaleAr": "النعاس أثر مصاحب للدواء (efecto secundario)."
+          },
+          {
+            "id": "ex-b1-ces-3_c",
+            "text": "especialista",
+            "textAr": "أخصائي",
+            "isCorrect": false,
+            "distractorRationaleAr": "النعاس أثر جانبي للدواء."
+          }
+        ],
+        "targetVocab": [
+          "efecto secundario",
+          "análisis de sangre",
+          "especialista",
+          "medicamento"
+        ],
+        "explanationAr": "el efecto secundario هو الأثر الجانبي غير المقصود للدواء.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ces-3_a"
+          ],
+          "selectedOptionId": "ex-b1-ces-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ces-3_b": "النعاس أثر مصاحب للدواء (efecto secundario).",
+          "ex-b1-ces-3_c": "النعاس أثر جانبي للدواء."
+        }
+      },
+      {
+        "id": "ex-b1-ces-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب تحويل المريض إلى الطبيب الأخصائي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-ces-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-ces-4_t2",
+            "kind": "token",
+            "text": "médico"
+          },
+          {
+            "id": "ex-b1-ces-4_t3",
+            "kind": "token",
+            "text": "me"
+          },
+          {
+            "id": "ex-b1-ces-4_t4",
+            "kind": "token",
+            "text": "derivó"
+          },
+          {
+            "id": "ex-b1-ces-4_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b1-ces-4_t6",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b1-ces-4_t7",
+            "kind": "token",
+            "text": "especialista"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El médico me derivó a un especialista"
+          ],
+          "tokenOrder": [
+            "ex-b1-ces-4_t1",
+            "ex-b1-ces-4_t2",
+            "ex-b1-ces-4_t3",
+            "ex-b1-ces-4_t4",
+            "ex-b1-ces-4_t5",
+            "ex-b1-ces-4_t6",
+            "ex-b1-ces-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El médico ثم الضمير me ثم الفعل derivó ثم شبه الجملة a un especialista.",
+        "targetVocab": [
+          "especialista",
+          "médico"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ces-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الفحص المخبري الذي يطلبه الطبيب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتعليمات الطبيب في العيادة وحدد الفحص المطلوب",
+        "stemEs": "Le recomiendo que se haga un análisis de sangre completo en ayunas.",
+        "stemAr": "أنصحك بإجراء تحليل دم شامل وأنت صائم.",
+        "options": [
+          {
+            "id": "ex-b1-ces-5_a",
+            "text": "análisis de sangre",
+            "textAr": "تحليل دم مخبري (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ces-5_b",
+            "text": "fisioterapia",
+            "textAr": "علاج طبيعي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطبيب طلب فحصاً مخبرياً (análisis de sangre)."
+          },
+          {
+            "id": "ex-b1-ces-5_c",
+            "text": "efecto secundario",
+            "textAr": "أثر جانبي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلوب في الاستماع هو الفحص المخبري."
+          }
+        ],
+        "targetVocab": [
+          "análisis de sangre",
+          "fisioterapia",
+          "efecto secundario"
+        ],
+        "explanationAr": "الطبيب قال: 'se haga un análisis de sangre completo en ayunas'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_analisis_sangre_ayunas.mp3",
+        "speechEs": "Le recomiendo que se haga un análisis de sangre completo en ayunas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ces-5_a"
+          ],
+          "selectedOptionId": "ex-b1-ces-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ces-5_b": "الطبيب طلب فحصاً مخبرياً (análisis de sangre).",
+          "ex-b1-ces-5_c": "المطلوب في الاستماع هو الفحص المخبري."
+        }
+      },
+      {
+        "id": "ex-b1-ces-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق استفسارك للطبيب عن التشخيص والخطة العلاجية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق السؤال التالي بوضوح ولباقة في عيادة الطبيب الأخصائي:",
+        "stemEs": "¿Cuál es el diagnóstico y cuántas sesiones de fisioterapia necesitaré?",
+        "stemAr": "ما هو التشخيص وكم جلسة علاج طبيعي سأحتاج؟",
+        "audioKey": "pending/b1_diagnostico_sesiones_fisioterapia.mp3",
+        "targetVocab": [
+          "diagnóstico",
+          "sesión",
+          "fisioterapia"
+        ],
+        "explanationAr": "انتبه لنطق g في diagnóstico كـ جيم مرققة ونطق sesion كـ سيثيون بلباقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_diagnostico_sesiones_fisioterapia.mp3",
+          "modelAnswer": "¿Cuál es el diagnóstico y cuántas sesiones de fisioterapia necesitaré?"
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

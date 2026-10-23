@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-pedir-soluciones-reparacion",
+    "unitSlug": "b1-u6-problems",
+    "levelCode": "B1",
+    "titleAr": "طلب الحلول والإصلاح: الضمان الفني واستبدال الأجهزة المعيبة",
+    "titleEs": "Exigir soluciones, garantía y reparación de productos defectuosos",
+    "subtitleAr": "تفعيل الضمان (Garantía)، طلب الاستبدال (Sustitución)، وتحديد موعد الفني",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطالب المتعلم بتصليح منتج معيب أو استبداله بموجب شهادة الضمان (la garantía).",
+        "أن يصف العيب الفني للسلعة: no enciende, hace un ruido extraño, tiene un defecto de fábrica.",
+        "أن يطلب حلاً بديلاً أو استرداد الثمن إذا تعذر الإصلاح السريع."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب تفعيل الضمان وطلب الإصلاح الفني",
+          "explanationAr": "1. **المطالبة بحق الضمان القانوني**:\n- **Estar en garantía**: El aparato todavía está en garantía de tres años (الجهاز لا يزال تحت الضمان لمدة 3 سنوات).\n- **Cubrir la garantía**: La garantía cubre tanto las piezas como la mano de obra.\n2. **طلب الاستبدال أو التصليح**:\n- **La sustitución / La reparación**: Solicito la reparación inmediata o la sustitución por uno nuevo.\n3. **وصف العيوب الفنية**:\n- **Tener un defecto de fábrica**: Presenta un defecto de fábrica evidente.\n- **Dejar de funcionar**: Dejó de funcionar de repente tras dos días de uso."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمة *seguro* (تأمين الحوادث) بدلاً من la garantía (ضمان الجودة ضد عيوب الصناعة).",
+        "ترجمة 'قطعة غيار' بـ *parte de cambio*؛ المصطلح الفني الصحيح هو la pieza de repuesto أو el recambio."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «الجهاز لسه في الضمان وفيه عيب صناعة، عايز أصلحه أو أبدله بواحد جديد». بالإسبانية: El aparato está en garantía con defecto de fábrica; quiero la reparación o sustitución."
+        }
+      ],
+      "culturalNoteAr": "ينص القانون الإسباني لحماية المستهلك على فترة ضمان إلزامية لا تقل عن ثلاث سنوات للأجهزة والسلع الإلكترونية الجديدة المباعة في إسبانيا."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-pedir-soluciones-reparacion-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الضمان والدعم الفني",
+        "bodyAr": "المفردات الفنية والتجارية:\n- **la garantía**: شهادة الضمان وحق التصليح المجاني\n- **el defecto de fábrica**: عيب الصناعة الأصلي\n- **la reparación**: الإصلاح والتصليح الفني\n- **la sustitución**: الاستبدال بسلعة جديدة\n- **la pieza de repuesto**: قطعة الغيار الأصلية\n- **el servicio técnico**: قسم الصيانة والدعم الفني",
+        "examples": [
+          {
+            "es": "El ordenador está en garantía y lo he llevado al servicio técnico.",
+            "ar": "الحاسوب تحت الضمان وقد أخذته إلى قسم الصيانة الفنية."
+          },
+          {
+            "es": "Si no hay piezas de repuesto, exigiré la sustitución del equipo.",
+            "ar": "إذا لم توجد قطع غيار، سأطالب باستبدال الجهاز."
+          },
+          {
+            "es": "El fallo se debe a un claro defecto de fábrica cubierto por la ley.",
+            "ar": "العطل يرجع إلى عيب صناعة واضح مشمول بالقانون."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "garantía",
+      "defecto de fábrica",
+      "reparación",
+      "sustitución",
+      "pieza de repuesto",
+      "servicio técnico"
+    ],
+    "reviewVocabulary": [
+      "aparato",
+      "nuevo"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يطالب المتعلم بتصليح منتج معيب أو استبداله بموجب شهادة الضمان (la garantía).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-rep-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يعني استبدال الجهاز التالف بآخر جديد",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'استبدال السلعة بمنتج جديد تماماً'؟",
+        "stemEs": "Como no es posible arreglarlo, solicito la _____ inmediata del producto.",
+        "stemAr": "بما أنه لا يمكن تصليحه، أطلب ... الفوري للمنتج.",
+        "options": [
+          {
+            "id": "ex-b1-rep-1_a",
+            "text": "sustitución",
+            "textAr": "الاستبدال بسلعة جديدة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rep-1_b",
+            "text": "reparación",
+            "textAr": "التصليح فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنه لا يمكن تصليحه، فالطلب هو الاستبدال sustitución."
+          },
+          {
+            "id": "ex-b1-rep-1_c",
+            "text": "pieza de repuesto",
+            "textAr": "قطعة غيار",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطلب يتعلق بالاستبدال الشامل للسلعة."
+          }
+        ],
+        "targetVocab": [
+          "sustitución",
+          "reparación",
+          "pieza de repuesto"
+        ],
+        "explanationAr": "la sustitución تعني استبدال المنتج المعيب بمنتج آخر جديد وصالح.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rep-1_a"
+          ],
+          "selectedOptionId": "ex-b1-rep-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rep-1_b": "قال إنه لا يمكن تصليحه، فالطلب هو الاستبدال sustitución.",
+          "ex-b1-rep-1_c": "الطلب يتعلق بالاستبدال الشامل للسلعة."
+        }
+      },
+      {
+        "id": "ex-b1-rep-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني شهادة الضمان القانوني (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'الضمان التجاري ضد الأعطال' (la _____)",
+        "stemEs": "Conserve la factura de compra porque sirve como justificante de la _____.",
+        "stemAr": "احتفظ بفاتورة الشراء لأنها تعد سنداً لـ ...",
+        "targetVocab": [
+          "garantía"
+        ],
+        "explanationAr": "كلمة garantía تعني الضمان ضد عيوب الصناعة والأعطال.",
+        "answerKey": {
+          "accepted": [
+            "garantía",
+            "garantia"
+          ],
+          "acceptableAnswers": [
+            "garantía",
+            "garantia"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rep-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد نوع العيب الناتج عن أخطاء التصنيع في المصنع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي العيب الأصلي الموجود في السلعة منذ خروجها من المصنع؟",
+        "stemEs": "El perito confirmó que la avería se debía a un _____ indiscutible.",
+        "stemAr": "أكد الخبير الفني أن العطل يعود إلى ... لا جدال فيه.",
+        "options": [
+          {
+            "id": "ex-b1-rep-3_a",
+            "text": "defecto de fábrica",
+            "textAr": "عيب صناعة أصلي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rep-3_b",
+            "text": "servicio técnico",
+            "textAr": "قسم الدعم الفني",
+            "isCorrect": false,
+            "distractorRationaleAr": "السبب هو عيب الصناعة وليس قسم الخدمة نفسه."
+          },
+          {
+            "id": "ex-b1-rep-3_c",
+            "text": "reparación",
+            "textAr": "تصليح",
+            "isCorrect": false,
+            "distractorRationaleAr": "السبب هو defecto de fábrica."
+          }
+        ],
+        "targetVocab": [
+          "defecto de fábrica",
+          "servicio técnico",
+          "reparación"
+        ],
+        "explanationAr": "un defecto de fábrica هو عيب الصناعة الأصلي الناتج عن التصنيع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rep-3_a"
+          ],
+          "selectedOptionId": "ex-b1-rep-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rep-3_b": "السبب هو عيب الصناعة وليس قسم الخدمة نفسه.",
+          "ex-b1-rep-3_c": "السبب هو defecto de fábrica."
+        }
+      },
+      {
+        "id": "ex-b1-rep-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لإرسال الجهاز إلى قسم الصيانة والدعم الفني",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-rep-4_t1",
+            "kind": "token",
+            "text": "Llevé"
+          },
+          {
+            "id": "ex-b1-rep-4_t2",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-rep-4_t3",
+            "kind": "token",
+            "text": "aparato"
+          },
+          {
+            "id": "ex-b1-rep-4_t4",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b1-rep-4_t5",
+            "kind": "token",
+            "text": "servicio"
+          },
+          {
+            "id": "ex-b1-rep-4_t6",
+            "kind": "token",
+            "text": "técnico"
+          },
+          {
+            "id": "ex-b1-rep-4_t7",
+            "kind": "token",
+            "text": "oficial"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Llevé el aparato al servicio técnico oficial"
+          ],
+          "tokenOrder": [
+            "ex-b1-rep-4_t1",
+            "ex-b1-rep-4_t2",
+            "ex-b1-rep-4_t3",
+            "ex-b1-rep-4_t4",
+            "ex-b1-rep-4_t5",
+            "ex-b1-rep-4_t6",
+            "ex-b1-rep-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Llevé ثم المفعول el aparato ثم الوجهة al servicio técnico oficial.",
+        "targetVocab": [
+          "servicio técnico",
+          "aparato"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rep-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد مدى تغطية الضمان لقطع الغيار",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لرد موظف الصيانة وحدد ما يغطيه الضمان",
+        "stemEs": "No se preocupe, la garantía cubre la sustitución de cualquier pieza de repuesto.",
+        "stemAr": "لا تقلق، الضمان يغطي استبدال أي قطعة غيار.",
+        "options": [
+          {
+            "id": "ex-b1-rep-5_a",
+            "text": "pieza de repuesto",
+            "textAr": "قطع الغيار الأصلية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rep-5_b",
+            "text": "defecto de fábrica",
+            "textAr": "عيب صناعة فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموظف أكد تغطية قطع الغيار (pieza de repuesto)."
+          },
+          {
+            "id": "ex-b1-rep-5_c",
+            "text": "reparación",
+            "textAr": "تصليح مدفوع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث أكد التغطية الشاملة لقطع الغيار مجاناً."
+          }
+        ],
+        "targetVocab": [
+          "pieza de repuesto",
+          "garantía",
+          "defecto de fábrica",
+          "reparación"
+        ],
+        "explanationAr": "الموظف قال: 'la garantía cubre la sustitución de cualquier pieza de repuesto'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_garantia_cubre_piezas.mp3",
+        "speechEs": "No se preocupe, la garantía cubre la sustitución de cualquier pieza de repuesto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rep-5_a"
+          ],
+          "selectedOptionId": "ex-b1-rep-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rep-5_b": "الموظف أكد تغطية قطع الغيار (pieza de repuesto).",
+          "ex-b1-rep-5_c": "المتحدث أكد التغطية الشاملة لقطع الغيار مجاناً."
+        }
+      },
+      {
+        "id": "ex-b1-rep-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلبك لتفعيل الضمان وتصليح الجهاز مجاناً",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح لموظف خدمة ما بعد البيع:",
+        "stemEs": "El aparato está en garantía y exijo su reparación inmediata sin coste.",
+        "stemAr": "الجهاز تحت الضمان وأطالب بتصليحه فوراً دون أي تكلفة.",
+        "audioKey": "pending/b1_aparato_garantia_reparacion.mp3",
+        "targetVocab": [
+          "garantía",
+          "reparación",
+          "aparato"
+        ],
+        "explanationAr": "انتبه لنطق حرف r في reparación كـ راء مشددة واضحة ونطق sin coste بسلاسة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_aparato_garantia_reparacion.mp3",
+          "modelAnswer": "El aparato está en garantía y exijo su reparación inmediata sin coste."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

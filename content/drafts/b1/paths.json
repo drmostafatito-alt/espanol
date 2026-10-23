@@ -36,6 +36,118 @@
             "b1-acuerdo-desacuerdo"
           ],
           "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u3-work",
+          "levelCode": "B1",
+          "titleAr": "العمل والمقابلات",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "b1-entrevistas-trabajo",
+            "b1-curriculum-competencias",
+            "b1-condiciones-laborales",
+            "b1-conversacion-profesional"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u4-study",
+          "levelCode": "B1",
+          "titleAr": "الدراسة والتعلّم",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "b1-estudios-universidad",
+            "b1-expresar-duda-probabilidad",
+            "b1-planes-academicos",
+            "b1-debate-educacion"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u5-independent-travel",
+          "levelCode": "B1",
+          "titleAr": "السفر المستقل والمشكلات",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "b1-viajes-imprevistos",
+            "b1-reclamaciones-viaje",
+            "b1-alojamiento-alternativo",
+            "b1-guia-consejos-viajero"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u6-problems",
+          "levelCode": "B1",
+          "titleAr": "حل المشكلات والشكاوى",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "b1-hoja-reclamaciones",
+            "b1-expresar-quejas-molestias",
+            "b1-pedir-soluciones-reparacion",
+            "b1-dialogo-atencion-cliente"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u7-media",
+          "levelCode": "B1",
+          "titleAr": "الإعلام والأخبار المبسطة",
+          "sortOrder": 7,
+          "status": "draft",
+          "lessons": [
+            "b1-noticias-prensa",
+            "b1-estilo-indirecto-presente",
+            "b1-estilo-indirecto-pasado",
+            "b1-cronica-periodistica"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u8-health-lifestyle",
+          "levelCode": "B1",
+          "titleAr": "الصحة ونمط الحياة",
+          "sortOrder": 8,
+          "status": "draft",
+          "lessons": [
+            "b1-habitos-saludables",
+            "b1-subjuntivo-recomendaciones",
+            "b1-bienestar-emocional",
+            "b1-consulta-especialista"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u9-relationships",
+          "levelCode": "B1",
+          "titleAr": "العلاقات والمجتمع",
+          "sortOrder": 9,
+          "status": "draft",
+          "lessons": [
+            "b1-relaciones-personales",
+            "b1-subjuntivo-sentimientos",
+            "b1-ojala-deseos",
+            "b1-conflictos-convivencia"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b1-u10-writing-basics",
+          "levelCode": "B1",
+          "titleAr": "الكتابة الوظيفية",
+          "sortOrder": 10,
+          "status": "draft",
+          "lessons": [
+            "b1-conectores-discursivos",
+            "b1-carta-formal-correo",
+            "b1-agradecimiento-disculpa",
+            "b1-redaccion-argumentativa"
+          ],
+          "vocabularyBundles": []
         }
       ]
     }

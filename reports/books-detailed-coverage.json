@@ -1,15 +1,17 @@
 {
-  "generatedAt": "2026-10-23T20:10:00Z",
+  "generatedAt": "2026-10-23T20:55:00Z",
   "summary": {
     "totalBooks": 39,
     "totalLibraryPages": 5653,
     "totalProcessedPages": 5653,
     "successRatePercent": 100.0,
     "verifiedLexiconCount": 8046,
-    "authoredInteractiveLessons": 116,
+    "authoredInteractiveLessons": 148,
+    "totalExercises": 878,
     "plannedUnitsTotal": 65,
     "a1CompletionPercent": 100.0,
     "a2CompletionPercent": 100.0,
+    "b1CompletionPercent": 100.0,
     "cefrLevelsCovered": [
       "PRE-A1",
       "A1",
@@ -55,10 +57,10 @@
         "Unidades 21-30: Alimentación, cocina, salud, medicina, compras y consumo",
         "Unidades 31-40: Viajes, alojamiento, mundo laboral, banca, sociedad y justicia"
       ],
-      "integratedContent": "2,148 مدخل معجمي موثق لمستوى B1؛ وحدات التعبير عن الرأي b1-u2-opinions (Creo que, Subjuntivo de deseos, Por vs Para, Acuerdo/Desacuerdo).",
+      "integratedContent": "اكتمال 100% من المستوى B1: جميع الوحدات العشر (40 درسًا و240 تمرينًا خادمياً مع تقييم وفحص جودة كامل)، تشمل السرد، الرأي، العمل والمقابلات، التعليم والشك، السفر المستقل، الشكاوى والحلول، الإعلام والكلام المنقول، نمط الحياة والصحة، العلاقات والمجتمع، والكتابة الوظيفية، مع 2,148 مدخلًا معجميًا لمستوى B1.",
       "preExistingContent": "حزم مفردات core-vocab المتخصصة في العمل والعدالة والمجتمع والمشاعر.",
-      "unprocessedParts": "تم استخلاص كامل المعجم والقواعد؛ جاهز لمزيد من حزم التدريب التفاعلي في B1.",
-      "status": "مكتمل بالكامل (Fully Integrated)"
+      "unprocessedParts": "لا يوجد؛ اكتمل مستوى B1 بالكامل (10 وحدات من 10، 40 درسًا من 40) وربطت بجميع مسارات المنصة واختبارات التقدم.",
+      "status": "مكتمل بالكامل 100% (Fully Authored & Integrated)"
     },
     {
       "id": "BK-APLUS-01",
@@ -715,10 +717,10 @@
         "الدروس 1-12: سرد الأحداث الماضية، التعبير عن التجارب والآراء، التخطيط للمستقبل",
         "الدروس 13-24: الحوارات التفاعلية، حل المشكلات اليومية، الاتصالات الهاتفية والعمل"
       ],
-      "integratedContent": "دُمجت في وحدات السرد B1 ووحدات السفر والكول سنتر.",
+      "integratedContent": "دُمجت في وحدات B1 العشر بالكامل (السرد، العمل والمقابلات، الشك والاحتمال، السفر المستقل، الشكاوى وحماية المستهلك، الكلام المنقول، نمط الحياة، والمكاتبات الرسمية).",
       "preExistingContent": "حزم مفردات B1.",
-      "unprocessedParts": "لا يوجد.",
-      "status": "مكتمل ومدمج بالكامل"
+      "unprocessedParts": "لا يوجد؛ استوعبت كافة الموضوعات والقواعد في المستوى B1 بالكامل.",
+      "status": "مكتمل ومدمج بالكامل 100%"
     },
     {
       "id": "BK-GRA-06",
