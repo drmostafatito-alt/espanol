@@ -8,6 +8,7 @@ import { Transparency, NotFound } from './pages/Misc';
 import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
+import { Search } from './pages/Search';
 
 function Shell() {
   const [path, navigate] = useRoute();
@@ -41,6 +42,8 @@ function Shell() {
     page = user ? <ReviewPacks navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/settings') {
     page = user ? <Settings navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/search' || path.startsWith('/search')) {
+    page = <Search navigate={navigate} initialQuery={typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('q') ?? '') : ''} />;
   } else if (path === '/transparency') {
     page = <Transparency />;
   } else {
@@ -56,6 +59,7 @@ function Shell() {
           <span>Español بالعربي</span>
         </a>
         <span className="spacer" />
+        <a href="/search" className="btn ghost sm" data-testid="nav-search" onClick={e => { e.preventDefault(); navigate('/search'); }}>🔍 بحث</a>
         {user ? (
           <>
             <a href="/learn" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحتي</a>

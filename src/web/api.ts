@@ -66,6 +66,13 @@ export const api = {
       `/api/review/packs/${encodeURIComponent(slug)}/start`,
       { method: 'POST' },
     ),
+  search: (query: string, opts?: { level?: string; kind?: string; limit?: number }) => {
+    const params = new URLSearchParams({ q: query });
+    if (opts?.level) params.set('level', opts.level);
+    if (opts?.kind) params.set('kind', opts.kind);
+    if (opts?.limit) params.set('limit', String(opts.limit));
+    return request<import('../shared/search-engine').SearchResponse>(`/api/content/search?${params.toString()}`);
+  },
 };
 
 export type ReviewRating = 'again' | 'hard' | 'good' | 'easy';

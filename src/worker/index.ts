@@ -10,7 +10,7 @@ import {
 } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
 import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
-import { getLesson, listPaths } from './routes/content';
+import { getLesson, listPaths, searchContent } from './routes/content';
 import { completeLesson, lessonSession, myProgress, submitAnswer } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
 
@@ -80,6 +80,7 @@ const routes: Route[] = [
   route('GET', '/api/admin/audit', (req, env, ctx) => adminAudit(req, env, ctx.requestId, ctx.user!), 'session', 'audit.read'),
 
   route('GET', '/api/content/paths', (req, env, ctx) => listPaths(req, env, ctx.requestId)),
+  route('GET', '/api/content/search', (req, env, ctx) => searchContent(req, env, ctx.requestId)),
   route('GET', '/api/content/lessons/:slug', (req, env, ctx) => getLesson(req, env, ctx.requestId, ctx.user), 'optional'),
 
   // ---- المرحلة 2: التعلم ----
