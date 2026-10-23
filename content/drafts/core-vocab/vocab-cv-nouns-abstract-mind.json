@@ -1,0 +1,4158 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-nouns-abstract-mind",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+  "source": {
+    "title": "حزمة مفردات: أسماء المفاهيم المجردة والمشاعر والفكر والاقتصاد والتكنولوجيا — مسودة قابلة للمراجعة",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-23",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. IPA تلقائي تقريبي من قواعد الإملاء الإسبانية وينتظر مراجعة بشرية."
+  },
+  "entries": [
+    {
+      "headword": "alegría",
+      "normalized": "alegría",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "alegrías",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/alegɾˈia/",
+      "pronunciationHintAr": "اليجريا",
+      "internalRank": 1,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فرح وسرور وابتهاج في النفس",
+          "meaningArEg": "فرحة وسعادة في القلب",
+          "glossEs": null,
+          "exampleEs": "La alegría de los niños iluminó toda la casa.",
+          "exampleAr": "أضاء فرح الأطفال البيت بأكمله.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La alegría de los niños iluminó toda la casa.",
+          "ar": "أضاء فرح الأطفال البيت بأكمله.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tristeza",
+      "normalized": "tristeza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tristezas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tɾistˈeθa/",
+      "pronunciationHintAr": "تريستيثا",
+      "internalRank": 2,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حزن وأسى يغمر الفؤاد",
+          "meaningArEg": "حزن وزعل عميق",
+          "glossEs": null,
+          "exampleEs": "Sintió una profunda tristeza al despedir a su amigo.",
+          "exampleAr": "شعر بحزن عميق عند توديع صديقه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sintió una profunda tristeza al despedir a su amigo.",
+          "ar": "شعر بحزن عميق عند توديع صديقه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "miedo",
+      "normalized": "miedo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "miedos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/miˈedo/",
+      "pronunciationHintAr": "مييدو",
+      "internalRank": 3,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خوف وهلع من مجهول أو خطر",
+          "meaningArEg": "خوف ورعب من المجهول",
+          "glossEs": null,
+          "exampleEs": "Superó el miedo a hablar en público con práctica.",
+          "exampleAr": "تغلب على الخوف من التحدث أمام الجمهور بالتدريب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Superó el miedo a hablar en público con práctica.",
+          "ar": "تغلب على الخوف من التحدث أمام الجمهور بالتدريب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ira",
+      "normalized": "ira",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "iras",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ˈiɾa/",
+      "pronunciationHintAr": "يرا",
+      "internalRank": 4,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غضب عارم وسخط شديد",
+          "meaningArEg": "غضب وعصبية شديدة",
+          "glossEs": null,
+          "exampleEs": "Controló su ira respirando hondo antes de responder.",
+          "exampleAr": "سيطر على غضبه بالتنفس بعمق قبل الرد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Controló su ira respirando hondo antes de responder.",
+          "ar": "سيطر على غضبه بالتنفس بعمق قبل الرد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "enfado",
+      "normalized": "enfado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "enfados",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/enfˈado/",
+      "pronunciationHintAr": "ينفادو",
+      "internalRank": 5,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "انزعاج وزعل عابر بين الأصحاب",
+          "meaningArEg": "زعل ونرفزة بسيطة",
+          "glossEs": null,
+          "exampleEs": "Su enfado pasajero desapareció tras una buena charla.",
+          "exampleAr": "زال زعله العابر بعد حديث طيب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su enfado pasajero desapareció tras una buena charla.",
+          "ar": "زال زعله العابر بعد حديث طيب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sorpresa",
+      "normalized": "sorpresa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "sorpresas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/soɾpɾˈesa/",
+      "pronunciationHintAr": "سوربريسا",
+      "internalRank": 6,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مفاجأة غير متوقعة تثير الدهشة",
+          "meaningArEg": "مفاجأة حلوة ومدهشة",
+          "glossEs": null,
+          "exampleEs": "Le prepararon una fiesta de sorpresa por su cumpleaños.",
+          "exampleAr": "أعدوا له حفل مفاجأة بمناسبة عيد ميلاده.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le prepararon una fiesta de sorpresa por su cumpleaños.",
+          "ar": "أعدوا له حفل مفاجأة بمناسبة عيد ميلاده.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "esperanza",
+      "normalized": "esperanza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "esperanzas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/espeɾˈanθa/",
+      "pronunciationHintAr": "يسبيرانثا",
+      "internalRank": 7,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أمل وتفاؤل بمستقبل مشرق",
+          "meaningArEg": "أمل وتفاؤل ببكرة",
+          "glossEs": null,
+          "exampleEs": "La esperanza renace con cada nuevo amanecer.",
+          "exampleAr": "يتجدد الأمل مع كل إشراقة فجر جديدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La esperanza renace con cada nuevo amanecer.",
+          "ar": "يتجدد الأمل مع كل إشراقة فجر جديدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "desesperación",
+      "normalized": "desesperación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "desesperacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/desespeɾaθiˈon/",
+      "pronunciationHintAr": "ديسيسبيراثيون",
+      "internalRank": 8,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يأس وقنوط وانقطاع الأمل",
+          "meaningArEg": "يأس وفقدان أمل",
+          "glossEs": null,
+          "exampleEs": "Mantuvo la calma para no caer en la desesperación.",
+          "exampleAr": "حافظ على هدوئه لئلا يسقط في اليأس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mantuvo la calma para no caer en la desesperación.",
+          "ar": "حافظ على هدوئه لئلا يسقط في اليأس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "amor",
+      "normalized": "amor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "amores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/amˈoɾ/",
+      "pronunciationHintAr": "امور",
+      "internalRank": 9,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حب وود عميق يربط القلوب",
+          "meaningArEg": "حب ومودة بين الناس",
+          "glossEs": null,
+          "exampleEs": "El amor maternal es incondicional y generoso.",
+          "exampleAr": "حب الأم غير مشروط وسخي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El amor maternal es incondicional y generoso.",
+          "ar": "حب الأم غير مشروط وسخي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "odio",
+      "normalized": "odio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "odios",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/odˈio/",
+      "pronunciationHintAr": "وديو",
+      "internalRank": 10,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كراهية وبغضاء تسود النفوس",
+          "meaningArEg": "كره وبغضاء وعداوة",
+          "glossEs": null,
+          "exampleEs": "El perdón sincero es el mejor antídoto contra el odio.",
+          "exampleAr": "المسامحة الصادقة خير ترياق ضد الكراهية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El perdón sincero es el mejor antídoto contra el odio.",
+          "ar": "المسامحة الصادقة خير ترياق ضد الكراهية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "envidia",
+      "normalized": "envidia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "envidias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/enbidˈia/",
+      "pronunciationHintAr": "ينبيديا",
+      "internalRank": 11,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حسد وتمني زوال نعمة الغير",
+          "meaningArEg": "حسد وعين وحشة",
+          "glossEs": null,
+          "exampleEs": "La envidia solo envenena el alma de quien la siente.",
+          "exampleAr": "لا يفسد الحسد إلا روح صاحبه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La envidia solo envenena el alma de quien la siente.",
+          "ar": "لا يفسد الحسد إلا روح صاحبه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "celos",
+      "normalized": "celos",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "celos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θˈelos/",
+      "pronunciationHintAr": "ثيلوس",
+      "internalRank": 12,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غيرة بين المحبين أو الأقران",
+          "meaningArEg": "غيرة وشك بين الأحباب",
+          "glossEs": null,
+          "exampleEs": "Los celos injustificados dañaron su relación de pareja.",
+          "exampleAr": "أضرت الغيرة غير المبررة بعلاقتهما الزوجية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los celos injustificados dañaron su relación de pareja.",
+          "ar": "أضرت الغيرة غير المبررة بعلاقتهما الزوجية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "vergüenza",
+      "normalized": "vergüenza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "vergüenzas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/beɾguˈenθa/",
+      "pronunciationHintAr": "بيرجوينثا",
+      "internalRank": 13,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حياء وخجل أو شعور بالعار",
+          "meaningArEg": "كسوف وخجل وإحراج",
+          "glossEs": null,
+          "exampleEs": "Sintió mucha vergüenza al tropezar en el escenario.",
+          "exampleAr": "شعر بخجل شديد عندما تعثر على خشبة المسرح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sintió mucha vergüenza al tropezar en el escenario.",
+          "ar": "شعر بخجل شديد عندما تعثر على خشبة المسرح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "orgullo",
+      "normalized": "orgullo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "orgullos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/oɾgˈuʎlo/",
+      "pronunciationHintAr": "ورجوليلو",
+      "internalRank": 14,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فخر واعتزاز بالنفس أو بالوطن",
+          "meaningArEg": "فخر وعزة نفس وكبرياء",
+          "glossEs": null,
+          "exampleEs": "Mostró con orgullo la medalla de oro ganada.",
+          "exampleAr": "أظهر بفخر الميدالية الذهبية التي فاز بها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mostró con orgullo la medalla de oro ganada.",
+          "ar": "أظهر بفخر الميدالية الذهبية التي فاز بها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "soberbia",
+      "normalized": "soberbia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "soberbias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/sobeɾbˈia/",
+      "pronunciationHintAr": "سوبيربيا",
+      "internalRank": 15,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كبرياء واستكبار على الخلق",
+          "meaningArEg": "غرور وتكبر ع الناس",
+          "glossEs": null,
+          "exampleEs": "La soberbia ciega a los hombres ante sus propios errores.",
+          "exampleAr": "يعمي الكبرياء الرجال عن أخطائهم الشخصية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La soberbia ciega a los hombres ante sus propios errores.",
+          "ar": "يعمي الكبرياء الرجال عن أخطائهم الشخصية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "humildad",
+      "normalized": "humildad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "humildades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/umildˈad/",
+      "pronunciationHintAr": "وميلداد",
+      "internalRank": 16,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تواضع ولين جانب ومحبة",
+          "meaningArEg": "تواضع وطيبة وأدب",
+          "glossEs": null,
+          "exampleEs": "Aceptó las alabanzas con sincera humildad y gratitud.",
+          "exampleAr": "تقبل المديح بتواضع صادق وامتنان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aceptó las alabanzas con sincera humildad y gratitud.",
+          "ar": "تقبل المديح بتواضع صادق وامتنان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "paciencia",
+      "normalized": "paciencia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "paciencias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/paθienθˈia/",
+      "pronunciationHintAr": "باثيينثيا",
+      "internalRank": 17,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صبر وتحمل في الشدائد",
+          "meaningArEg": "صبر وطول بال",
+          "glossEs": null,
+          "exampleEs": "La paciencia es una virtud fundamental para enseñar.",
+          "exampleAr": "الصبر فضيلة أساسية للتعليم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La paciencia es una virtud fundamental para enseñar.",
+          "ar": "الصبر فضيلة أساسية للتعليم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "calma",
+      "normalized": "calma",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "calmas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kˈalma/",
+      "pronunciationHintAr": "كالما",
+      "internalRank": 18,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هدوء وطمأنينة وراحة بال",
+          "meaningArEg": "هدوء وراحة بال",
+          "glossEs": null,
+          "exampleEs": "Conserva la calma en las situaciones más difíciles.",
+          "exampleAr": "يحافظ على الهدوء في أصعب المواقف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Conserva la calma en las situaciones más difíciles.",
+          "ar": "يحافظ على الهدوء في أصعب المواقف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "nerviosismo",
+      "normalized": "nerviosismo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "nerviosismos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/neɾbiosˈismo/",
+      "pronunciationHintAr": "نيربيوسيسمو",
+      "internalRank": 19,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توتر وقلق يسبق الامتحان أو المقابلة",
+          "meaningArEg": "توتر وعصبية وقلق",
+          "glossEs": null,
+          "exampleEs": "Respiró hondo para disipar el nerviosismo del debut.",
+          "exampleAr": "تنفس بعمق لتبديد التوتر قبل أول ظهور له.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Respiró hondo para disipar el nerviosismo del debut.",
+          "ar": "تنفس بعمق لتبديد التوتر قبل أول ظهور له.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ansiedad",
+      "normalized": "ansiedad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ansiedades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ansiedˈad/",
+      "pronunciationHintAr": "انسييداد",
+      "internalRank": 20,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قلق وتوجس وتوتر نفسي",
+          "meaningArEg": "قلق وخوف نفسي",
+          "glossEs": null,
+          "exampleEs": "La meditación diaria ayuda a reducir la ansiedad.",
+          "exampleAr": "يساعد التأمل اليومي على تقليل القلق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La meditación diaria ayuda a reducir la ansiedad.",
+          "ar": "يساعد التأمل اليومي على تقليل القلق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "alivio",
+      "normalized": "alivio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "alivios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/alibˈio/",
+      "pronunciationHintAr": "اليبيو",
+      "internalRank": 21,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ارتياح وزوال العبء والهم",
+          "meaningArEg": "راحة بعد تعب وزوال الهم",
+          "glossEs": null,
+          "exampleEs": "Suspiró con alivio al saber que todos estaban bien.",
+          "exampleAr": "تنفس بارتياح حين علم أن الجميع بخير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Suspiró con alivio al saber que todos estaban bien.",
+          "ar": "تنفس بارتياح حين علم أن الجميع بخير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "culpa",
+      "normalized": "culpa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "culpas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kˈulpa/",
+      "pronunciationHintAr": "كولبا",
+      "internalRank": 22,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ذنب وشعور بتأنيب الضمير",
+          "meaningArEg": "ذنب ولوم ضمير",
+          "glossEs": null,
+          "exampleEs": "Se disculpó para liberarse del peso de la culpa.",
+          "exampleAr": "اعتذر ليتخلص من ثقل الشعور بالذنب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se disculpó para liberarse del peso de la culpa.",
+          "ar": "اعتذر ليتخلص من ثقل الشعور بالذنب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "remordimiento",
+      "normalized": "remordimiento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "remordimientos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/remoɾdimiˈento/",
+      "pronunciationHintAr": "ريمورديميينتو",
+      "internalRank": 23,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ندم ولوم النفس على خطأ ماض",
+          "meaningArEg": "ندم وحسرة على الغلط",
+          "glossEs": null,
+          "exampleEs": "El remordimiento no le dejaba conciliar el sueño.",
+          "exampleAr": "لم يدعه الندم يغمض له جفن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El remordimiento no le dejaba conciliar el sueño.",
+          "ar": "لم يدعه الندم يغمض له جفن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "gratitud",
+      "normalized": "gratitud",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "gratitudes",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/gɾatitˈud/",
+      "pronunciationHintAr": "جراتيتود",
+      "internalRank": 24,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شكر وامتنان وعرفان بالجميل",
+          "meaningArEg": "شكر وعرفان بالجميل",
+          "glossEs": null,
+          "exampleEs": "Expresó su profunda gratitud a los médicos que lo salvaron.",
+          "exampleAr": "عبر عن شكره العميق للأطباء الذين أنقذوه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Expresó su profunda gratitud a los médicos que lo salvaron.",
+          "ar": "عبر عن شكره العميق للأطباء الذين أنقذوه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "nostalgia",
+      "normalized": "nostalgia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "nostalgias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/nostalxˈia/",
+      "pronunciationHintAr": "نوستالخيا",
+      "internalRank": 25,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حنين وشوق إلى الديار والماضي",
+          "meaningArEg": "حن ونوستالجيا للأيام الحلوة",
+          "glossEs": null,
+          "exampleEs": "Miró las fotos antiguas con un punto de dulce nostalgia.",
+          "exampleAr": "تأمل الصور القديمة بشيء من الحنين العذب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Miró las fotos antiguas con un punto de dulce nostalgia.",
+          "ar": "تأمل الصور القديمة بشيء من الحنين العذب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "soledad",
+      "normalized": "soledad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "soledades",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/soledˈad/",
+      "pronunciationHintAr": "سوليداد",
+      "internalRank": 26,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وحدة وعزلة عن الناس",
+          "meaningArEg": "وحدة وعزلة",
+          "glossEs": null,
+          "exampleEs": "Disfruta de la soledad para leer y reflexionar en paz.",
+          "exampleAr": "يستمتع بالوحدة ليقرأ ويتأمل بسلام.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Disfruta de la soledad para leer y reflexionar en paz.",
+          "ar": "يستمتع بالوحدة ليقرأ ويتأمل بسلام.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "empatía",
+      "normalized": "empatía",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "empatías",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/empatˈia/",
+      "pronunciationHintAr": "يمباتيا",
+      "internalRank": 27,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعاطف وتفهم لمشاعر الآخرين",
+          "meaningArEg": "تعاطف وحس بالغير",
+          "glossEs": null,
+          "exampleEs": "La empatía permite conectar de verdad con las personas.",
+          "exampleAr": "يتيح التعاطف التواصل الحقيقي مع الناس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La empatía permite conectar de verdad con las personas.",
+          "ar": "يتيح التعاطف التواصل الحقيقي مع الناس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "compasión",
+      "normalized": "compasión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "compasones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kompasiˈon/",
+      "pronunciationHintAr": "كومباسيون",
+      "internalRank": 28,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شفقة ورحمة بضعف المحتاجين",
+          "meaningArEg": "شفقة ورحمة بالضعيف",
+          "glossEs": null,
+          "exampleEs": "Sintió compasión por los damnificados del terremoto.",
+          "exampleAr": "شعر بالرحمة تجاه متضرري الزلزال.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sintió compasión por los damnificados del terremoto.",
+          "ar": "شعر بالرحمة تجاه متضرري الزلزال.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cariño",
+      "normalized": "cariño",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cariños",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kaɾˈiɲo/",
+      "pronunciationHintAr": "كارينيو",
+      "internalRank": 29,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عطف وحنان ومودة صادقة",
+          "meaningArEg": "حنية ومودة وحب",
+          "glossEs": null,
+          "exampleEs": "Trata a sus abuelos con inmenso cariño y respeto.",
+          "exampleAr": "يعامل أجداده بعطف جم واحترام كبير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Trata a sus abuelos con inmenso cariño y respeto.",
+          "ar": "يعامل أجداده بعطف جم واحترام كبير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "afecto",
+      "normalized": "afecto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "afectos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/afˈekto/",
+      "pronunciationHintAr": "افيكتو",
+      "internalRank": 30,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مودة وتعلق قلبي نبيل",
+          "meaningArEg": "محبة وعشم طيب",
+          "glossEs": null,
+          "exampleEs": "Le tiene un gran afecto a su antiguo maestro.",
+          "exampleAr": "يكن مودة عظيمة لمعلمه القديم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le tiene un gran afecto a su antiguo maestro.",
+          "ar": "يكن مودة عظيمة لمعلمه القديم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pensamiento",
+      "normalized": "pensamiento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pensamientos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pensamiˈento/",
+      "pronunciationHintAr": "بينساميينتو",
+      "internalRank": 31,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فكر وفكرة تجول في الخاطر",
+          "meaningArEg": "فكرة وتفكير في الدماغ",
+          "glossEs": null,
+          "exampleEs": "Expresó su pensamiento de manera clara y ordenada.",
+          "exampleAr": "عبر عن فكره بأسلوب واضح ومنظم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Expresó su pensamiento de manera clara y ordenada.",
+          "ar": "عبر عن فكره بأسلوب واضح ومنظم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mente",
+      "normalized": "mente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "mentes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/mˈente/",
+      "pronunciationHintAr": "مينتي",
+      "internalRank": 32,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عقل وذهن للإدراك والتفكير",
+          "meaningArEg": "عقل وتفكير وذهن",
+          "glossEs": null,
+          "exampleEs": "Mantener la mente activa previene el deterioro cognitivo.",
+          "exampleAr": "الحفاظ على نشاط العقل يقي من التدهور المعرفي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mantener la mente activa previene el deterioro cognitivo.",
+          "ar": "الحفاظ على نشاط العقل يقي من التدهور المعرفي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "razón",
+      "normalized": "razón",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "raones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/raθˈon/",
+      "pronunciationHintAr": "راثون",
+      "internalRank": 33,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عقل ومنطق / سبب ومبرر",
+          "meaningArEg": "عقل ومنطق أو سبب",
+          "glossEs": null,
+          "exampleEs": "La razón debe guiar las decisiones importantes de la vida.",
+          "exampleAr": "ينبغي للعقل أن يوجه القرارات المهمة في الحياة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La razón debe guiar las decisiones importantes de la vida.",
+          "ar": "ينبغي للعقل أن يوجه القرارات المهمة في الحياة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "memoria",
+      "normalized": "memoria",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "memorias",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/memoɾˈia/",
+      "pronunciationHintAr": "ميموريا",
+      "internalRank": 34,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ذاكرة لحفظ واسترجاع المعلومات",
+          "meaningArEg": "ذاكرة حفظ وافتكار",
+          "glossEs": null,
+          "exampleEs": "Tiene una excelente memoria visual para los rostros.",
+          "exampleAr": "لديه ذاكرة بصرية ممتازة في تذكر الوجوه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tiene una excelente memoria visual para los rostros.",
+          "ar": "لديه ذاكرة بصرية ممتازة في تذكر الوجوه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "olvido",
+      "normalized": "olvido",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "olvidos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/olbˈido/",
+      "pronunciationHintAr": "ولبيدو",
+      "internalRank": 35,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نسيان وفقدان الذكرى",
+          "meaningArEg": "نسيان وسهو",
+          "glossEs": null,
+          "exampleEs": "El paso del tiempo sumió el suceso en el olvido.",
+          "exampleAr": "ألقى مرور الزمن بالحادثة في طيات النسيان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El paso del tiempo sumió el suceso en el olvido.",
+          "ar": "ألقى مرور الزمن بالحادثة في طيات النسيان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "imaginación",
+      "normalized": "imaginación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "imaginacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/imaxinaθiˈon/",
+      "pronunciationHintAr": "يماخيناثيون",
+      "internalRank": 36,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خيال وتصور إبداعي واسع",
+          "meaningArEg": "خيال وإبداع واسع",
+          "glossEs": null,
+          "exampleEs": "Los cuentos infantiles estimulan la fértil imaginación.",
+          "exampleAr": "تنمي قصص الأطفال الخيال الخصب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los cuentos infantiles estimulan la fértil imaginación.",
+          "ar": "تنمي قصص الأطفال الخيال الخصب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "creatividad",
+      "normalized": "creatividad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "creatividades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kɾeatibidˈad/",
+      "pronunciationHintAr": "كرياتيبيداد",
+      "internalRank": 37,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إبداع وابتكار حلول غير مألوفة",
+          "meaningArEg": "إبداع وابتكار حلو",
+          "glossEs": null,
+          "exampleEs": "La creatividad es una habilidad muy valorada en el trabajo.",
+          "exampleAr": "الإبداع مهارة تحظى بتقدير كبير في العمل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La creatividad es una habilidad muy valorada en el trabajo.",
+          "ar": "الإبداع مهارة تحظى بتقدير كبير في العمل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "inteligencia",
+      "normalized": "inteligencia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "inteligencias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/intelixenθˈia/",
+      "pronunciationHintAr": "ينتيليخينثيا",
+      "internalRank": 38,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ذكاء وفطنة وسرعة بديهة",
+          "meaningArEg": "ذكاء وفطنة ونباهة",
+          "glossEs": null,
+          "exampleEs": "Resolvió el complejo enigma gracias a su viva inteligencia.",
+          "exampleAr": "حل اللغز المعقد بفضل ذكائه الوقاد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Resolvió el complejo enigma gracias a su viva inteligencia.",
+          "ar": "حل اللغز المعقد بفضل ذكائه الوقاد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sabiduría",
+      "normalized": "sabiduría",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "sabidurías",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/sabiduɾˈia/",
+      "pronunciationHintAr": "سابيدوريا",
+      "internalRank": 39,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حكمة وخبرة عميقة في الحياة",
+          "meaningArEg": "حكمة وخبرة سنين",
+          "glossEs": null,
+          "exampleEs": "Las palabras del filósofo rebosaban de serena sabiduría.",
+          "exampleAr": "فاضت كلمات الفيلسوف بالحكمة الرصينة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Las palabras del filósofo rebosaban de serena sabiduría.",
+          "ar": "فاضت كلمات الفيلسوف بالحكمة الرصينة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "duda",
+      "normalized": "duda",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "dudas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dˈuda/",
+      "pronunciationHintAr": "دودا",
+      "internalRank": 40,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شك وريب وتردد في الأمر",
+          "meaningArEg": "شك وحيرة وتردد",
+          "glossEs": null,
+          "exampleEs": "Si tienes alguna duda, pregunta al profesor sin miedo.",
+          "exampleAr": "إن كان لديك أي شك، فاسأل الأستاذ بلا خوف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Si tienes alguna duda, pregunta al profesor sin miedo.",
+          "ar": "إن كان لديك أي شك، فاسأل الأستاذ بلا خوف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "certeza",
+      "normalized": "certeza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "certezas",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/θeɾtˈeθa/",
+      "pronunciationHintAr": "ثيرتيثا",
+      "internalRank": 41,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "يقين وتأكد لا يقبل الشك",
+          "meaningArEg": "يقين وتأكد تام",
+          "glossEs": null,
+          "exampleEs": "Tengo la certeza absoluta de que saldrá bien.",
+          "exampleAr": "لدي اليقين التام بأن الأمر سينجح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo la certeza absoluta de que saldrá bien.",
+          "ar": "لدي اليقين التام بأن الأمر سينجح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "criterio",
+      "normalized": "criterio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "criterios",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kɾiteɾˈio/",
+      "pronunciationHintAr": "كريتيريو",
+      "internalRank": 42,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معيار وضابط للحكم والتقييم",
+          "meaningArEg": "مبدأ ومعيار تقييم",
+          "glossEs": null,
+          "exampleEs": "Actúa según su propio criterio con total independencia.",
+          "exampleAr": "يتصرف وفق معياره الخاص باستقلالية تامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Actúa según su propio criterio con total independencia.",
+          "ar": "يتصرف وفق معياره الخاص باستقلالية تامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "juicio",
+      "normalized": "juicio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "juicios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xuiθˈio/",
+      "pronunciationHintAr": "خويثيو",
+      "internalRank": 43,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حكم عقلي / محاكمة قضائية",
+          "meaningArEg": "حكم عقل أو محكمة",
+          "glossEs": null,
+          "exampleEs": "Demostró un excelente juicio en momentos de crisis.",
+          "exampleAr": "أظهر حصافة عقل ممتازة في أوقات الأزمات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Demostró un excelente juicio en momentos de crisis.",
+          "ar": "أظهر حصافة عقل ممتازة في أوقات الأزمات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "lógica",
+      "normalized": "lógica",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "lógicas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/lˈoxika/",
+      "pronunciationHintAr": "لوخيكا",
+      "internalRank": 44,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "منطق وقواعد التفكير السليم",
+          "meaningArEg": "منطق وتفكير عقلاني",
+          "glossEs": null,
+          "exampleEs": "Su razonamiento sigue una lógica impecable de principio a fin.",
+          "exampleAr": "يتبع استدلاله منطقاً محكماً من البداية للنهاية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su razonamiento sigue una lógica impecable de principio a fin.",
+          "ar": "يتبع استدلاله منطقاً محكماً من البداية للنهاية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "atención",
+      "normalized": "atención",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "atencones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/atenθiˈon/",
+      "pronunciationHintAr": "اتينثيون",
+      "internalRank": 45,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "انتباه وتركيز ذهني على الشيء",
+          "meaningArEg": "تركيز وانتباه شديد",
+          "glossEs": null,
+          "exampleEs": "Presta atención a las indicaciones de seguridad.",
+          "exampleAr": "انتبه جيداً لإرشادات السلامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Presta atención a las indicaciones de seguridad.",
+          "ar": "انتبه جيداً لإرشادات السلامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "concentración",
+      "normalized": "concentración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "concentracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konθentɾaθiˈon/",
+      "pronunciationHintAr": "كونثينتراثيون",
+      "internalRank": 46,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تركيز عميق على المهمة الحالية",
+          "meaningArEg": "تركيز كامل في الشغل",
+          "glossEs": null,
+          "exampleEs": "El ruido exterior le impedía mantener la concentración.",
+          "exampleAr": "منعته الضوضاء الخارجية من الحفاظ على تركيزه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ruido exterior le impedía mantener la concentración.",
+          "ar": "منعته الضوضاء الخارجية من الحفاظ على تركيزه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conciencia",
+      "normalized": "conciencia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "conciencias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/konθienθˈia/",
+      "pronunciationHintAr": "كونثيينثيا",
+      "internalRank": 47,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وعي وإدراك / ضمير أخلاقي",
+          "meaningArEg": "وعي وفهم أو ضمير حي",
+          "glossEs": null,
+          "exampleEs": "Tiene la conciencia tranquila por haber hecho lo correcto.",
+          "exampleAr": "يتمتع بضمير مرتاح لأنه فعل الصواب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tiene la conciencia tranquila por haber hecho lo correcto.",
+          "ar": "يتمتع بضمير مرتاح لأنه فعل الصواب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "intuición",
+      "normalized": "intuición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "intuicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/intuiθiˈon/",
+      "pronunciationHintAr": "ينتويثيون",
+      "internalRank": 48,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حدس وحاسة داخلية للإدراك السريع",
+          "meaningArEg": "حاسة سادسة وحدس داخلي",
+          "glossEs": null,
+          "exampleEs": "Siguió su intuición y acertó de pleno en la elección.",
+          "exampleAr": "اتبع حدسه وأصاب تماماً في اختياره.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Siguió su intuición y acertó de pleno en la elección.",
+          "ar": "اتبع حدسه وأصاب تماماً في اختياره.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "reflexión",
+      "normalized": "reflexión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "reflexones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/refleksiˈon/",
+      "pronunciationHintAr": "ريفليكسيون",
+      "internalRank": 49,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تأمل وتفكير متأن في الأمور",
+          "meaningArEg": "تأمل وتفكير عميق",
+          "glossEs": null,
+          "exampleEs": "La lectura pausada invita a la reflexión profunda.",
+          "exampleAr": "تدعو القراءة المتأنية إلى التأمل العميق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La lectura pausada invita a la reflexión profunda.",
+          "ar": "تدعو القراءة المتأنية إلى التأمل العميق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "comprensión",
+      "normalized": "comprensión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "comprensones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kompɾensiˈon/",
+      "pronunciationHintAr": "كومبرينسيون",
+      "internalRank": 50,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فهم واستيعاب دقيق للمعاني",
+          "meaningArEg": "فهم واستيعاب سريع",
+          "glossEs": null,
+          "exampleEs": "La comprensión mutua es la base de la convivencia pacífica.",
+          "exampleAr": "الفهم المتبادل هو أساس التعايش السلمي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La comprensión mutua es la base de la convivencia pacífica.",
+          "ar": "الفهم المتبادل هو أساس التعايش السلمي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ilusión",
+      "normalized": "ilusión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ilusones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ilusiˈon/",
+      "pronunciationHintAr": "يلوسيون",
+      "internalRank": 51,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أمل حماسي / وهم خيالي",
+          "meaningArEg": "عشم وأمل وفرحة أو وهم",
+          "glossEs": null,
+          "exampleEs": "Emprende este nuevo proyecto laboral con mucha ilusión.",
+          "exampleAr": "يبدأ مشروعه الوظيفي الجديد بأمل كبير وحماس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Emprende este nuevo proyecto laboral con mucha ilusión.",
+          "ar": "يبدأ مشروعه الوظيفي الجديد بأمل كبير وحماس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "desilusión",
+      "normalized": "desilusión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "desilusones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/desilusiˈon/",
+      "pronunciationHintAr": "ديسيلوسيون",
+      "internalRank": 52,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خيبة أمل وإحباط بعد الترقب",
+          "meaningArEg": "خيبة أمل بعد عشم",
+          "glossEs": null,
+          "exampleEs": "Se llevó una amarga desilusión tras el inesperado rechazo.",
+          "exampleAr": "أصيب بخيبة أمل مريرة عقب الرفض غير المتوقع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se llevó una amarga desilusión tras el inesperado rechazo.",
+          "ar": "أصيب بخيبة أمل مريرة عقب الرفض غير المتوقع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "creencia",
+      "normalized": "creencia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "creencias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kɾeenθˈia/",
+      "pronunciationHintAr": "كريينثيا",
+      "internalRank": 53,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معتقد وإيمان راسخ في القلب",
+          "meaningArEg": "عقيدة وإيمان ثابت",
+          "glossEs": null,
+          "exampleEs": "Respeta las diversas creencias de todas las personas.",
+          "exampleAr": "يحترم المعتقدات المتنوعة لجميع الأفراد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Respeta las diversas creencias de todas las personas.",
+          "ar": "يحترم المعتقدات المتنوعة لجميع الأفراد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "verdad",
+      "normalized": "verdad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "verdades",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/beɾdˈad/",
+      "pronunciationHintAr": "بيرداد",
+      "internalRank": 54,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صدق وحقيقة ثابتة لا تتغير",
+          "meaningArEg": "حقيقة وصدق مية مية",
+          "glossEs": null,
+          "exampleEs": "Decir siempre la verdad genera confianza duradera.",
+          "exampleAr": "قول الصدق دائماً يولد ثقة مستدامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Decir siempre la verdad genera confianza duradera.",
+          "ar": "قول الصدق دائماً يولد ثقة مستدامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mentira",
+      "normalized": "mentira",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "mentiras",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/mentˈiɾa/",
+      "pronunciationHintAr": "مينتيرا",
+      "internalRank": 55,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كذب وافتراء يخالف الواقع",
+          "meaningArEg": "كدب وافتراء وغش",
+          "glossEs": null,
+          "exampleEs": "La mentira tiene las patas muy cortas.",
+          "exampleAr": "حبل الكذب قصير للغاية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La mentira tiene las patas muy cortas.",
+          "ar": "حبل الكذب قصير للغاية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "justicia",
+      "normalized": "justicia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "justicias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xustiθˈia/",
+      "pronunciationHintAr": "خوستيثيا",
+      "internalRank": 56,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عدل وإنصاف وإعطاء كل ذي حق حقه",
+          "meaningArEg": "عدل وحق وإنصاف",
+          "glossEs": null,
+          "exampleEs": "La justicia debe ser igual para todos los ciudadanos.",
+          "exampleAr": "يجب أن يكون العدل متساوياً لجميع المواطنين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La justicia debe ser igual para todos los ciudadanos.",
+          "ar": "يجب أن يكون العدل متساوياً لجميع المواطنين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "injusticia",
+      "normalized": "injusticia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "injusticias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/inxustiθˈia/",
+      "pronunciationHintAr": "ينخوستيثيا",
+      "internalRank": 57,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ظلم وجور وتعد على الحقوق",
+          "meaningArEg": "ظلم وافتراء ع الغلابة",
+          "glossEs": null,
+          "exampleEs": "Luchó incansablemente contra cualquier tipo de injusticia.",
+          "exampleAr": "ناضل بلا كلل ضد أي نوع من أنواع الظلم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Luchó incansablemente contra cualquier tipo de injusticia.",
+          "ar": "ناضل بلا كلل ضد أي نوع من أنواع الظلم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "libertad",
+      "normalized": "libertad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "libertades",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/libeɾtˈad/",
+      "pronunciationHintAr": "ليبيرتاد",
+      "internalRank": 58,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حرية وكرامة في اتخاذ القرار",
+          "meaningArEg": "حرية وكرامة من غير قيود",
+          "glossEs": null,
+          "exampleEs": "La libertad de expresión es un pilar de la democracia.",
+          "exampleAr": "حرية التعبير ركيزة من ركائز الديمقراطية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La libertad de expresión es un pilar de la democracia.",
+          "ar": "حرية التعبير ركيزة من ركائز الديمقراطية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "paz",
+      "normalized": "paz",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "paces",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pˈaθ/",
+      "pronunciationHintAr": "باث",
+      "internalRank": 59,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سلام ووئام وأمن بين الشعوب",
+          "meaningArEg": "سلام وأمان ومحبة",
+          "glossEs": null,
+          "exampleEs": "Deseamos la paz y la concordia para todo el mundo.",
+          "exampleAr": "نتمنى السلام والوئام للعالم أجمع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Deseamos la paz y la concordia para todo el mundo.",
+          "ar": "نتمنى السلام والوئام للعالم أجمع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "guerra",
+      "normalized": "guerra",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "guerras",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/guˈeɾɾa/",
+      "pronunciationHintAr": "جويررا",
+      "internalRank": 60,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حرب ونزاع مسلح مدمر",
+          "meaningArEg": "حرب وخراب ودمار",
+          "glossEs": null,
+          "exampleEs": "La guerra solo deja dolor y destrucción a su paso.",
+          "exampleAr": "لا تخلف الحرب وراءها إلا الألم والدمار.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La guerra solo deja dolor y destrucción a su paso.",
+          "ar": "لا تخلف الحرب وراءها إلا الألم والدمار.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "honor",
+      "normalized": "honor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "honores",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/onˈoɾ/",
+      "pronunciationHintAr": "ونور",
+      "internalRank": 61,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شرف وشهامة وسمعة طيبة",
+          "meaningArEg": "شرف وشهامة وأصل طيب",
+          "glossEs": null,
+          "exampleEs": "Es un gran honor recibir este prestigioso reconocimiento.",
+          "exampleAr": "إنه لشرف عظيم أن أتلقى هذا التكريم المرموق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Es un gran honor recibir este prestigioso reconocimiento.",
+          "ar": "إنه لشرف عظيم أن أتلقى هذا التكريم المرموق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "lealtad",
+      "normalized": "lealtad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "lealtades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/lealtˈad/",
+      "pronunciationHintAr": "ليالتاد",
+      "internalRank": 62,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وفاء وإخلاص للعهد والأصدقاء",
+          "meaningArEg": "وفاء وإخلاص وجدعنة",
+          "glossEs": null,
+          "exampleEs": "Premiaron su lealtad demostrada durante años de servicio.",
+          "exampleAr": "كافأوا وفاءه المشهود خلال سنوات من الخدمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Premiaron su lealtad demostrada durante años de servicio.",
+          "ar": "كافأوا وفاءه المشهود خلال سنوات من الخدمة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "traición",
+      "normalized": "traición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "traicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/tɾaiθiˈon/",
+      "pronunciationHintAr": "ترايثيون",
+      "internalRank": 63,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خيانة وغدر بالثقة الممنوحة",
+          "meaningArEg": "خيانة وغدر بالثقة",
+          "glossEs": null,
+          "exampleEs": "Consideró la traición como una ofensa imperdonable.",
+          "exampleAr": "اعتبر الخيانة إهانة لا تغتفر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Consideró la traición como una ofensa imperdonable.",
+          "ar": "اعتبر الخيانة إهانة لا تغتفر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "respeto",
+      "normalized": "respeto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "respetos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/respˈeto/",
+      "pronunciationHintAr": "ريسبيتو",
+      "internalRank": 64,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "احترام وتقدير لحقوق وكرامة الآخرين",
+          "meaningArEg": "احترام وتقدير للكبير والصغير",
+          "glossEs": null,
+          "exampleEs": "El respeto mutuo es indispensable en el aula.",
+          "exampleAr": "الاحترام المتبادل لا غنى عنه في قاعة الدرس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El respeto mutuo es indispensable en el aula.",
+          "ar": "الاحترام المتبادل لا غنى عنه في قاعة الدرس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tolerancia",
+      "normalized": "tolerancia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tolerancias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/toleɾanθˈia/",
+      "pronunciationHintAr": "توليرانثيا",
+      "internalRank": 65,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسامح وقبول للآخر المختلف",
+          "meaningArEg": "تسامح وقبول للاختلاف",
+          "glossEs": null,
+          "exampleEs": "La tolerancia enriquece la convivencia entre culturas.",
+          "exampleAr": "يثري التسامح التعايش المشترك بين الثقافات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tolerancia enriquece la convivencia entre culturas.",
+          "ar": "يثري التسامح التعايش المشترك بين الثقافات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "solidaridad",
+      "normalized": "solidaridad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "solidaridades",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/solidaɾidˈad/",
+      "pronunciationHintAr": "سوليداريداد",
+      "internalRank": 66,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تضامن وتكاتف مع المنكوبين",
+          "meaningArEg": "جدعنة وتضامن ووقفة راجل",
+          "glossEs": null,
+          "exampleEs": "La solidaridad ciudadana desbordó los centros de ayuda.",
+          "exampleAr": "فاض تضامن المواطنين في مراكز الإغاثة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La solidaridad ciudadana desbordó los centros de ayuda.",
+          "ar": "فاض تضامن المواطنين في مراكز الإغاثة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "generosidad",
+      "normalized": "generosidad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "generosidades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/xeneɾosidˈad/",
+      "pronunciationHintAr": "خينيروسيداد",
+      "internalRank": 67,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كرم وسخاء وجود بالنفس والمال",
+          "meaningArEg": "كرم وسخاوة وجود",
+          "glossEs": null,
+          "exampleEs": "Agradeció la desinteresada generosidad de los voluntarios.",
+          "exampleAr": "شكر الكرم المتجرد للمتطوعين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Agradeció la desinteresada generosidad de los voluntarios.",
+          "ar": "شكر الكرم المتجرد للمتطوعين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "egoísmo",
+      "normalized": "egoísmo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "egoísmos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/egoˈismo/",
+      "pronunciationHintAr": "يجويسمو",
+      "internalRank": 68,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أنانية وحب النفس وحرمان الآخرين",
+          "meaningArEg": "أنانية وحب النفس بس",
+          "glossEs": null,
+          "exampleEs": "El egoísmo impide construir una sociedad solidaria.",
+          "exampleAr": "تمنع الأنانية بناء مجتمع متضامن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El egoísmo impide construir una sociedad solidaria.",
+          "ar": "تمنع الأنانية بناء مجتمع متضامن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "valor",
+      "normalized": "valor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "valores",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/balˈoɾ/",
+      "pronunciationHintAr": "بالور",
+      "internalRank": 69,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شجاعة وبسالة / قيمة الشيء وثمنه",
+          "meaningArEg": "شجاعة وجدعنة أو قيمة وسعر",
+          "glossEs": null,
+          "exampleEs": "Tuvo el valor de denunciar la corrupción públicamente.",
+          "exampleAr": "امتلك الشجاعة للإبلاغ عن الفساد علانية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tuvo el valor de denunciar la corrupción públicamente.",
+          "ar": "امتلك الشجاعة للإبلاغ عن الفساد علانية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cobardía",
+      "normalized": "cobardía",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cobardías",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kobaɾdˈia/",
+      "pronunciationHintAr": "كوبارديا",
+      "internalRank": 70,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جبن وخوف وتراجع عن الواجب",
+          "meaningArEg": "جبن وخوف وهروب",
+          "glossEs": null,
+          "exampleEs": "Huir del peligro fue visto como una muestra de cobardía.",
+          "exampleAr": "اعتُبر الفرار من الخطر دليلاً على الجبن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Huir del peligro fue visto como una muestra de cobardía.",
+          "ar": "اعتُبر الفرار من الخطر دليلاً على الجبن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dignidad",
+      "normalized": "dignidad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "dignidades",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/dignidˈad/",
+      "pronunciationHintAr": "ديجنيداد",
+      "internalRank": 71,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عزة نفس وكرامة إنسانية لا تمس",
+          "meaningArEg": "كرامة وعزة نفس ومبدأ",
+          "glossEs": null,
+          "exampleEs": "Mantuvo su dignidad intacta en los momentos más duros.",
+          "exampleAr": "حافظ على كرامته سليمة في أحلك اللحظات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mantuvo su dignidad intacta en los momentos más duros.",
+          "ar": "حافظ على كرامته سليمة في أحلك اللحظات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "responsabilidad",
+      "normalized": "responsabilidad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "responsabilidades",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/responsabilidˈad/",
+      "pronunciationHintAr": "ريسبونسابيليداد",
+      "internalRank": 72,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مسؤولية وتحمل تبعات العمل والقرار",
+          "meaningArEg": "مسؤولية وشيل شيلة بحق",
+          "glossEs": null,
+          "exampleEs": "Asumió la plena responsabilidad del error cometido.",
+          "exampleAr": "تحمل المسؤولية الكاملة عن الخطأ المرتكب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Asumió la plena responsabilidad del error cometido.",
+          "ar": "تحمل المسؤولية الكاملة عن الخطأ المرتكب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "economía",
+      "normalized": "economía",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "economías",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ekonomˈia/",
+      "pronunciationHintAr": "يكونوميا",
+      "internalRank": 73,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اقتصاد الدولة وإدارة الموارد المالية",
+          "meaningArEg": "اقتصاد البلد وحركة الفلوس",
+          "glossEs": null,
+          "exampleEs": "La economía circular busca reducir los residuos al mínimo.",
+          "exampleAr": "يسعى الاقتصاد الدائري إلى تقليل النفايات لأدنى حد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La economía circular busca reducir los residuos al mínimo.",
+          "ar": "يسعى الاقتصاد الدائري إلى تقليل النفايات لأدنى حد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "comercio",
+      "normalized": "comercio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "comercios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/komeɾθˈio/",
+      "pronunciationHintAr": "كوميرثيو",
+      "internalRank": 74,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تجارة وتبادل السلع والخدمات",
+          "meaningArEg": "تجارة وشرا وبيع بضايع",
+          "glossEs": null,
+          "exampleEs": "El comercio exterior fomenta las exportaciones nacionales.",
+          "exampleAr": "تعزز التجارة الخارجية الصادرات الوطنية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El comercio exterior fomenta las exportaciones nacionales.",
+          "ar": "تعزز التجارة الخارجية الصادرات الوطنية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "negocio",
+      "normalized": "negocio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "negocios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/negoθˈio/",
+      "pronunciationHintAr": "نيجوثيو",
+      "internalRank": 75,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مشروع تجاري أو صفقة رابحة / عمل",
+          "meaningArEg": "بيزنس وصفقة وشغل",
+          "glossEs": null,
+          "exampleEs": "Abrió un próspero negocio de hostelería en el centro.",
+          "exampleAr": "افتتح مشروعاً فندقياً مزدهراً في وسط المدينة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Abrió un próspero negocio de hostelería en el centro.",
+          "ar": "افتتح مشروعاً فندقياً مزدهراً في وسط المدينة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tarjeta",
+      "normalized": "tarjeta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tarjetas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/taɾxˈeta/",
+      "pronunciationHintAr": "تارخيتا",
+      "internalRank": 76,
+      "tags": [
+        "domain:shopping",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بطاقة بنكية بلاستيكية للدفع الإلكتروني",
+          "meaningArEg": "فيزا وكارت بنك للدفع",
+          "glossEs": null,
+          "exampleEs": "Pagó la compra acercando la tarjeta al datáfono.",
+          "exampleAr": "دفع ثمن المشتريات بتقريب البطاقة من جهاز الدفع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pagó la compra acercando la tarjeta al datáfono.",
+          "ar": "دفع ثمن المشتريات بتقريب البطاقة من جهاز الدفع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "coste",
+      "normalized": "coste",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "costes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kˈoste/",
+      "pronunciationHintAr": "كوستي",
+      "internalRank": 77,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تكلفة إنفاق المشروع أو السلعة",
+          "meaningArEg": "تكلفة ومصاريف إنتاج",
+          "glossEs": null,
+          "exampleEs": "Calcularon el coste total de las obras de reforma.",
+          "exampleAr": "حسبوا التكلفة الإجمالية لأعمال الترميم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Calcularon el coste total de las obras de reforma.",
+          "ar": "حسبوا التكلفة الإجمالية لأعمال الترميم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "recibo",
+      "normalized": "recibo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "recibos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/reθˈibo/",
+      "pronunciationHintAr": "ريثيبو",
+      "internalRank": 78,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إيصال سداد أو استلام مستحقات مالية",
+          "meaningArEg": "وصل سداد ودفع فلوس",
+          "glossEs": null,
+          "exampleEs": "Conservó el recibo de la compra por si debía cambiarlo.",
+          "exampleAr": "احتفظ بإيصال الشراء تحسباً لاستبداله.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Conservó el recibo de la compra por si debía cambiarlo.",
+          "ar": "احتفظ بإيصال الشراء تحسباً لاستبداله.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "beneficio",
+      "normalized": "beneficio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "beneficios",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/benefiθˈio/",
+      "pronunciationHintAr": "بينيفيثيو",
+      "internalRank": 79,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ربح وعائد مالي مجز / فائدة",
+          "meaningArEg": "مكسب وربح صافي وفائدة",
+          "glossEs": null,
+          "exampleEs": "La compañía obtuvo un beneficio récord en el último trimestre.",
+          "exampleAr": "حققت الشركة أرباحاً قياسية في الربع الأخير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La compañía obtuvo un beneficio récord en el último trimestre.",
+          "ar": "حققت الشركة أرباحاً قياسية في الربع الأخير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pérdida",
+      "normalized": "pérdida",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "pérdidas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pˈeɾdida/",
+      "pronunciationHintAr": "بيرديدا",
+      "internalRank": 80,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خسارة مالية أو فقدان شيء ثمين",
+          "meaningArEg": "خسارة فلوس وفقدان حاجة",
+          "glossEs": null,
+          "exampleEs": "El negocio cerró el ejercicio sin ninguna pérdida.",
+          "exampleAr": "أغلق المشروع سنته المالية دون أي خسارة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El negocio cerró el ejercicio sin ninguna pérdida.",
+          "ar": "أغلق المشروع سنته المالية دون أي خسارة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ingreso",
+      "normalized": "ingreso",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ingresos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ingɾˈeso/",
+      "pronunciationHintAr": "ينجريسو",
+      "internalRank": 81,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دخل مالي وإيراد مكتسب من العمل",
+          "meaningArEg": "دخل وفلوس داخلة للبيت",
+          "glossEs": null,
+          "exampleEs": "Los ingresos de la familia aumentaron gracias al nuevo empleo.",
+          "exampleAr": "زاد دخل الأسرة بفضل الوظيفة الجديدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los ingresos de la familia aumentaron gracias al nuevo empleo.",
+          "ar": "زاد دخل الأسرة بفضل الوظيفة الجديدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "gasto",
+      "normalized": "gasto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "gastos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/gˈasto/",
+      "pronunciationHintAr": "جاستو",
+      "internalRank": 82,
+      "tags": [
+        "domain:shopping",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مصروف وإنفاق مالي لتلبية الحاجات",
+          "meaningArEg": "مصاريف وخرج فلوس",
+          "glossEs": null,
+          "exampleEs": "Lleva un control estricto de los gastos del hogar.",
+          "exampleAr": "يضبط نفقات المنزل بصرامة تامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lleva un control estricto de los gastos del hogar.",
+          "ar": "يضبط نفقات المنزل بصرامة تامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ahorro",
+      "normalized": "ahorro",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ahorros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aˈoɾɾo/",
+      "pronunciationHintAr": "اوررو",
+      "internalRank": 83,
+      "tags": [
+        "domain:shopping",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ادخار وتوفير للمال للمستقبل",
+          "meaningArEg": "تحويش وفلوس متوفرة للزمن",
+          "glossEs": null,
+          "exampleEs": "Los ahorros de toda la vida le dieron tranquilidad.",
+          "exampleAr": "منحته مدخرات العمر كله طمأنينة بال.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los ahorros de toda la vida le dieron tranquilidad.",
+          "ar": "منحته مدخرات العمر كله طمأنينة بال.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "inversión",
+      "normalized": "inversión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "inversones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/inbeɾsiˈon/",
+      "pronunciationHintAr": "ينبيرسيون",
+      "internalRank": 84,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "استثمار مالي لإنماء رؤوس الأموال",
+          "meaningArEg": "استثمار فلوس ومشاريع",
+          "glossEs": null,
+          "exampleEs": "Hizo una inversión rentable en energías renovables.",
+          "exampleAr": "قام باستثمار مربح في الطاقات المتجددة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hizo una inversión rentable en energías renovables.",
+          "ar": "قام باستثمار مربح في الطاقات المتجددة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "capital",
+      "normalized": "capital",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "capitales",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kapitˈal/",
+      "pronunciationHintAr": "كابيتال",
+      "internalRank": 85,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رأس مال مخصص لتمويل المشاريع",
+          "meaningArEg": "رأس مال بيزنس ومشاريع",
+          "glossEs": null,
+          "exampleEs": "Reunieron el capital necesario para constituir la sociedad.",
+          "exampleAr": "جمعوا رأس المال اللازم لتأسيس الشركة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Reunieron el capital necesario para constituir la sociedad.",
+          "ar": "جمعوا رأس المال اللازم لتأسيس الشركة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "deuda",
+      "normalized": "deuda",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "deudas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/deˈuda/",
+      "pronunciationHintAr": "ديودا",
+      "internalRank": 86,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دَين مالي مستحق السداد للغير",
+          "meaningArEg": "دين وسلفية لازم تتسدد",
+          "glossEs": null,
+          "exampleEs": "Saldó su última deuda con el banco antes de plazo.",
+          "exampleAr": "سدد آخر دين عليه للبنك قبل الموعد المحدد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Saldó su última deuda con el banco antes de plazo.",
+          "ar": "سدد آخر دين عليه للبنك قبل الموعد المحدد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "préstamo",
+      "normalized": "préstamo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "préstamos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾˈestamo/",
+      "pronunciationHintAr": "بريستامو",
+      "internalRank": 87,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قرض مالي يمنحه المصرف بفائدة",
+          "meaningArEg": "قرض وسلفة من البنك",
+          "glossEs": null,
+          "exampleEs": "Solicitó un préstamo hipotecario para comprar el piso.",
+          "exampleAr": "طلب قرضاً عقارياً لشراء الشقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Solicitó un préstamo hipotecario para comprar el piso.",
+          "ar": "طلب قرضاً عقارياً لشراء الشقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "interés",
+      "normalized": "interés",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "interés",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/inteɾˈes/",
+      "pronunciationHintAr": "ينتيريس",
+      "internalRank": 88,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فائدة بنكية / اهتمام وشغف بأمر",
+          "meaningArEg": "فائدة بنك أو اهتمام بحاجة",
+          "glossEs": null,
+          "exampleEs": "El tipo de interés oficial se mantuvo estable.",
+          "exampleAr": "استقر سعر الفائدة الرسمي ثابتاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El tipo de interés oficial se mantuvo estable.",
+          "ar": "استقر سعر الفائدة الرسمي ثابتاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "impuesto",
+      "normalized": "impuesto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "impuestos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/impuˈesto/",
+      "pronunciationHintAr": "يمبويستو",
+      "internalRank": 89,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ضريبة مالية مفروضة لدعم الخدمات العامة",
+          "meaningArEg": "ضرايب حكومية للمرافق",
+          "glossEs": null,
+          "exampleEs": "Pagar los impuestos a tiempo es un deber cívico.",
+          "exampleAr": "سداد الضرائب في موعدها واجب مدني.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pagar los impuestos a tiempo es un deber cívico.",
+          "ar": "سداد الضرائب في موعدها واجب مدني.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sueldo",
+      "normalized": "sueldo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "sueldos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/suˈeldo/",
+      "pronunciationHintAr": "سويلدو",
+      "internalRank": 90,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "راتب شهري يتقاضاه الموظف نظير عمله",
+          "meaningArEg": "مرتب شهري للموظف",
+          "glossEs": null,
+          "exampleEs": "Cobró el sueldo a final de mes puntualmente.",
+          "exampleAr": "تقاضى راتبه في نهاية الشهر بانتظام.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Cobró el sueldo a final de mes puntualmente.",
+          "ar": "تقاضى راتبه في نهاية الشهر بانتظام.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "nómina",
+      "normalized": "nómina",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "nóminas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/nˈomina/",
+      "pronunciationHintAr": "نومينا",
+      "internalRank": 91,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كشف راتب شهري يوضح الاستحقاقات والخصم",
+          "meaningArEg": "مفردات مرتب وكشف الحساب",
+          "glossEs": null,
+          "exampleEs": "Recibió la hoja de la nómina por correo electrónico.",
+          "exampleAr": "تلقى كشف الراتب عبر البريد الإلكتروني.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Recibió la hoja de la nómina por correo electrónico.",
+          "ar": "تلقى كشف الراتب عبر البريد الإلكتروني.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "presupuesto",
+      "normalized": "presupuesto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "presupuestos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾesupuˈesto/",
+      "pronunciationHintAr": "بريسوبويستو",
+      "internalRank": 92,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ميزانية مالية تقديرية لنفقات المشروع",
+          "meaningArEg": "ميزانية وتكلفة تقديرية",
+          "glossEs": null,
+          "exampleEs": "Elaboraron el presupuesto anual antes de fin de año.",
+          "exampleAr": "أعدوا الميزانية السنوية قبل نهاية العام.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Elaboraron el presupuesto anual antes de fin de año.",
+          "ar": "أعدوا الميزانية السنوية قبل نهاية العام.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "computadora",
+      "normalized": "computadora",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "computadoras",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/komputadˈoɾa/",
+      "pronunciationHintAr": "كومبوتادورا",
+      "internalRank": 93,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حاسوب آلي في أمريكا اللاتينية / كمبيوتر",
+          "meaningArEg": "كمبيوتر ولاب توب",
+          "glossEs": null,
+          "exampleEs": "Encendió la computadora para redactar el informe final.",
+          "exampleAr": "شغّل الحاسوب لصياغة التقرير الختامي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Encendió la computadora para redactar el informe final.",
+          "ar": "شغّل الحاسوب لصياغة التقرير الختامي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pantalla",
+      "normalized": "pantalla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "pantallas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pantˈaʎla/",
+      "pronunciationHintAr": "بانتاليلا",
+      "internalRank": 94,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شاشة عرض مرئية للهاتف أو الحاسوب",
+          "meaningArEg": "شاشة عرض للكمبيوتر أو التلفزيون",
+          "glossEs": null,
+          "exampleEs": "La pantalla táctil responde con gran rapidez al toque.",
+          "exampleAr": "تستجيب الشاشة اللمسية بسرعة كبيرة للمس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La pantalla táctil responde con gran rapidez al toque.",
+          "ar": "تستجيب الشاشة اللمسية بسرعة كبيرة للمس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "teclado",
+      "normalized": "teclado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "teclados",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/teklˈado/",
+      "pronunciationHintAr": "تيكلادو",
+      "internalRank": 95,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لوحة مفاتيح للكتابة وإدخال البيانات",
+          "meaningArEg": "كيبورد ولوحة زراير كتابة",
+          "glossEs": null,
+          "exampleEs": "Escribe a gran velocidad sin mirar las teclas del teclado.",
+          "exampleAr": "يكتب بسرعة فائقة دون النظر إلى أزرار لوحة المفاتيح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Escribe a gran velocidad sin mirar las teclas del teclado.",
+          "ar": "يكتب بسرعة فائقة دون النظر إلى أزرار لوحة المفاتيح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "portátil",
+      "normalized": "portátil",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "portátiles",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/poɾtˈatil/",
+      "pronunciationHintAr": "بورتاتيل",
+      "internalRank": 96,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حاسوب محمول خفيف يمكن نقله بسهولة",
+          "meaningArEg": "لاب توب محمول للشغل والسفر",
+          "glossEs": null,
+          "exampleEs": "Lleva su portátil en la mochila a la biblioteca.",
+          "exampleAr": "يحمل حاسوبه المحمول في حقيبة الظهر إلى المكتبة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lleva su portátil en la mochila a la biblioteca.",
+          "ar": "يحمل حاسوبه المحمول في حقيبة الظهر إلى المكتبة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mensaje",
+      "normalized": "mensaje",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "mensajes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/mensˈaxe/",
+      "pronunciationHintAr": "مينساخي",
+      "internalRank": 97,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رسالة نصية أو صوتية للتواصل السريع",
+          "meaningArEg": "رسالة نصية ومسج في الشات",
+          "glossEs": null,
+          "exampleEs": "Envió un mensaje de felicitación por el aniversario.",
+          "exampleAr": "أرسل رسالة تهنئة بمناسبة الذكرى السنوية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Envió un mensaje de felicitación por el aniversario.",
+          "ar": "أرسل رسالة تهنئة بمناسبة الذكرى السنوية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "programa",
+      "normalized": "programa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "programas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pɾogɾˈama/",
+      "pronunciationHintAr": "بروجراما",
+      "internalRank": 98,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "برنامج حاسوبي لمعالجة المهام / جدول",
+          "meaningArEg": "برنامج كمبيوتر أو جدول مواعيد",
+          "glossEs": null,
+          "exampleEs": "Instaló un programa antivirus para proteger los archivos.",
+          "exampleAr": "ثبت برنامج مكافحة فيروسات لحماية الملفات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Instaló un programa antivirus para proteger los archivos.",
+          "ar": "ثبت برنامج مكافحة فيروسات لحماية الملفات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aplicación",
+      "normalized": "aplicación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aplicacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aplikaθiˈon/",
+      "pronunciationHintAr": "ابليكاثيون",
+      "internalRank": 99,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تطبيق هاتفي ذكي يسهل إنجاز المعاملات / أبليكيشن",
+          "meaningArEg": "أبليكيشن تطبيق ع الموبايل",
+          "glossEs": null,
+          "exampleEs": "Usa una aplicación móvil para aprender vocabulario español.",
+          "exampleAr": "يستخدم تطبيقاً جوالاً لتعلم مفردات الإسبانية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Usa una aplicación móvil para aprender vocabulario español.",
+          "ar": "يستخدم تطبيقاً جوالاً لتعلم مفردات الإسبانية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "archivo",
+      "normalized": "archivo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "archivos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aɾkˈibo/",
+      "pronunciationHintAr": "اركيبو",
+      "internalRank": 100,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ملف بيانات رقمي أو ورقي محفوظ",
+          "meaningArEg": "ملف فايل ع الكمبيوتر أو ورقي",
+          "glossEs": null,
+          "exampleEs": "Adjuntó el archivo en formato PDF al mensaje.",
+          "exampleAr": "أرفق الملف بصيغة بي دي إف بالرسالة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Adjuntó el archivo en formato PDF al mensaje.",
+          "ar": "أرفق الملف بصيغة بي دي إف بالرسالة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "carpeta",
+      "normalized": "carpeta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "carpetas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaɾpˈeta/",
+      "pronunciationHintAr": "كاربيتا",
+      "internalRank": 101,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مجلد لتنظيم الملفات في الحاسوب أو المكتب",
+          "meaningArEg": "فولدر لحفظ الورق أو الفايلات",
+          "glossEs": null,
+          "exampleEs": "Organizó los documentos en una carpeta con pestañas.",
+          "exampleAr": "نظم المستندات في مجلد مقسم بفواصل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Organizó los documentos en una carpeta con pestañas.",
+          "ar": "نظم المستندات في مجلد مقسم بفواصل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "disco",
+      "normalized": "disco",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "discos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dˈisko/",
+      "pronunciationHintAr": "ديسكو",
+      "internalRank": 102,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قرص تخزين صلب لحفظ البيانات / أسطوانة",
+          "meaningArEg": "هارد ديسك أو أسطوانة مزيكا",
+          "glossEs": null,
+          "exampleEs": "El disco duro externo contiene copias de seguridad.",
+          "exampleAr": "يحتوي القرص الصلب الخارجي على نسخ احتياطية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El disco duro externo contiene copias de seguridad.",
+          "ar": "يحتوي القرص الصلب الخارجي على نسخ احتياطية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "impresora",
+      "normalized": "impresora",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "impresoras",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/impɾesˈoɾa/",
+      "pronunciationHintAr": "يمبريسورا",
+      "internalRank": 103,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طابعة ورقية لطباعة المستندات والصور",
+          "meaningArEg": "برنتر طابعة ورق كمبيوتر",
+          "glossEs": null,
+          "exampleEs": "La impresora se quedó sin tinta negra a media página.",
+          "exampleAr": "نفد الحبر الأسود من الطابعة في منتصف الصفحة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La impresora se quedó sin tinta negra a media página.",
+          "ar": "نفد الحبر الأسود من الطابعة في منتصف الصفحة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "altavoz",
+      "normalized": "altavoz",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "altavoces",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/altabˈoθ/",
+      "pronunciationHintAr": "التابوث",
+      "internalRank": 104,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مكبر صوت لبث الموسيقى والأصوات بوضوح",
+          "meaningArEg": "سماعة صب سبيكر للصوت",
+          "glossEs": null,
+          "exampleEs": "Conectó el altavoz inalámbrico por tecnología bluetooth.",
+          "exampleAr": "وصل مكبر الصوت اللاسلكي بتقنية البلوتوث.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Conectó el altavoz inalámbrico por tecnología bluetooth.",
+          "ar": "وصل مكبر الصوت اللاسلكي بتقنية البلوتوث.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "auricular",
+      "normalized": "auricular",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "auriculares",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/auɾikulˈaɾ/",
+      "pronunciationHintAr": "اوريكولار",
+      "internalRank": 105,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سماعة أذن للاستماع الشخصي دون إزعاج",
+          "meaningArEg": "سماعة ودان هاند فري",
+          "glossEs": null,
+          "exampleEs": "Se puso los auriculares para escuchar el podcast de español.",
+          "exampleAr": "وضع سماعات الأذن ليستمع إلى البودكاست الإسباني.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se puso los auriculares para escuchar el podcast de español.",
+          "ar": "وضع سماعات الأذن ليستمع إلى البودكاست الإسباني.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "batería",
+      "normalized": "batería",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "baterías",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/bateɾˈia/",
+      "pronunciationHintAr": "باتيريا",
+      "internalRank": 106,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بطارية قابلة للشحن تمد الأجهزة بالطاقة",
+          "meaningArEg": "بطارية شحن للموبايل أو العربية",
+          "glossEs": null,
+          "exampleEs": "La batería del teléfono dura todo el día sin recargar.",
+          "exampleAr": "تدوم بطارية الهاتف طوال اليوم دون إعادة شحن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La batería del teléfono dura todo el día sin recargar.",
+          "ar": "تدوم بطارية الهاتف طوال اليوم دون إعادة شحن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cargador",
+      "normalized": "cargador",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cargadores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kaɾgadˈoɾ/",
+      "pronunciationHintAr": "كارجادور",
+      "internalRank": 107,
+      "tags": [
+        "domain:housing",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شاحن كهربائي لإعادة شحن الأجهزة المحمولة",
+          "meaningArEg": "شاحن موبايل كهربا للبطارية",
+          "glossEs": null,
+          "exampleEs": "Olvidó el cargador del móvil en la mesilla del hotel.",
+          "exampleAr": "نسي شاحن الهاتف على منضدة الفندق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Olvidó el cargador del móvil en la mesilla del hotel.",
+          "ar": "نسي شاحن الهاتف على منضدة الفندق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cable",
+      "normalized": "cable",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cables",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kˈable/",
+      "pronunciationHintAr": "كابلي",
+      "internalRank": 108,
+      "tags": [
+        "domain:housing",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سلك كهربائي لنقل التيار أو توصيل البيانات",
+          "meaningArEg": "كابل وسلك توصيل كهربا وداتا",
+          "glossEs": null,
+          "exampleEs": "Conectó el cable de red para tener más velocidad.",
+          "exampleAr": "وصل كابل الشبكة للحصول على سرعة أعلى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Conectó el cable de red para tener más velocidad.",
+          "ar": "وصل كابل الشبكة للحصول على سرعة أعلى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "enlace",
+      "normalized": "enlace",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "enlaces",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/enlˈaθe/",
+      "pronunciationHintAr": "ينلاثي",
+      "internalRank": 109,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رابط إلكتروني ينقل المستخدم إلى الصفحة المطلوبة",
+          "meaningArEg": "لينك ورابط موقع ع النت",
+          "glossEs": null,
+          "exampleEs": "Pinchó en el enlace para leer el artículo completo.",
+          "exampleAr": "نقر على الرابط لقراءة المقال كاملاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pinchó en el enlace para leer el artículo completo.",
+          "ar": "نقر على الرابط لقراءة المقال كاملاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sitio",
+      "normalized": "sitio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "sitios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/sitˈio/",
+      "pronunciationHintAr": "سيتيو",
+      "internalRank": 110,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موقع إلكتروني على الشبكة / مكان وموضع",
+          "meaningArEg": "ويب سايت موقع نت أو مكان",
+          "glossEs": null,
+          "exampleEs": "Este sitio web ofrece recursos gratuitos para estudiantes.",
+          "exampleAr": "يقدم هذا الموقع الإلكتروني موارد مجانية للطلاب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Este sitio web ofrece recursos gratuitos para estudiantes.",
+          "ar": "يقدم هذا الموقع الإلكتروني موارد مجانية للطلاب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "servidor",
+      "normalized": "servidor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "servidores",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/seɾbidˈoɾ/",
+      "pronunciationHintAr": "سيربيدور",
+      "internalRank": 111,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خادم حاسوبي مركزي يدير البيانات والشبكات",
+          "meaningArEg": "سيرفر كمبيوتر لخدمة المواقع",
+          "glossEs": null,
+          "exampleEs": "El servidor procesa miles de peticiones simultáneas.",
+          "exampleAr": "يعالج الخادم آلاف الطلبات المتزامنة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El servidor procesa miles de peticiones simultáneas.",
+          "ar": "يعالج الخادم آلاف الطلبات المتزامنة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "clave",
+      "normalized": "clave",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "claves",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/klˈabe/",
+      "pronunciationHintAr": "كلابي",
+      "internalRank": 112,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كلمة سر أو مفتاح أمان لحماية الحسابات",
+          "meaningArEg": "كلمة سر وباسورد حساب",
+          "glossEs": null,
+          "exampleEs": "No compartas tu clave secreta con nadie por seguridad.",
+          "exampleAr": "لا تشارك كلمتك السرية مع أحد حفاظاً على الأمان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "No compartas tu clave secreta con nadie por seguridad.",
+          "ar": "لا تشارك كلمتك السرية مع أحد حفاظاً على الأمان.",
+          "arEg": null
+        }
+      ]
+    }
+  ]
+}

@@ -247,7 +247,7 @@
                   ],
                   "status": "authored",
                   "levelCode": "A1",
-                  "filePath": "content/drafts/a1/lesson-a1-origen-de-donde-eres.json",
+                  "filePath": "content/drafts\\a1\\lesson-a1-origen-de-donde-eres.json",
                   "vocabPack": "a1-u1-origen",
                   "requires": []
                 },
@@ -266,7 +266,7 @@
                   "status": "authored",
                   "vocabPack": "a1-u1-origen",
                   "levelCode": "A1",
-                  "filePath": "content/drafts/a1/lesson-a1-saludos-formalidad.json",
+                  "filePath": "content/drafts\\a1\\lesson-a1-saludos-formalidad.json",
                   "requires": [
                     "a1-origen-de-donde-eres"
                   ]
@@ -285,7 +285,7 @@
                   ],
                   "status": "authored",
                   "levelCode": "A1",
-                  "filePath": "content/drafts/a1/lesson-a1-presentar-a-otro.json",
+                  "filePath": "content/drafts\\a1\\lesson-a1-presentar-a-otro.json",
                   "vocabPack": "a1-u1-origen",
                   "requires": [
                     "a1-saludos-formalidad"
@@ -306,7 +306,7 @@
                   "status": "authored",
                   "vocabPack": "a1-u1-origen",
                   "levelCode": "A1",
-                  "filePath": "content/drafts/a1/lesson-a1-nacionalidades.json",
+                  "filePath": "content/drafts\\a1\\lesson-a1-nacionalidades.json",
                   "requires": [
                     "a1-presentar-a-otro"
                   ]
@@ -1211,7 +1211,7 @@
                   "titleAr": "الوصول والجمارك",
                   "objectiveAr": "أن يجيب المتعلم عن أسئلة الجمارك القصيرة (الغرض من الزيارة، مدة الإقامة، ما في الحقيبة) بأجوبة صحيحة موجزة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u1-arrival-customs.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u1-arrival-customs.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u1-problem-luggage"
@@ -1230,7 +1230,7 @@
                   "titleAr": "الأمن والصعود والتأخير",
                   "objectiveAr": "أن يفهم المتعلم إعلان صعود أو تأخير، ويطلب توضيحًا عند عدم الفهم، ويعتذر بلباقة عند المرور في طابور.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u1-boarding-delay.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u1-boarding-delay.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u1-checkin"
@@ -1249,7 +1249,7 @@
                   "titleAr": "تسجيل الوصول في المطار",
                   "objectiveAr": "أن يسجّل المتعلم وصوله في مكتب شركة الطيران، ويعطي جواز سفره وحقيبته، ويفهم سؤال المقعد والبوابة بأجوبة قصيرة صحيحة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u1-checkin.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u1-checkin.json",
                   "vocabPack": null,
                   "requires": [],
                   "skills": [
@@ -1266,7 +1266,7 @@
                   "titleAr": "مشكلة أمتعة أو تذكرة",
                   "objectiveAr": "أن يشرح المتعلم مشكلة (حقيبة مفقودة أو خطأ في الاسم) بلباقة، ويطلب حلًّا بديلًا، ويفهم مواعيد المتابعة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u1-problem-luggage.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u1-problem-luggage.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u1-boarding-delay"
@@ -1294,7 +1294,7 @@
                   "titleAr": "حجز غرفة",
                   "objectiveAr": "أن يحجز المتعلم غرفة عبر الهاتف أو الإنترنت: يحدد التواريخ وعدد الليالي ونوع الغرفة، ويسأل عن السعر والإفطار.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u2-booking.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u2-booking.json",
                   "vocabPack": null,
                   "requires": [],
                   "skills": [
@@ -1311,7 +1311,7 @@
                   "titleAr": "تسجيل الدخول إلى الفندق",
                   "objectiveAr": "أن يقدّم المتعلم حجزه وجواز سفره عند الاستقبال، ويسأل عن الإفطار والمفتاح والواي فاي.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u2-checkin.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u2-checkin.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u2-booking"
@@ -1330,7 +1330,7 @@
                   "titleAr": "المغادرة والفاتورة",
                   "objectiveAr": "أن يسأل المتعلم عن الفاتورة ووقت المغادرة وطريقة الدفع، ويتعامل مع بند غامض في الفاتورة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u2-checkout.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u2-checkout.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u2-room-problem"
@@ -1349,7 +1349,7 @@
                   "titleAr": "مشكلة في الغرفة",
                   "objectiveAr": "أن يشرح المتعلم مشكلة في الغرفة (لا يعمل المكيف، ضجيج، ماء بارد) ويطلب حلًّا أو غرفة بديلة بلباقة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u2-room-problem.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u2-room-problem.json",
                   "vocabPack": null,
                   "requires": [
                     "tr-u2-checkin"
@@ -1377,7 +1377,7 @@
                   "titleAr": "الحساسية والنظام الغذائي",
                   "objectiveAr": "أن يعبّر المتعلم عن حساسية غذائية بوضوح، ويسأل هل يحتوي الطبق على مكوّن معيّن، ويطلب بديلًا خاليًا من الغلوتين.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u3-allergy-diet.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u3-allergy-diet.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1396,7 +1396,7 @@
                   "titleAr": "طاولة لشخصين",
                   "objectiveAr": "أن يطلب المتعلم طاولة في مطعم، ويحدد عدد الأشخاص، ويفهم سؤال النادل عن العدد وأي الأماكن متاح.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u3-getting-table.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u3-getting-table.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1413,7 +1413,7 @@
                   "titleAr": "الطلب من القائمة",
                   "objectiveAr": "أن يطلب المتعلم القائمة، ويسمّي طبقًا ومشروبًا، ويستخدم صيغة مهذّبة للطلب، ويفهم سؤال النادل عن الطبق الأول.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u3-ordering.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u3-ordering.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1432,7 +1432,7 @@
                   "titleAr": "الفاتورة والدفع",
                   "objectiveAr": "أن يطلب المتعلم الحساب، ويسأل عن طريقة الدفع والبقشيش، ويفهم سؤال النادل عن الدفع منفصلًا أو مجتمعًا.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u3-paying.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u3-paying.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1460,7 +1460,7 @@
                   "titleAr": "أين ...؟ أسأل عن مكان",
                   "objectiveAr": "أن يسأل المتعلم عن مكان في الشارع بصيغة مهذّبة، ويفهم جوابًا قصيرًا فيه يمين أو يسار أو «على طول»، ويسأل عن خريطة.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u4-asking-directions.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u4-asking-directions.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1477,7 +1477,7 @@
                   "titleAr": "المترو والباص",
                   "objectiveAr": "أن يسأل المتعلم عن الخط المناسب، ويشتري تذكرة، ويفهم تعليمة التحويل بين خطين، ويعرف أين الموقف.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u4-bus-metro.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u4-bus-metro.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1496,7 +1496,7 @@
                   "titleAr": "التاكسي",
                   "objectiveAr": "أن يطلب المتعلم تاكسيًا ويحدد الوجهة، ويسأل عن السعر التقريبي، ويطلب التوقف، ويسأل عن طريقة الدفع.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u4-taxi.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u4-taxi.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1515,7 +1515,7 @@
                   "titleAr": "امشِ واستدر واعبر",
                   "objectiveAr": "أن يتبع المتعلم تعليمات سير متتابعة (استدر، اعبر، عند الناصية، عند الإشارة)، ويسأل هل المكان قريب أو بعيد وكم دقيقة مشيًا.",
                   "status": "authored",
-                  "filePath": "content/drafts/travel/lesson-tr-u4-walking-route.json",
+                  "filePath": "content/drafts\\travel\\lesson-tr-u4-walking-route.json",
                   "vocabPack": null,
                   "skills": [
                     "listening",
@@ -1583,7 +1583,7 @@
                   "titleAr": "التعليق والتحويل بلباقة",
                   "objectiveAr": "أن يطلب المتعلم من العميل الانتظار أو يحوّله إلى زميل، مع شرح السبب وتقدير الوقت، والعودة بالشكر والملخص.",
                   "status": "authored",
-                  "filePath": "content/drafts/callcenter/lesson-cc-u1-hold-transfer.json",
+                  "filePath": "content/drafts\\callcenter\\lesson-cc-u1-hold-transfer.json",
                   "vocabPack": null,
                   "requires": [
                     "cc-u1-verification"
@@ -1602,7 +1602,7 @@
                   "titleAr": "افتتاح المكالمة بنبرة مهنية",
                   "objectiveAr": "أن يفتتح المتعلم المكالمة بتحية مؤسسية واضحة، ويقدّم اسمه وشركته، ويسأل عن سبب الاتصال بصيغة مهنية، ويتجنب الصيغ الآمرة.",
                   "status": "authored",
-                  "filePath": "content/drafts/callcenter/lesson-cc-u1-opening.json",
+                  "filePath": "content/drafts\\callcenter\\lesson-cc-u1-opening.json",
                   "vocabPack": null,
                   "requires": [],
                   "skills": [
@@ -1619,7 +1619,7 @@
                   "titleAr": "محاكاة مكالمة كاملة",
                   "objectiveAr": "أن يدير المتعلم مكالمة شكوى كاملة: افتتاح، تحقق، تشخيص، حل أو بديل، إغلاق — بلا كشف بيانات حساسة وبلا وعود غير قابلة للتنفيذ.",
                   "status": "authored",
-                  "filePath": "content/drafts/callcenter/lesson-cc-u1-roleplay.json",
+                  "filePath": "content/drafts\\callcenter\\lesson-cc-u1-roleplay.json",
                   "vocabPack": null,
                   "requires": [
                     "cc-u1-hold-transfer"
@@ -1638,7 +1638,7 @@
                   "titleAr": "التحقق من الهوية بلا كشف بيانات",
                   "objectiveAr": "أن يطلب المتعلم بيانات تحقّق جزئية (رقم الطلب، بريد مسجَّل، أربعة أرقام أخيرة) بلا طلب كلمة مرور كاملة، وأن يتعامل مع بيانات ناقصة بلا افتراض.",
                   "status": "authored",
-                  "filePath": "content/drafts/callcenter/lesson-cc-u1-verification.json",
+                  "filePath": "content/drafts\\callcenter\\lesson-cc-u1-verification.json",
                   "vocabPack": null,
                   "requires": [
                     "cc-u1-opening"

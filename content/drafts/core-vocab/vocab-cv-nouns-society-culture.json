@@ -1,0 +1,5786 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-nouns-society-culture",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+  "source": {
+    "title": "حزمة مفردات: أسماء المجتمع والمهن وأعضاء الجسم والتعليم والأسرة والصحة — مسودة قابلة للمراجعة",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-23",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. IPA تلقائي تقريبي من قواعد الإملاء الإسبانية وينتظر مراجعة بشرية."
+  },
+  "entries": [
+    {
+      "headword": "cerebro",
+      "normalized": "cerebro",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cerebros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θeɾˈebɾo/",
+      "pronunciationHintAr": "ثيريبرو",
+      "internalRank": 1,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مخ / دماغ الإنسان",
+          "meaningArEg": "مخ ودماغ للتفكير",
+          "glossEs": null,
+          "exampleEs": "El cerebro humano coordina todas las funciones vitales.",
+          "exampleAr": "ينسق المخ البشري جميع الوظائف الحيوية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cerebro humano coordina todas las funciones vitales.",
+          "ar": "ينسق المخ البشري جميع الوظائف الحيوية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cráneo",
+      "normalized": "cráneo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cráneos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kɾˈaneo/",
+      "pronunciationHintAr": "كرانيو",
+      "internalRank": 2,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جمجمة صلبة تحمي المخ",
+          "meaningArEg": "جمجمة عظمية",
+          "glossEs": null,
+          "exampleEs": "El casco protege el cráneo de posibles impactos.",
+          "exampleAr": "تحمي الخوذة الجمجمة من الصدمات المحتملة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El casco protege el cráneo de posibles impactos.",
+          "ar": "تحمي الخوذة الجمجمة من الصدمات المحتملة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "frente",
+      "normalized": "frente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "frentes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/fɾˈente/",
+      "pronunciationHintAr": "فرينتي",
+      "internalRank": 3,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جبين / جبهة الرأس",
+          "meaningArEg": "أورة وجبين الوش",
+          "glossEs": null,
+          "exampleEs": "Tenía la frente caliente por la fiebre.",
+          "exampleAr": "كانت جبهته ساخنة بسبب الحمى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tenía la frente caliente por la fiebre.",
+          "ar": "كانت جبهته ساخنة بسبب الحمى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ojo",
+      "normalized": "ojo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ojos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈoxo/",
+      "pronunciationHintAr": "وخو",
+      "internalRank": 4,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عين للبصر والرؤية",
+          "meaningArEg": "عين للنظر والبصر",
+          "glossEs": null,
+          "exampleEs": "Tiene los ojos castaños y brillantes.",
+          "exampleAr": "لديه عينان بنيتان ولامعتان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tiene los ojos castaños y brillantes.",
+          "ar": "لديه عينان بنيتان ولامعتان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ceja",
+      "normalized": "ceja",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cejas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θˈexa/",
+      "pronunciationHintAr": "ثيخا",
+      "internalRank": 5,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حاجب العين الواقي من العرق",
+          "meaningArEg": "حاجب فوق العين",
+          "glossEs": null,
+          "exampleEs": "Levantó una ceja con gesto de sorpresa.",
+          "exampleAr": "رفع حاجباً في إيماءة تعجب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Levantó una ceja con gesto de sorpresa.",
+          "ar": "رفع حاجباً في إيماءة تعجب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pestaña",
+      "normalized": "pestaña",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "pestañas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pestˈaɲa/",
+      "pronunciationHintAr": "بيستانيا",
+      "internalRank": 6,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رمش العين الواقي من الغبار",
+          "meaningArEg": "رمش عين طويل",
+          "glossEs": null,
+          "exampleEs": "Las largas pestañas protegen los ojos del polvo.",
+          "exampleAr": "تحمي الرموش الطويلة العينين من الغبار.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Las largas pestañas protegen los ojos del polvo.",
+          "ar": "تحمي الرموش الطويلة العينين من الغبار.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "párpado",
+      "normalized": "párpado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "párpados",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/pˈaɾpado/",
+      "pronunciationHintAr": "باربادو",
+      "internalRank": 7,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جفن العين المتحرك",
+          "meaningArEg": "جفن عين يتقفل",
+          "glossEs": null,
+          "exampleEs": "Cerró los párpados cansados para descansar.",
+          "exampleAr": "أغلق جفنيه المتعبين ليرتاح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Cerró los párpados cansados para descansar.",
+          "ar": "أغلق جفنيه المتعبين ليرتاح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "oreja",
+      "normalized": "oreja",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "orejas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/oɾˈexa/",
+      "pronunciationHintAr": "وريخا",
+      "internalRank": 8,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أذن خارجية لسماع الأصوات",
+          "meaningArEg": "ودان برة للسمع",
+          "glossEs": null,
+          "exampleEs": "Escuchó con atención pegando la oreja a la puerta.",
+          "exampleAr": "أنصت باهتمام واضعاً أذنه على الباب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Escuchó con atención pegando la oreja a la puerta.",
+          "ar": "أنصت باهتمام واضعاً أذنه على الباب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "nariz",
+      "normalized": "nariz",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "narices",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/naɾˈiθ/",
+      "pronunciationHintAr": "ناريث",
+      "internalRank": 9,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أنف للشم والتنفس",
+          "meaningArEg": "مناخير للشم والنفس",
+          "glossEs": null,
+          "exampleEs": "Respira hondo por la nariz y suelta por la boca.",
+          "exampleAr": "تنفس بعمق من الأنف وأخرج الهواء من الفم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Respira hondo por la nariz y suelta por la boca.",
+          "ar": "تنفس بعمق من الأنف وأخرج الهواء من الفم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mejilla",
+      "normalized": "mejilla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "mejillas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/mexˈiʎla/",
+      "pronunciationHintAr": "ميخيليلا",
+      "internalRank": 10,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خد / وجنة الوجه",
+          "meaningArEg": "خد الوش",
+          "glossEs": null,
+          "exampleEs": "Un rubor tímido tiñó sus mejillas.",
+          "exampleAr": "صبغ خجل لطيف خديه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un rubor tímido tiñó sus mejillas.",
+          "ar": "صبغ خجل لطيف خديه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "boca",
+      "normalized": "boca",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "bocas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/bˈoka/",
+      "pronunciationHintAr": "بوكا",
+      "internalRank": 11,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فم للكلام وتناول الطعام",
+          "meaningArEg": "بق وأفواه للأكل والكلام",
+          "glossEs": null,
+          "exampleEs": "Abrió la boca para que el dentista revisara los dientes.",
+          "exampleAr": "فتح فمه ليفحص طبيب الأسنان أسنانه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Abrió la boca para que el dentista revisara los dientes.",
+          "ar": "فتح فمه ليفحص طبيب الأسنان أسنانه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "labio",
+      "normalized": "labio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "labios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/labˈio/",
+      "pronunciationHintAr": "لابيو",
+      "internalRank": 12,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شفة عليا أو سفلى",
+          "meaningArEg": "شفايف بق",
+          "glossEs": null,
+          "exampleEs": "Se humedeció los labios secos con un bálsamo.",
+          "exampleAr": "رطّب شفتيه الجافتين بمرهم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se humedeció los labios secos con un bálsamo.",
+          "ar": "رطّب شفتيه الجافتين بمرهم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "diente",
+      "normalized": "diente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "dientes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/diˈente/",
+      "pronunciationHintAr": "ديينتي",
+      "internalRank": 13,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سن في الفك لمضغ الطعام",
+          "meaningArEg": "سنان للمضغ",
+          "glossEs": null,
+          "exampleEs": "Se cepilla los dientes después de cada comida.",
+          "exampleAr": "ينظف أسنانه بالفرشاة عقب كل وجبة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se cepilla los dientes después de cada comida.",
+          "ar": "ينظف أسنانه بالفرشاة عقب كل وجبة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "muela",
+      "normalized": "muela",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "muelas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/muˈela/",
+      "pronunciationHintAr": "مويلا",
+      "internalRank": 14,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ضرس لطحن المأكولات الصلبة",
+          "meaningArEg": "ضرس طحن في البق",
+          "glossEs": null,
+          "exampleEs": "Le extrajeron una muela del juicio inflamada.",
+          "exampleAr": "خلعوا له ضرس عقل ملتهباً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le extrajeron una muela del juicio inflamada.",
+          "ar": "خلعوا له ضرس عقل ملتهباً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "lengua",
+      "normalized": "lengua",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "lenguas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/lengˈua/",
+      "pronunciationHintAr": "لينجوا",
+      "internalRank": 15,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لسان للتذوق والنطق / لغة",
+          "meaningArEg": "لسان للتذوق والكلام",
+          "glossEs": null,
+          "exampleEs": "La lengua es el órgano principal del sentido del gusto.",
+          "exampleAr": "اللسان هو العضو الرئيس لحاسة التذوق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La lengua es el órgano principal del sentido del gusto.",
+          "ar": "اللسان هو العضو الرئيس لحاسة التذوق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "barbilla",
+      "normalized": "barbilla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "barbillas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/baɾbˈiʎla/",
+      "pronunciationHintAr": "باربيليلا",
+      "internalRank": 16,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ذقن الوجه السفلي",
+          "meaningArEg": "دقن الوش من تحت",
+          "glossEs": null,
+          "exampleEs": "Se acarició la barbilla pensativo.",
+          "exampleAr": "مرر يده على ذقنه متأملاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se acarició la barbilla pensativo.",
+          "ar": "مرر يده على ذقنه متأملاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cuello",
+      "normalized": "cuello",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cuellos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kuˈeʎlo/",
+      "pronunciationHintAr": "كويليلو",
+      "internalRank": 17,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عنق / رقبة تصل الرأس بالجذع",
+          "meaningArEg": "رقبة موصلة الراس بالجسم",
+          "glossEs": null,
+          "exampleEs": "Lleva una suave bufanda de seda alrededor del cuello.",
+          "exampleAr": "ترتدي وشاحاً حريرياً ناعماً حول عنقها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lleva una suave bufanda de seda alrededor del cuello.",
+          "ar": "ترتدي وشاحاً حريرياً ناعماً حول عنقها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "garganta",
+      "normalized": "garganta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "gargantas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/gaɾgˈanta/",
+      "pronunciationHintAr": "جارجانتا",
+      "internalRank": 18,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حلق / بلعوم للصوت والبلع",
+          "meaningArEg": "زور وحلق بيبلع",
+          "glossEs": null,
+          "exampleEs": "Le duele la garganta y apenas puede tragar.",
+          "exampleAr": "يؤلمه حلقه وبالكاد يستطيع البلع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le duele la garganta y apenas puede tragar.",
+          "ar": "يؤلمه حلقه وبالكاد يستطيع البلع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hombro",
+      "normalized": "hombro",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "hombros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈombɾo/",
+      "pronunciationHintAr": "ومبرو",
+      "internalRank": 19,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كتف يربط الذراع بالجسم",
+          "meaningArEg": "كتف واصل الدراع بالصدر",
+          "glossEs": null,
+          "exampleEs": "Lleva la pesada mochila sobre el hombro izquierdo.",
+          "exampleAr": "يحمل حقيبة الظهر الثقيلة فوق كتفه الأيسر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lleva la pesada mochila sobre el hombro izquierdo.",
+          "ar": "يحمل حقيبة الظهر الثقيلة فوق كتفه الأيسر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "codo",
+      "normalized": "codo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "codos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kˈodo/",
+      "pronunciationHintAr": "كودو",
+      "internalRank": 20,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مرفق / كوع الذراع المفصلي",
+          "meaningArEg": "كوع دراع بيتحرك",
+          "glossEs": null,
+          "exampleEs": "Apoyó los codos sobre la mesa para estudiar.",
+          "exampleAr": "أسند مرفقيه على الطاولة ليدرس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Apoyó los codos sobre la mesa para estudiar.",
+          "ar": "أسند مرفقيه على الطاولة ليدرس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "muñeca",
+      "normalized": "muñeca",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "muñecas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/muɲˈeka/",
+      "pronunciationHintAr": "مونييكا",
+      "internalRank": 21,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معصم اليد / دمية أطفال",
+          "meaningArEg": "معصم إيد أو عروسة لعبة",
+          "glossEs": null,
+          "exampleEs": "Lleva un reloj deportivo de titanio en la muñeca.",
+          "exampleAr": "يرتدي ساعة رياضية من التيتانيوم في معصمه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lleva un reloj deportivo de titanio en la muñeca.",
+          "ar": "يرتدي ساعة رياضية من التيتانيوم في معصمه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dedo",
+      "normalized": "dedo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "dedos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dˈedo/",
+      "pronunciationHintAr": "ديدو",
+      "internalRank": 22,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إصبع اليد أو القدم",
+          "meaningArEg": "صباع إيد أو رجل",
+          "glossEs": null,
+          "exampleEs": "Señala la dirección correcta con el dedo índice.",
+          "exampleAr": "يشير إلى الاتجاه الصحيح بإصبعه السبابة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Señala la dirección correcta con el dedo índice.",
+          "ar": "يشير إلى الاتجاه الصحيح بإصبعه السبابة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "uña",
+      "normalized": "uña",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "uñas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈuɲa/",
+      "pronunciationHintAr": "ونيا",
+      "internalRank": 23,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ظفر لحماية أطراف الأصابع",
+          "meaningArEg": "ضفر صباع نظيف",
+          "glossEs": null,
+          "exampleEs": "Se cortó las uñas con unas tijeritas limpias.",
+          "exampleAr": "قص أظافره بمقص صغير نظيف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se cortó las uñas con unas tijeritas limpias.",
+          "ar": "قص أظافره بمقص صغير نظيف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pecho",
+      "normalized": "pecho",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pechos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pˈeko/",
+      "pronunciationHintAr": "بيكو",
+      "internalRank": 24,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صدر الإنسان وفؤاده",
+          "meaningArEg": "صدر وقفص صدري",
+          "glossEs": null,
+          "exampleEs": "Sentía una gran opresión en el pecho tras el esfuerzo.",
+          "exampleAr": "شعر بضيق شديد في صدره عقب المجهود.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sentía una gran opresión en el pecho tras el esfuerzo.",
+          "ar": "شعر بضيق شديد في صدره عقب المجهود.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pulmón",
+      "normalized": "pulmón",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pulones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pulmˈon/",
+      "pronunciationHintAr": "بولمون",
+      "internalRank": 25,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رئة للتنفس وتبادل الغازات",
+          "meaningArEg": "رئة نفس وتبادل هوا",
+          "glossEs": null,
+          "exampleEs": "El aire puro de la montaña limpia los pulmones (pulmón).",
+          "exampleAr": "ينقي هواء الجبل النقي الرئتين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El aire puro de la montaña limpia los pulmones (pulmón).",
+          "ar": "ينقي هواء الجبل النقي الرئتين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "columna",
+      "normalized": "columna",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "columnas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kolˈumna/",
+      "pronunciationHintAr": "كولومنا",
+      "internalRank": 26,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عمود فقري يدعم قوام الجسم / ركيزة",
+          "meaningArEg": "عمود فقري للجسم",
+          "glossEs": null,
+          "exampleEs": "Mantén la columna recta al sentarte ante la pantalla.",
+          "exampleAr": "حافظ على استقامة عمودك الفقري عند الجلوس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mantén la columna recta al sentarte ante la pantalla.",
+          "ar": "حافظ على استقامة عمودك الفقري عند الجلوس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "costilla",
+      "normalized": "costilla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "costillas",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kostˈiʎla/",
+      "pronunciationHintAr": "كوستيليلا",
+      "internalRank": 27,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ضلع من أضلاع القفص الصدري",
+          "meaningArEg": "ضلع في القفص الصدري",
+          "glossEs": null,
+          "exampleEs": "Se fracturó una costilla en la caída deportiva.",
+          "exampleAr": "تعرض لكسر في أحد أضلاعه في السقطة الرياضية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se fracturó una costilla en la caída deportiva.",
+          "ar": "تعرض لكسر في أحد أضلاعه في السقطة الرياضية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hígado",
+      "normalized": "hígado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "hígados",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ˈigado/",
+      "pronunciationHintAr": "يجادو",
+      "internalRank": 28,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كبد لتنقية الجسم من السموم",
+          "meaningArEg": "كبد تصفية سموم",
+          "glossEs": null,
+          "exampleEs": "El hígado procesa los nutrientes que absorbe el cuerpo.",
+          "exampleAr": "يعالج الكبد العناصر الغذائية التي يمتصها الجسم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El hígado procesa los nutrientes que absorbe el cuerpo.",
+          "ar": "يعالج الكبد العناصر الغذائية التي يمتصها الجسم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "riñón",
+      "normalized": "riñón",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "riones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/riɲˈon/",
+      "pronunciationHintAr": "رينيون",
+      "internalRank": 29,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كلية لتصفية السوائل وإفراز البول",
+          "meaningArEg": "كلوة لتنقية المية والدم",
+          "glossEs": null,
+          "exampleEs": "Beber suficiente agua previene los cálculos en el riñón.",
+          "exampleAr": "شرب كمية كافية من الماء يقي من حصوات الكلى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Beber suficiente agua previene los cálculos en el riñón.",
+          "ar": "شرب كمية كافية من الماء يقي من حصوات الكلى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "intestino",
+      "normalized": "intestino",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "intestinos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/intestˈino/",
+      "pronunciationHintAr": "ينتيستينو",
+      "internalRank": 30,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أمعاء دقيقة وغليظة لامتصاص الغذاء",
+          "meaningArEg": "مصران وأمعاء هضم",
+          "glossEs": null,
+          "exampleEs": "La flora del intestino ayuda a una buena digestión.",
+          "exampleAr": "تساعد بكتيريا الأمعاء النافعة على حسن الهضم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La flora del intestino ayuda a una buena digestión.",
+          "ar": "تساعد بكتيريا الأمعاء النافعة على حسن الهضم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cintura",
+      "normalized": "cintura",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cinturas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/θintˈuɾa/",
+      "pronunciationHintAr": "ثينتورا",
+      "internalRank": 31,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خصر الإنسان ومنطقة الحزام",
+          "meaningArEg": "وسط الإنسان وحزامه",
+          "glossEs": null,
+          "exampleEs": "Puso las manos en la cintura con decisión.",
+          "exampleAr": "وضع يديه على خصره بعزم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Puso las manos en la cintura con decisión.",
+          "ar": "وضع يديه على خصره بعزم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cadera",
+      "normalized": "cadera",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "caderas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kadˈeɾa/",
+      "pronunciationHintAr": "كاديرا",
+      "internalRank": 32,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ورك / مفصل الحوض العظمي",
+          "meaningArEg": "ورك وحوض عظمي",
+          "glossEs": null,
+          "exampleEs": "La anciana se recuperó bien de la operación de cadera.",
+          "exampleAr": "تعافت المسنة جيداً من جراحة مفصل الورك.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La anciana se recuperó bien de la operación de cadera.",
+          "ar": "تعافت المسنة جيداً من جراحة مفصل الورك.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "muslo",
+      "normalized": "muslo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "muslos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/mˈuslo/",
+      "pronunciationHintAr": "موسلو",
+      "internalRank": 33,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فخذ قوي يدعم وقفة الجسم",
+          "meaningArEg": "فخد عضلات قوي",
+          "glossEs": null,
+          "exampleEs": "Sufrió un tirón muscular en el muslo derecho.",
+          "exampleAr": "تعرض لتمزق عضلي في فخذه الأيمن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sufrió un tirón muscular en el muslo derecho.",
+          "ar": "تعرض لتمزق عضلي في فخذه الأيمن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "rodilla",
+      "normalized": "rodilla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "rodillas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/rodˈiʎla/",
+      "pronunciationHintAr": "روديليلا",
+      "internalRank": 34,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ركبة مفصلية تصل الساق بالفخذ",
+          "meaningArEg": "ركبة رجل وثني",
+          "glossEs": null,
+          "exampleEs": "Se puso de rodillas para arreglar el enchufe bajo.",
+          "exampleAr": "ركع على ركبتيه ليصلح المقبس المنخفض.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se puso de rodillas para arreglar el enchufe bajo.",
+          "ar": "ركع على ركبتيه ليصلح المقبس المنخفض.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tobillo",
+      "normalized": "tobillo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "tobillos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tobˈiʎlo/",
+      "pronunciationHintAr": "توبيليلو",
+      "internalRank": 35,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كاحل القدم المفصلي",
+          "meaningArEg": "كاحل رجل بيتقلب",
+          "glossEs": null,
+          "exampleEs": "Se torció el tobillo bajando la escalera.",
+          "exampleAr": "التوى كاحله أثناء نزول الدرج.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se torció el tobillo bajando la escalera.",
+          "ar": "التوى كاحله أثناء نزول الدرج.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "talón",
+      "normalized": "talón",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "taones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/talˈon/",
+      "pronunciationHintAr": "تالون",
+      "internalRank": 36,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عقب القدم / كعب القدم الخلفي",
+          "meaningArEg": "كعب رجل من ورا",
+          "glossEs": null,
+          "exampleEs": "El zapato nuevo le roza en el talón izquierdo.",
+          "exampleAr": "يحتك الحذاء الجديد بعقب قدمه الأيسر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El zapato nuevo le roza en el talón izquierdo.",
+          "ar": "يحتك الحذاء الجديد بعقب قدمه الأيسر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "piel",
+      "normalized": "piel",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "pieles",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/piˈel/",
+      "pronunciationHintAr": "بييل",
+      "internalRank": 37,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جلد خارجي يغطي الجسم ويحميه / بشرة",
+          "meaningArEg": "جلد وبشرة جسم",
+          "glossEs": null,
+          "exampleEs": "La crema hidratante nutre y protege la piel seca.",
+          "exampleAr": "يغذي المرطب البشرة الجافة ويحميها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La crema hidratante nutre y protege la piel seca.",
+          "ar": "يغذي المرطب البشرة الجافة ويحميها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hueso",
+      "normalized": "hueso",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "huesos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/uˈeso/",
+      "pronunciationHintAr": "ويسو",
+      "internalRank": 38,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عظم صلب يشكل هيكل الجسم",
+          "meaningArEg": "عضم صلب في الجسم",
+          "glossEs": null,
+          "exampleEs": "El calcio fortalece los huesos de niños y adultos.",
+          "exampleAr": "يقوي الكالسيوم عظام الأطفال والبالغين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El calcio fortalece los huesos de niños y adultos.",
+          "ar": "يقوي الكالسيوم عظام الأطفال والبالغين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "músculo",
+      "normalized": "músculo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "músculos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/mˈuskulo/",
+      "pronunciationHintAr": "موسكولو",
+      "internalRank": 39,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عضلة مسؤولة عن الحركة والقوة",
+          "meaningArEg": "عضلات حركة وقوة",
+          "glossEs": null,
+          "exampleEs": "El ejercicio diario tonifica los músculos de la espalda.",
+          "exampleAr": "ينشط التمرين اليومي عضلات الظهر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ejercicio diario tonifica los músculos de la espalda.",
+          "ar": "ينشط التمرين اليومي عضلات الظهر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "vena",
+      "normalized": "vena",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "venas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bˈena/",
+      "pronunciationHintAr": "بينا",
+      "internalRank": 40,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وريد ينقل الدم العائد إلى القلب",
+          "meaningArEg": "عرق ووريد دم في الجسم",
+          "glossEs": null,
+          "exampleEs": "Las venas azules se marcaban bajo su piel clara.",
+          "exampleAr": "كانت الأوردة الزرقاء تبرز تحت بشرته الفاتحة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Las venas azules se marcaban bajo su piel clara.",
+          "ar": "كانت الأوردة الزرقاء تبرز تحت بشرته الفاتحة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "arteria",
+      "normalized": "arteria",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "arterias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aɾteɾˈia/",
+      "pronunciationHintAr": "ارتيريا",
+      "internalRank": 41,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شريان ينقل الدم المؤكسج من القلب",
+          "meaningArEg": "شريان دم رئيسي ونبض",
+          "glossEs": null,
+          "exampleEs": "El cirujano suturó con precisión la arteria dañada.",
+          "exampleAr": "خاط الجراح بدقة الشريان المتضرر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cirujano suturó con precisión la arteria dañada.",
+          "ar": "خاط الجراح بدقة الشريان المتضرر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "nervio",
+      "normalized": "nervio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "nervios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/neɾbˈio/",
+      "pronunciationHintAr": "نيربيو",
+      "internalRank": 42,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عصب ينقل الإشارات الحسية والحركية",
+          "meaningArEg": "عصب إحساس وإشارات",
+          "glossEs": null,
+          "exampleEs": "El nervio óptico transmite las imágenes al cerebro.",
+          "exampleAr": "ينقل العصب البصري الصور إلى الدماغ.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El nervio óptico transmite las imágenes al cerebro.",
+          "ar": "ينقل العصب البصري الصور إلى الدماغ.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ambulancia",
+      "normalized": "ambulancia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ambulancias",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ambulanθˈia/",
+      "pronunciationHintAr": "امبولانثيا",
+      "internalRank": 43,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سيارة إسعاف تنقل المرضى بسرعة",
+          "meaningArEg": "عربية إسعاف سريعة بسرينة",
+          "glossEs": null,
+          "exampleEs": "La ambulancia llegó con la sirena encendida.",
+          "exampleAr": "وصلت سيارة الإسعاف وصافرتها مدوية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La ambulancia llegó con la sirena encendida.",
+          "ar": "وصلت سيارة الإسعاف وصافرتها مدوية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "análisis",
+      "normalized": "análisis",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "análisis",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/anˈalisis/",
+      "pronunciationHintAr": "اناليسيس",
+      "internalRank": 44,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تحليل دم أو بول سريري للمعاينة",
+          "meaningArEg": "تحليل دم وبول معملي",
+          "glossEs": null,
+          "exampleEs": "Los resultados del análisis confirmaron la mejoría.",
+          "exampleAr": "أكدت نتائج التحليل الطبي التحسن الصحي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los resultados del análisis confirmaron la mejoría.",
+          "ar": "أكدت نتائج التحليل الطبي التحسن الصحي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "antibiótico",
+      "normalized": "antibiótico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "antibióticos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/antibiˈotiko/",
+      "pronunciationHintAr": "انتيبيوتيكو",
+      "internalRank": 45,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مضاد حيوي للقضاء على البكتيريا",
+          "meaningArEg": "مضاد حيوي للالتهاب",
+          "glossEs": null,
+          "exampleEs": "El doctor le recetó un antibiótico por siete días.",
+          "exampleAr": "وصف له الطبيب مضاداً حيوياً لمدة سبعة أيام.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El doctor le recetó un antibiótico por siete días.",
+          "ar": "وصف له الطبيب مضاداً حيوياً لمدة سبعة أيام.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "calmante",
+      "normalized": "calmante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "calmantes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kalmˈante/",
+      "pronunciationHintAr": "كالمانتي",
+      "internalRank": 46,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مسكن آلام مهدئ للأوجاع",
+          "meaningArEg": "مسكن وجع وألم",
+          "glossEs": null,
+          "exampleEs": "Tomó un calmante suave para aliviar la jaqueca.",
+          "exampleAr": "تناول مسكناً خفيفاً لتهدئة الصداع النصفي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tomó un calmante suave para aliviar la jaqueca.",
+          "ar": "تناول مسكناً خفيفاً لتهدئة الصداع النصفي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cicatriz",
+      "normalized": "cicatriz",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cicatrices",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/θikatɾˈiθ/",
+      "pronunciationHintAr": "ثيكاتريث",
+      "internalRank": 47,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ندبة أثر الجرح الملتئم في الجلد",
+          "meaningArEg": "ندبة أثر جرح قديم",
+          "glossEs": null,
+          "exampleEs": "Le quedó una pequeña cicatriz en la barbilla.",
+          "exampleAr": "بقيت له ندبة صغيرة على ذقنه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le quedó una pequeña cicatriz en la barbilla.",
+          "ar": "بقيت له ندبة صغيرة على ذقنه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cirugía",
+      "normalized": "cirugía",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cirugías",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/θiɾuxˈia/",
+      "pronunciationHintAr": "ثيروخيا",
+      "internalRank": 48,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جراحة طبية تجرى في غرفة العمليات",
+          "meaningArEg": "عملية جراحية في المستشفى",
+          "glossEs": null,
+          "exampleEs": "La cirugía mínimamente invasiva redujo la estancia hospitalaria.",
+          "exampleAr": "قللت الجراحة طفيفة التوغل مدة الإقامة بالمستشفى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cirugía mínimamente invasiva redujo la estancia hospitalaria.",
+          "ar": "قللت الجراحة طفيفة التوغل مدة الإقامة بالمستشفى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "diagnóstico",
+      "normalized": "diagnóstico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "diagnósticos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/diagnˈostiko/",
+      "pronunciationHintAr": "دياجنوستيكو",
+      "internalRank": 49,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تشخيص طبي لحالة المريض ومرضه",
+          "meaningArEg": "تشخيص دكتور للمرض",
+          "glossEs": null,
+          "exampleEs": "Un diagnóstico precoz salvó la vida del paciente.",
+          "exampleAr": "أنقذ التشخيص المبكر حياة المريض.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un diagnóstico precoz salvó la vida del paciente.",
+          "ar": "أنقذ التشخيص المبكر حياة المريض.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dieta",
+      "normalized": "dieta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "dietas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/diˈeta/",
+      "pronunciationHintAr": "دييتا",
+      "internalRank": 50,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حمية غذائية متوازنة للصحة",
+          "meaningArEg": "رجيم ونظام أكل صحي",
+          "glossEs": null,
+          "exampleEs": "Sigue una dieta mediterránea rica en verduras y pescado.",
+          "exampleAr": "يتبع حمية متوسطية غنية بالخضراوات والسمك.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sigue una dieta mediterránea rica en verduras y pescado.",
+          "ar": "يتبع حمية متوسطية غنية بالخضراوات والسمك.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "enfermedad",
+      "normalized": "enfermedad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "enfermedades",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/enfeɾmedˈad/",
+      "pronunciationHintAr": "ينفيرميداد",
+      "internalRank": 51,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مرض وعلة تصيب الجسم بالوهن",
+          "meaningArEg": "مرض وتعب وضعف",
+          "glossEs": null,
+          "exampleEs": "El reposo es fundamental para superar la enfermedad.",
+          "exampleAr": "الراحة أساسية للتغلب على المرض.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El reposo es fundamental para superar la enfermedad.",
+          "ar": "الراحة أساسية للتغلب على المرض.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "especialista",
+      "normalized": "especialista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "especialistas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/espeθialˈista/",
+      "pronunciationHintAr": "يسبيثياليستا",
+      "internalRank": 52,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طبيب أخصائي في مجال طبي دقيق",
+          "meaningArEg": "دكتور متخصص واستشاري",
+          "glossEs": null,
+          "exampleEs": "Derivaron al paciente a un especialista en cardiología.",
+          "exampleAr": "أحالوا المريض إلى أخصائي في أمراض القلب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Derivaron al paciente a un especialista en cardiología.",
+          "ar": "أحالوا المريض إلى أخصائي في أمراض القلب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "farmacéutico",
+      "normalized": "farmacéutico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "farmacéuticos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/faɾmaθˈeutiko/",
+      "pronunciationHintAr": "فارماثيوتيكو",
+      "internalRank": 53,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صيدلي خبير في تركيب وصرف الأدوية",
+          "meaningArEg": "دكتور صيدلي بيصرف دوا",
+          "glossEs": null,
+          "exampleEs": "El farmacéutico le explicó cómo tomar las cápsulas.",
+          "exampleAr": "شرح له الصيدلي كيفية تناول الكبسولات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El farmacéutico le explicó cómo tomar las cápsulas.",
+          "ar": "شرح له الصيدلي كيفية تناول الكبسولات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "fractura",
+      "normalized": "fractura",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "fracturas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/fɾaktˈuɾa/",
+      "pronunciationHintAr": "فراكتورا",
+      "internalRank": 54,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كسر في العظام يستدعي التجبير",
+          "meaningArEg": "كسر عضم ومحتاج جبس",
+          "glossEs": null,
+          "exampleEs": "La radiografía reveló una fractura limpia en el brazo.",
+          "exampleAr": "كشفت الأشعة السينية عن كسر واضح في الذراع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La radiografía reveló una fractura limpia en el brazo.",
+          "ar": "كشفت الأشعة السينية عن كسر واضح في الذراع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "herida",
+      "normalized": "herida",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "heridas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/eɾˈida/",
+      "pronunciationHintAr": "يريدا",
+      "internalRank": 55,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جرح في الجلد ينزف ويتطلب التطهير",
+          "meaningArEg": "جرح ونزيف ومحتاج مطهر",
+          "glossEs": null,
+          "exampleEs": "Desinfectó la herida con agua oxigenada y gasa.",
+          "exampleAr": "طهر الجرح بماء الأكسجين والشاش.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Desinfectó la herida con agua oxigenada y gasa.",
+          "ar": "طهر الجرح بماء الأكسجين والشاش.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "infección",
+      "normalized": "infección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "infeccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/infekθiˈon/",
+      "pronunciationHintAr": "ينفيكثيون",
+      "internalRank": 56,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عدوى بكتيرية أو فيروسية في العضو",
+          "meaningArEg": "ميكروب وعدوى ملتهبة",
+          "glossEs": null,
+          "exampleEs": "El tratamiento rápido evitó que la infección se propagara.",
+          "exampleAr": "منع العلاج السريع انتشار العدوى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El tratamiento rápido evitó que la infección se propagara.",
+          "ar": "منع العلاج السريع انتشار العدوى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "jarabe",
+      "normalized": "jarabe",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "jarabes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/xaɾˈabe/",
+      "pronunciationHintAr": "خارابي",
+      "internalRank": 57,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شراب دوائي سائل ملطف للسعال",
+          "meaningArEg": "شربات ودوا كحة سائل",
+          "glossEs": null,
+          "exampleEs": "Toma una cucharada de jarabe para la tos antes de dormir.",
+          "exampleAr": "تناول ملعقة شراب للسعال قبل النوم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Toma una cucharada de jarabe para la tos antes de dormir.",
+          "ar": "تناول ملعقة شراب للسعال قبل النوم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "medicamento",
+      "normalized": "medicamento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "medicamentos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/medikamˈento/",
+      "pronunciationHintAr": "ميديكامينتو",
+      "internalRank": 58,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دواء علاجي يصفه الطبيب للشفاء",
+          "meaningArEg": "دوا وعلاج طبي",
+          "glossEs": null,
+          "exampleEs": "Guarda los medicamentos fuera del alcance de los niños.",
+          "exampleAr": "احفظ الأدوية بعيداً عن متناول الأطفال.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Guarda los medicamentos fuera del alcance de los niños.",
+          "ar": "احفظ الأدوية بعيداً عن متناول الأطفال.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "operación",
+      "normalized": "operación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "operacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/opeɾaθiˈon/",
+      "pronunciationHintAr": "وبيراثيون",
+      "internalRank": 59,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عملية جراحية لاستئصال أو إصلاح العضو",
+          "meaningArEg": "عملية جراحية في أوضة العمليات",
+          "glossEs": null,
+          "exampleEs": "La operación de apendicitis fue todo un éxito.",
+          "exampleAr": "كانت عملية استئصال الزائدة الدودية ناجحة تماماً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La operación de apendicitis fue todo un éxito.",
+          "ar": "كانت عملية استئصال الزائدة الدودية ناجحة تماماً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "paciente",
+      "normalized": "paciente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "pacientes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/paθiˈente/",
+      "pronunciationHintAr": "باثيينتي",
+      "internalRank": 60,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مريض يتلقى الرعاية الطبية في العيادة",
+          "meaningArEg": "عيان ومريض بيكشف",
+          "glossEs": null,
+          "exampleEs": "El doctor atiende a cada paciente con gran dedicación.",
+          "exampleAr": "يعتني الطبيب بكل مريض بتفان كبير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El doctor atiende a cada paciente con gran dedicación.",
+          "ar": "يعتني الطبيب بكل مريض بتفان كبير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "resfriado",
+      "normalized": "resfriado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "resfriados",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/resfɾiˈado/",
+      "pronunciationHintAr": "ريسفريادو",
+      "internalRank": 61,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نزلة برد خفيفة مع زكام وعطس",
+          "meaningArEg": "دور برد وزكام ورشح",
+          "glossEs": null,
+          "exampleEs": "Tiene un resfriado común y toma zumo de naranja.",
+          "exampleAr": "لديه نزلة برد شائعة ويشرب عصير البرتقال.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tiene un resfriado común y toma zumo de naranja.",
+          "ar": "لديه نزلة برد شائعة ويشرب عصير البرتقال.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "síntoma",
+      "normalized": "síntoma",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "síntomas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sˈintoma/",
+      "pronunciationHintAr": "سينتوما",
+      "internalRank": 62,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عرض مرضي يدل على الإصابة بالعلة",
+          "meaningArEg": "عرض وتعب بيظهر ع العيان",
+          "glossEs": null,
+          "exampleEs": "La pérdida de olfato es un síntoma revelador.",
+          "exampleAr": "فقدان حاسة الشم عرض مرضي دال.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La pérdida de olfato es un síntoma revelador.",
+          "ar": "فقدان حاسة الشم عرض مرضي دال.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "terapia",
+      "normalized": "terapia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "terapias",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/teɾapˈia/",
+      "pronunciationHintAr": "تيرابيا",
+      "internalRank": 63,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "علاج تأهيلي أو نفسي لمساعدة المريض",
+          "meaningArEg": "علاج طبيعي أو جلسات نفسية",
+          "glossEs": null,
+          "exampleEs": "Acude a sesiones semanales de terapia física.",
+          "exampleAr": "يحضر جلسات أسبوعية من العلاج الطبيعي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Acude a sesiones semanales de terapia física.",
+          "ar": "يحضر جلسات أسبوعية من العلاج الطبيعي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tratamiento",
+      "normalized": "tratamiento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "tratamientos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾatamiˈento/",
+      "pronunciationHintAr": "تراتاميينتو",
+      "internalRank": 64,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "علاج دوائي أو وقائي موصوف للمريض",
+          "meaningArEg": "كورس علاج وروشتة",
+          "glossEs": null,
+          "exampleEs": "Completó el tratamiento médico hasta el final.",
+          "exampleAr": "أكمل العلاج الطبي حتى نهايته.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Completó el tratamiento médico hasta el final.",
+          "ar": "أكمل العلاج الطبي حتى نهايته.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "vacuna",
+      "normalized": "vacuna",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "vacunas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bakˈuna/",
+      "pronunciationHintAr": "باكونا",
+      "internalRank": 65,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لقاح تطعيمي يمنح المناعة ضد الأمراض",
+          "meaningArEg": "تطعيم وحقنة مصل ومناعة",
+          "glossEs": null,
+          "exampleEs": "La vacuna anual protege a los ancianos de la gripe.",
+          "exampleAr": "يحمي اللقاح السنوي كبار السن من الإنفلونزا.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La vacuna anual protege a los ancianos de la gripe.",
+          "ar": "يحمي اللقاح السنوي كبار السن من الإنفلونزا.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "venda",
+      "normalized": "venda",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "vendas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bˈenda/",
+      "pronunciationHintAr": "بيندا",
+      "internalRank": 66,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ضمادة شاش طبية لتثبيت الجروح والكسور",
+          "meaningArEg": "رباط شاش وبلاستر للجرح",
+          "glossEs": null,
+          "exampleEs": "El enfermero le colocó una venda elástica en el tobillo.",
+          "exampleAr": "وضع له الممرض ضمادة مطاطية على كاحله.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El enfermero le colocó una venda elástica en el tobillo.",
+          "ar": "وضع له الممرض ضمادة مطاطية على كاحله.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "adolescente",
+      "normalized": "adolescente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "adolescentes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/adolesθˈente/",
+      "pronunciationHintAr": "ادوليسثينتي",
+      "internalRank": 67,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مراهق فتى يمر بمرحلة النضج والنمو",
+          "meaningArEg": "شاب مراهق بيكبر",
+          "glossEs": null,
+          "exampleEs": "Los adolescentes buscan su identidad con entusiasmo.",
+          "exampleAr": "يبحث المراهقون عن هويتهم بحماس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los adolescentes buscan su identidad con entusiasmo.",
+          "ar": "يبحث المراهقون عن هويتهم بحماس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "anciano",
+      "normalized": "anciano",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ancianos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/anθiˈano/",
+      "pronunciationHintAr": "انثيانو",
+      "internalRank": 68,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مسن متقدم في السن ذو حكمة وتجارب",
+          "meaningArEg": "راجل عجوز ومسن وكبير",
+          "glossEs": null,
+          "exampleEs": "El respetado anciano aconsejó a los jóvenes del pueblo.",
+          "exampleAr": "نصح المسن الوقور شباب القرية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El respetado anciano aconsejó a los jóvenes del pueblo.",
+          "ar": "نصح المسن الوقور شباب القرية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "chico",
+      "normalized": "chico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "chicos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kˈiko/",
+      "pronunciationHintAr": "كيكو",
+      "internalRank": 69,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صبي فتى يافع مقبل على الحياة",
+          "meaningArEg": "ولد وشاب صغير",
+          "glossEs": null,
+          "exampleEs": "Ese chico alto juega muy bien al fútbol.",
+          "exampleAr": "ذلك الصبي الطويل يلعب كرة القدم بمهارة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ese chico alto juega muy bien al fútbol.",
+          "ar": "ذلك الصبي الطويل يلعب كرة القدم بمهارة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cónyuge",
+      "normalized": "cónyuge",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "cónyuges",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kˈonʝuxe/",
+      "pronunciationHintAr": "كونيوخي",
+      "internalRank": 70,
+      "tags": [
+        "domain:family",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قرين أو زوج شريك في عقد النكاح",
+          "meaningArEg": "زوج أو زوجة رسمي",
+          "glossEs": null,
+          "exampleEs": "Ambos cónyuges firmaron la escritura de la vivienda.",
+          "exampleAr": "وقّع كلا الزوجين عقد ملكية السكن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ambos cónyuges firmaron la escritura de la vivienda.",
+          "ar": "وقّع كلا الزوجين عقد ملكية السكن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "criatura",
+      "normalized": "criatura",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "criaturas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kɾiatˈuɾa/",
+      "pronunciationHintAr": "كرياتورا",
+      "internalRank": 71,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طفل صغير بريء أو كائن حي",
+          "meaningArEg": "عيّل صغير وبريء",
+          "glossEs": null,
+          "exampleEs": "La tierna criatura sonrió nada más abrir los ojos.",
+          "exampleAr": "ابتسم الطفل البريء فور فتح عينيه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tierna criatura sonrió nada más abrir los ojos.",
+          "ar": "ابتسم الطفل البريء فور فتح عينيه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cuñada",
+      "normalized": "cuñada",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cuñadas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kuɲˈada/",
+      "pronunciationHintAr": "كونيادا",
+      "internalRank": 72,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أخت الزوج أو زوجة الأخ / سلفة",
+          "meaningArEg": "أخت الزوج أو مرات الأخ",
+          "glossEs": null,
+          "exampleEs": "Mi cuñada nos invitó a comer un rico arroz.",
+          "exampleAr": "دعتنا زوجة أخي لتناول أرز لذيذ.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi cuñada nos invitó a comer un rico arroz.",
+          "ar": "دعتنا زوجة أخي لتناول أرز لذيذ.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cuñado",
+      "normalized": "cuñado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cuñados",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kuɲˈado/",
+      "pronunciationHintAr": "كونيادو",
+      "internalRank": 73,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أخو الزوج أو زوج الأخت / نسيب",
+          "meaningArEg": "أخو الزوج أو جوز الأخت",
+          "glossEs": null,
+          "exampleEs": "Mi cuñado me ayudó a pintar el salón de casa.",
+          "exampleAr": "ساعدني صهري في دهان صالون المنزل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi cuñado me ayudó a pintar el salón de casa.",
+          "ar": "ساعدني صهري في دهان صالون المنزل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "gemelo",
+      "normalized": "gemelo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "gemelos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xemˈelo/",
+      "pronunciationHintAr": "خيميلو",
+      "internalRank": 74,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توأم متماثل يشبه أخاه شبهاً كبيراً",
+          "meaningArEg": "توأم شبه بعض فولة واتقسمت",
+          "glossEs": null,
+          "exampleEs": "Los hermanos gemelos visten casi idénticos hoy.",
+          "exampleAr": "يرتدي الأخوان التوأم ملابس متطابقة تقريباً اليوم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los hermanos gemelos visten casi idénticos hoy.",
+          "ar": "يرتدي الأخوان التوأم ملابس متطابقة تقريباً اليوم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "generación",
+      "normalized": "generación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "generacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xeneɾaθiˈon/",
+      "pronunciationHintAr": "خينيراثيون",
+      "internalRank": 75,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جيل متعاقب من الناس في حقبة زمنية",
+          "meaningArEg": "جيل شباب وعصر جديد",
+          "glossEs": null,
+          "exampleEs": "La nueva generación domina las tecnologías digitales con soltura.",
+          "exampleAr": "يتقن الجيل الجديد التقنيات الرقمية بسهولة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La nueva generación domina las tecnologías digitales con soltura.",
+          "ar": "يتقن الجيل الجديد التقنيات الرقمية بسهولة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hombre",
+      "normalized": "hombre",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "hombres",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈombɾe/",
+      "pronunciationHintAr": "ومبري",
+      "internalRank": 76,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رجل بالغ مكتمل الرجولة والوعي",
+          "meaningArEg": "راجل بالغ وكبير",
+          "glossEs": null,
+          "exampleEs": "Un hombre bondadoso ayudó al anciano a cruzar la calle.",
+          "exampleAr": "ساعد رجل طيب المسن في عبور الشارع.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Un hombre bondadoso ayudó al anciano a cruzar la calle.",
+          "ar": "ساعد رجل طيب المسن في عبور الشارع.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "infancia",
+      "normalized": "infancia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "infancias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/infanθˈia/",
+      "pronunciationHintAr": "ينفانثيا",
+      "internalRank": 77,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طفولة بريئة زاخرة باللعب والذكريات",
+          "meaningArEg": "طفولة ولعب وزكريات زمان",
+          "glossEs": null,
+          "exampleEs": "Guarda recuerdos entrañables de su infancia en el pueblo.",
+          "exampleAr": "يحتفظ بذكريات دافئة عن طفولته في القرية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Guarda recuerdos entrañables de su infancia en el pueblo.",
+          "ar": "يحتفظ بذكريات دافئة عن طفولته في القرية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "juventud",
+      "normalized": "juventud",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "juventudes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xubentˈud/",
+      "pronunciationHintAr": "خوبينتود",
+      "internalRank": 78,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شباب ومرحلة الفتوة والحيوية والنشاط",
+          "meaningArEg": "شباب وطاقة وحيوية",
+          "glossEs": null,
+          "exampleEs": "La juventud rebosa de proyectos e ilusiones renovadas.",
+          "exampleAr": "تفيض مرحلة الشباب بالمشاريع والآمال المتجددة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La juventud rebosa de proyectos e ilusiones renovadas.",
+          "ar": "تفيض مرحلة الشباب بالمشاريع والآمال المتجددة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "marido",
+      "normalized": "marido",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "maridos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/maɾˈido/",
+      "pronunciationHintAr": "ماريدو",
+      "internalRank": 79,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "زوج وشريك العمر في عش الزوجية",
+          "meaningArEg": "جوز وزوج",
+          "glossEs": null,
+          "exampleEs": "Su marido le regaló un ramo de rosas rojas.",
+          "exampleAr": "أهداها زوجها باقة من الورود الحمراء.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su marido le regaló un ramo de rosas rojas.",
+          "ar": "أهداها زوجها باقة من الورود الحمراء.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "matrimonio",
+      "normalized": "matrimonio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "matrimonios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/matɾimonˈio/",
+      "pronunciationHintAr": "ماتريمونيو",
+      "internalRank": 80,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "زواج مؤسس على المودة والرحمة / زوجان",
+          "meaningArEg": "جواز وعش الزوجية",
+          "glossEs": null,
+          "exampleEs": "El feliz matrimonio celebró sus bodas de plata.",
+          "exampleAr": "احتفل الزوجان السعيدان باليوبيل الفضي لزواجهما.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El feliz matrimonio celebró sus bodas de plata.",
+          "ar": "احتفل الزوجان السعيدان باليوبيل الفضي لزواجهما.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mujer",
+      "normalized": "mujer",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "mujeres",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/muxˈeɾ/",
+      "pronunciationHintAr": "موخير",
+      "internalRank": 81,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "امرأة بالغة واعية ومكافحة / زوجة",
+          "meaningArEg": "ست وست بيت وامرأة",
+          "glossEs": null,
+          "exampleEs": "Es una mujer decidida y líder en su empresa.",
+          "exampleAr": "إنها امرأة حازمة ورائدة في شركتها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Es una mujer decidida y líder en su empresa.",
+          "ar": "إنها امرأة حازمة ورائدة في شركتها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "niña",
+      "normalized": "niña",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "niñas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/nˈiɲa/",
+      "pronunciationHintAr": "نينيا",
+      "internalRank": 82,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طفلة صغيرة تلهو بدميتها وبراءتها",
+          "meaningArEg": "بنت صغيرة وطفلة بريئة",
+          "glossEs": null,
+          "exampleEs": "La risueña niña dibuja soles amarillos en su cuaderno.",
+          "exampleAr": "ترسم الطفلة البشوشة شموساً صفراء في دفترها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La risueña niña dibuja soles amarillos en su cuaderno.",
+          "ar": "ترسم الطفلة البشوشة شموساً صفراء في دفترها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "niño",
+      "normalized": "niño",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "niños",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/nˈiɲo/",
+      "pronunciationHintAr": "نينيو",
+      "internalRank": 83,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طفل صغير يركض بمرح في الحديقة",
+          "meaningArEg": "طفل وولد صغير بيلعب",
+          "glossEs": null,
+          "exampleEs": "El niño juega alegremente con su camión de madera.",
+          "exampleAr": "يلعب الطفل بمرح بشاحنته الخشبية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El niño juega alegremente con su camión de madera.",
+          "ar": "يلعب الطفل بمرح بشاحنته الخشبية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "novia",
+      "normalized": "novia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "novias",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/nobˈia/",
+      "pronunciationHintAr": "نوبيا",
+      "internalRank": 84,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خطيبة أو عروس مقبلة على الزواج / حبيبة",
+          "meaningArEg": "خطيبة أو عروسة في فرحها",
+          "glossEs": null,
+          "exampleEs": "La sonriente novia lucía un elegante vestido blanco.",
+          "exampleAr": "تألقت العروس المبتسمة بفستان أبيض أنيق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La sonriente novia lucía un elegante vestido blanco.",
+          "ar": "تألقت العروس المبتسمة بفستان أبيض أنيق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "novio",
+      "normalized": "novio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "novios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/nobˈio/",
+      "pronunciationHintAr": "نوبيو",
+      "internalRank": 85,
+      "tags": [
+        "domain:family",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خطيب أو عريس في يوم زفافه / حبيب",
+          "meaningArEg": "خطيب أو عريس في فرحه",
+          "glossEs": null,
+          "exampleEs": "El emocionado novio esperaba en el altar a su pareja.",
+          "exampleAr": "انتظر العريس المتأثر شريكته عند المذبح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El emocionado novio esperaba en el altar a su pareja.",
+          "ar": "انتظر العريس المتأثر شريكته عند المذبح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pariente",
+      "normalized": "pariente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "parientes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/paɾiˈente/",
+      "pronunciationHintAr": "باريينتي",
+      "internalRank": 86,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قريب من العائلة من جهة الأب أو الأم",
+          "meaningArEg": "قريب من العيلة ولحم ودم",
+          "glossEs": null,
+          "exampleEs": "Nos reunimos con todos los parientes en Navidad.",
+          "exampleAr": "نجتمع مع جميع الأقارب في عيد الميلاد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Nos reunimos con todos los parientes en Navidad.",
+          "ar": "نجتمع مع جميع الأقارب في عيد الميلاد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sobrina",
+      "normalized": "sobrina",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "sobrinas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sobɾˈina/",
+      "pronunciationHintAr": "سوبرينا",
+      "internalRank": 87,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ابنة الأخ أو الأخت اللطيفة",
+          "meaningArEg": "بنت الأخ أو بنت الأخت",
+          "glossEs": null,
+          "exampleEs": "Compró un cuento ilustrado para su pequeña sobrina.",
+          "exampleAr": "اشترى قصة مصورة لابنة أخته الصغيرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Compró un cuento ilustrado para su pequeña sobrina.",
+          "ar": "اشترى قصة مصورة لابنة أخته الصغيرة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sobrino",
+      "normalized": "sobrino",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "sobrinos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sobɾˈino/",
+      "pronunciationHintAr": "سوبرينو",
+      "internalRank": 88,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ابن الأخ أو الأخت الشقي والمحبوب",
+          "meaningArEg": "ابن الأخ أو ابن الأخت",
+          "glossEs": null,
+          "exampleEs": "Su simpático sobrino aprobó el examen de conducir.",
+          "exampleAr": "اجتاز ابن أخيه اللطيف اختبار القيادة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su simpático sobrino aprobó el examen de conducir.",
+          "ar": "اجتاز ابن أخيه اللطيف اختبار القيادة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "suegra",
+      "normalized": "suegra",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "suegras",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/suˈegɾa/",
+      "pronunciationHintAr": "سويجرا",
+      "internalRank": 89,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حماة أم الزوج أو أم الزوجة",
+          "meaningArEg": "حماة أم الزوج أو الزوجة",
+          "glossEs": null,
+          "exampleEs": "Mi suegra cocina unas croquetas caseras inmejorables.",
+          "exampleAr": "تطهو حماتي كروكيت بيتي لا يعلى عليه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi suegra cocina unas croquetas caseras inmejorables.",
+          "ar": "تطهو حماتي كروكيت بيتي لا يعلى عليه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "suegro",
+      "normalized": "suegro",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "suegros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/suˈegɾo/",
+      "pronunciationHintAr": "سويجرو",
+      "internalRank": 90,
+      "tags": [
+        "domain:family",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حمو والد الزوج أو والد الزوجة",
+          "meaningArEg": "حما والد الزوج أو الزوجة",
+          "glossEs": null,
+          "exampleEs": "Mi suegro me enseñó los secretos de la huerta.",
+          "exampleAr": "علمني حماي أسرار الزراعة في البستان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mi suegro me enseñó los secretos de la huerta.",
+          "ar": "علمني حماي أسرار الزراعة في البستان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "abogado",
+      "normalized": "abogado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "abogados",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/abogˈado/",
+      "pronunciationHintAr": "ابوجادو",
+      "internalRank": 91,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "محام خبير بالقوانين يدافع عن الموكلين",
+          "meaningArEg": "محامي شاطر بيدافع في المحكمة",
+          "glossEs": null,
+          "exampleEs": "El prestigioso abogado defendió el caso con elocuencia.",
+          "exampleAr": "دافع المحامي المرموق عن القضية بفصاحة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El prestigioso abogado defendió el caso con elocuencia.",
+          "ar": "دافع المحامي المرموق عن القضية بفصاحة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "actor",
+      "normalized": "actor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "actores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aktˈoɾ/",
+      "pronunciationHintAr": "اكتور",
+      "internalRank": 92,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ممثل بارع يؤدي الأدوار في المسرح والسينما",
+          "meaningArEg": "ممثل سينما ومسرح شاطر",
+          "glossEs": null,
+          "exampleEs": "El veterano actor recibió una cerrada ovación al final.",
+          "exampleAr": "تلقى الممثل المخضرم تصفيقاً حاراً في الختام.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El veterano actor recibió una cerrada ovación al final.",
+          "ar": "تلقى الممثل المخضرم تصفيقاً حاراً في الختام.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "actriz",
+      "normalized": "actriz",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "actrices",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aktɾˈiθ/",
+      "pronunciationHintAr": "اكتريث",
+      "internalRank": 93,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ممثلة موهوبة تبدع في تقمص الشخصيات الدرامية",
+          "meaningArEg": "ممثلة موهوبة في المسلسلات والأفلام",
+          "glossEs": null,
+          "exampleEs": "La actriz protagonista interpretó el papel con brillantez.",
+          "exampleAr": "أدت الممثلة البطلة الدور ببراعة فائقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La actriz protagonista interpretó el papel con brillantez.",
+          "ar": "أدت الممثلة البطلة الدور ببراعة فائقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "albañil",
+      "normalized": "albañil",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "albañiles",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/albaɲˈil/",
+      "pronunciationHintAr": "البانييل",
+      "internalRank": 94,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بنّاء ماهر يشيد الجدران بالحجارة والإسمنت",
+          "meaningArEg": "بنا شاطر بيبني حيطان وطوب",
+          "glossEs": null,
+          "exampleEs": "El albañil levantó el muro con ladrillos rectos.",
+          "exampleAr": "أقام البناء الجدار بطوب مستو تماماً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El albañil levantó el muro con ladrillos rectos.",
+          "ar": "أقام البناء الجدار بطوب مستو تماماً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "alcalde",
+      "normalized": "alcalde",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "alcaldes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/alkˈalde/",
+      "pronunciationHintAr": "الكالدي",
+      "internalRank": 95,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رئيس البلدية / عمدة المدينة المنتخب",
+          "meaningArEg": "عمدة المحافظة ورئيس البلدية",
+          "glossEs": null,
+          "exampleEs": "El nuevo alcalde inauguró la remodelada biblioteca municipal.",
+          "exampleAr": "افتتح رئيس البلدية الجديد المكتبة العامة بعد تجديدها.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El nuevo alcalde inauguró la remodelada biblioteca municipal.",
+          "ar": "افتتح رئيس البلدية الجديد المكتبة العامة بعد تجديدها.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "arquitecto",
+      "normalized": "arquitecto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "arquitectos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aɾkuitˈekto/",
+      "pronunciationHintAr": "اركويتيكتو",
+      "internalRank": 96,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مهندس معماري يصمم المباني والمنشآت الحديثة",
+          "meaningArEg": "مهندس ديكور ومعماري للبيوت",
+          "glossEs": null,
+          "exampleEs": "El galardonado arquitecto diseñó un rascacielos sostenible.",
+          "exampleAr": "صمم المهندس المعماري الحائز على جوائز ناطحة سحاب مستدامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El galardonado arquitecto diseñó un rascacielos sostenible.",
+          "ar": "صمم المهندس المعماري الحائز على جوائز ناطحة سحاب مستدامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "artesano",
+      "normalized": "artesano",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "artesanos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aɾtesˈano/",
+      "pronunciationHintAr": "ارتيسانو",
+      "internalRank": 97,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حرفي فنان يصنع التحف والمصنوعات اليدوية",
+          "meaningArEg": "حرفي شاطر بيعمل تحف بالإيد",
+          "glossEs": null,
+          "exampleEs": "El diestro artesano modela vasijas de barro en el torno.",
+          "exampleAr": "يشكل الحرفي الماهر الأواني الفخارية على عجلة الخزاف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El diestro artesano modela vasijas de barro en el torno.",
+          "ar": "يشكل الحرفي الماهر الأواني الفخارية على عجلة الخزاف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "artista",
+      "normalized": "artista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "artistas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aɾtˈista/",
+      "pronunciationHintAr": "ارتيستا",
+      "internalRank": 98,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فنان مبدع يرسم ويعبر عن الجمال",
+          "meaningArEg": "فنان مبدع ورسام شاطر",
+          "glossEs": null,
+          "exampleEs": "El joven artista expone sus lienzos en la galería.",
+          "exampleAr": "يعرض الفنان الشاب لوحاته في المعرض التشكيلي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El joven artista expone sus lienzos en la galería.",
+          "ar": "يعرض الفنان الشاب لوحاته في المعرض التشكيلي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "autor",
+      "normalized": "autor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "autores",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/autˈoɾ/",
+      "pronunciationHintAr": "اوتور",
+      "internalRank": 99,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مؤلف كتاب أو رواية أدبية / كاتب",
+          "meaningArEg": "مؤلف كتب وروايات",
+          "glossEs": null,
+          "exampleEs": "El célebre autor firmó ejemplares de su nueva novela.",
+          "exampleAr": "وقّع المؤلف الشهير نسخاً من روايته الجديدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El célebre autor firmó ejemplares de su nueva novela.",
+          "ar": "وقّع المؤلف الشهير نسخاً من روايته الجديدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "azafata",
+      "normalized": "azafata",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "azafatas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aθafˈata/",
+      "pronunciationHintAr": "اثافاتا",
+      "internalRank": 100,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مضيفة طيران تسهر على راحة الركاب في الجو",
+          "meaningArEg": "مضيفة طيران في الطيارة",
+          "glossEs": null,
+          "exampleEs": "La amable azafata sirvió bebidas calientes durante el vuelo.",
+          "exampleAr": "قدمت المضيفة اللطيفة مشروبات ساخنة خلال الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La amable azafata sirvió bebidas calientes durante el vuelo.",
+          "ar": "قدمت المضيفة اللطيفة مشروبات ساخنة خلال الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "barbero",
+      "normalized": "barbero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "barberos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/baɾbˈeɾo/",
+      "pronunciationHintAr": "باربيرو",
+      "internalRank": 101,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حلاق رجالي يقص الشعر ويهذب اللحى",
+          "meaningArEg": "حلاق رجالي لشعر ودقن",
+          "glossEs": null,
+          "exampleEs": "El tradicional barbero afeitó la barba con navaja.",
+          "exampleAr": "حلق الحلاق التقليدي اللحية بشفرة مستقيمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El tradicional barbero afeitó la barba con navaja.",
+          "ar": "حلق الحلاق التقليدي اللحية بشفرة مستقيمة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cantante",
+      "normalized": "cantante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "cantantes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kantˈante/",
+      "pronunciationHintAr": "كانتانتي",
+      "internalRank": 102,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مطرب مغن يطرب الأسماع بصوته الرخيم",
+          "meaningArEg": "مغني ومطرب بصوت حلو",
+          "glossEs": null,
+          "exampleEs": "El famoso cantante ofreció un concierto multitudinario inolvidable.",
+          "exampleAr": "أقام المطرب الشهير حفلاً غنائياً جماهيرياً لا ينسى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El famoso cantante ofreció un concierto multitudinario inolvidable.",
+          "ar": "أقام المطرب الشهير حفلاً غنائياً جماهيرياً لا ينسى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "carpintero",
+      "normalized": "carpintero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "carpinteros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaɾpintˈeɾo/",
+      "pronunciationHintAr": "كاربينتيرو",
+      "internalRank": 103,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نجار يصنع الأثاث والأبواب من الخشب النبيل",
+          "meaningArEg": "نجار شاطر بيعمل عفش وأبواب خشب",
+          "glossEs": null,
+          "exampleEs": "El experto carpintero talló una mesa de roble macizo.",
+          "exampleAr": "نحت النجار الخبير طاولة من خشب السنديان الصلب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El experto carpintero talló una mesa de roble macizo.",
+          "ar": "نحت النجار الخبير طاولة من خشب السنديان الصلب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cartero",
+      "normalized": "cartero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "carteros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kaɾtˈeɾo/",
+      "pronunciationHintAr": "كارتيرو",
+      "internalRank": 104,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ساعي بريد يوصل الرسائل والطرود إلى المنازل",
+          "meaningArEg": "بوسطجي بيوصل جوابات وطرود",
+          "glossEs": null,
+          "exampleEs": "El puntual cartero dejó las cartas en el buzón.",
+          "exampleAr": "وضع ساعي البريد الملتزم الرسائل في صندوق البريد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El puntual cartero dejó las cartas en el buzón.",
+          "ar": "وضع ساعي البريد الملتزم الرسائل في صندوق البريد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "científico",
+      "normalized": "científico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "científicos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θientˈifiko/",
+      "pronunciationHintAr": "ثيينتيفيكو",
+      "internalRank": 105,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عالم باحث يكتشف أسرار الطبيعة في المختبر",
+          "meaningArEg": "عالم وأستاذ أبحاث في المعمل",
+          "glossEs": null,
+          "exampleEs": "Los científicos investigan una cura eficaz contra el virus.",
+          "exampleAr": "يبحث العلماء عن علاج فعال ضد الفيروس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los científicos investigan una cura eficaz contra el virus.",
+          "ar": "يبحث العلماء عن علاج فعال ضد الفيروس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cocinero",
+      "normalized": "cocinero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cocineros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/koθinˈeɾo/",
+      "pronunciationHintAr": "كوثينيرو",
+      "internalRank": 106,
+      "tags": [
+        "domain:food",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طاه محترف يعد أشهى الأطباق في المطعم / شيف",
+          "meaningArEg": "شيف وطباخ شاطر في المطبخ",
+          "glossEs": null,
+          "exampleEs": "El reputado cocinero preparó un guiso tradicional delicioso.",
+          "exampleAr": "أعد الطاهي المرموق يخنة تقليدية شهية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El reputado cocinero preparó un guiso tradicional delicioso.",
+          "ar": "أعد الطاهي المرموق يخنة تقليدية شهية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "comerciante",
+      "normalized": "comerciante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "comerciantes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/komeɾθiˈante/",
+      "pronunciationHintAr": "كوميرثيانتي",
+      "internalRank": 107,
+      "tags": [
+        "domain:shopping",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تاجر يبيع ويشتري السلع في الأسواق",
+          "meaningArEg": "تاجر بيبيع ويشتري بضاعة",
+          "glossEs": null,
+          "exampleEs": "El honrado comerciante ofrece productos frescos de la huerta.",
+          "exampleAr": "يقدم التاجر الأمين منتجات طازجة من البستان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El honrado comerciante ofrece productos frescos de la huerta.",
+          "ar": "يقدم التاجر الأمين منتجات طازجة من البستان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conductor",
+      "normalized": "conductor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "conductores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/konduktˈoɾ/",
+      "pronunciationHintAr": "كوندوكتور",
+      "internalRank": 108,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سائق يقود الحافلة أو السيارة بأمان وحذر",
+          "meaningArEg": "سواق عربية أو أوتوبيس",
+          "glossEs": null,
+          "exampleEs": "El prudente conductor respeta las señales de tráfico.",
+          "exampleAr": "يحترم السائق الحذر إشارات المرور.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El prudente conductor respeta las señales de tráfico.",
+          "ar": "يحترم السائق الحذر إشارات المرور.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dentista",
+      "normalized": "dentista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "dentistas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dentˈista/",
+      "pronunciationHintAr": "دينتيستا",
+      "internalRank": 109,
+      "tags": [
+        "domain:health",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طبيب أسنان يعالج التسوس ويهتم بصحة الفم",
+          "meaningArEg": "دكتور سنان بيعالج التسوس",
+          "glossEs": null,
+          "exampleEs": "Visita al dentista una vez al año para una limpieza dental.",
+          "exampleAr": "يزور طبيب الأسنان مرة في العام لإجراء تنظيف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Visita al dentista una vez al año para una limpieza dental.",
+          "ar": "يزور طبيب الأسنان مرة في العام لإجراء تنظيف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dependiente",
+      "normalized": "dependiente",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "dependientes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dependiˈente/",
+      "pronunciationHintAr": "ديبينديينتي",
+      "internalRank": 110,
+      "tags": [
+        "domain:shopping",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بائع في متجر يخدم الزبائن ويساعدهم في الشراء",
+          "meaningArEg": "بياع شاطر في محل بيع",
+          "glossEs": null,
+          "exampleEs": "El dependiente amable me ayudó a encontrar la talla adecuada.",
+          "exampleAr": "ساعدني البائع اللطيف في العثور على المقاس المناسب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El dependiente amable me ayudó a encontrar la talla adecuada.",
+          "ar": "ساعدني البائع اللطيف في العثور على المقاس المناسب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "director",
+      "normalized": "director",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "directores",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/diɾektˈoɾ/",
+      "pronunciationHintAr": "ديريكتور",
+      "internalRank": 111,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مدير يقود المؤسسة أو الشركة نحو النجاح / مخرج",
+          "meaningArEg": "مدير شركة أو مخرج سينما",
+          "glossEs": null,
+          "exampleEs": "El exigente director presidió la junta general de accionistas.",
+          "exampleAr": "ترأس المدير الحازم الاجتماع العام للمساهمين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El exigente director presidió la junta general de accionistas.",
+          "ar": "ترأس المدير الحازم الاجتماع العام للمساهمين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "economista",
+      "normalized": "economista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "economistas",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ekonomˈista/",
+      "pronunciationHintAr": "يكونوميستا",
+      "internalRank": 112,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خبير اقتصادي يحلل الأسواق والميزانيات المالية",
+          "meaningArEg": "خبير اقتصاد وتحليل مالي",
+          "glossEs": null,
+          "exampleEs": "El analista economista pronosticó un crecimiento sostenido del empleo.",
+          "exampleAr": "توقع الخبير الاقتصادي نمواً مستداماً في الوظائف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El analista economista pronosticó un crecimiento sostenido del empleo.",
+          "ar": "توقع الخبير الاقتصادي نمواً مستداماً في الوظائف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "electricista",
+      "normalized": "electricista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "electricistas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/elektɾiθˈista/",
+      "pronunciationHintAr": "يليكتريثيستا",
+      "internalRank": 113,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فني كهرباء يصلح الأسلاك والمفاتيح الكهربائية",
+          "meaningArEg": "فني كهربائي بيصلح الأسلاك",
+          "glossEs": null,
+          "exampleEs": "El electricista arregló el cortocircuito en pocos minutos.",
+          "exampleAr": "أصلح فني الكهرباء التماس الكهربائي في دقائق قليلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El electricista arregló el cortocircuito en pocos minutos.",
+          "ar": "أصلح فني الكهرباء التماس الكهربائي في دقائق قليلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "empresario",
+      "normalized": "empresario",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "empresarios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/empɾesaɾˈio/",
+      "pronunciationHintAr": "يمبريساريو",
+      "internalRank": 114,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رجل أعمال يدير مشاريعه واستثماراته التجارية",
+          "meaningArEg": "رجل أعمال ومستثمر مشاريع",
+          "glossEs": null,
+          "exampleEs": "El audaz empresario fundó una empresa emergente tecnológica.",
+          "exampleAr": "أسس رجل الأعمال الجريء شركة تقنية ناشئة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El audaz empresario fundó una empresa emergente tecnológica.",
+          "ar": "أسس رجل الأعمال الجريء شركة تقنية ناشئة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "escritor",
+      "normalized": "escritor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "escritores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/eskɾitˈoɾ/",
+      "pronunciationHintAr": "يسكريتور",
+      "internalRank": 115,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كاتب أديب يؤلف القصص والروايات الرائعة",
+          "meaningArEg": "كاتب روايات وأديب شاطر",
+          "glossEs": null,
+          "exampleEs": "El novelista escritor pasó meses documentándose para su libro.",
+          "exampleAr": "قضى الكاتب الروائي أشهراً في التوثيق لكتابه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El novelista escritor pasó meses documentándose para su libro.",
+          "ar": "قضى الكاتب الروائي أشهراً في التوثيق لكتابه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "estudiante",
+      "normalized": "estudiante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "estudiantes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/estudiˈante/",
+      "pronunciationHintAr": "يستوديانتي",
+      "internalRank": 116,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طالب علم يجد في دروسه لتحصيل المعرفة",
+          "meaningArEg": "طالب في مدرسة أو جامعة",
+          "glossEs": null,
+          "exampleEs": "La aplicada estudiante sacó matrícula de honor en Historia.",
+          "exampleAr": "نالت الطالبة المجتهدة مرتبة الشرف في التاريخ.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aplicada estudiante sacó matrícula de honor en Historia.",
+          "ar": "نالت الطالبة المجتهدة مرتبة الشرف في التاريخ.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "fontanero",
+      "normalized": "fontanero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "fontaneros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/fontanˈeɾo/",
+      "pronunciationHintAr": "فونتانيرو",
+      "internalRank": 117,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سباك ماهر يصلح أنابيب المياه والصنابير / سمكري",
+          "meaningArEg": "سباك شاطر بيصلح حنفيات ومواسير",
+          "glossEs": null,
+          "exampleEs": "El fontanero reparó la fuga de agua bajo el fregadero.",
+          "exampleAr": "أصلح السباك تسرب الماء أسفل حوض المطبخ.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El fontanero reparó la fuga de agua bajo el fregadero.",
+          "ar": "أصلح السباك تسرب الماء أسفل حوض المطبخ.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "fotógrafo",
+      "normalized": "fotógrafo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "fotógrafos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/fotˈogɾafo/",
+      "pronunciationHintAr": "فوتوجرافو",
+      "internalRank": 118,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مصور فوتوغرافي يلتقط أروع اللحظات بعدسته",
+          "meaningArEg": "مصوراتي كاميرا وصور فوتوغرافية",
+          "glossEs": null,
+          "exampleEs": "El hábil fotógrafo captó el vuelo del águila con maestría.",
+          "exampleAr": "التقط المصور الماهر طيران العقاب ببراعة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El hábil fotógrafo captó el vuelo del águila con maestría.",
+          "ar": "التقط المصور الماهر طيران العقاب ببراعة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "guardia",
+      "normalized": "guardia",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "guardias",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/guaɾdˈia/",
+      "pronunciationHintAr": "جوارديا",
+      "internalRank": 119,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حارس أمن يسهر على حماية المنشآت والنظام",
+          "meaningArEg": "حارس أمن وخفير منشآت",
+          "glossEs": null,
+          "exampleEs": "El atento guardia de seguridad vigila el acceso al museo.",
+          "exampleAr": "يراقب حارس الأمن اليقظ مدخل المتحف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El atento guardia de seguridad vigila el acceso al museo.",
+          "ar": "يراقب حارس الأمن اليقظ مدخل المتحف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ingeniero",
+      "normalized": "ingeniero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ingenieros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/inxeniˈeɾo/",
+      "pronunciationHintAr": "ينخينييرو",
+      "internalRank": 120,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مهندس يصمم الأنظمة التقنية والآلات المعقدة",
+          "meaningArEg": "مهندس تصميم ومشاريع",
+          "glossEs": null,
+          "exampleEs": "El ingeniero industrial supervisa la línea de montaje automatizada.",
+          "exampleAr": "يشرف المهندس الصناعي على خط التجميع الآلي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ingeniero industrial supervisa la línea de montaje automatizada.",
+          "ar": "يشرف المهندس الصناعي على خط التجميع الآلي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "jardinero",
+      "normalized": "jardinero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "jardineros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/xaɾdinˈeɾo/",
+      "pronunciationHintAr": "خاردينيرو",
+      "internalRank": 121,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بستاني يعتني بالزهور ويشذب أشجار الحدائق",
+          "meaningArEg": "جنايني بيقص الشجر ويروي الورد",
+          "glossEs": null,
+          "exampleEs": "El laborioso jardinero riega los rosales al atardecer.",
+          "exampleAr": "يروي البستاني الدؤوب شجيرات الورد عند الغسق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El laborioso jardinero riega los rosales al atardecer.",
+          "ar": "يروي البستاني الدؤوب شجيرات الورد عند الغسق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "juez",
+      "normalized": "juez",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "jueces",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/xuˈeθ/",
+      "pronunciationHintAr": "خويث",
+      "internalRank": 122,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قاض يحكم بالعدل ويطبق القوانين بنزاهة",
+          "meaningArEg": "قاضي محكمة بيحكم بالعدل",
+          "glossEs": null,
+          "exampleEs": "El honorable juez dictó sentencia conforme a derecho.",
+          "exampleAr": "أصدر القاضي الجليل حكمه وفقاً للقانون.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El honorable juez dictó sentencia conforme a derecho.",
+          "ar": "أصدر القاضي الجليل حكمه وفقاً للقانون.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mecánico",
+      "normalized": "mecánico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "mecánicos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/mekˈaniko/",
+      "pronunciationHintAr": "ميكانيكو",
+      "internalRank": 123,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ميكانيكي يصلح محركات السيارات والمركبات",
+          "meaningArEg": "ميكانيكي عربيات بيصلح الموتور",
+          "glossEs": null,
+          "exampleEs": "El mecánico de confianza cambió las pastillas de freno gastadas.",
+          "exampleAr": "غيّر الميكانيكي الموثوق أقمشة الفرامل المتآكلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El mecánico de confianza cambió las pastillas de freno gastadas.",
+          "ar": "غيّر الميكانيكي الموثوق أقمشة الفرامل المتآكلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "músico",
+      "normalized": "músico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "músicos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/mˈusiko/",
+      "pronunciationHintAr": "موسيكو",
+      "internalRank": 124,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موسيقي يعزف الألحان العذبة على آلاته",
+          "meaningArEg": "موسيقي بيعزف ألحان حلوة",
+          "glossEs": null,
+          "exampleEs": "El virtuoso músico interpretó un concierto de violín bellísimo.",
+          "exampleAr": "عزف الموسيقي البارع كونشيرتو كمان بديعاً للغاية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El virtuoso músico interpretó un concierto de violín bellísimo.",
+          "ar": "عزف الموسيقي البارع كونشيرتو كمان بديعاً للغاية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "obrero",
+      "normalized": "obrero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "obreros",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/obɾˈeɾo/",
+      "pronunciationHintAr": "وبريرو",
+      "internalRank": 125,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عامل يكدح بيده في المصانع وورش البناء",
+          "meaningArEg": "عامل بيشتغل بإيده في المصنع",
+          "glossEs": null,
+          "exampleEs": "Los obreros de la fábrica reclaman mejores condiciones salariales.",
+          "exampleAr": "يطالب عمال المصنع بتحسين الظروف المعيشية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los obreros de la fábrica reclaman mejores condiciones salariales.",
+          "ar": "يطالب عمال المصنع بتحسين الظروف المعيشية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "panadero",
+      "normalized": "panadero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "panaderos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/panadˈeɾo/",
+      "pronunciationHintAr": "باناديرو",
+      "internalRank": 126,
+      "tags": [
+        "domain:food",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خباز يعجن الدقيق ويخبز الخبز الساخن فجراً",
+          "meaningArEg": "خباز بيعجن ويخبز عيش في الفرن",
+          "glossEs": null,
+          "exampleEs": "El madrugador panadero saca del horno barras crujientes de pan.",
+          "exampleAr": "يخرج الخباز المبكر من الفرن أرغفة خبز مقرمشة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El madrugador panadero saca del horno barras crujientes de pan.",
+          "ar": "يخرج الخباز المبكر من الفرن أرغفة خبز مقرمشة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "peluquero",
+      "normalized": "peluquero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "peluqueros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pelukuˈeɾo/",
+      "pronunciationHintAr": "بيلوكويرو",
+      "internalRank": 127,
+      "tags": [
+        "domain:daily",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مصفف شعر يقص ويسرح الشعر بأحدث القصات",
+          "meaningArEg": "كوافير وحلاق شعر ستايل",
+          "glossEs": null,
+          "exampleEs": "El estilista peluquero le hizo un moderno corte de pelo.",
+          "exampleAr": "قص مصفف الشعر شعرها بقصة عصرية أنيقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El estilista peluquero le hizo un moderno corte de pelo.",
+          "ar": "قص مصفف الشعر شعرها بقصة عصرية أنيقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "periodista",
+      "normalized": "periodista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "periodistas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/peɾiodˈista/",
+      "pronunciationHintAr": "بيريوديستا",
+      "internalRank": 128,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صحفي يبحث عن الأخبار وينقل الحقائق للجمهور",
+          "meaningArEg": "صحفي إخباري بينقل الأخبار",
+          "glossEs": null,
+          "exampleEs": "El intrépido periodista cubrió la noticia desde el lugar de los hechos.",
+          "exampleAr": "غطى الصحفي الجريء الخبر من موقع الأحداث.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El intrépido periodista cubrió la noticia desde el lugar de los hechos.",
+          "ar": "غطى الصحفي الجريء الخبر من موقع الأحداث.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "piloto",
+      "normalized": "piloto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pilotos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pilˈoto/",
+      "pronunciationHintAr": "بيلوتو",
+      "internalRank": 129,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طيار يقود الطائرات عبر القارات بمهارة فائقة",
+          "meaningArEg": "طيار كابتن طيارة سفر",
+          "glossEs": null,
+          "exampleEs": "El veterano piloto aterrizó la aeronave con suavidad en la pista.",
+          "exampleAr": "هبط الطيار المخضرم بالطائرة بنعومة على المدرج.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El veterano piloto aterrizó la aeronave con suavidad en la pista.",
+          "ar": "هبط الطيار المخضرم بالطائرة بنعومة على المدرج.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pintor",
+      "normalized": "pintor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pintores",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pintˈoɾ/",
+      "pronunciationHintAr": "بينتور",
+      "internalRank": 130,
+      "tags": [
+        "domain:arts",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رسام تشكيلي يمزج الألوان على قماشة اللوحة",
+          "meaningArEg": "رسام لوحات وفنان ألوان",
+          "glossEs": null,
+          "exampleEs": "El maestro pintor plasmó la luz dorada del atardecer.",
+          "exampleAr": "جسد الرسام الأستاذ الضوء الذهبي لغروب الشمس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El maestro pintor plasmó la luz dorada del atardecer.",
+          "ar": "جسد الرسام الأستاذ الضوء الذهبي لغروب الشمس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "psicólogo",
+      "normalized": "psicólogo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "psicólogos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/psikˈologo/",
+      "pronunciationHintAr": "بسيكولوجو",
+      "internalRank": 131,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أخصائي نفسي يساعد الأفراد على التوازن النفسي",
+          "meaningArEg": "دكتور نفساني بيعالج الاكتئاب",
+          "glossEs": null,
+          "exampleEs": "La empática psicóloga ayuda a superar la ansiedad y el estrés (psicólogo).",
+          "exampleAr": "تساعد الأخصائية النفسية المتعاطفة في تجاوز القلق والتوتر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La empática psicóloga ayuda a superar la ansiedad y el estrés (psicólogo).",
+          "ar": "تساعد الأخصائية النفسية المتعاطفة في تجاوز القلق والتوتر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "secretario",
+      "normalized": "secretario",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "secretarios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sekɾetaɾˈio/",
+      "pronunciationHintAr": "سيكريتاريو",
+      "internalRank": 132,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سكرتير ينظم المواعيد والملفات في المكتب",
+          "meaningArEg": "سكرتير مكتب وترتيب مواعيد",
+          "glossEs": null,
+          "exampleEs": "El eficiente secretario redactó el acta de la asamblea.",
+          "exampleAr": "حرر السكرتير الكفء محضر جلسة الجمعية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El eficiente secretario redactó el acta de la asamblea.",
+          "ar": "حرر السكرتير الكفء محضر جلسة الجمعية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "taxista",
+      "normalized": "taxista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "taxistas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/taksˈista/",
+      "pronunciationHintAr": "تاكسيستا",
+      "internalRank": 133,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سائق سيارة أجرة يجوب شوارع المدينة لنقل الركاب",
+          "meaningArEg": "سواق تاكسي أجرة في الشارع",
+          "glossEs": null,
+          "exampleEs": "El amable taxista nos llevó al hotel por la ruta más corta.",
+          "exampleAr": "أوصلنا سائق الأجرة اللطيف إلى الفندق عبر أقصر طريق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El amable taxista nos llevó al hotel por la ruta más corta.",
+          "ar": "أوصلنا سائق الأجرة اللطيف إلى الفندق عبر أقصر طريق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "traductor",
+      "normalized": "traductor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "traductores",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾaduktˈoɾ/",
+      "pronunciationHintAr": "ترادوكتور",
+      "internalRank": 134,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مترجم ينقل المعاني بين اللغات بأمانة ودقة",
+          "meaningArEg": "مترجم لغات ونقل نصوص",
+          "glossEs": null,
+          "exampleEs": "El meticuloso traductor vertió la obra maestra al árabe clásico.",
+          "exampleAr": "نقل المترجم الدقيق التحفة الأدبية إلى العربية الفصحى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El meticuloso traductor vertió la obra maestra al árabe clásico.",
+          "ar": "نقل المترجم الدقيق التحفة الأدبية إلى العربية الفصحى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "veterinario",
+      "normalized": "veterinario",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "veterinarios",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/beteɾinaɾˈio/",
+      "pronunciationHintAr": "بيتيريناريو",
+      "internalRank": 135,
+      "tags": [
+        "domain:health",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طبيب بيطري يعالج الحيوانات الأليفة والبرية",
+          "meaningArEg": "دكتور بيطري بيعالج الحيوانات",
+          "glossEs": null,
+          "exampleEs": "El cariñoso veterinario vacunó al cachorro con delicadeza.",
+          "exampleAr": "طعم الطبيب البيطري العطوف الجرو الصغير برقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cariñoso veterinario vacunó al cachorro con delicadeza.",
+          "ar": "طعم الطبيب البيطري العطوف الجرو الصغير برقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "asignatura",
+      "normalized": "asignatura",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "asignaturas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/asignatˈuɾa/",
+      "pronunciationHintAr": "اسيجناتورا",
+      "internalRank": 136,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مادة دراسية كالتاريخ والرياضيات واللغات",
+          "meaningArEg": "مادة دراسة في المدرسة أو الكلية",
+          "glossEs": null,
+          "exampleEs": "La asignatura de Literatura Española es su favorita del curso.",
+          "exampleAr": "مادة الأدب الإسباني هي مادته المفضلة في المقرر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La asignatura de Literatura Española es su favorita del curso.",
+          "ar": "مادة الأدب الإسباني هي مادته المفضلة في المقرر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aula",
+      "normalized": "aula",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aulas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aˈula/",
+      "pronunciationHintAr": "اولا",
+      "internalRank": 137,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قاعة درس واسعة ومجهزة للدراسة / فصل",
+          "meaningArEg": "فصل مدرسة أو قاعة محاضرات",
+          "glossEs": null,
+          "exampleEs": "Los pupitres del aula están dispuestos en semicírculo.",
+          "exampleAr": "رُتبت مقاعد قاعة الدرس في شكل نصف دائري.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los pupitres del aula están dispuestos en semicírculo.",
+          "ar": "رُتبت مقاعد قاعة الدرس في شكل نصف دائري.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "beca",
+      "normalized": "beca",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "becas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bˈeka/",
+      "pronunciationHintAr": "بيكا",
+      "internalRank": 138,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "منحة دراسية مالية لمساعدة الطلاب المتفوقين",
+          "meaningArEg": "منحة دراسة وتمويل تعليمي",
+          "glossEs": null,
+          "exampleEs": "Obtuvo una beca de investigación para estudiar en Salamanca.",
+          "exampleAr": "حصل على منحة بحثية للدراسة في سلامنكا.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Obtuvo una beca de investigación para estudiar en Salamanca.",
+          "ar": "حصل على منحة بحثية للدراسة في سلامنكا.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "calificación",
+      "normalized": "calificación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "calificacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kalifikaθiˈon/",
+      "pronunciationHintAr": "كاليفيكاثيون",
+      "internalRank": 139,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "علامة أو درجة تقييم الامتحان الدراسي",
+          "meaningArEg": "درجة وتقدير في الامتحان",
+          "glossEs": null,
+          "exampleEs": "Logró una excelente calificación en el examen final.",
+          "exampleAr": "حقق درجة ممتازة في الامتحان النهائي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Logró una excelente calificación en el examen final.",
+          "ar": "حقق درجة ممتازة في الامتحان النهائي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "campus",
+      "normalized": "campus",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "campus",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kˈampus/",
+      "pronunciationHintAr": "كامبوس",
+      "internalRank": 140,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حرم جامعي يضم الكليات والمكتبات والحدائق",
+          "meaningArEg": "حرم جامعة بكلياته وملاعبه",
+          "glossEs": null,
+          "exampleEs": "El verde campus universitario bulle de estudiantes activos.",
+          "exampleAr": "يضج الحرم الجامعي الأخضر بالطلاب النشطين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El verde campus universitario bulle de estudiantes activos.",
+          "ar": "يضج الحرم الجامعي الأخضر بالطلاب النشطين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "carrera",
+      "normalized": "carrera",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "carreras",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kaɾɾˈeɾa/",
+      "pronunciationHintAr": "كارريرا",
+      "internalRank": 141,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تخصص جامعي / سباق سرعة / مسيرة مهنية",
+          "meaningArEg": "تخصص دراسة بالجامعة أو سباق",
+          "glossEs": null,
+          "exampleEs": "Estudia la carrera de Derecho con gran vocación.",
+          "exampleAr": "يدرس تخصص القانون بشغف كبير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Estudia la carrera de Derecho con gran vocación.",
+          "ar": "يدرس تخصص القانون بشغف كبير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conocimiento",
+      "normalized": "conocimiento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "conocimientos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konoθimiˈento/",
+      "pronunciationHintAr": "كونوثيميينتو",
+      "internalRank": 142,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معرفة وعلم مكتسب عبر التعلم والخبرة",
+          "meaningArEg": "علم ومعرفة وخبرة متراكمة",
+          "glossEs": null,
+          "exampleEs": "El conocimiento profundo de las lenguas abre muchas puertas.",
+          "exampleAr": "يفتح الإلمام العميق باللغات أبواباً كثيرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El conocimiento profundo de las lenguas abre muchas puertas.",
+          "ar": "يفتح الإلمام العميق باللغات أبواباً كثيرة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "deberes",
+      "normalized": "deberes",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "deberes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/debˈeɾes/",
+      "pronunciationHintAr": "ديبيريس",
+      "internalRank": 143,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "واجبات وفروض منزلية يكلف بها المعلم طلابه",
+          "meaningArEg": "واجبات مدرسة ومذاكرة بيتية",
+          "glossEs": null,
+          "exampleEs": "Termina todos sus deberes escolares antes de salir a jugar.",
+          "exampleAr": "ينهي جميع واجباته المدرسية قبل الخروج للعب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Termina todos sus deberes escolares antes de salir a jugar.",
+          "ar": "ينهي جميع واجباته المدرسية قبل الخروج للعب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "diccionario",
+      "normalized": "diccionario",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "diccionarios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dikθionaɾˈio/",
+      "pronunciationHintAr": "ديكثيوناريو",
+      "internalRank": 144,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معجم لغوي يفسر معاني الكلمات ومترادفاتها",
+          "meaningArEg": "قاموس كلمات ومعاني لغات",
+          "glossEs": null,
+          "exampleEs": "Consulta el diccionario bilingüe para conocer la palabra exacta.",
+          "exampleAr": "راجع المعجم ثنائي اللغة لمعرفة الكلمة الدقيقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Consulta el diccionario bilingüe para conocer la palabra exacta.",
+          "ar": "راجع المعجم ثنائي اللغة لمعرفة الكلمة الدقيقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "diploma",
+      "normalized": "diploma",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "diplomas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/diplˈoma/",
+      "pronunciationHintAr": "ديبلوما",
+      "internalRank": 145,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شهادة تخرج رسمية معتمدة تمنح للناجحين",
+          "meaningArEg": "شهادة تخرج وتقدير رسمي",
+          "glossEs": null,
+          "exampleEs": "Recibió su diploma de graduación en un acto solemne.",
+          "exampleAr": "استلم شهادة تخرجه في حفل مهيب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Recibió su diploma de graduación en un acto solemne.",
+          "ar": "استلم شهادة تخرجه في حفل مهيب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ejercicio",
+      "normalized": "ejercicio",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ejercicios",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/exeɾθiθˈio/",
+      "pronunciationHintAr": "يخيرثيثيو",
+      "internalRank": 146,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تمرين تطبيقي لترسيخ القواعد / تمرين بدني",
+          "meaningArEg": "تمرين حل وتطبيق أو تمرين رياضة",
+          "glossEs": null,
+          "exampleEs": "Hizo todos los ejercicios prácticos de gramática española.",
+          "exampleAr": "حل جميع التمارين التطبيقية لقواعد اللغة الإسبانية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hizo todos los ejercicios prácticos de gramática española.",
+          "ar": "حل جميع التمارين التطبيقية لقواعد اللغة الإسبانية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ensayo",
+      "normalized": "ensayo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ensayos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ensˈaʝo/",
+      "pronunciationHintAr": "ينسايو",
+      "internalRank": 147,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مقال أدبي وفكري تحليلي / بروفة مسرحية",
+          "meaningArEg": "مقال فكري أو بروفة تمثيل",
+          "glossEs": null,
+          "exampleEs": "Escribió un brillante ensayo sobre la influencia andalusí.",
+          "exampleAr": "كتب مقالاً فكرياً بارعاً عن التأثير الأندلسي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Escribió un brillante ensayo sobre la influencia andalusí.",
+          "ar": "كتب مقالاً فكرياً بارعاً عن التأثير الأندلسي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "facultad",
+      "normalized": "facultad",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "facultades",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/fakultˈad/",
+      "pronunciationHintAr": "فاكولتاد",
+      "internalRank": 148,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كلية جامعية متخصصة في فرع علمي محدد",
+          "meaningArEg": "كلية في الجامعة لدراسة تخصص",
+          "glossEs": null,
+          "exampleEs": "La Facultad de Filosofía y Letras tiene una biblioteca rica.",
+          "exampleAr": "تضم كلية الآداب والفلسفة مكتبة غنية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La Facultad de Filosofía y Letras tiene una biblioteca rica.",
+          "ar": "تضم كلية الآداب والفلسفة مكتبة غنية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "graduación",
+      "normalized": "graduación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "graduacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/gɾaduaθiˈon/",
+      "pronunciationHintAr": "جرادواثيون",
+      "internalRank": 149,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حفل تخرج نيل الشهادة الجامعية",
+          "meaningArEg": "حفلة تخرج من الجامعة والكلية",
+          "glossEs": null,
+          "exampleEs": "Toda la familia asistió emocionada a su acto de graduación.",
+          "exampleAr": "حضرت العائلة كلها متأثرة حفل تخرجه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Toda la familia asistió emocionada a su acto de graduación.",
+          "ar": "حضرت العائلة كلها متأثرة حفل تخرجه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "maestro",
+      "normalized": "maestro",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "maestros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/maˈestɾo/",
+      "pronunciationHintAr": "مايسترو",
+      "internalRank": 150,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معلم صبور يعلم الناشئة بحب وتفان",
+          "meaningArEg": "مدرس ومعلم أجيال صبور",
+          "glossEs": null,
+          "exampleEs": "El veterano maestro guio los primeros pasos de varias generaciones.",
+          "exampleAr": "وجه المعلم المخضرم الخطوات الأولى لأجيال عدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El veterano maestro guio los primeros pasos de varias generaciones.",
+          "ar": "وجه المعلم المخضرم الخطوات الأولى لأجيال عدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "matrícula",
+      "normalized": "matrícula",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "matrículas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/matɾˈikula/",
+      "pronunciationHintAr": "ماتريكولا",
+      "internalRank": 151,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسجيل وقيد دراسي في الجامعة أو المدرسة",
+          "meaningArEg": "تسجيل ودفع مصاريف الكلية",
+          "glossEs": null,
+          "exampleEs": "Formalizó la matrícula universitaria en el plazo establecido.",
+          "exampleAr": "أتم قيد التسجيل الجامعي في الموعد المحدد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Formalizó la matrícula universitaria en el plazo establecido.",
+          "ar": "أتم قيد التسجيل الجامعي في الموعد المحدد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "página",
+      "normalized": "página",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "páginas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pˈaxina/",
+      "pronunciationHintAr": "باخينا",
+      "internalRank": 152,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صفحة من صفحات الكتاب أو الدفتر",
+          "meaningArEg": "صفحة في كتاب أو كشكول",
+          "glossEs": null,
+          "exampleEs": "Abran el libro de texto por la página cuarenta y dos.",
+          "exampleAr": "افتحوا الكتاب المدرسي عند الصفحة الثانية والأربعين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Abran el libro de texto por la página cuarenta y dos.",
+          "ar": "افتحوا الكتاب المدرسي عند الصفحة الثانية والأربعين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "práctica",
+      "normalized": "práctica",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "prácticas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾˈaktika/",
+      "pronunciationHintAr": "براكتيكا",
+      "internalRank": 153,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تدريب وتطبيق عملي لما درسه الطالب نظرياً",
+          "meaningArEg": "تدريب وتطبيق عملي للدروس",
+          "glossEs": null,
+          "exampleEs": "Realizan la práctica de laboratorio con batas blancas.",
+          "exampleAr": "يؤدون التدريب المعملي مرتدين المعاطف البيضاء.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Realizan la práctica de laboratorio con batas blancas.",
+          "ar": "يؤدون التدريب المعملي مرتدين المعاطف البيضاء.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "regla",
+      "normalized": "regla",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "reglas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/rˈegla/",
+      "pronunciationHintAr": "ريجلا",
+      "internalRank": 154,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مسطرة قياس مستقيمة / قاعدة لغوية أو نحوية",
+          "meaningArEg": "مسطرة تسطير أو قاعدة نحوية",
+          "glossEs": null,
+          "exampleEs": "Trazó una línea recta impecable con ayuda de la regla.",
+          "exampleAr": "رسم خطاً مستقيماً لا تشوبه شائبة بواسطة المسطرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Trazó una línea recta impecable con ayuda de la regla.",
+          "ar": "رسم خطاً مستقيماً لا تشوبه شائبة بواسطة المسطرة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tesis",
+      "normalized": "tesis",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tesis",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/tˈesis/",
+      "pronunciationHintAr": "تيسيس",
+      "internalRank": 155,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أطروحة دكتوراه علمية يقدمها الباحث للتقييم",
+          "meaningArEg": "رسالة دكتوراه وأطروحة علمية",
+          "glossEs": null,
+          "exampleEs": "Defendió su tesis doctoral con brillantez ante el tribunal.",
+          "exampleAr": "ناقش أطروحة الدكتوراه ببراعة أمام لجنة التحكيم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Defendió su tesis doctoral con brillantez ante el tribunal.",
+          "ar": "ناقش أطروحة الدكتوراه ببراعة أمام لجنة التحكيم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "título",
+      "normalized": "título",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "títulos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tˈitulo/",
+      "pronunciationHintAr": "تيتولو",
+      "internalRank": 156,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عنوان كتاب أو مقال / شهادة جامعية عليا",
+          "meaningArEg": "عنوان كتاب أو شهادة تخرج عليا",
+          "glossEs": null,
+          "exampleEs": "Obtuvo el título de licenciado en Filología Hispánica.",
+          "exampleAr": "نال شهادة الإجازة في فقه اللغة الإسبانية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Obtuvo el título de licenciado en Filología Hispánica.",
+          "ar": "نال شهادة الإجازة في فقه اللغة الإسبانية.",
+          "arEg": null
+        }
+      ]
+    }
+  ]
+}
