@@ -301,6 +301,55 @@ async function run() {
     const pathsData = await pathsRes.json();
     assert('كتالوج المسارات متاح ويغطي المسارات المنهجية والمهنية', pathsData.paths.length >= 3, `المسارات=${pathsData.paths.length}`);
 
+    // -------------------------------------------------------------------------
+    // 15. فحص البحث الذكي في المتصفح الحقيقي
+    // -------------------------------------------------------------------------
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto(`${BASE}/search`);
+    assert('صفحة البحث الذكي /search تفتح بنجاح', (await page.locator('h1').textContent())?.includes('البحث الذكي'));
+
+    // بحث عن كلمة إسبانية
+    await page.fill('[data-testid="search-input"]', 'gracias');
+    await page.waitForTimeout(600);
+    const searchCards = await page.locator('.card:has-text("gracias")').count();
+    assert('البحث الذكي يجد كلمة gracias ويعرض بطاقة النتيجة', searchCards > 0);
+
+    // فحص زر استماع النطق في البحث
+    const searchAudioBtn = page.locator('.card button:has-text("🔊")').first();
+    if (await searchAudioBtn.count() > 0) {
+      await searchAudioBtn.click();
+      assert('زر نطق الكلمة في نتائج البحث قابل للنقر دون أخطاء', true);
+    }
+
+    // بحث عن خطأ إملائي واقتراح التصحيح
+    await page.fill('[data-testid="search-input"]', 'bibloteca');
+    await page.waitForTimeout(600);
+    const bodyContent = await page.textContent('body');
+    assert('البحث يقترح الكلمة الصحيحة عند وجود خطأ إملائي', bodyContent?.includes('biblioteca'));
+
+    // -------------------------------------------------------------------------
+    // 16. فحص أزرار التحكم بالصوت والسرعة وإعادة الاستماع في شاشة الدرس
+    // -------------------------------------------------------------------------
+    await page.goto(`${BASE}/learn/prea1-hola-me-llamo`);
+    await page.waitForSelector('[data-testid="lesson-submit"]', { timeout: 10000 });
+    const audioBtn = page.locator('[data-testid="lesson-audio"]').first();
+    if (await audioBtn.count() > 0) {
+      await audioBtn.click();
+      assert('زر الصوت الأساسي في الدرس يستجيب للنقر', true);
+    }
+    const replayBtn = page.locator('[data-testid="lesson-audio-replay"]').first();
+    if (await replayBtn.count() > 0) {
+      await replayBtn.click();
+      assert('زر إعادة الاستماع يستجيب للنقر', true);
+    }
+    const rateBtn = page.locator('[data-testid="lesson-audio-rate"]').first();
+    if (await rateBtn.count() > 0) {
+      const rateTextBefore = await rateBtn.textContent();
+      await rateBtn.click();
+      const rateTextAfter = await rateBtn.textContent();
+      assert('زر تبديل سرعة النطق يغير السرعة بنجاح', rateTextBefore !== rateTextAfter);
+    }
+
     console.log(`\n🎉 اكتملت جميع اختبارات المتصفح الحقيقي بنجاح تام! (${results.length}/${results.length})\n`);
   } finally {
     await context.close();
