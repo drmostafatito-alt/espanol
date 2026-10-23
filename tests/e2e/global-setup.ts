@@ -12,10 +12,16 @@ export default async function globalSetup() {
     throw new Error(`E2E محلي فقط. العنوان المرفوض: ${base}`);
   }
   const { execFileSync } = await import('node:child_process');
+  const { existsSync } = await import('node:fs');
+  const { join } = await import('node:path');
+  const cli = join(process.cwd(), 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
+  const [execPath, baseArgs] = existsSync(cli)
+    ? [process.execPath, [cli]]
+    : ['./tools/wrangler-env/node_modules/.bin/wrangler', []];
   try {
     execFileSync(
-      './tools/wrangler-env/node_modules/.bin/wrangler',
-      ['d1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
+      execPath,
+      [...baseArgs, 'd1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
       { cwd: process.cwd(), stdio: 'ignore' },
     );
   } catch (err) {

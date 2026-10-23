@@ -16,12 +16,16 @@
  *   3) تكرار آمن: نفس الملف ⇒ نفس المعرّفات، ولا إصدار جديد إن لم يتغيّر المحتوى.
  */
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { buildContentPlan } from './lib/content-plan.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const WRANGLER = join(ROOT, 'tools/wrangler-env/node_modules/.bin/wrangler');
+const WRANGLER_CLI = join(ROOT, 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
+const WRANGLER_BIN = join(ROOT, 'tools/wrangler-env/node_modules/.bin/wrangler');
+const [WRANGLER_EXEC, WRANGLER_BASE_ARGS] = existsSync(WRANGLER_CLI)
+  ? [process.execPath, [WRANGLER_CLI]]
+  : [WRANGLER_BIN, []];
 const DB = 'es-ar-dev';
 const DRY = process.argv.includes('--dry-run');
 // مجلد المحتوى: افتراضيًا العينات، ويمكن تمرير مجلد مسودات جديد
@@ -39,12 +43,17 @@ const dbId = toml.match(/database_id\s*=\s*"([0-9a-f-]{36})"/i)?.[1];
 if (dbId && dbId !== '00000000-0000-0000-0000-000000000000') refuse('database_id حقيقي في wrangler.toml — قد تكون قاعدة إنتاج.');
 
 function d1(sql, { json = false } = {}) {
-  const args = ['d1', 'execute', DB, '--local', '--command', sql];
+  const args = [...WRANGLER_BASE_ARGS, 'd1', 'execute', DB, '--local', '--command', sql];
   if (json) args.push('--json');
-  const out = execFileSync(WRANGLER, args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  const out = execFileSync(WRANGLER_EXEC, args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   if (!json) return out;
   const i = out.indexOf('[');
   return i >= 0 ? JSON.parse(out.slice(i))[0].results : [];
+}
+
+function d1File(filePath) {
+  const args = [...WRANGLER_BASE_ARGS, 'd1', 'execute', DB, '--local', '--file', filePath];
+  return execFileSync(WRANGLER_EXEC, args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
 }
 
 // حالة الإصدارات الحالية — تُقرأ من القاعدة لتحديد هل نحتاج إصدارًا جديدًا
@@ -80,15 +89,19 @@ if (DRY) {
 }
 
 const BATCH = 40;
+const tmpFile = join(ROOT, '.wrangler', 'tmp-import.sql');
 for (let i = 0; i < statements.length; i += BATCH) {
   const chunk = statements.slice(i, i + BATCH).join(';\n') + ';';
+  writeFileSync(tmpFile, chunk, 'utf8');
   try {
-    d1(chunk);
+    d1File(tmpFile);
   } catch (err) {
+    try { unlinkSync(tmpFile); } catch {}
     console.error(`\n❌ فشل عند الدفعة ${i / BATCH + 1}:`);
     console.error(String(err.stderr ?? err.message).slice(0, 1500));
     process.exit(1);
   }
   process.stdout.write(`\r   نُفِّذ ${Math.min(i + BATCH, statements.length)}/${statements.length}`);
 }
+try { unlinkSync(tmpFile); } catch {}
 console.log('\n\n✅ تم الاستيراد — كل الصفوف بحالة draft / unreviewed. لم يُنشر شيء.');

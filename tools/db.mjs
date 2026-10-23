@@ -18,7 +18,11 @@ import { readdirSync, readFileSync, rmSync, existsSync } from 'node:fs';
 import { join, resolve, relative } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const WRANGLER = join(ROOT, 'tools/wrangler-env/node_modules/.bin/wrangler');
+const WRANGLER_CLI = join(ROOT, 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
+const WRANGLER_BIN = join(ROOT, 'tools/wrangler-env/node_modules/.bin/wrangler');
+const [WRANGLER_EXEC, WRANGLER_BASE_ARGS] = existsSync(WRANGLER_CLI)
+  ? [process.execPath, [WRANGLER_CLI]]
+  : [WRANGLER_BIN, []];
 const MIGRATIONS_DIR = join(ROOT, 'db/migrations');
 const PERSIST_DIR = join(ROOT, '.wrangler');
 const DB_NAME = 'es-ar-dev';
@@ -56,9 +60,9 @@ function assertInsideProject(path) {
 /* ------------------------------ تشغيل wrangler ------------------------------ */
 
 function wrangler(args, { json = false } = {}) {
-  const full = [WRANGLER, ...args];
+  const full = [...WRANGLER_BASE_ARGS, ...args];
   try {
-    const out = execFileSync(full[0], full.slice(1), { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    const out = execFileSync(WRANGLER_EXEC, full, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
     if (!json) return out;
     const start = out.indexOf('[');
     const parsed = JSON.parse(start >= 0 ? out.slice(start) : out);

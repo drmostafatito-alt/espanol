@@ -5,11 +5,12 @@
  * بعد تثبيت مكتبات النظام المذكورة في playwright.config.ts.
  * ما لا يُغطّى: Safari/WebKit (غير قابل للتشغيل على Debian 13)، وقارئات الشاشة الحقيقية.
  */
+import { fileURLToPath } from 'node:url';
 import { expect, type Page } from '@playwright/test';
 // @ts-ignore — وحدة .mjs مشتركة مع أدوات الاستيراد
 import { buildContentPlan } from '../../tools/lib/content-plan.mjs';
 
-export const PLAN = buildContentPlan(new URL('../../content/exemplars', import.meta.url).pathname, {
+export const PLAN = buildContentPlan(fileURLToPath(new URL('../../content/exemplars', import.meta.url)), {
   existingVersions: {},
 }) as { answers: Record<string, unknown>; errors: string[] };
 
@@ -24,9 +25,15 @@ export function uniqueEmail(tag = 'e2e') {
 /** يفرّغ نوافذ حد المعدل في قاعدة التطوير المحلية فقط (لا يمسّ منطق الحد) */
 async function clearRateLimits() {
   const { execFileSync } = await import('node:child_process');
+  const { existsSync } = await import('node:fs');
+  const { join } = await import('node:path');
+  const cli = join(process.cwd(), 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
+  const [execPath, baseArgs] = existsSync(cli)
+    ? [process.execPath, [cli]]
+    : ['./tools/wrangler-env/node_modules/.bin/wrangler', []];
   execFileSync(
-    './tools/wrangler-env/node_modules/.bin/wrangler',
-    ['d1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
+    execPath,
+    [...baseArgs, 'd1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
     { stdio: 'ignore' },
   );
 }
