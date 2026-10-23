@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "أنواع مشتركة — Español بالعربي",
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "minLength": 3, "maxLength": 64 },
+    "level": { "type": "string", "enum": ["PREA1", "A1", "A2", "B1", "B2", "C1"] },
+    "register": { "type": "string", "enum": ["neutral", "informal", "formal", "colloquial_spain", "colloquial_latam"] },
+    "skill": { "type": "string", "enum": ["reading", "listening", "speaking", "writing", "grammar", "vocabulary", "pronunciation", "pragmatics", "translation", "fluency", "register"] },
+    "textAr": { "type": "string", "minLength": 2 },
+    "textEs": { "type": "string", "minLength": 2 },
+    "mediaRef": {
+      "type": "object",
+      "required": ["kind", "key", "altAr"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["audio", "image"] },
+        "key": { "type": "string", "minLength": 5 },
+        "altAr": { "type": "string", "minLength": 3 },
+        "variant": { "type": "string", "enum": ["es-ES", "es-419"] },
+        "textHash": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "sentencePair": {
+      "type": "object",
+      "required": ["es", "ar"],
+      "properties": {
+        "es": { "$ref": "#/$defs/textEs" },
+        "ar": { "$ref": "#/$defs/textAr" },
+        "arEg": { "type": "string", "minLength": 2 },
+        "register": { "$ref": "#/$defs/register" },
+        "audioKey": { "type": "string" },
+        "noteAr": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

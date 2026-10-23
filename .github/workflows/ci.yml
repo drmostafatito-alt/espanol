@@ -1,0 +1,64 @@
+# بوابة الجودة في CI — تشغيل نفس الفحوص المحلية على كل دفع وطلب دمج.
+# ليست نشرًا: لا أسرار، لا قاعدة إنتاج، لا `wrangler deploy` (انظر docs/13_DEPLOYMENT.md).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: فحص (أنواع + اختبارات + محتوى + بناء)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: تثبيت الاعتماديات (نسخة مقفلة)
+        run: npm ci --no-audit --no-fund
+
+      - name: أنواع TypeScript
+        run: npx tsc --noEmit
+
+      - name: اختبارات الوحدة والتكامل
+        run: npx vitest run
+
+      - name: فحص DDL والمهاجرات
+        run: node tools/check-sql.mjs
+
+      - name: مدقق المنهج
+        run: node tools/check-curriculum.mjs
+
+      - name: مدقق المحتوى (كل المجلدات)
+        run: |
+          for d in a1 core-vocab travel callcenter; do
+            echo "::group::content/drafts/$d"
+            node tools/validate-content.mjs --dir "content/drafts/$d"
+            echo "::endgroup::"
+          done
+          node tools/validate-content.mjs --dir content/exemplars
+
+      - name: تدقيق جودة المحتوى
+        run: node tools/audit-content-quality.mjs
+
+      - name: عدّاد المفردات الفريدة (ضد التكرار بين الحزم)
+        run: node tools/count-lexicon.mjs --ci
+
+      - name: بناء الإنتاج
+        run: npx vite build
+
+      # معلوماتي فقط: wrangler.toml المرفوع إعداد تطوير، وفشل هذا الفحص هو الوضع الصحيح.
+      # لا نجعله يفشل CI وإلا صار ضجيجًا؛ اختباراته في tests/deploy-preflight.test.ts تضمن سلوكه.
+      - name: بوابة ما قبل النشر (معلوماتية)
+        continue-on-error: true
+        run: node tools/check-deploy-ready.mjs

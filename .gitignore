@@ -1,0 +1,37 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+reports/*.local.*
+.DS_Store
+# مخرجات Playwright (تقارير/آثار فشل) — ليست مصدرًا
+test-results/
+playwright-report/
+reports/playwright/
+.dev.vars
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.wrangler/
+.git/
+test-results/
+playwright-report/
+coverage/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+.dev.vars
+.env
+.env.*
+!.env.example
+.sudo_as_admin_successful
+
+# Python bytecode (مولّدات tools/gen)
+__pycache__/
+*.pyc

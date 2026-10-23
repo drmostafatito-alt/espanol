@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي (من الصفر إلى C1)",
+      "levelCode": null,
+      "category": "core",
+      "objectiveAr": "المسار الرئيسي المتسلسل: تمهيد ثم A1 إلى C1 بالأهداف التواصلية.",
+      "units": [
+        { "slug": "prea1-u1-sounds", "levelCode": "PREA1", "titleAr": "أصوات وحروف", "sortOrder": 1, "status": "draft", "lessons": [] },
+        { "slug": "prea1-u2-stress", "levelCode": "PREA1", "titleAr": "المقاطع والنبر", "sortOrder": 2, "status": "draft", "lessons": [] },
+        { "slug": "prea1-u3-first-words", "levelCode": "PREA1", "titleAr": "أول كلمات", "sortOrder": 3, "status": "draft", "lessons": [] },
+        { "slug": "prea1-u4-first-sentence", "levelCode": "PREA1", "titleAr": "أول جملة: أقدّم نفسي", "sortOrder": 4, "status": "draft", "lessons": ["prea1-hola-me-llamo"] },
+        { "slug": "a1-u4-food-drink", "levelCode": "A1", "titleAr": "الطعام والشراب والأسعار", "sortOrder": 4, "status": "draft", "lessons": ["a1-un-cafe-por-favor"] }
+      ]
+    },
+    {
+      "slug": "callcenter",
+      "kind": "path",
+      "titleAr": "مسار الكول سنتر",
+      "levelCode": "B1",
+      "category": "callcenter",
+      "objectiveAr": "تدريب مهني متكامل على مكالمات خدمة العملاء بالإسبانية بسيناريوهات وبيانات وهمية.",
+      "units": [
+        { "slug": "cc1-call-basics", "levelCode": "B1", "titleAr": "أساسيات المكالمات", "sortOrder": 1, "status": "draft", "lessons": ["cc1-saludo-profesional"] },
+        { "slug": "cc2-understanding", "levelCode": "B1", "titleAr": "فهم العميل", "sortOrder": 2, "status": "draft", "lessons": [] },
+        { "slug": "cc3-problem-solving", "levelCode": "B1", "titleAr": "حل المشكلات", "sortOrder": 3, "status": "draft", "lessons": [] },
+        { "slug": "cc4-complaints", "levelCode": "B2", "titleAr": "الشكاوى والتصعيد", "sortOrder": 4, "status": "draft", "lessons": [] },
+        { "slug": "cc5-after-sales", "levelCode": "B1", "titleAr": "خدمة ما بعد البيع", "sortOrder": 5, "status": "draft", "lessons": [] },
+        { "slug": "cc6-professional-skills", "levelCode": "B2", "titleAr": "المهارات المهنية", "sortOrder": 6, "status": "draft", "lessons": [] },
+        { "slug": "cc7-interviews", "levelCode": "B2", "titleAr": "المقابلات الوظيفية", "sortOrder": 7, "status": "draft", "lessons": [] },
+        { "slug": "cc8-simulation", "levelCode": "B2", "titleAr": "المحاكاة العملية", "sortOrder": 8, "status": "draft", "lessons": [] }
+      ]
+    },
+    {
+      "slug": "top1000",
+      "kind": "path",
+      "titleAr": "أهم 1000 كلمة",
+      "levelCode": "A1",
+      "category": "vocabulary",
+      "objectiveAr": "إتقان المداخل عالية الشيوع عبر جمل وسياقات، لا بالحفظ المجرد.",
+      "units": [
+        { "slug": "top1000-u1", "levelCode": "A1", "titleAr": "الدفعة الأولى: أساسيات التحية والطعام", "sortOrder": 1, "status": "draft", "lessons": [], "vocabularyBundles": ["a1-core-20"] }
+      ]
+    }
+  ]
+}

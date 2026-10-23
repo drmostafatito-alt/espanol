@@ -1,0 +1,388 @@
+### tr-u1-arrival-customs (A2) — الوصول والجمارك
+OBJ: أن يجيب المتعلم عن أسئلة الجمارك القصيرة (الغرض من الزيارة، مدة الإقامة، ما في الحقيبة) بأجوبة صحيحة موجزة.
+NEW: ['aduanas', 'llegada']
+REV: ['pasaporte', 'equipaje', 'vuelo']
+STRUCT: ['Vengo de vacaciones.', 'Voy a quedarme dos semanas.', 'No tengo nada que declarar.']
+SCEN: [[{"es": "¿Cuál es el motivo de su visita?", "ar": "ما سبب زيارتك؟", "arEg": "سبب زيارتك إيه؟", "audioKey": "pending/tr-u1-l4-aduana-1"}, {"es": "Vengo de vacaciones. Voy a quedarme dos semanas.", "ar": "أنا في عطلة. سأبقى أسبوعين.", "arEg": "أنا في أجازة. هأقعد أسبوعين.", "audioKey": "pending/tr-u1-l4-omar-1"}, {"es": "¿Lleva algo que declarar?", "ar": "هل تحمل شيئًا يجب الإفصاح عنه؟", "arEg": "معاك حاجة محتاجة تصريح؟", "audioKey": "pending/tr-u1-l4-aduana-2"}, {"es": "No, nada que declarar.", "ar": "لا، لا شيء للإفصاح عنه.", "arEg": "لأ، مفيش حاجة.", "audioKey": "pending/tr-u1-l4-omar-2"}]]
+
+[tr_u1_15_motive|word_choice|d2]
+  instructionAr: اختر الجواب الصحيح عن سبب الزيارة (عطلة).
+  O tr_u1_15_a: ES=Vengo de vacaciones. | AR=أنا في عطلة. | C=True | None
+  O tr_u1_15_b: ES=Vengo de Egipto. | AR=أنا قادم من مصر. | C=False | جواب صحيح عن السؤال «¿De dónde viene?» لا «¿Cuál es el motivo?».
+  O tr_u1_15_c: ES=Voy a Egipto. | AR=أنا ذاهب إلى مصر. | C=False | اتجاه لا سبب؛ والوقت زمن المستقبل.
+  AK: {"correctOptionIds": ["tr_u1_15_a"]}
+  EXPL: motivo = السبب، والسياحة تكون «de vacaciones». لاحظ الفرق بين de (من/بسبب) وa (إلى).
+  ERR: {"tr_u1_15_b": "هذا جواب سؤال المنشأ.", "tr_u1_15_c": "هذا جواب سؤال الوجهة المستقبلية."}
+
+[tr_u1_16_declare|fill_blank|d2]
+  instructionAr: أكمل الجواب: لا شيء للإفصاح عنه.
+  stemEs: No, nada que ____.
+  stemAr: لا، لا شيء للإفصاح عنه.
+  AK: {"accepted": ["declarar"], "caseSensitive": false}
+  EXPL: «nada que declarar» تركيب ثابت في الجمارك، ويأتي الفعل في المصدر بعد «nada que».
+  ERR: {"declaro": "بعد «nada que» يأتي المصدر declarar.", "declaración": "«declaración» اسم، والتركيب الثابت يستخدم المصدر."}
+
+[tr_u1_17_duration|word_choice|d3]
+  instructionAr: كيف تقول إنك ستبقى أسبوعين؟
+  O tr_u1_17_a: ES=Voy a quedarme dos semanas. | AR=سأبقى أسبوعين. | C=True | None
+  O tr_u1_17_b: ES=Voy a quedar dos semanas. | AR=سأتفق على أسبوعين. | C=False | «quedar» ≠ «quedarse»؛ الثانية وحدها تعني «يبقى».
+  O tr_u1_17_c: ES=Soy dos semanas aquí. | AR=أنا أسبوعان هنا. | C=False | تركيب غير صحيح؛ المدة تُعبَّر بـquedarse أو estar + مدة.
+  AK: {"correctOptionIds": ["tr_u1_17_a"]}
+  EXPL: quedarse = يبقى (فعل انعكاسي). المستقبل القريب: ir a + مصدر ⇒ voy a quedarme.
+  ERR: {"tr_u1_17_b": "«quedar» بدون الضمير تعني يتفق/يقع موعدًا.", "tr_u1_17_c": "استخدم quedarse أو estar aquí durante dos semanas."}
+
+[tr_u1_18_listen|listen_choose|d2]
+  instructionAr: استمع (أو اقرأ النص البديل) واختر السؤال الذي سُمع.
+  speechEs: ¿Lleva algo que declarar?
+  O tr_u1_18_a: ES=¿Lleva algo que declarar? | AR=هل تحمل شيئًا للإفصاح عنه؟ | C=True | None
+  O tr_u1_18_b: ES=¿Cuánto cuesta el billete? | AR=كم سعر التذكرة؟ | C=False | سؤال سعر لا جمارك.
+  O tr_u1_18_c: ES=¿Dónde está la maleta? | AR=أين الحقيبة؟ | C=False | سؤال مكان؛ والمسموع عن الإفصاح.
+  AK: {"correctOptionIds": ["tr_u1_18_a"]}
+  EXPL: الفعل llevar = يحمل، algo = شيئًا، que declarar = للإفصاح عنه. جملة قصيرة تُنطق سريعًا في الجمارك.
+  ERR: {"tr_u1_18_b": "المسموع فيه «declarar» لا «cuesta».", "tr_u1_18_c": "المسموع لا يسأل عن المكان."}
+
+[tr_u1_19_speak_free|speak_free|d2]
+  instructionAr: تحدّث 30 ثانية عن رحلتك القادمة: إلى أين، ولماذا، وكم يومًا. تمرين غير مُقيَّم آليًا وليس له درجة.
+  contextAr: موضوع حر لتدريب الطلاقة. لا يوجد تصحيح آلي ولا ادعاء بتقييم النطق.
+  AK: {"mode": "self_assessment", "modelAnswer": "Voy a viajar a España la próxima semana. Voy de vacaciones y voy a quedarme diez días. Quiero visitar Madrid y Granada."}
+  EXPL: استخدم: voy a + مصدر للمستقبل القريب، وpara + مصدر للهدف، وdurante أو المدة مباشرة. سجّل نفسك واسمعها مرة ثانية؛ لا تقييم آلي.
+  RUBRIC: [{"labelAr": "أداء المهمة (ذكرت الوجهة والهدف والمدة)", "weight": 60, "code": "task"}, {"labelAr": "استخدام voy a + مصدر", "weight": 40, "code": "structure"}]
+
+================================================================================
+
+### tr-u1-boarding-delay (A2) — الأمن والصعود والتأخير
+OBJ: أن يفهم المتعلم إعلان صعود أو تأخير، ويطلب توضيحًا عند عدم الفهم، ويعتذر بلباقة عند المرور في طابور.
+NEW: ['retraso', 'salida', 'pasajero']
+REV: ['embarque', 'vuelo', 'puerta']
+STRUCT: ['¿Puede repetirlo más despacio, por favor?', 'El vuelo sale con retraso.', '¿Es esta la puerta 12?']
+SCEN: [[{"es": "Atención, pasajeros del vuelo 345: el embarque se retrasa treinta minutos.", "ar": "انتباه، مسافرو الرحلة 345: يتأخر الصعود ثلاثين دقيقة.", "arEg": "انتباه، مسافري رحلة 345: الصعود اتأخر تلاتين دقيقة.", "audioKey": "pending/tr-u1-l2-anuncio-1"}, {"es": "Perdone, ¿ha dicho treinta minutos de retraso?", "ar": "عفوًا، هل قلت تأخير ثلاثين دقيقة؟", "arEg": "لو سمحت، قلت تأخير تلاتين دقيقة؟", "audioKey": "pending/tr-u1-l2-omar-1"}, {"es": "Sí, exacto. La salida es a las nueve y media.", "ar": "نعم، بالضبط. المغادرة الساعة التاسعة والنصف.", "arEg": "أيوة بالظبط. المغادرة الساعة تسعة ونص.", "audioKey": "pending/tr-u1-l2-agente-1"}]]
+
+[tr_u1_7_notice|listen_choose|d2]
+  instructionAr: استمع (أو اقرأ النص البديل) واختر مدة التأخير المذكورة.
+  speechEs: El embarque se retrasa treinta minutos.
+  O tr_u1_7_a: ES=Treinta minutos. | AR=ثلاثون دقيقة. | C=True | None
+  O tr_u1_7_b: ES=Tres horas. | AR=ثلاث ساعات. | C=False | «treinta» = ثلاثون، و«tres» = ثلاثة؛ التشابه في البداية فقط.
+  O tr_u1_7_c: ES=Trece minutos. | AR=ثلاث عشرة دقيقة. | C=False | «trece» = ثلاثة عشر، مختلفة عن treinta.
+  AK: {"correctOptionIds": ["tr_u1_7_a"]}
+  EXPL: treinta = 30، trece = 13، tres = 3. في إعلانات المطارات الأرقام تُنطق بسرعة، والتمييز بينها مهارة سمعية تحتاج تدريبًا.
+  ERR: {"tr_u1_7_b": "tres = 3، والمسموع treinta = 30.", "tr_u1_7_c": "trece = 13، والمسموع treinta = 30."}
+
+[tr_u1_8_clarify|choose_reply|d2]
+  instructionAr: لم تفهم الإعلان. اختر الطلب الأنسب.
+  contextAr: الإعلان كان سريعًا ولم تفهم الرقم.
+  stemEs: — El embarque se retrasa… (no lo has entendido)
+  stemAr: — يتأخر الصعود… (لم تفهم)
+  O tr_u1_8_a: ES=Perdone, ¿puede repetirlo más despacio, por favor? | AR=عفوًا، هل يمكنك تكراره أبطأ من فضلك؟ | C=True | None
+  O tr_u1_8_b: ES=Repite. | AR=أعِد. | C=False | أمر مباشر بلا لباقة في سياق رسمي.
+  O tr_u1_8_c: ES=No hablo español, adiós. | AR=لا أتحدث الإسبانية، وداعًا. | C=False | انسحاب مبكر رغم وجود صيغة مهذبة للطلب.
+  AK: {"correctOptionIds": ["tr_u1_8_a"]}
+  EXPL: طلب التوضيح المهذب: Perdone + ¿puede repetirlo más despacio, por favor? بديل: ¿Puede hablarme más despacio?
+  ERR: {"tr_u1_8_b": "«Repite» صيغة أمر غير رسمية وقاسية؛ استخدم «¿Puede repetirlo?».", "tr_u1_8_c": "لا تنسحب من الموقف؛ اطلب التكرار ببطء."}
+
+[tr_u1_9_fill|fill_blank|d2]
+  instructionAr: أكمل بالسؤال المناسب للتأكد من القاعة.
+  stemEs: Perdone, ¿es esta la ____ 12?
+  stemAr: عفوًا، هل هذه البوابة 12؟
+  AK: {"accepted": ["puerta"], "caseSensitive": false}
+  EXPL: puerta de embarque = بوابة الصعود، ويجوز اختصارها إلى puerta في المطار.
+  ERR: {"portal": "«portal» مدخل مبنى سكني، لا بوابة مطار.", "salida": "salida = مخرج/مغادرة، لا بوابة الصعود."}
+
+[tr_u1_10_fix|find_fix_error|d2]
+  instructionAr: أي جملة صحيحة عند الاعتذار للمرور في طابور؟
+  stemEs: Disculpe, puedo pasar por favor, ¿no?
+  O tr_u1_10_a: ES=Disculpe, ¿puedo pasar, por favor? | AR=عفوًا، هل يمكنني المرور من فضلك؟ | C=True | None
+  O tr_u1_10_b: ES=Disculpe, puedo pasar por favor, ¿no? | AR=None | C=False | ذيل «¿no?» ونقص علامة الاستفهام يجعلان الجملة غير مرتبة.
+  O tr_u1_10_c: ES=Paso. | AR=أمرر. | C=False | «Paso» تصريح لا طلب؛ الأفضل «¿puedo pasar?».
+  AK: {"correctOptionIds": ["tr_u1_10_a"]}
+  EXPL: طلب مهذب: Disculpe + ¿puedo + مصدر + por favor?. علامتا الاستفهام ¿…? تحصران السؤال.
+  ERR: {"tr_u1_10_b": "احذف «¿no?» وضع علامتي الاستفهام.", "tr_u1_10_c": "اطلب الإذن بصيغة سؤال."}
+
+================================================================================
+
+### tr-u1-checkin (A2) — تسجيل الوصول في المطار
+OBJ: أن يسجّل المتعلم وصوله في مكتب شركة الطيران، ويعطي جواز سفره وحقيبته، ويفهم سؤال المقعد والبوابة بأجوبة قصيرة صحيحة.
+NEW: ['vuelo', 'billete', 'equipaje', 'facturar', 'asiento']
+REV: ['pasaporte', 'por favor']
+STRUCT: ['Quiero facturar el equipaje.', '¿Dónde está la puerta de embarque?', 'Un asiento de ventanilla, por favor.']
+SCEN: [[{"es": "Buenos días, ¿su pasaporte y su billete, por favor?", "ar": "صباح الخير، جواز سفرك وتذكرتك من فضلك.", "arEg": "صباح الخير، الباسبور والتذكرة لو سمحت.", "audioKey": "pending/tr-u1-l1-agente-1"}, {"es": "Buenos días. Aquí tiene. Quiero facturar esta maleta.", "ar": "صباح الخير. تفضل. أريد تسجيل هذه الحقيبة.", "arEg": "صباح الخير. اتفضل. عايز أودّع الشنطة دي.", "audioKey": "pending/tr-u1-l1-omar-1"}, {"es": "Muy bien. ¿Prefiere asiento de ventanilla o de pasillo?", "ar": "جيد. هل تفضّل مقعد النافذة أم الممر؟", "arEg": "تمام. تفضل كرسي الشباك ولا الممر؟", "audioKey": "pending/tr-u1-l1-agente-2"}, {"es": "De ventanilla, por favor. ¿A qué hora es el embarque?", "ar": "النافذة من فضلك. في أي ساعة الصعود؟", "arEg": "الشباك لو سمحت. الصعود الساعة كام؟", "audioKey": "pending/tr-u1-l1-omar-2"}]]
+
+[tr_u1_1_reply|choose_reply|d1]
+  instructionAr: الموظف سألك عن جواز سفرك. اختر الردّ المناسب.
+  contextAr: الموظف يقول: «¿Su pasaporte, por favor?»
+  stemEs: — ¿Su pasaporte, por favor?
+  stemAr: — جواز سفرك، من فضلك؟
+  O tr_u1_1_a: ES=Aquí tiene. | AR=تفضل / ها هو. | C=True | None
+  O tr_u1_1_b: ES=De nada. | AR=عفوا (ردًّا على الشكر) | C=False | «De nada» ردّ على «gracias» لا تسليم وثيقة.
+  O tr_u1_1_c: ES=No entiendo nada. | AR=لا أفهم شيئًا. | C=False | ردّ يوقف الموقف بلا داعٍ؛ المطلوب تسليم الوثيقة.
+  AK: {"correctOptionIds": ["tr_u1_1_a"]}
+  EXPL: عند تسليم شيء نقول «Aquí tiene» (تفضل)، وتُقال أيضًا «Aquí está» عند الإشارة إلى الشيء.
+  ERR: {"tr_u1_1_b": "«De nada» تعني «عفوا» ردًّا على الشكر.", "tr_u1_1_c": "الطلب واضح؛ سلّم الجواز وقل Aquí tiene."}
+
+[tr_u1_2_fill|fill_blank|d2]
+  instructionAr: أكمل الفراغ بالفعل المناسب لتسجيل الأمتعة.
+  stemEs: Quiero ____ esta maleta.
+  stemAr: أريد تسجيل هذه الحقيبة.
+  AK: {"accepted": ["facturar"], "caseSensitive": false}
+  EXPL: بعد «querer» يأتي المصدر مباشرة: quiero facturar. facturar تعني هنا تسجيل الأمتعة في المطار.
+  ERR: {"facturo": "بعد querer لا نُصرّف الفعل الثاني؛ نقول facturar.", "factura": "«factura» اسم (فاتورة)؛ الفعل facturar."}
+
+[tr_u1_3_window|word_choice|d2]
+  instructionAr: تريد مقعد النافذة. أي عبارة تستخدم؟
+  O tr_u1_3_a: ES=Un asiento de ventanilla, por favor. | AR=مقعد النافذة، من فضلك. | C=True | None
+  O tr_u1_3_b: ES=Un asiento de pasillo, por favor. | AR=مقعد الممر، من فضلك. | C=False | pasillo = الممر، وليس النافذة.
+  O tr_u1_3_c: ES=Una silla de ventana, por favor. | AR=كرسي النافذة، من فضلك. | C=False | «silla» للكرسي المنزلي؛ مقعد الطائرة asiento.
+  AK: {"correctOptionIds": ["tr_u1_3_a"]}
+  EXPL: asiento = مقعد، ventanilla = النافذة الصغيرة (في الطائرة والقطار والمكتب)، pasillo = الممر.
+  ERR: {"tr_u1_3_b": "pasillo ممر لا نافذة.", "tr_u1_3_c": "في الطائرة نقول asiento لا silla."}
+
+[tr_u1_4_order|word_order|d2]
+  instructionAr: رتّب الكلمات لسؤال مهذّب عن بوابة الصعود.
+  ITEMS: ¿Dónde | está | la | puerta | de | embarque
+  AK: {"accepted": ["¿Dónde está la puerta de embarque?", "¿Dónde está la puerta de embarque"], "caseSensitive": false, "ignorePunctuation": true}
+  EXPL: السؤال عن المكان: ¿Dónde está…? + الاسم. و«puerta de embarque» تعني بوابة الصعود، وde تربط الاسمين.
+  ERR: {"order": "الترتيب: ¿Dónde está la puerta de embarque?"}
+
+[tr_u1_5_translate|translate_short|d3]
+  instructionAr: ترجم إلى الإسبانية.
+  stemAr: رحلتي تتأخر ساعتين.
+  AK: {"accepted": ["Mi vuelo llega con dos horas de retraso.", "Mi vuelo tiene dos horas de retraso.", "Mi vuelo se retrasa dos horas.", "Mi vuelo está retrasado dos horas."], "caseSensitive": false, "ignorePunctuation": true}
+  EXPL: التأخير يُعبَّر عنه بعدة صيغ شائعة: con dos horas de retraso / tener retraso / estar retrasado. كلها صحيحة في المطار.
+  ERR: {"Mi vuelo retrasa dos horas.": "ناقص التعبير: se retrasa أو tiene retraso.", "Mi vuelo es retraso.": "«es retraso» غير صحيحة؛ الصواب tiene retraso."}
+
+[tr_u1_6_speak|speak_with_text|d2]
+  instructionAr: سجّل وصولك بصوت واضح. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).
+  stemEs: Buenos días. Aquí tiene mi pasaporte. Quiero facturar el equipaje.
+  stemAr: صباح الخير. تفضل جواز سفري. أريد تسجيل الأمتعة.
+  AK: {"mode": "self_assessment", "referenceAudioKey": "pending/tr-u1-l1-omar-1", "modelAnswer": "Buenos días. Aquí tiene mi pasaporte. Quiero facturar el equipaje."}
+  EXPL: قِس نفسك على الوضوح واللباقة: تحية، تسليم، طلب. لا ندّعي قياس نطق آلي؛ الملف الصوتي المرجعي غير متوفر بعد.
+  RUBRIC: [{"labelAr": "وضوح الطلب", "weight": 50, "code": "clarity"}, {"labelAr": "لباقة الصيغة", "weight": 50, "code": "politeness"}]
+
+================================================================================
+
+### tr-u1-problem-luggage (A2) — مشكلة أمتعة أو تذكرة
+OBJ: أن يشرح المتعلم مشكلة (حقيبة مفقودة أو خطأ في الاسم) بلباقة، ويطلب حلًّا بديلًا، ويفهم مواعيد المتابعة.
+NEW: ['equipaje', 'factura']
+REV: ['equipaje', 'asiento', 'retraso']
+STRUCT: ['No encuentro mi equipaje.', 'Hay un error en mi billete.', '¿Cuándo llega?']
+SCEN: [[{"es": "Buenas tardes, ¿en qué puedo ayudarle?", "ar": "مساء الخير، كيف أساعدك؟", "arEg": "مساء الخير، أساعدك في إيه؟", "audioKey": "pending/tr-u1-l3-agente-1"}, {"es": "No encuentro mi equipaje. Mi vuelo era el 345.", "ar": "لا أجد أمتعتي. رحلتي كانت 345.", "arEg": "مش لاقي شنطي. رحلتي كانت 345.", "audioKey": "pending/tr-u1-l3-omar-1"}, {"es": "Lo siento. ¿Puede describir la maleta, por favor?", "ar": "آسف. هل يمكنك وصف الحقيبة من فضلك؟", "arEg": "معلش. ممكن توصف الشنطة لو سمحت؟", "audioKey": "pending/tr-u1-l3-agente-2"}]]
+
+[tr_u1_11_report|choose_reply|d2]
+  instructionAr: اختر صيغة الشكوى المهذبة الأولى.
+  contextAr: أنت في مكتب المفقودات وتريد الإبلاغ عن حقيبة لم تصل.
+  stemEs: — Buenos días, ¿en qué puedo ayudarle?
+  stemAr: — صباح الخير، كيف أساعدك؟
+  O tr_u1_11_a: ES=Perdone, no encuentro mi equipaje. | AR=عفوًا، لا أجد أمتعتي. | C=True | None
+  O tr_u1_11_b: ES=¡Vosotros habéis perdido mi maleta! | AR=أنتم ضيّعتم حقيبتي! | C=False | اتهام مباشر وبنبرة عدوانية، وقد يكون السبب خارج سيطرة الموظف.
+  O tr_u1_11_c: ES=Quiero una factura. | AR=أريد فاتورة. | C=False | طلب غير متعلق بالمشكلة في هذه اللحظة.
+  AK: {"correctOptionIds": ["tr_u1_11_a"]}
+  EXPL: البداية الهادئة تُنجح الشكوى: وصف الحقيقة («no encuentro») بلا اتهام. ثم يُطلب الوصف ورقم تقرير الشكوى.
+  ERR: {"tr_u1_11_b": "الاتهام يوقف التعاون؛ ابدأ بوصف المشكلة.", "tr_u1_11_c": "الفاتورة ليست مطلبك هنا."}
+
+[tr_u1_12_describe|word_choice|d2]
+  instructionAr: أي وصف للحقيبة دقيق ومفهوم؟
+  O tr_u1_12_a: ES=Es negra y grande, con una etiqueta roja. | AR=إنها سوداء وكبيرة، عليها بطاقة حمراء. | C=True | None
+  O tr_u1_12_b: ES=Es la maleta normal. | AR=إنها الحقيبة العادية. | C=False | وصف غامض لا يساعد الموظف.
+  O tr_u1_12_c: ES=Es muy bonita. | AR=إنها جميلة جدًا. | C=False | جمالها لا يميّزها عن غيرها.
+  AK: {"correctOptionIds": ["tr_u1_12_a"]}
+  EXPL: الوصف المفيد يجمع: اللون + الحجم + علامة مميِّزة. «etiqueta» = بطاقة، «roja» = حمراء (مؤنث).
+  ERR: {"tr_u1_12_b": "«normal» لا يميّز شيئًا.", "tr_u1_12_c": "الجمال ليس علامة تعريف."}
+
+[tr_u1_13_fill|fill_blank|d2]
+  instructionAr: أكمل السؤال عن موعد وصول الحقيبة.
+  stemEs: ¿Cuándo ____ mi maleta?
+  stemAr: متى تصل حقيبتي؟
+  AK: {"accepted": ["llega"], "caseSensitive": false}
+  EXPL: «يكفي» «cuándo» للسؤال عن الزمن، والفعل llegar مع المفرد الغائب: llega.
+  ERR: {"llego": "«llego» للمتحدث؛ الحقيبة مفرد غائب ⇒ llega.", "llegar": "المصدر لا يصلح سؤالًا بلا فعل مصرَّف."}
+
+[tr_u1_14_translate|translate_short|d3]
+  instructionAr: ترجم إلى الإسبانية.
+  stemAr: هل يمكنك أن تعطيني رقم التقرير؟
+  AK: {"accepted": ["¿Puede darme el número del informe?", "¿Me puede dar el número del informe?", "¿Puede darme el número de informe?"], "caseSensitive": false, "ignorePunctuation": true}
+  EXPL: لباقة الطلب: ¿Puede + مصدر + مفعول؟ «informe» تقرير، و«número del informe» رقمه.
+  ERR: {"Dame el número.": "أمر مباشر؛ استخدم ¿Puede darme…?", "¿Puedo darme el número?": "الفاعل غير صحيح؛ نطلب من الموظف: ¿Puede darme…?"}
+
+================================================================================
+
+### tr-u2-booking (A2) — حجز غرفة
+OBJ: أن يحجز المتعلم غرفة عبر الهاتف أو الإنترنت: يحدد التواريخ وعدد الليالي ونوع الغرفة، ويسأل عن السعر والإفطار.
+NEW: ['reserva', 'habitación doble', 'cama']
+REV: ['noche', 'precio', 'desayuno']
+STRUCT: ['Quiero reservar una habitación doble.', '¿Está incluido el desayuno?', '¿Cuánto cuesta la noche?']
+SCEN: [[{"es": "Hotel Sol, buenos días. ¿En qué puedo ayudarle?", "ar": "فندق سول، صباح الخير. كيف أساعدك؟", "arEg": "فندق سول، صباح الخير. أساعدك في إيه؟", "audioKey": "pending/tr-u2-l1-hotel-1"}, {"es": "Quiero reservar una habitación doble para tres noches.", "ar": "أريد حجز غرفة مزدوجة لثلاث ليالٍ.", "arEg": "عايز أحجز أوضة دوبل تلات ليالي.", "audioKey": "pending/tr-u2-l1-omar-1"}, {"es": "¿Está incluido el desayuno?", "ar": "هل الفطور مشمول؟", "arEg": "الفطار مشمول؟", "audioKey": "pending/tr-u2-l1-omar-2"}]]
+
+[tr_u2_1_book|fill_blank|d1]
+  instructionAr: أكمل بفعل الحجز المناسب.
+  stemEs: Quiero ____ una habitación doble.
+  stemAr: أريد حجز غرفة مزدوجة.
+  AK: {"accepted": ["reservar"], "caseSensitive": false}
+  EXPL: بعد querer يأتي المصدر: reservar. الاسم منها reserva.
+  ERR: {"reservo": "بعد querer: reservar لا reservo.", "reserva": "«reserva» اسم؛ الفعل reservar."}
+
+[tr_u2_2_nights|word_choice|d2]
+  instructionAr: كيف تسأل عن سعر الليلة؟
+  O tr_u2_2_a: ES=¿Cuánto cuesta la noche? | AR=كم سعر الليلة؟ | C=True | None
+  O tr_u2_2_b: ES=¿Cuántas noches cuesta? | AR=كم ليلة تُكلّف؟ | C=False | «cuántas» للسؤال عن العدد لا السعر.
+  O tr_u2_2_c: ES=¿Qué noche es? | AR=أي ليلة؟ | C=False | سؤال عن تحديد الليلة لا عن السعر.
+  AK: {"correctOptionIds": ["tr_u2_2_a"]}
+  EXPL: للسؤال عن السعر: ¿Cuánto cuesta…? ومع «la noche» يبقى الفعل مفردًا: cuesta.
+  ERR: {"tr_u2_2_b": "«cuánto» للسعر و«cuántas» للعدد.", "tr_u2_2_c": "«¿Qué noche?» تسأل عن التعيين لا الثمن."}
+
+[tr_u2_3_breakfast|choose_reply|d2]
+  instructionAr: اسأل عمّا إذا كان الفطور مشمولًا.
+  stemEs: — Son 90 euros por noche.
+  stemAr: — السعر 90 يورو في الليلة.
+  O tr_u2_3_a: ES=¿Está incluido el desayuno? | AR=هل الفطور مشمول؟ | C=True | None
+  O tr_u2_3_b: ES=¿Dónde está el desayuno? | AR=أين الفطور؟ | C=False | سؤال مكان لا شمول.
+  O tr_u2_3_c: ES=¿El desayuno es caro? | AR=هل الفطور غالٍ؟ | C=False | سؤال آخر، لكن الأهم أولًا معرفة الشمول من عدمه.
+  AK: {"correctOptionIds": ["tr_u2_3_a"]}
+  EXPL: «incluido» = مشمول. السؤال الثابت: ¿Está incluido el desayuno? / ¿El desayuno está incluido?
+  ERR: {"tr_u2_3_b": "هذا سؤال مكان الفطور.", "tr_u2_3_c": "قبل السعر اسأل: هل هو مشمول أصلًا؟"}
+
+[tr_u2_4_dates|translate_short|d3]
+  instructionAr: ترجم إلى الإسبانية.
+  stemAr: أريد الحجز من الثالث إلى السادس من مايو.
+  AK: {"accepted": ["Quiero reservar del 3 al 6 de mayo.", "Quiero reservar del tres al seis de mayo.", "Quiero hacer una reserva del 3 al 6 de mayo."], "caseSensitive": false, "ignorePunctuation": true}
+  EXPL: نطاق التواريخ: «del … al …» = من … إلى … . في الإسبانية الشهر بعد اليوم بلا حرف جر إضافي: el 3 de mayo.
+  ERR: {"del 3 hasta el 6": "الأفصح في الحجوزات: del 3 al 6.", "de 3 a 6 mayo": "ناقص أداة التعريف: del 3 al 6 de mayo."}
+
+================================================================================
+
+### tr-u2-checkin (A2) — تسجيل الدخول إلى الفندق
+OBJ: أن يقدّم المتعلم حجزه وجواز سفره عند الاستقبال، ويسأل عن الإفطار والمفتاح والواي فاي.
+NEW: ['llave', 'desayuno']
+REV: ['reserva', 'pasaporte', 'habitación doble']
+STRUCT: ['Tengo una reserva a nombre de…', '¿A qué hora es el desayuno?', '¿Hay wifi?']
+SCEN: [[{"es": "Buenas noches, ¿tiene una reserva?", "ar": "مساء الخير، هل لديك حجز؟", "arEg": "مساء الخير، عندك حجز؟", "audioKey": "pending/tr-u2-l2-recep-1"}, {"es": "Sí, a nombre de Omar Hassan, para tres noches.", "ar": "نعم، باسم عمر حسن، لثلاث ليالٍ.", "arEg": "أيوة، باسم عمر حسن، تلات ليالي.", "audioKey": "pending/tr-u2-l2-omar-1"}, {"es": "Perfecto. Aquí tiene su llave. El desayuno es de siete a diez.", "ar": "تمام. تفضل مفتاحك. الفطور من السابعة إلى العاشرة.", "arEg": "تمام. اتفضل مفتاحك. الفطار من سبعة لعشرة.", "audioKey": "pending/tr-u2-l2-recep-2"}]]
+
+[tr_u2_5_name|fill_blank|d2]
+  instructionAr: أكمل بتركيب الحجز باسمك.
+  stemEs: Tengo una reserva a ____ de Omar Hassan.
+  stemAr: عندي حجز باسم عمر حسن.
+  AK: {"accepted": ["nombre"], "caseSensitive": false}
+  EXPL: «a nombre de» تركيب ثابت = باسم. لا نستخدم «con el nombre» في هذا السياق.
+  ERR: {"name": "لا تستخدم اسمًا إنجليزيًا؛ الصيغة الإسبانية: a nombre de.", "nombres": "المفرد nombre في التركيب الثابت."}
+
+[tr_u2_6_time|word_choice|d2]
+  instructionAr: الفطور من السابعة إلى العاشرة. أي جملة صحيحة؟
+  O tr_u2_6_a: ES=El desayuno es de siete a diez. | AR=الفطور من السابعة إلى العاشرة. | C=True | None
+  O tr_u2_6_b: ES=El desayuno es desde siete hasta diez. | AR=الفطور من السابعة حتى العاشرة. | C=False | «desde… hasta» مقبولة لكنها أقل شيوعًا في الجداول اليومية؛ «de… a…» هي الصيغة المعتادة.
+  O tr_u2_6_c: ES=El desayuno es en siete y diez. | AR=الفطور في السابعة وعشر دقائق. | C=False | معناها وقت محدد 7:10 ولا تعبّر عن فترة.
+  AK: {"correctOptionIds": ["tr_u2_6_a"]}
+  EXPL: للجداول اليومية: «de + ساعة + a + ساعة». أما «en» فتفيد وقتًا محددًا لا فترة.
+  ERR: {"tr_u2_6_b": "صحيحة لكن أقل طبيعية في جداول الفندق.", "tr_u2_6_c": "هذا وقت 7:10 وليس فترة."}
+
+[tr_u2_7_wifi|choose_reply|d2]
+  instructionAr: اختر السؤال الأنسب عن الواي فاي.
+  stemEs: — Aquí tiene su llave.
+  stemAr: — تفضل مفتاحك.
+  O tr_u2_7_a: ES=Gracias. ¿Hay wifi en la habitación? | AR=شكرًا. هل يوجد واي فاي في الغرفة؟ | C=True | None
+  O tr_u2_7_b: ES=¿Dónde está la wifi? | AR=أين الواي فاي؟ | C=False | سؤال مكان العدة، لا توفّر الخدمة.
+  O tr_u2_7_c: ES=Quiero wifi. | AR=أريد واي فاي. | C=False | صيغة طلب مباشرة بلا سؤال عن التوفّر.
+  AK: {"correctOptionIds": ["tr_u2_7_a"]}
+  EXPL: ¿Hay…? = هل يوجد…؟ وهي أنسب صيغة للسؤال عن توفّر خدمة.
+  ERR: {"tr_u2_7_b": "اسأل أولًا: ¿Hay wifi?", "tr_u2_7_c": "أضف سؤالًا مهذبًا بدل الأمر."}
+
+[tr_u2_8_fix|find_fix_error|d2]
+  instructionAr: أي جملة صحيحة عند طلب مفتاح بديل؟
+  stemEs: Quiero la llave otra vez, porque no funciona.
+  O tr_u2_8_a: ES=Disculpe, mi llave no funciona. ¿Me da otra, por favor? | AR=عفوًا، مفتاحي لا يعمل. هل تعطيني آخر من فضلك؟ | C=True | None
+  O tr_u2_8_b: ES=La llave no funciona. Dame otra ya. | AR=None | C=False | نبرة آمرة بلا لباقة («ya»).
+  O tr_u2_8_c: ES=Mi llave es roto. | AR=مفتاحي مكسور. | C=False | الصيغة صحيحة أخرى: está rota؛ «es roto» خطأ في الفعل والجنس.
+  AK: {"correctOptionIds": ["tr_u2_8_a"]}
+  EXPL: «no funciona» = لا يعمل (لجهاز/مفتاح). واللباقة: Disculpe + الطلب بصيغة سؤال + por favor.
+  ERR: {"tr_u2_8_b": "أضف «Disculpe» و«¿Me da…?» بلا «ya».", "tr_u2_8_c": "الحالة تكون بـestar: está rota."}
+
+================================================================================
+
+### tr-u2-checkout (A2) — المغادرة والفاتورة
+OBJ: أن يسأل المتعلم عن الفاتورة ووقت المغادرة وطريقة الدفع، ويتعامل مع بند غامض في الفاتورة.
+NEW: ['factura', 'salida', 'efectivo']
+REV: ['llave', 'tarjeta de crédito', 'reserva']
+STRUCT: ['Hago el check-out ahora.', '¿Puede explicarme este cargo?', 'Pago con tarjeta.']
+SCEN: [[{"es": "Buenos días, ¿hace el check-out ahora?", "ar": "صباح الخير، هل ستغادر الآن؟", "arEg": "صباح الخير، هتمشي دلوقتي؟", "audioKey": "pending/tr-u2-l4-recep-1"}, {"es": "Sí. ¿Me puede dar la factura, por favor?", "ar": "نعم. هل يمكنك إعطائي الفاتورة من فضلك؟", "arEg": "أيوة. ممكن تديني الفاتورة لو سمحت؟", "audioKey": "pending/tr-u2-l4-omar-1"}, {"es": "Claro. ¿Paga en efectivo o con tarjeta?", "ar": "بالتأكيد. هل تدفع نقدًا أم بالبطاقة؟", "arEg": "أكيد. بتدفع كاش ولا بالفيزا؟", "audioKey": "pending/tr-u2-l4-recep-2"}]]
+
+[tr_u2_13_checkout|word_choice|d2]
+  instructionAr: أي سؤال صحيح عن طريقة الدفع؟
+  O tr_u2_13_a: ES=¿Puedo pagar con tarjeta? | AR=هل أستطيع الدفع بالبطاقة؟ | C=True | None
+  O tr_u2_13_b: ES=¿Puedo pagar por tarjeta de crédito? | AR=None | C=False | «por» أقل شيوعًا؛ الصيغة المعتادة «con tarjeta».
+  O tr_u2_13_c: ES=¿Pago tarjeta? | AR=هل أدفع بطاقة؟ | C=False | ناقصة حرف الجر والصيغة السليمة: ¿Puedo pagar con tarjeta?
+  AK: {"correctOptionIds": ["tr_u2_13_a"]}
+  EXPL: طريقة الدفع: pagar con tarjeta / en efectivo. الفعل «pagar» يتطلب أداة الوسيلة.
+  ERR: {"tr_u2_13_b": "الأشيع «con tarjeta».", "tr_u2_13_c": "المطلوب: ¿Puedo pagar con tarjeta?"}
+
+[tr_u2_14_receipt|fill_blank|d3]
+  instructionAr: أكمل السؤال عن بند في الفاتورة.
+  stemEs: ¿Puede ____ este cargo, por favor?
+  stemAr: هل يمكنك تفسير هذا البند من فضلك؟
+  AK: {"accepted": ["explicarme", "explicar"], "caseSensitive": false}
+  EXPL: «explicarme» = أن يشرح لي. تركيب مهذب: ¿Puede explicarme…?
+  ERR: {"explica": "بعد ¿Puede? يأتي المصدر.", "explícame": "صيغة أمر غير مناسبة هنا؛ الأفضل ¿Puede explicarme…?"}
+
+[tr_u2_15_departure|translate_short|d3]
+  instructionAr: ترجم إلى الإسبانية.
+  stemAr: متى يجب أن أترك الغرفة؟
+  AK: {"accepted": ["¿A qué hora tengo que dejar la habitación?", "¿A qué hora debo dejar la habitación?", "¿A qué hora hay que dejar la habitación?"], "caseSensitive": false, "ignorePunctuation": true}
+  EXPL: الالتزام الشخصي: tener que + مصدر أو deber + مصدر. وفي الفنادق يُستخدم أيضًا «la hora de salida».
+  ERR: {"¿Cuándo dejo la habitación?": "صحيحة لكنها أقل دقة في سؤال الالتزام.", "¿A qué hora tengo dejar?": "ناقصة «que»: tengo que dejar."}
+
+[tr_u2_16_formal|choose_reply|d3]
+  instructionAr: الموظف يقول: «Ha habido un error con el cargo.» اختر الردّ المناسب.
+  stemEs: — Ha habido un error con el cargo del minibar.
+  stemAr: — حدث خطأ في بند الميني بار.
+  O tr_u2_16_a: ES=Ah, entiendo. ¿Puede corregirlo, por favor? | AR=آه، أفهم. هل يمكنك تصحيحه من فضلك؟ | C=True | None
+  O tr_u2_16_b: ES=¡Sois unos ladrones! | AR=أنتم لصوص! | C=False | إهانة مباشرة تخرج عن اللباقة وقد تكون اتهامًا بلا دليل.
+  O tr_u2_16_c: ES=No entiendo nada de nada. | AR=لا أفهم شيئًا على الإطلاق. | C=False | الموظف شرح الخطأ؛ الأفضل طلب التصحيح.
+  AK: {"correctOptionIds": ["tr_u2_16_a"]}
+  EXPL: عند إقرار الموظف بالخطأ: افهم ثم اطلب التصحيح: ¿Puede corregirlo? بلباقة.
+  ERR: {"tr_u2_16_b": "تجنّب الاتهام؛ اطلب التصحيح.", "tr_u2_16_c": "الطلب الواضح أفضل من إعلان عدم الفهم."}
+
+================================================================================
+
+### tr-u2-room-problem (A2) — مشكلة في الغرفة
+OBJ: أن يشرح المتعلم مشكلة في الغرفة (لا يعمل المكيف، ضجيج، ماء بارد) ويطلب حلًّا أو غرفة بديلة بلباقة.
+NEW: ['habitación doble']
+REV: ['llave', 'cama', 'desayuno']
+STRUCT: ['El aire acondicionado no funciona.', 'Hay mucho ruido.', '¿Puedo cambiar de habitación?']
+SCEN: [[{"es": "Recepción, buenas noches. ¿En qué puedo ayudarle?", "ar": "الاستقبال، مساء الخير. كيف أساعدك؟", "arEg": "الاستقبال، مساء الخير. أساعدك في إيه؟", "audioKey": "pending/tr-u2-l3-recep-1"}, {"es": "Buenas noches. El aire acondicionado no funciona.", "ar": "مساء الخير. المكيف لا يعمل.", "arEg": "مساء الخير. التكييف مش شغال.", "audioKey": "pending/tr-u2-l3-omar-1"}, {"es": "Lo siento. ¿Puedo cambiar de habitación?", "ar": "آسف. هل أستطيع تغيير الغرفة؟", "arEg": "معلش. ممكن أغير الأوضة؟", "audioKey": "pending/tr-u2-l3-omar-2"}]]
+
+[tr_u2_9_notworking|fill_blank|d2]
+  instructionAr: أكمل: المكيف لا يعمل.
+  stemEs: El aire acondicionado no ____.
+  stemAr: المكيف لا يعمل.
+  AK: {"accepted": ["funciona"], "caseSensitive": false}
+  EXPL: «funcionar» = يعمل (للأجهزة). لا نقول «no trabaja» للجهاز.
+  ERR: {"trabaja": "«trabajar» للبشر؛ الجهاز «funciona».", "funciono": "الفاعل الجهاز ⇒ funciona."}
+
+[tr_u2_10_noise|word_choice|d2]
+  instructionAr: أي جملة تعبّر عن الضجيج؟
+  O tr_u2_10_a: ES=Hay mucho ruido en el pasillo. | AR=هناك ضجيج كثير في الممر. | C=True | None
+  O tr_u2_10_b: ES=Hay muchas ruidos. | AR=هناك ضجيجات كثيرة. | C=False | «ruido» مذكر ومن ثمّ «muchos ruidos» إن أردنا الجمع، لكن الشائع «mucho ruido».
+  O tr_u2_10_c: ES=Es muy ruidoso el pasillo. | AR=الممر صاخب جدًا. | C=False | صحيحة لغويًا لكنها لا تُستخدم كشكوى مباشرة عن الليلة الحالية.
+  AK: {"correctOptionIds": ["tr_u2_10_a"]}
+  EXPL: «ruido» مذكر: mucho ruido. للتعبير الاسمي «hay» أفضل من الصفة.
+  ERR: {"tr_u2_10_b": "المطابقة: «mucho ruido» أو «muchos ruidos».", "tr_u2_10_c": "صحيحة لكنها أقل مباشرة في الشكوى."}
+
+[tr_u2_11_change|choose_reply|d2]
+  instructionAr: اطلب غرفة بديلة بلباقة.
+  stemEs: — Lo sentimos mucho. No sabemos qué pasa.
+  stemAr: — نأسف جدًا. لا نعرف ما المشكلة.
+  O tr_u2_11_a: ES=¿Sería posible cambiar de habitación, por favor? | AR=هل سيكون ممكنًا تغيير الغرفة من فضلك؟ | C=True | None
+  O tr_u2_11_b: ES=Quiero otra habitación ahora. | AR=أريد غرفة أخرى الآن. | C=False | طلب آمر بلا لباقة («ahora»).
+  O tr_u2_11_c: ES=Entonces me voy a otro hotel. | AR=إذًا سأذهب إلى فندق آخر. | C=False | تصعيد قبل محاولة الحل؛ الفندق طلب تعاونًا.
+  AK: {"correctOptionIds": ["tr_u2_11_a"]}
+  EXPL: «¿Sería posible…?» صيغة شرطية مهذبة عالية، تصلح للطلبات الحساسة. ثم por favor.
+  ERR: {"tr_u2_11_b": "أضف لباقة: «¿Sería posible…?».", "tr_u2_11_c": "أعطِ فرصة للحل قبل التصعيد."}
+
+[tr_u2_12_summary|summarize_dialogue|d3]
+  instructionAr: أي ملخص يعبّر بدقة عن الشكوى؟
+  contextAr: خّص ما قلته للموظف: المكيف لا يعمل، والغرفة في ممر صاخب، وتريد غرفة هادئة.
+  O tr_u2_12_a: ES=El aire no funciona y hay ruido; pido una habitación más tranquila. | AR=المكيف لا يعمل وهناك ضجيج؛ أطلب غرفة أهدأ. | C=True | None
+  O tr_u2_12_b: ES=Todo está perfecto, gracias. | AR=كل شيء ممتاز، شكرًا. | C=False | يناقض المشكلة تمامًا.
+  O tr_u2_12_c: ES=Quiero desayunar ahora. | AR=أريد أن أفطر الآن. | C=False | مطلب غير متعلق بالشكوى المذكورة.
+  AK: {"correctOptionIds": ["tr_u2_12_a"], "accepted": ["El aire no funciona y hay ruido; pido una habitación más tranquila."]}
+  EXPL: الملخص الجيد يجمع المشكلتين ثم الطلب. «más tranquila» = أهدأ (مؤنث تابع لـhabitación).
+  ERR: {"tr_u2_12_b": "الملخص يجب أن يعكس الشكوى.", "tr_u2_12_c": "هذا مطلب آخر."}
+
+================================================================================
+

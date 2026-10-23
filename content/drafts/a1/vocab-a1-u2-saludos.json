@@ -1,0 +1,666 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "a1-u2-saludos",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق؛ خاصة الأصوات: ñ، وd بين حركتين (تُنطق قريبة من «ذ» في إسبانيا)، وj (خاء خفيفة).",
+  "source": {
+    "title": "مفردات درس التحية والرسمية — إعداد داخلي لمراجعة بشرية قبل أي نشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-21",
+    "rankingNote": "internalRank هنا لسَلسَلة التدريس داخل هذه الوحدة فقط، وليس ادعاءً بأن الكلمة من الأكثر شيوعًا في الإسبانية."
+  },
+  "entries": [
+    {
+      "headword": "buenas tardes",
+      "normalized": "buenas tardes",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": "plural",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈbwenas ˈtaɾðes/",
+      "pronunciationHintAr": "بوينَس تارْدِس — الـ d بين حركتين تُنطق قريبة من «ذ» في إسبانيا",
+      "internalRank": 1,
+      "tags": [
+        "تحيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مساء الخير (من بعد الظهر حتى الغروب)",
+          "meaningArEg": "مساء الخير (بعد الضهر لحد المغرب)",
+          "glossEs": "saludo de tarde",
+          "exampleEs": "Buenas tardes, señora López.",
+          "exampleAr": "مساء الخير يا سيدة لوبيث.",
+          "exampleArEg": "مساء الخير يا مدام لوبيز.",
+          "usageNoteAr": "تُقال من بعد الظهر (تقريبًا بعد 14:00) حتى الغروب. مختصرها الشائع: «Buenas».",
+          "commonErrorAr": "لا تُقال صباحًا؛ الصباح «buenos días»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes, señora López.",
+          "ar": "مساء الخير يا سيدة لوبيث.",
+          "arEg": "مساء الخير يا مدام لوبيز."
+        }
+      ]
+    },
+    {
+      "headword": "buenas noches",
+      "normalized": "buenas noches",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": "plural",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈbwenas ˈnotʃes/",
+      "pronunciationHintAr": "بوينَس نوتشِس — ch تُنطق «تش»",
+      "internalRank": 2,
+      "tags": [
+        "تحيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مساء الخير بعد الغروب، وتُستخدم أيضًا عند النوم بمعنى «ليلة سعيدة»",
+          "meaningArEg": "مساء الخير بالليل، وبرضه بمعنى «تصبح على خير»",
+          "glossEs": "saludo nocturno y despedida antes de dormir",
+          "exampleEs": "Buenas noches, hasta mañana.",
+          "exampleAr": "مساء الخير، إلى الغد.",
+          "exampleArEg": "مساء الخير، نشوفك بكرة.",
+          "usageNoteAr": "تصلح للتحية ليلًا وللوداع قبل النوم.",
+          "commonErrorAr": "خطأ شائع: استعمالها نهارًا لأن «noches» تعني ليالٍ."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenas noches, hasta mañana.",
+          "ar": "مساء الخير، إلى الغد.",
+          "arEg": "مساء الخير، نشوفك بكرة."
+        }
+      ]
+    },
+    {
+      "headword": "¿cómo está usted?",
+      "normalized": "cómo está usted",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": "formal",
+      "level": "A1",
+      "register": "formal",
+      "ipa": "/ˈkomo esˈta usˈteð/",
+      "pronunciationHintAr": "كومو إسْتا أوسْتِذ — النبرة على «tá»",
+      "internalRank": 3,
+      "tags": [
+        "تحيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كيف حالك؟ (صيغة رسمية للمفرد المخاطب)",
+          "meaningArEg": "إزيك؟ (بصيغة رسمية لمخاطب واحد)",
+          "glossEs": "saludo formal, segunda persona de cortesía",
+          "exampleEs": "Buenos días, ¿cómo está usted?",
+          "exampleAr": "صباح الخير، كيف حالك؟",
+          "exampleArEg": "صباح الخير، إزيك؟",
+          "usageNoteAr": "الرسمي يقابل «tú» غير الرسمي. الفعل estar للجملة المؤقتة، والنبرة على está.",
+          "commonErrorAr": "لا تقل «¿cómo eres usted?» عند السؤال عن الحال؛ الصحيح estar لا ser."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, ¿cómo está usted?",
+          "ar": "صباح الخير، كيف حالك؟",
+          "arEg": "صباح الخير، إزيك؟"
+        }
+      ]
+    },
+    {
+      "headword": "encantado",
+      "normalized": "encantado",
+      "kind": "word",
+      "pos": "adj",
+      "gender": "m",
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/eŋkanˈtaðo/",
+      "pronunciationHintAr": "إنكانْتادو — نون قبل k تُنطق من الحلق (ng)",
+      "internalRank": 4,
+      "tags": [
+        "تعارف",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تشرفنا / سعيد بلقائك (يقولها المتحدث الذكر)",
+          "meaningArEg": "تشرفنا (الولد بيقولها)",
+          "glossEs": "mucho gusto, dicho por un hombre",
+          "exampleEs": "Encantado, me llamo Omar.",
+          "exampleAr": "تشرفنا، اسمي عمر.",
+          "exampleArEg": "تشرفنا، أنا اسمي عمر.",
+          "usageNoteAr": "المتحدثة الأنثى تقول «encantada». تُقال عادة عند التعارف الأول مع المصافحة.",
+          "commonErrorAr": "الرجل الذي يقول «encantada» يبدو خطأ نحويًا؛ التذكير/التأنيث يتبع المتحدث لا المخاطب."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Encantado, me llamo Omar.",
+          "ar": "تشرفنا، اسمي عمر.",
+          "arEg": "تشرفنا، أنا اسمي عمر."
+        }
+      ]
+    },
+    {
+      "headword": "señor",
+      "normalized": "señor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "señores",
+      "level": "A1",
+      "register": "formal",
+      "ipa": "/seˈɲoɾ/",
+      "pronunciationHintAr": "سِنْيور — ñ نون مع ياء خفيفة",
+      "internalRank": 5,
+      "tags": [
+        "ألقاب",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سيد / أستاذ (لقب رسمي للرجل)",
+          "meaningArEg": "أستاذ / سيد (لقب رسمي للراجل)",
+          "glossEs": "tratamiento formal para hombre",
+          "exampleEs": "Buenos días, señor García.",
+          "exampleAr": "صباح الخير يا سيد غارثيا.",
+          "exampleArEg": "صباح الخير يا أستاذ جارسيا.",
+          "usageNoteAr": "يُستخدم قبل اسم العائلة أو وحده. الاختصار الكتابي: Sr.",
+          "commonErrorAr": "لا تُترجم «señor» إلى «سيدي» في كل سياق ديني؛ هنا لقب مخاطبة محترم فقط."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, señor García.",
+          "ar": "صباح الخير يا سيد غارثيا.",
+          "arEg": "صباح الخير يا أستاذ جارسيا."
+        }
+      ]
+    },
+    {
+      "headword": "señora",
+      "normalized": "señora",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "señoras",
+      "level": "A1",
+      "register": "formal",
+      "ipa": "/seˈɲoɾa/",
+      "pronunciationHintAr": "سِنْيورا",
+      "internalRank": 6,
+      "tags": [
+        "ألقاب",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سيدة (لقب رسمي للمرأة)",
+          "meaningArEg": "مدام / سيدة (لقب رسمي للست)",
+          "glossEs": "tratamiento formal para mujer",
+          "exampleEs": "Buenas tardes, señora Ruiz.",
+          "exampleAr": "مساء الخير يا سيدة رويث.",
+          "exampleArEg": "مساء الخير يا مدام رويز.",
+          "usageNoteAr": "تُستخدم قبل اسم العائلة. للمرأة المتزوجة تقليديًا، وصارت شائعة لكل امرأة في المخاطبة الرسمية.",
+          "commonErrorAr": "«señorita» للمرأة الشابة غير المتزوجة، وقد تُعدّ غير مناسبة في سياقات مهنية؛ «señora» أكثر أمانًا في العمل."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes, señora Ruiz.",
+          "ar": "مساء الخير يا سيدة رويث.",
+          "arEg": "مساء الخير يا مدام رويز."
+        }
+      ]
+    },
+    {
+      "headword": "hasta luego",
+      "normalized": "hasta luego",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈasta ˈlweɣo/",
+      "pronunciationHintAr": "أَسْتا لْويغو — g بين حركتين تُنطق خفيفة كالغين",
+      "internalRank": 7,
+      "tags": [
+        "وداع",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إلى لقاء قريب",
+          "meaningArEg": "سلام، نشوفك قريب",
+          "glossEs": "despedida informal y frecuente",
+          "exampleEs": "Hasta luego, nos vemos mañana.",
+          "exampleAr": "إلى لقاء قريب، نلتقي غدًا.",
+          "exampleArEg": "سلام، نشوفك بكرة.",
+          "usageNoteAr": "وداع شائع في إسبانيا، أقرب إلى «سلام» اليومي من الوداع النهائي.",
+          "commonErrorAr": "ليست بمعنى «إلى الأبد»؛ الوداع النهائي «adiós»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hasta luego, nos vemos mañana.",
+          "ar": "إلى لقاء قريب، نلتقي غدًا.",
+          "arEg": "سلام، نشوفك بكرة."
+        }
+      ]
+    },
+    {
+      "headword": "adiós",
+      "normalized": "adiós",
+      "kind": "word",
+      "pos": "interj",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aˈðjos/",
+      "pronunciationHintAr": "أَديوس — النبرة على «ós»",
+      "internalRank": 8,
+      "tags": [
+        "وداع",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وداعًا / مع السلامة",
+          "meaningArEg": "مع السلامة",
+          "glossEs": "despedida",
+          "exampleEs": "Adiós, y gracias por todo.",
+          "exampleAr": "وداعًا، وشكرًا على كل شيء.",
+          "exampleArEg": "مع السلامة، وشكرًا على كل حاجة.",
+          "usageNoteAr": "أكثر عمومية من «hasta luego»، وتصلح أيضًا في الوداع الطويل.",
+          "commonErrorAr": "لا تُستخدم للتحية عند القدوم."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Adiós, y gracias por todo.",
+          "ar": "وداعًا، وشكرًا على كل شيء.",
+          "arEg": "مع السلامة، وشكرًا على كل حاجة."
+        }
+      ]
+    },
+    {
+      "headword": "tú",
+      "normalized": "tú",
+      "kind": "word",
+      "pos": "pron",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tu/",
+      "pronunciationHintAr": "تو — بدون تشديد ظاهر، والخطأ الشائع نطقها كالإنجليزية",
+      "internalRank": 9,
+      "tags": [
+        "ضمائر",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أنت (غير رسمي، للمفرد)",
+          "meaningArEg": "إنت (غير رسمي)",
+          "glossEs": "pronombre de segunda persona informal",
+          "exampleEs": "¿Tú eres de Egipto?",
+          "exampleAr": "هل أنت من مصر؟",
+          "exampleArEg": "إنت من مصر؟",
+          "usageNoteAr": "مع الأفعال: tú eres, tú tienes. تُستخدم مع الأصدقاء والعائلة والزملاء المقربين.",
+          "commonErrorAr": "خلط «tú» مع صيغة usted («tú está») خطأ شائع؛ الصيغتان لا تختلطان."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Tú eres de Egipto?",
+          "ar": "هل أنت من مصر؟",
+          "arEg": "إنت من مصر؟"
+        }
+      ]
+    },
+    {
+      "headword": "usted",
+      "normalized": "usted",
+      "kind": "word",
+      "pos": "pron",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "formal",
+      "ipa": "/usˈteð/",
+      "pronunciationHintAr": "أوسْتِذ — النبرة على «ted»",
+      "internalRank": 10,
+      "tags": [
+        "ضمائر",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أنت / حضرتك (رسمي، للمفرد)",
+          "meaningArEg": "حضرتك (رسمي)",
+          "glossEs": "pronombre de segunda persona de cortesía",
+          "exampleEs": "¿Usted trabaja aquí?",
+          "exampleAr": "هل تعمل هنا؟",
+          "exampleArEg": "حضرتك بتشتغل هنا؟",
+          "usageNoteAr": "يأخذ صيغة الفعل للغائب: usted trabaja (لا trabajas). الاختصار: Ud.",
+          "commonErrorAr": "«usted trabaja» لا «usted trabajas» — هذا أشهر خطأ للمبتدئ العربي."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¿Usted trabaja aquí?",
+          "ar": "هل تعمل هنا؟",
+          "arEg": "حضرتك بتشتغل هنا؟"
+        }
+      ]
+    },
+    {
+      "headword": "con permiso",
+      "normalized": "con permiso",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "formal",
+      "ipa": "/kom peɾˈmiso/",
+      "pronunciationHintAr": "كوم بيرْميسو",
+      "internalRank": 11,
+      "tags": [
+        "آداب",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عن إذنك (عند المرور أو الانصراف)",
+          "meaningArEg": "عن إذنك (لما تعدّي أو تمشي)",
+          "glossEs": "fórmula de cortesía para pasar o retirarse",
+          "exampleEs": "Con permiso, ¿me deja pasar?",
+          "exampleAr": "عن إذنك، هل تسمح لي بالمرور؟",
+          "exampleArEg": "عن إذنك، ممكن أعدّي؟",
+          "usageNoteAr": "تُقال عند المرور بين الناس أو الدخول/الخروج من مكان مزدحم.",
+          "commonErrorAr": "ليست طلب إذن كتابي؛ هي عبارة تهذيب شفهية قصيرة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Con permiso, ¿me deja pasar?",
+          "ar": "عن إذنك، هل تسمح لي بالمرور؟",
+          "arEg": "عن إذنك، ممكن أعدّي؟"
+        }
+      ]
+    },
+    {
+      "headword": "¿qué tal?",
+      "normalized": "qué tal",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ke ˈtal/",
+      "pronunciationHintAr": "كي تال — النبرة على «tal»",
+      "internalRank": 12,
+      "tags": [
+        "تحيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كيف الحال؟ (غير رسمي)",
+          "meaningArEg": "إيه الأخبار؟ / إزيك؟",
+          "glossEs": "saludo informal por «cómo estás»",
+          "exampleEs": "¡Hola, Ana! ¿Qué tal?",
+          "exampleAr": "مرحبًا آنا! كيف الحال؟",
+          "exampleArEg": "أهلاً آنا! إيه الأخبار؟",
+          "usageNoteAr": "غير رسمية، تصلح مع الأصدقاء. الرد الشائع: «Bien» أو «Muy bien».",
+          "commonErrorAr": "لا تخلطها بـ«¿qué hora es?» (كم الساعة) — التشابه في البداية فقط."
+        }
+      ],
+      "examples": [
+        {
+          "es": "¡Hola, Ana! ¿Qué tal?",
+          "ar": "مرحبًا آنا! كيف الحال؟",
+          "arEg": "أهلاً آنا! إيه الأخبار؟"
+        }
+      ]
+    },
+    {
+      "headword": "hola",
+      "normalized": "hola",
+      "kind": "word",
+      "pos": "interj",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈola/",
+      "pronunciationHintAr": "أولا — الـ h صامتة، والضغط على المقطع الأول",
+      "internalRank": 13,
+      "tags": [
+        "تحيات",
+        "أساسيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مرحبًا (تحية عامة)",
+          "meaningArEg": "أهلًا / سلام",
+          "glossEs": "saludo informal y general",
+          "exampleEs": "¡Hola! ¿Cómo estás?",
+          "exampleAr": "مرحبًا! كيف حالك؟",
+          "exampleArEg": "أهلًا! إيه أخبارك؟",
+          "usageNoteAr": "تصلح في أي وقت من اليوم، رسمية وغير رسمية. لا تحتاج علامة استفهام.",
+          "commonErrorAr": "لا تُنطق الهاء مطلقًا؛ نطقها «هولا» من أشهر أخطاء المبتدئ.",
+          "audioKey": "pending/voc-hola"
+        }
+      ],
+      "examples": [
+        {
+          "es": "¡Hola, Marta! ¿Qué tal?",
+          "ar": "مرحبًا مارتا! كيف الحال؟",
+          "arEg": "أهلًا مارتا! إيه الأخبار؟"
+        }
+      ],
+      "synonyms": [
+        "buenas"
+      ],
+      "antonyms": [
+        "adiós"
+      ],
+      "related": [
+        "buenos días",
+        "buenas tardes",
+        "mucho gusto"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "buenos días",
+      "normalized": "buenos días",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈbwenos ˈdias/",
+      "pronunciationHintAr": "بْوينوس دِياس",
+      "internalRank": 14,
+      "tags": [
+        "تحيات",
+        "صباح",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صباح الخير (تحية الصباح)",
+          "meaningArEg": "صباح الخير",
+          "glossEs": "saludo de la mañana",
+          "exampleEs": "Buenos días, ¿tiene una mesa para dos?",
+          "exampleAr": "صباح الخير، هل لديكم طاولة لشخصين؟",
+          "usageNoteAr": "تُستخدم حتى منتصف النهار تقريبًا، ثم buenas tardes بعد الظهر و buenas noches ليلًا.",
+          "commonErrorAr": "قول «buenas días» خطأ في الاتفاق: días مذكر جمع فيجب buenos.",
+          "audioKey": "pending/voc-buenos-dias"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, señora López.",
+          "ar": "صباح الخير سيدة لوبيز."
+        }
+      ],
+      "synonyms": [
+        "buenas"
+      ],
+      "antonyms": [
+        "buenas noches"
+      ],
+      "related": [
+        "hola",
+        "buenas tardes"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    },
+    {
+      "headword": "me llamo",
+      "normalized": "me llamo",
+      "kind": "collocation",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/me ˈʝamo/",
+      "pronunciationHintAr": "مي يامو — ll تُنطق قريبة من «ي» في إسبانيا وأمريكا اللاتينية",
+      "internalRank": 15,
+      "tags": [
+        "تعارف",
+        "أساسيات",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اسمي … (أُعرِّف بنفسي)",
+          "meaningArEg": "أنا اسمي …",
+          "glossEs": "fórmula para presentarse",
+          "exampleEs": "Me llamo Omar y soy de El Cairo.",
+          "exampleAr": "اسمي عمر وأنا من القاهرة.",
+          "usageNoteAr": "من الفعل الانعكاسي llamarse. الضمير me إلزامي.",
+          "commonErrorAr": "«mi llamo» خطأ شائع؛ mi تعني «خاصتي» ولا تُستخدم هنا.",
+          "audioKey": "pending/voc-me-llamo"
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hola, me llamo Sara. ¿Y tú?",
+          "ar": "مرحبًا، اسمي سارة. وأنت؟",
+          "arEg": "أهلًا، أنا سارة. وانت؟"
+        }
+      ],
+      "related": [
+        "llamarse",
+        "mucho gusto",
+        "soy"
+      ],
+      "variantNoteAr": "في أمريكا اللاتينية يُستخدم أيضًا «Mi nombre es…» بشكل أوسع في المواقف الرسمية.",
+      "sourceId": null
+    },
+    {
+      "headword": "mucho gusto",
+      "normalized": "mucho gusto",
+      "kind": "expression",
+      "pos": "phrase",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ˈmutʃo ˈɡusto/",
+      "pronunciationHintAr": "موتشو جوستو",
+      "internalRank": 16,
+      "tags": [
+        "تعارف",
+        "A1",
+        "u2-saludos"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تشرّفت بمعرفتك",
+          "meaningArEg": "فرصة سعيدة",
+          "glossEs": "fórmula de cortesía al conocer a alguien",
+          "exampleEs": "Mucho gusto, señor Hassan.",
+          "exampleAr": "تشرّفت بمعرفتك سيد حسن.",
+          "usageNoteAr": "الرد المعتاد: «Igualmente» أو «El gusto es mío».",
+          "commonErrorAr": "لا تُستخدم عند الوداع؛ للوداع نقول hasta luego أو encantado de haberle conocido.",
+          "audioKey": "pending/voc-mucho-gusto"
+        }
+      ],
+      "examples": [
+        {
+          "es": "—Me llamo Nadia. —Mucho gusto, Nadia.",
+          "ar": "—اسمي نادية. —تشرّفت يا نادية."
+        }
+      ],
+      "synonyms": [
+        "encantado",
+        "encantada"
+      ],
+      "related": [
+        "me llamo",
+        "igualmente"
+      ],
+      "variantNoteAr": null,
+      "sourceId": null
+    }
+  ]
+}

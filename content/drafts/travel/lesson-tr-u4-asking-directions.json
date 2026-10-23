@@ -1,0 +1,290 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u4-asking-directions",
+    "titleAr": "أين ...؟ أسأل عن مكان",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u4-directions",
+    "objectiveAr": "أن يسأل المتعلم عن مكان في الشارع بصيغة مهذّبة، ويفهم جوابًا قصيرًا فيه يمين أو يسار أو «على طول»، ويسأل عن خريطة.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "izquierda",
+      "derecha",
+      "todo recto",
+      "mapa"
+    ],
+    "reviewVocabulary": [
+      "puerta"
+    ],
+    "targetStructures": [
+      "¿Dónde está la Plaza Mayor?",
+      "Todo recto y luego a la izquierda.",
+      "¿Tiene un mapa, por favor?"
+    ],
+    "grammarTopics": [
+      "donde-esta-vs-donde-es",
+      "a-la-derecha"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أنت في شارع في مدريد وتريد الوصول إلى ساحة البلدة.",
+        "settingAr": "الشارع، تسأل أحد المارّة",
+        "lines": [
+          {
+            "es": "Perdón, ¿dónde está la Plaza Mayor?",
+            "ar": "عفوًا، أين ساحة مايور؟",
+            "arEg": "لو سمحت، ساحة مايور فين؟",
+            "audioKey": "pending/tr-u4-l1-learner-1"
+          },
+          {
+            "es": "Todo recto y luego a la izquierda.",
+            "ar": "على طول ثم إلى اليسار.",
+            "arEg": "على طول وبعدين شمال.",
+            "audioKey": "pending/tr-u4-l1-pass-1"
+          },
+          {
+            "es": "¿A la izquierda o a la derecha?",
+            "ar": "إلى اليسار أم إلى اليمين؟",
+            "arEg": "شمال ولا يمين؟",
+            "audioKey": "pending/tr-u4-l1-learner-2"
+          },
+          {
+            "es": "A la izquierda, después del semáforo.",
+            "ar": "إلى اليسار، بعد إشارة المرور.",
+            "arEg": "شمال، بعد الإشارة.",
+            "audioKey": "pending/tr-u4-l1-pass-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u4_1_straight",
+        "type": "fill_blank",
+        "instructionAr": "أكمل عبارة «على طول».",
+        "stemEs": "Sigue todo ____ hasta la plaza.",
+        "stemAr": "امشِ على طول حتى الساحة.",
+        "answerKey": {
+          "accepted": [
+            "recto"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«todo recto» = على طول/مستقيم. ولا تعني «right» الإنجليزية بل «مستقيم»، واليمين derecha.",
+        "errorFeedback": {
+          "derecho": "«todo derecho» صيغة أمريكا اللاتينية؛ في إسبانيا «todo recto».",
+          "derecha": "«derecha» = يمين، وليست «على طول»."
+        },
+        "targetVocab": [
+          "todo recto"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_2_where_ser",
+        "type": "word_choice",
+        "instructionAr": "أي سؤال صحيح عن مكان المتحف؟",
+        "options": [
+          {
+            "id": "tr_u4_2_a",
+            "text": "¿Dónde está el museo?",
+            "isCorrect": true,
+            "textAr": "أين المتحف؟"
+          },
+          {
+            "id": "tr_u4_2_b",
+            "text": "¿Dónde es el museo?",
+            "isCorrect": false,
+            "textAr": "أين يكون المتحف؟",
+            "distractorRationaleAr": "«ser» لا يُستخدم لموقع الأماكن؛ المكان يُسأل عنه بـestar."
+          },
+          {
+            "id": "tr_u4_2_c",
+            "text": "¿Dónde hay el museo?",
+            "isCorrect": false,
+            "textAr": "هل يوجد المتحف؟",
+            "distractorRationaleAr": "مع أداة التعريف «el» نستخدم estar؛ «hay» بلا أداة تعريف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_2_a"
+          ]
+        },
+        "explanationAr": "موقع مكان محدَّد: ¿Dónde está…? + أداة تعريف. أمّا hay فتُستخدم للتنكير: ¿Hay un museo cerca?",
+        "errorFeedback": {
+          "tr_u4_2_b": "الصواب: ¿Dónde está el museo?",
+          "tr_u4_2_c": "«hay» تُستخدم بلا أداة تعريف: ¿Hay un museo cerca?"
+        },
+        "targetVocab": [
+          "mapa"
+        ],
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_3_left_right",
+        "type": "choose_reply",
+        "instructionAr": "قال لك المارّة: «Todo recto y luego a la izquierda». اختر ردّك الأنسب.",
+        "stemEs": "— Todo recto y luego a la izquierda.",
+        "stemAr": "— على طول ثم إلى اليسار.",
+        "options": [
+          {
+            "id": "tr_u4_3_a",
+            "text": "Entendido, gracias. ¿Está lejos?",
+            "isCorrect": true,
+            "textAr": "فهمت، شكرًا. هل هو بعيد؟"
+          },
+          {
+            "id": "tr_u4_3_b",
+            "text": "No, gracias. Adiós.",
+            "isCorrect": false,
+            "textAr": "لا، شكرًا. وداعًا.",
+            "distractorRationaleAr": "لم يحدث ما يرفضه؛ الشكر ثم سؤال تكميلي أنسب."
+          },
+          {
+            "id": "tr_u4_3_c",
+            "text": "¿Cuánto cuesta?",
+            "isCorrect": false,
+            "textAr": "كم الثمن؟",
+            "distractorRationaleAr": "السؤال عن السعر لا يخصّ الاتجاه في الشارع."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_3_a"
+          ]
+        },
+        "explanationAr": "بعد فهم الاتجاه: تأكيد + شكر + سؤال تكميلي (¿Está lejos?).",
+        "errorFeedback": {
+          "tr_u4_3_b": "الردّ «No, gracias» يرفض ما لا يحتاج رفضًا.",
+          "tr_u4_3_c": "لا يوجد ثمن مقابل إرشاد في الشارع."
+        },
+        "targetVocab": [
+          "izquierda"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_4_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "عفوًا، أين المترو من فضلك؟",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Perdón, ¿dónde está el metro, por favor?",
+            "Perdone, ¿dónde está el metro, por favor?",
+            "Disculpe, ¿dónde está el metro, por favor?",
+            "¿Dónde está el metro, por favor?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "لفت الانتباه بلباقة: Perdón / Perdone / Disculpe، ثم ¿Dónde está…?",
+        "errorFeedback": {
+          "¿Dónde es el metro?": "المكان بـestar: ¿Dónde está el metro؟",
+          "¿Dónde está metro?": "ناقصة أداة التعريف: el metro."
+        },
+        "targetVocab": [
+          "izquierda",
+          "derecha"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_asking_directions_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اسأل عن مكان ثم أكّد فهمك للاتجاه. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Perdón, ¿dónde está la Plaza Mayor? — Todo recto y a la izquierda. — Entendido, gracias.",
+        "stemAr": "عفوًا، أين ساحة مايور؟ — على طول ثم إلى اليسار. — فهمت، شكرًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u4-asking-directions-model-1",
+          "modelAnswer": "Perdón, ¿dónde está la Plaza Mayor? — Todo recto y a la izquierda. — Entendido, gracias."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "todo recto",
+          "izquierda"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الاتجاهات 1/4 (السؤال عن مكان). يحتاج مراجعة إسبانية أصلية لصيغ لفت الانتباه في الشارع (Perdón/Perdone/Disculpe) ولفظ recto مقابل derecho بين إسبانيا وأمريكا اللاتينية. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

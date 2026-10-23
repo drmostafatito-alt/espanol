@@ -1,0 +1,93 @@
+# seeds/adjectives.tsv — head, pos, gender, level, msa, eg, ex_es, ex_ar, domain
+malo	adj	mf	A1	سيئ	وحش	El tiempo está muy malo hoy.	الجو وحش النهارده.	daily
+feo	adj	mf	A1	قبيح	وحش الشكل	Ese edificio es muy feo.	العمارة دي شكلها وحش.	daily
+rápido	adj	mf	A1	سريع	سريع	El tren es muy rápido.	القطار سريع جدًا.	transport
+lento	adj	mf	A2	بطيء	بطيء	El servicio aquí es muy lento.	الخدمة هنا بطيئة جدًا.	callcenter
+barato	adj	mf	A1	رخيص	رخيص	Este mercado es muy barato.	السوق ده رخيص جدًا.	shopping
+alto	adj	mf	A1	طويل أو مرتفع	عالي	La montaña es muy alta.	الجبل عالي جدًا.	travel
+bajo	adj	mf	A1	قصير أو منخفض	قصير	Su voz es muy baja.	صوتها واطي.	social
+corto	adj	mf	A2	قصير	قصير	El texto es demasiado corto.	النص قصير أوي.	study
+largo	adj	mf	A2	طويل	طويل	El viaje fue muy largo.	الرحلة كانت طويلة جدًا.	travel
+ancho	adj	mf	B1	عريض	عريض	La calle es muy ancha aquí.	الشارع عريض هنا.	transport
+estrecho	adj	mf	B1	ضيّق	ضيّق	Este pasillo es muy estrecho.	الممر ده ضيّق جدًا.	housing
+caliente	adj	mf	A1	ساخن	سخن	La sopa está muy caliente.	الشوربة سخنة جدًا.	food
+frío	adj	mf	A1	بارد	بارد	El agua está muy fría.	المية باردة.	food
+duro	adj	mf	A2	صلب أو قاسٍ	قاسٍ	Este pan está muy duro.	العيش ده قاسٍ.	food
+blando	adj	mf	B1	طري	طري	El pan está blando y fresco.	العيش طري وطازج.	food
+limpio	adj	mf	A1	نظيف	نظيف	El hotel está muy limpio.	الفندق نظيف جدًا.	travel
+sucio	adj	mf	A1	متّسخ	وسخ	Este vaso está sucio.	الكوباية دي وسخة.	housing
+seco	adj	mf	A2	جاف	نشف	El clima está muy seco aquí.	الجوا ناشف هنا.	daily
+mojado	adj	mf	A2	مبلول	مبلول	El suelo está mojado.	الأرضية مبلولة.	housing
+lleno	adj	mf	A2	ممتلئ	مليان	El tren está lleno hoy.	القطار مليان النهارده.	transport
+vacío	adj	mf	A2	فارغ	فاضي	La sala está vacía.	القاعة فاضية.	housing
+cerrado	adj	mf	A1	مغلق	مقفول	La tienda está cerrada los domingos.	المحل مقفول أيام الأحد.	shopping
+fácil	adj	mf	A1	سهل	سهل	Este examen es muy fácil.	الامتحان ده سهل جدًا.	study
+difícil	adj	mf	A1	صعب	صعب	La pronunciación es difícil.	النطق صعب.	study
+posible	adj	mf	A2	ممكن	ممكن	Es posible llegar antes.	ممكن نوصل بدري.	travel
+imposible	adj	mf	A2	مستحيل	مستحيل	Es imposible terminar hoy.	مستحيل نخلّص النهارده.	work
+necesario	adj	mf	A2	ضروري	لازم	Es necesario traer el pasaporte.	لازم تجيب الباسبور.	travel
+importante	adj	mf	A1	مهم	مهم	La información es importante.	المعلومة مهمة.	work
+interesante	adj	mf	A2	مثير للاهتمام	مثير	Este libro es muy interesante.	الكتاب ده مثير جدًا.	study
+aburrido	adj	mf	A2	ممل	ممل	La película es muy aburrida.	الفيلم ممل جدًا.	social
+divertido	adj	mf	A2	ممتع	ممتع	El juego es muy divertido.	اللعبة ممتعة جدًا.	social
+triste	adj	mf	A2	حزين	حزين	El final de la historia es triste.	آخر القصة حزين.	social
+alegre	adj	mf	A2	مسرور	فرحان	Hoy estoy muy alegre.	النهارده فرحان جدًا.	social
+contento	adj	mf	A2	راضٍ أو مسرور	مبسوط	Estoy contento con el resultado.	مبسوط بالنتيجة.	social
+cansado	adj	mf	A1	متعب	تعبان	Estoy muy cansado del viaje.	تعبان جدًا من السفر.	health
+ocupado	adj	mf	A2	مشغول	مشغول	La línea está ocupada ahora.	الخط مشغول دلوقتي.	callcenter
+libre	adj	mf	A1	حر أو مشغول بمعنى فاضٍ	فاضي	El asiento está libre.	المقعد فاضي.	transport
+listo	adj	mf	A2	جاهز أو ذكي	جاهز	La comida ya está lista.	الأكل جاهز دلوقتي.	food
+inteligente	adj	mf	A2	ذكي	ذكي	Es una idea muy inteligente.	دي فكرة ذكية جدًا.	social
+amable	adj	mf	A1	لطيف	محترم	El dependiente es muy amable.	البائع محترم جدًا.	shopping
+simpático	adj	mf	A2	ودود	ودود	Mi vecino es muy simpático.	جاري ودود جدًا.	social
+grosero	adj	mf	B1	وقح	وقح	No seas grosero con los demás.	ما تبقاش وقح مع الناس.	social
+tranquilo	adj	mf	A2	هادئ	هادي	El barrio es muy tranquilo.	الحي هادي جدًا.	housing
+ruidoso	adj	mf	B1	صاخب	صاخب	Este restaurante es muy ruidoso.	المطعم ده صاخب جدًا.	food
+seguro	adj	mf	A2	آمن	آمن	Este barrio es muy seguro.	الحي ده آمن جدًا.	housing
+peligroso	adj	mf	A2	خطير	خطير	Cruzar aquí es peligroso.	العبور هنا خطير.	transport
+sano	adj	mf	A2	صحي	صحي	Comer fruta es muy sano.	أكل الفاكهة صحي جدًا.	health
+enfermo	adj	mf	A2	مريض	مريض	El gato está enfermo.	القطة مريضة.	health
+rico	adj	mf	A2	غني أو لذيذ	غني	El arroz con leche está muy rico.	الأرز بالحليب طعمه حلو.	food
+pobre	adj	mf	A2	فقير	فقير	La familia es pobre pero alegre.	العيلة فقيرة بس فرحانة.	social
+joven	adj	mf	A1	شاب	صغير	Este profesor es muy joven.	الأستاذ ده صغير.	study
+viejo	adj	mf	A1	عجوز أو قديم	قديم	El coche de mi padre es viejo.	عربية أبويا قديمة.	daily
+moderno	adj	mf	A2	حديث	مودرن	El edificio es muy moderno.	العمارة مودرن جدًا.	housing
+antiguo	adj	mf	A2	قديم أو عتيق	عتيق	Este reloj es muy antiguo.	الساعة دي قديمة جدًا.	daily
+público	adj	mf	B1	عام	عام	El transporte público es eficiente.	المواصلات العامة فعّالة.	transport
+privado	adj	mf	B1	خاص	خاص	El jardín es privado.	الحديقة خاصة.	housing
+nacional	adj	mf	B1	وطني	وطني	La cocina nacional es famosa.	الأكل الوطني مشهور.	food
+extranjero	adj	mf	B1	أجنبي	أجنبي	Soy estudiante extranjero.	أنا طالب أجنبي.	study
+local	adj	mf	A2	محلي	محلي	Me gusta la comida local.	الأكل المحلي عاجبني.	food
+igual	adj	mf	A2	متساوٍ أو متشابه	زي بعض	Los dos precios son iguales.	السعرَين زي بعض.	shopping
+diferente	adj	mf	A2	مختلف	مختلف	Mi opinión es diferente.	رأيي مختلف.	social
+similar	adj	mf	B1	مشابه	مشابه	Este caso es similar al tuyo.	الحالة دي مشابهة لحالتك.	callcenter
+común	adj	mf	A2	شائع	شائع	Este error es muy común.	الغلطة دي شائعة جدًا.	study
+raro	adj	mf	A2	غريب	غريب	Hay un ruido muy raro.	فيه صوت غريب جدًا.	daily
+extraño	adj	mf	B1	غريب أو مريب	غريب	Es una sensación muy extraña.	دي إحساس غريب جدًا.	social
+normal	adj	mf	A2	طبيعي	عادي	Es normal estar nervioso.	طبيعي تبقى متوتر.	study
+principal	adj	mf	A2	رئيسي	رئيسي	La calle principal está cerrada.	الشارع الرئيسي مقفول.	transport
+final	adj	mf	A2	نهائي	نهائي	La decisión final es del jefe.	القرار النهائي للمدير.	work
+completo	adj	mf	A2	كامل	كامل	El informe está completo.	التقرير كامل.	work
+excelente	adj	mf	A2	ممتاز	ممتاز	El servicio fue excelente.	الخدمة كانت ممتازة.	callcenter
+perfecto	adj	mf	A2	مثالي	مثالي	Tu español es perfecto.	إسبانيتك مثالية.	study
+terrible	adj	mf	B1	فظيع	فظيع	El tráfico es terrible hoy.	الزحمة فظيعة النهارده.	transport
+maravilloso	adj	mf	A2	رائع	رائع	La vista es maravillosa.	المنظر رائع.	travel
+horrible	adj	mf	B1	مروع	مروع	La habitación estaba horrible.	الأوضة كانت مروعة.	travel
+delicioso	adj	mf	A2	لذيذ	لذيذ	Este postre es delicioso.	الحلوة دي لذيذة.	food
+fresco	adj	mf	A2	طازج أو منعش	طازج	El pan está muy fresco.	العيش طازج جدًا.	food
+típico	adj	mf	A2	نموذجي أو مميز للمنطقة	تقليدي	Este plato es típico de España.	الطبق ده تقليدي في إسبانيا.	food
+famoso	adj	mf	A2	مشهور	مشهور	El museo es muy famoso.	المتحف مشهور جدًا.	travel
+útil	adj	mf	B1	مفيد	مفيد	Este diccionario es muy útil.	القاموس ده مفيد جدًا.	study
+cómodo	adj	mf	A2	مريح	مريح	Los zapatos son muy cómodos.	الجوا مريحة جدًا.	shopping
+incómodo	adj	mf	B1	غير مريح	مش مريح	El asiento es muy incómodo.	المقعد مش مريح.	transport
+elegante	adj	mf	B1	أنيق	أنيق	Su estilo es muy elegante.	أسلوبها أنيق جدًا.	shopping
+débil	adj	mf	B1	ضعيف	ضعيف	La señal es muy débil aquí.	الإشارة ضعيفة هنا.	services
+fuerte	adj	mf	A2	قوي	قوي	El café es demasiado fuerte.	القهوة قوية أوي.	food
+oscuro	adj	mf	A2	مظلم	مظلم	La habitación está muy oscura.	الأوضة ضلمة.	housing
+guapo	adj	mf	A2	وسيم	جميل	Su hermano es muy guapo.	أخوها جميل.	social
+húmedo	adj	mf	B1	رطب	رطب	El clima está húmedo en otoño.	الجوا رطب في الخريف.	daily
+pesado	adj	mf	A2	ثقيل	تقيل	La maleta es muy pesada.	الشنطة تقيلة جدًا.	travel
+ligero	adj	mf	B1	خفيف	خفيف	Este abrigo es muy ligero.	الجاكت ده خفيف.	shopping
+amargo	adj	mf	B1	مر	مر	El café está muy amargo.	القهوة مرة.	food
+dulce	adj	mf	A2	حلو	حلو	Me gusta el chocolate dulce.	الشوكولاتة الحلوة عاجباني.	food
+salado	adj	mf	B1	مالح	مالح	Este plato está muy salado.	الطبق ده مالح أوي.	food

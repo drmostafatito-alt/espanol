@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": null,
+      "category": "core",
+      "objectiveAr": "المسار الرئيسي المتسلسل من التمهيد إلى C1 بالأهداف التواصلية.",
+      "units": [
+        {
+          "slug": "a1-u1-origen",
+          "levelCode": "A1",
+          "titleAr": "التحية والتعريف بالنفس والجنسية",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "a1-origen-de-donde-eres",
+            "a1-saludos-formalidad",
+            "a1-presentar-a-otro",
+            "a1-nacionalidades"
+          ],
+          "vocabularyBundles": [
+            "a1-u1-origen",
+            "a1-u2-saludos",
+            "a1-u3-nacionalidades"
+          ]
+        }
+      ]
+    }
+  ]
+}

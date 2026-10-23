@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u1-boarding-delay",
+    "titleAr": "الأمن والصعود والتأخير",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u1-airport",
+    "objectiveAr": "أن يفهم المتعلم إعلان صعود أو تأخير، ويطلب توضيحًا عند عدم الفهم، ويعتذر بلباقة عند المرور في طابور.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "retraso",
+      "salida",
+      "pasajero"
+    ],
+    "reviewVocabulary": [
+      "embarque",
+      "vuelo",
+      "puerta"
+    ],
+    "targetStructures": [
+      "¿Puede repetirlo más despacio, por favor?",
+      "El vuelo sale con retraso.",
+      "¿Es esta la puerta 12?"
+    ],
+    "grammarTopics": [
+      "pedir-aclaracion",
+      "anuncios-de-vuelo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تسمع إعلانًا في المطار وتحتاج أن تتأكد من بوابتك.",
+        "settingAr": "صالة المغادرة، إعلان مكتوب على الشاشة",
+        "lines": [
+          {
+            "es": "Atención, pasajeros del vuelo 345: el embarque se retrasa treinta minutos.",
+            "ar": "انتباه، مسافرو الرحلة 345: يتأخر الصعود ثلاثين دقيقة.",
+            "arEg": "انتباه، مسافري رحلة 345: الصعود اتأخر تلاتين دقيقة.",
+            "audioKey": "pending/tr-u1-l2-anuncio-1"
+          },
+          {
+            "es": "Perdone, ¿ha dicho treinta minutos de retraso?",
+            "ar": "عفوًا، هل قلت تأخير ثلاثين دقيقة؟",
+            "arEg": "لو سمحت، قلت تأخير تلاتين دقيقة؟",
+            "audioKey": "pending/tr-u1-l2-omar-1"
+          },
+          {
+            "es": "Sí, exacto. La salida es a las nueve y media.",
+            "ar": "نعم، بالضبط. المغادرة الساعة التاسعة والنصف.",
+            "arEg": "أيوة بالظبط. المغادرة الساعة تسعة ونص.",
+            "audioKey": "pending/tr-u1-l2-agente-1"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u1_7_notice",
+        "type": "listen_choose",
+        "instructionAr": "استمع (أو اقرأ النص البديل) واختر مدة التأخير المذكورة.",
+        "audioKey": "pending/tr-u1-7-notice-1",
+        "speechEs": "El embarque se retrasa treinta minutos.",
+        "options": [
+          {
+            "id": "tr_u1_7_a",
+            "text": "Treinta minutos.",
+            "isCorrect": true,
+            "textAr": "ثلاثون دقيقة."
+          },
+          {
+            "id": "tr_u1_7_b",
+            "text": "Tres horas.",
+            "isCorrect": false,
+            "textAr": "ثلاث ساعات.",
+            "distractorRationaleAr": "«treinta» = ثلاثون، و«tres» = ثلاثة؛ التشابه في البداية فقط."
+          },
+          {
+            "id": "tr_u1_7_c",
+            "text": "Trece minutos.",
+            "isCorrect": false,
+            "textAr": "ثلاث عشرة دقيقة.",
+            "distractorRationaleAr": "«trece» = ثلاثة عشر، مختلفة عن treinta."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_7_a"
+          ]
+        },
+        "explanationAr": "treinta = 30، trece = 13، tres = 3. في إعلانات المطارات الأرقام تُنطق بسرعة، والتمييز بينها مهارة سمعية تحتاج تدريبًا.",
+        "errorFeedback": {
+          "tr_u1_7_b": "tres = 3، والمسموع treinta = 30.",
+          "tr_u1_7_c": "trece = 13، والمسموع treinta = 30."
+        },
+        "targetVocab": [
+          "retraso"
+        ],
+        "skills": [
+          "listening",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_8_clarify",
+        "type": "choose_reply",
+        "instructionAr": "لم تفهم الإعلان. اختر الطلب الأنسب.",
+        "contextAr": "الإعلان كان سريعًا ولم تفهم الرقم.",
+        "stemEs": "— El embarque se retrasa… (no lo has entendido)",
+        "stemAr": "— يتأخر الصعود… (لم تفهم)",
+        "options": [
+          {
+            "id": "tr_u1_8_a",
+            "text": "Perdone, ¿puede repetirlo más despacio, por favor?",
+            "isCorrect": true,
+            "textAr": "عفوًا، هل يمكنك تكراره أبطأ من فضلك؟"
+          },
+          {
+            "id": "tr_u1_8_b",
+            "text": "Repite.",
+            "isCorrect": false,
+            "textAr": "أعِد.",
+            "distractorRationaleAr": "أمر مباشر بلا لباقة في سياق رسمي."
+          },
+          {
+            "id": "tr_u1_8_c",
+            "text": "No hablo español, adiós.",
+            "isCorrect": false,
+            "textAr": "لا أتحدث الإسبانية، وداعًا.",
+            "distractorRationaleAr": "انسحاب مبكر رغم وجود صيغة مهذبة للطلب."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_8_a"
+          ]
+        },
+        "explanationAr": "طلب التوضيح المهذب: Perdone + ¿puede repetirlo más despacio, por favor? بديل: ¿Puede hablarme más despacio?",
+        "errorFeedback": {
+          "tr_u1_8_b": "«Repite» صيغة أمر غير رسمية وقاسية؛ استخدم «¿Puede repetirlo?».",
+          "tr_u1_8_c": "لا تنسحب من الموقف؛ اطلب التكرار ببطء."
+        },
+        "targetVocab": [
+          "retraso"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_9_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل بالسؤال المناسب للتأكد من القاعة.",
+        "stemEs": "Perdone, ¿es esta la ____ 12?",
+        "stemAr": "عفوًا، هل هذه البوابة 12؟",
+        "answerKey": {
+          "accepted": [
+            "puerta"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "puerta de embarque = بوابة الصعود، ويجوز اختصارها إلى puerta في المطار.",
+        "errorFeedback": {
+          "portal": "«portal» مدخل مبنى سكني، لا بوابة مطار.",
+          "salida": "salida = مخرج/مغادرة، لا بوابة الصعود."
+        },
+        "targetVocab": [
+          "puerta"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_10_fix",
+        "type": "find_fix_error",
+        "instructionAr": "أي جملة صحيحة عند الاعتذار للمرور في طابور؟",
+        "stemEs": "Disculpe, puedo pasar por favor, ¿no?",
+        "options": [
+          {
+            "id": "tr_u1_10_a",
+            "text": "Disculpe, ¿puedo pasar, por favor?",
+            "isCorrect": true,
+            "textAr": "عفوًا، هل يمكنني المرور من فضلك؟"
+          },
+          {
+            "id": "tr_u1_10_b",
+            "text": "Disculpe, puedo pasar por favor, ¿no?",
+            "isCorrect": false,
+            "distractorRationaleAr": "ذيل «¿no?» ونقص علامة الاستفهام يجعلان الجملة غير مرتبة."
+          },
+          {
+            "id": "tr_u1_10_c",
+            "text": "Paso.",
+            "isCorrect": false,
+            "textAr": "أمرر.",
+            "distractorRationaleAr": "«Paso» تصريح لا طلب؛ الأفضل «¿puedo pasar?»."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_10_a"
+          ]
+        },
+        "explanationAr": "طلب مهذب: Disculpe + ¿puedo + مصدر + por favor?. علامتا الاستفهام ¿…? تحصران السؤال.",
+        "errorFeedback": {
+          "tr_u1_10_b": "احذف «¿no?» وضع علامتي الاستفهام.",
+          "tr_u1_10_c": "اطلب الإذن بصيغة سؤال."
+        },
+        "targetVocab": [
+          "pasajero"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطار 2/4. يحتاج مراجعة إسبانية أصلية لصياغة الإعلان «se retrasa treinta minutos» في مطار إسباني، وتحديد سرعة مناسبة للملف الصوتي لاحقًا. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

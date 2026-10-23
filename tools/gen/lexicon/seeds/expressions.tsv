@@ -1,0 +1,58 @@
+# seeds/expressions.tsv — head, pos, gender, level, msa, eg, ex_es, ex_ar, domain, kind
+por favor	phrase		A1	من فضلك	لو سمحت	Un café con leche, por favor.	قهوة باللبن من فضلك.	social	expression
+gracias	phrase		A1	شكرًا	متشكر	Gracias por tu ayuda.	شكرًا على مساعدتك.	social	expression
+de nada	phrase		A1	عفوًا	العفو	— Muchas gracias. — De nada.	— شكرًا جدًا. — العفو.	social	expression
+lo siento	phrase		A2	أنا آسف	أنا آسف	Lo siento, no fue mi intención.	أنا آسف، ما كانش قصدي.	social	expression
+disculpe	phrase		A2	المعذرة	عن إذنك	Disculpe, ¿dónde está la estación?	عن إذنك، المحطة فين؟	travel	expression
+perdón	phrase		A1	آسف أو سامحني	معلش	Perdón, llegué un poco tarde.	معلش، وصلت متأخر شوية.	social	expression
+hasta pronto	phrase		A2	إلى اللقاء قريب	لسه هنشوف بعض	Hasta pronto, nos vemos el lunes.	لسه هنشوف بعض، يوم الاثنين.	social	expression
+buen provecho	phrase		A2	بالهناء والشفاء	بالهنا والشفاء	— Buen provecho. — Gracias igualmente.	— بالهنا والشفاء. — شكرًا، وإنت كمان.	food	expression
+cómo estás	phrase		A1	كيف حالك	إنت عامل إيه	Hola, ¿cómo estás hoy?	أهلاً، إنت عامل إيه النهارده؟	social	expression
+muy bien	phrase		A1	جيد جدًا	كويس جدًا	Hoy me siento muy bien.	النهارده حاسس إني كويس جدًا.	health	expression
+más o menos	phrase		A2	هكذا هكذا	كده كده	— ¿Qué tal el examen? — Más o menos.	— إيه أخبار الامتحان؟ — كده كده.	study	expression
+no entiendo	phrase		A1	لا أفهم	مش فاهم	No entiendo esta palabra.	مش فاهم الكلمة دي.	study	expression
+puede repetir	phrase		A2	يمكنك أن تكرر	ممكن تكرر	Puede repetir más despacio, por favor.	ممكن تكرر أبطأ من فضلك؟	study	expression
+habla despacio	phrase		A2	تكلم ببطء	اتكلم بهدوء	Habla despacio, por favor.	اتكلم بهدوء من فضلك.	study	expression
+no sé	phrase		A1	لا أعرف	مش عارف	No sé la respuesta correcta.	مش عارف الإجابة الصح.	study	expression
+por supuesto	phrase		A2	بالطبع	طبعًا	¿Puedo pasar? — Por supuesto.	أقدر أدخل؟ — طبعًا.	social	expression
+vale	phrase		A1	حسنًا أو اتفقنا	تمام	Vale, nos vemos a las ocho.	تمام، هنشوف بعض الساعة تمانة.	social	expression
+de acuerdo	phrase		A2	موافق	تمام، موافق	Estoy de acuerdo contigo.	موافق معاك.	social	expression
+me parece bien	phrase		A2	يبدو لي جيدًا	الرأي ده كويس	Me parece bien tu propuesta.	اقتراحك كويس.	work	expression
+qué pena	phrase		A2	يا للأسف	إيه الحظ ده	Qué pena que no pudiste venir.	إيه الحظ إنك ما قدرتش تيجي.	social	expression
+qué suerte	phrase		A2	يا للحظ السعيد	إيه الحظ الحلو	Qué suerte tienes con el trabajo.	إيه الحظ الحلو في الشغل.	social	expression
+no importa	phrase		A2	لا يهم	مفيش مشكلة	No importa, lo hago yo.	مفيش مشكلة، أنا هعملها.	social	expression
+con cuidado	phrase		A2	بحذر	بالراحة	Con cuidado, el suelo está mojado.	بالراحة، الأرضية مبلولة.	housing	expression
+buena suerte	phrase		A2	حظًا سعيدًا	حظ سعيد	Buena suerte con tu examen.	حظ سعيد في امتحانك.	study	expression
+feliz cumpleaños	phrase		A1	عيد ميلاد سعيد	كل سنة وإنت طيب	Feliz cumpleaños, abuela.	كل سنة وإنتِ طيبة يا ست.	family	expression
+enhorabuena	phrase		B1	مبروك	مبروك	Enhorabuena por tu nuevo empleo.	مبروك على الشغل الجديد.	work	expression
+vamos	phrase		A1	هيا بنا	يلا	Vamos al cine esta noche.	يلا نروح السينما الليلة.	social	expression
+venga	phrase		A2	حسنًا هيا	يلا بينا	Venga, empezamos la reunión.	يلا بينا نبدأ الاجتماع.	work	expression
+vaya	phrase		B1	يا لها من	يا الله	Vaya, qué sorpresa tan agradable.	يا الله، إيه المفاجأة الحلوة دي.	social	expression
+sin problema	phrase		A2	بلا مشكلة	من غير مشكلة	¿Te ayudo? — Sin problema.	أساعدك؟ — من غير مشكلة.	social	expression
+déjeme ver	phrase		B1	دعني أرى	خليني أشوف	Déjeme ver su documento, por favor.	خليني أشوف بطاقتك من فضلك.	services	expression
+un momento	phrase		A1	لحظة	ثانية واحدة	Un momento, por favor.	ثانية واحدة من فضلك.	services	expression
+ahora mismo	phrase		A2	الآن مباشرة	حالًا	Voy ahora mismo a la oficina.	رايح المكتب حالًا.	work	expression
+poco a poco	phrase		A2	قليلاً قليلاً	على مهلي	Poco a poco se aprende español.	على مهلي هنتعلم الإسباني.	study	expression
+cada día	phrase		A1	كل يوم	كل يوم	Cada día mejoro mi pronunciación.	كل يوم بحسّن نطقي.	study	expression
+de vez en cuando	phrase		B1	من وقت لآخر	كل شوية	De vez en cuando como en restaurantes.	كل شوية باكل في مطاعم.	food	expression
+a veces	phrase		A2	أحيانًا	أحيانًا	A veces voy al trabajo andando.	أحيانًا بروح الشغل مشي.	daily	expression
+todo el mundo	phrase		A2	الجميع	كل الناس	Todo el mundo habla español aquí.	كل الناس بتتكلم إسباني هنا.	social	expression
+en realidad	phrase		B1	في الحقيقة	في الحقيقة	En realidad, el precio es muy bajo.	في الحقيقة السعر واطي جدًا.	shopping	expression
+por ejemplo	phrase		A2	على سبيل المثال	مثلاً	Hay muchas frutas, por ejemplo naranjas.	فيه فواكه كتير، مثلاً برتقال.	food	expression
+es decir	phrase		B1	أي أن	يعني	Es decir, no podemos confirmar aún.	يعني مش هنقدر نأكد لسه.	callcenter	expression
+o sea	phrase		B1	يعني	يعني	O sea, ¿no entiendes la pregunta?	يعني إنت مش فاهم السؤال؟	study	expression
+a lo mejor	phrase		B1	ربما	يمكن	A lo mejor viene mañana.	يمكن ييجي بكرة.	social	expression
+qué lástima	phrase		B2	يا للأسف	إيه النحس ده	Qué lástima que se canceló el vuelo.	إيه النحس إن الرحلة اتلغت.	travel	expression
+tener razón	phrase		A2	أن يكون محقًا	يبقى معاه حق	Tienes razón, es mejor esperar.	إنت معاك حق، الأفضل نستنى.	social	expression
+hacer falta	phrase		B1	أن يكون مطلوبًا	يكون مطلوب	Hace falta más tiempo para el proyecto.	محتاجين وقت أكتر للمشروع.	work	expression
+echar una mano	phrase		B1	أن يساعد	يدّي إيده	¿Me echas una mano con las cajas?	تديني إيدك في الصناديق؟	housing	expression
+estar de acuerdo	phrase		A2	أن يوافق	يبقى موافق	Estamos de acuerdo con el plan.	إحنا موافقين على الخطة.	work	expression
+tener prisa	phrase		A2	أن يعجل	يكون مستعجل	Tengo prisa, el tren sale pronto.	أنا مستعجل، القطار هيخرج قريب.	transport	expression
+dar un paseo	phrase		A2	أن يتمشّى	يعمل مشوار	Damos un paseo por el parque.	بنعمل مشوار في الحديقة.	social	expression
+echar de menos	phrase		B1	أن يفتقد	يتوحش	Echo de menos la comida de mi madre.	بتوحش أكل أمي.	family	expression
+meter la pata	phrase		B2	أن يخطئ بشدة	يجيب آخرته	Otra vez metí la pata en la reunión.	تاني جبت آخرتي في الاجتماع.	work	expression
+tirar la toalla	phrase		B2	أن يستسلم	يسلّم	No tires la toalla, sigue intentando.	ما تسلّمش، كمّل محاولات.	study	expression
+ir al grano	phrase		B2	أن يدخل في صلب الموضوع	يدخل في الموضوع	Vamos al grano, ¿cuál es el problema?	يلا ندخل في الموضوع، إيه المشكلة؟	work	expression
+ser pan comido	phrase		B2	أن يكون سهلًا جدًا	يكون سهل قوي	Este examen será pan comido.	الامتحان ده هيبقى سهل قوي.	study	expression
+costar un ojo	phrase		B2	أن يكون غالياً جدًا	يكون غالي قوي	Ese coche cuesta un ojo de la cara.	العربية دي غالية قوي.	shopping	expression
+ponerse las pilas	phrase		B2	أن يجتهد	يمسك في نفسه	Hay que ponerse las pilas con el español.	لازم نمسك في نفسنا في الإسباني.	study	expression

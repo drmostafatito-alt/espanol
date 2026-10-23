@@ -1,0 +1,1938 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "cv-lex-adverbs",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+ "source": {
+  "title": "حزمة cv-lex-adverbs — إعداد داخلي (بذور TSV قابلة للمراجعة)، تحتاج مراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزم «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة. IPA تلقائي تقريبي من قواعد الإملاء (إسبانية أوروبية) وينتظر مراجعة بشرية. الحزم مُولَّدة من tools/gen/lexicon/ (بذور TSV قابلة للمراجعة)."
+ },
+ "entries": [
+  {
+   "headword": "ayer",
+   "normalized": "ayer",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/aʝˈeɾ/",
+   "pronunciationHintAr": "ايير",
+   "internalRank": 1,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أمس",
+     "meaningArEg": "إمبارح",
+     "glossEs": null,
+     "exampleEs": "Llegamos ayer por la noche.",
+     "exampleAr": "وصلنا امبارح بالليل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Llegamos ayer por la noche.",
+     "ar": "وصلنا امبارح بالليل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "antes",
+   "normalized": "antes",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈantes/",
+   "pronunciationHintAr": "انتيس",
+   "internalRank": 2,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قبل",
+     "meaningArEg": "قبل كده",
+     "glossEs": null,
+     "exampleEs": "Antes vivía en Granada.",
+     "exampleAr": "قبل كده كنت ساكن في غرناطة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Antes vivía en Granada.",
+     "ar": "قبل كده كنت ساكن في غرناطة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "después",
+   "normalized": "después",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/despuˈes/",
+   "pronunciationHintAr": "ديسبويس",
+   "internalRank": 3,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بعد",
+     "meaningArEg": "بعد كده",
+     "glossEs": null,
+     "exampleEs": "Después vamos al cine.",
+     "exampleAr": "بعد كده هنروح السينما.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Después vamos al cine.",
+     "ar": "بعد كده هنروح السينما.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "luego",
+   "normalized": "luego",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/luˈego/",
+   "pronunciationHintAr": "لويجو",
+   "internalRank": 4,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لاحقًا",
+     "meaningArEg": "بعدين",
+     "glossEs": null,
+     "exampleEs": "Te llamo luego.",
+     "exampleAr": "هكلمك بعدين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Te llamo luego.",
+     "ar": "هكلمك بعدين.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "temprano",
+   "normalized": "temprano",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tempɾˈano/",
+   "pronunciationHintAr": "تيمبرانو",
+   "internalRank": 5,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مبكرًا",
+     "meaningArEg": "بدري",
+     "glossEs": null,
+     "exampleEs": "Me levanto muy temprano.",
+     "exampleAr": "بقوم بدري جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me levanto muy temprano.",
+     "ar": "بقوم بدري جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "aún",
+   "normalized": "aún",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/aˈun/",
+   "pronunciationHintAr": "اون",
+   "internalRank": 6,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ما زال",
+     "meaningArEg": "لسه",
+     "glossEs": null,
+     "exampleEs": "Aún no ha llegado el paquete.",
+     "exampleAr": "الطرد لسه ما وصلش.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Aún no ha llegado el paquete.",
+     "ar": "الطرد لسه ما وصلش.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "todavía",
+   "normalized": "todavía",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/todabˈia/",
+   "pronunciationHintAr": "تودابيا",
+   "internalRank": 7,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ما زال",
+     "meaningArEg": "لسه",
+     "glossEs": null,
+     "exampleEs": "Todavía estoy esperando la respuesta.",
+     "exampleAr": "لسه مستنى الرد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Todavía estoy esperando la respuesta.",
+     "ar": "لسه مستنى الرد.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ya",
+   "normalized": "ya",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ʝˈa/",
+   "pronunciationHintAr": "يا",
+   "internalRank": 8,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالفعل أو الآن",
+     "meaningArEg": "دلوقتي",
+     "glossEs": null,
+     "exampleEs": "Ya estoy listo para salir.",
+     "exampleAr": "أنا جاهز أخرج دلوقتي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ya estoy listo para salir.",
+     "ar": "أنا جاهز أخرج دلوقتي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "casi",
+   "normalized": "casi",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kˈasi/",
+   "pronunciationHintAr": "كاسي",
+   "internalRank": 9,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تقريبًا أو على وشك",
+     "meaningArEg": "بالظبط أو على وشك",
+     "glossEs": null,
+     "exampleEs": "Ella casi termina el trabajo.",
+     "exampleAr": "هي على وشك تخلّص الشغل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ella casi termina el trabajo.",
+     "ar": "هي على وشك تخلّص الشغل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "quizá",
+   "normalized": "quizá",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/kuiθˈa/",
+   "pronunciationHintAr": "كويثا",
+   "internalRank": 10,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ربما",
+     "meaningArEg": "ممكن",
+     "glossEs": null,
+     "exampleEs": "Quizá llueva esta tarde.",
+     "exampleAr": "ممكن يمطر العصر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quizá llueva esta tarde.",
+     "ar": "ممكن يمطر العصر.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tal vez",
+   "normalized": "tal vez",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/tˈal beθ/",
+   "pronunciationHintAr": "تال بيث",
+   "internalRank": 11,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ربما",
+     "meaningArEg": "يمكن",
+     "glossEs": null,
+     "exampleEs": "Tal vez vayamos mañana.",
+     "exampleAr": "يمكن نروح بكرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tal vez vayamos mañana.",
+     "ar": "يمكن نروح بكرة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "bastante",
+   "normalized": "bastante",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/bastˈante/",
+   "pronunciationHintAr": "باستانتي",
+   "internalRank": 12,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جداً أو كافيًا",
+     "meaningArEg": "كفاية",
+     "glossEs": null,
+     "exampleEs": "El examen fue bastante difícil.",
+     "exampleAr": "الامتحان كان صعب كفاية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El examen fue bastante difícil.",
+     "ar": "الامتحان كان صعب كفاية.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "mucho",
+   "normalized": "mucho",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈuko/",
+   "pronunciationHintAr": "موكو",
+   "internalRank": 13,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "كثيرًا",
+     "meaningArEg": "كتير",
+     "glossEs": null,
+     "exampleEs": "Me gusta mucho este barrio.",
+     "exampleAr": "الحي ده عاجبني كتير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me gusta mucho este barrio.",
+     "ar": "الحي ده عاجبني كتير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "poco",
+   "normalized": "poco",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/pˈoko/",
+   "pronunciationHintAr": "بوكو",
+   "internalRank": 14,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قليلًا",
+     "meaningArEg": "شوية",
+     "glossEs": null,
+     "exampleEs": "Hablo poco por la mañana.",
+     "exampleAr": "بتكلم شوية الصبح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hablo poco por la mañana.",
+     "ar": "بتكلم شوية الصبح.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "demasiado",
+   "normalized": "demasiado",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/demasiˈado/",
+   "pronunciationHintAr": "ديماسيادو",
+   "internalRank": 15,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أكثر من اللازم",
+     "meaningArEg": "أوي",
+     "glossEs": null,
+     "exampleEs": "Este café es demasiado caliente.",
+     "exampleAr": "القهوة دي سخنة أوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este café es demasiado caliente.",
+     "ar": "القهوة دي سخنة أوي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "muy",
+   "normalized": "muy",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈui/",
+   "pronunciationHintAr": "موي",
+   "internalRank": 16,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جدًّا",
+     "meaningArEg": "جداً",
+     "glossEs": null,
+     "exampleEs": "La playa es muy bonita.",
+     "exampleAr": "الشاطئ جميل جداً.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La playa es muy bonita.",
+     "ar": "الشاطئ جميل جداً.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "más",
+   "normalized": "más",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈas/",
+   "pronunciationHintAr": "ماس",
+   "internalRank": 17,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أكثر",
+     "meaningArEg": "أكتر",
+     "glossEs": null,
+     "exampleEs": "Quiero más pan, por favor.",
+     "exampleAr": "عايز عيش أكتر من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quiero más pan, por favor.",
+     "ar": "عايز عيش أكتر من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "menos",
+   "normalized": "menos",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈenos/",
+   "pronunciationHintAr": "مينوس",
+   "internalRank": 18,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أقل",
+     "meaningArEg": "أقل",
+     "glossEs": null,
+     "exampleEs": "Hoy hay menos gente.",
+     "exampleAr": "النهارده في ناس أقل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hoy hay menos gente.",
+     "ar": "النهارده في ناس أقل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tan",
+   "normalized": "tan",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tˈan/",
+   "pronunciationHintAr": "تان",
+   "internalRank": 19,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هذا القدر",
+     "meaningArEg": "الدرجة دي",
+     "glossEs": null,
+     "exampleEs": "No es tan difícil como parece.",
+     "exampleAr": "مش صعب بالدرجة اللي تبان.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No es tan difícil como parece.",
+     "ar": "مش صعب بالدرجة اللي تبان.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "solo",
+   "normalized": "solo",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/sˈolo/",
+   "pronunciationHintAr": "سولو",
+   "internalRank": 20,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فقط",
+     "meaningArEg": "بس",
+     "glossEs": null,
+     "exampleEs": "Solo quiero un café.",
+     "exampleAr": "عايز قهوة بس.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Solo quiero un café.",
+     "ar": "عايز قهوة بس.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "acaso",
+   "normalized": "acaso",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/akˈaso/",
+   "pronunciationHintAr": "اكاسو",
+   "internalRank": 21,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هل بالصدفة",
+     "meaningArEg": "إنه بالصدفة",
+     "glossEs": null,
+     "exampleEs": "¿Acaso no sabías la noticia?",
+     "exampleAr": "إنه بالصدفة ما كنتش عارف الخبر؟",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Acaso no sabías la noticia?",
+     "ar": "إنه بالصدفة ما كنتش عارف الخبر؟",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "encima",
+   "normalized": "encima",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/enθˈima/",
+   "pronunciationHintAr": "ينثيما",
+   "internalRank": 22,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فوق",
+     "meaningArEg": "فوق",
+     "glossEs": null,
+     "exampleEs": "Deja la caja encima de la mesa.",
+     "exampleAr": "حطّ الصندوق فوق الترابيزة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Deja la caja encima de la mesa.",
+     "ar": "حطّ الصندوق فوق الترابيزة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "debajo",
+   "normalized": "debajo",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/debˈaxo/",
+   "pronunciationHintAr": "ديباخو",
+   "internalRank": 23,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تحت",
+     "meaningArEg": "تحت",
+     "glossEs": null,
+     "exampleEs": "El gato está debajo de la cama.",
+     "exampleAr": "القطة تحت السرير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El gato está debajo de la cama.",
+     "ar": "القطة تحت السرير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "delante",
+   "normalized": "delante",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/delˈante/",
+   "pronunciationHintAr": "ديلانتي",
+   "internalRank": 24,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أمام",
+     "meaningArEg": "قدام",
+     "glossEs": null,
+     "exampleEs": "El cine está delante del parque.",
+     "exampleAr": "السينما قدام الحديقة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El cine está delante del parque.",
+     "ar": "السينما قدام الحديقة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "detrás",
+   "normalized": "detrás",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/detɾˈas/",
+   "pronunciationHintAr": "ديتراس",
+   "internalRank": 25,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خلف",
+     "meaningArEg": "ورا",
+     "glossEs": null,
+     "exampleEs": "El jardín está detrás de la casa.",
+     "exampleAr": "الحديقة ورا البيت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El jardín está detrás de la casa.",
+     "ar": "الحديقة ورا البيت.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "arriba",
+   "normalized": "arriba",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/aɾɾˈiba/",
+   "pronunciationHintAr": "ارريبا",
+   "internalRank": 26,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أعلى",
+     "meaningArEg": "فوق",
+     "glossEs": null,
+     "exampleEs": "El dormitorio está arriba.",
+     "exampleAr": "أوضة النوم فوق.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El dormitorio está arriba.",
+     "ar": "أوضة النوم فوق.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "abajo",
+   "normalized": "abajo",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/abˈaxo/",
+   "pronunciationHintAr": "اباخو",
+   "internalRank": 27,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أسفل",
+     "meaningArEg": "تحت",
+     "glossEs": null,
+     "exampleEs": "La cocina está abajo.",
+     "exampleAr": "المطبخ تحت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La cocina está abajo.",
+     "ar": "المطبخ تحت.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "dentro",
+   "normalized": "dentro",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/dˈentɾo/",
+   "pronunciationHintAr": "دينترو",
+   "internalRank": 28,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "داخل",
+     "meaningArEg": "جوه",
+     "glossEs": null,
+     "exampleEs": "Espera dentro de la tienda.",
+     "exampleAr": "استنى جوه المحل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Espera dentro de la tienda.",
+     "ar": "استنى جوه المحل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "fuera",
+   "normalized": "fuera",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/fuˈeɾa/",
+   "pronunciationHintAr": "فويرا",
+   "internalRank": 29,
+   "tags": [
+    "domain:family",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خارج",
+     "meaningArEg": "برا",
+     "glossEs": null,
+     "exampleEs": "El niño juega fuera.",
+     "exampleAr": "البيه بيلعب برا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El niño juega fuera.",
+     "ar": "البيه بيلعب برا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "alrededor",
+   "normalized": "alrededor",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/alrededˈoɾ/",
+   "pronunciationHintAr": "الريديدور",
+   "internalRank": 30,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حول",
+     "meaningArEg": "حوالين",
+     "glossEs": null,
+     "exampleEs": "Hay cafés alrededor del museo.",
+     "exampleAr": "فيه كافيهات حوالين المتحف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay cafés alrededor del museo.",
+     "ar": "فيه كافيهات حوالين المتحف.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "enfrente",
+   "normalized": "enfrente",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/enfɾˈente/",
+   "pronunciationHintAr": "ينفرينتي",
+   "internalRank": 31,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مقابل",
+     "meaningArEg": "مقابل",
+     "glossEs": null,
+     "exampleEs": "La farmacia está enfrente del banco.",
+     "exampleAr": "الصيدلية مقابل البنك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La farmacia está enfrente del banco.",
+     "ar": "الصيدلية مقابل البنك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "rápidamente",
+   "normalized": "rápidamente",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/rˈapidamente/",
+   "pronunciationHintAr": "رابيدامينتي",
+   "internalRank": 32,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بسرعة",
+     "meaningArEg": "بسرعة",
+     "glossEs": null,
+     "exampleEs": "Terminé rápidamente el examen.",
+     "exampleAr": "خلّصت الامتحان بسرعة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Terminé rápidamente el examen.",
+     "ar": "خلّصت الامتحان بسرعة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "despacio",
+   "normalized": "despacio",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/despaθˈio/",
+   "pronunciationHintAr": "ديسباثيو",
+   "internalRank": 33,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ببطء",
+     "meaningArEg": "على مهلك",
+     "glossEs": null,
+     "exampleEs": "Habla despacio, por favor.",
+     "exampleAr": "اتكلم بهدوء من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Habla despacio, por favor.",
+     "ar": "اتكلم بهدوء من فضلك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "fácilmente",
+   "normalized": "fácilmente",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/fˈaθilmente/",
+   "pronunciationHintAr": "فاثيلمينتي",
+   "internalRank": 34,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بسهولة",
+     "meaningArEg": "ببساطة",
+     "glossEs": null,
+     "exampleEs": "Se resuelve fácilmente el problema.",
+     "exampleAr": "المشكلة بتتحل بسهولة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Se resuelve fácilmente el problema.",
+     "ar": "المشكلة بتتحل بسهولة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "mejor",
+   "normalized": "mejor",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/mexˈoɾ/",
+   "pronunciationHintAr": "ميخور",
+   "internalRank": 35,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أفضل",
+     "meaningArEg": "أحسن",
+     "glossEs": null,
+     "exampleEs": "Ahora me siento mucho mejor.",
+     "exampleAr": "دلوقتي حاسس إني أحسن كتير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ahora me siento mucho mejor.",
+     "ar": "دلوقتي حاسس إني أحسن كتير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "peor",
+   "normalized": "peor",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/peˈoɾ/",
+   "pronunciationHintAr": "بيور",
+   "internalRank": 36,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أسوأ",
+     "meaningArEg": "أسوأ",
+     "glossEs": null,
+     "exampleEs": "El tráfico está peor que ayer.",
+     "exampleAr": "الزحمة أسوأ من امبارح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tráfico está peor que ayer.",
+     "ar": "الزحمة أسوأ من امبارح.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "así",
+   "normalized": "así",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/asˈi/",
+   "pronunciationHintAr": "اسي",
+   "internalRank": 37,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هكذا",
+     "meaningArEg": "كده",
+     "glossEs": null,
+     "exampleEs": "Hazlo así, paso a paso.",
+     "exampleAr": "اعملها كده خطوة بخطوة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hazlo así, paso a paso.",
+     "ar": "اعملها كده خطوة بخطوة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "entonces",
+   "normalized": "entonces",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/entˈonθes/",
+   "pronunciationHintAr": "ينتونثيس",
+   "internalRank": 38,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إذن أو حينها",
+     "meaningArEg": "ساعتها",
+     "glossEs": null,
+     "exampleEs": "Entonces decidimos volver.",
+     "exampleAr": "ساعتها قررنا نرجع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Entonces decidimos volver.",
+     "ar": "ساعتها قررنا نرجع.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "además",
+   "normalized": "además",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ademˈas/",
+   "pronunciationHintAr": "اديماس",
+   "internalRank": 39,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "علاوة على ذلك",
+     "meaningArEg": "كمان",
+     "glossEs": null,
+     "exampleEs": "Además, el precio es muy bueno.",
+     "exampleAr": "كمان السعر كويس جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Además, el precio es muy bueno.",
+     "ar": "كمان السعر كويس جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "sin embargo",
+   "normalized": "sin embargo",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/sˈin embaɾgo/",
+   "pronunciationHintAr": "سين يمبارجو",
+   "internalRank": 40,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ومع ذلك",
+     "meaningArEg": "بس",
+     "glossEs": null,
+     "exampleEs": "Sin embargo, el servicio fue lento.",
+     "exampleAr": "بس الخدمة كانت بطيئة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Sin embargo, el servicio fue lento.",
+     "ar": "بس الخدمة كانت بطيئة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "por eso",
+   "normalized": "por eso",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈoɾ eso/",
+   "pronunciationHintAr": "بور يسو",
+   "internalRank": 41,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لهذا السبب",
+     "meaningArEg": "علشان كده",
+     "glossEs": null,
+     "exampleEs": "Estaba cansado, por eso dormí temprano.",
+     "exampleAr": "كنت تعبان، علشان كده نمت بدري.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estaba cansado, por eso dormí temprano.",
+     "ar": "كنت تعبان، علشان كده نمت بدري.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "por fin",
+   "normalized": "por fin",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈoɾ fin/",
+   "pronunciationHintAr": "بور فين",
+   "internalRank": 42,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أخيرًا",
+     "meaningArEg": "أخيرًا",
+     "glossEs": null,
+     "exampleEs": "Por fin llegó el verano.",
+     "exampleAr": "أخيرًا الصيف جه.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Por fin llegó el verano.",
+     "ar": "أخيرًا الصيف جه.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "al menos",
+   "normalized": "al menos",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈal menos/",
+   "pronunciationHintAr": "ال مينوس",
+   "internalRank": 43,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "على الأقل",
+     "meaningArEg": "على الأقل",
+     "glossEs": null,
+     "exampleEs": "Al menos tenemos una solución.",
+     "exampleAr": "على الأقل عندنا حل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Al menos tenemos una solución.",
+     "ar": "على الأقل عندنا حل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "enseguida",
+   "normalized": "enseguida",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/enseguˈida/",
+   "pronunciationHintAr": "ينسيجويدا",
+   "internalRank": 44,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حالًا",
+     "meaningArEg": "حالًا",
+     "glossEs": null,
+     "exampleEs": "Voy enseguida a ayudarte.",
+     "exampleAr": "هروح حالًا أساعدك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy enseguida a ayudarte.",
+     "ar": "هروح حالًا أساعدك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "mientras",
+   "normalized": "mientras",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/miˈentɾas/",
+   "pronunciationHintAr": "ميينتراس",
+   "internalRank": 45,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بينما",
+     "meaningArEg": "في الوقت اللي",
+     "glossEs": null,
+     "exampleEs": "Mientras hablamos, se hace tarde.",
+     "exampleAr": "في الوقت اللي بنتكلم فيه بقى متأخر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mientras hablamos, se hace tarde.",
+     "ar": "في الوقت اللي بنتكلم فيه بقى متأخر.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "apenas",
+   "normalized": "apenas",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/apˈenas/",
+   "pronunciationHintAr": "ابيناس",
+   "internalRank": 46,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالكاد",
+     "meaningArEg": "بالعافية",
+     "glossEs": null,
+     "exampleEs": "Apenas vi el final de la película.",
+     "exampleAr": "شفت آخر الفيلم بالعافية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Apenas vi el final de la película.",
+     "ar": "شفت آخر الفيلم بالعافية.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "justo",
+   "normalized": "justo",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/xˈusto/",
+   "pronunciationHintAr": "خوستو",
+   "internalRank": 47,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالضبط",
+     "meaningArEg": "بالظبط",
+     "glossEs": null,
+     "exampleEs": "Era justo lo que necesitaba.",
+     "exampleAr": "كان بالظبط اللي محتاجه.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Era justo lo que necesitaba.",
+     "ar": "كان بالظبط اللي محتاجه.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "exactamente",
+   "normalized": "exactamente",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/eksaktamˈente/",
+   "pronunciationHintAr": "يكساكتامينتي",
+   "internalRank": 48,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالضبط",
+     "meaningArEg": "تمامًا",
+     "glossEs": null,
+     "exampleEs": "Eso es exactamente lo que dije.",
+     "exampleAr": "ده تمامًا اللي قلته.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Eso es exactamente lo que dije.",
+     "ar": "ده تمامًا اللي قلته.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "en seguida",
+   "normalized": "en seguida",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ˈen seguida/",
+   "pronunciationHintAr": "ين سيجويدا",
+   "internalRank": 49,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فورًا",
+     "meaningArEg": "حالًا",
+     "glossEs": null,
+     "exampleEs": "Voy en seguida a ayudarte.",
+     "exampleAr": "هروح حالًا أساعدك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Voy en seguida a ayudarte.",
+     "ar": "هروح حالًا أساعدك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "a la vez",
+   "normalized": "a la vez",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈa la beθ/",
+   "pronunciationHintAr": "ا لا بيث",
+   "internalRank": 50,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "في نفس الوقت",
+     "meaningArEg": "في نفس الوقت",
+     "glossEs": null,
+     "exampleEs": "No puedo hacer dos cosas a la vez.",
+     "exampleAr": "ما أقدرش أعمل حاجتين في نفس الوقت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No puedo hacer dos cosas a la vez.",
+     "ar": "ما أقدرش أعمل حاجتين في نفس الوقت.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "sin falta",
+   "normalized": "sin falta",
+   "kind": "expression",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B2",
+   "register": "neutral",
+   "ipa": "/sˈin falta/",
+   "pronunciationHintAr": "سين فالتا",
+   "internalRank": 51,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بلا أخطاء",
+     "meaningArEg": "من غير غلطات",
+     "glossEs": null,
+     "exampleEs": "El pedido debe salir sin falta.",
+     "exampleAr": "الطلب لازم يخرج من غير غلطات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El pedido debe salir sin falta.",
+     "ar": "الطلب لازم يخرج من غير غلطات.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "bien",
+   "normalized": "bien",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/bˈien/",
+   "pronunciationHintAr": "بيين",
+   "internalRank": 52,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جيدًا",
+     "meaningArEg": "كويس",
+     "glossEs": null,
+     "exampleEs": "Hablas español muy bien.",
+     "exampleAr": "بتتكلم إسباني كويس جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hablas español muy bien.",
+     "ar": "بتتكلم إسباني كويس جدًا.",
+     "arEg": null
+    }
+   ]
+  }
+ ]
+}

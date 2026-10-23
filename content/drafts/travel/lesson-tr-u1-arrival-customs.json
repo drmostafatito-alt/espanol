@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u1-arrival-customs",
+    "titleAr": "الوصول والجمارك",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u1-airport",
+    "objectiveAr": "أن يجيب المتعلم عن أسئلة الجمارك القصيرة (الغرض من الزيارة، مدة الإقامة، ما في الحقيبة) بأجوبة صحيحة موجزة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "aduanas",
+      "llegada"
+    ],
+    "reviewVocabulary": [
+      "pasaporte",
+      "equipaje",
+      "vuelo"
+    ],
+    "targetStructures": [
+      "Vengo de vacaciones.",
+      "Voy a quedarme dos semanas.",
+      "No tengo nada que declarar."
+    ],
+    "grammarTopics": [
+      "preguntas-de-aduana",
+      "futuro-proximo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تصل إلى إسبانيا ويطرح موظف الجمارك أسئلة قصيرة.",
+        "settingAr": "ممر الجمارك في المطار",
+        "lines": [
+          {
+            "es": "¿Cuál es el motivo de su visita?",
+            "ar": "ما سبب زيارتك؟",
+            "arEg": "سبب زيارتك إيه؟",
+            "audioKey": "pending/tr-u1-l4-aduana-1"
+          },
+          {
+            "es": "Vengo de vacaciones. Voy a quedarme dos semanas.",
+            "ar": "أنا في عطلة. سأبقى أسبوعين.",
+            "arEg": "أنا في أجازة. هأقعد أسبوعين.",
+            "audioKey": "pending/tr-u1-l4-omar-1"
+          },
+          {
+            "es": "¿Lleva algo que declarar?",
+            "ar": "هل تحمل شيئًا يجب الإفصاح عنه؟",
+            "arEg": "معاك حاجة محتاجة تصريح؟",
+            "audioKey": "pending/tr-u1-l4-aduana-2"
+          },
+          {
+            "es": "No, nada que declarar.",
+            "ar": "لا، لا شيء للإفصاح عنه.",
+            "arEg": "لأ، مفيش حاجة.",
+            "audioKey": "pending/tr-u1-l4-omar-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u1_15_motive",
+        "type": "word_choice",
+        "instructionAr": "اختر الجواب الصحيح عن سبب الزيارة (عطلة).",
+        "options": [
+          {
+            "id": "tr_u1_15_a",
+            "text": "Vengo de vacaciones.",
+            "isCorrect": true,
+            "textAr": "أنا في عطلة."
+          },
+          {
+            "id": "tr_u1_15_b",
+            "text": "Vengo de Egipto.",
+            "isCorrect": false,
+            "textAr": "أنا قادم من مصر.",
+            "distractorRationaleAr": "جواب صحيح عن السؤال «¿De dónde viene?» لا «¿Cuál es el motivo?»."
+          },
+          {
+            "id": "tr_u1_15_c",
+            "text": "Voy a Egipto.",
+            "isCorrect": false,
+            "textAr": "أنا ذاهب إلى مصر.",
+            "distractorRationaleAr": "اتجاه لا سبب؛ والوقت زمن المستقبل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_15_a"
+          ]
+        },
+        "explanationAr": "motivo = السبب، والسياحة تكون «de vacaciones». لاحظ الفرق بين de (من/بسبب) وa (إلى).",
+        "errorFeedback": {
+          "tr_u1_15_b": "هذا جواب سؤال المنشأ.",
+          "tr_u1_15_c": "هذا جواب سؤال الوجهة المستقبلية."
+        },
+        "targetVocab": [
+          "llegada"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_16_declare",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجواب: لا شيء للإفصاح عنه.",
+        "stemEs": "No, nada que ____.",
+        "stemAr": "لا، لا شيء للإفصاح عنه.",
+        "answerKey": {
+          "accepted": [
+            "declarar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«nada que declarar» تركيب ثابت في الجمارك، ويأتي الفعل في المصدر بعد «nada que».",
+        "errorFeedback": {
+          "declaro": "بعد «nada que» يأتي المصدر declarar.",
+          "declaración": "«declaración» اسم، والتركيب الثابت يستخدم المصدر."
+        },
+        "targetVocab": [
+          "aduanas"
+        ],
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_17_duration",
+        "type": "word_choice",
+        "instructionAr": "كيف تقول إنك ستبقى أسبوعين؟",
+        "options": [
+          {
+            "id": "tr_u1_17_a",
+            "text": "Voy a quedarme dos semanas.",
+            "isCorrect": true,
+            "textAr": "سأبقى أسبوعين."
+          },
+          {
+            "id": "tr_u1_17_b",
+            "text": "Voy a quedar dos semanas.",
+            "isCorrect": false,
+            "textAr": "سأتفق على أسبوعين.",
+            "distractorRationaleAr": "«quedar» ≠ «quedarse»؛ الثانية وحدها تعني «يبقى»."
+          },
+          {
+            "id": "tr_u1_17_c",
+            "text": "Soy dos semanas aquí.",
+            "isCorrect": false,
+            "textAr": "أنا أسبوعان هنا.",
+            "distractorRationaleAr": "تركيب غير صحيح؛ المدة تُعبَّر بـquedarse أو estar + مدة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_17_a"
+          ]
+        },
+        "explanationAr": "quedarse = يبقى (فعل انعكاسي). المستقبل القريب: ir a + مصدر ⇒ voy a quedarme.",
+        "errorFeedback": {
+          "tr_u1_17_b": "«quedar» بدون الضمير تعني يتفق/يقع موعدًا.",
+          "tr_u1_17_c": "استخدم quedarse أو estar aquí durante dos semanas."
+        },
+        "targetVocab": [
+          "llegada"
+        ],
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_18_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع (أو اقرأ النص البديل) واختر السؤال الذي سُمع.",
+        "audioKey": "pending/tr-u1-l4-aduana-2",
+        "speechEs": "¿Lleva algo que declarar?",
+        "options": [
+          {
+            "id": "tr_u1_18_a",
+            "text": "¿Lleva algo que declarar?",
+            "isCorrect": true,
+            "textAr": "هل تحمل شيئًا للإفصاح عنه؟"
+          },
+          {
+            "id": "tr_u1_18_b",
+            "text": "¿Cuánto cuesta el billete?",
+            "isCorrect": false,
+            "textAr": "كم سعر التذكرة؟",
+            "distractorRationaleAr": "سؤال سعر لا جمارك."
+          },
+          {
+            "id": "tr_u1_18_c",
+            "text": "¿Dónde está la maleta?",
+            "isCorrect": false,
+            "textAr": "أين الحقيبة؟",
+            "distractorRationaleAr": "سؤال مكان؛ والمسموع عن الإفصاح."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u1_18_a"
+          ]
+        },
+        "explanationAr": "الفعل llevar = يحمل، algo = شيئًا، que declarar = للإفصاح عنه. جملة قصيرة تُنطق سريعًا في الجمارك.",
+        "errorFeedback": {
+          "tr_u1_18_b": "المسموع فيه «declarar» لا «cuesta».",
+          "tr_u1_18_c": "المسموع لا يسأل عن المكان."
+        },
+        "targetVocab": [
+          "aduanas"
+        ],
+        "skills": [
+          "listening",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u1_19_speak_free",
+        "type": "speak_free",
+        "instructionAr": "تحدّث 30 ثانية عن رحلتك القادمة: إلى أين، ولماذا، وكم يومًا. تمرين غير مُقيَّم آليًا وليس له درجة.",
+        "contextAr": "موضوع حر لتدريب الطلاقة. لا يوجد تصحيح آلي ولا ادعاء بتقييم النطق.",
+        "answerKey": {
+          "modelAnswer": "Voy a viajar a España la próxima semana. Voy de vacaciones y voy a quedarme diez días. Quiero visitar Madrid y Granada."
+        },
+        "explanationAr": "استخدم: voy a + مصدر للمستقبل القريب، وpara + مصدر للهدف، وdurante أو المدة مباشرة. سجّل نفسك واسمعها مرة ثانية؛ لا تقييم آلي.",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "أداء المهمة (ذكرت الوجهة والهدف والمدة)",
+              "weight": 60,
+              "code": "task"
+            },
+            {
+              "labelAr": "استخدام voy a + مصدر",
+              "weight": 40,
+              "code": "structure"
+            }
+          ]
+        },
+        "targetVocab": [
+          "vuelo",
+          "llegada"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس المطار 4/4. يحتاج مراجعة إسبانية أصلية لأسئلة الجمارك الفعلية وتأكيد أن تمارين المحادثة الحرة معلَّمة كغير مُقيَّمة. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

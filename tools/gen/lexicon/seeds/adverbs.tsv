@@ -1,0 +1,53 @@
+# seeds/adverbs.tsv — head, pos, gender, level, msa, eg, ex_es, ex_ar, domain
+ayer	adv		A1	أمس	إمبارح	Llegamos ayer por la noche.	وصلنا امبارح بالليل.	daily
+antes	adv		A1	قبل	قبل كده	Antes vivía en Granada.	قبل كده كنت ساكن في غرناطة.	daily
+después	adv		A2	بعد	بعد كده	Después vamos al cine.	بعد كده هنروح السينما.	daily
+luego	adv		A2	لاحقًا	بعدين	Te llamo luego.	هكلمك بعدين.	social
+temprano	adv		A2	مبكرًا	بدري	Me levanto muy temprano.	بقوم بدري جدًا.	daily
+aún	adv		A2	ما زال	لسه	Aún no ha llegado el paquete.	الطرد لسه ما وصلش.	services
+todavía	adv		A2	ما زال	لسه	Todavía estoy esperando la respuesta.	لسه مستنى الرد.	services
+ya	adv		A1	بالفعل أو الآن	دلوقتي	Ya estoy listo para salir.	أنا جاهز أخرج دلوقتي.	daily
+casi	adv		A2	تقريبًا أو على وشك	بالظبط أو على وشك	Ella casi termina el trabajo.	هي على وشك تخلّص الشغل.	work
+quizá	adv		B1	ربما	ممكن	Quizá llueva esta tarde.	ممكن يمطر العصر.	daily
+tal vez	adv		B1	ربما	يمكن	Tal vez vayamos mañana.	يمكن نروح بكرة.	social
+bastante	adv		A2	جداً أو كافيًا	كفاية	El examen fue bastante difícil.	الامتحان كان صعب كفاية.	study
+mucho	adv		A1	كثيرًا	كتير	Me gusta mucho este barrio.	الحي ده عاجبني كتير.	housing
+poco	adv		A1	قليلًا	شوية	Hablo poco por la mañana.	بتكلم شوية الصبح.	social
+demasiado	adv		A2	أكثر من اللازم	أوي	Este café es demasiado caliente.	القهوة دي سخنة أوي.	food
+muy	adv		A1	جدًّا	جداً	La playa es muy bonita.	الشاطئ جميل جداً.	travel
+más	adv		A1	أكثر	أكتر	Quiero más pan, por favor.	عايز عيش أكتر من فضلك.	food
+menos	adv		A1	أقل	أقل	Hoy hay menos gente.	النهارده في ناس أقل.	daily
+tan	adv		A2	هذا القدر	الدرجة دي	No es tan difícil como parece.	مش صعب بالدرجة اللي تبان.	study
+solo	adv		A2	فقط	بس	Solo quiero un café.	عايز قهوة بس.	food
+acaso	adv		B1	هل بالصدفة	إنه بالصدفة	¿Acaso no sabías la noticia?	إنه بالصدفة ما كنتش عارف الخبر؟	social
+encima	adv		B1	فوق	فوق	Deja la caja encima de la mesa.	حطّ الصندوق فوق الترابيزة.	housing
+debajo	adv		B1	تحت	تحت	El gato está debajo de la cama.	القطة تحت السرير.	housing
+delante	adv		B1	أمام	قدام	El cine está delante del parque.	السينما قدام الحديقة.	travel
+detrás	adv		B1	خلف	ورا	El jardín está detrás de la casa.	الحديقة ورا البيت.	housing
+arriba	adv		B1	أعلى	فوق	El dormitorio está arriba.	أوضة النوم فوق.	housing
+abajo	adv		B1	أسفل	تحت	La cocina está abajo.	المطبخ تحت.	housing
+dentro	adv		B1	داخل	جوه	Espera dentro de la tienda.	استنى جوه المحل.	shopping
+fuera	adv		B1	خارج	برا	El niño juega fuera.	البيه بيلعب برا.	family
+alrededor	adv		B1	حول	حوالين	Hay cafés alrededor del museo.	فيه كافيهات حوالين المتحف.	travel
+enfrente	adv		B1	مقابل	مقابل	La farmacia está enfrente del banco.	الصيدلية مقابل البنك.	services
+rápidamente	adv		B1	بسرعة	بسرعة	Terminé rápidamente el examen.	خلّصت الامتحان بسرعة.	study
+despacio	adv		A2	ببطء	على مهلك	Habla despacio, por favor.	اتكلم بهدوء من فضلك.	study
+fácilmente	adv		B1	بسهولة	ببساطة	Se resuelve fácilmente el problema.	المشكلة بتتحل بسهولة.	callcenter
+mejor	adv		A2	أفضل	أحسن	Ahora me siento mucho mejor.	دلوقتي حاسس إني أحسن كتير.	health
+peor	adv		A2	أسوأ	أسوأ	El tráfico está peor que ayer.	الزحمة أسوأ من امبارح.	transport
+así	adv		A2	هكذا	كده	Hazlo así, paso a paso.	اعملها كده خطوة بخطوة.	study
+entonces	adv		A2	إذن أو حينها	ساعتها	Entonces decidimos volver.	ساعتها قررنا نرجع.	social
+además	adv		B1	علاوة على ذلك	كمان	Además, el precio es muy bueno.	كمان السعر كويس جدًا.	shopping
+sin embargo	adv		B1	ومع ذلك	بس	Sin embargo, el servicio fue lento.	بس الخدمة كانت بطيئة.	callcenter
+por eso	adv		A2	لهذا السبب	علشان كده	Estaba cansado, por eso dormí temprano.	كنت تعبان، علشان كده نمت بدري.	health
+por fin	adv		A2	أخيرًا	أخيرًا	Por fin llegó el verano.	أخيرًا الصيف جه.	daily
+al menos	adv		B1	على الأقل	على الأقل	Al menos tenemos una solución.	على الأقل عندنا حل.	callcenter
+enseguida	adv		A2	حالًا	حالًا	Voy enseguida a ayudarte.	هروح حالًا أساعدك.	social
+mientras	adv		B1	بينما	في الوقت اللي	Mientras hablamos, se hace tarde.	في الوقت اللي بنتكلم فيه بقى متأخر.	social
+apenas	adv		B1	بالكاد	بالعافية	Apenas vi el final de la película.	شفت آخر الفيلم بالعافية.	social
+justo	adv		B1	بالضبط	بالظبط	Era justo lo que necesitaba.	كان بالظبط اللي محتاجه.	daily
+exactamente	adv		B1	بالضبط	تمامًا	Eso es exactamente lo que dije.	ده تمامًا اللي قلته.	social
+en seguida	adv		A2	فورًا	حالًا	Voy en seguida a ayudarte.	هروح حالًا أساعدك.	social
+a la vez	adv		B1	في نفس الوقت	في نفس الوقت	No puedo hacer dos cosas a la vez.	ما أقدرش أعمل حاجتين في نفس الوقت.	work
+sin falta	adv		B2	بلا أخطاء	من غير غلطات	El pedido debe salir sin falta.	الطلب لازم يخرج من غير غلطات.	callcenter
+bien	adv		A1	جيدًا	كويس	Hablas español muy bien.	بتتكلم إسباني كويس جدًا.	study

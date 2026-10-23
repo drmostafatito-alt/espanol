@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u4-walking-route",
+    "titleAr": "امشِ واستدر واعبر",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u4-directions",
+    "objectiveAr": "أن يتبع المتعلم تعليمات سير متتابعة (استدر، اعبر، عند الناصية، عند الإشارة)، ويسأل هل المكان قريب أو بعيد وكم دقيقة مشيًا.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "girar",
+      "cruzar",
+      "esquina",
+      "semáforo",
+      "cerca",
+      "lejos",
+      "a pie"
+    ],
+    "reviewVocabulary": [
+      "llegada",
+      "salida"
+    ],
+    "targetStructures": [
+      "Gira a la derecha en la esquina.",
+      "Cruza la calle en el semáforo.",
+      "¿Está lejos? A cinco minutos a pie."
+    ],
+    "grammarTopics": [
+      "girar-a",
+      "cruzar-la-calle",
+      "cerca-de"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تسأل عن الطريق إلى متحف قريب، والجواب تعليمات متتابعة.",
+        "settingAr": "في الشارع مع أحد المارّة",
+        "lines": [
+          {
+            "es": "Sigue recto hasta el semáforo y gira a la derecha.",
+            "ar": "امشِ على طول حتى الإشارة ثم استدر يمينًا.",
+            "arEg": "امشي على طول لحد الإشارة وبعدين خد يمين.",
+            "audioKey": "pending/tr-u4-l2-pass-1"
+          },
+          {
+            "es": "¿Y después?",
+            "ar": "وبعد ذلك؟",
+            "arEg": "وبعدين؟",
+            "audioKey": "pending/tr-u4-l2-learner-1"
+          },
+          {
+            "es": "Cruza la calle en la esquina. El museo está cerca.",
+            "ar": "اعبر الشارع عند الناصية. المتحف قريب.",
+            "arEg": "عدّي الشارع عند الناصية. المتحف قريب.",
+            "audioKey": "pending/tr-u4-l2-pass-2"
+          },
+          {
+            "es": "¿Está lejos? — No, a cinco minutos a pie.",
+            "ar": "هل هو بعيد؟ — لا، خمس دقائق مشيًا.",
+            "arEg": "بعيد؟ — لأ، خمس دقايق على رجليك.",
+            "audioKey": "pending/tr-u4-l2-learner-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u4_5_girar",
+        "type": "fill_blank",
+        "instructionAr": "أكمل تعليمة الاستدارة (المخاطبة الرسمية usted).",
+        "stemEs": "____ a la derecha en la esquina, por favor.",
+        "stemAr": "استدر يمينًا عند الناصية من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "Gire",
+            "Gira"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Gire» بصيغة usted (الأدقّ مع الغرباء)، و«Gira» بصيغة tú. كلتاهما مستخدمة، والمخاطبة الرسمية أنسب في الشارع.",
+        "errorFeedback": {
+          "Girar": "هذه صيغة المصدر؛ المطلوب صيغة أمر: Gire/Gira.",
+          "Giro": "«Giro» = أنا أستدير (متكلم)؛ المطلوب أمر للمخاطب."
+        },
+        "targetVocab": [
+          "girar",
+          "esquina"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_6_cruzar",
+        "type": "word_choice",
+        "instructionAr": "كيف تقول «اعبر الشارع عند الإشارة»؟",
+        "options": [
+          {
+            "id": "tr_u4_6_a",
+            "text": "Cruza la calle en el semáforo.",
+            "isCorrect": true,
+            "textAr": "اعبر الشارع عند إشارة المرور."
+          },
+          {
+            "id": "tr_u4_6_b",
+            "text": "Cruza en la calle al semáforo.",
+            "isCorrect": false,
+            "textAr": "اعبر في الشارع إلى الإشارة؟",
+            "distractorRationaleAr": "الشارع مفعول به مباشر بلا حرف جر: cruzar la calle."
+          },
+          {
+            "id": "tr_u4_6_c",
+            "text": "Pasa la calle por el semáforo.",
+            "isCorrect": false,
+            "textAr": "مرّ الشارع عبر الإشارة؟",
+            "distractorRationaleAr": "«pasar la calle» غير مستخدمة بهذا المعنى؛ الصواب cruzar."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_6_a"
+          ]
+        },
+        "explanationAr": "cruzar + مفعول به مباشر (la calle)، وتحديد المكان بـ«en el semáforo».",
+        "errorFeedback": {
+          "tr_u4_6_b": "لا حرف جر بين cruzar والشارع: cruzar la calle.",
+          "tr_u4_6_c": "الفعل المناسب للعبور: cruzar."
+        },
+        "targetVocab": [
+          "cruzar",
+          "semáforo"
+        ],
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_7_far",
+        "type": "choose_reply",
+        "instructionAr": "المارّة قالوا إن المتحف «a cinco minutos a pie». اختر الردّ السليم على سؤال «هل هو بعيد؟».",
+        "stemEs": "— ¿Está lejos el museo?",
+        "stemAr": "— هل المتحف بعيد؟",
+        "options": [
+          {
+            "id": "tr_u4_7_a",
+            "text": "No, está cerca. A cinco minutos a pie.",
+            "isCorrect": true,
+            "textAr": "لا، إنه قريب. خمس دقائق مشيًا."
+          },
+          {
+            "id": "tr_u4_7_b",
+            "text": "Sí, está muy cerca.",
+            "isCorrect": false,
+            "textAr": "نعم، إنه قريب جدًا.",
+            "distractorRationaleAr": "تناقض: «sí» مع «cerca»؛ والجواب المنطقي «no»."
+          },
+          {
+            "id": "tr_u4_7_c",
+            "text": "No, está lejos de cerca.",
+            "isCorrect": false,
+            "textAr": "لا، إنه بعيد من قريب؟",
+            "distractorRationaleAr": "تركيب غير سليم لغويًا ولا معنى له."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_7_a"
+          ]
+        },
+        "explanationAr": "«no + cerca» أو «sí + lejos» — التطابق المنطقي مطلوب. والقياس: a + مدة + a pie.",
+        "errorFeedback": {
+          "tr_u4_7_b": "«Sí, muy cerca» متناقض؛ الصواب: No, está cerca.",
+          "tr_u4_7_c": "لا يوجد «lejos de cerca»؛ إمّا cerca وإمّا lejos."
+        },
+        "targetVocab": [
+          "cerca",
+          "lejos",
+          "a pie"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_8_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "اعبر الشارع عند الإشارة من فضلك.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Cruza la calle en el semáforo, por favor.",
+            "Cruce la calle en el semáforo, por favor.",
+            "Cruza la calle en el semáforo por favor.",
+            "Cruce la calle en el semáforo por favor."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«Cruza» (tú) أو «Cruce» (usted)، ثم la calle بلا حرف جر، ثم en el semáforo.",
+        "errorFeedback": {
+          "Cruza en la calle el semáforo": "الترتيب والمعنى مختلطان؛ الصواب en el semáforo.",
+          "Cruzar la calle": "المطلوب صيغة أمر: Cruza/Cruce."
+        },
+        "targetVocab": [
+          "cruzar",
+          "semáforo"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_walking_route_speak",
+        "type": "speak_with_text",
+        "instructionAr": "كرّر تعليمات السير بصوت واضح ثم اسأل عن المسافة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Gira a la derecha en la esquina y cruza la calle. ¿Está lejos? — No, a cinco minutos a pie.",
+        "stemAr": "استدر يمينًا عند الناصية واعبر الشارع. هل هو بعيد؟ — لا، خمس دقائق مشيًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u4-walking-route-model-1",
+          "modelAnswer": "Gira a la derecha en la esquina y cruza la calle. ¿Está lejos? — No, a cinco minutos a pie."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "girar",
+          "cruzar",
+          "esquina",
+          "lejos"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الاتجاهات 2/4 (تعليمات السير). يحتاج مراجعة إسبانية أصلية: هل «Pasa la calle» مستخدمة إقليميًا؟ ومقابل «a pie» مقابل «andando» في إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

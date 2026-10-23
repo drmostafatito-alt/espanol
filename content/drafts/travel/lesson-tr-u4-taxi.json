@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u4-taxi",
+    "titleAr": "التاكسي",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u4-directions",
+    "objectiveAr": "أن يطلب المتعلم تاكسيًا ويحدد الوجهة، ويسأل عن السعر التقريبي، ويطلب التوقف، ويسأل عن طريقة الدفع.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "taxi",
+      "parar"
+    ],
+    "reviewVocabulary": [
+      "tarjeta de crédito",
+      "efectivo",
+      "aeropuerto"
+    ],
+    "targetStructures": [
+      "Lléveme al aeropuerto, por favor.",
+      "¿Cuánto cuesta, más o menos?",
+      "Pare aquí, por favor."
+    ],
+    "grammarTopics": [
+      "llevar-imperativo-usted",
+      "pare-aqui"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تستقل تاكسيًا من الفندق إلى المطار.",
+        "settingAr": "داخل التاكسي مع السائق",
+        "lines": [
+          {
+            "es": "Buenas. ¿Adónde vamos?",
+            "ar": "مساء الخير. إلى أين نذهب؟",
+            "arEg": "مساء الخير. رايحين فين؟",
+            "audioKey": "pending/tr-u4-l4-driver-1"
+          },
+          {
+            "es": "Lléveme al aeropuerto, por favor.",
+            "ar": "خذني إلى المطار من فضلك.",
+            "arEg": "ودّيني المطار لو سمحت.",
+            "audioKey": "pending/tr-u4-l4-learner-1"
+          },
+          {
+            "es": "¿Cuánto cuesta, más o menos?",
+            "ar": "كم التكلفة تقريبًا؟",
+            "arEg": "هيكلّف كام تقريبًا؟",
+            "audioKey": "pending/tr-u4-l4-learner-2"
+          },
+          {
+            "es": "Unos doce euros. ¿Puede pagar con tarjeta?",
+            "ar": "حوالي اثني عشر يورو. هل يمكنك الدفع بالبطاقة؟",
+            "arEg": "حوالي اتناشر يورو. تقدر تدفع بالكارت؟",
+            "audioKey": "pending/tr-u4-l4-driver-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u4_13_stop",
+        "type": "fill_blank",
+        "instructionAr": "أكمل طلب التوقف بصيغة المخاطبة الرسمية (usted).",
+        "stemEs": "____ aquí, por favor.",
+        "stemAr": "توقف هنا من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "Pare"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع سائق التاكسي نستخدم usted: «Pare aquí». وصيغة tú هي «Para aquí».",
+        "errorFeedback": {
+          "Para": "«Para» صحيحة مع tú؛ مع الغرباء الأنسب «Pare».",
+          "Parar": "هذه صيغة المصدر؛ المطلوب أمر: Pare."
+        },
+        "targetVocab": [
+          "parar",
+          "taxi"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_14_destination",
+        "type": "word_choice",
+        "instructionAr": "كيف تطلب من السائق أن يأخذك إلى المطار؟",
+        "options": [
+          {
+            "id": "tr_u4_14_a",
+            "text": "Lléveme al aeropuerto, por favor.",
+            "isCorrect": true,
+            "textAr": "خذني إلى المطار من فضلك."
+          },
+          {
+            "id": "tr_u4_14_b",
+            "text": "Llevo al aeropuerto, por favor.",
+            "isCorrect": false,
+            "textAr": "أنا آخذ إلى المطار؟",
+            "distractorRationaleAr": "«Llevo» = أنا آخذ (متكلم)؛ المطلوب أمر للمخاطب: Lléveme."
+          },
+          {
+            "id": "tr_u4_14_c",
+            "text": "Voy al aeropuerto con tú.",
+            "isCorrect": false,
+            "textAr": "أذهب إلى المطار معك أنت؟",
+            "distractorRationaleAr": "ضمير بعد حرف الجر يكون «ti»: contigo، والتركيب غير مناسب لطلب الوجهة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_14_a"
+          ]
+        },
+        "explanationAr": "طلب الوجهة: «Lléveme a…» (usted) أو «Llévame a…» (tú). وa + el = al.",
+        "errorFeedback": {
+          "tr_u4_14_b": "المطلوب أمر: Lléveme / Llévame.",
+          "tr_u4_14_c": "بعد حرف الجر: ti لا tú، والأفضل «Lléveme al aeropuerto»."
+        },
+        "targetVocab": [
+          "aeropuerto",
+          "taxi"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_15_pay",
+        "type": "choose_reply",
+        "instructionAr": "قال السائق: «Son doce euros». اختر الردّ الأنسب.",
+        "stemEs": "— Son doce euros.",
+        "stemAr": "— التكلفة اثنا عشر يورو.",
+        "options": [
+          {
+            "id": "tr_u4_15_a",
+            "text": "¿Puedo pagar con tarjeta?",
+            "isCorrect": true,
+            "textAr": "هل يمكنني الدفع بالبطاقة؟"
+          },
+          {
+            "id": "tr_u4_15_b",
+            "text": "La cuenta, por favor.",
+            "isCorrect": false,
+            "textAr": "الحساب من فضلك.",
+            "distractorRationaleAr": "«la cuenta» في المطعم؛ في التاكسي يُقال «Son doce euros» ثم تدفع."
+          },
+          {
+            "id": "tr_u4_15_c",
+            "text": "No entiendo el menú.",
+            "isCorrect": false,
+            "textAr": "لا أفهم القائمة.",
+            "distractorRationaleAr": "لا قائمة في التاكسي؛ الموقف مختلف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u4_15_a"
+          ]
+        },
+        "explanationAr": "السؤال عن طريقة الدفع: ¿Puedo pagar con tarjeta? أو «¿Acepta tarjeta?».",
+        "errorFeedback": {
+          "tr_u4_15_b": "«La cuenta» تخصّ المطعم؛ هنا ذكر السائق السعر مباشرة.",
+          "tr_u4_15_c": "لا علاقة للقائمة بالموقف."
+        },
+        "targetVocab": [
+          "tarjeta de crédito",
+          "efectivo"
+        ],
+        "skills": [
+          "speaking",
+          "reading"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_16_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أريد الذهاب إلى المطار.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Quiero ir al aeropuerto.",
+            "Quisiera ir al aeropuerto.",
+            "Quiero ir al aeropuerto, por favor."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "querer + مصدر: quiero ir. وa + el = al: al aeropuerto.",
+        "errorFeedback": {
+          "Quiero voy al aeropuerto": "فعلان مصرّفان معًا؛ بعد querer يأتي المصدر: ir.",
+          "Quiero ir a el aeropuerto": "تُدمج: al aeropuerto."
+        },
+        "targetVocab": [
+          "aeropuerto",
+          "taxi"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u4_taxi_speak",
+        "type": "speak_with_text",
+        "instructionAr": "حدّد وجهتك واطلب التوقف بصيغة مهذّبة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Lléveme al aeropuerto, por favor. ¿Cuánto cuesta, más o menos? Pare aquí, por favor.",
+        "stemAr": "خذني إلى المطار من فضلك. كم التكلفة تقريبًا؟ توقف هنا من فضلك.",
+        "answerKey": {
+          "referenceAudioKey": "pending/tr-u4-taxi-model-1",
+          "modelAnswer": "Lléveme al aeropuerto, por favor. ¿Cuánto cuesta, más o menos? Pare aquí, por favor."
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "الوضوح",
+              "weight": 50,
+              "code": "clarity"
+            },
+            {
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50,
+              "code": "accuracy"
+            }
+          ]
+        },
+        "targetVocab": [
+          "taxi",
+          "aeropuerto",
+          "parar"
+        ],
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الاتجاهات 4/4 (التاكسي). يحتاج مراجعة إسبانية أصلية لـ«Lléveme» مقابل «Lléveme a» إقليميًا، ولعرف الدفع بالبطاقة في تاكسيات إسبانيا (بعضها نقدًا فقط). كل مقاطع الصوت pending ولم يُنتج أي ملف (لم يُعتمد مصدر ولا ترخيص)."
+    }
+  }
+}

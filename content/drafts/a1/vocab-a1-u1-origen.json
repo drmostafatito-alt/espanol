@@ -1,0 +1,665 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "a1-u1-origen",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط. لا تعتمد عليه للنطق الدقيق، خاصة الأصوات: j (قريبة من خاء/جيم مصرية)، ñ (نْي)، والحروف الصامتة.",
+ "source": {
+  "title": "مفردات درس واحد — إعداد داخلي لمراجعة بشرية قبل أي نشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "internalRank هنا لسَلسَلة التدريس داخل هذه الوحدة فقط، وليس ادعاءً بأن الكلمة من الأكثر شيوعًا في الإسبانية."
+ },
+ "entries": [
+  {
+   "headword": "ser",
+   "normalized": "ser",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/seɾ/",
+   "pronunciationHintAr": "سِر — الراء خفيفة، ليست مشددة",
+   "internalRank": 1,
+   "tags": [
+    "أفعال أساسية",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يكون (لصفة ثابتة أو هوية أو أصل)",
+     "meaningArEg": "يكون (للصفات الثابتة والأصل)",
+     "glossEs": "verbo copulativo para identidad, origen y rasgos estables",
+     "exampleEs": "Soy egipcio. Eres estudiante.",
+     "exampleAr": "أنا مصري. أنت طالب.",
+     "exampleArEg": "أنا مصري. إنت طالب.",
+     "usageNoteAr": "الصيغ الأساسية: yo soy، tú eres، él/ella es، nosotros somos، vosotros sois، ellos son.",
+     "commonErrorAr": "العربية تحذف فعل الكينونة في الجملة الاسمية؛ الإسبانية توجبه: «أنا مصري» ⇒ Soy egipcio، لا «Yo egipcio».",
+     "audioKey": "pending/voc-ser"
+    }
+   ],
+   "examples": [
+    {
+     "es": "Soy de Egipto.",
+     "ar": "أنا من مصر.",
+     "arEg": "أنا من مصر."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "estar",
+    "de"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "soy",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eres",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "es",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "somos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sois",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "son",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fui",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fuiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fue",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fuimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fuisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "fueron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "era",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eras",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "era",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "éramos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "erais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eran",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "serás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "será",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "serán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "serías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "serían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sea",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sea",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "seáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "sean",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "siendo",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "sido",
+     "tense": null,
+     "mood": null,
+     "person": null,
+     "irregular": true
+    }
+   ]
+  },
+  {
+   "headword": "de",
+   "normalized": "de",
+   "kind": "word",
+   "pos": "prep",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/de/",
+   "pronunciationHintAr": "دِ — بلا تشديد",
+   "internalRank": 2,
+   "tags": [
+    "حروف جر",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مِن (للأصل أو الانتساب)",
+     "meaningArEg": "من (الأصل)",
+     "glossEs": "preposición de origen o pertenencia",
+     "exampleEs": "Soy de Egipto. Ella es de España.",
+     "exampleAr": "أنا من مصر. هي من إسبانيا.",
+     "exampleArEg": "أنا من مصر. هي من إسبانيا.",
+     "usageNoteAr": "de + بلد = الأصل. وللمكان الحالي نستخدم en: vivo en El Cairo.",
+     "commonErrorAr": "الخلط بين de (من) و en (في) و a (إلى) هو أكثر خطأ متكرر في هذا المستوى.",
+     "audioKey": "pending/voc-de"
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿De dónde eres?",
+     "ar": "من أين أنت؟",
+     "arEg": "إنت منين؟"
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "¿de dónde?",
+    "en"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null
+  },
+  {
+   "headword": "¿de dónde?",
+   "normalized": "de dónde",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/de ˈdonde/",
+   "pronunciationHintAr": "دِ دونْدي — النبر على المقطع الأول من dónde",
+   "internalRank": 3,
+   "tags": [
+    "أسئلة",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من أين؟ (سؤال عن الأصل)",
+     "meaningArEg": "منين؟",
+     "glossEs": "pregunta por el origen",
+     "exampleEs": "¿De dónde eres? ¿De dónde es usted?",
+     "exampleAr": "من أين أنت؟ من أين أنتَ (احترامًا)؟",
+     "exampleArEg": "إنت منين؟ حضرتك منين؟",
+     "usageNoteAr": "مع tú نستخدم eres، ومع usted نستخدم es.",
+     "commonErrorAr": "نسيان علامة الاستفهام المقلوبة ¿ في البداية، وهي إلزامية في الكتابة الإسبانية.",
+     "audioKey": "pending/voc-de-donde"
+    }
+   ],
+   "examples": [
+    {
+     "es": "— ¿De dónde eres? — Soy de Egipto.",
+     "ar": "— من أين أنت؟ — أنا من مصر.",
+     "arEg": "— إنت منين؟ — أنا من مصر."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "de",
+    "ser"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null
+  },
+  {
+   "headword": "Egipto",
+   "normalized": "egipto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/eˈxito/",
+   "pronunciationHintAr": "إخيتو — j هنا خاء خفيفة، والـ g تُنطق خاء قبل i",
+   "internalRank": 4,
+   "tags": [
+    "بلدان",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مِصر (البلد)",
+     "meaningArEg": "مصر",
+     "glossEs": "país del norte de África",
+     "exampleEs": "Soy de Egipto. El Cairo es la capital de Egipto.",
+     "exampleAr": "أنا من مصر. القاهرة عاصمة مصر.",
+     "exampleArEg": "أنا من مصر. القاهرة عاصمة مصر.",
+     "usageNoteAr": "يُكتب دائمًا بحرف كبير لأنه اسم بلد، ويأتي بعد de بلا أداة تعريف: soy de Egipto.",
+     "commonErrorAr": "كتابته Egypto بحرف y خطأ شائع؛ الحرف g في Egipto يُنطق خاء.",
+     "audioKey": "pending/voc-egipto"
+    }
+   ],
+   "examples": [
+    {
+     "es": "Soy de Egipto, de El Cairo.",
+     "ar": "أنا من مصر، من القاهرة.",
+     "arEg": "أنا من مصر، من القاهرة."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "egipcio"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null
+  },
+  {
+   "headword": "España",
+   "normalized": "españa",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/esˈpaɲa/",
+   "pronunciationHintAr": "إسبانيا — ñ صوت «نْي» وليس ن عادية",
+   "internalRank": 5,
+   "tags": [
+    "بلدان",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إسبانيا (البلد)",
+     "meaningArEg": "إسبانيا",
+     "glossEs": "país del sur de Europa",
+     "exampleEs": "Sara es de España.",
+     "exampleAr": "سارة من إسبانيا.",
+     "exampleArEg": "سارة من إسبانيا.",
+     "usageNoteAr": "اسم مؤنث؛ الجنسية منه español/española.",
+     "commonErrorAr": "نطق ñ كـ«ن» فقط، أو كتابتها Espana بلا علامة.",
+     "audioKey": "pending/voc-espana"
+    }
+   ],
+   "examples": [
+    {
+     "es": "Madrid está en España.",
+     "ar": "مدريد في إسبانيا.",
+     "arEg": "مدريد في إسبانيا."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "español"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null
+  },
+  {
+   "headword": "egipcio",
+   "normalized": "egipcio",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "m",
+   "plural": "egipcios",
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/eˈxiθjo/",
+   "pronunciationHintAr": "إخيثيو — الـ g قبل i تُنطق خاء خفيفة، وci تُنطق «ثي» في إسبانيا",
+   "internalRank": 6,
+   "tags": [
+    "جنسيات",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مِصري (المذكر)",
+     "meaningArEg": "مصري",
+     "glossEs": "nacionalidad de Egipto, masculino",
+     "exampleEs": "Omar es egipcio.",
+     "exampleAr": "عمر مصري.",
+     "exampleArEg": "عمر مصري.",
+     "usageNoteAr": "المؤنث egipcia، والجمع egipcios / egipcias.",
+     "commonErrorAr": "استخدام egipcio للمؤنث: نقول هي egipcia.",
+     "audioKey": "pending/voc-egipcio"
+    }
+   ],
+   "examples": [
+    {
+     "es": "Soy egipcio, de El Cairo.",
+     "ar": "أنا مصري، من القاهرة.",
+     "arEg": "أنا مصري، من القاهرة."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "Egipto"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "egipcia"
+    },
+    {
+     "kind": "plural",
+     "formEs": "egipcios"
+    }
+   ]
+  },
+  {
+   "headword": "español",
+   "normalized": "español",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "m",
+   "plural": "españoles",
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/espaˈɲol/",
+   "pronunciationHintAr": "إسبانيول — اللام في النهاية واضحة",
+   "internalRank": 7,
+   "tags": [
+    "جنسيات",
+    "A1",
+    "u1-origen"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إسباني (المذكر)؛ والإسبانية كلغة",
+     "meaningArEg": "إسباني؛ واللغة الإسبانية",
+     "glossEs": "nacionalidad de España (m.) y nombre del idioma",
+     "exampleEs": "Soy español. Hablo español.",
+     "exampleAr": "أنا إسباني. أتحدث الإسبانية.",
+     "exampleArEg": "أنا إسباني. بتكلم إسباني.",
+     "usageNoteAr": "المؤنث española، والجمع españoles / españolas. تُستخدم أيضًا اسمًا للغة: el español.",
+     "commonErrorAr": "قول español للأنثى؛ الصحيح española.",
+     "audioKey": "pending/voc-espanol"
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ella es española, de Madrid.",
+     "ar": "هي إسبانية، من مدريد.",
+     "arEg": "هي إسبانية، من مدريد."
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "España"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "española"
+    },
+    {
+     "kind": "plural",
+     "formEs": "españoles"
+    }
+   ]
+  }
+ ]
+}

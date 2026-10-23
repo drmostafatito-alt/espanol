@@ -1,0 +1,1775 @@
+{
+  "schemaVersion": "2.0.0",
+  "status": "proposed",
+  "titleAr": "خريطة المنهج — من PREA1 إلى C1 + مسارات جانبية",
+  "updatedAt": "2026-10-21",
+  "note": "الهيكل الكامل للمستويات والوحدات. أهداف على مستوى الدرس موجودة للمستويين PREA1 وA1 (52 درسًا)؛ أما A2–C1 فأهدافها على مستوى الوحدة فقط (فجوة معلنة، انظر gaps).",
+  "honestyRules": [
+    "وجود اسم مستوى لا يعني تغطية CEFR: التغطية تُقاس بالدروس المكتوبة والمراجَعة لا بالعناوين.",
+    "الأعداد في plannedLessonCount أهداف تخطيطية لا محتوى منتَج.",
+    "الدرس المصغّر 7–12 دقيقة؛ مجموع زمن 40 درسًا لا يساوي ساعات المستوى المعيارية.",
+    "لا تُعرض عبارة «أهم 1000 كلمة» قبل اعتماد قائمة تكرار مرخَّصة؛ البديل الحالي: «مفردات أساسية»."
+  ],
+  "cefrReferenceHours": {
+    "noteAr": "أرقام إرشادية للمقارنة الصادقة فقط، وليست وعدًا.",
+    "PREA1": "غير محددة رسميًا",
+    "A1": "80–100",
+    "A2": "180–200 (تراكمي)",
+    "B1": "350–400 (تراكمي)",
+    "B2": "500–600 (تراكمي)",
+    "C1": "700–800 (تراكمي)"
+  },
+  "skills": [
+    "reading",
+    "writing",
+    "listening",
+    "speaking",
+    "vocabulary",
+    "grammar",
+    "pronunciation"
+  ],
+  "tracks": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "category": "core",
+      "objectiveAr": "مسار متسلسل يبني التواصل من الأصوات إلى الدقة الأسلوبية.",
+      "levels": [
+        {
+          "levelCode": "PREA1",
+          "titleAr": "تمهيد: أصوات وكتابة وأول جملة",
+          "plannedLessonCount": 12,
+          "vocabTarget": 60,
+          "units": [
+            {
+              "slug": "prea1-u1-sounds",
+              "titleAr": "أصوات وحروف",
+              "objectiveAr": "أن يتعرّف المتعلم على حروف الإسبانية وأصواتها الأساسية ويقرأ كلمات قصيرة بصوت مفهوم.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-abecedario",
+                  "titleAr": "الأبجدية الإسبانية",
+                  "objectiveAr": "أن يتعرّف المتعلم على أسماء الحروف الإسبانية الـ27 ويقرأ كلمة قصيرة حرفًا حرفًا.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "pronunciation"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-vocales",
+                  "titleAr": "الحروف المتحركة الخمسة",
+                  "objectiveAr": "أن ينطق المتعلم الحروف الخمسة a e i o u بصوت قصير ثابت ويميّزها داخل كلمة.",
+                  "skills": [
+                    "listening",
+                    "pronunciation"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-h-muda",
+                  "titleAr": "حرف H الصامت",
+                  "objectiveAr": "أن يقرأ المتعلم كلمات تبدأ بحرف h (hola, hotel) دون نطقه، ويميّز ذلك عن العربية.",
+                  "skills": [
+                    "reading",
+                    "pronunciation",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                }
+              ]
+            },
+            {
+              "slug": "prea1-u2-stress",
+              "titleAr": "المقاطع والنبر",
+              "objectiveAr": "أن يقطّع المتعلم الكلمة إلى مقاطع ويضع النبر في موضعه في الكلمات الشائعة.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-silabas",
+                  "titleAr": "تقطيع المقاطع",
+                  "objectiveAr": "أن يقطّع المتعلم كلمة إسبانية من مقطعين أو ثلاثة إلى مقاطعها الصوتية.",
+                  "skills": [
+                    "listening",
+                    "pronunciation"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-acento-escrito",
+                  "titleAr": "علامة النبر المكتوبة",
+                  "objectiveAr": "أن يعرف المتعلم متى تحمل الكلمة علامة النبر (´) وأنها تُغيّر موضع النبر لا الصوت.",
+                  "skills": [
+                    "reading",
+                    "pronunciation"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-entonacion",
+                  "titleAr": "نبرة السؤال والنفي",
+                  "objectiveAr": "أن يفرّق المتعلم بنبرة صوته بين الجملة الخبرية والسؤال.",
+                  "skills": [
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                }
+              ]
+            },
+            {
+              "slug": "prea1-u3-first-words",
+              "titleAr": "أول كلمات",
+              "objectiveAr": "أن يستخدم المتعلم كلمات التحية والأرقام من 1 إلى 10 في موقف بسيط.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-saludos-basicos",
+                  "titleAr": "تحيات وأول عبارات",
+                  "objectiveAr": "أن يقول المتعلم ويفهم hola, adiós, gracias, por favor في موقف يومي.",
+                  "skills": [
+                    "listening",
+                    "speaking",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-numeros-1-10",
+                  "titleAr": "الأرقام من 1 إلى 10",
+                  "objectiveAr": "أن يعدّ المتعلم من 1 إلى 10 ويفهم رقمًا مسموعًا.",
+                  "skills": [
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-como-estas",
+                  "titleAr": "كيف حالك؟",
+                  "objectiveAr": "أن يسأل المتعلم ¿Cómo estás? ويجيب بـbien / mal / más o menos.",
+                  "skills": [
+                    "speaking",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                }
+              ]
+            },
+            {
+              "slug": "prea1-u4-first-sentence",
+              "titleAr": "أول جملة: أقدّم نفسي",
+              "objectiveAr": "أن يكوّن المتعلم جملتين قصيرتين صحيحتين عن نفسه.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-hola-me-llamo",
+                  "titleAr": "أول كلمات: التحية والاسم",
+                  "objectiveAr": "أن يحيّي المتعلم شخصًا ويُعرّف بنفسه في جملتين قصيرتين، وأن يميّز أن حرف h في الإسبانية لا يُنطق.",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "pronunciation"
+                  ],
+                  "status": "authored",
+                  "levelCode": "PREA1",
+                  "filePath": "content/exemplars/lesson-prea1-hola-me-llamo.json",
+                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد."
+                },
+                {
+                  "slug": "prea1-soy-tengo",
+                  "titleAr": "جملتان: أكون وعندي",
+                  "objectiveAr": "أن يفرّق المتعلم بين soy (أكون) و tengo (عندي) في جملة قصيرة عن نفسه.",
+                  "skills": [
+                    "grammar",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                },
+                {
+                  "slug": "prea1-practica-integrada",
+                  "titleAr": "تدريب متكامل قصير",
+                  "objectiveAr": "أن يجمع المتعلم التحية والاسم والبلد في حوار من ثلاث جمل.",
+                  "skills": [
+                    "reading",
+                    "writing",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "levelCode": "A1",
+          "titleAr": "A1: احتياجاتي اليومية الأولى",
+          "plannedLessonCount": 40,
+          "vocabTarget": 600,
+          "units": [
+            {
+              "slug": "a1-u1-origen",
+              "titleAr": "التحية والتعريف بالنفس والجنسية",
+              "objectiveAr": "أن يعرّف المتعلم بنفسه ويتبادل معلومات أساسية عن الاسم والبلد والجنسية بصيغة مناسبة للموقف.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-origen-de-donde-eres",
+                  "titleAr": "من أين أنت؟ التعريف بالبلد والجنسية",
+                  "objectiveAr": "أن يسأل المتعلم عن بلد شخص ويجيب عن بلده وجنسيته بجملة صحيحة، مع مطابقة الجنسية للمذكر والمؤنث، والتفريق بين de (الأصل) و en (المكان).",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-origen-de-donde-eres.json",
+                  "vocabPack": "a1-u1-origen",
+                  "requires": []
+                },
+                {
+                  "slug": "a1-saludos-formalidad",
+                  "titleAr": "التحية الرسمية: usted وtú وما بينهما",
+                  "objectiveAr": "أن يحيّي المتعلم تحية مناسبة للوقت ويختار صيغة المخاطبة الملائمة (tú للمعتاد وusted للرسمي)، ويقدّم نفسه في موقف رسمي بجملة كاملة صحيحة، ويميّز بين المذكر والمؤنث في encantado/encantada.",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "vocabPack": "a1-u1-origen",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-saludos-formalidad.json",
+                  "requires": [
+                    "a1-origen-de-donde-eres"
+                  ]
+                },
+                {
+                  "slug": "a1-presentar-a-otro",
+                  "titleAr": "قدّم صديقك: te presento a…",
+                  "objectiveAr": "أن يقدّم المتعلم شخصًا ثالثًا بجملة صحيحة (Te presento a… / Este es… / Esta es…)، ويستخدم es مع الطرف الثالث ويذكر أصله، ويميّز este من esta حسب جنس الاسم.",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-presentar-a-otro.json",
+                  "vocabPack": "a1-u1-origen",
+                  "requires": [
+                    "a1-saludos-formalidad"
+                  ]
+                },
+                {
+                  "slug": "a1-nacionalidades",
+                  "titleAr": "الجنسيات: كيف تُطابق الصفة جنس صاحبها",
+                  "objectiveAr": "أن يميّز المتعلم بين اسم البلد والجنسية (Francia / francés)، ويطابق صفة الجنسية مع جنس الشخص (egipcio/egipcia, alemán/alemana)، ويعرف أن بعض الجنسيات لا تتغير (marroquí).",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "vocabPack": "a1-u1-origen",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-nacionalidades.json",
+                  "requires": [
+                    "a1-presentar-a-otro"
+                  ]
+                }
+              ],
+              "vocabularyBundles": [
+                "a1-u1-origen"
+              ]
+            },
+            {
+              "slug": "a1-u2-family",
+              "titleAr": "العائلة والأصدقاء",
+              "objectiveAr": "أن يتحدث المتعلم عن أسرته وأصدقائه بجمل بسيطة ويصف صفة شخص.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-mi-familia",
+                  "titleAr": "أفراد العائلة",
+                  "objectiveAr": "أن يسمّي المتعلم أفراد أسرته ويستخدم mi/mis بشكل صحيح.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-tener-anos",
+                  "titleAr": "العمر وحرف الجر tener",
+                  "objectiveAr": "أن يقول المتعلم عمره وعمر غيره مستخدمًا tener años.",
+                  "skills": [
+                    "grammar",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-posesivos",
+                  "titleAr": "الملكية: mi, tu, su",
+                  "objectiveAr": "أن يفرّق المتعلم بين mi/tu/su في جمل عن العائلة.",
+                  "skills": [
+                    "grammar",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-describir-persona",
+                  "titleAr": "وصف شخص",
+                  "objectiveAr": "أن يصف المتعلم شخصًا بصفة واحدة (alto, simpático) مع مطابقة الجنس.",
+                  "skills": [
+                    "writing",
+                    "speaking",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u3-numbers-time",
+              "titleAr": "الأرقام والوقت والمواعيد",
+              "objectiveAr": "أن يستخدم المتعلم الأرقام حتى 100 ويقول الوقت ويحدد موعدًا بسيطًا.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-numeros-20-100",
+                  "titleAr": "الأرقام من 20 إلى 100",
+                  "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام حتى 100 ويفهم سعرًا.",
+                  "skills": [
+                    "vocabulary",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-la-hora",
+                  "titleAr": "الساعة والوقت",
+                  "objectiveAr": "أن يسأل المتعلم ¿Qué hora es? ويجيب بالساعة الكاملة والنصف.",
+                  "skills": [
+                    "listening",
+                    "speaking",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-dias-meses",
+                  "titleAr": "أيام الأسبوع والشهور",
+                  "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور ويحدد يومًا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-cita",
+                  "titleAr": "تحديد موعد",
+                  "objectiveAr": "أن يتفق المتعلم على موعد بسيط (¿A qué hora quedamos?) ويؤكده.",
+                  "skills": [
+                    "speaking",
+                    "listening",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u4-food-drink",
+              "titleAr": "الطعام والشراب والأسعار",
+              "objectiveAr": "أن يطلب المتعلم طعامًا وشرابًا ويسأل عن السعر ويدفع.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-vocabulario-comida",
+                  "titleAr": "مفردات الطعام والشراب",
+                  "objectiveAr": "أن يتعرّف المتعلم على أسماء طعام وشراب شائعة مع أداة التعريف الصحيحة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-pedir-en-cafe",
+                  "titleAr": "الطلب في مقهى",
+                  "objectiveAr": "أن يطلب المتعلم مشروبًا بأدب (quisiera / para mí) ويفهم ردّ النادل.",
+                  "skills": [
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-precios-cuentas",
+                  "titleAr": "الأسعار والحساب",
+                  "objectiveAr": "أن يسأل المتعلم ¿Cuánto cuesta? ويفهم الإجمالي ويكتب رقمًا.",
+                  "skills": [
+                    "listening",
+                    "writing",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-gustar",
+                  "titleAr": "التفضيل: me gusta",
+                  "objectiveAr": "أن يعبّر المتعلم عمّا يحبه من طعام بفعل gustar بصيغتيه.",
+                  "skills": [
+                    "grammar",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u5-shopping",
+              "titleAr": "التسوق والحاجات",
+              "objectiveAr": "أن يتسوق المتعلم ويسأل عن مقاس أو لون ويعبر عن حاجة بسيطة.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-colores-ropa",
+                  "titleAr": "الألوان والملابس",
+                  "objectiveAr": "أن يسمّي المتعلم الألوان والملابس الأساسية ويصف قطعة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-necesitar",
+                  "titleAr": "الحاجة: necesito",
+                  "objectiveAr": "أن يعبّر المتعلم عن حاجته (necesito…) ويطلب المساعدة.",
+                  "skills": [
+                    "speaking",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-tallas",
+                  "titleAr": "المقاس والاختيار",
+                  "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة.",
+                  "skills": [
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-comprar",
+                  "titleAr": "إتمام عملية شراء",
+                  "objectiveAr": "أن يُجري المتعلم حوار شراء قصيرًا من السؤال إلى الدفع.",
+                  "skills": [
+                    "speaking",
+                    "reading",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u6-home",
+              "titleAr": "المنزل والغرف",
+              "objectiveAr": "أن يصف المتعلم منزله وغرفه وأثاثه بجمل بسيطة.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-habitaciones",
+                  "titleAr": "غرف المنزل",
+                  "objectiveAr": "أن يسمّي المتعلم غرف المنزل ويستخدم hay.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-hay-estar",
+                  "titleAr": "hay مقابل está",
+                  "objectiveAr": "أن يفرّق المتعلم بين وجود شيء (hay) وموضعه (está).",
+                  "skills": [
+                    "grammar",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-muebles",
+                  "titleAr": "الأثاث والمواضع",
+                  "objectiveAr": "أن يصف المتعلم موضع الأثاث بحروف المكان.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-rutina-casa",
+                  "titleAr": "وصف منزلي",
+                  "objectiveAr": "أن يكتب المتعلم فقرة قصيرة عن منزله.",
+                  "skills": [
+                    "writing",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u7-routine",
+              "titleAr": "الروتين اليومي وأوقات الفراغ",
+              "objectiveAr": "أن يحكي المتعلم روتينه اليومي ويصف هواية بجمل مترابطة.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-verbos-rutina",
+                  "titleAr": "أفعال الروتين",
+                  "objectiveAr": "أن يستخدم المتعلم أفعال الروتين في المضارع مع الضمير الصحيح.",
+                  "skills": [
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-hora-rutina",
+                  "titleAr": "الروتين والوقت",
+                  "objectiveAr": "أن يربط المتعلم بين نشاط ووقته (a las siete…).",
+                  "skills": [
+                    "writing",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-hobbies",
+                  "titleAr": "الهوايات",
+                  "objectiveAr": "أن يقول المتعلم ما يحب فعله في وقت الفراغ.",
+                  "skills": [
+                    "speaking",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-mi-dia",
+                  "titleAr": "يومي في فقرة",
+                  "objectiveAr": "أن يكتب المتعلم فقرة من 4 جمل عن يومه.",
+                  "skills": [
+                    "writing",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u8-places",
+              "titleAr": "الأماكن والاتجاهات",
+              "objectiveAr": "أن يسأل المتعلم عن مكان ويعطي اتجاهًا بسيطًا.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-lugares-ciudad",
+                  "titleAr": "أماكن في المدينة",
+                  "objectiveAr": "أن يسمّي المتعلم أماكن المدينة الشائعة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-donde-esta",
+                  "titleAr": "أين يوجد؟",
+                  "objectiveAr": "أن يسأل المتعلم ¿Dónde está…? ويفهم الجواب.",
+                  "skills": [
+                    "speaking",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-direcciones",
+                  "titleAr": "إعطاء اتجاه",
+                  "objectiveAr": "أن يعطي المتعلم اتجاهًا من خطوتين (a la derecha, todo recto).",
+                  "skills": [
+                    "speaking",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-transporte",
+                  "titleAr": "المواصلات",
+                  "objectiveAr": "أن يسأل المتعلم عن وسيلة مواصلات ويشتري تذكرة.",
+                  "skills": [
+                    "listening",
+                    "speaking",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u9-work-study",
+              "titleAr": "العمل والدراسة",
+              "objectiveAr": "أن يتحدث المتعلم عن عمله أو دراسته بجمل بسيطة.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-profesiones",
+                  "titleAr": "المهن",
+                  "objectiveAr": "أن يسمّي المتعلم مهنًا شائعة ويقول مهنته بـsoy/trabajo de.",
+                  "skills": [
+                    "vocabulary",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-estudiar",
+                  "titleAr": "الدراسة والمواد",
+                  "objectiveAr": "أن يتحدث المتعلم عمّا يدرسه ويستخدم estudiar.",
+                  "skills": [
+                    "reading",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-horario-trabajo",
+                  "titleAr": "الوقت في العمل",
+                  "objectiveAr": "أن يصف المتعلم ساعات عمله ويومه.",
+                  "skills": [
+                    "writing",
+                    "grammar"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-presentacion-profesional",
+                  "titleAr": "تقديم نفسي مهني",
+                  "objectiveAr": "أن يقدّم المتعلم نفسه في سياق مهني قصير.",
+                  "skills": [
+                    "speaking",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            },
+            {
+              "slug": "a1-u10-health-basics",
+              "titleAr": "الصحة الأساسية والمساعدة",
+              "objectiveAr": "أن يعبّر المتعلم عن ألم بسيط ويطلب مساعدة أو موعدًا.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "a1-cuerpo",
+                  "titleAr": "أعضاء الجسم",
+                  "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الأساسية.",
+                  "skills": [
+                    "vocabulary",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-doler",
+                  "titleAr": "الألم: me duele",
+                  "objectiveAr": "أن يعبّر المتعلم عن موضع الألم بالصيغة الصحيحة.",
+                  "skills": [
+                    "grammar",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-farmacia",
+                  "titleAr": "في الصيدلية",
+                  "objectiveAr": "أن يطلب المتعلم دواءً بسيطًا ويفهم التعليمات.",
+                  "skills": [
+                    "reading",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                },
+                {
+                  "slug": "a1-emergencia",
+                  "titleAr": "طلب المساعدة",
+                  "objectiveAr": "أن يطلب المتعلم المساعدة في حالة طارئة بسيطة.",
+                  "skills": [
+                    "speaking",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "A1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "levelCode": "A2",
+          "titleAr": "A2: أحداث الماضي والخطط",
+          "plannedLessonCount": 40,
+          "vocabTarget": 1200,
+          "units": [
+            {
+              "slug": "a2-u1-travel",
+              "titleAr": "السفر والإجازات",
+              "objectiveAr": "أن يحكي المتعلم عن رحلة ماضية ويحجز إقامة.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u2-past",
+              "titleAr": "الحكاية في الماضي",
+              "objectiveAr": "أن يستخدم المتعلم الماضي البسيط والمركّب في سرد قصير.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u3-future-plans",
+              "titleAr": "الخطط والمستقبل القريب",
+              "objectiveAr": "أن يعبّر المتعلم عن خطط قريبة (ir a + مصدر).",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u4-comparisons",
+              "titleAr": "المقارنة والوصف",
+              "objectiveAr": "أن يقارن المتعلم بين أشخاص وأشياء.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u5-experiences",
+              "titleAr": "الخبرات",
+              "objectiveAr": "أن يستخدم المتعلم المضارع التام للحديث عن خبرات.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u6-health",
+              "titleAr": "الطبيب والجسم",
+              "objectiveAr": "أن يشرح المتعلم عَرَضًا لطبيب ويفهم تعليمات.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u7-housing",
+              "titleAr": "السكن والجيران",
+              "objectiveAr": "أن يتحدث المتعلم عن سكنه ومشكلاته.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u8-hobbies",
+              "titleAr": "الهوايات والرياضة",
+              "objectiveAr": "أن يناقش المتعلم هواياته وتكرارها.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u9-phone-booking",
+              "titleAr": "الهاتف والمواعيد",
+              "objectiveAr": "أن يُجري المتعلم مكالمة حجز قصيرة.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "a2-u10-culture",
+              "titleAr": "الثقافة والعادات",
+              "objectiveAr": "أن يتعرّف المتعلم على عادات إسبانية ويعلّق عليها.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "levelCode": "B1",
+          "titleAr": "B1: الرأي والاستقلال",
+          "plannedLessonCount": 40,
+          "vocabTarget": 2400,
+          "units": [
+            {
+              "slug": "b1-u1-narrating",
+              "titleAr": "السرد والتفصيل",
+              "objectiveAr": "أن يروي المتعلم قصة مترابطة بأزمنة مختلفة.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u2-opinions",
+              "titleAr": "الرأي والاتفاق والاختلاف",
+              "objectiveAr": "أن يعبّر المتعلم عن رأيه ويوافق أو يعترض بأدب.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u3-work",
+              "titleAr": "العمل والمقابلات",
+              "objectiveAr": "أن يجري المتعلم مقابلة عمل قصيرة.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u4-study",
+              "titleAr": "الدراسة والتعلّم",
+              "objectiveAr": "أن يصف المتعلم تجربته الدراسية.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u5-independent-travel",
+              "titleAr": "السفر المستقل والمشكلات",
+              "objectiveAr": "أن يتعامل المتعلم مع مشكلة سفر.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u6-problems",
+              "titleAr": "حل المشكلات والشكاوى",
+              "objectiveAr": "أن يقدّم المتعلم شكوى ويطلب حلًا.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u7-media",
+              "titleAr": "الإعلام والأخبار المبسطة",
+              "objectiveAr": "أن يلخّص المتعلم خبرًا قصيرًا.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u8-health-lifestyle",
+              "titleAr": "الصحة ونمط الحياة",
+              "objectiveAr": "أن يناقش المتعلم عادات صحية.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u9-relationships",
+              "titleAr": "العلاقات والمجتمع",
+              "objectiveAr": "أن يصف المتعلم علاقات اجتماعية.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b1-u10-writing-basics",
+              "titleAr": "الكتابة الوظيفية",
+              "objectiveAr": "أن يكتب المتعلم رسالة أو طلبًا قصيرًا.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "levelCode": "B2",
+          "titleAr": "B2: الحجاج والنصوص المركّبة",
+          "plannedLessonCount": 40,
+          "vocabTarget": 4000,
+          "units": [
+            {
+              "slug": "b2-u1-argument",
+              "titleAr": "بناء الحجة",
+              "objectiveAr": "أن يبني المتعلم حجة مدعومة بأمثلة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u2-news",
+              "titleAr": "الأخبار وتحليلها",
+              "objectiveAr": "أن يحلّل المتعلم نصًا إخباريًا.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u3-literature",
+              "titleAr": "نصوص أدبية مبسطة",
+              "objectiveAr": "أن يقرأ المتعلم نصًا أدبيًا قصيرًا ويحلّله.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u4-professional",
+              "titleAr": "التواصل المهني",
+              "objectiveAr": "أن يشارك المتعلم في اجتماع عمل.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u5-academic",
+              "titleAr": "الكتابة الأكاديمية",
+              "objectiveAr": "أن يكتب المتعلم فقرة أكاديمية منظمة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u6-negotiation",
+              "titleAr": "التفاوض والإقناع",
+              "objectiveAr": "أن يتفاوض المتعلم ويقنع بحجج.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u7-environment",
+              "titleAr": "البيئة والمجتمع",
+              "objectiveAr": "أن يناقش المتعلم قضايا مجتمعية.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u8-presentations",
+              "titleAr": "العروض والتقديم",
+              "objectiveAr": "أن يقدّم المتعلم عرضًا قصيرًا.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u9-formal-writing",
+              "titleAr": "المراسلات الرسمية",
+              "objectiveAr": "أن يكتب المتعلم بريدًا رسميًا.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "b2-u10-culture-deep",
+              "titleAr": "الفروق الثقافية والإقليمية",
+              "objectiveAr": "أن يميّز المتعلم الفروق الإقليمية في اللغة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "levelCode": "C1",
+          "titleAr": "C1: الدقة والأسلوب",
+          "plannedLessonCount": 32,
+          "vocabTarget": 8000,
+          "units": [
+            {
+              "slug": "c1-u1-style",
+              "titleAr": "الأسلوب والدقة",
+              "objectiveAr": "أن يحسّن المتعلم دقة اختياره اللغوي.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u2-idioms",
+              "titleAr": "التعبيرات الاصطلاحية",
+              "objectiveAr": "أن يستخدم المتعلم تعبيرات اصطلاحية شائعة.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u3-academic-discourse",
+              "titleAr": "الخطاب الأكاديمي",
+              "objectiveAr": "أن يفهم المتعلم ويُنتج خطابًا أكاديميًا.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u4-literature",
+              "titleAr": "الأدب والنقد",
+              "objectiveAr": "أن يحلّل المتعلم نصًا أدبيًا نقديًا.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u5-regional",
+              "titleAr": "الإسبانية الإيبيرية والأمريكية",
+              "objectiveAr": "أن يميّز المتعلم الفروق المعجمية والنطقية.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u6-translation",
+              "titleAr": "الترجمة والمقارنة اللغوية",
+              "objectiveAr": "أن يترجم المتعلم نصوصًا قصيرة بوعي بالمقاييس.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u7-complex-negotiation",
+              "titleAr": "المفاوضات المعقدة",
+              "objectiveAr": "أن يدير المتعلم مفاوضة متعددة الأطراف.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "c1-u8-advanced-writing",
+              "titleAr": "الكتابة المتقدمة",
+              "objectiveAr": "أن يكتب المتعلم نصًا متقدمًا مترابطًا.",
+              "levelCode": "C1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "core-vocab",
+      "kind": "vocabulary",
+      "titleAr": "مسار المفردات الأساسية",
+      "category": "frequency",
+      "descriptionAr": "مسار مستقل عن الدروس: حزم من 20 مدخلًا تعمل بنظام المراجعة المتباعدة، ويمكن استخدامه بجانب أي مسار. لا يتوقف على إتمام درس.",
+      "namingPolicy": "لا يُستخدم وصف «الأكثر شيوعًا/أهم 1000» قبل اعتماد مصدر تكرار مرخَّص ومُوثَّق مع ترخيصه.",
+      "sourceStatus": {
+        "verified": false,
+        "noteAr": "الترتيب الحالي داخلي (internalRank) لسلسلة التدريس فقط."
+      },
+      "levels": [
+        {
+          "levelCode": "A1-A2",
+          "titleAr": "مفردات أساسية (قيد التوسيع)",
+          "plannedPacks": 50,
+          "authoredPacks": 0,
+          "bands": [
+            {
+              "band": 1,
+              "titleAr": "الأساس الوظيفي",
+              "focusAr": "ضمائر، أفعال عالية التكرار، أرقام، وقت"
+            },
+            {
+              "band": 2,
+              "titleAr": "الحياة اليومية",
+              "focusAr": "طعام، منزل، تنقّل، وصف بسيط"
+            },
+            {
+              "band": 3,
+              "titleAr": "الأفعال والصيغ",
+              "focusAr": "أفعال شائعة، حروف جر، صيغ السؤال"
+            },
+            {
+              "band": 4,
+              "titleAr": "المجتمع والعمل",
+              "focusAr": "عمل، دراسة، صحة، مال"
+            },
+            {
+              "band": 5,
+              "titleAr": "التعبير والربط",
+              "focusAr": "روابط، ظروف، مفردات للرأي والسرد"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "travel",
+      "kind": "situational",
+      "titleAr": "مسار السفر والمطاعم",
+      "category": "scenario",
+      "descriptionAr": "مسار موقفي مستقل يستخدم مفردات المسار الأساسي ولا يكرّر شرحها.",
+      "levels": [
+        {
+          "levelCode": "A1-B1",
+          "titleAr": "من المطار إلى الطاولة",
+          "plannedLessonCount": 24,
+          "units": [
+            {
+              "slug": "tr-u1-airport",
+              "titleAr": "المطار والوصول",
+              "objectiveAr": "أن يمرّ المتعلم بخدمات المطار الأساسية.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "tr-u1-arrival-customs",
+                  "titleAr": "الوصول والجمارك",
+                  "objectiveAr": "أن يجيب المتعلم عن أسئلة الجمارك القصيرة (الغرض من الزيارة، مدة الإقامة، ما في الحقيبة) بأجوبة صحيحة موجزة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u1-arrival-customs.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u1-problem-luggage"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u1-boarding-delay",
+                  "titleAr": "الأمن والصعود والتأخير",
+                  "objectiveAr": "أن يفهم المتعلم إعلان صعود أو تأخير، ويطلب توضيحًا عند عدم الفهم، ويعتذر بلباقة عند المرور في طابور.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u1-boarding-delay.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u1-checkin"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u1-checkin",
+                  "titleAr": "تسجيل الوصول في المطار",
+                  "objectiveAr": "أن يسجّل المتعلم وصوله في مكتب شركة الطيران، ويعطي جواز سفره وحقيبته، ويفهم سؤال المقعد والبوابة بأجوبة قصيرة صحيحة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u1-checkin.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u1-problem-luggage",
+                  "titleAr": "مشكلة أمتعة أو تذكرة",
+                  "objectiveAr": "أن يشرح المتعلم مشكلة (حقيبة مفقودة أو خطأ في الاسم) بلباقة، ويطلب حلًّا بديلًا، ويفهم مواعيد المتابعة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u1-problem-luggage.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u1-boarding-delay"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "tr-u2-hotel",
+              "titleAr": "الفندق والحجز",
+              "objectiveAr": "أن يحجز المتعلم غرفة ويطلب خدمة.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "tr-u2-booking",
+                  "titleAr": "حجز غرفة",
+                  "objectiveAr": "أن يحجز المتعلم غرفة عبر الهاتف أو الإنترنت: يحدد التواريخ وعدد الليالي ونوع الغرفة، ويسأل عن السعر والإفطار.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u2-booking.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u2-checkin",
+                  "titleAr": "تسجيل الدخول إلى الفندق",
+                  "objectiveAr": "أن يقدّم المتعلم حجزه وجواز سفره عند الاستقبال، ويسأل عن الإفطار والمفتاح والواي فاي.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u2-checkin.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u2-booking"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u2-checkout",
+                  "titleAr": "المغادرة والفاتورة",
+                  "objectiveAr": "أن يسأل المتعلم عن الفاتورة ووقت المغادرة وطريقة الدفع، ويتعامل مع بند غامض في الفاتورة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u2-checkout.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u2-room-problem"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u2-room-problem",
+                  "titleAr": "مشكلة في الغرفة",
+                  "objectiveAr": "أن يشرح المتعلم مشكلة في الغرفة (لا يعمل المكيف، ضجيج، ماء بارد) ويطلب حلًّا أو غرفة بديلة بلباقة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u2-room-problem.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u2-checkin"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "tr-u3-restaurant",
+              "titleAr": "المطعم: الطلب والدفع",
+              "objectiveAr": "أن يطلب المتعلم طعامًا ويتعامل مع الحساب.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "tr-u3-allergy-diet",
+                  "titleAr": "الحساسية والنظام الغذائي",
+                  "objectiveAr": "أن يعبّر المتعلم عن حساسية غذائية بوضوح، ويسأل هل يحتوي الطبق على مكوّن معيّن، ويطلب بديلًا خاليًا من الغلوتين.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-allergy-diet.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-ordering"
+                  ]
+                },
+                {
+                  "slug": "tr-u3-getting-table",
+                  "titleAr": "طاولة لشخصين",
+                  "objectiveAr": "أن يطلب المتعلم طاولة في مطعم، ويحدد عدد الأشخاص، ويفهم سؤال النادل عن العدد وأي الأماكن متاح.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-getting-table.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": []
+                },
+                {
+                  "slug": "tr-u3-ordering",
+                  "titleAr": "الطلب من القائمة",
+                  "objectiveAr": "أن يطلب المتعلم القائمة، ويسمّي طبقًا ومشروبًا، ويستخدم صيغة مهذّبة للطلب، ويفهم سؤال النادل عن الطبق الأول.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-ordering.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-getting-table"
+                  ]
+                },
+                {
+                  "slug": "tr-u3-paying",
+                  "titleAr": "الفاتورة والدفع",
+                  "objectiveAr": "أن يطلب المتعلم الحساب، ويسأل عن طريقة الدفع والبقشيش، ويفهم سؤال النادل عن الدفع منفصلًا أو مجتمعًا.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u3-paying.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u3-allergy-diet"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "tr-u4-directions",
+              "titleAr": "الاتجاهات والمواصلات",
+              "objectiveAr": "أن يسأل المتعلم عن الاتجاه ويستخدم المواصلات.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "tr-u4-asking-directions",
+                  "titleAr": "أين ...؟ أسأل عن مكان",
+                  "objectiveAr": "أن يسأل المتعلم عن مكان في الشارع بصيغة مهذّبة، ويفهم جوابًا قصيرًا فيه يمين أو يسار أو «على طول»، ويسأل عن خريطة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-asking-directions.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": []
+                },
+                {
+                  "slug": "tr-u4-bus-metro",
+                  "titleAr": "المترو والباص",
+                  "objectiveAr": "أن يسأل المتعلم عن الخط المناسب، ويشتري تذكرة، ويفهم تعليمة التحويل بين خطين، ويعرف أين الموقف.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-bus-metro.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-walking-route"
+                  ]
+                },
+                {
+                  "slug": "tr-u4-taxi",
+                  "titleAr": "التاكسي",
+                  "objectiveAr": "أن يطلب المتعلم تاكسيًا ويحدد الوجهة، ويسأل عن السعر التقريبي، ويطلب التوقف، ويسأل عن طريقة الدفع.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-taxi.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-bus-metro"
+                  ]
+                },
+                {
+                  "slug": "tr-u4-walking-route",
+                  "titleAr": "امشِ واستدر واعبر",
+                  "objectiveAr": "أن يتبع المتعلم تعليمات سير متتابعة (استدر، اعبر، عند الناصية، عند الإشارة)، ويسأل هل المكان قريب أو بعيد وكم دقيقة مشيًا.",
+                  "status": "authored",
+                  "filePath": "content/drafts/travel/lesson-tr-u4-walking-route.json",
+                  "vocabPack": null,
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "requires": [
+                    "tr-u4-asking-directions"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "tr-u5-shopping-travel",
+              "titleAr": "التسوق والأسعار",
+              "objectiveAr": "أن يتسوق المتعلم ويسأل عن السعر والمقاس.",
+              "levelCode": "A1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "tr-u6-emergencies",
+              "titleAr": "الطوارئ والمساعدة",
+              "objectiveAr": "أن يطلب المتعلم المساعدة في موقف طارئ.",
+              "levelCode": "A2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "callcenter",
+      "kind": "professional",
+      "titleAr": "مسار الكول سنتر",
+      "category": "professional",
+      "descriptionAr": "مسار مهني لموظفي دعم يخدمون عملاء بالإسبانية. يبدأ من B1 لأن فهم لهجة العميل تحت ضغط الوقت شرط مسبق.",
+      "levels": [
+        {
+          "levelCode": "B1-C1",
+          "titleAr": "مكالمة خدمة العملاء",
+          "plannedLessonCount": 28,
+          "units": [
+            {
+              "slug": "cc-u0-phonetics-support",
+              "titleAr": "أصوات ولهجات على الهاتف",
+              "objectiveAr": "أن يميّز المتعلم الأصوات واللهجات عبر الهاتف.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "cc-u1-opening-verification",
+              "titleAr": "الافتتاح والتحقق من الهوية",
+              "objectiveAr": "أن يفتتح المتعلم المكالمة ويتحقق من هوية العميل.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": [
+                {
+                  "slug": "cc-u1-hold-transfer",
+                  "titleAr": "التعليق والتحويل بلباقة",
+                  "objectiveAr": "أن يطلب المتعلم من العميل الانتظار أو يحوّله إلى زميل، مع شرح السبب وتقدير الوقت، والعودة بالشكر والملخص.",
+                  "status": "authored",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u1-hold-transfer.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u1-verification"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u1-opening",
+                  "titleAr": "افتتاح المكالمة بنبرة مهنية",
+                  "objectiveAr": "أن يفتتح المتعلم المكالمة بتحية مؤسسية واضحة، ويقدّم اسمه وشركته، ويسأل عن سبب الاتصال بصيغة مهنية، ويتجنب الصيغ الآمرة.",
+                  "status": "authored",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u1-opening.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u1-roleplay",
+                  "titleAr": "محاكاة مكالمة كاملة",
+                  "objectiveAr": "أن يدير المتعلم مكالمة شكوى كاملة: افتتاح، تحقق، تشخيص، حل أو بديل، إغلاق — بلا كشف بيانات حساسة وبلا وعود غير قابلة للتنفيذ.",
+                  "status": "authored",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u1-roleplay.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u1-hold-transfer"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u1-verification",
+                  "titleAr": "التحقق من الهوية بلا كشف بيانات",
+                  "objectiveAr": "أن يطلب المتعلم بيانات تحقّق جزئية (رقم الطلب، بريد مسجَّل، أربعة أرقام أخيرة) بلا طلب كلمة مرور كاملة، وأن يتعامل مع بيانات ناقصة بلا افتراض.",
+                  "status": "authored",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u1-verification.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u1-opening"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "cc-u2-understanding",
+              "titleAr": "فهم المشكلة وإعادة الصياغة",
+              "objectiveAr": "أن يفهم المتعلم المشكلة ويعيد صياغتها للتأكد.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "cc-u3-solutions",
+              "titleAr": "الحل والبدائل",
+              "objectiveAr": "أن يقدّم المتعلم حلولًا وبدائل واضحة.",
+              "levelCode": "B1",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "cc-u4-complaints",
+              "titleAr": "الشكاوى والتصعيد",
+              "objectiveAr": "أن يتعامل المتعلم مع شكوى ويصعّدها عند الحاجة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "cc-u5-closing-quality",
+              "titleAr": "الإغلاق وضمان الجودة",
+              "objectiveAr": "أن يغلق المتعلم المكالمة ويؤكد المتابعة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            },
+            {
+              "slug": "cc-u6-writing",
+              "titleAr": "البريد والتذاكر المكتوبة",
+              "objectiveAr": "أن يكتب المتعلم بريدًا/تذكرة تلخّص المكالمة.",
+              "levelCode": "B2",
+              "plannedLessonCount": 4,
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossTrackRules": [
+    "المفردات مشتركة عالميًا: نفس مدخل المفردات يُستعمل في كل المسارات بلا تكرار شرح.",
+    "فتح الدروس داخل المسار تسلسلي؛ المسار الجانبي لا يفتح درسًا في المسار الأساسي.",
+    "المسار الجانبي لا يمنح XP مضاعفًا لنفس الدرس.",
+    "مسار المفردات لا يُغلق أبدًا ولا يعتمد على تقدم أي درس."
+  ],
+  "gaps": [
+    "A2–C1: أهداف على مستوى الوحدة فقط؛ لم تُكتب أهداف دروس ولا محتوى.",
+    "المسارات الجانبية: الهيكل معتمد، والمحتوى يُضاف على دفعات.",
+    "مسار المفردات الأساسية: لا مصدر تكرار مرخَّص بعد؛ الترتيب داخلي.",
+    "لا يوجد محتوى صوتي ولا محتوى منشور ولا مراجعة بشرية موثّقة."
+  ],
+  "coverage": {
+    "claimFullCefr": false,
+    "noteAr": "أسماء المستويات (PREA1…C1) تصف هيكل المنهج المخطَّط، وليست دليل تغطية. ما هو مكتوب فعلًا الآن: وحدة A1 أولى كاملة (4 دروس)، وحدتا سفر (8 دروس)، ووحدة كول سنتر واحدة (4 دروس)، و3 حزم مفردات أساسية (60 مدخلًا). كل ما عدا ذلك هيكل بلا دروس، وكل المحتوى draft غير مراجَع بشريًا.",
+    "asOf": "2026-10-21",
+    "authoredLessonFiles": 16,
+    "byTrack": {
+      "main-track": {
+        "plannedLessons": 204,
+        "authoredLessons": 5,
+        "units": 52,
+        "unitsWithContent": 2
+      },
+      "core-vocab": {
+        "plannedLessons": 0,
+        "authoredLessons": 0,
+        "units": 0,
+        "unitsWithContent": 0
+      },
+      "travel": {
+        "plannedLessons": 24,
+        "authoredLessons": 8,
+        "units": 6,
+        "unitsWithContent": 2
+      },
+      "callcenter": {
+        "plannedLessons": 28,
+        "authoredLessons": 4,
+        "units": 7,
+        "unitsWithContent": 1
+      }
+    },
+    "coreVocabPacks": {
+      "authored": 3,
+      "entries": 60,
+      "planned": 50,
+      "noteAr": "العدد 50 حزم مخطَّطة أعلى بكثير من 3 المكتوبة؛ الأولوية كانت للجودة والمراجعة البشرية لا للعدد."
+    },
+    "skillsCovered": {
+      "listening": "تمارين listen_choose بنص بديل ظاهر (لا صوت مُنتَج بعد)",
+      "reading": "قراءة حوارات وتعليمات ورسائل قصيرة",
+      "writing": "fill_blank وtranslate_short وroleplay مكتوب",
+      "speaking": "تمارين مشاركة غير مُقيَّمة آليًا (speak_with_text/speak_free/roleplay_simulation)",
+      "grammar": "أهداف نحوية صريحة لكل درس مع شرح عربي",
+      "vocabulary": "حزم مفردات مرتبطة بدروسها عبر lesson_vocabulary"
+    },
+    "gaps": [
+      "A2/B1/B2/C1: هيكل فقط — لا دروس مكتوبة.",
+      "المسار الأساسي: 4 دروس A1 من 52 مخططًا.",
+      "مسار السفر: وحدتان من ست (8 من 24 درسًا).",
+      "مسار الكول سنتر: وحدة واحدة من سبع (4 من 28 درسًا).",
+      "المفردات: 3 حزم من 50 مخططًا؛ ولا مصدر تكرار مرخَّص معتمد بعد.",
+      "لا صوت مُنتَج لأي درس؛ كل audioKey بحالة pending.",
+      "لا مراجعة بشرية إسبانية أو عربية لأي درس (المطلوب قبل النشر)."
+    ],
+    "totals": {
+      "plannedLessonsAllTracks": 256,
+      "plannedLessonsMainTrackOnly": 204,
+      "authoredLessons": 17,
+      "noteAr": "الرقم 256 = مجموع الدروس المخطّطة في كل المسارات؛ و204 = المسار الأساسي وحده. أحدهما ليس خطأ عن الآخر — يُذكر النطاق دائمًا."
+    }
+  }
+}

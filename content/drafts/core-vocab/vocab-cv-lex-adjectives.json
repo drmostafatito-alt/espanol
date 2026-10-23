@@ -1,0 +1,3418 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "cv-lex-adjectives",
+ "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+ "source": {
+  "title": "حزمة cv-lex-adjectives — إعداد داخلي (بذور TSV قابلة للمراجعة)، تحتاج مراجعة بشرية قبل النشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-21",
+  "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. لا نسمّي هذه الحزم «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة. IPA تلقائي تقريبي من قواعد الإملاء (إسبانية أوروبية) وينتظر مراجعة بشرية. الحزم مُولَّدة من tools/gen/lexicon/ (بذور TSV قابلة للمراجعة)."
+ },
+ "entries": [
+  {
+   "headword": "malo",
+   "normalized": "malo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/mˈalo/",
+   "pronunciationHintAr": "مالو",
+   "internalRank": 1,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سيئ",
+     "meaningArEg": "وحش",
+     "glossEs": null,
+     "exampleEs": "El tiempo está muy malo hoy.",
+     "exampleAr": "الجو وحش النهارده.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tiempo está muy malo hoy.",
+     "ar": "الجو وحش النهارده.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "feo",
+   "normalized": "feo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/fˈeo/",
+   "pronunciationHintAr": "فيو",
+   "internalRank": 2,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قبيح",
+     "meaningArEg": "وحش الشكل",
+     "glossEs": null,
+     "exampleEs": "Ese edificio es muy feo.",
+     "exampleAr": "العمارة دي شكلها وحش.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ese edificio es muy feo.",
+     "ar": "العمارة دي شكلها وحش.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "rápido",
+   "normalized": "rápido",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/rˈapido/",
+   "pronunciationHintAr": "رابيدو",
+   "internalRank": 3,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سريع",
+     "meaningArEg": "سريع",
+     "glossEs": null,
+     "exampleEs": "El tren es muy rápido.",
+     "exampleAr": "القطار سريع جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tren es muy rápido.",
+     "ar": "القطار سريع جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "lento",
+   "normalized": "lento",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/lˈento/",
+   "pronunciationHintAr": "لينتو",
+   "internalRank": 4,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بطيء",
+     "meaningArEg": "بطيء",
+     "glossEs": null,
+     "exampleEs": "El servicio aquí es muy lento.",
+     "exampleAr": "الخدمة هنا بطيئة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El servicio aquí es muy lento.",
+     "ar": "الخدمة هنا بطيئة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "barato",
+   "normalized": "barato",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/baɾˈato/",
+   "pronunciationHintAr": "باراتو",
+   "internalRank": 5,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رخيص",
+     "meaningArEg": "رخيص",
+     "glossEs": null,
+     "exampleEs": "Este mercado es muy barato.",
+     "exampleAr": "السوق ده رخيص جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este mercado es muy barato.",
+     "ar": "السوق ده رخيص جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "alto",
+   "normalized": "alto",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/ˈalto/",
+   "pronunciationHintAr": "التو",
+   "internalRank": 6,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طويل أو مرتفع",
+     "meaningArEg": "عالي",
+     "glossEs": null,
+     "exampleEs": "La montaña es muy alta.",
+     "exampleAr": "الجبل عالي جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La montaña es muy alta.",
+     "ar": "الجبل عالي جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "bajo",
+   "normalized": "bajo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/bˈaxo/",
+   "pronunciationHintAr": "باخو",
+   "internalRank": 7,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قصير أو منخفض",
+     "meaningArEg": "قصير",
+     "glossEs": null,
+     "exampleEs": "Su voz es muy baja.",
+     "exampleAr": "صوتها واطي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su voz es muy baja.",
+     "ar": "صوتها واطي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "corto",
+   "normalized": "corto",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kˈoɾto/",
+   "pronunciationHintAr": "كورتو",
+   "internalRank": 8,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قصير",
+     "meaningArEg": "قصير",
+     "glossEs": null,
+     "exampleEs": "El texto es demasiado corto.",
+     "exampleAr": "النص قصير أوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El texto es demasiado corto.",
+     "ar": "النص قصير أوي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "largo",
+   "normalized": "largo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/lˈaɾgo/",
+   "pronunciationHintAr": "لارجو",
+   "internalRank": 9,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طويل",
+     "meaningArEg": "طويل",
+     "glossEs": null,
+     "exampleEs": "El viaje fue muy largo.",
+     "exampleAr": "الرحلة كانت طويلة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El viaje fue muy largo.",
+     "ar": "الرحلة كانت طويلة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ancho",
+   "normalized": "ancho",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈanko/",
+   "pronunciationHintAr": "انكو",
+   "internalRank": 10,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عريض",
+     "meaningArEg": "عريض",
+     "glossEs": null,
+     "exampleEs": "La calle es muy ancha aquí.",
+     "exampleAr": "الشارع عريض هنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La calle es muy ancha aquí.",
+     "ar": "الشارع عريض هنا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "estrecho",
+   "normalized": "estrecho",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/estɾˈeko/",
+   "pronunciationHintAr": "يستريكو",
+   "internalRank": 11,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ضيّق",
+     "meaningArEg": "ضيّق",
+     "glossEs": null,
+     "exampleEs": "Este pasillo es muy estrecho.",
+     "exampleAr": "الممر ده ضيّق جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este pasillo es muy estrecho.",
+     "ar": "الممر ده ضيّق جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "caliente",
+   "normalized": "caliente",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/kaliˈente/",
+   "pronunciationHintAr": "كاليينتي",
+   "internalRank": 12,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ساخن",
+     "meaningArEg": "سخن",
+     "glossEs": null,
+     "exampleEs": "La sopa está muy caliente.",
+     "exampleAr": "الشوربة سخنة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La sopa está muy caliente.",
+     "ar": "الشوربة سخنة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "frío",
+   "normalized": "frío",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/fɾˈio/",
+   "pronunciationHintAr": "فريو",
+   "internalRank": 13,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بارد",
+     "meaningArEg": "بارد",
+     "glossEs": null,
+     "exampleEs": "El agua está muy fría.",
+     "exampleAr": "المية باردة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El agua está muy fría.",
+     "ar": "المية باردة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "duro",
+   "normalized": "duro",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/dˈuɾo/",
+   "pronunciationHintAr": "دورو",
+   "internalRank": 14,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صلب أو قاسٍ",
+     "meaningArEg": "قاسٍ",
+     "glossEs": null,
+     "exampleEs": "Este pan está muy duro.",
+     "exampleAr": "العيش ده قاسٍ.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este pan está muy duro.",
+     "ar": "العيش ده قاسٍ.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "blando",
+   "normalized": "blando",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/blˈando/",
+   "pronunciationHintAr": "بلاندو",
+   "internalRank": 15,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طري",
+     "meaningArEg": "طري",
+     "glossEs": null,
+     "exampleEs": "El pan está blando y fresco.",
+     "exampleAr": "العيش طري وطازج.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El pan está blando y fresco.",
+     "ar": "العيش طري وطازج.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "limpio",
+   "normalized": "limpio",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/limpˈio/",
+   "pronunciationHintAr": "ليمبيو",
+   "internalRank": 16,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نظيف",
+     "meaningArEg": "نظيف",
+     "glossEs": null,
+     "exampleEs": "El hotel está muy limpio.",
+     "exampleAr": "الفندق نظيف جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El hotel está muy limpio.",
+     "ar": "الفندق نظيف جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "sucio",
+   "normalized": "sucio",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/suθˈio/",
+   "pronunciationHintAr": "سوثيو",
+   "internalRank": 17,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "متّسخ",
+     "meaningArEg": "وسخ",
+     "glossEs": null,
+     "exampleEs": "Este vaso está sucio.",
+     "exampleAr": "الكوباية دي وسخة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este vaso está sucio.",
+     "ar": "الكوباية دي وسخة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "seco",
+   "normalized": "seco",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/sˈeko/",
+   "pronunciationHintAr": "سيكو",
+   "internalRank": 18,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جاف",
+     "meaningArEg": "نشف",
+     "glossEs": null,
+     "exampleEs": "El clima está muy seco aquí.",
+     "exampleAr": "الجوا ناشف هنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El clima está muy seco aquí.",
+     "ar": "الجوا ناشف هنا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "mojado",
+   "normalized": "mojado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/moxˈado/",
+   "pronunciationHintAr": "موخادو",
+   "internalRank": 19,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مبلول",
+     "meaningArEg": "مبلول",
+     "glossEs": null,
+     "exampleEs": "El suelo está mojado.",
+     "exampleAr": "الأرضية مبلولة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El suelo está mojado.",
+     "ar": "الأرضية مبلولة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "lleno",
+   "normalized": "lleno",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/ʎlˈeno/",
+   "pronunciationHintAr": "ليلينو",
+   "internalRank": 20,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ممتلئ",
+     "meaningArEg": "مليان",
+     "glossEs": null,
+     "exampleEs": "El tren está lleno hoy.",
+     "exampleAr": "القطار مليان النهارده.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tren está lleno hoy.",
+     "ar": "القطار مليان النهارده.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "vacío",
+   "normalized": "vacío",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/baθˈio/",
+   "pronunciationHintAr": "باثيو",
+   "internalRank": 21,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فارغ",
+     "meaningArEg": "فاضي",
+     "glossEs": null,
+     "exampleEs": "La sala está vacía.",
+     "exampleAr": "القاعة فاضية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La sala está vacía.",
+     "ar": "القاعة فاضية.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "cerrado",
+   "normalized": "cerrado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/θeɾɾˈado/",
+   "pronunciationHintAr": "ثيررادو",
+   "internalRank": 22,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مغلق",
+     "meaningArEg": "مقفول",
+     "glossEs": null,
+     "exampleEs": "La tienda está cerrada los domingos.",
+     "exampleAr": "المحل مقفول أيام الأحد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La tienda está cerrada los domingos.",
+     "ar": "المحل مقفول أيام الأحد.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "fácil",
+   "normalized": "fácil",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/fˈaθil/",
+   "pronunciationHintAr": "فاثيل",
+   "internalRank": 23,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سهل",
+     "meaningArEg": "سهل",
+     "glossEs": null,
+     "exampleEs": "Este examen es muy fácil.",
+     "exampleAr": "الامتحان ده سهل جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este examen es muy fácil.",
+     "ar": "الامتحان ده سهل جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "difícil",
+   "normalized": "difícil",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/difˈiθil/",
+   "pronunciationHintAr": "ديفيثيل",
+   "internalRank": 24,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صعب",
+     "meaningArEg": "صعب",
+     "glossEs": null,
+     "exampleEs": "La pronunciación es difícil.",
+     "exampleAr": "النطق صعب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La pronunciación es difícil.",
+     "ar": "النطق صعب.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "posible",
+   "normalized": "posible",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/posˈible/",
+   "pronunciationHintAr": "بوسيبلي",
+   "internalRank": 25,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ممكن",
+     "meaningArEg": "ممكن",
+     "glossEs": null,
+     "exampleEs": "Es posible llegar antes.",
+     "exampleAr": "ممكن نوصل بدري.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es posible llegar antes.",
+     "ar": "ممكن نوصل بدري.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "imposible",
+   "normalized": "imposible",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/imposˈible/",
+   "pronunciationHintAr": "يمبوسيبلي",
+   "internalRank": 26,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مستحيل",
+     "meaningArEg": "مستحيل",
+     "glossEs": null,
+     "exampleEs": "Es imposible terminar hoy.",
+     "exampleAr": "مستحيل نخلّص النهارده.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es imposible terminar hoy.",
+     "ar": "مستحيل نخلّص النهارده.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "necesario",
+   "normalized": "necesario",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/neθesaɾˈio/",
+   "pronunciationHintAr": "نيثيساريو",
+   "internalRank": 27,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ضروري",
+     "meaningArEg": "لازم",
+     "glossEs": null,
+     "exampleEs": "Es necesario traer el pasaporte.",
+     "exampleAr": "لازم تجيب الباسبور.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es necesario traer el pasaporte.",
+     "ar": "لازم تجيب الباسبور.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "importante",
+   "normalized": "importante",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/impoɾtˈante/",
+   "pronunciationHintAr": "يمبورتانتي",
+   "internalRank": 28,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مهم",
+     "meaningArEg": "مهم",
+     "glossEs": null,
+     "exampleEs": "La información es importante.",
+     "exampleAr": "المعلومة مهمة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La información es importante.",
+     "ar": "المعلومة مهمة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "interesante",
+   "normalized": "interesante",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/inteɾesˈante/",
+   "pronunciationHintAr": "ينتيريسانتي",
+   "internalRank": 29,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مثير للاهتمام",
+     "meaningArEg": "مثير",
+     "glossEs": null,
+     "exampleEs": "Este libro es muy interesante.",
+     "exampleAr": "الكتاب ده مثير جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este libro es muy interesante.",
+     "ar": "الكتاب ده مثير جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "aburrido",
+   "normalized": "aburrido",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/abuɾɾˈido/",
+   "pronunciationHintAr": "ابورريدو",
+   "internalRank": 30,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ممل",
+     "meaningArEg": "ممل",
+     "glossEs": null,
+     "exampleEs": "La película es muy aburrida.",
+     "exampleAr": "الفيلم ممل جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La película es muy aburrida.",
+     "ar": "الفيلم ممل جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "divertido",
+   "normalized": "divertido",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/dibeɾtˈido/",
+   "pronunciationHintAr": "ديبيرتيدو",
+   "internalRank": 31,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ممتع",
+     "meaningArEg": "ممتع",
+     "glossEs": null,
+     "exampleEs": "El juego es muy divertido.",
+     "exampleAr": "اللعبة ممتعة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El juego es muy divertido.",
+     "ar": "اللعبة ممتعة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "triste",
+   "normalized": "triste",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tɾˈiste/",
+   "pronunciationHintAr": "تريستي",
+   "internalRank": 32,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حزين",
+     "meaningArEg": "حزين",
+     "glossEs": null,
+     "exampleEs": "El final de la historia es triste.",
+     "exampleAr": "آخر القصة حزين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El final de la historia es triste.",
+     "ar": "آخر القصة حزين.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "alegre",
+   "normalized": "alegre",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/alˈegɾe/",
+   "pronunciationHintAr": "اليجري",
+   "internalRank": 33,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مسرور",
+     "meaningArEg": "فرحان",
+     "glossEs": null,
+     "exampleEs": "Hoy estoy muy alegre.",
+     "exampleAr": "النهارده فرحان جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hoy estoy muy alegre.",
+     "ar": "النهارده فرحان جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "contento",
+   "normalized": "contento",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kontˈento/",
+   "pronunciationHintAr": "كونتينتو",
+   "internalRank": 34,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "راضٍ أو مسرور",
+     "meaningArEg": "مبسوط",
+     "glossEs": null,
+     "exampleEs": "Estoy contento con el resultado.",
+     "exampleAr": "مبسوط بالنتيجة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estoy contento con el resultado.",
+     "ar": "مبسوط بالنتيجة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "cansado",
+   "normalized": "cansado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/kansˈado/",
+   "pronunciationHintAr": "كانسادو",
+   "internalRank": 35,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "متعب",
+     "meaningArEg": "تعبان",
+     "glossEs": null,
+     "exampleEs": "Estoy muy cansado del viaje.",
+     "exampleAr": "تعبان جدًا من السفر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estoy muy cansado del viaje.",
+     "ar": "تعبان جدًا من السفر.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ocupado",
+   "normalized": "ocupado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/okupˈado/",
+   "pronunciationHintAr": "وكوبادو",
+   "internalRank": 36,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مشغول",
+     "meaningArEg": "مشغول",
+     "glossEs": null,
+     "exampleEs": "La línea está ocupada ahora.",
+     "exampleAr": "الخط مشغول دلوقتي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La línea está ocupada ahora.",
+     "ar": "الخط مشغول دلوقتي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "libre",
+   "normalized": "libre",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/lˈibɾe/",
+   "pronunciationHintAr": "ليبري",
+   "internalRank": 37,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حر أو مشغول بمعنى فاضٍ",
+     "meaningArEg": "فاضي",
+     "glossEs": null,
+     "exampleEs": "El asiento está libre.",
+     "exampleAr": "المقعد فاضي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El asiento está libre.",
+     "ar": "المقعد فاضي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "listo",
+   "normalized": "listo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/lˈisto/",
+   "pronunciationHintAr": "ليستو",
+   "internalRank": 38,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جاهز أو ذكي",
+     "meaningArEg": "جاهز",
+     "glossEs": null,
+     "exampleEs": "La comida ya está lista.",
+     "exampleAr": "الأكل جاهز دلوقتي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La comida ya está lista.",
+     "ar": "الأكل جاهز دلوقتي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "inteligente",
+   "normalized": "inteligente",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/intelixˈente/",
+   "pronunciationHintAr": "ينتيليخينتي",
+   "internalRank": 39,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ذكي",
+     "meaningArEg": "ذكي",
+     "glossEs": null,
+     "exampleEs": "Es una idea muy inteligente.",
+     "exampleAr": "دي فكرة ذكية جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es una idea muy inteligente.",
+     "ar": "دي فكرة ذكية جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "amable",
+   "normalized": "amable",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/amˈable/",
+   "pronunciationHintAr": "امابلي",
+   "internalRank": 40,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لطيف",
+     "meaningArEg": "محترم",
+     "glossEs": null,
+     "exampleEs": "El dependiente es muy amable.",
+     "exampleAr": "البائع محترم جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El dependiente es muy amable.",
+     "ar": "البائع محترم جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "simpático",
+   "normalized": "simpático",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/simpˈatiko/",
+   "pronunciationHintAr": "سيمباتيكو",
+   "internalRank": 41,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ودود",
+     "meaningArEg": "ودود",
+     "glossEs": null,
+     "exampleEs": "Mi vecino es muy simpático.",
+     "exampleAr": "جاري ودود جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mi vecino es muy simpático.",
+     "ar": "جاري ودود جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "grosero",
+   "normalized": "grosero",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/gɾosˈeɾo/",
+   "pronunciationHintAr": "جروسيرو",
+   "internalRank": 42,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وقح",
+     "meaningArEg": "وقح",
+     "glossEs": null,
+     "exampleEs": "No seas grosero con los demás.",
+     "exampleAr": "ما تبقاش وقح مع الناس.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No seas grosero con los demás.",
+     "ar": "ما تبقاش وقح مع الناس.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "tranquilo",
+   "normalized": "tranquilo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tɾankuˈilo/",
+   "pronunciationHintAr": "ترانكويلو",
+   "internalRank": 43,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هادئ",
+     "meaningArEg": "هادي",
+     "glossEs": null,
+     "exampleEs": "El barrio es muy tranquilo.",
+     "exampleAr": "الحي هادي جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El barrio es muy tranquilo.",
+     "ar": "الحي هادي جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ruidoso",
+   "normalized": "ruidoso",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ruidˈoso/",
+   "pronunciationHintAr": "رويدوسو",
+   "internalRank": 44,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صاخب",
+     "meaningArEg": "صاخب",
+     "glossEs": null,
+     "exampleEs": "Este restaurante es muy ruidoso.",
+     "exampleAr": "المطعم ده صاخب جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este restaurante es muy ruidoso.",
+     "ar": "المطعم ده صاخب جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "seguro",
+   "normalized": "seguro",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/segˈuɾo/",
+   "pronunciationHintAr": "سيجورو",
+   "internalRank": 45,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "آمن",
+     "meaningArEg": "آمن",
+     "glossEs": null,
+     "exampleEs": "Este barrio es muy seguro.",
+     "exampleAr": "الحي ده آمن جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este barrio es muy seguro.",
+     "ar": "الحي ده آمن جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "peligroso",
+   "normalized": "peligroso",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/peligɾˈoso/",
+   "pronunciationHintAr": "بيليجروسو",
+   "internalRank": 46,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خطير",
+     "meaningArEg": "خطير",
+     "glossEs": null,
+     "exampleEs": "Cruzar aquí es peligroso.",
+     "exampleAr": "العبور هنا خطير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cruzar aquí es peligroso.",
+     "ar": "العبور هنا خطير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "sano",
+   "normalized": "sano",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/sˈano/",
+   "pronunciationHintAr": "سانو",
+   "internalRank": 47,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صحي",
+     "meaningArEg": "صحي",
+     "glossEs": null,
+     "exampleEs": "Comer fruta es muy sano.",
+     "exampleAr": "أكل الفاكهة صحي جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Comer fruta es muy sano.",
+     "ar": "أكل الفاكهة صحي جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "enfermo",
+   "normalized": "enfermo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/enfˈeɾmo/",
+   "pronunciationHintAr": "ينفيرمو",
+   "internalRank": 48,
+   "tags": [
+    "domain:health",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مريض",
+     "meaningArEg": "مريض",
+     "glossEs": null,
+     "exampleEs": "El gato está enfermo.",
+     "exampleAr": "القطة مريضة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El gato está enfermo.",
+     "ar": "القطة مريضة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "rico",
+   "normalized": "rico",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/rˈiko/",
+   "pronunciationHintAr": "ريكو",
+   "internalRank": 49,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غني أو لذيذ",
+     "meaningArEg": "غني",
+     "glossEs": null,
+     "exampleEs": "El arroz con leche está muy rico.",
+     "exampleAr": "الأرز بالحليب طعمه حلو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El arroz con leche está muy rico.",
+     "ar": "الأرز بالحليب طعمه حلو.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "pobre",
+   "normalized": "pobre",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pˈobɾe/",
+   "pronunciationHintAr": "بوبري",
+   "internalRank": 50,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فقير",
+     "meaningArEg": "فقير",
+     "glossEs": null,
+     "exampleEs": "La familia es pobre pero alegre.",
+     "exampleAr": "العيلة فقيرة بس فرحانة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La familia es pobre pero alegre.",
+     "ar": "العيلة فقيرة بس فرحانة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "joven",
+   "normalized": "joven",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/xˈoben/",
+   "pronunciationHintAr": "خوبين",
+   "internalRank": 51,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شاب",
+     "meaningArEg": "صغير",
+     "glossEs": null,
+     "exampleEs": "Este profesor es muy joven.",
+     "exampleAr": "الأستاذ ده صغير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este profesor es muy joven.",
+     "ar": "الأستاذ ده صغير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "viejo",
+   "normalized": "viejo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": "/biˈexo/",
+   "pronunciationHintAr": "بييخو",
+   "internalRank": 52,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عجوز أو قديم",
+     "meaningArEg": "قديم",
+     "glossEs": null,
+     "exampleEs": "El coche de mi padre es viejo.",
+     "exampleAr": "عربية أبويا قديمة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El coche de mi padre es viejo.",
+     "ar": "عربية أبويا قديمة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "moderno",
+   "normalized": "moderno",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/modˈeɾno/",
+   "pronunciationHintAr": "موديرنو",
+   "internalRank": 53,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حديث",
+     "meaningArEg": "مودرن",
+     "glossEs": null,
+     "exampleEs": "El edificio es muy moderno.",
+     "exampleAr": "العمارة مودرن جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El edificio es muy moderno.",
+     "ar": "العمارة مودرن جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "antiguo",
+   "normalized": "antiguo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/antigˈuo/",
+   "pronunciationHintAr": "انتيجوو",
+   "internalRank": 54,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قديم أو عتيق",
+     "meaningArEg": "عتيق",
+     "glossEs": null,
+     "exampleEs": "Este reloj es muy antiguo.",
+     "exampleAr": "الساعة دي قديمة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este reloj es muy antiguo.",
+     "ar": "الساعة دي قديمة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "público",
+   "normalized": "público",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/pˈubliko/",
+   "pronunciationHintAr": "بوبليكو",
+   "internalRank": 55,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عام",
+     "meaningArEg": "عام",
+     "glossEs": null,
+     "exampleEs": "El transporte público es eficiente.",
+     "exampleAr": "المواصلات العامة فعّالة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El transporte público es eficiente.",
+     "ar": "المواصلات العامة فعّالة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "privado",
+   "normalized": "privado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/pɾibˈado/",
+   "pronunciationHintAr": "بريبادو",
+   "internalRank": 56,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خاص",
+     "meaningArEg": "خاص",
+     "glossEs": null,
+     "exampleEs": "El jardín es privado.",
+     "exampleAr": "الحديقة خاصة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El jardín es privado.",
+     "ar": "الحديقة خاصة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "nacional",
+   "normalized": "nacional",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/naθionˈal/",
+   "pronunciationHintAr": "ناثيونال",
+   "internalRank": 57,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وطني",
+     "meaningArEg": "وطني",
+     "glossEs": null,
+     "exampleEs": "La cocina nacional es famosa.",
+     "exampleAr": "الأكل الوطني مشهور.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La cocina nacional es famosa.",
+     "ar": "الأكل الوطني مشهور.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "extranjero",
+   "normalized": "extranjero",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ekstɾanxˈeɾo/",
+   "pronunciationHintAr": "يكسترانخيرو",
+   "internalRank": 58,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أجنبي",
+     "meaningArEg": "أجنبي",
+     "glossEs": null,
+     "exampleEs": "Soy estudiante extranjero.",
+     "exampleAr": "أنا طالب أجنبي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Soy estudiante extranjero.",
+     "ar": "أنا طالب أجنبي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "local",
+   "normalized": "local",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/lokˈal/",
+   "pronunciationHintAr": "لوكال",
+   "internalRank": 59,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "محلي",
+     "meaningArEg": "محلي",
+     "glossEs": null,
+     "exampleEs": "Me gusta la comida local.",
+     "exampleAr": "الأكل المحلي عاجبني.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me gusta la comida local.",
+     "ar": "الأكل المحلي عاجبني.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "igual",
+   "normalized": "igual",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/iguˈal/",
+   "pronunciationHintAr": "يجوال",
+   "internalRank": 60,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "متساوٍ أو متشابه",
+     "meaningArEg": "زي بعض",
+     "glossEs": null,
+     "exampleEs": "Los dos precios son iguales.",
+     "exampleAr": "السعرَين زي بعض.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Los dos precios son iguales.",
+     "ar": "السعرَين زي بعض.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "diferente",
+   "normalized": "diferente",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/difeɾˈente/",
+   "pronunciationHintAr": "ديفيرينتي",
+   "internalRank": 61,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مختلف",
+     "meaningArEg": "مختلف",
+     "glossEs": null,
+     "exampleEs": "Mi opinión es diferente.",
+     "exampleAr": "رأيي مختلف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mi opinión es diferente.",
+     "ar": "رأيي مختلف.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "similar",
+   "normalized": "similar",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/similˈaɾ/",
+   "pronunciationHintAr": "سيميلار",
+   "internalRank": 62,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مشابه",
+     "meaningArEg": "مشابه",
+     "glossEs": null,
+     "exampleEs": "Este caso es similar al tuyo.",
+     "exampleAr": "الحالة دي مشابهة لحالتك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este caso es similar al tuyo.",
+     "ar": "الحالة دي مشابهة لحالتك.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "común",
+   "normalized": "común",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/komˈun/",
+   "pronunciationHintAr": "كومون",
+   "internalRank": 63,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شائع",
+     "meaningArEg": "شائع",
+     "glossEs": null,
+     "exampleEs": "Este error es muy común.",
+     "exampleAr": "الغلطة دي شائعة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este error es muy común.",
+     "ar": "الغلطة دي شائعة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "raro",
+   "normalized": "raro",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/rˈaɾo/",
+   "pronunciationHintAr": "رارو",
+   "internalRank": 64,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غريب",
+     "meaningArEg": "غريب",
+     "glossEs": null,
+     "exampleEs": "Hay un ruido muy raro.",
+     "exampleAr": "فيه صوت غريب جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay un ruido muy raro.",
+     "ar": "فيه صوت غريب جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "extraño",
+   "normalized": "extraño",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ekstɾˈaɲo/",
+   "pronunciationHintAr": "يكسترانيو",
+   "internalRank": 65,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غريب أو مريب",
+     "meaningArEg": "غريب",
+     "glossEs": null,
+     "exampleEs": "Es una sensación muy extraña.",
+     "exampleAr": "دي إحساس غريب جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es una sensación muy extraña.",
+     "ar": "دي إحساس غريب جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "normal",
+   "normalized": "normal",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/noɾmˈal/",
+   "pronunciationHintAr": "نورمال",
+   "internalRank": 66,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طبيعي",
+     "meaningArEg": "عادي",
+     "glossEs": null,
+     "exampleEs": "Es normal estar nervioso.",
+     "exampleAr": "طبيعي تبقى متوتر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es normal estar nervioso.",
+     "ar": "طبيعي تبقى متوتر.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "principal",
+   "normalized": "principal",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pɾinθipˈal/",
+   "pronunciationHintAr": "برينثيبال",
+   "internalRank": 67,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رئيسي",
+     "meaningArEg": "رئيسي",
+     "glossEs": null,
+     "exampleEs": "La calle principal está cerrada.",
+     "exampleAr": "الشارع الرئيسي مقفول.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La calle principal está cerrada.",
+     "ar": "الشارع الرئيسي مقفول.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "final",
+   "normalized": "final",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/finˈal/",
+   "pronunciationHintAr": "فينال",
+   "internalRank": 68,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نهائي",
+     "meaningArEg": "نهائي",
+     "glossEs": null,
+     "exampleEs": "La decisión final es del jefe.",
+     "exampleAr": "القرار النهائي للمدير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La decisión final es del jefe.",
+     "ar": "القرار النهائي للمدير.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "completo",
+   "normalized": "completo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/komplˈeto/",
+   "pronunciationHintAr": "كومبليتو",
+   "internalRank": 69,
+   "tags": [
+    "domain:work",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "كامل",
+     "meaningArEg": "كامل",
+     "glossEs": null,
+     "exampleEs": "El informe está completo.",
+     "exampleAr": "التقرير كامل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El informe está completo.",
+     "ar": "التقرير كامل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "excelente",
+   "normalized": "excelente",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/eksθelˈente/",
+   "pronunciationHintAr": "يكسثيلينتي",
+   "internalRank": 70,
+   "tags": [
+    "domain:callcenter",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ممتاز",
+     "meaningArEg": "ممتاز",
+     "glossEs": null,
+     "exampleEs": "El servicio fue excelente.",
+     "exampleAr": "الخدمة كانت ممتازة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El servicio fue excelente.",
+     "ar": "الخدمة كانت ممتازة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "perfecto",
+   "normalized": "perfecto",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/peɾfˈekto/",
+   "pronunciationHintAr": "بيرفيكتو",
+   "internalRank": 71,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مثالي",
+     "meaningArEg": "مثالي",
+     "glossEs": null,
+     "exampleEs": "Tu español es perfecto.",
+     "exampleAr": "إسبانيتك مثالية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tu español es perfecto.",
+     "ar": "إسبانيتك مثالية.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "terrible",
+   "normalized": "terrible",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/teɾɾˈible/",
+   "pronunciationHintAr": "تيرريبلي",
+   "internalRank": 72,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فظيع",
+     "meaningArEg": "فظيع",
+     "glossEs": null,
+     "exampleEs": "El tráfico es terrible hoy.",
+     "exampleAr": "الزحمة فظيعة النهارده.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tráfico es terrible hoy.",
+     "ar": "الزحمة فظيعة النهارده.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "maravilloso",
+   "normalized": "maravilloso",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/maɾabiʎlˈoso/",
+   "pronunciationHintAr": "مارابيليلوسو",
+   "internalRank": 73,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رائع",
+     "meaningArEg": "رائع",
+     "glossEs": null,
+     "exampleEs": "La vista es maravillosa.",
+     "exampleAr": "المنظر رائع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La vista es maravillosa.",
+     "ar": "المنظر رائع.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "horrible",
+   "normalized": "horrible",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/oɾɾˈible/",
+   "pronunciationHintAr": "ورريبلي",
+   "internalRank": 74,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مروع",
+     "meaningArEg": "مروع",
+     "glossEs": null,
+     "exampleEs": "La habitación estaba horrible.",
+     "exampleAr": "الأوضة كانت مروعة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La habitación estaba horrible.",
+     "ar": "الأوضة كانت مروعة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "delicioso",
+   "normalized": "delicioso",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/deliθiˈoso/",
+   "pronunciationHintAr": "ديليثيوسو",
+   "internalRank": 75,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لذيذ",
+     "meaningArEg": "لذيذ",
+     "glossEs": null,
+     "exampleEs": "Este postre es delicioso.",
+     "exampleAr": "الحلوة دي لذيذة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este postre es delicioso.",
+     "ar": "الحلوة دي لذيذة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "fresco",
+   "normalized": "fresco",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/fɾˈesko/",
+   "pronunciationHintAr": "فريسكو",
+   "internalRank": 76,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طازج أو منعش",
+     "meaningArEg": "طازج",
+     "glossEs": null,
+     "exampleEs": "El pan está muy fresco.",
+     "exampleAr": "العيش طازج جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El pan está muy fresco.",
+     "ar": "العيش طازج جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "típico",
+   "normalized": "típico",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/tˈipiko/",
+   "pronunciationHintAr": "تيبيكو",
+   "internalRank": 77,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نموذجي أو مميز للمنطقة",
+     "meaningArEg": "تقليدي",
+     "glossEs": null,
+     "exampleEs": "Este plato es típico de España.",
+     "exampleAr": "الطبق ده تقليدي في إسبانيا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este plato es típico de España.",
+     "ar": "الطبق ده تقليدي في إسبانيا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "famoso",
+   "normalized": "famoso",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/famˈoso/",
+   "pronunciationHintAr": "فاموسو",
+   "internalRank": 78,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مشهور",
+     "meaningArEg": "مشهور",
+     "glossEs": null,
+     "exampleEs": "El museo es muy famoso.",
+     "exampleAr": "المتحف مشهور جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El museo es muy famoso.",
+     "ar": "المتحف مشهور جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "útil",
+   "normalized": "útil",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈutil/",
+   "pronunciationHintAr": "وتيل",
+   "internalRank": 79,
+   "tags": [
+    "domain:study",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مفيد",
+     "meaningArEg": "مفيد",
+     "glossEs": null,
+     "exampleEs": "Este diccionario es muy útil.",
+     "exampleAr": "القاموس ده مفيد جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este diccionario es muy útil.",
+     "ar": "القاموس ده مفيد جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "cómodo",
+   "normalized": "cómodo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/kˈomodo/",
+   "pronunciationHintAr": "كومودو",
+   "internalRank": 80,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مريح",
+     "meaningArEg": "مريح",
+     "glossEs": null,
+     "exampleEs": "Los zapatos son muy cómodos.",
+     "exampleAr": "الجوا مريحة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Los zapatos son muy cómodos.",
+     "ar": "الجوا مريحة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "incómodo",
+   "normalized": "incómodo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/inkˈomodo/",
+   "pronunciationHintAr": "ينكومودو",
+   "internalRank": 81,
+   "tags": [
+    "domain:transport",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غير مريح",
+     "meaningArEg": "مش مريح",
+     "glossEs": null,
+     "exampleEs": "El asiento es muy incómodo.",
+     "exampleAr": "المقعد مش مريح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El asiento es muy incómodo.",
+     "ar": "المقعد مش مريح.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "elegante",
+   "normalized": "elegante",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/elegˈante/",
+   "pronunciationHintAr": "يليجانتي",
+   "internalRank": 82,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أنيق",
+     "meaningArEg": "أنيق",
+     "glossEs": null,
+     "exampleEs": "Su estilo es muy elegante.",
+     "exampleAr": "أسلوبها أنيق جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su estilo es muy elegante.",
+     "ar": "أسلوبها أنيق جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "débil",
+   "normalized": "débil",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/dˈebil/",
+   "pronunciationHintAr": "ديبيل",
+   "internalRank": 83,
+   "tags": [
+    "domain:services",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ضعيف",
+     "meaningArEg": "ضعيف",
+     "glossEs": null,
+     "exampleEs": "La señal es muy débil aquí.",
+     "exampleAr": "الإشارة ضعيفة هنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La señal es muy débil aquí.",
+     "ar": "الإشارة ضعيفة هنا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "fuerte",
+   "normalized": "fuerte",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/fuˈeɾte/",
+   "pronunciationHintAr": "فويرتي",
+   "internalRank": 84,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قوي",
+     "meaningArEg": "قوي",
+     "glossEs": null,
+     "exampleEs": "El café es demasiado fuerte.",
+     "exampleAr": "القهوة قوية أوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El café es demasiado fuerte.",
+     "ar": "القهوة قوية أوي.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "oscuro",
+   "normalized": "oscuro",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/oskˈuɾo/",
+   "pronunciationHintAr": "وسكورو",
+   "internalRank": 85,
+   "tags": [
+    "domain:housing",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مظلم",
+     "meaningArEg": "مظلم",
+     "glossEs": null,
+     "exampleEs": "La habitación está muy oscura.",
+     "exampleAr": "الأوضة ضلمة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La habitación está muy oscura.",
+     "ar": "الأوضة ضلمة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "guapo",
+   "normalized": "guapo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/guˈapo/",
+   "pronunciationHintAr": "جوابو",
+   "internalRank": 86,
+   "tags": [
+    "domain:social",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وسيم",
+     "meaningArEg": "جميل",
+     "glossEs": null,
+     "exampleEs": "Su hermano es muy guapo.",
+     "exampleAr": "أخوها جميل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su hermano es muy guapo.",
+     "ar": "أخوها جميل.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "húmedo",
+   "normalized": "húmedo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/ˈumedo/",
+   "pronunciationHintAr": "وميدو",
+   "internalRank": 87,
+   "tags": [
+    "domain:daily",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رطب",
+     "meaningArEg": "رطب",
+     "glossEs": null,
+     "exampleEs": "El clima está húmedo en otoño.",
+     "exampleAr": "الجوا رطب في الخريف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El clima está húmedo en otoño.",
+     "ar": "الجوا رطب في الخريف.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "pesado",
+   "normalized": "pesado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/pesˈado/",
+   "pronunciationHintAr": "بيسادو",
+   "internalRank": 88,
+   "tags": [
+    "domain:travel",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ثقيل",
+     "meaningArEg": "تقيل",
+     "glossEs": null,
+     "exampleEs": "La maleta es muy pesada.",
+     "exampleAr": "الشنطة تقيلة جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La maleta es muy pesada.",
+     "ar": "الشنطة تقيلة جدًا.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "ligero",
+   "normalized": "ligero",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/lixˈeɾo/",
+   "pronunciationHintAr": "ليخيرو",
+   "internalRank": 89,
+   "tags": [
+    "domain:shopping",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خفيف",
+     "meaningArEg": "خفيف",
+     "glossEs": null,
+     "exampleEs": "Este abrigo es muy ligero.",
+     "exampleAr": "الجاكت ده خفيف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este abrigo es muy ligero.",
+     "ar": "الجاكت ده خفيف.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "amargo",
+   "normalized": "amargo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/amˈaɾgo/",
+   "pronunciationHintAr": "امارجو",
+   "internalRank": 90,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مر",
+     "meaningArEg": "مر",
+     "glossEs": null,
+     "exampleEs": "El café está muy amargo.",
+     "exampleAr": "القهوة مرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El café está muy amargo.",
+     "ar": "القهوة مرة.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "dulce",
+   "normalized": "dulce",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "A2",
+   "register": "neutral",
+   "ipa": "/dˈulθe/",
+   "pronunciationHintAr": "دولثي",
+   "internalRank": 91,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حلو",
+     "meaningArEg": "حلو",
+     "glossEs": null,
+     "exampleEs": "Me gusta el chocolate dulce.",
+     "exampleAr": "الشوكولاتة الحلوة عاجباني.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me gusta el chocolate dulce.",
+     "ar": "الشوكولاتة الحلوة عاجباني.",
+     "arEg": null
+    }
+   ]
+  },
+  {
+   "headword": "salado",
+   "normalized": "salado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": "mf",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": "/salˈado/",
+   "pronunciationHintAr": "سالادو",
+   "internalRank": 92,
+   "tags": [
+    "domain:food",
+    "lexicon-batch:b1-core"
+   ],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مالح",
+     "meaningArEg": "مالح",
+     "glossEs": null,
+     "exampleEs": "Este plato está muy salado.",
+     "exampleAr": "الطبق ده مالح أوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este plato está muy salado.",
+     "ar": "الطبق ده مالح أوي.",
+     "arEg": null
+    }
+   ]
+  }
+ ]
+}

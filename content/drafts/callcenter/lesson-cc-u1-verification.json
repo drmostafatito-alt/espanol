@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u1-verification",
+    "titleAr": "التحقق من الهوية بلا كشف بيانات",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u1-opening-verification",
+    "objectiveAr": "أن يطلب المتعلم بيانات تحقّق جزئية (رقم الطلب، بريد مسجَّل، أربعة أرقام أخيرة) بلا طلب كلمة مرور كاملة، وأن يتعامل مع بيانات ناقصة بلا افتراض.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "verificar",
+      "identidad",
+      "anotar"
+    ],
+    "reviewVocabulary": [
+      "pedido",
+      "cliente",
+      "importe"
+    ],
+    "targetStructures": [
+      "Por seguridad, necesito verificar…",
+      "¿Podría confirmarme…?",
+      "No necesito su contraseña."
+    ],
+    "grammarTopics": [
+      "preguntas-de-verificacion",
+      "privacidad-en-mcaciones"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تتلقى مكالمة تطلب تفاصيل طلب، وترغب في التحقق أولًا.",
+        "settingAr": "مركز اتصال، مكالمة عن شكوى (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Buenas tardes. Quiero saber dónde está mi pedido 48219.",
+            "ar": "مساء الخير. أريد معرفة أين طلبي 48219.",
+            "arEg": "مساء الخير. عايز أعرف الأوردر 48219 فين.",
+            "audioKey": "pending/cc-u1-l2-cliente-1"
+          },
+          {
+            "es": "Por seguridad, necesito verificar su identidad. ¿Podría confirmarme su nombre completo, por favor?",
+            "ar": "للأمان، أحتاج التحقق من هويتك. هل يمكنك تأكيد اسمك الكامل من فضلك؟",
+            "arEg": "للأمان، محتاج أتأكد من هويتك. ممكن تأكد لي اسمك الكامل؟",
+            "audioKey": "pending/cc-u1-l2-agente-1"
+          },
+          {
+            "es": "Claro. Lucía Ferrer.",
+            "ar": "بالتأكيد. لوسيا فيرير.",
+            "arEg": "أكيد. لوسيا فيرير.",
+            "audioKey": "pending/cc-u1-l2-cliente-2"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 4,
+      "requiredExerciseTypes": [
+        "word_choice",
+        "choose_reply"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u1_6_verify",
+        "type": "word_choice",
+        "instructionAr": "أي طلب تحقّق مقبول ومهني؟",
+        "options": [
+          {
+            "id": "cc_u1_6_a",
+            "text": "¿Podría confirmarme su nombre completo y los cuatro últimos dígitos del pedido?",
+            "isCorrect": true,
+            "textAr": "هل يمكنك تأكيد اسمك الكامل وآخر أربعة أرقام من الطلب؟"
+          },
+          {
+            "id": "cc_u1_6_b",
+            "text": "Deme su contraseña para ver el pedido.",
+            "isCorrect": false,
+            "textAr": "أعطني كلمة المرور لرؤية الطلب.",
+            "distractorRationaleAr": "طلب كلمة المرور ممنوع مهنيًا، ويتيح انتحال الهوية."
+          },
+          {
+            "id": "cc_u1_6_c",
+            "text": "¿Quién es usted?",
+            "isCorrect": false,
+            "textAr": "من أنت؟",
+            "distractorRationaleAr": "حادّة، ولا تطلب بيانات محددة قابلة للتحقق."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_6_a"
+          ]
+        },
+        "explanationAr": "التحقق المهني يطلب بيانات جزئية محددة وبصيغة مهذبة. لا تُطلب كلمة المرور أبدًا، ولا يُفترض الاسم من الصوت.",
+        "errorFeedback": {
+          "cc_u1_6_b": "طلب كلمة المرور مخالفة صريحة للأمان.",
+          "cc_u1_6_c": "حدّد البيانات المطلوبة بصيغة لبقة."
+        },
+        "targetVocab": [
+          "verificar",
+          "identidad"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_7_privacy",
+        "type": "review_common_errors",
+        "instructionAr": "أي عبارة تشرح للعميل لماذا لا تحتاج كلمة المرور؟",
+        "options": [
+          {
+            "id": "cc_u1_7_a",
+            "text": "No necesito su contraseña; solo confirmar dos datos de su cuenta.",
+            "isCorrect": true,
+            "textAr": "لا أحتاج كلمة مرورك؛ فقط تأكيد بياناتين من حسابك."
+          },
+          {
+            "id": "cc_u1_7_b",
+            "text": "Dígame la contraseña, es más rápido.",
+            "isCorrect": false,
+            "textAr": "أعطني كلمة المرور، أسرع.",
+            "distractorRationaleAr": "أسرع نعم، لكنها ممنوعة وتُعرّض العميل للخطر."
+          },
+          {
+            "id": "cc_u1_7_c",
+            "text": "Su contraseña no es importante.",
+            "isCorrect": false,
+            "textAr": "كلمة مرورك غير مهمة.",
+            "distractorRationaleAr": "خطأ مفهومي: هي مهمة جدًا، ولهذا لا تُطلب على الهاتف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u1_7_a"
+          ]
+        },
+        "explanationAr": "الصياغة الصحيحة تطمئن العميل وتحدد البديل الآمن: تأكيد بيانات جزئية بدل كلمة المرور.",
+        "errorFeedback": {
+          "cc_u1_7_b": "الأمان أهم من السرعة.",
+          "cc_u1_7_c": "قل إنها مهمة ولذلك لا نطلبها."
+        },
+        "targetVocab": [
+          "identidad"
+        ],
+        "skills": [
+          "reading",
+          "speaking"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_8_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل صيغة الطلب المهذب للتأكيد.",
+        "stemEs": "¿Podría ____ su nombre completo, por favor?",
+        "stemAr": "هل يمكنك تأكيد اسمك الكامل من فضلك؟",
+        "answerKey": {
+          "accepted": [
+            "confirmarme",
+            "confirmar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "condicional + مصدر: ¿Podría confirmarme…? و«confirmar» وحدها مقبولة بلا ضمير المفعول.",
+        "errorFeedback": {
+          "confirma": "بعد ¿Podría يأتي المصدر.",
+          "confirmo": "المطلوب من العميل التأكيد لا من الموظف."
+        },
+        "targetVocab": [
+          "verificar"
+        ],
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "cc_u1_9_note",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "سأسجّل رقم تواصلك وأتابع طلبك.",
+        "stemEs": "",
+        "answerKey": {
+          "accepted": [
+            "Voy a anotar su número de contacto y gestionar su pedido.",
+            "Voy a anotar su número de contacto y voy a gestionar su pedido.",
+            "Anotaré su número de contacto y gestionaré su pedido."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "المستقبل القريب «voy a + مصدر» أكثر شيوعًا في المكالمات من المستقبل البسيط، وكلاهما صحيح.",
+        "errorFeedback": {
+          "Voy a anotar su número y gestiono su pedido.": "وحّد الزمن: voy a anotar… y gestionar.",
+          "Voy anotar su número.": "ناقص «a»: voy a anotar."
+        },
+        "targetVocab": [
+          "anotar",
+          "gestionar"
+        ],
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — إعداد أصلي بمساعدة نموذج، بلا مراجعة بشرية بعد"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر 2/4. يحتاج مراجعة بشرية للتأكد من مطابقة إجراءات التحقق لسياسة شركة حقيقية (المثال تعليمي عام). كل المقاطع الصوتية pending ولم يُنتج أي ملف. بيانات العملاء وهمية."
+    }
+  }
+}

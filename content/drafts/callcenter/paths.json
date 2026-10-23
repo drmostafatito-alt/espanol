@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "callcenter",
+      "kind": "path",
+      "titleAr": "مسار الكول سنتر",
+      "levelCode": "B1",
+      "category": "callcenter",
+      "objectiveAr": "تدريب مهني على مكالمات خدمة العملاء بالإسبانية بسيناريوهات وبيانات وهمية، مع وعي صريح بحدود التدريب.",
+      "units": [
+        {
+          "slug": "cc-u1-opening-verification",
+          "levelCode": "B1",
+          "titleAr": "الافتتاح والتحقق من الهوية",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "cc-u1-opening",
+            "cc-u1-verification",
+            "cc-u1-hold-transfer",
+            "cc-u1-roleplay"
+          ],
+          "vocabularyBundles": [
+            "cc-shared"
+          ]
+        }
+      ]
+    }
+  ]
+}
