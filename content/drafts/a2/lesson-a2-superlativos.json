@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-superlativos",
+    "unitSlug": "a2-u4-comparisons",
+    "levelCode": "A2",
+    "titleAr": "صيغ التفضيل المطلق والنسبي: El más... واللاحقة -ísimo",
+    "titleEs": "Los superlativos relativos y absolutos (-ísimo)",
+    "subtitleAr": "تركيب التفضيل النسبي (el más alto de) والمطلق بلاحقة التضخيم (-ísimo/a)",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصوغ المتعلم التفضيل النسبي: أداة التعريف + más/menos + صفة + de (el más alto de la clase).",
+        "أن يصوغ التفضيل المطلق بإضافة اللاحقة -ísimo/a مع التغييرات الإملائية الصوتية (altísimo, facilísimo).",
+        "أن يستخدم صفات الإعجاب والروعة: maravilloso, bonito, famoso, interesante."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التفضيل النسبي والتفضيل المطلق",
+          "explanationAr": "1. **التفضيل النسبي (Superlativo relativo)**: المقارنة مع مجموعة كاملة:\n- أداة التعريف + más/menos + صفة + **de** المجموعة:\n- Es **el edificio más alto de** la ciudad (هو المبنى الأكثر ارتفاعاً في المدينة).\n- Nota: نستخدم حرف الجر **de** لتحديد المجموعة وليس en.\n2. **التفضيل المطلق (Superlativo absoluto)**: التعبير عن الدرجة القصوى دون مقارنة بأحد:\n- إضافة **-ísimo / -ísima / -ísimos / -ísimas** لنهاية الصفة بعد حذف الحرف الصامت الأخير:\n- alto -> altísimo (عالٍ جداً / في غاية الارتفاع)\n- fácil -> facilísimo (سهل للغاية)\n- grande -> grandísimo (ضخم للغاية)"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام en بدلاً من de مع المجموعة في التفضيل النسبي (مثل قول *el más grande en el mundo* بتأثير اللغات الأخرى؛ الصواب في الإسبانية دائماً: el más grande del mundo).",
+        "نسيان علامة النبر (tilde) على اللاحقة -ísimo (الصواب: facilísimo, altísimo)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «ده أعلى مبنى في البلد / الامتحان كان سهل موووت». في الإسبانية: Es el edificio más alto de la ciudad / El examen fue facilísimo."
+        }
+      ],
+      "culturalNoteAr": "الإسبان يعشقون استخدام اللاحقة -ísimo في المحادثات الودية اليومية للتعبير عن الحماس والامتنان: «¡Muchísimas gracias!» أو «¡Buenísimo!»."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-superlativos-intro",
+        "type": "explanation",
+        "titleAr": "صيغ التفضيل والتضخيم",
+        "bodyAr": "المفردات والتراكيب المفتاحية:\n- **el/la más ... de**: الأكثر ... في (المجموعة)\n- **altísimo**: مرتفع للغاية\n- **facilísimo**: سهل للغاية\n- **bonito**: جميل / لطيف\n- **maravilloso**: رائع / مذهل\n- **famoso**: شهير / مشهور\n- **interesante**: ممتع / شيق",
+        "examples": [
+          {
+            "es": "Es la playa más bonita de España.",
+            "ar": "هو أجمل شاطئ في إسبانيا."
+          },
+          {
+            "es": "El viaje fue maravilloso y facilísimo.",
+            "ar": "كانت الرحلة رائعة وسهلة للغاية."
+          },
+          {
+            "es": "Este museo es famosísimo en todo el mundo.",
+            "ar": "هذا المتحف شهير للغاية في العالم بأسره."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "altísimo",
+      "facilísimo",
+      "bonito",
+      "maravilloso",
+      "famoso",
+      "interesante"
+    ],
+    "reviewVocabulary": [
+      "fuerte",
+      "rápido"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصوغ المتعلم التفضيل النسبي: أداة التعريف + más/menos + صفة + de (el más alto de la clase).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-sup-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الصحيح في التفضيل النسبي مع المجموعة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو حرف الجر الذي يربط صيغة التفضيل بالمجموعة؟",
+        "stemEs": "Es el monumento más famoso _____ la ciudad.",
+        "stemAr": "هو المعلم الأكثر شهرة ... المدينة.",
+        "options": [
+          {
+            "id": "ex-a2-sup-1_a",
+            "text": "de",
+            "textAr": "حرف الجر القياسي لتحديد المجموعة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sup-1_b",
+            "text": "en",
+            "textAr": "خطأ ترجمة حرفية من العربية",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الإسبانية نستخدم de لتحديد المجموعة في التفضيل وليس en."
+          },
+          {
+            "id": "ex-a2-sup-1_c",
+            "text": "por",
+            "textAr": "حرف جر للسبب أو المرور",
+            "isCorrect": false,
+            "distractorRationaleAr": "por لا تستخدم في صيغ التفضيل النسبي."
+          }
+        ],
+        "targetVocab": [
+          "famoso"
+        ],
+        "explanationAr": "في التفضيل النسبي نستخدم دائماً حرف الجر de: el más famoso de la ciudad.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sup-1_a"
+          ],
+          "selectedOptionId": "ex-a2-sup-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sup-1_b": "في الإسبانية نستخدم de لتحديد المجموعة في التفضيل وليس en.",
+          "ex-a2-sup-1_c": "por لا تستخدم في صيغ التفضيل النسبي."
+        }
+      },
+      {
+        "id": "ex-a2-sup-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أضف لاحقة التفضيل المطلق لصفة fácil",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صفة fácil بعد إضافة لاحقة التفضيل المطلق -ísimo",
+        "stemEs": "El examen de español fue _____ para los estudiantes.",
+        "stemAr": "امتحان الإسبانية كان سهلاً للغاية للطلاب.",
+        "targetVocab": [
+          "facilísimo"
+        ],
+        "explanationAr": "الصفة facilísimo تُشتق من fácil بإضافة -ísimo مع الحفاظ على النبرة الصوتية.",
+        "answerKey": {
+          "accepted": [
+            "facilísimo",
+            "facilisimo"
+          ],
+          "acceptableAnswers": [
+            "facilísimo",
+            "facilisimo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-sup-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الصفة الدالة على الروعة والإبهار",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تصف منظراً طبيعياً خلاباً يبهر العيون؟",
+        "stemEs": "Las vistas desde la montaña son _____.",
+        "stemAr": "المناظر من الجبل ... للغاية.",
+        "options": [
+          {
+            "id": "ex-a2-sup-3_a",
+            "text": "maravillosas",
+            "textAr": "رائعة ومذهلة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sup-3_b",
+            "text": "altísimo",
+            "textAr": "مذكر مفرد ولا يطابق vistas",
+            "isCorrect": false,
+            "distractorRationaleAr": "vistas جمع مؤنث ويجب مطابقة الصفة: maravillosas."
+          },
+          {
+            "id": "ex-a2-sup-3_c",
+            "text": "rápido",
+            "textAr": "سريع",
+            "isCorrect": false,
+            "distractorRationaleAr": "rápido لا تصف المناظر الطبيعية."
+          }
+        ],
+        "targetVocab": [
+          "maravilloso",
+          "altísimo",
+          "rápido"
+        ],
+        "explanationAr": "الصفة maravillosas تعني رائعة وخاطفة للأنفاس وتطابق الفاعل المؤنث الجمع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sup-3_a"
+          ],
+          "selectedOptionId": "ex-a2-sup-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sup-3_b": "vistas جمع مؤنث ويجب مطابقة الصفة: maravillosas.",
+          "ex-a2-sup-3_c": "rápido لا تصف المناظر الطبيعية."
+        }
+      },
+      {
+        "id": "ex-a2-sup-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف المبنى الأعلى في العاصمة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-sup-4_t1",
+            "kind": "token",
+            "text": "Es"
+          },
+          {
+            "id": "ex-a2-sup-4_t2",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-sup-4_t3",
+            "kind": "token",
+            "text": "edificio"
+          },
+          {
+            "id": "ex-a2-sup-4_t4",
+            "kind": "token",
+            "text": "más"
+          },
+          {
+            "id": "ex-a2-sup-4_t5",
+            "kind": "token",
+            "text": "alto"
+          },
+          {
+            "id": "ex-a2-sup-4_t6",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a2-sup-4_t7",
+            "kind": "token",
+            "text": "Madrid"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Es el edificio más alto de Madrid"
+          ],
+          "tokenOrder": [
+            "ex-a2-sup-4_t1",
+            "ex-a2-sup-4_t2",
+            "ex-a2-sup-4_t3",
+            "ex-a2-sup-4_t4",
+            "ex-a2-sup-4_t5",
+            "ex-a2-sup-4_t6",
+            "ex-a2-sup-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل Es ثم أداة التعريف والاسم el edificio ثم التفضيل más alto ثم المجرور de Madrid.",
+        "targetVocab": [
+          "altísimo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-sup-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد وصف الكتاب المذكور في التسجيل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لرأي القارئ وحدد وصفه للرواية",
+        "stemEs": "He leído un libro interesantísimo sobre la historia.",
+        "stemAr": "لقد قرأت كتاباً شيقاً للغاية عن التاريخ.",
+        "options": [
+          {
+            "id": "ex-a2-sup-5_a",
+            "text": "interesante",
+            "textAr": "شيق / ممتع للغاية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sup-5_b",
+            "text": "bonito",
+            "textAr": "جميل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم تحديداً صيغة التضخيم interesantísimo."
+          },
+          {
+            "id": "ex-a2-sup-5_c",
+            "text": "famoso",
+            "textAr": "مشهور",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصف المحتوى بالتشويق وليس الشهرة."
+          }
+        ],
+        "targetVocab": [
+          "interesante",
+          "bonito",
+          "famoso"
+        ],
+        "explanationAr": "المتحدث قال: libro interesantísimo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_libro_interesantisimo.mp3",
+        "speechEs": "He leído un libro interesantísimo sobre la historia.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sup-5_a"
+          ],
+          "selectedOptionId": "ex-a2-sup-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sup-5_b": "المتحدث استخدم تحديداً صيغة التضخيم interesantísimo.",
+          "ex-a2-sup-5_c": "المتحدث وصف المحتوى بالتشويق وليس الشهرة."
+        }
+      },
+      {
+        "id": "ex-a2-sup-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة الإعجاب بجمال المكان",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "عبر عن إعجابك بجمال المدينة الإسبانية بطلاقة",
+        "stemEs": "Esta plaza es la más bonita de la ciudad.",
+        "stemAr": "هذا الميدان هو الأجمل في المدينة.",
+        "audioKey": "pending/a2_plaza_mas_bonita.mp3",
+        "targetVocab": [
+          "bonito"
+        ],
+        "explanationAr": "احرص على مد الصوت في más ونطق t و d برقة إسبانية طبيعية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_plaza_mas_bonita.mp3",
+          "modelAnswer": "Esta plaza es la más bonita de la ciudad."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -188,10 +188,8 @@
                     "speaking",
                     "pronunciation"
                   ],
-                  "status": "authored",
-                  "levelCode": "PREA1",
-                  "filePath": "content/exemplars/lesson-prea1-hola-me-llamo.json",
-                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد."
+                  "status": "planned",
+                  "levelCode": "PREA1"
                 },
                 {
                   "slug": "prea1-soy-tengo",
@@ -1183,7 +1181,78 @@
               "objectiveAr": "أن يعبّر المتعلم عن خطط قريبة (ir a + مصدر).",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-ir-a-infinitivo",
+                  "titleAr": "المستقبل القريب: التعبير عن النوايا والخطط بـ Ir a + Infinitivo",
+                  "objectiveAr": "أن يصوغ المتعلم تركيب المستقبل القريب: تصريف ir في المضارع + حرف الجر a + الفعل في المصدر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-ir-a-infinitivo.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-planes-proyectos",
+                  "titleAr": "التعبير عن الخطط بـ Pensar و Querer والظروف الزمنية",
+                  "objectiveAr": "أن يميز المتعلم بين Pensar + infinitivo (التفكير في النية) و Querer + infinitivo (الرغبة في التنفيذ).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-planes-proyectos.json",
+                  "requires": [
+                    "a2-ir-a-infinitivo"
+                  ]
+                },
+                {
+                  "slug": "a2-condiciones-futuro",
+                  "titleAr": "جمل الشرط الواقعية للمستقبل: Si + Presente, Futuro",
+                  "objectiveAr": "أن يصوغ المتعلم جمل الشرط الواقعية: Si + المضارع البسيط، الجواب في المضارع أو المستقبل القريب (ir a + inf).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-condiciones-futuro.json",
+                  "requires": [
+                    "a2-planes-proyectos"
+                  ]
+                },
+                {
+                  "slug": "a2-conversacion-planes",
+                  "titleAr": "التنسيق مع الأصدقاء: الاتفاق على موعد وخطة مشتركة",
+                  "objectiveAr": "أن يستخدم المتعلم الفعل quedar للاتفاق على موعد ومكان اللقاء مع الآخرين (¿Quedamos a las siete?).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-conversacion-planes.json",
+                  "requires": [
+                    "a2-condiciones-futuro"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u4-comparisons",
@@ -1191,7 +1260,78 @@
               "objectiveAr": "أن يقارن المتعلم بين أشخاص وأشياء.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-comparativos-superioridad",
+                  "titleAr": "صيغ المقارنة: التفوق والنقصان بـ Más que و Menos que والمقارنات الشاذة",
+                  "objectiveAr": "أن يصوغ المتعلم مقارنة التفوق: más + صفة/اسم/ظرف + que بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparativos-superioridad.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-comparativos-igualdad",
+                  "titleAr": "مقارنة التساوي: Tan... como مع الصفات و Tanto... como مع الأسماء",
+                  "objectiveAr": "أن يطبق المتعلم مقارنة التساوي مع الصفات والظروف: tan + صفة + como.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparativos-igualdad.json",
+                  "requires": [
+                    "a2-comparativos-superioridad"
+                  ]
+                },
+                {
+                  "slug": "a2-superlativos",
+                  "titleAr": "صيغ التفضيل المطلق والنسبي: El más... واللاحقة -ísimo",
+                  "objectiveAr": "أن يصوغ المتعلم التفضيل النسبي: أداة التعريف + más/menos + صفة + de (el más alto de la clase).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-superlativos.json",
+                  "requires": [
+                    "a2-comparativos-igualdad"
+                  ]
+                },
+                {
+                  "slug": "a2-comparar-ciudades",
+                  "titleAr": "تطبيق مقارنة المدن ونمط المعيشة والخدمات الحضرية",
+                  "objectiveAr": "أن يقارن المتعلم بين مدينتين من حيث: السكان، حركة المرور، الهدوء، وتكاليف المعيشة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparar-ciudades.json",
+                  "requires": [
+                    "a2-superlativos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u5-experiences",
@@ -1199,7 +1339,78 @@
               "objectiveAr": "أن يستخدم المتعلم المضارع التام للحديث عن خبرات.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-perfecto-formacion",
+                  "titleAr": "الماضي القريب المركب: صياغة Pretérito Perfecto بـ Haber واسم المفعول",
+                  "objectiveAr": "أن يصرف المتعلم الفعل المساعد haber في الحاضر بدقة: he, has, ha, hemos, habéis, han.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-perfecto-formacion.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-participios-irregulares",
+                  "titleAr": "أسماء المفعول الشاذة: Participios Irregulares الأكثر استخداماً",
+                  "objectiveAr": "أن يحفظ ويطبق المتعلم أشهر أسماء المفعول الشاذة في الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-participios-irregulares.json",
+                  "requires": [
+                    "a2-perfecto-formacion"
+                  ]
+                },
+                {
+                  "slug": "a2-marcadores-experiencias",
+                  "titleAr": "علامات الخبرات الحياتية: Alguna vez و Ya و Todavía no",
+                  "objectiveAr": "أن يسأل المتعلم عن التجارب الحياتية السابقة باستخدام: ¿Alguna vez has...? (هل سبق لك أن...؟).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-marcadores-experiencias.json",
+                  "requires": [
+                    "a2-participios-irregulares"
+                  ]
+                },
+                {
+                  "slug": "a2-hablar-de-experiencias",
+                  "titleAr": "التحدث عن الخبرات الحياتية والمهنية وتجربة أشياء جديدة",
+                  "objectiveAr": "أن يتحدث المتعلم عن تجاربه الشخصية والمهنية السابقة بثقة وسلاسة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-hablar-de-experiencias.json",
+                  "requires": [
+                    "a2-marcadores-experiencias"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u6-health",
@@ -1207,7 +1418,78 @@
               "objectiveAr": "أن يشرح المتعلم عَرَضًا لطبيب ويفهم تعليمات.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-sintomas-medico",
+                  "titleAr": "وصف الأعراض عند الطبيب: التعبير عن الدوار والسعال والإنفلونزا",
+                  "objectiveAr": "أن يصف المتعلم أعراض المرض المركبة بدقة للطبيب المعالج.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-sintomas-medico.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-dar-consejos-deber",
+                  "titleAr": "تقديم النصائح الطبية والتوجيهات بـ Deber و Tener que و Hay que",
+                  "objectiveAr": "أن يوجه المتعلم نصائح وإرشادات صحية باستخدام: debes + مصدر (ينبغي عليك).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-dar-consejos-deber.json",
+                  "requires": [
+                    "a2-sintomas-medico"
+                  ]
+                },
+                {
+                  "slug": "a2-imperativo-salud",
+                  "titleAr": "صيغة الأمر الإيجابي للنصائح الطبية: Imperativo Afirmativo",
+                  "objectiveAr": "أن يصوغ المتعلم صيغة الأمر الإيجابي للمخاطب tú: أفعال -ar تأخذ -a (toma, descansa)، وأفعال -er/-ir تأخذ -e (bebe, come, duerme).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-imperativo-salud.json",
+                  "requires": [
+                    "a2-dar-consejos-deber"
+                  ]
+                },
+                {
+                  "slug": "a2-consulta-medica",
+                  "titleAr": "محاكاة زيارة العيادة: الحوار الطبي بين الطبيب والمريض",
+                  "objectiveAr": "أن يدير المتعلم حواراً متكاملاً داخل العيادة الطبية (la consulta).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-consulta-medica.json",
+                  "requires": [
+                    "a2-imperativo-salud"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u7-housing",
@@ -1215,7 +1497,78 @@
               "objectiveAr": "أن يتحدث المتعلم عن سكنه ومشكلاته.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-tipos-vivienda",
+                  "titleAr": "أنواع السكن ومواصفات الشقق: piso و chalet و amueblado",
+                  "objectiveAr": "أن يسمّي المتعلم أنواع المساكن المختلفة في إسبانيا: piso, apartamento, chalet, estudio.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-tipos-vivienda.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-pronombres-objeto-directo",
+                  "titleAr": "ضمائر المفعول به المباشر: Lo و La و Los و Las وموضعها",
+                  "objectiveAr": "أن يحدد المتعلم المفعول المباشر ويستبدله بالضمير المناسب: lo (مفرد مذكر), la (مفرد مؤنث), los (جمع مذكر), las (جمع مؤنث).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-pronombres-objeto-directo.json",
+                  "requires": [
+                    "a2-tipos-vivienda"
+                  ]
+                },
+                {
+                  "slug": "a2-alquilar-piso",
+                  "titleAr": "إجراءات وشروط الإيجار: العقد والتأمين ومصاريف الخدمات",
+                  "objectiveAr": "أن يسأل المتعلم عن شروط وتكاليف استئجار عقار في إسبانيا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-alquilar-piso.json",
+                  "requires": [
+                    "a2-pronombres-objeto-directo"
+                  ]
+                },
+                {
+                  "slug": "a2-visita-piso",
+                  "titleAr": "معاينة الشقة ومرافق البناية: المصعد والتدفئة والجيران",
+                  "objectiveAr": "أن يجري المتعلم محادثة معاينة عقار مع الوكيل أو المالك مباشرة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-visita-piso.json",
+                  "requires": [
+                    "a2-alquilar-piso"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u8-hobbies",
@@ -1223,7 +1576,78 @@
               "objectiveAr": "أن يناقش المتعلم هواياته وتكرارها.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-deportes-tiempo-libre",
+                  "titleAr": "الرياضة وأنشطة وقت الفراغ: ممارسة الهوايات والألعاب الرياضية",
+                  "objectiveAr": "أن يذكر المتعلم الرياضات وأنشطة وقت الفراغ الأكثر شيوعاً باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-deportes-tiempo-libre.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-gustos-preferencias-avanzadas",
+                  "titleAr": "التعبير المتقدم عن الميول: أفعال encantar وinteresar وfascinar وmolestar",
+                  "objectiveAr": "أن يطبق المتعلم بنية الأفعال المشابهة لـ gustar مع ضمائر المفعول غير المباشر (me, te, le, nos, os, les).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-gustos-preferencias-avanzadas.json",
+                  "requires": [
+                    "a2-deportes-tiempo-libre"
+                  ]
+                },
+                {
+                  "slug": "a2-frecuencia-actividades",
+                  "titleAr": "التعبير عن التكرار والروتين: ظروف a menudo وde vez en cuando وcasi nunca",
+                  "objectiveAr": "أن يصف المتعلم مدى تكرار قيامه بالأنشطة والهوايات باستخدام ظروف التكرار المتنوعة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-frecuencia-actividades.json",
+                  "requires": [
+                    "a2-gustos-preferencias-avanzadas"
+                  ]
+                },
+                {
+                  "slug": "a2-conversacion-hobbies",
+                  "titleAr": "حوار واقعي: الحديث عن الهوايات والاتفاق على نشاط مشترك",
+                  "objectiveAr": "أن يقود المتعلم محادثة حقيقية باللغة الإسبانية للسؤال عن هوايات الطرف الآخر والرد عليها.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-conversacion-hobbies.json",
+                  "requires": [
+                    "a2-frecuencia-actividades"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u9-phone-booking",
@@ -1231,7 +1655,78 @@
               "objectiveAr": "أن يُجري المتعلم مكالمة حجز قصيرة.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-llamadas-telefonicas",
+                  "titleAr": "المكالمات الهاتفية: عبارات الرد والتحية وطلب التحدث لشخص",
+                  "objectiveAr": "أن يرد المتعلم على الهاتف بالعبارات الإسبانية المناسبة رسمياً وغير رسمي: ¡Dígame!, ¡Hola, buenos días!, ¿Sí?.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-llamadas-telefonicas.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-pedir-citas",
+                  "titleAr": "حجز المواعيد وتعديلها: عند الطبيب أو الموظف أو مصفف الشعر",
+                  "objectiveAr": "أن يطلب المتعلم موعداً جديداً باللغة الإسبانية: Quería pedir cita con... / Quisiera concertar una cita.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-pedir-citas.json",
+                  "requires": [
+                    "a2-llamadas-telefonicas"
+                  ]
+                },
+                {
+                  "slug": "a2-mensajes-recados",
+                  "titleAr": "ترك الرسائل وأخذ الملاحظات: التعامل مع غياب الشخص المطلوب",
+                  "objectiveAr": "أن يترك المتعلم رسالة لشخص غير متاح: ¿Puedo dejarle un recado? / Dígale que he llamado.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-mensajes-recados.json",
+                  "requires": [
+                    "a2-pedir-citas"
+                  ]
+                },
+                {
+                  "slug": "a2-dialogo-reserva",
+                  "titleAr": "حوار متكامل: حجز طاولة في مطعم أو غرفة في فندق هاتفياً",
+                  "objectiveAr": "أن يجري المتعلم مكالمة حجز كاملة لطاولة في مطعم أو غرفة في فندق.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-dialogo-reserva.json",
+                  "requires": [
+                    "a2-mensajes-recados"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u10-culture",
@@ -1239,7 +1734,78 @@
               "objectiveAr": "أن يتعرّف المتعلم على عادات إسبانية ويعلّق عليها.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-fiestas-tradiciones",
+                  "titleAr": "الأعياد والتقاليد الإسبانية: أشهر المهرجانات والمناسبات الشعبية",
+                  "objectiveAr": "أن يتعرف المتعلم على كبرى الاحتفالات والمهرجانات الشعبية في إسبانيا والعالم الناطق بالإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-fiestas-tradiciones.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-impersonal-se",
+                  "titleAr": "صيغة التعميم والمبني للمجهول المنعكس بـ Se: القواعد والعادات العامة",
+                  "objectiveAr": "أن يفهم المتعلم بنية المبني للمجهول المنعكس (Pasiva refleja) مع الأداة se.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-impersonal-se.json",
+                  "requires": [
+                    "a2-fiestas-tradiciones"
+                  ]
+                },
+                {
+                  "slug": "a2-contrastes-culturales",
+                  "titleAr": "الفروق والعادات الثقافية: المواعيد وأوقات الوجبات والقيلولة والحديث بعد الطعام",
+                  "objectiveAr": "أن يقارن المتعلم بين العادات الاجتماعية وجداول المواعيد اليومية بين الثقافة الإسبانية والعربية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-contrastes-culturales.json",
+                  "requires": [
+                    "a2-impersonal-se"
+                  ]
+                },
+                {
+                  "slug": "a2-mi-pais-costumbres",
+                  "titleAr": "تقديم عرض عن بلدك: التحدث عن عاداتك وتقاليدك ووجباتك للناطقين بالإسبانية",
+                  "objectiveAr": "أن يقدم المتعلم عرضاً شفهياً أو كتابياً متكاملاً لوصف عادات بلده الأصلي باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-mi-pais-costumbres.json",
+                  "requires": [
+                    "a2-contrastes-culturales"
+                  ]
+                }
+              ]
             }
           ]
         },

@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-perfecto-formacion",
+    "unitSlug": "a2-u5-experiences",
+    "levelCode": "A2",
+    "titleAr": "الماضي القريب المركب: صياغة Pretérito Perfecto بـ Haber واسم المفعول",
+    "titleEs": "El pretérito perfecto compuesto: formación",
+    "subtitleAr": "تصريف الفعل المساعد haber في الحاضر وتشكيل اسم المفعول المنتظم (-ado, -ido)",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصرف المتعلم الفعل المساعد haber في الحاضر بدقة: he, has, ha, hemos, habéis, han.",
+        "أن يشتق اسم المفعول المنتظم (participio): أفعال -ar تأخذ -ado (hablado)، وأفعال -er/-ir تأخذ -ido (comido, vivido).",
+        "أن يطبق القاعدة الصارمة: عدم الفصل بين haber واسم المفعول بأي كلمة إطلاقاً في الإسبانية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تركيب Pretérito Perfecto Compuesto",
+          "explanationAr": "يتكون الماضي القريب المركب من جزأين متلازمين:\n**تصريف فعل Haber في المضارع + اسم المفعول (Participio)**\n- yo **he** hablado / comido / vivido\n- tú **has** hablado / comido / vivido\n- él/ella/usted **ha** hablado / comido / vivido\n- nosotros **hemos** hablado / comido / vivido\n- vosotros **habéis** hablado / comido / vivido\n- ellos/ustedes **han** hablado / comido / vivido\nقاعدة حديدية في الإسبانية: اسم المفعول بعد haber يبقى دائماً مفرداً مذكراً منتهياً بـ o ولا يتغير أبداً مع الفاعل (نقول: María ha comido، ونقول: Ellas han comido، ولا نؤنث اسم المفعول أبداً)."
+        }
+      ],
+      "commonMistakesAr": [
+        "تأنيث أو جمع اسم المفعول بعد haber بتأثير الفرنسية (ممنوع في الإسبانية: الصواب دائماً مذكر مفرد: ellas han salido، والخطأ: *ellas han salidas*).",
+        "الفصل بين haber واسم المفعول بكلمات مثل no أو ya (الصواب: ya he comido أو no he comido، ولا يجوز *he ya comido*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا لسه واكل / عشت في إسبانيا سنتين». في الإسبانية: He comido / He vivido dos años en España."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُستخدم الماضي القريب بكثافة لأي حدث وقع في فترة زمنية لم تنتهِ بعد (مثل اليوم hoy، هذا الأسبوع esta semana، هذا الصباح esta mañana)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-perfecto-formacion-intro",
+        "type": "explanation",
+        "titleAr": "تكوين الماضي القريب",
+        "bodyAr": "تصريفات الفعل المساعد haber وأسماء المفعول النموذجية:\n- **he**: تصريف haber مع yo\n- **has**: تصريف haber مع tú\n- **ha**: تصريف haber مع él/ella\n- **hemos**: تصريف haber مع nosotros\n- **habéis**: تصريف haber مع vosotros\n- **han**: تصريف haber مع ellos\n- **hablado**: اسم مفعول hablar (تحدث)\n- **comido**: اسم مفعول comer (أكل)\n- **vivido**: اسم مفعول vivir (عاش)",
+        "examples": [
+          {
+            "es": "Hoy he hablado con el director.",
+            "ar": "اليوم تحدثت مع المدير."
+          },
+          {
+            "es": "¿Has comido paella alguna vez?",
+            "ar": "¿هل أكلت الباييلا من قبل؟"
+          },
+          {
+            "es": "Hemos vivido en Madrid tres años.",
+            "ar": "لقد عشنا في مدريد ثلاث سنوات."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "he",
+      "has",
+      "ha",
+      "hemos",
+      "habéis",
+      "han",
+      "hablado",
+      "comido",
+      "vivido"
+    ],
+    "reviewVocabulary": [
+      "viajar",
+      "estudiar"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصرف المتعلم الفعل المساعد haber في الحاضر بدقة: he, has, ha, hemos, habéis, han.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-per-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر تصريف الفعل المساعد haber مع ضمير نحن nosotros",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو تصريف الفعل المساعد haber المناسب لـ nosotros؟",
+        "stemEs": "Esta mañana nosotros _____ terminado el informe.",
+        "stemAr": "هذا الصباح نحن ... أنهينا التقرير.",
+        "options": [
+          {
+            "id": "ex-a2-per-1_a",
+            "text": "hemos",
+            "textAr": "تصريف haber مع nosotros (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-per-1_b",
+            "text": "han",
+            "textAr": "تصريف الغائب الجمع ellos",
+            "isCorrect": false,
+            "distractorRationaleAr": "han تأتي مع هم/هن وليس مع نحن."
+          },
+          {
+            "id": "ex-a2-per-1_c",
+            "text": "ha",
+            "textAr": "تصريف المفرد الغائب",
+            "isCorrect": false,
+            "distractorRationaleAr": "ha للمفرد وليس لضمير الجمع المتكلم."
+          }
+        ],
+        "targetVocab": [
+          "hemos",
+          "ha",
+          "han"
+        ],
+        "explanationAr": "مع الضمير nosotros يكون تصريف الفعل المساعد دائماً hemos.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-per-1_a"
+          ],
+          "selectedOptionId": "ex-a2-per-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-per-1_b": "han تأتي مع هم/هن وليس مع نحن.",
+          "ex-a2-per-1_c": "ha للمفرد وليس لضمير الجمع المتكلم."
+        }
+      },
+      {
+        "id": "ex-a2-per-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب اسم المفعول من الفعل estudiar",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اشتق اسم المفعول المنتظم من الفعل estudiar (أفعال -ar تأخذ -ado)",
+        "stemEs": "Sara ha _____ mucho para este examen.",
+        "stemAr": "سارة درست كثيراً لهذا الامتحان.",
+        "targetVocab": [
+          "estudiado"
+        ],
+        "explanationAr": "أفعال المجموعة الأولى المنتهية بـ -ar يُصاغ اسم مفعولها بإضافة -ado: estudiado.",
+        "answerKey": {
+          "accepted": [
+            "estudiado"
+          ],
+          "acceptableAnswers": [
+            "estudiado"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-per-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر اسم المفعول الصحيح من الفعل vivir",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو اسم المفعول من الفعل vivir المنتهي بـ -ir؟",
+        "stemEs": "Mis abuelos han _____ en esa casa toda la vida.",
+        "stemAr": "أجدادي عاشوا في ذلك البيت طوال حياتهم.",
+        "options": [
+          {
+            "id": "ex-a2-per-3_a",
+            "text": "vivido",
+            "textAr": "اسم المفعول الصحيح المنتهي بـ -ido",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-per-3_b",
+            "text": "vividos",
+            "textAr": "خطأ جمع اسم المفعول بعد haber",
+            "isCorrect": false,
+            "distractorRationaleAr": "اسم المفعول بعد haber لا يُجمع أبداً في الإسبانية."
+          },
+          {
+            "id": "ex-a2-per-3_c",
+            "text": "vivado",
+            "textAr": "نهاية خاطئة لأفعال المجموعة الثالثة",
+            "isCorrect": false,
+            "distractorRationaleAr": "أفعال -ir تأخذ -ido وليس -ado."
+          }
+        ],
+        "targetVocab": [
+          "vivido",
+          "han"
+        ],
+        "explanationAr": "أفعال -ir تأخذ اللاحقة -ido وتبقى مفردة مذكرة دائماً بعد haber: han vivido.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-per-3_a"
+          ],
+          "selectedOptionId": "ex-a2-per-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-per-3_b": "اسم المفعول بعد haber لا يُجمع أبداً في الإسبانية.",
+          "ex-a2-per-3_c": "أفعال -ir تأخذ -ido وليس -ado."
+        }
+      },
+      {
+        "id": "ex-a2-per-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن تناول الغداء اليوم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-per-4_t1",
+            "kind": "token",
+            "text": "Hoy"
+          },
+          {
+            "id": "ex-a2-per-4_t2",
+            "kind": "token",
+            "text": "he"
+          },
+          {
+            "id": "ex-a2-per-4_t3",
+            "kind": "token",
+            "text": "comido"
+          },
+          {
+            "id": "ex-a2-per-4_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a2-per-4_t5",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-a2-per-4_t6",
+            "kind": "token",
+            "text": "restaurante"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hoy he comido en un restaurante"
+          ],
+          "tokenOrder": [
+            "ex-a2-per-4_t1",
+            "ex-a2-per-4_t2",
+            "ex-a2-per-4_t3",
+            "ex-a2-per-4_t4",
+            "ex-a2-per-4_t5",
+            "ex-a2-per-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: ظرف الزمان Hoy ثم الفعل المركب he comido ثم شبه الجملة en un restaurante.",
+        "targetVocab": [
+          "he",
+          "comido"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-per-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما فعله المتحدث هذا الصباح",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد النشاط الذي أنجزه المتحدث",
+        "stemEs": "Esta mañana he hablado con el profesor de español.",
+        "stemAr": "هذا الصباح تحدثت مع أستاذ الإسبانية.",
+        "options": [
+          {
+            "id": "ex-a2-per-5_a",
+            "text": "hablado",
+            "textAr": "تحدث",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-per-5_b",
+            "text": "comido",
+            "textAr": "أكل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال he hablado وليس he comido."
+          },
+          {
+            "id": "ex-a2-per-5_c",
+            "text": "vivido",
+            "textAr": "عاش",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن مكالمة ونقاش مع الأستاذ."
+          }
+        ],
+        "targetVocab": [
+          "hablado",
+          "comido",
+          "vivido",
+          "he"
+        ],
+        "explanationAr": "المتحدث قال: he hablado con el profesor.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_he_hablado_profesor.mp3",
+        "speechEs": "Esta mañana he hablado con el profesor de español.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-per-5_a"
+          ],
+          "selectedOptionId": "ex-a2-per-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-per-5_b": "المتحدث قال he hablado وليس he comido.",
+          "ex-a2-per-5_c": "المتحدث تحدث عن مكالمة ونقاش مع الأستاذ."
+        }
+      },
+      {
+        "id": "ex-a2-per-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك بالماضي القريب بثقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأنك عشت في إسبانيا مدة عام",
+        "stemEs": "He vivido un año en España.",
+        "stemAr": "لقد عشت عاماً في إسبانيا.",
+        "audioKey": "pending/a2_he_vivido_un_ano.mp3",
+        "targetVocab": [
+          "vivido",
+          "he"
+        ],
+        "explanationAr": "تذكر أن حرف h في he صامت تماماً، وتنطق الكلمة كـ e قصيرة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_he_vivido_un_ano.mp3",
+          "modelAnswer": "He vivido un año en España."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

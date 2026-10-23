@@ -1,0 +1,394 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-comparativos-superioridad",
+    "unitSlug": "a2-u4-comparisons",
+    "levelCode": "A2",
+    "titleAr": "صيغ المقارنة: التفوق والنقصان بـ Más que و Menos que والمقارنات الشاذة",
+    "titleEs": "Los comparativos de superioridad e inferioridad",
+    "subtitleAr": "تركيب más... que و menos... que والمقارنات الشاذة: mejor, peor, mayor, menor",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصوغ المتعلم مقارنة التفوق: más + صفة/اسم/ظرف + que بدقة.",
+        "أن يصوغ مقارنة النقصان: menos + صفة/اسم/ظرف + que.",
+        "أن يستخدم المقارنات الشاذة الأساسية: mejor (أفضل من bueno), peor (أسوأ من malo), mayor (أكبر عمراً), menor (أصغر عمراً)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب المقارنة والمقارنات الشاذة",
+          "explanationAr": "للمقارنة بين طرفين في الإسبانية نستخدم:\n- **más + صفة + que**: Juan es más alto que Pedro (خوان أطول من بيدرو).\n- **menos + صفة + que**: Esta casa es menos cara que esa (هذا البيت أقل ثمناً من ذاك).\nالمقارنات الشاذة لا تأخذ más أو menos قبلها:\n- bueno -> **mejor que** (أفضل من)\n- malo -> **peor que** (أسوأ من)\n- grande en edad -> **mayor que** (أكبر سناً من)\n- pequeño en edad -> **menor que** (أصغر سناً من)"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام de بدلاً من que في المقارنة العامة بتأثير الفرنسية أو الإنجليزية (الصواب: más alto que، والخطأ: *más alto de*؛ نستخدم de فقط مع الأرقام: más de 20 euros).",
+        "قول *más mejor* أو *más peor* (هذا خطأ فاحش في الإسبانية؛ الصواب: mejor و peor مباشرة)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أحمد أطول من علي، وده أحسن من ده». في الإسبانية: Ahmed es más alto que Ali, y esto es mejor que eso."
+        }
+      ],
+      "culturalNoteAr": "عند إبداء الرأي والمقارنة بين الخدمات والمطاعم في إسبانيا، من المعتاد جداً استخدام mejor que و peor que للتوصية المباشرة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-comparativos-superioridad-intro",
+        "type": "explanation",
+        "titleAr": "صيغ المقارنة الشائعة",
+        "bodyAr": "أدوات المقارنة والمصطلحات الشاذة:\n- **más ... que**: أكثر ... من\n- **menos ... que**: أقل ... من\n- **mejor que**: أفضل من (مقارنة شاذة لـ bueno)\n- **peor que**: أسوأ من (مقارنة شاذة لـ malo)\n- **mayor que**: أكبر سناً من\n- **menor que**: أصغر سناً من",
+        "examples": [
+          {
+            "es": "Madrid es más grande que Valencia.",
+            "ar": "مدريد أكبر من فالنسيا."
+          },
+          {
+            "es": "Este restaurante es mejor que el otro.",
+            "ar": "هذا المطعم أفضل من الآخر."
+          },
+          {
+            "es": "Mi hermano es mayor que yo.",
+            "ar": "أخي أكبر مني سناً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "más",
+      "menos",
+      "que",
+      "mejor",
+      "peor",
+      "mayor",
+      "menor"
+    ],
+    "reviewVocabulary": [
+      "grande",
+      "pequeño"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصوغ المتعلم مقارنة التفوق: más + صفة/اسم/ظرف + que بدقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-cmp-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة الصحيحة في جملة المقارنة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'من' في المقارنة بين شيئين؟",
+        "stemEs": "El tren es más rápido _____ el autobús.",
+        "stemAr": "القطار أسرع ... الحافلة.",
+        "options": [
+          {
+            "id": "ex-a2-cmp-1_a",
+            "text": "que",
+            "textAr": "أداة المقارنة القياسية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cmp-1_b",
+            "text": "de",
+            "textAr": "تستخدم مع الأرقام فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "في المقارنة العامة بين اسمين نستخدم que وليس de."
+          },
+          {
+            "id": "ex-a2-cmp-1_c",
+            "text": "como",
+            "textAr": "تستخدم في مقارنة التساوي",
+            "isCorrect": false,
+            "distractorRationaleAr": "como تأتي مع tan للتساوي وليس مع más."
+          }
+        ],
+        "targetVocab": [
+          "más",
+          "que"
+        ],
+        "explanationAr": "في المقارنة بين طرفين نستخدم دائماً más + صفة + que.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cmp-1_a"
+          ],
+          "selectedOptionId": "ex-a2-cmp-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cmp-1_b": "في المقارنة العامة بين اسمين نستخدم que وليس de.",
+          "ex-a2-cmp-1_c": "como تأتي مع tan للتساوي وليس مع más."
+        }
+      },
+      {
+        "id": "ex-a2-cmp-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب المقارنة الشاذة لـ 'أفضل من'",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية التي تعني 'أفضل' (المقارنة الشاذة من bueno)",
+        "stemEs": "Tu pronunciación es _____ que antes.",
+        "stemAr": "نطقك أفضل من قبل.",
+        "targetVocab": [
+          "mejor"
+        ],
+        "explanationAr": "المقارنة الشاذة من الصفة bueno هي mejor (أفضل).",
+        "answerKey": {
+          "accepted": [
+            "mejor"
+          ],
+          "acceptableAnswers": [
+            "mejor"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cmp-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة الدالة على كِبَر السن",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تصف أن أخاك يسبقك في العمر والسنوات؟",
+        "stemEs": "Mi hermano tiene 30 años y yo 25; él es _____ que yo.",
+        "stemAr": "أخي عمره 30 سنة وأنا 25؛ هو ... مني سناً.",
+        "options": [
+          {
+            "id": "ex-a2-cmp-3_a",
+            "text": "mayor",
+            "textAr": "أكبر سناً",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cmp-3_b",
+            "text": "menor",
+            "textAr": "أصغر سناً",
+            "isCorrect": false,
+            "distractorRationaleAr": "هو عمره 30 وأنت 25، فهو أكبر mayor وليس أصغر."
+          },
+          {
+            "id": "ex-a2-cmp-3_c",
+            "text": "peor",
+            "textAr": "أسوأ",
+            "isCorrect": false,
+            "distractorRationaleAr": "peor مقارنة للجودة السيئة ولا تدل على السن."
+          }
+        ],
+        "targetVocab": [
+          "mayor",
+          "menor",
+          "peor",
+          "que"
+        ],
+        "explanationAr": "للمقارنة في العمر نستخدم mayor (أكبر سناً) و menor (أصغر سناً).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cmp-3_a"
+          ],
+          "selectedOptionId": "ex-a2-cmp-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cmp-3_b": "هو عمره 30 وأنت 25، فهو أكبر mayor وليس أصغر.",
+          "ex-a2-cmp-3_c": "peor مقارنة للجودة السيئة ولا تدل على السن."
+        }
+      },
+      {
+        "id": "ex-a2-cmp-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للمقارنة بين المدينة والقرية في الهدوء",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-cmp-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-cmp-4_t2",
+            "kind": "token",
+            "text": "pueblo"
+          },
+          {
+            "id": "ex-a2-cmp-4_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a2-cmp-4_t4",
+            "kind": "token",
+            "text": "menos"
+          },
+          {
+            "id": "ex-a2-cmp-4_t5",
+            "kind": "token",
+            "text": "ruidoso"
+          },
+          {
+            "id": "ex-a2-cmp-4_t6",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-a2-cmp-4_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a2-cmp-4_t8",
+            "kind": "token",
+            "text": "ciudad"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El pueblo es menos ruidoso que la ciudad"
+          ],
+          "tokenOrder": [
+            "ex-a2-cmp-4_t1",
+            "ex-a2-cmp-4_t2",
+            "ex-a2-cmp-4_t3",
+            "ex-a2-cmp-4_t4",
+            "ex-a2-cmp-4_t5",
+            "ex-a2-cmp-4_t6",
+            "ex-a2-cmp-4_t7",
+            "ex-a2-cmp-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الطرف الأول El pueblo ثم الفعل es ثم menos ruidoso ثم que والطرف الثاني la ciudad.",
+        "targetVocab": [
+          "menos",
+          "que"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cmp-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد نتيجة المقارنة بين الفندقين",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد تقييم المتحدث للفندق الجديد",
+        "stemEs": "Este hotel es mucho mejor que el anterior.",
+        "stemAr": "هذا الفندق أفضل بكثير من السابق.",
+        "options": [
+          {
+            "id": "ex-a2-cmp-5_a",
+            "text": "mejor",
+            "textAr": "أفضل",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cmp-5_b",
+            "text": "peor",
+            "textAr": "أسوأ",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال mejor وليس peor."
+          },
+          {
+            "id": "ex-a2-cmp-5_c",
+            "text": "menor",
+            "textAr": "أصغر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن الجودة وليس الحجم."
+          }
+        ],
+        "targetVocab": [
+          "mejor",
+          "peor",
+          "menor",
+          "que"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: mucho mejor que el anterior.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_hotel_mejor_que.mp3",
+        "speechEs": "Este hotel es mucho mejor que el anterior.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cmp-5_a"
+          ],
+          "selectedOptionId": "ex-a2-cmp-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cmp-5_b": "المتحدث قال mejor وليس peor.",
+          "ex-a2-cmp-5_c": "المتحدث تحدث عن الجودة وليس الحجم."
+        }
+      },
+      {
+        "id": "ex-a2-cmp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق المقارنة بين وسيلتي المواصلات",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة موضحاً أن المترو أسرع من الحافلة بطلاقة",
+        "stemEs": "El metro es más rápido que el autobús.",
+        "stemAr": "المترو أسرع من الأتوبيس.",
+        "audioKey": "pending/a2_metro_mas_rapido.mp3",
+        "targetVocab": [
+          "más",
+          "que"
+        ],
+        "explanationAr": "احرص على مد الصوت في más والنبر على المقطع الأول في rápido.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_metro_mas_rapido.mp3",
+          "modelAnswer": "El metro es más rápido que el autobús."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

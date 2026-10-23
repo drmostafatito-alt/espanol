@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-planes-proyectos",
+    "unitSlug": "a2-u3-future-plans",
+    "levelCode": "A2",
+    "titleAr": "التعبير عن الخطط بـ Pensar و Querer والظروف الزمنية",
+    "titleEs": "Planes y proyectos: pensar y querer",
+    "subtitleAr": "التفريق بين النية (pensar + inf) والرغبة (querer + inf) وظروف الزمان",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يميز المتعلم بين Pensar + infinitivo (التفكير في النية) و Querer + infinitivo (الرغبة في التنفيذ).",
+        "أن يستخدم الظروف والعلامات الزمنية للمستقبل: mañana, el próximo año, el mes que viene.",
+        "أن يصف مشروعاً شخصياً أو مهنياً بأسلوب مترابط."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال النوايا والمشاريع",
+          "explanationAr": "للتعبير عن الخطط المستقبلية غير المحسومة بعد، نستخدم:\n1. **Pensar + infinitivo**: Pienso cambiar de casa (أنوي / أفكر في تغيير منزلي).\n2. **Querer + infinitivo**: Quiero aprender a conducir (أريد / أرغب في تعلم القيادة).\n3. **Tener la intención de + infinitivo**: Tengo la intención de buscar otro empleo (لدي النية في البحث عن وظيفة أخرى)."
+        }
+      ],
+      "commonMistakesAr": [
+        "وضع حرف الجر en بعد pensar عندما يليه فعل في المصدر (الصحيح: pienso viajar، بينما pienso en ti تعني أفكر في شخص).",
+        "تصريف الفعل الثاني بعد pensar أو querer (الصواب دائماً بقاء الفعل الثاني في المصدر)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا ناوي أغير الشغل السنة الجاية، وعايز أبدأ مشروع». في الإسبانية: Pienso cambiar de trabajo el próximo año, y quiero empezar un proyecto."
+        }
+      ],
+      "culturalNoteAr": "في الثقافة الإسبانية، من المعتاد مناقشة الخطط المستقبلية بمرونة وواقعية، واستخدام عبارات مثل «Si todo va bien» (إذا سارت الأمور على ما يرام) مع المشاريع الكبيرة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-planes-proyectos-intro",
+        "type": "explanation",
+        "titleAr": "الخطط والنوايا المستقبلية",
+        "bodyAr": "أهم التعبيرات لمناقشة المشاريع:\n- **mañana**: غداً\n- **el año**: السنة / العام\n- **el mes**: الشهر\n- **la intención**: النية / القصد\n- **cambiar**: يغيّر / يبدّل\n- **comenzar**: يبدأ (فعل ذو جذر متغير: e -> ie)",
+        "examples": [
+          {
+            "es": "El año que viene pienso comprar un piso.",
+            "ar": "العام القادم أنوي شراء شقة."
+          },
+          {
+            "es": "Tengo la intención de cambiar de carrera.",
+            "ar": "لدي النية لتغيير مساري المهني."
+          },
+          {
+            "es": "Mañana comienzo las clases.",
+            "ar": "غداً أبدأ الحصص."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "mañana",
+      "año",
+      "mes",
+      "intención",
+      "cambiar",
+      "comenzar"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "horario"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يميز المتعلم بين Pensar + infinitivo (التفكير في النية) و Querer + infinitivo (الرغبة في التنفيذ).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-pla-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التركيب الصحيح للتعبير عن النية بفعل pensar",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الصيغة الصحيحة لقول 'أنوي الانتقال'؟",
+        "stemEs": "El mes que viene _____ mudarme a otra ciudad.",
+        "stemAr": "الشهر القادم ... الانتقال إلى مدينة أخرى.",
+        "options": [
+          {
+            "id": "ex-a2-pla-1_a",
+            "text": "pienso",
+            "textAr": "أنوي / أفكر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pla-1_b",
+            "text": "pienso en",
+            "textAr": "خطأ عند وجود فعل مصدر",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع المصدر لا نضع en بل يأتي المصدر مباشرة بعد pensar."
+          },
+          {
+            "id": "ex-a2-pla-1_c",
+            "text": "pensando",
+            "textAr": "صيغة اسم الفاعل غير المناسبة هنا",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج إلى فعل مصرف في المضارع يعبر عن النية."
+          }
+        ],
+        "targetVocab": [
+          "mes",
+          "cambiar"
+        ],
+        "explanationAr": "عند التعبير عن النية يلي فعل pensar المصدر مباشرة دون حرف جر: pienso mudarme.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pla-1_a"
+          ],
+          "selectedOptionId": "ex-a2-pla-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pla-1_b": "مع المصدر لا نضع en بل يأتي المصدر مباشرة بعد pensar.",
+          "ex-a2-pla-1_c": "نحتاج إلى فعل مصرف في المضارع يعبر عن النية."
+        }
+      },
+      {
+        "id": "ex-a2-pla-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الدالة على الغد",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب ظرف الزمان الإسباني الذي يعني 'غداً'",
+        "stemEs": "_____ tenemos una reunión muy importante.",
+        "stemAr": "غداً لدينا اجتماع مهم جداً.",
+        "targetVocab": [
+          "mañana"
+        ],
+        "explanationAr": "ظرف الزمان الذي يعني غداً هو mañana.",
+        "answerKey": {
+          "accepted": [
+            "mañana",
+            "manana"
+          ],
+          "acceptableAnswers": [
+            "mañana",
+            "manana"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-pla-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التعبير المناسب لنية الشخص وتخطيطه",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى العزيمة والنية الداخلية لفعل شيء؟",
+        "stemEs": "Tengo la _____ de buscar un trabajo mejor.",
+        "stemAr": "لدي ... في البحث عن عمل أفضل.",
+        "options": [
+          {
+            "id": "ex-a2-pla-3_a",
+            "text": "intención",
+            "textAr": "النية / العزم",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pla-3_b",
+            "text": "horario",
+            "textAr": "جدول مواعيد",
+            "isCorrect": false,
+            "distractorRationaleAr": "horario جدول الدوام وليس النية الشخصية."
+          },
+          {
+            "id": "ex-a2-pla-3_c",
+            "text": "año",
+            "textAr": "سنة",
+            "isCorrect": false,
+            "distractorRationaleAr": "año سنة زمنية ولا تكمل معنى العزيمة."
+          }
+        ],
+        "targetVocab": [
+          "intención",
+          "trabajo",
+          "horario",
+          "año"
+        ],
+        "explanationAr": "التركيب هو tener la intención de + infinitivo (لديه النية لـ...).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pla-3_a"
+          ],
+          "selectedOptionId": "ex-a2-pla-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pla-3_b": "horario جدول الدوام وليس النية الشخصية.",
+          "ex-a2-pla-3_c": "año سنة زمنية ولا تكمل معنى العزيمة."
+        }
+      },
+      {
+        "id": "ex-a2-pla-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن بدء الدوام الجديد الشهر القادم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-pla-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-pla-4_t2",
+            "kind": "token",
+            "text": "próximo"
+          },
+          {
+            "id": "ex-a2-pla-4_t3",
+            "kind": "token",
+            "text": "mes"
+          },
+          {
+            "id": "ex-a2-pla-4_t4",
+            "kind": "token",
+            "text": "voy"
+          },
+          {
+            "id": "ex-a2-pla-4_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a2-pla-4_t6",
+            "kind": "token",
+            "text": "cambiar"
+          },
+          {
+            "id": "ex-a2-pla-4_t7",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a2-pla-4_t8",
+            "kind": "token",
+            "text": "horario"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El próximo mes voy a cambiar de horario"
+          ],
+          "tokenOrder": [
+            "ex-a2-pla-4_t1",
+            "ex-a2-pla-4_t2",
+            "ex-a2-pla-4_t3",
+            "ex-a2-pla-4_t4",
+            "ex-a2-pla-4_t5",
+            "ex-a2-pla-4_t6",
+            "ex-a2-pla-4_t7",
+            "ex-a2-pla-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الظرف الزمني El próximo mes ثم المستقبل voy a ثم المصدر مع حرف الجر cambiar de horario.",
+        "targetVocab": [
+          "mes",
+          "cambiar",
+          "horario"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-pla-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما سيبدأه المتحدث العام القادم",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد خطة المتحدث",
+        "stemEs": "El próximo año voy a comenzar un nuevo proyecto.",
+        "stemAr": "العام القادم سوف أبدأ مشروعاً جديداً.",
+        "options": [
+          {
+            "id": "ex-a2-pla-5_a",
+            "text": "comenzar",
+            "textAr": "يبدأ",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pla-5_b",
+            "text": "cambiar",
+            "textAr": "يغير",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال comenzar (يبدأ) وليس cambiar."
+          },
+          {
+            "id": "ex-a2-pla-5_c",
+            "text": "trabajo",
+            "textAr": "عمل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على بدء مشروع nuevo proyecto."
+          }
+        ],
+        "targetVocab": [
+          "comenzar",
+          "año",
+          "cambiar",
+          "trabajo"
+        ],
+        "explanationAr": "المتحدث قال: voy a comenzar un nuevo proyecto.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_comenzar_proyecto.mp3",
+        "speechEs": "El próximo año voy a comenzar un nuevo proyecto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pla-5_a"
+          ],
+          "selectedOptionId": "ex-a2-pla-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pla-5_b": "المتحدث قال comenzar (يبدأ) وليس cambiar.",
+          "ex-a2-pla-5_c": "المتحدث ركز على بدء مشروع nuevo proyecto."
+        }
+      },
+      {
+        "id": "ex-a2-pla-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق رغبتك في تغيير العمل مستقبلاً",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأنك تنوي تغيير عملك في المستقبل القريب",
+        "stemEs": "Pienso cambiar de trabajo este año.",
+        "stemAr": "أنوي تغيير عملي هذا العام.",
+        "audioKey": "pending/a2_pienso_cambiar_trabajo.mp3",
+        "targetVocab": [
+          "pensar",
+          "cambiar",
+          "trabajo",
+          "año"
+        ],
+        "explanationAr": "تذكر كسر حرف i في pienso ونطق j في trabajo كـ خاء.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_pienso_cambiar_trabajo.mp3",
+          "modelAnswer": "Pienso cambiar de trabajo este año."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

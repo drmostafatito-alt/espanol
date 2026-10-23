@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-imperativo-salud",
+    "unitSlug": "a2-u6-health",
+    "levelCode": "A2",
+    "titleAr": "صيغة الأمر الإيجابي للنصائح الطبية: Imperativo Afirmativo",
+    "titleEs": "El imperativo afirmativo para la salud",
+    "subtitleAr": "تصريف الأمر المباشر مع tú (toma, bebe, descansa) وإرشادات العلاج",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصوغ المتعلم صيغة الأمر الإيجابي للمخاطب tú: أفعال -ar تأخذ -a (toma, descansa)، وأفعال -er/-ir تأخذ -e (bebe, come, duerme).",
+        "أن يفهم وينفذ التعليمات الطبية المباشرة المكتوبة على علب الدواء.",
+        "أن يوظف أفعال العناية الصحية: tomar, beber, comer, descansar, dormir, evitar."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قاعدة الأمر الإيجابي المنتظم مع Tú",
+          "explanationAr": "صيغة الأمر الإيجابي مع ضمير المخاطب tú تطابق تماماً تصريف الغائب المفرد (él/ella) في زمن المضارع البسيط:\n- أفعال **-ar**: تأخذ النهاية **-a**:\n  - tomar -> **Toma** (تناول / خذ)\n  - descansar -> **Descansa** (استرح)\n  - evitar -> **Evita** (تجنب)\n- أفعال **-er / -ir**: تأخذ النهاية **-e**:\n  - beber -> **Bebe** (اشرب)\n  - comer -> **Come** (كُل)\n  - dormir (ue) -> **Duerme** (نَم كفاية)\nتُستخدم هذه الصيغة للأوامر والنصائح الحانية والتعليمات الطبية المباشرة."
+        }
+      ],
+      "commonMistakesAr": [
+        "وضع s في نهاية الأمر مع tú (الصواب: toma و bebe، والخطأ: *tomas* أو *bebes*؛ فالـ s للمضارع الخبري وليس للأمر).",
+        "عكس النهايات (وضع -e لأفعال -ar أو -a لأفعال -er؛ تذكر: أمر tú هو نفس شكل مضارع él بالضبط)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر يقول الطبيب: «اشرب مية كتير، ونام بدري، وخد الدوا في ميعاده». في الإسبانية بصيغة الأمر: Bebe mucha agua, duerme bien y toma la medicina a su hora."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا صيغة الأمر الإيجابي الودي (toma, come) لا تُعد وقاحة أو تحكماً، بل تعبر عن حرص شديد واهتمام ومحبة من الصديق أو الطبيب تجاه المريض."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-imperativo-salud-intro",
+        "type": "explanation",
+        "titleAr": "الأمر الطبي والإرشادات",
+        "bodyAr": "أهم أفعال الأمر للنصائح الصحية:\n- **Toma**: خذ / تناول (Toma esta medicina)\n- **Bebe**: اشرب (Bebe muchos líquidos)\n- **Come**: كُل (Come fruta fresca)\n- **Descansa**: استرح (Descansa todo lo que puedas)\n- **Duerme**: نَم (Duerme ocho horas al día)\n- **Evita**: تجنب / ابتعد عن (Evita el estrés)",
+        "examples": [
+          {
+            "es": "Toma este jarabe antes de dormir.",
+            "ar": "تناول هذا الشراب قبل النوم."
+          },
+          {
+            "es": "Bebe mucha agua durante el día.",
+            "ar": "اشرب ماء كثيراً خلال اليوم."
+          },
+          {
+            "es": "Evita las comidas muy pesadas.",
+            "ar": "تجنب الوجبات الدسمة جداً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "toma",
+      "bebe",
+      "come",
+      "descansa",
+      "duerme",
+      "evita"
+    ],
+    "reviewVocabulary": [
+      "agua",
+      "medicina"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصوغ المتعلم صيغة الأمر الإيجابي للمخاطب tú: أفعال -ar تأخذ -a (toma, descansa)، وأفعال -er/-ir تأخذ -e (bebe, come, duerme).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-imp-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الأمر المثبت المناسبة للمخاطب الودي (tú)",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي صيغة الأمر الموجه للمخاطب المفرد من الفعل tomar؟",
+        "stemEs": "¡_____ esta pastilla con un vaso de agua!",
+        "stemAr": "تناول هذا القرص مع كوب ماء!",
+        "options": [
+          {
+            "id": "ex-a2-imp-1_a",
+            "text": "Toma",
+            "textAr": "صيغة الأمر الإيجابي مع tú (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-imp-1_b",
+            "text": "Tomas",
+            "textAr": "مضارع خبري وليس أمراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الأمر مع tú تحذف s فتصبح Toma."
+          },
+          {
+            "id": "ex-a2-imp-1_c",
+            "text": "Tome",
+            "textAr": "صيغة أمر الاحترام مع usted",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخطاب هنا موجه لصيغة tú الودية."
+          }
+        ],
+        "targetVocab": [
+          "toma",
+          "agua"
+        ],
+        "explanationAr": "أمر tú من أفعال -ar ينتهي بـ -a مثل مضارع الغائب: Toma.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-imp-1_a"
+          ],
+          "selectedOptionId": "ex-a2-imp-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-imp-1_b": "في الأمر مع tú تحذف s فتصبح Toma.",
+          "ex-a2-imp-1_c": "الخطاب هنا موجه لصيغة tú الودية."
+        }
+      },
+      {
+        "id": "ex-a2-imp-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب صيغة الأمر المناسبة لشرب السوائل مع tú",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة الأمر الإيجابي مع tú من الفعل beber (ينتهي بـ -e)",
+        "stemEs": "Para no deshidratarte, _____ mucho líquido hoy.",
+        "stemAr": "لكي لا تصاب بالجفاف، ... سوائل كثيرة اليوم.",
+        "targetVocab": [
+          "bebe"
+        ],
+        "explanationAr": "صيغة الأمر من أفعال -er مع tú تنتهي بـ -e: bebe.",
+        "answerKey": {
+          "accepted": [
+            "bebe"
+          ],
+          "acceptableAnswers": [
+            "bebe"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-imp-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الدال على التحذير وتجنب الشيء الضار",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو فعل الأمر الذي ينصح بالابتعاد عن التوتر؟",
+        "stemEs": "Para proteger tu corazón, _____ las situaciones de estrés.",
+        "stemAr": "لحماية قلبك، ... مواقف التوتر والضغط.",
+        "options": [
+          {
+            "id": "ex-a2-imp-3_a",
+            "text": "evita",
+            "textAr": "تجنب / ابتعد عن",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-imp-3_b",
+            "text": "come",
+            "textAr": "كُل",
+            "isCorrect": false,
+            "distractorRationaleAr": "come تعني تناول الطعام ولا تصلح مع التوتر."
+          },
+          {
+            "id": "ex-a2-imp-3_c",
+            "text": "bebe",
+            "textAr": "اشرب",
+            "isCorrect": false,
+            "distractorRationaleAr": "bebe للشرب فقط."
+          }
+        ],
+        "targetVocab": [
+          "evita",
+          "come",
+          "bebe"
+        ],
+        "explanationAr": "فعل الأمر evita مشتق من evitar ويعني تجنب أو تفادَ.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-imp-3_a"
+          ],
+          "selectedOptionId": "ex-a2-imp-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-imp-3_b": "come تعني تناول الطعام ولا تصلح مع التوتر.",
+          "ex-a2-imp-3_c": "bebe للشرب فقط."
+        }
+      },
+      {
+        "id": "ex-a2-imp-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتقديم نصيحة طبية بالنوم والراحة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-imp-4_t1",
+            "kind": "token",
+            "text": "Duerme"
+          },
+          {
+            "id": "ex-a2-imp-4_t2",
+            "kind": "token",
+            "text": "ocho"
+          },
+          {
+            "id": "ex-a2-imp-4_t3",
+            "kind": "token",
+            "text": "horas"
+          },
+          {
+            "id": "ex-a2-imp-4_t4",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-a2-imp-4_t5",
+            "kind": "token",
+            "text": "descansa"
+          },
+          {
+            "id": "ex-a2-imp-4_t6",
+            "kind": "token",
+            "text": "bien"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Duerme ocho horas y descansa bien"
+          ],
+          "tokenOrder": [
+            "ex-a2-imp-4_t1",
+            "ex-a2-imp-4_t2",
+            "ex-a2-imp-4_t3",
+            "ex-a2-imp-4_t4",
+            "ex-a2-imp-4_t5",
+            "ex-a2-imp-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: أمر الفعل الأول Duerme ثم الساعات ocho horas ثم أداة العطف y وأمر الفعل الثاني descansa bien.",
+        "targetVocab": [
+          "duerme",
+          "descansa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-imp-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما نصح به الطبيب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد التعليمات الموجهة للمريض",
+        "stemEs": "Descansa en casa y toma la medicina a tiempo.",
+        "stemAr": "استرح في البيت وتناول الدواء في وقته.",
+        "options": [
+          {
+            "id": "ex-a2-imp-5_a",
+            "text": "descansa",
+            "textAr": "استرح",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-imp-5_b",
+            "text": "come",
+            "textAr": "كُل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال descansa وليس come."
+          },
+          {
+            "id": "ex-a2-imp-5_c",
+            "text": "duerme",
+            "textAr": "نم",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث بدأ بنصيحة الراحة المنزلية descansa."
+          }
+        ],
+        "targetVocab": [
+          "descansa",
+          "medicina",
+          "come",
+          "duerme"
+        ],
+        "explanationAr": "المتحدث قال: Descansa en casa y toma la medicina.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_descansa_en_casa.mp3",
+        "speechEs": "Descansa en casa y toma la medicina a tiempo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-imp-5_a"
+          ],
+          "selectedOptionId": "ex-a2-imp-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-imp-5_b": "المتحدث قال descansa وليس come.",
+          "ex-a2-imp-5_c": "المتحدث بدأ بنصيحة الراحة المنزلية descansa."
+        }
+      },
+      {
+        "id": "ex-a2-imp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق التوجيه الطبي بثقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الأمر بتناول الطعام الصحي بوضوح",
+        "stemEs": "Come comida sana y bebe mucha agua.",
+        "stemAr": "تناول طعاماً صحياً واشرب ماءً كثيراً.",
+        "audioKey": "pending/a2_come_sano_bebe.mp3",
+        "targetVocab": [
+          "come",
+          "bebe",
+          "agua"
+        ],
+        "explanationAr": "تذكر إسقاط النبر على المقطع الأول في cOme و bEbe.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_come_sano_bebe.mp3",
+          "modelAnswer": "Come comida sana y bebe mucha agua."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

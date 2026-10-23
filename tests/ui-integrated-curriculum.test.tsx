@@ -397,4 +397,197 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     expect(submitData.correct).toBe(true);
     expect(submitData.explanationAr).toContain('cabeza');
   });
+
+  it('وحدة المستقبل A2 (a2-ir-a-infinitivo) تُسلَّم جلساتها وتصحح تصريف vamos بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_ira@example.com');
+    const res = await h.call('/api/lessons/a2-ir-a-infinitivo/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('المستقبل القريب');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-ir-a-infinitivo/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'vamos',
+        eventId: 'evt_test_ira_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة المقارنات A2 (a2-comparativos-superioridad) تُسلَّم جلساتها وتصحح مقارنة التفوق بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_cmp@example.com');
+    const res = await h.call('/api/lessons/a2-comparativos-superioridad/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('صيغ المقارنة');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-comparativos-superioridad/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'mejor',
+        eventId: 'evt_test_cmp_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة تجارب الماضي A2 (a2-perfecto-formacion) تُسلَّم جلساتها وتصحح الماضي المركب بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_per@example.com');
+    const res = await h.call('/api/lessons/a2-perfecto-formacion/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الماضي القريب المركب');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-perfecto-formacion/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'estudiado',
+        eventId: 'evt_test_per_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الصحة والأعراض A2 (a2-sintomas-medico) تُسلَّم جلساتها وتصحح وصف الأعراض بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_sin@example.com');
+    const res = await h.call('/api/lessons/a2-sintomas-medico/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الأعراض عند الطبيب');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-sintomas-medico/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'tos',
+        eventId: 'evt_test_sin_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة السكن والإسكان A2 (a2-tipos-vivienda) تُسلَّم جلساتها وتصحح مفردات السكن بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_viv@example.com');
+    const res = await h.call('/api/lessons/a2-tipos-vivienda/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أنواع السكن');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-tipos-vivienda/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'luminoso',
+        eventId: 'evt_test_viv_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الهوايات والرياضة A2 (a2-deportes-tiempo-libre) تُسلَّم وتصحح إدغام al بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_dep@example.com');
+    const res = await h.call('/api/lessons/a2-deportes-tiempo-libre/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الرياضة وأنشطة وقت الفراغ');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-deportes-tiempo-libre/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'al',
+        eventId: 'evt_test_dep_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الهاتف والمواعيد A2 (a2-llamadas-telefonicas) تُسلَّم وتصحح السؤال عن المتصل بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_tel@example.com');
+    const res = await h.call('/api/lessons/a2-llamadas-telefonicas/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('المكالمات الهاتفية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-llamadas-telefonicas/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'quién',
+        eventId: 'evt_test_tel_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الثقافة والتقاليد A2 (a2-fiestas-tradiciones) تُسلَّم وتصحح تقاليد الأعياد بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_fie@example.com');
+    const res = await h.call('/api/lessons/a2-fiestas-tradiciones/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الأعياد والتقاليد');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a2-fiestas-tradiciones/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'tradición',
+        eventId: 'evt_test_fie_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
 });
