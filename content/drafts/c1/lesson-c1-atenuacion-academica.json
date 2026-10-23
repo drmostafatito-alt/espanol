@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-atenuacion-academica",
+    "titleAr": "التلطيف والتحفظ المنهجي: La atenuación y el 'hedging' académico",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u3-academic-discourse",
+    "objectiveAr": "أن يصيغ المتعلم الأحكام النقدية باعتدال وتواضع علمي باستخدام أساليب التلطيف (cabría sugerir, parecería prudente, los datos apuntan a).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "cabria",
+      "prudente",
+      "apuntan",
+      "matizar",
+      "plausible",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Condicional de modestia: cabría sugerir que / convendría examinar",
+      "Verbos de percepción atenuada: parecería prudente esperar",
+      "Fórmulas de cautela interpretativa: los indicios apuntan hacia",
+      "Matización epistemológica: una hipótesis plausible pero provisional"
+    ],
+    "grammarTopics": [
+      "hedging-academico",
+      "atenuacion-y-cortesia-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ندوة حول نتائج تجارب سريرية أولية لعلاج جيني حديث.",
+        "settingAr": "معهد أبحاث الطب الحيوي في برشلونة",
+        "lines": [
+          {
+            "es": "A la vista de los resultados, cabría sugerir una correlación preliminar entre ambos factores.",
+            "ar": "في ضوء النتائج الراهنة، يمكننا أن نقترح بحذر وجود ارتباط أولي بين كلا العاملين.",
+            "arEg": "على ضوء النتايج دي، نقدر نقترح بهدوء وتحفظ إن في علاقة مبدئية بين العاملين دول.",
+            "audioKey": "pending/c1-u3-ate-1"
+          },
+          {
+            "es": "Parecería prudente abstenerse de formular conclusiones definitivas por el momento.",
+            "ar": "يبدو من الحكمة والكياسة المنهجية الامتناع عن صياغة استنتاجات قاطعة في الوقت الراهن.",
+            "arEg": "الأعقل والأضمن إننا منستعجلش ومنطلعش بنتايج نهائية جازمة دلوقتي خالص.",
+            "audioKey": "pending/c1-u3-ate-2"
+          },
+          {
+            "es": "Los datos obtenidos apuntan a una mejoría notable, si bien conviene matizar su alcance.",
+            "ar": "البيانات التي تم الحصول عليها تشير إلى تحسن ملحوظ، وإن كان يجدر تدقيق مداه وحدوده.",
+            "arEg": "الأرقام اللي معانا بتشاور على تحسن واضح، بس لازم نوضح ونظبط مداها بالظبط.",
+            "audioKey": "pending/c1-u3-ate-3"
+          },
+          {
+            "es": "Estamos ante una hipótesis sumamente plausible, sujeta todavía a contrastación empírica.",
+            "ar": "إننا أمام فرضية معقولة ومقبولة للغاية، لكنها ما تزال خاضعة للتحقق التجريبي المستمر.",
+            "arEg": "إحنا قدام فرضية مقنعة ومقبولة جداً، بس لسه محتاجة تجارب وتأكيدات أكتر في المعمل.",
+            "audioKey": "pending/c1-u3-ate-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-aac-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى كلام الباحث وحدد الصيغة الشرطية التي لجأ إليها لتقديم اقتراحه بتواضع وتحفظ علمي رفيع.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما الصيغة اللفظية التي عبّر بها الباحث عن فرضيته دون جزم متعجرف؟",
+        "stemEs": "A la vista de los resultados, cabría sugerir una correlación preliminar entre ambos factores.",
+        "stemAr": "في ضوء النتائج الراهنة، يمكننا أن نقترح بحذر وجود ارتباط أولي بين كلا العاملين.",
+        "options": [
+          {
+            "id": "ex-c1-aac-1_a",
+            "text": "Cabría sugerir",
+            "textAr": "يمكن اقتراح ذلك بتحفظ وتواضع منهجي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aac-1_b",
+            "text": "Es indiscutible",
+            "textAr": "من المسلم به قطعا ولا يقبل أدنى نقاش",
+            "isCorrect": false,
+            "distractorRationaleAr": "جزم قطعي يتنافى مع روح التلطيف الأكاديمي."
+          },
+          {
+            "id": "ex-c1-aac-1_c",
+            "text": "Exijo que crean",
+            "textAr": "أفرض عليكم التصديق بالقوة والإكراه",
+            "isCorrect": false,
+            "distractorRationaleAr": "أسلوب استبدادي لا يمت للعلم بصلة."
+          }
+        ],
+        "targetVocab": [
+          "cabria",
+          "rigor"
+        ],
+        "explanationAr": "صيغة الشرط البسيط «cabría + infinitivo» تمثل ذروة الأدب والتحفظ الأكاديمي لعرض فكرة دون فرضها كحقيقة مطلقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u3-ate-1",
+        "speechEs": "A la vista de los resultados, cabría sugerir una correlación preliminar entre ambos factores.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aac-1_a"
+          ],
+          "selectedOptionId": "ex-c1-aac-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aac-1_b": "جزم قطعي يتنافى مع روح التلطيف الأكاديمي.",
+          "ex-c1-aac-1_c": "أسلوب استبدادي لا يمت للعلم بصلة."
+        }
+      },
+      {
+        "id": "ex-c1-aac-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي صفة تستخدم في الخطاب العلمي لوصف فرضية تبدو منطقية وقابلة للتصديق لكنها ليست يقين بعد؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الوصف العلمي الدقيق للفرضية المقبولة عقلياً:",
+        "stemEs": "La explicación del equipo resulta ____, pero requiere ensayos adicionales.",
+        "stemAr": "تفسير الفريق يبدو معقولاً ومقبولاً منطقياً، بيد أنه يتطلب تجارب إضافية.",
+        "options": [
+          {
+            "id": "ex-c1-aac-2_a",
+            "text": "plausible",
+            "textAr": "معقول / جدير بالقبول والتصديق المؤقت",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aac-2_b",
+            "text": "absurda",
+            "textAr": "سخيف وعبثي ومناف للمنطق",
+            "isCorrect": false,
+            "distractorRationaleAr": "وصف سلبي قادح."
+          },
+          {
+            "id": "ex-c1-aac-2_c",
+            "text": "imposible",
+            "textAr": "مستحيل التحقق فيزيائياً",
+            "isCorrect": false,
+            "distractorRationaleAr": "حكم قطعي بالبطلان."
+          }
+        ],
+        "targetVocab": [
+          "plausible",
+          "rigor"
+        ],
+        "explanationAr": "تستخدم كلمة «plausible» لوصف الفرضيات والنظريات التي تتوافق مع العقل والمشاهدات المبدئية قبل الثبوت القاطع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aac-2_a"
+          ],
+          "selectedOptionId": "ex-c1-aac-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aac-2_b": "وصف سلبي قادح.",
+          "ex-c1-aac-2_c": "حكم قطعي بالبطلان."
+        }
+      },
+      {
+        "id": "ex-c1-aac-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بصفة تدل على الحكمة والتأني الاحترازي: «parecería ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الصفة المناسبة لبيان التريث والاحتياط في اتخاذ القرار:",
+        "stemEs": "Parecería ____ aguardar a la publicación de los datos definitivos.",
+        "stemAr": "يبدو من الحكمة والتعقل التريث ريثما تُنشر البيانات النهائية.",
+        "targetVocab": [
+          "prudente"
+        ],
+        "explanationAr": "تعبير «parecería prudente» من أكثر التراكيب الدبلوماسية والأكاديمية استخداماً لإبطاء الاندفاع وتجنب الخطأ.",
+        "answerKey": {
+          "accepted": [
+            "prudente"
+          ],
+          "acceptableAnswers": [
+            "prudente"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aac-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفعل الذي يفيد «إضافة لمسات تدقيق وإيضاحات تمنع التعميم الخاطئ للفكرة»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل المعبر عن ضبط المعنى وتعديله بدقة:",
+        "stemEs": "El autor afirma que la economía crece, si bien conviene ____ este optimismo.",
+        "stemAr": "يؤكد المؤلف أن الاقتصاد ينمو، وإن كان يجدر ضبط هذا التفاؤل وتحديد أبعاده.",
+        "options": [
+          {
+            "id": "ex-c1-aac-4_a",
+            "text": "matizar",
+            "textAr": "تدقيق المعنى وتعديل حواشيه لإبراز الفروق",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aac-4_b",
+            "text": "borrar",
+            "textAr": "شطب وحذف الفكرة بالكامل",
+            "isCorrect": false,
+            "distractorRationaleAr": "إلغاء تام وليس تدقيقاً."
+          },
+          {
+            "id": "ex-c1-aac-4_c",
+            "text": "olvidar",
+            "textAr": "إهمال الأمر والنسيان",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بالتحليل الأكاديمي."
+          }
+        ],
+        "targetVocab": [
+          "matizar",
+          "rigor"
+        ],
+        "explanationAr": "الفعل «matizar» من أعمدة أسلوب C1، ويعني إظهار الظلال الدقيقة والحدود الدقيقة للحكم لتفادي التعميمات الفجة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aac-4_a"
+          ],
+          "selectedOptionId": "ex-c1-aac-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aac-4_b": "إلغاء تام وليس تدقيقاً.",
+          "ex-c1-aac-4_c": "لا علاقة له بالتحليل الأكاديمي."
+        }
+      },
+      {
+        "id": "ex-c1-aac-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين استنتاج علمي محترس يربط بين المؤشرات والنتائج المتوقعة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-aac-5_t1",
+            "kind": "token",
+            "text": "Los"
+          },
+          {
+            "id": "ex-c1-aac-5_t2",
+            "kind": "token",
+            "text": "indicios"
+          },
+          {
+            "id": "ex-c1-aac-5_t3",
+            "kind": "token",
+            "text": "apuntan"
+          },
+          {
+            "id": "ex-c1-aac-5_t4",
+            "kind": "token",
+            "text": "hacia"
+          },
+          {
+            "id": "ex-c1-aac-5_t5",
+            "kind": "token",
+            "text": "esa"
+          },
+          {
+            "id": "ex-c1-aac-5_t6",
+            "kind": "token",
+            "text": "dirección"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Los indicios apuntan hacia esa dirección"
+          ],
+          "tokenOrder": [
+            "ex-c1-aac-5_t1",
+            "ex-c1-aac-5_t2",
+            "ex-c1-aac-5_t3",
+            "ex-c1-aac-5_t4",
+            "ex-c1-aac-5_t5",
+            "ex-c1-aac-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب: الفاعل Los indicios ثم الفعل الدال على التوجيه apuntan وحرف الجر hacia والمشار إليه.",
+        "targetVocab": [
+          "apuntan"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aac-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة أكاديمية متزنة توحي بالتأني والعقلانية الراجحة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الإيقاع الهادئ للشرط:",
+        "stemEs": "Cabría formular una interpretación más prudente.",
+        "stemAr": "يمكن تقديم تفسير أكثر حيطة وتأنياً في هذا السياق.",
+        "audioKey": "pending/c1-u3-ate-spk",
+        "targetVocab": [
+          "cabria",
+          "prudente"
+        ],
+        "explanationAr": "تأكد من إعطاء النبر الصحيح لكلمة Cabría على مقطع -brí- وإخراج الراء الفصيحة بصوت رخو سليم.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u3-ate-spk",
+          "modelAnswer": "Cabría formular una interpretación más prudente."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

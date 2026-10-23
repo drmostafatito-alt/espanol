@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-discurso-conmemorativo",
+    "titleAr": "الخطب الاحتفالية والمحاضرات التكريمية: El discurso conmemorativo y la oratoria solemne",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u8-advanced-writing",
+    "objectiveAr": "أن يلقي المتعلم خطبة احتفالية أو محاضرة افتتاحية جامعة (discurso magistral / laudatio) مستخدماً البلاغة الكلاسيكية والبيان المؤثر (elocuencia, homenaje, solemne, magno).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "magistral",
+      "elocuencia",
+      "homenaje",
+      "solemne",
+      "magno",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmulas de exordio solemne: congregarse para rendir un merecido homenaje",
+      "Laudatio académica: ensalzar los méritos imperecederos de una trayectoria magna",
+      "Recursos de la elocuencia clásica: anáforas rítmicas, períodos amplios y clímax",
+      "Peroración conmovedora: apelación al legado perenne ante la posteridad"
+    ],
+    "grammarTopics": [
+      "oratoria-solemne-c1",
+      "laudatio-y-discursos-magistrales"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حفل تسليم جائزة ثربانتس للآداب في القاعة الكبرى (Paraninfo) بجامعة ألكالا دي إيناريس.",
+        "settingAr": "مدرج جامعة ألكالا التاريخي، ألكالا دي إيناريس، مدريد",
+        "lines": [
+          {
+            "es": "Nos congrega hoy en este paraninfo histórico un motivo de honda solemnidad institucional.",
+            "ar": "تجمعنا اليوم في هذا المدرج الجامعي التاريخي مناسبة ذات وقار ومهابة مؤسسية عميقة.",
+            "arEg": "متجمعين النهاردة في هذا الصرح التاريخي العريق في مناسبة ليها هيبة ووقار كبير في قلوبنا كلنا.",
+            "audioKey": "pending/c1-u8-dis-1"
+          },
+          {
+            "es": "Nos reunimos para rendir un tributo y homenaje imperecedero a una vida entregada a las letras.",
+            "ar": "نلتئم هاهنا لنزجي آيات التكريم والإجلال الخالد لمسيرة حياة نُذرت لخدمة لغة الضاد والأدب الإنساني.",
+            "arEg": "إحنا متجمعين عشان نكرم ونوجه تحية تقدير وإجلال خالدة لشخص كرّس عمره كله لخدمة الأدب والكلمة الصادقة.",
+            "audioKey": "pending/c1-u8-dis-2"
+          },
+          {
+            "es": "Su magno magisterio ha dejado una huella indeleble en varias generaciones de hispanistas.",
+            "ar": "لقد تركت أستاذيته الكبرى ورسالته التربوية الجليلة أثراً لا يُمحى في وجدان أجيال متعاقبة من دارسي الإسبانية.",
+            "arEg": "عطاؤه العظيم وأستاذيته الكبيرة سابت بصمة وعلامة مش هتتمحي أبداً في أجيال الباحثين والمحبين للغة.",
+            "audioKey": "pending/c1-u8-dis-3"
+          },
+          {
+            "es": "La elocuencia conmovedora de sus palabras seguirá inspirándonos en la incansable búsqueda de la belleza.",
+            "ar": "إن البلاغة الآسرة لكلماته ستظل مصدر إلهام لنا جميعاً في سعينا الدؤوب نحو معانقة الجمال السامي.",
+            "arEg": "الفصاحة والبلاغة اللي بتهز القلوب في كلامه هتفضل تنور طريقنا وإحنا بندور على الجمال والحق.",
+            "audioKey": "pending/c1-u8-dis-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-dco-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى مستهل الخطبة الأكاديمية وحدد الغاية العظمى التي اجتمع الحاضرون لأجلها في المدرج التاريخي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الغاية النبيلة التي دعت الحضور للالتئام في هذا الحفل الجامعي؟",
+        "stemEs": "Nos reunimos para rendir un tributo y homenaje imperecedero a una vida entregada a las letras.",
+        "stemAr": "نلتئم هاهنا لنزجي آيات التكريم والإجلال الخالد لمسيرة حياة نُذرت لخدمة لغة الأدب الإنساني.",
+        "options": [
+          {
+            "id": "ex-c1-dco-1_a",
+            "text": "Rendir un homenaje imperecedero a una trayectoria ejemplar",
+            "textAr": "إزجاء التكريم والإجلال الخالد لمسيرة حياة رائدة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dco-1_b",
+            "text": "Repartir premios de la lotería nacional",
+            "textAr": "توزيع تذاكر اليانصيب وأموال الحظ",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج الإطار التكريمي الأكاديمي."
+          },
+          {
+            "id": "ex-c1-dco-1_c",
+            "text": "Protestar por el mal tiempo en la ciudad",
+            "textAr": "الاحتجاج على هطول المطر وبرودة الجو",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا صلة له بمراسم التكريم."
+          }
+        ],
+        "targetVocab": [
+          "homenaje",
+          "solemne"
+        ],
+        "explanationAr": "تعبير «rendir homenaje» هو التعبير الفصيح لتقديم التكريم والتقدير الرسمي المستحق لشخصية قدمت إسهامات جليلة للمجتمع والثقافة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u8-dis-2",
+        "speechEs": "Nos reunimos para rendir un tributo y homenaje imperecedero a una vida entregada a las letras.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dco-1_a"
+          ],
+          "selectedOptionId": "ex-c1-dco-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dco-1_b": "خارج الإطار التكريمي الأكاديمي.",
+          "ex-c1-dco-1_c": "لا صلة له بمراسم التكريم."
+        }
+      },
+      {
+        "id": "ex-c1-dco-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي الملكة البيانية والخطابية العظمى التي تعني «الفصاحة الساحرة والقدرة على هز الوجدان والتأثير في السامعين»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الكلمة الكلاسيكية المعبرة عن البيان الساحر والفصاحة المؤثرة:",
+        "stemEs": "El orador cautivó al auditorio gracias a su prodigiosa ____ verbal.",
+        "stemAr": "سحر الخطيب المفوه قلوب الحاضرين بفضل فصاحته وبيانه المعجز وبلاغته اللفظية الأخاذة.",
+        "options": [
+          {
+            "id": "ex-c1-dco-2_a",
+            "text": "elocuencia",
+            "textAr": "الفصاحة والبلاغة الآسرة وقوة البيان والتأثير",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dco-2_b",
+            "text": "tartamudez",
+            "textAr": "التأتأة والتلعثم والتعثر في النطق",
+            "isCorrect": false,
+            "distractorRationaleAr": "عاهة نطقية تناقض الفصاحة."
+          },
+          {
+            "id": "ex-c1-dco-2_c",
+            "text": "timidez",
+            "textAr": "الخجل الشديد والرهاب من مواجهة الناس",
+            "isCorrect": false,
+            "distractorRationaleAr": "يمنع الخطابة العامة."
+          }
+        ],
+        "targetVocab": [
+          "elocuencia",
+          "magistral"
+        ],
+        "explanationAr": "«La elocuencia» هي قمة فن الخطابة الكلاسيكية، وتجمع بين دقة المعنى وجرس الإيقاع والقدرة على تحريك مشاعر الجماهير وإقناعهم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dco-2_a"
+          ],
+          "selectedOptionId": "ex-c1-dco-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dco-2_b": "عاهة نطقية تناقض الفصاحة.",
+          "ex-c1-dco-2_c": "يمنع الخطابة العامة."
+        }
+      },
+      {
+        "id": "ex-c1-dco-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالصفة الكبرى الدالة على الجلالة والعظمة الفائقة للحدث أو العمل: «un acontecimiento ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الصفة المعبرة عن العظمة والمهابة الاستثنائية:",
+        "stemEs": "La celebración del centenario de la universidad fue un acontecimiento ____ que congregó a sabios de todo el orbe.",
+        "stemAr": "كان الاحتفال بمئوية الجامعة حدثاً جليلاً هائلاً جمع كبار العلماء والمفكرين من كل بقاع الأرض.",
+        "targetVocab": [
+          "magno"
+        ],
+        "explanationAr": "الصفة التراثية الفصيحة «magno» (من اللاتينية magnus) تفيد العظمة البالغة والأهمية التاريخية الفائقة كقولنا «obra magna» أو «evento magno».",
+        "answerKey": {
+          "accepted": [
+            "magno"
+          ],
+          "acceptableAnswers": [
+            "magno"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-dco-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا يسمى الخطاب الرفيع أو الدرس النموذجي البارع الذي يلقيه أستاذ علامة في افتتاح العام الجامعي؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الوصف الدقيق للدرس الافتتاحي الرفيع:",
+        "stemEs": "El catedrático emérito pronunció una lección ____ que fue ovacionada por todos los decanos.",
+        "stemAr": "ألقى الأستاذ المتفرغ المرموق محاضرة ودرساً افتتاحياً جامعاً قوبل بعاصفة من التصفيق الحار من كافة العمداء.",
+        "options": [
+          {
+            "id": "ex-c1-dco-4_a",
+            "text": "magistral",
+            "textAr": "درس أستاذي جامع ومتقن يمثل ذروة العلم والبيان",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dco-4_b",
+            "text": "mediocre",
+            "textAr": "سطحي وركيك ومبتذل لا قيمة له",
+            "isCorrect": false,
+            "distractorRationaleAr": "حكم تحقيري مناقض للتميز."
+          },
+          {
+            "id": "ex-c1-dco-4_c",
+            "text": "infantil",
+            "textAr": "طفولي ساذج موجه للصغار",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يلقى في مدرجات الجامعات الكبرى."
+          }
+        ],
+        "targetVocab": [
+          "magistral",
+          "solemne"
+        ],
+        "explanationAr": "«Una lección magistral» (أو discurso magistral) هو الخطاب الأكاديمي النموذجي الذي يتوج المناسبات الرسمية ويفيض بالمعرفة العميقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dco-4_a"
+          ],
+          "selectedOptionId": "ex-c1-dco-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dco-4_b": "حكم تحقيري مناقض للتميز.",
+          "ex-c1-dco-4_c": "لا يلقى في مدرجات الجامعات الكبرى."
+        }
+      },
+      {
+        "id": "ex-c1-dco-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء استهلال خطابي وقور يعبر عن إجلال الحضور للمناسبة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-dco-5_t1",
+            "kind": "token",
+            "text": "Rendimos"
+          },
+          {
+            "id": "ex-c1-dco-5_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-c1-dco-5_t3",
+            "kind": "token",
+            "text": "solemne"
+          },
+          {
+            "id": "ex-c1-dco-5_t4",
+            "kind": "token",
+            "text": "homenaje"
+          },
+          {
+            "id": "ex-c1-dco-5_t5",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-c1-dco-5_t6",
+            "kind": "token",
+            "text": "maestro"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Rendimos un solemne homenaje al maestro"
+          ],
+          "tokenOrder": [
+            "ex-c1-dco-5_t1",
+            "ex-c1-dco-5_t2",
+            "ex-c1-dco-5_t3",
+            "ex-c1-dco-5_t4",
+            "ex-c1-dco-5_t5",
+            "ex-c1-dco-5_t6"
+          ]
+        },
+        "explanationAr": "الفعل Rendimos متبوعاً بالمفعول به un solemne homenaje وجار ومجرور al maestro.",
+        "targetVocab": [
+          "solemne",
+          "homenaje"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-dco-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة خطيب مفوه يقف في محراب العلم والأدب ممتلئاً بالوقار والجلال.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الرنين الخطابي الفخم للمفردات:",
+        "stemEs": "Su elocuencia magistral perdura en la memoria.",
+        "stemAr": "إن فصاحته الأستاذية الباهرة تخلد وتبقى حية في ذاكرة الأجيال.",
+        "audioKey": "pending/c1-u8-dis-spk",
+        "targetVocab": [
+          "elocuencia",
+          "magistral"
+        ],
+        "explanationAr": "احرص على ملء الرئتين بالنفس ونطق مقطع -cuen- في elocuencia بنغم صاعد ونبر magistral على المقطع الأخير بوقار.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u8-dis-spk",
+          "modelAnswer": "Su elocuencia magistral perdura en la memoria."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

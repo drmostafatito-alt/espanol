@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-interferencias-sintacticas",
+    "titleAr": "التداخل النحوي بين الإسبانية والعربية: Interferencias sintácticas y estilización",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u6-translation",
+    "objectiveAr": "أن يتغلب المتعلم على التداخلات التركيبية بين الإسبانية والعربية (ترتيب الكلمات VSO/SVO، إسقاط الضمير، حروف الجر المتعدية).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "interferencia",
+      "elipsis",
+      "régimen",
+      "anteposición",
+      "asimetría",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Orden de constituyentes: flexibilidad hispánica frente al orden VSO arábigo clásico",
+      "La elipsis del sujeto pronominal (lengua pro-drop): evitar la redundancia de 'yo/él'",
+      "Régimen preposicional contrastivo: soñar con (يحلم بـ) / depender de (يعتمد على)",
+      "La anteposición enfática del complemento y tematización estilística"
+    ],
+    "grammarTopics": [
+      "linguistica-contrastiva-espanol-arabe",
+      "estilistica-y-sintaxis-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محاضرة في الترجمة المقارنة بجامعة غرناطة لمعالجة الأخطاء التركيبية للناطقين بالعربية.",
+        "settingAr": "كلية الترجمة والترجمة الفورية، جامعة غرناطة",
+        "lines": [
+          {
+            "es": "Muchos traductores caen en la trampa de la interferencia sintáctica calcando la estructura del árabe.",
+            "ar": "يقع العديد من المترجمين في فخ التداخل النحوي عبر محاكاة البنية التركيبية للغة العربية محاكاة حرفية.",
+            "arEg": "مترجمين كتير بيقعوا في فخ التداخل بين اللغتين، وبينقلوا ترتيب الجملة العربي في الإسباني زي ما هو.",
+            "audioKey": "pending/c1-u6-int-1"
+          },
+          {
+            "es": "En español la elipsis del sujeto es la norma general; repetir pronombres como 'yo' o 'él' resulta artificioso.",
+            "ar": "في الإسبانية يعد حذف ضمير الفاعل هو الأصل والقاعدة؛ وتكرار ضمائر مثل 'yo' أو 'él' يولد ركاكة وتكلفاً مصطنعاً.",
+            "arEg": "في الإسباني حذف ضمير الفاعل هو الطبيعي، وتكرار yo و él عمال على بطال بيخلي الكلام تقيل ومصطنع جداً.",
+            "audioKey": "pending/c1-u6-int-2"
+          },
+          {
+            "es": "Debemos prestar minuciosa atención al régimen preposicional de cada verbo para no errar.",
+            "ar": "يجب علينا أن نولي اهتماماً فائقاً لحروف الجر الملازمة لكل فعل حتى لا ننزلق في الأخطاء الشائعة.",
+            "arEg": "لازم نركز كويس جداً في حروف الجر اللي بتيجي مع كل فعل إسباني، عشان منترجمش حرف الجر العربي مكانه.",
+            "audioKey": "pending/c1-u6-int-3"
+          },
+          {
+            "es": "Superar estas asimetrías estructurales es el paso definitivo para lograr una prosa elegante y natural.",
+            "ar": "إن تجاوز هذه الفروق والتباينات الهيكلية هو الخطوة الحاسمة لصياغة أسلوب نثري أنيق وطبيعي الجريان.",
+            "arEg": "تخطي الفروق التركيبية دي بين اللغتين هو السر الحقيقي عشان تكتب إسباني فصيح وسلس من غير ركاكة.",
+            "audioKey": "pending/c1-u6-int-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-isi-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى نصيحة أستاذ اللسانيات المقارنة وحدد القاعدة الذهبية بخصوص ضمائر الفاعل في الإسبانية.",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو السلوك الأسلوبي السليم تجاه ضمير الفاعل (yo, tú, él) في لغة C1 الرفيعة؟",
+        "stemEs": "En español la elipsis del sujeto es la norma general; repetir pronombres como 'yo' o 'él' resulta artificioso.",
+        "stemAr": "في الإسبانية يعد حذف ضمير الفاعل هو الأصل والقاعدة؛ وتكرار ضمائر مثل 'yo' أو 'él' يولد ركاكة وتكلفاً مصطنعاً.",
+        "options": [
+          {
+            "id": "ex-c1-isi-1_a",
+            "text": "Omitir el pronombre salvo cuando sea indispensable para evitar ambigüedad o enfatizar",
+            "textAr": "إسقاط الضمير وحذفه إلا عند الضرورة القصوى لرفع اللبس أو التوكيد",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-isi-1_b",
+            "text": "Repetir el pronombre en cada una de las frases sin excepción",
+            "textAr": "تكرار الضمير في أول كل جملة دون استثناء",
+            "isCorrect": false,
+            "distractorRationaleAr": "يولد ركاكة وثقلاً أسلوبياً معيباً."
+          },
+          {
+            "id": "ex-c1-isi-1_c",
+            "text": "Prohibir totalmente el uso de verbos conjugados",
+            "textAr": "منع استخدام الأفعال المصرفة تماماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "مستحيل في بنية أي لغة."
+          }
+        ],
+        "targetVocab": [
+          "elipsis",
+          "interferencia"
+        ],
+        "explanationAr": "الإسبانية لغة «pro-drop» حيث تكفي نهايات تصريف الفعل لتحديد الفاعل، وحذف الضمير (elipsis) هو معيار الفصاحة الطبيعية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u6-int-2",
+        "speechEs": "En español la elipsis del sujeto es la norma general; repetir pronombres como 'yo' o 'él' resulta artificioso.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-isi-1_a"
+          ],
+          "selectedOptionId": "ex-c1-isi-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-isi-1_b": "يولد ركاكة وثقلاً أسلوبياً معيباً.",
+          "ex-c1-isi-1_c": "مستحيل في بنية أي لغة."
+        }
+      },
+      {
+        "id": "ex-c1-isi-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو حرف الجر الإسباني الصحيح المتعدي به الفعل «soñar» لمقابلة التعبير العربي «يحلم بـ»؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر حرف الجر المتعدي الصحيح وفق النظام النحوي الإسباني:",
+        "stemEs": "Desde su infancia, el joven soñaba ____ viajar por todo el mundo.",
+        "stemAr": "منذ نعومة أظفاره، كان الشاب يحلم بالسفر والتجوال حول العالم بأسره.",
+        "options": [
+          {
+            "id": "ex-c1-isi-2_a",
+            "text": "con",
+            "textAr": "حرف الجر con وهو الملازم للفعل soñar في الفصحى",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-isi-2_b",
+            "text": "en",
+            "textAr": "حرف الجر en نقلاً حرفياً خاطئاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ ترجمي شائع."
+          },
+          {
+            "id": "ex-c1-isi-2_c",
+            "text": "a",
+            "textAr": "حرف الجر a",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يتعدى به فعل الحلم مطلقاً."
+          }
+        ],
+        "targetVocab": [
+          "régimen",
+          "rigor"
+        ],
+        "explanationAr": "النظام الحرفي (régimen preposicional) يفرض «soñar con algo»، وترجمته بـ soñar en أو soñar de خطأ ناتج عن التداخل النحوي مع لغات أخرى.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-isi-2_a"
+          ],
+          "selectedOptionId": "ex-c1-isi-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-isi-2_b": "خطأ ترجمي شائع.",
+          "ex-c1-isi-2_c": "لا يتعدى به فعل الحلم مطلقاً."
+        }
+      },
+      {
+        "id": "ex-c1-isi-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالمصطلح اللساني الدال على حذف الكلمة المفهومة من السياق دون إخلال: «la ____ del sujeto».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة اللسانية الدالة على الإيجاز بالحذف:",
+        "stemEs": "La ____ pronominal otorga fluidez y naturalidad a la redacción académica.",
+        "stemAr": "إن إسقاط وحذف الضمير يضفي انسيابية وتدفقاً طبيعياً على الكتابة الأكاديمية الرفيعة.",
+        "targetVocab": [
+          "elipsis"
+        ],
+        "explanationAr": "«La elipsis» (الإضمار أو الحذف البلاغي) ظاهرة مركزية في الإسبانية لتفادي التكرار الممل للضمائر والأسماء المحورية.",
+        "answerKey": {
+          "accepted": [
+            "elipsis"
+          ],
+          "acceptableAnswers": [
+            "elipsis"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-isi-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو التوصيف اللساني لعدم التطابق البنيوي والتركيبي بين نظامين لغويين مثل الإسبانية والعربية؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المصطلح المعبر عن التباين الهيكلي بين اللغات:",
+        "stemEs": "El traductor profesional debe dominar las ____ sintácticas entre ambas lenguas.",
+        "stemAr": "يجب على المترجم المتمرس أن يتقن التعامل مع التباينات وعدم التناظر التركيبي بين كلا اللغتين.",
+        "options": [
+          {
+            "id": "ex-c1-isi-4_a",
+            "text": "asimetrías",
+            "textAr": "الفروق والتباينات الهيكلية غير المتطابقة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-isi-4_b",
+            "text": "simpatías",
+            "textAr": "المشاعر الودية المتبادلة بين الناس",
+            "isCorrect": false,
+            "distractorRationaleAr": "عاطفة إنسانية لا علاقة لها باللسانيات."
+          },
+          {
+            "id": "ex-c1-isi-4_c",
+            "text": "compras",
+            "textAr": "عمليات الشراء في المتجر",
+            "isCorrect": false,
+            "distractorRationaleAr": "مفردات استهلاكية."
+          }
+        ],
+        "targetVocab": [
+          "asimetría",
+          "interferencia"
+        ],
+        "explanationAr": "«Las asimetrías sintácticas» هي التباينات في رتبة الكلمات وعلاقات الإسناد والتبعية التي تمنع النقل الحرفي وتستلزم إعادة صياغة جذرية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-isi-4_a"
+          ],
+          "selectedOptionId": "ex-c1-isi-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-isi-4_b": "عاطفة إنسانية لا علاقة لها باللسانيات.",
+          "ex-c1-isi-4_c": "مفردات استهلاكية."
+        }
+      },
+      {
+        "id": "ex-c1-isi-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء قاعدة أسلوبية تحث على نقاء التعبير من شوائب التداخل اللغوي.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-isi-5_t1",
+            "kind": "token",
+            "text": "Evita"
+          },
+          {
+            "id": "ex-c1-isi-5_t2",
+            "kind": "token",
+            "text": "toda"
+          },
+          {
+            "id": "ex-c1-isi-5_t3",
+            "kind": "token",
+            "text": "interferencia"
+          },
+          {
+            "id": "ex-c1-isi-5_t4",
+            "kind": "token",
+            "text": "sintáctica"
+          },
+          {
+            "id": "ex-c1-isi-5_t5",
+            "kind": "token",
+            "text": "innecesaria"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Evita toda interferencia sintáctica innecesaria"
+          ],
+          "tokenOrder": [
+            "ex-c1-isi-5_t1",
+            "ex-c1-isi-5_t2",
+            "ex-c1-isi-5_t3",
+            "ex-c1-isi-5_t4",
+            "ex-c1-isi-5_t5"
+          ]
+        },
+        "explanationAr": "الأمر Evita متبوعاً بالمفعول به toda interferencia والصفات sintáctica innecesaria.",
+        "targetVocab": [
+          "interferencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-isi-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة أستاذ لغويات يبرز أهمية الإيقاع الطبيعي الخالي من الشوائب الحرفية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً خلو الصوت من التردد:",
+        "stemEs": "La elipsis del sujeto embellece el estilo.",
+        "stemAr": "إن حذف ضمير الفاعل يزين الأسلوب ويضفي عليه بهاءً ورشاقة.",
+        "audioKey": "pending/c1-u6-int-spk",
+        "targetVocab": [
+          "elipsis",
+          "rigor"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة elipsis على مقطع -lip- وإخراج حرف ll في embellece بصوت فصيح دون ابتذال.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u6-int-spk",
+          "modelAnswer": "La elipsis del sujeto embellece el estilo."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-espanol-neutro",
+    "titleAr": "الإسبانية المحايدة والترجمة الدولية: El español neutro e internacional",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u5-regional",
+    "objectiveAr": "أن يفهم المتعلم معايير 'الإسبانية المحايدة' في الدبلجة العالمية والإعلام العابر للحدود، ومبادئ السياسة اللغوية للـ RAE و ASALE.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "neutro",
+      "panhispánico",
+      "doblaje",
+      "homogeneización",
+      "consenso",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "El concepto de 'español neutro': estándar deslocalizado para doblaje y medios",
+      "Criterios de neutralización: evitación de localismos léxicos y modismos locales",
+      "La política lingüística panhispánica: unidad en la diversidad promovida por la ASALE",
+      "Tensiones entre neutralidad comercial e identidad cultural viva"
+    ],
+    "grammarTopics": [
+      "politica-panhispanica",
+      "espanol-neutro-y-medios-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مؤتمر حول صناعة الدبلجة والترجمة للسينما والمنصات الرقمية العالمية في بوغوتا.",
+        "settingAr": "مركز المؤتمرات الدولي في بوغوتا، كولومبيا",
+        "lines": [
+          {
+            "es": "Las plataformas de streaming exigen un español neutro para amortizar los costes de doblaje en todo el continente.",
+            "ar": "تفرض منصات البث الرقمي إسبانية محايدة لتقليص نفقات الدبلجة وتوزيع الأعمال عبر القارة بأسرها.",
+            "arEg": "منصات البث الكبيرة بتطلب دبلجة بإسبانية محايدة عشان توفر فلوس وتبيع المسلسلات لكل الدول بنفس الصوت.",
+            "audioKey": "pending/c1-u5-neu-1"
+          },
+          {
+            "es": "Ese estándar artificial evita modismos locales como el voseo o el tuteo peninsular con 'vosotros'.",
+            "ar": "يتجنب هذا المعيار المصطنع التعبيرات المحلية الصارخة مثل الفوسيو أو استخدام vosotros الإيبيرية.",
+            "arEg": "المعيار ده بيبعد تماماً عن اللهجات الخاصة زي vos الأرجنتينية أو vosotros الإسبانية عشان الكل يفهم بسهولة.",
+            "audioKey": "pending/c1-u5-neu-2"
+          },
+          {
+            "es": "La política panhispánica de las academias busca el consenso sin imponer la norma de ningún país.",
+            "ar": "تسعى السياسة الجامعة لمجامع اللغة إلى التوافق المشترك دون فرض معيار أي دولة بمفردها على البقية.",
+            "arEg": "سياسة مجامع اللغة الإسبانية كلها بتدور على الإجماع والتوافق، من غير ما تفرض كلام بلد معينة على الباقيين.",
+            "audioKey": "pending/c1-u5-neu-3"
+          },
+          {
+            "es": "Existe un debate encendido sobre si esta homogeneización empobrece la rica diversidad dialectal.",
+            "ar": "يدور نقاش محتدم حول ما إذا كان هذا التنميط والتوحيد القسري يفقر التنوع اللهجي الثري للغة.",
+            "arEg": "في خناقة كبيرة بين اللغويين: هل التوحيد ده بيضعف ويفقر التنوع والجمال اللي في لهجاتنا ولا مفيد للتواصل؟",
+            "audioKey": "pending/c1-u5-neu-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-ene-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث الخبير وحدد الهدف التجاري والتقني من استخدام 'الإسبانية المحايدة' في المنصات العالمية.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "لماذا تلجأ شركات الإنتاج العالمية إلى الإسبانية المحايدة؟",
+        "stemEs": "Las plataformas de streaming exigen un español neutro para amortizar los costes de doblaje en todo el continente.",
+        "stemAr": "تفرض منصات البث الرقمي إسبانية محايدة لتقليص نفقات الدبلجة وتوزيع الأعمال عبر القارة بأسرها.",
+        "options": [
+          {
+            "id": "ex-c1-ene-1_a",
+            "text": "Para distribuir un único doblaje accesible en todos los países hispanohablantes",
+            "textAr": "لتوزيع دبلجة واحدة مفهومة ومقبولة في جميع الدول الناطقة بالإسبانية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ene-1_b",
+            "text": "Para obligar a todos los espectadores a aprender latín clásico",
+            "textAr": "لإجبار المشاهدين على تعلم اللغة اللاتينية القديمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج سياق السينما الحديثة."
+          },
+          {
+            "id": "ex-c1-ene-1_c",
+            "text": "Para eliminar los subtítulos de las películas mudas",
+            "textAr": "لحذف الترجمة النصية من الأفلام الصامتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يمت للدبلجة بصلة."
+          }
+        ],
+        "targetVocab": [
+          "neutro",
+          "doblaje"
+        ],
+        "explanationAr": "«El español neutro» هو نموذج مصطنع تجارياً يُجرد اللغة من النبرات المحلية والخصوصيات الصرفية لضمان فهم شامل وتسويق موحد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u5-neu-1",
+        "speechEs": "Las plataformas de streaming exigen un español neutro para amortizar los costes de doblaje en todo el continente.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ene-1_a"
+          ],
+          "selectedOptionId": "ex-c1-ene-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ene-1_b": "خارج سياق السينما الحديثة.",
+          "ex-c1-ene-1_c": "لا يمت للدبلجة بصلة."
+        }
+      },
+      {
+        "id": "ex-c1-ene-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي السمة الصرفية التي تُحذف وتُستبعد دائماً في الإسبانية المحايدة الدولية لصالح 'ustedes'؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الضمير وتصريفه الذي يتم تجنبه في الدبلجة المحايدة:",
+        "stemEs": "En el doblaje neutro se elimina sistemáticamente el pronombre ____ y sus formas verbales.",
+        "stemAr": "في الدبلجة المحايدة يُحذف بصورة منهجية الضمير vosotros وتصريفاته لصالح ustedes.",
+        "options": [
+          {
+            "id": "ex-c1-ene-2_a",
+            "text": "vosotros",
+            "textAr": "ضمير المخاطبين الجمع الإيبيري (vosotros) وتصريفاته",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ene-2_b",
+            "text": "yo",
+            "textAr": "ضمير المتكلم المفرد أنا",
+            "isCorrect": false,
+            "distractorRationaleAr": "الضمير الأساسي لكل لغة."
+          },
+          {
+            "id": "ex-c1-ene-2_c",
+            "text": "ellos",
+            "textAr": "ضمير الغائبين هم",
+            "isCorrect": false,
+            "distractorRationaleAr": "مستخدم في كل العالم بلا استثناء."
+          }
+        ],
+        "targetVocab": [
+          "neutro",
+          "rigor"
+        ],
+        "explanationAr": "نظراً لأن أكثر من 90% من الناطقين بالإسبانية يستخدمون «ustedes» للجمع الحميمي والرسمي معاً، يستبعد «vosotros» تماماً من الدبلجة المحايدة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ene-2_a"
+          ],
+          "selectedOptionId": "ex-c1-ene-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ene-2_b": "الضمير الأساسي لكل لغة.",
+          "ex-c1-ene-2_c": "مستخدم في كل العالم بلا استثناء."
+        }
+      },
+      {
+        "id": "ex-c1-ene-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالصفة الدالة على السياسة اللغوية المشتركة لكافة مجامع اللغة الإسبانية الـ23: «la política ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الصفة الجامعة الشاملة للعالم الناطق بالإسبانية:",
+        "stemEs": "La Asociación de Academias promueve una visión ____ basada en el respeto mutuo.",
+        "stemAr": "ترعى رابطة مجامع اللغة رؤية جامعة شاملة لكل العالم الإسباني قائمة على الاحترام المتبادل.",
+        "targetVocab": [
+          "panhispánico"
+        ],
+        "explanationAr": "المفهوم الأكاديمي المعتمد منذ تسعينيات القرن الماضي هو «la política panhispánica»، حيث لم تعد مدريد هي المرجع الوحيد بل تشترك 23 دولة.",
+        "answerKey": {
+          "accepted": [
+            "panhispánica"
+          ],
+          "acceptableAnswers": [
+            "panhispánica"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ene-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الانتقاد الثقافي الرئيسي الموجه لظاهرة 'الإسبانية المحايدة' في الفن والأدب؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "حدد الجانب السلبي الناتج عن محو اللهجات:",
+        "stemEs": "Los críticos señalan que la excesiva neutralización produce una pérdida de autenticidad y vivacidad.",
+        "stemAr": "يشير النقاد إلى أن الإفراط في الحياد ينتج عنه فقدان للأصالة والحيوية العاطفية للنصوص.",
+        "options": [
+          {
+            "id": "ex-c1-ene-4_a",
+            "text": "Riesgo de despersonalización y pérdida de la riqueza expresiva local",
+            "textAr": "خطر نزع الخصوصية وتسطيح الحيوية التعبيرية الإنسانية الحية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ene-4_b",
+            "text": "Aumento incontrolable de errores ortográficos en los libros",
+            "textAr": "زيادة هائلة في الأخطاء الإملائية المدرسية",
+            "isCorrect": false,
+            "distractorRationaleAr": "اللغة المحايدة تلتزم الصواب الإملائي الصارم."
+          },
+          {
+            "id": "ex-c1-ene-4_c",
+            "text": "Imposibilidad de entender los programas de televisión",
+            "textAr": "استحالة فهم البرامج التلفزيونية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحايدة صُممت خصيصاً لتكون سهلة الفهم."
+          }
+        ],
+        "targetVocab": [
+          "homogeneización",
+          "rigor"
+        ],
+        "explanationAr": "يخشى الأدباء من أن يؤدي التنميط (homogeneización) إلى لغة هجينة بلا مشاعر، مجردة من النبض الحقيقي للشوارع والثقافات الشعبية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ene-4_a"
+          ],
+          "selectedOptionId": "ex-c1-ene-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ene-4_b": "اللغة المحايدة تلتزم الصواب الإملائي الصارم.",
+          "ex-c1-ene-4_c": "المحايدة صُممت خصيصاً لتكون سهلة الفهم."
+        }
+      },
+      {
+        "id": "ex-c1-ene-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين مبدأ العمل المشترك بين مجامع اللغة الإسبانية في العالم.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-ene-5_t1",
+            "kind": "token",
+            "text": "Buscamos"
+          },
+          {
+            "id": "ex-c1-ene-5_t2",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-c1-ene-5_t3",
+            "kind": "token",
+            "text": "consenso"
+          },
+          {
+            "id": "ex-c1-ene-5_t4",
+            "kind": "token",
+            "text": "panhispánico"
+          },
+          {
+            "id": "ex-c1-ene-5_t5",
+            "kind": "token",
+            "text": "siempre"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Buscamos el consenso panhispánico siempre"
+          ],
+          "tokenOrder": [
+            "ex-c1-ene-5_t1",
+            "ex-c1-ene-5_t2",
+            "ex-c1-ene-5_t3",
+            "ex-c1-ene-5_t4",
+            "ex-c1-ene-5_t5"
+          ]
+        },
+        "explanationAr": "الفعل Buscamos متبوعاً بالمفعول به الموصوف el consenso panhispánico والظرف siempre في نهاية التركيب.",
+        "targetVocab": [
+          "consenso",
+          "panhispánico"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ene-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة رسمية متوازنة تليق ببيان صادر عن مؤتمر أكاديمي دولي.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً فخامة الألفاظ:",
+        "stemEs": "El consenso panhispánico preserva nuestra unidad.",
+        "stemAr": "التوافق والتعاون الشامل لكافة البلدان يحفظ وحدة لغتنا المشتركة.",
+        "audioKey": "pending/c1-u5-neu-spk",
+        "targetVocab": [
+          "consenso",
+          "panhispánico"
+        ],
+        "explanationAr": "احرص على مد مقطع -pán- المنبور في panhispánico وإعطاء حرف s في consenso صوته الصفيري الرائق دون استعجال.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u5-neu-spk",
+          "modelAnswer": "El consenso panhispánico preserva nuestra unidad."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

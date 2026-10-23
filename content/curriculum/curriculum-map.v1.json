@@ -3498,7 +3498,80 @@
               "objectiveAr": "أن يستخدم المتعلم تعبيرات اصطلاحية شائعة.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-locuciones-adverbiales",
+                  "titleAr": "العبارات الظرفية البليغة في الخطاب الرفيع: Locuciones adverbiales",
+                  "objectiveAr": "أن يوظف المتعلم العبارات الظرفية الدقيقة (por ende, a regañadientes, a ciencia cierta, de cabo a rabo) لربط الأفكار وبيان الكيفية في سياقات راقية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-locuciones-adverbiales.json",
+                  "requires": [
+                    "c1-correspondencia-formal"
+                  ]
+                },
+                {
+                  "slug": "c1-modismos-cultos",
+                  "titleAr": "المجازات الاصطلاحية الراقية: Modismos cultos y metáforas vivas",
+                  "objectiveAr": "أن يفهم المتعلم ويوظف الكنايات الراقية في الخطاب الصحفي والفكري (poner el dedo en la llaga, marear la perdiz, hacer la vista gorda).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-modismos-cultos.json",
+                  "requires": [
+                    "c1-locuciones-adverbiales"
+                  ]
+                },
+                {
+                  "slug": "c1-refranes-pensamiento",
+                  "titleAr": "الأمثال التراثية وحكمة الشعوب: Refranes y pensamiento popular",
+                  "objectiveAr": "أن يستوعب المتعلم العمق الفلسفي والتاريخي للأمثال الإسبانية الكبرى ويستخدمها بإيجاز وبلاغة في الخطاب الثقافي.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-refranes-pensamiento.json",
+                  "requires": [
+                    "c1-modismos-cultos"
+                  ]
+                },
+                {
+                  "slug": "c1-metaforas-vida-cultura",
+                  "titleAr": "الاستعارة الحية في الصحافة والفكر: Metáforas en el debate público",
+                  "objectiveAr": "أن يحلل المتعلم ويوظف الاستعارات الكبرى في النقد الفكري والسياسي (talón de Aquiles, navegar contra corriente, poner una pica en Flandes).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-metaforas-vida-cultura.json",
+                  "requires": [
+                    "c1-refranes-pensamiento"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u3-academic-discourse",
@@ -3506,7 +3579,80 @@
               "objectiveAr": "أن يفهم المتعلم ويُنتج خطابًا أكاديميًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-conectores-metadiscursivos",
+                  "titleAr": "روابط الخطاب الفوقي وتنظيم الأطروحة: Conectores metadiscursivos",
+                  "objectiveAr": "أن يستخدم المتعلم الروابط الأكاديمية الرفيعة (en lo tocante a, cabe puntualizar que, a mayor abundamiento) لبناء مقال علمي متماسك.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-conectores-metadiscursivos.json",
+                  "requires": [
+                    "c1-metaforas-vida-cultura"
+                  ]
+                },
+                {
+                  "slug": "c1-refutacion-dialectica",
+                  "titleAr": "الدحض والمناظرة الفكرية: Refutación dialéctica y contraargumentación",
+                  "objectiveAr": "أن يفند المتعلم الحجج المضادة ويكشف التهافت المنهجي والمغالطات المنطقية (falacia, rebatir, desarticular, carecer de sustento).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-refutacion-dialectica.json",
+                  "requires": [
+                    "c1-conectores-metadiscursivos"
+                  ]
+                },
+                {
+                  "slug": "c1-atenuacion-academica",
+                  "titleAr": "التلطيف والتحفظ المنهجي: La atenuación y el 'hedging' académico",
+                  "objectiveAr": "أن يصيغ المتعلم الأحكام النقدية باعتدال وتواضع علمي باستخدام أساليب التلطيف (cabría sugerir, parecería prudente, los datos apuntan a).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-atenuacion-academica.json",
+                  "requires": [
+                    "c1-refutacion-dialectica"
+                  ]
+                },
+                {
+                  "slug": "c1-ponencias-congresos",
+                  "titleAr": "إدارة الندوات وإلقاء الأوراق العلمية: Ponencias y congresos internacionales",
+                  "objectiveAr": "أن يقدم المتعلم ورقة بحثية في مؤتمر دولي ويدير حوار الأسئلة والمناقشة بروتوكولياً (inaugurar, ceder la palabra, someter a debate).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-ponencias-congresos.json",
+                  "requires": [
+                    "c1-atenuacion-academica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u4-literature",
@@ -3514,7 +3660,80 @@
               "objectiveAr": "أن يحلّل المتعلم نصًا أدبيًا نقديًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-siglo-de-oro",
+                  "titleAr": "العصر الذهبي وبلاغة الباروك: El Siglo de Oro y la retórica barroca",
+                  "objectiveAr": "أن يتذوق المتعلم ويحلل نصوص الأدب الإسباني الكلاسيكي مفرّقاً بين مذهب المعنى (Conceptismo) ومذهب الزخرف (Culteranismo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-siglo-de-oro.json",
+                  "requires": [
+                    "c1-ponencias-congresos"
+                  ]
+                },
+                {
+                  "slug": "c1-generacion-del-27",
+                  "titleAr": "جيل 27 وشعرية الطليعة: La Generación del 27 y la metáfora lorquiana",
+                  "objectiveAr": "أن يحلل المتعلم شعرية الطليعة الإسبانية مبيناً التوفيق العبقري بين التراث الأندلسي الشعبي والتجديد السريالي عند لوركا وسيرنوذا.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-generacion-del-27.json",
+                  "requires": [
+                    "c1-siglo-de-oro"
+                  ]
+                },
+                {
+                  "slug": "c1-realismo-magico",
+                  "titleAr": "الواقعية السحرية وأدب أمريكا اللاتينية: El realismo mágico y la identidad mestiza",
+                  "objectiveAr": "أن يحلل المتعلم التقنيات الروائية لـ'الواقعية السحرية' في أدب غابرييل غارسيا ماركيز ورولفو، مبيناً تطبيع الخارق وتفكيك الزمن الخطي.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-realismo-magico.json",
+                  "requires": [
+                    "c1-generacion-del-27"
+                  ]
+                },
+                {
+                  "slug": "c1-critica-ensayo",
+                  "titleAr": "المقال الفكري والتحليل الهيرمينوطيقي: El ensayo crítico y la hermenéutica",
+                  "objectiveAr": "أن يحلل المتعلم نصوص المقال الفلسفي والنقدي كاشفاً البنى المضمرة والأبعاد التأويلية والتناص (hermenéutica, intertextualidad, subtexto).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-critica-ensayo.json",
+                  "requires": [
+                    "c1-realismo-magico"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u5-regional",
@@ -3522,7 +3741,80 @@
               "objectiveAr": "أن يميّز المتعلم الفروق المعجمية والنطقية.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-voseo-variacion",
+                  "titleAr": "ظاهرة الـ Voseo وتنوع صيغ الخطاب: El voseo y las fórmulas de tratamiento",
+                  "objectiveAr": "أن يستوعب المتعلم الفروق الصرفية والاجتماعية لظاهرة الـ Voseo في حوض ريو دي لا بلاتا وأمريكا الوسطى، ويتقن التحويل الدقيق بين صيغ tuteo و voseo.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-voseo-variacion.json",
+                  "requires": [
+                    "c1-critica-ensayo"
+                  ]
+                },
+                {
+                  "slug": "c1-americanismos-lexicos",
+                  "titleAr": "المفردات الأمريكية اللاتينية في السجل الرفيع: Americanismos léxicos cultos",
+                  "objectiveAr": "أن يميز المتعلم المفردات الأمريكية الشائعة في الأدب والصحافة المرموقة (platicar, manejar, celular, plata, chévere, acervo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-americanismos-lexicos.json",
+                  "requires": [
+                    "c1-voseo-variacion"
+                  ]
+                },
+                {
+                  "slug": "c1-prosodia-fonetica",
+                  "titleAr": "الصوتيات والتنغيم: Prosodia, seseo y yeísmo en el mundo hispánico",
+                  "objectiveAr": "أن يفهم المتعلم الظواهر الصوتية الكبرى (el seseo, la distinción, el yeísmo rehilado, la aspiración de la esse) ويتعرف على تنغيم اللهجات المختلفة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-prosodia-fonetica.json",
+                  "requires": [
+                    "c1-americanismos-lexicos"
+                  ]
+                },
+                {
+                  "slug": "c1-espanol-neutro",
+                  "titleAr": "الإسبانية المحايدة والترجمة الدولية: El español neutro e internacional",
+                  "objectiveAr": "أن يفهم المتعلم معايير 'الإسبانية المحايدة' في الدبلجة العالمية والإعلام العابر للحدود، ومبادئ السياسة اللغوية للـ RAE و ASALE.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-espanol-neutro.json",
+                  "requires": [
+                    "c1-prosodia-fonetica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u6-translation",
@@ -3530,7 +3822,80 @@
               "objectiveAr": "أن يترجم المتعلم نصوصًا قصيرة بوعي بالمقاييس.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-falsos-amigos-avanzados",
+                  "titleAr": "النظائر الخادعة والأخطاء الشائعة في الترجمة: Falsos amigos avanzados",
+                  "objectiveAr": "أن يتجنب المتعلم الفخاخ المعجمية للنظائر الخادعة (constipado, pretender, realizar, soportar, eventual) عند الترجمة من وإلى الإسبانية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-falsos-amigos-avanzados.json",
+                  "requires": [
+                    "c1-espanol-neutro"
+                  ]
+                },
+                {
+                  "slug": "c1-traduccion-juridica",
+                  "titleAr": "الترجمة القانونية وصياغة العقود: Traducción jurídica y redacción contractual",
+                  "objectiveAr": "أن يترجم ويصيغ المتعلم النصوص القانونية والعقود الدولية محترماً المصطلحات المعيارية والأسلوب القضائي الصارم (cláusula resolutoria, de conformidad con, sin perjuicio de).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-traduccion-juridica.json",
+                  "requires": [
+                    "c1-falsos-amigos-avanzados"
+                  ]
+                },
+                {
+                  "slug": "c1-traduccion-literaria",
+                  "titleAr": "الترجمة الأدبية ونقل الروح الشعرية: Traducción literaria y transposición poética",
+                  "objectiveAr": "أن ينقل المتعلم النص الأدبي والشعري محتفظاً بالحمولة الرمزية والإيقاع الداخلي والروح التعبيرية (equivalencia, transposición, fidelidad, registro).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-traduccion-literaria.json",
+                  "requires": [
+                    "c1-traduccion-juridica"
+                  ]
+                },
+                {
+                  "slug": "c1-interferencias-sintacticas",
+                  "titleAr": "التداخل النحوي بين الإسبانية والعربية: Interferencias sintácticas y estilización",
+                  "objectiveAr": "أن يتغلب المتعلم على التداخلات التركيبية بين الإسبانية والعربية (ترتيب الكلمات VSO/SVO، إسقاط الضمير، حروف الجر المتعدية).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-interferencias-sintacticas.json",
+                  "requires": [
+                    "c1-traduccion-literaria"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u7-complex-negotiation",
@@ -3538,7 +3903,80 @@
               "objectiveAr": "أن يدير المتعلم مفاوضة متعددة الأطراف.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-diplomacia-multilateral",
+                  "titleAr": "الدبلوماسية المتعددة الأطراف والبيانات المشتركة: Diplomacia multilateral",
+                  "objectiveAr": "أن يصيغ ويدير المتعلم مفاوضات دبلوماسية متعددة الأطراف محرراً بنود البيانات المشتركة بتوافق دولي (consenso unánime, veto, declaración conjunta, concordia).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-diplomacia-multilateral.json",
+                  "requires": [
+                    "c1-interferencias-sintacticas"
+                  ]
+                },
+                {
+                  "slug": "c1-arbitraje-comercial",
+                  "titleAr": "التحكيم التجاري الدولي وتسوية النزاعات: Arbitraje comercial y resolución de disputas",
+                  "objectiveAr": "أن يفهم المتعلم ويصيغ إجراءات التحكيم التجاري الدولي ومذكرات المرافعات والقرارات التحكيمية الملزمة (laudo arbitral, jurisdicción, dirimir controversias).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-arbitraje-comercial.json",
+                  "requires": [
+                    "c1-diplomacia-multilateral"
+                  ]
+                },
+                {
+                  "slug": "c1-clausulas-compromiso",
+                  "titleAr": "الشروط التعاقدية والتزامات حسن النية: Cláusulas y buena fe contractual",
+                  "objectiveAr": "أن يصيغ المتعلم بنود المسؤولية المدنية والشرط الجزائي وحالات القوة القاهرة مع استحضار مبدأ حسن النية (buena fe, cláusula penal, fuerza mayor).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-clausulas-compromiso.json",
+                  "requires": [
+                    "c1-arbitraje-comercial"
+                  ]
+                },
+                {
+                  "slug": "c1-comunicacion-crisis",
+                  "titleAr": "إدارة الاتصال المؤسسي والأزمات الكبرى: Gestión de crisis y portavocía",
+                  "objectiveAr": "أن يقود المتعلم مؤتمراً صحفياً عاصفاً في سياق أزمة كبرى، مهدئاً الرأي العام ومفنّداً الشائعات باحترافية (mitigar impacto, desmentir categóricamente, asumir responsabilidad).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-comunicacion-crisis.json",
+                  "requires": [
+                    "c1-clausulas-compromiso"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u8-advanced-writing",
@@ -3546,7 +3984,80 @@
               "objectiveAr": "أن يكتب المتعلم نصًا متقدمًا مترابطًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-articulo-opinion",
+                  "titleAr": "مقال الرأي في الصحافة الفكرية الكبرى: La tribuna de opinión periodística",
+                  "objectiveAr": "أن يحرر المتعلم مقال رأي فكري معمق (tribuna de opinión / columna) مستخدماً البلاغة الإقناعية والأسلبة الساخرة الرصينة (agudeza, sesgo, vehemencia).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-articulo-opinion.json",
+                  "requires": [
+                    "c1-comunicacion-crisis"
+                  ]
+                },
+                {
+                  "slug": "c1-memoria-institucional",
+                  "titleAr": "التقرير السنوي والمذكرات المؤسسية: La memoria institucional y rendición de cuentas",
+                  "objectiveAr": "أن يصيغ المتعلم التقرير السنوي الإداري والمالي لمؤسسة كبرى مع تقييم مؤشرات الأداء والشفافية (memoria de gestión, rendición de cuentas, balance cualitativo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-memoria-institucional.json",
+                  "requires": [
+                    "c1-articulo-opinion"
+                  ]
+                },
+                {
+                  "slug": "c1-ensayo-cultural",
+                  "titleAr": "المقال الفلسفي والنقد الثقافي: El ensayo cultural y la prosa meditativa",
+                  "objectiveAr": "أن يكتب المتعلم مقالاً نقدياً وفلسفياً رفيعاً يتناول قضايا الفكر والجماليات بلغة تأملية متسقة ومجازات فكرية متينة (prosa meditativa, trascendencia, dialéctica).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-ensayo-cultural.json",
+                  "requires": [
+                    "c1-memoria-institucional"
+                  ]
+                },
+                {
+                  "slug": "c1-discurso-conmemorativo",
+                  "titleAr": "الخطب الاحتفالية والمحاضرات التكريمية: El discurso conmemorativo y la oratoria solemne",
+                  "objectiveAr": "أن يلقي المتعلم خطبة احتفالية أو محاضرة افتتاحية جامعة (discurso magistral / laudatio) مستخدماً البلاغة الكلاسيكية والبيان المؤثر (elocuencia, homenaje, solemne, magno).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-discurso-conmemorativo.json",
+                  "requires": [
+                    "c1-ensayo-cultural"
+                  ]
+                }
+              ]
             }
           ]
         }

@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-refutacion-dialectica",
+    "titleAr": "الدحض والمناظرة الفكرية: Refutación dialéctica y contraargumentación",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u3-academic-discourse",
+    "objectiveAr": "أن يفند المتعلم الحجج المضادة ويكشف التهافت المنهجي والمغالطات المنطقية (falacia, rebatir, desarticular, carecer de sustento).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "falacia",
+      "rebatir",
+      "desarticular",
+      "sustento",
+      "incurrir",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Desarticular una tesis: desmontar sistemáticamente los pilares de un argumento",
+      "Rebatir una objeción: responder con solvencia lógica a la crítica",
+      "Carecer de sustento: señalar la falta de rigor o pruebas empíricas",
+      "Incurrir en una falacia: denunciar razonamientos formalmente viciados"
+    ],
+    "grammarTopics": [
+      "argumentacion-dialectica-c1",
+      "refutacion-y-debate-academico"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مناظرة فكرية حامية في ندوة حوارية بين مدرستين في علم الاجتماع المعاصر.",
+        "settingAr": "مدرج أتينيو الثقافي والتاريخي في مدريد",
+        "lines": [
+          {
+            "es": "La postura del ponente incurre en una falacia de generalización apresurada.",
+            "ar": "إن موقف المحاضر يقع في مغالطة منطقية تتمثل في التعميم المتسرع.",
+            "arEg": "كلام الدكتور بيقع في فخ مغالطة واضحة جداً وهي التعميم السريع من غير دليل.",
+            "audioKey": "pending/c1-u3-ref-1"
+          },
+          {
+            "es": "Su razonamiento carece de sustento empírico verificable en el terreno.",
+            "ar": "طرحه يفتقر إلى أي سند تجريبي يمكن التحقق منه على أرض الواقع الميداني.",
+            "arEg": "وجهة نظره معندهاش أي سند حقيقي في الواقع نقدر نتأكد منه بالأرقام.",
+            "audioKey": "pending/c1-u3-ref-2"
+          },
+          {
+            "es": "Basta examinar las estadísticas oficiales para rebatir semejante aseveración.",
+            "ar": "يكفي فحص الإحصاءات الرسمية لدحض وتفنيد هذا الادعاء الجازم.",
+            "arEg": "كفاية أوي نبص في الأرقام والإحصاءات الرسمية عشان نفند كلامه ده في ثواني.",
+            "audioKey": "pending/c1-u3-ref-3"
+          },
+          {
+            "es": "Hemos logrado desarticular la teoría adversaria demostrando sus contradicciones internas.",
+            "ar": "لقد نجحنا في تفكيك النظرية المنافسة عبر إثبات تناقضاتها البنيوية الداخلية.",
+            "arEg": "قدرنا نفكك النظرية المعارضة حتة حتة ونبيّن التناقضات اللي جواها قدام الكل.",
+            "audioKey": "pending/c1-u3-ref-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-rdi-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى نقد المحاضر واكتشف المصطلح المنطقي الذي استخدمه لبيان الخلل في الاستدلال.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما الخطأ المنطقي الذي اتُهم به المحاضر؟",
+        "stemEs": "La postura del ponente incurre en una falacia de generalización apresurada.",
+        "stemAr": "إن موقف المحاضر يقع في مغالطة منطقية تتمثل في التعميم المتسرع.",
+        "options": [
+          {
+            "id": "ex-c1-rdi-1_a",
+            "text": "Una falacia",
+            "textAr": "مغالطة منطقية تخدع السامع بمظهر الصدق الزائف",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rdi-1_b",
+            "text": "Una metáfora",
+            "textAr": "استعارة بلاغية للتوضيح والبيان",
+            "isCorrect": false,
+            "distractorRationaleAr": "المجاز ليس عيباً منطقياً بحد ذاته."
+          },
+          {
+            "id": "ex-c1-rdi-1_c",
+            "text": "Una paradoja",
+            "textAr": "مفارقة ظاهرية تحمل حقيقة عميقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفارقة تفيد التفكير لا التدليس."
+          }
+        ],
+        "targetVocab": [
+          "falacia",
+          "incurrir"
+        ],
+        "explanationAr": "«Una falacia» هي حجة تبدو صحيحة في الظاهر لكنها تنطوي على خلل استدلالي يفسد نتيجتها في المنطق الصوري.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u3-ref-1",
+        "speechEs": "La postura del ponente incurre en una falacia de generalización apresurada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rdi-1_a"
+          ],
+          "selectedOptionId": "ex-c1-rdi-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rdi-1_b": "المجاز ليس عيباً منطقياً بحد ذاته.",
+          "ex-c1-rdi-1_c": "المفارقة تفيد التفكير لا التدليس."
+        }
+      },
+      {
+        "id": "ex-c1-rdi-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفعل الأدق أسلوبياً للتعبير عن «تفنيد ودحض اعتراض الخصم بحجة ناصعة»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل الأكاديمي النوعي للدحض:",
+        "stemEs": "El investigador aportó documentos inéditos para ____ las críticas de sus detractores.",
+        "stemAr": "قدم الباحث وثائق غير منشورة لدحض وتفنيد انتقادات خصومه.",
+        "options": [
+          {
+            "id": "ex-c1-rdi-2_a",
+            "text": "rebatir",
+            "textAr": "دحض وتفنيد الحجة بالأدلة العقلية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rdi-2_b",
+            "text": "gritar",
+            "textAr": "الصياح ومقاطعة المتكلم في الحديث",
+            "isCorrect": false,
+            "distractorRationaleAr": "سلوك فوضوي لا ينتمي للمناظرة الفكرية."
+          },
+          {
+            "id": "ex-c1-rdi-2_c",
+            "text": "admitir",
+            "textAr": "التسليم بصحة كلام الطرف الآخر",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس التفنيد تماماً."
+          }
+        ],
+        "targetVocab": [
+          "rebatir",
+          "rigor"
+        ],
+        "explanationAr": "يستخدم الفعل «rebatir» في السياق الجدلي والأكاديمي عند تقديم براهين مقابلة تبطل زعم الطرف المقابل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rdi-2_a"
+          ],
+          "selectedOptionId": "ex-c1-rdi-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rdi-2_b": "سلوك فوضوي لا ينتمي للمناظرة الفكرية.",
+          "ex-c1-rdi-2_c": "عكس التفنيد تماماً."
+        }
+      },
+      {
+        "id": "ex-c1-rdi-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالكلمة الدالة على الأساس والدعامة المنهجية التي تفتقر إليها الفكرة: «carecer de ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة:",
+        "stemEs": "Esa hipótesis audaz carece de ____ científico.",
+        "stemAr": "تلك الفرضية الجريئة تفتقر إلى أي سند وركيزة علمية.",
+        "targetVocab": [
+          "sustento"
+        ],
+        "explanationAr": "تعبير «carecer de sustento» شائع في تقارير التحكيم الأكاديمي ويعني أن الادعاء بلا رصيد من الأدلة التجريبية.",
+        "answerKey": {
+          "accepted": [
+            "sustento"
+          ],
+          "acceptableAnswers": [
+            "sustento"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rdi-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي فعل يفيد «تفكيك بنية الحجة حجراً حجراً وإظهار تهافتها الداخلي»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل المعبر عن الهدم المنهجي لأطروحة الخصم:",
+        "stemEs": "El crítico logró ____ el discurso demagógico mediante un análisis riguroso.",
+        "stemAr": "نجح الناقد في تفكيك الخطاب الشعبوي وإبطال مفعوله عبر تحليل صارم.",
+        "options": [
+          {
+            "id": "ex-c1-rdi-4_a",
+            "text": "desarticular",
+            "textAr": "تفكيك المفاصل وإبطال الترابط المزعوم",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rdi-4_b",
+            "text": "celebrar",
+            "textAr": "الاحتفاء بالطرح والإشادة به",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس التفكيك والنقد."
+          },
+          {
+            "id": "ex-c1-rdi-4_c",
+            "text": "imitar",
+            "textAr": "تقليد أسلوب الخطاب دون فحص",
+            "isCorrect": false,
+            "distractorRationaleAr": "يدل على التبعية لا النقد."
+          }
+        ],
+        "targetVocab": [
+          "desarticular",
+          "rigor"
+        ],
+        "explanationAr": "استعارة «desarticular» مأخوذة من فك المفاصل، وتطلق على إبطال ترابط الحجج وكشف تناقض مكوناتها.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rdi-4_a"
+          ],
+          "selectedOptionId": "ex-c1-rdi-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rdi-4_b": "عكس التفكيك والنقد.",
+          "ex-c1-rdi-4_c": "يدل على التبعية لا النقد."
+        }
+      },
+      {
+        "id": "ex-c1-rdi-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين نقد منهجي يصف الادعاء بأنه يفتقر إلى الأدلة القاطعة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-rdi-5_t1",
+            "kind": "token",
+            "text": "Dicha"
+          },
+          {
+            "id": "ex-c1-rdi-5_t2",
+            "kind": "token",
+            "text": "afirmación"
+          },
+          {
+            "id": "ex-c1-rdi-5_t3",
+            "kind": "token",
+            "text": "carece"
+          },
+          {
+            "id": "ex-c1-rdi-5_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-c1-rdi-5_t5",
+            "kind": "token",
+            "text": "sustento"
+          },
+          {
+            "id": "ex-c1-rdi-5_t6",
+            "kind": "token",
+            "text": "riguroso"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Dicha afirmación carece de sustento riguroso"
+          ],
+          "tokenOrder": [
+            "ex-c1-rdi-5_t1",
+            "ex-c1-rdi-5_t2",
+            "ex-c1-rdi-5_t3",
+            "ex-c1-rdi-5_t4",
+            "ex-c1-rdi-5_t5",
+            "ex-c1-rdi-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب: اسم الإشارة الدال على السابق Dicha ثم الاسم والفعل وحرف الجر والاسم الموصوف.",
+        "targetVocab": [
+          "sustento",
+          "rigor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rdi-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة سجالية هادئة ورصينة تليق بمناظر متمكن من أدوات المنطق.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الضغط على المقاطع المنبورة:",
+        "stemEs": "Ese argumento incurre en una evidente falacia.",
+        "stemAr": "تلك الحجة تنطوي على مغالطة بيّنة لا تخفى على فطن.",
+        "audioKey": "pending/c1-u3-ref-spk",
+        "targetVocab": [
+          "falacia",
+          "incurrir"
+        ],
+        "explanationAr": "احرص على التفريق بين صوت /r/ الرخو والراء المشددة في incurre ونطق حرف c في falacia بدقة قشتالية ثائية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u3-ref-spk",
+          "modelAnswer": "Ese argumento incurre en una evidente falacia."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

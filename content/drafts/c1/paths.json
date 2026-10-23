@@ -22,6 +22,104 @@
             "c1-correspondencia-formal"
           ],
           "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u2-idioms",
+          "levelCode": "C1",
+          "titleAr": "التعبيرات الاصطلاحية والأمثال المتقدمة",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "c1-locuciones-adverbiales",
+            "c1-modismos-cultos",
+            "c1-refranes-pensamiento",
+            "c1-metaforas-vida-cultura"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u3-academic-discourse",
+          "levelCode": "C1",
+          "titleAr": "الخطاب الأكاديمي والمناظرة الفكرية",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "c1-conectores-metadiscursivos",
+            "c1-refutacion-dialectica",
+            "c1-atenuacion-academica",
+            "c1-ponencias-congresos"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u4-literature",
+          "levelCode": "C1",
+          "titleAr": "الأدب والنقد الأدبي المعمق",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "c1-siglo-de-oro",
+            "c1-generacion-del-27",
+            "c1-realismo-magico",
+            "c1-critica-ensayo"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u5-regional",
+          "levelCode": "C1",
+          "titleAr": "الإسبانية الإيبيرية والأمريكية والتنوع اللهجي",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "c1-voseo-variacion",
+            "c1-americanismos-lexicos",
+            "c1-prosodia-fonetica",
+            "c1-espanol-neutro"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u6-translation",
+          "levelCode": "C1",
+          "titleAr": "الترجمة والمقارنة اللغوية الإسبانية-العربية",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "c1-falsos-amigos-avanzados",
+            "c1-traduccion-juridica",
+            "c1-traduccion-literaria",
+            "c1-interferencias-sintacticas"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u7-complex-negotiation",
+          "levelCode": "C1",
+          "titleAr": "المفاوضات المعقدة والتحكيم الدولي",
+          "sortOrder": 7,
+          "status": "draft",
+          "lessons": [
+            "c1-diplomacia-multilateral",
+            "c1-arbitraje-comercial",
+            "c1-clausulas-compromiso",
+            "c1-comunicacion-crisis"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "c1-u8-advanced-writing",
+          "levelCode": "C1",
+          "titleAr": "الكتابة المتقدمة والمقالات الكبرى",
+          "sortOrder": 8,
+          "status": "draft",
+          "lessons": [
+            "c1-articulo-opinion",
+            "c1-memoria-institucional",
+            "c1-ensayo-cultural",
+            "c1-discurso-conmemorativo"
+          ],
+          "vocabularyBundles": []
         }
       ]
     }

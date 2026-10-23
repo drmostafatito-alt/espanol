@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-arbitraje-comercial",
+    "titleAr": "التحكيم التجاري الدولي وتسوية النزاعات: Arbitraje comercial y resolución de disputas",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u7-complex-negotiation",
+    "objectiveAr": "أن يفهم المتعلم ويصيغ إجراءات التحكيم التجاري الدولي ومذكرات المرافعات والقرارات التحكيمية الملزمة (laudo arbitral, jurisdicción, dirimir controversias).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "laudo",
+      "arbitral",
+      "jurisdicción",
+      "dirimir",
+      "controversia",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmula de sumisión expresa: someterse al arbitraje de la Cámara de Comercio",
+      "La resolución definitiva: el tribunal arbitral dictó un laudo de obligado cumplimiento",
+      "La delimitación competencial: determinar la jurisdicción aplicable al litigio",
+      "El objeto procesal: dirimir la controversia suscitada entre las partes"
+    ],
+    "grammarTopics": [
+      "arbitraje-internacional-c1",
+      "resolucion-de-conflictos-mercantiles"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "جلسة مرافعة ختامية في محكمة التحكيم التجاري الدولي بمدريد لفض نزاع في قطاع الطاقة.",
+        "settingAr": "مقر محكمة التحكيم بمدريد (Corte de Arbitraje de Madrid)",
+        "lines": [
+          {
+            "es": "Las partes acordaron someterse al presente tribunal para dirimir la controversia contractual.",
+            "ar": "اتفق الطرفان على الاحتكام إلى هذه الهيئة التحكيمية للفصل وحسم النزاع والخلاف التعاقدي بينهما.",
+            "arEg": "الشركتين اتفقوا بمزاجهم يلجأوا لهيئة التحكيم دي عشان تفصل وتحل الخلاف اللي بينهم في العقد.",
+            "audioKey": "pending/c1-u7-arb-1"
+          },
+          {
+            "es": "Queda plenamente acreditada la jurisdicción de esta corte en virtud del convenio arbitral.",
+            "ar": "ثبت بما لا يدع مجالاً للشك الاختصاص القضائي لهذه المحكمة استناداً إلى اتفاقية التحكيم المبرمة.",
+            "arEg": "ثبت بالدليل القاطع إن المحكمة دي هي صاحبة الاختصاص القانوني بناء على بند التحكيم المكتوب.",
+            "audioKey": "pending/c1-u7-arb-2"
+          },
+          {
+            "es": "El colegio arbitral procederá a dictar el laudo definitivo en el plazo legal improrrogable.",
+            "ar": "ستشرع هيئة التحكيم في إصدار ونطق الحكم التحكيمي النهائي خلال الأجل القانوني غير القابل للتمديد.",
+            "arEg": "هيئة التحكيم هتصدر حكمها النهائي الملزم للطرفين في الميعاد المحدد ومن غير أي تأجيل.",
+            "audioKey": "pending/c1-u7-arb-3"
+          },
+          {
+            "es": "Dicho laudo arbitral surtirá plenos efectos de cosa juzgada para ambas corporaciones.",
+            "ar": "وسيترتب على هذا القرار التحكيمي كافة آثار وقوة الأمر المقضي به بالنسبة لكلا الشركتين.",
+            "arEg": "والقرار ده هيكون بات ونهائي وملزم للشركتين ومفيش رجوع فيه زي حكم المحكمة بالظبط.",
+            "audioKey": "pending/c1-u7-arb-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-aco-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى نص المرافعة واكتشف المصطلح القضائي الذي يطلق على الحكم النهائي الصادر عن هيئة التحكيم.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا يسمى الحكم والقرار الصادر عن المحكمين في النزاع التجاري؟",
+        "stemEs": "El colegio arbitral procederá a dictar el laudo definitivo en el plazo legal improrrogable.",
+        "stemAr": "ستشرع هيئة التحكيم في إصدار ونطق الحكم التحكيمي النهائي خلال الأجل القانوني غير القابل للتمديد.",
+        "options": [
+          {
+            "id": "ex-c1-aco-1_a",
+            "text": "El laudo arbitral",
+            "textAr": "الحكم التحكيمي / القرار القضائي الصادر عن محكمة التحكيم",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aco-1_b",
+            "text": "El poema lírico",
+            "textAr": "القصيدة الغنائية الرومانسية",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج الإطار القضائي تماماً."
+          },
+          {
+            "id": "ex-c1-aco-1_c",
+            "text": "El folleto publicitario",
+            "textAr": "النشرة الإعلانية للترويج للمنتجات",
+            "isCorrect": false,
+            "distractorRationaleAr": "مفردات تجارية استهلاكية."
+          }
+        ],
+        "targetVocab": [
+          "laudo",
+          "arbitral"
+        ],
+        "explanationAr": "«El laudo» هو المصطلح القانوني الحصري لقرار المحكمين الذي يفصل في جوهر النزاع ويتمتع بقوة السند التنفيذي كحكم المحكمة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u7-arb-3",
+        "speechEs": "El colegio arbitral procederá a dictar el laudo definitivo en el plazo legal improrrogable.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aco-1_a"
+          ],
+          "selectedOptionId": "ex-c1-aco-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aco-1_b": "خارج الإطار القضائي تماماً.",
+          "ex-c1-aco-1_c": "مفردات تجارية استهلاكية."
+        }
+      },
+      {
+        "id": "ex-c1-aco-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي فعل قانوني نوعي يستخدم في الإسبانية للتعبير عن «حسم النزاع وفض الخصومة بحكم قاطع»؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل القضائي الفصيح لحسم النزاع:",
+        "stemEs": "El tribunal fue convocado con el fin de ____ el conflicto de intereses.",
+        "stemAr": "تمت الدعوة لعقد المحكمة بهدف الفصل في النزاع وحسم تضارب المصالح القائم.",
+        "options": [
+          {
+            "id": "ex-c1-aco-2_a",
+            "text": "dirimir",
+            "textAr": "حسم الخلاف والفصل فيه بحكم قاطع منهٍ للخصومة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aco-2_b",
+            "text": "aumentar",
+            "textAr": "توسيع النزاع وزيادته اشتعالاً وتعقيداً",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس غاية التحكيم."
+          },
+          {
+            "id": "ex-c1-aco-2_c",
+            "text": "olvidar",
+            "textAr": "تجاهل المشكلة وتركها معلقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا ينهي النزاع قانونياً."
+          }
+        ],
+        "targetVocab": [
+          "dirimir",
+          "controversia"
+        ],
+        "explanationAr": "يقال حصراً «dirimir una controversia / dirimir un conflicto» في لغة المحاكم الرفيعة بمعنى وضع حد نهائي وحل الخصومة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aco-2_a"
+          ],
+          "selectedOptionId": "ex-c1-aco-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aco-2_b": "عكس غاية التحكيم.",
+          "ex-c1-aco-2_c": "لا ينهي النزاع قانونياً."
+        }
+      },
+      {
+        "id": "ex-c1-aco-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالمصطلح الدال على نطاق السلطة القضائية المخولة للنظر في النزاع: «la ____ competente».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة الدالة على الاختصاص القضائي والسلطة القانونية:",
+        "stemEs": "La empresa impugnó la ____ del tribunal alegando la falta de cláusula expresa.",
+        "stemAr": "طعنت الشركة في الاختصاص القضائي للمحكمة مدعية خلو العقد من بند صريح بالاحتكام إليها.",
+        "targetVocab": [
+          "jurisdicción"
+        ],
+        "explanationAr": "«La jurisdicción» هي السلطة القانونية والاختصاص الولائي الذي يخول القاضي أو المحكم الفصل في القضية بمقتضى القانون.",
+        "answerKey": {
+          "accepted": [
+            "jurisdicción"
+          ],
+          "acceptableAnswers": [
+            "jurisdicción"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aco-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا تعني كلمة «controversia» في سياق المرافعات التجارية المعقدة؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المعنى القانوني الدقيق لمصطلح controversia:",
+        "stemEs": "Las partes no lograron superar la ____ sobre la interpretación de las tarifas.",
+        "stemAr": "لم يفلح الأطراف في تجاوز الخلاف والنزاع الناشئ حول تفسير جدول الرسوم والأسعار.",
+        "options": [
+          {
+            "id": "ex-c1-aco-4_a",
+            "text": "Disputa, litigio o discrepancia legal entre dos partes",
+            "textAr": "نزاع أو خصومة أو خلاف قانوني وجوهري بين طرفين",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aco-4_b",
+            "text": "Conversación amistosa sobre el tiempo meteorológico",
+            "textAr": "محادثة لطيفة وعابرة عن أحوال الطقس",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى اجتماعي سطحي."
+          },
+          {
+            "id": "ex-c1-aco-4_c",
+            "text": "Fiesta de celebración por fin de año",
+            "textAr": "حفلة للاحتفال برأس السنة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بالمحاكم."
+          }
+        ],
+        "targetVocab": [
+          "controversia",
+          "rigor"
+        ],
+        "explanationAr": "«Una controversia» في القانون التجاري هي النزاع القائم حول تفسير التزام أو تنفيذه أو الإخلال به ويتطلب تدخلاً قضائياً لحله.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aco-4_a"
+          ],
+          "selectedOptionId": "ex-c1-aco-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aco-4_b": "معنى اجتماعي سطحي.",
+          "ex-c1-aco-4_c": "لا علاقة له بالمحاكم."
+        }
+      },
+      {
+        "id": "ex-c1-aco-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء تركيب قضائي يثبت حسم النزاع بمقتضى القرار التحكيمي.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-aco-5_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-c1-aco-5_t2",
+            "kind": "token",
+            "text": "laudo"
+          },
+          {
+            "id": "ex-c1-aco-5_t3",
+            "kind": "token",
+            "text": "logró"
+          },
+          {
+            "id": "ex-c1-aco-5_t4",
+            "kind": "token",
+            "text": "dirimir"
+          },
+          {
+            "id": "ex-c1-aco-5_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-aco-5_t6",
+            "kind": "token",
+            "text": "controversia"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El laudo logró dirimir la controversia"
+          ],
+          "tokenOrder": [
+            "ex-c1-aco-5_t1",
+            "ex-c1-aco-5_t2",
+            "ex-c1-aco-5_t3",
+            "ex-c1-aco-5_t4",
+            "ex-c1-aco-5_t5",
+            "ex-c1-aco-5_t6"
+          ]
+        },
+        "explanationAr": "المبتدأ El laudo يليه الفعل المساعد logró والمصدر dirimir والمفعول به la controversia.",
+        "targetVocab": [
+          "laudo",
+          "dirimir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aco-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة قاضٍ تحكيمي يعلن الحكم الحاسم بوقار لا تشوبه شائبة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً هيبة المصطلحات القضائية:",
+        "stemEs": "El tribunal tiene plena jurisdicción en este litigio.",
+        "stemAr": "لهذه الهيئة التحكيمية كامل الاختصاص القضائي للفصل في هذه الخصومة.",
+        "audioKey": "pending/c1-u7-arb-spk",
+        "targetVocab": [
+          "jurisdicción",
+          "rigor"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة jurisdicción على مقطع -ción الأخير وإخراج صوت حرف c اللثوي بنقاء ورصانة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u7-arb-spk",
+          "modelAnswer": "El tribunal tiene plena jurisdicción en este litigio."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

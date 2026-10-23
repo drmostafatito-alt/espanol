@@ -998,4 +998,173 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     const submitData = await h.json<any>(submitRes);
     expect(submitData.correct).toBe(true);
   });
+
+  it('وحدة التعبيرات الاصطلاحية C1 (c1-locuciones-adverbiales) تُسلَّم وتصحح regañadientes بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_idioms@example.com');
+    const res = await h.call('/api/lessons/c1-locuciones-adverbiales/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.level).toBe('C1');
+    expect(data.lesson.titleAr).toContain('العبارات الظرفية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-locuciones-adverbiales/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'regañadientes',
+        eventId: 'evt_test_c1_id01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الخطاب الأكاديمي C1 (c1-conectores-metadiscursivos) تُسلَّم وتصحح puntualizar بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_acad@example.com');
+    const res = await h.call('/api/lessons/c1-conectores-metadiscursivos/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('روابط الخطاب الفوقي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-conectores-metadiscursivos/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'puntualizar',
+        eventId: 'evt_test_c1_ac01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الأدب والنقد C1 (c1-siglo-de-oro) تُسلَّم وتصحح culteranismo بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_lit@example.com');
+    const res = await h.call('/api/lessons/c1-siglo-de-oro/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('العصر الذهبي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-siglo-de-oro/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'culteranismo',
+        eventId: 'evt_test_c1_lit01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة التنوع الإقليمي C1 (c1-voseo-variacion) تُسلَّم وتصحح vos بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_reg@example.com');
+    const res = await h.call('/api/lessons/c1-voseo-variacion/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('Voseo');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-voseo-variacion/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'vos',
+        eventId: 'evt_test_c1_vos01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الترجمة والمقارنة C1 (c1-falsos-amigos-avanzados) تُسلَّم وتصحح eventual بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_tr@example.com');
+    const res = await h.call('/api/lessons/c1-falsos-amigos-avanzados/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('النظائر الخادعة');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-falsos-amigos-avanzados/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'eventual',
+        eventId: 'evt_test_c1_tr01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة المفاوضات الدولية C1 (c1-diplomacia-multilateral) تُسلَّم وتصحح veto بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_arb@example.com');
+    const res = await h.call('/api/lessons/c1-diplomacia-multilateral/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الدبلوماسية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-diplomacia-multilateral/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'veto',
+        eventId: 'evt_test_c1_arb01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الكتابة المتقدمة C1 (c1-articulo-opinion) تُسلَّم وتصحح columna بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_c1_op@example.com');
+    const res = await h.call('/api/lessons/c1-articulo-opinion/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('مقال الرأي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/c1-articulo-opinion/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'columna',
+        eventId: 'evt_test_c1_op01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
 });
