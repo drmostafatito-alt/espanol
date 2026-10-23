@@ -101,6 +101,15 @@ describe('البحث الذكي — محرك البحث المحلي الشام�
     expect(first!.url.startsWith('/')).toBe(true);
   });
 
+  it('12. كل رابط نتيجة يطابق مسارًا حقيقيًا في التطبيق (لا /lesson أو /curriculum)', () => {
+    const routes = [/^\/learn$/, /^\/learn\/[a-z0-9-]{3,64}$/, /^\/review$/];
+    for (const q of ['gracias', 'gustar', 'hablamos', 'quedamos', 'cita', 'ser y estar', 'estar']) {
+      for (const r of engine.search(q, { limit: 50 }).results) {
+        expect(routes.some(re => re.test(r.url)), `${q} -> ${r.url}`).toBe(true);
+      }
+    }
+  });
+
   it('11. أداء فائق السرعة: 100 استعلام خلال أقل من 100ms دون أي تجميد', () => {
     const queries = ['hola', 'casa', 'tiempo', 'hablar', 'comer', 'vivir', 'amigo', 'familia', 'madrid', 'gracias'];
     const t0 = Date.now();

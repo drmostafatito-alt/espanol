@@ -140,6 +140,12 @@ async function serveAsset(request: Request, env: Env, url: URL): Promise<Respons
   const headers = new Headers(res.headers);
   for (const [k, v] of Object.entries(securityHeadersFor(env))) headers.set(k, v);
 
+  // ملفات الوسائط غير الموجودة لا تُخدم بصفحة HTML من SPA fallback.
+  // نعيد 404 حقيقيًا حتى يفشل المشغّل بوضوح بدل تشغيل HTML.
+  if (url.pathname.startsWith('/audio/') && (headers.get('Content-Type') ?? '').includes('text/html')) {
+    return new Response('Not found', { status: 404, headers: securityHeadersFor(env) });
+  }
+
   const isHtml = (headers.get('Content-Type') ?? '').includes('text/html');
   if (isHtml) {
     headers.set(

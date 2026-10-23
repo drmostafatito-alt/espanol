@@ -327,6 +327,30 @@ async function run() {
     const bodyContent = await page.textContent('body');
     assert('البحث يقترح الكلمة الصحيحة عند وجود خطأ إملائي', bodyContent?.includes('biblioteca'));
 
+    // روابط نتائج البحث: كل زر يجب أن ينقل إلى صفحة تعمل فعلًا، لا صفحة 404
+    await page.goto(`${BASE}/search?q=gustar`);
+    await page.fill('[data-testid="search-input"]', 'gustar');
+    await page.waitForTimeout(600);
+    const lessonBtn = page.locator('.card button:has-text("فتح الدرس")').first();
+    assert('نتيجة الدرس تعرض زر «فتح الدرس»', (await lessonBtn.count()) > 0);
+    await lessonBtn.click();
+    await page.waitForURL(/\/learn\/[a-z0-9-]+$/, { timeout: 5000 });
+    // أي حالة حقيقية لصفحة الدرس: تمارين، أو نتيجة، أو قفل، أو عدم توفر (مسودة غير منشورة)
+    await page.waitForSelector('[data-testid="lesson-submit"], [data-testid="lesson-result"], :text("مقفل"), :text("تعذّر فتح الدرس")', { timeout: 10000 });
+    const lessonPage = await page.textContent('main');
+    assert('زر «فتح الدرس» يفتح صفحة الدرس الحقيقية', !lessonPage.includes('الصفحة غير موجودة'), page.url());
+
+    await page.goto(`${BASE}/search?q=gustar`);
+    await page.fill('[data-testid="search-input"]', 'gustar');
+    await page.waitForTimeout(600);
+    const pathBtn = page.locator('.card button:has-text("في المنهج")').first();
+    assert('نتيجة المفردة تعرض زر «في المنهج»', (await pathBtn.count()) > 0);
+    await pathBtn.click();
+    await page.waitForURL(/\/learn$/, { timeout: 5000 });
+    await page.waitForSelector('[data-testid="stat-xp"]', { timeout: 10000 });
+    const pathPage = await page.textContent('main');
+    assert('زر «في المنهج» يفتح لوحة المسارات الحقيقية', !pathPage.includes('الصفحة غير موجودة'), page.url());
+
     // -------------------------------------------------------------------------
     // 16. فحص أزرار التحكم بالصوت والسرعة وإعادة الاستماع في شاشة الدرس
     // -------------------------------------------------------------------------
