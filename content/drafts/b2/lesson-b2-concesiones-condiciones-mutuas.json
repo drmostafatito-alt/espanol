@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-concesiones-condiciones-mutuas",
+    "unitSlug": "b2-u6-negotiation",
+    "levelCode": "B2",
+    "titleAr": "التنازلات والشروط المتبادلة: مقايضة المصالح في التفاوض",
+    "titleEs": "Concesiones y condiciones mutuas: El intercambio estratégico de ventajas",
+    "subtitleAr": "الصيغ الشرطية (siempre que, a condición de que) والمقايضة التكتيكية",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقايض المتعلم التنازلات بذكاء: لا تنازل دون مقابل ملموس في المقابل.",
+        "أن يتقن أدوات الشرط المتطلبة للمنصوب: siempre y cuando, a condición de que, a cambio de que.",
+        "أن يوظف مصطلحات مقايضة الشروط: hacer una concesión, ceder en, contrapartida, recíproco."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد أدوات الشرط الحصري مع المنصوب في المفاوضات",
+          "explanationAr": "1. **أدوات الشرط المقيد (Condicionales con Subjuntivo)**:\n- *Siempre y cuando + Subjuntivo*: Aceptamos el precio siempre y cuando mantengan la calidad.\n- *A condición de que + Subjuntivo*: Firmaremos el contrato a condición de que nos garanticen exclusividad.\n- *A cambio de que + Subjuntivo*: Reducimos los costes a cambio de que ustedes asuman el seguro.\n2. **التعبير عن التنازل المشروط**:\n- *Estamos dispuestos a ceder en este punto a cambio de una contrapartida equivalente*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد *siempre y cuando* أو *a condición de que* (الخطأ: *a condición de que nos dan exclusividad*; الصواب: a condición de que nos den exclusividad بالمنصوب).",
+        "تقديم تنازلات مجانية دون طلب مقابل تعويضي متبادل (contrapartida)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في التجارة بنقول «إحنا موافقين نتنازل في النقطة دي بشرط إنكم تضمنوا لنا الدفع في ميعاده ومقابل ملموس». بالإسبانية: Estamos dispuestos a ceder en el precio a condición de que garanticen el pago puntual."
+        }
+      ],
+      "culturalNoteAr": "القاعدة الذهبية في التفاوض التجاري الإسباني هي 'Nada es gratis': أي تنازل يقدمه أحد الطرفين يجب أن يقابله مكسب معادل في بند آخر للحفاظ على التوازن التعاقدي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-concesiones-condiciones-mutuas-intro",
+        "type": "explanation",
+        "titleAr": "أدوات التنازل والمقايضة المشروطة",
+        "bodyAr": "المفردات والتراكيب:\n- **la concesión**: التنازل الممنوح للطرف المقابل\n- **la contrapartida**: المقابل والمكسب التعويضي الموازي\n- **ceder en**: يتنازل ويظهر مرونة في جزئية محددة\n- **siempre y cuando**: طالما وشريطة أن (+ منصُوب Subjuntivo)\n- **a condición de que**: شريطة أن وعلى أساس أن (+ منصُوب Subjuntivo)\n- **recíproco**: متبادل ومتكافئ بين الطرفين",
+        "examples": [
+          {
+            "es": "Haremos una concesión en la tarifa siempre y cuando el contrato sea por dos años.",
+            "ar": "سنقدم تنازلاً في السعر شريطة أن يكون العقد لمدة عامين (المنصوب: sea)."
+          },
+          {
+            "es": "Aceptamos sus plazos a condición de que nos ofrezcan una contrapartida clara.",
+            "ar": "نقبل بمواعيدكم شريطة أن تقدموا لنا مقابلاً واضحاً (المنصوب: ofrezcan)."
+          },
+          {
+            "es": "El acuerdo debe basarse en un compromiso recíproco y equilibrado.",
+            "ar": "يجب أن يستند الاتفاق إلى التزام متبادل ومتوازن."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "concesión",
+      "contrapartida",
+      "ceder en",
+      "siempre y cuando",
+      "a condición de que",
+      "recíproco"
+    ],
+    "reviewVocabulary": [
+      "condición",
+      "acuerdo"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يقايض المتعلم التنازلات بذكاء: لا تنازل دون مقابل ملموس في المقابل.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-ccm-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب المطلوبة بعد الرابط الشرطي a condición de que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تصريف لفعل garantizar نستخدم بعد a condición de que؟",
+        "stemEs": "Cederemos en este punto a condición de que ustedes _____ el suministro continuo.",
+        "stemAr": "سنتنازل في هذه النقطة شريطة أن تضمنوا أنتم الإمداد المستمر.",
+        "options": [
+          {
+            "id": "ex-b2-ccm-1_a",
+            "text": "garanticen",
+            "textAr": "صيغة المنصوب مع ustedes (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccm-1_b",
+            "text": "garantizan",
+            "textAr": "مضارع إخباري لا يصح بعد a condición de que",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرابط a condición de que يتطلب صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b2-ccm-1_c",
+            "text": "garantizar",
+            "textAr": "مصدر لا يناسب وجود que",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع وجود que والفاعل ustedes يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "a condición de que",
+          "ceder en",
+          "concesión"
+        ],
+        "explanationAr": "بعد a condición de que يأتي الفعل إلزامياً بالمنصوب: a condición de que garanticen.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccm-1_a"
+          ],
+          "selectedOptionId": "ex-b2-ccm-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccm-1_b": "الرابط a condición de que يتطلب صيغة المنصوب Subjuntivo.",
+          "ex-b2-ccm-1_c": "مع وجود que والفاعل ustedes يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b2-ccm-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل firmar بالمنصوب الجمع بعد siempre y cuando: (firmen)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل بالمنصوب: Asumiremos el flete siempre y cuando ustedes _____ hoy el pedido.",
+        "stemEs": "Les aplicaremos el descuento máximo siempre y cuando ustedes _____ el contrato esta semana.",
+        "stemAr": "سنطبق عليكم الخصم الأقصى شريطة أن توقعوا العقد هذا الأسبوع.",
+        "targetVocab": [
+          "siempre y cuando"
+        ],
+        "explanationAr": "بعد siempre y cuando نستخدم المنصوب: firmen.",
+        "answerKey": {
+          "accepted": [
+            "firmen"
+          ],
+          "acceptableAnswers": [
+            "firmen"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ccm-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الذي يعبر عن الميزة والتعويض المقابل المطلوب إزاء أي تنازل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'المقابل التعويضي المكافئ لتنازل قدمته'؟",
+        "stemEs": "No podemos hacer rebajas sin exigir una _____ comercial adecuada.",
+        "stemAr": "لا يمكننا تقديم تخفيضات دون المطالبة بـ ... تجاري مناسب ومكافئ.",
+        "options": [
+          {
+            "id": "ex-b2-ccm-3_a",
+            "text": "contrapartida",
+            "textAr": "المقابل التعويضي المتبادل (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccm-3_b",
+            "text": "sesgo",
+            "textAr": "تحيز صحفي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المقابل التفاوضي يسمى la contrapartida."
+          },
+          {
+            "id": "ex-b2-ccm-3_c",
+            "text": "congoja",
+            "textAr": "غصة حزن",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح التجاري هو contrapartida."
+          }
+        ],
+        "targetVocab": [
+          "contrapartida",
+          "concesión",
+          "recíproco"
+        ],
+        "explanationAr": "la contrapartida هي الفائدة أو التعويض الذي يطلبه المفاوض مقابل تنازله في بند آخر.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccm-3_a"
+          ],
+          "selectedOptionId": "ex-b2-ccm-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccm-3_b": "المقابل التفاوضي يسمى la contrapartida.",
+          "ex-b2-ccm-3_c": "المصطلح التجاري هو contrapartida."
+        }
+      },
+      {
+        "id": "ex-b2-ccm-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة التفاوضية المشروطة لربط السعر بالدفع الفوري",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-ccm-4_t1",
+            "kind": "token",
+            "text": "Aceptamos"
+          },
+          {
+            "id": "ex-b2-ccm-4_t2",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b2-ccm-4_t3",
+            "kind": "token",
+            "text": "precio"
+          },
+          {
+            "id": "ex-b2-ccm-4_t4",
+            "kind": "token",
+            "text": "siempre"
+          },
+          {
+            "id": "ex-b2-ccm-4_t5",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-b2-ccm-4_t6",
+            "kind": "token",
+            "text": "cuando"
+          },
+          {
+            "id": "ex-b2-ccm-4_t7",
+            "kind": "token",
+            "text": "paguen"
+          },
+          {
+            "id": "ex-b2-ccm-4_t8",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b2-ccm-4_t9",
+            "kind": "token",
+            "text": "contado"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Aceptamos el precio siempre y cuando paguen al contado"
+          ],
+          "tokenOrder": [
+            "ex-b2-ccm-4_t1",
+            "ex-b2-ccm-4_t2",
+            "ex-b2-ccm-4_t3",
+            "ex-b2-ccm-4_t4",
+            "ex-b2-ccm-4_t5",
+            "ex-b2-ccm-4_t6",
+            "ex-b2-ccm-4_t7",
+            "ex-b2-ccm-4_t8",
+            "ex-b2-ccm-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Aceptamos ثم المفعول el precio ثم أداة الشرط siempre y cuando ثم المنصوب paguen ثم شبه الجملة al contado.",
+        "targetVocab": [
+          "siempre y cuando",
+          "recíproco"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ccm-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لمدير المبيعات وحدد التنازل الذي يعرضه على الشريك",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للشروط المتبادلة في جولة المداولات",
+        "stemEs": "Estamos dispuestos a ceder en los márgenes si obtenemos un compromiso recíproco.",
+        "stemAr": "نحن على استعداد لتقديم تنازل في هوامش الأرباح إذا حصلنا على التزام متبادل.",
+        "options": [
+          {
+            "id": "ex-b2-ccm-5_a",
+            "text": "ceder en los márgenes",
+            "textAr": "التنازل في هوامش الأرباح (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccm-5_b",
+            "text": "romper el acuerdo",
+            "textAr": "فسخ الاتفاق",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال: ceder en los márgenes."
+          },
+          {
+            "id": "ex-b2-ccm-5_c",
+            "text": "aumentar los precios",
+            "textAr": "رفع الأسعار",
+            "isCorrect": false,
+            "distractorRationaleAr": "العرض كان التنازل ceder en los márgenes."
+          }
+        ],
+        "targetVocab": [
+          "ceder en",
+          "recíproco",
+          "concesión"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'Estamos dispuestos a ceder en los márgenes'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_ceder_margenes_compromiso_reciproco.mp3",
+        "speechEs": "Estamos dispuestos a ceder en los márgenes si obtenemos un compromiso recíproco.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccm-5_a"
+          ],
+          "selectedOptionId": "ex-b2-ccm-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccm-5_b": "المتحدث قال: ceder en los márgenes.",
+          "ex-b2-ccm-5_c": "العرض كان التنازل ceder en los márgenes."
+        }
+      },
+      {
+        "id": "ex-b2-ccm-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك التفاوضية لطلب مقابل تعويضي واضح بأسلوب لبق وحازم",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة التالية لتوضيح شروطك المتبادلة أمام المفاوض الآخر:",
+        "stemEs": "Haremos esta concesión a condición de que nos ofrezcan una contrapartida clara y un compromiso recíproco.",
+        "stemAr": "سنقدم هذا التنازل شريطة أن تقدموا لنا مقابلاً واضحاً والتزاماً متبادلاً.",
+        "audioKey": "pending/b2_concesion_condicion_contrapartida.mp3",
+        "targetVocab": [
+          "concesión",
+          "a condición de que",
+          "contrapartida",
+          "recíproco"
+        ],
+        "explanationAr": "انتبه لنطق concesión و contrapartida و recíproco بنبرة تفاوضية متزنة ورصينة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_concesion_condicion_contrapartida.mp3",
+          "modelAnswer": "Haremos esta concesión a condición de que nos ofrezcan una contrapartida clara y un compromiso recíproco."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

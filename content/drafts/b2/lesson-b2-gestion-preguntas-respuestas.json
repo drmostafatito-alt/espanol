@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-gestion-preguntas-respuestas",
+    "unitSlug": "b2-u8-presentations",
+    "levelCode": "B2",
+    "titleAr": "إدارة فقرة الأسئلة والأجوبة: اللباقة وإعادة توجيه الاستفسارات",
+    "titleEs": "Gestión del turno de preguntas (Q&A): Cortesía, aplazamiento y control del debate",
+    "subtitleAr": "التعامل مع الأسئلة المحرجة أو الطويلة، شكر السائل، وتأجيل ما يلزم للخاص",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يدير المتعلم جولة الأسئلة والأجوبة (Turno de preguntas) بكفاءة وكياسة تامة.",
+        "أن يوظف صيغ التعامل مع المتدخلين: le agradezco la pregunta, si le parece bien lo comentamos en la pausa, ceñirse al tema.",
+        "أن يعيد صياغة الأسئلة المعقدة أو المبهمة للتأكد من فهم القاعة قبل الإجابة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الدبلوماسية للرد وتأجيل النقاش في المحاضرات",
+          "explanationAr": "1. **تثمين السؤال وإعادة صياغته (Reformulación cortés)**:\n- *Le agradezco enormemente esta pregunta tan pertinente*.\n- *Si he entendido bien, su inquietud se centra en... ¿es correcto?*\n2. **تأجيل الرد المفصل للاستراحة لتفادي احتكار الوقت**:\n- *Por razones de tiempo, si le parece oportuno, podemos profundizar en ese detalle durante la pausa para el café*.\n3. **إعادة توجيه النقاش الخارج عن السياق**:\n- *Es un tema sumamente interesante, aunque se aleja un poco del objetivo de esta sesión; no obstante...*"
+        }
+      ],
+      "commonMistakesAr": [
+        "الدخول في شجار أو مناظرة ثنائية طويلة مع سائل واحد؛ القاعدة الذهبية: إجابة مقتضبة في دقيقة ثم تحويل النقاش الموسع للاستراحة.",
+        "التظاهر بمعرفة إجابة سؤال مجهول؛ الأسلوب المهني يعتمد الصدق: *En este momento no dispongo de ese dato exacto, pero con gusto se lo remito por correo*."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في فقرة الأسئلة لما حد يسأل سؤال طويل أو خارج الموضوع بنقول «سؤال ممتاز، بس عشان الوقت ممكن ندردش فيه بالتفصيل في البريك». بالإسبانية: Es una pregunta muy interesante; si le parece, para no robar tiempo a los demás, lo comentamos tranquilamente en la pausa."
+        }
+      ],
+      "culturalNoteAr": "في المؤتمرات الإسبانية يُعتبر شكر السائل قبل الإجابة (Muchas gracias por su pregunta) من قواعد اللباقة الأساسية التي تبني احتراماً متبادلاً."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-gestion-preguntas-respuestas-intro",
+        "type": "explanation",
+        "titleAr": "فن إدارة النقاش مع الجمهور",
+        "bodyAr": "العبارات القيادية في جولة الأسئلة:\n- **el turno de preguntas**: جولة وفقرة الأسئلة والأجوبة المخصصة في نهاية العرض\n- **agradecer la intervención**: شكر السائل على مداخلته القيمة\n- **tratar en la pausa**: تأجيل النقاش المفصل للاستراحة غير الرسمية\n- **ceñirse al tema**: الالتزام بالموضوع ومحور المحاضرة دون استطراد\n- **reformular la pregunta**: إعادة صياغة السؤال بصوت مسموع ليتأكد الجميع منه\n- **abrir el turno de palabra**: فتح المجال للجمهور لطلب الكلمة",
+        "examples": [
+          {
+            "es": "Abrimos ahora el turno de preguntas para que puedan plantear sus dudas.",
+            "ar": "نفتح الآن فقرة الأسئلة لكي تتمكنوا من طرح استفساراتكم."
+          },
+          {
+            "es": "Agradezco su interesante pregunta, que da en el clavo del debate.",
+            "ar": "أشكركم على سؤالكم المثير للاهتمام، والذي يصيب كبد النقاش بدقة."
+          },
+          {
+            "es": "Le ruego que nos ciñamos al tema principal para que otros compañeros puedan intervenir.",
+            "ar": "أرجو أن نلتزم بالموضوع الرئيسي ليتسنى للزملاء الآخرين المداخلة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "turno de preguntas",
+      "agradecer la intervención",
+      "tratar en la pausa",
+      "ceñirse al tema",
+      "reformular",
+      "abrir el turno"
+    ],
+    "reviewVocabulary": [
+      "duda",
+      "respuesta"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يدير المتعلم جولة الأسئلة والأجوبة (Turno de preguntas) بكفاءة وكياسة تامة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-gpr-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة المهذبة المناسبة لتأجيل سؤال تفصيلي جانبي إلى وقت الاستراحة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تحول نقاشاً تفصيلياً مع أحد الحاضرين بلباقة دون تضييع وقت المحاضرة؟",
+        "stemEs": "Es un aspecto muy técnico; si le parece bien, lo _____ para no restar tiempo a la sala.",
+        "stemAr": "هذه نقطة فنية دقيقة للغاية؛ إن بدا لكم الأمر مناسباً، سنتناولها ... لكي لا نقتطع من وقت القاعة.",
+        "options": [
+          {
+            "id": "ex-b2-gpr-1_a",
+            "text": "tratamos en la pausa",
+            "textAr": "نتناولها في الاستراحة بهدوء (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-gpr-1_b",
+            "text": "olvidamos para siempre",
+            "textAr": "ننساها للأبد",
+            "isCorrect": false,
+            "distractorRationaleAr": "اللباقة تقتضي تأجيلها للاستراحة: lo tratamos en la pausa."
+          },
+          {
+            "id": "ex-b2-gpr-1_c",
+            "text": "anulamos del contrato",
+            "textAr": "نلغيها من العقد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأسلوب اللبق هو tratamos en la pausa."
+          }
+        ],
+        "targetVocab": [
+          "tratar en la pausa",
+          "turno de preguntas"
+        ],
+        "explanationAr": "tratar en la pausa هي الصيغة الاحترافية لتأجيل الأسئلة المتخصصة المطولة دون إحراج السائل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-gpr-1_a"
+          ],
+          "selectedOptionId": "ex-b2-gpr-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-gpr-1_b": "اللباقة تقتضي تأجيلها للاستراحة: lo tratamos en la pausa.",
+          "ex-b2-gpr-1_c": "الأسلوب اللبق هو tratamos en la pausa."
+        }
+      },
+      {
+        "id": "ex-b2-gpr-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الذي يعني الالتزام والتقيد التام بموضوع الجلسة: _____ al tema",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل المصدر الانعكاسي في التعبير: _____ al tema (يتقيد بالموضوع):",
+        "stemEs": "Para aprovechar al máximo los minutos finales, les ruego ceñirse al _____ central.",
+        "stemAr": "للاستفادة القصوى من الدقائق الأخيرة، أرجو منكم التقيد بالموضوع المركزي.",
+        "targetVocab": [
+          "ceñirse al tema"
+        ],
+        "explanationAr": "ceñirse al tema تعني التقيد التام بفحوى الموضوع وعدم الاستطراد خارجه.",
+        "answerKey": {
+          "accepted": [
+            "tema"
+          ],
+          "acceptableAnswers": [
+            "tema"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-gpr-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة الرسمية التي يعلن بها المحاضر عن بدء فقرة استقبال أسئلة الحاضرين",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي العبارة التي تعلن بها عن فتح باب الأسئلة والمداخلات في ختام المحاضرة؟",
+        "stemEs": "Con esto concluyo mi exposición y _____ de preguntas a todos los presentes.",
+        "stemAr": "بهذا أختتم عرضي و... لطرح الأسئلة لجميع الحاضرين.",
+        "options": [
+          {
+            "id": "ex-b2-gpr-3_a",
+            "text": "abro el turno",
+            "textAr": "أفتح المجال وباب الأسئلة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-gpr-3_b",
+            "text": "levanto la sesión",
+            "textAr": "أرفع الجلسة نهائياً",
+            "isCorrect": false,
+            "distractorRationaleAr": "قبل رفع الجلسة نفتح باب الأسئلة: abro el turno de preguntas."
+          },
+          {
+            "id": "ex-b2-gpr-3_c",
+            "text": "hago una concesión",
+            "textAr": "أقدم تنازلاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "الافتتاح يسمى abrir el turno."
+          }
+        ],
+        "targetVocab": [
+          "abrir el turno",
+          "turno de preguntas",
+          "agradecer la intervención"
+        ],
+        "explanationAr": "abrir el turno de preguntas هي العبارة المعتمدة لبدء تلقي استفسارات الجمهور.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-gpr-3_a"
+          ],
+          "selectedOptionId": "ex-b2-gpr-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-gpr-3_b": "قبل رفع الجلسة نفتح باب الأسئلة: abro el turno de preguntas.",
+          "ex-b2-gpr-3_c": "الافتتاح يسمى abrir el turno."
+        }
+      },
+      {
+        "id": "ex-b2-gpr-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة اللبقة لإعادة صياغة استفسار السائل قبل الشروع في الإجابة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-gpr-4_t1",
+            "kind": "token",
+            "text": "Permítame"
+          },
+          {
+            "id": "ex-b2-gpr-4_t2",
+            "kind": "token",
+            "text": "reformular"
+          },
+          {
+            "id": "ex-b2-gpr-4_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b2-gpr-4_t4",
+            "kind": "token",
+            "text": "pregunta"
+          },
+          {
+            "id": "ex-b2-gpr-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b2-gpr-4_t6",
+            "kind": "token",
+            "text": "asegurarme"
+          },
+          {
+            "id": "ex-b2-gpr-4_t7",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b2-gpr-4_t8",
+            "kind": "token",
+            "text": "entenderla"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Permítame reformular su pregunta para asegurarme de entenderla"
+          ],
+          "tokenOrder": [
+            "ex-b2-gpr-4_t1",
+            "ex-b2-gpr-4_t2",
+            "ex-b2-gpr-4_t3",
+            "ex-b2-gpr-4_t4",
+            "ex-b2-gpr-4_t5",
+            "ex-b2-gpr-4_t6",
+            "ex-b2-gpr-4_t7",
+            "ex-b2-gpr-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الطلب المهذب Permítame reformular ثم المفعول su pregunta ثم الغرض para asegurarme de entenderla.",
+        "targetVocab": [
+          "reformular",
+          "agradecer la intervención"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-gpr-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث وحدد عبارة الشكر والتقدير التي وجهها للسائل في المؤتمر",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لرد المحاضر على السؤال من الصف الأول",
+        "stemEs": "Muchas gracias por su intervención; ha tocado un punto verdaderamente fundamental.",
+        "stemAr": "شكراً جزيلاً على مداخلتكم؛ لقد تطرقتم لنقطة جوهرية بحق.",
+        "options": [
+          {
+            "id": "ex-b2-gpr-5_a",
+            "text": "agradecer la intervención",
+            "textAr": "شكر السائل وتثمين مداخلته القيمة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-gpr-5_b",
+            "text": "criticar la pregunta",
+            "textAr": "نقد السؤال ورفضه",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحاضر بدأ بـ: Muchas gracias por su intervención."
+          },
+          {
+            "id": "ex-b2-gpr-5_c",
+            "text": "cerrar la sala",
+            "textAr": "إغلاق القاعة",
+            "isCorrect": false,
+            "distractorRationaleAr": "السلوك كان شكر المداخلة: agradecer la intervención."
+          }
+        ],
+        "targetVocab": [
+          "agradecer la intervención",
+          "turno de preguntas"
+        ],
+        "explanationAr": "المتحدث قال بتهذيب: 'Muchas gracias por su intervención'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_gracias_intervencion_punto_fundamental.mp3",
+        "speechEs": "Muchas gracias por su intervención; ha tocado un punto verdaderamente fundamental.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-gpr-5_a"
+          ],
+          "selectedOptionId": "ex-b2-gpr-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-gpr-5_b": "المحاضر بدأ بـ: Muchas gracias por su intervención.",
+          "ex-b2-gpr-5_c": "السلوك كان شكر المداخلة: agradecer la intervención."
+        }
+      },
+      {
+        "id": "ex-b2-gpr-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك القيادية لإدارة فقرة الأسئلة بلباقة وتوجيه ذكي للوقت",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة التالية لإدارة الحوار الختامي مع الجمهور بحكمة واحترافية:",
+        "stemEs": "Agradezco enormemente su intervención; para ceñirnos al tiempo, abrimos el turno de preguntas breves.",
+        "stemAr": "أشكركم جزيل الشكر على مداخلتكم؛ وللالتزام بالوقت المحدد، نفتح المجال للأسئلة الموجزة.",
+        "audioKey": "pending/b2_agradezco_intervencion_turno_preguntas.mp3",
+        "targetVocab": [
+          "agradecer la intervención",
+          "ceñirse al tema",
+          "abrir el turno",
+          "turno de preguntas"
+        ],
+        "explanationAr": "انتبه لنطق ceñirnos al tiempo و turno de preguntas بابتسامة ولباقة وثقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_agradezco_intervencion_turno_preguntas.mp3",
+          "modelAnswer": "Agradezco enormemente su intervención; para ceñirnos al tiempo, abrimos el turno de preguntas breves."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

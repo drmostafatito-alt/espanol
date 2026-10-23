@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-descripcion-graficos-tendencias",
+    "unitSlug": "b2-u8-presentations",
+    "levelCode": "B2",
+    "titleAr": "شرح الرسوم البيانية والإحصائيات: لغة الأرقام والاتجاهات",
+    "titleEs": "Descripción de gráficos y datos cuantitativos: Tendencias y proyecciones",
+    "subtitleAr": "التعبير عن الصعود الصاروخي (dispararse)، الاستقرار، والتقلبات في العروض",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم رسوماً بيانية وجداول إحصائية بدقة وسلاسة أمام الجمهور.",
+        "أن يوظف مفردات حركة المؤشرات: dispararse, desplomarse, estancarse, tocar fondo, experimentar un repunte.",
+        "أن يقارن بين المتغيرات في الرسوم البيانية الدائرية والأعمدة والخطوط البيانية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب والأفعال المتخصصة في وصف الرسوم والمنحنيات",
+          "explanationAr": "1. **أفعال الصعود السريع والهبوط الحاد**:\n- *Subir con fuerza / Dispararse*: Las exportaciones se dispararon en el tercer trimestre.\n- *Caer en picado / Desplomarse*: El valor de las acciones se desplomó tras la noticia.\n2. **التعبير عن الاستقرار والركود والارتداد**:\n- *Estancarse / Permanecer estable*: Los salarios se han estancado en la última década.\n- *Experimentar un repunte*: La demanda experimentó un notable repunte en primavera.\n3. **الإشارة البصرية للمخطط**:\n- *Como pueden apreciar en el eje de abscisas / ordenadas...*\n- *Este gráfico de barras ilustra con nitidez la brecha entre ambos grupos*."
+        }
+      ],
+      "commonMistakesAr": [
+        "الاقتصار على *sube* و *baja* البسيطة لوصف كل التغيرات؛ العرض الاحترافي يتطلب مفردات معبرة عن سرعة وزاوية التغير (*se disparó, se estancó, tocó fondo*).",
+        "قراءة كل الأرقام حرفياً على الشريحة بدلاً من تفسير الاتجاه العام والمغزى والرسالة وراء البيانات."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في قراءة الشارت بنقول «زي ما هو باين في الرسم البياني، المبيعات نطت فجأة بعد ما كانت مستقرة والأسهم نزلت للأرض». بالإسبانية: Como muestra el gráfico, las ventas se dispararon tras un periodo de estancamiento."
+        }
+      ],
+      "culturalNoteAr": "الخبراء الإسبان يفضلون المخططات البيانية النظيفة (Gráficos despejados) التي تبرز الاتجاه الاستراتيجي مع تجنب إغراق الشريحة بالمعطيات الزائدة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-descripcion-graficos-tendencias-intro",
+        "type": "explanation",
+        "titleAr": "معجم حركة المنحنيات والمؤشرات",
+        "bodyAr": "أهم أفعال ومفاهيم الرسوم البيانية:\n- **dispararse**: يقفز ويصعد بسرعة صاروخية حادة\n- **desplomarse**: ينهار ويهوي سقوطاً حاداً\n- **estancarse**: يستقر ويركد بلا حركة ولا نمو\n- **experimentar un repunte**: يشهد انتعاشة وارتداداً صعودياً إيجابياً\n- **tocar fondo**: يلامس القاع في أدنى مستوياته قبل التعافي\n- **el gráfico de barras/sectores**: المخطط بالأعمدة أو بالقطاعات الدائرية",
+        "examples": [
+          {
+            "es": "Como observan en la curva azul, las ventas se dispararon un treinta por ciento.",
+            "ar": "كما تلاحظون في المنحنى الأزرق، قفزت المبيعات قفزة صاروخية بنسبة ثلاثين بالمائة."
+          },
+          {
+            "es": "Tras varios meses de caída, el índice bursátil tocó fondo en agosto y luego repuntó.",
+            "ar": "بعد شهور من الهبوط، لامس المؤشر القاع في أغسطس ثم ارتد صعوداً."
+          },
+          {
+            "es": "El gráfico de barras ilustra con claridad la distribución del gasto por departamentos.",
+            "ar": "يوضح الرسم البياني بالأعمدة توزيع النفقات حسب الأقسام بجلاء."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dispararse",
+      "desplomarse",
+      "estancarse",
+      "experimentar un repunte",
+      "tocar fondo",
+      "gráfico de barras"
+    ],
+    "reviewVocabulary": [
+      "gráfico",
+      "número"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يصف المتعلم رسوماً بيانية وجداول إحصائية بدقة وسلاسة أمام الجمهور.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-dgt-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الذي يعبر عن الصعود الصاروخي الحاد والمفاجئ للأرقام",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل تصف به منحنى بياني قفز فجأة إلى القمة بسرعة فائقة؟",
+        "stemEs": "Durante el confinamiento, la demanda de comercio electrónico se _____ de forma espectacular.",
+        "stemAr": "خلال فترة الإغلاق، ... الطلب على التجارة الإلكترونية بشكل مذهل وصاروخي.",
+        "options": [
+          {
+            "id": "ex-b2-dgt-1_a",
+            "text": "disparó",
+            "textAr": "صعد صعوداً صاروخياً فائقاً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-dgt-1_b",
+            "text": "estancó",
+            "textAr": "ركد وثبت في مكانه",
+            "isCorrect": false,
+            "distractorRationaleAr": "القفزة السريعة يعبر عنها بـ se disparó."
+          },
+          {
+            "id": "ex-b2-dgt-1_c",
+            "text": "desplomó",
+            "textAr": "سقط وانهار",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصعود الصاروخي هو se disparó."
+          }
+        ],
+        "targetVocab": [
+          "dispararse",
+          "desplomarse"
+        ],
+        "explanationAr": "dispararse يعني القفز السريع الحاد للقيم الإحصائية كالسهم المنطلق.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-dgt-1_a"
+          ],
+          "selectedOptionId": "ex-b2-dgt-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-dgt-1_b": "القفزة السريعة يعبر عنها بـ se disparó.",
+          "ex-b2-dgt-1_c": "الصعود الصاروخي هو se disparó."
+        }
+      },
+      {
+        "id": "ex-b2-dgt-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني وصول المؤشر إلى أدنى درك ممكن: tocar _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في التعبير: tocar _____ (يلامس القاع في التراجع):",
+        "stemEs": "La economía tocó _____ durante el primer trimestre antes de iniciar la paulatina recuperación.",
+        "stemAr": "لامس الاقتصاد ... خلال الربع الأول قبل أن يبدأ التعافي التدريجي.",
+        "targetVocab": [
+          "tocar fondo"
+        ],
+        "explanationAr": "tocar fondo تعني بلوغ أدنى نقطة سلبية ممكنة قبل بدء الارتداد الصاعد.",
+        "answerKey": {
+          "accepted": [
+            "fondo"
+          ],
+          "acceptableAnswers": [
+            "fondo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-dgt-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الفعل الذي يصف الانهيار والسقوط العمودي المفاجئ للأسهم أو المبيعات",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'الهبوط الحر الحاد والانهيار الكامل للأرقام'؟",
+        "stemEs": "Tras la publicación de los malos resultados, el valor de la empresa se _____ en bolsa.",
+        "stemAr": "إثر نشر النتائج السيئة، ...ت قيمة الشركة في البورصة وهوت سقوطاً حاداً.",
+        "options": [
+          {
+            "id": "ex-b2-dgt-3_a",
+            "text": "desplomó",
+            "textAr": "انهارت وهوت سقوطاً حاداً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-dgt-3_b",
+            "text": "disparó",
+            "textAr": "قفزت للأعلى",
+            "isCorrect": false,
+            "distractorRationaleAr": "الانهيار الحاد يسمى se desplomó."
+          },
+          {
+            "id": "ex-b2-dgt-3_c",
+            "text": "evocó",
+            "textAr": "استحضرت ذكرى",
+            "isCorrect": false,
+            "distractorRationaleAr": "الهبوط الحاد هو se desplomó."
+          }
+        ],
+        "targetVocab": [
+          "desplomarse",
+          "dispararse",
+          "estancarse"
+        ],
+        "explanationAr": "desplomarse يعني الانهيار والسقوط السريع الحاد للمؤشرات المالية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-dgt-3_a"
+          ],
+          "selectedOptionId": "ex-b2-dgt-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-dgt-3_b": "الانهيار الحاد يسمى se desplomó.",
+          "ex-b2-dgt-3_c": "الهبوط الحاد هو se desplomó."
+        }
+      },
+      {
+        "id": "ex-b2-dgt-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة التوضيحية لشرح معطيات الرسم البياني بالأعمدة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-dgt-4_t1",
+            "kind": "token",
+            "text": "Este"
+          },
+          {
+            "id": "ex-b2-dgt-4_t2",
+            "kind": "token",
+            "text": "gráfico"
+          },
+          {
+            "id": "ex-b2-dgt-4_t3",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b2-dgt-4_t4",
+            "kind": "token",
+            "text": "barras"
+          },
+          {
+            "id": "ex-b2-dgt-4_t5",
+            "kind": "token",
+            "text": "muestra"
+          },
+          {
+            "id": "ex-b2-dgt-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-dgt-4_t7",
+            "kind": "token",
+            "text": "evolución"
+          },
+          {
+            "id": "ex-b2-dgt-4_t8",
+            "kind": "token",
+            "text": "mensual"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Este gráfico de barras muestra la evolución mensual"
+          ],
+          "tokenOrder": [
+            "ex-b2-dgt-4_t1",
+            "ex-b2-dgt-4_t2",
+            "ex-b2-dgt-4_t3",
+            "ex-b2-dgt-4_t4",
+            "ex-b2-dgt-4_t5",
+            "ex-b2-dgt-4_t6",
+            "ex-b2-dgt-4_t7",
+            "ex-b2-dgt-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: اسم الإشارة Este ثم الموصوف gráfico ثم النعت de barras ثم الفعل muestra ثم المفعول la evolución mensual.",
+        "targetVocab": [
+          "gráfico de barras",
+          "estancarse"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-dgt-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمحلل المالي وحدد التغير الإيجابي الذي طرأ على المنحنى في الربيع",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشرح المخطط البياني في النشرة الاقتصادية",
+        "stemEs": "A partir de mayo, las exportaciones experimentaron un notable repunte.",
+        "stemAr": "ابتداءً من شهر مايو، شهدت الصادرات انتعاشة وارتداداً صعودياً ملحوظاً.",
+        "options": [
+          {
+            "id": "ex-b2-dgt-5_a",
+            "text": "experimentar un repunte",
+            "textAr": "شهد انتعاشة وارتداداً إيجابياً صاعداً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-dgt-5_b",
+            "text": "desplomarse",
+            "textAr": "انهارت تماماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحلل قال: experimentaron un notable repunte."
+          },
+          {
+            "id": "ex-b2-dgt-5_c",
+            "text": "tocar fondo",
+            "textAr": "بلغت القاع السلبي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحدث كان انتعاشة: un repunte."
+          }
+        ],
+        "targetVocab": [
+          "experimentar un repunte",
+          "tocar fondo"
+        ],
+        "explanationAr": "المحلل قال بوضوح: 'las exportaciones experimentaron un notable repunte'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_exportaciones_notable_repunte.mp3",
+        "speechEs": "A partir de mayo, las exportaciones experimentaron un notable repunte.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-dgt-5_a"
+          ],
+          "selectedOptionId": "ex-b2-dgt-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-dgt-5_b": "المحلل قال: experimentaron un notable repunte.",
+          "ex-b2-dgt-5_c": "الحدث كان انتعاشة: un repunte."
+        }
+      },
+      {
+        "id": "ex-b2-dgt-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك لشرح الرسم البياني بأسلوب تحليلي فصيح ومخارج حروف واضحة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كخبير يعلق على شاشة المؤشرات أمام الحاضرين:",
+        "stemEs": "Como muestra el gráfico de barras, las cifras se dispararon en verano tras tocar fondo en invierno.",
+        "stemAr": "كما يُظهر الرسم البياني بالأعمدة، قفزت الأرقام صعوداً في الصيف بعد ملامستها القاع في الشتاء.",
+        "audioKey": "pending/b2_grafico_barras_cifras_dispararon.mp3",
+        "targetVocab": [
+          "gráfico de barras",
+          "dispararse",
+          "tocar fondo",
+          "experimentar un repunte"
+        ],
+        "explanationAr": "انتبه لنطق gráfico de barras و se dispararon و tocar fondo بنبرة شارحة وواضحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_grafico_barras_cifras_dispararon.mp3",
+          "modelAnswer": "Como muestra el gráfico de barras, las cifras se dispararon en verano tras tocar fondo en invierno."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

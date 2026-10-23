@@ -2702,7 +2702,78 @@
               "objectiveAr": "أن يحلّل المتعلم نصًا إخباريًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-analisis-prensa-editorial",
+                  "titleAr": "تحليل الصحافة والافتتاحيات: نبرة المقال والخطاب الإخباري",
+                  "objectiveAr": "أن يحلل المتعلم المقال الافتتاحي ويفكك موقفه الضمني ونبرته النقدية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-analisis-prensa-editorial.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-pasiva-periodistica-se",
+                  "titleAr": "أسلوب المبني للمجهول الصحفي: Pasiva con Ser و Pasiva Refleja",
+                  "objectiveAr": "أن يتقن المتعلم صياغة المبني للمجهول التام (Ser + participio) في نقل الأخبار المكتملة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-pasiva-periodistica-se.json",
+                  "requires": [
+                    "b2-analisis-prensa-editorial"
+                  ]
+                },
+                {
+                  "slug": "b2-hechos-vs-opiniones",
+                  "titleAr": "التمييز بين الحقائق والآراء: الموضوعية والتلاعب الدلالي",
+                  "objectiveAr": "أن يفرز المتعلم بين البيانات القابلة للإثبات (Hechos) والأحكام التقديرية (Opiniones).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-hechos-vs-opiniones.json",
+                  "requires": [
+                    "b2-pasiva-periodistica-se"
+                  ]
+                },
+                {
+                  "slug": "b2-entrevista-periodistica",
+                  "titleAr": "إجراء المقابلة الصحفية: نقل التصريحات وصياغة الأسئلة الذكية",
+                  "objectiveAr": "أن يوجه المتعلم أسئلة صحفية ذكية ودبلوماسية ومحرجة بلباقة لشخصيات مسؤولة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-entrevista-periodistica.json",
+                  "requires": [
+                    "b2-hechos-vs-opiniones"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u3-literature",
@@ -2710,7 +2781,78 @@
               "objectiveAr": "أن يقرأ المتعلم نصًا أدبيًا قصيرًا ويحلّله.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-literatura-narrativa-contemporanea",
+                  "titleAr": "السرد الأدبي المعاصر: فهم النصوص وعوالم الرواية",
+                  "objectiveAr": "أن يقرأ المتعلم نصوصاً أدبية من الأدب الإسباني واللاتيني ويفهم دلالاتها العميقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-literatura-narrativa-contemporanea.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-metaforas-recursos-literarios",
+                  "titleAr": "الاستعارة والصور البلاغية: التعبير المجازي والأدبي الرفيع",
+                  "objectiveAr": "أن يتعرف المتعلم على الصور البلاغية الرئيسية: metáfora, símil, personificación, hipérbole.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-metaforas-recursos-literarios.json",
+                  "requires": [
+                    "b2-literatura-narrativa-contemporanea"
+                  ]
+                },
+                {
+                  "slug": "b2-analisis-personajes-relato",
+                  "titleAr": "تحليل الشخصيات في القصة: البعد النفسي والصراع الداخلي",
+                  "objectiveAr": "أن يحلل المتعلم الأبعاد النفسية والأخلاقية للشخصية الروائية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-analisis-personajes-relato.json",
+                  "requires": [
+                    "b2-metaforas-recursos-literarios"
+                  ]
+                },
+                {
+                  "slug": "b2-expresion-estetica-emociones",
+                  "titleAr": "التعبير الجمالي عن المشاعر: لغة الوجدان في الأدب",
+                  "objectiveAr": "أن يوظف المتعلم معجماً عاطفياً أدبياً رفيعاً يتجاوز التعبيرات البسيطة المباشرة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-expresion-estetica-emociones.json",
+                  "requires": [
+                    "b2-analisis-personajes-relato"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u4-professional",
@@ -2718,7 +2860,78 @@
               "objectiveAr": "أن يشارك المتعلم في اجتماع عمل.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-gestion-reuniones-orden-dia",
+                  "titleAr": "إدارة الاجتماعات المهنية: جدول الأعمال وتوزيع المداخلات",
+                  "objectiveAr": "أن يدير المتعلم اجتماع عمل بالإسبانية من الافتتاح وحتى إقرار التوصيات.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-gestion-reuniones-orden-dia.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-informes-ejecutivos-kpis",
+                  "titleAr": "التقارير التنفيذية ومؤشرات الأداء: صياغة النتائج والتوصيات",
+                  "objectiveAr": "أن يصيغ المتعلم تقريراً تنفيذياً موجزاً يقدم الحقائق والنتائج بالأرقام.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-informes-ejecutivos-kpis.json",
+                  "requires": [
+                    "b2-gestion-reuniones-orden-dia"
+                  ]
+                },
+                {
+                  "slug": "b2-correspondencia-corporativa",
+                  "titleAr": "المراسلات المؤسسية والبريد التجاري الرفيع: لغة الأعمال الرسمية",
+                  "objectiveAr": "أن يكتب المتعلم بريداً إلكترونياً تجارياً رسمياً (B2B) يتسم بالدقة واللباقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-correspondencia-corporativa.json",
+                  "requires": [
+                    "b2-informes-ejecutivos-kpis"
+                  ]
+                },
+                {
+                  "slug": "b2-resolucion-conflictos-laborales",
+                  "titleAr": "حل النزاعات المؤسسية وإدارة فرق العمل: الوساطة والتفاهم",
+                  "objectiveAr": "أن يتدخل المتعلم كوسيط لحل سوء التفاهم والنزاع بين أعضاء فريق العمل.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-resolucion-conflictos-laborales.json",
+                  "requires": [
+                    "b2-correspondencia-corporativa"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u5-academic",
@@ -2726,7 +2939,78 @@
               "objectiveAr": "أن يكتب المتعلم فقرة أكاديمية منظمة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-estructura-ensayo-academico",
+                  "titleAr": "هيكل المقال والبحث الأكاديمي: الأطروحة والبرهان المنهجي",
+                  "objectiveAr": "أن يركب المتعلم هيكلاً أكاديمياً متكاملاً لمقال بحثي (مقدمة، فرضية، عرض، استنتاج).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-estructura-ensayo-academico.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-citacion-fuentes-academicas",
+                  "titleAr": "أدوات الاستشهاد ونقل آراء الباحثين: التوثيق والأمانة العلمية",
+                  "objectiveAr": "أن ينقل المتعلم آراء المفكرين والباحثين بدقة مستخدماً أفعال الإحالة الأكاديمية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-citacion-fuentes-academicas.json",
+                  "requires": [
+                    "b2-estructura-ensayo-academico"
+                  ]
+                },
+                {
+                  "slug": "b2-conectores-causa-efecto-avanzados",
+                  "titleAr": "الروابط السببية والاستنتاجية المتقدمة: بناء النسق البراهيني",
+                  "objectiveAr": "أن يوظف المتعلم روابط سببية واستنتاجية راقية تتجاوز porque و por eso البسيطة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-conectores-causa-efecto-avanzados.json",
+                  "requires": [
+                    "b2-citacion-fuentes-academicas"
+                  ]
+                },
+                {
+                  "slug": "b2-resumen-conclusiones-investigacion",
+                  "titleAr": "ملخص البحث والاستنتاجات: صياغة التوصيات وآفاق المستقبل",
+                  "objectiveAr": "أن يحرر المتعلم ملخصاً أكاديمياً مكثفاً (Abstract) يعكس جوهر البحث في 150-200 كلمة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-resumen-conclusiones-investigacion.json",
+                  "requires": [
+                    "b2-conectores-causa-efecto-avanzados"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u6-negotiation",
@@ -2734,7 +3018,78 @@
               "objectiveAr": "أن يتفاوض المتعلم ويقنع بحجج.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-estrategias-negociacion-comercial",
+                  "titleAr": "استراتيجيات التفاوض التجاري: تقديم العروض وبدائل الاتفاق",
+                  "objectiveAr": "أن يفتتح المتعلم جولة مفاوضات تجارية ويحدد سقوف التفاوض والبدائل الممكنة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-estrategias-negociacion-comercial.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-concesiones-condiciones-mutuas",
+                  "titleAr": "التنازلات والشروط المتبادلة: مقايضة المصالح في التفاوض",
+                  "objectiveAr": "أن يقايض المتعلم التنازلات بذكاء: لا تنازل دون مقابل ملموس في المقابل.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-concesiones-condiciones-mutuas.json",
+                  "requires": [
+                    "b2-estrategias-negociacion-comercial"
+                  ]
+                },
+                {
+                  "slug": "b2-persuasion-manejo-objeciones",
+                  "titleAr": "أساليب الإقناع والتعامل مع الاعتراضات: اللباقة وإعادة التأطير",
+                  "objectiveAr": "أن يمتص المتعلم اعتراضات العميل حول السعر أو الوقت ويعيد تأطيرها إيجابياً.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-persuasion-manejo-objeciones.json",
+                  "requires": [
+                    "b2-concesiones-condiciones-mutuas"
+                  ]
+                },
+                {
+                  "slug": "b2-acuerdo-clausulas-contractuales",
+                  "titleAr": "صياغة الاتفاقيات والبنود التعاقدية: اللغة القانونية والتثبيت النهائي",
+                  "objectiveAr": "أن يقرأ المتعلم عقداً تجارياً إسبانياً ويفهم بنوده والتزاماته القانونية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-acuerdo-clausulas-contractuales.json",
+                  "requires": [
+                    "b2-persuasion-manejo-objeciones"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u7-environment",
@@ -2742,7 +3097,78 @@
               "objectiveAr": "أن يناقش المتعلم قضايا مجتمعية.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-cambio-climatico-sostenibilidad",
+                  "titleAr": "التغير المناخي والاستدامة: التحديات البيئية الكبرى",
+                  "objectiveAr": "أن يناقش المتعلم قضايا الاحتباس الحراري والتدهور البيئي بلغة علمية دقيقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-cambio-climatico-sostenibilidad.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-politicas-ambientales-subjuntivo",
+                  "titleAr": "السياسات البيئية والتوصيات: صياغة اللوائح واستخدام المنصوب",
+                  "objectiveAr": "أن يصيغ المتعلم توصيات ولوائح تشريعية لحماية البيئة بأسلوب قانوني رصين.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-politicas-ambientales-subjuntivo.json",
+                  "requires": [
+                    "b2-cambio-climatico-sostenibilidad"
+                  ]
+                },
+                {
+                  "slug": "b2-transformacion-social-demografia",
+                  "titleAr": "التحولات المجتمعية والديموغرافية: الشيخوخة والهجرة والريف المهجور",
+                  "objectiveAr": "أن يحلل المتعلم الظواهر الديموغرافية الكبرى في المجتمع الإسباني والأوروبي المعاصر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-transformacion-social-demografia.json",
+                  "requires": [
+                    "b2-politicas-ambientales-subjuntivo"
+                  ]
+                },
+                {
+                  "slug": "b2-debate-energia-desarrollo",
+                  "titleAr": "مناظرة بيئية: الطاقة المتجددة مقابل التنمية والنمو الاقتصادي",
+                  "objectiveAr": "أن يشارك المتعلم في مناظرة متقدمة حول مزايا وعيوب مصادر الطاقة المختلفة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-debate-energia-desarrollo.json",
+                  "requires": [
+                    "b2-transformacion-social-demografia"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u8-presentations",
@@ -2750,7 +3176,78 @@
               "objectiveAr": "أن يقدّم المتعلم عرضًا قصيرًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-apertura-presentacion-audiencia",
+                  "titleAr": "افتتاح العرض التقديمي: كسر الجليد وجذب انتباه الجمهور",
+                  "objectiveAr": "أن يفتتح المتعلم عرضاً تقديمياً أمام الجمهور بأسلوب واثق ومحترف.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-apertura-presentacion-audiencia.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-descripcion-graficos-tendencias",
+                  "titleAr": "شرح الرسوم البيانية والإحصائيات: لغة الأرقام والاتجاهات",
+                  "objectiveAr": "أن يصف المتعلم رسوماً بيانية وجداول إحصائية بدقة وسلاسة أمام الجمهور.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-descripcion-graficos-tendencias.json",
+                  "requires": [
+                    "b2-apertura-presentacion-audiencia"
+                  ]
+                },
+                {
+                  "slug": "b2-gestion-preguntas-respuestas",
+                  "titleAr": "إدارة فقرة الأسئلة والأجوبة: اللباقة وإعادة توجيه الاستفسارات",
+                  "objectiveAr": "أن يدير المتعلم جولة الأسئلة والأجوبة (Turno de preguntas) بكفاءة وكياسة تامة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-gestion-preguntas-respuestas.json",
+                  "requires": [
+                    "b2-descripcion-graficos-tendencias"
+                  ]
+                },
+                {
+                  "slug": "b2-conclusion-llamada-accion",
+                  "titleAr": "خاتمة العرض والدعوة للعمل: ترك أثر باقٍ لدى الجمهور",
+                  "objectiveAr": "أن يختتم المتعلم عرضه التقديمي بخاتمة ملهمة وقوية لا تُنسى.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-conclusion-llamada-accion.json",
+                  "requires": [
+                    "b2-gestion-preguntas-respuestas"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u9-formal-writing",
@@ -2758,7 +3255,78 @@
               "objectiveAr": "أن يكتب المتعلم بريدًا رسميًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-reclamaciones-juridicas-instancias",
+                  "titleAr": "العرائض الرسمية والشكاوى القانونية: مخاطبة الإدارات الحكومية",
+                  "objectiveAr": "أن يحرر المتعلم عريضة رسمية (Instancia administrativa) متوافقة مع الإجراءات القانونية الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-reclamaciones-juridicas-instancias.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-carta-motivacion-becas-empleo",
+                  "titleAr": "خطاب الدافع للمنح والوظائف العليا: التميز وإبراز القيمة",
+                  "objectiveAr": "أن يحرر المتعلم خطاب دافع (Carta de motivación) مقنعاً وتنافسياً لطلب منحة أو وظيفة عليا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-carta-motivacion-becas-empleo.json",
+                  "requires": [
+                    "b2-reclamaciones-juridicas-instancias"
+                  ]
+                },
+                {
+                  "slug": "b2-comunicacion-institucional-diplomatica",
+                  "titleAr": "التواصل المؤسسي والدبلوماسي: مخاطبة الهيئات الرسمية والسفارات",
+                  "objectiveAr": "أن يكتب المتعلم مذكرة رسمية أو خطاباً بروتوكولياً موجهاً لهيئة دبلوماسية أو دستورية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-comunicacion-institucional-diplomatica.json",
+                  "requires": [
+                    "b2-carta-motivacion-becas-empleo"
+                  ]
+                },
+                {
+                  "slug": "b2-formulas-protocolarias-cierre",
+                  "titleAr": "الصيغ الختامية والتوقيع: أصول التوثيق والمراسلات الإدارية",
+                  "objectiveAr": "أن يختار المتعلم الصيغة الختامية الدقيقة المطابقة لمقام المرسل إليه وسياق الخطاب.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-formulas-protocolarias-cierre.json",
+                  "requires": [
+                    "b2-comunicacion-institucional-diplomatica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u10-culture-deep",
@@ -2766,7 +3334,78 @@
               "objectiveAr": "أن يميّز المتعلم الفروق الإقليمية في اللغة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-variedades-linguisticas-hispanas",
+                  "titleAr": "التنوع اللغوي في العالم الإسباني: اللهجات والفروق المعجمية",
+                  "objectiveAr": "أن يتعرف المتعلم على الفروق الصوتية والنحوية الكبرى في العالم الإسباني (Seseo, Ceceo, Voseo).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-variedades-linguisticas-hispanas.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-comunicacion-no-verbal-gestos",
+                  "titleAr": "التواصل غير اللفظي ولغة الجسد: الإشارات والمسافات المكانية",
+                  "objectiveAr": "أن يفسر المتعلم الإشارات الجسدية الشائعة في إسبانيا وأمريكا اللاتينية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-comunicacion-no-verbal-gestos.json",
+                  "requires": [
+                    "b2-variedades-linguisticas-hispanas"
+                  ]
+                },
+                {
+                  "slug": "b2-patrimonio-cultural-inmaterial",
+                  "titleAr": "التراث الثقافي اللامادي والاحتفالات الكبرى: الهوية والتاريخ",
+                  "objectiveAr": "أن يحلل المتعلم عناصر التراث الثقافي غير المادي في إسبانيا والعالم اللاتيني المعترف بها دولياً من اليونسكو.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-patrimonio-cultural-inmaterial.json",
+                  "requires": [
+                    "b2-comunicacion-no-verbal-gestos"
+                  ]
+                },
+                {
+                  "slug": "b2-choque-cultural-integracion",
+                  "titleAr": "الصدام الثقافي والاندماج: التكيف والانفتاح على التنوع",
+                  "objectiveAr": "أن يحلل المتعلم مراحل التكيف مع الثقافة الإسبانية الجديدة وتجاوز الصدمة الثقافية الأولى.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-choque-cultural-integracion.json",
+                  "requires": [
+                    "b2-patrimonio-cultural-inmaterial"
+                  ]
+                }
+              ]
             }
           ]
         },

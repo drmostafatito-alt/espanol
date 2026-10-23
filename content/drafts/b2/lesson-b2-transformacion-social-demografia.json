@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-transformacion-social-demografia",
+    "unitSlug": "b2-u7-environment",
+    "levelCode": "B2",
+    "titleAr": "التحولات المجتمعية والديموغرافية: الشيخوخة والهجرة والريف المهجور",
+    "titleEs": "Transformaciones demográficas y cohesión social: Envejecimiento y la España vaciada",
+    "subtitleAr": "تفريغ القرى (la despoblación)، الهرم السكاني، التكافل، ومستقبل المعاشات",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحلل المتعلم الظواهر الديموغرافية الكبرى في المجتمع الإسباني والأوروبي المعاصر.",
+        "أن يوظف مصطلحات علم السكان: envejecimiento poblacional, tasa de natalidad, éxodo rural, España vaciada, relevo generacional.",
+        "أن يربط بين الهجرة والاستقرار الاقتصادي واستدامة أنظمة التقاعد."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الإحصائية والتحليلية في علم الاجتماع السكاني",
+          "explanationAr": "1. **التعبير عن التحول الديموغرافي التراكمي**:\n- *La baja tasa de natalidad unida a la longevidad provoca el envejecimiento demográfico*.\n- *Se asiste a una progresiva inversión de la pirámide poblacional*.\n2. **التعبير عن ظاهرة الهجرة والنزوح الريفي**:\n- *El éxodo rural hacia las grandes urbes ha dado lugar a la llamada España vaciada*.\n3. **التحديات المستقبلية لصناديق التقاعد**:\n- *La falta de relevo generacional pone en riesgo la sostenibilidad del sistema de pensiones*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *España vacía* بدلاً من المصطلح الأكثر دقة في الخطاب الاجتماعي الإسباني الراهن **la España vaciada** (للتأكيد على أن التفريغ كان نتيجة سياسات تنموية خاطئة).",
+        "ترجمة 'الإحلال والتعاقب الجيلي' بـ *cambio de generaciones*؛ المصطلح السوسيولوجي المعتمد هو **el relevo generacional**."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في قضايا السكان بنقول «أوروبا وإسبانيا فيها شيخوخة سكانية وقلة مواليد والقرى بتفضى من الشباب». بالإسبانية: España sufre un envejecimiento poblacional agudo y una despoblación rural que vacía los pueblos."
+        }
+      ],
+      "culturalNoteAr": "قضية 'La España vaciada' (المناطق الداخلية والريفية في قشتالة وأراغون التي هجرها سكانها) تمثل أحد أكبر التحديات السياسية والاجتماعية في إسبانيا المعاصرة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-transformacion-social-demografia-intro",
+        "type": "explanation",
+        "titleAr": "مفاهيم التغير الديموغرافي والمجتمعي",
+        "bodyAr": "المصطلحات الديموغرافية والاجتماعية:\n- **el envejecimiento poblacional**: شيخوخة السكان وارتفاع معدل الأعمار\n- **la tasa de natalidad**: معدل الولادات والخصوبة السنوية\n- **la España vaciada**: مصطلح إسباني شهير يطلق على المناطق الريفية المهجورة التي تعاني من النزوح\n- **el éxodo rural**: النزوح والهجرة الجماعية من الريف إلى المدن الكبرى\n- **el relevo generacional**: التعاقب والإحلال الجيلي في سوق العمل والمجتمع\n- **la pirámide poblacional**: الهرم السكاني وتوزع الفئات العمرية",
+        "examples": [
+          {
+            "es": "El envejecimiento poblacional plantea enormes retos para la sanidad y las pensiones.",
+            "ar": "تفرض شيخوخة السكان تحديات هائلة على منظومتي الصحة والتقاعد."
+          },
+          {
+            "es": "Muchos municipios de la España vaciada ofrecen incentivos fiscales para atraer a familias jóvenes.",
+            "ar": "تقدم بلديات عديدة في إسبانيا الريفية المهجورة حوافز ضريبية لجذب الأسر الشابة."
+          },
+          {
+            "es": "La inmigración contribuye decisivamente a garantizar el relevo generacional en sectores clave.",
+            "ar": "تسهم الهجرة بشكل حاسم في ضمان التعاقب الجيلي في القطاعات الحيوية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "envejecimiento poblacional",
+      "tasa de natalidad",
+      "España vaciada",
+      "éxodo rural",
+      "relevo generacional",
+      "pirámide poblacional"
+    ],
+    "reviewVocabulary": [
+      "población",
+      "sociedad"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحلل المتعلم الظواهر الديموغرافية الكبرى في المجتمع الإسباني والأوروبي المعاصر.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-tsd-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الاجتماعي الإسباني الشهير الذي يطلق على المناطق الريفية التي هجرها سكانها",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو التعبير الشائع في الإعلام الإسباني لوصف القرى والمناطق الداخلية الخالية من الخدمات والشباب؟",
+        "stemEs": "El problema de la despoblación en _____ exige un pacto de Estado integral.",
+        "stemAr": "تتطلب مشكلة تفريغ السكان في ... ميثاق دولة شاملاً ومستداماً.",
+        "options": [
+          {
+            "id": "ex-b2-tsd-1_a",
+            "text": "España vaciada",
+            "textAr": "إسبانيا الريفية المفرغة من سكانها (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-tsd-1_b",
+            "text": "gran urbe",
+            "textAr": "المدينة المليونية الكبرى",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح الذي يطلق على الريف المهجور هو la España vaciada."
+          },
+          {
+            "id": "ex-b2-tsd-1_c",
+            "text": "costa turística",
+            "textAr": "الساحل السياحي المزدحم",
+            "isCorrect": false,
+            "distractorRationaleAr": "الظاهرة تسمى la España vaciada."
+          }
+        ],
+        "targetVocab": [
+          "España vaciada",
+          "éxodo rural"
+        ],
+        "explanationAr": "la España vaciada هو المفهوم السوسيولوجي الإسباني للمحافظات والمناطق الريفية التي تعاني من النزوح وتراجع الخدمات.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-tsd-1_a"
+          ],
+          "selectedOptionId": "ex-b2-tsd-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-tsd-1_b": "المصطلح الذي يطلق على الريف المهجور هو la España vaciada.",
+          "ex-b2-tsd-1_c": "الظاهرة تسمى la España vaciada."
+        }
+      },
+      {
+        "id": "ex-b2-tsd-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني التعاقب والإحلال الجيلي: el _____ generacional",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في التعبير: relevo _____ (التعاقب الجيلي في سوق العمل):",
+        "stemEs": "El sector agrícola necesita con urgencia un relevo _____ para evitar el abandono de las tierras.",
+        "stemAr": "يحتاج القطاع الزراعي بإلحاح إلى تعاقب ... لتفادي التخلي عن الأراضي.",
+        "targetVocab": [
+          "relevo generacional"
+        ],
+        "explanationAr": "el relevo generacional هو تعاقب الأجيال وحلول الشباب محل المتقاعدين في سوق العمل.",
+        "answerKey": {
+          "accepted": [
+            "generacional"
+          ],
+          "acceptableAnswers": [
+            "generacional"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-tsd-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الظاهرة السكانية الناتجة عن انخفاض المواليد وارتفاع متوسط العمر المتوقع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي التحول الديموغرافي الذي تزداد فيه نسبة كبار السن مقارنة بالشباب؟",
+        "stemEs": "El progresivo _____ de la sociedad europea obliga a reformar el sistema público de pensiones.",
+        "stemAr": "يفرض التزايد المطرد في ... المجتمع الأوروبي إصلاح نظام المعاشات العام.",
+        "options": [
+          {
+            "id": "ex-b2-tsd-3_a",
+            "text": "envejecimiento poblacional",
+            "textAr": "شيخوخة السكان (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-tsd-3_b",
+            "text": "éxodo rural",
+            "textAr": "النزوح الريفي فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "تزايد كبار السن يسمى el envejecimiento poblacional."
+          },
+          {
+            "id": "ex-b2-tsd-3_c",
+            "text": "consenso",
+            "textAr": "توافق سياسي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم السكاني هو envejecimiento poblacional."
+          }
+        ],
+        "targetVocab": [
+          "envejecimiento poblacional",
+          "tasa de natalidad",
+          "relevo generacional"
+        ],
+        "explanationAr": "el envejecimiento poblacional هو ارتفاع نسبة المسنين نتيجة طول العمر وانخفاض معدلات الخصوبة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-tsd-3_a"
+          ],
+          "selectedOptionId": "ex-b2-tsd-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-tsd-3_b": "تزايد كبار السن يسمى el envejecimiento poblacional.",
+          "ex-b2-tsd-3_c": "المفهوم السكاني هو envejecimiento poblacional."
+        }
+      },
+      {
+        "id": "ex-b2-tsd-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الديموغرافية لوصف أثر انخفاض المواليد",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-tsd-4_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-b2-tsd-4_t2",
+            "kind": "token",
+            "text": "baja"
+          },
+          {
+            "id": "ex-b2-tsd-4_t3",
+            "kind": "token",
+            "text": "tasa"
+          },
+          {
+            "id": "ex-b2-tsd-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b2-tsd-4_t5",
+            "kind": "token",
+            "text": "natalidad"
+          },
+          {
+            "id": "ex-b2-tsd-4_t6",
+            "kind": "token",
+            "text": "afecta"
+          },
+          {
+            "id": "ex-b2-tsd-4_t7",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b2-tsd-4_t8",
+            "kind": "token",
+            "text": "crecimiento"
+          },
+          {
+            "id": "ex-b2-tsd-4_t9",
+            "kind": "token",
+            "text": "económico"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La baja tasa de natalidad afecta al crecimiento económico"
+          ],
+          "tokenOrder": [
+            "ex-b2-tsd-4_t1",
+            "ex-b2-tsd-4_t2",
+            "ex-b2-tsd-4_t3",
+            "ex-b2-tsd-4_t4",
+            "ex-b2-tsd-4_t5",
+            "ex-b2-tsd-4_t6",
+            "ex-b2-tsd-4_t7",
+            "ex-b2-tsd-4_t8",
+            "ex-b2-tsd-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ La baja tasa de natalidad ثم الفعل afecta ثم شبه الجملة al crecimiento económico.",
+        "targetVocab": [
+          "tasa de natalidad",
+          "pirámide poblacional"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-tsd-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لخبير علم السكان وحدد حركة الهجرة التاريخية التي يصفها",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتحليل السوسيولوجي لتاريخ إسبانيا في القرن العشرين",
+        "stemEs": "El masivo éxodo rural de los años sesenta concentró la población en las capitales industriales.",
+        "stemAr": "أدى النزوح الريفي الهائل في الستينيات إلى تركيز السكان في العواصم الصناعية.",
+        "options": [
+          {
+            "id": "ex-b2-tsd-5_a",
+            "text": "éxodo rural",
+            "textAr": "النزوح والهجرة الكثيفة من الريف للمدينة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-tsd-5_b",
+            "text": "turismo estival",
+            "textAr": "سياحة صيفية عابرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخبير تحدث عن el masivo éxodo rural."
+          },
+          {
+            "id": "ex-b2-tsd-5_c",
+            "text": "inversión extranjera",
+            "textAr": "استثمار أجنبي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الظاهرة السكانية كانت éxodo rural."
+          }
+        ],
+        "targetVocab": [
+          "éxodo rural",
+          "España vaciada"
+        ],
+        "explanationAr": "الخبير قال بوضوح: 'El masivo éxodo rural de los años sesenta'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_masivo_exodo_rural_capitales.mp3",
+        "speechEs": "El masivo éxodo rural de los años sesenta concentró la población en las capitales industriales.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-tsd-5_a"
+          ],
+          "selectedOptionId": "ex-b2-tsd-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-tsd-5_b": "الخبير تحدث عن el masivo éxodo rural.",
+          "ex-b2-tsd-5_c": "الظاهرة السكانية كانت éxodo rural."
+        }
+      },
+      {
+        "id": "ex-b2-tsd-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك التحليلية حول التحديات الديموغرافية والريف المهجور بفصاحة وطلاقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتقديم تحليل سوسيولوجي لظاهرة السكان في إسبانيا المعاصرة:",
+        "stemEs": "Para frenar el envejecimiento poblacional y revitalizar la España vaciada, es crucial garantizar el relevo generacional.",
+        "stemAr": "لكبح جماح شيخوخة السكان وإنعاش إسبانيا الريفية المهجورة، من المحوري ضمان التعاقب الجيلي.",
+        "audioKey": "pending/b2_frenar_envejecimiento_espana_vaciada.mp3",
+        "targetVocab": [
+          "envejecimiento poblacional",
+          "España vaciada",
+          "relevo generacional",
+          "éxodo rural"
+        ],
+        "explanationAr": "انتبه لنطق envejecimiento و España vaciada و relevo generacional بطلاقة ووضوح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_frenar_envejecimiento_espana_vaciada.mp3",
+          "modelAnswer": "Para frenar el envejecimiento poblacional y revitalizar la España vaciada, es crucial garantizar el relevo generacional."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

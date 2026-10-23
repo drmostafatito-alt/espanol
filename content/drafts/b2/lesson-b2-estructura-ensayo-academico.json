@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-estructura-ensayo-academico",
+    "unitSlug": "b2-u5-academic",
+    "levelCode": "B2",
+    "titleAr": "هيكل المقال والبحث الأكاديمي: الأطروحة والبرهان المنهجي",
+    "titleEs": "Estructura del ensayo académico: Hipótesis, argumentación y rigor metodológico",
+    "subtitleAr": "صياغة الفرضية (la hipótesis)، تفريع الفصول، والتدرج المنطقي في عرض الأدلة",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يركب المتعلم هيكلاً أكاديمياً متكاملاً لمقال بحثي (مقدمة، فرضية، عرض، استنتاج).",
+        "أن يوظف مفاهيم البحث العلمي: hipótesis de partida, marco teórico, metodología, refutación.",
+        "أن يصيغ الفرضية العلمية بلغة موضوعية مجردة بعيدة عن الذاتية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الاصطلاحية لصياغة الفرضيات والمنهج الأكاديمي",
+          "explanationAr": "1. **طرح الفرضية التأسيسية**:\n- *Partimos de la hipótesis de que + Indicativo*: Partimos de la hipótesis de que la educación bilingüe mejora la cognición.\n- *El presente estudio tiene por objeto analizar...*\n2. **تحديد الإطار النظري والمنهجية**:\n- *En el marco teórico se revisan las corrientes principales*.\n- *Se adopta un enfoque cualitativo / cuantitativo para evaluar los resultados*.\n3. **الانتقال المنطقي بين الأقسام**:\n- *Una vez delimitado el objeto de estudio, procede examinar...*"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام ضمير المتكلم 'yo' في الأبحاث الأكاديمية؛ العرف الجامعي الإسباني يفرض استخدام صيغة الجمع التواضعي (partimos de) أو الصيغة غير الشخصية (se plantea que).",
+        "صياغة فرضية عامة غير قابلة للاختبار التجريبي أو القياس المنهجي."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الأبحاث الجامعية بنقول «البحث بتاعنا بيبدأ من فرضية إن التكنولوجيا بتغير سلوك المستهلك وبنعتمد على إطار نظري واضح». بالإسبانية: Partimos de la hipótesis de que la tecnología transforma el consumo, dentro de un marco teórico riguroso."
+        }
+      ],
+      "culturalNoteAr": "الجامعات في إسبانيا وأمريكا اللاتينية تتبع معايير APA و MLA الصارمة في صياغة الرسائل والأبحاث (TFG و TFM والأطروحات)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-estructura-ensayo-academico-intro",
+        "type": "explanation",
+        "titleAr": "ركائز البحث والمقال الأكاديمي",
+        "bodyAr": "المفاهيم المنهجية:\n- **la hipótesis de partida**: الفرضية المبدئية التي ينطلق منها البحث للإثبات أو النفي\n- **el marco teórico**: الإطار النظري والمفاهيمي المؤسس للدراسة\n- **el rigor metodológico**: الصرامة المنهجية والدقة العلمية\n- **el enfoque cualitativo/cuantitativo**: المنهج الكيفي النوعي أو الكمي الإحصائي\n- **delimitar**: يحدد ويحصر نطاق موضوع البحث بدقة\n- **el objeto de estudio**: موضوع الدراسة والظاهرة الخاضعة للفحص",
+        "examples": [
+          {
+            "es": "El primer capítulo está dedicado a establecer el marco teórico de la investigación.",
+            "ar": "الفصل الأول مكرس لتأسيس الإطار النظري للبحث."
+          },
+          {
+            "es": "Partimos de la hipótesis de que existe una correlación positiva entre ambas variables.",
+            "ar": "ننطلق من الفرضية القائلة بوجود ارتباط طردي إيجابي بين المتغيرين."
+          },
+          {
+            "es": "Es imprescindible delimitar con precisión el objeto de estudio para evitar dispersiones.",
+            "ar": "من الضروري تحديد موضوع الدراسة بدقة لتفادي التشتت."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "hipótesis",
+      "marco teórico",
+      "rigor metodológico",
+      "enfoque",
+      "delimitar",
+      "objeto de estudio"
+    ],
+    "reviewVocabulary": [
+      "estudio",
+      "investigación"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يركب المتعلم هيكلاً أكاديمياً متكاملاً لمقال بحثي (مقدمة، فرضية، عرض، استنتاج).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-eea-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الأكاديمي الذي يدل على الفرضية الأساسية للبحث",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة التي تعني 'الفرضية العلمية التي يسعى الباحث لاختبار صحتها'؟",
+        "stemEs": "La _____ principal de este trabajo sostiene que el bilingüismo previene el deterioro cognitivo.",
+        "stemAr": "... الرئيسية لهذا العمل تذهب إلى أن الثنائية اللغوية تقي من التدهور المعرفي.",
+        "options": [
+          {
+            "id": "ex-b2-eea-1_a",
+            "text": "hipótesis",
+            "textAr": "الفرضية العلمية القابلة للاختبار (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-eea-1_b",
+            "text": "anécdota",
+            "textAr": "طرفة شخصية",
+            "isCorrect": false,
+            "distractorRationaleAr": "في البحث العلمي ننطلق من الفرضية la hipótesis."
+          },
+          {
+            "id": "ex-b2-eea-1_c",
+            "text": "trama",
+            "textAr": "حبكة روائية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح الأكاديمي هو la hipótesis."
+          }
+        ],
+        "targetVocab": [
+          "hipótesis",
+          "marco teórico"
+        ],
+        "explanationAr": "la hipótesis هي الفرضية والتخمين العلمي المنهجي الذي ينطلق منه البحث للإثبات أو الدحض.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-eea-1_a"
+          ],
+          "selectedOptionId": "ex-b2-eea-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-eea-1_b": "في البحث العلمي ننطلق من الفرضية la hipótesis.",
+          "ex-b2-eea-1_c": "المصطلح الأكاديمي هو la hipótesis."
+        }
+      },
+      {
+        "id": "ex-b2-eea-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني المنهج المتبع في البحث: (el _____ metodológico)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة التي تعني 'المقاربة أو المنهجية': un _____ cualitativo.",
+        "stemEs": "Para analizar las entrevistas en profundidad adoptamos un _____ cualitativo riguroso.",
+        "stemAr": "لتحليل المقابلات المعمقة اعتمدنا مقاربة ومنهجاً نوعياً صارماً.",
+        "targetVocab": [
+          "enfoque"
+        ],
+        "explanationAr": "el enfoque هو المقاربة أو المنظور المنهجي المعتمد في دراسة الظاهرة.",
+        "answerKey": {
+          "accepted": [
+            "enfoque"
+          ],
+          "acceptableAnswers": [
+            "enfoque"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-eea-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المفهوم الأكاديمي الذي يشمل النظريات السابقة والمفاهيم التأسيسية للمجال",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي الباب المخصص لمراجعة الأدبيات السابقة والنظريات القائمة في الرسالة؟",
+        "stemEs": "En el _____ se analizan las aportaciones de los sociólogos más destacados del siglo XX.",
+        "stemAr": "في ... يتم تحليل إسهامات أبرز علماء الاجتماع في القرن العشرين.",
+        "options": [
+          {
+            "id": "ex-b2-eea-3_a",
+            "text": "marco teórico",
+            "textAr": "الإطار النظري والمفاهيمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-eea-3_b",
+            "text": "orden del día",
+            "textAr": "جدول الأعمال",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الرسائل يسمى الإطار النظري el marco teórico."
+          },
+          {
+            "id": "ex-b2-eea-3_c",
+            "text": "acta",
+            "textAr": "محضر جلسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم هو el marco teórico."
+          }
+        ],
+        "targetVocab": [
+          "marco teórico",
+          "rigor metodológico",
+          "hipótesis"
+        ],
+        "explanationAr": "el marco teórico هو الإطار النظري الذي يستند إليه الباحث لتأصيل مفاهيمه.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-eea-3_a"
+          ],
+          "selectedOptionId": "ex-b2-eea-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-eea-3_b": "في الرسائل يسمى الإطار النظري el marco teórico.",
+          "ex-b2-eea-3_c": "المفهوم هو el marco teórico."
+        }
+      },
+      {
+        "id": "ex-b2-eea-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الأكاديمية للدلالة على حصر وتحديد نطاق البحث",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-eea-4_t1",
+            "kind": "token",
+            "text": "Es"
+          },
+          {
+            "id": "ex-b2-eea-4_t2",
+            "kind": "token",
+            "text": "fundamental"
+          },
+          {
+            "id": "ex-b2-eea-4_t3",
+            "kind": "token",
+            "text": "delimitar"
+          },
+          {
+            "id": "ex-b2-eea-4_t4",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-b2-eea-4_t5",
+            "kind": "token",
+            "text": "claridad"
+          },
+          {
+            "id": "ex-b2-eea-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b2-eea-4_t7",
+            "kind": "token",
+            "text": "objeto"
+          },
+          {
+            "id": "ex-b2-eea-4_t8",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b2-eea-4_t9",
+            "kind": "token",
+            "text": "estudio"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Es fundamental delimitar con claridad el objeto de estudio"
+          ],
+          "tokenOrder": [
+            "ex-b2-eea-4_t1",
+            "ex-b2-eea-4_t2",
+            "ex-b2-eea-4_t3",
+            "ex-b2-eea-4_t4",
+            "ex-b2-eea-4_t5",
+            "ex-b2-eea-4_t6",
+            "ex-b2-eea-4_t7",
+            "ex-b2-eea-4_t8",
+            "ex-b2-eea-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة Es fundamental ثم الفعل delimitar ثم شبه الجملة con claridad ثم المفعول el objeto de estudio.",
+        "targetVocab": [
+          "delimitar",
+          "objeto de estudio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-eea-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمناقشة الأكاديمية وحدد الميزة المنهجية التي أشادت بها لجنة التحكيم",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتقييم رئيس لجنة مناقشة الدكتوراه",
+        "stemEs": "El tribunal valora especialmente el rigor metodológico demostrado en la tesis doctoral.",
+        "stemAr": "تثمن اللجنة بشكل خاص الصرامة المنهجية التي ظهرت في أطروحة الدكتوراه.",
+        "options": [
+          {
+            "id": "ex-b2-eea-5_a",
+            "text": "rigor metodológico",
+            "textAr": "الصرامة والدقة المنهجية العالية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-eea-5_b",
+            "text": "falta de fuentes",
+            "textAr": "نقص المراجع",
+            "isCorrect": false,
+            "distractorRationaleAr": "اللجنة أشادت بـ el rigor metodológico."
+          },
+          {
+            "id": "ex-b2-eea-5_c",
+            "text": "subjetividad",
+            "textAr": "الذاتية والانطباعية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الإشادة كانت بالصرامة المنهجية rigor metodológico."
+          }
+        ],
+        "targetVocab": [
+          "rigor metodológico",
+          "enfoque"
+        ],
+        "explanationAr": "رئيس اللجنة قال: 'valora especialmente el rigor metodológico'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_rigor_metodologico_tesis.mp3",
+        "speechEs": "El tribunal valora especialmente el rigor metodológico demostrado en la tesis doctoral.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-eea-5_a"
+          ],
+          "selectedOptionId": "ex-b2-eea-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-eea-5_b": "اللجنة أشادت بـ el rigor metodológico.",
+          "ex-b2-eea-5_c": "الإشادة كانت بالصرامة المنهجية rigor metodológico."
+        }
+      },
+      {
+        "id": "ex-b2-eea-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك التأسيسية لعرض أطروحتك العلمية بنبرة باحث واثق ورصين",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لافتتاح عرض بحثك الأكاديمي أمام اللجنة:",
+        "stemEs": "Partimos de la hipótesis de que existe una estrecha relación entre ambas variables dentro del marco teórico analizado.",
+        "stemAr": "ننطلق من الفرضية القائلة بوجود علاقة وثيقة بين كلا المتغيرين ضمن الإطار النظري المحلل.",
+        "audioKey": "pending/b2_partimos_hipotesis_relacion_variables.mp3",
+        "targetVocab": [
+          "hipótesis",
+          "marco teórico",
+          "rigor metodológico"
+        ],
+        "explanationAr": "انتبه لنطق hipótesis بالتشديد على حرف ó ونطق teórico بسلاسة وفصاحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_partimos_hipotesis_relacion_variables.mp3",
+          "modelAnswer": "Partimos de la hipótesis de que existe una estrecha relación entre ambas variables dentro del marco teórico analizado."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

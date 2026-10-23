@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-hechos-vs-opiniones",
+    "unitSlug": "b2-u2-news",
+    "levelCode": "B2",
+    "titleAr": "التمييز بين الحقائق والآراء: الموضوعية والتلاعب الدلالي",
+    "titleEs": "Hechos frente a opiniones: Objetividad y manipulación discursiva",
+    "subtitleAr": "كشف المغالطات (falacias)، العبارات التقييمية، والأدلة الإحصائية القاطعة",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يفرز المتعلم بين البيانات القابلة للإثبات (Hechos) والأحكام التقديرية (Opiniones).",
+        "أن يكشف الكلمات ذات الشحنة التقييمية الإيجابية أو السلبية الموجهة للرأي العام.",
+        "أن يعبر عن الدقة والتحقق: contrastar fuentes, dato fidedigno, juicio de valor."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الدالة على الحقيقة مقابل التقدير الذاتي",
+          "explanationAr": "1. **إبراز الحقيقة المثبتة (Hechos contrastados)**:\n- *Está científicamente demostrado que + Indicativo*: Está demostrado que la medida redujo el tráfico.\n- *Los datos confirman de forma fehaciente que...*\n2. **التعامل مع الأحكام التقديرية (Juicios de valor)**:\n- *A juicio de los analistas*: وفق تقدير المحللين (رأي وليس حقيقة قاطعة).\n- *Resulta cuestionable afirmar que + Subjuntivo*: يثير التشكيك الزعم بأن..."
+        }
+      ],
+      "commonMistakesAr": [
+        "خلط التقرير الإحصائي الصرف بالحكم الشخصي المبطن (مثل اعتبار *un éxito rotundo* حقيقة بينما هي حكم تقييمي juicio de valor).",
+        "استخدام الإخباري بعد عبارات التشكيك الموجهة للرأي (الخطأ: *es cuestionable que es cierto*; الصواب: es cuestionable que sea cierto)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في النقاشات بنقول «دي مش معلومة مؤكدة، ده مجرد وجهة نظر شخصية وانطباع». بالإسبانية: Eso no es un hecho contrastado, sino un simple juicio de valor sin fundamento empírico."
+        }
+      ],
+      "culturalNoteAr": "تأسست في إسبانيا والعالم اللاتيني منصات رائدة لتدقيق الحقائق (مثل Maldita.es و Newtral) لفرز الشائعات عن الوقائع المثبتة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-hechos-vs-opiniones-intro",
+        "type": "explanation",
+        "titleAr": "أدوات التمييز بين الواقع والرأي",
+        "bodyAr": "المفاهيم التحليلية:\n- **el hecho contrastado**: الواقعة المثبتة بالمصادر المستقلة\n- **el juicio de valor**: الحكم التقييمي الذاتي المستند للشعور أو الفكر\n- **el dato fehaciente**: المعلومة القاطعة والدليل الدامغ\n- **contrastar fuentes**: مقارنة المصادر والتحقق من صحتها\n- **resulta cuestionable que**: يثير الشك والجدل أن (+ منصُوب)\n- **la falacia**: المغالطة المنطقية التي تبدو صحيحة ظاهرياً",
+        "examples": [
+          {
+            "es": "El aumento del IPC es un hecho comprobado, pero calificarlo de catástrofe es un juicio de valor.",
+            "ar": "ارتفاع مؤشر الأسعار حقيقة مثبتة، لكن وصفه بالكارثة هو حكم تقييمي ذاتي."
+          },
+          {
+            "es": "Antes de publicar la noticia, el periodista contrastó tres fuentes independientes.",
+            "ar": "قبل نشر الخبر، تحقق الصحفي من ثلاثة مصادر مستقلة."
+          },
+          {
+            "es": "Resulta cuestionable que esa medida vaya a resolver la inflación.",
+            "ar": "يثير الشك أن تؤدي تلك الخطوة إلى حل مشكلة التضخم."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "hecho contrastado",
+      "juicio de valor",
+      "dato fehaciente",
+      "contrastar",
+      "resulta cuestionable que",
+      "falacia"
+    ],
+    "reviewVocabulary": [
+      "verdad",
+      "opinión"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يفرز المتعلم بين البيانات القابلة للإثبات (Hechos) والأحكام التقديرية (Opiniones).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-hvo-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة التي تعبر عن حكم ذاتي وليس حقيقة مثبتة بالأرقام",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي من الجمل التالية يعتبر حكماً تقييمياً (juicio de valor)؟",
+        "stemEs": "El proyecto fue el más brillante y transformador de la década.",
+        "stemAr": "كان المشروع الأكثر عبقرية وتغييراً في العقد.",
+        "options": [
+          {
+            "id": "ex-b2-hvo-1_a",
+            "text": "juicio de valor",
+            "textAr": "حكم تقييمي ذاتي يعتمد على الذوق والانطباع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-hvo-1_b",
+            "text": "hecho contrastado",
+            "textAr": "حقيقة إحصائية مثبتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "وصف 'الأكثر عبقرية' هو تقييم ذاتي غير قابل للقياس المادي المباشر."
+          },
+          {
+            "id": "ex-b2-hvo-1_c",
+            "text": "dato fehaciente",
+            "textAr": "رقم رسمي موثق",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا انطباع وليس رقماً موثقاً."
+          }
+        ],
+        "targetVocab": [
+          "juicio de valor",
+          "hecho contrastado",
+          "dato fehaciente"
+        ],
+        "explanationAr": "الأوصاف الحماسية التفضيلية تعتبر أحكاماً قيمية ذاتية (juicios de valor).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-hvo-1_a"
+          ],
+          "selectedOptionId": "ex-b2-hvo-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-hvo-1_b": "وصف 'الأكثر عبقرية' هو تقييم ذاتي غير قابل للقياس المادي المباشر.",
+          "ex-b2-hvo-1_c": "هذا انطباع وليس رقماً موثقاً."
+        }
+      },
+      {
+        "id": "ex-b2-hvo-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل tener بالمنصوب بعد العبارة التشكيكية: (tenga)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف فعل tener بالمنصوب: Resulta cuestionable que este plan _____ éxito.",
+        "stemEs": "Resulta cuestionable que la nueva estrategia _____ un impacto inmediato en el mercado.",
+        "stemAr": "يثير الشك والجدل أن يكون للاستراتيجية الجديدة تأثير فوري في السوق.",
+        "targetVocab": [
+          "resulta cuestionable que"
+        ],
+        "explanationAr": "بعد العبارة التشكيكية resulta cuestionable que نستخدم المنصوب: tenga.",
+        "answerKey": {
+          "accepted": [
+            "tenga"
+          ],
+          "acceptableAnswers": [
+            "tenga"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-hvo-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الذي يعني التحقق من صحة الخبر بمقارنة عدة مصادر",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو الفعل المهني الذي يطلقه الصحفيون على مقارنة الروايات للتأكد من صدقها؟",
+        "stemEs": "El redactor se negó a publicar el rumor sin antes _____ rigurosamente los datos.",
+        "stemAr": "رفض المحرر نشر الشائعة قبل أن ... البيانات بصرامة.",
+        "options": [
+          {
+            "id": "ex-b2-hvo-3_a",
+            "text": "contrastar",
+            "textAr": "يقارن المصادر ويدققها (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-hvo-3_b",
+            "text": "opinar",
+            "textAr": "يبدي رأيه فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "التحقق المهني يسمى التثبت والمقارنة contrastar."
+          },
+          {
+            "id": "ex-b2-hvo-3_c",
+            "text": "admitir",
+            "textAr": "يعترف",
+            "isCorrect": false,
+            "distractorRationaleAr": "التثبت من الخبر يسمى contrastar fuentes."
+          }
+        ],
+        "targetVocab": [
+          "contrastar",
+          "hecho contrastado"
+        ],
+        "explanationAr": "contrastar información يعني تدقيق البيانات ومقارنتها عبر عدة مصادر مستقلة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-hvo-3_a"
+          ],
+          "selectedOptionId": "ex-b2-hvo-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-hvo-3_b": "التحقق المهني يسمى التثبت والمقارنة contrastar.",
+          "ex-b2-hvo-3_c": "التثبت من الخبر يسمى contrastar fuentes."
+        }
+      },
+      {
+        "id": "ex-b2-hvo-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لرفض الحجة القائمة على مغالطة منطقية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-hvo-4_t1",
+            "kind": "token",
+            "text": "Ese"
+          },
+          {
+            "id": "ex-b2-hvo-4_t2",
+            "kind": "token",
+            "text": "argumento"
+          },
+          {
+            "id": "ex-b2-hvo-4_t3",
+            "kind": "token",
+            "text": "se"
+          },
+          {
+            "id": "ex-b2-hvo-4_t4",
+            "kind": "token",
+            "text": "basa"
+          },
+          {
+            "id": "ex-b2-hvo-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b2-hvo-4_t6",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b2-hvo-4_t7",
+            "kind": "token",
+            "text": "falacia"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Ese argumento se basa en una falacia"
+          ],
+          "tokenOrder": [
+            "ex-b2-hvo-4_t1",
+            "ex-b2-hvo-4_t2",
+            "ex-b2-hvo-4_t3",
+            "ex-b2-hvo-4_t4",
+            "ex-b2-hvo-4_t5",
+            "ex-b2-hvo-4_t6",
+            "ex-b2-hvo-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ Ese argumento ثم الفعل والانعكاس se basa ثم شبه الجملة en una falacia.",
+        "targetVocab": [
+          "falacia",
+          "juicio de valor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-hvo-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد المعيار الذي يطلبه الخبير لإثبات الادعاء",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لحديث الخبير في الندوة الصحفية",
+        "stemEs": "Necesitamos datos fehacientes y no meras suposiciones políticas.",
+        "stemAr": "نحتاج إلى بيانات قاطعة وأدلة دامغة وليس مجرد تكهنات سياسية.",
+        "options": [
+          {
+            "id": "ex-b2-hvo-5_a",
+            "text": "dato fehaciente",
+            "textAr": "بيانات قاطعة وأدلة دامغة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-hvo-5_b",
+            "text": "suposiciones",
+            "textAr": "تخمينات فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخبير شدد على ضرورة توفير datos fehacientes."
+          },
+          {
+            "id": "ex-b2-hvo-5_c",
+            "text": "falacias",
+            "textAr": "مغالطات",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلوب كان الأدلة الدامغة datos fehacientes."
+          }
+        ],
+        "targetVocab": [
+          "dato fehaciente",
+          "falacia"
+        ],
+        "explanationAr": "المتحدث قال بصرامة: 'Necesitamos datos fehacientes'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_datos_fehacientes_suposiciones.mp3",
+        "speechEs": "Necesitamos datos fehacientes y no meras suposiciones políticas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-hvo-5_a"
+          ],
+          "selectedOptionId": "ex-b2-hvo-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-hvo-5_b": "الخبير شدد على ضرورة توفير datos fehacientes.",
+          "ex-b2-hvo-5_c": "المطلوب كان الأدلة الدامغة datos fehacientes."
+        }
+      },
+      {
+        "id": "ex-b2-hvo-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك للتفريق بين الدليل العلمي والحكم الانطباعي",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب نقدي أكاديمي رصين:",
+        "stemEs": "Debemos distinguir con claridad entre un hecho contrastado y un simple juicio de valor.",
+        "stemAr": "يجب أن نميز بوضوح بين الحقيقة المثبتة والحكم التقديري الذاتي البسيط.",
+        "audioKey": "pending/b2_distinguir_hecho_juicio_valor.mp3",
+        "targetVocab": [
+          "hecho contrastado",
+          "juicio de valor",
+          "contrastar"
+        ],
+        "explanationAr": "انتبه لنطق distinguir و contrastado بوضوح وبلا تردد.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_distinguir_hecho_juicio_valor.mp3",
+          "modelAnswer": "Debemos distinguir con claridad entre un hecho contrastado y un simple juicio de valor."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

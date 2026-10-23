@@ -782,4 +782,220 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     const submitData = await h.json<any>(submitRes);
     expect(submitData.correct).toBe(true);
   });
+
+  it('وحدة الأخبار والصحافة B2 (b2-analisis-prensa-editorial) تُسلَّم وتصحح المنصوب بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_news@example.com');
+    const res = await h.call('/api/lessons/b2-analisis-prensa-editorial/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('تحليل الصحافة');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-analisis-prensa-editorial/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'haya',
+        eventId: 'evt_test_b2_n01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الأدب والرواية B2 (b2-literatura-narrativa-contemporanea) تُسلَّم وتصحح desenlace بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_lit@example.com');
+    const res = await h.call('/api/lessons/b2-literatura-narrativa-contemporanea/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('السرد الأدبي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-literatura-narrativa-contemporanea/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'desenlace',
+        eventId: 'evt_test_b2_l01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الاجتماعات المهنية B2 (b2-gestion-reuniones-orden-dia) تُسلَّم وتصحح محضر الاجتماع بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_prof@example.com');
+    const res = await h.call('/api/lessons/b2-gestion-reuniones-orden-dia/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('إدارة الاجتماعات');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-gestion-reuniones-orden-dia/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'acta',
+        eventId: 'evt_test_b2_p01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة الكتابة الأكاديمية B2 (b2-estructura-ensayo-academico) تُسلَّم وتصحح المنهجية بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_acad@example.com');
+    const res = await h.call('/api/lessons/b2-estructura-ensayo-academico/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('هيكل المقال والبحث');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-estructura-ensayo-academico/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'enfoque',
+        eventId: 'evt_test_b2_a01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة التفاوض التجاري B2 (b2-estrategias-negociacion-comercial) تُسلَّم وتصحح المناورة بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_neg@example.com');
+    const res = await h.call('/api/lessons/b2-estrategias-negociacion-comercial/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('استراتيجيات التفاوض');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-estrategias-negociacion-comercial/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'maniobra',
+        eventId: 'evt_test_b2_g01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة البيئة والاستدامة B2 (b2-cambio-climatico-sostenibilidad) تُسلَّم وتصحح المنصوب بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_env@example.com');
+    const res = await h.call('/api/lessons/b2-cambio-climatico-sostenibilidad/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('التغير المناخي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-cambio-climatico-sostenibilidad/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'adopten',
+        eventId: 'evt_test_b2_e01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة العروض والتقديم B2 (b2-apertura-presentacion-audiencia) تُسلَّم وتصحح خارطة الطريق بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_pres@example.com');
+    const res = await h.call('/api/lessons/b2-apertura-presentacion-audiencia/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('افتتاح العرض');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-apertura-presentacion-audiencia/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'hoja',
+        eventId: 'evt_test_b2_pr01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة العرائض القانونية B2 (b2-reclamaciones-juridicas-instancias) تُسلَّم وتصحح trámite بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_jur@example.com');
+    const res = await h.call('/api/lessons/b2-reclamaciones-juridicas-instancias/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('العرائض الرسمية');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-reclamaciones-juridicas-instancias/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'tramite',
+        eventId: 'evt_test_b2_j01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
+
+  it('وحدة التنوع اللغوي والثقافي B2 (b2-variedades-linguisticas-hispanas) تُسلَّم وتصحح seseo بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_b2_cult@example.com');
+    const res = await h.call('/api/lessons/b2-variedades-linguisticas-hispanas/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('التنوع اللغوي');
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/b2-variedades-linguisticas-hispanas/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'seseo',
+        eventId: 'evt_test_b2_c01',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+  });
 });

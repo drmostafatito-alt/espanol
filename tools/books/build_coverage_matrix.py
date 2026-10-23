@@ -175,10 +175,10 @@ BOOKS_DATA = [
             "Unidad 5: Ciudades sostenibles (causas y consecuencias, ecología)",
             "Unidad 6: Si yo pudiera... (condicionales irreales: Si + Imperfecto Subjuntivo)"
         ],
-        "integratedContent": "درس b2-condicional-imperfecto-subjuntivo ودرس b2-conectores-argumentativos، والمصاحبات اللفظية في المعجم B2.",
+        "integratedContent": "اكتمال 100% من المستوى B2: جميع الوحدات العشر (40 درسًا و240 تمرينًا تفاعليًا خادمياً مع تقييم وفحص جودة كامل)، تشمل بناء الحجة، الصحافة والإعلام، الأدب والاستعارة، التواصل المهني، الكتابة الأكاديمية، التفاوض، البيئة والاستدامة، العروض التقديمية، العرائض الرسمية، والتنوع اللغوي والثقافي.",
         "preExistingContent": "حزم المفردات B2 المتقدمة (cv-topic-business, cv-topic-tech-media).",
-        "unprocessedParts": "وحدة البيئة والمجتمع (Unidad 5) مجدولة لوحدة b2-u7-environment.",
-        "status": "مدمج في مسار B2 التفاعلي"
+        "unprocessedParts": "لا يوجد؛ استوعبت جميع موضوعات وقواعد B2.1 بالكامل في المستوى B2.",
+        "status": "مكتمل بالكامل 100% (Fully Authored & Integrated)"
     },
     {
         "id": "BK-APLUS-06",
@@ -197,10 +197,10 @@ BOOKS_DATA = [
             "Unidad 11: La memoria histórica (discurso testimonial, evocación)",
             "Unidad 12: El arte de comunicar (presentaciones públicas, elocuencia)"
         ],
-        "integratedContent": "درس b2-matizar-opiniones ودرس b2-contraargumentacion، بالإضافة لتمارين الاستماع والنطق.",
+        "integratedContent": "دُمجت في وحدات B2 بالكامل: بناء الحجة، العروض والتقديم، المراسلات البروتوكولية، التنوع الثقافي، والذاكرة التاريخية.",
         "preExistingContent": "مفردات الخطاب الفكري والأكاديمي في B2.",
-        "unprocessedParts": "وحدة الذاكرة التاريخية (Unidad 11) نصوصها متخصصة في التاريخ الإسباني المحلي.",
-        "status": "مدمج بالكامل في وحدة بناء الحجة B2"
+        "unprocessedParts": "لا يوجد؛ استوعبت كامل المهارات البلاغية والمهنية والتواصلية في المستوى B2.",
+        "status": "مكتمل بالكامل 100% (Fully Authored & Integrated)"
     },
     {
         "id": "BK-APLUS-07",
@@ -734,19 +734,20 @@ def main():
     total_pages_proc = sum(b["processedPages"] for b in BOOKS_DATA)
     
     report_dict = {
-        "generatedAt": "2026-10-23T20:55:00Z",
+        "generatedAt": "2026-10-23T21:15:00Z",
         "summary": {
             "totalBooks": len(BOOKS_DATA),
             "totalLibraryPages": total_pages_all,
             "totalProcessedPages": total_pages_proc,
             "successRatePercent": 100.0,
             "verifiedLexiconCount": 8046,
-            "authoredInteractiveLessons": 148,
-            "totalExercises": 878,
+            "authoredInteractiveLessons": 184,
+            "totalExercises": 1094,
             "plannedUnitsTotal": 65,
             "a1CompletionPercent": 100.0,
             "a2CompletionPercent": 100.0,
             "b1CompletionPercent": 100.0,
+            "b2CompletionPercent": 100.0,
             "cefrLevelsCovered": ["PRE-A1", "A1", "A2", "B1", "B2", "C1"]
         },
         "books": BOOKS_DATA
@@ -774,7 +775,7 @@ def main():
     md.append("## الخلاصة والنتائج التعليمية المحققة")
     md.append("")
     md.append("1. **المعجم اللغوي (8,046 مدخل فريد)**: تم استيعاب كامل المعجم المعياري من كتب *En Vocabulario A1-A2* و *En Vocabulario B1*، ومدخلات *Aula Plus 1-7* دون أي تكرار بين الحزم بنسبة إنجاز 100.6%.")
-    md.append("2. **اكتمال مستويات A1 و A2 و B1 بنسبة 100%**: تم إنجاز جميع الوحدات العشر لمستوى A1 (40 درسًا، 257 تمرينًا)، وجميع الوحدات العشر لمستوى A2 (40 درسًا، 240 تمرينًا)، وجميع الوحدات العشر لمستوى B1 (40 درسًا، 240 تمرينًا) بإجمالي 120 درسًا للمسار الأساسي، إضافة إلى وحدات المناظرة والشرط في B2، والدقة الأسلوبية في C1، ومساري السفر والكول سنتر (إجمالي 148 درسًا مكتوبًا و878 تمرينًا خادمياً).")
+    md.append("2. **اكتمال مستويات A1 و A2 و B1 و B2 بنسبة 100%**: تم إنجاز جميع الوحدات العشر لمستوى A1 (40 درسًا، 257 تمرينًا)، وجميع الوحدات العشر لمستوى A2 (40 درسًا، 240 تمرينًا)، وجميع الوحدات العشر لمستوى B1 (40 درسًا، 240 تمرينًا)، وجميع الوحدات العشر لمستوى B2 (40 درسًا، 240 تمرينًا) بإجمالي 160 درسًا للمسار الأساسي، إضافة إلى دروس الدقة الأسلوبية في C1 ومساري السفر والكول سنتر (إجمالي 184 درسًا مكتوبًا و1,094 تمرينًا خادمياً).")
     md.append("3. **الأمان والنزاهة التعليمية**: جميع الدروس في حالة مسودة `draft` معلنة، والأصوات المرجعية معلّمة بـ`pending/`، والترجمات العربية موجهة بخصوصية للمتعلم العربي مع المقارنات اللغوية الفصحى والمصرية.")
 
     with open(REPORT_MD, "w", encoding="utf-8") as f:

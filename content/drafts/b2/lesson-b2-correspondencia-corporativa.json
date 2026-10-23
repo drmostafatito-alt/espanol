@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-correspondencia-corporativa",
+    "unitSlug": "b2-u4-professional",
+    "levelCode": "B2",
+    "titleAr": "المراسلات المؤسسية والبريد التجاري الرفيع: لغة الأعمال الرسمية",
+    "titleEs": "Correspondencia corporativa y comunicaciones B2B: Registro formal y cortesía ejecutiva",
+    "subtitleAr": "مخاطبة العملاء والشركاء التجاريين، إرسال العروض، وصيغ اللباقة المؤسسية",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم بريداً إلكترونياً تجارياً رسمياً (B2B) يتسم بالدقة واللباقة.",
+        "أن يوظف صيغ المخاطبة والافتتاح والاختتام المؤسسية الرفيعة: Estimado/a, Atentamente, Quedamos a su entera disposición.",
+        "أن يعبر عن الشراكة والتعاون وإرسال عروض الأسعار بصيغة التعظيم (Usted / Ustedes)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ التحية واللباقة في الرسائل المؤسسية والتجارية",
+          "explanationAr": "1. **الافتتاحية وتحديد موضوع المراسلة**:\n- *Nos dirigimos a usted con el propósito de presentarle nuestra propuesta...*\n- *En respuesta a su atenta comunicación del pasado 12 de octubre...*\n2. **الإحالة إلى المرفقات والوثائق**:\n- *Adjunto a la presente remitimos el presupuesto detallado* (نرفق طي هذه الرسالة).\n3. **الصيغ الختامية الأنيقة**:\n- *Agradeciendo de antemano su atención, le saluda atentamente...*\n- *Quedamos a su entera disposición para cualquier aclaración que estime oportuna*."
+        }
+      ],
+      "commonMistakesAr": [
+        "خلط صيغ الخطاب غير الرسمي (tú) بصيغ الاحترام التجاري (usted) داخل نفس الخطاب.",
+        "استخدام ترجمات ركيكة للاعتذار عن التأخير؛ الأسلوب المؤسسي الراقي يعتمد: *Rogamos disculpen las molestias que este retraso haya podido ocasionar*."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الإيميلات المؤسسية بين الشركات بنقفل بـ «ونحن في انتظار ردكم الكريم وتحت أمركم في أي استفسار». بالإسبانية: Quedamos a su entera disposición y a la espera de sus gratas noticias."
+        }
+      ],
+      "culturalNoteAr": "المراسلات التجارية في إسبانيا وأمريكا اللاتينية تتميز بالتهذيب المتبادل والصيغ الاحترامية العريقة، ويُعتبر إغفال صيغ اللباقة نوعاً من الفظاظة الإدارية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-correspondencia-corporativa-intro",
+        "type": "explanation",
+        "titleAr": "هيكل الخطاب التجاري المؤسسي",
+        "bodyAr": "العبارات النموذجية:\n- **nos dirigimos a usted**: نتوجه إلى سيادتكم\n- **adjunto remitimos**: نرسل لكم طياً ومرفقاً بالرسالة\n- **a su entera disposición**: تحت تصرفكم الكامل ورهن إشارتكم\n- **estimar oportuno**: يرى من المناسب والملائم\n- **atentamente**: مع خالص التقدير والاحترام (الخاتمة القياسية)\n- **la propuesta comercial**: العرض التجاري والتسعيري",
+        "examples": [
+          {
+            "es": "Nos dirigimos a usted para presentarle nuestra propuesta de colaboración estratégica.",
+            "ar": "نتوجه إلى سيادتكم لعرض مقترحنا للتعاون الاستراتيجي."
+          },
+          {
+            "es": "Adjunto remitimos el catálogo de servicios con las tarifas actualizadas.",
+            "ar": "نرفق لكم طياً دليل الخدمات مع الأسعار المحدثة."
+          },
+          {
+            "es": "Quedamos a su entera disposición para cuantas dudas puedan surgir.",
+            "ar": "نبقى رهن إشارتكم التامة للإجابة عن أي استفسارات قد تطرأ."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "nos dirigimos a usted",
+      "adjunto remitimos",
+      "a su entera disposición",
+      "estimar oportuno",
+      "atentamente",
+      "propuesta comercial"
+    ],
+    "reviewVocabulary": [
+      "correo",
+      "cliente"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يكتب المتعلم بريداً إلكترونياً تجارياً رسمياً (B2B) يتسم بالدقة واللباقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-coc-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة الأكثر لباقة ورسمية لافتتاح الخطاب التجاري الموجه لمسؤول",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تستهل خطابك التجاري الموجه لمدير شركة شريكة باحترام ولباقة؟",
+        "stemEs": "_____ con el fin de trasladarle nuestra propuesta comercial para el próximo año.",
+        "stemAr": "... بهدف إحاطتكم بعرضنا التجاري للعام القادم.",
+        "options": [
+          {
+            "id": "ex-b2-coc-1_a",
+            "text": "Nos dirigimos a usted",
+            "textAr": "نتوجه إلى سيادتكم بصيغة الاحترام (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-coc-1_b",
+            "text": "Oye tú",
+            "textAr": "يا أنت بالعامية الفجة",
+            "isCorrect": false,
+            "distractorRationaleAr": "في لغة الأعمال نستخدم دائماً Nos dirigimos a usted."
+          },
+          {
+            "id": "ex-b2-coc-1_c",
+            "text": "Qué tal todo",
+            "textAr": "كيف الحال بشكل دارج",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخطاب التجاري يتطلب Nos dirigimos a usted."
+          }
+        ],
+        "targetVocab": [
+          "nos dirigimos a usted",
+          "propuesta comercial"
+        ],
+        "explanationAr": "Nos dirigimos a usted هي الصيغة البروتوكولية القياسية لافتتاح المراسلات المؤسسية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-coc-1_a"
+          ],
+          "selectedOptionId": "ex-b2-coc-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-coc-1_b": "في لغة الأعمال نستخدم دائماً Nos dirigimos a usted.",
+          "ex-b2-coc-1_c": "الخطاب التجاري يتطلب Nos dirigimos a usted."
+        }
+      },
+      {
+        "id": "ex-b2-coc-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الخاتمة التجارية الرسمية الأكثر شيوعاً للدلالة على خالص التقدير: (_____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الظرفية الرسمية التي تختتم بها الرسائل التجارية (مع خالص التحيات والتقدير):",
+        "stemEs": "Sin otro particular, le saluda _____ el departamento de atención al cliente.",
+        "stemAr": "وتفضلوا بقبول فائق الاحترام والتقدير، قسم خدمة العملاء.",
+        "targetVocab": [
+          "atentamente"
+        ],
+        "explanationAr": "atentamente هي الخاتمة الرسمية القياسية للمراسلات التجارية والإدارية.",
+        "answerKey": {
+          "accepted": [
+            "atentamente"
+          ],
+          "acceptableAnswers": [
+            "atentamente"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-coc-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة التي تعني إرسال الوثائق والملفات مرفقة مع الخطاب",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي العبارة الإدارية التي تعني 'نرفق طي هذه الرسالة الوثائق المطلوبة'؟",
+        "stemEs": "_____ el presupuesto desglosado para su revisión y visto bueno.",
+        "stemAr": "... الميزانية التقديرية المفصلة لمراجعتها واعتمادها.",
+        "options": [
+          {
+            "id": "ex-b2-coc-3_a",
+            "text": "Adjunto remitimos",
+            "textAr": "نرسل لكم مرفقاً وطياً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-coc-3_b",
+            "text": "Levantamos la sesión",
+            "textAr": "نرفع الجلسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الإرفاق التجاري يسمى Adjunto remitimos."
+          },
+          {
+            "id": "ex-b2-coc-3_c",
+            "text": "Tenemos la culpa",
+            "textAr": "نحن المخطئون",
+            "isCorrect": false,
+            "distractorRationaleAr": "إرفاق الملفات يسمى Adjunto remitimos."
+          }
+        ],
+        "targetVocab": [
+          "adjunto remitimos",
+          "propuesta comercial",
+          "a su entera disposición"
+        ],
+        "explanationAr": "Adjunto remitimos تعني نرسل طيه أو نرفق بالرسالة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-coc-3_a"
+          ],
+          "selectedOptionId": "ex-b2-coc-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-coc-3_b": "الإرفاق التجاري يسمى Adjunto remitimos.",
+          "ex-b2-coc-3_c": "إرفاق الملفات يسمى Adjunto remitimos."
+        }
+      },
+      {
+        "id": "ex-b2-coc-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الختامية للتعبير عن الاستعداد التام لتقديم أي إيضاح",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-coc-4_t1",
+            "kind": "token",
+            "text": "Quedamos"
+          },
+          {
+            "id": "ex-b2-coc-4_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b2-coc-4_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b2-coc-4_t4",
+            "kind": "token",
+            "text": "entera"
+          },
+          {
+            "id": "ex-b2-coc-4_t5",
+            "kind": "token",
+            "text": "disposición"
+          },
+          {
+            "id": "ex-b2-coc-4_t6",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b2-coc-4_t7",
+            "kind": "token",
+            "text": "cualquier"
+          },
+          {
+            "id": "ex-b2-coc-4_t8",
+            "kind": "token",
+            "text": "consulta"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quedamos a su entera disposición para cualquier consulta"
+          ],
+          "tokenOrder": [
+            "ex-b2-coc-4_t1",
+            "ex-b2-coc-4_t2",
+            "ex-b2-coc-4_t3",
+            "ex-b2-coc-4_t4",
+            "ex-b2-coc-4_t5",
+            "ex-b2-coc-4_t6",
+            "ex-b2-coc-4_t7",
+            "ex-b2-coc-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Quedamos ثم شبه الجملة a su entera disposición ثم الغرض para cualquier consulta.",
+        "targetVocab": [
+          "a su entera disposición",
+          "atentamente"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-coc-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للرسالة الصوتية المسجلة وحدد ما يعرضه الموظف على العميل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لنص المراسلة المؤسسية الصوتية",
+        "stemEs": "Le contactamos para presentarle una propuesta comercial exclusiva para su empresa.",
+        "stemAr": "نتصل بسيادتكم لنقدم لكم عرضاً تجارياً حصرياً لشركتكم.",
+        "options": [
+          {
+            "id": "ex-b2-coc-5_a",
+            "text": "propuesta comercial",
+            "textAr": "عرض تجاري حصري (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-coc-5_b",
+            "text": "reclamación judicial",
+            "textAr": "شكوى قضائية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموظف قال: una propuesta comercial exclusiva."
+          },
+          {
+            "id": "ex-b2-coc-5_c",
+            "text": "queja personal",
+            "textAr": "شكوى شخصية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعروض كان propuesta comercial."
+          }
+        ],
+        "targetVocab": [
+          "propuesta comercial",
+          "nos dirigimos a usted"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'una propuesta comercial exclusiva para su empresa'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_propuesta_comercial_exclusiva.mp3",
+        "speechEs": "Le contactamos para presentarle una propuesta comercial exclusiva para su empresa.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-coc-5_a"
+          ],
+          "selectedOptionId": "ex-b2-coc-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-coc-5_b": "الموظف قال: una propuesta comercial exclusiva.",
+          "ex-b2-coc-5_c": "المعروض كان propuesta comercial."
+        }
+      },
+      {
+        "id": "ex-b2-coc-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك الختامية الأنيقة في ختام اتصال عمل مع شريك تجاري",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب مهني لبق ومحترم:",
+        "stemEs": "Agradecemos su confianza y quedamos a su entera disposición para cualquier aclaración que estime oportuna.",
+        "stemAr": "نشكر لكم ثقتكم ونبقى تحت تصرفكم التام لأي إيضاح ترونه مناسباً.",
+        "audioKey": "pending/b2_confianza_entera_disposicion.mp3",
+        "targetVocab": [
+          "a su entera disposición",
+          "estimar oportuno",
+          "atentamente"
+        ],
+        "explanationAr": "انتبه لنطق entera disposición و estime oportuna بسلاسة ونبرة بالغة التهذيب.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_confianza_entera_disposicion.mp3",
+          "modelAnswer": "Agradecemos su confianza y quedamos a su entera disposición para cualquier aclaración que estime oportuna."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

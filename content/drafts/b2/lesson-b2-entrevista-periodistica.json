@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-entrevista-periodistica",
+    "unitSlug": "b2-u2-news",
+    "levelCode": "B2",
+    "titleAr": "إجراء المقابلة الصحفية: نقل التصريحات وصياغة الأسئلة الذكية",
+    "titleEs": "La entrevista periodística: Formulación de preguntas incisivas y cita de declaraciones",
+    "subtitleAr": "إدارة الحوار مع الشخصيات العامة، الاستدراك، ونقل الأقوال (según declaró)",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يوجه المتعلم أسئلة صحفية ذكية ودبلوماسية ومحرجة بلباقة لشخصيات مسؤولة.",
+        "أن ينقل تصريحات الضيف بأمانة باستخدام أفعال القول المتنوعة: asegurar, desmentir, sostener, puntualizar.",
+        "أن يتعامل مع التهرب من الإجابة بصيغ إعادة التوجيه الصحفي اللبق."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال القول المتخصصة وصيغ الاستدراك في الحوار الصحفي",
+          "explanationAr": "1. **تنويع أفعال القول بدلاً من decir**:\n- *Asegurar*: يؤكد بحزم (Aseguró que no dimitirá).\n- *Puntualizar*: يوضح نقطة محددة بدقة (Puntualizó que las cifras eran provisionales).\n- *Reiterar*: يكرر ويشدد على الموقف (Reiteró su compromiso con el diálogo).\n2. **صيغ إعادة توجيه السؤال عند التهرب**:\n- *Permítame insistir en este punto*: اسمح لي أن ألح على هذه النقطة.\n- *Con el debido respeto, no ha respondido a mi pregunta sobre...*"
+        }
+      ],
+      "commonMistakesAr": [
+        "الاعتماد الحصري على فعل dijo que مما يفقد التقرير الصحفي دقته وتنوعه الدلالي.",
+        "استخدام أسلوب هجومي فظ بدلاً من الحزم الدبلوماسي المحترف الذي يفرضه ميثاق الشرف الصحفي."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "المحاور الشاطر لما الضيف يلف ويدور بيقوله: «مع احترامي لحضرتك، ده مبيجاوبش على سؤالي عن الميزانية». بالإسبانية: Con todo respeto, no ha contestado a mi pregunta sobre los fondos públicos."
+        }
+      ],
+      "culturalNoteAr": "الصحفيون في إسبانيا وأمريكا اللاتينية يتمتعون بجرأة واستقلالية عالية في مساءلة الساسة، وتعتبر برامج المقابلات المعمقة من أعلى البرامج مشاهدة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-entrevista-periodistica-intro",
+        "type": "explanation",
+        "titleAr": "ترسانة الحوار الصحفي المهني",
+        "bodyAr": "أهم التراكيب:\n- **puntualizar**: يوضح ويدقق جزئية خاصة\n- **reiterar**: يكرر ويعيد التأكيد على الموقف\n- **asegurar tajantemente**: يؤكد بشكل قاطع لا يقبل الشك\n- **permítame insistir**: اسمح لي بالإلحاح والعودة للسؤال\n- **con el debido respeto**: مع كامل الاحترام والتقدير الواجب\n- **la declaración jurada**: الإقرار الرسمي المصحوب بقسم أو تأكيد معلن",
+        "examples": [
+          {
+            "es": "El ministro puntualizó que las ayudas no se suspenderán bajo ninguna circunstancia.",
+            "ar": "أوضح الوزير بدقة أن المساعدات لن تُعلَّق تحت أي ظرف من الظروف."
+          },
+          {
+            "es": "Permítame insistir: ¿cuándo se publicará el informe completo?",
+            "ar": "اسمح لي بالإلحاح: متى سيُنشر التقرير بالكامل؟"
+          },
+          {
+            "es": "El portavoz aseguró tajantemente que no habrá recortes en sanidad.",
+            "ar": "أكد المتحدث بشكل قاطع أنه لن تكون هناك اقتطاعات في قطاع الصحة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "puntualizar",
+      "reiterar",
+      "asegurar",
+      "permítame insistir",
+      "con el debido respeto",
+      "declaración"
+    ],
+    "reviewVocabulary": [
+      "entrevista",
+      "pregunta"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يوجه المتعلم أسئلة صحفية ذكية ودبلوماسية ومحرجة بلباقة لشخصيات مسؤولة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-enp-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الصحفي الذي يعني توضيح نقطة بعينها وتصحيح تفصيل دقيق",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل قول يعبر عن 'إضافة توضيح دقيق ومحدد لتفادي سوء الفهم'؟",
+        "stemEs": "Al término de la reunión, la portavoz _____ que el pacto aún no era definitivo.",
+        "stemAr": "في ختام الاجتماع، ... المتحدثة بدقة أن الاتفاق لم يكن نهائياً بعد.",
+        "options": [
+          {
+            "id": "ex-b2-enp-1_a",
+            "text": "puntualizó",
+            "textAr": "أوضحت ودققت نقطة محددة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-enp-1_b",
+            "text": "habló",
+            "textAr": "تحدثت بشكل عام",
+            "isCorrect": false,
+            "distractorRationaleAr": "التوضيح التفصيلي يسمى puntualizar."
+          },
+          {
+            "id": "ex-b2-enp-1_c",
+            "text": "preguntó",
+            "textAr": "سألت",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدثة هي التي أوضحت puntualizó."
+          }
+        ],
+        "targetVocab": [
+          "puntualizar",
+          "declaración"
+        ],
+        "explanationAr": "puntualizar يعني التدقيق والتوضيح الدقيق لجزئية محددة في الحديث.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-enp-1_a"
+          ],
+          "selectedOptionId": "ex-b2-enp-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-enp-1_b": "التوضيح التفصيلي يسمى puntualizar.",
+          "ex-b2-enp-1_c": "المتحدثة هي التي أوضحت puntualizó."
+        }
+      },
+      {
+        "id": "ex-b2-enp-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل reiterar بالماضي البسيط مع الفاعل الغائب هو: (reiteró)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف فعل reiterar في الماضي البسيط المفرد: El diplomático _____ su llamada a la paz.",
+        "stemEs": "El presidente _____ su compromiso absoluto con la transparencia democrática.",
+        "stemAr": "كرر الرئيس تأكيد التزامه المطلق بالشفافية الديمقراطية.",
+        "targetVocab": [
+          "reiterar"
+        ],
+        "explanationAr": "في الماضي البسيط مع الغائب: reiteró.",
+        "answerKey": {
+          "accepted": [
+            "reiteró"
+          ],
+          "acceptableAnswers": [
+            "reiteró"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-enp-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة الدبلوماسية المناسبة للعودة للسؤال بعد محاولة الضيف التهرب",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تعيد الضيف للسؤال بإصرار صحفي محترف ولبق؟",
+        "stemEs": "_____, señor consejero: ¿cuál es el coste exacto de la infraestructura?",
+        "stemAr": "...، حضرة المستشار: ما هي التكلفة الدقيقة للبنية التحتية؟",
+        "options": [
+          {
+            "id": "ex-b2-enp-3_a",
+            "text": "Permítame insistir",
+            "textAr": "اسمح لي بالإلحاح على النقطة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-enp-3_b",
+            "text": "Me da igual",
+            "textAr": "لا يهمني",
+            "isCorrect": false,
+            "distractorRationaleAr": "أسلوب غير لائق إطلاقاً في المقابلة الصحفية."
+          },
+          {
+            "id": "ex-b2-enp-3_c",
+            "text": "Usted miente",
+            "textAr": "أنت تكذب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصحفي المحترف يستخدم اللباقة الصارمة مثل Permítame insistir."
+          }
+        ],
+        "targetVocab": [
+          "permítame insistir",
+          "con el debido respeto"
+        ],
+        "explanationAr": "Permítame insistir هي الصيغة الاحترافية لإعادة توجيه السؤال بحزم ولباقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-enp-3_a"
+          ],
+          "selectedOptionId": "ex-b2-enp-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-enp-3_b": "أسلوب غير لائق إطلاقاً في المقابلة الصحفية.",
+          "ex-b2-enp-3_c": "الصحفي المحترف يستخدم اللباقة الصارمة مثل Permítame insistir."
+        }
+      },
+      {
+        "id": "ex-b2-enp-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لنقل تأكيد المسؤول الصحفي بحزم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-enp-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b2-enp-4_t2",
+            "kind": "token",
+            "text": "ministro"
+          },
+          {
+            "id": "ex-b2-enp-4_t3",
+            "kind": "token",
+            "text": "aseguró"
+          },
+          {
+            "id": "ex-b2-enp-4_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b2-enp-4_t5",
+            "kind": "token",
+            "text": "cumplirá"
+          },
+          {
+            "id": "ex-b2-enp-4_t6",
+            "kind": "token",
+            "text": "sus"
+          },
+          {
+            "id": "ex-b2-enp-4_t7",
+            "kind": "token",
+            "text": "promesas"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El ministro aseguró que cumplirá sus promesas"
+          ],
+          "tokenOrder": [
+            "ex-b2-enp-4_t1",
+            "ex-b2-enp-4_t2",
+            "ex-b2-enp-4_t3",
+            "ex-b2-enp-4_t4",
+            "ex-b2-enp-4_t5",
+            "ex-b2-enp-4_t6",
+            "ex-b2-enp-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El ministro ثم فعل القول aseguró ثم أداة الربط que ثم الفعل cumplirá ثم المفعول sus promesas.",
+        "targetVocab": [
+          "asegurar",
+          "declaración"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-enp-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لسؤال الصحفي وحدد العبارة المهذبة التي استهل بها استدراكه",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمقابلة الإذاعية الحية مع المسؤول",
+        "stemEs": "Con el debido respeto, los ciudadanos merecen una explicación más detallada.",
+        "stemAr": "مع كامل الاحترام والتقدير، يستحق المواطنون تفسيراً أكثر تفصيلاً.",
+        "options": [
+          {
+            "id": "ex-b2-enp-5_a",
+            "text": "Con el debido respeto",
+            "textAr": "مع الاحترام والتقدير الواجب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-enp-5_b",
+            "text": "Sin ninguna duda",
+            "textAr": "بلا أدنى شك",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصحفي استهل بـ Con el debido respeto."
+          },
+          {
+            "id": "ex-b2-enp-5_c",
+            "text": "Por consiguiente",
+            "textAr": "وبالتالي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاستهلال كان Con el debido respeto."
+          }
+        ],
+        "targetVocab": [
+          "con el debido respeto",
+          "permítame insistir"
+        ],
+        "explanationAr": "الصحفي قال بتهذيب وحزم: 'Con el debido respeto'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_con_debido_respeto_ciudadanos.mp3",
+        "speechEs": "Con el debido respeto, los ciudadanos merecen una explicación más detallada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-enp-5_a"
+          ],
+          "selectedOptionId": "ex-b2-enp-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-enp-5_b": "الصحفي استهل بـ Con el debido respeto.",
+          "ex-b2-enp-5_c": "الاستهلال كان Con el debido respeto."
+        }
+      },
+      {
+        "id": "ex-b2-enp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق سؤالك الصحفي الاستقصائي بحزم ولباقة دبلوماسية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لطلب توضيح رسمي في المؤتمر الصحفي:",
+        "stemEs": "Permítame insistir, señor ministro: ¿cuándo se harán públicas las conclusiones del informe?",
+        "stemAr": "اسمح لي بالإلحاح معالي الوزير: متى ستُعلن نتائج التقرير للرأي العام؟",
+        "audioKey": "pending/b2_permitame_insistir_senor_ministro.mp3",
+        "targetVocab": [
+          "permítame insistir",
+          "puntualizar",
+          "asegurar"
+        ],
+        "explanationAr": "انتبه لنبرة السؤال الاستقصائي المهذب والقوي في آن واحد.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_permitame_insistir_senor_ministro.mp3",
+          "modelAnswer": "Permítame insistir, señor ministro: ¿cuándo se harán públicas las conclusiones del informe?"
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}
