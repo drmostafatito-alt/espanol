@@ -88,9 +88,11 @@ export function buildSearchIndex() {
       for (const e of entries) {
         const headword = (e.headword || e.headwordEs || e.word || '').trim();
         if (!headword) continue;
+        // مفتاح إزالة التكرار يحفظ التشكيل: papa وpapá كلمتان مختلفتان
         const norm = normalizeEs(headword);
-        if (vocabSeen.has(norm)) continue;
-        vocabSeen.add(norm);
+        const exactKey = cleanEs(headword);
+        if (vocabSeen.has(exactKey)) continue;
+        vocabSeen.add(exactKey);
 
         const fushaList = [];
         const egList = [];

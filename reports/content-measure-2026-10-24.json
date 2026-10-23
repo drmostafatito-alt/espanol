@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-10-23T21:22:27.607Z",
+  "source": {
+    "lessonFiles": 212,
+    "lessonsByLevel": {
+      "A1": 40,
+      "A2": 56,
+      "B1": 44,
+      "B2": 40,
+      "C1": 32
+    },
+    "lessonsBySpecialty": {
+      "undefined": 212
+    },
+    "vocabBundles": 53,
+    "vocabRawEntries": 8046,
+    "vocabUniqueNormalized": 8046,
+    "vocabRawByLevel": {
+      "A1": 1697,
+      "B1": 2148,
+      "A2": 2973,
+      "B2": 880,
+      "C1": 348
+    },
+    "vocabRawBySpecialty": {
+      "a1": 36,
+      "callcenter": 18,
+      "core-vocab": 7946,
+      "travel": 46
+    },
+    "pathsPrograms": [
+      "main-track",
+      "main-track",
+      "main-track",
+      "main-track",
+      "main-track",
+      "callcenter",
+      "travel"
+    ],
+    "unitsTotal": 53,
+    "unitsByLevel": {
+      "A1": 10,
+      "A2": 14,
+      "B1": 11,
+      "B2": 10,
+      "C1": 8
+    },
+    "lessonFilesBySpecialty": {
+      "a1": 40,
+      "a2": 40,
+      "b1": 40,
+      "b2": 40,
+      "c1": 32,
+      "callcenter": 4,
+      "travel": 16
+    },
+    "lessonsByLevelAndSpecialty": {
+      "a1|A1": 40,
+      "a2|A2": 40,
+      "b1|B1": 40,
+      "b2|B2": 40,
+      "c1|C1": 32,
+      "callcenter|B1": 4,
+      "travel|A2": 16
+    },
+    "unitsBySpecialty": {
+      "a1": 10,
+      "a2": 10,
+      "b1": 10,
+      "b2": 10,
+      "c1": 8,
+      "callcenter": 1,
+      "travel": 4
+    }
+  },
+  "searchIndex": {
+    "vocab": 8041,
+    "lessons": 212,
+    "grammar": 223
+  },
+  "d1Local": {
+    "lessons": 3,
+    "lessonsDraft": 3,
+    "lessonsPublished": 0,
+    "units": 14,
+    "programs": 3,
+    "vocabEntries": 20,
+    "vocabBundles": 1,
+    "exercises": 21,
+    "exerciseOptions": 24,
+    "lessonVersions": 3
+  }
+}
