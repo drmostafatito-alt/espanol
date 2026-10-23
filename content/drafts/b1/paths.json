@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": "B1",
+      "category": "core",
+      "objectiveAr": "المسار الأساسي للمستوى B1.",
+      "units": [
+        {
+          "slug": "b1-u2-opinions",
+          "levelCode": "B1",
+          "titleAr": "الرأي والاتفاق والمنصوب",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "b1-expresar-opinion-creo-que",
+            "b1-subjuntivo-deseos",
+            "b1-por-vs-para",
+            "b1-acuerdo-desacuerdo"
+          ],
+          "vocabularyBundles": []
+        }
+      ]
+    }
+  ]
+}

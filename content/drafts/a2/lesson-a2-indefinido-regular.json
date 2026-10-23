@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-indefinido-regular",
+    "titleAr": "الماضي البسيط: تصريف الأفعال المنتظمة",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u2-past",
+    "objectiveAr": "أن يصرّف المتعلم أفعال المجموعات الثلاث (-ar, -er, -ir) في الماضي البسيط مع ضمائر الفاعل المختلفة، ويستخدم الظروف الزمنية الدالة على الماضي المنتهي بدقة.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ayer",
+      "anoche",
+      "viajar",
+      "visitar",
+      "comer",
+      "vivir"
+    ],
+    "reviewVocabulary": [
+      "hola",
+      "semana",
+      "año",
+      "amigo"
+    ],
+    "targetStructures": [
+      "hablé, hablaste, habló, hablamos, hablasteis, hablaron (-ar)",
+      "comí, comiste, comió, comimos, comisteis, comieron (-er / -ir)",
+      "Marcadores: ayer, anoche, la semana pasada, el año pasado"
+    ],
+    "grammarTopics": [
+      "preterito-indefinido-regular",
+      "marcadores-temporales-pasado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محادثة بين صديقين في مدريد يسأل أحدهما الآخر عما فعله في عطلة نهاية الأسبوع الماضي.",
+        "settingAr": "مقهى بوسط المدينة، صباح يوم الاثنين",
+        "lines": [
+          {
+            "es": "¡Hola! ¿Qué hiciste el fin de semana pasado?",
+            "ar": "مرحبًا! ماذا فعلت في عطلة نهاية الأسبوع الماضي؟",
+            "arEg": "أهلًا! عملت إيه في الويك إند اللي فات؟",
+            "audioKey": "pending/a2-indef-tariq-1"
+          },
+          {
+            "es": "El sábado viajé a Toledo y visité monumentos históricos.",
+            "ar": "يوم السبت سافرتُ إلى طليطلة وزرتُ معالم تاريخية.",
+            "arEg": "يوم السبت سافرت طليطلة وزرت آثار تاريخية.",
+            "audioKey": "pending/a2-indef-tariq-2"
+          },
+          {
+            "es": "¿Y comiste en algún restaurante típico de allí?",
+            "ar": "وهل أكلتَ في مطعم تقليدي هناك؟",
+            "arEg": "وأكلت في مطعم بلدي هناك؟",
+            "audioKey": "pending/a2-indef-tariq-3"
+          },
+          {
+            "es": "Sí, comí un plato delicioso y regresé a Madrid por la noche.",
+            "ar": "نعم، أكلتُ طبقًا لذيذًا وعدتُ إلى مدريد في المساء.",
+            "arEg": "أيوة، أكلت أكلة حلوة ورجعت مدريد بالليل.",
+            "audioKey": "pending/a2-indef-tariq-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_indreg_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى طارق واختر المدينة التي سافر إليها يوم السبت.",
+        "audioKey": "pending/a2-indef-tariq-2",
+        "speechEs": "El sábado viajé a Toledo y visité monumentos históricos.",
+        "options": [
+          {
+            "id": "a2_indreg_1_a",
+            "text": "Toledo",
+            "isCorrect": true,
+            "textAr": "طليطلة"
+          },
+          {
+            "id": "a2_indreg_1_b",
+            "text": "Madrid",
+            "isCorrect": false,
+            "textAr": "مدريد",
+            "distractorRationaleAr": "مدريد هي مدينة الإقامة والعودة وليست وجهة الرحلة."
+          },
+          {
+            "id": "a2_indreg_1_c",
+            "text": "Granada",
+            "isCorrect": false,
+            "textAr": "غرناطة",
+            "distractorRationaleAr": "لم تُذكر غرناطة في التسجيل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_indreg_1_a"
+          ]
+        },
+        "explanationAr": "قال المتحدث صراحة: «El sábado viajé a Toledo». الفعل viajé مصرف في الماضي البسيط للمتكلم.",
+        "errorFeedback": {
+          "a2_indreg_1_b": "مدريد هي مكان انطلاق الرحلة والعودة إليها.",
+          "a2_indreg_1_c": "غرناطة لم تُذكر في الحوار."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "viajar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indreg_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر التصريف الصحيح للفعل hablar في الماضي مع الضمير yo.",
+        "options": [
+          {
+            "id": "a2_indreg_2_a",
+            "text": "hablé",
+            "isCorrect": true,
+            "textAr": "تحدثتُ (أنا)"
+          },
+          {
+            "id": "a2_indreg_2_b",
+            "text": "habló",
+            "isCorrect": false,
+            "textAr": "تحدث هو",
+            "distractorRationaleAr": "habló للمفرد الغائب لوجود نبرة ó."
+          },
+          {
+            "id": "a2_indreg_2_c",
+            "text": "hablaba",
+            "isCorrect": false,
+            "textAr": "كنتُ أتحدث (ماض مستمر)",
+            "distractorRationaleAr": "hablaba في الماضي المستمر imperfecto وليست في الماضي البسيط."
+          },
+          {
+            "id": "a2_indreg_2_d",
+            "text": "hablaste",
+            "isCorrect": false,
+            "textAr": "تحدثتَ أنت",
+            "distractorRationaleAr": "hablaste خاصة بالمخاطب المفرد tú."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_indreg_2_a"
+          ]
+        },
+        "explanationAr": "أفعال المجموعة الأولى (-ar) تأخذ النهاية -é مع الضمير yo في الماضي البسيط: hablé.",
+        "errorFeedback": {
+          "a2_indreg_2_b": "habló للغائب (هو تحدث).",
+          "a2_indreg_2_c": "hablaba في الماضي المستمر.",
+          "a2_indreg_2_d": "hablaste للمخاطب أنت."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "ayer"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indreg_3_fill_comer",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بتصريف الفعل comer في الماضي مع الضمير nosotros.",
+        "stemEs": "Ayer nosotros ____ paella en un restaurante valenciano.",
+        "stemAr": "أمس نحن ____ بايا في مطعم بلنسي.",
+        "answerKey": {
+          "accepted": [
+            "comimos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "أفعال المجموعة الثانية (-er) تأخذ النهاية -imos مع nosotros في الماضي البسيط: comimos.",
+        "errorFeedback": {
+          "comieron": "comieron للغائبين (ellos/ellas).",
+          "comemos": "comemos في المضارع، والماضي هو comimos."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "comer"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indreg_4_fill_vivir",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بتصريف الفعل vivir في الماضي مع الضمير ellos.",
+        "stemEs": "El año pasado mis primos ____ en Granada.",
+        "stemAr": "العام الماضي أبناء عمي ____ في غرناطة.",
+        "answerKey": {
+          "accepted": [
+            "vivieron"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع الفاعل الجمع الغائب (mis primos = ellos) لأفعال المجموعة الثالثة (-ir)، النهاية هي -ieron: vivieron.",
+        "errorFeedback": {
+          "vivió": "الفاعل جمع وليس مفرداً.",
+          "viven": "viven في المضارع، والمطلوب ماضٍ."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "vivir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indreg_5_marker",
+        "type": "word_choice",
+        "instructionAr": "أيّ من هذه الكلمات يُعتبر ظرفًا زمنيًا دالاً على الماضي المنتهي؟",
+        "options": [
+          {
+            "id": "a2_indreg_5_a",
+            "text": "anoche",
+            "isCorrect": true,
+            "textAr": "البارحة ليلاً"
+          },
+          {
+            "id": "a2_indreg_5_b",
+            "text": "ahora",
+            "isCorrect": false,
+            "textAr": "الآن",
+            "distractorRationaleAr": "ahora تدل على الحاضر."
+          },
+          {
+            "id": "a2_indreg_5_c",
+            "text": "mañana",
+            "isCorrect": false,
+            "textAr": "غدًا",
+            "distractorRationaleAr": "mañana تدل على المستقبل."
+          },
+          {
+            "id": "a2_indreg_5_d",
+            "text": "siempre",
+            "isCorrect": false,
+            "textAr": "دائمًا",
+            "distractorRationaleAr": "siempre تدل على التكرار والعادة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_indreg_5_a"
+          ]
+        },
+        "explanationAr": "ظرف الزمان «anoche» (البارحة ليلاً) يحدد فترة زمنية انقضت تماماً ومفصولة عن الحاضر، ولذلك يقترن بالماضي البسيط.",
+        "errorFeedback": {
+          "a2_indreg_5_b": "ahora تدل على الحاضر.",
+          "a2_indreg_5_c": "mañana تدل على المستقبل.",
+          "a2_indreg_5_d": "siempre تفيد التكرار."
+        },
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "anoche"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indreg_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة بصوت واضح مع مراعاة النبرة على حرف é في viajé.",
+        "stemEs": "Ayer viajé a Toledo.",
+        "stemAr": "أمس سافرتُ إلى طليطلة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-indreg-speak-1",
+          "modelAnswer": "Ayer viajé a Toledo."
+        },
+        "explanationAr": "احرص على نطق حرف j في viajé بصوت الخاء العربية، مع نبر قوي على المقطع الأخير -jé.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "viajar"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق حرف j في viajé كخاء",
+              "weight": 50,
+              "code": "pron_j"
+            },
+            {
+              "labelAr": "النبر على المقطع الأخير -jé",
+              "weight": 50,
+              "code": "stress_je"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من سلسلة Aula Plus 2 وEn Vocabulario"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

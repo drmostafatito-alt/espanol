@@ -1,0 +1,318 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-indefinido-irregular",
+    "titleAr": "الماضي البسيط: الأفعال الشاذة الأساسية",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u2-past",
+    "objectiveAr": "أن يتقن المتعلم تصريف واستخدام الأفعال الشاذة الرئيسية في الماضي البسيط: ser/ir (fui), estar (estuve), hacer (hice/hizo), tener (tuve)، ويميز بين ser و ir من سياق الجملة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "fui",
+      "estuve",
+      "hice",
+      "tuve",
+      "ayer",
+      "anoche"
+    ],
+    "reviewVocabulary": [
+      "viajar",
+      "amigo",
+      "casa",
+      "tiempo"
+    ],
+    "targetStructures": [
+      "yo fui, tú fuiste, él/ella fue, nosotros fuimos, vosotros fuisteis, ellos fueron (ser / ir)",
+      "estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron (estar)",
+      "hice, hiciste, hizo, hicimos, hicisteis, hicieron (hacer)",
+      "tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron (tener)"
+    ],
+    "grammarTopics": [
+      "preterito-indefinido-irregular",
+      "ser-ir-indefinido"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار بين زميلين في العمل يتحدثان عن إجازة نهاية الأسبوع المنصرمة وكيف قضياها.",
+        "settingAr": "مكتب العمل، صباح الاثنين",
+        "lines": [
+          {
+            "es": "¿Dónde estuviste el domingo pasado?",
+            "ar": "أين كنتَ يوم الأحد الماضي؟",
+            "arEg": "كنت فين يوم الحد اللي فات؟",
+            "audioKey": "pending/a2-irreg-laura-1"
+          },
+          {
+            "es": "Estuve en casa de mis padres y tuvimos una comida familiar.",
+            "ar": "كنتُ في منزل والديّ وتناولنا وجبة عائلية.",
+            "arEg": "كنت عند أهلي واتغدينا غدوة عائلية.",
+            "audioKey": "pending/a2-irreg-laura-2"
+          },
+          {
+            "es": "¿Y qué hiciste después de comer?",
+            "ar": "وماذا فعلتَ بعد تناول الطعام؟",
+            "arEg": "وعملت إيه بعد الأكل؟",
+            "audioKey": "pending/a2-irreg-laura-3"
+          },
+          {
+            "es": "Fui al cine con mi hermano. La película fue muy divertida.",
+            "ar": "ذهبتُ إلى السينما مع أخي. كان الفيلم مسليًا جدًا.",
+            "arEg": "رحت السينما مع أخويا. الفيلم كان لذيذ جداً.",
+            "audioKey": "pending/a2-irreg-laura-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_indirreg_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى لاورا واختر المكان الذي ذهبت إليه بعد الغداء.",
+        "audioKey": "pending/a2-irreg-laura-4",
+        "speechEs": "Fui al cine con mi hermano. La película fue muy divertida.",
+        "options": [
+          {
+            "id": "a2_indirreg_1_a",
+            "text": "Al cine",
+            "isCorrect": true,
+            "textAr": "إلى السينما"
+          },
+          {
+            "id": "a2_indirreg_1_b",
+            "text": "A la playa",
+            "isCorrect": false,
+            "textAr": "إلى الشاطئ",
+            "distractorRationaleAr": "لم يُذكر الشاطئ في كلام لاورا."
+          },
+          {
+            "id": "a2_indirreg_1_c",
+            "text": "Al museo",
+            "isCorrect": false,
+            "textAr": "إلى المتحف",
+            "distractorRationaleAr": "المتحف لم يُذكر في الحوار."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_indirreg_1_a"
+          ]
+        },
+        "explanationAr": "قالت لاورا: «Fui al cine con mi hermano». الفعل fui هنا مشتق من ir بمعنى ذهب.",
+        "errorFeedback": {
+          "a2_indirreg_1_b": "لاورا لم تذكر الشاطئ.",
+          "a2_indirreg_1_c": "المتحف لم يُذكر في الحوار."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "fui"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indirreg_2_ser_vs_ir",
+        "type": "word_choice",
+        "instructionAr": "ما هو أصل الفعل fue في سياق وصف الفيلم بأنه كان مسليًا؟",
+        "options": [
+          {
+            "id": "a2_indirreg_2_a",
+            "text": "ser (era / fue)",
+            "isCorrect": true,
+            "textAr": "فعل الكينونة ser"
+          },
+          {
+            "id": "a2_indirreg_2_b",
+            "text": "ir (iba / fue)",
+            "isCorrect": false,
+            "textAr": "فعل الذهاب ir",
+            "distractorRationaleAr": "الفيلم لا يذهب بحركة مادية، بل يُوصف بأنه كان مسليًا."
+          },
+          {
+            "id": "a2_indirreg_2_c",
+            "text": "estar (estuvo)",
+            "isCorrect": false,
+            "textAr": "فعل التواجد estar",
+            "distractorRationaleAr": "ماضي estar هو estuvo وليس fue."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_indirreg_2_a"
+          ]
+        },
+        "explanationAr": "يشترك الفعلان ser و ir في نفس التصريف تمامًا في الماضي البسيط (fue)، والصفة divertida تحدد أنه من فعل ser.",
+        "errorFeedback": {
+          "a2_indirreg_2_b": "الفيلم لا يتحرك ليذهب، بل المعنى هو كان مسليًا.",
+          "a2_indirreg_2_c": "فعل estar في الماضي يصبح estuvo."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "fui"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indirreg_3_fill_estar",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف فعل estar في الماضي البسيط مع الضمير yo.",
+        "stemEs": "Ayer yo ____ enfermo y no fui a trabajar.",
+        "stemAr": "أمس أنا ____ مريضًا ولم أذهب إلى العمل.",
+        "answerKey": {
+          "accepted": [
+            "estuve"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "فعل estar شاذ في الماضي ويتحول جذره إلى estuv- مع نهايات غير منبورة: yo estuve.",
+        "errorFeedback": {
+          "estuvo": "estuvo خاصة بـ él/ella.",
+          "estaba": "estaba في صيغة imperfecto."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "estuve"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indirreg_4_fill_hacer",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف فعل hacer مع الضمير él مع الانتباه لتغير حرف c إلى z.",
+        "stemEs": "Carlos ____ los deberes anoche.",
+        "stemAr": "كارلوس ____ الواجبات البارحة ليلاً.",
+        "answerKey": {
+          "accepted": [
+            "hizo"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع المفرد الغائب يتحول حرف c في جذر الفعل إلى z للحفاظ على النطق الصوتي الصحيح: hizo.",
+        "errorFeedback": {
+          "hice": "hice مع المتكلم yo.",
+          "hacía": "hacía في الماضي المستمر."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "hice"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indirreg_5_fill_tener",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف فعل tener مع الضمير nosotros في الماضي البسيط.",
+        "stemEs": "El domingo nosotros ____ mucha suerte.",
+        "stemAr": "يوم الأحد نحن ____ حظاً وافراً.",
+        "answerKey": {
+          "accepted": [
+            "tuvimos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "فعل tener يتحول جذره في الماضي البسيط إلى tuv- ومعه النهاية -imos للضمير nosotros: tuvimos.",
+        "errorFeedback": {
+          "tenemos": "tenemos مضارع حاضر.",
+          "tuvieron": "tuvieron للغائب الجمع."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "tuve"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_indirreg_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة بصوت واضح مراعيًا التفريق بين صوتي fui و fue.",
+        "stemEs": "Yo fui al cine y la película fue buena.",
+        "stemAr": "أنا ذهبتُ إلى السينما وكان الفيلم جيدًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-indirreg-speak-1",
+          "modelAnswer": "Yo fui al cine y la película fue buena."
+        },
+        "explanationAr": "تدرّب على كسر الياء في fui للمتكلم (ذهبتُ)، وضم الواو وفتح الهاء في fue للغائب (كان).",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "fui"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح صوت fui للمتكلم",
+              "weight": 50,
+              "code": "pron_fui"
+            },
+            {
+              "labelAr": "وضوح صوت fue للغائب",
+              "weight": 50,
+              "code": "pron_fue"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من سلسلة Aula Plus 2 وEn Vocabulario"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يركز على إزالة الخلط الشهير بين ser و ir في الماضي البسيط والشواذ الأربعة الكبرى."
+    }
+  }
+}

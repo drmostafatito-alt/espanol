@@ -41,7 +41,7 @@ jobs:
 
       - name: مدقق المحتوى (كل المجلدات)
         run: |
-          for d in a1 core-vocab travel callcenter; do
+          for d in a1 a2 b1 b2 c1 core-vocab travel callcenter; do
             echo "::group::content/drafts/$d"
             node tools/validate-content.mjs --dir "content/drafts/$d"
             echo "::endgroup::"

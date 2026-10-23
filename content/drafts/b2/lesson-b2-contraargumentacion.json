@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-contraargumentacion",
+    "titleAr": "المحاجة المضادة ودحض الحجج: Contraargumentación",
+    "level": "B2",
+    "programSlug": "main-track",
+    "unitSlug": "b2-u1-argument",
+    "objectiveAr": "أن يتقن المتعلم تقنية الدحض البلاغي والمحاجة المضادة باستخدام أسلوب التسليم الجزئي (Si bien es cierto que... no obstante / sino) لتفنيد حجج الطرف الآخر بأناقة واقتدار.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "contra",
+      "argumento",
+      "admitir",
+      "refutar",
+      "discutir",
+      "postura"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "tiempo",
+      "sociedad",
+      "bien"
+    ],
+    "targetStructures": [
+      "Estructura concesiva de refutación: Si bien es cierto que... + Indicativo",
+      "Conector adversativo correctivo: no... sino que...",
+      "Fórmula de debate: Admito que X, pero conviene señalar que Y"
+    ],
+    "grammarTopics": [
+      "contraargumentacion-b2",
+      "refutacion-y-debate"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "جلسة في المجلس البلدي لمناقشة ميزانية تجديد المرافق الرياضية والثقافية في المدينة.",
+        "settingAr": "قاعة المجلس البلدي، إشبيلية",
+        "lines": [
+          {
+            "es": "Muchos vecinos afirman que renovar el polideportivo es un gasto prescindible.",
+            "ar": "يزعم العديد من السكان أن تجديد المجمع الرياضي نفقة يمكن الاستغناء عنها.",
+            "arEg": "ناس كتير شايفة إن تجديد النادي مصاريف ممكن نستغنى عنها.",
+            "audioKey": "pending/b2-contra-pleno-1"
+          },
+          {
+            "es": "Si bien es cierto que la inversión es alta, los beneficios para la salud pública son incalculables.",
+            "ar": "وإن كان صحيحاً أن الاستثمار ضخم، إلا أن فوائده على الصحة العامة لا تقدر بثمن.",
+            "arEg": "لئن كان صح إن المبلغ كبير، بس فوايده على صحة الناس متتقدرش بتمن.",
+            "audioKey": "pending/b2-contra-pleno-2"
+          },
+          {
+            "es": "No estamos derrochando recursos, sino invirtiendo en el bienestar colectivo de los jóvenes.",
+            "ar": "نحن لا نبدد الموارد، بل نستثمر في الرفاه الجماعي للشباب.",
+            "arEg": "احنا مش بنضيع فلوس، بل بنستثمر في صحة ومستقبل الشباب.",
+            "audioKey": "pending/b2-contra-pleno-3"
+          },
+          {
+            "es": "Esa justificación desmonta las críticas y fundamenta sólidamente la partida presupuestaria.",
+            "ar": "هذا التعليل يفكك الانتقادات ويؤسس بقوة للبند المالي في الميزانية.",
+            "arEg": "التبرير ده بيفحم كل الانتقادات وبيثبت صحة قرار الميزانية.",
+            "audioKey": "pending/b2-contra-pleno-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b2_contra_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى حجة المتحدث ولاحظ كيف رد على حجة التكلفة المرتفعة.",
+        "audioKey": "pending/b2-contra-pleno-2",
+        "speechEs": "Si bien es cierto que la inversión es alta, los beneficios para la salud pública son incalculables.",
+        "options": [
+          {
+            "id": "b2_contra_1_a",
+            "text": "Los beneficios a largo plazo superan con creces el coste inicial",
+            "isCorrect": true,
+            "textAr": "الفوائد على المدى الطويل تفوق التكلفة الأولية بكثير"
+          },
+          {
+            "id": "b2_contra_1_b",
+            "text": "La inversión arruinará las finanzas del municipio",
+            "isCorrect": false,
+            "textAr": "الاستثمار سيدمر مالية البلدية",
+            "distractorRationaleAr": "مناقض تماماً للموقف المدافع عن المشروع."
+          },
+          {
+            "id": "b2_contra_1_c",
+            "text": "No se debe gastar nada de dinero en los jóvenes",
+            "isCorrect": false,
+            "textAr": "لا يجوز إنفاق أي مال على الشباب",
+            "distractorRationaleAr": "لم يقل ذلك بل أكد على استثمار المستقبل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_contra_1_a"
+          ]
+        },
+        "explanationAr": "استخدم المتحدث استراتيجية «Si bien es cierto que...» للتسليم بجزء من الحجة (أن التكلفة عالية) ثم دحضها بالحجة الأقوى (الفوائد التي لا تقدر بثمن).",
+        "errorFeedback": {
+          "b2_contra_1_b": "لم يقل أن الاستثمار سيدمر البلدية.",
+          "b2_contra_1_c": "لم يقل أنه لا يجب الإنفاق."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "argumento",
+          "obstante"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_contra_2_structure",
+        "type": "word_choice",
+        "instructionAr": "ما هو الدور الوظيفي للتركيب البلاغي «Si bien es cierto que...» في بداية المحاجة؟",
+        "options": [
+          {
+            "id": "b2_contra_2_a",
+            "text": "Conceder una verdad parcial para rebatirla inmediatamente",
+            "isCorrect": true,
+            "textAr": "التسليم بجزء من الحقيقة للتمهيد لدحضها فوراً بالحجة الأقوى"
+          },
+          {
+            "id": "b2_contra_2_b",
+            "text": "Negar de forma categórica la postura del interlocutor",
+            "isCorrect": false,
+            "textAr": "الإنكار القاطع المطلق لموقف المحاور",
+            "distractorRationaleAr": "التركيب يعترف بالواقع جزئياً أولاً ولا ينكر كلياً."
+          },
+          {
+            "id": "b2_contra_2_c",
+            "text": "Finalizar el debate y abandonar la conversación",
+            "isCorrect": false,
+            "textAr": "إنهاء المناظرة والانسحاب من الحوار",
+            "distractorRationaleAr": "التركيب هو مناورة بلاغية لمواصلة الإقناع وليس للانسحاب."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_contra_2_a"
+          ]
+        },
+        "explanationAr": "التعبير البلاغي «Si bien es cierto que...» (وإن كان صحيحاً أن...) يُعرف بـ Concesión retórica، حيث يسلم المتحدث بصدق ملاحظة الخصم ليزيل تعصبه ثم يطرح الحجة الحاسمة.",
+        "errorFeedback": {
+          "b2_contra_2_b": "التركيب لا ينكر كلياً بل يسلم جزئياً.",
+          "b2_contra_2_c": "ليس انسحاباً بل حجة إقناعية قوية."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "argumento"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_contra_3_fill_sibien",
+        "type": "fill_blank",
+        "instructionAr": "أكمل أداة التسليم التنازلية: «وإنْ كان صحيحاً أنه صعب، فالنجاح مضمون».",
+        "stemEs": "Si ____ es cierto que el reto es difícil, el éxito final está garantizado.",
+        "stemAr": "وإنْ كان صحيحاً أن التحدي صعب، فإن النجاح النهائي مضمون.",
+        "answerKey": {
+          "accepted": [
+            "bien"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التركيب الثابت للتسليم هو «Si bien es cierto que» ويتبعه الفعل في صيغة الواقع (Indicativo).",
+        "errorFeedback": {
+          "mucho": "التركيب القياسي هو Si bien وليس Si mucho.",
+          "todo": "Si todo لا تؤدي المعنى التنازلي المطلوب."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "verdad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_contra_4_fill_contrast",
+        "type": "fill_blank",
+        "instructionAr": "أكمل أداة الاستدراك التصحيحي بعد النفي: «لم نرفض المقترح تعنتاً، بل لنقص الميزانية».",
+        "stemEs": "No rechazamos la propuesta por capricho, ____ por falta de presupuesto.",
+        "stemAr": "نحن لم نرفض المقترح نزوة، بل بسبب انعدام الميزانية.",
+        "answerKey": {
+          "accepted": [
+            "sino"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "بعد جملة منفية لتصحيح وتعيين السبب الحقيقي نستخدم أداة «sino» (بل)، وهي تطابق حرف العطف «بل» في العربية بعد النفي.",
+        "errorFeedback": {
+          "pero": "pero تفيد الاستدراك العادي ولا تصح لتصحيح النفي الحصري كما تفعل sino.",
+          "aunque": "aunque تفيد رغم أن وتتطلب جملة تابعة."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "argumento"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_contra_5_contrast_choice",
+        "type": "word_choice",
+        "instructionAr": "متى نستخدم «sino» بدلاً من «pero» في سياق الرد على حجة؟",
+        "options": [
+          {
+            "id": "b2_contra_5_a",
+            "text": "Tras una negación para sustituir o corregir un elemento",
+            "isCorrect": true,
+            "textAr": "بعد جملة منفية لإبدال أو تصحيح العنصر المنفي بالبديل الحقيقي"
+          },
+          {
+            "id": "b2_contra_5_b",
+            "text": "En oraciones totalmente afirmativas sin negación previa",
+            "isCorrect": false,
+            "textAr": "في الجمل المثبتة دون أي نفي سابق",
+            "distractorRationaleAr": "sino تشترط وجود نفي سابق (no... sino...)."
+          },
+          {
+            "id": "b2_contra_5_c",
+            "text": "Al formular preguntas directas o indirectas de duda",
+            "isCorrect": false,
+            "textAr": "عند طرح أسئلة مباشرة أو غير مباشرة",
+            "distractorRationaleAr": "sino أداة عطف وتصحيح وليست أداة استفهام."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_contra_5_a"
+          ]
+        },
+        "explanationAr": "القاعدة الأساسية: No A, sino B. نستخدم sino بعد النفي لتثبيت البديل الصحيح، مثل: No es un gasto, sino una inversión.",
+        "errorFeedback": {
+          "b2_contra_5_b": "sino تتطلب نفياً سابقاً دائماً.",
+          "b2_contra_5_c": "sino ليست أداة استفهام."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "admitir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_contra_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق عبارة التصحيح الحجاجية التالية بنبرة جازمة وحازمة.",
+        "stemEs": "No es una pérdida de tiempo, sino una inversión de futuro.",
+        "stemAr": "إنه ليس مضيعة للوقت، بل استثمار للمستقبل.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2-contra-speak-1",
+          "modelAnswer": "No es una pérdida de tiempo, sino una inversión de futuro."
+        },
+        "explanationAr": "لاحظ الوقف الخفيف قبل sino، والنطق الحاسم لكلمة inversión مع إبراز النبرة على المقطع الأخير (-sión).",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "obstante"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق عبارة sino una inversión بوضوح",
+              "weight": 50,
+              "code": "pron_sino_inversion"
+            },
+            {
+              "labelAr": "نبرة التناقض الصوتي الحازم بين النفي والإثبات",
+              "weight": 50,
+              "code": "stress_contrast"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula Plus 4 وEn Vocabulario B2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يركز على استراتيجيات الدحض والمحاجة المضادة الرفيعة في مستوى B2."
+    }
+  }
+}

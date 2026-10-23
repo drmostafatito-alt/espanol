@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-nominalizacion",
+    "titleAr": "الاسمية الأكاديمية وصياغة التقارير: Nominalización",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u1-style",
+    "objectiveAr": "أن يحوّل المتعلم الجمل الفعلية الممتدة إلى صيغ اسمية موجزة وبليغة (Nominalización) باستخدام المصادر والأسماء المشتقة لتعزيز الكثافة المعلوماتية والموضوعية في النصوص الرسمية.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "reducción",
+      "promulgación",
+      "incremento",
+      "adopción",
+      "crecimiento",
+      "gestión"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "tiempo",
+      "sociedad",
+      "bien"
+    ],
+    "targetStructures": [
+      "De verbo a sustantivo: reducir -> la reducción de",
+      "De verbo a sustantivo: promulgar -> la promulgación de la ley",
+      "Condensación sintáctica: La rápida adopción de medidas evitó la crisis"
+    ],
+    "grammarTopics": [
+      "nominalizacion-c1",
+      "estilo-periodistico-y-academico"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مؤتمر صحفي بمقر وزارة الاقتصاد لإعلان المؤشرات المالية السنوية والتشريعات الجديدة.",
+        "settingAr": "قاعة المؤتمرات الوزارية، مدريد",
+        "lines": [
+          {
+            "es": "La promulgación de la nueva ley tributaria favoreció la reducción del déficit fiscal.",
+            "ar": "إن إصدار القانون الضريبي الجديد ساعد في تقليص العجز المالي.",
+            "arEg": "صدور القانون الضريبي الجديد ساعد في تقليل عجز الموازنة.",
+            "audioKey": "pending/c1-nom-parlamento-1"
+          },
+          {
+            "es": "Asimismo, constatamos un notable incremento en las exportaciones tecnológicas.",
+            "ar": "كذلك، نسجل ارتفاعاً ملحوظاً في الصادرات التكنولوجية.",
+            "arEg": "وكمان شايفين زيادة كبيرة وواضحة في تصدير التكنولوجيا.",
+            "audioKey": "pending/c1-nom-parlamento-2"
+          },
+          {
+            "es": "La adopción de estas medidas garantiza una gestión presupuestaria más transparente.",
+            "ar": "إن تبنّي هذه الإجراءات يضمن إدارة أكثر شفافية للميزانية.",
+            "arEg": "تطبيق الخطوات دي بيضمن إدارة أوضح وأحسن للمصاريف.",
+            "audioKey": "pending/c1-nom-parlamento-3"
+          },
+          {
+            "es": "Este balance demuestra la solidez de las reformas estructurales emprendidas.",
+            "ar": "هذه الحصيلة تبرهن على متانة الإصلاحات الهيكلية المتخذة.",
+            "arEg": "النتيجة دي بتثبت إن الإصلاحات ماشية في سكتها الصح.",
+            "audioKey": "pending/c1-nom-parlamento-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "c1_nom_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى المتحدث ولاحظ كيف صاغ الحدث بأسلوب اسمي مكثف.",
+        "audioKey": "pending/c1-nom-parlamento-1",
+        "speechEs": "La promulgación de la nueva ley tributaria favoreció la reducción del déficit fiscal.",
+        "options": [
+          {
+            "id": "c1_nom_1_a",
+            "text": "La promulgación de la ley favoreció la reducción del déficit",
+            "isCorrect": true,
+            "textAr": "إصدار القانون ساهم في تقليص العجز المالي"
+          },
+          {
+            "id": "c1_nom_1_b",
+            "text": "El parlamento decidió anular todas las leyes tributarias",
+            "isCorrect": false,
+            "textAr": "قرر البرلمان إلغاء جميع القوانين الضريبية",
+            "distractorRationaleAr": "لم يقل ذلك بل تحدث عن إصدار قانون جديد."
+          },
+          {
+            "id": "c1_nom_1_c",
+            "text": "El déficit aumentó de manera descontrolada",
+            "isCorrect": false,
+            "textAr": "العجز المالي ارتفع بشكل خارج عن السيطرة",
+            "distractorRationaleAr": "مناقض تماماً لما أعلنه الوزير."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_nom_1_a"
+          ]
+        },
+        "explanationAr": "صاغ المتحدث الجملة باستخدام اسمين مشتقين رئيسيين: «la promulgación» (بدلاً من cuando se promulgó) و«la reducción» (بدلاً من que se redujera).",
+        "errorFeedback": {
+          "c1_nom_1_b": "لم يقل إلغاء القوانين.",
+          "c1_nom_1_c": "لم يقل أن العجز ارتفع."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "promulgación",
+          "reducción"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_nom_2_concept",
+        "type": "word_choice",
+        "instructionAr": "ما هو الأثر البلاغي والأسلوبي لظاهرة الاسمية (Nominalización) في الخطاب الأكاديمي؟",
+        "options": [
+          {
+            "id": "c1_nom_2_a",
+            "text": "Aportar concisión, rigor y una mayor densidad informativa",
+            "isCorrect": true,
+            "textAr": "إضفاء الإيجاز والرصانة وكثافة معلوماتية عالية"
+          },
+          {
+            "id": "c1_nom_2_b",
+            "text": "Hacer que el texto parezca una conversación informal de café",
+            "isCorrect": false,
+            "textAr": "جعل النص أشبه بحديث مقهى غير رسمي",
+            "distractorRationaleAr": "عكس وظيفتها تماماً؛ الاسمية ترفع من رسمية النص."
+          },
+          {
+            "id": "c1_nom_2_c",
+            "text": "Eliminar todos los sustantivos del párrafo",
+            "isCorrect": false,
+            "textAr": "حذف جميع الأسماء من الفقرة",
+            "distractorRationaleAr": "الاسمية تعتمد على تحويل الأفعال لأسماء مشتقة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_nom_2_a"
+          ]
+        },
+        "explanationAr": "الاسمية تحول الجمل الطويلة المليئة بأفعال إلى عبارات اسمية رصينة ومحكمة تناسب الأوراق البحثية والتقارير الصحفية الرصينة.",
+        "errorFeedback": {
+          "c1_nom_2_b": "الاسمية ترفع المستوى ولا تجعله عامياً.",
+          "c1_nom_2_c": "الاسمية تضيف أسماء ولا تحذفها."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "gestión"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_nom_3_fill_reducir",
+        "type": "fill_blank",
+        "instructionAr": "حوّل الفعل reducir إلى الاسم المشتق المناسب في الجملة التقريرية.",
+        "stemEs": "Se constató una notable ____ en el consumo energético global.",
+        "stemAr": "لوحظ انخفاض ملحوظ في الاستهلاك الإجمالي للطاقة.",
+        "answerKey": {
+          "accepted": [
+            "reducción"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الاسم المشتق القياسي من الفعل reducir هو «reducción»، ويُستخدم بكثرة في التقارير الاقتصادية والبيئية.",
+        "errorFeedback": {
+          "reducir": "المطلوب الاسم المشتق وليس المصدر المجرد الفعل reduccion.",
+          "reducimiento": "صيغة غير قياسية في الإسبانية الفصيحة."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "reducción"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_nom_4_fill_incrementar",
+        "type": "fill_blank",
+        "instructionAr": "حوّل الفعل incrementar إلى الاسم المشتق الدال على النمو والزيادة.",
+        "stemEs": "El informe destaca un fuerte ____ de la productividad laboral.",
+        "stemAr": "يبرز التقرير زيادة قوية في الإنتاجية العمالية.",
+        "answerKey": {
+          "accepted": [
+            "incremento",
+            "aumento"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الاسم المشتق من الفعل incrementar هو «incremento»، وهو من أكثر الكلمات شيوعاً في تقارير المؤسسات المالية.",
+        "errorFeedback": {
+          "incrementar": "المطلوب الاسم المشتق من الفعل.",
+          "incrementación": "صيغة ركيكة غير معتمدة؛ الصحيح incremento."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "incremento"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_nom_5_parallel",
+        "type": "word_choice",
+        "instructionAr": "ما الذي يوازي ظاهرة الاسمية تمامًا في الصياغة الصحفية والبلاغة العربية؟",
+        "options": [
+          {
+            "id": "c1_nom_5_a",
+            "text": "El uso preferente de fuentes verbales (masdar)",
+            "isCorrect": true,
+            "textAr": "تفضيل استخدام المصادر الصريحة (المصدر الصريح) في العناوين والتقارير"
+          },
+          {
+            "id": "c1_nom_5_b",
+            "text": "El uso exclusivo de adjetivos en grado superlativo",
+            "isCorrect": false,
+            "textAr": "استخدام صيغ التفضيل الحصرية فقط",
+            "distractorRationaleAr": "صيغ التفضيل وصفية ولا تتعلق بالاشتقاق الاسمي للأحداث."
+          },
+          {
+            "id": "c1_nom_5_c",
+            "text": "La eliminación obligatoria de todas las vocales",
+            "isCorrect": false,
+            "textAr": "حذف جميع الحركات الصوتية إجبارياً",
+            "distractorRationaleAr": "لا صلة له بالنحو أو البلاغة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_nom_5_a"
+          ]
+        },
+        "explanationAr": "في الصحافة العربية الرصينة، تُصاغ العناوين والتقارير بالمصادر الصريحة (مثل: انخفاض العجز، إصدار القانون) وهو المعادل التام للـ Nominalización الإسبانية.",
+        "errorFeedback": {
+          "c1_nom_5_b": "صيغ التفضيل لا تشكل بنية اسمية.",
+          "c1_nom_5_c": "خيار لا معنى له."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "adopción"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_nom_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق هذه العبارة الاسمية المكثفة بنبرة مذيع إخباري محترف.",
+        "stemEs": "La rápida adopción de medidas evitó el colapso del sistema.",
+        "stemAr": "إن التبني السريع للإجراءات جنّب المنظومة خطر الانهيار.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-nom-speak-1",
+          "modelAnswer": "La rápida adopción de medidas evitó el colapso del sistema."
+        },
+        "explanationAr": "لاحظ الوقف الإيقاعي بعد كلمة medidas، والنبرة الصحيحة لكلمة adopción على المقطع المنتهي بـ -ción المنبور.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "adopción"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق adopción مع النبر على مقطع -ción",
+              "weight": 50,
+              "code": "stress_adopcion"
+            },
+            {
+              "labelAr": "سلاسة الربط الصوتي في عبارة evitó el colapso",
+              "weight": 50,
+              "code": "fluency_evito"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula C1 وEn Vocabulario C1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم أسلوب الاسمية الأكاديمية والصحفية بمقارنة مباشرة مع المصدر الصريح في العربية."
+    }
+  }
+}

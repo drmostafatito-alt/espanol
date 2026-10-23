@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-precision-estilistica",
+    "titleAr": "الدقة الأسلوبية وبلاغة المفردات: Precisión estilística",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u1-style",
+    "objectiveAr": "أن يستبدل المتعلم الأفعال العامة المبتذلة (hacer, decir, tener, poner) بأفعال دقيقة وبليغة (formular, manifestar, desempeñar, suscitar) تلائم الخطاب الأكاديمي والمهني الرفيع في مستوى C1.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "desempeñar",
+      "suscitar",
+      "formular",
+      "manifestar",
+      "precisión",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "tiempo",
+      "sociedad",
+      "bien"
+    ],
+    "targetStructures": [
+      "Sustitución de 'hacer': desempeñar un cargo, formular una pregunta",
+      "Sustitución de 'decir': manifestar su desacuerdo, alegar razones",
+      "Sustitución de 'poner': suscitar dudas, infligir daños"
+    ],
+    "grammarTopics": [
+      "precision-lexica-c1",
+      "registro-formal-y-academico"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "اجتماع لمجلس أمناء مؤسسة أبحاث أكاديمية لمناقشة الصياغة النهائية للتقرير السنوي.",
+        "settingAr": "قاعة الاجتماعات الكبرى في الأكاديمية الملكية، مدريد",
+        "lines": [
+          {
+            "es": "El borrador inicial contiene demasiados verbos genéricos y expresiones coloquiales.",
+            "ar": "المسودة الأولية تتضمن الكثير من الأفعال العامة والتعبيرات الدارجة.",
+            "arEg": "المسودة الأولى فيها أفعال عامة كتيرة وأسلوبها مش أكاديمي كفاية.",
+            "audioKey": "pending/c1-prec-reunion-1"
+          },
+          {
+            "es": "Es verdad; en lugar de 'hacer una queja', debemos formular una reclamación formal.",
+            "ar": "هذا صحيح؛ فبدلاً من 'عمل شكوى'، يتعين علينا صياغة مطالبة رسمية.",
+            "arEg": "تمام؛ بدل ما نقول 'عمل شكوى'، الأصح نصيغ شكوى رسمية معتبرة.",
+            "audioKey": "pending/c1-prec-reunion-2"
+          },
+          {
+            "es": "Asimismo, conviene manifestar nuestro profundo agradecimiento a los patrocinadores.",
+            "ar": "كذلك، يجدر بنا الإعراب عن شكرنا العميق للرعاة والداعمين.",
+            "arEg": "وكمان لازم نعرب عن شكرنا الكبير للجهات الراعية للمشروع.",
+            "audioKey": "pending/c1-prec-reunion-3"
+          },
+          {
+            "es": "Ese nivel de precisión léxica confiere un rigor intachable a todo el documento.",
+            "ar": "هذا المستوى من الدقة اللفظية يضفي رصانة لا تشوبها شائبة على الوثيقة بأكملها.",
+            "arEg": "المستوى ده من الدقة في الكلام بيدي رصانة وهيبة كبيرة للتقرير كله.",
+            "audioKey": "pending/c1-prec-reunion-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "c1_prec_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الأكاديمي ولاحظ كيف استبدل الفعل العام بتعبير بليغ رفيع.",
+        "audioKey": "pending/c1-prec-reunion-2",
+        "speechEs": "Es verdad; en lugar de 'hacer una queja', debemos formular una reclamación formal.",
+        "options": [
+          {
+            "id": "c1_prec_1_a",
+            "text": "Formular una reclamación formal",
+            "isCorrect": true,
+            "textAr": "صياغة مطالبة رسمية بدقة"
+          },
+          {
+            "id": "c1_prec_1_b",
+            "text": "Gritar muy fuerte en la calle",
+            "isCorrect": false,
+            "textAr": "الصراخ بصوت عال في الشارع",
+            "distractorRationaleAr": "أسلوب سوقي لم يرد في التسجيل."
+          },
+          {
+            "id": "c1_prec_1_c",
+            "text": "Olvidar el problema y no hacer nada",
+            "isCorrect": false,
+            "textAr": "نسيان المشكلة وعدم اتخاذ أي إجراء",
+            "distractorRationaleAr": "مناقض لما ورد في الحوار الأكاديمي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_prec_1_a"
+          ]
+        },
+        "explanationAr": "استخدم المتحدث الفعل الدقيق «formular» بديلاً عن الفعل العام المبتذل hacer عند الحديث عن الشكاوى والمطالبات الرسمية.",
+        "errorFeedback": {
+          "c1_prec_1_b": "لم يقل الصراخ في الشارع.",
+          "c1_prec_1_c": "لم يقل نسيان المشكلة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "formular",
+          "precisión"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_prec_2_verb_hacer",
+        "type": "word_choice",
+        "instructionAr": "ما هو البديل البلاغي الأكاديمي الرفيع لعبارة «hacer una pregunta»؟",
+        "options": [
+          {
+            "id": "c1_prec_2_a",
+            "text": "Formular una pregunta",
+            "isCorrect": true,
+            "textAr": "طرح وسياقة السؤال بدقة (formular)"
+          },
+          {
+            "id": "c1_prec_2_b",
+            "text": "Decir una pregunta",
+            "isCorrect": false,
+            "textAr": "قول السؤال",
+            "distractorRationaleAr": "تعبير ركيك غير دقيق أسلوبياً."
+          },
+          {
+            "id": "c1_prec_2_c",
+            "text": "Poner una pregunta",
+            "isCorrect": false,
+            "textAr": "وضع السؤال",
+            "distractorRationaleAr": "غير مستخدم إطلاقاً في الإسبانية الفصيحة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_prec_2_a"
+          ]
+        },
+        "explanationAr": "الفعل «formular» هو الاختيار الأسلوبي الأرقى في الإسبانية مع الأسئلة والفرضيات (formular una hipótesis / una pregunta).",
+        "errorFeedback": {
+          "c1_prec_2_b": "Decir una pregunta ركيكة.",
+          "c1_prec_2_c": "Poner una pregunta غير صحيحة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "formular"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_prec_3_fill_cargo",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالفعل الأسلوبي الدقيق لتولي المناصب: «شغل المنصب باقتدار».",
+        "stemEs": "La catedrática pasó a ____ el cargo de decana con gran prestigio.",
+        "stemAr": "تولت الأستاذة الجامعية شغل منصب العميدة بهيبة وتقدير واسع.",
+        "answerKey": {
+          "accepted": [
+            "desempeñar",
+            "ejercer"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع المناصب والوظائف المرموقة، لا نستخدم hacer بل نستخدم الفعل الراقي «desempeñar un cargo» أو «ejercer».",
+        "errorFeedback": {
+          "hacer": "مع المناصب الرسمية نستخدم الفعل البليغ desempeñar أو ejercer.",
+          "tener": "tener فعل عام سطحي لا يعبر عن ممارسة المنصب بنشاط."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "desempeñar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_prec_4_fill_interes",
+        "type": "fill_blank",
+        "instructionAr": "أكمل بالفعل البلاغي الدقيق لإثارة الاهتمام والجدل في الأوساط العلمية.",
+        "stemEs": "La ponencia logró ____ un debate apasionado entre los asistentes.",
+        "stemAr": "نجحت المحاضرة في إثارة نقاش محتدم بين الحاضرين.",
+        "answerKey": {
+          "accepted": [
+            "suscitar",
+            "despertar",
+            "provocar"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع النقاشات والشكوك والمشاعر، نستخدم الفعل البليغ «suscitar» (suscitar dudas / debate) بدلاً من الأفعال الشائعة المبتذلة.",
+        "errorFeedback": {
+          "hacer": "hacer un debate ركيكة جداً في مستوى C1.",
+          "poner": "poner un debate غير صحيحة لغوياً."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "suscitar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_prec_5_collocation_choice",
+        "type": "word_choice",
+        "instructionAr": "ما هو الفعل الأدق لغوياً للتعبير عن إلحاق الضرر أو الخسارة الجسيمة في التقارير؟",
+        "options": [
+          {
+            "id": "c1_prec_5_a",
+            "text": "Infligir u ocasionar daños",
+            "isCorrect": true,
+            "textAr": "إلحاق أو تسبيب الأضرار (infligir / ocasionar)"
+          },
+          {
+            "id": "c1_prec_5_b",
+            "text": "Fabricar daños graves",
+            "isCorrect": false,
+            "textAr": "صناعة أضرار",
+            "distractorRationaleAr": "fabricar تخص المنتجات المادية ولا تصح مع الأضرار."
+          },
+          {
+            "id": "c1_prec_5_c",
+            "text": "Construir perjuicios",
+            "isCorrect": false,
+            "textAr": "بناء أضرار",
+            "distractorRationaleAr": "تناقض لغوي فج؛ البناء نقيض الأضرار."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_prec_5_a"
+          ]
+        },
+        "explanationAr": "المصاحبة اللفظية الأرقى في النصوص القانونية والصحفية هي «infligir daños» (إلحاق أضرار) أو «ocasionar pérdidas».",
+        "errorFeedback": {
+          "c1_prec_5_b": "fabricar لا تصح مع المعنويات.",
+          "c1_prec_5_c": "construir لا تناسب الأضرار."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "rigor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_prec_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق هذه الجملة الأكاديمية بنبرة رصينة ومخارج حروف واضحة.",
+        "stemEs": "El informe suscita serias dudas sobre la viabilidad del plan.",
+        "stemAr": "يثير التقرير شكوكاً جدية حول جدوى الخطة الاقتصادية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-prec-speak-1",
+          "modelAnswer": "El informe suscita serias dudas sobre la viabilidad del plan."
+        },
+        "explanationAr": "انتبه لنطق حرف c في suscita كحرف ثاء لثوي في النطق القشتالي، وإبراز النبرة على مقطع -bi- في viabilidad.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "suscitar",
+          "rigor"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق حرف c في suscita بصوت الثاء القشتالي",
+              "weight": 50,
+              "code": "ceceo_suscita"
+            },
+            {
+              "labelAr": "سلامة نبر viabilidad على المقطع الأخير -dad",
+              "weight": 50,
+              "code": "stress_viabilidad"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula C1 وEn Vocabulario C1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يركز على الرقي الأسلوبي واستبدال الأفعال العامة بألفاظ بليغة في مستوى C1."
+    }
+  }
+}

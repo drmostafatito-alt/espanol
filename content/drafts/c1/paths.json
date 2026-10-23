@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": "C1",
+      "category": "core",
+      "objectiveAr": "المسار الأساسي للمستوى C1.",
+      "units": [
+        {
+          "slug": "c1-u1-style",
+          "levelCode": "C1",
+          "titleAr": "الدقة الأسلوبية والتعبير المتقدم",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "c1-precision-estilistica",
+            "c1-nominalizacion",
+            "c1-refranes-modismos",
+            "c1-correspondencia-formal"
+          ],
+          "vocabularyBundles": []
+        }
+      ]
+    }
+  ]
+}

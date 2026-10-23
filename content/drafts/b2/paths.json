@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": "B2",
+      "category": "core",
+      "objectiveAr": "المسار الأساسي للمستوى B2.",
+      "units": [
+        {
+          "slug": "b2-u1-argument",
+          "levelCode": "B2",
+          "titleAr": "بناء الحجة والشرط الافتراضي",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "b2-condicional-imperfecto-subjuntivo",
+            "b2-conectores-argumentativos",
+            "b2-matizar-opiniones",
+            "b2-contraargumentacion"
+          ],
+          "vocabularyBundles": []
+        }
+      ]
+    }
+  ]
+}

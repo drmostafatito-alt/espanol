@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": "A2",
+      "category": "core",
+      "objectiveAr": "المسار الأساسي للمستوى A2.",
+      "units": [
+        {
+          "slug": "a2-u2-past",
+          "levelCode": "A2",
+          "titleAr": "الحكاية في الماضي",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "a2-indefinido-regular",
+            "a2-indefinido-irregular",
+            "a2-imperfecto-habitos",
+            "a2-indefinido-vs-imperfecto"
+          ],
+          "vocabularyBundles": []
+        }
+      ]
+    }
+  ]
+}

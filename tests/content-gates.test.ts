@@ -12,7 +12,16 @@ import { buildContentPlan } from '../tools/lib/content-plan.mjs';
 import { validateCurriculum } from '../tools/lib/curriculum.mjs';
 
 const ROOT = process.cwd();
-const CONTENT_DIRS = ['content/drafts/a1', 'content/drafts/core-vocab', 'content/drafts/travel', 'content/drafts/callcenter'];
+const CONTENT_DIRS = [
+  'content/drafts/a1',
+  'content/drafts/a2',
+  'content/drafts/b1',
+  'content/drafts/b2',
+  'content/drafts/c1',
+  'content/drafts/core-vocab',
+  'content/drafts/travel',
+  'content/drafts/callcenter'
+];
 const AUDIO_TYPES = new Set(['listen_choose', 'dictation', 'identify_speaker', 'reconstruct_audio_sentence']);
 
 function walk(dir: string): string[] {
