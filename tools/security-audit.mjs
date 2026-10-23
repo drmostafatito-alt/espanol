@@ -22,12 +22,20 @@ const SKIP_BUILD = args.includes('--skip-build');
 
 const stripAnsi = (t) => t.replace(/\u001b\[[0-9;]*m/g, '');
 
-function run(label, cmd, { timeout = 300_000, allowFail = false } = {}) {
+function run(label, cmd, opts = {}) {
+  const { timeout = 300_000, allowFail = false, env } = opts;
   const started = Date.now();
-  // 2>&1 ضروري: vitest وtsc يكتبان النتائج على stderr، وبدونه يخرج التفصيل فارغًا
-  const shellCmd = cmd + ' 2>&1';
+  const shellCmd = cmd;
   try {
-    const out = execSync(shellCmd, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout, shell: '/bin/bash' });
+    const isWin = process.platform === 'win32';
+    const out = execSync(shellCmd, {
+      cwd: ROOT,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+      timeout,
+      shell: isWin ? true : '/bin/bash',
+      env: env ? { ...process.env, ...env } : process.env
+    });
     return { label, cmd, ok: true, code: 0, out: stripAnsi(out).trim(), ms: Date.now() - started };
   } catch (err) {
     const res = { label, cmd, ok: false, code: err.status ?? 1, out: stripAnsi(String(err.stdout ?? '')).trim(), ms: Date.now() - started };
@@ -66,11 +74,11 @@ if (live) {
 
 // حواجز أدوات قاعدة البيانات: يجب أن ترفض كل محاولة مسّ بعيد
 const guards = [
-  ['رفض --remote', 'node tools/db.mjs status --remote'],
-  ['رفض ENVIRONMENT=production', 'ENVIRONMENT=production node tools/db.mjs status'],
+  ['رفض --remote', 'node tools/db.mjs status --remote', {}],
+  ['رفض ENVIRONMENT=production', 'node tools/db.mjs status', { env: { ENVIRONMENT: 'production' } }],
 ];
-for (const [label, cmd] of guards) {
-  const r = run(`حاجز قاعدة البيانات: ${label}`, cmd, { allowFail: true });
+for (const [label, cmd, opt] of guards) {
+  const r = run(`حاجز قاعدة البيانات: ${label}`, cmd, { ...opt, allowFail: true });
   // النجاح هنا يعني رمز خروج 2 (رفض مقصود)
   results.push({ ...r, ok: r.code === 2, out: r.code === 2 ? 'رُفض بنجاح (exit 2)' : r.out.slice(0, 200) });
 }
