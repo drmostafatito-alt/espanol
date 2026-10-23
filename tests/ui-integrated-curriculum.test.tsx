@@ -29,6 +29,7 @@ function importDraftDir(harness: Harness, relDir: string) {
 beforeEach(async () => {
   h = makeHarness({ ALLOW_UNREVIEWED_CONTENT: 'true', ALLOW_PUBLIC_SIGNUP: 'true' });
   // استيراد الدروس المدمجة عبر جميع المستويات
+  importDraftDir(h, 'content/drafts/a1');
   importDraftDir(h, 'content/drafts/a2');
   importDraftDir(h, 'content/drafts/b1');
   importDraftDir(h, 'content/drafts/b2');
@@ -161,5 +162,83 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     const submitData = await h.json<any>(submitRes);
     expect(submitData.correct).toBe(true);
     expect(submitData.explanationAr).toContain('había salido');
+  });
+
+  it('وحدة العائلة A1 (a1-mi-familia) تُسلَّم جلساتها وتصحح تمارين القرابة بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_fam@example.com');
+    const res = await h.call('/api/lessons/a1-mi-familia/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أفراد العائلة');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-mi-familia/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'madre',
+        eventId: 'evt_test_fam_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('madre');
+  });
+
+  it('وحدة الأرقام والوقت A1 (a1-numeros-20-100) تُسلَّم جلساتها وتصحح إجابة الأرقام بدقة', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_num@example.com');
+    const res = await h.call('/api/lessons/a1-numeros-20-100/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الأرقام من 20 إلى 100');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-numeros-20-100/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'cuarenta',
+        eventId: 'evt_test_num_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('cuarenta');
+  });
+
+  it('وحدة الطعام والشراب A1 (a1-vocabulario-comida) تُسلَّم جلساتها وتصحح مفردات الخبز والطعام', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_comida@example.com');
+    const res = await h.call('/api/lessons/a1-vocabulario-comida/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('مفردات الطعام والشراب');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-vocabulario-comida/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'pan',
+        eventId: 'evt_test_com_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('pan');
   });
 });

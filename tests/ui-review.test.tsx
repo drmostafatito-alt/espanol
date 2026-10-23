@@ -5,7 +5,7 @@
  * وقائمة الانتظار المحلية عند فشل الشبكة (ثم تفريغها عند عودة الاتصال).
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, render, screen, waitFor } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Review } from '../src/web/pages/Review';
 import { AuthProvider } from '../src/web/state';
@@ -114,11 +114,13 @@ describe('شاشة المراجعة', () => {
     render(<AuthProvider><Review navigate={() => {}} /></AuthProvider>);
     await waitFor(() => expect(screen.getByTestId('review-card')).toBeTruthy());
 
-    window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ' }));
-    await waitFor(() => expect(screen.getByTestId('review-answer')).toBeTruthy());
-
-    window.dispatchEvent(new KeyboardEvent('keydown', { key: '3' }));
     await waitFor(() => {
+      fireEvent.keyDown(window, { key: ' ' });
+      expect(screen.getByTestId('review-answer')).toBeTruthy();
+    });
+
+    await waitFor(() => {
+      fireEvent.keyDown(window, { key: '3' });
       const n = (h.db.raw.prepare('SELECT COUNT(*) AS n FROM srs_reviews').get() as { n: number }).n;
       expect(n).toBe(1);
     });

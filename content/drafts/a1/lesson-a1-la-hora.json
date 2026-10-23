@@ -1,0 +1,369 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-la-hora",
+    "titleAr": "الساعة والوقت: السؤال عن الوقت والإخبار به",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u3-numbers-time",
+    "objectiveAr": "أن يسأل المتعلم عن الوقت باستخدام ¿Qué hora es? ويخبر به بدقة مستخدماً Es la una و Son las dos... مع الكسور (y cuarto, y media, menos cuarto).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "grammar",
+      "vocabulary",
+      "reading"
+    ],
+    "newVocabulary": [
+      "hora",
+      "tiempo",
+      "minuto",
+      "tarde",
+      "mañana",
+      "noche"
+    ],
+    "reviewVocabulary": [
+      "uno",
+      "dos",
+      "tres",
+      "cuatro",
+      "cinco"
+    ],
+    "targetStructures": [
+      "¿Qué hora es? — Es la una en punto.",
+      "Son las tres y media.",
+      "Son las cinco menos cuarto."
+    ],
+    "grammarTopics": [
+      "la-hora-ser",
+      "es-la-una-vs-son-las",
+      "expresiones-cuarto-media"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عمر يسأل زميلته الإسبانية صوفيا في محطة المترو عن الوقت لكي لا يفوته موعد القطار.",
+        "settingAr": "رصيف محطة المترو في مدريد",
+        "lines": [
+          {
+            "es": "Perdona, Sofía, ¿tienes hora? ¿Qué hora es?",
+            "ar": "معذرة يا صوفيا، كم الساعة الآن؟",
+            "arEg": "لو سمحتي يا صوفيا، الساعة كام دلوقتي؟",
+            "audioKey": "pending/a1-hor-sc-1"
+          },
+          {
+            "es": "Sí, mira, son las tres y cuarto.",
+            "ar": "نعم، انظر، إنها الثالثة والربع.",
+            "arEg": "أيوه، بص، الساعة تلاتة وربع.",
+            "audioKey": "pending/a1-hor-sc-2"
+          },
+          {
+            "es": "¡Perfecto! Nuestro tren sale a las tres y media.",
+            "ar": "ممتاز! قطارنا يغادر في الثالثة والنصف.",
+            "arEg": "تمام جداً! القطر بتاعنا هيطلع تلاتة ونص.",
+            "audioKey": "pending/a1-hor-sc-3"
+          },
+          {
+            "es": "Tenemos quince minutos todavía.",
+            "ar": "ما زال لدينا خمس عشرة دقيقة.",
+            "arEg": "معانا لسه ربع ساعة.",
+            "audioKey": "pending/a1-hor-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في الثقافة الإسبانية، يُستخدم 'Es la una' فقط مع الساعة الواحدة لأنها مفرد مؤنث (la una)، بينما يُستخدم 'Son las...' مع جميع الساعات الأخرى (Son las dos, Son las tres...). كما يُستخدم 'menos cuarto' للتعبير عن 'إلا ربع'.",
+    "pedagogicalRationaleAr": "يقع المتعلم العربي كثيراً في خطأ استخدام 'Son' مع الساعة الواحدة (مثل *Son la una)، أو نسيان أداة التعريف (مثل *Son dos). القاعدة الصارمة: الساعة 1 مفرد (Es la una)، ومن 2 فصاعداً جمع (Son las...).",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_hor_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى المحادثة وحدد التوقيت المذكور.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للإخبار عن الوقت:",
+        "stemEs": "Ahora mismo son las tres y media.",
+        "stemAr": "في الوقت الحالي الساعة الثالثة والنصف.",
+        "options": [
+          {
+            "id": "a1_hor_1_a",
+            "text": "Son las tres y media",
+            "textAr": "الثالثة والنصف (03:30)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hor_1_b",
+            "text": "Son las tres y cuarto",
+            "textAr": "الثالثة والربع (03:15)",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا التوقيت هو y cuarto (والربع)، بينما الصوت قال y media (والنصف)."
+          },
+          {
+            "id": "a1_hor_1_c",
+            "text": "Son las dos y media",
+            "textAr": "الثانية والنصف (02:30)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر las tres (الثالثة)، وليس las dos."
+          }
+        ],
+        "targetVocab": [
+          "hora",
+          "tres"
+        ],
+        "explanationAr": "التعبير son las tres y media يعني الثالثة والنصف بدقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-hor-ex-1",
+        "speechEs": "Ahora mismo son las tres y media.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hor_1_a"
+          ],
+          "selectedOptionId": "a1_hor_1_a"
+        },
+        "errorFeedback": {
+          "a1_hor_1_b": "هذا التوقيت هو y cuarto (والربع)، بينما الصوت قال y media (والنصف).",
+          "a1_hor_1_c": "الصوت ذكر las tres (الثالثة)، وليس las dos."
+        }
+      },
+      {
+        "id": "a1_hor_2_verb_ser",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل المناسبة للساعة الواحدة تماماً.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نقول بالإسبانية: «إنها الساعة الواحدة تماماً»؟",
+        "stemEs": "____ la una en punto.",
+        "stemAr": "____ الواحدة تماماً.",
+        "options": [
+          {
+            "id": "a1_hor_2_a",
+            "text": "Es",
+            "textAr": "إنها (للمفرد)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hor_2_b",
+            "text": "Son",
+            "textAr": "إنها (للجمع)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: الساعة الواحدة مفرد وتأخذ Es la una، بينما Son تُستخدم من الساعة الثانية فصاعداً."
+          },
+          {
+            "id": "a1_hor_2_c",
+            "text": "Está",
+            "textAr": "يوجد/يكون للمكان",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل estar لا يُستخدم للإخبار عن الوقت إطلاقاً."
+          }
+        ],
+        "targetVocab": [
+          "hora",
+          "uno"
+        ],
+        "explanationAr": "الساعة الواحدة مفرد وتأخذ صيغة المفرد Es la una، أما بقية الساعات فتأخذ صيغة الجمع Son las...",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hor_2_a"
+          ],
+          "selectedOptionId": "a1_hor_2_a"
+        },
+        "errorFeedback": {
+          "a1_hor_2_b": "خطأ: الساعة الواحدة مفرد وتأخذ Es la una، بينما Son تُستخدم من الساعة الثانية فصاعداً.",
+          "a1_hor_2_c": "الفعل estar لا يُستخدم للإخبار عن الوقت إطلاقاً."
+        }
+      },
+      {
+        "id": "a1_hor_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل سؤال الساعة بالكلمة الصحيحة.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة للسؤال عن الوقت: «كم الساعة؟»",
+        "stemEs": "¿Qué ____ es, por favor?",
+        "stemAr": "كم ____ الآن من فضلك؟",
+        "targetVocab": [
+          "hora",
+          "tiempo"
+        ],
+        "explanationAr": "السؤال القياسي عن الوقت في الإسبانية هو دائماً: ¿Qué hora es?",
+        "answerKey": {
+          "accepted": [
+            "hora"
+          ],
+          "acceptableAnswers": [
+            "hora"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hor_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لقول: «إنها الرابعة إلا ربعاً».",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_hor_4_order_t1",
+            "kind": "token",
+            "text": "Son"
+          },
+          {
+            "id": "a1_hor_4_order_t2",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "a1_hor_4_order_t3",
+            "kind": "token",
+            "text": "cuatro"
+          },
+          {
+            "id": "a1_hor_4_order_t4",
+            "kind": "token",
+            "text": "menos"
+          },
+          {
+            "id": "a1_hor_4_order_t5",
+            "kind": "token",
+            "text": "cuarto."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Son las cuatro menos cuarto."
+          ],
+          "tokenOrder": [
+            "a1_hor_4_order_t1",
+            "a1_hor_4_order_t2",
+            "a1_hor_4_order_t3",
+            "a1_hor_4_order_t4",
+            "a1_hor_4_order_t5"
+          ]
+        },
+        "explanationAr": "التركيب المعياري للوقت: الفعل الجمع Son + الأداة las + العدد cuatro + صيغة الاستثناء menos cuarto.",
+        "targetVocab": [
+          "cuatro",
+          "hora"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hor_5_period",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفترة الزمنية المناسبة لوقت الظهيرة وما بعدها.",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "عندما تكون الساعة الخامسة عصراً، نقول: Son las cinco de la...",
+        "stemEs": "Son las cinco de la ____.",
+        "stemAr": "إنها الخامسة من بعد الـ____.",
+        "options": [
+          {
+            "id": "a1_hor_5_a",
+            "text": "tarde",
+            "textAr": "الظهيرة / العصر",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hor_5_b",
+            "text": "mañana",
+            "textAr": "الصباح",
+            "isCorrect": false,
+            "distractorRationaleAr": "mañana تعني الصباح الباكر وقبل الظهر."
+          },
+          {
+            "id": "a1_hor_5_c",
+            "text": "noche",
+            "textAr": "الليل",
+            "isCorrect": false,
+            "distractorRationaleAr": "noche تعني الليل بعد غروب الشمس."
+          }
+        ],
+        "targetVocab": [
+          "tarde",
+          "mañana",
+          "noche"
+        ],
+        "explanationAr": "فترة الظهيرة والمساء حتى غروب الشمس يُطلق عليها بالإسبانية: la tarde.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hor_5_a"
+          ],
+          "selectedOptionId": "a1_hor_5_a"
+        },
+        "errorFeedback": {
+          "a1_hor_5_b": "mañana تعني الصباح الباكر وقبل الظهر.",
+          "a1_hor_5_c": "noche تعني الليل بعد غروب الشمس."
+        }
+      },
+      {
+        "id": "a1_hor_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الإخبار بالساعة بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت مسموع وواضح للإخبار بأن الساعة هي الثانية والربع:",
+        "stemEs": "Son las dos y cuarto de la tarde.",
+        "stemAr": "إنها الثانية والربع بعد الظهر.",
+        "audioKey": "pending/a1-hor-ex-6",
+        "targetVocab": [
+          "dos",
+          "tarde"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في dos وربط الكلمات بسلاسة: Son las dos y cuarto.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-hor-ex-6",
+          "modelAnswer": "Son las dos y cuarto de la tarde."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

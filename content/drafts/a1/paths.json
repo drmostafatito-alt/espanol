@@ -40,6 +40,34 @@
             "a1-describir-persona"
           ],
           "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u3-numbers-time",
+          "levelCode": "A1",
+          "titleAr": "الأرقام والوقت والمواعيد",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "a1-numeros-20-100",
+            "a1-la-hora",
+            "a1-dias-meses",
+            "a1-cita"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u4-food-drink",
+          "levelCode": "A1",
+          "titleAr": "الطعام والشراب والأسعار",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "a1-vocabulario-comida",
+            "a1-pedir-en-cafe",
+            "a1-precios-cuentas",
+            "a1-gustar"
+          ],
+          "vocabularyBundles": []
         }
       ]
     }

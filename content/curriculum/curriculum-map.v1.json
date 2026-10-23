@@ -404,49 +404,73 @@
               "lessons": [
                 {
                   "slug": "a1-numeros-20-100",
-                  "titleAr": "الأرقام من 20 إلى 100",
-                  "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام حتى 100 ويفهم سعرًا.",
+                  "titleAr": "الأرقام من 20 إلى 100: تركيب الأعداد والأسعار البسيطة",
+                  "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام من 20 إلى 100، مع إتقان دمج العشرينيات ككلمة واحدة (veinticinco) وفصل ما بعدها بحرف العطف y (treinta y uno) وفهم الأسعار البسيطة.",
                   "skills": [
                     "vocabulary",
-                    "listening"
+                    "listening",
+                    "reading",
+                    "writing",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-numeros-20-100.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-la-hora",
-                  "titleAr": "الساعة والوقت",
-                  "objectiveAr": "أن يسأل المتعلم ¿Qué hora es? ويجيب بالساعة الكاملة والنصف.",
+                  "titleAr": "الساعة والوقت: السؤال عن الوقت والإخبار به",
+                  "objectiveAr": "أن يسأل المتعلم عن الوقت باستخدام ¿Qué hora es? ويخبر به بدقة مستخدماً Es la una و Son las dos... مع الكسور (y cuarto, y media, menos cuarto).",
                   "skills": [
-                    "listening",
                     "speaking",
-                    "grammar"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-dias-meses",
-                  "titleAr": "أيام الأسبوع والشهور",
-                  "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور ويحدد يومًا.",
-                  "skills": [
+                    "listening",
+                    "grammar",
                     "vocabulary",
                     "reading"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-la-hora.json",
+                  "requires": [
+                    "a1-numeros-20-100"
+                  ]
+                },
+                {
+                  "slug": "a1-dias-meses",
+                  "titleAr": "أيام الأسبوع والشهور: المذكر والتكرار وتحديد التواريخ",
+                  "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور، ويستخدم أداة التعريف المذكرة el/los للتعبير عن المواعيد والتكرار وحرف الجر en مع الشهور بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "grammar",
+                    "reading",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-dias-meses.json",
+                  "requires": [
+                    "a1-la-hora"
+                  ]
                 },
                 {
                   "slug": "a1-cita",
-                  "titleAr": "تحديد موعد",
-                  "objectiveAr": "أن يتفق المتعلم على موعد بسيط (¿A qué hora quedamos?) ويؤكده.",
+                  "titleAr": "تحديد موعد: الاتفاق والتأكيد والمكان",
+                  "objectiveAr": "أن يتفق المتعلم على موعد مع صديق أو زميل مستخدماً ¿A qué hora quedamos? والرد بـ A las... مع استعمال حرف الجر a مع ساعات المواعيد.",
                   "skills": [
                     "speaking",
                     "listening",
-                    "writing"
+                    "reading",
+                    "writing",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-cita.json",
+                  "requires": [
+                    "a1-dias-meses"
+                  ]
                 }
               ]
             },
@@ -459,48 +483,73 @@
               "lessons": [
                 {
                   "slug": "a1-vocabulario-comida",
-                  "titleAr": "مفردات الطعام والشراب",
-                  "objectiveAr": "أن يتعرّف المتعلم على أسماء طعام وشراب شائعة مع أداة التعريف الصحيحة.",
+                  "titleAr": "مفردات الطعام والشراب: تصنيف المأكولات والمشروبات الأساسية",
+                  "objectiveAr": "أن يتعرّف المتعلم على أسماء الأطعمة والمشروبات الأساسية في الحياة اليومية مع أداة التعريف المناسبة ومراعاة جنس الكلمة (el pan, el agua, la leche...).",
                   "skills": [
                     "vocabulary",
-                    "reading"
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-vocabulario-comida.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-pedir-en-cafe",
-                  "titleAr": "الطلب في مقهى",
-                  "objectiveAr": "أن يطلب المتعلم مشروبًا بأدب (quisiera / para mí) ويفهم ردّ النادل.",
+                  "titleAr": "الطلب في المقهى والمطعم: الأسلوب المهذب والتعبير عن الرغبة",
+                  "objectiveAr": "أن يطلب المتعلم طعاماً أو شراباً في مقهى بأسلوب مهذب مستخدماً Para mí, por favor أو Quisiera un café، ويفهم أسئلة النادل الشائعة.",
                   "skills": [
+                    "speaking",
                     "listening",
-                    "speaking"
+                    "vocabulary",
+                    "reading",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-pedir-en-cafe.json",
+                  "requires": [
+                    "a1-vocabulario-comida"
+                  ]
                 },
                 {
                   "slug": "a1-precios-cuentas",
-                  "titleAr": "الأسعار والحساب",
-                  "objectiveAr": "أن يسأل المتعلم ¿Cuánto cuesta? ويفهم الإجمالي ويكتب رقمًا.",
+                  "titleAr": "الأسعار والحساب: السؤال عن الثمن وطلب الفاتورة",
+                  "objectiveAr": "أن يسأل المتعلم عن سعر الأشياء بـ ¿Cuánto cuesta / cuestan? ويطلب الحساب بـ La cuenta, por favor ويفهم الإجمالي بالأرقام واليورو.",
                   "skills": [
                     "listening",
                     "writing",
-                    "vocabulary"
+                    "vocabulary",
+                    "speaking",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-precios-cuentas.json",
+                  "requires": [
+                    "a1-pedir-en-cafe"
+                  ]
                 },
                 {
                   "slug": "a1-gustar",
-                  "titleAr": "التفضيل: me gusta",
-                  "objectiveAr": "أن يعبّر المتعلم عمّا يحبه من طعام بفعل gustar بصيغتيه.",
+                  "titleAr": "التفضيل والإعجاب: استخدام الفعل Gustar مع المفرد والجمع",
+                  "objectiveAr": "أن يعبّر المتعلم عمّا يحبه وما لا يحبه من أطعمة ومشروبات باستخدام me gusta مع المفرد وme gustan مع الجمع، وفهم بنية الفاعل والمفعول في الفعل gustar.",
                   "skills": [
                     "grammar",
-                    "speaking"
+                    "speaking",
+                    "listening",
+                    "reading",
+                    "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-gustar.json",
+                  "requires": [
+                    "a1-precios-cuentas"
+                  ]
                 }
               ]
             },
