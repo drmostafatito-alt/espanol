@@ -319,54 +319,79 @@
             {
               "slug": "a1-u2-family",
               "titleAr": "العائلة والأصدقاء",
-              "objectiveAr": "أن يتحدث المتعلم عن أسرته وأصدقائه بجمل بسيطة ويصف صفة شخص.",
+              "objectiveAr": "أن يسمّي المتعلم أفراد الأسرة ويستخدم صفات الملكية mi/tu/su ويعبّر عن العمر ويصف شخصًا بدقة.",
               "levelCode": "A1",
               "plannedLessonCount": 4,
               "lessons": [
                 {
                   "slug": "a1-mi-familia",
-                  "titleAr": "أفراد العائلة",
-                  "objectiveAr": "أن يسمّي المتعلم أفراد أسرته ويستخدم mi/mis بشكل صحيح.",
+                  "titleAr": "أفراد العائلة: تسمية الأقارب واستخدام صفات الملكية mi و mis",
+                  "objectiveAr": "أن يسمّي المتعلم أفراد أسرته المباشرين ويستخدم صفات الملكية mi و mis بشكل صحيح ومطابق للمفرد والجمع.",
                   "skills": [
                     "vocabulary",
-                    "reading"
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-mi-familia.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-tener-anos",
-                  "titleAr": "العمر وحرف الجر tener",
-                  "objectiveAr": "أن يقول المتعلم عمره وعمر غيره مستخدمًا tener años.",
+                  "titleAr": "السؤال عن العمر والسنوات: استخدام الفعل Tener وتصريفه",
+                  "objectiveAr": "أن يسأل المتعلم عن العمر ويجيب عنه باستخدام فعل الملكية tener، ويتجنب الخطأ الشائع باستخدام فعل ser.",
                   "skills": [
                     "grammar",
-                    "writing"
+                    "writing",
+                    "listening",
+                    "speaking",
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-tener-anos.json",
+                  "requires": [
+                    "a1-mi-familia"
+                  ]
                 },
                 {
                   "slug": "a1-posesivos",
-                  "titleAr": "الملكية: mi, tu, su",
-                  "objectiveAr": "أن يفرّق المتعلم بين mi/tu/su في جمل عن العائلة.",
+                  "titleAr": "صفات الملكية: التمييز بين mi و tu و su وتوافقها مع الشيء المملوك",
+                  "objectiveAr": "أن يفرّق المتعلم بين صفات الملكية mi و tu و su في جمل عن العائلة والممتلكات، ويفهم قاعدة التوافق مع الشيء المملوك وليس المالك.",
                   "skills": [
                     "grammar",
-                    "reading"
+                    "reading",
+                    "writing",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-posesivos.json",
+                  "requires": [
+                    "a1-tener-anos"
+                  ]
                 },
                 {
                   "slug": "a1-describir-persona",
-                  "titleAr": "وصف شخص",
-                  "objectiveAr": "أن يصف المتعلم شخصًا بصفة واحدة (alto, simpático) مع مطابقة الجنس.",
+                  "titleAr": "وصف الأشخاص: السمات الجسدية والشخصية مع Ser ومطابقة الصفات",
+                  "objectiveAr": "أن يصف المتعلم شخصًا بالسمات الجسدية والشخصية (alto, simpático, inteligente, trabajador) مع مراعاة مطابقة الجنس والعدد.",
                   "skills": [
                     "writing",
                     "speaking",
-                    "grammar"
+                    "grammar",
+                    "reading",
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-describir-persona.json",
+                  "requires": [
+                    "a1-posesivos"
+                  ]
                 }
               ]
             },
