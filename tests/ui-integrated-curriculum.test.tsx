@@ -319,4 +319,82 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     expect(submitData.correct).toBe(true);
     expect(submitData.explanationAr).toContain('trabajo');
   });
+
+  it('وحدة أماكن المدينة A1 (a1-lugares-ciudad) تُسلَّم جلساتها وتصحح أسماء الأماكن بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_lugares@example.com');
+    const res = await h.call('/api/lessons/a1-lugares-ciudad/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أماكن في المدينة');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-lugares-ciudad/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'parque',
+        eventId: 'evt_test_lug_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('parque');
+  });
+
+  it('وحدة العمل والمهن A1 (a1-profesiones) تُسلَّم جلساتها وتصحح تأنيث المهن بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_prof@example.com');
+    const res = await h.call('/api/lessons/a1-profesiones/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('المهن والوظائف');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-profesiones/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'profesora',
+        eventId: 'evt_test_prof_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('profesora');
+  });
+
+  it('وحدة الصحة وأعضاء الجسم A1 (a1-cuerpo) تُسلَّم جلساتها وتصحح أسماء الأعضاء بنجاح', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_cuerpo@example.com');
+    const res = await h.call('/api/lessons/a1-cuerpo/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أعضاء الجسم');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-cuerpo/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'cabeza',
+        eventId: 'evt_test_cue_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('cabeza');
+  });
 });

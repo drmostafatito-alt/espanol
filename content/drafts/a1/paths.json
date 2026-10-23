@@ -110,6 +110,48 @@
             "a1-mi-dia"
           ],
           "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u8-places",
+          "levelCode": "A1",
+          "titleAr": "الأماكن والاتجاهات",
+          "sortOrder": 8,
+          "status": "draft",
+          "lessons": [
+            "a1-lugares-ciudad",
+            "a1-donde-esta",
+            "a1-direcciones",
+            "a1-transporte"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u9-work-study",
+          "levelCode": "A1",
+          "titleAr": "العمل والدراسة",
+          "sortOrder": 9,
+          "status": "draft",
+          "lessons": [
+            "a1-profesiones",
+            "a1-estudiar",
+            "a1-horario-trabajo",
+            "a1-presentacion-profesional"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u10-health-basics",
+          "levelCode": "A1",
+          "titleAr": "الصحة الأساسية والمساعدة",
+          "sortOrder": 10,
+          "status": "draft",
+          "lessons": [
+            "a1-cuerpo",
+            "a1-doler",
+            "a1-farmacia",
+            "a1-emergencia"
+          ],
+          "vocabularyBundles": []
         }
       ]
     }

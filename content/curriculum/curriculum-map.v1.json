@@ -799,50 +799,69 @@
               "lessons": [
                 {
                   "slug": "a1-lugares-ciudad",
-                  "titleAr": "أماكن في المدينة",
-                  "objectiveAr": "أن يسمّي المتعلم أماكن المدينة الشائعة.",
+                  "titleAr": "أماكن في المدينة: تسمية المعالم والمرافق العامة",
+                  "objectiveAr": "أن يسمّي المتعلم الأماكن العامة الأساسية في المدينة بدقة.",
                   "skills": [
                     "vocabulary",
                     "reading"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-lugares-ciudad.json",
+                  "titleEs": "Lugares en la ciudad",
+                  "requires": []
                 },
                 {
                   "slug": "a1-donde-esta",
-                  "titleAr": "أين يوجد؟",
-                  "objectiveAr": "أن يسأل المتعلم ¿Dónde está…? ويفهم الجواب.",
+                  "titleAr": "أين يوجد؟ السؤال عن الأماكن وتحديد موقعها بـ Está",
+                  "objectiveAr": "أن يسأل المتعلم عن الأماكن المحددة باستخدام ¿Dónde está...? أو ¿Dónde están...? بدقة.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-donde-esta.json",
+                  "titleEs": "¿Dónde está? Localizar lugares",
+                  "requires": [
+                    "a1-lugares-ciudad"
+                  ]
                 },
                 {
                   "slug": "a1-direcciones",
-                  "titleAr": "إعطاء اتجاه",
-                  "objectiveAr": "أن يعطي المتعلم اتجاهًا من خطوتين (a la derecha, todo recto).",
+                  "titleAr": "إعطاء الاتجاهات: الوصف خطوة بخطوة في الشارع",
+                  "objectiveAr": "أن يفهم المتعلم ويعطي اتجاهات سير واضحة من خطوتين أو ثلاث.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-direcciones.json",
+                  "titleEs": "Dar y pedir direcciones",
+                  "requires": [
+                    "a1-donde-esta"
+                  ]
                 },
                 {
                   "slug": "a1-transporte",
-                  "titleAr": "المواصلات",
-                  "objectiveAr": "أن يسأل المتعلم عن وسيلة مواصلات ويشتري تذكرة.",
+                  "titleAr": "المواصلات والتنقل: السؤال عن الوسيلة وشراء تذكرة",
+                  "objectiveAr": "أن يسمّي وسائل المواصلات الشائعة: metro, autobús, taxi, tren.",
                   "skills": [
                     "listening",
                     "speaking",
                     "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-transporte.json",
+                  "titleEs": "Los transportes y el billete",
+                  "requires": [
+                    "a1-direcciones"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             },
             {
               "slug": "a1-u9-work-study",
@@ -853,49 +872,68 @@
               "lessons": [
                 {
                   "slug": "a1-profesiones",
-                  "titleAr": "المهن",
-                  "objectiveAr": "أن يسمّي المتعلم مهنًا شائعة ويقول مهنته بـsoy/trabajo de.",
+                  "titleAr": "المهن والوظائف: التذكير والتأنيث والتعبير عن العمل بـ Ser و Trabajar de",
+                  "objectiveAr": "أن يسمّي المتعلم المهن الشائعة ويميز صيغ المذكر والمؤنث فيها.",
                   "skills": [
                     "vocabulary",
                     "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-profesiones.json",
+                  "titleEs": "Las profesiones: ser y trabajar de",
+                  "requires": []
                 },
                 {
                   "slug": "a1-estudiar",
-                  "titleAr": "الدراسة والمواد",
-                  "objectiveAr": "أن يتحدث المتعلم عمّا يدرسه ويستخدم estudiar.",
+                  "titleAr": "الدراسة والمواد الأكاديمية: استخدام Estudiar والمجالات الدراسية",
+                  "objectiveAr": "أن يصرف المتعلم الفعل القياسي estudiar في الحاضر بطلاقة مع جميع الضمائر.",
                   "skills": [
                     "reading",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-estudiar.json",
+                  "titleEs": "Los estudios y las asignaturas",
+                  "requires": [
+                    "a1-profesiones"
+                  ]
                 },
                 {
                   "slug": "a1-horario-trabajo",
-                  "titleAr": "الوقت في العمل",
-                  "objectiveAr": "أن يصف المتعلم ساعات عمله ويومه.",
+                  "titleAr": "الوقت في العمل: ساعات الدوام والروتين المهني",
+                  "objectiveAr": "أن يحدد ساعات دوامه اليومي باستخدام de... a... أو desde las... hasta las....",
                   "skills": [
                     "writing",
                     "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-horario-trabajo.json",
+                  "titleEs": "El horario de trabajo",
+                  "requires": [
+                    "a1-estudiar"
+                  ]
                 },
                 {
                   "slug": "a1-presentacion-profesional",
-                  "titleAr": "تقديم نفسي مهني",
-                  "objectiveAr": "أن يقدّم المتعلم نفسه في سياق مهني قصير.",
+                  "titleAr": "تقديم نفسي في سياق مهني: دمج الاسم والمهنة واللغات ومكان العمل",
+                  "objectiveAr": "أن يقدم المتعلم نبذة مهنية موجزة ومتماسكة عن نفسه باللغة الإسبانية.",
                   "skills": [
                     "speaking",
                     "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-presentacion-profesional.json",
+                  "titleEs": "Presentación profesional",
+                  "requires": [
+                    "a1-horario-trabajo"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             },
             {
               "slug": "a1-u10-health-basics",
@@ -906,49 +944,68 @@
               "lessons": [
                 {
                   "slug": "a1-cuerpo",
-                  "titleAr": "أعضاء الجسم",
-                  "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الأساسية.",
+                  "titleAr": "أعضاء الجسم الأساسية: أسماء الأعضاء والتذكير والتأنيث",
+                  "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الرئيسية بدقة مع تمييز جنس كل عضو.",
                   "skills": [
                     "vocabulary",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-cuerpo.json",
+                  "titleEs": "El cuerpo humano",
+                  "requires": []
                 },
                 {
                   "slug": "a1-doler",
-                  "titleAr": "الألم: me duele",
-                  "objectiveAr": "أن يعبّر المتعلم عن موضع الألم بالصيغة الصحيحة.",
+                  "titleAr": "التعبير عن الألم: استخدام الفعل Doler مع الضمائر المفردة والجمع",
+                  "objectiveAr": "أن يستخدم المتعلم الفعل doler بالشكل الصحيح: duele مع المفرد، و duelen مع الجمع.",
                   "skills": [
                     "grammar",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-doler.json",
+                  "titleEs": "El verbo doler: expresar dolor",
+                  "requires": [
+                    "a1-cuerpo"
+                  ]
                 },
                 {
                   "slug": "a1-farmacia",
-                  "titleAr": "في الصيدلية",
-                  "objectiveAr": "أن يطلب المتعلم دواءً بسيطًا ويفهم التعليمات.",
+                  "titleAr": "في الصيدلية: طلب دواء بسيط وفهم التعليمات",
+                  "objectiveAr": "أن يطلب المتعلم دواءً بسيطاً في الصيدلية بأسلوب مهذب: Quería algo para el dolor de....",
                   "skills": [
                     "reading",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-farmacia.json",
+                  "titleEs": "En la farmacia: pedir medicinas",
+                  "requires": [
+                    "a1-doler"
+                  ]
                 },
                 {
                   "slug": "a1-emergencia",
-                  "titleAr": "طلب المساعدة",
-                  "objectiveAr": "أن يطلب المتعلم المساعدة في حالة طارئة بسيطة.",
+                  "titleAr": "طلب المساعدة والطوارئ: عبارات الإنقاذ والاتصال بالإسعاف",
+                  "objectiveAr": "أن يطلب المتعلم النجدة فوراً في المواقف الطارئة: ¡Ayuda! و ¡Socorro!.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-emergencia.json",
+                  "titleEs": "Situaciones de emergencia y socorro",
+                  "requires": [
+                    "a1-farmacia"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             }
           ]
         },

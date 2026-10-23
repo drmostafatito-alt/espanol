@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-estudiar",
+    "unitSlug": "a1-u9-work-study",
+    "levelCode": "A1",
+    "titleAr": "الدراسة والمواد الأكاديمية: استخدام Estudiar والمجالات الدراسية",
+    "titleEs": "Los estudios y las asignaturas",
+    "subtitleAr": "تصريف الفعل estudiar والحديث عن الجامعة والمدرسة والكورسات",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصرف المتعلم الفعل القياسي estudiar في الحاضر بطلاقة مع جميع الضمائر.",
+        "أن يسمّي أماكن ومستويات التعليم: universidad, escuela, clase, curso.",
+        "أن يتحدث عن تعلم اللغات والمجالات المختلفة مستخدماً estudiar و aprender."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تصريف estudiar في الحاضر والفرق بينه وبين aprender",
+          "explanationAr": "الفعل estudiar فعل قياسي ينتهي بـ -ar: estudio (أنا), estudias (أنت), estudia (هو/هي), estudiamos (نحن), estudiáis (أنتم), estudian (هم). الفرق الدقيق: estudiar يعني يبذل جهداً في المذاكرة أو يلتحق بتخصص، بينما aprender يعني يكتسب المعرفة أو يتعلم مهارة (Aprender español = يتعلم الإسبانية)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان تصريف الفعل مع الضمير المناسب واستخدام المصدر (مثل قول *yo estudiar* بدلاً من yo estudio).",
+        "الخلط بين clase (الحصة أو قاعة الدرس) و curso (الدورة التعليمية الكاملة أو العام الدراسي)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا بدرس إسباني في الجامعة / واخد كورس». في الإسبانية: Estudio español en la universidad / Hago un curso."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا وأمريكا اللاتينية، من المعتاد جداً أن يواصل البالغون الدراسة وتعلم اللغات المسائية في escuelas oficiales de idiomas (المدارس الرسمية للغات)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-estudiar-intro",
+        "type": "explanation",
+        "titleAr": "عالم الدراسة والتعليم",
+        "bodyAr": "المفردات الأكاديمية والتعليمية الأساسية:\n- **estudiar**: يدرس / يذاكر\n- **aprender**: يتعلم\n- **la lengua**: اللغة\n- **la universidad**: الجامعة\n- **la escuela**: المدرسة\n- **la clase**: الفصل / الحصة الدراسية\n- **el curso**: الدورة التدريبية / الكورس\n- **el estudiante / la estudiante**: الطالب / الطالبة",
+        "examples": [
+          {
+            "es": "Estudio lengua española en la universidad.",
+            "ar": "أدرس اللغة الإسبانية في الجامعة."
+          },
+          {
+            "es": "Queremos aprender idiomas nuevos.",
+            "ar": "نريد أن نتعلم لغات جديدة."
+          },
+          {
+            "es": "La clase empieza a las nueve.",
+            "ar": "تبدأ الحصة في تمام التاسعة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "estudiar",
+      "aprender",
+      "lengua",
+      "universidad",
+      "escuela",
+      "clase",
+      "curso",
+      "estudiante"
+    ],
+    "reviewVocabulary": [
+      "profesor"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يصرف المتعلم الفعل القياسي estudiar في الحاضر بطلاقة مع جميع الضمائر.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-est-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التصريف الصحيح للفعل estudiar مع yo",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو تصريف estudiar مع ضمير المتكلم المفرد yo؟",
+        "stemEs": "Yo _____ español todos los días.",
+        "stemAr": "أنا أدرس الإسبانية كل يوم.",
+        "options": [
+          {
+            "id": "ex-a1-est-1_o1",
+            "text": "estudio",
+            "textAr": "تصريف المضارع مع yo",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-est-1_o2",
+            "text": "estudia",
+            "textAr": "تصريف المضارع مع él/ella",
+            "isCorrect": false,
+            "distractorRationaleAr": "estudia للغائب المفرد، بينما المتكلم ينتهي بـ o: estudio."
+          },
+          {
+            "id": "ex-a1-est-1_o3",
+            "text": "estudiamos",
+            "textAr": "تصريف المضارع مع nosotros",
+            "isCorrect": false,
+            "distractorRationaleAr": "estudiamos للمتكلم الجمع (نحن)."
+          }
+        ],
+        "targetVocab": [
+          "estudiar"
+        ],
+        "explanationAr": "أفعال المجموعة الأولى المنتهية بـ -ar تأخذ اللاحقة -o مع yo: estudio.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-est-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-est-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-est-1_o2": "estudia للغائب المفرد، بينما المتكلم ينتهي بـ o: estudio.",
+          "ex-a1-est-1_o3": "estudiamos للمتكلم الجمع (نحن)."
+        }
+      },
+      {
+        "id": "ex-a1-est-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة للجامعة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'الجامعة' بالإسبانية بدقة",
+        "stemEs": "Mi hermana estudia medicina en la _____.",
+        "stemAr": "أختي تدرس الطب في الجامعة.",
+        "targetVocab": [
+          "universidad"
+        ],
+        "explanationAr": "كلمة universidad مؤنثة وتعني الجامعة (la universidad).",
+        "answerKey": {
+          "accepted": [
+            "universidad"
+          ],
+          "acceptableAnswers": [
+            "universidad"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-est-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الذي يعبر عن اكتساب المعرفة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي فعل يعني 'يتعلم' مهارة أو لغة جديدة؟",
+        "stemEs": "Me gusta _____ cosas nuevas en el curso.",
+        "stemAr": "يعجبني أن أتعلم أشياء جديدة في الدورة.",
+        "options": [
+          {
+            "id": "ex-a1-est-3_o1",
+            "text": "aprender",
+            "textAr": "يتعلم",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-est-3_o2",
+            "text": "escuela",
+            "textAr": "مدرسة (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "escuela اسم مكان وليس فعلاً."
+          },
+          {
+            "id": "ex-a1-est-3_o3",
+            "text": "clase",
+            "textAr": "حصة (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "clase اسم وليس فعلاً."
+          }
+        ],
+        "targetVocab": [
+          "aprender",
+          "curso",
+          "escuela",
+          "clase"
+        ],
+        "explanationAr": "الفعل aprender يعني يتعلم ويكتسب المعرفة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-est-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-est-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-est-3_o2": "escuela اسم مكان وليس فعلاً.",
+          "ex-a1-est-3_o3": "clase اسم وليس فعلاً."
+        }
+      },
+      {
+        "id": "ex-a1-est-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن دراسة اللغة في المدرسة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-est-4_t1",
+            "kind": "token",
+            "text": "Los"
+          },
+          {
+            "id": "ex-a1-est-4_t2",
+            "kind": "token",
+            "text": "estudiantes"
+          },
+          {
+            "id": "ex-a1-est-4_t3",
+            "kind": "token",
+            "text": "estudian"
+          },
+          {
+            "id": "ex-a1-est-4_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a1-est-4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-est-4_t6",
+            "kind": "token",
+            "text": "escuela"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Los estudiantes estudian en la escuela"
+          ],
+          "tokenOrder": [
+            "ex-a1-est-4_t1",
+            "ex-a1-est-4_t2",
+            "ex-a1-est-4_t3",
+            "ex-a1-est-4_t4",
+            "ex-a1-est-4_t5",
+            "ex-a1-est-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الفاعل Los estudiantes ثم الفعل estudian ثم شبه الجملة en la escuela.",
+        "targetVocab": [
+          "estudiante",
+          "estudiar",
+          "escuela"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-est-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما يفعله المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد النشاط المذكور",
+        "stemEs": "Tengo una clase de lengua esta tarde.",
+        "stemAr": "لدي حصة لغة بعد ظهر اليوم.",
+        "options": [
+          {
+            "id": "ex-a1-est-5_o1",
+            "text": "clase",
+            "textAr": "حصة دراسية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-est-5_o2",
+            "text": "universidad",
+            "textAr": "جامعة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال clase de lengua وليس universidad."
+          },
+          {
+            "id": "ex-a1-est-5_o3",
+            "text": "profesor",
+            "textAr": "معلم",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن الحصة وليس الأستاذ."
+          }
+        ],
+        "targetVocab": [
+          "clase",
+          "lengua",
+          "universidad",
+          "profesor"
+        ],
+        "explanationAr": "المتحدث قال: Tengo una clase de lengua.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_clase_lengua.mp3",
+        "speechEs": "Tengo una clase de lengua esta tarde.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-est-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-est-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-est-5_o2": "المتحدث قال clase de lengua وليس universidad.",
+          "ex-a1-est-5_o3": "المتحدث تحدث عن الحصة وليس الأستاذ."
+        }
+      },
+      {
+        "id": "ex-a1-est-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق رغبتك في دراسة لغة جديدة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة موضحاً دراسة الإسبانية في دورة تدريبية",
+        "stemEs": "Hago un curso para aprender español.",
+        "stemAr": "أحضر دورة تدريبية لتعلم الإسبانية.",
+        "audioKey": "pending/a1_curso_aprender.mp3",
+        "targetVocab": [
+          "curso",
+          "aprender"
+        ],
+        "explanationAr": "احرص على نطق حرف r بوضوح في curso و aprender.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_curso_aprender.mp3",
+          "modelAnswer": "Hago un curso para aprender español."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}
