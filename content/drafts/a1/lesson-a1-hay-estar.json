@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-hay-estar",
+    "titleAr": "الوجود والمكان: التمييز الحاسم بين Hay و Está / Están",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u6-home",
+    "objectiveAr": "أن يفرّق المتعلم بين التعبير عن الوجود غير المحدد (hay + un/una/sustantivo sin artículo) وبين تحديد مكان شيء معروف أو معرّف (está/están + el/la/los/las).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "casa",
+      "habitación",
+      "cocina",
+      "baño",
+      "salón",
+      "mesa",
+      "silla",
+      "cama",
+      "estar"
+    ],
+    "reviewVocabulary": [
+      "bueno",
+      "grande",
+      "dos"
+    ],
+    "targetStructures": [
+      "En el salón hay una mesa grande. (وجود نكرة)",
+      "La mesa está en el salón. (تحديد موضع معرّف)",
+      "¿Dónde está el baño? — Al final del pasillo."
+    ],
+    "grammarTopics": [
+      "diferencia-hay-vs-esta",
+      "haber-existencia-indeterminada",
+      "estar-localizacion-determinada"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "منى تسأل مالكة الشقة الإسبانية دونيا كارمن عما يتوفر في الشقة وأين تقع المرافق.",
+        "settingAr": "جولة تفقدية في شقة للإيجار",
+        "lines": [
+          {
+            "es": "¿En la cocina hay lavadora y microondas?",
+            "ar": "هل يوجد في المطبخ غسالة وميكروويف؟",
+            "arEg": "هو في المطبخ فيه غسالة وميكروويف؟",
+            "audioKey": "pending/a1-hay-sc-1"
+          },
+          {
+            "es": "Sí, en la cocina hay de todo. Está todo equipado.",
+            "ar": "نعم، في المطبخ يوجد كل شيء. كل شيء مجهز.",
+            "arEg": "أيوه، في المطبخ فيه كل حاجة. مجهز تماماً.",
+            "audioKey": "pending/a1-hay-sc-2"
+          },
+          {
+            "es": "¿Y dónde está la llave de paso del agua?",
+            "ar": "وأين يوجد محبس الماء الرئيسي؟",
+            "arEg": "وفين محبس المية الرئيسي؟",
+            "audioKey": "pending/a1-hay-sc-3"
+          },
+          {
+            "es": "La llave está debajo del fregadero.",
+            "ar": "المحبس يقع تحت حوض الغسيل.",
+            "arEg": "المحبس تحت الحوض.",
+            "audioKey": "pending/a1-hay-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "قاعدة التفريق بين Hay و Está من الركائز الأساسية في اللغة الإسبانية: Hay لا تأتي أبداً مع أدوات التعريف (el, la, los, las) ولا مع أسماء العلم أو ضمائر الملكية، بينما Está/Están تأتي لتحديد مكان هذه الأشياء المعرّفة حصراً.",
+    "pedagogicalRationaleAr": "المتعلم العربي يترجم 'يوجد' و'كائن' بنفس الكلمة، فيقع في أخطاء فادحة مثل: *¿Dónde hay el baño? بدلاً من ¿Dónde está el baño? أو *En la habitación está una cama بدلاً من En la habitación hay una cama. التركيز الصارم على نوع الأداة (نكرة = hay / معرفة = está) يحل المشكلة جذرياً.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_hay_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما إذا كانت الجملة تعبر عن وجود شيء أم موضعه.",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للجملة:",
+        "stemEs": "En mi habitación hay dos ventanas grandes.",
+        "stemAr": "في غرفتي توجد نافذتان كبيرتان.",
+        "options": [
+          {
+            "id": "a1_hay_1_a",
+            "text": "Expresa existencia (hay)",
+            "textAr": "تعبير عن وجود شيء (hay)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hay_1_b",
+            "text": "Expresa localización (está)",
+            "textAr": "تعبير عن موضع شيء محدد (está)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة استخدمت hay مع عدد dos ventanas للدلالة على الوجود وليس está."
+          },
+          {
+            "id": "a1_hay_1_c",
+            "text": "Expresa deseo (querer)",
+            "textAr": "تعبير عن الرغبة (querer)",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُستخدم فعل querer هنا."
+          }
+        ],
+        "targetVocab": [
+          "habitación",
+          "casa"
+        ],
+        "explanationAr": "استخدام hay مع الأعداد (dos ventanas) يدل على بيان الوجود غير المحدد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-hay-ex-1",
+        "speechEs": "En mi habitación hay dos ventanas grandes.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hay_1_a"
+          ],
+          "selectedOptionId": "a1_hay_1_a"
+        },
+        "errorFeedback": {
+          "a1_hay_1_b": "الجملة استخدمت hay مع عدد dos ventanas للدلالة على الوجود وليس está.",
+          "a1_hay_1_c": "لم يُستخدم فعل querer هنا."
+        }
+      },
+      {
+        "id": "a1_hay_2_choice_hay",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل المناسب قبل أداة التنكير (una mesa).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "مع أداة التنكير (una mesa) للدلالة على الوجود، نستخدم:",
+        "stemEs": "En el salón ____ una mesa redonda.",
+        "stemAr": "في الصالون ____ طاولة مستديرة.",
+        "options": [
+          {
+            "id": "a1_hay_2_a",
+            "text": "hay",
+            "textAr": "يوجد (مع النكرة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hay_2_b",
+            "text": "está",
+            "textAr": "يقع/يكون للمعرّف",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: está لا تُستخدم مع أداة التنكير una، بل hay una mesa."
+          },
+          {
+            "id": "a1_hay_2_c",
+            "text": "es",
+            "textAr": "يكون للتعريف",
+            "isCorrect": false,
+            "distractorRationaleAr": "es لا تُستخدم للإخبار عن وجود الأشياء في الأماكن."
+          }
+        ],
+        "targetVocab": [
+          "mesa",
+          "salón"
+        ],
+        "explanationAr": "القاعدة: hay + una mesa (نكرة).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hay_2_a"
+          ],
+          "selectedOptionId": "a1_hay_2_a"
+        },
+        "errorFeedback": {
+          "a1_hay_2_b": "خطأ: está لا تُستخدم مع أداة التنكير una، بل hay una mesa.",
+          "a1_hay_2_c": "es لا تُستخدم للإخبار عن وجود الأشياء في الأماكن."
+        }
+      },
+      {
+        "id": "a1_hay_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل المناسب للسؤال عن موضع الحمام المعرّف (el baño).",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب صيغة الفعل estar المناسبة في السؤال: «أين الحمام؟»",
+        "stemEs": "¿Dónde ____ el baño, por favor?",
+        "stemAr": "أين ____ الحمام، من فضلك؟",
+        "targetVocab": [
+          "baño",
+          "estar"
+        ],
+        "explanationAr": "مع الاسم المعرّف بـ el (el baño) نسأل بـ: ¿Dónde está el baño?",
+        "answerKey": {
+          "accepted": [
+            "está"
+          ],
+          "acceptableAnswers": [
+            "está"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hay_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لبيان موضع الكراسي المعرفة في المطبخ.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_hay_4_order_t1",
+            "kind": "token",
+            "text": "Las"
+          },
+          {
+            "id": "a1_hay_4_order_t2",
+            "kind": "token",
+            "text": "sillas"
+          },
+          {
+            "id": "a1_hay_4_order_t3",
+            "kind": "token",
+            "text": "están"
+          },
+          {
+            "id": "a1_hay_4_order_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "a1_hay_4_order_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a1_hay_4_order_t6",
+            "kind": "token",
+            "text": "cocina."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Las sillas están en la cocina."
+          ],
+          "tokenOrder": [
+            "a1_hay_4_order_t1",
+            "a1_hay_4_order_t2",
+            "a1_hay_4_order_t3",
+            "a1_hay_4_order_t4",
+            "a1_hay_4_order_t5",
+            "a1_hay_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل المعرّف بالجمع Las sillas + الفعل están + شبه الجملة en la cocina.",
+        "targetVocab": [
+          "silla",
+          "cocina",
+          "estar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hay_5_plural_hay",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المناسبة لبيان عدم وجود كراسٍ في الغرفة.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "لبيان عدم وجود أي كراسي، نقول:",
+        "stemEs": "En esta habitación no ____ sillas.",
+        "stemAr": "في هذه الغرفة لا ____ كراسٍ.",
+        "options": [
+          {
+            "id": "a1_hay_5_a",
+            "text": "hay",
+            "textAr": "لا يوجد (اسم بلا أداة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hay_5_b",
+            "text": "están",
+            "textAr": "لا يقعون (للمعرّف فقط)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: كلمة sillas بدون أداة تعريف، لذا نستخدم hay وليس están."
+          },
+          {
+            "id": "a1_hay_5_c",
+            "text": "son",
+            "textAr": "لا يكونون",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل ser لا يُستخدم لوجود الأشياء في الأماكن."
+          }
+        ],
+        "targetVocab": [
+          "silla",
+          "habitación"
+        ],
+        "explanationAr": "مع الأسماء المجردة من الأداة نستخدم hay: no hay sillas.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hay_5_a"
+          ],
+          "selectedOptionId": "a1_hay_5_a"
+        },
+        "errorFeedback": {
+          "a1_hay_5_b": "خطأ: كلمة sillas بدون أداة تعريف، لذا نستخدم hay وليس están.",
+          "a1_hay_5_c": "الفعل ser لا يُستخدم لوجود الأشياء في الأماكن."
+        }
+      },
+      {
+        "id": "a1_hay_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة السؤال عن موضع المطبخ بنطق سليم.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 1,
+        "promptAr": "اقرأ الجملة بصوت واضح ونبرة استفهامية صحيحة:",
+        "stemEs": "¿Dónde está la cocina de la casa?",
+        "stemAr": "أين يقع مطبخ المنزل؟",
+        "audioKey": "pending/a1-hay-ex-6",
+        "targetVocab": [
+          "cocina",
+          "casa",
+          "estar"
+        ],
+        "explanationAr": "ركز على نبرة الاستفهام في ¿Dón-de es-tá...?",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-hay-ex-6",
+          "modelAnswer": "¿Dónde está la cocina de la casa?"
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

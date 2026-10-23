@@ -241,4 +241,82 @@ describe('تكامل الدروس المدمجة من الكتب داخل تطب
     expect(submitData.correct).toBe(true);
     expect(submitData.explanationAr).toContain('pan');
   });
+
+  it('وحدة التسوق A1 (a1-colores-ropa) تُسلَّم جلساتها وتصحح مفردات الملابس والألوان', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_ropa@example.com');
+    const res = await h.call('/api/lessons/a1-colores-ropa/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('الألوان والملابس');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-colores-ropa/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'zapato',
+        eventId: 'evt_test_ropa_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('zapato');
+  });
+
+  it('وحدة المنزل A1 (a1-habitaciones) تُسلَّم جلساتها وتصحح تسمية الغرف والمطبخ', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_casa@example.com');
+    const res = await h.call('/api/lessons/a1-habitaciones/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('غرف المنزل');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-habitaciones/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'cocina',
+        eventId: 'evt_test_hab_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('cocina');
+  });
+
+  it('وحدة الروتين A1 (a1-verbos-rutina) تُسلَّم جلساتها وتصحح أفعال العمل والدراسة في المضارع', async () => {
+    const { cookie } = await signupAndGetCookie(h, 'learner_rutina@example.com');
+    const res = await h.call('/api/lessons/a1-verbos-rutina/session', { cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<any>(res);
+    expect(data.lesson.titleAr).toContain('أفعال الروتين اليومي');
+    expect(data.exercises.length).toBe(6);
+
+    const fillEx = data.exercises.find((e: any) => e.type === 'fill_blank');
+    expect(fillEx).toBeDefined();
+
+    const submitRes = await h.call('/api/lessons/a1-verbos-rutina/answers', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({
+        exerciseId: fillEx.id,
+        response: 'trabajo',
+        eventId: 'evt_test_rutina_001',
+      }),
+    });
+    expect(submitRes.status).toBe(200);
+    const submitData = await h.json<any>(submitRes);
+    expect(submitData.correct).toBe(true);
+    expect(submitData.explanationAr).toContain('trabajo');
+  });
 });

@@ -1,0 +1,373 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-colores-ropa",
+    "titleAr": "الألوان والملابس: وصف القطع ومطابقة الصفات في الجنس والعدد",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u5-shopping",
+    "objectiveAr": "أن يسمّي المتعلم الملابس الأساسية والألوان، ويطابق صفات الألوان مع الأسماء الموصوفة تذكيراً وتأنيثاً وإفراداً وجمعاً (camisa blanca, zapatos negros).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "ropa",
+      "camisa",
+      "pantalón",
+      "zapato",
+      "blanco",
+      "negro",
+      "rojo",
+      "azul",
+      "verde",
+      "amarillo"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "bueno",
+      "casa"
+    ],
+    "targetStructures": [
+      "Llevo una camisa blanca y un pantalón negro.",
+      "Estos zapatos son muy cómodos.",
+      "¿De qué color es la chaqueta?"
+    ],
+    "grammarTopics": [
+      "concordancia-genero-numero-colores",
+      "posicion-adjetivo-color",
+      "sustantivos-ropa"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "رانيا تتسوق في متجر ملابس في مدريد وتصف لصديقتها ما ترتديه وما ترغب في شرائه.",
+        "settingAr": "متجر ملابس وسط مدريد",
+        "lines": [
+          {
+            "es": "Mira, me gusta mucho esta camisa blanca.",
+            "ar": "انظري، يعجبني كثيراً هذا القميص الأبيض.",
+            "arEg": "بصي، عجباني أوي البلوزة البيضا دي.",
+            "audioKey": "pending/a1-col-sc-1"
+          },
+          {
+            "es": "Es muy bonita, y combina bien con tu pantalón negro.",
+            "ar": "إنها جميلة جداً، وتتناسق جيداً مع بنطالك الأسود.",
+            "arEg": "حلوة جداً، وماشية كويس مع بنطلونك الأسود.",
+            "audioKey": "pending/a1-col-sc-2"
+          },
+          {
+            "es": "¿Y qué zapatos llevas hoy?",
+            "ar": "وما هو الحذاء الذي ترتدينه اليوم؟",
+            "arEg": "ولابسة جزمة إيه النهاردة؟",
+            "audioKey": "pending/a1-col-sc-3"
+          },
+          {
+            "es": "Llevo unos zapatos marrones muy cómodos.",
+            "ar": "أرتدي حذاء بنياً مريحاً للغاية.",
+            "arEg": "لابسة جزمة بني مريحة جداً.",
+            "audioKey": "pending/a1-col-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا واللغة الإسبانية، صفات الألوان تأتي بعد الاسم الموصوف دائماً (una camisa roja وليس *una roja camisa)، وتطابق الاسم الموصوف تماماً في التذكير والتأنيث والجمع.",
+    "pedagogicalRationaleAr": "الألوان مثل azul وverde لا تتغير في التأنيث (camisa azul / pantalón azul)، بينما الألوان المنتهية بـ o مثل blanco وnegro وrojo تتغير بتأنيث آخرها إلى a (camisa blanca). يكثر خطأ المتعلمين العرب في إلحاق علامة التأنيث بما لا يؤنث أو نسيان جمع الصفة مع الاسم الجمع.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_col_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث وحدد لون القميص المذكور.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للوصف:",
+        "stemEs": "Quiero comprar una camisa blanca de manga corta.",
+        "stemAr": "أريد شراء قميص أبيض بأكمام قصيرة.",
+        "options": [
+          {
+            "id": "a1_col_1_a",
+            "text": "Una camisa blanca",
+            "textAr": "قميص أبيض",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_col_1_b",
+            "text": "Una camisa negra",
+            "textAr": "قميص أسود",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر blanca (أبيض) وليس negra."
+          },
+          {
+            "id": "a1_col_1_c",
+            "text": "Una camisa azul",
+            "textAr": "قميص أزرق",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر اللون الأزرق في التسجيل."
+          }
+        ],
+        "targetVocab": [
+          "camisa",
+          "blanco",
+          "ropa"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: camisa blanca أي قميص أبيض.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-col-ex-1",
+        "speechEs": "Quiero comprar una camisa blanca de manga corta.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_col_1_a"
+          ],
+          "selectedOptionId": "a1_col_1_a"
+        },
+        "errorFeedback": {
+          "a1_col_1_b": "الصوت ذكر blanca (أبيض) وليس negra.",
+          "a1_col_1_c": "لم يُذكر اللون الأزرق في التسجيل."
+        }
+      },
+      {
+        "id": "a1_col_2_agreement",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صفة اللون المناسبة للاسم المؤنث (la falda).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نصف التنورة (اسم مؤنث) باللون الأحمر؟",
+        "stemEs": "María lleva una falda ____.",
+        "stemAr": "ماريا ترتدي تنورة ____.",
+        "options": [
+          {
+            "id": "a1_col_2_a",
+            "text": "roja",
+            "textAr": "حمراء (مطابقة للمؤنث)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_col_2_b",
+            "text": "rojo",
+            "textAr": "أحمر (مذكر غير مطابق)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: كلمة falda مؤنثة ويجب أن تتطابق الصفة معها وتصبح roja."
+          },
+          {
+            "id": "a1_col_2_c",
+            "text": "rojos",
+            "textAr": "حمر (جمع مذكر)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاسم مفرد مؤنث وليس جمعاً."
+          }
+        ],
+        "targetVocab": [
+          "rojo",
+          "ropa"
+        ],
+        "explanationAr": "تطابق صفة اللون الاسم في التأنيث: falda roja.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_col_2_a"
+          ],
+          "selectedOptionId": "a1_col_2_a"
+        },
+        "errorFeedback": {
+          "a1_col_2_b": "خطأ: كلمة falda مؤنثة ويجب أن تتطابق الصفة معها وتصبح roja.",
+          "a1_col_2_c": "الاسم مفرد مؤنث وليس جمعاً."
+        }
+      },
+      {
+        "id": "a1_col_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة الحذاء بالإسبانية في الفراغ.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (zapato) في الفراغ:",
+        "stemEs": "Necesito un ____ nuevo para la fiesta.",
+        "stemAr": "أحتاج ____ جديداً للحفلة.",
+        "targetVocab": [
+          "zapato",
+          "ropa"
+        ],
+        "explanationAr": "كلمة حذاء في الإسبانية هي zapato للمفرد و zapatos للزوجين.",
+        "answerKey": {
+          "accepted": [
+            "zapato"
+          ],
+          "acceptableAnswers": [
+            "zapato"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_col_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة وصف الملابس.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_col_4_order_t1",
+            "kind": "token",
+            "text": "Llevo"
+          },
+          {
+            "id": "a1_col_4_order_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "a1_col_4_order_t3",
+            "kind": "token",
+            "text": "pantalón"
+          },
+          {
+            "id": "a1_col_4_order_t4",
+            "kind": "token",
+            "text": "negro"
+          },
+          {
+            "id": "a1_col_4_order_t5",
+            "kind": "token",
+            "text": "elegante."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Llevo un pantalón negro elegante."
+          ],
+          "tokenOrder": [
+            "a1_col_4_order_t1",
+            "a1_col_4_order_t2",
+            "a1_col_4_order_t3",
+            "a1_col_4_order_t4",
+            "a1_col_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب المعياري: الفعل Llevo + أداة التنكير un + الاسم pantalón + صفة اللون negro + الصفة elegante.",
+        "targetVocab": [
+          "pantalón",
+          "negro",
+          "ropa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_col_5_plural",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة اللون المطابقة للاسم الجمع (los zapatos).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نصف الحذاء (جمع مذكر) باللون الأسود؟",
+        "stemEs": "Tengo unos zapatos ____.",
+        "stemAr": "لدي حذاء ____.",
+        "options": [
+          {
+            "id": "a1_col_5_a",
+            "text": "negros",
+            "textAr": "سود (جمع مذكر)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_col_5_b",
+            "text": "negro",
+            "textAr": "أسود (مفرد)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: الاسم unos zapatos جمع، والصفة يجب أن تجمع أيضاً بإضافة s."
+          },
+          {
+            "id": "a1_col_5_c",
+            "text": "negras",
+            "textAr": "سوداء (جمع مؤنث)",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة zapatos مذكرة وتأخذ negros."
+          }
+        ],
+        "targetVocab": [
+          "zapato",
+          "negro"
+        ],
+        "explanationAr": "مطابقة الصفة للجمع المذكر: zapatos negros.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_col_5_a"
+          ],
+          "selectedOptionId": "a1_col_5_a"
+        },
+        "errorFeedback": {
+          "a1_col_5_b": "خطأ: الاسم unos zapatos جمع، والصفة يجب أن تجمع أيضاً بإضافة s.",
+          "a1_col_5_c": "كلمة zapatos مذكرة وتأخذ negros."
+        }
+      },
+      {
+        "id": "a1_col_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة وصف الملابس بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح وثقة:",
+        "stemEs": "Me gusta mucho esta camisa azul.",
+        "stemAr": "يعجبني كثيراً هذا القميص الأزرق.",
+        "audioKey": "pending/a1-col-ex-6",
+        "targetVocab": [
+          "camisa",
+          "azul",
+          "ropa"
+        ],
+        "explanationAr": "انتبه لنطق حرف z كحرف ثاء خفيف في a-ZUL.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-col-ex-6",
+          "modelAnswer": "Me gusta mucho esta camisa azul."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

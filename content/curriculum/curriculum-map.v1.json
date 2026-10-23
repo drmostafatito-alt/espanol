@@ -562,48 +562,73 @@
               "lessons": [
                 {
                   "slug": "a1-colores-ropa",
-                  "titleAr": "الألوان والملابس",
-                  "objectiveAr": "أن يسمّي المتعلم الألوان والملابس الأساسية ويصف قطعة.",
+                  "titleAr": "الألوان والملابس: وصف القطع ومطابقة الصفات في الجنس والعدد",
+                  "objectiveAr": "أن يسمّي المتعلم الملابس الأساسية والألوان، ويطابق صفات الألوان مع الأسماء الموصوفة تذكيراً وتأنيثاً وإفراداً وجمعاً (camisa blanca, zapatos negros).",
                   "skills": [
                     "vocabulary",
-                    "reading"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-necesitar",
-                  "titleAr": "الحاجة: necesito",
-                  "objectiveAr": "أن يعبّر المتعلم عن حاجته (necesito…) ويطلب المساعدة.",
-                  "skills": [
-                    "speaking",
-                    "grammar"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-tallas",
-                  "titleAr": "المقاس والاختيار",
-                  "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة.",
-                  "skills": [
+                    "reading",
+                    "grammar",
                     "listening",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-colores-ropa.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a1-necesitar",
+                  "titleAr": "التعبير عن الحاجة والرغبة: استخدام Necesitar و Querer للتسوق",
+                  "objectiveAr": "أن يعبّر المتعلم عن حاجته لشراء ملابس أو أغراض مستخدماً necesito / quiero مع الأسماء والمصادر بدقة.",
+                  "skills": [
+                    "grammar",
+                    "speaking",
+                    "listening",
+                    "reading",
+                    "writing"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-necesitar.json",
+                  "requires": [
+                    "a1-colores-ropa"
+                  ]
+                },
+                {
+                  "slug": "a1-tallas",
+                  "titleAr": "المقاسات والتجربة: السؤال عن القياس وغرفة القياس",
+                  "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة ويطلب تجربة الملابس في غرفة القياس (¿Puedo probármelo?).",
+                  "skills": [
+                    "speaking",
+                    "listening",
+                    "vocabulary",
+                    "reading",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-tallas.json",
+                  "requires": [
+                    "a1-necesitar"
+                  ]
                 },
                 {
                   "slug": "a1-comprar",
-                  "titleAr": "إتمام عملية شراء",
-                  "objectiveAr": "أن يُجري المتعلم حوار شراء قصيرًا من السؤال إلى الدفع.",
+                  "titleAr": "إتمام عملية الشراء: الدفع والإيصال والاسترجاع",
+                  "objectiveAr": "أن يُجري المتعلم حوار شراء متكاملاً من السؤال عن السعر إلى اختيار وسيلة الدفع واستلام الفاتورة.",
                   "skills": [
                     "speaking",
+                    "listening",
+                    "writing",
                     "reading",
-                    "listening"
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-comprar.json",
+                  "requires": [
+                    "a1-tallas"
+                  ]
                 }
               ]
             },
@@ -616,48 +641,73 @@
               "lessons": [
                 {
                   "slug": "a1-habitaciones",
-                  "titleAr": "غرف المنزل",
-                  "objectiveAr": "أن يسمّي المتعلم غرف المنزل ويستخدم hay.",
-                  "skills": [
-                    "vocabulary",
-                    "reading"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-hay-estar",
-                  "titleAr": "hay مقابل está",
-                  "objectiveAr": "أن يفرّق المتعلم بين وجود شيء (hay) وموضعه (está).",
-                  "skills": [
-                    "grammar",
-                    "writing"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-muebles",
-                  "titleAr": "الأثاث والمواضع",
-                  "objectiveAr": "أن يصف المتعلم موضع الأثاث بحروف المكان.",
+                  "titleAr": "غرف المنزل: أجزاء البيت وتسمية المساحات",
+                  "objectiveAr": "أن يسمّي المتعلم غرف المنزل الأساسية (cocina, salón, baño, habitación) مع أدوات التعريف والتنكير المناسبة.",
                   "skills": [
                     "vocabulary",
                     "reading",
-                    "grammar"
+                    "grammar",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-habitaciones.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a1-hay-estar",
+                  "titleAr": "الوجود والمكان: التمييز الحاسم بين Hay و Está / Están",
+                  "objectiveAr": "أن يفرّق المتعلم بين التعبير عن الوجود غير المحدد (hay + un/una/sustantivo sin artículo) وبين تحديد مكان شيء معروف أو معرّف (está/están + el/la/los/las).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hay-estar.json",
+                  "requires": [
+                    "a1-habitaciones"
+                  ]
+                },
+                {
+                  "slug": "a1-muebles",
+                  "titleAr": "الأثاث والمواضع: حروف وظروف المكان داخل المنزل",
+                  "objectiveAr": "أن يصف المتعلم موضع الأثاث مستخدماً حروف وظروف المكان: encima de, debajo de, al lado de, delante de, detrás de مع فعل estar.",
+                  "skills": [
+                    "grammar",
+                    "vocabulary",
+                    "reading",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-muebles.json",
+                  "requires": [
+                    "a1-hay-estar"
+                  ]
                 },
                 {
                   "slug": "a1-rutina-casa",
-                  "titleAr": "وصف منزلي",
-                  "objectiveAr": "أن يكتب المتعلم فقرة قصيرة عن منزله.",
+                  "titleAr": "وصف المنزل والعيش: التعبير المتكامل عن السكن",
+                  "objectiveAr": "أن يكتب المتعلم وينطق فقرة وصفية متكاملة عن منزله وموقعه ومحتوياته وتفضيلاته للغرف.",
                   "skills": [
                     "writing",
-                    "vocabulary"
+                    "speaking",
+                    "reading",
+                    "listening",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-rutina-casa.json",
+                  "requires": [
+                    "a1-muebles"
+                  ]
                 }
               ]
             },
@@ -670,47 +720,73 @@
               "lessons": [
                 {
                   "slug": "a1-verbos-rutina",
-                  "titleAr": "أفعال الروتين",
-                  "objectiveAr": "أن يستخدم المتعلم أفعال الروتين في المضارع مع الضمير الصحيح.",
+                  "titleAr": "أفعال الروتين اليومي: تصريف الأفعال الأساسية في المضارع البسيط",
+                  "objectiveAr": "أن يصرّف المتعلم أفعال الروتين اليومي (desayunar, comer, cenar, trabajar, estudiar, dormir) في المضارع البسيط مع ضمائر الفاعل المختلفة بدقة.",
                   "skills": [
                     "grammar",
-                    "vocabulary"
+                    "vocabulary",
+                    "reading",
+                    "writing",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-verbos-rutina.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-hora-rutina",
-                  "titleAr": "الروتين والوقت",
-                  "objectiveAr": "أن يربط المتعلم بين نشاط ووقته (a las siete…).",
+                  "titleAr": "الروتين والوقت: ربط الأنشطة اليومية بالساعات والتكرار",
+                  "objectiveAr": "أن يربط المتعلم بين النشاط اليومي وتوقيته المحدد باستخدام a las... وظروف التكرار (siempre, normalmente, nunca).",
                   "skills": [
-                    "writing",
-                    "listening"
+                    "grammar",
+                    "listening",
+                    "speaking",
+                    "reading",
+                    "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hora-rutina.json",
+                  "requires": [
+                    "a1-verbos-rutina"
+                  ]
                 },
                 {
                   "slug": "a1-hobbies",
-                  "titleAr": "الهوايات",
-                  "objectiveAr": "أن يقول المتعلم ما يحب فعله في وقت الفراغ.",
+                  "titleAr": "الهوايات وأوقات الفراغ: التعبير عن الاهتمامات والأنشطة",
+                  "objectiveAr": "أن يقول المتعلم ما يحب وما لا يحب فعله في وقت الفراغ وعطلة نهاية الأسبوع مستخدماً أفعال الهوايات والتفضيل.",
                   "skills": [
+                    "vocabulary",
                     "speaking",
-                    "vocabulary"
+                    "listening",
+                    "reading",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hobbies.json",
+                  "requires": [
+                    "a1-hora-rutina"
+                  ]
                 },
                 {
                   "slug": "a1-mi-dia",
-                  "titleAr": "يومي في فقرة",
-                  "objectiveAr": "أن يكتب المتعلم فقرة من 4 جمل عن يومه.",
+                  "titleAr": "يومي في فقرة: سرد الجدول اليومي الكامل بروابط زمنية",
+                  "objectiveAr": "أن يكتب المتعلم وينطق سردية متصلة من 4 إلى 5 جمل تصف يومه المعتاد من الصباح حتى المساء باستخدام روابط التسلسل (primero, luego, después, finalmente).",
                   "skills": [
                     "writing",
+                    "speaking",
+                    "reading",
+                    "listening",
                     "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-mi-dia.json",
+                  "requires": [
+                    "a1-hobbies"
+                  ]
                 }
               ]
             },

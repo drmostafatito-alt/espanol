@@ -1,0 +1,372 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-rutina-casa",
+    "titleAr": "وصف المنزل والعيش: التعبير المتكامل عن السكن",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u6-home",
+    "objectiveAr": "أن يكتب المتعلم وينطق فقرة وصفية متكاملة عن منزله وموقعه ومحتوياته وتفضيلاته للغرف.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "writing",
+      "speaking",
+      "reading",
+      "listening",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "casa",
+      "habitación",
+      "salón",
+      "cocina",
+      "baño",
+      "mesa",
+      "estar",
+      "gustar"
+    ],
+    "reviewVocabulary": [
+      "blanco",
+      "grande",
+      "dos"
+    ],
+    "targetStructures": [
+      "Vivo en un piso luminoso en el centro.",
+      "Mi habitación favorita es el salón porque es muy amplio.",
+      "En mi casa me gusta descansar y leer."
+    ],
+    "grammarTopics": [
+      "redaccion-descripcion-vivienda",
+      "expresar-preferencia-estancias",
+      "conectores-basicos-y-pero-porque"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "سلمى تكتب نصاً قصيراً لمدونتها في معهد سيرفانتس تصف فيه منزلها وحياتها اليومية فيه.",
+        "settingAr": "فصل تعليم اللغة الإسبانية في المعهد",
+        "lines": [
+          {
+            "es": "Vivo en un apartamento pequeño pero muy cómodo.",
+            "ar": "أعيش في شقة صغيرة لكنها مريحة للغاية.",
+            "arEg": "عايشة في شقة صغيرة بس مريحة جداً.",
+            "audioKey": "pending/a1-rc-sc-1"
+          },
+          {
+            "es": "Tiene un salón con dos ventanas grandes y mucha luz.",
+            "ar": "فيها صالون بنافذتين كبيرتين وكثير من الضوء.",
+            "arEg": "فيها صالة بشباكين كبار ونور كتير.",
+            "audioKey": "pending/a1-rc-sc-2"
+          },
+          {
+            "es": "Mi rincón preferido es la mesa del salón para estudiar.",
+            "ar": "ركني المفضل هو طاولة الصالون للدراسة.",
+            "arEg": "مكاني المفضل هو ترابيزة الصالة للمذاكرة.",
+            "audioKey": "pending/a1-rc-sc-3"
+          },
+          {
+            "es": "Me gusta mucho mi casa porque es tranquila.",
+            "ar": "يعجبني منزلي كثيراً لأنه هادئ.",
+            "arEg": "بحب بيتي أوي عشان هادي.",
+            "audioKey": "pending/a1-rc-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الإسبان يقضون وقتاً طويلاً في 'el salón' مع العائلة، ولكن 'la cocina' تُعد في كثير من البيوت مكاناً حيوياً للأحاديث الصباحية وتناول القهوة السريعة.",
+    "pedagogicalRationaleAr": "الهدف هنا هو دمج المفردات والقواعد السابقة (غرف، أثاث، hay، está، gustar) في فقرة سردية متصلة باستخدام أدوات الربط: y (و)، pero (لكن)، porque (لأن).",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_rc_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للفقرة وحدد لماذا يفضل المتحدث منزله.",
+        "skills": [
+          "listening",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً لرأي المتحدث في منزله:",
+        "stemEs": "Me gusta mucho mi casa porque es muy tranquila y luminosa.",
+        "stemAr": "يعجبني منزلي كثيراً لأنه هادئ ومضيء للغاية.",
+        "options": [
+          {
+            "id": "a1_rc_1_a",
+            "text": "Es tranquila y luminosa",
+            "textAr": "هادئ ومضيء",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_rc_1_b",
+            "text": "Es grande y barata",
+            "textAr": "كبير ورخيص",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر tranquila y luminosa وليس barata."
+          },
+          {
+            "id": "a1_rc_1_c",
+            "text": "Está cerca de la playa",
+            "textAr": "قريب من الشاطئ",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر الشاطئ في التسجيل."
+          }
+        ],
+        "targetVocab": [
+          "casa",
+          "gustar"
+        ],
+        "explanationAr": "المتحدث قال: porque es muy tranquila y luminosa.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-rc-ex-1",
+        "speechEs": "Me gusta mucho mi casa porque es muy tranquila y luminosa.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_rc_1_a"
+          ],
+          "selectedOptionId": "a1_rc_1_a"
+        },
+        "errorFeedback": {
+          "a1_rc_1_b": "الصوت ذكر tranquila y luminosa وليس barata.",
+          "a1_rc_1_c": "لم يُذكر الشاطئ في التسجيل."
+        }
+      },
+      {
+        "id": "a1_rc_2_connector",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر أداة التعليل المناسبة لبيان السبب (لأن).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نعلل سبب إعجابنا بالمنزل بـ «لأن»؟",
+        "stemEs": "Me gusta mi habitación ____ es muy cómoda.",
+        "stemAr": "تعجبني غرفتي ____ مريحة جداً.",
+        "options": [
+          {
+            "id": "a1_rc_2_a",
+            "text": "porque",
+            "textAr": "لأن (أداة التعليل متصلة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_rc_2_b",
+            "text": "¿por qué?",
+            "textAr": "لماذا (سؤال منفصل)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: ¿por qué? للاستفهام، أما للإجابة والتعليل فنكتب porque ككلمة واحدة وبلا نبرة."
+          },
+          {
+            "id": "a1_rc_2_c",
+            "text": "pero",
+            "textAr": "لكن (استدراك)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة تذكر سبباً وليس استدراكاً."
+          }
+        ],
+        "targetVocab": [
+          "habitación",
+          "gustar"
+        ],
+        "explanationAr": "أداة بيان السبب هي: porque.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_rc_2_a"
+          ],
+          "selectedOptionId": "a1_rc_2_a"
+        },
+        "errorFeedback": {
+          "a1_rc_2_b": "خطأ: ¿por qué? للاستفهام، أما للإجابة والتعليل فنكتب porque ككلمة واحدة وبلا نبرة.",
+          "a1_rc_2_c": "الجملة تذكر سبباً وليس استدراكاً."
+        }
+      },
+      {
+        "id": "a1_rc_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة المنزل بالإسبانية في الفراغ.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (casa) في الفراغ:",
+        "stemEs": "Por las tardes descanso en ____.",
+        "stemAr": "في المساء أستريح في الـ____.",
+        "targetVocab": [
+          "casa"
+        ],
+        "explanationAr": "كلمة منزل أو بيت بالإسبانية هي: casa.",
+        "answerKey": {
+          "accepted": [
+            "casa"
+          ],
+          "acceptableAnswers": [
+            "casa"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_rc_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف المنزل وصفاً متكاملاً.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_rc_4_order_t1",
+            "kind": "token",
+            "text": "Vivo"
+          },
+          {
+            "id": "a1_rc_4_order_t2",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "a1_rc_4_order_t3",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "a1_rc_4_order_t4",
+            "kind": "token",
+            "text": "casa"
+          },
+          {
+            "id": "a1_rc_4_order_t5",
+            "kind": "token",
+            "text": "muy"
+          },
+          {
+            "id": "a1_rc_4_order_t6",
+            "kind": "token",
+            "text": "tranquila."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Vivo en una casa muy tranquila."
+          ],
+          "tokenOrder": [
+            "a1_rc_4_order_t1",
+            "a1_rc_4_order_t2",
+            "a1_rc_4_order_t3",
+            "a1_rc_4_order_t4",
+            "a1_rc_4_order_t5",
+            "a1_rc_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Vivo + حرف الجر en + أداة التنكير una + الاسم casa + الظرف muy + الصفة tranquila.",
+        "targetVocab": [
+          "casa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_rc_5_verb_live",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر تصريف فعل السكن والعيش (vivir) مع ضمير المتكلم (yo).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تقول: «أنا أعيش في مدريد»؟",
+        "stemEs": "Yo ____ en un piso céntrico.",
+        "stemAr": "أنا ____ في شقة وسط المدينة.",
+        "options": [
+          {
+            "id": "a1_rc_5_a",
+            "text": "vivo",
+            "textAr": "أعيش (تصريف المتكلم)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_rc_5_b",
+            "text": "vives",
+            "textAr": "أنت تعيش",
+            "isCorrect": false,
+            "distractorRationaleAr": "vives تصريف ضمير المخاطب tú."
+          },
+          {
+            "id": "a1_rc_5_c",
+            "text": "vive",
+            "textAr": "هو يعيش",
+            "isCorrect": false,
+            "distractorRationaleAr": "vive تصريف الغائب él/ella."
+          }
+        ],
+        "targetVocab": [
+          "casa"
+        ],
+        "explanationAr": "تصريف فعل vivir مع yo هو: vivo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_rc_5_a"
+          ],
+          "selectedOptionId": "a1_rc_5_a"
+        },
+        "errorFeedback": {
+          "a1_rc_5_b": "vives تصريف ضمير المخاطب tú.",
+          "a1_rc_5_c": "vive تصريف الغائب él/ella."
+        }
+      },
+      {
+        "id": "a1_rc_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة وصف المنزل وثقتك فيه بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت معبر وواضح:",
+        "stemEs": "Mi casa tiene un salón luminoso y me gusta mucho.",
+        "stemAr": "منزلي يضم صالوناً مضيئاً ويعجبني كثيراً.",
+        "audioKey": "pending/a1-rc-ex-6",
+        "targetVocab": [
+          "casa",
+          "salón",
+          "gustar"
+        ],
+        "explanationAr": "احرص على الربط السلس بين lu-mi-no-so y me gus-ta mu-cho.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-rc-ex-6",
+          "modelAnswer": "Mi casa tiene un salón luminoso y me gusta mucho."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}
