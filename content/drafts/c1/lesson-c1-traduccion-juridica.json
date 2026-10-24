@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-traduccion-juridica",
+    "titleAr": "الترجمة القانونية وصياغة العقود: Traducción jurídica y redacción contractual",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u6-translation",
+    "objectiveAr": "أن يترجم ويصيغ المتعلم النصوص القانونية والعقود الدولية محترماً المصطلحات المعيارية والأسلوب القضائي الصارم (cláusula resolutoria, de conformidad con, sin perjuicio de).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "cláusula",
+      "resolutoria",
+      "conformidad",
+      "perjuicio",
+      "otorgar",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmulas prepositivas jurídicas: de conformidad con lo dispuesto en el artículo",
+      "Fórmulas de reserva de derechos: sin perjuicio de las acciones legales pertinentes",
+      "Tipología de estipulaciones: cláusula resolutoria expresa por incumplimiento",
+      "Actos solemnes: otorgar escritura pública ante notario colegiado"
+    ],
+    "grammarTopics": [
+      "lenguaje-juridico-c1",
+      "traduccion-contractual-espanol-arabe"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مراجعة الصياغة القانونية لاتفاقية تجارية كبرى بين شركتين دوليتين في مدريد.",
+        "settingAr": "مكتب موثق العقود والعدل (Notaría) في شارع كاستيانا، مدريد",
+        "lines": [
+          {
+            "es": "De conformidad con lo dispuesto en la legislación mercantil, el contrato entrará en vigor de inmediato.",
+            "ar": "بموجب ما تنص عليه التشريعات التجارية، يدخل هذا العقد حيز النفاذ فوراً.",
+            "arEg": "طبقاً للي نص عليه القانون التجاري، العقد ده هيسري ويتنفذ من دلوقتي علطول.",
+            "audioKey": "pending/c1-u6-jur-1"
+          },
+          {
+            "es": "Hemos incorporado una cláusula resolutoria en caso de incumplimiento manifiesto de los plazos.",
+            "ar": "لقد أدرجنا شرطاً فاسخاً وصريحاً في حال الإخلال البين بالمواعيد والآجال المحددة.",
+            "arEg": "حطينا بند شرط فاسخ صريح يفسخ العقد لو أي طرف اتأخر وأخل بالمواعيد المتفق عليها.",
+            "audioKey": "pending/c1-u6-jur-2"
+          },
+          {
+            "es": "Todo ello se entenderá sin perjuicio de las indemnizaciones por daños a que hubiere lugar.",
+            "ar": "كل ذلك يفهم ويسري دون الإخلال بحق المطالبة بالتعويضات عن الأضرار متى كان لها مقتضى.",
+            "arEg": "كل الكلام ده بيسري من غير ما يضيع حق الشركة في طلب تعويضات عن أي خساير أو أضرار.",
+            "audioKey": "pending/c1-u6-jur-3"
+          },
+          {
+            "es": "Las partes comparecen voluntariamente para otorgar esta escritura pública ante notario.",
+            "ar": "يمثل الطرفان طواعية واختياراً لتحرير وتوثيق هذا السند الرسمي أمام كاتب العدل.",
+            "arEg": "الطرفين حاضرين بمزاجهم ورضاهم التام عشان يوثقوا العقد الرسمي ده قدام الشهر العقاري.",
+            "audioKey": "pending/c1-u6-jur-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-tju-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى نص البند التعاقدي واكتشف المصطلح الدال على 'الشرط الفاسخ للعقد عند الإخلال'.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح القانوني الدال على البند الذي يبطل العقد ويفسخه عند وقوع المخالفة؟",
+        "stemEs": "Hemos incorporado una cláusula resolutoria en caso de incumplimiento manifiesto de los plazos.",
+        "stemAr": "لقد أدرجنا شرطاً فاسخاً وصريحاً في حال الإخلال البين بالمواعيد والآجال المحددة.",
+        "options": [
+          {
+            "id": "ex-c1-tju-1_a",
+            "text": "Una cláusula resolutoria",
+            "textAr": "شرط فاسخ ينهي الرابطة العقدية عند الإخلال بالالتزام",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-tju-1_b",
+            "text": "Una cláusula cómica",
+            "textAr": "بند فكاهي للترفيه عن الموقعين",
+            "isCorrect": false,
+            "distractorRationaleAr": "العقود وثائق إلزامية لا هزل فيها."
+          },
+          {
+            "id": "ex-c1-tju-1_c",
+            "text": "Una cláusula provisional",
+            "textAr": "بند غير ملزم يزول بعد يوم واحد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشرط الفاسخ جزاء صارم وليس بنداً عابراً."
+          }
+        ],
+        "targetVocab": [
+          "cláusula",
+          "resolutoria"
+        ],
+        "explanationAr": "«La cláusula resolutoria» في القانون المدني والتجاري هي البند الذي يتفق فيه الأطراف على فسخ العقد تلقائياً بمجرد إخلال أحدهما بتعهداته.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u6-jur-2",
+        "speechEs": "Hemos incorporado una cláusula resolutoria en caso de incumplimiento manifiesto de los plazos.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-tju-1_a"
+          ],
+          "selectedOptionId": "ex-c1-tju-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-tju-1_b": "العقود وثائق إلزامية لا هزل فيها.",
+          "ex-c1-tju-1_c": "الشرط الفاسخ جزاء صارم وليس بنداً عابراً."
+        }
+      },
+      {
+        "id": "ex-c1-tju-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي العبارة القانونية المعيارية المقابلة لـ «بموجب أحكام المادة / طبقاً لما هو منصوص عليه»؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التعبير الديباجي القضائي السليم:",
+        "stemEs": "____ lo dispuesto en la normativa vigente, se procede a la firma del acta.",
+        "stemAr": "بموجب ما هو منصوص عليه في اللوائح السارية، يُشرع في توقيع محضر الاجتماع.",
+        "options": [
+          {
+            "id": "ex-c1-tju-2_a",
+            "text": "De conformidad con",
+            "textAr": "بموجب / طبقاً لما تنص عليه التشريعات المعمول بها",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-tju-2_b",
+            "text": "En contra de",
+            "textAr": "على عكس وتحدياً لما يقره القانون",
+            "isCorrect": false,
+            "distractorRationaleAr": "إقرار بمخالفة القانون."
+          },
+          {
+            "id": "ex-c1-tju-2_c",
+            "text": "A pesar de",
+            "textAr": "على الرغم من وجود المادة القانونية",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الاستدراك والمخالفة."
+          }
+        ],
+        "targetVocab": [
+          "conformidad",
+          "rigor"
+        ],
+        "explanationAr": "تعد صيغة «De conformidad con lo dispuesto en...» من أكثر التراكيب النمطية استقراراً في صياغة العقود والأحكام القضائية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-tju-2_a"
+          ],
+          "selectedOptionId": "ex-c1-tju-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-tju-2_b": "إقرار بمخالفة القانون.",
+          "ex-c1-tju-2_c": "تفيد الاستدراك والمخالفة."
+        }
+      },
+      {
+        "id": "ex-c1-tju-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل عبارة التحفظ القانوني الشهيرة الدالة على الحفاظ على الحقوق الأخرى: «sin ____ de».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة الدالة على الضرر أو المساس بالحق:",
+        "stemEs": "La sanción se aplicará sin ____ de las responsabilidades penales correspondientes.",
+        "stemAr": "تُطبق العقوبة دون الإخلال أو المساس بالمسؤوليات الجنائية المترتبة على الفعل.",
+        "targetVocab": [
+          "perjuicio"
+        ],
+        "explanationAr": "الصيغة القانونية القياسية هي «sin perjuicio de» وتقابل في لغة المحاكم العربية «دون إخلال بـ / دون مساس بحق كذا».",
+        "answerKey": {
+          "accepted": [
+            "perjuicio"
+          ],
+          "acceptableAnswers": [
+            "perjuicio"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-tju-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفعل القانوني المستخدم للتعبير عن «توثيق وتحرير العقد الرسمي أو الوصية أمام كاتب العدل»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل الرسمي للإجراء التوثيقي المعتمد:",
+        "stemEs": "Los comparecientes deciden ____ escritura pública de compraventa.",
+        "stemAr": "يقرر الحاضرون توثيق وتحرير سند رسمي بالبيع والشراء أمام كاتب العدل.",
+        "options": [
+          {
+            "id": "ex-c1-tju-4_a",
+            "text": "otorgar",
+            "textAr": "تحرير وتوثيق وإبرام السند القانوني الرسمي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-tju-4_b",
+            "text": "regalar",
+            "textAr": "إهداء الوثيقة كهدية مجانية للأصدقاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى عادي لا ينتمي للتوثيق القضائي."
+          },
+          {
+            "id": "ex-c1-tju-4_c",
+            "text": "romper",
+            "textAr": "تمزيق الأوراق وإتلافها",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس إبرام العقد وتوثيقه."
+          }
+        ],
+        "targetVocab": [
+          "otorgar",
+          "cláusula"
+        ],
+        "explanationAr": "في لغة التوثيق القضائي يقال «otorgar testamento / otorgar escritura» بمعنى منح الإرادة الرسمية وإبرام المحرر أمام السلطة المختصة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-tju-4_a"
+          ],
+          "selectedOptionId": "ex-c1-tju-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-tju-4_b": "معنى عادي لا ينتمي للتوثيق القضائي.",
+          "ex-c1-tju-4_c": "عكس إبرام العقد وتوثيقه."
+        }
+      },
+      {
+        "id": "ex-c1-tju-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء ديباجة تعاقدية قانونية تثبت الشرعية الإجرائية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-tju-5_t1",
+            "kind": "token",
+            "text": "De"
+          },
+          {
+            "id": "ex-c1-tju-5_t2",
+            "kind": "token",
+            "text": "conformidad"
+          },
+          {
+            "id": "ex-c1-tju-5_t3",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-c1-tju-5_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-tju-5_t5",
+            "kind": "token",
+            "text": "ley"
+          },
+          {
+            "id": "ex-c1-tju-5_t6",
+            "kind": "token",
+            "text": "vigente"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "De conformidad con la ley vigente"
+          ],
+          "tokenOrder": [
+            "ex-c1-tju-5_t1",
+            "ex-c1-tju-5_t2",
+            "ex-c1-tju-5_t3",
+            "ex-c1-tju-5_t4",
+            "ex-c1-tju-5_t5",
+            "ex-c1-tju-5_t6"
+          ]
+        },
+        "explanationAr": "حرف الجر والاسم المجرور De conformidad متبوعاً بحرف الجر con والاسم الموصوف la ley vigente.",
+        "targetVocab": [
+          "conformidad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-tju-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه العبارة التعاقدية بنبرة حازمة توحي بالهيبة الإلزامية للنصوص القانونية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الوقفات الإلزامية في العقود:",
+        "stemEs": "Se incluye una cláusula resolutoria expresa.",
+        "stemAr": "يُدرج في هذا العقد شرط فاسخ وصريح ونافذ.",
+        "audioKey": "pending/c1-u6-jur-spk",
+        "targetVocab": [
+          "cláusula",
+          "resolutoria"
+        ],
+        "explanationAr": "احرص على نطق التنوين الإيقاعي الدقيق لكلمة cláusula ونبر مقطع -to- في resolutoria بوضوح تام.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u6-jur-spk",
+          "modelAnswer": "Se incluye una cláusula resolutoria expresa."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -8,6 +8,8 @@ import { Transparency, NotFound } from './pages/Misc';
 import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
+import { Search } from './pages/Search';
+import { Placement } from './pages/Placement';
 
 function Shell() {
   const [path, navigate] = useRoute();
@@ -15,7 +17,7 @@ function Shell() {
 
   // حماية المسارات: غير المسجّل يُوجَّه للدخول (بعد معرفة الحالة)
   const isProtected =
-    path === '/settings' || path === '/learn' || path.startsWith('/learn/') || path === '/review' || path.startsWith('/review/');
+    path === '/settings' || path === '/learn' || path.startsWith('/learn/') || path === '/review' || path.startsWith('/review/') || path === '/placement';
   useEffect(() => {
     if (!loading && !user && isProtected) {
       navigate('/login');
@@ -35,12 +37,16 @@ function Shell() {
     page = user ? <Dashboard navigate={navigate} /> : <Login navigate={navigate} />;
   } else if (path === '/learn') {
     page = user ? <Dashboard navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/placement') {
+    page = user ? <Placement navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/review') {
     page = user ? <Review navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/review/packs') {
     page = user ? <ReviewPacks navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/settings') {
     page = user ? <Settings navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/search' || path.startsWith('/search')) {
+    page = <Search navigate={navigate} initialQuery={typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('q') ?? '') : ''} />;
   } else if (path === '/transparency') {
     page = <Transparency />;
   } else {
@@ -56,6 +62,7 @@ function Shell() {
           <span>Español بالعربي</span>
         </a>
         <span className="spacer" />
+        <a href="/search" className="btn ghost sm" data-testid="nav-search" onClick={e => { e.preventDefault(); navigate('/search'); }}>🔍 بحث</a>
         {user ? (
           <>
             <a href="/learn" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحتي</a>

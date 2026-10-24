@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-pluscuamperfecto-narracion",
+    "titleAr": "الماضي الأسبق: تركيب واستخدام Pretérito Pluscuamperfecto في السرد",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u1-narrating",
+    "objectiveAr": "أن يستخدم المتعلم زمن الماضي الأسبق (Había + Participio) لربط الأحداث السابقة لحدث ماضٍ آخر، ويفهم دلالته التتابعية بدقة مقارنة مع الماضي البسيط.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "terminar",
+      "salir",
+      "llegar",
+      "empezar",
+      "llamar",
+      "descubrir",
+      "olvidar",
+      "explicar"
+    ],
+    "reviewVocabulary": [
+      "tren",
+      "estación",
+      "amigo",
+      "tiempo"
+    ],
+    "targetStructures": [
+      "Cuando llegué a la estación, el tren ya había salido.",
+      "había, habías, había, habíamos, habíais, habían + participio pasado",
+      "Ya habíamos terminado la reunión cuando llamaron."
+    ],
+    "grammarTopics": [
+      "preterito-pluscuamperfecto",
+      "anterioridad-en-el-pasado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار بين عمر وخوان عن تفويت القطار في الصباح بسبب تأخر سابق: عندما وصل عمر إلى المحطة كان القطار قد غادر بالفعل.",
+        "settingAr": "في مكتب العمل صباح الثلاثاء",
+        "lines": [
+          {
+            "es": "¿Por qué llegaste tarde hoy a la oficina, Omar?",
+            "ar": "لماذا وصلتَ متأخرًا اليوم إلى المكتب يا عمر؟",
+            "arEg": "ليه وصلت متأخر النهاردة المكتب يا عمر؟",
+            "audioKey": "pending/b1-plus-sc-1"
+          },
+          {
+            "es": "Porque cuando llegué a la estación, el tren ya había salido.",
+            "ar": "لأنه عندما وصلتُ إلى المحطة، كان القطار قد غادر بالفعل.",
+            "arEg": "عشان لما وصلت المحطة، القطر كان خلاص طلع.",
+            "audioKey": "pending/b1-plus-sc-2"
+          },
+          {
+            "es": "¿Y no habías mirado el horario de salida antes?",
+            "ar": "وهل لم تكن قد اطلعت على جدول المواعيد قبل ذلك؟",
+            "arEg": "ومكنتش بصيت في جدول المواعيد قبلها؟",
+            "audioKey": "pending/b1-plus-sc-3"
+          },
+          {
+            "es": "Sí, pero había olvidado que hoy cambiaba el horario de invierno.",
+            "ar": "نعم، لكني كنتُ قد نسيتُ أن جدول الشتاء يتغير اليوم.",
+            "arEg": "أيوة، بس كنت نسيت إن جدول الشتا بيتغير النهاردة.",
+            "audioKey": "pending/b1-plus-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_plus_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى عمر واختر ما حدث أولًا في الواقع قبل وصوله إلى المحطة.",
+        "audioKey": "pending/b1-plus-sc-2",
+        "speechEs": "Porque cuando llegué a la estación, el tren ya había salido.",
+        "options": [
+          {
+            "id": "b1_plus_1_a",
+            "text": "El tren salió antes de su llegada",
+            "isCorrect": true,
+            "textAr": "مغادرة القطار تمت قبل وصول عمر"
+          },
+          {
+            "id": "b1_plus_1_b",
+            "text": "Omar llegó y esperó al tren",
+            "isCorrect": false,
+            "textAr": "عمر وصل وانتظر القطار",
+            "distractorRationaleAr": "عمر لم ينتظر القطار بل فاته لأن القطار سبق بالخروج."
+          },
+          {
+            "id": "b1_plus_1_c",
+            "text": "El tren nunca llegó a la estación",
+            "isCorrect": false,
+            "textAr": "القطار لم يصل إلى المحطة إطلاقًا",
+            "distractorRationaleAr": "القطار جاء وغادر بالفعل قبل وصول عمر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_plus_1_a"
+          ]
+        },
+        "explanationAr": "صيغة Pluscuamperfecto في «había salido» تعبر دائمًا عن الحدث الأسبق زمنيًا مقارنة بالماضي البسيط «llegué».",
+        "errorFeedback": {
+          "b1_plus_1_b": "عمر لم ينتظر؛ القطار كان قد خرج قبله.",
+          "b1_plus_1_c": "القطار خرج في موعده لكن عمر تأخر."
+        },
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "salir",
+          "llegar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_plus_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر التصريف الصحيح للفعل المساعد haber لإكمال صيغة الماضي الأسبق مع الضمير nosotros.",
+        "stemEs": "Cuando nos llamaron, nosotros ya ____ terminado la tarea.",
+        "stemAr": "عندما اتصلوا بنا، كنا نحن قد ____ أنهينا المهمة بالفعل.",
+        "options": [
+          {
+            "id": "b1_plus_2_a",
+            "text": "habíamos",
+            "isCorrect": true,
+            "textAr": "كنا قد (للجمع المتكلم)"
+          },
+          {
+            "id": "b1_plus_2_b",
+            "text": "había",
+            "isCorrect": false,
+            "textAr": "كان قد (للمفرد)",
+            "distractorRationaleAr": "había صيغة للمفرد، والفاعل هنا هو ضمير الجمع nosotros."
+          },
+          {
+            "id": "b1_plus_2_c",
+            "text": "hemos",
+            "isCorrect": false,
+            "textAr": "لقد قمنا (ماضٍ قريب حاضر)",
+            "distractorRationaleAr": "hemos صيغة مضارع تام وليست ماضيًا أسبق."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_plus_2_a"
+          ]
+        },
+        "explanationAr": "مع ضمير المتكلمين nosotros، تصريف الفعل المساعد haber في الماضي الناقص هو habíamos.",
+        "errorFeedback": {
+          "b1_plus_2_b": "había للمفرد (yo / él / ella / usted).",
+          "b1_plus_2_c": "hemos صيغة مضارع تام (Pretérito Perfecto) وليست ماضيًا أسبق."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "terminar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_plus_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب صيغة الماضي الأسبق من الفعل salir مع الغائب المفرد (el tren).",
+        "stemEs": "Cuando llegué al andén, el tren ya ____ salido.",
+        "stemAr": "عندما وصلتُ إلى الرصيف، كان القطار قد ____ غادر بالفعل.",
+        "answerKey": {
+          "accepted": [
+            "había"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الماضي الأسبق يتكون من had + اسم المفعول: «había salido» للمفرد الغائب.",
+        "errorFeedback": {
+          "ha": "ha مضارع تام، وسياق الجملة في الماضي الأسبق.",
+          "habían": "habían للجمع، والفاعل قطار واحد مفرد."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "salir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_plus_4_reply",
+        "type": "word_choice",
+        "instructionAr": "اختر التكملة المنطقية لتفسير سبب عدم مفاجأة المعلم بالنتيجة.",
+        "stemEs": "El profesor no se sorprendió porque el alumno ya le ____ explicado la situación.",
+        "stemAr": "لم يتفاجأ الأستاذ لأن الطالب كان قد ____ شرح له الموقف مسبقًا.",
+        "options": [
+          {
+            "id": "b1_plus_4_a",
+            "text": "había",
+            "isCorrect": true,
+            "textAr": "كان قد (ماضٍ أسبق)"
+          },
+          {
+            "id": "b1_plus_4_b",
+            "text": "haya",
+            "isCorrect": false,
+            "textAr": "منصوب حاضر",
+            "distractorRationaleAr": "haya صيغة منصوب حاضر لا تناسب السرد الواقعي في الماضي."
+          },
+          {
+            "id": "b1_plus_4_c",
+            "text": "habrá",
+            "isCorrect": false,
+            "textAr": "سيكون قد (مستقبل)",
+            "distractorRationaleAr": "habrá صيغة مستقبل تام."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_plus_4_a"
+          ]
+        },
+        "explanationAr": "الشرح تم قبل لحظة عدم المفاجأة في الماضي، لذا نستخدم había explicado.",
+        "errorFeedback": {
+          "b1_plus_4_b": "haya صيغة شك في الحاضر ولا تناسب السرد الواقعي في الماضي.",
+          "b1_plus_4_c": "habrá مستقبل تام."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "explicar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_plus_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة سردية سليمة بالماضي الأسبق مع ظرف التأكيد ya.",
+        "items": [
+          {
+            "id": "b1_pl_t1",
+            "kind": "token",
+            "text": "Ellos"
+          },
+          {
+            "id": "b1_pl_t2",
+            "kind": "token",
+            "text": "ya"
+          },
+          {
+            "id": "b1_pl_t3",
+            "kind": "token",
+            "text": "habían"
+          },
+          {
+            "id": "b1_pl_t4",
+            "kind": "token",
+            "text": "empezado"
+          },
+          {
+            "id": "b1_pl_t5",
+            "kind": "token",
+            "text": "la clase."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Ellos ya habían empezado la clase."
+          ],
+          "tokenOrder": [
+            "b1_pl_t1",
+            "b1_pl_t2",
+            "b1_pl_t3",
+            "b1_pl_t4",
+            "b1_pl_t5"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي: الفاعل Ellos ثم ظرف التأكيد ya ثم التركيب الفعلي habían empezado ثم المفعول به la clase.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "empezar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_plus_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة التالية بصوت واضح مع مراعاة النبرة على حرف í في había.",
+        "stemEs": "Cuando llegué, el tren ya había salido.",
+        "stemAr": "عندما وصلتُ، كان القطار قد غادر بالفعل.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-plus-speak-1",
+          "modelAnswer": "Cuando llegué, el tren ya había salido."
+        },
+        "explanationAr": "احرص على مد الياء ونبرها بوضوح في ha-BÍ-a وعدم إسقاط النبرة الصوتية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "salir",
+          "llegar"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبر على مقطع -bí- في había",
+              "weight": 50,
+              "code": "stress_habia"
+            },
+            {
+              "labelAr": "الوقف الطبيعي بعد الفاصلة في Cuando llegué,",
+              "weight": 50,
+              "code": "pause_comma"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 3 وSueña 2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

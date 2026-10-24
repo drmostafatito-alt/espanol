@@ -55,6 +55,25 @@ describe('G: التصحيح (دالة نقية)', () => {
     expect(res.chosenFeedbackAr).toBe('لا يجيب عن السؤال');
   });
 
+    it('word_order يقبل مصفوفة الكلمات المباشرة (raw array) من اليسار لليمين', () => {
+    const key = { accepted: ['Yo te amo'], punctuationInsensitive: true };
+    // جملة من 3 كلمات: الترتيب السليم LTR
+    expect(gradeAnswer('word_order', key, ['Yo', 'te', 'amo']).correct).toBe(true);
+    // الترتيب المعكوس يُرفض
+    expect(gradeAnswer('word_order', key, ['amo', 'te', 'Yo']).correct).toBe(false);
+  });
+
+  it('word_order يتعامل مع جملة 5 كلمات وعلامات الاستفهام والكلمات المكررة', () => {
+    const key = { accepted: ['¿A qué hora quedamos mañana?'], punctuationInsensitive: true };
+    expect(gradeAnswer('word_order', key, ['¿A', 'qué', 'hora', 'quedamos', 'mañana?']).correct).toBe(true);
+    expect(gradeAnswer('word_order', key, ['mañana?', 'quedamos', 'hora', 'qué', '¿A']).correct).toBe(false);
+
+    // كلمات مكررة في نفس الجملة
+    const keyRepeat = { accepted: ['es lo que es'] };
+    expect(gradeAnswer('word_order', keyRepeat, ['es', 'lo', 'que', 'es']).correct).toBe(true);
+    expect(gradeAnswer('word_order', keyRepeat, ['lo', 'es', 'es', 'que']).correct).toBe(false);
+  });
+
   it('word_order يقبل صيغًا متعددة ويرفض الترتيب الخاطئ', () => {
     const key = { accepted: ['Quiero un café por favor', 'Quiero un café, por favor'], punctuationInsensitive: true };
     expect(gradeAnswer('word_order', key, { tokens: ['Quiero', 'un', 'café', 'por', 'favor'] }).correct).toBe(true);
@@ -139,6 +158,15 @@ describe('E: جلسة الدرس لا تسرّب الإجابات', () => {
     const prod = makeHarness({ ALLOW_UNREVIEWED_CONTENT: 'false' });
     importExemplars(prod);
     const c = await signup(prod, 'prod@example.com');
+    const res = await prod.call('/api/lessons/prea1-hola-me-llamo/session', { cookie: c });
+    expect(res.status).toBe(404);
+    prod.close();
+  });
+
+  it('في بيئة الإنتاج: المحتوى غير المنشور غير متاح (404) حتى مع وجود مفتاح التطوير', async () => {
+    const prod = makeHarness({ ENVIRONMENT: 'production', ALLOW_UNREVIEWED_CONTENT: 'true' });
+    importExemplars(prod);
+    const c = await signup(prod, 'prod-env@example.com');
     const res = await prod.call('/api/lessons/prea1-hola-me-llamo/session', { cookie: c });
     expect(res.status).toBe(404);
     prod.close();
@@ -364,6 +392,115 @@ describe('P: لوحة التقدم تُقرأ من الخادم', () => {
     const body = await h.json(await h.call('/api/me/progress', { cookie: other }));
     expect(body.stats.xp_total).toBe(0);
     expect(body.totals.lessons_completed).toBe(0);
+  });
+});
+
+describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة الخادم', () => {
+  it('يرفض المستوى غير الصالح برمز 400', async () => {
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'C2', answers: {} }),
+    });
+    expect(res.status).toBe(400);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('INVALID_LEVEL');
+  });
+
+  it('الخادم يصحح الإجابات بنفسه ويمنح XP ويفتح الدروس عند النجاح', async () => {
+    const correctAnswers = {
+      '1': 'a',
+      '2': 'a',
+      '3': 'a',
+      '4': 'a',
+      '5': 'a',
+      '6': 'a',
+      '7': 'a',
+      '8': 'a',
+      '9': 'a',
+      '10': 'a',
+    };
+
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    expect(data.passed).toBe(true);
+    expect(data.score).toBe(100);
+    expect(data.targetLevel).toBe('A1');
+    expect(data.unlockedLevel).toBe('A1');
+    expect(data.xpAwarded).toBe(40);
+
+    // التحقق من أن لوحة التقدم تعكس فتح المستوى ورصيد الـ XP
+    const progRes = await h.call('/api/me/progress', { cookie });
+    const prog = await h.json(progRes);
+    expect(prog.stats.xp_total).toBe(40);
+
+    // درس A1 أصبح متاحًا (غير مقفل)
+    const a1Lesson = prog.lessons.find((l: { slug: string }) => l.slug === 'a1-un-cafe-por-favor');
+    expect(a1Lesson).toBeDefined();
+    expect(a1Lesson.is_unlocked).toBe(true);
+  });
+
+  it('الخادم يتجاهل الدرجة المرسلة من العميل إذا كانت الإجابات خاطئة (منع التلاعب)', async () => {
+    const fakeAnswers = {
+      '1': 'wrong',
+      '2': 'wrong',
+    };
+
+    // العميل يحاول إرسال score: 100 للتلاعب
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: fakeAnswers, score: 100 }),
+    });
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    expect(data.passed).toBe(false);
+    expect(data.score).toBe(0); // الخادم صحح الإجابات الفعلية ووجد 0 صحيحة
+    expect(data.xpAwarded).toBe(0);
+    expect(data.unlockedLevel).toBe('PREA1');
+  });
+
+  it('منع تكرار منح XP عند إعادة اجتياز الاختبار لنفس المستوى (Idempotency)', async () => {
+    const correctAnswers = {
+      '1': 'a',
+      '2': 'a',
+      '3': 'a',
+      '4': 'a',
+      '5': 'a',
+      '6': 'a',
+      '7': 'a',
+      '8': 'a',
+      '9': 'a',
+      '10': 'a',
+    };
+
+    // المحاولة الأولى
+    const res1 = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    const d1 = await h.json(res1);
+    expect(d1.xpAwarded).toBe(40);
+
+    // المحاولة الثانية لنفس المستوى
+    const res2 = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    const d2 = await h.json(res2);
+    expect(d2.passed).toBe(true);
+    expect(d2.xpAwarded).toBe(0); // لم يحصل على نقاط مضاعفة
+
+    const progRes = await h.call('/api/me/progress', { cookie });
+    const prog = await h.json(progRes);
+    expect(prog.stats.xp_total).toBe(40);
   });
 });
 

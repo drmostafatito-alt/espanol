@@ -69,4 +69,58 @@ test.describe('مسار الدرس', () => {
     );
     expect(overflow).toBeLessThanOrEqual(1);
   });
+
+  test('لوحة التعلّم تعرض بطاقة خطوتك التالية واختبار تحديد المستوى وتبويبات المستويات', async ({ page }) => {
+    await signupThroughApi(page, uniqueEmail('journey'));
+    await page.goto('/learn');
+
+    // بطاقة خطوتك التالية تشير إلى أول درس تمهيدي للمتعلم الجديد
+    await expect(page.getByTestId('next-step-hero')).toBeVisible();
+    await expect(page.getByTestId('next-lesson-btn')).toBeVisible();
+
+    // دعوة تحديد المستوى ظاهرة
+    await expect(page.getByTestId('placement-cta')).toBeVisible();
+
+    // تبويبات المستويات موجودة وتعمل
+    await expect(page.getByRole('tab', { name: 'التمهيد Pre-A1' })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'مستوى A1' })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'مسار السفر' })).toBeVisible();
+
+    // الضغط على بطاقة خطوتك التالية ينقل مباشرة لأول درس
+    await page.getByTestId('next-lesson-btn').click();
+    await expect(page).toHaveURL(new RegExp(`/learn/${PREA1}`));
+  });
+
+  test('اختبار تحديد المستوى /placement: يجيب المتعلم ويُفتح له المستوى مع XP', async ({ page }) => {
+    await signupThroughApi(page, uniqueEmail('placement'));
+    await page.goto('/placement');
+
+    // صفحة تحديد المستوى تفتح وتعرض الأسئلة
+    await expect(page.getByText('اختبار تحديد المستوى')).toBeVisible();
+    await expect(page.getByText('السؤال 1 من 10')).toBeVisible();
+
+    // إجابة الأسئلة العشرة (اختيار أول خيار دائماً وهو الصحيح في بنك الأسئلة)
+    for (let i = 1; i <= 10; i++) {
+      const firstChoice = page.locator('.choice').first();
+      await firstChoice.click();
+      if (i < 10) {
+        await page.getByRole('button', { name: 'التالي →' }).click();
+      }
+    }
+
+    // الضغط على إنهاء التقييم
+    const finishBtn = page.getByRole('button', { name: /إنهاء التقييم/ });
+    await expect(finishBtn).toBeEnabled();
+    await finishBtn.click();
+
+    // ظهور النتيجة والتهنئة والمكافأة
+    await expect(page.getByText('نتيجة اختبار تحديد المستوى')).toBeVisible();
+    await expect(page.getByText(/المستوى الموصى به/)).toBeVisible();
+    await expect(page.getByText(/تمت إضافة/)).toBeVisible();
+
+    // العودة إلى اللوحة للتحقق من فتح المستوى واحتساب النقاط
+    await page.getByRole('button', { name: /الانتقال إلى خريطة المنهج/ }).click();
+    await expect(page).toHaveURL('/learn');
+    await expect(page.locator('[data-testid="stat-xp"] .num')).not.toHaveText('0');
+  });
 });

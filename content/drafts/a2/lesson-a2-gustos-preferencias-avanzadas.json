@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-gustos-preferencias-avanzadas",
+    "unitSlug": "a2-u8-hobbies",
+    "levelCode": "A2",
+    "titleAr": "التعبير المتقدم عن الميول: أفعال encantar وinteresar وfascinar وmolestar",
+    "titleEs": "Expresar gustos e intereses avanzados",
+    "subtitleAr": "بناء الجمل مع الأفعال المشابهة لـ gustar وضمائر المفعول غير المباشر",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطبق المتعلم بنية الأفعال المشابهة لـ gustar مع ضمائر المفعول غير المباشر (me, te, le, nos, os, les).",
+        "أن يعبر عن درجات مختلفة من الإعجاب والشغف والاهتمام: encantar, fascinar, interesar, apasionar, molestar.",
+        "أن يطابق بين صيغة الفعل المفرد أو الجمع والاسم الذي يليه."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الأفعال الشبيهة بـ Gustar",
+          "explanationAr": "الأفعال مثل **encantar** (يُعجب بشدة / يعشق)، و**interesar** (يهم / يثير اهتمام)، و**fascinar** (يسحر / يفتن)، و**molestar** (يزعج / يضايق) تصرف مثل **gustar** تماماً:\n- تأخذ ضمير مفعول غير مباشر يعود على الشخص: **me / te / le / nos / os / les**.\n- يأتي الفعل في صيغتين فقط غالباً:\n  * المفرد (-a / -e): إذا تلاه فعل في المصدر أو اسم مفرد (Me encanta la música / Me fascina viajar).\n  * الجمع (-an / -en): إذا تلاه اسم جمع (Nos interesan los idiomas / Les molestan los ruidos)."
+        }
+      ],
+      "commonMistakesAr": [
+        "تصريف الفعل مع الفاعل الحقيقي للشعور (الخطأ الشائع: *Yo encanto la música*، والصواب الحصري: Me encanta la música).",
+        "وضع صيغة الجمع للفعل عندما يليه فعلان في المصدر (الصواب: Me gusta leer y escribir بصيغة المفرد لأن المصادر تعامل معاملة المفرد)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في اللهجة المصرية نقول: «بيعجبني، بيشدني، بيبهرني، بيعصبني». بالإسبانية: me gusta, me interesa, me fascina, me molesta."
+        }
+      ],
+      "culturalNoteAr": "الإسبان يعبرون عن شغفهم الشديد بكلمات مثل 'me chifla' أو 'me apasiona' في المحادثات الودية اليومية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-gustos-preferencias-avanzadas-intro",
+        "type": "explanation",
+        "titleAr": "أفعال التفضيل والشغف والاهتمام",
+        "bodyAr": "درجات التعبير:\n- **encantar**: يعشق / يعجبه جداً (درجة أعلى من gustar)\n- **interesar**: يهتم بـ / يثير فضوله\n- **fascinar**: يبهره / يسحره\n- **molestar**: يضايقه / يزعجه\n- **la pasión**: الشغف / العاطفة القوية\n- **el pasatiempo**: الهواية / التسلية المفضلة",
+        "examples": [
+          {
+            "es": "A María le fascinan las novelas históricas.",
+            "ar": "ماريا تسحرها الروايات التاريخية."
+          },
+          {
+            "es": "¿Te interesan los documentales de ciencia?",
+            "ar": "هل تهمك الأفلام الوثائقية العلمية؟"
+          },
+          {
+            "es": "Nos molesta mucho el ruido de la calle.",
+            "ar": "يزعجنا كثيراً ضجيج الشارع."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "encantar",
+      "interesar",
+      "fascinar",
+      "molestar",
+      "pasión",
+      "pasatiempo"
+    ],
+    "reviewVocabulary": [
+      "gustar",
+      "música"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يطبق المتعلم بنية الأفعال المشابهة لـ gustar مع ضمائر المفعول غير المباشر (me, te, le, nos, os, les).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-gus-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل المناسبة مع الاسم الجمع",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي صيغة لفعل interesar هي الصحيحة مع الاسم الجمع los idiomas؟",
+        "stemEs": "A nosotros nos _____ mucho los idiomas extranjeros.",
+        "stemAr": "نحن تهمنا كثيراً اللغات الأجنبية.",
+        "options": [
+          {
+            "id": "ex-a2-gus-1_a",
+            "text": "interesan",
+            "textAr": "صيغة الجمع لتطابق الفاعل المتأخر los idiomas (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-gus-1_b",
+            "text": "interesa",
+            "textAr": "صيغة مفرد لا تطابق الاسم الجمع los idiomas",
+            "isCorrect": false,
+            "distractorRationaleAr": "los idiomas اسم جمع يتطلب فعلاً ينتهي بـ -an."
+          },
+          {
+            "id": "ex-a2-gus-1_c",
+            "text": "interesamos",
+            "textAr": "تصريف خاطئ لشخص المتكلم nosotros",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل يشبه gustar ولا يُصرف مع الضمير nos مباشرة بل مع الاسم التالي."
+          }
+        ],
+        "targetVocab": [
+          "interesar"
+        ],
+        "explanationAr": "الفعل يطابق الاسم التالي: los idiomas جمع، إذن nos interesan.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-gus-1_a"
+          ],
+          "selectedOptionId": "ex-a2-gus-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-gus-1_b": "los idiomas اسم جمع يتطلب فعلاً ينتهي بـ -an.",
+          "ex-a2-gus-1_c": "الفعل يشبه gustar ولا يُصرف مع الضمير nos مباشرة بل مع الاسم التالي."
+        }
+      },
+      {
+        "id": "ex-a2-gus-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بضمير المفعول غير المباشر المناسب",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل بضمير المفعول المناسب للغائب (A ella)",
+        "stemEs": "A ella _____ fascina la astronomía y el espacio.",
+        "stemAr": "هي يسحرها علم الفلك والفضاء.",
+        "targetVocab": [
+          "fascinar"
+        ],
+        "explanationAr": "مع الغائب المفرد (ella) نستخدم الضمير le: A ella le fascina.",
+        "answerKey": {
+          "accepted": [
+            "le"
+          ],
+          "acceptableAnswers": [
+            "le"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-gus-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل المعبر عن الانزعاج والضيق",
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي فعل يعبر عن الشعور بالانزعاج من الأصوات العالية؟",
+        "stemEs": "Me _____ mucho el desorden y los gritos cuando estudio.",
+        "stemAr": "... كثيراً الفوضى والصراخ عندما أدرس.",
+        "options": [
+          {
+            "id": "ex-a2-gus-3_a",
+            "text": "molesta",
+            "textAr": "يزعجني / يضايقني (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-gus-3_b",
+            "text": "encanta",
+            "textAr": "يعجبني جداً / أعشق",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى متناقض؛ الفوضى لا تُعشق عند الدراسة."
+          },
+          {
+            "id": "ex-a2-gus-3_c",
+            "text": "gusta",
+            "textAr": "يعجبني",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى يتطلب التعبير عن الضيق وليس الاستحسان."
+          }
+        ],
+        "targetVocab": [
+          "molestar",
+          "encantar",
+          "gustar"
+        ],
+        "explanationAr": "فعل molestar يعني يزعج أو يضايق: Me molesta el desorden.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-gus-3_a"
+          ],
+          "selectedOptionId": "ex-a2-gus-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-gus-3_b": "المعنى متناقض؛ الفوضى لا تُعشق عند الدراسة.",
+          "ex-a2-gus-3_c": "المعنى يتطلب التعبير عن الضيق وليس الاستحسان."
+        }
+      },
+      {
+        "id": "ex-a2-gus-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة التوكيدية مع صيغة a mí me encanta",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-gus-4_t1",
+            "kind": "token",
+            "text": "A"
+          },
+          {
+            "id": "ex-a2-gus-4_t2",
+            "kind": "token",
+            "text": "mí"
+          },
+          {
+            "id": "ex-a2-gus-4_t3",
+            "kind": "token",
+            "text": "me"
+          },
+          {
+            "id": "ex-a2-gus-4_t4",
+            "kind": "token",
+            "text": "encanta"
+          },
+          {
+            "id": "ex-a2-gus-4_t5",
+            "kind": "token",
+            "text": "bailar"
+          },
+          {
+            "id": "ex-a2-gus-4_t6",
+            "kind": "token",
+            "text": "salsa"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "A mí me encanta bailar salsa"
+          ],
+          "tokenOrder": [
+            "ex-a2-gus-4_t1",
+            "ex-a2-gus-4_t2",
+            "ex-a2-gus-4_t3",
+            "ex-a2-gus-4_t4",
+            "ex-a2-gus-4_t5",
+            "ex-a2-gus-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم للتوكيد: شبه الجملة A mí ثم الضمير me ثم الفعل encanta ثم المصدر.",
+        "targetVocab": [
+          "encantar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-gus-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد شغف المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما الذي يعشقه المتحدث",
+        "stemEs": "La pintura es mi gran pasión; me encanta pintar cuadros.",
+        "stemAr": "الرسم هو شغفي الكبير؛ أعشق رسم اللوحات.",
+        "options": [
+          {
+            "id": "ex-a2-gus-5_a",
+            "text": "pasión",
+            "textAr": "شغف وعشق (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-gus-5_b",
+            "text": "molestar",
+            "textAr": "إزعاج",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يتحدث عن شغفه الإيجابي بالرسم."
+          },
+          {
+            "id": "ex-a2-gus-5_c",
+            "text": "pasatiempo",
+            "textAr": "تسلية عابرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: 'es mi gran pasión'."
+          }
+        ],
+        "targetVocab": [
+          "pasión",
+          "molestar",
+          "pasatiempo",
+          "encantar"
+        ],
+        "explanationAr": "المتحدث قال: 'La pintura es mi gran pasión'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_gustos_pasion.mp3",
+        "speechEs": "La pintura es mi gran pasión; me encanta pintar cuadros.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-gus-5_a"
+          ],
+          "selectedOptionId": "ex-a2-gus-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-gus-5_b": "المتحدث يتحدث عن شغفه الإيجابي بالرسم.",
+          "ex-a2-gus-5_c": "المتحدث قال بوضوح: 'es mi gran pasión'."
+        }
+      },
+      {
+        "id": "ex-a2-gus-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك للتعبير عن الاهتمام بالثقافات",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بنبرة معبرة عن الاهتمام:",
+        "stemEs": "Me fascinan la historia y las culturas antiguas.",
+        "stemAr": "تسحرني التاريخ والحضارات القديمة.",
+        "audioKey": "pending/a2_me_fascinan_historia.mp3",
+        "targetVocab": [
+          "fascinar"
+        ],
+        "explanationAr": "انتبه لنطق حرف s وc في fascinan.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_me_fascinan_historia.mp3",
+          "modelAnswer": "Me fascinan la historia y las culturas antiguas."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "الأفعال الشبيهة بـ Gustar"
+    ]
+  }
+}

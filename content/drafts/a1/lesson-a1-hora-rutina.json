@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-hora-rutina",
+    "titleAr": "الروتين والوقت: ربط الأنشطة اليومية بالساعات والتكرار",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u7-routine",
+    "objectiveAr": "أن يربط المتعلم بين النشاط اليومي وتوقيته المحدد باستخدام a las... وظروف التكرار (siempre, normalmente, nunca).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "newVocabulary": [
+      "hora",
+      "tiempo",
+      "siempre",
+      "nunca",
+      "desayunar",
+      "comer",
+      "cenar",
+      "trabajar",
+      "dormir"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "tres",
+      "cuatro"
+    ],
+    "targetStructures": [
+      "Me levanto siempre a las siete de la mañana.",
+      "Normalmente como a las dos y media.",
+      "Nunca ceno muy tarde."
+    ],
+    "grammarTopics": [
+      "adverbios-frecuencia-siempre-nunca",
+      "conector-a-las-horas-rutina",
+      "rutina-cronologica"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أميرة تشرح لمرشدتها الطلابية في الجامعة كيف تنظم يومها بين المحاضرات والمذاكرة.",
+        "settingAr": "مكتب الإرشاد الطلابي في الجامعة",
+        "lines": [
+          {
+            "es": "¿A qué hora empiezas tu día de estudio, Amira?",
+            "ar": "في أي ساعة تبدئين يومك الدراسي يا أميرة؟",
+            "arEg": "بتبدأي يومك الدراسي الساعة كام يا أميرة؟",
+            "audioKey": "pending/a1-hr-sc-1"
+          },
+          {
+            "es": "Siempre me levanto a las siete y desayuno a las siete y media.",
+            "ar": "دائماً أستيقظ في السابعة وأفطر في السابعة والنصف.",
+            "arEg": "دايماً بصحى سبعة وبفطر سبعة ونص.",
+            "audioKey": "pending/a1-hr-sc-2"
+          },
+          {
+            "es": "¿Y tienes tiempo libre por la tarde?",
+            "ar": "وهل لديك وقت فراغ بعد الظهر؟",
+            "arEg": "وعندك وقت فراغ بعد الضهر؟",
+            "audioKey": "pending/a1-hr-sc-3"
+          },
+          {
+            "es": "Sí, a las seis salgo a caminar con mis amigas.",
+            "ar": "نعم، في السادسة أخرج للمشي مع صديقاتي.",
+            "arEg": "أيوه، الساعة ستة بخرج أتمشى مع صحباتي.",
+            "audioKey": "pending/a1-hr-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "ظروف التكرار في الإسبانية تتدرج: siempre (دائماً = 100%)، normalmente (عادة = 80%)، a veces (أحياناً = 50%)، nunca (أبداً = 0%). وظرف nunca يأتي قبل الفعل: 'Nunca ceno tarde' أو بعده مع النفي: 'No ceno nunca tarde'.",
+    "pedagogicalRationaleAr": "الربط بين وقت الحدث وحرف الجر 'a las': Desayuno a las ocho (أفطر في الثامنة). حذف 'a' خطأ متكرر. كما يجب ضبط وضع ظروف التكرار بسلاسة.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_hr_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للوقت المحدد لنشاط الغداء.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً لموعد الغداء:",
+        "stemEs": "Normalmente como a las dos y media de la tarde.",
+        "stemAr": "عادة أتناول الغداء في الثانية والنصف بعد الظهر.",
+        "options": [
+          {
+            "id": "a1_hr_1_a",
+            "text": "A las 14:30 (dos y media)",
+            "textAr": "في الثانية والنصف",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hr_1_b",
+            "text": "A las 14:00 (dos en punto)",
+            "textAr": "في الثانية تماماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر y media (والنصف)."
+          },
+          {
+            "id": "a1_hr_1_c",
+            "text": "A las 15:30 (tres y media)",
+            "textAr": "في الثالثة والنصف",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر las dos (الثانية) وليس las tres."
+          }
+        ],
+        "targetVocab": [
+          "comer",
+          "hora"
+        ],
+        "explanationAr": "المتحدث قال: a las dos y media (14:30).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-hr-ex-1",
+        "speechEs": "Normalmente como a las dos y media de la tarde.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hr_1_a"
+          ],
+          "selectedOptionId": "a1_hr_1_a"
+        },
+        "errorFeedback": {
+          "a1_hr_1_b": "الصوت ذكر y media (والنصف).",
+          "a1_hr_1_c": "الصوت ذكر las dos (الثانية) وليس las tres."
+        }
+      },
+      {
+        "id": "a1_hr_2_adverb_siempre",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر ظرف التكرار المناسب لحدث يتكرر بنسبة 100% (دائماً).",
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "للتعبير عن أنك تفعل الشيء بشكل دائم بدون انقطاع، نستخدم:",
+        "stemEs": "Yo ____ desayuno antes de salir de casa.",
+        "stemAr": "أنا ____ أتناول الإفطار قبل الخروج من المنزل.",
+        "options": [
+          {
+            "id": "a1_hr_2_a",
+            "text": "siempre",
+            "textAr": "دائماً",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hr_2_b",
+            "text": "nunca",
+            "textAr": "أبداً (نفي تام)",
+            "isCorrect": false,
+            "distractorRationaleAr": "nunca تعني أبداً ولا تفيد الدوام."
+          },
+          {
+            "id": "a1_hr_2_c",
+            "text": "poco",
+            "textAr": "قليلاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "poco تفيد القلة."
+          }
+        ],
+        "targetVocab": [
+          "siempre",
+          "desayunar"
+        ],
+        "explanationAr": "ظرف التكرار الدائم هو: siempre.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hr_2_a"
+          ],
+          "selectedOptionId": "a1_hr_2_a"
+        },
+        "errorFeedback": {
+          "a1_hr_2_b": "nunca تعني أبداً ولا تفيد الدوام.",
+          "a1_hr_2_c": "poco تفيد القلة."
+        }
+      },
+      {
+        "id": "a1_hr_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بحرف الجر الإلزامي قبل ساعات المواعيد اليومية.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب حرف الجر (a) في الفراغ:",
+        "stemEs": "Entro a trabajar ____ las nueve de la mañana.",
+        "stemAr": "أبدأ العمل في تمام ____ التاسعة صباحاً.",
+        "targetVocab": [
+          "trabajar",
+          "hora"
+        ],
+        "explanationAr": "نستخدم دائماً حرف الجر a مع ساعات المواعيد والروتين: a las nueve.",
+        "answerKey": {
+          "accepted": [
+            "a"
+          ],
+          "acceptableAnswers": [
+            "a"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hr_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لبيان موعد النوم اليومي.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_hr_4_order_t1",
+            "kind": "token",
+            "text": "Siempre"
+          },
+          {
+            "id": "a1_hr_4_order_t2",
+            "kind": "token",
+            "text": "duermo"
+          },
+          {
+            "id": "a1_hr_4_order_t3",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "a1_hr_4_order_t4",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "a1_hr_4_order_t5",
+            "kind": "token",
+            "text": "once."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Siempre duermo a las once."
+          ],
+          "tokenOrder": [
+            "a1_hr_4_order_t1",
+            "a1_hr_4_order_t2",
+            "a1_hr_4_order_t3",
+            "a1_hr_4_order_t4",
+            "a1_hr_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب: ظرف التكرار Siempre + الفعل duermo + حرف الجر a + الأداة las + العدد once.",
+        "targetVocab": [
+          "siempre",
+          "dormir",
+          "hora"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hr_5_never",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف ننفي القيام بالنشاط إطلاقاً بكلمة «أبداً»؟",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "لنفي تناول العشاء متأخراً نستخدم:",
+        "stemEs": "Yo ____ ceno después de medianoche.",
+        "stemAr": "أنا ____ أتعشى بعد منتصف الليل.",
+        "options": [
+          {
+            "id": "a1_hr_5_a",
+            "text": "nunca",
+            "textAr": "أبداً",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hr_5_b",
+            "text": "siempre",
+            "textAr": "دائماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "siempre تثبت الحدث ولا تنفيه."
+          },
+          {
+            "id": "a1_hr_5_c",
+            "text": "mucho",
+            "textAr": "كثيراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "mucho ليست ظرف نفي."
+          }
+        ],
+        "targetVocab": [
+          "nunca",
+          "cenar"
+        ],
+        "explanationAr": "nunca تعني أبداً وتفيد النفي المطلق.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hr_5_a"
+          ],
+          "selectedOptionId": "a1_hr_5_a"
+        },
+        "errorFeedback": {
+          "a1_hr_5_b": "siempre تثبت الحدث ولا تنفيه.",
+          "a1_hr_5_c": "mucho ليست ظرف نفي."
+        }
+      },
+      {
+        "id": "a1_hr_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة بيان مواعيد روتينك بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت مسموع:",
+        "stemEs": "Ceno a las nueve y duermo a las once de la noche.",
+        "stemAr": "أتعشى في التاسعة وأنام في الحادية عشرة ليلاً.",
+        "audioKey": "pending/a1-hr-ex-6",
+        "targetVocab": [
+          "cenar",
+          "dormir",
+          "hora"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في duermo وربط a las nue-ve.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-hr-ex-6",
+          "modelAnswer": "Ceno a las nueve y duermo a las once de la noche."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

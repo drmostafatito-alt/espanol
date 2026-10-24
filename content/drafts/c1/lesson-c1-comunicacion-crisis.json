@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-comunicacion-crisis",
+    "titleAr": "إدارة الاتصال المؤسسي والأزمات الكبرى: Gestión de crisis y portavocía",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u7-complex-negotiation",
+    "objectiveAr": "أن يقود المتعلم مؤتمراً صحفياً عاصفاً في سياق أزمة كبرى، مهدئاً الرأي العام ومفنّداً الشائعات باحترافية (mitigar impacto, desmentir categóricamente, asumir responsabilidad).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "crisis",
+      "mitigar",
+      "desmentir",
+      "transparencia",
+      "rueda",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmula de comparecencia: comparecer en rueda de prensa con total transparencia",
+      "Desmentido oficial: desmentir categóricamente los bulos malintencionados",
+      "Contención del daño: implementar medidas de choque para mitigar el impacto",
+      "Asunción ética de compromisos: asumir la máxima responsabilidad ante los afectados"
+    ],
+    "grammarTopics": [
+      "comunicacion-de-crisis-c1",
+      "portavocia-y-medios-de-comunicacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مؤتمر صحفي عاجل للمتحدث الرسمي باسم شركة طيران وطنية إثر عطل سيبراني أوقف الرحلات.",
+        "settingAr": "قاعة المؤتمرات الصحفية، مطار باراخاس أدولفو سواريث، مدريد",
+        "lines": [
+          {
+            "es": "Comparecemos ante ustedes en esta rueda de prensa con el firme compromiso de actuar con absoluta transparencia.",
+            "ar": "نقف ونمثل أمامكم في هذا المؤتمر الصحفي بالتزام راسخ لا يتزعزع بالعمل بمنتهى الشفافية والوضوح.",
+            "arEg": "إحنا واقفين قدامكم في المؤتمر الصحفي ده ومعندناش أي حاجة نخبيها وملتزمين بأعلى درجات الشفافية.",
+            "audioKey": "pending/c1-u7-cri-1"
+          },
+          {
+            "es": "Queremos desmentir categóricamente las informaciones infundadas que hablan de un sabotaje interno.",
+            "ar": "نود أن نفند ونكذب بصورة قاطعة لا لبس فيها الأنباء المغلوطة التي تروج لوقوع عمل تخريبي من الداخل.",
+            "arEg": "حابين ننفي نفي قاطع كل الإشاعات المغرضة اللي بتقول إن في تخريب حصل من جوه الشركة.",
+            "audioKey": "pending/c1-u7-cri-2"
+          },
+          {
+            "es": "Hemos activado un plan de contingencia de choque para mitigar el impacto sobre los pasajeros afectados.",
+            "ar": "لقد فعلنا خطة طوارئ وتدخل سريع لتخفيف وطأة الأثر والضرر الواقع على المسافرين المتضررين.",
+            "arEg": "شغلنا خطة طوارئ عاجلة ومحكمة عشان نقلل من الأثر والتعب اللي حصله للمسافرين بتوعنا.",
+            "audioKey": "pending/c1-u7-cri-3"
+          },
+          {
+            "es": "La dirección asume la plena responsabilidad y garantizará el reembolso íntegro a cada usuario.",
+            "ar": "تتحمل إدارة الشركة كامل المسؤولية الأخلاقية والمادية وستضمن الاسترداد الكامل لأموال كل مستخدم.",
+            "arEg": "إدارة الشركة بتتحمل المسؤولية كاملة من غير تهرب وهترجع كل قرش اتدفع لكل راكب متضرر.",
+            "audioKey": "pending/c1-u7-cri-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-ccr-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى إعلان المتحدث الرسمي وحدد ما قام به رداً على الشائعات المغرضة المنتشرة في الصحافة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تعامل المتحدث الرسمي مع الشائعات العارية عن الصحة؟",
+        "stemEs": "Queremos desmentir categóricamente las informaciones infundadas que hablan de un sabotaje interno.",
+        "stemAr": "نود أن نفند ونكذب بصورة قاطعة لا لبس فيها الأنباء المغلوطة التي تروج لوقوع عمل تخريبي من الداخل.",
+        "options": [
+          {
+            "id": "ex-c1-ccr-1_a",
+            "text": "Desmentir categóricamente las informaciones falsas",
+            "textAr": "التكذيب والتفنيد القاطع والحاسم للأنباء الكاذبة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccr-1_b",
+            "text": "Confirmar los rumores y presentar la dimisión",
+            "textAr": "تأكيد صحة الشائعات وتقديم الاستقالة الجماعية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث نفى الشائعة بحزم."
+          },
+          {
+            "id": "ex-c1-ccr-1_c",
+            "text": "Recomendar la compra de acciones de la competencia",
+            "textAr": "نصح الناس بشراء أسهم الشركات المنافسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج السياق الإعلامي للأزمة."
+          }
+        ],
+        "targetVocab": [
+          "desmentir",
+          "transparencia"
+        ],
+        "explanationAr": "تعبير «desmentir categóricamente» هو الصيغة المؤسسية الأقوى لنفي الشائعات في المؤتمرات الرسمية وقطع دابر التأويلات المغرضة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u7-cri-2",
+        "speechEs": "Queremos desmentir categóricamente las informaciones infundadas que hablan de un sabotaje interno.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccr-1_a"
+          ],
+          "selectedOptionId": "ex-c1-ccr-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccr-1_b": "المتحدث نفى الشائعة بحزم.",
+          "ex-c1-ccr-1_c": "خارج السياق الإعلامي للأزمة."
+        }
+      },
+      {
+        "id": "ex-c1-ccr-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الفعل الأنسب أسلوبياً في إدارة الأزمات للدلالة على «تخفيف حدة الضرر ووطأة الأثر السلبي»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل المعبر عن تقليص الخسائر وتلطيف الآثار:",
+        "stemEs": "El gabinete de crisis adoptó medidas urgentes para ____ los daños ecológicos del vertido.",
+        "stemAr": "اتخذت خلية الأزمة تدابير عاجلة للحد من الأضرار البيئية للتسرب وتخفيف وطأتها.",
+        "options": [
+          {
+            "id": "ex-c1-ccr-2_a",
+            "text": "mitigar",
+            "textAr": "تخفيف وتلطيف وطأة الضرر وتقليص حدته السلبية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccr-2_b",
+            "text": "fomentar",
+            "textAr": "تشجيع الأضرار وزيادة انتشارها وتفاقمها",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس خطة احتواء الأزمة."
+          },
+          {
+            "id": "ex-c1-ccr-2_c",
+            "text": "festejar",
+            "textAr": "الاحتفال بالأزمة وإقامة المهرجانات",
+            "isCorrect": false,
+            "distractorRationaleAr": "سلوك عبثي غير مسؤول."
+          }
+        ],
+        "targetVocab": [
+          "mitigar",
+          "crisis"
+        ],
+        "explanationAr": "الفعل «mitigar» (كقولنا mitigar el impacto / mitigar los efectos) هو المصطلح القياسي في إدارة المخاطر والأزمات البيئية والاقتصادية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccr-2_a"
+          ],
+          "selectedOptionId": "ex-c1-ccr-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccr-2_b": "عكس خطة احتواء الأزمة.",
+          "ex-c1-ccr-2_c": "سلوك عبثي غير مسؤول."
+        }
+      },
+      {
+        "id": "ex-c1-ccr-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل التعبير الإسباني المعتمد لعقد لقاء مع الصحفيين ووسائل الإعلام: «____ de prensa».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة الدالة على عجلة وحلقة المؤتمر الصحفي:",
+        "stemEs": "El portavoz compareció en ____ de prensa ante decenas de corresponsales.",
+        "stemAr": "مثل المتحدث الرسمي في مؤتمر صحفي جامع أمام عشرات المراسلين الدوليين.",
+        "targetVocab": [
+          "rueda"
+        ],
+        "explanationAr": "يقال حصراً في الإسبانية «rueda de prensa» أو «conferencia de prensa» لمقابلة مصطلح المؤتمر الصحفي.",
+        "answerKey": {
+          "accepted": [
+            "rueda"
+          ],
+          "acceptableAnswers": [
+            "rueda"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ccr-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي القيمة المؤسسية الأولى التي يطالب بها الرأي العام في أوقات الكوارث والأزمات الكبرى؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المبدأ الحاكم للمصداقية والتواصل النزيه:",
+        "stemEs": "La opinión pública exige máxima ____ y rigor en la difusión de los partes oficiales.",
+        "stemAr": "يطالب الرأي العام بأعلى درجات الشفافية والنزاهة والدقة في نشر البيانات الرسمية.",
+        "options": [
+          {
+            "id": "ex-c1-ccr-4_a",
+            "text": "transparencia",
+            "textAr": "الشفافية والوضوح التام ومكاشفة الجمهور بالحقائق",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccr-4_b",
+            "text": "opacidad",
+            "textAr": "الغموض والتعتيم وحجب المعلومات عن الصحافة",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعتيم يفقد المؤسسة مصداقيتها فوراً."
+          },
+          {
+            "id": "ex-c1-ccr-4_c",
+            "text": "lentitud",
+            "textAr": "البطء والتكاسل في الرد على استفسارات الناس",
+            "isCorrect": false,
+            "distractorRationaleAr": "البطء يغذي الشائعات الهدامة."
+          }
+        ],
+        "targetVocab": [
+          "transparencia",
+          "rigor"
+        ],
+        "explanationAr": "«La transparencia» (الشفافية) هي حجر الزاوية في علم الاتصال المؤسسي لإعادة بناء الثقة المنهارة بين الهيئة والجمهور.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccr-4_a"
+          ],
+          "selectedOptionId": "ex-c1-ccr-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccr-4_b": "التعتيم يفقد المؤسسة مصداقيتها فوراً.",
+          "ex-c1-ccr-4_c": "البطء يغذي الشائعات الهدامة."
+        }
+      },
+      {
+        "id": "ex-c1-ccr-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء التزام قاطع بإجراء تحقيق شفاف ومستقل.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-ccr-5_t1",
+            "kind": "token",
+            "text": "Garantizamos"
+          },
+          {
+            "id": "ex-c1-ccr-5_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-c1-ccr-5_t3",
+            "kind": "token",
+            "text": "total"
+          },
+          {
+            "id": "ex-c1-ccr-5_t4",
+            "kind": "token",
+            "text": "transparencia"
+          },
+          {
+            "id": "ex-c1-ccr-5_t5",
+            "kind": "token",
+            "text": "informativa"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Garantizamos una total transparencia informativa"
+          ],
+          "tokenOrder": [
+            "ex-c1-ccr-5_t1",
+            "ex-c1-ccr-5_t2",
+            "ex-c1-ccr-5_t3",
+            "ex-c1-ccr-5_t4",
+            "ex-c1-ccr-5_t5"
+          ]
+        },
+        "explanationAr": "الفعل Garantizamos متبوعاً بالمفعول الموصوف una total transparencia informativa.",
+        "targetVocab": [
+          "transparencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ccr-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة متحدث رسمي واثق يتحلى بالشجاعة والصدق والتحكم الكامل في الموقف.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الهدوء النفسي في مواجهة العاصفة الإعلامية:",
+        "stemEs": "Trabajamos sin descanso para mitigar la crisis.",
+        "stemAr": "نحن نعمل دون كلل ولا انقطاع لاحتواء الأزمة وتخفيف آثارها.",
+        "audioKey": "pending/c1-u7-cri-spk",
+        "targetVocab": [
+          "mitigar",
+          "crisis"
+        ],
+        "explanationAr": "احرص على مد نبرة Trabajamos بثبات وإخراج حرف g في mitigar بصوت رخو سليم لبيان التماسك والهدوء القيادي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u7-cri-spk",
+          "modelAnswer": "Trabajamos sin descanso para mitigar la crisis."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

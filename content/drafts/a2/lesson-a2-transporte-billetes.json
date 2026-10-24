@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-transporte-billetes",
+    "titleAr": "خدمات التنقل ومحطات القطار: شراء التذاكر والاستعلام عن المواعيد",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u1-travel",
+    "objectiveAr": "أن يشتري المتعلم تذكرة قطار أو حافلة، ويستعلم عن مواعيد الإقلاع والوصول وأسعار الرحلات وأرقام الأرصفة في المحطة بثقة ووضوح.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "reading",
+      "listening",
+      "speaking",
+      "writing",
+      "vocabulary",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "tren",
+      "estación",
+      "billete",
+      "horario",
+      "salir",
+      "llegada",
+      "precio",
+      "autobús"
+    ],
+    "reviewVocabulary": [
+      "viajar",
+      "ciudad",
+      "hora",
+      "tarde"
+    ],
+    "targetStructures": [
+      "¿A qué hora sale el próximo tren para Barcelona?",
+      "Quisiera un billete de ida y vuelta, por favor.",
+      "El tren sale del andén número cuatro."
+    ],
+    "grammarTopics": [
+      "preguntar-horarios-precios",
+      "verbos-irregulares-salir"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مسافر عربي يشتري تذكرة قطار سريع في محطة أتوتشا بمدريد متوجهًا إلى برشلونة.",
+        "settingAr": "شباك بيع التذاكر في محطة القطار المركزية",
+        "lines": [
+          {
+            "es": "¡Buenos días! Quisiera un billete para Barcelona, por favor.",
+            "ar": "صباح الخير! أود تذكرة إلى برشلونة من فضلك.",
+            "arEg": "صباح الخير! عايز تذكرة لبرشلونة لو سمحت.",
+            "audioKey": "pending/a2-tren-sc-1"
+          },
+          {
+            "es": "¿Prefiere solo ida o ida y vuelta? Tenemos uno que sale a las diez.",
+            "ar": "هل تفضل ذهابًا فقط أم ذهابًا وإيابًا؟ لدينا قطار يغادر في العاشرة.",
+            "arEg": "تحب ذهاب بس ولا ذهاب وعودة؟ في قطر طالع الساعة عشرة.",
+            "audioKey": "pending/a2-tren-sc-2"
+          },
+          {
+            "es": "Ida y vuelta para hoy, ¿a qué hora es la llegada?",
+            "ar": "ذهاب وإياب لليوم، في أي ساعة يكون الوصول؟",
+            "arEg": "ذهاب وعودة للنهاردة، والوصول هيكون الساعة كام؟",
+            "audioKey": "pending/a2-tren-sc-3"
+          },
+          {
+            "es": "La llegada es a las doce y media en la estación central.",
+            "ar": "الوصول في الثانية عشرة والنصف في المحطة المركزية.",
+            "arEg": "الوصول هيكون اتناشر ونص في المحطة الرئيسية.",
+            "audioKey": "pending/a2-tren-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_trn_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى موظف الشباك واختر موعد انطلاق القطار المقترح.",
+        "audioKey": "pending/a2-tren-sc-2",
+        "speechEs": "¿Prefiere solo ida o ida y vuelta? Tenemos uno que sale a las diez.",
+        "options": [
+          {
+            "id": "a2_trn_1_a",
+            "text": "A las diez",
+            "isCorrect": true,
+            "textAr": "في تمام العاشرة"
+          },
+          {
+            "id": "a2_trn_1_b",
+            "text": "A las doce",
+            "isCorrect": false,
+            "textAr": "في تمام الثانية عشرة",
+            "distractorRationaleAr": "الساعة الثانية عشرة هي موعد الوصول وليس الانطلاق."
+          },
+          {
+            "id": "a2_trn_1_c",
+            "text": "A las ocho",
+            "isCorrect": false,
+            "textAr": "في تمام الثامنة",
+            "distractorRationaleAr": "لم تُذكر الساعة الثامنة في كلام الموظف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_trn_1_a"
+          ]
+        },
+        "explanationAr": "الموظف قال بوضوح: «Tenemos uno que sale a las diez» أي ينطلق في العاشرة.",
+        "errorFeedback": {
+          "a2_trn_1_b": "الثانية عشرة والنصف هي ساعة الوصول المتوقعة.",
+          "a2_trn_1_c": "استمع مجددًا: الموظف حدد العاشرة (a las diez)."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "salir",
+          "horario"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_trn_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الكلمة المناسبة لطلب وثيقة السفر الرسمية في المحطة.",
+        "stemEs": "Quisiera comprar un ____ para viajar en tren.",
+        "stemAr": "أود شراء ____ للسفر بالقطار.",
+        "options": [
+          {
+            "id": "a2_trn_2_a",
+            "text": "billete",
+            "isCorrect": true,
+            "textAr": "تذكرة"
+          },
+          {
+            "id": "a2_trn_2_b",
+            "text": "periódico",
+            "isCorrect": false,
+            "textAr": "جريدة",
+            "distractorRationaleAr": "periódico تعني صحيفة ولا تُستعمل للصعود إلى القطار."
+          },
+          {
+            "id": "a2_trn_2_c",
+            "text": "diccionario",
+            "isCorrect": false,
+            "textAr": "قاموس",
+            "distractorRationaleAr": "قاموس غير مناسب لسياق حجز رحلة السفر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_trn_2_a"
+          ]
+        },
+        "explanationAr": "تذكرة السفر بالقطار أو الحافلة في إسبانيا تُسمى «billete».",
+        "errorFeedback": {
+          "a2_trn_2_b": "periódico تعني جريدة أو صحيفة.",
+          "a2_trn_2_c": "diccionario تعني معجم أو قاموس."
+        },
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "billete",
+          "tren"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_trn_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل «salir» مع الغائب المفرد (el tren) في الحاضر.",
+        "stemEs": "¿A qué hora ____ el tren para Sevilla?",
+        "stemAr": "في أي ساعة ____ القطار إلى إشبيلية؟",
+        "answerKey": {
+          "accepted": [
+            "sale"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "تصريف الفعل غير المنتظم salir مع ضمير الغائب المفرد هو: «sale».",
+        "errorFeedback": {
+          "salgo": "salgo للمتكلم (yo)، والفاعل هنا هو القطار (el tren).",
+          "salen": "salen للجمع، والفاعل قطار مفرد."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "salir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_trn_4_reply",
+        "type": "word_choice",
+        "instructionAr": "يسألك موظف شباك التذاكر: «¿Prefiere billete de ida o de ida y vuelta?». ما هو الرد الصحيح؟",
+        "stemEs": "¿Prefiere billete de ida o de ida y vuelta?",
+        "stemAr": "هل تفضل تذكرة ذهاب فقط أم ذهابًا وإيابًا؟",
+        "options": [
+          {
+            "id": "a2_trn_4_a",
+            "text": "De ida y vuelta, por favor, regreso esta tarde.",
+            "isCorrect": true,
+            "textAr": "ذهاب وإياب من فضلك، سأعود بعد ظهر اليوم."
+          },
+          {
+            "id": "a2_trn_4_b",
+            "text": "No me gusta el café con leche.",
+            "isCorrect": false,
+            "textAr": "لا يعجبني القهوة بالحليب.",
+            "distractorRationaleAr": "رد خارج عن موضوع التذاكر والسفر."
+          },
+          {
+            "id": "a2_trn_4_c",
+            "text": "El hotel tiene piscina grande.",
+            "isCorrect": false,
+            "textAr": "الفندق به مسبح كبير.",
+            "distractorRationaleAr": "لا علاقة لمسبح الفندق باختيار نوع تذكرة القطار."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_trn_4_a"
+          ]
+        },
+        "explanationAr": "الموظف خيّرك بين تذكرة الذهاب وتذكرة الذهاب والإياب، فالإجابة المباشرة: «De ida y vuelta, por favor...».",
+        "errorFeedback": {
+          "a2_trn_4_b": "الرد يتحدث عن طعام بينما السؤال عن تذكرة السفر.",
+          "a2_trn_4_c": "الرد يخص الفندق بينما أنت في شباك التذاكر."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "billete"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_trn_5_wordorder",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال صحيح عن موعد وصول الرحلة.",
+        "items": [
+          {
+            "id": "a2_trn_t1",
+            "kind": "token",
+            "text": "¿A qué hora"
+          },
+          {
+            "id": "a2_trn_t2",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "a2_trn_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a2_trn_t4",
+            "kind": "token",
+            "text": "llegada"
+          },
+          {
+            "id": "a2_trn_t5",
+            "kind": "token",
+            "text": "a la estación?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿A qué hora es la llegada a la estación?"
+          ],
+          "tokenOrder": [
+            "a2_trn_t1",
+            "a2_trn_t2",
+            "a2_trn_t3",
+            "a2_trn_t4",
+            "a2_trn_t5"
+          ]
+        },
+        "explanationAr": "صيغة السؤال عن الموعد: ¿A qué hora + فعل الكينونة es + الاسم la llegada + شبه الجملة a la estación?",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "llegada",
+          "estación"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_trn_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة شراء تذكرة القطار بلهجة مهذبة وواضحة.",
+        "stemEs": "Quisiera un billete para el próximo tren.",
+        "stemAr": "أود تذكرة للقطار القادم.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-tren-speak-1",
+          "modelAnswer": "Quisiera un billete para el próximo tren."
+        },
+        "explanationAr": "انتبه لنطق حرف ll في «billete» كنطق الياء المشددة الخفيفة، والنبرة على مقطع -lle-.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "billete",
+          "tren"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق صوت ll في billete",
+              "weight": 50,
+              "code": "pron_ll"
+            },
+            {
+              "labelAr": "سلاسة الربط الصوتي في un billete para el...",
+              "weight": 50,
+              "code": "linking_flow"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 2 وEn Vocabulario A1-A2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

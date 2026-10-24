@@ -5,13 +5,26 @@
  * بعد تثبيت مكتبات النظام المذكورة في playwright.config.ts.
  * ما لا يُغطّى: Safari/WebKit (غير قابل للتشغيل على Debian 13)، وقارئات الشاشة الحقيقية.
  */
+import { execFileSync } from 'node:child_process';
 import { expect, type Page } from '@playwright/test';
-// @ts-ignore — وحدة .mjs مشتركة مع أدوات الاستيراد
-import { buildContentPlan } from '../../tools/lib/content-plan.mjs';
 
-export const PLAN = buildContentPlan(new URL('../../content/exemplars', import.meta.url).pathname, {
-  existingVersions: {},
-}) as { answers: Record<string, unknown>; errors: string[] };
+/**
+ * نحسب خطة المحتوى في عملية Node فرعية بدل استيراد tools/lib/content-plan.mjs مباشرة:
+ * محمّل Playwright 1.49 يتجمّد عند استيراد هذا الوحدة من ملفات tests/e2e (تم التحقق).
+ * الحساب نفسه: buildContentPlan على content/exemplars.
+ */
+const PLAN_SCRIPT = `import { join } from 'node:path';
+import { buildContentPlan } from './tools/lib/content-plan.mjs';
+const plan = buildContentPlan(join(process.cwd(), 'content', 'exemplars'), { existingVersions: {} });
+process.stdout.write(JSON.stringify({ answers: plan.answers, errors: plan.errors }));`;
+
+export const PLAN = JSON.parse(
+  execFileSync(process.execPath, ['--input-type=module', '-e', PLAN_SCRIPT], {
+    cwd: process.cwd(),
+    encoding: 'utf8',
+    timeout: 30_000,
+  }),
+) as { answers: Record<string, unknown>; errors: string[] };
 
 export const PREA1 = 'prea1-hola-me-llamo';
 export const A1 = 'a1-un-cafe-por-favor';
@@ -24,9 +37,15 @@ export function uniqueEmail(tag = 'e2e') {
 /** يفرّغ نوافذ حد المعدل في قاعدة التطوير المحلية فقط (لا يمسّ منطق الحد) */
 async function clearRateLimits() {
   const { execFileSync } = await import('node:child_process');
+  const { existsSync } = await import('node:fs');
+  const { join } = await import('node:path');
+  const cli = join(process.cwd(), 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
+  const [execPath, baseArgs] = existsSync(cli)
+    ? [process.execPath, [cli]]
+    : ['./tools/wrangler-env/node_modules/.bin/wrangler', []];
   execFileSync(
-    './tools/wrangler-env/node_modules/.bin/wrangler',
-    ['d1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
+    execPath,
+    [...baseArgs, 'd1', 'execute', 'es-ar-dev', '--local', '--command', 'DELETE FROM rate_limits'],
     { stdio: 'ignore' },
   );
 }

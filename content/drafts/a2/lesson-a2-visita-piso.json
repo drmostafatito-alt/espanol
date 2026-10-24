@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-visita-piso",
+    "unitSlug": "a2-u7-housing",
+    "levelCode": "A2",
+    "titleAr": "معاينة الشقة ومرافق البناية: المصعد والتدفئة والجيران",
+    "titleEs": "La visita al piso y las instalaciones",
+    "subtitleAr": "فحص مرافق العمارة (ascensor, calefacción, portero) والاستعلام عن الحي",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يجري المتعلم محادثة معاينة عقار مع الوكيل أو المالك مباشرة.",
+        "أن يسأل عن مرافق وخدمات العمارة: ¿Tiene ascensor? ¿Cómo es la calefacción? ¿Hay portero?.",
+        "أن يستفسر عن الطابق (la planta) والجيران (los vecinos) وطبيعة الحي (la zona)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "مفردات المرافق والمعاينة العقارية",
+          "explanationAr": "أثناء زيارة الشقة وفحص مرافقها، تبرز عناصر هامة:\n- **El ascensor**: المصعد (خاصة في الطوابق العليا: ¿En qué planta está? Está en la cuarta planta y tiene ascensor).\n- **La calefacción**: التدفئة الشتوية (calefacción central تدفئة مركزية للعمارة، أو individual مستقلة بالغاز).\n- **El portero / El conserje**: حارس العمارة / البواب.\n- **La zona**: الحي أو المنطقة (una zona tranquila / bien comunicada).\n- **Los vecinos**: الجيران والمجتمع السكني."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام piso بدلاً من planta عند تحديد رقم الطابق (الصحيح: está en la tercera planta، بينما piso تعني الشقة كاملة).",
+        "الخلط بين portero كبواب عمارة و portero كحارس مرمى في كرة القدم (السياق هو الذي يحدد)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نسأل: «العمارة فيها أسانسير وبواب؟ والشقة في الدور الكام والمنطقة أمان والجيران هاديين؟». في الإسبانية: ¿El edificio tiene ascensor y portero? ¿En qué planta está y cómo son los vecinos?"
+        }
+      ],
+      "culturalNoteAr": "في المدن الإسبانية القديمة كمدريد وبرشلونة، العديد من المباني التاريخية لا تحتوي على مصاعد (sin ascensor)؛ لذا فإن وجود المصعد ميزة أساسية يُسأل عنها أولاً."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-visita-piso-intro",
+        "type": "explanation",
+        "titleAr": "مرافق العمارة والمعاينة",
+        "bodyAr": "أهم الكلمات لمقابلة المعاينة:\n- **el vecino / la vecina**: الجار / الجارة\n- **el ascensor**: المصعد\n- **la calefacción**: التدفئة\n- **la planta**: الطابق / الدور\n- **la zona**: المنطقة / الحي\n- **el portero**: البواب / حارس المبنى",
+        "examples": [
+          {
+            "es": "El piso está en la tercera planta con ascensor.",
+            "ar": "الشقة في الطابق الثالث مع وجود مصعد."
+          },
+          {
+            "es": "La calefacción central funciona muy bien en invierno.",
+            "ar": "التدفئة المركزية تعمل بشكل ممتاز في الشتاء."
+          },
+          {
+            "es": "Es una zona muy bien comunicada con metro.",
+            "ar": "هي منطقة ذات مواصلات ممتازة بالمترو."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "vecino",
+      "portero",
+      "ascensor",
+      "calefacción",
+      "planta",
+      "zona"
+    ],
+    "reviewVocabulary": [
+      "edificio",
+      "calle"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يجري المتعلم محادثة معاينة عقار مع الوكيل أو المالك مباشرة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-vis-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المناسبة للمصعد الكهربائي في البناية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا تسمى آلة الصعود والهبوط في المباني السكنية؟",
+        "stemEs": "El piso está en el quinto piso y afortunadamente tiene _____.",
+        "stemAr": "الشقة في الطابق الخامس ولحسن الحظ تحتوي على ...",
+        "options": [
+          {
+            "id": "ex-a2-vis-1_a",
+            "text": "ascensor",
+            "textAr": "مصعد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-vis-1_b",
+            "text": "calefacción",
+            "textAr": "تدفئة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصعود للطابق الخامس يتطلب مصعداً ascensor."
+          },
+          {
+            "id": "ex-a2-vis-1_c",
+            "text": "portero",
+            "textAr": "بواب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الآلة هي المصعد ascensor."
+          }
+        ],
+        "targetVocab": [
+          "ascensor",
+          "calefacción",
+          "portero"
+        ],
+        "explanationAr": "المصعد في الإسبانية هو el ascensor.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-vis-1_a"
+          ],
+          "selectedOptionId": "ex-a2-vis-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-vis-1_b": "الصعود للطابق الخامس يتطلب مصعداً ascensor.",
+          "ex-a2-vis-1_c": "الآلة هي المصعد ascensor."
+        }
+      },
+      {
+        "id": "ex-a2-vis-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية الدالة على نظام التدفئة الشتوية",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'التدفئة' بالإسبانية بدقة",
+        "stemEs": "En invierno es fundamental tener una buena _____ en casa.",
+        "stemAr": "في الشتاء من الأساسي وجود ... جيدة في البيت.",
+        "targetVocab": [
+          "calefacción"
+        ],
+        "explanationAr": "كلمة calefacción تعني التدفئة وهي مؤنثة وتأخذ علامة نبر على المقطع الأخير.",
+        "answerKey": {
+          "accepted": [
+            "calefacción",
+            "calefaccion"
+          ],
+          "acceptableAnswers": [
+            "calefacción",
+            "calefaccion"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-vis-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الكلمة الصحيحة للطابق الذي تقع فيه الشقة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي كلمة تستخدم لتحديد رقم الطابق أو الدور في العمارة؟",
+        "stemEs": "El apartamento se encuentra en la segunda _____ del edificio.",
+        "stemAr": "الشقة تقع في ... الثانية من المبنى.",
+        "options": [
+          {
+            "id": "ex-a2-vis-3_a",
+            "text": "planta",
+            "textAr": "طابق / دور",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-vis-3_b",
+            "text": "zona",
+            "textAr": "منطقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "zona تعني الحي أو المنطقة وليس الطابق السكني."
+          },
+          {
+            "id": "ex-a2-vis-3_c",
+            "text": "vecino",
+            "textAr": "جار",
+            "isCorrect": false,
+            "distractorRationaleAr": "vecino هو الشخص الجار وليس الطابق."
+          }
+        ],
+        "targetVocab": [
+          "planta",
+          "zona",
+          "vecino",
+          "edificio"
+        ],
+        "explanationAr": "الطابق السكني في العمارة يُسمى la planta (la segunda planta).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-vis-3_a"
+          ],
+          "selectedOptionId": "ex-a2-vis-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-vis-3_b": "zona تعني الحي أو المنطقة وليس الطابق السكني.",
+          "ex-a2-vis-3_c": "vecino هو الشخص الجار وليس الطابق."
+        }
+      },
+      {
+        "id": "ex-a2-vis-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف هدوء الجيران في البناية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-vis-4_t1",
+            "kind": "token",
+            "text": "Los"
+          },
+          {
+            "id": "ex-a2-vis-4_t2",
+            "kind": "token",
+            "text": "vecinos"
+          },
+          {
+            "id": "ex-a2-vis-4_t3",
+            "kind": "token",
+            "text": "del"
+          },
+          {
+            "id": "ex-a2-vis-4_t4",
+            "kind": "token",
+            "text": "edificio"
+          },
+          {
+            "id": "ex-a2-vis-4_t5",
+            "kind": "token",
+            "text": "son"
+          },
+          {
+            "id": "ex-a2-vis-4_t6",
+            "kind": "token",
+            "text": "muy"
+          },
+          {
+            "id": "ex-a2-vis-4_t7",
+            "kind": "token",
+            "text": "tranquilos"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Los vecinos del edificio son muy tranquilos"
+          ],
+          "tokenOrder": [
+            "ex-a2-vis-4_t1",
+            "ex-a2-vis-4_t2",
+            "ex-a2-vis-4_t3",
+            "ex-a2-vis-4_t4",
+            "ex-a2-vis-4_t5",
+            "ex-a2-vis-4_t6",
+            "ex-a2-vis-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل Los vecinos del edificio ثم الفعل son ثم الصفة muy tranquilos.",
+        "targetVocab": [
+          "vecino",
+          "edificio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-vis-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ميزة الحي السكني المذكورة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للوكيل العقاري وحدد وصف المنطقة",
+        "stemEs": "El piso está en una zona residencial muy tranquila.",
+        "stemAr": "الشقة تقع في منطقة سكنية هادئة جداً.",
+        "options": [
+          {
+            "id": "ex-a2-vis-5_a",
+            "text": "zona",
+            "textAr": "حي / منطقة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-vis-5_b",
+            "text": "portero",
+            "textAr": "بواب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصف طبيعة المنطقة السكنية una zona residencial."
+          },
+          {
+            "id": "ex-a2-vis-5_c",
+            "text": "calle",
+            "textAr": "شارع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على وصف الحي zona."
+          }
+        ],
+        "targetVocab": [
+          "zona",
+          "calle",
+          "portero"
+        ],
+        "explanationAr": "المتحدث قال: una zona residencial muy tranquila.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_zona_residencial.mp3",
+        "speechEs": "El piso está en una zona residencial muy tranquila.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-vis-5_a"
+          ],
+          "selectedOptionId": "ex-a2-vis-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-vis-5_b": "المتحدث وصف طبيعة المنطقة السكنية una zona residencial.",
+          "ex-a2-vis-5_c": "المتحدث ركز على وصف الحي zona."
+        }
+      },
+      {
+        "id": "ex-a2-vis-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق سؤالك عن تواجد حارس البناية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اسأل بنطق سليم عما إذا كان المبنى مزوداً ببواب أو حارس",
+        "stemEs": "¿El edificio tiene portero por las mañanas?",
+        "stemAr": "هل يوجد بالمبنى بواب في الفترات الصباحية؟",
+        "audioKey": "pending/a2_edificio_tiene_portero.mp3",
+        "targetVocab": [
+          "portero",
+          "edificio"
+        ],
+        "explanationAr": "تذكر نطق حرف d كـ ذال خفيفة في edificio.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_edificio_tiene_portero.mp3",
+          "modelAnswer": "¿El edificio tiene portero por las mañanas?"
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "مفردات المرافق والمعاينة العقارية"
+    ]
+  }
+}

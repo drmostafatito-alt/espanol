@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-matizar-opiniones",
+    "titleAr": "تعديل الرأي والتحفظ الدبلوماسي: Matizar opiniones",
+    "level": "B2",
+    "programSlug": "main-track",
+    "unitSlug": "b2-u1-argument",
+    "objectiveAr": "أن يستخدم المتعلم أساليب تعديل الرأي والتحفظ الدبلوماسي (Hasta cierto punto, En parte es verdad, Cabría añadir) لتجنب القطع الجازم في النقاشات الفكرية والمهنية الرفيعة.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "matiz",
+      "punto",
+      "verdad",
+      "añadir",
+      "opinión",
+      "aspecto"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "amigo",
+      "bien",
+      "sociedad"
+    ],
+    "targetStructures": [
+      "Matización: Hasta cierto punto / En cierta medida",
+      "Concesión parcial: En parte es verdad, pero...",
+      "Adición prudente: Cabría añadir que... / Convendría matizar que..."
+    ],
+    "grammarTopics": [
+      "matizar-opiniones-b2",
+      "diplomacia-argumentativa"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نقاش بين خبيرين في التخطيط العمراني حول مشروع تحويل وسط المدينة إلى منطقة للمشاة فقط.",
+        "settingAr": "مقر بلدية بلنسية (فالنسيا)، ورشة عمل",
+        "lines": [
+          {
+            "es": "Prohibir el tráfico privado en el centro revitaliza el comercio local.",
+            "ar": "حظر حركة المرور الخاصة في مركز المدينة ينعش التجارة المحلية.",
+            "arEg": "منع العربيات في وسط البلد بينشط المحلات والبيزنس.",
+            "audioKey": "pending/b2-matiz-urban-1"
+          },
+          {
+            "es": "Hasta cierto punto es verdad, pero dificulta la distribución logística para los proveedores.",
+            "ar": "إلى حدّ ما هذا صحيح، ولكنه يعرقل التوزيع اللوجستي للموردين وأصحاب البضائع.",
+            "arEg": "لحد معين ده حقيقي، بس بيعطل الشحن وتوصيل البضايع للتجار.",
+            "audioKey": "pending/b2-matiz-urban-2"
+          },
+          {
+            "es": "Cabría añadir que se pueden habilitar horarios nocturnos de carga y descarga.",
+            "ar": "وتجدر الإضافة إلى أنه يمكن تخصيص مواعيد ليلية للشحن والتفريغ.",
+            "arEg": "ونقدر نضيف كمان إننا نعمل مواعيد بالليل للتحميل والتنزيل.",
+            "audioKey": "pending/b2-matiz-urban-3"
+          },
+          {
+            "es": "Desde esa perspectiva, la propuesta resulta mucho más viable y equilibrada.",
+            "ar": "من هذا المنظور، يصبح المقترح أكثر قابلية للتطبيق وتوازنًا بكثير.",
+            "arEg": "من الزاوية دي، الفكرة بقت منطقية ومتوازنة أكتر بكتير.",
+            "audioKey": "pending/b2-matiz-urban-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b2_matiz_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الخبير واختر العبارة الدبلوماسية التي استخدمها لإبداء تحفظه الجزئي.",
+        "audioKey": "pending/b2-matiz-urban-2",
+        "speechEs": "Hasta cierto punto es verdad, pero dificulta la distribución logística para los proveedores.",
+        "options": [
+          {
+            "id": "b2_matiz_1_a",
+            "text": "Hasta cierto punto es verdad",
+            "isCorrect": true,
+            "textAr": "إلى حد ما هذا صحيح"
+          },
+          {
+            "id": "b2_matiz_1_b",
+            "text": "Es una propuesta completamente absurda",
+            "isCorrect": false,
+            "textAr": "هذا مقترح سخيف تماماً",
+            "distractorRationaleAr": "عبارة هجومية غير لائقة لم ترد في التسجيل."
+          },
+          {
+            "id": "b2_matiz_1_c",
+            "text": "Estoy totalmente en desacuerdo absoluto",
+            "isCorrect": false,
+            "textAr": "أنا غير موافق إطلاقاً بشكل قطعي",
+            "distractorRationaleAr": "لم يعلن رفضاً مطلقاً بل تحفّظاً جزئياً."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_matiz_1_a"
+          ]
+        },
+        "explanationAr": "استخدم المتحدث عبارة «Hasta cierto punto» (إلى حدّ ما / إلى درجة معينة) وهي من أرقى صيغ التعديل والتحفظ الدبلوماسي في اللغة الإسبانية.",
+        "errorFeedback": {
+          "b2_matiz_1_b": "أسلوب هجومي لم يُذكر.",
+          "b2_matiz_1_c": "لم يرفض كلياً بل وافق جزئياً."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "punto",
+          "verdad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_matiz_2_collocation",
+        "type": "word_choice",
+        "instructionAr": "أيّ من هذه التعبيرات يُستخدم لإضافة ملاحظة دقيقة دون فرضها بشكل قاطع؟",
+        "options": [
+          {
+            "id": "b2_matiz_2_a",
+            "text": "Cabría añadir que...",
+            "isCorrect": true,
+            "textAr": "وتجدر الإضافة إلى أن..."
+          },
+          {
+            "id": "b2_matiz_2_b",
+            "text": "Tienes que aceptar que...",
+            "isCorrect": false,
+            "textAr": "يجب عليك أن تقبل بأن...",
+            "distractorRationaleAr": "أسلوب إلزامي فظ لا يناسب التحفظ الدبلوماسي."
+          },
+          {
+            "id": "b2_matiz_2_c",
+            "text": "Es obligatorio reconocer que...",
+            "isCorrect": false,
+            "textAr": "من الإجباري الاعتراف بأن...",
+            "distractorRationaleAr": "غير مألوف في لغة الحوار الراقي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_matiz_2_a"
+          ]
+        },
+        "explanationAr": "صيغة «Cabría añadir / señalar» (مشتقة من الفعل caber في صيغة condicional) تعبر عن قمة الأدب الأكاديمي والتحفظ البلاغي في إبداء الملاحظات.",
+        "errorFeedback": {
+          "b2_matiz_2_b": "أسلوب استعلائي فظ.",
+          "b2_matiz_2_c": "تعبير إلزامي غير لائق."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "añadir",
+          "matiz"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_matiz_3_fill_measure",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بعبارة التحفظ: «في جزء منه هذا صحيح، ولكن...».",
+        "stemEs": "En ____ es verdad, pero conviene analizar todos los detalles.",
+        "stemAr": "في ____ منه هذا صحيح، ولكن يجدر بنا تحليل جميع التفاصيل.",
+        "answerKey": {
+          "accepted": [
+            "parte"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير الثابت «En parte es verdad» يعني (في جزء منه هذا صحيح)، ويُستخدم لتفادي الرفض الفج والتمهيد للاعتراض المهذب.",
+        "errorFeedback": {
+          "todo": "En todo تعني كلياً وتنفي التحفظ.",
+          "nada": "En nada نفي مطلق يناقض كلمة verdad."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "verdad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_matiz_4_fill_perspective",
+        "type": "fill_blank",
+        "instructionAr": "أكمل التعبير الراقي: «إلى حدٍّ ما معك حق، غير أن هناك استثناءات».",
+        "stemEs": "Hasta cierto ____ tienes razón, aunque hay excepciones notables.",
+        "stemAr": "إلى حدٍّ ____ معك حق، مع أن هناك استثناءات بارزة.",
+        "answerKey": {
+          "accepted": [
+            "punto"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير الاصطلاحي القياسي للتعديل هو «Hasta cierto punto» (إلى حد ما / إلى نقطة معينة).",
+        "errorFeedback": {
+          "momento": "hasta cierto momento تفيد التوقيت الزمني وليس المقدار البلاغي.",
+          "lugar": "hasta cierto lugar تفيد المكان وليس الرأي."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "punto",
+          "matiz"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_matiz_5_order",
+        "type": "word_order",
+        "instructionAr": "رتب الكلمات التالية لتكوين جملة تحفظ دبلوماسي راقية.",
+        "items": [
+          {
+            "id": "b2_mat_t1",
+            "kind": "token",
+            "text": "Hasta"
+          },
+          {
+            "id": "b2_mat_t2",
+            "kind": "token",
+            "text": "cierto"
+          },
+          {
+            "id": "b2_mat_t3",
+            "kind": "token",
+            "text": "punto"
+          },
+          {
+            "id": "b2_mat_t4",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "b2_mat_t5",
+            "kind": "token",
+            "text": "correcto."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hasta cierto punto es correcto."
+          ],
+          "tokenOrder": [
+            "b2_mat_t1",
+            "b2_mat_t2",
+            "b2_mat_t3",
+            "b2_mat_t4",
+            "b2_mat_t5"
+          ]
+        },
+        "explanationAr": "الترتيب البلاغي يبدأ بعبارة التحفظ: Hasta cierto punto (إلى حدٍّ ما) ثم يتبعها الحكم: es correcto (هذا صحيح).",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "punto",
+          "matiz"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_matiz_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق عبارة الإضافة الدبلوماسية التالية بنبرة هادئة ومحترفة.",
+        "stemEs": "Cabría añadir que existen otras alternativas viables.",
+        "stemAr": "وتجدر الإضافة إلى وجود بدائل أخرى قابلة للتطبيق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2-matiz-speak-1",
+          "modelAnswer": "Cabría añadir que existen otras alternativas viables."
+        },
+        "explanationAr": "لاحظ نطق Cabríaañadir بالوصل الصوتي الخفيف بين الكلمتين، وإبراز نبرة añadir على المقطع الأخير (-ir).",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "punto",
+          "verdad"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق Cabría بصيغة الشرط الصحيحة",
+              "weight": 50,
+              "code": "pron_cabria"
+            },
+            {
+              "labelAr": "نبر الفعل añadir على المقطع الأخير",
+              "weight": 50,
+              "code": "stress_anadir"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula Plus 4 وEn Vocabulario B2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم أساليب التحفظ والتعديل الدبلوماسي في النقاش المتقدم لمستوى B2."
+    }
+  }
+}

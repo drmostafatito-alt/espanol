@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-dialogo-reserva",
+    "unitSlug": "a2-u9-phone-booking",
+    "levelCode": "A2",
+    "titleAr": "حوار متكامل: حجز طاولة في مطعم أو غرفة في فندق هاتفياً",
+    "titleEs": "Diálogo completo: Reservar mesa o habitación por teléfono",
+    "subtitleAr": "تحديد عدد الأفراد، طلب غرفة هادئة، والتأكيد على التفاصيل",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يجري المتعلم مكالمة حجز كاملة لطاولة في مطعم أو غرفة في فندق.",
+        "أن يحدد التفاصيل الأساسية: التاريخ، التوقيت، عدد الأفراد (para cuatro personas)، والموقع (en la terraza / con vistas).",
+        "أن يطلب تأكيد الحجز باسم المتصل ورقم هاتفه وبريده الإلكتروني."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ الحجز الفندقي والمطعمي بالهاتف",
+          "explanationAr": "1. **الافتتاح وطلب الحجز**:\n- Llamo para reservar una mesa para cenar esta noche (أتصل لحجز طاولة للعشاء هذه الليلة).\n- Quería hacer una reserva de una habitación doble para dos noches.\n2. **تحديد التفاصيل**:\n- ¿Para cuántas personas sería? (لكم فرداً سيكون الحجز؟).\n- ¿A nombre de quién hago la reserva? (باسم مَن أسجل الحجز؟).\n- A nombre de Carlos Gómez, por favor.\n3. **التأكيد والختام**:\n- La reserva queda confirmada para hoy a las nueve (تم تأكيد الحجز لليوم عند التاسعة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان حرف الجر para عند تحديد عدد الأفراد؛ نقول para cuatro personas وليس *a cuatro personas*.",
+        "الخلط بين reservar (الفعل: يحجز) و reserva (الاسم: حجز)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «عايز أحجز ترابيزة لأربعة الساعة تمانية باسم كذا». بالإسبانية: Quería reservar una mesa para cuatro a las ocho a nombre de..."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُفضل الحجز مسبقاً إذا كنت ترغب في الجلوس على الشرفة الخارجية (la terraza)، خصوصاً في ليالي الربيع والصيف."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-dialogo-reserva-intro",
+        "type": "explanation",
+        "titleAr": "مفردات إجراء الحجز الهاتفي",
+        "bodyAr": "المصطلحات الرئيسية:\n- **la reserva**: الحجز\n- **reservar**: يحجز\n- **a nombre de**: باسم (فلان)\n- **la terraza**: الشرفة / التراس الخارجي للمطعم\n- **el comensal**: الضيف / الآكل على المائدة\n- **el número de personas**: عدد الأشخاص",
+        "examples": [
+          {
+            "es": "Quisiera reservar una mesa en la terraza para cinco comensales.",
+            "ar": "أود حجز طاولة في الشرفة الخارجية لخمسة أشخاص."
+          },
+          {
+            "es": "¿A nombre de quién dejo la reserva?",
+            "ar": "باسم من أسجل الحجز؟"
+          },
+          {
+            "es": "A nombre del señor Pérez; muchas gracias.",
+            "ar": "باسم السيد بيريث؛ شكراً جزيلاً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "reserva",
+      "reservar",
+      "a nombre de",
+      "terraza",
+      "comensal",
+      "número de personas"
+    ],
+    "reviewVocabulary": [
+      "mesa",
+      "noche"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يجري المتعلم مكالمة حجز كاملة لطاولة في مطعم أو غرفة في فندق.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-dia-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة الدالة على تسجيل الحجز باسم العميل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف يسأل موظف الاستقبال عن اسم صاحب الحجز؟",
+        "stemEs": "Muy bien, ¿_____ quién pongo la mesa?",
+        "stemAr": "حسناً جداً، باسم من أسجل الطاولة؟",
+        "options": [
+          {
+            "id": "ex-a2-dia-1_a",
+            "text": "a nombre de",
+            "textAr": "باسم (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dia-1_b",
+            "text": "a reserva de",
+            "textAr": "مع التحفظ",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعبير القياسي لتسجيل الأسماء هو a nombre de."
+          },
+          {
+            "id": "ex-a2-dia-1_c",
+            "text": "en terraza de",
+            "textAr": "في شرفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "السؤال هنا عن هوية الشخص وليس الموقع."
+          }
+        ],
+        "targetVocab": [
+          "a nombre de",
+          "reserva",
+          "terraza"
+        ],
+        "explanationAr": "نقول: ¿A nombre de quién hago la reserva? (باسم من الحجز؟).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dia-1_a"
+          ],
+          "selectedOptionId": "ex-a2-dia-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dia-1_b": "التعبير القياسي لتسجيل الأسماء هو a nombre de.",
+          "ex-a2-dia-1_c": "السؤال هنا عن هوية الشخص وليس الموقع."
+        }
+      },
+      {
+        "id": "ex-a2-dia-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل المناسب للحجز في صيغة المصدر",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الإسباني الذي يعني 'يحجز' في المصدر (reservar)",
+        "stemEs": "Llamo para _____ una habitación con vistas al mar.",
+        "stemAr": "أتصل لحجز غرفة مطلة على البحر.",
+        "targetVocab": [
+          "reservar"
+        ],
+        "explanationAr": "فعل reservar يعني يحجز طاولة أو غرفة.",
+        "answerKey": {
+          "accepted": [
+            "reservar"
+          ],
+          "acceptableAnswers": [
+            "reservar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-dia-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الموقع الخارجي المفضل في المطاعم الإسبانية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أين يفضل الناس الجلوس في المطعم خلال الطقس اللطيف؟",
+        "stemEs": "Si no hace frío, preferimos cenar al aire libre en la _____.",
+        "stemAr": "إذا لم يكن الجو بارداً، نفضل العشاء في الهواء الطلق في ...",
+        "options": [
+          {
+            "id": "ex-a2-dia-3_a",
+            "text": "terraza",
+            "textAr": "الشرفة / التراس الخارجي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dia-3_b",
+            "text": "reserva",
+            "textAr": "الحجز (اسم العملية)",
+            "isCorrect": false,
+            "distractorRationaleAr": "reserva اسم الحجز ولا يمثل مكاناً للجلوس."
+          },
+          {
+            "id": "ex-a2-dia-3_c",
+            "text": "número de personas",
+            "textAr": "عدد الأشخاص",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يمثل مكاناً للجلوس."
+          }
+        ],
+        "targetVocab": [
+          "terraza",
+          "reserva",
+          "número de personas"
+        ],
+        "explanationAr": "la terraza هي الشرفة أو الجلسة الخارجية في المطعم أو المقهى.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dia-3_a"
+          ],
+          "selectedOptionId": "ex-a2-dia-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dia-3_b": "reserva اسم الحجز ولا يمثل مكاناً للجلوس.",
+          "ex-a2-dia-3_c": "لا يمثل مكاناً للجلوس."
+        }
+      },
+      {
+        "id": "ex-a2-dia-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتحديد عدد الأفراد في حجز الطاولة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-dia-4_t1",
+            "kind": "token",
+            "text": "Quería"
+          },
+          {
+            "id": "ex-a2-dia-4_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-a2-dia-4_t3",
+            "kind": "token",
+            "text": "mesa"
+          },
+          {
+            "id": "ex-a2-dia-4_t4",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-a2-dia-4_t5",
+            "kind": "token",
+            "text": "cuatro"
+          },
+          {
+            "id": "ex-a2-dia-4_t6",
+            "kind": "token",
+            "text": "personas"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quería una mesa para cuatro personas"
+          ],
+          "tokenOrder": [
+            "ex-a2-dia-4_t1",
+            "ex-a2-dia-4_t2",
+            "ex-a2-dia-4_t3",
+            "ex-a2-dia-4_t4",
+            "ex-a2-dia-4_t5",
+            "ex-a2-dia-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: صيغة الرجاء Quería ثم una mesa ثم شبه الجملة para cuatro personas.",
+        "targetVocab": [
+          "número de personas"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-dia-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمكالمة وحدد موعد وتفاصيل الحجز",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد هل الحجز يخص طاولة أم غرفة",
+        "stemEs": "Le confirmo la reserva de una mesa para cenar el viernes a las diez.",
+        "stemAr": "أؤكد لك حجز طاولة للعشاء يوم الجمعة عند العاشرة.",
+        "options": [
+          {
+            "id": "ex-a2-dia-5_a",
+            "text": "reserva",
+            "textAr": "حجز مؤكد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dia-5_b",
+            "text": "terraza",
+            "textAr": "شرفة فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموظف يؤكد عملية الحجز الكاملة (la reserva)."
+          },
+          {
+            "id": "ex-a2-dia-5_c",
+            "text": "comensal",
+            "textAr": "ضيف",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يؤكد حجز الطاولة."
+          }
+        ],
+        "targetVocab": [
+          "reserva",
+          "terraza",
+          "comensal"
+        ],
+        "explanationAr": "الموظف قال: 'Le confirmo la reserva de una mesa'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_confirmo_reserva.mp3",
+        "speechEs": "Le confirmo la reserva de una mesa para cenar el viernes a las diez.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dia-5_a"
+          ],
+          "selectedOptionId": "ex-a2-dia-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dia-5_b": "الموظف يؤكد عملية الحجز الكاملة (la reserva).",
+          "ex-a2-dia-5_c": "المتحدث يؤكد حجز الطاولة."
+        }
+      },
+      {
+        "id": "ex-a2-dia-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك لحجز طاولة لشخصين الليلة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح لموظف المطعم:",
+        "stemEs": "Buenas tardes, quería reservar una mesa para dos personas esta noche.",
+        "stemAr": "مساء الخير، كنت أود حجز طاولة لشخصين هذه الليلة.",
+        "audioKey": "pending/a2_mesa_dos_personas.mp3",
+        "targetVocab": [
+          "reservar",
+          "número de personas"
+        ],
+        "explanationAr": "انتبه لنطق r في reservar و personas بنعومة ودقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_mesa_dos_personas.mp3",
+          "modelAnswer": "Buenas tardes, quería reservar una mesa para dos personas esta noche."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ الحجز الفندقي والمطعمي بالهاتف"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 import type { Env, SessionUser } from '../types';
 import { HttpError, json } from '../lib/http';
 import { allowUnreviewedContent } from '../lib/content-access';
+import { searchEngine } from '../../shared/search-engine';
 
 /**
  * حزمة درس للقراءة. القاعدة: المنشور فقط يُقدَّم للعامة.
@@ -72,6 +73,31 @@ export async function listPaths(_req: Request, env: Env, requestId: string): Pro
   return json(
     { paths, ...(includeDrafts ? { contentProvenance: 'unreviewed_sample' } : {}) },
     { headers: { 'Cache-Control': includeDrafts ? 'no-store' : 'public, max-age=300' } },
+    requestId,
+  );
+}
+
+/**
+ * البحث الذكي في المعجم والقواعد والدروس والتصريفات.
+ * يعمل محليًا وخفيفًا دون أي تكلفة خارجية.
+ */
+export async function searchContent(req: Request, _env: Env, requestId: string): Promise<Response> {
+  const url = new URL(req.url);
+  const q = url.searchParams.get('q') ?? '';
+  const level = url.searchParams.get('level') ?? undefined;
+  const kind = (url.searchParams.get('kind') as 'all' | 'vocab' | 'grammar' | 'lesson') ?? undefined;
+  const limitParam = parseInt(url.searchParams.get('limit') ?? '20', 10);
+  const limit = Math.min(50, Math.max(1, isNaN(limitParam) ? 20 : limitParam));
+
+  const result = searchEngine.search(q, { level, kind, limit });
+
+  return json(
+    result,
+    {
+      headers: {
+        'Cache-Control': 'public, max-age=120, stale-while-revalidate=600',
+      },
+    },
     requestId,
   );
 }

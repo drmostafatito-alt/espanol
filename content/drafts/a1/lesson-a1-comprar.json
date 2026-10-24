@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-comprar",
+    "titleAr": "إتمام عملية الشراء: الدفع والإيصال والاسترجاع",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u5-shopping",
+    "objectiveAr": "أن يُجري المتعلم حوار شراء متكاملاً من السؤال عن السعر إلى اختيار وسيلة الدفع واستلام الفاتورة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "writing",
+      "reading",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "comprar",
+      "euro",
+      "ropa",
+      "camisa",
+      "pantalón",
+      "zapato",
+      "cuenta"
+    ],
+    "reviewVocabulary": [
+      "bueno",
+      "dos",
+      "tres"
+    ],
+    "targetStructures": [
+      "Me lo llevo. ¿Cuánto es en total?",
+      "¿Va a pagar en efectivo o con tarjeta?",
+      "Aquí tiene su ticket de compra y el cambio."
+    ],
+    "grammarTopics": [
+      "dialogo-compra-tienda",
+      "pago-efectivo-tarjeta",
+      "ticket-cambio"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "هدى تدفع ثمن قميص وحذاء في متجر ملابس عند صندوق المحاسبة (la caja).",
+        "settingAr": "صندوق الدفع في متجر ملابس",
+        "lines": [
+          {
+            "es": "Hola, me llevo esta camisa y estos zapatos.",
+            "ar": "مرحباً، سآخذ هذا القميص وهذا الحذاء.",
+            "arEg": "أهلاً، هاخد القميص ده والجزمة دي.",
+            "audioKey": "pending/a1-cmp-sc-1"
+          },
+          {
+            "es": "Muy bien. Son cincuenta y cinco euros en total.",
+            "ar": "ممتاز. المجموع خمسة وخمسون يورو في الإجمالي.",
+            "arEg": "تمام. الحساب خمسة وخمسين يورو في التوتال.",
+            "audioKey": "pending/a1-cmp-sc-2"
+          },
+          {
+            "es": "¿Puedo pagar con tarjeta contactless?",
+            "ar": "هل يمكنني الدفع بالبطاقة اللاتلامسية؟",
+            "arEg": "ممكن أدفع بالفيزا تاتش؟",
+            "audioKey": "pending/a1-cmp-sc-3"
+          },
+          {
+            "es": "Sí, claro, acérquela al datáfono. Aquí tiene su ticket.",
+            "ar": "نعم بالطبع، قرّبيها من جهاز الدفع. تفضلي إيصال الشراء.",
+            "arEg": "أيوه طبعاً، قربيها من المكنة. اتفضلي الوصل.",
+            "audioKey": "pending/a1-cmp-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الإيصال في المتاجر الإسبانية يُسمى 'el ticket' أو 'el recibo'. الدفع بالبطاقة والهاتف شائع جداً حتى للمبالغ الصغيرة (un euro أو menos). وتعبير 'Me lo llevo' يعني حرفياً: 'سآخذه / سأشتريه'.",
+    "pedagogicalRationaleAr": "التعبير الحاسم لإتمام القرار بالشراء هو 'Me lo llevo' (للمذكر) أو 'Me la llevo' (للمؤنث). المتعلمون العرب يترجمون حرفياً *Voy a comprarlo، بينما التعبير الطبيعي اليومي هو Me lo llevo.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_cmp_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد طريقة الدفع التي اختارتها المشتشية.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع إلى حوار الدفع:",
+        "stemEs": "Voy a pagar con tarjeta de crédito, por favor.",
+        "stemAr": "سأدفع ببطاقة الائتمان، من فضلك.",
+        "options": [
+          {
+            "id": "a1_cmp_1_a",
+            "text": "Con tarjeta",
+            "textAr": "بالبطاقة المصرفية",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cmp_1_b",
+            "text": "En efectivo",
+            "textAr": "نقداً بالعملات الورقية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر con tarjeta وليس en efectivo."
+          },
+          {
+            "id": "a1_cmp_1_c",
+            "text": "A plazos",
+            "textAr": "بالتقسيط",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر التقسيط في الحوار."
+          }
+        ],
+        "targetVocab": [
+          "comprar",
+          "ropa"
+        ],
+        "explanationAr": "المشترية قالت: Voy a pagar con tarjeta.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-cmp-ex-1",
+        "speechEs": "Voy a pagar con tarjeta de crédito, por favor.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cmp_1_a"
+          ],
+          "selectedOptionId": "a1_cmp_1_a"
+        },
+        "errorFeedback": {
+          "a1_cmp_1_b": "الصوت ذكر con tarjeta وليس en efectivo.",
+          "a1_cmp_1_c": "لم يُذكر التقسيط في الحوار."
+        }
+      },
+      {
+        "id": "a1_cmp_2_take_it",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو التعبير الطبيعي الذي تقوله للبائع عندما تقرر شراء القميص؟",
+        "skills": [
+          "speaking",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "لتأكيد قرار الشراء للبائع نقول:",
+        "stemEs": "Me gusta mucho, me lo ____.",
+        "stemAr": "يعجبني كثيراً، سأـ____.",
+        "options": [
+          {
+            "id": "a1_cmp_2_a",
+            "text": "llevo",
+            "textAr": "آخذه / أشتريه",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cmp_2_b",
+            "text": "dejo",
+            "textAr": "أتركه",
+            "isCorrect": false,
+            "distractorRationaleAr": "dejo تعني أتركه ولا أشتريه."
+          },
+          {
+            "id": "a1_cmp_2_c",
+            "text": "pongo",
+            "textAr": "أضعه",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعبير الإسباني الاصطلاحي للشراء هو Me lo llevo."
+          }
+        ],
+        "targetVocab": [
+          "comprar",
+          "camisa"
+        ],
+        "explanationAr": "التعبير الإسباني اليومي للشراء هو: Me lo llevo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cmp_2_a"
+          ],
+          "selectedOptionId": "a1_cmp_2_a"
+        },
+        "errorFeedback": {
+          "a1_cmp_2_b": "dejo تعني أتركه ولا أشتريه.",
+          "a1_cmp_2_c": "التعبير الإسباني الاصطلاحي للشراء هو Me lo llevo."
+        }
+      },
+      {
+        "id": "a1_cmp_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة اليورو بالإسبانية في الفراغ.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب اسم العملة الأوروبية (euro):",
+        "stemEs": "El pantalón cuesta cuarenta ____.",
+        "stemAr": "البنطال يكلف أربعين ____.",
+        "targetVocab": [
+          "euro",
+          "pantalón"
+        ],
+        "explanationAr": "العملة هي euro وتُجمع بإضافة s: cuarenta euros.",
+        "answerKey": {
+          "accepted": [
+            "euros"
+          ],
+          "acceptableAnswers": [
+            "euros"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cmp_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب كلمات سؤال السؤال عن الدفع بالبطاقة.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_cmp_4_order_t1",
+            "kind": "token",
+            "text": "¿Puedo"
+          },
+          {
+            "id": "a1_cmp_4_order_t2",
+            "kind": "token",
+            "text": "pagar"
+          },
+          {
+            "id": "a1_cmp_4_order_t3",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "a1_cmp_4_order_t4",
+            "kind": "token",
+            "text": "tarjeta"
+          },
+          {
+            "id": "a1_cmp_4_order_t5",
+            "kind": "token",
+            "text": "aquí?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Puedo pagar con tarjeta aquí?"
+          ],
+          "tokenOrder": [
+            "a1_cmp_4_order_t1",
+            "a1_cmp_4_order_t2",
+            "a1_cmp_4_order_t3",
+            "a1_cmp_4_order_t4",
+            "a1_cmp_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب: فعل الاستئذان ¿Puedo + المصدر pagar + حرف الجر con + الاسم tarjeta + ظرف المكان aquí?",
+        "targetVocab": [
+          "comprar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cmp_5_receipt",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي الكلمة الإسبانية الدالة على إيصال الشراء؟",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "عند استلام إيصال الدفع في المتجر، يعطيك البائع:",
+        "stemEs": "Aquí tiene su ____ de compra.",
+        "stemAr": "تفضل ____ الشراء الخاص بك.",
+        "options": [
+          {
+            "id": "a1_cmp_5_a",
+            "text": "ticket",
+            "textAr": "إيصال الشراء",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cmp_5_b",
+            "text": "zapato",
+            "textAr": "حذاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "zapato تعني حذاء وليس إيصالاً."
+          },
+          {
+            "id": "a1_cmp_5_c",
+            "text": "camisa",
+            "textAr": "قميص",
+            "isCorrect": false,
+            "distractorRationaleAr": "camisa تعني قميص."
+          }
+        ],
+        "targetVocab": [
+          "comprar"
+        ],
+        "explanationAr": "إيصال الشراء في المتاجر الإسبانية يسمى el ticket.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cmp_5_a"
+          ],
+          "selectedOptionId": "a1_cmp_5_a"
+        },
+        "errorFeedback": {
+          "a1_cmp_5_b": "zapato تعني حذاء وليس إيصالاً.",
+          "a1_cmp_5_c": "camisa تعني قميص."
+        }
+      },
+      {
+        "id": "a1_cmp_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة قرار الشراء والاستفسار عن السعر.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح وواثق:",
+        "stemEs": "Me lo llevo. ¿Cuánto es todo en total?",
+        "stemAr": "سآخذه. كم يبلغ الحساب الإجمالي؟",
+        "audioKey": "pending/a1-cmp-ex-6",
+        "targetVocab": [
+          "comprar",
+          "cuenta"
+        ],
+        "explanationAr": "احرص على الوصل الصوتي بين Me lo lle-vo و ¿Cuán-to es to-do?",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-cmp-ex-6",
+          "modelAnswer": "Me lo llevo. ¿Cuánto es todo en total?"
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

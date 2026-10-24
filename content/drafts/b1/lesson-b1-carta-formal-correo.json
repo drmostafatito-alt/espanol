@@ -1,0 +1,422 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-carta-formal-correo",
+    "unitSlug": "b1-u10-writing-basics",
+    "levelCode": "B1",
+    "titleAr": "الرسائل والبريد الإلكتروني الرسمي: أصول المكاتبات الإدارية والأكاديمية",
+    "titleEs": "La carta formal y el correo electrónico institucional",
+    "subtitleAr": "صيغ التحية الرسمية، عرض الطلب باحترام، وعبارات الختام المعتمدة",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم رسالة بريد إلكتروني رسمية (correo formal) موجهة لجامعة أو شركة أو إدارة حكومية.",
+        "أن يستخدم صيغ التحية الرسمية المعتمدة: Estimado/a señor/a, Distinguido director.",
+        "أن يختم المراسلة بالعبارات البروتوكولية اللبقة: Atentamente, Le saluda atentamente, Quedo a su entera disposición."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "هيكل المراسلات الرسمية في الإسبانية",
+          "explanationAr": "1. **صيغة التحية والافتتاح (El saludo)**:\n- **Estimado/a Sr./Sra. + اللقب** (الأكثر شيوعاً): *Estimado señor Martínez:* (لاحظ وضع النقطتين فوق بعض : بعد التحية في الإسبانية وليس الفاصلة كما في الإنجليزية).\n- **Distinguido/a + المنصب**: *Distinguida Directora:*\n2. **بيان سبب المراسلة (El cuerpo)**:\n- **Me dirijo a usted con el fin de / para solicitar...** (أتوجه إلى حضرتكم بهدف...).\n- **Le escribo en relación con la convocatoria de becas...**\n3. **الخاتمة والتوديع (La despedida)**:\n- **Quedo a la espera de sus noticias / de su respuesta** (في انتظار أخباركم/ردكم الكريم).\n- **Atentamente, / Le saluda atentamente,** (وتفضلوا بقبول فائق الاحترام والتقدير)."
+        }
+      ],
+      "commonMistakesAr": [
+        "وضع فاصلة (,) بعد التحية بدلاً من النقطتين (:)؛ القاعدة الإسبانية الصارمة تفرض النقطتين: *Estimado señor:*.",
+        "خلط صيغة الخطاب tú مع صيغة الاحترام usted داخل نفس الرسالة الرسمية."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في الإيميل الرسمي بنبدأ بـ «السيد المحترم فلان، أتشرف بمراسلتكم، وتفضلوا بقبول فائق الاحترام». بالإسبانية: Estimado señor Martínez:, Me dirijo a usted para..., Atentamente."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا والبلدان الناطقة بالإسبانية، الخطابات الإدارية تبدأ دائماً بـ 'Me dirijo a usted...' وتعتبر النقطتان (:) بعد الاسم التحية دليلاً قاطعاً على إتقان أصول المراسلات."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-carta-formal-correo-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات المراسلات الرسمية",
+        "bodyAr": "العبارات المعتمدة:\n- **estimado señor**: سيدي المحترم / الفاضل\n- **atentamente**: وتفضلوا بقبول فائق الاحترام والتقدير\n- **me dirijo a usted**: أتوجه إلى حضرتكم بكتابي هذا\n- **quedar a su disposición**: أبقى تحت تصرفكم لأي استفسار\n- **el asunto**: موضوع الرسالة في خانة الإيميل\n- **adjuntar**: يرفق ملفاً أو مستنداً بالبريد",
+        "examples": [
+          {
+            "es": "Estimada señora Gómez: Me dirijo a usted para solicitar información sobre el máster.",
+            "ar": "سيدتي الفاضلة غوميث: أتوجه إلى حضرتك لطلب معلومات حول الماجستير."
+          },
+          {
+            "es": "Le adjunto mi currículum vitae actualizado para su revisión.",
+            "ar": "أرفق لحضرتكم سيرتي الذاتية المحدثة لمراجعتها."
+          },
+          {
+            "es": "Agradeciendo de antemano su atención, le saluda atentamente.",
+            "ar": "شاكراً لحضرتكم سلفاً حسن الاهتمام، وتفضلوا بقبول فائق الاحترام."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "estimado señor",
+      "atentamente",
+      "me dirijo a usted",
+      "quedar a su disposición",
+      "asunto",
+      "adjuntar"
+    ],
+    "reviewVocabulary": [
+      "carta",
+      "correo"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يكتب المتعلم رسالة بريد إلكتروني رسمية (correo formal) موجهة لجامعة أو شركة أو إدارة حكومية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-car-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الختام والوداع الرسمية الأكثر شيوعاً في الرسائل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة البروتوكولية التي تختم بها الخطابات الرسمية (المقابلة لـ مع فائق الاحترام)؟",
+        "stemEs": "Esperando su pronta respuesta, le saluda _____.",
+        "stemAr": "في انتظار ردكم الكريم، وتفضلوا بقبول فائق ...",
+        "options": [
+          {
+            "id": "ex-b1-car-1_a",
+            "text": "atentamente",
+            "textAr": "مع فائق الاحترام والتقدير (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-car-1_b",
+            "text": "estimado señor",
+            "textAr": "تحية الافتتاح وليست الختام",
+            "isCorrect": false,
+            "distractorRationaleAr": "estimado señor تأتي في أول الرسالة."
+          },
+          {
+            "id": "ex-b1-car-1_c",
+            "text": "asunto",
+            "textAr": "الموضوع",
+            "isCorrect": false,
+            "distractorRationaleAr": "asunto هو خانة عنوان الرسالة."
+          }
+        ],
+        "targetVocab": [
+          "atentamente",
+          "estimado señor",
+          "asunto"
+        ],
+        "explanationAr": "atentamente هي الصيغة الرسمية المعيارية للختام في الخطابات والإيميلات الإدارية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-car-1_a"
+          ],
+          "selectedOptionId": "ex-b1-car-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-car-1_b": "estimado señor تأتي في أول الرسالة.",
+          "ex-b1-car-1_c": "asunto هو خانة عنوان الرسالة."
+        }
+      },
+      {
+        "id": "ex-b1-car-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على إرفاق الملفات والمستندات في الإيميل (adjuntar)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "صرف فعل إرفاق المستندات مع المتكلم yo في الحاضر: (adjunto)",
+        "stemEs": "En este correo le _____ el formulario oficial debidamente cumplimentado.",
+        "stemAr": "في هذا البريد ... لحضرتكم النموذج الرسمي بعد تعبئته كما ينبغي.",
+        "targetVocab": [
+          "adjuntar"
+        ],
+        "explanationAr": "فعل adjuntar يعني يرفق وثيقة أو ملفاً بالبريد: le adjunto el archivo.",
+        "answerKey": {
+          "accepted": [
+            "adjunto",
+            "Adjunto"
+          ],
+          "acceptableAnswers": [
+            "adjunto",
+            "Adjunto"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-car-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة الرسمية التي تفتتح بها بيان سبب مراسلة المسؤول",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تبدأ متن رسالتك لمدير مؤسسة لبيان سبب كتابتك للخطاب؟",
+        "stemEs": "_____ para solicitar una prórroga en el plazo de matrícula.",
+        "stemAr": "... لطلب تمديد في مهلة التسجيل الجامعي.",
+        "options": [
+          {
+            "id": "ex-b1-car-3_a",
+            "text": "Me dirijo a usted",
+            "textAr": "أتوجه إلى حضرتكم (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-car-3_b",
+            "text": "Atentamente",
+            "textAr": "خاتمة الرسالة",
+            "isCorrect": false,
+            "distractorRationaleAr": "atentamente تأتي في الختام وليس لبيان السبب."
+          },
+          {
+            "id": "ex-b1-car-3_c",
+            "text": "Asunto",
+            "textAr": "خانة العنوان",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج العبارة الاستفتاحية للنص."
+          }
+        ],
+        "targetVocab": [
+          "me dirijo a usted",
+          "atentamente",
+          "asunto"
+        ],
+        "explanationAr": "Me dirijo a usted هي العبارة المعيارية الرسمية لبدء متن الرسالة وتحديد الغرض.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-car-3_a"
+          ],
+          "selectedOptionId": "ex-b1-car-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-car-3_b": "atentamente تأتي في الختام وليس لبيان السبب.",
+          "ex-b1-car-3_c": "نحتاج العبارة الاستفتاحية للنص."
+        }
+      },
+      {
+        "id": "ex-b1-car-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لعرض الاستعداد التام لتقديم أي توضيحات إضافية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-car-4_t1",
+            "kind": "token",
+            "text": "Quedo"
+          },
+          {
+            "id": "ex-b1-car-4_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b1-car-4_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b1-car-4_t4",
+            "kind": "token",
+            "text": "entera"
+          },
+          {
+            "id": "ex-b1-car-4_t5",
+            "kind": "token",
+            "text": "disposición"
+          },
+          {
+            "id": "ex-b1-car-4_t6",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-car-4_t7",
+            "kind": "token",
+            "text": "cualquier"
+          },
+          {
+            "id": "ex-b1-car-4_t8",
+            "kind": "token",
+            "text": "duda"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quedo a su entera disposición para cualquier duda"
+          ],
+          "tokenOrder": [
+            "ex-b1-car-4_t1",
+            "ex-b1-car-4_t2",
+            "ex-b1-car-4_t3",
+            "ex-b1-car-4_t4",
+            "ex-b1-car-4_t5",
+            "ex-b1-car-4_t6",
+            "ex-b1-car-4_t7",
+            "ex-b1-car-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Quedo ثم a su entera disposición ثم الغرض para cualquier duda.",
+        "targetVocab": [
+          "quedar a su disposición"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-car-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد التحية وعلامة الترقيم الإسبانية الصحيحة بعدها",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتحية الافتتاحية في الرسالة الرسمية",
+        "stemEs": "Estimado señor Director: Me pongo en contacto con su departamento.",
+        "stemAr": "سيدي المدير المحترم: أتواصل مع قسمكم الكريم.",
+        "options": [
+          {
+            "id": "ex-b1-car-5_a",
+            "text": "estimado señor",
+            "textAr": "تحية رسمية متبوعة بنقطتين (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-car-5_b",
+            "text": "atentamente",
+            "textAr": "خاتمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قرأ افتتاحية الخطاب (Estimado señor Director:)."
+          },
+          {
+            "id": "ex-b1-car-5_c",
+            "text": "asunto",
+            "textAr": "موضوع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث بدأ بتحية المخاطب الرسمي."
+          }
+        ],
+        "targetVocab": [
+          "estimado señor",
+          "atentamente",
+          "asunto"
+        ],
+        "explanationAr": "المتحدث قال: 'Estimado señor Director:' كافتتاحية رسمية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_estimado_senor_director.mp3",
+        "speechEs": "Estimado señor Director: Me pongo en contacto con su departamento.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-car-5_a"
+          ],
+          "selectedOptionId": "ex-b1-car-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-car-5_b": "المتحدث قرأ افتتاحية الخطاب (Estimado señor Director:).",
+          "ex-b1-car-5_c": "المتحدث بدأ بتحية المخاطب الرسمي."
+        }
+      },
+      {
+        "id": "ex-b1-car-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك الختامية في البريد الرسمي باحترافية كاملة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة البروتوكولية التالية في ختام رسالتك الرسمية:",
+        "stemEs": "Quedo a su disposición y le saluda atentamente.",
+        "stemAr": "أبقى تحت تصرفكم، وتفضلوا بقبول فائق الاحترام والتقدير.",
+        "audioKey": "pending/b1_quedo_disposicion_atentamente.mp3",
+        "targetVocab": [
+          "quedar a su disposición",
+          "atentamente"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في disposición كـ ثاء ونطق atentamente بوقار.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_quedo_disposicion_atentamente.mp3",
+          "modelAnswer": "Quedo a su disposición y le saluda atentamente."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "هيكل المراسلات الرسمية في الإسبانية"
+    ]
+  }
+}

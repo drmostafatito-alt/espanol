@@ -1,0 +1,416 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-curriculum-competencias",
+    "unitSlug": "b1-u3-work",
+    "levelCode": "B1",
+    "titleAr": "السيرة الذاتية والكفاءات: صياغة المهارات والخبرة بلغة احترافية",
+    "titleEs": "El currículum vitae y las competencias profesionales",
+    "subtitleAr": "أقسام السيرة الذاتية، صياغة المهام السابقة، وتحديد الكفاءات اللغوية والرقمية",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم أقسام سيرته الذاتية باللغة الإسبانية طبقاً للمعايير الأوروبية (Europass).",
+        "أن يصف كفاءاته العملية والتقنية: competencias digitales, dominio de idiomas, liderazgo.",
+        "أن يستخدم الأفعال الإجرائية القوية لوصف المسؤوليات السابقة: coordinar, gestionar, optimizar, liderar."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الأفعال الإجرائية في صياغة السيرة الذاتية",
+          "explanationAr": "في السيرة الذاتية والمهنية، نستخدم مصادر الأفعال أو الأسماء المشتقة لوصف الإنجازات السابقة بدقة:\n- **Gestionar**: Gestión de equipos y presupuestos (إدارة الفرق والميزانيات).\n- **Coordinar**: Coordinación de campañas publicitarias (تنسيق الحملات الإعلانية).\n- **Optimizar**: Optimización de procesos operativos (تحسين العمليات التشغيلية).\n- **Liderar**: Liderazgo de proyectos internacionales (قيادة المشاريع الدولية)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام الفعل hacer أو trabajar بعبارات عامة ضعيفة بدلاً من الأفعال المحددة مثل gestionar وcoordinar.",
+        "كتابة عبارات مبهمة في مستوى اللغات؛ في أوروبا يُستخدم التوصيف المعياري (Nivel intermedio B1 / Dominio fluido)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «السيرة الذاتية بتاعتي فيها كل كورساتي وخبراتي وإدارتي للتيم». بالإسبانية: Mi currículum incluye mis competencias, formación y gestión de equipos."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا ومعظم دول الاتحاد الأوروبي، من المعتاد تضمين صورة شخصية رسمية حديثة ورابط ملف LinkedIn في الجزء العلوي من الـ CV."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-curriculum-competencias-intro",
+        "type": "explanation",
+        "titleAr": "المفردات المفتاحية للسيرة الذاتية",
+        "bodyAr": "المصطلحات المهنية:\n- **el currículum vitae**: السيرة الذاتية (CV)\n- **la competencia**: الكفاءة أو الجدارة المهنية\n- **gestionar**: يدير وينظم\n- **el liderazgo**: القيادة وتوجيه الفريق\n- **el logro**: الإنجاز المحقق\n- **el perfil profesional**: الملف الشخصي والمهني",
+        "examples": [
+          {
+            "es": "El currículum debe ser claro, conciso y orientado a logros.",
+            "ar": "يجب أن تكون السيرة الذاتية واضحة وموجزة وموجهة نحو الإنجازات."
+          },
+          {
+            "es": "Demostró una gran capacidad de liderazgo y resolución.",
+            "ar": "أظهر قدرة كبيرة على القيادة وحل المشكلات."
+          },
+          {
+            "es": "Se encarga de gestionar los recursos humanos de la filial.",
+            "ar": "يتولى إدارة الموارد البشرية للفرع."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "currículum vitae",
+      "competencia",
+      "gestionar",
+      "liderazgo",
+      "logro",
+      "perfil profesional"
+    ],
+    "reviewVocabulary": [
+      "experiencia",
+      "responsable"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يكتب المتعلم أقسام سيرته الذاتية باللغة الإسبانية طبقاً للمعايير الأوروبية (Europass).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-cur-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني الإنجاز الملموس في العمل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية المقابلة لـ 'إنجاز / نجاح محقق' في السيرة الذاتية؟",
+        "stemEs": "En mi última etapa laboral conseguí un gran _____ en reducción de costes.",
+        "stemAr": "في مرحلتي العملية الأخيرة حققت ... كبيراً في تقليص التكاليف.",
+        "options": [
+          {
+            "id": "ex-b1-cur-1_a",
+            "text": "logro",
+            "textAr": "إنجاز محقق (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cur-1_b",
+            "text": "liderazgo",
+            "textAr": "قيادة (اسم مهارة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "liderazgo اسم المهارة، أما النجاح المتحقق فهو logro."
+          },
+          {
+            "id": "ex-b1-cur-1_c",
+            "text": "competencia",
+            "textAr": "جدارة / كفاءة",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسماً يعبر عن النتيجة المحققة."
+          }
+        ],
+        "targetVocab": [
+          "logro",
+          "liderazgo",
+          "competencia"
+        ],
+        "explanationAr": "كلمة logro تعني إنجازاً أو نجاحاً ملموساً في السيرة الذاتية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cur-1_a"
+          ],
+          "selectedOptionId": "ex-b1-cur-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cur-1_b": "liderazgo اسم المهارة، أما النجاح المتحقق فهو logro.",
+          "ex-b1-cur-1_c": "نحتاج اسماً يعبر عن النتيجة المحققة."
+        }
+      },
+      {
+        "id": "ex-b1-cur-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الإجرائي الدال على الإدارة والتنظيم في المصدر",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الذي يعني 'يدير / ينظم الموارد والمشاريع' في صيغة المصدر (gestionar)",
+        "stemEs": "Mi responsabilidad principal consistía en _____ proyectos de innovación.",
+        "stemAr": "كانت مسؤوليتي الرئيسية تتمثل في ... مشاريع الابتكار.",
+        "targetVocab": [
+          "gestionar"
+        ],
+        "explanationAr": "فعل gestionar يعني يدير أو يتولى الإشراف والتنظيم الإداري.",
+        "answerKey": {
+          "accepted": [
+            "gestionar"
+          ],
+          "acceptableAnswers": [
+            "gestionar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cur-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد مهارة توجيه وتحفيز فريق العمل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح الدال على القدرة القيادية وتوجيه الأفراد؟",
+        "stemEs": "Para ser jefe de departamento se requiere una probada capacidad de _____.",
+        "stemAr": "لتكون رئيساً للقسم يُشترط التمتع بقدرة مثبتة على ...",
+        "options": [
+          {
+            "id": "ex-b1-cur-3_a",
+            "text": "liderazgo",
+            "textAr": "القيادة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cur-3_b",
+            "text": "currículum vitae",
+            "textAr": "سيرة ذاتية",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يستقيم المعنى مع متطلبات رئاسة القسم."
+          },
+          {
+            "id": "ex-b1-cur-3_c",
+            "text": "perfil profesional",
+            "textAr": "ملف مهني",
+            "isCorrect": false,
+            "distractorRationaleAr": "liderazgo هي المهارة القيادية المحددة."
+          }
+        ],
+        "targetVocab": [
+          "liderazgo",
+          "currículum vitae",
+          "perfil profesional"
+        ],
+        "explanationAr": "el liderazgo هي مهارة القيادة وتوجيه الفرق.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cur-3_a"
+          ],
+          "selectedOptionId": "ex-b1-cur-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cur-3_b": "لا يستقيم المعنى مع متطلبات رئاسة القسم.",
+          "ex-b1-cur-3_c": "liderazgo هي المهارة القيادية المحددة."
+        }
+      },
+      {
+        "id": "ex-b1-cur-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف الكفاءات المكتسبة في الملف المهني",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-cur-4_t1",
+            "kind": "token",
+            "text": "Tengo"
+          },
+          {
+            "id": "ex-b1-cur-4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b1-cur-4_t3",
+            "kind": "token",
+            "text": "perfil"
+          },
+          {
+            "id": "ex-b1-cur-4_t4",
+            "kind": "token",
+            "text": "profesional"
+          },
+          {
+            "id": "ex-b1-cur-4_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-b1-cur-4_t6",
+            "kind": "token",
+            "text": "mucha"
+          },
+          {
+            "id": "ex-b1-cur-4_t7",
+            "kind": "token",
+            "text": "experiencia"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tengo un perfil profesional con mucha experiencia"
+          ],
+          "tokenOrder": [
+            "ex-b1-cur-4_t1",
+            "ex-b1-cur-4_t2",
+            "ex-b1-cur-4_t3",
+            "ex-b1-cur-4_t4",
+            "ex-b1-cur-4_t5",
+            "ex-b1-cur-4_t6",
+            "ex-b1-cur-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Tengo ثم المفعول un perfil profesional ثم شبه الجملة con mucha experiencia.",
+        "targetVocab": [
+          "perfil profesional",
+          "experiencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cur-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد المهارة البارزة في السيرة الذاتية",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتقييم مسؤول التوظيف وحدد ما لفت نظره في المرشح",
+        "stemEs": "El currículum vitae destaca por sus excelentes competencias analíticas.",
+        "stemAr": "تتميز السيرة الذاتية بكفاءاتها التحليلية الممتازة.",
+        "options": [
+          {
+            "id": "ex-b1-cur-5_a",
+            "text": "currículum vitae",
+            "textAr": "السيرة الذاتية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cur-5_b",
+            "text": "logro",
+            "textAr": "إنجاز فردي فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسؤول قيم السيرة الذاتية بالكامل (el currículum vitae)."
+          },
+          {
+            "id": "ex-b1-cur-5_c",
+            "text": "liderazgo",
+            "textAr": "قيادة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسؤول أشاد بالكفاءات التحليلية في الـ CV."
+          }
+        ],
+        "targetVocab": [
+          "currículum vitae",
+          "logro",
+          "liderazgo",
+          "competencia"
+        ],
+        "explanationAr": "المتحدث قال: 'El currículum vitae destaca por sus excelentes competencias'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_curriculum_competencias.mp3",
+        "speechEs": "El currículum vitae destaca por sus excelentes competencias analíticas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cur-5_a"
+          ],
+          "selectedOptionId": "ex-b1-cur-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cur-5_b": "المسؤول قيم السيرة الذاتية بالكامل (el currículum vitae).",
+          "ex-b1-cur-5_c": "المسؤول أشاد بالكفاءات التحليلية في الـ CV."
+        }
+      },
+      {
+        "id": "ex-b1-cur-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق ملخص كفاءاتك ومسؤولياتك السابقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح وثقة لتلخيص مهامك:",
+        "stemEs": "Tengo amplia competencia para gestionar equipos y liderar proyectos.",
+        "stemAr": "لدي كفاءة واسعة لإدارة الفرق وقيادة المشاريع.",
+        "audioKey": "pending/b1_competencia_gestionar.mp3",
+        "targetVocab": [
+          "competencia",
+          "gestionar"
+        ],
+        "explanationAr": "انتبه لنطق حرف g في gestionar كـ خاء مرققة ونطق مقطع pro في proyectos.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_competencia_gestionar.mp3",
+          "modelAnswer": "Tengo amplia competencia para gestionar equipos y liderar proyectos."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "الأفعال الإجرائية في صياغة السيرة الذاتية"
+    ]
+  }
+}

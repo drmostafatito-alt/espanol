@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-alojamiento-hotel",
+    "titleAr": "حجز الإقامة والتعامل في الفندق: الخدمات وتفاصيل الغرفة",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u1-travel",
+    "objectiveAr": "أن يطلب المتعلم غرفة في فندق ويستفهم عن الخدمات والإفطار وتأكيد الحجز واستلام المفتاح باللغة الإسبانية المناسبة لبيئة الاستقبال.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "reading",
+      "listening",
+      "speaking",
+      "writing",
+      "vocabulary",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "hotel",
+      "habitación",
+      "reservar",
+      "reserva",
+      "llave",
+      "desayuno",
+      "recepción",
+      "equipaje"
+    ],
+    "reviewVocabulary": [
+      "noche",
+      "precio",
+      "tarjeta",
+      "cama"
+    ],
+    "targetStructures": [
+      "Tengo una reserva a nombre de...",
+      "¿El desayuno está incluido en el precio?",
+      "Aquí tiene la llave de su habitación en el segundo piso."
+    ],
+    "grammarTopics": [
+      "frases-recepcion-hotel",
+      "estar-incluido"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "وصول مسافر عربي إلى فندق في إشبيلية وتأكيد حجزه مع موظف الاستقبال.",
+        "settingAr": "مكتب استقبال الفندق بعد الظهر",
+        "lines": [
+          {
+            "es": "¡Buenas tardes! Tengo una reserva a nombre de Tariq.",
+            "ar": "مساء الخير! لدي حجز باسم طارق.",
+            "arEg": "مساء الخير! عندي حجز باسم طارق.",
+            "audioKey": "pending/a2-hotel-sc-1"
+          },
+          {
+            "es": "Bienvenido, señor. Sí, aquí está: una habitación para tres noches.",
+            "ar": "أهلًا بك يا سيدي. نعم، ها هو: غرفة لثلاث ليالٍ.",
+            "arEg": "أهلًا بحضرتك يا فندم. تمام، الحجز موجود: أوضة لتلات ليالي.",
+            "audioKey": "pending/a2-hotel-sc-2"
+          },
+          {
+            "es": "¿El desayuno está incluido en el precio de la habitación?",
+            "ar": "هل وجبة الإفطار مشمولة في سعر الغرفة؟",
+            "arEg": "هو الفطار مشمول في سعر الأوضة؟",
+            "audioKey": "pending/a2-hotel-sc-3"
+          },
+          {
+            "es": "Sí, está incluido. Aquí tiene la llave de su habitación y le ayudamos con el equipaje.",
+            "ar": "نعم، مشمولة. تفضل مفتاح غرفتك وسنساعدك في نقل الأمتعة.",
+            "arEg": "أيوة، مشمول. اتفضل مفتاح أوضتك وهنساعدك في الشنط.",
+            "audioKey": "pending/a2-hotel-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_hot_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى موظف الاستقبال واختر مدة الإقامة المحجوزة.",
+        "audioKey": "pending/a2-hotel-sc-2",
+        "speechEs": "Bienvenido, señor. Sí, aquí está: una habitación para tres noches.",
+        "options": [
+          {
+            "id": "a2_hot_1_a",
+            "text": "Tres noches",
+            "isCorrect": true,
+            "textAr": "ثلاث ليالٍ"
+          },
+          {
+            "id": "a2_hot_1_b",
+            "text": "Una semana",
+            "isCorrect": false,
+            "textAr": "أسبوع كامل",
+            "distractorRationaleAr": "لم يقل موظف الاستقبال una semana بل tres noches."
+          },
+          {
+            "id": "a2_hot_1_c",
+            "text": "Una sola noche",
+            "isCorrect": false,
+            "textAr": "ليلة واحدة فقط",
+            "distractorRationaleAr": "الموظف حدد ثلاث ليالٍ وليس ليلة واحدة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_hot_1_a"
+          ]
+        },
+        "explanationAr": "الموظف قال بوضوح: «una habitación para tres noches» أي لثلاث ليالٍ.",
+        "errorFeedback": {
+          "a2_hot_1_b": "استمع مرة أخرى: قال tres noches.",
+          "a2_hot_1_c": "الحجز لثلاث ليالٍ وليس ليلة واحدة."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "habitación",
+          "noche"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_hot_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الكلمة المناسبة لطلب التحقق من الحجز المسبق في الفندق.",
+        "stemEs": "Buenas tardes, tengo una ____ a nombre de Ahmed.",
+        "stemAr": "مساء الخير، لدي ____ باسم أحمد.",
+        "options": [
+          {
+            "id": "a2_hot_2_a",
+            "text": "reserva",
+            "isCorrect": true,
+            "textAr": "حجز"
+          },
+          {
+            "id": "a2_hot_2_b",
+            "text": "maleta",
+            "isCorrect": false,
+            "textAr": "حقيبة",
+            "distractorRationaleAr": "لا نقول tengo una maleta a nombre de في هذا السياق بل reserva."
+          },
+          {
+            "id": "a2_hot_2_c",
+            "text": "comida",
+            "isCorrect": false,
+            "textAr": "طعام",
+            "distractorRationaleAr": "comida تعني طعام وهي غير مناسبة لتأكيد الغرفة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_hot_2_a"
+          ]
+        },
+        "explanationAr": "العبارة الاصطلاحية الرسمية عند الوصول هي: «tengo una reserva a nombre de...».",
+        "errorFeedback": {
+          "a2_hot_2_b": "maleta تعني حقيبة سفر.",
+          "a2_hot_2_c": "comida تعني وجبة أو طعام."
+        },
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "reserva"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_hot_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب الكلمة الناقصة للسؤال عما إذا كان الإفطار مشمولًا في السعر.",
+        "stemEs": "¿El desayuno está ____ en el precio?",
+        "stemAr": "هل الإفطار ____ في السعر؟",
+        "answerKey": {
+          "accepted": [
+            "incluido"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "نستخدم اسم المفعول «incluido» مع estar للسؤال عن الخدمات المشمولة: «está incluido».",
+        "errorFeedback": {
+          "incluida": "desayuno اسم مذكر، لذا اسم المفعول مذكر: incluido.",
+          "incluye": "المطلوب اسم مفعول بعد está وليس فعلاً مصرفاً."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "desayuno",
+          "precio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_hot_4_reply",
+        "type": "word_choice",
+        "instructionAr": "يقول لك موظف الاستقبال: «Aquí tiene la llave de su habitación». ما هو الرد المهذب المناسب؟",
+        "stemEs": "Aquí tiene la llave de su habitación.",
+        "stemAr": "تفضل مفتاح غرفتك.",
+        "options": [
+          {
+            "id": "a2_hot_4_a",
+            "text": "Muchas gracias, ¿dónde está el ascensor?",
+            "isCorrect": true,
+            "textAr": "شكرًا جزيلاً، أين المصعد؟"
+          },
+          {
+            "id": "a2_hot_4_b",
+            "text": "No quiero viajar hoy.",
+            "isCorrect": false,
+            "textAr": "لا أريد السفر اليوم.",
+            "distractorRationaleAr": "رد غير ملائم لشخص يسلمك مفتاح الغرفة."
+          },
+          {
+            "id": "a2_hot_4_c",
+            "text": "La cuenta, por favor.",
+            "isCorrect": false,
+            "textAr": "الحساب من فضلك.",
+            "distractorRationaleAr": "هذه عبارة تُقال عند مغادرة المطعم وليس عند استلام مفتاح الفندق."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_hot_4_a"
+          ]
+        },
+        "explanationAr": "بعد استلام المفتاح نشكر الموظف ونستعلم عن مكان المصعد للوصول إلى الغرفة.",
+        "errorFeedback": {
+          "a2_hot_4_b": "أنت بالفعل وصلت الفندق وتستلم المفتاح.",
+          "a2_hot_4_c": "طلب الفاتورة يكون في المطعم أو عند تسجيل المغادرة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "llave",
+          "habitación"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_hot_5_wordorder",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تطلب فيها المساعدة في نقل الأمتعة.",
+        "items": [
+          {
+            "id": "a2_hot_t1",
+            "kind": "token",
+            "text": "¿Puede"
+          },
+          {
+            "id": "a2_hot_t2",
+            "kind": "token",
+            "text": "ayudarme"
+          },
+          {
+            "id": "a2_hot_t3",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "a2_hot_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "a2_hot_t5",
+            "kind": "token",
+            "text": "equipaje?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Puede ayudarme con el equipaje?"
+          ],
+          "tokenOrder": [
+            "a2_hot_t1",
+            "a2_hot_t2",
+            "a2_hot_t3",
+            "a2_hot_t4",
+            "a2_hot_t5"
+          ]
+        },
+        "explanationAr": "التركيب المهذب للطلب: ¿Puede + المصدر المتصل بضمير المفعول ayudarme + حرف الجر con + الاسم el equipaje.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "equipaje"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_hot_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق عبارة الاستعلام عن الإفطار بنبرة استفهامية صحيحة.",
+        "stemEs": "¿El desayuno está incluido en el precio?",
+        "stemAr": "هل الإفطار مشمول في السعر؟",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-hotel-speak-1",
+          "modelAnswer": "¿El desayuno está incluido en el precio?"
+        },
+        "explanationAr": "احرص على رفع نبرة الصوت في نهاية السؤال ¿...precio? ونطق حرف d بصوت ذال خفيفة في incluido.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "desayuno",
+          "precio"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبرة الاستفهامية الصاعدة في نهاية السؤال",
+              "weight": 50,
+              "code": "intonation_question"
+            },
+            {
+              "labelAr": "نطق حرف d بين صائتين في incluido",
+              "weight": 50,
+              "code": "pron_d_intervocalic"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 2 وEn Vocabulario A1-A2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

@@ -72,6 +72,7 @@ function normalizeText(input: string, key: AnswerKey): string {
 
 function asText(response: unknown): string {
   if (typeof response === 'string') return response;
+  if (Array.isArray(response)) return response.map(String).join(' ');
   if (response && typeof response === 'object') {
     const r = response as Record<string, unknown>;
     if (typeof r.text === 'string') return r.text;

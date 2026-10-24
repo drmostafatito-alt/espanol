@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-por-vs-para",
+    "titleAr": "التمييز القاطع بين Por و Para للمتعلم العربي",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u2-opinions",
+    "objectiveAr": "أن يفرّق المتعلم بدقة تامة بين حرفي الجر Por و Para في جميع سياقات الاستخدام (السبب والدافع مقابل الهدف والغاية، والمدة مقابل الموعد النهائي، والواسطة مقابل المستقبل).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "por",
+      "para",
+      "estudiar",
+      "trabajar",
+      "viajar",
+      "tiempo"
+    ],
+    "reviewVocabulary": [
+      "gracias",
+      "mañana",
+      "amigo",
+      "Madrid"
+    ],
+    "targetStructures": [
+      "PARA: Finalidad (para estudiar), Destinatario (para ti), Fecha límite (para el lunes)",
+      "POR: Causa/Motivo (por la lluvia), Medio (por teléfono), Agradecimiento (gracias por...)"
+    ],
+    "grammarTopics": [
+      "por-vs-para-contraste",
+      "preposiciones-causa-finalidad"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محادثة بين طالب يوضح لزميله أسباب سفره إلى إسبانيا وتحضيراته للمشروع الدراسي.",
+        "settingAr": "مكتبة المعهد، إسبانيا",
+        "lines": [
+          {
+            "es": "¿Por qué decidiste venir a España?",
+            "ar": "لماذا قررت القدوم إلى إسبانيا؟",
+            "arEg": "ليه قررت تيجي إسبانيا؟",
+            "audioKey": "pending/b1-porpara-karim-1"
+          },
+          {
+            "es": "Vine a Madrid para estudiar un máster y mejorar mi español.",
+            "ar": "جئتُ إلى مدريد لأجل دراسة الماجستير وتحسين لغتي الإسبانية.",
+            "arEg": "جيت مدريد عشان أعمل ماجستير وأحسّن الإسباني بتاعي.",
+            "audioKey": "pending/b1-porpara-karim-2"
+          },
+          {
+            "es": "¿Y tienes que entregar el trabajo final pronto?",
+            "ar": "وهل عليك تسليم مشروع التخرج قريبًا؟",
+            "arEg": "ولازم تسلّم المشروع قريب؟",
+            "audioKey": "pending/b1-porpara-karim-3"
+          },
+          {
+            "es": "Sí, el informe es para el viernes, así que gracias por tu ayuda.",
+            "ar": "نعم، التقرير مطلوب بحلول يوم الجمعة، لذا شكرًا لك على مساعدتك.",
+            "arEg": "أيوة، التقرير ميعاده الجمعة، فشكراً على مساعدتك.",
+            "audioKey": "pending/b1-porpara-karim-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_porpara_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى كريم واختر الغاية من قدومه إلى مدريد.",
+        "audioKey": "pending/b1-porpara-karim-2",
+        "speechEs": "Vine a Madrid para estudiar un máster y mejorar mi español.",
+        "options": [
+          {
+            "id": "b1_porpara_1_a",
+            "text": "Estudiar un máster y mejorar el español",
+            "isCorrect": true,
+            "textAr": "دراسة الماجستير وتحسين اللغة"
+          },
+          {
+            "id": "b1_porpara_1_b",
+            "text": "Pasar las vacaciones de verano",
+            "isCorrect": false,
+            "textAr": "قضاء عطلة الصيف",
+            "distractorRationaleAr": "لم يذكر السياحة الصيفية."
+          },
+          {
+            "id": "b1_porpara_1_c",
+            "text": "Trabajar de camarero",
+            "isCorrect": false,
+            "textAr": "العمل نادلاً",
+            "distractorRationaleAr": "لم يذكر ذلك."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_porpara_1_a"
+          ]
+        },
+        "explanationAr": "استخدم كريم حرف الجر para لأن الحديث هنا عن الهدف والغاية المستقبلية (Finalidad): «para estudiar un máster».",
+        "errorFeedback": {
+          "b1_porpara_1_b": "جاء للدراسة وليس للسياحة.",
+          "b1_porpara_1_c": "الهدف هو الماجستير واللغة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "para",
+          "estudiar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_porpara_2_concept",
+        "type": "word_choice",
+        "instructionAr": "لماذا يقع المتحدث العربي في الخلط المتكرر بين Por و Para؟",
+        "options": [
+          {
+            "id": "b1_porpara_2_a",
+            "text": "Porque el árabe usa la misma partícula li- para causa y finalidad",
+            "isCorrect": true,
+            "textAr": "اشتراك اللام في العربية"
+          },
+          {
+            "id": "b1_porpara_2_b",
+            "text": "Porque empiezan por la misma letra",
+            "isCorrect": false,
+            "textAr": "تشابه الحرف الأول",
+            "distractorRationaleAr": "السبب لغوي دلالي وليس تشابه حروف."
+          },
+          {
+            "id": "b1_porpara_2_c",
+            "text": "Porque significan exactamente lo mismo",
+            "isCorrect": false,
+            "textAr": "تطابق المعنى",
+            "distractorRationaleAr": "لهما معنيان مختلفان تماماً."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_porpara_2_a"
+          ]
+        },
+        "explanationAr": "في العربية نقول «لـ» للسبب ونقول «لـ» للهدف، بينما في الإسبانية: Por تنظر إلى الخلف (الدافع والسبب)، و Para تنظر إلى الأمام (الهدف والوجهة).",
+        "errorFeedback": {
+          "b1_porpara_2_b": "السبب أعمق من مجرد الحرف الأول.",
+          "b1_porpara_2_c": "معناهما مختلف جذرياً."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "por",
+          "para"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_porpara_3_fill_cause",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالسبب والدافع: «لم نخرج بسبب المطر الغزير».",
+        "stemEs": "No salimos de casa ____ la lluvia intensa.",
+        "stemAr": "لم نخرج من المنزل بسبب المطر الشديد.",
+        "answerKey": {
+          "accepted": [
+            "por"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "المطر هو الدافع والعلة المسببة للقرار، لذا نستخدم por حصرًا: «por la lluvia».",
+        "errorFeedback": {
+          "para": "المطر ليس غاية نرجوها، بل سبب وقع مسبقًا.",
+          "de": "de تفيد الملكية أو الأصل."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "por"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_porpara_4_fill_deadline",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالموعد النهائي والتسليم: «هذا الواجب مطلوب ليوم الإثنين».",
+        "stemEs": "Esta tarea es ____ el lunes.",
+        "stemAr": "هذا الواجب مطلوب بحلول يوم الإثنين.",
+        "answerKey": {
+          "accepted": [
+            "para"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "عند الحديث عن الموعد النهائي (Fecha límite) نستخدم دائمًا حرف الجر para: «para el lunes».",
+        "errorFeedback": {
+          "por": "por لا تعبر عن موعد التسليم النهائي.",
+          "en": "en تعني في يوم كذا، لكن para تحدد الأجل والتسليم."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "para"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_porpara_5_gratitude",
+        "type": "fill_blank",
+        "instructionAr": "اختر حرف الجر الصحيح مع عبارات الشكر: «شكرًا لك على كل شيء».",
+        "stemEs": "Muchas gracias ____ todo.",
+        "stemAr": "شكرًا جزيلاً لك على كل شيء.",
+        "answerKey": {
+          "accepted": [
+            "por"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "عبارات الشكر والاعتذار تأخذ دائماً حرف الجر por لأنه يعبر عن الدافع والعلة التي استوجبت الشكر: «Gracias por tu ayuda».",
+        "errorFeedback": {
+          "para": "para خطأ فادح بعد gracias.",
+          "de": "de غير صحيحة هنا."
+        },
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "por"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_porpara_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة موضحًا التمييز بين الغاية والدافع.",
+        "stemEs": "Estudio español para trabajar en España.",
+        "stemAr": "أدرس الإسبانية لأجل العمل في إسبانيا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-porpara-speak-1",
+          "modelAnswer": "Estudio español para trabajar en España."
+        },
+        "explanationAr": "تدرّب على نطق para بوضوح كحرف دال على الغاية المستقبلية (para trabajar).",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "para",
+          "trabajar"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح كلمة para الدالة على الهدف",
+              "weight": 50,
+              "code": "pron_para"
+            },
+            {
+              "labelAr": "نطق حرف j في trabajar كخاء",
+              "weight": 50,
+              "code": "pron_j_trabajar"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من مراجع Aula Plus 3 وEn Vocabulario B1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم حلاً نهائيًا لعقدة Por مقابل Para عبر المقارنة الدلالية الصريحة مع حرف اللام في العربية."
+    }
+  }
+}

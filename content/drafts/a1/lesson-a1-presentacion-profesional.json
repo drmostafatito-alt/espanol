@@ -1,0 +1,416 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-presentacion-profesional",
+    "unitSlug": "a1-u9-work-study",
+    "levelCode": "A1",
+    "titleAr": "تقديم نفسي في سياق مهني: دمج الاسم والمهنة واللغات ومكان العمل",
+    "titleEs": "Presentación profesional",
+    "subtitleAr": "صياغة نبذة مهنية متكاملة تجمع الوظيفة والشركة واللغات والخبرة",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقدم المتعلم نبذة مهنية موجزة ومتماسكة عن نفسه باللغة الإسبانية.",
+        "أن يذكر شركته (empresa) ولغات عمله (idiomas) باستخدام hablo.",
+        "أن يربط بين مهنته ومكان عمله وزملائه (compañeros)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب المهنية: Trabajo en + مكان / Trabajo de + دور",
+          "explanationAr": "لتقديم نفسك مهنياً ندمج عدة عناصر أساسية:\n- الاسم والمهنة: Me llamo Omar y soy ingeniero.\n- مكان العمل والشركة: Trabajo en una empresa internacional (استخدام حرف الجر en مع الشركات والمؤسسات).\n- اللغات: Hablo árabe, inglés y un poco de español (تصريف hablar مع yo: hablo).\n- الخبرة: Tengo dos años de experiencia."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام a بدلاً من en مع الشركات ومقرات العمل (مثل *trabajo a una empresa* بدلاً من en una empresa).",
+        "نسيان الربط بين الجمل بأدوات الربط البسيطة (y, además, pero) مما يجعل الكلام متقطعاً."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا فلان، مهندس وشغال في شركة اتصالات وبتكلم لغتين وعندي خبرة». في الإسبانية نفس التسلسل المهني بالضبط."
+        }
+      ],
+      "culturalNoteAr": "في بيئة العمل الإسبانية، من الشائع استخدام صيغة tú والنداء بالاسم الأول بين الزملاء (los compañeros)، بينما تُحفظ usted للمقابلات الرسمية جداً والعملاء الجدد."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-presentacion-profesional-intro",
+        "type": "explanation",
+        "titleAr": "التعريف المهني المتكامل",
+        "bodyAr": "المفردات المفتاحية للتعريف عن نفسك في سياق عمل:\n- **la empresa**: الشركة / المؤسسة\n- **los idiomas**: اللغات\n- **hablo**: أتحدث (تصريف hablar مع yo)\n- **la experiencia**: الخبرة العملية\n- **el puesto**: المنصب / الوظيفة الشاغرة\n- **el compañero / la compañera**: الزميل / الزميلة",
+        "examples": [
+          {
+            "es": "Trabajo en una empresa tecnológica.",
+            "ar": "أعمل في شركة تكنولوجية."
+          },
+          {
+            "es": "Hablo tres idiomas con fluidez.",
+            "ar": "أتحدث ثلاث لغات بطلاقة."
+          },
+          {
+            "es": "Mis compañeros de trabajo son muy amables.",
+            "ar": "زملائي في العمل لطفاء جداً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "empresa",
+      "idiomas",
+      "hablo",
+      "experiencia",
+      "puesto",
+      "compañero"
+    ],
+    "reviewVocabulary": [
+      "profesor",
+      "ingeniero",
+      "oficina"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يقدم المتعلم نبذة مهنية موجزة ومتماسكة عن نفسه باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-prep-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر المناسب للعمل في شركة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو حرف الجر الصحيح بعد trabajar عند ذكر مكان العمل أو الشركة؟",
+        "stemEs": "Trabajo _____ una gran empresa internacional.",
+        "stemAr": "أعمل في شركة دولية كبرى.",
+        "options": [
+          {
+            "id": "ex-a1-prep-1_o1",
+            "text": "en",
+            "textAr": "حرف الجر للمكان والمؤسسات",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prep-1_o2",
+            "text": "a",
+            "textAr": "حرف جر للاتجاه",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع أماكن العمل والشركات نستخدم en وليس a."
+          },
+          {
+            "id": "ex-a1-prep-1_o3",
+            "text": "de",
+            "textAr": "حرف جر للمهنة المؤقتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "de تأتي مع اسم المهنة (trabajo de camarero) وليس مع الشركة."
+          }
+        ],
+        "targetVocab": [
+          "empresa"
+        ],
+        "explanationAr": "نستخدم دائماً حرف الجر en مع مقرات العمل والشركات: trabajar en una empresa.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prep-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-prep-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prep-1_o2": "مع أماكن العمل والشركات نستخدم en وليس a.",
+          "ex-a1-prep-1_o3": "de تأتي مع اسم المهنة (trabajo de camarero) وليس مع الشركة."
+        }
+      },
+      {
+        "id": "ex-a1-prep-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب تصريف فعل التحدث مع ضمير المتكلم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'أتحدث' بالإسبانية (تصريف hablar مع yo)",
+        "stemEs": "Yo _____ español y árabe en el trabajo.",
+        "stemAr": "أنا أتحدث الإسبانية والعربية في العمل.",
+        "targetVocab": [
+          "hablo"
+        ],
+        "explanationAr": "تصريف الفعل hablar مع yo هو hablo بحذف الـ -ar وإضافة -o.",
+        "answerKey": {
+          "accepted": [
+            "hablo"
+          ],
+          "acceptableAnswers": [
+            "hablo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-prep-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المناسبة لسنوات الممارسة العملية",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى المعرفة والمهارة المكتسبة عبر سنوات العمل؟",
+        "stemEs": "Tengo cinco años de _____ profesional.",
+        "stemAr": "لدي خمس سنوات من ... المهنية.",
+        "options": [
+          {
+            "id": "ex-a1-prep-3_o1",
+            "text": "experiencia",
+            "textAr": "خبرة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prep-3_o2",
+            "text": "empresa",
+            "textAr": "شركة",
+            "isCorrect": false,
+            "distractorRationaleAr": "empresa تعني الشركة نفسها."
+          },
+          {
+            "id": "ex-a1-prep-3_o3",
+            "text": "idiomas",
+            "textAr": "لغات",
+            "isCorrect": false,
+            "distractorRationaleAr": "idiomas جمع لغة ولا تكمل معنى سنوات الممارسة هنا."
+          }
+        ],
+        "targetVocab": [
+          "experiencia",
+          "empresa",
+          "idiomas"
+        ],
+        "explanationAr": "الخبرة المهنية تسمى experiencia profesional.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prep-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-prep-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prep-3_o2": "empresa تعني الشركة نفسها.",
+          "ex-a1-prep-3_o3": "idiomas جمع لغة ولا تكمل معنى سنوات الممارسة هنا."
+        }
+      },
+      {
+        "id": "ex-a1-prep-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتقديم نفسك كمهندس في شركة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-prep-4_t1",
+            "kind": "token",
+            "text": "Soy"
+          },
+          {
+            "id": "ex-a1-prep-4_t2",
+            "kind": "token",
+            "text": "ingeniero"
+          },
+          {
+            "id": "ex-a1-prep-4_t3",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-a1-prep-4_t4",
+            "kind": "token",
+            "text": "trabajo"
+          },
+          {
+            "id": "ex-a1-prep-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a1-prep-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-prep-4_t7",
+            "kind": "token",
+            "text": "oficina"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Soy ingeniero y trabajo en la oficina"
+          ],
+          "tokenOrder": [
+            "ex-a1-prep-4_t1",
+            "ex-a1-prep-4_t2",
+            "ex-a1-prep-4_t3",
+            "ex-a1-prep-4_t4",
+            "ex-a1-prep-4_t5",
+            "ex-a1-prep-4_t6",
+            "ex-a1-prep-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: المهنة أولاً Soy ingeniero ثم أداة العطف y ثم الفعل والجار والمجرور trabajo en la oficina.",
+        "targetVocab": [
+          "ingeniero",
+          "oficina"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-prep-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما يتحدث به الزميل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد اللغات التي يذكرها المتحدث",
+        "stemEs": "En mi puesto hablo dos idiomas cada día.",
+        "stemAr": "في منصبي أتحدث لغتين كل يوم.",
+        "options": [
+          {
+            "id": "ex-a1-prep-5_o1",
+            "text": "idiomas",
+            "textAr": "لغات",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prep-5_o2",
+            "text": "oficina",
+            "textAr": "مكتب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على التحدث باللغات."
+          },
+          {
+            "id": "ex-a1-prep-5_o3",
+            "text": "profesor",
+            "textAr": "معلم",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث لم يذكر كلمة profesor."
+          }
+        ],
+        "targetVocab": [
+          "idiomas",
+          "puesto",
+          "oficina",
+          "profesor"
+        ],
+        "explanationAr": "المتحدث قال: hablo dos idiomas cada día.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_hablo_dos_idiomas.mp3",
+        "speechEs": "En mi puesto hablo dos idiomas cada día.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prep-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-prep-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prep-5_o2": "المتحدث ركز على التحدث باللغات.",
+          "ex-a1-prep-5_o3": "المتحدث لم يذكر كلمة profesor."
+        }
+      },
+      {
+        "id": "ex-a1-prep-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق تقديمك المهني وزملائك في العمل",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة موضحاً علاقتك الطيبة بزملائك في الشركة",
+        "stemEs": "Tengo buenos compañeros en la empresa.",
+        "stemAr": "لدي زملاء جيدون في الشركة.",
+        "audioKey": "pending/a1_buenos_companeros.mp3",
+        "targetVocab": [
+          "compañero",
+          "empresa"
+        ],
+        "explanationAr": "تذكر نطق حرف ñ كـ نياء معجمة (ny) كما في كلمة compañeros.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_buenos_companeros.mp3",
+          "modelAnswer": "Tengo buenos compañeros en la empresa."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب المهنية: Trabajo en + مكان / Trabajo de + دور"
+    ]
+  }
+}

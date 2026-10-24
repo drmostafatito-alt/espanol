@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-condicional-imperfecto-subjuntivo",
+    "titleAr": "الجمل الشرطية الافتراضية: Si + Imperfecto de Subjuntivo",
+    "level": "B2",
+    "programSlug": "main-track",
+    "unitSlug": "b2-u1-argument",
+    "objectiveAr": "أن يتقن المتعلم صياغة واستخدام الجمل الشرطية الافتراضية غير المتحققة في الحاضر (المقابلة لأداة «لو» الامتناعية في العربية) بتركيب: Si + Imperfecto de Subjuntivo -> Condicional Simple.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "tuviera",
+      "fuera",
+      "viajaría",
+      "compraría",
+      "condición",
+      "imposible"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "dinero",
+      "mundo",
+      "amigo"
+    ],
+    "targetStructures": [
+      "Estructura fija: Si + Imperfecto de Subjuntivo + Condicional Simple",
+      "Ejemplo: Si tuviera más tiempo libre, estudiaría otro idioma",
+      "Correspondencia con el árabe: لو كان معي... لفعلتُ (شرط امتناعي)",
+      "Terminaciones de imperfecto de subjuntivo: -ra, -ras, -ra, -́ramos, -rais, -ran"
+    ],
+    "grammarTopics": [
+      "condicionales-irreales-presente",
+      "imperfecto-subjuntivo-formacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار بين رفيقين في السكن يتخيلان ما سيفعلانه لو امتلكا ثروة مالية طائلة أو وقت فراغ كبير.",
+        "settingAr": "شرفة المنزل، وقت الغروب",
+        "lines": [
+          {
+            "es": "Si tuvieras un millón de euros ahora mismo, ¿qué harías?",
+            "ar": "لو كان معك مليون يورو الآن، ماذا كنت ستفعل؟",
+            "arEg": "لو معاك مليون يورو دلوقتي في جيبك، هتعمل بيهم إيه؟",
+            "audioKey": "pending/b2-cond-amigos-1"
+          },
+          {
+            "es": "Si tuviera ese dinero, viajaría por todo el mundo y crearía una fundación benéfica.",
+            "ar": "لو كان لديّ ذلك المال، لسافرتُ حول العالم وأنشأتُ مؤسسة خيرية.",
+            "arEg": "لو معايا الفلوس دي، هلف العالم كله وأعمل مؤسسة خيرية.",
+            "audioKey": "pending/b2-cond-amigos-2"
+          },
+          {
+            "es": "¿Y dejarías tu trabajo actual?",
+            "ar": "وهل كنت ستترك عملك الحالي؟",
+            "arEg": "وكنت هتسيب شغلك؟",
+            "audioKey": "pending/b2-cond-amigos-3"
+          },
+          {
+            "es": "No lo dejaría, pero trabajaría menos horas para dedicarme a escribir.",
+            "ar": "لن أتركه، لكني سأعمل ساعات أقل لأتفرغ للكتابة.",
+            "arEg": "مش هسيبه، بس هشتغل ساعات أقل عشان أروّق للكتابة.",
+            "audioKey": "pending/b2-cond-amigos-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b2_cond_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع واختر ما كان الصديق سيفعله لو امتلك مليون يورو.",
+        "audioKey": "pending/b2-cond-amigos-2",
+        "speechEs": "Si tuviera ese dinero, viajaría por todo el mundo y crearía una fundación benéfica.",
+        "options": [
+          {
+            "id": "b2_cond_1_a",
+            "text": "Viajar por el mundo y crear una fundación benéfica",
+            "isCorrect": true,
+            "textAr": "السفر حول العالم وإنشاء مؤسسة خيرية"
+          },
+          {
+            "id": "b2_cond_1_b",
+            "text": "Comprar coches de lujo y quedarse en casa",
+            "isCorrect": false,
+            "textAr": "شراء سيارات فارهة والجلوس في المنزل",
+            "distractorRationaleAr": "لم يذكر شراء سيارات في الحوار."
+          },
+          {
+            "id": "b2_cond_1_c",
+            "text": "Mudarse solo a una isla desierta",
+            "isCorrect": false,
+            "textAr": "الانتقال بمفرده إلى جزيرة منعزلة",
+            "distractorRationaleAr": "لم يتلفظ بأي فكرة عن الانتقال لجزيرة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_cond_1_a"
+          ]
+        },
+        "explanationAr": "قال المتحدث صراحة: «Si tuviera ese dinero, viajaría por todo el mundo y crearía una fundación benéfica» مستخدمًا صيغة الشرط الافتراضي.",
+        "errorFeedback": {
+          "b2_cond_1_b": "لم يذكر شراء سيارات في التسجيل.",
+          "b2_cond_1_c": "لم يذكر الانتقال لجزيرة منعزلة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "viajaría",
+          "tuviera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_cond_2_structure",
+        "type": "word_choice",
+        "instructionAr": "ما هو التركيب النحوي القياسي للجمل الشرطية الافتراضية في الحاضر؟",
+        "options": [
+          {
+            "id": "b2_cond_2_a",
+            "text": "Si + Imperfecto de Subjuntivo + Condicional Simple",
+            "isCorrect": true,
+            "textAr": "التركيب القياسي الصحيح للشرط الافتراضي"
+          },
+          {
+            "id": "b2_cond_2_b",
+            "text": "Si + Presente de Indicativo + Futuro Simple",
+            "isCorrect": false,
+            "textAr": "تركيب الشرط الواقعي الممكن",
+            "distractorRationaleAr": "هذا تركيب الشرط الممكن الحدوث (Si tengo tiempo, iré) وليس الشرط الافتراضي."
+          },
+          {
+            "id": "b2_cond_2_c",
+            "text": "Si + Condicional Simple + Imperfecto de Subjuntivo",
+            "isCorrect": false,
+            "textAr": "عكس الأدوات غير الصحيح",
+            "distractorRationaleAr": "قاعدة صارمة: لا يجوز وضع Condicional بعد أداة الشرط Si مباشرة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_cond_2_a"
+          ]
+        },
+        "explanationAr": "الشرط الافتراضي غير المتحقق في الحاضر يتطلب دائماً صيغة Imperfecto de Subjuntivo في جملة الشرط، وصيغة Condicional Simple في جواب الشرط.",
+        "errorFeedback": {
+          "b2_cond_2_b": "هذا للشرط الواقعي الممكن.",
+          "b2_cond_2_c": "لا يجوز استخدام Condicional بعد أداة Si مباشرة."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "condición"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_cond_3_fill_if",
+        "type": "fill_blank",
+        "instructionAr": "أكمل فعل الشرط بعد Si: «لو كنتُ مكانك، لقبلتُ العرض».",
+        "stemEs": "Si yo ____ tú, aceptaría la oferta de trabajo inmediatamente.",
+        "stemAr": "لو ____ مكانك، لقبلتُ عرض العمل على الفور.",
+        "answerKey": {
+          "accepted": [
+            "fuera",
+            "fuese"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "العبارة الإسبانية الشهيرة لتقديم النصيحة الافتراضية هي «Si yo fuera tú...» (لو كنتُ مكانك)، وتستخدم فعل ser في صيغة Imperfecto de Subjuntivo: fuera.",
+        "errorFeedback": {
+          "sería": "خطأ محظور: لا نضع صيغة Condicional بعد أداة Si أبداً.",
+          "soy": "soy في المضارع الواقعي، والافتراض هنا خيالي.",
+          "era": "era تتبع صيغة indicativo ولا تستخدم بعد Si الشرطية الافتراضية."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "fuera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_cond_4_fill_apodosis",
+        "type": "fill_blank",
+        "instructionAr": "أكمل جواب الشرط بصيغة Condicional: «لو كان لدينا وقت، لدرسنا لغة ثانية».",
+        "stemEs": "Si tuviéramos más tiempo libre, ____ otro idioma extranjero.",
+        "stemAr": "لو كان لدينا المزيد من وقت الفراغ، لدرسنا لغة أجنبية أخرى.",
+        "answerKey": {
+          "accepted": [
+            "estudiaríamos",
+            "aprenderíamos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "في جواب الشرط المقترن بـ Imperfecto de Subjuntivo نستخدم صيغة Condicional Simple مع nosotros: estudiaríamos.",
+        "errorFeedback": {
+          "estudiamos": "المطلوب صيغة الشرطي Condicional وليس المضارع.",
+          "estudiemos": "هذا منصوب مضارع ولا يصح في جواب الشرط الافتراضي."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "tuviera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_cond_5_arabic_parallel",
+        "type": "word_choice",
+        "instructionAr": "أي أداة شرطية في اللغة العربية تطابق تمامًا دلالة هذا التركيب؟",
+        "options": [
+          {
+            "id": "b2_cond_5_a",
+            "text": "La partícula condicional irreal 'law'",
+            "isCorrect": true,
+            "textAr": "أداة الشرط الامتناعية (لو)"
+          },
+          {
+            "id": "b2_cond_5_b",
+            "text": "La partícula condicional posible 'in'",
+            "isCorrect": false,
+            "textAr": "أداة الشرط الإمكانية (إن)",
+            "distractorRationaleAr": "«إن» الشرطية في العربية تفيد الإمكان والواقعية، وتقابل Si + Presente."
+          },
+          {
+            "id": "b2_cond_5_c",
+            "text": "La partícula de certeza 'qad'",
+            "isCorrect": false,
+            "textAr": "حرف التحقيق (قد)",
+            "distractorRationaleAr": "«قد» حرف تحقيق أو تشكيك وليس أداة شرط."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_cond_5_a"
+          ]
+        },
+        "explanationAr": "في البلاغة العربية، «لو» هي حرف امتناع لامتناع (امتناع الجواب لامتناع الشرط)، وهي المعادل الدقيق لـ Si + Imperfecto de Subjuntivo.",
+        "errorFeedback": {
+          "b2_cond_5_b": "«إن» تفيد الإمكان وليس الامتناع الافتراضي.",
+          "b2_cond_5_c": "«قد» حرف تحقيق وليس أداة شرط."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "imposible"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_cond_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة الشرطية التالية بنبرة افتراضية واضحة مع إبراز النبرة الصوتية على tuviéramos.",
+        "stemEs": "Si tuviera más tiempo libre, viajaría por todo el mundo.",
+        "stemAr": "لو كان لديّ المزيد من وقت الفراغ، لسافرت حول العالم بأكمله.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2-cond-speak-1",
+          "modelAnswer": "Si tuviera más tiempo libre, viajaría por todo el mundo."
+        },
+        "explanationAr": "لاحظ النطق السليم للنبرة في tuviera على المقطع قبل الأخير (tu-VIE-ra)، والنبرة في viajaría على الياء الأخيرة الممدودة (via-ja-RÍ-a).",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "viajaría",
+          "tuviera"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق tuviera بنبر سليم",
+              "weight": 50,
+              "code": "stress_tuviera"
+            },
+            {
+              "labelAr": "نطق viajaría مع مد الياء المنبورة",
+              "weight": 50,
+              "code": "stress_viajaria"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula Plus 3 وEn Vocabulario B2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم الجمل الشرطية الافتراضية مع المقارنة البلاغية بأداة لو الامتناعية للمتعلم العربي."
+    }
+  }
+}

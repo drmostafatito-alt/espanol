@@ -1,0 +1,416 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-planes-academicos",
+    "unitSlug": "b1-u4-study",
+    "levelCode": "B1",
+    "titleAr": "الخطط الأكاديمية والمستقبلية: التعبير عن النوايا والمشاريع الدراسية",
+    "titleEs": "Planes académicos y proyectos de futuro",
+    "subtitleAr": "تراكيب pensar + infinitivo, tener la intención de, y la voz de futuro",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يعبر المتعلم عن مخططاته وطموحاته الأكاديمية والمهنية المستقبلية.",
+        "أن يطبق التراكيب الدالة على النية والتخطيط: pensar + مصدر، tener la intención de + مصدر، querer especializarse en.",
+        "أن يربط بين أهدافه الحالية وتطلعاته المستقبلية باستخدام أدوات الغرض: con el fin de, para que + subjuntivo."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التعبير عن النوايا والمشاريع المستقبلية",
+          "explanationAr": "1. **التعبير عن النية المسبقة**:\n- **Pensar + infinitivo**: Pienso matricularme en un doctorado el año que viene (أنوي التسجيل في الدكتوراه العام المقبل).\n- **Tener la intención de + infinitivo**: Tengo la intención de aprender dos lenguas más.\n2. **التعبير عن الهدف والغرض الموجه**:\n- **Con el objetivo / fin de + infinitivo**: Estudio con el objetivo de trabajar en organismos internacionales.\n- **Para que + Subjuntivo**: Me esfuerzo para que mis padres se sientan orgullosos.\n3. **التخصص والتعمق**:\n- **Especializarse en**: Quiero especializarme en inteligencia artificial aplicada a la lingüística."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *tengo intención para* بدلاً من حرف الجر السليم de: tener la intención de + infinitivo.",
+        "استخدام الإخباري بعد para que بدلاً من المنصوب الإلزامي: para que + subjuntivo."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «ناوي أقدم على دبلومة أو ماستر عشان أتخصص في الترجمة الفورية». بالإسبانية: Pienso hacer un máster para especializarme en traducción simultánea."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُنصح الطلاب دائماً بتحديد أهداف مشروع التخرج (TFG/TFM) بما يتوافق مع فرص التوظيف والتدريب العملي في الشركات (las prácticas en empresa)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-planes-academicos-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات التخطيط الأكاديمي",
+        "bodyAr": "المفردات الأساسية:\n- **la intención**: النية والقصد المسبق\n- **especializarse**: يتخصص في مجال دقيق\n- **el objetivo**: الهدف الأكاديمي أو المهني\n- **la aspiración**: الطموح والتطلع المستقبلي\n- **las prácticas**: التدريب العملي في مؤسسة أو شركة\n- **conseguir**: يحقق أو ينال الهدف",
+        "examples": [
+          {
+            "es": "Mi aspiración académica es realizar una estancia de investigación en el extranjero.",
+            "ar": "طموحي الأكاديمي هو قضاء فترة بحثية في الخارج."
+          },
+          {
+            "es": "Tengo la intención de especializarme en derecho internacional.",
+            "ar": "لدي النية للتخصص في القانون الدولي."
+          },
+          {
+            "es": "Hará las prácticas en un hospital universitario prestigioso.",
+            "ar": "سيجري التدريب العملي في مستشفى جامعي مرموق."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "intención",
+      "especializarse",
+      "objetivo",
+      "aspiración",
+      "prácticas",
+      "conseguir"
+    ],
+    "reviewVocabulary": [
+      "estudio",
+      "futuro"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يعبر المتعلم عن مخططاته وطموحاته الأكاديمية والمهنية المستقبلية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-pln-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الذي يعني التعمق والتخصص في فرع علمي",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل يعني التركيز والتخصص في مجال أكاديمي محدد؟",
+        "stemEs": "Al terminar la carrera médica, quiero _____ en cardiología.",
+        "stemAr": "عند إنهاء الدراسة الجامعية، أريد ... في أمراض القلب.",
+        "options": [
+          {
+            "id": "ex-b1-pln-1_a",
+            "text": "especializarme",
+            "textAr": "أتخصص في (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pln-1_b",
+            "text": "aspiración",
+            "textAr": "طموح (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً بعد quiero وليس اسماً."
+          },
+          {
+            "id": "ex-b1-pln-1_c",
+            "text": "prácticas",
+            "textAr": "تدريب عملي",
+            "isCorrect": false,
+            "distractorRationaleAr": "prácticas اسم جمع ولا يكمل البناء."
+          }
+        ],
+        "targetVocab": [
+          "especializarse",
+          "aspiración",
+          "prácticas"
+        ],
+        "explanationAr": "فعل especializarse en يعني يتخصص في فرع أو مجال محدد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pln-1_a"
+          ],
+          "selectedOptionId": "ex-b1-pln-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pln-1_b": "نحتاج فعلاً بعد quiero وليس اسماً.",
+          "ex-b1-pln-1_c": "prácticas اسم جمع ولا يكمل البناء."
+        }
+      },
+      {
+        "id": "ex-b1-pln-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل حرف الجر في تركيب النية: (tener la intención _____)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل بحرف الجر الصحيح في التعبير: tener la intención _____ viajar",
+        "stemEs": "Tengo la intención _____ continuar mis estudios en el extranjero.",
+        "stemAr": "لدي النية لمواصلة دراستي في الخارج.",
+        "targetVocab": [
+          "intención"
+        ],
+        "explanationAr": "التركيب النحوي هو tener la intención de + infinitivo.",
+        "answerKey": {
+          "accepted": [
+            "de"
+          ],
+          "acceptableAnswers": [
+            "de"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-pln-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد ما يطلق على التدريب التطبيقي في بيئة العمل للطلاب",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح الإسباني للتدريب الميداني للطلبة في الشركات والمؤسسات؟",
+        "stemEs": "El próximo semestre voy a realizar mis _____ profesionales en una editorial.",
+        "stemAr": "في الفصل الدراسي القادم سأجري ... المهنية في دار نشر.",
+        "options": [
+          {
+            "id": "ex-b1-pln-3_a",
+            "text": "prácticas",
+            "textAr": "التدريب الميداني والعملي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pln-3_b",
+            "text": "intención",
+            "textAr": "النية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى يتطلب فترة التدريب العملي الميداني."
+          },
+          {
+            "id": "ex-b1-pln-3_c",
+            "text": "aspiración",
+            "textAr": "الطموح",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح الشائع للتدريب هو las prácticas."
+          }
+        ],
+        "targetVocab": [
+          "prácticas",
+          "intención",
+          "aspiración"
+        ],
+        "explanationAr": "las prácticas profesionales هي فترة التدريب الميداني والعملي للطلاب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pln-3_a"
+          ],
+          "selectedOptionId": "ex-b1-pln-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pln-3_b": "المعنى يتطلب فترة التدريب العملي الميداني.",
+          "ex-b1-pln-3_c": "المصطلح الشائع للتدريب هو las prácticas."
+        }
+      },
+      {
+        "id": "ex-b1-pln-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف السعي لتحقيق الهدف الأكاديمي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-pln-4_t1",
+            "kind": "token",
+            "text": "Quiero"
+          },
+          {
+            "id": "ex-b1-pln-4_t2",
+            "kind": "token",
+            "text": "conseguir"
+          },
+          {
+            "id": "ex-b1-pln-4_t3",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "ex-b1-pln-4_t4",
+            "kind": "token",
+            "text": "objetivo"
+          },
+          {
+            "id": "ex-b1-pln-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b1-pln-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-pln-4_t7",
+            "kind": "token",
+            "text": "futuro"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero conseguir mi objetivo en el futuro"
+          ],
+          "tokenOrder": [
+            "ex-b1-pln-4_t1",
+            "ex-b1-pln-4_t2",
+            "ex-b1-pln-4_t3",
+            "ex-b1-pln-4_t4",
+            "ex-b1-pln-4_t5",
+            "ex-b1-pln-4_t6",
+            "ex-b1-pln-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Quiero ثم المصدر conseguir ثم المفعول mi objetivo ثم الظرف en el futuro.",
+        "targetVocab": [
+          "conseguir",
+          "objetivo",
+          "futuro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-pln-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد طموح الطالبة المستقبلي",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما هي الرغبة المستقبلية للمتحدثة",
+        "stemEs": "Mi mayor aspiración es ser profesora universitaria y publicar investigaciones.",
+        "stemAr": "أكبر طموح لدي هو أن أكون أستاذة جامعية وأن أنشر أبحاثاً علمية.",
+        "options": [
+          {
+            "id": "ex-b1-pln-5_a",
+            "text": "aspiración",
+            "textAr": "طموح وتطلع أكاديمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pln-5_b",
+            "text": "prácticas",
+            "textAr": "مجرد تدريب قصير",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدثة وصفت هدف حياتها الأكاديمي (aspiración)."
+          },
+          {
+            "id": "ex-b1-pln-5_c",
+            "text": "intención",
+            "textAr": "نية مؤقتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدثة قالت بوضوح: 'Mi mayor aspiración'."
+          }
+        ],
+        "targetVocab": [
+          "aspiración",
+          "prácticas",
+          "intención"
+        ],
+        "explanationAr": "المتحدثة قالت: 'Mi mayor aspiración es ser profesora universitaria'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_aspiracion_profesora.mp3",
+        "speechEs": "Mi mayor aspiración es ser profesora universitaria y publicar investigaciones.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pln-5_a"
+          ],
+          "selectedOptionId": "ex-b1-pln-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pln-5_b": "المتحدثة وصفت هدف حياتها الأكاديمي (aspiración).",
+          "ex-b1-pln-5_c": "المتحدثة قالت بوضوح: 'Mi mayor aspiración'."
+        }
+      },
+      {
+        "id": "ex-b1-pln-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق خطتك المستقبلية للتخصص وإكمال الدراسات",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب طموح ومحدد:",
+        "stemEs": "Pienso especializarme en lingüística con el objetivo de investigar.",
+        "stemAr": "أنوي التخصص في اللسانيات بهدف إجراء البحوث العلمية.",
+        "audioKey": "pending/b1_especializarme_linguistica.mp3",
+        "targetVocab": [
+          "especializarse",
+          "objetivo"
+        ],
+        "explanationAr": "انتبه لنطق حرف ü بالنقطتين (diéresis) في lingüística حيث ينطق واواً صريحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_especializarme_linguistica.mp3",
+          "modelAnswer": "Pienso especializarme en lingüística con el objetivo de investigar."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تراكيب التعبير عن النوايا والمشاريع المستقبلية"
+    ]
+  }
+}

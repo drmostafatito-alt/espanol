@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-memoria-institucional",
+    "titleAr": "التقرير السنوي والمذكرات المؤسسية: La memoria institucional y rendición de cuentas",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u8-advanced-writing",
+    "objectiveAr": "أن يصيغ المتعلم التقرير السنوي الإداري والمالي لمؤسسة كبرى مع تقييم مؤشرات الأداء والشفافية (memoria de gestión, rendición de cuentas, balance cualitativo).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "memoria",
+      "rendición",
+      "balance",
+      "cualitativo",
+      "hito",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Estructura de la memoria corporativa: balance cuantitativo y balance cualitativo",
+      "Principio de rendición de cuentas (accountability) ante el patronato y la sociedad",
+      "Identificación de hitos estratégicos y grado de cumplimiento de los objetivos",
+      "Proyección prospectiva: lecciones aprendidas y líneas de actuación futuras"
+    ],
+    "grammarTopics": [
+      "comunicacion-corporativa-c1",
+      "redaccion-de-informes-ejecutivos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "العرض السنوي لتقرير الأداء والشفافية لمؤسسة ثقافية عالمية أمام مجلس الأمناء في مدريد.",
+        "settingAr": "قاعة مجلس إدارة مؤسسة كازا أرافي (Casa Árabe)، مدريد",
+        "lines": [
+          {
+            "es": "Presentamos esta memoria anual de gestión como un ejercicio insoslayable de rendición de cuentas.",
+            "ar": "نقدم هذا التقرير السنوي للإدارة بوصفه ممارسة حتمية لا غنى عنها للمساءلة والشفافية المؤسسية.",
+            "arEg": "بنقدم التقرير السنوي ده لمجلس الإدارة عشان دي مسؤولية وواجب علينا في الشفافية ومحاسبة النفس قدام الكل.",
+            "audioKey": "pending/c1-u8-mem-1"
+          },
+          {
+            "es": "El balance cualitativo evidencia un salto histórico en el impacto formativo de nuestros programas.",
+            "ar": "تثبت الحصيلة والتقييم النوعي حدوث قفزة تاريخية فارقة في الأثر التدريبي والتكويني لبرامجنا.",
+            "arEg": "التقييم النوعي بيبين بوضوح النقلة الكبيرة والتطور التاريخي اللي حصل في برامجنا التدريبية السنة دي.",
+            "audioKey": "pending/c1-u8-mem-2"
+          },
+          {
+            "es": "Hemos alcanzado con éxito el principal hito estratégico fijado al comienzo del ejercicio presupuestario.",
+            "ar": "لقد حققنا بنجاح المعلم والمحطة الاستراتيجية الكبرى التي حددت عند مستهل السنة المالية.",
+            "arEg": "قدرنا نوصل بفضل الله لأهم هدف ومعلم رئيسي حطيناه لنفسنا في أول ميزانية السنة دي.",
+            "audioKey": "pending/c1-u8-mem-3"
+          },
+          {
+            "es": "El documento combina el máximo rigor estadístico con una visión prospectiva esperanzadora.",
+            "ar": "تجمع هذه الوثيقة بين أقصى درجات الدقة الإحصائية الصارمة والرؤية المستقبلية الواعدة بالخير.",
+            "arEg": "التقرير جامع بين منتهى الدقة والصرامة في الأرقام، وبين نظرة تفاؤلية ذكية لبكرة وللمستقبل.",
+            "audioKey": "pending/c1-u8-mem-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-min-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى تقديم المدير العام للتقرير وحدد المفهوم المؤسسي الذي وصف به تقديم وثيقة التقرير السنوي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما المبدأ الرقابي والأخلاقي الذي جسده تقديم التقرير السنوي للمؤسسة؟",
+        "stemEs": "Presentamos esta memoria anual de gestión como un ejercicio insoslayable de rendición de cuentas.",
+        "stemAr": "نقدم هذا التقرير السنوي للإدارة بوصفه ممارسة حتمية لا غنى عنها للمساءلة والشفافية المؤسسية.",
+        "options": [
+          {
+            "id": "ex-c1-min-1_a",
+            "text": "Rendición de cuentas",
+            "textAr": "المساءلة وتقديم الحساب وإبراء الذمة الإدارية والمالية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-min-1_b",
+            "text": "Ocultación de fondos",
+            "textAr": "إخفاء الأموال ودفن السجلات في سراديب مظلمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "فساد مالي يعاقب عليه القانون."
+          },
+          {
+            "id": "ex-c1-min-1_c",
+            "text": "Fiesta de cumpleaños",
+            "textAr": "حفلة عيد ميلاد ترفيهية للموظفين",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقرير وثيقة رسمية قانونية."
+          }
+        ],
+        "targetVocab": [
+          "rendición",
+          "memoria"
+        ],
+        "explanationAr": "«La rendición de cuentas» (المساءلة المؤسسية / accountability) هي التزام الإدارة بعرض نتائج أعمالها بالأرقام والأدلة أمام الهيئات المشرفة والمجتمع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u8-mem-1",
+        "speechEs": "Presentamos esta memoria anual de gestión como un ejercicio insoslayable de rendición de cuentas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-min-1_a"
+          ],
+          "selectedOptionId": "ex-c1-min-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-min-1_b": "فساد مالي يعاقب عليه القانون.",
+          "ex-c1-min-1_c": "التقرير وثيقة رسمية قانونية."
+        }
+      },
+      {
+        "id": "ex-c1-min-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما المصطلح الدال على «المحطة البارزة أو الإنجاز المفصلي في مسار خطة العمل المؤسسية»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الكلمة المعبرة عن المعلم الاستراتيجي المهم:",
+        "stemEs": "La inauguración de la nueva sede representó un auténtico ____ en la trayectoria de la entidad.",
+        "stemAr": "شكل افتتاح المقر الجديد محطة ومعلماً تاريخياً فاصلاً في مسيرة المؤسسة وتطورها.",
+        "options": [
+          {
+            "id": "ex-c1-min-2_a",
+            "text": "hito",
+            "textAr": "معلم بارز / محطة مفصلية ونقطة تحول كبرى",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-min-2_b",
+            "text": "hilo",
+            "textAr": "خيط رفيع تستخدمه الحياكة اليدوية",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى مادي لا يصف الإنجاز الاستراتيجي."
+          },
+          {
+            "id": "ex-c1-min-2_c",
+            "text": "hielo",
+            "textAr": "جليد بارد متجمد في القطب",
+            "isCorrect": false,
+            "distractorRationaleAr": "عنصر طبيعي خارج الإدارة."
+          }
+        ],
+        "targetVocab": [
+          "hito",
+          "rigor"
+        ],
+        "explanationAr": "«Un hito estratégico» (Milestone) مأخوذ من علامات الأميال القديمة في الطرقات، ويطلق على الإنجاز النوعي الذي يؤرخ لمرحلة جديدة في المؤسسة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-min-2_a"
+          ],
+          "selectedOptionId": "ex-c1-min-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-min-2_b": "معنى مادي لا يصف الإنجاز الاستراتيجي.",
+          "ex-c1-min-2_c": "عنصر طبيعي خارج الإدارة."
+        }
+      },
+      {
+        "id": "ex-c1-min-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالصفة المقابلة للكمي والمخصصة لتقييم عمق التحول والأثر: «el balance ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الصفة المعبرة عن التقييم النوعي والكيفي:",
+        "stemEs": "Más allá de las cifras de ventas, el balance ____ de este año es extraordinariamente positivo.",
+        "stemAr": "بمعزل عن أرقام المبيعات المجردة، فإن التقييم النوعي والكيفي لهذا العام إيجابي لدرجة استثنائية.",
+        "targetVocab": [
+          "cualitativo"
+        ],
+        "explanationAr": "«El balance cualitativo» يفحص جودة الإنجاز ومدى رضاء المستفيدين والتغيرات الهيكلية، مكملاً بذلك التقييم الكمي الرقمي (cuantitativo).",
+        "answerKey": {
+          "accepted": [
+            "cualitativo"
+          ],
+          "acceptableAnswers": [
+            "cualitativo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-min-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا تسمى الوثيقة الرسمية الشاملة التي ترصد كافة أنشطة المؤسسة وأرقامها خلال عام كامل؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الاسم المعتمد للتقرير السنوي الشامل:",
+        "stemEs": "El patronato aprobó por unanimidad la ____ anual de actividades y finanzas.",
+        "stemAr": "وافق مجلس الأمناء بالإجماع على التقرير والبيان السنوي الشامل للأنشطة والمالية.",
+        "options": [
+          {
+            "id": "ex-c1-min-4_a",
+            "text": "memoria",
+            "textAr": "التقرير السنوي المؤسسي التوثيقي الشامل",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-min-4_b",
+            "text": "novela",
+            "textAr": "رواية أدبية خيالية من نسج الأوهام",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقرير وثيقة حقائق وأرقام."
+          },
+          {
+            "id": "ex-c1-min-4_c",
+            "text": "canción",
+            "textAr": "أغنية شعبية في الإذاعة",
+            "isCorrect": false,
+            "distractorRationaleAr": "فن غنائي خارج الإدارة."
+          }
+        ],
+        "targetVocab": [
+          "memoria",
+          "balance"
+        ],
+        "explanationAr": "«La memoria anual» (أو memoria de gestión) هي الوثيقة المرجعية القانونية التي تقدمها المؤسسات والشركات لتوثيق أعمالها السنوية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-min-4_a"
+          ],
+          "selectedOptionId": "ex-c1-min-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-min-4_b": "التقرير وثيقة حقائق وأرقام.",
+          "ex-c1-min-4_c": "فن غنائي خارج الإدارة."
+        }
+      },
+      {
+        "id": "ex-c1-min-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء مبدأ الشفافية وإبراء الذمة الإدارية السنوية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-min-5_t1",
+            "kind": "token",
+            "text": "Cumplimos"
+          },
+          {
+            "id": "ex-c1-min-5_t2",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-c1-min-5_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-min-5_t4",
+            "kind": "token",
+            "text": "rendición"
+          },
+          {
+            "id": "ex-c1-min-5_t5",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-c1-min-5_t6",
+            "kind": "token",
+            "text": "cuentas"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Cumplimos con la rendición de cuentas"
+          ],
+          "tokenOrder": [
+            "ex-c1-min-5_t1",
+            "ex-c1-min-5_t2",
+            "ex-c1-min-5_t3",
+            "ex-c1-min-5_t4",
+            "ex-c1-min-5_t5",
+            "ex-c1-min-5_t6"
+          ]
+        },
+        "explanationAr": "الفعل Cumplimos متبوعاً بحرف الجر con والاسم المجرور المركب la rendición de cuentas.",
+        "targetVocab": [
+          "rendición"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-min-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة مدير تنفيذي يقدم تقريره السنوي أمام كبار المساهمين بثقة واعتزاز.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الرصانة التنظيمية والإدارية:",
+        "stemEs": "Esta memoria refleja un riguroso balance cualitativo.",
+        "stemAr": "يعكس هذا التقرير السنوي تقييماً نوعياً بالغ الرصانة والدقة.",
+        "audioKey": "pending/c1-u8-mem-spk",
+        "targetVocab": [
+          "memoria",
+          "cualitativo"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة cualitativo على مقطع -ti- وإعطاء حرف r المشدد في riguroso حقه من الاهتزاز الفصيح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u8-mem-spk",
+          "modelAnswer": "Esta memoria refleja un riguroso balance cualitativo."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

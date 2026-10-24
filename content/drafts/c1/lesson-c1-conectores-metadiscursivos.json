@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-conectores-metadiscursivos",
+    "titleAr": "روابط الخطاب الفوقي وتنظيم الأطروحة: Conectores metadiscursivos",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u3-academic-discourse",
+    "objectiveAr": "أن يستخدم المتعلم الروابط الأكاديمية الرفيعة (en lo tocante a, cabe puntualizar que, a mayor abundamiento) لبناء مقال علمي متماسك.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "tocante",
+      "puntualizar",
+      "abundamiento",
+      "precedente",
+      "rigor",
+      "desempeñar"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Conector temático: en lo tocante a / por lo que atañe a",
+      "Conector de precisión: cabe puntualizar que / es oportuno matizar que",
+      "Conector aditivo acumulativo: a mayor abundamiento / para más señas",
+      "Conector de recapitulación: a la luz de lo precedente"
+    ],
+    "grammarTopics": [
+      "cohesion-textual-avanzada",
+      "conectores-metadiscursivos-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مناقشة علنية لأطروحة دكتوراه في العلوم الإنسانية بجامعة سلمنكا.",
+        "settingAr": "القاعة الكبرى للمناقشات في كلية فقه اللغة",
+        "lines": [
+          {
+            "es": "En lo tocante a la metodología empírica, el corpus analizado resulta irreprochable.",
+            "ar": "فيما يتعلق بالمنهجية التجريبية، فإن المتن اللغوي الذي خضع للتحليل لا غبار عليه إطلاقاً.",
+            "arEg": "بالنسبة لمنهج البحث التطبيقي، العينة اللي اتحللت ممتازة وملهاش أي مثلبة.",
+            "audioKey": "pending/c1-u3-con-1"
+          },
+          {
+            "es": "Cabe puntualizar que las variables contextuales no fueron aisladas por completo.",
+            "ar": "يجدر التدقيق والتوضيح بأن المتغيرات السياقية لم تُعزل بصورة كلية ومطلقة.",
+            "arEg": "لازم نوضح وندقق في إن العوامل والظروف المحيطة متفصلتش بشكل كامل.",
+            "audioKey": "pending/c1-u3-con-2"
+          },
+          {
+            "es": "A mayor abundamiento, los testimonios de archivo corroboran plenamente la hipótesis central.",
+            "ar": "وزيادة في التأكيد والإثبات، فإن وثائق الأرشيف تعزز الفرضية المركزية تعزيزاً تاماً.",
+            "arEg": "وفوق كل ده وزيادة تأكيد، وثائق الأرشيف القديمة أثبتت الفرضية الأساسية تماماً.",
+            "audioKey": "pending/c1-u3-con-3"
+          },
+          {
+            "es": "A la luz de lo precedente, la tesis realiza una aportación sustancial al campo.",
+            "ar": "وعلى ضوء ما تقدم ذكره، فإن هذه الأطروحة تقدم إسهاماً جوهرياً إلى الحقل العلمي.",
+            "arEg": "وفي ضوء كل اللي فات ده، الأطروحة بتقدم إضافة علمية معتبرة للمجال كله.",
+            "audioKey": "pending/c1-u3-con-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-cmd-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى تعقيب الأستاذ المناقش وحدد الرابط الدال على التخصيص الموضوعي الراقي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما الرابط الذي استهل به الأستاذ تقييم المنهجية بدقة؟",
+        "stemEs": "En lo tocante a la metodología empírica, el corpus analizado resulta irreprochable.",
+        "stemAr": "فيما يتعلق بالمنهجية التجريبية، فإن المتن اللغوي الذي خضع للتحليل لا غبار عليه إطلاقاً.",
+        "options": [
+          {
+            "id": "ex-c1-cmd-1_a",
+            "text": "En lo tocante a",
+            "textAr": "فيما يخص / في ما يتعلق بـ في الأسلوب الأكاديمي الرفيع",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cmd-1_b",
+            "text": "Por casualidad",
+            "textAr": "عن طريق المصادفة والاتفاق",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الصدفة لا التنظيم المنهجي."
+          },
+          {
+            "id": "ex-c1-cmd-1_c",
+            "text": "De buenas a primeras",
+            "textAr": "فجأة ومن أول وهلة بلا تمهيد",
+            "isCorrect": false,
+            "distractorRationaleAr": "أسلوب دارج غير أكاديمي."
+          }
+        ],
+        "targetVocab": [
+          "tocante",
+          "rigor"
+        ],
+        "explanationAr": "تستخدم عبارة «en lo tocante a» لحصر الحديث وتوجيهه نحو جانب معرفي محدد برصانة وأناقة لغوية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u3-con-1",
+        "speechEs": "En lo tocante a la metodología empírica, el corpus analizado resulta irreprochable.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cmd-1_a"
+          ],
+          "selectedOptionId": "ex-c1-cmd-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cmd-1_b": "تفيد الصدفة لا التنظيم المنهجي.",
+          "ex-c1-cmd-1_c": "أسلوب دارج غير أكاديمي."
+        }
+      },
+      {
+        "id": "ex-c1-cmd-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي تعبير يفيد «وزيادة في الاستدلال وتقديم حجة إضافية قاطعة» في لغة القضاء والأكاديميا؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الرابط الاستدلالي التراكمي الأنسب:",
+        "stemEs": "El acusado no estaba en la ciudad y, ____, varios testigos lo sitúan a cien kilómetros.",
+        "stemAr": "لم يكن المتهم في المدينة، وزيادة في التأكيد والحجة، فقد أكد شهود وجوده على بعد مئة كيلومتر.",
+        "options": [
+          {
+            "id": "ex-c1-cmd-2_a",
+            "text": "a mayor abundamiento",
+            "textAr": "وزيادة في الحجة والإثبات التراكمي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cmd-2_b",
+            "text": "a regañadientes",
+            "textAr": "على كره ومضض وبلا رغبة",
+            "isCorrect": false,
+            "distractorRationaleAr": "تصف الحالة النفسية وليست رابطاً حجاجياً."
+          },
+          {
+            "id": "ex-c1-cmd-2_c",
+            "text": "de cabo a rabo",
+            "textAr": "من أول الأمر لآخره",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الشمولية المكانية أو الوصفية."
+          }
+        ],
+        "targetVocab": [
+          "abundamiento",
+          "rigor"
+        ],
+        "explanationAr": "تعبير «a mayor abundamiento» مصطلح قضائي وأكاديمي كلاسيكي يعني إيراد دليل إضافي يعزز ما هو ثابت بالأصل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cmd-2_a"
+          ],
+          "selectedOptionId": "ex-c1-cmd-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cmd-2_b": "تصف الحالة النفسية وليست رابطاً حجاجياً.",
+          "ex-c1-cmd-2_c": "تفيد الشمولية المكانية أو الوصفية."
+        }
+      },
+      {
+        "id": "ex-c1-cmd-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل عبارة التدقيق والتحفظ المنهجي: «cabe ____ que».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الفعل المصدري الدال على ضبط المفاهيم وتحديدها:",
+        "stemEs": "Antes de continuar, cabe ____ que las cifras corresponden solo al primer semestre.",
+        "stemAr": "قبل المتابعة، يجدر التوضيح والتدقيق بأن الأرقام تخص النصف الأول من العام فقط.",
+        "targetVocab": [
+          "puntualizar"
+        ],
+        "explanationAr": "يقال «cabe puntualizar que» في المحافل الفكرية لإيقاف الاستطراد وتوضيح جزئية دقيقة تفادياً لسوء الفهم.",
+        "answerKey": {
+          "accepted": [
+            "puntualizar"
+          ],
+          "acceptableAnswers": [
+            "puntualizar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-cmd-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف تختم تحليلاً علمياً برابط راقٍ يلخص المعطيات السابقة دون اللجوء لعبارة «en resumen» الدارجة؟",
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الرابط الختامي الاستنتاجي الأرقى أسلوبياً:",
+        "stemEs": "____, los hallazgos confirman la validez del nuevo modelo teórico.",
+        "stemAr": "وعلى ضوء ما سلف بيانه، تؤكد النتائج صحة النموذج النظري الجديد.",
+        "options": [
+          {
+            "id": "ex-c1-cmd-4_a",
+            "text": "A la luz de lo precedente",
+            "textAr": "على ضوء ما سلف بيانه من أدلة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cmd-4_b",
+            "text": "Sea como fuere",
+            "textAr": "مهما يكن من أمر وكيفما اتفق",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد التشكيك والتجاوز لا التتويج الاستدلالي."
+          },
+          {
+            "id": "ex-c1-cmd-4_c",
+            "text": "De buenas a primeras",
+            "textAr": "من أول وهلة ومباشرة بلا مقدمات",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا تناسب خاتمة تقرير علمي."
+          }
+        ],
+        "targetVocab": [
+          "precedente",
+          "rigor"
+        ],
+        "explanationAr": "«A la luz de lo precedente» تعبر عن التتويج المنطقي للأطروحة انطلاقاً من المقدمات المسوقة بدقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cmd-4_a"
+          ],
+          "selectedOptionId": "ex-c1-cmd-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cmd-4_b": "تفيد التشكيك والتجاوز لا التتويج الاستدلالي.",
+          "ex-c1-cmd-4_c": "لا تناسب خاتمة تقرير علمي."
+        }
+      },
+      {
+        "id": "ex-c1-cmd-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء تركيب يمهد للتدقيق في دلالة مصطلح علمي محدد.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-cmd-5_t1",
+            "kind": "token",
+            "text": "Cabe"
+          },
+          {
+            "id": "ex-c1-cmd-5_t2",
+            "kind": "token",
+            "text": "puntualizar"
+          },
+          {
+            "id": "ex-c1-cmd-5_t3",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-c1-cmd-5_t4",
+            "kind": "token",
+            "text": "detalle"
+          },
+          {
+            "id": "ex-c1-cmd-5_t5",
+            "kind": "token",
+            "text": "metodológico"
+          },
+          {
+            "id": "ex-c1-cmd-5_t6",
+            "kind": "token",
+            "text": "relevante"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Cabe puntualizar un detalle metodológico relevante"
+          ],
+          "tokenOrder": [
+            "ex-c1-cmd-5_t1",
+            "ex-c1-cmd-5_t2",
+            "ex-c1-cmd-5_t3",
+            "ex-c1-cmd-5_t4",
+            "ex-c1-cmd-5_t5",
+            "ex-c1-cmd-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب: الفعل غير الشخصي cabe متبوعاً بالمصدر puntualizar والمفعول الأكاديمي الموصوف بدقة.",
+        "targetVocab": [
+          "puntualizar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-cmd-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة أكاديمية واثقة تعكس الرصانة والترابط المنطقي المحكم.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً فواصل الجملة المعترضة:",
+        "stemEs": "En lo tocante al marco teórico, no caben objeciones.",
+        "stemAr": "فيما يتعلق بالإطار النظري، لا مجال لأي اعتراضات.",
+        "audioKey": "pending/c1-u3-con-spk",
+        "targetVocab": [
+          "tocante",
+          "rigor"
+        ],
+        "explanationAr": "حافظ على هدوء التنغيم والوقف الخفيف بعد كلمة teórico لبيان الفصل الأسلوبي المتقن بين أجزاء الطرح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u3-con-spk",
+          "modelAnswer": "En lo tocante al marco teórico, no caben objeciones."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-comunicacion-institucional-diplomatica",
+    "unitSlug": "b2-u9-formal-writing",
+    "levelCode": "B2",
+    "titleAr": "التواصل المؤسسي والدبلوماسي: مخاطبة الهيئات الرسمية والسفارات",
+    "titleEs": "Comunicación institucional y diplomática: Protocolo, notas verbales y cortesía ceremonial",
+    "subtitleAr": "المراسلات بين المؤسسات الدستورية والسفارات، ألقاب التشريف، والمذكرات الرسمية",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم مذكرة رسمية أو خطاباً بروتوكولياً موجهاً لهيئة دبلوماسية أو دستورية.",
+        "أن يطبق قواعد ألقاب التشريف الرسمية: Excelentísimo/a Señor/a (Excmo./a Sr./a), Ilustrísimo/a Señor/a.",
+        "أن يوظف صيغة الغائب الدبلوماسية (Nota verbal): La Embajada aprovecha la oportunidad para reiterar..."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الصيغ الدبلوماسية الثابتة في المذكرات الشفهية والمراسلات الرسمية",
+          "explanationAr": "1. **صيغة الافتتاح في المذكرات الدبلوماسية (Nota Verbal)**:\n- استخدام صيغة الغائب المجردة دائماً:\n- *La Embajada de España saluda atentamente al Ministerio de Asuntos Exteriores y tiene el honor de comunicarle...*\n2. **ألقاب التشريف القانونية في المراسلات الإسبانية**:\n- **Excelentísimo/a Señor/a (Excmo./a Sr./a)**: مخصصة للوزراء، السفراء، نواب البرلمان ورؤساء المحاكم العليا.\n- **Ilustrísimo/a Señor/a (Ilmo./a Sr./a)**: للمديرين العامين وعمداء الكليات وأعضاء الهيئات القضائية.\n3. **الصيغة الختامية الدبلوماسية المعتمدة عالمياً**:\n- *Aprovecha la oportunidad para reiterar las seguridades de su más distinguida consideración*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام ضمير المتكلم (yo أو nosotros) في المذكرة الدبلوماسية؛ المذكرة الدبلوماسية تُحرر دوماً بصيغة الغائب المجرد (La Embajada saluda...).",
+        "الخلط في استخدام ألقاب التشريف الرسمية واختصاراتها المعتمدة في الدولة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في المخاطبات الدبلوماسية والسفارات بنستخدم الألقاب الرسمية زي «معالي السفير» و«سعادة الوزير» وبنختم بـ «وتفضلوا بقبول فائق الاحترام والتقدير». بالإسبانية: Excelentísimo Señor Embajador... reitera las seguridades de su más distinguida consideración."
+        }
+      ],
+      "culturalNoteAr": "البروتوكول الإسباني (Protocolo del Estado) تحكمه مراسيم ملكية دقيقة تحدد أسبقية السلطات وألقاب التعظيم الدستورية الملزمة في كافة المكاتبات الحكومية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-comunicacion-institucional-diplomatica-intro",
+        "type": "explanation",
+        "titleAr": "قواعد التحرير الدبلوماسي والمؤسسي",
+        "bodyAr": "أهم التراكيب البروتوكولية:\n- **la nota verbal**: المذكرة الرسمية الدبلوماسية المتبادلة بين السفارات والوزارات\n- **Excelentísimo/a Señor/a (Excmo./a Sr./a)**: لقب التعظيم الدستوري لأصحاب المعالي الوزراء والسفراء\n- **el cuerpo diplomático**: السلك الدبلوماسي المعتمد في الدولة\n- **reiterar las seguridades de su consideración**: يجدد الإعراب عن فائق الاحترام والتقدير الدبلوماسي\n- **tener el honor de**: يتشرف بـ\n- **el protocolo ceremonial**: قواعد المراسم والتشريفات الرسمية للدولة",
+        "examples": [
+          {
+            "es": "La Embajada tiene el honor de remitir adjunta la nota verbal correspondiente.",
+            "ar": "تتشرف السفارة بأن ترسل طياً المذكرة الدبلوماسية المعنية."
+          },
+          {
+            "es": "El escrito fue dirigido al Excmo. Sr. Ministro de Asuntos Exteriores.",
+            "ar": "وُجّه الخطاب إلى معالي وزير الشؤون الخارجية الموقر."
+          },
+          {
+            "es": "Aprovecha la ocasión para reiterar las seguridades de su más alta consideración.",
+            "ar": "تغتنم هذه المناسبة لتجدد الإعراب عن أسمى آيات التقدير والاحترام."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "nota verbal",
+      "Excelentísimo Señor",
+      "cuerpo diplomático",
+      "distinguida consideración",
+      "tener el honor de",
+      "protocolo"
+    ],
+    "reviewVocabulary": [
+      "gobierno",
+      "ministro"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يكتب المتعلم مذكرة رسمية أو خطاباً بروتوكولياً موجهاً لهيئة دبلوماسية أو دستورية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-cid-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الوثيقة الدبلوماسية الرسمية المتبادلة بين السفارة ووزارة الخارجية المكتوبة بصيغة الغائب",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي المراسلة الدبلوماسية المكتوبة بصيغة الغائب المجرد التي تنتهي بعبارة 'أسمى آيات التقدير'؟",
+        "stemEs": "La delegación extranjera remitió una _____ solicitando una reunión bilateral urgente.",
+        "stemAr": "أرسلت البعثة الأجنبية ... تطلب فيها عقد اجتماع ثنائي عاجل.",
+        "options": [
+          {
+            "id": "ex-b2-cid-1_a",
+            "text": "nota verbal",
+            "textAr": "المذكرة الدبلوماسية الرسمية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cid-1_b",
+            "text": "trama",
+            "textAr": "حبكة قصة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المراسلة الدبلوماسية تسمى nota verbal."
+          },
+          {
+            "id": "ex-b2-cid-1_c",
+            "text": "orden del día",
+            "textAr": "جدول أعمال",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوثيقة هي la nota verbal."
+          }
+        ],
+        "targetVocab": [
+          "nota verbal",
+          "protocolo"
+        ],
+        "explanationAr": "la nota verbal هي المذكرة الرسمية المتبادلة في الأعراف الدبلوماسية بين البعثات والوزارات.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cid-1_a"
+          ],
+          "selectedOptionId": "ex-b2-cid-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cid-1_b": "المراسلة الدبلوماسية تسمى nota verbal.",
+          "ex-b2-cid-1_c": "الوثيقة هي la nota verbal."
+        }
+      },
+      {
+        "id": "ex-b2-cid-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالتعبير الدبلوماسي الفصيح للشرف والاعتزاز: tener el _____ de",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة الناقصة: tener el _____ de (يتشرف بـ):",
+        "stemEs": "Esta embajada tiene el _____ de invitar a su excelencia a la recepción del día nacional.",
+        "stemAr": "تتشرف هذه السفارة بدعوة سعادتكم لحفل الاستقبال بمناسبة اليوم الوطني.",
+        "targetVocab": [
+          "tener el honor de"
+        ],
+        "explanationAr": "tener el honor de هي العبارة البروتوكولية القياسية للدلالة على الشرف في المراسلات الرسمية.",
+        "answerKey": {
+          "accepted": [
+            "honor"
+          ],
+          "acceptableAnswers": [
+            "honor"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cid-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد لقب التعظيم الدستوري الصحيح الموجه لوزير أو سفير في المملكة الإسبانية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو اللقب البروتوكولي الإلزامي لمخاطبة معالي الوزير أو سعادة السفير؟",
+        "stemEs": "La carta iba encabezada con el tratamiento oficial: _____ Ministro de Cooperación.",
+        "stemAr": "تصدّر الخطاب اللقب البروتوكولي الرسمي: ... وزير التعاون الدولي.",
+        "options": [
+          {
+            "id": "ex-b2-cid-3_a",
+            "text": "Excelentísimo Señor",
+            "textAr": "معالي السيد الموقر (الصواب الدستوري)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cid-3_b",
+            "text": "Querido colega",
+            "textAr": "زميلي العزيز بالعامية",
+            "isCorrect": false,
+            "distractorRationaleAr": "اللقب الدستوري للوزراء والسفراء هو Excelentísimo Señor."
+          },
+          {
+            "id": "ex-b2-cid-3_c",
+            "text": "Don simple",
+            "textAr": "السيد المجرد فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "اللقب الرسمي المعتمد هو Excelentísimo Señor."
+          }
+        ],
+        "targetVocab": [
+          "Excelentísimo Señor",
+          "cuerpo diplomático",
+          "protocolo"
+        ],
+        "explanationAr": "Excelentísimo/a Señor/a (Excmo./a Sr./a) هو لقب التشريف المخصص دستورياً للوزراء والسفراء وكبار مسؤولي الدولة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cid-3_a"
+          ],
+          "selectedOptionId": "ex-b2-cid-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cid-3_b": "اللقب الدستوري للوزراء والسفراء هو Excelentísimo Señor.",
+          "ex-b2-cid-3_c": "اللقب الرسمي المعتمد هو Excelentísimo Señor."
+        }
+      },
+      {
+        "id": "ex-b2-cid-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب العبارة البروتوكولية الدبلوماسية لتأكيد أسمى آيات التقدير والاحترام",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-cid-4_t1",
+            "kind": "token",
+            "text": "Reitera"
+          },
+          {
+            "id": "ex-b2-cid-4_t2",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "ex-b2-cid-4_t3",
+            "kind": "token",
+            "text": "seguridades"
+          },
+          {
+            "id": "ex-b2-cid-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b2-cid-4_t5",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b2-cid-4_t6",
+            "kind": "token",
+            "text": "más"
+          },
+          {
+            "id": "ex-b2-cid-4_t7",
+            "kind": "token",
+            "text": "distinguida"
+          },
+          {
+            "id": "ex-b2-cid-4_t8",
+            "kind": "token",
+            "text": "consideración"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Reitera las seguridades de su más distinguida consideración"
+          ],
+          "tokenOrder": [
+            "ex-b2-cid-4_t1",
+            "ex-b2-cid-4_t2",
+            "ex-b2-cid-4_t3",
+            "ex-b2-cid-4_t4",
+            "ex-b2-cid-4_t5",
+            "ex-b2-cid-4_t6",
+            "ex-b2-cid-4_t7",
+            "ex-b2-cid-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Reitera ثم المفعول las seguridades ثم شبه الجملة de su más distinguida consideración.",
+        "targetVocab": [
+          "distinguida consideración",
+          "nota verbal"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cid-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للبيان البروتوكولي وحدد الهيئة التي تمثل السفراء المعتمدين في العاصمة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لمراسم الاستقبال الرسمي في القصر الملكي",
+        "stemEs": "Su Majestad el Rey recibió en audiencia solemne a los miembros del cuerpo diplomático.",
+        "stemAr": "استقبل جلالة الملك في جلسة رسمية مهيبة أعضاء السلك الدبلوماسي.",
+        "options": [
+          {
+            "id": "ex-b2-cid-5_a",
+            "text": "cuerpo diplomático",
+            "textAr": "السلك الدبلوماسي المعتمد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cid-5_b",
+            "text": "parque eólico",
+            "textAr": "حقل طاقة الرياح",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاستقبال كان لأعضاء el cuerpo diplomático."
+          },
+          {
+            "id": "ex-b2-cid-5_c",
+            "text": "empresa privada",
+            "textAr": "شركة خاصة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم هو السلك الدبلوماسي cuerpo diplomático."
+          }
+        ],
+        "targetVocab": [
+          "cuerpo diplomático",
+          "protocolo"
+        ],
+        "explanationAr": "المتحدث قال بمهابة: 'a los miembros del cuerpo diplomático'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_audiencia_cuerpo_diplomatico_rey.mp3",
+        "speechEs": "Su Majestad el Rey recibió en audiencia solemne a los miembros del cuerpo diplomático.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cid-5_a"
+          ],
+          "selectedOptionId": "ex-b2-cid-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cid-5_b": "الاستقبال كان لأعضاء el cuerpo diplomático.",
+          "ex-b2-cid-5_c": "المفهوم هو السلك الدبلوماسي cuerpo diplomático."
+        }
+      },
+      {
+        "id": "ex-b2-cid-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك البروتوكولية بوقار دبلوماسي رفيع ومخارج حروف متزنة وفصيحة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة الدبلوماسية التالية كما تُحرر في مذكرات السفارات الرسمية:",
+        "stemEs": "La Embajada saluda al Excmo. Sr. Ministro y tiene el honor de reiterar las seguridades de su más distinguida consideración.",
+        "stemAr": "تحيي السفارة معالي السيد الوزير وتتشرف بأن تجدد لسيادته الإعراب عن فائق تقديرها واحترامها.",
+        "audioKey": "pending/b2_embajada_reitera_distinguida_consideracion.mp3",
+        "targetVocab": [
+          "Excelentísimo Señor",
+          "tener el honor de",
+          "distinguida consideración",
+          "nota verbal"
+        ],
+        "explanationAr": "انتبه لنطق Excmo. Sr. كـ Excelentísimo Señor ونطق distinguida consideración بوقار رصين.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_embajada_reitera_distinguida_consideracion.mp3",
+          "modelAnswer": "La Embajada saluda al Excmo. Sr. Ministro y tiene el honor de reiterar las seguridades de su más distinguida consideración."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "الصيغ الدبلوماسية الثابتة في المذكرات الشفهية والمراسلات الرسمية"
+    ]
+  }
+}

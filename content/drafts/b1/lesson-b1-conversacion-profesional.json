@@ -1,0 +1,422 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-conversacion-profesional",
+    "unitSlug": "b1-u3-work",
+    "levelCode": "B1",
+    "titleAr": "حوار احترافي: مناقشة مشروع عمل والتفاوض على المهام والحلول",
+    "titleEs": "Conversación profesional: Coordinar proyectos y negociar acuerdos",
+    "subtitleAr": "إدارة اجتماع عمل، توزيع المهام، واقتراح بدائل وحلول استراتيجية",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يشارك المتعلم بفاعلية في اجتماع عمل حقيقي باللغة الإسبانية.",
+        "أن يقترح استراتيجيات عمل وحلولاً تنفيذية: propongo que + subjuntivo, sugiero reconsiderar.",
+        "أن يتفاوض حول المواعيد النهائية (los plazos de entrega) وتوزيع الأدوار بين الزملاء."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ الاقتراح والتفاوض في اجتماعات العمل",
+          "explanationAr": "1. **تقديم اقتراح رسمي باستخدام المنصوب (Subjuntivo)**:\n- **Propongo que** revisemos el informe antes del viernes (أقترح أن نراجع التقرير قبل الجمعة).\n- **Sugiero que** repartamos las tareas de forma equitativa (أقترح أن نوزع المهام بالتساوي).\n2. **التعبير عن المواعيد النهائية**:\n- **El plazo de entrega**: Tenemos que cumplir con el plazo de entrega (علينا الالتزام بالموعد النهائي للتسليم).\n3. **التوصل إلى اتفاق وتفاوض**:\n- Llegar a un acuerdo / Cerrar el trato."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد propongo que (الخطأ: *Propongo que revisamos*، والصواب الحصري: Propongo que revisemos بالمنصوب).",
+        "ترجمة 'الموعد النهائي' بـ *tiempo final*؛ المصطلح المهني المعتمد هو el plazo de entrega أو la fecha límite."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في الاجتماع بنقول: «أنا بقترح نقسم الشغل وكل واحد يلتزم بالديدلاين». بالإسبانية: Propongo que dividamos el trabajo y respetemos el plazo de entrega."
+        }
+      ],
+      "culturalNoteAr": "في بيئة الأعمال الإسبانية، الاجتماعات تبدأ عادة بحديث ودي قصير (charla informal) لكسر الجليد قبل الدخول في جدول الأعمال الرسمي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-conversacion-profesional-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات التفاوض وإدارة الاجتماعات",
+        "bodyAr": "المفردات التفاعلية:\n- **la reunión de trabajo**: اجتماع العمل\n- **el plazo de entrega**: الموعد النهائي للتسليم (الديدلاين)\n- **proponer**: يقترح فكرة أو خطة\n- **el acuerdo**: الاتفاق أو التوافق المشترك\n- **la tarea**: المهمة أو الواجب المكلف به\n- **el equipo**: الفريق المهني المشترك",
+        "examples": [
+          {
+            "es": "Propongo que celebremos una reunión de trabajo para fijar los plazos.",
+            "ar": "أقترح أن نعقد اجتماع عمل لتحديد المواعيد النهائية."
+          },
+          {
+            "es": "Es fundamental cumplir con el plazo de entrega establecido.",
+            "ar": "من الضروري للغاية الالتزام بالموعد النهائي المحدد للتسليم."
+          },
+          {
+            "es": "Hemos llegado a un acuerdo beneficioso para ambas partes.",
+            "ar": "توصلنا إلى اتفاق مفيد لكلا الطرفين."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "reunión de trabajo",
+      "plazo de entrega",
+      "proponer",
+      "acuerdo",
+      "tarea",
+      "equipo"
+    ],
+    "reviewVocabulary": [
+      "proyecto",
+      "cliente"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يشارك المتعلم بفاعلية في اجتماع عمل حقيقي باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-pro-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب الصحيحة بعد فعل الاقتراح propongo que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي صيغة فعلية نستخدم بعد تركيب الاقتراح المهني Propongo que؟",
+        "stemEs": "Propongo que nosotros _____ los detalles técnicos mañana mismo.",
+        "stemAr": "أقترح أن نناقش التفاصيل الفنية غداً بالذات.",
+        "options": [
+          {
+            "id": "ex-b1-pro-1_a",
+            "text": "analicemos",
+            "textAr": "صيغة المنصوب الحاضر (الصواب بعد propongo que)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pro-1_b",
+            "text": "analizamos",
+            "textAr": "مضارع إخباري لا يصح بعد أفعال الاقتراح",
+            "isCorrect": false,
+            "distractorRationaleAr": "propongo que تتطلب فعلاً في صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b1-pro-1_c",
+            "text": "analizar",
+            "textAr": "مصدر غير مصرف لوجود الفاعل que nosotros",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع وجود que والفاعل نحتاج فعلاً مصرفاً بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "proponer",
+          "acuerdo"
+        ],
+        "explanationAr": "بعد فعل الاقتراح propongo que يأتي دائماً زمن المنصوب: propongo que analicemos.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pro-1_a"
+          ],
+          "selectedOptionId": "ex-b1-pro-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pro-1_b": "propongo que تتطلب فعلاً في صيغة المنصوب Subjuntivo.",
+          "ex-b1-pro-1_c": "مع وجود que والفاعل نحتاج فعلاً مصرفاً بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b1-pro-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني الموعد النهائي المحدد للتسليم",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في مصطلح الموعد النهائي: (el _____ de entrega)",
+        "stemEs": "Debemos entregar el informe antes de que venza el _____ de entrega.",
+        "stemAr": "يجب أن نسلم التقرير قبل أن ينقضي الموعد النهائي للتسليم.",
+        "targetVocab": [
+          "plazo de entrega"
+        ],
+        "explanationAr": "المصطلح هو el plazo de entrega ويعني الموعد النهائي للتسليم.",
+        "answerKey": {
+          "accepted": [
+            "plazo"
+          ],
+          "acceptableAnswers": [
+            "plazo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-pro-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الجلسة التنسيقية المشتركة لمناقشة العمل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى الجلسة التي يجتمع فيها الموظفون لتنسيق المهام؟",
+        "stemEs": "Hemos convocado una _____ urgente para resolver las incidencias.",
+        "stemAr": "دعونا إلى ... عاجل لحل المشكلات الطارئة.",
+        "options": [
+          {
+            "id": "ex-b1-pro-3_a",
+            "text": "reunión de trabajo",
+            "textAr": "اجتماع عمل رسمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pro-3_b",
+            "text": "plazo de entrega",
+            "textAr": "موعد نهائي للتسليم",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجلسة نفسها تسمى اجتماع عمل reunión de trabajo."
+          },
+          {
+            "id": "ex-b1-pro-3_c",
+            "text": "tarea",
+            "textAr": "مهمة فردية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الدعوة موجهة لعقد جلسة مشتركة."
+          }
+        ],
+        "targetVocab": [
+          "reunión de trabajo",
+          "plazo de entrega",
+          "tarea"
+        ],
+        "explanationAr": "una reunión de trabajo تعني اجتماع عمل لمناقشة المشروعات والمهام.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pro-3_a"
+          ],
+          "selectedOptionId": "ex-b1-pro-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pro-3_b": "الجلسة نفسها تسمى اجتماع عمل reunión de trabajo.",
+          "ex-b1-pro-3_c": "الدعوة موجهة لعقد جلسة مشتركة."
+        }
+      },
+      {
+        "id": "ex-b1-pro-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن التوصل إلى اتفاق إيجابي في الفريق",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-pro-4_t1",
+            "kind": "token",
+            "text": "Hemos"
+          },
+          {
+            "id": "ex-b1-pro-4_t2",
+            "kind": "token",
+            "text": "llegado"
+          },
+          {
+            "id": "ex-b1-pro-4_t3",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b1-pro-4_t4",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b1-pro-4_t5",
+            "kind": "token",
+            "text": "buen"
+          },
+          {
+            "id": "ex-b1-pro-4_t6",
+            "kind": "token",
+            "text": "acuerdo"
+          },
+          {
+            "id": "ex-b1-pro-4_t7",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b1-pro-4_t8",
+            "kind": "token",
+            "text": "equipo"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hemos llegado a un buen acuerdo de equipo"
+          ],
+          "tokenOrder": [
+            "ex-b1-pro-4_t1",
+            "ex-b1-pro-4_t2",
+            "ex-b1-pro-4_t3",
+            "ex-b1-pro-4_t4",
+            "ex-b1-pro-4_t5",
+            "ex-b1-pro-4_t6",
+            "ex-b1-pro-4_t7",
+            "ex-b1-pro-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل المركب Hemos llegado ثم شبه الجملة a un buen acuerdo de equipo.",
+        "targetVocab": [
+          "acuerdo",
+          "equipo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-pro-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد خطة توزيع المهام في المشروع",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لمدير المشروع وحدد ما يطلبه من الفريق",
+        "stemEs": "Cada miembro del equipo debe asumir su tarea con total compromiso.",
+        "stemAr": "يجب على كل عضو في الفريق أن يتحمل مهمته بالتزام تام.",
+        "options": [
+          {
+            "id": "ex-b1-pro-5_a",
+            "text": "tarea",
+            "textAr": "المهمة المكلف بها (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-pro-5_b",
+            "text": "acuerdo",
+            "textAr": "اتفاق مكتوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على التزام كل فرد بمهمته (su tarea)."
+          },
+          {
+            "id": "ex-b1-pro-5_c",
+            "text": "reunión de trabajo",
+            "textAr": "اجتماع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يتحدث عن تنفيذ المهام المسندة."
+          }
+        ],
+        "targetVocab": [
+          "tarea",
+          "equipo",
+          "acuerdo",
+          "reunión de trabajo"
+        ],
+        "explanationAr": "المتحدث قال: 'debe asumir su tarea con total compromiso'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_asumir_tarea_equipo.mp3",
+        "speechEs": "Cada miembro del equipo debe asumir su tarea con total compromiso.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-pro-5_a"
+          ],
+          "selectedOptionId": "ex-b1-pro-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-pro-5_b": "المتحدث ركز على التزام كل فرد بمهمته (su tarea).",
+          "ex-b1-pro-5_c": "المتحدث يتحدث عن تنفيذ المهام المسندة."
+        }
+      },
+      {
+        "id": "ex-b1-pro-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق مقترحك للالتزام بالموعد النهائي للتسليم",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب تفاوضي راقٍ وواضح في الاجتماع:",
+        "stemEs": "Propongo coordinar las tareas para cumplir con el plazo de entrega.",
+        "stemAr": "أقترح تنسيق المهام للالتزام بالموعد النهائي للتسليم.",
+        "audioKey": "pending/b1_coordinar_plazo_entrega.mp3",
+        "targetVocab": [
+          "proponer",
+          "tarea",
+          "plazo de entrega"
+        ],
+        "explanationAr": "انتبه لنطق حرف z في plazo كـ ثاء ونطق rr المشددة في coordinar.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_coordinar_plazo_entrega.mp3",
+          "modelAnswer": "Propongo coordinar las tareas para cumplir con el plazo de entrega."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ الاقتراح والتفاوض في اجتماعات العمل"
+    ]
+  }
+}

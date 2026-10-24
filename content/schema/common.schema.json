@@ -3,7 +3,7 @@
   "$id": "common.schema.json",
   "title": "أنواع مشتركة — Español بالعربي",
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$" },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_-]{2,63}$" },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "minLength": 3, "maxLength": 64 },
     "level": { "type": "string", "enum": ["PREA1", "A1", "A2", "B1", "B2", "C1"] },
     "register": { "type": "string", "enum": ["neutral", "informal", "formal", "colloquial_spain", "colloquial_latam"] },

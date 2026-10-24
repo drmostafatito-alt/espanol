@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-lugares-ciudad",
+    "unitSlug": "a1-u8-places",
+    "levelCode": "A1",
+    "titleAr": "أماكن في المدينة: تسمية المعالم والمرافق العامة",
+    "titleEs": "Lugares en la ciudad",
+    "subtitleAr": "تعلم أسماء الأماكن والمرافق الحضرية وتمييز مذكرها ومؤنثها",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسمّي المتعلم الأماكن العامة الأساسية في المدينة بدقة.",
+        "أن يميز بين الأماكن المذكرة (el museo, el parque, el banco) والمؤنثة (la plaza, la calle, la estación).",
+        "أن يستخدم حرف الجر en للتعبير عن التواجد في مكان محدد."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أدوات التعريف مع أماكن المدينة وحرف الجر en",
+          "explanationAr": "تُستخدم أداة التعريف (el للمذكر، la للمؤنث) مع الأماكن العامة: el parque (الحديقة)، el banco (البنك)، el museo (المتحف)، el supermercado (السوبرماركت)، بينما la plaza (الميدان)، la calle (الشارع)، la estación (المحطة)، la farmacia (الصيدلية). عند التعبير عن التواجد نستخدم حرف الجر en: Estoy en el parque (أنا في الحديقة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "تذكير la calle أو la plaza بتأثير اللغة العربية (الشارع مذكر في العربية ومؤنث في الإسبانية: la calle).",
+        "استخدام a بدلاً من en للتعبير عن التواجد الثابت (القول *estoy a la plaza بدلاً من estoy en la plaza)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا في الميدان / في البنك / في المحطة». في الإسبانية نفس التركيب بالضبط: Estoy en + المكان مع أداة التعريف المناسبة."
+        }
+      ],
+      "culturalNoteAr": "الميدان العام (la plaza) في إسبانيا وأمريكا اللاتينية ليس مجرد مفترق طرق، بل هو قلب الحياة الاجتماعية حيث يجتمع الناس في المقاهي والمساء."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-lugares-ciudad-intro",
+        "type": "explanation",
+        "titleAr": "معالم ومرافق المدينة",
+        "bodyAr": "عندما تتجول في مدينة ناطقة بالإسبانية، ستحتاج إلى تمييز الأماكن الأساسية:\n- **la plaza**: الميدان / الساحة العامة\n- **la calle**: الشارع\n- **el museo**: المتحف\n- **el parque**: الحديقة / المنتزه\n- **el banco**: البنك / المصرف\n- **la estación**: المحطة (قطار أو مترو)\n- **el hospital**: المستشفى\n- **el supermercado**: السوبرماركت",
+        "examples": [
+          {
+            "es": "El museo está abierto.",
+            "ar": "المتحف مفتوح."
+          },
+          {
+            "es": "La plaza es muy grande.",
+            "ar": "الميدان كبير جداً."
+          },
+          {
+            "es": "Hay un parque cerca de aquí.",
+            "ar": "توجد حديقة بالقرب من هنا."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "plaza",
+      "calle",
+      "museo",
+      "parque",
+      "banco",
+      "estación",
+      "hospital",
+      "supermercado"
+    ],
+    "reviewVocabulary": [],
+    "level": "A1",
+    "objectiveAr": "أن يسمّي المتعلم الأماكن العامة الأساسية في المدينة بدقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-lug-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة الصحيحة للشارع في الإسبانية",
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كلمة calle مؤنثة في الإسبانية، ما هي أداة التعريف المناسبة لها؟",
+        "stemEs": "Vivo en _____ calle Mayor.",
+        "stemAr": "أعيش في شارع مايور.",
+        "options": [
+          {
+            "id": "ex-a1-lug-1_o1",
+            "text": "la",
+            "textAr": "أداة التعريف للمؤنث",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-lug-1_o2",
+            "text": "el",
+            "textAr": "أداة التعريف للمذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "calle كلمة مؤنثة في الإسبانية وليست مذكرة كما في العربية."
+          },
+          {
+            "id": "ex-a1-lug-1_o3",
+            "text": "los",
+            "textAr": "أداة الجمع المذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "calle اسم مفرد وليس جمعاً."
+          }
+        ],
+        "targetVocab": [
+          "calle"
+        ],
+        "explanationAr": "في الإسبانية كلمة calle مؤنثة دائماً وتأخذ أداة التعريف la.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-lug-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-lug-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-lug-1_o2": "calle كلمة مؤنثة في الإسبانية وليست مذكرة كما في العربية.",
+          "ex-a1-lug-1_o3": "calle اسم مفرد وليس جمعاً."
+        }
+      },
+      {
+        "id": "ex-a1-lug-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المكان المناسب للمعنى",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "أين تذهب لرؤية الآثار واللوحات التاريخية؟",
+        "stemEs": "Voy a visitar un _____ famoso.",
+        "stemAr": "سأزور ... شهيراً.",
+        "options": [
+          {
+            "id": "ex-a1-lug-2_o1",
+            "text": "museo",
+            "textAr": "متحف",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-lug-2_o2",
+            "text": "supermercado",
+            "textAr": "سوبرماركت",
+            "isCorrect": false,
+            "distractorRationaleAr": "السوبرماركت لشراء المواد الغذائية وليس للآثار."
+          },
+          {
+            "id": "ex-a1-lug-2_o3",
+            "text": "banco",
+            "textAr": "بنك",
+            "isCorrect": false,
+            "distractorRationaleAr": "البنك للمعاملات المالية وليس للآثار."
+          }
+        ],
+        "targetVocab": [
+          "museo",
+          "supermercado",
+          "banco"
+        ],
+        "explanationAr": "المتحف (el museo) هو المكان المخصص للآثار والمعارض الفنية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-lug-2_o1"
+          ],
+          "selectedOptionId": "ex-a1-lug-2_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-lug-2_o2": "السوبرماركت لشراء المواد الغذائية وليس للآثار.",
+          "ex-a1-lug-2_o3": "البنك للمعاملات المالية وليس للآثار."
+        }
+      },
+      {
+        "id": "ex-a1-lug-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالاسم المناسب للمنتزه",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الإسبانية المناسبة لـ 'الحديقة العامة / المنتزه'",
+        "stemEs": "Los niños juegan en el _____ grande.",
+        "stemAr": "الأطفال يلعبون في المنتزه الكبير.",
+        "targetVocab": [
+          "parque"
+        ],
+        "explanationAr": "كلمة parque تعني الحديقة العامة أو المنتزه وتأخذ el.",
+        "answerKey": {
+          "accepted": [
+            "parque"
+          ],
+          "acceptableAnswers": [
+            "parque"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-lug-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة صحيحة عن التواجد في الميدان",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-lug-4_t1",
+            "kind": "token",
+            "text": "Estamos"
+          },
+          {
+            "id": "ex-a1-lug-4_t2",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a1-lug-4_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-lug-4_t4",
+            "kind": "token",
+            "text": "plaza"
+          },
+          {
+            "id": "ex-a1-lug-4_t5",
+            "kind": "token",
+            "text": "principal"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Estamos en la plaza principal"
+          ],
+          "tokenOrder": [
+            "ex-a1-lug-4_t1",
+            "ex-a1-lug-4_t2",
+            "ex-a1-lug-4_t3",
+            "ex-a1-lug-4_t4",
+            "ex-a1-lug-4_t5"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل أولاً ثم حرف الجر en ثم أداة التعريف la والاسم plaza والصفة principal.",
+        "targetVocab": [
+          "plaza"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-lug-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر المكان الذي تم ذكره",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد المكان المذكور في الجملة",
+        "stemEs": "¿Dónde está la _____ de tren?",
+        "stemAr": "أين تقع محطة القطار؟",
+        "options": [
+          {
+            "id": "ex-a1-lug-5_o1",
+            "text": "estación",
+            "textAr": "محطة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-lug-5_o2",
+            "text": "calle",
+            "textAr": "شارع",
+            "isCorrect": false,
+            "distractorRationaleAr": "التسجيل ذكر محطة estación وليس شارع calle."
+          },
+          {
+            "id": "ex-a1-lug-5_o3",
+            "text": "plaza",
+            "textAr": "ميدان",
+            "isCorrect": false,
+            "distractorRationaleAr": "التسجيل ذكر محطة وليس ميداناً."
+          }
+        ],
+        "targetVocab": [
+          "estación",
+          "calle",
+          "plaza"
+        ],
+        "explanationAr": "الكلمة المسموعة هي estación وتعني محطة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_estacion_tren.mp3",
+        "speechEs": "¿Dónde está la estación de tren?",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-lug-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-lug-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-lug-5_o2": "التسجيل ذكر محطة estación وليس شارع calle.",
+          "ex-a1-lug-5_o3": "التسجيل ذكر محطة وليس ميداناً."
+        }
+      },
+      {
+        "id": "ex-a1-lug-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الجملة موضحاً مكان المستشفى",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "تحدث بنطق إسباني سليم لتحديد وجود مستشفى في المدينة",
+        "stemEs": "Hay un hospital moderno en la ciudad.",
+        "stemAr": "يوجد مستشفى حديث في المدينة.",
+        "audioKey": "pending/a1_hay_un_hospital.mp3",
+        "targetVocab": [
+          "hospital"
+        ],
+        "explanationAr": "تذكر أن حرف h في hospital صامت ولا ينطق في الإسبانية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_hay_un_hospital.mp3",
+          "modelAnswer": "Hay un hospital moderno en la ciudad."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "أدوات التعريف مع أماكن المدينة وحرف الجر en"
+    ]
+  }
+}

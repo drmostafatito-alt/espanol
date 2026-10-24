@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-cita",
+    "titleAr": "تحديد موعد: الاتفاق والتأكيد والمكان",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u3-numbers-time",
+    "objectiveAr": "أن يتفق المتعلم على موعد مع صديق أو زميل مستخدماً ¿A qué hora quedamos? والرد بـ A las... مع استعمال حرف الجر a مع ساعات المواعيد.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "hora",
+      "tiempo",
+      "tarde",
+      "mañana",
+      "lunes",
+      "viernes"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "casa",
+      "tres",
+      "dos"
+    ],
+    "targetStructures": [
+      "¿A qué hora quedamos? — Quedamos a las seis.",
+      "¿Te viene bien el viernes por la tarde?",
+      "De acuerdo, nos vemos allí."
+    ],
+    "grammarTopics": [
+      "preposicion-a-horas",
+      "verbo-quedar",
+      "confirmar-cita"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "يوسف يتفق مع زميله مانويل على موعد للقاء في وسط المدينة لمراجعة مشروع دراسي.",
+        "settingAr": "محادثة هاتفية بين زميلين",
+        "lines": [
+          {
+            "es": "Hola, Manuel, ¿quedamos mañana para estudiar?",
+            "ar": "مرحباً مانويل، هل نلتقي غداً للدراسة؟",
+            "arEg": "أهلاً يا مانويل، نتقابل بكرة عشان نذاكر؟",
+            "audioKey": "pending/a1-cit-sc-1"
+          },
+          {
+            "es": "Sí, buena idea. ¿A qué hora quedamos?",
+            "ar": "نعم، فكرة جيدة. في أي ساعة نلتقي؟",
+            "arEg": "أيوه فكرة حلوة، هنتقابل الساعة كام؟",
+            "audioKey": "pending/a1-cit-sc-2"
+          },
+          {
+            "es": "¿Te viene bien a las cinco de la tarde?",
+            "ar": "هل يناسبك في الخامسة مساءً؟",
+            "arEg": "يناسبك الساعة خمسة بعد الظهر؟",
+            "audioKey": "pending/a1-cit-sc-3"
+          },
+          {
+            "es": "Perfecto, quedamos a las cinco en la cafetería central.",
+            "ar": "ممتاز، نلتقي في الخامسة في المقهى المركزي.",
+            "arEg": "تمام، نتقابل الساعة خمسة في الكافيه المركزي.",
+            "audioKey": "pending/a1-cit-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الفعل 'quedar' من أهم الأفعال اليومية في إسبانيا ويعني 'الاتفاق على موعد أو لقاء'. وعند تحديد ساعة اللقاء يجب دائماً وضع حرف الجر 'a' (مثل: Quedamos a las seis)، وحذفه خطأ لغوي جسيم.",
+    "pedagogicalRationaleAr": "الفارق الجوهري بين السؤال عن التوقيت الحالي ¿Qué hora es? (والإجابة بـ Son las tres) وبين تحديد موعد ¿A qué hora quedamos? (والإجابة بـ A las tres). المتعلم العربي قد يخلط بينهما ويحذف حرف الجر 'a'.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_cit_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمكالمة وحدد ساعة الموعد المتفق عليها.",
+        "skills": [
+          "listening",
+          "speaking"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً لتأكيد الموعد بين الصديقين:",
+        "stemEs": "Entonces quedamos el viernes a las seis de la tarde.",
+        "stemAr": "إذن نلتقي يوم الجمعة في السادسة مساءً.",
+        "options": [
+          {
+            "id": "a1_cit_1_a",
+            "text": "A las seis de la tarde",
+            "textAr": "في السادسة مساءً (18:00)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cit_1_b",
+            "text": "A las cinco de la tarde",
+            "textAr": "في الخامسة مساءً (17:00)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت حدد السادسة (a las seis)، وليس الخامسة."
+          },
+          {
+            "id": "a1_cit_1_c",
+            "text": "A las ocho de la tarde",
+            "textAr": "في الثامنة مساءً (20:00)",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر موعد الثامنة في الصوت."
+          }
+        ],
+        "targetVocab": [
+          "viernes",
+          "tarde",
+          "hora"
+        ],
+        "explanationAr": "الصوت أكد الموعد بقوله: a las seis de la tarde أي في السادسة مساءً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-cit-ex-1",
+        "speechEs": "Entonces quedamos el viernes a las seis de la tarde.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cit_1_a"
+          ],
+          "selectedOptionId": "a1_cit_1_a"
+        },
+        "errorFeedback": {
+          "a1_cit_1_b": "الصوت حدد السادسة (a las seis)، وليس الخامسة.",
+          "a1_cit_1_c": "لم يُذكر موعد الثامنة في الصوت."
+        }
+      },
+      {
+        "id": "a1_cit_2_prep_a",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الإجباري عند تحديد ساعة الموعد.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نقول: «نلتقي في تمام الساعة الثالثة»؟",
+        "stemEs": "Quedamos ____ las tres en la plaza.",
+        "stemAr": "نلتقي ____ الثالثة في الساحة.",
+        "options": [
+          {
+            "id": "a1_cit_2_a",
+            "text": "a",
+            "textAr": "حرف الجر 'في تمام'",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cit_2_b",
+            "text": "en",
+            "textAr": "حرف الجر 'في المكان'",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ عربي شائع: en لا تُستخدم مع ساعات المواعيد، بل a las..."
+          },
+          {
+            "id": "a1_cit_2_c",
+            "text": "de",
+            "textAr": "حرف الجر 'من / عن'",
+            "isCorrect": false,
+            "distractorRationaleAr": "حرف الجر de يُستخدم للفترة (de la tarde) وليس للساعة المحددة للقاء."
+          }
+        ],
+        "targetVocab": [
+          "tres",
+          "hora"
+        ],
+        "explanationAr": "مع المواعيد نستخدم دائماً حرف الجر a: Quedamos a las tres.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cit_2_a"
+          ],
+          "selectedOptionId": "a1_cit_2_a"
+        },
+        "errorFeedback": {
+          "a1_cit_2_b": "خطأ عربي شائع: en لا تُستخدم مع ساعات المواعيد، بل a las...",
+          "a1_cit_2_c": "حرف الجر de يُستخدم للفترة (de la tarde) وليس للساعة المحددة للقاء."
+        }
+      },
+      {
+        "id": "a1_cit_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل كلمة الفترة الزمنية المسائية.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أكمل الجملة بالكلمة المناسبة: «نلتقي غداً بعد الظهر»:",
+        "stemEs": "Nos vemos mañana por la ____.",
+        "stemAr": "نلتقي غداً بعد الـ____.",
+        "targetVocab": [
+          "tarde",
+          "mañana"
+        ],
+        "explanationAr": "الفترة المسائية بعد الظهر يُعبّر عنها بـ por la tarde.",
+        "answerKey": {
+          "accepted": [
+            "tarde"
+          ],
+          "acceptableAnswers": [
+            "tarde"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cit_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال السؤال عن موعد اللقاء.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_cit_4_order_t1",
+            "kind": "token",
+            "text": "¿A"
+          },
+          {
+            "id": "a1_cit_4_order_t2",
+            "kind": "token",
+            "text": "qué"
+          },
+          {
+            "id": "a1_cit_4_order_t3",
+            "kind": "token",
+            "text": "hora"
+          },
+          {
+            "id": "a1_cit_4_order_t4",
+            "kind": "token",
+            "text": "quedamos"
+          },
+          {
+            "id": "a1_cit_4_order_t5",
+            "kind": "token",
+            "text": "mañana?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿A qué hora quedamos mañana?"
+          ],
+          "tokenOrder": [
+            "a1_cit_4_order_t1",
+            "a1_cit_4_order_t2",
+            "a1_cit_4_order_t3",
+            "a1_cit_4_order_t4",
+            "a1_cit_4_order_t5"
+          ]
+        },
+        "explanationAr": "تركيب السؤال عن موعد اللقاء: حرف الجر ¿A + أداة الاستفهام qué + كلمة hora + الفعل quedamos + الظرف mañana?",
+        "targetVocab": [
+          "hora",
+          "mañana"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_cit_5_confirm",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة الملائمة للموافقة على الموعد المقترح.",
+        "skills": [
+          "vocabulary",
+          "speaking"
+        ],
+        "difficulty": 1,
+        "promptAr": "عندما يقترح صديقك موعداً مناسباً، كيف تجيبه بالموافقة؟",
+        "stemEs": "— ¿A las cinco? — Sí, ____, me viene perfecto.",
+        "stemAr": "— في الخامسة؟ — نعم، ____، هذا يناسبني تماماً.",
+        "options": [
+          {
+            "id": "a1_cit_5_a",
+            "text": "de acuerdo",
+            "textAr": "موافق / حسناً",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_cit_5_b",
+            "text": "hasta luego",
+            "textAr": "إلى اللقاء لاحقاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذه عبارة توديع وليست قبولاً للموعد."
+          },
+          {
+            "id": "a1_cit_5_c",
+            "text": "lo siento",
+            "textAr": "أنا آسف",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذه عبارة اعتذار ورفض."
+          }
+        ],
+        "targetVocab": [
+          "tiempo",
+          "hora"
+        ],
+        "explanationAr": "عبارة De acuerdo هي التعبير الشائع في الإسبانية لقبول الموعد وتأكيده.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_cit_5_a"
+          ],
+          "selectedOptionId": "a1_cit_5_a"
+        },
+        "errorFeedback": {
+          "a1_cit_5_b": "هذه عبارة توديع وليست قبولاً للموعد.",
+          "a1_cit_5_c": "هذه عبارة اعتذار ورفض."
+        }
+      },
+      {
+        "id": "a1_cit_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة الاتفاق على الموعد بثقة.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح ومسموع:",
+        "stemEs": "Quedamos el viernes a las cuatro de la tarde.",
+        "stemAr": "نلتقي يوم الجمعة في الرابعة بعد الظهر.",
+        "audioKey": "pending/a1-cit-ex-6",
+        "targetVocab": [
+          "viernes",
+          "tarde",
+          "hora"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في quedamos ونطق cu-a-tro دون إسقاط حرف u.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-cit-ex-6",
+          "modelAnswer": "Quedamos el viernes a las cuatro de la tarde."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

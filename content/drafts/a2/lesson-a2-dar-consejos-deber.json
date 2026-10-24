@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-dar-consejos-deber",
+    "unitSlug": "a2-u6-health",
+    "levelCode": "A2",
+    "titleAr": "تقديم النصائح الطبية والتوجيهات بـ Deber و Tener que و Hay que",
+    "titleEs": "Dar consejos médicos: deber, tener que y hay que",
+    "subtitleAr": "التفريق بين الالتزام الأخلاقي (deber) والضرورة (tener que) والإلزام العام (hay que)",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يوجه المتعلم نصائح وإرشادات صحية باستخدام: debes + مصدر (ينبغي عليك).",
+        "أن يعبر عن الضرورة الشخصية باستخدام: tienes que + مصدر (يجب عليك).",
+        "أن يطبق الإلزام العام غير الشخصي بـ: hay que + مصدر (يجب / ينبغي بشكل عام)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ التوجيه والنصيحة الطبية",
+          "explanationAr": "تتدرج النصائح الطبية في الإسبانية حسب درجة الإلزام والأسلوب:\n1. **Deber + infinitivo** (نصيحة مهذبة / ينبغي):\n- Debes descansar más (ينبغي عليك أن ترتاح أكثر).\n- No debes fumar (لا ينبغي لك التدخين).\n2. **Tener que + infinitivo** (ضرورة مؤكدة وموجهة لشخص محدد):\n- Tienes que tomar la pastilla cada ocho horas (عليك تناول القرص كل 8 ساعات).\n3. **Hay que + infinitivo** (قاعدة عامة لجميع الناس دون فاعل محدد):\n- Hay que beber dos litros de agua al día (يجب شرب لترين من الماء يومياً)."
+        }
+      ],
+      "commonMistakesAr": [
+        "تصريف الفعل الثاني بعد deber أو tener que (الصواب دائماً بقاء الفعل الثاني في المصدر).\n- نسيان حرف الجر que مع tener (ممنوع قول *tienes tomar*؛ الصواب: tienes que tomar)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «لازم تريّح في السرير وتاخد الدوا / المفروض تشرب مية كتير». في الإسبانية: Tienes que guardar cama / Debes beber mucha agua."
+        }
+      ],
+      "culturalNoteAr": "الأطباء في إسبانيا يركزون بشدة على الراحة في الفراش (guardar cama) وشرب السوائل الدافئة والشوربة التقليدية (el caldo) كجزء أساسي من العلاج."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-dar-consejos-deber-intro",
+        "type": "explanation",
+        "titleAr": "أفعال النصيحة والإرشاد الطبي",
+        "bodyAr": "التراكيب الأساسية للنصيحة الصحية:\n- **deber + مصدر**: ينبغي / يجب (debes descansar)\n- **tener que + مصدر**: يلزمك / يجب عليك (tienes que tomar)\n- **hay que + مصدر**: يجب عموماً\n- **guardar cama**: يلزم الفراش / يستريح في السرير\n- **cuidar / cuidarse**: يعتني بـ / يحافظ على صحته\n- **saludable**: صحي / مفيد للصحة",
+        "examples": [
+          {
+            "es": "Debes guardar cama durante tres días.",
+            "ar": "ينبغي عليك ملازمة الفراش مدة ثلاثة أيام."
+          },
+          {
+            "es": "Tienes que cuidar tu alimentación.",
+            "ar": "عليك أن تعتني بغذائك."
+          },
+          {
+            "es": "Hay que llevar una vida saludable.",
+            "ar": "يجب اتباع نمط حياة صحي."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "deber",
+      "debes",
+      "debe",
+      "guardar cama",
+      "cuidar",
+      "saludable"
+    ],
+    "reviewVocabulary": [
+      "cada",
+      "pastilla"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يوجه المتعلم نصائح وإرشادات صحية باستخدام: debes + مصدر (ينبغي عليك).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-deb-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة النصيحة المناسبة الموجهة للمريض",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي صيغة الفعل deber الموجهة للمخاطب tú لتقديم نصيحة؟",
+        "stemEs": "Para curarte rápido, _____ descansar este fin de semana.",
+        "stemAr": "لتشفى بسرعة، ... أن ترتاح في عطلة نهاية هذا الأسبوع.",
+        "options": [
+          {
+            "id": "ex-a2-deb-1_a",
+            "text": "debes",
+            "textAr": "ينبغي عليك (الصواب مع tú)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-deb-1_b",
+            "text": "debe",
+            "textAr": "صيغة المفرد الغائب أو usted",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخطاب هنا موجه لصديق بصيغة tú فتكون debes."
+          },
+          {
+            "id": "ex-a2-deb-1_c",
+            "text": "debemos",
+            "textAr": "صيغة الجمع نحن",
+            "isCorrect": false,
+            "distractorRationaleAr": "debemos تعني ينبغي علينا نحن."
+          }
+        ],
+        "targetVocab": [
+          "deber",
+          "debes"
+        ],
+        "explanationAr": "مع ضمير المخاطب tú نستخدم صيغة debes لتقديم النصيحة: debes descansar.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-deb-1_a"
+          ],
+          "selectedOptionId": "ex-a2-deb-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-deb-1_b": "الخطاب هنا موجه لصديق بصيغة tú فتكون debes.",
+          "ex-a2-deb-1_c": "debemos تعني ينبغي علينا نحن."
+        }
+      },
+      {
+        "id": "ex-a2-deb-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الحرف الإلزامي في تركيب ضرورة tener que",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة بعد tienes ليكتمل تركيب الإلزام",
+        "stemEs": "Tienes _____ tomar una pastilla cada ocho horas.",
+        "stemAr": "عليك ... تتناول قرصاً كل ثماني ساعات.",
+        "targetVocab": [
+          "deber",
+          "pastilla"
+        ],
+        "explanationAr": "التركيب النحوي الدال على الضرورة هو tener que + infinitivo.",
+        "answerKey": {
+          "accepted": [
+            "que"
+          ],
+          "acceptableAnswers": [
+            "que"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-deb-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الدال على ملازمة الفراش للراحة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو التعبير الطبي الذي يطلبه الطبيب لمريض الإنفلونزا الشديدة؟",
+        "stemEs": "El médico le ha dicho que tiene que _____ dos días.",
+        "stemAr": "أخبره الطبيب أن عليه أن ... مدة يومين.",
+        "options": [
+          {
+            "id": "ex-a2-deb-3_a",
+            "text": "guardar cama",
+            "textAr": "يلازم الفراش / يستريح في السرير",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-deb-3_b",
+            "text": "saludable",
+            "textAr": "صحي (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "saludable صفة ولا تكمل معنى النشاط المطلوب هنا."
+          },
+          {
+            "id": "ex-a2-deb-3_c",
+            "text": "deber",
+            "textAr": "يجب",
+            "isCorrect": false,
+            "distractorRationaleAr": "deber فعل ولا يصح وضعه بعد tiene que مباشرة."
+          }
+        ],
+        "targetVocab": [
+          "guardar cama",
+          "saludable",
+          "deber"
+        ],
+        "explanationAr": "التعبير الطبي لملازمة الفراش هو guardar cama.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-deb-3_a"
+          ],
+          "selectedOptionId": "ex-a2-deb-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-deb-3_b": "saludable صفة ولا تكمل معنى النشاط المطلوب هنا.",
+          "ex-a2-deb-3_c": "deber فعل ولا يصح وضعه بعد tiene que مباشرة."
+        }
+      },
+      {
+        "id": "ex-a2-deb-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتأكيد على ضرورة شرب الماء لاتباع حياة صحية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-deb-4_t1",
+            "kind": "token",
+            "text": "Hay"
+          },
+          {
+            "id": "ex-a2-deb-4_t2",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-a2-deb-4_t3",
+            "kind": "token",
+            "text": "beber"
+          },
+          {
+            "id": "ex-a2-deb-4_t4",
+            "kind": "token",
+            "text": "agua"
+          },
+          {
+            "id": "ex-a2-deb-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-a2-deb-4_t6",
+            "kind": "token",
+            "text": "estar"
+          },
+          {
+            "id": "ex-a2-deb-4_t7",
+            "kind": "token",
+            "text": "saludable"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hay que beber agua para estar saludable"
+          ],
+          "tokenOrder": [
+            "ex-a2-deb-4_t1",
+            "ex-a2-deb-4_t2",
+            "ex-a2-deb-4_t3",
+            "ex-a2-deb-4_t4",
+            "ex-a2-deb-4_t5",
+            "ex-a2-deb-4_t6",
+            "ex-a2-deb-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: أداة الإلزام العام Hay que ثم المصدر beber ثم agua ثم الغرض para estar saludable.",
+        "targetVocab": [
+          "saludable"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-deb-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد نصيحة الطبيب للمريض",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتعليمات الطبيب وحدد ما يوصي به",
+        "stemEs": "Usted debe cuidar su salud y no trabajar tanto.",
+        "stemAr": "حضرتك ينبغي أن تعتني بصحتك وألا تعمل كثيراً.",
+        "options": [
+          {
+            "id": "ex-a2-deb-5_a",
+            "text": "cuidar",
+            "textAr": "يعتني / يحافظ على",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-deb-5_b",
+            "text": "guardar cama",
+            "textAr": "يلازم الفراش",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطبيب قال تحديداً: debe cuidar su salud."
+          },
+          {
+            "id": "ex-a2-deb-5_c",
+            "text": "pastilla",
+            "textAr": "قرص دواء",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطبيب ركز على العناية بالصحة العامة."
+          }
+        ],
+        "targetVocab": [
+          "cuidar",
+          "debe",
+          "guardar cama",
+          "pastilla"
+        ],
+        "explanationAr": "الطبيب قال: debe cuidar su salud.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_debe_cuidar_salud.mp3",
+        "speechEs": "Usted debe cuidar su salud y no trabajar tanto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-deb-5_a"
+          ],
+          "selectedOptionId": "ex-a2-deb-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-deb-5_b": "الطبيب قال تحديداً: debe cuidar su salud.",
+          "ex-a2-deb-5_c": "الطبيب ركز على العناية بالصحة العامة."
+        }
+      },
+      {
+        "id": "ex-a2-deb-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق نصيحتك لزميلك المريض",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انصح زميلك بأن يرتاح في البيت لكي يشفى بسرعة",
+        "stemEs": "Debes descansar en casa hoy.",
+        "stemAr": "ينبغي عليك أن ترتاح في البيت اليوم.",
+        "audioKey": "pending/a2_debes_descansar_casa.mp3",
+        "targetVocab": [
+          "debes"
+        ],
+        "explanationAr": "احرص على نطق حرف b كـ ذال خفيفة أو صوت شفوي رقيق بين الصائتين في debes.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_debes_descansar_casa.mp3",
+          "modelAnswer": "Debes descansar en casa hoy."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ التوجيه والنصيحة الطبية"
+    ]
+  }
+}

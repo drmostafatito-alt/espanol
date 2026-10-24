@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-estudios-universidad",
+    "unitSlug": "b1-u4-study",
+    "levelCode": "B1",
+    "titleAr": "التعليم الجامعي والدراسات العليا: الكليات والدرجات العلمية والمنح",
+    "titleEs": "Estudios universitarios, titulaciones y becas de investigación",
+    "subtitleAr": "نظام البكالوريوس (Grado) والماجستير (Máster)، والمنح الدراسية ورسائل التخرج",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم دراسته الأكاديمية والجامعية وتخصصه الدقيق باللغة الإسبانية.",
+        "أن يتعرف على مسميات المراحل الجامعية في إسبانيا وأوروبا: Grado (بكالوريوس 4 سنوات)، Máster (ماجستير)، Doctorado (دكتوراه).",
+        "أن يقدم طلباً لمنحة دراسية أو تدريب أكاديمي: solicitar una beca, matricularse, proyecto de fin de grado."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "مصطلحات وتراكيب الحياة الجامعية",
+          "explanationAr": "1. **التسجيل والدراسة**:\n- **Matricularse en**: Me he matriculado en el Grado de Traducción (سجلت في درجة البكالوريوس في الترجمة).\n- **Hacer / Cursar**: Estoy cursando un máster en relaciones internacionales.\n2. **المنح والتمويل**:\n- **Solicitar una beca**: Solicité una beca de investigación para financiar mis estudios.\n3. **التخرج ومشروع النهاية**:\n- **Graduarse**: Se graduó con honores el año pasado.\n- **El Trabajo de Fin de Grado (TFG)**: بحث أو مشروع التخرج الإلزامي في الجامعات الإسبانية."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمة *carrera* لوصف البكالوريوس الحديث في الوثائق الرسمية؛ الاسم الرسمي الحالي في إسبانيا هو el Grado (بينما carrera تستخدم في الحديث الدارج).",
+        "نسيان حرف الجر en بعد الفعل matricularse (الصحيح: matricularse en la universidad)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «قدمت على منحة ماجستير، وشغال على مشروع التخرج في الكلية». بالإسبانية: He pedido una beca de máster y estoy con el proyecto de fin de grado."
+        }
+      ],
+      "culturalNoteAr": "برنامج إيراسموس (Erasmus+) هو أشهر برنامج أوروبي للتبادل الطلابي الجامعي، وتعد إسبانيا الوجهة الأولى المفضلة للطلاب في أوروبا."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-estudios-universidad-intro",
+        "type": "explanation",
+        "titleAr": "المفردات الأكاديمية والجامعية",
+        "bodyAr": "المصطلحات الجامعية:\n- **el grado universitario**: درجة البكالوريوس الجامعية\n- **el máster**: الماجستير والدراسات التخصصية\n- **la beca**: المنحة الدراسية\n- **matricularse**: يسجل في الفصل الدراسي أو الكلية\n- **la facultad**: الكلية (مثل كلية الطب أو الحقوق)\n- **el expediente académico**: السجل الأكاديمي وكشف الدرجات",
+        "examples": [
+          {
+            "es": "Ha obtenido una beca completa para cursar un máster en Madrid.",
+            "ar": "حصلت على منحة كاملة لدراسة الماجستير في مدريد."
+          },
+          {
+            "es": "Los estudiantes deben matricularse antes del quince de septiembre.",
+            "ar": "يجب على الطلاب التسجيل قبل الخامس عشر من سبتمبر."
+          },
+          {
+            "es": "Presentó su expediente académico para acceder a la facultad.",
+            "ar": "قدم سجله الأكاديمي للالتحاق بالكلية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "grado universitario",
+      "máster",
+      "beca",
+      "matricularse",
+      "facultad",
+      "expediente académico"
+    ],
+    "reviewVocabulary": [
+      "universidad",
+      "estudiante"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يصف المتعلم دراسته الأكاديمية والجامعية وتخصصه الدقيق باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-est-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يعني منحة دراسية أو تمويلاً جامعياً",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية المقابلة لـ 'منحة دراسية' للطلاب المتميزين؟",
+        "stemEs": "Consiguió una _____ de excelencia para financiar su investigación.",
+        "stemAr": "حصلت على ... تفوق لتمويل بحثها العلمي.",
+        "options": [
+          {
+            "id": "ex-b1-est-1_a",
+            "text": "beca",
+            "textAr": "منحة دراسية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-est-1_b",
+            "text": "facultad",
+            "textAr": "كلية جامعية",
+            "isCorrect": false,
+            "distractorRationaleAr": "facultad هي الكلية نفسها وليست المنحة المالية."
+          },
+          {
+            "id": "ex-b1-est-1_c",
+            "text": "máster",
+            "textAr": "درجة ماجستير",
+            "isCorrect": false,
+            "distractorRationaleAr": "المنحة تسمى beca."
+          }
+        ],
+        "targetVocab": [
+          "beca",
+          "facultad",
+          "máster"
+        ],
+        "explanationAr": "una beca تعني منحة دراسية أو مساعدة مالية للتعليم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-est-1_a"
+          ],
+          "selectedOptionId": "ex-b1-est-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-est-1_b": "facultad هي الكلية نفسها وليست المنحة المالية.",
+          "ex-b1-est-1_c": "المنحة تسمى beca."
+        }
+      },
+      {
+        "id": "ex-b1-est-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على التسجيل الجامعي في المصدر المنعكس",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل المنعكس الذي يعني 'يسجل في الكلية' في المصدر: (_____ en la facultad)",
+        "stemEs": "Para poder asistir a clase es obligatorio _____ en el sistema oficial.",
+        "stemAr": "لتتمكن من حضور المحاضرات من الإلزامي التسجيل في النظام الرسمي.",
+        "targetVocab": [
+          "matricularse",
+          "facultad"
+        ],
+        "explanationAr": "فعل matricularse يعني يسجل في الكلية أو المدرسة.",
+        "answerKey": {
+          "accepted": [
+            "matricularse"
+          ],
+          "acceptableAnswers": [
+            "matricularse"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-est-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الدرجة الأكاديمية للدراسات العليا بعد البكالوريوس",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما اسم البرنامج الأكاديمي المتقدم بعد الانتهاء من درجة البكالوريوس (Grado)؟",
+        "stemEs": "Después de terminar el grado universitario, decidió hacer un _____ de especialización.",
+        "stemAr": "بعد إنهاء البكالوريوس الجامعي، قرر عمل ... تخصصي.",
+        "options": [
+          {
+            "id": "ex-b1-est-3_a",
+            "text": "máster",
+            "textAr": "ماجستير (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-est-3_b",
+            "text": "beca",
+            "textAr": "منحة",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسم الدرجة الأكاديمية التالية."
+          },
+          {
+            "id": "ex-b1-est-3_c",
+            "text": "expediente académico",
+            "textAr": "سجل درجات",
+            "isCorrect": false,
+            "distractorRationaleAr": "السجل وثيقة وليس البرنامج الأكاديمي نفسه."
+          }
+        ],
+        "targetVocab": [
+          "máster",
+          "grado universitario",
+          "beca",
+          "expediente académico"
+        ],
+        "explanationAr": "el máster هو درجة الماجستير التي تلي البكالوريوس.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-est-3_a"
+          ],
+          "selectedOptionId": "ex-b1-est-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-est-3_b": "نحتاج اسم الدرجة الأكاديمية التالية.",
+          "ex-b1-est-3_c": "السجل وثيقة وليس البرنامج الأكاديمي نفسه."
+        }
+      },
+      {
+        "id": "ex-b1-est-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف تقديم السجل الأكاديمي للكلية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-est-4_t1",
+            "kind": "token",
+            "text": "Entregó"
+          },
+          {
+            "id": "ex-b1-est-4_t2",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b1-est-4_t3",
+            "kind": "token",
+            "text": "expediente"
+          },
+          {
+            "id": "ex-b1-est-4_t4",
+            "kind": "token",
+            "text": "académico"
+          },
+          {
+            "id": "ex-b1-est-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b1-est-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b1-est-4_t7",
+            "kind": "token",
+            "text": "facultad"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Entregó su expediente académico en la facultad"
+          ],
+          "tokenOrder": [
+            "ex-b1-est-4_t1",
+            "ex-b1-est-4_t2",
+            "ex-b1-est-4_t3",
+            "ex-b1-est-4_t4",
+            "ex-b1-est-4_t5",
+            "ex-b1-est-4_t6",
+            "ex-b1-est-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Entregó ثم المفعول su expediente académico ثم المكان en la facultad.",
+        "targetVocab": [
+          "expediente académico",
+          "facultad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-est-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد المرحلة الجامعية التي يدرسها الطالب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للطالب وحدد درجته العلمية الحالية",
+        "stemEs": "Estoy en el último curso del grado universitario de Medicina.",
+        "stemAr": "أنا في السنة الأخيرة من درجة البكالوريوس الجامعي في الطب.",
+        "options": [
+          {
+            "id": "ex-b1-est-5_a",
+            "text": "grado universitario",
+            "textAr": "درجة البكالوريوس الجامعي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-est-5_b",
+            "text": "máster",
+            "textAr": "ماجستير",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطالب قال بوضوح: 'del grado universitario de Medicina'."
+          },
+          {
+            "id": "ex-b1-est-5_c",
+            "text": "beca",
+            "textAr": "منحة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطالب يحدد درجته الجامعية الحالية."
+          }
+        ],
+        "targetVocab": [
+          "grado universitario",
+          "máster",
+          "beca"
+        ],
+        "explanationAr": "الطالب قال: 'del grado universitario de Medicina'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_grado_universitario.mp3",
+        "speechEs": "Estoy en el último curso del grado universitario de Medicina.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-est-5_a"
+          ],
+          "selectedOptionId": "ex-b1-est-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-est-5_b": "الطالب قال بوضوح: 'del grado universitario de Medicina'.",
+          "ex-b1-est-5_c": "الطالب يحدد درجته الجامعية الحالية."
+        }
+      },
+      {
+        "id": "ex-b1-est-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك عن أهدافك الأكاديمية والمنحة الدراسية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب أكاديمي فصيح:",
+        "stemEs": "He solicitado una beca para estudiar un máster en la facultad de Ciencias.",
+        "stemAr": "لقد تقدمت بطلب منحة لدراسة الماجستير في كلية العلوم.",
+        "audioKey": "pending/b1_beca_estudiar_master.mp3",
+        "targetVocab": [
+          "beca",
+          "máster",
+          "facultad"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في solicitado و b في beca بدقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_beca_estudiar_master.mp3",
+          "modelAnswer": "He solicitado una beca para estudiar un máster en la facultad de Ciencias."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "مصطلحات وتراكيب الحياة الجامعية"
+    ]
+  }
+}

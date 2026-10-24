@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-ensayo-cultural",
+    "titleAr": "المقال الفلسفي والنقد الثقافي: El ensayo cultural y la prosa meditativa",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u8-advanced-writing",
+    "objectiveAr": "أن يكتب المتعلم مقالاً نقدياً وفلسفياً رفيعاً يتناول قضايا الفكر والجماليات بلغة تأملية متسقة ومجازات فكرية متينة (prosa meditativa, trascendencia, dialéctica).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "meditativa",
+      "trascendencia",
+      "dialéctica",
+      "estética",
+      "cohesión",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La prosa meditativa: cadencia pausada, digresiones fecundas y rigor conceptual",
+      "La búsqueda de la trascendencia ética a través de la experiencia estética",
+      "La dialéctica entre tradición histórica e innovación iconoclasta",
+      "La cohesión textual micro y macroestructural en el ensayo filosófico"
+    ],
+    "grammarTopics": [
+      "el-ensayo-filosofico-c1",
+      "estilistica-del-pensamiento-critico"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ورشة لتطوير كتابة المقال الفلسفي في دائرة الفنون الجميلة (Círculo de Bellas Artes) بمدريد.",
+        "settingAr": "قاعة الأعمدة، دائرة الفنون الجميلة، مدريد",
+        "lines": [
+          {
+            "es": "El ensayo filosófico debe fluir con el ritmo sereno de una prosa meditativa que invite al recogimiento.",
+            "ar": "يجب أن يتدفق المقال الفلسفي بالإيقاع المتأني الساكن لنثر تأملي عميق يدعو القارئ للسكينة والاستبطان.",
+            "arEg": "المقال الفلسفي لازم يمشي بإيقاع هادي ونغم تأملي عميق يخلي القارئ يقعد مع نفسه ويفكر براحة.",
+            "audioKey": "pending/c1-u8-ens-1"
+          },
+          {
+            "es": "A través de la experiencia estética, el ser humano intuye una forma superior de trascendencia.",
+            "ar": "عبر التجربة الجمالية الخالصة، يستشعر الكائن البشري نمطاً أسمى وأرفع من التجرد والتعالي الوجودي.",
+            "arEg": "من خلال تذوق الفن والجمال، الإنسان بيحس بحاجة أكبر وأسمى بكتير من المادة ومشاكل اليومية.",
+            "audioKey": "pending/c1-u8-ens-2"
+          },
+          {
+            "es": "La dialéctica entre la memoria viva y el olvido forja la identidad de las civilizaciones.",
+            "ar": "إن الجدل الديالكتيكي بين الذاكرة الحية والنسيان هو الذي يصوغ ويبني هوية الحضارات الإنسانية.",
+            "arEg": "الصراع والجدل المستمر بين الذاكرة اللي مش بتموت وبين النسيان هو اللي بيشكل شخصية أي حضارة في التاريخ.",
+            "audioKey": "pending/c1-u8-ens-3"
+          },
+          {
+            "es": "Es indispensable asegurar una perfecta cohesión entre los estratos especulativos del discurso.",
+            "ar": "من الضروري للغاية تأمين اتساق وترابط محكم لا انفصام فيه بين الطبقات التأملية النظرية لهذا الخطاب.",
+            "arEg": "لازم نضمن ترابط واتساق ميه في الميه بين الأفكار الفلسفية اللي بنطرحها عشان المقال يبقى كتلة واحدة متماسكة.",
+            "audioKey": "pending/c1-u8-ens-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-ecu-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث أستاذ الفلسفة واكتشف النمط النثري الذي دعا إليه لتحفيز الفكر والتأمل الباطني.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو النمط النثري الملائم لكتابة المقال الفلسفي الثقافي الرفيع؟",
+        "stemEs": "El ensayo filosófico debe fluir con el ritmo sereno de una prosa meditativa que invite al recogimiento.",
+        "stemAr": "يجب أن يتدفق المقال الفلسفي بالإيقاع المتأني الساكن لنثر تأملي عميق يدعو القارئ للسكينة والاستبطان.",
+        "options": [
+          {
+            "id": "ex-c1-ecu-1_a",
+            "text": "Una prosa meditativa y serena",
+            "textAr": "نثر تأملي رصين وهادئ يدعو لاستبطان المعاني",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ecu-1_b",
+            "text": "Un titular sensacionalista y chillón",
+            "textAr": "عنوان صحفي فضائحي مثير ومبتذل",
+            "isCorrect": false,
+            "distractorRationaleAr": "يناقض وقار الفلسفة والتأمل."
+          },
+          {
+            "id": "ex-c1-ecu-1_c",
+            "text": "Una lista desordenada de la compra",
+            "textAr": "قائمة مشتريات عشوائية للبيت",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج السياق الفكري كلياً."
+          }
+        ],
+        "targetVocab": [
+          "meditativa",
+          "estética"
+        ],
+        "explanationAr": "«La prosa meditativa» هي أسلوب كبار المفكرين كأونامونو وثامبرانو ومونتيني، حيث تسير الجمل بتأنٍ مدروس يتيح للعقل هضم الأفكار المجردة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u8-ens-1",
+        "speechEs": "El ensayo filosófico debe fluir con el ritmo sereno de una prosa meditativa que invite al recogimiento.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ecu-1_a"
+          ],
+          "selectedOptionId": "ex-c1-ecu-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ecu-1_b": "يناقض وقار الفلسفة والتأمل.",
+          "ex-c1-ecu-1_c": "خارج السياق الفكري كلياً."
+        }
+      },
+      {
+        "id": "ex-c1-ecu-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو المفهوم الفلسفي المعبر عن «تجاوز المادة والحدود الضيقة للعالم المحسوس نحو المطلق»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المصطلح المعبر عن التعالي والتسامي الوجودي:",
+        "stemEs": "El arte aspira a dotar a la existencia cotidiana de un anhelo de ____ espiritual.",
+        "stemAr": "يصبو الفن الرفيع إلى إسباغ شوق وتطلع للتعالي والتسامي الروحي على تفاصيل الحياة اليومية.",
+        "options": [
+          {
+            "id": "ex-c1-ecu-2_a",
+            "text": "trascendencia",
+            "textAr": "التسامي والتجرد وتجاوز حدود الزوال المادي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ecu-2_b",
+            "text": "trivialidad",
+            "textAr": "الابتذال والتفاهة والسقوط في الرداءة",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس السمو الفني والروحي."
+          },
+          {
+            "id": "ex-c1-ecu-2_c",
+            "text": "trampa",
+            "textAr": "الفخ والخديعة الرخيصة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يمت للفلسفة الجمالية بصلة."
+          }
+        ],
+        "targetVocab": [
+          "trascendencia",
+          "dialéctica"
+        ],
+        "explanationAr": "«La trascendencia» في الفلسفة وعلم الجمال هي قدرة الروح البشرية على الارتقاء فوق الواقع الفاني وملامسة المعنى الخالد للوجود.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ecu-2_a"
+          ],
+          "selectedOptionId": "ex-c1-ecu-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ecu-2_b": "عكس السمو الفني والروحي.",
+          "ex-c1-ecu-2_c": "لا يمت للفلسفة الجمالية بصلة."
+        }
+      },
+      {
+        "id": "ex-c1-ecu-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح اللساني والنقدي الدال على ترابط أجزاء النص وتلاحم فقراته تلاحماً منطقياً: «la ____ textual».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة المعبرة عن الاتساق والتماسك العضوي للنص:",
+        "stemEs": "Un ensayo magistral se distingue por la impecable ____ lógica entre sus párrafos.",
+        "stemAr": "يتميز المقال الفلسفي البارع بالاتساق والترابط المنطقي الذي لا تشوبه شائبة بين كافة فقراته.",
+        "targetVocab": [
+          "cohesión"
+        ],
+        "explanationAr": "«La cohesión textual» هي التماسك الشكلي والمعنوي الذي يربط الجمل والأفكار عبر روابط ملائمة بحيث يبدو المقال نسيجاً متكاملاً لا انفصام فيه.",
+        "answerKey": {
+          "accepted": [
+            "cohesión"
+          ],
+          "acceptableAnswers": [
+            "cohesión"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ecu-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي المنهجية الفلسفية القائمة على حوار الأضداد وتفاعل الفكرة مع نقيضها لإنتاج مركب أسمى؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المنهج الجدلي الحواري المعبر عن تطور الفكر:",
+        "stemEs": "El pensador despliega una rigurosa ____ entre razón teórica y sensibilidad poética.",
+        "stemAr": "يبسط المفكر جدلاً وحواراً ديالكتيكياً صارماً بين العقل النظري والحساسية الشعرية.",
+        "options": [
+          {
+            "id": "ex-c1-ecu-4_a",
+            "text": "dialéctica",
+            "textAr": "الديالكتيك / الجدل الفلسفي التفاعلي بين الأضداد",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ecu-4_b",
+            "text": "distracción",
+            "textAr": "تشتت الذهن والغفلة والسهو",
+            "isCorrect": false,
+            "distractorRationaleAr": "عجز ذهني يتنافى مع الصرامة."
+          },
+          {
+            "id": "ex-c1-ecu-4_c",
+            "text": "diversión",
+            "textAr": "المرح والتسلية والألعاب الخفيفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "ليست منهجاً فلسفياً."
+          }
+        ],
+        "targetVocab": [
+          "dialéctica",
+          "rigor"
+        ],
+        "explanationAr": "«La dialéctica» هي فن المناظرة والحركة التطورية للفكر التي تختبر الفكرة بنقيضها وصولاً إلى تركيب فكري أكثر شمولاً ونضجاً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ecu-4_a"
+          ],
+          "selectedOptionId": "ex-c1-ecu-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ecu-4_b": "عجز ذهني يتنافى مع الصرامة.",
+          "ex-c1-ecu-4_c": "ليست منهجاً فلسفياً."
+        }
+      },
+      {
+        "id": "ex-c1-ecu-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء حكم فلسفي يربط بين الفن والسمو الإنساني.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-ecu-5_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-c1-ecu-5_t2",
+            "kind": "token",
+            "text": "arte"
+          },
+          {
+            "id": "ex-c1-ecu-5_t3",
+            "kind": "token",
+            "text": "busca"
+          },
+          {
+            "id": "ex-c1-ecu-5_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-ecu-5_t5",
+            "kind": "token",
+            "text": "trascendencia"
+          },
+          {
+            "id": "ex-c1-ecu-5_t6",
+            "kind": "token",
+            "text": "humana"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El arte busca la trascendencia humana"
+          ],
+          "tokenOrder": [
+            "ex-c1-ecu-5_t1",
+            "ex-c1-ecu-5_t2",
+            "ex-c1-ecu-5_t3",
+            "ex-c1-ecu-5_t4",
+            "ex-c1-ecu-5_t5",
+            "ex-c1-ecu-5_t6"
+          ]
+        },
+        "explanationAr": "المبتدأ El arte يليه الفعل المتعدي busca والمفعول به la trascendencia والصفة humana.",
+        "targetVocab": [
+          "trascendencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ecu-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة فيلسوف متأمل يتحدث في سكينة وهيبة فكرية بالغة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الوقفات البلاغية المعبرة:",
+        "stemEs": "La experiencia estética nos conduce a la trascendencia.",
+        "stemAr": "تقودنا التجربة الجمالية الخالصة إلى السمو والتسامي الوجودي الأرفع.",
+        "audioKey": "pending/c1-u8-ens-spk",
+        "targetVocab": [
+          "trascendencia",
+          "estética"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة estética على مقطع -té- ونطق حرف s في trascendencia بهدوء ووقار رفيع.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u8-ens-spk",
+          "modelAnswer": "La experiencia estética nos conduce a la trascendencia."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

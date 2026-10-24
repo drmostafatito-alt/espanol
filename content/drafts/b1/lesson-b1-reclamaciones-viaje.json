@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-reclamaciones-viaje",
+    "unitSlug": "b1-u5-independent-travel",
+    "levelCode": "B1",
+    "titleAr": "شكاوى السفر والخدمات السياحية: المطالبة بالتعويض وحقوق النزيل",
+    "titleEs": "Reclamaciones de viaje y derechos del viajero",
+    "subtitleAr": "تقديم شكوى لفندق أو وكالة سفر، طلب استرداد المبلغ، وتوثيق الأضرار",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقدم المتعلم شكوى شفهية أو كتابية واضحة ضد فندق أو شركة طيران أو وكالة سفر.",
+        "أن يطلب استرداد المبلغ المدفوع أو تعويضاً مناسباً: solicitar un reembolso, exigir una compensación.",
+        "أن يوثق الإخلال بالخدمة المتعاقد عليها بأدلة موضوعية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ المطالبة والاحتجاج في الخدمات السياحية",
+          "explanationAr": "1. **المطالبة بالحقوق واسترداد الأموال**:\n- **Exigir / Solicitar el reembolso**: Exijo el reembolso íntegro del billete por no haber recibido el servicio contratado.\n2. **التعبير عن الإخلال بالعقد**:\n- Las condiciones no se correspondían con lo anunciado (لم تتطابق الشروط مع ما تم الإعلان عنه).\n- El hotel carecía de los servicios prometidos (افتقر الفندق إلى الخدمات الموعودة).\n3. **استخدام صيغ التهذيب الحازم**:\n- Les ruego que solucionen esta situación de inmediato / Me veo en la obligación de reclamar."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمات عامة مثل *quiero mi dinero* بدلاً من التعبير القانوني والسياحي السليم exijo el reembolso.",
+        "ترجمة 'الإخلال بالوعد' حرفياً؛ المصطلح الأدق هو incumplimiento del contrato أو no cumplir con lo prometido."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «الأوضة مفيهاش تكييف عكس ما حجزت، وعايز أسترد فلوسي كلها فوراً». بالإسبانية: La habitación no coincide con la reserva y exijo el reembolso total."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا والاتحاد الأوروبي، يحق للمستهلك طلب وثيقة رسمية تسمى 'Hoja de reclamaciones' في أي منشأة سياحية أو تجارية بموجب القانون الإلزامي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-reclamaciones-viaje-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الشكاوى السياحية",
+        "bodyAr": "المفردات المفتاحية:\n- **la reclamación**: الشكوى الرسمية أو المطالبة\n- **el reembolso**: استرداد المبلغ المالي المدفوع\n- **exigir**: يطالب بحزم وجدية\n- **el incumplimiento**: الإخلال بالعقد أو عدم الالتزام\n- **el justificante**: الإيصال أو المستند الثبوتي للحق\n- **la compensación**: التعويض عن الضرر",
+        "examples": [
+          {
+            "es": "Presenté una reclamación formal por las malas condiciones del hotel.",
+            "ar": "قدمت شكوى رسمية بسبب سوء أوضاع الفندق."
+          },
+          {
+            "es": "Exijo el reembolso de la estancia por incumplimiento de lo acordado.",
+            "ar": "أطالب باسترداد تكلفة الإقامة بسبب الإخلال بما تم الاتفاق عليه."
+          },
+          {
+            "es": "Guarde el justificante de pago para tramitar la indemnización.",
+            "ar": "احتفظ بإيصال الدفع لمتابعة إجراءات التعويض."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "reclamación",
+      "reembolso",
+      "exigir",
+      "incumplimiento",
+      "justificante",
+      "compensación"
+    ],
+    "reviewVocabulary": [
+      "hotel",
+      "dinero"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقدم المتعلم شكوى شفهية أو كتابية واضحة ضد فندق أو شركة طيران أو وكالة سفر.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-rec-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني استرجاع المبلغ المالي المدفوع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح السياحي والقانوني لـ 'استرداد أموال الحجز'؟",
+        "stemEs": "Si cancelan el viaje, los clientes tienen derecho al _____ total.",
+        "stemAr": "إذا ألغوا الرحلة، يحق للعملاء ... الكامل لأموالهم.",
+        "options": [
+          {
+            "id": "ex-b1-rec-1_a",
+            "text": "reembolso",
+            "textAr": "استرداد المبلغ المدفوع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rec-1_b",
+            "text": "incumplimiento",
+            "textAr": "إخلال بالعقد",
+            "isCorrect": false,
+            "distractorRationaleAr": "العميل يسترد أمواله (reembolso) نتيجة الإلغاء."
+          },
+          {
+            "id": "ex-b1-rec-1_c",
+            "text": "justificante",
+            "textAr": "إيصال أو فاتورة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المال المسترد يسمى reembolso."
+          }
+        ],
+        "targetVocab": [
+          "reembolso",
+          "incumplimiento",
+          "justificante"
+        ],
+        "explanationAr": "el reembolso يعني استرداد المبلغ المالي المدفوع كاملاً أو جزئياً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rec-1_a"
+          ],
+          "selectedOptionId": "ex-b1-rec-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rec-1_b": "العميل يسترد أمواله (reembolso) نتيجة الإلغاء.",
+          "ex-b1-rec-1_c": "المال المسترد يسمى reembolso."
+        }
+      },
+      {
+        "id": "ex-b1-rec-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على المطالبة الحازمة بالحق (exigir)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "صرف فعل المطالبة الحازمة مع المتكلم yo في الحاضر: (exijo)",
+        "stemEs": "Ante esta situación tan desagradable, _____ hablar con el director.",
+        "stemAr": "أمام هذا الموقف غير المقبول إطلاقاً، أطالب بالتحدث مع المدير.",
+        "targetVocab": [
+          "exigir"
+        ],
+        "explanationAr": "تصريف فعل exigir مع yo في الحاضر البسيط هو exijo (مع تحويل g إلى j للحفاظ على الصوت).",
+        "answerKey": {
+          "accepted": [
+            "exijo",
+            "Exijo"
+          ],
+          "acceptableAnswers": [
+            "exijo",
+            "Exijo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rec-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الوثيقة الرسمية المثبتة لعملية الدفع والحجز",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي الإيصال أو المستند الورقي الذي يثبت دفعك للمبلغ؟",
+        "stemEs": "Para tramitar la reclamación es imprescindible adjuntar el _____ de la reserva.",
+        "stemAr": "لمتابعة إجراءات الشكوى من الضروري إرفاق ... الخاص بالحجز.",
+        "options": [
+          {
+            "id": "ex-b1-rec-3_a",
+            "text": "justificante",
+            "textAr": "إيصال الإثبات والمستند (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rec-3_b",
+            "text": "incumplimiento",
+            "textAr": "الإخلال",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسم الوثيقة المرفقة justificante."
+          },
+          {
+            "id": "ex-b1-rec-3_c",
+            "text": "compensación",
+            "textAr": "التعويض",
+            "isCorrect": false,
+            "distractorRationaleAr": "المستند هو justificante."
+          }
+        ],
+        "targetVocab": [
+          "justificante",
+          "reclamación",
+          "incumplimiento",
+          "compensación"
+        ],
+        "explanationAr": "el justificante هو إيصال الإثبات أو السند الورقي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rec-3_a"
+          ],
+          "selectedOptionId": "ex-b1-rec-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rec-3_b": "نحتاج اسم الوثيقة المرفقة justificante.",
+          "ex-b1-rec-3_c": "المستند هو justificante."
+        }
+      },
+      {
+        "id": "ex-b1-rec-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للمطالبة بتقديم ورقة الشكاوى الرسمية في الفندق",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-rec-4_t1",
+            "kind": "token",
+            "text": "Quiero"
+          },
+          {
+            "id": "ex-b1-rec-4_t2",
+            "kind": "token",
+            "text": "poner"
+          },
+          {
+            "id": "ex-b1-rec-4_t3",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b1-rec-4_t4",
+            "kind": "token",
+            "text": "reclamación"
+          },
+          {
+            "id": "ex-b1-rec-4_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "ex-b1-rec-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-rec-4_t7",
+            "kind": "token",
+            "text": "servicio"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero poner una reclamación por el servicio"
+          ],
+          "tokenOrder": [
+            "ex-b1-rec-4_t1",
+            "ex-b1-rec-4_t2",
+            "ex-b1-rec-4_t3",
+            "ex-b1-rec-4_t4",
+            "ex-b1-rec-4_t5",
+            "ex-b1-rec-4_t6",
+            "ex-b1-rec-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: صيغة المبتدأ Quiero poner ثم المفعول una reclamación ثم السبب por el servicio.",
+        "targetVocab": [
+          "reclamación"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rec-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الإجراء الذي يطالب به العميل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لمكالمة العميل مع الشركة وحدد ما يطالب به",
+        "stemEs": "Considero que ha habido un claro incumplimiento de las condiciones pactadas.",
+        "stemAr": "أعتبر أنه قد حدث إخلال واضح بالشروط المتفق عليها.",
+        "options": [
+          {
+            "id": "ex-b1-rec-5_a",
+            "text": "incumplimiento",
+            "textAr": "إخلال بالشروط والاتفاق (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rec-5_b",
+            "text": "reembolso",
+            "textAr": "طلب مال فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "العميل أكد على وقوع الإخلال الصريح (incumplimiento)."
+          },
+          {
+            "id": "ex-b1-rec-5_c",
+            "text": "justificante",
+            "textAr": "إيصال",
+            "isCorrect": false,
+            "distractorRationaleAr": "العميل يحتج بحدوث إخلال بالشروط."
+          }
+        ],
+        "targetVocab": [
+          "incumplimiento",
+          "reembolso",
+          "justificante"
+        ],
+        "explanationAr": "العميل قال: 'ha habido un claro incumplimiento de las condiciones'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_incumplimiento_condiciones.mp3",
+        "speechEs": "Considero que ha habido un claro incumplimiento de las condiciones pactadas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rec-5_a"
+          ],
+          "selectedOptionId": "ex-b1-rec-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rec-5_b": "العميل أكد على وقوع الإخلال الصريح (incumplimiento).",
+          "ex-b1-rec-5_c": "العميل يحتج بحدوث إخلال بالشروط."
+        }
+      },
+      {
+        "id": "ex-b1-rec-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق مطالبتك الرسمية بالتعويض المالي عن سوء الخدمة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بلهجة حازمة ومهذبة لمسؤول الفندق:",
+        "stemEs": "Exijo una compensación adecuada y el reembolso de esta noche de estancia.",
+        "stemAr": "أطالب بتعويض مناسب واسترداد قيمة هذه الليلة من الإقامة.",
+        "audioKey": "pending/b1_exijo_compensacion_reembolso.mp3",
+        "targetVocab": [
+          "exigir",
+          "compensación",
+          "reembolso"
+        ],
+        "explanationAr": "انتبه لنطق j في Exijo كـ خاء صريحة ونطق s في compensación بنقاء.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_exijo_compensacion_reembolso.mp3",
+          "modelAnswer": "Exijo una compensación adecuada y el reembolso de esta noche de estancia."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ المطالبة والاحتجاج في الخدمات السياحية"
+    ]
+  }
+}

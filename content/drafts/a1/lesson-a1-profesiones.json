@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-profesiones",
+    "unitSlug": "a1-u9-work-study",
+    "levelCode": "A1",
+    "titleAr": "المهن والوظائف: التذكير والتأنيث والتعبير عن العمل بـ Ser و Trabajar de",
+    "titleEs": "Las profesiones: ser y trabajar de",
+    "subtitleAr": "تسمية المهن وقاعدة حذف أداة النكرة بعد Ser والفرق مع trabajar de",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسمّي المتعلم المهن الشائعة ويميز صيغ المذكر والمؤنث فيها.",
+        "أن يطبق القاعدة النحوية الأساسية: عدم استخدام أداة نكرة مع Ser والمهن (Soy médico).",
+        "أن يميز بين Ser + profesión (المهنة الأساسية/الهوية) و Trabajar de + profesión (العمل الحالي أو المؤقت)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "حذف أداة النكرة مع المهن وتأنيثها",
+          "explanationAr": "عند ذكر مهنتك مع فعل الكينونة Ser، لا تضع أداة نكرة إطلاقاً: نقول Soy profesor (أنا معلم) ولا نقول أبداً *Soy un profesor* كما في الإنجليزية. تأنيث المهن: المنتهي بـ o يتحول إلى a (médico -> médica)، المنتهي بساكن يضاف له a (profesor -> profesora)، والمنتهي بـ -ista لا يتغير شكله (el periodista / la periodista). للتعبير عن وظيفة مؤقتة أو دور حالي نستخدم trabajar de: Trabajo de camarero (أعمل كنادل)."
+        }
+      ],
+      "commonMistakesAr": [
+        "وضع أداة نكرة بعد Ser مع المهن (مثل *Soy un ingeniero* بتأثير اللغات الأخرى؛ الصواب: Soy ingeniero).",
+        "تغيير نهاية المهن المنتهية بـ -ista في المؤنث (مثل كتابة *periodisto* للرجل؛ الصواب: el periodista / la periodista)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا دكتور / شغال جرسون». في الإسبانية تماماً بنفس الطريقة دون أي أداة: Soy médico / Trabajo de camarero."
+        }
+      ],
+      "culturalNoteAr": "عند التعارف المهني في إسبانيا، السؤال الشائع عن العمل هو: «¿A qué te dedicas?» (ما هو مجالك / ماذا تعمل؟) وتكون الإجابة مباشرة بالمهنة دون أداة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-profesiones-intro",
+        "type": "explanation",
+        "titleAr": "المهن والتذكير والتأنيث",
+        "bodyAr": "أهم المهن في المستوى المبتدئ وطريقة صياغتها:\n- **el profesor / la profesora**: المعلم / المعلمة\n- **el médico / la médica**: الطبيب / الطبيبة\n- **el ingeniero / la ingeniera**: المهندس / المهندسة\n- **el enfermero / la enfermera**: الممرض / الممرضة\n- **el/la periodista**: الصحفي / الصحفية (اللاحقة -ista ثابتة للجنسين)\n- **el camarero / la camarera**: النادل / النادلة\n- **el trabajo**: العمل\n- **la profesión**: المهنة",
+        "examples": [
+          {
+            "es": "Soy ingeniera en una empresa.",
+            "ar": "أنا مهندسة في شركة."
+          },
+          {
+            "es": "Mi hermano trabaja de camarero.",
+            "ar": "أخي يعمل كنادل."
+          },
+          {
+            "es": "Laura es periodista famosa.",
+            "ar": "لاورا صحفية مشهورة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "profesor",
+      "médico",
+      "ingeniero",
+      "enfermero",
+      "periodista",
+      "camarero",
+      "trabajo",
+      "profesión"
+    ],
+    "reviewVocabulary": [
+      "hospital"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يسمّي المتعلم المهن الشائعة ويميز صيغ المذكر والمؤنث فيها.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-prof-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الصياغة النحوية الصحيحة للمهنة مع Ser",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف يقول الطبيب عن نفسه بالإسبانية بشكل صحيح؟",
+        "stemEs": "_____ en el hospital central.",
+        "stemAr": "أنا طبيب في المستشفى المركزي.",
+        "options": [
+          {
+            "id": "ex-a1-prof-1_o1",
+            "text": "Soy médico",
+            "textAr": "بدون أداة نكرة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prof-1_o2",
+            "text": "Soy un médico",
+            "textAr": "باستخدام أداة نكرة un",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الإسبانية تحذف أداة النكرة مع المهن بعد Ser."
+          },
+          {
+            "id": "ex-a1-prof-1_o3",
+            "text": "Estoy médico",
+            "textAr": "استخدام estar بدلاً من ser",
+            "isCorrect": false,
+            "distractorRationaleAr": "المهن تعبر عن الهوية وتأخذ الفعل Ser وليس Estar."
+          }
+        ],
+        "targetVocab": [
+          "médico",
+          "hospital"
+        ],
+        "explanationAr": "القاعدة الذهبية: مع Ser والمهن لا نضع أداة نكرة (Soy médico وليس Soy un médico).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prof-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-prof-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prof-1_o2": "في الإسبانية تحذف أداة النكرة مع المهن بعد Ser.",
+          "ex-a1-prof-1_o3": "المهن تعبر عن الهوية وتأخذ الفعل Ser وليس Estar."
+        }
+      },
+      {
+        "id": "ex-a1-prof-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب مؤنث مهنة التعليم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو مؤنث كلمة profesor؟",
+        "stemEs": "María es una gran _____ de español.",
+        "stemAr": "ماريا معلمة رائعة للغة الإسبانية.",
+        "targetVocab": [
+          "profesor"
+        ],
+        "explanationAr": "المهن المنتهية بساكن مثل profesor تؤنث بإضافة a فتصبح profesora.",
+        "answerKey": {
+          "accepted": [
+            "profesora"
+          ],
+          "acceptableAnswers": [
+            "profesora"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-prof-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المناسبة لمهنة الصحافة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "المهنة التي تنتهي بـ -ista ولا يتغير شكلها بين المذكر والمؤنث هي:",
+        "stemEs": "Carlos trabaja como _____ de noticias.",
+        "stemAr": "كارلوس يعمل كـ ... أخبار.",
+        "options": [
+          {
+            "id": "ex-a1-prof-3_o1",
+            "text": "periodista",
+            "textAr": "صحفي (شكل ثابت)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prof-3_o2",
+            "text": "camarero",
+            "textAr": "نادل",
+            "isCorrect": false,
+            "distractorRationaleAr": "camarero يتغير في المؤنث إلى camarera."
+          },
+          {
+            "id": "ex-a1-prof-3_o3",
+            "text": "enfermero",
+            "textAr": "ممرض",
+            "isCorrect": false,
+            "distractorRationaleAr": "enfermero يتغير في المؤنث إلى enfermera."
+          }
+        ],
+        "targetVocab": [
+          "periodista",
+          "camarero",
+          "enfermero"
+        ],
+        "explanationAr": "المهن المنتهية بـ -ista مثل periodista تبقى ثابتة للمذكر والمؤنث.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prof-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-prof-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prof-3_o2": "camarero يتغير في المؤنث إلى camarera.",
+          "ex-a1-prof-3_o3": "enfermero يتغير في المؤنث إلى enfermera."
+        }
+      },
+      {
+        "id": "ex-a1-prof-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن العمل كنادل في مقهى",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-prof-4_t1",
+            "kind": "token",
+            "text": "Mi"
+          },
+          {
+            "id": "ex-a1-prof-4_t2",
+            "kind": "token",
+            "text": "hermano"
+          },
+          {
+            "id": "ex-a1-prof-4_t3",
+            "kind": "token",
+            "text": "trabaja"
+          },
+          {
+            "id": "ex-a1-prof-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a1-prof-4_t5",
+            "kind": "token",
+            "text": "camarero"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mi hermano trabaja de camarero"
+          ],
+          "tokenOrder": [
+            "ex-a1-prof-4_t1",
+            "ex-a1-prof-4_t2",
+            "ex-a1-prof-4_t3",
+            "ex-a1-prof-4_t4",
+            "ex-a1-prof-4_t5"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الفاعل Mi hermano ثم الفعل trabaja ثم حرف الجر de والمهنة camarero.",
+        "targetVocab": [
+          "camarero",
+          "trabajo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-prof-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر مهنة المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد مهنة الشخص",
+        "stemEs": "Soy ingeniero y trabajo en una empresa.",
+        "stemAr": "أنا مهندس وأعمل في شركة.",
+        "options": [
+          {
+            "id": "ex-a1-prof-5_o1",
+            "text": "ingeniero",
+            "textAr": "مهندس",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-prof-5_o2",
+            "text": "profesor",
+            "textAr": "معلم",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال ingeniero وليس profesor."
+          },
+          {
+            "id": "ex-a1-prof-5_o3",
+            "text": "médico",
+            "textAr": "طبيب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال ingeniero وليس médico."
+          }
+        ],
+        "targetVocab": [
+          "ingeniero",
+          "profesor",
+          "médico"
+        ],
+        "explanationAr": "المتحدث صرح بوضوح: Soy ingeniero.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_soy_ingeniero.mp3",
+        "speechEs": "Soy ingeniero y trabajo en una empresa.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-prof-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-prof-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-prof-5_o2": "المتحدث قال ingeniero وليس profesor.",
+          "ex-a1-prof-5_o3": "المتحدث قال ingeniero وليس médico."
+        }
+      },
+      {
+        "id": "ex-a1-prof-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة تعبر فيها عن مهنتك",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق جملة تعريفك بمهنتك باللغة الإسبانية بطلاقة",
+        "stemEs": "Soy enfermero en este hospital.",
+        "stemAr": "أنا ممرض في هذا المستشفى.",
+        "audioKey": "pending/a1_soy_enfermero.mp3",
+        "targetVocab": [
+          "enfermero",
+          "hospital"
+        ],
+        "explanationAr": "تذكر عدم وضع أداة نكرة بين Soy و enfermero.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_soy_enfermero.mp3",
+          "modelAnswer": "Soy enfermero en este hospital."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "حذف أداة النكرة مع المهن وتأنيثها"
+    ]
+  }
+}

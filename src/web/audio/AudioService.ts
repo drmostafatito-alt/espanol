@@ -101,9 +101,10 @@ export class AudioService {
     if (this.diagnostics.length > 50) this.diagnostics.shift();
   }
 
-  /** هل يوجد صوت إسباني متاح على الجهاز؟ (لا نفترض وجوده) */
+  /** هل يوجد صوت إسباني متاح على الجهاز؟ إذا لم تكن الأصوات قد حُمّلت بعد في المتصفح، نسمح بالمحاولة */
   hasSpanishVoice(): boolean {
     const v = this.deps.speech?.getVoices?.() ?? [];
+    if (v.length === 0) return true;
     return v.some(x => /^es/i.test(x.lang));
   }
 

@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-pasiva-periodistica-se",
+    "unitSlug": "b2-u2-news",
+    "levelCode": "B2",
+    "titleAr": "أسلوب المبني للمجهول الصحفي: Pasiva con Ser و Pasiva Refleja",
+    "titleEs": "La voz pasiva y la pasiva refleja en el lenguaje periodístico",
+    "subtitleAr": "الصياغة الإخبارية المجردة ونقل الوقائع الرسمية بـ (Fue aprobado) و (Se prevé)",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يتقن المتعلم صياغة المبني للمجهول التام (Ser + participio) في نقل الأخبار المكتملة.",
+        "أن يستخدم المبني للمجهول الانعكاسي (Pasiva refleja con Se) لإعطاء طابع مؤسسي محايد.",
+        "أن يطابق اسم المفعول في النوع والعدد مع المبتدأ في المبني للمجهول الكلاسيكي."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد المبني للمجهول في الصحافة الإسبانية",
+          "explanationAr": "1. **المبني للمجهول التام (Ser + Participio + por + Agente)**:\n- *El acuerdo fue firmado por los dos ministros* (طابق firmado مع el acuerdo).\n- *Las medidas fueron anunciadas ayer* (طابقت anunciadas مع las medidas مؤنث جمع).\n2. **المبني للمجهول بالصيغة الانعكاسية (Se + Verbo en 3ª persona)**:\n- يُفضل دائماً في العناوين والبيانات الرسمية:\n- *Se prevé un aumento de las temperaturas* (مفرد مع un aumento).\n- *Se investigan las causas del accidente* (جمع مع las causas)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان مطابقة اسم المفعول مع الفاعل في المبني للمجهول مع Ser (الخطأ: *Las leyes fueron aprobado*; الصواب: Las leyes fueron aprobadas).",
+        "استخدام المبني للمجهول مع Ser مع الأفعال غير المتعدية أو في لغة الحوار اليومية غير الرسمية."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الإسبانية الإخبارية نادراً ما بنقول مين الفاعل لو مش مهم، فبنستخدم المبني للمجهول: Se suspendieron los vuelos (عُلِّقت الرحلات الجوية) بدلاً من إلغاء الشركة للرحلات."
+        }
+      ],
+      "culturalNoteAr": "توصي أدلة أسلوب كبرى الصحف الإسبانية (مثل كتاب أسلوب El País) بتفضيل Pasiva Refleja (Se acordó) على Pasiva con Ser (Fue acordado) للحفاظ على حيوية اللغة وخفتها."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-pasiva-periodistica-se-intro",
+        "type": "explanation",
+        "titleAr": "صيغ المبني للمجهول الإخباري",
+        "bodyAr": "الأنماط الرئيسية:\n- **ser aprobado/a**: تمت الموافقة عليه رسمياً\n- **se prevé que**: من المتوقع والمقدّر أن\n- **se constata que**: يُلاحَظ ويُثبَت واقعياً أن\n- **se convoca**: تتم الدعوة إلى والانعقاد\n- **la promulgación**: الإصدار والاعتماد القانوني للتشريع\n- **el decreto**: المرسوم أو القرار الحكومي الرسمي",
+        "examples": [
+          {
+            "es": "El nuevo decreto fue promulgado por el jefe de Estado.",
+            "ar": "تم إصدار المرسوم الجديد من قِبل رئيس الدولة."
+          },
+          {
+            "es": "Se prevé que la economía crezca un dos por ciento este año.",
+            "ar": "من المتوقع أن ينمو الاقتصاد بنسبة اثنين بالمائة هذا العام."
+          },
+          {
+            "es": "Se convocaron elecciones anticipadas tras la moción de censura.",
+            "ar": "تمت الدعوة إلى انتخابات مبكرة إثر حجب الثقة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "promulgado",
+      "decreto",
+      "se prevé que",
+      "se constata que",
+      "convocar",
+      "acuerdo"
+    ],
+    "reviewVocabulary": [
+      "gobierno",
+      "ley"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يتقن المتعلم صياغة المبني للمجهول التام (Ser + participio) في نقل الأخبار المكتملة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-ppr-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر اسم المفعول المطابق لقواعد التذكير والتأنيث مع جمع المؤنث",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي اسم مفعول يناسب العبارة: Las reformas fiscales fueron _____ por el parlamento؟",
+        "stemEs": "Las reformas fiscales fueron _____ ayer por la tarde.",
+        "stemAr": "تم إقرار الإصلاحات الضريبية بعد ظهر أمس.",
+        "options": [
+          {
+            "id": "ex-b2-ppr-1_a",
+            "text": "aprobadas",
+            "textAr": "جمع مؤنث مطابق لـ las reformas (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ppr-1_b",
+            "text": "aprobado",
+            "textAr": "مفرد مذكر غير مطابق",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفاعل las reformas جمع مؤنث ولذا يجب مطابقة اسم المفعول aprobadas."
+          },
+          {
+            "id": "ex-b2-ppr-1_c",
+            "text": "aprobada",
+            "textAr": "مفرد مؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "المبتدأ جمع (reformas) وليس مفرداً."
+          }
+        ],
+        "targetVocab": [
+          "promulgado",
+          "decreto"
+        ],
+        "explanationAr": "في المبني للمجهول مع Ser، يطابق اسم المفعول المبتدأ في النوع والعدد: las reformas fueron aprobadas.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ppr-1_a"
+          ],
+          "selectedOptionId": "ex-b2-ppr-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ppr-1_b": "الفاعل las reformas جمع مؤنث ولذا يجب مطابقة اسم المفعول aprobadas.",
+          "ex-b2-ppr-1_c": "المبتدأ جمع (reformas) وليس مفرداً."
+        }
+      },
+      {
+        "id": "ex-b2-ppr-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل صيغة المبني للمجهول الانعكاسي مع الجمع: (prevén)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف فعل prever بصيغة المبني للمجهول الانعكاسي مع الجمع: Se _____ fuertes lluvias.",
+        "stemEs": "Para este fin de semana se _____ fuertes precipitaciones en la costa.",
+        "stemAr": "لعطلة نهاية هذا الأسبوع يُتوقَّع هطول أمطار غزيرة على الساحل.",
+        "targetVocab": [
+          "se prevé que"
+        ],
+        "explanationAr": "مع المبتدأ الجمع (fuertes precipitaciones) يصرّف الفعل في الجمع: se prevén.",
+        "answerKey": {
+          "accepted": [
+            "prevén"
+          ],
+          "acceptableAnswers": [
+            "prevén"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ppr-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الرسمي الذي يعني إصدار واعتماد القرار القانوني",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو الفعل الذي يدل على 'نشر وإصدار المرسوم الحكومي رسمياً في الجريدة'؟",
+        "stemEs": "El nuevo decreto ley fue _____ esta misma mañana por el presidente.",
+        "stemAr": "تم ... المرسوم بقانون الجديد صباح هذا اليوم من قبل الرئيس.",
+        "options": [
+          {
+            "id": "ex-b2-ppr-3_a",
+            "text": "promulgado",
+            "textAr": "تم إصداره ونشره رسمياً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ppr-3_b",
+            "text": "convocado",
+            "textAr": "تمت الدعوة إليه",
+            "isCorrect": false,
+            "distractorRationaleAr": "المرسوم يتم إصداره promulgado."
+          },
+          {
+            "id": "ex-b2-ppr-3_c",
+            "text": "previsto",
+            "textAr": "متوقع",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاعتماد الرسمي هو الإصدار promulgado."
+          }
+        ],
+        "targetVocab": [
+          "promulgado",
+          "decreto",
+          "convocar"
+        ],
+        "explanationAr": "promulgar un decreto تعني إصدار مرسوم قانوني واعتماده رسمياً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ppr-3_a"
+          ],
+          "selectedOptionId": "ex-b2-ppr-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ppr-3_b": "المرسوم يتم إصداره promulgado.",
+          "ex-b2-ppr-3_c": "الاعتماد الرسمي هو الإصدار promulgado."
+        }
+      },
+      {
+        "id": "ex-b2-ppr-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الإخبارية بصيغة المبني للمجهول الانعكاسي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-ppr-4_t1",
+            "kind": "token",
+            "text": "Se"
+          },
+          {
+            "id": "ex-b2-ppr-4_t2",
+            "kind": "token",
+            "text": "convocaron"
+          },
+          {
+            "id": "ex-b2-ppr-4_t3",
+            "kind": "token",
+            "text": "elecciones"
+          },
+          {
+            "id": "ex-b2-ppr-4_t4",
+            "kind": "token",
+            "text": "generales"
+          },
+          {
+            "id": "ex-b2-ppr-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b2-ppr-4_t6",
+            "kind": "token",
+            "text": "julio"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Se convocaron elecciones generales para julio"
+          ],
+          "tokenOrder": [
+            "ex-b2-ppr-4_t1",
+            "ex-b2-ppr-4_t2",
+            "ex-b2-ppr-4_t3",
+            "ex-b2-ppr-4_t4",
+            "ex-b2-ppr-4_t5",
+            "ex-b2-ppr-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الضمير Se ثم الفعل الجمع convocaron ثم المبتدأ elecciones generales ثم الظرف para julio.",
+        "targetVocab": [
+          "convocar",
+          "acuerdo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ppr-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لنشرة الأخبار وحدد ما تم رصده وتأكيده واقعياً",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للبيان الإخباري وحدد التعبير غير الشخصي الدال على الرصد المؤكد",
+        "stemEs": "Se constata un descenso significativo en la tasa de desempleo juvenil.",
+        "stemAr": "يُلاحَظ ويُثبَت انخفاض ملحوظ في معدل بطالة الشباب.",
+        "options": [
+          {
+            "id": "ex-b2-ppr-5_a",
+            "text": "se constata que",
+            "textAr": "يُلاحَظ ويُثبَت واقعياً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ppr-5_b",
+            "text": "se duda que",
+            "textAr": "يُشكك في",
+            "isCorrect": false,
+            "distractorRationaleAr": "المذيع قال: Se constata un descenso."
+          },
+          {
+            "id": "ex-b2-ppr-5_c",
+            "text": "se desmiente que",
+            "textAr": "يتم النفي",
+            "isCorrect": false,
+            "distractorRationaleAr": "العبارة المستخدمة هي se constata."
+          }
+        ],
+        "targetVocab": [
+          "se constata que",
+          "se prevé que"
+        ],
+        "explanationAr": "المذيع قال بوضوح: 'Se constata un descenso significativo'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_se_constata_descenso_paro.mp3",
+        "speechEs": "Se constata un descenso significativo en la tasa de desempleo juvenil.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ppr-5_a"
+          ],
+          "selectedOptionId": "ex-b2-ppr-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ppr-5_b": "المذيع قال: Se constata un descenso.",
+          "ex-b2-ppr-5_c": "العبارة المستخدمة هي se constata."
+        }
+      },
+      {
+        "id": "ex-b2-ppr-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق البيان الإخباري بصوت مذيع محترف مستخدماً المبني للمجهول",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب إذاعي واثق ومخارج حروف واضحة:",
+        "stemEs": "El histórico acuerdo fue firmado y se prevé su entrada en vigor el próximo mes.",
+        "stemAr": "تم توقيع الاتفاق التاريخي ومن المتوقع دخوله حيز التنفيذ الشهر القادم.",
+        "audioKey": "pending/b2_acuerdo_firmado_entrada_vigor.mp3",
+        "targetVocab": [
+          "acuerdo",
+          "se prevé que",
+          "promulgado"
+        ],
+        "explanationAr": "انتبه لنطق acuerdo و firmado ومطابقة النبرة الرصينة للأخبار الجادة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_acuerdo_firmado_entrada_vigor.mp3",
+          "modelAnswer": "El histórico acuerdo fue firmado y se prevé su entrada en vigor el próximo mes."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "قواعد المبني للمجهول في الصحافة الإسبانية"
+    ]
+  }
+}

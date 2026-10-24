@@ -1,0 +1,411 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-comparativos-igualdad",
+    "unitSlug": "a2-u4-comparisons",
+    "levelCode": "A2",
+    "titleAr": "مقارنة التساوي: Tan... como مع الصفات و Tanto... como مع الأسماء",
+    "titleEs": "Los comparativos de igualdad",
+    "subtitleAr": "التمييز الدقيق بين tan (للصفات والظروف) و tanto/a/os/as (للأسماء والكميات)",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطبق المتعلم مقارنة التساوي مع الصفات والظروف: tan + صفة + como.",
+        "أن يطبق مقارنة التساوي مع الأسماء والكميات: tanto/tanta/tantos/tantas + اسم + como مع مطابقة الجنس والعدد.",
+        "أن يستخدم التساوي مع الأفعال: فعل + tanto como (Trabaja tanto como tú)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الفرق بين Tan و Tanto في التساوي",
+          "explanationAr": "1. مع الصفات والظروف نستخدم **tan** الثابتة (بدون تغيير):\n- Juan es **tan alto como** su padre (خوان طويل مثل والده).\n2. مع الأسماء نستخدم **tanto/a/os/as** وتتطابق مع الاسم في التذكير والتأنيث والجمع:\n- Tengo **tanto dinero como** tú (عندي نفس القدر من المال مثلك - مفرد مذكر).\n- Tiene **tanta paciencia como** su madre (لديها نفس الصبر مثل والدتها - مفرد مؤنث).\n- Hay **tantos coches como** ayer (يوجد نفس عدد السيارات مثل الأمس - جمع مذكر).\n3. بعد الفعل مباشرة نستخدم **tanto como** الثابتة: Estudia tanto como yo (يدرس بقدر ما أدرس)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام tanto مع الصفات (مثل قول *tanto alto como*؛ الصواب: tan alto como).",
+        "عدم مطابقة tanto مع الاسم المؤنث أو الجمع (مثل قول *tanto casas como* بدلاً من tantas casas como)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أحمد شاطر زي كريم، وعنده كتب قد اللي عندي». في الإسبانية: Ahmed es tan inteligente como Karim, y tiene tantos libros como yo."
+        }
+      ],
+      "culturalNoteAr": "الإسبان يستخدمون عبارة «igual de... que» كبديل شائع جداً في الحديث اليومي لـ «tan... como» (مثل: Es igual de caro que el otro)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-comparativos-igualdad-intro",
+        "type": "explanation",
+        "titleAr": "صيغ التساوي",
+        "bodyAr": "القواعد الأساسية للتساوي:\n- **tan + صفة + como**: بنفس قدر (الصفة)\n- **tanto/a/os/as + اسم + como**: بنفس الكمية والعدد\n- **igual**: متطابق / متساوٍ\n- **parecido**: شبيه / متشابه\n- **la cantidad**: الكمية / المقدار",
+        "examples": [
+          {
+            "es": "El piso es tan luminoso como el tuyo.",
+            "ar": "الشقة مضيئة تماماً مثل شقتك."
+          },
+          {
+            "es": "Tengo tantos libros como tú.",
+            "ar": "لدي نفس عدد الكتب مثلك."
+          },
+          {
+            "es": "Los dos precios son parecidos.",
+            "ar": "السعران متشابهان."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "tan",
+      "como",
+      "tanto",
+      "igual",
+      "parecido",
+      "cantidad"
+    ],
+    "reviewVocabulary": [
+      "caro",
+      "barato"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يطبق المتعلم مقارنة التساوي مع الصفات والظروف: tan + صفة + como.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-igu-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة المناسبة لمقارنة التساوي مع صفة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الأداة المستخدمة للتساوي قبل الصفة caro؟",
+        "stemEs": "Este restaurante es _____ caro como el del centro.",
+        "stemAr": "هذا المطعم غالٍ تماماً مثل مطعم وسط المدينة.",
+        "options": [
+          {
+            "id": "ex-a2-igu-1_a",
+            "text": "tan",
+            "textAr": "تأتي قبل الصفات والظروف (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-igu-1_b",
+            "text": "tanto",
+            "textAr": "تأتي قبل الأسماء وليس الصفات",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع الصفات نستخدم tan وليس tanto."
+          },
+          {
+            "id": "ex-a2-igu-1_c",
+            "text": "más",
+            "textAr": "مقارنة تفوق وليست تساوياً",
+            "isCorrect": false,
+            "distractorRationaleAr": "وجود como بعد الصفة يدل على مقارنة التساوي."
+          }
+        ],
+        "targetVocab": [
+          "tan",
+          "como",
+          "caro"
+        ],
+        "explanationAr": "قبل الصفات مثل caro نستخدم دائماً أداة التساوي tan: tan caro como.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-igu-1_a"
+          ],
+          "selectedOptionId": "ex-a2-igu-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-igu-1_b": "مع الصفات نستخدم tan وليس tanto.",
+          "ex-a2-igu-1_c": "وجود como بعد الصفة يدل على مقارنة التساوي."
+        }
+      },
+      {
+        "id": "ex-a2-igu-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "طابق أداة tanto مع الاسم المؤنث الجمع",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة tanto المناسبة لكلمة habitaciones (جمع مؤنث)",
+        "stemEs": "Nuestra casa tiene _____ habitaciones como la tuya.",
+        "stemAr": "بيتنا به نفس عدد الغرف مثل بيتك.",
+        "targetVocab": [
+          "tanto",
+          "como"
+        ],
+        "explanationAr": "كلمة habitaciones جمع مؤنث، فتطابقها أداة التساوي لتصبح tantas.",
+        "answerKey": {
+          "accepted": [
+            "tantas"
+          ],
+          "acceptableAnswers": [
+            "tantas"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-igu-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الوصف الدال على التشابه بين أمرين",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما يتشابه أسلوبا عيش دون تطابق تام، فهما:",
+        "stemEs": "Las dos costumbres son muy _____ en los dos países.",
+        "stemAr": "العادتان ... جداً في البلدين.",
+        "options": [
+          {
+            "id": "ex-a2-igu-3_a",
+            "text": "parecidas",
+            "textAr": "متشابهتان",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-igu-3_b",
+            "text": "cantidad",
+            "textAr": "كمية (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "cantidad اسم ولا يصف العادات هنا."
+          },
+          {
+            "id": "ex-a2-igu-3_c",
+            "text": "tanto",
+            "textAr": "قدر / كم",
+            "isCorrect": false,
+            "distractorRationaleAr": "tanto أداة ولا تصلح كصفة خبرية للجمع المؤنث."
+          }
+        ],
+        "targetVocab": [
+          "parecido",
+          "cantidad",
+          "tanto"
+        ],
+        "explanationAr": "الصفة parecidas تعني متشابهتان وتتطابق مع las dos costumbres.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-igu-3_a"
+          ],
+          "selectedOptionId": "ex-a2-igu-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-igu-3_b": "cantidad اسم ولا يصف العادات هنا.",
+          "ex-a2-igu-3_c": "tanto أداة ولا تصلح كصفة خبرية للجمع المؤنث."
+        }
+      },
+      {
+        "id": "ex-a2-igu-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن التساوي في العمل والجهد",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-igu-4_t1",
+            "kind": "token",
+            "text": "Mi"
+          },
+          {
+            "id": "ex-a2-igu-4_t2",
+            "kind": "token",
+            "text": "amigo"
+          },
+          {
+            "id": "ex-a2-igu-4_t3",
+            "kind": "token",
+            "text": "trabaja"
+          },
+          {
+            "id": "ex-a2-igu-4_t4",
+            "kind": "token",
+            "text": "tanto"
+          },
+          {
+            "id": "ex-a2-igu-4_t5",
+            "kind": "token",
+            "text": "como"
+          },
+          {
+            "id": "ex-a2-igu-4_t6",
+            "kind": "token",
+            "text": "yo"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mi amigo trabaja tanto como yo"
+          ],
+          "tokenOrder": [
+            "ex-a2-igu-4_t1",
+            "ex-a2-igu-4_t2",
+            "ex-a2-igu-4_t3",
+            "ex-a2-igu-4_t4",
+            "ex-a2-igu-4_t5",
+            "ex-a2-igu-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل Mi amigo ثم الفعل trabaja ثم صيغة التساوي بعد الأفعال tanto como ثم الضمير yo.",
+        "targetVocab": [
+          "tanto",
+          "como"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-igu-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد مقارنة السعر بين التذكرتين",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما قاله المتحدث عن الأسعار",
+        "stemEs": "El billete de tren es tan barato como el de autobús.",
+        "stemAr": "تذكرة القطار رخيصة تماماً مثل تذكرة الحافلة.",
+        "options": [
+          {
+            "id": "ex-a2-igu-5_a",
+            "text": "tan",
+            "textAr": "متساويان في الرخص",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-igu-5_b",
+            "text": "más",
+            "textAr": "أكثر رخصاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم tan... como للتساوي."
+          },
+          {
+            "id": "ex-a2-igu-5_c",
+            "text": "menos",
+            "textAr": "أقل",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة تفيد التساوي وليس التفوق أو النقصان."
+          }
+        ],
+        "targetVocab": [
+          "tan",
+          "como",
+          "barato"
+        ],
+        "explanationAr": "المتحدث قال: tan barato como.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_tan_barato_como.mp3",
+        "speechEs": "El billete de tren es tan barato como el de autobús.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-igu-5_a"
+          ],
+          "selectedOptionId": "ex-a2-igu-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-igu-5_b": "المتحدث استخدم tan... como للتساوي.",
+          "ex-a2-igu-5_c": "الجملة تفيد التساوي وليس التفوق أو النقصان."
+        }
+      },
+      {
+        "id": "ex-a2-igu-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة التساوي في جودة الفندقين",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأن هذا الفندق ممتاز تماماً مثل الفندق الآخر",
+        "stemEs": "Este hotel es tan bueno como el otro.",
+        "stemAr": "هذا الفندق ممتاز مثل الآخر تماماً.",
+        "audioKey": "pending/a2_tan_bueno_como.mp3",
+        "targetVocab": [
+          "tan",
+          "como"
+        ],
+        "explanationAr": "انتبه لنطق حرف b في bueno كـ صوت شفوي رقيق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_tan_bueno_como.mp3",
+          "modelAnswer": "Este hotel es tan bueno como el otro."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "الفرق بين Tan و Tanto في التساوي"
+    ]
+  }
+}

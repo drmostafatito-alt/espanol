@@ -1,17 +1,38 @@
 /**
- * محوّل D1 → SQLite (better-sqlite3) للاختبارات المحلية في Node.
- *
- * ⚠️ لماذا يوجد هذا الملف؟
- *   wrangler 4 يتطلب Node ≥ 22 والبيئة الحالية Node 20.20. لذلك تُختبر نفس دالة
- *   `worker.fetch` في Node عبر محوّل يحاكي واجهة D1: prepare/bind/first/all/run/batch/exec.
- *   هذا **اختلاف بيئة موثّق**، ولا يُغني عن smoke test على workerd/D1 حقيقي قبل النشر
- *   (المرحلة 2+). انظر docs/11_TESTING.md §7.
+ * محوّل D1 → SQLite للاختبارات المحلية في Node.
+ * يدعم node:sqlite المدمج في Node 22+ كخيار أصيل بلا اعتماديات native compilations،
+ * مع دعم بديل لـ better-sqlite3.
  */
-import Database from 'better-sqlite3';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { D1Database, D1PreparedStatement, D1Result } from '../types';
+
+let SqliteDatabase: any;
+
+// ملاحظة مهمة — لا تعيد كتابة السطر التالي بصيغة import('node:sqlite') حرفية:
+// محلل Vite الساكن في بيئة اختبارات jsdom سيحاول تحزيمها ويفشل على Node 22،
+// لأن node:sqlite ليست في builtinModules هناك رغم أن الاستيراد يعمل وقت التشغيل.
+// المواصفة المحسوبة تُبقي الاستيراد runtime-only في Node، حيث يعمل فعلًا.
+const NODE_SQLITE_SPEC = ['node', 'sqlite'].join(':');
+
+try {
+  const nodeSqlite = await import(NODE_SQLITE_SPEC);
+  if (nodeSqlite && nodeSqlite.DatabaseSync) {
+    SqliteDatabase = nodeSqlite.DatabaseSync;
+  }
+} catch {
+  // fallback below
+}
+
+if (!SqliteDatabase) {
+  try {
+    const bSqlite = await import(/* @vite-ignore */ 'better-sqlite3');
+    SqliteDatabase = bSqlite.default || bSqlite;
+  } catch {
+    throw new Error('تعذر تحميل أي محرك SQLite (node:sqlite أو better-sqlite3)');
+  }
+}
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
@@ -25,7 +46,7 @@ function norm(values: unknown[]): unknown[] {
 }
 
 class Stmt implements D1PreparedStatement {
-  constructor(private db: Database.Database, private sql: string, private args: unknown[] = []) {}
+  constructor(private db: any, private sql: string, private args: unknown[] = []) {}
 
   bind(...values: unknown[]): D1PreparedStatement {
     return new Stmt(this.db, this.sql, norm(values));
@@ -33,13 +54,14 @@ class Stmt implements D1PreparedStatement {
 
   /** تنفيذ متزامن (يُستخدم داخل المعاملات) */
   execSync<T = unknown>(): D1Result<T> {
+    const isReader = /^\s*(SELECT|PRAGMA|WITH)\b/i.test(this.sql);
     const stmt = this.db.prepare(this.sql);
-    if (stmt.reader) {
+    if (isReader || (stmt.reader ?? false)) {
       const rows = stmt.all(...(this.args as [])) as T[];
       return { results: rows, success: true, meta: { duration: 0 } };
     }
     const info = stmt.run(...(this.args as []));
-    return { results: [], success: true, meta: { changes: info.changes, last_row_id: Number(info.lastInsertRowid) } };
+    return { results: [], success: true, meta: { changes: info.changes ?? 0, last_row_id: Number(info.lastInsertRowid ?? 0) } };
   }
 
   async first<T = unknown>(colName?: string): Promise<T | null> {
@@ -58,7 +80,7 @@ class Stmt implements D1PreparedStatement {
 }
 
 export class D1Sqlite implements D1Database {
-  constructor(private db: Database.Database) {}
+  constructor(private db: any) {}
 
   prepare(query: string): D1PreparedStatement {
     return new Stmt(this.db, query);
@@ -66,10 +88,21 @@ export class D1Sqlite implements D1Database {
 
   async batch<T = unknown>(statements: D1PreparedStatement[]): Promise<D1Result<T>[]> {
     const out: D1Result<T>[] = [];
-    const tx = this.db.transaction(() => {
-      for (const s of statements) out.push((s as Stmt).execSync<T>());
-    });
-    tx();
+    if (typeof this.db.transaction === 'function') {
+      const tx = this.db.transaction(() => {
+        for (const s of statements) out.push((s as Stmt).execSync<T>());
+      });
+      tx();
+    } else {
+      this.db.exec('BEGIN');
+      try {
+        for (const s of statements) out.push((s as Stmt).execSync<T>());
+        this.db.exec('COMMIT');
+      } catch (e) {
+        this.db.exec('ROLLBACK');
+        throw e;
+      }
+    }
     return out;
   }
 
@@ -79,12 +112,17 @@ export class D1Sqlite implements D1Database {
   }
 }
 
-export interface TestDb { d1: D1Database; raw: Database.Database }
+export interface TestDb { d1: D1Database; raw: any }
 
 /** قاعدة في الذاكرة مع كل الترحيلات مطبقة */
 export function createTestDb(): TestDb {
-  const raw = new Database(':memory:');
-  raw.pragma('foreign_keys = ON');
+  const raw = new SqliteDatabase(':memory:');
+  if (typeof raw.pragma === 'function') {
+    raw.pragma('foreign_keys = ON');
+  } else {
+    raw.exec('PRAGMA foreign_keys = ON;');
+    raw.pragma = (str: string) => raw.exec(`PRAGMA ${str};`);
+  }
   const dir = join(ROOT, 'db', 'migrations');
   const files = existsSync(dir) ? readdirSync(dir).filter(f => f.endsWith('.sql')).sort() : [];
   if (!files.length) throw new Error('لا توجد ملفات ترحيل في db/migrations');

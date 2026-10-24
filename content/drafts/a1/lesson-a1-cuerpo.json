@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-cuerpo",
+    "unitSlug": "a1-u10-health-basics",
+    "levelCode": "A1",
+    "titleAr": "أعضاء الجسم الأساسية: أسماء الأعضاء والتذكير والتأنيث",
+    "titleEs": "El cuerpo humano",
+    "subtitleAr": "تعلم أجزاء الجسم واستخدام أداة التعريف بدلاً من صفات الملكية",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسمّي المتعلم أعضاء الجسم الرئيسية بدقة مع تمييز جنس كل عضو.",
+        "أن يلاحظ أن كلمة la mano مؤنثة رغم نهايتها بحرف o.",
+        "أن يطبق القاعدة الإسبانية في استخدام أداة التعريف مع أجزاء الجسم بدلاً من صفات الملكية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أدوات التعريف مع أجزاء الجسم وشذوذ la mano",
+          "explanationAr": "أعضاء الجسم المذكرة: el ojo (العين / los ojos العيون)، el brazo (الذراع)، el estómago (المعدة)، el cuerpo (الجسم). الأعضاء المؤنثة: la cabeza (الرأس)، la pierna (الساق)، la espalda (الظهر). انتبه استثناءً هاماً: كلمة **la mano** (اليد) تنتهي بحرف o لكنها كلمة مؤنثة تماماً (la mano / las manos). قاعدة أسلوبية هامة: في الإسبانية نستخدم أداة التعريف مع أعضاء الجسم عند الحركة أو الوصف الطبي وليس صفة الملكية (Me lavo las manos = أغسل يديّ، وليس *mis manos*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "اعتبار la mano مذكرة بسبب نهايتها بـ o وكتابة *el mano* (خطأ فادح؛ الصحيح: la mano).",
+        "استخدام صفات الملكية mi / mis مع أجزاء الجسم بتأثير العربية أو الإنجليزية (مثل قول *me duele mi cabeza* بدلاً من me duele la cabeza)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «راسي، ضهري، عينيّ، بطني». في الإسبانية نضع أداة التعريف: la cabeza, la espalda, los ojos, el estómago."
+        }
+      ],
+      "culturalNoteAr": "عند الذهاب للطبيب في إسبانيا، سيطلب منك فحص أجزاء الجسم مستخدماً أداة التعريف: «Abra la boca» (افتح الفم) أو «Levante el brazo» (ارفع الذراع)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-cuerpo-intro",
+        "type": "explanation",
+        "titleAr": "أجزاء الجسم البشري",
+        "bodyAr": "أهم أعضاء الجسم التي يحتاجها المتعلم في المواقف اليومية والطبية:\n- **la cabeza**: الرأس\n- **el ojo / los ojos**: العين / العيون\n- **el brazo**: الذراع\n- **la pierna**: الساق / الرِّجل\n- **la espalda**: الظهر\n- **la mano**: اليد (مؤنثة!)\n- **el estómago**: المعدة / البطن\n- **el cuerpo**: الجسم كاملاً",
+        "examples": [
+          {
+            "es": "Me lavo las manos con jabón.",
+            "ar": "أغسل يديّ بالصابون."
+          },
+          {
+            "es": "Tiene los ojos verdes.",
+            "ar": "لديه عينان خضراوان."
+          },
+          {
+            "es": "El ejercicio es bueno para el cuerpo.",
+            "ar": "الرياضة مفيدة للجسم."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "cabeza",
+      "ojo",
+      "brazo",
+      "pierna",
+      "espalda",
+      "mano",
+      "estómago",
+      "cuerpo"
+    ],
+    "reviewVocabulary": [
+      "médico"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الرئيسية بدقة مع تمييز جنس كل عضو.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-cue-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر أداة التعريف الصحيحة لكلمة mano",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كلمة mano من الاستثناءات الشهيرة في الإسبانية، ما هي أداتها الصحيحة؟",
+        "stemEs": "Levanta _____ mano derecha, por favor.",
+        "stemAr": "ارفع اليد اليمنى من فضلك.",
+        "options": [
+          {
+            "id": "ex-a1-cue-1_o1",
+            "text": "la",
+            "textAr": "أداة التعريف للمؤنث (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-cue-1_o2",
+            "text": "el",
+            "textAr": "أداة التعريف للمذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "mano كلمة مؤنثة شاذة عن القاعدة ولا تأخذ el."
+          },
+          {
+            "id": "ex-a1-cue-1_o3",
+            "text": "los",
+            "textAr": "أداة الجمع المذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "mano اسم مفرد مؤنث."
+          }
+        ],
+        "targetVocab": [
+          "mano"
+        ],
+        "explanationAr": "كلمة mano مؤنثة شاذة عن القاعدة العامة، وتأخذ دائماً la mano.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-cue-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-cue-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-cue-1_o2": "mano كلمة مؤنثة شاذة عن القاعدة ولا تأخذ el.",
+          "ex-a1-cue-1_o3": "mano اسم مفرد مؤنث."
+        }
+      },
+      {
+        "id": "ex-a1-cue-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة لـ 'الرأس'",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'الرأس' بالإسبانية (بدون أداة)",
+        "stemEs": "Protege la _____ con un casco.",
+        "stemAr": "احمِ الرأس بخوذة.",
+        "targetVocab": [
+          "cabeza"
+        ],
+        "explanationAr": "كلمة cabeza تعني الرأس وهي مؤنثة (la cabeza).",
+        "answerKey": {
+          "accepted": [
+            "cabeza"
+          ],
+          "acceptableAnswers": [
+            "cabeza"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-cue-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العضو المسؤول عن الرؤية بصيغة الجمع",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو العضو الذي نرى به؟",
+        "stemEs": "Tiene los _____ muy cansados hoy.",
+        "stemAr": "عيناه متعبتان جداً اليوم.",
+        "options": [
+          {
+            "id": "ex-a1-cue-3_o1",
+            "text": "ojos",
+            "textAr": "عيون",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-cue-3_o2",
+            "text": "brazos",
+            "textAr": "أذرع",
+            "isCorrect": false,
+            "distractorRationaleAr": "brazos تعني أذرع وليس عيون."
+          },
+          {
+            "id": "ex-a1-cue-3_o3",
+            "text": "piernas",
+            "textAr": "سيقان",
+            "isCorrect": false,
+            "distractorRationaleAr": "piernas تعني أرجل أو سيقان."
+          }
+        ],
+        "targetVocab": [
+          "ojo",
+          "brazo",
+          "pierna"
+        ],
+        "explanationAr": "كلمة ojos هي جمع ojo وتعني العيون.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-cue-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-cue-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-cue-3_o2": "brazos تعني أذرع وليس عيون.",
+          "ex-a1-cue-3_o3": "piernas تعني أرجل أو سيقان."
+        }
+      },
+      {
+        "id": "ex-a1-cue-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتوضيح فائدة الرياضة للجسم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-cue-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a1-cue-4_t2",
+            "kind": "token",
+            "text": "deporte"
+          },
+          {
+            "id": "ex-a1-cue-4_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a1-cue-4_t4",
+            "kind": "token",
+            "text": "bueno"
+          },
+          {
+            "id": "ex-a1-cue-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-a1-cue-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a1-cue-4_t7",
+            "kind": "token",
+            "text": "cuerpo"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El deporte es bueno para el cuerpo"
+          ],
+          "tokenOrder": [
+            "ex-a1-cue-4_t1",
+            "ex-a1-cue-4_t2",
+            "ex-a1-cue-4_t3",
+            "ex-a1-cue-4_t4",
+            "ex-a1-cue-4_t5",
+            "ex-a1-cue-4_t6",
+            "ex-a1-cue-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل El deporte ثم الفعل es والصفة bueno ثم حرف الجر para والمجرور el cuerpo.",
+        "targetVocab": [
+          "cuerpo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-cue-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجزء المصاب من الجسم",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشكوى المريض وحدد الجزء الذي يذكره",
+        "stemEs": "Tengo un dolor fuerte en la espalda.",
+        "stemAr": "لدي ألم شديد في الظهر.",
+        "options": [
+          {
+            "id": "ex-a1-cue-5_o1",
+            "text": "espalda",
+            "textAr": "ظهر",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-cue-5_o2",
+            "text": "estómago",
+            "textAr": "معدة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ذكر espalda وليس estómago."
+          },
+          {
+            "id": "ex-a1-cue-5_o3",
+            "text": "pierna",
+            "textAr": "ساق",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث اشتكى من ظهره وليس ساقه."
+          }
+        ],
+        "targetVocab": [
+          "espalda",
+          "estómago",
+          "pierna"
+        ],
+        "explanationAr": "المتحدث قال: dolor fuerte en la espalda.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_dolor_espalda.mp3",
+        "speechEs": "Tengo un dolor fuerte en la espalda.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-cue-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-cue-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-cue-5_o2": "المتحدث ذكر espalda وليس estómago.",
+          "ex-a1-cue-5_o3": "المتحدث اشتكى من ظهره وليس ساقه."
+        }
+      },
+      {
+        "id": "ex-a1-cue-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق العبارة الخاصة بفحص الطبيب للذراع",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق جملة الفحص الطبي للذراع بوضوح",
+        "stemEs": "El médico examina el brazo derecho.",
+        "stemAr": "الطبيب يفحص الذراع اليمنى.",
+        "audioKey": "pending/a1_medico_brazo.mp3",
+        "targetVocab": [
+          "médico",
+          "brazo"
+        ],
+        "explanationAr": "احرص على نطق حرف z كـ ثاء في brazo في إسبانيا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_medico_brazo.mp3",
+          "modelAnswer": "El médico examina el brazo derecho."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "أدوات التعريف مع أجزاء الجسم وشذوذ la mano"
+    ]
+  }
+}

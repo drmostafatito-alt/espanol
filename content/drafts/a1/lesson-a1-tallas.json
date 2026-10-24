@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-tallas",
+    "titleAr": "المقاسات والتجربة: السؤال عن القياس وغرفة القياس",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u5-shopping",
+    "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة ويطلب تجربة الملابس في غرفة القياس (¿Puedo probármelo?).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "vocabulary",
+      "reading",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "ropa",
+      "camisa",
+      "pantalón",
+      "zapato",
+      "blanco",
+      "negro",
+      "necesitar"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "bueno",
+      "tres"
+    ],
+    "targetStructures": [
+      "¿Qué talla tiene? — Uso la talla mediana (M).",
+      "¿Tiene una talla más grande o más pequeña?",
+      "¿Dónde están los probadores? — Al fondo a la derecha."
+    ],
+    "grammarTopics": [
+      "vocabulario-tallas",
+      "comparativos-grande-pequeno",
+      "pedir-probarse"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "سامي يجرب قميصاً في محل ملابس ويطلب من الموظف مقاساً أكبر.",
+        "settingAr": "غرفة القياس في متجر ملابس",
+        "lines": [
+          {
+            "es": "Perdón, esta camisa me queda un poco pequeña.",
+            "ar": "معذرة، هذا القميص ضيق عليّ قليلاً.",
+            "arEg": "لو سمحت، القميص ده ضيق عليا شوية.",
+            "audioKey": "pending/a1-tal-sc-1"
+          },
+          {
+            "es": "¿Qué talla lleva usted?",
+            "ar": "ما هو مقاس حضرتك؟",
+            "arEg": "مقاس حضرتك إيه؟",
+            "audioKey": "pending/a1-tal-sc-2"
+          },
+          {
+            "es": "Llevo la talla mediana, necesito una talla más grande.",
+            "ar": "أرتدي المقاس المتوسط، أحتاج مقاساً أكبر.",
+            "arEg": "بلبس مقاس وسط، محتاج مقاس أكبر.",
+            "audioKey": "pending/a1-tal-sc-3"
+          },
+          {
+            "es": "Un momento, voy a buscar la talla grande en el almacén.",
+            "ar": "لحظة واحدة، سأبحث عن المقاس الكبير في المخزن.",
+            "arEg": "لحظة واحدة، هشوف المقاس الكبير في المخزن.",
+            "audioKey": "pending/a1-tal-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "المقاسات في إسبانيا للملابس يُشار إليها بالحروف: S (pequeña), M (mediana), L (grande), XL (extragrande). وللأحذية يُستخدم رقم القياس الأوروبي (مثل: talla 42). وغرفة القياس تُسمى 'el probador' (وجمعها los probadores).",
+    "pedagogicalRationaleAr": "المتعلم العربي يحتاج إلى التمييز بين talla للملابس والأحذية وnúmero للأرقام العامة، واستخدام تعبير me queda bien / me queda pequeño لوصف ملاءمة القطعة للجسد.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_tal_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمقاس المطلوب وحدد الحرف المطابق له.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للزبون وهو يطلب مقاسه:",
+        "stemEs": "Disculpe, necesito probarme esta camisa en talla mediana.",
+        "stemAr": "عفواً، أحتاج تجربة هذا القميص في المقاس المتوسط.",
+        "options": [
+          {
+            "id": "a1_tal_1_a",
+            "text": "Talla M (mediana)",
+            "textAr": "المقاس المتوسط M",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_tal_1_b",
+            "text": "Talla S (pequeña)",
+            "textAr": "المقاس الصغير S",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر mediana وليس pequeña."
+          },
+          {
+            "id": "a1_tal_1_c",
+            "text": "Talla L (grande)",
+            "textAr": "المقاس الكبير L",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت طلب المقاس المتوسط M."
+          }
+        ],
+        "targetVocab": [
+          "camisa",
+          "necesitar",
+          "ropa"
+        ],
+        "explanationAr": "المقاس المطلوب هو talla mediana أي المقاس M.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-tal-ex-1",
+        "speechEs": "Disculpe, necesito probarme esta camisa en talla mediana.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_tal_1_a"
+          ],
+          "selectedOptionId": "a1_tal_1_a"
+        },
+        "errorFeedback": {
+          "a1_tal_1_b": "الصوت ذكر mediana وليس pequeña.",
+          "a1_tal_1_c": "الصوت طلب المقاس المتوسط M."
+        }
+      },
+      {
+        "id": "a1_tal_2_bigger",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف تطلب مقاساً أكبر عندما تكون القطعة ضيقة؟",
+        "skills": [
+          "speaking",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما يكون القميص صغيراً وتريد مقاساً أكبر، تقول:",
+        "stemEs": "¿Tiene una talla más ____, por favor?",
+        "stemAr": "هل لديك مقاس ____، من فضلك؟",
+        "options": [
+          {
+            "id": "a1_tal_2_a",
+            "text": "grande",
+            "textAr": "أكبر",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_tal_2_b",
+            "text": "pequeña",
+            "textAr": "أصغر",
+            "isCorrect": false,
+            "distractorRationaleAr": "إذا كان صغيراً فأنت بحاجة لمقاس أكبر (grande) وليس أصغر."
+          },
+          {
+            "id": "a1_tal_2_c",
+            "text": "blanca",
+            "textAr": "بيضاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا لون وليس مقاساً."
+          }
+        ],
+        "targetVocab": [
+          "ropa",
+          "camisa"
+        ],
+        "explanationAr": "لطلب مقاس أكبر نقول: una talla más grande.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_tal_2_a"
+          ],
+          "selectedOptionId": "a1_tal_2_a"
+        },
+        "errorFeedback": {
+          "a1_tal_2_b": "إذا كان صغيراً فأنت بحاجة لمقاس أكبر (grande) وليس أصغر.",
+          "a1_tal_2_c": "هذا لون وليس مقاساً."
+        }
+      },
+      {
+        "id": "a1_tal_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة الملابس العامة بالإسبانية.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (ropa) في الفراغ:",
+        "stemEs": "En esta tienda hay ____ muy bonita.",
+        "stemAr": "في هذا المتجر توجد ____ جميلة جداً.",
+        "targetVocab": [
+          "ropa"
+        ],
+        "explanationAr": "كلمة ملابس في الإسبانية هي ropa وهي اسم مفرد مؤنث جامع.",
+        "answerKey": {
+          "accepted": [
+            "ropa"
+          ],
+          "acceptableAnswers": [
+            "ropa"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_tal_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب السؤال للسؤال عن مكان غرف القياس.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_tal_4_order_t1",
+            "kind": "token",
+            "text": "¿Dónde"
+          },
+          {
+            "id": "a1_tal_4_order_t2",
+            "kind": "token",
+            "text": "están"
+          },
+          {
+            "id": "a1_tal_4_order_t3",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "a1_tal_4_order_t4",
+            "kind": "token",
+            "text": "probadores,"
+          },
+          {
+            "id": "a1_tal_4_order_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "a1_tal_4_order_t6",
+            "kind": "token",
+            "text": "favor?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Dónde están los probadores, por favor?"
+          ],
+          "tokenOrder": [
+            "a1_tal_4_order_t1",
+            "a1_tal_4_order_t2",
+            "a1_tal_4_order_t3",
+            "a1_tal_4_order_t4",
+            "a1_tal_4_order_t5",
+            "a1_tal_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي للسؤال: أداة الاستفهام ¿Dónde + فعل الكينونة están + الفاعل los probadores + عبارة التأدب por favor?",
+        "targetVocab": [
+          "ropa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_tal_5_shoes",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الرقم المستخدم للسؤال عن قياس الأحذية؟",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "للسؤال عن قياس الحذاء، نستخدم كلمة número أو talla:",
+        "stemEs": "¿Qué ____ de zapatos calza usted?",
+        "stemAr": "ما هو ____ حذاء حضرتك؟",
+        "options": [
+          {
+            "id": "a1_tal_5_a",
+            "text": "número",
+            "textAr": "رقم المقاس",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_tal_5_b",
+            "text": "color",
+            "textAr": "لون",
+            "isCorrect": false,
+            "distractorRationaleAr": "السؤال هنا عن المقاس وليس اللون."
+          },
+          {
+            "id": "a1_tal_5_c",
+            "text": "camisa",
+            "textAr": "قميص",
+            "isCorrect": false,
+            "distractorRationaleAr": "سياق الجملة عن الأحذية zapatos."
+          }
+        ],
+        "targetVocab": [
+          "zapato"
+        ],
+        "explanationAr": "مع الأحذية يُستخدم تعبير número de zapato أو talla.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_tal_5_a"
+          ],
+          "selectedOptionId": "a1_tal_5_a"
+        },
+        "errorFeedback": {
+          "a1_tal_5_b": "السؤال هنا عن المقاس وليس اللون.",
+          "a1_tal_5_c": "سياق الجملة عن الأحذية zapatos."
+        }
+      },
+      {
+        "id": "a1_tal_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلب تجربة الملابس بنبرة مهذبة.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح ونبرة مؤدبة:",
+        "stemEs": "¿Puedo probarme este pantalón en el probador?",
+        "stemAr": "هل يمكنني تجربة هذا البنطال في غرفة القياس؟",
+        "audioKey": "pending/a1-tal-ex-6",
+        "targetVocab": [
+          "pantalón",
+          "ropa"
+        ],
+        "explanationAr": "انتبه لنطق حرف p المشدود في pro-bar-me وحرف b المرقق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-tal-ex-6",
+          "modelAnswer": "¿Puedo probarme este pantalón en el probador?"
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

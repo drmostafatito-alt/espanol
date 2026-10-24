@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-anecdotas-viaje",
+    "titleAr": "المواقف الطارئة وعقبات السفر: رواية المشكلات وحلها في الماضي",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u1-travel",
+    "objectiveAr": "أن يروي المتعلم موقفًا طارئًا أو مشكلة واجهته أثناء السفر (كتأخر رحلة أو فقدان حقيبة) ويوضح كيف تم حلها مستخدمًا الماضي البسيط وروابط التتابع.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "reading",
+      "listening",
+      "speaking",
+      "writing",
+      "vocabulary",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "problema",
+      "maleta",
+      "retraso",
+      "perder",
+      "encontrar",
+      "suerte",
+      "vuelo",
+      "viaje"
+    ],
+    "reviewVocabulary": [
+      "hotel",
+      "ayer",
+      "hora",
+      "aeropuerto"
+    ],
+    "targetStructures": [
+      "El vuelo tuvo un retraso de dos horas.",
+      "Perdí mi maleta en el aeropuerto pero la encontré al final.",
+      "Por suerte todo se solucionó rápidamente."
+    ],
+    "grammarTopics": [
+      "indefinido-irregular-tener",
+      "marcadores-remedio-al-final"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "سالي تروي لصديقتها في الجامعة عن مفارقة غير متوقعة حدثت لها في مطار مدريد أثناء رحلتها الأخيرة.",
+        "settingAr": "كافتيريا الجامعة بعد عطلة الربيع",
+        "lines": [
+          {
+            "es": "¿Tuviste algún problema durante tu viaje a Madrid?",
+            "ar": "هل واجهتِ أي مشكلة أثناء رحلتكِ إلى مدريد؟",
+            "arEg": "حصلتلك أي مشكلة في رحلتك لمدريد؟",
+            "audioKey": "pending/a2-anecdota-sc-1"
+          },
+          {
+            "es": "Sí, nuestro vuelo tuvo un retraso y casi perdí mi maleta.",
+            "ar": "نعم، تأخرت رحلتنا الجوية وكدتُ أفقد حقيبتي.",
+            "arEg": "أيوة، طيارتنا اتأخرت وكنت هضيع شنطتي تقريبًا.",
+            "audioKey": "pending/a2-anecdota-sc-2"
+          },
+          {
+            "es": "¡Qué susto! ¿Y cómo la encontraste después?",
+            "ar": "يا للهول! وكيف عثرتِ عليها بعد ذلك؟",
+            "arEg": "يا ساتر! ولقيتيها إزاي بعد كده؟",
+            "audioKey": "pending/a2-anecdota-sc-3"
+          },
+          {
+            "es": "Por suerte, el personal del aeropuerto fue muy amable y la encontré en una hora.",
+            "ar": "لحسن الحظ، كان موظفو المطار لطفاء للغاية وعثرتُ عليها خلال ساعة.",
+            "arEg": "لحسن الحظ، موظفين المطار كانوا كويسين جدًا ولقيتها في ساعة.",
+            "audioKey": "pending/a2-anecdota-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_anec_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سالي واختر المشكلة التي واجهتها الرحلة الجوية.",
+        "audioKey": "pending/a2-anecdota-sc-2",
+        "speechEs": "Sí, nuestro vuelo tuvo un retraso y casi perdí mi maleta.",
+        "options": [
+          {
+            "id": "a2_anec_1_a",
+            "text": "Un retraso en el vuelo",
+            "isCorrect": true,
+            "textAr": "تأخر في الرحلة الجوية"
+          },
+          {
+            "id": "a2_anec_1_b",
+            "text": "Cancelación total",
+            "isCorrect": false,
+            "textAr": "إلغاء كامل للرحلة",
+            "distractorRationaleAr": "لم تُلغ الرحلة بل تأخرت فقط (un retraso)."
+          },
+          {
+            "id": "a2_anec_1_c",
+            "text": "Accidente de tráfico",
+            "isCorrect": false,
+            "textAr": "حادث مروري",
+            "distractorRationaleAr": "الحديث كان عن رحلة طيران وليس حادث سيارة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_anec_1_a"
+          ]
+        },
+        "explanationAr": "المتحدثة قالت بوضوح: «nuestro vuelo tuvo un retraso» أي تأخرت الرحلة.",
+        "errorFeedback": {
+          "a2_anec_1_b": "الرحلة تأخرت ولم تُلغَ بالكامل.",
+          "a2_anec_1_c": "لم يكن هناك حادث مروري بل تأخر طيران."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "vuelo",
+          "retraso"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_anec_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر العبارة الدالة على الفرج وحسن الطالع لتقديم حل المشكلة.",
+        "stemEs": "____, encontré mi maleta en el aeropuerto.",
+        "stemAr": "____، عثرتُ على حقيبتي في المطار.",
+        "options": [
+          {
+            "id": "a2_anec_2_a",
+            "text": "Por suerte",
+            "isCorrect": true,
+            "textAr": "لحسن الحظ"
+          },
+          {
+            "id": "a2_anec_2_b",
+            "text": "Por desgracia",
+            "isCorrect": false,
+            "textAr": "لسوء الحظ",
+            "distractorRationaleAr": "Por desgracia تعني لسوء الحظ وتتعارض مع العثور على الحقيبة بنجاح."
+          },
+          {
+            "id": "a2_anec_2_c",
+            "text": "Nunca jamás",
+            "isCorrect": false,
+            "textAr": "أبدًا على الإطلاق",
+            "distractorRationaleAr": "Nunca jamás نفي قاطع غير مناسب مع إثبات العثور على الحقيبة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_anec_2_a"
+          ]
+        },
+        "explanationAr": "نستخدم «Por suerte» (لحسن الحظ) عندما تنتهي المشكلة بنتيجة إيجابية ومُرضية.",
+        "errorFeedback": {
+          "a2_anec_2_b": "Por desgracia تعني للأسف أو لسوء الحظ.",
+          "a2_anec_2_c": "عبارة نفي لا تناسب سياق الفرج الإيجابي."
+        },
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "suerte",
+          "maleta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_anec_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل «perder» في الماضي البسيط مع ضمير المتكلم (yo).",
+        "stemEs": "Ayer casi ____ el pasaporte en el taxi.",
+        "stemAr": "بالأمس كدتُ ____ جواز السفر في سيارة الأجرة.",
+        "answerKey": {
+          "accepted": [
+            "perdí"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "تصريف أفعال المجموعة الثانية (-er) مثل perder في الماضي البسيط مع yo ينتهي بـ -í: «perdí».",
+        "errorFeedback": {
+          "pierdo": "pierdo مضارع، والمطلوب ماضٍ بسيط بعد Ayer.",
+          "perdía": "perdía ماضٍ مستمر، والحدث هنا لحظي محدد."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "perder"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_anec_4_reply",
+        "type": "word_choice",
+        "instructionAr": "يقول لك صديقك: «Por fin encontré mi maleta perdida». ما هو الرد الطبيعي للتعبير عن الارتياح والتعاطف؟",
+        "stemEs": "Por fin encontré mi maleta perdida.",
+        "stemAr": "أخيرًا عثرتُ على حقيبتي المفقودة.",
+        "options": [
+          {
+            "id": "a2_anec_4_a",
+            "text": "¡Menos mal! Me alegro mucho por ti.",
+            "isCorrect": true,
+            "textAr": "الحمد لله! أنا سعيد جدًا لأجلك."
+          },
+          {
+            "id": "a2_anec_4_b",
+            "text": "El tren sale a las seis.",
+            "isCorrect": false,
+            "textAr": "القطار يغادر في السادسة.",
+            "distractorRationaleAr": "رد آلي لا علاقة له بتعاطف الصديق مع حل المشكلة."
+          },
+          {
+            "id": "a2_anec_4_c",
+            "text": "La cuenta está pagada.",
+            "isCorrect": false,
+            "textAr": "الحساب مدفوع.",
+            "distractorRationaleAr": "عبارة تخص المطاعم أو الفواتير ولا تناسب الموقف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_anec_4_a"
+          ]
+        },
+        "explanationAr": "التعبير الإسباني الشائع للاطمئنان وزوال الهم هو: «¡Menos mal! Me alegro mucho por ti».",
+        "errorFeedback": {
+          "a2_anec_4_b": "الرد لا يعكس أي استجابة عاطفية للخبر السار.",
+          "a2_anec_4_c": "هذه عبارة محاسبة مالية لا صلة لها بالموقف."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "maleta",
+          "encontrar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_anec_5_wordorder",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تصف انتهاء الأزمة بعد انتظار.",
+        "items": [
+          {
+            "id": "a2_anec_t1",
+            "kind": "token",
+            "text": "Al final"
+          },
+          {
+            "id": "a2_anec_t2",
+            "kind": "token",
+            "text": "todo"
+          },
+          {
+            "id": "a2_anec_t3",
+            "kind": "token",
+            "text": "se"
+          },
+          {
+            "id": "a2_anec_t4",
+            "kind": "token",
+            "text": "solucionó"
+          },
+          {
+            "id": "a2_anec_t5",
+            "kind": "token",
+            "text": "bien."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Al final todo se solucionó bien."
+          ],
+          "tokenOrder": [
+            "a2_anec_t1",
+            "a2_anec_t2",
+            "a2_anec_t3",
+            "a2_anec_t4",
+            "a2_anec_t5"
+          ]
+        },
+        "explanationAr": "التركيب السردي: الرابط الزمني Al final (في النهاية) + الفاعل todo + الفعل المبني للمجهول الانعكاسي se solucionó + ظرف الحال bien.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "problema"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_anec_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة وصف تأخر الرحلة بنبرة واضحة ومخارج صوتية دقيقة.",
+        "stemEs": "El vuelo tuvo un retraso de dos horas.",
+        "stemAr": "تأخرت الرحلة الجوية لمدة ساعتين.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-anecdota-speak-1",
+          "modelAnswer": "El vuelo tuvo un retraso de dos horas."
+        },
+        "explanationAr": "احرص على نطق حرف v في «vuelo» كصوت شفتاني قريب من b الخفيفة، والراء المشددة في «retraso».",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "vuelo",
+          "retraso"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق صوت v في vuelo",
+              "weight": 50,
+              "code": "pron_v"
+            },
+            {
+              "labelAr": "نطق الراء المفخمة في retraso",
+              "weight": 50,
+              "code": "pron_rr_retraso"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 2 وEn Vocabulario A1-A2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

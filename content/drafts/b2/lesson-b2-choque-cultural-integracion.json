@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-choque-cultural-integracion",
+    "unitSlug": "b2-u10-culture-deep",
+    "levelCode": "B2",
+    "titleAr": "الصدام الثقافي والاندماج: التكيف والانفتاح على التنوع",
+    "titleEs": "El choque cultural y la integración: Adaptación, interculturalidad y convivencia",
+    "subtitleAr": "مراحل الصدمة الثقافية (choque cultural)، نبذ الصور النمطية، والعيش المشترك",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحلل المتعلم مراحل التكيف مع الثقافة الإسبانية الجديدة وتجاوز الصدمة الثقافية الأولى.",
+        "أن يوظف مصطلحات التفاعل بين الثقافات: choque cultural, desmitificar estereotipos, convivencia armónica, empatía intercultural, aculturación.",
+        "أن يشارك تجارب التنوع والاندماج الإيجابي بلغة منفتحة ومتزنة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب النفسية والاجتماعية لوصف مسار الاندماج الثقافي",
+          "explanationAr": "1. **التعبير عن مراحل الصدمة الثقافية (Fases del choque cultural)**:\n- *Al principio todo es fascinación (fase de luna de miel), luego surge la frustración ante las diferencias*.\n- *Con el tiempo se produce una adaptación paulatina basada en la comprensión recíproca*.\n2. **تفكيك الصور النمطية المسبقة (Desmitificar estereotipos)**:\n- *Es imperativo desmontar los prejuicios que distorsionan la realidad del otro*.\n- *Conocer de cerca la cultura permite superar clichés simplistas*.\n3. **التعبير عن العيش المشترك والتعددية (La convivencia)**:\n- *La verdadera interculturalidad no exige asimilación, sino una convivencia enriquecedora*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام مصطلح *asimilación* (الذوبان والتخلي عن الهوية الأصلية) كمرادف لـ *integración*؛ المفهوم الحديث في إسبانيا هو **la interculturalidad y la convivencia** (الاحتفاظ بالهوية الأصلية مع احترام قيم المجتمع المضيف).",
+        "الاستسلام للتعميمات النمطية حول الشعوب (مثل 'كل الإسبان ينامون القيلولة طوال اليوم' أو 'اللاتينيون لا يلتزمون بالمواعيد')."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في السفر بنقول «في الأول بتنصدم باختلاف العادات ومواعيد الأكل في إسبانيا، بس مع الوقت بتتعود وتفهم وتندمج». بالإسبانية: Al principio experimentas cierto choque cultural con los horarios, pero luego te adaptas y disfrutas de la convivencia."
+        }
+      ],
+      "culturalNoteAr": "إسبانيا تحولت في العقود الثلاثة الأخيرة من بلد مصدر للمهاجرين إلى مجتمع متعدد الثقافات يستقبل ملايين المقيمين من أمريكا اللاتينية وشمال إفريقيا وأوروبا، مما جعل مفهوم 'La Convivencia' ركيزة وطنية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-choque-cultural-integracion-intro",
+        "type": "explanation",
+        "titleAr": "أدوات التكيف والتواصل بين الثقافات",
+        "bodyAr": "المفاهيم السوسيولوجية للاندماج:\n- **el choque cultural**: الصدمة الثقافية والشعور بالارتباك أمام عادات بيئة جديدة\n- **desmitificar estereotipos**: تفكيك الصور النمطية والأحكام المسبقة وإبطالها\n- **la convivencia intercultural**: العيش المشترك والتفاعل الخلّاق بين ثقافات متنوعة\n- **la empatía intercultural**: التعاطف وتفهم وجهة نظر الآخر من منظوره الثقافي الخاص\n- **el cliché**: الكليشيه والفكرة المقولبة والمبتذلة عن شعب أو ثقافة\n- **la adaptación paulatina**: التكيف التدريجي والمتوازن مع المجتمع الجديد",
+        "examples": [
+          {
+            "es": "Superar el choque cultural inicial requiere paciencia, curiosidad y apertura mental.",
+            "ar": "يتطلب تجاوز الصدمة الثقافية الأولية صبراً وفضولاً معرفياً وانفتاحاً ذهنياً."
+          },
+          {
+            "es": "Debemos desmitificar los estereotipos que impiden un diálogo intercultural sincero.",
+            "ar": "ينبغي لنا تفكيك الصور النمطية التي تعوق قيام حوار صادق بين الثقافات."
+          },
+          {
+            "es": "La convivencia pacífica se fundamenta en el respeto a la diversidad y la empatía recíproca.",
+            "ar": "يقوم العيش المشترك السلمي على احترام التنوع والتعاطف المتبادل."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "choque cultural",
+      "desmitificar estereotipos",
+      "convivencia",
+      "empatía intercultural",
+      "cliché",
+      "adaptación paulatina"
+    ],
+    "reviewVocabulary": [
+      "integración",
+      "extranjero"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحلل المتعلم مراحل التكيف مع الثقافة الإسبانية الجديدة وتجاوز الصدمة الثقافية الأولى.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-cci-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح النفسي والاجتماعي الذي يصف الارتباك الأولي للشخص في بيئة وثقافة جديدة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي الشعور بالصدمة والغرابة أمام اختلاف العادات في بلد جديد؟",
+        "stemEs": "Muchos estudiantes extranjeros experimentan un breve _____ durante sus primeros meses en el país.",
+        "stemAr": "يمر العديد من الطلاب المغتربين بـ ... قصير خلال أشهرهم الأولى في البلاد.",
+        "options": [
+          {
+            "id": "ex-b2-cci-1_a",
+            "text": "choque cultural",
+            "textAr": "الصدمة الثقافية الأولية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cci-1_b",
+            "text": "acuerdo ganar-ganar",
+            "textAr": "اتفاق رابح-رابح",
+            "isCorrect": false,
+            "distractorRationaleAr": "الارتباك الثقافي يسمى el choque cultural."
+          },
+          {
+            "id": "ex-b2-cci-1_c",
+            "text": "acta oficial",
+            "textAr": "محضر رسمي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم هو el choque cultural."
+          }
+        ],
+        "targetVocab": [
+          "choque cultural",
+          "adaptación paulatina"
+        ],
+        "explanationAr": "el choque cultural هو الارتباك والتوتر النفسي الناتج عن الانتقال لبيئة ثقافية مختلفة العادات والقيم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cci-1_a"
+          ],
+          "selectedOptionId": "ex-b2-cci-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cci-1_b": "الارتباك الثقافي يسمى el choque cultural.",
+          "ex-b2-cci-1_c": "المفهوم هو el choque cultural."
+        }
+      },
+      {
+        "id": "ex-b2-cci-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمفهوم الاجتماعي الإسباني الأثير الذي يعني العيش المشترك السلمي: la _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المؤنثة التي تعني 'العيش المشترك والانسجام المجتمعي': la _____ armónica:",
+        "stemEs": "La escuela es el espacio privilegiado para fomentar la _____ intercultural y el respeto mutuo.",
+        "stemAr": "المدرسة هي الفضاء النموذجي لتعزيز ... بين الثقافات والاحترام المتبادل.",
+        "targetVocab": [
+          "convivencia"
+        ],
+        "explanationAr": "la convivencia هي العيش المشترك والوئام الاجتماعي اليومي بين مكونات المجتمع المتنوعة.",
+        "answerKey": {
+          "accepted": [
+            "convivencia"
+          ],
+          "acceptableAnswers": [
+            "convivencia"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cci-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الفعل الذي يعني تفنيد وإبطال الصور النمطية الخاطئة الشائعة عن الآخرين",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي العبارة التي تعني 'إسقاط الأساطير والأفكار المسبقة عن ثقافة معينة'؟",
+        "stemEs": "Viajar y convivir con la población local permite _____ y comprender la realidad cotidiana.",
+        "stemAr": "يتيح السفر والعيش مع السكان المحليين ... وفهم الواقع المعاش بعيداً عن الكليشيهات.",
+        "options": [
+          {
+            "id": "ex-b2-cci-3_a",
+            "text": "desmitificar estereotipos",
+            "textAr": "تفكيك الصور النمطية وإبطال الأساطير المسبقة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cci-3_b",
+            "text": "redactar instancias",
+            "textAr": "تحرير عرائض",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفنيد الأفكار المسبقة يسمى desmitificar estereotipos."
+          },
+          {
+            "id": "ex-b2-cci-3_c",
+            "text": "ceder en el precio",
+            "textAr": "التنازل في السعر",
+            "isCorrect": false,
+            "distractorRationaleAr": "العبارة هي desmitificar estereotipos."
+          }
+        ],
+        "targetVocab": [
+          "desmitificar estereotipos",
+          "cliché",
+          "empatía intercultural"
+        ],
+        "explanationAr": "desmitificar estereotipos تعني إزالة الهالات والأحكام المسبقة المغلوطة عن الشعوب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cci-3_a"
+          ],
+          "selectedOptionId": "ex-b2-cci-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cci-3_b": "تفنيد الأفكار المسبقة يسمى desmitificar estereotipos.",
+          "ex-b2-cci-3_c": "العبارة هي desmitificar estereotipos."
+        }
+      },
+      {
+        "id": "ex-b2-cci-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الإنسانية للتأكيد على قيمة التعاطف بين الثقافات",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-cci-4_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-b2-cci-4_t2",
+            "kind": "token",
+            "text": "empatía"
+          },
+          {
+            "id": "ex-b2-cci-4_t3",
+            "kind": "token",
+            "text": "intercultural"
+          },
+          {
+            "id": "ex-b2-cci-4_t4",
+            "kind": "token",
+            "text": "facilita"
+          },
+          {
+            "id": "ex-b2-cci-4_t5",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b2-cci-4_t6",
+            "kind": "token",
+            "text": "adaptación"
+          },
+          {
+            "id": "ex-b2-cci-4_t7",
+            "kind": "token",
+            "text": "paulatina"
+          },
+          {
+            "id": "ex-b2-cci-4_t8",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-b2-cci-4_t9",
+            "kind": "token",
+            "text": "feliz"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La empatía intercultural facilita una adaptación paulatina y feliz"
+          ],
+          "tokenOrder": [
+            "ex-b2-cci-4_t1",
+            "ex-b2-cci-4_t2",
+            "ex-b2-cci-4_t3",
+            "ex-b2-cci-4_t4",
+            "ex-b2-cci-4_t5",
+            "ex-b2-cci-4_t6",
+            "ex-b2-cci-4_t7",
+            "ex-b2-cci-4_t8",
+            "ex-b2-cci-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ La empatía intercultural ثم الفعل facilita ثم المفعول una adaptación paulatina y feliz.",
+        "targetVocab": [
+          "empatía intercultural",
+          "adaptación paulatina"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cci-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث في مؤتمر التعددية وحدد الفكرة المبتذلة التي يحذر من الوقوع في فخها",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لمحاضرة الاندماج الاجتماعي في جامعة مدريد",
+        "stemEs": "Debemos superar el simplista cliché de que las culturas son bloques herméticos e inmutables.",
+        "stemAr": "يجب أن نتجاوز الكليشيه التبسيطي القائل بأن الثقافات كتل منغلقة وغير قابلة للتغير.",
+        "options": [
+          {
+            "id": "ex-b2-cci-5_a",
+            "text": "simplista cliché",
+            "textAr": "الكليشيه السطحي المبتذل (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cci-5_b",
+            "text": "dato fehaciente",
+            "textAr": "دليل قاطع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حذر من: el simplista cliché."
+          },
+          {
+            "id": "ex-b2-cci-5_c",
+            "text": "rito ancestral",
+            "textAr": "طقس عريق",
+            "isCorrect": false,
+            "distractorRationaleAr": "التحذير كان من الكليشيه cliché."
+          }
+        ],
+        "targetVocab": [
+          "cliché",
+          "desmitificar estereotipos"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'Debemos superar el simplista cliché'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_superar_simplista_cliche_culturas.mp3",
+        "speechEs": "Debemos superar el simplista cliché de que las culturas son bloques herméticos e inmutables.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cci-5_a"
+          ],
+          "selectedOptionId": "ex-b2-cci-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cci-5_b": "المتحدث حذر من: el simplista cliché.",
+          "ex-b2-cci-5_c": "التحذير كان من الكليشيه cliché."
+        }
+      },
+      {
+        "id": "ex-b2-cci-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق دعوتك للتعايش والانفتاح الحضاري بنبرة إنسانية دافئة ومؤثرة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كرسالة حوار وتفاهم حضاري بين الشعوب:",
+        "stemEs": "Para superar el choque cultural es vital desmitificar estereotipos y construir una convivencia basada en la empatía intercultural.",
+        "stemAr": "لتجاوز الصدمة الثقافية من الحيوي تفكيك الصور النمطية وبناء عيش مشترك قائم على التعاطف بين الثقافات.",
+        "audioKey": "pending/b2_superar_choque_convivencia_empatia.mp3",
+        "targetVocab": [
+          "choque cultural",
+          "desmitificar estereotipos",
+          "convivencia",
+          "empatía intercultural"
+        ],
+        "explanationAr": "انتبه لنطق desmitificar estereotipos و convivencia و empatía intercultural بسلاسة وشعور إنساني صادق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_superar_choque_convivencia_empatia.mp3",
+          "modelAnswer": "Para superar el choque cultural es vital desmitificar estereotipos y construir una convivencia basada en la empatía intercultural."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب النفسية والاجتماعية لوصف مسار الاندماج الثقافي"
+    ]
+  }
+}

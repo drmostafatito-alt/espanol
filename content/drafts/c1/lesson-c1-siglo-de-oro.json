@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-siglo-de-oro",
+    "titleAr": "العصر الذهبي وبلاغة الباروك: El Siglo de Oro y la retórica barroca",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u4-literature",
+    "objectiveAr": "أن يتذوق المتعلم ويحلل نصوص الأدب الإسباني الكلاسيكي مفرّقاً بين مذهب المعنى (Conceptismo) ومذهب الزخرف (Culteranismo).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "barroco",
+      "desengaño",
+      "culteranismo",
+      "conceptismo",
+      "artificio",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "El conceptismo quevediano: agudeza verbal, paradoja y condensación léxica",
+      "El culteranismo gongorino: metáforas hiperbólicas, cultismos y sintaxis latinizante",
+      "El tópico del 'desengaño': fugacidad de la vida mundana y vanitas",
+      "El artificio retórico como vehículo de trascendencia estética"
+    ],
+    "grammarTopics": [
+      "retorica-barroca",
+      "literatura-siglo-de-oro-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محاضرة جامعية في تاريخ الأدب المقارن حول شعراء الباروك الإسباني.",
+        "settingAr": "مدرج جامعة كمبلوتنسي العريقة في مدريد",
+        "lines": [
+          {
+            "es": "La poética del Barroco español oscila entre la exuberancia formal y la angustia existencial.",
+            "ar": "تتراوح شعرية الباروك الإسباني بين الفيض الصوري الشكلي والقلق الوجودي العميق.",
+            "arEg": "شعر العصر الذهبي الإسباني بيتأرجح بين الزخرفة الشكلية الرهيبة والوجع الإنساني العميق.",
+            "audioKey": "pending/c1-u4-oro-1"
+          },
+          {
+            "es": "Mientras Góngora deslumbra con el culteranismo y sus cultismos latinos, Quevedo prefiere el conceptismo.",
+            "ar": "فبينما يبهر غونغورا القراء بمذهب الزخرف اللفظي ومفرداته اللاتينية، يؤثر كيبيدو مذهب المعنى وتكثيف الفكرة.",
+            "arEg": "في الوقت اللي جونجورا بيبهرك بالزخرفة والألفاظ اللاتينية الفخمة، كيفيدو بيفضل عمق المعنى والتكثيف.",
+            "audioKey": "pending/c1-u4-oro-2"
+          },
+          {
+            "es": "El tema del desengaño impregna cada verso, recordando la vanidad de los bienes terrenales.",
+            "ar": "تتخلل فكرة خيبة الأمل وفوات الأوهام كل بيت شعري، مذكرة بزوال المتاع الأرضي وزيفه.",
+            "arEg": "فكرة خيبة الأمل وزوال الدنيا مغرقة كل الأبيات، وبتفكرنا إن كل شيء أرضي مصيره للفناء.",
+            "audioKey": "pending/c1-u4-oro-3"
+          },
+          {
+            "es": "Lejos de ser mero artificio vacío, esa retórica encerraba una profunda meditación filosófica.",
+            "ar": "وبعيداً عن كونها مجرد صنعة وزخرف خاوٍ، كانت تلك البلاغة تكتنز تأملاً فلسفياً سحيقاً.",
+            "arEg": "وبعيد عن إنها مجرد شطارة لغوية وزينة ع الفاضي، البلاغة دي كان وراها تفلسف وفكر كبير.",
+            "audioKey": "pending/c1-u4-oro-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-sdo-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى شرح أستاذ الأدب وحدد المفهوم الوجودي المركزي الذي يطبع أدب الباروك بالزوال والتحرر من الوهم.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما التيمة الفلسفية التي تصبغ أشعار العصر الذهبي بالصحوة من بريق الدنيا الزائف؟",
+        "stemEs": "El tema del desengaño impregna cada verso, recordando la vanidad de los bienes terrenales.",
+        "stemAr": "تتخلل فكرة خيبة الأمل وفوات الأوهام كل بيت شعري، مذكرة بزوال المتاع الأرضي وزيفه.",
+        "options": [
+          {
+            "id": "ex-c1-sdo-1_a",
+            "text": "El desengaño",
+            "textAr": "الانكشاف والتحرر من وهم الدنيا وزوال بريقها المادي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-sdo-1_b",
+            "text": "El optimismo ciego",
+            "textAr": "التفاؤل الساذج والمرح الدائم",
+            "isCorrect": false,
+            "distractorRationaleAr": "مناقض لروح الباروك الوجودية المظلمة."
+          },
+          {
+            "id": "ex-c1-sdo-1_c",
+            "text": "El costumbrismo festivo",
+            "textAr": "وصف الاحتفالات والرقصات الشعبية فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "اختزال مبتذل لأعظم مراحل الشعر."
+          }
+        ],
+        "targetVocab": [
+          "desengaño",
+          "barroco"
+        ],
+        "explanationAr": "«El desengaño» هو المحور الفلسفي الكبرى لتيار الباروك ويعني استيقاظ العقل من سكرة المظاهر إلى حقيقة الموت والزوال.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u4-oro-3",
+        "speechEs": "El tema del desengaño impregna cada verso, recordando la vanidad de los bienes terrenales.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-sdo-1_a"
+          ],
+          "selectedOptionId": "ex-c1-sdo-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-sdo-1_b": "مناقض لروح الباروك الوجودية المظلمة.",
+          "ex-c1-sdo-1_c": "اختزال مبتذل لأعظم مراحل الشعر."
+        }
+      },
+      {
+        "id": "ex-c1-sdo-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفرق الجوهري بين تيار «el conceptismo» وتيار «el culteranismo» في العصر الذهبي؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الوصف الأدبي الدقيق لتيار الكونسيبتيسمو التكثيفي:",
+        "stemEs": "El conceptismo se caracteriza por la agudeza mental y la condensación de múltiples significados en pocas palabras.",
+        "stemAr": "يتميز تيار مذهب المعنى بالذكاء اللماح وتكثيف معانٍ متعددة ومفارقات في أقل عدد من الكلمات.",
+        "options": [
+          {
+            "id": "ex-c1-sdo-2_a",
+            "text": "La condensación conceptual y el juego de ingenio",
+            "textAr": "التكثيف الدلالي والعمق التوليدي واللعب بالمعاني",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-sdo-2_b",
+            "text": "La repetición monótona de rimas infantiles",
+            "textAr": "ترديد القوافي البسيطة الركيكة الساذجة",
+            "isCorrect": false,
+            "distractorRationaleAr": "ينزه عنه عباقرة الأدب الإسباني."
+          },
+          {
+            "id": "ex-c1-sdo-2_c",
+            "text": "El rechazo absoluto de cualquier figura retórica",
+            "textAr": "رفض المحسنات البلاغية والحديث كلغة الشارع",
+            "isCorrect": false,
+            "distractorRationaleAr": "الباروك هو قمة الاحتفاء بالصنعة البلاغية."
+          }
+        ],
+        "targetVocab": [
+          "conceptismo",
+          "rigor"
+        ],
+        "explanationAr": "مذهب كيبيدو (Conceptismo) يعتمد على كثافة الفكرة وسرعة بديهة المفارقة اللفظية المعنوية (agudeza).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-sdo-2_a"
+          ],
+          "selectedOptionId": "ex-c1-sdo-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-sdo-2_b": "ينزه عنه عباقرة الأدب الإسباني.",
+          "ex-c1-sdo-2_c": "الباروك هو قمة الاحتفاء بالصنعة البلاغية."
+        }
+      },
+      {
+        "id": "ex-c1-sdo-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل اسم المذهب الأدبي المقترن بالشاعر لويس دي غونغورا وزخرفته اللاتينية الفخمة: «el ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب اسم التيار الأدبي الزخرفي:",
+        "stemEs": "Góngora llevó el ____ a su máxima expresión en sus 'Soledades'.",
+        "stemAr": "بلغ غونغورا بذروة تيار الزخرف اللفظي اللاتيني أقصى مداها في قصيدته الخالدة 'الخلوات'.",
+        "targetVocab": [
+          "culteranismo"
+        ],
+        "explanationAr": "«El culteranismo» أو الغونغورية مذهب اهتم ببلاغة الشكل واستعارة التركيب النحوي اللاتيني والألفاظ الفصيحة المندثرة.",
+        "answerKey": {
+          "accepted": [
+            "culteranismo"
+          ],
+          "acceptableAnswers": [
+            "culteranismo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-sdo-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا يقصد النقاد بكلمة «artificio» عند تحليل الشعر الباروكي الإسباني؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المعنى النقدي البلاغي لكلمة الصنعة الفنية:",
+        "stemEs": "El artificio de Calderón de la Barca en 'La vida es sueño' no resta emoción a su obra.",
+        "stemAr": "إن الصنعة البلاغية المحكمة لدى كالديرون في 'الحياة حلم' لا تنقص من حرارة العاطفة شيئاً.",
+        "options": [
+          {
+            "id": "ex-c1-sdo-4_a",
+            "text": "La elaborada construcción estética y virtuosismo formal",
+            "textAr": "البناء الجمالي المتأني والمهارة الفنية المتفوقة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-sdo-4_b",
+            "text": "El engaño fraudulento y la mentira premeditada",
+            "textAr": "التدليس المادي والتزوير والخداع",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى سلبي مبتذل خارج الفن."
+          },
+          {
+            "id": "ex-c1-sdo-4_c",
+            "text": "La espontaneidad improvisada sin reflexión estética",
+            "textAr": "الارتجال السطحي السريع الخالي من التأمل",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس الصنعة الباروكية الصارمة."
+          }
+        ],
+        "targetVocab": [
+          "artificio",
+          "barroco"
+        ],
+        "explanationAr": "«Artificio» في النقد الأدبي الكلاسيكي تعني المهارة التقنية العالية وتطويع اللغة لتصير عملاً فنياً معجزاً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-sdo-4_a"
+          ],
+          "selectedOptionId": "ex-c1-sdo-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-sdo-4_b": "معنى سلبي مبتذل خارج الفن.",
+          "ex-c1-sdo-4_c": "عكس الصنعة الباروكية الصارمة."
+        }
+      },
+      {
+        "id": "ex-c1-sdo-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء حكم نقدي يصف روح العصر الذهبي الإسباني.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-sdo-5_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-c1-sdo-5_t2",
+            "kind": "token",
+            "text": "Barroco"
+          },
+          {
+            "id": "ex-c1-sdo-5_t3",
+            "kind": "token",
+            "text": "refleja"
+          },
+          {
+            "id": "ex-c1-sdo-5_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-c1-sdo-5_t5",
+            "kind": "token",
+            "text": "desengaño"
+          },
+          {
+            "id": "ex-c1-sdo-5_t6",
+            "kind": "token",
+            "text": "humano"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El Barroco refleja el desengaño humano"
+          ],
+          "tokenOrder": [
+            "ex-c1-sdo-5_t1",
+            "ex-c1-sdo-5_t2",
+            "ex-c1-sdo-5_t3",
+            "ex-c1-sdo-5_t4",
+            "ex-c1-sdo-5_t5",
+            "ex-c1-sdo-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب: المبتدأ El Barroco يليه الفعل المتعدي والمفعول الموصوف el desengaño humano.",
+        "targetVocab": [
+          "barroco",
+          "desengaño"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-sdo-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة وقورة تستحضر عمق التأمل الفلسفي لشعراء القرن السابع عشر.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً هيبة المصطلحات النقدية:",
+        "stemEs": "Quevedo condensó el conceptismo con genial agudeza.",
+        "stemAr": "كثّف كيبيدو مذهب المعنى بذكاء لماح خارق للعادة.",
+        "audioKey": "pending/c1-u4-oro-spk",
+        "targetVocab": [
+          "conceptismo",
+          "rigor"
+        ],
+        "explanationAr": "احرص على نطق حرف z في agudeza كصوت ثاء قشتالي رصين وإعطاء النبر لكلمة condensó على المقطع الأخير.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u4-oro-spk",
+          "modelAnswer": "Quevedo condensó el conceptismo con genial agudeza."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

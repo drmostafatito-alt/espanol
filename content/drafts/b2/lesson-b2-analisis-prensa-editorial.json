@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-analisis-prensa-editorial",
+    "unitSlug": "b2-u2-news",
+    "levelCode": "B2",
+    "titleAr": "تحليل الصحافة والافتتاحيات: نبرة المقال والخطاب الإخباري",
+    "titleEs": "Análisis de prensa: Editoriales, tono discursivo y sesgo informativo",
+    "subtitleAr": "تفكيك المقال الافتتاحي (editorial)، كشف التوجه الفكري، ولغة النقد الصحفي",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحلل المتعلم المقال الافتتاحي ويفكك موقفه الضمني ونبرته النقدية.",
+        "أن يوظف مصطلحات التحليل الإعلامي: editorial, sesgo, línea editorial, titular capcioso.",
+        "أن يميز بين اللغة الإخبارية المحايدة ولغة التوجيه والضغط الرأي."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الأسلوبية في الافتتاحيات الصحفية",
+          "explanationAr": "1. **إسناد الرأي للهيئة التحريرية دون ذكر اسم محدد**:\n- *El diario sostiene que...* / *Desde esta tribuna se defiende que...*\n2. **التعبير عن النقد والتحذير المبطن**:\n- *Resulta alarmante que + Subjuntivo*: Resulta alarmante que el gobierno no tome medidas urgentes.\n- *Cabe señalar que + Indicativo*: Cabe señalar que las cifras contradicen el optimismo oficial.\n3. **المفاضلة والتقييم الحذر**:\n- *Lejos de solucionar el problema, esta ley...*"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *el editorial* و *la editorial* بنفس المعنى؛ *el editorial* هو المقال الافتتاحي التحريري، بينما *la editorial* هي دار النشر.",
+        "استخدام المضارع الإخباري بعد العبارات التقييمية المؤثرة (الخطأ: *resulta alarmante que hay*; الصواب: resulta alarmante que haya بالمنصوب)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الصحافة المصرية بنقول «افتتاحية الجريدة بتوجه نقد لاذع للسياسات دي». بالإسبانية: El editorial del diario critica duramente estas medidas y advierte de sus repercusiones."
+        }
+      ],
+      "culturalNoteAr": "الصحافة الإسبانية الكبرى (مثل El País أو El Mundo أو La Vanguardia) تولي الافتتاحية وزناً سياسياً وثقافياً حاسماً، وتعبر عن التوجه الأيديولوجي للصحيفة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-analisis-prensa-editorial-intro",
+        "type": "explanation",
+        "titleAr": "المفاهيم المحورية في الصحافة التحليلية",
+        "bodyAr": "المصطلحات الأساسية:\n- **el editorial**: المقال الافتتاحي الذي يعبر عن رأي الجريدة ككل\n- **la línea editorial**: التوجه الفكري والسياسي للصحيفة\n- **el sesgo**: التحيز وعدم الحياد في معالجة الخبر\n- **resulta alarmante que**: يثير القلق والذعر أن (+ منصُوب)\n- **cabe señalar que**: تجدر الإشارة والتنويه إلى أن (+ إخباري)\n- **la repercusión**: الصدى والأثر والتداعيات",
+        "examples": [
+          {
+            "es": "El editorial de hoy subraya la necesidad de una reforma fiscal inmediata.",
+            "ar": "تشدد افتتاحية اليوم على ضرورة إجراء إصلاح ضريبي عاجل."
+          },
+          {
+            "es": "Resulta alarmante que los jóvenes encuentren tantas barreras para independizarse.",
+            "ar": "يثير القلق الشديد أن يواجه الشباب كل هذه العوائق للاستقلال."
+          },
+          {
+            "es": "Cabe señalar que la línea editorial del periódico siempre ha defendido la transparencia.",
+            "ar": "تجدر الإشارة إلى أن الخط التحريري للصحيفة دافع دوماً عن الشفافية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "editorial",
+      "línea editorial",
+      "sesgo",
+      "resulta alarmante que",
+      "cabe señalar que",
+      "repercusión"
+    ],
+    "reviewVocabulary": [
+      "noticia",
+      "periódico"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحلل المتعلم المقال الافتتاحي ويفكك موقفه الضمني ونبرته النقدية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-ape-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تدل على المقال المعبر عن رأي الجريدة الرسمي",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح الذي يدل على المقال المعبر عن موقف المؤسسة الصحفية بالكامل؟",
+        "stemEs": "En _____ de hoy, el periódico critica duramente la subida impositiva.",
+        "stemAr": "في ... اليوم، تنتقد الجريدة بشدة الزيادة الضريبية.",
+        "options": [
+          {
+            "id": "ex-b2-ape-1_a",
+            "text": "el editorial",
+            "textAr": "المقال الافتتاحي المذكر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ape-1_b",
+            "text": "la editorial",
+            "textAr": "دار النشر المؤنثة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المقال الافتتاحي مذكر (el editorial)، بينما دار النشر مؤنثة (la editorial)."
+          },
+          {
+            "id": "ex-b2-ape-1_c",
+            "text": "el titular",
+            "textAr": "العنوان الرئيسي فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المقال التحليلي الرسمي يسمى el editorial."
+          }
+        ],
+        "targetVocab": [
+          "editorial"
+        ],
+        "explanationAr": "el editorial (بصيغة المذكر) هو المقال الافتتاحي للصحيفة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ape-1_a"
+          ],
+          "selectedOptionId": "ex-b2-ape-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ape-1_b": "المقال الافتتاحي مذكر (el editorial)، بينما دار النشر مؤنثة (la editorial).",
+          "ex-b2-ape-1_c": "المقال التحليلي الرسمي يسمى el editorial."
+        }
+      },
+      {
+        "id": "ex-b2-ape-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل haber بالمنصوب بعد العبارة الصحفية التقييمية: (haya)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف فعل haber بالمنصوب بعد التركيب التقييمي: Resulta alarmante que _____ tanta desigualdad.",
+        "stemEs": "Resulta alarmante que _____ tanta precariedad en el empleo juvenil.",
+        "stemAr": "يثير القلق الشديد أن يوجد هذا القدر من الهشاشة في توظيف الشباب.",
+        "targetVocab": [
+          "resulta alarmante que"
+        ],
+        "explanationAr": "بعد العبارة التقييمية resulta alarmante que نستخدم المنصوب: haya.",
+        "answerKey": {
+          "accepted": [
+            "haya"
+          ],
+          "acceptableAnswers": [
+            "haya"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ape-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الذي يعبر عن التوجه والانحياز غير المحايد للصحيفة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'الميل غير الموضوعي أو الانحياز الأيديولوجي'؟",
+        "stemEs": "El informe carece de rigor objetivo debido a un claro _____ ideológico.",
+        "stemAr": "يفتقر التقرير إلى الصرامة الموضوعية نظراً لوجود ... أيديولوجي واضح.",
+        "options": [
+          {
+            "id": "ex-b2-ape-3_a",
+            "text": "sesgo",
+            "textAr": "تحيز أو انحياز (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ape-3_b",
+            "text": "línea editorial",
+            "textAr": "خط تحريري محايد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الميل غير العادل يسمى sesgo."
+          },
+          {
+            "id": "ex-b2-ape-3_c",
+            "text": "repercusión",
+            "textAr": "أثر ورجع صدى",
+            "isCorrect": false,
+            "distractorRationaleAr": "الانحياز يسمى sesgo."
+          }
+        ],
+        "targetVocab": [
+          "sesgo",
+          "línea editorial",
+          "repercusión"
+        ],
+        "explanationAr": "el sesgo هو التحيز أو الميل غير المحايد في عرض الحقائق.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ape-3_a"
+          ],
+          "selectedOptionId": "ex-b2-ape-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ape-3_b": "الميل غير العادل يسمى sesgo.",
+          "ex-b2-ape-3_c": "الانحياز يسمى sesgo."
+        }
+      },
+      {
+        "id": "ex-b2-ape-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة التحريرية لتأكيد استقلالية الخط الصحفي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-ape-4_t1",
+            "kind": "token",
+            "text": "Cabe"
+          },
+          {
+            "id": "ex-b2-ape-4_t2",
+            "kind": "token",
+            "text": "señalar"
+          },
+          {
+            "id": "ex-b2-ape-4_t3",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b2-ape-4_t4",
+            "kind": "token",
+            "text": "defendemos"
+          },
+          {
+            "id": "ex-b2-ape-4_t5",
+            "kind": "token",
+            "text": "nuestra"
+          },
+          {
+            "id": "ex-b2-ape-4_t6",
+            "kind": "token",
+            "text": "línea"
+          },
+          {
+            "id": "ex-b2-ape-4_t7",
+            "kind": "token",
+            "text": "editorial"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Cabe señalar que defendemos nuestra línea editorial"
+          ],
+          "tokenOrder": [
+            "ex-b2-ape-4_t1",
+            "ex-b2-ape-4_t2",
+            "ex-b2-ape-4_t3",
+            "ex-b2-ape-4_t4",
+            "ex-b2-ape-4_t5",
+            "ex-b2-ape-4_t6",
+            "ex-b2-ape-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة الاستهلالية Cabe señalar que ثم الفعل defendemos ثم المفعول nuestra línea editorial.",
+        "targetVocab": [
+          "cabe señalar que",
+          "línea editorial"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ape-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الأثر المجتمعي الذي تحذر منه الافتتاحية",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لنص التحليل الافتتاحي المذاع وحدد الكلمة الدالة على التداعيات",
+        "stemEs": "Esta decisión política tendrá graves repercusiones en la economía de las familias.",
+        "stemAr": "سيكون لهذا القرار السياسي تداعيات خطيرة على اقتصاد الأسر.",
+        "options": [
+          {
+            "id": "ex-b2-ape-5_a",
+            "text": "repercusiones",
+            "textAr": "تداعيات وانعكاسات خطيرة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ape-5_b",
+            "text": "soluciones",
+            "textAr": "حلول اقتصادية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حذر من repercusiones."
+          },
+          {
+            "id": "ex-b2-ape-5_c",
+            "text": "sesgos",
+            "textAr": "انحيازات فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "التحذير كان من التداعيات repercusiones."
+          }
+        ],
+        "targetVocab": [
+          "repercusión",
+          "sesgo"
+        ],
+        "explanationAr": "المتحدث قال: 'tendrá graves repercusiones en la economía'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_repercusiones_economia_familias.mp3",
+        "speechEs": "Esta decisión política tendrá graves repercusiones en la economía de las familias.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ape-5_a"
+          ],
+          "selectedOptionId": "ex-b2-ape-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ape-5_b": "المتحدث حذر من repercusiones.",
+          "ex-b2-ape-5_c": "التحذير كان من التداعيات repercusiones."
+        }
+      },
+      {
+        "id": "ex-b2-ape-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك التحليلية لتقييم مقال الرأي بأسلوب صحفي رفيع",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لنقد مقال صحفي بلغة رصينة وموضوعية:",
+        "stemEs": "Cabe señalar que el artículo muestra un sesgo evidente y no aporta datos contrastados.",
+        "stemAr": "تجدر الإشارة إلى أن المقال يُظهر تحيزاً جلياً ولا يقدم بيانات موثقة.",
+        "audioKey": "pending/b2_cabe_senalar_sesgo_evidente.mp3",
+        "targetVocab": [
+          "cabe señalar que",
+          "sesgo"
+        ],
+        "explanationAr": "انتبه لنطق señlar و evidente بنبرة تحليلية متزنة وفصيحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_cabe_senalar_sesgo_evidente.mp3",
+          "modelAnswer": "Cabe señalar que el artículo muestra un sesgo evidente y no aporta datos contrastados."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب الأسلوبية في الافتتاحيات الصحفية"
+    ]
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-dias-meses",
+    "titleAr": "أيام الأسبوع والشهور: المذكر والتكرار وتحديد التواريخ",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u3-numbers-time",
+    "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور، ويستخدم أداة التعريف المذكرة el/los للتعبير عن المواعيد والتكرار وحرف الجر en مع الشهور بدقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "grammar",
+      "reading",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "lunes",
+      "martes",
+      "miércoles",
+      "jueves",
+      "viernes",
+      "sábado",
+      "domingo",
+      "mes",
+      "día",
+      "año"
+    ],
+    "reviewVocabulary": [
+      "uno",
+      "dos",
+      "tres"
+    ],
+    "targetStructures": [
+      "El lunes tengo clase de español.",
+      "Los domingos descanso en casa.",
+      "Mi examen es en junio."
+    ],
+    "grammarTopics": [
+      "dias-semana-genero",
+      "articulo-el-los-dias",
+      "preposicion-en-meses"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "فاطمة ترتّب جدول دراستها الأسبوعي مع صديقتها الإسبانية كارمن في الجامعة.",
+        "settingAr": "مكتبة الجامعة في غرناطة",
+        "lines": [
+          {
+            "es": "¿Qué días tienes clase de español, Fátima?",
+            "ar": "في أي الأيام لديك حصة اللغة الإسبانية يا فاطمة؟",
+            "arEg": "عندك كورس إسباني في أيام إيه يا فاطمة؟",
+            "audioKey": "pending/a1-dia-sc-1"
+          },
+          {
+            "es": "Tengo clase los lunes y los miércoles por la tarde.",
+            "ar": "لدي حصة يومي الاثنين والأربعاء بعد الظهر.",
+            "arEg": "عندي كورس كل إتنين وأربع بعد الضهر.",
+            "audioKey": "pending/a1-dia-sc-2"
+          },
+          {
+            "es": "¿Y qué haces los fines de semana?",
+            "ar": "وماذا تفعلين في عطلات نهاية الأسبوع؟",
+            "arEg": "وبتعملي إيه في الويك إند؟",
+            "audioKey": "pending/a1-dia-sc-3"
+          },
+          {
+            "es": "El sábado salgo con amigos y el domingo descanso.",
+            "ar": "يوم السبت أخرج مع الأصدقاء، ويوم الأحد أستريح.",
+            "arEg": "السبت بخرج مع أصحابي والحد برتاح.",
+            "audioKey": "pending/a1-dia-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "أيام الأسبوع في اللغة الإسبانية كلها مذكرة وتبدأ بحرف صغير (minúscula) في السياق العادي ما لم تكن في أول الجملة. والأهم أننا لا نستخدم حرف الجر 'في' مع الأيام، بل نستخدم أداة التعريف مباشرة: 'El lunes' تعني 'يوم الاثنين'.",
+    "pedagogicalRationaleAr": "من الأخطاء الكلاسيكية للناطق بالعربية والإنجليزية قول *En lunes (In Monday / في الاثنين). في الإسبانية يُقال حصراً: El lunes. كما أن الجمع للتكرار يكون بتغيير الأداة فقط: Los lunes / Los martes لأن الكلمة تنتهي بحرف s أصلاً.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_dia_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد اليوم الذي تقام فيه الحصة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً إلى فاطمة وهي تذكر يوم حصتها:",
+        "stemEs": "Tengo clase de conversación el viernes.",
+        "stemAr": "لدي حصة محادثة يوم الجمعة.",
+        "options": [
+          {
+            "id": "a1_dia_1_a",
+            "text": "El viernes",
+            "textAr": "يوم الجمعة",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_dia_1_b",
+            "text": "El jueves",
+            "textAr": "يوم الخميس",
+            "isCorrect": false,
+            "distractorRationaleAr": "el jueves تعني الخميس، والمذكور هو الجمعة."
+          },
+          {
+            "id": "a1_dia_1_c",
+            "text": "El martes",
+            "textAr": "يوم الثلاثاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "el martes تعني الثلاثاء."
+          }
+        ],
+        "targetVocab": [
+          "viernes",
+          "día"
+        ],
+        "explanationAr": "الصوت ذكر بوضوح el viernes أي يوم الجمعة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-dia-ex-1",
+        "speechEs": "Tengo clase de conversación el viernes.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_dia_1_a"
+          ],
+          "selectedOptionId": "a1_dia_1_a"
+        },
+        "errorFeedback": {
+          "a1_dia_1_b": "el jueves تعني الخميس، والمذكور هو الجمعة.",
+          "a1_dia_1_c": "el martes تعني الثلاثاء."
+        }
+      },
+      {
+        "id": "a1_dia_2_article",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة الصحيحة للدلالة على يوم السبت القادم.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نقول: «يوم السبت أذهب إلى المركز الثقافي»؟",
+        "stemEs": "____ sábado voy al centro cultural.",
+        "stemAr": "____ السبت أذهب إلى المركز الثقافي.",
+        "options": [
+          {
+            "id": "a1_dia_2_a",
+            "text": "El",
+            "textAr": "أداة التعريف للمذكر المفرد",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_dia_2_b",
+            "text": "En",
+            "textAr": "حرف الجر 'في'",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ متكرر: لا نستخدم حرف الجر En مع أيام الأسبوع، بل أداة التعريف El."
+          },
+          {
+            "id": "a1_dia_2_c",
+            "text": "La",
+            "textAr": "أداة التعريف للمؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "أيام الأسبوع كلها مذكرة في الإسبانية ولا تأخذ La أبداً."
+          }
+        ],
+        "targetVocab": [
+          "sábado",
+          "día"
+        ],
+        "explanationAr": "أيام الأسبوع مذكرة وتأخذ أداة التعريف El للدلالة على الموعد، ولا يُستخدم معها حرف الجر En.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_dia_2_a"
+          ],
+          "selectedOptionId": "a1_dia_2_a"
+        },
+        "errorFeedback": {
+          "a1_dia_2_b": "خطأ متكرر: لا نستخدم حرف الجر En مع أيام الأسبوع، بل أداة التعريف El.",
+          "a1_dia_2_c": "أيام الأسبوع كلها مذكرة في الإسبانية ولا تأخذ La أبداً."
+        }
+      },
+      {
+        "id": "a1_dia_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل اسم اليوم الأول في أسبوع العمل بإسبانيا.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب اسم يوم «الاثنين» بالإسبانية في الفراغ:",
+        "stemEs": "El primer día de trabajo es el ____.",
+        "stemAr": "أول يوم عمل في الأسبوع هو يوم الـ____.",
+        "targetVocab": [
+          "lunes",
+          "día"
+        ],
+        "explanationAr": "يوم الاثنين في الإسبانية هو el lunes وهو اليوم الأول في أسبوع العمل الأوروبي.",
+        "answerKey": {
+          "accepted": [
+            "lunes"
+          ],
+          "acceptableAnswers": [
+            "lunes"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_dia_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لبيان تكرار النشاط كل يوم أحد.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_dia_4_order_t1",
+            "kind": "token",
+            "text": "Los"
+          },
+          {
+            "id": "a1_dia_4_order_t2",
+            "kind": "token",
+            "text": "domingos"
+          },
+          {
+            "id": "a1_dia_4_order_t3",
+            "kind": "token",
+            "text": "descanso"
+          },
+          {
+            "id": "a1_dia_4_order_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "a1_dia_4_order_t5",
+            "kind": "token",
+            "text": "casa."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Los domingos descanso en casa."
+          ],
+          "tokenOrder": [
+            "a1_dia_4_order_t1",
+            "a1_dia_4_order_t2",
+            "a1_dia_4_order_t3",
+            "a1_dia_4_order_t4",
+            "a1_dia_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب: أداة الجمع مع اليوم Los domingos + الفعل descanso + شبه الجملة en casa.",
+        "targetVocab": [
+          "domingo",
+          "día"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_dia_5_plural",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف نعبّر عن تكرار النشاط كل يوم ثلاثاء؟",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "للتعبير عن أن الحدث يتكرر كل ثلاثاء، نستخدم:",
+        "stemEs": "Tengo reunión todos ____.",
+        "stemAr": "لدي اجتماع كل ____.",
+        "options": [
+          {
+            "id": "a1_dia_5_a",
+            "text": "los martes",
+            "textAr": "أيام الثلاثاء (جمع الأداة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_dia_5_b",
+            "text": "los marteses",
+            "textAr": "جمع خاطئ بزيادة es",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمات المنتهية بـ s في المفرد لا يتغير رسمها في الجمع، بل تتغير الأداة فقط (los martes)."
+          },
+          {
+            "id": "a1_dia_5_c",
+            "text": "en martes",
+            "textAr": "في الثلاثاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يُستخدم حرف الجر En مع الأيام."
+          }
+        ],
+        "targetVocab": [
+          "martes",
+          "día"
+        ],
+        "explanationAr": "أيام الأسبوع المنتهية بحرف s في المفرد تُجمع فقط بتغيير أداة التعريف: el martes تصبح los martes.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_dia_5_a"
+          ],
+          "selectedOptionId": "a1_dia_5_a"
+        },
+        "errorFeedback": {
+          "a1_dia_5_b": "الكلمات المنتهية بـ s في المفرد لا يتغير رسمها في الجمع، بل تتغير الأداة فقط (los martes).",
+          "a1_dia_5_c": "لا يُستخدم حرف الجر En مع الأيام."
+        }
+      },
+      {
+        "id": "a1_dia_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الجملة موضحاً اليوم والنشاط بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح:",
+        "stemEs": "El miércoles tengo una cita importante.",
+        "stemAr": "يوم الأربعاء لدي موعد هام.",
+        "audioKey": "pending/a1-dia-ex-6",
+        "targetVocab": [
+          "miércoles",
+          "día"
+        ],
+        "explanationAr": "ركز على نطق النبرة في miér-coles وحرف c المرقق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-dia-ex-6",
+          "modelAnswer": "El miércoles tengo una cita importante."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

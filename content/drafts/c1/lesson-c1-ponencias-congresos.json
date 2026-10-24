@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-ponencias-congresos",
+    "titleAr": "إدارة الندوات وإلقاء الأوراق العلمية: Ponencias y congresos internacionales",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u3-academic-discourse",
+    "objectiveAr": "أن يقدم المتعلم ورقة بحثية في مؤتمر دولي ويدير حوار الأسئلة والمناقشة بروتوكولياً (inaugurar, ceder la palabra, someter a debate).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "inaugurar",
+      "ceder",
+      "someter",
+      "sintetizar",
+      "plenario",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmula de apertura: Es un honor inaugurar esta sesión plenaria",
+      "Gestión del turno de palabra: Sin más preámbulos, cedo la palabra al doctor",
+      "Invitación a la deliberación: Someter la cuestión al debate del auditorio",
+      "Cierre magistral: Permítanme sintetizar los puntos nucleares"
+    ],
+    "grammarTopics": [
+      "protocolo-academico-c1",
+      "oratoria-en-congresos-cientificos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "الجلسة الافتتاحية للمؤتمر الدولي للدراسات الإسبانية في جامعة غرناطة.",
+        "settingAr": "قاعة المؤتمرات الكبرى بمركز قصر المؤتمرات في غرناطة",
+        "lines": [
+          {
+            "es": "Es para mí un auténtico honor inaugurar este simposio internacional de lingüística.",
+            "ar": "إنه لشرف حقيقي لي أن أفتتح هذه الندوة الدولية في علم اللغات واللسانيات.",
+            "arEg": "شرف عظيم ليا إني أفتتح المؤتمر الدولي ده لعلم اللغة في غرناطة النهاردة.",
+            "audioKey": "pending/c1-u3-pon-1"
+          },
+          {
+            "es": "Sin más dilación, cedo la palabra a nuestra distinguida ponente magistral.",
+            "ar": "ودون أي تأخير، أمنح الكلمة لمحاضرتنا الرئيسية المرموقة.",
+            "arEg": "ومن غير ما أطول عليكم، بسيب المايك والكلمة لضيفتنا وباحثتنا الكبيرة.",
+            "audioKey": "pending/c1-u3-pon-2"
+          },
+          {
+            "es": "Quisiera someter a debate una cuestión crucial que interpela a toda la comunidad.",
+            "ar": "أود أن أطرح للنقاش والتداول مسألة جوهرية تخاطب المجتمع العلمي بأسره.",
+            "arEg": "حابب أطرح للنقاش قدامكم قضية مهمة جداً بتهمنا كلنا كباحثين.",
+            "audioKey": "pending/c1-u3-pon-3"
+          },
+          {
+            "es": "Para concluir, permítanme sintetizar las conclusiones de mayor calado teórico.",
+            "ar": "وفي الختام، اسمحوا لي بتكثيف وتلخيص الاستنتاجات ذات العمق النظري الأكبر.",
+            "arEg": "وفي الآخر، اسمحولي ألخص أهم النتايج العميقة اللي طلعنا بيها من التجربة.",
+            "audioKey": "pending/c1-u3-pon-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-pco-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى رئيس الجلسة وحدد العبارة البروتوكولية التي استخدمها لتمرير الحديث للمحاضر التالي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف أعطى رئيس الجلسة الكلمة للباحثة؟",
+        "stemEs": "Sin más dilación, cedo la palabra a nuestra distinguida ponente magistral.",
+        "stemAr": "ودون أي تأخير، أمنح الكلمة لمحاضرتنا الرئيسية المرموقة.",
+        "options": [
+          {
+            "id": "ex-c1-pco-1_a",
+            "text": "Cedo la palabra",
+            "textAr": "أمنح وأعطي حق التحدث والكلمة الرسمية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pco-1_b",
+            "text": "Quito la voz",
+            "textAr": "أصادر الصوت وأمنع الكلام",
+            "isCorrect": false,
+            "distractorRationaleAr": "تعبير عدواني مخالف للأصول."
+          },
+          {
+            "id": "ex-c1-pco-1_c",
+            "text": "Pido silencio",
+            "textAr": "أطلب الهدوء التام",
+            "isCorrect": false,
+            "distractorRationaleAr": "ليس صيغة لمنح الكلمة للمحاضر."
+          }
+        ],
+        "targetVocab": [
+          "ceder",
+          "rigor"
+        ],
+        "explanationAr": "العبارة البروتوكولية القياسية في المؤتمرات الرسمية هي «ceder la palabra a alguien» وتدل على الاحترام المؤسسي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u3-pon-2",
+        "speechEs": "Sin más dilación, cedo la palabra a nuestra distinguida ponente magistral.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pco-1_a"
+          ],
+          "selectedOptionId": "ex-c1-pco-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pco-1_b": "تعبير عدواني مخالف للأصول.",
+          "ex-c1-pco-1_c": "ليس صيغة لمنح الكلمة للمحاضر."
+        }
+      },
+      {
+        "id": "ex-c1-pco-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفعل الذي يستخدم لطرح قضية أمام الحضور لمناقشتها وتداولها علمياً؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التعبير الأكاديمي الدال على فتح باب النقاش:",
+        "stemEs": "El decano propuso ____ la reforma curricular a debate general.",
+        "stemAr": "اقترح العميد طرح تعديل المناهج للنقاش العام والتداول المشترك.",
+        "options": [
+          {
+            "id": "ex-c1-pco-2_a",
+            "text": "someter",
+            "textAr": "طرح وعرض الأمر للاختبار والنقاش أمام الآخرين",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pco-2_b",
+            "text": "esconder",
+            "textAr": "إخفاء الوثائق عن الجميع",
+            "isCorrect": false,
+            "distractorRationaleAr": "تناقض تام مع الشفافية الأكاديمية."
+          },
+          {
+            "id": "ex-c1-pco-2_c",
+            "text": "olvidar",
+            "textAr": "إهمال الموضوع والتناسي",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا ينطبق على الإدارة المؤسسية."
+          }
+        ],
+        "targetVocab": [
+          "someter",
+          "rigor"
+        ],
+        "explanationAr": "يقال «someter algo a debate / a votación» بمعنى تقديمه رسمياً إلى الهيئة المخولة للنظر فيه وتداول آرائه.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pco-2_a"
+          ],
+          "selectedOptionId": "ex-c1-pco-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pco-2_b": "تناقض تام مع الشفافية الأكاديمية.",
+          "ex-c1-pco-2_c": "لا ينطبق على الإدارة المؤسسية."
+        }
+      },
+      {
+        "id": "ex-c1-pco-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالفعل الأكاديمي الدال على تلخيص الأفكار المعقدة في نقاط موجزة: «____ las conclusiones».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الفعل المصدري الدال على التلخيص المكثف:",
+        "stemEs": "En los últimos minutos, procuraré ____ los aspectos esenciales de la ponencia.",
+        "stemAr": "في الدقائق الأخيرة، سأسعى إلى تلخيص وتكثيف الجوانب الجوهرية للورقة البحثية.",
+        "targetVocab": [
+          "sintetizar"
+        ],
+        "explanationAr": "الفعل الأكاديمي «sintetizar» أرقى من الفعل الدارج resumir ويفيد جمع العناصر المتفرقة في تركيب موحد ومتماسك.",
+        "answerKey": {
+          "accepted": [
+            "sintetizar"
+          ],
+          "acceptableAnswers": [
+            "sintetizar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-pco-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما التعبير الدال على افتتاح جلسة عامة يحضرها جميع أعضاء المؤتمر دون استثناء؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الوصف المؤسسي الدقيق للجلسة العامة الشاملة:",
+        "stemEs": "Todos los delegados asisten a la sesión ____ de apertura.",
+        "stemAr": "يحضر جميع المندوبين الجلسة العامة الشاملة للافتتاح.",
+        "options": [
+          {
+            "id": "ex-c1-pco-4_a",
+            "text": "plenaria",
+            "textAr": "جلسة عامة مكتملة النصاب تضم كافة الأعضاء",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pco-4_b",
+            "text": "secreta",
+            "textAr": "جلسة سرية مغلقة ومحظورة",
+            "isCorrect": false,
+            "distractorRationaleAr": "جلسات المؤتمرات علنية وليست تآمرية."
+          },
+          {
+            "id": "ex-c1-pco-4_c",
+            "text": "casual",
+            "textAr": "لقاء عفوي غير مبرمج",
+            "isCorrect": false,
+            "distractorRationaleAr": "المؤتمرات منظمة رسمياً."
+          }
+        ],
+        "targetVocab": [
+          "plenario",
+          "inaugurar"
+        ],
+        "explanationAr": "«Una sesión plenaria» (الجلسة العامة) هي الجلسة المركزية التي لا تنقسم إلى لجان فرعية وتجمع كل المؤتمرين.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pco-4_a"
+          ],
+          "selectedOptionId": "ex-c1-pco-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pco-4_b": "جلسات المؤتمرات علنية وليست تآمرية.",
+          "ex-c1-pco-4_c": "المؤتمرات منظمة رسمياً."
+        }
+      },
+      {
+        "id": "ex-c1-pco-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء صيغة افتتاحية بروتوكولية لمؤتمر دولي.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-pco-5_t1",
+            "kind": "token",
+            "text": "Es"
+          },
+          {
+            "id": "ex-c1-pco-5_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-c1-pco-5_t3",
+            "kind": "token",
+            "text": "honor"
+          },
+          {
+            "id": "ex-c1-pco-5_t4",
+            "kind": "token",
+            "text": "inaugurar"
+          },
+          {
+            "id": "ex-c1-pco-5_t5",
+            "kind": "token",
+            "text": "este"
+          },
+          {
+            "id": "ex-c1-pco-5_t6",
+            "kind": "token",
+            "text": "congreso"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Es un honor inaugurar este congreso"
+          ],
+          "tokenOrder": [
+            "ex-c1-pco-5_t1",
+            "ex-c1-pco-5_t2",
+            "ex-c1-pco-5_t3",
+            "ex-c1-pco-5_t4",
+            "ex-c1-pco-5_t5",
+            "ex-c1-pco-5_t6"
+          ]
+        },
+        "explanationAr": "الصيغة الكلاسيكية: الفعل Es والاسم un honor ومصدر الفعل inaugurar متبوعاً باسم الإشارة والمشار إليه.",
+        "targetVocab": [
+          "inaugurar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-pco-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة خطيب مفوه يقف أمام مئات العلماء في قاعة كبرى.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً فخامة الإلقاء المسرحي:",
+        "stemEs": "Cedo la palabra al distinguido conferenciante.",
+        "stemAr": "أمنح الكلمة للمحاضر الكبير المرموق.",
+        "audioKey": "pending/c1-u3-pon-spk",
+        "targetVocab": [
+          "ceder",
+          "rigor"
+        ],
+        "explanationAr": "احرص على مد الحروف الصائتة بوقار، ونطق مقطع -guido في distinguido بصفاء دون إدغام ركيك.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u3-pon-spk",
+          "modelAnswer": "Cedo la palabra al distinguido conferenciante."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

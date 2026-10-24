@@ -6,7 +6,7 @@
  * مخرجات: تقرير بشري + كود خروج 2 عند أي خطأ (يمنع الدمج في CI).
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateCurriculum, formatReport } from './lib/curriculum.mjs';
 
@@ -37,7 +37,7 @@ for (const d of dirs) {
   if (!existsSync(full)) continue;
   for (const abs of walk(full)) {
     const rel = abs.slice(ROOT.length + 1);
-    const f = rel.split('/').pop();
+    const f = basename(abs);
     const folder = rel.slice(0, rel.length - f.length - 1);
     if (f.startsWith('vocab-') && f.endsWith('.json')) {
       const b = JSON.parse(readFileSync(abs, 'utf8'));

@@ -1,0 +1,4824 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-nouns-systematic",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+  "source": {
+    "title": "حزمة مفردات: الأسماء المنهجية: العمليات والمصادر والإجراءات والمفاهيم — مسودة قابلة للمراجعة",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-23",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. IPA تلقائي تقريبي من قواعد الإملاء الإسبانية وينتظر مراجعة بشرية."
+  },
+  "entries": [
+    {
+      "headword": "acción",
+      "normalized": "acción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "accones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/akθiˈon/",
+      "pronunciationHintAr": "اكثيون",
+      "internalRank": 1,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عمل وفعل وتصرف / سهم شركة",
+          "meaningArEg": "فعل وتصرف أو سهم في البورصة",
+          "glossEs": null,
+          "exampleEs": "Cada buena acción contribuye a mejorar el mundo.",
+          "exampleAr": "كل تصرف طيب يسهم في تحسين العالم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Cada buena acción contribuye a mejorar el mundo.",
+          "ar": "كل تصرف طيب يسهم في تحسين العالم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "actuación",
+      "normalized": "actuación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "actuacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aktuaθiˈon/",
+      "pronunciationHintAr": "اكتواثيون",
+      "internalRank": 2,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أداء تمثيلي أو غنائي / تصرف",
+          "meaningArEg": "أداء في المسرح أو تصرف",
+          "glossEs": null,
+          "exampleEs": "La magnífica actuación del actor emocionó al público.",
+          "exampleAr": "أداء الممثل الرائع أثر في الجمهور.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La magnífica actuación del actor emocionó al público.",
+          "ar": "أداء الممثل الرائع أثر في الجمهور.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "adaptación",
+      "normalized": "adaptación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "adaptacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/adaptaθiˈon/",
+      "pronunciationHintAr": "ادابتاثيون",
+      "internalRank": 3,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تكيف وملاءمة مع الظروف الجديدة",
+          "meaningArEg": "تأقلم وتكيف مع الوضع الجديد",
+          "glossEs": null,
+          "exampleEs": "La rápida adaptación de los inmigrantes fue admirable.",
+          "exampleAr": "كان التكيف السريع للمهاجرين مثيراً للإعجاب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La rápida adaptación de los inmigrantes fue admirable.",
+          "ar": "كان التكيف السريع للمهاجرين مثيراً للإعجاب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "administración",
+      "normalized": "administración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "administracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/administɾaθiˈon/",
+      "pronunciationHintAr": "ادمينيستراثيون",
+      "internalRank": 4,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إدارة وتنظيم شؤون المؤسسة",
+          "meaningArEg": "إدارة وتنظيم شغل ومصالح",
+          "glossEs": null,
+          "exampleEs": "La eficiente administración redujo los trámites burocráticos.",
+          "exampleAr": "قللت الإدارة الكفؤة من الإجراءات البيروقراطية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La eficiente administración redujo los trámites burocráticos.",
+          "ar": "قللت الإدارة الكفؤة من الإجراءات البيروقراطية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "admiración",
+      "normalized": "admiración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "admiracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/admiɾaθiˈon/",
+      "pronunciationHintAr": "ادميراثيون",
+      "internalRank": 5,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إعجاب وتقدير كبير بالمهارة والخلق",
+          "meaningArEg": "إعجاب وانبهار بالشخص",
+          "glossEs": null,
+          "exampleEs": "Siente una profunda admiración por su abuela luchadora.",
+          "exampleAr": "يكن إعجاباً عميقاً بجدته المكافحة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Siente una profunda admiración por su abuela luchadora.",
+          "ar": "يكن إعجاباً عميقاً بجدته المكافحة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "adopción",
+      "normalized": "adopción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "adopcones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/adopθiˈon/",
+      "pronunciationHintAr": "ادوبثيون",
+      "internalRank": 6,
+      "tags": [
+        "domain:family",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تبن لطفل أو حيوان أليف / اعتماد فكرة",
+          "meaningArEg": "تبني طفل أو قطة أو فكرة",
+          "glossEs": null,
+          "exampleEs": "Iniciaron los trámites legales de adopción con ilusión.",
+          "exampleAr": "بدأوا الإجراءات القانونية للتبني بحماس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Iniciaron los trámites legales de adopción con ilusión.",
+          "ar": "بدأوا الإجراءات القانونية للتبني بحماس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "afirmación",
+      "normalized": "afirmación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "afirmacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/afiɾmaθiˈon/",
+      "pronunciationHintAr": "افيرماثيون",
+      "internalRank": 7,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تأكيد وإقرار بصحة القول",
+          "meaningArEg": "تأكيد وإقرار ع الكلام",
+          "glossEs": null,
+          "exampleEs": "Su rotunda afirmación disipó las dudas de los asistentes.",
+          "exampleAr": "بدد تأكيده القاطع شكوك الحاضرين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su rotunda afirmación disipó las dudas de los asistentes.",
+          "ar": "بدد تأكيده القاطع شكوك الحاضرين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "agitación",
+      "normalized": "agitación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "agitacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/axitaθiˈon/",
+      "pronunciationHintAr": "اخيتاثيون",
+      "internalRank": 8,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اضطراب وقلق / خفقان وحركة سريعة",
+          "meaningArEg": "قلق وهياج وربكة",
+          "glossEs": null,
+          "exampleEs": "La inesperada noticia provocó una gran agitación en la sala.",
+          "exampleAr": "أثار النبأ غير المتوقع اضطراباً كبيراً في القاعة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La inesperada noticia provocó una gran agitación en la sala.",
+          "ar": "أثار النبأ غير المتوقع اضطراباً كبيراً في القاعة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ampliación",
+      "normalized": "ampliación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ampliacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ampliaθiˈon/",
+      "pronunciationHintAr": "امبلياثيون",
+      "internalRank": 9,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توسيع وتمديد للمبنى أو المهلة",
+          "meaningArEg": "توسيع شقة أو مد مهلة",
+          "glossEs": null,
+          "exampleEs": "Aprobaron la ampliación del horario de apertura del museo.",
+          "exampleAr": "وافقوا على تمديد ساعات افتتاح المتحف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aprobaron la ampliación del horario de apertura del museo.",
+          "ar": "وافقوا على تمديد ساعات افتتاح المتحف.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "animación",
+      "normalized": "animación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "animacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/animaθiˈon/",
+      "pronunciationHintAr": "انيماثيون",
+      "internalRank": 10,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رسوم متحركة سينمائية / نشاط وحيوية",
+          "meaningArEg": "كرتون ورسوم متحركة أو فرفشة",
+          "glossEs": null,
+          "exampleEs": "La película de animación infantil ganó un prestigioso premio.",
+          "exampleAr": "فاز فيلم الرسوم المتحركة للأطفال بجائزة مرموقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La película de animación infantil ganó un prestigioso premio.",
+          "ar": "فاز فيلم الرسوم المتحركة للأطفال بجائزة مرموقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aparición",
+      "normalized": "aparición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aparicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/apaɾiθiˈon/",
+      "pronunciationHintAr": "اباريثيون",
+      "internalRank": 11,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ظهور وبروز مفاجئ / شبح",
+          "meaningArEg": "ظهور مفاجئ لشخص أو حاجة",
+          "glossEs": null,
+          "exampleEs": "La estelar aparición de la cantante desató el entusiasmo.",
+          "exampleAr": "أشعل الظهور الباهر للمطربة الحماس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La estelar aparición de la cantante desató el entusiasmo.",
+          "ar": "أشعل الظهور الباهر للمطربة الحماس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aportación",
+      "normalized": "aportación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aportacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/apoɾtaθiˈon/",
+      "pronunciationHintAr": "ابورتاثيون",
+      "internalRank": 12,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مساهمة ومشاركة مالية أو فكرية",
+          "meaningArEg": "مساهمة ومشاركة في الخير أو الشغل",
+          "glossEs": null,
+          "exampleEs": "Agradecieron la valiosa aportación de los socios fundadores.",
+          "exampleAr": "شكروا المساهمة القيمة للشركاء المؤسسين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Agradecieron la valiosa aportación de los socios fundadores.",
+          "ar": "شكروا المساهمة القيمة للشركاء المؤسسين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "apreciación",
+      "normalized": "apreciación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "apreciacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/apɾeθiaθiˈon/",
+      "pronunciationHintAr": "ابريثياثيون",
+      "internalRank": 13,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تقدير واستحسان لقيمة الشيء",
+          "meaningArEg": "تقدير وفهم لقيمة الحاجة",
+          "glossEs": null,
+          "exampleEs": "Desarrolló una fina apreciación por el arte contemporáneo.",
+          "exampleAr": "طور تقديراً رفيعاً للفن المعاصر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Desarrolló una fina apreciación por el arte contemporáneo.",
+          "ar": "طور تقديراً رفيعاً للفن المعاصر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aprobación",
+      "normalized": "aprobación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aprobacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/apɾobaθiˈon/",
+      "pronunciationHintAr": "ابروباثيون",
+      "internalRank": 14,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موافقة وقبول رسمي على المشروع",
+          "meaningArEg": "موافقة وقبول رسمي ع الورق",
+          "glossEs": null,
+          "exampleEs": "El plan urbanístico recibió la aprobación unánime del pleno.",
+          "exampleAr": "نال المخطط العمراني الموافقة بالإجماع من المجلس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El plan urbanístico recibió la aprobación unánime del pleno.",
+          "ar": "نال المخطط العمراني الموافقة بالإجماع من المجلس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "asociación",
+      "normalized": "asociación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "asociacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/asoθiaθiˈon/",
+      "pronunciationHintAr": "اسوثياثيون",
+      "internalRank": 15,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جمعية ونقابة تجمع أصحاب المصلحة المشتركة",
+          "meaningArEg": "جمعية ونقابة بتجمع الناس",
+          "glossEs": null,
+          "exampleEs": "La asociación vecinal lucha por mejorar los parques públicos.",
+          "exampleAr": "تناضل جمعية الحي من أجل تحسين الحدائق العامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La asociación vecinal lucha por mejorar los parques públicos.",
+          "ar": "تناضل جمعية الحي من أجل تحسين الحدائق العامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "atracción",
+      "normalized": "atracción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "atraccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/atɾakθiˈon/",
+      "pronunciationHintAr": "اتراكثيون",
+      "internalRank": 16,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جاذبية واستقطاب للزوار / لعبة ملاه",
+          "meaningArEg": "جاذبية سياحية أو لعبة في الملاهي",
+          "glossEs": null,
+          "exampleEs": "La Alhambra de Granada es la principal atracción turística de la región.",
+          "exampleAr": "قصر الحمراء في غرناطة هو عنصر الجذب السياحي الأبرز بالمنطقة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La Alhambra de Granada es la principal atracción turística de la región.",
+          "ar": "قصر الحمراء في غرناطة هو عنصر الجذب السياحي الأبرز بالمنطقة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "autorización",
+      "normalized": "autorización",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "autorizacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/autoɾiθaθiˈon/",
+      "pronunciationHintAr": "اوتوريثاثيون",
+      "internalRank": 17,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تصريح وإذن رسمي صادر من السلطات",
+          "meaningArEg": "تصريح وإذن رسمي من الحكومة",
+          "glossEs": null,
+          "exampleEs": "Obtuvo la debida autorización para realizar obras menores en casa.",
+          "exampleAr": "حصل على التصريح اللازم لإجراء أعمال ترميم خفيفة بالمنزل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Obtuvo la debida autorización para realizar obras menores en casa.",
+          "ar": "حصل على التصريح اللازم لإجراء أعمال ترميم خفيفة بالمنزل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "celebración",
+      "normalized": "celebración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "celebracones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/θelebɾaθiˈon/",
+      "pronunciationHintAr": "ثيليبراثيون",
+      "internalRank": 18,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "احتفال ومهرجان بمناسبة سعيدة",
+          "meaningArEg": "حفلة واحتفال بمناسبة حلوة",
+          "glossEs": null,
+          "exampleEs": "La gran celebración del año nuevo reunió a miles de personas.",
+          "exampleAr": "جمع الاحتفال الكبير بالعام الجديد آلاف الأشخاص.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La gran celebración del año nuevo reunió a miles de personas.",
+          "ar": "جمع الاحتفال الكبير بالعام الجديد آلاف الأشخاص.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "circulación",
+      "normalized": "circulación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "circulacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θiɾkulaθiˈon/",
+      "pronunciationHintAr": "ثيركولاثيون",
+      "internalRank": 19,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حركة المرور والسير / دوران الدم",
+          "meaningArEg": "حركة مرور في الشارع أو دورة دموية",
+          "glossEs": null,
+          "exampleEs": "La densa circulación de vehículos ralentizó el tráfico matinal.",
+          "exampleAr": "أبطأت حركة سير المركبات الكثيفة المرور الصباحي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La densa circulación de vehículos ralentizó el tráfico matinal.",
+          "ar": "أبطأت حركة سير المركبات الكثيفة المرور الصباحي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "civilización",
+      "normalized": "civilización",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "civilizacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/θibiliθaθiˈon/",
+      "pronunciationHintAr": "ثيبيليثاثيون",
+      "internalRank": 20,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حضارة إنسانية عريقة ومتقدمة",
+          "meaningArEg": "حضارة وتاريخ إنساني كبير",
+          "glossEs": null,
+          "exampleEs": "Estudian la gloriosa civilización andalusí en la universidad.",
+          "exampleAr": "يدرسون الحضارة الأندلسية المجيدة في الجامعة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Estudian la gloriosa civilización andalusí en la universidad.",
+          "ar": "يدرسون الحضارة الأندلسية المجيدة في الجامعة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "clasificación",
+      "normalized": "clasificación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "clasificacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/klasifikaθiˈon/",
+      "pronunciationHintAr": "كلاسيفيكاثيون",
+      "internalRank": 21,
+      "tags": [
+        "domain:sports",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تصنيف وترتيب حسب المعايير",
+          "meaningArEg": "تصنيف وترتيب في الجدول",
+          "glossEs": null,
+          "exampleEs": "El equipo local lidera la clasificación liguera con autoridad.",
+          "exampleAr": "يتصدر الفريق المحلي تصنيف الدوري بجدارة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El equipo local lidera la clasificación liguera con autoridad.",
+          "ar": "يتصدر الفريق المحلي تصنيف الدوري بجدارة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "colaboración",
+      "normalized": "colaboración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "colaboracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kolaboɾaθiˈon/",
+      "pronunciationHintAr": "كولابوراثيون",
+      "internalRank": 22,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعاون وتضافر الجهود لإنجاز الهدف",
+          "meaningArEg": "تعاون وإيد على إيد لإنجاز الشغل",
+          "glossEs": null,
+          "exampleEs": "La estrecha colaboración entre los departamentos garantizó el éxito.",
+          "exampleAr": "ضمن التعاون الوثيق بين الأقسام تحقيق النجاح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La estrecha colaboración entre los departamentos garantizó el éxito.",
+          "ar": "ضمن التعاون الوثيق بين الأقسام تحقيق النجاح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "colección",
+      "normalized": "colección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "coleccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kolekθiˈon/",
+      "pronunciationHintAr": "كوليكثيون",
+      "internalRank": 23,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مجموعة مقتنيات طوابع أو تحف",
+          "meaningArEg": "مجموعة تحف أو كتب متجمعة",
+          "glossEs": null,
+          "exampleEs": "Guarda una valiosa colección de sellos antiguos del mundo.",
+          "exampleAr": "يحتفظ بمجموعة قيمة من الطوابع القديمة حول العالم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Guarda una valiosa colección de sellos antiguos del mundo.",
+          "ar": "يحتفظ بمجموعة قيمة من الطوابع القديمة حول العالم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "combinación",
+      "normalized": "combinación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "combinacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kombinaθiˈon/",
+      "pronunciationHintAr": "كومبيناثيون",
+      "internalRank": 24,
+      "tags": [
+        "domain:daily",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مزيج وتوليفة متناسقة من العناصر",
+          "meaningArEg": "توليفة ومكس حلو مع بعض",
+          "glossEs": null,
+          "exampleEs": "Logró una perfecta combinación de colores en el cuadro.",
+          "exampleAr": "حقق توليفة مثالية من الألوان في اللوحة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Logró una perfecta combinación de colores en el cuadro.",
+          "ar": "حقق توليفة مثالية من الألوان في اللوحة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "compensación",
+      "normalized": "compensación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "compensacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kompensaθiˈon/",
+      "pronunciationHintAr": "كومبينساثيون",
+      "internalRank": 25,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعويض مالي أو معنوي عن ضرر",
+          "meaningArEg": "تعويض مالي عن خسارة أو ضرر",
+          "glossEs": null,
+          "exampleEs": "La aerolínea pagó una justa compensación por el retraso del vuelo.",
+          "exampleAr": "دفعت شركة الطيران تعويضاً عادلاً عن تأخر الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aerolínea pagó una justa compensación por el retraso del vuelo.",
+          "ar": "دفعت شركة الطيران تعويضاً عادلاً عن تأخر الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "competición",
+      "normalized": "competición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "competicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kompetiθiˈon/",
+      "pronunciationHintAr": "كومبيتيثيون",
+      "internalRank": 26,
+      "tags": [
+        "domain:sports",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "منافسة ومسابقة رياضية شريفة",
+          "meaningArEg": "بطولة ومسابقة ومنافسة شريفة",
+          "glossEs": null,
+          "exampleEs": "Participó con ilusión en la prestigiosa competición de atletismo.",
+          "exampleAr": "شارك بحماس في المسابقة المرموقة لألعاب القوى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Participó con ilusión en la prestigiosa competición de atletismo.",
+          "ar": "شارك بحماس في المسابقة المرموقة لألعاب القوى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "composición",
+      "normalized": "composición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "composicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/komposiθiˈon/",
+      "pronunciationHintAr": "كومبوسيثيون",
+      "internalRank": 27,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تأليف موسيقي أو إنشائي / تركيبة",
+          "meaningArEg": "مقطوعة مزيكا أو تعبير أو تركيبة",
+          "glossEs": null,
+          "exampleEs": "El maestro interpretó su última composición para piano solo.",
+          "exampleAr": "عزف الموسيقار أحدث مقطوعاته لآلة البيانو المنفرد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El maestro interpretó su última composición para piano solo.",
+          "ar": "عزف الموسيقار أحدث مقطوعاته لآلة البيانو المنفرد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conclusión",
+      "normalized": "conclusión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "conclusones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konklusiˈon/",
+      "pronunciationHintAr": "كونكلوسيون",
+      "internalRank": 28,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خاتمة واستنتاج نهائي للبحث",
+          "meaningArEg": "خاتمة واستنتاج من الموضوع",
+          "glossEs": null,
+          "exampleEs": "Llegaron a la misma conclusión tras analizar los datos detenidamente.",
+          "exampleAr": "توصلوا إلى الاستنتاج ذاته بعد تحليل البيانات بعناية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Llegaron a la misma conclusión tras analizar los datos detenidamente.",
+          "ar": "توصلوا إلى الاستنتاج ذاته بعد تحليل البيانات بعناية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "condición",
+      "normalized": "condición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "condicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kondiθiˈon/",
+      "pronunciationHintAr": "كونديثيون",
+      "internalRank": 29,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شرط ملزم / حالة ووضع صحي",
+          "meaningArEg": "شرط رسمي أو حالة صحية",
+          "glossEs": null,
+          "exampleEs": "Firmó el contrato laboral bajo la condición de teletrabajar.",
+          "exampleAr": "وقّع عقد العمل بشرط العمل عن بُعد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Firmó el contrato laboral bajo la condición de teletrabajar.",
+          "ar": "وقّع عقد العمل بشرط العمل عن بُعد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conexión",
+      "normalized": "conexión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "conexones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/koneksiˈon/",
+      "pronunciationHintAr": "كونيكسيون",
+      "internalRank": 30,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اتصال شبكي أو خط مواصلات / رابط",
+          "meaningArEg": "اتصال نت وواي فاي أو وصْلة",
+          "glossEs": null,
+          "exampleEs": "La rápida conexión a internet permite videollamadas fluidas.",
+          "exampleAr": "يتيح الاتصال السريع بالإنترنت إجراء مكالمات فيديو سلسة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La rápida conexión a internet permite videollamadas fluidas.",
+          "ar": "يتيح الاتصال السريع بالإنترنت إجراء مكالمات فيديو سلسة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "configuración",
+      "normalized": "configuración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "configuracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konfiguɾaθiˈon/",
+      "pronunciationHintAr": "كونفيجوراثيون",
+      "internalRank": 31,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ضبط وإعدادات الأجهزة والبرامج",
+          "meaningArEg": "تظبيط وإعدادات الجهاز",
+          "glossEs": null,
+          "exampleEs": "Revisó la configuración de privacidad en su cuenta personal.",
+          "exampleAr": "راجع إعدادات الخصوصية في حسابه الشخصي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Revisó la configuración de privacidad en su cuenta personal.",
+          "ar": "راجع إعدادات الخصوصية في حسابه الشخصي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "confirmación",
+      "normalized": "confirmación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "confirmacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konfiɾmaθiˈon/",
+      "pronunciationHintAr": "كونفيرماثيون",
+      "internalRank": 32,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تأكيد وتثبيت الحجز أو الموعد",
+          "meaningArEg": "تأكيد وتثبيت حجز السفر",
+          "glossEs": null,
+          "exampleEs": "Recibió la confirmación de la reserva de hotel por correo electrónico.",
+          "exampleAr": "تلقى تأكيد حجز الفندق عبر البريد الإلكتروني.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Recibió la confirmación de la reserva de hotel por correo electrónico.",
+          "ar": "تلقى تأكيد حجز الفندق عبر البريد الإلكتروني.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "conservación",
+      "normalized": "conservación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "conservacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/konseɾbaθiˈon/",
+      "pronunciationHintAr": "كونسيرباثيون",
+      "internalRank": 33,
+      "tags": [
+        "domain:nature",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صيانة وحفظ الآثار والطبيعة",
+          "meaningArEg": "حفظ وصيانة الآثار والمحميات",
+          "glossEs": null,
+          "exampleEs": "La conservación del lince ibérico es un objetivo prioritario.",
+          "exampleAr": "حفظ الوشق الإيبيري هدف ذو أولوية قصوى.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La conservación del lince ibérico es un objetivo prioritario.",
+          "ar": "حفظ الوشق الإيبيري هدف ذو أولوية قصوى.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "consideración",
+      "normalized": "consideración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "consideracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/konsideɾaθiˈon/",
+      "pronunciationHintAr": "كونسيديراثيون",
+      "internalRank": 34,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اعتبار وتقدير / مراعاة للموقف",
+          "meaningArEg": "خاطر واعتبار وتقدير للشخص",
+          "glossEs": null,
+          "exampleEs": "Trató a los veteranos con el máximo respeto y consideración.",
+          "exampleAr": "عامل المحاربين القدامى بأقصى درجات الاحترام والتقدير.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Trató a los veteranos con el máximo respeto y consideración.",
+          "ar": "عامل المحاربين القدامى بأقصى درجات الاحترام والتقدير.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "consolidación",
+      "normalized": "consolidación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "consolidacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/konsolidaθiˈon/",
+      "pronunciationHintAr": "كونسوليداثيون",
+      "internalRank": 35,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ترسيخ وتثبيت للمكانة والنجاح",
+          "meaningArEg": "تثبيت وترسيخ للنجاح",
+          "glossEs": null,
+          "exampleEs": "La consolidación de la empresa en el mercado internacional llevó años.",
+          "exampleAr": "استغرق ترسيخ مكانة الشركة في السوق الدولية سنوات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La consolidación de la empresa en el mercado internacional llevó años.",
+          "ar": "استغرق ترسيخ مكانة الشركة في السوق الدولية سنوات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "construcción",
+      "normalized": "construcción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "construccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konstɾukθiˈon/",
+      "pronunciationHintAr": "كونستروكثيون",
+      "internalRank": 36,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بناء وتشييد المباني والجسور",
+          "meaningArEg": "بنا وعمارة وتشييد",
+          "glossEs": null,
+          "exampleEs": "La construcción del nuevo hospital finalizará el próximo año.",
+          "exampleAr": "سينتهي تشييد المستشفى الجديد في العام القادم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La construcción del nuevo hospital finalizará el próximo año.",
+          "ar": "سينتهي تشييد المستشفى الجديد في العام القادم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "contaminación",
+      "normalized": "contaminación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "contaminacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kontaminaθiˈon/",
+      "pronunciationHintAr": "كونتاميناثيون",
+      "internalRank": 37,
+      "tags": [
+        "domain:nature",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تلوث بيئي يضر بالهواء والماء",
+          "meaningArEg": "تلوث عوادم وزبالة ومية",
+          "glossEs": null,
+          "exampleEs": "Reducir la contaminación del aire es vital para la salud urbana.",
+          "exampleAr": "الحد من تلوث الهواء حيوي لصحة سكان المدن.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Reducir la contaminación del aire es vital para la salud urbana.",
+          "ar": "الحد من تلوث الهواء حيوي لصحة سكان المدن.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "contribución",
+      "normalized": "contribución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "contribucones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kontɾibuθiˈon/",
+      "pronunciationHintAr": "كونتريبوثيون",
+      "internalRank": 38,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إسهام ومشاركة فعالة في التقدم",
+          "meaningArEg": "مساهمة ومشاركة في النهضة",
+          "glossEs": null,
+          "exampleEs": "Su decisiva contribución a la ciencia médica salvó millones de vidas.",
+          "exampleAr": "أنقذت مساهمته الحاسمة في العلوم الطبية حياة الملايين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su decisiva contribución a la ciencia médica salvó millones de vidas.",
+          "ar": "أنقذت مساهمته الحاسمة في العلوم الطبية حياة الملايين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "coordinación",
+      "normalized": "coordinación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "coordinacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kooɾdinaθiˈon/",
+      "pronunciationHintAr": "كوورديناثيون",
+      "internalRank": 39,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تنسيق ومواءمة بين الجهات العاملة",
+          "meaningArEg": "تنسيق وتنظيم بين الإدارات",
+          "glossEs": null,
+          "exampleEs": "La buena coordinación del equipo facilitó la entrega a tiempo.",
+          "exampleAr": "سهل التنسيق الجيد بين أعضاء الفريق التسليم في الموعد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La buena coordinación del equipo facilitó la entrega a tiempo.",
+          "ar": "سهل التنسيق الجيد بين أعضاء الفريق التسليم في الموعد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "corrección",
+      "normalized": "corrección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "correccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/koɾɾekθiˈon/",
+      "pronunciationHintAr": "كورريكثيون",
+      "internalRank": 40,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تصحيح وتصويب للخطأ الوارد",
+          "meaningArEg": "تصليح وتصويب للغلط",
+          "glossEs": null,
+          "exampleEs": "El profesor hizo la oportuna corrección de los ejercicios en la pizarra.",
+          "exampleAr": "أجرى المعلم التصويب المناسب للتمارين على السبورة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El profesor hizo la oportuna corrección de los ejercicios en la pizarra.",
+          "ar": "أجرى المعلم التصويب المناسب للتمارين على السبورة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "creación",
+      "normalized": "creación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "creacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kɾeaθiˈon/",
+      "pronunciationHintAr": "كرياثيون",
+      "internalRank": 41,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خلق وإبداع وتأسيس لشيء جديد",
+          "meaningArEg": "إبداع وخلق واختراع حاجة جديدة",
+          "glossEs": null,
+          "exampleEs": "La creación de nuevas empresas estimula el empleo juvenil.",
+          "exampleAr": "يحفز تأسيس شركات جديدة تشغيل الشباب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La creación de nuevas empresas estimula el empleo juvenil.",
+          "ar": "يحفز تأسيس شركات جديدة تشغيل الشباب.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "declaración",
+      "normalized": "declaración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "declaracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/deklaɾaθiˈon/",
+      "pronunciationHintAr": "ديكلاراثيون",
+      "internalRank": 42,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إفادة وتصريح رسمي / إقرار ضريبي",
+          "meaningArEg": "إقرار ضرايب أو تصريح رسمي",
+          "glossEs": null,
+          "exampleEs": "Hizo la declaración de la renta a través de la sede electrónica.",
+          "exampleAr": "قدم إقراره الضريبي عبر البوابة الإلكترونية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hizo la declaración de la renta a través de la sede electrónica.",
+          "ar": "قدم إقراره الضريبي عبر البوابة الإلكترونية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "decoración",
+      "normalized": "decoración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "decoracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/dekoɾaθiˈon/",
+      "pronunciationHintAr": "ديكوراثيون",
+      "internalRank": 43,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ديكور وزينة وتأثيث منزلي",
+          "meaningArEg": "ديكور وزينة وفرش الشقة",
+          "glossEs": null,
+          "exampleEs": "La cuidada decoración del salón crea un ambiente cálido.",
+          "exampleAr": "يخلق الديكور المتقن للصالون أجواءً دافئة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cuidada decoración del salón crea un ambiente cálido.",
+          "ar": "يخلق الديكور المتقن للصالون أجواءً دافئة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "dedicación",
+      "normalized": "dedicación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "dedicacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/dedikaθiˈon/",
+      "pronunciationHintAr": "ديديكاثيون",
+      "internalRank": 44,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تفان وإخلاص كامل في العمل",
+          "meaningArEg": "تفاني وإخلاص من القلب في الشغل",
+          "glossEs": null,
+          "exampleEs": "Premiaron su constante dedicación al cuidado de los ancianos.",
+          "exampleAr": "كافأوا تفانيه المستمر في رعاية المسنين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Premiaron su constante dedicación al cuidado de los ancianos.",
+          "ar": "كافأوا تفانيه المستمر في رعاية المسنين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "definición",
+      "normalized": "definición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "definicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/definiθiˈon/",
+      "pronunciationHintAr": "ديفينيثيون",
+      "internalRank": 45,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعريف وتوضيح لمعنى المصطلح",
+          "meaningArEg": "تعريف وتوضيح لمعنى الكلمة",
+          "glossEs": null,
+          "exampleEs": "Buscó la exacta definición del término en el diccionario de la lengua.",
+          "exampleAr": "بحث عن التعريف الدقيق للمصطلح في معجم اللغة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Buscó la exacta definición del término en el diccionario de la lengua.",
+          "ar": "بحث عن التعريف الدقيق للمصطلح في معجم اللغة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "demostración",
+      "normalized": "demostración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "demostracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/demostɾaθiˈon/",
+      "pronunciationHintAr": "ديموستراثيون",
+      "internalRank": 46,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "برهان وإثبات عملي للنظرية / عرض",
+          "meaningArEg": "إثبات وبرهان عملي أو بروفة",
+          "glossEs": null,
+          "exampleEs": "Hizo una brillante demostración del teorema en la pizarra.",
+          "exampleAr": "قدم برهاناً رائعاً على المبرهنة على السبورة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hizo una brillante demostración del teorema en la pizarra.",
+          "ar": "قدم برهاناً رائعاً على المبرهنة على السبورة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "descripción",
+      "normalized": "descripción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "descripcones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/deskɾipθiˈon/",
+      "pronunciationHintAr": "ديسكريبثيون",
+      "internalRank": 47,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وصف وتفصيل لملامح الشيء أو الشخص",
+          "meaningArEg": "وصف وتوضيح لشكل وحاجة",
+          "glossEs": null,
+          "exampleEs": "Hizo una detallada descripción del sospechoso a la policía.",
+          "exampleAr": "قدم وصفاً مفصلاً للمشتبه به إلى الشرطة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Hizo una detallada descripción del sospechoso a la policía.",
+          "ar": "قدم وصفاً مفصلاً للمشتبه به إلى الشرطة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "destinación",
+      "normalized": "destinación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "destinacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/destinaθiˈon/",
+      "pronunciationHintAr": "ديستيناثيون",
+      "internalRank": 48,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تخصيص لمورد / وجهة",
+          "meaningArEg": "تخصيص فلوس أو وجهة سفر",
+          "glossEs": null,
+          "exampleEs": "La destinación de fondos a la sanidad pública aumentó.",
+          "exampleAr": "زاد تخصيص الموارد المالية للرعاية الصحية العامة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La destinación de fondos a la sanidad pública aumentó.",
+          "ar": "زاد تخصيص الموارد المالية للرعاية الصحية العامة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "destrucción",
+      "normalized": "destrucción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "destruccones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/destɾukθiˈon/",
+      "pronunciationHintAr": "ديستروكثيون",
+      "internalRank": 49,
+      "tags": [
+        "domain:nature",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دمار وخراب شامل يلحق بالمكان",
+          "meaningArEg": "دمار وخراب وانهيار كامل",
+          "glossEs": null,
+          "exampleEs": "El terremoto causó una terrible destrucción en los edificios antiguos.",
+          "exampleAr": "ألحق الزلزال دماراً مروعاً بالمباني القديمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El terremoto causó una terrible destrucción en los edificios antiguos.",
+          "ar": "ألحق الزلزال دماراً مروعاً بالمباني القديمة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "discusión",
+      "normalized": "discusión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "discusones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/diskusiˈon/",
+      "pronunciationHintAr": "ديسكوسيون",
+      "internalRank": 50,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نقاش وجدال وتبادل للآراء",
+          "meaningArEg": "نقاش وجدال وخلاف في الرأي",
+          "glossEs": null,
+          "exampleEs": "Tuvieron una sana discusión sobre literatura en la sobremesa.",
+          "exampleAr": "خاضوا نقاشاً صحياً حول الأدب عقب الغداء.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tuvieron una sana discusión sobre literatura en la sobremesa.",
+          "ar": "خاضوا نقاشاً صحياً حول الأدب عقب الغداء.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "distinción",
+      "normalized": "distinción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "distincones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/distinθiˈon/",
+      "pronunciationHintAr": "ديستينثيون",
+      "internalRank": 51,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تمايز وفرق / تكريم وتشريف",
+          "meaningArEg": "تميز واختلاف أو تكريم شرف",
+          "glossEs": null,
+          "exampleEs": "Recibió una alta distinción honorífica por sus méritos cívicos.",
+          "exampleAr": "نال وساماً تكريمياً رفيعاً تقديراً لمآثره المدنية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Recibió una alta distinción honorífica por sus méritos cívicos.",
+          "ar": "نال وساماً تكريمياً رفيعاً تقديراً لمآثره المدنية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "distribución",
+      "normalized": "distribución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "distribucones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/distɾibuθiˈon/",
+      "pronunciationHintAr": "ديستريبوثيون",
+      "internalRank": 52,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توزيع ونشر للسلع والمواد",
+          "meaningArEg": "توزيع بضاعة في السوق",
+          "glossEs": null,
+          "exampleEs": "La red de distribución abastece a todas las tiendas del país.",
+          "exampleAr": "تمد شبكة التوزيع جميع المتاجر في البلاد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La red de distribución abastece a todas las tiendas del país.",
+          "ar": "تمد شبكة التوزيع جميع المتاجر في البلاد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "diversión",
+      "normalized": "diversión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "diversones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/dibeɾsiˈon/",
+      "pronunciationHintAr": "ديبيرسيون",
+      "internalRank": 53,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسلية ومرح وترفيه عن النفس",
+          "meaningArEg": "تسلية وفسحة وفرفشة",
+          "glossEs": null,
+          "exampleEs": "El parque temático ofrece diversión garantizada para toda la familia.",
+          "exampleAr": "توفر مدينة الملاهي تسلية مضمونة لكل أفراد الأسرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El parque temático ofrece diversión garantizada para toda la familia.",
+          "ar": "توفر مدينة الملاهي تسلية مضمونة لكل أفراد الأسرة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "división",
+      "normalized": "división",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "divisones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/dibisiˈon/",
+      "pronunciationHintAr": "ديبيسيون",
+      "internalRank": 54,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قسمة وتجزئة / قسم وإدارة",
+          "meaningArEg": "تقسيم أو قسم إدارة",
+          "glossEs": null,
+          "exampleEs": "La división de tareas facilitó concluir el proyecto a tiempo.",
+          "exampleAr": "سهل تقسيم المهام إنهاء المشروع في موعده.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La división de tareas facilitó concluir el proyecto a tiempo.",
+          "ar": "سهل تقسيم المهام إنهاء المشروع في موعده.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "duración",
+      "normalized": "duración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "duracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/duɾaθiˈon/",
+      "pronunciationHintAr": "دوراثيون",
+      "internalRank": 55,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مدة وزمن استغراق الحدث",
+          "meaningArEg": "مدة ووقت المشوار أو الفيلم",
+          "glossEs": null,
+          "exampleEs": "La duración del vuelo directo a Madrid es de cuatro horas.",
+          "exampleAr": "مدة الرحلة الجوية المباشرة إلى مدريد أربع ساعات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La duración del vuelo directo a Madrid es de cuatro horas.",
+          "ar": "مدة الرحلة الجوية المباشرة إلى مدريد أربع ساعات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "edición",
+      "normalized": "edición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "edicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ediθiˈon/",
+      "pronunciationHintAr": "يديثيون",
+      "internalRank": 56,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طبعة كتاب أو دورة من مهرجان",
+          "meaningArEg": "طبعة كتاب أو دورة مهرجان",
+          "glossEs": null,
+          "exampleEs": "Compró la primera edición de la novela histórica.",
+          "exampleAr": "اشترى الطبعة الأولى من الرواية التاريخية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Compró la primera edición de la novela histórica.",
+          "ar": "اشترى الطبعة الأولى من الرواية التاريخية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "educación",
+      "normalized": "educación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "educacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/edukaθiˈon/",
+      "pronunciationHintAr": "يدوكاثيون",
+      "internalRank": 57,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تربية وتعليم وثقافة دمثة",
+          "meaningArEg": "تربية وأدب وتعليم سليم",
+          "glossEs": null,
+          "exampleEs": "La educación de calidad es la mejor inversión de futuro.",
+          "exampleAr": "التعليم ذو الجودة هو أفضل استثمار للمستقبل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La educación de calidad es la mejor inversión de futuro.",
+          "ar": "التعليم ذو الجودة هو أفضل استثمار للمستقبل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "elección",
+      "normalized": "elección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "eleccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/elekθiˈon/",
+      "pronunciationHintAr": "يليكثيون",
+      "internalRank": 58,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اختيار وانتقاء / انتخابات ديمقراطية",
+          "meaningArEg": "اختيار وقرار أو انتخابات عامة",
+          "glossEs": null,
+          "exampleEs": "La votación libre en las elecciones es un derecho sagrado (elección).",
+          "exampleAr": "التصويت الحر في الانتخابات حق مقدس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La votación libre en las elecciones es un derecho sagrado (elección).",
+          "ar": "التصويت الحر في الانتخابات حق مقدس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "emoción",
+      "normalized": "emoción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "emocones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/emoθiˈon/",
+      "pronunciationHintAr": "يموثيون",
+      "internalRank": 59,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "انفعال وشعور فياض يملأ الصدر",
+          "meaningArEg": "مشاعر فياضة وإحساس عالي",
+          "glossEs": null,
+          "exampleEs": "Apenas pudo contener la viva emoción al abrazar a su hijo.",
+          "exampleAr": "بالكاد استطاع كبح مشاعره الجياشة عند معانقة ابنه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Apenas pudo contener la viva emoción al abrazar a su hijo.",
+          "ar": "بالكاد استطاع كبح مشاعره الجياشة عند معانقة ابنه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "embarcación",
+      "normalized": "embarcación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "embarcacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/embaɾkaθiˈon/",
+      "pronunciationHintAr": "يمباركاثيون",
+      "internalRank": 60,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مركب وقارب بحري يبحر في المياه",
+          "meaningArEg": "مركب وفلوكة في البحر",
+          "glossEs": null,
+          "exampleEs": "La pequeña embarcación pesquera sorteó el oleaje con destreza.",
+          "exampleAr": "تجاوز قارب الصيد الصغير الأمواج ببراعة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La pequeña embarcación pesquera sorteó el oleaje con destreza.",
+          "ar": "تجاوز قارب الصيد الصغير الأمواج ببراعة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "evaluación",
+      "normalized": "evaluación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "evaluacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ebaluaθiˈon/",
+      "pronunciationHintAr": "يبالواثيون",
+      "internalRank": 61,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تقييم وتقدير لمستوى الأداء",
+          "meaningArEg": "تقييم مستوى الشغل والامتحانات",
+          "glossEs": null,
+          "exampleEs": "El sistema de evaluación continua premia el esfuerzo diario.",
+          "exampleAr": "يكافئ نظام التقييم المستمر الجهد اليومي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El sistema de evaluación continua premia el esfuerzo diario.",
+          "ar": "يكافئ نظام التقييم المستمر الجهد اليومي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "evolución",
+      "normalized": "evolución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "evolucones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/eboluθiˈon/",
+      "pronunciationHintAr": "يبولوثيون",
+      "internalRank": 62,
+      "tags": [
+        "domain:nature",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تطور وتدرج نحو الأفضل",
+          "meaningArEg": "تطور وتقدم خطوة خطوة",
+          "glossEs": null,
+          "exampleEs": "La favorable evolución del paciente permitió darle el alta.",
+          "exampleAr": "أتاح التطور الإيجابي لحالة المريض التصريح بخروجه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La favorable evolución del paciente permitió darle el alta.",
+          "ar": "أتاح التطور الإيجابي لحالة المريض التصريح بخروجه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "exhibición",
+      "normalized": "exhibición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "exhibicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/eksibiθiˈon/",
+      "pronunciationHintAr": "يكسيبيثيون",
+      "internalRank": 63,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عرض واستعراض للمهارات أو الفنون",
+          "meaningArEg": "عرض واستعراض مهارات وفنون",
+          "glossEs": null,
+          "exampleEs": "Los pilotos hicieron una espectacular exhibición aérea acrobática.",
+          "exampleAr": "قدم الطيارون استعراضاً جوياً بهلوانياً مذهلاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los pilotos hicieron una espectacular exhibición aérea acrobática.",
+          "ar": "قدم الطيارون استعراضاً جوياً بهلوانياً مذهلاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "expedición",
+      "normalized": "expedición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "expedicones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ekspediθiˈon/",
+      "pronunciationHintAr": "يكسبيديثيون",
+      "internalRank": 64,
+      "tags": [
+        "domain:travel",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بعثة استكشافية أو رحلة علمية",
+          "meaningArEg": "رحلة استكشاف ومعسكر مغامرة",
+          "glossEs": null,
+          "exampleEs": "La expedición científica partió rumbo a los hielos antárticos.",
+          "exampleAr": "انطلقت البعثة العلمية نحو جليد القطب الجنوبي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La expedición científica partió rumbo a los hielos antárticos.",
+          "ar": "انطلقت البعثة العلمية نحو جليد القطب الجنوبي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "explicación",
+      "normalized": "explicación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "explicacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/eksplikaθiˈon/",
+      "pronunciationHintAr": "يكسبليكاثيون",
+      "internalRank": 65,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شرح وتوضيح يزيل الغموض",
+          "meaningArEg": "شرح وتوضيح للموضوع",
+          "glossEs": null,
+          "exampleEs": "La clara explicación del maestro disipó todas las dudas.",
+          "exampleAr": "بدد شرح المعلم الواضح جميع الشكوك.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La clara explicación del maestro disipó todas las dudas.",
+          "ar": "بدد شرح المعلم الواضح جميع الشكوك.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "exploración",
+      "normalized": "exploración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "exploracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/eksploɾaθiˈon/",
+      "pronunciationHintAr": "يكسبلوراثيون",
+      "internalRank": 66,
+      "tags": [
+        "domain:travel",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "استكشاف واستطلاع للمناطق المجهولة",
+          "meaningArEg": "استكشاف أراضي وأماكن جديدة",
+          "glossEs": null,
+          "exampleEs": "La fascinante exploración de la cueva duró varias horas.",
+          "exampleAr": "استغرق الاستكشاف المثير للكهف ساعات عدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La fascinante exploración de la cueva duró varias horas.",
+          "ar": "استغرق الاستكشاف المثير للكهف ساعات عدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "exposición",
+      "normalized": "exposición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "exposicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/eksposiθiˈon/",
+      "pronunciationHintAr": "يكسبوسيثيون",
+      "internalRank": 67,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معرض فني تشكيلي / عرض تقديمي",
+          "meaningArEg": "معرض صور ورسومات أو بريزنتيشن",
+          "glossEs": null,
+          "exampleEs": "Inauguraron una magnífica exposición de pintura impresionista.",
+          "exampleAr": "افتتحوا معرضاً رائعاً للرسم الانطباعي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Inauguraron una magnífica exposición de pintura impresionista.",
+          "ar": "افتتحوا معرضاً رائعاً للرسم الانطباعي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "expresión",
+      "normalized": "expresión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "expresones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ekspɾesiˈon/",
+      "pronunciationHintAr": "يكسبريسيون",
+      "internalRank": 68,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعبير لغوي أو ملامح وجه معبرة",
+          "meaningArEg": "تعبير وش وكلمة ومصطلح",
+          "glossEs": null,
+          "exampleEs": "Utiliza expresiones idiomáticas muy ricas en sus escritos (expresión).",
+          "exampleAr": "يستخدم تعبيرات اصطلاحية غنية في كتاباته.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Utiliza expresiones idiomáticas muy ricas en sus escritos (expresión).",
+          "ar": "يستخدم تعبيرات اصطلاحية غنية في كتاباته.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "fabricación",
+      "normalized": "fabricación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "fabricacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/fabɾikaθiˈon/",
+      "pronunciationHintAr": "فابريكاثيون",
+      "internalRank": 69,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صناعة وإنتاج السلع في المصانع",
+          "meaningArEg": "تصنيع وإنتاج بضاعة بالمكن",
+          "glossEs": null,
+          "exampleEs": "La esmerada fabricación artesanal garantiza la máxima calidad.",
+          "exampleAr": "يضمن التصنيع الحرفي المتقن أقصى درجات الجودة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La esmerada fabricación artesanal garantiza la máxima calidad.",
+          "ar": "يضمن التصنيع الحرفي المتقن أقصى درجات الجودة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "formación",
+      "normalized": "formación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "formacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/foɾmaθiˈon/",
+      "pronunciationHintAr": "فورماثيون",
+      "internalRank": 70,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تدريب وتأهيل مهني وتعليمي",
+          "meaningArEg": "كورسات وتدريب وتأهيل للشغل",
+          "glossEs": null,
+          "exampleEs": "La formación continua de los trabajadores mejora la competitividad.",
+          "exampleAr": "يحسن التدريب المستمر للعمال القدرة التنافسية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La formación continua de los trabajadores mejora la competitividad.",
+          "ar": "يحسن التدريب المستمر للعمال القدرة التنافسية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "función",
+      "normalized": "función",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "funcones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/funθiˈon/",
+      "pronunciationHintAr": "فونثيون",
+      "internalRank": 71,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عرض مسرحي / وظيفة ودور محدد",
+          "meaningArEg": "حفلة مسرح أو دور ووظيفة",
+          "glossEs": null,
+          "exampleEs": "La función vespertina del teatro congregó a cientos de espectadores.",
+          "exampleAr": "جمعت حفلة المسرح المسائية مئات المشاهدين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La función vespertina del teatro congregó a cientos de espectadores.",
+          "ar": "جمعت حفلة المسرح المسائية مئات المشاهدين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "fundación",
+      "normalized": "fundación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "fundacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/fundaθiˈon/",
+      "pronunciationHintAr": "فونداثيون",
+      "internalRank": 72,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تأسيس وإنشاء / مؤسسة خيرية وثقافية",
+          "meaningArEg": "تأسيس وإنشاء أو مؤسسة خيرية",
+          "glossEs": null,
+          "exampleEs": "La benéfica fundación concede becas de estudio a jóvenes sin recursos.",
+          "exampleAr": "تمنح المؤسسة الخيرية منحاً دراسية للشباب المحتاجين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La benéfica fundación concede becas de estudio a jóvenes sin recursos.",
+          "ar": "تمنح المؤسسة الخيرية منحاً دراسية للشباب المحتاجين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "grabación",
+      "normalized": "grabación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "grabacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/gɾabaθiˈon/",
+      "pronunciationHintAr": "جراباثيون",
+      "internalRank": 73,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسجيل صوتي أو مرئي في الأستوديو",
+          "meaningArEg": "تسجيل صوت أو فيديو في الأستوديو",
+          "glossEs": null,
+          "exampleEs": "La nítida grabación del concierto en directo sonaba de fábula.",
+          "exampleAr": "كان التسجيل النقي للحفل الحي ممتعاً للغاية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La nítida grabación del concierto en directo sonaba de fábula.",
+          "ar": "كان التسجيل النقي للحفل الحي ممتعاً للغاية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "iluminación",
+      "normalized": "iluminación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "iluminacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/iluminaθiˈon/",
+      "pronunciationHintAr": "يلوميناثيون",
+      "internalRank": 74,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إضاءة وإنارة الشوارع والغرف",
+          "meaningArEg": "نور وإضاءة شوارع وأوض",
+          "glossEs": null,
+          "exampleEs": "La cálida iluminación de la terraza invita al descanso nocturno.",
+          "exampleAr": "تدعو الإضاءة الدافئة للشرفة إلى الاسترخاء الليلي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cálida iluminación de la terraza invita al descanso nocturno.",
+          "ar": "تدعو الإضاءة الدافئة للشرفة إلى الاسترخاء الليلي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ilustración",
+      "normalized": "ilustración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ilustracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ilustɾaθiˈon/",
+      "pronunciationHintAr": "يلوستراثيون",
+      "internalRank": 75,
+      "tags": [
+        "domain:arts",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رسم توضيحي في كتاب / عصر التنوير",
+          "meaningArEg": "رسمة توضيحية في كتاب أو عصر التنوير",
+          "glossEs": null,
+          "exampleEs": "El cuento contiene hermosas ilustraciones a todo color (ilustración).",
+          "exampleAr": "تحتوي القصة على رسوم توضيحية جميلة بكامل الألوان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cuento contiene hermosas ilustraciones a todo color (ilustración).",
+          "ar": "تحتوي القصة على رسوم توضيحية جميلة بكامل الألوان.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "impresión",
+      "normalized": "impresión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "impresones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/impɾesiˈon/",
+      "pronunciationHintAr": "يمبريسيون",
+      "internalRank": 76,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طباعة ورقية / انطباع وشعور أولي",
+          "meaningArEg": "طباعة ورق أو انطباع أولاني",
+          "glossEs": null,
+          "exampleEs": "La primera impresión al conocerla fue inmejorable y sincera.",
+          "exampleAr": "كان الانطباع الأول عند مقابلتها رائعاً وصادقاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La primera impresión al conocerla fue inmejorable y sincera.",
+          "ar": "كان الانطباع الأول عند مقابلتها رائعاً وصادقاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "información",
+      "normalized": "información",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "informacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/infoɾmaθiˈon/",
+      "pronunciationHintAr": "ينفورماثيون",
+      "internalRank": 77,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معلومات وبيانات وافية عن الموضوع",
+          "meaningArEg": "معلومات وتفاصيل عن الحاجة",
+          "glossEs": null,
+          "exampleEs": "Pidió información turística detallada en la oficina del aeropuerto.",
+          "exampleAr": "طلب معلومات سياحية مفصلة في مكتب المطار.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pidió información turística detallada en la oficina del aeropuerto.",
+          "ar": "طلب معلومات سياحية مفصلة في مكتب المطار.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "iniciación",
+      "normalized": "iniciación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "iniciacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/iniθiaθiˈon/",
+      "pronunciationHintAr": "ينيثياثيون",
+      "internalRank": 78,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بداية واستهلال لتعلم علم أو حرفة",
+          "meaningArEg": "مستوى مبتدئ وبداية تعليم",
+          "glossEs": null,
+          "exampleEs": "Se matriculó en un curso de iniciación a la guitarra clásica.",
+          "exampleAr": "سجّل في دورة مبادئ العزف على الغيتار الكلاسيكي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se matriculó en un curso de iniciación a la guitarra clásica.",
+          "ar": "سجّل في دورة مبادئ العزف على الغيتار الكلاسيكي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "innovación",
+      "normalized": "innovación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "innovacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/innobaθiˈon/",
+      "pronunciationHintAr": "يننوباثيون",
+      "internalRank": 79,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ابتكار وتجديد يفوق المألوف",
+          "meaningArEg": "ابتكار وتجديد واختراع",
+          "glossEs": null,
+          "exampleEs": "La constante innovación tecnológica lidera el sector punta.",
+          "exampleAr": "يقود الابتكار التكنولوجي المستمر القطاع الرائد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La constante innovación tecnológica lidera el sector punta.",
+          "ar": "يقود الابتكار التكنولوجي المستمر القطاع الرائد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "inscripción",
+      "normalized": "inscripción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "inscripcones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/inskɾipθiˈon/",
+      "pronunciationHintAr": "ينسكريبثيون",
+      "internalRank": 80,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسجيل وقيد / نقش أثري على الحجر",
+          "meaningArEg": "تسجيل اسم أو نقش حجر أثري",
+          "glossEs": null,
+          "exampleEs": "Completó la preceptiva inscripción para la carrera popular.",
+          "exampleAr": "أتم التسجيل الإلزامي للمشاركة في السباق الشعبي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Completó la preceptiva inscripción para la carrera popular.",
+          "ar": "أتم التسجيل الإلزامي للمشاركة في السباق الشعبي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "inspección",
+      "normalized": "inspección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "inspeccones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/inspekθiˈon/",
+      "pronunciationHintAr": "ينسبيكثيون",
+      "internalRank": 81,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تفتيش ومعاينة رسمية للتأكد من السلامة",
+          "meaningArEg": "تفتيش رسمي ومراجعة سلامة",
+          "glossEs": null,
+          "exampleEs": "El edificio histórico superó la rigurosa inspección técnica.",
+          "exampleAr": "اجتاز المبنى التاريخي المعاينة الفنية الصارمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El edificio histórico superó la rigurosa inspección técnica.",
+          "ar": "اجتاز المبنى التاريخي المعاينة الفنية الصارمة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "inspiración",
+      "normalized": "inspiración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "inspiracones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/inspiɾaθiˈon/",
+      "pronunciationHintAr": "ينسبيراثيون",
+      "internalRank": 82,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إلهام ووحي فني يفيض على المبدع / شهيق",
+          "meaningArEg": "إلهام وفكرة من السما أو شهيق نفس",
+          "glossEs": null,
+          "exampleEs": "El poeta encontró su mayor inspiración en los atardeceres marinos.",
+          "exampleAr": "وجد الشاعر أعظم إلهاماته في غروب الشمس على البحر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El poeta encontró su mayor inspiración en los atardeceres marinos.",
+          "ar": "وجد الشاعر أعظم إلهاماته في غروب الشمس على البحر.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "instalación",
+      "normalized": "instalación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "instalacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/instalaθiˈon/",
+      "pronunciationHintAr": "ينستالاثيون",
+      "internalRank": 83,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تركيب جهاز / مرافق ومنشآت عامة",
+          "meaningArEg": "تركيب مكنة أو مرافق وملاعب",
+          "glossEs": null,
+          "exampleEs": "El polideportivo cuenta con unas modernas instalaciones acuáticas (instalación).",
+          "exampleAr": "يضم المجمع الرياضي مرافق مائية حديثة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El polideportivo cuenta con unas modernas instalaciones acuáticas (instalación).",
+          "ar": "يضم المجمع الرياضي مرافق مائية حديثة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "institución",
+      "normalized": "institución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "institucones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/instituθiˈon/",
+      "pronunciationHintAr": "ينستيتوثيون",
+      "internalRank": 84,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مؤسسة وهيئة عامة ترعى المجتمع",
+          "meaningArEg": "مؤسسة وهيئة كبيرة ترعى الناس",
+          "glossEs": null,
+          "exampleEs": "La secular institución educativa vela por la difusión del saber.",
+          "exampleAr": "ترعى المؤسسة التعليمية العريقة نشر المعرفة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La secular institución educativa vela por la difusión del saber.",
+          "ar": "ترعى المؤسسة التعليمية العريقة نشر المعرفة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "instrucción",
+      "normalized": "instrucción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "instruccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/instɾukθiˈon/",
+      "pronunciationHintAr": "ينستروكثيون",
+      "internalRank": 85,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعليمات وإرشادات دقيقة لتشغيل الآلة",
+          "meaningArEg": "كتالوج وتعليمات تشغيل واستخدام",
+          "glossEs": null,
+          "exampleEs": "Lea con sumo cuidado las instrucciones antes de montar el mueble (instrucción).",
+          "exampleAr": "اقرأ التعليمات بعناية بالغة قبل تركيب قطعة الأثاث.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Lea con sumo cuidado las instrucciones antes de montar el mueble (instrucción).",
+          "ar": "اقرأ التعليمات بعناية بالغة قبل تركيب قطعة الأثاث.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "intención",
+      "normalized": "intención",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "intencones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/intenθiˈon/",
+      "pronunciationHintAr": "ينتينثيون",
+      "internalRank": 86,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نية وقصد في القلب للقيام بالعمل",
+          "meaningArEg": "نية وقصد من القلب للشغل",
+          "glossEs": null,
+          "exampleEs": "Tuvo la sana intención de ayudar sin esperar nada a cambio.",
+          "exampleAr": "كانت لديه النية الطيبة للمساعدة دون انتظار مقابل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tuvo la sana intención de ayudar sin esperar nada a cambio.",
+          "ar": "كانت لديه النية الطيبة للمساعدة دون انتظار مقابل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "intervención",
+      "normalized": "intervención",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "intervencones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/inteɾbenθiˈon/",
+      "pronunciationHintAr": "ينتيربينثيون",
+      "internalRank": 87,
+      "tags": [
+        "domain:health",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تدخل جراحي أو أمني / كلمة في ندوة",
+          "meaningArEg": "عملية جراحية أو كلمة ومداخلة",
+          "glossEs": null,
+          "exampleEs": "La oportuna intervención médica estabilizó los signos del enfermo.",
+          "exampleAr": "ثبت التدخل الطبي في الوقت المناسب المؤشرات الحيوية للمريض.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La oportuna intervención médica estabilizó los signos del enfermo.",
+          "ar": "ثبت التدخل الطبي في الوقت المناسب المؤشرات الحيوية للمريض.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "investigación",
+      "normalized": "investigación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "investigacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/inbestigaθiˈon/",
+      "pronunciationHintAr": "ينبيستيجاثيون",
+      "internalRank": 88,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بحث علمي واستقصاء دقيق للحقائق",
+          "meaningArEg": "أبحاث علمية وتحقيق في الحقيقة",
+          "glossEs": null,
+          "exampleEs": "El centro financia la puntera investigación contra enfermedades raras.",
+          "exampleAr": "يمول المركز الأبحاث الرائدة لمكافحة الأمراض النادرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El centro financia la puntera investigación contra enfermedades raras.",
+          "ar": "يمول المركز الأبحاث الرائدة لمكافحة الأمراض النادرة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "invitación",
+      "normalized": "invitación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "invitacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/inbitaθiˈon/",
+      "pronunciationHintAr": "ينبيتاثيون",
+      "internalRank": 89,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دعوة لحضور حفل أو وليمة",
+          "meaningArEg": "عزومة ودعوة لفرح أو عشا",
+          "glossEs": null,
+          "exampleEs": "Aceptó encantado la cordial invitación de boda de su primo.",
+          "exampleAr": "قبل بكل سرور دعوة الزفاف الودية من ابن عمه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aceptó encantado la cordial invitación de boda de su primo.",
+          "ar": "قبل بكل سرور دعوة الزفاف الودية من ابن عمه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "manifestación",
+      "normalized": "manifestación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "manifestacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/manifestaθiˈon/",
+      "pronunciationHintAr": "مانيفيستاثيون",
+      "internalRank": 90,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مظاهرة وتجمع سلمي للتعبير عن الرأي",
+          "meaningArEg": "مظاهرة سلمية ومسيرة في الشارع",
+          "glossEs": null,
+          "exampleEs": "Una multitudinaria manifestación pacífica recorrió la arteria principal.",
+          "exampleAr": "جابت مظاهرة سلمية حاشدة الشارع الرئيس.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Una multitudinaria manifestación pacífica recorrió la arteria principal.",
+          "ar": "جابت مظاهرة سلمية حاشدة الشارع الرئيس.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "modificación",
+      "normalized": "modificación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "modificacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/modifikaθiˈon/",
+      "pronunciationHintAr": "موديفيكاثيون",
+      "internalRank": 91,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تعديل وتغيير جزئي في البنود",
+          "meaningArEg": "تعديل بسيط في البنود والورق",
+          "glossEs": null,
+          "exampleEs": "Introdujo una leve modificación en la cláusula del contrato.",
+          "exampleAr": "أدخل تعديلاً طفيفاً على بند العقد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Introdujo una leve modificación en la cláusula del contrato.",
+          "ar": "أدخل تعديلاً طفيفاً على بند العقد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "motivación",
+      "normalized": "motivación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "motivacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/motibaθiˈon/",
+      "pronunciationHintAr": "موتيباثيون",
+      "internalRank": 92,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حافز ودافع معنوي قوي للنجاح",
+          "meaningArEg": "حافز وتشجيع وطاقة للنجاح",
+          "glossEs": null,
+          "exampleEs": "El apoyo sincero de su familia fue su mayor motivación diaria.",
+          "exampleAr": "كان دعم عائلته الصادق أكبر حوافزه اليومية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El apoyo sincero de su familia fue su mayor motivación diaria.",
+          "ar": "كان دعم عائلته الصادق أكبر حوافزه اليومية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "navegación",
+      "normalized": "navegación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "navegacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/nabegaθiˈon/",
+      "pronunciationHintAr": "نابيجاثيون",
+      "internalRank": 93,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ملاحة بحرية بالسفن / تصفح الإنترنت",
+          "meaningArEg": "ملاحة وسواقة مراكب أو تصفح نت",
+          "glossEs": null,
+          "exampleEs": "La tranquila navegación costera ofreció vistas panorámicas únicas.",
+          "exampleAr": "وفرت الملاحة الساحلية الهادئة مناظر بانورامية فريدة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tranquila navegación costera ofreció vistas panorámicas únicas.",
+          "ar": "وفرت الملاحة الساحلية الهادئة مناظر بانورامية فريدة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "negociación",
+      "normalized": "negociación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "negociacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/negoθiaθiˈon/",
+      "pronunciationHintAr": "نيجوثياثيون",
+      "internalRank": 94,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مفاوضات وتباحث للوصول إلى اتفاق",
+          "meaningArEg": "مفاوضات وقعدة اتفاق صلح وبيزنس",
+          "glossEs": null,
+          "exampleEs": "Las largas negociaciones concluyeron con un pacto beneficioso (negociación).",
+          "exampleAr": "اختُتمت المفاوضات الطويلة باتفاق مفيد للطرفين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Las largas negociaciones concluyeron con un pacto beneficioso (negociación).",
+          "ar": "اختُتمت المفاوضات الطويلة باتفاق مفيد للطرفين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "observación",
+      "normalized": "observación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "observacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/obseɾbaθiˈon/",
+      "pronunciationHintAr": "وبسيرباثيون",
+      "internalRank": 95,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ملاحظة ورصد دقيق / تعليق مفيد",
+          "meaningArEg": "ملاحظة ومراقبة دقيقة بالعين",
+          "glossEs": null,
+          "exampleEs": "La paciente observación astronómica desveló un nuevo asteroide.",
+          "exampleAr": "كشفت الملاحظة الفلكية الصبورة عن كويكب جديد.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La paciente observación astronómica desveló un nuevo asteroide.",
+          "ar": "كشفت الملاحظة الفلكية الصبورة عن كويكب جديد.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ocupación",
+      "normalized": "ocupación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ocupacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/okupaθiˈon/",
+      "pronunciationHintAr": "وكوباثيون",
+      "internalRank": 96,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مهنة وشغل شاغل / إشغال الفندق",
+          "meaningArEg": "شغلة ووظيفة أو نسبة إشغال الفندق",
+          "glossEs": null,
+          "exampleEs": "La alta ocupación hotelera en verano batió récords históricos.",
+          "exampleAr": "حطمت نسبة إشغال الفنادق المرتفعة في الصيف أرقاماً قياسية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La alta ocupación hotelera en verano batió récords históricos.",
+          "ar": "حطمت نسبة إشغال الفنادق المرتفعة في الصيف أرقاماً قياسية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "organización",
+      "normalized": "organización",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "organizacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/oɾganiθaθiˈon/",
+      "pronunciationHintAr": "ورجانيثاثيون",
+      "internalRank": 97,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تنظيم وتنسيق منظم / منظمة وهيئة",
+          "meaningArEg": "تنظيم وترتيب أو جمعية ومنظمة",
+          "glossEs": null,
+          "exampleEs": "La perfecta organización del congreso internacional mereció aplausos.",
+          "exampleAr": "استحق التنظيم المثالي للمؤتمر الدولي التصفيق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La perfecta organización del congreso internacional mereció aplausos.",
+          "ar": "استحق التنظيم المثالي للمؤتمر الدولي التصفيق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "participación",
+      "normalized": "participación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "participacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/paɾtiθipaθiˈon/",
+      "pronunciationHintAr": "بارتيثيباثيون",
+      "internalRank": 98,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مشاركة ومساهمة فعالة في الفعالية",
+          "meaningArEg": "مشاركة وحضور ومساهمة في الحدث",
+          "glossEs": null,
+          "exampleEs": "La masiva participación ciudadana desbordó todas las previsiones.",
+          "exampleAr": "فاقت المشاركة الشعبية الواسعة كل التوقعات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La masiva participación ciudadana desbordó todas las previsiones.",
+          "ar": "فاقت المشاركة الشعبية الواسعة كل التوقعات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "percepción",
+      "normalized": "percepción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "percepcones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/peɾθepθiˈon/",
+      "pronunciationHintAr": "بيرثيبثيون",
+      "internalRank": 99,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إدراك حسي وفهم ووعي بالأشياء",
+          "meaningArEg": "إحساس وإدراك وفهم واعي",
+          "glossEs": null,
+          "exampleEs": "Su aguda percepción de los detalles le convirtió en buen detective.",
+          "exampleAr": "جعل منه إدراكه الحاد للتفاصيل محققاً بارعاً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su aguda percepción de los detalles le convirtió en buen detective.",
+          "ar": "جعل منه إدراكه الحاد للتفاصيل محققاً بارعاً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "petición",
+      "normalized": "petición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "peticones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/petiθiˈon/",
+      "pronunciationHintAr": "بيتيثيون",
+      "internalRank": 100,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طلب ورجاء ملتمس من السلطة",
+          "meaningArEg": "طلب ورجاء رسمي متقدم للجهة",
+          "glossEs": null,
+          "exampleEs": "Presentó una formal petición de beca ante el rectorado universitario.",
+          "exampleAr": "قدم طلباً رسمياً للحصول على منحة أمام رئاسة الجامعة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Presentó una formal petición de beca ante el rectorado universitario.",
+          "ar": "قدم طلباً رسمياً للحصول على منحة أمام رئاسة الجامعة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "población",
+      "normalized": "población",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "poblacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/poblaθiˈon/",
+      "pronunciationHintAr": "بوبلاثيون",
+      "internalRank": 101,
+      "tags": [
+        "domain:city",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سكان وأهالي المنطقة / بلدة مأهولة",
+          "meaningArEg": "سكان وناس أو بلد ساكنين فيها",
+          "glossEs": null,
+          "exampleEs": "La población total del municipio supera los cien mil habitantes.",
+          "exampleAr": "يتجاوز إجمالي سكان البلدية مئة ألف نسمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La población total del municipio supera los cien mil habitantes.",
+          "ar": "يتجاوز إجمالي سكان البلدية مئة ألف نسمة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "posición",
+      "normalized": "posición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "posicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/posiθiˈon/",
+      "pronunciationHintAr": "بوسيثيون",
+      "internalRank": 102,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موضع وموقع جغرافي / منصب ومكانة",
+          "meaningArEg": "مكان وموقع أو منصب ومركز مرموق",
+          "glossEs": null,
+          "exampleEs": "Ocupa una posición directiva relevante en la multinacional.",
+          "exampleAr": "يشغل منصباً إدارياً مرموقاً في الشركة متعددة الجنسيات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ocupa una posición directiva relevante en la multinacional.",
+          "ar": "يشغل منصباً إدارياً مرموقاً في الشركة متعددة الجنسيات.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "preparación",
+      "normalized": "preparación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "preparacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾepaɾaθiˈon/",
+      "pronunciationHintAr": "بريباراثيون",
+      "internalRank": 103,
+      "tags": [
+        "domain:food",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تحضير وإعداد مسبق للحدث",
+          "meaningArEg": "تجهيز وتحضير مسبق للحاجة",
+          "glossEs": null,
+          "exampleEs": "La lenta preparación del guiso tradicional requiere paciencia.",
+          "exampleAr": "يتطلب التحضير المتأني لليخنة التقليدية صبراً.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La lenta preparación del guiso tradicional requiere paciencia.",
+          "ar": "يتطلب التحضير المتأني لليخنة التقليدية صبراً.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "presentación",
+      "normalized": "presentación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "presentacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pɾesentaθiˈon/",
+      "pronunciationHintAr": "بريسينتاثيون",
+      "internalRank": 104,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تقديم وعرض للمشروع / تعارف",
+          "meaningArEg": "تقديم وعرض مشروع أو تعارف",
+          "glossEs": null,
+          "exampleEs": "La brillante presentación multimedia cautivó a los inversores.",
+          "exampleAr": "أسرت العرض التقديمي المتعدد الوسائط المستثمرين.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La brillante presentación multimedia cautivó a los inversores.",
+          "ar": "أسرت العرض التقديمي المتعدد الوسائط المستثمرين.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "producción",
+      "normalized": "producción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "produccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾodukθiˈon/",
+      "pronunciationHintAr": "برودوكثيون",
+      "internalRank": 105,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إنتاج صناعي وزراعي وثقافي",
+          "meaningArEg": "إنتاج مصانع وزراعة وفن",
+          "glossEs": null,
+          "exampleEs": "La producción nacional de aceite de oliva lidera el ranking mundial.",
+          "exampleAr": "يتصدر الإنتاج الوطني لزيت الزيتون التصنيف العالمي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La producción nacional de aceite de oliva lidera el ranking mundial.",
+          "ar": "يتصدر الإنتاج الوطني لزيت الزيتون التصنيف العالمي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "profesión",
+      "normalized": "profesión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "profesones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pɾofesiˈon/",
+      "pronunciationHintAr": "بروفيسيون",
+      "internalRank": 106,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مهنة وحرفة يمارسها الإنسان لكسب العيش",
+          "meaningArEg": "شغلانة ومهنة بيعيش منها",
+          "glossEs": null,
+          "exampleEs": "Ejerce la noble profesión médica con devoción intachable.",
+          "exampleAr": "يمارس مهنة الطب النبيلة بإخلاص لا غبار عليه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ejerce la noble profesión médica con devoción intachable.",
+          "ar": "يمارس مهنة الطب النبيلة بإخلاص لا غبار عليه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "programación",
+      "normalized": "programación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "programacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾogɾamaθiˈon/",
+      "pronunciationHintAr": "بروجراماثيون",
+      "internalRank": 107,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "برمجة حاسوبية / جدول برامج تلفزيونية",
+          "meaningArEg": "برمجة كمبيوتر وأكواد أو جدول قنوات",
+          "glossEs": null,
+          "exampleEs": "Aprende el lenguaje de programación Python en un curso intensivo.",
+          "exampleAr": "يتعلم لغة البرمجة بايثون في دورة مكثفة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Aprende el lenguaje de programación Python en un curso intensivo.",
+          "ar": "يتعلم لغة البرمجة بايثون في دورة مكثفة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pronunciación",
+      "normalized": "pronunciación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "pronunciacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pɾonunθiaθiˈon/",
+      "pronunciationHintAr": "برونونثياثيون",
+      "internalRank": 108,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نطق سليم ومخارج حروف واضحة",
+          "meaningArEg": "نطق سليم ومخارج ألفاظ واضحة",
+          "glossEs": null,
+          "exampleEs": "Mejoró su correcta pronunciación de la erre con trabalenguas.",
+          "exampleAr": "حسّن نطقه الصحيح لحرف الراء بالتمارين اللسانية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Mejoró su correcta pronunciación de la erre con trabalenguas.",
+          "ar": "حسّن نطقه الصحيح لحرف الراء بالتمارين اللسانية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "publicación",
+      "normalized": "publicación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "publicacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/publikaθiˈon/",
+      "pronunciationHintAr": "بوبليكاثيون",
+      "internalRank": 109,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نشر وإصدار كتاب أو مقال في مجلة",
+          "meaningArEg": "نشر كتاب أو مقال في جريدة",
+          "glossEs": null,
+          "exampleEs": "Celebró la pronta publicación de su primer poemario ilustrado.",
+          "exampleAr": "احتفل بقرب نشر أول ديوان شعري مصور له.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Celebró la pronta publicación de su primer poemario ilustrado.",
+          "ar": "احتفل بقرب نشر أول ديوان شعري مصور له.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "puntuación",
+      "normalized": "puntuación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "puntuacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/puntuaθiˈon/",
+      "pronunciationHintAr": "بونتواثيون",
+      "internalRank": 110,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "علامات الترقيم / علامات التقييم والدرجات",
+          "meaningArEg": "علامات ترقيم كتابة أو سكور درجات",
+          "glossEs": null,
+          "exampleEs": "Cuidar la correcta puntuación aclara el sentido de las frases.",
+          "exampleAr": "مراعاة علامات الترقيم الصحيحة توضح معنى الجمل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Cuidar la correcta puntuación aclara el sentido de las frases.",
+          "ar": "مراعاة علامات الترقيم الصحيحة توضح معنى الجمل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "reacción",
+      "normalized": "reacción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "reaccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/reakθiˈon/",
+      "pronunciationHintAr": "رياكثيون",
+      "internalRank": 111,
+      "tags": [
+        "domain:science",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رد فعل واستجابة فورية / تفاعل كيميائي",
+          "meaningArEg": "رد فعل سريع أو تفاعل كيميا",
+          "glossEs": null,
+          "exampleEs": "Su rápida reacción al volante evitó una colisión frontal segura.",
+          "exampleAr": "منع رد فعله السريع خلف المقود تصادماً وجهاً لوجه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Su rápida reacción al volante evitó una colisión frontal segura.",
+          "ar": "منع رد فعله السريع خلف المقود تصادماً وجهاً لوجه.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "recepción",
+      "normalized": "recepción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "recepcones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/reθepθiˈon/",
+      "pronunciationHintAr": "ريثيبثيون",
+      "internalRank": 112,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "استقبال الفندق / حفل استقبال الضيوف",
+          "meaningArEg": "ريسبشن استقبال فندق أو حفلة ترحيب",
+          "glossEs": null,
+          "exampleEs": "El huésped recogió la llave magnética en la recepción del hotel.",
+          "exampleAr": "استلم النزيل المفتاح الممغنط من مكتب استقبال الفندق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El huésped recogió la llave magnética en la recepción del hotel.",
+          "ar": "استلم النزيل المفتاح الممغنط من مكتب استقبال الفندق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "recomendación",
+      "normalized": "recomendación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "recomendacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/rekomendaθiˈon/",
+      "pronunciationHintAr": "ريكومينداثيون",
+      "internalRank": 113,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توصية ونصيحة مسداة من خبير",
+          "meaningArEg": "توصية ونصيحة من حد بيفهم",
+          "glossEs": null,
+          "exampleEs": "Siguió la acertada recomendación del camarero y pidió el pescado del día.",
+          "exampleAr": "اتبع توصية النادل السديدة وطلب سمك صيد اليوم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Siguió la acertada recomendación del camarero y pidió el pescado del día.",
+          "ar": "اتبع توصية النادل السديدة وطلب سمك صيد اليوم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "reducción",
+      "normalized": "reducción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "reduccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/redukθiˈon/",
+      "pronunciationHintAr": "ريدوكثيون",
+      "internalRank": 114,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تخفيض وتقليص للنفقات أو الأسعار",
+          "meaningArEg": "تخفيض في المصاريف والأسعار",
+          "glossEs": null,
+          "exampleEs": "Pactaron una consensuada reducción de la jornada laboral estival.",
+          "exampleAr": "اتفقوا على تقليص متوافق عليه لساعات العمل الصيفية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Pactaron una consensuada reducción de la jornada laboral estival.",
+          "ar": "اتفقوا على تقليص متوافق عليه لساعات العمل الصيفية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "resolución",
+      "normalized": "resolución",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "resolucones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/resoluθiˈon/",
+      "pronunciationHintAr": "ريسولوثيون",
+      "internalRank": 115,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قرار حاسم / حل معضلة / دقة شاشة",
+          "meaningArEg": "قرار حاسم أو حل مشكلة أو جودة شاشة",
+          "glossEs": null,
+          "exampleEs": "La firme resolución judicial zanjó el litigio de linderos.",
+          "exampleAr": "حسم القرار القضائي الصارم النزاع حول الحدود.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La firme resolución judicial zanjó el litigio de linderos.",
+          "ar": "حسم القرار القضائي الصارم النزاع حول الحدود.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "selección",
+      "normalized": "selección",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "seleccones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/selekθiˈon/",
+      "pronunciationHintAr": "سيليكثيون",
+      "internalRank": 116,
+      "tags": [
+        "domain:sports",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "انتقاء واختيار نخبوي / منتخب رياضي",
+          "meaningArEg": "فرز واختيار أو منتخب كورة البلد",
+          "glossEs": null,
+          "exampleEs": "La selección nacional de fútbol ganó el campeonato continental.",
+          "exampleAr": "فاز المنتخب الوطني لكرة القدم بالبطولة القارية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La selección nacional de fútbol ganó el campeonato continental.",
+          "ar": "فاز المنتخب الوطني لكرة القدم بالبطولة القارية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sensación",
+      "normalized": "sensación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "sensacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sensaθiˈon/",
+      "pronunciationHintAr": "سينساثيون",
+      "internalRank": 117,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إحساس وشعور داخلي بالراحة أو البرد",
+          "meaningArEg": "إحساس وشعور براحة أو سقعة",
+          "glossEs": null,
+          "exampleEs": "Sintió una agradable sensación de alivio al quitarse las botas.",
+          "exampleAr": "شعر بإحساس مريح وممتع عند خلع الحذاء.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Sintió una agradable sensación de alivio al quitarse las botas.",
+          "ar": "شعر بإحساس مريح وممتع عند خلع الحذاء.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "separación",
+      "normalized": "separación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "separacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/sepaɾaθiˈon/",
+      "pronunciationHintAr": "سيباراثيون",
+      "internalRank": 118,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "فصل وعزل للمكونات / فراق بين شخصين",
+          "meaningArEg": "فصل وفرز أو فراق وبعد",
+          "glossEs": null,
+          "exampleEs": "La correcta separación de basuras facilita el reciclaje ecológico.",
+          "exampleAr": "يسهل الفصل الصحيح للنفايات إعادة التدوير البيئي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La correcta separación de basuras facilita el reciclaje ecológico.",
+          "ar": "يسهل الفصل الصحيح للنفايات إعادة التدوير البيئي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "situación",
+      "normalized": "situación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "situacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/situaθiˈon/",
+      "pronunciationHintAr": "سيتواثيون",
+      "internalRank": 119,
+      "tags": [
+        "domain:social",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موقف وظرف راهن / موقع جغرافي",
+          "meaningArEg": "موقف ووضع حالي أو لوكيشن مكان",
+          "glossEs": null,
+          "exampleEs": "La favorable situación geográfica de la bahía la protege del viento.",
+          "exampleAr": "يحمي الموقع الجغرافي الملائم للخليج من الرياح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La favorable situación geográfica de la bahía la protege del viento.",
+          "ar": "يحمي الموقع الجغرافي الملائم للخليج من الرياح.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "suscripción",
+      "normalized": "suscripción",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "suscripcones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/suskɾipθiˈon/",
+      "pronunciationHintAr": "سوسكريبثيون",
+      "internalRank": 120,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اشتراك دوري في مجلة أو خدمة رقمية",
+          "meaningArEg": "اشتراك شهري في مجلة أو خدمة نت",
+          "glossEs": null,
+          "exampleEs": "Renovó la suscripción anual a la revista de divulgación científica.",
+          "exampleAr": "جدد الاشتراك السنوي في مجلة التبسيط العلمي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Renovó la suscripción anual a la revista de divulgación científica.",
+          "ar": "جدد الاشتراك السنوي في مجلة التبسيط العلمي.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tradición",
+      "normalized": "tradición",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tradicones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾadiθiˈon/",
+      "pronunciationHintAr": "تراديثيون",
+      "internalRank": 121,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تراث وعادة متوارثة عبر الأجيال",
+          "meaningArEg": "عادة وتراث بلدي متوارث من أجدادنا",
+          "glossEs": null,
+          "exampleEs": "La arraigada tradición de las fiestas patronales une a todo el pueblo.",
+          "exampleAr": "توحد تقاليد احتفالات القرية الراسخة أهالي البلدة كلهم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La arraigada tradición de las fiestas patronales une a todo el pueblo.",
+          "ar": "توحد تقاليد احتفالات القرية الراسخة أهالي البلدة كلهم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "transformación",
+      "normalized": "transformación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "transformacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/tɾansfoɾmaθiˈon/",
+      "pronunciationHintAr": "ترانسفورماثيون",
+      "internalRank": 122,
+      "tags": [
+        "domain:city",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تحول وتغير جذري في المظهر أو الجوهر",
+          "meaningArEg": "تحول وتغيير شامل في الشكل والمضمون",
+          "glossEs": null,
+          "exampleEs": "La profunda transformación urbanística modernizó la vieja dársena.",
+          "exampleAr": "حدث التحول العمراني العميق تحديثاً في الرصيف القديم.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La profunda transformación urbanística modernizó la vieja dársena.",
+          "ar": "حدث التحول العمراني العميق تحديثاً في الرصيف القديم.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ubicación",
+      "normalized": "ubicación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "ubicacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ubikaθiˈon/",
+      "pronunciationHintAr": "وبيكاثيون",
+      "internalRank": 123,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موقع وموضع جغرافي دقيق على الخريطة",
+          "meaningArEg": "لوكيشن وموقع بالظبط ع الخريطة",
+          "glossEs": null,
+          "exampleEs": "El hotel tiene una ubicación inmejorable junto a la catedral.",
+          "exampleAr": "يتمتع الفندق بموقع لا يعلى عليه بجوار الكاتدرائية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El hotel tiene una ubicación inmejorable junto a la catedral.",
+          "ar": "يتمتع الفندق بموقع لا يعلى عليه بجوار الكاتدرائية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "utilización",
+      "normalized": "utilización",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "utilizacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/utiliθaθiˈon/",
+      "pronunciationHintAr": "وتيليثاثيون",
+      "internalRank": 124,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "استعمال واستغلال رشيد للموارد",
+          "meaningArEg": "استخدام واستغلال ذكي للموارد",
+          "glossEs": null,
+          "exampleEs": "La racional utilización del agua de riego salvó la cosecha.",
+          "exampleAr": "أنقذ الاستخدام الرشيد لمياه الري المحصول.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La racional utilización del agua de riego salvó la cosecha.",
+          "ar": "أنقذ الاستخدام الرشيد لمياه الري المحصول.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "vacación",
+      "normalized": "vacación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "vacacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/bakaθiˈon/",
+      "pronunciationHintAr": "باكاثيون",
+      "internalRank": 125,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عطلة وإجازة استجمام سنوية / إجازات",
+          "meaningArEg": "أجازة ومصيف وراحة من الشغل",
+          "glossEs": null,
+          "exampleEs": "Disfrutaron de una merecida vacación de verano en la costa.",
+          "exampleAr": "استمتعوا بإجازة صيفية مستحقة على الساحل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Disfrutaron de una merecida vacación de verano en la costa.",
+          "ar": "استمتعوا بإجازة صيفية مستحقة على الساحل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "valoración",
+      "normalized": "valoración",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "valoracones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/baloɾaθiˈon/",
+      "pronunciationHintAr": "بالوراثيون",
+      "internalRank": 126,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تقييم وتقدير للأهمية أو السعر",
+          "meaningArEg": "تقييم وتثمين لقيمة الشيء",
+          "glossEs": null,
+          "exampleEs": "El informe pericial incluye una exhaustiva valoración del inmueble.",
+          "exampleAr": "يتضمن تقرير الخبير تقييماً شاملاً للعقار.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El informe pericial incluye una exhaustiva valoración del inmueble.",
+          "ar": "يتضمن تقرير الخبير تقييماً شاملاً للعقار.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "variación",
+      "normalized": "variación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "variacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/baɾiaθiˈon/",
+      "pronunciationHintAr": "بارياثيون",
+      "internalRank": 127,
+      "tags": [
+        "domain:nature",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تغير وتفاوت طفيف في القيم أو الدرجات",
+          "meaningArEg": "تغيير واختلاف بسيط في الأرقام",
+          "glossEs": null,
+          "exampleEs": "Se prevé una ligera variación en las temperaturas nocturnas.",
+          "exampleAr": "يُتوقع حدوث تفاوت طفيف في درجات الحرارة الليلية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Se prevé una ligera variación en las temperaturas nocturnas.",
+          "ar": "يُتوقع حدوث تفاوت طفيف في درجات الحرارة الليلية.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "visión",
+      "normalized": "visión",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "visones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bisiˈon/",
+      "pronunciationHintAr": "بيسيون",
+      "internalRank": 128,
+      "tags": [
+        "domain:study",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رؤية وبصر / نظرة استراتيجية ثاقبة",
+          "meaningArEg": "نظر وبصر أو رؤية مستقبلية شاطرة",
+          "glossEs": null,
+          "exampleEs": "El líder empresarial demostró una clara visión de futuro.",
+          "exampleAr": "أظهر قائد الأعمال رؤية واضحة للمستقبل.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El líder empresarial demostró una clara visión de futuro.",
+          "ar": "أظهر قائد الأعمال رؤية واضحة للمستقبل.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "vocación",
+      "normalized": "vocación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "vocacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/bokaθiˈon/",
+      "pronunciationHintAr": "بوكاثيون",
+      "internalRank": 129,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نداء قلبي وشغف فطري بمهنة معينة",
+          "meaningArEg": "حب وشغف حقيقي لمهنة معينة",
+          "glossEs": null,
+          "exampleEs": "Ejerce la noble enseñanza por auténtica vocación pedagógica.",
+          "exampleAr": "يمارس التعليم النبيل بدافع الشغف التربوي الصادق.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Ejerce la noble enseñanza por auténtica vocación pedagógica.",
+          "ar": "يمارس التعليم النبيل بدافع الشغف التربوي الصادق.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "votación",
+      "normalized": "votación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "votacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/botaθiˈon/",
+      "pronunciationHintAr": "بوتاثيون",
+      "internalRank": 130,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اقتراع وتصويت لفرز الأصوات والآراء",
+          "meaningArEg": "تصويت وفرز أصوات في الصندوق",
+          "glossEs": null,
+          "exampleEs": "La votación a mano alzada aprobó la propuesta vecinal.",
+          "exampleAr": "أقر التصويت برفع الأيدي المقترح الأهلي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La votación a mano alzada aprobó la propuesta vecinal.",
+          "ar": "أقر التصويت برفع الأيدي المقترح الأهلي.",
+          "arEg": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-hablar-de-experiencias",
+    "unitSlug": "a2-u5-experiences",
+    "levelCode": "A2",
+    "titleAr": "التحدث عن الخبرات الحياتية والمهنية وتجربة أشياء جديدة",
+    "titleEs": "Hablar de experiencias personales y laborales",
+    "subtitleAr": "دمج Pretérito Perfecto لتقديم نبذة عن التجارب وتجربة الأطعمة والفرص",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يتحدث المتعلم عن تجاربه الشخصية والمهنية السابقة بثقة وسلاسة.",
+        "أن يوظف الفعل probar للتعبير عن تجربة طعام أو نشاط جديد لأول مرة.",
+        "أن يصف تجربة العيش أو العمل في الخارج (en el extranjero) والفرص المتاحة (oportunidad)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "سرد الخبرات في مقابلات العمل والتعارف",
+          "explanationAr": "عند الحديث عن سيرتك وتجاربك الشخصية ندمج الماضي القريب للتعبير عن إنجازات الحياة:\n- **En mi vida he hecho** muchas cosas interesantes (في حياتي قمت بأشياء كثيرة شيقة).\n- **He trabajado en el extranjero** durante dos años (عملتُ في الخارج مدة عامين).\n- **He tenido la oportunidad de** aprender idiomas (أتيحت لي الفرصة لتعلم اللغات).\n- **He probado** platos típicos de muchos países (جربتُ وتذوقتُ أطباقاً تقليدية من بلدان كثيرة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام intentar بدلاً من probar عند الحديث عن تذوق الطعام أو تجربة الملابس (الصواب: probar la comida، بينما intentar تعني يحاول بذل جهد).",
+        "الخلط بين en el extranjero (في الخارج / خارج الوطن) و un extranjero (شخص أجنبي غريب)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا جربت الأكل الإسباني، واشتغلت برة في الخليج وجاتلي فرصة كويسة». في الإسبانية: He probado la comida española, he trabajado en el extranjero y he tenido una buena oportunidad."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا، عند تجربة أكلة جديدة، يسألك المضيف باهتمام: «¿Qué tal? ¿Te ha gustado?» ومن اللياقة أن تجيب: «¡Está riquísimo! Me ha encantado»."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-hablar-de-experiencias-intro",
+        "type": "explanation",
+        "titleAr": "الخبرات والفرص والتجارب",
+        "bodyAr": "المفردات التعبيرية للحديث عن الخبرات:\n- **la experiencia**: الخبرة / التجربة الحياتية\n- **la vida**: الحياة\n- **el país**: البلد / الوطن\n- **el extranjero**: الخارج (vivir en el extranjero)\n- **la oportunidad**: الفرصة\n- **probar**: يجرّب / يتذوق (فعل يغير جذره: o -> ue)",
+        "examples": [
+          {
+            "es": "Ha sido una experiencia inolvidable.",
+            "ar": "لقد كانت تجربة لا تُنسى."
+          },
+          {
+            "es": "He tenido la oportunidad de viajar por trabajo.",
+            "ar": "أتيحت لي الفرصة للسفر من أجل العمل."
+          },
+          {
+            "es": "Nunca he probado este tipo de dulce.",
+            "ar": "لم أجرب هذا النوع من الحلوى قط."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "experiencia",
+      "vida",
+      "país",
+      "extranjero",
+      "oportunidad",
+      "probar"
+    ],
+    "reviewVocabulary": [
+      "empresa",
+      "idiomas"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يتحدث المتعلم عن تجاربه الشخصية والمهنية السابقة بثقة وسلاسة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-hex-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل المناسب لتذوق طعام جديد لأول مرة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل إسباني يعني 'يجرب / يتذوق' طعاماً أو شراباً؟",
+        "stemEs": "¿Has _____ alguna vez la tortilla española?",
+        "stemAr": "هل ... التورتيا الإسبانية من قبل؟",
+        "options": [
+          {
+            "id": "ex-a2-hex-1_a",
+            "text": "probado",
+            "textAr": "تذوقت / جربت (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-hex-1_b",
+            "text": "vivido",
+            "textAr": "عشت",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأطعمة نستخدم معها probar للتذوق وليس vivir."
+          },
+          {
+            "id": "ex-a2-hex-1_c",
+            "text": "viajado",
+            "textAr": "سافرت",
+            "isCorrect": false,
+            "distractorRationaleAr": "viajado خاصة بالأسفار وليس الأطعمة."
+          }
+        ],
+        "targetVocab": [
+          "probar",
+          "experiencia"
+        ],
+        "explanationAr": "الفعل probar يعني يجرب أو يتذوق اسم مفعوله probado.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-hex-1_a"
+          ],
+          "selectedOptionId": "ex-a2-hex-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-hex-1_b": "الأطعمة نستخدم معها probar للتذوق وليس vivir.",
+          "ex-a2-hex-1_c": "viajado خاصة بالأسفار وليس الأطعمة."
+        }
+      },
+      {
+        "id": "ex-a2-hex-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الدالة على العيش خارج الوطن",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية التي تعني 'الخارج' (مثل: العمل في الخارج)",
+        "stemEs": "Muchos jóvenes quieren trabajar en el _____.",
+        "stemAr": "الكثير من الشباب يريدون العمل في الخارج.",
+        "targetVocab": [
+          "extranjero"
+        ],
+        "explanationAr": "تعبير en el extranjero يعني في الخارج / خارج حدود الوطن.",
+        "answerKey": {
+          "accepted": [
+            "extranjero"
+          ],
+          "acceptableAnswers": [
+            "extranjero"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-hex-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المعبرة عن إتاحة الإمكانية المواتية",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى المناسبة المواتية التي تفتح باب التطور؟",
+        "stemEs": "Este trabajo ha sido una gran _____ para mi carrera.",
+        "stemAr": "هذا العمل كان ... رائعة لمسيرتي المهنية.",
+        "options": [
+          {
+            "id": "ex-a2-hex-3_a",
+            "text": "oportunidad",
+            "textAr": "فرصة مواتية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-hex-3_b",
+            "text": "país",
+            "textAr": "بلد",
+            "isCorrect": false,
+            "distractorRationaleAr": "país تعني بلداً ولا تكمل المعنى المجازي للفرصة."
+          },
+          {
+            "id": "ex-a2-hex-3_c",
+            "text": "vida",
+            "textAr": "حياة",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب الأنسب للوظيفة هو una gran oportunidad."
+          }
+        ],
+        "targetVocab": [
+          "oportunidad",
+          "país",
+          "vida"
+        ],
+        "explanationAr": "كلمة oportunidad تعني فرصة سانحة (una gran oportunidad).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-hex-3_a"
+          ],
+          "selectedOptionId": "ex-a2-hex-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-hex-3_b": "país تعني بلداً ولا تكمل المعنى المجازي للفرصة.",
+          "ex-a2-hex-3_c": "التركيب الأنسب للوظيفة هو una gran oportunidad."
+        }
+      },
+      {
+        "id": "ex-a2-hex-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن خوض تجارب متعددة في الحياة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-hex-4_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "ex-a2-hex-4_t2",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "ex-a2-hex-4_t3",
+            "kind": "token",
+            "text": "vida"
+          },
+          {
+            "id": "ex-a2-hex-4_t4",
+            "kind": "token",
+            "text": "he"
+          },
+          {
+            "id": "ex-a2-hex-4_t5",
+            "kind": "token",
+            "text": "tenido"
+          },
+          {
+            "id": "ex-a2-hex-4_t6",
+            "kind": "token",
+            "text": "muchas"
+          },
+          {
+            "id": "ex-a2-hex-4_t7",
+            "kind": "token",
+            "text": "experiencias"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "En mi vida he tenido muchas experiencias"
+          ],
+          "tokenOrder": [
+            "ex-a2-hex-4_t1",
+            "ex-a2-hex-4_t2",
+            "ex-a2-hex-4_t3",
+            "ex-a2-hex-4_t4",
+            "ex-a2-hex-4_t5",
+            "ex-a2-hex-4_t6",
+            "ex-a2-hex-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: شبه الجملة En mi vida ثم الفعل المركب he tenido ثم المفعول به muchas experiencias.",
+        "targetVocab": [
+          "vida",
+          "experiencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-hex-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما تعلمه المتحدث في رحلته",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما استفاده المتحدث من عيشه في الخارج",
+        "stemEs": "Vivir en el extranjero ha sido una experiencia maravillosa.",
+        "stemAr": "العيش في الخارج كان تجربة رائعة.",
+        "options": [
+          {
+            "id": "ex-a2-hex-5_a",
+            "text": "experiencia",
+            "textAr": "تجربة وخبرة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-hex-5_b",
+            "text": "empresa",
+            "textAr": "شركة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على وصف التجربة الحياتية experiencia."
+          },
+          {
+            "id": "ex-a2-hex-5_c",
+            "text": "idiomas",
+            "textAr": "لغات",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصف المعيشة بالتجربة الرائعة."
+          }
+        ],
+        "targetVocab": [
+          "experiencia",
+          "extranjero",
+          "empresa",
+          "idiomas"
+        ],
+        "explanationAr": "المتحدث قال: una experiencia maravillosa.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_experiencia_maravillosa.mp3",
+        "speechEs": "Vivir en el extranjero ha sido una experiencia maravillosa.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-hex-5_a"
+          ],
+          "selectedOptionId": "ex-a2-hex-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-hex-5_b": "المتحدث ركز على وصف التجربة الحياتية experiencia.",
+          "ex-a2-hex-5_c": "المتحدث وصف المعيشة بالتجربة الرائعة."
+        }
+      },
+      {
+        "id": "ex-a2-hex-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق رغبتك في اغتنام فرصة مهنية جديدة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأنك حصلت على فرصة جيدة في بلد جديد",
+        "stemEs": "He tenido una buena oportunidad en este país.",
+        "stemAr": "لقد حصلت على فرصة جيدة في هذا البلد.",
+        "audioKey": "pending/a2_buena_oportunidad.mp3",
+        "targetVocab": [
+          "oportunidad",
+          "país"
+        ],
+        "explanationAr": "احرص على نطق حرف d في oportunidad و p في país بانفجار هوائي خفيف.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_buena_oportunidad.mp3",
+          "modelAnswer": "He tenido una buena oportunidad en este país."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "سرد الخبرات في مقابلات العمل والتعارف"
+    ]
+  }
+}

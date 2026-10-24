@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-donde-esta",
+    "unitSlug": "a1-u8-places",
+    "levelCode": "A1",
+    "titleAr": "أين يوجد؟ السؤال عن الأماكن وتحديد موقعها بـ Está",
+    "titleEs": "¿Dónde está? Localizar lugares",
+    "subtitleAr": "استخدام ¿Dónde está? مع حروف المكان وإدغام del",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسأل المتعلم عن الأماكن المحددة باستخدام ¿Dónde está...? أو ¿Dónde están...? بدقة.",
+        "أن يستخدم تعبيرات الموقع: cerca de (قريب من) و lejos de (بعيد عن) و al lado de (بجانب).",
+        "أن يطبق إدغام حرف الجر de مع أداة المذكر el ليصبح del بصورة تلقائية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "السؤال بـ ¿Dónde está? وإدغام del",
+          "explanationAr": "للسؤال عن موقع مكان محدد ومعرّف نستخدم: ¿Dónde está + اسم مفرد؟ مثل: ¿Dónde está el banco? وللجمع: ¿Dónde están los museos? عند الإجابة نستخدم está + ظرف المكان: está cerca de (قريب من)، está lejos de (بعيد عن). قاعدة حاسمة: عندما يلتقي de مع أداة التعريف el يندمجان إجبارياً في del: está cerca del parque (وليس *de el parque*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان إدغام de + el في del (كتابة *cerca de el museo* بدلاً من cerca del museo).",
+        "استخدام الفعل Ser لتحديد الموقع الجغرافي للأماكن (مثل القول *el banco es aquí* بدلاً من el banco está aquí)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في العامية المصرية نقول: «البنك فين؟ قريّب من هنا جنب المحطة». في الإسبانية: ¿Dónde está el banco? Está cerca de aquí, al lado de la estación."
+        }
+      ],
+      "culturalNoteAr": "عند سؤال الإسبان في الشارع عن مكان، من المعتاد أن تبدأ بعبارة مهذبة: «Por favor, ¿dónde está...?» أو «Perdona, ¿dónde está...?» قبل طرح السؤال مباشرة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-donde-esta-intro",
+        "type": "explanation",
+        "titleAr": "تحديد مواقع الأماكن",
+        "bodyAr": "لتحديد موقع مكان ما في المدينة:\n- **¿Dónde está...?**: أين يوجد / أين يقع...؟ (للمفرد)\n- **está cerca de**: يقع قريباً من\n- **está lejos de**: يقع بعيداً عن\n- **de + el = del**: إدغام واجب للمذكر، بينما المؤنث يبقى **de la**.",
+        "examples": [
+          {
+            "es": "El banco está cerca del centro.",
+            "ar": "البنك يقع قريباً من وسط المدينة."
+          },
+          {
+            "es": "El museo está lejos de la estación.",
+            "ar": "المتحف يقع بعيداً عن المحطة."
+          },
+          {
+            "es": "La farmacia está en esta avenida.",
+            "ar": "الصيدلية تقع في هذا الشارع العريض."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dónde",
+      "cerca",
+      "lejos",
+      "centro",
+      "avenida"
+    ],
+    "reviewVocabulary": [
+      "banco",
+      "estación",
+      "museo",
+      "parque"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يسأل المتعلم عن الأماكن المحددة باستخدام ¿Dónde está...? أو ¿Dónde están...? بدقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-don-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الإدغام الصحيحة مع المذكر",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تدمج de مع أداة المذكر el أمام كلمة centro؟",
+        "stemEs": "El banco está cerca _____ centro.",
+        "stemAr": "البنك قريب من وسط المدينة.",
+        "options": [
+          {
+            "id": "ex-a1-don-1_o1",
+            "text": "del",
+            "textAr": "إدغام de + el الإلزامي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-don-1_o2",
+            "text": "de el",
+            "textAr": "تركيب مفصول غير جائز",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الإسبانية يلزم إدغام de مع el ليصبح del."
+          },
+          {
+            "id": "ex-a1-don-1_o3",
+            "text": "de la",
+            "textAr": "أداة مؤنث مع اسم مذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "centro اسم مذكر ويأخذ el المدمجة في del."
+          }
+        ],
+        "targetVocab": [
+          "centro",
+          "cerca",
+          "banco"
+        ],
+        "explanationAr": "القاعدة النحوية تلزم إدغام de + el لتصبح del أمام الأسماء المذكرة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-don-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-don-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-don-1_o2": "في الإسبانية يلزم إدغام de مع el ليصبح del.",
+          "ex-a1-don-1_o3": "centro اسم مذكر ويأخذ el المدمجة في del."
+        }
+      },
+      {
+        "id": "ex-a1-don-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة للسؤال عن المكان",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب أداة الاستفهام الإسبانية التي تعني 'أين'",
+        "stemEs": "¿_____ está el museo nacional?",
+        "stemAr": "أين يقع المتحف الوطني؟",
+        "targetVocab": [
+          "dónde"
+        ],
+        "explanationAr": "أداة الاستفهام عن المكان هي dónde مع علامة النبر (tilde).",
+        "answerKey": {
+          "accepted": [
+            "dónde",
+            "donde"
+          ],
+          "acceptableAnswers": [
+            "dónde",
+            "donde"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-don-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الدال على البُعد",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "إذا كانت المحطة على مسافة طويلة بالسيارة، فماذا نقول؟",
+        "stemEs": "La estación está _____ de aquí.",
+        "stemAr": "المحطة تقع ... من هنا.",
+        "options": [
+          {
+            "id": "ex-a1-don-3_o1",
+            "text": "lejos",
+            "textAr": "بعيد",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-don-3_o2",
+            "text": "cerca",
+            "textAr": "قريب",
+            "isCorrect": false,
+            "distractorRationaleAr": "cerca تعني قريب وليس بعيد."
+          },
+          {
+            "id": "ex-a1-don-3_o3",
+            "text": "dónde",
+            "textAr": "أين",
+            "isCorrect": false,
+            "distractorRationaleAr": "dónde أداة استفهام ولا تصف البعد في جملة خبرية."
+          }
+        ],
+        "targetVocab": [
+          "lejos",
+          "cerca",
+          "estación"
+        ],
+        "explanationAr": "كلمة lejos تعني بعيداً (está lejos de aquí = بعيد عن هنا).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-don-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-don-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-don-3_o2": "cerca تعني قريب وليس بعيد.",
+          "ex-a1-don-3_o3": "dónde أداة استفهام ولا تصف البعد في جملة خبرية."
+        }
+      },
+      {
+        "id": "ex-a1-don-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتوضيح موقع الحديقة بجانب الشارع العريض",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-don-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a1-don-4_t2",
+            "kind": "token",
+            "text": "parque"
+          },
+          {
+            "id": "ex-a1-don-4_t3",
+            "kind": "token",
+            "text": "está"
+          },
+          {
+            "id": "ex-a1-don-4_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a1-don-4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-don-4_t6",
+            "kind": "token",
+            "text": "avenida"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El parque está en la avenida"
+          ],
+          "tokenOrder": [
+            "ex-a1-don-4_t1",
+            "ex-a1-don-4_t2",
+            "ex-a1-don-4_t3",
+            "ex-a1-don-4_t4",
+            "ex-a1-don-4_t5",
+            "ex-a1-don-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الفاعل El parque ثم الفعل está ثم حرف الجر والمكان en la avenida.",
+        "targetVocab": [
+          "parque",
+          "avenida"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-don-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر وصف الموقع المذكور",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للسؤال وحدد الكلمة المستفهم عنها",
+        "stemEs": "¿Dónde está el museo de arte?",
+        "stemAr": "أين يقع متحف الفنون؟",
+        "options": [
+          {
+            "id": "ex-a1-don-5_o1",
+            "text": "museo",
+            "textAr": "متحف",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-don-5_o2",
+            "text": "parque",
+            "textAr": "حديقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث سأل عن المتحف وليس الحديقة."
+          },
+          {
+            "id": "ex-a1-don-5_o3",
+            "text": "banco",
+            "textAr": "بنك",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث سأل عن المتحف وليس البنك."
+          }
+        ],
+        "targetVocab": [
+          "museo",
+          "parque",
+          "banco",
+          "dónde"
+        ],
+        "explanationAr": "السؤال المسموع هو: ¿Dónde está el museo de arte? والاسم هو museo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_donde_esta_museo.mp3",
+        "speechEs": "¿Dónde está el museo de arte?",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-don-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-don-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-don-5_o2": "المتحدث سأل عن المتحف وليس الحديقة.",
+          "ex-a1-don-5_o3": "المتحدث سأل عن المتحف وليس البنك."
+        }
+      },
+      {
+        "id": "ex-a1-don-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة توضح قرب المتحف من المحطة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر السائل بأن المتحف قريب من المحطة بنطق صحيح",
+        "stemEs": "El museo está cerca de la estación.",
+        "stemAr": "المتحف يقع قريباً من المحطة.",
+        "audioKey": "pending/a1_museo_cerca_estacion.mp3",
+        "targetVocab": [
+          "museo",
+          "cerca",
+          "estación"
+        ],
+        "explanationAr": "انتبه لنطق حرف c كـ ثاء في cerca في إسبانيا، ونطق s في أمريكا اللاتينية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_museo_cerca_estacion.mp3",
+          "modelAnswer": "El museo está cerca de la estación."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "السؤال بـ ¿Dónde está? وإدغام del"
+    ]
+  }
+}

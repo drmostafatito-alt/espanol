@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-conversacion-planes",
+    "unitSlug": "a2-u3-future-plans",
+    "levelCode": "A2",
+    "titleAr": "التنسيق مع الأصدقاء: الاتفاق على موعد وخطة مشتركة",
+    "titleEs": "Quedar con amigos: planes y citas",
+    "subtitleAr": "استخدام الفعل quedar واقتراح الأنشطة وتحديد نقطة اللقاء",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يستخدم المتعلم الفعل quedar للاتفاق على موعد ومكان اللقاء مع الآخرين (¿Quedamos a las siete?).",
+        "أن يقترح أنشطة ترفيهية مشتركة ويقبل أو يعتذر عن الدعوة بأدب.",
+        "أن يوظف تعبيرات التوافق: juntos, libre, buena idea, no puedo."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "استخدامات الفعل Quedar للاتفاق والمواعيد",
+          "explanationAr": "الفعل **quedar** من أكثر الأفعال حيوية في الحياة الاجتماعية الإسبانية، وله عدة معانٍ سياقية دقيقة:\n1. الاتفاق على اللقاء: ¿Dónde quedamos? (أين نتقابل؟) / Quedamos en la plaza (نلتقي في الميدان).\n2. الاتفاق على الوقت: ¿A qué hora quedamos? (في أي ساعة نلتقي؟) / Quedamos a las ocho.\n3. صيغة الاقتراح المشترك في المضارع: ¿Quedamos mañana? (هل نلتقي غداً؟)."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين quedar (يلتقي / يتفق على موعد) و quedarse (يبقى / يمكث في مكان كالمنزل: quedarse en casa).",
+        "استخدام حرف الجر a للمكان بدلاً من en مع اللقاء (الصواب: quedamos en la plaza، وليس *quedamos a la plaza*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «نتقابل فين وبكرة الساعة كام؟ نتقابل في الميدان سوا». في الإسبانية: ¿Dónde quedamos? Quedamos en la plaza juntos."
+        }
+      ],
+      "culturalNoteAr": "ثقافة «quedar» في إسبانيا مقدسة في نهاية الأسبوع؛ حيث يلتقي الأصدقاء في ميدان عام أو مقهى لتناول «tapas» قبل التوجه إلى أي وجهة أخرى."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-conversacion-planes-intro",
+        "type": "explanation",
+        "titleAr": "الاتفاق على اللقاء والخطط",
+        "bodyAr": "المفردات المفتاحية للتنسيق الاجتماعي:\n- **quedar**: يتفق على لقاء / يتقابل\n- **libre**: حر / غير مشغول (estar libre)\n- **visitar**: يزور\n- **el amigo / la amiga**: الصديق / الصديقة\n- **juntos**: معاً / سوياً\n- **la cita**: الموعد",
+        "examples": [
+          {
+            "es": "¿Estás libre este viernes por la tarde?",
+            "ar": "¿هل أنت متفرغ مساء هذا الجمعة؟"
+          },
+          {
+            "es": "Quedamos en el centro a las seis.",
+            "ar": "نلتقي في وسط المدينة عند السادسة."
+          },
+          {
+            "es": "Vamos a cenar juntos.",
+            "ar": "سوف نتناول العشاء معاً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "quedar",
+      "libre",
+      "visitar",
+      "amigo",
+      "juntos",
+      "cita"
+    ],
+    "reviewVocabulary": [
+      "centro",
+      "plaza"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يستخدم المتعلم الفعل quedar للاتفاق على موعد ومكان اللقاء مع الآخرين (¿Quedamos a las siete?).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-cnv-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الاقتراح الشائعة للقاء بين الأصدقاء",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تقترح على صديقك اللقاء في المساء؟",
+        "stemEs": "¿_____ esta tarde para tomar un café?",
+        "stemAr": "هل ... بعد ظهر اليوم لتناول القهوة؟",
+        "options": [
+          {
+            "id": "ex-a2-cnv-1_a",
+            "text": "Quedamos",
+            "textAr": "نلتقي / نتفق على موعد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnv-1_b",
+            "text": "Quedo",
+            "textAr": "صيغة المتكلم المفرد فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "للاقتراح المشترك نستخدم صيغة الجمع نحن: Quedamos."
+          },
+          {
+            "id": "ex-a2-cnv-1_c",
+            "text": "Quedan",
+            "textAr": "صيغة الغائب الجمع",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخطاب هنا موجه للشخص المقابل للمشاركة معاً."
+          }
+        ],
+        "targetVocab": [
+          "quedar",
+          "amigo"
+        ],
+        "explanationAr": "صيغة ¿Quedamos...? هي الصيغة الإسبانية المعتادة لاقتراح اللقاء.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnv-1_a"
+          ],
+          "selectedOptionId": "ex-a2-cnv-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnv-1_b": "للاقتراح المشترك نستخدم صيغة الجمع نحن: Quedamos.",
+          "ex-a2-cnv-1_c": "الخطاب هنا موجه للشخص المقابل للمشاركة معاً."
+        }
+      },
+      {
+        "id": "ex-a2-cnv-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الدالة على التفرغ وعدم الانشغال",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الصفة الإسبانية التي تعني 'متفرغ / غير مشغول'",
+        "stemEs": "El sábado por la mañana estoy _____.",
+        "stemAr": "صباح السبت أنا متفرغ.",
+        "targetVocab": [
+          "libre"
+        ],
+        "explanationAr": "كلمة libre تعني حراً أو متفرغاً (estar libre).",
+        "answerKey": {
+          "accepted": [
+            "libre"
+          ],
+          "acceptableAnswers": [
+            "libre"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnv-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الكلمة المعبرة عن الذهاب معاً",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما يقوم شخصان بنشاط في نفس الوقت والمكان، فهما يقومان به:",
+        "stemEs": "Vamos a visitar el museo _____.",
+        "stemAr": "سنزور المتحف ...",
+        "options": [
+          {
+            "id": "ex-a2-cnv-3_a",
+            "text": "juntos",
+            "textAr": "معاً / سوياً",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnv-3_b",
+            "text": "cita",
+            "textAr": "موعد (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "cita اسم ولا يصلح كحال ظرفي يصف المعية."
+          },
+          {
+            "id": "ex-a2-cnv-3_c",
+            "text": "libre",
+            "textAr": "متفرغ",
+            "isCorrect": false,
+            "distractorRationaleAr": "juntos هي الكلمة المناسبة لـ 'سوياً'."
+          }
+        ],
+        "targetVocab": [
+          "juntos",
+          "visitar",
+          "cita",
+          "libre"
+        ],
+        "explanationAr": "كلمة juntos تعني سوياً أو معاً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnv-3_a"
+          ],
+          "selectedOptionId": "ex-a2-cnv-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnv-3_b": "cita اسم ولا يصلح كحال ظرفي يصف المعية.",
+          "ex-a2-cnv-3_c": "juntos هي الكلمة المناسبة لـ 'سوياً'."
+        }
+      },
+      {
+        "id": "ex-a2-cnv-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتحديد نقطة اللقاء في الميدان",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-cnv-4_t1",
+            "kind": "token",
+            "text": "Quedamos"
+          },
+          {
+            "id": "ex-a2-cnv-4_t2",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a2-cnv-4_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a2-cnv-4_t4",
+            "kind": "token",
+            "text": "plaza"
+          },
+          {
+            "id": "ex-a2-cnv-4_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a2-cnv-4_t6",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "ex-a2-cnv-4_t7",
+            "kind": "token",
+            "text": "ocho"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quedamos en la plaza a las ocho"
+          ],
+          "tokenOrder": [
+            "ex-a2-cnv-4_t1",
+            "ex-a2-cnv-4_t2",
+            "ex-a2-cnv-4_t3",
+            "ex-a2-cnv-4_t4",
+            "ex-a2-cnv-4_t5",
+            "ex-a2-cnv-4_t6",
+            "ex-a2-cnv-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل Quedamos ثم المكان en la plaza ثم الوقت a las ocho.",
+        "targetVocab": [
+          "quedar",
+          "plaza"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnv-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد مكان اللقاء المتفق عليه",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمكالمة وحدد أين اتفق الصديقان على المقابلة",
+        "stemEs": "Podemos quedar en el centro a las siete.",
+        "stemAr": "يمكننا اللقاء في وسط المدينة عند السابعة.",
+        "options": [
+          {
+            "id": "ex-a2-cnv-5_a",
+            "text": "centro",
+            "textAr": "وسط المدينة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnv-5_b",
+            "text": "plaza",
+            "textAr": "ميدان",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال en el centro وليس en la plaza."
+          },
+          {
+            "id": "ex-a2-cnv-5_c",
+            "text": "visitar",
+            "textAr": "يزور",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ذكر تحديداً موقع اللقاء: el centro."
+          }
+        ],
+        "targetVocab": [
+          "centro",
+          "plaza",
+          "quedar",
+          "visitar"
+        ],
+        "explanationAr": "المتحدث قال: quedar en el centro.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_quedar_centro.mp3",
+        "speechEs": "Podemos quedar en el centro a las siete.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnv-5_a"
+          ],
+          "selectedOptionId": "ex-a2-cnv-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnv-5_b": "المتحدث قال en el centro وليس en la plaza.",
+          "ex-a2-cnv-5_c": "المتحدث ذكر تحديداً موقع اللقاء: el centro."
+        }
+      },
+      {
+        "id": "ex-a2-cnv-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق موافقتك على الموعد المشترك",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أكد موعدك مع صديقك باللغة الإسبانية بحماس",
+        "stemEs": "Muy bien, quedamos allí a las ocho.",
+        "stemAr": "حسناً جداً، نلتقي هناك عند الثامنة.",
+        "audioKey": "pending/a2_quedamos_alli.mp3",
+        "targetVocab": [
+          "quedar",
+          "cita"
+        ],
+        "explanationAr": "انتبه لنطق حرف ll كـ ياء مشبعة في allí.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_quedamos_alli.mp3",
+          "modelAnswer": "Muy bien, quedamos allí a las ocho."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "استخدامات الفعل Quedar للاتفاق والمواعيد"
+    ]
+  }
+}

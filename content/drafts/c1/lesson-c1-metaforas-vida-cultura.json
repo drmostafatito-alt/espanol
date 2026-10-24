@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-metaforas-vida-cultura",
+    "titleAr": "الاستعارة الحية في الصحافة والفكر: Metáforas en el debate público",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u2-idioms",
+    "objectiveAr": "أن يحلل المتعلم ويوظف الاستعارات الكبرى في النقد الفكري والسياسي (talón de Aquiles, navegar contra corriente, poner una pica en Flandes).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "talon",
+      "corriente",
+      "pica",
+      "brecha",
+      "aquiles",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Metáfora mitológica: ser el talón de Aquiles (punto vulnerable decisivo)",
+      "Metáfora náutica: navegar contra corriente (desafiar el consenso imperante)",
+      "Metáfora bélica: abrir una brecha (romper una resistencia consolidada)",
+      "Metáfora histórica: poner una pica en Flandes (lograr una hazaña colosal)"
+    ],
+    "grammarTopics": [
+      "metaforas-conceptuales-c1",
+      "lenguaje-figurado-debate"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ندوة فكرية حول التحديات الاقتصادية والسياسية في العالم المعاصر.",
+        "settingAr": "مركز الدراسات الاستراتيجية والدولية في فالنسيا",
+        "lines": [
+          {
+            "es": "La dependencia energética sigue constituyendo el talón de Aquiles de la economía comunitaria.",
+            "ar": "ما زالت التبعية في مجال الطاقة تمثل كعب أخيل ونقطة الضعف القاتلة في اقتصاد الاتحاد.",
+            "arEg": "الاعتماد الكامل على طاقة الخارج لسه هو نقطة الضعف اللي قاصفة ضهر الاقتصاد.",
+            "audioKey": "pending/c1-u2-met-1"
+          },
+          {
+            "es": "El pensador no dudó en navegar contra corriente al criticar el conformismo intelectual.",
+            "ar": "لم يتردد المفكر في السباحة ضد التيار حين انتقد الامتثال الفكري والجمود السائد.",
+            "arEg": "المفكر مجلاش وعام ضد التيار لما هاجم النفاق والجمود الفكري المنتشر.",
+            "audioKey": "pending/c1-u2-met-2"
+          },
+          {
+            "es": "Lograr la aprobación unánime de la ley fue como poner una pica en Flandes.",
+            "ar": "كان انتزاع الموافقة بالإجماع على القانون أشبه بإنجاز تاريخي شبه مستحيل.",
+            "arEg": "إنهم ياخدوا موافقة البرلمان بالإجماع كانت معجزة أشبه بشق البحر نصين.",
+            "audioKey": "pending/c1-u2-met-3"
+          },
+          {
+            "es": "Las nuevas tecnologías han abierto una brecha insalvable entre generaciones.",
+            "ar": "لقد فتحت التكنولوجيات الحديثة فجوة وهوة لا يمكن ردمها بين الأجيال.",
+            "arEg": "التكنولوجيا الجديدة فتحت هوة وفجوة واسعة جداً بين جيل الكبار والشباب.",
+            "audioKey": "pending/c1-u2-met-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-mvc-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث المحلل واكتشف الاستعارة الميثولوجية التي استخدمها لوصف نقطة الضعف القاتلة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما التعبير الاستعاري المستخدم لتوصيف الضعف الحرج في المنظومة؟",
+        "stemEs": "La dependencia energética sigue constituyendo el talón de Aquiles de la economía comunitaria.",
+        "stemAr": "ما زالت التبعية في مجال الطاقة تمثل كعب أخيل ونقطة الضعف القاتلة في اقتصاد الاتحاد.",
+        "options": [
+          {
+            "id": "ex-c1-mvc-1_a",
+            "text": "El talón de Aquiles",
+            "textAr": "كعب أخيل / نقطة الضعف الجوهرية والمهددة للكيان",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mvc-1_b",
+            "text": "La espada de Damocles",
+            "textAr": "الخطر الدائم والمهدد فوق الرؤوس",
+            "isCorrect": false,
+            "distractorRationaleAr": "استعارة لخطر داهم وشيك لا لنقطة ضعف ذاتية."
+          },
+          {
+            "id": "ex-c1-mvc-1_c",
+            "text": "El caballo de Troya",
+            "textAr": "العدو المتسلل من الداخل في الخفاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "استعارة للاختراق الداخلي الخبيث."
+          }
+        ],
+        "targetVocab": [
+          "talon",
+          "aquiles"
+        ],
+        "explanationAr": "«El talón de Aquiles» مستمدة من الأسطورة الإغريقية وتدل على موضع الخلل الوحيد القادر على إسقاط البطل القوي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u2-met-1",
+        "speechEs": "La dependencia energética sigue constituyendo el talón de Aquiles de la economía comunitaria.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mvc-1_a"
+          ],
+          "selectedOptionId": "ex-c1-mvc-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mvc-1_b": "استعارة لخطر داهم وشيك لا لنقطة ضعف ذاتية.",
+          "ex-c1-mvc-1_c": "استعارة للاختراق الداخلي الخبيث."
+        }
+      },
+      {
+        "id": "ex-c1-mvc-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما معنى الاستعارة التاريخية الإسبانية «poner una pica en Flandes»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التفسير التاريخي البلاغي الدقيق:",
+        "stemEs": "Conseguir financiación para esa investigación fue poner una pica en Flandes.",
+        "stemAr": "كان الحصول على تمويل لذلك البحث بمثابة إنجاز خارق بالغ الصعوبة والتعقيد.",
+        "options": [
+          {
+            "id": "ex-c1-mvc-2_a",
+            "text": "Lograr algo sumamente arduo o casi imposible",
+            "textAr": "تحقيق أمر عسير للغاية وتاريخي التحدي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mvc-2_b",
+            "text": "Declarar la guerra a un país vecino",
+            "textAr": "إعلان الحرب الرسمية والعدوان العسكري",
+            "isCorrect": false,
+            "distractorRationaleAr": "فهم حرفي مغلوط للأصل التاريخي."
+          },
+          {
+            "id": "ex-c1-mvc-2_c",
+            "text": "Cometer una torpeza irreparable",
+            "textAr": "ارتكاب خطأ فادح لا يغتفر بحق الآخرين",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الفشل وليس النجاح الإعجازي."
+          }
+        ],
+        "targetVocab": [
+          "pica",
+          "rigor"
+        ],
+        "explanationAr": "تعود هذه العبارة إلى صعوبة إرسال الجيوش الإسبانية وتثبيت راية في فلاندرز قديماً، فصارت مثلاً للمهمة المستحيلة المنجزة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mvc-2_a"
+          ],
+          "selectedOptionId": "ex-c1-mvc-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mvc-2_b": "فهم حرفي مغلوط للأصل التاريخي.",
+          "ex-c1-mvc-2_c": "تفيد الفشل وليس النجاح الإعجازي."
+        }
+      },
+      {
+        "id": "ex-c1-mvc-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الاستعارة التي تدل على معارضة الفكر السائد: «navegar contra ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة الدالة على المجرى المائي المعاكس:",
+        "stemEs": "A menudo, el intelectual crítico debe navegar contra ____ para defender la verdad.",
+        "stemAr": "كثيراً ما يتوجب على المفكر النقدي السباحة ضد التيار نصرةً للحقيقة.",
+        "targetVocab": [
+          "corriente"
+        ],
+        "explanationAr": "التعبير المجازي هو «navegar contra corriente» ويعني الصمود أمام ضغط الرأي العام السائد والأفكار النمطية.",
+        "answerKey": {
+          "accepted": [
+            "corriente"
+          ],
+          "acceptableAnswers": [
+            "corriente"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-mvc-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما التعبير العسكري المستعار الدال على إحداث شق واختراق في جدار المشكلة؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل والتعبير المناسب لإحداث تحول:",
+        "stemEs": "Las reformas han logrado ____ en las estructuras conservadoras.",
+        "stemAr": "لقد نجحت الإصلاحات في فتح ثغرة واختراق في الهياكل المحافظة القديمة.",
+        "options": [
+          {
+            "id": "ex-c1-mvc-4_a",
+            "text": "abrir una brecha",
+            "textAr": "فتح فجوة وإحداث اختراق حاسم",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mvc-4_b",
+            "text": "bajar la guardia",
+            "textAr": "التراخي وفقدان الحذر واليقظة",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الإهمال لا الاختراق."
+          },
+          {
+            "id": "ex-c1-mvc-4_c",
+            "text": "cruzar el charco",
+            "textAr": "السفر عبر المحيط إلى قارة أخرى",
+            "isCorrect": false,
+            "distractorRationaleAr": "تعبير جغرافي عامي."
+          }
+        ],
+        "targetVocab": [
+          "brecha",
+          "rigor"
+        ],
+        "explanationAr": "«Abrir una brecha» مستعارة من حصار القلاع قديماً وتعني شق طريق وسط منظومة دفاعية أو فكرية كانت محصنة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mvc-4_a"
+          ],
+          "selectedOptionId": "ex-c1-mvc-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mvc-4_b": "تفيد الإهمال لا الاختراق.",
+          "ex-c1-mvc-4_c": "تعبير جغرافي عامي."
+        }
+      },
+      {
+        "id": "ex-c1-mvc-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين جملة استعارية فصيحة تصف الجرأة في تحدي السائد.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-mvc-5_t1",
+            "kind": "token",
+            "text": "No"
+          },
+          {
+            "id": "ex-c1-mvc-5_t2",
+            "kind": "token",
+            "text": "teme"
+          },
+          {
+            "id": "ex-c1-mvc-5_t3",
+            "kind": "token",
+            "text": "navegar"
+          },
+          {
+            "id": "ex-c1-mvc-5_t4",
+            "kind": "token",
+            "text": "contra"
+          },
+          {
+            "id": "ex-c1-mvc-5_t5",
+            "kind": "token",
+            "text": "corriente"
+          },
+          {
+            "id": "ex-c1-mvc-5_t6",
+            "kind": "token",
+            "text": "jamás"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "No teme navegar contra corriente jamás"
+          ],
+          "tokenOrder": [
+            "ex-c1-mvc-5_t1",
+            "ex-c1-mvc-5_t2",
+            "ex-c1-mvc-5_t3",
+            "ex-c1-mvc-5_t4",
+            "ex-c1-mvc-5_t5",
+            "ex-c1-mvc-5_t6"
+          ]
+        },
+        "explanationAr": "السياق البلاغي: النفي والفعل الرئيسي والمصدر مع التركيب الاستعاري والظرف في النهاية للتأكيد.",
+        "targetVocab": [
+          "corriente"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-mvc-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة الاستعارية بنبرة تحذيرية رصينة تليق بمقال اقتصادي عميق.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الوقف النغمي:",
+        "stemEs": "La deuda es el talón de Aquiles de la banca.",
+        "stemAr": "الدين هو كعب أخيل ونقطة الضعف القاتلة في القطاع المصرفي.",
+        "audioKey": "pending/c1-u2-met-spk",
+        "targetVocab": [
+          "talon",
+          "aquiles"
+        ],
+        "explanationAr": "انتبه لنطق حرف l المشدد في Aquiles كصوت /ʎ/ أو /ʝ/ فصيح ونبر كلمة talón على المقطع الأخير.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u2-met-spk",
+          "modelAnswer": "La deuda es el talón de Aquiles de la banca."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

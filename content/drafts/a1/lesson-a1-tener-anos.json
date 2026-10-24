@@ -1,0 +1,371 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-tener-anos",
+    "titleAr": "السؤال عن العمر والسنوات: استخدام الفعل Tener وتصريفه",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u2-family",
+    "objectiveAr": "أن يسأل المتعلم عن العمر ويجيب عنه باستخدام فعل الملكية tener، ويتجنب الخطأ الشائع باستخدام فعل ser.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "grammar",
+      "writing",
+      "listening",
+      "speaking",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "tener",
+      "año",
+      "hijo",
+      "hermano",
+      "pequeño",
+      "familia",
+      "amigo",
+      "persona"
+    ],
+    "reviewVocabulary": [
+      "padre",
+      "madre",
+      "casa",
+      "español"
+    ],
+    "targetStructures": [
+      "¿Cuántos años tienes? — Tengo veinte años.",
+      "Mi hermano tiene quince años y es el más pequeño.",
+      "Tener (tengo, tienes, tiene, tenemos, tenéis, tienen) para expresar la edad"
+    ],
+    "grammarTopics": [
+      "verbo-tener-presente",
+      "expresar-la-edad"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار تعارف في المعهد يسأل فيه مصطفى زميله خافيير عن عمره وعمر إخوته.",
+        "settingAr": "في قاعة الاستقبال بالمعهد الدولي",
+        "lines": [
+          {
+            "es": "¿Cuántos años tienes, Javier?",
+            "ar": "كم عمرك يا خافيير؟",
+            "arEg": "عندك كام سنة يا خافيير؟",
+            "audioKey": "pending/a1-edad-sc-1"
+          },
+          {
+            "es": "Tengo veinticinco años, ¿y tú?",
+            "ar": "عمري خمسة وعشرون عامًا، وأنت؟",
+            "arEg": "عندي خمسة وعشرين سنة، وإنت؟",
+            "audioKey": "pending/a1-edad-sc-2"
+          },
+          {
+            "es": "Yo tengo veintidós. ¿Tienes hermanos?",
+            "ar": "أنا عمري اثنان وعشرون عامًا. هل لديك إخوة؟",
+            "arEg": "أنا عندي اتنين وعشرين. عندك إخوات؟",
+            "audioKey": "pending/a1-edad-sc-3"
+          },
+          {
+            "es": "Sí, tengo un hermano pequeño que tiene diez años.",
+            "ar": "نعم، لدي أخ صغير عمره عشر سنوات.",
+            "arEg": "أيوة، عندي أخ صغير عنده عشر سنين.",
+            "audioKey": "pending/a1-edad-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_edad_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى خافيير واختر عمر أخيه الصغير.",
+        "audioKey": "pending/a1-edad-sc-4",
+        "speechEs": "Sí, tengo un hermano pequeño que tiene diez años.",
+        "options": [
+          {
+            "id": "a1_edad_1_a",
+            "text": "Diez años",
+            "isCorrect": true,
+            "textAr": "عشر سنوات"
+          },
+          {
+            "id": "a1_edad_1_b",
+            "text": "Veinticinco años",
+            "isCorrect": false,
+            "textAr": "خمسة وعشرون عامًا",
+            "distractorRationaleAr": "25 هو عمر خافيير نفسه وليس عمر أخيه الصغير."
+          },
+          {
+            "id": "a1_edad_1_c",
+            "text": "Veintidós años",
+            "isCorrect": false,
+            "textAr": "اثنان وعشرون عامًا",
+            "distractorRationaleAr": "22 هو عمر مصطفى."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_edad_1_a"
+          ]
+        },
+        "explanationAr": "خافيير قال بوضوح: «tiene diez años» أي عمر أخيه الصغير 10 سنوات.",
+        "errorFeedback": {
+          "a1_edad_1_b": "25 عامًا هو عمر خافيير.",
+          "a1_edad_1_c": "22 عامًا هو عمر مصطفى."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "año",
+          "pequeño"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_edad_2_choice_verb",
+        "type": "word_choice",
+        "instructionAr": "اختر الفعل الصحيح للتعبير عن العمر باللغة الإسبانية وتجنب الخطأ الشائع.",
+        "stemEs": "Yo ____ veinte años y estudio en Madrid.",
+        "stemAr": "أنا عمري (أملك) عشرين عامًا وأدرس في مدريد.",
+        "options": [
+          {
+            "id": "a1_edad_2_a",
+            "text": "tengo",
+            "isCorrect": true,
+            "textAr": "عمري (أملك سنوات عمر)"
+          },
+          {
+            "id": "a1_edad_2_b",
+            "text": "soy",
+            "isCorrect": false,
+            "textAr": "أكون (خطأ شائع للمتعلم العربي)",
+            "distractorRationaleAr": "في الإسبانية نستخدم فعل الملكية tener مع العمر وليس فعل الكينونة ser."
+          },
+          {
+            "id": "a1_edad_2_c",
+            "text": "estoy",
+            "isCorrect": false,
+            "textAr": "أوجد / في حالة (لا يُستخدم للعمر)",
+            "distractorRationaleAr": "estar يدل على المكان أو الحالة المؤقتة ولا يُستخدم للسنوات."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_edad_2_a"
+          ]
+        },
+        "explanationAr": "تنبيه جوهري للمتعلم العربي: في الإسبانية نستخدم دائمًا فعل الملكية tener للتعبير عن العمر: «Tengo 20 años» ولا يجوز إطلاقًا استخدام soy أو estoy.",
+        "errorFeedback": {
+          "a1_edad_2_b": "خطأ شائع! لا تقل «Soy 20 años»، بل قل دائمًا «Tengo 20 años».",
+          "a1_edad_2_c": "estar لا تُستخدم للتعبير عن العمر."
+        },
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "tener",
+          "año"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_edad_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل tener مع الغائب المفرد (mi hermano).",
+        "stemEs": "Mi hermano ____ dieciocho años.",
+        "stemAr": "أخي ____ ثمانية عشر عامًا.",
+        "answerKey": {
+          "accepted": [
+            "tiene"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "تصريف الفعل غير المنتظم tener مع المفرد الغائب (él / ella / mi hermano) هو: tiene.",
+        "errorFeedback": {
+          "tengo": "tengo للمتكلم (yo)، والفاعل هنا هو أخي (mi hermano).",
+          "tienen": "tienen للجمع، والفاعل أخ واحد مفرد."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "tener",
+          "hermano"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_edad_4_choice_ques",
+        "type": "word_choice",
+        "instructionAr": "اختر أداة الاستفهام المناسبة للسؤال عن العمر وعدد السنوات.",
+        "stemEs": "¿____ años tiene tu amigo?",
+        "stemAr": "كم سنة عمر صديقك؟",
+        "options": [
+          {
+            "id": "a1_edad_4_a",
+            "text": "Cuántos",
+            "isCorrect": true,
+            "textAr": "كم عدد (لجمع المذكر)"
+          },
+          {
+            "id": "a1_edad_4_b",
+            "text": "Dónde",
+            "isCorrect": false,
+            "textAr": "أين (للمكان)",
+            "distractorRationaleAr": "Dónde تسأل عن المكان وليس عن عدد السنوات."
+          },
+          {
+            "id": "a1_edad_4_c",
+            "text": "Cómo",
+            "isCorrect": false,
+            "textAr": "كيف (للحال)",
+            "distractorRationaleAr": "Cómo تسأل عن الكيفية والحال وليس عن العمر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_edad_4_a"
+          ]
+        },
+        "explanationAr": "نستخدم «Cuántos» المطابقة لجمع المذكر لأن كلمة años اسم مذكر جمع: ¿Cuántos años...?",
+        "errorFeedback": {
+          "a1_edad_4_b": "Dónde تسأل عن الموقع والمكان.",
+          "a1_edad_4_c": "Cómo تسأل عن الاسم أو الحال."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "año",
+          "amigo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_edad_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال صحيح عن العمر الموجه للمخاطب.",
+        "items": [
+          {
+            "id": "a1_ed_t1",
+            "kind": "token",
+            "text": "¿Cuántos"
+          },
+          {
+            "id": "a1_ed_t2",
+            "kind": "token",
+            "text": "años"
+          },
+          {
+            "id": "a1_ed_t3",
+            "kind": "token",
+            "text": "tienes"
+          },
+          {
+            "id": "a1_ed_t4",
+            "kind": "token",
+            "text": "tú?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Cuántos años tienes tú?"
+          ],
+          "tokenOrder": [
+            "a1_ed_t1",
+            "a1_ed_t2",
+            "a1_ed_t3",
+            "a1_ed_t4"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي للسؤال عن العمر: ¿Cuántos + años + الفعل tienes + الضمير tú?",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "tener",
+          "año"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_edad_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة التعبير عن العمر بنطق دقيق لحرف ñ في años.",
+        "stemEs": "Tengo veinte años.",
+        "stemAr": "عمري عشرون عامًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-edad-speak-1",
+          "modelAnswer": "Tengo veinte años."
+        },
+        "explanationAr": "احرص على نطق حرف ñ كصوت النون المعطشة (نيْ) في «años» وليس كنون بسيطة، فالفرق جوهري في المعنى.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "tener",
+          "año"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق صوت ñ المعطش في años",
+              "weight": 50,
+              "code": "pron_enye"
+            },
+            {
+              "labelAr": "النبر على مقطع Ten- في tengo",
+              "weight": 50,
+              "code": "stress_tengo"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 1 وEn Vocabulario A1 والمرشد في اللغة الإسبانية"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

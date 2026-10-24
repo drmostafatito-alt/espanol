@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-posesivos",
+    "titleAr": "صفات الملكية: التمييز بين mi و tu و su وتوافقها مع الشيء المملوك",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u2-family",
+    "objectiveAr": "أن يفرّق المتعلم بين صفات الملكية mi و tu و su في جمل عن العائلة والممتلكات، ويفهم قاعدة التوافق مع الشيء المملوك وليس المالك.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "padre",
+      "madre",
+      "casa",
+      "coche",
+      "libro",
+      "amigo",
+      "hermano",
+      "hijo"
+    ],
+    "reviewVocabulary": [
+      "familia",
+      "persona",
+      "tener",
+      "año"
+    ],
+    "targetStructures": [
+      "Mi padre tiene un coche nuevo.",
+      "¿Dónde está tu libro de español?",
+      "Carlos vive con su madre en su casa."
+    ],
+    "grammarTopics": [
+      "adjetivos-posesivos-mi-tu-su",
+      "concordancia-posesivo-sustantivo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "محادثة بين زميلين في معهد اللغات يتبادلان الحديث عن مقتنياتهم وعائلاتهم.",
+        "settingAr": "في بهو معهد اللغات في مدريد",
+        "lines": [
+          {
+            "es": "¿Este es tu libro de gramática española?",
+            "ar": "هل هذا كتابك لقواعد اللغة الإسبانية؟",
+            "arEg": "هو ده كتابك بتاع الجرامر الإسباني؟",
+            "audioKey": "pending/a1-pos-sc-1"
+          },
+          {
+            "es": "No, es el libro de Carlos; su libro siempre está aquí.",
+            "ar": "لا، إنه كتاب كارلوس؛ كتابه دائمًا هنا.",
+            "arEg": "لا، ده كتاب كارلوس؛ كتابه دايمًا هنا.",
+            "audioKey": "pending/a1-pos-sc-2"
+          },
+          {
+            "es": "¿Y Carlos viene a clase en su coche o en autobús?",
+            "ar": "وهل يأتي كارلوس إلى الصف بسيارته أم بالحافلة؟",
+            "arEg": "وكارلوس بييجي الكلاس بعربيته ولا بالأوتوبيس؟",
+            "audioKey": "pending/a1-pos-sc-3"
+          },
+          {
+            "es": "Viene en su coche porque su casa está lejos del instituto.",
+            "ar": "يأتي بسيارته لأن منزله بعيد عن المعهد.",
+            "arEg": "بييجي بعربيته عشان بيته بعيد عن المعهد.",
+            "audioKey": "pending/a1-pos-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_pos_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الحوار واختر لمن يعود كتاب القواعد الموجود على الطاولة.",
+        "audioKey": "pending/a1-pos-sc-2",
+        "speechEs": "No, es el libro de Carlos; su libro siempre está aquí.",
+        "options": [
+          {
+            "id": "a1_pos_1_a",
+            "text": "De Carlos (su libro)",
+            "isCorrect": true,
+            "textAr": "لكارلوس (كتابه)"
+          },
+          {
+            "id": "a1_pos_1_b",
+            "text": "Del profesor",
+            "isCorrect": false,
+            "textAr": "للأستاذ",
+            "distractorRationaleAr": "لم يُذكر الأستاذ كمالك للكتاب."
+          },
+          {
+            "id": "a1_pos_1_c",
+            "text": "De María",
+            "isCorrect": false,
+            "textAr": "لماريا",
+            "distractorRationaleAr": "الكتاب يخص كارلوس صراحة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pos_1_a"
+          ]
+        },
+        "explanationAr": "المتحدث قال صراحة: «es el libro de Carlos; su libro siempre está aquí». صفة الملكية su تعود على كارلوس.",
+        "errorFeedback": {
+          "a1_pos_1_b": "الكتاب ليس للأستاذ بل لكارلوس.",
+          "a1_pos_1_c": "استمع مرة أخرى: الكتاب يخص كارلوس."
+        },
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "libro",
+          "amigo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pos_2_choice_su",
+        "type": "word_choice",
+        "instructionAr": "اختر صفة الملكية الصحيحة للغائب المفرد (María) مع الاسم المفرد «coche».",
+        "stemEs": "María va al trabajo en ____ coche nuevo.",
+        "stemAr": "ماريا تذهب إلى العمل في سيارتها الجديدة.",
+        "options": [
+          {
+            "id": "a1_pos_2_a",
+            "text": "su",
+            "isCorrect": true,
+            "textAr": "سيارتها (ملكية الغائب للمفرد)"
+          },
+          {
+            "id": "a1_pos_2_b",
+            "text": "sus",
+            "isCorrect": false,
+            "textAr": "سياراتها (للجمع)",
+            "distractorRationaleAr": "كلمة coche مفردة، لذا صفة الملكية تكون su وليس sus."
+          },
+          {
+            "id": "a1_pos_2_c",
+            "text": "tu",
+            "isCorrect": false,
+            "textAr": "سيارتك (للمخاطب)",
+            "distractorRationaleAr": "tu للمخاطب بينما الحديث هنا عن الغائبة ماريا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pos_2_a"
+          ]
+        },
+        "explanationAr": "صفة الملكية su تتبع الشيء المملوك (coche مفرد) وتدل على الغائب (ماريا): su coche.",
+        "errorFeedback": {
+          "a1_pos_2_b": "sus تُستخدم مع الجمع مثل sus coches.",
+          "a1_pos_2_c": "tu تعني سيارتك أنت، بينما الفاعل ماريا (هي)."
+        },
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "coche"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pos_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب صفة الملكية للمخاطب (tu) لمطابقة الاسم الجمع «libros».",
+        "stemEs": "¿Dónde están ____ libros de español?",
+        "stemAr": "أين هي كتبك لتعلم الإسبانية؟",
+        "answerKey": {
+          "accepted": [
+            "tus"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "صفة الملكية للمخاطب tu تجمع بإضافة s لتطابق الاسم الجمع libros: tus libros.",
+        "errorFeedback": {
+          "tu": "tu للمفرد، وكلمة libros جمع.",
+          "su": "su للغائب، والمقصود هنا المخاطب."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "libro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pos_4_choice_su",
+        "type": "word_choice",
+        "instructionAr": "اختر صفة الملكية المناسبة للغائبة المفردة (María).",
+        "stemEs": "María visita a ____ madre los fines de semana.",
+        "stemAr": "ماريا تزور ____ والدتها في عطلات نهاية الأسبوع.",
+        "options": [
+          {
+            "id": "a1_pos_4_a",
+            "text": "su",
+            "isCorrect": true,
+            "textAr": "والدتها (ملكية الغائب للمفرد)"
+          },
+          {
+            "id": "a1_pos_4_b",
+            "text": "sus",
+            "isCorrect": false,
+            "textAr": "لجمع الأشياء المملوكة",
+            "distractorRationaleAr": "madre مفردة، لذا صفة الملكية تكون su وليس sus."
+          },
+          {
+            "id": "a1_pos_4_c",
+            "text": "tu",
+            "isCorrect": false,
+            "textAr": "والدتك (للمخاطب)",
+            "distractorRationaleAr": "الحديث عن الغائبة ماريا وليس المخاطب."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pos_4_a"
+          ]
+        },
+        "explanationAr": "تتبع صفة الملكية su الاسم المفرد madre وتدل على الغائبة ماريا: su madre.",
+        "errorFeedback": {
+          "a1_pos_4_b": "sus تُستخدم مع الجمع مثل sus padres.",
+          "a1_pos_4_c": "tu تعني والدتك أنت."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "madre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pos_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة ملكية صحيحة توضح الإقامة مع الوالدين.",
+        "items": [
+          {
+            "id": "a1_ps_t1",
+            "kind": "token",
+            "text": "Él"
+          },
+          {
+            "id": "a1_ps_t2",
+            "kind": "token",
+            "text": "vive con"
+          },
+          {
+            "id": "a1_ps_t3",
+            "kind": "token",
+            "text": "sus"
+          },
+          {
+            "id": "a1_ps_t4",
+            "kind": "token",
+            "text": "padres."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Él vive con sus padres."
+          ],
+          "tokenOrder": [
+            "a1_ps_t1",
+            "a1_ps_t2",
+            "a1_ps_t3",
+            "a1_ps_t4"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي: الفاعل Él + الفعل وجار vive con + صفة الملكية للجمع sus + الاسم padres.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "padre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pos_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة الملكية بوضوح وبنبر سليم.",
+        "stemEs": "Carlos vive en su casa.",
+        "stemAr": "كارلوس يعيش في منزله.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-pos-speak-1",
+          "modelAnswer": "Carlos vive en su casa."
+        },
+        "explanationAr": "احرص على نطق حرف v في vive بصوت شفتاني قريب من b الخفيفة، والسين النقية في su casa.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "casa"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق صوت v في vive",
+              "weight": 50,
+              "code": "pron_v_vive"
+            },
+            {
+              "labelAr": "سلاسة نطق su casa دون إمالة",
+              "weight": 50,
+              "code": "linking_su_casa"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 1 وEn Vocabulario A1 والمرشد في اللغة الإسبانية"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

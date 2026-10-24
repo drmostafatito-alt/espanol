@@ -1,0 +1,413 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-analisis-personajes-relato",
+    "unitSlug": "b2-u3-literature",
+    "levelCode": "B2",
+    "titleAr": "تحليل الشخصيات في القصة: البعد النفسي والصراع الداخلي",
+    "titleEs": "Análisis de personajes: Dimensión psicológica, conflicto interior y evolución",
+    "subtitleAr": "الشخصيات المركبة والمسطحة، الدوافع الخفية، والتحول الدرامي عبر الأحداث",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحلل المتعلم الأبعاد النفسية والأخلاقية للشخصية الروائية بدقة.",
+        "أن يستخدم مصطلحات النقد السردي: personaje redondo/plano, conflicto interior, móvil, antagonista.",
+        "أن يصف التحول والتطور الدرامي للشخصية من بداية القصة إلى نهايتها."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التعبير عن الصراع النفسي والتطور الذاتي",
+          "explanationAr": "1. **أفعال الصيرورة والتحول المعنوي والنفسي**:\n- *Volverse + صفة*: Se volvió desconfiado y solitario tras la traición.\n- *Llegar a ser*: Con los años llegó a ser una figura respetada y compasiva.\n2. **التعبير عن الصراع الداخلي المزدوج**:\n- *Debatirse entre*: El protagonista se debate entre el deber moral y el amor prohibido.\n3. **كشف الدوافع السلوكية**:\n- *Lo que mueve al personaje no es la ambición, sino el miedo al rechazo*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *ponerse* للتعبير عن تغير الشخصية العميق الدائم؛ *ponerse* للحالات العارضة المؤقتة فقط (مثل الغضب العابر)، بينما التغير في الطبع والجوهر يأخذ *volverse* أو *hacerse*.",
+        "وصف الشخصية بصفات سطحية دون تحليل الدوافع النفسية العميقة التي تقف وراء أفعالها."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في تحليل شخصيات الرواية بنقول «البطل محتار بين واجبه وبين حبه وعنده صراع نفسي رهيب». بالإسبانية: El protagonista se debate entre su deber y su pasión en un constante conflicto interior."
+        }
+      ],
+      "culturalNoteAr": "الأدب الإسباني يتميز بشخصيات خالدة تمثل الصراع بين المثالية والواقعية، ونموذجها الأبرز هو ثنائية 'دون كيخوتي وسانشو بانثا' لميغيل دي ثيربانتس."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-analisis-personajes-relato-intro",
+        "type": "explanation",
+        "titleAr": "أدوات تفكيك الشخصية الروائية",
+        "bodyAr": "المفاهيم النقدية:\n- **el conflicto interior**: الصراع النفسي الداخلي بين مبدأين متصارعين\n- **debatirse entre**: يتأرجح ويحتار ويتصارع في داخله بين أمرين\n- **el personaje redondo**: الشخصية المركبة ثلاثية الأبعاد التي تتطور وتفاجئ القارئ\n- **el antagonista**: الغريم والخصم المقابل للبطل في الحبكة\n- **el móvil**: الدافع والمحرك الحقيقي الخفي وراء السلوك\n- **la redención**: الخلاص والتكفير عن الذنب والتطهر الأخلاقي",
+        "examples": [
+          {
+            "es": "El protagonista es un personaje redondo cuya evolución moral asombra al lector.",
+            "ar": "البطل شخصية مركبة متطورة يُذهل تحولها الأخلاقي القارئ."
+          },
+          {
+            "es": "El personaje se debate entre el deber patriótico y su amor clandestino.",
+            "ar": "تتصارع الشخصية في داخلها بين الواجب الوطني وحبها السري."
+          },
+          {
+            "es": "Al final del relato, el héroe busca la redención a través del sacrificio.",
+            "ar": "في ختام القصة، ينشد البطل الخلاص والتطهر عبر التضحية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "conflicto interior",
+      "debatirse entre",
+      "personaje redondo",
+      "antagonista",
+      "móvil",
+      "redención"
+    ],
+    "reviewVocabulary": [
+      "personaje",
+      "héroe"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحلل المتعلم الأبعاد النفسية والأخلاقية للشخصية الروائية بدقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-apr-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يصف الشخصية المتطورة الغنية نفسياً التي تتغير مع الأحداث",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي الشخصية المتطورة درامياً ذات الأبعاد النفسية العميقة؟",
+        "stemEs": "Lejos de ser un arquetipo simple, es un _____ con contradicciones humanas.",
+        "stemAr": "بعيداً عن كونه نموذجاً بسيطاً، فهو ... يحمل تناقضات إنسانية عميقة.",
+        "options": [
+          {
+            "id": "ex-b2-apr-1_a",
+            "text": "personaje redondo",
+            "textAr": "شخصية مركبة نامية ومتطورة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-apr-1_b",
+            "text": "personaje plano",
+            "textAr": "شخصية مسطحة ثابتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشخصية المعقدة النامية تسمى personaje redondo."
+          },
+          {
+            "id": "ex-b2-apr-1_c",
+            "text": "antagonista",
+            "textAr": "غريم فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح النقدي للشخصية المعقدة هو personaje redondo."
+          }
+        ],
+        "targetVocab": [
+          "personaje redondo",
+          "antagonista"
+        ],
+        "explanationAr": "el personaje redondo هو الشخصية المعقدة التي تشهد تحولاً وتطوراً نفسياً خلال الرواية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-apr-1_a"
+          ],
+          "selectedOptionId": "ex-b2-apr-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-apr-1_b": "الشخصية المعقدة النامية تسمى personaje redondo.",
+          "ex-b2-apr-1_c": "المصطلح النقدي للشخصية المعقدة هو personaje redondo."
+        }
+      },
+      {
+        "id": "ex-b2-apr-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل debatirse في الحاضر مع الغائب المفرد هو: (se debate)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل: El capitán _____ entre la lealtad y su propia conciencia.",
+        "stemEs": "A lo largo de la novela, el juez _____ entre aplicar la ley estricta o mostrar clemencia.",
+        "stemAr": "على مدار الرواية، يتأرجح القاضي في صراع داخلي بين تطبيق القانون الصارم أو إظهار الرحمة.",
+        "targetVocab": [
+          "debatirse entre"
+        ],
+        "explanationAr": "تصريف الفعل الانعكاسي مع الغائب المفرد: se debate.",
+        "answerKey": {
+          "accepted": [
+            "se debate"
+          ],
+          "acceptableAnswers": [
+            "se debate"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-apr-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الذي يعبر عن الدافع والمحرك السلوكي الخفي لأفعال البطل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'الدافع النفسي والمحرك الحقيقي وراء اتخاذ القرار'؟",
+        "stemEs": "El detective descubrió que el verdadero _____ del crimen fue la venganza.",
+        "stemAr": "اكتشف المحقق أن ... الحقيقي وراء الجريمة كان الانتقام.",
+        "options": [
+          {
+            "id": "ex-b2-apr-3_a",
+            "text": "móvil",
+            "textAr": "الدافع والمحرك الخفي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-apr-3_b",
+            "text": "desenlace",
+            "textAr": "الحل النهائي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الدافع وراء الفعل يسمى el móvil."
+          },
+          {
+            "id": "ex-b2-apr-3_c",
+            "text": "umbral",
+            "textAr": "العتبة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحرك يسمى el móvil."
+          }
+        ],
+        "targetVocab": [
+          "móvil",
+          "redención"
+        ],
+        "explanationAr": "el móvil هو الدافع والعلة التي تحرك الشخصية لارتكاب الفعل أو اتخاذ القرار.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-apr-3_a"
+          ],
+          "selectedOptionId": "ex-b2-apr-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-apr-3_b": "الدافع وراء الفعل يسمى el móvil.",
+          "ex-b2-apr-3_c": "المحرك يسمى el móvil."
+        }
+      },
+      {
+        "id": "ex-b2-apr-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة النقدية لتوضيح الصراع الداخلي للبطل",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-apr-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b2-apr-4_t2",
+            "kind": "token",
+            "text": "antagonista"
+          },
+          {
+            "id": "ex-b2-apr-4_t3",
+            "kind": "token",
+            "text": "sufre"
+          },
+          {
+            "id": "ex-b2-apr-4_t4",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b2-apr-4_t5",
+            "kind": "token",
+            "text": "profundo"
+          },
+          {
+            "id": "ex-b2-apr-4_t6",
+            "kind": "token",
+            "text": "conflicto"
+          },
+          {
+            "id": "ex-b2-apr-4_t7",
+            "kind": "token",
+            "text": "interior"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El antagonista sufre un profundo conflicto interior"
+          ],
+          "tokenOrder": [
+            "ex-b2-apr-4_t1",
+            "ex-b2-apr-4_t2",
+            "ex-b2-apr-4_t3",
+            "ex-b2-apr-4_t4",
+            "ex-b2-apr-4_t5",
+            "ex-b2-apr-4_t6",
+            "ex-b2-apr-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El antagonista ثم الفعل sufre ثم المفعول un profundo conflicto interior.",
+        "targetVocab": [
+          "antagonista",
+          "conflicto interior"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-apr-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتحليل النقدي وحدد الغاية الأخلاقية التي ينشدها البطل في النهاية",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لحديث الناقد الأدبي عن رواية التوبة والتحول",
+        "stemEs": "Tras sus graves errores, el protagonista busca desesperadamente la redención.",
+        "stemAr": "بعد أخطائه الفادحة، يبحث البطل باستماتة عن الخلاص والتطهر من الذنب.",
+        "options": [
+          {
+            "id": "ex-b2-apr-5_a",
+            "text": "redención",
+            "textAr": "الخلاص والتطهر الأخلاقي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-apr-5_b",
+            "text": "venganza",
+            "textAr": "الانتقام الأعمى",
+            "isCorrect": false,
+            "distractorRationaleAr": "الناقد أكد أنه يبحث عن la redención."
+          },
+          {
+            "id": "ex-b2-apr-5_c",
+            "text": "fama",
+            "textAr": "الشهرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلب كان الخلاص الأخلاقي redención."
+          }
+        ],
+        "targetVocab": [
+          "redención",
+          "móvil"
+        ],
+        "explanationAr": "الناقد قال: 'busca desesperadamente la redención'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_redencion_errores_protagonista.mp3",
+        "speechEs": "Tras sus graves errores, el protagonista busca desesperadamente la redención.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-apr-5_a"
+          ],
+          "selectedOptionId": "ex-b2-apr-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-apr-5_b": "الناقد أكد أنه يبحث عن la redención.",
+          "ex-b2-apr-5_c": "المطلب كان الخلاص الأخلاقي redención."
+        }
+      },
+      {
+        "id": "ex-b2-apr-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك النقدية لتحليل شخصية الرواية بأسلوب أكاديمي فصيح",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتقديم تقييم نقدي معمق للشخصية الروائية:",
+        "stemEs": "El personaje redondo se debate entre sus ambiciones personales y el deber moral.",
+        "stemAr": "تتصارع الشخصية المركبة في داخلها بين طموحاتها الشخصية والواجب الأخلاقي.",
+        "audioKey": "pending/b2_personaje_redondo_debate_deber.mp3",
+        "targetVocab": [
+          "personaje redondo",
+          "debatirse entre",
+          "conflicto interior"
+        ],
+        "explanationAr": "انتبه لنطق personaje redondo و se debate بنبرة تحليلية واثقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_personaje_redondo_debate_deber.mp3",
+          "modelAnswer": "El personaje redondo se debate entre sus ambiciones personales y el deber moral."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تراكيب التعبير عن الصراع النفسي والتطور الذاتي"
+    ]
+  }
+}

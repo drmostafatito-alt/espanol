@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-formulas-protocolarias-cierre",
+    "unitSlug": "b2-u9-formal-writing",
+    "levelCode": "B2",
+    "titleAr": "الصيغ الختامية والتوقيع: أصول التوثيق والمراسلات الإدارية",
+    "titleEs": "Fórmulas de cierre protocolario, antefirma y validación documental",
+    "subtitleAr": "التفريق بين المقامات، صيغ ما قبل التوقيع (antefirma)، والأختام الرقمية",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يختار المتعلم الصيغة الختامية الدقيقة المطابقة لمقام المرسل إليه وسياق الخطاب.",
+        "أن يوظف صيغ الختام البروتوكولية: Le saluda muy atentamente, Dios guarde a V.E. muchos años, Atentamente.",
+        "أن يصيغ خانة التوقيع والصفة الوظيفية (antefirma) والتصديق الإداري الرقمي (CSV)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تدرج صيغ الختام حسب درجات الرسمية والمقام الإداري",
+          "explanationAr": "1. **المستوى البروتوكولي الأسمى (Stricto sensu)**:\n- *Aprovecho la ocasión para testimoniarle mi más alta consideración personal y estima*.\n- في القضاء القديم: *Dios guarde a V.E. muchos años*.\n2. **المستوى الإداري والمؤسسي الرفيع**:\n- *Agradeciendo de antemano su atención, le saluda con la mayor consideración...*\n- *Sin otro particular, queda a su disposición atentamente...*\n3. **عناصر ما قبل التوقيع (La antefirma)**:\n- المنصب والصفة أولاً ثم الاسم ثم التوقيع:\n- *El Director General de Relaciones Institucionales, [Firma], Fdo.: [Nombre y Apellidos]*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *un saludo* أو *saludos cordiales* في خطاب موجه لوزير أو هيئة قضائية؛ هذه الصيغ مخصصة لزملاء العمل المتساوين في المرتبة وتعد غير لائقة في السجل البروتوكولي العالي.",
+        "عدم ذكر الصفة الوظيفية الرسمية في Antefirma قبل الاسم والتوقيع."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في ختام المكاتبات الرسمية للوزير أو الجهات القضائية بنقول «وتفضلوا بقبول فائق الاحترام والتقدير، وتوقيع فلان الفلاني بصفته الوظيفية». بالإسبانية: Le saluda con la más distinguida consideración, Fdo.: El Director General."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا الحديثة، تم استبدال التوقيع اليدوي تدريجياً بالتوقيع الإلكتروني المعزز (Firma digital con certificado FNMT)، والذي يتضمن كود التحقق الآمن (CSV)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-formulas-protocolarias-cierre-intro",
+        "type": "explanation",
+        "titleAr": "صيغ الختام البروتوكولي والتوقيع الإداري",
+        "bodyAr": "النماذج القياسية للاختتام:\n- **con la más alta consideración**: بأسمى درجات الاحترام والتقدير الرفيع\n- **sin otro particular**: ختاماً ودون أي تفاصيل أخرى إضافية\n- **la antefirma**: بيان الصفة الوظيفية الرسمية المسبقة لاسم الموقع وتوقيعه\n- **el código seguro de verificación (CSV)**: كود التحقق الآمن من صحة الوثيقة الرقمية\n- **Fdo. (Firmado)**: اختصار رسمي معتمد يسبق اسم الموقع بعد التوقيع\n- **surtir efectos legales**: ينتج آثاره القانونية الكاملة والملزمة",
+        "examples": [
+          {
+            "es": "Sin otro particular, aprovecho la ocasión para testimoniarle mi más alta consideración.",
+            "ar": "وختاماً دون تفاصيل أخرى، أغتنم هذه المناسبة لأعرب لسيادتكم عن أسمى آيات تقديري."
+          },
+          {
+            "es": "En la antefirma debe constar con claridad el cargo institucional del firmante.",
+            "ar": "يجب أن يرد بوضوح في خانة ما قبل التوقيع المنصب المؤسسي للموقّع."
+          },
+          {
+            "es": "El documento incluye un código seguro de verificación (CSV) para surtir plenos efectos legales.",
+            "ar": "تتضمن الوثيقة كود تحقق آمناً لإنتاج كامل آثارها القانونية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "más alta consideración",
+      "sin otro particular",
+      "antefirma",
+      "código seguro",
+      "Fdo.",
+      "surtir efectos legales"
+    ],
+    "reviewVocabulary": [
+      "firma",
+      "carta"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يختار المتعلم الصيغة الختامية الدقيقة المطابقة لمقام المرسل إليه وسياق الخطاب.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-fpc-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة البروتوكولية الأكثر رصانة لختام خطاب موجه لمسؤول دولة رفيع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي صيغة ختامية تناسب مخاطبة رئيس هيئة أو وزير دولة؟",
+        "stemEs": "_____, le saluda atentamente con la más distinguida consideración.",
+        "stemAr": "...، يحيطكم بخالص التحية مع أسمى آيات التقدير والاحترام.",
+        "options": [
+          {
+            "id": "ex-b2-fpc-1_a",
+            "text": "Sin otro particular",
+            "textAr": "ختاماً دون إضافة أخرى في السياق الرسمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-fpc-1_b",
+            "text": "Bueno hasta luego",
+            "textAr": "حسناً إلى اللقاء بالعامية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخطاب الرسمي يختتم بـ Sin otro particular."
+          },
+          {
+            "id": "ex-b2-fpc-1_c",
+            "text": "Chao amigo",
+            "textAr": "مع السلامة يا صديقي",
+            "isCorrect": false,
+            "distractorRationaleAr": "السجل البروتوكولي يتطلب Sin otro particular."
+          }
+        ],
+        "targetVocab": [
+          "sin otro particular",
+          "más alta consideración"
+        ],
+        "explanationAr": "Sin otro particular هي العبارة الانتقالية القياسية قبل التحية الختامية في المراسلات الإدارية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-fpc-1_a"
+          ],
+          "selectedOptionId": "ex-b2-fpc-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-fpc-1_b": "الخطاب الرسمي يختتم بـ Sin otro particular.",
+          "ex-b2-fpc-1_c": "السجل البروتوكولي يتطلب Sin otro particular."
+        }
+      },
+      {
+        "id": "ex-b2-fpc-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الاختصار الرسمي الذي يسبق اسم الموقع بعد توقيعه: (_____.: Don Carlos López)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الاختصار الرسمي المكون من ثلاثة أحرف لكلمة Firmado (موقّع من قِبل):",
+        "stemEs": "El Director General de Recursos Humanos, [Firma], _____.: Antonio Morales.",
+        "stemAr": "المدير العام للموارد البشرية، [التوقيع]، الموقّع أدناه: أنطونيو موراليس.",
+        "targetVocab": [
+          "Fdo."
+        ],
+        "explanationAr": "Fdo. هو الاختصار الإداري القانوني المعتمد لكلمة Firmado.",
+        "answerKey": {
+          "accepted": [
+            "Fdo"
+          ],
+          "acceptableAnswers": [
+            "Fdo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-fpc-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الجزء في الخطاب الرسمي الذي يوضح الصفة الوظيفية والمنصب قبل الاسم والتوقيع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا يسمى الموضع الذي يسبق التوقيع لتحديد صفة المسؤول الاعتبارية؟",
+        "stemEs": "En la _____ figuraba el sello del decano de la facultad de derecho.",
+        "stemAr": "في خانة ... كان يظهر ختم عميد كلية الحقوق وصفته الرسمية.",
+        "options": [
+          {
+            "id": "ex-b2-fpc-3_a",
+            "text": "antefirma",
+            "textAr": "خانة ما قبل التوقيع والصفة الوظيفية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-fpc-3_b",
+            "text": "trama",
+            "textAr": "حبكة قصة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموقع الإداري يسمى la antefirma."
+          },
+          {
+            "id": "ex-b2-fpc-3_c",
+            "text": "sesgo",
+            "textAr": "انحياز",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح الوثائقي هو la antefirma."
+          }
+        ],
+        "targetVocab": [
+          "antefirma",
+          "surtir efectos legales",
+          "Fdo."
+        ],
+        "explanationAr": "la antefirma هي الفقرة التي تسبق التوقيع وتتضمن اسم المنصب والمؤسسة التي يمثلها الموقع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-fpc-3_a"
+          ],
+          "selectedOptionId": "ex-b2-fpc-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-fpc-3_b": "الموقع الإداري يسمى la antefirma.",
+          "ex-b2-fpc-3_c": "المصطلح الوثائقي هو la antefirma."
+        }
+      },
+      {
+        "id": "ex-b2-fpc-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة القانونية للدلالة على السريان والآثار القانونية الملزمة للوثيقة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-fpc-4_t1",
+            "kind": "token",
+            "text": "Este"
+          },
+          {
+            "id": "ex-b2-fpc-4_t2",
+            "kind": "token",
+            "text": "documento"
+          },
+          {
+            "id": "ex-b2-fpc-4_t3",
+            "kind": "token",
+            "text": "firmado"
+          },
+          {
+            "id": "ex-b2-fpc-4_t4",
+            "kind": "token",
+            "text": "va"
+          },
+          {
+            "id": "ex-b2-fpc-4_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b2-fpc-4_t6",
+            "kind": "token",
+            "text": "surtir"
+          },
+          {
+            "id": "ex-b2-fpc-4_t7",
+            "kind": "token",
+            "text": "plenos"
+          },
+          {
+            "id": "ex-b2-fpc-4_t8",
+            "kind": "token",
+            "text": "efectos"
+          },
+          {
+            "id": "ex-b2-fpc-4_t9",
+            "kind": "token",
+            "text": "legales"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Este documento firmado va a surtir plenos efectos legales"
+          ],
+          "tokenOrder": [
+            "ex-b2-fpc-4_t1",
+            "ex-b2-fpc-4_t2",
+            "ex-b2-fpc-4_t3",
+            "ex-b2-fpc-4_t4",
+            "ex-b2-fpc-4_t5",
+            "ex-b2-fpc-4_t6",
+            "ex-b2-fpc-4_t7",
+            "ex-b2-fpc-4_t8",
+            "ex-b2-fpc-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ Este documento firmado ثم الفعل va a surtir ثم المفعول plenos efectos legales.",
+        "targetVocab": [
+          "surtir efectos legales",
+          "código seguro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-fpc-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمسؤول الإداري وحدد الأداة التكنولوجية المطبوعة على الوثيقة لإثبات صحتها",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتعليمات التحقق من صحة الشهادة الإدارية الإلكترونية",
+        "stemEs": "Puede verificar la autenticidad del certificado mediante el código seguro impreso al pie.",
+        "stemAr": "يمكنكم التحقق من صحة الشهادة بواسطة كود التحقق الآمن المطبوع في أسفلها.",
+        "options": [
+          {
+            "id": "ex-b2-fpc-5_a",
+            "text": "código seguro",
+            "textAr": "كود التحقق الآمن المعتمد إلكترونياً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-fpc-5_b",
+            "text": "marca de agua falsa",
+            "textAr": "علامة مائية مقلدة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسؤول قال: el código seguro impreso al pie."
+          },
+          {
+            "id": "ex-b2-fpc-5_c",
+            "text": "firma manual ilegible",
+            "textAr": "توقيع يدوي غير مقروء",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأداة كانت كود التحقق الآمن código seguro."
+          }
+        ],
+        "targetVocab": [
+          "código seguro",
+          "surtir efectos legales"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'mediante el código seguro impreso al pie'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_verificar_codigo_seguro_pie.mp3",
+        "speechEs": "Puede verificar la autenticidad del certificado mediante el código seguro impreso al pie.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-fpc-5_a"
+          ],
+          "selectedOptionId": "ex-b2-fpc-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-fpc-5_b": "المسؤول قال: el código seguro impreso al pie.",
+          "ex-b2-fpc-5_c": "الأداة كانت كود التحقق الآمن código seguro."
+        }
+      },
+      {
+        "id": "ex-b2-fpc-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك الختامية البروتوكولية بوقار واحترام رسمي فائق",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لختام خطابك الإداري الموجه لأعلى سلطة تنفيذية:",
+        "stemEs": "Sin otro particular, aprovecho la ocasión para testimoniarle mi más alta consideración y respeto institucional.",
+        "stemAr": "وختاماً دون إضافة أخرى، أغتنم هذه المناسبة لأعرب لسيادتكم عن أسمى آيات تقديري واحترامي المؤسسي.",
+        "audioKey": "pending/b2_sin_otro_particular_alta_consideracion.mp3",
+        "targetVocab": [
+          "sin otro particular",
+          "más alta consideración",
+          "antefirma",
+          "surtir efectos legales"
+        ],
+        "explanationAr": "انتبه لنطق testimoniarle و más alta consideración بنبرة بروتوكولية رفيعة وبالغة التهذيب.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_sin_otro_particular_alta_consideracion.mp3",
+          "modelAnswer": "Sin otro particular, aprovecho la ocasión para testimoniarle mi más alta consideración y respeto institucional."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تدرج صيغ الختام حسب درجات الرسمية والمقام الإداري"
+    ]
+  }
+}

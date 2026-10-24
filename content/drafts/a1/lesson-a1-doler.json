@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-doler",
+    "unitSlug": "a1-u10-health-basics",
+    "levelCode": "A1",
+    "titleAr": "التعبير عن الألم: استخدام الفعل Doler مع الضمائر المفردة والجمع",
+    "titleEs": "El verbo doler: expresar dolor",
+    "subtitleAr": "تركيب Me duele / Me duelen وأعراض المرض البسيطة (الحمى والزكام)",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يستخدم المتعلم الفعل doler بالشكل الصحيح: duele مع المفرد، و duelen مع الجمع.",
+        "أن يوظف ضمائر المفعول غير المباشر: me, te, le, nos, os, les للتعبير عمن يشعر بالألم.",
+        "أن يعبّر عن الأعراض الشائعة: dolor, fiebre, resfriado."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "بنية الفعل doler (شبيه gustar تماماً)",
+          "explanationAr": "الفعل doler يعمل مثل فعل gustar بالضبط، حيث الفاعل النحوي هو العضو الذي يؤلم:\n- إذا كان العضو مفرداً نستخدم **duele**: Me duele la cabeza (يؤلمني رأسي)، ¿Te duele el estómago? (هل تؤلمك بطنك؟).\n- إذا كان العضو جمعاً نستخدم **duelen**: Me duelen los ojos (تؤلمني عيناي)، Le duelen las piernas (تؤلمه ساقاه).\nالضمائر المستخدمة هي ضمائر المفعول غير المباشر: me (لي), te (لك), le (له/لها), nos (لنا), os (لكم), les (لهم). للأعراض الأخرى نستخدم tener: Tengo fiebre (عندي حمى)، Tengo un resfriado (عندي زكام)."
+        }
+      ],
+      "commonMistakesAr": [
+        "تصريف الفعل مع الفاعل البشري بدلاً من العضو (مثل قول *yo duelo*؛ هذا خطأ فادح، فالصواب دائماً me duele).",
+        "استخدام duele مع أعضاء الجسم في صيغة الجمع (مثل *me duele los ojos* بدلاً من me duelen los ojos)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «راسي بتوجعني / عينيّ بيوجعوني». في الإسبانية نفس التمييز الدقيق: Me duele la cabeza (مفرد) / Me duelen los ojos (جمع)."
+        }
+      ],
+      "culturalNoteAr": "عند زيارة الصيدلية أو العيادة في إسبانيا، أول سؤال يسأله الصيدلي هو: «¿Qué te pasa?» (ماذا بك؟ / مم تشكو؟) وتجيبه مباشرة: «Me duele la garganta»."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-doler-intro",
+        "type": "explanation",
+        "titleAr": "التعبير عن الألم والمرض",
+        "bodyAr": "التركيب النحوي والمفردات للتعبير عما يؤلمك:\n- **doler**: يؤلم (فعل يتغير جذره: o -> ue)\n- **duele**: يؤلم (مع المفرد: la cabeza, la garganta)\n- **duelen**: تؤلم (مع الجمع: los ojos, las piernas)\n- **la garganta**: الحلق / الزور\n- **el dolor**: الألم / الوجع\n- **la fiebre**: الحمى / السخونة (Tengo fiebre)\n- **el resfriado**: الزكام / نزلة البرد (Tengo un resfriado)\n- **fuerte**: شديد / قوي",
+        "examples": [
+          {
+            "es": "Me duele mucho la garganta.",
+            "ar": "يؤلمني حلقي كثيراً."
+          },
+          {
+            "es": "A Juan le duelen las piernas.",
+            "ar": "خوان تؤلمه ساقاه."
+          },
+          {
+            "es": "Tengo un dolor muy fuerte de cabeza.",
+            "ar": "عندي صداع شديد جداً في الرأس."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "doler",
+      "duele",
+      "duelen",
+      "garganta",
+      "dolor",
+      "fiebre",
+      "resfriado",
+      "fuerte"
+    ],
+    "reviewVocabulary": [
+      "cabeza",
+      "espalda",
+      "ojo"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يستخدم المتعلم الفعل doler بالشكل الصحيح: duele مع المفرد، و duelen مع الجمع.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-dol-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل doler مع العضو المفرد",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الصيغة الصحيحة للفعل doler عندما يكون الألم في عضو مفرد؟",
+        "stemEs": "A mí me _____ la cabeza hoy.",
+        "stemAr": "يؤلمني رأسي اليوم.",
+        "options": [
+          {
+            "id": "ex-a1-dol-1_o1",
+            "text": "duele",
+            "textAr": "صيغة المفرد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dol-1_o2",
+            "text": "duelen",
+            "textAr": "صيغة الجمع",
+            "isCorrect": false,
+            "distractorRationaleAr": "cabeza اسم مفرد، لذلك نستخدم duele وليس duelen."
+          },
+          {
+            "id": "ex-a1-dol-1_o3",
+            "text": "dolo",
+            "textAr": "تصريف خاطئ مع yo",
+            "isCorrect": false,
+            "distractorRationaleAr": "doler لا يصرف مع yo لأن الفاعل هو العضو المصاب."
+          }
+        ],
+        "targetVocab": [
+          "duele",
+          "doler",
+          "cabeza"
+        ],
+        "explanationAr": "مع الاسم المفرد مثل la cabeza نستخدم صيغة duele.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dol-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-dol-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dol-1_o2": "cabeza اسم مفرد، لذلك نستخدم duele وليس duelen.",
+          "ex-a1-dol-1_o3": "doler لا يصرف مع yo لأن الفاعل هو العضو المصاب."
+        }
+      },
+      {
+        "id": "ex-a1-dol-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب صيغة doler مع الاسم الجمع",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المناسبة عندما تؤلمك عيناك (جمع)",
+        "stemEs": "Me _____ mucho los ojos después de leer.",
+        "stemAr": "تؤلمني عيناي كثيراً بعد القراءة.",
+        "targetVocab": [
+          "duelen"
+        ],
+        "explanationAr": "مع الأسماء الجمع مثل los ojos نستخدم صيغة duelen.",
+        "answerKey": {
+          "accepted": [
+            "duelen"
+          ],
+          "acceptableAnswers": [
+            "duelen"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-dol-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العَرَض المناسب لارتفاع درجة الحرارة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "إذا ارتفعت درجة حرارة جسم المريض إلى 39، فماذا لديه؟",
+        "stemEs": "El niño no va a clase porque tiene _____.",
+        "stemAr": "الطفل لا يذهب للحصة لأن لديه ...",
+        "options": [
+          {
+            "id": "ex-a1-dol-3_o1",
+            "text": "fiebre",
+            "textAr": "حمى / سخونة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dol-3_o2",
+            "text": "fuerte",
+            "textAr": "قوي (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "fuerte صفة ولا تأتي بمفردها بعد tiene للتعبير عن المرض."
+          },
+          {
+            "id": "ex-a1-dol-3_o3",
+            "text": "resfriado",
+            "textAr": "زكام",
+            "isCorrect": false,
+            "distractorRationaleAr": "ارتفاع درجة الحرارة تحديداً يسمى fiebre."
+          }
+        ],
+        "targetVocab": [
+          "fiebre",
+          "fuerte",
+          "resfriado"
+        ],
+        "explanationAr": "ارتفاع حرارة الجسم يسمى fiebre (Tener fiebre).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dol-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-dol-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dol-3_o2": "fuerte صفة ولا تأتي بمفردها بعد tiene للتعبير عن المرض.",
+          "ex-a1-dol-3_o3": "ارتفاع درجة الحرارة تحديداً يسمى fiebre."
+        }
+      },
+      {
+        "id": "ex-a1-dol-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن ألم شديد في الحلق",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-dol-4_t1",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "ex-a1-dol-4_t2",
+            "kind": "token",
+            "text": "duele"
+          },
+          {
+            "id": "ex-a1-dol-4_t3",
+            "kind": "token",
+            "text": "mucho"
+          },
+          {
+            "id": "ex-a1-dol-4_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-dol-4_t5",
+            "kind": "token",
+            "text": "garganta"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me duele mucho la garganta"
+          ],
+          "tokenOrder": [
+            "ex-a1-dol-4_t1",
+            "ex-a1-dol-4_t2",
+            "ex-a1-dol-4_t3",
+            "ex-a1-dol-4_t4",
+            "ex-a1-dol-4_t5"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الضمير Me ثم الفعل duele والظرف mucho ثم العضو la garganta.",
+        "targetVocab": [
+          "duele",
+          "garganta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-dol-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر ما يعاني منه المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للشكوى الصوتية وحدد المشكلة الصحية",
+        "stemEs": "No puedo cantar porque me duele la garganta.",
+        "stemAr": "لا أستطيع الغناء لأن حلقي يؤلمني.",
+        "options": [
+          {
+            "id": "ex-a1-dol-5_o1",
+            "text": "garganta",
+            "textAr": "حلق / زور",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dol-5_o2",
+            "text": "espalda",
+            "textAr": "ظهر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال garganta وليس espalda."
+          },
+          {
+            "id": "ex-a1-dol-5_o3",
+            "text": "cabeza",
+            "textAr": "رأس",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال garganta وليس cabeza."
+          }
+        ],
+        "targetVocab": [
+          "garganta",
+          "espalda",
+          "cabeza",
+          "duele"
+        ],
+        "explanationAr": "الشكوى تركز على الحلق: me duele la garganta.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_duele_garganta.mp3",
+        "speechEs": "No puedo cantar porque me duele la garganta.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dol-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-dol-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dol-5_o2": "المتحدث قال garganta وليس espalda.",
+          "ex-a1-dol-5_o3": "المتحدث قال garganta وليس cabeza."
+        }
+      },
+      {
+        "id": "ex-a1-dol-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق شكواك للطبيب من ألم الظهر",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر الطبيب بأن ظهرك يؤلمك بشدة بنطق سليم",
+        "stemEs": "Tengo un resfriado y me duele la espalda.",
+        "stemAr": "عندي نزلة برد ويؤلمني ظهري.",
+        "audioKey": "pending/a1_resfriado_espalda.mp3",
+        "targetVocab": [
+          "resfriado",
+          "duele",
+          "espalda"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في resfriado كـ ذال خفيفة بين الصائتين.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_resfriado_espalda.mp3",
+          "modelAnswer": "Tengo un resfriado y me duele la espalda."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "بنية الفعل doler (شبيه gustar تماماً)"
+    ]
+  }
+}

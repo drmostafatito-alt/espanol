@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-diplomacia-multilateral",
+    "titleAr": "الدبلوماسية المتعددة الأطراف والبيانات المشتركة: Diplomacia multilateral",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u7-complex-negotiation",
+    "objectiveAr": "أن يصيغ ويدير المتعلم مفاوضات دبلوماسية متعددة الأطراف محرراً بنود البيانات المشتركة بتوافق دولي (consenso unánime, veto, declaración conjunta, concordia).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "consenso",
+      "veto",
+      "concordia",
+      "comunicado",
+      "adhesión",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Fórmulas de mediación: apelar a la concordia y al espíritu de colaboración",
+      "Gestión del bloqueo institucional: superar la amenaza de veto mediante enmiendas",
+      "Adopción por consenso: consensuar el texto definitivo sin votación divisiva",
+      "Redacción solemne: emitir una declaración conjunta de adhesión a los principios"
+    ],
+    "grammarTopics": [
+      "lenguaje-diplomatico-c1",
+      "negociacion-multilateral-e-internacional"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "قمة دبلوماسية طارئة لوزراء خارجية الدول الأيبيروأمريكية لصياغة إعلان مدريد للسلام والتنمية.",
+        "settingAr": "قصر سانتا كروز، مقر وزارة الشؤون الخارجية، مدريد",
+        "lines": [
+          {
+            "es": "A pesar de las discrepancias iniciales, las delegaciones lograron forjar un consenso unánime sobre el texto.",
+            "ar": "على الرغم من التباينات المبدئية، نجحت الوفود في بناء توافق جماعي غير منقسم حول مسودة النص.",
+            "arEg": "رغم الخلافات في الأول، الوفود قدرت توصل لإجماع كامل وتوافق حقيقي على نص البيان.",
+            "audioKey": "pending/c1-u7-dip-1"
+          },
+          {
+            "es": "El mediador apeló con vehemencia a la concordia para evitar la interposición de un veto destructivo.",
+            "ar": "ناشد الوسيط الأطراف بحرارة الاحتكام إلى روح الوفاق والوئام لتفادي استخدام حق نقض مدمر للمفاوضات.",
+            "arEg": "الوسيط شدد وناشد الكل بالوفاق وتحكيم العقل عشان نتفادى الفيتو اللي كان ممكن يفركش القعدة.",
+            "audioKey": "pending/c1-u7-dip-2"
+          },
+          {
+            "es": "El comunicado final refleja fielmente los compromisos adquiridos en materia de cooperación científica.",
+            "ar": "يعكس البيان الختامي بأمانة التعهدات المتبادلة المبرمة في مجال التعاون والبحث العلمي.",
+            "arEg": "البيان الختامي المشترك عبّر بكل دقة عن الالتزامات اللي الدول اتفقت عليها في البحث العلمي.",
+            "audioKey": "pending/c1-u7-dip-3"
+          },
+          {
+            "es": "Varios países han manifestado ya su formal adhesión a las cláusulas vinculantes del tratado.",
+            "ar": "أعلنت عدة دول بالفعل عن انضمامها الرسمي والتزامها بالبنود الملزمة لهذه المعاهدة التاريخية.",
+            "arEg": "كذا دولة أعلنت خلاص انضمامها والتزامها الرسمي والنهائي بالبنود القانونية للمعاهدة دي.",
+            "audioKey": "pending/c1-u7-dip-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-dmu-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى المتحدث الدبلوماسي وحدد ما استطاعت الوفود تحقيقه لتجاوز الانقسام والفرقة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي النتيجة التي أثمرت عنها المشاورات المكثفة للوفود؟",
+        "stemEs": "A pesar de las discrepancias iniciales, las delegaciones lograron forjar un consenso unánime sobre el texto.",
+        "stemAr": "على الرغم من التباينات المبدئية، نجحت الوفود في بناء توافق جماعي غير منقسم حول مسودة النص.",
+        "options": [
+          {
+            "id": "ex-c1-dmu-1_a",
+            "text": "Forjar un consenso unánime sobre el documento",
+            "textAr": "بناء وإبرام توافق جماعي وشامل حول الوثيقة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dmu-1_b",
+            "text": "Declarar la guerra inmediata y romper relaciones",
+            "textAr": "إعلان الحرب وقطع العلاقات فوراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس الدبلوماسية والسلام."
+          },
+          {
+            "id": "ex-c1-dmu-1_c",
+            "text": "Suspender el congreso sin redactar ninguna línea",
+            "textAr": "إلغاء المؤتمر دون كتابة سطر واحد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوفود نجحت في التوافق."
+          }
+        ],
+        "targetVocab": [
+          "consenso",
+          "rigor"
+        ],
+        "explanationAr": "تعبير «forjar un consenso» في الأدبيات الدبلوماسية يعني العمل الدؤوب لتقريب وجهات النظر وصولاً إلى صيغة يرتضيها الجميع بلا تصويت إقصائي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u7-dip-1",
+        "speechEs": "A pesar de las discrepancias iniciales, las delegaciones lograron forjar un consenso unánime sobre el texto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dmu-1_a"
+          ],
+          "selectedOptionId": "ex-c1-dmu-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dmu-1_b": "عكس الدبلوماسية والسلام.",
+          "ex-c1-dmu-1_c": "الوفود نجحت في التوافق."
+        }
+      },
+      {
+        "id": "ex-c1-dmu-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما معنى عبارة «apelar a la concordia» في خطاب وزير الخارجية أمام مؤتمر السلام؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الدلالة السياسية والأخلاقية للدعوة إلى الوفاق:",
+        "stemEs": "El presidente de la asamblea apeló a la concordia para superar el bloqueo parlamentario.",
+        "stemAr": "ناشد رئيس الجمعية النواب الاحتكام إلى روح الوفاق والوئام لتجاوز الانسداد البرلماني الراهن.",
+        "options": [
+          {
+            "id": "ex-c1-dmu-2_a",
+            "text": "Invitar al entendimiento pacífico, la reconciliación y el acuerdo mutuo",
+            "textAr": "الدعوة إلى التفاهم السلمي والمصالحة والاتفاق المشترك",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dmu-2_b",
+            "text": "Amenazar con encarcelar a todos los opositores",
+            "textAr": "التهديد بحبس جميع المعارضين بالقوة",
+            "isCorrect": false,
+            "distractorRationaleAr": "سلوك قمعي استبدادي لا يسمى وفاقاً."
+          },
+          {
+            "id": "ex-c1-dmu-2_c",
+            "text": "Pedir un aumento de sueldo para los ministros",
+            "textAr": "المطالبة بزيادة رواتب الوزراء",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بالمبادئ الدبلوماسية."
+          }
+        ],
+        "targetVocab": [
+          "concordia",
+          "rigor"
+        ],
+        "explanationAr": "«La concordia» هي التوافق القلبي والعقلي وروح التآخي ونبذ الشقاق والنزاع من أجل المصلحة العليا المشتركة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dmu-2_a"
+          ],
+          "selectedOptionId": "ex-c1-dmu-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dmu-2_b": "سلوك قمعي استبدادي لا يسمى وفاقاً.",
+          "ex-c1-dmu-2_c": "لا علاقة له بالمبادئ الدبلوماسية."
+        }
+      },
+      {
+        "id": "ex-c1-dmu-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالحق القانوني الذي يملكه العضو لمنع تمرير أي قرار: «el derecho de ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة اللاتينية الدالة على حق النقض الدبلوماسي:",
+        "stemEs": "La resolución no pudo ser aprobada debido al ____ interpuesto por una potencia.",
+        "stemAr": "لم يتسنَ اعتماد القرار رسمياً بسبب حق النقض (الفيتو) الذي مارسته إحدى الدول الكبرى.",
+        "targetVocab": [
+          "veto"
+        ],
+        "explanationAr": "«El veto» هو الاعتراض الحاسم الذي يسقط مشروع القرار الدولي ولو حاز على تأييد الأغلبية في المنظمات ذات النصاب الإلزامي.",
+        "answerKey": {
+          "accepted": [
+            "veto"
+          ],
+          "acceptableAnswers": [
+            "veto"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-dmu-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الوصف الدبلوماسي لإعلان دولة ما انضمامها الرسمي والكامل لاتفاقية دولية؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الكلمة الرسمية المعبرة عن الانضمام والمصادقة على الاتفاقية:",
+        "stemEs": "El parlamento ratificó la formal ____ del país al tratado de no proliferación.",
+        "stemAr": "صادق البرلمان على الانضمام الرسمي والكامل للدولة إلى معاهدة عدم الانتشار.",
+        "options": [
+          {
+            "id": "ex-c1-dmu-4_a",
+            "text": "adhesión",
+            "textAr": "الانضمام الرسمي والتصديق القانوني على المعاهدة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-dmu-4_b",
+            "text": "admiración",
+            "textAr": "الإعجاب العاطفي بالمعاهدة دون توقيع",
+            "isCorrect": false,
+            "distractorRationaleAr": "شعور شخصي لا يرتب أثراً قانونياً."
+          },
+          {
+            "id": "ex-c1-dmu-4_c",
+            "text": "adversidad",
+            "textAr": "المحنة والشدائد الصعبة",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى سلبي لا علاقة له بالانضمام الدولي."
+          }
+        ],
+        "targetVocab": [
+          "adhesión",
+          "comunicado"
+        ],
+        "explanationAr": "في القانون الدولي «la adhesión a un tratado» هي الصيغة الرسمية التي تعلن بها دولة سيادتها التزامها الكامل ببنود معاهدة قائمة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-dmu-4_a"
+          ],
+          "selectedOptionId": "ex-c1-dmu-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-dmu-4_b": "شعور شخصي لا يرتب أثراً قانونياً.",
+          "ex-c1-dmu-4_c": "معنى سلبي لا علاقة له بالانضمام الدولي."
+        }
+      },
+      {
+        "id": "ex-c1-dmu-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء نداء دبلوماسي رفيع يدعو إلى الحوار وحسن النية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-dmu-5_t1",
+            "kind": "token",
+            "text": "Apelamos"
+          },
+          {
+            "id": "ex-c1-dmu-5_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-c1-dmu-5_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-dmu-5_t4",
+            "kind": "token",
+            "text": "concordia"
+          },
+          {
+            "id": "ex-c1-dmu-5_t5",
+            "kind": "token",
+            "text": "entre"
+          },
+          {
+            "id": "ex-c1-dmu-5_t6",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "ex-c1-dmu-5_t7",
+            "kind": "token",
+            "text": "naciones"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Apelamos a la concordia entre las naciones"
+          ],
+          "tokenOrder": [
+            "ex-c1-dmu-5_t1",
+            "ex-c1-dmu-5_t2",
+            "ex-c1-dmu-5_t3",
+            "ex-c1-dmu-5_t4",
+            "ex-c1-dmu-5_t5",
+            "ex-c1-dmu-5_t6",
+            "ex-c1-dmu-5_t7"
+          ]
+        },
+        "explanationAr": "الفعل Apelamos متبوعاً بحرف الجر a والمفعول به la concordia وظرف المكان والاسم المجرور entre las naciones.",
+        "targetVocab": [
+          "concordia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-dmu-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة مبعوث أممي يلقي بياناً ختامياً رصيناً أمام كاميرات الصحافة العالمية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الوقار الدبلوماسي المخاطب للجمهور:",
+        "stemEs": "Hemos alcanzado un consenso unánime y duradero.",
+        "stemAr": "لقد توصلنا إلى توافق جماعي غير منقسم وراسخ الأركان.",
+        "audioKey": "pending/c1-u7-dip-spk",
+        "targetVocab": [
+          "consenso",
+          "rigor"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة unánime على حرف a الأول ومد المقاطع المنبورة بهدوء يعكس الثقة والمصداقية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u7-dip-spk",
+          "modelAnswer": "Hemos alcanzado un consenso unánime y duradero."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

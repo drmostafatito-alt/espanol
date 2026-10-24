@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-relacionar-tiempos-pasado",
+    "titleAr": "تناغم أزمنة الماضي الثلاثة في السرد: البسيط والمستمر والأسبق",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u1-narrating",
+    "objectiveAr": "أن يربط المتعلم بين أزمنة الماضي الثلاثة (Indefinido, Imperfecto, Pluscuamperfecto) في قصة متماسكة تعكس الظرف والحدث القاطع والحدث الأسبق.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "ocurrir",
+      "pasar",
+      "recordar",
+      "caminar",
+      "sol",
+      "tiempo",
+      "historia",
+      "momento"
+    ],
+    "reviewVocabulary": [
+      "ciudad",
+      "amigo",
+      "calle",
+      "día"
+    ],
+    "targetStructures": [
+      "Hacía sol y la gente caminaba tranquilamente (Imperfecto: escenario).",
+      "De repente ocurrió algo inesperado (Indefinido: acción puntual).",
+      "Nadie había imaginado aquel desenlace (Pluscuamperfecto: anterioridad)."
+    ],
+    "grammarTopics": [
+      "combinacion-de-pasados",
+      "estructura-narrativa-compleja"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "راوٍ يسرد قصة يوم استثنائي في ساحة إشبيلية: كيف التقت أزمنة الماضي لنسج حكاية شيقة.",
+        "settingAr": "في أمسية ثقافية لسرد القصص الشعبية",
+        "lines": [
+          {
+            "es": "Era una tarde calurosa y la gente caminaba por la plaza mayor.",
+            "ar": "كانت أمسية حارة والناس يمشون في الساحة الكبرى.",
+            "arEg": "كانت ليلة حر والناس بتتمشى في الميدان الكبير.",
+            "audioKey": "pending/b1-tiempos-sc-1"
+          },
+          {
+            "es": "En aquel momento ocurrió algo que cambió la historia del barrio.",
+            "ar": "في تلك اللحظة وقع أمرٌ غيّر تاريخ الحي.",
+            "arEg": "في اللحظة دي حصلت حاجة غيرت تاريخ المنطقة.",
+            "audioKey": "pending/b1-tiempos-sc-2"
+          },
+          {
+            "es": "¿Y qué había pasado antes para provocar aquello?",
+            "ar": "وما الذي كان قد حدث قبل ذلك ليتسبب في الأمر؟",
+            "arEg": "وإيه اللي كان حصل قبلها عشان يوصل لكده؟",
+            "audioKey": "pending/b1-tiempos-sc-3"
+          },
+          {
+            "es": "Un vecino había encontrado un mapa antiguo que todos recordaban.",
+            "ar": "كان أحد الجيران قد عثر على خريطة قديمة يذكرها الجميع.",
+            "arEg": "واحد من الجيران كان لقى خريطة قديمة الكل فاكرها.",
+            "audioKey": "pending/b1-tiempos-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_tiem_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الراوي وحدد ما الذي كان يصف به المشهد والجو في البداية.",
+        "audioKey": "pending/b1-tiempos-sc-1",
+        "speechEs": "Era una tarde calurosa y la gente caminaba por la plaza mayor.",
+        "options": [
+          {
+            "id": "b1_tiem_1_a",
+            "text": "Descripción del ambiente con imperfecto",
+            "isCorrect": true,
+            "textAr": "وصف بيئة المشهد وزمانه بالماضي المستمر"
+          },
+          {
+            "id": "b1_tiem_1_b",
+            "text": "Acción rápida que terminó de golpe",
+            "isCorrect": false,
+            "textAr": "حدث سريع انتهى فجأة",
+            "distractorRationaleAr": "الأفعال تدل على حالة ممتدة في الخلفية وليست حدثًا خاطفًا."
+          },
+          {
+            "id": "b1_tiem_1_c",
+            "text": "Deseo futuro no cumplido",
+            "isCorrect": false,
+            "textAr": "رغبة مستقبلية لم تتحقق",
+            "distractorRationaleAr": "الجملة تصف واقعًا ماضيًا ولا تعبر عن رغبة مستقبلية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_tiem_1_a"
+          ]
+        },
+        "explanationAr": "الأفعال «era» و «caminaba» في الماضي المستمر (Imperfecto) تؤدي وظيفة رسم الخلفية السردية ووصف الحالة العامة.",
+        "errorFeedback": {
+          "b1_tiem_1_b": "الأحداث السريعة القاطعة تُصاغ بالماضي البسيط وليس بالمستمر.",
+          "b1_tiem_1_c": "الجملة تصف واقعًا ماضيًا ولا تعبر عن أمنيات."
+        },
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "caminar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_tiem_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الفعل المناسب للتعبير عن الحدث المفاجئ القاطع أثناء سير الأحداث.",
+        "stemEs": "Mientras caminábamos por el parque, ____ una sorpresa inesperada.",
+        "stemAr": "بينما كنا نمشي في الحديقة، ____ مفاجأة غير متوقعة.",
+        "options": [
+          {
+            "id": "b1_tiem_2_a",
+            "text": "ocurrió",
+            "isCorrect": true,
+            "textAr": "حدثت (ماضٍ بسيط قاطع)"
+          },
+          {
+            "id": "b1_tiem_2_b",
+            "text": "ocurría",
+            "isCorrect": false,
+            "textAr": "كانت تحدث (استمرار)",
+            "distractorRationaleAr": "ocurría يدل على حدث ممتد غير محدد النهاية."
+          },
+          {
+            "id": "b1_tiem_2_c",
+            "text": "habrá ocurrido",
+            "isCorrect": false,
+            "textAr": "قد تكون حدثت (احتمال)",
+            "distractorRationaleAr": "habrá ocurrido صيغة احتمال وتخمين."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_tiem_2_a"
+          ]
+        },
+        "explanationAr": "الحدث المفاجئ الذي يقطع استمرار الحدث الخلفي يصاغ في الماضي البسيط: ocurrió.",
+        "errorFeedback": {
+          "b1_tiem_2_b": "ocurría يدل على حدث ممتد غير محدد النهاية.",
+          "b1_tiem_2_c": "صيغة تخمين وتشكيك في المستقبل أو الحاضر."
+        },
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ocurrir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_tiem_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل pasar في الماضي الأسبق لتوضيح سبب الحدث.",
+        "stemEs": "Nadie entendía nada de lo que ____ pasado antes.",
+        "stemAr": "لم يكن أحد يفهم شيئًا مما كان قد ____ حدث قبل ذلك.",
+        "answerKey": {
+          "accepted": [
+            "había"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للإشارة إلى الأحداث التي سبقت لحظة السرد نستخدم الماضي الأسبق: «había pasado».",
+        "errorFeedback": {
+          "ha": "ha مضارع تام، وسياق النص في عمق الماضي.",
+          "habían": "الضمير lo مفرد محايد، لذا الفعل había بالمفرد."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "pasar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_tiem_4_reply",
+        "type": "word_choice",
+        "instructionAr": "اختر التركيب الذي يصف الحالة النفسية والذاكرة السردية للأشخاص في تلك اللحظة.",
+        "stemEs": "Todos los vecinos ____ aquella hermosa historia de su infancia.",
+        "stemAr": "جميع الجيران كانوا ____ تلك القصة الجميلة من طفولتهم.",
+        "options": [
+          {
+            "id": "b1_tiem_4_a",
+            "text": "recordaban",
+            "isCorrect": true,
+            "textAr": "يتذكرون (ماضٍ مستمر لوصف الحالة)"
+          },
+          {
+            "id": "b1_tiem_4_b",
+            "text": "recordó",
+            "isCorrect": false,
+            "textAr": "تذكّر (مفرد بسيط)",
+            "distractorRationaleAr": "recordó للمفرد، والفاعل هنا جمع (Todos los vecinos)."
+          },
+          {
+            "id": "b1_tiem_4_c",
+            "text": "recordarán",
+            "isCorrect": false,
+            "textAr": "سيتذكرون (مستقبل)",
+            "distractorRationaleAr": "recordarán في زمن المستقبل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_tiem_4_a"
+          ]
+        },
+        "explanationAr": "الفاعل جمع (Todos los vecinos) ووصف الحالة الذهنية الممتدة في السرد يتطلب الماضي المستمر: recordaban.",
+        "errorFeedback": {
+          "b1_tiem_4_b": "الفاعل جمع وليس مفردًا.",
+          "b1_tiem_4_c": "النص يحكي في الماضي وليس في المستقبل."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "recordar",
+          "historia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_tiem_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تجمع بين وصف الطقس والحدث المفاجئ.",
+        "items": [
+          {
+            "id": "b1_tm_t1",
+            "kind": "token",
+            "text": "Hacía"
+          },
+          {
+            "id": "b1_tm_t2",
+            "kind": "token",
+            "text": "sol"
+          },
+          {
+            "id": "b1_tm_t3",
+            "kind": "token",
+            "text": "en aquel"
+          },
+          {
+            "id": "b1_tm_t4",
+            "kind": "token",
+            "text": "momento"
+          },
+          {
+            "id": "b1_tm_t5",
+            "kind": "token",
+            "text": "especial."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hacía sol en aquel momento especial."
+          ],
+          "tokenOrder": [
+            "b1_tm_t1",
+            "b1_tm_t2",
+            "b1_tm_t3",
+            "b1_tm_t4",
+            "b1_tm_t5"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: التعبير عن الطقس Hacía sol ثم شبه الجملة الظرفية en aquel momento especial.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "sol",
+          "momento"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_tiem_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة السرد الثلاثية بصوت واضح ومخارج مضبوطة.",
+        "stemEs": "Era una tarde tranquila y hacía buen tiempo.",
+        "stemAr": "كانت أمسية هادئة وكان الجو لطيفًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-tiempos-speak-1",
+          "modelAnswer": "Era una tarde tranquila y hacía buen tiempo."
+        },
+        "explanationAr": "احرص على نطق حرف c في hacía كصوت الثاء اللثوية (في الإسبانية القياسية) ونطق الراء المرققة في era وtarde.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "tiempo"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق c في hacía كثاء لثوية",
+              "weight": 50,
+              "code": "pron_c_hacia"
+            },
+            {
+              "labelAr": "سلاسة الربط السردي بين الجملتين",
+              "weight": 50,
+              "code": "narrative_linking"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 3 وSueña 2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

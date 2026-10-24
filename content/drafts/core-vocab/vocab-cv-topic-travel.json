@@ -1,0 +1,2715 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-topic-travel",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+  "source": {
+    "title": "حزمة مفردات: معجم مفردات السفر والسياحة والمطارات والفنادق والمواصلات — مسودة قابلة للمراجعة",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-23",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. IPA تلقائي تقريبي من قواعد الإملاء الإسبانية وينتظر مراجعة بشرية."
+  },
+  "entries": [
+    {
+      "headword": "aerolínea",
+      "normalized": "aerolínea",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aerolíneas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aeɾolˈinea/",
+      "pronunciationHintAr": "ايرولينيا",
+      "internalRank": 1,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شركة خطوط جوية تسير رحلات الطيران",
+          "meaningArEg": "شركة طيران بتسير رحلات جوية",
+          "glossEs": null,
+          "exampleEs": "La aerolínea es fundamental para organizar el viaje.",
+          "exampleAr": "الـشركة خطوط جوية تسير رحلات الطيران أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aerolínea es fundamental para organizar el viaje.",
+          "ar": "الـشركة خطوط جوية تسير رحلات الطيران أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aeródromo",
+      "normalized": "aeródromo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "aeródromos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aeɾˈodɾomo/",
+      "pronunciationHintAr": "ايرودرومو",
+      "internalRank": 2,
+      "tags": [
+        "domain:travel",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مهبط طائرات ومطار محلي صغير",
+          "meaningArEg": "مهبط طيارات صغير في الأقاليم",
+          "glossEs": null,
+          "exampleEs": "El aeródromo es fundamental para organizar el viaje.",
+          "exampleAr": "الـمهبط طائرات ومطار محلي صغير أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El aeródromo es fundamental para organizar el viaje.",
+          "ar": "الـمهبط طائرات ومطار محلي صغير أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aeronave",
+      "normalized": "aeronave",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aeronaves",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aeɾonˈabe/",
+      "pronunciationHintAr": "ايرونابي",
+      "internalRank": 3,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مركبة طيران جوية وطائرة ركاب مدنية",
+          "meaningArEg": "طيارة مدنية لنقل الركاب في الجو",
+          "glossEs": null,
+          "exampleEs": "La aeronave es fundamental para organizar el viaje.",
+          "exampleAr": "الـمركبة طيران جوية وطائرة ركاب مدنية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aeronave es fundamental para organizar el viaje.",
+          "ar": "الـمركبة طيران جوية وطائرة ركاب مدنية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aeromoza",
+      "normalized": "aeromoza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aeromozas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/aeɾomˈoθa/",
+      "pronunciationHintAr": "ايروموثا",
+      "internalRank": 4,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مضيفة طيران ترعى راحة الركاب بالجو",
+          "meaningArEg": "مضيفة طيران بتقدم الوجبات بالطيارة",
+          "glossEs": null,
+          "exampleEs": "La aeromoza es fundamental para organizar el viaje.",
+          "exampleAr": "الـمضيفة طيران ترعى راحة الركاب بالجو أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aeromoza es fundamental para organizar el viaje.",
+          "ar": "الـمضيفة طيران ترعى راحة الركاب بالجو أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "alunizaje",
+      "normalized": "alunizaje",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "alunizajes",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aluniθˈaxe/",
+      "pronunciationHintAr": "الونيثاخي",
+      "internalRank": 5,
+      "tags": [
+        "domain:science",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هبوط مركبة الفضاء على سطح القمر",
+          "meaningArEg": "نزول وهبوط مركبة فضا ع القمر",
+          "glossEs": null,
+          "exampleEs": "El alunizaje es fundamental para organizar el viaje.",
+          "exampleAr": "الـهبوط مركبة الفضاء على سطح القمر أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El alunizaje es fundamental para organizar el viaje.",
+          "ar": "الـهبوط مركبة الفضاء على سطح القمر أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "amerizaje",
+      "normalized": "amerizaje",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "amerizajes",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/ameɾiθˈaxe/",
+      "pronunciationHintAr": "اميريثاخي",
+      "internalRank": 6,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هبوط اضطراري للطائرة على سطح الماء",
+          "meaningArEg": "نزول وهبوط طيارة اضطراري في البحر",
+          "glossEs": null,
+          "exampleEs": "El amerizaje es fundamental para organizar el viaje.",
+          "exampleAr": "الـهبوط اضطراري للطائرة على سطح الماء أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El amerizaje es fundamental para organizar el viaje.",
+          "ar": "الـهبوط اضطراري للطائرة على سطح الماء أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "anunciador",
+      "normalized": "anunciador",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "anunciadores",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/anunθiadˈoɾ/",
+      "pronunciationHintAr": "انونثيادور",
+      "internalRank": 7,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مكبر إعلانات المطار الصوتي للرحلات",
+          "meaningArEg": "مذيع ندا الرحلات في صالة المطار",
+          "glossEs": null,
+          "exampleEs": "El anunciador es fundamental para organizar el viaje.",
+          "exampleAr": "الـمكبر إعلانات المطار الصوتي للرحلات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El anunciador es fundamental para organizar el viaje.",
+          "ar": "الـمكبر إعلانات المطار الصوتي للرحلات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aproximación",
+      "normalized": "aproximación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aproximacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/apɾoksimaθiˈon/",
+      "pronunciationHintAr": "ابروكسيماثيون",
+      "internalRank": 8,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "اقتراب الطائرة التدريجي من مدرج الهبوط",
+          "meaningArEg": "نزول واقتراب الطيارة بالراحة من الممر",
+          "glossEs": null,
+          "exampleEs": "La aproximación es fundamental para organizar el viaje.",
+          "exampleAr": "الـاقتراب الطائرة التدريجي من مدرج الهبوط أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aproximación es fundamental para organizar el viaje.",
+          "ar": "الـاقتراب الطائرة التدريجي من مدرج الهبوط أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aterrizaje",
+      "normalized": "aterrizaje",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "aterrizajes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ateɾɾiθˈaxe/",
+      "pronunciationHintAr": "اتيرريثاخي",
+      "internalRank": 9,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "هبوط الطائرة بسلام على أرض المطار",
+          "meaningArEg": "نزول وهبوط الطيارة بسلام ع الأسفلت",
+          "glossEs": null,
+          "exampleEs": "El aterrizaje es fundamental para organizar el viaje.",
+          "exampleAr": "الـهبوط الطائرة بسلام على أرض المطار أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El aterrizaje es fundamental para organizar el viaje.",
+          "ar": "الـهبوط الطائرة بسلام على أرض المطار أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "autocar",
+      "normalized": "autocar",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "autocares",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/autokˈaɾ/",
+      "pronunciationHintAr": "اوتوكار",
+      "internalRank": 10,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حافلة سياحية مريحة لنقل الأفواج",
+          "meaningArEg": "أتوبيس سياحي مكيف للرحلات الكبيرة",
+          "glossEs": null,
+          "exampleEs": "El autocar es fundamental para organizar el viaje.",
+          "exampleAr": "الـحافلة سياحية مريحة لنقل الأفواج أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El autocar es fundamental para organizar el viaje.",
+          "ar": "الـحافلة سياحية مريحة لنقل الأفواج أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "autovía",
+      "normalized": "autovía",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "autovías",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/autobˈia/",
+      "pronunciationHintAr": "اوتوبيا",
+      "internalRank": 11,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طريق سريع مزدوج مجاني للسيارات",
+          "meaningArEg": "طريق سريع ومزدوج للعربيات بالبلاد",
+          "glossEs": null,
+          "exampleEs": "La autovía es fundamental para organizar el viaje.",
+          "exampleAr": "الـطريق سريع مزدوج مجاني للسيارات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La autovía es fundamental para organizar el viaje.",
+          "ar": "الـطريق سريع مزدوج مجاني للسيارات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "aviación",
+      "normalized": "aviación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "aviacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/abiaθiˈon/",
+      "pronunciationHintAr": "ابياثيون",
+      "internalRank": 12,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سلاح الجو وعلم الملاحة وصناعة الطيران",
+          "meaningArEg": "طيران مدني وصناعة الطيارات والملاحة",
+          "glossEs": null,
+          "exampleEs": "La aviación es fundamental para organizar el viaje.",
+          "exampleAr": "الـسلاح الجو وعلم الملاحة وصناعة الطيران أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La aviación es fundamental para organizar el viaje.",
+          "ar": "الـسلاح الجو وعلم الملاحة وصناعة الطيران أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "avioneta",
+      "normalized": "avioneta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "avionetas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/abionˈeta/",
+      "pronunciationHintAr": "ابيونيتا",
+      "internalRank": 13,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طائرة شراعية أو تدريبية صغيرة الحجم",
+          "meaningArEg": "طيارة صغيرة بمحرك واحد للتدريب والرش",
+          "glossEs": null,
+          "exampleEs": "La avioneta es fundamental para organizar el viaje.",
+          "exampleAr": "الـطائرة شراعية أو تدريبية صغيرة الحجم أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La avioneta es fundamental para organizar el viaje.",
+          "ar": "الـطائرة شراعية أو تدريبية صغيرة الحجم أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ayudante",
+      "normalized": "ayudante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "ayudantes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/aʝudˈante/",
+      "pronunciationHintAr": "ايودانتي",
+      "internalRank": 14,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مساعد ملاحي أو معاون في قيادة الرحلة",
+          "meaningArEg": "مساعد طيار ومعاون في كابينة القيادة",
+          "glossEs": null,
+          "exampleEs": "La ayudante es fundamental para organizar el viaje.",
+          "exampleAr": "الـمساعد ملاحي أو معاون في قيادة الرحلة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La ayudante es fundamental para organizar el viaje.",
+          "ar": "الـمساعد ملاحي أو معاون في قيادة الرحلة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "babor",
+      "normalized": "babor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "babores",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/babˈoɾ/",
+      "pronunciationHintAr": "بابور",
+      "internalRank": 15,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الميسرة والجانب الأيسر للسفينة البحرية",
+          "meaningArEg": "الجنب الشمال للمركب في لغة البحارة",
+          "glossEs": null,
+          "exampleEs": "El babor es fundamental para organizar el viaje.",
+          "exampleAr": "الـالميسرة والجانب الأيسر للسفينة البحرية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El babor es fundamental para organizar el viaje.",
+          "ar": "الـالميسرة والجانب الأيسر للسفينة البحرية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "baliza",
+      "normalized": "baliza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "balizas",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/balˈiθa/",
+      "pronunciationHintAr": "باليثا",
+      "internalRank": 16,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عوامة إرشادية أو فنار ضوئي في المجرى",
+          "meaningArEg": "شمانورة وعلامة فسفورية في المية والجو",
+          "glossEs": null,
+          "exampleEs": "La baliza es fundamental para organizar el viaje.",
+          "exampleAr": "الـعوامة إرشادية أو فنار ضوئي في المجرى أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La baliza es fundamental para organizar el viaje.",
+          "ar": "الـعوامة إرشادية أو فنار ضوئي في المجرى أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "balsa",
+      "normalized": "balsa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "balsas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/bˈalsa/",
+      "pronunciationHintAr": "بالسا",
+      "internalRank": 17,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طوف وقارب نجاة مطاطي عائم للركاب",
+          "meaningArEg": "عوامة وقارب نجاة مطاطي للركاب",
+          "glossEs": null,
+          "exampleEs": "La balsa es fundamental para organizar el viaje.",
+          "exampleAr": "الـطوف وقارب نجاة مطاطي عائم للركاب أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La balsa es fundamental para organizar el viaje.",
+          "ar": "الـطوف وقارب نجاة مطاطي عائم للركاب أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "barcaza",
+      "normalized": "barcaza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "barcazas",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/baɾkˈaθa/",
+      "pronunciationHintAr": "باركاثا",
+      "internalRank": 18,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صندل بحري مسطح لنقل الحاويات الثقيلة",
+          "meaningArEg": "صندل نهري لنقل الرملة والبضاعة في النيل",
+          "glossEs": null,
+          "exampleEs": "La barcaza es fundamental para organizar el viaje.",
+          "exampleAr": "الـصندل بحري مسطح لنقل الحاويات الثقيلة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La barcaza es fundamental para organizar el viaje.",
+          "ar": "الـصندل بحري مسطح لنقل الحاويات الثقيلة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "billetería",
+      "normalized": "billetería",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "billeterías",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/biʎleteɾˈia/",
+      "pronunciationHintAr": "بيليليتيريا",
+      "internalRank": 19,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شباك حجز وبيع التذاكر في المحطة",
+          "meaningArEg": "شباك حجز التذاكر في محطة القطر",
+          "glossEs": null,
+          "exampleEs": "La billetería es fundamental para organizar el viaje.",
+          "exampleAr": "الـشباك حجز وبيع التذاكر في المحطة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La billetería es fundamental para organizar el viaje.",
+          "ar": "الـشباك حجز وبيع التذاكر في المحطة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "bonobús",
+      "normalized": "bonobús",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "bonobús",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/bonobˈus/",
+      "pronunciationHintAr": "بونوبوس",
+      "internalRank": 20,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بطاقة اشتراك وركوب مخفض للحافلات",
+          "meaningArEg": "كارت شحن واشتراك أتوبيسات مخفض",
+          "glossEs": null,
+          "exampleEs": "El bonobús es fundamental para organizar el viaje.",
+          "exampleAr": "الـبطاقة اشتراك وركوب مخفض للحافلات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El bonobús es fundamental para organizar el viaje.",
+          "ar": "الـبطاقة اشتراك وركوب مخفض للحافلات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cabina",
+      "normalized": "cabina",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cabinas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kabˈina/",
+      "pronunciationHintAr": "كابينا",
+      "internalRank": 21,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "كابينة قيادة الطائرة أو غرفة في السفينة",
+          "meaningArEg": "كابينة قيادة الطيارة أو قمرة في الباخرة",
+          "glossEs": null,
+          "exampleEs": "La cabina es fundamental para organizar el viaje.",
+          "exampleAr": "الـكابينة قيادة الطائرة أو غرفة في السفينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cabina es fundamental para organizar el viaje.",
+          "ar": "الـكابينة قيادة الطائرة أو غرفة في السفينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "calado",
+      "normalized": "calado",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "calados",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/kalˈado/",
+      "pronunciationHintAr": "كالادو",
+      "internalRank": 22,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غاطس السفينة وعمقها تحت خط الماء",
+          "meaningArEg": "غاطس المركب وعمقها تحت سطح المية",
+          "glossEs": null,
+          "exampleEs": "El calado es fundamental para organizar el viaje.",
+          "exampleAr": "الـغاطس السفينة وعمقها تحت خط الماء أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El calado es fundamental para organizar el viaje.",
+          "ar": "الـغاطس السفينة وعمقها تحت خط الماء أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "camarote",
+      "normalized": "camarote",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "camarotes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kamaɾˈote/",
+      "pronunciationHintAr": "كاماروتي",
+      "internalRank": 23,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قمرة وغرفة نوم مخصصة للركاب بالسفينة",
+          "meaningArEg": "قمرة وأوضة نوم بسرير في الباخرة",
+          "glossEs": null,
+          "exampleEs": "El camarote es fundamental para organizar el viaje.",
+          "exampleAr": "الـقمرة وغرفة نوم مخصصة للركاب بالسفينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El camarote es fundamental para organizar el viaje.",
+          "ar": "الـقمرة وغرفة نوم مخصصة للركاب بالسفينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "caminante",
+      "normalized": "caminante",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "caminantes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaminˈante/",
+      "pronunciationHintAr": "كامينانتي",
+      "internalRank": 24,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ما شٍ ومتنزه يجوب الدروب على قدميه",
+          "meaningArEg": "ماشي وعابر سبيل بيلف ع رجليه",
+          "glossEs": null,
+          "exampleEs": "El caminante es fundamental para organizar el viaje.",
+          "exampleAr": "الـما شٍ ومتنزه يجوب الدروب على قدميه أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El caminante es fundamental para organizar el viaje.",
+          "ar": "الـما شٍ ومتنزه يجوب الدروب على قدميه أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "camioneta",
+      "normalized": "camioneta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "camionetas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kamionˈeta/",
+      "pronunciationHintAr": "كاميونيتا",
+      "internalRank": 25,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سيارة نقل نصف نقل صغيرة للبضائع",
+          "meaningArEg": "عربية نص نقل وشيفروليه للبضاعة",
+          "glossEs": null,
+          "exampleEs": "La camioneta es fundamental para organizar el viaje.",
+          "exampleAr": "الـسيارة نقل نصف نقل صغيرة للبضائع أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La camioneta es fundamental para organizar el viaje.",
+          "ar": "الـسيارة نقل نصف نقل صغيرة للبضائع أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "campista",
+      "normalized": "campista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "campistas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kampˈista/",
+      "pronunciationHintAr": "كامبيستا",
+      "internalRank": 26,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مخيم يقضي عطلته في نصب الخيام",
+          "meaningArEg": "شاب مخيم في الطبيعة ناصب خيمته",
+          "glossEs": null,
+          "exampleEs": "La campista es fundamental para organizar el viaje.",
+          "exampleAr": "الـمخيم يقضي عطلته في نصب الخيام أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La campista es fundamental para organizar el viaje.",
+          "ar": "الـمخيم يقضي عطلته في نصب الخيام أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cancela",
+      "normalized": "cancela",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cancelas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kanθˈela/",
+      "pronunciationHintAr": "كانثيلا",
+      "internalRank": 27,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بوابة حديدية للممر أو حظيرة المطار",
+          "meaningArEg": "بوابة حديد مشغولة لمدخل الساحة",
+          "glossEs": null,
+          "exampleEs": "La cancela es fundamental para organizar el viaje.",
+          "exampleAr": "الـبوابة حديدية للممر أو حظيرة المطار أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cancela es fundamental para organizar el viaje.",
+          "ar": "الـبوابة حديدية للممر أو حظيرة المطار أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "canoa",
+      "normalized": "canoa",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "canoas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kanˈoa/",
+      "pronunciationHintAr": "كانوا",
+      "internalRank": 28,
+      "tags": [
+        "domain:sports",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "زورق وكانو خشبي ضيق يجذف به بمجداف",
+          "meaningArEg": "كانو وزورق خفيف ورفيع للتجديف",
+          "glossEs": null,
+          "exampleEs": "La canoa es fundamental para organizar el viaje.",
+          "exampleAr": "الـزورق وكانو خشبي ضيق يجذف به بمجداف أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La canoa es fundamental para organizar el viaje.",
+          "ar": "الـزورق وكانو خشبي ضيق يجذف به بمجداف أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "caravana",
+      "normalized": "caravana",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "caravanas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaɾabˈana/",
+      "pronunciationHintAr": "كارابانا",
+      "internalRank": 29,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مقطورة ومقطورة كرفان للسياحة البرية",
+          "meaningArEg": "كرفان وعربية تخييم للفسح والسفر",
+          "glossEs": null,
+          "exampleEs": "La caravana es fundamental para organizar el viaje.",
+          "exampleAr": "الـمقطورة ومقطورة كرفان للسياحة البرية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La caravana es fundamental para organizar el viaje.",
+          "ar": "الـمقطورة ومقطورة كرفان للسياحة البرية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "carril",
+      "normalized": "carril",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "carriles",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaɾɾˈil/",
+      "pronunciationHintAr": "كارريل",
+      "internalRank": 30,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "حارة مرورية مخصصة لسير الحافلات أو الدراجات",
+          "meaningArEg": "حارة مرورية للأتوبيسات أو العجل",
+          "glossEs": null,
+          "exampleEs": "El carril es fundamental para organizar el viaje.",
+          "exampleAr": "الـحارة مرورية مخصصة لسير الحافلات أو الدراجات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El carril es fundamental para organizar el viaje.",
+          "ar": "الـحارة مرورية مخصصة لسير الحافلات أو الدراجات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "carroza",
+      "normalized": "carroza",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "carrozas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kaɾɾˈoθa/",
+      "pronunciationHintAr": "كارروثا",
+      "internalRank": 31,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عربة خيل فخمة ومزينة تجرها الجياد",
+          "meaningArEg": "عربة حنطور فخمة بيجرها الخيل في الزفة",
+          "glossEs": null,
+          "exampleEs": "La carroza es fundamental para organizar el viaje.",
+          "exampleAr": "الـعربة خيل فخمة ومزينة تجرها الجياد أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La carroza es fundamental para organizar el viaje.",
+          "ar": "الـعربة خيل فخمة ومزينة تجرها الجياد أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "casco",
+      "normalized": "casco",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cascos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kˈasko/",
+      "pronunciationHintAr": "كاسكو",
+      "internalRank": 32,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خوذة أمان لحماية رأس سائق الدراجة",
+          "meaningArEg": "خوذة موتوسيكل وعجلة لحماية الراس",
+          "glossEs": null,
+          "exampleEs": "El casco es fundamental para organizar el viaje.",
+          "exampleAr": "الـخوذة أمان لحماية رأس سائق الدراجة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El casco es fundamental para organizar el viaje.",
+          "ar": "الـخوذة أمان لحماية رأس سائق الدراجة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "catamarán",
+      "normalized": "catamarán",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "catamaránes",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/katamaɾˈan/",
+      "pronunciationHintAr": "كاتاماران",
+      "internalRank": 33,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طوف وقارب مزدوج الهيكل وسريع جداً",
+          "meaningArEg": "مركب كاتاماران بهيكلين وسريع في المية",
+          "glossEs": null,
+          "exampleEs": "El catamarán es fundamental para organizar el viaje.",
+          "exampleAr": "الـطوف وقارب مزدوج الهيكل وسريع جداً أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El catamarán es fundamental para organizar el viaje.",
+          "ar": "الـطوف وقارب مزدوج الهيكل وسريع جداً أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "chofer",
+      "normalized": "chofer",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "choferes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kofˈeɾ/",
+      "pronunciationHintAr": "كوفير",
+      "internalRank": 34,
+      "tags": [
+        "domain:work",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سائق حافلة أو سيارة أجرة خاص محترف",
+          "meaningArEg": "سواق تاكسي أو عربية خصوصي محترف",
+          "glossEs": null,
+          "exampleEs": "El chofer es fundamental para organizar el viaje.",
+          "exampleAr": "الـسائق حافلة أو سيارة أجرة خاص محترف أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El chofer es fundamental para organizar el viaje.",
+          "ar": "الـسائق حافلة أو سيارة أجرة خاص محترف أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "circunvalación",
+      "normalized": "circunvalación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "circunvalacones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/θiɾkunbalaθiˈon/",
+      "pronunciationHintAr": "ثيركونبالاثيون",
+      "internalRank": 35,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طريق دائري يلتف حول أطراف المدينة",
+          "meaningArEg": "طريق دائري ومحور بيلف حولين المدينة",
+          "glossEs": null,
+          "exampleEs": "La circunvalación es fundamental para organizar el viaje.",
+          "exampleAr": "الـطريق دائري يلتف حول أطراف المدينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La circunvalación es fundamental para organizar el viaje.",
+          "ar": "الـطريق دائري يلتف حول أطراف المدينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "combustible",
+      "normalized": "combustible",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "combustibles",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kombustˈible/",
+      "pronunciationHintAr": "كومبوستيبلي",
+      "internalRank": 36,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "وقود وكيروسين لتشغيل محركات الطائرات",
+          "meaningArEg": "بنزين وسولار ووقود للمحركات",
+          "glossEs": null,
+          "exampleEs": "El combustible es fundamental para organizar el viaje.",
+          "exampleAr": "الـوقود وكيروسين لتشغيل محركات الطائرات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El combustible es fundamental para organizar el viaje.",
+          "ar": "الـوقود وكيروسين لتشغيل محركات الطائرات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "compartimento",
+      "normalized": "compartimento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "compartimentos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kompaɾtimˈento/",
+      "pronunciationHintAr": "كومبارتيمينتو",
+      "internalRank": 37,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مقصورة حقائب علوية فوق مقاعد الطائرة",
+          "meaningArEg": "رف ورفوف الشنط فوق كراسي الطيارة",
+          "glossEs": null,
+          "exampleEs": "El compartimento es fundamental para organizar el viaje.",
+          "exampleAr": "الـمقصورة حقائب علوية فوق مقاعد الطائرة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El compartimento es fundamental para organizar el viaje.",
+          "ar": "الـمقصورة حقائب علوية فوق مقاعد الطائرة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "consigna",
+      "normalized": "consigna",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "consignas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/konsˈigna/",
+      "pronunciationHintAr": "كونسيجنا",
+      "internalRank": 38,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "أمانات وغرفة حفظ الحقائب بالمحطة",
+          "meaningArEg": "أوضة حفظ الأمانات والشنط بالمحطة",
+          "glossEs": null,
+          "exampleEs": "La consigna es fundamental para organizar el viaje.",
+          "exampleAr": "الـأمانات وغرفة حفظ الحقائب بالمحطة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La consigna es fundamental para organizar el viaje.",
+          "ar": "الـأمانات وغرفة حفظ الحقائب بالمحطة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "crucero",
+      "normalized": "crucero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "cruceros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/kɾuθˈeɾo/",
+      "pronunciationHintAr": "كروثيرو",
+      "internalRank": 39,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سفينة رحلات بحرية عملاقة للاستجمام",
+          "meaningArEg": "باخرة سياحية وكروز عايم في البحر",
+          "glossEs": null,
+          "exampleEs": "El crucero es fundamental para organizar el viaje.",
+          "exampleAr": "الـسفينة رحلات بحرية عملاقة للاستجمام أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El crucero es fundamental para organizar el viaje.",
+          "ar": "الـسفينة رحلات بحرية عملاقة للاستجمام أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cuatrimoto",
+      "normalized": "cuatrimoto",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cuatrimotos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kuatɾimˈoto/",
+      "pronunciationHintAr": "كواتريموتو",
+      "internalRank": 40,
+      "tags": [
+        "domain:sports",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "دراجة نارية رباعية الدفع لرمال الصحراء",
+          "meaningArEg": "بيتش باجي بموتور في سفاري الصحرا",
+          "glossEs": null,
+          "exampleEs": "La cuatrimoto es fundamental para organizar el viaje.",
+          "exampleAr": "الـدراجة نارية رباعية الدفع لرمال الصحراء أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cuatrimoto es fundamental para organizar el viaje.",
+          "ar": "الـدراجة نارية رباعية الدفع لرمال الصحراء أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "cubierta",
+      "normalized": "cubierta",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "cubiertas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kubiˈeɾta/",
+      "pronunciationHintAr": "كوبييرتا",
+      "internalRank": 41,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سطح السفينة الخارجي المفتوح على البحر",
+          "meaningArEg": "سطح المركب والباخرة المفتوح ع الهوا",
+          "glossEs": null,
+          "exampleEs": "La cubierta es fundamental para organizar el viaje.",
+          "exampleAr": "الـسطح السفينة الخارجي المفتوح على البحر أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La cubierta es fundamental para organizar el viaje.",
+          "ar": "الـسطح السفينة الخارجي المفتوح على البحر أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "despegue",
+      "normalized": "despegue",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "despegues",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/despegˈue/",
+      "pronunciationHintAr": "ديسبيجوي",
+      "internalRank": 42,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إقلاع الطائرة وارتفاعها عن المدرج بالسماء",
+          "meaningArEg": "طلوع وطيران الطيارة عن الأرض في الجو",
+          "glossEs": null,
+          "exampleEs": "El despegue es fundamental para organizar el viaje.",
+          "exampleAr": "الـإقلاع الطائرة وارتفاعها عن المدرج بالسماء أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El despegue es fundamental para organizar el viaje.",
+          "ar": "الـإقلاع الطائرة وارتفاعها عن المدرج بالسماء أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "desvío",
+      "normalized": "desvío",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "desvíos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/desbˈio/",
+      "pronunciationHintAr": "ديسبيو",
+      "internalRank": 43,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تحويلة طريق وسلك مسار بديل للإصلاحات",
+          "meaningArEg": "تحويلة طريق وسكة بديلة عشان أعمال الصيانة",
+          "glossEs": null,
+          "exampleEs": "El desvío es fundamental para organizar el viaje.",
+          "exampleAr": "الـتحويلة طريق وسلك مسار بديل للإصلاحات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El desvío es fundamental para organizar el viaje.",
+          "ar": "الـتحويلة طريق وسلك مسار بديل للإصلاحات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "embarcadero",
+      "normalized": "embarcadero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "embarcaderos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/embaɾkadˈeɾo/",
+      "pronunciationHintAr": "يمباركاديرو",
+      "internalRank": 44,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مرسى وممشى خشبي لركوب القوارب",
+          "meaningArEg": "مرسى ولسان خشب لركوب المراكب",
+          "glossEs": null,
+          "exampleEs": "El embarcadero es fundamental para organizar el viaje.",
+          "exampleAr": "الـمرسى وممشى خشبي لركوب القوارب أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El embarcadero es fundamental para organizar el viaje.",
+          "ar": "الـمرسى وممشى خشبي لركوب القوارب أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "escala",
+      "normalized": "escala",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "escalas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/eskˈala/",
+      "pronunciationHintAr": "يسكالا",
+      "internalRank": 45,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ترانزيت وتوقف مؤقت في مطار وسيط",
+          "meaningArEg": "ترانزيت ووقفة في مطار وسيط قبل بلدك",
+          "glossEs": null,
+          "exampleEs": "La escala es fundamental para organizar el viaje.",
+          "exampleAr": "الـترانزيت وتوقف مؤقت في مطار وسيط أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La escala es fundamental para organizar el viaje.",
+          "ar": "الـترانزيت وتوقف مؤقت في مطار وسيط أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "estacionamiento",
+      "normalized": "estacionamiento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "estacionamientos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/estaθionamiˈento/",
+      "pronunciationHintAr": "يستاثيوناميينتو",
+      "internalRank": 46,
+      "tags": [
+        "domain:city",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موقف سيارات وركن منظم للمركبات",
+          "meaningArEg": "باركنج وموقف ركن عربيات منظم",
+          "glossEs": null,
+          "exampleEs": "El estacionamiento es fundamental para organizar el viaje.",
+          "exampleAr": "الـموقف سيارات وركن منظم للمركبات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El estacionamiento es fundamental para organizar el viaje.",
+          "ar": "الـموقف سيارات وركن منظم للمركبات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "estribor",
+      "normalized": "estribor",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "estribores",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/estɾibˈoɾ/",
+      "pronunciationHintAr": "يستريبور",
+      "internalRank": 47,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "الميمنة والجانب الأيمن من هيكل السفينة",
+          "meaningArEg": "الجنب اليمين للمركب في الملاحة",
+          "glossEs": null,
+          "exampleEs": "El estribor es fundamental para organizar el viaje.",
+          "exampleAr": "الـالميمنة والجانب الأيمن من هيكل السفينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El estribor es fundamental para organizar el viaje.",
+          "ar": "الـالميمنة والجانب الأيمن من هيكل السفينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "facturación",
+      "normalized": "facturación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "facturacones",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/faktuɾaθiˈon/",
+      "pronunciationHintAr": "فاكتوراثيون",
+      "internalRank": 48,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسجيل الأمتعة ووزن الحقائب عند الكاونتر",
+          "meaningArEg": "شحن ووزن الشنط عند كاونتر المطار",
+          "glossEs": null,
+          "exampleEs": "La facturación es fundamental para organizar el viaje.",
+          "exampleAr": "الـتسجيل الأمتعة ووزن الحقائب عند الكاونتر أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La facturación es fundamental para organizar el viaje.",
+          "ar": "الـتسجيل الأمتعة ووزن الحقائب عند الكاونتر أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ferry",
+      "normalized": "ferry",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ferryes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/fˈeɾɾi/",
+      "pronunciationHintAr": "فيرري",
+      "internalRank": 49,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "معدية وعبّارة ركاب وسيارات تنقل بين ضفتين",
+          "meaningArEg": "معدية وعبارة بتعدي العربيات والناس البحر",
+          "glossEs": null,
+          "exampleEs": "El ferry es fundamental para organizar el viaje.",
+          "exampleAr": "الـمعدية وعبّارة ركاب وسيارات تنقل بين ضفتين أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ferry es fundamental para organizar el viaje.",
+          "ar": "الـمعدية وعبّارة ركاب وسيارات تنقل بين ضفتين أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hélice",
+      "normalized": "hélice",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "hélices",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/ˈeliθe/",
+      "pronunciationHintAr": "يليثي",
+      "internalRank": 50,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مروحة دفع الطائرة أو قارب المحرك",
+          "meaningArEg": "مروحة موتور الطيارة والمركب في المية",
+          "glossEs": null,
+          "exampleEs": "La hélice es fundamental para organizar el viaje.",
+          "exampleAr": "الـمروحة دفع الطائرة أو قارب المحرك أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La hélice es fundamental para organizar el viaje.",
+          "ar": "الـمروحة دفع الطائرة أو قارب المحرك أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "helicóptero",
+      "normalized": "helicóptero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "helicópteros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/elikˈopteɾo/",
+      "pronunciationHintAr": "يليكوبتيرو",
+      "internalRank": 51,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مروحية وهليكوبتر تحلق عمودياً في الجو",
+          "meaningArEg": "طيارة هليكوبتر بمروحة بتطير في الجو",
+          "glossEs": null,
+          "exampleEs": "El helicóptero es fundamental para organizar el viaje.",
+          "exampleAr": "الـمروحية وهليكوبتر تحلق عمودياً في الجو أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El helicóptero es fundamental para organizar el viaje.",
+          "ar": "الـمروحية وهليكوبتر تحلق عمودياً في الجو أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "hospedaje",
+      "normalized": "hospedaje",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "hospedajes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/ospedˈaxe/",
+      "pronunciationHintAr": "وسبيداخي",
+      "internalRank": 52,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "إقامة ومبيت في نزل أو شقة سياحية",
+          "meaningArEg": "إقامة ومبيت وحجز سرير في فندق أو لوكاندة",
+          "glossEs": null,
+          "exampleEs": "El hospedaje es fundamental para organizar el viaje.",
+          "exampleAr": "الـإقامة ومبيت في نزل أو شقة سياحية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El hospedaje es fundamental para organizar el viaje.",
+          "ar": "الـإقامة ومبيت في نزل أو شقة سياحية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "lancha",
+      "normalized": "lancha",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "lanchas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/lˈanka/",
+      "pronunciationHintAr": "لانكا",
+      "internalRank": 53,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "لانش وقارب نزهة سريع بمحرك قوي",
+          "meaningArEg": "لانش سريع بموتور للتنزه في البحر",
+          "glossEs": null,
+          "exampleEs": "La lancha es fundamental para organizar el viaje.",
+          "exampleAr": "الـلانش وقارب نزهة سريع بمحرك قوي أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La lancha es fundamental para organizar el viaje.",
+          "ar": "الـلانش وقارب نزهة سريع بمحرك قوي أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "limusina",
+      "normalized": "limusina",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "limusinas",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/limusˈina/",
+      "pronunciationHintAr": "ليموسينا",
+      "internalRank": 54,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ليموزين وسيارة فارهة طويلة للمناسبات",
+          "meaningArEg": "عربية ليموزين فخمة وطويلة لرجال الأعمال",
+          "glossEs": null,
+          "exampleEs": "La limusina es fundamental para organizar el viaje.",
+          "exampleAr": "الـليموزين وسيارة فارهة طويلة للمناسبات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La limusina es fundamental para organizar el viaje.",
+          "ar": "الـليموزين وسيارة فارهة طويلة للمناسبات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "maletero",
+      "normalized": "maletero",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "maleteros",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/maletˈeɾo/",
+      "pronunciationHintAr": "ماليتيرو",
+      "internalRank": 55,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صندوق أمتعة السيارة أو حمال حقائب الفندق",
+          "meaningArEg": "شنطة العربية الخلفية أو شيال شنط الفندق",
+          "glossEs": null,
+          "exampleEs": "El maletero es fundamental para organizar el viaje.",
+          "exampleAr": "الـصندوق أمتعة السيارة أو حمال حقائب الفندق أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El maletero es fundamental para organizar el viaje.",
+          "ar": "الـصندوق أمتعة السيارة أو حمال حقائب الفندق أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "manillar",
+      "normalized": "manillar",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "manillares",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/maniʎlˈaɾ/",
+      "pronunciationHintAr": "مانيليلار",
+      "internalRank": 56,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مقود الدراجة النارية والهوائية باليدين",
+          "meaningArEg": "جادون العجلة والموتوسيكل للتحكم في اللف",
+          "glossEs": null,
+          "exampleEs": "El manillar es fundamental para organizar el viaje.",
+          "exampleAr": "الـمقود الدراجة النارية والهوائية باليدين أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El manillar es fundamental para organizar el viaje.",
+          "ar": "الـمقود الدراجة النارية والهوائية باليدين أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "mapamundi",
+      "normalized": "mapamundi",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "mapamundis",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/mapamˈundi/",
+      "pronunciationHintAr": "ماباموندي",
+      "internalRank": 57,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "خريطة العالم الشاملة لجميع القارات والبحار",
+          "meaningArEg": "خريطة العالم كله بالقارات والمحيطات",
+          "glossEs": null,
+          "exampleEs": "El mapamundi es fundamental para organizar el viaje.",
+          "exampleAr": "الـخريطة العالم الشاملة لجميع القارات والبحار أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El mapamundi es fundamental para organizar el viaje.",
+          "ar": "الـخريطة العالم الشاملة لجميع القارات والبحار أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "microbús",
+      "normalized": "microbús",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "microbús",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/mikɾobˈus/",
+      "pronunciationHintAr": "ميكروبوس",
+      "internalRank": 58,
+      "tags": [
+        "domain:transport",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ميكروباص وحافلة ركاب صغيرة للتنقل",
+          "meaningArEg": "ميكروباص صغير لنقل الركاب في خط السير",
+          "glossEs": null,
+          "exampleEs": "El microbús es fundamental para organizar el viaje.",
+          "exampleAr": "الـميكروباص وحافلة ركاب صغيرة للتنقل أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El microbús es fundamental para organizar el viaje.",
+          "ar": "الـميكروباص وحافلة ركاب صغيرة للتنقل أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "monorraíl",
+      "normalized": "monorraíl",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "monorraíles",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/monoɾɾaˈil/",
+      "pronunciationHintAr": "مونوررايل",
+      "internalRank": 59,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مونوريل وقطار أحادي القضيب يسير بالجسور",
+          "meaningArEg": "مونوريل وقطر معلق ع قضيب واحد عالي",
+          "glossEs": null,
+          "exampleEs": "El monorraíl es fundamental para organizar el viaje.",
+          "exampleAr": "الـمونوريل وقطار أحادي القضيب يسير بالجسور أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El monorraíl es fundamental para organizar el viaje.",
+          "ar": "الـمونوريل وقطار أحادي القضيب يسير بالجسور أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pasabordo",
+      "normalized": "pasabordo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "pasabordos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/pasabˈoɾdo/",
+      "pronunciationHintAr": "باسابوردو",
+      "internalRank": 60,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بطاقة صعود الطائرة التي تبرز عند البوابة",
+          "meaningArEg": "بوردنج باس كارت صعود الطيارة بالباركود",
+          "glossEs": null,
+          "exampleEs": "El pasabordo es fundamental para organizar el viaje.",
+          "exampleAr": "الـبطاقة صعود الطائرة التي تبرز عند البوابة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El pasabordo es fundamental para organizar el viaje.",
+          "ar": "الـبطاقة صعود الطائرة التي تبرز عند البوابة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "pontón",
+      "normalized": "pontón",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ponones",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/pontˈon/",
+      "pronunciationHintAr": "بونتون",
+      "internalRank": 61,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جسر عائم فوق القوارب لعبور المشاة والآليات",
+          "meaningArEg": "كوبري عايم ع براميل للمرور فوق المية",
+          "glossEs": null,
+          "exampleEs": "El pontón es fundamental para organizar el viaje.",
+          "exampleAr": "الـجسر عائم فوق القوارب لعبور المشاة والآليات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El pontón es fundamental para organizar el viaje.",
+          "ar": "الـجسر عائم فوق القوارب لعبور المشاة والآليات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "radar",
+      "normalized": "radar",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "radares",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/radˈaɾ/",
+      "pronunciationHintAr": "رادار",
+      "internalRank": 62,
+      "tags": [
+        "domain:tools",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رادار ملاحي يرصد مواقع الطائرات والسفن",
+          "meaningArEg": "رادار جوي بيرصد الطيارات والسفن بالجو",
+          "glossEs": null,
+          "exampleEs": "El radar es fundamental para organizar el viaje.",
+          "exampleAr": "الـرادار ملاحي يرصد مواقع الطائرات والسفن أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El radar es fundamental para organizar el viaje.",
+          "ar": "الـرادار ملاحي يرصد مواقع الطائرات والسفن أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "raíl",
+      "normalized": "raíl",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "raíles",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/raˈil/",
+      "pronunciationHintAr": "رايل",
+      "internalRank": 63,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قضيب سكة حديد فولاذي يسير عليه القطار",
+          "meaningArEg": "قضيب حديد صلب بتمشي عليه عجلات القطر",
+          "glossEs": null,
+          "exampleEs": "El raíl es fundamental para organizar el viaje.",
+          "exampleAr": "الـقضيب سكة حديد فولاذي يسير عليه القطار أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El raíl es fundamental para organizar el viaje.",
+          "ar": "الـقضيب سكة حديد فولاذي يسير عليه القطار أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "recepcionista",
+      "normalized": "recepcionista",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "mf",
+      "plural": "recepcionistas",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/reθepθionˈista/",
+      "pronunciationHintAr": "ريثيبثيونيستا",
+      "internalRank": 64,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "موظف استقبال يرحب بالنزلاء ويسلم الغرف",
+          "meaningArEg": "موظف ريسبشن بيستقبل الضيوف ويديهم المفتاح",
+          "glossEs": null,
+          "exampleEs": "La recepcionista es fundamental para organizar el viaje.",
+          "exampleAr": "الـموظف استقبال يرحب بالنزلاء ويسلم الغرف أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La recepcionista es fundamental para organizar el viaje.",
+          "ar": "الـموظف استقبال يرحب بالنزلاء ويسلم الغرف أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "recorrido",
+      "normalized": "recorrido",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "recorridos",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/rekoɾɾˈido/",
+      "pronunciationHintAr": "ريكورريدو",
+      "internalRank": 65,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "جولة ومسار الرحلة السياحية بين المعالم",
+          "meaningArEg": "لفة ومسار فسحة بين الآثار والمزارات",
+          "glossEs": null,
+          "exampleEs": "El recorrido es fundamental para organizar el viaje.",
+          "exampleAr": "الـجولة ومسار الرحلة السياحية بين المعالم أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El recorrido es fundamental para organizar el viaje.",
+          "ar": "الـجولة ومسار الرحلة السياحية بين المعالم أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "remolque",
+      "normalized": "remolque",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "remolques",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/remolkˈue/",
+      "pronunciationHintAr": "ريمولكوي",
+      "internalRank": 66,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "مقطورة خلفية تجرها الشاحنة لحمل الأمتعة",
+          "meaningArEg": "مقطورة ورا العربية لشيل العفش",
+          "glossEs": null,
+          "exampleEs": "El remolque es fundamental para organizar el viaje.",
+          "exampleAr": "الـمقطورة خلفية تجرها الشاحنة لحمل الأمتعة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El remolque es fundamental para organizar el viaje.",
+          "ar": "الـمقطورة خلفية تجرها الشاحنة لحمل الأمتعة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "sobrecargo",
+      "normalized": "sobrecargo",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "sobrecargos",
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/sobɾekˈaɾgo/",
+      "pronunciationHintAr": "سوبريكارجو",
+      "internalRank": 67,
+      "tags": [
+        "domain:travel",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رئيس طاقم المضيفين ومشرف الرحلة الجوية",
+          "meaningArEg": "كبير المضيفين في الطيارة ومدير الطاقم",
+          "glossEs": null,
+          "exampleEs": "El sobrecargo es fundamental para organizar el viaje.",
+          "exampleAr": "الـرئيس طاقم المضيفين ومشرف الرحلة الجوية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El sobrecargo es fundamental para organizar el viaje.",
+          "ar": "الـرئيس طاقم المضيفين ومشرف الرحلة الجوية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "suplemento",
+      "normalized": "suplemento",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "suplementos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/suplemˈento/",
+      "pronunciationHintAr": "سوبليمينتو",
+      "internalRank": 68,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "رسم إضافي يدفع مقابل وزن زائد أو خدمة",
+          "meaningArEg": "مبلغ زيادة وتكلفة إضافية لوزن الشنط",
+          "glossEs": null,
+          "exampleEs": "El suplemento es fundamental para organizar el viaje.",
+          "exampleAr": "الـرسم إضافي يدفع مقابل وزن زائد أو خدمة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El suplemento es fundamental para organizar el viaje.",
+          "ar": "الـرسم إضافي يدفع مقابل وزن زائد أو خدمة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "teleférico",
+      "normalized": "teleférico",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "teleféricos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/telefˈeɾiko/",
+      "pronunciationHintAr": "تيليفيريكو",
+      "internalRank": 69,
+      "tags": [
+        "domain:transport",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تلفريك وعربة معلقة بسلك لصعود قمم الجبال",
+          "meaningArEg": "تلفريك عربية معلقة بسلك بتطلع الجبل",
+          "glossEs": null,
+          "exampleEs": "El teleférico es fundamental para organizar el viaje.",
+          "exampleAr": "الـتلفريك وعربة معلقة بسلك لصعود قمم الجبال أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El teleférico es fundamental para organizar el viaje.",
+          "ar": "الـتلفريك وعربة معلقة بسلك لصعود قمم الجبال أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "terminal",
+      "normalized": "terminal",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "terminales",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/teɾminˈal/",
+      "pronunciationHintAr": "تيرمينال",
+      "internalRank": 70,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صالة ركاب ومبنى مطار مخصص لشركات معينة",
+          "meaningArEg": "صالة ومبنى مطار مخصص لشركات السفر",
+          "glossEs": null,
+          "exampleEs": "La terminal es fundamental para organizar el viaje.",
+          "exampleAr": "الـصالة ركاب ومبنى مطار مخصص لشركات معينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La terminal es fundamental para organizar el viaje.",
+          "ar": "الـصالة ركاب ومبنى مطار مخصص لشركات معينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "ticket",
+      "normalized": "ticket",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "ticketes",
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/tikkˈet/",
+      "pronunciationHintAr": "تيككيت",
+      "internalRank": 71,
+      "tags": [
+        "domain:travel",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تذكرة صغيرة وإيصال ركوب المواصلات",
+          "meaningArEg": "تذكرة صغيرة لركوب الأتوبيس والمترو",
+          "glossEs": null,
+          "exampleEs": "El ticket es fundamental para organizar el viaje.",
+          "exampleAr": "الـتذكرة صغيرة وإيصال ركوب المواصلات أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ticket es fundamental para organizar el viaje.",
+          "ar": "الـتذكرة صغيرة وإيصال ركوب المواصلات أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tránsito",
+      "normalized": "tránsito",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "m",
+      "plural": "tránsitos",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾˈansito/",
+      "pronunciationHintAr": "ترانسيتو",
+      "internalRank": 72,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عبور ومرور ترانزيت في منطقة المطار الدولية",
+          "meaningArEg": "منطقة ترانزيت حرة في المطار للركاب",
+          "glossEs": null,
+          "exampleEs": "El tránsito es fundamental para organizar el viaje.",
+          "exampleAr": "الـعبور ومرور ترانزيت في منطقة المطار الدولية أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El tránsito es fundamental para organizar el viaje.",
+          "ar": "الـعبور ومرور ترانزيت في منطقة المطار الدولية أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    },
+    {
+      "headword": "tripulación",
+      "normalized": "tripulación",
+      "kind": "word",
+      "pos": "noun",
+      "gender": "f",
+      "plural": "tripulacones",
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾipulaθiˈon/",
+      "pronunciationHintAr": "تريبولاثيون",
+      "internalRank": 73,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طاقم ملاحي وكادر الطائرة أو السفينة",
+          "meaningArEg": "كرو وطاقم الطيارة من كابتن ومضيفين",
+          "glossEs": null,
+          "exampleEs": "La tripulación es fundamental para organizar el viaje.",
+          "exampleAr": "الـطاقم ملاحي وكادر الطائرة أو السفينة أساسي لتنظيم الرحلة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La tripulación es fundamental para organizar el viaje.",
+          "ar": "الـطاقم ملاحي وكادر الطائرة أو السفينة أساسي لتنظيم الرحلة.",
+          "arEg": null
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,18 @@ async function fakeVoices(page: Page, langs: string[]) {
     const voices = voiceLangs.map((lang, i) => ({ lang, name: `Test ${lang} ${i}`, default: i === 0, localService: true, voiceURI: `v${i}` }));
     const spoken: { text: string; lang: string }[] = [];
     (window as unknown as { __spoken: typeof spoken }).__spoken = spoken;
+    // المتصفح الحقيقي يوفّر SpeechSynthesisUtterance؛ بدونه يفشل الكود الحقيقي في new ويُعاد
+    // كخطأ صامت، فيبدو كأن النطق لم يحدث. نُنشئ بديلًا يحفظ النص واللغة كما يفعل المتصفح.
+    class FakeUtterance {
+      text: string;
+      lang = '';
+      rate = 1;
+      voice: unknown = null;
+      onend: unknown = null;
+      onerror: unknown = null;
+      constructor(text: string) { this.text = text; }
+    }
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { value: FakeUtterance, configurable: true });
     const synth = {
       speaking: false,
       pending: false,

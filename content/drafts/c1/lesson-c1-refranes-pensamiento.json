@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-refranes-pensamiento",
+    "titleAr": "الأمثال التراثية وحكمة الشعوب: Refranes y pensamiento popular",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u2-idioms",
+    "objectiveAr": "أن يستوعب المتعلم العمق الفلسفي والتاريخي للأمثال الإسبانية الكبرى ويستخدمها بإيجاز وبلاغة في الخطاب الثقافي.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "madrugar",
+      "amanece",
+      "entendedor",
+      "cerrada",
+      "moscas",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Refrán de paciencia: No por mucho madrugar amanece más temprano",
+      "Refrán de agudeza: A buen entendedor, pocas palabras bastan",
+      "Refrán de prudencia: En boca cerrada no entran moscas",
+      "Estructuras elípticas y paralelismo rítmico en la paremiología"
+    ],
+    "grammarTopics": [
+      "paremiologia-espanola",
+      "refranes-clasicos-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نقاش بين أستاذ فلسفة وباحث دكتوراه حول التسرع في استخلاص النتائج الأكاديمية.",
+        "settingAr": "مكتبة معهد الفلسفة في المجلس الأعلى للبحوث العلمية (CSIC)",
+        "lines": [
+          {
+            "es": "No precipites las conclusiones de tu tesis; recuerda que no por mucho madrugar amanece más temprano.",
+            "ar": "لا تتعجل استخلاص نتائج أطروحتك؛ تذكر أن كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+            "arEg": "متستعجلش في نتايج رسالتك يا ابني؛ كل حاجة بأوانها ومفيش شروق بييجي قبل وقته.",
+            "audioKey": "pending/c1-u2-ref-1"
+          },
+          {
+            "es": "Tiene razón, profesor; las investigaciones rigurosas demandan maduración y serenidad.",
+            "ar": "معك حق يا أستاذي؛ فالأبحاث الرصينة تتطلب نضجاً وتأنياً عميقين.",
+            "arEg": "عندك حق يا دكتور؛ الأبحاث المعتبرة محتاجة وقت وتأني وصبر طويل.",
+            "audioKey": "pending/c1-u2-ref-2"
+          },
+          {
+            "es": "Exacto, y sé discreto con los datos preliminares: en boca cerrada no entran moscas.",
+            "ar": "تماماً، وكن كتوماً بشأن البيانات الأولية: فالفم المغلق يسلم من ولوج الذباب والزلات.",
+            "arEg": "بالظبط، واكتم على النتايج الأولى ومتبحترش الكلام: لسانك حصانك إن صنته صانك.",
+            "audioKey": "pending/c1-u2-ref-3"
+          },
+          {
+            "es": "Comprendo el mensaje a la perfección; a buen entendedor, pocas palabras bastan.",
+            "ar": "لقد استوعبت الرسالة على أكمل وجه؛ فاللبيب تكفيه الإشارة وأقل الكلام.",
+            "arEg": "فهمت حضرتك تماماً؛ واللبيب بالإشارة يفهم من غير رغي كتير.",
+            "audioKey": "pending/c1-u2-ref-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-rpe-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى نصيحة الأستاذ الفلسفية وحدد المثل التراثي الذي استخدمه للتحذير من التسرع وقهر الطبيعة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما المثل الذي يحث على الصبر وانتظار الأوان الطبيعي للأمور؟",
+        "stemEs": "No precipites las conclusiones de tu tesis; recuerda que no por mucho madrugar amanece más temprano.",
+        "stemAr": "لا تتعجل استخلاص نتائج أطروحتك؛ تذكر أن كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+        "options": [
+          {
+            "id": "ex-c1-rpe-1_a",
+            "text": "No por mucho madrugar amanece más temprano",
+            "textAr": "الاستعجال المفرط لا يسرع حدوث الأشياء المقدرة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rpe-1_b",
+            "text": "A caballo regalado no le mires el diente",
+            "textAr": "لا تتفحص عيوب الهدية المهداة إليك",
+            "isCorrect": false,
+            "distractorRationaleAr": "مثل يخص قبول العطايا."
+          },
+          {
+            "id": "ex-c1-rpe-1_c",
+            "text": "Cría cuervos y te sacarán los ojos",
+            "textAr": "جزاء الإحسان العقوق من اللئيم",
+            "isCorrect": false,
+            "distractorRationaleAr": "مثل يخص نكران الجميل."
+          }
+        ],
+        "targetVocab": [
+          "madrugar",
+          "amanece"
+        ],
+        "explanationAr": "المثل الشهير «No por mucho madrugar amanece más temprano» يعني أن لكل أمر وقتاً طبيعياً لا يتقدم بالتعجل والقلق.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u2-ref-1",
+        "speechEs": "No precipites las conclusiones de tu tesis; recuerda que no por mucho madrugar amanece más temprano.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rpe-1_a"
+          ],
+          "selectedOptionId": "ex-c1-rpe-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rpe-1_b": "مثل يخص قبول العطايا.",
+          "ex-c1-rpe-1_c": "مثل يخص نكران الجميل."
+        }
+      },
+      {
+        "id": "ex-c1-rpe-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي مثل إسباني يقابل في البلاغة العربية حكمة «اللبيب تكفيه الإشارة»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المثل المعبر عن الفطنة والاكتفاء بالقليل من الشرح:",
+        "stemEs": "No hace falta que me expliques todos los pormenores: ____.",
+        "stemAr": "لا داعي لأن تشرح لي كافة التفاصيل المملة: فاللبيب بالإشارة يفهم.",
+        "options": [
+          {
+            "id": "ex-c1-rpe-2_a",
+            "text": "A buen entendedor, pocas palabras bastan",
+            "textAr": "الفطن تكفيه بضع كلمات يسيرة ليفهم المعنى",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rpe-2_b",
+            "text": "Ojos que no ven, corazón que no siente",
+            "textAr": "البعيد عن العين بعيد عن القلب والوجدان",
+            "isCorrect": false,
+            "distractorRationaleAr": "يخص المشاعر والغياب."
+          },
+          {
+            "id": "ex-c1-rpe-2_c",
+            "text": "Más vale pájaro en mano que ciento volando",
+            "textAr": "عصفور في اليد خير من ألف على الشجرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "يخص القناعة بالموجود."
+          }
+        ],
+        "targetVocab": [
+          "entendedor",
+          "rigor"
+        ],
+        "explanationAr": "المثل البلاغي هو «A buen entendedor, pocas palabras bastan» ويدل على سرعة البديهة والذكاء اللماح.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rpe-2_a"
+          ],
+          "selectedOptionId": "ex-c1-rpe-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rpe-2_b": "يخص المشاعر والغياب.",
+          "ex-c1-rpe-2_c": "يخص القناعة بالموجود."
+        }
+      },
+      {
+        "id": "ex-c1-rpe-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المثل التراثي الداعي للصمت وحفظ السر: «En boca ____ no entran moscas».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب صفة الفم في هذا المثل الخالد:",
+        "stemEs": "Sé prudente en tus declaraciones; ya sabes que en boca ____ no entran moscas.",
+        "stemAr": "توخّ الحذر في تصريحاتك؛ فأنت تعلم أن الفم المطبق يسلم من الزلات.",
+        "targetVocab": [
+          "cerrada"
+        ],
+        "explanationAr": "المثل الإسباني المشهور «En boca cerrada no entran moscas» يعادل «لسانك حصانك» والصمت حكمة لدرء المشاكل.",
+        "answerKey": {
+          "accepted": [
+            "cerrada"
+          ],
+          "acceptableAnswers": [
+            "cerrada"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rpe-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي القيمة الفكرية المركزية في مثل «No por mucho madrugar amanece más temprano»؟",
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "حدد المعنى البلاغي الفلسفي للمثل:",
+        "stemEs": "El refrán subraya la necesidad de respetar los tiempos naturales de cada proceso.",
+        "stemAr": "يؤكد المثل على ضرورة احترام الأوقات والمسارات الطبيعية لكل سيرورة عمل.",
+        "options": [
+          {
+            "id": "ex-c1-rpe-4_a",
+            "text": "La paciencia y el respeto al ritmo de las cosas",
+            "textAr": "الصبر واحترام التدرج الزمني الطبيعي للأمور",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rpe-4_b",
+            "text": "El desprecio absoluto por el trabajo duro",
+            "textAr": "احتقار العمل الجاد وعدم الاستيقاظ باكراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "فهم سطحي خاطئ للألفاظ."
+          },
+          {
+            "id": "ex-c1-rpe-4_c",
+            "text": "La obligación de madrugar todos los días",
+            "textAr": "وجوب الاستيقاظ قبل الفجر يومياً دون عذر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المثل يدعو للتأني لا مجرد التبكير."
+          }
+        ],
+        "targetVocab": [
+          "madrugar",
+          "amanece"
+        ],
+        "explanationAr": "المثل لا ينهى عن التبكير كقيمة، بل ينهى عن الهوس بالنتائج قبل نضوج شروطها الموضوعية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rpe-4_a"
+          ],
+          "selectedOptionId": "ex-c1-rpe-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rpe-4_b": "فهم سطحي خاطئ للألفاظ.",
+          "ex-c1-rpe-4_c": "المثل يدعو للتأني لا مجرد التبكير."
+        }
+      },
+      {
+        "id": "ex-c1-rpe-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين المثل المشهور عن حفظ اللسان وتجنب الحرج.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-rpe-5_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "ex-c1-rpe-5_t2",
+            "kind": "token",
+            "text": "boca"
+          },
+          {
+            "id": "ex-c1-rpe-5_t3",
+            "kind": "token",
+            "text": "cerrada"
+          },
+          {
+            "id": "ex-c1-rpe-5_t4",
+            "kind": "token",
+            "text": "no"
+          },
+          {
+            "id": "ex-c1-rpe-5_t5",
+            "kind": "token",
+            "text": "entran"
+          },
+          {
+            "id": "ex-c1-rpe-5_t6",
+            "kind": "token",
+            "text": "moscas"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "En boca cerrada no entran moscas"
+          ],
+          "tokenOrder": [
+            "ex-c1-rpe-5_t1",
+            "ex-c1-rpe-5_t2",
+            "ex-c1-rpe-5_t3",
+            "ex-c1-rpe-5_t4",
+            "ex-c1-rpe-5_t5",
+            "ex-c1-rpe-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب التراثي المسجوع: جار ومجرور يليه النفي ثم الفعل والفاعل.",
+        "targetVocab": [
+          "cerrada",
+          "moscas"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rpe-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذا المثل البليغ بنبرة وقورة توحي بالحكمة والاكتفاء بالإيجاز.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الوقفات البلاغية:",
+        "stemEs": "A buen entendedor, pocas palabras bastan.",
+        "stemAr": "اللبيب بالإشارة يفهم، والقليل من الكلم يجزئ.",
+        "audioKey": "pending/c1-u2-ref-spk",
+        "targetVocab": [
+          "entendedor",
+          "rigor"
+        ],
+        "explanationAr": "حافظ على الإيقاع الموسيقي والوقفة بعد كلمة entendedor لبيان الصنعة البلاغية للمثل الشعبي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u2-ref-spk",
+          "modelAnswer": "A buen entendedor, pocas palabras bastan."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

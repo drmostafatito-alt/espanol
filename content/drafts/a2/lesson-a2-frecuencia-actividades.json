@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-frecuencia-actividades",
+    "unitSlug": "a2-u8-hobbies",
+    "levelCode": "A2",
+    "titleAr": "التعبير عن التكرار والروتين: ظروف a menudo وde vez en cuando وcasi nunca",
+    "titleEs": "Expresar la frecuencia de las actividades",
+    "subtitleAr": "تحديد مدى تكرار الأنشطة والهوايات في الحياة الأسبوعية",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم مدى تكرار قيامه بالأنشطة والهوايات باستخدام ظروف التكرار المتنوعة.",
+        "أن يرتب ظروف التكرار من الأكثر تكراراً إلى النادر والمنعدم: siempre > a menudo > de vez en cuando > casi nunca > nunca.",
+        "أن يحدد عدد المرات في الفترة الزمنية: una vez al mes, dos veces por semana."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تدرج ظروف التكرار في الإسبانية",
+          "explanationAr": "سلم التكرار من 100% إلى 0%:\n- **siempre** (دائماً - 100%)\n- **a menudo / frecuentemente** (غالباً / مراراً - 75%)\n- **a veces / de vez en cuando** (أحياناً / من حين لآخر - 50%)\n- **rara vez / casi nunca** (نادراً / تقريباً أبداً - 10%)\n- **nunca / jamás** (أبداً - 0%).\n\nتحديد المرات:\n- Una vez **al** día / **al** mes / **al** año.\n- Tres veces **por** semana / **al** año."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين a veces (أحياناً) و de vez en cuando (بين الحين والآخر)، وكلاهما صحيح لكن de vez en cuando تعبر عن فترات متباعدة أكثر.",
+        "نسيان حرف الجر a مع أداة التعريف عند القول una vez al mes (الخطأ: *una vez el mes*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «ساعات بنزل الجيم، ومن وقت للتاني بسافر، وتقريباً مبشربش قهوة». بالإسبانية: a veces, de vez en cuando, casi nunca."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا من المعتاد جداً لقاء الأصدقاء لتناول مشروب 'tomar algo' عدة مرات في الأسبوع بعد انتهاء العمل."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-frecuencia-actividades-intro",
+        "type": "explanation",
+        "titleAr": "أهم تعبيرات التكرار",
+        "bodyAr": "المفردات التكرارية:\n- **a menudo**: في كثير من الأحيان / غالباً\n- **de vez en cuando**: من حين لآخر / بين الفينة والأخرى\n- **casi nunca**: نادراً جداً / تقريباً أبداً\n- **la frecuencia**: التكرار / التردد\n- **la rutina**: الروتين اليومي\n- **el hábito**: العادة المكتسبة",
+        "examples": [
+          {
+            "es": "Voy al cine a menudo porque me apasionan las películas.",
+            "ar": "أذهب إلى السينما غالباً لأنني أعشق الأفلام."
+          },
+          {
+            "es": "De vez en cuando salimos a cenar a un restaurante típico.",
+            "ar": "من حين لآخر نخرج لتناول العشاء في مطعم تقليدي."
+          },
+          {
+            "es": "Casi nunca veo la televisión por la noche.",
+            "ar": "نادراً جداً ما أشاهد التلفزيون في المساء."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "a menudo",
+      "de vez en cuando",
+      "casi nunca",
+      "frecuencia",
+      "rutina",
+      "hábito"
+    ],
+    "reviewVocabulary": [
+      "siempre",
+      "nunca"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصف المتعلم مدى تكرار قيامه بالأنشطة والهوايات باستخدام ظروف التكرار المتنوعة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-fre-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الدال على التكرار المتوسط (من حين لآخر)",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تعبير يعني 'من حين لآخر' بالإسبانية؟",
+        "stemEs": "No tengo mucho tiempo, pero _____ voy al teatro con mi esposa.",
+        "stemAr": "ليس لدي وقت كثير، ولكن ... أذهب إلى المسرح مع زوجتي.",
+        "options": [
+          {
+            "id": "ex-a2-fre-1_a",
+            "text": "de vez en cuando",
+            "textAr": "من حين لآخر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fre-1_b",
+            "text": "siempre",
+            "textAr": "دائماً (تكرار تام)",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنه ليس لديه وقت كثير، فلا يصح siempre."
+          },
+          {
+            "id": "ex-a2-fre-1_c",
+            "text": "nunca",
+            "textAr": "أبداً (نفي تام)",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنه يذهب، إذن nunca لا تصح دلالياً."
+          }
+        ],
+        "targetVocab": [
+          "de vez en cuando",
+          "siempre",
+          "nunca"
+        ],
+        "explanationAr": "تعبير de vez en cuando يعني من حين لآخر.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fre-1_a"
+          ],
+          "selectedOptionId": "ex-a2-fre-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fre-1_b": "قال إنه ليس لديه وقت كثير، فلا يصح siempre.",
+          "ex-a2-fre-1_c": "قال إنه يذهب، إذن nunca لا تصح دلالياً."
+        }
+      },
+      {
+        "id": "ex-a2-fre-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل التعبير الشائع a menudo",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في التعبير الذي يعني 'غالباً / مراراً' (a _____)",
+        "stemEs": "Mis amigos y yo practicamos deporte a _____.",
+        "stemAr": "أنا وأصدقائي نمارس الرياضة غالباً.",
+        "targetVocab": [
+          "a menudo"
+        ],
+        "explanationAr": "التعبير هو a menudo ويعني غالباً أو بكثرة.",
+        "answerKey": {
+          "accepted": [
+            "menudo"
+          ],
+          "acceptableAnswers": [
+            "menudo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-fre-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المعنى المقابل للندرة شبه التامة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما التعبير الإسباني المناسب لـ 'تقريباً لا أفعل ذلك أبداً'؟",
+        "stemEs": "No me gustan los dulces; _____ como pasteles o chocolates.",
+        "stemAr": "لا تعجبني الحلويات؛ ... آكل الكعك أو الشوكولاتة.",
+        "options": [
+          {
+            "id": "ex-a2-fre-3_a",
+            "text": "casi nunca",
+            "textAr": "تقريباً أبداً / نادراً جداً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fre-3_b",
+            "text": "a menudo",
+            "textAr": "غالباً وبكثرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "يناقض جملة عدم حبه للحلويات."
+          },
+          {
+            "id": "ex-a2-fre-3_c",
+            "text": "siempre",
+            "textAr": "دائماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "يناقض جملة عدم حبه للحلويات."
+          }
+        ],
+        "targetVocab": [
+          "casi nunca",
+          "a menudo",
+          "siempre"
+        ],
+        "explanationAr": "casi nunca تعني نادراً جداً أو بالكاد يحدث ذلك.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fre-3_a"
+          ],
+          "selectedOptionId": "ex-a2-fre-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fre-3_b": "يناقض جملة عدم حبه للحلويات.",
+          "ex-a2-fre-3_c": "يناقض جملة عدم حبه للحلويات."
+        }
+      },
+      {
+        "id": "ex-a2-fre-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتحديد عدد مرات ممارسة الرياضة أسبوعياً",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-fre-4_t1",
+            "kind": "token",
+            "text": "Voy"
+          },
+          {
+            "id": "ex-a2-fre-4_t2",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-a2-fre-4_t3",
+            "kind": "token",
+            "text": "gimnasio"
+          },
+          {
+            "id": "ex-a2-fre-4_t4",
+            "kind": "token",
+            "text": "tres"
+          },
+          {
+            "id": "ex-a2-fre-4_t5",
+            "kind": "token",
+            "text": "veces"
+          },
+          {
+            "id": "ex-a2-fre-4_t6",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "ex-a2-fre-4_t7",
+            "kind": "token",
+            "text": "semana"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Voy al gimnasio tres veces por semana"
+          ],
+          "tokenOrder": [
+            "ex-a2-fre-4_t1",
+            "ex-a2-fre-4_t2",
+            "ex-a2-fre-4_t3",
+            "ex-a2-fre-4_t4",
+            "ex-a2-fre-4_t5",
+            "ex-a2-fre-4_t6",
+            "ex-a2-fre-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل والوجهة Voy al gimnasio ثم العبارة التكرارية tres veces por semana.",
+        "targetVocab": [
+          "rutina"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-fre-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد تكرار القراءة لدى المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كم مرة يقرأ المتحدث الكتب باللغة الإسبانية؟",
+        "stemEs": "Leo novelas en español casi todos los días; es mi hábito favorito.",
+        "stemAr": "أقرأ الروايات بالإسبانية كل يوم تقريباً؛ إنه عادتي المفضلة.",
+        "options": [
+          {
+            "id": "ex-a2-fre-5_a",
+            "text": "hábito",
+            "textAr": "عادة يومية متكررة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fre-5_b",
+            "text": "casi nunca",
+            "textAr": "نادراً جداً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يقرأ كل يوم تقريباً وليس نادراً."
+          },
+          {
+            "id": "ex-a2-fre-5_c",
+            "text": "de vez en cuando",
+            "textAr": "من حين لآخر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يقرأ يومياً وليس من حين لآخر."
+          }
+        ],
+        "targetVocab": [
+          "hábito",
+          "casi nunca",
+          "de vez en cuando"
+        ],
+        "explanationAr": "المتحدث قال: 'es mi hábito favorito'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_habito_lectura.mp3",
+        "speechEs": "Leo novelas en español casi todos los días; es mi hábito favorito.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fre-5_a"
+          ],
+          "selectedOptionId": "ex-a2-fre-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fre-5_b": "المتحدث يقرأ كل يوم تقريباً وليس نادراً.",
+          "ex-a2-fre-5_c": "المتحدث يقرأ يومياً وليس من حين لآخر."
+        }
+      },
+      {
+        "id": "ex-a2-fre-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك عن روتينك الرياضي المعتاد",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح وسلاسة:",
+        "stemEs": "Hago ejercicio a menudo para mantener una rutina sana.",
+        "stemAr": "أمارس التمارين الرياضية غالباً للحفاظ على روتين صحي.",
+        "audioKey": "pending/a2_rutina_sana.mp3",
+        "targetVocab": [
+          "a menudo",
+          "rutina"
+        ],
+        "explanationAr": "انتبه لنطق حرف j في ejercicio كـ خاء مرققة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_rutina_sana.mp3",
+          "modelAnswer": "Hago ejercicio a menudo para mantener una rutina sana."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تدرج ظروف التكرار في الإسبانية"
+    ]
+  }
+}

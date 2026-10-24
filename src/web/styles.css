@@ -204,6 +204,10 @@ textarea {
   min-height: 56px; padding: var(--s-2);
   border: 1px dashed var(--c-border); border-radius: var(--r-md);
   background: var(--c-surface-2);
+  direction: ltr !important;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: center;
 }
 .token {
   appearance: none; border: 1px solid var(--c-border); cursor: pointer;

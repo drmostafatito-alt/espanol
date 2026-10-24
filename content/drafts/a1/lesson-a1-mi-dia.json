@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-mi-dia",
+    "titleAr": "يومي في فقرة: سرد الجدول اليومي الكامل بروابط زمنية",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u7-routine",
+    "objectiveAr": "أن يكتب المتعلم وينطق سردية متصلة من 4 إلى 5 جمل تصف يومه المعتاد من الصباح حتى المساء باستخدام روابط التسلسل (primero, luego, después, finalmente).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "writing",
+      "speaking",
+      "reading",
+      "listening",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "mañana",
+      "tarde",
+      "noche",
+      "desayunar",
+      "comer",
+      "cenar",
+      "dormir",
+      "trabajar",
+      "rutina",
+      "estudiar"
+    ],
+    "reviewVocabulary": [
+      "casa",
+      "hora",
+      "dos"
+    ],
+    "targetStructures": [
+      "Primero desayuno en casa, luego voy a trabajar.",
+      "Después de comer descanso un poco.",
+      "Finalmente ceno y duermo ocho horas."
+    ],
+    "grammarTopics": [
+      "conectores-secuencia-primero-luego-despues",
+      "redaccion-parrafo-rutina",
+      "cohesion-textual-a1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ياسين يقدم عرضاً شفهياً قصيراً أمام زملائه في معهد اللغة يروي فيه تفاصيل يومه النموذجي.",
+        "settingAr": "قاعة دراسية في معهد اللغات بمدريد",
+        "lines": [
+          {
+            "es": "Mi día a día es muy activo pero organizado.",
+            "ar": "يومي حافل بالنشاط ولكنه منظم للغاية.",
+            "arEg": "يومي مليان حركة بس منظم جداً.",
+            "audioKey": "pending/a1-md-sc-1"
+          },
+          {
+            "es": "Primero me levanto a las siete y desayuno tranquilamente.",
+            "ar": "أولاً أستيقظ في السابعة وأتناول إفطاري بهدوء.",
+            "arEg": "أول حاجة بصحى سبعة وبفطر براحتي.",
+            "audioKey": "pending/a1-md-sc-2"
+          },
+          {
+            "es": "Luego trabajo hasta las tres, y después como con amigos.",
+            "ar": "ثم أعمل حتى الثالثة، وبعد ذلك أتغدى مع الأصدقاء.",
+            "arEg": "بعدين بشتغل لحد تلاتة، وبعدها بتغدى مع أصحابي.",
+            "audioKey": "pending/a1-md-sc-3"
+          },
+          {
+            "es": "Por la noche ceno ligero y duermo temprano.",
+            "ar": "في المساء أتعشى خفيفاً وأنام مبكراً.",
+            "arEg": "بالليل بتعشى خفيف وبنام بدري.",
+            "audioKey": "pending/a1-md-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "روابط التسلسل الزمني (los conectores temporales) هي سر طلاقة النص في الإسبانية: primero (أولاً)، luego (ثم)، después (بعد ذلك)، finalmente (أخيراً). استخدامها ينقل مستوى المتعلم من جمل متقطعة إلى لغة طبيعية مترابطة.",
+    "pedagogicalRationaleAr": "تتويج وحدة الروتين بكتابة فقرة متماسكة. يجب تدريب المتعلم على تجنب تكرار الفاعل 'yo' في بداية كل جملة، لأن تصريف الفعل الإسباني يدل على الفاعل تلقائياً.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_md_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لترتيب أحداث اليوم وحدد ماذا يفعل المتحدث أولاً.",
+        "skills": [
+          "listening",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع للخطوة الأولى في اليوم:",
+        "stemEs": "Primero desayuno en casa y luego voy a la universidad.",
+        "stemAr": "أولاً أفطر في البيت ثم أذهب إلى الجامعة.",
+        "options": [
+          {
+            "id": "a1_md_1_a",
+            "text": "Desayunar en casa",
+            "textAr": "تناول الإفطار في البيت أولاً",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_md_1_b",
+            "text": "Ir a la universidad",
+            "textAr": "الذهاب للجامعة أولاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر primero desayuno ثم الذهاب للجامعة."
+          },
+          {
+            "id": "a1_md_1_c",
+            "text": "Dormir una siesta",
+            "textAr": "أخذ قيلولة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم تُذكر القيلولة."
+          }
+        ],
+        "targetVocab": [
+          "desayunar",
+          "casa",
+          "rutina"
+        ],
+        "explanationAr": "المتحدث قال: Primero desayuno en casa.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-md-ex-1",
+        "speechEs": "Primero desayuno en casa y luego voy a la universidad.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_md_1_a"
+          ],
+          "selectedOptionId": "a1_md_1_a"
+        },
+        "errorFeedback": {
+          "a1_md_1_b": "الصوت ذكر primero desayuno ثم الذهاب للجامعة.",
+          "a1_md_1_c": "لم تُذكر القيلولة."
+        }
+      },
+      {
+        "id": "a1_md_2_connector_luego",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر رابط التسلسل المناسب لـ «ثم / بعد ذلك».",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "لربط حدثين متتاليين بمعنى «ثم»، نستخدم:",
+        "stemEs": "Desayuno a las ocho y ____ voy a trabajar.",
+        "stemAr": "أفطر في الثامنة و____ أذهب للعمل.",
+        "options": [
+          {
+            "id": "a1_md_2_a",
+            "text": "luego",
+            "textAr": "ثم / بعد ذلك",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_md_2_b",
+            "text": "nunca",
+            "textAr": "أبداً",
+            "isCorrect": false,
+            "distractorRationaleAr": "nunca تعني أبداً وليست رابط تسلسل."
+          },
+          {
+            "id": "a1_md_2_c",
+            "text": "pero",
+            "textAr": "لكن",
+            "isCorrect": false,
+            "distractorRationaleAr": "pero تفيد الاستدراك وليس التتابع الزمني."
+          }
+        ],
+        "targetVocab": [
+          "desayunar",
+          "trabajar",
+          "rutina"
+        ],
+        "explanationAr": "رابط التتابع الزمني هو: luego.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_md_2_a"
+          ],
+          "selectedOptionId": "a1_md_2_a"
+        },
+        "errorFeedback": {
+          "a1_md_2_b": "nunca تعني أبداً وليست رابط تسلسل.",
+          "a1_md_2_c": "pero تفيد الاستدراك وليس التتابع الزمني."
+        }
+      },
+      {
+        "id": "a1_md_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة الرابط الزمني «أولاً» (Primero) في بداية الفقرة.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (Primero) في الفراغ:",
+        "stemEs": "____ me levanto a las siete de la mañana.",
+        "stemAr": "____ أستيقظ في السابعة صباحاً.",
+        "targetVocab": [
+          "mañana",
+          "rutina"
+        ],
+        "explanationAr": "رابط البداية في التسلسل هو: Primero.",
+        "answerKey": {
+          "accepted": [
+            "Primero",
+            "primero"
+          ],
+          "acceptableAnswers": [
+            "Primero",
+            "primero"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_md_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب جمل السرد الزمني لليوم الكامل.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_md_4_order_t1",
+            "kind": "token",
+            "text": "Por"
+          },
+          {
+            "id": "a1_md_4_order_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a1_md_4_order_t3",
+            "kind": "token",
+            "text": "noche"
+          },
+          {
+            "id": "a1_md_4_order_t4",
+            "kind": "token",
+            "text": "ceno"
+          },
+          {
+            "id": "a1_md_4_order_t5",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "a1_md_4_order_t6",
+            "kind": "token",
+            "text": "duermo."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Por la noche ceno y duermo."
+          ],
+          "tokenOrder": [
+            "a1_md_4_order_t1",
+            "a1_md_4_order_t2",
+            "a1_md_4_order_t3",
+            "a1_md_4_order_t4",
+            "a1_md_4_order_t5",
+            "a1_md_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الظرف الزمني Por la noche + الفعل الأول ceno + حرف العطف y + الفعل الثاني duermo.",
+        "targetVocab": [
+          "noche",
+          "cenar",
+          "dormir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_md_5_finally",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو رابط الختام المناسب لإنهاء سردية اليوم (أخيراً)؟",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "لختام سرد أحداث اليوم نستخدم:",
+        "stemEs": "Y ____ me acuesto a las once.",
+        "stemAr": "و____ أخلد للنوم في الحادية عشرة.",
+        "options": [
+          {
+            "id": "a1_md_5_a",
+            "text": "finalmente",
+            "textAr": "أخيراً / في النهاية",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_md_5_b",
+            "text": "primero",
+            "textAr": "أولاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "primero للبداية وليس الختام."
+          },
+          {
+            "id": "a1_md_5_c",
+            "text": "siempre",
+            "textAr": "دائماً",
+            "isCorrect": false,
+            "distractorRationaleAr": "siempre ظرف تكرار وليس رابط ختام تسلسلي."
+          }
+        ],
+        "targetVocab": [
+          "rutina"
+        ],
+        "explanationAr": "رابط الختام هو: finalmente.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_md_5_a"
+          ],
+          "selectedOptionId": "a1_md_5_a"
+        },
+        "errorFeedback": {
+          "a1_md_5_b": "primero للبداية وليس الختام.",
+          "a1_md_5_c": "siempre ظرف تكرار وليس رابط ختام تسلسلي."
+        }
+      },
+      {
+        "id": "a1_md_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق فقرة ملخص يومك بنطق متصل وسليم.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح وطلاقة متصلة:",
+        "stemEs": "Por la mañana estudio, por la tarde trabajo y por la noche descanso.",
+        "stemAr": "في الصباح أدرس، وفي بعد الظهر أعمل، وفي الليل أستريح.",
+        "audioKey": "pending/a1-md-ex-6",
+        "targetVocab": [
+          "mañana",
+          "tarde",
+          "noche",
+          "estudiar",
+          "trabajar"
+        ],
+        "explanationAr": "حافظ على التوازن الإيقاعي بين فترات اليوم الثلاث: mañana, tarde, noche.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-md-ex-6",
+          "modelAnswer": "Por la mañana estudio, por la tarde trabajo y por la noche descanso."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

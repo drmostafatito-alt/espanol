@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-voseo-variacion",
+    "titleAr": "ظاهرة الـ Voseo وتنوع صيغ الخطاب: El voseo y las fórmulas de tratamiento",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u5-regional",
+    "objectiveAr": "أن يستوعب المتعلم الفروق الصرفية والاجتماعية لظاهرة الـ Voseo في حوض ريو دي لا بلاتا وأمريكا الوسطى، ويتقن التحويل الدقيق بين صيغ tuteo و voseo.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "voseo",
+      "vos",
+      "tratamiento",
+      "porteño",
+      "tuteo",
+      "desinencia",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Morfología verbal del voseo en presente: vos tenés, vos hablás, vos vivís",
+      "El imperativo con voseo rioplatense: vení, mirá, decime, hacé",
+      "El pronombre 'vos' frente al pronombre átono 'te' y posesivo 'tu'",
+      "Estatus sociolingüístico del voseo culto en Argentina, Uruguay y Paraguay"
+    ],
+    "grammarTopics": [
+      "voseo-rioplatense",
+      "variedades-del-espanol-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار راقٍ في مقهى أدبي بحي سان تيلمو في بوينس آيرس بين ناشر أرجنتيني ومؤلف إسباني.",
+        "settingAr": "مقهى تورتوني التاريخي، شارع دي مايو، بوينس آيرس",
+        "lines": [
+          {
+            "es": "Che, vos sabés muy bien que tu novela tiene una potencia deslumbrante en toda la región.",
+            "ar": "اسمع يا صديقي، أنت تعلم جيداً أن روايتك تحظى بقوة مذهلة وأثر باهر في كل أرجاء المنطقة.",
+            "arEg": "يا سيدي، أنت عارف كويس جداً إن روايتك مكسرة الدنيا وليها هيبة كبيرة في المنطقة كلها.",
+            "audioKey": "pending/c1-u5-vos-1"
+          },
+          {
+            "es": "Agradezco tu entusiasmo porteño; en Madrid usamos el tuteo con otra conjugación verbal.",
+            "ar": "أقدر حماسك البوينس-آيرسي الصادق؛ فنحن في مدريد نستخدم صيغة المخاطبة tuteo بتصريف فعلي مختلف.",
+            "arEg": "شاكر جداً لذوقك وحماسك الأرجنتيني الجميل ده؛ إحنا في مدريد بنصرف الأفعال بشكل تاني مع tú.",
+            "audioKey": "pending/c1-u5-vos-2"
+          },
+          {
+            "es": "Mirá, el voseo culto rioplatense conserva una desinencia histórica que nos otorga cercanía y elegancia.",
+            "ar": "انظر، إن ظاهرة الفوسيو الراقية في ريو دي لا بلاتا تحافظ على لاحقة تاريخية تمنحنا قرباً وأناقة بالغة.",
+            "arEg": "بص يا فنان، الفوسيو الراقي عندنا في الأرجنتين محتفظ بنهايات فعل قديمة بتدي حميمية وشياكة للكلام.",
+            "audioKey": "pending/c1-u5-vos-3"
+          },
+          {
+            "es": "Es fascinante comprobar cómo una misma lengua modula sus fórmulas de tratamiento con tanta riqueza.",
+            "ar": "إنه لمن المثير حقاً التحقق من كيفية تنويع اللغة الواحدة لصيغ المخاطبة بمثل هذا الثراء العظيم.",
+            "arEg": "حاجة تبهر الصراحة إزاي نفس اللغة الواحدة بتنوّع أساليب النداء والكلام بالغنى والجمال ده كله.",
+            "audioKey": "pending/c1-u5-vos-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-vva-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى الناشر الأرجنتيني ولاحظ تصريف الفعل saber مع ضمير vos في الحاضر.",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الصيغة الصحيحة لفعل saber مع الضمير vos في بوينس آيرس؟",
+        "stemEs": "Che, vos sabés muy bien que tu novela tiene una potencia deslumbrante en toda la región.",
+        "stemAr": "اسمع يا صديقي، أنت تعلم جيداً أن روايتك تحظى بقوة مذهلة وأثر باهر في كل أرجاء المنطقة.",
+        "options": [
+          {
+            "id": "ex-c1-vva-1_a",
+            "text": "vos sabés",
+            "textAr": "تصريف الفوسيو بحذف حرف الإدغام والضغط على المقطع الأخير (sabés)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-vva-1_b",
+            "text": "tú sabes",
+            "textAr": "الصيغة الإيبيرية لضمير tú في الحاضر بدون فوسيو",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة tú في إسبانيا وليس voseo."
+          },
+          {
+            "id": "ex-c1-vva-1_c",
+            "text": "vos sabéis",
+            "textAr": "صيغة vosotros للجمع في إسبانيا",
+            "isCorrect": false,
+            "distractorRationaleAr": "تخص جماعة المخاطبين في شبه الجزيرة."
+          }
+        ],
+        "targetVocab": [
+          "voseo",
+          "porteño"
+        ],
+        "explanationAr": "في تصريف الفوسيو الحاضر، يتم إدغام النهاية التاريخية مع تسكين النبرة على حرف العلة الأخير: vos hablás, vos tenés, vos sabés.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u5-vos-1",
+        "speechEs": "Che, vos sabés muy bien que tu novela tiene una potencia deslumbrante en toda la región.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-vva-1_a"
+          ],
+          "selectedOptionId": "ex-c1-vva-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-vva-1_b": "صيغة tú في إسبانيا وليس voseo.",
+          "ex-c1-vva-1_c": "تخص جماعة المخاطبين في شبه الجزيرة."
+        }
+      },
+      {
+        "id": "ex-c1-vva-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي صيغة الأمر للمخاطب في ريو دي لا بلاتا لدعوة شخص ما إلى القدوم والاستماع؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر صيغة الأمر الصحيحة مع vos:",
+        "stemEs": "Por favor, ____ aquí un momento que quiero comentarte una idea.",
+        "stemAr": "من فضلك، تعال هنا لحظة فإني أريد استشارتك في فكرة.",
+        "options": [
+          {
+            "id": "ex-c1-vva-2_a",
+            "text": "vení",
+            "textAr": "الأمر في الفوسيو بحذف حرف الراء والنبر على المقطع الأخير (vení)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-vva-2_b",
+            "text": "ven",
+            "textAr": "صيغة الأمر الشاذة لضمير tú في إسبانيا",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة إيبيرية تخص tú."
+          },
+          {
+            "id": "ex-c1-vva-2_c",
+            "text": "venga",
+            "textAr": "صيغة الأمر الرسمي مع usted",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة التوقير الرسمي وليست مخاطبة حميمة."
+          }
+        ],
+        "targetVocab": [
+          "voseo",
+          "rigor"
+        ],
+        "explanationAr": "يصاغ أمر الفوسيو بحذف -d من صيغة vosotros القديمة مع تثبيت النبر على الصائت الأخير: vení, decí, hacé, mirá.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-vva-2_a"
+          ],
+          "selectedOptionId": "ex-c1-vva-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-vva-2_b": "صيغة إيبيرية تخص tú.",
+          "ex-c1-vva-2_c": "صيغة التوقير الرسمي وليست مخاطبة حميمة."
+        }
+      },
+      {
+        "id": "ex-c1-vva-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالضمير المتصل التوكيدي للمخاطب في ريو دي لا بلاتا: «vos ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الضمير المستقل الدال على أنت في الفوسيو:",
+        "stemEs": "No te preocupes, ____ sos el candidato más idóneo para el puesto.",
+        "stemAr": "لا تقلق، فأنت هو المرشح الأنسب والأجدر لشغل هذه الوظيفة.",
+        "targetVocab": [
+          "vos"
+        ],
+        "explanationAr": "يحل الضمير «vos» محل tú في الفاعل والمجرور بحرف الجر (con vos, para vos)، بينما يبقى ضمير المفعول te دون تغيير.",
+        "answerKey": {
+          "accepted": [
+            "vos"
+          ],
+          "acceptableAnswers": [
+            "vos"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-vva-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الوضع الاجتماعي واللغوي لظاهرة الفوسيو في الأرجنتين والأوروغواي اليوم؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "حدد المكانة السوسيولسانية للفوسيو في حوض ريو دي لا بلاتا:",
+        "stemEs": "El voseo en Argentina goza de total legitimidad y prestigio social y académico.",
+        "stemAr": "يتمتع الفوسيو في الأرجنتين بشرعية كاملة ومكانة اجتماعية وأكاديمية رفيعة في كافة المستويات.",
+        "options": [
+          {
+            "id": "ex-c1-vva-4_a",
+            "text": "Norma culta estándar aceptada en todos los registros formales",
+            "textAr": "معيار فصيح وراقٍ معتمد في كافة السجلات الرسمية والتعليمية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-vva-4_b",
+            "text": "Vulgarismo marginal prohibido en las escuelas y medios",
+            "textAr": "لحن عامي محظور في المدارس ووسائل الإعلام",
+            "isCorrect": false,
+            "distractorRationaleAr": "مفهوم استعماري قديم اندثر منذ زمن بعيد."
+          },
+          {
+            "id": "ex-c1-vva-4_c",
+            "text": "Dialecto incomprensible exclusivo de zonas rurales aisladas",
+            "textAr": "لهجة ريفية غير مفهومة للمدن",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفوسيو هو لغة العواصم الكبرى كبوينس آيرس ومونتيفيديو."
+          }
+        ],
+        "targetVocab": [
+          "tratamiento",
+          "porteño"
+        ],
+        "explanationAr": "أقرت الأكاديمية الملكية والجمعيات اللغوية الأمريكية بأن فوسيو ريو دي لا بلاتا يمثل معياراً فصيحاً معتمداً رسمياً ومكتوباً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-vva-4_a"
+          ],
+          "selectedOptionId": "ex-c1-vva-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-vva-4_b": "مفهوم استعماري قديم اندثر منذ زمن بعيد.",
+          "ex-c1-vva-4_c": "الفوسيو هو لغة العواصم الكبرى كبوينس آيرس ومونتيفيديو."
+        }
+      },
+      {
+        "id": "ex-c1-vva-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء جملة أمرية حميمية على طريقة الفوسيو البوينس-آيرسي.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-vva-5_t1",
+            "kind": "token",
+            "text": "Mirá"
+          },
+          {
+            "id": "ex-c1-vva-5_t2",
+            "kind": "token",
+            "text": "bien"
+          },
+          {
+            "id": "ex-c1-vva-5_t3",
+            "kind": "token",
+            "text": "lo"
+          },
+          {
+            "id": "ex-c1-vva-5_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-c1-vva-5_t5",
+            "kind": "token",
+            "text": "hacés"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mirá bien lo que hacés"
+          ],
+          "tokenOrder": [
+            "ex-c1-vva-5_t1",
+            "ex-c1-vva-5_t2",
+            "ex-c1-vva-5_t3",
+            "ex-c1-vva-5_t4",
+            "ex-c1-vva-5_t5"
+          ]
+        },
+        "explanationAr": "الأمر mirá متبوعاً بالظرف bien والاسم الموصول المركب lo que وفعل الحاضر hacés.",
+        "targetVocab": [
+          "voseo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-vva-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بتنغيم أرجنتيني رخيم يعكس نبرات الفوسيو الأصيلة بكل وقار.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً النبر على المقطع الأخير في الأفعال:",
+        "stemEs": "Vos tenés toda la razón del mundo.",
+        "stemAr": "أنت على حق تام في كل ما تقول.",
+        "audioKey": "pending/c1-u5-vos-spk",
+        "targetVocab": [
+          "voseo",
+          "porteño"
+        ],
+        "explanationAr": "احرص على رفع الصوت بنغمة موسيقية إيقاعية على كلمة tenés وإخراج حرف s النهاري خفيفاً وواضحاً.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u5-vos-spk",
+          "modelAnswer": "Vos tenés toda la razón del mundo."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -188,9 +188,8 @@
                     "speaking",
                     "pronunciation"
                   ],
-                  "status": "authored",
+                  "status": "planned",
                   "levelCode": "PREA1",
-                  "filePath": "content/exemplars/lesson-prea1-hola-me-llamo.json",
                   "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد."
                 },
                 {
@@ -319,54 +318,79 @@
             {
               "slug": "a1-u2-family",
               "titleAr": "العائلة والأصدقاء",
-              "objectiveAr": "أن يتحدث المتعلم عن أسرته وأصدقائه بجمل بسيطة ويصف صفة شخص.",
+              "objectiveAr": "أن يسمّي المتعلم أفراد الأسرة ويستخدم صفات الملكية mi/tu/su ويعبّر عن العمر ويصف شخصًا بدقة.",
               "levelCode": "A1",
               "plannedLessonCount": 4,
               "lessons": [
                 {
                   "slug": "a1-mi-familia",
-                  "titleAr": "أفراد العائلة",
-                  "objectiveAr": "أن يسمّي المتعلم أفراد أسرته ويستخدم mi/mis بشكل صحيح.",
+                  "titleAr": "أفراد العائلة: تسمية الأقارب واستخدام صفات الملكية mi و mis",
+                  "objectiveAr": "أن يسمّي المتعلم أفراد أسرته المباشرين ويستخدم صفات الملكية mi و mis بشكل صحيح ومطابق للمفرد والجمع.",
                   "skills": [
                     "vocabulary",
-                    "reading"
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-mi-familia.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-tener-anos",
-                  "titleAr": "العمر وحرف الجر tener",
-                  "objectiveAr": "أن يقول المتعلم عمره وعمر غيره مستخدمًا tener años.",
+                  "titleAr": "السؤال عن العمر والسنوات: استخدام الفعل Tener وتصريفه",
+                  "objectiveAr": "أن يسأل المتعلم عن العمر ويجيب عنه باستخدام فعل الملكية tener، ويتجنب الخطأ الشائع باستخدام فعل ser.",
                   "skills": [
                     "grammar",
-                    "writing"
+                    "writing",
+                    "listening",
+                    "speaking",
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-tener-anos.json",
+                  "requires": [
+                    "a1-mi-familia"
+                  ]
                 },
                 {
                   "slug": "a1-posesivos",
-                  "titleAr": "الملكية: mi, tu, su",
-                  "objectiveAr": "أن يفرّق المتعلم بين mi/tu/su في جمل عن العائلة.",
+                  "titleAr": "صفات الملكية: التمييز بين mi و tu و su وتوافقها مع الشيء المملوك",
+                  "objectiveAr": "أن يفرّق المتعلم بين صفات الملكية mi و tu و su في جمل عن العائلة والممتلكات، ويفهم قاعدة التوافق مع الشيء المملوك وليس المالك.",
                   "skills": [
                     "grammar",
-                    "reading"
+                    "reading",
+                    "writing",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-posesivos.json",
+                  "requires": [
+                    "a1-tener-anos"
+                  ]
                 },
                 {
                   "slug": "a1-describir-persona",
-                  "titleAr": "وصف شخص",
-                  "objectiveAr": "أن يصف المتعلم شخصًا بصفة واحدة (alto, simpático) مع مطابقة الجنس.",
+                  "titleAr": "وصف الأشخاص: السمات الجسدية والشخصية مع Ser ومطابقة الصفات",
+                  "objectiveAr": "أن يصف المتعلم شخصًا بالسمات الجسدية والشخصية (alto, simpático, inteligente, trabajador) مع مراعاة مطابقة الجنس والعدد.",
                   "skills": [
                     "writing",
                     "speaking",
-                    "grammar"
+                    "grammar",
+                    "reading",
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-describir-persona.json",
+                  "requires": [
+                    "a1-posesivos"
+                  ]
                 }
               ]
             },
@@ -379,49 +403,73 @@
               "lessons": [
                 {
                   "slug": "a1-numeros-20-100",
-                  "titleAr": "الأرقام من 20 إلى 100",
-                  "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام حتى 100 ويفهم سعرًا.",
+                  "titleAr": "الأرقام من 20 إلى 100: تركيب الأعداد والأسعار البسيطة",
+                  "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام من 20 إلى 100، مع إتقان دمج العشرينيات ككلمة واحدة (veinticinco) وفصل ما بعدها بحرف العطف y (treinta y uno) وفهم الأسعار البسيطة.",
                   "skills": [
                     "vocabulary",
-                    "listening"
+                    "listening",
+                    "reading",
+                    "writing",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-numeros-20-100.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-la-hora",
-                  "titleAr": "الساعة والوقت",
-                  "objectiveAr": "أن يسأل المتعلم ¿Qué hora es? ويجيب بالساعة الكاملة والنصف.",
+                  "titleAr": "الساعة والوقت: السؤال عن الوقت والإخبار به",
+                  "objectiveAr": "أن يسأل المتعلم عن الوقت باستخدام ¿Qué hora es? ويخبر به بدقة مستخدماً Es la una و Son las dos... مع الكسور (y cuarto, y media, menos cuarto).",
                   "skills": [
-                    "listening",
                     "speaking",
-                    "grammar"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-dias-meses",
-                  "titleAr": "أيام الأسبوع والشهور",
-                  "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور ويحدد يومًا.",
-                  "skills": [
+                    "listening",
+                    "grammar",
                     "vocabulary",
                     "reading"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-la-hora.json",
+                  "requires": [
+                    "a1-numeros-20-100"
+                  ]
+                },
+                {
+                  "slug": "a1-dias-meses",
+                  "titleAr": "أيام الأسبوع والشهور: المذكر والتكرار وتحديد التواريخ",
+                  "objectiveAr": "أن يذكر المتعلم أيام الأسبوع والشهور، ويستخدم أداة التعريف المذكرة el/los للتعبير عن المواعيد والتكرار وحرف الجر en مع الشهور بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "grammar",
+                    "reading",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-dias-meses.json",
+                  "requires": [
+                    "a1-la-hora"
+                  ]
                 },
                 {
                   "slug": "a1-cita",
-                  "titleAr": "تحديد موعد",
-                  "objectiveAr": "أن يتفق المتعلم على موعد بسيط (¿A qué hora quedamos?) ويؤكده.",
+                  "titleAr": "تحديد موعد: الاتفاق والتأكيد والمكان",
+                  "objectiveAr": "أن يتفق المتعلم على موعد مع صديق أو زميل مستخدماً ¿A qué hora quedamos? والرد بـ A las... مع استعمال حرف الجر a مع ساعات المواعيد.",
                   "skills": [
                     "speaking",
                     "listening",
-                    "writing"
+                    "reading",
+                    "writing",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-cita.json",
+                  "requires": [
+                    "a1-dias-meses"
+                  ]
                 }
               ]
             },
@@ -434,48 +482,73 @@
               "lessons": [
                 {
                   "slug": "a1-vocabulario-comida",
-                  "titleAr": "مفردات الطعام والشراب",
-                  "objectiveAr": "أن يتعرّف المتعلم على أسماء طعام وشراب شائعة مع أداة التعريف الصحيحة.",
+                  "titleAr": "مفردات الطعام والشراب: تصنيف المأكولات والمشروبات الأساسية",
+                  "objectiveAr": "أن يتعرّف المتعلم على أسماء الأطعمة والمشروبات الأساسية في الحياة اليومية مع أداة التعريف المناسبة ومراعاة جنس الكلمة (el pan, el agua, la leche...).",
                   "skills": [
                     "vocabulary",
-                    "reading"
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-vocabulario-comida.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-pedir-en-cafe",
-                  "titleAr": "الطلب في مقهى",
-                  "objectiveAr": "أن يطلب المتعلم مشروبًا بأدب (quisiera / para mí) ويفهم ردّ النادل.",
+                  "titleAr": "الطلب في المقهى والمطعم: الأسلوب المهذب والتعبير عن الرغبة",
+                  "objectiveAr": "أن يطلب المتعلم طعاماً أو شراباً في مقهى بأسلوب مهذب مستخدماً Para mí, por favor أو Quisiera un café، ويفهم أسئلة النادل الشائعة.",
                   "skills": [
+                    "speaking",
                     "listening",
-                    "speaking"
+                    "vocabulary",
+                    "reading",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-pedir-en-cafe.json",
+                  "requires": [
+                    "a1-vocabulario-comida"
+                  ]
                 },
                 {
                   "slug": "a1-precios-cuentas",
-                  "titleAr": "الأسعار والحساب",
-                  "objectiveAr": "أن يسأل المتعلم ¿Cuánto cuesta? ويفهم الإجمالي ويكتب رقمًا.",
+                  "titleAr": "الأسعار والحساب: السؤال عن الثمن وطلب الفاتورة",
+                  "objectiveAr": "أن يسأل المتعلم عن سعر الأشياء بـ ¿Cuánto cuesta / cuestan? ويطلب الحساب بـ La cuenta, por favor ويفهم الإجمالي بالأرقام واليورو.",
                   "skills": [
                     "listening",
                     "writing",
-                    "vocabulary"
+                    "vocabulary",
+                    "speaking",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-precios-cuentas.json",
+                  "requires": [
+                    "a1-pedir-en-cafe"
+                  ]
                 },
                 {
                   "slug": "a1-gustar",
-                  "titleAr": "التفضيل: me gusta",
-                  "objectiveAr": "أن يعبّر المتعلم عمّا يحبه من طعام بفعل gustar بصيغتيه.",
+                  "titleAr": "التفضيل والإعجاب: استخدام الفعل Gustar مع المفرد والجمع",
+                  "objectiveAr": "أن يعبّر المتعلم عمّا يحبه وما لا يحبه من أطعمة ومشروبات باستخدام me gusta مع المفرد وme gustan مع الجمع، وفهم بنية الفاعل والمفعول في الفعل gustar.",
                   "skills": [
                     "grammar",
-                    "speaking"
+                    "speaking",
+                    "listening",
+                    "reading",
+                    "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-gustar.json",
+                  "requires": [
+                    "a1-precios-cuentas"
+                  ]
                 }
               ]
             },
@@ -488,48 +561,73 @@
               "lessons": [
                 {
                   "slug": "a1-colores-ropa",
-                  "titleAr": "الألوان والملابس",
-                  "objectiveAr": "أن يسمّي المتعلم الألوان والملابس الأساسية ويصف قطعة.",
+                  "titleAr": "الألوان والملابس: وصف القطع ومطابقة الصفات في الجنس والعدد",
+                  "objectiveAr": "أن يسمّي المتعلم الملابس الأساسية والألوان، ويطابق صفات الألوان مع الأسماء الموصوفة تذكيراً وتأنيثاً وإفراداً وجمعاً (camisa blanca, zapatos negros).",
                   "skills": [
                     "vocabulary",
-                    "reading"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-necesitar",
-                  "titleAr": "الحاجة: necesito",
-                  "objectiveAr": "أن يعبّر المتعلم عن حاجته (necesito…) ويطلب المساعدة.",
-                  "skills": [
-                    "speaking",
-                    "grammar"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-tallas",
-                  "titleAr": "المقاس والاختيار",
-                  "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة.",
-                  "skills": [
+                    "reading",
+                    "grammar",
                     "listening",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-colores-ropa.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a1-necesitar",
+                  "titleAr": "التعبير عن الحاجة والرغبة: استخدام Necesitar و Querer للتسوق",
+                  "objectiveAr": "أن يعبّر المتعلم عن حاجته لشراء ملابس أو أغراض مستخدماً necesito / quiero مع الأسماء والمصادر بدقة.",
+                  "skills": [
+                    "grammar",
+                    "speaking",
+                    "listening",
+                    "reading",
+                    "writing"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-necesitar.json",
+                  "requires": [
+                    "a1-colores-ropa"
+                  ]
+                },
+                {
+                  "slug": "a1-tallas",
+                  "titleAr": "المقاسات والتجربة: السؤال عن القياس وغرفة القياس",
+                  "objectiveAr": "أن يسأل المتعلم عن المقاس ويفهم الإجابة ويطلب تجربة الملابس في غرفة القياس (¿Puedo probármelo?).",
+                  "skills": [
+                    "speaking",
+                    "listening",
+                    "vocabulary",
+                    "reading",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-tallas.json",
+                  "requires": [
+                    "a1-necesitar"
+                  ]
                 },
                 {
                   "slug": "a1-comprar",
-                  "titleAr": "إتمام عملية شراء",
-                  "objectiveAr": "أن يُجري المتعلم حوار شراء قصيرًا من السؤال إلى الدفع.",
+                  "titleAr": "إتمام عملية الشراء: الدفع والإيصال والاسترجاع",
+                  "objectiveAr": "أن يُجري المتعلم حوار شراء متكاملاً من السؤال عن السعر إلى اختيار وسيلة الدفع واستلام الفاتورة.",
                   "skills": [
                     "speaking",
+                    "listening",
+                    "writing",
                     "reading",
-                    "listening"
+                    "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-comprar.json",
+                  "requires": [
+                    "a1-tallas"
+                  ]
                 }
               ]
             },
@@ -542,48 +640,73 @@
               "lessons": [
                 {
                   "slug": "a1-habitaciones",
-                  "titleAr": "غرف المنزل",
-                  "objectiveAr": "أن يسمّي المتعلم غرف المنزل ويستخدم hay.",
-                  "skills": [
-                    "vocabulary",
-                    "reading"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-hay-estar",
-                  "titleAr": "hay مقابل está",
-                  "objectiveAr": "أن يفرّق المتعلم بين وجود شيء (hay) وموضعه (está).",
-                  "skills": [
-                    "grammar",
-                    "writing"
-                  ],
-                  "status": "planned",
-                  "levelCode": "A1"
-                },
-                {
-                  "slug": "a1-muebles",
-                  "titleAr": "الأثاث والمواضع",
-                  "objectiveAr": "أن يصف المتعلم موضع الأثاث بحروف المكان.",
+                  "titleAr": "غرف المنزل: أجزاء البيت وتسمية المساحات",
+                  "objectiveAr": "أن يسمّي المتعلم غرف المنزل الأساسية (cocina, salón, baño, habitación) مع أدوات التعريف والتنكير المناسبة.",
                   "skills": [
                     "vocabulary",
                     "reading",
-                    "grammar"
+                    "grammar",
+                    "listening",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-habitaciones.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a1-hay-estar",
+                  "titleAr": "الوجود والمكان: التمييز الحاسم بين Hay و Está / Están",
+                  "objectiveAr": "أن يفرّق المتعلم بين التعبير عن الوجود غير المحدد (hay + un/una/sustantivo sin artículo) وبين تحديد مكان شيء معروف أو معرّف (está/están + el/la/los/las).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hay-estar.json",
+                  "requires": [
+                    "a1-habitaciones"
+                  ]
+                },
+                {
+                  "slug": "a1-muebles",
+                  "titleAr": "الأثاث والمواضع: حروف وظروف المكان داخل المنزل",
+                  "objectiveAr": "أن يصف المتعلم موضع الأثاث مستخدماً حروف وظروف المكان: encima de, debajo de, al lado de, delante de, detrás de مع فعل estar.",
+                  "skills": [
+                    "grammar",
+                    "vocabulary",
+                    "reading",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-muebles.json",
+                  "requires": [
+                    "a1-hay-estar"
+                  ]
                 },
                 {
                   "slug": "a1-rutina-casa",
-                  "titleAr": "وصف منزلي",
-                  "objectiveAr": "أن يكتب المتعلم فقرة قصيرة عن منزله.",
+                  "titleAr": "وصف المنزل والعيش: التعبير المتكامل عن السكن",
+                  "objectiveAr": "أن يكتب المتعلم وينطق فقرة وصفية متكاملة عن منزله وموقعه ومحتوياته وتفضيلاته للغرف.",
                   "skills": [
                     "writing",
-                    "vocabulary"
+                    "speaking",
+                    "reading",
+                    "listening",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-rutina-casa.json",
+                  "requires": [
+                    "a1-muebles"
+                  ]
                 }
               ]
             },
@@ -596,47 +719,73 @@
               "lessons": [
                 {
                   "slug": "a1-verbos-rutina",
-                  "titleAr": "أفعال الروتين",
-                  "objectiveAr": "أن يستخدم المتعلم أفعال الروتين في المضارع مع الضمير الصحيح.",
+                  "titleAr": "أفعال الروتين اليومي: تصريف الأفعال الأساسية في المضارع البسيط",
+                  "objectiveAr": "أن يصرّف المتعلم أفعال الروتين اليومي (desayunar, comer, cenar, trabajar, estudiar, dormir) في المضارع البسيط مع ضمائر الفاعل المختلفة بدقة.",
                   "skills": [
                     "grammar",
-                    "vocabulary"
+                    "vocabulary",
+                    "reading",
+                    "writing",
+                    "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-verbos-rutina.json",
+                  "requires": []
                 },
                 {
                   "slug": "a1-hora-rutina",
-                  "titleAr": "الروتين والوقت",
-                  "objectiveAr": "أن يربط المتعلم بين نشاط ووقته (a las siete…).",
+                  "titleAr": "الروتين والوقت: ربط الأنشطة اليومية بالساعات والتكرار",
+                  "objectiveAr": "أن يربط المتعلم بين النشاط اليومي وتوقيته المحدد باستخدام a las... وظروف التكرار (siempre, normalmente, nunca).",
                   "skills": [
-                    "writing",
-                    "listening"
+                    "grammar",
+                    "listening",
+                    "speaking",
+                    "reading",
+                    "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hora-rutina.json",
+                  "requires": [
+                    "a1-verbos-rutina"
+                  ]
                 },
                 {
                   "slug": "a1-hobbies",
-                  "titleAr": "الهوايات",
-                  "objectiveAr": "أن يقول المتعلم ما يحب فعله في وقت الفراغ.",
+                  "titleAr": "الهوايات وأوقات الفراغ: التعبير عن الاهتمامات والأنشطة",
+                  "objectiveAr": "أن يقول المتعلم ما يحب وما لا يحب فعله في وقت الفراغ وعطلة نهاية الأسبوع مستخدماً أفعال الهوايات والتفضيل.",
                   "skills": [
+                    "vocabulary",
                     "speaking",
-                    "vocabulary"
+                    "listening",
+                    "reading",
+                    "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-hobbies.json",
+                  "requires": [
+                    "a1-hora-rutina"
+                  ]
                 },
                 {
                   "slug": "a1-mi-dia",
-                  "titleAr": "يومي في فقرة",
-                  "objectiveAr": "أن يكتب المتعلم فقرة من 4 جمل عن يومه.",
+                  "titleAr": "يومي في فقرة: سرد الجدول اليومي الكامل بروابط زمنية",
+                  "objectiveAr": "أن يكتب المتعلم وينطق سردية متصلة من 4 إلى 5 جمل تصف يومه المعتاد من الصباح حتى المساء باستخدام روابط التسلسل (primero, luego, después, finalmente).",
                   "skills": [
                     "writing",
+                    "speaking",
+                    "reading",
+                    "listening",
                     "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-mi-dia.json",
+                  "requires": [
+                    "a1-hobbies"
+                  ]
                 }
               ]
             },
@@ -649,50 +798,69 @@
               "lessons": [
                 {
                   "slug": "a1-lugares-ciudad",
-                  "titleAr": "أماكن في المدينة",
-                  "objectiveAr": "أن يسمّي المتعلم أماكن المدينة الشائعة.",
+                  "titleAr": "أماكن في المدينة: تسمية المعالم والمرافق العامة",
+                  "objectiveAr": "أن يسمّي المتعلم الأماكن العامة الأساسية في المدينة بدقة.",
                   "skills": [
                     "vocabulary",
                     "reading"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-lugares-ciudad.json",
+                  "titleEs": "Lugares en la ciudad",
+                  "requires": []
                 },
                 {
                   "slug": "a1-donde-esta",
-                  "titleAr": "أين يوجد؟",
-                  "objectiveAr": "أن يسأل المتعلم ¿Dónde está…? ويفهم الجواب.",
+                  "titleAr": "أين يوجد؟ السؤال عن الأماكن وتحديد موقعها بـ Está",
+                  "objectiveAr": "أن يسأل المتعلم عن الأماكن المحددة باستخدام ¿Dónde está...? أو ¿Dónde están...? بدقة.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-donde-esta.json",
+                  "titleEs": "¿Dónde está? Localizar lugares",
+                  "requires": [
+                    "a1-lugares-ciudad"
+                  ]
                 },
                 {
                   "slug": "a1-direcciones",
-                  "titleAr": "إعطاء اتجاه",
-                  "objectiveAr": "أن يعطي المتعلم اتجاهًا من خطوتين (a la derecha, todo recto).",
+                  "titleAr": "إعطاء الاتجاهات: الوصف خطوة بخطوة في الشارع",
+                  "objectiveAr": "أن يفهم المتعلم ويعطي اتجاهات سير واضحة من خطوتين أو ثلاث.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-direcciones.json",
+                  "titleEs": "Dar y pedir direcciones",
+                  "requires": [
+                    "a1-donde-esta"
+                  ]
                 },
                 {
                   "slug": "a1-transporte",
-                  "titleAr": "المواصلات",
-                  "objectiveAr": "أن يسأل المتعلم عن وسيلة مواصلات ويشتري تذكرة.",
+                  "titleAr": "المواصلات والتنقل: السؤال عن الوسيلة وشراء تذكرة",
+                  "objectiveAr": "أن يسمّي وسائل المواصلات الشائعة: metro, autobús, taxi, tren.",
                   "skills": [
                     "listening",
                     "speaking",
                     "vocabulary"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-transporte.json",
+                  "titleEs": "Los transportes y el billete",
+                  "requires": [
+                    "a1-direcciones"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             },
             {
               "slug": "a1-u9-work-study",
@@ -703,49 +871,68 @@
               "lessons": [
                 {
                   "slug": "a1-profesiones",
-                  "titleAr": "المهن",
-                  "objectiveAr": "أن يسمّي المتعلم مهنًا شائعة ويقول مهنته بـsoy/trabajo de.",
+                  "titleAr": "المهن والوظائف: التذكير والتأنيث والتعبير عن العمل بـ Ser و Trabajar de",
+                  "objectiveAr": "أن يسمّي المتعلم المهن الشائعة ويميز صيغ المذكر والمؤنث فيها.",
                   "skills": [
                     "vocabulary",
                     "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-profesiones.json",
+                  "titleEs": "Las profesiones: ser y trabajar de",
+                  "requires": []
                 },
                 {
                   "slug": "a1-estudiar",
-                  "titleAr": "الدراسة والمواد",
-                  "objectiveAr": "أن يتحدث المتعلم عمّا يدرسه ويستخدم estudiar.",
+                  "titleAr": "الدراسة والمواد الأكاديمية: استخدام Estudiar والمجالات الدراسية",
+                  "objectiveAr": "أن يصرف المتعلم الفعل القياسي estudiar في الحاضر بطلاقة مع جميع الضمائر.",
                   "skills": [
                     "reading",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-estudiar.json",
+                  "titleEs": "Los estudios y las asignaturas",
+                  "requires": [
+                    "a1-profesiones"
+                  ]
                 },
                 {
                   "slug": "a1-horario-trabajo",
-                  "titleAr": "الوقت في العمل",
-                  "objectiveAr": "أن يصف المتعلم ساعات عمله ويومه.",
+                  "titleAr": "الوقت في العمل: ساعات الدوام والروتين المهني",
+                  "objectiveAr": "أن يحدد ساعات دوامه اليومي باستخدام de... a... أو desde las... hasta las....",
                   "skills": [
                     "writing",
                     "grammar"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-horario-trabajo.json",
+                  "titleEs": "El horario de trabajo",
+                  "requires": [
+                    "a1-estudiar"
+                  ]
                 },
                 {
                   "slug": "a1-presentacion-profesional",
-                  "titleAr": "تقديم نفسي مهني",
-                  "objectiveAr": "أن يقدّم المتعلم نفسه في سياق مهني قصير.",
+                  "titleAr": "تقديم نفسي في سياق مهني: دمج الاسم والمهنة واللغات ومكان العمل",
+                  "objectiveAr": "أن يقدم المتعلم نبذة مهنية موجزة ومتماسكة عن نفسه باللغة الإسبانية.",
                   "skills": [
                     "speaking",
                     "writing"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-presentacion-profesional.json",
+                  "titleEs": "Presentación profesional",
+                  "requires": [
+                    "a1-horario-trabajo"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             },
             {
               "slug": "a1-u10-health-basics",
@@ -756,49 +943,68 @@
               "lessons": [
                 {
                   "slug": "a1-cuerpo",
-                  "titleAr": "أعضاء الجسم",
-                  "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الأساسية.",
+                  "titleAr": "أعضاء الجسم الأساسية: أسماء الأعضاء والتذكير والتأنيث",
+                  "objectiveAr": "أن يسمّي المتعلم أعضاء الجسم الرئيسية بدقة مع تمييز جنس كل عضو.",
                   "skills": [
                     "vocabulary",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-cuerpo.json",
+                  "titleEs": "El cuerpo humano",
+                  "requires": []
                 },
                 {
                   "slug": "a1-doler",
-                  "titleAr": "الألم: me duele",
-                  "objectiveAr": "أن يعبّر المتعلم عن موضع الألم بالصيغة الصحيحة.",
+                  "titleAr": "التعبير عن الألم: استخدام الفعل Doler مع الضمائر المفردة والجمع",
+                  "objectiveAr": "أن يستخدم المتعلم الفعل doler بالشكل الصحيح: duele مع المفرد، و duelen مع الجمع.",
                   "skills": [
                     "grammar",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-doler.json",
+                  "titleEs": "El verbo doler: expresar dolor",
+                  "requires": [
+                    "a1-cuerpo"
+                  ]
                 },
                 {
                   "slug": "a1-farmacia",
-                  "titleAr": "في الصيدلية",
-                  "objectiveAr": "أن يطلب المتعلم دواءً بسيطًا ويفهم التعليمات.",
+                  "titleAr": "في الصيدلية: طلب دواء بسيط وفهم التعليمات",
+                  "objectiveAr": "أن يطلب المتعلم دواءً بسيطاً في الصيدلية بأسلوب مهذب: Quería algo para el dolor de....",
                   "skills": [
                     "reading",
                     "speaking"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-farmacia.json",
+                  "titleEs": "En la farmacia: pedir medicinas",
+                  "requires": [
+                    "a1-doler"
+                  ]
                 },
                 {
                   "slug": "a1-emergencia",
-                  "titleAr": "طلب المساعدة",
-                  "objectiveAr": "أن يطلب المتعلم المساعدة في حالة طارئة بسيطة.",
+                  "titleAr": "طلب المساعدة والطوارئ: عبارات الإنقاذ والاتصال بالإسعاف",
+                  "objectiveAr": "أن يطلب المتعلم النجدة فوراً في المواقف الطارئة: ¡Ayuda! و ¡Socorro!.",
                   "skills": [
                     "speaking",
                     "listening"
                   ],
-                  "status": "planned",
-                  "levelCode": "A1"
+                  "status": "authored",
+                  "levelCode": "A1",
+                  "filePath": "content/drafts/a1/lesson-a1-emergencia.json",
+                  "titleEs": "Situaciones de emergencia y socorro",
+                  "requires": [
+                    "a1-farmacia"
+                  ]
                 }
-              ]
+              ],
+              "status": "draft"
             }
           ]
         },
@@ -811,10 +1017,85 @@
             {
               "slug": "a2-u1-travel",
               "titleAr": "السفر والإجازات",
-              "objectiveAr": "أن يحكي المتعلم عن رحلة ماضية ويحجز إقامة.",
+              "objectiveAr": "أن يصف المتعلم رحلة سابقة ويسرد تجارب السفر وأحداث العطلة ويحجز إقامة ووسيلة نقل بثقة.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-viajes-experiencias",
+                  "titleAr": "حكاية تجارب السفر: سرد أحداث الرحلة بالماضي البسيط",
+                  "objectiveAr": "أن يصف المتعلم رحلة سابقة ويسرد تجارب السفر وأحداث العطلة في الماضي البسيط مستخدمًا علامات الزمن الدالة على الفترات المنتهية بدقة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-viajes-experiencias.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-alojamiento-hotel",
+                  "titleAr": "حجز الإقامة والتعامل في الفندق: الخدمات وتفاصيل الغرفة",
+                  "objectiveAr": "أن يطلب المتعلم غرفة في فندق ويستفهم عن الخدمات والإفطار وتأكيد الحجز واستلام المفتاح باللغة الإسبانية المناسبة لبيئة الاستقبال.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-alojamiento-hotel.json",
+                  "requires": [
+                    "a2-viajes-experiencias"
+                  ]
+                },
+                {
+                  "slug": "a2-transporte-billetes",
+                  "titleAr": "خدمات التنقل ومحطات القطار: شراء التذاكر والاستعلام عن المواعيد",
+                  "objectiveAr": "أن يشتري المتعلم تذكرة قطار أو حافلة، ويستعلم عن مواعيد الإقلاع والوصول وأسعار الرحلات وأرقام الأرصفة في المحطة بثقة ووضوح.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-transporte-billetes.json",
+                  "requires": [
+                    "a2-alojamiento-hotel"
+                  ]
+                },
+                {
+                  "slug": "a2-anecdotas-viaje",
+                  "titleAr": "المواقف الطارئة وعقبات السفر: رواية المشكلات وحلها في الماضي",
+                  "objectiveAr": "أن يروي المتعلم موقفًا طارئًا أو مشكلة واجهته أثناء السفر (كتأخر رحلة أو فقدان حقيبة) ويوضح كيف تم حلها مستخدمًا الماضي البسيط وروابط التتابع.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "speaking",
+                    "writing",
+                    "vocabulary",
+                    "grammar"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-anecdotas-viaje.json",
+                  "requires": [
+                    "a2-transporte-billetes"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u2-past",
@@ -822,7 +1103,78 @@
               "objectiveAr": "أن يستخدم المتعلم الماضي البسيط والمركّب في سرد قصير.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-indefinido-regular",
+                  "titleAr": "الماضي البسيط: تصريف الأفعال المنتظمة",
+                  "objectiveAr": "أن يصرّف المتعلم أفعال المجموعات الثلاث (-ar, -er, -ir) في الماضي البسيط (Indefinido) مع ضمائر الفاعل المختلفة، ويستخدم الظروف الزمنية الدالة على الماضي المنتهي بدقة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-indefinido-regular.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-indefinido-irregular",
+                  "titleAr": "الماضي البسيط: الأفعال الشاذة الأساسية",
+                  "objectiveAr": "أن يتقن المتعلم تصريف واستخدام الأفعال الشاذة الرئيسية في الماضي البسيط: ser/ir (fui), estar (estuve), hacer (hice/hizo), tener (tuve)، ويميز بين ser و ir من سياق الجملة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-indefinido-irregular.json",
+                  "requires": [
+                    "a2-indefinido-regular"
+                  ]
+                },
+                {
+                  "slug": "a2-imperfecto-habitos",
+                  "titleAr": "الماضي المستمر: العادات السابقة والوصف",
+                  "objectiveAr": "أن يستخدم المتعلم زمن الماضي المستمر (Pretérito Imperfecto) لوصف العادات والروتين اليومي في الماضي والوصف الحركي والمكاني، ويصرّف الأفعال الشاذة الثلاثة (ser, ir, ver).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-imperfecto-habitos.json",
+                  "requires": [
+                    "a2-indefinido-irregular"
+                  ]
+                },
+                {
+                  "slug": "a2-indefinido-vs-imperfecto",
+                  "titleAr": "التفريق الحاسم في الماضي: Indefinido مقابل Imperfecto",
+                  "objectiveAr": "أن يفرّق المتعلم بين استخدام الماضي البسيط (Indefinido) للوقائع القاطعة والماضي المستمر (Imperfecto) للخلفية والوصف والأنشطة المتزامنة، ويستخدمهما معًا في جملة مركبة واحدة بنجاح.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-indefinido-vs-imperfecto.json",
+                  "requires": [
+                    "a2-imperfecto-habitos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u3-future-plans",
@@ -830,7 +1182,78 @@
               "objectiveAr": "أن يعبّر المتعلم عن خطط قريبة (ir a + مصدر).",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-ir-a-infinitivo",
+                  "titleAr": "المستقبل القريب: التعبير عن النوايا والخطط بـ Ir a + Infinitivo",
+                  "objectiveAr": "أن يصوغ المتعلم تركيب المستقبل القريب: تصريف ir في المضارع + حرف الجر a + الفعل في المصدر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-ir-a-infinitivo.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-planes-proyectos",
+                  "titleAr": "التعبير عن الخطط بـ Pensar و Querer والظروف الزمنية",
+                  "objectiveAr": "أن يميز المتعلم بين Pensar + infinitivo (التفكير في النية) و Querer + infinitivo (الرغبة في التنفيذ).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-planes-proyectos.json",
+                  "requires": [
+                    "a2-ir-a-infinitivo"
+                  ]
+                },
+                {
+                  "slug": "a2-condiciones-futuro",
+                  "titleAr": "جمل الشرط الواقعية للمستقبل: Si + Presente, Futuro",
+                  "objectiveAr": "أن يصوغ المتعلم جمل الشرط الواقعية: Si + المضارع البسيط، الجواب في المضارع أو المستقبل القريب (ir a + inf).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-condiciones-futuro.json",
+                  "requires": [
+                    "a2-planes-proyectos"
+                  ]
+                },
+                {
+                  "slug": "a2-conversacion-planes",
+                  "titleAr": "التنسيق مع الأصدقاء: الاتفاق على موعد وخطة مشتركة",
+                  "objectiveAr": "أن يستخدم المتعلم الفعل quedar للاتفاق على موعد ومكان اللقاء مع الآخرين (¿Quedamos a las siete?).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-conversacion-planes.json",
+                  "requires": [
+                    "a2-condiciones-futuro"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u4-comparisons",
@@ -838,7 +1261,78 @@
               "objectiveAr": "أن يقارن المتعلم بين أشخاص وأشياء.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-comparativos-superioridad",
+                  "titleAr": "صيغ المقارنة: التفوق والنقصان بـ Más que و Menos que والمقارنات الشاذة",
+                  "objectiveAr": "أن يصوغ المتعلم مقارنة التفوق: más + صفة/اسم/ظرف + que بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparativos-superioridad.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-comparativos-igualdad",
+                  "titleAr": "مقارنة التساوي: Tan... como مع الصفات و Tanto... como مع الأسماء",
+                  "objectiveAr": "أن يطبق المتعلم مقارنة التساوي مع الصفات والظروف: tan + صفة + como.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparativos-igualdad.json",
+                  "requires": [
+                    "a2-comparativos-superioridad"
+                  ]
+                },
+                {
+                  "slug": "a2-superlativos",
+                  "titleAr": "صيغ التفضيل المطلق والنسبي: El más... واللاحقة -ísimo",
+                  "objectiveAr": "أن يصوغ المتعلم التفضيل النسبي: أداة التعريف + más/menos + صفة + de (el más alto de la clase).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-superlativos.json",
+                  "requires": [
+                    "a2-comparativos-igualdad"
+                  ]
+                },
+                {
+                  "slug": "a2-comparar-ciudades",
+                  "titleAr": "تطبيق مقارنة المدن ونمط المعيشة والخدمات الحضرية",
+                  "objectiveAr": "أن يقارن المتعلم بين مدينتين من حيث: السكان، حركة المرور، الهدوء، وتكاليف المعيشة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-comparar-ciudades.json",
+                  "requires": [
+                    "a2-superlativos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u5-experiences",
@@ -846,7 +1340,78 @@
               "objectiveAr": "أن يستخدم المتعلم المضارع التام للحديث عن خبرات.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-perfecto-formacion",
+                  "titleAr": "الماضي القريب المركب: صياغة Pretérito Perfecto بـ Haber واسم المفعول",
+                  "objectiveAr": "أن يصرف المتعلم الفعل المساعد haber في الحاضر بدقة: he, has, ha, hemos, habéis, han.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-perfecto-formacion.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-participios-irregulares",
+                  "titleAr": "أسماء المفعول الشاذة: Participios Irregulares الأكثر استخداماً",
+                  "objectiveAr": "أن يحفظ ويطبق المتعلم أشهر أسماء المفعول الشاذة في الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-participios-irregulares.json",
+                  "requires": [
+                    "a2-perfecto-formacion"
+                  ]
+                },
+                {
+                  "slug": "a2-marcadores-experiencias",
+                  "titleAr": "علامات الخبرات الحياتية: Alguna vez و Ya و Todavía no",
+                  "objectiveAr": "أن يسأل المتعلم عن التجارب الحياتية السابقة باستخدام: ¿Alguna vez has...? (هل سبق لك أن...؟).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-marcadores-experiencias.json",
+                  "requires": [
+                    "a2-participios-irregulares"
+                  ]
+                },
+                {
+                  "slug": "a2-hablar-de-experiencias",
+                  "titleAr": "التحدث عن الخبرات الحياتية والمهنية وتجربة أشياء جديدة",
+                  "objectiveAr": "أن يتحدث المتعلم عن تجاربه الشخصية والمهنية السابقة بثقة وسلاسة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-hablar-de-experiencias.json",
+                  "requires": [
+                    "a2-marcadores-experiencias"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u6-health",
@@ -854,7 +1419,78 @@
               "objectiveAr": "أن يشرح المتعلم عَرَضًا لطبيب ويفهم تعليمات.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-sintomas-medico",
+                  "titleAr": "وصف الأعراض عند الطبيب: التعبير عن الدوار والسعال والإنفلونزا",
+                  "objectiveAr": "أن يصف المتعلم أعراض المرض المركبة بدقة للطبيب المعالج.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-sintomas-medico.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-dar-consejos-deber",
+                  "titleAr": "تقديم النصائح الطبية والتوجيهات بـ Deber و Tener que و Hay que",
+                  "objectiveAr": "أن يوجه المتعلم نصائح وإرشادات صحية باستخدام: debes + مصدر (ينبغي عليك).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-dar-consejos-deber.json",
+                  "requires": [
+                    "a2-sintomas-medico"
+                  ]
+                },
+                {
+                  "slug": "a2-imperativo-salud",
+                  "titleAr": "صيغة الأمر الإيجابي للنصائح الطبية: Imperativo Afirmativo",
+                  "objectiveAr": "أن يصوغ المتعلم صيغة الأمر الإيجابي للمخاطب tú: أفعال -ar تأخذ -a (toma, descansa)، وأفعال -er/-ir تأخذ -e (bebe, come, duerme).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-imperativo-salud.json",
+                  "requires": [
+                    "a2-dar-consejos-deber"
+                  ]
+                },
+                {
+                  "slug": "a2-consulta-medica",
+                  "titleAr": "محاكاة زيارة العيادة: الحوار الطبي بين الطبيب والمريض",
+                  "objectiveAr": "أن يدير المتعلم حواراً متكاملاً داخل العيادة الطبية (la consulta).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-consulta-medica.json",
+                  "requires": [
+                    "a2-imperativo-salud"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u7-housing",
@@ -862,7 +1498,78 @@
               "objectiveAr": "أن يتحدث المتعلم عن سكنه ومشكلاته.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-tipos-vivienda",
+                  "titleAr": "أنواع السكن ومواصفات الشقق: piso و chalet و amueblado",
+                  "objectiveAr": "أن يسمّي المتعلم أنواع المساكن المختلفة في إسبانيا: piso, apartamento, chalet, estudio.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-tipos-vivienda.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-pronombres-objeto-directo",
+                  "titleAr": "ضمائر المفعول به المباشر: Lo و La و Los و Las وموضعها",
+                  "objectiveAr": "أن يحدد المتعلم المفعول المباشر ويستبدله بالضمير المناسب: lo (مفرد مذكر), la (مفرد مؤنث), los (جمع مذكر), las (جمع مؤنث).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-pronombres-objeto-directo.json",
+                  "requires": [
+                    "a2-tipos-vivienda"
+                  ]
+                },
+                {
+                  "slug": "a2-alquilar-piso",
+                  "titleAr": "إجراءات وشروط الإيجار: العقد والتأمين ومصاريف الخدمات",
+                  "objectiveAr": "أن يسأل المتعلم عن شروط وتكاليف استئجار عقار في إسبانيا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-alquilar-piso.json",
+                  "requires": [
+                    "a2-pronombres-objeto-directo"
+                  ]
+                },
+                {
+                  "slug": "a2-visita-piso",
+                  "titleAr": "معاينة الشقة ومرافق البناية: المصعد والتدفئة والجيران",
+                  "objectiveAr": "أن يجري المتعلم محادثة معاينة عقار مع الوكيل أو المالك مباشرة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-visita-piso.json",
+                  "requires": [
+                    "a2-alquilar-piso"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u8-hobbies",
@@ -870,7 +1577,78 @@
               "objectiveAr": "أن يناقش المتعلم هواياته وتكرارها.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-deportes-tiempo-libre",
+                  "titleAr": "الرياضة وأنشطة وقت الفراغ: ممارسة الهوايات والألعاب الرياضية",
+                  "objectiveAr": "أن يذكر المتعلم الرياضات وأنشطة وقت الفراغ الأكثر شيوعاً باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-deportes-tiempo-libre.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-gustos-preferencias-avanzadas",
+                  "titleAr": "التعبير المتقدم عن الميول: أفعال encantar وinteresar وfascinar وmolestar",
+                  "objectiveAr": "أن يطبق المتعلم بنية الأفعال المشابهة لـ gustar مع ضمائر المفعول غير المباشر (me, te, le, nos, os, les).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-gustos-preferencias-avanzadas.json",
+                  "requires": [
+                    "a2-deportes-tiempo-libre"
+                  ]
+                },
+                {
+                  "slug": "a2-frecuencia-actividades",
+                  "titleAr": "التعبير عن التكرار والروتين: ظروف a menudo وde vez en cuando وcasi nunca",
+                  "objectiveAr": "أن يصف المتعلم مدى تكرار قيامه بالأنشطة والهوايات باستخدام ظروف التكرار المتنوعة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-frecuencia-actividades.json",
+                  "requires": [
+                    "a2-gustos-preferencias-avanzadas"
+                  ]
+                },
+                {
+                  "slug": "a2-conversacion-hobbies",
+                  "titleAr": "حوار واقعي: الحديث عن الهوايات والاتفاق على نشاط مشترك",
+                  "objectiveAr": "أن يقود المتعلم محادثة حقيقية باللغة الإسبانية للسؤال عن هوايات الطرف الآخر والرد عليها.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-conversacion-hobbies.json",
+                  "requires": [
+                    "a2-frecuencia-actividades"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u9-phone-booking",
@@ -878,7 +1656,78 @@
               "objectiveAr": "أن يُجري المتعلم مكالمة حجز قصيرة.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-llamadas-telefonicas",
+                  "titleAr": "المكالمات الهاتفية: عبارات الرد والتحية وطلب التحدث لشخص",
+                  "objectiveAr": "أن يرد المتعلم على الهاتف بالعبارات الإسبانية المناسبة رسمياً وغير رسمي: ¡Dígame!, ¡Hola, buenos días!, ¿Sí?.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-llamadas-telefonicas.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-pedir-citas",
+                  "titleAr": "حجز المواعيد وتعديلها: عند الطبيب أو الموظف أو مصفف الشعر",
+                  "objectiveAr": "أن يطلب المتعلم موعداً جديداً باللغة الإسبانية: Quería pedir cita con... / Quisiera concertar una cita.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-pedir-citas.json",
+                  "requires": [
+                    "a2-llamadas-telefonicas"
+                  ]
+                },
+                {
+                  "slug": "a2-mensajes-recados",
+                  "titleAr": "ترك الرسائل وأخذ الملاحظات: التعامل مع غياب الشخص المطلوب",
+                  "objectiveAr": "أن يترك المتعلم رسالة لشخص غير متاح: ¿Puedo dejarle un recado? / Dígale que he llamado.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-mensajes-recados.json",
+                  "requires": [
+                    "a2-pedir-citas"
+                  ]
+                },
+                {
+                  "slug": "a2-dialogo-reserva",
+                  "titleAr": "حوار متكامل: حجز طاولة في مطعم أو غرفة في فندق هاتفياً",
+                  "objectiveAr": "أن يجري المتعلم مكالمة حجز كاملة لطاولة في مطعم أو غرفة في فندق.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-dialogo-reserva.json",
+                  "requires": [
+                    "a2-mensajes-recados"
+                  ]
+                }
+              ]
             },
             {
               "slug": "a2-u10-culture",
@@ -886,7 +1735,78 @@
               "objectiveAr": "أن يتعرّف المتعلم على عادات إسبانية ويعلّق عليها.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "a2-fiestas-tradiciones",
+                  "titleAr": "الأعياد والتقاليد الإسبانية: أشهر المهرجانات والمناسبات الشعبية",
+                  "objectiveAr": "أن يتعرف المتعلم على كبرى الاحتفالات والمهرجانات الشعبية في إسبانيا والعالم الناطق بالإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-fiestas-tradiciones.json",
+                  "requires": []
+                },
+                {
+                  "slug": "a2-impersonal-se",
+                  "titleAr": "صيغة التعميم والمبني للمجهول المنعكس بـ Se: القواعد والعادات العامة",
+                  "objectiveAr": "أن يفهم المتعلم بنية المبني للمجهول المنعكس (Pasiva refleja) مع الأداة se.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-impersonal-se.json",
+                  "requires": [
+                    "a2-fiestas-tradiciones"
+                  ]
+                },
+                {
+                  "slug": "a2-contrastes-culturales",
+                  "titleAr": "الفروق والعادات الثقافية: المواعيد وأوقات الوجبات والقيلولة والحديث بعد الطعام",
+                  "objectiveAr": "أن يقارن المتعلم بين العادات الاجتماعية وجداول المواعيد اليومية بين الثقافة الإسبانية والعربية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-contrastes-culturales.json",
+                  "requires": [
+                    "a2-impersonal-se"
+                  ]
+                },
+                {
+                  "slug": "a2-mi-pais-costumbres",
+                  "titleAr": "تقديم عرض عن بلدك: التحدث عن عاداتك وتقاليدك ووجباتك للناطقين بالإسبانية",
+                  "objectiveAr": "أن يقدم المتعلم عرضاً شفهياً أو كتابياً متكاملاً لوصف عادات بلده الأصلي باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "A2",
+                  "filePath": "content/drafts/a2/lesson-a2-mi-pais-costumbres.json",
+                  "requires": [
+                    "a2-contrastes-culturales"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -899,10 +1819,85 @@
             {
               "slug": "b1-u1-narrating",
               "titleAr": "السرد والتفصيل",
-              "objectiveAr": "أن يروي المتعلم قصة مترابطة بأزمنة مختلفة.",
+              "objectiveAr": "أن يروي المتعلم أحداثًا مفصلة في الماضي مستخدمًا الماضي الأسبق وتناغم أزمنة السرد والروابط بدقة.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-pluscuamperfecto-narracion",
+                  "titleAr": "الماضي الأسبق: تركيب واستخدام Pretérito Pluscuamperfecto في السرد",
+                  "objectiveAr": "أن يستخدم المتعلم زمن الماضي الأسبق (Había + Participio) لربط الأحداث السابقة لحدث ماضٍ آخر، ويفهم دلالته التتابعية بدقة مقارنة مع الماضي البسيط.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-pluscuamperfecto-narracion.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-relacionar-tiempos-pasado",
+                  "titleAr": "تناغم أزمنة الماضي الثلاثة في السرد: البسيط والمستمر والأسبق",
+                  "objectiveAr": "أن يربط المتعلم بين أزمنة الماضي الثلاثة (Indefinido, Imperfecto, Pluscuamperfecto) في قصة متماسكة تعكس الظرف والحدث القاطع والحدث الأسبق.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-relacionar-tiempos-pasado.json",
+                  "requires": [
+                    "b1-pluscuamperfecto-narracion"
+                  ]
+                },
+                {
+                  "slug": "b1-marcadores-temporales-relato",
+                  "titleAr": "علامات السرد والربط الزمني: Mientras و De repente و Al final",
+                  "objectiveAr": "أن يستخدم المتعلم الروابط الزمنية المتقدمة في السرد (mientras, de repente, al cabo de, cuando, al final) لتنظيم تسلسل الأحداث وإبراز المفاجأة بدقة وبلاغة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-marcadores-temporales-relato.json",
+                  "requires": [
+                    "b1-relacionar-tiempos-pasado"
+                  ]
+                },
+                {
+                  "slug": "b1-anecdotas-biografias",
+                  "titleAr": "سرد السير والتحولات الشخصية: المحطات الفارقة في مسار الحياة",
+                  "objectiveAr": "أن يسرد المتعلم سيرة ذاتية موجزة أو تجربة مفصلية من حياته، مبيّنًا البدايات، التغيرات، والنتائج بأسلوب متماسك ولغة دقيقة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-anecdotas-biografias.json",
+                  "requires": [
+                    "b1-marcadores-temporales-relato"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u2-opinions",
@@ -910,7 +1905,78 @@
               "objectiveAr": "أن يعبّر المتعلم عن رأيه ويوافق أو يعترض بأدب.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-expresar-opinion-creo-que",
+                  "titleAr": "إبداء الرأي والشك: Creo que مقابل No creo que",
+                  "objectiveAr": "أن يتقن المتعلم التعبير عن الرأي واليقين باستخدام صيغة الإثبات (Creo que + Indicativo) والتعبير عن الشك والإنكار بصيغة النفي (No creo que + Subjuntivo) بدقة لغوية عالية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-expresar-opinion-creo-que.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-subjuntivo-deseos",
+                  "titleAr": "المضارع المنصوب: التعبير عن الرغبات والأمنيات",
+                  "objectiveAr": "أن يصيغ المتعلم صيغة المضارع المنصوب (Presente de Subjuntivo) لأفعال المجموعات الثلاث والشواذ، ويستخدمه في التعبير عن الرغبات والأمنيات مع التراكيب: Quiero que, Ojalá, Espero que.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-subjuntivo-deseos.json",
+                  "requires": [
+                    "b1-expresar-opinion-creo-que"
+                  ]
+                },
+                {
+                  "slug": "b1-por-vs-para",
+                  "titleAr": "التمييز القاطع بين Por و Para للمتعلم العربي",
+                  "objectiveAr": "أن يفرّق المتعلم بدقة تامة بين حرفي الجر Por و Para في جميع سياقات الاستخدام (السبب والدافع مقابل الهدف والغاية، والمدة مقابل الموعد النهائي، والواسطة مقابل المستقبل).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-por-vs-para.json",
+                  "requires": [
+                    "b1-subjuntivo-deseos"
+                  ]
+                },
+                {
+                  "slug": "b1-acuerdo-desacuerdo",
+                  "titleAr": "التعبير عن الاتفاق والاختلاف والتفاوض",
+                  "objectiveAr": "أن يعبّر المتعلم عن الاتفاق الكامل أو الجزئي والاختلاف المهذب في النقاشات الرسمية والاجتماعية باستخدام تعبيرات: Estoy de acuerdo, Tienes razón, No lo veo así, Por una parte... por otra.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-acuerdo-desacuerdo.json",
+                  "requires": [
+                    "b1-por-vs-para"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u3-work",
@@ -918,7 +1984,78 @@
               "objectiveAr": "أن يجري المتعلم مقابلة عمل قصيرة.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-entrevistas-trabajo",
+                  "titleAr": "المقابلات الوظيفية: تقديم المؤهلات والخبرات ونقاط القوة",
+                  "objectiveAr": "أن يقدم المتعلم سيرته ومساره المهني بطلاقة وثقة في مقابلة عمل إسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-entrevistas-trabajo.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-curriculum-competencias",
+                  "titleAr": "السيرة الذاتية والكفاءات: صياغة المهارات والخبرة بلغة احترافية",
+                  "objectiveAr": "أن يكتب المتعلم أقسام سيرته الذاتية باللغة الإسبانية طبقاً للمعايير الأوروبية (Europass).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-curriculum-competencias.json",
+                  "requires": [
+                    "b1-entrevistas-trabajo"
+                  ]
+                },
+                {
+                  "slug": "b1-condiciones-laborales",
+                  "titleAr": "شروط العمل والعقود: الرواتب وساعات الدوام والإجازات والتأمين",
+                  "objectiveAr": "أن يفهم المتعلم بنود عقد العمل الإسباني: contrato indefinido, contrato temporal, periodo de prueba.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-condiciones-laborales.json",
+                  "requires": [
+                    "b1-curriculum-competencias"
+                  ]
+                },
+                {
+                  "slug": "b1-conversacion-profesional",
+                  "titleAr": "حوار احترافي: مناقشة مشروع عمل والتفاوض على المهام والحلول",
+                  "objectiveAr": "أن يشارك المتعلم بفاعلية في اجتماع عمل حقيقي باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-conversacion-profesional.json",
+                  "requires": [
+                    "b1-condiciones-laborales"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u4-study",
@@ -926,7 +2063,78 @@
               "objectiveAr": "أن يصف المتعلم تجربته الدراسية.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-estudios-universidad",
+                  "titleAr": "التعليم الجامعي والدراسات العليا: الكليات والدرجات العلمية والمنح",
+                  "objectiveAr": "أن يصف المتعلم دراسته الأكاديمية والجامعية وتخصصه الدقيق باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-estudios-universidad.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-expresar-duda-probabilidad",
+                  "titleAr": "الشك والاحتمال: قواعد استخدام المنصوب والإخباري مع Quizás و Tal vez و Probablemente",
+                  "objectiveAr": "أن يميز المتعلم بين استخدام المنصوب (Subjuntivo) والإخباري (Indicativo) مع أدوات الشك.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-expresar-duda-probabilidad.json",
+                  "requires": [
+                    "b1-estudios-universidad"
+                  ]
+                },
+                {
+                  "slug": "b1-planes-academicos",
+                  "titleAr": "الخطط الأكاديمية والمستقبلية: التعبير عن النوايا والمشاريع الدراسية",
+                  "objectiveAr": "أن يعبر المتعلم عن مخططاته وطموحاته الأكاديمية والمهنية المستقبلية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-planes-academicos.json",
+                  "requires": [
+                    "b1-expresar-duda-probabilidad"
+                  ]
+                },
+                {
+                  "slug": "b1-debate-educacion",
+                  "titleAr": "مناظرة وحوار: التعليم التقليدي مقابل التعليم عن بُعد والذكاء الاصطناعي",
+                  "objectiveAr": "أن يشارك المتعلم في مناظرة فكرية وأكاديمية حول تحديات التعليم والتكنولوجيا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-debate-educacion.json",
+                  "requires": [
+                    "b1-planes-academicos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u5-independent-travel",
@@ -934,7 +2142,78 @@
               "objectiveAr": "أن يتعامل المتعلم مع مشكلة سفر.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-viajes-imprevistos",
+                  "titleAr": "السفر المستقل والمواقف الطارئة: التعامل مع تأخر الرحلات وفقدان الأمتعة",
+                  "objectiveAr": "أن يصف المتعلم عطلاً أو ظرفاً طارئاً أثناء السفر: avería, retraso, pérdida de equipaje, cancelación.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-viajes-imprevistos.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-reclamaciones-viaje",
+                  "titleAr": "شكاوى السفر والخدمات السياحية: المطالبة بالتعويض وحقوق النزيل",
+                  "objectiveAr": "أن يقدم المتعلم شكوى شفهية أو كتابية واضحة ضد فندق أو شركة طيران أو وكالة سفر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-reclamaciones-viaje.json",
+                  "requires": [
+                    "b1-viajes-imprevistos"
+                  ]
+                },
+                {
+                  "slug": "b1-alojamiento-alternativo",
+                  "titleAr": "أنماط الإقامة البديلة: بيوت الشباب والسياحة الريفية وتبادل المنازل",
+                  "objectiveAr": "أن يقارن المتعلم بين الفنادق التقليدية وخيارات الإقامة البديلة: albergue juvenil, casa rural, intercambio de casas.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-alojamiento-alternativo.json",
+                  "requires": [
+                    "b1-reclamaciones-viaje"
+                  ]
+                },
+                {
+                  "slug": "b1-guia-consejos-viajero",
+                  "titleAr": "دليل المسافر المستقل: نصائح الأمان والميزانية والتنقل الذكي",
+                  "objectiveAr": "أن يقدم المتعلم توصيات وإرشادات سياحية عملية للمسافرين الآخرين مستخدماً المنصوب والأمر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-guia-consejos-viajero.json",
+                  "requires": [
+                    "b1-alojamiento-alternativo"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u6-problems",
@@ -942,7 +2221,78 @@
               "objectiveAr": "أن يقدّم المتعلم شكوى ويطلب حلًا.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-hoja-reclamaciones",
+                  "titleAr": "ورقة الشكاوى الرسمية: حقوق المستهلك وتعبئة النماذج القانونية",
+                  "objectiveAr": "أن يعرف المتعلم الإجراء القانوني لطلب ورقة الشكاوى الرسمية (Hoja de reclamaciones) في إسبانيا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-hoja-reclamaciones.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-expresar-quejas-molestias",
+                  "titleAr": "التعبير عن الاستياء والشكوى: استخدام المنصوب مع Me molesta que و Me indigna que",
+                  "objectiveAr": "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية مع أفعال وعبارات الاستياء والشعور بالضيق.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-expresar-quejas-molestias.json",
+                  "requires": [
+                    "b1-hoja-reclamaciones"
+                  ]
+                },
+                {
+                  "slug": "b1-pedir-soluciones-reparacion",
+                  "titleAr": "طلب الحلول والإصلاح: الضمان الفني واستبدال الأجهزة المعيبة",
+                  "objectiveAr": "أن يطالب المتعلم بتصليح منتج معيب أو استبداله بموجب شهادة الضمان (la garantía).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-pedir-soluciones-reparacion.json",
+                  "requires": [
+                    "b1-expresar-quejas-molestias"
+                  ]
+                },
+                {
+                  "slug": "b1-dialogo-atencion-cliente",
+                  "titleAr": "حوار متكامل: الاتصال بخدمة العملاء وحل نزاع تجاري بفاعلية",
+                  "objectiveAr": "أن يقود المتعلم محادثة حقيقية ناجحة مع قسم خدمة العملاء لحل نزاع تجاري أو تقني.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-dialogo-atencion-cliente.json",
+                  "requires": [
+                    "b1-pedir-soluciones-reparacion"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u7-media",
@@ -950,7 +2300,78 @@
               "objectiveAr": "أن يلخّص المتعلم خبرًا قصيرًا.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-noticias-prensa",
+                  "titleAr": "لغة الصحافة والإعلام: قراءة العناوين وتحليل الأخبار ومصادر المعلومات",
+                  "objectiveAr": "أن يقرأ المتعلم عناوين الصحف والمقالات الإخبارية باللغة الإسبانية ويفهم رسالتها الأساسية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-noticias-prensa.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-estilo-indirecto-presente",
+                  "titleAr": "الكلام المنقول في الحاضر: نقل الأقوال والطلبات والأوامر بـ Dice que",
+                  "objectiveAr": "أن ينقل المتعلم أقوال الآخرين عندما يكون فعل القول في الحاضر (Dice que, Comenta que).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-estilo-indirecto-presente.json",
+                  "requires": [
+                    "b1-noticias-prensa"
+                  ]
+                },
+                {
+                  "slug": "b1-estilo-indirecto-pasado",
+                  "titleAr": "الكلام المنقول في الماضي: توافق الأزمنة وتحولات Dijo que",
+                  "objectiveAr": "أن يطبق المتعلم قواعد توافق الأزمنة (Correlación de tiempos) عندما يكون فعل القول في الماضي (Dijo que, Aseguró que).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-estilo-indirecto-pasado.json",
+                  "requires": [
+                    "b1-estilo-indirecto-presente"
+                  ]
+                },
+                {
+                  "slug": "b1-cronica-periodistica",
+                  "titleAr": "صياغة التقرير والخبر الصحفي: السرد الإخباري الموضوعي ونقل الشهادات",
+                  "objectiveAr": "أن يكتب المتعلم خبراً أو تقريراً صحفياً موجزاً يجيب عن الأسئلة الصحفية الكبرى: ¿Quién? ¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué? ¿Cómo?.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-cronica-periodistica.json",
+                  "requires": [
+                    "b1-estilo-indirecto-pasado"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u8-health-lifestyle",
@@ -958,7 +2379,78 @@
               "objectiveAr": "أن يناقش المتعلم عادات صحية.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-habitos-saludables",
+                  "titleAr": "العادات الصحية والحمية المتوسطية: التغذية السليمة والنشاط البدني",
+                  "objectiveAr": "أن يصف المتعلم عاداته الغذائية والبدنية بدقة ومصطلحات متقدمة باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-habitos-saludables.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-subjuntivo-recomendaciones",
+                  "titleAr": "المنصوب في التوجيهات الطبية: Es aconsejable que و Te recomiendo que",
+                  "objectiveAr": "أن يطبق المتعلم صيغة المنصوب (Subjuntivo) بدقة مع التراكيب التقييمية غير الشخصية (Es importante que, Es conveniente que).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-subjuntivo-recomendaciones.json",
+                  "requires": [
+                    "b1-habitos-saludables"
+                  ]
+                },
+                {
+                  "slug": "b1-bienestar-emocional",
+                  "titleAr": "الصحة النفسية والعاطفية: إدارة التوتر والقلق وفصل الذهن عن العمل",
+                  "objectiveAr": "أن يعبر المتعلم عن حالته النفسية والعاطفية ومصادر الضغط اليومي باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-bienestar-emocional.json",
+                  "requires": [
+                    "b1-subjuntivo-recomendaciones"
+                  ]
+                },
+                {
+                  "slug": "b1-consulta-especialista",
+                  "titleAr": "استشارة الأخصائي: الحوار الطبي المعمق في التغذية والعلاج الطبيعي",
+                  "objectiveAr": "أن يجري المتعلم حواراً متقدماً مع طبيب أخصائي (especialista / nutricionista / fisioterapeuta).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-consulta-especialista.json",
+                  "requires": [
+                    "b1-bienestar-emocional"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u9-relationships",
@@ -966,7 +2458,78 @@
               "objectiveAr": "أن يصف المتعلم علاقات اجتماعية.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-relaciones-personales",
+                  "titleAr": "العلاقات الإنسانية والروابط الاجتماعية: الصداقة والانسجام والتعاطف",
+                  "objectiveAr": "أن يصف المتعلم طبيعة علاقاته الشخصية والمهنية مع الآخرين بأسلوب غني ودقيق.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-relaciones-personales.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-subjuntivo-sentimientos",
+                  "titleAr": "المنصوب مع أفعال المشاعر والعواطف: Me alegra que و Temo que و Me da pena que",
+                  "objectiveAr": "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية بعد أفعال وعبارات المشاعر والعواطف.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-subjuntivo-sentimientos.json",
+                  "requires": [
+                    "b1-relaciones-personales"
+                  ]
+                },
+                {
+                  "slug": "b1-ojala-deseos",
+                  "titleAr": "أسلوب التمني والدعاء: استخدام Ojalá و Deseo que مع المنصوب",
+                  "objectiveAr": "أن يطبق المتعلم أسلوب التمني بأداة ¡Ojalá! وصيغ المنصوب المرتبطة بها.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-ojala-deseos.json",
+                  "requires": [
+                    "b1-subjuntivo-sentimientos"
+                  ]
+                },
+                {
+                  "slug": "b1-conflictos-convivencia",
+                  "titleAr": "حل الخلافات والاعتذار والتصالح: الحوار البنّاء والتفاهم في السكن المشترك",
+                  "objectiveAr": "أن يقود المتعلم حواراً هادئاً لحل سوء تفاهم أو خلاف بين الأصدقاء أو رفقاء السكن.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-conflictos-convivencia.json",
+                  "requires": [
+                    "b1-ojala-deseos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b1-u10-writing-basics",
@@ -974,7 +2537,78 @@
               "objectiveAr": "أن يكتب المتعلم رسالة أو طلبًا قصيرًا.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b1-conectores-discursivos",
+                  "titleAr": "أدوات الربط المنطقي: مهارات تنظيم النص بـ Sin embargo و Por lo tanto و No obstante",
+                  "objectiveAr": "أن يوظف المتعلم روابط الخطاب المتقدمة للربط المنطقي بين الجمل والفقرات باللغة الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-conectores-discursivos.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b1-carta-formal-correo",
+                  "titleAr": "الرسائل والبريد الإلكتروني الرسمي: أصول المكاتبات الإدارية والأكاديمية",
+                  "objectiveAr": "أن يكتب المتعلم رسالة بريد إلكتروني رسمية (correo formal) موجهة لجامعة أو شركة أو إدارة حكومية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-carta-formal-correo.json",
+                  "requires": [
+                    "b1-conectores-discursivos"
+                  ]
+                },
+                {
+                  "slug": "b1-agradecimiento-disculpa",
+                  "titleAr": "رسائل الشكر والاعتذار المهني: الصياغة الراقية في بيئة العمل والمؤسسات",
+                  "objectiveAr": "أن يكتب المتعلم رسالة شكر رسمية ومهنية تعبر عن الامتنان لحسن التعاون والدعم.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-agradecimiento-disculpa.json",
+                  "requires": [
+                    "b1-carta-formal-correo"
+                  ]
+                },
+                {
+                  "slug": "b1-redaccion-argumentativa",
+                  "titleAr": "صياغة مقال الرأي: بناء الحجة المنطقية، الاستشهاد، وخاتمة التوصيات",
+                  "objectiveAr": "أن يكتب المتعلم مقال رأي متماسكاً ومنطقياً باللغة الإسبانية من أربع إلى خمس فقرات.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B1",
+                  "filePath": "content/drafts/b1/lesson-b1-redaccion-argumentativa.json",
+                  "requires": [
+                    "b1-agradecimiento-disculpa"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -990,7 +2624,78 @@
               "objectiveAr": "أن يبني المتعلم حجة مدعومة بأمثلة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-condicional-imperfecto-subjuntivo",
+                  "titleAr": "الجمل الشرطية الافتراضية: Si + Imperfecto de Subjuntivo",
+                  "objectiveAr": "أن يتقن المتعلم صياغة واستخدام الجمل الشرطية الافتراضية غير المتحققة في الحاضر (المقابلة لأداة «لو» الامتناعية في العربية) بتركيب: Si + Imperfecto de Subjuntivo -> Condicional Simple.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-condicional-imperfecto-subjuntivo.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-conectores-argumentativos",
+                  "titleAr": "روابط الخطاب والمحاجة: Sin embargo و No obstante",
+                  "objectiveAr": "أن يستخدم المتعلم الروابط الحجاجية المتقدمة (Sin embargo, No obstante, En cambio, Por lo tanto, A pesar de que) لتنظيم الأفكار المعقدة والرد على الحجج المضادة في مقال أو نقاش أكاديمي ومهني.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-conectores-argumentativos.json",
+                  "requires": [
+                    "b2-condicional-imperfecto-subjuntivo"
+                  ]
+                },
+                {
+                  "slug": "b2-matizar-opiniones",
+                  "titleAr": "تعديل الرأي والتحفظ الدبلوماسي: Matizar opiniones",
+                  "objectiveAr": "أن يستخدم المتعلم أساليب تعديل الرأي والتحفظ الدبلوماسي (Hasta cierto punto, En parte es verdad, Cabría añadir) لتجنب القطع الجازم في النقاشات الفكرية والمهنية الرفيعة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-matizar-opiniones.json",
+                  "requires": [
+                    "b2-conectores-argumentativos"
+                  ]
+                },
+                {
+                  "slug": "b2-contraargumentacion",
+                  "titleAr": "فن الرد والاعتراض المقنع: La Contraargumentación",
+                  "objectiveAr": "أن يبني المتعلم حجة مضادة مقنعة باستخدام تقنية التسليم الجزئي للخصم ثم الرد الحاسم (Si bien es cierto que... no obstante / Es verdad que... pero) في الحوارات والمقالات الجدلية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-contraargumentacion.json",
+                  "requires": [
+                    "b2-matizar-opiniones"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u2-news",
@@ -998,7 +2703,78 @@
               "objectiveAr": "أن يحلّل المتعلم نصًا إخباريًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-analisis-prensa-editorial",
+                  "titleAr": "تحليل الصحافة والافتتاحيات: نبرة المقال والخطاب الإخباري",
+                  "objectiveAr": "أن يحلل المتعلم المقال الافتتاحي ويفكك موقفه الضمني ونبرته النقدية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-analisis-prensa-editorial.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-pasiva-periodistica-se",
+                  "titleAr": "أسلوب المبني للمجهول الصحفي: Pasiva con Ser و Pasiva Refleja",
+                  "objectiveAr": "أن يتقن المتعلم صياغة المبني للمجهول التام (Ser + participio) في نقل الأخبار المكتملة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-pasiva-periodistica-se.json",
+                  "requires": [
+                    "b2-analisis-prensa-editorial"
+                  ]
+                },
+                {
+                  "slug": "b2-hechos-vs-opiniones",
+                  "titleAr": "التمييز بين الحقائق والآراء: الموضوعية والتلاعب الدلالي",
+                  "objectiveAr": "أن يفرز المتعلم بين البيانات القابلة للإثبات (Hechos) والأحكام التقديرية (Opiniones).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-hechos-vs-opiniones.json",
+                  "requires": [
+                    "b2-pasiva-periodistica-se"
+                  ]
+                },
+                {
+                  "slug": "b2-entrevista-periodistica",
+                  "titleAr": "إجراء المقابلة الصحفية: نقل التصريحات وصياغة الأسئلة الذكية",
+                  "objectiveAr": "أن يوجه المتعلم أسئلة صحفية ذكية ودبلوماسية ومحرجة بلباقة لشخصيات مسؤولة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-entrevista-periodistica.json",
+                  "requires": [
+                    "b2-hechos-vs-opiniones"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u3-literature",
@@ -1006,7 +2782,78 @@
               "objectiveAr": "أن يقرأ المتعلم نصًا أدبيًا قصيرًا ويحلّله.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-literatura-narrativa-contemporanea",
+                  "titleAr": "السرد الأدبي المعاصر: فهم النصوص وعوالم الرواية",
+                  "objectiveAr": "أن يقرأ المتعلم نصوصاً أدبية من الأدب الإسباني واللاتيني ويفهم دلالاتها العميقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-literatura-narrativa-contemporanea.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-metaforas-recursos-literarios",
+                  "titleAr": "الاستعارة والصور البلاغية: التعبير المجازي والأدبي الرفيع",
+                  "objectiveAr": "أن يتعرف المتعلم على الصور البلاغية الرئيسية: metáfora, símil, personificación, hipérbole.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-metaforas-recursos-literarios.json",
+                  "requires": [
+                    "b2-literatura-narrativa-contemporanea"
+                  ]
+                },
+                {
+                  "slug": "b2-analisis-personajes-relato",
+                  "titleAr": "تحليل الشخصيات في القصة: البعد النفسي والصراع الداخلي",
+                  "objectiveAr": "أن يحلل المتعلم الأبعاد النفسية والأخلاقية للشخصية الروائية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-analisis-personajes-relato.json",
+                  "requires": [
+                    "b2-metaforas-recursos-literarios"
+                  ]
+                },
+                {
+                  "slug": "b2-expresion-estetica-emociones",
+                  "titleAr": "التعبير الجمالي عن المشاعر: لغة الوجدان في الأدب",
+                  "objectiveAr": "أن يوظف المتعلم معجماً عاطفياً أدبياً رفيعاً يتجاوز التعبيرات البسيطة المباشرة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-expresion-estetica-emociones.json",
+                  "requires": [
+                    "b2-analisis-personajes-relato"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u4-professional",
@@ -1014,7 +2861,78 @@
               "objectiveAr": "أن يشارك المتعلم في اجتماع عمل.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-gestion-reuniones-orden-dia",
+                  "titleAr": "إدارة الاجتماعات المهنية: جدول الأعمال وتوزيع المداخلات",
+                  "objectiveAr": "أن يدير المتعلم اجتماع عمل بالإسبانية من الافتتاح وحتى إقرار التوصيات.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-gestion-reuniones-orden-dia.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-informes-ejecutivos-kpis",
+                  "titleAr": "التقارير التنفيذية ومؤشرات الأداء: صياغة النتائج والتوصيات",
+                  "objectiveAr": "أن يصيغ المتعلم تقريراً تنفيذياً موجزاً يقدم الحقائق والنتائج بالأرقام.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-informes-ejecutivos-kpis.json",
+                  "requires": [
+                    "b2-gestion-reuniones-orden-dia"
+                  ]
+                },
+                {
+                  "slug": "b2-correspondencia-corporativa",
+                  "titleAr": "المراسلات المؤسسية والبريد التجاري الرفيع: لغة الأعمال الرسمية",
+                  "objectiveAr": "أن يكتب المتعلم بريداً إلكترونياً تجارياً رسمياً (B2B) يتسم بالدقة واللباقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-correspondencia-corporativa.json",
+                  "requires": [
+                    "b2-informes-ejecutivos-kpis"
+                  ]
+                },
+                {
+                  "slug": "b2-resolucion-conflictos-laborales",
+                  "titleAr": "حل النزاعات المؤسسية وإدارة فرق العمل: الوساطة والتفاهم",
+                  "objectiveAr": "أن يتدخل المتعلم كوسيط لحل سوء التفاهم والنزاع بين أعضاء فريق العمل.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-resolucion-conflictos-laborales.json",
+                  "requires": [
+                    "b2-correspondencia-corporativa"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u5-academic",
@@ -1022,7 +2940,78 @@
               "objectiveAr": "أن يكتب المتعلم فقرة أكاديمية منظمة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-estructura-ensayo-academico",
+                  "titleAr": "هيكل المقال والبحث الأكاديمي: الأطروحة والبرهان المنهجي",
+                  "objectiveAr": "أن يركب المتعلم هيكلاً أكاديمياً متكاملاً لمقال بحثي (مقدمة، فرضية، عرض، استنتاج).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-estructura-ensayo-academico.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-citacion-fuentes-academicas",
+                  "titleAr": "أدوات الاستشهاد ونقل آراء الباحثين: التوثيق والأمانة العلمية",
+                  "objectiveAr": "أن ينقل المتعلم آراء المفكرين والباحثين بدقة مستخدماً أفعال الإحالة الأكاديمية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-citacion-fuentes-academicas.json",
+                  "requires": [
+                    "b2-estructura-ensayo-academico"
+                  ]
+                },
+                {
+                  "slug": "b2-conectores-causa-efecto-avanzados",
+                  "titleAr": "الروابط السببية والاستنتاجية المتقدمة: بناء النسق البراهيني",
+                  "objectiveAr": "أن يوظف المتعلم روابط سببية واستنتاجية راقية تتجاوز porque و por eso البسيطة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-conectores-causa-efecto-avanzados.json",
+                  "requires": [
+                    "b2-citacion-fuentes-academicas"
+                  ]
+                },
+                {
+                  "slug": "b2-resumen-conclusiones-investigacion",
+                  "titleAr": "ملخص البحث والاستنتاجات: صياغة التوصيات وآفاق المستقبل",
+                  "objectiveAr": "أن يحرر المتعلم ملخصاً أكاديمياً مكثفاً (Abstract) يعكس جوهر البحث في 150-200 كلمة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-resumen-conclusiones-investigacion.json",
+                  "requires": [
+                    "b2-conectores-causa-efecto-avanzados"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u6-negotiation",
@@ -1030,7 +3019,78 @@
               "objectiveAr": "أن يتفاوض المتعلم ويقنع بحجج.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-estrategias-negociacion-comercial",
+                  "titleAr": "استراتيجيات التفاوض التجاري: تقديم العروض وبدائل الاتفاق",
+                  "objectiveAr": "أن يفتتح المتعلم جولة مفاوضات تجارية ويحدد سقوف التفاوض والبدائل الممكنة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-estrategias-negociacion-comercial.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-concesiones-condiciones-mutuas",
+                  "titleAr": "التنازلات والشروط المتبادلة: مقايضة المصالح في التفاوض",
+                  "objectiveAr": "أن يقايض المتعلم التنازلات بذكاء: لا تنازل دون مقابل ملموس في المقابل.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-concesiones-condiciones-mutuas.json",
+                  "requires": [
+                    "b2-estrategias-negociacion-comercial"
+                  ]
+                },
+                {
+                  "slug": "b2-persuasion-manejo-objeciones",
+                  "titleAr": "أساليب الإقناع والتعامل مع الاعتراضات: اللباقة وإعادة التأطير",
+                  "objectiveAr": "أن يمتص المتعلم اعتراضات العميل حول السعر أو الوقت ويعيد تأطيرها إيجابياً.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-persuasion-manejo-objeciones.json",
+                  "requires": [
+                    "b2-concesiones-condiciones-mutuas"
+                  ]
+                },
+                {
+                  "slug": "b2-acuerdo-clausulas-contractuales",
+                  "titleAr": "صياغة الاتفاقيات والبنود التعاقدية: اللغة القانونية والتثبيت النهائي",
+                  "objectiveAr": "أن يقرأ المتعلم عقداً تجارياً إسبانياً ويفهم بنوده والتزاماته القانونية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-acuerdo-clausulas-contractuales.json",
+                  "requires": [
+                    "b2-persuasion-manejo-objeciones"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u7-environment",
@@ -1038,7 +3098,78 @@
               "objectiveAr": "أن يناقش المتعلم قضايا مجتمعية.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-cambio-climatico-sostenibilidad",
+                  "titleAr": "التغير المناخي والاستدامة: التحديات البيئية الكبرى",
+                  "objectiveAr": "أن يناقش المتعلم قضايا الاحتباس الحراري والتدهور البيئي بلغة علمية دقيقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-cambio-climatico-sostenibilidad.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-politicas-ambientales-subjuntivo",
+                  "titleAr": "السياسات البيئية والتوصيات: صياغة اللوائح واستخدام المنصوب",
+                  "objectiveAr": "أن يصيغ المتعلم توصيات ولوائح تشريعية لحماية البيئة بأسلوب قانوني رصين.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-politicas-ambientales-subjuntivo.json",
+                  "requires": [
+                    "b2-cambio-climatico-sostenibilidad"
+                  ]
+                },
+                {
+                  "slug": "b2-transformacion-social-demografia",
+                  "titleAr": "التحولات المجتمعية والديموغرافية: الشيخوخة والهجرة والريف المهجور",
+                  "objectiveAr": "أن يحلل المتعلم الظواهر الديموغرافية الكبرى في المجتمع الإسباني والأوروبي المعاصر.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-transformacion-social-demografia.json",
+                  "requires": [
+                    "b2-politicas-ambientales-subjuntivo"
+                  ]
+                },
+                {
+                  "slug": "b2-debate-energia-desarrollo",
+                  "titleAr": "مناظرة بيئية: الطاقة المتجددة مقابل التنمية والنمو الاقتصادي",
+                  "objectiveAr": "أن يشارك المتعلم في مناظرة متقدمة حول مزايا وعيوب مصادر الطاقة المختلفة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-debate-energia-desarrollo.json",
+                  "requires": [
+                    "b2-transformacion-social-demografia"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u8-presentations",
@@ -1046,7 +3177,78 @@
               "objectiveAr": "أن يقدّم المتعلم عرضًا قصيرًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-apertura-presentacion-audiencia",
+                  "titleAr": "افتتاح العرض التقديمي: كسر الجليد وجذب انتباه الجمهور",
+                  "objectiveAr": "أن يفتتح المتعلم عرضاً تقديمياً أمام الجمهور بأسلوب واثق ومحترف.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-apertura-presentacion-audiencia.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-descripcion-graficos-tendencias",
+                  "titleAr": "شرح الرسوم البيانية والإحصائيات: لغة الأرقام والاتجاهات",
+                  "objectiveAr": "أن يصف المتعلم رسوماً بيانية وجداول إحصائية بدقة وسلاسة أمام الجمهور.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-descripcion-graficos-tendencias.json",
+                  "requires": [
+                    "b2-apertura-presentacion-audiencia"
+                  ]
+                },
+                {
+                  "slug": "b2-gestion-preguntas-respuestas",
+                  "titleAr": "إدارة فقرة الأسئلة والأجوبة: اللباقة وإعادة توجيه الاستفسارات",
+                  "objectiveAr": "أن يدير المتعلم جولة الأسئلة والأجوبة (Turno de preguntas) بكفاءة وكياسة تامة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-gestion-preguntas-respuestas.json",
+                  "requires": [
+                    "b2-descripcion-graficos-tendencias"
+                  ]
+                },
+                {
+                  "slug": "b2-conclusion-llamada-accion",
+                  "titleAr": "خاتمة العرض والدعوة للعمل: ترك أثر باقٍ لدى الجمهور",
+                  "objectiveAr": "أن يختتم المتعلم عرضه التقديمي بخاتمة ملهمة وقوية لا تُنسى.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-conclusion-llamada-accion.json",
+                  "requires": [
+                    "b2-gestion-preguntas-respuestas"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u9-formal-writing",
@@ -1054,7 +3256,78 @@
               "objectiveAr": "أن يكتب المتعلم بريدًا رسميًا.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-reclamaciones-juridicas-instancias",
+                  "titleAr": "العرائض الرسمية والشكاوى القانونية: مخاطبة الإدارات الحكومية",
+                  "objectiveAr": "أن يحرر المتعلم عريضة رسمية (Instancia administrativa) متوافقة مع الإجراءات القانونية الإسبانية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-reclamaciones-juridicas-instancias.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-carta-motivacion-becas-empleo",
+                  "titleAr": "خطاب الدافع للمنح والوظائف العليا: التميز وإبراز القيمة",
+                  "objectiveAr": "أن يحرر المتعلم خطاب دافع (Carta de motivación) مقنعاً وتنافسياً لطلب منحة أو وظيفة عليا.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-carta-motivacion-becas-empleo.json",
+                  "requires": [
+                    "b2-reclamaciones-juridicas-instancias"
+                  ]
+                },
+                {
+                  "slug": "b2-comunicacion-institucional-diplomatica",
+                  "titleAr": "التواصل المؤسسي والدبلوماسي: مخاطبة الهيئات الرسمية والسفارات",
+                  "objectiveAr": "أن يكتب المتعلم مذكرة رسمية أو خطاباً بروتوكولياً موجهاً لهيئة دبلوماسية أو دستورية.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-comunicacion-institucional-diplomatica.json",
+                  "requires": [
+                    "b2-carta-motivacion-becas-empleo"
+                  ]
+                },
+                {
+                  "slug": "b2-formulas-protocolarias-cierre",
+                  "titleAr": "الصيغ الختامية والتوقيع: أصول التوثيق والمراسلات الإدارية",
+                  "objectiveAr": "أن يختار المتعلم الصيغة الختامية الدقيقة المطابقة لمقام المرسل إليه وسياق الخطاب.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-formulas-protocolarias-cierre.json",
+                  "requires": [
+                    "b2-comunicacion-institucional-diplomatica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "b2-u10-culture-deep",
@@ -1062,7 +3335,78 @@
               "objectiveAr": "أن يميّز المتعلم الفروق الإقليمية في اللغة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "b2-variedades-linguisticas-hispanas",
+                  "titleAr": "التنوع اللغوي في العالم الإسباني: اللهجات والفروق المعجمية",
+                  "objectiveAr": "أن يتعرف المتعلم على الفروق الصوتية والنحوية الكبرى في العالم الإسباني (Seseo, Ceceo, Voseo).",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-variedades-linguisticas-hispanas.json",
+                  "requires": []
+                },
+                {
+                  "slug": "b2-comunicacion-no-verbal-gestos",
+                  "titleAr": "التواصل غير اللفظي ولغة الجسد: الإشارات والمسافات المكانية",
+                  "objectiveAr": "أن يفسر المتعلم الإشارات الجسدية الشائعة في إسبانيا وأمريكا اللاتينية بدقة.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-comunicacion-no-verbal-gestos.json",
+                  "requires": [
+                    "b2-variedades-linguisticas-hispanas"
+                  ]
+                },
+                {
+                  "slug": "b2-patrimonio-cultural-inmaterial",
+                  "titleAr": "التراث الثقافي اللامادي والاحتفالات الكبرى: الهوية والتاريخ",
+                  "objectiveAr": "أن يحلل المتعلم عناصر التراث الثقافي غير المادي في إسبانيا والعالم اللاتيني المعترف بها دولياً من اليونسكو.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-patrimonio-cultural-inmaterial.json",
+                  "requires": [
+                    "b2-comunicacion-no-verbal-gestos"
+                  ]
+                },
+                {
+                  "slug": "b2-choque-cultural-integracion",
+                  "titleAr": "الصدام الثقافي والاندماج: التكيف والانفتاح على التنوع",
+                  "objectiveAr": "أن يحلل المتعلم مراحل التكيف مع الثقافة الإسبانية الجديدة وتجاوز الصدمة الثقافية الأولى.",
+                  "skills": [
+                    "vocabulary",
+                    "reading",
+                    "grammar",
+                    "listening",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "B2",
+                  "filePath": "content/drafts/b2/lesson-b2-choque-cultural-integracion.json",
+                  "requires": [
+                    "b2-patrimonio-cultural-inmaterial"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1078,7 +3422,76 @@
               "objectiveAr": "أن يحسّن المتعلم دقة اختياره اللغوي.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-precision-estilistica",
+                  "titleAr": "الدقة الأسلوبية: اختيار الأفعال النوعية بدل الأفعال العامة",
+                  "objectiveAr": "أن يستبدل المتعلم الأفعال العامة الخالية من الدلالة الدقيقة (مثل hacer, tener, decir, poner) بأفعال فصيحة نوعية تعبر عن المقصد بدقة بالغة في السياقات الأكاديمية والمهنية الرفيعة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-precision-estilistica.json",
+                  "requires": []
+                },
+                {
+                  "slug": "c1-nominalizacion",
+                  "titleAr": "التكثيف الأسلوبي: البناء بالمصادر والأسماء (La Nominalización)",
+                  "objectiveAr": "أن يتقن المتعلم تقنية التكثيف الأسلوبي عبر تحويل التراكيب الفعلية الطويلة إلى مصادر وأسماء نوعية (Nominalización) لرفع الكثافة المعجمية ورصانة النص في الكتابة الأكاديمية والرسمية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-nominalizacion.json",
+                  "requires": [
+                    "c1-precision-estilistica"
+                  ]
+                },
+                {
+                  "slug": "c1-refranes-modismos",
+                  "titleAr": "التعبيرات الاصطلاحية والأمثال في السياق الحي",
+                  "objectiveAr": "أن يفهم المتعلم ويوظف أشهر الأمثال والتعبيرات المجازية الإسبانية الأصيلة (Estar en las nubes, No tener pelos en la lengua, Dar en el clavo, Tomar el pelo) مع إدراك مقابلاتها الثقافية في العربية.",
+                  "skills": [
+                    "reading",
+                    "listening",
+                    "vocabulary",
+                    "speaking"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-refranes-modismos.json",
+                  "requires": [
+                    "c1-nominalizacion"
+                  ]
+                },
+                {
+                  "slug": "c1-correspondencia-formal",
+                  "titleAr": "المراسلات الرسمية والبروتوكول الأكاديمي والمهني",
+                  "objectiveAr": "أن يحرر المتعلم خطابًا رسميًا أو بريدًا إلكترونيًا أكاديميًا متقنًا مستخدمًا ديباجات الافتتاح الرسمية وصيغ الطلب المهذب وخواتيم الاحترام والتقدير البروتوكولية المتعارف عليها في إسبانيا وأمريكا اللاتينية.",
+                  "skills": [
+                    "writing",
+                    "reading",
+                    "grammar",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-correspondencia-formal.json",
+                  "requires": [
+                    "c1-refranes-modismos"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u2-idioms",
@@ -1086,7 +3499,80 @@
               "objectiveAr": "أن يستخدم المتعلم تعبيرات اصطلاحية شائعة.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-locuciones-adverbiales",
+                  "titleAr": "العبارات الظرفية البليغة في الخطاب الرفيع: Locuciones adverbiales",
+                  "objectiveAr": "أن يوظف المتعلم العبارات الظرفية الدقيقة (por ende, a regañadientes, a ciencia cierta, de cabo a rabo) لربط الأفكار وبيان الكيفية في سياقات راقية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-locuciones-adverbiales.json",
+                  "requires": [
+                    "c1-correspondencia-formal"
+                  ]
+                },
+                {
+                  "slug": "c1-modismos-cultos",
+                  "titleAr": "المجازات الاصطلاحية الراقية: Modismos cultos y metáforas vivas",
+                  "objectiveAr": "أن يفهم المتعلم ويوظف الكنايات الراقية في الخطاب الصحفي والفكري (poner el dedo en la llaga, marear la perdiz, hacer la vista gorda).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-modismos-cultos.json",
+                  "requires": [
+                    "c1-locuciones-adverbiales"
+                  ]
+                },
+                {
+                  "slug": "c1-refranes-pensamiento",
+                  "titleAr": "الأمثال التراثية وحكمة الشعوب: Refranes y pensamiento popular",
+                  "objectiveAr": "أن يستوعب المتعلم العمق الفلسفي والتاريخي للأمثال الإسبانية الكبرى ويستخدمها بإيجاز وبلاغة في الخطاب الثقافي.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-refranes-pensamiento.json",
+                  "requires": [
+                    "c1-modismos-cultos"
+                  ]
+                },
+                {
+                  "slug": "c1-metaforas-vida-cultura",
+                  "titleAr": "الاستعارة الحية في الصحافة والفكر: Metáforas en el debate público",
+                  "objectiveAr": "أن يحلل المتعلم ويوظف الاستعارات الكبرى في النقد الفكري والسياسي (talón de Aquiles, navegar contra corriente, poner una pica en Flandes).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-metaforas-vida-cultura.json",
+                  "requires": [
+                    "c1-refranes-pensamiento"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u3-academic-discourse",
@@ -1094,7 +3580,80 @@
               "objectiveAr": "أن يفهم المتعلم ويُنتج خطابًا أكاديميًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-conectores-metadiscursivos",
+                  "titleAr": "روابط الخطاب الفوقي وتنظيم الأطروحة: Conectores metadiscursivos",
+                  "objectiveAr": "أن يستخدم المتعلم الروابط الأكاديمية الرفيعة (en lo tocante a, cabe puntualizar que, a mayor abundamiento) لبناء مقال علمي متماسك.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-conectores-metadiscursivos.json",
+                  "requires": [
+                    "c1-metaforas-vida-cultura"
+                  ]
+                },
+                {
+                  "slug": "c1-refutacion-dialectica",
+                  "titleAr": "الدحض والمناظرة الفكرية: Refutación dialéctica y contraargumentación",
+                  "objectiveAr": "أن يفند المتعلم الحجج المضادة ويكشف التهافت المنهجي والمغالطات المنطقية (falacia, rebatir, desarticular, carecer de sustento).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-refutacion-dialectica.json",
+                  "requires": [
+                    "c1-conectores-metadiscursivos"
+                  ]
+                },
+                {
+                  "slug": "c1-atenuacion-academica",
+                  "titleAr": "التلطيف والتحفظ المنهجي: La atenuación y el 'hedging' académico",
+                  "objectiveAr": "أن يصيغ المتعلم الأحكام النقدية باعتدال وتواضع علمي باستخدام أساليب التلطيف (cabría sugerir, parecería prudente, los datos apuntan a).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-atenuacion-academica.json",
+                  "requires": [
+                    "c1-refutacion-dialectica"
+                  ]
+                },
+                {
+                  "slug": "c1-ponencias-congresos",
+                  "titleAr": "إدارة الندوات وإلقاء الأوراق العلمية: Ponencias y congresos internacionales",
+                  "objectiveAr": "أن يقدم المتعلم ورقة بحثية في مؤتمر دولي ويدير حوار الأسئلة والمناقشة بروتوكولياً (inaugurar, ceder la palabra, someter a debate).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-ponencias-congresos.json",
+                  "requires": [
+                    "c1-atenuacion-academica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u4-literature",
@@ -1102,7 +3661,80 @@
               "objectiveAr": "أن يحلّل المتعلم نصًا أدبيًا نقديًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-siglo-de-oro",
+                  "titleAr": "العصر الذهبي وبلاغة الباروك: El Siglo de Oro y la retórica barroca",
+                  "objectiveAr": "أن يتذوق المتعلم ويحلل نصوص الأدب الإسباني الكلاسيكي مفرّقاً بين مذهب المعنى (Conceptismo) ومذهب الزخرف (Culteranismo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-siglo-de-oro.json",
+                  "requires": [
+                    "c1-ponencias-congresos"
+                  ]
+                },
+                {
+                  "slug": "c1-generacion-del-27",
+                  "titleAr": "جيل 27 وشعرية الطليعة: La Generación del 27 y la metáfora lorquiana",
+                  "objectiveAr": "أن يحلل المتعلم شعرية الطليعة الإسبانية مبيناً التوفيق العبقري بين التراث الأندلسي الشعبي والتجديد السريالي عند لوركا وسيرنوذا.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-generacion-del-27.json",
+                  "requires": [
+                    "c1-siglo-de-oro"
+                  ]
+                },
+                {
+                  "slug": "c1-realismo-magico",
+                  "titleAr": "الواقعية السحرية وأدب أمريكا اللاتينية: El realismo mágico y la identidad mestiza",
+                  "objectiveAr": "أن يحلل المتعلم التقنيات الروائية لـ'الواقعية السحرية' في أدب غابرييل غارسيا ماركيز ورولفو، مبيناً تطبيع الخارق وتفكيك الزمن الخطي.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-realismo-magico.json",
+                  "requires": [
+                    "c1-generacion-del-27"
+                  ]
+                },
+                {
+                  "slug": "c1-critica-ensayo",
+                  "titleAr": "المقال الفكري والتحليل الهيرمينوطيقي: El ensayo crítico y la hermenéutica",
+                  "objectiveAr": "أن يحلل المتعلم نصوص المقال الفلسفي والنقدي كاشفاً البنى المضمرة والأبعاد التأويلية والتناص (hermenéutica, intertextualidad, subtexto).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-critica-ensayo.json",
+                  "requires": [
+                    "c1-realismo-magico"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u5-regional",
@@ -1110,7 +3742,80 @@
               "objectiveAr": "أن يميّز المتعلم الفروق المعجمية والنطقية.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-voseo-variacion",
+                  "titleAr": "ظاهرة الـ Voseo وتنوع صيغ الخطاب: El voseo y las fórmulas de tratamiento",
+                  "objectiveAr": "أن يستوعب المتعلم الفروق الصرفية والاجتماعية لظاهرة الـ Voseo في حوض ريو دي لا بلاتا وأمريكا الوسطى، ويتقن التحويل الدقيق بين صيغ tuteo و voseo.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-voseo-variacion.json",
+                  "requires": [
+                    "c1-critica-ensayo"
+                  ]
+                },
+                {
+                  "slug": "c1-americanismos-lexicos",
+                  "titleAr": "المفردات الأمريكية اللاتينية في السجل الرفيع: Americanismos léxicos cultos",
+                  "objectiveAr": "أن يميز المتعلم المفردات الأمريكية الشائعة في الأدب والصحافة المرموقة (platicar, manejar, celular, plata, chévere, acervo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-americanismos-lexicos.json",
+                  "requires": [
+                    "c1-voseo-variacion"
+                  ]
+                },
+                {
+                  "slug": "c1-prosodia-fonetica",
+                  "titleAr": "الصوتيات والتنغيم: Prosodia, seseo y yeísmo en el mundo hispánico",
+                  "objectiveAr": "أن يفهم المتعلم الظواهر الصوتية الكبرى (el seseo, la distinción, el yeísmo rehilado, la aspiración de la esse) ويتعرف على تنغيم اللهجات المختلفة.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-prosodia-fonetica.json",
+                  "requires": [
+                    "c1-americanismos-lexicos"
+                  ]
+                },
+                {
+                  "slug": "c1-espanol-neutro",
+                  "titleAr": "الإسبانية المحايدة والترجمة الدولية: El español neutro e internacional",
+                  "objectiveAr": "أن يفهم المتعلم معايير 'الإسبانية المحايدة' في الدبلجة العالمية والإعلام العابر للحدود، ومبادئ السياسة اللغوية للـ RAE و ASALE.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-espanol-neutro.json",
+                  "requires": [
+                    "c1-prosodia-fonetica"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u6-translation",
@@ -1118,7 +3823,80 @@
               "objectiveAr": "أن يترجم المتعلم نصوصًا قصيرة بوعي بالمقاييس.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-falsos-amigos-avanzados",
+                  "titleAr": "النظائر الخادعة والأخطاء الشائعة في الترجمة: Falsos amigos avanzados",
+                  "objectiveAr": "أن يتجنب المتعلم الفخاخ المعجمية للنظائر الخادعة (constipado, pretender, realizar, soportar, eventual) عند الترجمة من وإلى الإسبانية.",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-falsos-amigos-avanzados.json",
+                  "requires": [
+                    "c1-espanol-neutro"
+                  ]
+                },
+                {
+                  "slug": "c1-traduccion-juridica",
+                  "titleAr": "الترجمة القانونية وصياغة العقود: Traducción jurídica y redacción contractual",
+                  "objectiveAr": "أن يترجم ويصيغ المتعلم النصوص القانونية والعقود الدولية محترماً المصطلحات المعيارية والأسلوب القضائي الصارم (cláusula resolutoria, de conformidad con, sin perjuicio de).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-traduccion-juridica.json",
+                  "requires": [
+                    "c1-falsos-amigos-avanzados"
+                  ]
+                },
+                {
+                  "slug": "c1-traduccion-literaria",
+                  "titleAr": "الترجمة الأدبية ونقل الروح الشعرية: Traducción literaria y transposición poética",
+                  "objectiveAr": "أن ينقل المتعلم النص الأدبي والشعري محتفظاً بالحمولة الرمزية والإيقاع الداخلي والروح التعبيرية (equivalencia, transposición, fidelidad, registro).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-traduccion-literaria.json",
+                  "requires": [
+                    "c1-traduccion-juridica"
+                  ]
+                },
+                {
+                  "slug": "c1-interferencias-sintacticas",
+                  "titleAr": "التداخل النحوي بين الإسبانية والعربية: Interferencias sintácticas y estilización",
+                  "objectiveAr": "أن يتغلب المتعلم على التداخلات التركيبية بين الإسبانية والعربية (ترتيب الكلمات VSO/SVO، إسقاط الضمير، حروف الجر المتعدية).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-interferencias-sintacticas.json",
+                  "requires": [
+                    "c1-traduccion-literaria"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u7-complex-negotiation",
@@ -1126,7 +3904,80 @@
               "objectiveAr": "أن يدير المتعلم مفاوضة متعددة الأطراف.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-diplomacia-multilateral",
+                  "titleAr": "الدبلوماسية المتعددة الأطراف والبيانات المشتركة: Diplomacia multilateral",
+                  "objectiveAr": "أن يصيغ ويدير المتعلم مفاوضات دبلوماسية متعددة الأطراف محرراً بنود البيانات المشتركة بتوافق دولي (consenso unánime, veto, declaración conjunta, concordia).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-diplomacia-multilateral.json",
+                  "requires": [
+                    "c1-interferencias-sintacticas"
+                  ]
+                },
+                {
+                  "slug": "c1-arbitraje-comercial",
+                  "titleAr": "التحكيم التجاري الدولي وتسوية النزاعات: Arbitraje comercial y resolución de disputas",
+                  "objectiveAr": "أن يفهم المتعلم ويصيغ إجراءات التحكيم التجاري الدولي ومذكرات المرافعات والقرارات التحكيمية الملزمة (laudo arbitral, jurisdicción, dirimir controversias).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-arbitraje-comercial.json",
+                  "requires": [
+                    "c1-diplomacia-multilateral"
+                  ]
+                },
+                {
+                  "slug": "c1-clausulas-compromiso",
+                  "titleAr": "الشروط التعاقدية والتزامات حسن النية: Cláusulas y buena fe contractual",
+                  "objectiveAr": "أن يصيغ المتعلم بنود المسؤولية المدنية والشرط الجزائي وحالات القوة القاهرة مع استحضار مبدأ حسن النية (buena fe, cláusula penal, fuerza mayor).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-clausulas-compromiso.json",
+                  "requires": [
+                    "c1-arbitraje-comercial"
+                  ]
+                },
+                {
+                  "slug": "c1-comunicacion-crisis",
+                  "titleAr": "إدارة الاتصال المؤسسي والأزمات الكبرى: Gestión de crisis y portavocía",
+                  "objectiveAr": "أن يقود المتعلم مؤتمراً صحفياً عاصفاً في سياق أزمة كبرى، مهدئاً الرأي العام ومفنّداً الشائعات باحترافية (mitigar impacto, desmentir categóricamente, asumir responsabilidad).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-comunicacion-crisis.json",
+                  "requires": [
+                    "c1-clausulas-compromiso"
+                  ]
+                }
+              ]
             },
             {
               "slug": "c1-u8-advanced-writing",
@@ -1134,7 +3985,80 @@
               "objectiveAr": "أن يكتب المتعلم نصًا متقدمًا مترابطًا.",
               "levelCode": "C1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "c1-articulo-opinion",
+                  "titleAr": "مقال الرأي في الصحافة الفكرية الكبرى: La tribuna de opinión periodística",
+                  "objectiveAr": "أن يحرر المتعلم مقال رأي فكري معمق (tribuna de opinión / columna) مستخدماً البلاغة الإقناعية والأسلبة الساخرة الرصينة (agudeza, sesgo, vehemencia).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-articulo-opinion.json",
+                  "requires": [
+                    "c1-comunicacion-crisis"
+                  ]
+                },
+                {
+                  "slug": "c1-memoria-institucional",
+                  "titleAr": "التقرير السنوي والمذكرات المؤسسية: La memoria institucional y rendición de cuentas",
+                  "objectiveAr": "أن يصيغ المتعلم التقرير السنوي الإداري والمالي لمؤسسة كبرى مع تقييم مؤشرات الأداء والشفافية (memoria de gestión, rendición de cuentas, balance cualitativo).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-memoria-institucional.json",
+                  "requires": [
+                    "c1-articulo-opinion"
+                  ]
+                },
+                {
+                  "slug": "c1-ensayo-cultural",
+                  "titleAr": "المقال الفلسفي والنقد الثقافي: El ensayo cultural y la prosa meditativa",
+                  "objectiveAr": "أن يكتب المتعلم مقالاً نقدياً وفلسفياً رفيعاً يتناول قضايا الفكر والجماليات بلغة تأملية متسقة ومجازات فكرية متينة (prosa meditativa, trascendencia, dialéctica).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-ensayo-cultural.json",
+                  "requires": [
+                    "c1-memoria-institucional"
+                  ]
+                },
+                {
+                  "slug": "c1-discurso-conmemorativo",
+                  "titleAr": "الخطب الاحتفالية والمحاضرات التكريمية: El discurso conmemorativo y la oratoria solemne",
+                  "objectiveAr": "أن يلقي المتعلم خطبة احتفالية أو محاضرة افتتاحية جامعة (discurso magistral / laudatio) مستخدماً البلاغة الكلاسيكية والبيان المؤثر (elocuencia, homenaje, solemne, magno).",
+                  "skills": [
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "authored",
+                  "levelCode": "C1",
+                  "filePath": "content/drafts/c1/lesson-c1-discurso-conmemorativo.json",
+                  "requires": [
+                    "c1-ensayo-cultural"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1715,13 +4639,13 @@
     "claimFullCefr": false,
     "noteAr": "أسماء المستويات (PREA1…C1) تصف هيكل المنهج المخطَّط، وليست دليل تغطية. ما هو مكتوب فعلًا الآن: وحدة A1 أولى كاملة (4 دروس)، وحدتا سفر (8 دروس)، ووحدة كول سنتر واحدة (4 دروس)، و3 حزم مفردات أساسية (60 مدخلًا). كل ما عدا ذلك هيكل بلا دروس، وكل المحتوى draft غير مراجَع بشريًا.",
     "asOf": "2026-10-21",
-    "authoredLessonFiles": 16,
+    "authoredLessonFiles": 32,
     "byTrack": {
       "main-track": {
         "plannedLessons": 204,
-        "authoredLessons": 5,
+        "authoredLessons": 21,
         "units": 52,
-        "unitsWithContent": 2
+        "unitsWithContent": 6
       },
       "core-vocab": {
         "plannedLessons": 0,
@@ -1768,7 +4692,7 @@
     "totals": {
       "plannedLessonsAllTracks": 256,
       "plannedLessonsMainTrackOnly": 204,
-      "authoredLessons": 17,
+      "authoredLessons": 33,
       "noteAr": "الرقم 256 = مجموع الدروس المخطّطة في كل المسارات؛ و204 = المسار الأساسي وحده. أحدهما ليس خطأ عن الآخر — يُذكر النطاق دائمًا."
     }
   }

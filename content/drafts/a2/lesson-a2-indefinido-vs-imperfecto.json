@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-indefinido-vs-imperfecto",
+    "titleAr": "التفريق الحاسم في الماضي: Indefinido مقابل Imperfecto",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u2-past",
+    "objectiveAr": "أن يفرّق المتعلم بين استخدام الماضي البسيط للوقائع القاطعة والماضي المستمر للخلفية والوصف والأنشطة المتزامنة، ويستخدمهما معًا في جملة مركبة واحدة بنجاح.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "mientras",
+      "cuando",
+      "estudiar",
+      "llamar",
+      "entrar",
+      "abrir"
+    ],
+    "reviewVocabulary": [
+      "ayer",
+      "casa",
+      "amigo",
+      "tiempo"
+    ],
+    "targetStructures": [
+      "Acción en curso (Imperfecto) + Acción que interrumpe (Indefinido): Mientras caminaba, sonó el teléfono",
+      "Descripción (Imperfecto) vs Suceso puntual (Indefinido): Hacía frío pero salí",
+      "Marcadores: de repente, en ese momento"
+    ],
+    "grammarTopics": [
+      "contraste-indefinido-imperfecto",
+      "mientras-cuando-pasado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "رواية موقف مفاجئ وقع لصديقين أثناء المذاكرة في المكتبة الجامعية.",
+        "settingAr": "مكتبة الجامعة المركزية، فترة الامتحانات",
+        "lines": [
+          {
+            "es": "Ayer estudiaba tranquilamente en la biblioteca cuando sonó mi teléfono.",
+            "ar": "أمس بينما كنتُ أذاكر بهدوء في المكتبة رنّ هاتفي فجأة.",
+            "arEg": "امبارح كنت بذاكر في هدوء في المكتبة فجأة موبايلي رن.",
+            "audioKey": "pending/a2-diff-biblio-1"
+          },
+          {
+            "es": "Hacía mucho frío fuera, pero dentro el ambiente era agradable.",
+            "ar": "كان الجو باردًا جدًا في الخارج، لكن الجو بالداخل كان لطيفًا.",
+            "arEg": "الجو كان برد أوي برة، بس جوة كان حلو.",
+            "audioKey": "pending/a2-diff-biblio-2"
+          },
+          {
+            "es": "¿Y quién te llamó por teléfono?",
+            "ar": "ومن الذي اتصل بك هاتفيًا؟",
+            "arEg": "ومين اللي كلمك في التليفون؟",
+            "audioKey": "pending/a2-diff-biblio-3"
+          },
+          {
+            "es": "Fue mi madre para avisarme de que venía a visitarme a Madrid.",
+            "ar": "كانت والدتي لتخبرني بأنها قادمة لزيارتي في مدريد.",
+            "arEg": "كانت أمي عشان تقولي إنها جاية تزورني في مدريد.",
+            "audioKey": "pending/a2-diff-biblio-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_diff_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع واختر الحدث القاطع المفاجئ الذي قطع المذاكرة في المكتبة.",
+        "audioKey": "pending/a2-diff-biblio-1",
+        "speechEs": "Ayer estudiaba tranquilamente en la biblioteca cuando sonó mi teléfono.",
+        "options": [
+          {
+            "id": "a2_diff_1_a",
+            "text": "Sonó el teléfono",
+            "isCorrect": true,
+            "textAr": "رنين الهاتف"
+          },
+          {
+            "id": "a2_diff_1_b",
+            "text": "Llegó el profesor",
+            "isCorrect": false,
+            "textAr": "وصول الأستاذ",
+            "distractorRationaleAr": "لم يذكر الأستاذ في الجملة."
+          },
+          {
+            "id": "a2_diff_1_c",
+            "text": "Empezó a llover",
+            "isCorrect": false,
+            "textAr": "بدء المطر",
+            "distractorRationaleAr": "ذكر البرد فقط ولم يذكر المطر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_diff_1_a"
+          ]
+        },
+        "explanationAr": "الحدث المستمر كخلفية جاء في صيغة imperfecto: «estudiaba»، بينما الحدث المفاجئ القاطع جاء في صيغة indefinido: «sonó mi teléfono».",
+        "errorFeedback": {
+          "a2_diff_1_b": "الأستاذ لم يذكر في المقطع.",
+          "a2_diff_1_c": "لم يذكر بدء المطر بل رنين الهاتف."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "cuando"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_diff_2_concept",
+        "type": "word_choice",
+        "instructionAr": "في أي زمن نضع الحدث القاطع المفاجئ الذي يقطع حدثاً مستمرًا في الماضي؟",
+        "options": [
+          {
+            "id": "a2_diff_2_a",
+            "text": "Pretérito Indefinido",
+            "isCorrect": true,
+            "textAr": "الماضي البسيط"
+          },
+          {
+            "id": "a2_diff_2_b",
+            "text": "Pretérito Imperfecto",
+            "isCorrect": false,
+            "textAr": "الماضي المستمر",
+            "distractorRationaleAr": "Imperfecto هو الحدث الممتد في الخلفية الذي تعرض للقطع."
+          },
+          {
+            "id": "a2_diff_2_c",
+            "text": "Futuro Simple",
+            "isCorrect": false,
+            "textAr": "المستقبل البسيط",
+            "distractorRationaleAr": "المستقبل لا علاقة له بالسرد الماضي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_diff_2_a"
+          ]
+        },
+        "explanationAr": "القاعدة الذهبية في السرد الإسباني: الحدث الممتد في الخلفية = Imperfecto، والحدث القاطع المفاجئ = Indefinido.",
+        "errorFeedback": {
+          "a2_diff_2_b": "Imperfecto هو الحدث الذي كان جارياً في الخلفية.",
+          "a2_diff_2_c": "المستقبل غير صالح لسرد الماضي."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "cuando"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_diff_3_fill_context",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالفعل المناسب للحدث القاطع: «بينما كنت أسير، رأيتُ علي».",
+        "stemEs": "Mientras yo caminaba por la calle, ____ a Ali.",
+        "stemAr": "بينما كنتُ أمشي في الشارع، رأيتُ علي.",
+        "answerKey": {
+          "accepted": [
+            "vi"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«caminaba» حدث ممتد في صيغة Imperfecto، ورؤية علي حدث نقطي مفاجئ قاطع يوضع في Indefinido: vi.",
+        "errorFeedback": {
+          "veía": "veía تدل على رؤية ممتدة كخلفية.",
+          "veo": "veo مضارع والسياق ماضٍ."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "mientras"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_diff_4_weather_desc",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بفعل الطقس كخلفية مشهدية: «كان الجو مشمسًا عندما خرجنا».",
+        "stemEs": "____ mucho sol cuando salimos de casa.",
+        "stemAr": "كان الجو مشمسًا جدًا عندما خرجنا من المنزل.",
+        "answerKey": {
+          "accepted": [
+            "Hacía",
+            "hacía"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "وصف الطقس هو خلفية مشهدية للموقف، وكل ما يصف المسرح المكاني والزماني يوضع في Imperfecto: Hacía sol.",
+        "errorFeedback": {
+          "Hizo": "Hizo لا تستخدم لوصف مسرح الأحداث في هذه التراكيب.",
+          "Hace": "Hace مضارع والسياق ماضٍ."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuando"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_diff_5_sentence_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة سليمة تجمع بين الزمنين.",
+        "items": [
+          {
+            "id": "a2_diff_t1",
+            "kind": "token",
+            "text": "Mientras"
+          },
+          {
+            "id": "a2_diff_t2",
+            "kind": "token",
+            "text": "dormía,"
+          },
+          {
+            "id": "a2_diff_t3",
+            "kind": "token",
+            "text": "alguien"
+          },
+          {
+            "id": "a2_diff_t4",
+            "kind": "token",
+            "text": "llamó"
+          },
+          {
+            "id": "a2_diff_t5",
+            "kind": "token",
+            "text": "a la puerta."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mientras dormía, alguien llamó a la puerta."
+          ],
+          "tokenOrder": [
+            "a2_diff_t1",
+            "a2_diff_t2",
+            "a2_diff_t3",
+            "a2_diff_t4",
+            "a2_diff_t5"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: Mientras dormía (الحدث المستمر بالماضي المستمر)، ثم alguien llamó a la puerta (الحدث القاطع بالماضي البسيط).",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "mientras",
+          "llamar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_diff_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة بصوت سردي مميز.",
+        "stemEs": "Estudiaba cuando sonó el teléfono.",
+        "stemAr": "كنتُ أذاكر عندما رنّ الهاتف.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-diff-speak-1",
+          "modelAnswer": "Estudiaba cuando sonó el teléfono."
+        },
+        "explanationAr": "انطق estudiaba بنبر هادئ، واجعل النبرة قوية في sonó على حرف ó لإبراز عنصر المفاجأة في السرد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuando"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبر على sonó في مقطع ó",
+              "weight": 50,
+              "code": "stress_sono"
+            },
+            {
+              "labelAr": "سلاسة نطق estudiaba",
+              "weight": 50,
+              "code": "fluency_estudiaba"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من سلسلة Aula Plus 2 وEn Vocabulario"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يحسم العقدة الكبرى لدى دارسي الإسبانية: التفريق بين Indefinido و Imperfecto بنظرية (الخلفية والشرارة)."
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-imperfecto-habitos",
+    "titleAr": "الماضي المستمر: العادات السابقة والوصف",
+    "level": "A2",
+    "programSlug": "main-track",
+    "unitSlug": "a2-u2-past",
+    "objectiveAr": "أن يستخدم المتعلم زمن الماضي المستمر (Pretérito Imperfecto) لوصف العادات والروتين اليومي في الماضي والوصف الحركي والمكاني، ويصرّف الأفعال الشاذة الثلاثة (ser, ir, ver).",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "siempre",
+      "antes",
+      "vivir",
+      "jugar",
+      "era",
+      "iba"
+    ],
+    "reviewVocabulary": [
+      "niño",
+      "escuela",
+      "casa",
+      "amigo"
+    ],
+    "targetStructures": [
+      "cantaba, cantabas, cantaba, cantábamos, cantabais, cantaban (-ar)",
+      "vivía, vivías, vivía, vivíamos, vivíais, vivían (-er / -ir)",
+      "Los 3 únicos irregulares: ser (era), ir (iba), ver (veía)",
+      "Marcadores: de niño, antes, en aquella época, todos los veranos"
+    ],
+    "grammarTopics": [
+      "preterito-imperfecto-habitos",
+      "imperfecto-irregulares"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أستاذ إسباني يسترجع ذكريات طفولته وكيف كانت حياته في قريته الصغيرة في الأندلس.",
+        "settingAr": "فصل تعليمي، وقت المحاضرة",
+        "lines": [
+          {
+            "es": "Cuando yo era niño, vivía en un pueblo blanco de Andalucía.",
+            "ar": "عندما كنتُ طفلاً، كنتُ أعيش في قرية بيضاء في الأندلس.",
+            "arEg": "لما كنت عيل صغير، كنت عايش في قرية بيضا في الأندلس.",
+            "audioKey": "pending/a2-imp-prof-1"
+          },
+          {
+            "es": "Todos los días iba a la escuela a pie con mis amigos.",
+            "ar": "كل يوم كنتُ أذهب إلى المدرسة سيرًا على الأقدام مع أصدقائي.",
+            "arEg": "كل يوم كنت بروح المدرسة مشي مع أصحابي.",
+            "audioKey": "pending/a2-imp-prof-2"
+          },
+          {
+            "es": "Por las tardes jugábamos al fútbol en la plaza.",
+            "ar": "وفي فترات ما بعد الظهر كنا نلعب كرة القدم في الساحة.",
+            "arEg": "وبعد الظهر كنا بنلعب كورة في الميدان.",
+            "audioKey": "pending/a2-imp-prof-3"
+          },
+          {
+            "es": "La vida era mucho más tranquila que ahora.",
+            "ar": "كانت الحياة أكثر هدوءًا بكثير من الآن.",
+            "arEg": "الحياة كانت أهدى بكتير من دلوقتي.",
+            "audioKey": "pending/a2-imp-prof-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a2_imp_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الأستاذ واختر وسيلة ذهابه إلى المدرسة عندما كان طفلاً.",
+        "audioKey": "pending/a2-imp-prof-2",
+        "speechEs": "Todos los días iba a la escuela a pie con mis amigos.",
+        "options": [
+          {
+            "id": "a2_imp_1_a",
+            "text": "A pie",
+            "isCorrect": true,
+            "textAr": "مشيًا على الأقدام"
+          },
+          {
+            "id": "a2_imp_1_b",
+            "text": "En autobús",
+            "isCorrect": false,
+            "textAr": "بالحافلة",
+            "distractorRationaleAr": "لم يذكر الحافلة، بل قال a pie."
+          },
+          {
+            "id": "a2_imp_1_c",
+            "text": "En coche",
+            "isCorrect": false,
+            "textAr": "بالسيارة",
+            "distractorRationaleAr": "لم تذكر السيارة في النص."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_imp_1_a"
+          ]
+        },
+        "explanationAr": "قال الأستاذ صراحة: «Todos los días iba a la escuela a pie». الفعل iba يعبر عن عادة ماضية متكررة.",
+        "errorFeedback": {
+          "a2_imp_1_b": "لم يقل autobús بل a pie.",
+          "a2_imp_1_c": "لم تذكر السيارة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "iba"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_imp_2_irregulars",
+        "type": "word_choice",
+        "instructionAr": "كم عدد الأفعال الشاذة في زمن الماضي المستمر في اللغة الإسبانية؟",
+        "options": [
+          {
+            "id": "a2_imp_2_a",
+            "text": "Solo 3 verbos (ser, ir, ver)",
+            "isCorrect": true,
+            "textAr": "3 أفعال فقط"
+          },
+          {
+            "id": "a2_imp_2_b",
+            "text": "Más de 50 verbos",
+            "isCorrect": false,
+            "textAr": "أكثر من 50 فعلاً",
+            "distractorRationaleAr": "هذا ينطبق على الماضي البسيط وليس Imperfecto المنتظم جدًا."
+          },
+          {
+            "id": "a2_imp_2_c",
+            "text": "Cero verbos",
+            "isCorrect": false,
+            "textAr": "صفر أفعال",
+            "distractorRationaleAr": "توجد ثلاثة أفعال شاذة مشهورة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_imp_2_a"
+          ]
+        },
+        "explanationAr": "من أروع ميزات زمن Imperfecto أنه شديد الانتظام؛ لا يوجد سوى 3 أفعال شاذة فقط: ser (era), ir (iba), ver (veía).",
+        "errorFeedback": {
+          "a2_imp_2_b": "الماضي البسيط هو الذي يمتلك شواذ كثيرة.",
+          "a2_imp_2_c": "ser و ir و ver أفعال شاذة فيه."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "era",
+          "iba"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_imp_3_fill_ar",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف الفعل jugar مع الضمير nosotros في زمن Imperfecto.",
+        "stemEs": "De niños, nosotros ____ al fútbol en la plaza.",
+        "stemAr": "عندما كنا أطفالاً، كنا نلعب كرة القدم في الساحة.",
+        "answerKey": {
+          "accepted": [
+            "jugábamos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "أفعال -ar تأخذ النهايات -aba... ومع nosotros توضع نبرة مكتوبة دائمًا على ألف المقطع: jugábamos.",
+        "errorFeedback": {
+          "jugamos": "jugamos ماضٍ بسيط يعبر عن مرة واحدة وليس عادة مستمرة في الطفولة.",
+          "jugaban": "jugaban لضمير الغائبين."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "jugar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_imp_4_fill_er_ir",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف الفعل vivir مع الضمير yo في زمن Imperfecto.",
+        "stemEs": "Antes yo ____ en un pueblo pequeño.",
+        "stemAr": "في السابق كنتُ أعيش في قرية صغيرة.",
+        "answerKey": {
+          "accepted": [
+            "vivía"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "أفعال المجموعتين -er و -ir تأخذ النهاية -ía مع نبرة مكتوبة دائمة: vivía.",
+        "errorFeedback": {
+          "viví": "viví للماضي القاطع المنتهي.",
+          "vivo": "vivo في الحاضر."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "vivir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_imp_5_arabic_bridge",
+        "type": "word_choice",
+        "instructionAr": "ما هو التركيب في اللغة العربية الذي يعادل بدقة وظيفة زمن Imperfecto الإسباني؟",
+        "options": [
+          {
+            "id": "a2_imp_5_a",
+            "text": "Equivale a solía hacer",
+            "isCorrect": true,
+            "textAr": "يعادل بنية كان يفعل"
+          },
+          {
+            "id": "a2_imp_5_b",
+            "text": "Equivale al futuro simple",
+            "isCorrect": false,
+            "textAr": "يعادل صيغة سوف يفعل المستقبلية",
+            "distractorRationaleAr": "هذا يعبر عن المستقبل Futuro."
+          },
+          {
+            "id": "a2_imp_5_c",
+            "text": "Equivale al imperativo",
+            "isCorrect": false,
+            "textAr": "يعادل صيغة الأمر والطلب",
+            "distractorRationaleAr": "الأمر صيغة للطلب وليس للزمن الماضي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a2_imp_5_a"
+          ]
+        },
+        "explanationAr": "الجسر اللغوي الأقوى للمتعلم العربي هو أن Imperfecto يترجم دائمًا إلى «كان يفعل» أو «كان يوصف بكذا».",
+        "errorFeedback": {
+          "a2_imp_5_b": "قد + الماضي يعادل pretérito perfecto.",
+          "a2_imp_5_c": "سوف تدل على المستقبل."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "antes"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a2_imp_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة بصوت معبر عن ذكريات الطفولة.",
+        "stemEs": "Cuando era niño, jugaba en la calle.",
+        "stemAr": "عندما كنتُ طفلاً، كنتُ ألعب في الشارع.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2-imp-speak-1",
+          "modelAnswer": "Cuando era niño, jugaba en la calle."
+        },
+        "explanationAr": "ركز على سلاسة الربط بين الكلمات ونطق ll في calle كنطق الياء المشددة الخفيفة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "era"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "وضوح era",
+              "weight": 50,
+              "code": "pron_era"
+            },
+            {
+              "labelAr": "نطق ll في calle",
+              "weight": 50,
+              "code": "pron_calle"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من سلسلة Aula Plus 2 وEn Vocabulario"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم زمن Imperfecto للمتعلم العربي عبر الربط مع بنية (كان + مضارع) ويبسط الشواذ الثلاثة."
+    }
+  }
+}

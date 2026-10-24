@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-tipos-vivienda",
+    "unitSlug": "a2-u7-housing",
+    "levelCode": "A2",
+    "titleAr": "أنواع السكن ومواصفات الشقق: piso و chalet و amueblado",
+    "titleEs": "Tipos de vivienda y características del piso",
+    "subtitleAr": "تصنيف المساكن (شقة، شاليه، استوديو) ومواصفاتها (مفروش، مشمس، شرفة)",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسمّي المتعلم أنواع المساكن المختلفة في إسبانيا: piso, apartamento, chalet, estudio.",
+        "أن يصف خصائص الشقة: amueblado (مفروش), luminoso (مشمس ومضيء), exterior (مطل على الشارع), con terraza (مع شرفة).",
+        "أن يقرأ ويفهم إعلانات تأجير العقارات البسيطة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "مصطلحات السكن والصفات العقارية",
+          "explanationAr": "في إسبانيا، تُستخدم مصطلحات سكنية مميزة:\n- **El piso**: الشقة السكنية العادية في عمارة (وهي الكلمة الأكثر شيوعاً).\n- **El apartamento**: شقة صغيرة (غرفة أو غرفتان، غالباً سياحية أو شاطئية).\n- **El chalet**: فيلا أو منزل مستقل بحديقة.\nصفات الشقة الهامة:\n- **amueblado / sin amueblar**: مفروش / بدون أثاث.\n- **exterior**: تطل غرفه على الشارع الخارجي (يدخلها ضوء وشمس كثيرة).\n- **interior**: تطل غرفه على فناء العمارة الداخلي (أكثر هدوءاً لكن أقل إضاءة).\n- **con terraza**: مزود بتراس أو شرفة واسعة."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'شقة' دائماً بـ apartamento؛ في إسبانيا الكلمة اليومية القياسية لشقة العيش الدائم هي piso.",
+        "الخلط بين exterior (مطل على الشارع) و fuera (في الخارج كظرف مكان)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «بدور على شقة مفروشة وتكون منورة وببلكونة كبيرة». في الإسبانية: Busco un piso amueblado, luminoso y con terraza grande."
+        }
+      ],
+      "culturalNoteAr": "الإسبان يعشقون الشرفات (las terrazas) والضوء الطبيعي؛ لذلك تجد إعلانات الشقق تضع كلمة «luminoso» و «exterior» كأهم ميزتين تنافسيتين لرفع الإيجار."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-tipos-vivienda-intro",
+        "type": "explanation",
+        "titleAr": "أنواع المساكن ومميزاتها",
+        "bodyAr": "المفردات العقارية الأساسية:\n- **el piso**: الشقة السكنية\n- **el apartamento**: الشقة الصغيرة / السياحية\n- **el chalet**: الفيلا المستقلة / المنزل بحديقة\n- **amueblado**: مفروش بالأثاث\n- **luminoso**: مشمس / مليء بالضوء الطبيعي\n- **la terraza**: الشرفة / التراس",
+        "examples": [
+          {
+            "es": "Alquilo un piso muy luminoso en el centro.",
+            "ar": "أؤجر شقة مشمسة جداً في وسط المدينة."
+          },
+          {
+            "es": "Buscamos un chalet con jardín para el verano.",
+            "ar": "نبحث عن فيلا بحديقة لفصل الصيف."
+          },
+          {
+            "es": "El apartamento está completamente amueblado.",
+            "ar": "الشقة مفروشة بالكامل."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "piso",
+      "apartamento",
+      "chalet",
+      "amueblado",
+      "luminoso",
+      "terraza"
+    ],
+    "reviewVocabulary": [
+      "habitación",
+      "casa"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يسمّي المتعلم أنواع المساكن المختلفة في إسبانيا: piso, apartamento, chalet, estudio.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-viv-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الإسباني الأكثر شيوعاً للشقة السكنية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة القياسية في إسبانيا للشقة في مبنى سكني؟",
+        "stemEs": "Vivo en un _____ de tres habitaciones en Madrid.",
+        "stemAr": "أعيش في ... من ثلاث غرف في مدريد.",
+        "options": [
+          {
+            "id": "ex-a2-viv-1_a",
+            "text": "piso",
+            "textAr": "شقة سكنية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-viv-1_b",
+            "text": "chalet",
+            "textAr": "فيلا مستقلة بحديقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "chalet منزل مستقل بحديقة وليس شقة في عمارة."
+          },
+          {
+            "id": "ex-a2-viv-1_c",
+            "text": "terraza",
+            "textAr": "شرفة (جزء من الشقة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "terraza هي الشرفة وليست الشقة نفسها."
+          }
+        ],
+        "targetVocab": [
+          "piso",
+          "chalet",
+          "terraza",
+          "habitación"
+        ],
+        "explanationAr": "في إسبانيا كلمة piso هي الكلمة الشائعة للشقة السكنية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-viv-1_a"
+          ],
+          "selectedOptionId": "ex-a2-viv-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-viv-1_b": "chalet منزل مستقل بحديقة وليس شقة في عمارة.",
+          "ex-a2-viv-1_c": "terraza هي الشرفة وليست الشقة نفسها."
+        }
+      },
+      {
+        "id": "ex-a2-viv-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الصفة الإسبانية للشقة المشمسة والمضيئة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الصفة الإسبانية التي تعني 'مضيء / مشمس يدخله نور الشمس'",
+        "stemEs": "El salón tiene grandes ventanas y es muy _____.",
+        "stemAr": "غرفة الجلوس بها نوافذ كبيرة وهي ... جداً.",
+        "targetVocab": [
+          "luminoso"
+        ],
+        "explanationAr": "الصفة luminoso تعني مشمساً ومضاءً بنور طبيعي وفير.",
+        "answerKey": {
+          "accepted": [
+            "luminoso"
+          ],
+          "acceptableAnswers": [
+            "luminoso"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-viv-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الوصف المناسب للشقة المزودة بكافة الأثاث والأجهزة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى الشقة الجاهزة للسكن فوراً بكامل أثاثها؟",
+        "stemEs": "El propietario alquila el piso totalmente _____.",
+        "stemAr": "المالك يؤجر الشقة ... بالكامل بالأثاث.",
+        "options": [
+          {
+            "id": "ex-a2-viv-3_a",
+            "text": "amueblado",
+            "textAr": "مفروشة بالأثاث",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-viv-3_b",
+            "text": "chalet",
+            "textAr": "فيلا",
+            "isCorrect": false,
+            "distractorRationaleAr": "chalet نوع سكن وليس صفة للأثاث."
+          },
+          {
+            "id": "ex-a2-viv-3_c",
+            "text": "apartamento",
+            "textAr": "شقة صغيرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلوب صفة توضح وجود الأثاث."
+          }
+        ],
+        "targetVocab": [
+          "amueblado",
+          "chalet",
+          "apartamento"
+        ],
+        "explanationAr": "الصفة amueblado تعني مفروش بالأثاث (piso amueblado).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-viv-3_a"
+          ],
+          "selectedOptionId": "ex-a2-viv-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-viv-3_b": "chalet نوع سكن وليس صفة للأثاث.",
+          "ex-a2-viv-3_c": "المطلوب صفة توضح وجود الأثاث."
+        }
+      },
+      {
+        "id": "ex-a2-viv-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف شقة جديدة ذات شرفة واسعة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-viv-4_t1",
+            "kind": "token",
+            "text": "Tenemos"
+          },
+          {
+            "id": "ex-a2-viv-4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-a2-viv-4_t3",
+            "kind": "token",
+            "text": "apartamento"
+          },
+          {
+            "id": "ex-a2-viv-4_t4",
+            "kind": "token",
+            "text": "bonito"
+          },
+          {
+            "id": "ex-a2-viv-4_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-a2-viv-4_t6",
+            "kind": "token",
+            "text": "terraza"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tenemos un apartamento bonito con terraza"
+          ],
+          "tokenOrder": [
+            "ex-a2-viv-4_t1",
+            "ex-a2-viv-4_t2",
+            "ex-a2-viv-4_t3",
+            "ex-a2-viv-4_t4",
+            "ex-a2-viv-4_t5",
+            "ex-a2-viv-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل Tenemos ثم الاسم والصفة un apartamento bonito ثم الإضافة con terraza.",
+        "targetVocab": [
+          "apartamento",
+          "terraza"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-viv-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما يبحث عنه المستأجر",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل العقاري وحدد نوع المسكن المطلوب",
+        "stemEs": "Queremos comprar un chalet tranquilo en las afueras.",
+        "stemAr": "نريد شراء فيلا هادئة في الضواحي.",
+        "options": [
+          {
+            "id": "ex-a2-viv-5_a",
+            "text": "chalet",
+            "textAr": "فيلا / منزل مستقل",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-viv-5_b",
+            "text": "piso",
+            "textAr": "شقة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المشتري قال بوضوح: comprar un chalet."
+          },
+          {
+            "id": "ex-a2-viv-5_c",
+            "text": "apartamento",
+            "textAr": "شقة صغيرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المشتري طلب chalet في الضواحي."
+          }
+        ],
+        "targetVocab": [
+          "chalet",
+          "piso",
+          "apartamento"
+        ],
+        "explanationAr": "المتحدث قال: comprar un chalet tranquilo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_comprar_chalet.mp3",
+        "speechEs": "Queremos comprar un chalet tranquilo en las afueras.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-viv-5_a"
+          ],
+          "selectedOptionId": "ex-a2-viv-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-viv-5_b": "المشتري قال بوضوح: comprar un chalet.",
+          "ex-a2-viv-5_c": "المشتري طلب chalet في الضواحي."
+        }
+      },
+      {
+        "id": "ex-a2-viv-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق مواصفات شقتك المفضلة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر الوكيل العقاري بأنك تبحث عن شقة مفروشة ومشمسة",
+        "stemEs": "Busco un piso amueblado y muy luminoso.",
+        "stemAr": "أبحث عن شقة مفروشة ومضيئة جداً.",
+        "audioKey": "pending/a2_piso_amueblado_luminoso.mp3",
+        "targetVocab": [
+          "piso",
+          "amueblado",
+          "luminoso"
+        ],
+        "explanationAr": "احرص على نطق حرف s في piso و z في luminoso بنطق صافٍ غير مغلظ.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_piso_amueblado_luminoso.mp3",
+          "modelAnswer": "Busco un piso amueblado y muy luminoso."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "مصطلحات السكن والصفات العقارية"
+    ]
+  }
+}

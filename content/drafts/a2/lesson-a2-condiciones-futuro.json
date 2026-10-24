@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-condiciones-futuro",
+    "unitSlug": "a2-u3-future-plans",
+    "levelCode": "A2",
+    "titleAr": "جمل الشرط الواقعية للمستقبل: Si + Presente, Futuro",
+    "titleEs": "Oraciones condicionales de futuro: si + presente",
+    "subtitleAr": "ربط الشروط المحتملة في الحاضر بالنتائج والخطط المستقبلية",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصوغ المتعلم جمل الشرط الواقعية: Si + المضارع البسيط، الجواب في المضارع أو المستقبل القريب (ir a + inf).",
+        "أن يعبر عن الشروط المتعلقة بالوقت والمال والطقس (Si tengo tiempo, si hace buen tiempo).",
+        "أن يوظف مفردات الاحتمال واليقين: seguro, posible, esperar, suerte."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "بنية جملة الشرط الواقعية (النوع الأول)",
+          "explanationAr": "عند الحديث عن شرط واقعي ممكن الحدوث في الحاضر أو المستقبل، نستخدم البنية التالية:\n**Si + فعل في المضارع البسيط (Presente)** ، **فعل النتيجة في المستقبل القريب (Ir a + inf) أو المضارع**.\nأمثلة:\n- Si tengo dinero, voy a comprar este coche (إذا توفر معي مال، سأشتري هذه السيارة).\n- Si hace buen tiempo mañana, vamos a ir al parque (إذا كان الجو جميلاً غداً، سنذهب إلى الحديقة).\nتنبيه نحوي حاسم: لا تضع صيغة المستقبل أبداً مباشرة بعد أداة الشرط Si (ممنوع قول *Si voy a tener dinero*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المستقبل مباشرة بعد Si الشرطية (الصحيح دائماً مضارع بسيط: Si tengo tiempo).",
+        "الخلط بين sí (نعم مع علامة نبر) و si (إذا الشرطية بدون علامة نبر)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «لو الجو حلو بكرة حنخرج / لو معايا فلوس حشتري». في الإسبانية نفس المنطق: Si hace buen tiempo, vamos a salir."
+        }
+      ],
+      "culturalNoteAr": "الإسبان يستخدمون عبارة «¡Mucha suerte!» (حظاً وفيراً!) أو «¡Ojalá!» عند الحديث عن الشروط والتطلعات المستقبلية الإيجابية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-condiciones-futuro-intro",
+        "type": "explanation",
+        "titleAr": "الشرط الواقعي للمستقبل",
+        "bodyAr": "العناصر الأساسية لتركيب الشرط والنتيجة:\n- **el tiempo**: الوقت أو الطقس\n- **el dinero**: المال / الفلوس\n- **posible**: ممكن / محتمل\n- **seguro**: مؤكد / أكيد\n- **esperar**: ينتظر أو يأمل / يتمنى\n- **la suerte**: الحظ (buena suerte)",
+        "examples": [
+          {
+            "es": "Si tengo tiempo libre, voy a descansar.",
+            "ar": "إذا كان لدي وقت فراغ، فسأرتاح."
+          },
+          {
+            "es": "Si apruebo el examen, es seguro que viajo.",
+            "ar": "إذا اجتزت الامتحان، فمن المؤكد أنني سأسافر."
+          },
+          {
+            "es": "Espero tener suerte en la entrevista.",
+            "ar": "آمل أن يحالفني الحظ في المقابلة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "tiempo",
+      "dinero",
+      "posible",
+      "seguro",
+      "esperar",
+      "suerte"
+    ],
+    "reviewVocabulary": [
+      "parque",
+      "viaje"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصوغ المتعلم جمل الشرط الواقعية: Si + المضارع البسيط، الجواب في المضارع أو المستقبل القريب (ir a + inf).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-cnd-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الزمن الصحيح بعد أداة الشرط Si",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الزمن الذي يأتي مباشرة بعد Si في جمل الشرط الواقعية؟",
+        "stemEs": "Si _____ buen tiempo mañana, vamos a la playa.",
+        "stemAr": "إذا كان الجو جميلاً غداً، سنذهب إلى الشاطئ.",
+        "options": [
+          {
+            "id": "ex-a2-cnd-1_a",
+            "text": "hace",
+            "textAr": "مضارع بسيط (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnd-1_b",
+            "text": "va a hacer",
+            "textAr": "مستقبل بعد si (خطأ)",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يجوز وضع المستقبل مباشرة بعد Si الشرطية في الإسبانية."
+          },
+          {
+            "id": "ex-a2-cnd-1_c",
+            "text": "hizo",
+            "textAr": "ماضٍ بسيط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة تتحدث عن شرط مستقبلي وليس ماضياً."
+          }
+        ],
+        "targetVocab": [
+          "tiempo"
+        ],
+        "explanationAr": "بعد Si الشرطية نضع دائماً الفعل في زمن المضارع البسيط: Si hace buen tiempo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnd-1_a"
+          ],
+          "selectedOptionId": "ex-a2-cnd-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnd-1_b": "لا يجوز وضع المستقبل مباشرة بعد Si الشرطية في الإسبانية.",
+          "ex-a2-cnd-1_c": "الجملة تتحدث عن شرط مستقبلي وليس ماضياً."
+        }
+      },
+      {
+        "id": "ex-a2-cnd-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية الدالة على المال",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'المال / النقود' بالإسبانية بدقة",
+        "stemEs": "Si tengo suficiente _____, voy a hacer un gran viaje.",
+        "stemAr": "إذا كان لدي مال كافٍ، فسأقوم برحلة كبيرة.",
+        "targetVocab": [
+          "dinero"
+        ],
+        "explanationAr": "كلمة dinero تعني المال أو النقود وهي مذكرة.",
+        "answerKey": {
+          "accepted": [
+            "dinero"
+          ],
+          "acceptableAnswers": [
+            "dinero"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnd-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الوصف الدال على التأكد واليقين",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "إذا كنت متأكداً تماماً من حدوث النتيجة، فماذا تقول؟",
+        "stemEs": "Es _____ que el equipo va a ganar el partido.",
+        "stemAr": "من ... أن الفريق سيفوز بالمباراة.",
+        "options": [
+          {
+            "id": "ex-a2-cnd-3_a",
+            "text": "seguro",
+            "textAr": "مؤكد / يقيني",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnd-3_b",
+            "text": "suerte",
+            "textAr": "حظ (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "suerte اسم ولا يصح وصفاً بعد es مباشرة هنا."
+          },
+          {
+            "id": "ex-a2-cnd-3_c",
+            "text": "dinero",
+            "textAr": "مال",
+            "isCorrect": false,
+            "distractorRationaleAr": "dinero لا يكمل المعنى الوصفي."
+          }
+        ],
+        "targetVocab": [
+          "seguro",
+          "suerte",
+          "dinero"
+        ],
+        "explanationAr": "تعبير Es seguro que يعني 'من المؤكد أن'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnd-3_a"
+          ],
+          "selectedOptionId": "ex-a2-cnd-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnd-3_b": "suerte اسم ولا يصح وصفاً بعد es مباشرة هنا.",
+          "ex-a2-cnd-3_c": "dinero لا يكمل المعنى الوصفي."
+        }
+      },
+      {
+        "id": "ex-a2-cnd-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الشرطية للذهاب إلى الحديقة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-cnd-4_t1",
+            "kind": "token",
+            "text": "Si"
+          },
+          {
+            "id": "ex-a2-cnd-4_t2",
+            "kind": "token",
+            "text": "tengo"
+          },
+          {
+            "id": "ex-a2-cnd-4_t3",
+            "kind": "token",
+            "text": "tiempo"
+          },
+          {
+            "id": "ex-a2-cnd-4_t4",
+            "kind": "token",
+            "text": "voy"
+          },
+          {
+            "id": "ex-a2-cnd-4_t5",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-a2-cnd-4_t6",
+            "kind": "token",
+            "text": "parque"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Si tengo tiempo voy al parque"
+          ],
+          "tokenOrder": [
+            "ex-a2-cnd-4_t1",
+            "ex-a2-cnd-4_t2",
+            "ex-a2-cnd-4_t3",
+            "ex-a2-cnd-4_t4",
+            "ex-a2-cnd-4_t5",
+            "ex-a2-cnd-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: جملة الشرط أولاً Si tengo tiempo ثم جملة الجواب voy al parque.",
+        "targetVocab": [
+          "tiempo",
+          "parque"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnd-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد أمنية المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الكلمة التي يعبر بها المتحدث عن تفاؤله",
+        "stemEs": "Espero tener mucha suerte en el examen.",
+        "stemAr": "آمل أن يحالفني حظ وافر في الامتحان.",
+        "options": [
+          {
+            "id": "ex-a2-cnd-5_a",
+            "text": "esperar",
+            "textAr": "يأمل / ينتظر",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnd-5_b",
+            "text": "dinero",
+            "textAr": "مال",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تمنى الحظ suerte ولم يذكر المال."
+          },
+          {
+            "id": "ex-a2-cnd-5_c",
+            "text": "tiempo",
+            "textAr": "وقت",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن الأمل في التوفيق."
+          }
+        ],
+        "targetVocab": [
+          "esperar",
+          "suerte",
+          "dinero",
+          "tiempo"
+        ],
+        "explanationAr": "المتحدث قال: Espero tener mucha suerte.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_espero_suerte.mp3",
+        "speechEs": "Espero tener mucha suerte en el examen.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnd-5_a"
+          ],
+          "selectedOptionId": "ex-a2-cnd-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnd-5_b": "المتحدث تمنى الحظ suerte ولم يذكر المال.",
+          "ex-a2-cnd-5_c": "المتحدث تحدث عن الأمل في التوفيق."
+        }
+      },
+      {
+        "id": "ex-a2-cnd-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة الشرط والنتيجة بطلاقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر صديقك بأنك ستسافر معه إذا كان الأمر ممكناً",
+        "stemEs": "Si es posible, voy a viajar contigo.",
+        "stemAr": "إذا كان ممكناً، فسوف أسافر معك.",
+        "audioKey": "pending/a2_si_es_posible.mp3",
+        "targetVocab": [
+          "posible",
+          "viaje"
+        ],
+        "explanationAr": "احرص على خفض الصوت تدريجياً عند فاصلة الشرط: Si es posible, voy a viajar contigo.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_si_es_posible.mp3",
+          "modelAnswer": "Si es posible, voy a viajar contigo."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "بنية جملة الشرط الواقعية (النوع الأول)"
+    ]
+  }
+}

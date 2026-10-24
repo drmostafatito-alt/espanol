@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-gustar",
+    "titleAr": "التفضيل والإعجاب: استخدام الفعل Gustar مع المفرد والجمع",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u4-food-drink",
+    "objectiveAr": "أن يعبّر المتعلم عمّا يحبه وما لا يحبه من أطعمة ومشروبات باستخدام me gusta مع المفرد وme gustan مع الجمع، وفهم بنية الفاعل والمفعول في الفعل gustar.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "newVocabulary": [
+      "gustar",
+      "café",
+      "té",
+      "agua",
+      "pescado",
+      "carne",
+      "arroz",
+      "pan",
+      "comida"
+    ],
+    "reviewVocabulary": [
+      "bueno",
+      "amigo"
+    ],
+    "targetStructures": [
+      "Me gusta mucho el café solo.",
+      "No me gusta el pescado.",
+      "Me gustan los platos tradicionales."
+    ],
+    "grammarTopics": [
+      "verbo-gustar-estructura",
+      "gusta-vs-gustan",
+      "pronombres-ci-me-te-le"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "سارة وزميلها الإسباني بابلو يتحدثان في استراحة الغداء حول تفضيلاتهما في الطعام الإسباني والعربي.",
+        "settingAr": "مطعم المعهد في فالنسيا",
+        "lines": [
+          {
+            "es": "¿Te gusta la paella tradicional, Sara?",
+            "ar": "هل تعجبك الباييلا التقليدية يا سارة؟",
+            "arEg": "بتحبي الباييلا الأصلية يا سارة؟",
+            "audioKey": "pending/a1-gus-sc-1"
+          },
+          {
+            "es": "¡Sí, me encanta! Me gusta mucho el arroz con marisco.",
+            "ar": "نعم، أعشقها! يعجبني كثيراً الأرز مع ثمار البحر.",
+            "arEg": "أيوه جداً! بيعجبني أوي الرز بفواكه البحر.",
+            "audioKey": "pending/a1-gus-sc-2"
+          },
+          {
+            "es": "¿Y qué no te gusta?",
+            "ar": "وما الذي لا يعجبك؟",
+            "arEg": "وإيه اللي مش بتحبيه؟",
+            "audioKey": "pending/a1-gus-sc-3"
+          },
+          {
+            "es": "No me gusta el café amargo ni la carne muy hecha.",
+            "ar": "لا تعجبني القهوة المرة ولا اللحم المطهو زيادة عن اللازم.",
+            "arEg": "مش بحب القهوة المرة ولا اللحمة المستوية زيادة.",
+            "audioKey": "pending/a1-gus-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "المطبخ الإسباني غني جداً بزيت الزيتون والأسماك والأرز، ويُعد الطعام جزءاً مركزياً من الحياة الاجتماعية والتواصل بين العائلة والأصدقاء.",
+    "pedagogicalRationaleAr": "فعل gustar يمثل عقبة كبرى للمتعلم العربي لأنه يعني حرفياً 'يعجب'، فالشيء المعجب به هو الفاعل: 'Me gusta el arroz' (يعجبني الأرز) و'Me gustan los pescados' (تعجبني الأسماك)، بينما me هو ضمير مفعول به غير مباشر وليس فاعلاً.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_gus_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث وحدد ما يحبه وما يفضله.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للمتحدث وهو يصف ما يعجبه:",
+        "stemEs": "Me gusta mucho el té verde caliente.",
+        "stemAr": "يعجبني كثيراً الشاي الأخضر الساخن.",
+        "options": [
+          {
+            "id": "a1_gus_1_a",
+            "text": "El té verde caliente",
+            "textAr": "الشاي الأخضر الساخن",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_gus_1_b",
+            "text": "El café con leche",
+            "textAr": "القهوة بالحليب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر el té verde (الشاي الأخضر) وليس القهوة."
+          },
+          {
+            "id": "a1_gus_1_c",
+            "text": "El agua fría",
+            "textAr": "الماء البارد",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث لم يذكر الماء إطلاقاً."
+          }
+        ],
+        "targetVocab": [
+          "gustar",
+          "té"
+        ],
+        "explanationAr": "المتحدث صرح بوضوح: Me gusta mucho el té verde caliente.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-gus-ex-1",
+        "speechEs": "Me gusta mucho el té verde caliente.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_gus_1_a"
+          ],
+          "selectedOptionId": "a1_gus_1_a"
+        },
+        "errorFeedback": {
+          "a1_gus_1_b": "الصوت ذكر el té verde (الشاي الأخضر) وليس القهوة.",
+          "a1_gus_1_c": "المتحدث لم يذكر الماء إطلاقاً."
+        }
+      },
+      {
+        "id": "a1_gus_2_agreement",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل gustar المناسبة مع الاسم الجمع.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تقول بالإسبانية: «تعجبني الأسماك الطازجة»؟",
+        "stemEs": "A mí me ____ los pescados frescos.",
+        "stemAr": "أنا تعجبني الأسماك الطازجة.",
+        "options": [
+          {
+            "id": "a1_gus_2_a",
+            "text": "gustan",
+            "textAr": "تعجبني (مع فاعل جمع)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_gus_2_b",
+            "text": "gusta",
+            "textAr": "تعجبني (مع فاعل مفرد فقط)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ متكرر: الفاعل هو los pescados (جمع)، لذا يجب أن يكون الفعل gustan."
+          },
+          {
+            "id": "a1_gus_2_c",
+            "text": "gusto",
+            "textAr": "أعجب (لضمير المتكلم yo)",
+            "isCorrect": false,
+            "distractorRationaleAr": "gusto تعني أنا أعجب غيري، وهنا الفاعل هو الأسماك وليس أنا."
+          }
+        ],
+        "targetVocab": [
+          "gustar",
+          "pescado"
+        ],
+        "explanationAr": "مع الأسماء الجمع مثل los pescados، يُصرّف فعل gustar بصيغة الغائب الجمع: gustan.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_gus_2_a"
+          ],
+          "selectedOptionId": "a1_gus_2_a"
+        },
+        "errorFeedback": {
+          "a1_gus_2_b": "خطأ متكرر: الفاعل هو los pescados (جمع)، لذا يجب أن يكون الفعل gustan.",
+          "a1_gus_2_c": "gusto تعني أنا أعجب غيري، وهنا الفاعل هو الأسماك وليس أنا."
+        }
+      },
+      {
+        "id": "a1_gus_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بصيغة المفرد للفعل gustar مع الأرز.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة الفعل المناسبة مع الاسم المفرد (el arroz):",
+        "stemEs": "No me ____ el arroz frío.",
+        "stemAr": "لا يعجبني الأرز البارد.",
+        "targetVocab": [
+          "gustar",
+          "arroz"
+        ],
+        "explanationAr": "مع الاسم المفرد (el arroz) نستخدم صيغة المفرد: gusta.",
+        "answerKey": {
+          "accepted": [
+            "gusta"
+          ],
+          "acceptableAnswers": [
+            "gusta"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_gus_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لنفي الإعجاب بالطعام المذكور.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_gus_4_order_t1",
+            "kind": "token",
+            "text": "No"
+          },
+          {
+            "id": "a1_gus_4_order_t2",
+            "kind": "token",
+            "text": "me"
+          },
+          {
+            "id": "a1_gus_4_order_t3",
+            "kind": "token",
+            "text": "gusta"
+          },
+          {
+            "id": "a1_gus_4_order_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a1_gus_4_order_t5",
+            "kind": "token",
+            "text": "carne"
+          },
+          {
+            "id": "a1_gus_4_order_t6",
+            "kind": "token",
+            "text": "frita."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "No me gusta la carne frita."
+          ],
+          "tokenOrder": [
+            "a1_gus_4_order_t1",
+            "a1_gus_4_order_t2",
+            "a1_gus_4_order_t3",
+            "a1_gus_4_order_t4",
+            "a1_gus_4_order_t5",
+            "a1_gus_4_order_t6"
+          ]
+        },
+        "explanationAr": "تركيب النفي مع gustar: أداة النفي No + ضمير المفعول me + الفعل gusta + الاسم الفاعل la carne frita.",
+        "targetVocab": [
+          "gustar",
+          "carne"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_gus_5_pronoun",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الضمير المناسب عندما تسأل صديقك عما يحبه.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تسأل صديقك: «هل يعجبك الطعام التقليدي؟»",
+        "stemEs": "¿____ gusta la comida tradicional?",
+        "stemAr": "هل يعجبك الطعام التقليدي؟",
+        "options": [
+          {
+            "id": "a1_gus_5_a",
+            "text": "Te",
+            "textAr": "ضمير المفعول للمخاطب المفرد tú",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_gus_5_b",
+            "text": "Tú",
+            "textAr": "ضمير الفاعل (لا يُستخدم مباشرة قبل gusta)",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع فعل gustar نستخدم ضمير المفعول te وليس ضمير الفاعل tú."
+          },
+          {
+            "id": "a1_gus_5_c",
+            "text": "Ti",
+            "textAr": "ضمير بعد حرف الجر",
+            "isCorrect": false,
+            "distractorRationaleAr": "Ti لا تأتي بمفردها قبل الفعل بل مع حرف الجر (a ti te gusta)."
+          }
+        ],
+        "targetVocab": [
+          "gustar",
+          "comida"
+        ],
+        "explanationAr": "ضمير المفعول غير المباشر للمخاطب tú مع فعل gustar هو: te (¿Te gusta...?).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_gus_5_a"
+          ],
+          "selectedOptionId": "a1_gus_5_a"
+        },
+        "errorFeedback": {
+          "a1_gus_5_b": "مع فعل gustar نستخدم ضمير المفعول te وليس ضمير الفاعل tú.",
+          "a1_gus_5_c": "Ti لا تأتي بمفردها قبل الفعل بل مع حرف الجر (a ti te gusta)."
+        }
+      },
+      {
+        "id": "a1_gus_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة التعبير عن الإعجاب بالطعام الإسباني بنطق صحيح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح مبيناً إعجابك بالطعام:",
+        "stemEs": "Me gusta mucho el pan con aceite de oliva.",
+        "stemAr": "يعجبني كثيراً الخبز مع زيت الزيتون.",
+        "audioKey": "pending/a1-gus-ex-6",
+        "targetVocab": [
+          "gustar",
+          "pan"
+        ],
+        "explanationAr": "احرص على نطق حرف c في aceite كحرف ثاء ونطق حرف l بشكل واضح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-gus-ex-6",
+          "modelAnswer": "Me gusta mucho el pan con aceite de oliva."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

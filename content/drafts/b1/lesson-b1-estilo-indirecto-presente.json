@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-estilo-indirecto-presente",
+    "unitSlug": "b1-u7-media",
+    "levelCode": "B1",
+    "titleAr": "الكلام المنقول في الحاضر: نقل الأقوال والطلبات والأوامر بـ Dice que",
+    "titleEs": "El estilo indirecto en presente: Transmitir mensajes y peticiones",
+    "subtitleAr": "Dice que + indicativo (للإخبار) مقابل Dice que + subjuntivo (للطلب والأمر)",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن ينقل المتعلم أقوال الآخرين عندما يكون فعل القول في الحاضر (Dice que, Comenta que).",
+        "أن يفرق بدقة بين نقل معلومة خبرية (Dice que viene) ونقل طلب أو أمر (Dice que vengas بالمنصوب).",
+        "أن يغير الضمائر الشخصية وصفات الملكية والظروف بما يناسب موقع المتحدث الجديد."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد الكلام المنقول عندما يكون فعل القول في الحاضر",
+          "explanationAr": "عندما يكون فعل القول في الحاضر (Dice, Pregunta, Pide, Recuerda):\n1. **نقل جملة خبرية (معلومة)**: Dice que + **Indicativo** (لا يتغير زمن الفعل):\n- «Estoy cansado» ⇒ Juan dice que **está** cansado.\n- «Mañana viajaré» ⇒ Dice que mañana **viajará**.\n2. **نقل أمر أو طلب (تعليمات)**: Dice que / Pide que + **Subjuntivo**:\n- «¡Ven aquí!» ⇒ Dice que **vengas** aquí.\n- «Por favor, llámame» ⇒ Pide que lo **llames**.\n3. **نقل سؤال مباشر**:\n- سؤال نعم/لا: ¿Vienes? ⇒ Pregunta **si** vienes.\n- سؤال بأداة استفهام: ¿Qué hora es? ⇒ Pregunta **qué** hora es."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام الإخباري عند نقل الأمر أو الطلب (الخطأ: *Dice que vienes* عندما يقصد 'يقول لك أن تأتي'؛ الصواب: Dice que vengas بالمنصوب).",
+        "نسيان تحويل ضمائر الملكية (نقل *Dice que mi casa es bonita* بدلاً من su casa)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «بيقولك تعال، وبيقول إنه تعبان ومش هيقدر ينزل». بالإسبانية: Dice que vengas (طلب بالمنصوب), y dice que está cansado (خبر بالإخباري)."
+        }
+      ],
+      "culturalNoteAr": "نقل الرسائل والطلبات عبر الهاتف (Transmitir recados) باستخدام 'Dice que...' هو أحد أكثر الأساليب اللغوية استخداماً في المعاملات اليومية بإسبانيا."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-estilo-indirecto-presente-intro",
+        "type": "explanation",
+        "titleAr": "التفريق الحاسم في نقل الكلام",
+        "bodyAr": "الفرق بين نقل المعلومة ونقل الأمر:\n- **dice que + Indicativo**: ينقل معلومة خبرية صريحة (Dice que tiene hambre)\n- **dice que + Subjuntivo**: ينقل طلباً أو أمراً موجهاً (Dice que comas algo)\n- **pregunta si**: يسأل عما إذا كان... (Pregunta si vas a ir)\n- **pide que**: يرجو أو يطلب أن (+ Subjuntivo)\n- **el mensaje**: الرسالة المنقولة\n- **transmitir**: ينقل أو يبلغ الكلام",
+        "examples": [
+          {
+            "es": "Carlos dice que no puede venir porque tiene trabajo.",
+            "ar": "كارلوس يقول إنه لا يستطيع القدوم لأن لديه عملاً (خبر = puede)."
+          },
+          {
+            "es": "El profesor dice que estudiemos el capítulo cuatro.",
+            "ar": "الأستاذ يقول لنا أن ندرس الفصل الرابع (أمر = estudiemos بالمنصوب)."
+          },
+          {
+            "es": "Mi madre pregunta si has comprado el pan.",
+            "ar": "أمي تسأل عما إذا كنت قد اشتريت الخبز."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dice que + indicativo",
+      "dice que + subjuntivo",
+      "pregunta si",
+      "pide que",
+      "transmitir",
+      "mensaje"
+    ],
+    "reviewVocabulary": [
+      "decir",
+      "preguntar"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن ينقل المتعلم أقوال الآخرين عندما يكون فعل القول في الحاضر (Dice que, Comenta que).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-ind-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب لنقل أمر وطلب الطبيب للمريض",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "عندما يقول الطبيب للمريض: «¡Descanse en cama!»، كيف ننقل هذا الأمر؟",
+        "stemEs": "El médico dice que usted _____ en cama dos días.",
+        "stemAr": "الطبيب يقول لك أن ... في السرير لمدة يومين.",
+        "options": [
+          {
+            "id": "ex-b1-ind-1_a",
+            "text": "descanse",
+            "textAr": "صيغة المنصوب لنقل الأمر والتعليمات (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ind-1_b",
+            "text": "descansa",
+            "textAr": "مضارع إخباري ينقل معلومة خبرية فقط وليس أمراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "نقل الأمر والطلب يتطلب صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b1-ind-1_c",
+            "text": "descansar",
+            "textAr": "مصدر",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع وجود que والفاعل usted يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "dice que + subjuntivo",
+          "decir"
+        ],
+        "explanationAr": "عند نقل أمر أو نصيحة طبية نستخدم المنصوب: dice que descanse.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ind-1_a"
+          ],
+          "selectedOptionId": "ex-b1-ind-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ind-1_b": "نقل الأمر والطلب يتطلب صيغة المنصوب Subjuntivo.",
+          "ex-b1-ind-1_c": "مع وجود que والفاعل usted يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b1-ind-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بأداة الربط لنقل السؤال المغلق: (pregunta _____)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل بأداة الربط الشرطية لنقل سؤال: ¿Tienes tiempo hoy? -> Pregunta _____ tienes tiempo hoy",
+        "stemEs": "Marta pregunta _____ vas a venir a la fiesta esta noche.",
+        "stemAr": "مارتا تسأل عما إذا كنت ستأتي إلى الحفلة الليلة.",
+        "targetVocab": [
+          "pregunta si"
+        ],
+        "explanationAr": "عند نقل سؤال نعم/لا نستخدم أداة الربط si (بدون نبرة): pregunta si vas a venir.",
+        "answerKey": {
+          "accepted": [
+            "si"
+          ],
+          "acceptableAnswers": [
+            "si"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ind-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الفرق عندما ينقل المتحدث معلومة خبرية واقعية",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما يقول الصديق: «Vivo en el centro»، كيف ننقل هذا الخبر؟",
+        "stemEs": "Mi amigo dice que _____ en el centro de Madrid.",
+        "stemAr": "صديقي يقول إنه ... في وسط مدريد.",
+        "options": [
+          {
+            "id": "ex-b1-ind-3_a",
+            "text": "vive",
+            "textAr": "مضارع إخباري لنقل معلومة واقعية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ind-3_b",
+            "text": "viva",
+            "textAr": "منصوب لا مبرر له لأن الجملة الأصلية خبر وليست أمراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المنصوب يستخدم للأوامر والطلبات، وهنا الجملة خبرية."
+          },
+          {
+            "id": "ex-b1-ind-3_c",
+            "text": "viviendo",
+            "textAr": "اسم فاعل مستمر",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً مصرفاً في الحاضر الإخباري."
+          }
+        ],
+        "targetVocab": [
+          "dice que + indicativo",
+          "decir"
+        ],
+        "explanationAr": "نقل الجمل الخبرية في الحاضر يبقى في صيغة الإخباري: dice que vive.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ind-3_a"
+          ],
+          "selectedOptionId": "ex-b1-ind-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ind-3_b": "المنصوب يستخدم للأوامر والطلبات، وهنا الجملة خبرية.",
+          "ex-b1-ind-3_c": "نحتاج فعلاً مصرفاً في الحاضر الإخباري."
+        }
+      },
+      {
+        "id": "ex-b1-ind-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لنقل طلب المدير بحضور الاجتماع فوراً",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-ind-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-ind-4_t2",
+            "kind": "token",
+            "text": "jefe"
+          },
+          {
+            "id": "ex-b1-ind-4_t3",
+            "kind": "token",
+            "text": "pide"
+          },
+          {
+            "id": "ex-b1-ind-4_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b1-ind-4_t5",
+            "kind": "token",
+            "text": "vengas"
+          },
+          {
+            "id": "ex-b1-ind-4_t6",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b1-ind-4_t7",
+            "kind": "token",
+            "text": "despacho"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El jefe pide que vengas al despacho"
+          ],
+          "tokenOrder": [
+            "ex-b1-ind-4_t1",
+            "ex-b1-ind-4_t2",
+            "ex-b1-ind-4_t3",
+            "ex-b1-ind-4_t4",
+            "ex-b1-ind-4_t5",
+            "ex-b1-ind-4_t6",
+            "ex-b1-ind-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El jefe ثم الفعل pide que ثم المنصوب vengas ثم الوجهة al despacho.",
+        "targetVocab": [
+          "pide que"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ind-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد هل المنقول خبر أم طلب بالمنصوب",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لما ينقله المتحدث عن زميلته",
+        "stemEs": "Laura dice que le envíes el archivo por correo ahora mismo.",
+        "stemAr": "لاورا تقول لك أن ترسل لها الملف عبر البريد حالاً.",
+        "options": [
+          {
+            "id": "ex-b1-ind-5_a",
+            "text": "dice que + subjuntivo",
+            "textAr": "نقل أمر وطلب بالمنصوب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ind-5_b",
+            "text": "dice que + indicativo",
+            "textAr": "نقل خبر مجرد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل envíes بالمنصوب يدل على نقل أمر أو طلب."
+          },
+          {
+            "id": "ex-b1-ind-5_c",
+            "text": "pregunta si",
+            "textAr": "سؤال",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة طلب صريح وليس سؤالاً."
+          }
+        ],
+        "targetVocab": [
+          "dice que + subjuntivo",
+          "dice que + indicativo",
+          "pregunta si"
+        ],
+        "explanationAr": "المتحدث قال: 'dice que le envíes' بصيغة المنصوب لنقل الطلب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_laura_dice_envies.mp3",
+        "speechEs": "Laura dice que le envíes el archivo por correo ahora mismo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ind-5_a"
+          ],
+          "selectedOptionId": "ex-b1-ind-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ind-5_b": "الفعل envíes بالمنصوب يدل على نقل أمر أو طلب.",
+          "ex-b1-ind-5_c": "الجملة طلب صريح وليس سؤالاً."
+        }
+      },
+      {
+        "id": "ex-b1-ind-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك لنقل رسالة زميلك باحترافية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لنقل طلب المدير لزميلك بوضوح:",
+        "stemEs": "El director pide que le entregues el informe antes de las dos.",
+        "stemAr": "المدير يطلب أن تسلمه التقرير قبل الساعة الثانية.",
+        "audioKey": "pending/b1_director_pide_entregues.mp3",
+        "targetVocab": [
+          "pide que",
+          "transmitir"
+        ],
+        "explanationAr": "انتبه لنطق صيغة المنصوب entregues كـ إنتريجيس بدون نطق حرف u.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_director_pide_entregues.mp3",
+          "modelAnswer": "El director pide que le entregues el informe antes de las dos."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "قواعد الكلام المنقول عندما يكون فعل القول في الحاضر"
+    ]
+  }
+}

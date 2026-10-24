@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-literatura-narrativa-contemporanea",
+    "unitSlug": "b2-u3-literature",
+    "levelCode": "B2",
+    "titleAr": "السرد الأدبي المعاصر: فهم النصوص وعوالم الرواية",
+    "titleEs": "La narrativa contemporánea: Comprensión lectora y mundos ficcionales",
+    "subtitleAr": "تحليل مقاطع من غابرييل غارسيا ماركيز وكارلوس زافون، وبناء الفضاء الروائي",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقرأ المتعلم نصوصاً أدبية من الأدب الإسباني واللاتيني ويفهم دلالاتها العميقة.",
+        "أن يتعرف على تقنيات السرد الأدبي: narrador omnisciente, atmósfera, trama, desenlace.",
+        "أن يحلل تداخل الأزمنة السردية في الوصف الأدبي للأماكن والأشخاص."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "استخدامات الأزمنة في السرد الأدبي التعبيري",
+          "explanationAr": "1. **رسم الأجواء والمشاهد بـ Imperfecto**:\n- *La lluvia caía sin tregua sobre los tejados de la ciudad vieja* (وصف مستمر وحالة).\n2. **كسر الإيقاع السردي بالحدث الفجائي بـ Indefinido**:\n- *De repente, una sombra cruzó el umbral de la puerta* (حدث قاطع ومفاجئ).\n3. **الاسترجاع الزمني بالماضي الأسبق Pluscuamperfecto**:\n- *Aquel coronel había esperado una carta durante más de treinta años*."
+        }
+      ],
+      "commonMistakesAr": [
+        "الترجمة الحرفية للصور البلاغية التي تفسد جمالية النص (مثل ترجمة *sin tregua* بـ 'بلا هدنة عسكرية' بدلاً من 'بلا انقطاع أو هوادة').",
+        "الخلط بين الحدث الرئيسي والخلفية الوصفية في التحليل الأدبي للنصوص."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في قراءة الروايات بنقول «الكاتب راسم جو غامض والأحداث بتشدك للنهاية». بالإسبانية: El autor crea una atmósfera de misterio envolvente que atrapa al lector hasta el desenlace."
+        }
+      ],
+      "culturalNoteAr": "الأدب المكتوب بالإسبانية حاز على ست جوائز نوبل (بينهم غابرييل غارسيا ماركيز وماريو فارغاس يوسا)، وتعتبر 'الواقعية السحرية' Realismo Mágico من أبرز مساهماته العالمية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-literatura-narrativa-contemporanea-intro",
+        "type": "explanation",
+        "titleAr": "مفاتيح التحليل الروائي والسردي",
+        "bodyAr": "المصطلحات الأدبية:\n- **la trama**: الحبكة الروائية وتصاعد الأحداث\n- **el desenlace**: الحل وخاتمة الرواية أو العقدة\n- **la atmósfera**: الجو النفسي والعام الذي يفرضه المكان والوصف\n- **el narrador omnisciente**: الراوي العليم الذي يعرف دواخل الشخصيات\n- **el umbral**: العتبة وبداية المدخل\n- **sin tregua**: بلا هوادة وبلا توقف",
+        "examples": [
+          {
+            "es": "La trama de la novela gira en torno a un enigma familiar no resuelto.",
+            "ar": "تدور حبكة الرواية حول لغز عائلي لم يُحل بعد."
+          },
+          {
+            "es": "El autor logra crear una atmósfera de suspense que cautiva al lector.",
+            "ar": "ينجح الكاتب في خلق جو من التشويق يأسر القارئ."
+          },
+          {
+            "es": "Al llegar al umbral de la biblioteca olvidada, Daniel sintió un escalofrío.",
+            "ar": "عند وصوله إلى عتبة المكتبة المنسية، شعر دانيال بقشعريرة تسري في بدنه."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "trama",
+      "desenlace",
+      "atmósfera",
+      "narrador omnisciente",
+      "umbral",
+      "sin tregua"
+    ],
+    "reviewVocabulary": [
+      "novela",
+      "autor"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يقرأ المتعلم نصوصاً أدبية من الأدب الإسباني واللاتيني ويفهم دلالاتها العميقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-lnc-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الأدبي الذي يدل على حبكة القصة وتتابع أحداثها",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية التي تعني 'الحبكة الروائية'؟",
+        "stemEs": "La _____ de la historia se complica cuando aparece un personaje inesperado.",
+        "stemAr": "تتعقد ... القصة عندما تظهر شخصية غير متوقعة.",
+        "options": [
+          {
+            "id": "ex-b2-lnc-1_a",
+            "text": "trama",
+            "textAr": "الحبكة الروائية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-lnc-1_b",
+            "text": "editorial",
+            "textAr": "الافتتاحية",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الأدب تسمى الحبكة la trama."
+          },
+          {
+            "id": "ex-b2-lnc-1_c",
+            "text": "repercusión",
+            "textAr": "التداعيات",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحبكة هي la trama."
+          }
+        ],
+        "targetVocab": [
+          "trama",
+          "desenlace"
+        ],
+        "explanationAr": "la trama هي الحبكة السردية وتتابع العقد والأحداث في الرواية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-lnc-1_a"
+          ],
+          "selectedOptionId": "ex-b2-lnc-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-lnc-1_b": "في الأدب تسمى الحبكة la trama.",
+          "ex-b2-lnc-1_c": "الحبكة هي la trama."
+        }
+      },
+      {
+        "id": "ex-b2-lnc-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني حل العقدة وخاتمة القصة: (el _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة التي تعني 'خاتمة الرواية وفك العقدة السردية' (el _____)",
+        "stemEs": "Nadie se esperaba un _____ tan trágico y conmovedor al final del libro.",
+        "stemAr": "لم يتوقع أحد ... مأساوياً ومؤثراً إلى هذا الحد في نهاية الكتاب.",
+        "targetVocab": [
+          "desenlace"
+        ],
+        "explanationAr": "el desenlace هو الخاتمة وفك العقدة الدرامية للقصة.",
+        "answerKey": {
+          "accepted": [
+            "desenlace"
+          ],
+          "acceptableAnswers": [
+            "desenlace"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-lnc-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد نوع الراوي الذي يعلم بكل مشاعر وأفكار الشخصيات وخفاياها",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي الراوي الكلي المعرفة في النقد الأدبي؟",
+        "stemEs": "La historia está narrada por un _____, que conoce los pensamientos íntimos de todos.",
+        "stemAr": "تُروى القصة عبر ...، يعلم الأفكار الحميمة للجميع.",
+        "options": [
+          {
+            "id": "ex-b2-lnc-3_a",
+            "text": "narrador omnisciente",
+            "textAr": "الراوي العليم المحيط بكل شيء (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-lnc-3_b",
+            "text": "testigo",
+            "textAr": "شاهد عيان محدود",
+            "isCorrect": false,
+            "distractorRationaleAr": "الراوي الذي يعرف كل خفايا الشخصيات يسمى narrador omnisciente."
+          },
+          {
+            "id": "ex-b2-lnc-3_c",
+            "text": "protagonista",
+            "textAr": "البطل نفسه",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحيط بكل الشخصيات هو الراوي العليم narrador omnisciente."
+          }
+        ],
+        "targetVocab": [
+          "narrador omnisciente",
+          "atmósfera",
+          "trama"
+        ],
+        "explanationAr": "el narrador omnisciente هو الراوي العليم في السرد الروائي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-lnc-3_a"
+          ],
+          "selectedOptionId": "ex-b2-lnc-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-lnc-3_b": "الراوي الذي يعرف كل خفايا الشخصيات يسمى narrador omnisciente.",
+          "ex-b2-lnc-3_c": "المحيط بكل الشخصيات هو الراوي العليم narrador omnisciente."
+        }
+      },
+      {
+        "id": "ex-b2-lnc-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الوصفية الأدبية لبناء الجو الروائي الغامض",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-lnc-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b2-lnc-4_t2",
+            "kind": "token",
+            "text": "viento"
+          },
+          {
+            "id": "ex-b2-lnc-4_t3",
+            "kind": "token",
+            "text": "soplaba"
+          },
+          {
+            "id": "ex-b2-lnc-4_t4",
+            "kind": "token",
+            "text": "sin"
+          },
+          {
+            "id": "ex-b2-lnc-4_t5",
+            "kind": "token",
+            "text": "tregua"
+          },
+          {
+            "id": "ex-b2-lnc-4_t6",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b2-lnc-4_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-lnc-4_t8",
+            "kind": "token",
+            "text": "noche"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El viento soplaba sin tregua en la noche"
+          ],
+          "tokenOrder": [
+            "ex-b2-lnc-4_t1",
+            "ex-b2-lnc-4_t2",
+            "ex-b2-lnc-4_t3",
+            "ex-b2-lnc-4_t4",
+            "ex-b2-lnc-4_t5",
+            "ex-b2-lnc-4_t6",
+            "ex-b2-lnc-4_t7",
+            "ex-b2-lnc-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El viento ثم الفعل الماضي الوصفي soplaba ثم التعبير sin tregua ثم شبه الجملة en la noche.",
+        "targetVocab": [
+          "sin tregua",
+          "atmósfera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-lnc-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمقطع الروائي المسجل وحدد المكان الذي توقف عنده البطل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للقراءة الأدبية البليغة وحدد موضع الوقوف",
+        "stemEs": "Se detuvo temblando en el umbral de la vieja mansión abandonada.",
+        "stemAr": "توقف وهو يرتجف عند عتبة القصر القديم المهجور.",
+        "options": [
+          {
+            "id": "ex-b2-lnc-5_a",
+            "text": "en el umbral",
+            "textAr": "عند العتبة ومدخل القصر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-lnc-5_b",
+            "text": "en el tejado",
+            "textAr": "على السطح",
+            "isCorrect": false,
+            "distractorRationaleAr": "الراوي قال: en el umbral."
+          },
+          {
+            "id": "ex-b2-lnc-5_c",
+            "text": "en el sótano",
+            "textAr": "في القبو",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوقوف كان عند العتبة: en el umbral."
+          }
+        ],
+        "targetVocab": [
+          "umbral",
+          "sin tregua"
+        ],
+        "explanationAr": "القارئ قال: 'en el umbral de la vieja mansión'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_umbral_mansion_abandonada.mp3",
+        "speechEs": "Se detuvo temblando en el umbral de la vieja mansión abandonada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-lnc-5_a"
+          ],
+          "selectedOptionId": "ex-b2-lnc-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-lnc-5_b": "الراوي قال: en el umbral.",
+          "ex-b2-lnc-5_c": "الوقوف كان عند العتبة: en el umbral."
+        }
+      },
+      {
+        "id": "ex-b2-lnc-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق التعبير الأدبي بنبرة سردية مؤثرة ورخيمة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كراوٍ أدبي محترف في قراءة قصة:",
+        "stemEs": "La novela envuelve al lector en una atmósfera mágica desde las primeras páginas.",
+        "stemAr": "تأسر الرواية القارئ في جو سحري آخاذ منذ الصفحات الأولى.",
+        "audioKey": "pending/b2_novela_atmosfera_magica.mp3",
+        "targetVocab": [
+          "atmósfera",
+          "trama",
+          "desenlace"
+        ],
+        "explanationAr": "انتبه لنطق atmósfera بالتشديد على المقطع الأول والمد الإيقاعي الجميل.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_novela_atmosfera_magica.mp3",
+          "modelAnswer": "La novela envuelve al lector en una atmósfera mágica desde las primeras páginas."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "استخدامات الأزمنة في السرد الأدبي التعبيري"
+    ]
+  }
+}

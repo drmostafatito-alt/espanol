@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-mensajes-recados",
+    "unitSlug": "a2-u9-phone-booking",
+    "levelCode": "A2",
+    "titleAr": "ترك الرسائل وأخذ الملاحظات: التعامل مع غياب الشخص المطلوب",
+    "titleEs": "Dejar recados y tomar notas telefónicas",
+    "subtitleAr": "ترك رسالة شفهية، تسجيل رقم الهاتف، وإبلاغ المتصل بتعاود الاتصال",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يترك المتعلم رسالة لشخص غير متاح: ¿Puedo dejarle un recado? / Dígale que he llamado.",
+        "أن يأخذ ملاحظات هاتفية للغير: ¿Quiere dejar algún mensaje? / Tomo nota de su número.",
+        "أن يعد بإبلاغ الزميل بالاتصال فور عودته: En cuanto llegue, le digo que le llame."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب المستخدمة في ترك الرسائل الهاتفية",
+          "explanationAr": "1. **عرض أو طلب ترك رسالة**:\n- **dejar un recado**: ¿Quiere dejarle un recado? (هل تود ترك رسالة شفهية له؟) — Sí, por favor, dígale que me llame.\n2. **تدوين البيانات**:\n- **tomar nota**: Tomo nota de su nombre y teléfono (أسجل اسمك ورقم هاتفك).\n3. **الإخبار بالانشغال أو الغياب**:\n- En este momento no está en su mesa (حالياً ليس على مكتبه).\n- Está reunido / Ha salido a comer (هو في اجتماع / خرج لتناول الغداء)."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين mensaje (رسالة عامة أو مكتوبة) و recado (رسالة شفهية شائعة هاتفياً).",
+        "قول *yo escribo su teléfono* بدلاً من التعبير الاصطلاحي المهني tomo nota de su teléfono."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «تحب تسيبله رسالة؟ هقوله يكلمك أول ما يرجع». بالإسبانية: ¿Quiere dejarle un recado? Le diré que le llame en cuanto vuelva."
+        }
+      ],
+      "culturalNoteAr": "كلمة 'recado' في إسبانيا هي المصطلح اليومي الأكثر استخداماً للرسائل الهاتفية الشفهية بين الزملاء."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-mensajes-recados-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الرسائل الهاتفية",
+        "bodyAr": "المفردات الأساسية:\n- **el recado**: الرسالة الشفهية\n- **el mensaje**: الرسالة النصية أو العامة\n- **tomar nota**: يدون ملاحظة أو رقماً\n- **reunido**: في اجتماع عمل (estar reunido)\n- **devolver la llamada**: يعاود الاتصال هاتفياً\n- **urgente**: عاجل / طارئ",
+        "examples": [
+          {
+            "es": "El señor Gómez está reunido; ¿desea dejarle algún recado?",
+            "ar": "السيد غوميث في اجتماع؛ هل ترغب في ترك أي رسالة له؟"
+          },
+          {
+            "es": "Tomo nota de su teléfono y le diré que le devuelva la llamada.",
+            "ar": "أسجل رقم هاتفك وسأخبره بأن يعاود الاتصال بك."
+          },
+          {
+            "es": "Es un asunto muy urgente; por favor, avísele en cuanto pueda.",
+            "ar": "إنه أمر عاجل جداً؛ من فضلك أبلغه فور استطاعته."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "recado",
+      "mensaje",
+      "tomar nota",
+      "reunido",
+      "devolver la llamada",
+      "urgente"
+    ],
+    "reviewVocabulary": [
+      "número",
+      "decir"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يترك المتعلم رسالة لشخص غير متاح: ¿Puedo dejarle un recado? / Dígale que he llamado.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-rec-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الإسباني المناسب لترك رسالة شفهية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة القياسية لـ 'ترك رسالة شفهية'؟",
+        "stemEs": "Como no está disponible, ¿puedo dejarle un _____?",
+        "stemAr": "بما أنه غير متاح، هل يمكنني ترك ... له؟",
+        "options": [
+          {
+            "id": "ex-a2-rec-1_a",
+            "text": "recado",
+            "textAr": "رسالة شفهية هاتفية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-rec-1_b",
+            "text": "urgente",
+            "textAr": "عاجل (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "urgente صفة ولا تأتي مسبوقة بـ un هنا."
+          },
+          {
+            "id": "ex-a2-rec-1_c",
+            "text": "reunido",
+            "textAr": "في اجتماع (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "reunido صفة تصف الشخص الغائب."
+          }
+        ],
+        "targetVocab": [
+          "recado",
+          "urgente",
+          "reunido"
+        ],
+        "explanationAr": "التعبير هو dejar un recado (ترك رسالة شفهية).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-rec-1_a"
+          ],
+          "selectedOptionId": "ex-a2-rec-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-rec-1_b": "urgente صفة ولا تأتي مسبوقة بـ un هنا.",
+          "ex-a2-rec-1_c": "reunido صفة تصف الشخص الغائب."
+        }
+      },
+      {
+        "id": "ex-a2-rec-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على تدوين وتسجيل الرقم",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل التعبير الاصطلاحي لتدوين الملاحظة: (Tomo _____ de su número)",
+        "stemEs": "Dígame su teléfono, que tomo _____ ahora mismo.",
+        "stemAr": "أخبرني برقمك، وأنا أدونه في الحال.",
+        "targetVocab": [
+          "tomar nota"
+        ],
+        "explanationAr": "التعبير هو tomar nota (يدون ملاحظة).",
+        "answerKey": {
+          "accepted": [
+            "nota"
+          ],
+          "acceptableAnswers": [
+            "nota"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-rec-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد حالة المسؤول عندما يكون في جلسة عمل رسمية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "إذا كان المدير في قاعة الاجتماعات مع الوفد، نقول:",
+        "stemEs": "El jefe no puede ponerse ahora al teléfono porque está _____.",
+        "stemAr": "المدير لا يستطيع الرد على الهاتف الآن لأنه ...",
+        "options": [
+          {
+            "id": "ex-a2-rec-3_a",
+            "text": "reunido",
+            "textAr": "في اجتماع رسمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-rec-3_b",
+            "text": "tomar nota",
+            "textAr": "يدون ملاحظة (مصدر فعل)",
+            "isCorrect": false,
+            "distractorRationaleAr": "يحتاج اسم مفعول/صفة تصف حالته."
+          },
+          {
+            "id": "ex-a2-rec-3_c",
+            "text": "recado",
+            "textAr": "رسالة",
+            "isCorrect": false,
+            "distractorRationaleAr": "recado اسم لا يصف الشخص."
+          }
+        ],
+        "targetVocab": [
+          "reunido",
+          "tomar nota",
+          "recado"
+        ],
+        "explanationAr": "نقول: estar reunido (في اجتماع).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-rec-3_a"
+          ],
+          "selectedOptionId": "ex-a2-rec-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-rec-3_b": "يحتاج اسم مفعول/صفة تصف حالته.",
+          "ex-a2-rec-3_c": "recado اسم لا يصف الشخص."
+        }
+      },
+      {
+        "id": "ex-a2-rec-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتطلب منه معاودة الاتصال بك",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-rec-4_t1",
+            "kind": "token",
+            "text": "Dígale"
+          },
+          {
+            "id": "ex-a2-rec-4_t2",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-a2-rec-4_t3",
+            "kind": "token",
+            "text": "me"
+          },
+          {
+            "id": "ex-a2-rec-4_t4",
+            "kind": "token",
+            "text": "devuelva"
+          },
+          {
+            "id": "ex-a2-rec-4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a2-rec-4_t6",
+            "kind": "token",
+            "text": "llamada"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Dígale que me devuelva la llamada"
+          ],
+          "tokenOrder": [
+            "ex-a2-rec-4_t1",
+            "ex-a2-rec-4_t2",
+            "ex-a2-rec-4_t3",
+            "ex-a2-rec-4_t4",
+            "ex-a2-rec-4_t5",
+            "ex-a2-rec-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: صيغة الطلب Dígale ثم que ثم الضمير me ثم الفعل devuelva la llamada.",
+        "targetVocab": [
+          "devolver la llamada"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-rec-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد درجة أهمية المكالمة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد هل الأمر يحتمل التأجيل أم طارئ",
+        "stemEs": "Dígale que me llame cuanto antes, por favor; es un asunto muy urgente.",
+        "stemAr": "أخبره بأن يتصل بي في أقرب وقت، من فضلك؛ إنه أمر عاجل جداً.",
+        "options": [
+          {
+            "id": "ex-a2-rec-5_a",
+            "text": "urgente",
+            "textAr": "عاجل وطارئ (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-rec-5_b",
+            "text": "mensaje",
+            "textAr": "مجرد رسالة عادية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: 'es un asunto muy urgente'."
+          },
+          {
+            "id": "ex-a2-rec-5_c",
+            "text": "reunido",
+            "textAr": "اجتماع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يصف درجة أهمية المكالمة وليس المكان."
+          }
+        ],
+        "targetVocab": [
+          "urgente",
+          "mensaje",
+          "reunido"
+        ],
+        "explanationAr": "المتحدث قال: 'es un asunto muy urgente'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_asunto_urgente.mp3",
+        "speechEs": "Dígale que me llame cuanto antes, por favor; es un asunto muy urgente.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-rec-5_a"
+          ],
+          "selectedOptionId": "ex-a2-rec-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-rec-5_b": "المتحدث قال بوضوح: 'es un asunto muy urgente'.",
+          "ex-a2-rec-5_c": "المتحدث يصف درجة أهمية المكالمة وليس المكان."
+        }
+      },
+      {
+        "id": "ex-a2-rec-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق وعدك بتسجيل البيانات وإبلاغ الزميل",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية باحترافية وهدوء:",
+        "stemEs": "He tomado nota de su recado y se lo transmitiré en seguida.",
+        "stemAr": "لقد سجلت رسالتك وسأنقلها إليه فوراً.",
+        "audioKey": "pending/a2_transmitir_recado.mp3",
+        "targetVocab": [
+          "recado",
+          "tomar nota"
+        ],
+        "explanationAr": "انتبه لنطق مقطع guida كـ جيدا مرققة وليس جويدا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_transmitir_recado.mp3",
+          "modelAnswer": "He tomado nota de su recado y se lo transmitiré en seguida."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب المستخدمة في ترك الرسائل الهاتفية"
+    ]
+  }
+}

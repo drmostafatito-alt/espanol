@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-habitaciones",
+    "titleAr": "غرف المنزل: أجزاء البيت وتسمية المساحات",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u6-home",
+    "objectiveAr": "أن يسمّي المتعلم غرف المنزل الأساسية (cocina, salón, baño, habitación) مع أدوات التعريف والتنكير المناسبة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "casa",
+      "habitación",
+      "cocina",
+      "baño",
+      "salón",
+      "cama",
+      "mesa",
+      "silla"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "tres",
+      "bueno"
+    ],
+    "targetStructures": [
+      "Mi casa tiene un salón grande, una cocina y dos habitaciones.",
+      "El baño está al lado del dormitorio.",
+      "En mi habitación hay una cama y una mesa de estudio."
+    ],
+    "grammarTopics": [
+      "vocabulario-partes-casa",
+      "articulos-genero-habitaciones",
+      "cuantificadores-habitaciones"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "بلال يُري صديقه خافيير شقته الجديدة التي استأجرها في فالنسيا ويصف له الغرف.",
+        "settingAr": "شقة سكنية جديدة في فالنسيا",
+        "lines": [
+          {
+            "es": "¡Bienvenido a mi casa! Pasa, por favor.",
+            "ar": "أهلاً بك في منزلي! تفضل بالدخول، من فضلك.",
+            "arEg": "نورت بيتي! اتفضل ادخل.",
+            "audioKey": "pending/a1-hab-sc-1"
+          },
+          {
+            "es": "¡Qué casa tan luminosa! ¿Cuántas habitaciones tiene?",
+            "ar": "يا له من منزل مضيء! كم غرفة فيه؟",
+            "arEg": "يا له من بيت منور! فيه كام أوضة؟",
+            "audioKey": "pending/a1-hab-sc-2"
+          },
+          {
+            "es": "Tiene dos habitaciones, un salón amplio, la cocina y un baño.",
+            "ar": "فيه غرفتان وصالون واسع والمطبخ وحمام واحد.",
+            "arEg": "فيه أوضتين وصالة واسعة والمطبخ وحمام.",
+            "audioKey": "pending/a1-hab-sc-3"
+          },
+          {
+            "es": "Es un piso perfecto para ti, Bilal.",
+            "ar": "إنها شقة مثالية لك يا بلال.",
+            "arEg": "شقة ممتازة على مقاسك يا بلال.",
+            "audioKey": "pending/a1-hab-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا معظم الناس في المدن يعيشون في شقق سكنية (pisos)، ومصطلح 'el salón' يعني غرفة المعيشة واستقبال الضيوف، بينما 'la cocina' المطبخ، و'el dormitorio' أو 'la habitación' غرفة النوم.",
+    "pedagogicalRationaleAr": "كلمة habitación مؤنثة (la habitación / una habitación)، وcocina مؤنثة، بينما salón وbaño مذكران (el salón, el baño). يجب ترسيخ حفظ جنس كل غرفة مع أداتها.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_hab_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث وحدد عدد الغرف في الشقة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً لوصف المنزل:",
+        "stemEs": "Mi nuevo piso tiene tres habitaciones y un salón muy amplio.",
+        "stemAr": "شقتي الجديدة فيها ثلاث غرف وصالون واسع للغاية.",
+        "options": [
+          {
+            "id": "a1_hab_1_a",
+            "text": "Tres habitaciones",
+            "textAr": "ثلاث غرف",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hab_1_b",
+            "text": "Dos habitaciones",
+            "textAr": "غرفتان فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر tres (ثلاثة) وليس dos."
+          },
+          {
+            "id": "a1_hab_1_c",
+            "text": "Una habitación",
+            "textAr": "غرفة واحدة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر ثلاث غرف."
+          }
+        ],
+        "targetVocab": [
+          "habitación",
+          "salón",
+          "casa"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: tiene tres habitaciones.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-hab-ex-1",
+        "speechEs": "Mi nuevo piso tiene tres habitaciones y un salón muy amplio.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hab_1_a"
+          ],
+          "selectedOptionId": "a1_hab_1_a"
+        },
+        "errorFeedback": {
+          "a1_hab_1_b": "الصوت ذكر tres (ثلاثة) وليس dos.",
+          "a1_hab_1_c": "الصوت ذكر ثلاث غرف."
+        }
+      },
+      {
+        "id": "a1_hab_2_gender_salon",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر أداة التعريف المناسبة لكلمة salón (الصالون).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي أداة التعريف المناسبة لكلمة salón؟",
+        "stemEs": "En mi casa, ____ salón es muy luminoso.",
+        "stemAr": "في منزلي، الـ____ صالون مضيء جداً.",
+        "options": [
+          {
+            "id": "a1_hab_2_a",
+            "text": "el",
+            "textAr": "أداة المذكر المفرد",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hab_2_b",
+            "text": "la",
+            "textAr": "أداة المؤنث المفرد",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: كلمة salón مذكرة وتأخذ el وليس la."
+          },
+          {
+            "id": "a1_hab_2_c",
+            "text": "las",
+            "textAr": "أداة الجمع المؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمة مفردة مذكرة."
+          }
+        ],
+        "targetVocab": [
+          "salón",
+          "casa"
+        ],
+        "explanationAr": "كلمة salón مذكرة في الإسبانية: el salón.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hab_2_a"
+          ],
+          "selectedOptionId": "a1_hab_2_a"
+        },
+        "errorFeedback": {
+          "a1_hab_2_b": "خطأ: كلمة salón مذكرة وتأخذ el وليس la.",
+          "a1_hab_2_c": "الكلمة مفردة مذكرة."
+        }
+      },
+      {
+        "id": "a1_hab_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة المطبخ بالإسبانية في الفراغ.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (cocina) في الفراغ:",
+        "stemEs": "Preparo la cena en la ____.",
+        "stemAr": "أعد وجبة العشاء في الـ____.",
+        "targetVocab": [
+          "cocina",
+          "casa"
+        ],
+        "explanationAr": "المطبخ في الإسبانية هو: la cocina.",
+        "answerKey": {
+          "accepted": [
+            "cocina"
+          ],
+          "acceptableAnswers": [
+            "cocina"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hab_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف أجزاء المنزل.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_hab_4_order_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "a1_hab_4_order_t2",
+            "kind": "token",
+            "text": "casa"
+          },
+          {
+            "id": "a1_hab_4_order_t3",
+            "kind": "token",
+            "text": "tiene"
+          },
+          {
+            "id": "a1_hab_4_order_t4",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "a1_hab_4_order_t5",
+            "kind": "token",
+            "text": "baño"
+          },
+          {
+            "id": "a1_hab_4_order_t6",
+            "kind": "token",
+            "text": "moderno."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La casa tiene un baño moderno."
+          ],
+          "tokenOrder": [
+            "a1_hab_4_order_t1",
+            "a1_hab_4_order_t2",
+            "a1_hab_4_order_t3",
+            "a1_hab_4_order_t4",
+            "a1_hab_4_order_t5",
+            "a1_hab_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل La casa + الفعل tiene + المفعول un baño + الصفة moderno.",
+        "targetVocab": [
+          "casa",
+          "baño"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hab_5_bed",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو الأثاث الأساسي الذي يوجد في غرفة النوم؟",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "في غرفة النوم (la habitación) توجد عادة:",
+        "stemEs": "En el dormitorio hay una ____ cómoda.",
+        "stemAr": "في غرفة النوم يوجد ____ مريح.",
+        "options": [
+          {
+            "id": "a1_hab_5_a",
+            "text": "cama",
+            "textAr": "سرير",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hab_5_b",
+            "text": "cocina",
+            "textAr": "مطبخ",
+            "isCorrect": false,
+            "distractorRationaleAr": "cocina هي غرفة وليست قطعة أثاث للنوم."
+          },
+          {
+            "id": "a1_hab_5_c",
+            "text": "baño",
+            "textAr": "حمام",
+            "isCorrect": false,
+            "distractorRationaleAr": "baño هو الحمام."
+          }
+        ],
+        "targetVocab": [
+          "cama",
+          "habitación"
+        ],
+        "explanationAr": "السرير بالإسبانية هو la cama وهو مؤنث.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hab_5_a"
+          ],
+          "selectedOptionId": "a1_hab_5_a"
+        },
+        "errorFeedback": {
+          "a1_hab_5_b": "cocina هي غرفة وليست قطعة أثاث للنوم.",
+          "a1_hab_5_c": "baño هو الحمام."
+        }
+      },
+      {
+        "id": "a1_hab_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة وصف غرف الشقة بنطق سليم.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح:",
+        "stemEs": "Mi casa tiene dos habitaciones, salón, cocina y baño.",
+        "stemAr": "منزلي يضم غرفتين وصالوناً ومطبخاً وحماماً.",
+        "audioKey": "pending/a1-hab-ex-6",
+        "targetVocab": [
+          "casa",
+          "habitación",
+          "salón",
+          "cocina",
+          "baño"
+        ],
+        "explanationAr": "انتبه لنطق حرف b في ha-bi-ta-cio-nes وحرف c في co-ci-na.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-hab-ex-6",
+          "modelAnswer": "Mi casa tiene dos habitaciones, salón, cocina y baño."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

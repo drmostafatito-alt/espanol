@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-horario-trabajo",
+    "unitSlug": "a1-u9-work-study",
+    "levelCode": "A1",
+    "titleAr": "الوقت في العمل: ساعات الدوام والروتين المهني",
+    "titleEs": "El horario de trabajo",
+    "subtitleAr": "التعبير عن فترات الدوام بـ de... a... و desde... hasta... ويوم العمل",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحدد ساعات دوامه اليومي باستخدام de... a... أو desde las... hasta las....",
+        "أن يستخدم مفردات بيئة العمل: oficina, jornada, descanso, horario.",
+        "أن يميز بين الوصول مبكراً (temprano) والتأخر (tarde) في العمل."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التعبير عن الفترات الزمنية: de/a مقابل desde/hasta",
+          "explanationAr": "للتعبير عن بداية ونهاية فترة زمنية نستخدم صيغتين دقيقتين:\n1. de + ساعة + a + ساعة (بدون أداة تعريف): Trabajo de 9 a 5 (أعمل من التاسعة إلى الخامسة).\n2. desde las + ساعة + hasta las + ساعة (مع أداة التعريف إجبارياً): Trabajo desde las 9 hasta las 5.\nلا تخلط بين الصيغتين (تجنب *de las 9 a las 5* أو *desde 9 hasta 5*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين التركيبين بوضع أداة مع de أو حذفها مع desde (مثل *de las 9 a 5*).",
+        "الخلط بين tarde كظرف يعني 'متأخراً' و la tarde كاسم يعني 'فترة بعد الظهر'."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «مواعيدي من تسعة لخمسة، وعندي استراحة ساعة». في الإسبانية: Mi horario es de nueve a cinco, y tengo un descanso de una hora."
+        }
+      ],
+      "culturalNoteAr": "ساعات العمل في إسبانيا تنقسم تقليدياً إلى نوعين: jornada continua (دوام مستمر من 8 إلى 3) أو jornada partida (دوام مقسم يتخلله استراحة غداء طويلة)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-horario-trabajo-intro",
+        "type": "explanation",
+        "titleAr": "ساعات العمل والمواعيد",
+        "bodyAr": "الكلمات والتعبيرات الأساسية لجدول الدوام:\n- **el horario**: جدول المواعيد / الدوام\n- **la oficina**: المكتب / مقر العمل\n- **desde ... hasta ...**: من ... حتى ... (مع las للساعات)\n- **la jornada**: يوم العمل / نوبة الدوام\n- **el descanso**: الاستراحة / البريك\n- **temprano**: مبكراً\n- **tarde**: متأخراً",
+        "examples": [
+          {
+            "es": "Trabajo en una oficina moderna.",
+            "ar": "أعمل في مكتب حديث."
+          },
+          {
+            "es": "Mi horario es desde las ocho hasta las cuatro.",
+            "ar": "دوامي من الساعة الثامنة حتى الرابعة."
+          },
+          {
+            "es": "Llego temprano al trabajo.",
+            "ar": "أصل مبكراً إلى العمل."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "horario",
+      "oficina",
+      "desde",
+      "hasta",
+      "jornada",
+      "descanso",
+      "temprano",
+      "tarde"
+    ],
+    "reviewVocabulary": [
+      "trabajo"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يحدد ساعات دوامه اليومي باستخدام de... a... أو desde las... hasta las....",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-hor-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر المكمل لـ desde عند تحديد نهاية الدوام",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة المقابلة لـ desde لتحديد نهاية الوقت؟",
+        "stemEs": "Trabajo desde las nueve _____ las cinco.",
+        "stemAr": "أعمل من الساعة التاسعة حتى الخامسة.",
+        "options": [
+          {
+            "id": "ex-a1-hor-1_o1",
+            "text": "hasta",
+            "textAr": "حتى (تكملة desde)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-hor-1_o2",
+            "text": "a",
+            "textAr": "تستخدم مع de وليس desde",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع desde نستخدم hasta (desde... hasta...)."
+          },
+          {
+            "id": "ex-a1-hor-1_o3",
+            "text": "en",
+            "textAr": "في (للمكان أو الوقت المحدد)",
+            "isCorrect": false,
+            "distractorRationaleAr": "en لا تستخدم كنهاية لفترة زمنية مسبوقة بـ desde."
+          }
+        ],
+        "targetVocab": [
+          "desde",
+          "hasta",
+          "horario"
+        ],
+        "explanationAr": "الصيغة الصحيحة دائماً هي: desde las... hasta las....",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-hor-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-hor-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-hor-1_o2": "مع desde نستخدم hasta (desde... hasta...).",
+          "ex-a1-hor-1_o3": "en لا تستخدم كنهاية لفترة زمنية مسبوقة بـ desde."
+        }
+      },
+      {
+        "id": "ex-a1-hor-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة لمقر العمل والمكتب",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'المكتب' بالإسبانية",
+        "stemEs": "Empiezo a trabajar en la _____ a las ocho.",
+        "stemAr": "أبدأ العمل في المكتب عند الساعة الثامنة.",
+        "targetVocab": [
+          "oficina"
+        ],
+        "explanationAr": "كلمة oficina مؤنثة وتأخذ أداة التعريف la.",
+        "answerKey": {
+          "accepted": [
+            "oficina"
+          ],
+          "acceptableAnswers": [
+            "oficina"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-hor-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الظرف المعبر عن الحضور قبل الموعد",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "إذا وصلت قبل بدء الدوام بوقت كافٍ، فأنت تصل:",
+        "stemEs": "Siempre llego _____ a la oficina.",
+        "stemAr": "أصل دائماً ... إلى المكتب.",
+        "options": [
+          {
+            "id": "ex-a1-hor-3_o1",
+            "text": "temprano",
+            "textAr": "مبكراً",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-hor-3_o2",
+            "text": "tarde",
+            "textAr": "متأخراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "tarde تعني متأخراً وليس مبكراً."
+          },
+          {
+            "id": "ex-a1-hor-3_o3",
+            "text": "descanso",
+            "textAr": "استراحة (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "descanso اسم يعني استراحة ولا يصلح كظرف زمان هنا."
+          }
+        ],
+        "targetVocab": [
+          "temprano",
+          "tarde",
+          "descanso",
+          "oficina"
+        ],
+        "explanationAr": "كلمة temprano تعني مبكراً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-hor-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-hor-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-hor-3_o2": "tarde تعني متأخراً وليس مبكراً.",
+          "ex-a1-hor-3_o3": "descanso اسم يعني استراحة ولا يصلح كظرف زمان هنا."
+        }
+      },
+      {
+        "id": "ex-a1-hor-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتوضيح ساعات جدول العمل",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-hor-4_t1",
+            "kind": "token",
+            "text": "Mi"
+          },
+          {
+            "id": "ex-a1-hor-4_t2",
+            "kind": "token",
+            "text": "horario"
+          },
+          {
+            "id": "ex-a1-hor-4_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a1-hor-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a1-hor-4_t5",
+            "kind": "token",
+            "text": "ocho"
+          },
+          {
+            "id": "ex-a1-hor-4_t6",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a1-hor-4_t7",
+            "kind": "token",
+            "text": "cuatro"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mi horario es de ocho a cuatro"
+          ],
+          "tokenOrder": [
+            "ex-a1-hor-4_t1",
+            "ex-a1-hor-4_t2",
+            "ex-a1-hor-4_t3",
+            "ex-a1-hor-4_t4",
+            "ex-a1-hor-4_t5",
+            "ex-a1-hor-4_t6",
+            "ex-a1-hor-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل Mi horario ثم الفعل es ثم صيغة الساعات المختصرة de ocho a cuatro.",
+        "targetVocab": [
+          "horario"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-hor-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد فترة الاستراحة في الدوام",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتسجيل الموظف وحدد ما يتحدث عنه في المنتصف",
+        "stemEs": "A las dos tenemos un descanso para comer.",
+        "stemAr": "في تمام الثانية لدينا استراحة لتناول الطعام.",
+        "options": [
+          {
+            "id": "ex-a1-hor-5_o1",
+            "text": "descanso",
+            "textAr": "استراحة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-hor-5_o2",
+            "text": "jornada",
+            "textAr": "يوم عمل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ذكر تحديداً descanso وليس jornada."
+          },
+          {
+            "id": "ex-a1-hor-5_o3",
+            "text": "oficina",
+            "textAr": "مكتب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ركز على فترة الاستراحة."
+          }
+        ],
+        "targetVocab": [
+          "descanso",
+          "jornada",
+          "oficina"
+        ],
+        "explanationAr": "المتحدث قال: tenemos un descanso para comer.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_descanso_comer.mp3",
+        "speechEs": "A las dos tenemos un descanso para comer.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-hor-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-hor-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-hor-5_o2": "المتحدث ذكر تحديداً descanso وليس jornada.",
+          "ex-a1-hor-5_o3": "المتحدث ركز على فترة الاستراحة."
+        }
+      },
+      {
+        "id": "ex-a1-hor-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة ساعات عملك بوضوح",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك عن ساعات عملك من التاسعة حتى الخامسة",
+        "stemEs": "Mi jornada de trabajo termina tarde hoy.",
+        "stemAr": "يوم عملي ينتهي متأخراً اليوم.",
+        "audioKey": "pending/a1_jornada_termina.mp3",
+        "targetVocab": [
+          "jornada",
+          "trabajo",
+          "tarde"
+        ],
+        "explanationAr": "انتبه لنطق حرف j في jornada كـ خاء مرققة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_jornada_termina.mp3",
+          "modelAnswer": "Mi jornada de trabajo termina tarde hoy."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التعبير عن الفترات الزمنية: de/a مقابل desde/hasta"
+    ]
+  }
+}

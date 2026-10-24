@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-direcciones",
+    "unitSlug": "a1-u8-places",
+    "levelCode": "A1",
+    "titleAr": "إعطاء الاتجاهات: الوصف خطوة بخطوة في الشارع",
+    "titleEs": "Dar y pedir direcciones",
+    "subtitleAr": "توجيه المارة: todo recto و a la derecha و a la izquierda",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يفهم المتعلم ويعطي اتجاهات سير واضحة من خطوتين أو ثلاث.",
+        "أن يستخدم عبارات الاتجاه: todo recto (للأمام مباشرة)، a la derecha (إلى اليمين)، a la izquierda (إلى اليسار).",
+        "أن يوظف أفعال الحركة الأساسية: girar (يلف / ينعطف) و cruzar (يعبر الشارع)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "حرف الجر a مع الاتجاهات وأفعال التوجيه",
+          "explanationAr": "عند تحديد الاتجاه، نستخدم حرف الجر a دائماً: a la derecha (يميناً)، a la izquierda (يساراً)، بينما للأمام مباشرة نقول: todo recto (بدون حرف جر). لإعطاء التوجيهات لشخص، نستخدم المضارع بصيغة tú: sigues todo recto (تكمل طوالك)، giras a la derecha (تلف يميناً)، cruzas la calle (تعبر الشارع)، tomas la primera/segunda calle (تأخذ الشارع الأول/الثاني)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام en بدلاً من a مع اليمين واليسار (مثل *en la derecha* بدلاً من a la derecha).",
+        "الخلط بين derecho (مستقيم / مذكر) و derecha (يمين): todo recto تعني مستقيماً للأمام، بينما a la derecha تعني إلى اليمين."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «امشِ على طول، وبعدين خش يمين، وعدّي الشارع». في الإسبانية: Sigue todo recto, luego gira a la derecha y cruza la calle."
+        }
+      ],
+      "culturalNoteAr": "الإسبان مشهورون بكرمهم في إرشاد الغرباء في الشارع، وكثيراً ما يشيرون بأيديهم بحماس لمساعدتك على الوصول بدقة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-direcciones-intro",
+        "type": "explanation",
+        "titleAr": "تعبيرات الاتجاه والسير",
+        "bodyAr": "العبارات الأساسية لإعطاء الاتجاهات في المدينة:\n- **todo recto**: للأمام مباشرة / على طول\n- **a la derecha**: إلى اليمين / ع اليمين\n- **a la izquierda**: إلى اليسار / ع الشمال\n- **girar**: يلف / ينعطف (giras a la derecha)\n- **cruzar**: يعبر (cruzas la calle)\n- **la primera / la segunda**: الأولى / الثانية (tomas la primera calle)",
+        "examples": [
+          {
+            "es": "Vas todo recto hasta la plaza.",
+            "ar": "تمشي على طول حتى تصل إلى الميدان."
+          },
+          {
+            "es": "Giras a la derecha en la segunda calle.",
+            "ar": "تنعطف يميناً في الشارع الثاني."
+          },
+          {
+            "es": "Cruzas la calle y allí está el banco.",
+            "ar": "تعبر الشارع وهناك تجد البنك."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "derecha",
+      "izquierda",
+      "recto",
+      "girar",
+      "cruzar",
+      "primera",
+      "segunda"
+    ],
+    "reviewVocabulary": [
+      "calle",
+      "plaza"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يفهم المتعلم ويعطي اتجاهات سير واضحة من خطوتين أو ثلاث.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-dir-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الصحيح للمشي للأمام مباشرة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تقول لشخص 'امشِ على طول للأمام مباشرة'؟",
+        "stemEs": "Para ir al museo, sigues _____.",
+        "stemAr": "للذهاب إلى المتحف، تكمل ...",
+        "options": [
+          {
+            "id": "ex-a1-dir-1_o1",
+            "text": "todo recto",
+            "textAr": "للأمام مباشرة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dir-1_o2",
+            "text": "a la izquierda",
+            "textAr": "إلى اليسار",
+            "isCorrect": false,
+            "distractorRationaleAr": "a la izquierda تعني إلى اليسار وليس للأمام."
+          },
+          {
+            "id": "ex-a1-dir-1_o3",
+            "text": "segunda",
+            "textAr": "الثانية",
+            "isCorrect": false,
+            "distractorRationaleAr": "segunda صفة تعني الثانية وليست اتجاهاً مستقلاً."
+          }
+        ],
+        "targetVocab": [
+          "recto",
+          "izquierda",
+          "segunda"
+        ],
+        "explanationAr": "تعبير todo recto يعني السير مباشرة إلى الأمام دون انعطاف.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dir-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-dir-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dir-1_o2": "a la izquierda تعني إلى اليسار وليس للأمام.",
+          "ex-a1-dir-1_o3": "segunda صفة تعني الثانية وليست اتجاهاً مستقلاً."
+        }
+      },
+      {
+        "id": "ex-a1-dir-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الصحيح مع اليمين واليسار",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو حرف الجر الذي يأتي مع derecha و izquierda؟",
+        "stemEs": "En la esquina, giras _____ la derecha.",
+        "stemAr": "عند الزاوية، تنعطف ... اليمين.",
+        "options": [
+          {
+            "id": "ex-a1-dir-2_o1",
+            "text": "a",
+            "textAr": "حرف الجر المناسب للاتجاه",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dir-2_o2",
+            "text": "en",
+            "textAr": "حرف جر للمكان الثابت",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع الانعطاف والاتجاهات نستخدم a وليس en."
+          },
+          {
+            "id": "ex-a1-dir-2_o3",
+            "text": "de",
+            "textAr": "حرف جر للملكية أو المنشأ",
+            "isCorrect": false,
+            "distractorRationaleAr": "de لا تستخدم هنا، التعبير هو girar a la derecha."
+          }
+        ],
+        "targetVocab": [
+          "derecha",
+          "girar"
+        ],
+        "explanationAr": "نستخدم دائماً حرف الجر a مع الاتجاهات: a la derecha و a la izquierda.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dir-2_o1"
+          ],
+          "selectedOptionId": "ex-a1-dir-2_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dir-2_o2": "مع الانعطاف والاتجاهات نستخدم a وليس en.",
+          "ex-a1-dir-2_o3": "de لا تستخدم هنا، التعبير هو girar a la derecha."
+        }
+      },
+      {
+        "id": "ex-a1-dir-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الفعل المناسب لعبور الشارع",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الفعل الإسباني بصيغة tú الذي يعني 'تعبر الشارع'",
+        "stemEs": "Luego _____ la calle con cuidado.",
+        "stemAr": "ثم تعبر الشارع بحذر.",
+        "targetVocab": [
+          "cruzar"
+        ],
+        "explanationAr": "تصريف الفعل cruzar مع tú في المضارع هو cruzas.",
+        "answerKey": {
+          "accepted": [
+            "cruzas"
+          ],
+          "acceptableAnswers": [
+            "cruzas"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-dir-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتوجيه الشخص لأخذ الشارع الأول يميناً",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-dir-4_t1",
+            "kind": "token",
+            "text": "Tomas"
+          },
+          {
+            "id": "ex-a1-dir-4_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-dir-4_t3",
+            "kind": "token",
+            "text": "primera"
+          },
+          {
+            "id": "ex-a1-dir-4_t4",
+            "kind": "token",
+            "text": "calle"
+          },
+          {
+            "id": "ex-a1-dir-4_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a1-dir-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-dir-4_t7",
+            "kind": "token",
+            "text": "derecha"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tomas la primera calle a la derecha"
+          ],
+          "tokenOrder": [
+            "ex-a1-dir-4_t1",
+            "ex-a1-dir-4_t2",
+            "ex-a1-dir-4_t3",
+            "ex-a1-dir-4_t4",
+            "ex-a1-dir-4_t5",
+            "ex-a1-dir-4_t6",
+            "ex-a1-dir-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: الفعل Tomas ثم المفعول به la primera calle ثم الاتجاه a la derecha.",
+        "targetVocab": [
+          "primera",
+          "calle",
+          "derecha"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-dir-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الاتجاه المحدد في التسجيل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتوجيه الصوتي وحدد الاتجاه المطلوب",
+        "stemEs": "Giras a la izquierda en la plaza.",
+        "stemAr": "تنعطف إلى اليسار في الميدان.",
+        "options": [
+          {
+            "id": "ex-a1-dir-5_o1",
+            "text": "izquierda",
+            "textAr": "يسار",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-dir-5_o2",
+            "text": "derecha",
+            "textAr": "يمين",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال a la izquierda (يسار) وليس derecha."
+          },
+          {
+            "id": "ex-a1-dir-5_o3",
+            "text": "recto",
+            "textAr": "على طول",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث طلب الانعطاف يساراً وليس المشي للأمام."
+          }
+        ],
+        "targetVocab": [
+          "izquierda",
+          "derecha",
+          "recto",
+          "plaza"
+        ],
+        "explanationAr": "المتحدث يوجه السائل نحو اليسار بقوله: a la izquierda.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_giras_izquierda.mp3",
+        "speechEs": "Giras a la izquierda en la plaza.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-dir-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-dir-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-dir-5_o2": "المتحدث قال a la izquierda (يسار) وليس derecha.",
+          "ex-a1-dir-5_o3": "المتحدث طلب الانعطاف يساراً وليس المشي للأمام."
+        }
+      },
+      {
+        "id": "ex-a1-dir-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق التوجيه بوضوح لإرشاد زميلك",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق جملة التوجيه باللغة الإسبانية بلهجة طبيعية",
+        "stemEs": "Tomas la segunda calle a la izquierda.",
+        "stemAr": "تأخذ الشارع الثاني إلى اليسار.",
+        "audioKey": "pending/a1_segunda_calle_izq.mp3",
+        "targetVocab": [
+          "segunda",
+          "calle",
+          "izquierda"
+        ],
+        "explanationAr": "انتبه لنطق z في izquierda كـ ثاء في إسبانيا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_segunda_calle_izq.mp3",
+          "modelAnswer": "Tomas la segunda calle a la izquierda."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "حرف الجر a مع الاتجاهات وأفعال التوجيه"
+    ]
+  }
+}

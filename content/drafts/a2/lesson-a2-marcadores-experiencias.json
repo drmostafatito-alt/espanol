@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-marcadores-experiencias",
+    "unitSlug": "a2-u5-experiences",
+    "levelCode": "A2",
+    "titleAr": "علامات الخبرات الحياتية: Alguna vez و Ya و Todavía no",
+    "titleEs": "Marcadores temporales de experiencia",
+    "subtitleAr": "السؤال عن التجارب الحياتية السابقة والتعبير عن الإنجاز أو التأجيل",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسأل المتعلم عن التجارب الحياتية السابقة باستخدام: ¿Alguna vez has...? (هل سبق لك أن...؟).",
+        "أن يجيب بالإيجاب باستخدام ya (بالفعل / تماماً) مع الفعل المركب.",
+        "أن يجيب بالنفي باستخدام todavía no (ليس بعد) أو nunca (أبداً / قط)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "مؤشرات الخبرة مع Pretérito Perfecto",
+          "explanationAr": "تُستخدم علامات زمنية مميزة مع الماضي القريب للسؤال عن الخبرات المتراكمة طوال العمر:\n1. **¿Alguna vez has + participio?**: هل سبق لك في أي وقت من حياتك أن فعلت كذا؟\n- ¿Alguna vez has estado en Toledo? (هل سبق لك أن زرت طليطلة؟)\n2. الإجابة بالإثبات: **Sí, ya he + participio**:\n- Sí, ya he visitado Toledo (نعم، لقد زرتها بالفعل).\n3. الإجابة بالنفي: **No, todavía no he + participio**:\n- No, todavía no he ido (لا، لم أذهب بعد).\n4. النفي المطلق: **No, nunca he + participio** / **Jamás he + participio** (لا، لم أزرها قط في حياتي)."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'لسه ما عملتش' بحرفية بوضع بعد الفعل (الصواب وضع todavía no قبل الفعل المساعد: todavía no he comido).",
+        "الخلط بين ya (التي تفيد تحقق الفعل) و todavía (التي تفيد استمرار الحالة أو عدم تحققها مع no)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «عمرك سافرت إسبانيا؟ أيوة سافرت خلاص / لسه ما سافرتش / عمري ما سافرت». في الإسبانية: ¿Alguna vez has viajado? Sí, ya he viajado / No, todavía no / Nunca he viajado."
+        }
+      ],
+      "culturalNoteAr": "في المقابلات الشخصية والتعارف في إسبانيا، يُعد السؤال بـ «¿Alguna vez has...?» مفتاحاً لفتح نقاشات ودية ممتعة حول السفر والرياضة والطبخ."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-marcadores-experiencias-intro",
+        "type": "explanation",
+        "titleAr": "مؤشرات الخبرة الحياتية",
+        "bodyAr": "الكلمات الدالة على الخبرات:\n- **alguna vez**: في أي وقت / هل سبق لك\n- **nunca**: أبداً / قط\n- **jamás**: إطلاقاً / أبداً\n- **ya**: بالفعل / خلاص\n- **todavía no**: ليس بعد / لسه\n- **recientemente / últimamente**: مؤخراً / حديثاً",
+        "examples": [
+          {
+            "es": "¿Alguna vez has probado la comida mexicana?",
+            "ar": "¿هل سبق لك أن تذوقت الطعام المكسيكي؟"
+          },
+          {
+            "es": "No, todavía no la he probado.",
+            "ar": "لا، لم أتذوقه بعد."
+          },
+          {
+            "es": "Nunca he viajado en avión.",
+            "ar": "لم أسافر بالطائرة قط في حياتي."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "alguna vez",
+      "nunca",
+      "jamás",
+      "recientemente",
+      "últimamente"
+    ],
+    "reviewVocabulary": [
+      "ya",
+      "todavía"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يسأل المتعلم عن التجارب الحياتية السابقة باستخدام: ¿Alguna vez has...? (هل سبق لك أن...؟).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-exp-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير المناسب للسؤال عن التجارب السابقة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة التي تعني 'هل سبق لك يوماً'؟",
+        "stemEs": "¿_____ has montado a caballo?",
+        "stemAr": "هل ... ركبت حصاناً؟",
+        "options": [
+          {
+            "id": "ex-a2-exp-1_a",
+            "text": "Alguna vez",
+            "textAr": "هل سبق لك يوماً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-exp-1_b",
+            "text": "Todavía no",
+            "textAr": "ليس بعد (إجابة نفي)",
+            "isCorrect": false,
+            "distractorRationaleAr": "Todavía no تعني ليس بعد ولا تأتي كأداة استفهام هنا."
+          },
+          {
+            "id": "ex-a2-exp-1_c",
+            "text": "Nunca",
+            "textAr": "أبداً (نفي)",
+            "isCorrect": false,
+            "distractorRationaleAr": "Nunca تفيد النفي وليس الاستفسار عن التجربة."
+          }
+        ],
+        "targetVocab": [
+          "alguna vez",
+          "nunca",
+          "todavía"
+        ],
+        "explanationAr": "السؤال القياسي عن التجارب الحياتية يبدأ بـ: ¿Alguna vez has...?",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-exp-1_a"
+          ],
+          "selectedOptionId": "ex-a2-exp-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-exp-1_b": "Todavía no تعني ليس بعد ولا تأتي كأداة استفهام هنا.",
+          "ex-a2-exp-1_c": "Nunca تفيد النفي وليس الاستفسار عن التجربة."
+        }
+      },
+      {
+        "id": "ex-a2-exp-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الدالة على تحقق الفعل بالفعل",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية القصيرة التي تعني 'بالفعل / تم الأمر'",
+        "stemEs": "Sí, _____ he terminado de estudiar todo el temario.",
+        "stemAr": "نعم، لقد انتهيت من دراسة كامل المقرر بالفعل.",
+        "targetVocab": [
+          "ya"
+        ],
+        "explanationAr": "كلمة ya تسبق الفعل للدلالة على إنجاز الحدث وتحققه.",
+        "answerKey": {
+          "accepted": [
+            "ya"
+          ],
+          "acceptableAnswers": [
+            "ya"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-exp-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الدال على عدم حدوث الفعل حتى اللحظة مع إمكانية حدوثه",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تعبر عن أنك لم تزر الأندلس بعد ولكنك تنوي ذلك؟",
+        "stemEs": "No, _____ he visitado Granada, pero quiero ir pronto.",
+        "stemAr": "لا، ... أزر غرناطة، ولكنني أريد الذهاب قريباً.",
+        "options": [
+          {
+            "id": "ex-a2-exp-3_a",
+            "text": "todavía no",
+            "textAr": "ليس بعد (مع ترقب الحدوث)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-exp-3_b",
+            "text": "ya",
+            "textAr": "بالفعل (إثبات)",
+            "isCorrect": false,
+            "distractorRationaleAr": "ya تفيد وقوع الحدث بينما الجملة منفية."
+          },
+          {
+            "id": "ex-a2-exp-3_c",
+            "text": "alguna vez",
+            "textAr": "في أي وقت",
+            "isCorrect": false,
+            "distractorRationaleAr": "alguna vez تأتي في السؤال وليس في نفي الخبرة الحالية."
+          }
+        ],
+        "targetVocab": [
+          "todavía",
+          "ya",
+          "alguna vez"
+        ],
+        "explanationAr": "عبارة todavía no تعني 'ليس بعد' وتفيد ترقب وقوع الفعل مستقبلاً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-exp-3_a"
+          ],
+          "selectedOptionId": "ex-a2-exp-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-exp-3_b": "ya تفيد وقوع الحدث بينما الجملة منفية.",
+          "ex-a2-exp-3_c": "alguna vez تأتي في السؤال وليس في نفي الخبرة الحالية."
+        }
+      },
+      {
+        "id": "ex-a2-exp-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للنفي القاطع بعدم السفر بالقطار قط",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-exp-4_t1",
+            "kind": "token",
+            "text": "Nunca"
+          },
+          {
+            "id": "ex-a2-exp-4_t2",
+            "kind": "token",
+            "text": "he"
+          },
+          {
+            "id": "ex-a2-exp-4_t3",
+            "kind": "token",
+            "text": "viajado"
+          },
+          {
+            "id": "ex-a2-exp-4_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a2-exp-4_t5",
+            "kind": "token",
+            "text": "tren"
+          },
+          {
+            "id": "ex-a2-exp-4_t6",
+            "kind": "token",
+            "text": "rápido"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Nunca he viajado en tren rápido"
+          ],
+          "tokenOrder": [
+            "ex-a2-exp-4_t1",
+            "ex-a2-exp-4_t2",
+            "ex-a2-exp-4_t3",
+            "ex-a2-exp-4_t4",
+            "ex-a2-exp-4_t5",
+            "ex-a2-exp-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: أداة النفي المطلق Nunca ثم الفعل المركب he viajado ثم وسيلة النقل en tren rápido.",
+        "targetVocab": [
+          "nunca"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-exp-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما فعله المتحدث مؤخراً",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الظرف الزمني المستخدم",
+        "stemEs": "Últimamente he tenido muchas reuniones en el trabajo.",
+        "stemAr": "مؤخراً كان لدي اجتماعات كثيرة في العمل.",
+        "options": [
+          {
+            "id": "ex-a2-exp-5_a",
+            "text": "últimamente",
+            "textAr": "مؤخراً / في الآونة الأخيرة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-exp-5_b",
+            "text": "nunca",
+            "textAr": "أبداً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال últimamente وليس nunca."
+          },
+          {
+            "id": "ex-a2-exp-5_c",
+            "text": "jamás",
+            "textAr": "إطلاقاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن كثرة الاجتماعات مؤخراً."
+          }
+        ],
+        "targetVocab": [
+          "últimamente",
+          "nunca",
+          "jamás"
+        ],
+        "explanationAr": "الظرف المستخدم هو últimamente ويعني في الآونة الأخيرة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_ultimamente_reuniones.mp3",
+        "speechEs": "Últimamente he tenido muchas reuniones en el trabajo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-exp-5_a"
+          ],
+          "selectedOptionId": "ex-a2-exp-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-exp-5_b": "المتحدث قال últimamente وليس nunca.",
+          "ex-a2-exp-5_c": "المتحدث تحدث عن كثرة الاجتماعات مؤخراً."
+        }
+      },
+      {
+        "id": "ex-a2-exp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق سؤالك لصديقك عن تجاربه السابقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اسأل زميلك بنطق سليم عما إذا كان قد زار إسبانيا من قبل",
+        "stemEs": "¿Alguna vez has estado en España?",
+        "stemAr": "هل سبق لك أن زرت إسبانيا؟",
+        "audioKey": "pending/a2_alguna_vez_espana.mp3",
+        "targetVocab": [
+          "alguna vez"
+        ],
+        "explanationAr": "ارفع نبرة الصوت في نهاية السؤال الاستفهامي بنغم إسباني طبيعي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_alguna_vez_espana.mp3",
+          "modelAnswer": "¿Alguna vez has estado en España?"
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "مؤشرات الخبرة مع Pretérito Perfecto"
+    ]
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-acuerdo-clausulas-contractuales",
+    "unitSlug": "b2-u6-negotiation",
+    "levelCode": "B2",
+    "titleAr": "صياغة الاتفاقيات والبنود التعاقدية: اللغة القانونية والتثبيت النهائي",
+    "titleEs": "El acuerdo final y las cláusulas contractuales: Lenguaje jurídico y formalización",
+    "subtitleAr": "بنود السرية، غرامات التأخير (penalizaciones)، شروط الفسخ، وفض النزاعات",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقرأ المتعلم عقداً تجارياً إسبانياً ويفهم بنوده والتزاماته القانونية بدقة.",
+        "أن يوظف مصطلحات العقود: cláusula, entrar en vigor, rescisión, confidencialidad, indemnización por daños.",
+        "أن يصيغ شروط فض النزاعات وتحديد المحاكم المختصة (jurisdicción aplicable)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب القانونية الإلزامية في صياغة العقود",
+          "explanationAr": "1. **صياغة الالتزام المتبادل في ديباجة العقد**:\n- *Las partes acuerdan y convienen las siguientes cláusulas...*\n- *Ambas partes se comprometen a respetar escrupulosamente los términos pactados*.\n2. **التعبير عن السريان والمدة**:\n- *El presente contrato entrará en vigor a partir de la fecha de su firma*.\n- *Tendrá una vigencia de dos años prorrogables tácitamente*.\n3. **بنود الفسخ والتعويض**:\n- *El incumplimiento de cualquiera de las cláusulas facultará a la otra parte para rescindir el contrato*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *cancelar el contrato* في الوثائق الرسمية بدلاً من المصطلح القانوني الدقيق **rescindir el contrato**.",
+        "عدم الانتباه لصيغ التمديد التلقائي (prórroga tácita) التي قد تجدد التزامات العقد تلقائياً ما لم يتم الإخطار المسبق."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في العقود بنقول «العقد ده هيدخل حيز التنفيذ من تاريخ توقيعه، وأي خرق للبنود يدي الحق في فسخ العقد مع التعويض». بالإسبانية: Este contrato entrará en vigor a la firma, y su incumplimiento facultará para rescindirlo con indemnización."
+        }
+      ],
+      "culturalNoteAr": "العقود في إسبانيا تخضع للقانون المدني والتجاري المكتوب (Derecho continental) وتتطلب دقة قصوى في تحديد البنود والمحاكم المختصة (tribunales competentes)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-acuerdo-clausulas-contractuales-intro",
+        "type": "explanation",
+        "titleAr": "البنود التعاقدية الأساسية",
+        "bodyAr": "المفردات القانونية والتعاقدية:\n- **la cláusula**: البند والفقرة التعاقدية في الاتفاقية\n- **entrar en vigor**: يدخل حيز النفاذ والتنفيذ القانوني\n- **la rescisión**: الفسخ والإلغاء القانوني للعقد\n- **el incumplimiento**: الإخلال بالالتزام وعدم الوفاء بالبند\n- **el acuerdo de confidencialidad (NDA)**: اتفاقية السرية وحماية البيانات\n- **la jurisdicción competente**: الاختصاص القضائي والمحكمة المعتمدة للفصل في النزاع",
+        "examples": [
+          {
+            "es": "El presente contrato entrará en vigor al día siguiente de su firma por ambas partes.",
+            "ar": "يدخل هذا العقد حيز النفاذ في اليوم التالي لتوقيعه من قِبل الطرفين."
+          },
+          {
+            "es": "Cualquier incumplimiento de las obligaciones dará derecho a la rescisión inmediata.",
+            "ar": "أي إخلال بالالتزامات سيعطي الحق في الفسخ الفوري للعقد."
+          },
+          {
+            "es": "Ambas partes firmaron una cláusula estricta de confidencialidad para proteger la tecnología.",
+            "ar": "وقع الطرفان بند سرية صارم لحماية التكنولوجيا المتبادلة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "cláusula",
+      "entrar en vigor",
+      "rescisión",
+      "incumplimiento",
+      "confidencialidad",
+      "jurisdicción"
+    ],
+    "reviewVocabulary": [
+      "contrato",
+      "firma"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يقرأ المتعلم عقداً تجارياً إسبانياً ويفهم بنوده والتزاماته القانونية بدقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-acc-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح القانوني الدقيق الذي يعني فسخ العقد وإنهاء سريانه",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة القانونية المعتمدة لـ 'فسخ العقد وإلغائه بسبب إخلال أحد الأطراف'؟",
+        "stemEs": "El impago continuado durante tres meses facultará al arrendador para la _____ del contrato.",
+        "stemAr": "سيعطي استمرار عدم السداد مدة ثلاثة أشهر المؤجر الحق في ... العقد.",
+        "options": [
+          {
+            "id": "ex-b2-acc-1_a",
+            "text": "rescisión",
+            "textAr": "الفسخ القانوني للتعاقد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-acc-1_b",
+            "text": "hipótesis",
+            "textAr": "فرضية بحثية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفسخ القانوني يسمى la rescisión."
+          },
+          {
+            "id": "ex-b2-acc-1_c",
+            "text": "congoja",
+            "textAr": "غصة حزن",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح العقدي هو la rescisión."
+          }
+        ],
+        "targetVocab": [
+          "rescisión",
+          "incumplimiento",
+          "cláusula"
+        ],
+        "explanationAr": "la rescisión de un contrato هي الإلغاء والفسخ القانوني للرابطة التعاقدية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-acc-1_a"
+          ],
+          "selectedOptionId": "ex-b2-acc-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-acc-1_b": "الفسخ القانوني يسمى la rescisión.",
+          "ex-b2-acc-1_c": "المصطلح العقدي هو la rescisión."
+        }
+      },
+      {
+        "id": "ex-b2-acc-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل التعبير القانوني لسريان الاتفاقية ونفاذها: entrar en _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في التعبير: entrar en _____ (يدخل حيز النفاذ):",
+        "stemEs": "Las nuevas condiciones pactadas van a entrar en _____ a partir del uno de enero.",
+        "stemAr": "ستدخل الشروط الجديدة المتفق عليها حيز النفاذ والتطبيق ابتداءً من الأول من يناير.",
+        "targetVocab": [
+          "entrar en vigor"
+        ],
+        "explanationAr": "entrar en vigor تعني السريان القانوني ودخول الاتفاق حيز التطبيق الفعلي.",
+        "answerKey": {
+          "accepted": [
+            "vigor"
+          ],
+          "acceptableAnswers": [
+            "vigor"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-acc-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد البند التعاقدي الذي يحظر على الأطراف إفشاء أسرار العمل للغير",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو البند الإلزامي الذي يحمي سرية البيانات والمعلومات المتبادلة؟",
+        "stemEs": "Firmaron una estricta cláusula de _____ que prohíbe revelar información técnica a terceros.",
+        "stemAr": "وقعوا بند ... صارم يحظر إفشاء المعلومات الفنية لأطراف ثالثة.",
+        "options": [
+          {
+            "id": "ex-b2-acc-3_a",
+            "text": "confidencialidad",
+            "textAr": "السرية وكتمان الأسرار المهنية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-acc-3_b",
+            "text": "símil",
+            "textAr": "تشبيه بلاغي",
+            "isCorrect": false,
+            "distractorRationaleAr": "بند كتمان الأسرار يسمى cláusula de confidencialidad."
+          },
+          {
+            "id": "ex-b2-acc-3_c",
+            "text": "falacia",
+            "textAr": "مغالطة",
+            "isCorrect": false,
+            "distractorRationaleAr": "البند هو السرية confidencialidad."
+          }
+        ],
+        "targetVocab": [
+          "confidencialidad",
+          "cláusula",
+          "jurisdicción"
+        ],
+        "explanationAr": "la confidencialidad هي الالتزام القانوني بحفظ أسرار العمل وعدم إفشائها.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-acc-3_a"
+          ],
+          "selectedOptionId": "ex-b2-acc-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-acc-3_b": "بند كتمان الأسرار يسمى cláusula de confidencialidad.",
+          "ex-b2-acc-3_c": "البند هو السرية confidencialidad."
+        }
+      },
+      {
+        "id": "ex-b2-acc-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة القانونية لتحديد موعد سريان العقد",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-acc-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b2-acc-4_t2",
+            "kind": "token",
+            "text": "presente"
+          },
+          {
+            "id": "ex-b2-acc-4_t3",
+            "kind": "token",
+            "text": "acuerdo"
+          },
+          {
+            "id": "ex-b2-acc-4_t4",
+            "kind": "token",
+            "text": "entrará"
+          },
+          {
+            "id": "ex-b2-acc-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b2-acc-4_t6",
+            "kind": "token",
+            "text": "vigor"
+          },
+          {
+            "id": "ex-b2-acc-4_t7",
+            "kind": "token",
+            "text": "tras"
+          },
+          {
+            "id": "ex-b2-acc-4_t8",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-acc-4_t9",
+            "kind": "token",
+            "text": "firma"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El presente acuerdo entrará en vigor tras la firma"
+          ],
+          "tokenOrder": [
+            "ex-b2-acc-4_t1",
+            "ex-b2-acc-4_t2",
+            "ex-b2-acc-4_t3",
+            "ex-b2-acc-4_t4",
+            "ex-b2-acc-4_t5",
+            "ex-b2-acc-4_t6",
+            "ex-b2-acc-4_t7",
+            "ex-b2-acc-4_t8",
+            "ex-b2-acc-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ El presente acuerdo ثم الفعل entrará en vigor ثم الظرف tras la firma.",
+        "targetVocab": [
+          "entrar en vigor",
+          "cláusula"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-acc-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمستشار القانوني وحدد العواقب المترتبة على الإخلال بالبنود",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشرح المحامي لبنود العقد",
+        "stemEs": "El incumplimiento de este compromiso acarreará severas indemnizaciones por daños.",
+        "stemAr": "سيترتب على الإخلال بهذا الالتزام تعويضات مالية صارمة عن الأضرار.",
+        "options": [
+          {
+            "id": "ex-b2-acc-5_a",
+            "text": "incumplimiento",
+            "textAr": "الإخلال بالالتزام وعدم الوفاء بالبند (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-acc-5_b",
+            "text": "éxito rotundo",
+            "textAr": "نجاح باهر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحامي حذر من el incumplimiento."
+          },
+          {
+            "id": "ex-b2-acc-5_c",
+            "text": "consenso",
+            "textAr": "توافق",
+            "isCorrect": false,
+            "distractorRationaleAr": "التحذير كان من الإخلال incumplimiento."
+          }
+        ],
+        "targetVocab": [
+          "incumplimiento",
+          "rescisión"
+        ],
+        "explanationAr": "المستشار القانوني قال: 'El incumplimiento de este compromiso acarreará severas indemnizaciones'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_incumplimiento_compromiso_indemnizaciones.mp3",
+        "speechEs": "El incumplimiento de este compromiso acarreará severas indemnizaciones por daños.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-acc-5_a"
+          ],
+          "selectedOptionId": "ex-b2-acc-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-acc-5_b": "المحامي حذر من el incumplimiento.",
+          "ex-b2-acc-5_c": "التحذير كان من الإخلال incumplimiento."
+        }
+      },
+      {
+        "id": "ex-b2-acc-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك الختامية لتثبيت توقيع العقد وسريان بنوده باعتزاز واحترافية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة التالية في ختام جلسة توقيع الاتفاقية التجارية الرسمية:",
+        "stemEs": "Ambas partes aceptamos cada cláusula, formalizamos la confidencialidad y el contrato entra en vigor hoy.",
+        "stemAr": "كلا الطرفين نقبل كل بند، ونعتمد السرية ويدخل العقد حيز النفاذ اليوم.",
+        "audioKey": "pending/b2_aceptamos_clausula_confidencialidad_vigor.mp3",
+        "targetVocab": [
+          "cláusula",
+          "confidencialidad",
+          "entrar en vigor",
+          "rescisión"
+        ],
+        "explanationAr": "انتبه لنطق cláusula و confidencialidad بوضوح قانوني رصين.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_aceptamos_clausula_confidencialidad_vigor.mp3",
+          "modelAnswer": "Ambas partes aceptamos cada cláusula, formalizamos la confidencialidad y el contrato entra en vigor hoy."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب القانونية الإلزامية في صياغة العقود"
+    ]
+  }
+}

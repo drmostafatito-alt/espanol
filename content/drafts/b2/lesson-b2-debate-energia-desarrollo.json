@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-debate-energia-desarrollo",
+    "unitSlug": "b2-u7-environment",
+    "levelCode": "B2",
+    "titleAr": "مناظرة بيئية: الطاقة المتجددة مقابل التنمية والنمو الاقتصادي",
+    "titleEs": "Debate ecológico: Energías renovables frente a soberanía energética y desarrollo",
+    "subtitleAr": "المفاضلة بين الطاقة النووية، مزارع الرياح، وتكلفة الفاتورة الكهربائية",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يشارك المتعلم في مناظرة متقدمة حول مزايا وعيوب مصادر الطاقة المختلفة.",
+        "أن يوظف مصطلحات الجدل الطاقي: soberanía energética, parque eólico, energía fotovoltaica, descarbonización, dilema ético.",
+        "أن يقدم حججاً مفحمة تدعم موقفه وتفند اعتراضات الخصم بموضوعية ولباقة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب المناظرة والمفاضلة المعقدة بين الخيارات التنموية",
+          "explanationAr": "1. **طرح المعضلة والمفاضلة الصعبة**:\n- *Nos encontramos ante un dilema ético y económico crucial...*\n- *¿Hasta qué punto es compatible el crecimiento ilimitado con los límites biofísicos del planeta?*\n2. **التعبير عن الاعتراض المقيد (Concesión matizada)**:\n- *Si bien es cierto que las renovables requieren inversión inicial, su coste operativo es nulo*.\n- *No se puede obviar el impacto paisajístico de los parques eólicos, pero el coste de no actuar es mayor*.\n3. **تأكيد السيادة الطاقية**:\n- *Apostar por la descarbonización es la única vía para garantizar nuestra soberanía energética*."
+        }
+      ],
+      "commonMistakesAr": [
+        "الاستقطاب الحاد في المناظرة واستخدام اتهامات شخصية بدلاً من التركيز على الأرقام وحقائق التكلفة والإنتاجية.",
+        "الخلط بين مفهوم 'الطاقة النظيفة' (limpia) ومفهوم 'الطاقة المتجددة' (renovable)؛ فالطاقة النووية مثلاً منخفضة الكربون لكنها غير متجددة وتولد نفايات مشعة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في المناظرات بنقول «مع إن الطاقة الشمسية والرياح مكلفة في الأول، بس ده الخيار الوحيد عشان نستقل في طاقتنا ونحمي البيئة». بالإسبانية: Si bien la inversión es alta, las renovables son la única vía para lograr la soberanía energética."
+        }
+      ],
+      "culturalNoteAr": "إسبانيا شهدت نقاشاً مجتمعياً واسعاً حول التوازن بين نشر محطات الطاقة الشمسية وطاقة الرياح في الريف والحفاظ على التنوع الحيوي والمناظر الطبيعية والزراعة التقليدية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-debate-energia-desarrollo-intro",
+        "type": "explanation",
+        "titleAr": "ترسانة الجدل حول الطاقة والتنمية",
+        "bodyAr": "المفاهيم المحورية للمناظرة:\n- **la soberanía energética**: السيادة والاستقلالية الطاقية وعدم الارتهان للغاز والنفط الخارجي\n- **el parque eólico**: حقل ومزرعة توربينات طاقة الرياح\n- **la energía fotovoltaica**: الطاقة الكهروضوئية الشمسية\n- **la descarbonización**: التخلص التدريجي من الوقود الأحفوري وتحييد الكربون\n- **el dilema ético**: المعضلة الأخلاقية والتنموية في المفاضلة بين أمرين ملحين\n- **el impacto paisajístico**: الأثر البصري والجمالي للمحطات على المنظر الطبيعي",
+        "examples": [
+          {
+            "es": "El despliegue de parques eólicos suscita debates por su impacto paisajístico en zonas rurales.",
+            "ar": "يثير نشر مزارع الرياح نقاشات حول أثرها البصري على المشهد الطبيعي في المناطق الريفية."
+          },
+          {
+            "es": "Alcanzar la soberanía energética pasa necesariamente por acelerar la descarbonización.",
+            "ar": "يمر تحقيق السيادة الطاقية بالضرورة عبر تسريع التخلص من الكربون."
+          },
+          {
+            "es": "La sociedad afronta el dilema ético de compatibilizar el progreso industrial con la ecología.",
+            "ar": "يواجه المجتمع المعضلة الأخلاقية المتمثلة في التوفيق بين التقدم الصناعي وحماية البيئة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "soberanía energética",
+      "parque eólico",
+      "energía fotovoltaica",
+      "descarbonización",
+      "dilema ético",
+      "impacto paisajístico"
+    ],
+    "reviewVocabulary": [
+      "energía",
+      "desarrollo"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يشارك المتعلم في مناظرة متقدمة حول مزايا وعيوب مصادر الطاقة المختلفة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-ded-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يعني قدرة الدولة على تأمين احتياجاتها من الطاقة دون التبعية للخارج",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة الاستراتيجية التي تعني 'الاستقلالية وعدم الاعتماد على الوقود المستورد'؟",
+        "stemEs": "La crisis del gas demostró la urgente necesidad de avanzar hacia la _____ nacional.",
+        "stemAr": "أظهرت أزمة الغاز الحاجة الملحة للمضي قدماً نحو ... الوطنية.",
+        "options": [
+          {
+            "id": "ex-b2-ded-1_a",
+            "text": "soberanía energética",
+            "textAr": "السيادة والاستقلالية الطاقية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ded-1_b",
+            "text": "tasa de natalidad",
+            "textAr": "معدل المواليد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاستقلال الطاقي يسمى la soberanía energética."
+          },
+          {
+            "id": "ex-b2-ded-1_c",
+            "text": "congoja",
+            "textAr": "غصة حزن",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم الاستراتيجي هو soberanía energética."
+          }
+        ],
+        "targetVocab": [
+          "soberanía energética",
+          "descarbonización"
+        ],
+        "explanationAr": "la soberanía energética هي استقلالية الدولة في إنتاج طاقتها بالاعتماد على مواردها الذاتية النظيفة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ded-1_a"
+          ],
+          "selectedOptionId": "ex-b2-ded-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ded-1_b": "الاستقلال الطاقي يسمى la soberanía energética.",
+          "ex-b2-ded-1_c": "المفهوم الاستراتيجي هو soberanía energética."
+        }
+      },
+      {
+        "id": "ex-b2-ded-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني مجمع توربينات طاقة الرياح: el _____ eólico",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة الناقصة: un _____ eólico (مزرعة لتوليد الطاقة من الرياح):",
+        "stemEs": "La instalación del nuevo _____ eólico generará electricidad limpia para cien mil hogares.",
+        "stemAr": "ستولد محطة حقل ... الجديد كهرباء نظيفة لمائة ألف منزل.",
+        "targetVocab": [
+          "parque eólico"
+        ],
+        "explanationAr": "el parque eólico هو مجمع توربينات الرياح المخصص لتوليد الكهرباء.",
+        "answerKey": {
+          "accepted": [
+            "parque"
+          ],
+          "acceptableAnswers": [
+            "parque"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ded-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العملية الاقتصادية والصناعية التي تهدف للتخلص من حرق الوقود الأحفوري والانبعاثات",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي المسار الشامل لإزالة الكربون من وسائل النقل والصناعة وتوليد الطاقة؟",
+        "stemEs": "La _____ total de la economía exigirá cuantiosas inversiones en redes inteligentes.",
+        "stemAr": "سيتطلب التخلص التام من ... في مفاصل الاقتصاد استثمارات ضخمة في الشبكات الذكية.",
+        "options": [
+          {
+            "id": "ex-b2-ded-3_a",
+            "text": "descarbonización",
+            "textAr": "إزالة الكربون والتخلص من الوقود الأحفوري (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ded-3_b",
+            "text": "rescisión",
+            "textAr": "فسخ عقد",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسار البيئي يسمى la descarbonización."
+          },
+          {
+            "id": "ex-b2-ded-3_c",
+            "text": "paráfrasis",
+            "textAr": "إعادة صياغة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح البيئي هو descarbonización."
+          }
+        ],
+        "targetVocab": [
+          "descarbonización",
+          "soberanía energética",
+          "energía fotovoltaica"
+        ],
+        "explanationAr": "la descarbonización هي التحول الكامل نحو أنشطة لا تصدر انبعاثات كربونية ضارة بالمناخ.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ded-3_a"
+          ],
+          "selectedOptionId": "ex-b2-ded-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ded-3_b": "المسار البيئي يسمى la descarbonización.",
+          "ex-b2-ded-3_c": "المصطلح البيئي هو descarbonización."
+        }
+      },
+      {
+        "id": "ex-b2-ded-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الحوارية لبيان المعضلة التنموية في المناظرة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-ded-4_t1",
+            "kind": "token",
+            "text": "Nos"
+          },
+          {
+            "id": "ex-b2-ded-4_t2",
+            "kind": "token",
+            "text": "enfrentamos"
+          },
+          {
+            "id": "ex-b2-ded-4_t3",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b2-ded-4_t4",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b2-ded-4_t5",
+            "kind": "token",
+            "text": "grave"
+          },
+          {
+            "id": "ex-b2-ded-4_t6",
+            "kind": "token",
+            "text": "dilema"
+          },
+          {
+            "id": "ex-b2-ded-4_t7",
+            "kind": "token",
+            "text": "ético"
+          },
+          {
+            "id": "ex-b2-ded-4_t8",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-b2-ded-4_t9",
+            "kind": "token",
+            "text": "económico"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Nos enfrentamos a un grave dilema ético y económico"
+          ],
+          "tokenOrder": [
+            "ex-b2-ded-4_t1",
+            "ex-b2-ded-4_t2",
+            "ex-b2-ded-4_t3",
+            "ex-b2-ded-4_t4",
+            "ex-b2-ded-4_t5",
+            "ex-b2-ded-4_t6",
+            "ex-b2-ded-4_t7",
+            "ex-b2-ded-4_t8",
+            "ex-b2-ded-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل والانعكاس Nos enfrentamos ثم حرف الجر a ثم الموصوف un grave dilema ثم النعت ético y económico.",
+        "targetVocab": [
+          "dilema ético",
+          "impacto paisajístico"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ded-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمناظر المعارض وحدد العيب البيئي والبصري الذي يعترض عليه في المشروع",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لحجة المتحدث في جلسة الاستماع العامة للبلدية",
+        "stemEs": "Los vecinos protestan contra el grave impacto paisajístico de las megainstalaciones solares.",
+        "stemAr": "يحتج السكان المحليون ضد الأثر البصري والمشهد الطبيعي المشوه للمنشآت الشمسية الضخمة.",
+        "options": [
+          {
+            "id": "ex-b2-ded-5_a",
+            "text": "impacto paisajístico",
+            "textAr": "الأثر البصري وتشويه المشهد الطبيعي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ded-5_b",
+            "text": "soberanía energética",
+            "textAr": "سيادة طاقية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاعتراض كان على el grave impacto paisajístico."
+          },
+          {
+            "id": "ex-b2-ded-5_c",
+            "text": "beneficio mutuo",
+            "textAr": "فائدة مشتركة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشكوى كانت من impacto paisajístico."
+          }
+        ],
+        "targetVocab": [
+          "impacto paisajístico",
+          "parque eólico"
+        ],
+        "explanationAr": "المتحدث قال: 'el grave impacto paisajístico de las megainstalaciones'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_impacto_paisajistico_megainstalaciones.mp3",
+        "speechEs": "Los vecinos protestan contra el grave impacto paisajístico de las megainstalaciones solares.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ded-5_a"
+          ],
+          "selectedOptionId": "ex-b2-ded-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ded-5_b": "الاعتراض كان على el grave impacto paisajístico.",
+          "ex-b2-ded-5_c": "الشكوى كانت من impacto paisajístico."
+        }
+      },
+      {
+        "id": "ex-b2-ded-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق مرافعتك في المناظرة دفاعاً عن الطاقة النظيفة والسيادة الطاقية بقوة وإقناع",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتقديم حجة ختامية مقنعة في المناظرة البيئية:",
+        "stemEs": "Para lograr la soberanía energética y frenar el cambio climático, la descarbonización es una prioridad absoluta.",
+        "stemAr": "لتحقيق السيادة الطاقية وكبح جماح التغير المناخي، يُعد التخلص من الكربون أولوية مطلقة.",
+        "audioKey": "pending/b2_soberania_energetica_descarbonizacion_prioridad.mp3",
+        "targetVocab": [
+          "soberanía energética",
+          "descarbonización",
+          "dilema ético",
+          "parque eólico"
+        ],
+        "explanationAr": "انتبه لنطق soberanía energética و descarbonización بنبرة سجالية واثقة ومفحمة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_soberania_energetica_descarbonizacion_prioridad.mp3",
+          "modelAnswer": "Para lograr la soberanía energética y frenar el cambio climático, la descarbonización es una prioridad absoluta."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تراكيب المناظرة والمفاضلة المعقدة بين الخيارات التنموية"
+    ]
+  }
+}

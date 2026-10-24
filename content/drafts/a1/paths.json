@@ -26,6 +26,132 @@
             "a1-u2-saludos",
             "a1-u3-nacionalidades"
           ]
+        },
+        {
+          "slug": "a1-u2-family",
+          "levelCode": "A1",
+          "titleAr": "العائلة والأصدقاء",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "a1-mi-familia",
+            "a1-tener-anos",
+            "a1-posesivos",
+            "a1-describir-persona"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u3-numbers-time",
+          "levelCode": "A1",
+          "titleAr": "الأرقام والوقت والمواعيد",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "a1-numeros-20-100",
+            "a1-la-hora",
+            "a1-dias-meses",
+            "a1-cita"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u4-food-drink",
+          "levelCode": "A1",
+          "titleAr": "الطعام والشراب والأسعار",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "a1-vocabulario-comida",
+            "a1-pedir-en-cafe",
+            "a1-precios-cuentas",
+            "a1-gustar"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u5-shopping",
+          "levelCode": "A1",
+          "titleAr": "التسوق والحاجات",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "a1-colores-ropa",
+            "a1-necesitar",
+            "a1-tallas",
+            "a1-comprar"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u6-home",
+          "levelCode": "A1",
+          "titleAr": "المنزل والغرف",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "a1-habitaciones",
+            "a1-hay-estar",
+            "a1-muebles",
+            "a1-rutina-casa"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u7-routine",
+          "levelCode": "A1",
+          "titleAr": "الروتين اليومي وأوقات الفراغ",
+          "sortOrder": 7,
+          "status": "draft",
+          "lessons": [
+            "a1-verbos-rutina",
+            "a1-hora-rutina",
+            "a1-hobbies",
+            "a1-mi-dia"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u8-places",
+          "levelCode": "A1",
+          "titleAr": "الأماكن والاتجاهات",
+          "sortOrder": 8,
+          "status": "draft",
+          "lessons": [
+            "a1-lugares-ciudad",
+            "a1-donde-esta",
+            "a1-direcciones",
+            "a1-transporte"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u9-work-study",
+          "levelCode": "A1",
+          "titleAr": "العمل والدراسة",
+          "sortOrder": 9,
+          "status": "draft",
+          "lessons": [
+            "a1-profesiones",
+            "a1-estudiar",
+            "a1-horario-trabajo",
+            "a1-presentacion-profesional"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "a1-u10-health-basics",
+          "levelCode": "A1",
+          "titleAr": "الصحة الأساسية والمساعدة",
+          "sortOrder": 10,
+          "status": "draft",
+          "lessons": [
+            "a1-cuerpo",
+            "a1-doler",
+            "a1-farmacia",
+            "a1-emergencia"
+          ],
+          "vocabularyBundles": []
         }
       ]
     }

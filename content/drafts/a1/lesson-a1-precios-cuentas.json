@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-precios-cuentas",
+    "titleAr": "الأسعار والحساب: السؤال عن الثمن وطلب الفاتورة",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u4-food-drink",
+    "objectiveAr": "أن يسأل المتعلم عن سعر الأشياء بـ ¿Cuánto cuesta / cuestan? ويطلب الحساب بـ La cuenta, por favor ويفهم الإجمالي بالأرقام واليورو.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "writing",
+      "vocabulary",
+      "speaking",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "cuenta",
+      "euro",
+      "costar",
+      "café",
+      "agua",
+      "pan"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "tres",
+      "cuatro",
+      "cinco"
+    ],
+    "targetStructures": [
+      "¿Cuánto cuesta el café? — Cuesta dos euros.",
+      "¿Cuánto cuestan estos pasteles? — Cuestan cuatro euros.",
+      "La cuenta, por favor. ¿Se puede pagar con tarjeta?"
+    ],
+    "grammarTopics": [
+      "concordancia-verbo-costar",
+      "pedir-la-cuenta",
+      "numeros-precios-euros"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ليلى تنهي فطورها في مطعم صغير في إشبيلية وتطلب الفاتورة من النادل وتدفع بالبطاقة المصرفية.",
+        "settingAr": "مطعم تقليدي في حي سانتا كروز بإشبيلية",
+        "lines": [
+          {
+            "es": "Perdón, camarero, ¿me trae la cuenta, por favor?",
+            "ar": "معذرة أيها النادل، هل تحضر لي الحساب من فضلك؟",
+            "arEg": "لو سمحت يا كابتن، الحساب بعد إذنك؟",
+            "audioKey": "pending/a1-pre-sc-1"
+          },
+          {
+            "es": "Sí, claro. Son cinco euros con cincuenta céntimos.",
+            "ar": "نعم بالطبع. المجموع خمسة يورو وخمسون سنتاً.",
+            "arEg": "أيوه طبعاً. الحساب خمسة يورو ونص.",
+            "audioKey": "pending/a1-pre-sc-2"
+          },
+          {
+            "es": "¿Se puede pagar con tarjeta de crédito?",
+            "ar": "هل يمكن الدفع ببطاقة الائتمان؟",
+            "arEg": "ينفع أدفع بالفيزا؟",
+            "audioKey": "pending/a1-pre-sc-3"
+          },
+          {
+            "es": "Sí, por supuesto, ningún problema.",
+            "ar": "نعم بكل تأكيد، لا توجد مشكلة.",
+            "arEg": "أيوه طبعاً، مافيش أي مشكلة.",
+            "audioKey": "pending/a1-pre-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "طلب الحساب في إسبانيا يُقال عادة: 'La cuenta, por favor'. والبقشيش (la propina) اختياري وليس إجبارياً في الثقافة الإسبانية، ويُترك عادة كقطع نقدية صغيرة إذا كانت الخدمة ممتازة.",
+    "pedagogicalRationaleAr": "الفعل costar يطابق الاسم الذي يليه: ¿Cuánto cuesta? للمفرد (el café)، و¿Cuánto cuestan? للجمع (los cafés). من الأخطاء المنتظمة استخدام صيغة المفرد cuesta دائماً مع الجمع.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_pre_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمبلغ وحدد إجمالي الفاتورة المطلوب.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للنادل وهو يحدد قيمة الحساب الإجمالية:",
+        "stemEs": "En total son cuatro euros con cincuenta.",
+        "stemAr": "في المجموع أربعة يورو وخمسون سنتاً.",
+        "options": [
+          {
+            "id": "a1_pre_1_a",
+            "text": "Cuatro euros con cincuenta",
+            "textAr": "أربعة يورو ونصف (4,50 €)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pre_1_b",
+            "text": "Cinco euros con cuarenta",
+            "textAr": "خمسة يورو وأربعون سنتاً (5,40 €)",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكست الأرقام: الصوت قال cuatro euros (أربعة يورو)."
+          },
+          {
+            "id": "a1_pre_1_c",
+            "text": "Cuatro euros",
+            "textAr": "أربعة يورو فقط (4,00 €)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر معها con cincuenta (مع خمسين سنتاً)."
+          }
+        ],
+        "targetVocab": [
+          "euro",
+          "cuenta",
+          "cuatro"
+        ],
+        "explanationAr": "المبلغ المنطوق هو cuatro euros con cincuenta أي 4,50 يورو.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-pre-ex-1",
+        "speechEs": "En total son cuatro euros con cincuenta.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pre_1_a"
+          ],
+          "selectedOptionId": "a1_pre_1_a"
+        },
+        "errorFeedback": {
+          "a1_pre_1_b": "عكست الأرقام: الصوت قال cuatro euros (أربعة يورو).",
+          "a1_pre_1_c": "الصوت ذكر معها con cincuenta (مع خمسين سنتاً)."
+        }
+      },
+      {
+        "id": "a1_pre_2_agreement",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل costar المناسبة للاسم الجمع.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نسأل عن سعر شيئين أو أكثر في الإسبانية؟",
+        "stemEs": "¿Cuánto ____ estos dos cafés con leche?",
+        "stemAr": "كم ____ هذان الفنجانان من القهوة بالحليب؟",
+        "options": [
+          {
+            "id": "a1_pre_2_a",
+            "text": "cuestan",
+            "textAr": "تكلفتها (للجمع)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pre_2_b",
+            "text": "cuesta",
+            "textAr": "تكلفتها (للمفرد فقط)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: الفاعل هنا اسم جمع (estos dos cafés)، لذا يجب استخدام cuestan."
+          },
+          {
+            "id": "a1_pre_2_c",
+            "text": "costar",
+            "textAr": "الفعل في المصدر",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يمكن وضع الفعل في المصدر في السؤال بدون تصريف."
+          }
+        ],
+        "targetVocab": [
+          "costar",
+          "café",
+          "dos"
+        ],
+        "explanationAr": "الفاعل هنا جمع (estos dos cafés)، وبالتالي الفعل يطابق الجمع ويصبح: cuestan.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pre_2_a"
+          ],
+          "selectedOptionId": "a1_pre_2_a"
+        },
+        "errorFeedback": {
+          "a1_pre_2_b": "خطأ: الفاعل هنا اسم جمع (estos dos cafés)، لذا يجب استخدام cuestan.",
+          "a1_pre_2_c": "لا يمكن وضع الفعل في المصدر في السؤال بدون تصريف."
+        }
+      },
+      {
+        "id": "a1_pre_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة «الحساب / الفاتورة» بالإسبانية.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل جملة طلب الفاتورة بكتابة كلمة (cuenta):",
+        "stemEs": "Camarero, la ____, por favor.",
+        "stemAr": "أيها النادل، الـ____، من فضلك.",
+        "targetVocab": [
+          "cuenta"
+        ],
+        "explanationAr": "كلمة الحساب أو الفاتورة في المطعم هي la cuenta.",
+        "answerKey": {
+          "accepted": [
+            "cuenta"
+          ],
+          "acceptableAnswers": [
+            "cuenta"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pre_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات للسؤال عن السعر الإجمالي.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_pre_4_order_t1",
+            "kind": "token",
+            "text": "¿Cuánto"
+          },
+          {
+            "id": "a1_pre_4_order_t2",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "a1_pre_4_order_t3",
+            "kind": "token",
+            "text": "todo"
+          },
+          {
+            "id": "a1_pre_4_order_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "a1_pre_4_order_t5",
+            "kind": "token",
+            "text": "total?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Cuánto es todo en total?"
+          ],
+          "tokenOrder": [
+            "a1_pre_4_order_t1",
+            "a1_pre_4_order_t2",
+            "a1_pre_4_order_t3",
+            "a1_pre_4_order_t4",
+            "a1_pre_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب المعياري: أداة الاستفهام ¿Cuánto + فعل الكينونة es + الاسم todo + شبه الجملة en total?",
+        "targetVocab": [
+          "cuenta",
+          "euro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_pre_5_singular",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة السؤال المناسبة لاسم مفرد (قطعة الخبز).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "للسؤال عن سعر قطعة الخبز المفردة نستخدم:",
+        "stemEs": "¿Cuánto ____ esta barra de pan?",
+        "stemAr": "كم ____ هذا الرغيف من الخبز؟",
+        "options": [
+          {
+            "id": "a1_pre_5_a",
+            "text": "cuesta",
+            "textAr": "يكلف (للمفرد)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_pre_5_b",
+            "text": "cuestan",
+            "textAr": "تكلف (للجمع)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفاعل هنا مفرد (esta barra de pan) فيأخذ cuesta."
+          },
+          {
+            "id": "a1_pre_5_c",
+            "text": "costamos",
+            "textAr": "نحن نكلف",
+            "isCorrect": false,
+            "distractorRationaleAr": "تصريف غير مناسب للضمير nosotros."
+          }
+        ],
+        "targetVocab": [
+          "costar",
+          "pan"
+        ],
+        "explanationAr": "الفاعل مفرد (esta barra de pan)، لذا نستخدم صيغة المفرد: cuesta.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_pre_5_a"
+          ],
+          "selectedOptionId": "a1_pre_5_a"
+        },
+        "errorFeedback": {
+          "a1_pre_5_b": "الفاعل هنا مفرد (esta barra de pan) فيأخذ cuesta.",
+          "a1_pre_5_c": "تصريف غير مناسب للضمير nosotros."
+        }
+      },
+      {
+        "id": "a1_pre_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارة طلب الحساب بنبرة واضحة ومؤدبة.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح لطلب الحساب في المطعم:",
+        "stemEs": "La cuenta, por favor, y gracias por el servicio.",
+        "stemAr": "الحساب من فضلك، وشكراً على الخدمة.",
+        "audioKey": "pending/a1-pre-ex-6",
+        "targetVocab": [
+          "cuenta"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في cuenta ونبرة الـ favor المهذبة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-pre-ex-6",
+          "modelAnswer": "La cuenta, por favor, y gracias por el servicio."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

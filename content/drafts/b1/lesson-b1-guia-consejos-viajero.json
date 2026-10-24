@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-guia-consejos-viajero",
+    "unitSlug": "b1-u5-independent-travel",
+    "levelCode": "B1",
+    "titleAr": "دليل المسافر المستقل: نصائح الأمان والميزانية والتنقل الذكي",
+    "titleEs": "Guía práctica y consejos para el viajero independiente",
+    "subtitleAr": "نصائح تجنب الاحتيال، بطاقات النقل السياحية، وتوفير النفقات",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقدم المتعلم توصيات وإرشادات سياحية عملية للمسافرين الآخرين مستخدماً المنصوب والأمر.",
+        "أن يقدم نصائح لتفادي النصب وتأمين المقتنيات: precauciones, evitar timos, cuidar pertenencias.",
+        "أن يشرح طرق التوفير في المواصلات والتذاكر السياحية المدمجة: abono transporte, tarjeta turística."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ التوصية والنصيحة للمسافر",
+          "explanationAr": "1. **التوصية باستخدام صيغة المنصوب (Subjuntivo)**:\n- **Recomiendo / Aconsejo que + Subjuntivo**: Recomiendo que compres el abono de transporte con antelación (أنصحك بأن تشتري بطاقة النقل مسبقاً).\n- **Es aconsejable que + Subjuntivo**: Es aconsejable que lleves una copia de tu pasaporte en la nube.\n2. **التحذير والاحتياط**:\n- **Tener cuidado con**: Ten cuidado con los carteristas en las zonas concurridas (احذر من النشالين في الأماكن المزدحمة).\n- **Tomar precauciones**: Conviene tomar ciertas precauciones con el dinero en efectivo."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد recomiendo que (الخطأ: *Recomiendo que compras*، والصواب: Recomiendo que compres بالمنصوب).",
+        "ترجمة 'النشال' حرفياً بـ *ladrón de bolsillos*؛ الكلمة الإسبانية اليومية المحددة هي el carterista."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بننصح المسافر ونقوله: «خلي بالك من محفظتك في الزحمة، واشتري كارت المترو السياحي عشان توفر فلوس». بالإسبانية: Ten cuidado con la cartera en el metro y saca el abono turístico."
+        }
+      ],
+      "culturalNoteAr": "معظم المدن الإسبانية الكبرى كـ مدريد وبرشلونة تقدم بطاقات سياحية تشمل ركوب المترو والحافلات غير المحدود وتخفيضات كبرى على دخول المتاحف (como el abono turístico)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-guia-consejos-viajero-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات دليل السفر والتوفير",
+        "bodyAr": "المفردات التوجيهية:\n- **la precaución**: الحيطة والاحتياط الوقائي\n- **el abono de transporte**: بطاقة وتذكرة الاشتراك في المواصلات العامة\n- **el carterista**: النشال في الأماكن المزدحمة\n- **el timo**: الاحتيال أو الخدعة السياحية (timo / estafa)\n- **ahorrar**: يوفر ويدخر المال\n- **la recomendación**: التوصية والنصيحة المفيدة",
+        "examples": [
+          {
+            "es": "Conviene tomar precauciones para evitar los timos habituales a turistas.",
+            "ar": "ينبغي أخذ الحيطة لتجنب الاحتيالات المعتادة على السياح."
+          },
+          {
+            "es": "Comprar el abono de transporte permite ahorrar mucho dinero en la ciudad.",
+            "ar": "شراء بطاقة المواصلات يتيح توفير الكثير من المال في المدينة."
+          },
+          {
+            "es": "Siga estas recomendaciones para disfrutar de un viaje seguro y económico.",
+            "ar": "اتبع هذه التوصيات للاستمتاع برحلة آمنة واقتصادية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "precaución",
+      "abono de transporte",
+      "carterista",
+      "timo",
+      "ahorrar",
+      "recomendación"
+    ],
+    "reviewVocabulary": [
+      "seguridad",
+      "ciudad"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقدم المتعلم توصيات وإرشادات سياحية عملية للمسافرين الآخرين مستخدماً المنصوب والأمر.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-gui-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب الصحيحة بعد فعل التوصية te aconsejo que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي صيغة فعلية تناسب النصيحة بعد تركيب Te aconsejo que؟",
+        "stemEs": "Te aconsejo que _____ el billete turístico por internet.",
+        "stemAr": "أنصحك بأن ... التذكرة السياحية عبر الإنترنت.",
+        "options": [
+          {
+            "id": "ex-b1-gui-1_a",
+            "text": "compres",
+            "textAr": "صيغة المنصوب الحاضر (الصواب بعد aconsejo que)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-gui-1_b",
+            "text": "compras",
+            "textAr": "مضارع إخباري لا يصح بعد أفعال التوصية",
+            "isCorrect": false,
+            "distractorRationaleAr": "أفعال التوصية والنصيحة تتطلب صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b1-gui-1_c",
+            "text": "comprar",
+            "textAr": "مصدر لا يناسب وجود الفاعل tú",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع وجود que والفاعل tú يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "recomendación"
+        ],
+        "explanationAr": "بعد أفعال النصيحة والتوصية (aconsejar que / recomendar que) نستخدم المنصوب: aconsejo que compres.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-gui-1_a"
+          ],
+          "selectedOptionId": "ex-b1-gui-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-gui-1_b": "أفعال التوصية والنصيحة تتطلب صيغة المنصوب Subjuntivo.",
+          "ex-b1-gui-1_c": "مع وجود que والفاعل tú يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b1-gui-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني بطاقة الاشتراك في شبكة المواصلات: (el _____ de transporte)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في مصطلح بطاقة الاشتراك: (el _____ de transporte)",
+        "stemEs": "Para moverte en metro y autobús es muy rentable adquirir el _____ de transporte.",
+        "stemAr": "للتنقل بالمترو والحافلة من المجدي للغاية شراء ... النقل.",
+        "targetVocab": [
+          "abono de transporte"
+        ],
+        "explanationAr": "المصطلح هو el abono de transporte ويعني بطاقة الاشتراك أو التذكرة الشاملة.",
+        "answerKey": {
+          "accepted": [
+            "abono"
+          ],
+          "acceptableAnswers": [
+            "abono"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-gui-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الدال على السارق الذي يخطف المحافظ في الزحام",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة الإسبانية التي تطلق على النشال في محطات المترو والأماكن المكتظة؟",
+        "stemEs": "En las estaciones concurridas hay que vigilar la mochila por los _____.",
+        "stemAr": "في المحطات المزدحمة يجب الانتباه للحقيبة بسبب ...",
+        "options": [
+          {
+            "id": "ex-b1-gui-3_a",
+            "text": "carteristas",
+            "textAr": "النشالون (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-gui-3_b",
+            "text": "precauciones",
+            "textAr": "احتياطات",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسم الأشخاص الذين يسرقون المحافظ."
+          },
+          {
+            "id": "ex-b1-gui-3_c",
+            "text": "recomendaciones",
+            "textAr": "توصيات",
+            "isCorrect": false,
+            "distractorRationaleAr": "التحذير موجه من النشالين carteristas."
+          }
+        ],
+        "targetVocab": [
+          "carterista",
+          "precaución",
+          "recomendación"
+        ],
+        "explanationAr": "los carteristas هم النشالون الذين يستهدفون المحافظ في الزحام.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-gui-3_a"
+          ],
+          "selectedOptionId": "ex-b1-gui-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-gui-3_b": "نحتاج اسم الأشخاص الذين يسرقون المحافظ.",
+          "ex-b1-gui-3_c": "التحذير موجه من النشالين carteristas."
+        }
+      },
+      {
+        "id": "ex-b1-gui-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتأكيد على ضرورة أخذ الحيطة لتفادي الاحتيال",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-gui-4_t1",
+            "kind": "token",
+            "text": "Hay"
+          },
+          {
+            "id": "ex-b1-gui-4_t2",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b1-gui-4_t3",
+            "kind": "token",
+            "text": "tomar"
+          },
+          {
+            "id": "ex-b1-gui-4_t4",
+            "kind": "token",
+            "text": "precauciones"
+          },
+          {
+            "id": "ex-b1-gui-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-gui-4_t6",
+            "kind": "token",
+            "text": "evitar"
+          },
+          {
+            "id": "ex-b1-gui-4_t7",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-gui-4_t8",
+            "kind": "token",
+            "text": "timo"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hay que tomar precauciones para evitar el timo"
+          ],
+          "tokenOrder": [
+            "ex-b1-gui-4_t1",
+            "ex-b1-gui-4_t2",
+            "ex-b1-gui-4_t3",
+            "ex-b1-gui-4_t4",
+            "ex-b1-gui-4_t5",
+            "ex-b1-gui-4_t6",
+            "ex-b1-gui-4_t7",
+            "ex-b1-gui-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة الإلزامية Hay que tomar precauciones ثم الغرض para evitar el timo.",
+        "targetVocab": [
+          "precaución",
+          "timo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-gui-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد أفضل نصيحة لتوفير المال في السفر",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمرشد السياحي وحدد ما يقترحه لتقليل النفقات",
+        "stemEs": "Cocinar en el albergue te permite ahorrar una gran parte del presupuesto.",
+        "stemAr": "الطهي في بيت الشباب يسمح لك بتوفير جزء كبير من الميزانية.",
+        "options": [
+          {
+            "id": "ex-b1-gui-5_a",
+            "text": "ahorrar",
+            "textAr": "توفير وادخار النفقات (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-gui-5_b",
+            "text": "timo",
+            "textAr": "احتيال",
+            "isCorrect": false,
+            "distractorRationaleAr": "المرشد يقدم نصيحة لتوفير المال (ahorrar)."
+          },
+          {
+            "id": "ex-b1-gui-5_c",
+            "text": "carterista",
+            "textAr": "نشال",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحديث يدور حول ميزانية السفر وتوفيرها."
+          }
+        ],
+        "targetVocab": [
+          "ahorrar",
+          "timo",
+          "carterista"
+        ],
+        "explanationAr": "المتحدث قال: 'te permite ahorrar una gran parte del presupuesto'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_ahorrar_presupuesto_viaje.mp3",
+        "speechEs": "Cocinar en el albergue te permite ahorrar una gran parte del presupuesto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-gui-5_a"
+          ],
+          "selectedOptionId": "ex-b1-gui-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-gui-5_b": "المرشد يقدم نصيحة لتوفير المال (ahorrar).",
+          "ex-b1-gui-5_c": "الحديث يدور حول ميزانية السفر وتوفيرها."
+        }
+      },
+      {
+        "id": "ex-b1-gui-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق نصيحتك السياحية للأصدقاء لرحلة آمنة واقتصادية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح وود لتقديم النصيحة لزملائك:",
+        "stemEs": "Recomiendo tomar precauciones con la cartera y comprar el abono de transporte.",
+        "stemAr": "أنصح بأخذ الحيطة بشأن المحفظة وشراء بطاقة المواصلات العامة.",
+        "audioKey": "pending/b1_recomiendo_precauciones_abono.mp3",
+        "targetVocab": [
+          "precaución",
+          "abono de transporte",
+          "recomendación"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في precauciones كـ ثاء ونطق b في abono بلطف.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_recomiendo_precauciones_abono.mp3",
+          "modelAnswer": "Recomiendo tomar precauciones con la cartera y comprar el abono de transporte."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ التوصية والنصيحة للمسافر"
+    ]
+  }
+}

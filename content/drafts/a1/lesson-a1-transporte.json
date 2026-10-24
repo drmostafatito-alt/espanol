@@ -1,0 +1,411 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-transporte",
+    "unitSlug": "a1-u8-places",
+    "levelCode": "A1",
+    "titleAr": "المواصلات والتنقل: السؤال عن الوسيلة وشراء تذكرة",
+    "titleEs": "Los transportes y el billete",
+    "subtitleAr": "استخدام ir en مع وسائل النقل وشراء تذكرة مترو أو حافلة",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسمّي وسائل المواصلات الشائعة: metro, autobús, taxi, tren.",
+        "أن يستخدم حرف الجر en مع وسائل النقل (ir en metro) وحرف الجر a مع المشي (ir a pie).",
+        "أن يشتري تذكرة (un billete) ويسأل عن موقف الحافلة (la parada)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "حرف الجر en مع وسائل النقل و a pie",
+          "explanationAr": "في الإسبانية، نستخدم دائماً حرف الجر en مع جميع وسائل النقل الآلية: Voy en metro (أذهب بالمترو)، Vamos en autobús (نذهب بالحافلة)، Viaja en tren (يسافر بالقطار)، en taxi (بالتاكسي). الاستثناء الأساسي الوحيد هو السير على الأقدام حيث نستخدم حرف الجر a: Voy a pie (أذهب مشياً على الأقدام). عند شراء التذكرة نقول: Quería un billete para... (أريد تذكرة لـ...)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام con أو por بدلاً من en لوسائل النقل (مثل القول *voy con metro* تأثراً بالعربية 'بالمترو'؛ الصواب: voy en metro).",
+        "قول *voy en pie* بدلاً من التعبير الثابت voy a pie."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا رايح بالمترو أو بالأوتوبيس، أو على رجليّ». في الإسبانية: Voy en metro / en autobús، أو voy a pie."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُطلق على تذكرة المترو والقطار billete، بينما في معظم دول أمريكا اللاتينية (مثل المكسيك والأرجنتين) تُسمى boleto أو pasaje."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-transporte-intro",
+        "type": "explanation",
+        "titleAr": "وسائل النقل وشراء التذاكر",
+        "bodyAr": "أهم وسائل النقل والمفردات المرتبطة بها:\n- **el metro**: المترو\n- **el autobús**: الحافلة / الأتوبيس\n- **el taxi**: التاكسي / سيارة الأجرة\n- **el tren**: القطار\n- **el billete**: التذكرة\n- **la parada**: الموقف (parada de autobús)\n- **el viaje**: الرحلة / السفر",
+        "examples": [
+          {
+            "es": "Voy al trabajo en metro.",
+            "ar": "أذهب إلى العمل بالمترو."
+          },
+          {
+            "es": "¿Dónde está la parada de autobús?",
+            "ar": "أين يقع موقف الحافلات؟"
+          },
+          {
+            "es": "Quería un billete de tren, por favor.",
+            "ar": "أريد تذكرة قطار من فضلك."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "metro",
+      "autobús",
+      "taxi",
+      "tren",
+      "billete",
+      "parada",
+      "viaje"
+    ],
+    "reviewVocabulary": [
+      "estación",
+      "centro"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يسمّي وسائل المواصلات الشائعة: metro, autobús, taxi, tren.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-tra-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الصحيح لوسائل النقل",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو حرف الجر المستخدم مع وسيلة النقل tren؟",
+        "stemEs": "Viajo a Madrid _____ tren.",
+        "stemAr": "أسافر إلى مدريد بالقطار.",
+        "options": [
+          {
+            "id": "ex-a1-tra-1_o1",
+            "text": "en",
+            "textAr": "حرف الجر الصحيح لوسائل النقل",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-tra-1_o2",
+            "text": "con",
+            "textAr": "خطأ ترجمة حرفية من العربية",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الإسبانية لا نستخدم con مع وسائل المواصلات بل en."
+          },
+          {
+            "id": "ex-a1-tra-1_o3",
+            "text": "de",
+            "textAr": "حرف جر للمنشأ أو المادة",
+            "isCorrect": false,
+            "distractorRationaleAr": "de لا تعبر عن الركوب والتنقل."
+          }
+        ],
+        "targetVocab": [
+          "tren",
+          "viaje"
+        ],
+        "explanationAr": "في الإسبانية نستخدم حرف الجر en مع وسائل المواصلات الآلية: en tren, en metro, en autobús.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-tra-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-tra-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-tra-1_o2": "في الإسبانية لا نستخدم con مع وسائل المواصلات بل en.",
+          "ex-a1-tra-1_o3": "de لا تعبر عن الركوب والتنقل."
+        }
+      },
+      {
+        "id": "ex-a1-tra-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة للتذكرة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'تذكرة' بالإسبانية (في إسبانيا)",
+        "stemEs": "Necesito comprar un _____ para el metro.",
+        "stemAr": "أحتاج لشراء تذكرة للمترو.",
+        "targetVocab": [
+          "billete"
+        ],
+        "explanationAr": "كلمة billete تعني تذكرة وهي مذكرة (un billete).",
+        "answerKey": {
+          "accepted": [
+            "billete"
+          ],
+          "acceptableAnswers": [
+            "billete"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-tra-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المناسب لموقف الحافلة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "أين ينتظر الركاب وصول الأتوبيس؟",
+        "stemEs": "Esperamos en la _____ de autobús.",
+        "stemAr": "ننتظر في موقف الأتوبيس.",
+        "options": [
+          {
+            "id": "ex-a1-tra-3_o1",
+            "text": "parada",
+            "textAr": "موقف / نقطة توقف",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-tra-3_o2",
+            "text": "estación",
+            "textAr": "محطة رئيسية كبيرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "للحافلات في الشوارع نستخدم عادة لفظ parada."
+          },
+          {
+            "id": "ex-a1-tra-3_o3",
+            "text": "viaje",
+            "textAr": "رحلة",
+            "isCorrect": false,
+            "distractorRationaleAr": "viaje تعني الرحلة نفسها وليس مكان الانتظار."
+          }
+        ],
+        "targetVocab": [
+          "parada",
+          "autobús",
+          "estación",
+          "viaje"
+        ],
+        "explanationAr": "موقف الحافلات في الشارع يسمى la parada de autobús.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-tra-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-tra-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-tra-3_o2": "للحافلات في الشوارع نستخدم عادة لفظ parada.",
+          "ex-a1-tra-3_o3": "viaje تعني الرحلة نفسها وليس مكان الانتظار."
+        }
+      },
+      {
+        "id": "ex-a1-tra-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب تذكرة إلى وسط المدينة بأدب",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-tra-4_t1",
+            "kind": "token",
+            "text": "Quiero"
+          },
+          {
+            "id": "ex-a1-tra-4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-a1-tra-4_t3",
+            "kind": "token",
+            "text": "billete"
+          },
+          {
+            "id": "ex-a1-tra-4_t4",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-a1-tra-4_t5",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a1-tra-4_t6",
+            "kind": "token",
+            "text": "metro"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero un billete para el metro"
+          ],
+          "tokenOrder": [
+            "ex-a1-tra-4_t1",
+            "ex-a1-tra-4_t2",
+            "ex-a1-tra-4_t3",
+            "ex-a1-tra-4_t4",
+            "ex-a1-tra-4_t5",
+            "ex-a1-tra-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب الصحيح: Quiero (أريد) ثم un billete (تذكرة) ثم para el metro (للمترو).",
+        "targetVocab": [
+          "billete",
+          "metro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-tra-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر وسيلة النقل المذكورة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد وسيلة المواصلات المستخدمة",
+        "stemEs": "Prefiero ir en taxi porque es rápido.",
+        "stemAr": "أفضل الذهاب بالتاكسي لأنه سريع.",
+        "options": [
+          {
+            "id": "ex-a1-tra-5_o1",
+            "text": "taxi",
+            "textAr": "تاكسي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-tra-5_o2",
+            "text": "metro",
+            "textAr": "مترو",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال taxi وليس metro."
+          },
+          {
+            "id": "ex-a1-tra-5_o3",
+            "text": "tren",
+            "textAr": "قطار",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال taxi وليس tren."
+          }
+        ],
+        "targetVocab": [
+          "taxi",
+          "metro",
+          "tren"
+        ],
+        "explanationAr": "المتحدث ذكر ركوب التاكسي: en taxi.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_ir_en_taxi.mp3",
+        "speechEs": "Prefiero ir en taxi porque es rápido.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-tra-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-tra-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-tra-5_o2": "المتحدث قال taxi وليس metro.",
+          "ex-a1-tra-5_o3": "المتحدث قال taxi وليس tren."
+        }
+      },
+      {
+        "id": "ex-a1-tra-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق رغبتك في الذهاب إلى المحطة بالمترو",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة موضحاً الذهاب بالمترو بطلاقة",
+        "stemEs": "Voy a la estación en metro.",
+        "stemAr": "أنا ذاهب إلى المحطة بالمترو.",
+        "audioKey": "pending/a1_estacion_en_metro.mp3",
+        "targetVocab": [
+          "estación",
+          "metro"
+        ],
+        "explanationAr": "تأكد من وصل الأصوات بشكل طبيعي: Voy a la estación en metro.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_estacion_en_metro.mp3",
+          "modelAnswer": "Voy a la estación en metro."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "حرف الجر en مع وسائل النقل و a pie"
+    ]
+  }
+}

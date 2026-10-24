@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-subjuntivo-deseos",
+    "titleAr": "المضارع المنصوب: التعبير عن الرغبات والأمنيات",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u2-opinions",
+    "objectiveAr": "أن يصيغ المتعلم صيغة المضارع المنصوب لأفعال المجموعات الثلاث والشواذ، ويستخدمه في التعبير عن الرغبات والأمنيات مع التراكيب: Quiero que, Ojalá, Espero que.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ojalá",
+      "querer",
+      "esperar",
+      "desear",
+      "venir",
+      "aprobar"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "examen",
+      "tiempo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Regla de vocales opuestas: -ar toma -e (hable), -er/-ir toma -a (coma, viva)",
+      "Irregulares clave: sea, esté, vaya, tenga, haga, pueda, sepa",
+      "Verbo de deseo + que + sujeto distinto + Subjuntivo: Quiero que vengas",
+      "Ojalá + Subjuntivo: ¡Ojalá apruebes el examen!"
+    ],
+    "grammarTopics": [
+      "subjuntivo-deseos-ojala",
+      "formacion-presente-subjuntivo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أم تتحدث مع ابنها قبل خوضه لامتحان القبول الجامعي في إسبانيا.",
+        "settingAr": "المنزل، صباح يوم الامتحان",
+        "lines": [
+          {
+            "es": "¡Hijo! Quiero que estés tranquilo y que descanses bien.",
+            "ar": "بني! أريدك أن تكون هادئًا وأن ترتاح جيدًا.",
+            "arEg": "يا ابني! عايزاك تكون هادي وترتاح كويس.",
+            "audioKey": "pending/b1-deseos-madre-1"
+          },
+          {
+            "es": "Gracias, mamá. He estudiado mucho, pero estoy un poco nervioso.",
+            "ar": "شكرًا يا أمي. لقد ذاكرتُ كثيرًا، لكني متوتر قليلاً.",
+            "arEg": "شكراً يا ماما. ذاكرت كتير، بس متوتر شوية.",
+            "audioKey": "pending/b1-deseos-madre-2"
+          },
+          {
+            "es": "Es normal. ¡Ojalá tengas mucha suerte y apruebes con buena nota!",
+            "ar": "هذا طبيعي. أتمنى أن يحالفك حظ وافر وتنجح بدرجة ممتازة!",
+            "arEg": "طبيعي يا حبيبي. يا رب بالتوفيق وتعدي بتقدير حلو!",
+            "audioKey": "pending/b1-deseos-madre-3"
+          },
+          {
+            "es": "Espero que el examen sea fácil. ¡Hasta luego!",
+            "ar": "آمل أن يكون الامتحان سهلاً. إلى اللقاء!",
+            "arEg": "أتمنى الامتحان ييجي سهل. يلا مع السلامة!",
+            "audioKey": "pending/b1-deseos-madre-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_deseos_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى دعاء الأم لابنها واختر ما تتمناه له.",
+        "audioKey": "pending/b1-deseos-madre-3",
+        "speechEs": "Es normal. ¡Ojalá tengas mucha suerte y apruebes con buena nota!",
+        "options": [
+          {
+            "id": "b1_deseos_1_a",
+            "text": "Aprobar con buena nota y tener suerte",
+            "isCorrect": true,
+            "textAr": "النجاح والتوفيق"
+          },
+          {
+            "id": "b1_deseos_1_b",
+            "text": "Aplazar el examen para mañana",
+            "isCorrect": false,
+            "textAr": "تأجيل الامتحان",
+            "distractorRationaleAr": "لم تطلب تأجيل الامتحان."
+          },
+          {
+            "id": "b1_deseos_1_c",
+            "text": "Volver a dormir inmediatamente",
+            "isCorrect": false,
+            "textAr": "العودة للنوم",
+            "distractorRationaleAr": "هذا وقت الذهاب للامتحان."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_deseos_1_a"
+          ]
+        },
+        "explanationAr": "قالت الأم: «¡Ojalá tengas mucha suerte y apruebes con buena nota!» مستخدمة المنصوب بعد Ojalá.",
+        "errorFeedback": {
+          "b1_deseos_1_b": "لم تذكر التأجيل.",
+          "b1_deseos_1_c": "هو ذاهب للامتحان."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "ojalá",
+          "aprobar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_deseos_2_rule",
+        "type": "word_choice",
+        "instructionAr": "ما هي القاعدة الذهبية لتصريف الأفعال المنتظمة في المضارع المنصوب؟",
+        "options": [
+          {
+            "id": "b1_deseos_2_a",
+            "text": "Inversión vocálica (-ar toma -e, y -er/-ir toma -a)",
+            "isCorrect": true,
+            "textAr": "قاعدة العكس"
+          },
+          {
+            "id": "b1_deseos_2_b",
+            "text": "Añadir la letra s al final siempre",
+            "isCorrect": false,
+            "textAr": "إضافة حرف s",
+            "distractorRationaleAr": "إضافة s تخص ضمير tú فقط."
+          },
+          {
+            "id": "b1_deseos_2_c",
+            "text": "Usar el pretérito indefinido",
+            "isCorrect": false,
+            "textAr": "استخدام الماضي البسيط",
+            "distractorRationaleAr": "الماضي زمن آخر مختلف تمامًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_deseos_2_a"
+          ]
+        },
+        "explanationAr": "أفعال -ar تأخذ النهايات -e, -es, -e... وأفعال -er/-ir تأخذ -a, -as, -a... (قاعدة الحروف المعكوسة).",
+        "errorFeedback": {
+          "b1_deseos_2_b": "حرف s ليس قاعدة شاملة.",
+          "b1_deseos_2_c": "الماضي البسيط زمن آخر."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "esperar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_deseos_3_fill_venir",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف فعل venir مع tú في صيغة المنصوب: «أريدك أن تأتي معي».",
+        "stemEs": "Quiero que tú ____ conmigo a la fiesta.",
+        "stemAr": "أريدك أن تأتي معي إلى الحفلة.",
+        "answerKey": {
+          "accepted": [
+            "vengas"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "فعل venir مشتق من جذر المتكلم (vengo)، وفي المنصوب يأخذ النهاية المعكوسة -as: vengas.",
+        "errorFeedback": {
+          "vienes": "vienes مرفوع indicativo، وبعد الرغبة يلزم المنصوب.",
+          "venir": "المصدر لا يصح لوجود فاعلين مختلفين (yo / tú)."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "querer",
+          "venir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_deseos_4_fill_ojala",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بعد أداة التمني Ojalá بتصريف فعل tener مع tú.",
+        "stemEs": "¡Ojalá ____ mucha suerte en la entrevista!",
+        "stemAr": "أتمنى أن يحالفك حظ وافر في المقابلة!",
+        "answerKey": {
+          "accepted": [
+            "tengas"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة «¡Ojalá!» من أصل عربي خالص وتأخذ دائماً بعدها زمن المنصوب Subjuntivo: ¡Ojalá tengas suerte!",
+        "errorFeedback": {
+          "tienes": "tienes مرفوع indicativo، وأداة Ojalá تفرض المنصوب.",
+          "tendrás": "tendrás مستقبل غير جائز بعد Ojalá."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ojalá"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_deseos_5_esperar",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بتصريف فعل estar مع él في المنصوب: «آمل أن يكون بخير».",
+        "stemEs": "Espero que mi hermano ____ bien.",
+        "stemAr": "آمل أن يكون أخي بخير.",
+        "answerKey": {
+          "accepted": [
+            "esté"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "فعل estar في المنصوب شاذ ويحمل علامة النبرة: esté (Espero que esté bien).",
+        "errorFeedback": {
+          "está": "está مرفوع ويجب نصبه بعد Espero que.",
+          "sea": "sea من ser ولا تأتي مع الحال bien."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "esperar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_deseos_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق عبارة التمني الإسبانية الشهيرة ذات الأصل العربي بنبرة رجاء حارة.",
+        "stemEs": "¡Ojalá tengas mucha suerte!",
+        "stemAr": "أتمنى لك حظًا وافرًا من كل قلبي!",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-deseos-speak-1",
+          "modelAnswer": "¡Ojalá tengas mucha suerte!"
+        },
+        "explanationAr": "انطق حرف j في Ojalá بصوت الخاء ونبر على المقطع الأخير -lá لوجود علامة النبرة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ojalá"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبر على مقطع lá في Ojalá",
+              "weight": 50,
+              "code": "stress_ojala"
+            },
+            {
+              "labelAr": "نطق حرف j كخاء صريحة",
+              "weight": 50,
+              "code": "pron_j_ojala"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من مراجع Aula Plus 3 وEn Vocabulario B1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يربط أداة Ojalá بأصلها العربي (لو شاء الله) ويشرح قاعدة العكس في تصريف المنصوب."
+    }
+  }
+}

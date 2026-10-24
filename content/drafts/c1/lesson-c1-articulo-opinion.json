@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-articulo-opinion",
+    "titleAr": "مقال الرأي في الصحافة الفكرية الكبرى: La tribuna de opinión periodística",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u8-advanced-writing",
+    "objectiveAr": "أن يحرر المتعلم مقال رأي فكري معمق (tribuna de opinión / columna) مستخدماً البلاغة الإقناعية والأسلبة الساخرة الرصينة (agudeza, sesgo, vehemencia).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "tribuna",
+      "columna",
+      "agudeza",
+      "sesgo",
+      "vehemencia",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La estructura clásica del artículo de fondo: gancho inicial, tesis, antítesis y remate",
+      "El estilo de la columna de opinión: agudeza conceptual y mordacidad contenida",
+      "Detección y denuncia del sesgo cognitivo y partidista en el debate público",
+      "La modulación de la vehemencia dialéctica mediante recursos irónicos cultos"
+    ],
+    "grammarTopics": [
+      "generos-periodisticos-de-opinion-c1",
+      "redaccion-argumentativa-avanzada"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حلقة نقاشية في هيئة تحرير صحيفة 'الباييس' (El País) حول فن كتابة مقال الرأي لكبار الكتاب.",
+        "settingAr": "مقر هيئة تحرير صحيفة إل باييس، مدريد",
+        "lines": [
+          {
+            "es": "Una tribuna de opinión no es un mero desahogo visceral, sino una pieza de arquitectura intelectual.",
+            "ar": "إن منبر الرأي ليس مجرد تنفيس انفعالي سطحي، بل قطعة معمارية فكرية محكمة التشييد.",
+            "arEg": "مقال الرأي في الصحافة مش شوية كلام خارج من الغضب والانفعال، ده بنيان فكري هندسي محسوب بالمللي.",
+            "audioKey": "pending/c1-u8-opi-1"
+          },
+          {
+            "es": "El columnista debe cultivar la agudeza crítica y despojar su análisis de todo sesgo ideológico ciego.",
+            "ar": "يجب على كاتب العمود الصحفي أن يصقل بصيرته النقدية وأن يجرد تحليله من كل تحيز وانحياز أيديولوجي أعمى.",
+            "arEg": "كاتب العمود لازم دماغه تبقى صاحية وذكية ويطهر تحليله من أي انحياز أعمى لأي طرف.",
+            "audioKey": "pending/c1-u8-opi-2"
+          },
+          {
+            "es": "Conviene graduar la vehemencia expresiva para que la solidez de los argumentos brille con luz propia.",
+            "ar": "يجدر ضبط وتدريج حرارة الاندفاع والحماسة الخطابية حتى تسطع رصانة الحجج بنورها الخاص الذاتي.",
+            "arEg": "الأشيك إننا نهدي النبرة الحامية شوية عشان قوة الحجة نفسها هي اللي تبان وتلمع في عين القارئ.",
+            "audioKey": "pending/c1-u8-opi-3"
+          },
+          {
+            "es": "El remate final debe resonar en la mente del lector como un eco lúcido e imperecedero.",
+            "ar": "يجب أن تتردد الخاتمة وقفلة المقال في عقل القارئ كرنين مضيء لا يُمحى أثره مع الأيام.",
+            "arEg": "قفلة المقال في الآخر لازم تفضل ترن وتلف في دماغ القارئ وتخليه يفكر في الكلام ومينساهوش.",
+            "audioKey": "pending/c1-u8-opi-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-aop-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث رئيس التحرير وحدد كيف عرّف مقال الرأي الفكري الحقيقي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المقال الصحفي الفكري وفقاً لحديث رئيس التحرير؟",
+        "stemEs": "Una tribuna de opinión no es un mero desahogo visceral, sino una pieza de arquitectura intelectual.",
+        "stemAr": "إن منبر الرأي ليس مجرد تنفيس انفعالي سطحي، بل قطعة معمارية فكرية محكمة التشييد.",
+        "options": [
+          {
+            "id": "ex-c1-aop-1_a",
+            "text": "Una pieza de arquitectura intelectual rigurosamente construida",
+            "textAr": "قطعة بناء فكرية معمقة محكمة الصياغة والترابط",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aop-1_b",
+            "text": "Un desahogo visceral lleno de gritos e insultos",
+            "textAr": "تنفيس انفعالي مبتذل مليء بالسباب والشتم",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكاتب نفى هذا الانحدار صراحة."
+          },
+          {
+            "id": "ex-c1-aop-1_c",
+            "text": "Un anuncio de rebajas en grandes almacenes",
+            "textAr": "إعلان عن تخفيضات في المركز التجاري",
+            "isCorrect": false,
+            "distractorRationaleAr": "إعلانات تجارية لا رأي فيها."
+          }
+        ],
+        "targetVocab": [
+          "tribuna",
+          "rigor"
+        ],
+        "explanationAr": "«Una tribuna de opinión» في الصحافة الراقية مساحة يكتب فيها كبار المفكرين والخبراء لمخاطبة عقل القارئ بحجج رصينة وبناء هندسي متقن.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u8-opi-1",
+        "speechEs": "Una tribuna de opinión no es un mero desahogo visceral, sino una pieza de arquitectura intelectual.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aop-1_a"
+          ],
+          "selectedOptionId": "ex-c1-aop-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aop-1_b": "الكاتب نفى هذا الانحدار صراحة.",
+          "ex-c1-aop-1_c": "إعلانات تجارية لا رأي فيها."
+        }
+      },
+      {
+        "id": "ex-c1-aop-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما المصطلح الدال على «الميل والنزعة الذاتية غير الموضوعية التي تشوه إدراك الحقائق وتفسيرها»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المصطلح المعبر عن الانحياز المعرفي أو الأيديولوجي المسبق:",
+        "stemEs": "El ensayista advierte contra el peligro de analizar la historia con un evidente ____ partidista.",
+        "stemAr": "يحذر كاتب المقال من مغبة تحليل التاريخ بانحياز وتحامل حزبي فاقع يشوه الحقائق.",
+        "options": [
+          {
+            "id": "ex-c1-aop-2_a",
+            "text": "sesgo",
+            "textAr": "انحياز / تحيز مسبق يعمي عن رؤية الحقيقة بموضوعية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aop-2_b",
+            "text": "amor",
+            "textAr": "حب عاطفي بريء بين الأصدقاء",
+            "isCorrect": false,
+            "distractorRationaleAr": "عاطفة لا تعبر عن الخلل التحليلي."
+          },
+          {
+            "id": "ex-c1-aop-2_c",
+            "text": "descanso",
+            "textAr": "راحة واستجمام في عطلة نهاية الأسبوع",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج الإطار النقدي."
+          }
+        ],
+        "targetVocab": [
+          "sesgo",
+          "agudeza"
+        ],
+        "explanationAr": "«El sesgo» (أو sesgo cognitivo / ideológico) هو الميل والانحراف عن جادة الإنصاف والحياد بسبب قوالب فكرية أو مصالح مسبقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aop-2_a"
+          ],
+          "selectedOptionId": "ex-c1-aop-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aop-2_b": "عاطفة لا تعبر عن الخلل التحليلي.",
+          "ex-c1-aop-2_c": "خارج الإطار النقدي."
+        }
+      },
+      {
+        "id": "ex-c1-aop-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح الدال على المساحة المخصصة لمقال الكاتب الثابت في الجريدة: «la ____ semanal».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة المعبرة عن العمود الصحفي الدوري:",
+        "stemEs": "El prestigioso escritor publica cada domingo su ____ de opinión en el suplemento.",
+        "stemAr": "ينشر الكاتب المرموق كل أحد عموده الصحفي التحليلي في الملحق الأسبوعي للجريدة.",
+        "targetVocab": [
+          "columna"
+        ],
+        "explanationAr": "«La columna» (العمود الصحفي) مساحة ثابتة الشكل والموقع يطل منها كاتب ذو أسلوب مميز للتعبير عن رؤيته الخاصة للأحداث.",
+        "answerKey": {
+          "accepted": [
+            "columna"
+          ],
+          "acceptableAnswers": [
+            "columna"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aop-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي السمة الذهنية والأسلوبية المطلوبة لدى كاتب المقال لاقتناص المفارقات والتعبير عنها ببراعة؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الصفة الدالة على الذكاء اللماح والفطنة النقدية النافذة:",
+        "stemEs": "El texto destaca por la deslumbrante ____ verbal e irónica de su autor.",
+        "stemAr": "يتميز النص بالذكاء اللماح والفطنة اللفظية والتهكم البارع لكاتبه.",
+        "options": [
+          {
+            "id": "ex-c1-aop-4_a",
+            "text": "agudeza",
+            "textAr": "الذكاء اللماح والفطنة وسرعة البديهة النافذة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-aop-4_b",
+            "text": "torpeza",
+            "textAr": "الغباء والخرق والبلادة الذهنية",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس النبوغ الصحفي."
+          },
+          {
+            "id": "ex-c1-aop-4_c",
+            "text": "ceguera",
+            "textAr": "العمى وانعدام الرؤية التام",
+            "isCorrect": false,
+            "distractorRationaleAr": "تناقض تام مع البصيرة."
+          }
+        ],
+        "targetVocab": [
+          "agudeza",
+          "vehemencia"
+        ],
+        "explanationAr": "«La agudeza» هي حدة الفطنة والقدرة على رؤية ما لا يراه الآخرون والتعبير عن ذلك بصياغة بارعة مكثفة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-aop-4_a"
+          ],
+          "selectedOptionId": "ex-c1-aop-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-aop-4_b": "عكس النبوغ الصحفي.",
+          "ex-c1-aop-4_c": "تناقض تام مع البصيرة."
+        }
+      },
+      {
+        "id": "ex-c1-aop-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء قاعدة أدبية وصحفية تحث على ضبط الانفعال في الكتابة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-aop-5_t1",
+            "kind": "token",
+            "text": "Evita"
+          },
+          {
+            "id": "ex-c1-aop-5_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-aop-5_t3",
+            "kind": "token",
+            "text": "vehemencia"
+          },
+          {
+            "id": "ex-c1-aop-5_t4",
+            "kind": "token",
+            "text": "excesiva"
+          },
+          {
+            "id": "ex-c1-aop-5_t5",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-c1-aop-5_t6",
+            "kind": "token",
+            "text": "escribir"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Evita la vehemencia excesiva al escribir"
+          ],
+          "tokenOrder": [
+            "ex-c1-aop-5_t1",
+            "ex-c1-aop-5_t2",
+            "ex-c1-aop-5_t3",
+            "ex-c1-aop-5_t4",
+            "ex-c1-aop-5_t5",
+            "ex-c1-aop-5_t6"
+          ]
+        },
+        "explanationAr": "الأمر Evita متبوعاً بالمفعول به la vehemencia والصفة excesiva وحرف الجر المدمج بالمصدر al escribir.",
+        "targetVocab": [
+          "vehemencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-aop-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة كاتب مقال عميق يزن كلماته بدقة واقتدار أدبي بالغ.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الإيقاع الرصين للنثر الصحفي الرفيع:",
+        "stemEs": "La columna exige rigor conceptual y agudeza estilística.",
+        "stemAr": "يتطلب مقال العمود الصحفي رصانة مفاهيمية وذكاءً أسلوبياً لماحاً.",
+        "audioKey": "pending/c1-u8-opi-spk",
+        "targetVocab": [
+          "columna",
+          "agudeza"
+        ],
+        "explanationAr": "احرص على نطق حرف x في exige بصوت خاء فصيح رخو ونبر مقطع -tí- في estilística بدقة لا تشوبها لكنة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u8-opi-spk",
+          "modelAnswer": "La columna exige rigor conceptual y agudeza estilística."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

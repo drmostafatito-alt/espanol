@@ -1,0 +1,426 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-conectores-causa-efecto-avanzados",
+    "unitSlug": "b2-u5-academic",
+    "levelCode": "B2",
+    "titleAr": "الروابط السببية والاستنتاجية المتقدمة: بناء النسق البراهيني",
+    "titleEs": "Conectores de causa, consecuencia y conclusión: El entramado argumentativo",
+    "subtitleAr": "التعليل بـ (puesto que, dado que, a causa de) والاستنتاج بـ (por ende, de ahí que)",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يوظف المتعلم روابط سببية واستنتاجية راقية تتجاوز porque و por eso البسيطة.",
+        "أن يطبق قواعد النحو المرافقة لكل رابط (مثل de ahí que + Subjuntivo و dado que + Indicativo).",
+        "أن ينسج فقرة برهانية محكمة تربط المقدمات بالنتائج الرياضية والمنطقية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد الروابط السببية والاستنتاجية الرفيعة",
+          "explanationAr": "1. **الروابط السببية ذات السجل الأكاديمي (Causales cultos)**:\n- *Dado que / Puesto que / Ya que + Indicativo*: Dado que no existen precedentes, el juez actuó con cautela.\n- *A causa de / Debido a + Sustantivo o Infinitivo*: Las pérdidas se produjeron debido a la crisis global.\n2. **الروابط الاستنتاجية والتعليلية التبعية (Consecutivas)**:\n- *Por consiguiente / Por ende + Indicativo*: La demanda creció; por consiguiente, aumentaron los precios.\n- **قاعدة ذهبية هامة**: *De ahí que + Subjuntivo* (من هنا جاء أن...):\n- *El informe contenía errores graves; de ahí que fuera rechazado por el comité*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد **de ahí que**؛ هذه الأداة تتطلب دوماً صيغة **المنصوب (Subjuntivo)** حصراً (الخطأ: *de ahí que es necesario*; الصواب: de ahí que sea necesario).",
+        "وضع *porque* في أول الجملة المستقلة؛ في الإسبانية الفصحى الأكاديمية لا تبدأ الجملة بـ porque بل بـ *Puesto que* أو *Dado que*."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الكلام المقالي بنقول «بما إن المعطيات واضحة، فبالتالي النتيجة حتمية، ومن هنا جه قرار الإلغاء». بالإسبانية: Dado que las pruebas son concluyentes, por ende la decisión es firme; de ahí que se cancelara el acto."
+        }
+      ],
+      "culturalNoteAr": "الأسلوب الأكاديمي الإسباني يولي الروابط البلاغية (conectores discursivos) مكانة مركزية، ويعتبر غيابها أو تكرار نفس الرابط دليلاً على ضعف الصنعة اللغوية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-conectores-causa-efecto-avanzados-intro",
+        "type": "explanation",
+        "titleAr": "جدول الروابط البرهانية الرفيعة",
+        "bodyAr": "الروابط الرئيسية وقواعدها:\n- **dado que / puesto que**: بما أن / نظراً لأن (+ إخباري Indicativo)\n- **de ahí que**: ومن هنا كان أن (+ منصُوب Subjuntivo إلزامياً)\n- **por ende / por consiguiente**: وبناءً على ذلك / وبالتالي\n- **a raíz de**: على إثر وبفعل حدث محوري\n- **en virtud de**: بمقتضى وبموجب سند قانوني أو علمي\n- **en suma**: خلاصة القول ومجمله",
+        "examples": [
+          {
+            "es": "Dado que los resultados fueron concluyentes, el laboratorio aprobó la vacuna.",
+            "ar": "بما أن النتائج كانت حاسمة وقاطعة، وافق المختبر على اللقاح."
+          },
+          {
+            "es": "El experimento carecía de grupo de control; de ahí que sus conclusiones sean dudosas.",
+            "ar": "افتقرت التجربة لمجموعة ضابطة؛ ومن هنا كانت استنتاجاتها موضع شك (المنصوب: sean)."
+          },
+          {
+            "es": "En virtud del acuerdo firmado, ambas instituciones compartirán recursos.",
+            "ar": "بمقتضى الاتفاق الموقع، ستتشارك المؤسستان الموارد."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dado que",
+      "puesto que",
+      "de ahí que",
+      "por ende",
+      "a raíz de",
+      "en virtud de"
+    ],
+    "reviewVocabulary": [
+      "porque",
+      "por tanto"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يوظف المتعلم روابط سببية واستنتاجية راقية تتجاوز porque و por eso البسيطة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-cca-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الفعل المناسبة بعد الرابط الاستنتاجي de ahí que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تصريف لفعل ser نستخدم في: El presupuesto era insuficiente; de ahí que el plan _____ cancelado؟",
+        "stemEs": "El presupuesto era insuficiente; de ahí que el plan _____ cancelado.",
+        "stemAr": "كانت الميزانية غير كافية؛ ومن هنا أُلغي المشروع.",
+        "options": [
+          {
+            "id": "ex-b2-cca-1_a",
+            "text": "fuera",
+            "textAr": "صيغة المنصوب في الماضي Imperfecto de Subjuntivo (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cca-1_b",
+            "text": "fue",
+            "textAr": "ماضي إخباري Indefinido لا يصح بعد de ahí que",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرابط de ahí que يتطلب صيغة المنصوب Subjuntivo حصراً."
+          },
+          {
+            "id": "ex-b2-cca-1_c",
+            "text": "era",
+            "textAr": "ماضي ناقص إخباري",
+            "isCorrect": false,
+            "distractorRationaleAr": "بعد de ahí que يجب استخدام المنصوب: fuera."
+          }
+        ],
+        "targetVocab": [
+          "de ahí que",
+          "puesto que"
+        ],
+        "explanationAr": "de ahí que يتطلب إلزامياً صيغة المنصوب Subjuntivo: de ahí que fuera cancelado.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cca-1_a"
+          ],
+          "selectedOptionId": "ex-b2-cca-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cca-1_b": "الرابط de ahí que يتطلب صيغة المنصوب Subjuntivo حصراً.",
+          "ex-b2-cca-1_c": "بعد de ahí que يجب استخدام المنصوب: fuera."
+        }
+      },
+      {
+        "id": "ex-b2-cca-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل tener بالمنصوب بعد de ahí que في الحاضر: (tenga)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل بالمنصوب: La ley es ambigua; de ahí que _____ múltiples interpretaciones.",
+        "stemEs": "El texto carece de claridad; de ahí que _____ tantas lecturas contradictorias.",
+        "stemAr": "يفتقر النص للوضوح؛ ومن هنا كان له كل هذه القراءات المتناقضة.",
+        "targetVocab": [
+          "de ahí que"
+        ],
+        "explanationAr": "بعد de ahí que في المضارع نستخدم المنصوب الحاضر: tenga.",
+        "answerKey": {
+          "accepted": [
+            "tenga"
+          ],
+          "acceptableAnswers": [
+            "tenga"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cca-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الرابط السببي الأكاديمي المناسب لبدء الجملة كبديل لـ porque",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي رابط رسمي نستخدم في مطلع الفقرة لتقديم العلة والسبب؟",
+        "stemEs": "_____ no se alcanzaron los objetivos previstos, la dirección reestructuró el equipo.",
+        "stemAr": "... لم تتحقق الأهداف المقررة، أعادت الإدارة هيكلة الفريق.",
+        "options": [
+          {
+            "id": "ex-b2-cca-3_a",
+            "text": "Dado que",
+            "textAr": "بما أن ونظراً لأن (الصواب في مستهل الجملة)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cca-3_b",
+            "text": "Porque",
+            "textAr": "رابط سببي لا تبدأ به الجملة الأكاديمية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة الأكاديمية لا تبدأ بـ porque بل بـ Dado que أو Puesto que."
+          },
+          {
+            "id": "ex-b2-cca-3_c",
+            "text": "De ahí que",
+            "textAr": "رابط استنتاجي يأخذ المنصوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرابط السببي في البداية هو Dado que."
+          }
+        ],
+        "targetVocab": [
+          "dado que",
+          "puesto que",
+          "por ende"
+        ],
+        "explanationAr": "dado que أو puesto que هما الرابطان القياسيان لافتتاح الجملة السببية في السجل الأكاديمي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cca-3_a"
+          ],
+          "selectedOptionId": "ex-b2-cca-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cca-3_b": "الجملة الأكاديمية لا تبدأ بـ porque بل بـ Dado que أو Puesto que.",
+          "ex-b2-cca-3_c": "الرابط السببي في البداية هو Dado que."
+        }
+      },
+      {
+        "id": "ex-b2-cca-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الاستنتاجية الرصينة باستخدام الرابط por ende",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-cca-4_t1",
+            "kind": "token",
+            "text": "No"
+          },
+          {
+            "id": "ex-b2-cca-4_t2",
+            "kind": "token",
+            "text": "hubo"
+          },
+          {
+            "id": "ex-b2-cca-4_t3",
+            "kind": "token",
+            "text": "inversión"
+          },
+          {
+            "id": "ex-b2-cca-4_t4",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-b2-cca-4_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "ex-b2-cca-4_t6",
+            "kind": "token",
+            "text": "ende"
+          },
+          {
+            "id": "ex-b2-cca-4_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-cca-4_t8",
+            "kind": "token",
+            "text": "producción"
+          },
+          {
+            "id": "ex-b2-cca-4_t9",
+            "kind": "token",
+            "text": "cayó"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "No hubo inversión y por ende la producción cayó"
+          ],
+          "tokenOrder": [
+            "ex-b2-cca-4_t1",
+            "ex-b2-cca-4_t2",
+            "ex-b2-cca-4_t3",
+            "ex-b2-cca-4_t4",
+            "ex-b2-cca-4_t5",
+            "ex-b2-cca-4_t6",
+            "ex-b2-cca-4_t7",
+            "ex-b2-cca-4_t8",
+            "ex-b2-cca-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: الجملة الأولى No hubo inversión ثم أداة العطف y ثم الرابط por ende ثم النتيجة la producción cayó.",
+        "targetVocab": [
+          "por ende",
+          "dado que"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cca-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للبيان القانوني وحدد الأساس الشرعي الذي استند إليه القرار",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لمنطوق الحكم القضائي أو الإداري",
+        "stemEs": "En virtud de las facultades delegadas, se decreta la clausura preventiva del recinto.",
+        "stemAr": "بمقتضى الصلاحيات المفوضة، يُقرر الإغلاق الاحترازي للمنشأة.",
+        "options": [
+          {
+            "id": "ex-b2-cca-5_a",
+            "text": "en virtud de",
+            "textAr": "بمقتضى وبموجب السند القانوني (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cca-5_b",
+            "text": "a pesar de",
+            "textAr": "بالرغم من",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استند إلى: En virtud de las facultades."
+          },
+          {
+            "id": "ex-b2-cca-5_c",
+            "text": "en contra de",
+            "textAr": "ضد",
+            "isCorrect": false,
+            "distractorRationaleAr": "العبارة كانت: En virtud de."
+          }
+        ],
+        "targetVocab": [
+          "en virtud de",
+          "a raíz de"
+        ],
+        "explanationAr": "المتحدث قال بصرامة: 'En virtud de las facultades delegadas'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_en_virtud_facultades_delegadas.mp3",
+        "speechEs": "En virtud de las facultades delegadas, se decreta la clausura preventiva del recinto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cca-5_a"
+          ],
+          "selectedOptionId": "ex-b2-cca-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cca-5_b": "المتحدث استند إلى: En virtud de las facultades.",
+          "ex-b2-cca-5_c": "العبارة كانت: En virtud de."
+        }
+      },
+      {
+        "id": "ex-b2-cca-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك البرهانية مستخدماً رابط de ahí que مع المنصوب بدقة تامة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية مطبقاً قاعدة المنصوب السليمة بصوت رخيم:",
+        "stemEs": "La muestra no era representativa; de ahí que los resultados carezcan de validez estadística.",
+        "stemAr": "لم تكن العينة ممثلة للمجتمع؛ ومن هنا افتقرت النتائج للصلاحية الإحصائية.",
+        "audioKey": "pending/b2_muestra_representativa_validez.mp3",
+        "targetVocab": [
+          "de ahí que",
+          "por ende",
+          "dado que"
+        ],
+        "explanationAr": "انتبه لنطق carezcan بصيغة المنصوب ونطق representativa بفصاحة وتأنٍ.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_muestra_representativa_validez.mp3",
+          "modelAnswer": "La muestra no era representativa; de ahí que los resultados carezcan de validez estadística."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "قواعد الروابط السببية والاستنتاجية الرفيعة"
+    ]
+  }
+}

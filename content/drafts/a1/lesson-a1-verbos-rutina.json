@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-verbos-rutina",
+    "titleAr": "أفعال الروتين اليومي: تصريف الأفعال الأساسية في المضارع البسيط",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u7-routine",
+    "objectiveAr": "أن يصرّف المتعلم أفعال الروتين اليومي (desayunar, comer, cenar, trabajar, estudiar, dormir) في المضارع البسيط مع ضمائر الفاعل المختلفة بدقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "vocabulary",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "desayunar",
+      "comer",
+      "cenar",
+      "trabajar",
+      "estudiar",
+      "dormir",
+      "rutina",
+      "diario"
+    ],
+    "reviewVocabulary": [
+      "casa",
+      "pan",
+      "café"
+    ],
+    "targetStructures": [
+      "Por la mañana desayuno café con tostadas.",
+      "Como en el trabajo a las dos de la tarde.",
+      "Ceno con mi familia a las nueve."
+    ],
+    "grammarTopics": [
+      "verbos-rutina-presente",
+      "verbos-comidas-desayunar-comer-cenar",
+      "cambio-vocalico-dormir"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عصام يصف لزميله الإسباني خوليو جدوله اليومي المعتاد من الإفطار حتى العشاء.",
+        "settingAr": "كافتيريا الجامعة في إشبيلية",
+        "lines": [
+          {
+            "es": "¿A qué hora desayunas normalmente, Issam?",
+            "ar": "في أي ساعة تتناول إفطارك عادة يا عصام؟",
+            "arEg": "بتفطر الساعة كام عادة يا عصام؟",
+            "audioKey": "pending/a1-vr-sc-1"
+          },
+          {
+            "es": "Desayuno a las ocho en casa, y luego salgo a estudiar.",
+            "ar": "أتناول الإفطار في الثامنة بالبيت، ثم أخرج للدراسة.",
+            "arEg": "بفطر الساعة تمانية في البيت، وبعدها بخرج أذاكر.",
+            "audioKey": "pending/a1-vr-sc-2"
+          },
+          {
+            "es": "¿Y dónde comes al mediodía?",
+            "ar": "وأين تتناول الغداء وقت الظهيرة؟",
+            "arEg": "وبتتغدى فين الضهر؟",
+            "audioKey": "pending/a1-vr-sc-3"
+          },
+          {
+            "es": "Como en el comedor universitario con mis compañeros.",
+            "ar": "أتغدى في مطعم الجامعة مع زملائي.",
+            "arEg": "بتغدى في مطعم الجامعة مع زمايلي.",
+            "audioKey": "pending/a1-vr-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا الوجبات لها أفعال مخصصة: desayunar (الإفطار)، comer أو almorzar (الغداء، وهو الوجبة الأكبر وتكون بين 14:00 و15:30)، وcenar (العشاء، ويكون متأخراً عادة بعد 21:00).",
+    "pedagogicalRationaleAr": "الفعل dormir يحدث فيه تحول حرفي (o -> ue): duermo, duermes, duerme, duermen (ولكن dormimos). بينما desayunar, comer, cenar, trabajar, estudiar أفعال منتظمة. يجب تثبيت هذه المنظومة للمتعلم.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_vr_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ماذا يفعل المتحدث في الصباح.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع لنشاط الصباح:",
+        "stemEs": "Todas las mañanas desayuno café con leche y una tostada.",
+        "stemAr": "كل صباح أتناول في الإفطار قهوة بالحليب وخبزاً محمصاً.",
+        "options": [
+          {
+            "id": "a1_vr_1_a",
+            "text": "Desayuna café con leche",
+            "textAr": "يتناول الإفطار قهوة بحليب",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_vr_1_b",
+            "text": "Come carne y arroz",
+            "textAr": "يتناول الغداء لحماً وأرزاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر desayunar وليس comer."
+          },
+          {
+            "id": "a1_vr_1_c",
+            "text": "Duerme hasta tarde",
+            "textAr": "ينام لوقت متأخر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يفطر صباحاً ولا ينام."
+          }
+        ],
+        "targetVocab": [
+          "desayunar",
+          "café",
+          "rutina"
+        ],
+        "explanationAr": "الصوت ذكر بوضوح: desayuno café con leche.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-vr-ex-1",
+        "speechEs": "Todas las mañanas desayuno café con leche y una tostada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_vr_1_a"
+          ],
+          "selectedOptionId": "a1_vr_1_a"
+        },
+        "errorFeedback": {
+          "a1_vr_1_b": "الصوت ذكر desayunar وليس comer.",
+          "a1_vr_1_c": "المتحدث يفطر صباحاً ولا ينام."
+        }
+      },
+      {
+        "id": "a1_vr_2_conjugation_comer",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر تصريف الفعل comer المناسب لضمير المتكلم (yo).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تقول: «أنا أتناول الغداء في البيت»؟",
+        "stemEs": "Normalmente yo ____ en casa con mi familia.",
+        "stemAr": "عادة أنا ____ في البيت مع عائلتي.",
+        "options": [
+          {
+            "id": "a1_vr_2_a",
+            "text": "como",
+            "textAr": "أتغدى / آكل (تصريف yo)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_vr_2_b",
+            "text": "comes",
+            "textAr": "تتغدى (تصريف tú)",
+            "isCorrect": false,
+            "distractorRationaleAr": "comes مع ضمير المخاطب tú."
+          },
+          {
+            "id": "a1_vr_2_c",
+            "text": "come",
+            "textAr": "يتغدى (تصريف él)",
+            "isCorrect": false,
+            "distractorRationaleAr": "come مع ضمير الغائب él/ella."
+          }
+        ],
+        "targetVocab": [
+          "comer",
+          "casa",
+          "rutina"
+        ],
+        "explanationAr": "تصريف الفعل comer مع yo هو: como.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_vr_2_a"
+          ],
+          "selectedOptionId": "a1_vr_2_a"
+        },
+        "errorFeedback": {
+          "a1_vr_2_b": "comes مع ضمير المخاطب tú.",
+          "a1_vr_2_c": "come مع ضمير الغائب él/ella."
+        }
+      },
+      {
+        "id": "a1_vr_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بتصريف فعل العمل (trabajar) مع ضمير المتكلم.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (trabajo) في الفراغ:",
+        "stemEs": "De lunes a viernes ____ en una oficina.",
+        "stemAr": "من الاثنين إلى الجمعة ____ في مكتب.",
+        "targetVocab": [
+          "trabajar",
+          "rutina"
+        ],
+        "explanationAr": "تصريف الفعل trabajar مع yo هو: trabajo.",
+        "answerKey": {
+          "accepted": [
+            "trabajo"
+          ],
+          "acceptableAnswers": [
+            "trabajo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_vr_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لبيان تناول العشاء ليلاً.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_vr_4_order_t1",
+            "kind": "token",
+            "text": "Ceno"
+          },
+          {
+            "id": "a1_vr_4_order_t2",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "a1_vr_4_order_t3",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "a1_vr_4_order_t4",
+            "kind": "token",
+            "text": "familia"
+          },
+          {
+            "id": "a1_vr_4_order_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "a1_vr_4_order_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a1_vr_4_order_t7",
+            "kind": "token",
+            "text": "noche."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Ceno con mi familia por la noche."
+          ],
+          "tokenOrder": [
+            "a1_vr_4_order_t1",
+            "a1_vr_4_order_t2",
+            "a1_vr_4_order_t3",
+            "a1_vr_4_order_t4",
+            "a1_vr_4_order_t5",
+            "a1_vr_4_order_t6",
+            "a1_vr_4_order_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Ceno + شبه الجملة con mi familia + الظرف الزمني por la noche.",
+        "targetVocab": [
+          "cenar",
+          "rutina"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_vr_5_dormir",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التصريف الصحيح لفعل النوم (dormir) مع ضمير المتكلم.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "فعل dormir غير منتظم مع yo ويصبح:",
+        "stemEs": "Todos los días ____ ocho horas.",
+        "stemAr": "كل يوم ____ ثماني ساعات.",
+        "options": [
+          {
+            "id": "a1_vr_5_a",
+            "text": "duermo",
+            "textAr": "أنام (بتحول o إلى ue)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_vr_5_b",
+            "text": "dormo",
+            "textAr": "تصريف خاطئ بدون تحول",
+            "isCorrect": false,
+            "distractorRationaleAr": "فعل dormir غير منتظم ويتحول إلى duermo مع yo."
+          },
+          {
+            "id": "a1_vr_5_c",
+            "text": "duermes",
+            "textAr": "تنام (مع tú)",
+            "isCorrect": false,
+            "distractorRationaleAr": "duermes مع ضمير المخاطب tú."
+          }
+        ],
+        "targetVocab": [
+          "dormir",
+          "rutina"
+        ],
+        "explanationAr": "الفعل dormir يتحول إلى duermo مع ضمير المتكلم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_vr_5_a"
+          ],
+          "selectedOptionId": "a1_vr_5_a"
+        },
+        "errorFeedback": {
+          "a1_vr_5_b": "فعل dormir غير منتظم ويتحول إلى duermo مع yo.",
+          "a1_vr_5_c": "duermes مع ضمير المخاطب tú."
+        }
+      },
+      {
+        "id": "a1_vr_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة روتين الدراسة والعمل بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح وثقة:",
+        "stemEs": "Por las mañanas estudio y por las tardes trabajo.",
+        "stemAr": "في الصباح أدرس وفي المساء أعمل.",
+        "audioKey": "pending/a1-vr-ex-6",
+        "targetVocab": [
+          "estudiar",
+          "trabajar",
+          "rutina"
+        ],
+        "explanationAr": "انتبه للتقابل الصوتي بين es-tu-dio و tra-ba-jo.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-vr-ex-6",
+          "modelAnswer": "Por las mañanas estudio y por las tardes trabajo."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

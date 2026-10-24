@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-expresar-opinion-creo-que",
+    "titleAr": "إبداء الرأي والشك: Creo que مقابل No creo que",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u2-opinions",
+    "objectiveAr": "أن يتقن المتعلم التعبير عن الرأي واليقين باستخدام صيغة الإثبات (Creo que + Indicativo) والتعبير عن الشك والإنكار بصيغة النفي (No creo que + Subjuntivo) بدقة لغوية عالية.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "creer",
+      "pensar",
+      "opinar",
+      "verdad",
+      "duda",
+      "posible"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "trabajo",
+      "tiempo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Afirmación (Certeza): Creo que / Pienso que + INDICATIVO",
+      "Negación (Duda): No creo que / No pienso que + SUBJUNTIVO",
+      "Pregunta: ¿Crees que es verdad?"
+    ],
+    "grammarTopics": [
+      "subjuntivo-opinion-negativa",
+      "creo-que-indicativo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نقاش بين مدير ونائبه حول خطة تسويقية جديدة ومشروع توسع للشركة في مصر.",
+        "settingAr": "غرفة اجتماعات، مدريد",
+        "lines": [
+          {
+            "es": "Creo que el mercado tiene un potencial enorme para nuestra empresa.",
+            "ar": "أعتقد أن السوق يمتلك إمكانات هائلة لشركتنا.",
+            "arEg": "شايف إن السوق فيه فرص كبيرة جداً لشركتنا.",
+            "audioKey": "pending/b1-op-reunion-1"
+          },
+          {
+            "es": "Estoy de acuerdo, pero no creo que este sea el mejor momento.",
+            "ar": "أنا متفق معك، لكني لا أعتقد أن هذا هو الوقت الأنسب للبدء.",
+            "arEg": "أنا متفق معاك، بس مش شايف إن ده أحسن وقت نبدأ فيه.",
+            "audioKey": "pending/b1-op-reunion-2"
+          },
+          {
+            "es": "¿Por qué no? Pienso que la demanda es muy alta ahora mismo.",
+            "ar": "ولماذا لا؟ أعتقد أن الطلب مرتفع للغاية في الوقت الراهن.",
+            "arEg": "ليه لأ؟ أنا شايف الطلب عالي أوي دلوقتي.",
+            "audioKey": "pending/b1-op-reunion-3"
+          },
+          {
+            "es": "Sí, pero no pienso que tengamos suficientes recursos este mes.",
+            "ar": "نعم، لكني لا أظن أن لدينا موارد كافية هذا الشهر.",
+            "arEg": "تمام، بس مش فاكر إن عندنا سيولة كافية الشهر ده.",
+            "audioKey": "pending/b1-op-reunion-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_op_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى النائب واختر سبب تحفظه على بدء المشروع الآن.",
+        "audioKey": "pending/b1-op-reunion-4",
+        "speechEs": "Sí, pero no pienso que tengamos suficientes recursos este mes.",
+        "options": [
+          {
+            "id": "b1_op_1_a",
+            "text": "Falta de recursos suficientes este mes",
+            "isCorrect": true,
+            "textAr": "نقص الموارد الكافية هذا الشهر"
+          },
+          {
+            "id": "b1_op_1_b",
+            "text": "Mercado sin potencial alguno",
+            "isCorrect": false,
+            "textAr": "سوق بلا إمكانات",
+            "distractorRationaleAr": "هو اتفق على أن السوق واعد."
+          },
+          {
+            "id": "b1_op_1_c",
+            "text": "Problemas de personal",
+            "isCorrect": false,
+            "textAr": "مشاكل في الموظفين",
+            "distractorRationaleAr": "لم يتطرق إلى الموظفين."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_op_1_a"
+          ]
+        },
+        "explanationAr": "قال النائب بوضوح: «no pienso que tengamos suficientes recursos este mes».",
+        "errorFeedback": {
+          "b1_op_1_b": "هو متفق أن السوق ممتاز.",
+          "b1_op_1_c": "لم يذكر مشاكل الموظفين."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "pensar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_op_2_subj_trigger",
+        "type": "word_choice",
+        "instructionAr": "متى نستخدم زمن المنصوب بعد أفعال الرأي والتفكير في الإسبانية؟",
+        "options": [
+          {
+            "id": "b1_op_2_a",
+            "text": "Con la negación (No creo que / No pienso que)",
+            "isCorrect": true,
+            "textAr": "مع النفي"
+          },
+          {
+            "id": "b1_op_2_b",
+            "text": "En la afirmación (Creo que)",
+            "isCorrect": false,
+            "textAr": "في الإثبات",
+            "distractorRationaleAr": "في الإثبات نستخدم Indicativo حصراً."
+          },
+          {
+            "id": "b1_op_2_c",
+            "text": "En las preguntas directas",
+            "isCorrect": false,
+            "textAr": "في السؤال المباشر",
+            "distractorRationaleAr": "السؤال العادي يأخذ Indicativo."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_op_2_a"
+          ]
+        },
+        "explanationAr": "في الإثبات (اليقين) = Indicativo: Creo que es verdad، وفي النفي (الشك) = Subjuntivo: No creo que sea verdad.",
+        "errorFeedback": {
+          "b1_op_2_b": "الإثبات يأخذ indicativo دائمًا.",
+          "b1_op_2_c": "السؤال لا يشترط المنصوب."
+        },
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "creer"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_op_3_fill_affirmative",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالصيغة الصحيحة من فعل ser في الإثبات: «أعتقد أنه رجل طيب».",
+        "stemEs": "Creo que él ____ una persona muy honesta.",
+        "stemAr": "أعتقد أنه شخص نزيه جدًا.",
+        "answerKey": {
+          "accepted": [
+            "es"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "مع صيغة الإثبات (Creo que) نستخدم صيغة الواقع واليقين (Indicativo)، لذا نختار es.",
+        "errorFeedback": {
+          "sea": "sea منصوب ولا تأتي إلا مع النفي No creo que.",
+          "era": "era في الماضي والموقف حاضر."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "creer"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_op_4_fill_negative",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالصيغة الصحيحة مع النفي: «لا أعتقد أن الحل سهلاً».",
+        "stemEs": "No creo que la solución ____ tan fácil.",
+        "stemAr": "لا أعتقد أن الحل سهلاً إلى هذا الحد.",
+        "answerKey": {
+          "accepted": [
+            "sea"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "النفي مع أفعال الرأي (No creo que) يعبر عن الشك وعدم الإقرار، مما يستدعي زمن المنصوب (Presente de Subjuntivo): sea.",
+        "errorFeedback": {
+          "es": "es خطأ بعد No creo que.",
+          "será": "será مستقبل غير مسموح به هنا."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "creer"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_op_5_contrast_quiz",
+        "type": "word_choice",
+        "instructionAr": "أي الجملتين الآتيتين صحيحة نحويًا وفق قواعد اللغة الإسبانية؟",
+        "options": [
+          {
+            "id": "b1_op_5_a",
+            "text": "No pienso que ellos tengan razón.",
+            "isCorrect": true,
+            "textAr": "لا أظن أن معهم حق (منصوب)"
+          },
+          {
+            "id": "b1_op_5_b",
+            "text": "No pienso que ellos tienen razón.",
+            "isCorrect": false,
+            "textAr": "خطأ باستخدام tienen مع النفي",
+            "distractorRationaleAr": "استخدام tienen (indicativo) بعد No pienso que خطأ تركيبي شائع."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_op_5_a"
+          ]
+        },
+        "explanationAr": "الجملة الصحيحة هي «No pienso que ellos tengan razón» لأن No pienso que تحتم المنصوب (tengan).",
+        "errorFeedback": {
+          "b1_op_5_b": "tienen صيغة indicativo ولا تجوز بعد No pienso que."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "pensar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_op_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق الجملة بصوت تفاوضي واضح.",
+        "stemEs": "No creo que tengamos tiempo hoy.",
+        "stemAr": "لا أعتقد أن لدينا وقتًا اليوم.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-op-speak-1",
+          "modelAnswer": "No creo que tengamos tiempo hoy."
+        },
+        "explanationAr": "ركز على نطق g في tengamos بصوت الغين الخفيفة، ونطق hoy دون نطق حرف h الصامت.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "creer"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "إسقاط h الصامت في hoy",
+              "weight": 50,
+              "code": "silent_h"
+            },
+            {
+              "labelAr": "نطق tengamos بسلاسة",
+              "weight": 50,
+              "code": "fluency_tengamos"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من مراجع Aula Plus 3 وEn Vocabulario B1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم التباين الجوهري بين Indicativo في الإثبات و Subjuntivo في النفي مع تطبيقات تفاوضية واقعية."
+    }
+  }
+}

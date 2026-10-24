@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-llamadas-telefonicas",
+    "unitSlug": "a2-u9-phone-booking",
+    "levelCode": "A2",
+    "titleAr": "المكالمات الهاتفية: عبارات الرد والتحية وطلب التحدث لشخص",
+    "titleEs": "Llamadas telefónicas y fórmulas de cortesía",
+    "subtitleAr": "¿Dígame?, ¿De parte de quién?, ¿Está Carlos?, No se retire",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يرد المتعلم على الهاتف بالعبارات الإسبانية المناسبة رسمياً وغير رسمي: ¡Dígame!, ¡Hola, buenos días!, ¿Sí?.",
+        "أن يطلب التحدث مع شخص معين: ¿Está Carmen? / ¿Podría hablar con el señor López?.",
+        "أن يسأل عن هوية المتصل بأدب: ¿De parte de quién? / ¿Quién llama, por favor?."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ المحادثات الهاتفية في إسبانيا وأمريكا اللاتينية",
+          "explanationAr": "1. **الرد على الهاتف**:\n- في إسبانيا: **¡Dígame!** (تفضل / نعم - الأكثر شيوعاً) أو **¿Sí? / ¿Diga?**.\n- في المكسيك وأمريكا اللاتينية: **¿Bueno? / ¿Aló?**.\n2. **طلب التحدث لشخص**:\n- غير رسمي: ¿Está Pedro? (هل بيدرو موجود؟).\n- رسمي: ¿Podría ponerme con la señora Martínez, por favor? (هل تفضلت بتحويلي للسيدة مارتينيز؟).\n3. **السؤال عن المتصل والرد**:\n- ¿De parte de quién? (مَن المتصل؟ - حرفياً: من طرف مَن؟).\n- Soy Raúl / De parte de Raúl (أنا راؤول / من طرف راؤول)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام Hola كطريقة وحيدة للرد على الهاتف؛ في إسبانيا الرد القياسي عند رفع السماعة هو ¡Dígame! أو ¿Diga?.",
+        "ترجمة حرفية لجملة 'أنا فلان' بـ *Yo soy en el teléfono*؛ الصحيح: Soy + الاسم، أو Habla + الاسم."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «ألو، مين معايا؟، فلان موجود؟». بالإسبانية: ¡Dígame! ¿De parte de quién? ¿Está fulano?"
+        }
+      ],
+      "culturalNoteAr": "في بيئة العمل الإسبانية، يبدأ الرد بذكر اسم الشركة متبوعاً بالتحية: 'Empresa Sol, buenos días, ¿en qué puedo ayudarle?'."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-llamadas-telefonicas-intro",
+        "type": "explanation",
+        "titleAr": "المفردات الأساسية للمكالمة الهاتفية",
+        "bodyAr": "المصطلحات الشائعة:\n- **la llamada**: المكالمة الهاتفية\n- **el teléfono**: الهاتف\n- **contestar**: يرد على الهاتف\n- **comunicar**: مشغول (الخط مشغول: la línea comunica)\n- **poner con**: يحول المكالمة إلى شخص (poner con el director)\n- **el prefijo**: كود الدولة أو المنطقة",
+        "examples": [
+          {
+            "es": "—¿Dígame? —Hola, ¿podría hablar con Laura? —Un momento, ahora la pongo.",
+            "ar": "—ألو / تفضل؟ —مرحباً، هل يمكنني التحدث مع لاورا؟ —لحظة، أحولك إليها حالاً."
+          },
+          {
+            "es": "¿De parte de quién, por favor?",
+            "ar": "من المتصل، من فضلك؟"
+          },
+          {
+            "es": "El número comunica; volveré a llamar más tarde.",
+            "ar": "الرقم مشغول؛ سأعاود الاتصال لاحقاً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "llamada",
+      "teléfono",
+      "contestar",
+      "comunicar",
+      "poner con",
+      "prefijo"
+    ],
+    "reviewVocabulary": [
+      "hablar",
+      "momento"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يرد المتعلم على الهاتف بالعبارات الإسبانية المناسبة رسمياً وغير رسمي: ¡Dígame!, ¡Hola, buenos días!, ¿Sí?.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-tel-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة الإسبانية القياسية للرد على الهاتف",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة الأكثر شيوعاً في إسبانيا عند رفع سماعة الهاتف؟",
+        "stemEs": "Suena el teléfono y al descolgar digo: ¡_____!",
+        "stemAr": "يرن الهاتف وعند رفع السماعة أقول: ...!",
+        "options": [
+          {
+            "id": "ex-a2-tel-1_a",
+            "text": "Dígame",
+            "textAr": "تفضل / نعم أسمعك (العبارة القياسية)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-tel-1_b",
+            "text": "Contestar",
+            "textAr": "المصدر 'يرد' (غير مناسب كصيغة تحية)",
+            "isCorrect": false,
+            "distractorRationaleAr": "contestar هو اسم الفعل وليس صيغة التحية المنطوقة."
+          },
+          {
+            "id": "ex-a2-tel-1_c",
+            "text": "Prefijo",
+            "textAr": "مفتاح الرقم",
+            "isCorrect": false,
+            "distractorRationaleAr": "prefijo يعني كود الدولة ولا يقال كتحية."
+          }
+        ],
+        "targetVocab": [
+          "contestar",
+          "prefijo"
+        ],
+        "explanationAr": "في إسبانيا، الرد القياسي اليومي هو ¡Dígame! أو ¿Diga?.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-tel-1_a"
+          ],
+          "selectedOptionId": "ex-a2-tel-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-tel-1_b": "contestar هو اسم الفعل وليس صيغة التحية المنطوقة.",
+          "ex-a2-tel-1_c": "prefijo يعني كود الدولة ولا يقال كتحية."
+        }
+      },
+      {
+        "id": "ex-a2-tel-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل عبارة السؤال عن هوية المتصل",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل السؤال بأداة الاستفهام المناسبة: ¿De parte de _____?",
+        "stemEs": "¿De parte de _____, por favor?",
+        "stemAr": "من المتصل، من فضلك؟",
+        "targetVocab": [
+          "llamada"
+        ],
+        "explanationAr": "السؤال القياسي هو: ¿De parte de quién? (من المتصل؟).",
+        "answerKey": {
+          "accepted": [
+            "quién",
+            "quien"
+          ],
+          "acceptableAnswers": [
+            "quién",
+            "quien"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-tel-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد حالة الخط عندما يكون الطرف الآخر يجري مكالمة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما تتصل ويكون الخط مشغولاً، نقول باللغة الإسبانية:",
+        "stemEs": "He intentado llamar al despacho pero la línea _____.",
+        "stemAr": "حاولت الاتصال بالمكتب لكن الخط ...",
+        "options": [
+          {
+            "id": "ex-a2-tel-3_a",
+            "text": "comunica",
+            "textAr": "مشغول (تتوالى نغمات الانشغال)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-tel-3_b",
+            "text": "contesta",
+            "textAr": "يرد",
+            "isCorrect": false,
+            "distractorRationaleAr": "لو كان الخط contesta لكان قد رد أحد."
+          },
+          {
+            "id": "ex-a2-tel-3_c",
+            "text": "pone con",
+            "textAr": "يحول إلى",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يستقيم المعنى مع حالة الخط المشغول."
+          }
+        ],
+        "targetVocab": [
+          "comunicar",
+          "contestar",
+          "poner con"
+        ],
+        "explanationAr": "نقول: La línea comunica عندما يكون الهاتف مشغولاً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-tel-3_a"
+          ],
+          "selectedOptionId": "ex-a2-tel-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-tel-3_b": "لو كان الخط contesta لكان قد رد أحد.",
+          "ex-a2-tel-3_c": "لا يستقيم المعنى مع حالة الخط المشغول."
+        }
+      },
+      {
+        "id": "ex-a2-tel-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب تحويل المكالمة إلى المدير بأدب",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-tel-4_t1",
+            "kind": "token",
+            "text": "¿Podría"
+          },
+          {
+            "id": "ex-a2-tel-4_t2",
+            "kind": "token",
+            "text": "ponerme"
+          },
+          {
+            "id": "ex-a2-tel-4_t3",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-a2-tel-4_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-tel-4_t5",
+            "kind": "token",
+            "text": "director?"
+          },
+          {
+            "id": "ex-a2-tel-4_t6",
+            "kind": "token",
+            "text": "gracias"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Podría ponerme con el director? gracias"
+          ],
+          "tokenOrder": [
+            "ex-a2-tel-4_t1",
+            "ex-a2-tel-4_t2",
+            "ex-a2-tel-4_t3",
+            "ex-a2-tel-4_t4",
+            "ex-a2-tel-4_t5",
+            "ex-a2-tel-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: صيغة الرجاء ¿Podría ثم ponerme con ثم الشخص المستهدف ثم الشكر.",
+        "targetVocab": [
+          "poner con"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-tel-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد هوية الشخص المطلوب في المكالمة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمكالمة وحدد مع من يريد المتصل أن يتحدث",
+        "stemEs": "Buenos días, ¿está la doctora García en su consulta?",
+        "stemAr": "صباح الخير، هل الدكتورة غارثيا موجودة في عيادتها؟",
+        "options": [
+          {
+            "id": "ex-a2-tel-5_a",
+            "text": "teléfono",
+            "textAr": "هاتف",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتصل يسأل عن شخص محدد في العيادة."
+          },
+          {
+            "id": "ex-a2-tel-5_b",
+            "text": "llamada",
+            "textAr": "مكالمة هاتفية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-tel-5_c",
+            "text": "prefijo",
+            "textAr": "كود الاتصال",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتصل يجري مكالمة هاتفية مباشرة."
+          }
+        ],
+        "targetVocab": [
+          "teléfono",
+          "llamada",
+          "prefijo"
+        ],
+        "explanationAr": "المتحدث يجري مكالمة هاتفية رسمية للسؤال عن الطبيبة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_llamada_doctora.mp3",
+        "speechEs": "Buenos días, ¿está la doctora García en su consulta?",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-tel-5_b"
+          ],
+          "selectedOptionId": "ex-a2-tel-5_b"
+        },
+        "errorFeedback": {
+          "ex-a2-tel-5_a": "المتصل يسأل عن شخص محدد في العيادة.",
+          "ex-a2-tel-5_c": "المتصل يجري مكالمة هاتفية مباشرة."
+        }
+      },
+      {
+        "id": "ex-a2-tel-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق ردك الرسمي واللبق على الهاتف",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق جملة التحويل المؤقت للمكالمة بوضوح:",
+        "stemEs": "Un momento, por favor, ahora mismo le pongo con él.",
+        "stemAr": "لحظة واحدة من فضلك، سأحولك إليه في الحال.",
+        "audioKey": "pending/a2_le_pongo_ahora.mp3",
+        "targetVocab": [
+          "poner con"
+        ],
+        "explanationAr": "انتبه لنطق le pongo con él بسلاسة بدون توقف طويل.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_le_pongo_ahora.mp3",
+          "modelAnswer": "Un momento, por favor, ahora mismo le pongo con él."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ المحادثات الهاتفية في إسبانيا وأمريكا اللاتينية"
+    ]
+  }
+}

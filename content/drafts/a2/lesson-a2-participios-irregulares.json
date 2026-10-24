@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-participios-irregulares",
+    "unitSlug": "a2-u5-experiences",
+    "levelCode": "A2",
+    "titleAr": "أسماء المفعول الشاذة: Participios Irregulares الأكثر استخداماً",
+    "titleEs": "Los participios irregulares esenciales",
+    "subtitleAr": "أهم أسماء المفعول الشاذة: hecho, dicho, visto, escrito, puesto, abierto",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحفظ ويطبق المتعلم أشهر أسماء المفعول الشاذة في الإسبانية.",
+        "أن يصوغ الماضي القريب للأفعال الشاذة: hacer -> hecho, decir -> dicho, ver -> visto, escribir -> escrito, poner -> puesto, abrir -> abierto.",
+        "أن يركب جملاً يومية واقعية للإخبار بالمهام المنجزة (Ya he hecho los deberes)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قائمة أسماء المفعول الشاذة الحاسمة",
+          "explanationAr": "بعض أهم الأفعال الإسبانية لا تتبع قاعدة -ado و -ido في اسم المفعول، بل لها صيغ شاذة يجب حفظها غيباً:\n- **hacer** -> **hecho** (فعلَ / صنَع)\n- **decir** -> **dicho** (قالَ)\n- **ver** -> **visto** (رأى / شاهد)\n- **escribir** -> **escrito** (كتَب)\n- **poner** -> **puesto** (وضَع)\n- **abrir** -> **abierto** (فتَح)\n- **volver** -> **vuelto** (عاد / رجع)\nتحذير: لا تحاول قياس هذه الأفعال (ممنوع قول *hacido* أو *decido* أو *escribido*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "محاولة قياس أسماء المفعول الشاذة بإضافة -ido (مثل كتابة *hacido* بدلاً من hecho أو *escribido* بدلاً من escrito).",
+        "الخلط بين dicho كاسم مفعول و dicho كمَثَل شعبي في السياقات الثقافية."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «أنا عملت الواجب / شفت الفيلم ده / كتبت الرسالة». في الإسبانية مع الشواذ: He hecho los deberes / He visto esa película / He escrito el mensaje."
+        }
+      ],
+      "culturalNoteAr": "الإسبان كثيراً ما يجيبون عند التأكيد بعبارة شهيرة تجمع اسمين للمفعول: «¡Dicho y hecho!» (بمجرد أن قيل نُفّذ على الفور!)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-participios-irregulares-intro",
+        "type": "explanation",
+        "titleAr": "أسماء المفعول الشاذة الأساسية",
+        "bodyAr": "الأفعال الشاذة الرئيسية وصيغ اسم مفعولها:\n- **hacer -> hecho**: he hecho (فعلتُ / عملتُ)\n- **decir -> dicho**: has dicho (قلتَ)\n- **ver -> visto**: hemos visto (رأينا / شاهدنا)\n- **escribir -> escrito**: ha escrito (كتبَ)\n- **poner -> puesto**: he puesto (وضعتُ)\n- **abrir -> abierto**: han abierto (فتحوا)",
+        "examples": [
+          {
+            "es": "¿Qué has hecho este fin de semana?",
+            "ar": "ماذا فعلت في عطلة نهاية هذا الأسبوع؟"
+          },
+          {
+            "es": "Ya he escrito el correo electrónico.",
+            "ar": "لقد كتبت البريد الإلكتروني بالفعل."
+          },
+          {
+            "es": "Hemos visto una película excelente.",
+            "ar": "شاهدنا فيلماً ممتازاً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "hecho",
+      "dicho",
+      "visto",
+      "escrito",
+      "puesto",
+      "abierto"
+    ],
+    "reviewVocabulary": [
+      "hacer",
+      "decir"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يحفظ ويطبق المتعلم أشهر أسماء المفعول الشاذة في الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-irr-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر اسم المفعول الشاذ للفعل hacer",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو اسم المفعول الصحيح من الفعل hacer؟",
+        "stemEs": "Hoy he _____ mucho trabajo en la oficina.",
+        "stemAr": "اليوم قمت بـ ... عمل كثير في المكتب.",
+        "options": [
+          {
+            "id": "ex-a2-irr-1_a",
+            "text": "hecho",
+            "textAr": "اسم المفعول الشاذ الصحيح (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-irr-1_b",
+            "text": "hacido",
+            "textAr": "خطأ قياس غير موجود في الإسبانية",
+            "isCorrect": false,
+            "distractorRationaleAr": "hacer فعل شاذ واسم مفعوله hecho وليس hacido."
+          },
+          {
+            "id": "ex-a2-irr-1_c",
+            "text": "haciendo",
+            "textAr": "صيغة استمرار gerundio",
+            "isCorrect": false,
+            "distractorRationaleAr": "بعد haber نحتاج اسم مفعول وليس gerundio."
+          }
+        ],
+        "targetVocab": [
+          "hecho",
+          "hacer"
+        ],
+        "explanationAr": "اسم المفعول من hacer هو hecho دائماً: he hecho.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-irr-1_a"
+          ],
+          "selectedOptionId": "ex-a2-irr-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-irr-1_b": "hacer فعل شاذ واسم مفعوله hecho وليس hacido.",
+          "ex-a2-irr-1_c": "بعد haber نحتاج اسم مفعول وليس gerundio."
+        }
+      },
+      {
+        "id": "ex-a2-irr-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب اسم المفعول الشاذ للفعل ver",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب اسم المفعول من الفعل ver (رأى / شاهد)",
+        "stemEs": "¿Has _____ la última película de Almodóvar?",
+        "stemAr": "هل رأيت آخر أفلام ألمودوبار؟",
+        "targetVocab": [
+          "visto"
+        ],
+        "explanationAr": "اسم المفعول من الفعل ver هو visto.",
+        "answerKey": {
+          "accepted": [
+            "visto"
+          ],
+          "acceptableAnswers": [
+            "visto"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-irr-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد اسم المفعول الشاذ للفعل escribir",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة الصحيحة لقول 'لقد كتبتُ الرسالة'؟",
+        "stemEs": "Ya he _____ la carta para el consulado.",
+        "stemAr": "لقد ... الخطاب للقنصلية بالفعل.",
+        "options": [
+          {
+            "id": "ex-a2-irr-3_a",
+            "text": "escrito",
+            "textAr": "اسم المفعول الشاذ الصحيح",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-irr-3_b",
+            "text": "escribido",
+            "textAr": "خطأ فاحش بقياس الشاذ",
+            "isCorrect": false,
+            "distractorRationaleAr": "escribir شاذ في اسم المفعول وصيغته escrito."
+          },
+          {
+            "id": "ex-a2-irr-3_c",
+            "text": "puesto",
+            "textAr": "اسم مفعول poner (وضع)",
+            "isCorrect": false,
+            "distractorRationaleAr": "puesto تعني وضعت وليس كتبت."
+          }
+        ],
+        "targetVocab": [
+          "escrito",
+          "puesto"
+        ],
+        "explanationAr": "اسم المفعول من escribir هو escrito.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-irr-3_a"
+          ],
+          "selectedOptionId": "ex-a2-irr-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-irr-3_b": "escribir شاذ في اسم المفعول وصيغته escrito.",
+          "ex-a2-irr-3_c": "puesto تعني وضعت وليس كتبت."
+        }
+      },
+      {
+        "id": "ex-a2-irr-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عما قاله المدير اليوم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-irr-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-irr-4_t2",
+            "kind": "token",
+            "text": "jefe"
+          },
+          {
+            "id": "ex-a2-irr-4_t3",
+            "kind": "token",
+            "text": "ha"
+          },
+          {
+            "id": "ex-a2-irr-4_t4",
+            "kind": "token",
+            "text": "dicho"
+          },
+          {
+            "id": "ex-a2-irr-4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a2-irr-4_t6",
+            "kind": "token",
+            "text": "verdad"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El jefe ha dicho la verdad"
+          ],
+          "tokenOrder": [
+            "ex-a2-irr-4_t1",
+            "ex-a2-irr-4_t2",
+            "ex-a2-irr-4_t3",
+            "ex-a2-irr-4_t4",
+            "ex-a2-irr-4_t5",
+            "ex-a2-irr-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل El jefe ثم الفعل المركب ha dicho ثم المفعول به la verdad.",
+        "targetVocab": [
+          "dicho",
+          "decir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-irr-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما تم فتحه هذا الصباح",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الفعل الشاذ المستخدم",
+        "stemEs": "Han abierto una tienda nueva en mi calle.",
+        "stemAr": "لقد فتحوا متجراً جديداً في شارعي.",
+        "options": [
+          {
+            "id": "ex-a2-irr-5_a",
+            "text": "abierto",
+            "textAr": "فتحوا / مفتوح",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-irr-5_b",
+            "text": "puesto",
+            "textAr": "وضعوا",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال han abierto وليس han puesto."
+          },
+          {
+            "id": "ex-a2-irr-5_c",
+            "text": "hecho",
+            "textAr": "صنعوا",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل المسموع هو abrir بصيغة اسم المفعول abierto."
+          }
+        ],
+        "targetVocab": [
+          "abierto",
+          "puesto",
+          "hecho"
+        ],
+        "explanationAr": "اسم المفعول الشاذ من abrir هو abierto: han abierto.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_han_abierto_tienda.mp3",
+        "speechEs": "Han abierto una tienda nueva en mi calle.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-irr-5_a"
+          ],
+          "selectedOptionId": "ex-a2-irr-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-irr-5_b": "المتحدث قال han abierto وليس han puesto.",
+          "ex-a2-irr-5_c": "الفعل المسموع هو abrir بصيغة اسم المفعول abierto."
+        }
+      },
+      {
+        "id": "ex-a2-irr-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة إتمامك للعمل اليوم",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأنك أنجزت كافة الواجبات والمهام بنطق سليم",
+        "stemEs": "Ya he hecho todos los ejercicios.",
+        "stemAr": "لقد قمت بحل جميع التمارين بالفعل.",
+        "audioKey": "pending/a2_he_hecho_ejercicios.mp3",
+        "targetVocab": [
+          "hecho",
+          "hacer"
+        ],
+        "explanationAr": "تذكر أن حرف h في hecho صامت تماماً، وتنطق الكلمة: إيتشو.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_he_hecho_ejercicios.mp3",
+          "modelAnswer": "Ya he hecho todos los ejercicios."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "قائمة أسماء المفعول الشاذة الحاسمة"
+    ]
+  }
+}

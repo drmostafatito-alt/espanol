@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-farmacia",
+    "unitSlug": "a1-u10-health-basics",
+    "levelCode": "A1",
+    "titleAr": "في الصيدلية: طلب دواء بسيط وفهم التعليمات",
+    "titleEs": "En la farmacia: pedir medicinas",
+    "subtitleAr": "صيغ الطلب المهذب (Quería algo para...) وتعليمات الجرعة بـ cada",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطلب المتعلم دواءً بسيطاً في الصيدلية بأسلوب مهذب: Quería algo para el dolor de....",
+        "أن يفهم أشكال الأدوية الأساسية: pastillas, jarabe, medicina.",
+        "أن يفهم تعليمات الجرعات الشائعة: cada ocho horas, antes/después de comer."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ الطلب المهذب واستخدام cada للتكرار",
+          "explanationAr": "عند دخول الصيدلية نستخدم صيغة الماضي الناقص المهذبة Quería بدلاً من Quiero الفجة: Quería algo para el dolor de cabeza (أريد شيئاً لصداع الرأس)، ¿Tiene pastillas para la garganta? (هل لديك أقراص للحلق؟). لتحديد تكرار الجرعة، نستخدم كلمة **cada** (كل):\n- Tomar una pastilla **cada** ocho horas (تناول قرصاً كل ثماني ساعات).\n- Una cucharada de jarabe **cada** doce horas (ملعقة شراب كل 12 ساعة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام todo بدلاً من cada مع الجرعات الزمنية (مثل قول *todo ocho horas*؛ الصواب دائماً: cada ocho horas).",
+        "نسيان حرف الجر para عند بيان الغرض من الدواء (الصحيح: medicina para la fiebre)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول في الأجزخانة: «لو سمحت عايز حاجة للصداع / قرص كل 8 ساعات». في الإسبانية: Quería algo para el dolor de cabeza / Una pastilla cada ocho horas."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا، تُعرف الصيدليات بلافتة الصليب الأخضر المضيء (la cruz verde)، وتعتبر الصيدلية المصدر الأول للنصيحة الطبية السريعة للأعراض البسيطة قبل الذهاب للمستشفى."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-farmacia-intro",
+        "type": "explanation",
+        "titleAr": "التعامل في الصيدلية",
+        "bodyAr": "أهم المفردات والعبارات المستخدمة عند شراء الأدوية:\n- **la farmacia**: الصيدلية\n- **la pastilla**: قرص الدواء / الحبة\n- **la medicina**: الدواء / العلاج\n- **el jarabe**: الشراب الطبي (دواء سائل)\n- **la receta**: الروشتة / الوصفة الطبية\n- **cada**: كل (تكرار زمني: cada ocho horas)\n- **la caja**: علبة (una caja de pastillas)",
+        "examples": [
+          {
+            "es": "Quería una caja de pastillas para el dolor.",
+            "ar": "أريد علبة أقراص للألم."
+          },
+          {
+            "es": "¿Este medicamento necesita receta médica?",
+            "ar": "¿هل يحتاج هذا الدواء إلى روشتة طبية؟"
+          },
+          {
+            "es": "Tome este jarabe cada ocho horas.",
+            "ar": "تناول هذا الشراب كل ثماني ساعات."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "farmacia",
+      "pastilla",
+      "medicina",
+      "jarabe",
+      "receta",
+      "cada",
+      "caja"
+    ],
+    "reviewVocabulary": [
+      "dolor",
+      "fiebre"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يطلب المتعلم دواءً بسيطاً في الصيدلية بأسلوب مهذب: Quería algo para el dolor de....",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-far-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الطلب المهذبة في الصيدلية",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تطلب دواءً في الصيدلية بأسلوب مهذب ومقبول؟",
+        "stemEs": "Buenos días, _____ algo para el dolor de cabeza.",
+        "stemAr": "صباح الخير، ... شيئاً لألم الرأس.",
+        "options": [
+          {
+            "id": "ex-a1-far-1_o1",
+            "text": "quería",
+            "textAr": "صيغة الطلب المهذبة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-far-1_o2",
+            "text": "dame",
+            "textAr": "أمر مباشر فج",
+            "isCorrect": false,
+            "distractorRationaleAr": "في الصيدلية نستخدم أسلوباً مهذباً مثل quería وليس أمراً فجاً."
+          },
+          {
+            "id": "ex-a1-far-1_o3",
+            "text": "tienes",
+            "textAr": "أنت تملك",
+            "isCorrect": false,
+            "distractorRationaleAr": "quería algo تعبر عن رغبتك بأدب."
+          }
+        ],
+        "targetVocab": [
+          "dolor"
+        ],
+        "explanationAr": "تعبير Quería algo para... هو الأسلوب المهذب القياسي للطلب في المتاجر والصيدليات الإسبانية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-far-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-far-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-far-1_o2": "في الصيدلية نستخدم أسلوباً مهذباً مثل quería وليس أمراً فجاً.",
+          "ex-a1-far-1_o3": "quería algo تعبر عن رغبتك بأدب."
+        }
+      },
+      {
+        "id": "ex-a1-far-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية الدالة على تكرار الجرعة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية التي تعني 'كل' (مثل: كل ثماني ساعات)",
+        "stemEs": "Tiene que tomar una pastilla _____ ocho horas.",
+        "stemAr": "عليك تناول قرص كل ثماني ساعات.",
+        "targetVocab": [
+          "cada"
+        ],
+        "explanationAr": "كلمة cada تستخدم لتحديد تكرار الجرعات الزمنية: cada ocho horas.",
+        "answerKey": {
+          "accepted": [
+            "cada"
+          ],
+          "acceptableAnswers": [
+            "cada"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-far-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر شكل الدواء المناسب للسعال والأطفال",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "الدواء السائل الذي يؤخذ بالملعقة يسمى في الإسبانية:",
+        "stemEs": "El médico receta un _____ dulce para la tos.",
+        "stemAr": "الطبيب يصف شراباً حلواً للسعال.",
+        "options": [
+          {
+            "id": "ex-a1-far-3_o1",
+            "text": "jarabe",
+            "textAr": "شراب سائل",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-far-3_o2",
+            "text": "pastilla",
+            "textAr": "قرص صلب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الدواء السائل يسمى jarabe وليس pastilla."
+          },
+          {
+            "id": "ex-a1-far-3_o3",
+            "text": "caja",
+            "textAr": "علبة (تغليف)",
+            "isCorrect": false,
+            "distractorRationaleAr": "caja تعني العلبة وليس نوع الدواء السائل."
+          }
+        ],
+        "targetVocab": [
+          "jarabe",
+          "pastilla",
+          "caja"
+        ],
+        "explanationAr": "الدواء السائل يُسمى jarabe.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-far-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-far-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-far-3_o2": "الدواء السائل يسمى jarabe وليس pastilla.",
+          "ex-a1-far-3_o3": "caja تعني العلبة وليس نوع الدواء السائل."
+        }
+      },
+      {
+        "id": "ex-a1-far-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لشراء علبة دواء بدون روشتة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-far-4_t1",
+            "kind": "token",
+            "text": "Compro"
+          },
+          {
+            "id": "ex-a1-far-4_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-a1-far-4_t3",
+            "kind": "token",
+            "text": "caja"
+          },
+          {
+            "id": "ex-a1-far-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a1-far-4_t5",
+            "kind": "token",
+            "text": "medicina"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Compro una caja de medicina"
+          ],
+          "tokenOrder": [
+            "ex-a1-far-4_t1",
+            "ex-a1-far-4_t2",
+            "ex-a1-far-4_t3",
+            "ex-a1-far-4_t4",
+            "ex-a1-far-4_t5"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل Compro ثم أداة التنكير una والاسم caja وحرف الجر de والاسم medicina.",
+        "targetVocab": [
+          "caja",
+          "medicina"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-far-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر ما طلبه المريض",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل في الصيدلية وحدد الدواء المطلوب",
+        "stemEs": "Necesito unas pastillas para la fiebre alta.",
+        "stemAr": "أحتاج أقراصاً للحمى المرتفعة.",
+        "options": [
+          {
+            "id": "ex-a1-far-5_o1",
+            "text": "pastillas",
+            "textAr": "أقراص دواء",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-far-5_o2",
+            "text": "jarabe",
+            "textAr": "شراب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المريض طلب pastillas وليس jarabe."
+          },
+          {
+            "id": "ex-a1-far-5_o3",
+            "text": "receta",
+            "textAr": "روشتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المريض طلب الدواء نفسه."
+          }
+        ],
+        "targetVocab": [
+          "pastilla",
+          "fiebre",
+          "jarabe",
+          "receta"
+        ],
+        "explanationAr": "المريض طلب: unas pastillas para la fiebre.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_pastillas_fiebre.mp3",
+        "speechEs": "Necesito unas pastillas para la fiebre alta.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-far-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-far-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-far-5_o2": "المريض طلب pastillas وليس jarabe.",
+          "ex-a1-far-5_o3": "المريض طلب الدواء نفسه."
+        }
+      },
+      {
+        "id": "ex-a1-far-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلبك للدواء من الصيدلي",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اطلب من الصيدلي دواءً للحمى بنبرة واضحة ومؤدبة",
+        "stemEs": "Quería una medicina para la fiebre, por favor.",
+        "stemAr": "أريد علاجاً للحمى من فضلك.",
+        "audioKey": "pending/a1_medicina_fiebre.mp3",
+        "targetVocab": [
+          "medicina",
+          "fiebre"
+        ],
+        "explanationAr": "انتبه لنطق حرف d في medicina كـ ذال خفيفة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_medicina_fiebre.mp3",
+          "modelAnswer": "Quería una medicina para la fiebre, por favor."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "صيغ الطلب المهذب واستخدام cada للتكرار"
+    ]
+  }
+}

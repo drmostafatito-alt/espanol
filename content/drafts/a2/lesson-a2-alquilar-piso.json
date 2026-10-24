@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-alquilar-piso",
+    "unitSlug": "a2-u7-housing",
+    "levelCode": "A2",
+    "titleAr": "إجراءات وشروط الإيجار: العقد والتأمين ومصاريف الخدمات",
+    "titleEs": "El alquiler: contrato, fianza y gastos",
+    "subtitleAr": "التفاوض حول السعر الشهري (precio mensual) والتأمين (fianza) والخدمات",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يسأل المتعلم عن شروط وتكاليف استئجار عقار في إسبانيا.",
+        "أن يفهم مصطلحات الإيجار الأساسية: el alquiler, la fianza, el contrato, los gastos incluidos.",
+        "أن يستفسر عما يشمله الإيجار الشهري: ¿Están los gastos incluidos? (الكهرباء، الماء، الإنترنت)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "المفردات التعاقدية للإيجار في إسبانيا",
+          "explanationAr": "عند استئجار سكن في إسبانيا، تُطرح أسئلة محددة:\n- **El precio del alquiler**: قيمة الإيجار الشهرية (¿Cuánto cuesta el alquiler al mes?).\n- **La fianza**: مبلغ التأمين المسترد، والقانون الإسباني يطلب عادة شهرين تأمين (Dos meses de fianza).\n- **El contrato**: عقد الإيجار الرسمي (Firmar el contrato = توقيع العقد).\n- **Los gastos**: الفواتير ومصاريف الخدمات:\n  - gastos incluidos = الفواتير مشمولة في الإيجار.\n  - gastos aparte = الفواتير منفصلة ويدفعها المستأجر (la luz الكهرباء، el agua الماء، el gas الغاز، la comunidad صيانة العمارة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين alquilar (يؤجر لشخص أو يستأجر من شخص) و el alquiler (قيمة الإيجار نفسه كاسم).",
+        "اعتقاد أن fianza تعني كفالة قضائية فقط؛ في السياق السكني تعني حصراً مبلغ التأمين الوديعة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «الإيجار بكام في الشهر؟ وفيه شهرين تأمين، ومصاريف الخدمات داخلة في الإيجار ولا برة؟». في الإسبانية: ¿Cuánto es el alquiler? Dos meses de fianza, ¿gastos incluidos o aparte?"
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُطلب من المستأجر عادة تقديم إثبات دخل أو عقد عمل (el contrato de trabajo) وكشف حساب بنكي (las nóminas) كضمان قبل توقيع العقد."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-alquilar-piso-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات عقد الإيجار",
+        "bodyAr": "المفردات المالية والتعاقدية:\n- **el alquiler**: الإيجار\n- **la fianza**: التأمين المالي المسترد\n- **el contrato**: العقد\n- **los gastos**: المصاريف والفواتير\n- **el precio**: السعر / الثمن\n- **mensual**: شهرياً / شهري",
+        "examples": [
+          {
+            "es": "¿Cuánto es el precio del alquiler mensual?",
+            "ar": "كم هو سعر الإيجار الشهري؟"
+          },
+          {
+            "es": "El propietario pide un mes de fianza.",
+            "ar": "المالك يطلب شهراً واحداً كتأمين."
+          },
+          {
+            "es": "El agua y la luz son gastos aparte.",
+            "ar": "الماء والكهرباء مصاريف منفصلة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "alquiler",
+      "fianza",
+      "contrato",
+      "gastos",
+      "precio",
+      "mensual"
+    ],
+    "reviewVocabulary": [
+      "centro",
+      "oficina"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يسأل المتعلم عن شروط وتكاليف استئجار عقار في إسبانيا.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-alq-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المعبر عن مبلغ التأمين المسترد",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا يُسمى مبلغ التأمين الذي يودعه المستأجر لدى المالك كضمان؟",
+        "stemEs": "Para entrar al piso hay que pagar dos meses de _____.",
+        "stemAr": "لدخول الشقة يجب دفع شهرين من ...",
+        "options": [
+          {
+            "id": "ex-a2-alq-1_a",
+            "text": "fianza",
+            "textAr": "التأمين المسترد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-alq-1_b",
+            "text": "contrato",
+            "textAr": "عقد",
+            "isCorrect": false,
+            "distractorRationaleAr": "العقد وثيقة قانونية وليس مبلغ التأمين."
+          },
+          {
+            "id": "ex-a2-alq-1_c",
+            "text": "precio",
+            "textAr": "سعر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح العقاري الدقيق للوديعة هو fianza."
+          }
+        ],
+        "targetVocab": [
+          "fianza",
+          "contrato",
+          "precio"
+        ],
+        "explanationAr": "مبلغ التأمين السكني يُسمى في الإسبانية la fianza.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-alq-1_a"
+          ],
+          "selectedOptionId": "ex-a2-alq-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-alq-1_b": "العقد وثيقة قانونية وليس مبلغ التأمين.",
+          "ex-a2-alq-1_c": "المصطلح العقاري الدقيق للوديعة هو fianza."
+        }
+      },
+      {
+        "id": "ex-a2-alq-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية الدالة على الفواتير والمصاريف",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'المصاريف / الفواتير' بالإسبانية (صيغة الجمع)",
+        "stemEs": "¿Están los _____ de luz y agua incluidos en el precio?",
+        "stemAr": "هل مصاريف الكهرباء والماء مشمولة في السعر؟",
+        "targetVocab": [
+          "gastos"
+        ],
+        "explanationAr": "كلمة gastos تعني المصاريف أو النفقات وهي جمع مذكر.",
+        "answerKey": {
+          "accepted": [
+            "gastos"
+          ],
+          "acceptableAnswers": [
+            "gastos"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-alq-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الوثيقة القانونية الملزمة بين المالك والمستأجر",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الوثيقة الرسمية التي يوقعها الطرفان لبدء الإيجار؟",
+        "stemEs": "Antes de pagar tenemos que firmar el _____ de alquiler.",
+        "stemAr": "قبل الدفع يجب أن نوقع ... الإيجار.",
+        "options": [
+          {
+            "id": "ex-a2-alq-3_a",
+            "text": "contrato",
+            "textAr": "العقد الرسمي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-alq-3_b",
+            "text": "alquiler",
+            "textAr": "إيجار",
+            "isCorrect": false,
+            "distractorRationaleAr": "alquiler الإيجار نفسه، والوثيقة هي el contrato."
+          },
+          {
+            "id": "ex-a2-alq-3_c",
+            "text": "mensual",
+            "textAr": "شهري (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "mensual صفة وليست الوثيقة الموقعة."
+          }
+        ],
+        "targetVocab": [
+          "contrato",
+          "alquiler",
+          "mensual"
+        ],
+        "explanationAr": "الوثيقة القانونية الموقعة هي el contrato.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-alq-3_a"
+          ],
+          "selectedOptionId": "ex-a2-alq-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-alq-3_b": "alquiler الإيجار نفسه، والوثيقة هي el contrato.",
+          "ex-a2-alq-3_c": "mensual صفة وليست الوثيقة الموقعة."
+        }
+      },
+      {
+        "id": "ex-a2-alq-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب السؤال للاستفسار عن قيمة الإيجار الشهري للشقة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-alq-4_t1",
+            "kind": "token",
+            "text": "¿Cuánto"
+          },
+          {
+            "id": "ex-a2-alq-4_t2",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a2-alq-4_t3",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-alq-4_t4",
+            "kind": "token",
+            "text": "precio"
+          },
+          {
+            "id": "ex-a2-alq-4_t5",
+            "kind": "token",
+            "text": "del"
+          },
+          {
+            "id": "ex-a2-alq-4_t6",
+            "kind": "token",
+            "text": "alquiler"
+          },
+          {
+            "id": "ex-a2-alq-4_t7",
+            "kind": "token",
+            "text": "mensual?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Cuánto es el precio del alquiler mensual?"
+          ],
+          "tokenOrder": [
+            "ex-a2-alq-4_t1",
+            "ex-a2-alq-4_t2",
+            "ex-a2-alq-4_t3",
+            "ex-a2-alq-4_t4",
+            "ex-a2-alq-4_t5",
+            "ex-a2-alq-4_t6",
+            "ex-a2-alq-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: أداة الاستفهام ¿Cuánto ثم الفعل es ثم el precio ثم del alquiler mensual مع علامة الاستفهام في النهاية.",
+        "targetVocab": [
+          "precio",
+          "alquiler",
+          "mensual"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-alq-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما إذا كانت الفواتير مشمولة في الإيجار",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لإجابة المالك وحدد حالة مصاريف الخدمات",
+        "stemEs": "El alquiler son 800 euros con los gastos incluidos.",
+        "stemAr": "الإيجار 800 يورو مع الفواتير مشمولة.",
+        "options": [
+          {
+            "id": "ex-a2-alq-5_a",
+            "text": "gastos",
+            "textAr": "المصاريف مشمولة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-alq-5_b",
+            "text": "fianza",
+            "textAr": "تأمين فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: con los gastos incluidos."
+          },
+          {
+            "id": "ex-a2-alq-5_c",
+            "text": "oficina",
+            "textAr": "مكتب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن شمول الفواتير في الإيجار."
+          }
+        ],
+        "targetVocab": [
+          "gastos",
+          "alquiler",
+          "fianza",
+          "oficina"
+        ],
+        "explanationAr": "المتحدث قال: con los gastos incluidos.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_gastos_incluidos.mp3",
+        "speechEs": "El alquiler son 800 euros con los gastos incluidos.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-alq-5_a"
+          ],
+          "selectedOptionId": "ex-a2-alq-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-alq-5_b": "المتحدث قال بوضوح: con los gastos incluidos.",
+          "ex-a2-alq-5_c": "المتحدث تحدث عن شمول الفواتير في الإيجار."
+        }
+      },
+      {
+        "id": "ex-a2-alq-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق سؤالك عن شروط العقد والتأمين",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اسأل المالك بنطق سليم عن عدد أشهر التأمين المطلوبة",
+        "stemEs": "¿Cuántos meses de fianza pide para el contrato?",
+        "stemAr": "كم شهر تأمين تطلب للعقد؟",
+        "audioKey": "pending/a2_meses_fianza_contrato.mp3",
+        "targetVocab": [
+          "fianza",
+          "contrato"
+        ],
+        "explanationAr": "احرص على نطق حرف z في fianza كـ ثاء في إسبانيا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_meses_fianza_contrato.mp3",
+          "modelAnswer": "¿Cuántos meses de fianza pide para el contrato?"
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "المفردات التعاقدية للإيجار في إسبانيا"
+    ]
+  }
+}

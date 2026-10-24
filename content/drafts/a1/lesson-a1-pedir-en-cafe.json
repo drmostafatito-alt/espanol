@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-pedir-en-cafe",
+    "titleAr": "الطلب في المقهى والمطعم: الأسلوب المهذب والتعبير عن الرغبة",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u4-food-drink",
+    "objectiveAr": "أن يطلب المتعلم طعاماً أو شراباً في مقهى بأسلوب مهذب مستخدماً Para mí, por favor أو Quisiera un café، ويفهم أسئلة النادل الشائعة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "speaking",
+      "listening",
+      "vocabulary",
+      "reading",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "café",
+      "agua",
+      "leche",
+      "té",
+      "pan",
+      "comida"
+    ],
+    "reviewVocabulary": [
+      "dos",
+      "tres",
+      "bueno"
+    ],
+    "targetStructures": [
+      "¿Qué desea tomar? — Para mí, un café con leche, por favor.",
+      "¿Me pone un té verde, por favor?",
+      "¿Desea algo más? — Nada más, gracias."
+    ],
+    "grammarTopics": [
+      "pedir-cortesia",
+      "para-mi-por-favor",
+      "interaccion-camarero"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "كريم يجلس في مقهى تقليدي في مدريد ويطلب إفطاره من النادل بأسلوب طبيعي ومؤدب.",
+        "settingAr": "مقهى تقليدي صباحاً في ساحة بويرتا ديل سول",
+        "lines": [
+          {
+            "es": "¡Buenos días! ¿Qué van a tomar?",
+            "ar": "صباح الخير! ماذا ستشربون؟",
+            "arEg": "صباح الخير! تشربوا إيه؟",
+            "audioKey": "pending/a1-caf-sc-1"
+          },
+          {
+            "es": "Para mí un café con leche y una tostada con tomate, por favor.",
+            "ar": "بالنسبة لي قهوة بالحليب وخبز محمص بالطماطم، من فضلك.",
+            "arEg": "أنا قهوة باللبن وتوست بالطماطم لو سمحت.",
+            "audioKey": "pending/a1-caf-sc-2"
+          },
+          {
+            "es": "¿Y para su compañero?",
+            "ar": "وماذا عن زميلك؟",
+            "arEg": "ولصاحبك إيه؟",
+            "audioKey": "pending/a1-caf-sc-3"
+          },
+          {
+            "es": "Para él un té negro y un vaso de agua.",
+            "ar": "له شاي أسود وكوب ماء.",
+            "arEg": "هو شاي أسود وكوباية مية.",
+            "audioKey": "pending/a1-caf-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا من أكثر الطرق طبيعية للطلب في المقهى استخدام عبارة 'Para mí...' (بالنسبة لي...) متبوعة باسم الطلب و'por favor'. لا يُحبذ استخدام صيغ الأمر الجافة.",
+    "pedagogicalRationaleAr": "الناطقون بالعربية قد يلجأون للترجمة الحرفية لفعل 'أريد' (Quiero...) بصورة تبدو حادة أو جافة في المقهى الإسباني. تدريبهم على 'Para mí...' و'por favor' يمنحهم لغة طبيعية ومهذبة.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_caf_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لسؤال النادل وحدد ماذا يسأل.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع إلى سؤال النادل لزبائن الطاولة:",
+        "stemEs": "Buenas tardes, ¿qué desean tomar?",
+        "stemAr": "مساء الخير، ماذا ترغبون في تناوله؟",
+        "options": [
+          {
+            "id": "a1_caf_1_a",
+            "text": "¿Qué desean tomar?",
+            "textAr": "ماذا ترغبون في تناوله؟ (سؤال الطلب)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_caf_1_b",
+            "text": "¿Cuánto cuesta?",
+            "textAr": "كم السعر؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "سؤال الفاتورة يكون بـ ¿La cuenta? أو ¿Cuánto cuesta?."
+          },
+          {
+            "id": "a1_caf_1_c",
+            "text": "¿Dónde está el baño?",
+            "textAr": "أين دورة المياه؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "النادل يسأل عن المشروب (tomar)."
+          }
+        ],
+        "targetVocab": [
+          "café",
+          "comida"
+        ],
+        "explanationAr": "النادل يرحب ويسأل عن رغبة الزبائن في الشرب بعبارة: ¿qué desean tomar?",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-caf-ex-1",
+        "speechEs": "Buenas tardes, ¿qué desean tomar?",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_caf_1_a"
+          ],
+          "selectedOptionId": "a1_caf_1_a"
+        },
+        "errorFeedback": {
+          "a1_caf_1_b": "سؤال الفاتورة يكون بـ ¿La cuenta? أو ¿Cuánto cuesta?.",
+          "a1_caf_1_c": "النادل يسأل عن المشروب (tomar)."
+        }
+      },
+      {
+        "id": "a1_caf_2_polite",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر العبارة المهذبة والأكثر شيوعاً لبدء طلبك.",
+        "skills": [
+          "speaking",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تبدأ طلبك في المقهى بأسلوب إسباني أصيل ومهذب؟",
+        "stemEs": "____ un café solo, por favor.",
+        "stemAr": "____ قهوة سادة، من فضلك.",
+        "options": [
+          {
+            "id": "a1_caf_2_a",
+            "text": "Para mí",
+            "textAr": "بالنسبة لي (الصيغة الطبيعية)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_caf_2_b",
+            "text": "Dámelo",
+            "textAr": "أعطني إياه (صيغة أمر جافة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة غير مستحبة وتفتقر للياقة في التعامل مع النادل."
+          },
+          {
+            "id": "a1_caf_2_c",
+            "text": "Para ti",
+            "textAr": "بالنسبة لك أنت",
+            "isCorrect": false,
+            "distractorRationaleAr": "Para ti تعني لك أنت، وليس لي أنا."
+          }
+        ],
+        "targetVocab": [
+          "café"
+        ],
+        "explanationAr": "عبارة Para mí هي الأسلوب الأكثر تلقائية ولطفاً للطلب في المقاهي الإسبانية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_caf_2_a"
+          ],
+          "selectedOptionId": "a1_caf_2_a"
+        },
+        "errorFeedback": {
+          "a1_caf_2_b": "صيغة غير مستحبة وتفتقر للياقة في التعامل مع النادل.",
+          "a1_caf_2_c": "Para ti تعني لك أنت، وليس لي أنا."
+        }
+      },
+      {
+        "id": "a1_caf_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل العبارة الإلزامية في أي طلب مهذب.",
+        "skills": [
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة «من فضلك» (por favor) في الفراغ:",
+        "stemEs": "Un vaso de agua fría, por ____.",
+        "stemAr": "كوب ماء بارد، من ____.",
+        "targetVocab": [
+          "agua"
+        ],
+        "explanationAr": "العبارة المهذبة هي دائماً: por favor وتعني من فضلك.",
+        "answerKey": {
+          "accepted": [
+            "favor"
+          ],
+          "acceptableAnswers": [
+            "favor"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_caf_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب كلمات الطلب لتكوين جملة كاملة وسليمة.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_caf_4_order_t1",
+            "kind": "token",
+            "text": "Para"
+          },
+          {
+            "id": "a1_caf_4_order_t2",
+            "kind": "token",
+            "text": "mí"
+          },
+          {
+            "id": "a1_caf_4_order_t3",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "a1_caf_4_order_t4",
+            "kind": "token",
+            "text": "café"
+          },
+          {
+            "id": "a1_caf_4_order_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "a1_caf_4_order_t6",
+            "kind": "token",
+            "text": "leche."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Para mí un café con leche."
+          ],
+          "tokenOrder": [
+            "a1_caf_4_order_t1",
+            "a1_caf_4_order_t2",
+            "a1_caf_4_order_t3",
+            "a1_caf_4_order_t4",
+            "a1_caf_4_order_t5",
+            "a1_caf_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب الطبيعي للطلب: صيغة التأدب Para mí + أداة التنكير un + الاسم café + حرف الجر con + المكمل leche.",
+        "targetVocab": [
+          "café",
+          "leche"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_caf_5_more",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف تجيب النادل إذا سألك: ¿Desea algo más? وتريد أن تقول: لا شيء آخر، شكراً.",
+        "skills": [
+          "vocabulary",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو التعبير المناسب للاكتفاء بالطلبات الحالية؟",
+        "stemEs": "— ¿Desea algo más? — ____, gracias.",
+        "stemAr": "— هل ترغب في شيء آخر؟ — ____، شكراً.",
+        "options": [
+          {
+            "id": "a1_caf_5_a",
+            "text": "Nada más",
+            "textAr": "لا شيء آخر",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_caf_5_b",
+            "text": "Mucho más",
+            "textAr": "أكثر بكثير",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا يعني رغبة في المزيد."
+          },
+          {
+            "id": "a1_caf_5_c",
+            "text": "De nada",
+            "textAr": "على الرحب والسعة",
+            "isCorrect": false,
+            "distractorRationaleAr": "De nada تُقال رداً على الشكر، وليس رداً على السؤال عن الطلبات."
+          }
+        ],
+        "targetVocab": [
+          "comida"
+        ],
+        "explanationAr": "عبارة Nada más, gracias تعني بكل تهذيب: لا شيء آخر، شكراً لك.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_caf_5_a"
+          ],
+          "selectedOptionId": "a1_caf_5_a"
+        },
+        "errorFeedback": {
+          "a1_caf_5_b": "هذا يعني رغبة في المزيد.",
+          "a1_caf_5_c": "De nada تُقال رداً على الشكر، وليس رداً على السؤال عن الطلبات."
+        }
+      },
+      {
+        "id": "a1_caf_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة الطلب في المقهى بأسلوب مهذب وواضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح ونبرة مهذبة:",
+        "stemEs": "Para mí un té con leche caliente, por favor.",
+        "stemAr": "بالنسبة لي شاي بالحليب الساخن، من فضلك.",
+        "audioKey": "pending/a1-caf-ex-6",
+        "targetVocab": [
+          "té",
+          "leche"
+        ],
+        "explanationAr": "حافظ على نبرة هادئة ومؤدبة مع وصل الحروف: té con leche caliente.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-caf-ex-6",
+          "modelAnswer": "Para mí un té con leche caliente, por favor."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    }
+  }
+}

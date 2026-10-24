@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-habitos-saludables",
+    "unitSlug": "b1-u8-health-lifestyle",
+    "levelCode": "B1",
+    "titleAr": "العادات الصحية والحمية المتوسطية: التغذية السليمة والنشاط البدني",
+    "titleEs": "Hábitos saludables, la dieta mediterránea y el ejercicio físico",
+    "subtitleAr": "فوائد زيت الزيتون، الغذاء المتوازن، والوقاية من الأمراض المزمنة",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم عاداته الغذائية والبدنية بدقة ومصطلحات متقدمة باللغة الإسبانية.",
+        "أن يتعرف على مكونات الحمية المتوسطية (la dieta mediterránea) وفوائدها الصحية المعترف بها عالمياً.",
+        "أن يناقش عوامل الوقاية من الأمراض ونمط العيش الصحي المتوازن: vida sedentaria مقابل vida activa."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التعبير عن العادات والتأثير الصحي",
+          "explanationAr": "1. **التعبير عن الإيجابيات الصحية**:\n- **Contribuir a + infinitivo / sustantivo**: El consumo de aceite de oliva contribuye a prevenir enfermedades cardiovasculares.\n- **Ser rico en**: Las legumbres son ricas en fibra y proteínas vegetales.\n2. **التحذير من العادات الضارة**:\n- **El sedentarismo**: El estilo de vida sedentario aumenta el riesgo de problemas de salud.\n- **Evitar los ultraprocesados**: Es fundamental reducir el consumo de alimentos ultraprocesados."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمة *dieta* بمعنى الرجيم القاسي فقط؛ في الإسبانية la dieta تعني النظام الغذائي الطبيعي للإنسان (como la dieta mediterránea).",
+        "قول *vida sentada* بدلاً من المصطلح الطبي والاجتماعي المعتمد la vida sedentaria (نمط الحياة الخامل)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «لازم نغير أسلوب أكلنا ونلعب رياضة عشان نقلل الكوليسترول ونبعد عن الكسل». بالإسبانية: Hay que cambiar la alimentación y hacer ejercicio para combatir el sedentarismo."
+        }
+      ],
+      "culturalNoteAr": "الحمية المتوسطية الإسبانية (La dieta mediterránea) مصنفة من قِبل اليونسكو كتراث ثقافي غير مادي للإنسانية لما تحمله من توازن غذائي وقيم اجتماعية تشاركية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-habitos-saludables-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات التغذية ونمط العيش الصحي",
+        "bodyAr": "المفردات الصحية:\n- **la dieta mediterránea**: حمية البحر الأبيض المتوسط الغذائية المتوازنة\n- **el sedentarismo**: الخمول البدني وقلة الحركة (نمط العيش الجالس)\n- **los nutrientes**: العناصر الغذائية المفيدة\n- **el bienestar**: العافية والراحة الجسدية والنفسية\n- **prevenir**: يقي ويحمي من الأمراض\n- **la fibra**: الألياف الغذائية الطبيعية",
+        "examples": [
+          {
+            "es": "La dieta mediterránea es rica en aceite de oliva, verduras y pescado.",
+            "ar": "الحمية المتوسطية غنية بزيت الزيتون والخضراوات والسمك."
+          },
+          {
+            "es": "Caminar treinta minutos al día ayuda a combatir el sedentarismo.",
+            "ar": "المشي ثلاثين دقيقة يومياً يساعد في مكافحة الخمول البدني."
+          },
+          {
+            "es": "Una alimentación variada aporta todos los nutrientes necesarios.",
+            "ar": "التغذية المتنوعة توفر جميع العناصر الغذائية الضرورية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dieta mediterránea",
+      "sedentarismo",
+      "nutrientes",
+      "bienestar",
+      "prevenir",
+      "fibra"
+    ],
+    "reviewVocabulary": [
+      "salud",
+      "comida"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يصف المتعلم عاداته الغذائية والبدنية بدقة ومصطلحات متقدمة باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-hab-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الطبي الذي يعني الخمول وقلة الحركة البدنية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'نمط الحياة الخامل والجلوس الطويل دون حركة'؟",
+        "stemEs": "El _____ es uno de los mayores factores de riesgo para el corazón.",
+        "stemAr": "... هو أحد أكبر عوامل الخطر على صحة القلب.",
+        "options": [
+          {
+            "id": "ex-b1-hab-1_a",
+            "text": "sedentarismo",
+            "textAr": "الخمول البدني وقلة الحركة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hab-1_b",
+            "text": "bienestar",
+            "textAr": "العافية والراحة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى يتعلق بالخطر الصحي (الخمول وليس العافية)."
+          },
+          {
+            "id": "ex-b1-hab-1_c",
+            "text": "nutrientes",
+            "textAr": "عناصر غذائية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخمول هو sedentarismo."
+          }
+        ],
+        "targetVocab": [
+          "sedentarismo",
+          "bienestar",
+          "nutrientes"
+        ],
+        "explanationAr": "el sedentarismo يعني الخمول البدني وقلة الحركة والنشاط الرياضي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hab-1_a"
+          ],
+          "selectedOptionId": "ex-b1-hab-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hab-1_b": "المعنى يتعلق بالخطر الصحي (الخمول وليس العافية).",
+          "ex-b1-hab-1_c": "الخمول هو sedentarismo."
+        }
+      },
+      {
+        "id": "ex-b1-hab-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على الوقاية والحماية في المصدر (prevenir)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الذي يعني 'يقي من الأمراض ويحمي الصحة' في صيغة المصدر (prevenir)",
+        "stemEs": "Una buena alimentación es la mejor manera de _____ dolencias crónicas.",
+        "stemAr": "التغذية السليمة هي أفضل وسيلة للوقاية من الأمراض المزمنة.",
+        "targetVocab": [
+          "prevenir"
+        ],
+        "explanationAr": "فعل prevenir يعني يقي أو يتجنب حدوث الأمراض.",
+        "answerKey": {
+          "accepted": [
+            "prevenir"
+          ],
+          "acceptableAnswers": [
+            "prevenir"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-hab-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد النمط الغذائي التراثي المشهور بزيت الزيتون والخضار في إسبانيا",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى الحمية الغذائية المتوازنة لمنطقة البحر الأبيض المتوسط؟",
+        "stemEs": "Los médicos recomiendan seguir las pautas de la _____ tradicional.",
+        "stemAr": "يوصي الأطباء باتباع إرشادات ... التقليدية.",
+        "options": [
+          {
+            "id": "ex-b1-hab-3_a",
+            "text": "dieta mediterránea",
+            "textAr": "حمية البحر المتوسط (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hab-3_b",
+            "text": "sedentarismo",
+            "textAr": "الخمول",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأطباء يوصون بالحمية الغذائية dieta mediterránea."
+          },
+          {
+            "id": "ex-b1-hab-3_c",
+            "text": "fibra",
+            "textAr": "الألياف فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "النمط الغذائي المتكامل يسمى la dieta mediterránea."
+          }
+        ],
+        "targetVocab": [
+          "dieta mediterránea",
+          "sedentarismo",
+          "fibra"
+        ],
+        "explanationAr": "la dieta mediterránea هي حمية البحر المتوسط الغذائية الشهيرة بتوازنها الصحي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hab-3_a"
+          ],
+          "selectedOptionId": "ex-b1-hab-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hab-3_b": "الأطباء يوصون بالحمية الغذائية dieta mediterránea.",
+          "ex-b1-hab-3_c": "النمط الغذائي المتكامل يسمى la dieta mediterránea."
+        }
+      },
+      {
+        "id": "ex-b1-hab-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف دور الرياضة في تعزيز العافية والراحة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-hab-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-hab-4_t2",
+            "kind": "token",
+            "text": "ejercicio"
+          },
+          {
+            "id": "ex-b1-hab-4_t3",
+            "kind": "token",
+            "text": "aporta"
+          },
+          {
+            "id": "ex-b1-hab-4_t4",
+            "kind": "token",
+            "text": "salud"
+          },
+          {
+            "id": "ex-b1-hab-4_t5",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-b1-hab-4_t6",
+            "kind": "token",
+            "text": "bienestar"
+          },
+          {
+            "id": "ex-b1-hab-4_t7",
+            "kind": "token",
+            "text": "general"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El ejercicio aporta salud y bienestar general"
+          ],
+          "tokenOrder": [
+            "ex-b1-hab-4_t1",
+            "ex-b1-hab-4_t2",
+            "ex-b1-hab-4_t3",
+            "ex-b1-hab-4_t4",
+            "ex-b1-hab-4_t5",
+            "ex-b1-hab-4_t6",
+            "ex-b1-hab-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El ejercicio ثم الفعل aporta ثم المفعول salud y bienestar general.",
+        "targetVocab": [
+          "bienestar",
+          "salud"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-hab-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد المكون الغذائي الغني في الخضار والحبوب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لأخصائي التغذية وحدد ما يوصي به للهضم الصحي",
+        "stemEs": "Las legumbres y las frutas frescas aportan una gran cantidad de fibra.",
+        "stemAr": "البقوليات والفواكه الطازجة توفر كمية كبيرة من الألياف.",
+        "options": [
+          {
+            "id": "ex-b1-hab-5_a",
+            "text": "fibra",
+            "textAr": "الألياف الغذائية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hab-5_b",
+            "text": "sedentarismo",
+            "textAr": "خمول",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأخصائي ركز على الفائدة الغذائية (la fibra)."
+          },
+          {
+            "id": "ex-b1-hab-5_c",
+            "text": "dieta mediterránea",
+            "textAr": "حمية كاملة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد مادة الألياف الغذائية تحديداً."
+          }
+        ],
+        "targetVocab": [
+          "fibra",
+          "sedentarismo",
+          "dieta mediterránea"
+        ],
+        "explanationAr": "المتحدث قال: 'aportan una gran cantidad de fibra'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_frutas_aportan_fibra.mp3",
+        "speechEs": "Las legumbres y las frutas frescas aportan una gran cantidad de fibra.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hab-5_a"
+          ],
+          "selectedOptionId": "ex-b1-hab-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hab-5_b": "الأخصائي ركز على الفائدة الغذائية (la fibra).",
+          "ex-b1-hab-5_c": "المتحدث حدد مادة الألياف الغذائية تحديداً."
+        }
+      },
+      {
+        "id": "ex-b1-hab-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق نصيحتك لاتباع نمط حياة صحي ومكافحة الخمول",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب مشجع ومقنع للأصدقاء:",
+        "stemEs": "Para mejorar nuestro bienestar, debemos comer sano y evitar el sedentarismo.",
+        "stemAr": "لتحسين عافيتنا، يجب أن نأكل طعاماً صحياً ونتجنب الخمول البدني.",
+        "audioKey": "pending/b1_mejorar_bienestar_sedentarismo.mp3",
+        "targetVocab": [
+          "bienestar",
+          "sedentarismo"
+        ],
+        "explanationAr": "انتبه لنطق مقطع tar في bienestar ونطق se في sedentarismo بنقاء صوتي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_mejorar_bienestar_sedentarismo.mp3",
+          "modelAnswer": "Para mejorar nuestro bienestar, debemos comer sano y evitar el sedentarismo."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "تراكيب التعبير عن العادات والتأثير الصحي"
+    ]
+  }
+}
