@@ -144,6 +144,15 @@ describe('E: جلسة الدرس لا تسرّب الإجابات', () => {
     prod.close();
   });
 
+  it('في بيئة الإنتاج: المحتوى غير المنشور غير متاح (404) حتى مع وجود مفتاح التطوير', async () => {
+    const prod = makeHarness({ ENVIRONMENT: 'production', ALLOW_UNREVIEWED_CONTENT: 'true' });
+    importExemplars(prod);
+    const c = await signup(prod, 'prod-env@example.com');
+    const res = await prod.call('/api/lessons/prea1-hola-me-llamo/session', { cookie: c });
+    expect(res.status).toBe(404);
+    prod.close();
+  });
+
   it('بلا جلسة: 401', async () => {
     const res = await h.call('/api/lessons/prea1-hola-me-llamo/session');
     expect(res.status).toBe(401);

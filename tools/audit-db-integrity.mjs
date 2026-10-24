@@ -1,10 +1,32 @@
 import { DatabaseSync } from 'node:sqlite';
-import { readdirSync } from 'node:fs';
+import { readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
-const sqliteDir = join(process.cwd(), '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
-const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite'));
-const db = new DatabaseSync(join(sqliteDir, f));
+// إمكانية تمرير مسار مخصص (مثل نسخة اختبارية معزولة) أو استخدام D1 المحلي افتراضيًا
+let targetFile = process.argv[2];
+if (!targetFile) {
+  const sqliteDir = join(process.cwd(), '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
+  if (!existsSync(sqliteDir)) {
+    console.error('🛑 لم يتم العثور على مجلد D1 المحلي (.wrangler/.../miniflare-D1DatabaseObject).');
+    process.exit(1);
+  }
+  const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+  if (sqliteFiles.length !== 1) {
+    console.error(`🛑 عدد ملفات SQLite غير متوقع (${sqliteFiles.length}). يجب أن يكون ملف واحد فقط.`);
+    process.exit(1);
+  }
+  targetFile = join(sqliteDir, sqliteFiles[0]);
+}
+
+const db = new DatabaseSync(targetFile);
+db.exec('PRAGMA busy_timeout = 5000;');
+
+const tableCheck = db.prepare("SELECT count(1) as n FROM sqlite_master WHERE type='table' AND name IN ('lessons', 'programs', 'units')").get();
+if (tableCheck?.n !== 3) {
+  console.error('🛑 قاعدة البيانات لا تحتوي على جداول المنصة الأساسية (lessons, programs, units).');
+  db.close();
+  process.exit(1);
+}
 
 console.log('=== 1. TABLE COUNTS ===');
 const tables = [
