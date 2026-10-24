@@ -12,6 +12,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating } from '../api';
 import { useAuth } from '../state';
+import { LoadingState } from '../components/ui';
+import { Mascot } from '../components/Mascot';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
@@ -191,7 +193,13 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [phase, rate]);
 
-  if (phase === 'loading') return <p className="container muted">جارٍ تحميل بطاقاتك…</p>;
+  if (phase === 'loading') {
+    return (
+      <div className="container" style={{ maxWidth: 640, paddingTop: 'var(--s-6)' }}>
+        <LoadingState text="جارٍ تحميل بطاقاتك…" />
+      </div>
+    );
+  }
 
   if (phase === 'error') {
     return (
@@ -264,10 +272,13 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         data-testid="review-card"
         aria-live="polite"
       >
-        <p className="small muted" style={{ marginTop: 0 }}>
-          {card.kind === 'production' ? 'أنتج الكلمة' : 'تعرّف على الكلمة'}
-          {card.level ? ` · ${card.level}` : ''}
-        </p>
+        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+          <p className="small muted" style={{ margin: 0 }}>
+            {card.kind === 'production' ? 'أنتج الكلمة' : 'تعرّف على الكلمة'}
+            {card.level ? ` · ${card.level}` : ''}
+          </p>
+          <Mascot size={64} alt="" />
+        </div>
 
         {card.kind === 'production' ? (
           <>

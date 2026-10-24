@@ -10,14 +10,18 @@ import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
 import { Search } from './pages/Search';
 import { Placement } from './pages/Placement';
+import { PublicHeader } from './components/layout/PublicHeader';
+import { PublicFooter } from './components/layout/PublicFooter';
+import { AppShell } from './components/layout/AppShell';
 
 function Shell() {
   const [path, navigate] = useRoute();
-  const { user, loading, signOut } = useAuth();
+  const { user, loading } = useAuth();
 
   // حماية المسارات: غير المسجّل يُوجَّه للدخول (بعد معرفة الحالة)
   const isProtected =
-    path === '/settings' || path === '/learn' || path.startsWith('/learn/') || path === '/review' || path.startsWith('/review/') || path === '/placement';
+    path === '/settings' || path === '/learn' || path.startsWith('/learn/') ||
+    path === '/review' || path.startsWith('/review/') || path === '/placement';
   useEffect(() => {
     if (!loading && !user && isProtected) {
       navigate('/login');
@@ -46,48 +50,39 @@ function Shell() {
   } else if (path === '/settings') {
     page = user ? <Settings navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/search' || path.startsWith('/search')) {
-    page = <Search navigate={navigate} initialQuery={typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('q') ?? '') : ''} />;
+    page = (
+      <Search
+        navigate={navigate}
+        initialQuery={typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('q') ?? '' : ''}
+      />
+    );
   } else if (path === '/transparency') {
     page = <Transparency />;
   } else {
     page = <NotFound navigate={navigate} />;
   }
 
+  // شاشات التركيز: الدرس والمراجعة وتحديد المستوى — بلا هيدر جانبي أو شريط سفلي
+  const isFocus = !!lessonSlug || path === '/review' || path === '/placement';
+  // مناطق لوحة المتعلم (الهيكل الجانبي)
+  const isAppArea =
+    !!user && !isFocus &&
+    (path === '/learn' || path === '/settings' || path === '/review/packs' || path.startsWith('/search'));
+
   return (
     <div className="app">
       <a className="skip-link" href="#main">تخطَّ إلى المحتوى</a>
-      <header className="topbar">
-        <a className="brand" href="/" onClick={e => { e.preventDefault(); navigate(user ? '/learn' : '/'); }}>
-          <span className="brand-mark" aria-hidden="true">Ñ</span>
-          <span>Español بالعربي</span>
-        </a>
-        <span className="spacer" />
-        <a href="/search" className="btn ghost sm" data-testid="nav-search" onClick={e => { e.preventDefault(); navigate('/search'); }}>🔍 بحث</a>
-        {user ? (
-          <>
-            <a href="/learn" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحتي</a>
-            <a href="/review" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/review'); }}>مراجعة</a>
-            <button className="btn secondary sm" onClick={() => void signOut()}>خروج</button>
-          </>
-        ) : (
-          <>
-            <a href="/transparency" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية</a>
-            <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>دخول</a>
-            <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>حساب جديد</a>
-          </>
-        )}
-      </header>
-
-      <main id="main" style={{ flex: 1 }}>{page}</main>
-
-      <footer className="footer">
-        <div className="container row" style={{ justifyContent: 'space-between' }}>
-          <span>© {new Date().getFullYear()} Español بالعربي — نسخة تطوير.</span>
-          <span className="row">
-            <a href="/transparency" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>حدود المنصة</a>
-          </span>
-        </div>
-      </footer>
+      {isAppArea ? (
+        <AppShell path={path} navigate={navigate}>{page}</AppShell>
+      ) : isFocus ? (
+        <main id="main" style={{ flex: 1 }}>{page}</main>
+      ) : (
+        <>
+          <PublicHeader navigate={navigate} user={user} />
+          <main id="main" style={{ flex: 1 }}>{page}</main>
+          <PublicFooter navigate={navigate} />
+        </>
+      )}
     </div>
   );
 }

@@ -94,7 +94,8 @@ export function Search({
               <button
                 key={k}
                 type="button"
-                className={`btn sm ${kind === k ? 'primary' : 'ghost'}`}
+                className={`btn sm ${kind === k ? 'navy' : 'ghost'}`}
+                aria-pressed={kind === k}
                 onClick={() => setKind(k)}
               >
                 {k === 'all' ? 'الكل' : k === 'vocab' ? 'المفردات' : k === 'grammar' ? 'القواعد' : 'الدروس'}
@@ -110,7 +111,8 @@ export function Search({
               <button
                 key={l}
                 type="button"
-                className={`btn sm ${level === l ? 'primary' : 'ghost'}`}
+                className={`btn sm ${level === l ? 'navy' : 'ghost'}`}
+                aria-pressed={level === l}
                 onClick={() => setLevel(l)}
               >
                 {l === 'all' ? 'الكل' : l}

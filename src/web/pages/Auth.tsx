@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { api, ApiError } from '../api';
 import { useAuth } from '../state';
+import { BrandMark, Icon } from '../components/icons';
 
 function useAuthForm(onDone: () => void) {
   const { setUser } = useAuth();
@@ -41,6 +42,25 @@ function ErrorBox({ error }: { error: { message: string; problems?: string[] } |
   );
 }
 
+function AuthShell({ title, subtitle, children }: { title: string; subtitle: string; children: React.ReactNode }) {
+  return (
+    <div className="container" style={{ paddingBlock: 'var(--s-6)' }}>
+      <div className="auth-wrap">
+        <div className="auth-logo">
+          <span className="brand-mark" style={{ width: 52, height: 52, borderRadius: 16 }}>
+            <BrandMark size={42} />
+          </span>
+        </div>
+        <div className="auth-title">
+          <h1 style={{ marginBottom: 6 }}>{title}</h1>
+          <p className="muted small" style={{ margin: 0 }}>{subtitle}</p>
+        </div>
+        <div className="card auth-card">{children}</div>
+      </div>
+    </div>
+  );
+}
+
 export function Signup({ navigate }: { navigate: (to: string) => void }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -53,12 +73,8 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
   };
 
   return (
-    <div className="container narrow">
-      <h1>إنشاء حساب</h1>
-      <p className="muted small">
-        نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
-      </p>
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+    <AuthShell title="إنشاء حساب جديد" subtitle="ابدأ رحلتك في الإسبانية خلال دقيقة — بدون رسائل تسويقية.">
+      <form className="stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
           <span>الاسم الذي تحب أن نناديك به (اختياري)</span>
@@ -73,12 +89,15 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
           <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="new-password" required />
           <span className="small muted">10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ إنشاء الحساب…' : 'إنشاء الحساب'}</button>
-        <p className="small muted">
-          لديك حساب؟ <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
+        <button className="btn block" type="submit" disabled={busy}>
+          {busy ? 'جارٍ إنشاء الحساب…' : 'إنشاء الحساب'}
+        </button>
+        <p className="small muted" style={{ textAlign: 'center' }}>
+          لديك حساب؟{' '}
+          <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
         </p>
       </form>
-    </div>
+    </AuthShell>
   );
 }
 
@@ -93,26 +112,32 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
   };
 
   return (
-    <div className="container narrow">
-      <h1>تسجيل الدخول</h1>
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+    <AuthShell title="تسجيل الدخول" subtitle="أهلًا بعودتك — تابع من حيث توقفت.">
+      <form className="stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
           <span>البريد الإلكتروني</span>
-          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          <div style={{ position: 'relative' }}>
+            <Icon name="mail" size={18} style={{ position: 'absolute', insetInlineStart: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted)' }} />
+            <input className="ltr" style={{ paddingInlineStart: 44 }} type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          </div>
         </label>
         <label className="field">
           <span>كلمة المرور</span>
-          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required />
+          <div style={{ position: 'relative' }}>
+            <Icon name="key" size={18} style={{ position: 'absolute', insetInlineStart: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted)' }} />
+            <input className="ltr" style={{ paddingInlineStart: 44 }} type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required />
+          </div>
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : 'دخول'}</button>
-        <p className="small muted">
+        <button className="btn navy block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : 'دخول'}</button>
+        <p className="small muted" style={{ textAlign: 'center', marginBottom: 0 }}>
           نسيت كلمة المرور؟ <strong>غير مفعّل حاليًا</strong> — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنه يعمل.
         </p>
-        <p className="small muted">
-          لا تملك حسابًا؟ <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
+        <p className="small muted" style={{ textAlign: 'center' }}>
+          لا تملك حسابًا؟{' '}
+          <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
         </p>
       </form>
-    </div>
+    </AuthShell>
   );
 }

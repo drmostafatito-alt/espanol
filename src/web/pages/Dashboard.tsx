@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react';
-import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem } from '../api';
+import { useEffect, useMemo, useState } from 'react';
+import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem, type ApiUser } from '../api';
 import { useAuth } from '../state';
-import { AudioDemo } from '../components/AudioDemo';
+import { Icon, type IconName } from '../components/icons';
+import { Avatar, ProgressBar, ProgressRing, LevelBadge, LoadingState, ErrorState } from '../components/ui';
+import { LearningPath } from '../components/LearningPath';
+import { trackVisual } from '../components/tracks';
 
 interface PathRow {
   slug: string;
@@ -12,40 +15,80 @@ interface PathRow {
   lessons_count: number;
 }
 
+const LEVEL_ORDER = ['PREA1', 'A1', 'A2', 'B1', 'B2', 'C1'];
+
+const TABS: { id: string; label: string }[] = [
+  { id: 'ALL', label: 'الكل' },
+  { id: 'PREA1', label: 'التمهيد Pre-A1' },
+  { id: 'A1', label: 'مستوى A1' },
+  { id: 'A2', label: 'مستوى A2' },
+  { id: 'B1', label: 'مستوى B1' },
+  { id: 'B2', label: 'مستوى B2' },
+  { id: 'C1', label: 'مستوى C1' },
+  { id: 'travel', label: 'مسار السفر' },
+  { id: 'callcenter', label: 'الكول سنتر' },
+];
+
 export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
-  const { user, signOut } = useAuth();
+  const { user } = useAuth();
   const [paths, setPaths] = useState<PathRow[] | null>(null);
   const [progress, setProgress] = useState<ProgressPayload | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [review, setReview] = useState<ReviewPayload | null>(null);
   const [selectedTab, setSelectedTab] = useState<string>('ALL');
 
-  useEffect(() => {
-    let alive = true;
+  const load = () => {
+    setLoadError(null);
     Promise.all([api.paths(), api.progress()])
       .then(([p, pr]) => {
-        if (!alive) return;
         setPaths(p.paths);
         setProgress(pr);
-        api.reviewSession(1).then(r => alive && setReview(r)).catch(() => undefined);
+        api.reviewSession(1).then(r => setReview(r)).catch(() => undefined);
       })
       .catch(() => {
-        if (!alive) return;
         setPaths([]);
-        setLoadError('تعذّر تحميل بيانات التقدم. الأرقام أدناه غير معروضة حتى تصل من الخادم.');
+        setLoadError('تعذّر تحميل بيانات التقدم. تحقق من الاتصال ثم أعد المحاولة.');
       });
-    return () => {
-      alive = false;
-    };
+  };
+
+  useEffect(() => {
+    load();
+    // روابط داخلية من المسارات والأقسام: ?track= و?section=
+    const params = new URLSearchParams(window.location.search);
+    const track = params.get('track');
+    if (track) {
+      const tab = TABS.find(t => t.id === track)?.id;
+      if (tab) setSelectedTab(tab);
+    }
+    const section = params.get('section');
+    if (section) {
+      const target = section;
+      window.setTimeout(() => {
+        document.getElementById(target)?.scrollIntoView({ behavior: 'smooth' });
+      }, 250);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (!user) return null;
-  const style = { fusha: 'العربية الفصحى فقط', eg: 'العامية المصرية', fusha_eg: 'فصحى + توضيح مصري' }[user.explanationStyle];
   const lessons = progress?.lessons ?? [];
   const completedLessons = progress?.totals.lessons_completed ?? 0;
+  const totalLessons = progress?.totals.lessons_total ?? 0;
   const totalXp = progress?.stats.xp_total ?? 0;
-  // رصيد الجواهر الافتراضية المحسوب من الإنجاز الفعلي
-  const gemsCount = (completedLessons * 5) + Math.floor(totalXp / 25);
+  const streak = progress?.stats.streak_current ?? 0;
+  // رصيد مشتق من إنجاز حقيقي فقط (لا يوجد نظام جواهر مستقل على الخادم بعد)
+  const gemsCount = completedLessons * 5 + Math.floor(totalXp / 25);
+  const overallPct = totalLessons > 0 ? Math.round((completedLessonSafe(completedLessons) / totalLessons) * 100) : 0;
+
+  const currentLevel = useMemo(() => {
+    const done = new Set(
+      lessons.filter(l => l.progress_status === 'completed' && l.level_code).map(l => l.level_code!.toUpperCase()),
+    );
+    for (let i = LEVEL_ORDER.length - 1; i >= 0; i--) {
+      const lvl = LEVEL_ORDER[i]!;
+      if (done.has(lvl)) return lvl;
+    }
+    return 'PREA1';
+  }, [lessons]);
 
   const filteredLessons = lessons.filter(l => {
     if (selectedTab === 'ALL') return true;
@@ -54,347 +97,335 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
     return (l.level_code ?? '').toUpperCase() === selectedTab;
   });
 
-  // تجميع الدروس حسب الوحدات
-  const unitGroups: {
-    unitId: string;
-    unitTitle: string;
-    levelCode: string | null;
-    programTitle?: string;
-    lessons: ProgressLessonItem[];
-    completedCount: number;
-  }[] = [];
-
-  const unitMap = new Map<string, typeof unitGroups[0]>();
-  for (const l of filteredLessons) {
-    const uKey = l.unit_id || l.unit_slug || 'misc';
-    if (!unitMap.has(uKey)) {
-      const g = {
-        unitId: uKey,
-        unitTitle: l.unit_title_ar || 'وحدة تعليمية',
-        levelCode: l.level_code,
-        programTitle: l.program_title_ar,
-        lessons: [],
-        completedCount: 0,
-      };
-      unitMap.set(uKey, g);
-      unitGroups.push(g);
+  const unitGroups = useMemo(() => {
+    const groups: {
+      unitId: string; unitTitle: string; levelCode: string | null;
+      programTitle?: string; lessons: ProgressLessonItem[]; completedCount: number;
+    }[] = [];
+    const map = new Map<string, (typeof groups)[0]>();
+    for (const l of filteredLessons) {
+      const uKey = l.unit_id || l.unit_slug || 'misc';
+      if (!map.has(uKey)) {
+        const g = {
+          unitId: uKey, unitTitle: l.unit_title_ar || 'وحدة تعليمية', levelCode: l.level_code,
+          programTitle: l.program_title_ar, lessons: [] as ProgressLessonItem[], completedCount: 0,
+        };
+        map.set(uKey, g);
+        groups.push(g);
+      }
+      const group = map.get(uKey)!;
+      group.lessons.push(l);
+      if (l.progress_status === 'completed') group.completedCount++;
     }
-    const group = unitMap.get(uKey)!;
-    group.lessons.push(l);
-    if (l.progress_status === 'completed') group.completedCount++;
-  }
+    return groups;
+  }, [filteredLessons]);
 
-  const nextLesson = progress?.nextLesson;
+  const nextLesson = progress?.nextLesson ?? null;
+  const firstAvailable = lessons.find(l => l.is_unlocked !== false && l.progress_status !== 'completed');
+
+  // بعد كل الـ hooks — منع تغيّر عدد الخطافات بين التصييرات
+  if (!user) return null;
 
   return (
-    <div className="container">
-      <header className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
-        <div>
-          <h1 style={{ marginBottom: 4 }}>أهلًا{user.displayName ? ` يا ${user.displayName}` : ''} 👋</h1>
-          <p className="muted small" style={{ margin: 0 }}>
-            أسلوب الشرح: <strong>{style}</strong> · الهدف اليومي: <span className="num">{user.dailyGoalMinutes}</span> دقيقة
-          </p>
+    <div>
+      {/* ---------------- الترحيب ---------------- */}
+      <header className="welcome-row">
+        <Avatar name={user.displayName} email={user.email} large />
+        <div style={{ flex: 1, minWidth: 200 }}>
+          <h1>مرحبًا يا {user.displayName || 'صديقي'} 👋</h1>
+          <p>استمر في رحلتك لتعلّم الإسبانية — {styleLabel(user)} · هدفك اليومي <span className="num">{user.dailyGoalMinutes}</span> دقيقة</p>
         </div>
-        <div className="row">
-          <button className="btn secondary sm" onClick={() => navigate('/settings')}>الإعدادات</button>
-          <button className="btn ghost sm" onClick={() => void signOut().then(() => navigate('/'))}>خروج</button>
-        </div>
+        <button className="btn secondary sm" onClick={() => navigate('/settings')}>
+          <Icon name="settings" size={17} /> الإعدادات
+        </button>
       </header>
 
-      {loadError && <div className="alert" role="alert">{loadError}</div>}
-
-      {/* بطاقة خطوتك التالية */}
-      {nextLesson && (
-        <section
-          className="card"
-          data-testid="next-step-hero"
-          style={{
-            marginBottom: 'var(--s-4)',
-            border: '2px solid var(--color-primary, #0066cc)',
-            background: 'var(--surface-hover, #f0f7ff)',
-            borderRadius: 12,
-            padding: 'var(--s-3) var(--s-4)',
-          }}
-        >
-          <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--s-3)' }}>
-            <div>
-              <span className="badge primary" style={{ marginBottom: 6 }}>🎯 خطوتك التالية في المسار</span>
-              <h2 style={{ margin: '4px 0 6px', fontSize: '1.3rem' }}>{nextLesson.title_ar}</h2>
-              <p className="small muted" style={{ margin: 0 }}>
-                {nextLesson.level_code ? <span className="badge sm">{nextLesson.level_code}</span> : null}{' '}
-                {nextLesson.unit_title_ar ? <span>· {nextLesson.unit_title_ar}</span> : null}
-              </p>
-            </div>
-            <button
-              className="btn"
-              data-testid="next-lesson-btn"
-              onClick={() => navigate(`/learn/${nextLesson.slug}`)}
-              style={{ padding: 'var(--s-2) var(--s-4)', fontSize: '1.05rem', fontWeight: 600 }}
-            >
-              ▶️ ابدأ الدرس الآن
-            </button>
-          </div>
-        </section>
+      {loadError && (
+        <div style={{ marginBottom: 'var(--s-4)' }}>
+          <ErrorState description={loadError} onRetry={load} />
+        </div>
       )}
 
-      {/* دعوة اختبار تحديد المستوى للمتعلمين الجدد */}
-      {progress && completedLessons < 5 && (
-        <section
-          className="card"
-          data-testid="placement-cta"
-          style={{ marginBottom: 'var(--s-4)', background: 'var(--surface-2, #f9fafb)', borderRadius: 10 }}
-        >
-          <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
-            <div>
-              <h3 style={{ margin: '0 0 4px', fontSize: '1.1rem' }}>هل لديك معرفة سابقة بالإسبانية؟ 🎓</h3>
-              <p className="small muted" style={{ margin: 0 }}>
-                خُض اختبار تحديد المستوى السريع (10 أسئلة) لتخطي الأساسيات والبدء مباشرة من مستواك المناسب مع كسب نقاط XP!
-              </p>
-            </div>
-            <button className="btn secondary sm" onClick={() => navigate('/placement')}>
-              🎯 ابدأ تحديد المستوى
-            </button>
-          </div>
-        </section>
+      {progress?.contentProvenance && (
+        <p className="banner-warn" role="status" style={{ marginBottom: 'var(--s-4)' }}>
+          {progress.contentProvenance.warningAr}
+        </p>
       )}
 
-      {/* قسم المراجعة المتباعدة */}
-      <section className="card" style={{ marginBottom: 'var(--s-4)' }} data-testid="review-cta">
-        <div className="row" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
-          <div>
-            <h2 style={{ marginTop: 0, marginBottom: 4 }}>المراجعة المتباعدة الذكية</h2>
-            <p className="small muted" style={{ margin: 0 }}>
-              {review === null
-                ? 'جارٍ حساب ما هو مستحق…'
-                : review.session.totalCards === 0
-                  ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
-                  : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
-            </p>
+      {!progress && !loadError && <LoadingState text="جارٍ تحميل لوحتك من الخادم…" />}
+
+      {progress && (
+        <>
+          {/* ---------------- الإحصائيات الحقيقية ---------------- */}
+          <div className="stat-chip-row" style={{ marginBottom: 'var(--s-4)' }}>
+            <div className="stat-chip">
+              <span className="stat-icon flame"><Icon name="flame" size={22} /></span>
+              <span><b className="num">{streak}</b><span>يوم متتالي</span></span>
+            </div>
+            <div className="stat-chip" data-testid="stat-gems" title="رقم مشتق من إنجازك الفعلي: الدروس المكتملة ونقاط XP">
+              <span className="stat-icon gem"><Icon name="gem" size={22} /></span>
+              <span><b className="num">{gemsCount}</b><span>جواهر</span></span>
+            </div>
+            <div className="stat-chip" data-testid="stat-xp">
+              <span className="stat-icon xp"><Icon name="star" size={22} /></span>
+              <span><b className="num">{totalXp}</b><span>إجمالي XP</span></span>
+            </div>
+            <div className="stat-chip" data-testid="stat-lessons">
+              <span className="stat-icon" style={{ background: 'var(--color-success-soft)', color: 'var(--color-success)' }}>
+                <Icon name="check-circle" size={22} />
+              </span>
+              <span><b className="num">{completedLessons}/{totalLessons}</b><span>دروس مكتملة</span></span>
+            </div>
           </div>
-          <div className="row">
-            <button className="btn" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
-            <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
-          </div>
-        </div>
-      </section>
 
-      {/* الإحصاءات والصوت */}
-      <div className="grid cols-2">
-        <section className="card">
-          <h2>حالة تعلّمك</h2>
-          {progress === null ? (
-            <p className="muted small">جارٍ التحميل من الخادم…</p>
-          ) : (
-            <>
-              <div className="stat-row">
-                <div className="stat" data-testid="stat-lessons">
-                  <b className="num">{progress.totals.lessons_completed}/{progress.totals.lessons_total}</b>
-                  <span>دروس مكتملة</span>
-                </div>
-                <div className="stat" data-testid="stat-xp">
-                  <b className="num">{progress.stats.xp_total}</b>
-                  <span>إجمالي XP</span>
-                </div>
-                <div className="stat">
-                  <b className="num">{progress.stats.streak_current}</b>
-                  <span>أيام متتابعة</span>
-                </div>
-                <div className="stat" data-testid="stat-gems">
-                  <b className="num" style={{ color: 'var(--color-primary, #0066cc)' }}>💎 {gemsCount}</b>
-                  <span>جواهر</span>
-                </div>
-              </div>
-              <p className="small muted" style={{ marginTop: 'var(--s-3)', marginBottom: 0 }}>
-                كل رقم هنا مقروء من قاعدة البيانات بعد تحقّق الخادم. لا عدّادات محلية ولا نقاط غير محفوظة.
-              </p>
-            </>
-          )}
-        </section>
-
-        <section className="card">
-          <h2>تدريب النطق</h2>
-          <AudioDemo
-            text="Quiero un café con leche para llevar, por favor."
-            audioKey="pending/a1-cafe-full-order"
-            variant={user.audioVariant}
-          />
-        </section>
-      </div>
-
-      {/* خريطة المنهج والدروس */}
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--s-3)' }}>
-          <div>
-            <h2 style={{ margin: 0 }}>خريطة المنهج والدروس</h2>
-            <p className="small muted" style={{ margin: '4px 0 0' }}>
-              رحلة تعليمية منظمة خطوة بخطوة من التمهيد وحتى الإتقان
-            </p>
-          </div>
-          <span className="small muted num">
-            {filteredLessons.length} درسًا معروضًا
-          </span>
-        </div>
-
-        {/* أزرار تصفية المستويات */}
-        <div
-          className="row"
-          style={{
-            gap: 'var(--s-1)',
-            overflowX: 'auto',
-            paddingBottom: 'var(--s-2)',
-            marginBottom: 'var(--s-3)',
-            borderBottom: '1px solid var(--border)',
-          }}
-          role="tablist"
-          aria-label="تصفية حسب المستوى"
-        >
-          {[
-            { id: 'ALL', label: 'الكل' },
-            { id: 'PREA1', label: 'التمهيد Pre-A1' },
-            { id: 'A1', label: 'مستوى A1' },
-            { id: 'A2', label: 'مستوى A2' },
-            { id: 'B1', label: 'مستوى B1' },
-            { id: 'B2', label: 'مستوى B2' },
-            { id: 'C1', label: 'مستوى C1' },
-            { id: 'travel', label: 'مسار السفر' },
-            { id: 'callcenter', label: 'الكول سنتر' },
-          ].map(tab => (
-            <button
-              key={tab.id}
-              role="tab"
-              aria-selected={selectedTab === tab.id}
-              className={`btn sm ${selectedTab === tab.id ? '' : 'ghost'}`}
-              onClick={() => setSelectedTab(tab.id)}
-              style={{ whiteSpace: 'nowrap' }}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {progress === null && <p className="muted small">جارٍ تحميل الدروس…</p>}
-        {progress && filteredLessons.length === 0 && (
-          <p className="muted small">لا توجد دروس في هذا القسم حاليًا.</p>
-        )}
-
-        {/* عرض الوحدات المقسمة */}
-        {unitGroups.map(group => {
-          const unitPct = group.lessons.length > 0 ? Math.round((group.completedCount / group.lessons.length) * 100) : 0;
-          return (
-            <div
-              key={group.unitId}
-              style={{
-                marginBottom: 'var(--s-4)',
-                border: '1px solid var(--border)',
-                borderRadius: 8,
-                padding: 'var(--s-3)',
-                background: 'var(--surface-1, #fff)',
-              }}
-            >
-              <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--s-2)' }}>
-                <div>
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>{group.unitTitle}</h3>
-                  <span className="small muted">
-                    {group.levelCode ? <span className="badge sm">{group.levelCode}</span> : null}
-                    {group.programTitle ? <span style={{ marginRight: 6 }}>{group.programTitle}</span> : null}
+          <div className="dash-grid">
+            {/* ---------------- بطاقة الدرس التالي ---------------- */}
+            <section className="card next-card" data-testid="next-step-hero">
+              <div className="next-media">
+                <img src="/img/lesson-street.jpg" alt="شارع إسباني تقليدي بالشرفات المزهرة" loading="lazy" />
+                <div className="next-media-content">
+                  <span className="row" style={{ gap: 6 }}>
+                    <LevelBadge level={nextLesson?.level_code ?? currentLevel} />
+                    {nextLesson?.unit_title_ar && <span className="badge navy">{nextLesson.unit_title_ar}</span>}
                   </span>
+                  <h2>{nextLesson ? nextLesson.title_ar : 'رحلتك تبدأ من هنا'}</h2>
+                  <p>
+                    {nextLesson
+                      ? nextLesson.program_title_ar
+                        ? `ضمن ${nextLesson.program_title_ar} — تقدم خطوة جديدة كل يوم.`
+                        : 'الدرس التالي في مسارك — جاهز للبدء الآن.'
+                      : 'أكملت كل الدروس المتاحة حاليًا. راجع ما تعلمته أو جرّب اختبار تحديد المستوى.'}
+                  </p>
                 </div>
-                <div style={{ textAlign: 'left' }}>
-                  <span className="small muted num">
-                    {group.completedCount}/{group.lessons.length} مكتمل ({unitPct}%)
+              </div>
+              <div className="next-body">
+                <ProgressBar value={overallPct} label="نسبة إكمال المنهج" />
+                <span className="small muted num" style={{ whiteSpace: 'nowrap' }}>{overallPct}%</span>
+                {nextLesson ? (
+                  <button className="btn navy" data-testid="next-lesson-btn" onClick={() => navigate(`/learn/${nextLesson.slug}`)}>
+                    <Icon name="play" size={17} /> ابدأ الدرس الآن
+                  </button>
+                ) : firstAvailable ? (
+                  <button className="btn navy" data-testid="next-lesson-btn" onClick={() => navigate(`/learn/${firstAvailable.slug}`)}>
+                    <Icon name="play" size={17} /> متابعة التعلم
+                  </button>
+                ) : null}
+              </div>
+            </section>
+
+            {/* ---------------- بطاقة المستوى ---------------- */}
+            <section className="card" style={{ textAlign: 'center' }}>
+              <h2 style={{ fontSize: '1.05rem' }}>مستواك الحالي</h2>
+              <div className="ring-wrap" style={{ margin: 'var(--s-3) 0' }}>
+                <ProgressRing
+                  value={overallPct}
+                  centerTop={currentLevel}
+                  centerBottom={overallPct > 0 ? `${overallPct}%` : 'مبتدئ'}
+                />
+                <span className="ring-caption small muted">
+                  {overallPct > 0 ? 'نسبة إكمال المنهج ككل' : 'ابدأ أول درس ليتحرك المؤشر'}
+                </span>
+              </div>
+              <button className="btn secondary sm block" onClick={() => document.getElementById('learning-path')?.scrollIntoView({ behavior: 'smooth' })}>
+                عرض التفاصيل
+              </button>
+            </section>
+
+            {/* ---------------- دعوة تحديد المستوى ---------------- */}
+            {completedLessons < 5 && (
+              <section className="card full" data-testid="placement-cta" style={{ background: 'var(--color-info-soft)', borderColor: '#cfe4fb' }}>
+                <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)' }}>
+                  <div className="row" style={{ gap: 'var(--s-3)' }}>
+                    <span className="stat-icon" style={{ background: '#fff', color: 'var(--color-info)' }}><Icon name="target" size={24} /></span>
+                    <div>
+                      <h3 style={{ margin: '0 0 4px' }}>هل لديك معرفة سابقة بالإسبانية؟</h3>
+                      <p className="small muted" style={{ margin: 0 }}>
+                        اختبار سريع من 10 أسئلة يفتح لك المستوى المناسب ويمنحك نقاط XP حقيقية عند اجتيازه.
+                      </p>
+                    </div>
+                  </div>
+                  <button className="btn navy sm" onClick={() => navigate('/placement')}>ابدأ تحديد المستوى</button>
+                </div>
+              </section>
+            )}
+
+            {/* ---------------- المراجعة المتباعدة ---------------- */}
+            <section className="card full" data-testid="review-cta">
+              <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)' }}>
+                <div className="row" style={{ gap: 'var(--s-3)' }}>
+                  <span className="stat-icon" style={{ background: 'var(--color-primary-soft)', color: 'var(--color-primary-strong)' }}>
+                    <Icon name="refresh" size={24} />
                   </span>
+                  <div>
+                    <h2 style={{ margin: '0 0 4px', fontSize: '1.15rem' }}>المراجعة المتباعدة الذكية</h2>
+                    <p className="small muted" style={{ margin: 0 }}>
+                      {review === null
+                        ? 'جارٍ حساب ما هو مستحق…'
+                        : review.session.totalCards === 0
+                          ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
+                          : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
+                    </p>
+                  </div>
+                </div>
+                <div className="row">
+                  <button className="btn success" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
+                  <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
                 </div>
               </div>
+            </section>
 
-              {/* شريط تقدم الوحدة */}
-              <div
-                className="progress-track"
-                style={{ height: 6, marginBottom: 'var(--s-3)' }}
-                role="progressbar"
-                aria-valuenow={unitPct}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              >
-                <div className="progress-fill" style={{ width: `${unitPct}%` }} />
+            {/* ---------------- مسار التعلم ---------------- */}
+            <section className="card full" id="learning-path">
+              <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+                <h2 style={{ margin: 0 }}>مسار التعلم</h2>
+                <span className="small muted">العقد الخضراء مكتملة، والزرقاء هي درسك الحالي</span>
               </div>
+              <div className="tabs-row" role="tablist" aria-label="تصفية حسب المستوى">
+                {TABS.map(tab => (
+                  <button
+                    key={tab.id}
+                    role="tab"
+                    aria-selected={selectedTab === tab.id}
+                    className={`level-pill${selectedTab === tab.id ? ' active' : ''}`}
+                    onClick={() => setSelectedTab(tab.id)}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+              {filteredLessons.length === 0 ? (
+                <p className="muted small">لا توجد دروس في هذا القسم حاليًا.</p>
+              ) : (
+                <LearningPath
+                  lessons={filteredLessons}
+                  nextSlug={nextLesson?.slug}
+                  onOpen={slug => navigate(`/learn/${slug}`)}
+                />
+              )}
 
-              {/* قائمة دروس الوحدة */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-2)' }}>
-                {group.lessons.map(l => {
-                  const done = l.progress_status === 'completed';
-                  const inProgress = l.progress_status === 'in_progress';
-                  const isLocked = l.is_unlocked === false;
-
+              {/* القائمة التفصيلية بالوحدات */}
+              <div style={{ marginTop: 'var(--s-5)' }}>
+                {unitGroups.map(group => {
+                  const pct = group.lessons.length ? Math.round((group.completedCount / group.lessons.length) * 100) : 0;
                   return (
-                    <div
-                      className="lesson-row"
-                      key={l.slug}
-                      style={{
-                        opacity: isLocked ? 0.75 : 1,
-                        background: done ? 'var(--surface-2, #fbfcfd)' : 'transparent',
-                        padding: 'var(--s-2) var(--s-3)',
-                        borderRadius: 6,
-                        border: '1px solid var(--border)',
-                      }}
-                    >
-                      <div>
-                        <div>
-                          <strong>{l.title_ar}</strong>{' '}
-                          {l.level_code && <span className="badge sm">{l.level_code}</span>}{' '}
-                          {done && <span className="badge primary sm">✓ مكتمل {l.best_accuracy}%</span>}
-                          {inProgress && <span className="badge accent sm">⏳ قيد الحل</span>}
+                    <div key={group.unitId} style={{ marginBottom: 'var(--s-4)' }}>
+                      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+                        <div className="row" style={{ gap: 8 }}>
+                          <h3 style={{ margin: 0, fontSize: '1.05rem' }}>{group.unitTitle}</h3>
+                          <LevelBadge level={group.levelCode} />
+                          {group.programTitle && <span className="badge">{group.programTitle}</span>}
                         </div>
-                        <div className="small muted" style={{ marginTop: 4 }}>
-                          {isLocked
-                            ? '🔒 مقفل — يتطلب إتمام الدرس السابق أولاً.'
-                            : done
-                              ? 'أعد الحل لتحسين الدقة ومراجعة المفاهيم — لا نقاط إضافية عند الإعادة.'
-                              : inProgress
-                                ? 'بدأت هذا الدرس ولم تُكمله بعد.'
-                                : 'متاح للبدء الآن.'}
-                        </div>
+                        <span className="small muted num">{group.completedCount}/{group.lessons.length} · {pct}%</span>
                       </div>
-
-                      {isLocked ? (
-                        <button className="btn sm ghost" disabled title="هذا الدرس مقفل حتى إتمام المتطلبات">
-                          🔒 مقفل
-                        </button>
-                      ) : (
-                        <button
-                          className={`btn sm ${done ? 'secondary' : ''}`}
-                          onClick={() => navigate(`/learn/${l.slug}`)}
-                        >
-                          {done ? 'مراجعة' : inProgress ? 'متابعة' : 'ابدأ'}
-                        </button>
-                      )}
+                      <ProgressBar value={pct} height={6} label={`تقدم وحدة ${group.unitTitle}`} />
+                      <div style={{ marginTop: 'var(--s-3)' }}>
+                        {group.lessons.map(l => (
+                          <LessonRow key={l.slug} lesson={l} onOpen={slug => navigate(`/learn/${slug}`)} />
+                        ))}
+                      </div>
                     </div>
                   );
                 })}
               </div>
-            </div>
-          );
-        })}
-      </section>
+            </section>
 
-      {/* المسارات التخصصية */}
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>المسارات التطبيقية المتخصصة</h2>
-        {paths === null && <p className="muted small">جارٍ التحميل…</p>}
-        {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
-        <ul className="list-plain">
-          {(paths ?? []).map(p => (
-            <li key={p.slug} className="row" style={{ justifyContent: 'space-between', padding: 'var(--s-2) 0', borderBottom: '1px solid var(--border)' }}>
-              <div>
-                <strong>{p.title_ar}</strong>
-                {p.level_code && <span className="badge sm" style={{ marginRight: 8 }}>{p.level_code}</span>}
+            {/* ---------------- المسارات المتخصصة ---------------- */}
+            <section className="card full" id="specialized-tracks">
+              <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
+                <h2 style={{ margin: 0 }}>المسارات المتخصصة</h2>
+                <span className="small muted">كل المسارات تُقرأ من المحتوى المنشور فعليًا</span>
               </div>
-              <span className="row small muted">
-                <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
-              </span>
-            </li>
-          ))}
-        </ul>
-      </section>
+              {paths === null && <LoadingState text="جارٍ تحميل المسارات…" />}
+              {paths && paths.length === 0 && (
+                <ErrorState title="لا مسارات منشورة بعد" description="سيظهر هنا كل مسار ينشره فريق المحتوى." />
+              )}
+              <div className="track-grid">
+                {(paths ?? []).map(p => {
+                  const visual = trackVisual(p.slug, p.title_ar);
+                  return (
+                    <button
+                      type="button"
+                      key={p.slug}
+                      className="track-card"
+                      style={{ textAlign: 'start', font: 'inherit' }}
+                      onClick={() => navigate(`/learn?track=${encodeURIComponent(p.slug)}`)}
+                      aria-label={`افتح مسار ${p.title_ar}`}
+                    >
+                      <img src={visual.image} alt="" loading="lazy" />
+                      <span className="track-body">
+                        <h3>{p.title_ar}</h3>
+                        <p>{visual.shortAr}</p>
+                        <span className="track-meta">
+                          <Icon name="book" size={13} /> {p.lessons_count} درس · {p.units_count} وحدة
+                        </span>
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          </div>
+        </>
+      )}
     </div>
   );
+}
+
+function LessonRow({ lesson, onOpen }: { lesson: ProgressLessonItem; onOpen: (slug: string) => void }) {
+  const done = lesson.progress_status === 'completed';
+  const inProgress = lesson.progress_status === 'in_progress';
+  const locked = lesson.is_unlocked === false;
+  const icon: IconName = done ? 'check-circle' : locked ? 'lock' : inProgress ? 'clock' : 'play';
+  return (
+    <div className="lesson-row" style={done ? { background: 'var(--color-success-soft)', borderColor: '#bfe6d1' } : undefined}>
+      <div className="row" style={{ gap: 'var(--s-3)' }}>
+        <span
+          className="stat-icon"
+          style={{
+            width: 38, height: 38,
+            background: done ? 'var(--color-success)' : locked ? 'var(--color-surface-3)' : 'var(--color-info-soft)',
+            color: done ? '#fff' : locked ? 'var(--color-muted)' : 'var(--color-info)',
+          }}
+        >
+          <Icon name={icon} size={19} />
+        </span>
+        <div>
+          <strong>{lesson.title_ar}</strong>{' '}
+          <LevelBadge level={lesson.level_code} />
+          {done && <span className="badge success" style={{ marginInlineStart: 6 }}>مكتمل {lesson.best_accuracy}%</span>}
+          {inProgress && <span className="badge accent" style={{ marginInlineStart: 6 }}>قيد الحل</span>}
+          <p className="small muted" style={{ margin: '2px 0 0' }}>
+            {locked
+              ? `مقفل — يتطلب أولًا: ${(lesson.missing_prerequisites ?? []).join('، ') || 'إتمام الدرس السابق'}`
+              : done
+                ? 'أعد الحل لتحسين الدقة — لا نقاط إضافية عند الإعادة.'
+                : inProgress
+                  ? 'بدأت هذا الدرس ولم تُكمله بعد.'
+                  : 'متاح للبدء الآن.'}
+          </p>
+        </div>
+      </div>
+      {locked ? (
+        <button className="btn sm ghost" disabled title="هذا الدرس مقفل حتى إتمام المتطلبات">
+          <Icon name="lock" size={16} /> مقفل
+        </button>
+      ) : (
+        <button className={`btn sm ${done ? 'secondary' : 'navy'}`} onClick={() => onOpen(lesson.slug)}>
+          {done ? 'مراجعة' : inProgress ? 'متابعة' : 'ابدأ'}
+        </button>
+      )}
+    </div>
+  );
+}
+
+function styleLabel(user: ApiUser): string {
+  return {
+    fusha: 'الشرح بالفصحى',
+    eg: 'الشرح بالعامية المصرية',
+    fusha_eg: 'فصحى مع توضيح مصري',
+  }[user.explanationStyle];
+}
+
+function completedLessonSafe(n: number): number {
+  return Number.isFinite(n) ? n : 0;
 }

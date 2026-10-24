@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
+import { Icon } from '../components/icons';
+import { Mascot } from '../components/Mascot';
+import { ProgressBar } from '../components/ui';
 
 interface Question {
   id: number;
@@ -12,7 +15,6 @@ interface Question {
 }
 
 const QUESTIONS: Question[] = [
-  // المرحلة الأولى: التمهيد وأساسيات البداية (Pre-A1)
   {
     id: 1,
     level: 'PREA1',
@@ -49,12 +51,11 @@ const QUESTIONS: Question[] = [
     ],
     explanationAr: 'uno = واحد، dos = اثنان، tres = ثلاثة.',
   },
-
-  // المرحلة الثانية: المستوى التأسيسي (A1)
   {
     id: 4,
     level: 'A1',
     promptAr: 'أكمل الجملة بأداة التعريف المناسبة: «____ casa es grande.» (المنزل كبير)',
+    stemEs: '____ casa es grande.',
     options: [
       { id: 'a', text: 'La', correct: true },
       { id: 'b', text: 'El', correct: false },
@@ -100,8 +101,6 @@ const QUESTIONS: Question[] = [
     ],
     explanationAr: '«Un vaso de agua, por favor» هو الأسلوب اليومي المهذب والقياسي للطلب.',
   },
-
-  // المرحلة الثالثة: المستوى المتوسط الأساسي (A2)
   {
     id: 8,
     level: 'A2',
@@ -135,7 +134,7 @@ const QUESTIONS: Question[] = [
       { id: 'a', text: 'منذ متى وأنت تعيش في مدريد؟', correct: true },
       { id: 'b', text: 'كم تكلفة العيش في مدريد؟', correct: false },
       { id: 'c', text: 'هل تفضل العيش في مدريد؟', correct: false },
-      { id: 'd', text: 'متى ستسافر إلى مدريد؟', correct: false },
+      { id: 'd', text: 'متى ستعيش في مدريد؟', correct: false },
     ],
     explanationAr: 'التركيب «¿Cuánto tiempo hace que + فعل في المضارع؟» يُستخدم للسؤال عن مدة استمرار حدث بدأ في الماضي وما زال قائمًا.',
   },
@@ -158,10 +157,10 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (!user) {
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card">
+        <div className="card" style={{ marginTop: 'var(--s-6)' }}>
           <h2>تسجيل الدخول مطلوب</h2>
           <p className="muted">يرجى تسجيل الدخول أو إنشاء حساب لحفظ نتيجتك وفتح المستويات تلقائيًا.</p>
-          <button className="btn" onClick={() => navigate('/login')}>تسجيل الدخول</button>
+          <button className="btn navy" onClick={() => navigate('/login')}>تسجيل الدخول</button>
         </div>
       </div>
     );
@@ -177,36 +176,23 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   };
 
   const handleNext = () => {
-    if (index + 1 < QUESTIONS.length) {
-      setIndex(i => i + 1);
-    }
+    if (index + 1 < QUESTIONS.length) setIndex(i => i + 1);
   };
-
   const handlePrev = () => {
-    if (index > 0) {
-      setIndex(i => i - 1);
-    }
+    if (index > 0) setIndex(i => i - 1);
   };
 
   const handleFinish = async () => {
     setSubmitting(true);
     setError(null);
-
-    // حساب الدرجة الفعلية
     let correctCount = 0;
     for (const q of QUESTIONS) {
       const chosenId = answers[q.id];
       const correctOption = q.options.find(o => o.correct);
-      if (chosenId && correctOption && chosenId === correctOption.id) {
-        correctCount++;
-      }
+      if (chosenId && correctOption && chosenId === correctOption.id) correctCount++;
     }
-
     const scorePct = Math.round((correctCount / QUESTIONS.length) * 100);
-    // إذا أحرز 70% أو أكثر يستحق تخطي Pre-A1 وفتح A1
-    // إذا أحرز 90% أو أكثر يمكنه فتح A2
     const targetLevel = scorePct >= 80 ? 'A2' : 'A1';
-
     try {
       const res = await api.submitPlacement({
         targetLevel,
@@ -231,33 +217,31 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (result) {
     return (
       <div className="container" style={{ maxWidth: 680 }}>
-        <div className="card" style={{ textAlign: 'center', padding: 'var(--s-4)' }}>
-          <div style={{ fontSize: '3rem', marginBottom: 'var(--s-2)' }}>
-            {result.passed ? '🎉' : '📖'}
+        <div className="card result-hero" style={{ marginTop: 'var(--s-6)' }}>
+          <div className="result-mascot" style={{ width: 150 }}>
+            <Mascot mood={result.passed ? 'celebrate' : 'wave'} size={150} />
           </div>
           <h1 style={{ marginTop: 0 }}>نتيجة اختبار تحديد المستوى</h1>
           <p className="lead" style={{ margin: 'var(--s-2) 0' }}>
             نسبة الإجابات الصحيحة: <strong className="num">{result.score}%</strong>
           </p>
-
-          <div
-            className={`card feedback ${result.passed ? 'ok' : 'neutral'}`}
-            style={{ textAlign: 'right', margin: 'var(--s-3) 0' }}
-          >
-            <strong>المستوى الموصى به: {result.unlockedLevel}</strong>
-            <p style={{ margin: 'var(--s-1) 0 0' }}>{result.messageAr}</p>
-            {result.xpAwarded > 0 && (
-              <p className="small" style={{ color: 'var(--color-primary, #0066cc)', margin: 'var(--s-1) 0 0' }}>
-                ⭐ تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
-              </p>
-            )}
+          <div className={`feedback ${result.passed ? 'ok' : 'neutral'}`} style={{ textAlign: 'start', margin: 'var(--s-4) 0' }}>
+            <span className="feedback-icon">
+              <Icon name={result.passed ? 'check' : 'info'} size={20} />
+            </span>
+            <div>
+              <strong>المستوى الموصى به: {result.unlockedLevel}</strong>
+              <p style={{ margin: '2px 0 0' }}>{result.messageAr}</p>
+              {result.xpAwarded > 0 && (
+                <p className="small" style={{ color: 'var(--color-success-strong)', margin: 'var(--s-2) 0 0' }}>
+                  ⭐ تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
+                </p>
+              )}
+            </div>
           </div>
-
-          <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-4)' }}>
-            <button className="btn" onClick={() => navigate('/learn')}>
-              الانتقال إلى خريطة المنهج والدروس ←
-            </button>
-          </div>
+          <button className="btn navy" onClick={() => navigate('/learn')}>
+            الانتقال إلى خريطة المنهج والدروس ←
+          </button>
         </div>
       </div>
     );
@@ -267,53 +251,42 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   const progressPct = Math.round(((index + 1) / QUESTIONS.length) * 100);
 
   return (
-    <div className="container" style={{ maxWidth: 680 }}>
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-3)' }}>
-        <div>
-          <h1 style={{ margin: 0, fontSize: '1.4rem' }}>اختبار تحديد المستوى</h1>
-          <span className="small muted">
-            10 أسئلة سريعة لتقييم معرفتك الحالية وتخطي ما تعرفه مسبقًا
-          </span>
-        </div>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>
-          ✕ خروج
+    <div className="container" style={{ maxWidth: 720 }}>
+      <div className="lesson-top" style={{ marginTop: 'var(--s-4)' }}>
+        <button className="btn ghost icon-btn" onClick={() => navigate('/learn')} aria-label="خروج من الاختبار">
+          <Icon name="close" size={22} />
         </button>
+        <div className="lesson-title">
+          <h1 style={{ fontSize: '1.25rem' }}>اختبار تحديد المستوى</h1>
+          <span className="small muted">10 أسئلة سريعة لتقييم معرفتك الحالية</span>
+        </div>
+        <span className="badge navy">{current.level}</span>
       </div>
 
-      <div
-        className="progress-track"
-        role="progressbar"
-        aria-valuenow={progressPct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-label="تقدم اختبار تحديد المستوى"
-        style={{ marginBottom: 'var(--s-3)' }}
-      >
-        <div className="progress-fill" style={{ width: `${progressPct}%` }} />
-      </div>
+      <ProgressBar value={progressPct} label="تقدم الاختبار" />
 
-      <div className="card">
-        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-          <span className="badge">{current.level}</span>
-          <span className="small muted num">
-            السؤال {index + 1} من {QUESTIONS.length}
-          </span>
+      <div className="card" style={{ marginTop: 'var(--s-4)' }}>
+        <p className="small muted num" style={{ marginBottom: 'var(--s-3)' }}>
+          السؤال {index + 1} من {QUESTIONS.length}
+        </p>
+
+        <div className="question-scene">
+          <Mascot size={104} />
+          <div className="speech-bubble">
+            {current.stemEs ? (
+              <>
+                <p className="bubble-es es" dir="ltr">{current.stemEs}</p>
+                <p className="bubble-ar">{current.promptAr}</p>
+              </>
+            ) : (
+              <p className="bubble-es" style={{ fontSize: '1.15rem' }}>{current.promptAr}</p>
+            )}
+          </div>
         </div>
 
-        <h2 style={{ fontSize: '1.25rem', marginTop: 0 }}>{current.promptAr}</h2>
-        {current.stemEs && (
-          <p className="es" style={{ fontSize: '1.2rem', fontWeight: 600, margin: 'var(--s-2) 0' }}>
-            {current.stemEs}
-          </p>
-        )}
-
-        <div role="group" aria-label="خيارات الإجابة" style={{ marginTop: 'var(--s-3)' }}>
+        <div role="group" aria-label="خيارات الإجابة">
           {current.options.map(opt => (
-            <label
-              key={opt.id}
-              className={`choice ${selectedOptionId === opt.id ? 'selected' : ''}`}
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 'var(--s-2)', padding: 'var(--s-2) var(--s-3)', margin: 'var(--s-2) 0', border: '1px solid var(--border)', borderRadius: 8 }}
-            >
+            <label key={opt.id} className={`choice ${selectedOptionId === opt.id ? 'selected' : ''}`}>
               <input
                 type="radio"
                 name={`placement-q-${current.id}`}
@@ -321,36 +294,25 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
                 checked={selectedOptionId === opt.id}
                 onChange={() => handleSelect(opt.id)}
               />
-              <span className="es" style={{ fontSize: '1.05rem' }}>{opt.text}</span>
+              <span className="es">{opt.text}</span>
             </label>
           ))}
         </div>
 
         {error && <div className="alert" role="alert" style={{ marginTop: 'var(--s-3)' }}>{error}</div>}
 
-        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-4)' }}>
-          <button
-            type="button"
-            className="btn ghost sm"
-            onClick={handlePrev}
-            disabled={index === 0 || submitting}
-          >
+        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-5)' }}>
+          <button type="button" className="btn ghost" onClick={handlePrev} disabled={index === 0 || submitting}>
             ← السابق
           </button>
-
           {index + 1 < QUESTIONS.length ? (
-            <button
-              type="button"
-              className="btn sm"
-              onClick={handleNext}
-              disabled={!selectedOptionId || submitting}
-            >
+            <button type="button" className="btn navy" onClick={handleNext} disabled={!selectedOptionId || submitting}>
               التالي →
             </button>
           ) : (
             <button
               type="button"
-              className="btn sm"
+              className="btn success"
               onClick={handleFinish}
               disabled={answeredCount < QUESTIONS.length || submitting}
             >
