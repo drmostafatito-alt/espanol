@@ -16,7 +16,7 @@
  *   3) تكرار آمن: نفس الملف ⇒ نفس المعرّفات، ولا إصدار جديد إن لم يتغيّر المحتوى.
  */
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, unlinkSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { buildContentPlan } from './lib/content-plan.mjs';
 
@@ -28,9 +28,12 @@ const [WRANGLER_EXEC, WRANGLER_BASE_ARGS] = existsSync(WRANGLER_CLI)
   : [WRANGLER_BIN, []];
 const DB = 'es-ar-dev';
 const DRY = process.argv.includes('--dry-run');
-// مجلد المحتوى: افتراضيًا العينات، ويمكن تمرير مجلد مسودات جديد
+
+// مجلد المحتوى: افتراضيًا العينات، أو مسودات كاملة بـ --all أو مسار محدد بـ --dir
 const dirIdx = process.argv.indexOf('--dir');
-const CONTENT_DIR = dirIdx > 0 && process.argv[dirIdx + 1] ? process.argv[dirIdx + 1] : 'content/exemplars';
+const targetDirs = dirIdx > 0 && process.argv[dirIdx + 1]
+  ? [process.argv[dirIdx + 1]]
+  : (process.argv.includes('--all') ? ['content/exemplars', 'content/drafts'] : ['content/exemplars']);
 
 function refuse(reason) {
   console.error(`\n🛑 مرفوض: ${reason}\n`);
@@ -41,6 +44,20 @@ if (process.env.ENVIRONMENT === 'production') refuse('متغيرات البيئ�
 const toml = readFileSync(join(ROOT, 'wrangler.toml'), 'utf8');
 const dbId = toml.match(/database_id\s*=\s*"([0-9a-f-]{36})"/i)?.[1];
 if (dbId && dbId !== '00000000-0000-0000-0000-000000000000') refuse('database_id حقيقي في wrangler.toml — قد تكون قاعدة إنتاج.');
+
+// البحث عن قاعدة D1 المحلية في .wrangler لتسريع الاستيراد إن وُجدت
+let sqliteDb = null;
+const sqliteDir = join(ROOT, '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
+if (existsSync(sqliteDir)) {
+  const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite'));
+  if (f) {
+    try {
+      const { DatabaseSync } = await import('node:sqlite');
+      sqliteDb = new DatabaseSync(join(sqliteDir, f));
+      sqliteDb.exec('PRAGMA foreign_keys = ON;');
+    } catch {}
+  }
+}
 
 function d1(sql, { json = false } = {}) {
   const args = [...WRANGLER_BASE_ARGS, 'd1', 'execute', DB, '--local', '--command', sql];
@@ -60,11 +77,18 @@ function d1File(filePath) {
 function currentVersions() {
   let rows = [];
   try {
-    rows = d1(
-      `SELECT l.slug, lv.version_no, lv.content_hash FROM lessons l
-       JOIN lesson_versions lv ON lv.id = l.current_version_id`,
-      { json: true },
-    );
+    if (sqliteDb) {
+      rows = sqliteDb.prepare(
+        `SELECT l.slug, lv.version_no, lv.content_hash FROM lessons l
+         JOIN lesson_versions lv ON lv.id = l.current_version_id`,
+      ).all();
+    } else {
+      rows = d1(
+        `SELECT l.slug, lv.version_no, lv.content_hash FROM lessons l
+         JOIN lesson_versions lv ON lv.id = l.current_version_id`,
+        { json: true },
+      );
+    }
   } catch { /* قاعدة فارغة أو لم تُهيَّأ بعد */ }
   const map = {};
   for (const r of rows) map[r.slug] = { versionNo: r.version_no, contentHash: r.content_hash };
@@ -72,36 +96,63 @@ function currentVersions() {
 }
 
 const existingVersions = currentVersions();
-const { statements, counters, errors } = buildContentPlan(join(ROOT, CONTENT_DIR), { existingVersions });
+const allStatements = [];
+const aggregatedCounters = {};
 
-if (errors.length) {
-  console.error('\n❌ المحتوى لم يجتز فحص الاستيراد:');
-  for (const e of errors) console.error('   - ' + e);
-  process.exit(1);
+for (const targetDir of targetDirs) {
+  const { statements, counters, errors } = buildContentPlan(join(ROOT, targetDir), { existingVersions });
+  if (errors.length) {
+    console.error(`\n❌ المحتوى في ${targetDir} لم يجتز فحص الاستيراد:`);
+    for (const e of errors) console.error('   - ' + e);
+    process.exit(1);
+  }
+  console.log(`\n📦 ${targetDir} ⇒ ${statements.length} أمر SQL جاهز`);
+  console.log('   ' + Object.entries(counters).map(([k, v]) => `${k}=${v}`).join('  '));
+  allStatements.push(...statements);
+  for (const [k, v] of Object.entries(counters)) {
+    aggregatedCounters[k] = (aggregatedCounters[k] ?? 0) + v;
+  }
 }
-
-console.log(`\n📦 ${CONTENT_DIR} ⇒ ${statements.length} أمر SQL جاهز`);
-console.log('   ' + Object.entries(counters).map(([k, v]) => `${k}=${v}`).join('  '));
 
 if (DRY) {
   console.log('\n(dry-run) لم تُكتب أي بيانات.\n');
+  if (sqliteDb) sqliteDb.close();
   process.exit(0);
 }
 
-const BATCH = 40;
-const tmpFile = join(ROOT, '.wrangler', 'tmp-import.sql');
-for (let i = 0; i < statements.length; i += BATCH) {
-  const chunk = statements.slice(i, i + BATCH).join(';\n') + ';';
-  writeFileSync(tmpFile, chunk, 'utf8');
+if (sqliteDb) {
+  sqliteDb.exec('BEGIN TRANSACTION;');
   try {
-    d1File(tmpFile);
+    for (let i = 0; i < allStatements.length; i++) {
+      sqliteDb.exec(allStatements[i]);
+      if (i % 2000 === 0 || i === allStatements.length - 1) {
+        process.stdout.write(`\r   نُفِّذ ${i + 1}/${allStatements.length}`);
+      }
+    }
+    sqliteDb.exec('COMMIT;');
   } catch (err) {
-    try { unlinkSync(tmpFile); } catch {}
-    console.error(`\n❌ فشل عند الدفعة ${i / BATCH + 1}:`);
-    console.error(String(err.stderr ?? err.message).slice(0, 1500));
-    process.exit(1);
+    sqliteDb.exec('ROLLBACK;');
+    throw err;
+  } finally {
+    sqliteDb.close();
   }
-  process.stdout.write(`\r   نُفِّذ ${Math.min(i + BATCH, statements.length)}/${statements.length}`);
+} else {
+  const batchIdx = process.argv.indexOf('--batch');
+  const BATCH = batchIdx > 0 && process.argv[batchIdx + 1] ? Number(process.argv[batchIdx + 1]) : 40;
+  const tmpFile = join(ROOT, '.wrangler', 'tmp-import.sql');
+  for (let i = 0; i < allStatements.length; i += BATCH) {
+    const chunk = allStatements.slice(i, i + BATCH).join(';\n') + ';';
+    writeFileSync(tmpFile, chunk, 'utf8');
+    try {
+      d1File(tmpFile);
+    } catch (err) {
+      try { unlinkSync(tmpFile); } catch {}
+      console.error(`\n❌ فشل عند الدفعة ${i / BATCH + 1}:`);
+      console.error(String(err.stderr ?? err.message).slice(0, 1500));
+      process.exit(1);
+    }
+    process.stdout.write(`\r   نُفِّذ ${Math.min(i + BATCH, allStatements.length)}/${allStatements.length}`);
+  }
+  try { unlinkSync(tmpFile); } catch {}
 }
-try { unlinkSync(tmpFile); } catch {}
 console.log('\n\n✅ تم الاستيراد — كل الصفوف بحالة draft / unreviewed. لم يُنشر شيء.');

@@ -21,6 +21,7 @@
     "test:browser": "node tools/run-browser-tests.mjs",
     "test:ui": "vitest run tests/ui-lesson.test.tsx",
     "content:import": "node tools/import-content.mjs",
+    "content:import:all": "node tools/import-content.mjs --all",
     "content:plan": "node tools/import-content.mjs --dry-run"
   },
   "dependencies": {
