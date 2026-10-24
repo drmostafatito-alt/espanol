@@ -40,7 +40,10 @@ function refuse(reason) {
   process.exit(2);
 }
 if (process.argv.includes('--remote')) refuse('الاستيراد محلي فقط.');
-if (process.env.ENVIRONMENT === 'production') refuse('متغيرات البيئة تشير إلى production.');
+if (process.argv.some(a => a.startsWith('--env') && !a.includes('local'))) refuse('تم تحديد بيئة wrangler غير محلية.');
+if (process.env.WRANGLER_ENVIRONMENT === 'production' || process.env.ENVIRONMENT === 'production') {
+  refuse('متغيرات البيئة تشير إلى production.');
+}
 const toml = readFileSync(join(ROOT, 'wrangler.toml'), 'utf8');
 const dbId = toml.match(/database_id\s*=\s*"([0-9a-f-]{36})"/i)?.[1];
 if (dbId && dbId !== '00000000-0000-0000-0000-000000000000') refuse('database_id حقيقي في wrangler.toml — قد تكون قاعدة إنتاج.');
@@ -49,13 +52,40 @@ if (dbId && dbId !== '00000000-0000-0000-0000-000000000000') refuse('database_id
 let sqliteDb = null;
 const sqliteDir = join(ROOT, '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
 if (existsSync(sqliteDir)) {
-  const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite'));
-  if (f) {
+  const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+  if (sqliteFiles.length === 1) {
+    const dbPath = join(sqliteDir, sqliteFiles[0]);
+    // تجربة node:sqlite أولاً، ثم better-sqlite3 كبديل مدعوم
     try {
-      const { DatabaseSync } = await import('node:sqlite');
-      sqliteDb = new DatabaseSync(join(sqliteDir, f));
-      sqliteDb.exec('PRAGMA foreign_keys = ON;');
+      const nodeSqlite = await import('node:sqlite');
+      if (nodeSqlite && nodeSqlite.DatabaseSync) {
+        const candidateDb = new nodeSqlite.DatabaseSync(dbPath);
+        const check = candidateDb.prepare("SELECT count(1) as n FROM sqlite_master WHERE type='table' AND name IN ('lessons', 'programs', 'units')").get();
+        if (check?.n === 3) {
+          sqliteDb = candidateDb;
+          sqliteDb.exec('PRAGMA foreign_keys = ON;');
+          sqliteDb.exec('PRAGMA busy_timeout = 5000;');
+        } else {
+          candidateDb.close();
+        }
+      }
     } catch {}
+
+    if (!sqliteDb) {
+      try {
+        const bSqlite = await import('better-sqlite3');
+        const Database = bSqlite.default || bSqlite;
+        const candidateDb = new Database(dbPath);
+        const check = candidateDb.prepare("SELECT count(1) as n FROM sqlite_master WHERE type='table' AND name IN ('lessons', 'programs', 'units')").get();
+        if (check?.n === 3) {
+          sqliteDb = candidateDb;
+          sqliteDb.pragma('foreign_keys = ON');
+          sqliteDb.pragma('busy_timeout = 5000');
+        } else {
+          candidateDb.close();
+        }
+      } catch {}
+    }
   }
 }
 

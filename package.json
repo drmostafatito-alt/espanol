@@ -14,6 +14,7 @@
     "db:reset:local": "node tools/db.mjs reset",
     "validate": "node tools/check-sql.mjs && node tools/validate-content.mjs",
     "db:status": "node tools/db.mjs status",
+    "db:audit": "node tools/audit-db-integrity.mjs",
     "bench:kdf": "node tools/bench-kdf.mjs",
     "audit:security": "node tools/security-audit.mjs",
     "deploy:preflight": "node tools/check-deploy-ready.mjs",
