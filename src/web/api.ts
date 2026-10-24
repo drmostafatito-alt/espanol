@@ -50,7 +50,7 @@ export const api = {
 
   // ---- المرحلة 2: التعلم ----
   progress: () => request<ProgressPayload>('/api/me/progress'),
-  submitPlacement: (body: { targetLevel: 'A1' | 'A2'; score: number; answersCount?: number }) =>
+  submitPlacement: (body: { targetLevel: 'A1' | 'A2'; answers?: Record<string | number, string>; score?: number; answersCount?: number }) =>
     request<{
       passed: boolean;
       score: number;

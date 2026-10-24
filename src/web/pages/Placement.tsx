@@ -210,6 +210,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
     try {
       const res = await api.submitPlacement({
         targetLevel,
+        answers,
         score: scorePct,
         answersCount: Object.keys(answers).length,
       });

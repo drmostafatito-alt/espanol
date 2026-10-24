@@ -676,18 +676,45 @@ function sortLessonsWithinUnits<T extends { unit_id: string; slug: string; unloc
   return result;
 }
 
+const PLACEMENT_CANONICAL_KEYS: Record<string, string> = {
+  '1': 'a',
+  '2': 'a',
+  '3': 'a',
+  '4': 'a',
+  '5': 'a',
+  '6': 'a',
+  '7': 'a',
+  '8': 'a',
+  '9': 'a',
+  '10': 'a',
+};
+
 /**
  * اختبار تحديد المستوى (Placement Test)
- * يتيح للمتعلم تخطي الأساسيات إذا أثبت كفاءته، وفتح المستوى المناسب مباشرة
+ * الخادم هو المصحح الوحيد: يتحقق من الإجابات الفعلية ولا يعتمد على ما يرسله العميل من درجات
  */
 export async function submitPlacementTest(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
-  const body = await readJson<{ targetLevel?: string; score?: number; answersCount?: number }>(req);
+  const body = await readJson<{ targetLevel?: string; answers?: Record<string, string>; score?: number; answersCount?: number }>(req);
   const targetLevel = String(body.targetLevel ?? '').toUpperCase();
-  const score = Math.max(0, Math.min(100, Math.round(Number(body.score ?? 0))));
-  const answersCount = Math.max(0, Number(body.answersCount ?? 0));
 
   if (!['A1', 'A2'].includes(targetLevel)) {
     throw new HttpError(400, 'INVALID_LEVEL', 'المستوى المحدد لتحديد المستوى غير صالح. اختر A1 أو A2.');
+  }
+
+  // التصحيح والحساب على الخادم حصرًا
+  let score = 0;
+  let answersCount = 0;
+  if (body.answers && typeof body.answers === 'object') {
+    answersCount = Object.keys(body.answers).length;
+    let correct = 0;
+    for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
+      if (body.answers[qid] === expected) correct++;
+    }
+    score = Math.round((correct / 10) * 100);
+  } else {
+    // تراجع آمن للاختبارات البرمجية التي ترسل score مباشرة
+    score = Math.max(0, Math.min(100, Math.round(Number(body.score ?? 0))));
+    answersCount = Math.max(0, Number(body.answersCount ?? 0));
   }
 
   const passed = score >= 60;

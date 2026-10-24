@@ -376,6 +376,115 @@ describe('P: لوحة التقدم تُقرأ من الخادم', () => {
   });
 });
 
+describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة الخادم', () => {
+  it('يرفض المستوى غير الصالح برمز 400', async () => {
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'C2', answers: {} }),
+    });
+    expect(res.status).toBe(400);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('INVALID_LEVEL');
+  });
+
+  it('الخادم يصحح الإجابات بنفسه ويمنح XP ويفتح الدروس عند النجاح', async () => {
+    const correctAnswers = {
+      '1': 'a',
+      '2': 'a',
+      '3': 'a',
+      '4': 'a',
+      '5': 'a',
+      '6': 'a',
+      '7': 'a',
+      '8': 'a',
+      '9': 'a',
+      '10': 'a',
+    };
+
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    expect(data.passed).toBe(true);
+    expect(data.score).toBe(100);
+    expect(data.targetLevel).toBe('A1');
+    expect(data.unlockedLevel).toBe('A1');
+    expect(data.xpAwarded).toBe(40);
+
+    // التحقق من أن لوحة التقدم تعكس فتح المستوى ورصيد الـ XP
+    const progRes = await h.call('/api/me/progress', { cookie });
+    const prog = await h.json(progRes);
+    expect(prog.stats.xp_total).toBe(40);
+
+    // درس A1 أصبح متاحًا (غير مقفل)
+    const a1Lesson = prog.lessons.find((l: { slug: string }) => l.slug === 'a1-un-cafe-por-favor');
+    expect(a1Lesson).toBeDefined();
+    expect(a1Lesson.is_unlocked).toBe(true);
+  });
+
+  it('الخادم يتجاهل الدرجة المرسلة من العميل إذا كانت الإجابات خاطئة (منع التلاعب)', async () => {
+    const fakeAnswers = {
+      '1': 'wrong',
+      '2': 'wrong',
+    };
+
+    // العميل يحاول إرسال score: 100 للتلاعب
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: fakeAnswers, score: 100 }),
+    });
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    expect(data.passed).toBe(false);
+    expect(data.score).toBe(0); // الخادم صحح الإجابات الفعلية ووجد 0 صحيحة
+    expect(data.xpAwarded).toBe(0);
+    expect(data.unlockedLevel).toBe('PREA1');
+  });
+
+  it('منع تكرار منح XP عند إعادة اجتياز الاختبار لنفس المستوى (Idempotency)', async () => {
+    const correctAnswers = {
+      '1': 'a',
+      '2': 'a',
+      '3': 'a',
+      '4': 'a',
+      '5': 'a',
+      '6': 'a',
+      '7': 'a',
+      '8': 'a',
+      '9': 'a',
+      '10': 'a',
+    };
+
+    // المحاولة الأولى
+    const res1 = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    const d1 = await h.json(res1);
+    expect(d1.xpAwarded).toBe(40);
+
+    // المحاولة الثانية لنفس المستوى
+    const res2 = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    });
+    const d2 = await h.json(res2);
+    expect(d2.passed).toBe(true);
+    expect(d2.xpAwarded).toBe(0); // لم يحصل على نقاط مضاعفة
+
+    const progRes = await h.call('/api/me/progress', { cookie });
+    const prog = await h.json(progRes);
+    expect(prog.stats.xp_total).toBe(40);
+  });
+});
+
 /** الإجابة الصحيحة لتمرين — من نفس محتوى الاستيراد، لا من استنتاج العميل */
 function correctAnswerFor(ex: { id: string }): unknown {
   return correctAnswer(h, ex.id) ?? '';
