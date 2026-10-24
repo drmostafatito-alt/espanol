@@ -217,8 +217,6 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       )}
 
       <div className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2 style={{ marginTop: 0 }}>{current.instructionAr}</h2>
-
         <ExerciseBody
           exercise={current}
           answer={answer}
@@ -378,6 +376,18 @@ function ExerciseBody({
   };
 
   const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  // الماسكوت حاضر في كل سؤال: عند غياب الجملة الإسبانية تعرض الفقاعة التعليمات نفسها
+  const instructionBubble = (
+    <p className="bubble-ar" style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--color-navy)', margin: 0 }}>
+      {exercise.instructionAr}
+    </p>
+  );
+  const stemBubble = (
+    <>
+      {exercise.stemEs && <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>}
+      {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
+    </>
+  );
   const playButton = hasAudio ? (
     <button className="btn navy sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
       <Icon name="volume" size={17} /> استمع
@@ -414,12 +424,16 @@ function ExerciseBody({
     const recSupported = isSpeechRecognitionSupported();
     return (
       <div>
-        {exercise.stemEs && (
-          <QuestionScene>
-            <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>
-            {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
-          </QuestionScene>
-        )}
+        <QuestionScene>
+          {exercise.stemEs ? (
+            <>
+              <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>
+              {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
+            </>
+          ) : (
+            instructionBubble
+          )}
+        </QuestionScene>
 
         <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap' }}>
           {hasAudio && (
@@ -492,6 +506,9 @@ function ExerciseBody({
     return (
       <div>
         <QuestionScene>
+          <p className="bubble-ar" style={{ fontWeight: 700, color: 'var(--color-navy)', marginTop: 0 }}>
+            {exercise.instructionAr}
+          </p>
           <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap' }}>
             {playButton}
             <button className="btn secondary sm" data-testid="lesson-audio-replay" onClick={onReplayAudio} type="button">
@@ -525,13 +542,10 @@ function ExerciseBody({
   if (exercise.options.length) {
     return (
       <div>
-        {(exercise.stemEs || exercise.stemAr) && (
-          <QuestionScene>
-            {exercise.stemEs && <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>}
-            {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
-            {hasAudio && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
-          </QuestionScene>
-        )}
+        <QuestionScene>
+          {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+          {hasAudio && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+        </QuestionScene>
         {optionGroup}
       </div>
     );
@@ -548,13 +562,10 @@ function ExerciseBody({
     };
     return (
       <div>
-        {(exercise.stemEs || exercise.stemAr) && (
-          <QuestionScene>
-            {exercise.stemEs && <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>}
-            {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
-            {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
-          </QuestionScene>
-        )}
+        <QuestionScene>
+          {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+          {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+        </QuestionScene>
         <p className="small muted" style={{ marginBottom: 'var(--s-2)' }}>اضغط الكلمات بالترتيب الصحيح — أو استخدم لوحة المفاتيح.</p>
         <div className="token-box" dir="ltr" data-testid="selected-tokens" aria-label="الجملة التي تكوّنها">
           {tokens.map((id, i) => (
@@ -590,13 +601,10 @@ function ExerciseBody({
   /* إدخال نصي حر */
   return (
     <div>
-      {(exercise.stemEs || exercise.stemAr) && (
-        <QuestionScene>
-          {exercise.stemEs && <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>}
-          {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
-          {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
-        </QuestionScene>
-      )}
+      <QuestionScene>
+        {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+        {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+      </QuestionScene>
       <label className="field" style={{ marginTop: 'var(--s-4)' }}>
         <span>إجابتك بالإسبانية</span>
         <input
