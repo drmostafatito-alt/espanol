@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem } from '../api';
 import { useAuth } from '../state';
 import { AudioDemo } from '../components/AudioDemo';
-import { Icon, LevelBadge, ProgressBar, SectionHead, EmptyState, XpChip, GemChip } from '../components/ui';
+import { Icon, LevelBadge, ProgressBar, SectionHead, EmptyState, XpChip, GemChip, StreakChip, LevelRing } from '../components/ui';
 import { TopicScene, topicForLesson } from '../components/Illustrations';
 
 interface PathRow {
@@ -76,6 +76,33 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   // رصيد الجواهر الافتراضية المحسوب من الإنجاز الفعلي
   const gemsCount = (completedLessons * 5) + Math.floor(totalXp / 25);
 
+  // حلقة المستوى: نسبة مكتملة داخل مستوى الدرس التالي فقط (من بيانات الخادم)،
+  // وإن لم يوجد درس تالٍ تُعرض نسبة المنهج الكلي — لا أرقام من النموذج أبدًا.
+  const currentLevelCode = progress?.nextLesson?.level_code ?? null;
+  const levelLessons = currentLevelCode
+    ? lessons.filter(l => (l.level_code ?? '').toUpperCase() === currentLevelCode.toUpperCase())
+    : [];
+  const levelCompleted = levelLessons.filter(l => l.progress_status === 'completed').length;
+  const levelPct = levelLessons.length > 0
+    ? Math.round((levelCompleted / levelLessons.length) * 100)
+    : (progress && progress.totals.lessons_total > 0
+      ? Math.round((progress.totals.lessons_completed / progress.totals.lessons_total) * 100)
+      : 0);
+  const ringLabel = currentLevelCode
+    ? `${levelCompleted} من ${levelLessons.length} درسًا في مستوى ${currentLevelCode.toUpperCase()}`
+    : (progress ? `${progress.totals.lessons_completed} من ${progress.totals.lessons_total} درسًا في المنهج` : undefined);
+
+  // الأفاتار: أول حرف من اسم المستخدم من الخادم (لا صورة ولا اسم مكتوب يدويًا)
+  const avatarInitial = (user.displayName?.trim() || user.email || '?').charAt(0).toUpperCase();
+
+  const scrollToId = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    }
+  };
+
   const filteredLessons = lessons.filter(l => {
     if (selectedTab === 'ALL') return true;
     if (selectedTab === 'travel') return l.program_slug === 'travel';
@@ -126,52 +153,112 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container">
-      <header className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
-        <div>
-          <h1 style={{ marginBottom: 4 }}>أهلًا{user.displayName ? ` يا ${user.displayName}` : ''}</h1>
-          <p className="muted small" style={{ margin: 0 }}>
-            أسلوب الشرح: <strong>{style}</strong> · الهدف اليومي: <span className="num">{user.dailyGoalMinutes}</span> دقيقة
-          </p>
+      <div className="dash-layout">
+      {/* الشريط الجانبي (سطح المكتب) — كل الروابط وجهات تنقّل موجودة أصلًا */}
+      <aside className="sidebar" aria-label="تنقل لوحة المتعلم">
+        <div className="row" style={{ marginBottom: 'var(--s-4)' }}>
+          <span className="avatar sm" aria-hidden="true">{avatarInitial}</span>
+          <div style={{ minWidth: 0 }}>
+            <strong style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {user.displayName || user.email}
+            </strong>
+            <span className="small muted">لوحة المتعلم</span>
+          </div>
         </div>
-        <div className="row">
-          <button className="btn secondary sm" onClick={() => navigate('/settings')}>
-            <Icon name="settings" size={17} /> الإعدادات
+        <nav>
+          <button className="sidebar-link active" onClick={() => navigate('/learn')}>
+            <Icon name="home" size={18} /> الرئيسية
           </button>
-          <button className="btn ghost sm" onClick={() => void signOut().then(() => navigate('/'))}>
-            <Icon name="logout" size={17} /> خروج
+          <button className="sidebar-link" onClick={() => scrollToId('curriculum-map')}>
+            <Icon name="book" size={18} /> مسار التعلم
           </button>
+          <button className="sidebar-link" onClick={() => navigate('/review')}>
+            <Icon name="target" size={18} /> المراجعة
+          </button>
+          <button className="sidebar-link" onClick={() => navigate('/search')}>
+            <Icon name="search" size={18} /> البحث
+          </button>
+          <button className="sidebar-link" onClick={() => navigate('/settings')}>
+            <Icon name="settings" size={18} /> الإعدادات
+          </button>
+          <button className="sidebar-link danger" onClick={() => void signOut().then(() => navigate('/'))}>
+            <Icon name="logout" size={18} /> خروج
+          </button>
+        </nav>
+      </aside>
+
+      <div className="dash-main">
+      {/* رأس الترحيب بالأفاتار + رقائق الإحصاءات من الخادم */}
+      <header style={{ marginBottom: 'var(--s-4)' }}>
+        <div className="greet-head">
+          <span className="avatar" aria-hidden="true">{avatarInitial}</span>
+          <div style={{ flex: 1, minWidth: 200 }}>
+            <h1 style={{ marginBottom: 4 }}>مرحبًا{user.displayName ? ` يا ${user.displayName}` : ''}</h1>
+            <p className="muted small" style={{ margin: 0 }}>
+              استمر في رحلتك لتعلم الإسبانية · أسلوب الشرح: <strong>{style}</strong> · الهدف اليومي: <span className="num">{user.dailyGoalMinutes}</span> دقيقة
+            </p>
+          </div>
+          <div className="row">
+            <button className="btn secondary sm" onClick={() => navigate('/settings')}>
+              <Icon name="settings" size={17} /> الإعدادات
+            </button>
+            <button className="btn ghost sm" onClick={() => void signOut().then(() => navigate('/'))}>
+              <Icon name="logout" size={17} /> خروج
+            </button>
+          </div>
         </div>
+        {progress && (
+          <div className="stat-chips" style={{ marginTop: 'var(--s-3)' }}>
+            <StreakChip days={progress.stats.streak_current} />
+            <GemChip gems={gemsCount} />
+            <XpChip xp={progress.stats.xp_total} />
+          </div>
+        )}
       </header>
 
       {loadError && <div className="alert" role="alert">{loadError}</div>}
 
-      {/* بطاقة خطوتك التالية */}
+      {/* بطاقة الدرس التالي + حلقة المستوى — كالنموذج، بأرقام الخادم فقط */}
       {nextLesson && (
-        <section className="card card-green" data-testid="next-step-hero" style={{ marginBottom: 'var(--s-4)' }}>
-          <div className="track-card" style={{ alignItems: 'center' }}>
-            <div style={{ width: 96, flex: 'none' }}>
-              <TopicScene topic={nextTopic} label={`رسم موضوع درس ${nextLesson.title_ar}`} />
-            </div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <span className="kicker">خطوتك التالية في المسار</span>
-              <h2 style={{ margin: '4px 0 6px', fontSize: '1.3rem' }}>{nextLesson.title_ar}</h2>
-              <p className="small muted" style={{ margin: 0, display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
-                <LevelBadge level={nextLesson.level_code} size="sm" />
-                {nextLesson.unit_title_ar ? <span>{nextLesson.unit_title_ar}</span> : null}
-                {nextLesson.program_title_ar ? <span>{nextLesson.program_title_ar}</span> : null}
-              </p>
-              <div style={{ marginTop: 'var(--s-3)' }}>
-                <button
-                  className="btn"
-                  data-testid="next-lesson-btn"
-                  onClick={() => navigate(`/learn/${nextLesson.slug}`)}
-                >
-                  <Icon name="play" size={18} /> ابدأ الدرس الآن
-                </button>
+        <div className="dash-hero-row" style={{ marginBottom: 'var(--s-4)' }}>
+          <section className="card next-hero" data-testid="next-step-hero">
+            <div className="next-hero-grid">
+              <div className="next-hero-art">
+                <TopicScene topic={nextTopic} label={`رسم موضوع درس ${nextLesson.title_ar}`} />
+                <span className="hero-bubble" dir="ltr">¡Hola!</span>
+              </div>
+              <div className="next-hero-body">
+                <span className="kicker">الدرس التالي</span>
+                <h2 style={{ margin: '4px 0 6px', fontSize: '1.35rem' }}>{nextLesson.title_ar}</h2>
+                <p className="small muted" style={{ margin: 0, display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <LevelBadge level={nextLesson.level_code} size="sm" />
+                  {nextLesson.unit_title_ar ? <span>{nextLesson.unit_title_ar}</span> : null}
+                  {nextLesson.program_title_ar ? <span>{nextLesson.program_title_ar}</span> : null}
+                </p>
+                <div style={{ marginTop: 'var(--s-4)' }}>
+                  <button
+                    className="btn"
+                    data-testid="next-lesson-btn"
+                    onClick={() => navigate(`/learn/${nextLesson.slug}`)}
+                  >
+                    <Icon name="play" size={18} /> ابدأ الدرس
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section className="card">
+            <h3 style={{ margin: '0 0 var(--s-3)' }}>مستواك الحالي</h3>
+            <LevelRing
+              pct={levelPct}
+              code={currentLevelCode ? currentLevelCode.toUpperCase() : null}
+              label={ringLabel}
+            />
+            <button className="btn secondary sm block" style={{ marginTop: 'var(--s-3)' }} onClick={() => scrollToId('curriculum-map')}>
+              عرض التفاصيل
+            </button>
+          </section>
+        </div>
       )}
 
       {/* دعوة اختبار تحديد المستوى للمتعلمين الجدد */}
@@ -262,7 +349,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
       </div>
 
       {/* خريطة المنهج والدروس */}
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
+      <section className="card" id="curriculum-map" style={{ marginTop: 'var(--s-4)' }}>
         <SectionHead
           kicker="رحلتك"
           title="خريطة المنهج والدروس"
@@ -373,38 +460,36 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         })}
       </section>
 
-      {/* المسارات التخصصية */}
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <SectionHead kicker="تطبيق عملي" title="المسارات التطبيقية المتخصصة" />
+      {/* المسارات التخصصية — بطاقات برؤوس تدرجية بدل الصور، كالنموذج */}
+      <section style={{ marginTop: 'var(--s-4)' }}>
+        <SectionHead kicker="تطبيق عملي" title="المسارات المتخصصة" />
         {paths === null && <p className="muted small">جارٍ التحميل…</p>}
         {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
-        <ul className="list-plain">
+        <div className="grid cols-2">
           {(paths ?? []).map(p => {
             const artIcon = p.slug === 'travel' || p.kind === 'travel' ? 'plane' : p.slug === 'callcenter' || p.kind === 'callcenter' ? 'headset' : 'book';
-            const artTone = artIcon === 'plane' ? 'blue' : artIcon === 'headset' ? 'gold' : '';
+            const gradTone = artIcon === 'plane' ? 'travel' : artIcon === 'headset' ? 'callcenter' : 'default';
             return (
-              <li key={p.slug}>
-                <div className="track-card">
-                  <div className={`track-art ${artTone}`}>
-                    <Icon name={artIcon} size={28} />
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-2)' }}>
-                      <div style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
-                        <strong>{p.title_ar}</strong>
-                        <LevelBadge level={p.level_code} size="sm" />
-                      </div>
-                      <span className="small muted">
-                        <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
-                      </span>
-                    </div>
-                  </div>
+              <article className="card card-hover" key={p.slug} style={{ overflow: 'hidden', paddingTop: 0, paddingInline: 0 }}>
+                <div className={`track-gradient ${gradTone}`}>
+                  <Icon name={artIcon} size={40} />
                 </div>
-              </li>
+                <div style={{ padding: '0 var(--s-4) var(--s-4)' }}>
+                  <div style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <strong>{p.title_ar}</strong>
+                    <LevelBadge level={p.level_code} size="sm" />
+                  </div>
+                  <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
+                    <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
+                  </p>
+                </div>
+              </article>
             );
           })}
-        </ul>
+        </div>
       </section>
+      </div>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export type IconName =
   | 'plane' | 'cup' | 'headset' | 'home' | 'bag' | 'phone' | 'briefcase'
   | 'star' | 'gem' | 'search' | 'settings' | 'logout' | 'arrowL' | 'arrowR'
   | 'eye' | 'eyeOff' | 'target' | 'flame' | 'clock' | 'cap' | 'chat'
-  | 'pen' | 'info' | 'warn' | 'checkCircle' | 'chevronDown' | 'globe';
+  | 'pen' | 'info' | 'warn' | 'checkCircle' | 'chevronDown' | 'globe' | 'sun' | 'trophy';
 
 const PATHS: Record<IconName, ReactNode> = {
   check: <path d="M4 12.5 9.5 18 20 6.5" />,
@@ -48,6 +48,8 @@ const PATHS: Record<IconName, ReactNode> = {
   checkCircle: <><circle cx="12" cy="12" r="8.5" /><path d="M8.5 12.5 11 15l4.5-5.5" /></>,
   chevronDown: <path d="M6 9.5 12 15.5 18 9.5" />,
   globe: <><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17M12 3.5c-2.5 2.5-3.8 5.3-3.8 8.5s1.3 6 3.8 8.5c2.5-2.5 3.8-5.3 3.8-8.5s-1.3-6-3.8-8.5Z" /></>,
+  sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" /></>,
+  trophy: <><path d="M8 4h8v4a4 4 0 0 1-8 0V4Z" /><path d="M8 5H5a3 3 0 0 0 3 4M16 5h3a3 3 0 0 1-3 4M12 12v3M8 20h8M10 15h4" /></>,
 };
 
 export function Icon({ name, size = 20, label, className }: { name: IconName; size?: number; label?: string; className?: string }) {
@@ -129,4 +131,36 @@ export function XpChip({ xp }: { xp: number }) {
 }
 export function GemChip({ gems }: { gems: number }) {
   return <span className="gem-chip"><Icon name="gem" size={16} /><span className="num">{gems}</span></span>;
+}
+/* شريحة السلسلة: أيام متتابعة من الخادم فقط (لا رقم افتراضي) */
+export function StreakChip({ days }: { days: number }) {
+  return <span className="streak-chip"><Icon name="flame" size={16} /><span className="num">{days}</span> يوم متتالٍ</span>;
+}
+
+/* حلقة مستوى SVG: نسبة من بيانات حقيقية تُمرَّر من لوحة المتعلم.
+   code اختياري (رمز المستوى الحالي)؛ بدونه تُعرض النسبة وحدها في المنتصف. */
+export function LevelRing({ pct, code, label }: { pct: number; code?: string | null; label?: string }) {
+  const p = Math.max(0, Math.min(100, Math.round(pct)));
+  const r = 52;
+  const c = 2 * Math.PI * r;
+  const dash = (p / 100) * c;
+  return (
+    <div className="level-ring-wrap">
+      <div className="level-ring" role="img" aria-label={label ?? `تقدم ${p}%`}>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r={r} fill="none" stroke="#e9dcc2" strokeWidth="10" />
+          <circle
+            cx="60" cy="60" r={r} fill="none" stroke="#16a34a" strokeWidth="10" strokeLinecap="round"
+            strokeDasharray={`${dash} ${c}`} strokeDashoffset={0}
+          />
+        </svg>
+        <div className="level-ring-center">
+          {code ? <span className="level-ring-code" dir="ltr">{code}</span> : null}
+          <span className="level-ring-pct num">{p}%</span>
+          <span className="small muted">{code ? 'مكتمل' : 'من المنهج'}</span>
+        </div>
+      </div>
+      {label ? <span className="small muted" style={{ maxWidth: '24ch' }}>{label}</span> : null}
+    </div>
+  );
 }

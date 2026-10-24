@@ -55,27 +55,29 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container narrow">
-      <SectionHead
-        kicker="Español بالعربي"
-        title="إنشاء حساب"
-        desc="نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية."
-      />
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+      <div style={{ color: '#1e2a4a' }}>
+        <SectionHead
+          kicker="Español بالعربي"
+          title="إنشاء حساب"
+          desc="نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية."
+        />
+      </div>
+      <form className="card stack" style={{ borderRadius: 24, padding: 'var(--s-5)', boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }} onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
           <span>الاسم الذي تحب أن نناديك به (اختياري)</span>
-          <input type="text" value={displayName} onChange={e => setDisplayName(e.target.value)} autoComplete="nickname" maxLength={80} />
+          <input type="text" value={displayName} onChange={e => setDisplayName(e.target.value)} autoComplete="nickname" maxLength={80} style={{ borderRadius: 16, padding: '12px 14px' }} />
         </label>
         <label className="field">
           <span>البريد الإلكتروني</span>
-          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required style={{ borderRadius: 16, padding: '12px 14px' }} />
         </label>
         <label className="field">
           <span>كلمة المرور</span>
-          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="new-password" required />
+          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="new-password" required style={{ borderRadius: 16, padding: '12px 14px' }} />
           <span className="small muted">10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ إنشاء الحساب…' : (<><Icon name="lock" size={17} /> إنشاء الحساب</>)}</button>
+        <button className="btn block" type="submit" disabled={busy} style={{ background: '#ea580c', borderColor: '#ea580c', color: '#fff' }}>{busy ? 'جارٍ إنشاء الحساب…' : (<><Icon name="lock" size={17} /> إنشاء الحساب</>)}</button>
         <p className="small muted">
           لديك حساب؟ <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
         </p>
@@ -96,22 +98,24 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container narrow">
-      <SectionHead
-        kicker="Español بالعربي"
-        title="تسجيل الدخول"
-        desc="ادخل ببريدك وكلمة مرورك للوصول إلى لوحتك ومراجعتك."
-      />
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+      <div style={{ color: '#1e2a4a' }}>
+        <SectionHead
+          kicker="Español بالعربي"
+          title="تسجيل الدخول"
+          desc="ادخل ببريدك وكلمة مرورك للوصول إلى لوحتك ومراجعتك."
+        />
+      </div>
+      <form className="card stack" style={{ borderRadius: 24, padding: 'var(--s-5)', boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }} onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
           <span>البريد الإلكتروني</span>
-          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required style={{ borderRadius: 16, padding: '12px 14px' }} />
         </label>
         <label className="field">
           <span>كلمة المرور</span>
-          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required />
+          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required style={{ borderRadius: 16, padding: '12px 14px' }} />
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : (<><Icon name="lock" size={17} /> دخول</>)}</button>
+        <button className="btn block" type="submit" disabled={busy} style={{ background: '#ea580c', borderColor: '#ea580c', color: '#fff' }}>{busy ? 'جارٍ الدخول…' : (<><Icon name="lock" size={17} /> دخول</>)}</button>
         <p className="small muted">
           نسيت كلمة المرور؟ <strong>غير مفعّل حاليًا</strong> — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنه يعمل.
         </p>

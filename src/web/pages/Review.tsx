@@ -16,6 +16,7 @@ import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating }
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { Icon, ProgressBar } from '../components/ui';
+import { CartoonScene, cartoonForReviewCard } from '../components/Illustrations';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
@@ -299,6 +300,17 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         data-testid="review-card"
         aria-live="polite"
       >
+        {/* رأس كرتوني مطابق لموضوع البطاقة — من الحقول الظاهرة فقط، لا يلمّح للجواب */}
+        <div style={{ width: 150, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
+          <CartoonScene
+            cartoon={cartoonForReviewCard({
+              headwordEs: card.headwordEs,
+              promptAr: card.promptAr,
+              promptHintAr: card.promptHintAr ?? undefined,
+            })}
+            label="رسم يوضح موضوع بطاقة المراجعة"
+          />
+        </div>
         <p className="small muted" style={{ marginTop: 0 }}>
           {card.kind === 'production' ? 'أنتج الكلمة' : 'تعرّف على الكلمة'}
           {card.level ? ` · ${card.level}` : ''}

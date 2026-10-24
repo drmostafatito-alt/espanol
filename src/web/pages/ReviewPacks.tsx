@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { api, ApiError, type ReviewPack } from '../api';
 import { Icon, SectionHead, EmptyState } from '../components/ui';
+import { CartoonScene, cartoonForQuestion } from '../components/Illustrations';
 
 export function ReviewPacks({ navigate }: { navigate: (to: string) => void }) {
   const [packs, setPacks] = useState<ReviewPack[] | null>(null);
@@ -58,7 +59,9 @@ export function ReviewPacks({ navigate }: { navigate: (to: string) => void }) {
         {packs?.map(p => (
           <div className="card card-hover row" key={p.slug} style={{ justifyContent: 'space-between', alignItems: 'center' }}>
             <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start' }}>
-              <span style={{ color: 'var(--c-primary-strong)', marginTop: 2 }}><Icon name="book" size={22} /></span>
+              <div style={{ width: 56, flex: 'none' }}>
+                <CartoonScene cartoon={cartoonForQuestion({ titleAr: p.titleAr })} label={`رسم حزمة ${p.titleAr}`} />
+              </div>
               <div>
                 <strong>{p.titleAr}</strong>
                 <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>

@@ -68,9 +68,9 @@ export function Search({
 
   return (
     <div className="container" style={{ maxWidth: 840, paddingTop: 'var(--s-4)', paddingBottom: 'var(--s-5)' }}>
-      <div className="card" style={{ marginBottom: 'var(--s-3)' }}>
-        <span className="kicker">ابحث في المنهج</span>
-        <h1 style={{ margin: 'var(--s-1) 0', fontSize: '1.75rem' }}><Icon name="search" size={26} /> البحث الذكي في الإسبانية</h1>
+      <div className="card" style={{ marginBottom: 'var(--s-3)', borderRadius: 24, padding: 'var(--s-5)', boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }}>
+        <span className="kicker" style={{ background: '#fdeedd', color: '#9a3412' }}>ابحث في المنهج</span>
+        <h1 style={{ margin: 'var(--s-1) 0', fontSize: '2rem', color: '#1e2a4a' }}><Icon name="search" size={26} /> البحث الذكي في الإسبانية</h1>
         <p className="muted" style={{ margin: 'var(--s-1) 0 var(--s-3)' }}>
           ابحث عن كلمة إسبانية، أو معنى عربي فصيح أو مصري، أو قاعدة نحوية، أو تصريف فعل، أو موضوع درس.
         </p>
@@ -84,7 +84,7 @@ export function Search({
             value={query}
             onChange={e => setQuery(e.target.value)}
             autoFocus
-            style={{ fontSize: '1.1rem', padding: '10px 14px' }}
+            style={{ fontSize: '1.1rem', padding: '14px 16px', borderRadius: 16 }}
           />
         </div>
 
@@ -97,6 +97,7 @@ export function Search({
                 key={k}
                 type="button"
                 className={`btn sm ${kind === k ? 'primary' : 'ghost'}`}
+                style={kind === k ? { background: '#ea580c', borderColor: '#ea580c', color: '#fff' } : undefined}
                 onClick={() => setKind(k)}
               >
                 {k === 'all' ? 'الكل' : k === 'vocab' ? 'المفردات' : k === 'grammar' ? 'القواعد' : 'الدروس'}
@@ -113,6 +114,7 @@ export function Search({
                 key={l}
                 type="button"
                 className={`btn sm ${level === l ? 'primary' : 'ghost'}`}
+                style={level === l ? { background: '#ea580c', borderColor: '#ea580c', color: '#fff' } : undefined}
                 onClick={() => setLevel(l)}
               >
                 {l === 'all' ? 'الكل' : l}
@@ -123,7 +125,7 @@ export function Search({
       </div>
 
       {audioNotice && (
-        <p role="status" className="small" data-testid="search-audio-notice" style={{ color: 'var(--c-primary-strong)' }}>
+        <p role="status" className="small" data-testid="search-audio-notice" style={{ color: '#9a3412' }}>
           {audioNotice}
         </p>
       )}
@@ -132,7 +134,7 @@ export function Search({
 
       {/* رسالة الاقتراح الذكي عند عدم وجود نتائج مباشرة */}
       {response && response.suggestion && response.results.length === 0 && (
-        <div className="card" style={{ marginBottom: 'var(--s-3)', background: 'var(--c-surface-2)' }}>
+        <div className="card" style={{ marginBottom: 'var(--s-3)', background: 'var(--c-surface-2)', borderRadius: 24, boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }}>
           <p style={{ margin: 0 }}>
             لم نجد نتائج مطابقة تمامًا. هل تقصد:{' '}
             <button
@@ -158,7 +160,7 @@ export function Search({
           </div>
 
           {response.results.map(r => (
-            <div key={`${r.kind}-${r.id}`} className="card" style={{ marginBottom: 'var(--s-2)' }}>
+            <div key={`${r.kind}-${r.id}`} className="card card-hover" style={{ marginBottom: 'var(--s-2)', borderRadius: 24, padding: 'var(--s-5)', boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }}>
               <div className="row" style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div style={{ flex: 1 }}>
                   <div className="row" style={{ gap: 'var(--s-2)', alignItems: 'center' }}>
@@ -167,7 +169,7 @@ export function Search({
                     <span className="small muted">{r.matchReasonAr}</span>
                   </div>
 
-                  <h3 style={{ margin: 'var(--s-1) 0', fontSize: '1.25rem' }}>
+                  <h3 style={{ margin: 'var(--s-1) 0', fontSize: '1.35rem', color: '#1e2a4a' }}>
                     {r.titleEs ? <span className="es">{r.titleEs}</span> : null}
                     {r.titleEs && r.titleAr ? ' — ' : null}
                     {r.titleAr ? <span>{r.titleAr}</span> : null}
@@ -181,7 +183,7 @@ export function Search({
                   )}
 
                   {r.exampleEs && (
-                    <div style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)', background: 'var(--c-surface-2)', borderRadius: 6 }}>
+                    <div style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)', background: 'var(--c-surface-2)', borderRadius: 12 }}>
                       <p className="es" style={{ margin: 0, fontSize: '0.95rem' }}>
                         «{r.exampleEs}»
                       </p>
@@ -221,6 +223,7 @@ export function Search({
                     <button
                       type="button"
                       className="btn sm"
+                      style={{ background: '#ea580c', borderColor: '#ea580c', color: '#fff' }}
                       onClick={() => navigate(r.url)}
                     >
                       فتح الدرس
@@ -243,7 +246,7 @@ export function Search({
 
       {/* الحالة الافتراضية قبل إدخال استعلام */}
       {!query.trim() && (
-        <div className="card" style={{ textAlign: 'center', padding: 'var(--s-5) var(--s-3)' }}>
+        <div className="card" style={{ textAlign: 'center', padding: 'var(--s-5) var(--s-3)', borderRadius: 24, boxShadow: '0 12px 32px rgba(34, 29, 22, 0.08)' }}>
           <Icon name="search" size={32} label="ابدأ البحث" />
           <p className="muted" style={{ fontSize: '1.1rem', margin: 'var(--s-2) 0 0' }}>
             ابحث في معجم يضم أكثر من 8,000 مفردة و212 درسًا تفاعليًا وقواعد الإسبانية كاملة.

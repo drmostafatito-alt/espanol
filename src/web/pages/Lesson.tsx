@@ -4,7 +4,7 @@ import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { isSpeechRecognitionSupported, createSpeechRecognizer } from '../audio/speechRecognition';
 import { Icon, LevelBadge, ProgressBar } from '../components/ui';
-import { TopicScene, topicForLesson } from '../components/Illustrations';
+import { TopicScene, topicForLesson, CartoonScene, cartoonForQuestion } from '../components/Illustrations';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -181,6 +181,14 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   if (!current) return <p className="container muted">لا توجد تمارين في هذا الدرس.</p>;
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
+  // كرتون مطابق لموقف السؤال نفسه — لا عشوائية، ويتغير مع كل سؤال
+  const questionCartoon = cartoonForQuestion({
+    titleAr: session.lesson.titleAr,
+    instructionAr: current.instructionAr,
+    stemEs: current.stemEs ?? undefined,
+    stemAr: current.stemAr ?? undefined,
+    type: current.type,
+  });
 
   return (
     <div className="container lesson-shell">
@@ -218,6 +226,10 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           </div>
         </div>
         <h2 style={{ marginTop: 'var(--s-3)' }}>{current.instructionAr}</h2>
+        {/* رسم الموقف فوق السؤال — يتغير مع كل سؤال حسب موضوعه */}
+        <div style={{ width: 176, maxWidth: '100%', margin: 'var(--s-3) auto 0' }}>
+          <CartoonScene cartoon={questionCartoon} label={`رسم يوضح موقف السؤال: ${current.instructionAr}`} />
+        </div>
 
         <ExerciseBody
           exercise={current}
@@ -241,6 +253,12 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           </p>
         )}
 
+        {phase === 'feedback' && result && result.mode === 'graded' && result.correct && (
+          <div style={{ width: 190, maxWidth: '100%', margin: 'var(--s-3) auto 0' }}>
+            <CartoonScene cartoon="celebrate" label="احتفال بإجابة صحيحة" />
+          </div>
+        )}
+
         {phase === 'feedback' && result && (
           <div
             data-testid="lesson-feedback"
@@ -253,7 +271,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
               {result.mode === 'participation' ? (
                 <Icon name="info" size={20} label="معلومة" />
               ) : result.correct ? (
-                <Icon name="checkCircle" size={20} label="صحيح" />
+                <Icon name="checkCircle" size={36} label="صحيح" />
               ) : (
                 <Icon name="x" size={20} label="غير صحيح" />
               )}
@@ -660,6 +678,17 @@ function ResultScreen({
 
   return (
     <div className="card lesson-card" data-testid="lesson-result">
+      {/* كأس الإتمام عند النجاح — وكرتون مراجعة عند عدم الاجتياز؛ الأرقام كلها من الخادم كما هي */}
+      {completion && completion.passed && (
+        <div style={{ width: 190, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
+          <CartoonScene cartoon="trophy" label="كأس إتمام الدرس بنجاح" />
+        </div>
+      )}
+      {completion && !completion.passed && (
+        <div style={{ width: 170, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
+          <CartoonScene cartoon="study" label="طالب يراجع درسه للمحاولة التالية" />
+        </div>
+      )}
       <div className="row" style={{ alignItems: 'center', flexWrap: 'nowrap' }}>
         {completion && (
           <span

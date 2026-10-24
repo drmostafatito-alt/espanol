@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
 import { Icon, LevelBadge, ProgressBar } from '../components/ui';
-import { TopicScene } from '../components/Illustrations';
+import { TopicScene, CartoonScene, cartoonForQuestion } from '../components/Illustrations';
 
 interface Question {
   id: number;
@@ -235,6 +235,9 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
     return (
       <div className="container" style={{ maxWidth: 680 }}>
         <div className="card" style={{ textAlign: 'center' }}>
+          <div style={{ width: 190, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
+            <CartoonScene cartoon={result.passed ? 'trophy' : 'study'} label={result.passed ? 'كأس اجتياز اختبار تحديد المستوى' : 'طالب يراجع للمحاولة التالية'} />
+          </div>
           <Icon name={result.passed ? 'checkCircle' : 'book'} size={40} label={result.passed ? 'تم الاجتياز' : 'نتيجة الاختبار'} />
           <h1 style={{ marginBottom: 'var(--s-1)' }}>نتيجة اختبار تحديد المستوى</h1>
           <p className="lead" style={{ margin: 'var(--s-2) 0' }}>
@@ -303,6 +306,13 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
         </div>
 
         <h2 style={{ fontSize: '1.25rem', marginTop: 0 }}>{current.promptAr}</h2>
+        {/* رسم الموقف فوق السؤال — مطابق لموضوع سؤال التحديد نفسه */}
+        <div style={{ width: 168, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
+          <CartoonScene
+            cartoon={cartoonForQuestion({ instructionAr: current.promptAr, stemEs: current.stemEs })}
+            label={`رسم يوضح موقف السؤال: ${current.promptAr}`}
+          />
+        </div>
         {current.stemEs && (
           <p className="es" dir="ltr" style={{ fontSize: '1.2rem', fontWeight: 600, margin: 'var(--s-2) 0' }}>
             {current.stemEs}

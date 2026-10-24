@@ -54,14 +54,16 @@ function Shell() {
     page = <NotFound navigate={navigate} />;
   }
 
+  const showBottomNav = !!user && path === '/learn';
+
   return (
-    <div className="app">
+    <div className={`app${showBottomNav ? ' has-bottom-nav' : ''}`}>
       <a className="skip-link" href="#main">تخطَّ إلى المحتوى</a>
       <header className="topbar">
         <a className="brand" href="/" onClick={e => { e.preventDefault(); navigate(user ? '/learn' : '/'); }}>
-          <span className="brand-mark" aria-hidden="true">Ñ</span>
+          <span className="brand-mark" aria-hidden="true"><Icon name="sun" size={22} /></span>
           <span>
-            <span style={{ display: 'block', lineHeight: 1.25 }}>Español بالعربي</span>
+            <span style={{ display: 'block', lineHeight: 1.25 }}><span className="brand-name">Español</span> <span className="brand-name brand-ar">بالعربي</span></span>
             <span className="brand-sub">من الصفر حتى C1 · بالمواقف الحقيقية</span>
           </span>
         </a>
@@ -77,8 +79,8 @@ function Shell() {
           ) : (
             <>
               <a href="/transparency" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية</a>
-              <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>دخول</a>
-              <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>حساب جديد</a>
+              <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>تسجيل الدخول</a>
+              <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>ابدأ الآن</a>
             </>
           )}
         </nav>
@@ -86,13 +88,35 @@ function Shell() {
 
       <main id="main" style={{ flex: 1 }}>{page}</main>
 
+      {/* شريط تنقل سفلي للجوال — لوحة المتعلم فقط، وجهات موجودة أصلًا */}
+      {showBottomNav && (
+        <nav className="bottom-nav" aria-label="تنقل لوحة المتعلم">
+          <button className="bottom-nav-item active" onClick={() => navigate('/learn')}>
+            <span className="bottom-nav-icon"><Icon name="home" size={19} /></span>
+            الرئيسية
+          </button>
+          <button className="bottom-nav-item" onClick={() => navigate('/review')}>
+            <span className="bottom-nav-icon"><Icon name="target" size={19} /></span>
+            المراجعة
+          </button>
+          <button className="bottom-nav-item" onClick={() => navigate('/search')}>
+            <span className="bottom-nav-icon"><Icon name="search" size={19} /></span>
+            البحث
+          </button>
+          <button className="bottom-nav-item" onClick={() => navigate('/settings')}>
+            <span className="bottom-nav-icon"><Icon name="settings" size={19} /></span>
+            الإعدادات
+          </button>
+        </nav>
+      )}
+
       <footer className="footer">
         <div className="container">
           <div className="footer-grid">
             <div>
               <a className="brand" href="/" onClick={e => { e.preventDefault(); navigate(user ? '/learn' : '/'); }}>
-                <span className="brand-mark" aria-hidden="true">Ñ</span>
-                <span>Español بالعربي</span>
+                <span className="brand-mark" aria-hidden="true"><Icon name="sun" size={22} /></span>
+                <span><span className="brand-name">Español</span> <span className="brand-name brand-ar">بالعربي</span></span>
               </a>
               <p style={{ marginTop: 'var(--s-3)', maxWidth: '46ch' }}>
                 منصة عربية لتعلّم الإسبانية من التمهيد حتى C1 — بالمواقف الحقيقية،
