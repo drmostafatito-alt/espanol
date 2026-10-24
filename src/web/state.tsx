@@ -12,7 +12,10 @@ export function useRoute(): [string, (to: string) => void] {
   const navigate = useCallback((to: string) => {
     if (to === window.location.pathname) return;
     window.history.pushState({}, '', to);
-    setPath(to);
+    // المسار المطابَق هو pathname فقط: سلسلة الاستعلام (مثل ?level= في
+    // /learn?level=PREA1) تبقى في شريط العنوان لتقرأها الصفحة، ولا تدخل
+    // في مطابقة المسارات — وإلا سقطت على NotFound.
+    setPath(window.location.pathname);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }, []);
   return [path, navigate];
