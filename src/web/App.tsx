@@ -10,6 +10,7 @@ import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
 import { Search } from './pages/Search';
 import { Placement } from './pages/Placement';
+import { Icon } from './components/ui';
 
 function Shell() {
   const [path, navigate] = useRoute();
@@ -59,33 +60,66 @@ function Shell() {
       <header className="topbar">
         <a className="brand" href="/" onClick={e => { e.preventDefault(); navigate(user ? '/learn' : '/'); }}>
           <span className="brand-mark" aria-hidden="true">Ñ</span>
-          <span>Español بالعربي</span>
+          <span>
+            <span style={{ display: 'block', lineHeight: 1.25 }}>Español بالعربي</span>
+            <span className="brand-sub">من الصفر حتى C1 · بالمواقف الحقيقية</span>
+          </span>
         </a>
         <span className="spacer" />
-        <a href="/search" className="btn ghost sm" data-testid="nav-search" onClick={e => { e.preventDefault(); navigate('/search'); }}>🔍 بحث</a>
-        {user ? (
-          <>
-            <a href="/learn" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحتي</a>
-            <a href="/review" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/review'); }}>مراجعة</a>
-            <button className="btn secondary sm" onClick={() => void signOut()}>خروج</button>
-          </>
-        ) : (
-          <>
-            <a href="/transparency" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية</a>
-            <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>دخول</a>
-            <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>حساب جديد</a>
-          </>
-        )}
+        <nav className="nav-links" aria-label="التنقل الرئيسي">
+          <a href="/search" className="btn ghost sm" data-testid="nav-search" onClick={e => { e.preventDefault(); navigate('/search'); }}><Icon name="search" size={17} /> بحث</a>
+          {user ? (
+            <>
+              <a href="/learn" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحتي</a>
+              <a href="/review" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/review'); }}>مراجعة</a>
+              <button className="btn secondary sm" onClick={() => void signOut()}><Icon name="logout" size={16} /> خروج</button>
+            </>
+          ) : (
+            <>
+              <a href="/transparency" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية</a>
+              <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>دخول</a>
+              <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>حساب جديد</a>
+            </>
+          )}
+        </nav>
       </header>
 
       <main id="main" style={{ flex: 1 }}>{page}</main>
 
       <footer className="footer">
-        <div className="container row" style={{ justifyContent: 'space-between' }}>
-          <span>© {new Date().getFullYear()} Español بالعربي — نسخة تطوير.</span>
-          <span className="row">
-            <a href="/transparency" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>حدود المنصة</a>
-          </span>
+        <div className="container">
+          <div className="footer-grid">
+            <div>
+              <a className="brand" href="/" onClick={e => { e.preventDefault(); navigate(user ? '/learn' : '/'); }}>
+                <span className="brand-mark" aria-hidden="true">Ñ</span>
+                <span>Español بالعربي</span>
+              </a>
+              <p style={{ marginTop: 'var(--s-3)', maxWidth: '46ch' }}>
+                منصة عربية لتعلّم الإسبانية من التمهيد حتى C1 — بالمواقف الحقيقية،
+                والاستماع، والمراجعة المتباعدة.
+              </p>
+            </div>
+            <div>
+              <h4>التعلّم</h4>
+              <ul>
+                <li><a href="/learn" onClick={e => { e.preventDefault(); navigate('/learn'); }}>لوحة المتعلم</a></li>
+                <li><a href="/review" onClick={e => { e.preventDefault(); navigate('/review'); }}>المراجعة المتباعدة</a></li>
+                <li><a href="/search" onClick={e => { e.preventDefault(); navigate('/search'); }}>البحث في المحتوى</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>المنصة</h4>
+              <ul>
+                <li><a href="/transparency" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية والحدود</a></li>
+                <li><a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>تسجيل الدخول</a></li>
+                <li><a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>إنشاء حساب</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <span>© {new Date().getFullYear()} Español بالعربي</span>
+            <span>المحتوى يُراجع باستمرار؛ الحدود معلنة في صفحة الشفافية.</span>
+          </div>
         </div>
       </footer>
     </div>

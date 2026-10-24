@@ -7,11 +7,15 @@
    * إن انقطعت الشبكة لا نفقد التقييم: يُحفظ في قائمة انتظار محلية بمفتاح حدث
      ثابت، ويُعاد إرساله لاحقًا. الخادم يمنع التكرار بـclientEventId، فإعادة
      الإرسال آمنة تمامًا. لا نقول «تم الحفظ» قبل تأكيد الخادم.
-   * لا ادعاء لنطق أو استماع: لا بطاقات استماع قبل وجود صوت معتمد.
+   * لا ادعاء لملفات صوتية: زر «استمع» في البطاقة يستخدم نطق المتصفح
+     (speechSynthesis) عبر audioService نفسه المستعمل في الدروس، بمفتاح
+     tts-review-…، ولا يُنطق جواب بطاقة الإنتاج قبل كشفه.
    ========================================================================== */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating } from '../api';
 import { useAuth } from '../state';
+import { audioService } from '../audio/instance';
+import { Icon, ProgressBar } from '../components/ui';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
@@ -67,11 +71,40 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const [lastNext, setLastNext] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
+  const [audioNotice, setAudioNotice] = useState<string | null>(null);
   const shownAt = useRef<number>(Date.now());
   const cardRef = useRef<HTMLDivElement | null>(null);
 
   const cards = useMemo(() => payload?.cards ?? [], [payload]);
   const card: ReviewCard | undefined = cards[index];
+  const revealed = phase === 'revealed' || phase === 'saving';
+  // نص الاستماع: كلمة التعرّف نفسها، أو جواب بطاقة الإنتاج بعد كشفه فقط
+  // (نطقه قبل الكشف كان سيكشف الجواب سمعيًا).
+  const listenText = card
+    ? card.kind === 'production'
+      ? revealed ? card.revealEs : undefined
+      : card.headwordEs
+    : undefined;
+
+  const playListen = useCallback(() => {
+    if (!card || !listenText) return;
+    setAudioNotice(null);
+    void audioService
+      .play({ key: `tts-review-${card.id}`, text: listenText, variant: user?.audioVariant })
+      .then(res => {
+        if (res && res.ok === false) {
+          setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت على هذا المتصفح.');
+        }
+      })
+      .catch(() => setAudioNotice('تعذّر تشغيل الصوت على هذا المتصفح.'));
+  }, [card, listenText, user?.audioVariant]);
+
+  // إيقاف الصوت عند مغادرة المراجعة — لا صوت يعيش بعد الشاشة
+  useEffect(() => {
+    return () => {
+      audioService.stop();
+    };
+  }, []);
 
   const flushQueue = useCallback(async () => {
     const queued = readQueue();
@@ -126,6 +159,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   useEffect(() => {
     shownAt.current = Date.now();
+    setAudioNotice(null);
     cardRef.current?.focus();
   }, [index, phase === 'card']);
 
@@ -196,8 +230,9 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   if (phase === 'error') {
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card">
-          <h1 style={{ marginTop: 0 }}>تعذّر تحميل المراجعة</h1>
+        <div className="card" style={{ textAlign: 'center' }}>
+          <Icon name="warn" size={32} label="تعذّر تحميل المراجعة" />
+          <h1 style={{ marginTop: 'var(--s-2)' }}>تعذّر تحميل المراجعة</h1>
           <p role="alert">{error}</p>
           <div className="row">
             <button className="btn" onClick={() => void load()}>أعد المحاولة</button>
@@ -214,8 +249,9 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     const reason = payload?.emptyReason;
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card" data-testid="review-empty">
-          <h1 style={{ marginTop: 0 }}>لا بطاقات مستحقة الآن</h1>
+        <div className="card" data-testid="review-empty" style={{ textAlign: 'center' }}>
+          <Icon name="book" size={32} label="لا بطاقات مستحقة" />
+          <h1 style={{ marginTop: 'var(--s-2)' }}>لا بطاقات مستحقة الآن</h1>
           {reason === 'DAILY_LIMIT_REACHED' ? (
             <p>
               وصلت إلى حدّك اليومي ({session?.limits.newPerDay} بطاقة جديدة و{session?.limits.reviewsPerDay} مراجعة).
@@ -240,20 +276,19 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     );
   }
 
-  const revealed = phase === 'revealed' || phase === 'saving';
-
   return (
     <div className="container" style={{ maxWidth: 640 }}>
       <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>← خروج</button>
+        <button className="btn ghost sm" onClick={() => navigate('/learn')}><Icon name="arrowR" size={16} /> خروج</button>
         <span className="small muted num">
           {index + 1} / {cards.length} · متبقٍ اليوم: {session?.newRemaining ?? 0} جديد
         </span>
       </div>
+      <ProgressBar value={cards.length ? (index / cards.length) * 100 : 0} label="تقدم جلسة المراجعة" showPct={false} />
 
       {offline && (
         <p className="banner-warn small" role="status" data-testid="review-offline">
-          لا اتصال: تقييماتك تُحفظ على جهازك ({pendingCount}) وتُرسل عند عودة الشبكة.
+          <Icon name="warn" size={16} /> لا اتصال: تقييماتك تُحفظ على جهازك ({pendingCount}) وتُرسل عند عودة الشبكة.
         </p>
       )}
 
@@ -293,6 +328,19 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
               </div>
             )}
           </>
+        )}
+
+        {listenText && (
+          <div className="row" style={{ marginTop: 'var(--s-3)' }}>
+            <button type="button" className="btn secondary sm" data-testid="review-listen" onClick={playListen}>
+              <Icon name="listen" size={17} /> استمع
+            </button>
+            <span className="small muted">نطق المتصفح — لا ملف صوتي مسجّل</span>
+          </div>
+        )}
+
+        {audioNotice && (
+          <p role="status" className="small" data-testid="review-audio-notice">{audioNotice}</p>
         )}
 
         {!revealed && (

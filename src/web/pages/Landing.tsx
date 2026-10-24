@@ -1,73 +1,231 @@
+import { useEffect, useState } from 'react';
 import { AudioDemo } from '../components/AudioDemo';
+import { Icon, SectionHead } from '../components/ui';
+import { HeroScene, TopicScene, type TopicKey } from '../components/Illustrations';
+import { api } from '../api';
+import { useAuth } from '../state';
+
+interface TrackRow {
+  slug: string;
+  title_ar: string;
+  kind: string;
+  level_code: string | null;
+  units_count: number;
+  lessons_count: number;
+}
+
+const LEVELS: { code: string; title: string; desc: string }[] = [
+  { code: 'PREA1', title: 'التمهيد', desc: 'التحية والتعريف بالنفس والأرقام — أول خطواتك في اللغة.' },
+  { code: 'A1', title: 'المبتدئ', desc: 'جمل يومية كاملة: المقهى، المنزل، العائلة، والمواصلات.' },
+  { code: 'A2', title: 'الأساسي', desc: 'الماضي والحاضر والمستقبل في مواقف الحياة والعمل.' },
+  { code: 'B1', title: 'المتوسط', desc: 'التعبير عن الرأي، والرسائل المهنية، والمواقف المعقدة.' },
+  { code: 'B2', title: 'فوق المتوسط', desc: 'النقاش والتلخيص والكتابة المهنية بثقة أكبر.' },
+  { code: 'C1', title: 'المتقدم', desc: 'الطلاقة في النقاشات المتخصصة والنصوص المعمّقة.' },
+];
+
+const SITUATIONS: { topic: TopicKey; title: string; desc: string }[] = [
+  { topic: 'cafe', title: 'في المقهى والمطعم', desc: 'اطلب، واستفسر عن الأسعار، وتعامل مع النادل بثقة.' },
+  { topic: 'home', title: 'المنزل والحياة اليومية', desc: 'صف بيتك وروتينك وعائلتك بجمل طبيعية.' },
+  { topic: 'shopping', title: 'التسوق', desc: 'اسأل عن المقاسات والأسعار، وقارن بين الخيارات.' },
+  { topic: 'travel', title: 'السفر والفندق', desc: 'احجز، واسأل عن الاتجاهات، وحل مشكلات الرحلة.' },
+  { topic: 'work', title: 'العمل', desc: 'عرّف بنفسك مهنيًا، وراسل زملاءك، وناقش مهامك.' },
+  { topic: 'phone', title: 'المكالمات', desc: 'افتتح المكالمة، واطلب التحويل، ودوّن الرسائل.' },
+];
+
+const STEPS: { icon: 'cap' | 'target' | 'chat'; title: string; desc: string }[] = [
+  { icon: 'cap', title: 'أنشئ حسابك', desc: 'حساب واحد يحفظ تقدمك ونقاطك ومراجعاتك على الخادم.' },
+  { icon: 'target', title: 'حدّد مستواك أو ابدأ من الصفر', desc: 'اختبار تحديد مستوى من 10 أسئلة، أو ابدأ من التمهيد مباشرة.' },
+  { icon: 'chat', title: 'تعلّم بالمواقف', desc: 'درسًا بعد درس: استمع، وتحدّث، وراجع — والمنهج يفتح لك الخطوة التالية.' },
+];
 
 export function Landing({ navigate }: { navigate: (to: string) => void }) {
+  const { user } = useAuth();
+  const [tracks, setTracks] = useState<TrackRow[] | null>(null);
+
+  // مسارات حقيقية فقط من الخادم؛ إن تعذّر الوصول (زائر بلا صلاحية) تُخفى الأرقام
+  // ولا يُعرض أي مسار غير موجود.
+  useEffect(() => {
+    let alive = true;
+    api.paths()
+      .then(p => {
+        if (!alive) return;
+        setTracks(p.paths.filter(t => t.kind !== 'main'));
+      })
+      .catch(() => {
+        if (!alive) return;
+        setTracks([]);
+      });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const scrollToId = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="container">
-      <section className="hero">
-        <span className="badge primary">منصة تفاعلية متكاملة</span>
-        <h1>
-          تعلّم <span className="es">español</span> من الصفر… بالعربي وبالمواقف الحقيقية
-        </h1>
-        <p className="lead">
-          منصة عربية لتعلّم الإسبانية من التمهيد حتى C1: جمل حقيقية بدل حفظ القوائم، استماع وتحدّث،
-          مراجعة متباعدة، ومسار مهني كامل للكول سنتر.
-        </p>
-        <div className="row" style={{ marginTop: 'var(--s-4)' }}>
-          <button className="btn" onClick={() => navigate('/signup')}>أنشئ حسابك</button>
-          <button className="btn secondary" onClick={() => navigate('/login')}>لديّ حساب</button>
+      {/* البطل */}
+      <section className="hero-landing">
+        <div>
+          <span className="kicker">منصة عربية لتعلّم الإسبانية</span>
+          <h1>
+            تعلّم <span className="es" dir="ltr">español</span> من الصفر… بالعربي، ومن مواقف حقيقية
+          </h1>
+          <p className="lead">
+            من التمهيد حتى C1: جمل حقيقية بدل حفظ القوائم، استماع وتحدّث،
+            مراجعة متباعدة تثبّت الكلمات، ومسارات عملية للسفر وخدمة العملاء.
+          </p>
+          <div className="row" style={{ marginTop: 'var(--s-5)', gap: 'var(--s-3)' }}>
+            <button className="btn lg" onClick={() => navigate(user ? '/learn' : '/signup')}>
+              ابدأ رحلتك <Icon name="arrowL" size={19} />
+            </button>
+            <button className="btn secondary lg" onClick={() => scrollToId('levels')}>
+              استكشف المنهج
+            </button>
+          </div>
+          <p className="small muted" style={{ marginTop: 'var(--s-4)' }}>
+            لا شهادات معتمدة ولا وعود وظائف — ما نقدمه تعلّم منظّم بتصحيح فوري
+            وحفظ دقيق لتقدمك. التفاصيل في صفحة الشفافية.
+          </p>
+        </div>
+        <div className="illus-frame" aria-hidden="false">
+          <HeroScene />
         </div>
       </section>
 
-      <div className="grid cols-2" style={{ marginTop: 'var(--s-5)' }}>
-        <section className="card">
-          <h2>ميزات التعلّم على المنصة</h2>
-          <ul className="list-plain small">
-            <li>✅ مسار تعليمي متكامل يبدأ من الصفر (Pre-A1) ويتدرج حتى الطلاقة (C1).</li>
-            <li>✅ تمارين تطبيقية متنوعة: بناء جمل، خيارات سياقية، استماع، ونطق بميكروفون المتصفح.</li>
-            <li>✅ مراجعة ذكية متباعدة (SRS) تثبّت الكلمات في ذاكرتك طويلة المدى.</li>
-            <li>✅ مسارات مهنية وعملية: السفر والسياحة، وخدمة العملاء باللغة الإسبانية.</li>
-            <li>✅ تصحيح فوري على الخادم مع حفظ دقيق للتقدم والنقاط (XP).</li>
-          </ul>
-          <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
-            كل إنجاز ونقطة XP تُحفظ بدقة في حسابك فور اجتيازك التمارين بنجاح.
-          </p>
-        </section>
+      {/* كيف تبدأ */}
+      <section className="section">
+        <SectionHead kicker="ابدأ اليوم" title="كيف تبدأ التعلّم؟" desc="ثلاث خطوات تفصلك عن أول جملة إسبانية تنطقها بثقة." />
+        <div className="feature-grid">
+          {STEPS.map((s, i) => (
+            <article className="card card-hover" key={s.title}>
+              <div className="feature-item">
+                <span className="track-art" aria-hidden="true"><Icon name={s.icon} size={26} /></span>
+                <div>
+                  <span className="small muted num">خطوة {i + 1}</span>
+                  <h3 style={{ margin: '2px 0 var(--s-1)' }}>{s.title}</h3>
+                  <p className="small muted" style={{ margin: 0 }}>{s.desc}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <section className="card">
-          <h2>جرّب الصوت</h2>
-          <AudioDemo text="Quiero un café, por favor." audioKey="pending/a1-cafe-quiero-cafe-con-leche" />
-        </section>
-      </div>
+      {/* المستويات */}
+      <section className="section" id="levels">
+        <SectionHead kicker="رحلة منظمة" title="من التمهيد حتى C1" desc="ستة مستويات متدرجة، كل مستوى يفتح الذي بعده بإتقانك للسابق." />
+        <div className="level-strip">
+          {LEVELS.map(l => (
+            <article className="card card-hover level-card" key={l.code}>
+              <span className="level-code" dir="ltr">{l.code}</span>
+              <h3 style={{ margin: 'var(--s-2) 0 var(--s-1)' }}>{l.title}</h3>
+              <p className="small muted" style={{ margin: 0 }}>{l.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>لماذا طريقة مختلفة؟</h2>
+      {/* مواقف الحياة */}
+      <section className="section">
+        <SectionHead kicker="تعلّم بالسياق" title="تعلّم من مواقف الحياة اليومية" desc="كل درس يدور حول موقف حقيقي: ماذا تقول، وماذا تسمع، وماذا ترد." />
+        <div className="feature-grid">
+          {SITUATIONS.map(s => (
+            <article className="card card-hover" key={s.title}>
+              <div className="feature-item">
+                <span className="track-art" aria-hidden="true" style={{ width: 56, height: 56, padding: 6 }}>
+                  <TopicScene topic={s.topic} />
+                </span>
+                <div>
+                  <h3 style={{ margin: '0 0 var(--s-1)' }}>{s.title}</h3>
+                  <p className="small muted" style={{ margin: 0 }}>{s.desc}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* الاستماع والمهارات + جرّب الصوت */}
+      <section className="section">
         <div className="grid cols-2">
-          <div>
-            <h3>من الجملة لا من القائمة</h3>
-            <p className="small muted">
-              نتعلّم «أريد قهوة من فضلك» في موقف مقهى حقيقي، ثم نُفكّك التركيب. الكلمة تُختبر في سياق جديد
-              لا في نفس الجملة المحفوظة.
-            </p>
+          <article className="card">
+            <h2>الاستماع والكلمات والجمل والمحادثات</h2>
+            <ul className="list-plain small">
+              <li><Icon name="check" size={17} /> تمارين استماع واختيار، وبناء جمل، ومطابقة، وإكمال فراغ.</li>
+              <li><Icon name="check" size={17} /> نطق بميكروفون المتصفح للتدريب على التحدث.</li>
+              <li><Icon name="check" size={17} /> تصحيح فوري على الخادم مع شرح لكل إجابة.</li>
+              <li><Icon name="check" size={17} /> شرح بالفصحى مع توضيح مصري عند الحاجة — وأنت تختار الأسلوب.</li>
+            </ul>
+          </article>
+          <article className="card">
+            <h2>جرّب الصوت الآن</h2>
+            <p className="small muted">اضغط استمع لتسمع الجملة بنطق المتصفح — هكذا يعمل الصوت داخل الدروس.</p>
+            <AudioDemo text="Quiero un café, por favor." audioKey="pending/a1-cafe-quiero-cafe-con-leche" />
+          </article>
+        </div>
+      </section>
+
+      {/* المسارات المتخصصة — بيانات حقيقية فقط */}
+      {tracks !== null && tracks.length > 0 && (
+        <section className="section">
+          <SectionHead kicker="مسارات عملية" title="مسارات متخصصة" desc="مسارات تطبيقية بجانب المنهج الأساسي، بمحتواها ووحداتها الحقيقية." />
+          <div className="grid cols-2">
+            {tracks.map(t => (
+              <article className="card card-hover" key={t.slug}>
+                <div className="track-card">
+                  <span className="track-art" aria-hidden="true">
+                    <Icon name={t.slug === 'travel' ? 'plane' : t.slug === 'callcenter' ? 'headset' : 'book'} size={28} />
+                  </span>
+                  <div>
+                    <h3 style={{ margin: '0 0 var(--s-1)' }}>{t.title_ar}</h3>
+                    <p className="small muted" style={{ margin: 0 }}>
+                      <span className="num">{t.lessons_count}</span> درسًا · <span className="num">{t.units_count}</span> وحدة
+                      {t.level_code ? <> · <span className="badge sm">{t.level_code}</span></> : null}
+                    </p>
+                    <button className="btn secondary sm" style={{ marginTop: 'var(--s-3)' }} onClick={() => navigate(user ? '/learn' : '/signup')}>
+                      {user ? 'متابعة من لوحتي' : 'ابدأ من حسابك'}
+                    </button>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
-          <div>
-            <h3>عربي فصيح + توضيح مصري</h3>
-            <p className="small muted">
-              الشرح فصحى دقيق، ومع كل معنى ملاحظة مصرية قصيرة عند الحاجة — وتختار الأسلوب الذي يناسبك.
-            </p>
+        </section>
+      )}
+
+      {/* المراجعة والتقدم */}
+      <section className="section">
+        <div className="card card-green">
+          <div className="feature-item">
+            <span className="track-art" aria-hidden="true"><Icon name="target" size={26} /></span>
+            <div>
+              <h2 style={{ margin: '0 0 var(--s-1)' }}>طريقة المراجعة والتقدم</h2>
+              <p className="muted" style={{ margin: 0, maxWidth: '66ch' }}>
+                مفردات دروسك تدخل تلقائيًا في المراجعة المتباعدة: تتذكر قبل أن ترى الإجابة،
+                وتقيّم تذكّرك، فيحدد الخادم موعد المراجعة التالية. وكل XP تكسبه محفوظ في حسابك
+                بعد تحقق الخادم — لا نقاط وهمية.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>إسبانيا أولًا ثم البدائل</h3>
-            <p className="small muted">
-              الأساس إسبانية إسبانيا المعاصرة، مع تنبيه واضح للفروق المهمة في أمريكا اللاتينية
-              (<span className="es">zumo</span> / <span className="es">jugo</span>) دون إرباك المبتدئ.
-            </p>
-          </div>
-          <div>
-            <h3>لا وعود غير صحيحة</h3>
-            <p className="small muted">
-              لا شهادات معتمدة، ولا ضمان وظيفة، ولا «مجاني بلا حدود». الحدود والقيود معلنة في صفحة الشفافية.
-            </p>
-          </div>
+        </div>
+      </section>
+
+      {/* دعوة أخيرة */}
+      <section className="section" style={{ textAlign: 'center' }}>
+        <h2>أول جملة إسبانية لك أقرب مما تظن</h2>
+        <p className="lead" style={{ marginInline: 'auto' }}>
+          أنشئ حسابك وابدأ من التمهيد، أو حدّد مستواك إن كنت تعرف شيئًا من الإسبانية من قبل.
+        </p>
+        <div className="row" style={{ justifyContent: 'center', marginTop: 'var(--s-4)' }}>
+          <button className="btn lg" onClick={() => navigate(user ? '/learn' : '/signup')}>ابدأ رحلتك</button>
+          <button className="btn secondary lg" onClick={() => navigate('/login')}>لديّ حساب</button>
         </div>
       </section>
     </div>

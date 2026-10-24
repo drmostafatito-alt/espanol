@@ -3,6 +3,7 @@ import { api } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { searchEngine, type SearchResponse } from '../../shared/search-engine';
+import { Icon } from '../components/ui';
 
 export function Search({
   navigate,
@@ -68,7 +69,8 @@ export function Search({
   return (
     <div className="container" style={{ maxWidth: 840, paddingTop: 'var(--s-4)', paddingBottom: 'var(--s-5)' }}>
       <div className="card" style={{ marginBottom: 'var(--s-3)' }}>
-        <h1 style={{ marginTop: 0, fontSize: '1.75rem' }}>🔍 البحث الذكي في الإسبانية</h1>
+        <span className="kicker">ابحث في المنهج</span>
+        <h1 style={{ margin: 'var(--s-1) 0', fontSize: '1.75rem' }}><Icon name="search" size={26} /> البحث الذكي في الإسبانية</h1>
         <p className="muted" style={{ margin: 'var(--s-1) 0 var(--s-3)' }}>
           ابحث عن كلمة إسبانية، أو معنى عربي فصيح أو مصري، أو قاعدة نحوية، أو تصريف فعل، أو موضوع درس.
         </p>
@@ -121,7 +123,7 @@ export function Search({
       </div>
 
       {audioNotice && (
-        <p role="status" className="small" data-testid="search-audio-notice" style={{ color: 'var(--color-primary)' }}>
+        <p role="status" className="small" data-testid="search-audio-notice" style={{ color: 'var(--c-primary-strong)' }}>
           {audioNotice}
         </p>
       )}
@@ -130,13 +132,13 @@ export function Search({
 
       {/* رسالة الاقتراح الذكي عند عدم وجود نتائج مباشرة */}
       {response && response.suggestion && response.results.length === 0 && (
-        <div className="card" style={{ marginBottom: 'var(--s-3)', background: 'var(--surface-2, #fbfcfd)' }}>
+        <div className="card" style={{ marginBottom: 'var(--s-3)', background: 'var(--c-surface-2)' }}>
           <p style={{ margin: 0 }}>
             لم نجد نتائج مطابقة تمامًا. هل تقصد:{' '}
             <button
               type="button"
               className="btn ghost sm"
-              style={{ fontWeight: 600, color: 'var(--color-primary)' }}
+              style={{ fontWeight: 600, color: 'var(--c-primary-strong)' }}
               onClick={() => setQuery(response.suggestion!)}
             >
               «{response.suggestion}»؟
@@ -173,13 +175,13 @@ export function Search({
                   </h3>
 
                   {user?.explanationStyle !== 'fusha' && r.meaningArEg && r.meaningArEg !== r.meaningArFusha && (
-                    <p className="small" style={{ margin: 'var(--s-1) 0', color: 'var(--color-secondary, #555)' }}>
+                    <p className="small" style={{ margin: 'var(--s-1) 0', color: 'var(--c-text-muted)' }}>
                       <strong>بالمصرية:</strong> {r.meaningArEg}
                     </p>
                   )}
 
                   {r.exampleEs && (
-                    <div style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)', background: 'rgba(0,0,0,0.02)', borderRadius: 6 }}>
+                    <div style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)', background: 'var(--c-surface-2)', borderRadius: 6 }}>
                       <p className="es" style={{ margin: 0, fontSize: '0.95rem' }}>
                         «{r.exampleEs}»
                       </p>
@@ -209,9 +211,10 @@ export function Search({
                       type="button"
                       className="btn secondary sm"
                       title="استمع للنطق"
+                      aria-label="استمع للنطق"
                       onClick={() => playWordAudio(r.titleEs!, r.id)}
                     >
-                      🔊
+                      <Icon name="listen" size={17} />
                     </button>
                   )}
                   {r.kind === 'lesson' || r.kind === 'grammar' ? (
@@ -241,7 +244,8 @@ export function Search({
       {/* الحالة الافتراضية قبل إدخال استعلام */}
       {!query.trim() && (
         <div className="card" style={{ textAlign: 'center', padding: 'var(--s-5) var(--s-3)' }}>
-          <p className="muted" style={{ fontSize: '1.1rem', margin: 0 }}>
+          <Icon name="search" size={32} label="ابدأ البحث" />
+          <p className="muted" style={{ fontSize: '1.1rem', margin: 'var(--s-2) 0 0' }}>
             ابحث في معجم يضم أكثر من 8,000 مفردة و212 درسًا تفاعليًا وقواعد الإسبانية كاملة.
           </p>
           <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-3)', flexWrap: 'wrap' }}>

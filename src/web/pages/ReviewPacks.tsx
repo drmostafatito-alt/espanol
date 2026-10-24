@@ -1,6 +1,7 @@
 /* حزم المفردات: يعرض الحزم المتاحة ويبدأ بطاقات المراجعة لها */
 import { useEffect, useState } from 'react';
 import { api, ApiError, type ReviewPack } from '../api';
+import { Icon, SectionHead, EmptyState } from '../components/ui';
 
 export function ReviewPacks({ navigate }: { navigate: (to: string) => void }) {
   const [packs, setPacks] = useState<ReviewPack[] | null>(null);
@@ -36,27 +37,34 @@ export function ReviewPacks({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container" style={{ maxWidth: 720 }}>
-      <div className="row" style={{ justifyContent: 'space-between' }}>
-        <h1 style={{ marginTop: 0 }}>حزم المفردات</h1>
-        <button className="btn ghost sm" onClick={() => navigate('/review')}>← المراجعة</button>
-      </div>
-      <p className="small muted">
-        هذه حزم مفردات أساسية داخلية مرتبة للتدريس. لا نسمّيها «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة.
-      </p>
+      <SectionHead
+        kicker="المراجعة المتباعدة"
+        title="حزم المفردات"
+        desc="هذه حزم مفردات أساسية داخلية مرتبة للتدريس. لا نسمّيها «الأكثر شيوعًا» قبل اعتماد قائمة تكرار مرخَّصة."
+        action={<button className="btn ghost sm" onClick={() => navigate('/review')}><Icon name="arrowR" size={16} /> المراجعة</button>}
+      />
 
       {error && <p role="alert" className="error-text">{error}</p>}
       {message && <p role="status" className="banner-warn small">{message}</p>}
       {packs === null && <p className="muted">جارٍ التحميل…</p>}
-      {packs?.length === 0 && <p className="muted">لا توجد حزم مستوردة بعد.</p>}
+      {packs?.length === 0 && (
+        <EmptyState
+          title="لا توجد حزم مستوردة بعد"
+          desc="عندما تُستورد حزمة مفردات ستظهر هنا لتبدأ بطاقاتها في مراجعتك."
+        />
+      )}
 
       <div className="stack" style={{ marginTop: 'var(--s-3)' }}>
         {packs?.map(p => (
-          <div className="card row" key={p.slug} style={{ justifyContent: 'space-between' }}>
-            <div>
-              <strong>{p.titleAr}</strong>
-              <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
-                {p.entries} مدخلًا · {p.started>0 ? `${p.started} في مراجعتك` : 'لم تبدأ'} {p.level ? `· ${p.level}` : ''}
-              </p>
+          <div className="card card-hover row" key={p.slug} style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start' }}>
+              <span style={{ color: 'var(--c-primary-strong)', marginTop: 2 }}><Icon name="book" size={22} /></span>
+              <div>
+                <strong>{p.titleAr}</strong>
+                <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
+                  {p.entries} مدخلًا · {p.started>0 ? `${p.started} في مراجعتك` : 'لم تبدأ'} {p.level ? `· ${p.level}` : ''}
+                </p>
+              </div>
             </div>
             <button
               className="btn sm"

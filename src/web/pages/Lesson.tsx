@@ -3,6 +3,8 @@ import { api, ApiError, type AnswerResult, type CompleteResult, type LessonExerc
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { isSpeechRecognitionSupported, createSpeechRecognizer } from '../audio/speechRecognition';
+import { Icon, LevelBadge, ProgressBar } from '../components/ui';
+import { TopicScene, topicForLesson } from '../components/Illustrations';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -157,7 +159,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   if (phase === 'done') {
     return (
-      <div className="container" style={{ maxWidth: 720 }}>
+      <div className="container lesson-shell">
         <ResultScreen
           completion={completion}
           session={session}
@@ -181,40 +183,48 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
 
   return (
-    <div className="container" style={{ maxWidth: 720 }}>
+    <div className="container lesson-shell">
       {session.lesson.provenance && (
         <span className="sr-only" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', border: 0 }}>
           {session.lesson.provenance.warningAr}
         </span>
       )}
 
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>← خروج</button>
-        <span className="small muted num">
-          {index + 1} / {exercises.length}
+      <div className="lesson-topbar">
+        <button className="btn ghost" onClick={() => navigate('/learn')} type="button">
+          <Icon name="arrowR" size={20} label="رجوع" /> خروج
+        </button>
+        <span className="small muted">
+          سؤال <span className="num">{index + 1}</span> من <span className="num">{exercises.length}</span>
         </span>
       </div>
 
-      <div
-        className="progress-track"
-        role="progressbar"
-        aria-valuenow={progressPct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-label="تقدم الدرس"
-      >
-        <div className="progress-fill" style={{ width: `${progressPct}%` }} />
-      </div>
+      <ProgressBar value={progressPct} showPct={false} />
 
-      <div className="card" style={{ marginTop: 'var(--s-3)' }}>
-        <p className="small muted" style={{ marginTop: 0 }}>{session.lesson.titleAr}{session.lesson.level ? ` · ${session.lesson.level}` : ''}</p>
-        <h2 style={{ marginTop: 0 }}>{current.instructionAr}</h2>
+      <div className="card lesson-card" style={{ marginTop: 'var(--s-3)' }}>
+        <style>{`.lesson-topic-art svg{width:48px;height:48px;display:block}`}</style>
+        <div className="row" style={{ alignItems: 'flex-start', flexWrap: 'nowrap' }}>
+          <div className="lesson-topic-art" style={{ flex: 'none', width: 48, height: 48 }}>
+            <TopicScene topic={topicForLesson({ titleAr: session.lesson.titleAr })} label={`رسم موضوع درس ${session.lesson.titleAr}`} />
+          </div>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div className="row" style={{ gap: 'var(--s-2)' }}>
+              <p style={{ margin: 0, fontWeight: 800 }}>{session.lesson.titleAr}</p>
+              <LevelBadge level={session.lesson.level} size="sm" />
+            </div>
+            {session.lesson.objectiveAr && (
+              <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>{session.lesson.objectiveAr}</p>
+            )}
+          </div>
+        </div>
+        <h2 style={{ marginTop: 'var(--s-3)' }}>{current.instructionAr}</h2>
 
         <ExerciseBody
           exercise={current}
           answer={answer}
           setAnswer={setAnswer}
           disabled={phase === 'feedback'}
+          feedbackResult={phase === 'feedback' ? result : null}
           onPlayAudio={() => playAudio()}
           onReplayAudio={() => playAudio()}
           onToggleRate={toggleRate}
@@ -225,7 +235,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
         {audioNotice && (
           <p role="status" aria-live="polite" className="small" data-testid="audio-notice" style={{ marginTop: 'var(--s-2)' }}>
             {audioNotice}{' '}
-            <button type="button" className="btn ghost sm" onClick={() => setAudioNotice(null)}>
+            <button type="button" className="btn ghost" onClick={() => setAudioNotice(null)}>
               حسنًا، أكمل بدون صوت
             </button>
           </p>
@@ -239,12 +249,21 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
             aria-live="polite"
             style={{ marginTop: 'var(--s-3)' }}
           >
-            <strong>
-              {result.mode === 'participation'
-                ? 'تمرين مشاركة — لا يُصحَّح آليًا'
-                : result.correct
-                  ? 'إجابة صحيحة ✓'
-                  : 'إجابة غير صحيحة'}
+            <strong className="row" style={{ gap: 'var(--s-2)' }}>
+              {result.mode === 'participation' ? (
+                <Icon name="info" size={20} label="معلومة" />
+              ) : result.correct ? (
+                <Icon name="checkCircle" size={20} label="صحيح" />
+              ) : (
+                <Icon name="x" size={20} label="غير صحيح" />
+              )}
+              <span>
+                {result.mode === 'participation'
+                  ? 'تمرين مشاركة — لا يُصحَّح آليًا'
+                  : result.correct
+                    ? 'إجابة صحيحة'
+                    : 'إجابة غير صحيحة'}
+              </span>
             </strong>
             {result.feedbackAr && <p style={{ margin: 'var(--s-2) 0 0' }}>{result.feedbackAr}</p>}
             <p style={{ margin: 'var(--s-2) 0 0' }} className="small">{result.explanationAr}</p>
@@ -292,6 +311,7 @@ function ExerciseBody({
   answer,
   setAnswer,
   disabled,
+  feedbackResult,
   onPlayAudio,
   onReplayAudio,
   onToggleRate,
@@ -302,6 +322,8 @@ function ExerciseBody({
   answer: unknown;
   setAnswer: (v: unknown) => void;
   disabled: boolean;
+  /** نتيجة الخادم للعرض فقط — تُستخدم لتلوين الخيار المختار، ولا تغيّر النتيجة */
+  feedbackResult: AnswerResult | null;
   onPlayAudio: () => void;
   onReplayAudio: () => void;
   onToggleRate: () => void;
@@ -353,9 +375,16 @@ function ExerciseBody({
   };
 
   const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  /** تلوين الخيار المختار فقط في مرحلة التغذية الراجعة — نتيجة الخادم كما هي */
+  const choiceMark =
+    feedbackResult && feedbackResult.mode === 'graded' && typeof feedbackResult.correct === 'boolean'
+      ? feedbackResult.correct
+        ? 'correct'
+        : 'wrong'
+      : '';
   const playButton = hasAudio ? (
-    <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
-      🔊 استمع
+    <button className="btn secondary" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
+      <Icon name="listen" size={20} label="استمع" /> استمع
     </button>
   ) : null;
 
@@ -365,36 +394,42 @@ function ExerciseBody({
 
     return (
       <div>
-        {exercise.stemEs && <p className="es" style={{ fontSize: '1.2rem', fontWeight: 600 }}>{exercise.stemEs}</p>}
+        {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
 
         <div className="row" style={{ gap: 'var(--s-2)', marginTop: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
           {hasAudio && (
-            <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
-              🔊 استمع للنموذج
+            <button className="btn secondary" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
+              <Icon name="listen" size={20} label="استمع" /> استمع للنموذج
             </button>
           )}
           {hasAudio && (
-            <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
-              {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
+            <button className="btn ghost" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
+              <Icon name="play" size={20} label="سرعة التشغيل" />
+              {audioRate === 1.0 ? 'بطيء (0.75x)' : 'عادي (1.0x)'}
             </button>
           )}
           {isSpeech && recSupported && (
             <button
-              className={`btn sm ${isRecording ? 'error' : 'secondary'}`}
+              className={`btn ${isRecording ? 'danger' : 'secondary'}`}
               data-testid="speech-mic-btn"
               onClick={toggleRecording}
               type="button"
               disabled={disabled}
             >
-              {isRecording ? '⏹️ إيقاف الاستماع' : '🎙️ تحدّث الآن (ميكروفون المتصفح)'}
+              {isRecording ? (
+                <><Icon name="x" size={20} label="إيقاف" /> إيقاف الاستماع</>
+              ) : (
+                <><Icon name="mic" size={20} label="ميكروفون" /> تحدّث الآن (ميكروفون المتصفح)</>
+              )}
             </button>
           )}
         </div>
 
         {isRecording && (
-          <p role="status" aria-live="polite" className="small" style={{ color: 'var(--color-primary, #0066cc)', marginTop: 'var(--s-2)' }}>
-            🔴 جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
+          <p role="status" aria-live="polite" className="small row" style={{ color: 'var(--c-primary-strong)', marginTop: 'var(--s-2)' }}>
+            <span aria-hidden="true" style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--c-danger)', flex: 'none' }} />
+            جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
           </p>
         )}
 
@@ -404,8 +439,8 @@ function ExerciseBody({
               <strong>ما تعرّف عليه المتصفح:</strong> <span className="es">{speechTranscript}</span>
             </p>
             {exercise.stemEs && speechTranscript.trim().toLowerCase() === exercise.stemEs.trim().toLowerCase() && (
-              <p className="small" style={{ color: 'var(--color-success, #28a745)', margin: 'var(--s-1) 0 0' }}>
-                ✓ ممتاز! نطقك طابق الجملة تمامًا.
+              <p className="small row" style={{ color: 'var(--c-success)', margin: 'var(--s-1) 0 0' }}>
+                <Icon name="check" size={18} label="صحيح" /> ممتاز! نطقك طابق الجملة تمامًا.
               </p>
             )}
             <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
@@ -444,42 +479,44 @@ function ExerciseBody({
   if (exercise.type === 'listen_choose' && exercise.options.length) {
     return (
       <div>
-        <div className="card" style={{ background: 'var(--surface-2, #f4f6f8)', padding: 'var(--s-3)', borderRadius: 8, marginBottom: 'var(--s-3)' }}>
+        <div className="card" style={{ background: 'var(--c-surface-2)', padding: 'var(--s-3)', borderRadius: 8, marginBottom: 'var(--s-3)' }}>
           <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
             {playButton}
             {hasAudio && (
               <button
-                className="btn secondary sm"
+                className="btn secondary"
                 data-testid="lesson-audio-replay"
                 onClick={onReplayAudio}
                 type="button"
               >
-                🔁 إعادة الاستماع
+                <Icon name="replay" size={20} label="إعادة" /> إعادة الاستماع
               </button>
             )}
             {hasAudio && (
               <button
-                className="btn ghost sm"
+                className="btn ghost"
                 data-testid="lesson-audio-rate"
                 onClick={onToggleRate}
                 type="button"
               >
-                {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
+                <Icon name="play" size={20} label="سرعة التشغيل" />
+                {audioRate === 1.0 ? 'بطيء (0.75x)' : 'عادي (1.0x)'}
               </button>
             )}
             {exercise.stemEs && (
               <button
-                className="btn ghost sm"
+                className="btn ghost"
                 data-testid="toggle-transcript"
                 onClick={() => setShowTranscript(v => !v)}
                 type="button"
               >
-                {showTranscript ? '👁️ إخفاء النص' : '👁️ إظهار النص المكتوب'}
+                <Icon name={showTranscript ? 'eyeOff' : 'eye'} size={20} label={showTranscript ? 'إخفاء النص' : 'إظهار النص'} />
+                {showTranscript ? 'إخفاء النص' : 'إظهار النص المكتوب'}
               </button>
             )}
           </div>
           {(showTranscript || audioNotice) && exercise.stemEs && (
-            <p className="es" style={{ fontSize: '1.15rem', marginTop: 'var(--s-2)', marginBottom: 0 }}>
+            <p className="es-block exercise-stem" style={{ marginTop: 'var(--s-2)', marginBottom: 0 }}>
               {exercise.stemEs}
             </p>
           )}
@@ -492,7 +529,7 @@ function ExerciseBody({
 
         <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
           {exercise.options.map(opt => (
-            <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
+            <label key={opt.id} className={`choice ${answer === opt.id ? `selected ${choiceMark}` : ''}`}>
               <input
                 type="radio"
                 name={`q-${exercise.id}`}
@@ -512,12 +549,12 @@ function ExerciseBody({
   if (exercise.options.length) {
     return (
       <div>
-        {exercise.stemEs && <p className="es" style={{ fontSize: '1.15rem' }}>{exercise.stemEs}</p>}
+        {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
         {playButton}
         <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
           {exercise.options.map(opt => (
-            <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
+            <label key={opt.id} className={`choice ${answer === opt.id ? `selected ${choiceMark}` : ''}`}>
               <input
                 type="radio"
                 name={`q-${exercise.id}`}
@@ -555,6 +592,7 @@ function ExerciseBody({
               key={`${id}-${i}`}
               type="button"
               className="token"
+              style={{ minHeight: 44 }}
               disabled={disabled}
               onClick={() => place(tokens.filter((_, idx) => idx !== i))}
             >
@@ -569,6 +607,7 @@ function ExerciseBody({
               key={item.id}
               type="button"
               className="token ghost"
+              style={{ minHeight: 44 }}
               disabled={disabled}
               onClick={() => place([...tokens, item.id])}
             >
@@ -582,7 +621,7 @@ function ExerciseBody({
 
   return (
     <div>
-      {exercise.stemEs && <p className="es" style={{ fontSize: '1.15rem' }}>{exercise.stemEs}</p>}
+      {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
       {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
       {playButton}
       <label className="field" style={{ marginTop: 'var(--s-3)' }}>
@@ -620,23 +659,46 @@ function ResultScreen({
   const participation = Object.values(results).filter(v => v === null).length;
 
   return (
-    <div className="card" data-testid="lesson-result">
-      <h1 style={{ marginTop: 0 }}>انتهى الدرس</h1>
-      {!completion && <p className="muted">جارٍ حساب النتيجة على الخادم…</p>}
+    <div className="card lesson-card" data-testid="lesson-result">
+      <div className="row" style={{ alignItems: 'center', flexWrap: 'nowrap' }}>
+        {completion && (
+          <span
+            aria-hidden="true"
+            style={{
+              flex: 'none', width: 56, height: 56, borderRadius: '50%', display: 'grid', placeItems: 'center',
+              background: completion.passed ? 'var(--c-primary-soft)' : 'var(--c-gold-soft)',
+              color: completion.passed ? 'var(--c-primary-strong)' : 'var(--c-gold-deep)',
+            }}
+          >
+            <Icon name={completion.passed ? 'checkCircle' : 'warn'} size={28} />
+          </span>
+        )}
+        <div style={{ minWidth: 0 }}>
+          <h1 style={{ margin: 0 }}>انتهى الدرس</h1>
+          <p className="small muted" style={{ margin: 0 }}>{session.lesson.titleAr}</p>
+        </div>
+      </div>
+      {!completion && <p className="muted" style={{ marginTop: 'var(--s-3)' }}>جارٍ حساب النتيجة على الخادم…</p>}
       {completion && (
         <>
           <div className="stat-row" style={{ marginTop: 'var(--s-3)' }}>
             <div className="stat"><b className="num">{completion.accuracy}%</b><span>الدقة</span></div>
             <div className="stat"><b className="num">{completion.correctCount}/{completion.gradedTotal}</b><span>إجابات صحيحة</span></div>
-            <div className="stat"><b className="num">{completion.xpTotal}</b><span>إجمالي XP</span></div>
+            <div className="stat"><b className="num">{completion.xpAwarded} XP</b><span>XP هذا الدرس</span></div>
+            <div className="stat"><b className="num">{completion.xpTotal} XP</b><span>إجمالي XP</span></div>
           </div>
 
-          <p style={{ marginTop: 'var(--s-3)' }}>
-            {completion.passed
-              ? completion.alreadyCompleted
-                ? 'أتممت هذا الدرس سابقًا — لا تُمنح نقاط إضافية عند الإعادة.'
-                : `أتممت الدرس بنجاح${completion.xpAwarded ? ` وكسبت ${completion.xpAwarded} XP` : ''}.`
-              : `لم تُحقق حد الإتقان (${completion.minAccuracy}%). أعد المحاولة — التقدم محفوظ على الخادم.`}
+          <div className={`feedback ${completion.passed ? 'ok' : 'bad'}`} role="status" style={{ marginTop: 'var(--s-3)' }}>
+            <p style={{ margin: 0, fontWeight: 700 }}>
+              {completion.passed
+                ? completion.alreadyCompleted
+                  ? 'أتممت هذا الدرس سابقًا — لا تُمنح نقاط إضافية عند الإعادة.'
+                  : `أتممت الدرس بنجاح${completion.xpAwarded ? ` وكسبت ${completion.xpAwarded} XP` : ''}.`
+                : `لم تُحقق حد الإتقان (${completion.minAccuracy}%). أعد المحاولة — التقدم محفوظ على الخادم.`}
+            </p>
+          </div>
+          <p className="small muted" style={{ marginTop: 'var(--s-2)' }}>
+            يمكنك إعادة الدرس للمراجعة من الزر أدناه.
           </p>
 
           {participation > 0 && (

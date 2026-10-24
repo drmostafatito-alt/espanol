@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem } from '../api';
 import { useAuth } from '../state';
 import { AudioDemo } from '../components/AudioDemo';
+import { Icon, LevelBadge, ProgressBar, SectionHead, EmptyState, XpChip, GemChip } from '../components/ui';
+import { TopicScene, topicForLesson } from '../components/Illustrations';
 
 interface PathRow {
   slug: string;
@@ -12,6 +14,20 @@ interface PathRow {
   lessons_count: number;
 }
 
+const TABS = [
+  { id: 'ALL', label: 'الكل' },
+  { id: 'PREA1', label: 'التمهيد Pre-A1' },
+  { id: 'A1', label: 'مستوى A1' },
+  { id: 'A2', label: 'مستوى A2' },
+  { id: 'B1', label: 'مستوى B1' },
+  { id: 'B2', label: 'مستوى B2' },
+  { id: 'C1', label: 'مستوى C1' },
+  { id: 'travel', label: 'مسار السفر' },
+  { id: 'callcenter', label: 'الكول سنتر' },
+] as const;
+
+const VALID_TABS: readonly string[] = TABS.map(t => t.id);
+
 export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const { user, signOut } = useAuth();
   const [paths, setPaths] = useState<PathRow[] | null>(null);
@@ -19,6 +35,19 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [review, setReview] = useState<ReviewPayload | null>(null);
   const [selectedTab, setSelectedTab] = useState<string>('ALL');
+
+  // دعم رابط «ابدأ من التمهيد» من صفحة تحديد المستوى: ?level=PREA1 مثلًا.
+  // يُقبل التبويب فقط إن كان من القيم الصحيحة، وإلا يُتجاهل تمامًا.
+  useEffect(() => {
+    const raw = new URLSearchParams(window.location.search).get('level');
+    if (!raw) return;
+    if (VALID_TABS.includes(raw)) {
+      setSelectedTab(raw);
+      return;
+    }
+    const upper = raw.toUpperCase();
+    if (VALID_TABS.includes(upper)) setSelectedTab(upper);
+  }, []);
 
   useEffect(() => {
     let alive = true;
@@ -85,19 +114,32 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   }
 
   const nextLesson = progress?.nextLesson;
+  const nextLessonMatch = nextLesson ? lessons.find(l => l.slug === nextLesson.slug) : undefined;
+  const nextTopic = nextLesson
+    ? topicForLesson({
+        titleAr: nextLesson.title_ar,
+        unitTitleAr: nextLesson.unit_title_ar,
+        programTitleAr: nextLesson.program_title_ar ?? nextLessonMatch?.program_title_ar,
+        programSlug: nextLessonMatch?.program_slug,
+      })
+    : 'default';
 
   return (
     <div className="container">
       <header className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
         <div>
-          <h1 style={{ marginBottom: 4 }}>أهلًا{user.displayName ? ` يا ${user.displayName}` : ''} 👋</h1>
+          <h1 style={{ marginBottom: 4 }}>أهلًا{user.displayName ? ` يا ${user.displayName}` : ''}</h1>
           <p className="muted small" style={{ margin: 0 }}>
             أسلوب الشرح: <strong>{style}</strong> · الهدف اليومي: <span className="num">{user.dailyGoalMinutes}</span> دقيقة
           </p>
         </div>
         <div className="row">
-          <button className="btn secondary sm" onClick={() => navigate('/settings')}>الإعدادات</button>
-          <button className="btn ghost sm" onClick={() => void signOut().then(() => navigate('/'))}>خروج</button>
+          <button className="btn secondary sm" onClick={() => navigate('/settings')}>
+            <Icon name="settings" size={17} /> الإعدادات
+          </button>
+          <button className="btn ghost sm" onClick={() => void signOut().then(() => navigate('/'))}>
+            <Icon name="logout" size={17} /> خروج
+          </button>
         </div>
       </header>
 
@@ -105,54 +147,45 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {/* بطاقة خطوتك التالية */}
       {nextLesson && (
-        <section
-          className="card"
-          data-testid="next-step-hero"
-          style={{
-            marginBottom: 'var(--s-4)',
-            border: '2px solid var(--color-primary, #0066cc)',
-            background: 'var(--surface-hover, #f0f7ff)',
-            borderRadius: 12,
-            padding: 'var(--s-3) var(--s-4)',
-          }}
-        >
-          <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--s-3)' }}>
-            <div>
-              <span className="badge primary" style={{ marginBottom: 6 }}>🎯 خطوتك التالية في المسار</span>
-              <h2 style={{ margin: '4px 0 6px', fontSize: '1.3rem' }}>{nextLesson.title_ar}</h2>
-              <p className="small muted" style={{ margin: 0 }}>
-                {nextLesson.level_code ? <span className="badge sm">{nextLesson.level_code}</span> : null}{' '}
-                {nextLesson.unit_title_ar ? <span>· {nextLesson.unit_title_ar}</span> : null}
-              </p>
+        <section className="card card-green" data-testid="next-step-hero" style={{ marginBottom: 'var(--s-4)' }}>
+          <div className="track-card" style={{ alignItems: 'center' }}>
+            <div style={{ width: 96, flex: 'none' }}>
+              <TopicScene topic={nextTopic} label={`رسم موضوع درس ${nextLesson.title_ar}`} />
             </div>
-            <button
-              className="btn"
-              data-testid="next-lesson-btn"
-              onClick={() => navigate(`/learn/${nextLesson.slug}`)}
-              style={{ padding: 'var(--s-2) var(--s-4)', fontSize: '1.05rem', fontWeight: 600 }}
-            >
-              ▶️ ابدأ الدرس الآن
-            </button>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <span className="kicker">خطوتك التالية في المسار</span>
+              <h2 style={{ margin: '4px 0 6px', fontSize: '1.3rem' }}>{nextLesson.title_ar}</h2>
+              <p className="small muted" style={{ margin: 0, display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
+                <LevelBadge level={nextLesson.level_code} size="sm" />
+                {nextLesson.unit_title_ar ? <span>{nextLesson.unit_title_ar}</span> : null}
+                {nextLesson.program_title_ar ? <span>{nextLesson.program_title_ar}</span> : null}
+              </p>
+              <div style={{ marginTop: 'var(--s-3)' }}>
+                <button
+                  className="btn"
+                  data-testid="next-lesson-btn"
+                  onClick={() => navigate(`/learn/${nextLesson.slug}`)}
+                >
+                  <Icon name="play" size={18} /> ابدأ الدرس الآن
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       )}
 
       {/* دعوة اختبار تحديد المستوى للمتعلمين الجدد */}
       {progress && completedLessons < 5 && (
-        <section
-          className="card"
-          data-testid="placement-cta"
-          style={{ marginBottom: 'var(--s-4)', background: 'var(--surface-2, #f9fafb)', borderRadius: 10 }}
-        >
+        <section className="card card-gold" data-testid="placement-cta" style={{ marginBottom: 'var(--s-4)' }}>
           <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
             <div>
-              <h3 style={{ margin: '0 0 4px', fontSize: '1.1rem' }}>هل لديك معرفة سابقة بالإسبانية؟ 🎓</h3>
+              <h3 style={{ margin: '0 0 4px', fontSize: '1.1rem' }}>هل لديك معرفة سابقة بالإسبانية؟</h3>
               <p className="small muted" style={{ margin: 0 }}>
                 خُض اختبار تحديد المستوى السريع (10 أسئلة) لتخطي الأساسيات والبدء مباشرة من مستواك المناسب مع كسب نقاط XP!
               </p>
             </div>
             <button className="btn secondary sm" onClick={() => navigate('/placement')}>
-              🎯 ابدأ تحديد المستوى
+              <Icon name="target" size={17} /> ابدأ تحديد المستوى
             </button>
           </div>
         </section>
@@ -160,32 +193,37 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {/* قسم المراجعة المتباعدة */}
       <section className="card" style={{ marginBottom: 'var(--s-4)' }} data-testid="review-cta">
-        <div className="row" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
-          <div>
-            <h2 style={{ marginTop: 0, marginBottom: 4 }}>المراجعة المتباعدة الذكية</h2>
-            <p className="small muted" style={{ margin: 0 }}>
-              {review === null
-                ? 'جارٍ حساب ما هو مستحق…'
-                : review.session.totalCards === 0
-                  ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
-                  : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
-            </p>
-          </div>
-          <div className="row">
-            <button className="btn" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
-            <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
-          </div>
-        </div>
+        <SectionHead
+          kicker="مراجعة"
+          title="المراجعة المتباعدة الذكية"
+          desc={
+            review === null
+              ? 'جارٍ حساب ما هو مستحق…'
+              : review.session.totalCards === 0
+                ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
+                : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`
+          }
+          action={(
+            <div className="row">
+              <button className="btn" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
+              <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
+            </div>
+          )}
+        />
       </section>
 
       {/* الإحصاءات والصوت */}
       <div className="grid cols-2">
         <section className="card">
-          <h2>حالة تعلّمك</h2>
+          <SectionHead title="حالة تعلّمك" />
           {progress === null ? (
             <p className="muted small">جارٍ التحميل من الخادم…</p>
           ) : (
             <>
+              <div className="row" style={{ gap: 'var(--s-2)', marginBottom: 'var(--s-3)' }}>
+                <XpChip xp={progress.stats.xp_total} />
+                <GemChip gems={gemsCount} />
+              </div>
               <div className="stat-row">
                 <div className="stat" data-testid="stat-lessons">
                   <b className="num">{progress.totals.lessons_completed}/{progress.totals.lessons_total}</b>
@@ -200,7 +238,9 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                   <span>أيام متتابعة</span>
                 </div>
                 <div className="stat" data-testid="stat-gems">
-                  <b className="num" style={{ color: 'var(--color-primary, #0066cc)' }}>💎 {gemsCount}</b>
+                  <b className="num" style={{ display: 'flex', alignItems: 'center', gap: 'var(--s-1)' }}>
+                    <Icon name="gem" size={20} /> {gemsCount}
+                  </b>
                   <span>جواهر</span>
                 </div>
               </div>
@@ -223,47 +263,26 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {/* خريطة المنهج والدروس */}
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--s-3)' }}>
-          <div>
-            <h2 style={{ margin: 0 }}>خريطة المنهج والدروس</h2>
-            <p className="small muted" style={{ margin: '4px 0 0' }}>
-              رحلة تعليمية منظمة خطوة بخطوة من التمهيد وحتى الإتقان
-            </p>
-          </div>
-          <span className="small muted num">
-            {filteredLessons.length} درسًا معروضًا
-          </span>
-        </div>
+        <SectionHead
+          kicker="رحلتك"
+          title="خريطة المنهج والدروس"
+          desc="رحلة تعليمية منظمة خطوة بخطوة من التمهيد وحتى الإتقان"
+          action={<span className="small muted num">{filteredLessons.length} درسًا معروضًا</span>}
+        />
 
-        {/* أزرار تصفية المستويات */}
+        {/* شرائح تصفية المستويات */}
         <div
-          className="row"
-          style={{
-            gap: 'var(--s-1)',
-            overflowX: 'auto',
-            paddingBottom: 'var(--s-2)',
-            marginBottom: 'var(--s-3)',
-            borderBottom: '1px solid var(--border)',
-          }}
+          className="chip-row"
+          style={{ marginBottom: 'var(--s-3)', paddingBottom: 'var(--s-2)', borderBottom: '1px solid var(--c-border)' }}
           role="tablist"
           aria-label="تصفية حسب المستوى"
         >
-          {[
-            { id: 'ALL', label: 'الكل' },
-            { id: 'PREA1', label: 'التمهيد Pre-A1' },
-            { id: 'A1', label: 'مستوى A1' },
-            { id: 'A2', label: 'مستوى A2' },
-            { id: 'B1', label: 'مستوى B1' },
-            { id: 'B2', label: 'مستوى B2' },
-            { id: 'C1', label: 'مستوى C1' },
-            { id: 'travel', label: 'مسار السفر' },
-            { id: 'callcenter', label: 'الكول سنتر' },
-          ].map(tab => (
+          {TABS.map(tab => (
             <button
               key={tab.id}
               role="tab"
               aria-selected={selectedTab === tab.id}
-              className={`btn sm ${selectedTab === tab.id ? '' : 'ghost'}`}
+              className="chip"
               onClick={() => setSelectedTab(tab.id)}
               style={{ whiteSpace: 'nowrap' }}
             >
@@ -274,99 +293,77 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
         {progress === null && <p className="muted small">جارٍ تحميل الدروس…</p>}
         {progress && filteredLessons.length === 0 && (
-          <p className="muted small">لا توجد دروس في هذا القسم حاليًا.</p>
+          <EmptyState title="لا توجد دروس في هذا القسم حاليًا." desc="جرّب تبويبًا آخر من شرائح التصفية أعلاه لعرض دروس مختلفة." />
         )}
 
         {/* عرض الوحدات المقسمة */}
         {unitGroups.map(group => {
           const unitPct = group.lessons.length > 0 ? Math.round((group.completedCount / group.lessons.length) * 100) : 0;
           return (
-            <div
-              key={group.unitId}
-              style={{
-                marginBottom: 'var(--s-4)',
-                border: '1px solid var(--border)',
-                borderRadius: 8,
-                padding: 'var(--s-3)',
-                background: 'var(--surface-1, #fff)',
-              }}
-            >
-              <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--s-2)' }}>
+            <div className="unit-card" key={group.unitId}>
+              <div className="unit-head">
                 <div>
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>{group.unitTitle}</h3>
-                  <span className="small muted">
-                    {group.levelCode ? <span className="badge sm">{group.levelCode}</span> : null}
-                    {group.programTitle ? <span style={{ marginRight: 6 }}>{group.programTitle}</span> : null}
+                  <h3>{group.unitTitle}</h3>
+                  <span className="small muted" style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap', marginTop: 4 }}>
+                    <LevelBadge level={group.levelCode} size="sm" />
+                    {group.programTitle ? <span>{group.programTitle}</span> : null}
                   </span>
                 </div>
-                <div style={{ textAlign: 'left' }}>
-                  <span className="small muted num">
-                    {group.completedCount}/{group.lessons.length} مكتمل ({unitPct}%)
-                  </span>
-                </div>
+                <span className="small muted num">
+                  {group.completedCount}/{group.lessons.length} مكتمل ({unitPct}%)
+                </span>
               </div>
 
-              {/* شريط تقدم الوحدة */}
-              <div
-                className="progress-track"
-                style={{ height: 6, marginBottom: 'var(--s-3)' }}
-                role="progressbar"
-                aria-valuenow={unitPct}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              >
-                <div className="progress-fill" style={{ width: `${unitPct}%` }} />
+              <div style={{ marginBottom: 'var(--s-3)' }}>
+                <ProgressBar value={unitPct} showPct={false} />
               </div>
 
-              {/* قائمة دروس الوحدة */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-2)' }}>
-                {group.lessons.map(l => {
+              {/* دروس الوحدة كصفوف مسار */}
+              <div className="journey">
+                {group.lessons.map((l, idx) => {
                   const done = l.progress_status === 'completed';
                   const inProgress = l.progress_status === 'in_progress';
                   const isLocked = l.is_unlocked === false;
+                  const nodeClass = done ? 'done' : inProgress ? 'current' : isLocked ? 'locked' : '';
 
                   return (
-                    <div
-                      className="lesson-row"
-                      key={l.slug}
-                      style={{
-                        opacity: isLocked ? 0.75 : 1,
-                        background: done ? 'var(--surface-2, #fbfcfd)' : 'transparent',
-                        padding: 'var(--s-2) var(--s-3)',
-                        borderRadius: 6,
-                        border: '1px solid var(--border)',
-                      }}
-                    >
-                      <div>
-                        <div>
-                          <strong>{l.title_ar}</strong>{' '}
-                          {l.level_code && <span className="badge sm">{l.level_code}</span>}{' '}
-                          {done && <span className="badge primary sm">✓ مكتمل {l.best_accuracy}%</span>}
-                          {inProgress && <span className="badge accent sm">⏳ قيد الحل</span>}
-                        </div>
-                        <div className="small muted" style={{ marginTop: 4 }}>
-                          {isLocked
-                            ? '🔒 مقفل — يتطلب إتمام الدرس السابق أولاً.'
-                            : done
-                              ? 'أعد الحل لتحسين الدقة ومراجعة المفاهيم — لا نقاط إضافية عند الإعادة.'
-                              : inProgress
-                                ? 'بدأت هذا الدرس ولم تُكمله بعد.'
-                                : 'متاح للبدء الآن.'}
+                    <div className={`journey-node ${nodeClass}`} key={l.slug}>
+                      <div className="journey-dot">
+                        {done ? <Icon name="check" size={20} /> : isLocked ? <Icon name="lock" size={20} /> : inProgress ? <Icon name="play" size={18} /> : <span className="num">{idx + 1}</span>}
+                      </div>
+                      <div className="journey-body">
+                        <div className="row" style={{ justifyContent: 'space-between', alignItems: 'flex-start', gap: 'var(--s-2)' }}>
+                          <div style={{ minWidth: 0 }}>
+                            <h4>{l.title_ar}</h4>
+                            <div style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap', marginTop: 2 }}>
+                              <LevelBadge level={l.level_code} size="sm" />
+                              {done && <span className="badge primary sm">مكتمل {l.best_accuracy}%</span>}
+                              {inProgress && <span className="badge gold sm">قيد الحل</span>}
+                            </div>
+                            <p className="small muted" style={{ margin: '4px 0 0' }}>
+                              {isLocked
+                                ? 'مقفل — يتطلب إتمام الدرس السابق أولاً.'
+                                : done
+                                  ? 'أعد الحل لتحسين الدقة ومراجعة المفاهيم — لا نقاط إضافية عند الإعادة.'
+                                  : inProgress
+                                    ? 'بدأت هذا الدرس ولم تُكمله بعد.'
+                                    : 'متاح للبدء الآن.'}
+                            </p>
+                          </div>
+                          {isLocked ? (
+                            <button className="btn sm ghost" disabled title="هذا الدرس مقفل حتى إتمام المتطلبات">
+                              <Icon name="lock" size={16} /> مقفل
+                            </button>
+                          ) : (
+                            <button
+                              className={`btn sm ${done ? 'secondary' : ''}`}
+                              onClick={() => navigate(`/learn/${l.slug}`)}
+                            >
+                              {done ? 'مراجعة' : inProgress ? 'متابعة' : 'ابدأ'}
+                            </button>
+                          )}
                         </div>
                       </div>
-
-                      {isLocked ? (
-                        <button className="btn sm ghost" disabled title="هذا الدرس مقفل حتى إتمام المتطلبات">
-                          🔒 مقفل
-                        </button>
-                      ) : (
-                        <button
-                          className={`btn sm ${done ? 'secondary' : ''}`}
-                          onClick={() => navigate(`/learn/${l.slug}`)}
-                        >
-                          {done ? 'مراجعة' : inProgress ? 'متابعة' : 'ابدأ'}
-                        </button>
-                      )}
                     </div>
                   );
                 })}
@@ -378,21 +375,34 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {/* المسارات التخصصية */}
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>المسارات التطبيقية المتخصصة</h2>
+        <SectionHead kicker="تطبيق عملي" title="المسارات التطبيقية المتخصصة" />
         {paths === null && <p className="muted small">جارٍ التحميل…</p>}
         {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
         <ul className="list-plain">
-          {(paths ?? []).map(p => (
-            <li key={p.slug} className="row" style={{ justifyContent: 'space-between', padding: 'var(--s-2) 0', borderBottom: '1px solid var(--border)' }}>
-              <div>
-                <strong>{p.title_ar}</strong>
-                {p.level_code && <span className="badge sm" style={{ marginRight: 8 }}>{p.level_code}</span>}
-              </div>
-              <span className="row small muted">
-                <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
-              </span>
-            </li>
-          ))}
+          {(paths ?? []).map(p => {
+            const artIcon = p.slug === 'travel' || p.kind === 'travel' ? 'plane' : p.slug === 'callcenter' || p.kind === 'callcenter' ? 'headset' : 'book';
+            const artTone = artIcon === 'plane' ? 'blue' : artIcon === 'headset' ? 'gold' : '';
+            return (
+              <li key={p.slug}>
+                <div className="track-card">
+                  <div className={`track-art ${artTone}`}>
+                    <Icon name={artIcon} size={28} />
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-2)' }}>
+                      <div style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <strong>{p.title_ar}</strong>
+                        <LevelBadge level={p.level_code} size="sm" />
+                      </div>
+                      <span className="small muted">
+                        <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </div>

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { api, ApiError } from '../api';
 import { useAuth } from '../state';
+import { Icon, SectionHead } from '../components/ui';
 
 function useAuthForm(onDone: () => void) {
   const { setUser } = useAuth();
@@ -54,10 +55,11 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container narrow">
-      <h1>إنشاء حساب</h1>
-      <p className="muted small">
-        نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
-      </p>
+      <SectionHead
+        kicker="Español بالعربي"
+        title="إنشاء حساب"
+        desc="نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية."
+      />
       <form className="card stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
@@ -73,7 +75,7 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
           <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="new-password" required />
           <span className="small muted">10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ إنشاء الحساب…' : 'إنشاء الحساب'}</button>
+        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ إنشاء الحساب…' : (<><Icon name="lock" size={17} /> إنشاء الحساب</>)}</button>
         <p className="small muted">
           لديك حساب؟ <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
         </p>
@@ -94,7 +96,11 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container narrow">
-      <h1>تسجيل الدخول</h1>
+      <SectionHead
+        kicker="Español بالعربي"
+        title="تسجيل الدخول"
+        desc="ادخل ببريدك وكلمة مرورك للوصول إلى لوحتك ومراجعتك."
+      />
       <form className="card stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
@@ -105,7 +111,7 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
           <span>كلمة المرور</span>
           <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required />
         </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : 'دخول'}</button>
+        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : (<><Icon name="lock" size={17} /> دخول</>)}</button>
         <p className="small muted">
           نسيت كلمة المرور؟ <strong>غير مفعّل حاليًا</strong> — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنه يعمل.
         </p>

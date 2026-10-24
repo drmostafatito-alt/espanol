@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { api, ApiError } from '../api';
 import { useAuth } from '../state';
 import { AudioDemo } from '../components/AudioDemo';
+import { Icon, SectionHead } from '../components/ui';
 
 export function Settings({ navigate }: { navigate: (to: string) => void }) {
   const { user, setUser } = useAuth();
@@ -35,13 +36,15 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container narrow">
-      <div className="row" style={{ justifyContent: 'space-between' }}>
-        <h1>الإعدادات</h1>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>عودة</button>
-      </div>
+      <SectionHead
+        kicker="حسابك"
+        title="الإعدادات"
+        desc="تفضيلات التعلم والصوت تُحفظ في حسابك وتُطبَّق على الدروس والمراجعة."
+        action={<button className="btn ghost sm" onClick={() => navigate('/learn')}><Icon name="arrowR" size={16} /> عودة</button>}
+      />
 
       <form className="card stack" onSubmit={e => { e.preventDefault(); void save(); }}>
-        <h2>التعلّم</h2>
+        <h2><Icon name="settings" size={20} /> التعلّم</h2>
         <label className="field">
           <span>الاسم</span>
           <input type="text" value={name} onChange={e => setName(e.target.value)} maxLength={80} />
@@ -75,7 +78,7 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
       </form>
 
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>الصوت</h2>
+        <h2><Icon name="listen" size={20} /> الصوت</h2>
         <AudioDemo text="Buenos días, ¿en qué puedo ayudarle?" audioKey="pending/cc1-opening-omar" variant={variant as 'es-ES' | 'es-419'} />
         <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
           لا نرفع تسجيلاتك الصوتية إلى الخادم في هذه المرحلة، ولا نقيّم نطقك آليًا. عندما يصبح متاحًا
@@ -84,7 +87,7 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
       </section>
 
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>البيانات والحساب</h2>
+        <h2><Icon name="lock" size={20} /> البيانات والحساب</h2>
         <ul className="list-plain small">
           <li>البريد: <span className="es">{user.email}</span></li>
           <li>الدور: <span className="badge">{user.role}</span></li>

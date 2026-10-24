@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
+import { Icon, LevelBadge, ProgressBar } from '../components/ui';
+import { TopicScene } from '../components/Illustrations';
 
 interface Question {
   id: number;
@@ -158,7 +160,8 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (!user) {
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card">
+        <div className="card" style={{ textAlign: 'center' }}>
+          <Icon name="lock" size={32} label="تسجيل الدخول مطلوب" />
           <h2>تسجيل الدخول مطلوب</h2>
           <p className="muted">يرجى تسجيل الدخول أو إنشاء حساب لحفظ نتيجتك وفتح المستويات تلقائيًا.</p>
           <button className="btn" onClick={() => navigate('/login')}>تسجيل الدخول</button>
@@ -231,11 +234,9 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (result) {
     return (
       <div className="container" style={{ maxWidth: 680 }}>
-        <div className="card" style={{ textAlign: 'center', padding: 'var(--s-4)' }}>
-          <div style={{ fontSize: '3rem', marginBottom: 'var(--s-2)' }}>
-            {result.passed ? '🎉' : '📖'}
-          </div>
-          <h1 style={{ marginTop: 0 }}>نتيجة اختبار تحديد المستوى</h1>
+        <div className="card" style={{ textAlign: 'center' }}>
+          <Icon name={result.passed ? 'checkCircle' : 'book'} size={40} label={result.passed ? 'تم الاجتياز' : 'نتيجة الاختبار'} />
+          <h1 style={{ marginBottom: 'var(--s-1)' }}>نتيجة اختبار تحديد المستوى</h1>
           <p className="lead" style={{ margin: 'var(--s-2) 0' }}>
             نسبة الإجابات الصحيحة: <strong className="num">{result.score}%</strong>
           </p>
@@ -247,15 +248,18 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
             <strong>المستوى الموصى به: {result.unlockedLevel}</strong>
             <p style={{ margin: 'var(--s-1) 0 0' }}>{result.messageAr}</p>
             {result.xpAwarded > 0 && (
-              <p className="small" style={{ color: 'var(--color-primary, #0066cc)', margin: 'var(--s-1) 0 0' }}>
-                ⭐ تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
+              <p className="small" style={{ color: 'var(--c-primary-strong)', margin: 'var(--s-1) 0 0' }}>
+                <Icon name="star" size={16} /> تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
               </p>
             )}
           </div>
 
-          <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-4)' }}>
+          <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-4)', flexWrap: 'wrap' }}>
             <button className="btn" onClick={() => navigate('/learn')}>
-              الانتقال إلى خريطة المنهج والدروس ←
+              الانتقال إلى خريطة المنهج <Icon name="arrowL" size={17} />
+            </button>
+            <button className="btn secondary" onClick={() => navigate('/learn?level=PREA1')}>
+              ابدأ من التمهيد (Pre-A1)
             </button>
           </div>
         </div>
@@ -268,41 +272,39 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container" style={{ maxWidth: 680 }}>
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-3)' }}>
-        <div>
-          <h1 style={{ margin: 0, fontSize: '1.4rem' }}>اختبار تحديد المستوى</h1>
-          <span className="small muted">
-            10 أسئلة سريعة لتقييم معرفتك الحالية وتخطي ما تعرفه مسبقًا
-          </span>
+      <div className="card card-green" style={{ marginBottom: 'var(--s-4)' }}>
+        <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start' }}>
+          <div style={{ width: 72, flex: 'none' }}>
+            <TopicScene topic="greetings" label="مشهد تحية وتعريف بالإسبانية" />
+          </div>
+          <div style={{ flex: 1 }}>
+            <span className="kicker">اختبار تحديد المستوى</span>
+            <h1 style={{ margin: 'var(--s-1) 0' }}>اختبار تحديد المستوى</h1>
+            <p className="muted" style={{ margin: 0 }}>
+              10 أسئلة سريعة لتقييم معرفتك الحالية وتخطي ما تعرفه مسبقًا. أجب بما تعرفه فعلًا — النتيجة النهائية يحسبها الخادم، ولا تُعرض الإجابات الصحيحة أثناء الاختبار.
+            </p>
+          </div>
         </div>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>
-          ✕ خروج
-        </button>
-      </div>
-
-      <div
-        className="progress-track"
-        role="progressbar"
-        aria-valuenow={progressPct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-label="تقدم اختبار تحديد المستوى"
-        style={{ marginBottom: 'var(--s-3)' }}
-      >
-        <div className="progress-fill" style={{ width: `${progressPct}%` }} />
+        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-3)' }}>
+          <span className="small muted num">السؤال {index + 1} من {QUESTIONS.length}</span>
+          <button className="btn ghost sm" onClick={() => navigate('/learn')}>
+            <Icon name="x" size={16} /> خروج
+          </button>
+        </div>
+        <ProgressBar value={progressPct} label="تقدم الاختبار" />
       </div>
 
       <div className="card">
         <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-          <span className="badge">{current.level}</span>
+          <LevelBadge level={current.level} />
           <span className="small muted num">
-            السؤال {index + 1} من {QUESTIONS.length}
+            أجبت على {answeredCount} من {QUESTIONS.length}
           </span>
         </div>
 
         <h2 style={{ fontSize: '1.25rem', marginTop: 0 }}>{current.promptAr}</h2>
         {current.stemEs && (
-          <p className="es" style={{ fontSize: '1.2rem', fontWeight: 600, margin: 'var(--s-2) 0' }}>
+          <p className="es" dir="ltr" style={{ fontSize: '1.2rem', fontWeight: 600, margin: 'var(--s-2) 0' }}>
             {current.stemEs}
           </p>
         )}
@@ -312,7 +314,6 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
             <label
               key={opt.id}
               className={`choice ${selectedOptionId === opt.id ? 'selected' : ''}`}
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 'var(--s-2)', padding: 'var(--s-2) var(--s-3)', margin: 'var(--s-2) 0', border: '1px solid var(--border)', borderRadius: 8 }}
             >
               <input
                 type="radio"
@@ -322,6 +323,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
                 onChange={() => handleSelect(opt.id)}
               />
               <span className="es" style={{ fontSize: '1.05rem' }}>{opt.text}</span>
+              {selectedOptionId === opt.id && <Icon name="check" size={18} label="الخيار المحدد" />}
             </label>
           ))}
         </div>
