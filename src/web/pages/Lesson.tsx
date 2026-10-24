@@ -20,6 +20,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const [session, setSession] = useState<LessonSession | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [locked, setLocked] = useState<Record<string, unknown> | null>(null);
+  const [loadKind, setLoadKind] = useState<'locked' | 'network' | 'server'>('server');
 
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
@@ -34,29 +35,44 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   const audio = audioService;
 
+  // عدّاد إعادة المحاولة: زر «أعد المحاولة» يزيده فيُعاد تشغيل أثر التحميل نفسه
+  const [reloadTick, setReloadTick] = useState(0);
+
   useEffect(() => {
-    let alive = true;
-    api
+    let cancelled = false;
+    setPhase('loading');
+    setError(null);
+    setLocked(null);
+    void api
       .lessonSession(slug)
       .then(s => {
-        if (!alive) return;
+        if (cancelled) return;
         setSession(s);
         setPhase('exercise');
       })
       .catch((err: unknown) => {
-        if (!alive) return;
+        if (cancelled) return;
         if (err instanceof ApiError && err.code === 'LESSON_LOCKED') {
           setLocked((err.details as Record<string, unknown>) ?? {});
+          setLoadKind('locked');
+          setPhase('error');
+        } else if (err instanceof ApiError && err.isUnauthorized()) {
+          // المعالج المركزي يحوّل لصفحة الدخول؛ نبقى على حالة تحميل هادئة
+          setPhase('loading');
+        } else if (err instanceof ApiError && err.isNetwork()) {
+          setLoadKind('network');
+          setError('تعذّر الوصول إلى الخادم. تحقّق من اتصالك بالإنترنت ثم أعد المحاولة.');
           setPhase('error');
         } else {
-          setError(err instanceof ApiError ? err.message : 'تعذّر تحميل الدرس.');
+          setLoadKind('server');
+          setError(err instanceof ApiError ? err.message : 'تعذّر تحميل الدرس. حاول مرة أخرى بعد قليل.');
           setPhase('error');
         }
       });
     return () => {
-      alive = false;
+      cancelled = true;
     };
-  }, [slug]);
+  }, [slug, reloadTick]);
 
   useEffect(() => {
     return () => {
@@ -145,22 +161,44 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   }
 
   if (phase === 'error') {
+    const isLocked = loadKind === 'locked';
     return (
       <div className="container" style={{ maxWidth: 640 }}>
         <div className="card" style={{ marginTop: 'var(--s-6)' }}>
-          <div className="state-icon" style={{ background: 'var(--color-warning-soft)', color: 'var(--color-warning)', marginBottom: 'var(--s-3)' }}>
-            <Icon name="lock" size={28} />
+          <div
+            className="state-icon"
+            style={{
+              background: isLocked ? 'var(--color-navy-soft)' : 'var(--color-warning-soft)',
+              color: isLocked ? 'var(--color-navy)' : 'var(--color-warning)',
+              marginBottom: 'var(--s-3)',
+            }}
+          >
+            <Icon name={isLocked ? 'lock' : 'warning'} size={28} />
           </div>
-          <h1 style={{ marginTop: 0 }}>تعذّر فتح الدرس</h1>
-          {locked ? (
+          <h1 style={{ marginTop: 0 }}>{isLocked ? 'تعذّر فتح الدرس' : loadKind === 'network' ? 'تعذّر الاتصال بالخادم' : 'تعذّر تحميل الدرس'}</h1>
+          {isLocked ? (
             <>
               <p>هذا الدرس مقفل — أكمل الدرس السابق بدقة كافية أولًا.</p>
-              <p className="small muted">المطلوب: {((locked.missing as string[]) ?? []).join('، ') || 'الدرس السابق'}</p>
+              <p className="small muted">
+                المطلوب:{' '}
+                {((locked?.missing as string[] | undefined) ?? []).length > 0 ? (
+                  <span dir="ltr">{((locked?.missing as string[] | undefined) ?? []).join('، ')}</span>
+                ) : (
+                  'الدرس السابق'
+                )}
+              </p>
             </>
           ) : (
             <p role="alert">{error}</p>
           )}
-          <button className="btn navy" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
+          <div className="row">
+            {!isLocked && (
+              <button className="btn" onClick={() => setReloadTick(t => t + 1)}>
+                <Icon name="refresh" size={18} /> أعد المحاولة
+              </button>
+            )}
+            <button className="btn navy" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
+          </div>
         </div>
       </div>
     );
@@ -396,7 +434,7 @@ function ExerciseBody({
 
   const rateButton = hasAudio ? (
     <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
-      {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
+      {audioRate === 1.0 ? 'سرعة بطيئة (0.75x)' : 'السرعة العادية (1.0x)'}
     </button>
   ) : null;
 
@@ -456,8 +494,8 @@ function ExerciseBody({
         </div>
 
         {isRecording && (
-          <p role="status" aria-live="polite" className="small" style={{ color: 'var(--color-danger)', marginTop: 'var(--s-2)' }}>
-            🔴 جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
+          <p role="status" aria-live="polite" className="row small" style={{ color: 'var(--color-danger)', marginTop: 'var(--s-2)', gap: 'var(--s-2)' }}>
+            <span className="rec-dot" aria-hidden="true" /> جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
           </p>
         )}
 
@@ -467,8 +505,8 @@ function ExerciseBody({
               <strong>ما تعرّف عليه المتصفح:</strong> <span className="es">{speechTranscript}</span>
             </p>
             {exercise.stemEs && speechTranscript.trim().toLowerCase() === exercise.stemEs.trim().toLowerCase() && (
-              <p className="small" style={{ color: 'var(--color-success-strong)', margin: '4px 0 0' }}>
-                ✓ ممتاز! نطقك طابق الجملة تمامًا.
+              <p className="row small" style={{ color: 'var(--color-success-strong)', margin: '4px 0 0', gap: 'var(--s-1)' }}>
+                <Icon name="check-circle" size={16} /> ممتاز! نطقك طابق الجملة تمامًا.
               </p>
             )}
             <p className="small muted" style={{ margin: '4px 0 0' }}>

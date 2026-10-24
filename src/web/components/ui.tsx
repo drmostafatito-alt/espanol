@@ -121,23 +121,64 @@ export function ErrorState({
   title = 'تعذّر تحميل البيانات',
   description,
   onRetry,
+  onBack,
+  backLabel = 'رجوع',
+  variant = 'error',
 }: {
   title?: string;
   description?: string;
   onRetry?: () => void;
+  onBack?: () => void;
+  backLabel?: string;
+  variant?: 'error' | 'warning';
 }) {
+  const soft = variant === 'warning' ? 'var(--color-warning-soft)' : 'var(--color-danger-soft)';
+  const fg = variant === 'warning' ? 'var(--color-warning)' : 'var(--color-danger)';
   return (
     <div className="state-box" role="alert">
-      <div className="state-icon" style={{ background: 'var(--color-danger-soft)', color: 'var(--color-danger)' }}>
-        <Icon name="refresh" size={30} />
+      <div className="state-icon" style={{ background: soft, color: fg }}>
+        <Icon name={variant === 'warning' ? 'warning' : 'refresh'} size={30} />
       </div>
       <h3 style={{ marginBottom: 'var(--s-2)' }}>{title}</h3>
-      {description ? <p className="muted small">{description}</p> : null}
-      {onRetry ? (
-        <button className="btn" style={{ marginTop: 'var(--s-3)' }} onClick={onRetry}>
-          <Icon name="refresh" size={18} /> أعد المحاولة
-        </button>
+      {description ? <p className="muted small" style={{ maxWidth: '46ch' }}>{description}</p> : null}
+      {onRetry || onBack ? (
+        <div className="row" style={{ marginTop: 'var(--s-3)', justifyContent: 'center' }}>
+          {onRetry ? (
+            <button className="btn" onClick={onRetry}>
+              <Icon name="refresh" size={18} /> أعد المحاولة
+            </button>
+          ) : null}
+          {onBack ? (
+            <button className="btn secondary" onClick={onBack}>{backLabel}</button>
+          ) : null}
+        </div>
       ) : null}
+    </div>
+  );
+}
+
+/* شاشة كاملة عندما يتعذر الوصول إلى الخادم عند إقلاع التطبيق */
+export function ConnectionErrorScreen({ message, onRetry }: { message: string | null; onRetry: () => void }) {
+  return (
+    <div className="container" style={{ maxWidth: 560, paddingBlock: 'var(--s-8)' }}>
+      <div className="card" style={{ textAlign: 'center', padding: 'var(--s-7) var(--s-5)' }}>
+        <div
+          className="state-icon"
+          style={{ background: 'var(--color-warning-soft)', color: 'var(--color-warning)', margin: '0 auto var(--s-4)' }}
+        >
+          <Icon name="warning" size={32} />
+        </div>
+        <h1 style={{ fontSize: '1.4rem' }}>تعذّر الاتصال بالخادم</h1>
+        <p className="muted" style={{ maxWidth: '44ch', margin: '0 auto var(--s-4)' }}>
+          {message ?? 'تعذّر الوصول إلى الخادم الآن. قد يكون الخادم المحلي متوقفًا أو هناك انقطاع في الشبكة.'}
+        </p>
+        <button className="btn navy" onClick={onRetry}>
+          <Icon name="refresh" size={18} /> إعادة المحاولة
+        </button>
+        <p className="small muted" style={{ marginTop: 'var(--s-4)', marginBottom: 0 }}>
+          في بيئة التطوير تأكد من تشغيل خادم الواجهة وخادم الـ API معًا.
+        </p>
+      </div>
     </div>
   );
 }

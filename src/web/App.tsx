@@ -13,20 +13,33 @@ import { Placement } from './pages/Placement';
 import { PublicHeader } from './components/layout/PublicHeader';
 import { PublicFooter } from './components/layout/PublicFooter';
 import { AppShell } from './components/layout/AppShell';
+import { ConnectionErrorScreen } from './components/ui';
 
 function Shell() {
   const [path, navigate] = useRoute();
-  const { user, loading } = useAuth();
+  const { user, loading, authError, sessionExpired, retryAuth, clearSessionExpired } = useAuth();
 
   // حماية المسارات: غير المسجّل يُوجَّه للدخول (بعد معرفة الحالة)
   const isProtected =
     path === '/settings' || path === '/learn' || path.startsWith('/learn/') ||
     path === '/review' || path.startsWith('/review/') || path === '/placement';
   useEffect(() => {
-    if (!loading && !user && isProtected) {
+    if (!loading && !user && !authError && isProtected) {
       navigate('/login');
     }
-  }, [loading, user, isProtected, navigate]);
+  }, [loading, user, authError, isProtected, navigate]);
+
+  // فشل الاتصال عند الإقلاع (لا نمسح الجلسة ولا نوجّه لدخول خاطئ)
+  if (!loading && authError && !user) {
+    return (
+      <div className="app">
+        <a className="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+        <main id="main" style={{ flex: 1 }}>
+          <ConnectionErrorScreen message={authError} onRetry={() => void retryAuth()} />
+        </main>
+      </div>
+    );
+  }
 
   const lessonSlug = path.startsWith('/learn/') ? path.slice('/learn/'.length) : null;
 
@@ -38,7 +51,9 @@ function Shell() {
   } else if (path === '/signup') {
     page = user ? <Dashboard navigate={navigate} /> : <Signup navigate={navigate} />;
   } else if (path === '/login') {
-    page = user ? <Dashboard navigate={navigate} /> : <Login navigate={navigate} />;
+    page = user
+      ? <Dashboard navigate={navigate} />
+      : <Login navigate={navigate} sessionExpired={sessionExpired} onDismissNotice={clearSessionExpired} />;
   } else if (path === '/learn') {
     page = user ? <Dashboard navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/placement') {

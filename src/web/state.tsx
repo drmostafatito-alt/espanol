@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { api, type ApiUser } from './api';
+import { api, ApiError, onUnauthorized, type ApiUser } from './api';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
 export function useRoute(): [string, (to: string) => void] {
@@ -22,8 +22,14 @@ export function useRoute(): [string, (to: string) => void] {
 interface AuthValue {
   user: ApiUser | null;
   loading: boolean;
+  /** فشل الاتصال بالخادم (شبكة/5xx) — يختلف عن عدم المصادقة */
+  authError: string | null;
+  /** انتهت الجلسة بعد أن كان المستخدم مسجلًا */
+  sessionExpired: boolean;
   setUser: (u: ApiUser | null) => void;
   refresh: () => Promise<void>;
+  retryAuth: () => Promise<void>;
+  clearSessionExpired: () => void;
   signOut: () => Promise<void>;
 }
 const AuthCtx = createContext<AuthValue | null>(null);
@@ -31,29 +37,75 @@ const AuthCtx = createContext<AuthValue | null>(null);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<ApiUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const [authError, setAuthError] = useState<string | null>(null);
+  const [sessionExpired, setSessionExpired] = useState(false);
 
   const refresh = useCallback(async () => {
+    setLoading(true);
     try {
-      const { user } = await api.me();
-      setUser(user);
-    } catch {
-      setUser(null); // 401 = زائر، وليس خطأ يُعرض
+      const { user: current } = await api.me();
+      setUser(current);
+      setAuthError(null);
+      setSessionExpired(false);
+    } catch (err) {
+      if (err instanceof ApiError && err.isUnauthorized()) {
+        // 401 حقيقي: زائر أو جلسة منتهية. لا نعرض هذا كخطأ اتصال.
+        setUser(null);
+        setAuthError(null);
+      } else {
+        // فشل شبكة/خادم: لا نمحو هوية المستخدم إن كانت معروفة، ولا نعامله كتسجيل خروج
+        const message = err instanceof ApiError ? err.message : 'تعذّر الاتصال بالخادم.';
+        setAuthError(message);
+      }
     } finally {
       setLoading(false);
     }
   }, []);
 
-  useEffect(() => { void refresh(); }, [refresh]);
+  useEffect(() => {
+    void refresh();
+    // انتهاء الجلسة أثناء الاستخدام (401 من أي طلب): معالجة مركزية واحدة
+    const off = onUnauthorized(() => {
+      setUser(prev => {
+        if (prev) setSessionExpired(true);
+        return null;
+      });
+    });
+    return off;
+  }, [refresh]);
 
   const signOut = useCallback(async () => {
     try {
       await api.logout();
+    } catch {
+      /* حتى لو فشل الطلب، نمسح الحالة المحلية */
     } finally {
       setUser(null);
+      setSessionExpired(false);
+      setAuthError(null);
     }
   }, []);
 
-  const value = useMemo(() => ({ user, loading, setUser, refresh, signOut }), [user, loading, refresh, signOut]);
+  const value = useMemo<AuthValue>(
+    () => ({
+      user,
+      loading,
+      authError,
+      sessionExpired,
+      setUser: (u: ApiUser | null) => {
+        setUser(u);
+        if (u) {
+          setAuthError(null);
+          setSessionExpired(false);
+        }
+      },
+      refresh,
+      retryAuth: refresh,
+      clearSessionExpired: () => setSessionExpired(false),
+      signOut,
+    }),
+    [user, loading, authError, sessionExpired, refresh, signOut],
+  );
   return <AuthCtx.Provider value={value}>{children}</AuthCtx.Provider>;
 }
 

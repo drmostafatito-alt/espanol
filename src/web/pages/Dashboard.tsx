@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem, type ApiUser } from '../api';
 import { useAuth } from '../state';
 import { Icon, type IconName } from '../components/icons';
-import { Avatar, ProgressBar, ProgressRing, LevelBadge, LoadingState, ErrorState } from '../components/ui';
+import { Avatar, ProgressBar, ProgressRing, LevelBadge, LoadingState, ErrorState, EmptyState } from '../components/ui';
 import { LearningPath } from '../components/LearningPath';
 import { trackVisual } from '../components/tracks';
 
@@ -33,26 +33,43 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const { user } = useAuth();
   const [paths, setPaths] = useState<PathRow[] | null>(null);
   const [progress, setProgress] = useState<ProgressPayload | null>(null);
-  const [loadError, setLoadError] = useState<string | null>(null);
+  // كل مصدر له حالة خطأ مستقلة: فشل واحد لا يُسقط بقية اللوحة
+  const [progressError, setProgressError] = useState<string | null>(null);
+  const [pathsError, setPathsError] = useState<string | null>(null);
   const [review, setReview] = useState<ReviewPayload | null>(null);
   const [selectedTab, setSelectedTab] = useState<string>('ALL');
 
-  const load = () => {
-    setLoadError(null);
-    Promise.all([api.paths(), api.progress()])
-      .then(([p, pr]) => {
-        setPaths(p.paths);
-        setProgress(pr);
-        api.reviewSession(1).then(r => setReview(r)).catch(() => undefined);
-      })
-      .catch(() => {
-        setPaths([]);
-        setLoadError('تعذّر تحميل بيانات التقدم. تحقق من الاتصال ثم أعد المحاولة.');
+  const loadProgress = useCallback(() => {
+    setProgressError(null);
+    api
+      .progress()
+      .then(setProgress)
+      .catch((err: unknown) => {
+        setProgressError(err instanceof Error ? err.message : 'تعذّر تحميل بيانات التقدم.');
       });
-  };
+  }, []);
+
+  const loadPaths = useCallback(() => {
+    setPathsError(null);
+    api
+      .paths()
+      .then(p => setPaths(p.paths))
+      .catch((err: unknown) => {
+        setPathsError(err instanceof Error ? err.message : 'تعذّر تحميل المسارات.');
+      });
+  }, []);
+
+  const loadReview = useCallback(() => {
+    api
+      .reviewSession(1)
+      .then(setReview)
+      .catch(() => undefined); // طلب ثانوي: لا يعطّل اللوحة إطلاقًا
+  }, []);
 
   useEffect(() => {
-    load();
+    loadProgress();
+    loadPaths();
+    loadReview();
     // روابط داخلية من المسارات والأقسام: ?track= و?section=
     const params = new URLSearchParams(window.location.search);
     const track = params.get('track');
@@ -132,7 +149,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
       <header className="welcome-row">
         <Avatar name={user.displayName} email={user.email} large />
         <div style={{ flex: 1, minWidth: 200 }}>
-          <h1>مرحبًا يا {user.displayName || 'صديقي'} 👋</h1>
+          <h1>مرحبًا يا {user.displayName || 'صديقي'}</h1>
           <p>استمر في رحلتك لتعلّم الإسبانية — {styleLabel(user)} · هدفك اليومي <span className="num">{user.dailyGoalMinutes}</span> دقيقة</p>
         </div>
         <button className="btn secondary sm" onClick={() => navigate('/settings')}>
@@ -140,9 +157,13 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         </button>
       </header>
 
-      {loadError && (
+      {progressError && !progress && (
         <div style={{ marginBottom: 'var(--s-4)' }}>
-          <ErrorState description={loadError} onRetry={load} />
+          <ErrorState
+            title="تعذّر تحميل بيانات التقدم"
+            description={progressError}
+            onRetry={loadProgress}
+          />
         </div>
       )}
 
@@ -152,7 +173,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         </p>
       )}
 
-      {!progress && !loadError && <LoadingState text="جارٍ تحميل لوحتك من الخادم…" />}
+      {!progress && !progressError && <LoadingState text="جارٍ تحميل لوحتك من الخادم…" />}
 
       {progress && (
         <>
@@ -335,9 +356,16 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                 <h2 style={{ margin: 0 }}>المسارات المتخصصة</h2>
                 <span className="small muted">كل المسارات تُقرأ من المحتوى المنشور فعليًا</span>
               </div>
-              {paths === null && <LoadingState text="جارٍ تحميل المسارات…" />}
-              {paths && paths.length === 0 && (
-                <ErrorState title="لا مسارات منشورة بعد" description="سيظهر هنا كل مسار ينشره فريق المحتوى." />
+              {pathsError && (
+                <ErrorState
+                  title="تعذّر تحميل المسارات"
+                  description={pathsError}
+                  onRetry={loadPaths}
+                />
+              )}
+              {!pathsError && paths === null && <LoadingState text="جارٍ تحميل المسارات…" />}
+              {!pathsError && paths && paths.length === 0 && (
+                <EmptyState icon="tracks" title="لا مسارات منشورة بعد" description="سيظهر هنا كل مسار ينشره فريق المحتوى." />
               )}
               <div className="track-grid">
                 {(paths ?? []).map(p => {

@@ -12,7 +12,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating } from '../api';
 import { useAuth } from '../state';
-import { LoadingState } from '../components/ui';
+import { ErrorState, LoadingState } from '../components/ui';
 import { Mascot } from '../components/Mascot';
 
 const QUEUE_KEY = 'srs.pending.v1';
@@ -58,7 +58,8 @@ const RATING_LABEL: Record<ReviewRating, string> = {
 
 const RATING_KEY: Record<string, ReviewRating> = { '1': 'again', '2': 'hard', '3': 'good', '4': 'easy' };
 
-type Phase = 'loading' | 'card' | 'revealed' | 'saving' | 'empty' | 'error';
+type Phase = 'loading' | 'card' | 'revealed' | 'saving' | 'empty' | 'error' | 'expired';
+type ErrorKind = 'network' | 'server' | 'generic';
 
 export function Review({ navigate }: { navigate: (to: string) => void }) {
   const { user } = useAuth();
@@ -66,6 +67,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
   const [error, setError] = useState<string | null>(null);
+  const [errorKind, setErrorKind] = useState<ErrorKind>('generic');
   const [lastNext, setLastNext] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
@@ -111,7 +113,18 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
       setPhase(res.cards.length ? 'card' : 'empty');
       setOffline(false);
     } catch (err) {
-      setError(err instanceof ApiError ? err.message : 'تعذّر تحميل بطاقات المراجعة.');
+      // 401: الجلسة منتهية — المعالج المركزي سيحوّل لصفحة الدخول؛ نعرض حالة هادئة لا بطاقة خطأ مخيفة
+      if (err instanceof ApiError && err.isUnauthorized()) {
+        setPhase('expired');
+        return;
+      }
+      if (err instanceof ApiError && err.isNetwork()) {
+        setErrorKind('network');
+        setError('تعذّر الوصول إلى الخادم. تحقّق من اتصالك بالإنترنت، ثم أعد المحاولة — تقييماتك المحفوظة لن تضيع.');
+      } else {
+        setErrorKind('server');
+        setError(err instanceof ApiError ? err.message : 'تعذّر تحميل بطاقات المراجعة. حاول مرة أخرى بعد قليل.');
+      }
       setPhase('error');
     }
   }, []);
@@ -153,6 +166,11 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         setLastNext(days === 0 ? 'بعد ١٠ دقائق' : days === 1 ? 'غدًا' : `بعد ${days} يومًا`);
         setOffline(false);
       } catch (err) {
+        if (err instanceof ApiError && err.isUnauthorized()) {
+          // انتهاء الجلسة أثناء التقييم: التحويل المركزي قادم؛ لا نضع التقييم في قائمة المحاولة
+          setPhase('expired');
+          return;
+        }
         if (err instanceof ApiError && err.status >= 400 && err.status < 500) {
           setError(err.message);
           setPhase('card');
@@ -201,17 +219,30 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     );
   }
 
+  if (phase === 'expired') {
+    return (
+      <div className="container" style={{ maxWidth: 640, paddingTop: 'var(--s-6)' }}>
+        <div className="state-box" role="status">
+          <div className="spinner" />
+          <p className="muted" style={{ margin: 0 }}>
+            انتهت جلستك. جارٍ التحويل إلى صفحة تسجيل الدخول…
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   if (phase === 'error') {
     return (
-      <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card">
-          <h1 style={{ marginTop: 0 }}>تعذّر تحميل المراجعة</h1>
-          <p role="alert">{error}</p>
-          <div className="row">
-            <button className="btn" onClick={() => void load()}>أعد المحاولة</button>
-            <button className="btn secondary" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
-          </div>
-        </div>
+      <div className="container" style={{ maxWidth: 640, paddingTop: 'var(--s-4)' }}>
+        <ErrorState
+          variant={errorKind === 'network' ? 'warning' : 'error'}
+          title={errorKind === 'network' ? 'تعذّر الاتصال بالخادم' : 'تعذّر تحميل المراجعة'}
+          description={error ?? undefined}
+          onRetry={() => void load()}
+          onBack={() => navigate('/learn')}
+          backLabel="رجوع إلى لوحتي"
+        />
       </div>
     );
   }

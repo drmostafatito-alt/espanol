@@ -3,6 +3,7 @@ import { api } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { searchEngine, type SearchResponse } from '../../shared/search-engine';
+import { Icon } from '../components/icons';
 
 export function Search({
   navigate,
@@ -18,6 +19,7 @@ export function Search({
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [busy, setBusy] = useState(false);
   const [audioNotice, setAudioNotice] = useState<string | null>(null);
+  const [usingLocal, setUsingLocal] = useState(false);
 
   const performSearch = useCallback(async (q: string, lev: string, k: string) => {
     const trimmed = q.trim();
@@ -27,6 +29,7 @@ export function Search({
     }
     setBusy(true);
     setAudioNotice(null);
+    setUsingLocal(false);
     try {
       // نجرّب الخادم أولاً، مع fallback محلي فوري
       const res = await api.search(trimmed, {
@@ -35,11 +38,12 @@ export function Search({
       });
       setResponse(res);
     } catch {
-      // المحرك المحلي يعمل مباشرة في المتصفح أيضًا
+      // المحرك المحلي يعمل مباشرة في المتصفح أيضًا — ونفصح بوضوح أن النتائج محلية
       const res = searchEngine.search(trimmed, {
         level: lev === 'all' ? undefined : lev,
         kind: k === 'all' ? undefined : (k as any),
       });
+      setUsingLocal(true);
       setResponse(res);
     } finally {
       setBusy(false);
@@ -68,7 +72,9 @@ export function Search({
   return (
     <div className="container" style={{ maxWidth: 840, paddingTop: 'var(--s-4)', paddingBottom: 'var(--s-5)' }}>
       <div className="card" style={{ marginBottom: 'var(--s-3)' }}>
-        <h1 style={{ marginTop: 0, fontSize: '1.75rem' }}>🔍 البحث الذكي في الإسبانية</h1>
+        <h1 className="row" style={{ marginTop: 0, fontSize: '1.75rem', gap: 'var(--s-2)' }}>
+          <Icon name="search" size={26} /> البحث الذكي في الإسبانية
+        </h1>
         <p className="muted" style={{ margin: 'var(--s-1) 0 var(--s-3)' }}>
           ابحث عن كلمة إسبانية، أو معنى عربي فصيح أو مصري، أو قاعدة نحوية، أو تصريف فعل، أو موضوع درس.
         </p>
@@ -129,6 +135,11 @@ export function Search({
       )}
 
       {busy && <p className="muted small">جارٍ البحث…</p>}
+      {usingLocal && !busy && (
+        <p className="banner-warn small" role="status" style={{ marginBottom: 'var(--s-3)' }}>
+          تعذّر الوصول إلى الخادم — النتائج المعروضة من محرك البحث المحلي المضمّن في التطبيق، وقد لا تشمل أحدث المحتوى.
+        </p>
+      )}
 
       {/* رسالة الاقتراح الذكي عند عدم وجود نتائج مباشرة */}
       {response && response.suggestion && response.results.length === 0 && (
@@ -211,9 +222,10 @@ export function Search({
                       type="button"
                       className="btn secondary sm"
                       title="استمع للنطق"
+                      aria-label={`استمع للنطق: ${r.titleEs}`}
                       onClick={() => playWordAudio(r.titleEs!, r.id)}
                     >
-                      🔊
+                      <Icon name="volume" size={18} />
                     </button>
                   )}
                   {r.kind === 'lesson' || r.kind === 'grammar' ? (

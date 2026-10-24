@@ -233,8 +233,8 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
               <strong>المستوى الموصى به: {result.unlockedLevel}</strong>
               <p style={{ margin: '2px 0 0' }}>{result.messageAr}</p>
               {result.xpAwarded > 0 && (
-                <p className="small" style={{ color: 'var(--color-success-strong)', margin: 'var(--s-2) 0 0' }}>
-                  ⭐ تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
+                <p className="row small" style={{ color: 'var(--color-success-strong)', margin: 'var(--s-2) 0 0', gap: 'var(--s-1)' }}>
+                  <Icon name="star" size={16} /> تمت إضافة <strong>+{result.xpAwarded} XP</strong> إلى رصيدك كمكافأة على اجتياز التقييم!
                 </p>
               )}
             </div>

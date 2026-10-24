@@ -101,7 +101,15 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
   );
 }
 
-export function Login({ navigate }: { navigate: (to: string) => void }) {
+export function Login({
+  navigate,
+  sessionExpired = false,
+  onDismissNotice,
+}: {
+  navigate: (to: string) => void;
+  sessionExpired?: boolean;
+  onDismissNotice?: () => void;
+}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { busy, error, submit } = useAuthForm(() => navigate('/learn'));
@@ -114,6 +122,16 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
   return (
     <AuthShell title="تسجيل الدخول" subtitle="أهلًا بعودتك — تابع من حيث توقفت.">
       <form className="stack" onSubmit={onSubmit} noValidate>
+        {sessionExpired && (
+          <div className="alert info" role="status" style={{ display: 'flex', justifyContent: 'space-between', gap: 'var(--s-2)' }}>
+            <span>انتهت جلستك أو انقطعت. سجّل الدخول من جديد لمتابعة تقدمك المحفوظ.</span>
+            {onDismissNotice && (
+              <button type="button" className="btn ghost icon-btn" aria-label="إغلاق التنبيه" onClick={onDismissNotice} style={{ minHeight: 32, minWidth: 32 }}>
+                <Icon name="close" size={16} />
+              </button>
+            )}
+          </div>
+        )}
         <ErrorBox error={error} />
         <label className="field">
           <span>البريد الإلكتروني</span>

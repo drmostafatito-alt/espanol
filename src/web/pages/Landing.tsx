@@ -153,10 +153,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
               <li>كل نقطة XP وكل تقدم يُحسب على الخادم — لا عدّادات وهمية في متصفحك.</li>
             </ul>
           </div>
-          <div className="card">
-            <h2>جرّب الصوت الآن</h2>
-            <AudioDemo text="Quiero un café, por favor." audioKey="pending/a1-cafe-quiero-cafe-con-leche" />
-          </div>
+          <AudioDemo text="Quiero un café, por favor." audioKey="pending/a1-cafe-quiero-cafe-con-leche" />
         </section>
 
         {/* ---------------- دعوة ختامية ---------------- */}

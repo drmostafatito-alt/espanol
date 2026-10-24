@@ -69,7 +69,14 @@ vi.mock('../src/web/api', () => {
       constructor(public status: number, public code: string, messageAr: string) {
         super(messageAr);
       }
+      isNetwork(): boolean {
+        return this.status === 0;
+      }
+      isUnauthorized(): boolean {
+        return this.status === 401;
+      }
     },
+    onUnauthorized: vi.fn(() => () => {}),
     api: {
       me: vi.fn(async () => ({ user })),
       logout: vi.fn(async () => ({ ok: true })),

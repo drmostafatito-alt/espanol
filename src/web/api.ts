@@ -12,22 +12,75 @@ export interface ApiUser {
 }
 
 export class ApiError extends Error {
-  constructor(public status: number, public code: string, messageAr: string, public details?: unknown) {
+  constructor(
+    public status: number,
+    public code: string,
+    messageAr: string,
+    public details?: unknown,
+  ) {
     super(messageAr);
+  }
+  isNetwork(): boolean {
+    return this.status === 0;
+  }
+  isUnauthorized(): boolean {
+    return this.status === 401;
   }
 }
 
+type UnauthorizedHandler = () => void;
+let unauthorizedHandler: UnauthorizedHandler | null = null;
+
+/** تسجّل طبقة الجلسة معالجًا مركزيًا لانتهاء الصلاحية (401) */
+export function onUnauthorized(handler: UnauthorizedHandler): () => void {
+  unauthorizedHandler = handler;
+  return () => {
+    if (unauthorizedHandler === handler) unauthorizedHandler = null;
+  };
+}
+
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
-  const res = await fetch(path, {
-    ...init,
-    credentials: 'include',
-    headers: { 'Content-Type': 'application/json', ...(init.headers ?? {}) },
-  });
+  let res: Response;
+  try {
+    res = await fetch(path, {
+      ...init,
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json', ...(init.headers ?? {}) },
+    });
+  } catch {
+    // المتصفح يرفض الطلب أصلًا: الخادم غير متاح أو انقطع الاتصال — ليس رفض مصادقة
+    throw new ApiError(0, 'NETWORK_ERROR', 'تعذّر الاتصال بالخادم. تحقق من اتصالك بالإنترنت ثم أعد المحاولة.');
+  }
+
   const text = await res.text();
-  const body = text ? JSON.parse(text) : {};
+  let body: unknown = {};
+  if (text) {
+    try {
+      body = JSON.parse(text);
+    } catch {
+      // استجابة غير JSON (صفحة خطأ بروكسي/بوابة مثلًا) — لا نُسقط المستخدم في خطأ برمجي غامض
+      throw new ApiError(
+        res.status || 0,
+        'BAD_RESPONSE',
+        res.status >= 500 || res.status === 0
+          ? 'الخادم متاح لكنه أعاد استجابة غير صالحة. حاول مرة أخرى بعد قليل.'
+          : 'تعذّر فهم استجابة الخادم. أعد المحاولة.',
+      );
+    }
+  }
+
   if (!res.ok) {
-    const err = body?.error ?? {};
-    throw new ApiError(res.status, err.code ?? 'UNKNOWN', err.message ?? 'حدث خطأ غير متوقع.', err);
+    // الخادم يضع حقول السياق (مثل missing في LESSON_LOCKED) مباشرة على كائن الخطأ
+    const err = (body as { error?: { code?: string; message?: string } })?.error ?? {};
+    const apiError = new ApiError(
+      res.status,
+      err.code ?? 'UNKNOWN',
+      err.message ?? 'حدث خطأ غير متوقع.',
+      err,
+    );
+    // انتهاء الجلسة أو غيابها على مسار محمي: معالجة مركزية واحدة بدل رسائل متناثرة
+    if (res.status === 401 && unauthorizedHandler) unauthorizedHandler();
+    throw apiError;
   }
   return body as T;
 }
