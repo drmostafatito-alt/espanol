@@ -193,10 +193,19 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
         // نص النطق الاحتياطي: إن لم يُحدّده المحتوى صراحةً، يستخدمه الخادم من نص
         // الإجابة الصحيحة — لا من أول خيار (قد يكون مشتِّتًا فيُنطق نص خاطئ).
         let speechEs = prompt.speechEs;
-        if (prompt.audioKey && !speechEs) {
-          const key = safeParse<AnswerKey>(e.answer_key_json);
-          const correctId = key?.correctOptionIds?.[0];
-          speechEs = opts.find(o => o.id === correctId)?.text ?? key?.accepted?.[0] ?? null;
+        const key = safeParse<AnswerKey>(e.answer_key_json);
+        const correctId = key?.correctOptionIds?.[0];
+        if (!speechEs) {
+          if (e.type === 'word_order' || e.type === 'dialogue_order') {
+            speechEs = key?.accepted?.[0] ?? null;
+          } else if (e.type === 'listen_choose' || e.type === 'choose_reply' || e.type === 'word_choice') {
+            speechEs = prompt.stemEs ?? opts.find(o => o.id === correctId)?.text ?? key?.accepted?.[0] ?? null;
+          } else {
+            speechEs = prompt.stemEs ?? key?.accepted?.[0] ?? null;
+          }
+        }
+        if (speechEs && typeof speechEs === 'string') {
+          speechEs = speechEs.replace(/_{2,}/g, '...').trim();
         }
         return {
           id: e.id,

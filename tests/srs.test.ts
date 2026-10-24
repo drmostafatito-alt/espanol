@@ -377,4 +377,39 @@ describe('SRS عبر الخادم الحقيقي', () => {
     const n = h.db.raw.prepare(`SELECT COUNT(*) AS n FROM srs_reviews`).get() as { n: number };
     expect(n.n).toBe(0);
   });
+
+  it('التحكم في ظهور الترجمة المصرية (fusha vs fusha_eg)', async () => {
+    await completeLessonOnce();
+    // 1. عند اختيار الفصحى فقط: revealArEg يجب أن يكون null دائمًا
+    const patchRes1 = await h.call('/api/me', {
+      method: 'PATCH',
+      cookie,
+      body: JSON.stringify({ explanationStyle: 'fusha' }),
+    });
+    expect(patchRes1.status).toBe(200);
+
+    const resFusha = await h.json<{ cards: { id: string; revealArEg?: string | null }[] }>(
+      await h.call('/api/review/session', { cookie }),
+    );
+    expect(resFusha.cards.length).toBeGreaterThan(0);
+    for (const c of resFusha.cards) {
+      expect(c.revealArEg ?? null).toBeNull();
+    }
+
+    // 2. عند اختيار الفصحى مع المصرية: revealArEg مسموح بظهوره عند توفره
+    const patchRes2 = await h.call('/api/me', {
+      method: 'PATCH',
+      cookie,
+      body: JSON.stringify({ explanationStyle: 'fusha_eg' }),
+    });
+    expect(patchRes2.status).toBe(200);
+
+    const resEg = await h.json<{ cards: { id: string; revealArEg?: string | null }[] }>(
+      await h.call('/api/review/session', { cookie }),
+    );
+    expect(resEg.cards.length).toBeGreaterThan(0);
+    // تظهر المصرية لبعض البطاقات المستوردة
+    const hasAnyEg = resEg.cards.some(c => typeof c.revealArEg === 'string' && c.revealArEg.length > 0);
+    expect(hasAnyEg).toBe(true);
+  });
 });

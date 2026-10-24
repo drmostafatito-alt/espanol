@@ -94,6 +94,17 @@ describe('AudioService — عقد الصوت', () => {
     expect(spoken[0]!.lang).toBe('es-ES');
   });
 
+  it('مفاتيح tts-* التلقائية تنتقل مباشرة إلى النطق المحلي بلا طلب شبكة', async () => {
+    const { svc, created, spoken } = makeService({
+      resolve: (k) => (k.startsWith('pending/') || k.startsWith('tts-') ? null : `https://media.test/${k}.opus`),
+      voices: [{ lang: 'es-ES', name: 'Spanish' }],
+    });
+    const r = await svc.play(cue('tts-ex_123', 'Quiero un café'));
+    expect(r.source).toBe('speech');
+    expect(created).toHaveLength(0);
+    expect(spoken[0]!.text).toBe('Quiero un café');
+  });
+
   it('فشل الأصل → بديل صوتي (بعد التحقق من وجود صوت إسباني)', async () => {
     const { svc, spoken } = makeService({ behavior: 'error', voices: [{ lang: 'es-ES', name: 'Spanish' }] });
     const r = await svc.play(cue('audio/broken'));

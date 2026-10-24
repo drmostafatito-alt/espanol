@@ -172,7 +172,7 @@ export function Search({
                     {!r.titleEs && !r.titleAr ? <span>{r.title}</span> : null}
                   </h3>
 
-                  {r.meaningArEg && r.meaningArEg !== r.meaningArFusha && (
+                  {user?.explanationStyle !== 'fusha' && r.meaningArEg && r.meaningArEg !== r.meaningArFusha && (
                     <p className="small" style={{ margin: 'var(--s-1) 0', color: 'var(--color-secondary, #555)' }}>
                       <strong>بالمصرية:</strong> {r.meaningArEg}
                     </p>

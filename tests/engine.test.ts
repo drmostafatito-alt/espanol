@@ -55,6 +55,25 @@ describe('G: التصحيح (دالة نقية)', () => {
     expect(res.chosenFeedbackAr).toBe('لا يجيب عن السؤال');
   });
 
+    it('word_order يقبل مصفوفة الكلمات المباشرة (raw array) من اليسار لليمين', () => {
+    const key = { accepted: ['Yo te amo'], punctuationInsensitive: true };
+    // جملة من 3 كلمات: الترتيب السليم LTR
+    expect(gradeAnswer('word_order', key, ['Yo', 'te', 'amo']).correct).toBe(true);
+    // الترتيب المعكوس يُرفض
+    expect(gradeAnswer('word_order', key, ['amo', 'te', 'Yo']).correct).toBe(false);
+  });
+
+  it('word_order يتعامل مع جملة 5 كلمات وعلامات الاستفهام والكلمات المكررة', () => {
+    const key = { accepted: ['¿A qué hora quedamos mañana?'], punctuationInsensitive: true };
+    expect(gradeAnswer('word_order', key, ['¿A', 'qué', 'hora', 'quedamos', 'mañana?']).correct).toBe(true);
+    expect(gradeAnswer('word_order', key, ['mañana?', 'quedamos', 'hora', 'qué', '¿A']).correct).toBe(false);
+
+    // كلمات مكررة في نفس الجملة
+    const keyRepeat = { accepted: ['es lo que es'] };
+    expect(gradeAnswer('word_order', keyRepeat, ['es', 'lo', 'que', 'es']).correct).toBe(true);
+    expect(gradeAnswer('word_order', keyRepeat, ['lo', 'es', 'es', 'que']).correct).toBe(false);
+  });
+
   it('word_order يقبل صيغًا متعددة ويرفض الترتيب الخاطئ', () => {
     const key = { accepted: ['Quiero un café por favor', 'Quiero un café, por favor'], punctuationInsensitive: true };
     expect(gradeAnswer('word_order', key, { tokens: ['Quiero', 'un', 'café', 'por', 'favor'] }).correct).toBe(true);

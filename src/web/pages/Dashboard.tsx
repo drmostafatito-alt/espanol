@@ -40,7 +40,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   }, []);
 
   if (!user) return null;
-  const style = { fusha: 'العربية الفصحى', eg: 'العامية المصرية', fusha_eg: 'فصحى + توضيح مصري' }[user.explanationStyle];
+  const style = { fusha: 'العربية الفصحى فقط', eg: 'العامية المصرية', fusha_eg: 'فصحى + توضيح مصري' }[user.explanationStyle];
   const lessons = progress?.lessons ?? [];
   const completedLessons = progress?.totals.lessons_completed ?? 0;
   const totalXp = progress?.stats.xp_total ?? 0;

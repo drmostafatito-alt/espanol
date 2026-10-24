@@ -47,11 +47,11 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
           <input type="text" value={name} onChange={e => setName(e.target.value)} maxLength={80} />
         </label>
         <label className="field">
-          <span>أسلوب الشرح</span>
+          <span>أسلوب الشرح والترجمة</span>
           <select value={style} onChange={e => setStyle(e.target.value as typeof style)}>
-            <option value="fusha">العربية الفصحى</option>
+            <option value="fusha">العربية الفصحى فقط (دون أي لهجات عامية)</option>
+            <option value="fusha_eg">الفصحى مع التوضيح بالمصرية عند توفره (موصى به)</option>
             <option value="eg">العامية المصرية</option>
-            <option value="fusha_eg">فصحى مع توضيح مصري مختصر (موصى به)</option>
           </select>
         </label>
         <label className="field">

@@ -548,7 +548,8 @@ function ExerciseBody({
     };
     return (
       <div>
-        <div className="token-box" aria-label="الجملة التي تكوّنها">
+        {playButton && <div style={{ marginBottom: 'var(--s-2)' }}>{playButton}</div>}
+        <div className="token-box" dir="ltr" data-testid="selected-tokens" aria-label="الجملة التي تكوّنها">
           {tokens.map((id, i) => (
             <button
               key={`${id}-${i}`}
@@ -562,7 +563,7 @@ function ExerciseBody({
           ))}
           {tokens.length === 0 && <span className="muted small">اضغط الكلمات بالترتيب</span>}
         </div>
-        <div className="token-box" style={{ marginTop: 'var(--s-2)' }}>
+        <div className="token-box" dir="ltr" data-testid="remaining-tokens" style={{ marginTop: 'var(--s-2)' }}>
           {remaining.map(item => (
             <button
               key={item.id}

@@ -11,6 +11,7 @@
    ========================================================================== */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating } from '../api';
+import { useAuth } from '../state';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
@@ -58,6 +59,7 @@ const RATING_KEY: Record<string, ReviewRating> = { '1': 'again', '2': 'hard', '3
 type Phase = 'loading' | 'card' | 'revealed' | 'saving' | 'empty' | 'error';
 
 export function Review({ navigate }: { navigate: (to: string) => void }) {
+  const { user } = useAuth();
   const [payload, setPayload] = useState<ReviewPayload | null>(null);
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
@@ -284,7 +286,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
             {revealed && (
               <div data-testid="review-answer">
                 <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>{card.revealAr}</p>
-                {card.revealArEg && <p className="small muted">بالعامية: {card.revealArEg}</p>}
+                {user?.explanationStyle !== 'fusha' && card.revealArEg && <p className="small muted">بالعامية: {card.revealArEg}</p>}
                 {card.exampleEs && <p className="es small">«{card.exampleEs}»</p>}
                 {card.usageNoteAr && <p className="small muted">{card.usageNoteAr}</p>}
                 {card.commonErrorAr && <p className="small error-text">خطأ شائع: {card.commonErrorAr}</p>}

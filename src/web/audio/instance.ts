@@ -3,17 +3,24 @@ import { AudioService, type AudioLike, type SpeechLike, type SpeechSynthesisUtte
 /** ربط الخدمة ببيئة المتصفح — المُكوّنات لا تعرف تفاصيل الصوت */
 const MEDIA_ORIGIN = (import.meta.env.VITE_MEDIA_ORIGIN as string | undefined) ?? '';
 
+// الاحتفاظ بالمراجع النشطة لمنع Chromium Garbage Collection Bug من قتل النطق الصوتي في منتصفه
+const activeUtterances = new Set<SpeechSynthesisUtterance>();
+
 function createSpeech(): SpeechLike | null {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
   return {
     speak: (u: SpeechSynthesisUtteranceLike) => {
       try {
-        window.speechSynthesis.cancel();
+        // فك تعليق المحرك في حال كان المتصفح أوقفه مؤقتًا (Chrome/Safari paused state bug)
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+
         const utter = new window.SpeechSynthesisUtterance(u.text);
         utter.lang = u.lang || 'es-ES';
         utter.rate = u.rate || 1.0;
 
-        // اختيار أفضل صوت إسباني متوفر على الجهاز
+        // اختيار أفضل صوت إسباني متوفر على الجهاز إن وُجد
         const voices = window.speechSynthesis.getVoices();
         let matchedVoice: SpeechSynthesisVoice | undefined;
         if (u.lang === 'es-419') {
@@ -28,8 +35,21 @@ function createSpeech(): SpeechLike | null {
           utter.voice = matchedVoice;
         }
 
-        if (u.onend) utter.onend = () => u.onend?.();
-        if (u.onerror) utter.onerror = (e) => u.onerror?.(e);
+        activeUtterances.add(utter);
+
+        const cleanup = () => {
+          activeUtterances.delete(utter);
+        };
+
+        utter.onend = () => {
+          cleanup();
+          u.onend?.();
+        };
+
+        utter.onerror = (e) => {
+          cleanup();
+          u.onerror?.(e);
+        };
 
         window.speechSynthesis.speak(utter);
       } catch (err) {
@@ -38,6 +58,7 @@ function createSpeech(): SpeechLike | null {
     },
     cancel: () => {
       try {
+        activeUtterances.clear();
         window.speechSynthesis.cancel();
       } catch { /* ignored */ }
     },
@@ -55,11 +76,13 @@ export const audioService = new AudioService({
   createAudio: url => new Audio(url) as unknown as AudioLike,
   speech: createSpeech(),
   resolveUrl: (key, variant) => {
-    // المفاتيح المعلَّقة (pending/) لا تُترجم إلى رابط: لا ندّعي وجود تسجيل
-    if (!key || key.startsWith('pending/')) return null;
+    // المفاتيح المعلَّقة (pending/) أو مفاتيح TTS التلقائية أو عدم توفر أصل R2
+    // لا تُترجم إلى رابط: البديل المحلي speechSynthesis يعمل فورًا بلا طلب شبكة فاشل
+    if (!key || key.startsWith('pending/') || key.startsWith('tts-') || !MEDIA_ORIGIN) return null;
     const v = variant ?? 'es-ES';
     return `${MEDIA_ORIGIN}/audio/${v}/${key}.opus`;
   },
+  loadTimeoutMs: 1500, // مهلة منضبطة تمنع انتهاء مهلة إذن التفاعل للمتصفح (user gesture activation)
 });
 
 // الأصوات قد تُحمَّل بعد أول تفاعل أو حدث غير متزامن في بعض المتصفحات
