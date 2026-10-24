@@ -178,7 +178,8 @@ export function validateCurriculum(map, opts = {}) {
   const declaredAuthored = allLessonList.filter(l => l.status === 'authored');
   for (const l of declaredAuthored) {
     if (l.filePath) {
-      const abs = join(ROOT_FOR_FS, l.filePath);
+      // تطبيع فواصل Windows (\) إلى (/) حتى لا تكسر الخريطة المولَّدة على Windows فحص Linux.
+      const abs = join(ROOT_FOR_FS, l.filePath.replaceAll('\\', '/'));
       if (!existsSyncSafe(abs)) err('AUTHORED_FILE_MISSING', `مسار الملف المعلَن غير موجود: ${l.filePath}`, l.slug);
       continue;
     }

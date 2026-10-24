@@ -11,7 +11,9 @@ import type { D1Database, D1PreparedStatement, D1Result } from '../types';
 let SqliteDatabase: any;
 
 try {
-  const nodeSqlite = await import('node:sqlite');
+  // @vite-ignore: محرك Node أصيل — لا يُحزَّم أبدًا في بيئة jsdom (اختبارات الواجهة)،
+  // بل يُستورَد وقت التشغيل في Node حيث يعمل فعلًا.
+  const nodeSqlite = await import(/* @vite-ignore */ 'node:sqlite');
   if (nodeSqlite && nodeSqlite.DatabaseSync) {
     SqliteDatabase = nodeSqlite.DatabaseSync;
   }
@@ -21,7 +23,8 @@ try {
 
 if (!SqliteDatabase) {
   try {
-    const bSqlite = await import('better-sqlite3');
+    // @vite-ignore: بديل Node أصيل — نفس سبب التعليق أعلاه.
+    const bSqlite = await import(/* @vite-ignore */ 'better-sqlite3');
     SqliteDatabase = bSqlite.default || bSqlite;
   } catch {
     throw new Error('تعذر تحميل أي محرك SQLite (node:sqlite أو better-sqlite3)');
