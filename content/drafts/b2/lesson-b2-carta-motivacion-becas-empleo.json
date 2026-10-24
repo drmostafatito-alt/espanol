@@ -383,9 +383,39 @@
           "modelAnswer": "Mi trayectoria sólida avala mi idoneidad para esta convocatoria y deseo aportar todo mi potencial a su equipo."
         },
         "scoring": {
-          "mode": "all_or_nothing"
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
         }
       }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 3,
+      "requiredExerciseTypes": [
+        "fill_blank",
+        "listen_choose",
+        "speak_with_text",
+        "word_choice",
+        "word_order"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "programSlug": "main-track",
+    "targetStructures": [
+      "التراكيب البلاغية والذاتية في خطابات الدافع التنافسية"
     ]
   }
 }

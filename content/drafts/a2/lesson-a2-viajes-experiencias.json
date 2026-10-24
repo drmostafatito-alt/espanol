@@ -131,7 +131,10 @@
         "difficulty": 1,
         "targetVocab": [
           "viajar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_viaj_2_choice",
@@ -179,7 +182,10 @@
         "targetVocab": [
           "verano",
           "pasado"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_viaj_3_fill",
@@ -256,7 +262,10 @@
         "targetVocab": [
           "viaje",
           "ciudad"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_viaj_5_order",

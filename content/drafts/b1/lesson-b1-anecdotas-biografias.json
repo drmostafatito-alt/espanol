@@ -133,7 +133,10 @@
         "targetVocab": [
           "nacer",
           "decidir"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_bio_2_choice",
@@ -180,7 +183,10 @@
         "difficulty": 1,
         "targetVocab": [
           "nacer"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_bio_3_fill",
@@ -258,7 +264,10 @@
         "targetVocab": [
           "triunfo",
           "carrera"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_bio_5_order",

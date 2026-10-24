@@ -132,7 +132,10 @@
         "targetVocab": [
           "libro",
           "amigo"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_pos_2_choice_su",
@@ -179,7 +182,10 @@
         "difficulty": 1,
         "targetVocab": [
           "coche"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_pos_3_fill",
@@ -255,7 +261,10 @@
         "difficulty": 2,
         "targetVocab": [
           "madre"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_pos_5_order",

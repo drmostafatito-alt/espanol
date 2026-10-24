@@ -237,7 +237,9 @@
           "type": "string",
           "minLength": 2,
           "description": "النص الإسباني الذي يُنطق احتياطيًا عبر speechSynthesis عند غياب الملف الصوتي. إسباني دائمًا."
-        }
+        },
+        "mode": { "type": "string" },
+        "promptAr": { "type": "string" }
       },
       "additionalProperties": false
     }

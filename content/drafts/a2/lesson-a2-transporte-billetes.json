@@ -133,7 +133,10 @@
         "targetVocab": [
           "salir",
           "horario"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_trn_2_choice",
@@ -181,7 +184,10 @@
         "targetVocab": [
           "billete",
           "tren"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_trn_3_fill",
@@ -257,7 +263,10 @@
         "difficulty": 2,
         "targetVocab": [
           "billete"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_trn_5_wordorder",

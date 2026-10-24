@@ -72,7 +72,17 @@
             "notes": { "type": "string" }
           },
           "additionalProperties": false
-        }
+        },
+        "culturalNoteAr": { "type": "string" },
+        "pedagogicalRationaleAr": { "type": "string" },
+        "status": { "type": "string" },
+        "levelCode": { "type": "string" },
+        "titleEs": { "type": "string" },
+        "subtitleAr": { "type": "string" },
+        "order": { "type": "integer" },
+        "cefrLevel": { "type": "string" },
+        "pedagogy": { "type": "object" },
+        "contentBlocks": { "type": "array" }
       },
       "additionalProperties": false
     }

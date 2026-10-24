@@ -133,7 +133,10 @@
         "targetVocab": [
           "estudiar",
           "mientras"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_marc_2_choice",
@@ -181,7 +184,10 @@
         "targetVocab": [
           "mientras",
           "biblioteca"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_marc_3_fill",
@@ -257,7 +263,10 @@
         "difficulty": 2,
         "targetVocab": [
           "final"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_marc_5_order",

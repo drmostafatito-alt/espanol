@@ -133,7 +133,10 @@
         "targetVocab": [
           "salir",
           "llegar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_plus_2_choice",
@@ -180,7 +183,10 @@
         "difficulty": 2,
         "targetVocab": [
           "terminar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_plus_3_fill",
@@ -256,7 +262,10 @@
         "difficulty": 2,
         "targetVocab": [
           "explicar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_plus_5_order",

@@ -132,7 +132,10 @@
         "targetVocab": [
           "año",
           "pequeño"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_edad_2_choice_verb",
@@ -180,7 +183,10 @@
         "targetVocab": [
           "tener",
           "año"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_edad_3_fill",
@@ -258,7 +264,10 @@
         "targetVocab": [
           "año",
           "amigo"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_edad_5_order",

@@ -132,7 +132,10 @@
         "difficulty": 2,
         "targetVocab": [
           "caminar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_tiem_2_choice",
@@ -179,7 +182,10 @@
         "difficulty": 2,
         "targetVocab": [
           "ocurrir"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_tiem_3_fill",
@@ -256,7 +262,10 @@
         "targetVocab": [
           "recordar",
           "historia"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "b1_tiem_5_order",

@@ -133,7 +133,10 @@
         "targetVocab": [
           "habitación",
           "noche"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_hot_2_choice",
@@ -180,7 +183,10 @@
         "difficulty": 1,
         "targetVocab": [
           "reserva"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_hot_3_fill",
@@ -258,7 +264,10 @@
         "targetVocab": [
           "llave",
           "habitación"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_hot_5_wordorder",

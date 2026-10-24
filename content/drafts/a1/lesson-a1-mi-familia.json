@@ -132,7 +132,10 @@
         "targetVocab": [
           "hermano",
           "hermana"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_fam_2_choice",
@@ -179,7 +182,10 @@
         "difficulty": 1,
         "targetVocab": [
           "hermano"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_fam_3_fill",
@@ -256,7 +262,10 @@
         "targetVocab": [
           "hijo",
           "hija"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_fam_5_order",

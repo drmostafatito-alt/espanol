@@ -133,7 +133,10 @@
           "alto",
           "simpático",
           "trabajador"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_desc_2_choice_gen",
@@ -181,7 +184,10 @@
         "targetVocab": [
           "trabajador",
           "persona"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_desc_3_fill",
@@ -259,7 +265,10 @@
         "targetVocab": [
           "alto",
           "bajo"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a1_desc_5_order",

@@ -133,7 +133,10 @@
         "targetVocab": [
           "vuelo",
           "retraso"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_anec_2_choice",
@@ -181,7 +184,10 @@
         "targetVocab": [
           "suerte",
           "maleta"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_anec_3_fill",
@@ -258,7 +264,10 @@
         "targetVocab": [
           "maleta",
           "encontrar"
-        ]
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
       },
       {
         "id": "a2_anec_5_wordorder",

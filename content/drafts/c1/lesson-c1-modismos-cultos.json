@@ -383,7 +383,19 @@
           "modelAnswer": "No podemos hacer la vista gorda ante el fraude."
         },
         "scoring": {
-          "mode": "all_or_nothing"
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
         }
       }
     ]
