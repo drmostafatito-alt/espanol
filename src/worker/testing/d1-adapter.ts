@@ -10,10 +10,14 @@ import type { D1Database, D1PreparedStatement, D1Result } from '../types';
 
 let SqliteDatabase: any;
 
+// ملاحظة مهمة — لا تعيد كتابة السطر التالي بصيغة import('node:sqlite') حرفية:
+// محلل Vite الساكن في بيئة اختبارات jsdom سيحاول تحزيمها ويفشل على Node 22،
+// لأن node:sqlite ليست في builtinModules هناك رغم أن الاستيراد يعمل وقت التشغيل.
+// المواصفة المحسوبة تُبقي الاستيراد runtime-only في Node، حيث يعمل فعلًا.
+const NODE_SQLITE_SPEC = ['node', 'sqlite'].join(':');
+
 try {
-  // @vite-ignore: محرك Node أصيل — لا يُحزَّم أبدًا في بيئة jsdom (اختبارات الواجهة)،
-  // بل يُستورَد وقت التشغيل في Node حيث يعمل فعلًا.
-  const nodeSqlite = await import(/* @vite-ignore */ 'node:sqlite');
+  const nodeSqlite = await import(NODE_SQLITE_SPEC);
   if (nodeSqlite && nodeSqlite.DatabaseSync) {
     SqliteDatabase = nodeSqlite.DatabaseSync;
   }
@@ -23,7 +27,6 @@ try {
 
 if (!SqliteDatabase) {
   try {
-    // @vite-ignore: بديل Node أصيل — نفس سبب التعليق أعلاه.
     const bSqlite = await import(/* @vite-ignore */ 'better-sqlite3');
     SqliteDatabase = bSqlite.default || bSqlite;
   } catch {
