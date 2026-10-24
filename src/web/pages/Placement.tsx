@@ -160,7 +160,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (!user) {
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card" style={{ textAlign: 'center' }}>
+        <div className="card" style={{ textAlign: 'center', minWidth: 0, overflowWrap: 'break-word' }}>
           <Icon name="lock" size={32} label="تسجيل الدخول مطلوب" />
           <h2>تسجيل الدخول مطلوب</h2>
           <p className="muted">يرجى تسجيل الدخول أو إنشاء حساب لحفظ نتيجتك وفتح المستويات تلقائيًا.</p>
@@ -234,7 +234,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   if (result) {
     return (
       <div className="container" style={{ maxWidth: 680 }}>
-        <div className="card" style={{ textAlign: 'center' }}>
+        <div className="card" style={{ textAlign: 'center', minWidth: 0, overflowWrap: 'break-word' }}>
           <div style={{ width: 190, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
             <CartoonScene cartoon={result.passed ? 'trophy' : 'study'} label={result.passed ? 'كأس اجتياز اختبار تحديد المستوى' : 'طالب يراجع للمحاولة التالية'} />
           </div>
@@ -275,12 +275,12 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container" style={{ maxWidth: 680 }}>
-      <div className="card card-green" style={{ marginBottom: 'var(--s-4)' }}>
-        <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start' }}>
+      <div className="card card-green" style={{ marginBottom: 'var(--s-4)', minWidth: 0, overflowWrap: 'break-word' }}>
+        <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
           <div style={{ width: 72, flex: 'none' }}>
             <TopicScene topic="greetings" label="مشهد تحية وتعريف بالإسبانية" />
           </div>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
             <span className="kicker">اختبار تحديد المستوى</span>
             <h1 style={{ margin: 'var(--s-1) 0' }}>اختبار تحديد المستوى</h1>
             <p className="muted" style={{ margin: 0 }}>
@@ -288,7 +288,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
             </p>
           </div>
         </div>
-        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-3)' }}>
+        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-3)', flexWrap: 'wrap' }}>
           <span className="small muted num">السؤال {index + 1} من {QUESTIONS.length}</span>
           <button className="btn ghost sm" onClick={() => navigate('/learn')}>
             <Icon name="x" size={16} /> خروج
@@ -297,8 +297,8 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
         <ProgressBar value={progressPct} label="تقدم الاختبار" />
       </div>
 
-      <div className="card">
-        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+      <div className="card" style={{ minWidth: 0, overflowWrap: 'break-word' }}>
+        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)', flexWrap: 'wrap' }}>
           <LevelBadge level={current.level} />
           <span className="small muted num">
             أجبت على {answeredCount} من {QUESTIONS.length}
@@ -332,7 +332,8 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
                 checked={selectedOptionId === opt.id}
                 onChange={() => handleSelect(opt.id)}
               />
-              <span className="es" style={{ fontSize: '1.05rem' }}>{opt.text}</span>
+              {/* الخيارات الإسبانية فقط تحمل dir=ltr؛ خيارات السؤال 10 عربية فتبقى RTL */}
+              <span className="es" dir={/[A-Za-z]/.test(opt.text) ? 'ltr' : undefined} style={{ fontSize: '1.05rem', minWidth: 0 }}>{opt.text}</span>
               {selectedOptionId === opt.id && <Icon name="check" size={18} label="الخيار المحدد" />}
             </label>
           ))}
@@ -340,7 +341,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
 
         {error && <div className="alert" role="alert" style={{ marginTop: 'var(--s-3)' }}>{error}</div>}
 
-        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-4)' }}>
+        <div className="row" style={{ justifyContent: 'space-between', marginTop: 'var(--s-4)', flexWrap: 'wrap' }}>
           <button
             type="button"
             className="btn ghost sm"

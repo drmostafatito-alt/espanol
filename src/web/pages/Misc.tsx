@@ -36,6 +36,19 @@ export function Transparency() {
           نحتفظ بالبريد (مُطبَّعًا) وكلمة مرور مجزّأة بـPBKDF2 وملح وpepper، وتفضيلاتك، وسجل جلساتك.
           لا نستخدم أدوات تحليل، ولا إعلانات، ولا نشارك بياناتك مع أي معلن. التسجيلات الصوتية تبقى في جهازك.
         </p>
+        <h2 style={{ color: '#1e2a4a' }}>مصادر الصور</h2>
+        <p className="small muted" style={{ margin: 0 }}>
+          صور فوتوغرافية حقيقية من ويكيميديا كومنز، مستخدمة بتراخيصها الأصلية:
+        </p>
+        <ul className="list-plain small muted">
+          <li><span dir="ltr">hero-street.jpg</span> — Xavier Badia Castellà — CC BY-SA 3.0</li>
+          <li><span dir="ltr">street2.jpg</span> — Xavier Badia Castellà — CC BY-SA 3.0</li>
+          <li><span dir="ltr">travel-window.jpg</span> — Salwa Farwaneh Dameh — CC0</li>
+          <li><span dir="ltr">paella.jpg</span> — Eruperti — CC0</li>
+          <li><span dir="ltr">callcenter-agent.jpg</span> — FiveOne51 — CC BY-SA 3.0</li>
+          <li><span dir="ltr">work-laptop.jpg</span> — Shixart1985 — CC BY 2.0</li>
+          <li><span dir="ltr">granvia.jpg</span> — Nicolas Vigier — CC0</li>
+        </ul>
       </section>
     </div>
   );

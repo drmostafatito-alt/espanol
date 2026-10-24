@@ -3,7 +3,7 @@ import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem 
 import { useAuth } from '../state';
 import { AudioDemo } from '../components/AudioDemo';
 import { Icon, LevelBadge, ProgressBar, SectionHead, EmptyState, XpChip, GemChip, StreakChip, LevelRing } from '../components/ui';
-import { TopicScene, topicForLesson } from '../components/Illustrations';
+import { PHOTOS } from '../assets/photos';
 
 interface PathRow {
   slug: string;
@@ -141,15 +141,6 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   }
 
   const nextLesson = progress?.nextLesson;
-  const nextLessonMatch = nextLesson ? lessons.find(l => l.slug === nextLesson.slug) : undefined;
-  const nextTopic = nextLesson
-    ? topicForLesson({
-        titleAr: nextLesson.title_ar,
-        unitTitleAr: nextLesson.unit_title_ar,
-        programTitleAr: nextLesson.program_title_ar ?? nextLessonMatch?.program_title_ar,
-        programSlug: nextLessonMatch?.program_slug,
-      })
-    : 'default';
 
   return (
     <div className="container">
@@ -223,8 +214,8 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         <div className="dash-hero-row" style={{ marginBottom: 'var(--s-4)' }}>
           <section className="card next-hero" data-testid="next-step-hero">
             <div className="next-hero-grid">
-              <div className="next-hero-art">
-                <TopicScene topic={nextTopic} label={`رسم موضوع درس ${nextLesson.title_ar}`} />
+              <div className="next-hero-art photo-fill">
+                <img src={PHOTOS.street2} className="photo" alt="شارع في برشلونة" />
                 <span className="hero-bubble" dir="ltr">¡Hola!</span>
               </div>
               <div className="next-hero-body">
@@ -460,19 +451,18 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         })}
       </section>
 
-      {/* المسارات التخصصية — بطاقات برؤوس تدرجية بدل الصور، كالنموذج */}
+      {/* المسارات التخصصية — بطاقات برؤوس صور فوتوغرافية، كالنموذج */}
       <section style={{ marginTop: 'var(--s-4)' }}>
         <SectionHead kicker="تطبيق عملي" title="المسارات المتخصصة" />
         {paths === null && <p className="muted small">جارٍ التحميل…</p>}
         {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
         <div className="grid cols-2">
           {(paths ?? []).map(p => {
-            const artIcon = p.slug === 'travel' || p.kind === 'travel' ? 'plane' : p.slug === 'callcenter' || p.kind === 'callcenter' ? 'headset' : 'book';
-            const gradTone = artIcon === 'plane' ? 'travel' : artIcon === 'headset' ? 'callcenter' : 'default';
+            const trackPhoto = p.slug === 'travel' || p.kind === 'travel' ? PHOTOS.travelWindow : p.slug === 'callcenter' || p.kind === 'callcenter' ? PHOTOS.callcenterAgent : PHOTOS.granvia;
             return (
               <article className="card card-hover" key={p.slug} style={{ overflow: 'hidden', paddingTop: 0, paddingInline: 0 }}>
-                <div className={`track-gradient ${gradTone}`}>
-                  <Icon name={artIcon} size={40} />
+                <div className="photo-head">
+                  <img src={trackPhoto} className="photo" alt={p.title_ar} />
                 </div>
                 <div style={{ padding: '0 var(--s-4) var(--s-4)' }}>
                   <div style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center', flexWrap: 'wrap' }}>

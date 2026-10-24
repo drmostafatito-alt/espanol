@@ -209,14 +209,14 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
       <ProgressBar value={progressPct} showPct={false} />
 
-      <div className="card lesson-card" style={{ marginTop: 'var(--s-3)' }}>
+      <div className="card lesson-card" style={{ marginTop: 'var(--s-3)', minWidth: 0, overflowWrap: 'break-word' }}>
         <style>{`.lesson-topic-art svg{width:48px;height:48px;display:block}`}</style>
         <div className="row" style={{ alignItems: 'flex-start', flexWrap: 'nowrap' }}>
           <div className="lesson-topic-art" style={{ flex: 'none', width: 48, height: 48 }}>
             <TopicScene topic={topicForLesson({ titleAr: session.lesson.titleAr })} label={`رسم موضوع درس ${session.lesson.titleAr}`} />
           </div>
           <div style={{ minWidth: 0, flex: 1 }}>
-            <div className="row" style={{ gap: 'var(--s-2)' }}>
+            <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap', minWidth: 0 }}>
               <p style={{ margin: 0, fontWeight: 800 }}>{session.lesson.titleAr}</p>
               <LevelBadge level={session.lesson.level} size="sm" />
             </div>
@@ -265,7 +265,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
             className={`card feedback ${result.mode === 'participation' ? 'neutral' : result.correct ? 'ok' : 'bad'}`}
             role="status"
             aria-live="polite"
-            style={{ marginTop: 'var(--s-3)' }}
+            style={{ marginTop: 'var(--s-3)', minWidth: 0, overflowWrap: 'break-word' }}
           >
             <strong className="row" style={{ gap: 'var(--s-2)' }}>
               {result.mode === 'participation' ? (
@@ -294,10 +294,11 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           </div>
         )}
 
-        <div className="row" style={{ marginTop: 'var(--s-4)', justifyContent: 'flex-end' }}>
+        <div className="row" style={{ marginTop: 'var(--s-4)', justifyContent: 'flex-end', flexWrap: 'wrap' }}>
           {phase === 'exercise' ? (
             <button
               className="btn"
+              style={{ width: '100%' }}
               data-testid="lesson-submit"
               onClick={() => void submit()}
               disabled={busy || !hasAnswer(current, answer)}
@@ -305,7 +306,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
               {busy ? 'جارٍ التحقق…' : 'تحقّق'}
             </button>
           ) : (
-            <button className="btn" data-testid="lesson-next" onClick={next} autoFocus>
+            <button className="btn" style={{ width: '100%' }} data-testid="lesson-next" onClick={next} autoFocus>
               {index + 1 < exercises.length ? 'التالي' : 'إنهاء الدرس'}
             </button>
           )}
@@ -412,7 +413,7 @@ function ExerciseBody({
 
     return (
       <div>
-        {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
+        {exercise.stemEs && <p className="es-block exercise-stem" dir="ltr">{exercise.stemEs}</p>}
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
 
         <div className="row" style={{ gap: 'var(--s-2)', marginTop: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
@@ -454,7 +455,7 @@ function ExerciseBody({
         {speechTranscript && (
           <div className="card" style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)' }}>
             <p className="small" style={{ margin: 0 }}>
-              <strong>ما تعرّف عليه المتصفح:</strong> <span className="es">{speechTranscript}</span>
+              <strong>ما تعرّف عليه المتصفح:</strong> <span className="es" dir="ltr">{speechTranscript}</span>
             </p>
             {exercise.stemEs && speechTranscript.trim().toLowerCase() === exercise.stemEs.trim().toLowerCase() && (
               <p className="small row" style={{ color: 'var(--c-success)', margin: 'var(--s-1) 0 0' }}>
@@ -534,7 +535,7 @@ function ExerciseBody({
             )}
           </div>
           {(showTranscript || audioNotice) && exercise.stemEs && (
-            <p className="es-block exercise-stem" style={{ marginTop: 'var(--s-2)', marginBottom: 0 }}>
+            <p className="es-block exercise-stem" dir="ltr" style={{ marginTop: 'var(--s-2)', marginBottom: 0 }}>
               {exercise.stemEs}
             </p>
           )}
@@ -556,7 +557,7 @@ function ExerciseBody({
                 disabled={disabled}
                 onChange={() => setAnswer(opt.id)}
               />
-              <span className="es">{opt.text}</span>
+              <span className="es" dir="ltr">{opt.text}</span>
             </label>
           ))}
         </div>
@@ -567,7 +568,7 @@ function ExerciseBody({
   if (exercise.options.length) {
     return (
       <div>
-        {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
+        {exercise.stemEs && <p className="es-block exercise-stem" dir="ltr">{exercise.stemEs}</p>}
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
         {playButton}
         <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
@@ -581,7 +582,7 @@ function ExerciseBody({
                 disabled={disabled}
                 onChange={() => setAnswer(opt.id)}
               />
-              <span className="es">{opt.text}</span>
+              <span className="es" dir="ltr">{opt.text}</span>
             </label>
           ))}
         </div>
@@ -639,7 +640,7 @@ function ExerciseBody({
 
   return (
     <div>
-      {exercise.stemEs && <p className="es-block exercise-stem">{exercise.stemEs}</p>}
+      {exercise.stemEs && <p className="es-block exercise-stem" dir="ltr">{exercise.stemEs}</p>}
       {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
       {playButton}
       <label className="field" style={{ marginTop: 'var(--s-3)' }}>
@@ -677,7 +678,7 @@ function ResultScreen({
   const participation = Object.values(results).filter(v => v === null).length;
 
   return (
-    <div className="card lesson-card" data-testid="lesson-result">
+    <div className="card lesson-card" data-testid="lesson-result" style={{ minWidth: 0, overflowWrap: 'break-word' }}>
       {/* كأس الإتمام عند النجاح — وكرتون مراجعة عند عدم الاجتياز؛ الأرقام كلها من الخادم كما هي */}
       {completion && completion.passed && (
         <div style={{ width: 190, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
@@ -710,7 +711,7 @@ function ResultScreen({
       {!completion && <p className="muted" style={{ marginTop: 'var(--s-3)' }}>جارٍ حساب النتيجة على الخادم…</p>}
       {completion && (
         <>
-          <div className="stat-row" style={{ marginTop: 'var(--s-3)' }}>
+          <div className="stat-row" style={{ marginTop: 'var(--s-3)', minWidth: 0, flexWrap: 'wrap' }}>
             <div className="stat"><b className="num">{completion.accuracy}%</b><span>الدقة</span></div>
             <div className="stat"><b className="num">{completion.correctCount}/{completion.gradedTotal}</b><span>إجابات صحيحة</span></div>
             <div className="stat"><b className="num">{completion.xpAwarded} XP</b><span>XP هذا الدرس</span></div>
@@ -741,7 +742,7 @@ function ResultScreen({
         </>
       )}
 
-      <div className="row" style={{ marginTop: 'var(--s-4)' }}>
+      <div className="row" style={{ marginTop: 'var(--s-4)', flexWrap: 'wrap' }}>
         <button className="btn" onClick={onBack}>رجوع إلى لوحتي</button>
         <button className="btn secondary" onClick={onRetry}>إعادة الدرس</button>
       </div>

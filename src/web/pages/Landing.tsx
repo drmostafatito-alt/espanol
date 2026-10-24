@@ -3,6 +3,7 @@ import { AudioDemo } from '../components/AudioDemo';
 import { Icon, SectionHead } from '../components/ui';
 import { TopicScene, type TopicKey } from '../components/Illustrations';
 import { api } from '../api';
+import { PHOTOS } from '../assets/photos';
 import { useAuth } from '../state';
 
 interface TrackRow {
@@ -71,7 +72,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
   return (
     <div className="container">
       {/* البطل — لغة Picture 1: عنوان عريض كحلي بكلمة برتقالية، زر برتقالي،
-          مشهد SVG مرسوم كودًا بدل الصورة (لا آلية صور في المشروع)،
+          صورة فوتوغرافية حقيقية لشارع إسباني،
           وشريط كحلي داكن Viaja / Trabaja / Vive أسفل المشهد. */}
       <section className="hero-landing">
         <div>
@@ -96,74 +97,8 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
             وحفظ دقيق لتقدمك. التفاصيل في صفحة الشفافية.
           </p>
         </div>
-        <div className="hero-art" role="img" aria-label="مشهد مرسوم لشارع إسباني مشمس بأشجار برتقال وفقاعة ترحيب ¡Hola!">
-          <svg viewBox="0 0 600 430" xmlns="http://www.w3.org/2000/svg" role="presentation">
-            <defs>
-              <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#fde68a" />
-                <stop offset="60%" stopColor="#fed7aa" />
-                <stop offset="100%" stopColor="#ffedd5" />
-              </linearGradient>
-            </defs>
-            <rect width="600" height="430" fill="url(#heroSky)" />
-            {/* شمس */}
-            <circle cx="492" cy="72" r="42" fill="#f97316" opacity="0.9" />
-            <circle cx="492" cy="72" r="30" fill="#fbbf24" />
-            {/* مبانٍ بطراز البلدة القديمة: أبراج وأقواس */}
-            <rect x="30" y="130" width="110" height="210" rx="6" fill="#e8b07d" />
-            <rect x="30" y="130" width="110" height="14" fill="#c97e4a" />
-            <rect x="58" y="180" width="22" height="40" rx="11" fill="#13294b" opacity="0.75" />
-            <rect x="92" y="180" width="22" height="40" rx="11" fill="#13294b" opacity="0.75" />
-            <rect x="58" y="250" width="22" height="40" rx="11" fill="#13294b" opacity="0.6" />
-            <rect x="92" y="250" width="22" height="40" rx="11" fill="#13294b" opacity="0.6" />
-            <rect x="150" y="90" width="120" height="250" rx="6" fill="#f3d9a4" />
-            <path d="M150 90 L210 40 L270 90 Z" fill="#c97e4a" />
-            <rect x="196" y="52" width="28" height="44" rx="4" fill="#13294b" opacity="0.7" />
-            <rect x="178" y="150" width="24" height="52" rx="12" fill="#13294b" opacity="0.75" />
-            <rect x="218" y="150" width="24" height="52" rx="12" fill="#13294b" opacity="0.75" />
-            <rect x="178" y="240" width="24" height="52" rx="12" fill="#13294b" opacity="0.6" />
-            <rect x="218" y="240" width="24" height="52" rx="12" fill="#13294b" opacity="0.6" />
-            <rect x="280" y="150" width="130" height="190" rx="6" fill="#d99a63" />
-            <rect x="280" y="150" width="130" height="14" fill="#b06a35" />
-            <rect x="308" y="200" width="26" height="46" rx="13" fill="#13294b" opacity="0.75" />
-            <rect x="352" y="200" width="26" height="46" rx="13" fill="#13294b" opacity="0.75" />
-            <rect x="308" y="270" width="26" height="46" rx="13" fill="#13294b" opacity="0.6" />
-            <rect x="352" y="270" width="26" height="46" rx="13" fill="#13294b" opacity="0.6" />
-            <rect x="420" y="110" width="140" height="230" rx="6" fill="#eec27a" />
-            <path d="M420 110 L490 62 L560 110 Z" fill="#c97e4a" />
-            <rect x="448" y="170" width="24" height="50" rx="12" fill="#13294b" opacity="0.75" />
-            <rect x="492" y="170" width="24" height="50" rx="12" fill="#13294b" opacity="0.75" />
-            <rect x="448" y="250" width="24" height="50" rx="12" fill="#13294b" opacity="0.6" />
-            <rect x="492" y="250" width="24" height="50" rx="12" fill="#13294b" opacity="0.6" />
-            {/* شارع */}
-            <rect x="0" y="340" width="600" height="90" fill="#d9b98c" />
-            <rect x="0" y="340" width="600" height="8" fill="#b98d5a" />
-            {/* أشجار برتقال */}
-            <g>
-              <rect x="72" y="300" width="10" height="44" fill="#7c4a21" />
-              <circle cx="77" cy="288" r="34" fill="#16a34a" />
-              <circle cx="62" cy="296" r="8" fill="#f97316" />
-              <circle cx="92" cy="282" r="8" fill="#f97316" />
-              <circle cx="80" cy="306" r="7" fill="#f97316" />
-            </g>
-            <g>
-              <rect x="512" y="300" width="10" height="44" fill="#7c4a21" />
-              <circle cx="517" cy="288" r="34" fill="#16a34a" />
-              <circle cx="502" cy="296" r="8" fill="#f97316" />
-              <circle cx="532" cy="282" r="8" fill="#f97316" />
-              <circle cx="520" cy="306" r="7" fill="#f97316" />
-            </g>
-            {/* فقاعة ترحيب */}
-            <g>
-              <rect x="330" y="66" width="150" height="62" rx="18" fill="#ffffff" />
-              <path d="M360 128 L372 146 L388 128 Z" fill="#ffffff" />
-              <text x="405" y="106" textAnchor="middle" fontSize="30" fontWeight="800" fill="#13294b" fontFamily="Source Sans 3, sans-serif">¡Hola!</text>
-            </g>
-            {/* عبارة بخط مائل كما في النموذج */}
-            <text x="40" y="60" fontSize="24" fontStyle="italic" fill="#13294b" fontFamily="Source Sans 3, sans-serif">Un nuevo</text>
-            <text x="40" y="88" fontSize="24" fontStyle="italic" fill="#13294b" fontFamily="Source Sans 3, sans-serif">idioma,</text>
-            <text x="40" y="116" fontSize="24" fontStyle="italic" fill="#13294b" fontFamily="Source Sans 3, sans-serif">más oportunidades</text>
-          </svg>
+        <div className="hero-art hero-media">
+          <img src={PHOTOS.heroStreet} className="photo photo-hero" alt="شارع في برشلونة" />
         </div>
       </section>
 
@@ -236,46 +171,38 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
         </div>
       </section>
 
-      {/* ماذا ستتعلم؟ — بطاقات تدرجية بدل الصور، كالنموذج */}
+      {/* ماذا ستتعلم؟ — بطاقات بصورة فوتوغرافية أعلى العنوان، كالنموذج */}
       <section className="section">
         <SectionHead kicker="مواقف حقيقية" title="ماذا ستتعلم؟" desc="أربعة سياقات عملية تدور حولها دروسك من أول يوم." />
         <div className="grid cols-2">
           <article className="card card-hover learn-card">
-            <div className="learn-card-art travel">
-              <span className="learn-card-icon" aria-hidden="true"><Icon name="plane" size={26} /></span>
-              <h3>السفر</h3>
-            </div>
+            <div className="photo-head"><img src={PHOTOS.travelWindow} className="photo" alt="مسافر ينظر من نافذة طائرة" /></div>
             <div className="learn-card-body">
+              <h3>السفر</h3>
               <p className="small muted">احجز، اسأل عن الاتجاهات، وتنقّل بثقة في إسبانيا وأمريكا اللاتينية.</p>
               <button className="btn secondary sm" onClick={() => navigate(user ? '/learn' : '/signup')}>ابدأ من حسابك</button>
             </div>
           </article>
           <article className="card card-hover learn-card">
-            <div className="learn-card-art food">
-              <span className="learn-card-icon" aria-hidden="true"><Icon name="cup" size={26} /></span>
-              <h3>المطاعم والطعام</h3>
-            </div>
+            <div className="photo-head"><img src={PHOTOS.paella} className="photo" alt="طبق باييلا إسباني" /></div>
             <div className="learn-card-body">
+              <h3>المطاعم والطعام</h3>
               <p className="small muted">اطلب طعامك وتواصل في المواقف اليومية داخل المطعم والمقهى.</p>
               <button className="btn secondary sm" onClick={() => navigate(user ? '/learn' : '/signup')}>ابدأ من حسابك</button>
             </div>
           </article>
           <article className="card card-hover learn-card">
-            <div className="learn-card-art work">
-              <span className="learn-card-icon" aria-hidden="true"><Icon name="headset" size={26} /></span>
-              <h3>العمل والكول سنتر</h3>
-            </div>
+            <div className="photo-head"><img src={PHOTOS.callcenterAgent} className="photo" alt="موظف خدمة عملاء يرتدي سماعة" /></div>
             <div className="learn-card-body">
+              <h3>العمل والكول سنتر</h3>
               <p className="small muted">تعلّم مفردات ومواقف خدمة العملاء والتواصل المهني.</p>
               <button className="btn secondary sm" onClick={() => navigate(user ? '/learn' : '/signup')}>ابدأ من حسابك</button>
             </div>
           </article>
           <article className="card card-hover learn-card">
-            <div className="learn-card-art daily">
-              <span className="learn-card-icon" aria-hidden="true"><Icon name="home" size={26} /></span>
-              <h3>الحياة اليومية</h3>
-            </div>
+            <div className="photo-head"><img src={PHOTOS.granvia} className="photo" alt="شارع جران فيا في مدريد" /></div>
             <div className="learn-card-body">
+              <h3>الحياة اليومية</h3>
               <p className="small muted">تحيات، تعارف، تسوّق، ومواقف الحياة اليومية بجمل طبيعية.</p>
               <button className="btn secondary sm" onClick={() => navigate(user ? '/learn' : '/signup')}>ابدأ من حسابك</button>
             </div>

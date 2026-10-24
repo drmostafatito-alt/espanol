@@ -235,7 +235,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
           <Icon name="warn" size={32} label="تعذّر تحميل المراجعة" />
           <h1 style={{ marginTop: 'var(--s-2)' }}>تعذّر تحميل المراجعة</h1>
           <p role="alert">{error}</p>
-          <div className="row">
+          <div className="row" style={{ flexWrap: 'wrap' }}>
             <button className="btn" onClick={() => void load()}>أعد المحاولة</button>
             <button className="btn secondary" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
           </div>
@@ -267,7 +267,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
               {pendingCount} تقييم لم يُرسل بعد. سيُرسل تلقائيًا عند عودة الاتصال — لا يضيع.
             </p>
           )}
-          <div className="row" style={{ marginTop: 'var(--s-4)' }}>
+          <div className="row" style={{ marginTop: 'var(--s-4)', flexWrap: 'wrap' }}>
             <button className="btn" onClick={() => void load()}>تحقّق مرة أخرى</button>
             <button className="btn secondary" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
             <button className="btn ghost" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
@@ -279,7 +279,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   return (
     <div className="container" style={{ maxWidth: 640 }}>
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)', flexWrap: 'wrap' }}>
         <button className="btn ghost sm" onClick={() => navigate('/learn')}><Icon name="arrowR" size={16} /> خروج</button>
         <span className="small muted num">
           {index + 1} / {cards.length} · متبقٍ اليوم: {session?.newRemaining ?? 0} جديد
@@ -299,6 +299,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         tabIndex={-1}
         data-testid="review-card"
         aria-live="polite"
+        style={{ minWidth: 0, overflowWrap: 'break-word' }}
       >
         {/* رأس كرتوني مطابق لموضوع البطاقة — من الحقول الظاهرة فقط، لا يلمّح للجواب */}
         <div style={{ width: 150, maxWidth: '100%', margin: '0 auto var(--s-2)' }}>
@@ -322,7 +323,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
             {card.promptHintAr && <p className="small muted">{card.promptHintAr}</p>}
             {revealed && (
               <div data-testid="review-answer">
-                <p className="es" style={{ fontSize: '1.5rem', fontWeight: 700 }}>{card.revealEs}</p>
+                <p className="es" dir="ltr" style={{ fontSize: '1.5rem', fontWeight: 700 }}>{card.revealEs}</p>
               </div>
             )}
           </>
@@ -334,7 +335,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
               <div data-testid="review-answer">
                 <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>{card.revealAr}</p>
                 {user?.explanationStyle !== 'fusha' && card.revealArEg && <p className="small muted">بالعامية: {card.revealArEg}</p>}
-                {card.exampleEs && <p className="es small">«{card.exampleEs}»</p>}
+                {card.exampleEs && <p className="es small" dir="ltr">«{card.exampleEs}»</p>}
                 {card.usageNoteAr && <p className="small muted">{card.usageNoteAr}</p>}
                 {card.commonErrorAr && <p className="small error-text">خطأ شائع: {card.commonErrorAr}</p>}
               </div>
@@ -367,7 +368,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         )}
 
         {revealed && (
-          <div className="rating-grid" role="group" aria-label="قيّم تذكّرك" style={{ marginTop: 'var(--s-4)' }}>
+          <div className="rating-grid" role="group" aria-label="قيّم تذكّرك" style={{ marginTop: 'var(--s-4)', minWidth: 0 }}>
             {(['again', 'hard', 'good', 'easy'] as ReviewRating[]).map((r, i) => (
               <button
                 key={r}

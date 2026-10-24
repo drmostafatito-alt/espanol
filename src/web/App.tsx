@@ -54,7 +54,14 @@ function Shell() {
     page = <NotFound navigate={navigate} />;
   }
 
-  const showBottomNav = !!user && path === '/learn';
+  // شريط سفلي للجوال — وجهات المتعلم فقط؛ شاشات التركيز (/learn/:slug و/placement) مستثناة عمدًا
+  const showBottomNav = !!user && ['/learn', '/review', '/review/packs', '/search', '/settings'].includes(path);
+  const bottomNavActive =
+    path === '/learn' ? 'home'
+    : path === '/review' || path === '/review/packs' ? 'review'
+    : path === '/search' ? 'search'
+    : path === '/settings' ? 'settings'
+    : '';
 
   return (
     <div className={`app${showBottomNav ? ' has-bottom-nav' : ''}`}>
@@ -91,19 +98,19 @@ function Shell() {
       {/* شريط تنقل سفلي للجوال — لوحة المتعلم فقط، وجهات موجودة أصلًا */}
       {showBottomNav && (
         <nav className="bottom-nav" aria-label="تنقل لوحة المتعلم">
-          <button className="bottom-nav-item active" onClick={() => navigate('/learn')}>
+          <button className={`bottom-nav-item${bottomNavActive === 'home' ? ' active' : ''}`} aria-current={bottomNavActive === 'home' ? 'page' : undefined} onClick={() => navigate('/learn')}>
             <span className="bottom-nav-icon"><Icon name="home" size={19} /></span>
             الرئيسية
           </button>
-          <button className="bottom-nav-item" onClick={() => navigate('/review')}>
+          <button className={`bottom-nav-item${bottomNavActive === 'review' ? ' active' : ''}`} aria-current={bottomNavActive === 'review' ? 'page' : undefined} onClick={() => navigate('/review')}>
             <span className="bottom-nav-icon"><Icon name="target" size={19} /></span>
             المراجعة
           </button>
-          <button className="bottom-nav-item" onClick={() => navigate('/search')}>
+          <button className={`bottom-nav-item${bottomNavActive === 'search' ? ' active' : ''}`} aria-current={bottomNavActive === 'search' ? 'page' : undefined} onClick={() => navigate('/search')}>
             <span className="bottom-nav-icon"><Icon name="search" size={19} /></span>
             البحث
           </button>
-          <button className="bottom-nav-item" onClick={() => navigate('/settings')}>
+          <button className={`bottom-nav-item${bottomNavActive === 'settings' ? ' active' : ''}`} aria-current={bottomNavActive === 'settings' ? 'page' : undefined} onClick={() => navigate('/settings')}>
             <span className="bottom-nav-icon"><Icon name="settings" size={19} /></span>
             الإعدادات
           </button>

@@ -57,12 +57,12 @@ export function ReviewPacks({ navigate }: { navigate: (to: string) => void }) {
 
       <div className="stack" style={{ marginTop: 'var(--s-3)' }}>
         {packs?.map(p => (
-          <div className="card card-hover row" key={p.slug} style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-            <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start' }}>
+          <div className="card card-hover row" key={p.slug} style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--s-3)', minWidth: 0, overflowWrap: 'break-word' }}>
+            <div className="row" style={{ gap: 'var(--s-3)', alignItems: 'flex-start', flex: '1 1 220px', minWidth: 0 }}>
               <div style={{ width: 56, flex: 'none' }}>
                 <CartoonScene cartoon={cartoonForQuestion({ titleAr: p.titleAr })} label={`رسم حزمة ${p.titleAr}`} />
               </div>
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <strong>{p.titleAr}</strong>
                 <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
                   {p.entries} مدخلًا · {p.started>0 ? `${p.started} في مراجعتك` : 'لم تبدأ'} {p.level ? `· ${p.level}` : ''}
