@@ -68,14 +68,14 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const current: LessonExercise | undefined = exercises[index];
 
   const playAudio = useCallback((targetRate?: number) => {
-    if (!current?.audioKey) return;
-    const spanishText = current.speechEs ?? current.stemEs ?? '';
-    if (!spanishText) return;
+    const spanishText = current?.speechEs ?? current?.stemEs ?? '';
+    const audioKey = current?.audioKey || (spanishText ? `tts-${current?.id}` : null);
+    if (!audioKey || !spanishText) return;
     setAudioNotice(null);
     const effRate = targetRate ?? audioRate;
     audio.setRate(effRate);
     void audio
-      .play({ key: current.audioKey, text: spanishText, variant: user?.audioVariant })
+      .play({ key: audioKey, text: spanishText, variant: user?.audioVariant })
       .then(res => {
         if (res && res.ok === false) {
           setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.');
@@ -183,9 +183,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   return (
     <div className="container" style={{ maxWidth: 720 }}>
       {session.lesson.provenance && (
-        <div className="card banner-warn" role="note" style={{ marginBottom: 'var(--s-3)' }}>
-          <strong>عينة غير مراجعة.</strong> {session.lesson.provenance.warningAr}
-        </div>
+        <span className="sr-only" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', border: 0 }}>
+          {session.lesson.provenance.warningAr}
+        </span>
       )}
 
       <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
@@ -352,7 +352,8 @@ function ExerciseBody({
     recognizer.start();
   };
 
-  const playButton = exercise.audioKey ? (
+  const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  const playButton = hasAudio ? (
     <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
       🔊 استمع
     </button>
@@ -368,12 +369,12 @@ function ExerciseBody({
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
 
         <div className="row" style={{ gap: 'var(--s-2)', marginTop: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
-          {exercise.audioKey && (
+          {hasAudio && (
             <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
               🔊 استمع للنموذج
             </button>
           )}
-          {exercise.audioKey && (
+          {hasAudio && (
             <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
               {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
             </button>
@@ -446,7 +447,7 @@ function ExerciseBody({
         <div className="card" style={{ background: 'var(--surface-2, #f4f6f8)', padding: 'var(--s-3)', borderRadius: 8, marginBottom: 'var(--s-3)' }}>
           <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
             {playButton}
-            {exercise.audioKey && (
+            {hasAudio && (
               <button
                 className="btn secondary sm"
                 data-testid="lesson-audio-replay"
@@ -456,7 +457,7 @@ function ExerciseBody({
                 🔁 إعادة الاستماع
               </button>
             )}
-            {exercise.audioKey && (
+            {hasAudio && (
               <button
                 className="btn ghost sm"
                 data-testid="lesson-audio-rate"

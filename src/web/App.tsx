@@ -9,6 +9,7 @@ import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
 import { Search } from './pages/Search';
+import { Placement } from './pages/Placement';
 
 function Shell() {
   const [path, navigate] = useRoute();
@@ -16,7 +17,7 @@ function Shell() {
 
   // حماية المسارات: غير المسجّل يُوجَّه للدخول (بعد معرفة الحالة)
   const isProtected =
-    path === '/settings' || path === '/learn' || path.startsWith('/learn/') || path === '/review' || path.startsWith('/review/');
+    path === '/settings' || path === '/learn' || path.startsWith('/learn/') || path === '/review' || path.startsWith('/review/') || path === '/placement';
   useEffect(() => {
     if (!loading && !user && isProtected) {
       navigate('/login');
@@ -36,6 +37,8 @@ function Shell() {
     page = user ? <Dashboard navigate={navigate} /> : <Login navigate={navigate} />;
   } else if (path === '/learn') {
     page = user ? <Dashboard navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/placement') {
+    page = user ? <Placement navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/review') {
     page = user ? <Review navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/review/packs') {

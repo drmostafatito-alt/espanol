@@ -50,6 +50,16 @@ export const api = {
 
   // ---- المرحلة 2: التعلم ----
   progress: () => request<ProgressPayload>('/api/me/progress'),
+  submitPlacement: (body: { targetLevel: 'A1' | 'A2'; score: number; answersCount?: number }) =>
+    request<{
+      passed: boolean;
+      score: number;
+      targetLevel: string;
+      unlockedLevel: string;
+      unlockedLessonsCount: number;
+      xpAwarded: number;
+      messageAr: string;
+    }>('/api/me/placement', { method: 'POST', body: JSON.stringify(body) }),
   lessonSession: (slug: string) => request<LessonSession>(`/api/lessons/${encodeURIComponent(slug)}/session`),
   submitAnswer: (slug: string, body: { eventId: string; exerciseId: string; response: unknown; durationMs?: number }) =>
     request<AnswerResult>(`/api/lessons/${encodeURIComponent(slug)}/answers`, { method: 'POST', body: JSON.stringify(body) }),
@@ -178,9 +188,35 @@ export interface CompleteResult {
   alreadyCompleted: boolean;
 }
 
+export interface ProgressLessonItem {
+  slug: string;
+  title_ar: string;
+  level_code: string | null;
+  status: string;
+  progress_status: string;
+  best_accuracy: number;
+  completed_at: string | null;
+  unit_id?: string;
+  unit_slug?: string;
+  unit_title_ar?: string;
+  unit_sort_order?: number;
+  program_slug?: string;
+  program_title_ar?: string;
+  program_kind?: string;
+  is_unlocked?: boolean;
+  missing_prerequisites?: string[];
+}
+
 export interface ProgressPayload {
   stats: { xp_total: number; minutes_total: number; streak_current: number; streak_longest: number; reviews_done: number; words_seen: number; words_stable: number };
-  lessons: { slug: string; title_ar: string; level_code: string | null; status: string; progress_status: string; best_accuracy: number; completed_at: string | null }[];
+  lessons: ProgressLessonItem[];
+  nextLesson?: {
+    slug: string;
+    title_ar: string;
+    level_code: string | null;
+    unit_title_ar?: string;
+    program_title_ar?: string;
+  } | null;
   totals: { lessons_total: number; lessons_completed: number };
   contentProvenance: { status: string; warningAr: string } | null;
 }

@@ -11,7 +11,7 @@ import {
 import { findSessionUser, getPublicSettings } from './db';
 import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
 import { getLesson, listPaths, searchContent } from './routes/content';
-import { completeLesson, lessonSession, myProgress, submitAnswer } from './routes/learn';
+import { completeLesson, lessonSession, myProgress, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
 
 interface Ctx {
@@ -85,6 +85,7 @@ const routes: Route[] = [
 
   // ---- المرحلة 2: التعلم ----
   route('GET', '/api/me/progress', (req, env, ctx) => myProgress(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/me/placement', (req, env, ctx) => submitPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('GET', '/api/lessons/:slug/session', (req, env, ctx) => lessonSession(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/lessons/:slug/answers', (req, env, ctx) => submitAnswer(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('POST', '/api/lessons/:slug/complete', (req, env, ctx) => completeLesson(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
