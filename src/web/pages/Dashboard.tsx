@@ -215,7 +215,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
           <section className="card next-hero" data-testid="next-step-hero">
             <div className="next-hero-grid">
               <div className="next-hero-art photo-fill">
-                <img src={PHOTOS.street2} className="photo" alt="شارع في برشلونة" />
+                <img src={PHOTOS.heroStreet} className="photo" alt="شارع في برشلونة" />
                 <span className="hero-bubble" dir="ltr">¡Hola!</span>
               </div>
               <div className="next-hero-body">
@@ -458,7 +458,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
         <div className="grid cols-2">
           {(paths ?? []).map(p => {
-            const trackPhoto = p.slug === 'travel' || p.kind === 'travel' ? PHOTOS.travelWindow : p.slug === 'callcenter' || p.kind === 'callcenter' ? PHOTOS.callcenterAgent : PHOTOS.granvia;
+            const trackPhoto = p.slug === 'travel' || p.kind === 'travel' ? PHOTOS.travelWindow : p.slug === 'callcenter' || p.kind === 'callcenter' ? PHOTOS.workLaptop : PHOTOS.granvia;
             return (
               <article className="card card-hover" key={p.slug} style={{ overflow: 'hidden', paddingTop: 0, paddingInline: 0 }}>
                 <div className="photo-head">

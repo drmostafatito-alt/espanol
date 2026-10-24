@@ -41,11 +41,10 @@ export function Transparency() {
           صور فوتوغرافية حقيقية من ويكيميديا كومنز، مستخدمة بتراخيصها الأصلية:
         </p>
         <ul className="list-plain small muted">
-          <li><span dir="ltr">hero-street.jpg</span> — Xavier Badia Castellà — CC BY-SA 3.0</li>
-          <li><span dir="ltr">street2.jpg</span> — Xavier Badia Castellà — CC BY-SA 3.0</li>
-          <li><span dir="ltr">travel-window.jpg</span> — Salwa Farwaneh Dameh — CC0</li>
+          <li><span dir="ltr">gaudi.jpg</span> — Túrelio — CC BY-SA 3.0</li>
+                    <li><span dir="ltr">travel-window.jpg</span> — Salwa Farwaneh Dameh — CC0</li>
           <li><span dir="ltr">paella.jpg</span> — Eruperti — CC0</li>
-          <li><span dir="ltr">callcenter-agent.jpg</span> — FiveOne51 — CC BY-SA 3.0</li>
+          <li><span dir="ltr">boqueria-peppers.jpg</span> — Matti Blume — CC BY-SA 4.0</li>
           <li><span dir="ltr">work-laptop.jpg</span> — Shixart1985 — CC BY 2.0</li>
           <li><span dir="ltr">granvia.jpg</span> — Nicolas Vigier — CC0</li>
         </ul>

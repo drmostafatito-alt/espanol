@@ -192,7 +192,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
             </div>
           </article>
           <article className="card card-hover learn-card">
-            <div className="photo-head"><img src={PHOTOS.callcenterAgent} className="photo" alt="موظف خدمة عملاء يرتدي سماعة" /></div>
+            <div className="photo-head"><img src={PHOTOS.workLaptop} className="photo" alt="سيدة تعمل على لابتوب وتحمل قهوة" /></div>
             <div className="learn-card-body">
               <h3>العمل والكول سنتر</h3>
               <p className="small muted">تعلّم مفردات ومواقف خدمة العملاء والتواصل المهني.</p>
@@ -200,7 +200,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
             </div>
           </article>
           <article className="card card-hover learn-card">
-            <div className="photo-head"><img src={PHOTOS.granvia} className="photo" alt="شارع جران فيا في مدريد" /></div>
+            <div className="photo-head"><img src={PHOTOS.marketPeppers} className="photo" alt="سوق لا بوكيريا في برشلونة" /></div>
             <div className="learn-card-body">
               <h3>الحياة اليومية</h3>
               <p className="small muted">تحيات، تعارف، تسوّق، ومواقف الحياة اليومية بجمل طبيعية.</p>
