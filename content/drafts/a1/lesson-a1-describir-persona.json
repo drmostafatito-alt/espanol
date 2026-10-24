@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-describir-persona",
+    "titleAr": "وصف الأشخاص: السمات الجسدية والشخصية مع Ser ومطابقة الصفات",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u2-family",
+    "objectiveAr": "أن يصف المتعلم شخصًا بالسمات الجسدية والشخصية (alto, simpático, inteligente, trabajador) مع مراعاة مطابقة الجنس والعدد.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "writing",
+      "speaking",
+      "grammar",
+      "reading",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "alto",
+      "bajo",
+      "simpático",
+      "inteligente",
+      "trabajador",
+      "persona",
+      "amigo",
+      "hermano"
+    ],
+    "reviewVocabulary": [
+      "padre",
+      "madre",
+      "familia",
+      "español"
+    ],
+    "targetStructures": [
+      "Mi hermano es alto y muy simpático.",
+      "Elena es una persona muy inteligente y trabajadora.",
+      "Concordancia de adjetivos: alto/alta, trabajador/trabajadora, inteligente/inteligente"
+    ],
+    "grammarTopics": [
+      "ser-con-adjetivos",
+      "genero-y-numero-adjetivos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نور تصف زميلها الجديد في المعهد لصديقتها الإسبانية، مبيّنة ملامحه وشخصيته.",
+        "settingAr": "في ساحة المعهد بين المحاضرات",
+        "lines": [
+          {
+            "es": "¿Cómo es el nuevo compañero de clase, Nur?",
+            "ar": "كيف يبدو زميل الصف الجديد يا نور؟",
+            "arEg": "شكله وشخصيته إيه الزميل الجديد يا نور؟",
+            "audioKey": "pending/a1-desc-sc-1"
+          },
+          {
+            "es": "Es un chico alto, muy simpático y trabajador.",
+            "ar": "إنه شاب طويل ولطيف للغاية ومجتهد.",
+            "arEg": "هو ولد طويل ودمه خفيف أوي وشغيل.",
+            "audioKey": "pending/a1-desc-sc-2"
+          },
+          {
+            "es": "¿Y su hermana también estudia con nosotros?",
+            "ar": "وهل أخته تدرس معنا أيضًا؟",
+            "arEg": "وأخته بتدرس معانا هي كمان؟",
+            "audioKey": "pending/a1-desc-sc-3"
+          },
+          {
+            "es": "Sí, ella es baja pero muy inteligente y amable.",
+            "ar": "نعم، هي قصيرة القامة لكنها ذكية جدًا ولطيفة المعشر.",
+            "arEg": "أيوة، هي قصيرة بس ذكية أوي ولذيذة.",
+            "audioKey": "pending/a1-desc-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_desc_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى نور واختر الصفات التي أطلقتها على زميل الصف الجديد.",
+        "audioKey": "pending/a1-desc-sc-2",
+        "speechEs": "Es un chico alto, muy simpático y trabajador.",
+        "options": [
+          {
+            "id": "a1_desc_1_a",
+            "text": "Alto, simpático y trabajador",
+            "isCorrect": true,
+            "textAr": "طويل ولطيف ومجتهد"
+          },
+          {
+            "id": "a1_desc_1_b",
+            "text": "Bajo, perezoso y serio",
+            "isCorrect": false,
+            "textAr": "قصير وكسول وجاد للغاية",
+            "distractorRationaleAr": "نور وصفت الزميل بأنه طويل ومجتهد وليس كسولًا."
+          },
+          {
+            "id": "a1_desc_1_c",
+            "text": "Antipático y tímido",
+            "isCorrect": false,
+            "textAr": "غير ودود وخجول",
+            "distractorRationaleAr": "نور أكدت أنه لطيف للغاية (muy simpático)."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_desc_1_a"
+          ]
+        },
+        "explanationAr": "نور قالت بالحرف: «Es un chico alto, muy simpático y trabajador».",
+        "errorFeedback": {
+          "a1_desc_1_b": "استمع مجددًا: قالت alto y trabajador.",
+          "a1_desc_1_c": "قالت إنه simpático (لطيف) وليس antipático."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "alto",
+          "simpático",
+          "trabajador"
+        ]
+      },
+      {
+        "id": "a1_desc_2_choice_gen",
+        "type": "word_choice",
+        "instructionAr": "اختر صيغة التأنيث الصحيحة للصفة «trabajador» لمطابقة الفاعل المؤنث (Elena).",
+        "stemEs": "Elena es una persona muy ____.",
+        "stemAr": "إيلينا إنسانة مجتهدة للغاية.",
+        "options": [
+          {
+            "id": "a1_desc_2_a",
+            "text": "trabajadora",
+            "isCorrect": true,
+            "textAr": "مجتهدة (مؤنث بإضافة -a)"
+          },
+          {
+            "id": "a1_desc_2_b",
+            "text": "trabajador",
+            "isCorrect": false,
+            "textAr": "مجتهد (صيغة مذكر)",
+            "distractorRationaleAr": "الصفات المنتهية بـ -or تؤنث بإضافة a: trabajadora."
+          },
+          {
+            "id": "a1_desc_2_c",
+            "text": "trabajadores",
+            "isCorrect": false,
+            "textAr": "مجتهدون (جمع مذكر)",
+            "distractorRationaleAr": "الفاعل إيلينا مفرد مؤنث وليس جمعًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_desc_2_a"
+          ]
+        },
+        "explanationAr": "الصفات المنتهية باللاحقة -or (مثل trabajador) يُصاغ مؤنثها بإضافة حرف a فتصبح: trabajadora.",
+        "errorFeedback": {
+          "a1_desc_2_b": "trabajador للمذكر، وإيلينا اسم مؤنث.",
+          "a1_desc_2_c": "trabajadores صيغة جمع."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "trabajador",
+          "persona"
+        ]
+      },
+      {
+        "id": "a1_desc_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب الصفة المشتركة (تصلح للمذكر والمؤنث) التي تعني «ذكي / ذكية».",
+        "stemEs": "Mi hermana es muy ____ y saca buenas notas.",
+        "stemAr": "أختي ____ للغاية وتحصل على علامات جيدة.",
+        "answerKey": {
+          "accepted": [
+            "inteligente"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الصفات المنتهية بحرف e (مثل inteligente) تكون محايدة الجنس وتصلح للمذكر والمؤنث بنفس الصيغة.",
+        "errorFeedback": {
+          "inteligenta": "لا توجد في الإسبانية كلمة inteligenta؛ الصفة تنتهي بـ -e للطرفين.",
+          "listo": "المطلوب كلمة ذكي المنتهية بـ e المناسبة للجنسين."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "inteligente",
+          "hermano"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_desc_4_choice_opp",
+        "type": "word_choice",
+        "instructionAr": "اختر الكلمة المقابلة لعكس القامة الطويلة (عكس alto).",
+        "stemEs": "Su hermano no es alto, es bastante ____.",
+        "stemAr": "أخوه ليس طويل القامة، إنه ____ تمامًا (قصير).",
+        "options": [
+          {
+            "id": "a1_desc_4_a",
+            "text": "bajo",
+            "isCorrect": true,
+            "textAr": "قصير القامة"
+          },
+          {
+            "id": "a1_desc_4_b",
+            "text": "grande",
+            "isCorrect": false,
+            "textAr": "كبير أو ضخم",
+            "distractorRationaleAr": "grande تعني كبير وليس قصير القامة."
+          },
+          {
+            "id": "a1_desc_4_c",
+            "text": "baja",
+            "isCorrect": false,
+            "textAr": "قصيرة (للمؤنث)",
+            "distractorRationaleAr": "الفاعل hermano اسم مذكر، لذا الصفة الصحيحة هي bajo."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_desc_4_a"
+          ]
+        },
+        "explanationAr": "عكس alto للمذكر هو bajo، بينما للمؤنث تكون baja.",
+        "errorFeedback": {
+          "a1_desc_4_b": "grande تعني كبير.",
+          "a1_desc_4_c": "baja للمؤنث، والموصوف hermano مذكر."
+        },
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "alto",
+          "bajo"
+        ]
+      },
+      {
+        "id": "a1_desc_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة وصفية متناسقة للأخ.",
+        "items": [
+          {
+            "id": "a1_ds_t1",
+            "kind": "token",
+            "text": "Mi hermano"
+          },
+          {
+            "id": "a1_ds_t2",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "a1_ds_t3",
+            "kind": "token",
+            "text": "muy"
+          },
+          {
+            "id": "a1_ds_t4",
+            "kind": "token",
+            "text": "simpático."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mi hermano es muy simpático."
+          ],
+          "tokenOrder": [
+            "a1_ds_t1",
+            "a1_ds_t2",
+            "a1_ds_t3",
+            "a1_ds_t4"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي: المبتدأ Mi hermano + فعل الكينونة es + ظرف الشدة muy + الصفة simpático.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "simpático",
+          "hermano"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_desc_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة الوصف الشخصي بنبرة واضحة ومخارج صوتية دقيقة.",
+        "stemEs": "Mi amigo es alto y simpático.",
+        "stemAr": "صديقي طويل ولطيف.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-desc-speak-1",
+          "modelAnswer": "Mi amigo es alto y simpático."
+        },
+        "explanationAr": "احرص على نطق حرف s النقي في simpático، والنبرة على المقطع المنبور sim-PÁ-ti-co.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "alto",
+          "simpático",
+          "amigo"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبر على المقطع الثالث من النهاية في simpático",
+              "weight": 50,
+              "code": "stress_esdrujula_simpatico"
+            },
+            {
+              "labelAr": "سلاسة نطق alto y",
+              "weight": 50,
+              "code": "linking_alto_y"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 1 وEn Vocabulario A1 والمرشد في اللغة الإسبانية"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

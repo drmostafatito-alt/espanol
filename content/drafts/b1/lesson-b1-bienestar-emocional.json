@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-bienestar-emocional",
+    "unitSlug": "b1-u8-health-lifestyle",
+    "levelCode": "B1",
+    "titleAr": "الصحة النفسية والعاطفية: إدارة التوتر والقلق وفصل الذهن عن العمل",
+    "titleEs": "El bienestar emocional, la gestión del estrés y la desconexión digital",
+    "subtitleAr": "مكافحة الإرهاق (el agotamiento)، الاسترخاء، والحق في فصل العمل عن الحياة",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يعبر المتعلم عن حالته النفسية والعاطفية ومصادر الضغط اليومي باللغة الإسبانية.",
+        "أن يصف مشاعر القلق والإرهاق: tener ansiedad, sufrir agotamiento, sentirse desbordado.",
+        "أن يناقش استراتيجيات التوازن النفسي وفصل الذهن عن العمل: desconectar del trabajo, practicar meditación."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التعبير عن الضغط النفسي والتخلص منه",
+          "explanationAr": "1. **التعبير عن الضغوط والمشاعر السلبية**:\n- **Estar sometido a estrés**: El equipo está sometido a mucho estrés por los plazos.\n- **Sentirse desbordado/a**: Me siento desbordado por tantas responsabilidades (أشعر بالإرهاق والعجز عن الملاحقة).\n- **Sufrir de ansiedad / insomnio**: Mucha gente sufre de insomnio por preocupaciones laborales.\n2. **التعبير عن التعافي والاسترخاء**:\n- **Desconectar de**: Necesito desconectar del móvil durante el fin de semana.\n- **Recargar las pilas**: Salir al campo me ayuda a recargar las pilas (تعبير اصطلاحي: شحن طاقتي مجدداً)."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'يفصل ذهنه عن الشغل' بـ *separar la mente*؛ التعبير الاصطلاحي الإسباني الشائع هو desconectar del trabajo.",
+        "استخدام حرف الجر por بدلاً من de بعد desconectar (الصحيح: desconectar del trabajo / de las redes)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «محتاج أفصل خالص عن الشغل والموبايل يومين عشان أشحن طاقتي ومحسش بالضغط». بالإسبانية: Necesito desconectar del trabajo para recargar las pilas y reducir el estrés."
+        }
+      ],
+      "culturalNoteAr": "ينص القانون الإسباني لحماية البيانات على 'الحق في فصل الاتصال الرقمي' (el derecho a la desconexión digital)، والذي يمنع الشركات من مراسلة الموظف بعد انتهاء ساعات العمل الرسمية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-bienestar-emocional-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الصحة النفسية والتوازن",
+        "bodyAr": "المفردات الأساسية:\n- **el estrés**: التوتر والضغط العصبي\n- **la ansiedad**: القلق النفسي والاضطراب\n- **desconectar**: يفصل ذهنه عن ضغوط العمل والمشاغل\n- **el agotamiento**: الإرهاق الشديد واستنزاف الطاقة (Burnout)\n- **la salud mental**: الصحة النفسية والعقلية\n- **el equilibrio**: التوازن والاستقرار بين العمل والحياة",
+        "examples": [
+          {
+            "es": "Cuidar la salud mental es tan importante como cuidar la salud física.",
+            "ar": "العناية بالصحة النفسية مهمة تماماً مثل العناية بالصحة الجسدية."
+          },
+          {
+            "es": "Durante las vacaciones apago el teléfono para desconectar de verdad.",
+            "ar": "خلال الإجازة أغلق الهاتف لكي أفصل ذهني حقاً عن المشاغل."
+          },
+          {
+            "es": "El exceso de trabajo continuado provoca agotamiento y ansiedad.",
+            "ar": "الإفراط المستمر في العمل يسبب الإرهاق التام والقلق."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "estrés",
+      "ansiedad",
+      "desconectar",
+      "agotamiento",
+      "salud mental",
+      "equilibrio"
+    ],
+    "reviewVocabulary": [
+      "vida",
+      "cuerpo"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يعبر المتعلم عن حالته النفسية والعاطفية ومصادر الضغط اليومي باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-emo-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الاصطلاحي الذي يعني فصل الذهن والابتعاد عن ضغوط العمل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الفعل الإسباني الشائع الذي يعني التوقف التام عن التفكير في مشاغل الشغل؟",
+        "stemEs": "El fin de semana me voy a la montaña para _____ del trabajo.",
+        "stemAr": "في عطلة نهاية الأسبوع أذهب إلى الجبل لكي ... عن العمل.",
+        "options": [
+          {
+            "id": "ex-b1-emo-1_a",
+            "text": "desconectar",
+            "textAr": "يفصل ذهنه ويستجم (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-emo-1_b",
+            "text": "estrés",
+            "textAr": "التوتر (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً بعد para وليس اسماً."
+          },
+          {
+            "id": "ex-b1-emo-1_c",
+            "text": "agotamiento",
+            "textAr": "الإرهاق",
+            "isCorrect": false,
+            "distractorRationaleAr": "الذهاب للجبل بهدف فصل الذهن (desconectar)."
+          }
+        ],
+        "targetVocab": [
+          "desconectar",
+          "estrés",
+          "agotamiento"
+        ],
+        "explanationAr": "فعل desconectar del trabajo يعني فصل الذهن والابتعاد التام عن ضغوط المشاغل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-emo-1_a"
+          ],
+          "selectedOptionId": "ex-b1-emo-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-emo-1_b": "نحتاج فعلاً بعد para وليس اسماً.",
+          "ex-b1-emo-1_c": "الذهاب للجبل بهدف فصل الذهن (desconectar)."
+        }
+      },
+      {
+        "id": "ex-b1-emo-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني التوازن بين متطلبات العمل والحياة (el _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المذكرة التي تعني 'التوازن والاستقرار' (el _____)",
+        "stemEs": "Es necesario encontrar un buen _____ entre la vida profesional y la personal.",
+        "stemAr": "من الضروري إيجاد توازن جيد بين الحياة المهنية والشخصية.",
+        "targetVocab": [
+          "equilibrio",
+          "vida"
+        ],
+        "explanationAr": "كلمة equilibrio تعني التوازن والاعتدال بين مختلف جوانب الحياة.",
+        "answerKey": {
+          "accepted": [
+            "equilibrio"
+          ],
+          "acceptableAnswers": [
+            "equilibrio"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-emo-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الحالة النفسية الناتجة عن تراكم القلق والضغوط المستمرة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح الذي يصف حالة القلق والتوتر النفسي المصحوب بالخوف من المستقبل؟",
+        "stemEs": "Las técnicas de respiración profunda ayudan a calmar los episodios de _____.",
+        "stemAr": "تساعد تقنيات التنفس العميق في تهدئة نوبات ...",
+        "options": [
+          {
+            "id": "ex-b1-emo-3_a",
+            "text": "ansiedad",
+            "textAr": "القلق النفسي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-emo-3_b",
+            "text": "equilibrio",
+            "textAr": "التوازن",
+            "isCorrect": false,
+            "distractorRationaleAr": "التنفس العميق يعالج نوبات القلق (ansiedad)."
+          },
+          {
+            "id": "ex-b1-emo-3_c",
+            "text": "desconectar",
+            "textAr": "فصل الذهن",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلوب اسم الحالة النفسية المرضية."
+          }
+        ],
+        "targetVocab": [
+          "ansiedad",
+          "equilibrio",
+          "desconectar"
+        ],
+        "explanationAr": "la ansiedad هي حالة القلق النفسي والاضطراب الداخلي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-emo-3_a"
+          ],
+          "selectedOptionId": "ex-b1-emo-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-emo-3_b": "التنفس العميق يعالج نوبات القلق (ansiedad).",
+          "ex-b1-emo-3_c": "المطلوب اسم الحالة النفسية المرضية."
+        }
+      },
+      {
+        "id": "ex-b1-emo-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتأكيد على أولوية حماية الصحة النفسية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-emo-4_t1",
+            "kind": "token",
+            "text": "Debemos"
+          },
+          {
+            "id": "ex-b1-emo-4_t2",
+            "kind": "token",
+            "text": "cuidar"
+          },
+          {
+            "id": "ex-b1-emo-4_t3",
+            "kind": "token",
+            "text": "nuestra"
+          },
+          {
+            "id": "ex-b1-emo-4_t4",
+            "kind": "token",
+            "text": "salud"
+          },
+          {
+            "id": "ex-b1-emo-4_t5",
+            "kind": "token",
+            "text": "mental"
+          },
+          {
+            "id": "ex-b1-emo-4_t6",
+            "kind": "token",
+            "text": "siempre"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Debemos cuidar nuestra salud mental siempre"
+          ],
+          "tokenOrder": [
+            "ex-b1-emo-4_t1",
+            "ex-b1-emo-4_t2",
+            "ex-b1-emo-4_t3",
+            "ex-b1-emo-4_t4",
+            "ex-b1-emo-4_t5",
+            "ex-b1-emo-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Debes cuidar ثم المفعول nuestra salud mental ثم الظرف siempre.",
+        "targetVocab": [
+          "salud mental"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-emo-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد العارض النفسي والجسدي الناتج عن الإفراط في العمل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمتحدث يصف حالته بعد أسابيع من العمل المتواصل",
+        "stemEs": "Si no descanso pronto, voy a sufrir un grave agotamiento físico y mental.",
+        "stemAr": "إذا لم أسترح قريباً، سأعاني من إرهاق جسدي ونفسي حاد.",
+        "options": [
+          {
+            "id": "ex-b1-emo-5_a",
+            "text": "agotamiento",
+            "textAr": "الإرهاق الشديد واستنزاف الطاقة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-emo-5_b",
+            "text": "equilibrio",
+            "textAr": "توازن",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يحذر من الانهيار والإرهاق (agotamiento)."
+          },
+          {
+            "id": "ex-b1-emo-5_c",
+            "text": "desconectar",
+            "textAr": "استجمام",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يشكو من الإجهاد الشديد."
+          }
+        ],
+        "targetVocab": [
+          "agotamiento",
+          "equilibrio",
+          "desconectar"
+        ],
+        "explanationAr": "المتحدث قال: 'voy a sufrir un grave agotamiento físico y mental'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_sufrir_grave_agotamiento.mp3",
+        "speechEs": "Si no descanso pronto, voy a sufrir un grave agotamiento físico y mental.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-emo-5_a"
+          ],
+          "selectedOptionId": "ex-b1-emo-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-emo-5_b": "المتحدث يحذر من الانهيار والإرهاق (agotamiento).",
+          "ex-b1-emo-5_c": "المتحدث يشكو من الإجهاد الشديد."
+        }
+      },
+      {
+        "id": "ex-b1-emo-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق نصيحتك لتخفيف التوتر والحفاظ على التوازن النفسي",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب دافئ وهادئ ناصحاً صديقك:",
+        "stemEs": "Para reducir el estrés, es vital desconectar del móvil y buscar el equilibrio.",
+        "stemAr": "لتقليل التوتر، من الضروري فصل الذهن عن الهاتف والبحث عن التوازن.",
+        "audioKey": "pending/b1_reducir_estres_desconectar.mp3",
+        "targetVocab": [
+          "estrés",
+          "desconectar",
+          "equilibrio"
+        ],
+        "explanationAr": "انتبه لنطق حرف s المكرر في estrés ونطق qu كـ كاف في equilibrio.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_reducir_estres_desconectar.mp3",
+          "modelAnswer": "Para reducir el estrés, es vital desconectar del móvil y buscar el equilibrio."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

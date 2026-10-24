@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-sintomas-medico",
+    "unitSlug": "a2-u6-health",
+    "levelCode": "A2",
+    "titleAr": "وصف الأعراض عند الطبيب: التعبير عن الدوار والسعال والإنفلونزا",
+    "titleEs": "Describir síntomas ante el médico",
+    "subtitleAr": "استخدام tener مع الأعراض المركبة: tener tos, tener gripe, tener mareos",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم أعراض المرض المركبة بدقة للطبيب المعالج.",
+        "أن يستخدم الفعل tener مع الحالات الصحية: tener gripe, tener tos, tener mareos, tener décimas de fiebre.",
+        "أن يميز بين الأعراض المؤقتة (estar resfriado, estar mareado) والأمراض المستمرة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التعبير عن الأعراض بفعل Tener و Estar",
+          "explanationAr": "في الإسبانية، نعبر عن معظم الأعراض المرضية باستخدام الفعل **tener** متبوعاً باسم العرض بدون أداة:\n- Tengo tos (عندي كحة / سعال).\n- Tengo gripe (عندي إنفلونزا).\n- Tengo mareos (أشعر بدوار / دوخة).\nبينما نستخدم **estar** مع الصفات التي تصف حالة المريض المتغيرة:\n- Estoy mareado / mareada (أنا دايخ / أشعر بالدوار).\n- Estoy resfriado (أنا مصاب بالزكام).\n- Estoy cansado (أنا مرهق)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام soy بدلاً من estoy لوصف حالة المرض (الصواب: estoy enfermo/a، والخطأ: *soy enfermo*).",
+        "وضع أداة نكرة قبل اسم العرض بعد tener (الصحيح: tengo tos، وليس *tengo una tos* إلا إذا وصفتها: tengo una tos muy fuerte)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «عندي كحة شديدة ودور إنفلونزا، وحاسس بدوخة». في الإسبانية: Tengo tos y gripe, y estoy mareado."
+        }
+      ],
+      "culturalNoteAr": "في النظام الصحي الإسباني (la Seguridad Social)، الخطوة الأولى هي حجز موعد مع طبيب الأسرة (el médico de cabecera) في المركز الصحي (el centro de salud)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-sintomas-medico-intro",
+        "type": "explanation",
+        "titleAr": "الأعراض المرضية لدى الطبيب",
+        "bodyAr": "أهم الأعراض والمفردات الطبية:\n- **la gripe**: الإنفلونزا / النزلة الحادة\n- **la tos**: الكحة / السعال\n- **el mareo**: الدوار / الدوخة (estar mareado)\n- **la temperatura**: درجة الحرارة\n- **el síntoma**: العَرَض المرضي (كلمة مذكرة: un síntoma)\n- **la receta médica**: الروشتة / الوصفة الطبية",
+        "examples": [
+          {
+            "es": "El paciente tiene mucha tos y fiebre.",
+            "ar": "المريض لديه سعال شديد وحمى."
+          },
+          {
+            "es": "Me siento mareado desde esta mañana.",
+            "ar": "أشعر بالدوار منذ هذا الصباح."
+          },
+          {
+            "es": "¿Cuáles son los síntomas principales?",
+            "ar": "ما هي الأعراض الرئيسية؟"
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "gripe",
+      "tos",
+      "mareo",
+      "temperatura",
+      "receta médica",
+      "síntoma"
+    ],
+    "reviewVocabulary": [
+      "dolor",
+      "fiebre"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصف المتعلم أعراض المرض المركبة بدقة للطبيب المعالج.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-sin-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الصحيح للتعبير عن الحالة المرضية المتغيرة",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل كينونة نستخدم عندما نشعر بدوار مؤقت؟",
+        "stemEs": "No puedo levantarme porque _____ muy mareado hoy.",
+        "stemAr": "لا أستطيع النهوض لأنني ... بالدوار الشديد اليوم.",
+        "options": [
+          {
+            "id": "ex-a2-sin-1_a",
+            "text": "estoy",
+            "textAr": "يعبر عن الحالة الصحية المتغيرة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sin-1_b",
+            "text": "soy",
+            "textAr": "يعبر عن الصفات الدائمة والهوية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المرض حالة مؤقتة تأخذ estar وليس ser."
+          },
+          {
+            "id": "ex-a2-sin-1_c",
+            "text": "tengo",
+            "textAr": "يحتاج اسماً بعده وليس صفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "mareado صفة تأتي بعد estar، أما الاسم فهو tener mareo."
+          }
+        ],
+        "targetVocab": [
+          "mareo"
+        ],
+        "explanationAr": "مع الصفات الصحية المؤقتة نستخدم دائماً الفعل estar: estoy mareado.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sin-1_a"
+          ],
+          "selectedOptionId": "ex-a2-sin-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sin-1_b": "المرض حالة مؤقتة تأخذ estar وليس ser.",
+          "ex-a2-sin-1_c": "mareado صفة تأتي بعد estar، أما الاسم فهو tener mareo."
+        }
+      },
+      {
+        "id": "ex-a2-sin-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية الدالة على السعال والكحة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'السعال / الكحة' بالإسبانية (بدون أداة)",
+        "stemEs": "Tengo una _____ seca que no me deja dormir.",
+        "stemAr": "لدي كحة جافة لا تدعني أنام.",
+        "targetVocab": [
+          "tos"
+        ],
+        "explanationAr": "كلمة tos تعني السعال أو الكحة وهي مؤنثة (la tos).",
+        "answerKey": {
+          "accepted": [
+            "tos"
+          ],
+          "acceptableAnswers": [
+            "tos"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-sin-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد نوع الكلمة síntoma وتذكيرها",
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كلمة síntoma تنتهي بـ -ma وهي من أصل يوناني، فما هي أداتها الصحيحة؟",
+        "stemEs": "La fiebre alta es _____ más claro de la infección.",
+        "stemAr": "الحمى المرتفعة هي ... الأوضح للعدوى.",
+        "options": [
+          {
+            "id": "ex-a2-sin-3_a",
+            "text": "el síntoma",
+            "textAr": "مذكر مفرد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sin-3_b",
+            "text": "la síntoma",
+            "textAr": "مؤنث (خطأ شائع)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمات المنتهية بـ -ma من أصل يوناني مذكرة: el síntoma, el problema."
+          },
+          {
+            "id": "ex-a2-sin-3_c",
+            "text": "las síntomas",
+            "textAr": "جمع مؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاسم مفرد مذكر."
+          }
+        ],
+        "targetVocab": [
+          "síntoma",
+          "fiebre"
+        ],
+        "explanationAr": "كلمة síntoma مذكرة في الإسبانية وتأخذ أداة التعريف el: el síntoma.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sin-3_a"
+          ],
+          "selectedOptionId": "ex-a2-sin-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sin-3_b": "الكلمات المنتهية بـ -ma من أصل يوناني مذكرة: el síntoma, el problema.",
+          "ex-a2-sin-3_c": "الاسم مفرد مذكر."
+        }
+      },
+      {
+        "id": "ex-a2-sin-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف الإصابة بنزلة إنفلونزا شديدة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-sin-4_t1",
+            "kind": "token",
+            "text": "Tengo"
+          },
+          {
+            "id": "ex-a2-sin-4_t2",
+            "kind": "token",
+            "text": "gripe"
+          },
+          {
+            "id": "ex-a2-sin-4_t3",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "ex-a2-sin-4_t4",
+            "kind": "token",
+            "text": "mucha"
+          },
+          {
+            "id": "ex-a2-sin-4_t5",
+            "kind": "token",
+            "text": "temperatura"
+          },
+          {
+            "id": "ex-a2-sin-4_t6",
+            "kind": "token",
+            "text": "alta"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tengo gripe y mucha temperatura alta"
+          ],
+          "tokenOrder": [
+            "ex-a2-sin-4_t1",
+            "ex-a2-sin-4_t2",
+            "ex-a2-sin-4_t3",
+            "ex-a2-sin-4_t4",
+            "ex-a2-sin-4_t5",
+            "ex-a2-sin-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل Tengo ثم المرض gripe ثم أداة العطف y والاسم والصفة mucha temperatura alta.",
+        "targetVocab": [
+          "gripe",
+          "temperatura"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-sin-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما طلبه الصيدلي لصرف الدواء",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الوثيقة الطبية المطلوبة",
+        "stemEs": "Para este medicamento necesita una receta médica.",
+        "stemAr": "لهذا الدواء تحتاج إلى وصفة طبية.",
+        "options": [
+          {
+            "id": "ex-a2-sin-5_a",
+            "text": "receta médica",
+            "textAr": "روشتة طبية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-sin-5_b",
+            "text": "síntoma",
+            "textAr": "عرض",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث طلب الوصفة الطبية المعتمدة receta médica."
+          },
+          {
+            "id": "ex-a2-sin-5_c",
+            "text": "temperatura",
+            "textAr": "حرارة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن إذن صرف الدواء."
+          }
+        ],
+        "targetVocab": [
+          "receta médica",
+          "síntoma",
+          "temperatura"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: necesita una receta médica.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_receta_medica.mp3",
+        "speechEs": "Para este medicamento necesita una receta médica.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-sin-5_a"
+          ],
+          "selectedOptionId": "ex-a2-sin-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-sin-5_b": "المتحدث طلب الوصفة الطبية المعتمدة receta médica.",
+          "ex-a2-sin-5_c": "المتحدث تحدث عن إذن صرف الدواء."
+        }
+      },
+      {
+        "id": "ex-a2-sin-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق شكواك للطبيب بوضوح",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر الطبيب بأنك تعاني من الإنفلونزا والسعال منذ يومين",
+        "stemEs": "Doctor, tengo gripe y mucha tos.",
+        "stemAr": "يا دكتور، لدي إنفلونزا وسعال شديد.",
+        "audioKey": "pending/a2_doctor_tengo_gripe.mp3",
+        "targetVocab": [
+          "gripe",
+          "tos"
+        ],
+        "explanationAr": "احرص على نطق حرف g في gripe برقة ونطق حرف o في tos بوضوح تام.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_doctor_tengo_gripe.mp3",
+          "modelAnswer": "Doctor, tengo gripe y mucha tos."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

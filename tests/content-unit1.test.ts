@@ -57,9 +57,9 @@ async function playLesson(slug: string, opts: { wrongEvery?: number } = {}) {
 }
 
 describe('وحدة A1 الأولى: التدفق الكامل', () => {
-  it('الاستيراد ينتج 4 دروس و3 حزم مفردات', () => {
-    expect(plan.counters.lessons).toBe(4);
-    expect(plan.counters.bundles).toBe(3);
+  it('الاستيراد ينتج 4 دروس على الأقل و3 حزم مفردات', () => {
+    expect(plan.counters.lessons).toBeGreaterThanOrEqual(4);
+    expect(plan.counters.bundles).toBeGreaterThanOrEqual(3);
     expect(plan.counters.exercises).toBeGreaterThan(30);
   });
 

@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-alojamiento-alternativo",
+    "unitSlug": "b1-u5-independent-travel",
+    "levelCode": "B1",
+    "titleAr": "أنماط الإقامة البديلة: بيوت الشباب والسياحة الريفية وتبادل المنازل",
+    "titleEs": "Alojamientos alternativos: Albergues, casas rurales e intercambio",
+    "subtitleAr": "مقارنة أنواع السكن السياحي، تجربة البيوت الريفية، والمشاركة في النفقات",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقارن المتعلم بين الفنادق التقليدية وخيارات الإقامة البديلة: albergue juvenil, casa rural, intercambio de casas.",
+        "أن يصف مرافق وخدمات بيت الشباب والبيت الريفي: habitación compartida, cocina comunitaria, entorno natural.",
+        "أن يتفاوض حول قواعد التعايش المشترك وتقاسم المساحات والنفقات."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "المقارنة والتفضيل في خيارات الإقامة",
+          "explanationAr": "1. **المفاضلة بين الأنماط**:\n- **Preferir + sustantivo / infinitivo**: Prefiero alojarme en una casa rural antes que en un gran hotel de ciudad.\n- **Resultar más económico**: El albergue juvenil resulta mucho más económico para mochileros.\n2. **التعبير عن البيئة والأجواء**:\n- **Estar rodeado de**: La casa rural está rodeada de naturaleza y tranquilidad.\n- **Compartir zonas comunes**: En el albergue compartimos la cocina y los baños."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'بيت الشباب' بـ *casa de jóvenes*؛ المصطلح المعياري المعتمد في كل إسبانيا هو el albergue juvenil.",
+        "استخدام حرف الجر con بدلاً من de بعد rodeado (الصحيح: rodeado de naturaleza)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «هنأجر بيت في الريف أو نقعد في بيت شباب عشان نوفر ونستمتع بالطبيعة». بالإسبانية: Nos alojaremos en una casa rural o un albergue para ahorrar y disfrutar de la naturaleza."
+        }
+      ],
+      "culturalNoteAr": "السياحة الريفية (el turismo rural) وقضاء عطلات نهاية الأسبوع في بيوت القرى الجبلية (casas rurales) من أحب التقاليد العائلية لدى الإسبان للهروب من ضغوط المدن الكبرى."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-alojamiento-alternativo-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات السكن البديل والريفي",
+        "bodyAr": "المفردات الأساسية:\n- **el albergue juvenil**: بيت الشباب / الهوستل\n- **la casa rural**: البيت الريفي السياحي\n- **la habitación compartida**: الغرفة المشتركة (Dormitorio)\n- **el entorno natural**: المحيط أو البيئة الطبيعية\n- **el intercambio de casas**: تبادل المنازل لقضاء العطلة\n- **la convivencia**: التعايش المشترك واحترام الآخرين",
+        "examples": [
+          {
+            "es": "Nos alojamos en un albergue juvenil con habitaciones compartidas muy limpias.",
+            "ar": "أقمنا في بيت شباب بغرف مشتركة نظيفة للغاية."
+          },
+          {
+            "es": "Alquilamos una casa rural situada en un entorno natural privilegiado.",
+            "ar": "استأجرنا بيتاً ريفياً يقع في محيط طبيعي مميز."
+          },
+          {
+            "es": "La buena convivencia es esencial cuando se comparten zonas comunes.",
+            "ar": "التعايش الطيب أساسي عند التشارك في المساحات المشتركة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "albergue juvenil",
+      "casa rural",
+      "habitación compartida",
+      "entorno natural",
+      "intercambio de casas",
+      "convivencia"
+    ],
+    "reviewVocabulary": [
+      "naturaleza",
+      "alojarse"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقارن المتعلم بين الفنادق التقليدية وخيارات الإقامة البديلة: albergue juvenil, casa rural, intercambio de casas.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-alo-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني بيوت الشباب الاقتصادية للرحالة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح الإسباني لـ 'بيت الشباب' المفضل للمسافرين الشباب؟",
+        "stemEs": "Para no gastar mucho dinero, los estudiantes durmieron en un _____.",
+        "stemAr": "لكي لا ينفقوا أموالاً كثيرة، نام الطلاب في ...",
+        "options": [
+          {
+            "id": "ex-b1-alo-1_a",
+            "text": "albergue juvenil",
+            "textAr": "بيت الشباب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-alo-1_b",
+            "text": "casa rural",
+            "textAr": "بيت ريفي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخيار الاقتصادي الجماعي الشائع للطلاب هو albergue juvenil."
+          },
+          {
+            "id": "ex-b1-alo-1_c",
+            "text": "entorno natural",
+            "textAr": "محيط طبيعي",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسم مكان السكن والإيواء."
+          }
+        ],
+        "targetVocab": [
+          "albergue juvenil",
+          "casa rural",
+          "entorno natural"
+        ],
+        "explanationAr": "el albergue juvenil هو بيت الشباب المخصص للرحالة والطلاب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-alo-1_a"
+          ],
+          "selectedOptionId": "ex-b1-alo-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-alo-1_b": "الخيار الاقتصادي الجماعي الشائع للطلاب هو albergue juvenil.",
+          "ex-b1-alo-1_c": "نحتاج اسم مكان السكن والإيواء."
+        }
+      },
+      {
+        "id": "ex-b1-alo-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح الخاص بالسياحة والإقامة الريفية: (casa _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الصفة الإسبانية المؤنثة للبيت الريفي المخصص للاستجمام في الطبيعة: (casa _____)",
+        "stemEs": "Pasamos un fin de semana inolvidable en una casa _____ en Asturias.",
+        "stemAr": "قضينا عطلة نهاية أسبوع لا تُنسى في بيت ريفي في أستورياس.",
+        "targetVocab": [
+          "casa rural"
+        ],
+        "explanationAr": "المصطلح هو la casa rural وتعني البيت الريفي السياحي.",
+        "answerKey": {
+          "accepted": [
+            "rural"
+          ],
+          "acceptableAnswers": [
+            "rural"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-alo-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد مفهوم الاحترام والعيش المشترك في الأماكن التشاركية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي القيمة الاجتماعية التي تعني 'التعايش المشترك والتوافق'؟",
+        "stemEs": "En el albergue es imprescindible respetar las normas de _____.",
+        "stemAr": "في بيت الشباب من الضروري احترام قواعد ...",
+        "options": [
+          {
+            "id": "ex-b1-alo-3_a",
+            "text": "convivencia",
+            "textAr": "التعايش المشترك (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-alo-3_b",
+            "text": "habitación compartida",
+            "textAr": "غرفة مشتركة",
+            "isCorrect": false,
+            "distractorRationaleAr": "القواعد تخص أسلوب التعايش (convivencia)."
+          },
+          {
+            "id": "ex-b1-alo-3_c",
+            "text": "intercambio de casas",
+            "textAr": "تبادل المنازل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى يتعلق بقواعد العيش المشترك."
+          }
+        ],
+        "targetVocab": [
+          "convivencia",
+          "habitación compartida",
+          "intercambio de casas",
+          "albergue juvenil"
+        ],
+        "explanationAr": "la convivencia تعني التعايش المشترك بين الأفراد باحترام متبادل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-alo-3_a"
+          ],
+          "selectedOptionId": "ex-b1-alo-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-alo-3_b": "القواعد تخص أسلوب التعايش (convivencia).",
+          "ex-b1-alo-3_c": "المعنى يتعلق بقواعد العيش المشترك."
+        }
+      },
+      {
+        "id": "ex-b1-alo-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف موقع البيت الريفي في قلب الطبيعة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-alo-4_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-b1-alo-4_t2",
+            "kind": "token",
+            "text": "casa"
+          },
+          {
+            "id": "ex-b1-alo-4_t3",
+            "kind": "token",
+            "text": "rural"
+          },
+          {
+            "id": "ex-b1-alo-4_t4",
+            "kind": "token",
+            "text": "está"
+          },
+          {
+            "id": "ex-b1-alo-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b1-alo-4_t6",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b1-alo-4_t7",
+            "kind": "token",
+            "text": "entorno"
+          },
+          {
+            "id": "ex-b1-alo-4_t8",
+            "kind": "token",
+            "text": "natural"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La casa rural está en un entorno natural"
+          ],
+          "tokenOrder": [
+            "ex-b1-alo-4_t1",
+            "ex-b1-alo-4_t2",
+            "ex-b1-alo-4_t3",
+            "ex-b1-alo-4_t4",
+            "ex-b1-alo-4_t5",
+            "ex-b1-alo-4_t6",
+            "ex-b1-alo-4_t7",
+            "ex-b1-alo-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ La casa rural ثم الفعل está ثم شبه الجملة en un entorno natural.",
+        "targetVocab": [
+          "casa rural",
+          "entorno natural"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-alo-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد نوع الغرفة في بيت الشباب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لحديث الرحالة وحدد نوع الغرفة التي حجزها",
+        "stemEs": "He reservado una cama en una habitación compartida de seis plazas.",
+        "stemAr": "حجزت سريراً في غرفة مشتركة تسع ستة أفراد.",
+        "options": [
+          {
+            "id": "ex-b1-alo-5_a",
+            "text": "habitación compartida",
+            "textAr": "غرفة مشتركة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-alo-5_b",
+            "text": "casa rural",
+            "textAr": "بيت ريفي خاص",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حجز سريراً في غرفة مشتركة."
+          },
+          {
+            "id": "ex-b1-alo-5_c",
+            "text": "intercambio de casas",
+            "textAr": "تبادل بيوت",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصف سكنه في غرفة نوم جماعية."
+          }
+        ],
+        "targetVocab": [
+          "habitación compartida",
+          "casa rural",
+          "intercambio de casas"
+        ],
+        "explanationAr": "المتحدث قال: 'una cama en una habitación compartida'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_cama_habitacion_compartida.mp3",
+        "speechEs": "He reservado una cama en una habitación compartida de seis plazas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-alo-5_a"
+          ],
+          "selectedOptionId": "ex-b1-alo-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-alo-5_b": "المتحدث حجز سريراً في غرفة مشتركة.",
+          "ex-b1-alo-5_c": "المتحدث وصف سكنه في غرفة نوم جماعية."
+        }
+      },
+      {
+        "id": "ex-b1-alo-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق تفضيلك للإقامة في الطبيعة والاستجمام الريفي",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب معبر عن حب الطبيعة والاسترخاء:",
+        "stemEs": "Prefiero alojarme en una casa rural rodeada de un bello entorno natural.",
+        "stemAr": "أفضل الإقامة في بيت ريفي محاط بمحيط طبيعي جميل.",
+        "audioKey": "pending/b1_alojarme_casa_rural.mp3",
+        "targetVocab": [
+          "casa rural",
+          "entorno natural",
+          "alojarse"
+        ],
+        "explanationAr": "انتبه لنطق حرف r في casa rural و entorno بنقاء صوتي واضح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_alojarme_casa_rural.mp3",
+          "modelAnswer": "Prefiero alojarme en una casa rural rodeada de un bello entorno natural."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-hobbies",
+    "titleAr": "الهوايات وأوقات الفراغ: التعبير عن الاهتمامات والأنشطة",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u7-routine",
+    "objectiveAr": "أن يقول المتعلم ما يحب وما لا يحب فعله في وقت الفراغ وعطلة نهاية الأسبوع مستخدماً أفعال الهوايات والتفضيل.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "speaking",
+      "listening",
+      "reading",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "tiempo",
+      "gustar",
+      "estudiar",
+      "amigo",
+      "casa",
+      "semana",
+      "deporte"
+    ],
+    "reviewVocabulary": [
+      "bueno",
+      "mucho",
+      "dos"
+    ],
+    "targetStructures": [
+      "En mi tiempo libre me gusta hacer deporte y leer.",
+      "Los fines de semana salgo con mis amigos.",
+      "¿Cuáles son tus aficiones favoritas?"
+    ],
+    "grammarTopics": [
+      "vocabulario-hobbies-aficiones",
+      "gustar-con-infinitivos",
+      "expresiones-tiempo-libre"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "زياد يتعرف على صديقه الإسباني إينيغو ويتحدثان عن هواياتهما المفضلة في عطلة نهاية الأسبوع.",
+        "settingAr": "نادي رياضي في مدريد",
+        "lines": [
+          {
+            "es": "¿Qué te gusta hacer en tu tiempo libre, Ziad?",
+            "ar": "ماذا تحب أن تفعل في وقت فراغك يا زياد؟",
+            "arEg": "بتحب تعمل إيه في وقت فراغك يا زياد؟",
+            "audioKey": "pending/a1-hob-sc-1"
+          },
+          {
+            "es": "Me gusta mucho hacer deporte, jugar al fútbol y escuchar música.",
+            "ar": "يعجبني كثيراً ممارسة الرياضة ولعب كرة القدم وسماع الموسيقى.",
+            "arEg": "بحب أوي أعمل رياضة، وألعب كورة وأسمع مزيكا.",
+            "audioKey": "pending/a1-hob-sc-2"
+          },
+          {
+            "es": "¡A mí también! Los sábados solemos jugar un partido con amigos.",
+            "ar": "وأنا أيضاً! أيام السبت اعتدنا أن نلعب مباراة مع الأصدقاء.",
+            "arEg": "وأنا كمان! أيام السبت متعودين نلعب ماتش مع الأصحاب.",
+            "audioKey": "pending/a1-hob-sc-3"
+          },
+          {
+            "es": "¡Qué bien! Me encantaría jugar con vosotros este sábado.",
+            "ar": "يا لروعة ذلك! يسعدني جداً اللعب معكم هذا السبت.",
+            "arEg": "حلو جداً! يسعدني ألعب معاكم السبت ده.",
+            "audioKey": "pending/a1-hob-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الرياضة والأنشطة الخارجية (al aire libre) مثل المشي في الطبيعة (hacer senderismo) ولقاء الأصدقاء في الساحات العامة من أهم مظاهر قضاء وقت الفراغ في الثقافة الإسبانية.",
+    "pedagogicalRationaleAr": "عند استخدام فعل gustar مع الأفعال (المصادر)، يظل الفعل دائماً في صيغة المفرد gusta حتى لو تعددت المصادر: Me gusta leer y viajar (وليس *me gustan leer y viajar).",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_hob_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد هواية المتحدث المفضلة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع لهواية المتحدث:",
+        "stemEs": "En mi tiempo libre me gusta mucho hacer deporte al aire libre.",
+        "stemAr": "في وقت فراغي يعجبني كثيراً ممارسة الرياضة في الهواء الطلق.",
+        "options": [
+          {
+            "id": "a1_hob_1_a",
+            "text": "Hacer deporte",
+            "textAr": "ممارسة الرياضة",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hob_1_b",
+            "text": "Cocinar en casa",
+            "textAr": "الطبخ في البيت",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر hacer deporte وليس cocinar."
+          },
+          {
+            "id": "a1_hob_1_c",
+            "text": "Ver la televisión",
+            "textAr": "مشاهدة التلفاز",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم تُذكر مشاهدة التلفاز."
+          }
+        ],
+        "targetVocab": [
+          "deporte",
+          "gustar",
+          "tiempo"
+        ],
+        "explanationAr": "المتحدث قال: me gusta mucho hacer deporte.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-hob-ex-1",
+        "speechEs": "En mi tiempo libre me gusta mucho hacer deporte al aire libre.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hob_1_a"
+          ],
+          "selectedOptionId": "a1_hob_1_a"
+        },
+        "errorFeedback": {
+          "a1_hob_1_b": "الصوت ذكر hacer deporte وليس cocinar.",
+          "a1_hob_1_c": "لم تُذكر مشاهدة التلفاز."
+        }
+      },
+      {
+        "id": "a1_hob_2_gustar_infinitives",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الصيغة النحوية الصحيحة لفعل التفضيل مع الأنشطة والمصادر.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "عند التعبير عن إعجابك بأنشطة متعددة في صيغة المصدر، نختار:",
+        "stemEs": "A mí me ____ leer novelas y escribir poesía.",
+        "stemAr": "أنا يعجبني قراءة الروايات وكتابة الشعر.",
+        "options": [
+          {
+            "id": "a1_hob_2_a",
+            "text": "gusta",
+            "textAr": "صيغة المفرد (مع المصادر)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hob_2_b",
+            "text": "gustan",
+            "textAr": "صيغة الجمع (للأسماء الجمع فقط)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ شائع: مع المصادر نستخدم دائماً gusta في المفرد حتى لو تعددت."
+          },
+          {
+            "id": "a1_hob_2_c",
+            "text": "gusto",
+            "textAr": "أنا أعجب",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ في تصريف الفعل."
+          }
+        ],
+        "targetVocab": [
+          "gustar"
+        ],
+        "explanationAr": "مع الأفعال في المصدر نستخدم دائماً صيغة المفرد: me gusta leer y escribir.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hob_2_a"
+          ],
+          "selectedOptionId": "a1_hob_2_a"
+        },
+        "errorFeedback": {
+          "a1_hob_2_b": "خطأ شائع: مع المصادر نستخدم دائماً gusta في المفرد حتى لو تعددت.",
+          "a1_hob_2_c": "خطأ في تصريف الفعل."
+        }
+      },
+      {
+        "id": "a1_hob_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة الرياضة بالإسبانية في الفراغ.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (deporte) في الفراغ:",
+        "stemEs": "Los fines de semana practico ____ con mis amigos.",
+        "stemAr": "في عطلات نهاية الأسبوع أمارس ____ مع أصدقائي.",
+        "targetVocab": [
+          "deporte",
+          "amigo"
+        ],
+        "explanationAr": "الرياضة بالإسبانية هي: el deporte.",
+        "answerKey": {
+          "accepted": [
+            "deporte"
+          ],
+          "acceptableAnswers": [
+            "deporte"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hob_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عما تفعله في وقت الفراغ.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_hob_4_order_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "a1_hob_4_order_t2",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "a1_hob_4_order_t3",
+            "kind": "token",
+            "text": "tiempo"
+          },
+          {
+            "id": "a1_hob_4_order_t4",
+            "kind": "token",
+            "text": "libre"
+          },
+          {
+            "id": "a1_hob_4_order_t5",
+            "kind": "token",
+            "text": "hago"
+          },
+          {
+            "id": "a1_hob_4_order_t6",
+            "kind": "token",
+            "text": "deporte."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "En mi tiempo libre hago deporte."
+          ],
+          "tokenOrder": [
+            "a1_hob_4_order_t1",
+            "a1_hob_4_order_t2",
+            "a1_hob_4_order_t3",
+            "a1_hob_4_order_t4",
+            "a1_hob_4_order_t5",
+            "a1_hob_4_order_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: شبه الجملة الظرفية En mi tiempo libre + الفعل hago + المفعول deporte.",
+        "targetVocab": [
+          "tiempo",
+          "deporte"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_hob_5_weekend",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو التعبير الإسباني الدال على «عطلة نهاية الأسبوع»؟",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "عطلة نهاية الأسبوع تسمى بالإسبانية:",
+        "stemEs": "Paso el ____ de semana con mi familia.",
+        "stemAr": "أقضي ____ الأسبوع مع عائلتي.",
+        "options": [
+          {
+            "id": "a1_hob_5_a",
+            "text": "fin",
+            "textAr": "نهاية (fin de semana)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_hob_5_b",
+            "text": "medio",
+            "textAr": "منتصف",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعبير القياسي هو fin de semana."
+          },
+          {
+            "id": "a1_hob_5_c",
+            "text": "principio",
+            "textAr": "بداية",
+            "isCorrect": false,
+            "distractorRationaleAr": "principio تعني بداية وليس نهاية."
+          }
+        ],
+        "targetVocab": [
+          "semana"
+        ],
+        "explanationAr": "عطلة نهاية الأسبوع هي: el fin de semana.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_hob_5_a"
+          ],
+          "selectedOptionId": "a1_hob_5_a"
+        },
+        "errorFeedback": {
+          "a1_hob_5_b": "التعبير القياسي هو fin de semana.",
+          "a1_hob_5_c": "principio تعني بداية وليس نهاية."
+        }
+      },
+      {
+        "id": "a1_hob_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة هواياتك في وقت الفراغ بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح ونبرة واثقة:",
+        "stemEs": "En mi tiempo libre me gusta salir con amigos y hacer deporte.",
+        "stemAr": "في وقت فراغي يعجبني الخروج مع الأصدقاء وممارسة الرياضة.",
+        "audioKey": "pending/a1-hob-ex-6",
+        "targetVocab": [
+          "tiempo",
+          "amigo",
+          "deporte",
+          "gustar"
+        ],
+        "explanationAr": "حافظ على سلاسة نطق sa-lir con a-mi-gos y ha-cer de-por-te.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-hob-ex-6",
+          "modelAnswer": "En mi tiempo libre me gusta salir con amigos y hacer deporte."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

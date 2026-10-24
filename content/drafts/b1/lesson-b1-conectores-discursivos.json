@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-conectores-discursivos",
+    "unitSlug": "b1-u10-writing-basics",
+    "levelCode": "B1",
+    "titleAr": "أدوات الربط المنطقي: مهارات تنظيم النص بـ Sin embargo و Por lo tanto و No obstante",
+    "titleEs": "Conectores discursivos: Causa, consecuencia, contraste y orden",
+    "subtitleAr": "الربط بين الأفكار، تنظيم الفقرات، وتفادي التكرار الركيك في الكتابة",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يوظف المتعلم روابط الخطاب المتقدمة للربط المنطقي بين الجمل والفقرات باللغة الإسبانية.",
+        "أن يميز بين روابط التناقض والاستدراك (sin embargo, no obstante, en cambio) والنتيجة (por lo tanto, por consiguiente, de modo que).",
+        "أن يطبق علامات الترقيم الصحيحة المصاحبة للروابط (الفواصل والنقطة والفاصلة المنقوطة)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تصنيف روابط الخطاب الكتابية في الإسبانية",
+          "explanationAr": "1. **روابط الاستدراك والتعارض (Oposición y Contraste)**:\n- **Sin embargo / No obstante**: تعني (ومع ذلك / غير أن) وتوضع بين فاصلتين أو بعد نقطة:\n  * Estudió mucho; sin embargo, el examen fue muy difícil.\n- **En cambio**: تعني (بالمقابل / في المقابل) للمقارنة المباشرة بين شيئين.\n2. **روابط النتيجة والسببية (Causa y Consecuencia)**:\n- **Por lo tanto / Por consiguiente**: تعني (وبناءً على ذلك / لذلك) لبيان النتيجة المنطقية:\n  * No cumplió los requisitos; por lo tanto, la solicitud fue denegada.\n- **Ya que / Puesto que**: تعني (بما أن / نظراً لأن) وتأتي في أول الجملة أو وسطها.\n3. **روابط الترتيب والإضافة (Orden y Adición)**:\n- **En primer lugar / Por último** (أولاً / أخيراً).\n- **Asimismo / Además** (كذلك / فضلاً عن ذلك)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *pero sin embargo* معاً في نفس الجملة (وهو حشو ركيك وخاطئ قواعدياً؛ اختر pero وحدها أو sin embargo وحدها).",
+        "نسيان الفاصلة بعد sin embargo أو por lo tanto عندما تأتي في أول الجملة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في الكتابة بنقول: «وعلى الرغم من كدة، وبالتالي، وعشان كدة، وفي المقابل». بالإسبانية: sin embargo, por lo tanto, por consiguiente, en cambio."
+        }
+      ],
+      "culturalNoteAr": "في اختبارات ديلي DELE B1، تقييم مهارة التعبير الكتابي يمنح وزناً كبيراً لمدى التنوع في استخدام روابط الخطاب (la coherencia y cohesión)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-conectores-discursivos-intro",
+        "type": "explanation",
+        "titleAr": "أهم روابط الخطاب والتماسك النصي",
+        "bodyAr": "الروابط الرئيسية:\n- **sin embargo**: ومع ذلك / غير أن\n- **no obstante**: على الرغم من ذلك / بَيْدَ أن\n- **por lo tanto**: ولذلك / بناءً عليه\n- **en cambio**: في المقابل / بالمقابل\n- **puesto que**: بما أن / نظراً لأن\n- **asimismo**: كذلك / وبالإضافة إلى ذلك",
+        "examples": [
+          {
+            "es": "El proyecto era arriesgado; sin embargo, obtuvimos un éxito rotundo.",
+            "ar": "كان المشروع محفوفاً بالمخاطر؛ ومع ذلك، حققنا نجاحاً باهراً."
+          },
+          {
+            "es": "El plazo finaliza hoy; por lo tanto, debemos enviar los documentos ya.",
+            "ar": "الموعد ينتهي اليوم؛ ولذلك، يجب أن نرسل الوثائق الآن."
+          },
+          {
+            "es": "Marta prefiere el cine; en cambio, su hermano adora el teatro.",
+            "ar": "مارتا تفضل السينما؛ في المقابل، أخوها يعشق المسرح."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "sin embargo",
+      "no obstante",
+      "por lo tanto",
+      "en cambio",
+      "puesto que",
+      "asimismo"
+    ],
+    "reviewVocabulary": [
+      "texto",
+      "escritura"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يوظف المتعلم روابط الخطاب المتقدمة للربط المنطقي بين الجمل والفقرات باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-con-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر رابط النتيجة والسببية المنطقية المناسب",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي رابط نستخدم لبيان النتيجة المترتبة على الجملة السابقة؟",
+        "stemEs": "El informe contiene errores graves; _____, debemos revisarlo de nuevo.",
+        "stemAr": "التقرير يحتوي على أخطاء جسيمة؛ ...، يجب أن نراجعه مجدداً.",
+        "options": [
+          {
+            "id": "ex-b1-con-1_a",
+            "text": "por lo tanto",
+            "textAr": "ولذلك / بناءً عليه (الصواب لبيان النتيجة)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-con-1_b",
+            "text": "sin embargo",
+            "textAr": "ومع ذلك (تعارض)",
+            "isCorrect": false,
+            "distractorRationaleAr": "المراجعة نتيجة منطقية للأخطاء وليست تعارضاً."
+          },
+          {
+            "id": "ex-b1-con-1_c",
+            "text": "en cambio",
+            "textAr": "في المقابل",
+            "isCorrect": false,
+            "distractorRationaleAr": "en cambio تستخدم للمقارنة المتقابلة."
+          }
+        ],
+        "targetVocab": [
+          "por lo tanto",
+          "sin embargo",
+          "en cambio"
+        ],
+        "explanationAr": "por lo tanto هو رابط النتيجة والسببية المنطقية (ولذلك / بناءً عليه).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-con-1_a"
+          ],
+          "selectedOptionId": "ex-b1-con-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-con-1_b": "المراجعة نتيجة منطقية للأخطاء وليست تعارضاً.",
+          "ex-b1-con-1_c": "en cambio تستخدم للمقارنة المتقابلة."
+        }
+      },
+      {
+        "id": "ex-b1-con-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل برابط الاستدراك والتعارض الأكثر شيوعاً: (sin _____)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في رابط الاستدراك الشهير: (sin _____)",
+        "stemEs": "Llovía con intensidad; sin _____, salimos a dar un paseo por la ciudad.",
+        "stemAr": "كانت تمطر بغزارة؛ ومع ذلك، خرجنا للتنزه في المدينة.",
+        "targetVocab": [
+          "sin embargo"
+        ],
+        "explanationAr": "الرابط هو sin embargo ويعني مع ذلك أو غير أن.",
+        "answerKey": {
+          "accepted": [
+            "embargo"
+          ],
+          "acceptableAnswers": [
+            "embargo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-con-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الرابط المستخدم للمقارنة والمقابلة بين أمرين متخالفين",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي رابط يعني 'في المقابل / بالمقابل' لمقارنة وضعين مختلفين؟",
+        "stemEs": "En el norte hace frío; _____, en el sur disfrutan de un clima cálido.",
+        "stemAr": "في الشمال الطقس بارد؛ ...، في الجنوب يستمتعون بمناخ دافئ.",
+        "options": [
+          {
+            "id": "ex-b1-con-3_a",
+            "text": "en cambio",
+            "textAr": "في المقابل / بالمقابل (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-con-3_b",
+            "text": "por lo tanto",
+            "textAr": "لذلك (نتيجة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة تقارن بين منطقتين متقابلتين."
+          },
+          {
+            "id": "ex-b1-con-3_c",
+            "text": "puesto que",
+            "textAr": "بما أن",
+            "isCorrect": false,
+            "distractorRationaleAr": "puesto que رابط تعليلي سببي."
+          }
+        ],
+        "targetVocab": [
+          "en cambio",
+          "por lo tanto",
+          "puesto que"
+        ],
+        "explanationAr": "en cambio يعني بالمقابل أو في المقابل لإبراز التباين بين طرفين.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-con-3_a"
+          ],
+          "selectedOptionId": "ex-b1-con-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-con-3_b": "الجملة تقارن بين منطقتين متقابلتين.",
+          "ex-b1-con-3_c": "puesto que رابط تعليلي سببي."
+        }
+      },
+      {
+        "id": "ex-b1-con-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لاستخدام الرابط الرصين no obstante في الاستدراك",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-con-4_t1",
+            "kind": "token",
+            "text": "No"
+          },
+          {
+            "id": "ex-b1-con-4_t2",
+            "kind": "token",
+            "text": "obstante"
+          },
+          {
+            "id": "ex-b1-con-4_t3",
+            "kind": "token",
+            "text": "seguiremos"
+          },
+          {
+            "id": "ex-b1-con-4_t4",
+            "kind": "token",
+            "text": "trabajando"
+          },
+          {
+            "id": "ex-b1-con-4_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b1-con-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-con-4_t7",
+            "kind": "token",
+            "text": "proyecto"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "No obstante seguiremos trabajando en el proyecto"
+          ],
+          "tokenOrder": [
+            "ex-b1-con-4_t1",
+            "ex-b1-con-4_t2",
+            "ex-b1-con-4_t3",
+            "ex-b1-con-4_t4",
+            "ex-b1-con-4_t5",
+            "ex-b1-con-4_t6",
+            "ex-b1-con-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الرابط No obstante ثم الفعل seguiremos trabajando ثم شبه الجملة en el proyecto.",
+        "targetVocab": [
+          "no obstante"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-con-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الرابط المنطقي الذي استخدمه الكاتب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للفقرة وحدد الرابط المستخدم في بداية الجملة الثانية",
+        "stemEs": "El candidato no tenía experiencia previa. Asimismo, demostró un gran talento.",
+        "stemAr": "لم يكن لدى المرشح خبرة سابقة. كذلك، أظهر موهبة كبيرة.",
+        "options": [
+          {
+            "id": "ex-b1-con-5_a",
+            "text": "asimismo",
+            "textAr": "كذلك / بالإضافة إلى ذلك (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-con-5_b",
+            "text": "sin embargo",
+            "textAr": "مع ذلك",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم تحديداً رابط الإضافة: Asimismo."
+          },
+          {
+            "id": "ex-b1-con-5_c",
+            "text": "por lo tanto",
+            "textAr": "لذلك",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم asimismo."
+          }
+        ],
+        "targetVocab": [
+          "asimismo",
+          "sin embargo",
+          "por lo tanto"
+        ],
+        "explanationAr": "المتحدث قال: 'Asimismo, demostró un gran talento'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_asimismo_gran_talento.mp3",
+        "speechEs": "El candidato no tenía experiencia previa. Asimismo, demostró un gran talento.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-con-5_a"
+          ],
+          "selectedOptionId": "ex-b1-con-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-con-5_b": "المتحدث استخدم تحديداً رابط الإضافة: Asimismo.",
+          "ex-b1-con-5_c": "المتحدث استخدم asimismo."
+        }
+      },
+      {
+        "id": "ex-b1-con-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك المركبة مستخدماً رابط النتيجة والاستدراك بفصاحة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب كتابي فصيح مع التوقف عند علامات الترقيم:",
+        "stemEs": "Estudiamos mucho; por lo tanto, aprobaremos el examen sin dificultades.",
+        "stemAr": "درسنا كثيراً؛ ولذلك، سنجتاز الامتحان دون صعوبات.",
+        "audioKey": "pending/b1_estudiamos_por_lo_tanto.mp3",
+        "targetVocab": [
+          "por lo tanto",
+          "escritura"
+        ],
+        "explanationAr": "توقف قليلاً بعد الفاصلة المنقوطة وبعد por lo tanto بنبرة كتابية متزنة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_estudiamos_por_lo_tanto.mp3",
+          "modelAnswer": "Estudiamos mucho; por lo tanto, aprobaremos el examen sin dificultades."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

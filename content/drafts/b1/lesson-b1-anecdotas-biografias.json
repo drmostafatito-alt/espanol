@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-anecdotas-biografias",
+    "titleAr": "سرد السير والتحولات الشخصية: المحطات الفارقة في مسار الحياة",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u1-narrating",
+    "objectiveAr": "أن يسرد المتعلم سيرة ذاتية موجزة أو تجربة مفصلية من حياته، مبيّنًا البدايات، التغيرات، والنتائج بأسلوب متماسك ولغة دقيقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "nacer",
+      "vivir",
+      "cambiar",
+      "decidir",
+      "carrera",
+      "vida",
+      "trasladar",
+      "triunfo"
+    ],
+    "reviewVocabulary": [
+      "año",
+      "trabajo",
+      "ciudad",
+      "español"
+    ],
+    "targetStructures": [
+      "Nací en Alejandría pero a los veinte años me trasladé a Madrid.",
+      "Allí decidí estudiar traducción y esa decisión cambió mi vida.",
+      "Con esfuerzo y constancia alcanzó el triunfo profesional."
+    ],
+    "grammarTopics": [
+      "expresiones-biograficas",
+      "marcadores-cambio-vida"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مترجم وأستاذ جامعي عربي يروي في مقابلة إذاعية محطات مسيرته المهنية وانتقاله إلى مدريد وتجربته الشخصية.",
+        "settingAr": "في استوديو البودكاست الثقافي",
+        "lines": [
+          {
+            "es": "¿En qué ciudad nació usted y cuándo decidió venir a España?",
+            "ar": "في أي مدينة وُلدتَ ومتى قررتَ المجيء إلى إسبانيا؟",
+            "arEg": "اتولدت في أنهي مدينة وقررت تيجي إسبانيا إمتى؟",
+            "audioKey": "pending/b1-biog-sc-1"
+          },
+          {
+            "es": "Nací en El Cairo, pero en 2010 decidí trasladarme a Granada para estudiar.",
+            "ar": "وُلدتُ في القاهرة، ولكن في عام 2010 قررتُ الانتقال إلى غرناطة للدراسة.",
+            "arEg": "اتولدت في القاهرة، بس سنة 2010 قررت أنقل لغرناطة عشان أدرس.",
+            "audioKey": "pending/b1-biog-sc-2"
+          },
+          {
+            "es": "¿Y cómo cambió esa experiencia su carrera profesional?",
+            "ar": "وكيف غيّرت تلك التجربة مسيرتك المهنية؟",
+            "arEg": "وإزاي التجربة دي غيرت كريرك المهني؟",
+            "audioKey": "pending/b1-biog-sc-3"
+          },
+          {
+            "es": "Cambió mi vida por completo; descubrí mi vocación y alcancé el triunfo.",
+            "ar": "غيّرت حياتي كليًا؛ اكتشفتُ شغفي وحققتُ النجاح المهني.",
+            "arEg": "غيرت حياتي تمامًا؛ لقيت شغفي وحققت نجاح كبير.",
+            "audioKey": "pending/b1-biog-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_bio_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الأستاذ واختر السنة التي قرر فيها الانتقال إلى إسبانيا.",
+        "audioKey": "pending/b1-biog-sc-2",
+        "speechEs": "Nací en El Cairo, pero en 2010 decidí trasladarme a Granada para estudiar.",
+        "options": [
+          {
+            "id": "b1_bio_1_a",
+            "text": "En 2010",
+            "isCorrect": true,
+            "textAr": "في عام 2010"
+          },
+          {
+            "id": "b1_bio_1_b",
+            "text": "En 2020",
+            "isCorrect": false,
+            "textAr": "في عام 2020",
+            "distractorRationaleAr": "المتحدث قال عام 2010 وليس 2020."
+          },
+          {
+            "id": "b1_bio_1_c",
+            "text": "En 1995",
+            "isCorrect": false,
+            "textAr": "في عام 1995",
+            "distractorRationaleAr": "عام 1995 لم يُذكر في الحديث."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_bio_1_a"
+          ]
+        },
+        "explanationAr": "المتحدث قال بوضوح: «en 2010 decidí trasladarme a Granada» أي في عام ألفين وعشرة.",
+        "errorFeedback": {
+          "b1_bio_1_b": "قال 2010 وليس 2020.",
+          "b1_bio_1_c": "لم يُذكر عام 1995 في كلامه."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "nacer",
+          "decidir"
+        ]
+      },
+      {
+        "id": "b1_bio_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر الفعل المناسب لوصف حدث الولادة مع المتكلم yo في الماضي البسيط.",
+        "stemEs": "Yo ____ en una ciudad hermosa del norte.",
+        "stemAr": "أنا ____ في مدينة جميلة في الشمال.",
+        "options": [
+          {
+            "id": "b1_bio_2_a",
+            "text": "nací",
+            "isCorrect": true,
+            "textAr": "وُلدتُ"
+          },
+          {
+            "id": "b1_bio_2_b",
+            "text": "nazco",
+            "isCorrect": false,
+            "textAr": "أولد (مضارع)",
+            "distractorRationaleAr": "nazco صيغة مضارع غير منطقية لسرد السيرة."
+          },
+          {
+            "id": "b1_bio_2_c",
+            "text": "naceré",
+            "isCorrect": false,
+            "textAr": "سأولد (مستقبل)",
+            "distractorRationaleAr": "naceré صيغة مستقبل."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_bio_2_a"
+          ]
+        },
+        "explanationAr": "الولادة حدث ماضٍ منتهٍ بصيغة المتكلم: «nací».",
+        "errorFeedback": {
+          "b1_bio_2_b": "nazco صيغة مضارع غير منطقية للسيرة.",
+          "b1_bio_2_c": "naceré صيغة مستقبل."
+        },
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "nacer"
+        ]
+      },
+      {
+        "id": "b1_bio_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب تصريف الفعل cambiar في الماضي البسيط لوصف أثر التجربة في الحياة.",
+        "stemEs": "Aquella experiencia ____ mi vida por completo.",
+        "stemAr": "تلك التجربة ____ مجرى حياتي كليًا.",
+        "answerKey": {
+          "accepted": [
+            "cambió"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الفعل cambiar مع الفاعل المفرد الغائب (Aquella experiencia) في الماضي البسيط ينتهي بـ -ó مع نبرة مكتوبة: cambió.",
+        "errorFeedback": {
+          "cambia": "cambia مضارع، والمطلوب ماضٍ بسيط بعد Aquella experiencia.",
+          "cambiaba": "cambiaba ماضٍ مستمر، والمطلوب ماضٍ بسيط منجز."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cambiar",
+          "vida"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_bio_4_reply",
+        "type": "word_choice",
+        "instructionAr": "اختر العبارة المهنية الأنسب لوصف التطور الإيجابي في المسار الوظيفي.",
+        "stemEs": "Tras años de estudio constante, él logró un gran ____ en su carrera.",
+        "stemAr": "بعد سنوات من الدراسة المستمرة، حقق ____ كبيرًا في مسيرته.",
+        "options": [
+          {
+            "id": "b1_bio_4_a",
+            "text": "triunfo",
+            "isCorrect": true,
+            "textAr": "نجاح وانتصار مهني"
+          },
+          {
+            "id": "b1_bio_4_b",
+            "text": "retraso",
+            "isCorrect": false,
+            "textAr": "تأخر وعطلة",
+            "distractorRationaleAr": "retraso تعني تأخر زمني ولا تناسب تحقيق النجاح."
+          },
+          {
+            "id": "b1_bio_4_c",
+            "text": "olvido",
+            "isCorrect": false,
+            "textAr": "نسيان وإهمال",
+            "distractorRationaleAr": "olvido تعني النسيان والإهمال."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_bio_4_a"
+          ]
+        },
+        "explanationAr": "كلمة «triunfo» تدل على الفوز والنجاح الباهر المتوج للجهد الأكاديمي والمهني.",
+        "errorFeedback": {
+          "b1_bio_4_b": "retraso تعني تأخر زمني.",
+          "b1_bio_4_c": "olvido تعني النسيان."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "triunfo",
+          "carrera"
+        ]
+      },
+      {
+        "id": "b1_bio_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تصف قرار الانتقال إلى مدينة جديدة.",
+        "items": [
+          {
+            "id": "b1_bi_t1",
+            "kind": "token",
+            "text": "Decidí"
+          },
+          {
+            "id": "b1_bi_t2",
+            "kind": "token",
+            "text": "trasladar"
+          },
+          {
+            "id": "b1_bi_t3",
+            "kind": "token",
+            "text": "mi residencia"
+          },
+          {
+            "id": "b1_bi_t4",
+            "kind": "token",
+            "text": "a otra"
+          },
+          {
+            "id": "b1_bi_t5",
+            "kind": "token",
+            "text": "ciudad."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Decidí trasladar mi residencia a otra ciudad."
+          ],
+          "tokenOrder": [
+            "b1_bi_t1",
+            "b1_bi_t2",
+            "b1_bi_t3",
+            "b1_bi_t4",
+            "b1_bi_t5"
+          ]
+        },
+        "explanationAr": "الترتيب البلاغي: الفعل Decidí + المصدر trasladar + المفعول mi residencia + الجار والمجرور a otra ciudad.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "decidir",
+          "trasladar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_bio_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة السيرة الذاتية بنبرة واثقة وفصيحة.",
+        "stemEs": "Esa decisión cambió mi vida profesional.",
+        "stemAr": "ذلك القرار غيّر حياتي المهنية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-biog-speak-1",
+          "modelAnswer": "Esa decisión cambió mi vida profesional."
+        },
+        "explanationAr": "احرص على نطق حرف c في decisión كثاء لثوية، وتفخيم الراء في profesional.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cambiar",
+          "vida"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق c في decisión بثقة",
+              "weight": 50,
+              "code": "pron_c_decision"
+            },
+            {
+              "labelAr": "النبر على مقطع -bió في cambió",
+              "weight": 50,
+              "code": "stress_cambio"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 3 وSueña 2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

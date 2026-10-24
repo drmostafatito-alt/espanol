@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-citacion-fuentes-academicas",
+    "unitSlug": "b2-u5-academic",
+    "levelCode": "B2",
+    "titleAr": "أدوات الاستشهاد ونقل آراء الباحثين: التوثيق والأمانة العلمية",
+    "titleEs": "Citación de fuentes y discurso referido académico: Rigor y honestidad intelectual",
+    "subtitleAr": "نقل النظريات بـ (según afirma), المقارنة بين الآراء، وتفادي الانتحال العلمي (el plagio)",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن ينقل المتعلم آراء المفكرين والباحثين بدقة مستخدماً أفعال الإحالة الأكاديمية.",
+        "أن يوظف صيغ التوثيق: como señala, en palabras de, citando a, tal como sostiene.",
+        "أن يميز بين الاقتباس الحرفي المباشر (cita textual) وإعادة الصياغة التفسيرية (paráfrasis)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب الإسناد الأكاديمي وعزو الآراء لأصحابها",
+          "explanationAr": "1. **أفعال الإحالة العلمية المتخصصة**:\n- *Postular / Proponer*: Habermas postula que la acción comunicativa busca el entendimiento.\n- *Cuestionar / Matizar*: Chomsky matiza las teorías empiristas sobre el lenguaje.\n2. **تراكيب الإسناد غير المباشر**:\n- *Tal como sostiene García Márquez en su ensayo sobre la ortografía...*\n- *A tenor de lo expuesto por los investigadores...*\n3. **تفادي الانتحال العلمي بـ Paráfrasis الدقيقة**:\n- إعادة صياغة الفكرة مع الاحتفاظ بالإسناد للمؤلف الأصلي."
+        }
+      ],
+      "commonMistakesAr": [
+        "الاقتصار على فعل *dice que* المبتذل في الكتابة الجامعية بدلاً من الأفعال الأكاديمية الدقيقة (*sostiene, argumenta, refuta*).",
+        "نقل كلام المؤلف حرفياً دون وضعه بين علامتي تنصيص معقوفتين « » وذكر الصفحة المرجعية."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الأبحاث بنقول «زي ما بيقول الدكتور فلان في كتابه، النظرية دي محتاجة مراجعة». بالإسبانية: Tal como sostiene el profesor Rodríguez en su obra, dicha teoría requiere una revisión crítica."
+        }
+      ],
+      "culturalNoteAr": "الجامعات الناطقة بالإسبانية تستخدم علامتي التنصيص اللاتينية المزدوجة « » (comillas latinas o españolas) كأولوية أسلوبية قبل التنصيص الإنجليزي \" \"."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-citacion-fuentes-academicas-intro",
+        "type": "explanation",
+        "titleAr": "معجم الاستشهاد الأكاديمي",
+        "bodyAr": "أدوات التوثيق:\n- **tal como sostiene**: تماماً كما يذهب ويؤكد (الباحث فلان)\n- **en palabras de**: بعبارة وكلمات الكاتب\n- **la cita textual**: الاقتباس الحرفي بنصه الكامل بين علامات تنصيص\n- **la paráfrasis**: إعادة صياغة الفكرة بأسلوب الباحث الخاص مع حفظ المرجع\n- **el plagio**: الانتحال والسرقة الأدبية أو العلمية\n- **la bibliografía consultada**: قائمة المراجع والمصادر المستشارة في البحث",
+        "examples": [
+          {
+            "es": "Tal como sostiene Umberto Eco, un libro está hecho de otros libros.",
+            "ar": "تماماً كما يؤكد أومبرتو إيكو، فإن الكتاب مصنوع من كتب أخرى."
+          },
+          {
+            "es": "Para evitar el plagio académico, es obligatorio citar la fuente original de cada dato.",
+            "ar": "لتفادي الانتحال الأكاديمي، من الإلزامي توثيق المصدر الأصلي لكل معلومة."
+          },
+          {
+            "es": "La paráfrasis permite integrar las ideas de otros autores de manera fluida en el texto.",
+            "ar": "تتيح إعادة الصياغة دمج أفكار المؤلفين الآخرين بسلاسة في النص."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "tal como sostiene",
+      "en palabras de",
+      "cita textual",
+      "paráfrasis",
+      "plagio",
+      "bibliografía"
+    ],
+    "reviewVocabulary": [
+      "fuente",
+      "autor"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن ينقل المتعلم آراء المفكرين والباحثين بدقة مستخدماً أفعال الإحالة الأكاديمية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-cfa-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الذي يعني الاقتباس الحرفي المنقول بنصه الكامل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي نقل كلام المؤلف بحروفه الأصلية بين علامات تنصيص؟",
+        "stemEs": "Si incluimos una _____ de más de cuarenta palabras, debemos sangrar el párrafo.",
+        "stemAr": "إذا أدرجنا ... تزيد عن أربعين كلمة، يجب إزاحة الفقرة بهامش مستقل.",
+        "options": [
+          {
+            "id": "ex-b2-cfa-1_a",
+            "text": "cita textual",
+            "textAr": "اقتباس حرفي مباشر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cfa-1_b",
+            "text": "paráfrasis",
+            "textAr": "إعادة صياغة بفهم الباحث",
+            "isCorrect": false,
+            "distractorRationaleAr": "النقل الحرفي بالكلمات الأصلية يسمى cita textual."
+          },
+          {
+            "id": "ex-b2-cfa-1_c",
+            "text": "plagio",
+            "textAr": "سرقة علمية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاقتباس النظامي الموثق يسمى cita textual."
+          }
+        ],
+        "targetVocab": [
+          "cita textual",
+          "paráfrasis",
+          "plagio"
+        ],
+        "explanationAr": "la cita textual هي الاقتباس الحرفي الذي ينقل العبارة بنصها الأصلي دون تعديل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cfa-1_a"
+          ],
+          "selectedOptionId": "ex-b2-cfa-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cfa-1_b": "النقل الحرفي بالكلمات الأصلية يسمى cita textual.",
+          "ex-b2-cfa-1_c": "الاقتباس النظامي الموثق يسمى cita textual."
+        }
+      },
+      {
+        "id": "ex-b2-cfa-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل sostener بالماضي البسيط مع المفرد الغائب هو: (sostuvo)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل: El filósofo _____ que el lenguaje determina el pensamiento.",
+        "stemEs": "En su célebre ensayo de 1970, el autor _____ que la cultura es un sistema dinámico.",
+        "stemAr": "في مقاله الشهير عام 1970، ذهب المؤلف وأكد أن الثقافة نظام ديناميكي.",
+        "targetVocab": [
+          "tal como sostiene"
+        ],
+        "explanationAr": "في الماضي البسيط مع الغائب: sostuvo.",
+        "answerKey": {
+          "accepted": [
+            "sostuvo"
+          ],
+          "acceptableAnswers": [
+            "sostuvo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cfa-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الجريمة الأكاديمية الناتجة عن نسب أفكار الآخرين للنفس دون توثيق المرجع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح القانوني والأكاديمي للسرقة الفكرية ونقل أبحاث الغير دون عزو؟",
+        "stemEs": "El uso de software especializado permite a las universidades detectar el _____ con facilidad.",
+        "stemAr": "يتيح استخدام البرمجيات المتخصصة للجامعات كشف ... بسهولة بالغة.",
+        "options": [
+          {
+            "id": "ex-b2-cfa-3_a",
+            "text": "plagio",
+            "textAr": "الانتحال والسرقة العلمية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cfa-3_b",
+            "text": "enfoque",
+            "textAr": "المنهج العلمي",
+            "isCorrect": false,
+            "distractorRationaleAr": "السرقة العلمية تسمى el plagio."
+          },
+          {
+            "id": "ex-b2-cfa-3_c",
+            "text": "marco teórico",
+            "textAr": "الإطار النظري",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجريمة الأكاديمية تسمى plagio."
+          }
+        ],
+        "targetVocab": [
+          "plagio",
+          "cita textual",
+          "bibliografía"
+        ],
+        "explanationAr": "el plagio هو انتحال أفكار أو نصوص الآخرين ونسبتها للذات دون توثيق نظامي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cfa-3_a"
+          ],
+          "selectedOptionId": "ex-b2-cfa-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cfa-3_b": "السرقة العلمية تسمى el plagio.",
+          "ex-b2-cfa-3_c": "الجريمة الأكاديمية تسمى plagio."
+        }
+      },
+      {
+        "id": "ex-b2-cfa-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الاستشهادية لنقل فكرة الباحث الشهير",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-cfa-4_t1",
+            "kind": "token",
+            "text": "Tal"
+          },
+          {
+            "id": "ex-b2-cfa-4_t2",
+            "kind": "token",
+            "text": "como"
+          },
+          {
+            "id": "ex-b2-cfa-4_t3",
+            "kind": "token",
+            "text": "sostiene"
+          },
+          {
+            "id": "ex-b2-cfa-4_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b2-cfa-4_t5",
+            "kind": "token",
+            "text": "autor"
+          },
+          {
+            "id": "ex-b2-cfa-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-cfa-4_t7",
+            "kind": "token",
+            "text": "educación"
+          },
+          {
+            "id": "ex-b2-cfa-4_t8",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-b2-cfa-4_t9",
+            "kind": "token",
+            "text": "fundamental"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tal como sostiene el autor la educación es fundamental"
+          ],
+          "tokenOrder": [
+            "ex-b2-cfa-4_t1",
+            "ex-b2-cfa-4_t2",
+            "ex-b2-cfa-4_t3",
+            "ex-b2-cfa-4_t4",
+            "ex-b2-cfa-4_t5",
+            "ex-b2-cfa-4_t6",
+            "ex-b2-cfa-4_t7",
+            "ex-b2-cfa-4_t8",
+            "ex-b2-cfa-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة الاستشهادية Tal como sostiene ثم الفاعل el autor ثم جملة المضمون la educación es fundamental.",
+        "targetVocab": [
+          "tal como sostiene",
+          "en palabras de"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-cfa-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمحاضرة الجامعية وحدد التقنية التي ينصح بها الأستاذ لتجنب الاقتباس الحرفي الزائد",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لنصيحة الأستاذ الجامعي لطلبة الدراسات العليا",
+        "stemEs": "Recomiendo recurrir a una buena paráfrasis para enriquecer el texto con voz propia.",
+        "stemAr": "أنصح باللجوء إلى إعادة صياغة جيدة لإثراء النص بصوتكم البحثي الخاص.",
+        "options": [
+          {
+            "id": "ex-b2-cfa-5_a",
+            "text": "paráfrasis",
+            "textAr": "إعادة الصياغة التفسيرية الحافظة للمصدر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-cfa-5_b",
+            "text": "plagio",
+            "textAr": "الانتحال",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأستاذ أوصى بـ paráfrasis."
+          },
+          {
+            "id": "ex-b2-cfa-5_c",
+            "text": "supresión",
+            "textAr": "حذف المراجع",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقنية المقترحة هي la paráfrasis."
+          }
+        ],
+        "targetVocab": [
+          "paráfrasis",
+          "cita textual"
+        ],
+        "explanationAr": "الأستاذ قال: 'Recomiendo recurrir a una buena paráfrasis'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_parafrasis_voz_propia_investigador.mp3",
+        "speechEs": "Recomiendo recurrir a una buena paráfrasis para enriquecer el texto con voz propia.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-cfa-5_a"
+          ],
+          "selectedOptionId": "ex-b2-cfa-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-cfa-5_b": "الأستاذ أوصى بـ paráfrasis.",
+          "ex-b2-cfa-5_c": "التقنية المقترحة هي la paráfrasis."
+        }
+      },
+      {
+        "id": "ex-b2-cfa-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك الاستشهادية التوثيقية بلغة أكاديمية رصينة وأمينة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتوثيق فكرة مرجعية في بحثك الأكاديمي:",
+        "stemEs": "Tal como sostiene la bibliografía especializada, es imprescindible contrastar todas las fuentes consultadas.",
+        "stemAr": "تماماً كما تؤكد المراجع المتخصصة، من الضروري مقارنة جميع المصادر المستشارة وتدقيقها.",
+        "audioKey": "pending/b2_tal_como_sostiene_bibliografia.mp3",
+        "targetVocab": [
+          "tal como sostiene",
+          "bibliografía",
+          "cita textual"
+        ],
+        "explanationAr": "انتبه لنطق bibliografía مع النبرة على حرف í و especializada بنطق إسباني متقن.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_tal_como_sostiene_bibliografia.mp3",
+          "modelAnswer": "Tal como sostiene la bibliografía especializada, es imprescindible contrastar todas las fuentes consultadas."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

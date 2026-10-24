@@ -10,8 +10,8 @@ import {
 } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
 import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
-import { getLesson, listPaths } from './routes/content';
-import { completeLesson, lessonSession, myProgress, submitAnswer } from './routes/learn';
+import { getLesson, listPaths, searchContent } from './routes/content';
+import { completeLesson, lessonSession, myProgress, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
 
 interface Ctx {
@@ -80,10 +80,12 @@ const routes: Route[] = [
   route('GET', '/api/admin/audit', (req, env, ctx) => adminAudit(req, env, ctx.requestId, ctx.user!), 'session', 'audit.read'),
 
   route('GET', '/api/content/paths', (req, env, ctx) => listPaths(req, env, ctx.requestId)),
+  route('GET', '/api/content/search', (req, env, ctx) => searchContent(req, env, ctx.requestId)),
   route('GET', '/api/content/lessons/:slug', (req, env, ctx) => getLesson(req, env, ctx.requestId, ctx.user), 'optional'),
 
   // ---- المرحلة 2: التعلم ----
   route('GET', '/api/me/progress', (req, env, ctx) => myProgress(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/me/placement', (req, env, ctx) => submitPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('GET', '/api/lessons/:slug/session', (req, env, ctx) => lessonSession(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/lessons/:slug/answers', (req, env, ctx) => submitAnswer(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('POST', '/api/lessons/:slug/complete', (req, env, ctx) => completeLesson(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
@@ -138,6 +140,12 @@ async function serveAsset(request: Request, env: Env, url: URL): Promise<Respons
   const res = await env.ASSETS!.fetch(request);
   const headers = new Headers(res.headers);
   for (const [k, v] of Object.entries(securityHeadersFor(env))) headers.set(k, v);
+
+  // ملفات الوسائط غير الموجودة لا تُخدم بصفحة HTML من SPA fallback.
+  // نعيد 404 حقيقيًا حتى يفشل المشغّل بوضوح بدل تشغيل HTML.
+  if (url.pathname.startsWith('/audio/') && (headers.get('Content-Type') ?? '').includes('text/html')) {
+    return new Response('Not found', { status: 404, headers: securityHeadersFor(env) });
+  }
 
   const isHtml = (headers.get('Content-Type') ?? '').includes('text/html');
   if (isHtml) {

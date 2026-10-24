@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-viajes-imprevistos",
+    "unitSlug": "b1-u5-independent-travel",
+    "levelCode": "B1",
+    "titleAr": "السفر المستقل والمواقف الطارئة: التعامل مع تأخر الرحلات وفقدان الأمتعة",
+    "titleEs": "Viajes independientes y situaciones imprevistas",
+    "subtitleAr": "إلغاء الرحلات، ضياع الحقائب، والتواصل مع مكاتب المساعدة في المطارات",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم عطلاً أو ظرفاً طارئاً أثناء السفر: avería, retraso, pérdida de equipaje, cancelación.",
+        "أن يتواصل بفاعلية مع مكاتب الاستعلامات وشركات الطيران للمطالبة بحل عاجل.",
+        "أن يستخدم أزمنة الماضي المناسبة لبيان تسلسل الأحداث غير المتوقعة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الحديث عن المفاجآت والظروف الطارئة في السفر",
+          "explanationAr": "1. **وصف الأحداث المفاجئة**:\n- **Surgir un imprevisto**: Nos ha surgido un imprevisto y hemos perdido la conexión (طرأ لنا ظرف غير متوقع وفاتتنا رحلة المتابعة).\n- **Quedarse tirado / varado**: Nos quedamos varados en el aeropuerto durante doce horas.\n2. **الاستفسار عن الحلول والتعويضات**:\n- ¿Qué solución nos ofrecen mientras esperamos? (ما الحل الذي تقدمونه لنا أثناء الانتظار؟).\n- ¿Tienen previsto facilitarnos alojamiento o vales de comida?"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام كلمة *accidente* لأي مشكلة في الرحلة؛ إذا كان الأمر مجرد عطل أو تأخير فالأصح استخدام avería أو retraso أو imprevisto.",
+        "الخلط بين perder (يفقد/يفوته القطار) و perderse (يضل الطريق)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «الطيارة اتأخرت والشنطة ضاعت وطلع لنا ظرف طارئ في المطار». بالإسبانية: El vuelo se retrasó, se perdió la maleta y surgió un imprevisto."
+        }
+      ],
+      "culturalNoteAr": "في المطارات الأوروبية، يحق للمسافر قانونياً الحصول على وجبات وإقامة فندقية مجانية وتعويض مالي إذا تجاوز تأخير الرحلة عدداً محدداً من الساعات بموجب لائحة حقوق الركاب (Reglamento CE 261/2004)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-viajes-imprevistos-intro",
+        "type": "explanation",
+        "titleAr": "مفردات طوارئ السفر",
+        "bodyAr": "المصطلحات الأساسية:\n- **el imprevisto**: الظرف الطارئ أو المفاجئ\n- **el retraso**: التأخير في الموعد\n- **la cancelación**: الإلغاء الكامل للرحلة\n- **el equipaje perdido**: الأمتعة المفقودة\n- **la indemnización**: التعويض المالي أو العيني\n- **el mostrador de información**: مكتب الاستعلامات والمساعدة",
+        "examples": [
+          {
+            "es": "Debido a un imprevisto meteorológico, el vuelo sufrió un retraso de tres horas.",
+            "ar": "بسبب ظرف جوي طارئ، تعرضت الرحلة لتأخير مدته ثلاث ساعات."
+          },
+          {
+            "es": "Nos dirigimos al mostrador para reclamar el equipaje perdido.",
+            "ar": "توجهنا إلى المكتب للمطالبة بالأمتعة المفقودة."
+          },
+          {
+            "es": "La aerolínea está obligada a pagar una indemnización por la cancelación.",
+            "ar": "شركة الطيران ملزمة بدفع تعويض عن الإلغاء."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "imprevisto",
+      "retraso",
+      "cancelación",
+      "equipaje perdido",
+      "indemnización",
+      "mostrador"
+    ],
+    "reviewVocabulary": [
+      "vuelo",
+      "maleta"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يصف المتعلم عطلاً أو ظرفاً طارئاً أثناء السفر: avería, retraso, pérdida de equipaje, cancelación.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-via-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني ظرفاً مفاجئاً غير مخطط له",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية المقابلة لـ 'ظرف طارئ / حدث غير متوقع'؟",
+        "stemEs": "Tuvimos que cambiar de planes por culpa de un _____ de última hora.",
+        "stemAr": "اضطررنا لتغيير خططنا بسبب ... في اللحظة الأخيرة.",
+        "options": [
+          {
+            "id": "ex-b1-via-1_a",
+            "text": "imprevisto",
+            "textAr": "ظرف طارئ ومفاجئ (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-via-1_b",
+            "text": "mostrador",
+            "textAr": "مكتب استعلامات",
+            "isCorrect": false,
+            "distractorRationaleAr": "mostrador هو المكتب الفيزيائي وليس الحدث الطارئ."
+          },
+          {
+            "id": "ex-b1-via-1_c",
+            "text": "indemnización",
+            "textAr": "تعويض مالي",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعويض نتيجة وليس سبباً لتغيير الخطط."
+          }
+        ],
+        "targetVocab": [
+          "imprevisto",
+          "mostrador",
+          "indemnización"
+        ],
+        "explanationAr": "un imprevisto هو الأمر المفاجئ أو الظرف الطارئ غير المحسوب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-via-1_a"
+          ],
+          "selectedOptionId": "ex-b1-via-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-via-1_b": "mostrador هو المكتب الفيزيائي وليس الحدث الطارئ.",
+          "ex-b1-via-1_c": "التعويض نتيجة وليس سبباً لتغيير الخطط."
+        }
+      },
+      {
+        "id": "ex-b1-via-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني التعويض المالي للمسافر",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'تعويض / جبر الضرر' (la _____)",
+        "stemEs": "Los pasajeros tienen derecho a solicitar una _____ económica por el retraso.",
+        "stemAr": "يحق للركاب طلب تعويض مالي عن التأخير.",
+        "targetVocab": [
+          "indemnización",
+          "retraso"
+        ],
+        "explanationAr": "كلمة indemnización تعني التعويض المالي أو القانوني.",
+        "answerKey": {
+          "accepted": [
+            "indemnización",
+            "indemnizacion"
+          ],
+          "acceptableAnswers": [
+            "indemnización",
+            "indemnizacion"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-via-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد حالة الرحلة عندما يتم إلغاؤها نهائياً",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح الدال على إلغاء الرحلة بالكامل وعدم إقلاعها؟",
+        "stemEs": "La compañía anunció la _____ definitiva del vuelo por huelga general.",
+        "stemAr": "أعلنت الشركة ... النهائي للرحلة بسبب إضراب عام.",
+        "options": [
+          {
+            "id": "ex-b1-via-3_a",
+            "text": "cancelación",
+            "textAr": "الإلغاء (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-via-3_b",
+            "text": "retraso",
+            "textAr": "تأخير زمني فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنها لم تقلع نهائياً فالأمر إلغاء وليس مجرد تأخير."
+          },
+          {
+            "id": "ex-b1-via-3_c",
+            "text": "equipaje perdido",
+            "textAr": "أمتعة ضائعة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الإعلان يخص مصير الرحلة الجوية."
+          }
+        ],
+        "targetVocab": [
+          "cancelación",
+          "retraso",
+          "equipaje perdido",
+          "vuelo"
+        ],
+        "explanationAr": "la cancelación تعني إلغاء الرحلة بالكامل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-via-3_a"
+          ],
+          "selectedOptionId": "ex-b1-via-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-via-3_b": "قال إنها لم تقلع نهائياً فالأمر إلغاء وليس مجرد تأخير.",
+          "ex-b1-via-3_c": "الإعلان يخص مصير الرحلة الجوية."
+        }
+      },
+      {
+        "id": "ex-b1-via-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتوجه إلى مكتب الاستعلامات في المطار",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-via-4_t1",
+            "kind": "token",
+            "text": "Vamos"
+          },
+          {
+            "id": "ex-b1-via-4_t2",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b1-via-4_t3",
+            "kind": "token",
+            "text": "mostrador"
+          },
+          {
+            "id": "ex-b1-via-4_t4",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-via-4_t5",
+            "kind": "token",
+            "text": "reclamar"
+          },
+          {
+            "id": "ex-b1-via-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b1-via-4_t7",
+            "kind": "token",
+            "text": "maleta"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Vamos al mostrador para reclamar la maleta"
+          ],
+          "tokenOrder": [
+            "ex-b1-via-4_t1",
+            "ex-b1-via-4_t2",
+            "ex-b1-via-4_t3",
+            "ex-b1-via-4_t4",
+            "ex-b1-via-4_t5",
+            "ex-b1-via-4_t6",
+            "ex-b1-via-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل والوجهة Vamos al mostrador ثم الغرض para reclamar la maleta.",
+        "targetVocab": [
+          "mostrador",
+          "maleta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-via-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد سبب توجه المسافر للمكتب",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لنداء المطار وحدد المشكلة التي أعلن عنها",
+        "stemEs": "El vuelo con destino a Barcelona sufre un retraso de dos horas.",
+        "stemAr": "الرحلة المتجهة إلى برشلونة تعاني من تأخير مدته ساعتان.",
+        "options": [
+          {
+            "id": "ex-b1-via-5_a",
+            "text": "retraso",
+            "textAr": "تأخير في موعد الإقلاع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-via-5_b",
+            "text": "cancelación",
+            "textAr": "إلغاء نهائي",
+            "isCorrect": false,
+            "distractorRationaleAr": "النداء أعلن تأخيراً لساعتين وليس إلغاءً."
+          },
+          {
+            "id": "ex-b1-via-5_c",
+            "text": "imprevisto",
+            "textAr": "ظرف غير محدد",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد المشكلة تحديداً بـ retraso."
+          }
+        ],
+        "targetVocab": [
+          "retraso",
+          "cancelación",
+          "imprevisto",
+          "vuelo"
+        ],
+        "explanationAr": "المتحدث قال: 'sufre un retraso de dos horas'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_vuelo_sufre_retraso.mp3",
+        "speechEs": "El vuelo con destino a Barcelona sufre un retraso de dos horas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-via-5_a"
+          ],
+          "selectedOptionId": "ex-b1-via-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-via-5_b": "النداء أعلن تأخيراً لساعتين وليس إلغاءً.",
+          "ex-b1-via-5_c": "المتحدث حدد المشكلة تحديداً بـ retraso."
+        }
+      },
+      {
+        "id": "ex-b1-via-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق بلاغك عن فقدان حقائب السفر في المطار",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح لموظف مفقودات المطار:",
+        "stemEs": "He llegado en este vuelo pero mi equipaje no aparece en la cinta.",
+        "stemAr": "وصلت على متن هذه الرحلة لكن أمتعتي لا تظهر على سير الحقائب.",
+        "audioKey": "pending/b1_equipaje_no_aparece.mp3",
+        "targetVocab": [
+          "equipaje perdido",
+          "vuelo"
+        ],
+        "explanationAr": "انتبه لنطق حرف ll كـ ياء مشبعة في llegado ونطق j في equipaje كـ خاء مرققة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_equipaje_no_aparece.mp3",
+          "modelAnswer": "He llegado en este vuelo pero mi equipaje no aparece en la cinta."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

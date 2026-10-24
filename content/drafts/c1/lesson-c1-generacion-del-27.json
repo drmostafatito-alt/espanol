@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-generacion-del-27",
+    "titleAr": "جيل 27 وشعرية الطليعة: La Generación del 27 y la metáfora lorquiana",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u4-literature",
+    "objectiveAr": "أن يحلل المتعلم شعرية الطليعة الإسبانية مبيناً التوفيق العبقري بين التراث الأندلسي الشعبي والتجديد السريالي عند لوركا وسيرنوذا.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "vanguardia",
+      "simbolismo",
+      "metáfora",
+      "lorquiana",
+      "compromiso",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La síntesis entre tradición popular (romancero) y vanguardia surrealista",
+      "La metáfora visionaria lorquiana: luna, caballo, metales y presagio de muerte",
+      "El simbolismo andaluz universalizado en 'Poeta en Nueva York'",
+      "El compromiso ético y estético ante la convulsa realidad histórica"
+    ],
+    "grammarTopics": [
+      "generacion-del-27",
+      "analisis-de-la-metafora-poetica-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حلقة دراسية نقدية في معهد ثربانتس حول التراث الشعري لفيديريكو غارثيا لوركا.",
+        "settingAr": "مكتبة معهد ثربانتس المركزية في مدريد",
+        "lines": [
+          {
+            "es": "La Generación del 27 logró fusionar la herencia de Góngora con las audacias de la vanguardia.",
+            "ar": "نجح جيل 27 في صهر ميراث غونغورا الكلاسيكي مع جرأة مدارس الطليعة الحديثة.",
+            "arEg": "شعراء جيل 27 قدروا يمزجوا فخامة شعر العصر الذهبي مع جنون وجرأة المدارس الحديثة والسريالية.",
+            "audioKey": "pending/c1-u4-g27-1"
+          },
+          {
+            "es": "En la obra lorquiana, la metáfora no es simple adorno, sino revelación telúrica y trágica.",
+            "ar": "في إبداع لوركا، لا تعد الاستعارة مجرد زينة سطحية، بل كشفاً أرضياً مأساوياً عن أسرار الوجود.",
+            "arEg": "في شعر لوركا، الاستعارة مش مجرد كلام حلو، دي صرخة خارجة من قلب الأرض والمأساة الإنسانية.",
+            "audioKey": "pending/c1-u4-g27-2"
+          },
+          {
+            "es": "El simbolismo de la luna y el puñal anticipa premonitoriamente su propio destino fatal.",
+            "ar": "رمزية القمر والخنجر تستشرف بنبوءة مرعبة مصيره التراجيدي المحتوم.",
+            "arEg": "رموز القمر والخناجر في شعره كانت بتتنفس وتتنبأ بمصيره الحزين ونهايته المأساوية.",
+            "audioKey": "pending/c1-u4-g27-3"
+          },
+          {
+            "es": "Su poesía aúna la pureza formal con un inquebrantable compromiso humano y social.",
+            "ar": "يجمع شعره بين النقاء الشكلي الفائق والالتزام الإنساني والاجتماعي الراسخ.",
+            "arEg": "شعره بيجمع بين صفاء ورقي الصياغة، وبين إحساس والتزام إنساني حقيقي بقضايا الناس.",
+            "audioKey": "pending/c1-u4-g27-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-g27-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث الناقد واكتشف كيف عرّف الاستعارة في شعر لوركا الإنساني المأساوي.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الاستعارة في شعر لوركا وفقاً للتحليل النقدي؟",
+        "stemEs": "En la obra lorquiana, la metáfora no es simple adorno, sino revelación telúrica y trágica.",
+        "stemAr": "في إبداع لوركا، لا تعد الاستعارة مجرد زينة سطحية، بل كشفاً أرضياً مأساوياً عن أسرار الوجود.",
+        "options": [
+          {
+            "id": "ex-c1-g27-1_a",
+            "text": "Revelación telúrica y trágica",
+            "textAr": "كشف وجودي مأساوي نابع من أعماق الأرض والإنسان",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-g27-1_b",
+            "text": "Simple adorno decorativo",
+            "textAr": "مجرد زخرفة سطحية بلا روح ولا عمق",
+            "isCorrect": false,
+            "distractorRationaleAr": "الناقد نفى هذا التفسير صراحة."
+          },
+          {
+            "id": "ex-c1-g27-1_c",
+            "text": "Un error de métrica",
+            "textAr": "خلل في الأوزان والقوافي الشعرية",
+            "isCorrect": false,
+            "distractorRationaleAr": "شعر لوركا معجزة إيقاعية وموسيقية."
+          }
+        ],
+        "targetVocab": [
+          "lorquiana",
+          "metáfora"
+        ],
+        "explanationAr": "الاستعارة اللوركاوية (metáfora lorquiana) تتجاوز التشبيه التقليدي لتصدم الوعي برؤى سريالية متجذرة في التراث الأندلسي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u4-g27-2",
+        "speechEs": "En la obra lorquiana, la metáfora no es simple adorno, sino revelación telúrica y trágica.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-g27-1_a"
+          ],
+          "selectedOptionId": "ex-c1-g27-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-g27-1_b": "الناقد نفى هذا التفسير صراحة.",
+          "ex-c1-g27-1_c": "شعر لوركا معجزة إيقاعية وموسيقية."
+        }
+      },
+      {
+        "id": "ex-c1-g27-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي رمز شعري يتكرر في أدب لوركا كنذير شؤم وقرين للموت والقدر التراجيدي؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الرمز اللوركاوي المشحون بالدلالة القدرية القاتمة:",
+        "stemEs": "En el Romancero gitano, ____ simboliza constantemente la muerte acechante.",
+        "stemAr": "في ديوان أغاني الغجر، يرمز القمر باستمرار إلى الموت المتربص في عتمة الليل.",
+        "options": [
+          {
+            "id": "ex-c1-g27-2_a",
+            "text": "la luna",
+            "textAr": "القمر البارد المشحون بالرمزية القدرية والموت",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-g27-2_b",
+            "text": "el coche",
+            "textAr": "السيارة الحديثة والمحرك البخاري",
+            "isCorrect": false,
+            "distractorRationaleAr": "عنصر ميكانيكي لا ينتمي لغنائية الغجر."
+          },
+          {
+            "id": "ex-c1-g27-2_c",
+            "text": "el dinero",
+            "textAr": "النقود والعملات الذهبية",
+            "isCorrect": false,
+            "distractorRationaleAr": "ليست محور الرمزية التراجيدية للوركا."
+          }
+        ],
+        "targetVocab": [
+          "simbolismo",
+          "rigor"
+        ],
+        "explanationAr": "القمر في عالم لوركا كائن حي مريب، بارد كالمعدن، يتربص بالأبطال والفرسان ليقودهم نحو حتفهم المكتوب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-g27-2_a"
+          ],
+          "selectedOptionId": "ex-c1-g27-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-g27-2_b": "عنصر ميكانيكي لا ينتمي لغنائية الغجر.",
+          "ex-c1-g27-2_c": "ليست محور الرمزية التراجيدية للوركا."
+        }
+      },
+      {
+        "id": "ex-c1-g27-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالصفة المنسوبة إلى الشاعر والكاتب فيديريكو غارثيا لوركا: «la obra ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب النسبة الأكاديمية الصحيحة للشاعر:",
+        "stemEs": "La potencia visual de la lírica ____ sigue conmoviendo al mundo entero.",
+        "stemAr": "إن القوة البصرية للغنائية اللوركاوية لا تزال تهز وجدان العالم بأسره.",
+        "targetVocab": [
+          "lorquiana"
+        ],
+        "explanationAr": "تنسب أعمال لوركا بإضافة اللاحقة -iana فتصير «lorquiana» كقولنا «la poesía lorquiana» أو «el drama lorquiano».",
+        "answerKey": {
+          "accepted": [
+            "lorquiana"
+          ],
+          "acceptableAnswers": [
+            "lorquiana"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-g27-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي السمة التي ميزت جيل 27 عن الحركات الطليعية الأوروبية الأخرى؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الصفة الجامعة لعبقرية هذا الجيل الأدبي الفريد:",
+        "stemEs": "Supieron conjugar el respeto a la tradición clásica con el ____ formal y social.",
+        "stemAr": "استطاعوا المزاوجة بين احترام التراث الكلاسيكي والالتزام الشكلي والاجتماعي التحرري.",
+        "options": [
+          {
+            "id": "ex-c1-g27-4_a",
+            "text": "compromiso",
+            "textAr": "الالتزام الجمالي والأخلاقي المبدئي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-g27-4_b",
+            "text": "olvido",
+            "textAr": "النسيان التام للشعب وتطلعاته",
+            "isCorrect": false,
+            "distractorRationaleAr": "أغلبهم انحاز لحرية الشعب ودفع حياته أو نُفي."
+          },
+          {
+            "id": "ex-c1-g27-4_c",
+            "text": "comercio",
+            "textAr": "التجارة والتربح المالي السريع",
+            "isCorrect": false,
+            "distractorRationaleAr": "كانت حركتهم فنية خالصة ذات رسالة إنسانية."
+          }
+        ],
+        "targetVocab": [
+          "compromiso",
+          "vanguardia"
+        ],
+        "explanationAr": "تميز شعراء جيل 27 بـ «el compromiso» (الالتزام) بالدفاع عن الحرية والعدالة ورفض القمع والاستبداد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-g27-4_a"
+          ],
+          "selectedOptionId": "ex-c1-g27-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-g27-4_b": "أغلبهم انحاز لحرية الشعب ودفع حياته أو نُفي.",
+          "ex-c1-g27-4_c": "كانت حركتهم فنية خالصة ذات رسالة إنسانية."
+        }
+      },
+      {
+        "id": "ex-c1-g27-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء فكرة نقدية تبرز أصالة التجربة الشعرية لجيل 27.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-g27-5_t1",
+            "kind": "token",
+            "text": "Fusionaron"
+          },
+          {
+            "id": "ex-c1-g27-5_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-g27-5_t3",
+            "kind": "token",
+            "text": "tradición"
+          },
+          {
+            "id": "ex-c1-g27-5_t4",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-c1-g27-5_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-g27-5_t6",
+            "kind": "token",
+            "text": "vanguardia"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Fusionaron la tradición con la vanguardia"
+          ],
+          "tokenOrder": [
+            "ex-c1-g27-5_t1",
+            "ex-c1-g27-5_t2",
+            "ex-c1-g27-5_t3",
+            "ex-c1-g27-5_t4",
+            "ex-c1-g27-5_t5",
+            "ex-c1-g27-5_t6"
+          ]
+        },
+        "explanationAr": "الفعل في زمن الماضي البسيط Fusionaron متبوعاً بالمفعول المباشر وجار ومجرور يمثلان الثنائية الحضارية.",
+        "targetVocab": [
+          "vanguardia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-g27-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة شعرية حالمة لكنها مشبعة بالرصانة الفكرية والوقار الأكاديمي.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الرنين الموسيقي للمفردات:",
+        "stemEs": "El simbolismo lorquiano trasciende toda frontera.",
+        "stemAr": "تتجاوز الرمزية اللوركاوية كل الحدود الجغرافية والثقافية.",
+        "audioKey": "pending/c1-u4-g27-spk",
+        "targetVocab": [
+          "simbolismo",
+          "lorquiana"
+        ],
+        "explanationAr": "احرص على نطق حرف z في trasciende بصوت الثاء القشتالي الرخيم والوقف الصوتي الخفيف عند انتهاء الفكرة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u4-g27-spk",
+          "modelAnswer": "El simbolismo lorquiano trasciende toda frontera."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

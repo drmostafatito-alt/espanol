@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-acuerdo-desacuerdo",
+    "titleAr": "التعبير عن الاتفاق والاختلاف والتفاوض",
+    "level": "B1",
+    "programSlug": "main-track",
+    "unitSlug": "b1-u2-opinions",
+    "objectiveAr": "أن يعبّر المتعلم عن الاتفاق الكامل أو الجزئي والاختلاف المهذب في النقاشات الرسمية والاجتماعية باستخدام تعبيرات: Estoy de acuerdo, Tienes razón, No lo veo así, Por una parte... por otra.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "acuerdo",
+      "razón",
+      "depende",
+      "punto",
+      "vista",
+      "discrepar"
+    ],
+    "reviewVocabulary": [
+      "verdad",
+      "amigo",
+      "trabajo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Acuerdo total: Estoy totalmente de acuerdo / Tienes toda la razón",
+      "Acuerdo parcial: Sí, pero... / Hasta cierto punto / Depende de...",
+      "Desacuerdo educado: No lo veo exactamente así / Discrepo en este punto"
+    ],
+    "grammarTopics": [
+      "expresar-acuerdo-desacuerdo",
+      "debate-negociacion-b1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نقاش بين زميلين في العمل حول تطبيق نظام العمل عن بُعد بشكل دائم.",
+        "settingAr": "كافيتيريا الشركة، استراحة الغداء",
+        "lines": [
+          {
+            "es": "El teletrabajo mejora la productividad y reduce el estrés.",
+            "ar": "العمل عن بُعد يحسن الإنتاجية ويقلل من التوتر.",
+            "arEg": "الشغل من البيت بيزود الإنتاجية وبيقلل الاسترس.",
+            "audioKey": "pending/b1-debate-lunch-1"
+          },
+          {
+            "es": "Tienes toda la razón en eso, pero reduce el contacto humano.",
+            "ar": "معك كل الحق في ذلك، لكنه يقلل من التواصل البشري.",
+            "arEg": "عندك حق تماماً في النقطة دي، بس بيقلل اللمة والتعامل.",
+            "audioKey": "pending/b1-debate-lunch-2"
+          },
+          {
+            "es": "No lo veo exactamente así; la tecnología nos mantiene comunicados.",
+            "ar": "لا أرى الأمر هكذا تمامًا؛ فالتكنولوجيا تبقينا على تواصل مستمر.",
+            "arEg": "مش شايفها كدة بالظبط؛ التكنولوجيا مخليانا متواصلين طول الوقت.",
+            "audioKey": "pending/b1-debate-lunch-3"
+          },
+          {
+            "es": "Bueno, depende de cada persona y del tipo de trabajo.",
+            "ar": "حسنًا، يعتمد الأمر على كل شخص وطبيعة العمل.",
+            "arEg": "عموماً ده بيعتمد على كل شخص وطبيعة الشغلانة.",
+            "audioKey": "pending/b1-debate-lunch-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b1_acuerdo_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الزميل واختر العبارة التي استخدمها لتأييد كلام زميله مبدئيًا.",
+        "audioKey": "pending/b1-debate-lunch-2",
+        "speechEs": "Tienes toda la razón en eso, pero reduce el contacto humano.",
+        "options": [
+          {
+            "id": "b1_acuerdo_1_a",
+            "text": "Tienes toda la razón en eso",
+            "isCorrect": true,
+            "textAr": "معك كل الحق في ذلك"
+          },
+          {
+            "id": "b1_acuerdo_1_b",
+            "text": "Estás completamente equivocado",
+            "isCorrect": false,
+            "textAr": "أنت مخطئ تمامًا",
+            "distractorRationaleAr": "لم يقل ذلك، بل اتفق معه مبدئياً بأدب."
+          },
+          {
+            "id": "b1_acuerdo_1_c",
+            "text": "No me importa este asunto",
+            "isCorrect": false,
+            "textAr": "لا يهمني هذا الأمر",
+            "distractorRationaleAr": "لم يتلفظ بهذه العبارة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_acuerdo_1_a"
+          ]
+        },
+        "explanationAr": "عبارة «Tienes toda la razón» من أرقى صيغ الاتفاق التام في النقاش الإسباني المهني.",
+        "errorFeedback": {
+          "b1_acuerdo_1_b": "هو اتفق معه أولاً ثم استدرك.",
+          "b1_acuerdo_1_c": "هو مهتم بالنقاش."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "razón"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_acuerdo_2_collocation",
+        "type": "word_choice",
+        "instructionAr": "ما هو الفعل الإسباني الصحيح المستخدم مع عبارة «على حق / معه حق»؟",
+        "options": [
+          {
+            "id": "b1_acuerdo_2_a",
+            "text": "tener razón",
+            "isCorrect": true,
+            "textAr": "معه حق (بفعل tener)"
+          },
+          {
+            "id": "b1_acuerdo_2_b",
+            "text": "ser razón",
+            "isCorrect": false,
+            "textAr": "استخدام غير صحيح لفعل ser",
+            "distractorRationaleAr": "لا نقول Ser razón في الإسبانية."
+          },
+          {
+            "id": "b1_acuerdo_2_c",
+            "text": "estar razón",
+            "isCorrect": false,
+            "textAr": "استخدام غير صحيح لفعل estar",
+            "distractorRationaleAr": "لا يُستخدم estar مع razón."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_acuerdo_2_a"
+          ]
+        },
+        "explanationAr": "في الإسبانية يقترن فعل tener بالحق: «Tener razón» (معه حق)، ولا يُستخدم أبدًا ser أو estar.",
+        "errorFeedback": {
+          "b1_acuerdo_2_b": "ser razón خطأ لغوي جسيم.",
+          "b1_acuerdo_2_c": "estar لا تأتي مع razón."
+        },
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "razón"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_acuerdo_3_fill_acuerdo",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بالفعل المناسب: «أنا متفق تمامًا معك».",
+        "stemEs": "Yo ____ de acuerdo contigo.",
+        "stemAr": "أنا متفق تمامًا معك.",
+        "answerKey": {
+          "accepted": [
+            "estoy"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "عبارة الاتفاق تتطلب حصراً فعل estar: «Estoy de acuerdo» (أنا متفق).",
+        "errorFeedback": {
+          "soy": "لا يجوز استخدام soy مع de acuerdo.",
+          "tengo": "tengo مع razón وليس مع de acuerdo."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "acuerdo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_acuerdo_4_polite_disagree",
+        "type": "word_choice",
+        "instructionAr": "أي من العبارات الآتية تعتبر التعبير الأكثر تهذيبًا واحترافية للاعتراض في اجتماع عمل؟",
+        "options": [
+          {
+            "id": "b1_acuerdo_4_a",
+            "text": "No lo veo exactamente así",
+            "isCorrect": true,
+            "textAr": "لا أرى الأمر هكذا تمامًا"
+          },
+          {
+            "id": "b1_acuerdo_4_b",
+            "text": "Eso es una tontería absoluta",
+            "isCorrect": false,
+            "textAr": "هذا هراء تام",
+            "distractorRationaleAr": "أسلوب فظ لا يناسب البيئة المهنية."
+          },
+          {
+            "id": "b1_acuerdo_4_c",
+            "text": "Te equivocas por completo",
+            "isCorrect": false,
+            "textAr": "أنت مخطئ تمامًا",
+            "distractorRationaleAr": "أسلوب حاد جداً ينبغي تجنبه."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b1_acuerdo_4_a"
+          ]
+        },
+        "explanationAr": "«No lo veo exactamente así» تعبّر عن وجهة نظر مغايرة دون تجريح الطرف الآخر، وهي من المعايير التواصلية لمستوى B1 المهني.",
+        "errorFeedback": {
+          "b1_acuerdo_4_b": "أسلوب غير لائق بتاتاً.",
+          "b1_acuerdo_4_c": "أسلوب قاطع يفتقد للدبلوماسية."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "punto",
+          "vista"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_acuerdo_5_fill_depende",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الفراغ بحرف الجر الصحيح الذي يقترن دائمًا بالفعل depender: «يعتمد على...».",
+        "stemEs": "El éxito del proyecto depende ____ nosotros.",
+        "stemAr": "نجاح المشروع يعتمد علينا.",
+        "answerKey": {
+          "accepted": [
+            "de"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "فعل «Depender» في الإسبانية يأخذ دائمًا حرف الجر de: «Depende de ti» (يعتمد عليك).",
+        "errorFeedback": {
+          "en": "depende en خطأ تركيبي.",
+          "sobre": "sobre لا تستخدم مع هذا الفعل."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "depende"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b1_acuerdo_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق عبارة الاتفاق بنبرة هادئة ومؤكدة.",
+        "stemEs": "Tienes toda la razón en este punto.",
+        "stemAr": "معك كل الحق في هذه النقطة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1-acuerdo-speak-1",
+          "modelAnswer": "Tienes toda la razón en este punto."
+        },
+        "explanationAr": "انطق حرف z في razón كالثاء العربية، مع نبر واضح على حرف ó في razón.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "razón",
+          "punto"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق z في razón كثاء",
+              "weight": 50,
+              "code": "pron_z_razon"
+            },
+            {
+              "labelAr": "النبر على مقطع zón",
+              "weight": 50,
+              "code": "stress_razon"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من مراجع Aula Plus 3 وEn Vocabulario B1"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم مهارات التفاوض وإبداء الرأي والاتفاق المهني وفق معايير معهد سيرفانتس لمستوى B1."
+    }
+  }
+}

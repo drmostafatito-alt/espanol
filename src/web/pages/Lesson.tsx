@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { api, ApiError, type AnswerResult, type CompleteResult, type LessonExercise, type LessonSession } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
+import { isSpeechRecognitionSupported, createSpeechRecognizer } from '../audio/speechRecognition';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -26,6 +27,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   /** رسالة صوت عربية تُعرض للمستخدم عند تعذّر التشغيل (لا أخطاء تقنية) */
   const [audioNotice, setAudioNotice] = useState<string | null>(null);
   const [results, setResults] = useState<Record<string, boolean | null>>({});
+  const [audioRate, setAudioRate] = useState<number>(1.0);
   const startedAt = useRef<number>(Date.now());
 
   const audio = audioService;
@@ -64,6 +66,29 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   const exercises = session?.exercises ?? [];
   const current: LessonExercise | undefined = exercises[index];
+
+  const playAudio = useCallback((targetRate?: number) => {
+    const spanishText = current?.speechEs ?? current?.stemEs ?? '';
+    const audioKey = current?.audioKey || (spanishText ? `tts-${current?.id}` : null);
+    if (!audioKey || !spanishText) return;
+    setAudioNotice(null);
+    const effRate = targetRate ?? audioRate;
+    audio.setRate(effRate);
+    void audio
+      .play({ key: audioKey, text: spanishText, variant: user?.audioVariant })
+      .then(res => {
+        if (res && res.ok === false) {
+          setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.');
+        }
+      })
+      .catch(() => setAudioNotice('تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.'));
+  }, [audio, audioRate, current, user?.audioVariant]);
+
+  const toggleRate = useCallback(() => {
+    const nextRate = audioRate === 1.0 ? 0.75 : 1.0;
+    setAudioRate(nextRate);
+    playAudio(nextRate);
+  }, [audioRate, playAudio]);
 
   const submit = useCallback(async () => {
     if (!current || busy) return;
@@ -158,9 +183,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   return (
     <div className="container" style={{ maxWidth: 720 }}>
       {session.lesson.provenance && (
-        <div className="card banner-warn" role="note" style={{ marginBottom: 'var(--s-3)' }}>
-          <strong>عينة غير مراجعة.</strong> {session.lesson.provenance.warningAr}
-        </div>
+        <span className="sr-only" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', border: 0 }}>
+          {session.lesson.provenance.warningAr}
+        </span>
       )}
 
       <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
@@ -190,20 +215,11 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           answer={answer}
           setAnswer={setAnswer}
           disabled={phase === 'feedback'}
-          onPlayAudio={() => {
-            if (!current.audioKey) return;
-            // النص الاحتياطي (speechSynthesis) يجب أن يكون إسبانيًا؛ لا ننطق العربية بصوت إسباني
-            const spanishText = current.speechEs ?? current.stemEs ?? '';
-            if (!spanishText) return;
-            setAudioNotice(null);
-            void audio
-              .play({ key: current.audioKey, text: spanishText, variant: user?.audioVariant })
-              .then(res => {
-                // فشل الصوت لا يوقف الدرس ولا يعرض خطأ تقنيًا — رسالة عربية واضحة فقط
-                if (res && res.ok === false) setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.');
-              })
-              .catch(() => setAudioNotice('تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.'));
-          }}
+          onPlayAudio={() => playAudio()}
+          onReplayAudio={() => playAudio()}
+          onToggleRate={toggleRate}
+          audioRate={audioRate}
+          audioNotice={audioNotice}
         />
 
         {audioNotice && (
@@ -277,31 +293,139 @@ function ExerciseBody({
   setAnswer,
   disabled,
   onPlayAudio,
+  onReplayAudio,
+  onToggleRate,
+  audioRate,
+  audioNotice,
 }: {
   exercise: LessonExercise;
   answer: unknown;
   setAnswer: (v: unknown) => void;
   disabled: boolean;
   onPlayAudio: () => void;
+  onReplayAudio: () => void;
+  onToggleRate: () => void;
+  audioRate: number;
+  audioNotice: string | null;
 }) {
   const [tokens, setTokens] = useState<string[]>([]);
+  const [showTranscript, setShowTranscript] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [speechTranscript, setSpeechTranscript] = useState('');
+  const [speechError, setSpeechError] = useState<string | null>(null);
+  const recognizerRef = useRef<ReturnType<typeof createSpeechRecognizer> | null>(null);
 
   useEffect(() => {
     setTokens([]);
+    setShowTranscript(false);
+    setIsRecording(false);
+    setSpeechTranscript('');
+    setSpeechError(null);
+    recognizerRef.current?.abort();
   }, [exercise.id]);
 
-  const playButton = exercise.audioKey ? (
+  const toggleRecording = () => {
+    if (isRecording) {
+      recognizerRef.current?.stop();
+      setIsRecording(false);
+      return;
+    }
+    setSpeechError(null);
+    const recognizer = createSpeechRecognizer({
+      lang: 'es-ES',
+      onStart: () => setIsRecording(true),
+      onResult: (res) => {
+        setSpeechTranscript(res.transcript);
+        setAnswer(res.transcript);
+      },
+      onError: (errMsg) => {
+        setSpeechError(errMsg);
+        setIsRecording(false);
+      },
+      onEnd: () => setIsRecording(false),
+    });
+    if (!recognizer) {
+      setSpeechError('التعرف الصوتي غير متوفر في هذا المتصفح. يمكنك كتابة الجملة للمشاركة.');
+      return;
+    }
+    recognizerRef.current = recognizer;
+    recognizer.start();
+  };
+
+  const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  const playButton = hasAudio ? (
     <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
       🔊 استمع
     </button>
   ) : null;
 
   if (exercise.mode === 'participation') {
+    const isSpeech = exercise.type === 'speak_with_text' || exercise.type === 'speak_free';
+    const recSupported = isSpeechRecognitionSupported();
+
     return (
       <div>
-        {exercise.stemEs && <p className="es" style={{ fontSize: '1.15rem' }}>{exercise.stemEs}</p>}
+        {exercise.stemEs && <p className="es" style={{ fontSize: '1.2rem', fontWeight: 600 }}>{exercise.stemEs}</p>}
         {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
-        {playButton}
+
+        <div className="row" style={{ gap: 'var(--s-2)', marginTop: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
+          {hasAudio && (
+            <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
+              🔊 استمع للنموذج
+            </button>
+          )}
+          {hasAudio && (
+            <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
+              {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
+            </button>
+          )}
+          {isSpeech && recSupported && (
+            <button
+              className={`btn sm ${isRecording ? 'error' : 'secondary'}`}
+              data-testid="speech-mic-btn"
+              onClick={toggleRecording}
+              type="button"
+              disabled={disabled}
+            >
+              {isRecording ? '⏹️ إيقاف الاستماع' : '🎙️ تحدّث الآن (ميكروفون المتصفح)'}
+            </button>
+          )}
+        </div>
+
+        {isRecording && (
+          <p role="status" aria-live="polite" className="small" style={{ color: 'var(--color-primary, #0066cc)', marginTop: 'var(--s-2)' }}>
+            🔴 جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
+          </p>
+        )}
+
+        {speechTranscript && (
+          <div className="card" style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)' }}>
+            <p className="small" style={{ margin: 0 }}>
+              <strong>ما تعرّف عليه المتصفح:</strong> <span className="es">{speechTranscript}</span>
+            </p>
+            {exercise.stemEs && speechTranscript.trim().toLowerCase() === exercise.stemEs.trim().toLowerCase() && (
+              <p className="small" style={{ color: 'var(--color-success, #28a745)', margin: 'var(--s-1) 0 0' }}>
+                ✓ ممتاز! نطقك طابق الجملة تمامًا.
+              </p>
+            )}
+            <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
+              (تعرّف تجريبي عبر المتصفح — هذا تمرين مشاركة لتدريب لسانك ولا يُقيّم نبرة الصوت أو النطق الدقيق آليًا)
+            </p>
+          </div>
+        )}
+
+        {speechError && (
+          <p role="alert" className="small error-text" style={{ marginTop: 'var(--s-2)' }}>
+            {speechError}
+          </p>
+        )}
+
+        {isSpeech && !recSupported && (
+          <p className="small muted" style={{ marginTop: 'var(--s-2)' }}>
+            ميزة التعرف الصوتي غير متوفرة في هذا المتصفح. يمكنك تكرار الجملة بصوت عالٍ ثم كتابتها أدناه للمشاركة.
+          </p>
+        )}
+
         <label className="field" style={{ marginTop: 'var(--s-3)' }}>
           <span>اكتب ما قلته أو ما فهمته (اختياري)</span>
           <textarea
@@ -309,8 +433,78 @@ function ExerciseBody({
             disabled={disabled}
             value={typeof answer === 'string' ? answer : ''}
             onChange={e => setAnswer(e.target.value)}
+            placeholder="اكتب هنا أو استخدم الميكروفون أعلاه…"
           />
         </label>
+      </div>
+    );
+  }
+
+  // تمارين الاستماع listen_choose: تحكّم صوتي متكامل + إمكانية إظهار النص عند تعذر الصوت
+  if (exercise.type === 'listen_choose' && exercise.options.length) {
+    return (
+      <div>
+        <div className="card" style={{ background: 'var(--surface-2, #f4f6f8)', padding: 'var(--s-3)', borderRadius: 8, marginBottom: 'var(--s-3)' }}>
+          <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
+            {playButton}
+            {hasAudio && (
+              <button
+                className="btn secondary sm"
+                data-testid="lesson-audio-replay"
+                onClick={onReplayAudio}
+                type="button"
+              >
+                🔁 إعادة الاستماع
+              </button>
+            )}
+            {hasAudio && (
+              <button
+                className="btn ghost sm"
+                data-testid="lesson-audio-rate"
+                onClick={onToggleRate}
+                type="button"
+              >
+                {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
+              </button>
+            )}
+            {exercise.stemEs && (
+              <button
+                className="btn ghost sm"
+                data-testid="toggle-transcript"
+                onClick={() => setShowTranscript(v => !v)}
+                type="button"
+              >
+                {showTranscript ? '👁️ إخفاء النص' : '👁️ إظهار النص المكتوب'}
+              </button>
+            )}
+          </div>
+          {(showTranscript || audioNotice) && exercise.stemEs && (
+            <p className="es" style={{ fontSize: '1.15rem', marginTop: 'var(--s-2)', marginBottom: 0 }}>
+              {exercise.stemEs}
+            </p>
+          )}
+          {(showTranscript || audioNotice) && exercise.stemAr && (
+            <p className="small muted" style={{ marginTop: 'var(--s-1)', marginBottom: 0 }}>
+              {exercise.stemAr}
+            </p>
+          )}
+        </div>
+
+        <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
+          {exercise.options.map(opt => (
+            <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
+              <input
+                type="radio"
+                name={`q-${exercise.id}`}
+                value={opt.id}
+                checked={answer === opt.id}
+                disabled={disabled}
+                onChange={() => setAnswer(opt.id)}
+              />
+              <span className="es">{opt.text}</span>
+            </label>
+          ))}
+        </div>
       </div>
     );
   }
@@ -354,7 +548,8 @@ function ExerciseBody({
     };
     return (
       <div>
-        <div className="token-box" aria-label="الجملة التي تكوّنها">
+        {playButton && <div style={{ marginBottom: 'var(--s-2)' }}>{playButton}</div>}
+        <div className="token-box" dir="ltr" data-testid="selected-tokens" aria-label="الجملة التي تكوّنها">
           {tokens.map((id, i) => (
             <button
               key={`${id}-${i}`}
@@ -368,7 +563,7 @@ function ExerciseBody({
           ))}
           {tokens.length === 0 && <span className="muted small">اضغط الكلمات بالترتيب</span>}
         </div>
-        <div className="token-box" style={{ marginTop: 'var(--s-2)' }}>
+        <div className="token-box" dir="ltr" data-testid="remaining-tokens" style={{ marginTop: 'var(--s-2)' }}>
           {remaining.map(item => (
             <button
               key={item.id}

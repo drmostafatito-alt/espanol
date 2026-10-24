@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-emergencia",
+    "unitSlug": "a1-u10-health-basics",
+    "levelCode": "A1",
+    "titleAr": "طلب المساعدة والطوارئ: عبارات الإنقاذ والاتصال بالإسعاف",
+    "titleEs": "Situaciones de emergencia y socorro",
+    "subtitleAr": "نداءات الاستغاثة (¡Ayuda! ¡Socorro!) وطلب الإسعاف والطوارئ 112",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, Aula Internacional, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطلب المتعلم النجدة فوراً في المواقف الطارئة: ¡Ayuda! و ¡Socorro!.",
+        "أن يطلب استدعاء الإسعاف أو الشرطة: Llame a una ambulancia / a la policía.",
+        "أن يصف حالة خطر أو استعجال: Es una urgencia, es peligroso, venga rápido."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ الاستغاثة والطلب العاجل بحرف a الشخصي",
+          "explanationAr": "في حالات الطوارئ القصوى نستخدم كلمات النداء المباشرة المرفقة بعلامات التعجب:\n- **¡Ayuda!**: ساعدوني! / نجدة!\n- **¡Socorro!**: أغيثوني! / أدركوني!\nعند الطلب من شخص الاتصال بالجهات، نستخدم صيغة الاحترام أو الطلب العاجل: **Llame a** (اتصل بـ...) مع حرف a الإجباري لأن المستدعى شخص أو جهة مسؤولة: Llame a una ambulancia (اتصل بسيارة إسعاف)، Llame a la policía (اتصل بالشرطة). للتعبير عن السرعة نستخدم الظرف: rápido (بسرعة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان حرف الجر a بعد الفعل llamar عند الاتصال بسيارة الإسعاف أو الشرطة (مثل قول *llame la policía*؛ الصواب: llame a la policía).",
+        "الخلط بين ayuda (طلب مساعدة عامة) و socorro (استغاثة قصوى لخطر حقيقي على الحياة)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «الحقوني! اتصل بالإسعاف بسرعة، دي حالة طارئة!». في الإسبانية: ¡Socorro! ¡Llame a una ambulancia rápido, es una urgencia!"
+        }
+      ],
+      "culturalNoteAr": "رقم الطوارئ الموحد في إسبانيا وجميع دول الاتحاد الأوروبي هو **112** (Uno, uno, dos)، ويشمل الإسعاف والمطافئ والشرطة ويوفر خدمات ترجمة فورية بعدة لغات."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a1-emergencia-intro",
+        "type": "explanation",
+        "titleAr": "كلمات وتعبيرات الطوارئ",
+        "bodyAr": "أهم الكلمات والعبارات لإنقاذ المواقف الطارئة:\n- **la ayuda**: المساعدة / النجدة (¡Ayuda!)\n- **el socorro**: الاستغاثة القصوى (¡Socorro!)\n- **la urgencia**: الحالة العاجلة / الطوارئ (es una urgencia)\n- **la ambulancia**: سيارة الإسعاف\n- **el peligro**: الخطر\n- **llamar**: يتصل / ينادي\n- **la policía**: الشرطة\n- **rápido**: سريع / بسرعة",
+        "examples": [
+          {
+            "es": "¡Socorro! Necesito un médico rápido.",
+            "ar": "النجدة! أحتاج إلى طبيب بسرعة."
+          },
+          {
+            "es": "Por favor, llame a una ambulancia.",
+            "ar": "من فضلك، اتصل بسيارة إسعاف."
+          },
+          {
+            "es": "El número de emergencias es el 112.",
+            "ar": "رقم الطوارئ هو 112."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "ayuda",
+      "socorro",
+      "urgencia",
+      "ambulancia",
+      "peligro",
+      "llamar",
+      "policía",
+      "rápido"
+    ],
+    "reviewVocabulary": [
+      "hospital",
+      "médico"
+    ],
+    "level": "A1",
+    "objectiveAr": "أن يطلب المتعلم النجدة فوراً في المواقف الطارئة: ¡Ayuda! و ¡Socorro!.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a1-eme-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر نداء الاستغاثة الإسباني عند الخطر الشديد",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية الصريحة لطلب النجدة العاجلة في موقف خطير؟",
+        "stemEs": "¡_____, hay un incendio aquí!",
+        "stemAr": "النجدة، هناك حريق هنا!",
+        "options": [
+          {
+            "id": "ex-a1-eme-1_o1",
+            "text": "Socorro",
+            "textAr": "استغاثة وإنقاذ (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-eme-1_o2",
+            "text": "Gracias",
+            "textAr": "شكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "Gracias تعني شكراً ولا تستخدم للاستغاثة."
+          },
+          {
+            "id": "ex-a1-eme-1_o3",
+            "text": "Hola",
+            "textAr": "تحية",
+            "isCorrect": false,
+            "distractorRationaleAr": "Hola تحية ولا تعبر عن حالة خطر."
+          }
+        ],
+        "targetVocab": [
+          "socorro",
+          "peligro"
+        ],
+        "explanationAr": "نداء الاستغاثة في الإسبانية هو ¡Socorro! أو ¡Ayuda!.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-eme-1_o1"
+          ],
+          "selectedOptionId": "ex-a1-eme-1_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-eme-1_o2": "Gracias تعني شكراً ولا تستخدم للاستغاثة.",
+          "ex-a1-eme-1_o3": "Hola تحية ولا تعبر عن حالة خطر."
+        }
+      },
+      {
+        "id": "ex-a1-eme-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة لسيارة الإسعاف",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'سيارة إسعاف' بالإسبانية بدقة",
+        "stemEs": "Por favor, llame a una _____ inmediatamente.",
+        "stemAr": "من فضلك، اتصل بسيارة إسعاف فوراً.",
+        "targetVocab": [
+          "ambulancia"
+        ],
+        "explanationAr": "سيارة الإسعاف تسمى ambulancia وهي مؤنثة (una ambulancia).",
+        "answerKey": {
+          "accepted": [
+            "ambulancia"
+          ],
+          "acceptableAnswers": [
+            "ambulancia"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-eme-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الوصف المناسب للموقف العاجل",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما يتطلب المريض علاجاً فورياً لا يحتمل الانتظار، فإن الحالة تسمى:",
+        "stemEs": "El paciente debe ir al hospital porque es una _____ médica.",
+        "stemAr": "يجب على المريض الذهاب للمستشفى لأنها ... طبية.",
+        "options": [
+          {
+            "id": "ex-a1-eme-3_o1",
+            "text": "urgencia",
+            "textAr": "حالة طارئة عاجلة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-eme-3_o2",
+            "text": "policía",
+            "textAr": "شرطة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحالة الطبية المستعجلة تسمى urgencia وليس policía."
+          },
+          {
+            "id": "ex-a1-eme-3_o3",
+            "text": "peligro",
+            "textAr": "خطر",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب هو una urgencia médica."
+          }
+        ],
+        "targetVocab": [
+          "urgencia",
+          "hospital",
+          "policía",
+          "peligro"
+        ],
+        "explanationAr": "حالة الطوارئ الطبية تسمى urgencia médica.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-eme-3_o1"
+          ],
+          "selectedOptionId": "ex-a1-eme-3_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-eme-3_o2": "الحالة الطبية المستعجلة تسمى urgencia وليس policía.",
+          "ex-a1-eme-3_o3": "التركيب هو una urgencia médica."
+        }
+      },
+      {
+        "id": "ex-a1-eme-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب الاتصال بسيارة الإسعاف بسرعة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a1-eme-4_t1",
+            "kind": "token",
+            "text": "Llame"
+          },
+          {
+            "id": "ex-a1-eme-4_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a1-eme-4_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-a1-eme-4_t4",
+            "kind": "token",
+            "text": "ambulancia"
+          },
+          {
+            "id": "ex-a1-eme-4_t5",
+            "kind": "token",
+            "text": "rápido"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Llame a la ambulancia rápido"
+          ],
+          "tokenOrder": [
+            "ex-a1-eme-4_t1",
+            "ex-a1-eme-4_t2",
+            "ex-a1-eme-4_t3",
+            "ex-a1-eme-4_t4",
+            "ex-a1-eme-4_t5"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل في صيغة الطلب Llame ثم حرف الجر a والأداة la والاسم ambulancia والظرف rápido.",
+        "targetVocab": [
+          "llamar",
+          "ambulancia",
+          "rápido"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a1-eme-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجهة المطلوب الاتصال بها",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للنداء وحدد من يطلب المتحدث استدعاءه",
+        "stemEs": "¡Hay un accidente, llame a la policía ahora!",
+        "stemAr": "هناك حادث، اتصل بالشرطة الآن!",
+        "options": [
+          {
+            "id": "ex-a1-eme-5_o1",
+            "text": "policía",
+            "textAr": "الشرطة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a1-eme-5_o2",
+            "text": "ambulancia",
+            "textAr": "إسعاف",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث طلب تحديداً الاتصال بالشرطة la policía."
+          },
+          {
+            "id": "ex-a1-eme-5_o3",
+            "text": "médico",
+            "textAr": "طبيب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث طلب الاتصال بالشرطة."
+          }
+        ],
+        "targetVocab": [
+          "policía",
+          "ambulancia",
+          "médico",
+          "llamar"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: llame a la policía.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1_llame_policia.mp3",
+        "speechEs": "¡Hay un accidente, llame a la policía ahora!",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a1-eme-5_o1"
+          ],
+          "selectedOptionId": "ex-a1-eme-5_o1"
+        },
+        "errorFeedback": {
+          "ex-a1-eme-5_o2": "المتحدث طلب تحديداً الاتصال بالشرطة la policía.",
+          "ex-a1-eme-5_o3": "المتحدث طلب الاتصال بالشرطة."
+        }
+      },
+      {
+        "id": "ex-a1-eme-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق نداء الاستغاثة وطلب الطبيب بوضوح",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق جملة الاستغاثة وطلب الطبيب بنبرة مناسبة للموقف الطارئ",
+        "stemEs": "¡Ayuda! Necesito un médico rápido.",
+        "stemAr": "النجدة! أحتاج إلى طبيب بسرعة.",
+        "audioKey": "pending/a1_ayuda_medico_rapido.mp3",
+        "targetVocab": [
+          "ayuda",
+          "médico",
+          "rápido"
+        ],
+        "explanationAr": "انتبه للتشديد على المقاطع المنبورة في ¡Ayuda! و rápido.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1_ayuda_medico_rapido.mp3",
+          "modelAnswer": "¡Ayuda! Necesito un médico rápido."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

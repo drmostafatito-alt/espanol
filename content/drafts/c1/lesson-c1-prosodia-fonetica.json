@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-prosodia-fonetica",
+    "titleAr": "الصوتيات والتنغيم: Prosodia, seseo y yeísmo en el mundo hispánico",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u5-regional",
+    "objectiveAr": "أن يفهم المتعلم الظواهر الصوتية الكبرى (el seseo, la distinción, el yeísmo rehilado, la aspiración de la esse) ويتعرف على تنغيم اللهجات المختلفة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "seseo",
+      "distinción",
+      "yeísmo",
+      "aspiración",
+      "rehilado",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La distinción fonológica peninsular: /θ/ (caza) vs. /s/ (casa)",
+      "El seseo panamericano y andaluz mayoritario: pronunciación de 'c/z' como /s/",
+      "El yeísmo rehilado rioplatense: pronunciación de 'll/y' como fricativa prepalatal /ʃ/ o /ʒ/",
+      "La aspiración y elisión de la /-s/ implosiva en el Caribe, Andalucía y Chile"
+    ],
+    "grammarTopics": [
+      "fonologia-panhispanica",
+      "prosodia-y-dialectologia-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مختبر علم الصوتيات التجريبي في معهد اللسانيات بمدريد لتحليل تسجيلات صوتية لمناطق متعددة.",
+        "settingAr": "مختبر الصوتيات وعلم اللهجات، المركز الأعلى للبحوث العلمية (CSIC)",
+        "lines": [
+          {
+            "es": "En la meseta castellana predomina la distinción entre el fonema interdental /θ/ y el alveolar /s/.",
+            "ar": "في هضبة قشتالة يسود التمييز الصوتي بين الفونيم بين الأسناني /θ/ واللثوي /s/.",
+            "arEg": "في مدريد وقشتالة بيميزوا في النطق بين الثاء والسين في كلمات زي caza و casa.",
+            "audioKey": "pending/c1-u5-fon-1"
+          },
+          {
+            "es": "No obstante, el seseo es la norma mayoritaria en toda Hispanoamérica y las Islas Canarias.",
+            "ar": "ومع ذلك، فإن ظاهرة السيسيو ونطق حرفي c/z كالسين هي المعيار الأغلبي في كامل أمريكا اللاتينية وجزر الكناري.",
+            "arEg": "بس ظاهرة السيسيو ونطق حرفي c و z سين هي النطق الغالب عند أكتر من تسعين في المية من الناطقين بالإسبانية.",
+            "audioKey": "pending/c1-u5-fon-2"
+          },
+          {
+            "es": "En el Río de la Plata destaca el yeísmo rehilado, donde la 'll' suena similar a una 'sh' suave.",
+            "ar": "وفي حوض ريو دي لا بلاتا يبرز الـ Yeísmo Rehilado، حيث يُنطق حرفا 'll' و'y' بصوت يشبه الشين الخفيفة.",
+            "arEg": "في الأرجنتين وأوروغواي الـ ll والـ y بتتنطق شين أو جيم معطشة ناعمة زي كلمة calle اللي بيقولوها كاشيه.",
+            "audioKey": "pending/c1-u5-fon-3"
+          },
+          {
+            "es": "En las costas caribeñas y Andalucía observamos la aspiración sistemática de la esse al final de sílaba.",
+            "ar": "وفي السواحل الكاريبية وإقليم الأندلس نلاحظ همس حرف السين وتحويله إلى هاء رخوة في أواخر المقاطع.",
+            "arEg": "في شواطئ الكاريبي والأندلس السين اللي في آخر المقطع بتتحول لهاء خفيفة زي 'estos' اللي بتبقى 'ehto'.",
+            "audioKey": "pending/c1-u5-fon-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-pfo-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى شرح عالم الصوتيات وحدد الظاهرة التي تميز غالبية الناطقين بالإسبانية حول العالم.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما الظاهرة الصوتية السائدة لدى أكثر من 90% من المتحدثين بالإسبانية في القارات؟",
+        "stemEs": "No obstante, el seseo es la norma mayoritaria en toda Hispanoamérica y las Islas Canarias.",
+        "stemAr": "ومع ذلك، فإن ظاهرة السيسيو ونطق حرفي c/z كالسين هي المعيار الأغلبي في كامل أمريكا اللاتينية وجزر الكناري.",
+        "options": [
+          {
+            "id": "ex-c1-pfo-1_a",
+            "text": "El seseo",
+            "textAr": "نطق أحرف c (قبل e/i) و z كصوت السين /s/",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pfo-1_b",
+            "text": "El ceceo",
+            "textAr": "نطق حرف السين كثاء دائمة في بعض قرى الجنوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "ظاهرة ريفية أندلسية محلية."
+          },
+          {
+            "id": "ex-c1-pfo-1_c",
+            "text": "El mutismo",
+            "textAr": "الخرس التام وعدم النطق",
+            "isCorrect": false,
+            "distractorRationaleAr": "عاهة مرضية لا ظاهرة صوتية."
+          }
+        ],
+        "targetVocab": [
+          "seseo",
+          "distinción"
+        ],
+        "explanationAr": "«El seseo» هو نطق الحروف c و z بصوت /s/، وهو النطق القياسي الرسمي في جميع دول أمريكا اللاتينية وجزر الكناري.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u5-fon-2",
+        "speechEs": "No obstante, el seseo es la norma mayoritaria en toda Hispanoamérica y las Islas Canarias.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pfo-1_a"
+          ],
+          "selectedOptionId": "ex-c1-pfo-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pfo-1_b": "ظاهرة ريفية أندلسية محلية.",
+          "ex-c1-pfo-1_c": "عاهة مرضية لا ظاهرة صوتية."
+        }
+      },
+      {
+        "id": "ex-c1-pfo-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف ينطق سكان بوينس آيرس ومونتيفيديو كلمات مثل «calle» أو «playa» في ظاهرة الـ yeísmo rehilado؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التوصيف الصوتي لنطق 'll' في بوينس آيرس:",
+        "stemEs": "En el habla rioplatense, la palabra 'lluvia' se pronuncia con un sonido similar a la 'sh' o 'zh'.",
+        "stemAr": "في نطق أهل ريو دي لا بلاتا، تُلفظ كلمة 'lluvia' بصوت شبيه بالشين أو الجيم الاحتكاكية اللطيفة.",
+        "options": [
+          {
+            "id": "ex-c1-pfo-2_a",
+            "text": "Como una fricativa prepalatal sorda o sonora (/ʃ/ o /ʒ/)",
+            "textAr": "بصوت احتكاكي غاري يشبه الشين أو الجيم المعطشة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pfo-2_b",
+            "text": "Como una erre fuerte y vibrante",
+            "textAr": "كراء مشددة مهتزة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بنطق الياء."
+          },
+          {
+            "id": "ex-c1-pfo-2_c",
+            "text": "No se pronuncia y desaparece por completo",
+            "textAr": "يحذف تماماً من الكلمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت موجود وبارز جداً."
+          }
+        ],
+        "targetVocab": [
+          "yeísmo",
+          "rehilado"
+        ],
+        "explanationAr": "«El yeísmo rehilado» (أو zheísmo/sheísmo) هو السمة الصوتية الأكثر شهرة في لهجة ريو دي لا بلاتا، حيث يتحول صوت الياء إلى صوت شيني احتكاكي ممتع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pfo-2_a"
+          ],
+          "selectedOptionId": "ex-c1-pfo-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pfo-2_b": "لا علاقة له بنطق الياء.",
+          "ex-c1-pfo-2_c": "الصوت موجود وبارز جداً."
+        }
+      },
+      {
+        "id": "ex-c1-pfo-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح الصوتي المقابل للسيسيو في وسط وشمال إسبانيا حيث يفرق بين كازا وكاثا: «la ____ fonológica».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة الدالة على التفريق الصوتي بين السين والثاء:",
+        "stemEs": "En Madrid se mantiene la ____ entre 'casa' (/kasa/) y 'caza' (/kaθa/).",
+        "stemAr": "في مدريد يُحافظ على التفريق والتمييز الصوتي بين كلمة casa (بيت) و caza (صيد).",
+        "targetVocab": [
+          "distinción"
+        ],
+        "explanationAr": "«La distinción» هي السمة الفونولوجية القشتالية التي تفرق بصرامة بين الصوت اللثوي /s/ والصوت بين الأسناني /θ/ (الثاء).",
+        "answerKey": {
+          "accepted": [
+            "distinción"
+          ],
+          "acceptableAnswers": [
+            "distinción"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-pfo-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا يحدث لحرف السين في نهاية الكلمات والمقاطع في اللهجات الكاريبية والأندلسية؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الظاهرة الصوتية الموصوفة لتحول صوت السين إلى هاء خفيفة:",
+        "stemEs": "En el habla popular del Caribe, 'los amigos' suele sonar como 'loh amigoh'.",
+        "stemAr": "في النطق الشعبي الكاريبي، غالباً ما تُسمع عبارة 'los amigos' كأنها 'loh amigoh' بالهمس.",
+        "options": [
+          {
+            "id": "ex-c1-pfo-4_a",
+            "text": "La aspiración de la esse",
+            "textAr": "همس حرف السين وتحويله إلى زفير رخو شبيه بالهاء",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-pfo-4_b",
+            "text": "La duplicación de la letra",
+            "textAr": "مضاعفة الحرف وتشديده كحرف مشدد",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يحدث تشديد للسين."
+          },
+          {
+            "id": "ex-c1-pfo-4_c",
+            "text": "El cambio de la esse por una zeta",
+            "textAr": "قلب السين إلى ثاء فصيحة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الهمس يحول الصوت إلى هاء /h/."
+          }
+        ],
+        "targetVocab": [
+          "aspiración",
+          "rigor"
+        ],
+        "explanationAr": "«La aspiración de la /-s/» هي تنفيس صوت السين كهاء رخوة /h/ وهي سمة كبرى لمناطق السواحل في الأندلس وجزر الكاريبي وتشيلي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-pfo-4_a"
+          ],
+          "selectedOptionId": "ex-c1-pfo-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-pfo-4_b": "لا يحدث تشديد للسين.",
+          "ex-c1-pfo-4_c": "الهمس يحول الصوت إلى هاء /h/."
+        }
+      },
+      {
+        "id": "ex-c1-pfo-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء حقيقة لسانية تصف انتشار السيسيو في القارة الأمريكية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-pfo-5_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-c1-pfo-5_t2",
+            "kind": "token",
+            "text": "seseo"
+          },
+          {
+            "id": "ex-c1-pfo-5_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-c1-pfo-5_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-pfo-5_t5",
+            "kind": "token",
+            "text": "norma"
+          },
+          {
+            "id": "ex-c1-pfo-5_t6",
+            "kind": "token",
+            "text": "americana"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El seseo es la norma americana"
+          ],
+          "tokenOrder": [
+            "ex-c1-pfo-5_t1",
+            "ex-c1-pfo-5_t2",
+            "ex-c1-pfo-5_t3",
+            "ex-c1-pfo-5_t4",
+            "ex-c1-pfo-5_t5",
+            "ex-c1-pfo-5_t6"
+          ]
+        },
+        "explanationAr": "المبتدأ El seseo يليه الفعل الرابط es وخبر المبتدأ la norma americana.",
+        "targetVocab": [
+          "seseo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-pfo-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة مراعياً دقة مخارج الحروف والوعي بالتنوع الصوتي العالمي للغة الإسبانية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً المقارنة بين الأصوات:",
+        "stemEs": "La distinción y el seseo son normas legítimas.",
+        "stemAr": "التفريق والسيسيو كلاهما معياران فصيحان شرعيان.",
+        "audioKey": "pending/c1-u5-fon-spk",
+        "targetVocab": [
+          "distinción",
+          "seseo"
+        ],
+        "explanationAr": "احرص على إخراج الثاء في distinción بوضع طرف اللسان بين الأسنان، ونطق السين في seseo بصوت صفيري سلس.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u5-fon-spk",
+          "modelAnswer": "La distinción y el seseo son normas legítimas."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

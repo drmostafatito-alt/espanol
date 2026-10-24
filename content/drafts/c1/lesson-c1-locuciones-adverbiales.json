@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-locuciones-adverbiales",
+    "titleAr": "العبارات الظرفية البليغة في الخطاب الرفيع: Locuciones adverbiales",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u2-idioms",
+    "objectiveAr": "أن يوظف المتعلم العبارات الظرفية الدقيقة (por ende, a regañadientes, a ciencia cierta, de cabo a rabo) لربط الأفكار وبيان الكيفية في سياقات راقية.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ende",
+      "regañadientes",
+      "cierta",
+      "rabo",
+      "antonomasia",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Uso de 'por ende' como conector consecutivo culto",
+      "Locución de modo 'a regañadientes' para expresar reticencia",
+      "Locución de certeza 'a ciencia cierta' frente a la duda",
+      "Locución 'de cabo a rabo' para totalidad exhaustiva"
+    ],
+    "grammarTopics": [
+      "locuciones-adverbiales-c1",
+      "registro-formal-culto"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار بين مستشارين قانونيين في مدريد يحللان وثيقة تعاقدية معقدة.",
+        "settingAr": "مكتب استشارات قانونية في حي سالامانكا",
+        "lines": [
+          {
+            "es": "Hemos examinado el pliego de condiciones de cabo a rabo sin hallar ninguna anomalía.",
+            "ar": "لقد فحصنا كراسة الشروط من أولها إلى آخرها دون أن نعثر على أي شائبة.",
+            "arEg": "راجعنا كراسة الشروط من طقطق لسلامو عليكم وملقيناش أي غلطة.",
+            "audioKey": "pending/c1-u2-loc-1"
+          },
+          {
+            "es": "No obstante, no podemos afirmar a ciencia cierta que la otra parte firme voluntariamente.",
+            "ar": "ومع ذلك، لا يمكننا أن نجزم على وجه اليقين بأن الطرف الآخر سيوقع طواعية.",
+            "arEg": "بس مع ذلك منقدرش نأكد مليون في المية إن الطرف التاني هيمضي بمزاجه.",
+            "audioKey": "pending/c1-u2-loc-2"
+          },
+          {
+            "es": "El director aceptó las cláusulas a regañadientes tras horas de ardua deliberación.",
+            "ar": "قبل المدير البنود على مضض بعد ساعات من المداولات الشاقة.",
+            "arEg": "المدير وافق على الشروط على مضض ومغصوب بعد مناهدة ساعات طويلة.",
+            "audioKey": "pending/c1-u2-loc-3"
+          },
+          {
+            "es": "El acuerdo es vinculante y, por ende, de obligado cumplimiento para ambas partes.",
+            "ar": "الاتفاق ملزم ومن ثَمَّ، فهو واجب النفاذ على كلا الطرفين.",
+            "arEg": "الاتفاق قانوني وملزم، وبالتالي واجب التنفيذ على الطرفين من غير كلام.",
+            "audioKey": "pending/c1-u2-loc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-lad-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى المستشار ولاحظ كيف عبّر عن فحص الوثيقة بالكامل دون إغفال أي تفصيل.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما التعبير البليغ الذي استخدمه المستشار للدلالة على الفحص الشامل؟",
+        "stemEs": "Hemos examinado el pliego de condiciones de cabo a rabo sin hallar ninguna anomalía.",
+        "stemAr": "لقد فحصنا كراسة الشروط من أولها إلى آخرها دون أن نعثر على أي شائبة.",
+        "options": [
+          {
+            "id": "ex-c1-lad-1_a",
+            "text": "De cabo a rabo",
+            "textAr": "من البداية إلى النهاية بدقة متناهية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-lad-1_b",
+            "text": "A la ligera",
+            "textAr": "بسذاجة وتسرع وسطحية",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس المعنى المقصود تماماً."
+          },
+          {
+            "id": "ex-c1-lad-1_c",
+            "text": "Por encima",
+            "textAr": "بشكل عابر وبلا اهتمام",
+            "isCorrect": false,
+            "distractorRationaleAr": "تدل على الإهمال لا الشمولية."
+          }
+        ],
+        "targetVocab": [
+          "rabo",
+          "cierta"
+        ],
+        "explanationAr": "تعبير «de cabo a rabo» يفيد الإحاطة الكاملة بالأمر من أوله لآخره دون ترك شاردة ولا واردة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u2-loc-1",
+        "speechEs": "Hemos examinado el pliego de condiciones de cabo a rabo sin hallar ninguna anomalía.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-lad-1_a"
+          ],
+          "selectedOptionId": "ex-c1-lad-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-lad-1_b": "عكس المعنى المقصود تماماً.",
+          "ex-c1-lad-1_c": "تدل على الإهمال لا الشمولية."
+        }
+      },
+      {
+        "id": "ex-c1-lad-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي من العبارات التالية تفيد النتيجة المترتبة بأسلوب أكاديمي رفيع بديلاً عن «por eso»؟",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الرابط السببي والنتيجي الراقي المناسب للسياق الأكاديمي:",
+        "stemEs": "El proyecto carece de fondos y, ____, no podrá ejecutarse este año.",
+        "stemAr": "المشروع يفتقر إلى التمويل، ومن ثمَّ لن يتسنى تنفيذه هذا العام.",
+        "options": [
+          {
+            "id": "ex-c1-lad-2_a",
+            "text": "por ende",
+            "textAr": "ومن ثَمَّ / وتبعاً لذلك",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-lad-2_b",
+            "text": "a regañadientes",
+            "textAr": "على مضض وكره",
+            "isCorrect": false,
+            "distractorRationaleAr": "تصف كيفية القيام بفعل وليست رابطاً استنتاجياً."
+          },
+          {
+            "id": "ex-c1-lad-2_c",
+            "text": "a ciencia cierta",
+            "textAr": "على وجه اليقين التام",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد درجة التيقن المعرفي."
+          }
+        ],
+        "targetVocab": [
+          "ende",
+          "rigor"
+        ],
+        "explanationAr": "تعد «por ende» من أرقى الروابط التتابعية الاستنتاجية في الفصحى وتفيد الترتيب السببي الصارم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-lad-2_a"
+          ],
+          "selectedOptionId": "ex-c1-lad-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-lad-2_b": "تصف كيفية القيام بفعل وليست رابطاً استنتاجياً.",
+          "ex-c1-lad-2_c": "تفيد درجة التيقن المعرفي."
+        }
+      },
+      {
+        "id": "ex-c1-lad-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالكلمة التي تشكل التعبير الدال على الامتثال على كره وإكراه معنوي: «a ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة المناسبة بالفراغ:",
+        "stemEs": "El testigo declaró a ____ ante el juez instructor.",
+        "stemAr": "أدلى الشاهد بأقواله على مضض أمام قاضي التحقيق.",
+        "targetVocab": [
+          "regañadientes"
+        ],
+        "explanationAr": "العبارة الظرفية المركبة هي «a regañadientes» وتدل على القيام بالعمل مع وجود ممانعة داخلية شديدة.",
+        "answerKey": {
+          "accepted": [
+            "regañadientes"
+          ],
+          "acceptableAnswers": [
+            "regañadientes"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-lad-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "كيف تعبر بأسلوب C1 راقٍ عن معرفة الشيء بيقين قاطع لا مراء فيه؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التعبير الدال على المعرفة اليقينية الصادقة:",
+        "stemEs": "Nadie sabe ____ cuál será el veredicto del tribunal.",
+        "stemAr": "لا أحد يعلم على وجه اليقين ما سيكون عليه حكم المحكمة.",
+        "options": [
+          {
+            "id": "ex-c1-lad-4_a",
+            "text": "a ciencia cierta",
+            "textAr": "على وجه اليقين القاطع",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-lad-4_b",
+            "text": "de oídas",
+            "textAr": "عن طريق السماع والشائعات",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الشك وتناقل الأخبار غير الموثوقة."
+          },
+          {
+            "id": "ex-c1-lad-4_c",
+            "text": "a ciegas",
+            "textAr": "على عمى وبلا بصيرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد انعدام الرؤية والجهل بالنتائج."
+          }
+        ],
+        "targetVocab": [
+          "cierta",
+          "rigor"
+        ],
+        "explanationAr": "يقال «saber a ciencia cierta» للدلالة على المعرفة القائمة على أدلة دامغة لا تقبل الشك.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-lad-4_a"
+          ],
+          "selectedOptionId": "ex-c1-lad-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-lad-4_b": "تفيد الشك وتناقل الأخبار غير الموثوقة.",
+          "ex-c1-lad-4_c": "تفيد انعدام الرؤية والجهل بالنتائج."
+        }
+      },
+      {
+        "id": "ex-c1-lad-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين عبارة أكاديمية تصف المدينة بأنها النموذج الأسمى للنهضة المعمارية مستخدماً «por antonomasia».",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-lad-5_t1",
+            "kind": "token",
+            "text": "Es"
+          },
+          {
+            "id": "ex-c1-lad-5_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-lad-5_t3",
+            "kind": "token",
+            "text": "ciudad"
+          },
+          {
+            "id": "ex-c1-lad-5_t4",
+            "kind": "token",
+            "text": "renacentista"
+          },
+          {
+            "id": "ex-c1-lad-5_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "ex-c1-lad-5_t6",
+            "kind": "token",
+            "text": "antonomasia"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Es la ciudad renacentista por antonomasia"
+          ],
+          "tokenOrder": [
+            "ex-c1-lad-5_t1",
+            "ex-c1-lad-5_t2",
+            "ex-c1-lad-5_t3",
+            "ex-c1-lad-5_t4",
+            "ex-c1-lad-5_t5",
+            "ex-c1-lad-5_t6"
+          ]
+        },
+        "explanationAr": "تستخدم عبارة «por antonomasia» لبيان أن الموصوف هو الممثل الأبرز والأعظم لجنسه ونوعه.",
+        "targetVocab": [
+          "antonomasia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-lad-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة حازمة تعبر عن الإلزام القانوني المطلق الناتج عن العقد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً نبر الكلمات:",
+        "stemEs": "El pacto es legal y, por ende, vinculante.",
+        "stemAr": "المعاهدة قانونية ومن ثَمَّ فهي ملزمة.",
+        "audioKey": "pending/c1-u2-loc-spk",
+        "targetVocab": [
+          "ende",
+          "rigor"
+        ],
+        "explanationAr": "احرص على الفصل الصوتي الطفيف بعد الرابط «por ende» لإبراز التبعية المنطقية في الخطاب القضائي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u2-loc-spk",
+          "modelAnswer": "El pacto es legal y, por ende, vinculante."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

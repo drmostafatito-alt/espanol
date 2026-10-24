@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-modismos-cultos",
+    "titleAr": "المجازات الاصطلاحية الراقية: Modismos cultos y metáforas vivas",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u2-idioms",
+    "objectiveAr": "أن يفهم المتعلم ويوظف الكنايات الراقية في الخطاب الصحفي والفكري (poner el dedo en la llaga, marear la perdiz, hacer la vista gorda).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "llaga",
+      "perdiz",
+      "gorda",
+      "bacalao",
+      "dedo",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Poner el dedo en la llaga: señalar el núcleo espinoso del problema",
+      "Marear la perdiz: dar rodeos innecesarios para dilatar la decisión",
+      "Hacer la vista gorda: tolerar una falta fingiendo no haberla visto",
+      "Cortar el bacalao: ostentar el mando y poder de decisión efectivo"
+    ],
+    "grammarTopics": [
+      "modismos-cultos",
+      "expresiones-idiomaticas-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مناظرة تلفزيونية بين محللين سياسيين حول سياسات الإصلاح الاقتصادي والبيروقراطية.",
+        "settingAr": "استوديو الأخبار والتحليلات السياسية في مدريد",
+        "lines": [
+          {
+            "es": "El editorialista ha puesto el dedo en la llaga al denunciar la evasión fiscal sistémica.",
+            "ar": "لقد وضع كاتب الافتتاحية إصبعه على الجرح عندما ندد بالتهرب الضريبي الهيكلي.",
+            "arEg": "كاتب المقال لمس الجرح بالظبط لما فضح التهرب الضريبي المنتشر.",
+            "audioKey": "pending/c1-u2-mod-1"
+          },
+          {
+            "es": "El comité se dedica a marear la perdiz para aplazar la votación decisiva.",
+            "ar": "اللجنة لا تفعل شيئاً سوى المماطلة وتضييع الوقت لإرجاء التصويت الحاسم.",
+            "arEg": "اللجنة عمالة تلف وتدور وتماطل عشان تأجل التصويت المهم وخلاص.",
+            "audioKey": "pending/c1-u2-mod-2"
+          },
+          {
+            "es": "Las autoridades no pueden seguir haciendo la vista gorda ante semejante arbitrariedad.",
+            "ar": "لا يجوز للسلطات أن تستمر في غض الطرف وتجاهل هذا التعسف الصارخ.",
+            "arEg": "مينفعش المسؤولين يغمضوا عينيهم ويطنشوا الظلم والتعسف الفاقع ده.",
+            "audioKey": "pending/c1-u2-mod-3"
+          },
+          {
+            "es": "En esa corporación todos saben quién corta el bacalao en los momentos críticos.",
+            "ar": "في تلك المؤسسة يعلم الجميع من هو صاحب الكلمة النافذة وقت الأزمات.",
+            "arEg": "في الشركة دي الكل عارف مين الآمر الناهي واللي كلمته سيف وقت الجد.",
+            "audioKey": "pending/c1-u2-mod-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-mcu-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى تعليق المحلل السياسي وحدد التعبير الذي استخدمه لوصف تحديد موضع الخلل بدقة بالغة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما التعبير المجازي المستخدم للدلالة على إصابة كبد الحقيقة؟",
+        "stemEs": "El editorialista ha puesto el dedo en la llaga al denunciar la evasión fiscal sistémica.",
+        "stemAr": "لقد وضع كاتب الافتتاحية إصبعه على الجرح عندما ندد بالتهرب الضريبي الهيكلي.",
+        "options": [
+          {
+            "id": "ex-c1-mcu-1_a",
+            "text": "Poner el dedo en la llaga",
+            "textAr": "وضع الإصبع على مكمن الألم والجرح الحقيقي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mcu-1_b",
+            "text": "Tirar la toalla",
+            "textAr": "الاستسلام وإعلان الهزيمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى رياضي يفيد التراجع."
+          },
+          {
+            "id": "ex-c1-mcu-1_c",
+            "text": "Echar leña al fuego",
+            "textAr": "إشعال الفتنة وتأجيج الصراع",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد تصعيد النزاع لا تشخيصه."
+          }
+        ],
+        "targetVocab": [
+          "dedo",
+          "llaga"
+        ],
+        "explanationAr": "«Poner el dedo en la llaga» يعني تشخيص صلب المشكلة الشائكة دون مواربة مهما كان ذلك مؤلماً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u2-mod-1",
+        "speechEs": "El editorialista ha puesto el dedo en la llaga al denunciar la evasión fiscal sistémica.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mcu-1_a"
+          ],
+          "selectedOptionId": "ex-c1-mcu-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mcu-1_b": "معنى رياضي يفيد التراجع.",
+          "ex-c1-mcu-1_c": "تفيد تصعيد النزاع لا تشخيصه."
+        }
+      },
+      {
+        "id": "ex-c1-mcu-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا يعني التعبير «marear la perdiz» في المحادثات الرسمية ومفاوضات العمل؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الدلالة الاصطلاحية الدقيقة للتعبير:",
+        "stemEs": "No marees más la perdiz y dinos tu propuesta final.",
+        "stemAr": "كفاك مماطلة ولفاً ودوراناً وأخبرنا بعرضك النهائي.",
+        "options": [
+          {
+            "id": "ex-c1-mcu-2_a",
+            "text": "Dar rodeos innecesarios para perder el tiempo",
+            "textAr": "المماطلة وافتعال تفاصيل لتأخير القرار",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mcu-2_b",
+            "text": "Cazar aves en el bosque",
+            "textAr": "صيد الطيور والحيوانات في البرية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى الحرفي غير مقصود إطلاقاً."
+          },
+          {
+            "id": "ex-c1-mcu-2_c",
+            "text": "Hablar con absoluta franqueza",
+            "textAr": "التحدث بصراحة مطلقة ووضوح تام",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس المعنى المراد تماماً."
+          }
+        ],
+        "targetVocab": [
+          "perdiz",
+          "rigor"
+        ],
+        "explanationAr": "يقال «marear la perdiz» لمن يراوغ ويضيع الوقت بحجج واهية لتفادي مواجهة القرار المطلوب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mcu-2_a"
+          ],
+          "selectedOptionId": "ex-c1-mcu-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mcu-2_b": "المعنى الحرفي غير مقصود إطلاقاً.",
+          "ex-c1-mcu-2_c": "عكس المعنى المراد تماماً."
+        }
+      },
+      {
+        "id": "ex-c1-mcu-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل التعبير الذي يعني التغاضي المتعمد عن الخطأ وتمريره دون محاسبة: «hacer la vista ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة الناقصة لتكوين المصطلح الفصيح:",
+        "stemEs": "El inspector decidió hacer la vista ____ ante la falta leve.",
+        "stemAr": "قرر المفتش التغاضي وغض الطرف عن المخالفة البسيطة.",
+        "targetVocab": [
+          "gorda"
+        ],
+        "explanationAr": "المصطلح الثابت في الإسبانية الفصيحة هو «hacer la vista gorda» ويعني التظاهر بعدم ملاحظة الخلل للتسامح معه.",
+        "answerKey": {
+          "accepted": [
+            "gorda"
+          ],
+          "acceptableAnswers": [
+            "gorda"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-mcu-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما التعبير الدال على امتلاك السلطة الحقيقية وإدارة شؤون المنظمة في الكواليس؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التعبير الاصطلاحي المعبر عن صاحب القرار النافذ:",
+        "stemEs": "Aunque parezca un asesor secundario, es él quien ____ en el partido.",
+        "stemAr": "على الرغم من أنه يبدو مستشاراً ثانوياً، إلا أنه هو صاحب الكلمة النافذة في الحزب.",
+        "options": [
+          {
+            "id": "ex-c1-mcu-4_a",
+            "text": "corta el bacalao",
+            "textAr": "يملك زمام القرار الفعلي ويدير الأمور",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-mcu-4_b",
+            "text": "da la lata",
+            "textAr": "يزعج الآخرين بثرثرة تافهة",
+            "isCorrect": false,
+            "distractorRationaleAr": "تفيد الإزعاج والمضايقة فقط."
+          },
+          {
+            "id": "ex-c1-mcu-4_c",
+            "text": "paga el pato",
+            "textAr": "يتحمل وزر أخطاء غيره بلا ذنب",
+            "isCorrect": false,
+            "distractorRationaleAr": "كبش فداء وليس صاحب سلطة."
+          }
+        ],
+        "targetVocab": [
+          "bacalao",
+          "rigor"
+        ],
+        "explanationAr": "كناية «cortar el bacalao» مأخوذة من توزيع المؤن قديماً، وتطلق على من يملك السلطة الحقيقية وتوزيع النفوذ.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-mcu-4_a"
+          ],
+          "selectedOptionId": "ex-c1-mcu-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-mcu-4_b": "تفيد الإزعاج والمضايقة فقط.",
+          "ex-c1-mcu-4_c": "كبش فداء وليس صاحب سلطة."
+        }
+      },
+      {
+        "id": "ex-c1-mcu-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لتكوين جملة نقدية تدعو لمواجهة جوهر القضية دون دوران.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-mcu-5_t1",
+            "kind": "token",
+            "text": "Debemos"
+          },
+          {
+            "id": "ex-c1-mcu-5_t2",
+            "kind": "token",
+            "text": "poner"
+          },
+          {
+            "id": "ex-c1-mcu-5_t3",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-c1-mcu-5_t4",
+            "kind": "token",
+            "text": "dedo"
+          },
+          {
+            "id": "ex-c1-mcu-5_t5",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-c1-mcu-5_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-c1-mcu-5_t7",
+            "kind": "token",
+            "text": "llaga"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Debemos poner el dedo en la llaga"
+          ],
+          "tokenOrder": [
+            "ex-c1-mcu-5_t1",
+            "ex-c1-mcu-5_t2",
+            "ex-c1-mcu-5_t3",
+            "ex-c1-mcu-5_t4",
+            "ex-c1-mcu-5_t5",
+            "ex-c1-mcu-5_t6",
+            "ex-c1-mcu-5_t7"
+          ]
+        },
+        "explanationAr": "التركيب الفصيح: الفاعل ثم الفعل المساعد والمصدر والتعبير الاصطلاحي في موضعه المعتمد.",
+        "targetVocab": [
+          "dedo",
+          "llaga"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-mcu-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة استنكارية واضحة ترفض التواطؤ وغض البصر عن التجاوزات.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الإيقاع الخطابي:",
+        "stemEs": "No podemos hacer la vista gorda ante el fraude.",
+        "stemAr": "لا يمكننا غض الطرف وتجاهل هذا الاحتيال.",
+        "audioKey": "pending/c1-u2-mod-spk",
+        "targetVocab": [
+          "gorda",
+          "rigor"
+        ],
+        "explanationAr": "تأكد من النطق السليم لحرف d بين الصائتين في fraude وإعطاء العبارة الاصطلاحية وقارها المكتبي الرفيع.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u2-mod-spk",
+          "modelAnswer": "No podemos hacer la vista gorda ante el fraude."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-patrimonio-cultural-inmaterial",
+    "unitSlug": "b2-u10-culture-deep",
+    "levelCode": "B2",
+    "titleAr": "التراث الثقافي اللامادي والاحتفالات الكبرى: الهوية والتاريخ",
+    "titleEs": "El patrimonio cultural inmaterial: Fiestas mayores, ritos y memoria colectiva",
+    "subtitleAr": "الفلامنكو، الفاياس (Las Fallas)، ديا دي مويرتوس المكسيكي، والأعياد التراثية",
+    "order": 3,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحلل المتعلم عناصر التراث الثقافي غير المادي في إسبانيا والعالم اللاتيني المعترف بها دولياً من اليونسكو.",
+        "أن يوظف مفردات الأنثروبولوجيا الثقافية: patrimonio inmaterial, rito ancestral, memoria colectiva, fervor popular, sincretismo.",
+        "أن يفسر الأبعاد الرمزية والتاريخية للاحتفالات الكبرى (الفاياس، الفلامنكو، أسبوع الآلام، ويوم الموتى)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الأنثروبولوجية لوصف الممارسات الثقافية والتراث الحي",
+          "explanationAr": "1. **التعبير عن التجذر التاريخي والأصالة التراثية**:\n- *Esta tradición hunde sus raíces en ritos ancestrales paganos y cristianos*.\n- *Fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO*.\n2. **التعبير عن الامتزاج الثقافي (El sincretismo)**:\n- *El Día de Muertos en México es un claro ejemplo de sincretismo entre la cosmovisión prehispánica y la fe católica*.\n3. **التعبير عن الحماس والالتفاف الشعبي**:\n- *La fiesta se vive con un desbordante fervor popular que congrega a miles de personas*."
+        }
+      ],
+      "commonMistakesAr": [
+        "اعتبار الفلامنكو مجرد رقصة شعبية؛ الفلامنكو فن متكامل من الغناء والشعر والعزف المعقد (cante jondo, toque, baile) المعترف به عالمياً كإرث إنساني.",
+        "الفهم السطحي لاحتفال 'Día de Muertos' بالمكسيك كأنه هالوين؛ هو في الحقيقة احتفال دافئ لتكريم ذكرى الأجداد ومحبتهم بروحانية وألوان مبهجة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في التراث بنقول «الأعياد دي مش مجرد فرفشة، دي عادات متوارثة من آلاف السنين بتعبر عن هوية الشعب وتاريخه». بالإسبانية: Estas fiestas no son mero ocio, sino ritos ancestrales que forman parte viva de la memoria colectiva."
+        }
+      ],
+      "culturalNoteAr": "إسبانيا هي رابع دولة في العالم من حيث عدد المواقع والعناصر المدرجة في قوائم اليونسكو للتراث الإنساني، بما يعكس ثراء تاريخها المتنوع الروماني والعربي والأوروبي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-patrimonio-cultural-inmaterial-intro",
+        "type": "explanation",
+        "titleAr": "معجم التراث الثقافي الحي",
+        "bodyAr": "المفاهيم الأنثروبولوجية والتراثية:\n- **el patrimonio inmaterial**: التراث الثقافي اللامادي غير الملموس المحفوظ شفهياً وممارسياً\n- **el rito ancestral**: الطقس التراثي العريق المتوارث عبر أجيال متتالية\n- **la memoria colectiva**: الذاكرة الجمعية الحافظة لتاريخ وشعور المجتمع ككل\n- **el sincretismo**: الامتزاج والتوفيق الثقافي بين عقائد وتيارات حضارية مختلفة\n- **el fervor popular**: الحماس والتعلق الوجداني والشعبي الجارف بالاحتفال\n- **hunder sus raíces**: يضرب بجذوره العميقة في التاريخ القديم",
+        "examples": [
+          {
+            "es": "El flamenco fue declarado Patrimonio Inmaterial de la Humanidad por su incalculable valor artístico.",
+            "ar": "أُعلن الفلامنكو تراثاً إنسانياً لامادياً نظراً لقيمته الفنية التي لا تُقدر بثمن."
+          },
+          {
+            "es": "Las Fallas de Valencia hunden sus raíces en los antiguos rituales de los carpinteros en honor a San José.",
+            "ar": "تضرب احتفالات الفاياس في فالنسيا بجذورها في طقوس النجارين القديمة تكريماً للقديس يوسف."
+          },
+          {
+            "es": "El Día de Muertos refleja el sincretismo entre las tradiciones indígenas y el catolicismo.",
+            "ar": "يعكس يوم الموتى الامتزاج الثقافي بين تقاليد السكان الأصليين والمسيحية الكاثوليكية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "patrimonio inmaterial",
+      "rito ancestral",
+      "memoria colectiva",
+      "sincretismo",
+      "fervor popular",
+      "hunde sus raíces"
+    ],
+    "reviewVocabulary": [
+      "tradición",
+      "cultura"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحلل المتعلم عناصر التراث الثقافي غير المادي في إسبانيا والعالم اللاتيني المعترف بها دولياً من اليونسكو.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-pci-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المعترف به من اليونسكو للفنون الحية والتقاليد الشفهية والطقوس التراثية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي الفنون الشعبية والممارسات التقليدية الحية غير المحصورة في مبانٍ حجرية؟",
+        "stemEs": "El flamenco y la dieta mediterránea forman parte del _____ protegido por la UNESCO.",
+        "stemAr": "يشكل الفلامنكو والحمية المتوسطية جزءاً من ... المحمي من قِبل اليونسكو.",
+        "options": [
+          {
+            "id": "ex-b2-pci-1_a",
+            "text": "patrimonio inmaterial",
+            "textAr": "التراث الثقافي اللامادي الحي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pci-1_b",
+            "text": "monumento de piedra",
+            "textAr": "النصب التذكاري الحجري فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفنون والتقاليد تسمى el patrimonio inmaterial."
+          },
+          {
+            "id": "ex-b2-pci-1_c",
+            "text": "decreto ley",
+            "textAr": "مرسوم قانوني",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح التراثي هو patrimonio inmaterial."
+          }
+        ],
+        "targetVocab": [
+          "patrimonio inmaterial",
+          "memoria colectiva"
+        ],
+        "explanationAr": "el patrimonio inmaterial هو التراث الثقافي غير المادي الذي يشمل التقاليد الحية والفنون الأدائية والاحتفالات.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pci-1_a"
+          ],
+          "selectedOptionId": "ex-b2-pci-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pci-1_b": "الفنون والتقاليد تسمى el patrimonio inmaterial.",
+          "ex-b2-pci-1_c": "المصطلح التراثي هو patrimonio inmaterial."
+        }
+      },
+      {
+        "id": "ex-b2-pci-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني الامتزاج الثقافي والتوفيقي بين معتقدين أو حضارتين: el _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة التي تدل على امتزاج التقاليد الأصلية بالواردة: el _____ cultural:",
+        "stemEs": "Las fiestas andinas son un fascinante ejemplo de _____ religioso entre ritos incas y santos católicos.",
+        "stemAr": "تعد احتفالات جبال الأنديز نموذجاً ساحراً للـ ... الديني بين طقوس الإنكا وقديسي الكاثوليكية.",
+        "targetVocab": [
+          "sincretismo"
+        ],
+        "explanationAr": "el sincretismo هو التوفيق والامتزاج الثقافي والديني بين تقاليد وحضارات متباينة.",
+        "answerKey": {
+          "accepted": [
+            "sincretismo"
+          ],
+          "acceptableAnswers": [
+            "sincretismo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-pci-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التعبير البلاغي الذي يعني امتداد أصول الشيء في أعماق التاريخ القديم",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي العبارة التي تعني 'يرجع تاريخه وأصوله إلى زمن سحيق غابر'؟",
+        "stemEs": "Esta fiesta primaveral _____ en antiguos rituales paganos dedicados a la fertilidad.",
+        "stemAr": "هذا الاحتفال الربيعي ... في طقوس قديمة مكرسة للخصوبة.",
+        "options": [
+          {
+            "id": "ex-b2-pci-3_a",
+            "text": "hunde sus raíces",
+            "textAr": "يضرب بجذوره في أعماق التاريخ (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pci-3_b",
+            "text": "levanta la sesión",
+            "textAr": "يرفع الجلسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأصل التاريخي يقال عنه: hunde sus raíces."
+          },
+          {
+            "id": "ex-b2-pci-3_c",
+            "text": "toca fondo",
+            "textAr": "يلامس القاع في هبوط الأرقام",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعبير التراثي هو hunde sus raíces."
+          }
+        ],
+        "targetVocab": [
+          "hunde sus raíces",
+          "rito ancestral",
+          "memoria colectiva"
+        ],
+        "explanationAr": "التعبير hundir sus raíces يعني أن يمتد أصل الشيء عميقاً في التاريخ والتقاليد العريقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pci-3_a"
+          ],
+          "selectedOptionId": "ex-b2-pci-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pci-3_b": "الأصل التاريخي يقال عنه: hunde sus raíces.",
+          "ex-b2-pci-3_c": "التعبير التراثي هو hunde sus raíces."
+        }
+      },
+      {
+        "id": "ex-b2-pci-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الأنثروبولوجية للتعبير عن الحماس والالتفاف الشعبي العارم في الأعياد",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-pci-4_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-b2-pci-4_t2",
+            "kind": "token",
+            "text": "fiesta"
+          },
+          {
+            "id": "ex-b2-pci-4_t3",
+            "kind": "token",
+            "text": "se"
+          },
+          {
+            "id": "ex-b2-pci-4_t4",
+            "kind": "token",
+            "text": "celebra"
+          },
+          {
+            "id": "ex-b2-pci-4_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-b2-pci-4_t6",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-b2-pci-4_t7",
+            "kind": "token",
+            "text": "gran"
+          },
+          {
+            "id": "ex-b2-pci-4_t8",
+            "kind": "token",
+            "text": "fervor"
+          },
+          {
+            "id": "ex-b2-pci-4_t9",
+            "kind": "token",
+            "text": "popular"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La fiesta se celebra con un gran fervor popular"
+          ],
+          "tokenOrder": [
+            "ex-b2-pci-4_t1",
+            "ex-b2-pci-4_t2",
+            "ex-b2-pci-4_t3",
+            "ex-b2-pci-4_t4",
+            "ex-b2-pci-4_t5",
+            "ex-b2-pci-4_t6",
+            "ex-b2-pci-4_t7",
+            "ex-b2-pci-4_t8",
+            "ex-b2-pci-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ La fiesta ثم الفعل se celebra ثم شبه الجملة con un gran fervor popular.",
+        "targetVocab": [
+          "fervor popular",
+          "rito ancestral"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-pci-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمؤرخ الثقافي وحدد الوعاء الحافظ لذكريات الشعب وهويته المشتركة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للبرنامج الوثائقي عن أعياد الفاياس في فالنسيا",
+        "stemEs": "Estas celebraciones centenarias permanecen vivas gracias a la fuerza de la memoria colectiva.",
+        "stemAr": "تظل هذه الاحتفالات الممتدة لمئات السنين حية بفضل قوة الذاكرة الجمعية وتماسكها.",
+        "options": [
+          {
+            "id": "ex-b2-pci-5_a",
+            "text": "memoria colectiva",
+            "textAr": "الذاكرة الجمعية الحافظة لتاريخ المجتمع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pci-5_b",
+            "text": "olvido institucional",
+            "textAr": "النسيان المؤسسي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المؤرخ قال: gracias a la fuerza de la memoria colectiva."
+          },
+          {
+            "id": "ex-b2-pci-5_c",
+            "text": "congoja pasajera",
+            "textAr": "غصة حزن عابرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحافظ هو الذاكرة الجمعية memoria colectiva."
+          }
+        ],
+        "targetVocab": [
+          "memoria colectiva",
+          "patrimonio inmaterial"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'gracias a la fuerza de la memoria colectiva'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_fuerza_memoria_colectiva_fiestas.mp3",
+        "speechEs": "Estas celebraciones centenarias permanecen vivas gracias a la fuerza de la memoria colectiva.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pci-5_a"
+          ],
+          "selectedOptionId": "ex-b2-pci-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pci-5_b": "المؤرخ قال: gracias a la fuerza de la memoria colectiva.",
+          "ex-b2-pci-5_c": "الحافظ هو الذاكرة الجمعية memoria colectiva."
+        }
+      },
+      {
+        "id": "ex-b2-pci-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك التراثية باعتزاز ثقافي وتقدير عميق للتنوع الحضاري الإنساني",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتقديم رؤية أنثروبولوجية راقية للتراث الإسباني اللامادي:",
+        "stemEs": "El flamenco es un patrimonio inmaterial que hunde sus raíces en la memoria colectiva y el sincretismo cultural.",
+        "stemAr": "الفلامنكو تراث لامادي يضرب بجذوره في الذاكرة الجمعية والامتزاج الثقافي المتنوع.",
+        "audioKey": "pending/b2_flamenco_patrimonio_inmaterial_memoria.mp3",
+        "targetVocab": [
+          "patrimonio inmaterial",
+          "hunde sus raíces",
+          "memoria colectiva",
+          "sincretismo"
+        ],
+        "explanationAr": "انتبه لنطق patrimonio inmaterial و sincretismo cultural بفخامة ورصانة لغوية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_flamenco_patrimonio_inmaterial_memoria.mp3",
+          "modelAnswer": "El flamenco es un patrimonio inmaterial que hunde sus raíces en la memoria colectiva y el sincretismo cultural."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-reclamaciones-juridicas-instancias",
+    "unitSlug": "b2-u9-formal-writing",
+    "levelCode": "B2",
+    "titleAr": "العرائض الرسمية والشكاوى القانونية: مخاطبة الإدارات الحكومية",
+    "titleEs": "Instancias administrativas y reclamaciones jurídicas: Lenguaje procedimental",
+    "subtitleAr": "صيغة الطلب الرسمي (Expone / Solicita)، التظلمات الإدارية، والمرافعة الشكلية",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحرر المتعلم عريضة رسمية (Instancia administrativa) متوافقة مع الإجراءات القانونية الإسبانية.",
+        "أن يتقن الهيكل الثنائي الشهير: EXPONE (حيثيات الواقعة) و SOLICITA (الطلبات النظامية).",
+        "أن يوظف مصطلحات القانون الإداري: interponer un recurso, plazo de alegaciones, silencio administrativo, providencia."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "البنية الإلزامية للعريضة الإدارية في النظام الإسباني",
+          "explanationAr": "1. **ديباجة التعريف بمقدم الطلب**:\n- *Don/Doña [Nombre], mayor de edad, con DNI/NIE n.º [X], con domicilio a efectos de notificaciones en... ante este organismo comparece y*\n2. **قسم الحيثيات والوقائع (EXPONE)**:\n- *PRIMERO.- Que con fecha de... le fue denegada la solicitud...*\n- *SEGUNDO.- Que dicha resolución contraviene lo dispuesto en el artículo...*\n3. **قسم المطالب القانونية (SOLICITA)**:\n- *SOLICITA: Que teniendo por presentado este escrito, se sirva admitirlo a trámite y declare la nulidad de...*"
+        }
+      ],
+      "commonMistakesAr": [
+        "خلط الحيثيات بالأسباب؛ خانة EXPONE تسرد الوقائع بموضوعية (Que ocurrió tal cosa)، بينما خانة SOLICITA تقتصر على ما تطلبه من الإدارة حصراً.",
+        "نسيان عبارة الاختتام الإلزامية في العرائض الإسبانية: *Es justicia que pide en [Ciudad], a [Fecha]*."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في المصالح الحكومية الإسبانية كتابة الطلب أو التظلم الرسمي ليها قالب صارم: بتعرف نفسك وتكتب EXPONE (حيث إنه حصل كذا) وبعدين SOLICITA (لذلك أرجو التكرم بالموافقة على كذا). بالإسبانية: Se redacta formalmente con EXPONE y SOLICITA."
+        }
+      ],
+      "culturalNoteAr": "الإدارة العامة في إسبانيا تخضع لقانون المسطرة الإدارية المشتركة (Ley 39/2015 del Procedimiento Administrativo Común)، والتي تحدد القواعد الشكلية لإيداع العرائض والطعون."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-reclamaciones-juridicas-instancias-intro",
+        "type": "explanation",
+        "titleAr": "هيكل العريضة والتظلم الإداري الرسمي",
+        "bodyAr": "المفاهيم القانونية والإجرائية:\n- **la instancia administrativa**: العريضة والطلب الرسمي المقدم لسلطة عامة\n- **el EXPONE**: قسم عرض الوقائع والأسانيد التي يستند إليها الطلب\n- **el SOLICITA**: قسم تحديد المطالب المرجو صدور قرار بشأنها\n- **admitir a trámite**: قبول العريضة شكلاً وبدء إجراءات فحصها الإداري\n- **interponer un recurso**: تقديم طعن وتظلم قانوني ضد قرار صادر\n- **el silencio administrativo**: الصمت والسكوت الإداري بعد انقضاء المهلة القانونية",
+        "examples": [
+          {
+            "es": "El ciudadano presentó una instancia administrativa solicitando la revisión del expediente.",
+            "ar": "قدم المواطن عريضة إدارية يطلب فيها مراجعة ملف قضيته."
+          },
+          {
+            "es": "En el apartado EXPONE se detallan los antecedentes de hecho que motivan el escrito.",
+            "ar": "في قسم 'يعرض' (EXPONE) تُفصل السوابق الواقعية الدافعة لكتابة المذكرة."
+          },
+          {
+            "es": "El juzgado acordó admitir a trámite el recurso contencioso interpuesto.",
+            "ar": "قررت المحكمة قبول الطعن القضائي المودع شكلاً وبدء النظر فيه."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "instancia",
+      "EXPONE",
+      "SOLICITA",
+      "admitir a trámite",
+      "interponer un recurso",
+      "silencio administrativo"
+    ],
+    "reviewVocabulary": [
+      "documento",
+      "derecho"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يحرر المتعلم عريضة رسمية (Instancia administrativa) متوافقة مع الإجراءات القانونية الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-rji-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر القسم في العريضة الإدارية المخصص لعرض الوقائع والأسانيد التي يستند إليها المواطن",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "تحت أي عنوان نكتب حيثيات وسوابق المشكلة في العريضة الرسمية الإسبانية؟",
+        "stemEs": "En el apartado _____, el solicitante expone cronológicamente los hechos ocurridos.",
+        "stemAr": "في قسم ...، يعرض مقدم الطلب زمنياً الوقائع التي حدثت.",
+        "options": [
+          {
+            "id": "ex-b2-rji-1_a",
+            "text": "EXPONE",
+            "textAr": "قسم عرض الحيثيات والوقائع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-rji-1_b",
+            "text": "SOLICITA",
+            "textAr": "قسم المطالب فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوقائع تعرض في قسم EXPONE."
+          },
+          {
+            "id": "ex-b2-rji-1_c",
+            "text": "BIBLIOGRAFÍA",
+            "textAr": "المراجع",
+            "isCorrect": false,
+            "distractorRationaleAr": "في العريضة الرسمية نستخدم EXPONE."
+          }
+        ],
+        "targetVocab": [
+          "EXPONE",
+          "SOLICITA",
+          "instancia"
+        ],
+        "explanationAr": "EXPONE هو العنوان الإجرائي الإلزامي لسرد الوقائع التي بنيت عليها العريضة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-rji-1_a"
+          ],
+          "selectedOptionId": "ex-b2-rji-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-rji-1_b": "الوقائع تعرض في قسم EXPONE.",
+          "ex-b2-rji-1_c": "في العريضة الرسمية نستخدم EXPONE."
+        }
+      },
+      {
+        "id": "ex-b2-rji-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالتعبير القانوني الذي يعني قبول الطلب شكلاً وبدء فحصه: admitir a _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الناقصة في التعبير الإداري: admitir a _____ (قبول المعاملة للنظر فيها):",
+        "stemEs": "El ministerio decidió admitir a _____ la reclamación presentada por los afectados.",
+        "stemAr": "قررت الوزارة قبول الشكوى المقدمة من المتضررين شكلاً وبدء فحصها النظامي.",
+        "targetVocab": [
+          "admitir a trámite"
+        ],
+        "explanationAr": "admitir a trámite تعني قبول العريضة شكلياً والبدء في الإجراءات القانونية لفحصها.",
+        "answerKey": {
+          "accepted": [
+            "trámite",
+            "tramite"
+          ],
+          "acceptableAnswers": [
+            "trámite",
+            "tramite"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-rji-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح القانوني الذي يعني الطعن والتظلم الرسمي ضد قرار صادر من جهة إدارية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو التعبير القانوني المعتمد لـ 'تقديم طعن رسمي ضد قرار إداري جائر'؟",
+        "stemEs": "El afectado dispone de un mes de plazo para _____ de alzada ante el superior jerárquico.",
+        "stemAr": "أمام المتضرر مهلة شهر لـ ... استئنافي أمام الرئيس الإداري الأعلى.",
+        "options": [
+          {
+            "id": "ex-b2-rji-3_a",
+            "text": "interponer un recurso",
+            "textAr": "تقديم طعن وتظلم قانوني (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-rji-3_b",
+            "text": "hacer una metáfora",
+            "textAr": "صنع استعارة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الطعن الإداري يسمى interponer un recurso."
+          },
+          {
+            "id": "ex-b2-rji-3_c",
+            "text": "firmar la paz",
+            "textAr": "توقيع السلام",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح القانوني هو interponer un recurso."
+          }
+        ],
+        "targetVocab": [
+          "interponer un recurso",
+          "instancia",
+          "silencio administrativo"
+        ],
+        "explanationAr": "interponer un recurso تعني إيداع طعن واستئناف رسمي ضد قرار إداري.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-rji-3_a"
+          ],
+          "selectedOptionId": "ex-b2-rji-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-rji-3_b": "الطعن الإداري يسمى interponer un recurso.",
+          "ex-b2-rji-3_c": "المصطلح القانوني هو interponer un recurso."
+        }
+      },
+      {
+        "id": "ex-b2-rji-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الإجرائية لتقديم طلب إداري رسمي للمحافظة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-rji-4_t1",
+            "kind": "token",
+            "text": "Presentó"
+          },
+          {
+            "id": "ex-b2-rji-4_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b2-rji-4_t3",
+            "kind": "token",
+            "text": "instancia"
+          },
+          {
+            "id": "ex-b2-rji-4_t4",
+            "kind": "token",
+            "text": "administrativa"
+          },
+          {
+            "id": "ex-b2-rji-4_t5",
+            "kind": "token",
+            "text": "ante"
+          },
+          {
+            "id": "ex-b2-rji-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b2-rji-4_t7",
+            "kind": "token",
+            "text": "ayuntamiento"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Presentó una instancia administrativa ante el ayuntamiento"
+          ],
+          "tokenOrder": [
+            "ex-b2-rji-4_t1",
+            "ex-b2-rji-4_t2",
+            "ex-b2-rji-4_t3",
+            "ex-b2-rji-4_t4",
+            "ex-b2-rji-4_t5",
+            "ex-b2-rji-4_t6",
+            "ex-b2-rji-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Presentó ثم المفعول una instancia administrativa ثم شبه الجملة ante el ayuntamiento.",
+        "targetVocab": [
+          "instancia",
+          "EXPONE"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-rji-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمستشار الإداري وحدد الأثر القانوني المترتب على عدم رد الإدارة خلال المهلة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشرح المحامي لحالة غياب الرد من البلدية",
+        "stemEs": "Al no recibir contestación en seis meses, opera la figura del silencio administrativo negativo.",
+        "stemAr": "عند عدم تلقي رد خلال ستة أشهر، تسري قاعدة الصمت الإداري المعتبر بمثابة رفض.",
+        "options": [
+          {
+            "id": "ex-b2-rji-5_a",
+            "text": "silencio administrativo",
+            "textAr": "قاعدة السكوت والصمت الإداري القانونية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-rji-5_b",
+            "text": "acuerdo verbal",
+            "textAr": "اتفاق شفهي غير موثق",
+            "isCorrect": false,
+            "distractorRationaleAr": "المحامي أشار إلى: el silencio administrativo."
+          },
+          {
+            "id": "ex-b2-rji-5_c",
+            "text": "consenso pleno",
+            "textAr": "توافق تام",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحالة هي الصمت الإداري silencio administrativo."
+          }
+        ],
+        "targetVocab": [
+          "silencio administrativo",
+          "admitir a trámite"
+        ],
+        "explanationAr": "المستشار قال بوضوح: 'opera la figura del silencio administrativo'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_silencio_administrativo_negativo.mp3",
+        "speechEs": "Al no recibir contestación en seis meses, opera la figura del silencio administrativo negativo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-rji-5_a"
+          ],
+          "selectedOptionId": "ex-b2-rji-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-rji-5_b": "المحامي أشار إلى: el silencio administrativo.",
+          "ex-b2-rji-5_c": "الحالة هي الصمت الإداري silencio administrativo."
+        }
+      },
+      {
+        "id": "ex-b2-rji-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق صيغة المطلب الإداري الرسمي كما تُتلى في المحاكم والمصالح الحكومية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كصيغة اختتام قانونية لعريضة تظلم إداري:",
+        "stemEs": "Por todo ello, SOLICITA que se admita a trámite esta instancia y se declare nula la sanción impuesta.",
+        "stemAr": "بناءً على كل ما تقدم، يُلتمس قبول هذه العريضة شكلاً وإعلان بطلان العقوبة المفروضة.",
+        "audioKey": "pending/b2_solicita_admita_tramite_instancia.mp3",
+        "targetVocab": [
+          "SOLICITA",
+          "admitir a trámite",
+          "instancia",
+          "EXPONE"
+        ],
+        "explanationAr": "انتبه لنطق SOLICITA و se admita a trámite بنبرة قانونية صارمة وفصيحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_solicita_admita_tramite_instancia.mp3",
+          "modelAnswer": "Por todo ello, SOLICITA que se admita a trámite esta instancia y se declare nula la sanción impuesta."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

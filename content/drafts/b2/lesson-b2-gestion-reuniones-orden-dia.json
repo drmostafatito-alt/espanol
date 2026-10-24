@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-gestion-reuniones-orden-dia",
+    "unitSlug": "b2-u4-professional",
+    "levelCode": "B2",
+    "titleAr": "إدارة الاجتماعات المهنية: جدول الأعمال وتوزيع المداخلات",
+    "titleEs": "Gestión de reuniones profesionales: Orden del día, moderación y toma de acuerdos",
+    "subtitleAr": "افتتاح الجلسة، منح الكلمة، ضبط الوقت، وتلخيص المقررات بأسلوب تنفيذي",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يدير المتعلم اجتماع عمل بالإسبانية من الافتتاح وحتى إقرار التوصيات.",
+        "أن يوظف مصطلحات إدارة الجلسات: orden del día, ceder la palabra, someter a votación, levantar la sesión.",
+        "أن يتدخل بلباقة لضبط الوقت ومقاطعة الاسترسال الخارج عن الموضوع."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الرسمية لضبط وتوجيه الحوار في الاجتماعات",
+          "explanationAr": "1. **افتتاح الاجتماع والتعريف بالبنود**:\n- *Damos comienzo a la reunión convocada para...*\n- *El primer punto del orden del día es abordar el presupuesto anual*.\n2. **منح الكلمة وتنظيم النقاش**:\n- *Tiene la palabra el director financiero* (الكلمة للمدير المالي).\n- *Le ruego que sea conciso para ajustarnos al tiempo previsto*.\n3. **إقرار التوصيات ورفع الجلسة**:\n- *Si no hay objeciones, queda aprobado este punto*.\n- *Se levanta la sesión* (تُرفع الجلسة رسميًا)."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'جدول الأعمال' حرفياً بـ *tabla de trabajo*؛ المصطلح الرسمي المعتمد هو **el orden del día**.",
+        "استخدام أفعال دارجة غير مناسبة للاجتماع الرسمي مثل *cerrar la reunión* بدلاً من التعبير القانوني المؤسسي **levantar la sesión**."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في الاجتماع لما بنحب نقول «نبدأ الاجتماع، والكلمة دلوقتي للأستاذ فلان عشان يكلمنا عن أول بند في جدول الأعمال». بالإسبانية: Iniciamos la sesión; tiene la palabra el señor Gómez para tratar el primer punto del orden del día."
+        }
+      ],
+      "culturalNoteAr": "الاجتماعات في الشركات الإسبانية واللاتينية تتطلب موازنة بين الكفاءة الزمنية وإتاحة الفرصة لبناء التوافق الشخصي (consenso) بين الأطراف قبل اتخاذ القرار النهائي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-gestion-reuniones-orden-dia-intro",
+        "type": "explanation",
+        "titleAr": "المفردات والتراكيب القيادية في الاجتماعات",
+        "bodyAr": "أهم التراكيب التنفيذية:\n- **el orden del día**: جدول أعمال الاجتماع المعتمد مسبقاً\n- **ceder la palabra**: منح الكلمة والإذن بالحديث لأحد الحاضرين\n- **el acta de la reunión**: محضر الاجتماع الرسمي المقيد للقرارات\n- **someter a votación**: طرح المقترح للتصويت الرسمي\n- **levantar la sesión**: رفع الجلسة واختتام الاجتماع\n- **el consenso**: التوافق والإجماع العام على القرار",
+        "examples": [
+          {
+            "es": "El primer punto del orden del día es la aprobación del acta anterior.",
+            "ar": "البند الأول في جدول الأعمال هو التصديق على محضر الاجتماع السابق."
+          },
+          {
+            "es": "Cedo la palabra a nuestra directora de marketing para que exponga la campaña.",
+            "ar": "أمنح الكلمة لمديرة التسويق لتعرض الخطة الترويجية."
+          },
+          {
+            "es": "Habiéndose tratado todos los puntos, se levanta la sesión.",
+            "ar": "بعد مناقشة جميع البنود، تُرفع الجلسة رسمياً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "orden del día",
+      "ceder la palabra",
+      "acta",
+      "someter a votación",
+      "levantar la sesión",
+      "consenso"
+    ],
+    "reviewVocabulary": [
+      "reunión",
+      "empresa"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يدير المتعلم اجتماع عمل بالإسبانية من الافتتاح وحتى إقرار التوصيات.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-grm-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المؤسسي الصحيح الذي يعني جدول أعمال الاجتماع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة المهنية المعتمدة لجدول الأعمال الموزع على الحاضرين؟",
+        "stemEs": "Ruego a todos que revisen el _____ antes de comenzar los debates.",
+        "stemAr": "أرجو من الجميع مراجعة ... قبل بدء المناقشات.",
+        "options": [
+          {
+            "id": "ex-b2-grm-1_a",
+            "text": "orden del día",
+            "textAr": "جدول الأعمال الرسمي المعتمد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-grm-1_b",
+            "text": "calendario diario",
+            "textAr": "التقويم اليومي",
+            "isCorrect": false,
+            "distractorRationaleAr": "جدول الأعمال يسمى el orden del día."
+          },
+          {
+            "id": "ex-b2-grm-1_c",
+            "text": "trama",
+            "textAr": "حبكة القصة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح المؤسسي هو orden del día."
+          }
+        ],
+        "targetVocab": [
+          "orden del día",
+          "acta"
+        ],
+        "explanationAr": "el orden del día هو جدول بنود الأعمال والقضايا المطروحة للنقاش في الاجتماع.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-grm-1_a"
+          ],
+          "selectedOptionId": "ex-b2-grm-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-grm-1_b": "جدول الأعمال يسمى el orden del día.",
+          "ex-b2-grm-1_c": "المصطلح المؤسسي هو orden del día."
+        }
+      },
+      {
+        "id": "ex-b2-grm-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالوثيقة الرسمية التي تسجل مقررات الاجتماع ونقاشاته: (el _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المؤنثة مع الأداة المذكرة (el _____) التي تعني 'محضر الاجتماع الرسمي':",
+        "stemEs": "La secretaria leyó el _____ de la sesión extraordinaria para su firma.",
+        "stemAr": "تلت السكرتيرة ... الجلسة الاستثنائية لتوقيعه واعتماده.",
+        "targetVocab": [
+          "acta"
+        ],
+        "explanationAr": "el acta هي وثيقة محضر الاجتماع القانونية التي تسجل المداولات.",
+        "answerKey": {
+          "accepted": [
+            "acta"
+          ],
+          "acceptableAnswers": [
+            "acta"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-grm-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد العبارة القيادية المستخدمة لمنح الدور في الكلام لزميل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تمنح الإذن بالكلام لشخص في الاجتماع المهني؟",
+        "stemEs": "Para presentar el informe financiero, _____ al señor Rodríguez.",
+        "stemAr": "لعرض التقرير المالي، ... للسيد رودريغيز.",
+        "options": [
+          {
+            "id": "ex-b2-grm-3_a",
+            "text": "cedo la palabra",
+            "textAr": "أمنح الكلمة والإذن بالحديث (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-grm-3_b",
+            "text": "levanto la sesión",
+            "textAr": "أرفع الجلسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "إعطاء الكلمة يسمى ceder la palabra."
+          },
+          {
+            "id": "ex-b2-grm-3_c",
+            "text": "pido perdón",
+            "textAr": "أطلب العفو",
+            "isCorrect": false,
+            "distractorRationaleAr": "منح الكلمة هو ceder la palabra."
+          }
+        ],
+        "targetVocab": [
+          "ceder la palabra",
+          "orden del día"
+        ],
+        "explanationAr": "ceder la palabra تعني إعطاء الدور في الحديث للمشارك.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-grm-3_a"
+          ],
+          "selectedOptionId": "ex-b2-grm-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-grm-3_b": "إعطاء الكلمة يسمى ceder la palabra.",
+          "ex-b2-grm-3_c": "منح الكلمة هو ceder la palabra."
+        }
+      },
+      {
+        "id": "ex-b2-grm-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الرسمية لرفع الجلسة بعد استيفاء البنود",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-grm-4_t1",
+            "kind": "token",
+            "text": "Sin"
+          },
+          {
+            "id": "ex-b2-grm-4_t2",
+            "kind": "token",
+            "text": "más"
+          },
+          {
+            "id": "ex-b2-grm-4_t3",
+            "kind": "token",
+            "text": "asuntos"
+          },
+          {
+            "id": "ex-b2-grm-4_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b2-grm-4_t5",
+            "kind": "token",
+            "text": "tratar"
+          },
+          {
+            "id": "ex-b2-grm-4_t6",
+            "kind": "token",
+            "text": "se"
+          },
+          {
+            "id": "ex-b2-grm-4_t7",
+            "kind": "token",
+            "text": "levanta"
+          },
+          {
+            "id": "ex-b2-grm-4_t8",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-grm-4_t9",
+            "kind": "token",
+            "text": "sesión"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Sin más asuntos que tratar se levanta la sesión"
+          ],
+          "tokenOrder": [
+            "ex-b2-grm-4_t1",
+            "ex-b2-grm-4_t2",
+            "ex-b2-grm-4_t3",
+            "ex-b2-grm-4_t4",
+            "ex-b2-grm-4_t5",
+            "ex-b2-grm-4_t6",
+            "ex-b2-grm-4_t7",
+            "ex-b2-grm-4_t8",
+            "ex-b2-grm-4_t9"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة Sin más asuntos que tratar ثم المبني للمجهول se levanta ثم المبتدأ la sesión.",
+        "targetVocab": [
+          "levantar la sesión",
+          "acta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-grm-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لرئيس الاجتماع وحدد الإجراء الديمقراطي الذي يتخذه بشأن المقترح",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتوجيه الصوتي لرئيس مجلس الإدارة",
+        "stemEs": "Si no hay más intervenciones, procedemos a someter a votación la propuesta.",
+        "stemAr": "إذا لم تكن هناك مداخلات أخرى، سنشرع في طرح المقترح للتصويت.",
+        "options": [
+          {
+            "id": "ex-b2-grm-5_a",
+            "text": "someter a votación",
+            "textAr": "طرح المقترح للتصويت الرسمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-grm-5_b",
+            "text": "cancelar la propuesta",
+            "textAr": "إلغاء المقترح",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرئيس قال: someter a votación."
+          },
+          {
+            "id": "ex-b2-grm-5_c",
+            "text": "levantar la sesión",
+            "textAr": "رفع الجلسة فوراً",
+            "isCorrect": false,
+            "distractorRationaleAr": "الإجراء كان التصويت someter a votación."
+          }
+        ],
+        "targetVocab": [
+          "someter a votación",
+          "consenso"
+        ],
+        "explanationAr": "المتحدث قال: 'procedemos a someter a votación la propuesta'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_someter_votacion_propuesta.mp3",
+        "speechEs": "Si no hay más intervenciones, procedemos a someter a votación la propuesta.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-grm-5_a"
+          ],
+          "selectedOptionId": "ex-b2-grm-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-grm-5_b": "الرئيس قال: someter a votación.",
+          "ex-b2-grm-5_c": "الإجراء كان التصويت someter a votación."
+        }
+      },
+      {
+        "id": "ex-b2-grm-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك لإدارة الاجتماع وتأكيد التوافق التام بين الحاضرين",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بصفتك مديراً لجلسة عمل تنفيذية:",
+        "stemEs": "Me alegra constatar que hemos alcanzado un sólido consenso sobre todos los puntos del orden del día.",
+        "stemAr": "يسعدني أن أسجل أننا توصلنا إلى توافق صلب بشأن جميع بنود جدول الأعمال.",
+        "audioKey": "pending/b2_solido_consenso_orden_dia.mp3",
+        "targetVocab": [
+          "consenso",
+          "orden del día",
+          "ceder la palabra"
+        ],
+        "explanationAr": "انتبه لنطق consenso و orden del día بلهجة تنفيذية قيادية واثقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_solido_consenso_orden_dia.mp3",
+          "modelAnswer": "Me alegra constatar que hemos alcanzado un sólido consenso sobre todos los puntos del orden del día."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

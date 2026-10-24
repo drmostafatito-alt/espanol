@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-necesitar",
+    "titleAr": "التعبير عن الحاجة والرغبة: استخدام Necesitar و Querer للتسوق",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u5-shopping",
+    "objectiveAr": "أن يعبّر المتعلم عن حاجته لشراء ملابس أو أغراض مستخدماً necesito / quiero مع الأسماء والمصادر بدقة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "newVocabulary": [
+      "necesitar",
+      "querer",
+      "comprar",
+      "ropa",
+      "camisa",
+      "pantalón",
+      "zapato"
+    ],
+    "reviewVocabulary": [
+      "bueno",
+      "dos",
+      "tres"
+    ],
+    "targetStructures": [
+      "Necesito comprar ropa de invierno.",
+      "Quiero ver esa camisa, por favor.",
+      "¿Qué necesita usted?"
+    ],
+    "grammarTopics": [
+      "verbo-necesitar-presente",
+      "verbo-querer-irregular",
+      "verbo-mas-infinitivo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "طارق في مركز تجاري في مدريد يبحث عن معطف شتوي ويشرح للبائع ما يحتاجه.",
+        "settingAr": "قسم الملابس الرجالية في متجر كبير",
+        "lines": [
+          {
+            "es": "¡Hola! ¿Le puedo ayudar en algo?",
+            "ar": "مرحباً! هل يمكنني مساعدتك في شيء؟",
+            "arEg": "أهلاً! أقدر أساعد حضرتك في حاجة؟",
+            "audioKey": "pending/a1-nec-sc-1"
+          },
+          {
+            "es": "Sí, gracias. Necesito un abrigo caliente para el invierno.",
+            "ar": "نعم، شكراً. أحتاج معطفاً دافئاً للشتاء.",
+            "arEg": "أيوه شكراً. محتاج بالطو دافي للشتا.",
+            "audioKey": "pending/a1-nec-sc-2"
+          },
+          {
+            "es": "¿Prefiere algún color en particular?",
+            "ar": "هل تفضل لوناً معيناً؟",
+            "arEg": "تفضل لون معين؟",
+            "audioKey": "pending/a1-nec-sc-3"
+          },
+          {
+            "es": "Quiero ver los modelos en color negro o azul oscuro.",
+            "ar": "أريد رؤية الموديلات باللون الأسود أو الأزرق الداكن.",
+            "arEg": "عايز أشوف الموديلات اللي بالأسود أو الكحلي.",
+            "audioKey": "pending/a1-nec-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الفعل necesitar يدل على الحاجة والضرورة، بينما querer يدل على الرغبة والإرادة. في المتاجر، كلاهما شائع ومقبول جداً عند التحدث مع البائع.",
+    "pedagogicalRationaleAr": "الفعل necesitar منتظم تماماً (necesito, necesitas, necesita)، بينما querer فعل غير منتظم يحدث فيه تبادل حرفي (e -> ie): quiero, quieres, quiere. يجب تثبيت تصريف quiero للمتكلم.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_nec_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ماذا يحتاج المشتري.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً لكلام المشتري:",
+        "stemEs": "Hola, buenos días. Necesito unos pantalones cómodos para viajar.",
+        "stemAr": "مرحباً، صباح الخير. أحتاج بنطالاً مريحاً للسفر.",
+        "options": [
+          {
+            "id": "a1_nec_1_a",
+            "text": "Unos pantalones",
+            "textAr": "بنطال مريح",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_nec_1_b",
+            "text": "Una camisa blanca",
+            "textAr": "قميص أبيض",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر pantalones وليس camisa."
+          },
+          {
+            "id": "a1_nec_1_c",
+            "text": "Unos zapatos de fiesta",
+            "textAr": "حذاء سهرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يذكر المتحدث الأحذية إطلاقاً."
+          }
+        ],
+        "targetVocab": [
+          "necesitar",
+          "pantalón",
+          "ropa"
+        ],
+        "explanationAr": "المشتري قال بوضوح: Necesito unos pantalones.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-nec-ex-1",
+        "speechEs": "Hola, buenos días. Necesito unos pantalones cómodos para viajar.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_nec_1_a"
+          ],
+          "selectedOptionId": "a1_nec_1_a"
+        },
+        "errorFeedback": {
+          "a1_nec_1_b": "الصوت ذكر pantalones وليس camisa.",
+          "a1_nec_1_c": "لم يذكر المتحدث الأحذية إطلاقاً."
+        }
+      },
+      {
+        "id": "a1_nec_2_verb_querer",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر تصريف الفعل querer المناسب لضمير المتكلم (yo).",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تقول: «أنا أريد شراء هذا القميص»؟",
+        "stemEs": "Yo ____ comprar esta camisa.",
+        "stemAr": "أنا ____ شراء هذا القميص.",
+        "options": [
+          {
+            "id": "a1_nec_2_a",
+            "text": "quiero",
+            "textAr": "أريد (تصريف المتكلم الصحيح)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_nec_2_b",
+            "text": "quere",
+            "textAr": "تصريف غير موجود",
+            "isCorrect": false,
+            "distractorRationaleAr": "فعل querer غير منتظم ويتحول إلى quiero مع yo."
+          },
+          {
+            "id": "a1_nec_2_c",
+            "text": "quieren",
+            "textAr": "هم يريدون",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا تصريف ضمير الغائب الجمع ellos/ellas."
+          }
+        ],
+        "targetVocab": [
+          "querer",
+          "comprar",
+          "camisa"
+        ],
+        "explanationAr": "تصريف الفعل querer مع ضمير المتكلم هو: Yo quiero.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_nec_2_a"
+          ],
+          "selectedOptionId": "a1_nec_2_a"
+        },
+        "errorFeedback": {
+          "a1_nec_2_b": "فعل querer غير منتظم ويتحول إلى quiero مع yo.",
+          "a1_nec_2_c": "هذا تصريف ضمير الغائب الجمع ellos/ellas."
+        }
+      },
+      {
+        "id": "a1_nec_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بتصريف فعل necesitar مع ضمير المتكلم.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة (necesito) في الفراغ:",
+        "stemEs": "Hoy ____ comprar zapatos nuevos.",
+        "stemAr": "اليوم ____ شراء حذاء جديد.",
+        "targetVocab": [
+          "necesitar",
+          "comprar",
+          "zapato"
+        ],
+        "explanationAr": "تصريف الفعل المنتظم necesitar مع المتكلم هو: necesito.",
+        "answerKey": {
+          "accepted": [
+            "necesito"
+          ],
+          "acceptableAnswers": [
+            "necesito"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_nec_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات للتعبير عن الرغبة في الشراء.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_nec_4_order_t1",
+            "kind": "token",
+            "text": "Quiero"
+          },
+          {
+            "id": "a1_nec_4_order_t2",
+            "kind": "token",
+            "text": "comprar"
+          },
+          {
+            "id": "a1_nec_4_order_t3",
+            "kind": "token",
+            "text": "ropa"
+          },
+          {
+            "id": "a1_nec_4_order_t4",
+            "kind": "token",
+            "text": "nueva."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero comprar ropa nueva."
+          ],
+          "tokenOrder": [
+            "a1_nec_4_order_t1",
+            "a1_nec_4_order_t2",
+            "a1_nec_4_order_t3",
+            "a1_nec_4_order_t4"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل المصرف Quiero + المصدر comprar + المفعول به ropa nueva.",
+        "targetVocab": [
+          "querer",
+          "comprar",
+          "ropa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_nec_5_infinitive",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي الصيغة الصحيحة للفعل الذي يأتي بعد necesito؟",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "بعد الفعل المصرف، يأتي الفعل الثاني في صيغة:",
+        "stemEs": "Necesito ____ esta camisa.",
+        "stemAr": "أحتاج ____ هذا القميص.",
+        "options": [
+          {
+            "id": "a1_nec_5_a",
+            "text": "cambiar",
+            "textAr": "المصدر (بدون تصريف)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_nec_5_b",
+            "text": "cambio",
+            "textAr": "مصرف مع yo",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: في الإسبانية لا نصرف فعلين متتاليين لنفس الفاعل، بل يأتي الثاني في المصدر."
+          },
+          {
+            "id": "a1_nec_5_c",
+            "text": "cambias",
+            "textAr": "مصرف مع tú",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: الفعل الثاني يجب أن يكون في المصدر."
+          }
+        ],
+        "targetVocab": [
+          "necesitar",
+          "camisa"
+        ],
+        "explanationAr": "القاعدة الذهبية: فعل مصرف + فعل في المصدر (Necesito cambiar...).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_nec_5_a"
+          ],
+          "selectedOptionId": "a1_nec_5_a"
+        },
+        "errorFeedback": {
+          "a1_nec_5_b": "خطأ: في الإسبانية لا نصرف فعلين متتاليين لنفس الفاعل، بل يأتي الثاني في المصدر.",
+          "a1_nec_5_c": "خطأ: الفعل الثاني يجب أن يكون في المصدر."
+        }
+      },
+      {
+        "id": "a1_nec_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة التعبير عن الحاجة للشراء بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح:",
+        "stemEs": "Necesito comprar un pantalón negro para el trabajo.",
+        "stemAr": "أحتاج شراء بنطال أسود للعمل.",
+        "audioKey": "pending/a1-nec-ex-6",
+        "targetVocab": [
+          "necesitar",
+          "comprar",
+          "pantalón"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في ne-ce-SI-to ونطق التنوين الصوتي في pan-ta-LÓN.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-nec-ex-6",
+          "modelAnswer": "Necesito comprar un pantalón negro para el trabajo."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

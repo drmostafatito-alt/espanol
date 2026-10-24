@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-subjuntivo-sentimientos",
+    "unitSlug": "b1-u9-relationships",
+    "levelCode": "B1",
+    "titleAr": "المنصوب مع أفعال المشاعر والعواطف: Me alegra que و Temo que و Me da pena que",
+    "titleEs": "El subjuntivo con verbos de sentimiento, emoción y temor",
+    "subtitleAr": "التعبير عن الفرح والحزن والخوف والدهشة تجاه تصرفات الآخرين",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية بعد أفعال وعبارات المشاعر والعواطف.",
+        "أن يعبر عن الفرح (me alegra que)، والحزن (me entristece que / me da pena que)، والخوف (temo que).",
+        "أن يفرق بدقة بين استخدام المصدر (عند وحدة الفاعل) واستخدام المنصوب (عند اختلاف الفاعل)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قاعدة المنصوب مع أفعال المشاعر والعاطفة",
+          "explanationAr": "عندما نعبر عن مشاعرنا تجاه حدث يقوم به فاعل آخر، نستخدم **que + المنصوب (Subjuntivo)** حتماً:\n1. **أفعال الفرح والرضا**:\n- **Me alegra que** hayas aprobado el examen (يسعدني أنك نجحت في الامتحان).\n- **Me encanta que** vengas a visitarme.\n2. **أفعال الحزن والأسف**:\n- **Me da pena / lástima que** no puedas venir a la boda (يؤسفني ويحزنني ألا تتمكن من الحضور).\n- **Siento mucho que** estés enfermo.\n3. **أفعال الخوف والخشية**:\n- **Temo que / Tengo miedo de que** llueva mañana (أخشى أن تمطر غداً).\n4. **القاعدة الحاكمة للمصدر**:\n- إذا كان الفاعل واحداً، نستخدم **المصدر** فقط بدون que:\n  * Me alegro de **estar** aquí (أنا فاعل الفرح وأنا الحاضر).\n  * Me alegra que **estés** aquí (أنا فرح بحضورك أنت)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد me alegra que (الخطأ الشائع: *Me alegra que vienes*؛ الصواب: Me alegra que vengas بالمنصوب).",
+        "وضع que عندما يكون الفاعل هو نفسه (الخطأ: *Me alegro que yo voy*؛ الصواب: Me alegro de ir بالمصدر)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «فرحان أوي إنك جيت، وزعلان إنك ماشي بدري، وخايف الجو يمطر». بالإسبانية: Me alegra que hayas venido, me da pena que te vayas y temo que llueva."
+        }
+      ],
+      "culturalNoteAr": "الإسبان شعب عاطفي واجتماعي جداً، وتعبيرات مثل '¡Me alegro un montón de que...!' أو '¡Qué pena que...!' تتردد باستمرار في التفاعل اليومي الصادق."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-subjuntivo-sentimientos-intro",
+        "type": "explanation",
+        "titleAr": "تراكيب التعبير عن المشاعر العاطفية",
+        "bodyAr": "أهم التراكيب:\n- **me alegra que**: يسعدني ويفرحني أن (+ منصُوب)\n- **me da pena que**: يؤسفني ويحزنني أن (+ منصُوب)\n- **temo que**: أخشى وأخاف أن (+ منصُوب)\n- **me sorprende que**: يدهشني ويثير تعجبي أن (+ منصُوب)\n- **el sentimiento**: الشعور أو الإحساس العاطفي\n- **la emoción**: العاطفة والانفعال الإيجابي",
+        "examples": [
+          {
+            "es": "Me alegra que compartas tus éxitos con nosotros.",
+            "ar": "يسعدني أن تشارك نجاحاتك معنا (المنصوب: compartas)."
+          },
+          {
+            "es": "Me da pena que tengamos que despedirnos tan pronto.",
+            "ar": "يحزنني أن نضطر للوداع بهذه السرعة (المنصوب: tengamos)."
+          },
+          {
+            "es": "Temo que los billetes se agoten antes de comprarlos.",
+            "ar": "أخشى أن تنفد التذاكر قبل أن نشتريها (المنصوب: se agoten)."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "me alegra que",
+      "me da pena que",
+      "temo que",
+      "me sorprende que",
+      "sentimiento",
+      "emoción"
+    ],
+    "reviewVocabulary": [
+      "feliz",
+      "miedo"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية بعد أفعال وعبارات المشاعر والعواطف.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-sen-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب الصحيحة بعد تعبير الفرح me alegra que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تصريف لفعل conseguir نستخدم بعد عبارة المشاعر Me alegra que؟",
+        "stemEs": "Me alegra mucho que tú _____ ese puesto de trabajo tan deseado.",
+        "stemAr": "يسعدني كثيراً أن ... على ذلك المنصب الوظيفي المنشود.",
+        "options": [
+          {
+            "id": "ex-b1-sen-1_a",
+            "text": "consigas",
+            "textAr": "صيغة المنصوب مع tú (الصواب بعد me alegra que)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-sen-1_b",
+            "text": "consigues",
+            "textAr": "مضارع إخباري لا يصح بعد أفعال المشاعر",
+            "isCorrect": false,
+            "distractorRationaleAr": "تراكيب المشاعر والعواطف تفرض صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b1-sen-1_c",
+            "text": "conseguir",
+            "textAr": "مصدر لا يناسب وجود الفاعل tú",
+            "isCorrect": false,
+            "distractorRationaleAr": "لاختلاف الفاعل يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "me alegra que",
+          "sentimiento"
+        ],
+        "explanationAr": "بعد عبارات المشاعر والفرح me alegra que نستخدم دائماً المنصوب: me alegra que consigas.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-sen-1_a"
+          ],
+          "selectedOptionId": "ex-b1-sen-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-sen-1_b": "تراكيب المشاعر والعواطف تفرض صيغة المنصوب Subjuntivo.",
+          "ex-b1-sen-1_c": "لاختلاف الفاعل يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b1-sen-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل poder بالمنصوب المخاطب بعد me da pena que: (puedas)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة المنصوب من الفعل poder مع tú بعد me da pena que: (puedas)",
+        "stemEs": "Me da mucha pena que no _____ venir con nosotros al concierto.",
+        "stemAr": "يؤسفني كثيراً ألا تتمكن من القدوم معنا إلى الحفل الموسيقي.",
+        "targetVocab": [
+          "me da pena que"
+        ],
+        "explanationAr": "بعد me da pena que يأتي الفعل في صيغة المنصوب: puedas.",
+        "answerKey": {
+          "accepted": [
+            "puedas"
+          ],
+          "acceptableAnswers": [
+            "puedas"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-sen-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التعبير الدال على الخوف والخشية من وقوع أمر سلبي",
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي تعبير يدل على الخشية والتوجس متبوعاً بالمنصوب؟",
+        "stemEs": "_____ que el mal tiempo arruine nuestras vacaciones en la playa.",
+        "stemAr": "... أن يفسد الطقس السيئ عطلتنا على الشاطئ.",
+        "options": [
+          {
+            "id": "ex-b1-sen-3_a",
+            "text": "Temo que",
+            "textAr": "أخشى أن (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-sen-3_b",
+            "text": "Me alegra que",
+            "textAr": "يسعدني أن (معنى متناقض)",
+            "isCorrect": false,
+            "distractorRationaleAr": "فساد العطلة أمر مؤسف يثير الخشية (temo que)."
+          },
+          {
+            "id": "ex-b1-sen-3_c",
+            "text": "Es seguro que",
+            "textAr": "من المؤكد أن (تأخذ إخبارياً)",
+            "isCorrect": false,
+            "distractorRationaleAr": "السياق يدل على التوجس والخشية من الاحتمال."
+          }
+        ],
+        "targetVocab": [
+          "temo que",
+          "me alegra que",
+          "miedo"
+        ],
+        "explanationAr": "Temo que تعني أخشى أو أخاف أن، وتأخذ دائماً صيغة المنصوب: temo que arruine.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-sen-3_a"
+          ],
+          "selectedOptionId": "ex-b1-sen-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-sen-3_b": "فساد العطلة أمر مؤسف يثير الخشية (temo que).",
+          "ex-b1-sen-3_c": "السياق يدل على التوجس والخشية من الاحتمال."
+        }
+      },
+      {
+        "id": "ex-b1-sen-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن الدهشة والتعجب بالمنصوب",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-sen-4_t1",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "ex-b1-sen-4_t2",
+            "kind": "token",
+            "text": "sorprende"
+          },
+          {
+            "id": "ex-b1-sen-4_t3",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b1-sen-4_t4",
+            "kind": "token",
+            "text": "hables"
+          },
+          {
+            "id": "ex-b1-sen-4_t5",
+            "kind": "token",
+            "text": "español"
+          },
+          {
+            "id": "ex-b1-sen-4_t6",
+            "kind": "token",
+            "text": "tan"
+          },
+          {
+            "id": "ex-b1-sen-4_t7",
+            "kind": "token",
+            "text": "bien"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me sorprende que hables español tan bien"
+          ],
+          "tokenOrder": [
+            "ex-b1-sen-4_t1",
+            "ex-b1-sen-4_t2",
+            "ex-b1-sen-4_t3",
+            "ex-b1-sen-4_t4",
+            "ex-b1-sen-4_t5",
+            "ex-b1-sen-4_t6",
+            "ex-b1-sen-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: عبارة الدهشة Me sorprende que ثم المنصوب hables ثم español tan bien.",
+        "targetVocab": [
+          "me sorprende que",
+          "emoción"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-sen-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الشعور العاطفي الذي يعبر عنه المتحدث",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لرد فعل المتحدث عند سماع خبر ترقية صديقه",
+        "stemEs": "¡Qué alegría! Me alegra que hayas alcanzado tu sueño profesional.",
+        "stemAr": "يا لها من فرحة! يسعدني أنك بلغت حلمك المهني.",
+        "options": [
+          {
+            "id": "ex-b1-sen-5_a",
+            "text": "me alegra que",
+            "textAr": "تعبير عن الفرح والسرور بالمنصوب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-sen-5_b",
+            "text": "temo que",
+            "textAr": "خشية وخوف",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يعبر عن الفرح والتهنئة (Me alegra que)."
+          },
+          {
+            "id": "ex-b1-sen-5_c",
+            "text": "me da pena que",
+            "textAr": "حزن وأسف",
+            "isCorrect": false,
+            "distractorRationaleAr": "السياق تهنئة حارة على النجاح."
+          }
+        ],
+        "targetVocab": [
+          "me alegra que",
+          "temo que",
+          "me da pena que",
+          "feliz"
+        ],
+        "explanationAr": "المتحدث قال بحماس: 'Me alegra que hayas alcanzado tu sueño'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_alegra_alcanzado_sueno.mp3",
+        "speechEs": "¡Qué alegría! Me alegra que hayas alcanzado tu sueño profesional.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-sen-5_a"
+          ],
+          "selectedOptionId": "ex-b1-sen-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-sen-5_b": "المتحدث يعبر عن الفرح والتهنئة (Me alegra que).",
+          "ex-b1-sen-5_c": "السياق تهنئة حارة على النجاح."
+        }
+      },
+      {
+        "id": "ex-b1-sen-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق تهنئتك الدافئة لصديقك بالمنصوب",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بابتسامة ونبرة فرح واضحة لصديقك:",
+        "stemEs": "Me alegra mucho que todo te vaya tan bien en tu nueva vida.",
+        "stemAr": "يسعدني كثيراً أن كل شيء يسير معك على نحو ممتاز في حياتك الجديدة.",
+        "audioKey": "pending/b1_alegra_todo_vaya_bien.mp3",
+        "targetVocab": [
+          "me alegra que",
+          "sentimiento"
+        ],
+        "explanationAr": "انتبه لنطق صيغة المنصوب vaya كـ بايا مرققة ونبرة الصوت الإيجابية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_alegra_todo_vaya_bien.mp3",
+          "modelAnswer": "Me alegra mucho que todo te vaya tan bien en tu nueva vida."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-clausulas-compromiso",
+    "titleAr": "الشروط التعاقدية والتزامات حسن النية: Cláusulas y buena fe contractual",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u7-complex-negotiation",
+    "objectiveAr": "أن يصيغ المتعلم بنود المسؤولية المدنية والشرط الجزائي وحالات القوة القاهرة مع استحضار مبدأ حسن النية (buena fe, cláusula penal, fuerza mayor).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "penal",
+      "mayor",
+      "dolo",
+      "fortuito",
+      "eximir",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "El principio rector de la buena fe contractual en la interpretación de los pactos",
+      "La cláusula penal indemnizatoria frente al retraso en las entregas",
+      "Exoneración de responsabilidad: caso fortuito y fuerza mayor sobrevenida",
+      "La tipificación del dolo y la culpa grave frente a la negligencia simple"
+    ],
+    "grammarTopics": [
+      "derecho-de-obligaciones-c1",
+      "redaccion-de-clausulas-criticas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مفاوضات نهائية بين بنك استثماري وشركة إنشاءات لإبرام عقد تمويل مشروع بنية تحتية.",
+        "settingAr": "قاعة الاجتماعات التنفيذية، برج كاستيانا، مدريد",
+        "lines": [
+          {
+            "es": "Los contratos deben ejecutarse siempre al amparo del principio universal de la buena fe.",
+            "ar": "يجب أن تنفذ العقود دائماً في ظل ومقتضى المبدأ الكوني الراسخ لحسن النية ونقاء السريرة التعاقدية.",
+            "arEg": "العقود لازم تتنفذ من أولها لآخرها على أساس النية الصافية وحسن النية اللي بيفرضه القانون.",
+            "audioKey": "pending/c1-u7-cla-1"
+          },
+          {
+            "es": "Exigimos la inclusión de una cláusula penal estricta por cada semana de demora injustificada.",
+            "ar": "نحن نطالب بإدراج شرط جزائي صارم يفرض غرامة عن كل أسبوع تأخير غير مبرر في تسليم المشروع.",
+            "arEg": "إحنا مصممين نحط شرط جزائي صارم وغرامة محسوبة عن كل أسبوع تأخير من غير عذر رسمي.",
+            "audioKey": "pending/c1-u7-cla-2"
+          },
+          {
+            "es": "Únicamente supuestos demostrables de fuerza mayor o caso fortuito podrán eximir del pago.",
+            "ar": "فقط الحالات المثبتة للقوة القاهرة أو الحادث الفجائي غير المتوقع هي ما يمكن أن تعفي من أداء الغرامة.",
+            "arEg": "حالات القوة القاهرة بس والظروف الطارئة اللي خارجة عن الإرادة هي اللي هتعفي من دفع الغرامة.",
+            "audioKey": "pending/c1-u7-cla-3"
+          },
+          {
+            "es": "Queda expresamente estipulado que la existencia de dolo anulará cualquier limitación de responsabilidad.",
+            "ar": "تم النص صراحة على أن ثبوت القصد الاحتيالي وسوء النية يبطل أي سقف محدد للمسؤولية القانونية.",
+            "arEg": "مكتوب صراحة وبنص قاطع إن ثبوت الغش وسوء النية بيلغي أي إعفاء أو حماية للمتسبب.",
+            "audioKey": "pending/c1-u7-cla-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-ccp-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى المستشار المالي وحدد الشرط التعاقدي الذي طالب بإدراجه لضمان الالتزام بالمواعيد بدقة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو البند التعاقدي المخصص لفرض تعويض مالي محدد مسبقاً عن التأخير؟",
+        "stemEs": "Exigimos la inclusión de una cláusula penal estricta por cada semana de demora injustificada.",
+        "stemAr": "نحن نطالب بإدراج شرط جزائي صارم يفرض غرامة عن كل أسبوع تأخير غير مبرر في تسليم المشروع.",
+        "options": [
+          {
+            "id": "ex-c1-ccp-1_a",
+            "text": "Una cláusula penal",
+            "textAr": "شرط جزائي محدد لتقدير التعويض سلفاً عند التأخير",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccp-1_b",
+            "text": "Una cláusula de amistad",
+            "textAr": "بند صداقة ومجاملة شخصية بين المديرين",
+            "isCorrect": false,
+            "distractorRationaleAr": "العقود التزامات مالية ملزمة وليست صداقات."
+          },
+          {
+            "id": "ex-c1-ccp-1_c",
+            "text": "Una cláusula de turismo",
+            "textAr": "بند لترتيب رحلات سياحية مجانية",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج نطاق عقود التشييد والبنية التحتية."
+          }
+        ],
+        "targetVocab": [
+          "penal",
+          "rigor"
+        ],
+        "explanationAr": "«La cláusula penal» (الشرط الجزائي) هو اتفاق تعاقدي يحدد مسبقاً مبلغ التعويض الواجب دفعه في حال التأخر أو عدم التنفيذ درءاً لتعقيد إثبات الضرر.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u7-cla-2",
+        "speechEs": "Exigimos la inclusión de una cláusula penal estricta por cada semana de demora injustificada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccp-1_a"
+          ],
+          "selectedOptionId": "ex-c1-ccp-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccp-1_b": "العقود التزامات مالية ملزمة وليست صداقات.",
+          "ex-c1-ccp-1_c": "خارج نطاق عقود التشييد والبنية التحتية."
+        }
+      },
+      {
+        "id": "ex-c1-ccp-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي العبارة القانونية الدالة على «الظرف القاهر الخارجي الخارج عن إرادة المتعاقد والذي يستحيل دفعه»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المصطلح القانوني الدال على الظرف الطارئ المعفي من المسؤولية:",
+        "stemEs": "El derrumbe fue calificado jurídicamente como causa de ____ imprevisible e inevitable.",
+        "stemAr": "وُصف الانهيار الصخري قانونياً بأنه ناشئ عن قوة قاهرة يستحيل التنبؤ بها أو دفعها.",
+        "options": [
+          {
+            "id": "ex-c1-ccp-2_a",
+            "text": "fuerza mayor",
+            "textAr": "قوة قاهرة وظرف طارئ يعفي من المسؤولية لعدم إمكان توقعه",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccp-2_b",
+            "text": "mala voluntad",
+            "textAr": "سوء نية وتعمد الإضرار بالمشروع",
+            "isCorrect": false,
+            "distractorRationaleAr": "يرتب المسؤولية والتعويض المشدد."
+          },
+          {
+            "id": "ex-c1-ccp-2_c",
+            "text": "pereza mental",
+            "textAr": "كسل فكري وإهمال مهني عادي",
+            "isCorrect": false,
+            "distractorRationaleAr": "إهمال موجب للمسؤولية."
+          }
+        ],
+        "targetVocab": [
+          "mayor",
+          "rigor"
+        ],
+        "explanationAr": "«Fuerza mayor» (القوة القاهرة) في القانون المدني حدث خارجي لا يد لأحد فيه ولا يمكن تفاديه (كالزلازل والحروب) ويعفي المدين من التعويض.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccp-2_a"
+          ],
+          "selectedOptionId": "ex-c1-ccp-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccp-2_b": "يرتب المسؤولية والتعويض المشدد.",
+          "ex-c1-ccp-2_c": "إهمال موجب للمسؤولية."
+        }
+      },
+      {
+        "id": "ex-c1-ccp-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح القانوني الدال على نية الغش والإضرار المتعمد بالطرف الآخر: «actuar con ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة القانونية اللاتينية الدالة على القصد الجنائي والاحتيال المدني:",
+        "stemEs": "Si la empresa actuó con ____ probado, deberá abonar la totalidad de las pérdidas.",
+        "stemAr": "إذا ثبت أن الشركة تصرفت بسوء نية وقصد احتيالي متعمد، تعين عليها تعويض كامل الخسائر.",
+        "targetVocab": [
+          "dolo"
+        ],
+        "explanationAr": "«El dolo» في القانون هو أعلى درجات الخطأ والمسؤولية، ويعني تعمد الإخلال بالالتزام وإلحاق الضرر بالغير عن دراية وإرادة خبيثة.",
+        "answerKey": {
+          "accepted": [
+            "dolo"
+          ],
+          "acceptableAnswers": [
+            "dolo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ccp-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما الفعل القانوني الذي يفيد «رفع المسؤولية والالتزام عن كاهل الشخص وإبراء ذمته»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل الدال على الإعفاء والإبراء من الالتزام المالي:",
+        "stemEs": "El certificado médico sirvió para ____ al empleado del cumplimiento del plazo.",
+        "stemAr": "كانت الشهادة الطبية الرسمية مسوغاً لإعفاء الموظف وإبراء ذمته من التقيد بالموعد.",
+        "options": [
+          {
+            "id": "ex-c1-ccp-4_a",
+            "text": "eximir",
+            "textAr": "إعفاء وإبراء الذمة من المسؤولية أو الغرامة",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-ccp-4_b",
+            "text": "acusar",
+            "textAr": "توجيه الاتهام الجنائي في المحكمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس الإعفاء تماماً."
+          },
+          {
+            "id": "ex-c1-ccp-4_c",
+            "text": "obligar",
+            "textAr": "إلزام وإجبار الشخص على الدفع",
+            "isCorrect": false,
+            "distractorRationaleAr": "يفرض الالتزام ولا يعفي منه."
+          }
+        ],
+        "targetVocab": [
+          "eximir",
+          "rigor"
+        ],
+        "explanationAr": "يقال «eximir de responsabilidad / eximir del pago» بمعنى التحرير القانوني من عبء الالتزام لوجود مسوغ شرعي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-ccp-4_a"
+          ],
+          "selectedOptionId": "ex-c1-ccp-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-ccp-4_b": "عكس الإعفاء تماماً.",
+          "ex-c1-ccp-4_c": "يفرض الالتزام ولا يعفي منه."
+        }
+      },
+      {
+        "id": "ex-c1-ccp-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء مبدأ قانوني يعفي المدين في حالات القوة القاهرة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-ccp-5_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-c1-ccp-5_t2",
+            "kind": "token",
+            "text": "fuerza"
+          },
+          {
+            "id": "ex-c1-ccp-5_t3",
+            "kind": "token",
+            "text": "mayor"
+          },
+          {
+            "id": "ex-c1-ccp-5_t4",
+            "kind": "token",
+            "text": "exime"
+          },
+          {
+            "id": "ex-c1-ccp-5_t5",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-c1-ccp-5_t6",
+            "kind": "token",
+            "text": "responsabilidad"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La fuerza mayor exime de responsabilidad"
+          ],
+          "tokenOrder": [
+            "ex-c1-ccp-5_t1",
+            "ex-c1-ccp-5_t2",
+            "ex-c1-ccp-5_t3",
+            "ex-c1-ccp-5_t4",
+            "ex-c1-ccp-5_t5",
+            "ex-c1-ccp-5_t6"
+          ]
+        },
+        "explanationAr": "المبتدأ La fuerza mayor يليه الفعل المتعدي exime وحرف الجر de والمفعول المجرور responsabilidad.",
+        "targetVocab": [
+          "mayor",
+          "eximir"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-ccp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة محامٍ خبير يضع شروط التعاقد بمنتهى الرصانة والوضوح.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الجزالة القانونية للألفاظ:",
+        "stemEs": "Pactamos una cláusula penal en caso de demora.",
+        "stemAr": "اتفقنا على تضمين شرط جزائي صارم في حال التأخر عن التسليم.",
+        "audioKey": "pending/c1-u7-cla-spk",
+        "targetVocab": [
+          "penal",
+          "rigor"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة cláusula على المقطع الأول ونطق حرف p في pactamos بصفاء غير مجهور.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u7-cla-spk",
+          "modelAnswer": "Pactamos una cláusula penal en caso de demora."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

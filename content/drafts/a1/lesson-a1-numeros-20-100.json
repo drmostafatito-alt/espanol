@@ -1,0 +1,375 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-numeros-20-100",
+    "titleAr": "الأرقام من 20 إلى 100: تركيب الأعداد والأسعار البسيطة",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u3-numbers-time",
+    "objectiveAr": "أن يقرأ المتعلم ويكتب الأرقام من 20 إلى 100، مع إتقان دمج العشرينيات ككلمة واحدة (veinticinco) وفصل ما بعدها بحرف العطف y (treinta y uno) وفهم الأسعار البسيطة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "veinte",
+      "treinta",
+      "cuarenta",
+      "cincuenta",
+      "sesenta",
+      "setenta",
+      "ochenta",
+      "noventa",
+      "cien",
+      "euro"
+    ],
+    "reviewVocabulary": [
+      "uno",
+      "dos",
+      "tres",
+      "cuatro",
+      "cinco"
+    ],
+    "targetStructures": [
+      "¿Cuánto cuesta? — Cuesta treinta y cinco euros.",
+      "Tengo veinticinco euros.",
+      "El billete cuesta cuarenta euros."
+    ],
+    "grammarTopics": [
+      "numeros-cardinales-20-100",
+      "grafia-veinti",
+      "conector-y-numeros"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أحمد في مكتبة بمدريد يسأل البائع عن أسعار الكتب والدفاتر بالأرقام الإسبانية.",
+        "settingAr": "مكتبة لبيع الكتب في وسط المدينة",
+        "lines": [
+          {
+            "es": "Buenos días, ¿cuánto cuesta este libro de español?",
+            "ar": "صباح الخير، كم يبلغ سعر كتاب اللغة الإسبانية هذا؟",
+            "arEg": "صباح الخير، بكام كتاب الإسباني ده؟",
+            "audioKey": "pending/a1-num-sc-1"
+          },
+          {
+            "es": "Cuesta veinticinco euros.",
+            "ar": "سعره خمسة وعشرون يورو.",
+            "arEg": "سعره خمسة وعشرين يورو.",
+            "audioKey": "pending/a1-num-sc-2"
+          },
+          {
+            "es": "¿Y ese diccionario grande?",
+            "ar": "وماذا عن ذلك القاموس الكبير؟",
+            "arEg": "وده بكام، القاموس الكبير ده؟",
+            "audioKey": "pending/a1-num-sc-3"
+          },
+          {
+            "es": "Ese cuesta cuarenta y cinco euros.",
+            "ar": "ذاك سعره خمسة وأربعون يورو.",
+            "arEg": "ده سعره خمسة وأربعين يورو.",
+            "audioKey": "pending/a1-num-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا والاتحاد الأوروبي العملة الرسمية هي اليورو (euro). تذكر أن الأعداد من 16 إلى 29 تُكتب كلمة واحدة متصلة (مثل: veintidós, veinticinco)، بينما من 31 فصاعداً يُفصل بين العشرات والآحاد بحرف y (مثل: treinta y uno).",
+    "pedagogicalRationaleAr": "المتعلم العربي معتاد على تقديم الآحاد على العشرات في لغته (خمسة وعشرون)، بينما في الإسبانية تُذكر العشرات أولاً ثم الآحاد (treinta y cinco). كما يكثر الخلط الإملائي بكتابة 'veinte y uno' بدلاً من الصيغة المدمجة المعيارية 'veintiuno'.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_num_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى السعر وحدد الرقم الصحيح المذكور.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً إلى البائع وهو يذكر سعر الكتاب:",
+        "stemEs": "El libro de gramática cuesta treinta y cinco euros.",
+        "stemAr": "كتاب القواعد سعره خمسة وثلاثون يورو.",
+        "options": [
+          {
+            "id": "a1_num_1_a",
+            "text": "Treinta y cinco euros",
+            "textAr": "35 يورو",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_num_1_b",
+            "text": "Cincuenta y tres euros",
+            "textAr": "53 يورو",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا الرقم 53 (cincuenta y tres)، عكست الآحاد والعشرات."
+          },
+          {
+            "id": "a1_num_1_c",
+            "text": "Veinticinco euros",
+            "textAr": "25 يورو",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا الرقم 25 (veinticinco)، والمطلوب 35."
+          }
+        ],
+        "targetVocab": [
+          "treinta",
+          "cinco",
+          "euro"
+        ],
+        "explanationAr": "نطق البائع treinta y cinco euros أي 35 يورو. لاحظ تقديم العشرات على الآحاد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-num-ex-1",
+        "speechEs": "El libro de gramática cuesta treinta y cinco euros.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_num_1_a"
+          ],
+          "selectedOptionId": "a1_num_1_a"
+        },
+        "errorFeedback": {
+          "a1_num_1_b": "هذا الرقم 53 (cincuenta y tres)، عكست الآحاد والعشرات.",
+          "a1_num_1_c": "هذا الرقم 25 (veinticinco)، والمطلوب 35."
+        }
+      },
+      {
+        "id": "a1_num_2_orthography",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الإملاء الإسباني الصحيح للرقم 24.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي من الخيارات التالية يمثل الكتابة المعيارية للرقم 24 في الإسبانية؟",
+        "stemEs": "En mi clase hay ____ estudiantes.",
+        "stemAr": "في صفي يوجد ____ طالباً.",
+        "options": [
+          {
+            "id": "a1_num_2_a",
+            "text": "veinticuatro",
+            "textAr": "أربعة وعشرون (متصلة)",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_num_2_b",
+            "text": "veinte y cuatro",
+            "textAr": "عشرون وأربعة (منفصلة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ شائع: الأرقام في العشرينيات تُدمج في كلمة واحدة مبدوءة بـ veinti-."
+          },
+          {
+            "id": "a1_num_2_c",
+            "text": "cuarenta y dos",
+            "textAr": "اثنان وأربعون",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا يعني 42، وليس 24."
+          }
+        ],
+        "targetVocab": [
+          "veinte",
+          "cuatro"
+        ],
+        "explanationAr": "الأعداد من 21 إلى 29 تُكتب ككلمة واحدة متصلة تبدأ بـ veinti-، مثل veinticuatro.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_num_2_a"
+          ],
+          "selectedOptionId": "a1_num_2_a"
+        },
+        "errorFeedback": {
+          "a1_num_2_b": "خطأ شائع: الأرقام في العشرينيات تُدمج في كلمة واحدة مبدوءة بـ veinti-.",
+          "a1_num_2_c": "هذا يعني 42، وليس 24."
+        }
+      },
+      {
+        "id": "a1_num_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة العشرات الناقصة لإكمال الرقم 40 بالحروف.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أكمل الجملة بكتابة الرقم 40 بالإسبانية (cuarenta):",
+        "stemEs": "El diccionario cuesta ____ euros.",
+        "stemAr": "القاموس يكلف ____ يورو.",
+        "targetVocab": [
+          "cuarenta",
+          "euro"
+        ],
+        "explanationAr": "العدد 40 يُكتب بالإسبانية: cuarenta بحرف c في البداية.",
+        "answerKey": {
+          "accepted": [
+            "cuarenta"
+          ],
+          "acceptableAnswers": [
+            "cuarenta"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_num_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تخبر فيها عن سعر تذكرة السفر.",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_num_4_order_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "a1_num_4_order_t2",
+            "kind": "token",
+            "text": "billete"
+          },
+          {
+            "id": "a1_num_4_order_t3",
+            "kind": "token",
+            "text": "cuesta"
+          },
+          {
+            "id": "a1_num_4_order_t4",
+            "kind": "token",
+            "text": "cincuenta"
+          },
+          {
+            "id": "a1_num_4_order_t5",
+            "kind": "token",
+            "text": "euros."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El billete cuesta cincuenta euros."
+          ],
+          "tokenOrder": [
+            "a1_num_4_order_t1",
+            "a1_num_4_order_t2",
+            "a1_num_4_order_t3",
+            "a1_num_4_order_t4",
+            "a1_num_4_order_t5"
+          ]
+        },
+        "explanationAr": "الترتيب المعياري: الفاعل El billete + الفعل cuesta + العدد cincuenta + التمييز euros.",
+        "targetVocab": [
+          "cincuenta",
+          "euro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_num_5_diff",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الرقم الإسباني المقابل للعدد 80.",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو اللفظ الإسباني للرقم ثمانون (80)؟",
+        "stemEs": "Mi abuelo tiene ____ años.",
+        "stemAr": "جدي يبلغ من العمر ____ عاماً.",
+        "options": [
+          {
+            "id": "a1_num_5_a",
+            "text": "ochenta",
+            "textAr": "ثمانون",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_num_5_b",
+            "text": "setenta",
+            "textAr": "سبعون",
+            "isCorrect": false,
+            "distractorRationaleAr": "setenta تعني 70."
+          },
+          {
+            "id": "a1_num_5_c",
+            "text": "sesenta",
+            "textAr": "ستون",
+            "isCorrect": false,
+            "distractorRationaleAr": "sesenta تعني 60."
+          }
+        ],
+        "targetVocab": [
+          "ochenta",
+          "setenta",
+          "sesenta"
+        ],
+        "explanationAr": "العدد 80 هو ochenta مشتق من ocho (ثمانية).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_num_5_a"
+          ],
+          "selectedOptionId": "a1_num_5_a"
+        },
+        "errorFeedback": {
+          "a1_num_5_b": "setenta تعني 70.",
+          "a1_num_5_c": "sesenta تعني 60."
+        }
+      },
+      {
+        "id": "a1_num_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة السعر بصوت واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة التالية بصوت واضح للإخبار بأن السعر هو مئة يورو:",
+        "stemEs": "Cuesta cien euros en total.",
+        "stemAr": "السعر مئة يورو في المجموع.",
+        "audioKey": "pending/a1-num-ex-6",
+        "targetVocab": [
+          "cien",
+          "euro"
+        ],
+        "explanationAr": "تأكد من نطق c في cien كحرف ثاء خفيف في النطق القشتالي الإسباني.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-num-ex-6",
+          "modelAnswer": "Cuesta cien euros en total."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

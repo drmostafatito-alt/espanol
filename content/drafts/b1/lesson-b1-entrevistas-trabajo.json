@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-entrevistas-trabajo",
+    "unitSlug": "b1-u3-work",
+    "levelCode": "B1",
+    "titleAr": "المقابلات الوظيفية: تقديم المؤهلات والخبرات ونقاط القوة",
+    "titleEs": "Entrevistas de trabajo: Presentar cualificaciones y fortalezas",
+    "subtitleAr": "الحديث عن المسار المهني، الإنجازات السابقة، والتعامل مع أسئلة المقابل",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقدم المتعلم سيرته ومساره المهني بطلاقة وثقة في مقابلة عمل إسبانية.",
+        "أن يعبر عن نقاط قوته ومهاراته الشخصية: puntualidad, capacidad de trabajo en equipo, resolución de problemas.",
+        "أن يجيب عن الأسئلة الشائعة للمقابلين مثل: ¿Por qué le interesa este puesto?."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التعبير عن الخبرة والكفاءة في المقابلات",
+          "explanationAr": "1. **الحديث عن سنوات الخبرة**:\n- **Tener experiencia en**: Tengo más de cinco años de experiencia en el sector comercial.\n- **Llevar + gerundio**: Llevo tres años trabajando como coordinador de proyectos.\n2. **التعبير عن نقاط القوة**:\n- Me considero una persona responsable, proactiva y organizada.\n- Se me da muy bien la comunicación interpersonal y la negociación.\n3. **التعبير عن الدوافع المهنية**:\n- Me motiva este puesto porque ofrece oportunidades de desarrollo profesional."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *tengo cinco años trabajando* بدلاً من التركيب القواعدي السليم llevo cinco años trabajando.",
+        "ترجمة 'نقاط القوة' بـ *puntos fuertes* فقط بينما المصطلح الأكاديمي والمهني الشائع في المقابلات هو las fortalezas."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في المقابلة بنقول: «عندي خبرة 5 سنين وشاطر في الشغل الجماعي وعايز أطور من نفسي». بالإسبانية: Tengo cinco años de experiencia, se me da bien el trabajo en equipo y busco superarme."
+        }
+      ],
+      "culturalNoteAr": "في سوق العمل الإسباني، يُقدّر أصحاب العمل المهارات المرنة (las habilidades blandas) والقدرة على التكيف مع روح الفريق بقدر ما يقدّرون الشهادات الأكاديمية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-entrevistas-trabajo-intro",
+        "type": "explanation",
+        "titleAr": "المفردات الأساسية لمقابلات العمل",
+        "bodyAr": "المصطلحات المهنية:\n- **la entrevista de trabajo**: مقابلة العمل\n- **el puesto**: الوظيفة / المنصب الوظيفي\n- **la fortaleza**: نقطة القوة الشخصية\n- **el sector**: القطاع المهني أو الاقتصادي\n- **la cualificación**: التأهيل أو الكفاءة المهنية\n- **el candidato**: المتقدم للوظيفة / المرشح",
+        "examples": [
+          {
+            "es": "El candidato demostró una excelente cualificación durante la entrevista.",
+            "ar": "أظهر المرشح كفاءة ممتازة خلال المقابلة."
+          },
+          {
+            "es": "¿Cuál considera que es su mayor fortaleza profesional?",
+            "ar": "ما الذي تعتبره أكبر نقطة قوة مهنية لديك؟"
+          },
+          {
+            "es": "Llevo varios años desarrollándome en este sector.",
+            "ar": "أمضيت سنوات عدة أطور نفسي في هذا القطاع."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "entrevista de trabajo",
+      "puesto",
+      "fortaleza",
+      "sector",
+      "cualificación",
+      "candidato"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "empresa"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقدم المتعلم سيرته ومساره المهني بطلاقة وثقة في مقابلة عمل إسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-ent-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني نقطة القوة في المقابلة الوظيفية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح المهني المقابل لنقطة القوة الشخصية في العمل؟",
+        "stemEs": "Mi mayor _____ es la capacidad para resolver conflictos con calma.",
+        "stemAr": "أكبر ... لدي هي القدرة على حل النزاعات بهدوء.",
+        "options": [
+          {
+            "id": "ex-b1-ent-1_a",
+            "text": "fortaleza",
+            "textAr": "نقطة قوة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ent-1_b",
+            "text": "puesto",
+            "textAr": "وظيفة / منصب",
+            "isCorrect": false,
+            "distractorRationaleAr": "puesto اسم المنصب الوظيفي وليس صفة قوة شخصية."
+          },
+          {
+            "id": "ex-b1-ent-1_c",
+            "text": "candidato",
+            "textAr": "مرشح للوظيفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "candidato اسم الشخص المتقدم."
+          }
+        ],
+        "targetVocab": [
+          "fortaleza",
+          "puesto",
+          "candidato"
+        ],
+        "explanationAr": "كلمة fortaleza تعني نقطة القوة في المقابلات الوظيفية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ent-1_a"
+          ],
+          "selectedOptionId": "ex-b1-ent-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ent-1_b": "puesto اسم المنصب الوظيفي وليس صفة قوة شخصية.",
+          "ex-b1-ent-1_c": "candidato اسم الشخص المتقدم."
+        }
+      },
+      {
+        "id": "ex-b1-ent-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على الاستمرار الزمني في الوظيفة (llevo)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل بالفعل المناسب لتركيب الاستمرار الزمني مع اسم الفاعل: (_____ tres años trabajando)",
+        "stemEs": "_____ cuatro años trabajando en el departamento de ventas.",
+        "stemAr": "أمضيت أربع سنوات أعمل في قسم المبيعات.",
+        "targetVocab": [
+          "trabajo"
+        ],
+        "explanationAr": "نستخدم الفعل llevar + مدة زمنية + gerundio للتعبير عن استمرار العمل منذ فترة.",
+        "answerKey": {
+          "accepted": [
+            "llevo",
+            "Llevo"
+          ],
+          "acceptableAnswers": [
+            "llevo",
+            "Llevo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ent-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الدال على المنصب أو الوظيفة الشاغرة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نطلق باللغة الإسبانية على الشاغر الوظيفي المطلوب شغله؟",
+        "stemEs": "He presentado mi solicitud para el _____ de director financiero.",
+        "stemAr": "قدمت طلبي لشغل ... المدير المالي.",
+        "options": [
+          {
+            "id": "ex-b1-ent-3_a",
+            "text": "puesto",
+            "textAr": "المنصب أو الوظيفة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ent-3_b",
+            "text": "entrevista de trabajo",
+            "textAr": "المقابلة الشخصية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتقدم يقدم للوظيفة (el puesto) وليس للمقابلة نفسها هنا."
+          },
+          {
+            "id": "ex-b1-ent-3_c",
+            "text": "sector",
+            "textAr": "القطاع الاقتصادي",
+            "isCorrect": false,
+            "distractorRationaleAr": "sector هو المجال العام وليس المنصب المحدد."
+          }
+        ],
+        "targetVocab": [
+          "puesto",
+          "entrevista de trabajo",
+          "sector"
+        ],
+        "explanationAr": "el puesto يعني الوظيفة أو المنصب الشاغر.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ent-3_a"
+          ],
+          "selectedOptionId": "ex-b1-ent-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ent-3_b": "المتقدم يقدم للوظيفة (el puesto) وليس للمقابلة نفسها هنا.",
+          "ex-b1-ent-3_c": "sector هو المجال العام وليس المنصب المحدد."
+        }
+      },
+      {
+        "id": "ex-b1-ent-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للإجابة عن سؤال المقابل حول التأهيل المهني",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-ent-4_t1",
+            "kind": "token",
+            "text": "Tengo"
+          },
+          {
+            "id": "ex-b1-ent-4_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b1-ent-4_t3",
+            "kind": "token",
+            "text": "cualificación"
+          },
+          {
+            "id": "ex-b1-ent-4_t4",
+            "kind": "token",
+            "text": "adecuada"
+          },
+          {
+            "id": "ex-b1-ent-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-ent-4_t6",
+            "kind": "token",
+            "text": "este"
+          },
+          {
+            "id": "ex-b1-ent-4_t7",
+            "kind": "token",
+            "text": "sector"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tengo la cualificación adecuada para este sector"
+          ],
+          "tokenOrder": [
+            "ex-b1-ent-4_t1",
+            "ex-b1-ent-4_t2",
+            "ex-b1-ent-4_t3",
+            "ex-b1-ent-4_t4",
+            "ex-b1-ent-4_t5",
+            "ex-b1-ent-4_t6",
+            "ex-b1-ent-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Tengo ثم المفعول la cualificación adecuada ثم شبه الجملة para este sector.",
+        "targetVocab": [
+          "cualificación",
+          "sector"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-ent-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد دافع المرشح للتقديم",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لحديث المرشح وحدد ما يركز عليه في المقابلة",
+        "stemEs": "Me apasiona este sector y creo que puedo aportar mucho a su empresa.",
+        "stemAr": "يعشقني هذا القطاع وأعتقد أن بإمكاني تقديم الكثير لشركتكم.",
+        "options": [
+          {
+            "id": "ex-b1-ent-5_a",
+            "text": "sector",
+            "textAr": "القطاع ومجال العمل (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-ent-5_b",
+            "text": "candidato",
+            "textAr": "المرشح",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يتحدث عن شغفه بالقطاع المهني (el sector)."
+          },
+          {
+            "id": "ex-b1-ent-5_c",
+            "text": "fortaleza",
+            "textAr": "نقطة قوة فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد قطاع العمل ورغبته في الإسهام فيه."
+          }
+        ],
+        "targetVocab": [
+          "sector",
+          "candidato",
+          "fortaleza",
+          "empresa"
+        ],
+        "explanationAr": "المتحدث قال: 'Me apasiona este sector'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_apasiona_sector.mp3",
+        "speechEs": "Me apasiona este sector y creo que puedo aportar mucho a su empresa.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-ent-5_a"
+          ],
+          "selectedOptionId": "ex-b1-ent-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-ent-5_b": "المتحدث يتحدث عن شغفه بالقطاع المهني (el sector).",
+          "ex-b1-ent-5_c": "المتحدث حدد قطاع العمل ورغبته في الإسهام فيه."
+        }
+      },
+      {
+        "id": "ex-b1-ent-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق إجابتك الاحترافية في مقابلة العمل",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب مهني واثق أمام لجنة المقابلة:",
+        "stemEs": "Tengo una sólida cualificación y amplia experiencia en este puesto.",
+        "stemAr": "لدي تأهيل مهني متين وخبرة واسعة في هذا المنصب.",
+        "audioKey": "pending/b1_solida_cualificacion.mp3",
+        "targetVocab": [
+          "cualificación",
+          "puesto"
+        ],
+        "explanationAr": "انتبه لنطق مقطع ción كـ ثيون واضحة بدون مد مبالغ فيه.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_solida_cualificacion.mp3",
+          "modelAnswer": "Tengo una sólida cualificación y amplia experiencia en este puesto."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

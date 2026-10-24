@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-conversacion-hobbies",
+    "unitSlug": "a2-u8-hobbies",
+    "levelCode": "A2",
+    "titleAr": "حوار واقعي: الحديث عن الهوايات والاتفاق على نشاط مشترك",
+    "titleEs": "Conversación sobre aficiones y planes de ocio",
+    "subtitleAr": "تبادل الآراء حول الاهتمامات واقتراح موعد لممارسة نشاط ترفيهي",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقود المتعلم محادثة حقيقية باللغة الإسبانية للسؤال عن هوايات الطرف الآخر والرد عليها.",
+        "أن يقترح نشاطاً ترفيهياً مشتركاً: ¿Por qué no vamos a...? / ¿Te apetece...?",
+        "أن يعبر عن التوافق في الاهتمامات أو الاختلاف بلباقة واقتراح بدائل."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أساليب الاقتراح والرد على الهوايات",
+          "explanationAr": "1. **اقتراح فكرة ترفيهية**:\n- ¿Te apetece + infinitivo? (هل ترغب في...؟ / هل تناسبك فكرة...؟)\n- ¿Por qué no vamos a + infinitivo? (لِمَ لا نذهب إلى...؟)\n2. **التعبير عن الموافقة والحماس**:\n- ¡Me parece una idea genial! (تبدو فكرة رائعة!)\n- ¡De acuerdo! Me encanta ese plan. (موافق! يعجبني هذا المخطط جداً).\n3. **الاعتذار واقتراح بديل**:\n- Es que no se me da bien... (الحقيقة أنني لست بارعاً في...)\n- Prefiero hacer otra cosa, ¿qué tal si...?"
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام gustar كفعل عادي مسبوق بـ Yo عند الرد (الخطأ: *Yo también me gusta*، والصواب: A mí también me gusta).",
+        "نسيان تصريف apetece مع ضمير te أو os (الصواب: ¿Te apetece salir? وليس *¿Tú apeteces salir?*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «إيه رأيك ننزل نتمشى أو نلعب ماتش؟ الفكرة دي عجباني أوي». بالإسبانية: ¿Te apetece salir a dar una vuelta? ¡Me parece genial!"
+        }
+      ],
+      "culturalNoteAr": "عبارة '¿Te apetece...?' هي الأسلوب الأكثر عفوية وترحيباً بين الأصدقاء في إسبانيا لاقتراح أي نشاط ترفيهي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-conversacion-hobbies-intro",
+        "type": "explanation",
+        "titleAr": "حوار تنظيم نشاط ترفيهي",
+        "bodyAr": "المفردات التفاعلية:\n- **la afición**: الهواية / الشغف الشخصي\n- **el ocio**: وقت الراحة والاستجمام\n- **apetecer**: يرغب فيه / يروق له (تصريف مثل gustar)\n- **genial**: رائع / مذهل\n- **el plan**: المخطط أو المشروع الترفيهي\n- **coincidir**: يتطابق في الرأي أو يتفق",
+        "examples": [
+          {
+            "es": "¿Qué aficiones tienes en tu tiempo de ocio?",
+            "ar": "ما هي هواياتك في وقت استجمامك؟"
+          },
+          {
+            "es": "¿Te apetece jugar un partido de tenis este sábado?",
+            "ar": "هل تروق لك فكرة لعب مباراة تنس هذا السبت؟"
+          },
+          {
+            "es": "¡Me parece un plan genial! Quedamos a las diez.",
+            "ar": "يبدو مخططاً رائعاً! نلتقي عند العاشرة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "afición",
+      "ocio",
+      "apetecer",
+      "genial",
+      "plan",
+      "coincidir"
+    ],
+    "reviewVocabulary": [
+      "quedar",
+      "amigo"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يقود المتعلم محادثة حقيقية باللغة الإسبانية للسؤال عن هوايات الطرف الآخر والرد عليها.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-cnh-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير الإسباني المناسب لاقتراح الخروج",
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي سؤال تستخدمه لاقتراح الذهاب للسينما بطريقة ودية؟",
+        "stemEs": "¿_____ ir al cine esta tarde a ver la nueva comedia?",
+        "stemAr": "هل ... الذهاب إلى السينما هذا المساء لمشاهدة الفيلم الكوميدي الجديد؟",
+        "options": [
+          {
+            "id": "ex-a2-cnh-1_a",
+            "text": "Te apetece",
+            "textAr": "هل تروق لك الفكرة / هل ترغب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnh-1_b",
+            "text": "Tú apeteces",
+            "textAr": "تصريف شخصي خاطئ لفعل apetecer",
+            "isCorrect": false,
+            "distractorRationaleAr": "فعل apetecer يصرف مع الغائب ويأخذ ضمير مفعول te."
+          },
+          {
+            "id": "ex-a2-cnh-1_c",
+            "text": "Te coincide",
+            "textAr": "يتطابق معك (غير مناسب دلالياً للاقتراح)",
+            "isCorrect": false,
+            "distractorRationaleAr": "coincidir لا يعبر عن الرغبة أو الاقتراح."
+          }
+        ],
+        "targetVocab": [
+          "apetecer",
+          "coincidir"
+        ],
+        "explanationAr": "نقول: ¿Te apetece + infinitivo? لاقتراح نشاط ترفيهي ودود.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnh-1_a"
+          ],
+          "selectedOptionId": "ex-a2-cnh-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnh-1_b": "فعل apetecer يصرف مع الغائب ويأخذ ضمير مفعول te.",
+          "ex-a2-cnh-1_c": "coincidir لا يعبر عن الرغبة أو الاقتراح."
+        }
+      },
+      {
+        "id": "ex-a2-cnh-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بكلمة تدل على الهواية أو الشغف",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب المفردة الإسبانية المؤنثة التي تعني 'الهواية' (sinónimo de pasatiempo)",
+        "stemEs": "La fotografía es mi principal _____ desde que era joven.",
+        "stemAr": "التصوير الفوتوغرافي هو هوايتي الرئيسية منذ أن كنت شاباً.",
+        "targetVocab": [
+          "afición"
+        ],
+        "explanationAr": "كلمة afición تعني الهواية أو الميل الشخصي.",
+        "answerKey": {
+          "accepted": [
+            "afición",
+            "aficion"
+          ],
+          "acceptableAnswers": [
+            "afición",
+            "aficion"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnh-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الرد الإيجابي المشجع على مخطط العطلة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تصف اقتراحاً بأنه ممتاز ورائع؟",
+        "stemEs": "¡Me parece un plan _____! Me apunto sin dudarlo.",
+        "stemAr": "يبدو مخططاً ...! سأنضم معكم بلا تردد.",
+        "options": [
+          {
+            "id": "ex-a2-cnh-3_a",
+            "text": "genial",
+            "textAr": "رائع / ممتاز (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnh-3_b",
+            "text": "ocio",
+            "textAr": "وقت الفراغ (اسم وليس صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج صفة تصف الخطة، وocio اسم."
+          },
+          {
+            "id": "ex-a2-cnh-3_c",
+            "text": "afición",
+            "textAr": "هواية (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "afición اسم لا يصف الخطة."
+          }
+        ],
+        "targetVocab": [
+          "genial",
+          "ocio",
+          "afición",
+          "plan"
+        ],
+        "explanationAr": "صفة genial تعني رائعاً أو عبقرياً وتستخدم للموافقة الحماسية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnh-3_a"
+          ],
+          "selectedOptionId": "ex-a2-cnh-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnh-3_b": "نحتاج صفة تصف الخطة، وocio اسم.",
+          "ex-a2-cnh-3_c": "afición اسم لا يصف الخطة."
+        }
+      },
+      {
+        "id": "ex-a2-cnh-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب عبارة التعبير عن تطابق الاهتمامات في وقت الراحة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-cnh-4_t1",
+            "kind": "token",
+            "text": "Coincidimos"
+          },
+          {
+            "id": "ex-a2-cnh-4_t2",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a2-cnh-4_t3",
+            "kind": "token",
+            "text": "muchas"
+          },
+          {
+            "id": "ex-a2-cnh-4_t4",
+            "kind": "token",
+            "text": "aficiones"
+          },
+          {
+            "id": "ex-a2-cnh-4_t5",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-a2-cnh-4_t6",
+            "kind": "token",
+            "text": "ocio"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Coincidimos en muchas aficiones de ocio"
+          ],
+          "tokenOrder": [
+            "ex-a2-cnh-4_t1",
+            "ex-a2-cnh-4_t2",
+            "ex-a2-cnh-4_t3",
+            "ex-a2-cnh-4_t4",
+            "ex-a2-cnh-4_t5",
+            "ex-a2-cnh-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Coincidimos ثم حرف الجر en ثم الاسم aficiones de ocio.",
+        "targetVocab": [
+          "coincidir",
+          "afición",
+          "ocio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cnh-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمحادثة وحدد وقت الراحة المفضل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للحوار وحدد ما يفضله المتحدث لقضاء وقت فراغه",
+        "stemEs": "En mi tiempo de ocio me gusta desconectar y pasear por el parque.",
+        "stemAr": "في وقت استجمامي يعجبني فصل ذهني والتنزه في الحديقة.",
+        "options": [
+          {
+            "id": "ex-a2-cnh-5_a",
+            "text": "ocio",
+            "textAr": "وقت الاستجمام والراحة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cnh-5_b",
+            "text": "genial",
+            "textAr": "رائع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد وقت استجمامه (ocio) وليس صفة genial."
+          },
+          {
+            "id": "ex-a2-cnh-5_c",
+            "text": "plan",
+            "textAr": "مخطط عمل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: 'En mi tiempo de ocio'."
+          }
+        ],
+        "targetVocab": [
+          "ocio",
+          "genial",
+          "plan"
+        ],
+        "explanationAr": "المتحدث قال: 'En mi tiempo de ocio me gusta desconectar'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_ocio_desconectar.mp3",
+        "speechEs": "En mi tiempo de ocio me gusta desconectar y pasear por el parque.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cnh-5_a"
+          ],
+          "selectedOptionId": "ex-a2-cnh-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cnh-5_b": "المتحدث حدد وقت استجمامه (ocio) وليس صفة genial.",
+          "ex-a2-cnh-5_c": "المتحدث قال بوضوح: 'En mi tiempo de ocio'."
+        }
+      },
+      {
+        "id": "ex-a2-cnh-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق موافقتك الودية على الخطة المقترحة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بحماس لموافقة صديقك على الخروج:",
+        "stemEs": "¡Es un plan genial! Vamos este fin de semana.",
+        "stemAr": "إنه مخطط رائع! لنذهب في عطلة نهاية هذا الأسبوع.",
+        "audioKey": "pending/a2_plan_genial.mp3",
+        "targetVocab": [
+          "plan",
+          "genial"
+        ],
+        "explanationAr": "انتبه لنطق علامتي التعجب بنبرة حماسية ونطق g في genial كـ خاء.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_plan_genial.mp3",
+          "modelAnswer": "¡Es un plan genial! Vamos este fin de semana."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

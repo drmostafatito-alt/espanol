@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-fiestas-tradiciones",
+    "unitSlug": "a2-u10-culture",
+    "levelCode": "A2",
+    "titleAr": "الأعياد والتقاليد الإسبانية: أشهر المهرجانات والمناسبات الشعبية",
+    "titleEs": "Fiestas y tradiciones populares de España",
+    "subtitleAr": "Las Fallas, San Fermín, La Tomatina, El Día de Reyes",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يتعرف المتعلم على كبرى الاحتفالات والمهرجانات الشعبية في إسبانيا والعالم الناطق بالإسبانية.",
+        "أن يصف طقوس الاحتفال باستخدام أفعال: celebrar, disfrazarse, fuegos artificiales, procesiones.",
+        "أن يقارن بين مواعيد وتقاليد الاحتفالات بين المناطق المختلفة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال وتراكيب التعبير عن الاحتفال والتقاليد",
+          "explanationAr": "1. **أفعال الاحتفال**:\n- **celebrar**: En Valencia se celebran Las Fallas en marzo (في فالنسيا يُحتفل بمهرجان الفاياس في مارس).\n- **festejar**: Festejan la llegada de la primavera con música y flores.\n2. **وصف الأحداث والطقوس**:\n- **tener lugar**: El festival tiene lugar en las calles del centro (يقام المهرجان في شوارع الوسط).\n- **participar en**: Miles de personas participan en La Tomatina de Buñol."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام فعل hacer بدلاً من celebrar عند الحديث عن المهرجانات (الأفصح: celebrar una fiesta).",
+        "الخلط بين Las Fallas (في فالنسيا بمجسمات ضخمة تحرق) و San Fermín (في بامبلونا مع ركض الثيران)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «بنحتفل بشم النسيم، وفيه مهرجانات وألعاب نارية». بالإسبانية: Celebramos las fiestas con fuegos artificiales y música."
+        }
+      ],
+      "culturalNoteAr": "يوم الملوك المجوس (El Día de Reyes) في 6 يناير هو اليوم التقليدي الأول لتبادل الهدايا العائلية للأطفال في إسبانيا، متقدماً تاريخياً على بابا نويل."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-fiestas-tradiciones-intro",
+        "type": "explanation",
+        "titleAr": "أشهر الاحتفالات الإسبانية",
+        "bodyAr": "المفردات الثقافية:\n- **la fiesta popular**: العيد الشعبي\n- **la tradición**: التقليد الموروث\n- **celebrar**: يحتفل بـ\n- **los fuegos artificiales**: الألعاب النارية\n- **el disfraz**: الزي التنكري (disfrazarse)\n- **el desfile**: الموكب أو المسيرة الاحتفالية",
+        "examples": [
+          {
+            "es": "En marzo se queman los monumentos de Las Fallas en Valencia.",
+            "ar": "في مارس تُحرق مجسمات مهرجان الفاياس في فالنسيا."
+          },
+          {
+            "es": "Durante la fiesta popular hay un desfile impresionante con música.",
+            "ar": "خلال العيد الشعبي هناك موكب مذهل مصحوب بالموسيقى."
+          },
+          {
+            "es": "El cielo de la ciudad se ilumina con fuegos artificiales espectaculares.",
+            "ar": "تضاء سماء المدينة بألعاب نارية مبهرة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "fiesta popular",
+      "tradición",
+      "celebrar",
+      "fuegos artificiales",
+      "disfraz",
+      "desfile"
+    ],
+    "reviewVocabulary": [
+      "año",
+      "calle"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يتعرف المتعلم على كبرى الاحتفالات والمهرجانات الشعبية في إسبانيا والعالم الناطق بالإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-fie-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل المناسب للاحتفال بمناسبة شعبية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل يعني 'يحتفل بـ' في الإسبانية؟",
+        "stemEs": "Todos los años los vecinos _____ la llegada de la primavera.",
+        "stemAr": "كل عام يحتفل الجيران بقدوم فصل الربيع.",
+        "options": [
+          {
+            "id": "ex-a2-fie-1_a",
+            "text": "celebran",
+            "textAr": "يحتفلون (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fie-1_b",
+            "text": "disfraz",
+            "textAr": "زي تنكري (اسم مفرد)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً مصرفاً للجمع مع los vecinos."
+          },
+          {
+            "id": "ex-a2-fie-1_c",
+            "text": "desfile",
+            "textAr": "موكب استعراضي (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "desfile اسم وليس فعلاً مصرفاً."
+          }
+        ],
+        "targetVocab": [
+          "celebrar",
+          "disfraz",
+          "desfile"
+        ],
+        "explanationAr": "فعل celebrar يعني يحتفل: celebran la fiesta.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fie-1_a"
+          ],
+          "selectedOptionId": "ex-a2-fie-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fie-1_b": "نحتاج فعلاً مصرفاً للجمع مع los vecinos.",
+          "ex-a2-fie-1_c": "desfile اسم وليس فعلاً مصرفاً."
+        }
+      },
+      {
+        "id": "ex-a2-fie-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني التقليد الموروث",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'تقليد / عُرف موروث' (la _____)",
+        "stemEs": "Comer doce uvas en Nochevieja es una antigua _____ en España.",
+        "stemAr": "تناول اثنتي عشرة حبة عنب في ليلة رأس السنة هو تقليد قديم في إسبانيا.",
+        "targetVocab": [
+          "tradición"
+        ],
+        "explanationAr": "كلمة tradición تعني التقليد أو العرف الثقافي المتوارث.",
+        "answerKey": {
+          "accepted": [
+            "tradición",
+            "tradicion"
+          ],
+          "acceptableAnswers": [
+            "tradición",
+            "tradicion"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-fie-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد ما يضيء سماء المهرجانات في الليل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي العروض الضوئية الملونة التي تطلق في ختام الاحتفال؟",
+        "stemEs": "A medianoche podemos disfrutar del espectáculo de _____.",
+        "stemAr": "في منتصف الليل يمكننا الاستمتاع بعرض ...",
+        "options": [
+          {
+            "id": "ex-a2-fie-3_a",
+            "text": "fuegos artificiales",
+            "textAr": "الألعاب النارية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fie-3_b",
+            "text": "fiesta popular",
+            "textAr": "العيد الشعبي",
+            "isCorrect": false,
+            "distractorRationaleAr": "عرض ضوئي في السماء يُسمى fuegos artificiales."
+          },
+          {
+            "id": "ex-a2-fie-3_c",
+            "text": "disfraz",
+            "textAr": "زي تنكري",
+            "isCorrect": false,
+            "distractorRationaleAr": "disfraz يرتديه الشخص ولا يطلق في السماء."
+          }
+        ],
+        "targetVocab": [
+          "fuegos artificiales",
+          "fiesta popular",
+          "disfraz"
+        ],
+        "explanationAr": "los fuegos artificiales تعني الألعاب النارية الملونة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fie-3_a"
+          ],
+          "selectedOptionId": "ex-a2-fie-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fie-3_b": "عرض ضوئي في السماء يُسمى fuegos artificiales.",
+          "ex-a2-fie-3_c": "disfraz يرتديه الشخص ولا يطلق في السماء."
+        }
+      },
+      {
+        "id": "ex-a2-fie-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف موكب الاحتفال في الشوارع",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-fie-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-fie-4_t2",
+            "kind": "token",
+            "text": "desfile"
+          },
+          {
+            "id": "ex-a2-fie-4_t3",
+            "kind": "token",
+            "text": "pasa"
+          },
+          {
+            "id": "ex-a2-fie-4_t4",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "ex-a2-fie-4_t5",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "ex-a2-fie-4_t6",
+            "kind": "token",
+            "text": "calles"
+          },
+          {
+            "id": "ex-a2-fie-4_t7",
+            "kind": "token",
+            "text": "principales"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El desfile pasa por las calles principales"
+          ],
+          "tokenOrder": [
+            "ex-a2-fie-4_t1",
+            "ex-a2-fie-4_t2",
+            "ex-a2-fie-4_t3",
+            "ex-a2-fie-4_t4",
+            "ex-a2-fie-4_t5",
+            "ex-a2-fie-4_t6",
+            "ex-a2-fie-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El desfile ثم الفعل pasa ثم شبه الجملة por las calles principales.",
+        "targetVocab": [
+          "desfile"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-fie-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد العيد والتقاليد المذكورة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما يميز هذه المناسبة الشعبية",
+        "stemEs": "La fiesta popular reúne a miles de turistas de todo el mundo.",
+        "stemAr": "العيد الشعبي يجمع آلاف السياح من جميع أنحاء العالم.",
+        "options": [
+          {
+            "id": "ex-a2-fie-5_a",
+            "text": "fiesta popular",
+            "textAr": "المناسبة والعيد الشعبي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-fie-5_b",
+            "text": "disfraz",
+            "textAr": "تنكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث تحدث عن العيد الشعبي الشامل fiesta popular."
+          },
+          {
+            "id": "ex-a2-fie-5_c",
+            "text": "fuegos artificiales",
+            "textAr": "ألعاب نارية فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث ذكر تجمع السياح في العيد الشعبي."
+          }
+        ],
+        "targetVocab": [
+          "fiesta popular",
+          "disfraz",
+          "fuegos artificiales"
+        ],
+        "explanationAr": "المتحدث قال: 'La fiesta popular reúne a miles de turistas'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_fiesta_popular.mp3",
+        "speechEs": "La fiesta popular reúne a miles de turistas de todo el mundo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-fie-5_a"
+          ],
+          "selectedOptionId": "ex-a2-fie-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-fie-5_b": "المتحدث تحدث عن العيد الشعبي الشامل fiesta popular.",
+          "ex-a2-fie-5_c": "المتحدث ذكر تجمع السياح في العيد الشعبي."
+        }
+      },
+      {
+        "id": "ex-a2-fie-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك عن تقاليد الاحتفال في بلدك",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح واعتزاز ثقافي:",
+        "stemEs": "Es una tradición muy hermosa que celebramos en familia cada año.",
+        "stemAr": "إنه تقليد جميل جداً نحتفل به مع العائلة كل عام.",
+        "audioKey": "pending/a2_tradicion_hermosa.mp3",
+        "targetVocab": [
+          "tradición",
+          "celebrar"
+        ],
+        "explanationAr": "انتبه لنطق حرف h في hermosa؛ فهو صامت تماماً في الإسبانية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_tradicion_hermosa.mp3",
+          "modelAnswer": "Es una tradición muy hermosa que celebramos en familia cada año."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

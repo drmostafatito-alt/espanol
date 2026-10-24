@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-hoja-reclamaciones",
+    "unitSlug": "b1-u6-problems",
+    "levelCode": "B1",
+    "titleAr": "ورقة الشكاوى الرسمية: حقوق المستهلك وتعبئة النماذج القانونية",
+    "titleEs": "La hoja de reclamaciones y los derechos del consumidor",
+    "subtitleAr": "طلب النموذج الرسمي، كتابة وقائع الشكوى، وإرسالها لإدارة حماية المستهلك",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يعرف المتعلم الإجراء القانوني لطلب ورقة الشكاوى الرسمية (Hoja de reclamaciones) في إسبانيا.",
+        "أن يملأ بيانات النموذج بدقة: datos del reclamante, hechos reclamados, pretensión o solución solicitada.",
+        "أن يفهم حقوق المستهلك والمسار الإداري للشكوى لدى هيئة الرقابة وحماية المستهلك (Consumo)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "صيغ طلب وتعبئة ورقة الشكاوى الرسمية",
+          "explanationAr": "1. **طلب الورقة القانونية بحزم**:\n- **Por favor, facilíteme la hoja de reclamaciones** (من فضلك، أعطني ورقة الشكاوى الرسمية).\n- Todos los establecimientos están obligados por ley a disponer de hojas de reclamaciones.\n2. **صياغة الوقائع (Los hechos)**:\n- استخدام أزمنة الماضي الدقيقة لسرد الواقعة: El día 14 compré... y el producto presentó el siguiente defecto...\n3. **تحديد الطلب (La pretensión)**:\n- Solicito la sustitución del producto o la devolución del importe abonado."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين شكوى داخلية عادية غير ملزمة والورقة الرسمية الحكومية الثلاثية النسخ (La hoja de reclamaciones oficial).",
+        "نسيان التوقيع أو نسيان أخذ النسخة المخصصة للمستهلك (Ejemplar para el reclamante) لإيداعها لدى مصلحة حماية المستهلك."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «أنا من حقي أعمل شكوى في جهاز حماية المستهلك وأملى الاستمارة الرسمية». بالإسبانية: Exijo la hoja de reclamaciones oficial para presentarla en Consumo."
+        }
+      ],
+      "culturalNoteAr": "رفض إعطاء ورقة الشكاوى للمستهلك في إسبانيا يعد مخالفة إدارية جسيمة تترتب عليها غرامات فورية باهظة من الشرطة المحلية (la Policía Local)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-hoja-reclamaciones-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات ورقة الشكاوى وحماية المستهلك",
+        "bodyAr": "المفردات القانونية والتجارية:\n- **la hoja de reclamaciones**: ورقة الشكاوى الرسمية المعتمدة حكومياً\n- **el consumidor**: المستهلك أو المشتري\n- **el establecimiento**: المحل أو المنشأة التجارية\n- **los hechos**: الوقائع وتفاصيل الحادثة\n- **la pretensión**: المطلب أو الحل المطلوب تحقيقه\n- **la copia sellada**: النسخة المختومة بختم المحل",
+        "examples": [
+          {
+            "es": "El consumidor tiene derecho a recibir una copia sellada de la hoja de reclamaciones.",
+            "ar": "يحق للمستهلك الحصول على نسخة مختومة من ورقة الشكاوى."
+          },
+          {
+            "es": "En el apartado de hechos describí detalladamente lo sucedido.",
+            "ar": "في خانة الوقائع وصفت بالتفصيل ما حدث."
+          },
+          {
+            "es": "El establecimiento no puede negarse a facilitar este formulario oficial.",
+            "ar": "لا يمكن للمنشأة الامتناع عن تقديم هذا النموذج الرسمي."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "hoja de reclamaciones",
+      "consumidor",
+      "establecimiento",
+      "hechos",
+      "pretensión",
+      "copia sellada"
+    ],
+    "reviewVocabulary": [
+      "ley",
+      "oficial"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يعرف المتعلم الإجراء القانوني لطلب ورقة الشكاوى الرسمية (Hoja de reclamaciones) في إسبانيا.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-hoj-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني المستند والنموذج الرسمي للشكوى القانونية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الوثيقة الرسمية الإلزامية التي يطلبها الزبون لتوثيق شكواه قانونياً؟",
+        "stemEs": "Pido la _____ para tramitar mi queja ante la oficina de Consumo.",
+        "stemAr": "أطلب ... لمتابعة شكواي أمام مكتب حماية المستهلك.",
+        "options": [
+          {
+            "id": "ex-b1-hoj-1_a",
+            "text": "hoja de reclamaciones",
+            "textAr": "ورقة الشكاوى الرسمية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hoj-1_b",
+            "text": "pretensión",
+            "textAr": "المطلب فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "pretensión خانة داخل الورقة وليس اسم الوثيقة الرسمية ككل."
+          },
+          {
+            "id": "ex-b1-hoj-1_c",
+            "text": "establecimiento",
+            "textAr": "المنشأة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوثيقة تسمى hoja de reclamaciones."
+          }
+        ],
+        "targetVocab": [
+          "hoja de reclamaciones",
+          "pretensión",
+          "establecimiento"
+        ],
+        "explanationAr": "la hoja de reclamaciones هي الاستمارة الرسمية ثلاثية النسخ للشكاوى في إسبانيا.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hoj-1_a"
+          ],
+          "selectedOptionId": "ex-b1-hoj-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hoj-1_b": "pretensión خانة داخل الورقة وليس اسم الوثيقة الرسمية ككل.",
+          "ex-b1-hoj-1_c": "الوثيقة تسمى hoja de reclamaciones."
+        }
+      },
+      {
+        "id": "ex-b1-hoj-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني المستهلك المحمي قانونياً (el _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المذكرة التي تعني 'المستهلك / الزبون' (el _____)",
+        "stemEs": "La ley protege los derechos fundamentales de cada _____.",
+        "stemAr": "يحمي القانون الحقوق الأساسية لكل مستهلك.",
+        "targetVocab": [
+          "consumidor"
+        ],
+        "explanationAr": "كلمة consumidor تعني المستهلك في القوانين التجارية.",
+        "answerKey": {
+          "accepted": [
+            "consumidor"
+          ],
+          "acceptableAnswers": [
+            "consumidor"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-hoj-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الخانة التي يكتب فيها الزبون ما جرى بالتفصيل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى الفقرة المخصصة في النموذج لسرد تفاصيل المشكلة وما جرى؟",
+        "stemEs": "En el apartado de los _____ debe explicar claramente lo sucedido.",
+        "stemAr": "في خانة ... يجب أن تشرح بوضوح ما حدث.",
+        "options": [
+          {
+            "id": "ex-b1-hoj-3_a",
+            "text": "hechos",
+            "textAr": "الوقائع والأحداث (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hoj-3_b",
+            "text": "establecimiento",
+            "textAr": "اسم المنشأة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخانة المخصصة لسرد المشكلة هي los hechos."
+          },
+          {
+            "id": "ex-b1-hoj-3_c",
+            "text": "copia sellada",
+            "textAr": "النسخة المختومة",
+            "isCorrect": false,
+            "distractorRationaleAr": "los hechos هي وقائع الحادثة."
+          }
+        ],
+        "targetVocab": [
+          "hechos",
+          "establecimiento",
+          "copia sellada"
+        ],
+        "explanationAr": "los hechos تعني الوقائع وسرد مجريات الحادثة في الشكوى.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hoj-3_a"
+          ],
+          "selectedOptionId": "ex-b1-hoj-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hoj-3_b": "الخانة المخصصة لسرد المشكلة هي los hechos.",
+          "ex-b1-hoj-3_c": "los hechos هي وقائع الحادثة."
+        }
+      },
+      {
+        "id": "ex-b1-hoj-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب الحصول على النسخة المختومة كإثبات",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-hoj-4_t1",
+            "kind": "token",
+            "text": "Necesito"
+          },
+          {
+            "id": "ex-b1-hoj-4_t2",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "ex-b1-hoj-4_t3",
+            "kind": "token",
+            "text": "copia"
+          },
+          {
+            "id": "ex-b1-hoj-4_t4",
+            "kind": "token",
+            "text": "sellada"
+          },
+          {
+            "id": "ex-b1-hoj-4_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-b1-hoj-4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b1-hoj-4_t7",
+            "kind": "token",
+            "text": "ley"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Necesito mi copia sellada para la ley"
+          ],
+          "tokenOrder": [
+            "ex-b1-hoj-4_t1",
+            "ex-b1-hoj-4_t2",
+            "ex-b1-hoj-4_t3",
+            "ex-b1-hoj-4_t4",
+            "ex-b1-hoj-4_t5",
+            "ex-b1-hoj-4_t6",
+            "ex-b1-hoj-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Necesito ثم المفعول mi copia sellada ثم الغرض para la ley.",
+        "targetVocab": [
+          "copia sellada",
+          "ley"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-hoj-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد التزام المنشأة القانوني",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لما يؤكده المفتش القانوني في التسجيل",
+        "stemEs": "Cualquier establecimiento comercial debe tener hojas de reclamaciones disponibles.",
+        "stemAr": "يجب على أي منشأة تجارية توفير أوراق شكاوى متاحة للجمهور.",
+        "options": [
+          {
+            "id": "ex-b1-hoj-5_a",
+            "text": "establecimiento",
+            "textAr": "المنشأة أو المحل التجاري (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-hoj-5_b",
+            "text": "pretensión",
+            "textAr": "مطلب فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفتش ركز على التزام المنشأة التجارية (establecimiento)."
+          },
+          {
+            "id": "ex-b1-hoj-5_c",
+            "text": "copia sellada",
+            "textAr": "نسخة مختومة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد إلزام المنشآت بتوفير النماذج."
+          }
+        ],
+        "targetVocab": [
+          "establecimiento",
+          "pretensión",
+          "copia sellada",
+          "hoja de reclamaciones"
+        ],
+        "explanationAr": "المفتش قال: 'Cualquier establecimiento comercial debe tener hojas de reclamaciones'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_establecimiento_hojas_reclamaciones.mp3",
+        "speechEs": "Cualquier establecimiento comercial debe tener hojas de reclamaciones disponibles.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-hoj-5_a"
+          ],
+          "selectedOptionId": "ex-b1-hoj-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-hoj-5_b": "المفتش ركز على التزام المنشأة التجارية (establecimiento).",
+          "ex-b1-hoj-5_c": "المتحدث حدد إلزام المنشآت بتوفير النماذج."
+        }
+      },
+      {
+        "id": "ex-b1-hoj-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلبك الرسمي الحازم لورقة الشكاوى القانونية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأدب وحزم لمسؤول المحل عند الامتناع عن حل مشكلتك:",
+        "stemEs": "Por favor, facilíteme la hoja de reclamaciones oficial de inmediato.",
+        "stemAr": "من فضلك، أعطني ورقة الشكاوى الرسمية على الفور.",
+        "audioKey": "pending/b1_faciliteme_hoja_reclamaciones.mp3",
+        "targetVocab": [
+          "hoja de reclamaciones",
+          "oficial"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في facilíteme كـ ثاء ونطق النبرة الحازمة باحترام.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_faciliteme_hoja_reclamaciones.mp3",
+          "modelAnswer": "Por favor, facilíteme la hoja de reclamaciones oficial de inmediato."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

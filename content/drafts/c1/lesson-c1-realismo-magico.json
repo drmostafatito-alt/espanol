@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-realismo-magico",
+    "titleAr": "الواقعية السحرية وأدب أمريكا اللاتينية: El realismo mágico y la identidad mestiza",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u4-literature",
+    "objectiveAr": "أن يحلل المتعلم التقنيات الروائية لـ'الواقعية السحرية' في أدب غابرييل غارسيا ماركيز ورولفو، مبيناً تطبيع الخارق وتفكيك الزمن الخطي.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "mágico",
+      "mestiza",
+      "lineal",
+      "verosimilitud",
+      "asombro",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La naturalización de lo insólito: narrar lo sobrenatural con tono imperturbable",
+      "La ruptura del tiempo lineal: analepsis, prolepsis y tiempo cíclico mítico",
+      "La verosimilitud poética fundada en la cosmovisión mestiza",
+      "La dialéctica entre historia trágica y exuberancia vital"
+    ],
+    "grammarTopics": [
+      "tecnicas-narrativas-c1",
+      "realismo-magico-hispanoamericano"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ندوة حول رواية 'مئة عام من العزلة' وأثر الواقعية السحرية في الرواية العالمية.",
+        "settingAr": "بيت أمريكا (Casa de América) في ساحة ثيبيليس، مدريد",
+        "lines": [
+          {
+            "es": "El prodigio del realismo mágico estriba en presentar lo milagroso como un suceso cotidiano más.",
+            "ar": "تكمن إعجازية الواقعية السحرية في تقديم الخوارق والمعجزات كأنها حدث يومي مألوف وبسيط.",
+            "arEg": "سر وعبقرية الواقعية السحرية إنها بتحكي الحاجات المستحيلة والخارقة كأنها خبر عادي بنشوفه كل يوم في الشارع.",
+            "audioKey": "pending/c1-u4-rma-1"
+          },
+          {
+            "es": "García Márquez subvierte el tiempo lineal instaurando una temporalidad cíclica y mítica.",
+            "ar": "يعطل غارسيا ماركيز الزمن الخطي المتعاقب مؤسساً لزمن دائري ملحمي يدور حول نفسه.",
+            "arEg": "ماركيز كسر فكرة الزمن اللي ماشي في خط مستقيم، وعمل زمن دائري أسطوري الأحداث بتكرر فيه نفسها.",
+            "audioKey": "pending/c1-u4-rma-2"
+          },
+          {
+            "es": "Esa narrativa hunde sus raíces en la cosmovisión mestiza y el sincretismo cultural de la región.",
+            "ar": "تضرب تلك السردية بجذورها في الرؤية الهجينة المركبة للعالم والتثاقف التوفيقي للقارة.",
+            "arEg": "طريقة الحكي دي طالعة من صميم الروح اللاتينية الهجينة اللي مزجت أساطير الهنود بدم وثقافة الإسبان.",
+            "audioKey": "pending/c1-u4-rma-3"
+          },
+          {
+            "es": "La perfecta verosimilitud del relato desarma la incredulidad del lector más escéptico.",
+            "ar": "إن الصدق الفني والإقناع السردي المحكم يجرّد القارئ الأكثر تشككاً من ارتيابه ويسحره بالكامل.",
+            "arEg": "الإقناع والصدق الفني في الحكاية بيخلي حتى أكتر قارئ شكاك يصدق المعجزة ويسلّم بيها وهو مبسوط.",
+            "audioKey": "pending/c1-u4-rma-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-rma-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث الناقد الأدبي وحدد السمة المحورية التي تقوم عليها سردية الواقعية السحرية.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما جوهر الواقعية السحرية في الرواية الإسبانية الأمريكية؟",
+        "stemEs": "El prodigio del realismo mágico estriba en presentar lo milagroso como un suceso cotidiano más.",
+        "stemAr": "تكمن إعجازية الواقعية السحرية في تقديم الخوارق والمعجزات كأنها حدث يومي مألوف وبسيط.",
+        "options": [
+          {
+            "id": "ex-c1-rma-1_a",
+            "text": "Presentar lo milagroso con absoluta naturalidad cotidiana",
+            "textAr": "سرد المعجزات والخوارق بأسلوب يومي هادئ وبسيط",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rma-1_b",
+            "text": "Escribir exclusivamente manuales de física cuántica",
+            "textAr": "كتابة كتب فيزياء بحتة",
+            "isCorrect": false,
+            "distractorRationaleAr": "خارج نطاق الأدب الروائي."
+          },
+          {
+            "id": "ex-c1-rma-1_c",
+            "text": "Negar la existencia de cualquier elemento fantástico",
+            "textAr": "إنكار أي عنصر خيالي ووصف الوقائع بحرفية",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا هو الواقع المبتذل لا الواقع السحري."
+          }
+        ],
+        "targetVocab": [
+          "mágico",
+          "asombro"
+        ],
+        "explanationAr": "يكمن سر الواقعية السحرية في «la naturalización de lo insólito»، حيث يصعد الموتى ويطير الناس دون أن يبدي الراوي أي اندهاش.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u4-rma-1",
+        "speechEs": "El prodigio del realismo mágico estriba en presentar lo milagroso como un suceso cotidiano más.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rma-1_a"
+          ],
+          "selectedOptionId": "ex-c1-rma-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rma-1_b": "خارج نطاق الأدب الروائي.",
+          "ex-c1-rma-1_c": "هذا هو الواقع المبتذل لا الواقع السحري."
+        }
+      },
+      {
+        "id": "ex-c1-rma-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما نوع البناء الزمني الذي عوّضه غارسيا ماركيز عن الزمن الخطي الكلاسيكي؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التوصيف النقدي للزمن في 'مئة عام من العزلة':",
+        "stemEs": "Frente a la cronología rígida, el autor opta por un tiempo ____ y recurrente.",
+        "stemAr": "في مواجهة التسلسل الزمني الصارم، يؤثر الكاتب زمناً دائرياً أسطورياً متكرراً.",
+        "options": [
+          {
+            "id": "ex-c1-rma-2_a",
+            "text": "cíclico",
+            "textAr": "دائري تتكرر فيه أقدار السلالة والأسماء",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rma-2_b",
+            "text": "inexistente",
+            "textAr": "معدوم لا وجود له في النص",
+            "isCorrect": false,
+            "distractorRationaleAr": "الزمن حاضر بقوة بالغة."
+          },
+          {
+            "id": "ex-c1-rma-2_c",
+            "text": "lineal",
+            "textAr": "خطي متتابع كعقارب الساعة العادية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرواية تكسر الزمن الخطي صراحة."
+          }
+        ],
+        "targetVocab": [
+          "lineal",
+          "rigor"
+        ],
+        "explanationAr": "في ماكوندو يتكرر الزمن في دوائر أسطورية (tiempo cíclico)، فما حدث في الماضي يعاد بأشكال جديدة عبر الأجيال.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rma-2_a"
+          ],
+          "selectedOptionId": "ex-c1-rma-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rma-2_b": "الزمن حاضر بقوة بالغة.",
+          "ex-c1-rma-2_c": "الرواية تكسر الزمن الخطي صراحة."
+        }
+      },
+      {
+        "id": "ex-c1-rma-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل المصطلح النقدي الدال على مطابقة الرواية لقوانين الصدق الفني الداخلي المقنع: «la ____ del relato».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة النقدية الدالة على المصداقية الفنية والإقناع السردي:",
+        "stemEs": "A pesar de los elementos fantásticos, la ____ interna de la historia es intachable.",
+        "stemAr": "على الرغم من العناصر الفانتازية المدهشة، فإن المصداقية والإقناع الفني الداخلي للقصة لا تشوبه شائبة.",
+        "targetVocab": [
+          "verosimilitud"
+        ],
+        "explanationAr": "«La verosimilitud» (الصدق الفني أو القابلية للتصديق) هي قدرة الكاتب على إقناع القارئ بقبول قوانين عالمه التخيلي دون تشكك.",
+        "answerKey": {
+          "accepted": [
+            "verosimilitud"
+          ],
+          "acceptableAnswers": [
+            "verosimilitud"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rma-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هي الخلفية الثقافية والحضارية التي تشكل مهاد هذا الأدب السحري الخالد؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الوصف الحضاري الدقيق لروح الهوية اللاتينية المركبة:",
+        "stemEs": "Emerge de la rica identidad ____ que amalgama cosmovisiones indígenas e hispanas.",
+        "stemAr": "ينبثق هذا الأدب من الهوية الهجينة الثرية التي تصهر رؤى السكان الأصليين مع الثقافة الإسبانية.",
+        "options": [
+          {
+            "id": "ex-c1-rma-4_a",
+            "text": "mestiza",
+            "textAr": "هجينة ممتزجة الدماء والروافد الحضارية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-rma-4_b",
+            "text": "homogénea",
+            "textAr": "متجانسة ومغلقة تماماً على نفسها",
+            "isCorrect": false,
+            "distractorRationaleAr": "أمريكا اللاتينية قارة التنوع والتعدد."
+          },
+          {
+            "id": "ex-c1-rma-4_c",
+            "text": "industrial",
+            "textAr": "صناعية غربية بحتة بلا أساطير",
+            "isCorrect": false,
+            "distractorRationaleAr": "مناقض لبيئة الريف والغابات الأسطورية."
+          }
+        ],
+        "targetVocab": [
+          "mestiza",
+          "asombro"
+        ],
+        "explanationAr": "الهوية الهجينة (identidad mestiza) هي التربة الخصبة التي امتزج فيها سحر المعتقدات ما قبل الكولومبية مع الإسبانية الكاثوليكية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-rma-4_a"
+          ],
+          "selectedOptionId": "ex-c1-rma-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-rma-4_b": "أمريكا اللاتينية قارة التنوع والتعدد.",
+          "ex-c1-rma-4_c": "مناقض لبيئة الريف والغابات الأسطورية."
+        }
+      },
+      {
+        "id": "ex-c1-rma-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء عبارة نقدية تعبر عن كسر الزمن التقليدي في الرواية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-rma-5_t1",
+            "kind": "token",
+            "text": "Subvierte"
+          },
+          {
+            "id": "ex-c1-rma-5_t2",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-c1-rma-5_t3",
+            "kind": "token",
+            "text": "tiempo"
+          },
+          {
+            "id": "ex-c1-rma-5_t4",
+            "kind": "token",
+            "text": "lineal"
+          },
+          {
+            "id": "ex-c1-rma-5_t5",
+            "kind": "token",
+            "text": "convencional"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Subvierte el tiempo lineal convencional"
+          ],
+          "tokenOrder": [
+            "ex-c1-rma-5_t1",
+            "ex-c1-rma-5_t2",
+            "ex-c1-rma-5_t3",
+            "ex-c1-rma-5_t4",
+            "ex-c1-rma-5_t5"
+          ]
+        },
+        "explanationAr": "الفعل الدال على التعطيل والثورة Subvierte متبوعاً بالمفعول به el tiempo والصفات lineales convencional.",
+        "targetVocab": [
+          "lineal"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-rma-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة ساحرة توحي بالانبهار والإعجاب بعبقرية الرواية اللاتينية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً التدفق النغمي السلس:",
+        "stemEs": "El realismo mágico despierta un asombro infinito.",
+        "stemAr": "توقظ الواقعية السحرية دهشة وانبهاراً لا حدود لهما في النفس.",
+        "audioKey": "pending/c1-u4-rma-spk",
+        "targetVocab": [
+          "mágico",
+          "asombro"
+        ],
+        "explanationAr": "احرص على سلامة نبر كلمة mágico على حرف a الأول ونطق حرف s في asombro بصوت صفيري رخو رائق.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u4-rma-spk",
+          "modelAnswer": "El realismo mágico despierta un asombro infinito."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

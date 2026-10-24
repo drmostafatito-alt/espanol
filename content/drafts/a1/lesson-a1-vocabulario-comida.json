@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-vocabulario-comida",
+    "titleAr": "مفردات الطعام والشراب: تصنيف المأكولات والمشروبات الأساسية",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u4-food-drink",
+    "objectiveAr": "أن يتعرّف المتعلم على أسماء الأطعمة والمشروبات الأساسية في الحياة اليومية مع أداة التعريف المناسبة ومراعاة جنس الكلمة (el pan, el agua, la leche...).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "vocabulary",
+      "reading",
+      "listening",
+      "speaking",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "comida",
+      "agua",
+      "pan",
+      "café",
+      "leche",
+      "té",
+      "carne",
+      "pescado",
+      "pollo",
+      "arroz"
+    ],
+    "reviewVocabulary": [
+      "casa",
+      "bueno"
+    ],
+    "targetStructures": [
+      "Para desayunar tomo pan con café y leche.",
+      "En el almuerzo hay arroz con pollo o pescado.",
+      "Bebo un vaso de agua fresca."
+    ],
+    "grammarTopics": [
+      "genero-sustantivos-comida",
+      "el-agua-femenino",
+      "articulos-comida"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ياسمين تذهب إلى سوق الخضار والمواد الغذائية (el mercado) في برشلونة لشراء مؤونة الأسبوع.",
+        "settingAr": "سوق حي غراسيّا في برشلونة",
+        "lines": [
+          {
+            "es": "Hola, buenos días. Necesito pan fresco, arroz y leche.",
+            "ar": "مرحباً، صباح الخير. أحتاج خبزاً طازجاً وأرزاً وحليباً.",
+            "arEg": "صباح الخير، محتاجة عيش طازة ورز ولبن.",
+            "audioKey": "pending/a1-com-sc-1"
+          },
+          {
+            "es": "Muy bien. ¿Desea también algo de carne o pescado?",
+            "ar": "ممتاز. هل ترغبين أيضاً في بعض اللحم أو السمك؟",
+            "arEg": "تمام. تحبي كمان لحمة ولا سمك؟",
+            "audioKey": "pending/a1-com-sc-2"
+          },
+          {
+            "es": "Sí, un kilo de pollo y una botella de agua mineral, por favor.",
+            "ar": "نعم، كيلو من الدجاج وقنينة ماء معدني، من فضلك.",
+            "arEg": "أيوه، كيلو فراخ وإزازة مية معدنية لو سمحت.",
+            "audioKey": "pending/a1-com-sc-3"
+          },
+          {
+            "es": "Perfecto, aquí tiene todo.",
+            "ar": "ممتاز، ها هي جميع طلباتك.",
+            "arEg": "تمام، اتفضلي كل طلباتك اهيه.",
+            "audioKey": "pending/a1-com-sc-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "كلمة 'agua' مؤنثة في الأصل، لكنها تأخذ أداة التعريف المذكرة 'el' في المفرد (el agua) لتفادي التقاء نبرتي فتح متتاليتين (el agua وليس *la agua)، ولكن عند وصفها بصفة تعود إلى التأنيث: 'el agua fría'.",
+    "pedagogicalRationaleAr": "قاعدة 'el agua' تسبب حيرة دائمة للمتعلمين. من الضروري توضيح أن الأداة مذكرة فقط لمنع الثقل الصوتي، بينما الكلمة والصفات التابعة لها مؤنثة بالكامل.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "a1_com_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمكونات وحدد الطبق المطلوب.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "استمع جيداً للطبق الإسباني المذكور:",
+        "stemEs": "Hoy tenemos un plato tradicional de arroz con pollo.",
+        "stemAr": "اليوم لدينا طبق تقليدي من الأرز مع الدجاج.",
+        "options": [
+          {
+            "id": "a1_com_1_a",
+            "text": "Arroz con pollo",
+            "textAr": "أرز مع دجاج",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_com_1_b",
+            "text": "Arroz con pescado",
+            "textAr": "أرز مع سمك",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر pollo (دجاج)، وليس pescado (سمك)."
+          },
+          {
+            "id": "a1_com_1_c",
+            "text": "Pan con carne",
+            "textAr": "خبز مع لحم",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصوت ذكر arroz (أرز)، وليس pan."
+          }
+        ],
+        "targetVocab": [
+          "arroz",
+          "pollo",
+          "comida"
+        ],
+        "explanationAr": "الطبق المذكور في الصوت هو arroz con pollo (أرز بالدجاج).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a1-com-ex-1",
+        "speechEs": "Hoy tenemos un plato tradicional de arroz con pollo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_com_1_a"
+          ],
+          "selectedOptionId": "a1_com_1_a"
+        },
+        "errorFeedback": {
+          "a1_com_1_b": "الصوت ذكر pollo (دجاج)، وليس pescado (سمك).",
+          "a1_com_1_c": "الصوت ذكر arroz (أرز)، وليس pan."
+        }
+      },
+      {
+        "id": "a1_com_2_gender_agua",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة الصحيحة لكلمة agua في المفرد.",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي أداة التعريف المناسبة لكلمة agua المفردة؟",
+        "stemEs": "Bebo un vaso de ____ agua.",
+        "stemAr": "أشرب كوباً من الـ____ ماء.",
+        "options": [
+          {
+            "id": "a1_com_2_a",
+            "text": "el",
+            "textAr": "أداة التعريف el لتفادي الثقل الصوتي",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_com_2_b",
+            "text": "la",
+            "textAr": "أداة التعريف la",
+            "isCorrect": false,
+            "distractorRationaleAr": "خطأ: رغم أن كلمة agua مؤنثة، إلا أنها تبدأ بـ a منبورة فتأخذ el في المفرد منعاً للثقل."
+          },
+          {
+            "id": "a1_com_2_c",
+            "text": "los",
+            "textAr": "أداة الجمع المذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمة هنا مفردة وليست جمعاً."
+          }
+        ],
+        "targetVocab": [
+          "agua"
+        ],
+        "explanationAr": "كلمة agua مؤنثة ولكنها تأخذ أداة التعريف el في المفرد منعاً لالتقاء النبرتين: el agua.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_com_2_a"
+          ],
+          "selectedOptionId": "a1_com_2_a"
+        },
+        "errorFeedback": {
+          "a1_com_2_b": "خطأ: رغم أن كلمة agua مؤنثة، إلا أنها تبدأ بـ a منبورة فتأخذ el في المفرد منعاً للثقل.",
+          "a1_com_2_c": "الكلمة هنا مفردة وليست جمعاً."
+        }
+      },
+      {
+        "id": "a1_com_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب كلمة الخبز بالإسبانية لإكمال وجبة الإفطار.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة «خبز» (pan) بالإسبانية في الفراغ:",
+        "stemEs": "Por las mañanas como ____ con aceite de oliva.",
+        "stemAr": "في الصباح آكل ____ مع زيت الزيتون.",
+        "targetVocab": [
+          "pan",
+          "comida"
+        ],
+        "explanationAr": "كلمة خبز في الإسبانية هي: pan وهي اسم مذكر (el pan).",
+        "answerKey": {
+          "accepted": [
+            "pan"
+          ],
+          "acceptableAnswers": [
+            "pan"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_com_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لقول: «في وجبة الغداء نأكل لحماً وأرزاً».",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "a1_com_4_order_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "a1_com_4_order_t2",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "a1_com_4_order_t3",
+            "kind": "token",
+            "text": "comida"
+          },
+          {
+            "id": "a1_com_4_order_t4",
+            "kind": "token",
+            "text": "comemos"
+          },
+          {
+            "id": "a1_com_4_order_t5",
+            "kind": "token",
+            "text": "carne"
+          },
+          {
+            "id": "a1_com_4_order_t6",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "a1_com_4_order_t7",
+            "kind": "token",
+            "text": "arroz."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "En la comida comemos carne y arroz."
+          ],
+          "tokenOrder": [
+            "a1_com_4_order_t1",
+            "a1_com_4_order_t2",
+            "a1_com_4_order_t3",
+            "a1_com_4_order_t4",
+            "a1_com_4_order_t5",
+            "a1_com_4_order_t6",
+            "a1_com_4_order_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: شبه الجملة الظرفية En la comida + الفعل comemos + المفعول الأول carne + أداة العطف y + المفعول الثاني arroz.",
+        "targetVocab": [
+          "comida",
+          "carne",
+          "arroz"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_com_5_beverage",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المشروب الساخن الشائع في الصباح بإسبانيا.",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المشروب الذي يُطلب عادة في الصباح مصحوباً بالحليب (con leche)؟",
+        "stemEs": "Por favor, un ____ con leche caliente.",
+        "stemAr": "من فضلك، ____ بالحليب الساخن.",
+        "options": [
+          {
+            "id": "a1_com_5_a",
+            "text": "café",
+            "textAr": "قهوة",
+            "isCorrect": true
+          },
+          {
+            "id": "a1_com_5_b",
+            "text": "pescado",
+            "textAr": "سمك",
+            "isCorrect": false,
+            "distractorRationaleAr": "pescado طعام مأكول وليس مشروباً."
+          },
+          {
+            "id": "a1_com_5_c",
+            "text": "carne",
+            "textAr": "لحم",
+            "isCorrect": false,
+            "distractorRationaleAr": "carne طعام مأكول وليس مشروباً."
+          }
+        ],
+        "targetVocab": [
+          "café",
+          "leche",
+          "té"
+        ],
+        "explanationAr": "القهوة بالحليب (café con leche) هي المشروب الصباحي الأكثر شهرة في إسبانيا.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_com_5_a"
+          ],
+          "selectedOptionId": "a1_com_5_a"
+        },
+        "errorFeedback": {
+          "a1_com_5_b": "pescado طعام مأكول وليس مشروباً.",
+          "a1_com_5_c": "carne طعام مأكول وليس مشروباً."
+        }
+      },
+      {
+        "id": "a1_com_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملة طلب الماء والخبز بنطق واضح.",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملة بصوت واضح لطلب الماء والخبز بأدب:",
+        "stemEs": "Una botella de agua y pan, por favor.",
+        "stemAr": "قنينة ماء وخبز، من فضلك.",
+        "audioKey": "pending/a1-com-ex-6",
+        "targetVocab": [
+          "agua",
+          "pan"
+        ],
+        "explanationAr": "احرص على مدّ الواو في agua ونطق حرف b بشكل مرقق في botella.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-com-ex-6",
+          "modelAnswer": "Una botella de agua y pan, por favor."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

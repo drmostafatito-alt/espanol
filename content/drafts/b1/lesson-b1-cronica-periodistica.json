@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-cronica-periodistica",
+    "unitSlug": "b1-u7-media",
+    "levelCode": "B1",
+    "titleAr": "صياغة التقرير والخبر الصحفي: السرد الإخباري الموضوعي ونقل الشهادات",
+    "titleEs": "Redacción de la crónica periodística y el reportaje breve",
+    "subtitleAr": "الإجابة عن الأسئلة الصحفية الستة (6W)، دمج الشهادات، وبناء الهرم المقلوب",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم خبراً أو تقريراً صحفياً موجزاً يجيب عن الأسئلة الصحفية الكبرى: ¿Quién? ¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué? ¿Cómo?.",
+        "أن يطبق بنية الهرم المقلوب (la pirámide invertida) بوضع الأهم في المقدمة ثم التفاصيل.",
+        "أن يدمج شهادات الشهود بأسلوبي الكلام المباشر وغير المباشر بسلاسة وموضوعية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب السرد في التقرير والخبر الصحفي",
+          "explanationAr": "1. **افتتاح الخبر (La entradilla)**:\n- الجمع بين الماضي البسيط للإنجاز والماضي الناقص للظروف المحيطة:\n  * Ayer por la tarde se produjo un incendio mientras los trabajadores realizaban tareas de mantenimiento.\n2. **دمج شهادات العيان**:\n- **Según declaraciones de testigos presenciales**: وفقاً لإفادات شهود العيان.\n- «Todo ocurrió en cuestión de segundos», declaró una vecina.\n3. **الربط الإخباري**:\n- **Asimismo / Por su parte / Al cierre de esta edición**: روابط صحفية متقدمة لتنظيم تدفق المعلومات."
+        }
+      ],
+      "commonMistakesAr": [
+        "البدء بمقدمات إنشائية طويلة؛ الخبر الصحفي يتطلب الدخول المباشر في الحدث عبر الإجابة عن الأسئلة الجوهرية في السطرين الأولين.",
+        "خلط الرأي الشخصي بالخبر؛ التقرير الصحفي يتطلب نبرة حيادية موضوعية ونسبة الآراء لأصحابها."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «شهود العيان قالوا إن الحادثة حصلت فجأة والمطافي جت في دقايق». بالإسبانية: Los testigos afirmaron que todo ocurrió de repente y los bomberos llegaron en minutos."
+        }
+      ],
+      "culturalNoteAr": "الـ 'crónica' في الصحافة الإسبانية والأمريكية اللاتينية نوع صحفي وأدبي رفيع يجمع بين دقة نقل الوقائع والجمالية السردية المشوقة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-cronica-periodistica-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات التقرير الصحفي",
+        "bodyAr": "المفردات التحريرية:\n- **la crónica**: التقرير الإخباري أو السرد الصحفي التفصيلي\n- **el testigo presencial**: شاهد العيان الذي عاين الحدث بنفسه\n- **el acontecimiento**: الحدث أو التطور الإخباري الهام\n- **la declaración**: التصريح أو الإفادة الرسمية\n- **la pirámide invertida**: تقنية الهرم المقلوب في التحرير الصحفي\n- **la cobertura mediática**: التغطية الإعلامية للحدث",
+        "examples": [
+          {
+            "es": "El acontecimiento contó con una amplia cobertura mediática internacional.",
+            "ar": "حظي الحدث بتغطية إعلامية دولية واسعة النطاق."
+          },
+          {
+            "es": "Varios testigos presenciales prestaron declaración ante las autoridades.",
+            "ar": "أدلى العديد من شهود العيان بإفاداتهم أمام السلطات."
+          },
+          {
+            "es": "La crónica relata paso a paso cómo se desarrolló la jornada histórica.",
+            "ar": "يسرد التقرير الصحفي خطوة بخطوة كيف مضى هذا اليوم التاريخي."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "crónica",
+      "testigo presencial",
+      "acontecimiento",
+      "declaración",
+      "pirámide invertida",
+      "cobertura mediática"
+    ],
+    "reviewVocabulary": [
+      "información",
+      "suceso"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يكتب المتعلم خبراً أو تقريراً صحفياً موجزاً يجيب عن الأسئلة الصحفية الكبرى: ¿Quién? ¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué? ¿Cómo?.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-cro-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني شاهد العيان الذي حضر الواقعة بنفسه",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي الشخص الذي رأى الحادثة بعينيه وحضرها في الميدان؟",
+        "stemEs": "Según el relato de un _____, la policía llegó en menos de cinco minutos.",
+        "stemAr": "وفقاً لرواية ...، وصلت الشرطة في أقل من خمس دقائق.",
+        "options": [
+          {
+            "id": "ex-b1-cro-1_a",
+            "text": "testigo presencial",
+            "textAr": "شاهد عيان حضوري (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cro-1_b",
+            "text": "acontecimiento",
+            "textAr": "الحدث نفسه",
+            "isCorrect": false,
+            "distractorRationaleAr": "الرواية تصدر عن شاهد عيان (testigo presencial)."
+          },
+          {
+            "id": "ex-b1-cro-1_c",
+            "text": "pirámide invertida",
+            "textAr": "الهرم المقلوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "الهرم المقلوب تقنية تحريرية وليس شخصاً."
+          }
+        ],
+        "targetVocab": [
+          "testigo presencial",
+          "acontecimiento",
+          "pirámide invertida"
+        ],
+        "explanationAr": "el testigo presencial هو شاهد العيان الذي شهد الواقعة شخصياً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cro-1_a"
+          ],
+          "selectedOptionId": "ex-b1-cro-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cro-1_b": "الرواية تصدر عن شاهد عيان (testigo presencial).",
+          "ex-b1-cro-1_c": "الهرم المقلوب تقنية تحريرية وليس شخصاً."
+        }
+      },
+      {
+        "id": "ex-b1-cro-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني التقرير أو السرد الإخباري المفصل (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'السرد الإخباري / التقرير الصحفي' (la _____)",
+        "stemEs": "El corresponsal redactó una emotiva _____ sobre la reconstrucción del pueblo.",
+        "stemAr": "حرر المراسل تقريراً صحفياً مؤثراً عن إعادة إعمار القرية.",
+        "targetVocab": [
+          "crónica"
+        ],
+        "explanationAr": "كلمة crónica تعني التقرير الصحفي أو السرد الإخباري المتسلسل.",
+        "answerKey": {
+          "accepted": [
+            "crónica",
+            "cronica"
+          ],
+          "acceptableAnswers": [
+            "crónica",
+            "cronica"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cro-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التقنية الصحفية لكتابة الخبر من الأهم إلى الأقل أهمية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما اسم التقنية الكلاسيكية التي تبدأ بأهم المعلومات في صدر الخبر؟",
+        "stemEs": "En el periodismo moderno se estructura la noticia siguiendo la _____.",
+        "stemAr": "في الصحافة الحديثة تُبنى الأخبار باتباع أسلوب ...",
+        "options": [
+          {
+            "id": "ex-b1-cro-3_a",
+            "text": "pirámide invertida",
+            "textAr": "الهرم المقلوب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cro-3_b",
+            "text": "declaración",
+            "textAr": "تصريح رسمي",
+            "isCorrect": false,
+            "distractorRationaleAr": "البنية التحريرية تسمى الهرم المقلوب pirámide invertida."
+          },
+          {
+            "id": "ex-b1-cro-3_c",
+            "text": "cobertura mediática",
+            "textAr": "تغطية إعلامية",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقنية التحريرية هي الهرم المقلوب."
+          }
+        ],
+        "targetVocab": [
+          "pirámide invertida",
+          "declaración",
+          "cobertura mediática"
+        ],
+        "explanationAr": "la pirámide invertida هي تقنية الهرم المقلوب التي تضع جوهر الخبر في البداية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cro-3_a"
+          ],
+          "selectedOptionId": "ex-b1-cro-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cro-3_b": "البنية التحريرية تسمى الهرم المقلوب pirámide invertida.",
+          "ex-b1-cro-3_c": "التقنية التحريرية هي الهرم المقلوب."
+        }
+      },
+      {
+        "id": "ex-b1-cro-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف التغطية الإعلامية لحدث تاريخي كبير",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-cro-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-cro-4_t2",
+            "kind": "token",
+            "text": "acontecimiento"
+          },
+          {
+            "id": "ex-b1-cro-4_t3",
+            "kind": "token",
+            "text": "tuvo"
+          },
+          {
+            "id": "ex-b1-cro-4_t4",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b1-cro-4_t5",
+            "kind": "token",
+            "text": "gran"
+          },
+          {
+            "id": "ex-b1-cro-4_t6",
+            "kind": "token",
+            "text": "cobertura"
+          },
+          {
+            "id": "ex-b1-cro-4_t7",
+            "kind": "token",
+            "text": "mediática"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El acontecimiento tuvo una gran cobertura mediática"
+          ],
+          "tokenOrder": [
+            "ex-b1-cro-4_t1",
+            "ex-b1-cro-4_t2",
+            "ex-b1-cro-4_t3",
+            "ex-b1-cro-4_t4",
+            "ex-b1-cro-4_t5",
+            "ex-b1-cro-4_t6",
+            "ex-b1-cro-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El acontecimiento ثم الفعل tuvo ثم المفعول una gran cobertura mediática.",
+        "targetVocab": [
+          "acontecimiento",
+          "cobertura mediática"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cro-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد التصريحات التي أدلى بها المسؤول",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتقرير الإخباري وحدد ما يشير إليه المذيع",
+        "stemEs": "En su declaración ante la prensa, el alcalde prometió ayudas urgentes.",
+        "stemAr": "في تصريحه أمام الصحافة، وعد العمدة بتقديم مساعدات عاجلة.",
+        "options": [
+          {
+            "id": "ex-b1-cro-5_a",
+            "text": "declaración",
+            "textAr": "التصريح والإفادة الرسمية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cro-5_b",
+            "text": "crónica",
+            "textAr": "التقرير ككل",
+            "isCorrect": false,
+            "distractorRationaleAr": "المذيع ركز على تصريح العمدة المحدد (su declaración)."
+          },
+          {
+            "id": "ex-b1-cro-5_c",
+            "text": "pirámide invertida",
+            "textAr": "هرم مقلوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث نقل مضمون التصريح الرسمي."
+          }
+        ],
+        "targetVocab": [
+          "declaración",
+          "crónica",
+          "pirámide invertida"
+        ],
+        "explanationAr": "المذيع قال: 'En su declaración ante la prensa'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_declaracion_alcalde_prensa.mp3",
+        "speechEs": "En su declaración ante la prensa, el alcalde prometió ayudas urgentes.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cro-5_a"
+          ],
+          "selectedOptionId": "ex-b1-cro-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cro-5_b": "المذيع ركز على تصريح العمدة المحدد (su declaración).",
+          "ex-b1-cro-5_c": "المتحدث نقل مضمون التصريح الرسمي."
+        }
+      },
+      {
+        "id": "ex-b1-cro-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك التحريرية لنقل أقوال شهود العيان بموضوعية",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب مراسل إخباري محترف:",
+        "stemEs": "Según un testigo presencial, el acontecimiento tuvo una enorme repercusión.",
+        "stemAr": "وفقاً لأحد شهود العيان، كان للحدث صدى هائل وأثر بالغ.",
+        "audioKey": "pending/b1_testigo_presencial_acontecimiento.mp3",
+        "targetVocab": [
+          "testigo presencial",
+          "acontecimiento"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في presencial و repercusión كـ ثاء واضحة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_testigo_presencial_acontecimiento.mp3",
+          "modelAnswer": "Según un testigo presencial, el acontecimiento tuvo una enorme repercusión."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

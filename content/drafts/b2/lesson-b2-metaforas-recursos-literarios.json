@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-metaforas-recursos-literarios",
+    "unitSlug": "b2-u3-literature",
+    "levelCode": "B2",
+    "titleAr": "الاستعارة والصور البلاغية: التعبير المجازي والأدبي الرفيع",
+    "titleEs": "Metáforas y recursos literarios: Lenguaje figurado y expresividad poética",
+    "subtitleAr": "التشبيه، الاستعارة، التشخيص، وفهم المعاني المجازية في الثقافة الإسبانية",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يتعرف المتعلم على الصور البلاغية الرئيسية: metáfora, símil, personificación, hipérbole.",
+        "أن يفسر المعنى المجازي الكامن وراء التعبيرات الشعرية الإسبانية.",
+        "أن يبتكر تعبيرات مجازية راقية لإثراء كتاباته الوصفية والمقالية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب اللغوية للصياغات البلاغية",
+          "explanationAr": "1. **التشبيه الصريح (El símil)**:\n- استخدام أدوات المقارنة: *como, cual, a modo de, semejante a*.\n- *Tus ojos brillaban como dos luceros en la penumbra*.\n2. **الاستعارة المكنية والتصريحية (La metáfora)**:\n- مطابقة مستعار لمستعار منه مباشرة دون أداة:\n- *El tiempo es oro* / *El otoño de la vida* (رمز للشيخوخة).\n3. **التشخيص وإعطاء الجماد صفات بشرية (La personificación)**:\n- *La ciudad despertaba lentamente* / *El viento susurraba secretos*."
+        }
+      ],
+      "commonMistakesAr": [
+        "الفهم الحرفي للصور البلاغية (مثل اعتبار *lágrimas de cocodrilo* دموع حقيقية لتمساح بدلاً من كونها دموع تماسيح خادعة ومنافقة).",
+        "الخلط بين الاستعارة (بلا أداة) والتشبيه (بأداة تشبيه مثل como)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول «ده كلامه بينقط عسل» أو «الوقت سرقنا». بالإسبانية المقابل المجازي: El tiempo vuela (الوقت يطير) و Sus palabras destilan dulzura."
+        }
+      ],
+      "culturalNoteAr": "الشعر الإسباني في القرن الذهبي (غونغورا وكيفيدو) وفي جيل 27 (فيديريكو غارثيا لوركا) تميز بالثراء الاستعاري المبهر المستلهم من الطبيعة الأندلسية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-metaforas-recursos-literarios-intro",
+        "type": "explanation",
+        "titleAr": "الأدوات البلاغية ومجازاتها",
+        "bodyAr": "أهم الصور البلاغية:\n- **la metáfora**: الاستعارة المباشرة بنقل المعنى من مجال لآخر\n- **el símil**: التشبيه الصريح بوجود أداة تشبيه (como)\n- **la personificación**: التشخيص وإضفاء صفات إنسانية على الطبيعة والجماد\n- **la hipérbole**: المبالغة والغلو الشعري لتأكيد المعنى\n- **evocar**: يستحضر الذاكرة والمشاعر\n- **la penumbra**: الغبش والضوء الخافت بين النور والظلمة",
+        "examples": [
+          {
+            "es": "El verso 'el rumor del río lloraba en la noche' es una clara personificación.",
+            "ar": "البيت 'خرير النهر كان يبكي في الليل' تشخيص بلاغي واضح."
+          },
+          {
+            "es": "Al decir 'su voz era música para mis oídos', el autor emplea una metáfora.",
+            "ar": "بقوله 'صوته كان موسيقى لآذاني'، يستخدم الكاتب استعارة."
+          },
+          {
+            "es": "Aquella melodía melancólica lograba evocar recuerdos de su lejana infancia.",
+            "ar": "استطاع ذلك اللحن الشجي أن يستحضر ذكريات طفولته البعيدة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "metáfora",
+      "símil",
+      "personificación",
+      "hipérbole",
+      "evocar",
+      "penumbra"
+    ],
+    "reviewVocabulary": [
+      "poesía",
+      "verso"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يتعرف المتعلم على الصور البلاغية الرئيسية: metáfora, símil, personificación, hipérbole.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-mrl-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الصورة البلاغية في جملة: El viento aullaba de dolor entre los árboles",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي البلاغة المستخدمة عندما ينسب للرياح فعل 'العويل من الألم'؟",
+        "stemEs": "El viento aullaba de dolor en medio de la tormenta.",
+        "stemAr": "كانت الريح تعوي من الألم في قلب العاصفة.",
+        "options": [
+          {
+            "id": "ex-b2-mrl-1_a",
+            "text": "personificación",
+            "textAr": "تشخيص للريح بصفات بشرية حيوانية متألمة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-mrl-1_b",
+            "text": "símil",
+            "textAr": "تشبيه صريح",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا توجد أداة تشبيه como بل نُسب الفعل مباشرة للريح فصار تشخيصاً personificación."
+          },
+          {
+            "id": "ex-b2-mrl-1_c",
+            "text": "hipérbole",
+            "textAr": "مبالغة رقمية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصورة الأدبية تسمى التشخيص personificación."
+          }
+        ],
+        "targetVocab": [
+          "personificación",
+          "símil",
+          "metáfora"
+        ],
+        "explanationAr": "la personificación هي خلع الصفات الإنسانية والشعورية على الجماد والظواهر الطبيعية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-mrl-1_a"
+          ],
+          "selectedOptionId": "ex-b2-mrl-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-mrl-1_b": "لا توجد أداة تشبيه como بل نُسب الفعل مباشرة للريح فصار تشخيصاً personificación.",
+          "ex-b2-mrl-1_c": "الصورة الأدبية تسمى التشخيص personificación."
+        }
+      },
+      {
+        "id": "ex-b2-mrl-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني المبالغة الفائقة لتأكيد المعنى: (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة البلاغية المؤنثة التي تعني 'المبالغة والمجاز التضخيمي' (la _____)",
+        "stemEs": "Al decir 'te he esperado mil años' el poeta recurre a una evidente _____ poética.",
+        "stemAr": "بقوله 'انتظرتك ألف عام' يلجأ الشاعر إلى ... شعرية واضحة.",
+        "targetVocab": [
+          "hipérbole"
+        ],
+        "explanationAr": "la hipérbole هي المبالغة البلاغية غير الحرفية لتأكيد عظم الشعور.",
+        "answerKey": {
+          "accepted": [
+            "hipérbole"
+          ],
+          "acceptableAnswers": [
+            "hipérbole"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-mrl-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الذي يعني استحضار المشاعر والذكريات القديمة في النفس",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي فعل أدبي يعني 'استدعاء الذكرى وإيقاظها في الوجدان'؟",
+        "stemEs": "El aroma del jazmín lograba _____ las tardes de verano en el patio andaluz.",
+        "stemAr": "استطاع شذا الياسمين أن ... أمسيات الصيف في الفناء الأندلسي.",
+        "options": [
+          {
+            "id": "ex-b2-mrl-3_a",
+            "text": "evocar",
+            "textAr": "يستحضر الذكرى والمشاعر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-mrl-3_b",
+            "text": "olvidar",
+            "textAr": "ينسى",
+            "isCorrect": false,
+            "distractorRationaleAr": "إيقاظ الذكريات يسمى evocar."
+          },
+          {
+            "id": "ex-b2-mrl-3_c",
+            "text": "sesgar",
+            "textAr": "ينحاز",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل الأدبي الدقيق هو evocar."
+          }
+        ],
+        "targetVocab": [
+          "evocar",
+          "penumbra"
+        ],
+        "explanationAr": "evocar يعني استحضار صورة أو ذكرى أو إحساس في الذاكرة والوجدان.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-mrl-3_a"
+          ],
+          "selectedOptionId": "ex-b2-mrl-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-mrl-3_b": "إيقاظ الذكريات يسمى evocar.",
+          "ex-b2-mrl-3_c": "الفعل الأدبي الدقيق هو evocar."
+        }
+      },
+      {
+        "id": "ex-b2-mrl-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة الشعرية الوصفية بأسلوب التشبيه الصريح",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-mrl-4_t1",
+            "kind": "token",
+            "text": "Tus"
+          },
+          {
+            "id": "ex-b2-mrl-4_t2",
+            "kind": "token",
+            "text": "ojos"
+          },
+          {
+            "id": "ex-b2-mrl-4_t3",
+            "kind": "token",
+            "text": "brillan"
+          },
+          {
+            "id": "ex-b2-mrl-4_t4",
+            "kind": "token",
+            "text": "como"
+          },
+          {
+            "id": "ex-b2-mrl-4_t5",
+            "kind": "token",
+            "text": "estrellas"
+          },
+          {
+            "id": "ex-b2-mrl-4_t6",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-b2-mrl-4_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-mrl-4_t8",
+            "kind": "token",
+            "text": "penumbra"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tus ojos brillan como estrellas en la penumbra"
+          ],
+          "tokenOrder": [
+            "ex-b2-mrl-4_t1",
+            "ex-b2-mrl-4_t2",
+            "ex-b2-mrl-4_t3",
+            "ex-b2-mrl-4_t4",
+            "ex-b2-mrl-4_t5",
+            "ex-b2-mrl-4_t6",
+            "ex-b2-mrl-4_t7",
+            "ex-b2-mrl-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ Tus ojos ثم الفعل brillan ثم أداة التشبيه como ثم المشبه به estrellas ثم شبه الجملة en la penumbra.",
+        "targetVocab": [
+          "símil",
+          "penumbra"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-mrl-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للشطر الشعري وحدد الضوء الخافت الذي يصفه الشاعر",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للإلقاء الشعري الرقيق وحدد الكلمة الدالة على الغبش والضوء الشاحب",
+        "stemEs": "Caminaban en silencio envueltos en la dulce penumbra del atardecer.",
+        "stemAr": "كانا يسيران في صمت يلفهما غبش الغروب العذب.",
+        "options": [
+          {
+            "id": "ex-b2-mrl-5_a",
+            "text": "penumbra",
+            "textAr": "الضوء الخافت الشاحب بين النور والظلمة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-mrl-5_b",
+            "text": "claridad",
+            "textAr": "الوضوح التام والسطوع",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشاعر قال: en la dulce penumbra."
+          },
+          {
+            "id": "ex-b2-mrl-5_c",
+            "text": "tormenta",
+            "textAr": "عاصفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمة المذكورة هي penumbra."
+          }
+        ],
+        "targetVocab": [
+          "penumbra",
+          "evocar"
+        ],
+        "explanationAr": "الشاعر قال بوضوح: 'la dulce penumbra del atardecer'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_dulce_penumbra_atardecer.mp3",
+        "speechEs": "Caminaban en silencio envueltos en la dulce penumbra del atardecer.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-mrl-5_a"
+          ],
+          "selectedOptionId": "ex-b2-mrl-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-mrl-5_b": "الشاعر قال: en la dulce penumbra.",
+          "ex-b2-mrl-5_c": "الكلمة المذكورة هي penumbra."
+        }
+      },
+      {
+        "id": "ex-b2-mrl-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق التعبير الاستعاري بإحساس شعري ومخارج حروف واضحة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق العبارة البلاغية التالية بجمال ورصانة لغوية:",
+        "stemEs": "El autor utiliza una poderosa metáfora para describir el paso implacable del tiempo.",
+        "stemAr": "يوظف الكاتب استعارة قوية لوصف مسير الوقت الذي لا يرحم.",
+        "audioKey": "pending/b2_poderosa_metafora_tiempo.mp3",
+        "targetVocab": [
+          "metáfora",
+          "evocar",
+          "símil"
+        ],
+        "explanationAr": "انتبه لنطق metáfora مع النبرة على حرف á و implacable بنطق فصيح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_poderosa_metafora_tiempo.mp3",
+          "modelAnswer": "El autor utiliza una poderosa metáfora para describir el paso implacable del tiempo."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

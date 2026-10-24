@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-condiciones-laborales",
+    "unitSlug": "b1-u3-work",
+    "levelCode": "B1",
+    "titleAr": "شروط العمل والعقود: الرواتب وساعات الدوام والإجازات والتأمين",
+    "titleEs": "Condiciones laborales, contratos y derechos del trabajador",
+    "subtitleAr": "أنواع العقود، الراتب الإجمالي والصافي، والبدلات وحقوق الضمان الاجتماعي",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يفهم المتعلم بنود عقد العمل الإسباني: contrato indefinido, contrato temporal, periodo de prueba.",
+        "أن يميز بين الراتب الإجمالي (el sueldo bruto) والصافي (el sueldo neto) واستقطاعات الضرائب (el IRPF).",
+        "أن يناقش ساعات العمل، والعمل الإضافي (las horas extraordinarias)، والإجازات مدفوعة الأجر (las vacaciones pagadas)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "تراكيب التفاوض حول شروط العمل",
+          "explanationAr": "1. **السؤال عن الراتب والبدلات**:\n- ¿Cuál es el sueldo bruto anual? (كم يبلغ الراتب الإجمالي السنوي؟).\n- ¿El puesto incluye pagas extraordinarias? (هل يشمل المنصب رواتب إضافية كعلاوة الصيف وعيد الميلاد؟).\n2. **الدوام والعقود**:\n- Jornada completa (دوام كامل - 40 ساعة أسبوعياً) مقابل Jornada parcial (دوام جزئي).\n- Contrato indefinido (عقد دائم / غير محدد المدة).\n3. **فترة التجربة**:\n- El contrato tiene un periodo de prueba de tres meses (يتضمن العقد فترة تجربة مدتها ثلاثة أشهر)."
+        }
+      ],
+      "commonMistakesAr": [
+        "الخلط بين sueldo bruto (الراتب قبل خصم الضرائب والتأمينات) و sueldo neto (الراتب الصافي المستلم في الحساب البنكي).",
+        "قول *horas más* بدلاً من المصطلح القانوني الصحيح las horas extraordinarias (أو horas extras)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «المرتب ده صافي ولا قبل الضرائب؟ وفيه تأمين وعقد تثبيت؟». بالإسبانية: ¿El sueldo es neto o bruto? ¿Hay contrato indefinido y Seguridad Social?"
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا ينص القانون عادة على 14 دفعة راتب سنوياً (12 شهراً + راتبين إضافيين: la paga de verano و la paga de Navidad)، ما لم يتم تقسيمها على 12 شهراً بالتراضي."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-condiciones-laborales-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات العقود والشروط الوظيفية",
+        "bodyAr": "المفردات الأساسية:\n- **el contrato indefinido**: العقد الدائم غير محدد المدة\n- **el sueldo bruto**: الراتب الإجمالي قبل الاستقطاعات\n- **el sueldo neto**: الراتب الصافي بعد الضرائب\n- **la jornada laboral**: يوم الدوام وساعات العمل\n- **el periodo de prueba**: فترة التجربة والتقييم\n- **las horas extras**: الساعات الإضافية للعمل",
+        "examples": [
+          {
+            "es": "Me han ofrecido un contrato indefinido con jornada completa.",
+            "ar": "عرضوا عليّ عقداً دائماً بدوام كامل."
+          },
+          {
+            "es": "El sueldo neto mensual se ingresa a final de mes.",
+            "ar": "يُودع الراتب الصافي الشهري في نهاية الشهر."
+          },
+          {
+            "es": "El periodo de prueba es de dos meses según el convenio.",
+            "ar": "فترة التجربة شهران وفقاً للاتفاقية الجماعية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "contrato indefinido",
+      "sueldo bruto",
+      "sueldo neto",
+      "jornada laboral",
+      "periodo de prueba",
+      "horas extras"
+    ],
+    "reviewVocabulary": [
+      "salario",
+      "mes"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يفهم المتعلم بنود عقد العمل الإسباني: contrato indefinido, contrato temporal, periodo de prueba.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-cnd-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح الدال على الراتب الصافي المستلم في البنك",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الراتب الفعلي الذي يتسلمه الموظف بعد خصم الضرائب والتأمين؟",
+        "stemEs": "Después de las deducciones fiscales, el _____ es de dos mil euros.",
+        "stemAr": "بعد الاستقطاعات الضريبية، يبلغ ... ألفي يورو.",
+        "options": [
+          {
+            "id": "ex-b1-cnd-1_a",
+            "text": "sueldo neto",
+            "textAr": "الراتب الصافي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cnd-1_b",
+            "text": "sueldo bruto",
+            "textAr": "الراتب الإجمالي قبل الخصم",
+            "isCorrect": false,
+            "distractorRationaleAr": "الراتب بعد الاستقطاعات هو الصافي (neto)."
+          },
+          {
+            "id": "ex-b1-cnd-1_c",
+            "text": "periodo de prueba",
+            "textAr": "فترة التجربة",
+            "isCorrect": false,
+            "distractorRationaleAr": "periodo de prueba يعني فترة تجربة وليس راتباً."
+          }
+        ],
+        "targetVocab": [
+          "sueldo neto",
+          "sueldo bruto",
+          "periodo de prueba"
+        ],
+        "explanationAr": "el sueldo neto هو الراتب الصافي بعد خصم الضرائب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cnd-1_a"
+          ],
+          "selectedOptionId": "ex-b1-cnd-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cnd-1_b": "الراتب بعد الاستقطاعات هو الصافي (neto).",
+          "ex-b1-cnd-1_c": "periodo de prueba يعني فترة تجربة وليس راتباً."
+        }
+      },
+      {
+        "id": "ex-b1-cnd-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل نوع العقد المستقر غير محدد المدة",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الصفة الإسبانية للعقد الدائم غير محدد المدة: (contrato _____)",
+        "stemEs": "La empresa me ofreció un contrato _____ desde el primer día.",
+        "stemAr": "عرضت عليّ الشركة عقداً دائماً غير محدد المدة منذ اليوم الأول.",
+        "targetVocab": [
+          "contrato indefinido"
+        ],
+        "explanationAr": "المصطلح هو contrato indefinido ويعني العقد الثابت والدائم.",
+        "answerKey": {
+          "accepted": [
+            "indefinido"
+          ],
+          "acceptableAnswers": [
+            "indefinido"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cnd-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الساعات الإضافية التي يعملها الموظف خارج دوامه الرسمي",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا تسمى الساعات الإضافية المدفوعة فوق الدوام الرسمي؟",
+        "stemEs": "Este mes he trabajado muchas _____ para terminar el proyecto.",
+        "stemAr": "هذا الشهر عملت الكثير من ... لإنهاء المشروع.",
+        "options": [
+          {
+            "id": "ex-b1-cnd-3_a",
+            "text": "horas extras",
+            "textAr": "الساعات الإضافية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cnd-3_b",
+            "text": "jornada laboral",
+            "textAr": "يوم وساعات العمل العادية",
+            "isCorrect": false,
+            "distractorRationaleAr": "jornada laboral هو الدوام الرسمي الأساسي."
+          },
+          {
+            "id": "ex-b1-cnd-3_c",
+            "text": "sueldo bruto",
+            "textAr": "الراتب الإجمالي",
+            "isCorrect": false,
+            "distractorRationaleAr": "ساعات العمل الإضافية تسمى horas extras."
+          }
+        ],
+        "targetVocab": [
+          "horas extras",
+          "jornada laboral",
+          "sueldo bruto"
+        ],
+        "explanationAr": "las horas extras تعني الساعات الإضافية للعمل.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cnd-3_a"
+          ],
+          "selectedOptionId": "ex-b1-cnd-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cnd-3_b": "jornada laboral هو الدوام الرسمي الأساسي.",
+          "ex-b1-cnd-3_c": "ساعات العمل الإضافية تسمى horas extras."
+        }
+      },
+      {
+        "id": "ex-b1-cnd-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لتحديد مدة فترة التجربة في عقد العمل",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-cnd-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-cnd-4_t2",
+            "kind": "token",
+            "text": "periodo"
+          },
+          {
+            "id": "ex-b1-cnd-4_t3",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b1-cnd-4_t4",
+            "kind": "token",
+            "text": "prueba"
+          },
+          {
+            "id": "ex-b1-cnd-4_t5",
+            "kind": "token",
+            "text": "dura"
+          },
+          {
+            "id": "ex-b1-cnd-4_t6",
+            "kind": "token",
+            "text": "tres"
+          },
+          {
+            "id": "ex-b1-cnd-4_t7",
+            "kind": "token",
+            "text": "meses"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El periodo de prueba dura tres meses"
+          ],
+          "tokenOrder": [
+            "ex-b1-cnd-4_t1",
+            "ex-b1-cnd-4_t2",
+            "ex-b1-cnd-4_t3",
+            "ex-b1-cnd-4_t4",
+            "ex-b1-cnd-4_t5",
+            "ex-b1-cnd-4_t6",
+            "ex-b1-cnd-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ El periodo de prueba ثم الفعل dura ثم المدة tres meses.",
+        "targetVocab": [
+          "periodo de prueba",
+          "mes"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-cnd-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد تفاصيل ساعات الدوام اليومي",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمدير وحدد طبيعة الدوام المعروض على الموظف",
+        "stemEs": "Nuestra jornada laboral es de ocho horas diarias con horario flexible.",
+        "stemAr": "يوم دوامنا هو ثماني ساعات يومياً مع جدول مواعيد مرن.",
+        "options": [
+          {
+            "id": "ex-b1-cnd-5_a",
+            "text": "jornada laboral",
+            "textAr": "ساعات الدوام اليومي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-cnd-5_b",
+            "text": "sueldo neto",
+            "textAr": "الراتب الصافي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد ساعات الدوام (la jornada laboral)."
+          },
+          {
+            "id": "ex-b1-cnd-5_c",
+            "text": "periodo de prueba",
+            "textAr": "فترة تجربة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يشرح تفاصيل ساعات العمل اليومية."
+          }
+        ],
+        "targetVocab": [
+          "jornada laboral",
+          "sueldo neto",
+          "periodo de prueba"
+        ],
+        "explanationAr": "المتحدث قال: 'Nuestra jornada laboral es de ocho horas'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_jornada_laboral.mp3",
+        "speechEs": "Nuestra jornada laboral es de ocho horas diarias con horario flexible.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-cnd-5_a"
+          ],
+          "selectedOptionId": "ex-b1-cnd-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-cnd-5_b": "المتحدث حدد ساعات الدوام (la jornada laboral).",
+          "ex-b1-cnd-5_c": "المتحدث يشرح تفاصيل ساعات العمل اليومية."
+        }
+      },
+      {
+        "id": "ex-b1-cnd-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق سؤالك المهني عن طبيعة العقد والراتب الإجمالي",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق السؤال التالي بوضوح ولباقة مهنية في ختام المقابلة:",
+        "stemEs": "¿El puesto ofrece contrato indefinido y cuál es el sueldo bruto?",
+        "stemAr": "هل يوفر المنصب عقداً دائماً وما هو الراتب الإجمالي؟",
+        "audioKey": "pending/b1_pregunta_sueldo_contrato.mp3",
+        "targetVocab": [
+          "contrato indefinido",
+          "sueldo bruto"
+        ],
+        "explanationAr": "انتبه لنطق حرف d بين الصائتين في indefinido بنعومة صوتية طبيعية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_pregunta_sueldo_contrato.mp3",
+          "modelAnswer": "¿El puesto ofrece contrato indefinido y cuál es el sueldo bruto?"
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

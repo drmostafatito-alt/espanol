@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-expresar-quejas-molestias",
+    "unitSlug": "b1-u6-problems",
+    "levelCode": "B1",
+    "titleAr": "التعبير عن الاستياء والشكوى: استخدام المنصوب مع Me molesta que و Me indigna que",
+    "titleEs": "Expresar quejas y malestar: Subjuntivo con verbos de molestia",
+    "subtitleAr": "تراكيب التعبير عن الغضب وعدم الرضا: me parece inaceptable que, me molesta que",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية مع أفعال وعبارات الاستياء والشعور بالضيق.",
+        "أن يعبر عن درجات مختلفة من الغضب والشكوى: me molesta que, me da rabia que, me indigna que, es intolerable que.",
+        "أن يفرق بين البناء مع المصدر (عند وحدة الفاعل) والبناء مع المنصوب (عند اختلاف الفاعل)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قاعدة المنصوب مع أفعال الاستياء والشكوى",
+          "explanationAr": "عند التعبير عن الاستياء أو الشكوى من تصرف شخص آخر أو جهة، نستخدم **صيغة المنصوب (Subjuntivo)** حتماً:\n1. **أفعال الاستياء + que + Subjuntivo**:\n- **Me molesta que** no respondan a mis mensajes (يزعجني أنهم لا يردون على رسائلي).\n- **Me indigna que** traten así a los clientes (يغضبني ويثير استيائي أن يعاملوا العملاء هكذا).\n- **Me da rabia que** se rompa el aparato tan pronto (يغيظني أن يتعطل الجهاز بهذه السرعة).\n2. **العبارات الوصفية للتقييم السلبي**:\n- **Es inaceptable que** no nos den una solución (من غير المقبول ألا يعطونا حلاً).\n- **Es intolerable que** cobren de más sin avisar (من غير المحتمل أن يفرضوا رسوماً إضافية بلا إشعار)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد me molesta que (الخطأ الشائع: *Me molesta que no responden*؛ الصواب الحتمي: Me molesta que no respondan بالمنصوب).",
+        "استخدام que والمنصوب عندما يكون الفاعل واحداً (الصواب: Me molesta esperar، والخطأ: *Me molesta que yo espere*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «بيضايقني أوي إنهم ميردوش، ومينفعش وميقبلش العقل المعاملة دي». بالإسبانية: Me molesta que no respondan y me parece inaceptable que traten así a la gente."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يُستحسن التعبير عن الشكوى بوضوح وحزم مدروس مع الحفاظ على كلمات التهذيب، فالحدة المفرطة والشتائم تفقدك تعاطف الطرف الآخر فوراً."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-expresar-quejas-molestias-intro",
+        "type": "explanation",
+        "titleAr": "أهم تراكيب الشكوى والاستياء",
+        "bodyAr": "تراكيب التعبير عن الضيق:\n- **me molesta que**: يضايقني / يزعجني أن (+ منصُوب)\n- **me indigna que**: يثير سخطي واستيائي الشديد أن (+ منصُوب)\n- **es inaceptable que**: من غير المقبول إطلاقاً أن (+ منصُوب)\n- **me da rabia que**: يغيظني ويثير غضبي أن (+ منصُوب)\n- **el malestar**: الشعور بالضيق والاستياء العام\n- **la queja**: الشكوى والاحتجاج",
+        "examples": [
+          {
+            "es": "Me molesta que el tren llegue con retraso todos los días.",
+            "ar": "يزعجني أن يصل القطار بتأخير كل يوم (المنصوب: llegue)."
+          },
+          {
+            "es": "Es inaceptable que no nos hayan devuelto el dinero todavía.",
+            "ar": "من غير المقبول ألا يكونوا قد أعادوا لنا المال حتى الآن."
+          },
+          {
+            "es": "Me indigna que nadie asuma la responsabilidad del error.",
+            "ar": "يثير سخطي ألا يتحمل أحد مسؤولية هذا الخطأ."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "me molesta que",
+      "me indigna que",
+      "es inaceptable que",
+      "me da rabia que",
+      "malestar",
+      "queja"
+    ],
+    "reviewVocabulary": [
+      "problema",
+      "solución"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يطبق المتعلم قاعدة المنصوب (Subjuntivo) الإلزامية مع أفعال وعبارات الاستياء والشعور بالضيق.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-mol-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب الصحيحة بعد تركيب الاستياء me molesta que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تصريف لفعل hablar نستخدم بعد عبارة الشكوى والاستياء Me molesta que؟",
+        "stemEs": "Me molesta que la gente _____ a gritos en el cine.",
+        "stemAr": "يزعجني أن ... الناس بالصراخ في السينما.",
+        "options": [
+          {
+            "id": "ex-b1-mol-1_a",
+            "text": "hable",
+            "textAr": "صيغة المنصوب الحاضر (الصواب بعد me molesta que)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-mol-1_b",
+            "text": "habla",
+            "textAr": "مضارع إخباري لا يصح بعد أفعال الشعور والاستياء",
+            "isCorrect": false,
+            "distractorRationaleAr": "تراكيب الاستياء تتطلب حتماً صيغة المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b1-mol-1_c",
+            "text": "hablar",
+            "textAr": "مصدر لا يناسب وجود الفاعل la gente",
+            "isCorrect": false,
+            "distractorRationaleAr": "لاختلاف الفاعل يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "me molesta que",
+          "queja"
+        ],
+        "explanationAr": "بعد تركيب me molesta que يأتي دائماً زمن المنصوب: me molesta que la gente hable.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-mol-1_a"
+          ],
+          "selectedOptionId": "ex-b1-mol-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-mol-1_b": "تراكيب الاستياء تتطلب حتماً صيغة المنصوب Subjuntivo.",
+          "ex-b1-mol-1_c": "لاختلاف الفاعل يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b1-mol-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل dar بالمنصوب الغائب بعد عبارة es inaceptable que: (den)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة المنصوب للغائب الجمع من الفعل dar بعد es inaceptable que: (den)",
+        "stemEs": "Es inaceptable que no nos _____ ninguna explicación por la avería.",
+        "stemAr": "من غير المقبول ألا يقدموا لنا أي توضيح عن هذا العطل.",
+        "targetVocab": [
+          "es inaceptable que"
+        ],
+        "explanationAr": "بعد es inaceptable que يجب تصريف الفعل في المنصوب: den.",
+        "answerKey": {
+          "accepted": [
+            "den"
+          ],
+          "acceptableAnswers": [
+            "den"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-mol-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التعبير الدال على السخط والغضب الشديد من سوء المعاملة",
+        "skills": [
+          "vocabulary",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي تعبير ينقل شعوراً بالسخط البالغ إزاء الظلم وسوء التصرف؟",
+        "stemEs": "_____ que se rían de los derechos de los clientes.",
+        "stemAr": "... أن يسخروا من حقوق العملاء.",
+        "options": [
+          {
+            "id": "ex-b1-mol-3_a",
+            "text": "Me indigna que",
+            "textAr": "يثير سخطي البالغ أن (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-mol-3_b",
+            "text": "Me alegra que",
+            "textAr": "يسعدني أن (معنى متناقض)",
+            "isCorrect": false,
+            "distractorRationaleAr": "السخرية من حقوق العملاء تثير السخط وليس السعادة."
+          },
+          {
+            "id": "ex-b1-mol-3_c",
+            "text": "Me gusta que",
+            "textAr": "يعجبني أن",
+            "isCorrect": false,
+            "distractorRationaleAr": "يناقض سياق الاحتجاج والشكوى."
+          }
+        ],
+        "targetVocab": [
+          "me indigna que",
+          "queja",
+          "malestar"
+        ],
+        "explanationAr": "Me indigna que يعبر عن السخط والغضب البالغ والاستنكار الشديد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-mol-3_a"
+          ],
+          "selectedOptionId": "ex-b1-mol-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-mol-3_b": "السخرية من حقوق العملاء تثير السخط وليس السعادة.",
+          "ex-b1-mol-3_c": "يناقض سياق الاحتجاج والشكوى."
+        }
+      },
+      {
+        "id": "ex-b1-mol-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن الشعور بالغضب من انقطاع الخدمة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-mol-4_t1",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "ex-b1-mol-4_t2",
+            "kind": "token",
+            "text": "da"
+          },
+          {
+            "id": "ex-b1-mol-4_t3",
+            "kind": "token",
+            "text": "rabia"
+          },
+          {
+            "id": "ex-b1-mol-4_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b1-mol-4_t5",
+            "kind": "token",
+            "text": "se"
+          },
+          {
+            "id": "ex-b1-mol-4_t6",
+            "kind": "token",
+            "text": "corte"
+          },
+          {
+            "id": "ex-b1-mol-4_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b1-mol-4_t8",
+            "kind": "token",
+            "text": "conexión"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me da rabia que se corte la conexión"
+          ],
+          "tokenOrder": [
+            "ex-b1-mol-4_t1",
+            "ex-b1-mol-4_t2",
+            "ex-b1-mol-4_t3",
+            "ex-b1-mol-4_t4",
+            "ex-b1-mol-4_t5",
+            "ex-b1-mol-4_t6",
+            "ex-b1-mol-4_t7",
+            "ex-b1-mol-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: عبارة الغضب Me da rabia que ثم المنصوب se corte ثم الفاعل la conexión.",
+        "targetVocab": [
+          "me da rabia que"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-mol-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد درجة استياء العميل من التأخير",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لشكوى العميل وحدد التعبير الذي يصف به الموقف",
+        "stemEs": "Es inaceptable que tengamos que esperar tres horas sin recibir agua.",
+        "stemAr": "من غير المقبول أن نضطر للانتظار ثلاث ساعات دون الحصول على ماء.",
+        "options": [
+          {
+            "id": "ex-b1-mol-5_a",
+            "text": "es inaceptable que",
+            "textAr": "غير مقبول إطلاقاً مع المنصوب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-mol-5_b",
+            "text": "me alegra que",
+            "textAr": "يسرني",
+            "isCorrect": false,
+            "distractorRationaleAr": "العميل يحتج بغضب على طول الانتظار."
+          },
+          {
+            "id": "ex-b1-mol-5_c",
+            "text": "malestar",
+            "textAr": "استياء اسمي فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم العبارة التقويمية es inaceptable que."
+          }
+        ],
+        "targetVocab": [
+          "es inaceptable que",
+          "malestar",
+          "queja"
+        ],
+        "explanationAr": "المتحدث قال: 'Es inaceptable que tengamos que esperar'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_inaceptable_esperar_horas.mp3",
+        "speechEs": "Es inaceptable que tengamos que esperar tres horas sin recibir agua.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-mol-5_a"
+          ],
+          "selectedOptionId": "ex-b1-mol-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-mol-5_b": "العميل يحتج بغضب على طول الانتظار.",
+          "ex-b1-mol-5_c": "المتحدث استخدم العبارة التقويمية es inaceptable que."
+        }
+      },
+      {
+        "id": "ex-b1-mol-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك الاحتجاجية بالمنصوب لرفض الإهمال",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب احتجاجي حازم ومؤدب:",
+        "stemEs": "Me molesta mucho que no respeten el plazo acordado para la entrega.",
+        "stemAr": "يزعجني كثيراً ألا يحترموا الموعد المتفق عليه للتسليم.",
+        "audioKey": "pending/b1_molesta_respeten_plazo.mp3",
+        "targetVocab": [
+          "me molesta que",
+          "queja"
+        ],
+        "explanationAr": "انتبه لنطق صيغة المنصوب respeten بكسرة واضحة قبل النون.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_molesta_respeten_plazo.mp3",
+          "modelAnswer": "Me molesta mucho que no respeten el plazo acordado para la entrega."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-falsos-amigos-avanzados",
+    "titleAr": "النظائر الخادعة والأخطاء الشائعة في الترجمة: Falsos amigos avanzados",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u6-translation",
+    "objectiveAr": "أن يتجنب المتعلم الفخاخ المعجمية للنظائر الخادعة (constipado, pretender, realizar, soportar, eventual) عند الترجمة من وإلى الإسبانية.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "constipado",
+      "pretender",
+      "realizar",
+      "soportar",
+      "eventual",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Falso amigo médico: constipado (resfriado, catarro, jamás estreñimiento)",
+      "Falso amigo volitivo: pretender (intentar, aspirar a, no fingir como en inglés)",
+      "Falso amigo cognitivo: realizar (llevar a cabo, no darse cuenta de repente)",
+      "Falso amigo de tolerancia: soportar (aguantar, tolerar, no sostener financieramente)",
+      "Falso amigo temporal: eventual (incierto, provisional, no definitivo al final)"
+    ],
+    "grammarTopics": [
+      "falsos-amigos-avanzados",
+      "interferencias-lexicas-traduccion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ورشة تدريبية لمترجمين فوريين في مقر الأمم المتحدة بجنيف لمناقشة زلات الترجمة الكبرى.",
+        "settingAr": "مقصورة الترجمة الفورية، قصر الأمم، جنيف",
+        "lines": [
+          {
+            "es": "Un error garrafal es traducir 'constipado' por estreñimiento; en español significa tener un resfriado común.",
+            "ar": "من الأخطاء الفادحة ترجمة 'constipado' بالإمساك المعوي؛ ففي الإسبانية تعني ببساطة الإصابة بنزلة برد وزكام.",
+            "arEg": "غلطة شنيعة إنك تترجم constipado بإمساك؛ في الإسباني دي معناها عنده نزلة برد ورشح مش أكتر.",
+            "audioKey": "pending/c1-u6-fal-1"
+          },
+          {
+            "es": "Asimismo, 'pretender' no significa fingir, sino albergar la firme intención de lograr un objetivo.",
+            "ar": "كذلك، فإن فعل 'pretender' لا يعني التظاهر والادعاء الكاذب، بل السعي وامتلاك نية جازمة لتحقيق هدف.",
+            "arEg": "وكمان فعل pretender مش معناه بيستهبل أو بيمثل، معناه إنه بيسعى وعايز يحقق هدف بجدية.",
+            "audioKey": "pending/c1-u6-fal-2"
+          },
+          {
+            "es": "Cuando decimos que un empleo es 'eventual', nos referimos a que es temporal e incierto, no definitivo.",
+            "ar": "حين نقول إن وظيفة ما هي 'eventual'، فنحن نعني أنها مؤقتة وغير مستقرة، وليست نهائية بأي حال.",
+            "arEg": "لما نقول الشغلانة دي eventual نقصد إنها مؤقتة ومش دايمة، مش زي ما الناس فاهمة بالترجمة الحرفية.",
+            "audioKey": "pending/c1-u6-fal-3"
+          },
+          {
+            "es": "El traductor riguroso debe desconfiar de las semejanzas engañosas con otras lenguas occidentales.",
+            "ar": "يجب على المترجم الحصيف والمتمرس أن يرتاب في أوجه الشبه الخادعة مع اللغات الغربية الأخرى.",
+            "arEg": "المترجم الشاطر لازم ياخد باله ومينخدعش بالشبه الظاهري بين الكلمات الإسبانية والإنجليزي أو اللغات التانية.",
+            "audioKey": "pending/c1-u6-fal-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-faa-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى تحذير مدرب الترجمة وحدد المعنى الحقيقي لكلمة «constipado» في اللغة الإسبانية الفصيحة.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا يعني شخص يقول بالإسبانية: «Estoy constipado»؟",
+        "stemEs": "Un error garrafal es traducir 'constipado' por estreñimiento; en español significa tener un resfriado común.",
+        "stemAr": "من الأخطاء الفادحة ترجمة 'constipado' بالإمساك المعوي؛ ففي الإسبانية تعني ببساطة الإصابة بنزلة برد وزكام.",
+        "options": [
+          {
+            "id": "ex-c1-faa-1_a",
+            "text": "Tener un resfriado, gripe o catarro común",
+            "textAr": "مصاب بنزلة برد أو رشح وزكام حاد في الجهاز التنفسي",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-faa-1_b",
+            "text": "Sufrir estreñimiento intestinal",
+            "textAr": "يعاني من إمساك معوي وبطء هضم",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا هو الفخ الترجمي الشهير بسبب الإنجليزية والفرنسية."
+          },
+          {
+            "id": "ex-c1-faa-1_c",
+            "text": "Estar enfadado y deprimido",
+            "textAr": "يشعر بالغضب والاكتئاب النفسي",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بالأعراض المرضية."
+          }
+        ],
+        "targetVocab": [
+          "constipado",
+          "rigor"
+        ],
+        "explanationAr": "في الإسبانية «constipado» مرادف لـ resfriado (نزلة برد). أما الإمساك فيسمى حصراً «estreñimiento».",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u6-fal-1",
+        "speechEs": "Un error garrafal es traducir 'constipado' por estreñimiento; en español significa tener un resfriado común.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-faa-1_a"
+          ],
+          "selectedOptionId": "ex-c1-faa-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-faa-1_b": "هذا هو الفخ الترجمي الشهير بسبب الإنجليزية والفرنسية.",
+          "ex-c1-faa-1_c": "لا علاقة له بالأعراض المرضية."
+        }
+      },
+      {
+        "id": "ex-c1-faa-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو المعنى الحقيقي للفعل «pretender» في جملة مثل: «El gobierno pretende reducir el déficit»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الدلالة الإسبانية الفصيحة للفعل pretender:",
+        "stemEs": "El joven investigador pretende obtener una beca postdoctoral este año.",
+        "stemAr": "يسعى الباحث الشاب ويعتزم الحصول على منحة ما بعد الدكتوراه هذا العام.",
+        "options": [
+          {
+            "id": "ex-c1-faa-2_a",
+            "text": "Tener la intención, aspirar o proponerse un fin",
+            "textAr": "الاعتزام والسعي الجاد والطموح لتحقيق غاية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-faa-2_b",
+            "text": "Fingir o simular falsamente algo que no es",
+            "textAr": "التظاهر الكاذب والادعاء المخادع",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا معنى to pretend في الإنجليزية وهو نظير خادع."
+          },
+          {
+            "id": "ex-c1-faa-2_c",
+            "text": "Olvidar por completo las obligaciones",
+            "textAr": "نسيان الواجبات وإهمالها",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس النية والسعي تماماً."
+          }
+        ],
+        "targetVocab": [
+          "pretender",
+          "rigor"
+        ],
+        "explanationAr": "«Pretender» في الإسبانية تعني السعي والطموح (aspirar / intentar). أما التظاهر والادعاء فيقابله الفعل «fingir».",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-faa-2_a"
+          ],
+          "selectedOptionId": "ex-c1-faa-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-faa-2_b": "هذا معنى to pretend في الإنجليزية وهو نظير خادع.",
+          "ex-c1-faa-2_c": "عكس النية والسعي تماماً."
+        }
+      },
+      {
+        "id": "ex-c1-faa-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالصفة التي تعني في الإسبانية «مؤقت وعارض وقابل للتغير» ولا تعني نهائياً: «un contrato ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الصفة الإسبانية الخادعة الدالة على العمل المؤقت:",
+        "stemEs": "No tiene plaza fija en la empresa; por ahora tiene un contrato ____.",
+        "stemAr": "ليس لديه وظيفة دائمة في الشركة؛ ففي الوقت الراهن لديه عقد مؤقت وعارض.",
+        "targetVocab": [
+          "eventual"
+        ],
+        "explanationAr": "«Eventual» في الإسبانية تعني عارض أو مؤقت (provisional / incierto). أما في الإنجليزية فتعني eventual (النهائي في العاقبة).",
+        "answerKey": {
+          "accepted": [
+            "eventual"
+          ],
+          "acceptableAnswers": [
+            "eventual"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-faa-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا يعني الفعل «soportar» في الإسبانية في سياق: «No soporto este calor sofocante»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المعنى النفسي والإدراكي الدقيق للفعل soportar:",
+        "stemEs": "El paciente apenas puede ____ el dolor de la herida.",
+        "stemAr": "بالكاد يستطيع المريض تحمل وطأة الألم الناتج عن الجرح ومكابدته.",
+        "options": [
+          {
+            "id": "ex-c1-faa-4_a",
+            "text": "aguantar, tolerar o sufrir con paciencia",
+            "textAr": "التحمل والمكابدة والصبر على المكروه",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-faa-4_b",
+            "text": "financiar económicamente a una familia",
+            "textAr": "الإنفاق المالي وإعالة الأسرة",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا معنى to support في الإنجليزية."
+          },
+          {
+            "id": "ex-c1-faa-4_c",
+            "text": "aplaudir una actuación musical",
+            "textAr": "التصفيق والإشادة بعرض موسيقي",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة له بتحمل الألم."
+          }
+        ],
+        "targetVocab": [
+          "soportar",
+          "rigor"
+        ],
+        "explanationAr": "«Soportar» تعني الصبر والتحمل (aguantar). أما الدعم والمساندة والإعالة المالية فيقابلها في الإسبانية «apoyar» أو «mantener».",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-faa-4_a"
+          ],
+          "selectedOptionId": "ex-c1-faa-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-faa-4_b": "هذا معنى to support في الإنجليزية.",
+          "ex-c1-faa-4_c": "لا علاقة له بتحمل الألم."
+        }
+      },
+      {
+        "id": "ex-c1-faa-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء جملة تحذر من الوقوع في فخاخ الكلمات الخادعة في الترجمة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-faa-5_t1",
+            "kind": "token",
+            "text": "Evitemos"
+          },
+          {
+            "id": "ex-c1-faa-5_t2",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "ex-c1-faa-5_t3",
+            "kind": "token",
+            "text": "falsos"
+          },
+          {
+            "id": "ex-c1-faa-5_t4",
+            "kind": "token",
+            "text": "amigos"
+          },
+          {
+            "id": "ex-c1-faa-5_t5",
+            "kind": "token",
+            "text": "peligrosos"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Evitemos los falsos amigos peligrosos"
+          ],
+          "tokenOrder": [
+            "ex-c1-faa-5_t1",
+            "ex-c1-faa-5_t2",
+            "ex-c1-faa-5_t3",
+            "ex-c1-faa-5_t4",
+            "ex-c1-faa-5_t5"
+          ]
+        },
+        "explanationAr": "صيغة الحث Evitemos متبوعة بالمفعول به los falsos amigos والصفة التحذيرية peligrosos.",
+        "targetVocab": [
+          "rigor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-faa-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة مترجم حذر يتحرى الدقة الصارمة في اختيار ألفاظه.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الإيقاع الصوتي الرصين:",
+        "stemEs": "No pretendo imponer mi criterio personal.",
+        "stemAr": "لا أسعى ولا أعتزم فرض معاييري وتفضيلاتي الشخصية.",
+        "audioKey": "pending/c1-u6-fal-spk",
+        "targetVocab": [
+          "pretender",
+          "rigor"
+        ],
+        "explanationAr": "انتبه لنطق حرف r الرخو في criterio وإخراج التاء غير مفخمة في pretendo لضمان الرصانة اللغوية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u6-fal-spk",
+          "modelAnswer": "No pretendo imponer mi criterio personal."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-noticias-prensa",
+    "unitSlug": "b1-u7-media",
+    "levelCode": "B1",
+    "titleAr": "لغة الصحافة والإعلام: قراءة العناوين وتحليل الأخبار ومصادر المعلومات",
+    "titleEs": "El lenguaje de las noticias, titulares y medios de comunicación",
+    "subtitleAr": "أقسام الجريدة، صياغة العناوين الجاذبة، والتحقق من موثوقية المصادر",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقرأ المتعلم عناوين الصحف والمقالات الإخبارية باللغة الإسبانية ويفهم رسالتها الأساسية.",
+        "أن يتعرف على البنية الصحفية: el titular, la entradilla, la fuente fidedigna, el suceso.",
+        "أن يميز بين الأخبار الموثقة والمعلومات المضللة أو الزائفة (las noticias falsas / bulos)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الخصائص اللغوية للأسلوب الصحفي الإسباني",
+          "explanationAr": "1. **لغة العناوين (Los titulares)**:\n- استخدام الحاضر التاريخي (Presente histórico) لإعطاء حيوية للحدث المنتهي: *El gobierno aprueba una nueva ley laboral*.\n- حذف أدوات التعريف أحياناً للاختصار: *Lluvias torrenciales provocan inundaciones*.\n2. **نسبة الكلام لمصادره**:\n- **Según fuentes oficiales**: وفقاً لمصادر رسمية.\n- **De acuerdo con**: بحسب ما صرح به المتحدث الرسمي.\n- **Señalar / Apuntar / Declarar**: أفعال النقل الإخباري الرصينة."
+        }
+      ],
+      "commonMistakesAr": [
+        "ترجمة 'الخبر العاجل' حرفياً بـ *noticia rápida*؛ المصطلح الإخباري المعتمد هو última hora أو noticia de última hora.",
+        "استخدام *título* بدلاً من el titular عند الحديث عن عناوين المقالات والصحف."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «شفت المانشيت ده في الجرنال؟ المصادر بتقول كذا». بالإسبانية: ¿Has visto el titular? Según fuentes oficiales..."
+        }
+      ],
+      "culturalNoteAr": "الصحف الإسبانية الكبرى مثل *El País* و *El Mundo* تتبع أدلة أسلوب صارمة (Libros de estilo) يُنصح دارسو الإسبانية بمطالعتها لتعلم الكتابة الموضوعية الرصينة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-noticias-prensa-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الإعلام والصحافة",
+        "bodyAr": "المفردات الأساسية:\n- **el titular**: العنوان الصحفي البارز (المانشيت)\n- **la fuente fidedigna**: المصدر الموثوق والمعتمد\n- **el suceso**: الحدث أو الواقعة الإخبارية\n- **la última hora**: الخبر العاجل\n- **desmentir**: يكذب أو ينفي خبراً شاع\n- **el medio de comunicación**: وسيلة الإعلام",
+        "examples": [
+          {
+            "es": "El titular del periódico destaca el acuerdo internacional sobre el clima.",
+            "ar": "العنوان الرئيسي للجريدة يبرز الاتفاق الدولي حول المناخ."
+          },
+          {
+            "es": "El portavoz salió a desmentir los rumores difundidos en redes sociales.",
+            "ar": "خرج المتحدث الرسمي لنفي الشائعات المتداولة على وسائل التواصل."
+          },
+          {
+            "es": "Es esencial consultar fuentes fidedignas antes de compartir una noticia.",
+            "ar": "من الجوهري مراجعة مصادر موثوقة قبل مشاركة أي خبر."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "titular",
+      "fuente fidedigna",
+      "suceso",
+      "última hora",
+      "desmentir",
+      "medio de comunicación"
+    ],
+    "reviewVocabulary": [
+      "noticia",
+      "periódico"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يقرأ المتعلم عناوين الصحف والمقالات الإخبارية باللغة الإسبانية ويفهم رسالتها الأساسية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-not-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني العنوان البارز في الصحافة (المانشيت)",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو المصطلح الصحفي الذي يطلق على عنوان المقال أو الخبر في الجريدة؟",
+        "stemEs": "El impactante _____ de la portada captó la atención de todos los lectores.",
+        "stemAr": "العنوان ... الصادم في الصفحة الأولى جذب انتباه جميع القراء.",
+        "options": [
+          {
+            "id": "ex-b1-not-1_a",
+            "text": "titular",
+            "textAr": "العنوان الصحفي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-not-1_b",
+            "text": "suceso",
+            "textAr": "الحدث الإخباري",
+            "isCorrect": false,
+            "distractorRationaleAr": "suceso هو الواقعة نفسها، أما الكلمة المكتوبة في الأعلى فهي titular."
+          },
+          {
+            "id": "ex-b1-not-1_c",
+            "text": "desmentir",
+            "textAr": "ينفي خبراً (فعل)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسماً مذكراً بعد el impactante."
+          }
+        ],
+        "targetVocab": [
+          "titular",
+          "suceso",
+          "desmentir"
+        ],
+        "explanationAr": "el titular هو العنوان الصحفي البارز في الجريدة أو الموقع الإخباري.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-not-1_a"
+          ],
+          "selectedOptionId": "ex-b1-not-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-not-1_b": "suceso هو الواقعة نفسها، أما الكلمة المكتوبة في الأعلى فهي titular.",
+          "ex-b1-not-1_c": "نحتاج اسماً مذكراً بعد el impactante."
+        }
+      },
+      {
+        "id": "ex-b1-not-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على نفي وتكذيب الشائعة في المصدر (desmentir)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الإسباني الذي يعني 'ينفي أو يكذب خبراً غير صحيح' في المصدر (desmentir)",
+        "stemEs": "El ministro convocó una rueda de prensa para _____ la información falsa.",
+        "stemAr": "دعا الوزير لمؤتمر صحفي لنفي المعلومة الخاطئة.",
+        "targetVocab": [
+          "desmentir"
+        ],
+        "explanationAr": "فعل desmentir يعني ينفي أو يكذب خبراً أو شائعة متداولة.",
+        "answerKey": {
+          "accepted": [
+            "desmentir"
+          ],
+          "acceptableAnswers": [
+            "desmentir"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-not-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الوصف المهني للمصدر الموثوق للأخبار",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تصف مصدراً إخبارياً يتمتع بأعلى درجات المصداقية والتحقق؟",
+        "stemEs": "La noticia fue confirmada por una _____ cercana a la investigación.",
+        "stemAr": "تم تأكيد الخبر من قِبل ... قريبة من التحقيقات.",
+        "options": [
+          {
+            "id": "ex-b1-not-3_a",
+            "text": "fuente fidedigna",
+            "textAr": "مصدر موثوق ومعتمد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-not-3_b",
+            "text": "última hora",
+            "textAr": "خبر عاجل",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج اسم الجهة أو المصدر (fuente fidedigna)."
+          },
+          {
+            "id": "ex-b1-not-3_c",
+            "text": "titular",
+            "textAr": "عنوان",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخبر يؤكده مصدر موثوق."
+          }
+        ],
+        "targetVocab": [
+          "fuente fidedigna",
+          "última hora",
+          "titular",
+          "noticia"
+        ],
+        "explanationAr": "una fuente fidedigna تعني مصدراً موثوقاً يتمتع بالمصداقية والأمانة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-not-3_a"
+          ],
+          "selectedOptionId": "ex-b1-not-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-not-3_b": "نحتاج اسم الجهة أو المصدر (fuente fidedigna).",
+          "ex-b1-not-3_c": "الخبر يؤكده مصدر موثوق."
+        }
+      },
+      {
+        "id": "ex-b1-not-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للإعلان عن خبر عاجل في وسائل الإعلام",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-not-4_t1",
+            "kind": "token",
+            "text": "Tenemos"
+          },
+          {
+            "id": "ex-b1-not-4_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b1-not-4_t3",
+            "kind": "token",
+            "text": "noticia"
+          },
+          {
+            "id": "ex-b1-not-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b1-not-4_t5",
+            "kind": "token",
+            "text": "última"
+          },
+          {
+            "id": "ex-b1-not-4_t6",
+            "kind": "token",
+            "text": "hora"
+          },
+          {
+            "id": "ex-b1-not-4_t7",
+            "kind": "token",
+            "text": "hoy"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Tenemos una noticia de última hora hoy"
+          ],
+          "tokenOrder": [
+            "ex-b1-not-4_t1",
+            "ex-b1-not-4_t2",
+            "ex-b1-not-4_t3",
+            "ex-b1-not-4_t4",
+            "ex-b1-not-4_t5",
+            "ex-b1-not-4_t6",
+            "ex-b1-not-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Tenemos ثم المفعول una noticia de última hora ثم الظرف hoy.",
+        "targetVocab": [
+          "última hora",
+          "noticia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-not-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد دور وسائل الإعلام في التوعية",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لنشرة الأخبار وحدد ما تؤكده المذيعة",
+        "stemEs": "Todo medio de comunicación debe verificar rigurosamente los hechos.",
+        "stemAr": "يجب على كل وسيلة إعلام أن تتحقق بدقة من الوقائع.",
+        "options": [
+          {
+            "id": "ex-b1-not-5_a",
+            "text": "medio de comunicación",
+            "textAr": "وسيلة الإعلام (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-not-5_b",
+            "text": "desmentir",
+            "textAr": "نفي فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المذيعة تحدثت عن مسؤولية وسيلة الإعلام ككل (medio de comunicación)."
+          },
+          {
+            "id": "ex-b1-not-5_c",
+            "text": "última hora",
+            "textAr": "عاجل",
+            "isCorrect": false,
+            "distractorRationaleAr": "الحديث يدور حول واجب وسائل الإعلام المهني."
+          }
+        ],
+        "targetVocab": [
+          "medio de comunicación",
+          "desmentir",
+          "última hora"
+        ],
+        "explanationAr": "المذيعة قالت: 'Todo medio de comunicación debe verificar los hechos'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_medio_comunicacion_verificar.mp3",
+        "speechEs": "Todo medio de comunicación debe verificar rigurosamente los hechos.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-not-5_a"
+          ],
+          "selectedOptionId": "ex-b1-not-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-not-5_b": "المذيعة تحدثت عن مسؤولية وسيلة الإعلام ككل (medio de comunicación).",
+          "ex-b1-not-5_c": "الحديث يدور حول واجب وسائل الإعلام المهني."
+        }
+      },
+      {
+        "id": "ex-b1-not-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك الإخبارية بالاستناد لمصادر موثوقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب صحفي رصين:",
+        "stemEs": "Según una fuente fidedigna, el titular del periódico confirma el acuerdo.",
+        "stemAr": "وفقاً لمصدر موثوق، يؤكد العنوان الرئيسي للجريدة التوصل للاتفاق.",
+        "audioKey": "pending/b1_fuente_fidedigna_titular.mp3",
+        "targetVocab": [
+          "fuente fidedigna",
+          "titular"
+        ],
+        "explanationAr": "انتبه لنطق حرف d بين الصائتين في fidedigna بنعومة صوتية طبيعية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_fuente_fidedigna_titular.mp3",
+          "modelAnswer": "Según una fuente fidedigna, el titular del periódico confirma el acuerdo."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

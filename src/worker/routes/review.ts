@@ -79,7 +79,7 @@ async function todayCounts(env: Env, userId: string, dayStart: string) {
 }
 
 /** يبني بيانات العرض لكل بطاقة — بلا كشف الإجابة قبل طلبها */
-function publicCard(card: CardRow, entry: EntryRow, kind: CardKind) {
+function publicCard(card: CardRow, entry: EntryRow, kind: CardKind, explanationStyle?: string) {
   const base = {
     id: `${card.item_type}:${card.item_id}:${card.card_kind}`,
     kind,
@@ -105,7 +105,7 @@ function publicCard(card: CardRow, entry: EntryRow, kind: CardKind) {
     ipa: entry.ipa,
     pronunciationHintAr: entry.pronunciation_hint_ar,
     revealAr: entry.meaning_ar_fusha ?? '',
-    revealArEg: entry.meaning_ar_eg ?? null,
+    revealArEg: explanationStyle === 'fusha' ? null : (entry.meaning_ar_eg ?? null),
     usageNoteAr: entry.usage_note_ar ?? null,
     commonErrorAr: entry.common_error_ar ?? null,
     exampleEs: null,
@@ -171,7 +171,7 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
 
   const cards = picked
     .filter(c => entries.has(c.item_id))
-    .map(c => publicCard(c, entries.get(c.item_id)!, c.card_kind as CardKind));
+    .map(c => publicCard(c, entries.get(c.item_id)!, c.card_kind as CardKind, user.explanationStyle));
 
   const totals = await env.DB.prepare(
     `SELECT COUNT(*) AS total,

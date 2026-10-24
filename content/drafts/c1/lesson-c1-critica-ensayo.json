@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-critica-ensayo",
+    "titleAr": "المقال الفكري والتحليل الهيرمينوطيقي: El ensayo crítico y la hermenéutica",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u4-literature",
+    "objectiveAr": "أن يحلل المتعلم نصوص المقال الفلسفي والنقدي كاشفاً البنى المضمرة والأبعاد التأويلية والتناص (hermenéutica, intertextualidad, subtexto).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ensayo",
+      "hermenéutica",
+      "intertextualidad",
+      "subtexto",
+      "desentrañar",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "La hermenéutica textual: desentrañar los estratos de significado profundo",
+      "La intertextualidad explícita e implícita como red de diálogos culturales",
+      "La elucidación del subtexto: lo que calla la voz narrativa pero insinúa el texto",
+      "La prosa ensayística: argumentación especulativa con rigor estético"
+    ],
+    "grammarTopics": [
+      "el-ensayo-literario-c1",
+      "teoria-critica-e-interpretacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ندوة فكرية حول تطور فن المقال عند أورتيغا إي غاسيت وخوان غويتيصولو.",
+        "settingAr": "قاعة المؤتمرات في مؤسسة أورتيغا-مارانيون، مدريد",
+        "lines": [
+          {
+            "es": "El ensayo moderno no pretende dogmatizar, sino suscitar una meditación compartida con el lector.",
+            "ar": "لا يرمي المقال الفكري الحديث إلى فرض عقائد جازمة، بل إلى إثارة تأمل تشاركي هادئ مع القارئ.",
+            "arEg": "المقال الحديث مش غرضه يديك أوامر ولا يفرض عليك رأي، غرضه يشغل دماغك وتفكر مع الكاتب خطوة بخطوة.",
+            "audioKey": "pending/c1-u4-ens-1"
+          },
+          {
+            "es": "La hermenéutica nos exige desentrañar los sentidos ocultos bajo la aparente sencillez del texto.",
+            "ar": "يقتضي علم التأويل والهيرمينوطيقا منا تفكيك واستجلاء المعاني الخبيئة تحت بساطة النص الظاهرة.",
+            "arEg": "التأويل النقدي بيطلب مننا ننزل تحت السطح ونكشف المعاني المستخبية ورا الكلام البسيط اللي في الظاهر.",
+            "audioKey": "pending/c1-u4-ens-2"
+          },
+          {
+            "es": "El autor teje una sutil red de intertextualidad con los pensadores del Siglo de Oro.",
+            "ar": "ينسج المؤلف شبكة بالغة الدقة والبراعة من التناص المعرفي مع مفكري العصر الذهبي الإسباني.",
+            "arEg": "الكاتب بيعمل شبكة تناص عبقرية وحوار خفي مع عمالقة الفكر والشعر بتوع العصر الذهبي.",
+            "audioKey": "pending/c1-u4-ens-3"
+          },
+          {
+            "es": "Solo prestando atención al subtexto podemos comprender la amarga ironía de su desenlace.",
+            "ar": "فقط عبر الإنصات إلى النص المضمر والباطني، يسعنا استيعاب السخرية المرة التي تختم عمله.",
+            "arEg": "مش هنفهم السخرية المرة اللي في القفلة غير لما ناخد بالنا من الكلام اللي مستخبي بين السطور كويس.",
+            "audioKey": "pending/c1-u4-ens-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-cen-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث المحاضر واكتشف المنهج الفلسفي المخصص لتأويل النصوص واستجلاء طبقات معناها.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما الحقل النقدي المنهجي الذي دعت إليه المحاضرة لاستكشاف المعنى الخبيء؟",
+        "stemEs": "La hermenéutica nos exige desentrañar los sentidos ocultos bajo la aparente sencillez del texto.",
+        "stemAr": "يقتضي علم التأويل والهيرمينوطيقا منا تفكيك واستجلاء المعاني الخبيئة تحت بساطة النص الظاهرة.",
+        "options": [
+          {
+            "id": "ex-c1-cen-1_a",
+            "text": "La hermenéutica",
+            "textAr": "علم التأويل والتفسير العميق للرموز والنصوص الإنسانية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cen-1_b",
+            "text": "La ortografía básica",
+            "textAr": "قواعد الإملاء المدرسية الأولية",
+            "isCorrect": false,
+            "distractorRationaleAr": "مهارة كتابية بسيطة لا تسمى تأويلاً."
+          },
+          {
+            "id": "ex-c1-cen-1_c",
+            "text": "La estadística descriptiva",
+            "textAr": "علم الإحصاء الرقمي والرسوم البيانية",
+            "isCorrect": false,
+            "distractorRationaleAr": "حقل كمي لا يفكك المجاز الأدبي."
+          }
+        ],
+        "targetVocab": [
+          "hermenéutica",
+          "desentrañar"
+        ],
+        "explanationAr": "«La hermenéutica» هي نظرية ومنهجية تأويل النصوص الأدبية والفلسفية لفهم ما وراء الظاهر من دلالات وجودية وتاريخية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u4-ens-2",
+        "speechEs": "La hermenéutica nos exige desentrañar los sentidos ocultos bajo la aparente sencillez del texto.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cen-1_a"
+          ],
+          "selectedOptionId": "ex-c1-cen-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cen-1_b": "مهارة كتابية بسيطة لا تسمى تأويلاً.",
+          "ex-c1-cen-1_c": "حقل كمي لا يفكك المجاز الأدبي."
+        }
+      },
+      {
+        "id": "ex-c1-cen-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو المصطلح النقدي الدال على «تفاعل النص مع نصوص أخرى سابقة واقتباسه منها أو الإشارة إليها»؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر المفهوم النقدي المعبّر عن تداخل النصوص وحوارها:",
+        "stemEs": "La novela dialoga con El Quijote mediante una constante ____.",
+        "stemAr": "تحاور الرواية دون كيشوت عبر تناص معرفي وأدبي مستمر.",
+        "options": [
+          {
+            "id": "ex-c1-cen-2_a",
+            "text": "intertextualidad",
+            "textAr": "التناص / الحوار الداخلي المتبادل بين النصوص عبر الزمن",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cen-2_b",
+            "text": "traducción automática",
+            "textAr": "الترجمة الآلية بواسطة الحواسيب",
+            "isCorrect": false,
+            "distractorRationaleAr": "مصطلح تقني لا علاقة له بالنقد الأدبي."
+          },
+          {
+            "id": "ex-c1-cen-2_c",
+            "text": "censura previa",
+            "textAr": "الرقابة المسبقة ومنع النشر",
+            "isCorrect": false,
+            "distractorRationaleAr": "إجراء سياسي سلطوي."
+          }
+        ],
+        "targetVocab": [
+          "intertextualidad",
+          "rigor"
+        ],
+        "explanationAr": "«La intertextualidad» مفهوم نقدي صاغته جوليا كريستيفا ويدل على أن كل نص هو فسيفساء من استشهادات واستدعاءات لنصوص سابقة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cen-2_a"
+          ],
+          "selectedOptionId": "ex-c1-cen-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cen-2_b": "مصطلح تقني لا علاقة له بالنقد الأدبي.",
+          "ex-c1-cen-2_c": "إجراء سياسي سلطوي."
+        }
+      },
+      {
+        "id": "ex-c1-cen-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالمصطلح النقدي الدال على المعنى المضمر غير المصرح به علانية بين السطور: «el ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب الكلمة النقدية الدالة على الباطن الدلالي للنص:",
+        "stemEs": "El crítico reveló que el verdadero conflicto de la obra yacía en el ____ silencioso.",
+        "stemAr": "كشف الناقد أن الصراع الحقيقي للعمل الأدبي كان يكمن في المعنى المضمر الصامت خلف الحوارات.",
+        "targetVocab": [
+          "subtexto"
+        ],
+        "explanationAr": "«El subtexto» (النص المضمر أو ما تحت النص) هو المعنى النفسي والفكري الدفين الذي لا يقال صراحة بل يفهم من القرائن والسياق.",
+        "answerKey": {
+          "accepted": [
+            "subtexto"
+          ],
+          "acceptableAnswers": [
+            "subtexto"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-cen-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي فعل أدبي فصيح يعني «كشف الأسرار المعقدة وفض مغاليقها بحنكة وفطنة»؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الفعل الأدق دلالة على حل الألغاز وتأويل النصوص الشائكة:",
+        "stemEs": "El ensayo busca ____ los enigmas éticos de nuestro tiempo.",
+        "stemAr": "يسعى المقال الفكري إلى استجلاء وفض الألغاز الأخلاقية الشائكة لعصرنا الراهن.",
+        "options": [
+          {
+            "id": "ex-c1-cen-4_a",
+            "text": "desentrañar",
+            "textAr": "استجلاء الشيء الغامض وفض أحشائه ومغاليقه",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-cen-4_b",
+            "text": "complicar",
+            "textAr": "تعقيد الأمور وزيادتها غموضاً وتشويشاً",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس غاية النقد والتوضيح."
+          },
+          {
+            "id": "ex-c1-cen-4_c",
+            "text": "olvidar",
+            "textAr": "إسقاط القضية من الحساب",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا يمثل هدف المفكر الجاد."
+          }
+        ],
+        "targetVocab": [
+          "desentrañar",
+          "ensayo"
+        ],
+        "explanationAr": "استعارة «desentrañar» مأخوذة من إخراج الأحشاء (entrañas)، وتفيد الغوص في صلب الشيء المستتر لإخراجه إلى نور الفهم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-cen-4_a"
+          ],
+          "selectedOptionId": "ex-c1-cen-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-cen-4_b": "عكس غاية النقد والتوضيح.",
+          "ex-c1-cen-4_c": "لا يمثل هدف المفكر الجاد."
+        }
+      },
+      {
+        "id": "ex-c1-cen-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء حكم نقدي يصف طبيعة قراءة المقال الفكري المعمق.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-cen-5_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-c1-cen-5_t2",
+            "kind": "token",
+            "text": "ensayo"
+          },
+          {
+            "id": "ex-c1-cen-5_t3",
+            "kind": "token",
+            "text": "exige"
+          },
+          {
+            "id": "ex-c1-cen-5_t4",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-c1-cen-5_t5",
+            "kind": "token",
+            "text": "lectura"
+          },
+          {
+            "id": "ex-c1-cen-5_t6",
+            "kind": "token",
+            "text": "hermenéutica"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El ensayo exige una lectura hermenéutica"
+          ],
+          "tokenOrder": [
+            "ex-c1-cen-5_t1",
+            "ex-c1-cen-5_t2",
+            "ex-c1-cen-5_t3",
+            "ex-c1-cen-5_t4",
+            "ex-c1-cen-5_t5",
+            "ex-c1-cen-5_t6"
+          ]
+        },
+        "explanationAr": "التركيب: الفاعل El ensayo والفعل المتعدي exige والمفعول به una lectura والصفة النقدية hermenéutica.",
+        "targetVocab": [
+          "ensayo",
+          "hermenéutica"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-cen-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة أستاذ نقد أدبي يتحدث برصانة وتؤدة في ندوة فكرية رفيعة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً الضغط الصوتي على حروف العلة الصحيحة:",
+        "stemEs": "Debemos desentrañar el subtexto de la obra.",
+        "stemAr": "يتعين علينا استجلاء المعنى المضمر والباطني لهذا العمل الإبداعي.",
+        "audioKey": "pending/c1-u4-ens-spk",
+        "targetVocab": [
+          "desentrañar",
+          "subtexto"
+        ],
+        "explanationAr": "احرص على مد مقطع -tra- المشدد في desentrañar والنطق الصحيح للمقطع المزدوج -xt- في subtexto بوضوح.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u4-ens-spk",
+          "modelAnswer": "Debemos desentrañar el subtexto de la obra."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

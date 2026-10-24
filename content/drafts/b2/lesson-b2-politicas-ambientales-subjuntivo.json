@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-politicas-ambientales-subjuntivo",
+    "unitSlug": "b2-u7-environment",
+    "levelCode": "B2",
+    "titleAr": "السياسات البيئية والتوصيات: صياغة اللوائح واستخدام المنصوب",
+    "titleEs": "Políticas ambientales y marco regulatorio: Prescripciones con el subjuntivo",
+    "subtitleAr": "اللوائح الملزمة، حظر الملوثات، واشتراط المعايير البيئية للمصانع",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصيغ المتعلم توصيات ولوائح تشريعية لحماية البيئة بأسلوب قانوني رصين.",
+        "أن يوظف صيغ الأمر غير المباشر والمنصوب: instar a que, exigir que, prohibir que, ser preceptivo que.",
+        "أن يطبق المعايير البيئية للمؤسسات: norma ambiental, vertido, emisión cero, sanción disuasoria."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال الإلزام والتوجيه التنظيمي مع المنصوب",
+          "explanationAr": "1. **أفعال الإلزام والمطالبة الرسمية (Exigir / Instar a que + Subjuntivo)**:\n- *La Unión Europea insta a que los Estados miembros reduzcan el uso de plásticos*.\n- *La normativa exige que las fábricas depuren sus aguas residuales antes del vertido*.\n2. **التعبير عن الحظر الصارم (Prohibir que + Subjuntivo)**:\n- *Se prohíbe taxativamente que se arrojen residuos tóxicos a los ríos*.\n3. **التراكيب الإلزامية غير الشخصية (Ser preceptivo / obligatorio que + Subjuntivo)**:\n- *Es preceptivo que los nuevos edificios cuenten con paneles solares*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المضارع الإخباري بعد أفعال الحظر والمطالبة (الخطأ: *se prohíbe que tiran*; الصواب: se prohíbe que tiren بالمنصوب).",
+        "استخدام كلمات عامة بدلاً من المصطلحات الفنية المعتمدة (مثل استخدام *basura líquida* بدلاً من المصطلح القانوني الصحيح **el vertido** للمخلفات السائلة)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في القوانين بنقول «القانون بيلزم المصانع تراجع انبعاثاتها وبيمنع إلقاء مخلفات الصرف في النيل مع عقوبات رادعة». بالإسبانية: La ley exige que las fábricas controlen sus emisiones y prohíbe que viertan residuos tóxicos."
+        }
+      ],
+      "culturalNoteAr": "الاتحاد الأوروبي وإسبانيا يطبقان مبدأ 'Quien contamina, paga' (من يلوث يدفع)، حيث تفرض غرامات رادعة على الشركات المخالفة للضوابط البيئية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-politicas-ambientales-subjuntivo-intro",
+        "type": "explanation",
+        "titleAr": "التشريعات والسياسات البيئية الإلزامية",
+        "bodyAr": "المفردات القانونية والبيئية:\n- **instar a que**: يحث ويهيب رسمياً بـ (+ منصُوب Subjuntivo)\n- **prohibir taxativamente que**: يحظر بشكل قاطع وحاسم أن (+ منصُوب Subjuntivo)\n- **el vertido**: المخلفات السائلة والمصبات الصناعية الملوثة للمياه\n- **la normativa medioambiental**: اللائحة التنظيمية البيئية المعتمدة\n- **la sanción disuasoria**: العقوبة والغرامة الرادعة لمنع تكرار المخالفة\n- **las emisiones netas cero**: الانبعاثات الصفرية الصافية وتحييد الكربون",
+        "examples": [
+          {
+            "es": "El ministerio insta a que los ayuntamientos implanten zonas de bajas emisiones.",
+            "ar": "تهيب الوزارة بالبلديات أن تقيم مناطق منخفضة الانبعاثات (المنصوب: implanten)."
+          },
+          {
+            "es": "Se prohíbe taxativamente que las fábricas realicen vertidos no tratados en el mar.",
+            "ar": "يُحظر بشكل قاطع أن تقوم المصانع بمصبات غير معالجة في البحر (المنصوب: realicen)."
+          },
+          {
+            "es": "Es preceptivo aplicar sanciones disuasorias a quienes vulneren la normativa.",
+            "ar": "من الإلزامي تطبيق عقوبات رادعة على من يخترق اللائحة التنظيمية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "instar a que",
+      "prohibir taxativamente que",
+      "vertido",
+      "normativa",
+      "sanción disuasoria",
+      "emisiones netas cero"
+    ],
+    "reviewVocabulary": [
+      "ley",
+      "medio ambiente"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يصيغ المتعلم توصيات ولوائح تشريعية لحماية البيئة بأسلوب قانوني رصين.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-pas-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة المنصوب المناسبة بعد الفعل الرسمي instar a que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي تصريف لفعل reducir نستخدم بعد instar a que؟",
+        "stemEs": "La cumbre insta a que los países desarrollados _____ sus emisiones contaminantes.",
+        "stemAr": "تهيب القمة بالدول المتقدمة أن تخفض انبعاثاتها الملوثة.",
+        "options": [
+          {
+            "id": "ex-b2-pas-1_a",
+            "text": "reduzcan",
+            "textAr": "صيغة المنصوب مع الدول جمع (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pas-1_b",
+            "text": "reducen",
+            "textAr": "مضارع إخباري لا يصح بعد أفعال الحث والمطالبة",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب instar a que يتطلب المنصوب Subjuntivo."
+          },
+          {
+            "id": "ex-b2-pas-1_c",
+            "text": "reducir",
+            "textAr": "مصدر لا يناسب وجود que والفاعل",
+            "isCorrect": false,
+            "distractorRationaleAr": "مع وجود que والفاعل يجب تصريف الفعل بالمنصوب."
+          }
+        ],
+        "targetVocab": [
+          "instar a que",
+          "emisiones netas cero"
+        ],
+        "explanationAr": "بعد instar a que يأتي الفعل مصرفاً بالمنصوب: instar a que reduzcan.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pas-1_a"
+          ],
+          "selectedOptionId": "ex-b2-pas-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pas-1_b": "التركيب instar a que يتطلب المنصوب Subjuntivo.",
+          "ex-b2-pas-1_c": "مع وجود que والفاعل يجب تصريف الفعل بالمنصوب."
+        }
+      },
+      {
+        "id": "ex-b2-pas-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل arrojar بالمنصوب بعد الحظر الصارم: (arrojen)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل بالمنصوب: Se prohíbe taxativamente que _____ plásticos al océano.",
+        "stemEs": "La ley prohíbe que las industrias _____ sustancias tóxicas a la red fluvial.",
+        "stemAr": "يحظر القانون على المنشآت الصناعية إلقاء مواد سامة في الشبكة النهرية.",
+        "targetVocab": [
+          "prohibir taxativamente que"
+        ],
+        "explanationAr": "بعد prohibir que نستخدم المنصوب دائماً: arrojen.",
+        "answerKey": {
+          "accepted": [
+            "arrojen"
+          ],
+          "acceptableAnswers": [
+            "arrojen"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-pas-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح البيئي الذي يطلق على المياه والمخلفات السائلة الملوثة التي تصرفها المصانع",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'المصبات ومخلفات الصرف الصناعي السائل في الأنهار أو البحار'؟",
+        "stemEs": "El tribunal sancionó a la petroquímica por realizar un _____ ilegal de residuos químicos.",
+        "stemAr": "عاقبت المحكمة شركة البتروكيماويات لقيامها بـ ... غير قانوني للمخلفات الكيميائية.",
+        "options": [
+          {
+            "id": "ex-b2-pas-3_a",
+            "text": "vertido",
+            "textAr": "مصبات المخلفات السائلة الصناعية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pas-3_b",
+            "text": "plagio",
+            "textAr": "انتحال",
+            "isCorrect": false,
+            "distractorRationaleAr": "المخلفات السائلة الملوثة تسمى el vertido."
+          },
+          {
+            "id": "ex-b2-pas-3_c",
+            "text": "sesgo",
+            "textAr": "تحيز",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح البيئي هو vertido."
+          }
+        ],
+        "targetVocab": [
+          "vertido",
+          "normativa",
+          "sanción disuasoria"
+        ],
+        "explanationAr": "el vertido هو صرف وإلقاء المخلفات السائلة والنفايات في المجاري المائية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pas-3_a"
+          ],
+          "selectedOptionId": "ex-b2-pas-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pas-3_b": "المخلفات السائلة الملوثة تسمى el vertido.",
+          "ex-b2-pas-3_c": "المصطلح البيئي هو vertido."
+        }
+      },
+      {
+        "id": "ex-b2-pas-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة القانونية لتطبيق عقوبات رادعة على الملوثين",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-pas-4_t1",
+            "kind": "token",
+            "text": "Es"
+          },
+          {
+            "id": "ex-b2-pas-4_t2",
+            "kind": "token",
+            "text": "necesario"
+          },
+          {
+            "id": "ex-b2-pas-4_t3",
+            "kind": "token",
+            "text": "imponer"
+          },
+          {
+            "id": "ex-b2-pas-4_t4",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "ex-b2-pas-4_t5",
+            "kind": "token",
+            "text": "sanción"
+          },
+          {
+            "id": "ex-b2-pas-4_t6",
+            "kind": "token",
+            "text": "disuasoria"
+          },
+          {
+            "id": "ex-b2-pas-4_t7",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b2-pas-4_t8",
+            "kind": "token",
+            "text": "infractor"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Es necesario imponer una sanción disuasoria al infractor"
+          ],
+          "tokenOrder": [
+            "ex-b2-pas-4_t1",
+            "ex-b2-pas-4_t2",
+            "ex-b2-pas-4_t3",
+            "ex-b2-pas-4_t4",
+            "ex-b2-pas-4_t5",
+            "ex-b2-pas-4_t6",
+            "ex-b2-pas-4_t7",
+            "ex-b2-pas-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة Es necesario ثم المصدر imponer ثم المفعول una sanción disuasoria ثم شبه الجملة al infractor.",
+        "targetVocab": [
+          "sanción disuasoria",
+          "normativa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-pas-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للبيان الوزاري وحدد الهدف المناخي المنشود لعام 2050",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لإعلان وزيرة التحول البيئي",
+        "stemEs": "Nuestro objetivo irrenunciable es alcanzar las emisiones netas cero para el año 2050.",
+        "stemAr": "هدفنا الذي لا رجعة فيه هو الوصول إلى صافي انبعاثات صفري بحلول عام 2050.",
+        "options": [
+          {
+            "id": "ex-b2-pas-5_a",
+            "text": "emisiones netas cero",
+            "textAr": "صافي انبعاثات صفري محايد للكربون (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-pas-5_b",
+            "text": "aumento de vertidos",
+            "textAr": "زيادة مصبات التلوث",
+            "isCorrect": false,
+            "distractorRationaleAr": "الوزيرة قالت: emisiones netas cero."
+          },
+          {
+            "id": "ex-b2-pas-5_c",
+            "text": "gasto público",
+            "textAr": "إنفاق عام فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "الهدف كان الانبعاثات الصفرية emisiones netas cero."
+          }
+        ],
+        "targetVocab": [
+          "emisiones netas cero",
+          "instar a que"
+        ],
+        "explanationAr": "الوزيرة قالت: 'alcanzar las emisiones netas cero para el año 2050'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_emisiones_netas_cero_2050.mp3",
+        "speechEs": "Nuestro objetivo irrenunciable es alcanzar las emisiones netas cero para el año 2050.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-pas-5_a"
+          ],
+          "selectedOptionId": "ex-b2-pas-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-pas-5_b": "الوزيرة قالت: emisiones netas cero.",
+          "ex-b2-pas-5_c": "الهدف كان الانبعاثات الصفرية emisiones netas cero."
+        }
+      },
+      {
+        "id": "ex-b2-pas-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق التوجيه البيئي الرسمي بلغة حازمة ومخارج حروف واضحة ومقنعة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لفرض الامتثال للضوابط البيئية المعمول بها:",
+        "stemEs": "La normativa medioambiental exige que las empresas reduzcan sus vertidos y alcancen emisiones netas cero.",
+        "stemAr": "تلزم اللائحة البيئية الشركات بأن تخفض مصباتها وتصل إلى صافي انبعاثات صفري.",
+        "audioKey": "pending/b2_normativa_reduzcan_vertidos_cero.mp3",
+        "targetVocab": [
+          "normativa",
+          "vertido",
+          "emisiones netas cero",
+          "instar a que"
+        ],
+        "explanationAr": "انتبه لنطق normativa medioambiental و vertidos بأسلوب تشريعي صارم.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_normativa_reduzcan_vertidos_cero.mp3",
+          "modelAnswer": "La normativa medioambiental exige que las empresas reduzcan sus vertidos y alcancen emisiones netas cero."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

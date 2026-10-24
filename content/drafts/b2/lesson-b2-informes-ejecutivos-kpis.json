@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-informes-ejecutivos-kpis",
+    "unitSlug": "b2-u4-professional",
+    "levelCode": "B2",
+    "titleAr": "التقارير التنفيذية ومؤشرات الأداء: صياغة النتائج والتوصيات",
+    "titleEs": "Informes ejecutivos e indicadores de rendimiento (KPIs): Presentación de resultados",
+    "subtitleAr": "تحليل الأرقام، المقارنة السنوية، واستخلاص التوصيات الاستراتيجية للمديرين",
+    "order": 2,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصيغ المتعلم تقريراً تنفيذياً موجزاً يقدم الحقائق والنتائج بالأرقام.",
+        "أن يوظف مصطلحات المؤشرات الاقتصادية: indicador clave, rendimiento, margen de beneficio, déficit, superávit.",
+        "أن يقدم توصيات استراتيجية للمستقبل بصيغة الشرط والتوجيه المؤسسي."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب الرياضية والتحليلية في التقارير الإدارية",
+          "explanationAr": "1. **التعبير عن النمو والانخفاض بالنسبة المئوية**:\n- *Las ventas se incrementaron en un 15% respecto al ejercicio anterior*.\n- *Se observa una contracción del margen de beneficio del 3%*.\n2. **التعبير عن الاستخلاص والتوصية التنفيذية**:\n- *A la luz de los datos obtenidos, se recomienda + Infinitivo / que + Subjuntivo*:\n- *A la luz de los resultados, se recomienda optimizar los procesos de producción*.\n3. **المقارنة التقييمية التراكمية**:\n- *En términos interanuales, el crecimiento ha sido sostenido*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام حرف الجر الخاطئ مع النسبة المئوية للزيادة أو النقصان؛ الصواب: *creció en un 10%* (وليس *creció con 10%*).",
+        "الحشو الإنشائي في التقارير التنفيذية؛ النمط الإسباني المؤسسي يفرض الإيجاز المباشر والدقة الرقمية القاطعة."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في التقرير الشهري بنقول «بناءً على الأرقام والمؤشرات دي، بنوصي بتقليل المصاريف وزيادة الإنتاجية». بالإسبانية: A la luz de estos indicadores clave, se recomienda reducir los costes operativos y maximizar la rentabilidad."
+        }
+      ],
+      "culturalNoteAr": "الشركات الإسبانية متعددة الجنسيات (مثل Santander و Inditex و Telefónica) تعتمد معايير دولية صارمة في صياغة التقارير التنفيذية الموجزة الموجهة لمجالس الإدارة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-informes-ejecutivos-kpis-intro",
+        "type": "explanation",
+        "titleAr": "معجم الأداء المالي والمؤسسي",
+        "bodyAr": "المصطلحات الاقتصادية والتنفيذية:\n- **el indicador clave de rendimiento (KPI)**: مؤشر الأداء الرئيسي لقياس الإنجاز\n- **el margen de beneficio**: هامش الربح المحقق\n- **el superávit**: الفائض المالي الإيجابي\n- **el déficit**: العجز المالي السالب\n- **la rentabilidad**: المردودية والجدوى الاقتصادية\n- **en términos interanuales**: على أساس سنوي مقارن بنفس الفترة من العام السابق",
+        "examples": [
+          {
+            "es": "El margen de beneficio neto experimentó una notable mejora en el último trimestre.",
+            "ar": "شهد هامش الربح الصافي تحسناً ملحوظاً في الربع الأخير."
+          },
+          {
+            "es": "La empresa cerró el ejercicio con superávit gracias a la expansión internacional.",
+            "ar": "أغلقت الشركة سنتها المالية بفائض مالي بفضل التوسع الدولي."
+          },
+          {
+            "es": "En términos interanuales, la rentabilidad creció en un doce por ciento.",
+            "ar": "على أساس سنوي، نمت المردودية بنسبة اثني عشر بالمائة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "indicador clave",
+      "margen de beneficio",
+      "superávit",
+      "déficit",
+      "rentabilidad",
+      "en términos interanuales"
+    ],
+    "reviewVocabulary": [
+      "resultado",
+      "porcentaje"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يصيغ المتعلم تقريراً تنفيذياً موجزاً يقدم الحقائق والنتائج بالأرقام.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-iek-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المالي الذي يدل على وجود فائض مالي وليس عجزاً",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'الفائض الإيجابي بين الإيرادات والمصروفات'؟",
+        "stemEs": "Gracias al estricto control presupuestario, cerramos el año con un cómodo _____.",
+        "stemAr": "بفضل الرقابة الصارمة على الميزانية، أنهينا العام بـ ... مريح.",
+        "options": [
+          {
+            "id": "ex-b2-iek-1_a",
+            "text": "superávit",
+            "textAr": "فائض مالي إيجابي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-iek-1_b",
+            "text": "déficit",
+            "textAr": "عجز مالي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفائض الإيجابي يسمى superávit."
+          },
+          {
+            "id": "ex-b2-iek-1_c",
+            "text": "sesgo",
+            "textAr": "تحيز",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفائض المالي يسمى superávit."
+          }
+        ],
+        "targetVocab": [
+          "superávit",
+          "déficit",
+          "rentabilidad"
+        ],
+        "explanationAr": "el superávit هو الفائض المالي عندما تفوق الإيرادات حجم النفقات.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-iek-1_a"
+          ],
+          "selectedOptionId": "ex-b2-iek-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-iek-1_b": "الفائض الإيجابي يسمى superávit.",
+          "ex-b2-iek-1_c": "الفائض المالي يسمى superávit."
+        }
+      },
+      {
+        "id": "ex-b2-iek-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بحرف الجر الصحيح للزيادة في النسبة المئوية: se incrementó _____ un 10%",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب حرف الجر الإسباني المستخدم مع نسب النمو: creció _____ un cinco por ciento.",
+        "stemEs": "El volumen de facturación se incrementó _____ un ocho por ciento en el segundo semestre.",
+        "stemAr": "ارتفع حجم الأعمال بنسبة ثمانية بالمائة في النصف الثاني من العام.",
+        "targetVocab": [
+          "en términos interanuales"
+        ],
+        "explanationAr": "مع نسب الزيادة والنقصان نستخدم حرف الجر en: se incrementó en un 8%.",
+        "answerKey": {
+          "accepted": [
+            "en"
+          ],
+          "acceptableAnswers": [
+            "en"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-iek-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المفهوم الاقتصادي الذي يقيس مدى جدوى المشروع وقدرته على تحقيق الأرباح",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هي الكلمة التي تعني 'المردودية والجدوى الربحية للاستثمار'؟",
+        "stemEs": "Los inversores buscan proyectos que garanticen una alta _____ a medio plazo.",
+        "stemAr": "يبحث المستثمرون عن مشاريع تضمن ... عالية على المدى المتوسط.",
+        "options": [
+          {
+            "id": "ex-b2-iek-3_a",
+            "text": "rentabilidad",
+            "textAr": "مردودية وجدوى ربحية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-iek-3_b",
+            "text": "congoja",
+            "textAr": "غصة حزن",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجدوى الاقتصادية تسمى la rentabilidad."
+          },
+          {
+            "id": "ex-b2-iek-3_c",
+            "text": "acta",
+            "textAr": "محضر اجتماع",
+            "isCorrect": false,
+            "distractorRationaleAr": "المردودية هي la rentabilidad."
+          }
+        ],
+        "targetVocab": [
+          "rentabilidad",
+          "margen de beneficio",
+          "indicador clave"
+        ],
+        "explanationAr": "la rentabilidad هي المردودية والقدرة على توليد عوائد وأرباح من رأس المال.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-iek-3_a"
+          ],
+          "selectedOptionId": "ex-b2-iek-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-iek-3_b": "الجدوى الاقتصادية تسمى la rentabilidad.",
+          "ex-b2-iek-3_c": "المردودية هي la rentabilidad."
+        }
+      },
+      {
+        "id": "ex-b2-iek-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة التنفيذية لتسجيل مؤشر الأداء الرئيسي للمبيعات",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-iek-4_t1",
+            "kind": "token",
+            "text": "Este"
+          },
+          {
+            "id": "ex-b2-iek-4_t2",
+            "kind": "token",
+            "text": "indicador"
+          },
+          {
+            "id": "ex-b2-iek-4_t3",
+            "kind": "token",
+            "text": "clave"
+          },
+          {
+            "id": "ex-b2-iek-4_t4",
+            "kind": "token",
+            "text": "mide"
+          },
+          {
+            "id": "ex-b2-iek-4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-iek-4_t6",
+            "kind": "token",
+            "text": "satisfacción"
+          },
+          {
+            "id": "ex-b2-iek-4_t7",
+            "kind": "token",
+            "text": "del"
+          },
+          {
+            "id": "ex-b2-iek-4_t8",
+            "kind": "token",
+            "text": "cliente"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Este indicador clave mide la satisfacción del cliente"
+          ],
+          "tokenOrder": [
+            "ex-b2-iek-4_t1",
+            "ex-b2-iek-4_t2",
+            "ex-b2-iek-4_t3",
+            "ex-b2-iek-4_t4",
+            "ex-b2-iek-4_t5",
+            "ex-b2-iek-4_t6",
+            "ex-b2-iek-4_t7",
+            "ex-b2-iek-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: اسم الإشارة Este ثم الموصوف indicador ثم النعت clave ثم الفعل mide ثم المفعول la satisfacción del cliente.",
+        "targetVocab": [
+          "indicador clave",
+          "rentabilidad"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-iek-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع لملخص التقرير السنوي وحدد نسبة التغير المقارنة بين العامين",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمدير المالي وهو يعرض التقرير السنوي",
+        "stemEs": "En términos interanuales, el margen de beneficio creció de forma sostenida.",
+        "stemAr": "على أساس سنوي مقارن، نما هامش الربح بشكل مطرد وثابت.",
+        "options": [
+          {
+            "id": "ex-b2-iek-5_a",
+            "text": "en términos interanuales",
+            "textAr": "على أساس سنوي مقارن بالعام الماضي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-iek-5_b",
+            "text": "con déficit",
+            "textAr": "مع عجز فادح",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقرير ذكر: En términos interanuales."
+          },
+          {
+            "id": "ex-b2-iek-5_c",
+            "text": "sin beneficios",
+            "textAr": "بلا أرباح",
+            "isCorrect": false,
+            "distractorRationaleAr": "العبارة كانت: En términos interanuales."
+          }
+        ],
+        "targetVocab": [
+          "en términos interanuales",
+          "margen de beneficio"
+        ],
+        "explanationAr": "المسؤول قال بوضوح: 'En términos interanuales, el margen de beneficio creció'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_terminos_interanuales_beneficio.mp3",
+        "speechEs": "En términos interanuales, el margen de beneficio creció de forma sostenida.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-iek-5_a"
+          ],
+          "selectedOptionId": "ex-b2-iek-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-iek-5_b": "التقرير ذكر: En términos interanuales.",
+          "ex-b2-iek-5_c": "العبارة كانت: En términos interanuales."
+        }
+      },
+      {
+        "id": "ex-b2-iek-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك التقريرية بثقة واحترافية أمام مجلس الإدارة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية لتقديم خلاصة الأداء المالي والتنفيذي:",
+        "stemEs": "A la luz de los datos, hemos superado el objetivo de rentabilidad y cerrado el año con superávit.",
+        "stemAr": "في ضوء البيانات، تجاوزنا هدف المردودية وأغلقنا العام بفائض مالي.",
+        "audioKey": "pending/b2_datos_rentabilidad_superavit.mp3",
+        "targetVocab": [
+          "rentabilidad",
+          "superávit",
+          "indicador clave"
+        ],
+        "explanationAr": "انتبه لنطق superávit بالتشديد على مقطع á ونطق rentabilidad بطلاقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_datos_rentabilidad_superavit.mp3",
+          "modelAnswer": "A la luz de los datos, hemos superado el objetivo de rentabilidad y cerrado el año con superávit."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

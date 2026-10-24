@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-variedades-linguisticas-hispanas",
+    "unitSlug": "b2-u10-culture-deep",
+    "levelCode": "B2",
+    "titleAr": "التنوع اللغوي في العالم الإسباني: اللهجات والفروق المعجمية",
+    "titleEs": "Variedades del español: Dialectología, voseo, seseo y riqueza léxica",
+    "subtitleAr": "الإسبانية في الأندلس والأمريكتين (المكسيك، الأرجنتين، كولومبيا) والوحدة المعيارية",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يتعرف المتعلم على الفروق الصوتية والنحوية الكبرى في العالم الإسباني (Seseo, Ceceo, Voseo).",
+        "أن يفهم المتحدثين من مختلف الدول اللاتينية (الأرجنتين، المكسيك، الكاريبي، إسبانيا).",
+        "أن يوظف مفاهيم علم اللهجات: norma panhispánica, americanismo, voseo, registro coloquial."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "الظواهر الصوتية والنحوية عبر جغرافية الإسبانية",
+          "explanationAr": "1. **الظواهر الصوتية الكبرى (Seseo y Distinción)**:\n- **Distinción** (في وسط وشمال إسبانيا): التمييز الصوتي بين /θ/ (حرفا z, c) و /s/ (casa مقابل caza).\n- **Seseo** (في الأندلس، الكناري وكافة أمريكا اللاتينية): نطق z و c كـ s دائماً.\n2. **ظاهرة الفوسيو (El Voseo) في الأرجنتين والأوروغواي**:\n- استخدام ضمير *vos* بدلاً من *tú* مع تصريف خاص في الحاضر:\n- *Vos tenés* (بدلاً من tú tienes) / *Vos sos* (بدلاً من tú eres) / *Vení* (تعال).\n3. **الفروق المعجمية الشائعة**:\n- الحاسوب: *ordenador* (إسبانيا) / *computadora* (المكسيك واللاتينية).\n- الهاتف النقال: *móvil* (إسبانيا) / *celular* (أمريكا اللاتينية)."
+        }
+      ],
+      "commonMistakesAr": [
+        "اعتبار لهجة إسبانيا هي 'الصحيحة' ولهجات أمريكا اللاتينية 'أقل صحة'؛ الأكاديميات اللغوية الـ 23 (ASALE) تؤكد أن الإسبانية لغة متعددة المراكز (policéntrica) ولكل تنوع أصالته ومعياره.",
+        "الخلط بين voseo (ضمير مخاطب غير رسمي ودود في الأرجنتين vos) و vosotros (ضمير الجمع المخاطب غير الرسمي في إسبانيا)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "زي ما عندنا في العربي لهجة مصرية وشامية ومغربية وكلنا بنفهم الفصحى، الإسباني فيه لهجة مدريد والأرجنتين والمكسيك، وكلهم بيفهموا الإسبانية المعيارية Panhispánica."
+        }
+      ],
+      "culturalNoteAr": "أكثر من 90% من الناطقين بالإسبانية حول العالم يعيشون في القارة الأمريكية (المكسيك وحدها بها أكثر من 130 مليون ناطق)، مما يجعل الثقل الديموغرافي للغة لاتينياً بامتياز."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-variedades-linguisticas-hispanas-intro",
+        "type": "explanation",
+        "titleAr": "خريطة اللهجات والتنوع اللساني",
+        "bodyAr": "المفاهيم اللغوية المعاصرة:\n- **el voseo**: استخدام ضمير vos وتصريفاته الخاصة في ريو دي لا بلاتا (الأرجنتين وأوروغواي)\n- **el seseo**: نطق حروف c و z بصوت السين في أمريكا اللاتينية وجنوب إسبانيا\n- **el americanismo**: اللفظ أو المصطلح الأصيل الشائع في إسبانية القارة الأمريكية\n- **la norma panhispánica**: المعيار اللغوي المشترك المعتمد بين كافة الأكاديميات الإسبانية الـ 23\n- **la lengua policéntrica**: اللغة متعددة المراكز الثقافية التي لا تحتكر عاصمة واحدة صحتها\n- **el rasgo dialectal**: السمة اللهجية الصوتية أو الصرفية المميزة لمنطقة جغرافية",
+        "examples": [
+          {
+            "es": "En Argentina el voseo es la norma culta: dicen 'vos tenés' en lugar de 'tú tienes'.",
+            "ar": "في الأرجنتين يُعد الفوسيو هو المعيار الفصيح: يقولون vos tenés بدلاً من tú tienes."
+          },
+          {
+            "es": "El seseo es un rasgo fonético compartido por millones de hispanohablantes en América.",
+            "ar": "يُعد السينينو (Seseo) سمة صوتية يشترك فيها ملايين الناطقين بالإسبانية في أمريكا."
+          },
+          {
+            "es": "La Real Academia Española defiende una norma panhispánica plural e inclusiva.",
+            "ar": "تدافع الأكاديمية الملكية الإسبانية عن معيار لغوي مشترك تعددي وشامل للجميع."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "voseo",
+      "seseo",
+      "americanismo",
+      "norma panhispánica",
+      "lengua policéntrica",
+      "rasgo dialectal"
+    ],
+    "reviewVocabulary": [
+      "idioma",
+      "acento"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يتعرف المتعلم على الفروق الصوتية والنحوية الكبرى في العالم الإسباني (Seseo, Ceceo, Voseo).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-vlh-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الظاهرة اللغوية التي تتميز بها الأرجنتين باستخدام vos tenés بدلاً من tú tienes",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ماذا نسمي استخدام ضمير vos وتصريفاته المرافقة في منطقة ريو دي لا بلاتا؟",
+        "stemEs": "El uso generalizado del _____ en Buenos Aires es un rasgo de identidad cultural.",
+        "stemAr": "يُعد الاستخدام الواسع لـ ... في بوينس آيرس سمة من سمات الهوية الثقافية.",
+        "options": [
+          {
+            "id": "ex-b2-vlh-1_a",
+            "text": "voseo",
+            "textAr": "ظاهرة الفوسيو (Vos بدلاً من Tú) (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-vlh-1_b",
+            "text": "seseo",
+            "textAr": "نطق السين فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "استخدام vos يسمى el voseo."
+          },
+          {
+            "id": "ex-b2-vlh-1_c",
+            "text": "plagio",
+            "textAr": "انتحال",
+            "isCorrect": false,
+            "distractorRationaleAr": "الظاهرة النحوية تسمى el voseo."
+          }
+        ],
+        "targetVocab": [
+          "voseo",
+          "seseo",
+          "rasgo dialectal"
+        ],
+        "explanationAr": "el voseo هو استبدال ضمير tú بـ vos مع تصريفات نبرية خاصة في الحاضر والأمر.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-vlh-1_a"
+          ],
+          "selectedOptionId": "ex-b2-vlh-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-vlh-1_b": "استخدام vos يسمى el voseo.",
+          "ex-b2-vlh-1_c": "الظاهرة النحوية تسمى el voseo."
+        }
+      },
+      {
+        "id": "ex-b2-vlh-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالسمة الصوتية لنطق z و c كحرف سين في أمريكا اللاتينية: el _____",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة المذكرة التي تدل على الظاهرة الصوتية الشائعة: el _____ (نطق z مثل s):",
+        "stemEs": "El _____ hace que palabras como 'casa' y 'caza' suenen idénticas en casi toda América.",
+        "stemAr": "يجعل ... كلمات مثل casa و caza تُنطق بشكل متطابق تماماً في معظم أنحاء أمريكا.",
+        "targetVocab": [
+          "seseo"
+        ],
+        "explanationAr": "el seseo هو نطق أصوات z و c (المتبوعة بـ e/i) كصوت /s/ الخالص.",
+        "answerKey": {
+          "accepted": [
+            "seseo"
+          ],
+          "acceptableAnswers": [
+            "seseo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-vlh-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المفهوم اللغوي الذي يقر بأن الإسبانية لغة لا تحتكرها دولة واحدة بل تتعدد مراكزها المعيارية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي اللغة التي تمتلك عدة معايير فصيحة معترف بها في عواصم متعددة؟",
+        "stemEs": "El español es una _____, donde la norma de Madrid convive en igualdad con la de México o Bogotá.",
+        "stemAr": "الإسبانية هي ...، حيث يتعايش معيار مدريد على قدم المساواة مع معيار مكسيكو أو بوغوتا.",
+        "options": [
+          {
+            "id": "ex-b2-vlh-3_a",
+            "text": "lengua policéntrica",
+            "textAr": "لغة متعددة المراكز المعيارية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-vlh-3_b",
+            "text": "lengua muerta",
+            "textAr": "لغة ميتة منقرضة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الإسبانية لغة حية متعددة المراكز policéntrica."
+          },
+          {
+            "id": "ex-b2-vlh-3_c",
+            "text": "falacia",
+            "textAr": "مغالطة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المفهوم اللساني هو lengua policéntrica."
+          }
+        ],
+        "targetVocab": [
+          "lengua policéntrica",
+          "norma panhispánica",
+          "americanismo"
+        ],
+        "explanationAr": "la lengua policéntrica هي اللغة التي تمتلك عدة نماذج معيارية مقبولة فصيحة في مختلف الأقطار.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-vlh-3_a"
+          ],
+          "selectedOptionId": "ex-b2-vlh-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-vlh-3_b": "الإسبانية لغة حية متعددة المراكز policéntrica.",
+          "ex-b2-vlh-3_c": "المفهوم اللساني هو lengua policéntrica."
+        }
+      },
+      {
+        "id": "ex-b2-vlh-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة اللسانية للتأكيد على التنوع الإيجابي للهجات الإسبانية",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-vlh-4_t1",
+            "kind": "token",
+            "text": "La"
+          },
+          {
+            "id": "ex-b2-vlh-4_t2",
+            "kind": "token",
+            "text": "norma"
+          },
+          {
+            "id": "ex-b2-vlh-4_t3",
+            "kind": "token",
+            "text": "panhispánica"
+          },
+          {
+            "id": "ex-b2-vlh-4_t4",
+            "kind": "token",
+            "text": "integra"
+          },
+          {
+            "id": "ex-b2-vlh-4_t5",
+            "kind": "token",
+            "text": "todos"
+          },
+          {
+            "id": "ex-b2-vlh-4_t6",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "ex-b2-vlh-4_t7",
+            "kind": "token",
+            "text": "rasgos"
+          },
+          {
+            "id": "ex-b2-vlh-4_t8",
+            "kind": "token",
+            "text": "dialectales"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "La norma panhispánica integra todos los rasgos dialectales"
+          ],
+          "tokenOrder": [
+            "ex-b2-vlh-4_t1",
+            "ex-b2-vlh-4_t2",
+            "ex-b2-vlh-4_t3",
+            "ex-b2-vlh-4_t4",
+            "ex-b2-vlh-4_t5",
+            "ex-b2-vlh-4_t6",
+            "ex-b2-vlh-4_t7",
+            "ex-b2-vlh-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: المبتدأ La norma panhispánica ثم الفعل integra ثم المفعول todos los rasgos dialectales.",
+        "targetVocab": [
+          "norma panhispánica",
+          "rasgo dialectal"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-vlh-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للناقد اللغوي وحدد اللفظ الدال على المصطلحات الخاصة بالقارة الأمريكية",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لبرنامج لغوي يناقش الفروق بين إسبانيا والمكسيك",
+        "stemEs": "La palabra 'computadora' es un americanismo plenamente consolidado frente al 'ordenador' peninsular.",
+        "stemAr": "تُعد كلمة 'computadora' لفظاً أمريكياً راسخاً في مقابل 'ordenador' الإيبيري.",
+        "options": [
+          {
+            "id": "ex-b2-vlh-5_a",
+            "text": "americanismo",
+            "textAr": "لفظ ومصطلح أمريكي لاتيني أصيل (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-vlh-5_b",
+            "text": "voseo",
+            "textAr": "ضمير مخاطب فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصفها بأنها americanismo."
+          },
+          {
+            "id": "ex-b2-vlh-5_c",
+            "text": "error gramatical",
+            "textAr": "خطأ نحوي",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح المقبول هو americanismo."
+          }
+        ],
+        "targetVocab": [
+          "americanismo",
+          "voseo"
+        ],
+        "explanationAr": "المتحدث قال بوضوح: 'La palabra computadora es un americanismo plenamente consolidado'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_computadora_americanismo_ordenador.mp3",
+        "speechEs": "La palabra 'computadora' es un americanismo plenamente consolidado frente al 'ordenador' peninsular.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-vlh-5_a"
+          ],
+          "selectedOptionId": "ex-b2-vlh-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-vlh-5_b": "المتحدث وصفها بأنها americanismo.",
+          "ex-b2-vlh-5_c": "المصطلح المقبول هو americanismo."
+        }
+      },
+      {
+        "id": "ex-b2-vlh-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق عبارتك اللسانية حول غنى وتنوع الإسبانية باعتزاز وفصاحة تامة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كباحث في اللسانيات يثمن التنوع الحضاري للإسبانية:",
+        "stemEs": "El español es una lengua policéntrica enriquecida por el seseo, el voseo y una sólida norma panhispánica.",
+        "stemAr": "الإسبانية لغة متعددة المراكز يثريها السينينو (seseo)، والفوسيو (voseo) ومعيار لغوي مشترك راسخ.",
+        "audioKey": "pending/b2_lengua_policentrica_seseo_voseo.mp3",
+        "targetVocab": [
+          "lengua policéntrica",
+          "seseo",
+          "voseo",
+          "norma panhispánica"
+        ],
+        "explanationAr": "انتبه لنطق policéntrica مع النبرة على حرف é ونطق voseo و seseo بسلاسة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_lengua_policentrica_seseo_voseo.mp3",
+          "modelAnswer": "El español es una lengua policéntrica enriquecida por el seseo, el voseo y una sólida norma panhispánica."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-redaccion-argumentativa",
+    "unitSlug": "b1-u10-writing-basics",
+    "levelCode": "B1",
+    "titleAr": "صياغة مقال الرأي: بناء الحجة المنطقية، الاستشهاد، وخاتمة التوصيات",
+    "titleEs": "Redacción argumentativa: Estructurar ensayos y artículos de opinión",
+    "subtitleAr": "كتابة الأطروحة (Tesis)، استعراض الأدلة، وصياغة خاتمة مقنعة",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يكتب المتعلم مقال رأي متماسكاً ومنطقياً باللغة الإسبانية من أربع إلى خمس فقرات.",
+        "أن يصيغ الأطروحة المركزية (la tesis) ويدعمها بحجج موضوعية (argumentos a favor y en contra).",
+        "أن يختم المقال بتلخيص وتوصيات مستقبلية مقنعة للقارئ (en conclusión, es necesario que...)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "بنية مقال الرأي الأكاديمي والفكري",
+          "explanationAr": "1. **المقدمة وطرح القضية (Introducción y Tesis)**:\n- Hoy en día nadie puede dudar de que... / El debate en torno a... suscita gran interés.\n2. **جسم المقال ومناقشة الحجج (Cuerpo argumentativo)**:\n- **Argumentos a favor**: En primer término, cabe destacar que... (في المقام الأول يجدر إبراز أن...).\n- **Argumentos en contra**: Frente a esta postura, otros sostienen que... (في مواجهة هذا الموقف، يرى آخرون أن...).\n3. **الخاتمة والتوصيات (Conclusión)**:\n- **Para concluir / En definitiva**: En definitiva, no se trata de elegir entre blanco o negro, sino de hallar un equilibrio sensato."
+        }
+      ],
+      "commonMistakesAr": [
+        "القفز مباشرة إلى إبداء الرأي دون تمهيد موضوعي للمسألة في الفقرة الافتتاحية.",
+        "تكرار نفس الفكرة بصياغات مختلفة؛ المقال الناجح يتطلب حججاً متنوعة (بيئية، اقتصادية، اجتماعية، إنسانية)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في كتابة المقال بنبدأ بالمقدمة ونعرض وجهات النظر المختلفة ونختم بحل وتوصية. بالإسبانية: Introducción con tesis, argumentos a favor y en contra, y conclusión equilibrada."
+        }
+      ],
+      "culturalNoteAr": "في امتحانات شهادة الـ DELE لمستوى B1 و B2، يُطلب من الطالب كتابة مقال رأي يعالج إيجابيات وسلبيات ظاهرة حديثة مع تقديم مقترح شخصي متوازن."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-redaccion-argumentativa-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات صياغة المقال والتحرير",
+        "bodyAr": "المفردات المنهجية:\n- **el ensayo**: المقال الفكري أو الأكاديمي\n- **la tesis**: الأطروحة أو الفكرة المحورية للمقال\n- **argumentar**: يدافع بالحجة والبرهان\n- **la conclusión**: الخاتمة والاستنتاج النهائي\n- **la postura**: الموقف أو وجهة النظر المتبناة\n- **coherente**: متماسك ومنطقي في التدفق",
+        "examples": [
+          {
+            "es": "El autor defiende su tesis mediante argumentos sólidos y contrastados.",
+            "ar": "يدافع الكاتب عن أطروحته بواسطة حجج متينة ومحققة."
+          },
+          {
+            "es": "Para escribir un buen ensayo es crucial mantener una estructura coherente.",
+            "ar": "لكتابة مقال جيد من الحاسم الحفاظ على بنية متماسكة."
+          },
+          {
+            "es": "En conclusión, debemos adoptar una postura abierta ante los cambios tecnológicos.",
+            "ar": "ختاماً، يجب أن نتبنى موقفاً منفتحاً أمام التغيرات التكنولوجية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "ensayo",
+      "tesis",
+      "argumentar",
+      "conclusión",
+      "postura",
+      "coherente"
+    ],
+    "reviewVocabulary": [
+      "escribir",
+      "opinión"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يكتب المتعلم مقال رأي متماسكاً ومنطقياً باللغة الإسبانية من أربع إلى خمس فقرات.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-red-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني الأطروحة والفكرة المركزية للمقال",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة التي تعني 'الأطروحة الأساسية التي يدافع عنها الكاتب'؟",
+        "stemEs": "En el primer párrafo el autor presenta con claridad su _____ principal.",
+        "stemAr": "في الفقرة الأولى يعرض الكاتب بوضوح ... الرئيسية له.",
+        "options": [
+          {
+            "id": "ex-b1-red-1_a",
+            "text": "tesis",
+            "textAr": "الأطروحة المركزية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-red-1_b",
+            "text": "conclusión",
+            "textAr": "الخاتمة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الخاتمة تأتي في النهاية وليس في الفقرة الأولى."
+          },
+          {
+            "id": "ex-b1-red-1_c",
+            "text": "ensayo",
+            "textAr": "المقال ككل",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفكرة الأساسية تسمى الأطروحة la tesis."
+          }
+        ],
+        "targetVocab": [
+          "tesis",
+          "conclusión",
+          "ensayo"
+        ],
+        "explanationAr": "la tesis هي الأطروحة أو الفكرة الجوهرية التي يسعى المقال لإثباتها.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-red-1_a"
+          ],
+          "selectedOptionId": "ex-b1-red-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-red-1_b": "الخاتمة تأتي في النهاية وليس في الفقرة الأولى.",
+          "ex-b1-red-1_c": "الفكرة الأساسية تسمى الأطروحة la tesis."
+        }
+      },
+      {
+        "id": "ex-b1-red-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالكلمة التي تعني الخاتمة والاستنتاج النهائي: (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'الخاتمة / الخلاصة النهائية' (la _____)",
+        "stemEs": "En la _____ el autor resume los puntos clave y ofrece una recomendación.",
+        "stemAr": "في الخاتمة يلخص الكاتب النقاط الرئيسية ويقدم توصية.",
+        "targetVocab": [
+          "conclusión"
+        ],
+        "explanationAr": "كلمة conclusión تعني الخاتمة أو الاستنتاج النهائي للمقال.",
+        "answerKey": {
+          "accepted": [
+            "conclusión",
+            "conclusion"
+          ],
+          "acceptableAnswers": [
+            "conclusión",
+            "conclusion"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-red-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الوصف الإيجابي للنص المترابط منطقياً ودلالياً",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف تصف نصاً تترابط أفكاره بتسلسل منطقي سليم وسلس؟",
+        "stemEs": "El texto está muy bien organizado y presenta un desarrollo _____.",
+        "stemAr": "النص منظم جداً ويعرض تسلسلاً ...",
+        "options": [
+          {
+            "id": "ex-b1-red-3_a",
+            "text": "coherente",
+            "textAr": "متماسكاً ومنطقياً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-red-3_b",
+            "text": "postura",
+            "textAr": "موقف (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج صفة تصف التسلسل un desarrollo coherente."
+          },
+          {
+            "id": "ex-b1-red-3_c",
+            "text": "tesis",
+            "textAr": "أطروحة",
+            "isCorrect": false,
+            "distractorRationaleAr": "coherente هي الصفة الدالة على التماسك."
+          }
+        ],
+        "targetVocab": [
+          "coherente",
+          "postura",
+          "tesis"
+        ],
+        "explanationAr": "un texto coherente يعني نصاً متماسكاً ومترابط الأفكار منطقياً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-red-3_a"
+          ],
+          "selectedOptionId": "ex-b1-red-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-red-3_b": "نحتاج صفة تصف التسلسل un desarrollo coherente.",
+          "ex-b1-red-3_c": "coherente هي الصفة الدالة على التماسك."
+        }
+      },
+      {
+        "id": "ex-b1-red-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف الدفاع بالحجج المنطقية عن الموقف المتبنى",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-red-4_t1",
+            "kind": "token",
+            "text": "Supo"
+          },
+          {
+            "id": "ex-b1-red-4_t2",
+            "kind": "token",
+            "text": "argumentar"
+          },
+          {
+            "id": "ex-b1-red-4_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "ex-b1-red-4_t4",
+            "kind": "token",
+            "text": "postura"
+          },
+          {
+            "id": "ex-b1-red-4_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-b1-red-4_t6",
+            "kind": "token",
+            "text": "gran"
+          },
+          {
+            "id": "ex-b1-red-4_t7",
+            "kind": "token",
+            "text": "claridad"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Supo argumentar su postura con gran claridad"
+          ],
+          "tokenOrder": [
+            "ex-b1-red-4_t1",
+            "ex-b1-red-4_t2",
+            "ex-b1-red-4_t3",
+            "ex-b1-red-4_t4",
+            "ex-b1-red-4_t5",
+            "ex-b1-red-4_t6",
+            "ex-b1-red-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Supo ثم المصدر argumentar ثم المفعول su postura ثم con gran claridad.",
+        "targetVocab": [
+          "argumentar",
+          "postura"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-red-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد نوع العمل التحريري والأطروحة المعروضة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لأستاذ الكتابة الأكاديمية يقيم عمل الطالب",
+        "stemEs": "Has redactado un ensayo excelente con argumentos sólidos y bien estructurados.",
+        "stemAr": "لقد حررت مقالاً ممتازاً بحجج متينة ومبنية على نحو رائع.",
+        "options": [
+          {
+            "id": "ex-b1-red-5_a",
+            "text": "ensayo",
+            "textAr": "المقال الفكري أو الأكاديمي (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-red-5_b",
+            "text": "postura",
+            "textAr": "موقف فردي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الأستاذ قيم المقال ككل (un ensayo excelente)."
+          },
+          {
+            "id": "ex-b1-red-5_c",
+            "text": "conclusión",
+            "textAr": "خاتمة فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "التقييم يخص المقال بأكمله."
+          }
+        ],
+        "targetVocab": [
+          "ensayo",
+          "postura",
+          "conclusión",
+          "argumentar"
+        ],
+        "explanationAr": "الأستاذ قال: 'Has redactado un ensayo excelente'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_ensayo_excelente_argumentos.mp3",
+        "speechEs": "Has redactado un ensayo excelente con argumentos sólidos y bien estructurados.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-red-5_a"
+          ],
+          "selectedOptionId": "ex-b1-red-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-red-5_b": "الأستاذ قيم المقال ككل (un ensayo excelente).",
+          "ex-b1-red-5_c": "التقييم يخص المقال بأكمله."
+        }
+      },
+      {
+        "id": "ex-b1-red-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق خاتمتك المقنعة التي تلخص أطروحة المقال ببراعة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة الختامية التالية بثقة وإقناع للقراء:",
+        "stemEs": "En conclusión, debemos adoptar una postura coherente y constructiva.",
+        "stemAr": "ختاماً، يجب أن نتبنى موقفاً متماسكاً وبنّاءً.",
+        "audioKey": "pending/b1_conclusion_postura_coherente.mp3",
+        "targetVocab": [
+          "conclusión",
+          "postura",
+          "coherente"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في conclusión كـ ثاء ونطق النبرة الختامية الرزينة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_conclusion_postura_coherente.mp3",
+          "modelAnswer": "En conclusión, debemos adoptar una postura coherente y constructiva."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

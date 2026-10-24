@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-relaciones-personales",
+    "unitSlug": "b1-u9-relationships",
+    "levelCode": "B1",
+    "titleAr": "العلاقات الإنسانية والروابط الاجتماعية: الصداقة والانسجام والتعاطف",
+    "titleEs": "Relaciones personales, la empatía y los lazos sociales",
+    "subtitleAr": "التعبير عن الانسجام (llevarse bien)، الثقة (confiar en)، والذكاء العاطفي",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصف المتعلم طبيعة علاقاته الشخصية والمهنية مع الآخرين بأسلوب غني ودقيق.",
+        "أن يستخدم الأفعال الاصطلاحية للعلاقات: llevarse bien/mal con, confiar en, contar con alguien.",
+        "أن يعبر عن قيم التعاطف (la empatía) والتفاهم المتبادل والصدق في التعامل."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال وتراكيب العلاقات الإنسانية",
+          "explanationAr": "1. **التعبير عن التوافق والانسجام**:\n- **Llevarse bien / mal con**: Me llevo genial con mis compañeros de piso (أنسجم تماماً مع رفقاء سكني).\n- **Tener química / Congeniar**: Congeniamos desde el primer momento en que nos conocimos.\n2. **الثقة والاعتماد على الآخر**:\n- **Confiar en**: Confío plenamente en mi mejor amigo (أثق تماماً في صديقي المفضل - لاحظ حرف الجر en).\n- **Contar con**: Puedes contar conmigo para lo que necesites (يمكنك الاعتماد عليّ).\n3. **الذكاء الاجتماعي**:\n- **Ponerse en el lugar del otro**: La empatía consiste en ponerse en el lugar de los demás."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام حرف الجر a بعد confiar بدلاً من en (الخطأ: *Confío a ti*؛ الصواب الحتمي: Confío en ti).",
+        "ترجمة 'ينسجم' بـ *hacer armonía*؛ التعبير الاصطلاحي الإسباني السليم هو llevarse bien con alguien."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «أنا برتاح لفلان أوي، على وفاق معاه وبثق فيه ومقدر أعتمد عليه في أي وقت». بالإسبانية: Me llevo muy bien con él, confío en él y puedo contar con él."
+        }
+      ],
+      "culturalNoteAr": "الصداقة في الثقافة الإسبانية ذات قيمة عالية ومبنية على اللقاءات الدورية والعفوية وتشارك الوجبات الطويلة والحديث الصريح والمباشر."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-relaciones-personales-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الروابط الاجتماعية",
+        "bodyAr": "المفردات الأساسية:\n- **llevarse bien**: ينسجم مع ويكون على وفاق طيب\n- **confiar en**: يثق في شخص أو جهة\n- **la empatía**: التعاطف والقدرة على فهم مشاعر الآخرين\n- **el vínculo**: الرابطة أو الصلة الوثيقة\n- **contar con**: يعتمد على شخص ويجده وقت الشدة\n- **la sinceridad**: الصدق والصراحة في القول",
+        "examples": [
+          {
+            "es": "Me llevo muy bien con mis colegas de trabajo y hay un gran ambiente.",
+            "ar": "أنسجم جيداً مع زملائي في العمل وهناك أجواء ممتازة."
+          },
+          {
+            "es": "Es un amigo fiel en quien siempre se puede confiar plenamente.",
+            "ar": "إنه صديق مخلص يمكن الوثوق به دائماً بكل اطمئنان."
+          },
+          {
+            "es": "La empatía y la sinceridad fortalecen los vínculos de amistad.",
+            "ar": "التعاطف والصراحة يقويان روابط الصداقة."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "llevarse bien",
+      "confiar en",
+      "empatía",
+      "vínculo",
+      "contar con",
+      "sinceridad"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "persona"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يصف المتعلم طبيعة علاقاته الشخصية والمهنية مع الآخرين بأسلوب غني ودقيق.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-rel-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الإلزامي مع فعل الثقة confiar",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي حرف جر يأتي دائماً بعد الفعل confiar للتعبير عن الثقة بشخص؟",
+        "stemEs": "Es una persona íntegra y todos podemos confiar _____ ella.",
+        "stemAr": "إنه إنسان نزيه ويمكننا جميعاً الوثوق ...",
+        "options": [
+          {
+            "id": "ex-b1-rel-1_a",
+            "text": "en",
+            "textAr": "حرف الجر الإلزامي مع confiar (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rel-1_b",
+            "text": "a",
+            "textAr": "خطأ ترجمة حرفية",
+            "isCorrect": false,
+            "distractorRationaleAr": "فعل confiar يأخذ دائماً حرف الجر en: confiar en alguien."
+          },
+          {
+            "id": "ex-b1-rel-1_c",
+            "text": "con",
+            "textAr": "خطأ شائع",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب الصحيح هو confiar en."
+          }
+        ],
+        "targetVocab": [
+          "confiar en",
+          "persona"
+        ],
+        "explanationAr": "نقول دائماً: confiar en alguien (يثق في شخص).",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rel-1_a"
+          ],
+          "selectedOptionId": "ex-b1-rel-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rel-1_b": "فعل confiar يأخذ دائماً حرف الجر en: confiar en alguien.",
+          "ex-b1-rel-1_c": "التركيب الصحيح هو confiar en."
+        }
+      },
+      {
+        "id": "ex-b1-rel-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالمصطلح الذي يعني القدرة على فهم مشاعر الآخرين (la _____)",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الكلمة الإسبانية المؤنثة التي تعني 'التعاطف ووضع النفس مكان الآخر' (la _____)",
+        "stemEs": "La _____ es fundamental para resolver cualquier conflicto interpersonal.",
+        "stemAr": "التعاطف أساسي لحل أي خلاف بين الأفراد.",
+        "targetVocab": [
+          "empatía"
+        ],
+        "explanationAr": "كلمة empatía تعني التعاطف وتفهم مشاعر وظروف الآخرين.",
+        "answerKey": {
+          "accepted": [
+            "empatía",
+            "empatia"
+          ],
+          "acceptableAnswers": [
+            "empatía",
+            "empatia"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rel-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد التعبير الدال على التوافق والانسجام التام بين الأصدقاء",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو الفعل الاصطلاحي الذي يعني 'يكون على وفاق ممتاز مع غيره'؟",
+        "stemEs": "Mis dos hermanos se _____ muy bien y nunca se pelean.",
+        "stemAr": "أخواي ... جيداً جداً ولا يتشاجران أبداً.",
+        "options": [
+          {
+            "id": "ex-b1-rel-3_a",
+            "text": "llevan",
+            "textAr": "ينسجمان على وفاق (الصواب: llevarse bien)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rel-3_b",
+            "text": "cuentan",
+            "textAr": "يعدان",
+            "isCorrect": false,
+            "distractorRationaleAr": "التعبير عن الوفاق هو llevarse bien."
+          },
+          {
+            "id": "ex-b1-rel-3_c",
+            "text": "confían",
+            "textAr": "يثقان فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "سياق عدم الشجار والوفاق التام يعبر عنه بـ llevarse bien."
+          }
+        ],
+        "targetVocab": [
+          "llevarse bien",
+          "contar con",
+          "confiar en"
+        ],
+        "explanationAr": "التعبير هو llevarse bien مع الآخرين للتعبير عن حسن الوفاق والتناغم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rel-3_a"
+          ],
+          "selectedOptionId": "ex-b1-rel-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rel-3_b": "التعبير عن الوفاق هو llevarse bien.",
+          "ex-b1-rel-3_c": "سياق عدم الشجار والوفاق التام يعبر عنه بـ llevarse bien."
+        }
+      },
+      {
+        "id": "ex-b1-rel-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتأكيد على إمكانية الاعتماد على الصديق وقت الضيق",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-rel-4_t1",
+            "kind": "token",
+            "text": "Siempre"
+          },
+          {
+            "id": "ex-b1-rel-4_t2",
+            "kind": "token",
+            "text": "puedes"
+          },
+          {
+            "id": "ex-b1-rel-4_t3",
+            "kind": "token",
+            "text": "contar"
+          },
+          {
+            "id": "ex-b1-rel-4_t4",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "ex-b1-rel-4_t5",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "ex-b1-rel-4_t6",
+            "kind": "token",
+            "text": "apoyo"
+          },
+          {
+            "id": "ex-b1-rel-4_t7",
+            "kind": "token",
+            "text": "total"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Siempre puedes contar con mi apoyo total"
+          ],
+          "tokenOrder": [
+            "ex-b1-rel-4_t1",
+            "ex-b1-rel-4_t2",
+            "ex-b1-rel-4_t3",
+            "ex-b1-rel-4_t4",
+            "ex-b1-rel-4_t5",
+            "ex-b1-rel-4_t6",
+            "ex-b1-rel-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الظرف Siempre ثم الفعل puedes contar con ثم المفعول mi apoyo total.",
+        "targetVocab": [
+          "contar con"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-rel-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد الرابطة القوية التي تجمع الزملاء",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمتحدث يصف علاقته بفريق العمل",
+        "stemEs": "Entre nosotros existe un vínculo muy estrecho basado en la sinceridad.",
+        "stemAr": "بيننا رابطة وثيقة جداً قائمة على الصدق والصراحة.",
+        "options": [
+          {
+            "id": "ex-b1-rel-5_a",
+            "text": "vínculo",
+            "textAr": "الرابطة والصلة الإنسانية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-rel-5_b",
+            "text": "confiar en",
+            "textAr": "ثقة فعلية فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث وصف الرابطة القائمة بين الفريق (el vínculo)."
+          },
+          {
+            "id": "ex-b1-rel-5_c",
+            "text": "empatía",
+            "textAr": "تعاطف",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث حدد: 'un vínculo muy estrecho'."
+          }
+        ],
+        "targetVocab": [
+          "vínculo",
+          "sinceridad",
+          "confiar en",
+          "empatía"
+        ],
+        "explanationAr": "المتحدث قال: 'existe un vínculo muy estrecho basado en la sinceridad'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_vinculo_estrecho_sinceridad.mp3",
+        "speechEs": "Entre nosotros existe un vínculo muy estrecho basado en la sinceridad.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-rel-5_a"
+          ],
+          "selectedOptionId": "ex-b1-rel-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-rel-5_b": "المتحدث وصف الرابطة القائمة بين الفريق (el vínculo).",
+          "ex-b1-rel-5_c": "المتحدث حدد: 'un vínculo muy estrecho'."
+        }
+      },
+      {
+        "id": "ex-b1-rel-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك التعبيرية عن قيمة الصدق والانسجام في الصداقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب دافئ ومخلص لصديقك:",
+        "stemEs": "Me llevo muy bien contigo porque valoro tu sinceridad y empatía.",
+        "stemAr": "أنسجم معك تماماً لأنني أقدر صدقك وتعاطفك.",
+        "audioKey": "pending/b1_llevo_bien_sinceridad.mp3",
+        "targetVocab": [
+          "llevarse bien",
+          "sinceridad",
+          "empatía"
+        ],
+        "explanationAr": "انتبه لنطق حرف v في valoro كصوت شفوي ناعم ونطق con-ti-go بسلاسة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_llevo_bien_sinceridad.mp3",
+          "modelAnswer": "Me llevo muy bien contigo porque valoro tu sinceridad y empatía."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-deportes-tiempo-libre",
+    "unitSlug": "a2-u8-hobbies",
+    "levelCode": "A2",
+    "titleAr": "الرياضة وأنشطة وقت الفراغ: ممارسة الهوايات والألعاب الرياضية",
+    "titleEs": "Deportes y actividades de tiempo libre",
+    "subtitleAr": "التمييز بين practicar وjugar a وhacer مع الأنشطة المختلفة",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يذكر المتعلم الرياضات وأنشطة وقت الفراغ الأكثر شيوعاً باللغة الإسبانية.",
+        "أن يستخدم حرف الجر المناسب مع الأفعال: jugar a + el/la، وhacer، وpracticar.",
+        "أن يعبر عن هواياته المفضلة في أوقات الفراغ بثقة."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال ممارسة الرياضة: Jugar a مقابل Hacer وPracticar",
+          "explanationAr": "1. **jugar a**: يُستخدم مع الألعاب التنافسية والرياضات التي تستخدم كرة أو أداة:\n- juego al fútbol (ألعب كرة القدم - لاحظ إدغام a + el = al).\n- jugamos al tenis (نلعب التنس).\n- juegan al ajedrez (يلعبون الشطرنج).\n2. **hacer**: يُستخدم مع الأنشطة والتمارين والرياضات الفردية والطبيعية:\n- hago natación (أمارس السباحة).\n- hace senderismo (يمارس رياضة المشي الجبلي).\n- hacemos yoga (نمارس اليوجا).\n3. **practicar**: يأتي مباشرة مع الرياضة بدون حرف جر:\n- practico deporte (أمارس الرياضة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "نسيان حرف الجر a بعد jugar مع الرياضة (الخطأ: *juego fútbol*، الصواب: juego al fútbol).",
+        "استخدام jugar مع رياضات لا تعتمد على كرة أو منافسة ألعاب، مثل السباحة أو اليوجا (الصواب: hacer natación / yoga وليس *jugar a la natación*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «بلعب كورة» أو «بنزل أعمل جيم/سباحة». بالإسبانية: juego al fútbol / hago natación."
+        }
+      ],
+      "culturalNoteAr": "رياضة البادل (el pádel) والمشي في الطبيعة (el senderismo) من أكثر الأنشطة الرياضية شعبية في إسبانيا بين جميع الفئات العمرية."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-deportes-tiempo-libre-intro",
+        "type": "explanation",
+        "titleAr": "الأنشطة والرياضات في وقت الفراغ",
+        "bodyAr": "أهم المفردات:\n- **el senderismo**: المشي في الطبيعة والجبال\n- **la natación**: السباحة\n- **el tenis**: التنس\n- **el ajedrez**: الشطرنج\n- **el tiempo libre**: وقت الفراغ\n- **el deporte**: الرياضة",
+        "examples": [
+          {
+            "es": "Los domingos me gusta hacer senderismo en la sierra.",
+            "ar": "أيام الأحد يعجبني ممارسة المشي الجبلي في السلسلة الجبلية."
+          },
+          {
+            "es": "Mi hermano juega al tenis dos veces por semana.",
+            "ar": "أخي يلعب التنس مرتين أسبوعياً."
+          },
+          {
+            "es": "¿Qué deporte practicas en tu tiempo libre?",
+            "ar": "أي رياضة تمارس في وقت فراغك؟"
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "senderismo",
+      "natación",
+      "tenis",
+      "ajedrez",
+      "tiempo libre",
+      "deporte"
+    ],
+    "reviewVocabulary": [
+      "fútbol",
+      "jugar"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يذكر المتعلم الرياضات وأنشطة وقت الفراغ الأكثر شيوعاً باللغة الإسبانية.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-dep-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الفعل الصحيح مع رياضة المشي الجبلي",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي فعل نستخدم عادة مع رياضة المشي في الطبيعة (senderismo)؟",
+        "stemEs": "Los fines de semana me gusta _____ senderismo por la montaña.",
+        "stemAr": "في عطلات نهاية الأسبوع يعجبني ممارسة رياضة المشي في الجبل.",
+        "options": [
+          {
+            "id": "ex-a2-dep-1_a",
+            "text": "hacer",
+            "textAr": "يُستخدم مع الأنشطة الفردية والرياضات الطبيعية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dep-1_b",
+            "text": "jugar",
+            "textAr": "يختص بألعاب الكرة والألعاب التنافسية بمضرب أو فريق",
+            "isCorrect": false,
+            "distractorRationaleAr": "senderismo ليست لعبة كرة ليُستخدم معها jugar."
+          },
+          {
+            "id": "ex-a2-dep-1_c",
+            "text": "ver",
+            "textAr": "يرى / يشاهد",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى يتطلب ممارسة الرياضة وليس مجرد مشاهدتها."
+          }
+        ],
+        "targetVocab": [
+          "senderismo"
+        ],
+        "explanationAr": "مع رياضات مثل senderismo أو natación نستخدم الفعل hacer: hacer senderismo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dep-1_a"
+          ],
+          "selectedOptionId": "ex-a2-dep-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dep-1_b": "senderismo ليست لعبة كرة ليُستخدم معها jugar.",
+          "ex-a2-dep-1_c": "المعنى يتطلب ممارسة الرياضة وليس مجرد مشاهدتها."
+        }
+      },
+      {
+        "id": "ex-a2-dep-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل حرف الجر المدغم مع فعل jugar",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "أكمل بحرف الجر المدغم المناسب (a + el = al) قبل كلمة tenis",
+        "stemEs": "Por las tardes suelo jugar _____ tenis con mis amigos.",
+        "stemAr": "في فترات بعد الظهر أعتاد لعب التنس مع أصدقائي.",
+        "targetVocab": [
+          "tenis",
+          "jugar"
+        ],
+        "explanationAr": "فعل jugar يتطلب حرف الجر a، ومع الاسم المذكر el tenis يدغمان إلى al: jugar al tenis.",
+        "answerKey": {
+          "accepted": [
+            "al"
+          ],
+          "acceptableAnswers": [
+            "al"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-dep-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد اسم الرياضة المائية التي تُمارس في المسبح",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي مفردة تعني رياضة السباحة؟",
+        "stemEs": "La _____ es un deporte muy completo para la espalda.",
+        "stemAr": "... هي رياضة متكاملة جداً لتقوية الظهر.",
+        "options": [
+          {
+            "id": "ex-a2-dep-3_a",
+            "text": "natación",
+            "textAr": "السباحة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dep-3_b",
+            "text": "ajedrez",
+            "textAr": "الشطرنج (لعبة ذهنية)",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشطرنج لا يُمارس في الماء وليس رياضة بدنية للظهر."
+          },
+          {
+            "id": "ex-a2-dep-3_c",
+            "text": "tiempo libre",
+            "textAr": "وقت الفراغ",
+            "isCorrect": false,
+            "distractorRationaleAr": "tiempo libre يعني وقت الفراغ وليس اسم رياضة معينة."
+          }
+        ],
+        "targetVocab": [
+          "natación",
+          "ajedrez",
+          "tiempo libre",
+          "deporte"
+        ],
+        "explanationAr": "كلمة la natación تعني رياضة السباحة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dep-3_a"
+          ],
+          "selectedOptionId": "ex-a2-dep-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dep-3_b": "الشطرنج لا يُمارس في الماء وليس رياضة بدنية للظهر.",
+          "ex-a2-dep-3_c": "tiempo libre يعني وقت الفراغ وليس اسم رياضة معينة."
+        }
+      },
+      {
+        "id": "ex-a2-dep-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال حول الهوايات في وقت الفراغ",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-dep-4_t1",
+            "kind": "token",
+            "text": "¿Qué"
+          },
+          {
+            "id": "ex-a2-dep-4_t2",
+            "kind": "token",
+            "text": "haces"
+          },
+          {
+            "id": "ex-a2-dep-4_t3",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ex-a2-dep-4_t4",
+            "kind": "token",
+            "text": "tu"
+          },
+          {
+            "id": "ex-a2-dep-4_t5",
+            "kind": "token",
+            "text": "tiempo"
+          },
+          {
+            "id": "ex-a2-dep-4_t6",
+            "kind": "token",
+            "text": "libre?"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "¿Qué haces en tu tiempo libre?"
+          ],
+          "tokenOrder": [
+            "ex-a2-dep-4_t1",
+            "ex-a2-dep-4_t2",
+            "ex-a2-dep-4_t3",
+            "ex-a2-dep-4_t4",
+            "ex-a2-dep-4_t5",
+            "ex-a2-dep-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم للسؤال: أداة الاستفهام ثم الفعل ثم شبه الجملة الظرفية.",
+        "targetVocab": [
+          "tiempo libre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-dep-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث وحدد نشاطه الرياضي المفضل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد اللعبة التي يمارسها المتحدث مع جده",
+        "stemEs": "Los sábados por la tarde juego al ajedrez con mi abuelo.",
+        "stemAr": "أيام السبت بعد الظهر ألعب الشطرنج مع جدي.",
+        "options": [
+          {
+            "id": "ex-a2-dep-5_a",
+            "text": "ajedrez",
+            "textAr": "الشطرنج (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-dep-5_b",
+            "text": "tenis",
+            "textAr": "التنس",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: juego al ajedrez."
+          },
+          {
+            "id": "ex-a2-dep-5_c",
+            "text": "senderismo",
+            "textAr": "المشي الجبلي",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر المشي الجبلي في التسجيل بل الشطرنج."
+          }
+        ],
+        "targetVocab": [
+          "ajedrez",
+          "tenis",
+          "senderismo"
+        ],
+        "explanationAr": "المتحدث قال: 'Los sábados por la tarde juego al ajedrez'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_deportes_ajedrez.mp3",
+        "speechEs": "Los sábados por la tarde juego al ajedrez con mi abuelo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-dep-5_a"
+          ],
+          "selectedOptionId": "ex-a2-dep-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-dep-5_b": "المتحدث قال بوضوح: juego al ajedrez.",
+          "ex-a2-dep-5_c": "لم يُذكر المشي الجبلي في التسجيل بل الشطرنج."
+        }
+      },
+      {
+        "id": "ex-a2-dep-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك الإسبانية عن ممارسة الرياضة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح مع إدغام al:",
+        "stemEs": "Practico deporte tres veces por semana.",
+        "stemAr": "أمارس الرياضة ثلاث مرات أسبوعياً.",
+        "audioKey": "pending/a2_practico_deporte.mp3",
+        "targetVocab": [
+          "deporte"
+        ],
+        "explanationAr": "انتبه لنطق حرف c في Practico كـ كاف، وحرف d كـ دال خفيفة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_practico_deporte.mp3",
+          "modelAnswer": "Practico deporte tres veces por semana."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

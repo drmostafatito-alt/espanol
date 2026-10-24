@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-ir-a-infinitivo",
+    "unitSlug": "a2-u3-future-plans",
+    "levelCode": "A2",
+    "titleAr": "المستقبل القريب: التعبير عن النوايا والخطط بـ Ir a + Infinitivo",
+    "titleEs": "El futuro próximo: ir a + infinitivo",
+    "subtitleAr": "تركيب النية المؤكدة والخطط القريبة مقابل التنبؤ البعيد",
+    "order": 1,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يصوغ المتعلم تركيب المستقبل القريب: تصريف ir في المضارع + حرف الجر a + الفعل في المصدر.",
+        "أن يستخدم التركيب للتعبير عن خطط ونوايا مؤكدة الحدوث في المستقبل القريب.",
+        "أن يربط التركيب بظروف الزمان المستقبلية (esta tarde, este fin de semana, el próximo año)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قاعدة Ir a + Infinitivo",
+          "explanationAr": "يُعد تركيب Ir a + infinitivo الصيغة الأكثر استخداماً في المحادثة الإسبانية اليومية للتعبير عن المستقبل:\n- voy a + مصدر (voy a estudiar)\n- vas a + مصدر (vas a viajar)\n- va a + مصدر (va a comer)\n- vamos a + مصدر (vamos a salir)\n- vais a + مصدر (vais a comprar)\n- van a + مصدر (van a trabajar)\nقاعدة هامة: لا تنسَ أبداً حرف الجر a بين فعل ir والمصدر (الصواب: voy a comer، والخطأ الشائع: *voy comer*)."
+        }
+      ],
+      "commonMistakesAr": [
+        "حذف حرف الجر a بتأثير الترجمة الحرفية (مثل قول *voy trabajar* بدلاً من voy a trabajar).",
+        "تصريف الفعل الثاني بدلاً من تركه في المصدر (مثل قول *voy a estudio* بدلاً من voy a estudiar)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في العامية المصرية نستخدم حرف «حـ» أو كلمة «رايح» للمستقبل القريب: «أنا رايح أذاكر / حأشتري عربية». في الإسبانية نفس التركيب بالضبط: Voy a estudiar / Voy a comprar un coche."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا وأمريكا اللاتينية، يُفضل المتحدثون استخدام ir a + infinitivo في أكثر من 80% من مواقف الحديث عن المستقبل اليومي بدلاً من صيغة المستقبل البسيط (futuro simple)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-ir-a-infinitivo-intro",
+        "type": "explanation",
+        "titleAr": "صيغة المستقبل القريب",
+        "bodyAr": "التركيب القياسي للتعبير عما تنوي فعله:\n- **تصريف ir في الحاضر** + **a** + **المصدر**\n- **el plan**: الخطة / المشروع\n- **pensar**: يفكر / ينوي\n- **el proyecto**: المشروع\n- **próximo**: القادم / المقبل\n- **el fin de semana**: عطلة نهاية الأسبوع\n- **decidir**: يقرر",
+        "examples": [
+          {
+            "es": "Voy a viajar a Madrid el próximo mes.",
+            "ar": "سوف أسافر إلى مدريد الشهر القادم."
+          },
+          {
+            "es": "¿Qué vas a hacer este fin de semana?",
+            "ar": "ماذا ستفعل في عطلة نهاية هذا الأسبوع؟"
+          },
+          {
+            "es": "Vamos a empezar un proyecto nuevo.",
+            "ar": "سوف نبدأ مشروعاً جديداً."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "pensar",
+      "plan",
+      "próximo",
+      "fin de semana",
+      "proyecto",
+      "decidir"
+    ],
+    "reviewVocabulary": [
+      "viaje",
+      "estudiar"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يصوغ المتعلم تركيب المستقبل القريب: تصريف ir في المضارع + حرف الجر a + الفعل في المصدر.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-ira-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر حرف الجر الإلزامي في تركيب المستقبل القريب",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الحرف الذي يفصل بين تصريف ir والفعل المصدر؟",
+        "stemEs": "Mañana voy _____ descansar todo el día.",
+        "stemAr": "غداً سأستريح طوال اليوم.",
+        "options": [
+          {
+            "id": "ex-a2-ira-1_a",
+            "text": "a",
+            "textAr": "حرف الجر الإلزامي في التركيب",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ira-1_b",
+            "text": "de",
+            "textAr": "حرف جر خاطئ في هذا التركيب",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب النحوي هو ir a + infinitivo وليس de."
+          },
+          {
+            "id": "ex-a2-ira-1_c",
+            "text": "en",
+            "textAr": "حرف جر غير مناسب",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا نستخدم en مع المستقبل القريب."
+          }
+        ],
+        "targetVocab": [
+          "decidir"
+        ],
+        "explanationAr": "القاعدة الذهبية: تركيب المستقبل القريب يتطلب دائماً حرف الجر a: voy a descansar.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ira-1_a"
+          ],
+          "selectedOptionId": "ex-a2-ira-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ira-1_b": "التركيب النحوي هو ir a + infinitivo وليس de.",
+          "ex-a2-ira-1_c": "لا نستخدم en مع المستقبل القريب."
+        }
+      },
+      {
+        "id": "ex-a2-ira-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل تصريف فعل ir مع ضمير الجمع nosotros",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف ir مع nosotros لتكوين المستقبل القريب",
+        "stemEs": "El próximo lunes _____ a comenzar el nuevo curso.",
+        "stemAr": "الاثنين القادم سوف نبدأ الدورة الجديدة.",
+        "targetVocab": [
+          "vamos"
+        ],
+        "explanationAr": "تصريف الفعل ir مع نحن (nosotros) هو vamos.",
+        "answerKey": {
+          "accepted": [
+            "vamos"
+          ],
+          "acceptableAnswers": [
+            "vamos"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-ira-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح المناسب لعطلة نهاية الأسبوع",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "كيف نعبّر بالإسبانية عن يومي العطلة الأسبوعية؟",
+        "stemEs": "Voy al campo este _____ con mi familia.",
+        "stemAr": "سأذهب إلى الريف ... مع عائلتي.",
+        "options": [
+          {
+            "id": "ex-a2-ira-3_a",
+            "text": "fin de semana",
+            "textAr": "عطلة نهاية الأسبوع",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ira-3_b",
+            "text": "proyecto",
+            "textAr": "مشروع",
+            "isCorrect": false,
+            "distractorRationaleAr": "proyecto تعني مشروعاً ولا تعبر عن العطلة الزمانية."
+          },
+          {
+            "id": "ex-a2-ira-3_c",
+            "text": "plan",
+            "textAr": "خطة",
+            "isCorrect": false,
+            "distractorRationaleAr": "العبارة الزمنية المحددة هي este fin de semana."
+          }
+        ],
+        "targetVocab": [
+          "fin de semana",
+          "proyecto",
+          "plan"
+        ],
+        "explanationAr": "التعبير الإسباني لعطلة نهاية الأسبوع هو el fin de semana.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ira-3_a"
+          ],
+          "selectedOptionId": "ex-a2-ira-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ira-3_b": "proyecto تعني مشروعاً ولا تعبر عن العطلة الزمانية.",
+          "ex-a2-ira-3_c": "العبارة الزمنية المحددة هي este fin de semana."
+        }
+      },
+      {
+        "id": "ex-a2-ira-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن النية في السفر الصيف القادم",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-ira-4_t1",
+            "kind": "token",
+            "text": "Voy"
+          },
+          {
+            "id": "ex-a2-ira-4_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-a2-ira-4_t3",
+            "kind": "token",
+            "text": "viajar"
+          },
+          {
+            "id": "ex-a2-ira-4_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-ira-4_t5",
+            "kind": "token",
+            "text": "próximo"
+          },
+          {
+            "id": "ex-a2-ira-4_t6",
+            "kind": "token",
+            "text": "verano"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Voy a viajar el próximo verano"
+          ],
+          "tokenOrder": [
+            "ex-a2-ira-4_t1",
+            "ex-a2-ira-4_t2",
+            "ex-a2-ira-4_t3",
+            "ex-a2-ira-4_t4",
+            "ex-a2-ira-4_t5",
+            "ex-a2-ira-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفعل المساعد وحرف الجر Voy a ثم المصدر viajar ثم الظرف el próximo verano.",
+        "targetVocab": [
+          "próximo",
+          "viaje"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-ira-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد قرار المتحدث للمستقبل",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الفعل الذي ينوي المتحدث اتخاذه",
+        "stemEs": "He decidido que voy a cambiar de trabajo.",
+        "stemAr": "لقد قررت أنني سأغير وظيفتي.",
+        "options": [
+          {
+            "id": "ex-a2-ira-5_a",
+            "text": "decidir",
+            "textAr": "يقرر",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ira-5_b",
+            "text": "pensar",
+            "textAr": "يفكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال بوضوح: He decidido (قررت)."
+          },
+          {
+            "id": "ex-a2-ira-5_c",
+            "text": "estudiar",
+            "textAr": "يدرس",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث لم يذكر الدراسة."
+          }
+        ],
+        "targetVocab": [
+          "decidir",
+          "pensar",
+          "estudiar"
+        ],
+        "explanationAr": "المتحدث صرّح بقراره قائلاً: He decidido que voy a cambiar de trabajo.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_he_decidido_cambiar.mp3",
+        "speechEs": "He decidido que voy a cambiar de trabajo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ira-5_a"
+          ],
+          "selectedOptionId": "ex-a2-ira-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ira-5_b": "المتحدث قال بوضوح: He decidido (قررت).",
+          "ex-a2-ira-5_c": "المتحدث لم يذكر الدراسة."
+        }
+      },
+      {
+        "id": "ex-a2-ira-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق خطتك المستقبلية لدراسة اللغة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأنك ستدرس الإسبانية بجدية هذا الأسبوع",
+        "stemEs": "Voy a estudiar español todos los días.",
+        "stemAr": "سوف أدرس الإسبانية كل يوم.",
+        "audioKey": "pending/a2_voy_a_estudiar.mp3",
+        "targetVocab": [
+          "estudiar",
+          "plan"
+        ],
+        "explanationAr": "احرص على وصل الصوت بين voy و a لتصبح نبرة واحدة طبيعية: voya.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_voy_a_estudiar.mp3",
+          "modelAnswer": "Voy a estudiar español todos los días."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

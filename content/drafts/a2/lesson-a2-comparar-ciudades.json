@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-comparar-ciudades",
+    "unitSlug": "a2-u4-comparisons",
+    "levelCode": "A2",
+    "titleAr": "تطبيق مقارنة المدن ونمط المعيشة والخدمات الحضرية",
+    "titleEs": "Comparar ciudades y formas de vida",
+    "subtitleAr": "دمج المقارنات والتفضيل لوصف الضوضاء والهدوء وحركة السير",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يقارن المتعلم بين مدينتين من حيث: السكان، حركة المرور، الهدوء، وتكاليف المعيشة.",
+        "أن يوظف مفردات البيئة الحضرية: tráfico, ruido, tranquilo, moderno, antiguo, población.",
+        "أن يقدم تحليلاً متوازناً لمزايا وعيوب العيش في المدينة الكبيرة مقابل القرية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "دمج المقارنات في النص الوصفي المتكامل",
+          "explanationAr": "عند المقارنة بين المدن ندمج أدوات التفوق والتساوي والتفضيل:\n- في حركة المرور والضوضاء: En la capital hay **más tráfico y ruido que** en los pueblos.\n- في الهدوء: Los pueblos son **mucho más tranquilos que** las grandes metrópolis.\n- في الحداثة والتاريخ: Este barrio es **más moderno que** el centro histórico, pero el centro es **el más bonito de** todos."
+        }
+      ],
+      "commonMistakesAr": [
+        "تذكير palabra كـ población (población مؤنثة وتنتهي بـ -ción: la población).",
+        "استخدام صفة ruido بدلاً من ruidoso لوصف المدينة (ruido هو اسم 'الضوضاء'، بينما الصفة هي ruidoso/a)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقارن بين القاهرة والمحافظات: «الزحمة في القاهرة أكتر، بس الأقاليم أهدى بكتير». في الإسبانية: Hay más tráfico en El Cairo, pero los pueblos son más tranquilos."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا، يفضل الكثير من الموظفين والعائلات العيش في مدن ساحلية هادئة مثل فالنسيا أو مالقة بدلاً من مدريد بسبب قلة الازدحام وجودة الحياة (la calidad de vida)."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-comparar-ciudades-intro",
+        "type": "explanation",
+        "titleAr": "المقارنة الحضرية ونمط الحياة",
+        "bodyAr": "أهم الكلمات للمقارنة بين المدن:\n- **el tráfico**: حركة المرور / الزحام\n- **el ruido**: الضوضاء / الصوت العالي\n- **tranquilo**: هادئ\n- **moderno**: حديث / عصري\n- **antiguo**: قديم / عريق\n- **la población**: عدد السكان",
+        "examples": [
+          {
+            "es": "Mi ciudad natal es más tranquila que la capital.",
+            "ar": "مسقط رأسي أكثر هدوءاً من العاصمة."
+          },
+          {
+            "es": "En el centro hay demasiado tráfico y ruido.",
+            "ar": "في المركز يوجد زحام وضوضاء مفرطة."
+          },
+          {
+            "es": "Madrid tiene una población mayor que Sevilla.",
+            "ar": "مدريد لديها عدد سكان أكبر من إشبيلية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "tráfico",
+      "ruido",
+      "tranquilo",
+      "moderno",
+      "antiguo",
+      "población"
+    ],
+    "reviewVocabulary": [
+      "ciudad",
+      "calle"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يقارن المتعلم بين مدينتين من حيث: السكان، حركة المرور، الهدوء، وتكاليف المعيشة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-ciu-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الوصف الدال على السكون وقلة الإزعاج",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الصفة الإسبانية التي تصف مكاناً لا يوجد به ضجيج؟",
+        "stemEs": "Prefiero vivir en un pueblo _____ cerca de la montaña.",
+        "stemAr": "أفضل العيش في قرية ... قرب الجبل.",
+        "options": [
+          {
+            "id": "ex-a2-ciu-1_a",
+            "text": "tranquilo",
+            "textAr": "هادئ ومريح (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ciu-1_b",
+            "text": "ruido",
+            "textAr": "ضوضاء (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "ruido اسم يعني ضوضاء والمطلوب صفة تصف القرية."
+          },
+          {
+            "id": "ex-a2-ciu-1_c",
+            "text": "tráfico",
+            "textAr": "حركة مرور (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "tráfico اسم مرور ولا يصلح كصفة."
+          }
+        ],
+        "targetVocab": [
+          "tranquilo",
+          "ruido",
+          "tráfico"
+        ],
+        "explanationAr": "الصفة tranquilo تعني هادئاً ومريحاً للأعصاب.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ciu-1_a"
+          ],
+          "selectedOptionId": "ex-a2-ciu-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ciu-1_b": "ruido اسم يعني ضوضاء والمطلوب صفة تصف القرية.",
+          "ex-a2-ciu-1_c": "tráfico اسم مرور ولا يصلح كصفة."
+        }
+      },
+      {
+        "id": "ex-a2-ciu-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الدالة على حركة السير والمرور",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب كلمة 'حركة المرور' بالإسبانية بدقة",
+        "stemEs": "A las ocho de la mañana hay mucho _____ en la avenida.",
+        "stemAr": "في تمام الثامنة صباحاً توجد حركة مرور كثيفة في الجادة.",
+        "targetVocab": [
+          "tráfico"
+        ],
+        "explanationAr": "كلمة tráfico تعني حركة المرور مع علامة النبر على المقطع الأول.",
+        "answerKey": {
+          "accepted": [
+            "tráfico",
+            "trafico"
+          ],
+          "acceptableAnswers": [
+            "tráfico",
+            "trafico"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-ciu-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الدال على عدد سكان المدينة",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح الجغرافي الذي يعبر عن مجموع السكان في منطقة معينة؟",
+        "stemEs": "Esta provincia tiene una _____ de dos millones de personas.",
+        "stemAr": "هذه المقاطعة لديها ... من مليوني شخص.",
+        "options": [
+          {
+            "id": "ex-a2-ciu-3_a",
+            "text": "población",
+            "textAr": "تعداد السكان",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ciu-3_b",
+            "text": "antiguo",
+            "textAr": "قديم (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "antiguo صفة ولا تدل على عدد السكان."
+          },
+          {
+            "id": "ex-a2-ciu-3_c",
+            "text": "moderno",
+            "textAr": "حديث (صفة)",
+            "isCorrect": false,
+            "distractorRationaleAr": "moderno لا تعبر عن الإحصاء السكاني."
+          }
+        ],
+        "targetVocab": [
+          "población",
+          "antiguo",
+          "moderno"
+        ],
+        "explanationAr": "كلمة población تعني عدد السكان أو التعداد السكاني وهي مؤنثة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ciu-3_a"
+          ],
+          "selectedOptionId": "ex-a2-ciu-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ciu-3_b": "antiguo صفة ولا تدل على عدد السكان.",
+          "ex-a2-ciu-3_c": "moderno لا تعبر عن الإحصاء السكاني."
+        }
+      },
+      {
+        "id": "ex-a2-ciu-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للمقارنة بين المدن القديمة والحديثة",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-ciu-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-ciu-4_t2",
+            "kind": "token",
+            "text": "centro"
+          },
+          {
+            "id": "ex-a2-ciu-4_t3",
+            "kind": "token",
+            "text": "histórico"
+          },
+          {
+            "id": "ex-a2-ciu-4_t4",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a2-ciu-4_t5",
+            "kind": "token",
+            "text": "más"
+          },
+          {
+            "id": "ex-a2-ciu-4_t6",
+            "kind": "token",
+            "text": "antiguo"
+          },
+          {
+            "id": "ex-a2-ciu-4_t7",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-a2-ciu-4_t8",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-ciu-4_t9",
+            "kind": "token",
+            "text": "barrio"
+          },
+          {
+            "id": "ex-a2-ciu-4_t10",
+            "kind": "token",
+            "text": "moderno"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El centro histórico es más antiguo que el barrio moderno"
+          ],
+          "tokenOrder": [
+            "ex-a2-ciu-4_t1",
+            "ex-a2-ciu-4_t2",
+            "ex-a2-ciu-4_t3",
+            "ex-a2-ciu-4_t4",
+            "ex-a2-ciu-4_t5",
+            "ex-a2-ciu-4_t6",
+            "ex-a2-ciu-4_t7",
+            "ex-a2-ciu-4_t8",
+            "ex-a2-ciu-4_t9",
+            "ex-a2-ciu-4_t10"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل El centro histórico ثم الفعل es ثم más antiguo ثم que والمقارن به el barrio moderno.",
+        "targetVocab": [
+          "antiguo",
+          "moderno"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-ciu-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد شكوى المتحدث من العيش في المركز",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد ما يزعج الساكن في شقته",
+        "stemEs": "No puedo dormir bien porque hay demasiado ruido en la calle.",
+        "stemAr": "لا أستطيع النوم جيداً لأن هناك ضوضاء مفرطة في الشارع.",
+        "options": [
+          {
+            "id": "ex-a2-ciu-5_a",
+            "text": "ruido",
+            "textAr": "ضوضاء وإزعاج",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-ciu-5_b",
+            "text": "tranquilo",
+            "textAr": "هدوء",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يشكو من عدم النوم بسبب الإزعاج وليس الهدوء."
+          },
+          {
+            "id": "ex-a2-ciu-5_c",
+            "text": "moderno",
+            "textAr": "حداثة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشكوى مرتبطة بالصوت المرتفع ruido."
+          }
+        ],
+        "targetVocab": [
+          "ruido",
+          "calle",
+          "tranquilo",
+          "moderno"
+        ],
+        "explanationAr": "المتحدث قال: hay demasiado ruido en la calle.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_demasiado_ruido.mp3",
+        "speechEs": "No puedo dormir bien porque hay demasiado ruido en la calle.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-ciu-5_a"
+          ],
+          "selectedOptionId": "ex-a2-ciu-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-ciu-5_b": "المتحدث يشكو من عدم النوم بسبب الإزعاج وليس الهدوء.",
+          "ex-a2-ciu-5_c": "الشكوى مرتبطة بالصوت المرتفع ruido."
+        }
+      },
+      {
+        "id": "ex-a2-ciu-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق مقارنتك بين مدينتك والعاصمة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر زميلك بأن مدينتك أكثر هدوءاً من العاصمة بوضوح",
+        "stemEs": "Mi ciudad es más tranquila que la capital.",
+        "stemAr": "مدينتي أكثر هدوءاً من العاصمة.",
+        "audioKey": "pending/a2_ciudad_mas_tranquila.mp3",
+        "targetVocab": [
+          "tranquilo",
+          "ciudad"
+        ],
+        "explanationAr": "تذكر مطابقة صفة tranquila في التأنيث مع la ciudad.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_ciudad_mas_tranquila.mp3",
+          "modelAnswer": "Mi ciudad es más tranquila que la capital."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

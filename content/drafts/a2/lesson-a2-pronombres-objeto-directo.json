@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-pronombres-objeto-directo",
+    "unitSlug": "a2-u7-housing",
+    "levelCode": "A2",
+    "titleAr": "ضمائر المفعول به المباشر: Lo و La و Los و Las وموضعها",
+    "titleEs": "Los pronombres de objeto directo (OD)",
+    "subtitleAr": "استبدال الاسم المفعول بالضمير المناسب وموضعه قبل الفعل المصرف",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يحدد المتعلم المفعول المباشر ويستبدله بالضمير المناسب: lo (مفرد مذكر), la (مفرد مؤنث), los (جمع مذكر), las (جمع مؤنث).",
+        "أن يضع الضمير في موضعه النحوي الصحيح: قبل الفعل المصرف مباشرة (Lo compro, La alquilo).",
+        "أن يستخدم الضمائر لتجنب التكرار الركيك في المحادثات العقارية والتسوقية."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد ضمائر المفعول به المباشر (OD)",
+          "explanationAr": "تُستخدم ضمائر المفعول المباشر للحلول محل اسم سبق ذكره وتفادي تكراره:\n- للمفرد المذكر: **lo** (¿Compras el piso? -> Sí, **lo** compro).\n- للمفرد المؤنث: **la** (¿Alquilas la casa? -> Sí, **la** alquilo).\n- للجمع المذكر: **los** (¿Ves los apartamentos? -> Sí, **los** veo).\n- للجمع المؤنث: **las** (¿Buscas las llaves? -> Sí, **las** busco).\nموضع الضمير:\n1. قبل الفعل المصرف مباشرة ككلمة منفصلة: **Lo** compro.\n2. في النفي يأتي الضمير بين no والفعل: No **lo** compro.\n3. مع المصدر يمكن أن يلتصق بنهايته: Quiero comprar**lo** أو **Lo** quiero comprar."
+        }
+      ],
+      "commonMistakesAr": [
+        "وضع الضمير بعد الفعل المصرف (مثل قول *compro lo*؛ هذا خطأ فاحش في الإسبانية، الصواب دائماً: lo compro).",
+        "الخلط بين lo (للمفعول المذكر) و le (ضمير المفعول غير المباشر، أو ظاهرة Leísmo في بعض مناطق إسبانيا)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «الشقة دي عجبتني وأنا حأجرها، والبيت ده شفته». الهاء في 'حأجرها' هي la، وفي 'شفته' هي lo: La alquilo / Lo he visto."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا استخدام ضمائر المفعول المباشر علامة على طلاقة المتحدث وفصاحته، وتكرار الاسم الصريح مرتين في نفس الجملة يعتبر ركاكة أسلوبية واضحة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-pronombres-objeto-directo-intro",
+        "type": "explanation",
+        "titleAr": "ضمائر المفعول به المباشر",
+        "bodyAr": "الضمائر الأربعة الأساسية واستبدالها:\n- **lo**: يحل محل المفرد المذكر (el piso -> lo)\n- **la**: يحل محل المفرد المؤنث (la casa -> la)\n- **los**: يحل محل الجمع المذكر (los libros -> los)\n- **las**: يحل محل الجمع المؤنث (las llaves -> las)\n- **alquilar**: يؤجر / يستأجر\n- **vender**: يبيع",
+        "examples": [
+          {
+            "es": "El piso es muy caro, no lo voy a alquilar.",
+            "ar": "الشقة غالية جداً، لن أستأجرها."
+          },
+          {
+            "es": "¿Has visto esa casa? Sí, la he visto hoy.",
+            "ar": "¿هل رأيت ذلك البيت؟ نعم، رأيته اليوم."
+          },
+          {
+            "es": "Estas llaves son mías, las necesito.",
+            "ar": "هذه المفاتيح لي، أحتاج إليها."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "lo",
+      "la",
+      "los",
+      "las",
+      "alquilar",
+      "vender"
+    ],
+    "reviewVocabulary": [
+      "comprar",
+      "buscar"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يحدد المتعلم المفعول المباشر ويستبدله بالضمير المناسب: lo (مفرد مذكر), la (مفرد مؤنث), los (جمع مذكر), las (جمع مؤنث).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-pod-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر ضمير المفعول المناسب للشقة المفردة المؤنثة la casa",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الضمير الذي يحل محل la casa في الجملة؟",
+        "stemEs": "Esta casa me gusta mucho y voy a comprar_____ mañana.",
+        "stemAr": "هذا البيت يعجبني كثيراً وسوف أشتريه غداً.",
+        "options": [
+          {
+            "id": "ex-a2-pod-1_a",
+            "text": "la",
+            "textAr": "ضمير المفرد المؤنث المتصل بالمصدر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pod-1_b",
+            "text": "lo",
+            "textAr": "ضمير المفرد المذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "casa كلمة مؤنثة فيحل محلها la وليس lo."
+          },
+          {
+            "id": "ex-a2-pod-1_c",
+            "text": "las",
+            "textAr": "ضمير الجمع المؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "casa اسم مفرد وليس جمعاً."
+          }
+        ],
+        "targetVocab": [
+          "la",
+          "lo",
+          "comprar"
+        ],
+        "explanationAr": "كلمة casa مؤنثة مفردة، فيحل محلها ضمير المفعول المباشر la ملتصقاً بالمصدر: comprarla.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pod-1_a"
+          ],
+          "selectedOptionId": "ex-a2-pod-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pod-1_b": "casa كلمة مؤنثة فيحل محلها la وليس lo.",
+          "ex-a2-pod-1_c": "casa اسم مفرد وليس جمعاً."
+        }
+      },
+      {
+        "id": "ex-a2-pod-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب ضمير المفعول المباشر الذي يحل محل el piso",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب ضمير المفعول المباشر الذي يعود على el piso قبل الفعل المصرف",
+        "stemEs": "El piso es perfecto; _____ alquilo este mes.",
+        "stemAr": "الشقة مثالية؛ سأستأجرها هذا الشهر.",
+        "targetVocab": [
+          "lo"
+        ],
+        "explanationAr": "اسم المفرد المذكر el piso يُستبدل بضمير المفعول المباشر lo: lo alquilo.",
+        "answerKey": {
+          "accepted": [
+            "lo"
+          ],
+          "acceptableAnswers": [
+            "lo"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-pod-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الضمير المناسب للجمع المذكر los muebles",
+        "skills": [
+          "grammar",
+          "reading"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي ضمير يحل محل los muebles القديمة لتفادي تكرارها؟",
+        "stemEs": "Los muebles son viejos, por eso quiero vender_____ todos.",
+        "stemAr": "الأثاث قديم، لذلك أريد أن أبيعه كله.",
+        "options": [
+          {
+            "id": "ex-a2-pod-3_a",
+            "text": "los",
+            "textAr": "ضمير الجمع المذكر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pod-3_b",
+            "text": "las",
+            "textAr": "ضمير الجمع المؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "muebles كلمة مذكرة وتأخذ los وليس las."
+          },
+          {
+            "id": "ex-a2-pod-3_c",
+            "text": "lo",
+            "textAr": "ضمير المفرد المذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "muebles جمع وتحتاج ضمير جمع los."
+          }
+        ],
+        "targetVocab": [
+          "los",
+          "las",
+          "vender"
+        ],
+        "explanationAr": "الاسم الجمع المذكر los muebles يُستبدل بضمير الجمع los: venderlos.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pod-3_a"
+          ],
+          "selectedOptionId": "ex-a2-pod-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pod-3_b": "muebles كلمة مذكرة وتأخذ los وليس las.",
+          "ex-a2-pod-3_c": "muebles جمع وتحتاج ضمير جمع los."
+        }
+      },
+      {
+        "id": "ex-a2-pod-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة بالضمير المباشر قبل الفعل المنفي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-pod-4_t1",
+            "kind": "token",
+            "text": "Ese"
+          },
+          {
+            "id": "ex-a2-pod-4_t2",
+            "kind": "token",
+            "text": "coche"
+          },
+          {
+            "id": "ex-a2-pod-4_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-a2-pod-4_t4",
+            "kind": "token",
+            "text": "caro"
+          },
+          {
+            "id": "ex-a2-pod-4_t5",
+            "kind": "token",
+            "text": "no"
+          },
+          {
+            "id": "ex-a2-pod-4_t6",
+            "kind": "token",
+            "text": "lo"
+          },
+          {
+            "id": "ex-a2-pod-4_t7",
+            "kind": "token",
+            "text": "compro"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Ese coche es caro no lo compro"
+          ],
+          "tokenOrder": [
+            "ex-a2-pod-4_t1",
+            "ex-a2-pod-4_t2",
+            "ex-a2-pod-4_t3",
+            "ex-a2-pod-4_t4",
+            "ex-a2-pod-4_t5",
+            "ex-a2-pod-4_t6",
+            "ex-a2-pod-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الجملة الأولى Ese coche es caro ثم أداة النفي no ثم الضمير lo ثم الفعل compro.",
+        "targetVocab": [
+          "lo",
+          "comprar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-pod-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما قاله المتحدث عن تأجير الشقة",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد الضمير المستخدم",
+        "stemEs": "Esa vivienda es ideal, la voy a alquilar hoy mismo.",
+        "stemAr": "ذلك المسكن مثالي، سأستأجره اليوم بالذات.",
+        "options": [
+          {
+            "id": "ex-a2-pod-5_a",
+            "text": "la",
+            "textAr": "ضمير المؤنث العائد على vivienda",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-pod-5_b",
+            "text": "lo",
+            "textAr": "ضمير مذكر",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استبدل la vivienda بـ la."
+          },
+          {
+            "id": "ex-a2-pod-5_c",
+            "text": "las",
+            "textAr": "ضمير جمع",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاسم مفرد مؤنث."
+          }
+        ],
+        "targetVocab": [
+          "la",
+          "lo",
+          "alquilar"
+        ],
+        "explanationAr": "المتحدث قال: la voy a alquilar عائداً على esa vivienda.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_vivienda_voy_alquilar.mp3",
+        "speechEs": "Esa vivienda es ideal, la voy a alquilar hoy mismo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-pod-5_a"
+          ],
+          "selectedOptionId": "ex-a2-pod-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-pod-5_b": "المتحدث استبدل la vivienda بـ la.",
+          "ex-a2-pod-5_c": "الاسم مفرد مؤنث."
+        }
+      },
+      {
+        "id": "ex-a2-pod-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك مستخدماً الضمير المباشر بطلاقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "أخبر المالك بأنك رأيت الشقة وقررت استئجارها",
+        "stemEs": "He visto el piso y lo quiero alquilar.",
+        "stemAr": "لقد رأيت الشقة وأريد استئجارها.",
+        "audioKey": "pending/a2_visto_piso_alquilar.mp3",
+        "targetVocab": [
+          "lo",
+          "alquilar"
+        ],
+        "explanationAr": "تذكر أن lo تسبق quiero أو تلتصق بالمصدر: quiero alquilarlo.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_visto_piso_alquilar.mp3",
+          "modelAnswer": "He visto el piso y lo quiero alquilar."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

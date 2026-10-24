@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-refranes-modismos",
+    "titleAr": "الأمثال والكنايات الإسبانية: Refranes y modismos",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u1-style",
+    "objectiveAr": "أن يفهم المتعلم ويوظف أشهر الأمثال الشعبية والكنايات الثقافية الإسبانية (Dar en el clavo, No tener pelos en la lengua, Estar en las nubes) في سياقاتها الاجتماعية والبلاغية الملائمة.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "refrán",
+      "modismo",
+      "clavo",
+      "lengua",
+      "nube",
+      "acertar"
+    ],
+    "reviewVocabulary": [
+      "amigo",
+      "trabajo",
+      "tiempo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Expresión figurada: Dar en el clavo (أصاب كبد الحقيقة)",
+      "Expresión figurada: No tener pelos en la lengua (صريح لا يداري)",
+      "Expresión figurada: Estar en las nubes (سارح في أفكاره)",
+      "Refrán popular: Más vale pájaro en mano que ciento volando"
+    ],
+    "grammarTopics": [
+      "modismos-idiomaticos-c1",
+      "fraseologia-espanola"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "نقاش في برنامج حواري ثقافي حول كتاب سياسي جديد أثار جدلاً واسعاً في إسبانيا.",
+        "settingAr": "استوديو البث التلفزيوني، مدريد",
+        "lines": [
+          {
+            "es": "El autor no tiene pelos en la lengua al denunciar las malas prácticas.",
+            "ar": "المؤلف صريح لا يداري ولا يتردد في التنديد بالممارسات السيئة.",
+            "arEg": "الكاتب لسانه صريح جداً ومبيجاملش حد في فضح الغلط.",
+            "audioKey": "pending/c1-mod-tertulia-1"
+          },
+          {
+            "es": "Es verdad; en su análisis sobre la economía sumergida dio en el clavo.",
+            "ar": "هذا صحيح؛ فقد أصاب كبد الحقيقة في تحليله للاقتصاد الخفي.",
+            "arEg": "حقيقي؛ في تحليله للاقتصاد الموازي جاب التايهة وجابها في الجون.",
+            "audioKey": "pending/c1-mod-tertulia-2"
+          },
+          {
+            "es": "Sin embargo, en el capítulo social parece estar en las nubes.",
+            "ar": "ومع ذلك، يبدو في الفصل الاجتماعي غارقاً في أوهامه وسارحاً في السحاب.",
+            "arEg": "بس مع ذلك في الجزء بتاع المجتمع تحس إنه سارح ومش في الواقع.",
+            "audioKey": "pending/c1-mod-tertulia-3"
+          },
+          {
+            "es": "Aun así, la obra constituye un testimonio lúcido y valiente.",
+            "ar": "ورغم ذلك، يشكل العمل شهادة واعية وشجاعة.",
+            "arEg": "رغم كل ده، الكتاب شهادة قوية وجريئة جداً.",
+            "audioKey": "pending/c1-mod-tertulia-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "c1_rec_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى الناقد ولاحظ المعنى المجازي لعبارة «dar en el clavo».",
+        "audioKey": "pending/c1-mod-tertulia-2",
+        "speechEs": "Es verdad; en su análisis sobre la economía sumergida dio en el clavo.",
+        "options": [
+          {
+            "id": "c1_rec_1_a",
+            "text": "Acertó con exactitud y precisión plena en su diagnóstico",
+            "isCorrect": true,
+            "textAr": "أصاب كبد الحقيقة تماماً وبدقة بالغة"
+          },
+          {
+            "id": "c1_rec_1_b",
+            "text": "Se equivocó por completo al usar datos falsos",
+            "isCorrect": false,
+            "textAr": "أخطأ تماماً باستخدام بيانات مغلوطة",
+            "distractorRationaleAr": "المثل dar en el clavo يفيد الإصابة الدقيقة وليس الخطأ."
+          },
+          {
+            "id": "c1_rec_1_c",
+            "text": "Golpeó la mesa con un martillo y clavos",
+            "isCorrect": false,
+            "textAr": "ضرب الطاولة بمطرقة ومسامير",
+            "distractorRationaleAr": "تفسير حرفي ساذج يتجاهل المعنى الكنائي."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_rec_1_a"
+          ]
+        },
+        "explanationAr": "المثل الكنائي «dar en el clavo» (أصاب المسمار بمطرقته) يقابل في العربية «أصاب كبد الحقيقة / أصاب شاكلة الصواب».",
+        "errorFeedback": {
+          "c1_rec_1_b": "المثل يعني الصواب التام.",
+          "c1_rec_1_c": "تفسير حرفي للمسمار."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "clavo",
+          "acertar"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_rec_2_pelos",
+        "type": "word_choice",
+        "instructionAr": "ماذا يعني التعبير الإسباني الشهير «No tener pelos en la lengua»؟",
+        "options": [
+          {
+            "id": "c1_rec_2_a",
+            "text": "Decir lo que se piensa con total franqueza y sin rodeos",
+            "isCorrect": true,
+            "textAr": "قول الحقيقة بصراحة مطلقة ودون مواربة"
+          },
+          {
+            "id": "c1_rec_2_b",
+            "text": "Padecer una dolencia médica en la boca",
+            "isCorrect": false,
+            "textAr": "المعاناة من مرض عضوي في الفم",
+            "distractorRationaleAr": "تفسير حرفي؛ التعبير مجازي بحت."
+          },
+          {
+            "id": "c1_rec_2_c",
+            "text": "Hablar una lengua extranjera con dificultad",
+            "isCorrect": false,
+            "textAr": "التحدث بلغة أجنبية بصعوبة",
+            "distractorRationaleAr": "لا صلة للتعبير باللغات الأجنبية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_rec_2_a"
+          ]
+        },
+        "explanationAr": "التعبير «no tener pelos en la lengua» يعني أن الشخص جريء وصريح لا يخشى قول رأيه، ويقابله في العامية المصرية «ما بيجاملش ولسانه صريح».",
+        "errorFeedback": {
+          "c1_rec_2_b": "ليس مرضاً طبياً.",
+          "c1_rec_2_c": "لا علاقة له باللغات الأجنبية."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "lengua",
+          "modismo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_rec_3_fill_clavo",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الكناية الإسبانية لإصابة عين الصواب: «أصاب الطبيب كبد الحقيقة».",
+        "stemEs": "Con ese diagnóstico tan certero, el especialista dio en el ____.",
+        "stemAr": "بذلك التشخيص الصائب تماماً، أصاب الطبيب كبد الحقيقة.",
+        "answerKey": {
+          "accepted": [
+            "clavo"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير الثابت هو «dar en el clavo».",
+        "errorFeedback": {
+          "blanco": "dar en el blanco واردة أيضاً، ولكن clavo هي الأوسع شيوعاً في هذا المثل.",
+          "ojo": "dar en el ojo لا تفيد الصواب."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "clavo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_rec_4_fill_nubes",
+        "type": "fill_blank",
+        "instructionAr": "أكمل التعبير الكنائي الدال على التشتت وعدم التركيز: «سارح في السحاب».",
+        "stemEs": "No escuchó la pregunta del profesor porque estaba en las ____.",
+        "stemAr": "لم يسمع سؤال الأستاذ لأنه كان سارحاً في أفكاره (في السحاب).",
+        "answerKey": {
+          "accepted": [
+            "nubes"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الكناية الإسبانية «estar en las nubes» تعني الشرود الذهني، وتطابق التعبير العربي الدارج «فلان سارح في السحاب».",
+        "errorFeedback": {
+          "estrellas": "estar en las estrellas غير شائعة لهذا المعنى.",
+          "alturas": "estar en las alturas لا تعني الشرود الذهني."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "nube"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_rec_5_order",
+        "type": "word_order",
+        "instructionAr": "رتب الكلمات التالية لتكوين المثل الإسباني الشهير: «عصفور في اليد خير من ألف على الشجرة».",
+        "items": [
+          {
+            "id": "c1_ref_t1",
+            "kind": "token",
+            "text": "Más"
+          },
+          {
+            "id": "c1_ref_t2",
+            "kind": "token",
+            "text": "vale"
+          },
+          {
+            "id": "c1_ref_t3",
+            "kind": "token",
+            "text": "pájaro"
+          },
+          {
+            "id": "c1_ref_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "c1_ref_t5",
+            "kind": "token",
+            "text": "mano."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Más vale pájaro en mano."
+          ],
+          "tokenOrder": [
+            "c1_ref_t1",
+            "c1_ref_t2",
+            "c1_ref_t3",
+            "c1_ref_t4",
+            "c1_ref_t5"
+          ]
+        },
+        "explanationAr": "المثل الشهير هو «Más vale pájaro en mano que ciento volando»، والمقطع الأول منه يمثل النصف الأساسي للمثل.",
+        "skills": [
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "refrán"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_rec_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق هذه العبارة الكنائية بنبرة حيوية وسلسة.",
+        "stemEs": "El periodista no tiene pelos en la lengua al criticar las medidas.",
+        "stemAr": "الصحفي لا يتردد في قول الحقيقة بصراحة تامة عند انتقاد الإجراءات.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-rec-speak-1",
+          "modelAnswer": "El periodista no tiene pelos en la lengua al criticar las medidas."
+        },
+        "explanationAr": "لاحظ الوصل الصوتي في pelos en la lengua ونطق الـ g في lengua كصوت خفيف مرقق.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "lengua",
+          "modismo"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق pelos en la lengua بسلاسة تامة",
+              "weight": 50,
+              "code": "fluency_pelos"
+            },
+            {
+              "labelAr": "مخارج الحروف في criticar las medidas",
+              "weight": 50,
+              "code": "pron_medidas"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula C1 وSueña 3"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم الأمثال الشعبية والكنايات الثقافية الإسبانية ومقابلاتها الدقيقة في الثقافة العربية."
+    }
+  }
+}

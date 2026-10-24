@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-cambio-climatico-sostenibilidad",
+    "unitSlug": "b2-u7-environment",
+    "levelCode": "B2",
+    "titleAr": "التغير المناخي والاستدامة: التحديات البيئية الكبرى",
+    "titleEs": "El cambio climático y la sostenibilidad: Desafíos ecológicos globales",
+    "subtitleAr": "البصمة الكربونية (la huella de carbono)، الطاقة النظيفة، والاقتصاد الدائري",
+    "order": 1,
+    "estimatedMinutes": 20,
+    "cefrLevel": "B2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يناقش المتعلم قضايا الاحتباس الحراري والتدهور البيئي بلغة علمية دقيقة.",
+        "أن يوظف مصطلحات الاستدامة: huella de carbono, efecto invernadero, biodiversidad, economía circular, transición ecológica.",
+        "أن يقترح حلولاً عملية لتقليص الانبعاثات وإعادة تدوير الموارد."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "التراكيب التقييمية والتحذيرية في الخطاب البيئي",
+          "explanationAr": "1. **التعبير عن التهديد والتأثير البيئي**:\n- *El aumento de las temperaturas amenaza la biodiversidad de los ecosistemas*.\n- *Las emisiones de gases de efecto invernadero han alcanzado máximos históricos*.\n2. **التعبير عن الضرورة الحتمية للتحول**:\n- *Es imperativo que transitemos hacia un modelo de economía circular*.\n- *Se hace urgente reducir la huella de carbono en el transporte pesado*.\n3. **التراكيب الدالة على السبب والنتيجة البيئية**:\n- *La deforestación masiva trae consigo la desertificación del suelo*."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *el medio ambiente* ككلمتين منفصلتين أو الخلط بين *ecológico* و *económico*.",
+        "استخدام الإخباري بعد التراكيب التقييمية الحتمية (الخطأ: *es imperativo que reducimos*; الصواب: es imperativo que reduzcamos بالمنصوب)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في قضايا البيئة بنقول «لازم نقلل الانبعاثات والبصمة الكربونية عشان نحمي الطبيعة ونسيب كوكب نظيف لعيالنا». بالإسبانية: Es vital reducir la huella de carbono y apostar por la transición ecológica para proteger el planeta."
+        }
+      ],
+      "culturalNoteAr": "إسبانيا تحتل موقعاً رائداً عالمياً في إنتاج الطاقة الشمسية وطاقة الرياح، وتعتبر 'التحول البيئي' Transición Ecológica وزارة سيادية مستقلة في الحكومة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b2-cambio-climatico-sostenibilidad-intro",
+        "type": "explanation",
+        "titleAr": "المفاهيم المحورية في قضايا البيئة",
+        "bodyAr": "المصطلحات البيئية المتقدمة:\n- **la huella de carbono**: البصمة الكربونية وحجم الانبعاثات الفردية أو الصناعية\n- **el efecto invernadero**: الاحتباس الحراري وغازات الدفيئة\n- **la biodiversidad**: التنوع البيولوجي والتوازن الحيوي للكائنات\n- **la economía circular**: الاقتصاد الدائري القائم على إعادة الاستخدام والتدوير\n- **la transición ecológica**: التحول البيئي نحو الطاقة النظيفة والنماذج الخضراء\n- **es imperativo que**: من المحتوم والواجب قطعيًا أن (+ منصُوب Subjuntivo)",
+        "examples": [
+          {
+            "es": "Reducir la huella de carbono es el reto medioambiental más urgente del siglo.",
+            "ar": "تقليص البصمة الكربونية هو التحدي البيئي الأكثر إلحاحاً في هذا القرن."
+          },
+          {
+            "es": "La economía circular busca eliminar los residuos mediante el reciclaje continuo.",
+            "ar": "يسعى الاقتصاد الدائري إلى القضاء على النفايات من خلال التدوير المستمر."
+          },
+          {
+            "es": "Es imperativo que los gobiernos protejan la biodiversidad amenazada.",
+            "ar": "من المحتوم والواجب أن تحمي الحكومات التنوع البيولوجي المهدد."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "huella de carbono",
+      "efecto invernadero",
+      "biodiversidad",
+      "economía circular",
+      "transición ecológica",
+      "es imperativo que"
+    ],
+    "reviewVocabulary": [
+      "planeta",
+      "naturaleza"
+    ],
+    "level": "B2",
+    "objectiveAr": "أن يناقش المتعلم قضايا الاحتباس الحراري والتدهور البيئي بلغة علمية دقيقة.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b2-ccs-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المصطلح البيئي الذي يقيس كمية غازات الاحتباس الحراري الناتجة عن نشاط الإنسان",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي العبارة التي تعني 'الأثر البيئي المباشر من انبعاثات الكربون'؟",
+        "stemEs": "Muchas empresas calculan su _____ para implementar medidas de compensación verde.",
+        "stemAr": "تحسب العديد من الشركات ... الخاصة بها لتطبيق إجراءات التعويض الأخضر.",
+        "options": [
+          {
+            "id": "ex-b2-ccs-1_a",
+            "text": "huella de carbono",
+            "textAr": "البصمة الكربونية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccs-1_b",
+            "text": "propuesta de valor",
+            "textAr": "القيمة المضافة التجارية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المقياس البيئي هو la huella de carbono."
+          },
+          {
+            "id": "ex-b2-ccs-1_c",
+            "text": "acta",
+            "textAr": "محضر جلسة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المصطلح البيئي هو huella de carbono."
+          }
+        ],
+        "targetVocab": [
+          "huella de carbono",
+          "efecto invernadero"
+        ],
+        "explanationAr": "la huella de carbono هي مقياس كمية انبعاثات ثاني أكسيد الكربون الناجمة عن نشاط بشري أو صناعي.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccs-1_a"
+          ],
+          "selectedOptionId": "ex-b2-ccs-1_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccs-1_b": "المقياس البيئي هو la huella de carbono.",
+          "ex-b2-ccs-1_c": "المصطلح البيئي هو huella de carbono."
+        }
+      },
+      {
+        "id": "ex-b2-ccs-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "صرف فعل adoptar بالمنصوب الجمع بعد es imperativo que: (adopten)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب تصريف الفعل بالمنصوب: Es imperativo que las industrias _____ tecnologías limpias.",
+        "stemEs": "Es imperativo que los países desarrollados _____ modelos energéticos 100% renovables.",
+        "stemAr": "من المحتوم أن تتبنى الدول المتقدمة نماذج طاقية متجددة بالكامل.",
+        "targetVocab": [
+          "es imperativo que"
+        ],
+        "explanationAr": "بعد es imperativo que نستخدم صيغة المنصوب Subjuntivo: adopten.",
+        "answerKey": {
+          "accepted": [
+            "adopten"
+          ],
+          "acceptableAnswers": [
+            "adopten"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ccs-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المفهوم الاقتصادي القائم على إعادة تدوير الموارد وتقليل الهدر بدلاً من النمط الاستهلاكي الخطي",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ماذا نسمي الاقتصاد المستدام الذي يحول النفايات إلى مواد خام متجددة؟",
+        "stemEs": "La apuesta por la _____ permite alargar la vida útil de los productos y ahorrar materias primas.",
+        "stemAr": "يتيح الرهان على ... إطالة العمر الافتراضي للمنتجات وتوفير المواد الخام.",
+        "options": [
+          {
+            "id": "ex-b2-ccs-3_a",
+            "text": "economía circular",
+            "textAr": "الاقتصاد الدائري المستدام (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccs-3_b",
+            "text": "inflación",
+            "textAr": "تضخم نقدي",
+            "isCorrect": false,
+            "distractorRationaleAr": "النموذج البيئي هو la economía circular."
+          },
+          {
+            "id": "ex-b2-ccs-3_c",
+            "text": "déficit",
+            "textAr": "عجز مالي",
+            "isCorrect": false,
+            "distractorRationaleAr": "النمط الاقتصادي البيئي هو economía circular."
+          }
+        ],
+        "targetVocab": [
+          "economía circular",
+          "transición ecológica",
+          "biodiversidad"
+        ],
+        "explanationAr": "la economía circular هي النموذج المستدام الذي يقلل الهدر ويعيد استخدام الموارد في دورة مستمرة.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccs-3_a"
+          ],
+          "selectedOptionId": "ex-b2-ccs-3_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccs-3_b": "النموذج البيئي هو la economía circular.",
+          "ex-b2-ccs-3_c": "النمط الاقتصادي البيئي هو economía circular."
+        }
+      },
+      {
+        "id": "ex-b2-ccs-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة البيئية للتأكيد على حماية التنوع البيولوجي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b2-ccs-4_t1",
+            "kind": "token",
+            "text": "Debemos"
+          },
+          {
+            "id": "ex-b2-ccs-4_t2",
+            "kind": "token",
+            "text": "proteger"
+          },
+          {
+            "id": "ex-b2-ccs-4_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "ex-b2-ccs-4_t4",
+            "kind": "token",
+            "text": "biodiversidad"
+          },
+          {
+            "id": "ex-b2-ccs-4_t5",
+            "kind": "token",
+            "text": "marina"
+          },
+          {
+            "id": "ex-b2-ccs-4_t6",
+            "kind": "token",
+            "text": "del"
+          },
+          {
+            "id": "ex-b2-ccs-4_t7",
+            "kind": "token",
+            "text": "cambio"
+          },
+          {
+            "id": "ex-b2-ccs-4_t8",
+            "kind": "token",
+            "text": "climático"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Debemos proteger la biodiversidad marina del cambio climático"
+          ],
+          "tokenOrder": [
+            "ex-b2-ccs-4_t1",
+            "ex-b2-ccs-4_t2",
+            "ex-b2-ccs-4_t3",
+            "ex-b2-ccs-4_t4",
+            "ex-b2-ccs-4_t5",
+            "ex-b2-ccs-4_t6",
+            "ex-b2-ccs-4_t7",
+            "ex-b2-ccs-4_t8"
+          ]
+        },
+        "explanationAr": "الترتيب: الفعل Debemos ثم المصدر proteger ثم المفعول la biodiversidad marina ثم شبه الجملة del cambio climático.",
+        "targetVocab": [
+          "biodiversidad",
+          "efecto invernadero"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b2-ccs-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للمتحدث في قمة المناخ وحدد الهدف الشامل الذي يسعى العالم لتحقيقه",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لبيان مؤتمر الأمم المتحدة للمناخ",
+        "stemEs": "Acelerar la transición ecológica es el único camino viable para frenar el calentamiento global.",
+        "stemAr": "تسريع التحول البيئي هو السبيل الوحيد القابل للتطبيق لكبح جماح الاحتباس الحراري.",
+        "options": [
+          {
+            "id": "ex-b2-ccs-5_a",
+            "text": "transición ecológica",
+            "textAr": "التحول البيئي نحو الطاقة النظيفة (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b2-ccs-5_b",
+            "text": "guerra comercial",
+            "textAr": "حرب تجارية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث شدد على la transición ecológica."
+          },
+          {
+            "id": "ex-b2-ccs-5_c",
+            "text": "consumismo",
+            "textAr": "نزعة استهلاكية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المطلب كان التحول البيئي transición ecológica."
+          }
+        ],
+        "targetVocab": [
+          "transición ecológica",
+          "huella de carbono"
+        ],
+        "explanationAr": "المتحدث قال: 'Acelerar la transición ecológica es el único camino'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b2_transicion_ecologica_calentamiento.mp3",
+        "speechEs": "Acelerar la transición ecológica es el único camino viable para frenar el calentamiento global.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b2-ccs-5_a"
+          ],
+          "selectedOptionId": "ex-b2-ccs-5_a"
+        },
+        "errorFeedback": {
+          "ex-b2-ccs-5_b": "المتحدث شدد على la transición ecológica.",
+          "ex-b2-ccs-5_c": "المطلب كان التحول البيئي transición ecológica."
+        }
+      },
+      {
+        "id": "ex-b2-ccs-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق دعوتك لحماية الكوكب بلغة رصينة ومشاعر بيئية صادقة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية كخبير بيئي يخاطب مؤتمراً دولياً:",
+        "stemEs": "Es imperativo que aceleremos la transición ecológica, protejamos la biodiversidad y reduzcamos la huella de carbono.",
+        "stemAr": "من المحتوم والواجب أن نسرع التحول البيئي، ونحمي التنوع البيولوجي ونقلص البصمة الكربونية.",
+        "audioKey": "pending/b2_acelerar_transicion_biodiversidad_carbono.mp3",
+        "targetVocab": [
+          "es imperativo que",
+          "transición ecológica",
+          "biodiversidad",
+          "huella de carbono"
+        ],
+        "explanationAr": "انتبه لنطق صيغ المنصوب الثلاث المتتالية: aceleremos و protejamos و reduzcamos بحماس ورصانة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2_acelerar_transicion_biodiversidad_carbono.mp3",
+          "modelAnswer": "Es imperativo que aceleremos la transición ecológica, protejamos la biodiversidad y reduzcamos la huella de carbono."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

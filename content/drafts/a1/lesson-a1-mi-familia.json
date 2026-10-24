@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a1-mi-familia",
+    "titleAr": "أفراد العائلة: تسمية الأقارب واستخدام صفات الملكية mi و mis",
+    "level": "A1",
+    "programSlug": "main-track",
+    "unitSlug": "a1-u2-family",
+    "objectiveAr": "أن يسمّي المتعلم أفراد أسرته المباشرين ويستخدم صفات الملكية mi و mis بشكل صحيح ومطابق للمفرد والجمع.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "newVocabulary": [
+      "padre",
+      "madre",
+      "hermano",
+      "hermana",
+      "hijo",
+      "hija",
+      "familia",
+      "amigo"
+    ],
+    "reviewVocabulary": [
+      "casa",
+      "español",
+      "año",
+      "persona"
+    ],
+    "targetStructures": [
+      "Esta es mi madre y este es mi padre.",
+      "Tengo dos hermanos y una hermana.",
+      "Mis hermanos estudian en la universidad."
+    ],
+    "grammarTopics": [
+      "posesivos-mi-mis",
+      "vocabulario-familia-nuclear"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "طارق يُطلع صديقته الإسبانية ماريا على صورة عائلته في هاتفه ويعرّفها بأفراد أسرته.",
+        "settingAr": "في مقهى المعهد أثناء فترة الاستراحة",
+        "lines": [
+          {
+            "es": "Mira, María, esta es una foto de mi familia.",
+            "ar": "انظري يا ماريا، هذه صورة لعائلتي.",
+            "arEg": "بصي يا ماريا، دي صورة عيلتي.",
+            "audioKey": "pending/a1-fam-sc-1"
+          },
+          {
+            "es": "¡Qué bonita! ¿Quiénes son ellos?",
+            "ar": "كم هي جميلة! من هؤلاء؟",
+            "arEg": "حلوة أوي! مين دول؟",
+            "audioKey": "pending/a1-fam-sc-2"
+          },
+          {
+            "es": "Este es mi padre y esta es mi madre. Al lado están mi hermano y mi hermana.",
+            "ar": "هذا والدي وهذه والدتي. وبجانبهما أخي وأختي.",
+            "arEg": "ده بابا ودي ماما. وجنبهم أخويا وأختي.",
+            "audioKey": "pending/a1-fam-sc-3"
+          },
+          {
+            "es": "Tienes una familia muy simpática, Tariq.",
+            "ar": "لديك عائلة لطيفة للغاية يا طارق.",
+            "arEg": "عيلتك لطيفة أوي يا طارق.",
+            "audioKey": "pending/a1-fam-sc-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "a1_fam_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى طارق واختر من يظهر في الصورة بجانب والديه.",
+        "audioKey": "pending/a1-fam-sc-3",
+        "speechEs": "Este es mi padre y esta es mi madre. Al lado están mi hermano y mi hermana.",
+        "options": [
+          {
+            "id": "a1_fam_1_a",
+            "text": "Su hermano y su hermana",
+            "isCorrect": true,
+            "textAr": "أخوه وأخته"
+          },
+          {
+            "id": "a1_fam_1_b",
+            "text": "Sus abuelos maternos",
+            "isCorrect": false,
+            "textAr": "جدّاه من جهة الأم",
+            "distractorRationaleAr": "لم يذكر طارق الجد أو الجدة في الصورة."
+          },
+          {
+            "id": "a1_fam_1_c",
+            "text": "Sus profesores del instituto",
+            "isCorrect": false,
+            "textAr": "أساتذته في المعهد",
+            "distractorRationaleAr": "الصورة عائلية بحتة ولا تضم أساتذة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_fam_1_a"
+          ]
+        },
+        "explanationAr": "قال طارق بوضوح: «mi hermano y mi hermana» أي أخوه وأخته.",
+        "errorFeedback": {
+          "a1_fam_1_b": "استمع مرة أخرى: طارق عرّف بأخيه وأخته وليس بأجداده.",
+          "a1_fam_1_c": "طارق يتحدث عن أسرته فقط."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "hermano",
+          "hermana"
+        ]
+      },
+      {
+        "id": "a1_fam_2_choice",
+        "type": "word_choice",
+        "instructionAr": "اختر صفة الملكية الصحيحة لمطابقة الاسم الجمع «hermanos».",
+        "stemEs": "____ hermanos estudian en la misma universidad.",
+        "stemAr": "____ إخوتي يدرسون في الجامعة نفسها.",
+        "options": [
+          {
+            "id": "a1_fam_2_a",
+            "text": "Mis",
+            "isCorrect": true,
+            "textAr": "إخوتي (ملكية للمتكلم مع الجمع)"
+          },
+          {
+            "id": "a1_fam_2_b",
+            "text": "Mi",
+            "isCorrect": false,
+            "textAr": "أخي (للمفرد فقط)",
+            "distractorRationaleAr": "صفة Mi للمفرد ولا تطابق الاسم الجمع hermanos."
+          },
+          {
+            "id": "a1_fam_2_c",
+            "text": "Tuya",
+            "isCorrect": false,
+            "textAr": "خاصتك (ضمير ملكية مؤنث)",
+            "distractorRationaleAr": "Tuya ضمير ملكية مؤنث ولا يُستخدم كصفة قبل الاسم الجمع."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_fam_2_a"
+          ]
+        },
+        "explanationAr": "صفة الملكية mi تصبح mis قبل الأسماء في صيغة الجمع: mis hermanos.",
+        "errorFeedback": {
+          "a1_fam_2_b": "Mi تُستخدم مع المفرد مثل mi hermano، ومع الجمع نستخدم mis.",
+          "a1_fam_2_c": "Tuya ضمير ملكية مؤنث لا يسبق الاسم المذكر الجمع."
+        },
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "hermano"
+        ]
+      },
+      {
+        "id": "a1_fam_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "اكتب الكلمة الإسبانية المناسبة للدلالة على الأم بالتعريف الأسري.",
+        "stemEs": "Esta es mi ____, se llama Fátima.",
+        "stemAr": "هذه هي ____، اسمها فاطمة.",
+        "answerKey": {
+          "accepted": [
+            "madre"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الكلمة المعيارية للدلالة على الأم في الإسبانية هي: madre.",
+        "errorFeedback": {
+          "padre": "padre تعني الوالد أو الأب، واسم الشخص فاطمة مؤنث.",
+          "hermano": "hermano تعني الأخ وهو اسم مذكر."
+        },
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "madre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_fam_4_choice_rel",
+        "type": "word_choice",
+        "instructionAr": "اختر الكلمة المناسبة لإكمال علاقة الأب بابنه.",
+        "stemEs": "Pablo es el ____ de Fernando.",
+        "stemAr": "بابلو هو ____ فرناندو (ابنه).",
+        "options": [
+          {
+            "id": "a1_fam_4_a",
+            "text": "hijo",
+            "isCorrect": true,
+            "textAr": "ابن"
+          },
+          {
+            "id": "a1_fam_4_b",
+            "text": "hija",
+            "isCorrect": false,
+            "textAr": "ابنة",
+            "distractorRationaleAr": "بابلو اسم مذكر، لذا الكلمة المطابقة هي hijo وليس hija."
+          },
+          {
+            "id": "a1_fam_4_c",
+            "text": "madre",
+            "isCorrect": false,
+            "textAr": "أم",
+            "distractorRationaleAr": "madre مؤنث ولا تناسب اسم Pablo المذكر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "a1_fam_4_a"
+          ]
+        },
+        "explanationAr": "بابلو مذكر، والابن في الإسبانية هو hijo، بينما الابنة هي hija.",
+        "errorFeedback": {
+          "a1_fam_4_b": "hija للمؤنث، وبابلو اسم مذكر.",
+          "a1_fam_4_c": "madre تعني الوالدة."
+        },
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "hijo",
+          "hija"
+        ]
+      },
+      {
+        "id": "a1_fam_5_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تقديمية صحيحة للأخت.",
+        "items": [
+          {
+            "id": "a1_fm_t1",
+            "kind": "token",
+            "text": "Esta"
+          },
+          {
+            "id": "a1_fm_t2",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "a1_fm_t3",
+            "kind": "token",
+            "text": "mi hermana"
+          },
+          {
+            "id": "a1_fm_t4",
+            "kind": "token",
+            "text": "menor."
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Esta es mi hermana menor."
+          ],
+          "tokenOrder": [
+            "a1_fm_t1",
+            "a1_fm_t2",
+            "a1_fm_t3",
+            "a1_fm_t4"
+          ]
+        },
+        "explanationAr": "الترتيب القياسي: اسم الإشارة المؤنث Esta + فعل الكينونة es + صفة الملكية والاسم mi hermana + صفة menor.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "hermana"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "a1_fam_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق جملة التعريف بالعائلة بصوت واضح وثقة.",
+        "stemEs": "Esta es mi familia.",
+        "stemAr": "هذه هي عائلتي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a1-fam-speak-1",
+          "modelAnswer": "Esta es mi familia."
+        },
+        "explanationAr": "احرص على نطق حرف l المرقق في fa-MI-lia والياء الخفيفة دون تشديد زائد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "familia"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "النبر على مقطع -mi- في familia",
+              "weight": 50,
+              "code": "stress_familia"
+            },
+            {
+              "labelAr": "الربط الصوتي بين Esta es",
+              "weight": 50,
+              "code": "linking_esta_es"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — استخراج تربوي من Aula Plus 1 وEn Vocabulario A1 والمرشد في اللغة الإسبانية"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "تم استخراج الدرس وصياغة الفروق الدقيقة للمتعلم العربي مع تمرين استماع وتمارين تصريف متدرجة الصعوبة."
+    }
+  }
+}

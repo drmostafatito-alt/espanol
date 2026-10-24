@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-estilo-indirecto-pasado",
+    "unitSlug": "b1-u7-media",
+    "levelCode": "B1",
+    "titleAr": "الكلام المنقول في الماضي: توافق الأزمنة وتحولات Dijo que",
+    "titleEs": "El estilo indirecto en pasado y la correlación temporal",
+    "subtitleAr": "تحول المضارع إلى ماضٍ ناقص (Imperfecto) والمستقبل إلى مشروط (Condicional)",
+    "order": 3,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطبق المتعلم قواعد توافق الأزمنة (Correlación de tiempos) عندما يكون فعل القول في الماضي (Dijo que, Aseguró que).",
+        "أن يحول الحاضر إلى ماضٍ ناقص (Presente -> Imperfecto): «Tengo frío» -> Dijo que tenía frío.",
+        "أن يحول المستقبل إلى مشروط بسيط (Futuro -> Condicional): «Llegaré tarde» -> Dijo que llegaría tarde.",
+        "أن يحول الماضي البسيط إلى ماضٍ أسبق (Indefinido -> Pluscuamperfecto): «Compré el libro» -> Dijo que había comprado."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "جدول تحولات الأزمنة في الكلام المنقول في الماضي",
+          "explanationAr": "عندما يكون فعل القول في الماضي (**Dijo / Afirmó / Explicó que**):\n1. **المضارع الإخباري** يتحول إلى **ماضٍ ناقص** (Imperfecto):\n- «Estoy ocupado» ⇒ Dijo que **estaba** ocupado.\n2. **المستقبل البسيط** يتحول إلى **المشروط البسيط** (Condicional):\n- «Iré mañana» ⇒ Dijo que **iría** al día siguiente.\n3. **الماضي البسيط أو المركب** يتحول إلى **ماضٍ أسبق** (Pluscuamperfecto):\n- «Ya comí / He comido» ⇒ Dijo que ya **había comido**.\n4. **الأمر أو المنصوب الحاضر** يتحول إلى **منصوب ناقص** (Imperfecto de subjuntivo):\n- «¡Ven!» ⇒ Me dijo que **viniera / viniese**."
+        }
+      ],
+      "commonMistakesAr": [
+        "الإبقاء على المضارع بعد dijo que (الخطأ الشائع: *Dijo que tiene dinero*؛ الصواب: Dijo que tenía dinero).",
+        "الإبقاء على المستقبل بعد فعل القول الماضي بدلاً من تحويله إلى Condicional (الصواب: dijo que vendría، والخطأ: *dijo que vendrá*)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «هو قال إنه كان تعبان وهيجي تاني يوم». بالإسبانية: Dijo que estaba cansado y que vendría al día siguiente."
+        }
+      ],
+      "culturalNoteAr": "الصحافة الإسبانية تستخدم أسلوب النقل في الماضي مع المشروط بكثرة لتغطية المؤتمرات والبيانات الدبلوماسية: 'El ministro aseguró que viajaría a Bruselas'."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-estilo-indirecto-pasado-intro",
+        "type": "explanation",
+        "titleAr": "جدول توافق الأزمنة في الماضي",
+        "bodyAr": "التحولات الأساسية:\n- **dijo que + Imperfecto**: (أصله مضارع: estaba / tenía)\n- **dijo que + Condicional**: (أصله مستقبل: viajaría / vendría)\n- **dijo que + Pluscuamperfecto**: (أصله ماضٍ: había visto / había dicho)\n- **asegurar**: يؤكد ويجزم في تصريحه\n- **afirmar**: يصرح أو يقر في كلامه\n- **la correlación temporal**: توافق وتناغم الأزمنة النحوية",
+        "examples": [
+          {
+            "es": "El testigo afirmó que había visto al sospechoso huir.",
+            "ar": "صرح الشاهد بأنه كان قد رأى المشتبه به يفر (ماضٍ أسبق)."
+          },
+          {
+            "es": "El presidente aseguró que no subiría los impuestos.",
+            "ar": "أكد الرئيس أنه لن يرفع الضرائب (مشروط: subiría)."
+          },
+          {
+            "es": "María me dijo que estaba muy contenta con su nuevo trabajo.",
+            "ar": "ماريا أخبرتني أنها كانت سعيدة جداً بعملها الجديد (ماضٍ ناقص: estaba)."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "dijo que + imperfecto",
+      "dijo que + condicional",
+      "dijo que + pluscuamperfecto",
+      "asegurar",
+      "afirmar",
+      "correlación temporal"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "pasado"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يطبق المتعلم قواعد توافق الأزمنة (Correlación de tiempos) عندما يكون فعل القول في الماضي (Dijo que, Aseguró que).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-inp-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر صيغة الماضي الناقص المناسبة لنقل المضارع بعد dijo que",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "عندما قال أحمد أمس: «Tengo mucho trabajo»، كيف ننقل كلامه في الماضي؟",
+        "stemEs": "Ahmed me dijo ayer que _____ mucho trabajo.",
+        "stemAr": "أحمد أخبرني بالأمس أنه ... الكثير من العمل.",
+        "options": [
+          {
+            "id": "ex-b1-inp-1_a",
+            "text": "tenía",
+            "textAr": "ماضٍ ناقص تحول عن المضارع tengo (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-inp-1_b",
+            "text": "tiene",
+            "textAr": "مضارع لا يصح بعد فعل القول الماضي dijo",
+            "isCorrect": false,
+            "distractorRationaleAr": "بعد dijo que يتحول المضارع إلى ماضٍ ناقص tenía."
+          },
+          {
+            "id": "ex-b1-inp-1_c",
+            "text": "tendrá",
+            "textAr": "مستقبل غير مناسب لمعنى الجملة الأصلية",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة الأصلية كانت في الحاضر tengo."
+          }
+        ],
+        "targetVocab": [
+          "dijo que + imperfecto",
+          "pasado"
+        ],
+        "explanationAr": "المضارع tengo يتحول بعد فعل القول الماضي dijo que إلى ماضٍ ناقص: tenía.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-inp-1_a"
+          ],
+          "selectedOptionId": "ex-b1-inp-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-inp-1_b": "بعد dijo que يتحول المضارع إلى ماضٍ ناقص tenía.",
+          "ex-b1-inp-1_c": "الجملة الأصلية كانت في الحاضر tengo."
+        }
+      },
+      {
+        "id": "ex-b1-inp-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "حول المستقبل viajaré إلى المشروط بعد dijo que: (viajaría)",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب صيغة المشروط المناسبة لتحويل «Viajaré a Roma» بعد dijo que: (viajaría)",
+        "stemEs": "Carlos dijo que _____ a Roma la semana siguiente.",
+        "stemAr": "كارلوس قال إنه سيسافر إلى روما في الأسبوع التالي.",
+        "targetVocab": [
+          "dijo que + condicional"
+        ],
+        "explanationAr": "المستقبل البسيط viajaré يتحول بعد فعل القول الماضي إلى مشروط بسيط: viajaría.",
+        "answerKey": {
+          "accepted": [
+            "viajaría",
+            "viajaria"
+          ],
+          "acceptableAnswers": [
+            "viajaría",
+            "viajaria"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-inp-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد الزمن المناسب لنقل حدث ماضٍ منتهٍ بعد فعل القول الماضي",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "عندما قالت لورا: «He terminado el examen»، كيف ننقل كلامها بعد dijo que؟",
+        "stemEs": "Laura aseguró que ya _____ el examen.",
+        "stemAr": "لاورا أكدت أنها كانت قد أنهت الامتحان بالفعل.",
+        "options": [
+          {
+            "id": "ex-b1-inp-3_a",
+            "text": "había terminado",
+            "textAr": "ماضٍ أسبق Pluscuamperfecto (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-inp-3_b",
+            "text": "ha terminado",
+            "textAr": "ماضٍ مركب لا يصح بعد فعل القول الماضي aseguró",
+            "isCorrect": false,
+            "distractorRationaleAr": "الماضي المركب يتحول بعد الماضي إلى ماضٍ أسبق había terminado."
+          },
+          {
+            "id": "ex-b1-inp-3_c",
+            "text": "terminaría",
+            "textAr": "مشروط ينقل المستقبل وليس الماضي",
+            "isCorrect": false,
+            "distractorRationaleAr": "الجملة الأصلية كانت ماضياً he terminado."
+          }
+        ],
+        "targetVocab": [
+          "dijo que + pluscuamperfecto",
+          "asegurar"
+        ],
+        "explanationAr": "الماضي he terminado يتحول بعد فعل القول الماضي إلى ماضٍ أسبق: había terminado.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-inp-3_a"
+          ],
+          "selectedOptionId": "ex-b1-inp-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-inp-3_b": "الماضي المركب يتحول بعد الماضي إلى ماضٍ أسبق había terminado.",
+          "ex-b1-inp-3_c": "الجملة الأصلية كانت ماضياً he terminado."
+        }
+      },
+      {
+        "id": "ex-b1-inp-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لنقل تصريح المدير المستقبلي في الماضي",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-inp-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-b1-inp-4_t2",
+            "kind": "token",
+            "text": "jefe"
+          },
+          {
+            "id": "ex-b1-inp-4_t3",
+            "kind": "token",
+            "text": "afirmó"
+          },
+          {
+            "id": "ex-b1-inp-4_t4",
+            "kind": "token",
+            "text": "que"
+          },
+          {
+            "id": "ex-b1-inp-4_t5",
+            "kind": "token",
+            "text": "firmaría"
+          },
+          {
+            "id": "ex-b1-inp-4_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-b1-inp-4_t7",
+            "kind": "token",
+            "text": "contrato"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El jefe afirmó que firmaría el contrato"
+          ],
+          "tokenOrder": [
+            "ex-b1-inp-4_t1",
+            "ex-b1-inp-4_t2",
+            "ex-b1-inp-4_t3",
+            "ex-b1-inp-4_t4",
+            "ex-b1-inp-4_t5",
+            "ex-b1-inp-4_t6",
+            "ex-b1-inp-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: الفاعل El jefe ثم الفعل afirmó que ثم المشروط firmaría ثم المفعول el contrato.",
+        "targetVocab": [
+          "afirmar",
+          "dijo que + condicional"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-inp-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد التحول الزمني المستخدم في النقل",
+        "skills": [
+          "listening",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لما ينقله المذيع عن المتحدث الرسمي",
+        "stemEs": "El portavoz aseguró que el gobierno tomaría medidas urgentes.",
+        "stemAr": "المتحدث الرسمي أكد أن الحكومة ستتخذ تدابير عاجلة.",
+        "options": [
+          {
+            "id": "ex-b1-inp-5_a",
+            "text": "dijo que + condicional",
+            "textAr": "نقل المستقبل كصيغة مشروط (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-inp-5_b",
+            "text": "dijo que + imperfecto",
+            "textAr": "ماضٍ ناقص",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل tomaría بصيغة المشروط Condicional."
+          },
+          {
+            "id": "ex-b1-inp-5_c",
+            "text": "dijo que + pluscuamperfecto",
+            "textAr": "ماضٍ أسبق",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث نقل وعداً مستقبلياً بالمشروط tomaría."
+          }
+        ],
+        "targetVocab": [
+          "dijo que + condicional",
+          "asegurar",
+          "dijo que + imperfecto"
+        ],
+        "explanationAr": "المذيع قال: 'aseguró que el gobierno tomaría medidas' بصيغة المشروط.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_portavoz_aseguro_tomaria.mp3",
+        "speechEs": "El portavoz aseguró que el gobierno tomaría medidas urgentes.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-inp-5_a"
+          ],
+          "selectedOptionId": "ex-b1-inp-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-inp-5_b": "الفعل tomaría بصيغة المشروط Condicional.",
+          "ex-b1-inp-5_c": "المتحدث نقل وعداً مستقبلياً بالمشروط tomaría."
+        }
+      },
+      {
+        "id": "ex-b1-inp-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك في نقل كلام صديقك بدقة في توافق الأزمنة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب سردي صحيح ومتقن لتوافق الأزمنة:",
+        "stemEs": "Me dijo que no podía venir porque estaba enfermo y tenía fiebre.",
+        "stemAr": "أخبرني أنه لم يكن يستطيع القدوم لأنه كان مريضاً ولديه حمى.",
+        "audioKey": "pending/b1_dijo_no_podia_enfermo.mp3",
+        "targetVocab": [
+          "dijo que + imperfecto",
+          "pasado"
+        ],
+        "explanationAr": "انتبه لنطق النبرة على حرف i في podía و tenía بوضوح وثبات.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_dijo_no_podia_enfermo.mp3",
+          "modelAnswer": "Me dijo que no podía venir porque estaba enfermo y tenía fiebre."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

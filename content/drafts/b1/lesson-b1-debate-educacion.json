@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-debate-educacion",
+    "unitSlug": "b1-u4-study",
+    "levelCode": "B1",
+    "titleAr": "مناظرة وحوار: التعليم التقليدي مقابل التعليم عن بُعد والذكاء الاصطناعي",
+    "titleEs": "Debate sobre modelos educativos y nuevas tecnologías",
+    "subtitleAr": "المفاضلة بين النماذج التعليمية، تقديم البراهين، وتفنيد الحجج بلباقة",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يشارك المتعلم في مناظرة فكرية وأكاديمية حول تحديات التعليم والتكنولوجيا.",
+        "أن يقدم حججاً وبراهين منطقية: por un lado, por otro lado, desde mi punto de vista.",
+        "أن يعترض ويفند آراء الطرف الآخر بلباقة: no comparto esa opinión, es cierto que... pero..."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "روابط المناظرة وتبادل الحجج الأكاديمية",
+          "explanationAr": "1. **عرض وجهتي نظر متقابلتين**:\n- **Por un lado / Por otro lado**: Por un lado, la educación presencial fomenta las relaciones sociales; por otro lado, la enseñanza online ofrece mayor flexibilidad.\n2. **الاعتراض الدبلوماسي**:\n- **Es verdad que..., pero...**: Es verdad que ahorra tiempo, pero se pierde el contacto directo con el profesor.\n- **No estoy del todo convencido de que + Subjuntivo**: No estoy convencido de que sea la mejor solución.\n3. **التلخيص والخلاصة**:\n- **En conclusión / Para resumir**: En conclusión, un modelo híbrido combina lo mejor de ambos mundos."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام *en mi opinión yo creo* مكررة بلا داعٍ؛ الأفضل اختيار أسلوب واحد رصين: desde mi punto de vista أو en mi opinión.",
+        "نسيان المنصوب بعد عبارات الشك في الاقتناع مثل no estoy convencido de que + subjuntivo."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر في النقاش بنقول: «من ناحية، التعليم الأونلاين بيوفر وقت، بس من ناحية تانية، اللمة في المدرج مفيدة». بالإسبانية: Por un lado ahorra tiempo, pero por otro lado el contacto presencial es clave."
+        }
+      ],
+      "culturalNoteAr": "الجامعات الإسبانية واللاتينية تشجع بقوة أسلوب المناظرة الطلابية (los torneos de debate) لتطوير مهارات الإقناع والخطابة العامة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-debate-educacion-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الحوار والمناظرة",
+        "bodyAr": "المفردات التفاعلية:\n- **el debate**: المناظرة أو النقاش الفكري\n- **el argumento**: الحجة أو البرهان المنطقي\n- **convencer**: يُقنع بالدليل\n- **la ventaja**: الميزة أو الإيجابية\n- **el inconveniente**: العيب أو العقبة\n- **el punto de vista**: وجهة النظر",
+        "examples": [
+          {
+            "es": "El debate sobre la inteligencia artificial en la educación es fundamental.",
+            "ar": "المناظرة حول الذكاء الاصطناعي في التعليم أمر جوهري."
+          },
+          {
+            "es": "Su argumento fue muy sólido y logró convencer al tribunal.",
+            "ar": "كانت حجته متينة للغاية ونجح في إقناع لجنة التحكيم."
+          },
+          {
+            "es": "Debemos sopesar las ventajas y los inconvenientes de cada modelo.",
+            "ar": "علينا أن نزن مزايا وعيوب كل نموذج بعناية."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "debate",
+      "argumento",
+      "convencer",
+      "ventaja",
+      "inconveniente",
+      "punto de vista"
+    ],
+    "reviewVocabulary": [
+      "opinión",
+      "educación"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يشارك المتعلم في مناظرة فكرية وأكاديمية حول تحديات التعليم والتكنولوجيا.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-deb-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر المفردة التي تعني البرهان أو الحجة المنطقية",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هي الكلمة الإسبانية المقابلة لـ 'حجة منطقية / دليل إقناع' في المناظرة؟",
+        "stemEs": "Presentó un _____ muy convincente basado en datos estadísticos.",
+        "stemAr": "قدم ... مقنعاً جداً مستنداً إلى بيانات إحصائية.",
+        "options": [
+          {
+            "id": "ex-b1-deb-1_a",
+            "text": "argumento",
+            "textAr": "حجة / برهان (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-deb-1_b",
+            "text": "inconveniente",
+            "textAr": "عائق أو عيب",
+            "isCorrect": false,
+            "distractorRationaleAr": "inconveniente يعني سلبية أو عائق."
+          },
+          {
+            "id": "ex-b1-deb-1_c",
+            "text": "debate",
+            "textAr": "المناظرة ككل",
+            "isCorrect": false,
+            "distractorRationaleAr": "الدليل الفردي يسمى un argumento."
+          }
+        ],
+        "targetVocab": [
+          "argumento",
+          "inconveniente",
+          "debate"
+        ],
+        "explanationAr": "un argumento هو الحجة أو البرهان المنطقي في النقاش.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-deb-1_a"
+          ],
+          "selectedOptionId": "ex-b1-deb-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-deb-1_b": "inconveniente يعني سلبية أو عائق.",
+          "ex-b1-deb-1_c": "الدليل الفردي يسمى un argumento."
+        }
+      },
+      {
+        "id": "ex-b1-deb-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على الإقناع والتأثير الفكري في المصدر",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الذي يعني 'يقنع الآخرين بحجته' في صيغة المصدر (convencer)",
+        "stemEs": "Con sus explicaciones claras consiguió _____ a toda la audiencia.",
+        "stemAr": "بتفسيراته الواضحة نجح في إقناع جميع الحاضرين.",
+        "targetVocab": [
+          "convencer"
+        ],
+        "explanationAr": "فعل convencer يعني يقنع الطرف الآخر بالدليل والبرهان.",
+        "answerKey": {
+          "accepted": [
+            "convencer"
+          ],
+          "acceptableAnswers": [
+            "convencer"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-deb-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد المصطلح الدال على العيب أو السلبية المقابلة للميزة",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "ما هو المصطلح المقابل لكلمة ventaja (ميزة) والذي يعني عيباً أو سلبية؟",
+        "stemEs": "El principal _____ de estudiar a distancia es la falta de interacción directa.",
+        "stemAr": "... الرئيسي للدراسة عن بُعد هو قلة التفاعل المباشر.",
+        "options": [
+          {
+            "id": "ex-b1-deb-3_a",
+            "text": "inconveniente",
+            "textAr": "العيب / السلبية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-deb-3_b",
+            "text": "ventaja",
+            "textAr": "الميزة",
+            "isCorrect": false,
+            "distractorRationaleAr": "قلة التفاعل سلبية (inconveniente) وليست ميزة."
+          },
+          {
+            "id": "ex-b1-deb-3_c",
+            "text": "punto de vista",
+            "textAr": "وجهة نظر",
+            "isCorrect": false,
+            "distractorRationaleAr": "inconveniente هو المصطلح المحدد للعيب أو العائق."
+          }
+        ],
+        "targetVocab": [
+          "inconveniente",
+          "ventaja",
+          "punto de vista"
+        ],
+        "explanationAr": "el inconveniente يعني العيب أو العقبة أو السلبية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-deb-3_a"
+          ],
+          "selectedOptionId": "ex-b1-deb-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-deb-3_b": "قلة التفاعل سلبية (inconveniente) وليست ميزة.",
+          "ex-b1-deb-3_c": "inconveniente هو المصطلح المحدد للعيب أو العائق."
+        }
+      },
+      {
+        "id": "ex-b1-deb-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن وجهة النظر الشخصية باحترام",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-deb-4_t1",
+            "kind": "token",
+            "text": "Desde"
+          },
+          {
+            "id": "ex-b1-deb-4_t2",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "ex-b1-deb-4_t3",
+            "kind": "token",
+            "text": "punto"
+          },
+          {
+            "id": "ex-b1-deb-4_t4",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "ex-b1-deb-4_t5",
+            "kind": "token",
+            "text": "vista"
+          },
+          {
+            "id": "ex-b1-deb-4_t6",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ex-b1-deb-4_t7",
+            "kind": "token",
+            "text": "fundamental"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Desde mi punto de vista es fundamental"
+          ],
+          "tokenOrder": [
+            "ex-b1-deb-4_t1",
+            "ex-b1-deb-4_t2",
+            "ex-b1-deb-4_t3",
+            "ex-b1-deb-4_t4",
+            "ex-b1-deb-4_t5",
+            "ex-b1-deb-4_t6",
+            "ex-b1-deb-4_t7"
+          ]
+        },
+        "explanationAr": "الترتيب: العبارة التمهيدية Desde mi punto de vista ثم الفعل والخبر es fundamental.",
+        "targetVocab": [
+          "punto de vista"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-deb-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد طبيعة الميزة المذكورة في التعليم",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للمتحدث في المناظرة وحدد ما يصفه كأكبر فائدة",
+        "stemEs": "La mayor ventaja de este sistema es que permite estudiar a cualquier hora.",
+        "stemAr": "أكبر ميزة في هذا النظام أنه يسمح بالدراسة في أي وقت.",
+        "options": [
+          {
+            "id": "ex-b1-deb-5_a",
+            "text": "ventaja",
+            "textAr": "ميزة وفائدة إيجابية (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-deb-5_b",
+            "text": "inconveniente",
+            "textAr": "عيب وسلبية",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يتحدث عن ميزة وفائدة إيجابية (ventaja)."
+          },
+          {
+            "id": "ex-b1-deb-5_c",
+            "text": "argumento",
+            "textAr": "حجة مجردة",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث يحدد تحديداً: 'La mayor ventaja'."
+          }
+        ],
+        "targetVocab": [
+          "ventaja",
+          "inconveniente",
+          "argumento"
+        ],
+        "explanationAr": "المتحدث قال: 'La mayor ventaja de este sistema'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_mayor_ventaja_sistema.mp3",
+        "speechEs": "La mayor ventaja de este sistema es que permite estudiar a cualquier hora.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-deb-5_a"
+          ],
+          "selectedOptionId": "ex-b1-deb-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-deb-5_b": "المتحدث يتحدث عن ميزة وفائدة إيجابية (ventaja).",
+          "ex-b1-deb-5_c": "المتحدث يحدد تحديداً: 'La mayor ventaja'."
+        }
+      },
+      {
+        "id": "ex-b1-deb-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق موقفك في المناظرة مقدماً الحجة والبينة",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بأسلوب خطابي متزن في المناظرة:",
+        "stemEs": "En este debate, debemos valorar tanto las ventajas como los inconvenientes.",
+        "stemAr": "في هذه المناظرة، يجب أن نقدر كلاً من المزايا والعيوب.",
+        "audioKey": "pending/b1_debate_valorar_ventajas.mp3",
+        "targetVocab": [
+          "debate",
+          "ventaja",
+          "inconveniente"
+        ],
+        "explanationAr": "انتبه لنطق حرف b في debate وحرف v في ventajas كأصوات شفوية متسقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_debate_valorar_ventajas.mp3",
+          "modelAnswer": "En este debate, debemos valorar tanto las ventajas como los inconvenientes."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-pedir-citas",
+    "unitSlug": "a2-u9-phone-booking",
+    "levelCode": "A2",
+    "titleAr": "حجز المواعيد وتعديلها: عند الطبيب أو الموظف أو مصفف الشعر",
+    "titleEs": "Pedir y modificar citas",
+    "subtitleAr": "تحديد اليوم والساعة، تأكيد الحجز، وتغيير الموعد أو إلغاؤه",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يطلب المتعلم موعداً جديداً باللغة الإسبانية: Quería pedir cita con... / Quisiera concertar una cita.",
+        "أن يتفاوض حول اليوم والتوقيت المناسب: ¿Le viene bien el martes a las cuatro?.",
+        "أن يغير موعداً سابقاً أو يلغيه بلباقة: ¿Sería posible cambiar la cita para el jueves?."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أفعال وتعبيرات حجز وتعديل المواعيد",
+          "explanationAr": "1. **طلب الموعد بأدب**:\n- **Quería / Quisiera** pedir cita para el médico (كنت أود حجز موعد للطبيب - استخدام الماضي الناقص أو صيغة الرجاء للتهذيب).\n2. **التعبير عن ملاءمة الوقت**:\n- **venirle bien/mal a alguien**: ¿Le viene bien el jueves por la mañana? (هل يناسب حضرتك يوم الخميس صباحاً؟) — Sí, me viene perfecto (نعم، يناسبني تماماً).\n3. **تعديل أو إلغاء الموعد**:\n- **cambiar / aplazar**: Me gustaría cambiar la cita para la próxima semana.\n- **anular / cancelar**: Deseo anular mi cita de hoy por un imprevisto."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام فعل مناسب حرفي بدلاً من venire bien؛ في الإسبانية نقول me viene bien / mal للتعبير عن ملاءمة الموعد.",
+        "استخدام المضارع المباشر القاسي Quiero una cita بدلاً من الأسلوب المهذب Quería pedir cita."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر نقول: «عايز أظبط ميعاد مع الدكتور، هل يناسبك يوم التلات الساعة خمسة؟». بالإسبانية: Quería pedir cita. ¿Te viene bien el martes a las cinco?"
+        }
+      ],
+      "culturalNoteAr": "في معظم المصالح والمراكز الطبية في إسبانيا، يُطلب نظام 'cita previa' (موعد مسبق) إلكترونياً أو هاتفياً قبل الحضور."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-pedir-citas-intro",
+        "type": "explanation",
+        "titleAr": "المفردات الخاصة بالمواعيد",
+        "bodyAr": "المصطلحات الأساسية:\n- **la cita**: الموعد المقابل أو الطبي\n- **venir bien**: يناسب الوقت (me viene bien)\n- **aplazar**: يؤجل الموعد لوقت لاحق\n- **anular**: يلغي الموعد نهائياً\n- **confirmar**: يؤكد الحجز والموعد\n- **el hueco**: خانة شاغرة أو وقت متاح في الجدول",
+        "examples": [
+          {
+            "es": "Quería pedir cita con el dentista para una revisión.",
+            "ar": "كنت أود حجز موعد مع طبيب الأسنان لإجراء فحص."
+          },
+          {
+            "es": "El miércoles a las cinco me viene muy bien.",
+            "ar": "الأربعاء عند الخامسة يناسبني جداً."
+          },
+          {
+            "es": "Llamo para anular mi cita porque tengo que viajar.",
+            "ar": "أتصل لإلغاء موعدي لأنني مضطر للسفر."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "cita",
+      "venir bien",
+      "aplazar",
+      "anular",
+      "confirmar",
+      "hueco"
+    ],
+    "reviewVocabulary": [
+      "cambiar",
+      "hora"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يطلب المتعلم موعداً جديداً باللغة الإسبانية: Quería pedir cita con... / Quisiera concertar una cita.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-cit-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر التعبير المناسب للقول بأن الموعد ملائم لك",
+        "skills": [
+          "grammar",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "كيف تقول باللغة الإسبانية 'هذا الموعد يناسبني جداً'؟",
+        "stemEs": "El viernes por la tarde _____ perfecto para la reunión.",
+        "stemAr": "الجمعة بعد الظهر ... تماماً للاجتماع.",
+        "options": [
+          {
+            "id": "ex-a2-cit-1_a",
+            "text": "me viene",
+            "textAr": "يناسبني وقتاً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cit-1_b",
+            "text": "me anula",
+            "textAr": "يلغيني (غير صحيح)",
+            "isCorrect": false,
+            "distractorRationaleAr": "anular يعني يلغي ولا يعبر عن ملاءمة الموعد."
+          },
+          {
+            "id": "ex-a2-cit-1_c",
+            "text": "me aplaza",
+            "textAr": "يؤجلني",
+            "isCorrect": false,
+            "distractorRationaleAr": "aplazar يعني يؤجل."
+          }
+        ],
+        "targetVocab": [
+          "venir bien",
+          "anular",
+          "aplazar"
+        ],
+        "explanationAr": "التعبير هو venir bien للشخص: me viene perfecto.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cit-1_a"
+          ],
+          "selectedOptionId": "ex-a2-cit-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cit-1_b": "anular يعني يلغي ولا يعبر عن ملاءمة الموعد.",
+          "ex-a2-cit-1_c": "aplazar يعني يؤجل."
+        }
+      },
+      {
+        "id": "ex-a2-cit-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل بالفعل الدال على تأكيد الموعد",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل الإسباني الذي يعني 'يؤكد' بصيغة المصدر (confirmar)",
+        "stemEs": "Le llamo desde la clínica para _____ su cita de mañana.",
+        "stemAr": "أتصل بك من العيادة لتأكيد موعدك غداً.",
+        "targetVocab": [
+          "confirmar",
+          "cita"
+        ],
+        "explanationAr": "فعل confirmar يعني يؤكد الموعد أو الحجز.",
+        "answerKey": {
+          "accepted": [
+            "confirmar"
+          ],
+          "acceptableAnswers": [
+            "confirmar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cit-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد معنى إلغاء الموعد بالكامل",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي فعل يعني شطب الموعد نهائياً وعدم الحضور؟",
+        "stemEs": "No podré asistir a la consulta; tengo que _____ la cita.",
+        "stemAr": "لن أتمكن من الحضور للكشف؛ عليّ أن ... الموعد.",
+        "options": [
+          {
+            "id": "ex-a2-cit-3_a",
+            "text": "anular",
+            "textAr": "يلغي / يشطب الموعد (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cit-3_b",
+            "text": "confirmar",
+            "textAr": "يؤكد الحضور",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنه لن يتمكن من الحضور."
+          },
+          {
+            "id": "ex-a2-cit-3_c",
+            "text": "hueco",
+            "textAr": "وقت شاغر (اسم)",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً بعد tengo que وليس اسماً."
+          }
+        ],
+        "targetVocab": [
+          "anular",
+          "confirmar",
+          "hueco",
+          "cita"
+        ],
+        "explanationAr": "فعل anular una cita يعني إلغاء الموعد.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cit-3_a"
+          ],
+          "selectedOptionId": "ex-a2-cit-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cit-3_b": "قال إنه لن يتمكن من الحضور.",
+          "ex-a2-cit-3_c": "نحتاج فعلاً بعد tengo que وليس اسماً."
+        }
+      },
+      {
+        "id": "ex-a2-cit-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لطلب موعد جديد مع الطبيب بتهذيب",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-cit-4_t1",
+            "kind": "token",
+            "text": "Quería"
+          },
+          {
+            "id": "ex-a2-cit-4_t2",
+            "kind": "token",
+            "text": "pedir"
+          },
+          {
+            "id": "ex-a2-cit-4_t3",
+            "kind": "token",
+            "text": "cita"
+          },
+          {
+            "id": "ex-a2-cit-4_t4",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "ex-a2-cit-4_t5",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-cit-4_t6",
+            "kind": "token",
+            "text": "médico"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quería pedir cita para el médico"
+          ],
+          "tokenOrder": [
+            "ex-a2-cit-4_t1",
+            "ex-a2-cit-4_t2",
+            "ex-a2-cit-4_t3",
+            "ex-a2-cit-4_t4",
+            "ex-a2-cit-4_t5",
+            "ex-a2-cit-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: صيغة التهذيب Quería ثم المصدر pedir ثم cita ثم الجهة para el médico.",
+        "targetVocab": [
+          "cita"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-cit-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد إمكانية وجود خانة شاغرة في الجدول",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للموظفة وحدد هل يوجد وقت شاغر في جدول المواعيد",
+        "stemEs": "Déjeme mirar la agenda; sí, tenemos un hueco libre el jueves.",
+        "stemAr": "دعني أنظر في الأجندة؛ نعم، لدينا وقت شاغر يوم الخميس.",
+        "options": [
+          {
+            "id": "ex-a2-cit-5_a",
+            "text": "hueco",
+            "textAr": "خانة شاغرة / وقت متاح (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-cit-5_b",
+            "text": "anular",
+            "textAr": "إلغاء الموعد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموظفة وجدت وقتاً متاحاً ولم تلغِ الموعد."
+          },
+          {
+            "id": "ex-a2-cit-5_c",
+            "text": "aplazar",
+            "textAr": "تأجيل الموعد",
+            "isCorrect": false,
+            "distractorRationaleAr": "الموظفة تعرض موعداً شاغراً."
+          }
+        ],
+        "targetVocab": [
+          "hueco",
+          "anular",
+          "aplazar"
+        ],
+        "explanationAr": "الموظفة قالت: 'tenemos un hueco libre el jueves'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_hueco_agenda.mp3",
+        "speechEs": "Déjeme mirar la agenda; sí, tenemos un hueco libre el jueves.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-cit-5_a"
+          ],
+          "selectedOptionId": "ex-a2-cit-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-cit-5_b": "الموظفة وجدت وقتاً متاحاً ولم تلغِ الموعد.",
+          "ex-a2-cit-5_c": "الموظفة تعرض موعداً شاغراً."
+        }
+      },
+      {
+        "id": "ex-a2-cit-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق طلبك لتأجيل الموعد لأسبوع قادم",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بتهذيب ووضوح:",
+        "stemEs": "Por favor, ¿podríamos aplazar la cita para la próxima semana?",
+        "stemAr": "من فضلك، هل يمكننا تأجيل الموعد للأسبوع القادم؟",
+        "audioKey": "pending/a2_aplazar_cita.mp3",
+        "targetVocab": [
+          "aplazar",
+          "cita"
+        ],
+        "explanationAr": "انتبه لنطق حرف z في aplazar كنطق الثاء في الإسبانية القشتالية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_aplazar_cita.mp3",
+          "modelAnswer": "Por favor, ¿podríamos aplazar la cita para la próxima semana?"
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

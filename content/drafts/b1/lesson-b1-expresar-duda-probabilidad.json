@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b1-expresar-duda-probabilidad",
+    "unitSlug": "b1-u4-study",
+    "levelCode": "B1",
+    "titleAr": "الشك والاحتمال: قواعد استخدام المنصوب والإخباري مع Quizás و Tal vez و Probablemente",
+    "titleEs": "Expresar duda y probabilidad: Subjuntivo frente a Indicativo",
+    "subtitleAr": "محددات اختيار صيغة المنصوب مع أدوات الشك، ودرجات اليقين والترجيح",
+    "order": 2,
+    "estimatedMinutes": 18,
+    "cefrLevel": "B1",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يميز المتعلم بين استخدام المنصوب (Subjuntivo) والإخباري (Indicativo) مع أدوات الشك.",
+        "أن يطبق القاعدة النحوية لأدوات: quizás, tal vez, probablemente, posiblemente.",
+        "أن يتعرف على الأدوات التي تفرض المنصوب وجوباً (a lo mejor لا تأخذ إلا الإخباري، بينما puede que تأخذ المنصوب حتماً)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "قواعد أدوات الشك والاحتمال",
+          "explanationAr": "1. **Quizás / Tal vez / Probablemente / Posiblemente**:\n- إذا جاءت في **أول الجملة**: يجوز بعدها **المنصوب** (إذا كان الشك كبيراً واليقين ضعيفاً) أو **الإخباري** (إذا كان المتحدث يرجح الحدوث):\n  * Quizás **venga** mañana (ربما يأتي غداً - شك أكبر).\n  * Quizás **viene** mañana (ربما يأتي غداً - ترجيح أكبر).\n- إذا جاءت في **وسط أو نهاية الجملة**: تأخذ **الإخباري فقط** (Vendrá tal vez / Viene quizás).\n2. **A lo mejor**: تأخذ دائماً صيغة **الإخباري Indicativo** فقط:\n- A lo mejor **llega** tarde (الخطأ الشائع: *A lo mejor llegue*).\n3. **Puede que**: تأخذ دائماً صيغة **المنصوب Subjuntivo** حتماً:\n- Puede que **tengamos** examen el lunes."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام المنصوب بعد a lo mejor (الخطأ الأكثر شيوعاً عند الطلاب: *A lo mejor venga*؛ الصواب الحتمي: A lo mejor viene).",
+        "استخدام الإخباري بعد puede que (الخطأ: *Puede que viene*؛ الصواب: Puede que venga)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر بنقول: «يمكن ييجي بكرة، جايز الامتحان يتأجل، غالباً مش هلحق». بالإسبانية: Quizás venga mañana, puede que se aplace, probablemente no llegue."
+        }
+      ],
+      "culturalNoteAr": "الإسبان في الحديث اليومي العفوي يفضلون استخدام 'A lo mejor' بكثرة للتعبير عن الاحتمال البسيط، مع الحفاظ الدائم على صيغة الإخباري معها."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-b1-expresar-duda-probabilidad-intro",
+        "type": "explanation",
+        "titleAr": "أدوات التعبير عن الشك والاحتمال",
+        "bodyAr": "أهم التراكيب:\n- **quizás / tal vez**: ربما / قد (يأتي معها المنصوب أو الإخباري)\n- **a lo mejor**: يمكن / لعل (يأتي معها الإخباري فقط!)\n- **puede que**: من المحتمل أن (يأتي معها المنصوب وجوباً!)\n- **probablemente**: من المرجح / على الأرجح\n- **la duda**: الشك وعدم اليقين\n- **la probabilidad**: الاحتمالية والترجيح",
+        "examples": [
+          {
+            "es": "Quizás vayamos a la biblioteca por la tarde.",
+            "ar": "ربما نذهب إلى المكتبة في فترة بعد الظهر (شك ومنصوب)."
+          },
+          {
+            "es": "A lo mejor aprueba el examen sin problemas.",
+            "ar": "لعلّه ينجح في الامتحان بلا مشكلات (إخباري حتمي)."
+          },
+          {
+            "es": "Puede que no tengamos clase mañana.",
+            "ar": "من المحتمل ألا يكون لدينا محاضرة غداً (منصوب حتمي)."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "quizás",
+      "tal vez",
+      "a lo mejor",
+      "puede que",
+      "probablemente",
+      "duda"
+    ],
+    "reviewVocabulary": [
+      "seguro",
+      "tiempo"
+    ],
+    "level": "B1",
+    "objectiveAr": "أن يميز المتعلم بين استخدام المنصوب (Subjuntivo) والإخباري (Indicativo) مع أدوات الشك.",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-b1-dud-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الأداة التي تأخذ الإخباري Indicativo حصراً وبلا استثناء",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 1,
+        "promptAr": "أي أداة احتمال تتطلب حتماً صيغة الإخباري (Indicativo) ولا تأخذ المنصوب أبداً؟",
+        "stemEs": "_____ mañana hace buen tiempo y salimos al parque.",
+        "stemAr": "... غداً يكون الطقس جميلاً ونخرج إلى الحديقة.",
+        "options": [
+          {
+            "id": "ex-b1-dud-1_a",
+            "text": "A lo mejor",
+            "textAr": "تأخذ الإخباري دائماً (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dud-1_b",
+            "text": "Puede que",
+            "textAr": "تفرض صيغة المنصوب وجوباً",
+            "isCorrect": false,
+            "distractorRationaleAr": "puede que تأخذ المنصوب وليس hace."
+          },
+          {
+            "id": "ex-b1-dud-1_c",
+            "text": "Es posible que",
+            "textAr": "تفرض صيغة المنصوب",
+            "isCorrect": false,
+            "distractorRationaleAr": "التركيب يتطلب المنصوب لو كان es posible que."
+          }
+        ],
+        "targetVocab": [
+          "a lo mejor",
+          "puede que",
+          "duda"
+        ],
+        "explanationAr": "أداة A lo mejor تأخذ دائماً وبلا استثناء صيغة الإخباري Indicativo: A lo mejor hace.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dud-1_a"
+          ],
+          "selectedOptionId": "ex-b1-dud-1_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dud-1_b": "puede que تأخذ المنصوب وليس hace.",
+          "ex-b1-dud-1_c": "التركيب يتطلب المنصوب لو كان es posible que."
+        }
+      },
+      {
+        "id": "ex-b1-dud-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل صيغة المنصوب المطلوبة وجوباً بعد puede que",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "صرف فعل tener في صيغة المنصوب الغائب المفرد بعد peut-être / puede que: (tenga)",
+        "stemEs": "No estoy seguro, pero puede que el profesor _____ otra opinión.",
+        "stemAr": "لست متأكداً، ولكن من المحتمل أن يكون للأستاذ رأي آخر.",
+        "targetVocab": [
+          "puede que",
+          "seguro"
+        ],
+        "explanationAr": "بعد تركيب puede que يجب استخدام صيغة المنصوب: puede que tenga.",
+        "answerKey": {
+          "accepted": [
+            "tenga"
+          ],
+          "acceptableAnswers": [
+            "tenga"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-dud-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد صيغة الفعل بعد quizás الدالة على الشك الأكبر وعدم الجزم",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "أي صيغة لفعل viajar تدل على الشك القوي بعد quizás في أول الجملة؟",
+        "stemEs": "Quizás ellos _____ a España el próximo verano, pero no tienen billetes.",
+        "stemAr": "ربما ... إلى إسبانيا في الصيف القادم، لكنهم لا يملكون تذاكر.",
+        "options": [
+          {
+            "id": "ex-b1-dud-3_a",
+            "text": "viajen",
+            "textAr": "صيغة المنصوب للشك الأكبر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dud-3_b",
+            "text": "viajan",
+            "textAr": "مضارع إخباري لليقين الأكبر",
+            "isCorrect": false,
+            "distractorRationaleAr": "قال إنهم لا يملكون تذاكر فالشك أكبر وتناسبه viajen."
+          },
+          {
+            "id": "ex-b1-dud-3_c",
+            "text": "viajar",
+            "textAr": "مصدر",
+            "isCorrect": false,
+            "distractorRationaleAr": "نحتاج فعلاً مصرفاً مع ellos."
+          }
+        ],
+        "targetVocab": [
+          "quizás",
+          "duda"
+        ],
+        "explanationAr": "مع quizás في بداية الجملة، استخدام المنصوب viajen يعبر عن درجة شك قوية.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dud-3_a"
+          ],
+          "selectedOptionId": "ex-b1-dud-3_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dud-3_b": "قال إنهم لا يملكون تذاكر فالشك أكبر وتناسبه viajen.",
+          "ex-b1-dud-3_c": "نحتاج فعلاً مصرفاً مع ellos."
+        }
+      },
+      {
+        "id": "ex-b1-dud-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة للتعبير عن الاحتمال والترجيح",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-b1-dud-4_t1",
+            "kind": "token",
+            "text": "Probablemente"
+          },
+          {
+            "id": "ex-b1-dud-4_t2",
+            "kind": "token",
+            "text": "lleguen"
+          },
+          {
+            "id": "ex-b1-dud-4_t3",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "ex-b1-dud-4_t4",
+            "kind": "token",
+            "text": "tiempo"
+          },
+          {
+            "id": "ex-b1-dud-4_t5",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "ex-b1-dud-4_t6",
+            "kind": "token",
+            "text": "aeropuerto"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Probablemente lleguen a tiempo al aeropuerto"
+          ],
+          "tokenOrder": [
+            "ex-b1-dud-4_t1",
+            "ex-b1-dud-4_t2",
+            "ex-b1-dud-4_t3",
+            "ex-b1-dud-4_t4",
+            "ex-b1-dud-4_t5",
+            "ex-b1-dud-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب: الظرف Probablemente ثم الفعل بالمنصوب lleguen ثم a tiempo ثم الوجهة al aeropuerto.",
+        "targetVocab": [
+          "probablemente",
+          "tiempo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-b1-dud-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع للتسجيل وحدد درجة الشك لدى المتحدث",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع للتسجيل وحدد هل المتحدث جازم بأمره أم يساوره شك",
+        "stemEs": "Tengo muchas dudas; tal vez sea mejor esperar unos días más.",
+        "stemAr": "لدي شكوك كثيرة؛ ربما يكون من الأفضل الانتظار بضعة أيام أخرى.",
+        "options": [
+          {
+            "id": "ex-b1-dud-5_a",
+            "text": "tal vez",
+            "textAr": "شك واحتمال مع المنصوب (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-b1-dud-5_b",
+            "text": "seguro",
+            "textAr": "يقين تام",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث قال: 'Tengo muchas dudas'."
+          },
+          {
+            "id": "ex-b1-dud-5_c",
+            "text": "a lo mejor",
+            "textAr": "إخباري فقط",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث استخدم tal vez sea."
+          }
+        ],
+        "targetVocab": [
+          "tal vez",
+          "duda",
+          "seguro"
+        ],
+        "explanationAr": "المتحدث قال: 'Tengo muchas dudas; tal vez sea mejor'.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/b1_dudas_tal_vez.mp3",
+        "speechEs": "Tengo muchas dudas; tal vez sea mejor esperar unos días más.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-b1-dud-5_a"
+          ],
+          "selectedOptionId": "ex-b1-dud-5_a"
+        },
+        "errorFeedback": {
+          "ex-b1-dud-5_b": "المتحدث قال: 'Tengo muchas dudas'.",
+          "ex-b1-dud-5_c": "المتحدث استخدم tal vez sea."
+        }
+      },
+      {
+        "id": "ex-b1-dud-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق جملتك المعبرة عن الاحتمال الدراسي بالمنصوب",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة التالية بوضوح مع إبراز صيغة المنصوب:",
+        "stemEs": "Quizás obtengamos la beca si presentamos un buen proyecto.",
+        "stemAr": "ربما نحصل على المنحة إذا قدمنا مشروعاً جيداً.",
+        "audioKey": "pending/b1_quizas_obtengamos_beca.mp3",
+        "targetVocab": [
+          "quizás",
+          "duda"
+        ],
+        "explanationAr": "انتبه لنطق حرف z في Quizás كـ ثاء ونطق obtengamos بطلاقة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b1_quizas_obtengamos_beca.mp3",
+          "modelAnswer": "Quizás obtengamos la beca si presentamos un buen proyecto."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

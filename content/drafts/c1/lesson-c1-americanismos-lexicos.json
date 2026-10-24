@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-americanismos-lexicos",
+    "titleAr": "المفردات الأمريكية اللاتينية في السجل الرفيع: Americanismos léxicos cultos",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u5-regional",
+    "objectiveAr": "أن يميز المتعلم المفردات الأمريكية الشائعة في الأدب والصحافة المرموقة (platicar, manejar, celular, plata, chévere, acervo).",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "platicar",
+      "manejar",
+      "celular",
+      "plata",
+      "acervo",
+      "rigor"
+    ],
+    "reviewVocabulary": [
+      "tiempo",
+      "sociedad",
+      "bien",
+      "trabajo"
+    ],
+    "targetStructures": [
+      "Correspondencias léxicas panhispánicas: platicar (conversar) / manejar (conducir)",
+      "Términos tecnológicos cotidianos: celular (móvil) / computadora (ordenador)",
+      "Polisemia americana: plata (dinero / metonimia económica)",
+      "El acervo léxico compartido regulado por la ASALE (Asociación de Academias)"
+    ],
+    "grammarTopics": [
+      "lexicologia-panhispanica",
+      "americanismos-literarios-c1"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "ندوة صحفية دولية حول أدب الصحافة في مكسيكو سيتي بمشاركة كتاب من أمريكا وإسبانيا.",
+        "settingAr": "قصر الفنون الجميلة (Palacio de Bellas Artes)، مكسيكو سيتي",
+        "lines": [
+          {
+            "es": "Tuvimos la oportunidad de platicar largo y tendido sobre el futuro del periodismo cultural.",
+            "ar": "سنحت لنا الفرصة للتجاذب في أطراف الحديث مطولاً حول مستقبل الصحافة الثقافية.",
+            "arEg": "قعدنا واتكلمنا ودردشنا بالساعات عن مستقبل الصحافة الثقافية في بلادنا.",
+            "audioKey": "pending/c1-u5-ame-1"
+          },
+          {
+            "es": "En México decimos 'manejar un auto', mientras en la península prefieren 'conducir un coche'.",
+            "ar": "في المكسيك نقول 'manejar un auto'، بينما يفضلون في شبه الجزيرة عبارة 'conducir un coche'.",
+            "arEg": "عندنا في المكسيك بنقول manejar un auto، وفي إسبانيا بيقولوا conducir un coche، والاثنين فصحى.",
+            "audioKey": "pending/c1-u5-ame-2"
+          },
+          {
+            "es": "Ambas formas son plenamente legítimas y enriquecen el acervo común de nuestra lengua.",
+            "ar": "كلا الصيغتين فصيحة وشرعية تماماً وتثريان الرصيد التراثي المشترك للغتنا الإسبانية.",
+            "arEg": "الشكلين صح ومليون في المية فصحى وبيغنوا الرصيد اللغوي المشترك بين بلادنا كلها.",
+            "audioKey": "pending/c1-u5-ame-3"
+          },
+          {
+            "es": "El término 'plata' se emplea con elegancia en toda Sudamérica para referirse al capital financiero.",
+            "ar": "يستخدم مصطلح 'plata' بأناقة في كافة أرجاء أمريكا الجنوبية للإشارة إلى المال ورأس المال.",
+            "arEg": "كلمة plata بتتقال بشياكة في كل أمريكا اللاتينية للدلالة على الفلوس ورأس المال.",
+            "audioKey": "pending/c1-u5-ame-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "exercises": [
+      {
+        "id": "ex-c1-alx-1",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى حديث الكاتب المكسيكي وحدد الفعل الذي استخدمه للتعبير عن الحديث والتباحث الودي المطول.",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "ما هو الفعل الأمريكي اللاتيني الفصيح المقابل لـ conversar / charlar؟",
+        "stemEs": "Tuvimos la oportunidad de platicar largo y tendido sobre el futuro del periodismo cultural.",
+        "stemAr": "سنحت لنا الفرصة للتجاذب في أطراف الحديث مطولاً حول مستقبل الصحافة الثقافية.",
+        "options": [
+          {
+            "id": "ex-c1-alx-1_a",
+            "text": "Platicar",
+            "textAr": "التحادث والمسامرة الفصيحة في المكسيك وأمريكا الوسطى",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-alx-1_b",
+            "text": "Pelear",
+            "textAr": "الشجار والعراك بالأيدي",
+            "isCorrect": false,
+            "distractorRationaleAr": "تناقض تام مع الحوار الثقافي."
+          },
+          {
+            "id": "ex-c1-alx-1_c",
+            "text": "Callar",
+            "textAr": "الصمت والانقطاع عن الكلام",
+            "isCorrect": false,
+            "distractorRationaleAr": "عكس الحديث تماماً."
+          }
+        ],
+        "targetVocab": [
+          "platicar",
+          "acervo"
+        ],
+        "explanationAr": "الفعل «platicar» من أقدم وأعرق الأفعال القشتالية التي استقرت في المكسيك وأمريكا الوسطى كمعيار رفيع للحديث الودي المحترم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/c1-u5-ame-1",
+        "speechEs": "Tuvimos la oportunidad de platicar largo y tendido sobre el futuro del periodismo cultural.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-alx-1_a"
+          ],
+          "selectedOptionId": "ex-c1-alx-1_a"
+        },
+        "errorFeedback": {
+          "ex-c1-alx-1_b": "تناقض تام مع الحوار الثقافي.",
+          "ex-c1-alx-1_c": "عكس الحديث تماماً."
+        }
+      },
+      {
+        "id": "ex-c1-alx-2",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ما هو المقابل الأمريكي اللاتيني المعتمد لعبارة «conducir el coche» المستخدمة في إسبانيا؟",
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر التعبير الشائع في أغلب بلدان أمريكا اللاتينية:",
+        "stemEs": "Para desplazarse por la inmensa capital, decidió ____.",
+        "stemAr": "للتنقل عبر العاصمة المترامية الأطراف، قرر قيادة السيارة بنفسه.",
+        "options": [
+          {
+            "id": "ex-c1-alx-2_a",
+            "text": "manejar el auto",
+            "textAr": "قيادة السيارة بأسلوب المعيار الأمريكي اللاتيني",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-alx-2_b",
+            "text": "andar en mula",
+            "textAr": "ركوب البغل في الطرقات الجبلية",
+            "isCorrect": false,
+            "distractorRationaleAr": "وسيلة نقل تقليدية قديمة لا تناسب العاصمة الحديثة."
+          },
+          {
+            "id": "ex-c1-alx-2_c",
+            "text": "remar en barco",
+            "textAr": "التجذيف في القارب النهري",
+            "isCorrect": false,
+            "distractorRationaleAr": "يخص الملاحة المائية."
+          }
+        ],
+        "targetVocab": [
+          "manejar",
+          "rigor"
+        ],
+        "explanationAr": "في المكسيك وأمريكا الجنوبية يقال «manejar un auto» بدلاً من «conducir un coche» الإيبيرية، وكلاهما فصيح رسمي في المعاجم.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-alx-2_a"
+          ],
+          "selectedOptionId": "ex-c1-alx-2_a"
+        },
+        "errorFeedback": {
+          "ex-c1-alx-2_b": "وسيلة نقل تقليدية قديمة لا تناسب العاصمة الحديثة.",
+          "ex-c1-alx-2_c": "يخص الملاحة المائية."
+        }
+      },
+      {
+        "id": "ex-c1-alx-3",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الجملة بالكلمة الأمريكية اللاتينية المعتمدة للهاتف المحمول: «el teléfono ____».",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 2,
+        "promptAr": "اكتب صفة الهاتف المحمول في عموم أمريكا الناطقة بالإسبانية:",
+        "stemEs": "Por favor, apaguen sus teléfonos ____ antes de que comience la función.",
+        "stemAr": "يرجى إغلاق هواتفكم النقالة قبل بدء العرض المسرحي.",
+        "targetVocab": [
+          "celular"
+        ],
+        "explanationAr": "في كامل القارة الأمريكية يقال «el celular» أو «el teléfono celular»، بينما يقتصر استخدام «el móvil» على إسبانيا.",
+        "answerKey": {
+          "accepted": [
+            "celulares"
+          ],
+          "acceptableAnswers": [
+            "celulares"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-alx-4",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا تعني كلمة «plata» في الاستخدام اليومي والأدبي في أمريكا الجنوبية؟",
+        "skills": [
+          "vocabulary",
+          "reading"
+        ],
+        "difficulty": 1,
+        "promptAr": "اختر الدلالة الاقتصادية والاجتماعية لكلمة plata في أمريكا اللاتينية:",
+        "stemEs": "Es un proyecto prometedor, pero hace falta mucha ____ para financiarlo.",
+        "stemAr": "إنه مشروع واعد، بيد أنه يتطلب الكثير من المال لتمويله على الوجه الأكمل.",
+        "options": [
+          {
+            "id": "ex-c1-alx-4_a",
+            "text": "dinero y recursos económicos",
+            "textAr": "المال والسيولة النقدية والموارد المالية",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-c1-alx-4_b",
+            "text": "platos de cocina sucios",
+            "textAr": "أطباق طعام غير نظيفة",
+            "isCorrect": false,
+            "distractorRationaleAr": "خلط مع كلمة plato."
+          },
+          {
+            "id": "ex-c1-alx-4_c",
+            "text": "arena de la playa",
+            "textAr": "رمال الشاطئ الساحلية",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى جغرافي لا علاقة له بالاقتصاد."
+          }
+        ],
+        "targetVocab": [
+          "plata",
+          "rigor"
+        ],
+        "explanationAr": "كلمة «plata» (الفضة) أصبحت في القاموس الأمريكي اللاتيني كبرى الكنايات الدالة على المال النقدي نظراً لغزارة مناجم الفضة تاريخياً.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-c1-alx-4_a"
+          ],
+          "selectedOptionId": "ex-c1-alx-4_a"
+        },
+        "errorFeedback": {
+          "ex-c1-alx-4_b": "خلط مع كلمة plato.",
+          "ex-c1-alx-4_c": "معنى جغرافي لا علاقة له بالاقتصاد."
+        }
+      },
+      {
+        "id": "ex-c1-alx-5",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتب الكلمات لبناء تأكيد لغوي على وحدة اللغة الإسبانية وتنوع روافدها المعجمية.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-c1-alx-5_t1",
+            "kind": "token",
+            "text": "Compartimos"
+          },
+          {
+            "id": "ex-c1-alx-5_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "ex-c1-alx-5_t3",
+            "kind": "token",
+            "text": "mismo"
+          },
+          {
+            "id": "ex-c1-alx-5_t4",
+            "kind": "token",
+            "text": "acervo"
+          },
+          {
+            "id": "ex-c1-alx-5_t5",
+            "kind": "token",
+            "text": "lingüístico"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Compartimos un mismo acervo lingüístico"
+          ],
+          "tokenOrder": [
+            "ex-c1-alx-5_t1",
+            "ex-c1-alx-5_t2",
+            "ex-c1-alx-5_t3",
+            "ex-c1-alx-5_t4",
+            "ex-c1-alx-5_t5"
+          ]
+        },
+        "explanationAr": "الفعل المتعدي Compartimos متبوعاً بالمفعول به الموصوف un mismo acervo lingüístico.",
+        "targetVocab": [
+          "acervo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-c1-alx-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق هذه الجملة بنبرة تبرز الاحترام المتبادل لغنى المفردات في العالم الناطق بالإسبانية.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "نطق سليم مراعياً مخارج الحروف الفصيحة:",
+        "stemEs": "Me alegra platicar contigo sobre este tema.",
+        "stemAr": "يسعدني كثيراً التجاذب معك في أطراف الحديث حول هذه المسألة.",
+        "audioKey": "pending/c1-u5-ame-spk",
+        "targetVocab": [
+          "platicar",
+          "rigor"
+        ],
+        "explanationAr": "انتبه لنطق حرف t في platicar بوضوح ونعومة دون تفخيم زائد، وحافظ على الابتسامة الصوتية في نبرة الحديث.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-u5-ame-spk",
+          "modelAnswer": "Me alegra platicar contigo sobre este tema."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}

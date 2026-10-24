@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "b2-conectores-argumentativos",
+    "titleAr": "روابط المحاجة والنقاش: Conectores argumentativos",
+    "level": "B2",
+    "programSlug": "main-track",
+    "unitSlug": "b2-u1-argument",
+    "objectiveAr": "أن يوظف المتعلم روابط المحاجة والاستدراك المتقدمة (Sin embargo, Por lo tanto, No obstante, En cambio) لربط الحجج وإبراز التباين والنتيجة في النقاشات الفكرية والمهنية.",
+    "estimatedMinutes": 11,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "embargo",
+      "obstante",
+      "cambio",
+      "conector",
+      "argumento",
+      "resultado"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "amigo",
+      "tiempo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Oposición / Concesión: Sin embargo / No obstante (ومع ذلك / بيد أن)",
+      "Contraste directo: En cambio / Por el contrario (في المقابل / على العكس)",
+      "Consecuencia: Por lo tanto / Por consiguiente (وبناءً على ذلك / ولذلك)"
+    ],
+    "grammarTopics": [
+      "conectores-discursivos-b2",
+      "argumentacion-y-debate"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مناظرة في منتدى اقتصادي جامعي حول التحول إلى الطاقة النظيفة والتحديات المالية المصاحبة له.",
+        "settingAr": "قاعة المؤتمرات بجامعة سالامانكا",
+        "lines": [
+          {
+            "es": "La transición energética es urgente e inaplazable para nuestro futuro.",
+            "ar": "التحول الطاقي مسألة ملحة لا تحتمل التأجيل من أجل مستقبلنا.",
+            "arEg": "التحول للطاقة النظيفة ضروري وميستحملش تأخير عشان مستقبلنا.",
+            "audioKey": "pending/b2-conec-debate-1"
+          },
+          {
+            "es": "Es verdad; sin embargo, los costes de implementación son muy elevados.",
+            "ar": "هذا صحيح؛ ومع ذلك، فإن تكاليف التطبيق باهظة للغاية.",
+            "arEg": "ده حقيقي؛ بس مع ذلك مصاريف التنفيذ عالية جداً.",
+            "audioKey": "pending/b2-conec-debate-2"
+          },
+          {
+            "es": "No obstante, retrasar el cambio generará pérdidas ecológicas irreparables.",
+            "ar": "بيد أن تأخير التغيير سيولد خسائر بيئية لا يمكن تعويضها.",
+            "arEg": "رغم كده، تأخير الخطوة دي هيجيب خساير بيئية متتعوضش.",
+            "audioKey": "pending/b2-conec-debate-3"
+          },
+          {
+            "es": "Por lo tanto, debemos buscar financiación mixta para apoyar a la industria.",
+            "ar": "ولذلك، يتعين علينا البحث عن تمويل مختلط لدعم القطاع الصناعي.",
+            "arEg": "عشان كده، لازم ندور على تمويل مشترك نسند بيه الصناعة.",
+            "audioKey": "pending/b2-conec-debate-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "b2_conec_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى المتحدث الأول ولاحظ كيف استدرك بالاعتراض على تكاليف المشروع.",
+        "audioKey": "pending/b2-conec-debate-2",
+        "speechEs": "Es verdad; sin embargo, los costes de implementación son muy elevados.",
+        "options": [
+          {
+            "id": "b2_conec_1_a",
+            "text": "Sin embargo, los costes son muy elevados",
+            "isCorrect": true,
+            "textAr": "ومع ذلك، التكاليف باهظة للغاية"
+          },
+          {
+            "id": "b2_conec_1_b",
+            "text": "Por lo tanto, todo el proyecto es gratis",
+            "isCorrect": false,
+            "textAr": "ولذلك المشروع مجاني بالكامل",
+            "distractorRationaleAr": "لم يقل ذلك، بل ذكر التكاليف المرتفعة."
+          },
+          {
+            "id": "b2_conec_1_c",
+            "text": "Además, no hay ningún obstáculo económico",
+            "isCorrect": false,
+            "textAr": "علاوة على ذلك لا توجد عقبة اقتصادية",
+            "distractorRationaleAr": "مناقض تماماً لما ذكره المتحدث."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_conec_1_a"
+          ]
+        },
+        "explanationAr": "استخدم المتحدث رابط الاستدراك «sin embargo» (ومع ذلك / لكن) للتحفظ على التكاليف العالية رغم موافقته على أهمية الفكرة.",
+        "errorFeedback": {
+          "b2_conec_1_b": "لم يقل أن المشروع مجاني.",
+          "b2_conec_1_c": "لم يقل أنه لا توجد عقبات."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "embargo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_conec_2_function",
+        "type": "word_choice",
+        "instructionAr": "ما هي الوظيفة البلاغية للرابط «no obstante» في النصوص والمقالات الجادة؟",
+        "options": [
+          {
+            "id": "b2_conec_2_a",
+            "text": "Introducir una objeción formal o contraste matizado",
+            "isCorrect": true,
+            "textAr": "تقديم اعتراض رسمي أو استدراك دقيق"
+          },
+          {
+            "id": "b2_conec_2_b",
+            "text": "Expresar causa y justificación básica",
+            "isCorrect": false,
+            "textAr": "التعبير عن السبب والتعليل البسيط",
+            "distractorRationaleAr": "السبب والتعليل يعبر عنهما بأدوات مثل porque أو ya que."
+          },
+          {
+            "id": "b2_conec_2_c",
+            "text": "Enumerar elementos cronológicos en una lista",
+            "isCorrect": false,
+            "textAr": "تعداد عناصر زمنية متتابعة",
+            "distractorRationaleAr": "التعداد الزمني يستخدم primero أو luego وليس no obstante."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "b2_conec_2_a"
+          ]
+        },
+        "explanationAr": "الرابط «no obstante» هو مرادف راقٍ وأكاديمي لـ sin embargo، ويعادل في العربية الفصحى «بيد أن / مع ذلك / غير أن».",
+        "errorFeedback": {
+          "b2_conec_2_b": "السبب يُعبر عنه بـ porque.",
+          "b2_conec_2_c": "التعداد الزمني يُعبر عنه بـ primero, luego."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "obstante"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_conec_3_fill_however",
+        "type": "fill_blank",
+        "instructionAr": "أكمل رابط الاستدراك الأشهر: «المشروع جذاب؛ ومع ذلك، ينطوي على مخاطر».",
+        "stemEs": "El plan es muy atractivo; sin ____, entraña ciertos riesgos.",
+        "stemAr": "الخطة جذابة للغاية؛ ومع ذلك، تنطوي على مخاطر معينة.",
+        "answerKey": {
+          "accepted": [
+            "embargo"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير التنازلي القياسي المكون من كلمتين للاستدراك هو «sin embargo» (ومع ذلك).",
+        "errorFeedback": {
+          "duda": "sin duda تعني بلا شك (توكيد)، والمطلوب استدراك sin embargo.",
+          "falta": "sin falta تعني دون تقصير، ولا تناسب سياق الاستدراك."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "embargo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_conec_4_fill_conclusion",
+        "type": "fill_blank",
+        "instructionAr": "أكمل رابط النتيجة المنطقية: «لم يلتزموا بالموعد؛ ولذلك، أُلغي العقد».",
+        "stemEs": "Incumplieron el plazo pactado; por lo ____, se rescindió el contrato.",
+        "stemAr": "أخلّوا بالموعد المتفق عليه؛ ولذلك، تم فسخ العقد.",
+        "answerKey": {
+          "accepted": [
+            "tanto"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "رابط النتيجة المنطقية المباشرة في الإسبانية هو «por lo tanto» (ولذلك / وبناء عليه).",
+        "errorFeedback": {
+          "menos": "por lo menos تعني على الأقل، والمطلوب نتيجة سببية por lo tanto.",
+          "pronto": "por lo pronto تعني في الوقت الحالي مبدئياً."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "resultado"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_conec_5_en_cambio",
+        "type": "fill_blank",
+        "instructionAr": "أكمل رابط التباين والمقابلة: «سارة تفضل الأدب؛ في المقابل، أخوها يدرس الهندسة».",
+        "stemEs": "Sara prefiere las letras; en ____, su hermano estudia ingeniería.",
+        "stemAr": "سارة تفضل الدراسات الأدبية؛ في المقابل، يدرس شقيقها الهندسة.",
+        "answerKey": {
+          "accepted": [
+            "cambio"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "رابط المقابلة بين أمرين مختلفين هو «en cambio» ويعادل في العربية «في المقابل / أما فـ...».",
+        "errorFeedback": {
+          "vez": "en vez de تعني بدلاً من وتتطلب حرف جر ومصدراً.",
+          "contra": "en contra تعني بالضد وليس في المقابل."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cambio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "b2_conec_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق هذه العبارة الحجاجية بنبرة هادئة ومقنعة مع الوقف القصير بعد الرابط.",
+        "stemEs": "Estudió mucho; no obstante, el examen resultó bastante exigente.",
+        "stemAr": "درس كثيرًا؛ بيد أن الامتحان كان متطلبًا وصعبًا للغاية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/b2-conec-speak-1",
+          "modelAnswer": "Estudió mucho; no obstante, el examen resultó bastante exigente."
+        },
+        "explanationAr": "انتبه لنطق no obstante بسلاسة، مع مراعاة السكتة الخفيفة بعدها كعلامة ترقيم صوتية تمهد للاعتراض البلاغي.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "obstante"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق رابط no obstante بوضوح",
+              "weight": 50,
+              "code": "pron_no_obstante"
+            },
+            {
+              "labelAr": "نطق exigente مع الجيم الخائية الإسبانية",
+              "weight": 50,
+              "code": "pron_exigente"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula Plus 3 وEn Vocabulario B2"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يركز على روابط الخطاب والمحاجة الفكرية في مستوى B2."
+    }
+  }
+}

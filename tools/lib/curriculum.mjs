@@ -71,8 +71,9 @@ const CLAIM_PATTERNS = [/أهم\s*1000/, /أكثر\s*1000/, /most\s+common\s+100
  */
 import { statSync } from 'node:fs';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT_FOR_FS = new URL('../../', import.meta.url).pathname;
+const ROOT_FOR_FS = fileURLToPath(new URL('../../', import.meta.url));
 const existsSyncSafe = (p) => {
   try {
     return statSync(p).isFile();

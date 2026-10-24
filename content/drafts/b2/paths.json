@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "programs": [
+    {
+      "slug": "main-track",
+      "kind": "main",
+      "titleAr": "المسار الأساسي: من الصفر إلى C1",
+      "levelCode": "B2",
+      "category": "core",
+      "objectiveAr": "المسار الأساسي للمستوى B2.",
+      "units": [
+        {
+          "slug": "b2-u1-argument",
+          "levelCode": "B2",
+          "titleAr": "بناء الحجة والشرط الافتراضي",
+          "sortOrder": 1,
+          "status": "draft",
+          "lessons": [
+            "b2-condicional-imperfecto-subjuntivo",
+            "b2-conectores-argumentativos",
+            "b2-matizar-opiniones",
+            "b2-contraargumentacion"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u2-news",
+          "levelCode": "B2",
+          "titleAr": "الأخبار وتحليلها",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "b2-analisis-prensa-editorial",
+            "b2-pasiva-periodistica-se",
+            "b2-hechos-vs-opiniones",
+            "b2-entrevista-periodistica"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u3-literature",
+          "levelCode": "B2",
+          "titleAr": "نصوص أدبية مبسطة",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "b2-literatura-narrativa-contemporanea",
+            "b2-metaforas-recursos-literarios",
+            "b2-analisis-personajes-relato",
+            "b2-expresion-estetica-emociones"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u4-professional",
+          "levelCode": "B2",
+          "titleAr": "التواصل المهني",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "b2-gestion-reuniones-orden-dia",
+            "b2-informes-ejecutivos-kpis",
+            "b2-correspondencia-corporativa",
+            "b2-resolucion-conflictos-laborales"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u5-academic",
+          "levelCode": "B2",
+          "titleAr": "الكتابة الأكاديمية",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "b2-estructura-ensayo-academico",
+            "b2-citacion-fuentes-academicas",
+            "b2-conectores-causa-efecto-avanzados",
+            "b2-resumen-conclusiones-investigacion"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u6-negotiation",
+          "levelCode": "B2",
+          "titleAr": "التفاوض والإقناع",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "b2-estrategias-negociacion-comercial",
+            "b2-concesiones-condiciones-mutuas",
+            "b2-persuasion-manejo-objeciones",
+            "b2-acuerdo-clausulas-contractuales"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u7-environment",
+          "levelCode": "B2",
+          "titleAr": "البيئة والمجتمع",
+          "sortOrder": 7,
+          "status": "draft",
+          "lessons": [
+            "b2-cambio-climatico-sostenibilidad",
+            "b2-politicas-ambientales-subjuntivo",
+            "b2-transformacion-social-demografia",
+            "b2-debate-energia-desarrollo"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u8-presentations",
+          "levelCode": "B2",
+          "titleAr": "العروض والتقديم",
+          "sortOrder": 8,
+          "status": "draft",
+          "lessons": [
+            "b2-apertura-presentacion-audiencia",
+            "b2-descripcion-graficos-tendencias",
+            "b2-gestion-preguntas-respuestas",
+            "b2-conclusion-llamada-accion"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u9-formal-writing",
+          "levelCode": "B2",
+          "titleAr": "المراسلات الرسمية",
+          "sortOrder": 9,
+          "status": "draft",
+          "lessons": [
+            "b2-reclamaciones-juridicas-instancias",
+            "b2-carta-motivacion-becas-empleo",
+            "b2-comunicacion-institucional-diplomatica",
+            "b2-formulas-protocolarias-cierre"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "b2-u10-culture-deep",
+          "levelCode": "B2",
+          "titleAr": "الفروق الثقافية والإقليمية",
+          "sortOrder": 10,
+          "status": "draft",
+          "lessons": [
+            "b2-variedades-linguisticas-hispanas",
+            "b2-comunicacion-no-verbal-gestos",
+            "b2-patrimonio-cultural-inmaterial",
+            "b2-choque-cultural-integracion"
+          ],
+          "vocabularyBundles": []
+        }
+      ]
+    }
+  ]
+}

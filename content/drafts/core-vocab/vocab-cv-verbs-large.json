@@ -1,0 +1,5502 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "cv-verbs-large",
+  "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+  "source": {
+    "title": "حزمة مفردات: الأفعال الإسبانية الكبرى: الحركة والانتقال والتواصل والتفاعل — مسودة قابلة للمراجعة",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-23",
+    "rankingNote": "الترتيب internalRank داخلي لسَلسَلة التدريس فقط. IPA تلقائي تقريبي من قواعد الإملاء الإسبانية وينتظر مراجعة بشرية."
+  },
+  "entries": [
+    {
+      "headword": "aproximar",
+      "normalized": "aproximar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/apɾoksimˈaɾ/",
+      "pronunciationHintAr": "ابروكسيمار",
+      "internalRank": 1,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "قرّب وأدنى المسافة",
+          "meaningArEg": "قرب الحاجة ودناها",
+          "glossEs": null,
+          "exampleEs": "El barco se aproxima lentamente al muelle.",
+          "exampleAr": "يقترب القارب ببطء من الرصيف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El barco se aproxima lentamente al muelle.",
+          "ar": "يقترب القارب ببطء من الرصيف.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "aproximo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproxima",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximé",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproxime",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproxime",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "aproximen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "aproximando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "aproximado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "ascender",
+      "normalized": "ascender",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/asθendˈeɾ/",
+      "pronunciationHintAr": "اسثيندير",
+      "internalRank": 2,
+      "tags": [
+        "domain:work",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صعد وارتقى / ترقى في العمل",
+          "meaningArEg": "طلع وصعد واترقّى",
+          "glossEs": null,
+          "exampleEs": "El montañero asciende la cumbre nevada.",
+          "exampleAr": "يصعد متسلق الجبال القمة الثلجية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El montañero asciende la cumbre nevada.",
+          "ar": "يصعد متسلق الجبال القمة الثلجية.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "asciendo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "asciendes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "asciende",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascienden",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendí",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendiste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendió",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendimos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendisteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendieron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendías",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendíamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendíais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendían",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderé",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderá",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderemos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderéis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderíamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderíais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascenderían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascienda",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "asciendas",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascienda",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendamos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ascendáis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "asciendan",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "gerund",
+          "formEs": "ascendiendo",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": true
+        },
+        {
+          "kind": "participle",
+          "formEs": "ascendido",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "partir",
+      "normalized": "partir",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/paɾtˈiɾ/",
+      "pronunciationHintAr": "بارتير",
+      "internalRank": 3,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "غادر وانطلق مسافراً / قسم",
+          "meaningArEg": "سافر وقسم الرغيف",
+          "glossEs": null,
+          "exampleEs": "El vuelo internacional parte a mediodía.",
+          "exampleAr": "تنطلق الرحلة الدولية عند منتصف النهار.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El vuelo internacional parte a mediodía.",
+          "ar": "تنطلق الرحلة الدولية عند منتصف النهار.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "parto",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "parte",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partimos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partís",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "parten",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partí",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partió",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partimos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partisteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partieron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partías",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partíamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partíais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partían",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partirás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partirá",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partirán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partirías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partiríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partirían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "parta",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partas",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "parta",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partamos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partáis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "partan",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "partiendo",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "partido",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "recorrer",
+      "normalized": "recorrer",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/rekoɾɾˈeɾ/",
+      "pronunciationHintAr": "ريكوررير",
+      "internalRank": 4,
+      "tags": [
+        "domain:travel",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "طاف وجاب أنحاء المكان",
+          "meaningArEg": "لف وطاف في المعالم",
+          "glossEs": null,
+          "exampleEs": "Recorrieron el casco antiguo a pie durante horas.",
+          "exampleAr": "طافوا في الحي القديم مشياً لساعات.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Recorrieron el casco antiguo a pie durante horas.",
+          "ar": "طافوا في الحي القديم مشياً لساعات.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "recorro",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorres",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorre",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorremos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorréis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorren",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrí",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorriste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrió",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrimos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorristeis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrieron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorría",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrías",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorría",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorríamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorríais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrían",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorreré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrerás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrerá",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorreremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorreréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrerán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrerías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorreríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorreríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorrerían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorra",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorras",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorra",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorramos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorráis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "recorran",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "recorriendo",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "recorrido",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "remontar",
+      "normalized": "remontar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/remontˈaɾ/",
+      "pronunciationHintAr": "ريمونتار",
+      "internalRank": 5,
+      "tags": [
+        "domain:sports",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "صعد عكس تيار النهر / تدارك",
+          "meaningArEg": "طلع عكس التيار وتدارك النتيجة",
+          "glossEs": null,
+          "exampleEs": "El salmón remonta el río para desovar.",
+          "exampleAr": "يصعد سمك السلمون عكس تيار النهر ليضع بيضه.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El salmón remonta el río para desovar.",
+          "ar": "يصعد سمك السلمون عكس تيار النهر ليضع بيضه.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "remonto",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remonta",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remonté",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remonte",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remonte",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remontéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "remonten",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "remontando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "remontado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "retirar",
+      "normalized": "retirar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/retiɾˈaɾ/",
+      "pronunciationHintAr": "ريتيرار",
+      "internalRank": 6,
+      "tags": [
+        "domain:work",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سحب وأبعد الشيء / تقاعد",
+          "meaningArEg": "سحب فلوس أو طلع معاش",
+          "glossEs": null,
+          "exampleEs": "Retiró dinero en efectivo del cajero automático.",
+          "exampleAr": "سحب نقوداً من الصراف الآلي.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Retiró dinero en efectivo del cajero automático.",
+          "ar": "سحب نقوداً من الصراف الآلي.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "retiro",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiras",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retira",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiramos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiráis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiran",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiré",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiró",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiramos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiraríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retirarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retire",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retires",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retire",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiremos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiréis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retiren",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "retirando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "retirado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "retroceder",
+      "normalized": "retroceder",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/retɾoθedˈeɾ/",
+      "pronunciationHintAr": "ريتروثيدير",
+      "internalRank": 7,
+      "tags": [
+        "domain:transport",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تراجع وعاد إلى الوراء",
+          "meaningArEg": "رجع لورا خطوتين",
+          "glossEs": null,
+          "exampleEs": "El coche retrocede con cuidado al aparcar.",
+          "exampleAr": "تتراجع السيارة للخلف بحذر عند الوقوف.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El coche retrocede con cuidado al aparcar.",
+          "ar": "تتراجع السيارة للخلف بحذر عند الوقوف.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedes",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocede",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedemos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedéis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retroceden",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedí",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocediste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedió",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedimos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedisteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedieron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedías",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedía",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedíamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedíais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedían",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederé",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederá",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederemos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederéis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedería",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederíamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederíais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocederían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retroceda",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedas",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retroceda",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedamos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedáis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "retrocedan",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "retrocediendo",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "retrocedido",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "rodar",
+      "normalized": "rodar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/rodˈaɾ/",
+      "pronunciationHintAr": "رودار",
+      "internalRank": 8,
+      "tags": [
+        "domain:arts",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تدحرجت الكرة / صور فيلماً",
+          "meaningArEg": "اتدحرج وصور فيلم سينما",
+          "glossEs": null,
+          "exampleEs": "La pelota rueda veloz por el césped húmedo.",
+          "exampleAr": "تتدحرج الكرة بسرعة فوق العشب الرطب.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "La pelota rueda veloz por el césped húmedo.",
+          "ar": "تتدحرج الكرة بسرعة فوق العشب الرطب.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "ruedo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruedas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rueda",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruedan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodé",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruede",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruedes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruede",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rodéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rueden",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "gerund",
+          "formEs": "rodando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": true
+        },
+        {
+          "kind": "participle",
+          "formEs": "rodado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "trasladar",
+      "normalized": "trasladar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/tɾasladˈaɾ/",
+      "pronunciationHintAr": "تراسلادار",
+      "internalRank": 9,
+      "tags": [
+        "domain:housing",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "نقل وحول المتاع إلى منزل جديد",
+          "meaningArEg": "نقل العفش لبيت جديد",
+          "glossEs": null,
+          "exampleEs": "Trasladaron los muebles en un camión grande.",
+          "exampleAr": "نقلوا الأثاث في شاحنة كبيرة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Trasladaron los muebles en un camión grande.",
+          "ar": "نقلوا الأثاث في شاحنة كبيرة.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "traslado",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "traslada",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladé",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "traslade",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "traslades",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "traslade",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "traslademos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "trasladen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "trasladando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "trasladado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "argumentar",
+      "normalized": "argumentar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/aɾgumentˈaɾ/",
+      "pronunciationHintAr": "ارجومينتار",
+      "internalRank": 10,
+      "tags": [
+        "domain:study",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "احتج وقدم الحجج والبراهين",
+          "meaningArEg": "جادل بالحجة والبرهان",
+          "glossEs": null,
+          "exampleEs": "El ponente argumenta su tesis con datos sólidos.",
+          "exampleAr": "يدعم المحاضر أطروحته ببيانات قوية.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El ponente argumenta su tesis con datos sólidos.",
+          "ar": "يدعم المحاضر أطروحته ببيانات قوية.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "argumento",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumenta",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumenté",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumente",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumente",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumentéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "argumenten",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "argumentando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "argumentado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "deletrear",
+      "normalized": "deletrear",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A1",
+      "register": "neutral",
+      "ipa": "/deletɾeˈaɾ/",
+      "pronunciationHintAr": "ديليتريار",
+      "internalRank": 11,
+      "tags": [
+        "domain:study",
+        "level:A1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تهجى الكلمة حرفاً حرفاً",
+          "meaningArEg": "تهجى الكلمة حرف حرف",
+          "glossEs": null,
+          "exampleEs": "Deletrea su apellido para que lo anoten bien.",
+          "exampleAr": "يتهجى لقبه لكي يسجلوه بشكل صحيح.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Deletrea su apellido para que lo anoten bien.",
+          "ar": "يتهجى لقبه لكي يسجلوه بشكل صحيح.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "deletreo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrea",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrean",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreé",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearon",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearé",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearemos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearéis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearía",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearía",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearíamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearíais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrearían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletree",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletrees",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletree",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "deletreen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "deletreando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "deletreado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "insinuar",
+      "normalized": "insinuar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/insinuˈaɾ/",
+      "pronunciationHintAr": "ينسينوار",
+      "internalRank": 12,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ألمح ولمح بالأمر دون تصريح",
+          "meaningArEg": "لمح في الكلام وما قالش صريح",
+          "glossEs": null,
+          "exampleEs": "Insinúa que podría haber cambios en la plantilla (insinuar).",
+          "exampleAr": "يلمح إلى إمكانية حدوث تغييرات في الكادر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Insinúa que podría haber cambios en la plantilla (insinuar).",
+          "ar": "يلمح إلى إمكانية حدوث تغييرات في الكادر.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "insinuo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinua",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinué",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinue",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinues",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinue",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "insinuen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "insinuando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "insinuado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "protestar",
+      "normalized": "protestar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/pɾotestˈaɾ/",
+      "pronunciationHintAr": "بروتيستار",
+      "internalRank": 13,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "احتج واعترض على الإجراء",
+          "meaningArEg": "اعترض واحتج ع القرار الظالم",
+          "glossEs": null,
+          "exampleEs": "Los vecinos protestan por el ruido nocturno en la plaza.",
+          "exampleAr": "يحتج الجيران على الضوضاء الليلية في الميدان.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Los vecinos protestan por el ruido nocturno en la plaza.",
+          "ar": "يحتج الجيران على الضوضاء الليلية في الميدان.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "protesto",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protesta",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protesté",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "proteste",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "proteste",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protestéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "protesten",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "protestando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "protestado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "quejar",
+      "normalized": "quejar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/kuexˈaɾ/",
+      "pronunciationHintAr": "كويخار",
+      "internalRank": 14,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "شكا وتذمر من سوء المعاملة",
+          "meaningArEg": "اتشكى واتذمر من المعاملة",
+          "glossEs": null,
+          "exampleEs": "El cliente se queja del retraso en el servicio.",
+          "exampleAr": "يشكو الزبون من التأخر في الخدمة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "El cliente se queja del retraso en el servicio.",
+          "ar": "يشكو الزبون من التأخر في الخدمة.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "quejo",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "queja",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejé",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "queje",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejes",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "queje",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "quejen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "quejando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "quejado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "rogar",
+      "normalized": "rogar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "B1",
+      "register": "neutral",
+      "ipa": "/rogˈaɾ/",
+      "pronunciationHintAr": "روجار",
+      "internalRank": 15,
+      "tags": [
+        "domain:social",
+        "level:B1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "توسل ورجا بأدب وإلحاح",
+          "meaningArEg": "ترجى وطلب بالرجاء والأدب",
+          "glossEs": null,
+          "exampleEs": "Le ruega encarecidamente que guarde el secreto.",
+          "exampleAr": "يرجوه بإلحاح أن يكتم السر.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le ruega encarecidamente que guarde el secreto.",
+          "ar": "يرجوه بإلحاح أن يكتم السر.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "ruego",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruegas",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruega",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogamos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogáis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruegan",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogué",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogó",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogamos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogaríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rogarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruegue",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruegues",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "ruegue",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "roguemos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "roguéis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": true
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "rueguen",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": true
+        },
+        {
+          "kind": "gerund",
+          "formEs": "rogando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": true
+        },
+        {
+          "kind": "participle",
+          "formEs": "rogado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    },
+    {
+      "headword": "susurrar",
+      "normalized": "susurrar",
+      "kind": "word",
+      "pos": "verb",
+      "gender": null,
+      "plural": null,
+      "level": "A2",
+      "register": "neutral",
+      "ipa": "/susuɾɾˈaɾ/",
+      "pronunciationHintAr": "سوسوررار",
+      "internalRank": 16,
+      "tags": [
+        "domain:social",
+        "level:A2"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "همس وسارّ في الأذن بصوت خافت",
+          "meaningArEg": "وشوش وهمس في الودن بصوت واطي",
+          "glossEs": null,
+          "exampleEs": "Le susurra al oído las palabras clave del mensaje.",
+          "exampleAr": "يهمس في أذنه بالكلمات المفتاحية للرسالة.",
+          "exampleArEg": null,
+          "usageNoteAr": null,
+          "commonErrorAr": null
+        }
+      ],
+      "examples": [
+        {
+          "es": "Le susurra al oído las palabras clave del mensaje.",
+          "ar": "يهمس في أذنه بالكلمات المفتاحية للرسالة.",
+          "arEg": null
+        }
+      ],
+      "forms": [
+        {
+          "kind": "conjugation",
+          "formEs": "susurro",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurras",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurra",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurramos",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurráis",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurran",
+          "tense": "presente",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurré",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraste",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurró",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurramos",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrasteis",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraron",
+          "tense": "pretérito",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrabas",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraba",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrábamos",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrabais",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraban",
+          "tense": "imperfecto",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraré",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrarás",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrará",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraremos",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraréis",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrarán",
+          "tense": "futuro",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrarías",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraría",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraríamos",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurraríais",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurrarían",
+          "tense": "condicional",
+          "mood": "indicativo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurre",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurres",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurre",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3s",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurremos",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "1p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurréis",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "2p",
+          "irregular": false
+        },
+        {
+          "kind": "conjugation",
+          "formEs": "susurren",
+          "tense": "subjuntivo presente",
+          "mood": "subjuntivo",
+          "person": "3p",
+          "irregular": false
+        },
+        {
+          "kind": "gerund",
+          "formEs": "susurrando",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        },
+        {
+          "kind": "participle",
+          "formEs": "susurrado",
+          "tense": null,
+          "mood": null,
+          "person": null,
+          "irregular": false
+        }
+      ]
+    }
+  ]
+}

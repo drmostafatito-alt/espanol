@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "c1-correspondencia-formal",
+    "titleAr": "المراسلات الرسمية والبروتوكول الإداري: Correspondencia formal",
+    "level": "C1",
+    "programSlug": "main-track",
+    "unitSlug": "c1-u1-style",
+    "objectiveAr": "أن يحرر المتعلم خطابات ومراسلات إدارية ودبلوماسية متكاملة ومتقنة الصياغة (تحية، تمهيد، عرض، خاتمة بروتوكولية) وفق أرقى معايير الكتابة الرسمية في العالم الناطق بالإسبانية.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "grammar",
+      "reading",
+      "writing",
+      "listening",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "estimado",
+      "propósito",
+      "atentamente",
+      "disposición",
+      "cordial",
+      "reclamación"
+    ],
+    "reviewVocabulary": [
+      "trabajo",
+      "amigo",
+      "tiempo",
+      "bien"
+    ],
+    "targetStructures": [
+      "Fórmula de encabezamiento: Estimado/a Sr./Sra. (+ Apellido):",
+      "Fórmula de apertura: Me dirijo a usted con el propósito de...",
+      "Fórmula de disponibilidad: Quedo a su entera disposición para...",
+      "Fórmula de despedida: Atentamente / Le saluda atentamente"
+    ],
+    "grammarTopics": [
+      "correspondencia-epistolar-c1",
+      "formula-de-cortesia"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "موظف رفيع يحرر خطاباً رسمياً موجهاً إلى مدير المعهد الثقافي لطلب رعاية مؤتمر دولي.",
+        "settingAr": "مكتب العلاقات المؤسسية، مدريد",
+        "lines": [
+          {
+            "es": "Estimado Sr. Director: Me dirijo a usted con el propósito de presentarle nuestro proyecto.",
+            "ar": "سيدي المدير المحترم: أتوجه إلى سيادتكم بغرض عرض مشروعنا العلمي عليكم.",
+            "arEg": "السيد المدير المحترم: بتشرف بمراسلة حضرتك عشان أعرض على سيادتك مشروعنا.",
+            "audioKey": "pending/c1-corr-carta-1"
+          },
+          {
+            "es": "Sería un gran honor contar con el prestigioso patrocinio de su institución.",
+            "ar": "سيكون شرفاً كبيراً لنا أن نحظى بالرعاية الكريمة لمؤسستكم الموقرة.",
+            "arEg": "هيبقى شرف كبير لينا رعاية مؤسستكم المحترمة للحدث ده.",
+            "audioKey": "pending/c1-corr-carta-2"
+          },
+          {
+            "es": "Quedo a su entera disposición para cualquier aclaración o reunión que estime oportuna.",
+            "ar": "وأظل تحت تصرف سيادتكم التام لأي إيضاح أو اجتماع ترونه مناسباً.",
+            "arEg": "وأنا تحت أمر حضرتك تماماً في أي توضيح أو مقابلة تحددوها.",
+            "audioKey": "pending/c1-corr-carta-3"
+          },
+          {
+            "es": "Sin otro particular, le saluda atentamente, Dr. Alejandro Morales.",
+            "ar": "وتفضلوا بقبول فائق الاحترام والتقدير، د. أليخاندرو موراليس.",
+            "arEg": "ولكم وافر الاحترام والتقدير، د. أليخاندرو موراليس.",
+            "audioKey": "pending/c1-corr-carta-4"
+          }
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 6,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "c1_corr_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى مطلع الخطاب الرسمي ولاحظ العبارة المستخدمة لتحديد الغرض من الرسالة.",
+        "audioKey": "pending/c1-corr-carta-1",
+        "speechEs": "Estimado Sr. Director: Me dirijo a usted con el propósito de presentarle nuestro proyecto.",
+        "options": [
+          {
+            "id": "c1_corr_1_a",
+            "text": "Me dirijo a usted con el propósito de presentarle nuestro proyecto",
+            "isCorrect": true,
+            "textAr": "أتوجه إلى سيادتكم بغرض عرض مشروعنا عليكم"
+          },
+          {
+            "id": "c1_corr_1_b",
+            "text": "Te escribo para pedirte dinero urgente",
+            "isCorrect": false,
+            "textAr": "أكتب لك لأطلب مالاً عاجلاً",
+            "distractorRationaleAr": "أسلوب شخصي فظ لا يمت للبروتوكول الرسمي."
+          },
+          {
+            "id": "c1_corr_1_c",
+            "text": "Hola amigo, ¿cómo va todo por allí?",
+            "isCorrect": false,
+            "textAr": "أهلاً يا صديقي كيف حالك",
+            "distractorRationaleAr": "تحية عامية غير رسمية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_corr_1_a"
+          ]
+        },
+        "explanationAr": "الافتتاحية الإدارية القياسية في الإسبانية هي: «Me dirijo a usted con el propósito / fin de...» (أتوجه إلى سيادتكم بغرض...).",
+        "errorFeedback": {
+          "c1_corr_1_b": "أسلوب غير لائق إدارياً.",
+          "c1_corr_1_c": "تحية أصدقاء غير رسمية."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "propósito",
+          "estimado"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_corr_2_salutation",
+        "type": "word_choice",
+        "instructionAr": "ما هي التحية الرسمية القياسية لرسالة موجهة لمسؤول لا نعرف اسمه الشخصي؟",
+        "options": [
+          {
+            "id": "c1_corr_2_a",
+            "text": "Estimado/a Sr./Sra.:",
+            "isCorrect": true,
+            "textAr": "سيدي الفاضل / سيدتي الفاضلة المحترمة"
+          },
+          {
+            "id": "c1_corr_2_b",
+            "text": "¡Hola, colega!",
+            "isCorrect": false,
+            "textAr": "مرحباً يا زميل",
+            "distractorRationaleAr": "أسلوب عامي دارج لا يصح في الخطابات الإدارية."
+          },
+          {
+            "id": "c1_corr_2_c",
+            "text": "¿Qué hay de nuevo?",
+            "isCorrect": false,
+            "textAr": "ما الجديد عندك",
+            "distractorRationaleAr": "عبارة محادثة شفوية غير لائقة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_corr_2_a"
+          ]
+        },
+        "explanationAr": "التحية الرسمية الأكثر وقاراً في العالم الإسباني هي «Estimado/a Sr./Sra.:» وتتبعها دائماً النقطتان الرأسيتان (:) وليس الفاصلة كما في الإنجليزية.",
+        "errorFeedback": {
+          "c1_corr_2_b": "أسلوب عامي غير لائق.",
+          "c1_corr_2_c": "عبارة شفوية مبتذلة."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "estimado"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_corr_3_fill_proposito",
+        "type": "fill_blank",
+        "instructionAr": "أكمل التعبير الإداري لتحديد غرض المراسلة: «بغرض تقديم عرضنا».",
+        "stemEs": "Nos dirigimos a usted con el ____ de solicitar una entrevista formal.",
+        "stemAr": "نتوجه إلى سيادتكم بغرض طلب مقابلة رسمية.",
+        "answerKey": {
+          "accepted": [
+            "propósito",
+            "fin",
+            "objeto"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "العبارة الإدارية القياسية هي «con el propósito de» أو «con el fin / objeto de».",
+        "errorFeedback": {
+          "tiempo": "con el tiempo تعني بمرور الوقت.",
+          "gusto": "con el gusto تعني بسرور ولا تحدد الغرض الإداري."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "propósito"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_corr_4_fill_atentamente",
+        "type": "fill_blank",
+        "instructionAr": "أكمل كلمة الختام البروتوكولية القياسية: «وتفضلوا بقبول فائق الاحترام».",
+        "stemEs": "Sin otro particular, le saluda ____, Laura Gómez.",
+        "stemAr": "وتفضلوا بقبول فائق الاحترام والتقدير، لاورا غوميز.",
+        "answerKey": {
+          "accepted": [
+            "atentamente",
+            "cordialmente"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الظرف «atentamente» هو الختام الرسمي الأكثر اعتماداً ورسوخاً في البروتوكول الإداري الإسباني.",
+        "errorFeedback": {
+          "bien": "le saluda bien غير صحيحة أسلوبياً.",
+          "pronto": "le saluda pronto عامية وركيكة."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "atentamente"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_corr_5_disposition_choice",
+        "type": "word_choice",
+        "instructionAr": "ما هي العبارة البروتوكولية الإسبانية لإعلان الجاهزية التامة للمساعدة والاستفسار؟",
+        "options": [
+          {
+            "id": "c1_corr_5_a",
+            "text": "Quedo a su entera disposición",
+            "isCorrect": true,
+            "textAr": "أظل تحت تصرف سيادتكم التام"
+          },
+          {
+            "id": "c1_corr_5_b",
+            "text": "Llámame si te apetece",
+            "isCorrect": false,
+            "textAr": "اتصل بي إذا رغبت",
+            "distractorRationaleAr": "صيغة عامية تفتقر للاحترام البروتوكولي."
+          },
+          {
+            "id": "c1_corr_5_c",
+            "text": "Ya hablaremos algún día",
+            "isCorrect": false,
+            "textAr": "سنتحدث يوماً ما",
+            "distractorRationaleAr": "أسلوب تسويفي لا يليق بالمعاملات الرسمية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "c1_corr_5_a"
+          ]
+        },
+        "explanationAr": "صيغة «Quedo a su entera disposición» هي المعادل الدقيق لقولنا في المخاطبات الرسمية العربية: «وأنا تحت تصرف سيادتكم لأي استيضاح».",
+        "errorFeedback": {
+          "c1_corr_5_b": "أسلوب عامي لا يليق.",
+          "c1_corr_5_c": "أسلوب تسويفي غير رسمي."
+        },
+        "skills": [
+          "reading"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "disposición"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "c1_corr_6_speak",
+        "type": "speak_with_text",
+        "instructionAr": "انطق هذه العبارة البروتوكولية بنبرة مؤدبة ومحترفة للغاية.",
+        "stemEs": "Quedo a su entera disposición para cualquier consulta adicional.",
+        "stemAr": "أظل تحت تصرف سيادتكم التام لأي استفسار إضافي.",
+        "answerKey": {
+          "referenceAudioKey": "pending/c1-corr-speak-1",
+          "modelAnswer": "Quedo a su entera disposición para cualquier consulta adicional."
+        },
+        "explanationAr": "احرص على سلامة نطق حرف d في disposición كحرف مرقق بين الصوائت، والنبر على المقطع الأخير -sión.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "disposición",
+          "cordial"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "labelAr": "نطق disposición مع النبر على -sión",
+              "weight": 50,
+              "code": "stress_disposicion"
+            },
+            {
+              "labelAr": "مخارج الحروف وسلاسة الإلقاء الرسمي",
+              "weight": 50,
+              "code": "fluency_formal"
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج - اشتقاق تطبيقي من سلاسل كتب Aula C1 وSueña 3"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "الدرس يقدم قواعد وبروتوكول المراسلات الرسمية والإدارية في مستوى C1."
+    }
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "a2-consulta-medica",
+    "unitSlug": "a2-u6-health",
+    "levelCode": "A2",
+    "titleAr": "محاكاة زيارة العيادة: الحوار الطبي بين الطبيب والمريض",
+    "titleEs": "En la consulta médica: diálogo y tratamiento",
+    "subtitleAr": "إجراء فحص طبي كامل ومناقشة التحاليل والعلاج والتحسن",
+    "order": 4,
+    "estimatedMinutes": 18,
+    "cefrLevel": "A2",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "فريق المنهج — تكامل كتب القواعد والمصادر (Aula Plus 2, Gramática del uso, Español 2000, المرشد)"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة جاهزة للتدقيق البشري، معتمدة على مصادر القواعد المعتمدة ومصممة للمتعلم العربي."
+    },
+    "pedagogy": {
+      "learningObjectivesAr": [
+        "أن يدير المتعلم حواراً متكاملاً داخل العيادة الطبية (la consulta).",
+        "أن يفهم أسئلة الطبيب حول التاريخ المرضي وفترة الأعراض والتحاليل (los análisis).",
+        "أن يستوعب خطة العلاج (el tratamiento) وتوقعات التحسن (mejorar)."
+      ],
+      "grammarPoints": [
+        {
+          "titleAr": "أسئلة العيادة وصيغ التحسن والعلاج",
+          "explanationAr": "العبارات النمطية داخل العيادة الطبية:\n- الطبيب يسأل: ¿Desde cuándo le duele? (منذ متى يؤلمك هذا؟) / ¿Qué síntomas tiene? (ما هي الأعراض التي تعاني منها؟).\n- الفحص السريري: Voy a auscultarle (سأفحص نبضك ورئتيك) / Abra la boca (افتح فمك).\n- التوجيه بالعلاج: Vamos a hacer unos análisis de sangre (سنجري بعض تحاليل الدم) / Debe seguir este tratamiento (عليك اتباع هذا العلاج).\n- المتابعة: Si no mejora en tres días, vuelva a la consulta (إذا لم تتحسن خلال 3 أيام، عُد للعيادة)."
+        }
+      ],
+      "commonMistakesAr": [
+        "استخدام tiempo بدلاً من cuándo بعد desde للسؤال عن بداية الألم (الصحيح: ¿Desde cuándo le duele?).",
+        "تأنيث palabra كـ análisis (análisis كلمة مذكرة مفردها وجمعها متماثل: el análisis / los análisis)."
+      ],
+      "dialectNotes": [
+        {
+          "region": "EG",
+          "noteAr": "في مصر يسأل الطبيب: «خير بتشتكي من إيه ومن امتى؟ محتاجين نعمل تحاليل ونمشي على العلاج ده وإن شاء الله تخف». في الإسبانية نفس الخطوات في الكشف الطبي."
+        }
+      ],
+      "culturalNoteAr": "في إسبانيا يحظى الأطباء باحترام كبير، وتُستخدم صيغة usted مع الأطباء غير المعارف، ولكن الأطباء أنفسهم قد يستخدمون صيغة tú اللطيفة لتهدئة روع المريض وبث الطمأنينة."
+    },
+    "contentBlocks": [
+      {
+        "id": "cb-a2-consulta-medica-intro",
+        "type": "explanation",
+        "titleAr": "مصطلحات الكشف والعلاج",
+        "bodyAr": "المفردات التخصصية للعيادة:\n- **la consulta**: عيادة الطبيب / الكشف الطبي\n- **el paciente**: المريض\n- **los análisis**: التحاليل والفحوصات المخبرية\n- **la enfermedad**: المرض\n- **el tratamiento**: العلاج / خطة الاستشفاء\n- **mejorar**: يتحسن / يتماثل للشفاء",
+        "examples": [
+          {
+            "es": "El doctor atiende al paciente en la consulta.",
+            "ar": "الطبيب يستقبل المريض في العيادة."
+          },
+          {
+            "es": "Los resultados de los análisis son normales.",
+            "ar": "نتائج التحاليل طبيعية."
+          },
+          {
+            "es": "Espero que mejores pronto con este tratamiento.",
+            "ar": "آمل أن تتحسن قريباً مع هذا العلاج."
+          }
+        ]
+      }
+    ],
+    "newVocabulary": [
+      "consulta",
+      "paciente",
+      "análisis",
+      "enfermedad",
+      "tratamiento",
+      "mejorar"
+    ],
+    "reviewVocabulary": [
+      "hospital",
+      "médico"
+    ],
+    "level": "A2",
+    "objectiveAr": "أن يدير المتعلم حواراً متكاملاً داخل العيادة الطبية (la consulta).",
+    "skills": [
+      "vocabulary",
+      "reading",
+      "grammar",
+      "listening",
+      "speaking"
+    ],
+    "exercises": [
+      {
+        "id": "ex-a2-med-1",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "اختر الكلمة المناسبة لعيادة الطبيب وغرفة الكشف",
+        "skills": [
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "promptAr": "أين يستقبل الطبيب المريض لإجراء الفحص الطبي؟",
+        "stemEs": "El doctor recibe al paciente en la _____ médica.",
+        "stemAr": "الطبيب يستقبل المريض في ... الطبية.",
+        "options": [
+          {
+            "id": "ex-a2-med-1_a",
+            "text": "consulta",
+            "textAr": "العيادة / غرفة الفحص (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-med-1_b",
+            "text": "enfermedad",
+            "textAr": "مرض",
+            "isCorrect": false,
+            "distractorRationaleAr": "enfermedad تعني المرض نفسه وليس مكان الفحص."
+          },
+          {
+            "id": "ex-a2-med-1_c",
+            "text": "análisis",
+            "textAr": "تحاليل",
+            "isCorrect": false,
+            "distractorRationaleAr": "análisis هي الفحوصات وليست العيادة."
+          }
+        ],
+        "targetVocab": [
+          "consulta",
+          "paciente",
+          "enfermedad"
+        ],
+        "explanationAr": "المكان الذي يمارس فيه الطبيب كشفه يُسمى la consulta.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-med-1_a"
+          ],
+          "selectedOptionId": "ex-a2-med-1_a"
+        },
+        "errorFeedback": {
+          "ex-a2-med-1_b": "enfermedad تعني المرض نفسه وليس مكان الفحص.",
+          "ex-a2-med-1_c": "análisis هي الفحوصات وليست العيادة."
+        }
+      },
+      {
+        "id": "ex-a2-med-2",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "اكتب الفعل الإسباني الذي يعني 'يتحسن ويتعافى'",
+        "skills": [
+          "vocabulary",
+          "writing"
+        ],
+        "difficulty": 1,
+        "promptAr": "اكتب الفعل المصدر الذي يعني 'يتحسن / يتماثل للشفاء'",
+        "stemEs": "Con este tratamiento vas a _____ en pocos días.",
+        "stemAr": "مع هذا العلاج سوف ... في غضون أيام قليلة.",
+        "targetVocab": [
+          "mejorar"
+        ],
+        "explanationAr": "الفعل mejorar يعني يتحسن وتتحسن حالته الصحية.",
+        "answerKey": {
+          "accepted": [
+            "mejorar"
+          ],
+          "acceptableAnswers": [
+            "mejorar"
+          ],
+          "caseSensitive": false
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-med-3",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "حدد أداة التعريف المناسبة لكلمة análisis",
+        "skills": [
+          "grammar"
+        ],
+        "difficulty": 2,
+        "promptAr": "كلمة análisis مذكرة، فما هي أداة التعريف للجمع؟",
+        "stemEs": "El médico necesita ver _____ de sangre para dar el diagnóstico.",
+        "stemAr": "الطبيب يحتاج لرؤية ... الدم لإعطاء التشخيص.",
+        "options": [
+          {
+            "id": "ex-a2-med-3_a",
+            "text": "los análisis",
+            "textAr": "جمع مذكر (الصواب)",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-med-3_b",
+            "text": "las análisis",
+            "textAr": "جمع مؤنث (خطأ)",
+            "isCorrect": false,
+            "distractorRationaleAr": "análisis اسم مذكر في الإسبانية ولا يؤنث."
+          },
+          {
+            "id": "ex-a2-med-3_c",
+            "text": "la análisis",
+            "textAr": "مفرد مؤنث",
+            "isCorrect": false,
+            "distractorRationaleAr": "الاسم مذكر ويأخذ los في الجمع."
+          }
+        ],
+        "targetVocab": [
+          "análisis"
+        ],
+        "explanationAr": "كلمة análisis مذكرة وتأخذ los في الجمع: los análisis de sangre.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-med-3_a"
+          ],
+          "selectedOptionId": "ex-a2-med-3_a"
+        },
+        "errorFeedback": {
+          "ex-a2-med-3_b": "análisis اسم مذكر في الإسبانية ولا يؤنث.",
+          "ex-a2-med-3_c": "الاسم مذكر ويأخذ los في الجمع."
+        }
+      },
+      {
+        "id": "ex-a2-med-4",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الجملة لوصف التزام المريض بالعلاج الموصوف",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "items": [
+          {
+            "id": "ex-a2-med-4_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ex-a2-med-4_t2",
+            "kind": "token",
+            "text": "paciente"
+          },
+          {
+            "id": "ex-a2-med-4_t3",
+            "kind": "token",
+            "text": "debe"
+          },
+          {
+            "id": "ex-a2-med-4_t4",
+            "kind": "token",
+            "text": "seguir"
+          },
+          {
+            "id": "ex-a2-med-4_t5",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "ex-a2-med-4_t6",
+            "kind": "token",
+            "text": "tratamiento"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El paciente debe seguir el tratamiento"
+          ],
+          "tokenOrder": [
+            "ex-a2-med-4_t1",
+            "ex-a2-med-4_t2",
+            "ex-a2-med-4_t3",
+            "ex-a2-med-4_t4",
+            "ex-a2-med-4_t5",
+            "ex-a2-med-4_t6"
+          ]
+        },
+        "explanationAr": "الترتيب السليم: الفاعل El paciente ثم الفعل المساعد debe ثم المصدر seguir ثم المفعول به el tratamiento.",
+        "targetVocab": [
+          "paciente",
+          "tratamiento"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "ex-a2-med-5",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع وحدد ما نصح به الطبيب عند عدم التحسن",
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "promptAr": "استمع لتوجيه الطبيب في نهاية الكشف",
+        "stemEs": "Si no mejora en tres días, vuelva al hospital.",
+        "stemAr": "إذا لم تتحسن خلال ثلاثة أيام، عُد إلى المستشفى.",
+        "options": [
+          {
+            "id": "ex-a2-med-5_a",
+            "text": "mejorar",
+            "textAr": "يتحسن",
+            "isCorrect": true
+          },
+          {
+            "id": "ex-a2-med-5_b",
+            "text": "enfermedad",
+            "textAr": "مرض",
+            "isCorrect": false,
+            "distractorRationaleAr": "المتحدث اشترط عدم التحسن mejora."
+          },
+          {
+            "id": "ex-a2-med-5_c",
+            "text": "consulta",
+            "textAr": "عيادة",
+            "isCorrect": false,
+            "distractorRationaleAr": "الشرط مبني على فعل التحسن."
+          }
+        ],
+        "targetVocab": [
+          "mejorar",
+          "hospital",
+          "enfermedad",
+          "consulta"
+        ],
+        "explanationAr": "الطبيب قال: Si no mejora en tres días, vuelva al hospital.",
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/a2_si_no_mejora.mp3",
+        "speechEs": "Si no mejora en tres días, vuelva al hospital.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ex-a2-med-5_a"
+          ],
+          "selectedOptionId": "ex-a2-med-5_a"
+        },
+        "errorFeedback": {
+          "ex-a2-med-5_b": "المتحدث اشترط عدم التحسن mejora.",
+          "ex-a2-med-5_c": "الشرط مبني على فعل التحسن."
+        }
+      },
+      {
+        "id": "ex-a2-med-6",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق تمنيك بالشفاء لزميلك المريض",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "تمنَّ لزميلك الشفاء العاجل باللغة الإسبانية بأسلوب ودود",
+        "stemEs": "Espero que mejores pronto de tu enfermedad.",
+        "stemAr": "آمل أن تتحسن قريباً من وعكتك الصحية.",
+        "audioKey": "pending/a2_espero_mejores_pronto.mp3",
+        "targetVocab": [
+          "mejorar",
+          "enfermedad"
+        ],
+        "explanationAr": "انتبه لنطق حرف j في mejores كـ خاء مرققة ونطق d في enfermedad كـ ذال خفيفة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/a2_espero_mejores_pronto.mp3",
+          "modelAnswer": "Espero que mejores pronto de tu enfermedad."
+        },
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      }
+    ]
+  }
+}
