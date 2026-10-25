@@ -465,6 +465,30 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     expect(data.unlockedLevel).toBe('PREA1');
   });
 
+  it('يرفض درجة العميل عند غياب الإجابات (لا ثقة بالدرجة المرسلة)', async () => {
+    // محاولة اختراق: إرسال score:100 دون أي إجابة لفتح كل دروس المستوى
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', score: 100, answersCount: 10 }),
+    });
+    expect(res.status).toBe(400);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('ANSWERS_REQUIRED');
+  });
+
+  it('درجة العميل وحدها لا تمنح XP ولا تفتح الدروس', async () => {
+    const before = await h.json(await h.call('/api/me/progress', { cookie }));
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A2', score: 100 }),
+    });
+    expect(res.status).toBe(400);
+    const after = await h.json(await h.call('/api/me/progress', { cookie }));
+    expect(after.stats.xp_total).toBe(before.stats.xp_total);
+  });
+
   it('منع تكرار منح XP عند إعادة اجتياز الاختبار لنفس المستوى (Idempotency)', async () => {
     const correctAnswers = {
       '1': 'a',

@@ -29,6 +29,13 @@
   --color-border: #e7e3db;
   --color-border-strong: #d8d2c5;
   --color-focus: #2f80ed;
+  /* ألوان «نص على خلفية فاتحة» مع تباين ≥ 4.5:1 (AA). الأصل الفاتح للزر/التعبئة
+     يبقى كما هو، لكن النص يأخذ الصيغة الأغمق حتى يكون مقروءًا. */
+  --color-link: #1c5fc0;
+  --color-primary-text: #b3371a;
+  --color-success-text: #126d3c;
+  --color-info-text: #1c5fc0;
+  --color-warning-text: #8a5a00;
 
   /* أسماء توافقية مع أي أنماط قديمة داخل الصفحات */
   --c-primary: var(--color-primary);
@@ -82,7 +89,7 @@ body {
 }
 @media (min-width: 900px) { body { font-size: 16px; } }
 
-a { color: var(--color-info); text-underline-offset: 3px; }
+a { color: var(--color-link); text-underline-offset: 3px; }
 h1, h2, h3, h4 { line-height: 1.35; margin: 0 0 var(--s-3); color: var(--color-text); font-weight: 700; }
 h1 { font-size: clamp(1.55rem, 3.4vw, 2.15rem); }
 h2 { font-size: clamp(1.2rem, 2.4vw, 1.5rem); }
@@ -209,9 +216,9 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   background: var(--color-surface-2); color: var(--color-muted);
   font-size: 0.78rem; font-weight: 700; white-space: nowrap;
 }
-.badge.primary { background: var(--color-primary-soft); color: var(--color-primary-strong); }
+.badge.primary { background: var(--color-primary-soft); color: var(--color-primary-text); }
 .badge.accent { background: var(--color-warning-soft); color: #8a5a00; }
-.badge.success { background: var(--color-success-soft); color: var(--color-success-strong); }
+.badge.success { background: var(--color-success-soft); color: var(--color-success-text); }
 .badge.info { background: var(--color-info-soft); color: #1c5fc0; }
 .badge.navy { background: var(--color-navy-soft); color: var(--color-navy); }
 
@@ -263,7 +270,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   min-height: 44px;
 }
 .lang-pop button:hover { background: var(--color-surface-2); }
-.lang-pop .active-dot { margin-inline-start: auto; color: var(--color-success); }
+.lang-pop .active-dot { margin-inline-start: auto; color: var(--color-success-text); }
 .lang-pop .lang-note { font-size: 0.75rem; color: var(--color-muted); padding: var(--s-2) var(--s-3); }
 
 /* زر القائمة للموبايل */
@@ -357,7 +364,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   color: var(--color-muted); text-decoration: none; font-size: 0.72rem; font-weight: 700;
   background: none; border: 0; font-family: inherit; cursor: pointer; padding: var(--s-1);
 }
-.mobile-nav-item.active { color: var(--color-primary); }
+.mobile-nav-item.active { color: var(--color-primary-text); }
 .mobile-sheet {
   position: fixed; inset: 0; z-index: 95; background: rgba(15, 31, 58, 0.45);
   display: flex; align-items: flex-end;
@@ -383,7 +390,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   line-height: 1.25; margin-bottom: var(--s-4); color: var(--color-navy);
   max-width: 22ch; text-wrap: balance;
 }
-.hero-simple-text h1 .accent { color: var(--color-primary); }
+.hero-simple-text h1 .accent { color: var(--color-primary-text); }
 .hero-simple-text .lead { font-size: 1.05rem; color: var(--color-muted); max-width: 42ch; line-height: 1.75; margin: 0; }
 .hero-actions { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-5); }
 .hero-link {
@@ -453,7 +460,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .topic-body { padding: var(--s-4); display: flex; flex-direction: column; flex: 1; }
 .topic-body h3 { margin: 0 0 var(--s-1); font-size: 1.05rem; }
 .topic-body p { font-size: 0.85rem; color: var(--color-muted); margin: 0; }
-.topic-body .go { margin-top: auto; padding-top: var(--s-3); font-weight: 700; color: var(--color-primary); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px; }
+.topic-body .go { margin-top: auto; padding-top: var(--s-3); font-weight: 700; color: var(--color-primary-text); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px; }
 @media (max-width: 900px) { .topic-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .topic-grid { grid-template-columns: 1fr; } }
 
@@ -521,7 +528,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .stat-chip b { display: block; font-size: 1.25rem; line-height: 1.3; }
 .stat-chip span { font-size: 0.78rem; color: var(--color-muted); }
 .stat-icon.flame { background: var(--color-primary-soft); color: var(--color-primary-strong); }
-.stat-icon.gem { background: var(--color-info-soft); color: var(--color-info); }
+.stat-icon.gem { background: var(--color-info-soft); color: var(--color-info-text); }
 .stat-icon.xp { background: var(--color-warning-soft); color: #b7791f; }
 
 /* الإحصاءات القديمة — محتفظ بها للاختبارات */
@@ -699,7 +706,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .result-mascot img { width: 100%; border-radius: var(--r-lg); }
 .result-trophy {
   width: 84px; height: 84px; margin: 0 auto var(--s-3); border-radius: 50%;
-  background: var(--color-warning-soft); color: var(--color-warning);
+  background: var(--color-warning-soft); color: var(--color-warning-text);
   display: grid; place-items: center;
 }
 .result-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-3); margin: var(--s-5) 0; }
@@ -904,3 +911,23 @@ img { max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* شاشة تعريف الدرس (Lesson brief) */
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0 0 var(--s-2);
+}
+.vocab-list { list-style: none; margin: 0; padding: 0; }
+.vocab-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-2);
+  padding: var(--s-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.vocab-list li:last-child { border-bottom: none; }
+.vocab-list .es { min-width: 120px; font-weight: 600; }
+.vocab-meaning { color: var(--color-muted); }

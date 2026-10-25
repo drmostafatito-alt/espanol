@@ -6,6 +6,7 @@ import { isSpeechRecognitionSupported, createSpeechRecognizer } from '../audio/s
 import { Icon } from '../components/icons';
 import { Mascot } from '../components/Mascot';
 import { ProgressBar } from '../components/ui';
+import { LessonBriefView } from '../components/LessonBrief';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -13,7 +14,7 @@ function newEventId(): string {
   return `ev${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
 }
 
-type Phase = 'loading' | 'exercise' | 'feedback' | 'done' | 'error';
+type Phase = 'loading' | 'brief' | 'exercise' | 'feedback' | 'done' | 'error';
 
 export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string) => void }) {
   const { user } = useAuth();
@@ -51,7 +52,8 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       .then(s => {
         if (cancelled) return;
         setSession(s);
-        setPhase('exercise');
+        // شاشة تعريف الدرس أولًا (هدف، مفردات، أمثلة، حوار)، ثم التمارين
+        setPhase('brief');
       })
       .catch((err: unknown) => {
         if (cancelled) return;
@@ -238,6 +240,22 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   }
 
   if (!session) return null;
+
+  if (phase === 'brief') {
+    return (
+      <LessonBriefView
+        brief={session.lesson.brief}
+        title={session.lesson.titleAr}
+        level={session.lesson.level}
+        exerciseCount={exercises.length}
+        onStart={() => {
+          startedAt.current = Date.now();
+          setPhase('exercise');
+        }}
+        onBack={() => navigate('/learn')}
+      />
+    );
+  }
 
   if (phase === 'done') {
     return (

@@ -347,17 +347,20 @@
           {
             "id": "a1_org_7_a",
             "text": "española",
+            "textAr": "إسبانية",
             "isCorrect": true
           },
           {
             "id": "a1_org_7_b",
             "text": "español",
+            "textAr": "إسباني",
             "isCorrect": false,
             "distractorRationaleAr": "صيغة المذكر؛ خطأ مطابقة شائع لأن العربية تقول «إسبانية» بلا تغيير في الجذر."
           },
           {
             "id": "a1_org_7_c",
             "text": "españolas",
+            "textAr": "إسبانيات",
             "isCorrect": false,
             "distractorRationaleAr": "جمع مؤنث؛ المتحدثة واحدة."
           }
@@ -395,17 +398,20 @@
           {
             "id": "a1_org_8_a",
             "text": "de / en",
+            "textAr": "من / في",
             "isCorrect": true
           },
           {
             "id": "a1_org_8_b",
             "text": "en / de",
+            "textAr": "في / من",
             "isCorrect": false,
             "distractorRationaleAr": "عكس الاتجاه الصحيح: يخلط بين وظيفة الأصل ووظيفة المكان."
           },
           {
             "id": "a1_org_8_c",
             "text": "de / de",
+            "textAr": "من / من",
             "isCorrect": false,
             "distractorRationaleAr": "تكرار de يوحي بأن العيش أيضًا أصل، وهذا غير صحيح."
           }

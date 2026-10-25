@@ -55,6 +55,13 @@ afterEach(() => {
   h.close();
 });
 
+/** يبدأ الدرس من شاشة التعريف (التي تُعرض الآن قبل التمارين): ينتظر ظهورها ثم ينقر زر البدء */
+async function startLesson(user: ReturnType<typeof userEvent.setup>) {
+  await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+  await user.click(screen.getByTestId('lesson-start'));
+  await waitFor(() => expect(screen.queryByTestId('lesson-start')).toBeNull());
+}
+
 async function login(): Promise<string> {
   const res = await h.call('/api/auth/signup', {
     method: 'POST',
@@ -107,6 +114,9 @@ describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
         <Lesson slug="prea1-hola-me-llamo" navigate={() => {}} />
       </AuthProvider>,
     );
+    const user = userEvent.setup();
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    await user.click(screen.getByTestId('lesson-start'));
     await waitFor(() => expect(screen.getByTestId('lesson-submit')).toBeTruthy());
     // الدرس يُرسم بصورة طبيعية...
     expect(screen.getByTestId('lesson-submit')).toBeTruthy();
@@ -139,7 +149,8 @@ describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
     const sessionRes = await h.json<{ exercises: { id: string; mode: string; type: string }[] }>(
       await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }),
     );
-    await waitFor(() => expect(screen.getByTestId('lesson-submit')).toBeTruthy());
+    const user = userEvent.setup();
+    await startLesson(user);
     await playLesson('prea1-hola-me-llamo', sessionRes);
 
     const result = screen.getByTestId('lesson-result');
@@ -201,7 +212,12 @@ describe('واجهة الترتيب الحواري', () => {
     const sessionBody = {
       lesson: {
         slug: 'cc-test', titleAr: 'اختبار', level: 'A1', objectiveAr: 'هدف', estimatedMinutes: 5,
-        versionNo: 1, provenance: { status: 'draft', warningAr: 'عينة تجريبية' },
+        versionNo: 1,
+        brief: {
+          objectiveAr: 'هدف', estimatedMinutes: 5, newVocabulary: [], reviewVocabulary: [],
+          targetStructures: [], scenarios: [], culturalNoteAr: null, pedagogicalRationaleAr: null,
+        },
+        provenance: { status: 'draft', warningAr: 'عينة تجريبية' },
       },
       exercises: [{
         id: 'x1', type: 'dialogue_order', mode: 'graded', hasGrader: true,
@@ -221,10 +237,12 @@ describe('واجهة الترتيب الحواري', () => {
         <Lesson slug="cc-test" navigate={() => {}} />
       </AuthProvider>,
     );
+    const user = userEvent.setup();
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    await user.click(screen.getByTestId('lesson-start'));
     await waitFor(() => expect(document.querySelectorAll('.token.ghost').length).toBe(2));
     expect(screen.queryByTestId('lesson-text')).toBeNull();
     // نضغط عنصري الترتيب ثم نتحقق أن المكوّن أرسل مصفوفة مرتّبة (لا نصًا مدموجًا)
-    const user = userEvent.setup();
     for (let i = 0; i < 2; i++) await user.click(document.querySelector<HTMLButtonElement>('.token.ghost')!);
     const placed = document.querySelectorAll('.token-box')[0]!.querySelectorAll('.token');
     expect([...placed].map(b => b.textContent)).toEqual(items.map(i => i.text));

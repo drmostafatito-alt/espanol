@@ -13,6 +13,7 @@ import { HttpError, json, readJson } from '../lib/http';
 import { ulid } from '../lib/ids';
 import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
 import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
+import { searchEngine } from '../../shared/search-engine';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -35,6 +36,7 @@ interface LessonRow {
   version_status: string;
   review_state: string;
   content_hash: string;
+  content_json: string;
 }
 
 interface ExerciseRow {
@@ -61,7 +63,7 @@ async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
   const row = await env.DB.prepare(
     `SELECT l.id, l.slug, l.title_ar, l.level_code, l.objective_ar, l.estimated_minutes, l.status,
             l.unlock_rule_json, l.mastery_criteria_json, lv.id AS version_id, lv.version_no,
-            lv.status AS version_status, lv.review_state, lv.content_hash
+            lv.status AS version_status, lv.review_state, lv.content_hash, lv.content_json
      FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id
      WHERE l.slug = ?`,
   )
@@ -126,6 +128,111 @@ function publicPrompt(promptJson: string) {
 }
 
 /** جلسة الدرس: بيانات العرض فقط — بلا مفاتيح إجابة ولا خيارات صحيحة */
+/**
+ * ملخص الدرس (Lesson brief): يُبنى من لقطة `content_json` الكاملة.
+ * هذه العناصر كانت موجودة في المحتوى ولا تُعرض للمتعلم — الآن تُرسل لتظهر
+ * كشاشة تعريف قبل التمارين (هدف، مفردات، أمثلة، حوار، ملاحظة ثقافية).
+ * أي محتوى تالف يُهمَل ولا يُعطّل الدرس (فشل صامت نحو اللقطة الأساسية).
+ */
+export interface VocabBriefItem {
+  word: string;
+  meaningFusha: string | null;
+  meaningEg: string | null;
+}
+
+export interface LessonBrief {
+  objectiveAr: string;
+  estimatedMinutes: number;
+  newVocabulary: VocabBriefItem[];
+  reviewVocabulary: VocabBriefItem[];
+  targetStructures: string[];
+  scenarios: { contextAr: string; settingAr: string; lines: { es: string; ar: string; arEg?: string }[] }[];
+  culturalNoteAr: string | null;
+  pedagogicalRationaleAr: string | null;
+}
+
+/** يحوّل قائمة الكلمات الإسبانية إلى بنود مع الترجمة العربية من معجم المفردات. */
+function resolveVocab(words: string[]): VocabBriefItem[] {
+  const seen = new Set<string>();
+  const out: VocabBriefItem[] = [];
+  for (const raw of words) {
+    const word = raw.trim();
+    if (!word) continue;
+    const key = word.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    let meaningFusha: string | null = null;
+    let meaningEg: string | null = null;
+    try {
+      const hit = searchEngine.lookupVocab(word);
+      if (hit) {
+        if (hit.f) meaningFusha = hit.f;
+        if (hit.eg) meaningEg = hit.eg;
+      }
+    } catch {
+      // معجم تالف — نُبقي الكلمة دون ترجمة ولا نكسر الدرس
+    }
+    out.push({ word, meaningFusha, meaningEg });
+  }
+  return out;
+}
+
+export function buildLessonBrief(
+  contentJson: string,
+  fallback: { objectiveAr: string; estimatedMinutes: number },
+): LessonBrief {
+  const base: LessonBrief = {
+    objectiveAr: fallback.objectiveAr,
+    estimatedMinutes: fallback.estimatedMinutes,
+    newVocabulary: [],
+    reviewVocabulary: [],
+    targetStructures: [],
+    scenarios: [],
+    culturalNoteAr: null,
+    pedagogicalRationaleAr: null,
+  };
+  try {
+    const parsed = JSON.parse(contentJson) as { lesson?: Record<string, unknown> };
+    const l: Record<string, unknown> =
+      parsed.lesson ?? (parsed as unknown as Record<string, unknown>);
+    const strArr = (v: unknown): string[] =>
+      Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : [];
+    base.newVocabulary = resolveVocab(strArr(l.newVocabulary));
+    base.reviewVocabulary = resolveVocab(strArr(l.reviewVocabulary));
+    base.targetStructures = strArr(l.targetStructures);
+    if (typeof l.objectiveAr === 'string' && l.objectiveAr.trim()) base.objectiveAr = l.objectiveAr;
+    if (typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim()) base.culturalNoteAr = l.culturalNoteAr;
+    if (typeof l.pedagogicalRationaleAr === 'string' && l.pedagogicalRationaleAr.trim()) {
+      base.pedagogicalRationaleAr = l.pedagogicalRationaleAr;
+    }
+    if (Array.isArray(l.scenarios)) {
+      for (const sRaw of l.scenarios) {
+        if (!sRaw || typeof sRaw !== 'object') continue;
+        const s = sRaw as { contextAr?: unknown; settingAr?: unknown; lines?: unknown };
+        if (!Array.isArray(s.lines)) continue;
+        const lines: LessonBrief['scenarios'][number]['lines'] = [];
+        for (const lnRaw of s.lines) {
+          if (!lnRaw || typeof lnRaw !== 'object') continue;
+          const ln = lnRaw as { es?: unknown; ar?: unknown; arEg?: unknown };
+          if (typeof ln.es !== 'string' || typeof ln.ar !== 'string') continue;
+          const line: LessonBrief['scenarios'][number]['lines'][number] = { es: ln.es, ar: ln.ar };
+          if (typeof ln.arEg === 'string' && ln.arEg.trim()) line.arEg = ln.arEg;
+          lines.push(line);
+        }
+        if (!lines.length) continue;
+        base.scenarios.push({
+          contextAr: typeof s.contextAr === 'string' ? s.contextAr : '',
+          settingAr: typeof s.settingAr === 'string' ? s.settingAr : '',
+          lines,
+        });
+      }
+    }
+  } catch {
+    // content_json تالف أو فارغ: نقدم اللقطة الأساسية فقط. لا نسمح له بكسر الدرس.
+  }
+  return base;
+}
+
 export async function lessonSession(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
@@ -185,6 +292,10 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
         versionId: lesson.version_id,
         versionNo: lesson.version_no,
         contentHash: lesson.content_hash,
+        brief: buildLessonBrief(lesson.content_json, {
+          objectiveAr: lesson.objective_ar,
+          estimatedMinutes: lesson.estimated_minutes,
+        }),
         ...(lesson.status === 'published' ? {} : { provenance: PROVENANCE }),
       },
       exercises: exercises.results.map(e => {
@@ -713,21 +824,18 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
     throw new HttpError(400, 'INVALID_LEVEL', 'المستوى المحدد لتحديد المستوى غير صالح. اختر A1 أو A2.');
   }
 
-  // التصحيح والحساب على الخادم حصرًا
-  let score = 0;
-  let answersCount = 0;
-  if (body.answers && typeof body.answers === 'object') {
-    answersCount = Object.keys(body.answers).length;
-    let correct = 0;
-    for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
-      if (body.answers[qid] === expected) correct++;
-    }
-    score = Math.round((correct / 10) * 100);
-  } else {
-    // تراجع آمن للاختبارات البرمجية التي ترسل score مباشرة
-    score = Math.max(0, Math.min(100, Math.round(Number(body.score ?? 0))));
-    answersCount = Math.max(0, Number(body.answersCount ?? 0));
+  // التصحيح والحساب على الخادم حصرًا. الإجابات إلزامية: كان هناك مسار تراجع
+  // يقبل «score» من العميل مباشرة، فيُمكنه اختراق الاختبار وفتح كل دروس
+  // المستوى ورصيد XP دون إجابة واحدة. لم يُبقَ أي ثقة بالدرجة المرسلة من العميل.
+  if (!body.answers || typeof body.answers !== 'object' || Array.isArray(body.answers)) {
+    throw new HttpError(400, 'ANSWERS_REQUIRED', 'يجب إرسال إجابات الاختبار لتصحيحها على الخادم.');
   }
+  const answersCount = Object.keys(body.answers).length;
+  let correct = 0;
+  for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
+    if (body.answers[qid] === expected) correct++;
+  }
+  const score = Math.round((correct / 10) * 100);
 
   const passed = score >= 60;
   const assessId = ulid().toLowerCase();

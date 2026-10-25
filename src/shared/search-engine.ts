@@ -274,6 +274,21 @@ export class SearchEngine {
   }
 
   /** تنفيذ البحث فائق السرعة */
+  /**
+   * بحث مباشر عن مدخل مفردات بالكلمة الإسبانية (تطابق تام بعد التطبيع).
+   * يُستخدم لملء ملخص الدرس بالمفردات الأساسية مع ترجمتها العربية، دون
+   * المرور بآلية البحث الكاملة. يعيد null إن لم يُعثر على المدخل.
+   */
+  lookupVocab(rawWord: string): CompactVocabItem | null {
+    const w = normalizeEs(rawWord);
+    const ids = this.normEsMap.get(w);
+    if (!ids || ids.length === 0) return null;
+    const first = ids[0];
+    if (first === undefined) return null;
+    const item = this.precomputedVocab[first]?.item;
+    return item ?? null;
+  }
+
   search(rawQuery: string, options: SearchOptions = {}): SearchResponse {
     const start = Date.now();
     const query = (rawQuery || '').trim();

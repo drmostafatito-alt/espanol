@@ -184,9 +184,15 @@ for (const file of lessonFiles) {
   if (!isArr(lesson.scenarios) || lesson.scenarios.length === 0) {
     addWarn(here, 'لا توجد scenarios');
   }
+  const seenLines = new Set();
   (lesson.scenarios || []).forEach((sc, si) => {
     (sc.lines || []).forEach((ln, li) => {
       stats.scenarioLines++;
+      const lineKey = (ln.es || '').trim().toLowerCase();
+      if (lineKey) {
+        if (seenLines.has(lineKey)) addWarn(here, `تكرار سطر في سيناريو: «${ln.es.slice(0, 40)}»`);
+        seenLines.add(lineKey);
+      }
       if (!isStr(ln.es)) addError(here, `سيناريو ${si}.${li}: المثال الإسباني es غير موجود`);
       if (!isStr(ln.ar)) addError(here, `سيناريو ${si}.${li}: الترجمة العربية ar غير موجودة`);
     });
@@ -198,6 +204,7 @@ for (const file of lessonFiles) {
     addError(here, 'لا توجد exercises (درس بلا تمارين)');
   }
   const seenIds = new Set();
+  const seenPrompts = new Set();
   (exercises || []).forEach((ex, ei) => {
     stats.exercises++;
     const exLoc = `${here} ∋ تمرين#${ei} «${ex.id || 'بدون id'}»`;
@@ -212,6 +219,11 @@ for (const file of lessonFiles) {
     // للتمارين التي تُقدّم الخيارات في السؤال مباشرة. لذلك لا يُخطَأ عند غياب
     // promptAr/stem، بل يُحذَر فقط إن لم يكن هناك أي وسيط آخر (تنبيه معلوماتي).
     if (!isStr(ex.instructionAr)) addError(exLoc, 'instructionAr غير موجود/فارغ');
+    if (isStr(ex.instructionAr)) {
+      const pkey = ex.instructionAr.trim().toLowerCase();
+      if (seenPrompts.has(pkey)) addWarn(exLoc, 'تكرار سؤال داخل الدرس (نفس instructionAr)');
+      seenPrompts.add(pkey);
+    }
     if (!isStr(ex.explanationAr)) addError(exLoc, 'explanationAr غير موجود/فارغ');
     const hasPrompt = isStr(ex.promptAr) || isStr(ex.stemEs) || isStr(ex.stemAr)
       || isArr(ex.items) || isStr(ex.speechEs) || isStr(ex.referenceAudioKey);
@@ -224,12 +236,18 @@ for (const file of lessonFiles) {
     if (isArr(ex.options)) {
       if (ex.options.length < 2) addError(exLoc, 'أقل من خيارين');
       const optIds = new Set();
+      const seenOptTexts = new Set();
       const correctFromOptions = new Set();
       ex.options.forEach((o, oi) => {
         if (!isStr(o.id)) addError(exLoc, `خيار #${oi} بدون id`);
         optIds.add(o.id);
         if (!isStr(o.text)) addError(exLoc, `خيار #${oi} «${o.id}» text فارغ`);
         if (!isStr(o.textAr)) addWarn(exLoc, `خيار #${oi} «${o.id}» بدون ترجمة عربية textAr`);
+        const optText = (o.text || '').trim().toLowerCase();
+        if (optText) {
+          if (seenOptTexts.has(optText)) addWarn(exLoc, `تكرار نص خيار «${o.id}» (سؤال ملتبس)`);
+          seenOptTexts.add(optText);
+        }
         if (o.isCorrect === true) correctFromOptions.add(o.id);
       });
       if (ak && Array.isArray(ak.correctOptionIds)) {

@@ -232,10 +232,28 @@ export interface LessonExercise {
   items: { id: string; text: string }[];
 }
 
+export interface LessonScenario {
+  contextAr: string;
+  settingAr: string;
+  lines: { es: string; ar: string; arEg?: string }[];
+}
+
+/** ملخص الدرس الذي يُعرض للمتعلم قبل التمارين: هدف، مفردات، أمثلة، حوار، ملاحظة. */
+export interface LessonBrief {
+  objectiveAr: string;
+  estimatedMinutes: number;
+  newVocabulary: { word: string; meaningFusha: string | null; meaningEg: string | null }[];
+  reviewVocabulary: { word: string; meaningFusha: string | null; meaningEg: string | null }[];
+  targetStructures: string[];
+  scenarios: LessonScenario[];
+  culturalNoteAr: string | null;
+  pedagogicalRationaleAr: string | null;
+}
+
 export interface LessonSession {
   lesson: {
     slug: string; titleAr: string; level: string | null; objectiveAr: string; estimatedMinutes: number;
-    versionNo: number; provenance?: { status: string; warningAr: string };
+    versionNo: number; brief: LessonBrief; provenance?: { status: string; warningAr: string };
   };
   exercises: LessonExercise[];
   progress: { status: string; best_accuracy: number; attempts_count: number; completed_at: string | null };
