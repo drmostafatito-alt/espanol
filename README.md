@@ -7,14 +7,16 @@
 >
 > | التحقق | النتيجة |
 > | --- | --- |
-> | `npx vitest run` | **192/192** ✅ (13 ملفًا) |
-> | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ |
-> | `./node_modules/.bin/playwright test` (Chromium + Firefox، 5 مشاريع) | **70/70** ✅ |
+> | `npx vitest run` | **388/388** ✅ (28 ملفًا) — مُحقَّق في جلسة 2026-10-25 |
+> | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ — مُحقَّق في جلسة 2026-10-25 |
+> | `node tools/journey-live-19.mjs` · `node tools/test-learner-flow-live.mjs` | **32/32 · ناجح 100%** ✅ — مُحقَّق في جلسة 2026-10-25 |
+> | `./node_modules/.bin/playwright test` (Chromium + Firefox، 5 مشاريع) | **70/70** ✅ (آخر تحقق 2026-10-21؛ يحتاج `npx playwright install`، غير قابل للتشغيل في بيئة بلا إنترنت إلى `cdn.playwright.dev`) |
 > | `npx tsc --noEmit` · `npx vite build` | نظيف / ناجح ✅ |
 > | `node tools/check-sql.mjs` | PASS ✅ (61 جدولًا، 51 فهرسًا) |
-> | `node tools/check-curriculum.mjs` | PASS ✅ (0 أخطاء، 0 تنبيهات) |
+> | `node tools/check-curriculum.mjs` | PASS ✅ (212 درسًا مكتوبًا، 0 أخطاء، 0 تنبيهات) |
 > | `node tools/validate-content.mjs --dir …` | PASS في exemplars + مسودات a1 / core-vocab / travel / callcenter ✅ |
-> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 29 تنبيهًا مفتوحًا** ✅ [`reports/audit/`](reports/audit/SUMMARY.md) |
+> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 0 تنبيهات** ✅ |
+> | `node tools/check-audio-manifest.mjs` | PASS ✅ (63 مدخلًا ← 52 ملفًا، 11 اسمًا مستعارًا) |
 >
 > ⚠️ **بوابة أمنية:** لا تُفتح حسابات حقيقية بعد. قوة تخزين كلمة المرور على الخطة المجانية = 5% من متطلب OWASP (حدّ منصة مقيس).
 > القرار المطلوب: [`docs/SECURITY_BLOCKERS.md`](docs/SECURITY_BLOCKERS.md).
@@ -83,9 +85,9 @@ done
 npm run build               # vite build
 npm run worker:dev          # API + SPA على http://localhost:8787
 
-npm test                    # 200 اختبار vitest (14 ملفًا)
+npm test                    # 388 اختبار vitest (28 ملفًا)
 node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
-npm run validate            # DDL + جودة المحتوى
+npm run validate            # DDL + جودة المحتوى + تناسق الأصول الصوتية
 node tools/check-curriculum.mjs
 npm run deploy:preflight    # يجب أن يفشل (exit 1) على إعداد التطوير — هذه وظيفته
                             # ولاختبار قسم إنتاج: --file <path> [--env production]
