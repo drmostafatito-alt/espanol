@@ -1,8 +1,11 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { api, ApiError, type AnswerResult, type CompleteResult, type LessonExercise, type LessonSession } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { isSpeechRecognitionSupported, createSpeechRecognizer } from '../audio/speechRecognition';
+import { Icon } from '../components/icons';
+import { Mascot } from '../components/Mascot';
+import { ProgressBar } from '../components/ui';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -17,6 +20,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const [session, setSession] = useState<LessonSession | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [locked, setLocked] = useState<Record<string, unknown> | null>(null);
+  const [loadKind, setLoadKind] = useState<'locked' | 'network' | 'server'>('server');
 
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
@@ -24,7 +28,6 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const [result, setResult] = useState<AnswerResult | null>(null);
   const [completion, setCompletion] = useState<CompleteResult | null>(null);
   const [busy, setBusy] = useState(false);
-  /** رسالة صوت عربية تُعرض للمستخدم عند تعذّر التشغيل (لا أخطاء تقنية) */
   const [audioNotice, setAudioNotice] = useState<string | null>(null);
   const [results, setResults] = useState<Record<string, boolean | null>>({});
   const [audioRate, setAudioRate] = useState<number>(1.0);
@@ -32,33 +35,46 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   const audio = audioService;
 
+  // عدّاد إعادة المحاولة: زر «أعد المحاولة» يزيده فيُعاد تشغيل أثر التحميل نفسه
+  const [reloadTick, setReloadTick] = useState(0);
+
   useEffect(() => {
-    let alive = true;
-    api
+    let cancelled = false;
+    setPhase('loading');
+    setError(null);
+    setLocked(null);
+    void api
       .lessonSession(slug)
       .then(s => {
-        if (!alive) return;
+        if (cancelled) return;
         setSession(s);
         setPhase('exercise');
       })
       .catch((err: unknown) => {
-        if (!alive) return;
+        if (cancelled) return;
         if (err instanceof ApiError && err.code === 'LESSON_LOCKED') {
-          // ApiError.details هو كائن الخطأ نفسه { code, message, missing, … }
           setLocked((err.details as Record<string, unknown>) ?? {});
+          setLoadKind('locked');
+          setPhase('error');
+        } else if (err instanceof ApiError && err.isUnauthorized()) {
+          // المعالج المركزي يحوّل لصفحة الدخول؛ نبقى على حالة تحميل هادئة
+          setPhase('loading');
+        } else if (err instanceof ApiError && err.isNetwork()) {
+          setLoadKind('network');
+          setError('تعذّر الوصول إلى الخادم. تحقّق من اتصالك بالإنترنت ثم أعد المحاولة.');
           setPhase('error');
         } else {
-          setError(err instanceof ApiError ? err.message : 'تعذّر تحميل الدرس.');
+          setLoadKind('server');
+          setError(err instanceof ApiError ? err.message : 'تعذّر تحميل الدرس. حاول مرة أخرى بعد قليل.');
           setPhase('error');
         }
       });
     return () => {
-      alive = false;
+      cancelled = true;
     };
-  }, [slug]);
+  }, [slug, reloadTick]);
 
   useEffect(() => {
-    // إيقاف الصوت عند مغادرة الدرس — لا صوت يعيش بعد الشاشة
     return () => {
       void audio.stop();
     };
@@ -67,22 +83,25 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const exercises = session?.exercises ?? [];
   const current: LessonExercise | undefined = exercises[index];
 
-  const playAudio = useCallback((targetRate?: number) => {
-    const spanishText = current?.speechEs ?? current?.stemEs ?? '';
-    const audioKey = current?.audioKey || (spanishText ? `tts-${current?.id}` : null);
-    if (!audioKey || !spanishText) return;
-    setAudioNotice(null);
-    const effRate = targetRate ?? audioRate;
-    audio.setRate(effRate);
-    void audio
-      .play({ key: audioKey, text: spanishText, variant: user?.audioVariant })
-      .then(res => {
-        if (res && res.ok === false) {
-          setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.');
-        }
-      })
-      .catch(() => setAudioNotice('تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.'));
-  }, [audio, audioRate, current, user?.audioVariant]);
+  const playAudio = useCallback(
+    (targetRate?: number) => {
+      const spanishText = current?.speechEs ?? current?.stemEs ?? '';
+      const audioKey = current?.audioKey || (spanishText ? `tts-${current?.id}` : null);
+      if (!audioKey || !spanishText) return;
+      setAudioNotice(null);
+      const effRate = targetRate ?? audioRate;
+      audio.setRate(effRate);
+      void audio
+        .play({ key: audioKey, text: spanishText, variant: user?.audioVariant })
+        .then(res => {
+          if (res && res.ok === false) {
+            setAudioNotice(res.messageAr ?? 'تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.');
+          }
+        })
+        .catch(() => setAudioNotice('تعذّر تشغيل الصوت الآن. النص مكتوب أمامك.'));
+    },
+    [audio, audioRate, current, user?.audioVariant],
+  );
 
   const toggleRate = useCallback(() => {
     const nextRate = audioRate === 1.0 ? 0.75 : 1.0;
@@ -108,7 +127,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     } finally {
       setBusy(false);
     }
-  }, [answer, audio, busy, current, slug]);
+  }, [answer, busy, current, slug]);
 
   const next = useCallback(() => {
     if (index + 1 < exercises.length) {
@@ -130,24 +149,56 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     }
   }, [exercises.length, index, slug]);
 
-  if (phase === 'loading') return <p className="container muted">جارٍ تحميل الدرس…</p>;
+  if (phase === 'loading') {
+    return (
+      <div className="container">
+        <div className="card" style={{ marginTop: 'var(--s-6)' }}>
+          <div className="spinner" />
+          <p className="muted" style={{ textAlign: 'center', margin: 0 }}>جارٍ تحميل الدرس…</p>
+        </div>
+      </div>
+    );
+  }
 
   if (phase === 'error') {
+    const isLocked = loadKind === 'locked';
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card">
-          <h1 style={{ marginTop: 0 }}>تعذّر فتح الدرس</h1>
-          {locked ? (
+        <div className="card" style={{ marginTop: 'var(--s-6)' }}>
+          <div
+            className="state-icon"
+            style={{
+              background: isLocked ? 'var(--color-navy-soft)' : 'var(--color-warning-soft)',
+              color: isLocked ? 'var(--color-navy)' : 'var(--color-warning)',
+              marginBottom: 'var(--s-3)',
+            }}
+          >
+            <Icon name={isLocked ? 'lock' : 'warning'} size={28} />
+          </div>
+          <h1 style={{ marginTop: 0 }}>{isLocked ? 'تعذّر فتح الدرس' : loadKind === 'network' ? 'تعذّر الاتصال بالخادم' : 'تعذّر تحميل الدرس'}</h1>
+          {isLocked ? (
             <>
               <p>هذا الدرس مقفل — أكمل الدرس السابق بدقة كافية أولًا.</p>
               <p className="small muted">
-                المطلوب: {((locked.missing as string[]) ?? []).join('، ') || 'الدرس السابق'}
+                المطلوب:{' '}
+                {((locked?.missing as string[] | undefined) ?? []).length > 0 ? (
+                  <span dir="ltr">{((locked?.missing as string[] | undefined) ?? []).join('، ')}</span>
+                ) : (
+                  'الدرس السابق'
+                )}
               </p>
             </>
           ) : (
             <p role="alert">{error}</p>
           )}
-          <button className="btn" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
+          <div className="row">
+            {!isLocked && (
+              <button className="btn" onClick={() => setReloadTick(t => t + 1)}>
+                <Icon name="refresh" size={18} /> أعد المحاولة
+              </button>
+            )}
+            <button className="btn navy" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
+          </div>
         </div>
       </div>
     );
@@ -181,35 +232,29 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
 
   return (
-    <div className="container" style={{ maxWidth: 720 }}>
+    <div className="container lesson-shell">
+      {/* شريط علوي للتركيز */}
+      <div className="lesson-top" style={{ marginTop: 'var(--s-4)' }}>
+        <button className="btn ghost icon-btn" onClick={() => navigate('/learn')} aria-label="خروج إلى لوحتي">
+          <Icon name="arrow-right" size={22} />
+        </button>
+        <div className="lesson-title">
+          <h1>{session.lesson.titleAr}{session.lesson.level ? ` · ${session.lesson.level}` : ''}</h1>
+          <span className="small muted">السؤال <span className="num">{index + 1}</span> من <span className="num">{exercises.length}</span></span>
+        </div>
+        <span className="lesson-counter num">{index + 1} / {exercises.length}</span>
+      </div>
+
+      <ProgressBar value={progressPct} label="تقدم الدرس" />
+
       {session.lesson.provenance && (
-        <span className="sr-only" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', border: 0 }}>
+        <p className="banner-warn" role="status" style={{ marginTop: 'var(--s-3)' }}>
+          <Icon name="info" size={16} style={{ display: 'inline-block', verticalAlign: '-3px', marginInlineEnd: 6 }} />
           {session.lesson.provenance.warningAr}
-        </span>
+        </p>
       )}
 
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>← خروج</button>
-        <span className="small muted num">
-          {index + 1} / {exercises.length}
-        </span>
-      </div>
-
-      <div
-        className="progress-track"
-        role="progressbar"
-        aria-valuenow={progressPct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-label="تقدم الدرس"
-      >
-        <div className="progress-fill" style={{ width: `${progressPct}%` }} />
-      </div>
-
-      <div className="card" style={{ marginTop: 'var(--s-3)' }}>
-        <p className="small muted" style={{ marginTop: 0 }}>{session.lesson.titleAr}{session.lesson.level ? ` · ${session.lesson.level}` : ''}</p>
-        <h2 style={{ marginTop: 0 }}>{current.instructionAr}</h2>
-
+      <div className="card" style={{ marginTop: 'var(--s-4)' }}>
         <ExerciseBody
           exercise={current}
           answer={answer}
@@ -220,10 +265,11 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           onToggleRate={toggleRate}
           audioRate={audioRate}
           audioNotice={audioNotice}
+          clearAudioNotice={() => setAudioNotice(null)}
         />
 
         {audioNotice && (
-          <p role="status" aria-live="polite" className="small" data-testid="audio-notice" style={{ marginTop: 'var(--s-2)' }}>
+          <p role="status" aria-live="polite" className="small banner-warn" data-testid="audio-notice" style={{ marginTop: 'var(--s-3)' }}>
             {audioNotice}{' '}
             <button type="button" className="btn ghost sm" onClick={() => setAudioNotice(null)}>
               حسنًا، أكمل بدون صوت
@@ -232,35 +278,15 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
         )}
 
         {phase === 'feedback' && result && (
-          <div
-            data-testid="lesson-feedback"
-            className={`card feedback ${result.mode === 'participation' ? 'neutral' : result.correct ? 'ok' : 'bad'}`}
-            role="status"
-            aria-live="polite"
-            style={{ marginTop: 'var(--s-3)' }}
-          >
-            <strong>
-              {result.mode === 'participation'
-                ? 'تمرين مشاركة — لا يُصحَّح آليًا'
-                : result.correct
-                  ? 'إجابة صحيحة ✓'
-                  : 'إجابة غير صحيحة'}
-            </strong>
-            {result.feedbackAr && <p style={{ margin: 'var(--s-2) 0 0' }}>{result.feedbackAr}</p>}
-            <p style={{ margin: 'var(--s-2) 0 0' }} className="small">{result.explanationAr}</p>
-            {result.mode === 'participation' && (
-              <p className="small muted" style={{ margin: 'var(--s-2) 0 0' }}>
-                هذا التمرين لا يدخل في حساب الدقة، لأن تصحيح النطق أو المحادثة المفتوحة يحتاج مراجعًا بشريًا أو
-                تعرّفًا صوتيًا، ولا نملك أيًّا منهما الآن.
-              </p>
-            )}
-          </div>
+          <FeedbackPanel result={result} />
         )}
+
+        {error && <p role="alert" className="small error-text" style={{ marginTop: 'var(--s-2)' }}>{error}</p>}
 
         <div className="row" style={{ marginTop: 'var(--s-4)', justifyContent: 'flex-end' }}>
           {phase === 'exercise' ? (
             <button
-              className="btn"
+              className="btn success"
               data-testid="lesson-submit"
               onClick={() => void submit()}
               disabled={busy || !hasAnswer(current, answer)}
@@ -268,21 +294,54 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
               {busy ? 'جارٍ التحقق…' : 'تحقّق'}
             </button>
           ) : (
-            <button className="btn" data-testid="lesson-next" onClick={next} autoFocus>
-              {index + 1 < exercises.length ? 'التالي' : 'إنهاء الدرس'}
+            <button className="btn success" data-testid="lesson-next" onClick={next} autoFocus>
+              {index + 1 < exercises.length ? 'التالي' : 'إنهاء الدرس'} <Icon name="arrow-left" size={17} />
             </button>
           )}
         </div>
-
-        {error && <p role="alert" className="small error-text" style={{ marginTop: 'var(--s-2)' }}>{error}</p>}
       </div>
+    </div>
+  );
+}
+
+/* ---------------- التغذية الراجعة ---------------- */
+function FeedbackPanel({ result }: { result: AnswerResult }) {
+  const participation = result.mode === 'participation';
+  const bad = !participation && !result.correct;
+  const cls = participation ? 'neutral' : result.correct ? 'ok' : 'bad';
+  const title = participation ? 'تمرين مشاركة — لا يُصحَّح آليًا' : result.correct ? 'إجابة صحيحة ✓' : 'إجابة غير صحيحة';
+  const icon = participation ? 'info' : result.correct ? 'check' : 'close';
+  return (
+    <div data-testid="lesson-feedback" className={`feedback ${cls}`} role="status" aria-live="polite" style={{ marginTop: 'var(--s-4)' }}>
+      <span className="feedback-icon"><Icon name={icon as 'info'} size={20} /></span>
+      <div>
+        <strong>{title}</strong>
+        {result.feedbackAr && <p style={{ margin: '2px 0 0' }}>{result.feedbackAr}</p>}
+        <p className="small" style={{ margin: 'var(--s-1) 0 0' }}>{result.explanationAr}</p>
+        {participation && (
+          <p className="small muted" style={{ margin: 'var(--s-2) 0 0' }}>
+            هذا التمرين لا يدخل في حساب الدقة، لأن تصحيح النطق أو المحادثة المفتوحة يحتاج مراجعًا بشريًا أو تعرّفًا صوتيًا.
+          </p>
+        )}
+        {bad && <span className="visually-hidden">الإجابة الصحيحة موضحة في التفسير أعلاه.</span>}
+      </div>
+    </div>
+  );
+}
+
+/* ---------------- مشهد السؤال الكرتوني ---------------- */
+function QuestionScene({ children, mood = 'wave' }: { children: ReactNode; mood?: 'wave' | 'celebrate' }) {
+  return (
+    <div className="question-scene">
+      <Mascot mood={mood} size={118} />
+      <div className="speech-bubble">{children}</div>
     </div>
   );
 }
 
 function hasAnswer(exercise: LessonExercise, answer: unknown): boolean {
   if (exercise.mode === 'participation') return true;
-  if (Array.isArray(answer)) return answer.length > 0; // word_order / dialogue_order
+  if (Array.isArray(answer)) return answer.length > 0;
   if (exercise.options.length) return typeof answer === 'string' && answer.length > 0;
   return typeof answer === 'string' && answer.trim().length > 0;
 }
@@ -297,6 +356,7 @@ function ExerciseBody({
   onToggleRate,
   audioRate,
   audioNotice,
+  clearAudioNotice,
 }: {
   exercise: LessonExercise;
   answer: unknown;
@@ -307,6 +367,7 @@ function ExerciseBody({
   onToggleRate: () => void;
   audioRate: number;
   audioNotice: string | null;
+  clearAudioNotice: () => void;
 }) {
   const [tokens, setTokens] = useState<string[]>([]);
   const [showTranscript, setShowTranscript] = useState(false);
@@ -334,11 +395,11 @@ function ExerciseBody({
     const recognizer = createSpeechRecognizer({
       lang: 'es-ES',
       onStart: () => setIsRecording(true),
-      onResult: (res) => {
+      onResult: res => {
         setSpeechTranscript(res.transcript);
         setAnswer(res.transcript);
       },
-      onError: (errMsg) => {
+      onError: errMsg => {
         setSpeechError(errMsg);
         setIsRecording(false);
       },
@@ -353,71 +414,109 @@ function ExerciseBody({
   };
 
   const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  // الماسكوت حاضر في كل سؤال: عند غياب الجملة الإسبانية تعرض الفقاعة التعليمات نفسها
+  const instructionBubble = (
+    <p className="bubble-ar" style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--color-navy)', margin: 0 }}>
+      {exercise.instructionAr}
+    </p>
+  );
+  const stemBubble = (
+    <>
+      {exercise.stemEs && <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>}
+      {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
+    </>
+  );
   const playButton = hasAudio ? (
-    <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
-      🔊 استمع
+    <button className="btn navy sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
+      <Icon name="volume" size={17} /> استمع
     </button>
   ) : null;
 
+  const rateButton = hasAudio ? (
+    <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
+      {audioRate === 1.0 ? 'سرعة بطيئة (0.75x)' : 'السرعة العادية (1.0x)'}
+    </button>
+  ) : null;
+
+  const optionGroup = (
+    <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-4)' }}>
+      {exercise.options.map(opt => (
+        <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
+          <input
+            type="radio"
+            name={`q-${exercise.id}`}
+            value={opt.id}
+            checked={answer === opt.id}
+            disabled={disabled}
+            onChange={() => setAnswer(opt.id)}
+          />
+          <span className="es">{opt.text}</span>
+        </label>
+      ))}
+    </div>
+  );
+
+  /* تمارين المشاركة (نطق/محادثة حرة) */
   if (exercise.mode === 'participation') {
     const isSpeech = exercise.type === 'speak_with_text' || exercise.type === 'speak_free';
     const recSupported = isSpeechRecognitionSupported();
-
     return (
       <div>
-        {exercise.stemEs && <p className="es" style={{ fontSize: '1.2rem', fontWeight: 600 }}>{exercise.stemEs}</p>}
-        {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
+        <QuestionScene>
+          {exercise.stemEs ? (
+            <>
+              <p className="bubble-es es" dir="ltr">{exercise.stemEs}</p>
+              {exercise.stemAr && <p className="bubble-ar">{exercise.stemAr}</p>}
+            </>
+          ) : (
+            instructionBubble
+          )}
+        </QuestionScene>
 
-        <div className="row" style={{ gap: 'var(--s-2)', marginTop: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
+        <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap' }}>
           {hasAudio && (
             <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
-              🔊 استمع للنموذج
+              <Icon name="volume" size={17} /> استمع للنموذج
             </button>
           )}
-          {hasAudio && (
-            <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
-              {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
-            </button>
-          )}
+          {rateButton}
           {isSpeech && recSupported && (
             <button
-              className={`btn sm ${isRecording ? 'error' : 'secondary'}`}
+              className={`btn sm ${isRecording ? 'danger' : 'navy'}`}
               data-testid="speech-mic-btn"
               onClick={toggleRecording}
               type="button"
               disabled={disabled}
             >
-              {isRecording ? '⏹️ إيقاف الاستماع' : '🎙️ تحدّث الآن (ميكروفون المتصفح)'}
+              <Icon name="mic" size={17} /> {isRecording ? 'إيقاف الاستماع' : 'تحدّث الآن (ميكروفون المتصفح)'}
             </button>
           )}
         </div>
 
         {isRecording && (
-          <p role="status" aria-live="polite" className="small" style={{ color: 'var(--color-primary, #0066cc)', marginTop: 'var(--s-2)' }}>
-            🔴 جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
+          <p role="status" aria-live="polite" className="row small" style={{ color: 'var(--color-danger)', marginTop: 'var(--s-2)', gap: 'var(--s-2)' }}>
+            <span className="rec-dot" aria-hidden="true" /> جارٍ الاستماع… تكلّم بالإسبانية الآن بصوت واضح
           </p>
         )}
 
         {speechTranscript && (
-          <div className="card" style={{ marginTop: 'var(--s-2)', padding: 'var(--s-2)' }}>
+          <div className="card" style={{ marginTop: 'var(--s-3)', padding: 'var(--s-3)', background: 'var(--color-surface-2)' }}>
             <p className="small" style={{ margin: 0 }}>
               <strong>ما تعرّف عليه المتصفح:</strong> <span className="es">{speechTranscript}</span>
             </p>
             {exercise.stemEs && speechTranscript.trim().toLowerCase() === exercise.stemEs.trim().toLowerCase() && (
-              <p className="small" style={{ color: 'var(--color-success, #28a745)', margin: 'var(--s-1) 0 0' }}>
-                ✓ ممتاز! نطقك طابق الجملة تمامًا.
+              <p className="row small" style={{ color: 'var(--color-success-strong)', margin: '4px 0 0', gap: 'var(--s-1)' }}>
+                <Icon name="check-circle" size={16} /> ممتاز! نطقك طابق الجملة تمامًا.
               </p>
             )}
-            <p className="small muted" style={{ margin: 'var(--s-1) 0 0' }}>
-              (تعرّف تجريبي عبر المتصفح — هذا تمرين مشاركة لتدريب لسانك ولا يُقيّم نبرة الصوت أو النطق الدقيق آليًا)
+            <p className="small muted" style={{ margin: '4px 0 0' }}>
+              (تعرّف تجريبي عبر المتصفح — تمرين مشاركة لتدريب لسانك ولا يُقيّم نبرة الصوت آليًا)
             </p>
           </div>
         )}
 
         {speechError && (
-          <p role="alert" className="small error-text" style={{ marginTop: 'var(--s-2)' }}>
-            {speechError}
-          </p>
+          <p role="alert" className="small error-text" style={{ marginTop: 'var(--s-2)' }}>{speechError}</p>
         )}
 
         {isSpeech && !recSupported && (
@@ -426,7 +525,7 @@ function ExerciseBody({
           </p>
         )}
 
-        <label className="field" style={{ marginTop: 'var(--s-3)' }}>
+        <label className="field" style={{ marginTop: 'var(--s-4)' }}>
           <span>اكتب ما قلته أو ما فهمته (اختياري)</span>
           <textarea
             rows={3}
@@ -440,115 +539,72 @@ function ExerciseBody({
     );
   }
 
-  // تمارين الاستماع listen_choose: تحكّم صوتي متكامل + إمكانية إظهار النص عند تعذر الصوت
+  /* تمارين الاستماع */
   if (exercise.type === 'listen_choose' && exercise.options.length) {
     return (
       <div>
-        <div className="card" style={{ background: 'var(--surface-2, #f4f6f8)', padding: 'var(--s-3)', borderRadius: 8, marginBottom: 'var(--s-3)' }}>
-          <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap', alignItems: 'center' }}>
+        <QuestionScene>
+          <p className="bubble-ar" style={{ fontWeight: 700, color: 'var(--color-navy)', marginTop: 0 }}>
+            {exercise.instructionAr}
+          </p>
+          <div className="row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap' }}>
             {playButton}
-            {hasAudio && (
-              <button
-                className="btn secondary sm"
-                data-testid="lesson-audio-replay"
-                onClick={onReplayAudio}
-                type="button"
-              >
-                🔁 إعادة الاستماع
-              </button>
-            )}
-            {hasAudio && (
-              <button
-                className="btn ghost sm"
-                data-testid="lesson-audio-rate"
-                onClick={onToggleRate}
-                type="button"
-              >
-                {audioRate === 1.0 ? '🐢 بطيء (0.75x)' : '⚡ عادي (1.0x)'}
-              </button>
-            )}
+            <button className="btn secondary sm" data-testid="lesson-audio-replay" onClick={onReplayAudio} type="button">
+              <Icon name="refresh" size={16} /> إعادة الاستماع
+            </button>
+            {rateButton}
             {exercise.stemEs && (
-              <button
-                className="btn ghost sm"
-                data-testid="toggle-transcript"
-                onClick={() => setShowTranscript(v => !v)}
-                type="button"
-              >
-                {showTranscript ? '👁️ إخفاء النص' : '👁️ إظهار النص المكتوب'}
+              <button className="btn ghost sm" data-testid="toggle-transcript" onClick={() => setShowTranscript(v => !v)} type="button">
+                {showTranscript ? 'إخفاء النص' : 'إظهار النص المكتوب'}
               </button>
             )}
           </div>
           {(showTranscript || audioNotice) && exercise.stemEs && (
-            <p className="es" style={{ fontSize: '1.15rem', marginTop: 'var(--s-2)', marginBottom: 0 }}>
-              {exercise.stemEs}
-            </p>
+            <p className="bubble-es es" dir="ltr" style={{ marginTop: 'var(--s-3)', marginBottom: 0 }}>{exercise.stemEs}</p>
           )}
           {(showTranscript || audioNotice) && exercise.stemAr && (
-            <p className="small muted" style={{ marginTop: 'var(--s-1)', marginBottom: 0 }}>
-              {exercise.stemAr}
-            </p>
+            <p className="bubble-ar" style={{ marginTop: 'var(--s-1)', marginBottom: 0 }}>{exercise.stemAr}</p>
           )}
-        </div>
-
-        <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
-          {exercise.options.map(opt => (
-            <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
-              <input
-                type="radio"
-                name={`q-${exercise.id}`}
-                value={opt.id}
-                checked={answer === opt.id}
-                disabled={disabled}
-                onChange={() => setAnswer(opt.id)}
-              />
-              <span className="es">{opt.text}</span>
-            </label>
-          ))}
-        </div>
+        </QuestionScene>
+        {audioNotice && (
+          <p className="small muted" style={{ marginTop: 0 }}>
+            <button type="button" className="btn ghost sm" onClick={clearAudioNotice}>حسنًا، أكمل بدون صوت</button>
+          </p>
+        )}
+        {optionGroup}
       </div>
     );
   }
 
+  /* خيارات عامة */
   if (exercise.options.length) {
     return (
       <div>
-        {exercise.stemEs && <p className="es" style={{ fontSize: '1.15rem' }}>{exercise.stemEs}</p>}
-        {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
-        {playButton}
-        <div role="group" aria-label="اختر إجابة" style={{ marginTop: 'var(--s-3)' }}>
-          {exercise.options.map(opt => (
-            <label key={opt.id} className={`choice ${answer === opt.id ? 'selected' : ''}`}>
-              <input
-                type="radio"
-                name={`q-${exercise.id}`}
-                value={opt.id}
-                checked={answer === opt.id}
-                disabled={disabled}
-                onChange={() => setAnswer(opt.id)}
-              />
-              <span className="es">{opt.text}</span>
-            </label>
-          ))}
-        </div>
+        <QuestionScene>
+          {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+          {hasAudio && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+        </QuestionScene>
+        {optionGroup}
       </div>
     );
   }
 
-  // word_order و dialogue_order كلاهما «رتّب العناصر»: نفس واجهة الرموز.
-  // كنّا نستثني dialogue_order فكان يسقط إلى حقل نص حر لا يمكن تصحيحه.
+  /* ترتيب الكلمات/الحوار */
   if ((exercise.type === 'word_order' || exercise.type === 'dialogue_order') && exercise.items.length) {
     const byId = new Map(exercise.items.map(i => [i.id, i.text]));
-    // نتتبّع العناصر بالمعرّف لا بالنص: التمرين قد يكرّر الرمز نفسه («es» مرتين)
     const remaining = exercise.items.filter(i => !tokens.includes(i.id));
     const place = (ids: string[]) => {
-      const next = ids.map(id => byId.get(id) ?? '');
+      const nextValues = ids.map(id => byId.get(id) ?? '');
       setTokens(ids);
-      // نُرسل مصفوفة مرتّبة، لا نصًّا مدموجًا: الترتيب هو الإجابة نفسها
-      setAnswer(next);
+      setAnswer(nextValues);
     };
     return (
       <div>
-        {playButton && <div style={{ marginBottom: 'var(--s-2)' }}>{playButton}</div>}
+        <QuestionScene>
+          {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+          {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+        </QuestionScene>
+        <p className="small muted" style={{ marginBottom: 'var(--s-2)' }}>اضغط الكلمات بالترتيب الصحيح — أو استخدم لوحة المفاتيح.</p>
         <div className="token-box" dir="ltr" data-testid="selected-tokens" aria-label="الجملة التي تكوّنها">
           {tokens.map((id, i) => (
             <button
@@ -563,7 +619,7 @@ function ExerciseBody({
           ))}
           {tokens.length === 0 && <span className="muted small">اضغط الكلمات بالترتيب</span>}
         </div>
-        <div className="token-box" dir="ltr" data-testid="remaining-tokens" style={{ marginTop: 'var(--s-2)' }}>
+        <div className="token-box" dir="ltr" data-testid="remaining-tokens" style={{ marginTop: 'var(--s-3)', borderStyle: 'solid', background: 'var(--color-surface)' }}>
           {remaining.map(item => (
             <button
               key={item.id}
@@ -580,12 +636,14 @@ function ExerciseBody({
     );
   }
 
+  /* إدخال نصي حر */
   return (
     <div>
-      {exercise.stemEs && <p className="es" style={{ fontSize: '1.15rem' }}>{exercise.stemEs}</p>}
-      {exercise.stemAr && <p className="small muted">{exercise.stemAr}</p>}
-      {playButton}
-      <label className="field" style={{ marginTop: 'var(--s-3)' }}>
+      <QuestionScene>
+        {(exercise.stemEs || exercise.stemAr) ? stemBubble : instructionBubble}
+        {playButton && <div style={{ marginTop: 'var(--s-2)' }}>{playButton}</div>}
+      </QuestionScene>
+      <label className="field" style={{ marginTop: 'var(--s-4)' }}>
         <span>إجابتك بالإسبانية</span>
         <input
           data-testid="lesson-text"
@@ -604,6 +662,7 @@ function ExerciseBody({
   );
 }
 
+/* ---------------- شاشة إكمال الدرس ---------------- */
 function ResultScreen({
   completion,
   session,
@@ -618,31 +677,65 @@ function ResultScreen({
   onRetry: () => void;
 }) {
   const participation = Object.values(results).filter(v => v === null).length;
+  const passed = completion?.passed ?? false;
 
   return (
-    <div className="card" data-testid="lesson-result">
-      <h1 style={{ marginTop: 0 }}>انتهى الدرس</h1>
-      {!completion && <p className="muted">جارٍ حساب النتيجة على الخادم…</p>}
+    <div className="card result-hero" data-testid="lesson-result" style={{ marginTop: 'var(--s-6)', position: 'relative', overflow: 'hidden' }}>
+      {passed && (
+        <div aria-hidden="true">
+          {[
+            { l: '8%', c: 'var(--color-primary)', d: '0s' },
+            { l: '18%', c: 'var(--color-info)', d: '0.2s' },
+            { l: '78%', c: 'var(--color-success)', d: '0.1s' },
+            { l: '88%', c: '#FFB020', d: '0.3s' },
+            { l: '46%', c: 'var(--color-primary)', d: '0.15s' },
+            { l: '62%', c: 'var(--color-info)', d: '0.25s' },
+          ].map((dot, i) => (
+            <span key={i} className="confetti-dot" style={{ insetInlineStart: dot.l, top: 18 + (i % 3) * 14, background: dot.c, animationDelay: dot.d }} />
+          ))}
+        </div>
+      )}
+
+      {passed ? (
+        <div className="result-mascot">
+          <Mascot mood="celebrate" size={180} alt="احتفال بإكمال الدرس" />
+        </div>
+      ) : (
+        <div className="result-trophy"><Icon name={completion ? 'info' : 'clock'} size={40} /></div>
+      )}
+
+      <h1 style={{ marginTop: 0 }}>
+        {passed ? 'أحسنت! أتممت الدرس' : completion ? 'تحتاج مزيدًا من التدريب' : 'جارٍ حساب النتيجة…'}
+      </h1>
+      {!completion && <p className="muted">الخادم يحسب نتيجتك الآن…</p>}
+
       {completion && (
         <>
-          <div className="stat-row" style={{ marginTop: 'var(--s-3)' }}>
-            <div className="stat"><b className="num">{completion.accuracy}%</b><span>الدقة</span></div>
-            <div className="stat"><b className="num">{completion.correctCount}/{completion.gradedTotal}</b><span>إجابات صحيحة</span></div>
-            <div className="stat"><b className="num">{completion.xpTotal}</b><span>إجمالي XP</span></div>
+          <div className="result-stats">
+            <div className="result-stat">
+              <b className="num">{completion.accuracy}%</b>
+              <span>الدقة</span>
+            </div>
+            <div className="result-stat">
+              <b className="num">{completion.correctCount}/{completion.gradedTotal}</b>
+              <span>إجابات صحيحة</span>
+            </div>
+            <div className="result-stat">
+              <b className="num">+{completion.xpAwarded}</b>
+              <span>نقاط هذا الدرس</span>
+            </div>
           </div>
 
-          <p style={{ marginTop: 'var(--s-3)' }}>
+          <p>
             {completion.passed
               ? completion.alreadyCompleted
                 ? 'أتممت هذا الدرس سابقًا — لا تُمنح نقاط إضافية عند الإعادة.'
-                : `أتممت الدرس بنجاح${completion.xpAwarded ? ` وكسبت ${completion.xpAwarded} XP` : ''}.`
+                : `أتممت الدرس بنجاح${completion.xpAwarded ? ` وكسبت ${completion.xpAwarded} XP` : ''}. إجمالي رصيدك الآن ${completion.xpTotal} XP.`
               : `لم تُحقق حد الإتقان (${completion.minAccuracy}%). أعد المحاولة — التقدم محفوظ على الخادم.`}
           </p>
 
           {participation > 0 && (
-            <p className="small muted">
-              {participation} تمرين مشاركة (نطق/محادثة) لم يُدخلا في حساب الدقة.
-            </p>
+            <p className="small muted">{participation} تمرين مشاركة (نطق/محادثة) لم يُدخل في حساب الدقة.</p>
           )}
           {!completion.passed && completion.missingRequiredTypes.length > 0 && (
             <p className="small error-text">أنواع تمارين مطلوبة غير موجودة في هذا الدرس: {completion.missingRequiredTypes.join('، ')}</p>
@@ -650,13 +743,13 @@ function ResultScreen({
         </>
       )}
 
-      <div className="row" style={{ marginTop: 'var(--s-4)' }}>
-        <button className="btn" onClick={onBack}>رجوع إلى لوحتي</button>
+      <div className="row" style={{ justifyContent: 'center', marginTop: 'var(--s-4)' }}>
+        <button className="btn navy" onClick={onBack}>رجوع إلى لوحتي</button>
         <button className="btn secondary" onClick={onRetry}>إعادة الدرس</button>
       </div>
 
-      <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
-        هذه نتيجة درس «{session.lesson.titleAr}». كل رقم هنا محسوب من محاولاتك المخزَّنة في القاعدة.
+      <p className="small muted" style={{ marginTop: 'var(--s-4)' }}>
+        نتيجة درس «{session.lesson.titleAr}» — كل رقم محسوب من محاولاتك المخزَّنة في القاعدة، والخادم هو مصدر الحقيقة.
       </p>
     </div>
   );

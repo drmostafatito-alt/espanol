@@ -1,11 +1,18 @@
-import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent, type ReactNode } from 'react';
 import { api, ApiError } from '../api';
 import { useAuth } from '../state';
+import { BrandMark, Icon } from '../components/icons';
+
+interface FormError {
+  message: string;
+  problems?: string[];
+  retryAfterSeconds?: number;
+}
 
 function useAuthForm(onDone: () => void) {
   const { setUser } = useAuth();
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<{ message: string; problems?: string[] } | null>(null);
+  const [error, setError] = useState<FormError | null>(null);
 
   async function submit(fn: () => Promise<{ user: Parameters<typeof setUser>[0] }>) {
     setBusy(true);
@@ -16,8 +23,8 @@ function useAuthForm(onDone: () => void) {
       onDone();
     } catch (e) {
       if (e instanceof ApiError) {
-        const d = e.details as { problems?: string[] } | undefined;
-        setError({ message: e.message, problems: d?.problems });
+        const d = e.details as { problems?: string[]; retryAfterSeconds?: number } | undefined;
+        setError({ message: e.message, problems: d?.problems, retryAfterSeconds: d?.retryAfterSeconds });
       } else {
         setError({ message: 'تعذّر الاتصال بالخادم. تحقق من الشبكة ثم أعد المحاولة.' });
       }
@@ -29,15 +36,72 @@ function useAuthForm(onDone: () => void) {
   return { busy, error, submit };
 }
 
-function ErrorBox({ error }: { error: { message: string; problems?: string[] } | null }) {
+function ErrorBox({ error }: { error: FormError | null }) {
   if (!error) return null;
   return (
     <div className="alert" role="alert">
-      {error.message}
-      {error.problems?.length ? (
-        <ul>{error.problems.map(p => <li key={p} className="small">{p}</li>)}</ul>
-      ) : null}
+      <div className="row" style={{ gap: 'var(--s-2)', alignItems: 'flex-start' }}>
+        <Icon name="warning" size={18} style={{ flex: '0 0 auto', marginTop: 3, color: 'var(--color-danger)' }} />
+        <div>
+          <strong style={{ display: 'block' }}>{error.message}</strong>
+          {typeof error.retryAfterSeconds === 'number' && (
+            <span className="small muted">انتظر نحو {Math.max(1, Math.round(error.retryAfterSeconds))} ثانية قبل المحاولة التالية.</span>
+          )}
+          {error.problems?.length ? (
+            <ul style={{ marginBottom: 0 }}>{error.problems.map(p => <li key={p} className="small">{p}</li>)}</ul>
+          ) : null}
+        </div>
+      </div>
     </div>
+  );
+}
+
+/* بطاقة مركزة متوازنة — بلا فوتر يدفع النموذج لأسفل على الموبايل */
+function AuthLayout({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
+  return (
+    <div className="auth-page">
+      <div className="auth-card-wrap">
+        <div className="auth-card-head">
+          <span className="brand-mark" style={{ width: 52, height: 52, borderRadius: 16 }}>
+            <BrandMark size={42} />
+          </span>
+          <h1>{title}</h1>
+          <p className="muted small">{subtitle}</p>
+        </div>
+        <div className="card auth-card">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+function PasswordField({ value, onChange, autoComplete }: { value: string; onChange: (v: string) => void; autoComplete: string }) {
+  const [show, setShow] = useState(false);
+  return (
+    <label className="field">
+      <span>كلمة المرور</span>
+      <div style={{ position: 'relative' }}>
+        <Icon name="key" size={18} style={{ position: 'absolute', insetInlineStart: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted)' }} />
+        <input
+          className="ltr"
+          style={{ paddingInlineStart: 44, paddingInlineEnd: 52 }}
+          type={show ? 'text' : 'password'}
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          autoComplete={autoComplete}
+          required
+          minLength={10}
+        />
+        <button
+          type="button"
+          className="btn ghost icon-btn password-toggle"
+          aria-label={show ? 'أخفِ كلمة المرور' : 'أظهِر كلمة المرور'}
+          aria-pressed={show}
+          onClick={() => setShow(s => !s)}
+        >
+          <Icon name={show ? 'eye-off' : 'eye'} size={18} />
+        </button>
+      </div>
+    </label>
   );
 }
 
@@ -53,12 +117,8 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
   };
 
   return (
-    <div className="container narrow">
-      <h1>إنشاء حساب</h1>
-      <p className="muted small">
-        نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
-      </p>
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+    <AuthLayout title="إنشاء حساب جديد" subtitle="ابدأ رحلتك في الإسبانية خلال دقيقة.">
+      <form className="stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
         <label className="field">
           <span>الاسم الذي تحب أن نناديك به (اختياري)</span>
@@ -66,23 +126,38 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
         </label>
         <label className="field">
           <span>البريد الإلكتروني</span>
-          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          <div style={{ position: 'relative' }}>
+            <Icon name="mail" size={18} style={{ position: 'absolute', insetInlineStart: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted)' }} />
+            <input className="ltr" style={{ paddingInlineStart: 44 }} type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          </div>
         </label>
-        <label className="field">
-          <span>كلمة المرور</span>
-          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="new-password" required />
-          <span className="small muted">10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
-        </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ إنشاء الحساب…' : 'إنشاء الحساب'}</button>
-        <p className="small muted">
-          لديك حساب؟ <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
+        <PasswordField value={password} onChange={setPassword} autoComplete="new-password" />
+        <span className="small muted" style={{ marginTop: 'calc(-1 * var(--s-2))' }}>10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
+        <button className="btn block lg" type="submit" disabled={busy}>
+          {busy ? (
+            <>
+              <span className="spinner spinner-sm" aria-hidden="true" /> جارٍ إنشاء الحساب…
+            </>
+          ) : 'إنشاء الحساب'}
+        </button>
+        <p className="small muted" style={{ textAlign: 'center', marginBottom: 0 }}>
+          لديك حساب؟{' '}
+          <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
         </p>
       </form>
-    </div>
+    </AuthLayout>
   );
 }
 
-export function Login({ navigate }: { navigate: (to: string) => void }) {
+export function Login({
+  navigate,
+  sessionExpired = false,
+  onDismissNotice,
+}: {
+  navigate: (to: string) => void;
+  sessionExpired?: boolean;
+  onDismissNotice?: () => void;
+}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { busy, error, submit } = useAuthForm(() => navigate('/learn'));
@@ -93,26 +168,42 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
   };
 
   return (
-    <div className="container narrow">
-      <h1>تسجيل الدخول</h1>
-      <form className="card stack" onSubmit={onSubmit} noValidate>
+    <AuthLayout title="أهلًا بعودتك" subtitle="سجّل الدخول لتكمل من حيث توقفت.">
+      <form className="stack" onSubmit={onSubmit} noValidate>
+        {sessionExpired && (
+          <div className="alert info" role="status" style={{ display: 'flex', justifyContent: 'space-between', gap: 'var(--s-2)', alignItems: 'flex-start' }}>
+            <span>انتهت جلستك أو انقطعت. سجّل الدخول من جديد لمتابعة تقدمك المحفوظ.</span>
+            {onDismissNotice && (
+              <button type="button" className="btn ghost icon-btn" aria-label="إغلاق التنبيه" onClick={onDismissNotice} style={{ minHeight: 32, minWidth: 32 }}>
+                <Icon name="close" size={16} />
+              </button>
+            )}
+          </div>
+        )}
         <ErrorBox error={error} />
         <label className="field">
           <span>البريد الإلكتروني</span>
-          <input className="ltr" type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          <div style={{ position: 'relative' }}>
+            <Icon name="mail" size={18} style={{ position: 'absolute', insetInlineStart: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted)' }} />
+            <input className="ltr" style={{ paddingInlineStart: 44 }} type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
+          </div>
         </label>
-        <label className="field">
-          <span>كلمة المرور</span>
-          <input className="ltr" type="password" value={password} onChange={e => setPassword(e.target.value)} autoComplete="current-password" required />
-        </label>
-        <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : 'دخول'}</button>
-        <p className="small muted">
-          نسيت كلمة المرور؟ <strong>غير مفعّل حاليًا</strong> — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنه يعمل.
+        <PasswordField value={password} onChange={setPassword} autoComplete="current-password" />
+        <button className="btn navy block lg" type="submit" disabled={busy}>
+          {busy ? (
+            <>
+              <span className="spinner spinner-sm" aria-hidden="true" /> جارٍ الدخول…
+            </>
+          ) : 'دخول'}
+        </button>
+        <p className="small muted" style={{ textAlign: 'center', marginBottom: 0 }}>
+          لا تملك حسابًا؟{' '}
+          <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
         </p>
-        <p className="small muted">
-          لا تملك حسابًا؟ <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
+        <p className="small muted" style={{ textAlign: 'center', marginBottom: 0, fontSize: '0.8rem' }}>
+          استعادة كلمة المرور غير مفعّلة حاليًا — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنها تعمل.
         </p>
       </form>
-    </div>
+    </AuthLayout>
   );
 }

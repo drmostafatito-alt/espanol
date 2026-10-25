@@ -1,5 +1,5 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { api, type ApiUser } from './api';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { api, ApiError, onUnauthorized, type ApiUser } from './api';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
 export function useRoute(): [string, (to: string) => void] {
@@ -22,8 +22,14 @@ export function useRoute(): [string, (to: string) => void] {
 interface AuthValue {
   user: ApiUser | null;
   loading: boolean;
+  /** فشل الاتصال بالخادم (شبكة/5xx) — يختلف عن عدم المصادقة */
+  authError: string | null;
+  /** انتهت الجلسة بعد أن كان المستخدم مسجلًا */
+  sessionExpired: boolean;
   setUser: (u: ApiUser | null) => void;
   refresh: () => Promise<void>;
+  retryAuth: () => Promise<void>;
+  clearSessionExpired: () => void;
   signOut: () => Promise<void>;
 }
 const AuthCtx = createContext<AuthValue | null>(null);
@@ -31,29 +37,94 @@ const AuthCtx = createContext<AuthValue | null>(null);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<ApiUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const [authError, setAuthError] = useState<string | null>(null);
+  const [sessionExpired, setSessionExpired] = useState(false);
+
+  /**
+   * جيل الطلبات: كل عملية مصادقة جديدة (إقلاع/دخول/خروج) تزيد الرقم.
+   * أي استجابة قديمة تصل متأخرة (مثل /me الإقلاعي بعد نجاح الدخول على شبكة بطيئة)
+   * تُتجاهل، فلا يمحو طلب 401 عالق هوية المستخدم الذي سجّل دخوله للتو.
+   */
+  const seqRef = useRef(0);
 
   const refresh = useCallback(async () => {
+    const seq = ++seqRef.current;
+    setLoading(true);
     try {
-      const { user } = await api.me();
-      setUser(user);
-    } catch {
-      setUser(null); // 401 = زائر، وليس خطأ يُعرض
+      // صامت تجاه المعالج المركزي: 401 الإقلاع يُعالَج هنا مع حارس الجيل
+      const { user: current } = await api.me({ silentUnauth: true });
+      if (seq !== seqRef.current) return; // عملية أحدث سبقت هذه الاستجابة
+      setUser(current);
+      setAuthError(null);
+      setSessionExpired(false);
+    } catch (err) {
+      if (seq !== seqRef.current) return;
+      if (err instanceof ApiError && err.isUnauthorized()) {
+        // 401 حقيقي: زائر أو جلسة منتهية. لا نعرض هذا كخطأ اتصال.
+        setUser(null);
+        setAuthError(null);
+      } else {
+        // فشل شبكة/خادم: لا نمحو هوية المستخدم إن كانت معروفة، ولا نعامله كتسجيل خروج
+        const message = err instanceof ApiError ? err.message : 'تعذّر الاتصال بالخادم.';
+        setAuthError(message);
+      }
     } finally {
+      if (seq === seqRef.current) setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    void refresh();
+    // انتهاء الجلسة أثناء الاستخدام (401 من طلب ثانوي): معالجة مركزية واحدة.
+    // طلب /me الإقلاعي صامت عمدًا حتى لا يطرد مستخدمًا دخل للتو.
+    const off = onUnauthorized(() => {
+      setUser(prev => {
+        if (prev) setSessionExpired(true);
+        return null;
+      });
+    });
+    return off;
+  }, [refresh]);
+
+  const signOut = useCallback(async () => {
+    seqRef.current++; // تُلغى أي استجابة مصادقة عالقة
+    try {
+      await api.logout();
+    } catch {
+      /* حتى لو فشل الطلب، نمسح الحالة المحلية */
+    } finally {
+      setUser(null);
+      setSessionExpired(false);
+      setAuthError(null);
       setLoading(false);
     }
   }, []);
 
-  useEffect(() => { void refresh(); }, [refresh]);
-
-  const signOut = useCallback(async () => {
-    try {
-      await api.logout();
-    } finally {
-      setUser(null);
+  const applyUser = useCallback((u: ApiUser | null) => {
+    // دخول/تسجيل ناجح: يُبطل كل طلبات /me العالقة فورًا
+    seqRef.current++;
+    setLoading(false);
+    setUser(u);
+    if (u) {
+      setAuthError(null);
+      setSessionExpired(false);
     }
   }, []);
 
-  const value = useMemo(() => ({ user, loading, setUser, refresh, signOut }), [user, loading, refresh, signOut]);
+  const value = useMemo<AuthValue>(
+    () => ({
+      user,
+      loading,
+      authError,
+      sessionExpired,
+      setUser: applyUser,
+      refresh,
+      retryAuth: refresh,
+      clearSessionExpired: () => setSessionExpired(false),
+      signOut,
+    }),
+    [user, loading, authError, sessionExpired, applyUser, refresh, signOut],
+  );
   return <AuthCtx.Provider value={value}>{children}</AuthCtx.Provider>;
 }
 

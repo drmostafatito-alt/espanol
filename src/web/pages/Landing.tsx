@@ -1,75 +1,104 @@
-import { AudioDemo } from '../components/AudioDemo';
+import { Icon, type IconName } from '../components/icons';
+import { SafeImage } from '../components/ui';
+import { LANDING_TOPICS } from '../components/tracks';
+
+/* أربع فوائد فقط — كل واحدة تجيب عن حاجة حقيقية، بأيقونات من نظامنا الموحّد */
+const BENEFITS: { icon: IconName; title: string; text: string }[] = [
+  { icon: 'volume', title: 'الاستماع والنطق', text: 'تدرّب على نطق إسبانيا المعاصر مع زر استماع واضح في كل جملة.' },
+  { icon: 'chat', title: 'محادثات يومية', text: 'جمل حقيقية من مواقف الحياة اليومية بدل حفظ قوائم كلمات معزولة.' },
+  { icon: 'plane', title: 'السفر والعمل', text: 'مطارات، فنادق، مطاعم ومكالمات خدمة عملاء — لغة تستخدمها فعلًا.' },
+  { icon: 'cards', title: 'مراجعة الكلمات', text: 'مراجعة متباعدة ذكية تثبّت المفردات في ذاكرتك طويلة المدى.' },
+];
 
 export function Landing({ navigate }: { navigate: (to: string) => void }) {
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
   return (
-    <div className="container">
-      <section className="hero">
-        <span className="badge primary">منصة تفاعلية متكاملة</span>
-        <h1>
-          تعلّم <span className="es">español</span> من الصفر… بالعربي وبالمواقف الحقيقية
-        </h1>
-        <p className="lead">
-          منصة عربية لتعلّم الإسبانية من التمهيد حتى C1: جمل حقيقية بدل حفظ القوائم، استماع وتحدّث،
-          مراجعة متباعدة، ومسار مهني كامل للكول سنتر.
-        </p>
-        <div className="row" style={{ marginTop: 'var(--s-4)' }}>
-          <button className="btn" onClick={() => navigate('/signup')}>أنشئ حسابك</button>
-          <button className="btn secondary" onClick={() => navigate('/login')}>لديّ حساب</button>
-        </div>
-      </section>
-
-      <div className="grid cols-2" style={{ marginTop: 'var(--s-5)' }}>
-        <section className="card">
-          <h2>ميزات التعلّم على المنصة</h2>
-          <ul className="list-plain small">
-            <li>✅ مسار تعليمي متكامل يبدأ من الصفر (Pre-A1) ويتدرج حتى الطلاقة (C1).</li>
-            <li>✅ تمارين تطبيقية متنوعة: بناء جمل، خيارات سياقية، استماع، ونطق بميكروفون المتصفح.</li>
-            <li>✅ مراجعة ذكية متباعدة (SRS) تثبّت الكلمات في ذاكرتك طويلة المدى.</li>
-            <li>✅ مسارات مهنية وعملية: السفر والسياحة، وخدمة العملاء باللغة الإسبانية.</li>
-            <li>✅ تصحيح فوري على الخادم مع حفظ دقيق للتقدم والنقاط (XP).</li>
-          </ul>
-          <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
-            كل إنجاز ونقطة XP تُحفظ بدقة في حسابك فور اجتيازك التمارين بنجاح.
-          </p>
-        </section>
-
-        <section className="card">
-          <h2>جرّب الصوت</h2>
-          <AudioDemo text="Quiero un café, por favor." audioKey="pending/a1-cafe-quiero-cafe-con-leche" />
+    <div>
+      {/* ---------------- الهيرو: ثلاث إجابات فقط — ماذا؟ كيف يساعدني؟ ماذا أفعل الآن؟ ---------------- */}
+      <div className="container">
+        <section className="hero-simple" aria-label="تعلّم الإسبانية خطوة بخطوة">
+          <div className="hero-simple-text">
+            <h1>اتعلّم الإسبانية <span className="accent">خطوة بخطوة</span></h1>
+            <p className="lead">
+              دروس عملية ومحادثات من الحياة اليومية، من الصفر حتى مستوى متقدم.
+            </p>
+            <div className="hero-actions">
+              <button className="btn lg" onClick={() => navigate('/signup')}>
+                ابدأ التعلّم <Icon name="arrow-left" size={18} />
+              </button>
+              <button className="btn secondary lg" onClick={() => scrollTo('topics')}>استكشف المنهج</button>
+            </div>
+          </div>
+          <div className="hero-simple-media">
+            <SafeImage
+              src="/img/hero-spain.jpg"
+              alt="مشهد دافئ لشارع إسباني في إشبيلية تتخلله الشرفات المزهرة"
+              loading="eager"
+            />
+          </div>
         </section>
       </div>
 
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>لماذا طريقة مختلفة؟</h2>
-        <div className="grid cols-2">
-          <div>
-            <h3>من الجملة لا من القائمة</h3>
-            <p className="small muted">
-              نتعلّم «أريد قهوة من فضلك» في موقف مقهى حقيقي، ثم نُفكّك التركيب. الكلمة تُختبر في سياق جديد
-              لا في نفس الجملة المحفوظة.
-            </p>
+      {/* ---------------- الفوائد ---------------- */}
+      <div className="container">
+        <section className="section" aria-labelledby="benefits-title">
+          <div className="section-head">
+            <h2 id="benefits-title">ماذا ستكسب؟</h2>
           </div>
-          <div>
-            <h3>عربي فصيح + توضيح مصري</h3>
-            <p className="small muted">
-              الشرح فصحى دقيق، ومع كل معنى ملاحظة مصرية قصيرة عند الحاجة — وتختار الأسلوب الذي يناسبك.
-            </p>
+          <div className="benefit-grid">
+            {BENEFITS.map(b => (
+              <article className="benefit-card" key={b.title}>
+                <div className="benefit-icon"><Icon name={b.icon} size={26} /></div>
+                <h3>{b.title}</h3>
+                <p>{b.text}</p>
+              </article>
+            ))}
           </div>
-          <div>
-            <h3>إسبانيا أولًا ثم البدائل</h3>
-            <p className="small muted">
-              الأساس إسبانية إسبانيا المعاصرة، مع تنبيه واضح للفروق المهمة في أمريكا اللاتينية
-              (<span className="es">zumo</span> / <span className="es">jugo</span>) دون إرباك المبتدئ.
-            </p>
+        </section>
+
+        {/* ---------------- المسارات التعليمية ---------------- */}
+        <section className="section" id="topics" aria-labelledby="topics-title">
+          <div className="section-head">
+            <h2 id="topics-title">اختر مسارك التعليمي</h2>
+            <p className="small muted" style={{ margin: 0 }}>مسارات حقيقية من المحتوى المنشور — كل بطاقة تفتح دروسًا فعلية.</p>
           </div>
-          <div>
-            <h3>لا وعود غير صحيحة</h3>
-            <p className="small muted">
-              لا شهادات معتمدة، ولا ضمان وظيفة، ولا «مجاني بلا حدود». الحدود والقيود معلنة في صفحة الشفافية.
-            </p>
+          <div className="topic-grid">
+            {LANDING_TOPICS.map(topic => (
+              <a
+                key={topic.title}
+                className="topic-card"
+                href={`/search?q=${encodeURIComponent(topic.query)}`}
+                onClick={e => {
+                  e.preventDefault();
+                  navigate(`/search?q=${encodeURIComponent(topic.query)}`);
+                }}
+              >
+                <div className="topic-media">
+                  <SafeImage src={topic.image} alt="" />
+                </div>
+                <div className="topic-body">
+                  <h3>{topic.title}</h3>
+                  <p>{topic.description}</p>
+                  <span className="go">استكشف المسار <Icon name="arrow-left" size={15} /></span>
+                </div>
+              </a>
+            ))}
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* ---------------- دعوة ختامية مختصرة ---------------- */}
+        <section className="cta-band" aria-labelledby="cta-title">
+          <div>
+            <h2 id="cta-title">جاهز لتبدأ أول محادثة؟</h2>
+            <p className="small" style={{ margin: 0 }}>أنشئ حسابك المجاني وافتح أول درس خلال دقيقة — وتقدّمك محفوظ من أول إجابة.</p>
+          </div>
+          <button className="btn lg" onClick={() => navigate('/signup')}>
+            ابدأ التعلّم <Icon name="arrow-left" size={18} />
+          </button>
+        </section>
+      </div>
     </div>
   );
 }

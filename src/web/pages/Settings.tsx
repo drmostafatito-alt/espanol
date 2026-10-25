@@ -74,9 +74,13 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
         <button className="btn" type="submit" disabled={busy}>{busy ? 'جارٍ الحفظ…' : 'حفظ الإعدادات'}</button>
       </form>
 
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>الصوت</h2>
-        <AudioDemo text="Buenos días, ¿en qué puedo ayudarle?" audioKey="pending/cc1-opening-omar" variant={variant as 'es-ES' | 'es-419'} />
+      <section style={{ marginTop: 'var(--s-4)' }}>
+        <AudioDemo
+          text="Buenos días, ¿en qué puedo ayudarle?"
+          audioKey="pending/cc1-opening-omar"
+          variant={variant as 'es-ES' | 'es-419'}
+          title="الصوت — جرّب النطق"
+        />
         <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
           لا نرفع تسجيلاتك الصوتية إلى الخادم في هذه المرحلة، ولا نقيّم نطقك آليًا. عندما يصبح متاحًا
           ستُطلب موافقتك صراحةً قبل أي رفع.
