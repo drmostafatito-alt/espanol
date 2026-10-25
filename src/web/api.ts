@@ -39,7 +39,15 @@ export function onUnauthorized(handler: UnauthorizedHandler): () => void {
   };
 }
 
-async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
+interface RequestOpts {
+  /**
+   * طلب /me الإقلاعي يعالج 401 بنفسه داخل AuthProvider مع حارس الجيل.
+   * نمنع ازدواج المعالجة المركزية حتى لا يطرد رد 401 قديم مستخدمًا دخل للتو.
+   */
+  silentUnauth?: boolean;
+}
+
+async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpts = {}): Promise<T> {
   let res: Response;
   try {
     res = await fetch(path, {
@@ -78,15 +86,16 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
       err.message ?? 'حدث خطأ غير متوقع.',
       err,
     );
-    // انتهاء الجلسة أو غيابها على مسار محمي: معالجة مركزية واحدة بدل رسائل متناثرة
-    if (res.status === 401 && unauthorizedHandler) unauthorizedHandler();
+    // انتهاء الجلسة أو غيابها على مسار محمي: معالجة مركزية واحدة بدل رسائل متناثرة.
+    // استثناء: /me الإقلاعي صامت ويعالج رفضه بنفسه (حارس الجيل في AuthProvider).
+    if (res.status === 401 && !opts.silentUnauth && unauthorizedHandler) unauthorizedHandler();
     throw apiError;
   }
   return body as T;
 }
 
 export const api = {
-  me: () => request<{ user: ApiUser }>('/api/auth/me'),
+  me: (opts?: RequestOpts) => request<{ user: ApiUser }>('/api/auth/me', {}, opts),
   signup: (email: string, password: string, displayName?: string) =>
     request<{ user: ApiUser }>('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password, displayName }) }),
   login: (email: string, password: string) =>

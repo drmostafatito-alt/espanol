@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { api, ApiError, onUnauthorized, type ApiUser } from './api';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
@@ -40,14 +40,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [authError, setAuthError] = useState<string | null>(null);
   const [sessionExpired, setSessionExpired] = useState(false);
 
+  /**
+   * جيل الطلبات: كل عملية مصادقة جديدة (إقلاع/دخول/خروج) تزيد الرقم.
+   * أي استجابة قديمة تصل متأخرة (مثل /me الإقلاعي بعد نجاح الدخول على شبكة بطيئة)
+   * تُتجاهل، فلا يمحو طلب 401 عالق هوية المستخدم الذي سجّل دخوله للتو.
+   */
+  const seqRef = useRef(0);
+
   const refresh = useCallback(async () => {
+    const seq = ++seqRef.current;
     setLoading(true);
     try {
-      const { user: current } = await api.me();
+      // صامت تجاه المعالج المركزي: 401 الإقلاع يُعالَج هنا مع حارس الجيل
+      const { user: current } = await api.me({ silentUnauth: true });
+      if (seq !== seqRef.current) return; // عملية أحدث سبقت هذه الاستجابة
       setUser(current);
       setAuthError(null);
       setSessionExpired(false);
     } catch (err) {
+      if (seq !== seqRef.current) return;
       if (err instanceof ApiError && err.isUnauthorized()) {
         // 401 حقيقي: زائر أو جلسة منتهية. لا نعرض هذا كخطأ اتصال.
         setUser(null);
@@ -58,13 +69,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setAuthError(message);
       }
     } finally {
-      setLoading(false);
+      if (seq === seqRef.current) setLoading(false);
     }
   }, []);
 
   useEffect(() => {
     void refresh();
-    // انتهاء الجلسة أثناء الاستخدام (401 من أي طلب): معالجة مركزية واحدة
+    // انتهاء الجلسة أثناء الاستخدام (401 من طلب ثانوي): معالجة مركزية واحدة.
+    // طلب /me الإقلاعي صامت عمدًا حتى لا يطرد مستخدمًا دخل للتو.
     const off = onUnauthorized(() => {
       setUser(prev => {
         if (prev) setSessionExpired(true);
@@ -75,6 +87,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [refresh]);
 
   const signOut = useCallback(async () => {
+    seqRef.current++; // تُلغى أي استجابة مصادقة عالقة
     try {
       await api.logout();
     } catch {
@@ -83,6 +96,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(null);
       setSessionExpired(false);
       setAuthError(null);
+      setLoading(false);
+    }
+  }, []);
+
+  const applyUser = useCallback((u: ApiUser | null) => {
+    // دخول/تسجيل ناجح: يُبطل كل طلبات /me العالقة فورًا
+    seqRef.current++;
+    setLoading(false);
+    setUser(u);
+    if (u) {
+      setAuthError(null);
+      setSessionExpired(false);
     }
   }, []);
 
@@ -92,19 +117,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       authError,
       sessionExpired,
-      setUser: (u: ApiUser | null) => {
-        setUser(u);
-        if (u) {
-          setAuthError(null);
-          setSessionExpired(false);
-        }
-      },
+      setUser: applyUser,
       refresh,
       retryAuth: refresh,
       clearSessionExpired: () => setSessionExpired(false),
       signOut,
     }),
-    [user, loading, authError, sessionExpired, refresh, signOut],
+    [user, loading, authError, sessionExpired, applyUser, refresh, signOut],
   );
   return <AuthCtx.Provider value={value}>{children}</AuthCtx.Provider>;
 }
