@@ -280,13 +280,6 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
       <ProgressBar value={progressPct} label="تقدم الدرس" />
 
-      {session.lesson.provenance && (
-        <p className="banner-warn" role="status" style={{ marginTop: 'var(--s-3)' }}>
-          <Icon name="info" size={16} style={{ display: 'inline-block', verticalAlign: '-3px', marginInlineEnd: 6 }} />
-          {session.lesson.provenance.warningAr}
-        </p>
-      )}
-
       <div className="card" style={{ marginTop: 'var(--s-4)' }}>
         <ExerciseBody
           exercise={current}
@@ -550,7 +543,7 @@ function ExerciseBody({
               </p>
             )}
             <p className="small muted" style={{ margin: '4px 0 0' }}>
-              (تعرّف تجريبي عبر المتصفح — تمرين مشاركة لتدريب لسانك ولا يُقيّم نبرة الصوت آليًا)
+              (تمرين نطق لتدريب لسانك — لا يوجد تقييم آلي للنبرة، فالهدف هو التدرّب)
             </p>
           </div>
         )}

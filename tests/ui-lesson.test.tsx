@@ -99,7 +99,7 @@ async function playLesson(slug: string, session: { exercises: { id: string; mode
 }
 
 describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
-  it('ترسم الدرس وتعرض وسم «عينة غير مراجعة»', async () => {
+  it('ترسم الدرس دون أي وسم «تجريبي/غير مراجعة» (لا إعلانات تطويرية للمتعلم)', async () => {
     const cookie = await login();
     wireFetch(h, cookie);
     render(
@@ -108,7 +108,10 @@ describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
       </AuthProvider>,
     );
     await waitFor(() => expect(screen.getByTestId('lesson-submit')).toBeTruthy());
-    expect(screen.getByText(/عينة تعليمية تجريبية/)).toBeTruthy();
+    // الدرس يُرسم بصورة طبيعية...
+    expect(screen.getByTestId('lesson-submit')).toBeTruthy();
+    // ...ولا يعرض أي رسالة تطويرية (تمت إزالتها من واجهة المتعلم — راجع Phase 3)
+    expect(screen.queryByText(/عينة تعليمية تجريبية|عينة غير مراجعة|تجريبي/)).toBeNull();
     // لا مفاتيح إجابة في أي مكان في الصفحة
     expect(document.body.innerHTML).not.toMatch(/correctOptionIds|answerKey/);
   });

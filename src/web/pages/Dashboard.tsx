@@ -165,12 +165,6 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         </div>
       )}
 
-      {progress?.contentProvenance && (
-        <p className="banner-warn" role="status" style={{ marginBottom: 'var(--s-4)' }}>
-          {progress.contentProvenance.warningAr}
-        </p>
-      )}
-
       {!progress && !progressError && <LoadingState text="جارٍ تحميل لوحتك من الخادم…" />}
 
       {progress && (
