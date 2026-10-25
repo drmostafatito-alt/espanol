@@ -7,7 +7,7 @@ export type IconName =
   | 'arrow-left' | 'chevron-down' | 'globe' | 'menu' | 'close' | 'book' | 'headset' | 'chat'
   | 'mic' | 'volume' | 'clock' | 'refresh' | 'mail' | 'key' | 'coffee' | 'plane' | 'utensils'
   | 'briefcase' | 'buildings' | 'sparkles' | 'graduation' | 'sort' | 'warning' | 'info' | 'x-circle'
-  | 'image-off' | 'heart';
+  | 'image-off' | 'heart' | 'eye' | 'eye-off';
 
 const PATHS: Record<IconName, ReactElement> = {
   home: <path d="M3 10.5 12 3l9 7.5M5 9.5V21h14V9.5M9.5 21v-6h5v6" />,
@@ -55,6 +55,8 @@ const PATHS: Record<IconName, ReactElement> = {
   'x-circle': <><circle cx="12" cy="12" r="9" /><path d="m9 9 6 6m0-6-6 6" /></>,
   'image-off': <><path d="m3 3 18 18" /><rect x="4" y="6" width="16" height="13" rx="2" /><circle cx="9" cy="11" r="1.5" /><path d="m7 18 4.5-4.5 2.5 2.5 2-2L20 17" /></>,
   heart: <path d="M12 20.5C7 17 3.5 13.8 3.5 10A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8.5 3c0 3.8-3.5 7-8.5 10.5Z" />,
+  eye: <><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" /><circle cx="12" cy="12" r="3" /></>,
+  'eye-off': <><path d="m3 3 18 18" /><path d="M10.6 5.9A9.8 9.8 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3.2 3.9M6.2 7.7A16.4 16.4 0 0 0 2.5 12S6 18.5 12 18.5c1.3 0 2.5-.3 3.6-.8" /><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" /></>,
 };
 
 interface IconProps extends SVGProps<SVGSVGElement> {

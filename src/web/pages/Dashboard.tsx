@@ -92,8 +92,6 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const totalLessons = progress?.totals.lessons_total ?? 0;
   const totalXp = progress?.stats.xp_total ?? 0;
   const streak = progress?.stats.streak_current ?? 0;
-  // رصيد مشتق من إنجاز حقيقي فقط (لا يوجد نظام جواهر مستقل على الخادم بعد)
-  const gemsCount = completedLessons * 5 + Math.floor(totalXp / 25);
   const overallPct = totalLessons > 0 ? Math.round((completedLessonSafe(completedLessons) / totalLessons) * 100) : 0;
 
   const currentLevel = useMemo(() => {
@@ -177,15 +175,11 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {progress && (
         <>
-          {/* ---------------- الإحصائيات الحقيقية ---------------- */}
+          {/* ---------------- الإحصائيات الحقيقية — ثلاث فقط، الأهم للمتعلم ---------------- */}
           <div className="stat-chip-row" style={{ marginBottom: 'var(--s-4)' }}>
             <div className="stat-chip">
               <span className="stat-icon flame"><Icon name="flame" size={22} /></span>
               <span><b className="num">{streak}</b><span>يوم متتالي</span></span>
-            </div>
-            <div className="stat-chip" data-testid="stat-gems" title="رقم مشتق من إنجازك الفعلي: الدروس المكتملة ونقاط XP">
-              <span className="stat-icon gem"><Icon name="gem" size={22} /></span>
-              <span><b className="num">{gemsCount}</b><span>جواهر</span></span>
             </div>
             <div className="stat-chip" data-testid="stat-xp">
               <span className="stat-icon xp"><Icon name="star" size={22} /></span>
@@ -252,105 +246,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
               </button>
             </section>
 
-            {/* ---------------- دعوة تحديد المستوى ---------------- */}
-            {completedLessons < 5 && (
-              <section className="card full" data-testid="placement-cta" style={{ background: 'var(--color-info-soft)', borderColor: '#cfe4fb' }}>
-                <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)' }}>
-                  <div className="row" style={{ gap: 'var(--s-3)' }}>
-                    <span className="stat-icon" style={{ background: '#fff', color: 'var(--color-info)' }}><Icon name="target" size={24} /></span>
-                    <div>
-                      <h3 style={{ margin: '0 0 4px' }}>هل لديك معرفة سابقة بالإسبانية؟</h3>
-                      <p className="small muted" style={{ margin: 0 }}>
-                        اختبار سريع من 10 أسئلة يفتح لك المستوى المناسب ويمنحك نقاط XP حقيقية عند اجتيازه.
-                      </p>
-                    </div>
-                  </div>
-                  <button className="btn navy sm" onClick={() => navigate('/placement')}>ابدأ تحديد المستوى</button>
-                </div>
-              </section>
-            )}
-
-            {/* ---------------- المراجعة المتباعدة ---------------- */}
-            <section className="card full" data-testid="review-cta">
-              <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)' }}>
-                <div className="row" style={{ gap: 'var(--s-3)' }}>
-                  <span className="stat-icon" style={{ background: 'var(--color-primary-soft)', color: 'var(--color-primary-strong)' }}>
-                    <Icon name="refresh" size={24} />
-                  </span>
-                  <div>
-                    <h2 style={{ margin: '0 0 4px', fontSize: '1.15rem' }}>المراجعة المتباعدة الذكية</h2>
-                    <p className="small muted" style={{ margin: 0 }}>
-                      {review === null
-                        ? 'جارٍ حساب ما هو مستحق…'
-                        : review.session.totalCards === 0
-                          ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
-                          : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <button className="btn success" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
-                  <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
-                </div>
-              </div>
-            </section>
-
-            {/* ---------------- مسار التعلم ---------------- */}
-            <section className="card full" id="learning-path">
-              <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-                <h2 style={{ margin: 0 }}>مسار التعلم</h2>
-                <span className="small muted">العقد الخضراء مكتملة، والزرقاء هي درسك الحالي</span>
-              </div>
-              <div className="tabs-row" role="tablist" aria-label="تصفية حسب المستوى">
-                {TABS.map(tab => (
-                  <button
-                    key={tab.id}
-                    role="tab"
-                    aria-selected={selectedTab === tab.id}
-                    className={`level-pill${selectedTab === tab.id ? ' active' : ''}`}
-                    onClick={() => setSelectedTab(tab.id)}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-              {filteredLessons.length === 0 ? (
-                <p className="muted small">لا توجد دروس في هذا القسم حاليًا.</p>
-              ) : (
-                <LearningPath
-                  lessons={filteredLessons}
-                  nextSlug={nextLesson?.slug}
-                  onOpen={slug => navigate(`/learn/${slug}`)}
-                />
-              )}
-
-              {/* القائمة التفصيلية بالوحدات */}
-              <div style={{ marginTop: 'var(--s-5)' }}>
-                {unitGroups.map(group => {
-                  const pct = group.lessons.length ? Math.round((group.completedCount / group.lessons.length) * 100) : 0;
-                  return (
-                    <div key={group.unitId} style={{ marginBottom: 'var(--s-4)' }}>
-                      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-                        <div className="row" style={{ gap: 8 }}>
-                          <h3 style={{ margin: 0, fontSize: '1.05rem' }}>{group.unitTitle}</h3>
-                          <LevelBadge level={group.levelCode} />
-                          {group.programTitle && <span className="badge">{group.programTitle}</span>}
-                        </div>
-                        <span className="small muted num">{group.completedCount}/{group.lessons.length} · {pct}%</span>
-                      </div>
-                      <ProgressBar value={pct} height={6} label={`تقدم وحدة ${group.unitTitle}`} />
-                      <div style={{ marginTop: 'var(--s-3)' }}>
-                        {group.lessons.map(l => (
-                          <LessonRow key={l.slug} lesson={l} onOpen={slug => navigate(`/learn/${slug}`)} />
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-
-            {/* ---------------- المسارات المتخصصة ---------------- */}
+            {/* ---------------- المسارات المتخصصة (مقدمة على التفاصيل) ---------------- */}
             <section className="card full" id="specialized-tracks">
               <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
                 <h2 style={{ margin: 0 }}>المسارات المتخصصة</h2>
@@ -392,6 +288,106 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                 })}
               </div>
             </section>
+
+            {/* ---------------- مسار التعلم ---------------- */}
+            <section className="card full" id="learning-path">
+              <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+                <h2 style={{ margin: 0 }}>مسار التعلم</h2>
+                <span className="small muted">العقد الخضراء مكتملة، والزرقاء هي درسك الحالي</span>
+              </div>
+              <div className="tabs-row" role="tablist" aria-label="تصفية حسب المستوى">
+                {TABS.map(tab => (
+                  <button
+                    key={tab.id}
+                    role="tab"
+                    aria-selected={selectedTab === tab.id}
+                    className={`level-pill${selectedTab === tab.id ? ' active' : ''}`}
+                    onClick={() => setSelectedTab(tab.id)}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+              {filteredLessons.length === 0 ? (
+                <p className="muted small">لا توجد دروس في هذا القسم حاليًا.</p>
+              ) : (
+                <LearningPath
+                  lessons={filteredLessons}
+                  nextSlug={nextLesson?.slug}
+                  onOpen={slug => navigate(`/learn/${slug}`)}
+                />
+              )}
+
+              {/* القائمة التفصيلية بالوحدات — قابلة للطي على الموبايل حتى لا تطول الصفحة */}
+              <details className="units-details">
+                <summary>عرض وحدات المنهج بالتفصيل</summary>
+                <div style={{ marginTop: 'var(--s-4)' }}>
+                {unitGroups.map(group => {
+                  const pct = group.lessons.length ? Math.round((group.completedCount / group.lessons.length) * 100) : 0;
+                  return (
+                    <div key={group.unitId} style={{ marginBottom: 'var(--s-4)' }}>
+                      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
+                        <div className="row" style={{ gap: 8 }}>
+                          <h3 style={{ margin: 0, fontSize: '1.05rem' }}>{group.unitTitle}</h3>
+                          <LevelBadge level={group.levelCode} />
+                          {group.programTitle && <span className="badge">{group.programTitle}</span>}
+                        </div>
+                        <span className="small muted num">{group.completedCount}/{group.lessons.length} · {pct}%</span>
+                      </div>
+                      <ProgressBar value={pct} height={6} label={`تقدم وحدة ${group.unitTitle}`} />
+                      <div style={{ marginTop: 'var(--s-3)' }}>
+                        {group.lessons.map(l => (
+                          <LessonRow key={l.slug} lesson={l} onOpen={slug => navigate(`/learn/${slug}`)} />
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+                </div>
+              </details>
+            </section>
+
+            {/* ---------------- أقسام ثانوية: المراجعة والتحديد ---------------- */}
+            <section className="card full secondary-section" data-testid="review-cta">
+              <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)', flexWrap: 'wrap' }}>
+                <div className="row" style={{ gap: 'var(--s-3)' }}>
+                  <span className="stat-icon" style={{ background: 'var(--color-primary-soft)', color: 'var(--color-primary-strong)' }}>
+                    <Icon name="refresh" size={22} />
+                  </span>
+                  <div>
+                    <h2 style={{ margin: '0 0 4px', fontSize: '1.08rem' }}>المراجعة المتباعدة الذكية</h2>
+                    <p className="small muted" style={{ margin: 0 }}>
+                      {review === null
+                        ? 'جارٍ حساب ما هو مستحق…'
+                        : review.session.totalCards === 0
+                          ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
+                          : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
+                    </p>
+                  </div>
+                </div>
+                <div className="row">
+                  <button className="btn success sm" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
+                  <button className="btn secondary sm" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
+                </div>
+              </div>
+            </section>
+
+            {completedLessons < 5 && (
+              <section className="card full secondary-section" data-testid="placement-cta">
+                <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-3)', flexWrap: 'wrap' }}>
+                  <div className="row" style={{ gap: 'var(--s-3)' }}>
+                    <span className="stat-icon" style={{ background: 'var(--color-info-soft)', color: 'var(--color-info)' }}><Icon name="target" size={22} /></span>
+                    <div>
+                      <h3 style={{ margin: '0 0 4px', fontSize: '1.02rem' }}>هل لديك معرفة سابقة بالإسبانية؟</h3>
+                      <p className="small muted" style={{ margin: 0 }}>
+                        اختبار سريع من 10 أسئلة يفتح لك المستوى المناسب ويمنحك نقاط XP حقيقية عند اجتيازه.
+                      </p>
+                    </div>
+                  </div>
+                  <button className="btn secondary sm" onClick={() => navigate('/placement')}>ابدأ تحديد المستوى</button>
+                </div>
+              </section>
+            )}
           </div>
         </>
       )}

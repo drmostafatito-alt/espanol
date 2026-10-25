@@ -4,6 +4,7 @@ import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { searchEngine, type SearchResponse } from '../../shared/search-engine';
 import { Icon } from '../components/icons';
+import { EmptyState } from '../components/ui';
 
 export function Search({
   navigate,
@@ -135,6 +136,13 @@ export function Search({
       )}
 
       {busy && <p className="muted small">جارٍ البحث…</p>}
+      {!busy && response && response.total === 0 && !response.suggestion && (
+        <EmptyState
+          icon="search"
+          title="لا توجد نتائج مطابقة"
+          description="جرّب كلمة أقصر، أو تحقق من الإملاء الإسباني، أو ابحث بالمعنى بالعربية."
+        />
+      )}
       {usingLocal && !busy && (
         <p className="banner-warn small" role="status" style={{ marginBottom: 'var(--s-3)' }}>
           تعذّر الوصول إلى الخادم — النتائج المعروضة من محرك البحث المحلي المضمّن في التطبيق، وقد لا تشمل أحدث المحتوى.

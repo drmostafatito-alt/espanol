@@ -77,8 +77,8 @@ function Shell() {
     page = <NotFound navigate={navigate} />;
   }
 
-  // شاشات التركيز: الدرس والمراجعة وتحديد المستوى — بلا هيدر جانبي أو شريط سفلي
-  const isFocus = !!lessonSlug || path === '/review' || path === '/placement';
+  // شاشات التركيز: الدرس والمراجعة وتحديد المستوى والمصادقة — بلا هيدر جانبي أو شريط سفلي
+  const isFocus = !!lessonSlug || path === '/review' || path === '/placement' || path === '/login' || path === '/signup';
   // مناطق لوحة المتعلم (الهيكل الجانبي)
   const isAppArea =
     !!user && !isFocus &&

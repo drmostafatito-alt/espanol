@@ -107,18 +107,22 @@ beforeEach(() => {
 afterEach(() => cleanup());
 
 describe('الصفحة الرئيسية (الهوية الجديدة)', () => {
-  it('تعرض الهيرو الواقعي وبطاقات الموضوعات وأزرارًا حقيقية', () => {
+  it('تعرض هيرو مبسّطًا وبطاقات المسارات وأزرارًا حقيقية', () => {
     const navigate = vi.fn();
     render(<Landing navigate={navigate} />);
     expect(screen.getByText(/تعلّم الإسبانية/)).toBeTruthy();
-    expect(screen.getByText(/بطريقة/)).toBeTruthy();
-    expect(screen.getAllByRole('button', { name: /ابدأ رحلتك الآن/ }).length).toBe(2);
+    expect(screen.getByText(/خطوة بخطوة/)).toBeTruthy();
+    // زران للبدء: واحد في الهيرو وواحد في الدعوة الختامية
+    expect(screen.getAllByRole('button', { name: /ابدأ التعلّم/ }).length).toBe(2);
     expect(screen.getByRole('button', { name: 'استكشف المنهج' })).toBeTruthy();
+    // أربع فوائد مختصرة فقط
+    expect(screen.getByText('الاستماع والنطق')).toBeTruthy();
+    expect(screen.getByText('مراجعة الكلمات')).toBeTruthy();
     for (const t of ['السفر', 'المطاعم والطعام', 'العمل والكول سنتر', 'الحياة اليومية']) {
       expect(screen.getByText(t)).toBeTruthy();
     }
-    // الصورة الواقعية للهيرو موجودة بوصف بديل وصفي
-    const heroImg = document.querySelector('.hero-media img') as HTMLImageElement;
+    // صورة واحدة في الهيرو بوصف بديل وصفي
+    const heroImg = document.querySelector('.hero-simple-media img') as HTMLImageElement;
     expect(heroImg).toBeTruthy();
     expect(heroImg.alt).toContain('إشبيلية');
     expect(heroImg.src).toContain('/img/hero-spain.jpg');
