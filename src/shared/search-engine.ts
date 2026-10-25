@@ -273,7 +273,6 @@ export class SearchEngine {
     }
   }
 
-  /** تنفيذ البحث فائق السرعة */
   /**
    * بحث مباشر عن مدخل مفردات بالكلمة الإسبانية (تطابق تام بعد التطبيع).
    * يُستخدم لملء ملخص الدرس بالمفردات الأساسية مع ترجمتها العربية، دون
@@ -289,6 +288,7 @@ export class SearchEngine {
     return item ?? null;
   }
 
+  /** تنفيذ البحث فائق السرعة */
   search(rawQuery: string, options: SearchOptions = {}): SearchResponse {
     const start = Date.now();
     const query = (rawQuery || '').trim();

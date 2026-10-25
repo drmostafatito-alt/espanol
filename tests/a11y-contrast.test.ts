@@ -38,6 +38,21 @@ function ratio(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
+/** قواعد CSS التي تستخدم لون الزر الفاتح كنص مباشر (بدون صيغة النص الأغمق). */
+function bannedTextColorRules(css: string): string[] {
+  // نكفي النصوص التي تأتي مباشرة بعد ; أو { أو مسافة، حتى لا نخطئ في
+  // حقول مثل border-top-color أو accent-color التي ليست لون نص.
+  const re = /(^|[;{ ])color: var\(--color-(primary|success|info|warning)\);/g;
+  const hits: string[] = [];
+  for (const rule of css.split('}')) {
+    // فحص كل قاعدة بصورة مستقلة: reset لـ lastIndex منعًا لتقدم العلم g
+    // بين الدورات وفواته لنمط محظور في قاعدة تالية أقصر.
+    re.lastIndex = 0;
+    if (re.test(rule)) hits.push(rule.trim().replace(/\s+/g, ' ').slice(0, 90));
+  }
+  return hits;
+}
+
 describe('تباين الألوان (WCAG AA ≥ 4.5:1 للنص)', () => {
   it('الأزواج الأساسية للنص على الخلفيات الفاتحة تحقق 4.5:1', () => {
     const t = tokens();
@@ -69,13 +84,12 @@ describe('تباين الألوان (WCAG AA ≥ 4.5:1 للنص)', () => {
   });
 
   it('لا يُستخدم اللون الفاتح للزر كنص مباشر (يجب استخدام صيغة النص الأغمق)', () => {
-    // نكفي النصوص التي تأتي مباشرة بعد ; أو { أو مسافة، حتى لا نخطئ في
-    // حقول مثل border-top-color أو accent-color التي ليست لون نص.
-    const re = /(^|[;{ ])color: var\(--color-(primary|success|info|warning)\);/g;
-    const hits: string[] = [];
-    for (const rule of CSS.split('}')) {
-      if (re.test(rule)) hits.push(rule.trim().replace(/\s+/g, ' ').slice(0, 90));
-    }
-    expect(hits).toEqual([]);
+    expect(bannedTextColorRules(CSS)).toEqual([]);
+  });
+
+  it('اكتشاف النمط المحظور في قاعدتين متتاليتين (regression: lastIndex)', () => {
+    const css = '.a { color: var(--color-primary); }\n.b { color: var(--color-info); }';
+    const hits = bannedTextColorRules(css);
+    expect(hits).toHaveLength(2);
   });
 });
