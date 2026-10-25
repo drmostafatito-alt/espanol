@@ -77,6 +77,7 @@ vi.mock('../src/web/api', () => {
       }
     },
     onUnauthorized: vi.fn(() => () => {}),
+    invalidateInFlightAuth: vi.fn(),
     api: {
       me: vi.fn(async () => ({ user })),
       logout: vi.fn(async () => ({ ok: true })),
@@ -114,7 +115,9 @@ describe('الصفحة الرئيسية (الهوية الجديدة)', () => {
     expect(screen.getByText(/خطوة بخطوة/)).toBeTruthy();
     // زران للبدء: واحد في الهيرو وواحد في الدعوة الختامية
     expect(screen.getAllByRole('button', { name: /ابدأ التعلّم/ }).length).toBe(2);
-    expect(screen.getByRole('button', { name: 'استكشف المنهج' })).toBeTruthy();
+    // زر ثانوي واضح لتسجيل الدخول بدل خيار يشتّت الزائر
+    expect(screen.getByRole('button', { name: 'تسجيل الدخول' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: /استكشف المسارات/ })).toBeTruthy();
     // أربع فوائد مختصرة فقط
     expect(screen.getByText('الاستماع والنطق')).toBeTruthy();
     expect(screen.getByText('مراجعة الكلمات')).toBeTruthy();

@@ -73,6 +73,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const [pendingCount, setPendingCount] = useState(0);
   const shownAt = useRef<number>(Date.now());
   const cardRef = useRef<HTMLDivElement | null>(null);
+  const savingRef = useRef(false);
 
   const cards = useMemo(() => payload?.cards ?? [], [payload]);
   const card: ReviewCard | undefined = cards[index];
@@ -146,7 +147,9 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   const rate = useCallback(
     async (rating: ReviewRating) => {
-      if (!card || phase === 'saving') return;
+      // setPhase غير متزامن؛ بلا حارس متزامن تمرّ نقرتان سريعتان فتجدول البطاقة مرتين.
+      if (!card || phase === 'saving' || savingRef.current) return;
+      savingRef.current = true;
       const item: PendingReview = {
         clientEventId: newEventId(),
         cardId: card.id,
@@ -182,6 +185,8 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         setPendingCount(queued.length);
         setOffline(true);
         setLastNext('لم يُرسل بعد — سيُرسل عند عودة الاتصال');
+      } finally {
+        savingRef.current = false;
       }
       if (index + 1 < cards.length) {
         setIndex(i => i + 1);

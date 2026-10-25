@@ -262,6 +262,42 @@ IRREGULAR: dict[str, dict[str, list[str]]] = {
                "pretérito": ["elegí", "elegiste", "eligió", "elegimos", "elegisteis", "eligieron"],
                "subjuntivo presente": ["elija", "elijas", "elija", "elijamos", "elijáis", "elijan"],
                "gerundio": ["eligiendo"], "participio": ["elegido"]},
+    # ---- أفعال كانت تولّد بصيغ غير موجودة (اكتُشفت بأداة audit-verb-forms) ----
+    "atender": {"presente": ["atiendo", "atiendes", "atiende", "atendemos", "atendéis", "atienden"],
+                "subjuntivo presente": ["atienda", "atiendas", "atienda", "atendamos", "atendáis", "atiendan"]},
+    "preferir": {"presente": ["prefiero", "prefieres", "prefiere", "preferimos", "preferís", "prefieren"],
+                 "pretérito": ["preferí", "preferiste", "prefirió", "preferimos", "preferisteis", "prefirieron"],
+                 "subjuntivo presente": ["prefiera", "prefieras", "prefiera", "prefiramos", "prefiráis", "prefieran"],
+                 "gerundio": ["prefiriendo"]},
+    "repetir": {"presente": ["repito", "repites", "repite", "repetimos", "repetís", "repiten"],
+                "pretérito": ["repetí", "repetiste", "repitió", "repetimos", "repetisteis", "repitieron"],
+                "subjuntivo presente": ["repita", "repitas", "repita", "repitamos", "repitáis", "repitan"],
+                "gerundio": ["repitiendo"]},
+    "mentir": {"presente": ["miento", "mientes", "miente", "mentimos", "mentís", "mienten"],
+               "pretérito": ["mentí", "mentiste", "mintió", "mentimos", "mentisteis", "mintieron"],
+               "subjuntivo presente": ["mienta", "mientas", "mienta", "mintamos", "mintáis", "mientan"],
+               "gerundio": ["mintiendo"]},
+    "transferir": {"presente": ["transfiero", "transfieres", "transfiere", "transferimos", "transferís", "transfieren"],
+                   "pretérito": ["transferí", "transferiste", "transfirió", "transferimos", "transferisteis", "transfirieron"],
+                   "subjuntivo presente": ["transfiera", "transfieras", "transfiera", "transfiramos", "transfiráis", "transfieran"],
+                   "gerundio": ["transfiriendo"]},
+    "huir": {"presente": ["huyo", "huyes", "huye", "huimos", "huís", "huyen"],
+             "pretérito": ["huí", "huiste", "huyó", "huimos", "huisteis", "huyeron"],
+             "subjuntivo presente": ["huya", "huyas", "huya", "huyamos", "huyáis", "huyan"],
+             "gerundio": ["huyendo"]},
+    "andar": {"pretérito": ["anduve", "anduviste", "anduvo", "anduvimos", "anduvisteis", "anduvieron"]},
+    "deshacer": {"presente": ["deshago", "deshaces", "deshace", "deshacemos", "deshacéis", "deshacen"],
+                 "pretérito": ["deshice", "deshiciste", "deshizo", "deshicimos", "deshicisteis", "deshicieron"],
+                 "subjuntivo presente": ["deshaga", "deshagas", "deshaga", "deshagamos", "deshagáis", "deshagan"],
+                 "participio": ["deshecho"]},
+    "predecir": {"presente": ["predigo", "predices", "predice", "predecimos", "predecís", "predicen"],
+                 "pretérito": ["predije", "predijiste", "predijo", "predijimos", "predijisteis", "predijeron"],
+                 "subjuntivo presente": ["prediga", "predigas", "prediga", "predigamos", "predigáis", "predigan"],
+                 "gerundio": ["prediciendo"], "participio": ["predicho"]},
+    "incluir": {"presente": ["incluyo", "incluyes", "incluye", "incluimos", "incluís", "incluyen"],
+                "pretérito": ["incluí", "incluiste", "incluyó", "incluimos", "incluisteis", "incluyeron"],
+                "subjuntivo presente": ["incluya", "incluyas", "incluya", "incluyamos", "incluyáis", "incluyan"],
+                "gerundio": ["incluyendo"]},
     "vestir": {"presente": ["visto", "vistes", "viste", "vestimos", "vestís", "visten"],
                "pretérito": ["vestí", "vestiste", "vistió", "vestimos", "vestisteis", "vistieron"],
                "subjuntivo presente": ["vista", "vistas", "vista", "vistamos", "vistáis", "vistan"],
@@ -295,9 +331,14 @@ del IRREGULAR["empezar_like"]
 
 # أنماط مفيدة للإنتاج الموسّع
 # zc: yo → zc (conocer-type) — كل صيغ المضارع التام تستخدم جذع zc
-ZC_LEMMAS = {"conocer", "parecer", "traducir", "conducir", "producir", "aparecer",
-             "crecer", "ofrecer", "padecer", "merecer", "obedecer", "pertenecer",
-             "nacer", "crecer", "ejercer", "vencer", "convencer"}
+ZC_LEMMAS = {"conocer", "reconocer", "parecer", "traducir", "conducir", "producir", "aparecer",
+             "crecer", "ofrecer", "agradecer", "padecer", "merecer", "obedecer", "pertenecer",
+             "nacer", "crecer", "ejercer", "vencer", "convencer",
+             # اكتُشفت بصيغ «zo» خاطئة في حزم المفردات
+             "compadecer", "comparecer", "desaparecer", "permanecer", "aborrecer", "carecer",
+             "adormecer", "anochecer", "abastecer", "desobedecer", "enmudecer", "enriquecer",
+             "envejecer", "esclarecer", "establecer", "oscurecer",
+             "reducir", "deducir", "inducir", "introducir", "seducir", "lucir", "traslucir"}
 # g: yo ينتهي بـgo (tener-type) — المضارع التام كله بجذع g
 YO_G = {"tener", "venir", "poner", "salir", "valer", "caber", "satisfacer"}
 
@@ -374,6 +415,10 @@ def conjugate(lemma: str, paradigm: str = "") -> list[dict]:
     def ortho(s: str, ending: str) -> str:
         return _apply_ortho(s, ending, cls, allow_gj=allow_gj)
 
+    # -uir (ما عدا -guir/-quir): تُدخل y قبل o/e/a — incluir → incluyo، huir → huyo.
+    # بلا هذه القاعدة يُنتَج «incluo» وهي صيغة غير موجودة في الإسبانية.
+    is_uir = cls == "ir" and lemma.endswith("uir") and not lemma.endswith(("guir", "quir"))
+
     for tense in ("presente", "pretérito", "imperfecto", "futuro", "condicional"):
         mood = "indicativo"
         if tense in table:
@@ -393,6 +438,9 @@ def conjugate(lemma: str, paradigm: str = "") -> list[dict]:
                     irr = True
                 elif lemma in YO_G and i == 0:
                     s = stem + "g"
+                    irr = True
+                if is_uir and i in (0, 1, 2, 5):
+                    s = stem + "y"
                     irr = True
                 form = ortho(s, ending)
                 forms.append({"kind": "conjugation", "formEs": form, "tense": tense, "mood": mood,
@@ -418,6 +466,13 @@ def conjugate(lemma: str, paradigm: str = "") -> list[dict]:
             continue
         # imperfecto / pretérito افتراضيًا منتظمان هنا (الشاذ جاهز في IRREGULAR)
         seq = [ortho(stem, ending) for ending in ENDINGS[tense][cls]]
+        if tense == "pretérito" and lemma.endswith("ducir"):
+            # reducir/conducir/producir/traducir ⇒ reduje, redujo (لا reducí/redució)
+            duc_stem = stem[:-1] if stem.endswith("c") else stem  # produc → produ
+            seq = [duc_stem + e for e in ("je", "jiste", "jo", "jimos", "jisteis", "jeron")]
+        if tense == "pretérito" and is_uir:
+            seq[2] = stem + "yó"
+            seq[5] = stem + "yeron"
         if tense == "pretérito" and change and cls == "ir":
             # قاعدة الأفعال -ir المتغيرة الجذر: 3s/3p بالمقطع المحمول المتغيّر (mintió، durmió، pidió)
             to_i = "i" if to_ch in ("ie", "i") else ("u" if to_ch == "ue" else to_ch)
@@ -435,7 +490,10 @@ def conjugate(lemma: str, paradigm: str = "") -> list[dict]:
         for f in forms:
             if f["tense"] == "presente" and f["person"] == "1s":
                 yo = f["formEs"]
-        if lemma in ZC_LEMMAS:
+        if is_uir:
+            base_all = stem + "y"
+            use_all = True
+        elif lemma in ZC_LEMMAS:
             base_all = (stem[:-1] + "zc") if stem.endswith("c") else (stem + "zc")
             use_all = True
         elif lemma in YO_G:
@@ -466,6 +524,8 @@ def conjugate(lemma: str, paradigm: str = "") -> list[dict]:
     else:
         if cls == "ar":
             g = stem + "ando"
+        elif is_uir:
+            g = stem + "yendo"
         else:
             if stem and stem[-1] in "aeiouáéíóúü":
                 g = stem + "yendo"

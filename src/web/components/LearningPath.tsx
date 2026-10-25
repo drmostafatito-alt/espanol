@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Icon } from './icons';
 import type { ProgressLessonItem } from '../api';
 
@@ -15,6 +16,15 @@ export function LearningPath({
   nextSlug?: string | null;
   onOpen: (slug: string) => void;
 }) {
+  useEffect(() => {
+    if (nextSlug) {
+      const activeEl = document.querySelector('.path-node.current');
+      if (typeof activeEl?.scrollIntoView === 'function') {
+        activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    }
+  }, [nextSlug]);
+
   if (lessons.length === 0) {
     return (
       <p className="muted small" style={{ padding: 'var(--s-3) 0' }}>
@@ -23,8 +33,7 @@ export function LearningPath({
     );
   }
 
-  // نعرض أول 12 عقدة كحد أقصى حتى يبقى المسار مقروءًا، مع إمكانية التمرير أفقيًا
-  const visible = lessons.slice(0, 12);
+  const visible = lessons;
 
   return (
     <div className="path-scroll">

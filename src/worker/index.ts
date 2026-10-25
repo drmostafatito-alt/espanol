@@ -5,8 +5,8 @@
    ========================================================================== */
 import type { Env, SessionUser } from './types';
 import {
-  HttpError, apiError, assertJsonContentType, cookieName, corsHeaders, isOriginAllowed,
-  json, newRequestId, readCookie, securityHeadersFor,
+  HttpError, apiError, assertJsonContentType, corsHeaders, isOriginAllowed,
+  json, newRequestId, readSessionToken, securityHeadersFor,
 } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
 import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
@@ -98,7 +98,7 @@ const routes: Route[] = [
 ];
 
 async function resolveUser(req: Request, env: Env): Promise<SessionUser | null> {
-  const token = readCookie(req, cookieName(env));
+  const token = readSessionToken(req);
   if (!token) return null;
   return await findSessionUser(env, token);
 }

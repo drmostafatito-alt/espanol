@@ -216,7 +216,8 @@
             "id": "tr_u2_8_b",
             "text": "La llave no funciona. Dame otra ya.",
             "isCorrect": false,
-            "distractorRationaleAr": "نبرة آمرة بلا لباقة («ya»)."
+            "distractorRationaleAr": "نبرة آمرة بلا لباقة («ya»).",
+            "textAr": "المفتاح لا يعمل. أعطني آخر حالًا."
           },
           {
             "id": "tr_u2_8_c",
@@ -246,7 +247,8 @@
         "difficulty": 2,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "أريد المفتاح مرة أخرى، لأنه لا يعمل."
       }
     ],
     "review": {

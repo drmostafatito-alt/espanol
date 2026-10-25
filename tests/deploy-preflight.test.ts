@@ -22,6 +22,16 @@ function run(args: string[]): { code: number; json: any; out: string } {
   }
 }
 
+/** بيئة بلا مستودع Git (نسخة مُصدَّرة) لا تستطيع إثبات الحياد عبر git status، فنتخطى هذا الاختبار وحده بدل ادعاء النجاح */
+function hasGitRepo(): boolean {
+  try {
+    execFileSync('git', ['rev-parse', '--is-inside-work-tree'], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 const jsonOf = (args: string[]) => run([...args, '--json']).json;
 const safeJson = (s: string) => {
   try {
@@ -92,7 +102,7 @@ describe('بوابة الجاهزية للنشر', () => {
     expect(j.errors.map((e: any) => e.code)).toContain('SECRET_IN_CONFIG');
   });
 
-  it('لا تعدّل أي ملف ولا تنشر شيئًا (فحص للقراءة فقط)', () => {
+  it.skipIf(!hasGitRepo())('لا تعدّل أي ملف ولا تنشر شيئًا (فحص للقراءة فقط)', () => {
     const before = execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' });
     run(['--json']);
     run(['--file', SAMPLE, '--json']);

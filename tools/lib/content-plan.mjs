@@ -179,10 +179,14 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
               stemEs: ex.stemEs ?? null,
               stemAr: ex.stemAr ?? null,
               audioKey: ex.audioKey ?? null,
+              speechEs: ex.speechEs ?? null,
             })}, ${j(answerKey)}, ${q(ex.explanationAr)}, ${j(errorFeedback)},
             ${n(ex.difficulty ?? 2)}, ${j(ex.skills ?? [])}, ${j({ audioKey: ex.audioKey ?? null })}, ${n(idx + 1)})
-            ON CONFLICT(id) DO UPDATE SET prompt_json=excluded.prompt_json, answer_key_json=excluded.answer_key_json,
-              explanation_ar=excluded.explanation_ar, error_feedback_json=excluded.error_feedback_json`);
+            ON CONFLICT(id) DO UPDATE SET lesson_version_id=excluded.lesson_version_id,
+              prompt_json=excluded.prompt_json, answer_key_json=excluded.answer_key_json,
+              explanation_ar=excluded.explanation_ar, error_feedback_json=excluded.error_feedback_json,
+              difficulty=excluded.difficulty, skills_json=excluded.skills_json,
+              media_json=excluded.media_json, sort_order=excluded.sort_order`);
       counters.exercises++;
 
       // الإجابة الصحيحة القياسية — للاختبارات فقط، لا تُرسل إلى أي عميل

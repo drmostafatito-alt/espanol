@@ -35,3 +35,10 @@ coverage/
 # Python bytecode (مولّدات tools/gen)
 __pycache__/
 *.pyc
+
+# محرك الصوت المحلي التوليدي (البرامج التنفيذية والنماذج الثنائية الكبيرة)
+tools/audio-engine/piper/
+tools/audio-engine/*.zip
+tools/audio-engine/*.onnx*
+tools/audio-engine/*.wav
+

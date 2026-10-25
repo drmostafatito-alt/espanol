@@ -114,6 +114,40 @@ describe('S-A: سياسة كلمات المرور والفشل المغلق', ()
     expect(after.password_hash).toMatch(/^pbkdf2-sha256\$30000\$/);
     env2.close();
   });
+
+  it('كلمة مرور خاطئة لا تُطلق إعادة التجزئة ولا تغيّر الهاش في القاعدة', async () => {
+    await signupAndGetCookie(h);
+    const legacy = await legacyHash(VALID_PW, PEPPER, 20000);
+    h.db.raw.prepare('UPDATE users SET password_hash = ? WHERE email_normalized = ?').run(legacy, VALID_EMAIL);
+
+    const res = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: VALID_EMAIL, password: 'WrongPassword2026!' }) });
+    expect(res.status).toBe(401);
+
+    const row = h.db.raw.prepare('SELECT password_hash FROM users WHERE email_normalized = ?').get(VALID_EMAIL) as { password_hash: string };
+    // لا يزال بالصيغة القديمة ولم يتغير لأن التحقق فشل
+    expect(row.password_hash).toBe(legacy);
+  });
+
+  it('تجزئة تالفة في القاعدة تُرجع 401 موحدًا ولا تُسقط الخادم بـ 500', async () => {
+    await signupAndGetCookie(h);
+    h.db.raw.prepare('UPDATE users SET password_hash = ? WHERE email_normalized = ?').run('corrupt$broken$hash$value', VALID_EMAIL);
+
+    const res = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: VALID_EMAIL, password: VALID_PW }) });
+    expect(res.status).toBe(401);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('INVALID_CREDENTIALS');
+  });
+
+  it('تسجيل الدخول عند غياب PASSWORD_PEPPER في الإنتاج يُغلق فورًا بـ 503 (فشل مغلق)', async () => {
+    const env = makeHarness({ ENVIRONMENT: 'production', PASSWORD_PEPPER: '' });
+    const res = await env.call('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email: 'user@example.com', password: 'ValidPassword2026!' }),
+    });
+    expect(res.status).toBe(503);
+    expect((await env.json(res)).error.code).toBe('AUTH_UNAVAILABLE');
+    env.close();
+  });
 });
 
 describe('S-B: الجلسات والكوكيز وCSRF', () => {

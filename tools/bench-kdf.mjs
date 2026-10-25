@@ -18,7 +18,7 @@ import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const WRANGLER = join(ROOT, 'tools/wrangler-env/node_modules/.bin/wrangler');
+const WRANGLER_CLI = join(ROOT, 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
 const PORT = 8790;
 const BUDGET_MS = 10; // حد الخطة المجانية لكل طلب HTTP
 const OWASP_SHA256 = 600_000;
@@ -47,7 +47,7 @@ async function waitForServer(url, timeoutMs = 40_000) {
 async function main() {
   let child = null;
   if (!baseUrl) {
-    child = spawn(WRANGLER, ['dev', '--config', 'tools/bench/wrangler.toml', '--local', '--port', String(PORT), '--ip', '127.0.0.1'], {
+    child = spawn(process.execPath, [WRANGLER_CLI, 'dev', '--config', 'tools/bench/wrangler.toml', '--local', '--port', String(PORT), '--ip', '127.0.0.1'], {
       cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'],
     });
     child.stdout.on('data', () => {});

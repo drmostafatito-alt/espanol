@@ -272,7 +272,11 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                       key={p.slug}
                       className="track-card"
                       style={{ textAlign: 'start', font: 'inherit' }}
-                      onClick={() => navigate(`/learn?track=${encodeURIComponent(p.slug)}`)}
+                      onClick={() => {
+                        const tab = TABS.find(t => t.id === p.slug)?.id;
+                        if (tab) setSelectedTab(tab);
+                        document.getElementById('learning-path')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
                       aria-label={`افتح مسار ${p.title_ar}`}
                     >
                       <img src={visual.image} alt="" loading="lazy" />

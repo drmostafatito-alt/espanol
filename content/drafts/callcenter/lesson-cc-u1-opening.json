@@ -23,7 +23,8 @@
     ],
     "reviewVocabulary": [
       "usted",
-      "por favor"
+      "por favor",
+      "pedido"
     ],
     "targetStructures": [
       "Le atiende…",
@@ -187,13 +188,15 @@
             "id": "cc_u1_3_b",
             "text": "Dime tu número de pedido.",
             "isCorrect": false,
-            "distractorRationaleAr": "أمر مباشر وصيغة tú، تخالف الرسمية."
+            "distractorRationaleAr": "أمر مباشر وصيغة tú، تخالف الرسمية.",
+            "textAr": "قل لي رقم طلبك."
           },
           {
             "id": "cc_u1_3_c",
             "text": "¿Cuál es el número de pedido?",
             "isCorrect": false,
-            "distractorRationaleAr": "صحيحة لكنها أقل لباقة؛ condicional + por favor أنسب في المكالمات."
+            "distractorRationaleAr": "صحيحة لكنها أقل لباقة؛ condicional + por favor أنسب في المكالمات.",
+            "textAr": "ما رقم الطلب؟"
           }
         ],
         "answerKey": {
@@ -217,7 +220,8 @@
         "difficulty": 2,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "اسمع، قل لي رقم طلبك."
       },
       {
         "id": "cc_u1_4_fill",

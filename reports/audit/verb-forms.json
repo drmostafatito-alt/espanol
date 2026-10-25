@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-25T07:49:50.617Z",
+  "files": 53,
+  "verbs": 1365,
+  "forms": 51798,
+  "violations": [
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-lex-verbs-core.json",
+      "bundle": "cv-lex-verbs-core",
+      "rule": "V8-ducir",
+      "headword": "producir",
+      "expected": "produjo",
+      "got": "producjo"
+    },
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-lex-verbs-core.json",
+      "bundle": "cv-lex-verbs-core",
+      "rule": "V8-ducir",
+      "headword": "reducir",
+      "expected": "redujo",
+      "got": "reducjo"
+    },
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-verbs-expanded.json",
+      "bundle": "cv-verbs-expanded",
+      "rule": "V8-ducir",
+      "headword": "deducir",
+      "expected": "dedujo",
+      "got": "deducjo"
+    },
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-verbs-expanded.json",
+      "bundle": "cv-verbs-expanded",
+      "rule": "V8-ducir",
+      "headword": "inducir",
+      "expected": "indujo",
+      "got": "inducjo"
+    },
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-verbs-expanded.json",
+      "bundle": "cv-verbs-expanded",
+      "rule": "V8-ducir",
+      "headword": "introducir",
+      "expected": "introdujo",
+      "got": "introducjo"
+    },
+    {
+      "file": "C:\\Users\\tito\\Desktop\\espanol-main\\espanol-main\\content\\drafts\\core-vocab\\vocab-cv-verbs-master-large3.json",
+      "bundle": "cv-verbs-master-large3",
+      "rule": "V8-ducir",
+      "headword": "seducir",
+      "expected": "sedujo",
+      "got": "seducjo"
+    }
+  ]
+}

@@ -92,6 +92,33 @@ describe('سياسة كلمات المرور (password.ts)', () => {
     expect(await verifyPassword('Cairo2026learn', h, high)).toBe(true);
   });
 
+  it('needsRehash تعيد true للصيغة القديمة (legacy) والصيغ التالفة', () => {
+    const policy = resolvePolicy({ PBKDF2_ITERATIONS: '30000', PASSWORD_PEPPER: strong, ENVIRONMENT: 'test' });
+    // صيغة legacy تبدأ بـ pbkdf2$ بدلاً من pbkdf2-sha256$
+    expect(needsRehash('pbkdf2$30000$c2FsdHNhbHRzYWx0MTY$aGFzaGhhc2hoYXNoMzJoYXNoMzJoYXNoMzJoYXNoMzI', policy)).toBe(true);
+    // صيغ تالفة أو غير صالحة
+    expect(needsRehash('invalid_hash', policy)).toBe(true);
+    expect(needsRehash('pbkdf2-sha256$bad', policy)).toBe(true);
+    expect(needsRehash('', policy)).toBe(true);
+  });
+
+  it('needsRehash لا تخفّض التكرارات إذا كانت التجزئة المخزنة أعلى من السياسة', async () => {
+    const highPolicy = resolvePolicy({ PBKDF2_ITERATIONS: '50000', PASSWORD_PEPPER: strong, ENVIRONMENT: 'test' });
+    const lowPolicy = resolvePolicy({ PBKDF2_ITERATIONS: '30000', PASSWORD_PEPPER: strong, ENVIRONMENT: 'test' });
+    const h = await hashPassword('Cairo2026learn', highPolicy);
+    // التجزئة بـ 50000 تكرار؛ والسياسة الحالية 30000: لا نخفض الأمان
+    expect(needsRehash(h, lowPolicy)).toBe(false);
+    expect(await verifyPassword('Cairo2026learn', h, lowPolicy)).toBe(true);
+  });
+
+  it('تغيير الـ pepper يمنع التحقق تمامًا (فشل آمن)', async () => {
+    const policyA = resolvePolicy({ PBKDF2_ITERATIONS: '30000', PASSWORD_PEPPER: 'a'.repeat(40), ENVIRONMENT: 'test' });
+    const policyB = resolvePolicy({ PBKDF2_ITERATIONS: '30000', PASSWORD_PEPPER: 'b'.repeat(40), ENVIRONMENT: 'test' });
+    const h = await hashPassword('Cairo2026learn', policyA);
+    expect(await verifyPassword('Cairo2026learn', h, policyA)).toBe(true);
+    expect(await verifyPassword('Cairo2026learn', h, policyB)).toBe(false);
+  });
+
   it('ترفض كلمات المرور الشائعة والمتسلسلة حتى لو طالت', () => {
     expect(passwordProblems('password1234')).not.toHaveLength(0);
     expect(passwordProblems('abcdefghijklm')).not.toHaveLength(0);

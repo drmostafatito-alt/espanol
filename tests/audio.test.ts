@@ -1,6 +1,15 @@
 import { describe, it, expect, vi } from 'vitest';
 import { AudioService, type AudioLike, type SpeechLike, type SpeechSynthesisUtteranceLike } from '../src/web/audio/AudioService';
 
+/** وعود play معلّقة نتحكم في حلّها لاحقًا (محاكاة شبكة بطيئة) */
+const deferredPlays: { resolve: () => void; reject: (e: unknown) => void }[] = [];
+function flushDeferred(mode: 'resolve' | 'reject') {
+  for (const d of deferredPlays.splice(0)) {
+    if (mode === 'resolve') d.resolve();
+    else d.reject(Object.assign(new Error('net'), { name: 'NetworkError' }));
+  }
+}
+
 /** بديل صوتي مزيف قابل للتحكم */
 class FakeAudio implements AudioLike {
   src: string;
@@ -10,10 +19,18 @@ class FakeAudio implements AudioLike {
   paused = true;
   loadCount = 0;
   private handlers: Record<string, (() => void)[]> = {};
-  constructor(src: string, private behavior: 'ok' | 'error' | 'hang' | 'reject' = 'ok') { this.src = src; }
+  constructor(src: string, private behavior: 'ok' | 'error' | 'hang' | 'reject' | 'defer' | 'deferReject' = 'ok') { this.src = src; }
   play(): Promise<void> {
     if (this.behavior === 'reject') return Promise.reject(Object.assign(new Error('x'), { name: 'NotAllowedError' }));
     if (this.behavior === 'hang') return new Promise<void>(() => {});
+    if (this.behavior === 'defer' || this.behavior === 'deferReject') {
+      return new Promise<void>((resolve, reject) => {
+        deferredPlays.push({
+          resolve: () => { this.paused = false; resolve(); },
+          reject,
+        });
+      });
+    }
     if (this.behavior === 'error') {
       setTimeout(() => this.emit('error'), 0);
       return Promise.reject(Object.assign(new Error('404'), { name: 'NotSupportedError' }));
@@ -30,7 +47,7 @@ class FakeAudio implements AudioLike {
 }
 
 function makeService(opts: {
-  behavior?: 'ok' | 'error' | 'hang' | 'reject';
+  behavior?: 'ok' | 'error' | 'hang' | 'reject' | 'defer' | 'deferReject';
   resolve?: (k: string) => string | null;
   voices?: { lang: string; name: string }[];
   withSpeech?: boolean;
@@ -174,6 +191,58 @@ describe('AudioService — عقد الصوت', () => {
     const dump = JSON.stringify(svc.getDiagnostics());
     expect(dump).not.toContain('1234');
     expect(dump).not.toContain('contraseña');
+  });
+
+  it('طلب قديم ينجح متأخرًا لا يسرق نطاق الصوت الجديد ولا يعيد "playing" بعد الإيقاف', async () => {
+    const created: FakeAudio[] = [];
+    const svc = new AudioService({
+      createAudio: (url) => {
+        const a = new FakeAudio(url, url.includes('/a.') ? 'defer' : 'ok');
+        created.push(a);
+        return a;
+      },
+      speech: null,
+      resolveUrl: (k) => `https://media.test/${k}.opus`,
+      loadTimeoutMs: 200,
+    });
+
+    const pA = svc.play(cue('audio/a'));
+    await svc.play(cue('audio/b'));
+    expect(svc.getState()).toBe('playing');
+
+    flushDeferred('resolve'); // يصل رد الأصل القديم الآن
+    const rA = await pA;
+    expect(rA.source).toBe('none');
+    expect(svc.getState()).toBe('playing');
+
+    // الصوت الحالي ما زال B وقابل للإيقاف فعلًا
+    svc.stop();
+    expect(created[1]!.paused).toBe(true);
+    expect(svc.getState()).toBe('idle');
+  });
+
+  it('فشل أصل متأخر بعد الإيقاف لا ينطق النص القديم ولا يقلب الحالة إلى error/playing', async () => {
+    const spoken: SpeechSynthesisUtteranceLike[] = [];
+    const svc = new AudioService({
+      createAudio: (url) => new FakeAudio(url, 'deferReject'),
+      speech: {
+        speak: (u) => spoken.push(u),
+        cancel: () => {},
+        getVoices: () => [{ lang: 'es-ES', name: 'Spanish' }],
+      },
+      resolveUrl: (k) => `https://media.test/${k}.opus`,
+      loadTimeoutMs: 200,
+    });
+
+    const pA = svc.play(cue('audio/a', 'Palabra vieja'));
+    await svc.play(cue('audio/b', 'Palabra nueva'));
+    svc.stop();
+    flushDeferred('reject');
+    const rA = await pA;
+
+    expect(rA.source).toBe('none');
+    expect(spoken.map((u) => u.text)).not.toContain('Palabra vieja');
+    expect(svc.getState()).toBe('idle');
   });
 
   it('dispose يوقف كل شيء ويزيل المستمعين', async () => {

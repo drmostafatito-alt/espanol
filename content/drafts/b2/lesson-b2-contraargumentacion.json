@@ -127,8 +127,7 @@
         ],
         "difficulty": 1,
         "targetVocab": [
-          "argumento",
-          "obstante"
+          "argumento"
         ],
         "scoring": {
           "mode": "all_or_nothing"
@@ -204,7 +203,7 @@
         ],
         "difficulty": 2,
         "targetVocab": [
-          "verdad"
+          "bien"
         ],
         "scoring": {
           "mode": "all_or_nothing"
@@ -303,7 +302,8 @@
         ],
         "difficulty": 2,
         "targetVocab": [
-          "obstante"
+          "contra",
+          "postura"
         ],
         "scoring": {
           "mode": "rubric",

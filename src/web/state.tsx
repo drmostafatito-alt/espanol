@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { api, ApiError, onUnauthorized, type ApiUser } from './api';
+import { api, ApiError, invalidateInFlightAuth, onUnauthorized, type ApiUser } from './api';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
 export function useRoute(): [string, (to: string) => void] {
@@ -10,9 +10,10 @@ export function useRoute(): [string, (to: string) => void] {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
   const navigate = useCallback((to: string) => {
-    if (to === window.location.pathname) return;
+    const nextPathname = (to.split('?')[0] ?? '').split('#')[0] || '/';
+    if (to === window.location.pathname + window.location.search + window.location.hash) return;
     window.history.pushState({}, '', to);
-    setPath(to);
+    setPath(nextPathname);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }, []);
   return [path, navigate];
@@ -49,6 +50,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const refresh = useCallback(async () => {
     const seq = ++seqRef.current;
+    invalidateInFlightAuth();
     setLoading(true);
     try {
       // صامت تجاه المعالج المركزي: 401 الإقلاع يُعالَج هنا مع حارس الجيل
@@ -88,6 +90,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = useCallback(async () => {
     seqRef.current++; // تُلغى أي استجابة مصادقة عالقة
+    invalidateInFlightAuth(); // ولا يطرد رد 401 قديم حالة ما بعد الخروج
     try {
       await api.logout();
     } catch {
@@ -103,6 +106,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const applyUser = useCallback((u: ApiUser | null) => {
     // دخول/تسجيل ناجح: يُبطل كل طلبات /me العالقة فورًا
     seqRef.current++;
+    invalidateInFlightAuth();
     setLoading(false);
     setUser(u);
     if (u) {

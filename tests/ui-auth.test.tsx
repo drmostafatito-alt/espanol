@@ -15,6 +15,29 @@ let h: Harness;
 let cookieJar: string | null;
 
 /** يوجّه fetch الواجهة إلى worker الحقيقي مع إدارة كوكي الجلسة كما يفعل المتصفح */
+/**
+ * نفس التوجيه إلى worker الحقيقي، لكن حافظة الكوكي معطّلة عمدًا.
+ * يحاكي متصفحًا يرفض حفظ كوكي الجلسة (إطار معاينة/كوكيز محظورة/بروكسي).
+ */
+function wireFetchWithoutJar(harness: Harness) {
+  cookieJar = null;
+  vi.stubGlobal('fetch', async (input: RequestInfo | URL, init: RequestInit = {}) => {
+    const path = String(
+      typeof input === 'string' ? input : input instanceof URL ? input.pathname : input.url,
+    ).replace(/^https?:\/\/[^/]+/, '');
+    const headers = new Headers(init.headers);
+    headers.set('Origin', 'http://localhost:5173');
+    headers.set('Sec-Fetch-Site', 'same-origin');
+    // لا تُرسل كوكي أبدًا: المتصفح «رفض» تخزينها
+    const req = new Request('http://localhost:8787' + path, {
+      method: init.method ?? 'GET',
+      headers,
+      body: init.body as BodyInit | undefined,
+    });
+    return await import('../src/worker/index').then(m => m.default.fetch(req, harness.env));
+  });
+}
+
 function wireFetchWithJar(harness: Harness) {
   cookieJar = null;
   vi.stubGlobal('fetch', async (input: RequestInfo | URL, init: RequestInit = {}) => {
@@ -100,6 +123,35 @@ describe('تدفق الهوية من الواجهة (DOM حقيقي + worker ح�
     expect(body.user.email).toBe(VALID_EMAIL);
   });
 
+  it('دخول ناجح لكن المتصفح لم يحفظ الجلسة: رسالة صريحة ولا توجيه وهمي', async () => {
+    const signupRes = await h.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: VALID_EMAIL, password: VALID_PW }),
+    });
+    expect(signupRes.status).toBe(201);
+
+    wireFetchWithoutJar(h);
+
+    const navigate = vi.fn();
+    const user = userEvent.setup();
+    render(
+      <AuthProvider>
+        <Login navigate={navigate} />
+      </AuthProvider>,
+    );
+
+    await user.type(document.querySelector('input[type="email"]')!, VALID_EMAIL);
+    await user.type(document.querySelector('input[type="password"]')!, VALID_PW);
+    await user.click(screen.getByRole('button', { name: 'دخول' }));
+
+    await waitFor(
+      () => expect(screen.getByRole('alert').textContent).toContain('لم يحفظ جلسة الدخول'),
+      { timeout: 8000 },
+    );
+    expect(navigate).not.toHaveBeenCalled();
+    expect(screen.getByRole('alert').textContent).toContain('اسمح بالكوكيز');
+  });
+
   it('كلمة مرور خاطئة تعرض رسالة الخادم الحقيقية ولا تنقل المستخدم', async () => {
     const signupRes = await h.call('/api/auth/signup', {
       method: 'POST',
@@ -125,5 +177,17 @@ describe('تدفق الهوية من الواجهة (DOM حقيقي + worker ح�
     );
     expect(navigate).not.toHaveBeenCalled();
     expect(cookieJar).toBeNull();
+  });
+
+  it('نموذج التسجيل يعلن حد كلمة المرور الفعلي للخادم (12) لا حدًّا أخف يُرفض بعده', () => {
+    render(
+      <AuthProvider>
+        <Signup navigate={vi.fn()} />
+      </AuthProvider>,
+    );
+    const pw = document.querySelector('input[type="password"]')!;
+    expect(pw.getAttribute('minlength')).toBe('12');
+    expect(document.body.textContent).toContain('12 حرفًا على الأقل');
+    expect(document.body.textContent).not.toContain('10 أحرف على الأقل');
   });
 });

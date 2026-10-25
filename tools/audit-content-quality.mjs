@@ -58,6 +58,64 @@ function norm(s, { stripAccents = true } = {}) {
 const tokens = s => norm(s).split(' ').filter(Boolean);
 const sortedKey = s => tokens(s).sort().join(' ');
 
+/**
+ * صيغ الجمع والمطابقة المنتظمة (جنس/عدد) — للاستخدام في R36 فقط.
+ *
+ * لماذا: المدخل يُخزَّن بصيغة المفرد/المذكر («abarrote»، «templado»، «accesorio»)،
+ * والمثال الطبيعي يستخدم الجمع أو المؤنث («abarrotes»، «días templados»).
+ * بلا هذه الصيغ يطلق المدقق إنذارًا كاذبًا على عيّنة سليمة، فيفقد الإنذار قيمته.
+ * التوليد محافظ: لا يخلط جذورًا مختلفة، بل يغيّر النهاية فقط.
+ */
+function inflections(headword, plural) {
+  const out = new Set();
+  const base = norm(headword);
+  if (!base) return out;
+  if (plural) out.add(norm(plural));
+  const parts = base.split(' ');
+  const bases = new Set([base, ...(parts.length > 1 ? parts.filter(p => p.length > 2) : [])]);
+  for (const w of bases) {
+    if (!w) continue;
+    out.add(w + 's');
+    out.add(w + 'es');
+    if (w.endsWith('z')) out.add(w.slice(0, -1) + 'ces');
+    if (w.endsWith('o')) {
+      out.add(w.slice(0, -1) + 'a');
+      out.add(w.slice(0, -1) + 'os');
+      out.add(w.slice(0, -1) + 'as');
+    }
+    if (w.endsWith('a')) {
+      out.add(w.slice(0, -1) + 'o');
+      out.add(w.slice(0, -1) + 'as');
+      out.add(w.slice(0, -1) + 'os');
+    }
+    if (w.endsWith('e')) out.add(w + 's');
+    if (/[lnrsd]$/.test(w)) out.add(w + 'es');
+    // الجمع المؤنث للأسماء المنتهية بساكن مؤنث شائع (profesor → profesora)
+    if (/[lnrsd]$/.test(w)) out.add(w + 'a');
+  }
+  // Apócope الصحيحة: bueno → buen café، primero → primer piso (ليست خطأً في المثال)
+  const APOCOPE = { bueno: 'buen', malo: 'mal', primero: 'primer', tercero: 'tercer', alguno: 'algún', ninguno: 'ningún' };
+  if (APOCOPE[base]) out.add(APOCOPE[base]);
+  out.delete(base);
+  return out;
+}
+
+/**
+ * ضمائر ملتصقة بالفعل (dame، ayudarme، avísame) — المثال سليم لكن الكلمة ليست
+ * صيغة مجردة. تُجرَّد اللاحقة الأطول أولًا، ثم تُقارن بالنص المجرّد من التشكيل.
+ */
+const ENCLITICS = [
+  'melos', 'melas', 'melo', 'mela', 'selos', 'selas', 'selo', 'sela',
+  'telos', 'telas', 'telo', 'tela', 'noslo', 'nosla', 'oslo', 'osla',
+  'les', 'los', 'las', 'nos', 'me', 'te', 'se', 'os', 'lo', 'la', 'le',
+];
+function stripEnclitic(token) {
+  for (const p of ENCLITICS) {
+    if (token.length > p.length + 1 && token.endsWith(p)) return token.slice(0, -p.length);
+  }
+  return token;
+}
+
 // ---------------------------------------------------------------------------
 // قواعد عامة للنصوص
 // ---------------------------------------------------------------------------
@@ -491,14 +549,27 @@ for (const f of vocabFiles.slice().sort()) {
       const head = norm(e.headword);
       const cands = new Set([head, ...head.split(' ').filter(x => x.length > 2)]);
       for (const fm of e.forms || []) if (fm.formEs) cands.add(norm(fm.formEs));
+      for (const v of inflections(e.headword, e.plural)) cands.add(v);
       const exL = ' ' + norm(s.exampleEs) + ' ';
-      const hit = [...cands].some(c => c.length > 1 && exL.includes(' ' + c + ' '));
+      const exTokens = exL.split(' ').filter(Boolean);
+      const hit = [...cands].some(c => {
+        if (c.length <= 1) return false;
+        if (c.includes(' ')) return exL.includes(' ' + c + ' '); // مدخل مركّب (a menudo)
+        return exTokens.some(t => t === c || stripEnclitic(t) === c);
+      });
       if (!hit) warn('R36-example-fit', w, `المثال لا يحتوي المدخل «${e.headword}» ولا تصريفًا منه`);
       // R37 — المثال العربي لا يجب أن يكون نسخة من الإسباني
       if (norm(s.exampleAr) === norm(s.exampleEs)) err('R37-example-copy', w, 'الترجمة العربية للمثال مساوية لنصه الإسباني');
       // R38 — الخطأ الشائع المذكور لا يمكن أن يكون هو نفسه الصواب
       if (s.commonErrorAr && norm(s.commonErrorAr) === norm(s.exampleEs)) {
         err('R38-common-error', w, 'حقل الخطأ الشائع يساوي نص المثال');
+      }
+      // R46 — شرح الاستخدام لا يناقض بيانات التصريف المخزّنة
+      // (كان يقول «فعل منتظم — كل الصيغ على النهايات القياسية» مع صيغ irregular:true)
+      // المطابقة على ادعاء الانتظام نفسه، لا على أي ذكر لعبارة «النهايات القياسية»
+      // (نص التحذير الصحيح يستخدم العبارة منفيّة: «فيه صيغ لا تتبع النهايات القياسية»).
+      if (/فعل منتظم|كل الصيغ على النهايات القياسية/.test(s.usageNoteAr || '') && (e.forms || []).some(f => f.irregular)) {
+        err('R46-usage-note', w, 'شرح الاستخدام يقول إن الفعل منتظم بينما فيه صيغ غير منتظمة');
       }
     }
     // R45 — مفاتيح صوت المفردات: معلّقة (لا ملفات مُنتَجة) وفريدة

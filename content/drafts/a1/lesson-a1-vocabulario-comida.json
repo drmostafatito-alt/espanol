@@ -153,27 +153,27 @@
           "grammar"
         ],
         "difficulty": 2,
-        "promptAr": "ما هي أداة التعريف المناسبة لكلمة agua المفردة؟",
-        "stemEs": "Bebo un vaso de ____ agua.",
-        "stemAr": "أشرب كوباً من الـ____ ماء.",
+        "promptAr": "ما هي أداة التعريف المناسبة لكلمة agua المفردة في بداية الجملة؟",
+        "stemEs": "____ agua está muy fría.",
+        "stemAr": "الماء بارد جداً.",
         "options": [
           {
             "id": "a1_com_2_a",
-            "text": "el",
-            "textAr": "أداة التعريف el لتفادي الثقل الصوتي",
+            "text": "El",
+            "textAr": "أداة التعريف El لتفادي الثقل الصوتي",
             "isCorrect": true
           },
           {
             "id": "a1_com_2_b",
-            "text": "la",
-            "textAr": "أداة التعريف la",
+            "text": "La",
+            "textAr": "أداة التعريف La",
             "isCorrect": false,
-            "distractorRationaleAr": "خطأ: رغم أن كلمة agua مؤنثة، إلا أنها تبدأ بـ a منبورة فتأخذ el في المفرد منعاً للثقل."
+            "distractorRationaleAr": "خطأ: رغم أن كلمة agua مؤنثة، إلا أنها تبدأ بـ a منبورة فتأخذ El في المفرد منعاً للثقل."
           },
           {
             "id": "a1_com_2_c",
-            "text": "los",
-            "textAr": "أداة الجمع المذكر",
+            "text": "Los",
+            "textAr": "أداة الجمع Los",
             "isCorrect": false,
             "distractorRationaleAr": "الكلمة هنا مفردة وليست جمعاً."
           }
@@ -181,7 +181,7 @@
         "targetVocab": [
           "agua"
         ],
-        "explanationAr": "كلمة agua مؤنثة ولكنها تأخذ أداة التعريف el في المفرد منعاً لالتقاء النبرتين: el agua.",
+        "explanationAr": "كلمة agua مؤنثة ولكنها تأخذ أداة التعريف El في المفرد منعاً لالتقاء النبرتين: El agua está muy fría.",
         "scoring": {
           "mode": "all_or_nothing"
         },

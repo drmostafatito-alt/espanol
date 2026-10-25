@@ -343,7 +343,8 @@
             "id": "a1_sal_6_c",
             "text": "¿Usted trabajar aquí?",
             "isCorrect": false,
-            "distractorRationaleAr": "المصدر لا يصلح فعلًا رئيسيًا هنا؛ الصيغة الصحيحة trabaja."
+            "distractorRationaleAr": "المصدر لا يصلح فعلًا رئيسيًا هنا؛ الصيغة الصحيحة trabaja.",
+            "textAr": "هل حضرتك تعمل هنا؟ (الفعل غير مصرّف)"
           }
         ],
         "answerKey": {
@@ -366,7 +367,8 @@
         "difficulty": 3,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "حضرتك تعملين هنا، أليس كذلك؟"
       },
       {
         "id": "a1_sal_7_reply",

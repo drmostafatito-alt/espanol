@@ -8,6 +8,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { AuthProvider, useAuth } from '../src/web/state';
+import { api } from '../src/web/api';
 import { Login } from '../src/web/pages/Auth';
 
 const USER = {
@@ -43,12 +44,21 @@ describe('سباق طلب الإقلاع مع تسجيل الدخول', () => {
       resolveBootMe = res;
     });
 
+    let meCalls = 0;
     vi.stubGlobal('fetch', vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
       const raw = typeof input === 'string' ? input : input instanceof URL ? input.pathname : input.url;
       const path = String(raw).replace(/^https?:\/\/[^/]+/, '');
       const method = init?.method ?? 'GET';
 
-      if (path === '/api/auth/me' && method === 'GET') return bootMe;
+      if (path === '/api/auth/me' && method === 'GET') {
+        meCalls++;
+        // أول /me = الإقلاع (عالق عمدًا)؛ ما بعده = تأكيد الجلسة بعد الدخول
+        if (meCalls === 1) return bootMe;
+        return new Response(JSON.stringify({ user: USER }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
       if (path === '/api/auth/login' && method === 'POST') {
         return new Response(JSON.stringify({ user: USER }), {
           status: 200,
@@ -85,6 +95,71 @@ describe('سباق طلب الإقلاع مع تسجيل الدخول', () => {
     await new Promise(r => setTimeout(r, 50));
 
     // المستخدم بقي مسجّلًا رغم الرد القديم
+    expect(screen.getByTestId('probe').textContent).toBe(`user:${USER.email}`);
+  });
+
+  it('401 من طلب محمي قديم لا يطرد مستخدمًا سجّل دخوله بعده', async () => {
+    let resolveStale: (r: Response) => void = () => {};
+    let meCalls = 0;
+    vi.stubGlobal('fetch', vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      const raw = typeof input === 'string' ? input : input instanceof URL ? input.pathname : input.url;
+      const path = String(raw).replace(/^https?:\/\/[^/]+/, '');
+      const method = init?.method ?? 'GET';
+
+      if (path === '/api/auth/me' && method === 'GET') {
+        meCalls++;
+        return meCalls === 1
+          ? new Response(JSON.stringify({ error: { code: 'UNAUTHENTICATED' } }), {
+              status: 401,
+              headers: { 'Content-Type': 'application/json' },
+            })
+          : new Response(JSON.stringify({ user: USER }), {
+              status: 200,
+              headers: { 'Content-Type': 'application/json' },
+            });
+      }
+      if (path === '/api/auth/login' && method === 'POST') {
+        return new Response(JSON.stringify({ user: USER }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      // طلب محمي أُرسل قبل الدخول ويصل رده متأخرًا
+      if (path === '/api/me/progress') {
+        return new Promise<Response>(res => {
+          resolveStale = res;
+        });
+      }
+      return new Response(JSON.stringify({ error: { code: 'UNEXPECTED' } }), { status: 500 });
+    }));
+
+    const navigate = vi.fn();
+    render(
+      <AuthProvider>
+        <Probe />
+        <Login navigate={navigate} />
+      </AuthProvider>,
+    );
+    await waitFor(() => expect(screen.getByTestId('probe').textContent).toBe('anonymous'));
+
+    // طلب محمي يبدأ قبل الدخول (جيل قديم)
+    const stale = api.progress().catch(() => 'rejected');
+
+    const user = userEvent.setup();
+    await user.type(document.querySelector('input[type="email"]')!, USER.email);
+    await user.type(document.querySelector('input[type="password"]')!, 'StrongP@ss99x');
+    await user.click(screen.getByRole('button', { name: 'دخول' }));
+    await waitFor(() => expect(screen.getByTestId('probe').textContent).toBe(`user:${USER.email}`));
+
+    // الآن يصل رد 401 من الطلب القديم
+    resolveStale(
+      new Response(JSON.stringify({ error: { code: 'UNAUTHENTICATED', message: 'يلزم تسجيل الدخول.' } }), {
+        status: 401,
+        headers: { 'Content-Type': 'application/json' },
+      }),
+    );
+    await expect(stale).resolves.toBe('rejected');
+    await new Promise(r => setTimeout(r, 50));
     expect(screen.getByTestId('probe').textContent).toBe(`user:${USER.email}`);
   });
 

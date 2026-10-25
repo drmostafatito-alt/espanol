@@ -68,7 +68,11 @@ export class AudioService {
   private current: AudioLike | null = null;
   private currentKey: string | null = null;
   private rate = 1;
-  private abort: AbortController | null = null;
+  /**
+   * جيل الطلب: كل stop/تشغيل جديد يزيده، فأي وعد قديم يحلّ لاحقًا (شبكة بطيئة،
+   * أو صوت رفض التشغيل) لا يستطيع تغيير الحالة أو أخذ مكان الصوت الحالي.
+   */
+  private gen = 0;
   private diagnostics: DiagEvent[] = [];
   private listeners = new Set<(s: AudioState) => void>();
   private deps: Required<Pick<AudioDeps, 'createAudio' | 'resolveUrl' | 'now' | 'loadTimeoutMs'>> & Pick<AudioDeps, 'speech'>;
@@ -114,8 +118,7 @@ export class AudioService {
   }
 
   stop(): void {
-    this.abort?.abort();
-    this.abort = null;
+    this.gen += 1;
     if (this.current) {
       try { this.current.pause(); } catch { /* متصفح يرفض الإيقاف بعد الانتهاء */ }
       this.current = null;
@@ -142,19 +145,22 @@ export class AudioService {
       return { ok: true, source: 'none' };
     }
     this.stop();
+    const gen = this.gen;
 
     const url = this.deps.resolveUrl(cue.key, cue.variant);
     if (url) {
-      const res = await this.tryAsset(url, cue);
+      const res = await this.tryAsset(url, cue, gen);
+      // طلب جديد/إيقاف حدث أثناء انتظار الأصل: لا بديل ولا نطق للنص القديم
+      if (gen !== this.gen) return { ok: true, source: 'none' };
       if (res.ok) return res;
       this.diag('asset_failed_fallback', { key: cue.key, error: res.error });
     } else {
       this.diag('asset_missing', { key: cue.key });
     }
-    return this.speak(cue);
+    return this.speak(cue, gen);
   }
 
-  private tryAsset(url: string, cue: Cue): Promise<PlayResult> {
+  private tryAsset(url: string, cue: Cue, gen: number): Promise<PlayResult> {
     return new Promise<PlayResult>(resolve => {
       const audio = this.deps.createAudio(url);
       audio.preload = 'auto';
@@ -172,12 +178,18 @@ export class AudioService {
         if (settled) return;
         settled = true;
         cleanup();
+        if (gen !== this.gen) {
+          // طلب متجاوَز: لا نلمس الحالة ولا الصوت الحالي (وإلا أوقفنا الصوت الجديد)
+          try { audio.pause(); } catch { /* تجاهل */ }
+          resolve({ ok: false, source: 'asset', error: 'ABORTED' });
+          return;
+        }
         if (!r.ok) {
           this.current = null;
           this.currentKey = null;
-                this.setState('error');
+          this.setState('error');
         } else {
-                this.setState('playing');
+          this.setState('playing');
         }
         resolve(r);
       };
@@ -193,7 +205,7 @@ export class AudioService {
         .then(() => {
           this.diag('asset_play', { key: cue.key });
           audio.addEventListener('ended', () => {
-            if (this.currentKey === cue.key) this.stop();
+            if (gen === this.gen && this.currentKey === cue.key) this.stop();
           });
           done({ ok: true, source: 'asset' });
         })
@@ -209,7 +221,8 @@ export class AudioService {
     });
   }
 
-  private speak(cue: Cue): PlayResult {
+  private speak(cue: Cue, gen: number): PlayResult {
+    if (gen !== this.gen) return { ok: true, source: 'none' };
     const speech = this.deps.speech;
     if (!speech) {
       this.diag('speech_unavailable', { key: cue.key });
@@ -220,8 +233,12 @@ export class AudioService {
       return { ok: false, source: 'none', error: 'NO_VOICE', messageAr: MESSAGES.NO_VOICE };
     }
     const u: SpeechSynthesisUtteranceLike = { text: cue.text, lang: cue.variant ?? 'es-ES', rate: this.rate };
-    u.onend = () => { if (this.currentKey === cue.key) this.stop(); };
-    u.onerror = () => { this.diag('speech_error', { key: cue.key }); this.stop(); };
+    u.onend = () => { if (gen === this.gen && this.currentKey === cue.key) this.stop(); };
+    u.onerror = () => {
+      if (gen !== this.gen) return;
+      this.diag('speech_error', { key: cue.key });
+      this.stop();
+    };
     this.currentKey = cue.key;
     this.setState('playing');
     speech.speak(u);

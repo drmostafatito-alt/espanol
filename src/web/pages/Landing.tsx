@@ -28,8 +28,11 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
               <button className="btn lg" onClick={() => navigate('/signup')}>
                 ابدأ التعلّم <Icon name="arrow-left" size={18} />
               </button>
-              <button className="btn secondary lg" onClick={() => scrollTo('topics')}>استكشف المنهج</button>
+              <button className="btn secondary lg" onClick={() => navigate('/login')}>تسجيل الدخول</button>
             </div>
+            <button className="hero-link" type="button" onClick={() => scrollTo('topics')}>
+              أو استكشف المسارات أولًا
+            </button>
           </div>
           <div className="hero-simple-media">
             <SafeImage
@@ -43,7 +46,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
 
       {/* ---------------- الفوائد ---------------- */}
       <div className="container">
-        <section className="section" aria-labelledby="benefits-title">
+        <section className="section" id="method" aria-labelledby="benefits-title">
           <div className="section-head">
             <h2 id="benefits-title">ماذا ستكسب؟</h2>
           </div>

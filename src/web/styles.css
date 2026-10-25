@@ -376,15 +376,22 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .hero-simple {
   display: grid; grid-template-columns: 1.05fr 0.95fr;
   gap: var(--s-7); align-items: center;
-  padding: var(--s-7) 0 var(--s-6);
+  padding: clamp(var(--s-5), 5vw, var(--s-7)) 0 var(--s-5);
 }
 .hero-simple-text h1 {
   font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 800;
   line-height: 1.25; margin-bottom: var(--s-4); color: var(--color-navy);
+  max-width: 22ch; text-wrap: balance;
 }
 .hero-simple-text h1 .accent { color: var(--color-primary); }
-.hero-simple-text .lead { font-size: 1.08rem; color: var(--color-muted); max-width: 44ch; line-height: 1.8; }
+.hero-simple-text .lead { font-size: 1.05rem; color: var(--color-muted); max-width: 42ch; line-height: 1.75; margin: 0; }
 .hero-actions { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-5); }
+.hero-link {
+  margin-top: var(--s-3); background: none; border: 0; padding: 0;
+  font: inherit; font-size: 0.9rem; font-weight: 700; color: var(--color-muted);
+  cursor: pointer; text-decoration: underline; text-underline-offset: 4px;
+}
+.hero-link:hover { color: var(--color-navy); }
 .hero-simple-media {
   border-radius: var(--r-xl); overflow: hidden;
   box-shadow: var(--shadow-2); aspect-ratio: 4 / 3; background: var(--color-surface-2);
@@ -412,6 +419,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 
 /* أقسام الصفحة الرئيسية */
 .section { padding: var(--s-6) 0; }
+#method, #topics, #learning-path, #specialized-tracks { scroll-margin-top: 84px; }
 .section-head { display: flex; align-items: center; gap: var(--s-3); margin-bottom: var(--s-5); }
 .section-head::after { content: ""; flex: 1; height: 1px; background: var(--color-border); }
 .section-head h2 { margin: 0; }
@@ -442,10 +450,10 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .topic-media { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-surface-2); }
 .topic-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 260ms ease; }
 .topic-card:hover .topic-media img { transform: scale(1.05); }
-.topic-body { padding: var(--s-4); }
+.topic-body { padding: var(--s-4); display: flex; flex-direction: column; flex: 1; }
 .topic-body h3 { margin: 0 0 var(--s-1); font-size: 1.05rem; }
 .topic-body p { font-size: 0.85rem; color: var(--color-muted); margin: 0; }
-.topic-body .go { margin-top: var(--s-2); font-weight: 700; color: var(--color-primary); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px; }
+.topic-body .go { margin-top: auto; padding-top: var(--s-3); font-weight: 700; color: var(--color-primary); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px; }
 @media (max-width: 900px) { .topic-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .topic-grid { grid-template-columns: 1fr; } }
 
@@ -488,6 +496,12 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .welcome-row h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 1.8rem); }
 .welcome-row p { margin: 0; color: var(--color-muted); font-size: 0.92rem; }
 .dash-grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: var(--s-4); align-items: start; }
+/*
+ * min-width:0 إلزامي: عنصر الشبكة الافتراضي min-width:auto يأخذ عرض min-content
+ * لمسار التعلم (min-width:max-content)، فيتسع عمود الشبكة إلى ~1300px ويُقصّ
+ * معظم اللوحة خارج الشاشة على الموبايل رغم overflow-x:hidden.
+ */
+.dash-grid > * { min-width: 0; }
 .dash-grid .full { grid-column: 1 / -1; }
 @media (max-width: 1100px) { .dash-grid { grid-template-columns: 1fr; } }
 
@@ -520,7 +534,8 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 .next-card { padding: 0; overflow: hidden; }
 .next-media { position: relative; aspect-ratio: 21 / 8; overflow: hidden; background: var(--color-navy); }
 .next-media img { width: 100%; height: 100%; object-fit: cover; }
-.next-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(23,43,77,0.72) 0%, rgba(23,43,77,0.15) 60%, transparent 100%); }
+/* التدرّج يتبع جهة بداية النص في RTL: النص العربي يمينًا، فيجب أن يكون الصندوق الداكن يمينًا. */
+.next-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to left, rgba(15,31,58,0.94) 0%, rgba(23,43,77,0.74) 55%, rgba(23,43,77,0.2) 100%); }
 .next-media-content { position: absolute; z-index: 2; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: var(--s-5); color: #fff; }
 .next-media-content h2 { color: #fff; margin: var(--s-1) 0 var(--s-1); font-size: clamp(1.15rem, 2.4vw, 1.5rem); }
 .next-media-content p { color: rgba(255,255,255,0.85); font-size: 0.9rem; margin: 0; max-width: 52ch; }
@@ -545,7 +560,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   font: inherit; font-weight: 700; font-size: 0.85rem; color: var(--color-muted); cursor: pointer;
 }
 .level-pill.active { background: var(--color-navy); border-color: var(--color-navy); color: #fff; }
-.path-scroll { overflow-x: auto; padding-bottom: var(--s-3); }
+.path-scroll { overflow-x: auto; max-width: 100%; padding-bottom: var(--s-3); }
 .path-track { display: flex; align-items: flex-start; gap: 0; min-width: max-content; position: relative; padding: var(--s-2) var(--s-2) var(--s-4); }
 .path-node { display: flex; flex-direction: column; align-items: center; width: 104px; position: relative; background: none; border: 0; font-family: inherit; cursor: pointer; padding: 0; }
 .path-node::before {
@@ -574,16 +589,16 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 @media (max-width: 1100px) { .track-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .track-grid { grid-template-columns: 1fr; } }
 .track-card {
-  border-radius: var(--r-lg); overflow: hidden; position: relative; min-height: 150px;
+  border-radius: var(--r-lg); overflow: hidden; position: relative; min-height: 168px;
   display: flex; align-items: flex-end; text-decoration: none; cursor: pointer;
   border: 1px solid var(--color-border); background: var(--color-navy);
   transition: transform 140ms ease, box-shadow 140ms ease;
 }
 .track-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); }
 .track-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.track-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(23,43,77,0.05) 30%, rgba(15,31,58,0.85) 100%); }
+.track-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,31,58,0.15) 0%, rgba(15,31,58,0.74) 46%, rgba(15,31,58,0.95) 100%); }
 .track-card .track-body { position: relative; z-index: 2; padding: var(--s-4); color: #fff; width: 100%; }
-.track-card h3 { color: #fff; margin: 0 0 2px; font-size: 1.02rem; }
+.track-card h3 { color: #fff; margin: 0 0 2px; font-size: 1.06rem; }
 .track-card p { margin: 0; font-size: 0.78rem; color: rgba(255,255,255,0.85); }
 .track-card .track-meta { display: inline-flex; margin-top: var(--s-2); background: rgba(255,255,255,0.18); padding: 2px var(--s-3); border-radius: var(--r-pill); font-size: 0.75rem; font-weight: 700; }
 
@@ -749,6 +764,7 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
 }
 .auth-card-head h1 { font-size: 1.55rem; margin-bottom: var(--s-1); color: var(--color-navy); }
 .auth-card { padding: var(--s-6); box-shadow: var(--shadow-2); }
+.auth-note { text-align: center; margin: 0; font-size: 0.8rem; line-height: 1.75; }
 .password-toggle {
   position: absolute; inset-inline-end: 8px; top: 50%; transform: translateY(-50%);
   min-height: 40px; min-width: 40px; color: var(--color-muted);
@@ -831,8 +847,14 @@ input[type="range"] { min-height: auto; width: 100%; accent-color: var(--color-p
   .header-actions > .btn.secondary { display: none; } /* تسجيل الدخول متاح عبر قائمة الدرج */
   .brand small { display: none; }
   .brand { font-size: 1.05rem; }
+  /*
+   * بلا min-height: مع aspect-ratio يحسب المتصفح العرض من الارتفاع الأدنى
+   * فيصبح 190 × 16/9 ≈ 338px داخل بطاقة ~270px، فتُقصّ الصورة والنص.
+   */
   .next-media { aspect-ratio: 16 / 10; }
-  .next-media-content { padding: var(--s-4); }
+  /* على الموبايل النص أسفل الصورة: تدرّج عمودي أضمن للتباين من تدرّج أفقي */
+  .next-media::after { background: linear-gradient(180deg, rgba(15,31,58,0.12) 0%, rgba(15,31,58,0.55) 55%, rgba(15,31,58,0.92) 100%); }
+  .next-media-content { padding: var(--s-4); justify-content: flex-end; }
   .next-media-content p { display: none; }
   .next-body { padding: var(--s-4); }
   .result-stats { grid-template-columns: 1fr; }

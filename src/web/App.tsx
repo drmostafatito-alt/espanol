@@ -1,4 +1,4 @@
-import { useEffect, type ReactElement } from 'react';
+import { useEffect, lazy, Suspense, type ReactElement } from 'react';
 import { AuthProvider, useAuth, useRoute } from './state';
 import { Landing } from './pages/Landing';
 import { Login, Signup } from './pages/Auth';
@@ -8,12 +8,13 @@ import { Transparency, NotFound } from './pages/Misc';
 import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
-import { Search } from './pages/Search';
 import { Placement } from './pages/Placement';
 import { PublicHeader } from './components/layout/PublicHeader';
 import { PublicFooter } from './components/layout/PublicFooter';
 import { AppShell } from './components/layout/AppShell';
 import { ConnectionErrorScreen } from './components/ui';
+
+const Search = lazy(() => import('./pages/Search').then(m => ({ default: m.Search })));
 
 function Shell() {
   const [path, navigate] = useRoute();
@@ -66,10 +67,12 @@ function Shell() {
     page = user ? <Settings navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/search' || path.startsWith('/search')) {
     page = (
-      <Search
-        navigate={navigate}
-        initialQuery={typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('q') ?? '' : ''}
-      />
+      <Suspense fallback={<p className="container muted">جارٍ تحميل البحث…</p>}>
+        <Search
+          navigate={navigate}
+          initialQuery={typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('q') ?? '' : ''}
+        />
+      </Suspense>
     );
   } else if (path === '/transparency') {
     page = <Transparency />;

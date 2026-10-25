@@ -1,0 +1,3059 @@
+[
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_1_listen",
+    "type": "listen_choose",
+    "correct": "Hola, me llamo Sara.",
+    "options": [
+      "Hola, me llamo Sara.",
+      "Hola, me llamo Omar.",
+      "Hasta luego, Sara."
+    ],
+    "explanation": "الجملة المسموعة تُعرّف بالاسم: me llamo Sara. لاحظ أن h في hola لا تُنطق، فتُقرأ «أولا»."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_2_word",
+    "type": "word_choice",
+    "correct": "Buenos días",
+    "options": [
+      "Buenos días",
+      "Buenas noches",
+      "Hasta mañana"
+    ],
+    "explanation": "Buenos días تُستخدم صباحًا. لاحظ أن buenos جمع مذكر مع días، بينما نقول buenas noches لأن noches مؤنثة جمع. هذا الاتفاق بين الصفة والاسم سيتكرر كثيرًا."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Hola, ____ llamo Omar.",
+    "stemAr": "مرحبًا، اسمي عمر.",
+    "correct": "me",
+    "options": [],
+    "explanation": "التعبير الثابت هو «me llamo» أي «أدعو نفسي / اسمي». لا نقول «mi llamo» رغم أن mi تعني «خاصتي»، لأن الفعل llamarse انعكاسي يحتاج الضمير me."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_4_order",
+    "type": "word_order",
+    "correct": "Me llamo Sara",
+    "options": [],
+    "explanation": "الترتيب الطبيعي: الضمير الانعكاسي + الفعل + الاسم. Me llamo Sara = اسمي سارة. الإسبانية لا تحتاج ضمير الفاعل (yo) هنا."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_5_missing",
+    "type": "type_missing_word",
+    "stemEs": "____ días, ¿cómo estás?",
+    "stemAr": "صباح الخير، كيف حالك؟",
+    "correct": "Buenos | buenos",
+    "options": [],
+    "explanation": "Buenos días هي التحية الصباحية. الكلمة الأولى تُكتب بحرف كبير في بداية الجملة فقط."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_6_sound",
+    "type": "word_choice",
+    "correct": "h",
+    "options": [
+      "h",
+      "o",
+      "l"
+    ],
+    "explanation": "حرف h في الإسبانية صامت دائمًا: hola تُنطق «أولا»، وhambre «أمبره». الحروف المتحركة a/e/i/o/u تُنطق قصيرة وواضحة، وهذا يسهل القراءة على الناطق بالعربية مقارنة بالإنجليزية."
+  },
+  {
+    "lesson": "prea1-hola-me-llamo",
+    "id": "prea1_ll_7_speak",
+    "type": "speak_with_text",
+    "stemEs": "Hola, me llamo Omar. Mucho gusto.",
+    "stemAr": "مرحبًا، اسمي عمر. تشرّفت بمعرفتك.",
+    "correct": "",
+    "options": [],
+    "explanation": "انطق hola كأنها «أولا»، وme llamo بلام مزدوجة تُنطق مثل «ي» في أغلب لهجات إسبانيا وأمريكا اللاتينية (llamo ≈ «يامو»)، وmucho gusto بضغط على gus. سجّل صوتك وقارنه بالنموذج، فالهدف هو الوضوح لا محاكاة لهجة بعينها."
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Entonces quedamos el viernes a las seis de la tarde.",
+    "stemAr": "إذن نلتقي يوم الجمعة في السادسة مساءً.",
+    "correct": "A las seis de la tarde",
+    "options": [
+      "A las seis de la tarde",
+      "A las cinco de la tarde",
+      "A las ocho de la tarde"
+    ],
+    "explanation": "الصوت أكد الموعد بقوله: a las seis de la tarde أي في السادسة مساءً."
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_2_prep_a",
+    "type": "word_choice",
+    "stemEs": "Quedamos ____ las tres en la plaza.",
+    "stemAr": "نلتقي ____ الثالثة في الساحة.",
+    "correct": "a",
+    "options": [
+      "a",
+      "en",
+      "de"
+    ],
+    "explanation": "مع المواعيد نستخدم دائماً حرف الجر a: Quedamos a las tres."
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Nos vemos mañana por la ____.",
+    "stemAr": "نلتقي غداً بعد الـ____.",
+    "correct": "tarde",
+    "options": [],
+    "explanation": "الفترة المسائية بعد الظهر يُعبّر عنها بـ por la tarde."
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_4_order",
+    "type": "word_order",
+    "correct": "¿A qué hora quedamos mañana?",
+    "options": [],
+    "explanation": "تركيب السؤال عن موعد اللقاء: حرف الجر ¿A + أداة الاستفهام qué + كلمة hora + الفعل quedamos + الظرف mañana?"
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_5_confirm",
+    "type": "word_choice",
+    "stemEs": "— ¿A las cinco? — Sí, ____, me viene perfecto.",
+    "stemAr": "— في الخامسة؟ — نعم، ____، هذا يناسبني تماماً.",
+    "correct": "de acuerdo",
+    "options": [
+      "de acuerdo",
+      "hasta luego",
+      "lo siento"
+    ],
+    "explanation": "عبارة De acuerdo هي التعبير الشائع في الإسبانية لقبول الموعد وتأكيده."
+  },
+  {
+    "lesson": "a1-cita",
+    "id": "a1_cit_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Quedamos el viernes a las cuatro de la tarde.",
+    "stemAr": "نلتقي يوم الجمعة في الرابعة بعد الظهر.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف d في quedamos ونطق cu-a-tro دون إسقاط حرف u."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Quiero comprar una camisa blanca de manga corta.",
+    "stemAr": "أريد شراء قميص أبيض بأكمام قصيرة.",
+    "correct": "Una camisa blanca",
+    "options": [
+      "Una camisa blanca",
+      "Una camisa negra",
+      "Una camisa azul"
+    ],
+    "explanation": "المتحدث قال بوضوح: camisa blanca أي قميص أبيض."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_2_agreement",
+    "type": "word_choice",
+    "stemEs": "María lleva una falda ____.",
+    "stemAr": "ماريا ترتدي تنورة ____.",
+    "correct": "roja",
+    "options": [
+      "roja",
+      "rojo",
+      "rojos"
+    ],
+    "explanation": "تطابق صفة اللون الاسم في التأنيث: falda roja."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Necesito un ____ nuevo para la fiesta.",
+    "stemAr": "أحتاج ____ جديداً للحفلة.",
+    "correct": "zapato",
+    "options": [],
+    "explanation": "كلمة حذاء في الإسبانية هي zapato للمفرد و zapatos للزوجين."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_4_order",
+    "type": "word_order",
+    "correct": "Llevo un pantalón negro elegante.",
+    "options": [],
+    "explanation": "الترتيب المعياري: الفعل Llevo + أداة التنكير un + الاسم pantalón + صفة اللون negro + الصفة elegante."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_5_plural",
+    "type": "word_choice",
+    "stemEs": "Tengo unos zapatos ____.",
+    "stemAr": "لدي حذاء ____.",
+    "correct": "negros",
+    "options": [
+      "negros",
+      "negro",
+      "negras"
+    ],
+    "explanation": "مطابقة الصفة للجمع المذكر: zapatos negros."
+  },
+  {
+    "lesson": "a1-colores-ropa",
+    "id": "a1_col_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Me gusta mucho esta camisa azul.",
+    "stemAr": "يعجبني كثيراً هذا القميص الأزرق.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف z كحرف ثاء خفيف في a-ZUL."
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Voy a pagar con tarjeta de crédito, por favor.",
+    "stemAr": "سأدفع ببطاقة الائتمان، من فضلك.",
+    "correct": "Con tarjeta",
+    "options": [
+      "Con tarjeta",
+      "En efectivo",
+      "A plazos"
+    ],
+    "explanation": "المشترية قالت: Voy a pagar con tarjeta."
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_2_take_it",
+    "type": "word_choice",
+    "stemEs": "Me gusta mucho, me lo ____.",
+    "stemAr": "يعجبني كثيراً، سأـ____.",
+    "correct": "llevo",
+    "options": [
+      "llevo",
+      "dejo",
+      "pongo"
+    ],
+    "explanation": "التعبير الإسباني اليومي للشراء هو: Me lo llevo."
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_3_fill",
+    "type": "fill_blank",
+    "stemEs": "El pantalón cuesta cuarenta ____.",
+    "stemAr": "البنطال يكلف أربعين ____.",
+    "correct": "euros",
+    "options": [],
+    "explanation": "العملة هي euro وتُجمع بإضافة s: cuarenta euros."
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_4_order",
+    "type": "word_order",
+    "correct": "¿Puedo pagar con tarjeta aquí?",
+    "options": [],
+    "explanation": "الترتيب: فعل الاستئذان ¿Puedo + المصدر pagar + حرف الجر con + الاسم tarjeta + ظرف المكان aquí?"
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_5_receipt",
+    "type": "word_choice",
+    "stemEs": "Aquí tiene su ____ de compra.",
+    "stemAr": "تفضل ____ الشراء الخاص بك.",
+    "correct": "ticket",
+    "options": [
+      "ticket",
+      "zapato",
+      "camisa"
+    ],
+    "explanation": "إيصال الشراء في المتاجر الإسبانية يسمى el ticket."
+  },
+  {
+    "lesson": "a1-comprar",
+    "id": "a1_cmp_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Me lo llevo. ¿Cuánto es todo en total?",
+    "stemAr": "سآخذه. كم يبلغ الحساب الإجمالي؟",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على الوصل الصوتي بين Me lo lle-vo و ¿Cuán-to es to-do?"
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-1",
+    "type": "word_choice",
+    "stemEs": "Levanta _____ mano derecha, por favor.",
+    "stemAr": "ارفع اليد اليمنى من فضلك.",
+    "correct": "la",
+    "options": [
+      "la",
+      "el",
+      "los"
+    ],
+    "explanation": "كلمة mano مؤنثة شاذة عن القاعدة العامة، وتأخذ دائماً la mano."
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-2",
+    "type": "fill_blank",
+    "stemEs": "Protege la _____ con un casco.",
+    "stemAr": "احمِ الرأس بخوذة.",
+    "correct": "cabeza",
+    "options": [],
+    "explanation": "كلمة cabeza تعني الرأس وهي مؤنثة (la cabeza)."
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-3",
+    "type": "word_choice",
+    "stemEs": "Tiene los _____ muy cansados hoy.",
+    "stemAr": "عيناه متعبتان جداً اليوم.",
+    "correct": "ojos",
+    "options": [
+      "ojos",
+      "brazos",
+      "piernas"
+    ],
+    "explanation": "كلمة ojos هي جمع ojo وتعني العيون."
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-4",
+    "type": "word_order",
+    "correct": "El deporte es bueno para el cuerpo",
+    "options": [],
+    "explanation": "الترتيب السليم: الفاعل El deporte ثم الفعل es والصفة bueno ثم حرف الجر para والمجرور el cuerpo."
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-5",
+    "type": "listen_choose",
+    "stemEs": "Tengo un dolor fuerte en la espalda.",
+    "stemAr": "لدي ألم شديد في الظهر.",
+    "correct": "espalda",
+    "options": [
+      "espalda",
+      "estómago",
+      "pierna"
+    ],
+    "explanation": "المتحدث قال: dolor fuerte en la espalda."
+  },
+  {
+    "lesson": "a1-cuerpo",
+    "id": "ex-a1-cue-6",
+    "type": "speak_with_text",
+    "stemEs": "El médico examina el brazo derecho.",
+    "stemAr": "الطبيب يفحص الذراع اليمنى.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف z كـ ثاء في brazo في إسبانيا."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_1_listen",
+    "type": "listen_choose",
+    "correct": "Alto, simpático y trabajador",
+    "options": [
+      "Alto, simpático y trabajador",
+      "Bajo, perezoso y serio",
+      "Antipático y tímido"
+    ],
+    "explanation": "نور قالت بالحرف: «Es un chico alto, muy simpático y trabajador»."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_2_choice_gen",
+    "type": "word_choice",
+    "stemEs": "Elena es una persona muy ____.",
+    "stemAr": "إيلينا إنسانة مجتهدة للغاية.",
+    "correct": "trabajadora",
+    "options": [
+      "trabajadora",
+      "trabajador",
+      "trabajadores"
+    ],
+    "explanation": "الصفات المنتهية باللاحقة -or (مثل trabajador) يُصاغ مؤنثها بإضافة حرف a فتصبح: trabajadora."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Mi hermana es muy ____ y saca buenas notas.",
+    "stemAr": "أختي ____ للغاية وتحصل على علامات جيدة.",
+    "correct": "inteligente",
+    "options": [],
+    "explanation": "الصفات المنتهية بحرف e (مثل inteligente) تكون محايدة الجنس وتصلح للمذكر والمؤنث بنفس الصيغة."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_4_choice_opp",
+    "type": "word_choice",
+    "stemEs": "Su hermano no es alto, es bastante ____.",
+    "stemAr": "أخوه ليس طويل القامة، إنه ____ تمامًا (قصير).",
+    "correct": "bajo",
+    "options": [
+      "bajo",
+      "grande",
+      "baja"
+    ],
+    "explanation": "عكس alto للمذكر هو bajo، بينما للمؤنث تكون baja."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_5_order",
+    "type": "word_order",
+    "correct": "Mi hermano es muy simpático.",
+    "options": [],
+    "explanation": "الترتيب القياسي: المبتدأ Mi hermano + فعل الكينونة es + ظرف الشدة muy + الصفة simpático."
+  },
+  {
+    "lesson": "a1-describir-persona",
+    "id": "a1_desc_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Mi amigo es alto y simpático.",
+    "stemAr": "صديقي طويل ولطيف.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف s النقي في simpático، والنبرة على المقطع المنبور sim-PÁ-ti-co."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Tengo clase de conversación el viernes.",
+    "stemAr": "لدي حصة محادثة يوم الجمعة.",
+    "correct": "El viernes",
+    "options": [
+      "El viernes",
+      "El jueves",
+      "El martes"
+    ],
+    "explanation": "الصوت ذكر بوضوح el viernes أي يوم الجمعة."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_2_article",
+    "type": "word_choice",
+    "stemEs": "____ sábado voy al centro cultural.",
+    "stemAr": "____ السبت أذهب إلى المركز الثقافي.",
+    "correct": "El",
+    "options": [
+      "El",
+      "En",
+      "La"
+    ],
+    "explanation": "أيام الأسبوع مذكرة وتأخذ أداة التعريف El للدلالة على الموعد، ولا يُستخدم معها حرف الجر En."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_3_fill",
+    "type": "fill_blank",
+    "stemEs": "El primer día de trabajo es el ____.",
+    "stemAr": "أول يوم عمل في الأسبوع هو يوم الـ____.",
+    "correct": "lunes",
+    "options": [],
+    "explanation": "يوم الاثنين في الإسبانية هو el lunes وهو اليوم الأول في أسبوع العمل الأوروبي."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_4_order",
+    "type": "word_order",
+    "correct": "Los domingos descanso en casa.",
+    "options": [],
+    "explanation": "الترتيب: أداة الجمع مع اليوم Los domingos + الفعل descanso + شبه الجملة en casa."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_5_plural",
+    "type": "word_choice",
+    "stemEs": "Tengo reunión todos ____.",
+    "stemAr": "لدي اجتماع كل ____.",
+    "correct": "los martes",
+    "options": [
+      "los martes",
+      "los marteses",
+      "en martes"
+    ],
+    "explanation": "أيام الأسبوع المنتهية بحرف s في المفرد تُجمع فقط بتغيير أداة التعريف: el martes تصبح los martes."
+  },
+  {
+    "lesson": "a1-dias-meses",
+    "id": "a1_dia_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "El miércoles tengo una cita importante.",
+    "stemAr": "يوم الأربعاء لدي موعد هام.",
+    "correct": "",
+    "options": [],
+    "explanation": "ركز على نطق النبرة في miér-coles وحرف c المرقق."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-1",
+    "type": "word_choice",
+    "stemEs": "Para ir al museo, sigues _____.",
+    "stemAr": "للذهاب إلى المتحف، تكمل ...",
+    "correct": "todo recto",
+    "options": [
+      "todo recto",
+      "a la izquierda",
+      "segunda"
+    ],
+    "explanation": "تعبير todo recto يعني السير مباشرة إلى الأمام دون انعطاف."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-2",
+    "type": "word_choice",
+    "stemEs": "En la esquina, giras _____ la derecha.",
+    "stemAr": "عند الزاوية، تنعطف ... اليمين.",
+    "correct": "a",
+    "options": [
+      "a",
+      "en",
+      "de"
+    ],
+    "explanation": "نستخدم دائماً حرف الجر a مع الاتجاهات: a la derecha و a la izquierda."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-3",
+    "type": "fill_blank",
+    "stemEs": "Luego _____ la calle con cuidado.",
+    "stemAr": "ثم تعبر الشارع بحذر.",
+    "correct": "cruzas",
+    "options": [],
+    "explanation": "تصريف الفعل cruzar مع tú في المضارع هو cruzas."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-4",
+    "type": "word_order",
+    "correct": "Tomas la primera calle a la derecha",
+    "options": [],
+    "explanation": "الترتيب الصحيح: الفعل Tomas ثم المفعول به la primera calle ثم الاتجاه a la derecha."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-5",
+    "type": "listen_choose",
+    "stemEs": "Giras a la izquierda en la plaza.",
+    "stemAr": "تنعطف إلى اليسار في الميدان.",
+    "correct": "izquierda",
+    "options": [
+      "izquierda",
+      "derecha",
+      "recto"
+    ],
+    "explanation": "المتحدث يوجه السائل نحو اليسار بقوله: a la izquierda."
+  },
+  {
+    "lesson": "a1-direcciones",
+    "id": "ex-a1-dir-6",
+    "type": "speak_with_text",
+    "stemEs": "Tomas la segunda calle a la izquierda.",
+    "stemAr": "تأخذ الشارع الثاني إلى اليسار.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق z في izquierda كـ ثاء في إسبانيا."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-1",
+    "type": "word_choice",
+    "stemEs": "A mí me _____ la cabeza hoy.",
+    "stemAr": "يؤلمني رأسي اليوم.",
+    "correct": "duele",
+    "options": [
+      "duele",
+      "duelen",
+      "dolo"
+    ],
+    "explanation": "مع الاسم المفرد مثل la cabeza نستخدم صيغة duele."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-2",
+    "type": "fill_blank",
+    "stemEs": "Me _____ mucho los ojos después de leer.",
+    "stemAr": "تؤلمني عيناي كثيراً بعد القراءة.",
+    "correct": "duelen",
+    "options": [],
+    "explanation": "مع الأسماء الجمع مثل los ojos نستخدم صيغة duelen."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-3",
+    "type": "word_choice",
+    "stemEs": "El niño no va a clase porque tiene _____.",
+    "stemAr": "الطفل لا يذهب للحصة لأن لديه ...",
+    "correct": "fiebre",
+    "options": [
+      "fiebre",
+      "fuerte",
+      "resfriado"
+    ],
+    "explanation": "ارتفاع حرارة الجسم يسمى fiebre (Tener fiebre)."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-4",
+    "type": "word_order",
+    "correct": "Me duele mucho la garganta",
+    "options": [],
+    "explanation": "الترتيب الصحيح: الضمير Me ثم الفعل duele والظرف mucho ثم العضو la garganta."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-5",
+    "type": "listen_choose",
+    "stemEs": "No puedo cantar porque me duele la garganta.",
+    "stemAr": "لا أستطيع الغناء لأن حلقي يؤلمني.",
+    "correct": "garganta",
+    "options": [
+      "garganta",
+      "espalda",
+      "cabeza"
+    ],
+    "explanation": "الشكوى تركز على الحلق: me duele la garganta."
+  },
+  {
+    "lesson": "a1-doler",
+    "id": "ex-a1-dol-6",
+    "type": "speak_with_text",
+    "stemEs": "Tengo un resfriado y me duele la espalda.",
+    "stemAr": "عندي نزلة برد ويؤلمني ظهري.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف d في resfriado كـ ذال خفيفة بين الصائتين."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-1",
+    "type": "word_choice",
+    "stemEs": "El banco está cerca _____ centro.",
+    "stemAr": "البنك قريب من وسط المدينة.",
+    "correct": "del",
+    "options": [
+      "del",
+      "de el",
+      "de la"
+    ],
+    "explanation": "القاعدة النحوية تلزم إدغام de + el لتصبح del أمام الأسماء المذكرة."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-2",
+    "type": "fill_blank",
+    "stemEs": "¿_____ está el museo nacional?",
+    "stemAr": "أين يقع المتحف الوطني؟",
+    "correct": "dónde | donde",
+    "options": [],
+    "explanation": "أداة الاستفهام عن المكان هي dónde مع علامة النبر (tilde)."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-3",
+    "type": "word_choice",
+    "stemEs": "La estación está _____ de aquí.",
+    "stemAr": "المحطة تقع ... من هنا.",
+    "correct": "lejos",
+    "options": [
+      "lejos",
+      "cerca",
+      "dónde"
+    ],
+    "explanation": "كلمة lejos تعني بعيداً (está lejos de aquí = بعيد عن هنا)."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-4",
+    "type": "word_order",
+    "correct": "El parque está en la avenida",
+    "options": [],
+    "explanation": "الترتيب الصحيح: الفاعل El parque ثم الفعل está ثم حرف الجر والمكان en la avenida."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-5",
+    "type": "listen_choose",
+    "stemEs": "¿Dónde está el museo de arte?",
+    "stemAr": "أين يقع متحف الفنون؟",
+    "correct": "museo",
+    "options": [
+      "museo",
+      "parque",
+      "banco"
+    ],
+    "explanation": "السؤال المسموع هو: ¿Dónde está el museo de arte? والاسم هو museo."
+  },
+  {
+    "lesson": "a1-donde-esta",
+    "id": "ex-a1-don-6",
+    "type": "speak_with_text",
+    "stemEs": "El museo está cerca de la estación.",
+    "stemAr": "المتحف يقع قريباً من المحطة.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف c كـ ثاء في cerca في إسبانيا، ونطق s في أمريكا اللاتينية."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-1",
+    "type": "word_choice",
+    "stemEs": "¡_____, hay un incendio aquí!",
+    "stemAr": "النجدة، هناك حريق هنا!",
+    "correct": "Socorro",
+    "options": [
+      "Socorro",
+      "Gracias",
+      "Hola"
+    ],
+    "explanation": "نداء الاستغاثة في الإسبانية هو ¡Socorro! أو ¡Ayuda!."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-2",
+    "type": "fill_blank",
+    "stemEs": "Por favor, llame a una _____ inmediatamente.",
+    "stemAr": "من فضلك، اتصل بسيارة إسعاف فوراً.",
+    "correct": "ambulancia",
+    "options": [],
+    "explanation": "سيارة الإسعاف تسمى ambulancia وهي مؤنثة (una ambulancia)."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-3",
+    "type": "word_choice",
+    "stemEs": "El paciente debe ir al hospital porque es una _____ médica.",
+    "stemAr": "يجب على المريض الذهاب للمستشفى لأنها ... طبية.",
+    "correct": "urgencia",
+    "options": [
+      "urgencia",
+      "policía",
+      "peligro"
+    ],
+    "explanation": "حالة الطوارئ الطبية تسمى urgencia médica."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-4",
+    "type": "word_order",
+    "correct": "Llame a la ambulancia rápido",
+    "options": [],
+    "explanation": "الترتيب السليم: الفعل في صيغة الطلب Llame ثم حرف الجر a والأداة la والاسم ambulancia والظرف rápido."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-5",
+    "type": "listen_choose",
+    "stemEs": "¡Hay un accidente, llame a la policía ahora!",
+    "stemAr": "هناك حادث، اتصل بالشرطة الآن!",
+    "correct": "policía",
+    "options": [
+      "policía",
+      "ambulancia",
+      "médico"
+    ],
+    "explanation": "المتحدث قال بوضوح: llame a la policía."
+  },
+  {
+    "lesson": "a1-emergencia",
+    "id": "ex-a1-eme-6",
+    "type": "speak_with_text",
+    "stemEs": "¡Ayuda! Necesito un médico rápido.",
+    "stemAr": "النجدة! أحتاج إلى طبيب بسرعة.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه للتشديد على المقاطع المنبورة في ¡Ayuda! و rápido."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-1",
+    "type": "word_choice",
+    "stemEs": "Yo _____ español todos los días.",
+    "stemAr": "أنا أدرس الإسبانية كل يوم.",
+    "correct": "estudio",
+    "options": [
+      "estudio",
+      "estudia",
+      "estudiamos"
+    ],
+    "explanation": "أفعال المجموعة الأولى المنتهية بـ -ar تأخذ اللاحقة -o مع yo: estudio."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-2",
+    "type": "fill_blank",
+    "stemEs": "Mi hermana estudia medicina en la _____.",
+    "stemAr": "أختي تدرس الطب في الجامعة.",
+    "correct": "universidad",
+    "options": [],
+    "explanation": "كلمة universidad مؤنثة وتعني الجامعة (la universidad)."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-3",
+    "type": "word_choice",
+    "stemEs": "Me gusta _____ cosas nuevas en el curso.",
+    "stemAr": "يعجبني أن أتعلم أشياء جديدة في الدورة.",
+    "correct": "aprender",
+    "options": [
+      "aprender",
+      "escuela",
+      "clase"
+    ],
+    "explanation": "الفعل aprender يعني يتعلم ويكتسب المعرفة."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-4",
+    "type": "word_order",
+    "correct": "Los estudiantes estudian en la escuela",
+    "options": [],
+    "explanation": "الترتيب الصحيح: الفاعل Los estudiantes ثم الفعل estudian ثم شبه الجملة en la escuela."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-5",
+    "type": "listen_choose",
+    "stemEs": "Tengo una clase de lengua esta tarde.",
+    "stemAr": "لدي حصة لغة بعد ظهر اليوم.",
+    "correct": "clase",
+    "options": [
+      "clase",
+      "universidad",
+      "profesor"
+    ],
+    "explanation": "المتحدث قال: Tengo una clase de lengua."
+  },
+  {
+    "lesson": "a1-estudiar",
+    "id": "ex-a1-est-6",
+    "type": "speak_with_text",
+    "stemEs": "Hago un curso para aprender español.",
+    "stemAr": "أحضر دورة تدريبية لتعلم الإسبانية.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف r بوضوح في curso و aprender."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-1",
+    "type": "word_choice",
+    "stemEs": "Buenos días, _____ algo para el dolor de cabeza.",
+    "stemAr": "صباح الخير، ... شيئاً لألم الرأس.",
+    "correct": "quería",
+    "options": [
+      "quería",
+      "dame",
+      "tienes"
+    ],
+    "explanation": "تعبير Quería algo para... هو الأسلوب المهذب القياسي للطلب في المتاجر والصيدليات الإسبانية."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-2",
+    "type": "fill_blank",
+    "stemEs": "Tiene que tomar una pastilla _____ ocho horas.",
+    "stemAr": "عليك تناول قرص كل ثماني ساعات.",
+    "correct": "cada",
+    "options": [],
+    "explanation": "كلمة cada تستخدم لتحديد تكرار الجرعات الزمنية: cada ocho horas."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-3",
+    "type": "word_choice",
+    "stemEs": "El médico receta un _____ dulce para la tos.",
+    "stemAr": "الطبيب يصف شراباً حلواً للسعال.",
+    "correct": "jarabe",
+    "options": [
+      "jarabe",
+      "pastilla",
+      "caja"
+    ],
+    "explanation": "الدواء السائل يُسمى jarabe."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-4",
+    "type": "word_order",
+    "correct": "Compro una caja de medicina",
+    "options": [],
+    "explanation": "الترتيب السليم: الفعل Compro ثم أداة التنكير una والاسم caja وحرف الجر de والاسم medicina."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-5",
+    "type": "listen_choose",
+    "stemEs": "Necesito unas pastillas para la fiebre alta.",
+    "stemAr": "أحتاج أقراصاً للحمى المرتفعة.",
+    "correct": "pastillas",
+    "options": [
+      "pastillas",
+      "jarabe",
+      "receta"
+    ],
+    "explanation": "المريض طلب: unas pastillas para la fiebre."
+  },
+  {
+    "lesson": "a1-farmacia",
+    "id": "ex-a1-far-6",
+    "type": "speak_with_text",
+    "stemEs": "Quería una medicina para la fiebre, por favor.",
+    "stemAr": "أريد علاجاً للحمى من فضلك.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف d في medicina كـ ذال خفيفة."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Me gusta mucho el té verde caliente.",
+    "stemAr": "يعجبني كثيراً الشاي الأخضر الساخن.",
+    "correct": "El té verde caliente",
+    "options": [
+      "El té verde caliente",
+      "El café con leche",
+      "El agua fría"
+    ],
+    "explanation": "المتحدث صرح بوضوح: Me gusta mucho el té verde caliente."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_2_agreement",
+    "type": "word_choice",
+    "stemEs": "A mí me ____ los pescados frescos.",
+    "stemAr": "أنا تعجبني الأسماك الطازجة.",
+    "correct": "gustan",
+    "options": [
+      "gustan",
+      "gusta",
+      "gusto"
+    ],
+    "explanation": "مع الأسماء الجمع مثل los pescados، يُصرّف فعل gustar بصيغة الغائب الجمع: gustan."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_3_fill",
+    "type": "fill_blank",
+    "stemEs": "No me ____ el arroz frío.",
+    "stemAr": "لا يعجبني الأرز البارد.",
+    "correct": "gusta",
+    "options": [],
+    "explanation": "مع الاسم المفرد (el arroz) نستخدم صيغة المفرد: gusta."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_4_order",
+    "type": "word_order",
+    "correct": "No me gusta la carne frita.",
+    "options": [],
+    "explanation": "تركيب النفي مع gustar: أداة النفي No + ضمير المفعول me + الفعل gusta + الاسم الفاعل la carne frita."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_5_pronoun",
+    "type": "word_choice",
+    "stemEs": "¿____ gusta la comida tradicional?",
+    "stemAr": "هل يعجبك الطعام التقليدي؟",
+    "correct": "Te",
+    "options": [
+      "Te",
+      "Tú",
+      "Ti"
+    ],
+    "explanation": "ضمير المفعول غير المباشر للمخاطب tú مع فعل gustar هو: te (¿Te gusta...?)."
+  },
+  {
+    "lesson": "a1-gustar",
+    "id": "a1_gus_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Me gusta mucho el pan con aceite de oliva.",
+    "stemAr": "يعجبني كثيراً الخبز مع زيت الزيتون.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف c في aceite كحرف ثاء ونطق حرف l بشكل واضح."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Mi nuevo piso tiene tres habitaciones y un salón muy amplio.",
+    "stemAr": "شقتي الجديدة فيها ثلاث غرف وصالون واسع للغاية.",
+    "correct": "Tres habitaciones",
+    "options": [
+      "Tres habitaciones",
+      "Dos habitaciones",
+      "Una habitación"
+    ],
+    "explanation": "المتحدث قال بوضوح: tiene tres habitaciones."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_2_gender_salon",
+    "type": "word_choice",
+    "stemEs": "En mi casa, ____ salón es muy luminoso.",
+    "stemAr": "في منزلي، الـ____ صالون مضيء جداً.",
+    "correct": "el",
+    "options": [
+      "el",
+      "la",
+      "las"
+    ],
+    "explanation": "كلمة salón مذكرة في الإسبانية: el salón."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Preparo la cena en la ____.",
+    "stemAr": "أعد وجبة العشاء في الـ____.",
+    "correct": "cocina",
+    "options": [],
+    "explanation": "المطبخ في الإسبانية هو: la cocina."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_4_order",
+    "type": "word_order",
+    "correct": "La casa tiene un baño moderno.",
+    "options": [],
+    "explanation": "الترتيب: الفاعل La casa + الفعل tiene + المفعول un baño + الصفة moderno."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_5_bed",
+    "type": "word_choice",
+    "stemEs": "En el dormitorio hay una ____ cómoda.",
+    "stemAr": "في غرفة النوم يوجد ____ مريح.",
+    "correct": "cama",
+    "options": [
+      "cama",
+      "cocina",
+      "baño"
+    ],
+    "explanation": "السرير بالإسبانية هو la cama وهو مؤنث."
+  },
+  {
+    "lesson": "a1-habitaciones",
+    "id": "a1_hab_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Mi casa tiene dos habitaciones, salón, cocina y baño.",
+    "stemAr": "منزلي يضم غرفتين وصالوناً ومطبخاً وحماماً.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف b في ha-bi-ta-cio-nes وحرف c في co-ci-na."
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_1_listen",
+    "type": "listen_choose",
+    "stemEs": "En mi habitación hay dos ventanas grandes.",
+    "stemAr": "في غرفتي توجد نافذتان كبيرتان.",
+    "correct": "Expresa existencia (hay)",
+    "options": [
+      "Expresa existencia (hay)",
+      "Expresa localización (está)",
+      "Expresa deseo (querer)"
+    ],
+    "explanation": "استخدام hay مع الأعداد (dos ventanas) يدل على بيان الوجود غير المحدد."
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_2_choice_hay",
+    "type": "word_choice",
+    "stemEs": "En el salón ____ una mesa redonda.",
+    "stemAr": "في الصالون ____ طاولة مستديرة.",
+    "correct": "hay",
+    "options": [
+      "hay",
+      "está",
+      "es"
+    ],
+    "explanation": "القاعدة: hay + una mesa (نكرة)."
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_3_fill",
+    "type": "fill_blank",
+    "stemEs": "¿Dónde ____ el baño, por favor?",
+    "stemAr": "أين ____ الحمام، من فضلك؟",
+    "correct": "está",
+    "options": [],
+    "explanation": "مع الاسم المعرّف بـ el (el baño) نسأل بـ: ¿Dónde está el baño?"
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_4_order",
+    "type": "word_order",
+    "correct": "Las sillas están en la cocina.",
+    "options": [],
+    "explanation": "الترتيب: الفاعل المعرّف بالجمع Las sillas + الفعل están + شبه الجملة en la cocina."
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_5_plural_hay",
+    "type": "word_choice",
+    "stemEs": "En esta habitación no ____ sillas.",
+    "stemAr": "في هذه الغرفة لا ____ كراسٍ.",
+    "correct": "hay",
+    "options": [
+      "hay",
+      "están",
+      "son"
+    ],
+    "explanation": "مع الأسماء المجردة من الأداة نستخدم hay: no hay sillas."
+  },
+  {
+    "lesson": "a1-hay-estar",
+    "id": "a1_hay_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "¿Dónde está la cocina de la casa?",
+    "stemAr": "أين يقع مطبخ المنزل؟",
+    "correct": "",
+    "options": [],
+    "explanation": "ركز على نبرة الاستفهام في ¿Dón-de es-tá...?"
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_1_listen",
+    "type": "listen_choose",
+    "stemEs": "En mi tiempo libre me gusta mucho hacer deporte al aire libre.",
+    "stemAr": "في وقت فراغي يعجبني كثيراً ممارسة الرياضة في الهواء الطلق.",
+    "correct": "Hacer deporte",
+    "options": [
+      "Hacer deporte",
+      "Cocinar en casa",
+      "Ver la televisión"
+    ],
+    "explanation": "المتحدث قال: me gusta mucho hacer deporte."
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_2_gustar_infinitives",
+    "type": "word_choice",
+    "stemEs": "A mí me ____ leer novelas y escribir poesía.",
+    "stemAr": "أنا يعجبني قراءة الروايات وكتابة الشعر.",
+    "correct": "gusta",
+    "options": [
+      "gusta",
+      "gustan",
+      "gusto"
+    ],
+    "explanation": "مع الأفعال في المصدر نستخدم دائماً صيغة المفرد: me gusta leer y escribir."
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Los fines de semana practico ____ con mis amigos.",
+    "stemAr": "في عطلات نهاية الأسبوع أمارس ____ مع أصدقائي.",
+    "correct": "deporte",
+    "options": [],
+    "explanation": "الرياضة بالإسبانية هي: el deporte."
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_4_order",
+    "type": "word_order",
+    "correct": "En mi tiempo libre hago deporte.",
+    "options": [],
+    "explanation": "الترتيب: شبه الجملة الظرفية En mi tiempo libre + الفعل hago + المفعول deporte."
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_5_weekend",
+    "type": "word_choice",
+    "stemEs": "Paso el ____ de semana con mi familia.",
+    "stemAr": "أقضي ____ الأسبوع مع عائلتي.",
+    "correct": "fin",
+    "options": [
+      "fin",
+      "medio",
+      "principio"
+    ],
+    "explanation": "عطلة نهاية الأسبوع هي: el fin de semana."
+  },
+  {
+    "lesson": "a1-hobbies",
+    "id": "a1_hob_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "En mi tiempo libre me gusta salir con amigos y hacer deporte.",
+    "stemAr": "في وقت فراغي يعجبني الخروج مع الأصدقاء وممارسة الرياضة.",
+    "correct": "",
+    "options": [],
+    "explanation": "حافظ على سلاسة نطق sa-lir con a-mi-gos y ha-cer de-por-te."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Normalmente como a las dos y media de la tarde.",
+    "stemAr": "عادة أتناول الغداء في الثانية والنصف بعد الظهر.",
+    "correct": "A las 14:30 (dos y media)",
+    "options": [
+      "A las 14:30 (dos y media)",
+      "A las 14:00 (dos en punto)",
+      "A las 15:30 (tres y media)"
+    ],
+    "explanation": "المتحدث قال: a las dos y media (14:30)."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_2_adverb_siempre",
+    "type": "word_choice",
+    "stemEs": "Yo ____ desayuno antes de salir de casa.",
+    "stemAr": "أنا ____ أتناول الإفطار قبل الخروج من المنزل.",
+    "correct": "siempre",
+    "options": [
+      "siempre",
+      "nunca",
+      "poco"
+    ],
+    "explanation": "ظرف التكرار الدائم هو: siempre."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Entro a trabajar ____ las nueve de la mañana.",
+    "stemAr": "أبدأ العمل في تمام ____ التاسعة صباحاً.",
+    "correct": "a",
+    "options": [],
+    "explanation": "نستخدم دائماً حرف الجر a مع ساعات المواعيد والروتين: a las nueve."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_4_order",
+    "type": "word_order",
+    "correct": "Siempre duermo a las once.",
+    "options": [],
+    "explanation": "الترتيب: ظرف التكرار Siempre + الفعل duermo + حرف الجر a + الأداة las + العدد once."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_5_never",
+    "type": "word_choice",
+    "stemEs": "Yo ____ ceno después de medianoche.",
+    "stemAr": "أنا ____ أتعشى بعد منتصف الليل.",
+    "correct": "nunca",
+    "options": [
+      "nunca",
+      "siempre",
+      "mucho"
+    ],
+    "explanation": "nunca تعني أبداً وتفيد النفي المطلق."
+  },
+  {
+    "lesson": "a1-hora-rutina",
+    "id": "a1_hr_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Ceno a las nueve y duermo a las once de la noche.",
+    "stemAr": "أتعشى في التاسعة وأنام في الحادية عشرة ليلاً.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف d في duermo وربط a las nue-ve."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-1",
+    "type": "word_choice",
+    "stemEs": "Trabajo desde las nueve _____ las cinco.",
+    "stemAr": "أعمل من الساعة التاسعة حتى الخامسة.",
+    "correct": "hasta",
+    "options": [
+      "hasta",
+      "a",
+      "en"
+    ],
+    "explanation": "الصيغة الصحيحة دائماً هي: desde las... hasta las...."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-2",
+    "type": "fill_blank",
+    "stemEs": "Empiezo a trabajar en la _____ a las ocho.",
+    "stemAr": "أبدأ العمل في المكتب عند الساعة الثامنة.",
+    "correct": "oficina",
+    "options": [],
+    "explanation": "كلمة oficina مؤنثة وتأخذ أداة التعريف la."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-3",
+    "type": "word_choice",
+    "stemEs": "Siempre llego _____ a la oficina.",
+    "stemAr": "أصل دائماً ... إلى المكتب.",
+    "correct": "temprano",
+    "options": [
+      "temprano",
+      "tarde",
+      "descanso"
+    ],
+    "explanation": "كلمة temprano تعني مبكراً."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-4",
+    "type": "word_order",
+    "correct": "Mi horario es de ocho a cuatro",
+    "options": [],
+    "explanation": "الترتيب السليم: الفاعل Mi horario ثم الفعل es ثم صيغة الساعات المختصرة de ocho a cuatro."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-5",
+    "type": "listen_choose",
+    "stemEs": "A las dos tenemos un descanso para comer.",
+    "stemAr": "في تمام الثانية لدينا استراحة لتناول الطعام.",
+    "correct": "descanso",
+    "options": [
+      "descanso",
+      "jornada",
+      "oficina"
+    ],
+    "explanation": "المتحدث قال: tenemos un descanso para comer."
+  },
+  {
+    "lesson": "a1-horario-trabajo",
+    "id": "ex-a1-hor-6",
+    "type": "speak_with_text",
+    "stemEs": "Mi jornada de trabajo termina tarde hoy.",
+    "stemAr": "يوم عملي ينتهي متأخراً اليوم.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف j في jornada كـ خاء مرققة."
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Ahora mismo son las tres y media.",
+    "stemAr": "في الوقت الحالي الساعة الثالثة والنصف.",
+    "correct": "Son las tres y media",
+    "options": [
+      "Son las tres y media",
+      "Son las tres y cuarto",
+      "Son las dos y media"
+    ],
+    "explanation": "التعبير son las tres y media يعني الثالثة والنصف بدقة."
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_2_verb_ser",
+    "type": "word_choice",
+    "stemEs": "____ la una en punto.",
+    "stemAr": "____ الواحدة تماماً.",
+    "correct": "Es",
+    "options": [
+      "Es",
+      "Son",
+      "Está"
+    ],
+    "explanation": "الساعة الواحدة مفرد وتأخذ صيغة المفرد Es la una، أما بقية الساعات فتأخذ صيغة الجمع Son las..."
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_3_fill",
+    "type": "fill_blank",
+    "stemEs": "¿Qué ____ es, por favor?",
+    "stemAr": "كم ____ الآن من فضلك؟",
+    "correct": "hora",
+    "options": [],
+    "explanation": "السؤال القياسي عن الوقت في الإسبانية هو دائماً: ¿Qué hora es?"
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_4_order",
+    "type": "word_order",
+    "correct": "Son las cuatro menos cuarto.",
+    "options": [],
+    "explanation": "التركيب المعياري للوقت: الفعل الجمع Son + الأداة las + العدد cuatro + صيغة الاستثناء menos cuarto."
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_5_period",
+    "type": "word_choice",
+    "stemEs": "Son las cinco de la ____.",
+    "stemAr": "إنها الخامسة من بعد الـ____.",
+    "correct": "tarde",
+    "options": [
+      "tarde",
+      "mañana",
+      "noche"
+    ],
+    "explanation": "فترة الظهيرة والمساء حتى غروب الشمس يُطلق عليها بالإسبانية: la tarde."
+  },
+  {
+    "lesson": "a1-la-hora",
+    "id": "a1_hor_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Son las dos y cuarto de la tarde.",
+    "stemAr": "إنها الثانية والربع بعد الظهر.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف d في dos وربط الكلمات بسلاسة: Son las dos y cuarto."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-1",
+    "type": "word_choice",
+    "stemEs": "Vivo en _____ calle Mayor.",
+    "stemAr": "أعيش في شارع مايور.",
+    "correct": "la",
+    "options": [
+      "la",
+      "el",
+      "los"
+    ],
+    "explanation": "في الإسبانية كلمة calle مؤنثة دائماً وتأخذ أداة التعريف la."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-2",
+    "type": "word_choice",
+    "stemEs": "Voy a visitar un _____ famoso.",
+    "stemAr": "سأزور ... شهيراً.",
+    "correct": "museo",
+    "options": [
+      "museo",
+      "supermercado",
+      "banco"
+    ],
+    "explanation": "المتحف (el museo) هو المكان المخصص للآثار والمعارض الفنية."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-3",
+    "type": "fill_blank",
+    "stemEs": "Los niños juegan en el _____ grande.",
+    "stemAr": "الأطفال يلعبون في المنتزه الكبير.",
+    "correct": "parque",
+    "options": [],
+    "explanation": "كلمة parque تعني الحديقة العامة أو المنتزه وتأخذ el."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-4",
+    "type": "word_order",
+    "correct": "Estamos en la plaza principal",
+    "options": [],
+    "explanation": "الترتيب السليم: الفعل أولاً ثم حرف الجر en ثم أداة التعريف la والاسم plaza والصفة principal."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-5",
+    "type": "listen_choose",
+    "stemEs": "¿Dónde está la _____ de tren?",
+    "stemAr": "أين تقع محطة القطار؟",
+    "correct": "estación",
+    "options": [
+      "estación",
+      "calle",
+      "plaza"
+    ],
+    "explanation": "الكلمة المسموعة هي estación وتعني محطة."
+  },
+  {
+    "lesson": "a1-lugares-ciudad",
+    "id": "ex-a1-lug-6",
+    "type": "speak_with_text",
+    "stemEs": "Hay un hospital moderno en la ciudad.",
+    "stemAr": "يوجد مستشفى حديث في المدينة.",
+    "correct": "",
+    "options": [],
+    "explanation": "تذكر أن حرف h في hospital صامت ولا ينطق في الإسبانية."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Primero desayuno en casa y luego voy a la universidad.",
+    "stemAr": "أولاً أفطر في البيت ثم أذهب إلى الجامعة.",
+    "correct": "Desayunar en casa",
+    "options": [
+      "Desayunar en casa",
+      "Ir a la universidad",
+      "Dormir una siesta"
+    ],
+    "explanation": "المتحدث قال: Primero desayuno en casa."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_2_connector_luego",
+    "type": "word_choice",
+    "stemEs": "Desayuno a las ocho y ____ voy a trabajar.",
+    "stemAr": "أفطر في الثامنة و____ أذهب للعمل.",
+    "correct": "luego",
+    "options": [
+      "luego",
+      "nunca",
+      "pero"
+    ],
+    "explanation": "رابط التتابع الزمني هو: luego."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_3_fill",
+    "type": "fill_blank",
+    "stemEs": "____ me levanto a las siete de la mañana.",
+    "stemAr": "____ أستيقظ في السابعة صباحاً.",
+    "correct": "Primero | primero",
+    "options": [],
+    "explanation": "رابط البداية في التسلسل هو: Primero."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_4_order",
+    "type": "word_order",
+    "correct": "Por la noche ceno y duermo.",
+    "options": [],
+    "explanation": "الترتيب: الظرف الزمني Por la noche + الفعل الأول ceno + حرف العطف y + الفعل الثاني duermo."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_5_finally",
+    "type": "word_choice",
+    "stemEs": "Y ____ me acuesto a las once.",
+    "stemAr": "و____ أخلد للنوم في الحادية عشرة.",
+    "correct": "finalmente",
+    "options": [
+      "finalmente",
+      "primero",
+      "siempre"
+    ],
+    "explanation": "رابط الختام هو: finalmente."
+  },
+  {
+    "lesson": "a1-mi-dia",
+    "id": "a1_md_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Por la mañana estudio, por la tarde trabajo y por la noche descanso.",
+    "stemAr": "في الصباح أدرس، وفي بعد الظهر أعمل، وفي الليل أستريح.",
+    "correct": "",
+    "options": [],
+    "explanation": "حافظ على التوازن الإيقاعي بين فترات اليوم الثلاث: mañana, tarde, noche."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_1_listen",
+    "type": "listen_choose",
+    "correct": "Su hermano y su hermana",
+    "options": [
+      "Su hermano y su hermana",
+      "Sus abuelos maternos",
+      "Sus profesores del instituto"
+    ],
+    "explanation": "قال طارق بوضوح: «mi hermano y mi hermana» أي أخوه وأخته."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_2_choice",
+    "type": "word_choice",
+    "stemEs": "____ hermanos estudian en la misma universidad.",
+    "stemAr": "____ إخوتي يدرسون في الجامعة نفسها.",
+    "correct": "Mis",
+    "options": [
+      "Mis",
+      "Mi",
+      "Tuya"
+    ],
+    "explanation": "صفة الملكية mi تصبح mis قبل الأسماء في صيغة الجمع: mis hermanos."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Esta es mi ____, se llama Fátima.",
+    "stemAr": "هذه هي ____، اسمها فاطمة.",
+    "correct": "madre",
+    "options": [],
+    "explanation": "الكلمة المعيارية للدلالة على الأم في الإسبانية هي: madre."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_4_choice_rel",
+    "type": "word_choice",
+    "stemEs": "Pablo es el ____ de Fernando.",
+    "stemAr": "بابلو هو ____ فرناندو (ابنه).",
+    "correct": "hijo",
+    "options": [
+      "hijo",
+      "hija",
+      "madre"
+    ],
+    "explanation": "بابلو مذكر، والابن في الإسبانية هو hijo، بينما الابنة هي hija."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_5_order",
+    "type": "word_order",
+    "correct": "Esta es mi hermana menor.",
+    "options": [],
+    "explanation": "الترتيب القياسي: اسم الإشارة المؤنث Esta + فعل الكينونة es + صفة الملكية والاسم mi hermana + صفة menor."
+  },
+  {
+    "lesson": "a1-mi-familia",
+    "id": "a1_fam_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Esta es mi familia.",
+    "stemAr": "هذه هي عائلتي.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف l المرقق في fa-MI-lia والياء الخفيفة دون تشديد زائد."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_1_listen",
+    "type": "listen_choose",
+    "stemEs": "El teléfono móvil está encima de la mesa.",
+    "stemAr": "الهاتف المحمول موجود فوق الطاولة.",
+    "correct": "Encima de la mesa",
+    "options": [
+      "Encima de la mesa",
+      "Debajo de la mesa",
+      "Dentro del armario"
+    ],
+    "explanation": "الصوت ذكر بوضوح: encima de la mesa (فوق الطاولة)."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_2_preposition",
+    "type": "word_choice",
+    "stemEs": "Los zapatos están debajo ____ la cama.",
+    "stemAr": "الأحذية موجودة تحت ____ السرير.",
+    "correct": "de",
+    "options": [
+      "de",
+      "en",
+      "a"
+    ],
+    "explanation": "التركيب الصحيح هو دائماً: debajo de."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_3_fill",
+    "type": "fill_blank",
+    "stemEs": "La ____ está al lado de la ventana.",
+    "stemAr": "الـ____ بجانب النافذة.",
+    "correct": "silla",
+    "options": [],
+    "explanation": "الكرسي بالإسبانية هو: la silla وهو اسم مؤنث."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_4_order",
+    "type": "word_order",
+    "correct": "La silla está al lado de la mesa.",
+    "options": [],
+    "explanation": "الترتيب: الفاعل La silla + الفعل está + ظرف المكان المركب al lado de + المجرور la mesa."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_5_under",
+    "type": "word_choice",
+    "stemEs": "El gato duerme ____ de la mesa.",
+    "stemAr": "القط ينام ____ الطاولة.",
+    "correct": "debajo",
+    "options": [
+      "debajo",
+      "encima",
+      "lejos"
+    ],
+    "explanation": "debajo de تعني تحـت."
+  },
+  {
+    "lesson": "a1-muebles",
+    "id": "a1_mue_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "La cama está al lado de la mesa de noche.",
+    "stemAr": "السرير يقع بجانب طاولة السرير.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لوصل al la-do de la me-sa."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_1_fem",
+    "type": "word_choice",
+    "correct": "Soy egipcia.",
+    "options": [
+      "Soy egipcia.",
+      "Soy egipcio.",
+      "Soy Egipto.",
+      "Soy de egipcia."
+    ],
+    "explanation": "الجنسية صفة تتبع جنس صاحبها: الرجل «egipcio»، المرأة «egipcia». أما البلد فيأتي بعد «de»: soy de Egipto."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_2_fill",
+    "type": "fill_blank",
+    "stemEs": "Nour es de Francia. Es ____.",
+    "stemAr": "نور من فرنسا. هي فرنسية.",
+    "correct": "francesa",
+    "options": [],
+    "explanation": "البلد «Francia» والجنسية «francés» للمذكر و«francesa» للمؤنث. لاحظ اختفاء النبر المكتوب في المؤنث: francés ⇒ francesa."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_3_masc",
+    "type": "word_choice",
+    "correct": "Karim es alemán.",
+    "options": [
+      "Karim es alemán.",
+      "Karim es alemana.",
+      "Karim es Alemania.",
+      "Karim es alemanes."
+    ],
+    "explanation": "alemán للمذكر المفرد، alemana للمؤنث، alemanes للجمع المذكر. النبر في alemán على المقطع الأخير ويسقط عند إضافة a."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_4_fix",
+    "type": "find_fix_error",
+    "stemEs": "Marta es español.",
+    "stemAr": "مارتا إسباني.",
+    "correct": "Marta es española.",
+    "options": [
+      "Marta es española.",
+      "Marta es España.",
+      "Marta es españolas."
+    ],
+    "explanation": "«español» مذكر؛ مع امرأة نقول «española». القاعدة الأوسع: الصفة تتبع الاسم الموصوف في الجنس والعدد."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_5_invariable",
+    "type": "word_choice",
+    "correct": "Salma es marroquí.",
+    "options": [
+      "Salma es marroquí.",
+      "Salma es marroquía.",
+      "Salma es de marroquí."
+    ],
+    "explanation": "بعض الجنسيات لا تتغير بين المذكر والمؤنث، وأشهرها ما ينتهي بـ-í مثل marroquí، وقليل مثل «israelí». الشكل نفسه يخدم الرجل والمرأة."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_6_order",
+    "type": "word_order",
+    "correct": "Mi hermano es italiano y mi hermana italiana. | Mi hermano es italiano y mi hermana es italiana.",
+    "options": [],
+    "explanation": "«hermano» مذكر ⇒ italiano، و«hermana» مؤنث ⇒ italiana. تكرار الفعل «es» مستحسن؛ حذفه في الثانية مقبول لكنه أسلوب أعلى قليلًا."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_7_pais",
+    "type": "review_common_errors",
+    "correct": "Soy de Italia. Soy italiano.",
+    "options": [
+      "Soy de Italia. Soy italiano.",
+      "Soy de italiano. Soy Italia.",
+      "Soy italiano de Italia nacionalidad."
+    ],
+    "explanation": "قاعدتان متكاملتان: «ser de + بلد» للأصل، و«ser + جنسية» للوصف. لا تُستبدل إحداهما بالأخرى."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_8_translate",
+    "type": "translate_short",
+    "stemEs": "",
+    "stemAr": "هي مصرية، من القاهرة.",
+    "correct": "Ella es egipcia, de El Cairo. | Ella es egipcia, de El Cairo | Es egipcia, de El Cairo. | Ella es egipcia de El Cairo.",
+    "options": [],
+    "explanation": "«هي» = Ella، والجنسية للمؤنث egipcia، ثم المكان «de El Cairo». لاحظ أن «El Cairo» يحتفظ بأداة التعريف El."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_9_listen",
+    "type": "listen_choose",
+    "correct": "alemana",
+    "options": [
+      "alemana",
+      "italiana",
+      "marroquí"
+    ],
+    "explanation": "قالت Anna: «Soy alemana, de Múnich» — ألمانية من ميونخ. الجنسية جاءت مؤنثة لأنها امرأة، والمدينة بعد de."
+  },
+  {
+    "lesson": "a1-nacionalidades",
+    "id": "a1_nac_10_speak",
+    "type": "speak_with_text",
+    "stemEs": "Soy egipcia, de El Cairo. Soy egipcia y hablo español.",
+    "stemAr": "أنا مصرية، من القاهرة. أنا مصرية وأتحدث الإسبانية.",
+    "correct": "",
+    "options": [],
+    "explanation": "«egipcia» نبرتها على المقطع الثاني: e-GIP-cia. «español» نبرتها على الآخر: espa-ÑOL. النقل التقريبي بالعربية إرشادي فقط."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Hola, buenos días. Necesito unos pantalones cómodos para viajar.",
+    "stemAr": "مرحباً، صباح الخير. أحتاج بنطالاً مريحاً للسفر.",
+    "correct": "Unos pantalones",
+    "options": [
+      "Unos pantalones",
+      "Una camisa blanca",
+      "Unos zapatos de fiesta"
+    ],
+    "explanation": "المشتري قال بوضوح: Necesito unos pantalones."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_2_verb_querer",
+    "type": "word_choice",
+    "stemEs": "Yo ____ comprar esta camisa.",
+    "stemAr": "أنا ____ شراء هذا القميص.",
+    "correct": "quiero",
+    "options": [
+      "quiero",
+      "quere",
+      "quieren"
+    ],
+    "explanation": "تصريف الفعل querer مع ضمير المتكلم هو: Yo quiero."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Hoy ____ comprar zapatos nuevos.",
+    "stemAr": "اليوم ____ شراء حذاء جديد.",
+    "correct": "necesito",
+    "options": [],
+    "explanation": "تصريف الفعل المنتظم necesitar مع المتكلم هو: necesito."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_4_order",
+    "type": "word_order",
+    "correct": "Quiero comprar ropa nueva.",
+    "options": [],
+    "explanation": "الترتيب: الفعل المصرف Quiero + المصدر comprar + المفعول به ropa nueva."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_5_infinitive",
+    "type": "word_choice",
+    "stemEs": "Necesito ____ esta camisa.",
+    "stemAr": "أحتاج ____ هذا القميص.",
+    "correct": "cambiar",
+    "options": [
+      "cambiar",
+      "cambio",
+      "cambias"
+    ],
+    "explanation": "القاعدة الذهبية: فعل مصرف + فعل في المصدر (Necesito cambiar...)."
+  },
+  {
+    "lesson": "a1-necesitar",
+    "id": "a1_nec_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Necesito comprar un pantalón negro para el trabajo.",
+    "stemAr": "أحتاج شراء بنطال أسود للعمل.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف c في ne-ce-SI-to ونطق التنوين الصوتي في pan-ta-LÓN."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_1_listen",
+    "type": "listen_choose",
+    "stemEs": "El libro de gramática cuesta treinta y cinco euros.",
+    "stemAr": "كتاب القواعد سعره خمسة وثلاثون يورو.",
+    "correct": "Treinta y cinco euros",
+    "options": [
+      "Treinta y cinco euros",
+      "Cincuenta y tres euros",
+      "Veinticinco euros"
+    ],
+    "explanation": "نطق البائع treinta y cinco euros أي 35 يورو. لاحظ تقديم العشرات على الآحاد."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_2_orthography",
+    "type": "word_choice",
+    "stemEs": "En mi clase hay ____ estudiantes.",
+    "stemAr": "في صفي يوجد ____ طالباً.",
+    "correct": "veinticuatro",
+    "options": [
+      "veinticuatro",
+      "veinte y cuatro",
+      "cuarenta y dos"
+    ],
+    "explanation": "الأعداد من 21 إلى 29 تُكتب ككلمة واحدة متصلة تبدأ بـ veinti-، مثل veinticuatro."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_3_fill",
+    "type": "fill_blank",
+    "stemEs": "El diccionario cuesta ____ euros.",
+    "stemAr": "القاموس يكلف ____ يورو.",
+    "correct": "cuarenta",
+    "options": [],
+    "explanation": "العدد 40 يُكتب بالإسبانية: cuarenta بحرف c في البداية."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_4_order",
+    "type": "word_order",
+    "correct": "El billete cuesta cincuenta euros.",
+    "options": [],
+    "explanation": "الترتيب المعياري: الفاعل El billete + الفعل cuesta + العدد cincuenta + التمييز euros."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_5_diff",
+    "type": "word_choice",
+    "stemEs": "Mi abuelo tiene ____ años.",
+    "stemAr": "جدي يبلغ من العمر ____ عاماً.",
+    "correct": "ochenta",
+    "options": [
+      "ochenta",
+      "setenta",
+      "sesenta"
+    ],
+    "explanation": "العدد 80 هو ochenta مشتق من ocho (ثمانية)."
+  },
+  {
+    "lesson": "a1-numeros-20-100",
+    "id": "a1_num_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Cuesta cien euros en total.",
+    "stemAr": "السعر مئة يورو في المجموع.",
+    "correct": "",
+    "options": [],
+    "explanation": "تأكد من نطق c في cien كحرف ثاء خفيف في النطق القشتالي الإسباني."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_1_listen",
+    "type": "listen_choose",
+    "correct": "Egipto",
+    "options": [
+      "Egipto",
+      "España",
+      "México"
+    ],
+    "explanation": "المتحدث قال «Soy de Egipto» أي «أنا من مصر». الكلمة de تعني «من» عند الحديث عن الأصل، وتأتي دائمًا قبل البلد: soy de + بلد."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_2_meaning",
+    "type": "word_choice",
+    "correct": "¿De dónde eres?",
+    "options": [
+      "¿De dónde eres?",
+      "¿Adónde vas?",
+      "¿Cómo estás?",
+      "¿Cómo te llamas?"
+    ],
+    "explanation": "de = «من»، dónde = «أين»، eres = «أنت تكون» من فعل ser. معًا: «من أين أنت؟». أما ¿Adónde vas? فمعناها «إلى أين ذاهب؟» لأن a تدل على الوجهة."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_3_fill_de",
+    "type": "fill_blank",
+    "stemEs": "Soy ____ Egipto.",
+    "stemAr": "أنا من مصر.",
+    "correct": "de",
+    "options": [],
+    "explanation": "للحديث عن الأصل نستخدم de بلا استثناء: soy de Egipto, soy de España. الفعل ser هنا بمعنى «أكون من». لو تحدثنا عن المكان الحالي لقلنا estoy en Egipto."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_4_order_question",
+    "type": "word_order",
+    "correct": "¿De dónde eres? | ¿De dónde eres | De dónde eres",
+    "options": [],
+    "explanation": "ترتيب السؤال في الإسبانية: أداة الاستفهام + الفعل + الفاعل. هنا: ¿De dónde + eres (أنت)؟ علامة الاستفهام المقلوبة ¿ تُفتح بها الجملة في الإسبانية، ولا تُكتب علامة الإغلاق إلا في النهاية."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_5_missing_ser",
+    "type": "type_missing_word",
+    "stemEs": "____ egipcia, de El Cairo.",
+    "stemAr": "أنا مصرية، من القاهرة.",
+    "correct": "Soy | soy",
+    "options": [],
+    "explanation": "الفعل ser مع الجنسية والأصل دائمًا: soy egipcia / soy egipcio. لا نحذف الفعل كما نفعل في العربية («أنا مصرية» بلا فعل)، فالإسبانية توجب ذكره."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_6_translate",
+    "type": "translate_short",
+    "stemEs": "",
+    "stemAr": "أنا من مصر.",
+    "correct": "Soy de Egipto. | Soy de Egipto | Yo soy de Egipto. | Yo soy de Egipto",
+    "options": [],
+    "explanation": "«أنا من مصر» = Soy de Egipto. الضمير yo اختياري لأن نهاية الفعل تُبيّن الفاعل، لذلك كلتا الصيغتين صحيحة."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_7_gender",
+    "type": "word_choice",
+    "stemEs": "Sara es de España. Es ____.",
+    "stemAr": "سارة من إسبانيا. هي إسبانية.",
+    "correct": "española",
+    "options": [
+      "española",
+      "español",
+      "españolas"
+    ],
+    "explanation": "الجنسية صفة تطابق صاحبها: español للمذكر، española للمؤنث، españoles/españolas للجمع. أضفنا la للمؤنث، وهذا النمط يتكرر: egipcio/egipcia، mexicano/mexicana."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_8_prep_contrast",
+    "type": "preposition_choice",
+    "stemEs": "Soy ____ Egipto y vivo ____ El Cairo.",
+    "stemAr": "أنا من مصر وأعيش في القاهرة.",
+    "correct": "de / en",
+    "options": [
+      "de / en",
+      "en / de",
+      "de / de"
+    ],
+    "explanation": "de للأصل والانتساب: soy de Egipto. en للمكان الذي نوجد فيه: vivo en El Cairo. الفرق نفسه بين «أنا من مصر» و«أعيش في القاهرة»."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_9_reply",
+    "type": "choose_reply",
+    "stemEs": "— ¿De dónde eres?",
+    "stemAr": "— من أين أنت؟",
+    "correct": "Soy de Egipto.",
+    "options": [
+      "Soy de Egipto.",
+      "Me llamo Omar.",
+      "Estoy bien, gracias.",
+      "Voy a Madrid."
+    ],
+    "explanation": "السؤال ¿De dónde eres? يطلب البلد أو المدينة. الردّ الطبيعي: Soy de + بلد، أو Soy de + مدينة."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_10_formal",
+    "type": "word_choice",
+    "correct": "¿De dónde es usted?",
+    "options": [
+      "¿De dónde es usted?",
+      "¿De dónde eres?",
+      "¿De dónde soy?"
+    ],
+    "explanation": "usted صيغة الاحترام للمخاطب المفرد، ويأخذ الفعل معه es لا eres: ¿De dónde es usted? أما eres فللأصدقاء والأقران."
+  },
+  {
+    "lesson": "a1-origen-de-donde-eres",
+    "id": "a1_org_11_speak",
+    "type": "speak_with_text",
+    "stemEs": "Soy de Egipto. Soy egipcio.",
+    "stemAr": "أنا من مصر. أنا مصري.",
+    "correct": "",
+    "options": [],
+    "explanation": "انطق soy كأنها «سوي» مع ضمّ الشفتين في بداية o. حرف j في egipcio (وكذلك g قبله) يُنطق خاءً مثل «خ» العربية، لا جيمًا مصريًا ولا فصيحًا. النطق التقريبي بالحروف العربية إرشادي فقط."
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Buenas tardes, ¿qué desean tomar?",
+    "stemAr": "مساء الخير، ماذا ترغبون في تناوله؟",
+    "correct": "¿Qué desean tomar?",
+    "options": [
+      "¿Qué desean tomar?",
+      "¿Cuánto cuesta?",
+      "¿Dónde está el baño?"
+    ],
+    "explanation": "النادل يرحب ويسأل عن رغبة الزبائن في الشرب بعبارة: ¿qué desean tomar?"
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_2_polite",
+    "type": "word_choice",
+    "stemEs": "____ un café solo, por favor.",
+    "stemAr": "____ قهوة سادة، من فضلك.",
+    "correct": "Para mí",
+    "options": [
+      "Para mí",
+      "Dámelo",
+      "Para ti"
+    ],
+    "explanation": "عبارة Para mí هي الأسلوب الأكثر تلقائية ولطفاً للطلب في المقاهي الإسبانية."
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Un vaso de agua fría, por ____.",
+    "stemAr": "كوب ماء بارد، من ____.",
+    "correct": "favor",
+    "options": [],
+    "explanation": "العبارة المهذبة هي دائماً: por favor وتعني من فضلك."
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_4_order",
+    "type": "word_order",
+    "correct": "Para mí un café con leche.",
+    "options": [],
+    "explanation": "الترتيب الطبيعي للطلب: صيغة التأدب Para mí + أداة التنكير un + الاسم café + حرف الجر con + المكمل leche."
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_5_more",
+    "type": "word_choice",
+    "stemEs": "— ¿Desea algo más? — ____, gracias.",
+    "stemAr": "— هل ترغب في شيء آخر؟ — ____، شكراً.",
+    "correct": "Nada más",
+    "options": [
+      "Nada más",
+      "Mucho más",
+      "De nada"
+    ],
+    "explanation": "عبارة Nada más, gracias تعني بكل تهذيب: لا شيء آخر، شكراً لك."
+  },
+  {
+    "lesson": "a1-pedir-en-cafe",
+    "id": "a1_caf_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Para mí un té con leche caliente, por favor.",
+    "stemAr": "بالنسبة لي شاي بالحليب الساخن، من فضلك.",
+    "correct": "",
+    "options": [],
+    "explanation": "حافظ على نبرة هادئة ومؤدبة مع وصل الحروف: té con leche caliente."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_1_listen",
+    "type": "listen_choose",
+    "correct": "De Carlos (su libro)",
+    "options": [
+      "De Carlos (su libro)",
+      "Del profesor",
+      "De María"
+    ],
+    "explanation": "المتحدث قال صراحة: «es el libro de Carlos; su libro siempre está aquí». صفة الملكية su تعود على كارلوس."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_2_choice_su",
+    "type": "word_choice",
+    "stemEs": "María va al trabajo en ____ coche nuevo.",
+    "stemAr": "ماريا تذهب إلى العمل في سيارتها الجديدة.",
+    "correct": "su",
+    "options": [
+      "su",
+      "sus",
+      "tu"
+    ],
+    "explanation": "صفة الملكية su تتبع الشيء المملوك (coche مفرد) وتدل على الغائب (ماريا): su coche."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_3_fill",
+    "type": "fill_blank",
+    "stemEs": "¿Dónde están ____ libros de español?",
+    "stemAr": "أين هي كتبك لتعلم الإسبانية؟",
+    "correct": "tus",
+    "options": [],
+    "explanation": "صفة الملكية للمخاطب tu تجمع بإضافة s لتطابق الاسم الجمع libros: tus libros."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_4_choice_su",
+    "type": "word_choice",
+    "stemEs": "María visita a ____ madre los fines de semana.",
+    "stemAr": "ماريا تزور ____ والدتها في عطلات نهاية الأسبوع.",
+    "correct": "su",
+    "options": [
+      "su",
+      "sus",
+      "tu"
+    ],
+    "explanation": "تتبع صفة الملكية su الاسم المفرد madre وتدل على الغائبة ماريا: su madre."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_5_order",
+    "type": "word_order",
+    "correct": "Él vive con sus padres.",
+    "options": [],
+    "explanation": "الترتيب القياسي: الفاعل Él + الفعل وجار vive con + صفة الملكية للجمع sus + الاسم padres."
+  },
+  {
+    "lesson": "a1-posesivos",
+    "id": "a1_pos_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Carlos vive en su casa.",
+    "stemAr": "كارلوس يعيش في منزله.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف v في vive بصوت شفتاني قريب من b الخفيفة، والسين النقية في su casa."
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_1_listen",
+    "type": "listen_choose",
+    "stemEs": "En total son cuatro euros con cincuenta.",
+    "stemAr": "في المجموع أربعة يورو وخمسون سنتاً.",
+    "correct": "Cuatro euros con cincuenta",
+    "options": [
+      "Cuatro euros con cincuenta",
+      "Cinco euros con cuarenta",
+      "Cuatro euros"
+    ],
+    "explanation": "المبلغ المنطوق هو cuatro euros con cincuenta أي 4,50 يورو."
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_2_agreement",
+    "type": "word_choice",
+    "stemEs": "¿Cuánto ____ estos dos cafés con leche?",
+    "stemAr": "كم ____ هذان الفنجانان من القهوة بالحليب؟",
+    "correct": "cuestan",
+    "options": [
+      "cuestan",
+      "cuesta",
+      "costar"
+    ],
+    "explanation": "الفاعل هنا جمع (estos dos cafés)، وبالتالي الفعل يطابق الجمع ويصبح: cuestan."
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Camarero, la ____, por favor.",
+    "stemAr": "أيها النادل، الـ____، من فضلك.",
+    "correct": "cuenta",
+    "options": [],
+    "explanation": "كلمة الحساب أو الفاتورة في المطعم هي la cuenta."
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_4_order",
+    "type": "word_order",
+    "correct": "¿Cuánto es todo en total?",
+    "options": [],
+    "explanation": "الترتيب المعياري: أداة الاستفهام ¿Cuánto + فعل الكينونة es + الاسم todo + شبه الجملة en total?"
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_5_singular",
+    "type": "word_choice",
+    "stemEs": "¿Cuánto ____ esta barra de pan?",
+    "stemAr": "كم ____ هذا الرغيف من الخبز؟",
+    "correct": "cuesta",
+    "options": [
+      "cuesta",
+      "cuestan",
+      "costamos"
+    ],
+    "explanation": "الفاعل مفرد (esta barra de pan)، لذا نستخدم صيغة المفرد: cuesta."
+  },
+  {
+    "lesson": "a1-precios-cuentas",
+    "id": "a1_pre_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "La cuenta, por favor, y gracias por el servicio.",
+    "stemAr": "الحساب من فضلك، وشكراً على الخدمة.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف c في cuenta ونبرة الـ favor المهذبة."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-1",
+    "type": "word_choice",
+    "stemEs": "Trabajo _____ una gran empresa internacional.",
+    "stemAr": "أعمل في شركة دولية كبرى.",
+    "correct": "en",
+    "options": [
+      "en",
+      "a",
+      "de"
+    ],
+    "explanation": "نستخدم دائماً حرف الجر en مع مقرات العمل والشركات: trabajar en una empresa."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-2",
+    "type": "fill_blank",
+    "stemEs": "Yo _____ español y árabe en el trabajo.",
+    "stemAr": "أنا أتحدث الإسبانية والعربية في العمل.",
+    "correct": "hablo",
+    "options": [],
+    "explanation": "تصريف الفعل hablar مع yo هو hablo بحذف الـ -ar وإضافة -o."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-3",
+    "type": "word_choice",
+    "stemEs": "Tengo cinco años de _____ profesional.",
+    "stemAr": "لدي خمس سنوات من ... المهنية.",
+    "correct": "experiencia",
+    "options": [
+      "experiencia",
+      "empresa",
+      "idiomas"
+    ],
+    "explanation": "الخبرة المهنية تسمى experiencia profesional."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-4",
+    "type": "word_order",
+    "correct": "Soy ingeniero y trabajo en la oficina",
+    "options": [],
+    "explanation": "الترتيب الصحيح: المهنة أولاً Soy ingeniero ثم أداة العطف y ثم الفعل والجار والمجرور trabajo en la oficina."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-5",
+    "type": "listen_choose",
+    "stemEs": "En mi puesto hablo dos idiomas cada día.",
+    "stemAr": "في منصبي أتحدث لغتين كل يوم.",
+    "correct": "idiomas",
+    "options": [
+      "idiomas",
+      "oficina",
+      "profesor"
+    ],
+    "explanation": "المتحدث قال: hablo dos idiomas cada día."
+  },
+  {
+    "lesson": "a1-presentacion-profesional",
+    "id": "ex-a1-prep-6",
+    "type": "speak_with_text",
+    "stemEs": "Tengo buenos compañeros en la empresa.",
+    "stemAr": "لدي زملاء جيدون في الشركة.",
+    "correct": "",
+    "options": [],
+    "explanation": "تذكر نطق حرف ñ كـ نياء معجمة (ny) كما في كلمة compañeros."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_1_reply",
+    "type": "choose_reply",
+    "stemEs": "— Te presento a Marta.",
+    "stemAr": "— أقدّم لك مارتا.",
+    "correct": "Encantado, Marta. Me llamo Omar.",
+    "options": [
+      "Encantado, Marta. Me llamo Omar.",
+      "Encantada, Marta.",
+      "Soy de Egipto."
+    ],
+    "explanation": "الرد المعتاد على التقديم: «Encantado/a» + الاسم، ثم غالبًا «Me llamo…». جنس الصفة يتبع المتحدث: الرجل encantado، المرأة encantada."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_2_este",
+    "type": "word_choice",
+    "correct": "Este es mi amigo Karim.",
+    "options": [
+      "Este es mi amigo Karim.",
+      "Esta es mi amigo Karim.",
+      "Este eres mi amigo Karim.",
+      "Este es mi amiga Karim."
+    ],
+    "explanation": "«Este» للمذكر و«Esta» للمؤنث، ويتبعهما الفعل «es» للشخص الثالث. «amigo/amiga» يحدّد جنس الصديق لا جنس المتحدث."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Mi amiga Nour ____ de Egipto.",
+    "stemAr": "صديقتي نور من مصر.",
+    "correct": "es",
+    "options": [],
+    "explanation": "للشخص الثالث (هو/هي) نستخدم «es» من الفعل ser: Nour es de Egipto. الجملة تبقى نفسها مع هو أو هي."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_4_order",
+    "type": "word_order",
+    "correct": "Te presento a mi compañera Nour. | Te presento a mi compañera Nour | te presento a mi compañera nour",
+    "options": [],
+    "explanation": "التركيب الثابت: «Te presento a + شخص». حرف الجر «a» واجب قبل الشخص المقدَّم (a mi compañera)، وهو ما يميّز هذا التعبير عن ترجمة حرفية من العربية."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_5_fix",
+    "type": "find_fix_error",
+    "stemEs": "Te presento a ella es mi amiga Nour.",
+    "stemAr": "أقدّم لك هي صديقتي نور.",
+    "correct": "Te presento a mi amiga Nour.",
+    "options": [
+      "Te presento a mi amiga Nour.",
+      "Te presento a ella es mi amiga.",
+      "Te presento mi amiga Nour."
+    ],
+    "explanation": "«Te presento a + شخص» تركيب كامل، فلا نضيف «ella es» بعده. لو أردنا جملتين: «Ella es mi amiga. Te la presento.»"
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_6_formal",
+    "type": "word_choice",
+    "correct": "Señor director, le presento a mi compañero Karim.",
+    "options": [
+      "Señor director, le presento a mi compañero Karim.",
+      "Te presento a mi compañero Karim.",
+      "Le presento a mi compañero Karim, ¿vale?"
+    ],
+    "explanation": "في التقديم الرسمي: «le presento a + شخص» بدل «te presento a…». الضمير le يعود على المخاطَب الرسمي (usted)، والاسم يبقى مع «a»."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_7_translate",
+    "type": "translate_short",
+    "stemEs": "",
+    "stemAr": "هي صديقتي، وهي من إسبانيا.",
+    "correct": "Ella es mi amiga y es de España. | Ella es mi amiga, es de España. | Ella es mi amiga y es de España | Ella es mi amiga. Es de España.",
+    "options": [],
+    "explanation": "«هي» = Ella، والفعل «es» يخدم الجملتين. لا نحذف الفعل الثاني كما تفعل العربية عند العطف: نكرّره أو نستخدم «y es»."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_8_listen",
+    "type": "listen_choose",
+    "correct": "Nour",
+    "options": [
+      "Nour",
+      "Marta",
+      "Omar"
+    ],
+    "explanation": "«Te presento a mi amiga Nour» = أقدّم لك صديقتي نور. التراكيب: te = لك، presento = أقدّم، a = حرف جر قبل الشخص، mi amiga = صديقتي."
+  },
+  {
+    "lesson": "a1-presentar-a-otro",
+    "id": "a1_pres_9_speak",
+    "type": "speak_with_text",
+    "stemEs": "Te presento a mi amigo Karim. Es de Egipto.",
+    "stemAr": "أقدّم لك صديقي كريم. هو من مصر.",
+    "correct": "",
+    "options": [],
+    "explanation": "«presento» نبرتها على المقطع الثاني: preSENto. «Egipto» تُنطق إخيبتو تقريبًا، والحرف j في الإسبانية لا يُنطق جيمًا مصريًا في معظم الكلمات."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-1",
+    "type": "word_choice",
+    "stemEs": "_____ en el hospital central.",
+    "stemAr": "أنا طبيب في المستشفى المركزي.",
+    "correct": "Soy médico",
+    "options": [
+      "Soy médico",
+      "Soy un médico",
+      "Estoy médico"
+    ],
+    "explanation": "القاعدة الذهبية: مع Ser والمهن لا نضع أداة نكرة (Soy médico وليس Soy un médico)."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-2",
+    "type": "fill_blank",
+    "stemEs": "María es una gran _____ de español.",
+    "stemAr": "ماريا معلمة رائعة للغة الإسبانية.",
+    "correct": "profesora",
+    "options": [],
+    "explanation": "المهن المنتهية بساكن مثل profesor تؤنث بإضافة a فتصبح profesora."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-3",
+    "type": "word_choice",
+    "stemEs": "Carlos trabaja como _____ de noticias.",
+    "stemAr": "كارلوس يعمل كـ ... أخبار.",
+    "correct": "periodista",
+    "options": [
+      "periodista",
+      "camarero",
+      "enfermero"
+    ],
+    "explanation": "المهن المنتهية بـ -ista مثل periodista تبقى ثابتة للمذكر والمؤنث."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-4",
+    "type": "word_order",
+    "correct": "Mi hermano trabaja de camarero",
+    "options": [],
+    "explanation": "الترتيب الصحيح: الفاعل Mi hermano ثم الفعل trabaja ثم حرف الجر de والمهنة camarero."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-5",
+    "type": "listen_choose",
+    "stemEs": "Soy ingeniero y trabajo en una empresa.",
+    "stemAr": "أنا مهندس وأعمل في شركة.",
+    "correct": "ingeniero",
+    "options": [
+      "ingeniero",
+      "profesor",
+      "médico"
+    ],
+    "explanation": "المتحدث صرح بوضوح: Soy ingeniero."
+  },
+  {
+    "lesson": "a1-profesiones",
+    "id": "ex-a1-prof-6",
+    "type": "speak_with_text",
+    "stemEs": "Soy enfermero en este hospital.",
+    "stemAr": "أنا ممرض في هذا المستشفى.",
+    "correct": "",
+    "options": [],
+    "explanation": "تذكر عدم وضع أداة نكرة بين Soy و enfermero."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Me gusta mucho mi casa porque es muy tranquila y luminosa.",
+    "stemAr": "يعجبني منزلي كثيراً لأنه هادئ ومضيء للغاية.",
+    "correct": "Es tranquila y luminosa",
+    "options": [
+      "Es tranquila y luminosa",
+      "Es grande y barata",
+      "Está cerca de la playa"
+    ],
+    "explanation": "المتحدث قال: porque es muy tranquila y luminosa."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_2_connector",
+    "type": "word_choice",
+    "stemEs": "Me gusta mi habitación ____ es muy cómoda.",
+    "stemAr": "تعجبني غرفتي ____ مريحة جداً.",
+    "correct": "porque",
+    "options": [
+      "porque",
+      "¿por qué?",
+      "pero"
+    ],
+    "explanation": "أداة بيان السبب هي: porque."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Por las tardes descanso en ____.",
+    "stemAr": "في المساء أستريح في الـ____.",
+    "correct": "casa",
+    "options": [],
+    "explanation": "كلمة منزل أو بيت بالإسبانية هي: casa."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_4_order",
+    "type": "word_order",
+    "correct": "Vivo en una casa muy tranquila.",
+    "options": [],
+    "explanation": "الترتيب: الفعل Vivo + حرف الجر en + أداة التنكير una + الاسم casa + الظرف muy + الصفة tranquila."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_5_verb_live",
+    "type": "word_choice",
+    "stemEs": "Yo ____ en un piso céntrico.",
+    "stemAr": "أنا ____ في شقة وسط المدينة.",
+    "correct": "vivo",
+    "options": [
+      "vivo",
+      "vives",
+      "vive"
+    ],
+    "explanation": "تصريف فعل vivir مع yo هو: vivo."
+  },
+  {
+    "lesson": "a1-rutina-casa",
+    "id": "a1_rc_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Mi casa tiene un salón luminoso y me gusta mucho.",
+    "stemAr": "منزلي يضم صالوناً مضيئاً ويعجبني كثيراً.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على الربط السلس بين lu-mi-no-so y me gus-ta mu-cho."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_1_listen",
+    "type": "listen_choose",
+    "correct": "Encantada, señor. ¿Cómo está usted hoy?",
+    "options": [
+      "Encantada, señor. ¿Cómo está usted hoy?",
+      "Buenos días, ¿cómo estás?",
+      "Hasta luego, señor."
+    ],
+    "explanation": "المقطع رسمي: استُخدمت «señor» وصيغة «¿Cómo está usted?» لا «¿Cómo estás?». كلمة «Encantada» بالتاء المربوطة في النهاية تعني أن المتحدثة امرأة."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_2_time",
+    "type": "word_choice",
+    "correct": "Buenas noches.",
+    "options": [
+      "Buenas noches.",
+      "Buenos días.",
+      "Buenas tardes.",
+      "Adiós."
+    ],
+    "explanation": "التحيات: «Buenos días» صباحًا، «Buenas tardes» من بعد الظهر إلى الغروب، «Buenas noches» بعد الغروب. لاحظ أن días مذكر فتُسبق بـBuenos، وtardes/noches مؤنث فتُسبق بـBuenas."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_3_usted",
+    "type": "word_choice",
+    "correct": "¿Cómo está usted?",
+    "options": [
+      "¿Cómo está usted?",
+      "¿Cómo estás tú?",
+      "¿Qué tal?"
+    ],
+    "explanation": "مع «usted» يأتي الفعل بصيغة الغائب: usted está (لا estás). أما «tú» فتأخذ estás. اختيار الصيغة هنا اجتماعي قبل أن يكون نحويًا."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_4_fill",
+    "type": "fill_blank",
+    "stemEs": "Buenos días, señora. ¿Cómo ____ usted?",
+    "stemAr": "صباح الخير يا سيدة. كيف حالك؟",
+    "correct": "está | esta",
+    "options": [],
+    "explanation": "مع «usted» نستخدم صيغة الغائب: usted está. لو خاطبنا صديقًا لقلنا «¿Cómo estás?» بلا usted."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_5_conjugate",
+    "type": "conjugate_in_context",
+    "stemEs": "Disculpe, ¿____ (trabajar) usted en esta oficina?",
+    "stemAr": "عن إذنك، هل تعمل في هذا المكتب؟",
+    "correct": "trabaja",
+    "options": [],
+    "explanation": "أفعال المجموعة الأولى (-ar) مع usted تأخذ النهاية -a: usted trabaja. مع tú تكون -as: tú trabajas. الفرق حرف واحد، لكنه يحدد مستوى اللباقة."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_6_fix",
+    "type": "find_fix_error",
+    "stemEs": "Usted trabajas aquí, ¿verdad?",
+    "stemAr": "حضرتك تعملين هنا، أليس كذلك؟",
+    "correct": "¿Usted trabaja aquí?",
+    "options": [
+      "¿Usted trabaja aquí?",
+      "¿Tú trabajas aquí?",
+      "¿Usted trabajar aquí?"
+    ],
+    "explanation": "القاعدة: usted + الفعل بصيغة الغائب. «Usted trabajas» خلط بين الصيغتين، وهو من أشهر أخطاء المبتدئين العرب لأن العربية لا تُصرّف الفعل مع المخاطب المحترم."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_7_reply",
+    "type": "choose_reply",
+    "stemEs": "— Buenos días, ¿cómo está usted?",
+    "stemAr": "— صباح الخير، كيف حالك؟",
+    "correct": "Muy bien, gracias. ¿Y usted?",
+    "options": [
+      "Muy bien, gracias. ¿Y usted?",
+      "Muy bien, gracias, ¿y tú?",
+      "Me llamo Omar.",
+      "Soy de Egipto."
+    ],
+    "explanation": "الرد يتبع سجل السؤال: سؤال بـusted يُجاب بـusted. «¿Y usted?» تعني «وأنت؟» بالرسمية، مقابل «¿Y tú?» غير الرسمية."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_8_order",
+    "type": "word_order",
+    "correct": "Encantado, me llamo Omar, señora. | Encantado, me llamo Omar, señora | Encantado me llamo Omar señora",
+    "options": [],
+    "explanation": "ترتيب طبيعي: كلمة التحيّة/التشرف أولًا، ثم التعريف بالاسم، ثم لقب المخاطب في النهاية بين فاصلتين. «Encantado» يقولها الرجل، و«Encantada» تقولها المرأة."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_9_gender",
+    "type": "word_choice",
+    "correct": "Encantada, señora.",
+    "options": [
+      "Encantada, señora.",
+      "Encantado, señora.",
+      "Encantada, señor."
+    ],
+    "explanation": "«encantado/encantada» صفة تصف المتحدث لا المخاطب: الرجل يقول «encantado» والمرأة «encantada». الخطأ الشائع أن يتبع الوصفُ جنسَ المخاطَب."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_10_translate",
+    "type": "translate_short",
+    "stemEs": "",
+    "stemAr": "عن إذنك، هل تعمل هنا؟",
+    "correct": "Con permiso, ¿trabaja usted aquí? | Con permiso, ¿usted trabaja aquí? | Con permiso, trabaja usted aquí | Con permiso, ¿trabaja aquí?",
+    "options": [],
+    "explanation": "«عن إذنك» = Con permiso، ثم سؤال رسمي: ¿trabaja usted aquí? الضمير usted يجوز بعد الفعل أو قبله، والرسمية تُحفظ بالفعل trabaja."
+  },
+  {
+    "lesson": "a1-saludos-formalidad",
+    "id": "a1_sal_11_speak",
+    "type": "speak_with_text",
+    "stemEs": "Buenos días, señora. Encantado, me llamo Omar. ¿Cómo está usted?",
+    "stemAr": "صباح الخير يا سيدة. تشرفنا، اسمي عمر. كيف حالك؟",
+    "correct": "",
+    "options": [],
+    "explanation": "ثبّت النبر: BUEnos DÍas، seÑOra، ¿cómo esTÁ usTED؟ نبرة السؤال ترتفع في النهاية. «ll» في llamo تُنطق قريبة من الياء المشدّدة، لا لامين."
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Disculpe, necesito probarme esta camisa en talla mediana.",
+    "stemAr": "عفواً، أحتاج تجربة هذا القميص في المقاس المتوسط.",
+    "correct": "Talla M (mediana)",
+    "options": [
+      "Talla M (mediana)",
+      "Talla S (pequeña)",
+      "Talla L (grande)"
+    ],
+    "explanation": "المقاس المطلوب هو talla mediana أي المقاس M."
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_2_bigger",
+    "type": "word_choice",
+    "stemEs": "¿Tiene una talla más ____, por favor?",
+    "stemAr": "هل لديك مقاس ____، من فضلك؟",
+    "correct": "grande",
+    "options": [
+      "grande",
+      "pequeña",
+      "blanca"
+    ],
+    "explanation": "لطلب مقاس أكبر نقول: una talla más grande."
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_3_fill",
+    "type": "fill_blank",
+    "stemEs": "En esta tienda hay ____ muy bonita.",
+    "stemAr": "في هذا المتجر توجد ____ جميلة جداً.",
+    "correct": "ropa",
+    "options": [],
+    "explanation": "كلمة ملابس في الإسبانية هي ropa وهي اسم مفرد مؤنث جامع."
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_4_order",
+    "type": "word_order",
+    "correct": "¿Dónde están los probadores, por favor?",
+    "options": [],
+    "explanation": "الترتيب القياسي للسؤال: أداة الاستفهام ¿Dónde + فعل الكينونة están + الفاعل los probadores + عبارة التأدب por favor?"
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_5_shoes",
+    "type": "word_choice",
+    "stemEs": "¿Qué ____ de zapatos calza usted?",
+    "stemAr": "ما هو ____ حذاء حضرتك؟",
+    "correct": "número",
+    "options": [
+      "número",
+      "color",
+      "camisa"
+    ],
+    "explanation": "مع الأحذية يُستخدم تعبير número de zapato أو talla."
+  },
+  {
+    "lesson": "a1-tallas",
+    "id": "a1_tal_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "¿Puedo probarme este pantalón en el probador?",
+    "stemAr": "هل يمكنني تجربة هذا البنطال في غرفة القياس؟",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه لنطق حرف p المشدود في pro-bar-me وحرف b المرقق."
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_1_listen",
+    "type": "listen_choose",
+    "correct": "Diez años",
+    "options": [
+      "Diez años",
+      "Veinticinco años",
+      "Veintidós años"
+    ],
+    "explanation": "خافيير قال بوضوح: «tiene diez años» أي عمر أخيه الصغير 10 سنوات."
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_2_choice_verb",
+    "type": "word_choice",
+    "stemEs": "Yo ____ veinte años y estudio en Madrid.",
+    "stemAr": "أنا عمري (أملك) عشرين عامًا وأدرس في مدريد.",
+    "correct": "tengo",
+    "options": [
+      "tengo",
+      "soy",
+      "estoy"
+    ],
+    "explanation": "تنبيه جوهري للمتعلم العربي: في الإسبانية نستخدم دائمًا فعل الملكية tener للتعبير عن العمر: «Tengo 20 años» ولا يجوز إطلاقًا استخدام soy أو estoy."
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Mi hermano ____ dieciocho años.",
+    "stemAr": "أخي ____ ثمانية عشر عامًا.",
+    "correct": "tiene",
+    "options": [],
+    "explanation": "تصريف الفعل غير المنتظم tener مع المفرد الغائب (él / ella / mi hermano) هو: tiene."
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_4_choice_ques",
+    "type": "word_choice",
+    "stemEs": "¿____ años tiene tu amigo?",
+    "stemAr": "كم سنة عمر صديقك؟",
+    "correct": "Cuántos",
+    "options": [
+      "Cuántos",
+      "Dónde",
+      "Cómo"
+    ],
+    "explanation": "نستخدم «Cuántos» المطابقة لجمع المذكر لأن كلمة años اسم مذكر جمع: ¿Cuántos años...?"
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_5_order",
+    "type": "word_order",
+    "correct": "¿Cuántos años tienes tú?",
+    "options": [],
+    "explanation": "الترتيب القياسي للسؤال عن العمر: ¿Cuántos + años + الفعل tienes + الضمير tú?"
+  },
+  {
+    "lesson": "a1-tener-anos",
+    "id": "a1_edad_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Tengo veinte años.",
+    "stemAr": "عمري عشرون عامًا.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على نطق حرف ñ كصوت النون المعطشة (نيْ) في «años» وليس كنون بسيطة، فالفرق جوهري في المعنى."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-1",
+    "type": "word_choice",
+    "stemEs": "Viajo a Madrid _____ tren.",
+    "stemAr": "أسافر إلى مدريد بالقطار.",
+    "correct": "en",
+    "options": [
+      "en",
+      "con",
+      "de"
+    ],
+    "explanation": "في الإسبانية نستخدم حرف الجر en مع وسائل المواصلات الآلية: en tren, en metro, en autobús."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-2",
+    "type": "fill_blank",
+    "stemEs": "Necesito comprar un _____ para el metro.",
+    "stemAr": "أحتاج لشراء تذكرة للمترو.",
+    "correct": "billete",
+    "options": [],
+    "explanation": "كلمة billete تعني تذكرة وهي مذكرة (un billete)."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-3",
+    "type": "word_choice",
+    "stemEs": "Esperamos en la _____ de autobús.",
+    "stemAr": "ننتظر في موقف الأتوبيس.",
+    "correct": "parada",
+    "options": [
+      "parada",
+      "estación",
+      "viaje"
+    ],
+    "explanation": "موقف الحافلات في الشارع يسمى la parada de autobús."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-4",
+    "type": "word_order",
+    "correct": "Quiero un billete para el metro",
+    "options": [],
+    "explanation": "الترتيب الصحيح: Quiero (أريد) ثم un billete (تذكرة) ثم para el metro (للمترو)."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-5",
+    "type": "listen_choose",
+    "stemEs": "Prefiero ir en taxi porque es rápido.",
+    "stemAr": "أفضل الذهاب بالتاكسي لأنه سريع.",
+    "correct": "taxi",
+    "options": [
+      "taxi",
+      "metro",
+      "tren"
+    ],
+    "explanation": "المتحدث ذكر ركوب التاكسي: en taxi."
+  },
+  {
+    "lesson": "a1-transporte",
+    "id": "ex-a1-tra-6",
+    "type": "speak_with_text",
+    "stemEs": "Voy a la estación en metro.",
+    "stemAr": "أنا ذاهب إلى المحطة بالمترو.",
+    "correct": "",
+    "options": [],
+    "explanation": "تأكد من وصل الأصوات بشكل طبيعي: Voy a la estación en metro."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Todas las mañanas desayuno café con leche y una tostada.",
+    "stemAr": "كل صباح أتناول في الإفطار قهوة بالحليب وخبزاً محمصاً.",
+    "correct": "Desayuna café con leche",
+    "options": [
+      "Desayuna café con leche",
+      "Come carne y arroz",
+      "Duerme hasta tarde"
+    ],
+    "explanation": "الصوت ذكر بوضوح: desayuno café con leche."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_2_conjugation_comer",
+    "type": "word_choice",
+    "stemEs": "Normalmente yo ____ en casa con mi familia.",
+    "stemAr": "عادة أنا ____ في البيت مع عائلتي.",
+    "correct": "como",
+    "options": [
+      "como",
+      "comes",
+      "come"
+    ],
+    "explanation": "تصريف الفعل comer مع yo هو: como."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_3_fill",
+    "type": "fill_blank",
+    "stemEs": "De lunes a viernes ____ en una oficina.",
+    "stemAr": "من الاثنين إلى الجمعة ____ في مكتب.",
+    "correct": "trabajo",
+    "options": [],
+    "explanation": "تصريف الفعل trabajar مع yo هو: trabajo."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_4_order",
+    "type": "word_order",
+    "correct": "Ceno con mi familia por la noche.",
+    "options": [],
+    "explanation": "الترتيب: الفعل Ceno + شبه الجملة con mi familia + الظرف الزمني por la noche."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_5_dormir",
+    "type": "word_choice",
+    "stemEs": "Todos los días ____ ocho horas.",
+    "stemAr": "كل يوم ____ ثماني ساعات.",
+    "correct": "duermo",
+    "options": [
+      "duermo",
+      "dormo",
+      "duermes"
+    ],
+    "explanation": "الفعل dormir يتحول إلى duermo مع ضمير المتكلم."
+  },
+  {
+    "lesson": "a1-verbos-rutina",
+    "id": "a1_vr_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Por las mañanas estudio y por las tardes trabajo.",
+    "stemAr": "في الصباح أدرس وفي المساء أعمل.",
+    "correct": "",
+    "options": [],
+    "explanation": "انتبه للتقابل الصوتي بين es-tu-dio و tra-ba-jo."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_1_listen",
+    "type": "listen_choose",
+    "stemEs": "Hoy tenemos un plato tradicional de arroz con pollo.",
+    "stemAr": "اليوم لدينا طبق تقليدي من الأرز مع الدجاج.",
+    "correct": "Arroz con pollo",
+    "options": [
+      "Arroz con pollo",
+      "Arroz con pescado",
+      "Pan con carne"
+    ],
+    "explanation": "الطبق المذكور في الصوت هو arroz con pollo (أرز بالدجاج)."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_2_gender_agua",
+    "type": "word_choice",
+    "stemEs": "Bebo un vaso de ____ agua.",
+    "stemAr": "أشرب كوباً من الـ____ ماء.",
+    "correct": "el",
+    "options": [
+      "el",
+      "la",
+      "los"
+    ],
+    "explanation": "كلمة agua مؤنثة ولكنها تأخذ أداة التعريف el في المفرد منعاً لالتقاء النبرتين: el agua."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_3_fill",
+    "type": "fill_blank",
+    "stemEs": "Por las mañanas como ____ con aceite de oliva.",
+    "stemAr": "في الصباح آكل ____ مع زيت الزيتون.",
+    "correct": "pan",
+    "options": [],
+    "explanation": "كلمة خبز في الإسبانية هي: pan وهي اسم مذكر (el pan)."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_4_order",
+    "type": "word_order",
+    "correct": "En la comida comemos carne y arroz.",
+    "options": [],
+    "explanation": "الترتيب: شبه الجملة الظرفية En la comida + الفعل comemos + المفعول الأول carne + أداة العطف y + المفعول الثاني arroz."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_5_beverage",
+    "type": "word_choice",
+    "stemEs": "Por favor, un ____ con leche caliente.",
+    "stemAr": "من فضلك، ____ بالحليب الساخن.",
+    "correct": "café",
+    "options": [
+      "café",
+      "pescado",
+      "carne"
+    ],
+    "explanation": "القهوة بالحليب (café con leche) هي المشروب الصباحي الأكثر شهرة في إسبانيا."
+  },
+  {
+    "lesson": "a1-vocabulario-comida",
+    "id": "a1_com_6_speak",
+    "type": "speak_with_text",
+    "stemEs": "Una botella de agua y pan, por favor.",
+    "stemAr": "قنينة ماء وخبز، من فضلك.",
+    "correct": "",
+    "options": [],
+    "explanation": "احرص على مدّ الواو في agua ونطق حرف b بشكل مرقق في botella."
+  }
+]

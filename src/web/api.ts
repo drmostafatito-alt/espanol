@@ -47,7 +47,21 @@ interface RequestOpts {
   silentUnauth?: boolean;
 }
 
+/**
+ * جيل المصادقة: كل إقلاع/دخول/خروج يفتح جيلًا جديدًا.
+ * الطلبات تُوسم بالجيل لحظة إرسالها، ورد 401 من جيل سابق (مثل /api/me/progress
+ * أُرسل قبل تسجيل الدخول) لا يُمرَّر إلى المعالج المركزي، فلا يمحو جلسة أحدث.
+ * هذا هو نفس السباق المصلَح في الإقلاع، لكنه كان ما يزال مفتوحًا لكل طلب محمٍ آخر.
+ */
+let authEpoch = 0;
+
+/** يُبطل أي رد 401 عالق سببه جلسة سابقة. */
+export function invalidateInFlightAuth(): void {
+  authEpoch += 1;
+}
+
 async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpts = {}): Promise<T> {
+  const epochAtSend = authEpoch;
   let res: Response;
   try {
     res = await fetch(path, {
@@ -88,7 +102,9 @@ async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpt
     );
     // انتهاء الجلسة أو غيابها على مسار محمي: معالجة مركزية واحدة بدل رسائل متناثرة.
     // استثناء: /me الإقلاعي صامت ويعالج رفضه بنفسه (حارس الجيل في AuthProvider).
-    if (res.status === 401 && !opts.silentUnauth && unauthorizedHandler) unauthorizedHandler();
+    if (res.status === 401 && !opts.silentUnauth && epochAtSend === authEpoch && unauthorizedHandler) {
+      unauthorizedHandler();
+    }
     throw apiError;
   }
   return body as T;

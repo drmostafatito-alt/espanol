@@ -1,7 +1,7 @@
 import type { Env, SessionUser } from '../types';
 import {
-  HttpError, apiError, cookieName, json, readCookie, readJson,
-  serializeSessionCookie, clearSessionCookie,
+  HttpError, apiError, json, readJson,
+  serializeSessionCookie, clearSessionCookies, readSessionToken,
 } from '../lib/http';
 import { randomToken, sha256Hex, hmacSha256Hex } from '../lib/crypto';
 import {
@@ -124,7 +124,7 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
 
   const user = await findSessionUser(env, token);
   const res = json({ user }, { status: 201 }, requestId);
-  res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl));
+  res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl, req));
   return res;
 }
 
@@ -193,20 +193,20 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
 
   const user = await findSessionUser(env, token);
   const res = json({ user }, {}, requestId);
-  res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl));
+  res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl, req));
   return res;
 }
 
 export async function logout(req: Request, env: Env, requestId: string): Promise<Response> {
-  const token = readCookie(req, cookieName(env));
+  const token = readSessionToken(req);
   if (token) await revokeSession(env, token);
   const res = json({ ok: true }, {}, requestId);
-  res.headers.set('Set-Cookie', clearSessionCookie(env));
+  for (const cookie of clearSessionCookies(env, req)) res.headers.append('Set-Cookie', cookie);
   return res;
 }
 
 export async function me(req: Request, env: Env, requestId: string): Promise<Response> {
-  const token = readCookie(req, cookieName(env));
+  const token = readSessionToken(req);
   if (!token) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
   const user = await findSessionUser(env, token);
   if (!user) throw new HttpError(401, 'UNAUTHENTICATED', 'انتهت الجلسة. سجّل الدخول من جديد.');
@@ -256,7 +256,7 @@ export async function updateMe(req: Request, env: Env, requestId: string, user: 
 
   await env.DB.prepare(`UPDATE user_profiles SET ${sets.join(', ')} WHERE user_id = ?`).bind(...vals, user.id).run();
 
-  const token = readCookie(req, cookieName(env))!;
+  const token = readSessionToken(req)!;
   const refreshed = await findSessionUser(env, token);
   return json({ user: refreshed }, {}, requestId);
 }

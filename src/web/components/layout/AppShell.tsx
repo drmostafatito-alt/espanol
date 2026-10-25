@@ -115,12 +115,14 @@ export function AppShell({
           </form>
           <span className="spacer" />
           <div className="account-menu" ref={accountRef}>
+            {/* الاسم البصري يُخفى على الشاشات الضيقة، فيبقى الزر بلا اسم لقارئ الشاشة */}
             <button
               type="button"
               className="row"
               style={{ background: 'none', border: 0, cursor: 'pointer', gap: 8, padding: 4, borderRadius: 12, font: 'inherit' }}
               aria-haspopup="menu"
               aria-expanded={accountOpen}
+              aria-label={`حساب ${user.displayName || user.email}`}
               onClick={() => setAccountOpen(v => !v)}
             >
               <Avatar name={user.displayName} email={user.email} />

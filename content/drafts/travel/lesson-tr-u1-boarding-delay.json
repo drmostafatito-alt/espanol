@@ -220,7 +220,8 @@
             "id": "tr_u1_10_b",
             "text": "Disculpe, puedo pasar por favor, ¿no?",
             "isCorrect": false,
-            "distractorRationaleAr": "ذيل «¿no?» ونقص علامة الاستفهام يجعلان الجملة غير مرتبة."
+            "distractorRationaleAr": "ذيل «¿no?» ونقص علامة الاستفهام يجعلان الجملة غير مرتبة.",
+            "textAr": "عفوًا، يمكنني المرور من فضلك، أليس كذلك؟"
           },
           {
             "id": "tr_u1_10_c",
@@ -250,7 +251,8 @@
         "difficulty": 2,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "عفوًا، يمكنني المرور من فضلك، أليس كذلك؟"
       }
     ],
     "review": {

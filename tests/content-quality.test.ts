@@ -10,7 +10,8 @@
  * منطقًا موازيًا يمكن أن ينحرف عن الأداة.
  */
 import { describe, expect, it } from 'vitest';
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join, basename } from 'node:path';
 // @ts-ignore — وحدة .mjs مشتركة مع الأداة
 import { auditContent } from '../tools/audit-content-quality.mjs';
@@ -183,10 +184,11 @@ describe('حدود التدقيق الآلي — معلنة لا مخفية', ()
     // التنبيهات (ترجمة ناقصة، مثال بصيغة مشتقة، مفردة هدف غير معلنة) ليست «أخطاء»:
     // كل واحد منها يحتاج قرارًا بشريًا. وجودها هنا يوثّق أنها لم تُترك بلا رصد.
     const warns = audit.findings.filter(f => f.severity === 'warn');
-    expect(warns.length).toBeGreaterThan(0);
-    expect(new Set(warns.map(w => w.rule))).toEqual(
-      new Set(['R14-target-vocab-fit', 'R17-option-translation', 'R29-stem-translation', 'R36-example-fit']),
-    );
+    expect(warns.length).toBeGreaterThanOrEqual(0);
+    // القواعد المعروفة فقط. العدد قد ينزل إلى صفر بعد إصلاح المحتوى (كما صار مع R36)،
+    // لكن ظهور قاعدة جديدة غير مُراجعة يجب أن يُسقط الاختبار.
+    const KNOWN = new Set(['R14-target-vocab-fit', 'R17-option-translation', 'R29-stem-translation', 'R36-example-fit']);
+    expect([...new Set(warns.map(w => w.rule))].filter(r => !KNOWN.has(r))).toEqual([]);
   });
 
   it('لا يوجد تقرير مراجعة بشرية ولا ملف صوتي مُنتج داخل المحتوى', () => {
@@ -206,5 +208,36 @@ describe('حدود التدقيق الآلي — معلنة لا مخفية', ()
 
   it('أداة التدقيق موجودة وقابلة للتشغيل من سطر الأوامر', () => {
     expect(existsSync(join(ROOT, 'tools/audit-content-quality.mjs'))).toBe(true);
+  });
+
+  it('R36: يقبل الصيغ الطبيعية (apócope وضمير ملتصق) ويرفض مثالًا لا علاقة له', () => {
+    // كل هذه الأمثلة إسبانية سليمة، ولا يجوز أن تُعلَّم كخطأ:
+    // buen café (apócope)، dame (da + me)، ayudarme (ayudar + me)، avísame (avisa + me)
+    const entry = (headword: string, pos: string, gender: string | undefined, exampleEs: string, forms: string[] = []) => ({
+      headword, pos, gender,
+      forms: forms.map(formEs => ({ formEs, kind: 'conjugation', irregular: false })),
+      senses: [{ senseNo: 1, meaningArFusha: 'معنى', exampleEs, exampleAr: 'ترجمة' }],
+    });
+    const dir = mkdtempSync(join(tmpdir(), 'cq-r36-'));
+    writeFileSync(join(dir, 'vocab-t.json'), JSON.stringify({
+      bundleSlug: 't',
+      entries: [
+        entry('bueno', 'adj', undefined, 'Es un buen café.'),
+        entry('dar', 'verb', undefined, 'Dame la llave, por favor.', ['doy', 'das', 'da', 'damos', 'dais', 'dan']),
+        entry('ayudar', 'verb', undefined, '¿Puedes ayudarme?', ['ayudo', 'ayudas', 'ayuda', 'ayudamos', 'ayudáis', 'ayudan']),
+        entry('avisar', 'verb', undefined, 'Avísame si hay cambios.', ['aviso', 'avisas', 'avisa', 'avisamos', 'avisáis', 'avisan']),
+      ],
+    }));
+    const accepted = (auditContent(dir) as { findings: Finding[] }).findings.filter(f => f.rule === 'R36-example-fit');
+    expect(accepted.map(f => f.where)).toEqual([]);
+
+    // الرفض ما زال يعمل: مثال لا يحتوي المدخل ولا أي صيغة منه
+    const dir2 = mkdtempSync(join(tmpdir(), 'cq-r36-'));
+    writeFileSync(join(dir2, 'vocab-t.json'), JSON.stringify({
+      bundleSlug: 't',
+      entries: [entry('bueno', 'adj', undefined, 'Me gusta el té.')],
+    }));
+    const rejected = (auditContent(dir2) as { findings: Finding[] }).findings.filter(f => f.rule === 'R36-example-fit');
+    expect(rejected).toHaveLength(1);
   });
 });

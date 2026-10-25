@@ -24,6 +24,7 @@
       "importe"
     ],
     "reviewVocabulary": [
+      "cliente",
       "pedido",
       "envío",
       "entrega",
@@ -267,7 +268,8 @@
           "speaking",
           "listening"
         ],
-        "difficulty": 4
+        "difficulty": 4,
+        "stemAr": "العميل: أنتظر منذ ثلاثة أيام، والعلبة وصلت مكسورة. أريد استرداد المبلغ كاملًا."
       },
       {
         "id": "cc_u1_18_closing",

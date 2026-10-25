@@ -122,23 +122,71 @@ export class HttpError extends Error {
   }
 }
 
-export function cookieName(env: Env): string {
-  // __Host- يتطلب Secure + Path=/ + بلا Domain — لا يعمل على http في التطوير المحلي
-  return env.APP_ORIGIN.startsWith('https://') ? '__Host-ses' : 'ses';
+/**
+ * هل وصل هذا الطلب عبر HTTPS فعلًا؟
+ * لماذا لا نكتفي بـ APP_ORIGIN: اسم `__Host-` يفرض Secure، والمتصفح يرفض الكوكي
+ * بصمت إذا وصلت عبر http حقيقي (خادم تطوير، بروكسي معاينة، نفق محلي). فيبدو
+ * تسجيل الدخول ناجحًا في HTTP ثم لا تُحفظ الجلسة إطلاقًا. القرار يُبنى على الطلب
+ * نفسه (مع رؤوس البروكسي القياسية) لا على إعداد نطاق قد يكون لبيئة أخرى.
+ */
+export function requestIsSecure(req: Request): boolean {
+  try {
+    if (new URL(req.url).protocol === 'https:') return true;
+  } catch {
+    // req.url غير صالح؟ لا نفترض الأمان
+  }
+  const forwarded = req.headers.get('X-Forwarded-Proto');
+  if (forwarded && forwarded.split(',')[0]!.trim().toLowerCase() === 'https') return true;
+  const visitor = req.headers.get('CF-Visitor'); // {"scheme":"https"} من Cloudflare
+  if (visitor && /"scheme"\s*:\s*"https"/i.test(visitor)) return true;
+  return false;
 }
 
-function cookieAttrs(env: Env, maxAge: number): string[] {
+export function cookieName(env: Env, req?: Request): string {
+  // __Host- يتطلب Secure + Path=/ + بلا Domain — لا يُستخدم على http
+  const secure = req ? requestIsSecure(req) : env.APP_ORIGIN.startsWith('https://');
+  return secure ? '__Host-ses' : 'ses';
+}
+
+function cookieAttrs(maxAge: number, secure: boolean): string[] {
   const attrs = ['Path=/', 'HttpOnly', 'SameSite=Lax', `Max-Age=${maxAge}`, 'Priority=High'];
-  if (env.APP_ORIGIN.startsWith('https://')) attrs.push('Secure');
+  if (secure) attrs.push('Secure');
   return attrs;
 }
 
-export function serializeSessionCookie(env: Env, token: string, maxAgeDays: number): string {
-  return [`${cookieName(env)}=${token}`, ...cookieAttrs(env, maxAgeDays * 24 * 60 * 60)].join('; ');
+export function serializeSessionCookie(env: Env, token: string, maxAgeDays: number, req: Request): string {
+  const secure = requestIsSecure(req);
+  return [
+    `${cookieName(env, req)}=${token}`,
+    ...cookieAttrs(maxAgeDays * 24 * 60 * 60, secure),
+  ].join('; ');
 }
 
-export function clearSessionCookie(env: Env): string {
-  return [`${cookieName(env)}=`, ...cookieAttrs(env, 0)].join('; ');
+/**
+ * يمسح الاسمين (`__Host-ses` و`ses`) لأن اسم الكوكي يتبع أمان الطلب، فقد تكون
+ * جلسة سابقة صادرة عبر المخطط الآخر ما زالت في المتصفح. الإبطال الحقيقي على
+ * الخادم (revoked_at) هو الحد الأمني، وهذا تنظيف للمتصفح فقط.
+ */
+export function clearSessionCookies(env: Env, req: Request): string[] {
+  const secure = requestIsSecure(req);
+  return [
+    ['__Host-ses=', ...cookieAttrs(0, true)].join('; '),
+    ['ses=', ...cookieAttrs(0, secure)].join('; '),
+  ];
+}
+
+/**
+ * يقرأ رمز الجلسة مع احترام حدود الاسمين:
+ * - `__Host-ses` مقبول دائمًا (اسمه يضمن Secure + Path=/ + بلا Domain عند إنشائه).
+ * - `ses` يُقبل فقط على طلب غير آمن (http/dev)، لأن المتصفح لا يستطيع إرسال كوكي
+ *   Secure عبر http، فأي جلسة صالحة هناك لا بد أن تكون بهذا الاسم.
+ *   وعلى HTTPS نرفضه: الاسم غير محمي بـ`__Host-`، فقد يزرعه نطاق فرعي شقيق
+ *   (forced-login/fixation). الإصلاح هنا لا يفتح بابًا جديدًا أمام HTTPS.
+ */
+export function readSessionToken(req: Request): string | null {
+  const hostCookie = readCookie(req, '__Host-ses');
+  if (hostCookie) return hostCookie;
+  return requestIsSecure(req) ? null : readCookie(req, 'ses');
 }
 
 export function readCookie(req: Request, name: string): string | null {

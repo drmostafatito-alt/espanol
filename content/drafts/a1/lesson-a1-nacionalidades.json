@@ -283,7 +283,8 @@
         "difficulty": 2,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "مارتا إسباني."
       },
       {
         "id": "a1_nac_5_invariable",
@@ -432,7 +433,8 @@
             "id": "a1_nac_7_c",
             "text": "Soy italiano de Italia nacionalidad.",
             "isCorrect": false,
-            "distractorRationaleAr": "تركيب لا وجود له في الإسبانية."
+            "distractorRationaleAr": "تركيب لا وجود له في الإسبانية.",
+            "textAr": "أنا إيطالي من إيطاليا جنسية."
           }
         ],
         "answerKey": {

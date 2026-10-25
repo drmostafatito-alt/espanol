@@ -1,4 +1,7 @@
 import { AudioService, type AudioLike, type SpeechLike, type SpeechSynthesisUtteranceLike } from './AudioService';
+import assetManifest from './assetManifest.json';
+
+const ASSET_MAP = assetManifest as Record<string, { file?: string } | undefined>;
 
 /** ربط الخدمة ببيئة المتصفح — المُكوّنات لا تعرف تفاصيل الصوت */
 const MEDIA_ORIGIN = (import.meta.env.VITE_MEDIA_ORIGIN as string | undefined) ?? '';
@@ -86,7 +89,11 @@ function createSpeech(): BrowserSpeech | null {
 
           const matched = pickVoice(utter.lang);
           if (matched) {
-            utter.voice = matched;
+            try {
+              utter.voice = matched;
+            } catch {
+              // بعض المتصفحات والبيئات ترفض تعيين كائن غير أصلي
+            }
             utter.lang = matched.lang;
           }
 
@@ -157,10 +164,20 @@ export const audioService = new AudioService({
   createAudio: url => new Audio(url) as unknown as AudioLike,
   speech: createSpeech(),
   resolveUrl: (key, variant) => {
-    // المفاتيح المعلَّقة (pending/) أو مفاتيح TTS التلقائية أو عدم توفر أصل R2
-    // لا تُترجم إلى رابط: البديل المحلي speechSynthesis يعمل فورًا بلا طلب شبكة فاشل
-    if (!key || key.startsWith('pending/') || key.startsWith('tts-') || !MEDIA_ORIGIN) return null;
+    if (!key) return null;
     const v = variant ?? 'es-ES';
+
+    // 1) فحص أصول الصوت المحلية المولدة مسبقًا بمحرك Piper
+    const local = ASSET_MAP[key];
+    if (local && local.file) {
+      const base = MEDIA_ORIGIN || '';
+      return `${base}/audio/${v}/${local.file}`;
+    }
+
+    // 2) المفاتيح المعلَّقة التي لم تولّد بعد أو مفاتيح TTS التلقائية: البديل المحلي speechSynthesis يعمل فورًا بلا طلب شبكة فاشل
+    if (key.startsWith('pending/') || key.startsWith('tts-') || !MEDIA_ORIGIN) return null;
+
+    // 3) المسار الافتراضي لأصول R2 البعيدة (عند إعداد أصل وسائط مخصص)
     return `${MEDIA_ORIGIN}/audio/${v}/${key}.opus`;
   },
   loadTimeoutMs: 1500, // مهلة منضبطة تمنع انتهاء مهلة إذن التفاعل للمتصفح (user gesture activation)

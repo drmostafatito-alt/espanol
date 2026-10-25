@@ -64,13 +64,13 @@ push(run('فحص الأنواع (tsc)', 'npx tsc --noEmit'));
 push(run('اختبارات الوحدة والتكامل (vitest)', 'npx vitest run'));
 push(run('اتساق DDL', 'node tools/check-sql.mjs'));
 push(run('جودة المحتوى', 'node tools/validate-content.mjs'));
-if (!SKIP_BUILD) push(run('بناء الإنتاج', 'npx vite build'));
-
 if (live) {
   push(run('اختبار الدخان على workerd + D1', 'node tools/smoke-worker.mjs'));
 } else {
   results.push({ label: 'اختبار الدخان على workerd + D1', cmd: 'node tools/smoke-worker.mjs', ok: null, code: null, out: 'لم يُشغَّل: لا خادم على 127.0.0.1:8787 (شغّل npm run worker:dev)', ms: 0 });
 }
+
+if (!SKIP_BUILD) push(run('بناء الإنتاج', 'npx vite build'));
 
 // حواجز أدوات قاعدة البيانات: يجب أن ترفض كل محاولة مسّ بعيد
 const guards = [
@@ -93,7 +93,7 @@ const findings = [
   // id, الخطورة, المحور, العنوان, الحالة, الإصلاح, الدليل, المتبقي
   ['SEC-01', 'عالية', 'كلمات المرور', 'الـpepper كان يُقرأ كسلسلة فارغة عند غياب المتغير، أي تعمل المصادقة بلا سر في الإنتاج بصمت', 'مُصلح',
     'password.ts يرفض السياسة بلا pepper (≥32 حرفًا) في غير بيئة الاختبار؛ index.ts يعيد 503 على مسارات المصادقة ويسجّل الرمز', 'tests/security.test.ts → S-A (بلا PASSWORD_PEPPER ⇒ 503)', '—'],
-  ['SEC-02', 'عالية', 'كلمات المرور', 'PBKDF2 بـ20,000 تكرار = 3.3% من متطلب OWASP (600,000) لـPBKDF2-HMAC-SHA256', 'مُخفَّف — قرار مالك مطلوب',
+  ['SEC-02', 'عالية', 'كلمات المرور', 'PBKDF2 بـ30,000 تكرار = 5.0% من متطلب OWASP (600,000) لـPBKDF2-HMAC-SHA256 (سقف خطة Cloudflare المجانية 10ms CPU)', 'مُخفَّف — قرار مالك مطلوب',
     'قياس فعلي على workerd لكل البدائل؛ رُفع إلى 30,000 (5.0%) وهو أقصى ما يدخل 10ms بهامش 2×. Argon2id/scrypt غير ممكنة (WASM محجوب + تكلفة 2.4–6× الميزانية)', 'reports/kdf-benchmark.md (مولَّد آليًا)', 'الوصول لمتطلب OWASP يتطلب Workers Paid (5$/شهر) أو ترحيل المصادقة — انظر القسم 5'],
   ['SEC-03', 'عالية', 'كلمات المرور', 'لا مسار لترقية التكرارات: تغيير الإعداد كان يُبقي الحسابات القديمة على القوة القديمة للأبد', 'مُصلح',
     'صيغة مُصدَّرة (pbkdf2-sha256$iters$salt$hash) + needsRehash() + إعادة تجزئة تلقائية عند أول دخول ناجح + دعم الصيغة القديمة للترحيل', 'tests/security.test.ts → S-A «ترقية التجزئة»', '—'],

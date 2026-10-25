@@ -32,6 +32,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const [results, setResults] = useState<Record<string, boolean | null>>({});
   const [audioRate, setAudioRate] = useState<number>(1.0);
   const startedAt = useRef<number>(Date.now());
+  // حارس متزامن ضد النقر المزدوج: setBusy لا يصل إلى الإغلاق التالي فورًا،
+  // فنقرتان سريعتان كانتا تُرسلان محاولتين بمفتاحين مختلفين وتضخّمان attempts_count.
+  const busyRef = useRef(false);
 
   const audio = audioService;
 
@@ -110,7 +113,8 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   }, [audioRate, playAudio]);
 
   const submit = useCallback(async () => {
-    if (!current || busy) return;
+    if (!current || busy || busyRef.current) return;
+    busyRef.current = true;
     setBusy(true);
     try {
       const res = await api.submitAnswer(slug, {
@@ -125,6 +129,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     } catch (err) {
       setError(err instanceof ApiError ? err.message : 'تعذّر إرسال الإجابة.');
     } finally {
+      busyRef.current = false;
       setBusy(false);
     }
   }, [answer, busy, current, slug]);
@@ -148,6 +153,34 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       })();
     }
   }, [exercises.length, index, slug]);
+
+  // اختصارات لوحة المفاتيح: أرقام 1–4 لاختيار الخيارات، وEnter للتأكيد
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (phase !== 'exercise' || !current) return;
+      const target = e.target as HTMLElement | null;
+      const isInput = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable);
+
+      if (!isInput && current.options && current.options.length > 0) {
+        const num = Number(e.key);
+        if (num >= 1 && num <= current.options.length) {
+          const opt = current.options[num - 1];
+          if (opt) {
+            e.preventDefault();
+            setAnswer(opt.id);
+            return;
+          }
+        }
+      }
+
+      if (!isInput && e.key === 'Enter' && hasAnswer(current, answer) && !busy && !busyRef.current) {
+        e.preventDefault();
+        void submit();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [phase, current, answer, busy, submit]);
 
   if (phase === 'loading') {
     return (
@@ -260,6 +293,11 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
           answer={answer}
           setAnswer={setAnswer}
           disabled={phase === 'feedback'}
+          onSubmit={() => {
+            if (!busy && !busyRef.current && hasAnswer(current, answer)) {
+              void submit();
+            }
+          }}
           onPlayAudio={() => playAudio()}
           onReplayAudio={() => playAudio()}
           onToggleRate={toggleRate}
@@ -351,6 +389,7 @@ function ExerciseBody({
   answer,
   setAnswer,
   disabled,
+  onSubmit,
   onPlayAudio,
   onReplayAudio,
   onToggleRate,
@@ -362,6 +401,7 @@ function ExerciseBody({
   answer: unknown;
   setAnswer: (v: unknown) => void;
   disabled: boolean;
+  onSubmit?: () => void;
   onPlayAudio: () => void;
   onReplayAudio: () => void;
   onToggleRate: () => void;
@@ -532,6 +572,12 @@ function ExerciseBody({
             disabled={disabled}
             value={typeof answer === 'string' ? answer : ''}
             onChange={e => setAnswer(e.target.value)}
+            onKeyDown={e => {
+              if ((e.ctrlKey || e.metaKey) && e.key === 'Enter' && !disabled && onSubmit) {
+                e.preventDefault();
+                onSubmit();
+              }
+            }}
             placeholder="اكتب هنا أو استخدم الميكروفون أعلاه…"
           />
         </label>
@@ -653,6 +699,12 @@ function ExerciseBody({
           disabled={disabled}
           value={typeof answer === 'string' ? answer : ''}
           onChange={e => setAnswer(e.target.value)}
+          onKeyDown={e => {
+            if (e.key === 'Enter' && !disabled && hasAnswer(exercise, answer) && onSubmit) {
+              e.preventDefault();
+              onSubmit();
+            }
+          }}
           placeholder="Escribe aquí…"
           autoComplete="off"
           autoCapitalize="off"

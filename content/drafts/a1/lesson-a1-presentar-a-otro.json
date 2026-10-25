@@ -301,13 +301,15 @@
             "id": "a1_pres_5_b",
             "text": "Te presento a ella es mi amiga.",
             "isCorrect": false,
-            "distractorRationaleAr": "سوء استخدام الضمير «ella» مع «es» داخل التقديم."
+            "distractorRationaleAr": "سوء استخدام الضمير «ella» مع «es» داخل التقديم.",
+            "textAr": "أقدّم لك هي صديقتي."
           },
           {
             "id": "a1_pres_5_c",
             "text": "Te presento mi amiga Nour.",
             "isCorrect": false,
-            "distractorRationaleAr": "ناقصة حرف الجر «a» قبل الشخص؛ غير صحيحة في هذا التعبير."
+            "distractorRationaleAr": "ناقصة حرف الجر «a» قبل الشخص؛ غير صحيحة في هذا التعبير.",
+            "textAr": "أقدّم لك صديقتي نور."
           }
         ],
         "answerKey": {
@@ -330,7 +332,8 @@
         "difficulty": 3,
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemAr": "أقدّم لك هي صديقتي نور."
       },
       {
         "id": "a1_pres_6_formal",
@@ -354,7 +357,8 @@
             "id": "a1_pres_6_c",
             "text": "Le presento a mi compañero Karim, ¿vale?",
             "isCorrect": false,
-            "distractorRationaleAr": "«¿vale?» عامية غير رسمية وتناقض سجل الجملة الرسمي."
+            "distractorRationaleAr": "«¿vale?» عامية غير رسمية وتناقض سجل الجملة الرسمي.",
+            "textAr": "أقدّم لك زميلي كريم، أليس كذلك؟"
           }
         ],
         "answerKey": {

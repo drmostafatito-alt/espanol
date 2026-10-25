@@ -1,0 +1,506 @@
+{
+  "phonetic_rr_perro": {
+    "file": "phonetic_rr_perro.wav",
+    "text": "El perro corre rápido por el parque.",
+    "category": "phonetic",
+    "durationMs": 2406,
+    "sizeBytes": 106144,
+    "sampleRate": 22050
+  },
+  "phonetic_rr_ferrocarril": {
+    "file": "phonetic_rr_ferrocarril.wav",
+    "text": "El ferrocarril llega a las cinco.",
+    "category": "phonetic",
+    "durationMs": 2185,
+    "sizeBytes": 96416,
+    "sampleRate": 22050
+  },
+  "phonetic_cz_gracias": {
+    "file": "phonetic_cz_gracias.wav",
+    "text": "Muchas gracias por su atención.",
+    "category": "phonetic",
+    "durationMs": 1953,
+    "sizeBytes": 86176,
+    "sampleRate": 22050
+  },
+  "phonetic_cz_cerveza": {
+    "file": "phonetic_cz_cerveza.wav",
+    "text": "Una cerveza fría con limón, por favor.",
+    "category": "phonetic",
+    "durationMs": 2394,
+    "sizeBytes": 105632,
+    "sampleRate": 22050
+  },
+  "phonetic_jg_gente": {
+    "file": "phonetic_jg_gente.wav",
+    "text": "Hay mucha gente joven en la plaza.",
+    "category": "phonetic",
+    "durationMs": 2058,
+    "sizeBytes": 90784,
+    "sampleRate": 22050
+  },
+  "phonetic_jg_trabajo": {
+    "file": "phonetic_jg_trabajo.wav",
+    "text": "Mi hijo busca trabajo en Madrid.",
+    "category": "phonetic",
+    "durationMs": 2058,
+    "sizeBytes": 90784,
+    "sampleRate": 22050
+  },
+  "phonetic_ac_comodos": {
+    "file": "phonetic_ac_comodos.wav",
+    "text": "Estos zapatos son muy cómodos.",
+    "category": "phonetic",
+    "durationMs": 2150,
+    "sizeBytes": 94880,
+    "sampleRate": 22050
+  },
+  "phonetic_ac_cancion": {
+    "file": "phonetic_ac_cancion.wav",
+    "text": "Esta canción está en la radio.",
+    "category": "phonetic",
+    "durationMs": 1895,
+    "sizeBytes": 83616,
+    "sampleRate": 22050
+  },
+  "phonetic_h_hablar": {
+    "file": "phonetic_h_hablar.wav",
+    "text": "Hola, tenemos que hablar ahora.",
+    "category": "phonetic",
+    "durationMs": 1930,
+    "sizeBytes": 85152,
+    "sampleRate": 22050
+  },
+  "phonetic_h_habitacion": {
+    "file": "phonetic_h_habitacion.wav",
+    "text": "La habitación del hotel está limpia.",
+    "category": "phonetic",
+    "durationMs": 2162,
+    "sizeBytes": 95392,
+    "sampleRate": 22050
+  },
+  "phonetic_ll_llamo": {
+    "file": "phonetic_ll_llamo.wav",
+    "text": "Me llamo Guillermo y vivo en Sevilla.",
+    "category": "phonetic",
+    "durationMs": 2162,
+    "sizeBytes": 95392,
+    "sampleRate": 22050
+  },
+  "phonetic_ll_llegar": {
+    "file": "phonetic_ll_llegar.wav",
+    "text": "Vamos a llegar tarde a la calle Mayor.",
+    "category": "phonetic",
+    "durationMs": 1930,
+    "sizeBytes": 85152,
+    "sampleRate": 22050
+  },
+  "core_agua": {
+    "file": "core_agua.wav",
+    "text": "Agua",
+    "category": "core_vocab",
+    "durationMs": 513,
+    "sizeBytes": 22688,
+    "sampleRate": 22050
+  },
+  "core_cafe": {
+    "file": "core_cafe.wav",
+    "text": "Café",
+    "category": "core_vocab",
+    "durationMs": 618,
+    "sizeBytes": 27296,
+    "sampleRate": 22050
+  },
+  "core_leche": {
+    "file": "core_leche.wav",
+    "text": "Leche",
+    "category": "core_vocab",
+    "durationMs": 792,
+    "sizeBytes": 34976,
+    "sampleRate": 22050
+  },
+  "core_por_favor": {
+    "file": "core_por_favor.wav",
+    "text": "Por favor",
+    "category": "core_vocab",
+    "durationMs": 873,
+    "sizeBytes": 38560,
+    "sampleRate": 22050
+  },
+  "core_adios": {
+    "file": "core_adios.wav",
+    "text": "Adiós",
+    "category": "core_vocab",
+    "durationMs": 780,
+    "sizeBytes": 34464,
+    "sampleRate": 22050
+  },
+  "core_manana": {
+    "file": "core_manana.wav",
+    "text": "Mañana",
+    "category": "core_vocab",
+    "durationMs": 711,
+    "sizeBytes": 31392,
+    "sampleRate": 22050
+  },
+  "core_buenos_dias": {
+    "file": "core_buenos_dias.wav",
+    "text": "Buenos días",
+    "category": "core_vocab",
+    "durationMs": 1024,
+    "sizeBytes": 45216,
+    "sampleRate": 22050
+  },
+  "core_buenas_noches": {
+    "file": "core_buenas_noches.wav",
+    "text": "Buenas noches",
+    "category": "core_vocab",
+    "durationMs": 1198,
+    "sizeBytes": 52896,
+    "sampleRate": 22050
+  },
+  "short_como_te_llamas": {
+    "file": "short_como_te_llamas.wav",
+    "text": "¿Cómo te llamas?",
+    "category": "short_question",
+    "durationMs": 1140,
+    "sizeBytes": 50336,
+    "sampleRate": 22050
+  },
+  "short_cuanto_cuesta": {
+    "file": "short_cuanto_cuesta.wav",
+    "text": "¿Cuánto cuesta esto?",
+    "category": "short_question",
+    "durationMs": 1338,
+    "sizeBytes": 59040,
+    "sampleRate": 22050
+  },
+  "short_donde_esta_bano": {
+    "file": "short_donde_esta_bano.wav",
+    "text": "¿Dónde está el baño?",
+    "category": "short_question",
+    "durationMs": 1315,
+    "sizeBytes": 58016,
+    "sampleRate": 22050
+  },
+  "short_no_entiendo": {
+    "file": "short_no_entiendo.wav",
+    "text": "Perdón, no entiendo español muy bien.",
+    "category": "short_question",
+    "durationMs": 2429,
+    "sizeBytes": 107168,
+    "sampleRate": 22050
+  },
+  "short_puede_repetir": {
+    "file": "short_puede_repetir.wav",
+    "text": "¿Puede repetir más despacio, por favor?",
+    "category": "short_question",
+    "durationMs": 2150,
+    "sizeBytes": 94880,
+    "sampleRate": 22050
+  },
+  "short_que_hora_es": {
+    "file": "short_que_hora_es.wav",
+    "text": "¿Qué hora es?",
+    "category": "short_question",
+    "durationMs": 1024,
+    "sizeBytes": 45216,
+    "sampleRate": 22050
+  },
+  "short_mucho_gusto": {
+    "file": "short_mucho_gusto.wav",
+    "text": "Mucho gusto en conocerte.",
+    "category": "short_question",
+    "durationMs": 1698,
+    "sizeBytes": 74912,
+    "sampleRate": 22050
+  },
+  "short_de_nada": {
+    "file": "short_de_nada.wav",
+    "text": "De nada, fue un placer ayudarte.",
+    "category": "short_question",
+    "durationMs": 1965,
+    "sizeBytes": 86688,
+    "sampleRate": 22050
+  },
+  "a1-cafe-que-le-pongo": {
+    "file": "a1-cafe-que-le-pongo.wav",
+    "text": "Buenos días, ¿qué le pongo?",
+    "category": "restaurant",
+    "durationMs": 1709,
+    "sizeBytes": 75424,
+    "sampleRate": 22050
+  },
+  "pending/a1-cafe-que-le-pongo": {
+    "file": "a1-cafe-que-le-pongo.wav",
+    "text": "Buenos días, ¿qué le pongo?",
+    "category": "restaurant",
+    "durationMs": 1709,
+    "sizeBytes": 75424,
+    "sampleRate": 22050
+  },
+  "a1-cafe-quiero-cafe-con-leche": {
+    "file": "a1-cafe-quiero-cafe-con-leche.wav",
+    "text": "Quiero un café con leche, por favor.",
+    "category": "restaurant",
+    "durationMs": 1779,
+    "sizeBytes": 78496,
+    "sampleRate": 22050
+  },
+  "pending/a1-cafe-quiero-cafe-con-leche": {
+    "file": "a1-cafe-quiero-cafe-con-leche.wav",
+    "text": "Quiero un café con leche, por favor.",
+    "category": "restaurant",
+    "durationMs": 1779,
+    "sizeBytes": 78496,
+    "sampleRate": 22050
+  },
+  "a1-cafe-para-tomar-o-llevar": {
+    "file": "a1-cafe-para-tomar-o-llevar.wav",
+    "text": "¿Para tomar aquí o para llevar?",
+    "category": "restaurant",
+    "durationMs": 1674,
+    "sizeBytes": 73888,
+    "sampleRate": 22050
+  },
+  "pending/a1-cafe-para-tomar-o-llevar": {
+    "file": "a1-cafe-para-tomar-o-llevar.wav",
+    "text": "¿Para tomar aquí o para llevar?",
+    "category": "restaurant",
+    "durationMs": 1674,
+    "sizeBytes": 73888,
+    "sampleRate": 22050
+  },
+  "a1-cafe-para-llevar-cuanto-cuesta": {
+    "file": "a1-cafe-para-llevar-cuanto-cuesta.wav",
+    "text": "Para llevar, por favor. ¿Cuánto cuesta?",
+    "category": "restaurant",
+    "durationMs": 2490,
+    "sizeBytes": 109844,
+    "sampleRate": 22050
+  },
+  "pending/a1-cafe-para-llevar-cuanto-cuesta": {
+    "file": "a1-cafe-para-llevar-cuanto-cuesta.wav",
+    "text": "Para llevar, por favor. ¿Cuánto cuesta?",
+    "category": "restaurant",
+    "durationMs": 2490,
+    "sizeBytes": 109844,
+    "sampleRate": 22050
+  },
+  "a1-cafe-un-euro-cincuenta": {
+    "file": "a1-cafe-un-euro-cincuenta.wav",
+    "text": "Un euro con cincuenta céntimos, por favor.",
+    "category": "restaurant",
+    "durationMs": 2487,
+    "sizeBytes": 109728,
+    "sampleRate": 22050
+  },
+  "pending/a1-cafe-un-euro-cincuenta": {
+    "file": "a1-cafe-un-euro-cincuenta.wav",
+    "text": "Un euro con cincuenta céntimos, por favor.",
+    "category": "restaurant",
+    "durationMs": 2487,
+    "sizeBytes": 109728,
+    "sampleRate": 22050
+  },
+  "restaurant_la_cuenta": {
+    "file": "restaurant_la_cuenta.wav",
+    "text": "Camarero, la cuenta, por favor.",
+    "category": "restaurant",
+    "durationMs": 1814,
+    "sizeBytes": 80032,
+    "sampleRate": 22050
+  },
+  "restaurant_mesa_dos": {
+    "file": "restaurant_mesa_dos.wav",
+    "text": "Buenas tardes, ¿tienen mesa libre para dos personas?",
+    "category": "restaurant",
+    "durationMs": 2952,
+    "sizeBytes": 130208,
+    "sampleRate": 22050
+  },
+  "restaurant_menu_dia": {
+    "file": "restaurant_menu_dia.wav",
+    "text": "¿Tienen el menú del día?",
+    "category": "restaurant",
+    "durationMs": 1489,
+    "sizeBytes": 65696,
+    "sampleRate": 22050
+  },
+  "travel_checkin": {
+    "file": "travel_checkin.wav",
+    "text": "Buenos días, vengo a hacer el check-in para el vuelo.",
+    "category": "travel",
+    "durationMs": 2487,
+    "sizeBytes": 109728,
+    "sampleRate": 22050
+  },
+  "travel_pasaporte": {
+    "file": "travel_pasaporte.wav",
+    "text": "Aquí tiene mi pasaporte y la tarjeta de embarque.",
+    "category": "travel",
+    "durationMs": 2650,
+    "sizeBytes": 116896,
+    "sampleRate": 22050
+  },
+  "travel_puerta_embarque": {
+    "file": "travel_puerta_embarque.wav",
+    "text": "¿Cuál es la puerta de embarque para el vuelo a Barcelona?",
+    "category": "travel",
+    "durationMs": 2766,
+    "sizeBytes": 122016,
+    "sampleRate": 22050
+  },
+  "travel_recoger_equipaje": {
+    "file": "travel_recoger_equipaje.wav",
+    "text": "Disculpe, ¿dónde puedo recoger el equipaje de mano?",
+    "category": "travel",
+    "durationMs": 3137,
+    "sizeBytes": 138400,
+    "sampleRate": 22050
+  },
+  "travel_estacion_metro": {
+    "file": "travel_estacion_metro.wav",
+    "text": "¿Dónde está la estación de metro más cercana al hotel?",
+    "category": "travel",
+    "durationMs": 2754,
+    "sizeBytes": 121504,
+    "sampleRate": 22050
+  },
+  "travel_billete_ida_vuelta": {
+    "file": "travel_billete_ida_vuelta.wav",
+    "text": "Quisiera comprar un billete de ida y vuelta, por favor.",
+    "category": "travel",
+    "durationMs": 2928,
+    "sizeBytes": 129184,
+    "sampleRate": 22050
+  },
+  "travel_hotel_reserva": {
+    "file": "travel_hotel_reserva.wav",
+    "text": "Tengo una reserva de habitación a nombre de Omar.",
+    "category": "travel",
+    "durationMs": 2603,
+    "sizeBytes": 114848,
+    "sampleRate": 22050
+  },
+  "travel_desayuno_incluido": {
+    "file": "travel_desayuno_incluido.wav",
+    "text": "¿A qué hora se sirve el desayuno y está incluido?",
+    "category": "travel",
+    "durationMs": 2510,
+    "sizeBytes": 110752,
+    "sampleRate": 22050
+  },
+  "cc1-opening-omar": {
+    "file": "cc1-opening-omar.wav",
+    "text": "Servicio de atención al cliente, buenos días, ¿en qué puedo ayudarle?",
+    "category": "callcenter",
+    "durationMs": 3532,
+    "sizeBytes": 155808,
+    "sampleRate": 22050
+  },
+  "pending/cc1-opening-omar": {
+    "file": "cc1-opening-omar.wav",
+    "text": "Servicio de atención al cliente, buenos días, ¿en qué puedo ayudarle?",
+    "category": "callcenter",
+    "durationMs": 3532,
+    "sizeBytes": 155808,
+    "sampleRate": 22050
+  },
+  "cc1-ask-order-number": {
+    "file": "cc1-ask-order-number.wav",
+    "text": "¿Me puede proporcionar su número de pedido, por favor?",
+    "category": "callcenter",
+    "durationMs": 2661,
+    "sizeBytes": 117408,
+    "sampleRate": 22050
+  },
+  "pending/cc1-ask-order-number": {
+    "file": "cc1-ask-order-number.wav",
+    "text": "¿Me puede proporcionar su número de pedido, por favor?",
+    "category": "callcenter",
+    "durationMs": 2661,
+    "sizeBytes": 117408,
+    "sampleRate": 22050
+  },
+  "cc1-hold-comprobar": {
+    "file": "cc1-hold-comprobar.wav",
+    "text": "Permítame un momento en línea mientras compruebo los datos en el sistema.",
+    "category": "callcenter",
+    "durationMs": 3996,
+    "sizeBytes": 176288,
+    "sampleRate": 22050
+  },
+  "pending/cc1-hold-comprobar": {
+    "file": "cc1-hold-comprobar.wav",
+    "text": "Permítame un momento en línea mientras compruebo los datos en el sistema.",
+    "category": "callcenter",
+    "durationMs": 3996,
+    "sizeBytes": 176288,
+    "sampleRate": 22050
+  },
+  "cc1-customer-cancelar": {
+    "file": "cc1-customer-cancelar.wav",
+    "text": "Quisiera cancelar mi suscripción porque no voy a usar el servicio.",
+    "category": "callcenter",
+    "durationMs": 3346,
+    "sizeBytes": 147616,
+    "sampleRate": 22050
+  },
+  "pending/cc1-customer-cancelar": {
+    "file": "cc1-customer-cancelar.wav",
+    "text": "Quisiera cancelar mi suscripción porque no voy a usar el servicio.",
+    "category": "callcenter",
+    "durationMs": 3346,
+    "sizeBytes": 147616,
+    "sampleRate": 22050
+  },
+  "cc1-solicitud-registrada": {
+    "file": "cc1-solicitud-registrada.wav",
+    "text": "Su solicitud ha sido registrada con éxito en nuestro sistema.",
+    "category": "callcenter",
+    "durationMs": 3532,
+    "sizeBytes": 155808,
+    "sampleRate": 22050
+  },
+  "pending/cc1-solicitud-registrada": {
+    "file": "cc1-solicitud-registrada.wav",
+    "text": "Su solicitud ha sido registrada con éxito en nuestro sistema.",
+    "category": "callcenter",
+    "durationMs": 3532,
+    "sizeBytes": 155808,
+    "sampleRate": 22050
+  },
+  "cc1-closing": {
+    "file": "cc1-closing.wav",
+    "text": "Gracias por comunicarse con nosotros, que tenga un excelente día.",
+    "category": "callcenter",
+    "durationMs": 3590,
+    "sizeBytes": 158368,
+    "sampleRate": 22050
+  },
+  "pending/cc1-closing": {
+    "file": "cc1-closing.wav",
+    "text": "Gracias por comunicarse con nosotros, que tenga un excelente día.",
+    "category": "callcenter",
+    "durationMs": 3590,
+    "sizeBytes": 158368,
+    "sampleRate": 22050
+  },
+  "complex_condicional": {
+    "file": "complex_condicional.wav",
+    "text": "Si tuviera más tiempo libre este año, estudiaría español todos los días con entusiasmo.",
+    "category": "complex",
+    "durationMs": 5250,
+    "sizeBytes": 231584,
+    "sampleRate": 22050
+  },
+  "complex_academico": {
+    "file": "complex_academico.wav",
+    "text": "Es imprescindible que todos los participantes confirmen su asistencia antes del inicio de la conferencia internacional.",
+    "category": "complex",
+    "durationMs": 6632,
+    "sizeBytes": 292512,
+    "sampleRate": 22050
+  }
+}

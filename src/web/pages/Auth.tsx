@@ -19,7 +19,31 @@ function useAuthForm(onDone: () => void) {
     setError(null);
     try {
       const { user } = await fn();
-      setUser(user);
+      // نجاح POST لا يثبت أن المتصفح حفظ كوكي الجلسة (إطار معاينة، كوكيز محظورة،
+      // بروكسي يرفض Secure على http...). نتحقق فعليًا من الجلسة قبل التوجيه،
+      // بدل إرسال المستخدم إلى اللوحة ثم ارتداده بصمت إلى صفحة الدخول.
+      let confirmed = user;
+      try {
+        confirmed = (await api.me({ silentUnauth: true })).user;
+      } catch (e) {
+        if (e instanceof ApiError && e.isUnauthorized()) {
+          const embedded = typeof window !== 'undefined' && window.self !== window.top;
+          setError({
+            message: embedded
+              ? 'تم التحقق من بياناتك، لكن معاينة الموقع داخل إطار منعت المتصفح من حفظ جلسة الدخول.'
+              : 'تم التحقق من بياناتك، لكن المتصفح لم يحفظ جلسة الدخول.',
+            problems: embedded
+              ? ['افتح الموقع في تبويب مستقل ثم سجّل الدخول من هناك — ستبقى جلستك محفوظة.']
+              : [
+                  'اسمح بالكوكيز لهذا الموقع في إعدادات المتصفح، أو جرّب نافذة عادية بدل التصفح الخاص.',
+                  'لم يُفقد حسابك ولا بياناتك — المشكلة في حفظ الجلسة على هذا الجهاز فقط.',
+                ],
+          });
+          return; // لا توجيه: نبقى في النموذج مع سبب واضح
+        }
+        // تعذّر التأكيد لسبب شبكي/خادمي عابر: لا نمنع الدخول، والطلب التالي يكشف الحالة.
+      }
+      setUser(confirmed);
       onDone();
     } catch (e) {
       if (e instanceof ApiError) {
@@ -74,7 +98,7 @@ function AuthLayout({ title, subtitle, children }: { title: string; subtitle: st
   );
 }
 
-function PasswordField({ value, onChange, autoComplete }: { value: string; onChange: (v: string) => void; autoComplete: string }) {
+function PasswordField({ value, onChange, autoComplete, minLength }: { value: string; onChange: (v: string) => void; autoComplete: string; minLength?: number }) {
   const [show, setShow] = useState(false);
   return (
     <label className="field">
@@ -89,7 +113,7 @@ function PasswordField({ value, onChange, autoComplete }: { value: string; onCha
           onChange={e => onChange(e.target.value)}
           autoComplete={autoComplete}
           required
-          minLength={10}
+          minLength={minLength}
         />
         <button
           type="button"
@@ -131,8 +155,9 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
             <input className="ltr" style={{ paddingInlineStart: 44 }} type="email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="email" required />
           </div>
         </label>
-        <PasswordField value={password} onChange={setPassword} autoComplete="new-password" />
-        <span className="small muted" style={{ marginTop: 'calc(-1 * var(--s-2))' }}>10 أحرف على الأقل، وتحتوي حرفًا ورقمًا.</span>
+        {/* 12 هو حد سياسة الخادم (MIN_PASSWORD_LENGTH) — لا نعد المستخدم بحد أخف يُرفض بعده */}
+        <PasswordField value={password} onChange={setPassword} autoComplete="new-password" minLength={12} />
+        <span className="small muted" style={{ marginTop: 'calc(-1 * var(--s-2))' }}>12 حرفًا على الأقل، وتحتوي حرفًا ورقمًا.</span>
         <button className="btn block lg" type="submit" disabled={busy}>
           {busy ? (
             <>
@@ -189,7 +214,7 @@ export function Login({
           </div>
         </label>
         <PasswordField value={password} onChange={setPassword} autoComplete="current-password" />
-        <button className="btn navy block lg" type="submit" disabled={busy}>
+        <button className="btn block lg" type="submit" disabled={busy}>
           {busy ? (
             <>
               <span className="spinner spinner-sm" aria-hidden="true" /> جارٍ الدخول…
@@ -200,8 +225,8 @@ export function Login({
           لا تملك حسابًا؟{' '}
           <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
         </p>
-        <p className="small muted" style={{ textAlign: 'center', marginBottom: 0, fontSize: '0.8rem' }}>
-          استعادة كلمة المرور غير مفعّلة حاليًا — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنها تعمل.
+        <p className="auth-note small muted">
+          لا تتوفر حاليًا خاصية استعادة كلمة المرور. إن نسيتها، تواصل مع فريق المنصة لحل المشكلة.
         </p>
       </form>
     </AuthLayout>

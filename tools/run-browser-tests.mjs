@@ -17,7 +17,25 @@ function assert(desc, ok, extra = '') {
   if (!ok) throw new Error(`FALIED: ${desc} ${extra}`);
 }
 
+import { readdirSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+
+async function resetRateLimits() {
+  const sqliteDir = join(ROOT, '.wrangler/state/v3/d1/miniflare-D1DatabaseObject');
+  if (existsSync(sqliteDir)) {
+    const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+    if (f) {
+      try {
+        const { DatabaseSync } = await import('node:sqlite');
+        const db = new DatabaseSync(join(sqliteDir, f));
+        db.exec('DELETE FROM rate_limits');
+      } catch {}
+    }
+  }
+}
+
 async function run() {
+  await resetRateLimits();
   console.log(`\n🚀 بدء اختبارات المتصفح الحقيقي (Playwright Chromium) على ${BASE}\n`);
   
   const browser = await chromium.launch({ headless: true });
@@ -25,6 +43,22 @@ async function run() {
     viewport: { width: 1280, height: 800 },
     locale: 'ar-EG',
     timezoneId: 'Africa/Cairo',
+  });
+  await context.addInitScript(() => {
+    window.__spokenUtterances = [];
+    if (typeof window.speechSynthesis !== 'undefined') {
+      window.speechSynthesis.speak = function(u) {
+        if (!u) return;
+        window.__spokenUtterances.push({ text: u.text, lang: u.lang, rate: u.rate });
+        setTimeout(() => {
+          try { u.onstart?.(); } catch {}
+          try { u.onend?.(); } catch {}
+        }, 50);
+      };
+      window.speechSynthesis.getVoices = function() {
+        return [{ default: true, lang: 'es-ES', localService: true, name: 'Monica', voiceURI: 'Monica' }];
+      };
+    }
   });
   const page = await context.newPage();
 
@@ -48,7 +82,7 @@ async function run() {
     // 2. تسجيل مستخدم جديد مع فحص كلمة المرور الضعيفة
     // -------------------------------------------------------------------------
     await page.goto(`${BASE}/signup`);
-    assert('صفحة إنشاء الحساب تُفتح بنجاح', await page.locator('h1').textContent() === 'إنشاء حساب');
+    assert('صفحة إنشاء الحساب تُفتح بنجاح', (await page.locator('h1').textContent() || '').includes('إنشاء حساب'));
 
     // تجربة كلمة مرور ضعيفة
     await page.fill('input[type="email"]', userAEmail);
@@ -189,18 +223,53 @@ async function run() {
     assert('الدروس المكتملة 1 بعد تحديث الصفحة', lessonsAfterReload?.startsWith('1/'));
 
     // -------------------------------------------------------------------------
-    // 8. فتاح درس A1 بعد إتمام المتطلب السابق
+    // 8. فتاح درس A1 بعد إتمام المتطلب السابق واختبار اختصارات لوحة المفاتيح
     // -------------------------------------------------------------------------
     await page.goto(`${BASE}/learn/a1-un-cafe-por-favor`);
     await page.waitForSelector('[data-testid="lesson-submit"]', { timeout: 10000 });
     assert('درس A1 فُتح رسميًا بعد إتمام PREA1 وزر التحقق متاح', true);
 
+    // تفاعل لوحة المفاتيح داخل الدرس:
+    // 8.1) كتابة café في حقل الإدخال وضغط Enter للإرسال المباشر
+    const lessonInput = page.locator('[data-testid="lesson-text"]');
+    await lessonInput.fill('café');
+    await lessonInput.press('Enter');
+    await page.waitForSelector('[data-testid="lesson-feedback"]', { timeout: 5000 });
+    assert('الضغط على Enter داخل حقل النص يرسل الإجابة بلوحة المفاتيح', true);
+
+    // 8.2) الانتقال للسؤال التالي بضغط Enter على زر التالي ذي التركيز التلقائي
+    await page.locator('[data-testid="lesson-next"]').press('Enter');
+    await page.waitForSelector('.choice', { timeout: 5000 });
+
+    // 8.3) في سؤال الخيارات: الضغط على 1 يختار الخيار الأول وضغط Enter يرسل الإجابة
+    await page.keyboard.press('1');
+    const firstRadio = page.locator('.choice input[type="radio"]').first();
+    const isChecked = await firstRadio.isChecked();
+    assert('الضغط على المفتاح 1 يختار الخيار الأول بلوحة المفاتيح', isChecked);
+    await page.keyboard.press('Enter');
+    await page.waitForSelector('[data-testid="lesson-feedback"]', { timeout: 5000 });
+    assert('الضغط على Enter يؤكد إجابة الخيارات بلوحة المفاتيح', true);
+
     // -------------------------------------------------------------------------
     // 9. الخروج ثم الدخول بنفس الحساب — استعادة التقدم
     // -------------------------------------------------------------------------
+    const doLogout = async () => {
+      const btn = page.locator('button:has-text("تسجيل الخروج")').first();
+      if (await btn.isVisible()) {
+        await btn.click();
+      } else {
+        const acct = page.locator('button[aria-haspopup="menu"]').first();
+        if (await acct.count()) {
+          await acct.click();
+          await page.locator('.account-pop button:has-text("تسجيل الخروج")').click();
+        }
+      }
+      await page.goto(`${BASE}/login`);
+      await page.waitForURL('**/login', { timeout: 5000 });
+    };
+
     await page.goto(`${BASE}/learn`);
-    await page.click('header button:has-text("خروج")');
-    await page.waitForURL('**/login', { timeout: 5000 });
+    await doLogout();
     assert('الجلسة أُبطلت بالخروج وتوجّه المتعلم تلقائيًا إلى /login', page.url().includes('/login'));
 
     // إعادة الدخول بنفس الحساب
@@ -216,8 +285,7 @@ async function run() {
     // -------------------------------------------------------------------------
     // 10. عزل بيانات المستخدمين (User B)
     // -------------------------------------------------------------------------
-    await page.click('header button:has-text("خروج")');
-    await page.waitForURL('**/login', { timeout: 5000 });
+    await doLogout();
 
     // تسجيل المستخدم الثاني
     await page.goto(`${BASE}/signup`);
@@ -236,8 +304,7 @@ async function run() {
     // 11. تجربة المراجعة المتباعدة (SRS) للمستخدم A
     // -------------------------------------------------------------------------
     // نعود للمستخدم A الذي أتم درسًا
-    await page.click('header button:has-text("خروج")');
-    await page.waitForURL('**/login', { timeout: 5000 });
+    await doLogout();
     await page.fill('input[type="email"]', userAEmail);
     await page.fill('input[type="password"]', userPassword);
     await page.click('button[type="submit"]');
@@ -255,12 +322,24 @@ async function run() {
     // كشف الإجابة بالماوس
     await page.click('[data-testid="review-reveal"]');
     await page.waitForSelector('[data-testid="review-answer"]');
-    assert('الإجابة تظهر فور الضغط على كشف الإجابة', true);
+    const answerText = await page.locator('[data-testid="review-answer"]').textContent();
+    assert('الإجابة تظهر فور الضغط على كشف الإجابة', !!answerText && answerText.trim().length > 0);
 
-    // التقييم بـ جيد
-    await page.click('[data-testid="review-rate-good"]');
-    await page.waitForTimeout(500);
-    assert('التقييم يُرسل ويُسجَّل بنجاح', true);
+    // التقييم بـ جيد — نلتقط طلب الخادم ونتحقق من تحديث الجدولة وتغيّر البطاقة
+    const promptBefore = await page.locator('[data-testid="review-prompt"]').textContent();
+    const [evalResponse] = await Promise.all([
+      page.waitForResponse(res => res.url().includes('/api/review/answers') && res.status() === 200),
+      page.click('[data-testid="review-rate-good"]'),
+    ]);
+    const evalData = await evalResponse.json();
+    assert('طلب تقييم المراجعة يُحفظ على الخادم ويعيد الجدولة بنجاح', evalData?.next?.intervalDays !== undefined, `interval=${evalData?.next?.intervalDays}d`);
+
+    // التحقق من تغيّر حالة البطاقة في الواجهة: إما الانتقال لبطاقة تالية أو انتهاء البطاقات
+    await page.waitForTimeout(400);
+    const hasEmpty = await page.locator('[data-testid="review-empty"]').count();
+    const promptAfter = hasEmpty === 0 ? await page.locator('[data-testid="review-prompt"]').textContent() : null;
+    const answerHidden = (await page.locator('[data-testid="review-answer"]').count()) === 0;
+    assert('حالة بطاقة المراجعة تتغير فعليًا وتُخفى إجابة البطاقة التالية', (hasEmpty > 0 || promptAfter !== promptBefore) && answerHidden);
 
     // -------------------------------------------------------------------------
     // 12. التنقل بلوحة المفاتيح في المراجعة (مسافة للكشف، رقم 3 للتقييم)
@@ -269,11 +348,15 @@ async function run() {
     if (remainingCards > 0) {
       await page.keyboard.press(' ');
       await page.waitForSelector('[data-testid="review-answer"]');
-      assert('مفتاح المسافة يكشف الإجابة بلوحة المفاتيح', true);
+      const ans = await page.locator('[data-testid="review-answer"]').textContent();
+      assert('مفتاح المسافة يكشف الإجابة بلوحة المفاتيح', !!ans && ans.trim().length > 0);
 
-      await page.keyboard.press('3');
-      await page.waitForTimeout(500);
-      assert('الأرقام 1-4 تقيّم البطاقة بلوحة المفاتيح', true);
+      const [evalKeyResponse] = await Promise.all([
+        page.waitForResponse(res => res.url().includes('/api/review/answers') && res.status() === 200),
+        page.keyboard.press('3'),
+      ]);
+      const evalKeyData = await evalKeyResponse.json();
+      assert('الأرقام 1-4 تقيّم البطاقة بلوحة المفاتيح وتُسجّل النتيجة بالخادم', evalKeyData?.next?.intervalDays !== undefined);
     }
 
     // -------------------------------------------------------------------------
@@ -329,8 +412,7 @@ async function run() {
 
     // روابط نتائج البحث: كل زر يجب أن ينقل إلى صفحة تعمل فعلًا، لا صفحة 404
     await page.goto(`${BASE}/search?q=gustar`);
-    await page.fill('[data-testid="search-input"]', 'gustar');
-    await page.waitForTimeout(600);
+    await page.waitForSelector('.card button:has-text("فتح الدرس")', { timeout: 10000 });
     const lessonBtn = page.locator('.card button:has-text("فتح الدرس")').first();
     assert('نتيجة الدرس تعرض زر «فتح الدرس»', (await lessonBtn.count()) > 0);
     await lessonBtn.click();
@@ -341,8 +423,7 @@ async function run() {
     assert('زر «فتح الدرس» يفتح صفحة الدرس الحقيقية', !lessonPage.includes('الصفحة غير موجودة'), page.url());
 
     await page.goto(`${BASE}/search?q=gustar`);
-    await page.fill('[data-testid="search-input"]', 'gustar');
-    await page.waitForTimeout(600);
+    await page.waitForSelector('.card button:has-text("في المنهج")', { timeout: 10000 });
     const pathBtn = page.locator('.card button:has-text("في المنهج")').first();
     assert('نتيجة المفردة تعرض زر «في المنهج»', (await pathBtn.count()) > 0);
     await pathBtn.click();
@@ -356,16 +437,29 @@ async function run() {
     // -------------------------------------------------------------------------
     await page.goto(`${BASE}/learn/prea1-hola-me-llamo`);
     await page.waitForSelector('[data-testid="lesson-submit"]', { timeout: 10000 });
+
+    // تتبع استدعاءات النطق الحقيقية في المتصفح
+    await page.evaluate(() => {
+      window.__spokenUtterances = [];
+    });
+
     const audioBtn = page.locator('[data-testid="lesson-audio"]').first();
     if (await audioBtn.count() > 0) {
       await audioBtn.click();
-      assert('زر الصوت الأساسي في الدرس يستجيب للنقر', true);
+      await page.waitForTimeout(500);
+      const spoken = await page.evaluate(() => window.__spokenUtterances || []);
+      assert('زر الصوت الأساسي يشغّل نطق النص الإسباني الصحيح بمحرك النطق', spoken.length > 0 && spoken[0].text.length > 0, `spoken="${spoken[0]?.text}"`);
     }
+
     const replayBtn = page.locator('[data-testid="lesson-audio-replay"]').first();
     if (await replayBtn.count() > 0) {
+      const countBefore = await page.evaluate(() => (window.__spokenUtterances || []).length);
       await replayBtn.click();
-      assert('زر إعادة الاستماع يستجيب للنقر', true);
+      await page.waitForTimeout(500);
+      const countAfter = await page.evaluate(() => (window.__spokenUtterances || []).length);
+      assert('زر إعادة الاستماع يُطلق نطقًا جديدًا بمحرك النطق', countAfter > countBefore, `invocations=${countAfter}`);
     }
+
     const rateBtn = page.locator('[data-testid="lesson-audio-rate"]').first();
     if (await rateBtn.count() > 0) {
       const rateTextBefore = await rateBtn.textContent();
@@ -373,6 +467,62 @@ async function run() {
       const rateTextAfter = await rateBtn.textContent();
       assert('زر تبديل سرعة النطق يغير السرعة بنجاح', rateTextBefore !== rateTextAfter);
     }
+
+    // -------------------------------------------------------------------------
+    // 17. اختبار مستقل لحالة عدم توفر الصوت في المتصفح
+    // -------------------------------------------------------------------------
+    const fallbackPage = await context.newPage();
+    // إبطال محرك النطق تماماً قبل فتح الصفحة لمحاكاة متصفح أو جهاز غير داعم للصوت
+    await fallbackPage.addInitScript(() => {
+      Object.defineProperty(window, 'speechSynthesis', {
+        value: null,
+        configurable: true,
+        writable: true,
+      });
+    });
+    await fallbackPage.goto(`${BASE}/learn/prea1-hola-me-llamo`);
+    await fallbackPage.waitForSelector('[data-testid="lesson-submit"]', { timeout: 10000 });
+    const noAudioBtn = fallbackPage.locator('[data-testid="lesson-audio"]').first();
+    if (await noAudioBtn.count() > 0) {
+      await noAudioBtn.click();
+      await fallbackPage.waitForSelector('[data-testid="audio-notice"]', { timeout: 5000 });
+      const notice = await fallbackPage.locator('[data-testid="audio-notice"]').textContent();
+      assert('تنبيه عدم توفر الصوت يظهر للمتعلم بوضوح عند غياب دعم الصوت', !!notice && (notice.includes('لا يدعم') || notice.includes('تعذّر') || notice.includes('النص مكتوب')), `notice="${notice?.trim()}"`);
+
+      // التحقق من أن زر "أكمل بدون صوت" يغلق التنبيه ولا يعطل المتابعة
+      const dismissBtn = fallbackPage.locator('[data-testid="audio-notice"] button');
+      await dismissBtn.click();
+      await fallbackPage.waitForTimeout(200);
+      const noticeCountAfter = await fallbackPage.locator('[data-testid="audio-notice"]').count();
+      assert('المتعلم يستطيع إغلاق تنبيه الصوت ومتابعة الدرس بسلاسة', noticeCountAfter === 0);
+    }
+    await fallbackPage.close();
+
+    // -------------------------------------------------------------------------
+    // 18. اختبار تحديد المستوى (Placement Test) في المتصفح الحقيقي
+    // -------------------------------------------------------------------------
+    await page.goto(`${BASE}/placement`);
+    await page.waitForSelector('.question-scene', { timeout: 5000 });
+    assert('صفحة اختبار تحديد المستوى /placement تُفتح بنجاح في المتصفح', (await page.locator('h1').textContent() || '').includes('اختبار تحديد المستوى'));
+
+    // الإجابة عن الأسئلة العشرة باختيار الخيار الأول
+    for (let q = 1; q <= 10; q++) {
+      const firstChoice = page.locator('label.choice').first();
+      await firstChoice.click();
+      await page.waitForTimeout(100);
+      if (q < 10) {
+        const nextBtn = page.locator('button:has-text("التالي")');
+        await nextBtn.click();
+        await page.waitForTimeout(150);
+      }
+    }
+    const finishBtn = page.locator('button:has-text("إنهاء التقييم")');
+    assert('زر إنهاء التقييم متاح بعد إكمال الأسئلة العشرة', await finishBtn.isVisible());
+    await finishBtn.click();
+    await page.waitForSelector('.result-hero', { timeout: 8000 });
+    const placementResultText = await page.locator('.result-hero').textContent() || '';
+    assert('نتيجة اختبار تحديد المستوى تظهر للمتعلم بالدرجة والمستوى الموصى به', placementResultText.includes('المستوى الموصى به') || placementResultText.includes('أحسنت'));
+
 
     console.log(`\n🎉 اكتملت جميع اختبارات المتصفح الحقيقي بنجاح تام! (${results.length}/${results.length})\n`);
   } finally {

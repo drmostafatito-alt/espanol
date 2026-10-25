@@ -563,11 +563,14 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   // ترتيب الدروس طوبولوجيًا داخل كل وحدة بحيث تأتي المتطلبات السابقة قبل الدروس المعتمدة عليها
   const sortedLessons = sortLessonsWithinUnits(rawLessons.results);
 
-  // حساب حالة القفل بدقة وفقًا لقواعد الخادم assertUnlocked
-  const completedSet = new Set<string>();
+  // حساب حالة القفل بدقة وفقًا لقواعد الخادم assertUnlocked.
+  // assertUnlocked يقبل أي تقدم (in_progress أو completed) إذا بلغت الدقة الحد المطلوب،
+  // فلو اشترطنا هنا completed وحده لعرضنا الدرس مقفلًا بينما الخادم يفتحه فعلًا
+  // (مثال: إتقان الدرس يشترط 80% وقاعدة الفتح تشترط 60%، والمتعلم عنده 70%).
+  const startedSet = new Set<string>();
   const accuracyMap = new Map<string, number>();
   for (const r of sortedLessons) {
-    if (r.progress_status === 'completed') completedSet.add(r.slug);
+    if (r.progress_status !== 'not_started') startedSet.add(r.slug);
     accuracyMap.set(r.slug, r.best_accuracy);
   }
 
@@ -580,9 +583,9 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     const requires = Array.isArray(rule.requires) ? rule.requires : [];
     const minAcc = rule.minAccuracy ?? 0;
     const missing = requires.filter(reqSlug => {
-      const isDone = completedSet.has(reqSlug);
+      const isStarted = startedSet.has(reqSlug);
       const acc = accuracyMap.get(reqSlug) ?? 0;
-      return !isDone || acc < minAcc;
+      return !isStarted || acc < minAcc;
     });
 
     const is_unlocked = missing.length === 0;

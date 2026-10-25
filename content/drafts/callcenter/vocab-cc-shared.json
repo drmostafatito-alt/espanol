@@ -1754,27 +1754,27 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "transfero",
+     "formEs": "transfiero",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferes",
+     "formEs": "transfieres",
      "tense": "presente",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transfere",
+     "formEs": "transfiere",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1782,7 +1782,7 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1790,15 +1790,15 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferen",
+     "formEs": "transfieren",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1806,7 +1806,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1814,15 +1814,15 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferió",
+     "formEs": "transfirió",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1830,7 +1830,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1838,15 +1838,15 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferieron",
+     "formEs": "transfirieron",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1854,7 +1854,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1862,7 +1862,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1870,7 +1870,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1878,7 +1878,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1886,7 +1886,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1894,7 +1894,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1902,7 +1902,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1910,7 +1910,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1918,7 +1918,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1926,7 +1926,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1934,7 +1934,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1942,7 +1942,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1950,7 +1950,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1958,7 +1958,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1966,7 +1966,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1974,7 +1974,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1982,7 +1982,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -1990,63 +1990,63 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transfera",
+     "formEs": "transfiera",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferas",
+     "formEs": "transfieras",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transfera",
+     "formEs": "transfiera",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferamos",
+     "formEs": "transfiramos",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferáis",
+     "formEs": "transfiráis",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "transferan",
+     "formEs": "transfieran",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "gerund",
-     "formEs": "transferiendo",
+     "formEs": "transfiriendo",
      "tense": null,
      "mood": null,
      "person": null,
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "participle",

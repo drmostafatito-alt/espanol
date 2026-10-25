@@ -23,6 +23,9 @@
     "test:browser": "node tools/run-browser-tests.mjs",
     "test:live": "node tools/test-learner-flow-live.mjs",
     "test:ui": "vitest run tests/ui-lesson.test.tsx",
+    "test:journey": "node tools/journey-live-19.mjs",
+    "test:audio": "node tools/test-static-audio-browser.mjs",
+    "audio:generate": "node tools/generate-sample-audio.mjs",
     "content:import": "node tools/import-content.mjs",
     "content:import:all": "node tools/import-content.mjs --all",
     "content:plan": "node tools/import-content.mjs --dry-run"

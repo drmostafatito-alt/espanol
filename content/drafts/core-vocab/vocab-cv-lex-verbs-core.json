@@ -35,7 +35,7 @@
      "exampleEs": "Abre la puerta, por favor.",
      "exampleAr": "افتح الباب من فضلك.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: abrir.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (abrí، abriste، abrió) — راجع جدول التصريف. المصدر: abrir.",
      "commonErrorAr": null
     }
    ],
@@ -5180,7 +5180,7 @@
      "exampleEs": "Creo que tienes razón.",
      "exampleAr": "أعتقد إنك معاك حق.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: creer.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (creí، creíste، creyó) — راجع جدول التصريف. المصدر: creer.",
      "commonErrorAr": null
     }
    ],
@@ -6552,7 +6552,7 @@
      "exampleEs": "Descubrí un restaurante nuevo.",
      "exampleAr": "اكتشفت مطعم جديد.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: descubrir.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (descubrí، descubriste، descubrió) — راجع جدول التصريف. المصدر: descubrir.",
      "commonErrorAr": null
     }
    ],
@@ -9639,7 +9639,7 @@
      "exampleEs": "Escribo un correo de trabajo.",
      "exampleAr": "بكتب إيميل شغل.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: escribir.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (escribí، escribiste، escribió) — راجع جدول التصريف. المصدر: escribir.",
      "commonErrorAr": null
     }
    ],
@@ -12726,7 +12726,7 @@
      "exampleEs": "Leo un libro cada semana.",
      "exampleAr": "بقرأ كتاب كل أسبوع.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: leer.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (leí، leíste، leyó) — راجع جدول التصريف. المصدر: leer.",
      "commonErrorAr": null
     }
    ],
@@ -20612,16 +20612,16 @@
      "meaningArFusha": "يجمع أو يستلم",
      "meaningArEg": "يلمّ",
      "glossEs": null,
-     "exampleEs": "Recogo a los niños del colegio.",
+     "exampleEs": "Recojo a los niños del colegio.",
      "exampleAr": "بلمّ العيال من المدرسة.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: recoger.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (recoja، recojas، recoja) — راجع جدول التصريف. المصدر: recoger.",
      "commonErrorAr": null
     }
    ],
    "examples": [
     {
-     "es": "Recogo a los niños del colegio.",
+     "es": "Recojo a los niños del colegio.",
      "ar": "بلمّ العيال من المدرسة.",
      "arEg": null
     }
@@ -20958,7 +20958,7 @@
      "exampleEs": "Reconozco su voz al teléfono.",
      "exampleAr": "متعرف على صوته في التليفون.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: reconocer.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (reconozco، reconozca، reconozcas) — راجع جدول التصريف. المصدر: reconocer.",
      "commonErrorAr": null
     }
    ],
@@ -20972,11 +20972,11 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "reconozo",
+     "formEs": "reconozco",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -21212,7 +21212,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconoza",
+     "formEs": "reconozca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
@@ -21220,7 +21220,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconozas",
+     "formEs": "reconozcas",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
@@ -21228,7 +21228,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconoza",
+     "formEs": "reconozca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
@@ -21236,7 +21236,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconozamos",
+     "formEs": "reconozcamos",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
@@ -21244,7 +21244,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconozáis",
+     "formEs": "reconozcáis",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
@@ -21252,7 +21252,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reconozan",
+     "formEs": "reconozcan",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
@@ -21644,7 +21644,7 @@
      "exampleEs": "Resuelvo el problema del cliente.",
      "exampleAr": "بحل مشكلة العميل.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: resolver.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (resuelvo، resuelves، resuelve) — راجع جدول التصريف. المصدر: resolver.",
      "commonErrorAr": null
     }
    ],
@@ -22330,7 +22330,7 @@
      "exampleEs": "Rompí un vaso de cristal.",
      "exampleAr": "كسرت كوباية زجاج.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: romper.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (rompí، rompiste، rompió) — راجع جدول التصريف. المصدر: romper.",
      "commonErrorAr": null
     }
    ],
@@ -28847,7 +28847,7 @@
      "exampleEs": "Aparece un mensaje en la pantalla.",
      "exampleAr": "بيظهر رسالة على الشاشة.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: aparecer.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (aparezco، aparezca، aparezcas) — راجع جدول التصريف. المصدر: aparecer.",
      "commonErrorAr": null
     }
    ],
@@ -29876,7 +29876,7 @@
      "exampleEs": "Atiendo a los clientes con paciencia.",
      "exampleAr": "بخدم العملاء بصبر.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: atender.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (atiendo، atiendes، atiende) — راجع جدول التصريف. المصدر: atender.",
      "commonErrorAr": null
     }
    ],
@@ -29890,27 +29890,27 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "atendo",
+     "formEs": "atiendo",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atendes",
+     "formEs": "atiendes",
      "tense": "presente",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atende",
+     "formEs": "atiende",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29918,7 +29918,7 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29926,15 +29926,15 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atenden",
+     "formEs": "atienden",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29942,7 +29942,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29950,7 +29950,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29958,7 +29958,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29966,7 +29966,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29974,7 +29974,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29982,7 +29982,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29990,7 +29990,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -29998,7 +29998,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30006,7 +30006,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30014,7 +30014,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30022,7 +30022,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30030,7 +30030,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30038,7 +30038,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30046,7 +30046,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30054,7 +30054,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30062,7 +30062,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30070,7 +30070,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30078,7 +30078,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30086,7 +30086,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30094,7 +30094,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30102,7 +30102,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30110,7 +30110,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30118,7 +30118,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30126,31 +30126,31 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atenda",
+     "formEs": "atienda",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atendas",
+     "formEs": "atiendas",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atenda",
+     "formEs": "atienda",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30158,7 +30158,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -30166,15 +30166,15 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "atendan",
+     "formEs": "atiendan",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "gerund",
@@ -31248,7 +31248,7 @@
      "exampleEs": "Ando despacio por la acera.",
      "exampleAr": "بمشي على مهلي على الرصيف.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: andar.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (anduve، anduviste، anduvo) — راجع جدول التصريف. المصدر: andar.",
      "commonErrorAr": null
     }
    ],
@@ -31310,51 +31310,51 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "andé",
+     "formEs": "anduve",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "andaste",
+     "formEs": "anduviste",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "andó",
+     "formEs": "anduvo",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "andamos",
+     "formEs": "anduvimos",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "andasteis",
+     "formEs": "anduvisteis",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "andaron",
+     "formEs": "anduvieron",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31362,7 +31362,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31370,7 +31370,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31378,7 +31378,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31386,7 +31386,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31394,7 +31394,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31402,7 +31402,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31410,7 +31410,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31418,7 +31418,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31426,7 +31426,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31434,7 +31434,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31442,7 +31442,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31450,7 +31450,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31458,7 +31458,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31466,7 +31466,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31474,7 +31474,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31482,7 +31482,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31490,7 +31490,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31498,7 +31498,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31506,7 +31506,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31514,7 +31514,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31522,7 +31522,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31530,7 +31530,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31538,7 +31538,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -31546,7 +31546,7 @@
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "gerund",
@@ -32277,7 +32277,7 @@
      "exampleEs": "Le agradezco mucho la ayuda.",
      "exampleAr": "بشكره جدًا على المساعدة.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: agradecer.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (agradezco، agradezca، agradezcas) — راجع جدول التصريف. المصدر: agradecer.",
      "commonErrorAr": null
     }
    ],
@@ -32291,11 +32291,11 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "agradezo",
+     "formEs": "agradezco",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -32531,7 +32531,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradeza",
+     "formEs": "agradezca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
@@ -32539,7 +32539,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradezas",
+     "formEs": "agradezcas",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
@@ -32547,7 +32547,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradeza",
+     "formEs": "agradezca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
@@ -32555,7 +32555,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradezamos",
+     "formEs": "agradezcamos",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
@@ -32563,7 +32563,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradezáis",
+     "formEs": "agradezcáis",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
@@ -32571,7 +32571,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "agradezan",
+     "formEs": "agradezcan",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
@@ -37079,7 +37079,7 @@
      "exampleEs": "Dirijo el equipo de ventas.",
      "exampleAr": "بدير فريق المبيعات.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: dirigir.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (dirija، dirijas، dirija) — راجع جدول التصريف. المصدر: dirigir.",
      "commonErrorAr": null
     }
    ],
@@ -42567,7 +42567,7 @@
      "exampleEs": "El precio incluye el desayuno.",
      "exampleAr": "السعر شامل الفطار.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: incluir.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (incluyo، incluyes، incluye) — راجع جدول التصريف. المصدر: incluir.",
      "commonErrorAr": null
     }
    ],
@@ -42581,27 +42581,27 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "incluo",
+     "formEs": "incluyo",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "inclues",
+     "formEs": "incluyes",
      "tense": "presente",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "inclue",
+     "formEs": "incluye",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42609,7 +42609,7 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42617,15 +42617,15 @@
      "tense": "presente",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluen",
+     "formEs": "incluyen",
      "tense": "presente",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42633,7 +42633,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42641,15 +42641,15 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluió",
+     "formEs": "incluyó",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42657,7 +42657,7 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42665,15 +42665,15 @@
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluieron",
+     "formEs": "incluyeron",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42681,7 +42681,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42689,7 +42689,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42697,7 +42697,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42705,7 +42705,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42713,7 +42713,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42721,7 +42721,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42729,7 +42729,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42737,7 +42737,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42745,7 +42745,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42753,7 +42753,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42761,7 +42761,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42769,7 +42769,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42777,7 +42777,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42785,7 +42785,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42793,7 +42793,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42801,7 +42801,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42809,7 +42809,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -42817,55 +42817,55 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "inclua",
+     "formEs": "incluya",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluas",
+     "formEs": "incluyas",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "inclua",
+     "formEs": "incluya",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluamos",
+     "formEs": "incluyamos",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluáis",
+     "formEs": "incluyáis",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
-     "formEs": "incluan",
+     "formEs": "incluyan",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "gerund",
@@ -42873,7 +42873,7 @@
      "tense": null,
      "mood": null,
      "person": null,
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "participle",
@@ -50175,51 +50175,51 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "producí",
+     "formEs": "produje",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "produciste",
+     "formEs": "produjiste",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "produció",
+     "formEs": "produjo",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "producimos",
+     "formEs": "produjimos",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "producisteis",
+     "formEs": "produjisteis",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "producieron",
+     "formEs": "produjeron",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50227,7 +50227,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50235,7 +50235,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50243,7 +50243,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50251,7 +50251,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50259,7 +50259,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50267,7 +50267,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50275,7 +50275,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50283,7 +50283,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50291,7 +50291,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50299,7 +50299,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50307,7 +50307,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50315,7 +50315,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50323,7 +50323,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50331,7 +50331,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50339,7 +50339,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50347,7 +50347,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50355,7 +50355,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -50363,7 +50363,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -51142,7 +51142,7 @@
      "exampleEs": "Protege tu piel del sol.",
      "exampleAr": "حمي بشرتك من الشمس.",
      "exampleArEg": null,
-     "usageNoteAr": "فعل منتظم — كل الصيغ على النهايات القياسية. المصدر: proteger.",
+     "usageNoteAr": "فيه صيغ لا تتبع النهايات القياسية (proteja، protejas، proteja) — راجع جدول التصريف. المصدر: proteger.",
      "commonErrorAr": null
     }
    ],
@@ -53557,11 +53557,11 @@
    "forms": [
     {
      "kind": "conjugation",
-     "formEs": "reduzo",
+     "formEs": "reduzco",
      "tense": "presente",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": false
+     "irregular": true
     },
     {
      "kind": "conjugation",
@@ -53605,51 +53605,51 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reducí",
+     "formEs": "reduje",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "reduciste",
+     "formEs": "redujiste",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "redució",
+     "formEs": "redujo",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "reducimos",
+     "formEs": "redujimos",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "reducisteis",
+     "formEs": "redujisteis",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "reducieron",
+     "formEs": "redujeron",
      "tense": "pretérito",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53657,7 +53657,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53665,7 +53665,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53673,7 +53673,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53681,7 +53681,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53689,7 +53689,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53697,7 +53697,7 @@
      "tense": "imperfecto",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53705,7 +53705,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53713,7 +53713,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53721,7 +53721,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53729,7 +53729,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53737,7 +53737,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53745,7 +53745,7 @@
      "tense": "futuro",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53753,7 +53753,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53761,7 +53761,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53769,7 +53769,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3s",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53777,7 +53777,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "1p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53785,7 +53785,7 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "2p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
@@ -53793,11 +53793,11 @@
      "tense": "condicional",
      "mood": "indicativo",
      "person": "3p",
-     "irregular": true
+     "irregular": false
     },
     {
      "kind": "conjugation",
-     "formEs": "reduza",
+     "formEs": "reduzca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1s",
@@ -53805,7 +53805,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reduzas",
+     "formEs": "reduzcas",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2s",
@@ -53813,7 +53813,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reduza",
+     "formEs": "reduzca",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3s",
@@ -53821,7 +53821,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reduzamos",
+     "formEs": "reduzcamos",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "1p",
@@ -53829,7 +53829,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reduzáis",
+     "formEs": "reduzcáis",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "2p",
@@ -53837,7 +53837,7 @@
     },
     {
      "kind": "conjugation",
-     "formEs": "reduzan",
+     "formEs": "reduzcan",
      "tense": "subjuntivo presente",
      "mood": "subjuntivo",
      "person": "3p",
