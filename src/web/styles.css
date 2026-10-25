@@ -874,6 +874,9 @@ img { max-width: 100%; }
   .topic-body, .benefit-card { padding: var(--s-3); }
   .cta-band { padding: var(--s-4); }
   .welcome-row .btn.sm { width: 100%; }
+  /* أضيق الشاشات: دخول/حساب داخل قائمة الدرج كاملة العرض بدل ازدحام الرأس */
+  .header-actions > .btn:not(.icon-btn) { display: none; }
+  .brand-mark { width: 34px; height: 34px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
