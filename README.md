@@ -7,7 +7,7 @@
 >
 > | التحقق | النتيجة |
 > | --- | --- |
-> | `npx vitest run` | **425/425** ✅ (32 ملفًا) — مُحقَّق في جلسة 2026-10-26 |
+> | `npx vitest run` | **429/429** ✅ (32 ملفًا) — مُحقَّق في جلسة 2026-10-26 |
 > | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ — مُحقَّق في جلسة 2026-10-25 |
 > | `node tools/journey-live-19.mjs` · `node tools/test-learner-flow-live.mjs` | **32/32 · ناجح 100%** ✅ — مُحقَّق في جلسة 2026-10-25 |
 > | `./node_modules/.bin/playwright test` (Chromium + Firefox، 5 مشاريع) | **70/70** ✅ (آخر تحقق 2026-10-21؛ يحتاج `npx playwright install`، غير قابل للتشغيل في بيئة بلا إنترنت إلى `cdn.playwright.dev`) |
@@ -86,7 +86,7 @@ done
 npm run build               # vite build
 npm run worker:dev          # API + SPA على http://localhost:8787
 
-npm test                    # 425 اختبار vitest (32 ملفًا)
+npm test                    # 429 اختبار vitest (32 ملفًا)
 node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
 npm run validate            # DDL + جودة المحتوى + تكامل المنهج + تناسق الأصول الصوتية
 node tools/check-curriculum.mjs
