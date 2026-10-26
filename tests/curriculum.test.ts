@@ -110,4 +110,27 @@ describe('خريطة المنهج', () => {
     expect(res.errors.some((e: { code: string }) => e.code === 'UNIT_NO_OBJECTIVE')).toBe(true);
     expect(res.errors.some((e: { code: string }) => e.code === 'MISSING_VOCAB_PACK')).toBe(true);
   });
+
+  it('قسم coverage يطابق عدد الملفات الفعلية (لا أعداد منطقية منسية)', () => {
+    // الأرقام في coverage يجب أن تتولد من الملفات الفعلية، لا من حالة قديمة.
+    const actual = walk(join(ROOT, 'content/drafts'))
+      .filter(f => /lesson-.*\.json$/.test(f))
+      .map(f => JSON.parse(readFileSync(f, 'utf8')).lesson);
+    expect(map.coverage.authoredLessonFiles).toBe(actual.length);
+    expect(map.coverage.totals.authoredLessons).toBe(actual.length);
+
+    const byProgram = new Map<string, number>();
+    for (const l of actual) {
+      const prog = l.programSlug ?? 'main-track';
+      byProgram.set(prog, (byProgram.get(prog) ?? 0) + 1);
+    }
+    expect(map.coverage.byTrack['main-track'].authoredLessons).toBe(byProgram.get('main-track') ?? 0);
+    expect(map.coverage.byTrack['travel'].authoredLessons).toBe(byProgram.get('travel') ?? 0);
+    expect(map.coverage.byTrack['callcenter'].authoredLessons).toBe(byProgram.get('callcenter') ?? 0);
+
+    // الخطة لا تقل عن الإنجاز، ولا يزيد المكتوب عن المخطط في أي مسار
+    for (const t of Object.values(map.coverage.byTrack) as { plannedLessons: number; authoredLessons: number }[]) {
+      expect(t.plannedLessons).toBeGreaterThanOrEqual(t.authoredLessons);
+    }
+  });
 });

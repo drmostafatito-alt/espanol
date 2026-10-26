@@ -11,8 +11,11 @@
 import type { Env, SessionUser } from '../types';
 import { HttpError, json, readJson } from '../lib/http';
 import { ulid } from '../lib/ids';
+import { createHash } from 'node:crypto';
 import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
 import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
+import { scheduleCard, ratingToQuality, SCHEDULER_VERSION, type CardState } from '../lib/srs';
+import { searchEngine } from '../../shared/search-engine';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -35,6 +38,7 @@ interface LessonRow {
   version_status: string;
   review_state: string;
   content_hash: string;
+  content_json: string;
 }
 
 interface ExerciseRow {
@@ -61,7 +65,7 @@ async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
   const row = await env.DB.prepare(
     `SELECT l.id, l.slug, l.title_ar, l.level_code, l.objective_ar, l.estimated_minutes, l.status,
             l.unlock_rule_json, l.mastery_criteria_json, lv.id AS version_id, lv.version_no,
-            lv.status AS version_status, lv.review_state, lv.content_hash
+            lv.status AS version_status, lv.review_state, lv.content_hash, lv.content_json
      FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id
      WHERE l.slug = ?`,
   )
@@ -76,6 +80,155 @@ async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
   return row;
 }
 
+/** عتبة الإتقان من mastery_criteria_json للدرس السابق (70% في المنهج الحالي).
+ *  لا نفرض قيمة افتراضية تعسفية: إن كانت البيانات تالفة أو ناقصة نعامل العتبة
+ *  على أنها غير معلومة (0) وتبقى القاعدة كما كانت. */
+function parseMastery(masteryJson: string): { minAccuracy: number | null } {
+  try {
+    const m = JSON.parse(masteryJson) as { minAccuracy?: unknown };
+    if (m && typeof m.minAccuracy === 'number' && Number.isFinite(m.minAccuracy)) {
+      return { minAccuracy: m.minAccuracy };
+    }
+  } catch {
+    // بيانات تالفة — لا نفرض عتبة من نسج الخيال
+  }
+  return { minAccuracy: null };
+}
+
+const STABLE_ENC = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
+
+/** يعيد معرّف التمرين في القاعدة كما يشتقه الـ importer (stableId): نفس الخوارزمية ⇒ نفس المعرّف. */
+function stableExerciseId(slug: string, exId: string): string {
+  const digest = createHash('sha256').update(`${slug}/${exId}`).digest();
+  let out = '';
+  for (let i = 0; i < 12; i++) {
+    const ch = STABLE_ENC[(digest[i] ?? 0) % 32];
+    if (ch) out += ch;
+  }
+  return `ex_${out}`;
+}
+
+interface ReviewCardRow {
+  user_id: string;
+  item_type: string;
+  item_id: string;
+  ease: number;
+  interval_days: number;
+  repetitions: number;
+  lapses: number;
+  due_at: string;
+  state: string;
+  card_kind: string;
+  last_reviewed_at: string | null;
+}
+
+/**
+ * تأثير الإجابة الخاطئة المؤكدة على بطاقات الكلمات المستهدفة للتمرين.
+ *
+ * الرابط: `targetVocab` في content_json للدرس (التمثيل الكامل الذي يخزّنه الـ importer).
+ * لا نُعدّ البطاقة إلا إن: كانت الإجابة خاطئة مؤكدة (correct === false)، والكلمة
+ * محلولة إلى مدخل مفردات، وللمستخدم الحالي بطاقة recognition غير معلّقة.
+ * أي فشل يُهمَل: نتيجة التمرين مسجّلة مسبقًا ولا تتأثر، ولا نمنح المتعلم نتيجة غير صحيحة.
+ */
+async function applyWrongAnswerToTargetCards(
+  env: Env,
+  user: SessionUser,
+  lesson: LessonRow,
+  exerciseId: string,
+  eventId: string,
+  mode: 'new' | 'replay' = 'new',
+): Promise<void> {
+  try {
+    const parsed = JSON.parse(lesson.content_json) as { exercises?: { id?: string; targetVocab?: unknown }[] };
+    const target = (parsed.exercises ?? []).find(
+      ex => typeof ex.id === 'string' && stableExerciseId(lesson.slug, ex.id) === exerciseId,
+    );
+    if (!target) return;
+    const words = Array.isArray(target.targetVocab)
+      ? target.targetVocab.filter((w): w is string => typeof w === 'string')
+      : [];
+    if (!words.length) return;
+
+    const norms = [...new Set(words.map(w => w.toLowerCase().trim()).filter(Boolean))];
+    if (!norms.length) return;
+    const placeholders = norms.map(() => '?').join(',');
+    const entries = await env.DB.prepare(
+      `SELECT id FROM vocabulary_entries WHERE headword_normalized IN (${placeholders})`,
+    )
+      .bind(...norms)
+      .all<{ id: string }>();
+    if (!entries.results.length) return;
+
+    const now = new Date();
+    for (const entry of entries.results) {
+      const card = await env.DB.prepare(
+        `SELECT user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at, state, card_kind, last_reviewed_at
+         FROM review_schedule WHERE user_id = ? AND item_type = 'vocab' AND item_id = ? AND card_kind = 'recognition'`,
+      )
+        .bind(user.id, entry.id)
+        .first<ReviewCardRow>();
+      if (!card || card.user_id !== user.id || card.state === 'suspended') continue;
+
+      // مسار الاستئناف: عند إعادة إرسال حدث إجابة خاطئة، يُستكمل التحديث الفاشل جزئياً.
+      // لا نُلغي تعديلاً لاحقاً (مثل تقييم في جلسة المراجعة) أحدث من سجل المراجعة.
+      if (mode === 'replay') {
+        const record = await env.DB.prepare(
+          `SELECT next_state, next_due_at, reviewed_at
+           FROM srs_reviews WHERE user_id = ? AND client_event_id = ?`,
+        )
+          .bind(user.id, `${eventId}:${entry.id}`)
+          .first<{ next_state: string; next_due_at: string; reviewed_at: string }>();
+        const applied = !!record && card.state === record.next_state && card.due_at === record.next_due_at;
+        const superseded = !!record && !!card.last_reviewed_at && card.last_reviewed_at >= record.reviewed_at;
+        if (applied || superseded) continue;
+      }
+
+      const next = scheduleCard(
+        {
+          state: card.state as CardState,
+          ease: card.ease,
+          intervalDays: card.interval_days,
+          reps: card.repetitions,
+          lapses: card.lapses,
+        },
+        'again',
+        now,
+      );
+
+      // الذرية: إدخال سجل المراجعة وتحديث البطاقة في سيناريو واحد (batch = transaction
+      // في D1 وفي المحرك المحلي). فشل إحدى العبارتين يعيد كليهما — لا سجل بلا تحديث
+      // ولا تحديث بلا سجل. القيد الفريد على السجل يمنع تحديث البطاقة مرتين لنفس الحدث.
+      await env.DB.batch([
+        env.DB.prepare(
+          `INSERT INTO srs_reviews
+             (id, client_event_id, user_id, item_type, item_id, card_kind, rating,
+              prev_state, prev_interval_days, prev_ease, prev_due_at,
+              next_state, next_interval_days, next_ease, next_due_at,
+              response_ms, scheduler_version, reviewed_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(user_id, client_event_id) DO NOTHING`,
+        )
+          .bind(
+            ulid().toLowerCase(), `${eventId}:${entry.id}`, user.id, 'vocab', entry.id, 'recognition',
+            ratingToQuality('again'), card.state, card.interval_days, card.ease, card.due_at,
+            next.state, next.intervalDays, next.ease, next.dueAt, null, SCHEDULER_VERSION, now.toISOString(),
+          ),
+        env.DB.prepare(
+          `UPDATE review_schedule
+             SET ease = ?, interval_days = ?, repetitions = ?, lapses = ?, due_at = ?, state = ?, last_reviewed_at = ?, last_quality = ?
+           WHERE user_id = ? AND item_type = ? AND item_id = ? AND card_kind = ?`,
+        )
+          .bind(
+            next.ease, next.intervalDays, next.reps, next.lapses, next.dueAt, next.state, now.toISOString(),
+            ratingToQuality('again'), user.id, 'vocab', entry.id, 'recognition',
+          ),
+      ]);
+    }
+  } catch {
+    // تحديث SRS فاشل: نتيجة التمرين محفوظة مسبقًا، والبطاقة تبقى كما هي
+  }
+}
+
 /** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية. */
 async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): Promise<void> {
   let rule: { type?: string; requires?: string[]; minAccuracy?: number };
@@ -88,22 +241,31 @@ async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): P
 
   const placeholders = rule.requires.map(() => '?').join(',');
   const rows = await env.DB.prepare(
-    `SELECT l.slug, COALESCE(p.status, 'not_started') AS status, COALESCE(p.best_accuracy, 0) AS best_accuracy
+    `SELECT l.slug, l.mastery_criteria_json, COALESCE(p.status, 'not_started') AS status, COALESCE(p.best_accuracy, 0) AS best_accuracy
      FROM lessons l LEFT JOIN user_lesson_progress p ON p.lesson_id = l.id AND p.user_id = ?
      WHERE l.slug IN (${placeholders})`,
   )
     .bind(user.id, ...rule.requires)
-    .all<{ slug: string; status: string; best_accuracy: number }>();
+    .all<{ slug: string; mastery_criteria_json: string; status: string; best_accuracy: number }>();
 
-  const minAccuracy = rule.minAccuracy ?? 0;
-  const missing = rows.results.filter(r => r.status === 'not_started' || r.best_accuracy < minAccuracy);
+  // عتبة الدقة: إن لم يحدّثها unlock_rule_json صراحةً، نستمدها من إتقان الدرس
+  // السابق نفسه (mastery.minAccuracy من محتوى الدرس السابق).
+  const missing = rows.results.filter(r => {
+    const minAccuracy = rule.minAccuracy ?? parseMastery(r.mastery_criteria_json).minAccuracy ?? 0;
+    return r.status === 'not_started' || r.best_accuracy < minAccuracy;
+  });
   const found = new Set(rows.results.map(r => r.slug));
   const notFound = rule.requires.filter(s => !found.has(s));
 
   if (missing.length || notFound.length) {
+    // العتبة الفعّالة للدروس الناقصة: إن لم يحدّدها unlock_rule_json صراحةً، نستعمل
+    // عتبة إتقان الدرس السابق نفسه (mastery.minAccuracy).
+    const effectiveMin = missing[0]
+      ? (rule.minAccuracy ?? parseMastery(missing[0]!.mastery_criteria_json).minAccuracy ?? 0)
+      : 0;
     throw new HttpError(403, 'LESSON_LOCKED', 'هذا الدرس مقفل: أكمل الدرس السابق بدقة كافية أولًا.', {
       requires: rule.requires,
-      minAccuracy,
+      minAccuracy: effectiveMin,
       missing: [...missing.map(m => m.slug), ...notFound],
     });
   }
@@ -126,6 +288,125 @@ function publicPrompt(promptJson: string) {
 }
 
 /** جلسة الدرس: بيانات العرض فقط — بلا مفاتيح إجابة ولا خيارات صحيحة */
+/**
+ * ملخص الدرس (Lesson brief): يُبنى من لقطة `content_json` الكاملة.
+ * هذه العناصر كانت موجودة في المحتوى ولا تُعرض للمتعلم — الآن تُرسل لتظهر
+ * كشاشة تعريف قبل التمارين (هدف، مفردات، أمثلة، حوار، ملاحظة ثقافية).
+ * أي محتوى تالف يُهمَل ولا يُعطّل الدرس (فشل صامت نحو اللقطة الأساسية).
+ */
+export interface VocabBriefItem {
+  word: string;
+  meaningFusha: string | null;
+  meaningEg: string | null;
+}
+
+export interface LessonBrief {
+  objectiveAr: string;
+  estimatedMinutes: number;
+  newVocabulary: VocabBriefItem[];
+  reviewVocabulary: VocabBriefItem[];
+  targetStructures: string[];
+  scenarios: { contextAr: string; settingAr: string; lines: { es: string; ar: string; arEg?: string }[] }[];
+  grammarPoints: { titleAr: string; explanationAr: string }[];
+  culturalNoteAr: string | null;
+  pedagogicalRationaleAr: string | null;
+}
+
+/** يحوّل قائمة الكلمات الإسبانية إلى بنود مع الترجمة العربية من معجم المفردات. */
+function resolveVocab(words: string[]): VocabBriefItem[] {
+  const seen = new Set<string>();
+  const out: VocabBriefItem[] = [];
+  for (const raw of words) {
+    const word = raw.trim();
+    if (!word) continue;
+    const key = word.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    let meaningFusha: string | null = null;
+    let meaningEg: string | null = null;
+    try {
+      const hit = searchEngine.lookupVocab(word);
+      if (hit) {
+        if (hit.f) meaningFusha = hit.f;
+        if (hit.eg) meaningEg = hit.eg;
+      }
+    } catch {
+      // معجم تالف — نُبقي الكلمة دون ترجمة ولا نكسر الدرس
+    }
+    out.push({ word, meaningFusha, meaningEg });
+  }
+  return out;
+}
+
+export function buildLessonBrief(
+  contentJson: string,
+  fallback: { objectiveAr: string; estimatedMinutes: number },
+): LessonBrief {
+  const base: LessonBrief = {
+    objectiveAr: fallback.objectiveAr,
+    estimatedMinutes: fallback.estimatedMinutes,
+    newVocabulary: [],
+    reviewVocabulary: [],
+    targetStructures: [],
+    scenarios: [],
+    grammarPoints: [],
+    culturalNoteAr: null,
+    pedagogicalRationaleAr: null,
+  };
+  try {
+    const parsed = JSON.parse(contentJson) as { lesson?: Record<string, unknown> };
+    const l: Record<string, unknown> =
+      parsed.lesson ?? (parsed as unknown as Record<string, unknown>);
+    const strArr = (v: unknown): string[] =>
+      Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : [];
+    base.newVocabulary = resolveVocab(strArr(l.newVocabulary));
+    base.reviewVocabulary = resolveVocab(strArr(l.reviewVocabulary));
+    base.targetStructures = strArr(l.targetStructures);
+    if (typeof l.objectiveAr === 'string' && l.objectiveAr.trim()) base.objectiveAr = l.objectiveAr;
+    if (typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim()) base.culturalNoteAr = l.culturalNoteAr;
+    if (typeof l.pedagogicalRationaleAr === 'string' && l.pedagogicalRationaleAr.trim()) {
+      base.pedagogicalRationaleAr = l.pedagogicalRationaleAr;
+    }
+    // شروح القواعد: تُعرض في شاشة المقدمة (الدرس الذي يشرح القاعدة قبل التمارين).
+    // تُهمَل العناصر الناقصة ولا تؤثر على بقية الشاشة.
+    const gpRaw = (l.pedagogy as { grammarPoints?: unknown } | undefined)?.grammarPoints;
+    if (Array.isArray(gpRaw)) {
+      for (const gpRawItem of gpRaw) {
+        if (!gpRawItem || typeof gpRawItem !== 'object') continue;
+        const gp = gpRawItem as { titleAr?: unknown; explanationAr?: unknown };
+        if (typeof gp.titleAr !== 'string' || !gp.titleAr.trim()) continue;
+        if (typeof gp.explanationAr !== 'string' || !gp.explanationAr.trim()) continue;
+        base.grammarPoints.push({ titleAr: gp.titleAr, explanationAr: gp.explanationAr });
+      }
+    }
+    if (Array.isArray(l.scenarios)) {
+      for (const sRaw of l.scenarios) {
+        if (!sRaw || typeof sRaw !== 'object') continue;
+        const s = sRaw as { contextAr?: unknown; settingAr?: unknown; lines?: unknown };
+        if (!Array.isArray(s.lines)) continue;
+        const lines: LessonBrief['scenarios'][number]['lines'] = [];
+        for (const lnRaw of s.lines) {
+          if (!lnRaw || typeof lnRaw !== 'object') continue;
+          const ln = lnRaw as { es?: unknown; ar?: unknown; arEg?: unknown };
+          if (typeof ln.es !== 'string' || typeof ln.ar !== 'string') continue;
+          const line: LessonBrief['scenarios'][number]['lines'][number] = { es: ln.es, ar: ln.ar };
+          if (typeof ln.arEg === 'string' && ln.arEg.trim()) line.arEg = ln.arEg;
+          lines.push(line);
+        }
+        if (!lines.length) continue;
+        base.scenarios.push({
+          contextAr: typeof s.contextAr === 'string' ? s.contextAr : '',
+          settingAr: typeof s.settingAr === 'string' ? s.settingAr : '',
+          lines,
+        });
+      }
+    }
+  } catch {
+    // content_json تالف أو فارغ: نقدم اللقطة الأساسية فقط. لا نسمح له بكسر الدرس.
+  }
+  return base;
+}
+
 export async function lessonSession(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
@@ -185,6 +466,10 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
         versionId: lesson.version_id,
         versionNo: lesson.version_no,
         contentHash: lesson.content_hash,
+        brief: buildLessonBrief(lesson.content_json, {
+          objectiveAr: lesson.objective_ar,
+          estimatedMinutes: lesson.estimated_minutes,
+        }),
         ...(lesson.status === 'published' ? {} : { provenance: PROVENANCE }),
       },
       exercises: exercises.results.map(e => {
@@ -259,6 +544,11 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
     .first<{ answer_json: string; is_correct: number; score: number; server_recorded_at: string }>();
 
   if (existing) {
+    // استكمال محدود لمحاولة SRS فاشلة جزئياً: إن لم يُسجّل سجل المراجعة أو لم يُطبَّق تحديث
+    // البطاقة، تُعاد المحاولة هنا (بنفس eventId) — بلا محاولة جديدة ولا نقاط إضافية.
+    if (existing.is_correct === 0) {
+      await applyWrongAnswerToTargetCards(env, user, lesson, exerciseId, eventId, 'replay');
+    }
     const replay = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), safeParse(existing.answer_json), safeParse(ex.error_feedback_json));
     return json(
       {
@@ -307,6 +597,12 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
   )
     .bind(user.id, lesson.id, lesson.version_id)
     .run();
+
+  // إجابة خاطئة مؤكدة ⇒ تؤثر على بطاقات الكلمات المستهدفة للتمرين فقط.
+  // الإجابات الصحيحة وتمارين المشاركة (correct: null) لا تمسّ SRS.
+  if (result.correct === false) {
+    await applyWrongAnswerToTargetCards(env, user, lesson, exerciseId, eventId);
+  }
 
   return json(
     {
@@ -510,7 +806,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   const activeStatuses = allowUnreviewed(env) ? "('published','draft')" : "('published')";
 
   const rawLessons = await env.DB.prepare(
-    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.status, l.unlock_rule_json, l.sort_order AS sort_order,
+    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.status, l.unlock_rule_json, l.mastery_criteria_json, l.sort_order AS sort_order,
             u.id AS unit_id, u.slug AS unit_slug, u.title_ar AS unit_title_ar, u.sort_order AS unit_sort_order,
             p.id AS program_id, p.slug AS program_slug, p.title_ar AS program_title_ar, p.kind AS program_kind, p.sort_order AS program_sort_order,
             COALESCE(ulp.status, 'not_started') AS progress_status,
@@ -545,6 +841,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       level_code: string | null;
       status: string;
       unlock_rule_json: string;
+      mastery_criteria_json: string;
       sort_order: number;
       unit_id: string;
       unit_slug: string;
@@ -569,9 +866,14 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   // (مثال: إتقان الدرس يشترط 80% وقاعدة الفتح تشترط 60%، والمتعلم عنده 70%).
   const startedSet = new Set<string>();
   const accuracyMap = new Map<string, number>();
+  const thresholdMap = new Map<string, number>();
   for (const r of sortedLessons) {
     if (r.progress_status !== 'not_started') startedSet.add(r.slug);
     accuracyMap.set(r.slug, r.best_accuracy);
+    // عتبة الإتقان من محتوى كل درس (mastery.minAccuracy) — نفس المصدر الذي
+    // يستخدمه assertUnlocked، فلا يظهر الدرس مفتوحًا في القائمة وتُرفض فتحه في الخادم
+    const m = parseMastery(r.mastery_criteria_json);
+    if (m.minAccuracy !== null) thresholdMap.set(r.slug, m.minAccuracy);
   }
 
   const lessons = sortedLessons.map(l => {
@@ -581,10 +883,10 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     } catch {}
 
     const requires = Array.isArray(rule.requires) ? rule.requires : [];
-    const minAcc = rule.minAccuracy ?? 0;
     const missing = requires.filter(reqSlug => {
       const isStarted = startedSet.has(reqSlug);
       const acc = accuracyMap.get(reqSlug) ?? 0;
+      const minAcc = rule.minAccuracy ?? thresholdMap.get(reqSlug) ?? 0;
       return !isStarted || acc < minAcc;
     });
 
@@ -713,21 +1015,18 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
     throw new HttpError(400, 'INVALID_LEVEL', 'المستوى المحدد لتحديد المستوى غير صالح. اختر A1 أو A2.');
   }
 
-  // التصحيح والحساب على الخادم حصرًا
-  let score = 0;
-  let answersCount = 0;
-  if (body.answers && typeof body.answers === 'object') {
-    answersCount = Object.keys(body.answers).length;
-    let correct = 0;
-    for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
-      if (body.answers[qid] === expected) correct++;
-    }
-    score = Math.round((correct / 10) * 100);
-  } else {
-    // تراجع آمن للاختبارات البرمجية التي ترسل score مباشرة
-    score = Math.max(0, Math.min(100, Math.round(Number(body.score ?? 0))));
-    answersCount = Math.max(0, Number(body.answersCount ?? 0));
+  // التصحيح والحساب على الخادم حصرًا. الإجابات إلزامية: كان هناك مسار تراجع
+  // يقبل «score» من العميل مباشرة، فيُمكنه اختراق الاختبار وفتح كل دروس
+  // المستوى ورصيد XP دون إجابة واحدة. لم يُبقَ أي ثقة بالدرجة المرسلة من العميل.
+  if (!body.answers || typeof body.answers !== 'object' || Array.isArray(body.answers)) {
+    throw new HttpError(400, 'ANSWERS_REQUIRED', 'يجب إرسال إجابات الاختبار لتصحيحها على الخادم.');
   }
+  const answersCount = Object.keys(body.answers).length;
+  let correct = 0;
+  for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
+    if (body.answers[qid] === expected) correct++;
+  }
+  const score = Math.round((correct / 10) * 100);
 
   const passed = score >= 60;
   const assessId = ulid().toLowerCase();

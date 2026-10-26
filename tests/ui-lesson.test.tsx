@@ -55,6 +55,13 @@ afterEach(() => {
   h.close();
 });
 
+/** يبدأ الدرس من شاشة التعريف (التي تُعرض الآن قبل التمارين): ينتظر ظهورها ثم ينقر زر البدء */
+async function startLesson(user: ReturnType<typeof userEvent.setup>) {
+  await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+  await user.click(screen.getByTestId('lesson-start'));
+  await waitFor(() => expect(screen.queryByTestId('lesson-start')).toBeNull());
+}
+
 async function login(): Promise<string> {
   const res = await h.call('/api/auth/signup', {
     method: 'POST',
@@ -99,7 +106,7 @@ async function playLesson(slug: string, session: { exercises: { id: string; mode
 }
 
 describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
-  it('ترسم الدرس وتعرض وسم «عينة غير مراجعة»', async () => {
+  it('ترسم الدرس دون أي وسم «تجريبي/غير مراجعة» (لا إعلانات تطويرية للمتعلم)', async () => {
     const cookie = await login();
     wireFetch(h, cookie);
     render(
@@ -107,8 +114,14 @@ describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
         <Lesson slug="prea1-hola-me-llamo" navigate={() => {}} />
       </AuthProvider>,
     );
+    const user = userEvent.setup();
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    await user.click(screen.getByTestId('lesson-start'));
     await waitFor(() => expect(screen.getByTestId('lesson-submit')).toBeTruthy());
-    expect(screen.getByText(/عينة تعليمية تجريبية/)).toBeTruthy();
+    // الدرس يُرسم بصورة طبيعية...
+    expect(screen.getByTestId('lesson-submit')).toBeTruthy();
+    // ...ولا يعرض أي رسالة تطويرية (تمت إزالتها من واجهة المتعلم — راجع Phase 3)
+    expect(screen.queryByText(/عينة تعليمية تجريبية|عينة غير مراجعة|تجريبي/)).toBeNull();
     // لا مفاتيح إجابة في أي مكان في الصفحة
     expect(document.body.innerHTML).not.toMatch(/correctOptionIds|answerKey/);
   });
@@ -136,7 +149,8 @@ describe('شاشة الدرس (DOM حقيقي، خادم حقيقي)', () => {
     const sessionRes = await h.json<{ exercises: { id: string; mode: string; type: string }[] }>(
       await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }),
     );
-    await waitFor(() => expect(screen.getByTestId('lesson-submit')).toBeTruthy());
+    const user = userEvent.setup();
+    await startLesson(user);
     await playLesson('prea1-hola-me-llamo', sessionRes);
 
     const result = screen.getByTestId('lesson-result');
@@ -198,7 +212,12 @@ describe('واجهة الترتيب الحواري', () => {
     const sessionBody = {
       lesson: {
         slug: 'cc-test', titleAr: 'اختبار', level: 'A1', objectiveAr: 'هدف', estimatedMinutes: 5,
-        versionNo: 1, provenance: { status: 'draft', warningAr: 'عينة تجريبية' },
+        versionNo: 1,
+        brief: {
+          objectiveAr: 'هدف', estimatedMinutes: 5, newVocabulary: [], reviewVocabulary: [],
+          targetStructures: [], scenarios: [], grammarPoints: [], culturalNoteAr: null, pedagogicalRationaleAr: null,
+        },
+        provenance: { status: 'draft', warningAr: 'عينة تجريبية' },
       },
       exercises: [{
         id: 'x1', type: 'dialogue_order', mode: 'graded', hasGrader: true,
@@ -218,12 +237,79 @@ describe('واجهة الترتيب الحواري', () => {
         <Lesson slug="cc-test" navigate={() => {}} />
       </AuthProvider>,
     );
+    const user = userEvent.setup();
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    await user.click(screen.getByTestId('lesson-start'));
     await waitFor(() => expect(document.querySelectorAll('.token.ghost').length).toBe(2));
     expect(screen.queryByTestId('lesson-text')).toBeNull();
     // نضغط عنصري الترتيب ثم نتحقق أن المكوّن أرسل مصفوفة مرتّبة (لا نصًا مدموجًا)
-    const user = userEvent.setup();
     for (let i = 0; i < 2; i++) await user.click(document.querySelector<HTMLButtonElement>('.token.ghost')!);
     const placed = document.querySelectorAll('.token-box')[0]!.querySelectorAll('.token');
     expect([...placed].map(b => b.textContent)).toEqual(items.map(i => i.text));
+  });
+});
+
+describe('قاعدة الدرس في شاشة المقدمة', () => {
+  /** شاشة المقدمة: شروح القواعد (grammarPoints) تُعرض للمتعلم قبل التمارين. */
+  function sessionWithGrammar(grammarPoints: { titleAr: string; explanationAr: string }[]) {
+    return {
+      lesson: {
+        slug: 'a1-gram-test', titleAr: 'اختبار نحو', level: 'A1', objectiveAr: 'هدف الدرس', estimatedMinutes: 5,
+        versionNo: 1,
+        brief: {
+          objectiveAr: 'هدف الدرس', estimatedMinutes: 5, newVocabulary: [], reviewVocabulary: [],
+          targetStructures: [], scenarios: [], grammarPoints,
+          culturalNoteAr: null, pedagogicalRationaleAr: null,
+        },
+        provenance: { status: 'draft', warningAr: 'عينة تجريبية' },
+      },
+      exercises: [{
+        id: 'x1', type: 'word_choice', mode: 'graded', hasGrader: true,
+        instructionAr: 'اختر الكلمة الصحيحة.', stemEs: null, stemAr: null, audioKey: null,
+        options: [], items: [],
+      }],
+      progress: { status: 'not_started', best_accuracy: 0, attempts_count: 0, completed_at: null },
+      xpPerLesson: 30,
+    };
+  }
+
+  it('يُعرض شرح القاعدة في شاشة المقدمة', async () => {
+    vi.stubGlobal('fetch', async (input: RequestInfo | URL) => {
+      const path = String(typeof input === 'string' ? input : input instanceof URL ? input.pathname : input.url);
+      if (path.includes('/session')) {
+        return new Response(JSON.stringify(sessionWithGrammar([
+          { titleAr: 'الصفات', explanationAr: 'تتوافق الضمائر مع الأسماء في الجنس والعدد.\nEl coche grande.', },
+        ])), { status: 200, headers: { 'Content-Type': 'application/json' } });
+      }
+      return new Response(JSON.stringify({ error: 'unexpected' }), { status: 500 });
+    });
+    render(
+      <AuthProvider>
+        <Lesson slug="a1-gram-test" navigate={() => {}} />
+      </AuthProvider>,
+    );
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    expect(screen.getByText('الصفات')).toBeTruthy();
+    expect(screen.getByText(/تتوافق الضمائر مع الأسماء في الجنس والعدد/)).toBeTruthy();
+    expect(screen.getByText(/El coche grande/)).toBeTruthy();
+    // القاعدة في شاشة المقدمة فقط: لا تظهر في مرحلة التمارين قبل الضغط
+    expect(screen.getByText('القاعدة')).toBeTruthy();
+  });
+
+  it('لا يُعرض قسم القاعدة عندما لا توجد شروح', async () => {
+    vi.stubGlobal('fetch', async (input: RequestInfo | URL) => {
+      const path = String(typeof input === 'string' ? input : input instanceof URL ? input.pathname : input.url);
+      if (path.includes('/session')) {
+        return new Response(JSON.stringify(sessionWithGrammar([])), { status: 200, headers: { 'Content-Type': 'application/json' } });
+      }
+      return new Response(JSON.stringify({ error: 'unexpected' }), { status: 500 });
+    });
+    render(
+      <AuthProvider>
+        <Lesson slug="a1-gram-test" navigate={() => {}} />
+      </AuthProvider>,
+    );
+    await waitFor(() => expect(screen.getByTestId('lesson-start')).toBeTruthy());
+    expect(screen.queryByText('القاعدة')).toBeNull();
   });
 });

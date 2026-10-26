@@ -42,3 +42,6 @@ tools/audio-engine/*.zip
 tools/audio-engine/*.onnx*
 tools/audio-engine/*.wav
 
+
+# مخرجات فحص تكامل المنهج (تُولَّد مجددًا بالأداة والاختبارات)
+reports/content-integrity.json
