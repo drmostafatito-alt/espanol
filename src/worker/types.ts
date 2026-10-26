@@ -37,6 +37,11 @@ export interface Env {
   /** تطوير/اختبار محلي فقط: رفع حد التسجيل لكل عنوان في الساعة (الافتراضي 10) */
   SIGNUP_RATE_LIMIT_PER_HOUR?: string;
   VAPID_PUBLIC_KEY?: string;
+  /**
+   * تسجيل تشخيصي محلي فقط (محجوب بمتغير بيئة غائب في الإنتاج):
+   * تفاصيل إصدار/وصول/فشل جلسة الإطار في سجل التطوير — بدون أي قيم.
+   */
+  DEBUG_AUTH_SESSION?: string;
 }
 
 export type RoleCode =

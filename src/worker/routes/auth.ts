@@ -2,6 +2,7 @@ import type { Env, SessionUser } from '../types';
 import {
   HttpError, apiError, json, readJson,
   serializeSessionCookie, clearSessionCookies, readSessionToken,
+  requestIsSecure, cookieName, cookieAttrs, readCookie,
 } from '../lib/http';
 import { randomToken, sha256Hex, hmacSha256Hex } from '../lib/crypto';
 import {
@@ -14,6 +15,7 @@ import {
   createSession, createUser, emailExists, findSessionUser, findUserByEmail,
   registerFailedLogin, resetFailedLogin, revokeSession, touchSession,
   revokeExcessSessions, pruneExpiredSessions, updatePasswordHash, writeAudit,
+  SESSION_IDLE_DAYS,
 } from '../db';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
@@ -125,6 +127,12 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
   const user = await findSessionUser(env, token);
   const res = json({ user }, { status: 201 }, requestId);
   res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl, req));
+  if (env.DEBUG_AUTH_SESSION === 'true') {
+    // تسجيل تشخيصي محلي فقط (محجوب بمتغير بيئة غائب في الإنتاج):
+    // اسم الكعكة وخصائصها الآمنة — بدون قيم، بدون بريد، بدون رموز.
+    const sec = requestIsSecure(req);
+    console.log(`[auth-session-diag] signup issued cookie name=${cookieName(env, req)} secure=${sec} attrs="${cookieAttrs(ttl * 24 * 60 * 60, sec).join('; ')}"`);
+  }
   return res;
 }
 
@@ -194,6 +202,12 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
   const user = await findSessionUser(env, token);
   const res = json({ user }, {}, requestId);
   res.headers.set('Set-Cookie', serializeSessionCookie(env, token, ttl, req));
+  if (env.DEBUG_AUTH_SESSION === 'true') {
+    // تسجيل تشخيصي محلي فقط (محجوب بمتغير بيئة غائب في الإنتاج):
+    // اسم الكعكة وخصائصها الآمنة — بدون قيم، بدون بريد، بدون رموز.
+    const sec = requestIsSecure(req);
+    console.log(`[auth-session-diag] login issued cookie name=${cookieName(env, req)} secure=${sec} attrs="${cookieAttrs(ttl * 24 * 60 * 60, sec).join('; ')}"`);
+  }
   return res;
 }
 
@@ -207,6 +221,36 @@ export async function logout(req: Request, env: Env, requestId: string): Promise
 
 export async function me(req: Request, env: Env, requestId: string): Promise<Response> {
   const token = readSessionToken(req);
+  if (env.DEBUG_AUTH_SESSION === 'true') {
+    // تسجيل تشخيصي محلي فقط (محجوب بمتغير بيئة غائب في الإنتاج):
+    // وجود الكعكة فقط (أسماء + أعلام — لا قيم)، ومرحلة الفشل:
+    // extraction-failed (لم تصل كعكة / اسمها مُستبعد على طلب آمن) |
+    // lookup-failed (كعكة وصلت ولا يوجد سجل جلسة) | verification-failed:… (الجلسة ملغاة/منتهية/خاملة/المستخدم غير active) | valid.
+    const sec = requestIsSecure(req);
+    const hasHost = readCookie(req, '__Host-ses') !== null;
+    const hasPlain = readCookie(req, 'ses') !== null;
+    let stage: string;
+    if (!token) {
+      stage = 'extraction-failed';
+    } else {
+      const row = await env.DB.prepare(
+        `SELECT u.status AS status,
+                s.revoked_at IS NULL AS not_revoked,
+                s.expires_at > strftime('%Y-%m-%dT%H:%M:%fZ','now') AS not_expired,
+                (s.last_seen_at IS NULL OR s.last_seen_at > strftime('%Y-%m-%dT%H:%M:%fZ','now', ?)) AS not_idle
+         FROM sessions s JOIN users u ON u.id = s.user_id
+         WHERE s.id = ?`,
+      ).bind(`-${SESSION_IDLE_DAYS} days`, await sha256Hex(token))
+        .first<{ status: string; not_revoked: number; not_expired: number; not_idle: number } | null>();
+      if (!row) stage = 'lookup-failed';
+      else if (!row.not_revoked) stage = 'verification-failed:revoked';
+      else if (!row.not_expired) stage = 'verification-failed:expired';
+      else if (!row.not_idle) stage = 'verification-failed:idle';
+      else if (row.status !== 'active') stage = 'verification-failed:user-status';
+      else stage = 'valid';
+    }
+    console.log(`[auth-session-diag] me secure=${sec} hostCookie=${hasHost} plainCookie=${hasPlain} token=${token ? 'present' : 'absent'} stage=${stage} requestId=${requestId}`);
+  }
   if (!token) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
   const user = await findSessionUser(env, token);
   if (!user) throw new HttpError(401, 'UNAUTHENTICATED', 'انتهت الجلسة. سجّل الدخول من جديد.');
