@@ -348,6 +348,96 @@ describe('L: قواعد الفتح', () => {
     const res = await h.call('/api/lessons/a1-un-cafe-por-favor/session', { cookie });
     expect(res.status).toBe(200);
   });
+
+  it('درس مقفل إن لم يبلغ تقدم الدرس السابق عتبة إتقانه (mastery.minAccuracy)', async () => {
+    // قاعدة فتح بلا minAccuracy صريحة (كأمثلة draft): العتبة تُستمد من محتوى الدرس السابق.
+    await h.db.raw
+      .prepare(`UPDATE lessons SET unlock_rule_json = ? WHERE slug = 'a1-un-cafe-por-favor'`)
+      .run(JSON.stringify({ type: 'requires_lessons', requires: ['prea1-hola-me-llamo'] }));
+
+    // نُكمِل الدرس السابق بإجابات جزئية (4 من 6 صحيحة ⇒ دقة 67% أقل من عتبة الإتقان 70%)
+    const session = await h.json(await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }));
+    const graded = session.exercises.filter((e: { mode: string }) => e.mode === 'graded');
+    expect(graded.length).toBe(6);
+    for (let i = 0; i < graded.length; i++) {
+      const ex = graded[i]!;
+      const response = i < 4
+        ? correctAnswerFor(ex)
+        : (ex.type === 'word_choice' || ex.type === 'listen_choose') ? { optionId: '__none__' } : '__none__';
+      await h.call('/api/lessons/prea1-hola-me-llamo/answers', {
+        method: 'POST', cookie,
+        body: JSON.stringify({ eventId: `ev_${i}_unlocklow`, exerciseId: ex.id, response }),
+      });
+    }
+    const complete = await h.json(
+      await h.call('/api/lessons/prea1-hola-me-llamo/complete', { method: 'POST', cookie, body: JSON.stringify({ eventId: 'complete_unlock_low' }) }),
+    );
+    expect(complete.passed).toBe(false);
+
+    // الدرس التالي مقفل حتى وإن بدأ سابقًا (الشرط هو الدقة، لا مجرد البدء)
+    const res = await h.call('/api/lessons/a1-un-cafe-por-favor/session', { cookie });
+    expect(res.status).toBe(403);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('LESSON_LOCKED');
+    expect(body.error.minAccuracy).toBe(70);
+
+    // لوحة التقدم تُظهر نفس حالة القفل (لا تناقض بين القائمة والخادم)
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    const lesson = (prog as { lessons: { slug: string; is_unlocked: boolean }[] }).lessons
+      .find(l => l.slug === 'a1-un-cafe-por-favor');
+    expect(lesson?.is_unlocked).toBe(false);
+  });
+
+  it('يُفتح الدرس التالي إن بلغ تقدم الدرس السابق عتبة إتقانه', async () => {
+    // نفس قاعدة الفتح (بلا minAccuracy صريحة): دقة 100% ≥ 70% ⇒ الدرس يُفتح
+    await h.db.raw
+      .prepare(`UPDATE lessons SET unlock_rule_json = ? WHERE slug = 'a1-un-cafe-por-favor'`)
+      .run(JSON.stringify({ type: 'requires_lessons', requires: ['prea1-hola-me-llamo'] }));
+    const session = await h.json(await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }));
+    for (const ex of session.exercises.filter((e: { mode: string }) => e.mode === 'graded')) {
+      await h.call('/api/lessons/prea1-hola-me-llamo/answers', {
+        method: 'POST', cookie,
+        body: JSON.stringify({ eventId: `ev_${ex.id.slice(-8)}_unlockmid`, exerciseId: ex.id, response: correctAnswerFor(ex) }),
+      });
+    }
+    await h.call('/api/lessons/prea1-hola-me-llamo/complete', { method: 'POST', cookie, body: JSON.stringify({ eventId: 'complete_unlock_mid' }) });
+
+    const res = await h.call('/api/lessons/a1-un-cafe-por-favor/session', { cookie });
+    expect(res.status).toBe(200);
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    const lesson = (prog as { lessons: { slug: string; is_unlocked: boolean }[] }).lessons
+      .find(l => l.slug === 'a1-un-cafe-por-favor');
+    expect(lesson?.is_unlocked).toBe(true);
+  });
+
+  it('نتيجة عند العتبة بالضبط (67% = 67%) تفتح الدرس التالي', async () => {
+    // قاعدة فتح بلا minAccuracy صريحة، عتبة إتقان الدرس السابق = 67%
+    await h.db.raw
+      .prepare(`UPDATE lessons SET unlock_rule_json = ? WHERE slug = 'a1-un-cafe-por-favor'`)
+      .run(JSON.stringify({ type: 'requires_lessons', requires: ['prea1-hola-me-llamo'] }));
+    await h.db.raw
+      .prepare(`UPDATE lessons SET mastery_criteria_json = ? WHERE slug = 'prea1-hola-me-llamo'`)
+      .run(JSON.stringify({ minAccuracy: 67 }));
+
+    // نُكمِل الدرس السابق بإجابات جزئية (4 من 6 ⇒ 67% بالضبط بعد التقريب)
+    const session = await h.json(await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }));
+    const graded = session.exercises.filter((e: { mode: string }) => e.mode === 'graded');
+    for (let i = 0; i < graded.length; i++) {
+      const ex = graded[i]!;
+      const response = i < 4
+        ? correctAnswerFor(ex)
+        : (ex.type === 'word_choice' || ex.type === 'listen_choose') ? { optionId: '__none__' } : '__none__';
+      await h.call('/api/lessons/prea1-hola-me-llamo/answers', {
+        method: 'POST', cookie,
+        body: JSON.stringify({ eventId: `ev_${i}_edge67`, exerciseId: ex.id, response }),
+      });
+    }
+    await h.call('/api/lessons/prea1-hola-me-llamo/complete', { method: 'POST', cookie, body: JSON.stringify({ eventId: 'complete_edge_67' }) });
+
+    // النتيجة عند العتبة بالضبط (67 = 67) ⇒ يُفتح (الشرط >= لا <)
+    const res = await h.call('/api/lessons/a1-un-cafe-por-favor/session', { cookie });
+    expect(res.status).toBe(200);
+  });
 });
 
 describe('P: لوحة التقدم تُقرأ من الخادم', () => {
@@ -463,6 +553,30 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     expect(data.score).toBe(0); // الخادم صحح الإجابات الفعلية ووجد 0 صحيحة
     expect(data.xpAwarded).toBe(0);
     expect(data.unlockedLevel).toBe('PREA1');
+  });
+
+  it('يرفض درجة العميل عند غياب الإجابات (لا ثقة بالدرجة المرسلة)', async () => {
+    // محاولة اختراق: إرسال score:100 دون أي إجابة لفتح كل دروس المستوى
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A1', score: 100, answersCount: 10 }),
+    });
+    expect(res.status).toBe(400);
+    const body = await h.json(res);
+    expect(body.error.code).toBe('ANSWERS_REQUIRED');
+  });
+
+  it('درجة العميل وحدها لا تمنح XP ولا تفتح الدروس', async () => {
+    const before = await h.json(await h.call('/api/me/progress', { cookie }));
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ targetLevel: 'A2', score: 100 }),
+    });
+    expect(res.status).toBe(400);
+    const after = await h.json(await h.call('/api/me/progress', { cookie }));
+    expect(after.stats.xp_total).toBe(before.stats.xp_total);
   });
 
   it('منع تكرار منح XP عند إعادة اجتياز الاختبار لنفس المستوى (Idempotency)', async () => {

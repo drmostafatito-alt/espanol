@@ -191,3 +191,136 @@ describe('تدفق الهوية من الواجهة (DOM حقيقي + worker ح�
     expect(document.body.textContent).not.toContain('10 أحرف على الأقل');
   });
 });
+
+/**
+ * سيناريو المعاينة داخل إطار (iframe): سياق طرف ثالث يمنع المتصفح من حفظ/إرسال
+ * كوكي الجلسة، رغم نجاح التسجيل أو الدخول على الخادم. الواجهة تُظهر رسالة
+ * الإطار المميزة، لا توجّه إلى لوحة سترتد بصمت، وتشير إلى التبويب المستقل.
+ */
+describe('سيناريو الإطار (معاينة مدمجة، كوكيز محظورة)', () => {
+  /** يُحاكي وجود الصفحة داخل إطار: window.self !== window.top */
+  function setEmbedded(embedded: boolean) {
+    Object.defineProperty(window, 'top', {
+      value: embedded ? {} : window,
+      configurable: true,
+      writable: true,
+    });
+  }
+
+  afterEach(() => {
+    setEmbedded(false);
+  });
+
+  it('تسجيل حساب داخل إطار: رسالة الإطار، لا توجيه، والحساب موجود فعليًا', async () => {
+    wireFetchWithoutJar(h);
+    setEmbedded(true);
+
+    const navigate = vi.fn();
+    const user = userEvent.setup();
+    render(
+      <AuthProvider>
+        <Signup navigate={navigate} />
+      </AuthProvider>,
+    );
+
+    await user.type(document.querySelector('input[type="email"]')!, VALID_EMAIL);
+    await user.type(document.querySelector('input[type="password"]')!, VALID_PW);
+    await user.click(screen.getByRole('button', { name: 'إنشاء الحساب' }));
+
+    await waitFor(
+      () => expect(screen.getByRole('alert').textContent).toContain('معاينة الموقع داخل إطار'),
+      { timeout: 8000 },
+    );
+    // لا توجيه وهمي إلى لوحة التحكم
+    expect(navigate).not.toHaveBeenCalled();
+    expect(screen.getByRole('alert').textContent).toContain('منعت المتصفح من حفظ جلسة الدخول');
+    // التسجيل نجح على الخادم فعليًا — الحساب موجود
+    const row = h.db.raw
+      .prepare('SELECT id FROM users WHERE email_normalized = ?')
+      .get(VALID_EMAIL) as { id: string } | undefined;
+    expect(row).toBeDefined();
+  });
+
+  it('تسجيل الدخول داخل إطار: نفس رسالة الإطار ولا توجيه', async () => {
+    const signupRes = await h.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: VALID_EMAIL, password: VALID_PW }),
+    });
+    expect(signupRes.status).toBe(201);
+
+    wireFetchWithoutJar(h);
+    setEmbedded(true);
+
+    const navigate = vi.fn();
+    const user = userEvent.setup();
+    render(
+      <AuthProvider>
+        <Login navigate={navigate} />
+      </AuthProvider>,
+    );
+
+    await user.type(document.querySelector('input[type="email"]')!, VALID_EMAIL);
+    await user.type(document.querySelector('input[type="password"]')!, VALID_PW);
+    await user.click(screen.getByRole('button', { name: 'دخول' }));
+
+    await waitFor(
+      () => expect(screen.getByRole('alert').textContent).toContain('معاينة الموقع داخل إطار'),
+      { timeout: 8000 },
+    );
+    expect(navigate).not.toHaveBeenCalled();
+  });
+
+  it('داخل الإطار لكن الجلسة تعمل: سلوك طبيعي بلا تحذير', async () => {
+    wireFetchWithJar(h);
+    setEmbedded(true);
+
+    const navigate = vi.fn();
+    const user = userEvent.setup();
+    render(
+      <AuthProvider>
+        <Signup navigate={navigate} />
+      </AuthProvider>,
+    );
+
+    await user.type(document.querySelector('input[type="email"]')!, VALID_EMAIL);
+    await user.type(document.querySelector('input[type="password"]')!, VALID_PW);
+    await user.click(screen.getByRole('button', { name: 'إنشاء الحساب' }));
+
+    await waitFor(() => expect(navigate).toHaveBeenCalledWith('/learn'), { timeout: 8000 });
+    // لا تحذير يظهر رغم أن الصفحة «داخل إطار» — لأن /me نجح فعليًا
+    expect(screen.queryByRole('alert')).toBeNull();
+    expect(cookieJar).toMatch(/^ses=.+/);
+  });
+
+  it('الصفحة المستقلة (بدون إطار): رسالة مختلفة ولا تذكر الإطار', async () => {
+    const signupRes = await h.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: VALID_EMAIL, password: VALID_PW }),
+    });
+    expect(signupRes.status).toBe(201);
+
+    wireFetchWithoutJar(h);
+    setEmbedded(false);
+
+    const navigate = vi.fn();
+    const user = userEvent.setup();
+    render(
+      <AuthProvider>
+        <Login navigate={navigate} />
+      </AuthProvider>,
+    );
+
+    await user.type(document.querySelector('input[type="email"]')!, VALID_EMAIL);
+    await user.type(document.querySelector('input[type="password"]')!, VALID_PW);
+    await user.click(screen.getByRole('button', { name: 'دخول' }));
+
+    await waitFor(
+      () => expect(screen.getByRole('alert').textContent).toContain('لم يحفظ جلسة الدخول'),
+      { timeout: 8000 },
+    );
+    expect(navigate).not.toHaveBeenCalled();
+    // رسالة الصفحة المستقلة مختلفة ولا تذكر الإطار
+    expect(screen.getByRole('alert').textContent).not.toContain('معاينة الموقع داخل إطار');
+    expect(screen.getByRole('alert').textContent).toContain('اسمح بالكوكيز');
+  });
+});

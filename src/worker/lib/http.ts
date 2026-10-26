@@ -148,7 +148,7 @@ export function cookieName(env: Env, req?: Request): string {
   return secure ? '__Host-ses' : 'ses';
 }
 
-function cookieAttrs(maxAge: number, secure: boolean): string[] {
+export function cookieAttrs(maxAge: number, secure: boolean): string[] {
   const attrs = ['Path=/', 'HttpOnly', 'SameSite=Lax', `Max-Age=${maxAge}`, 'Priority=High'];
   if (secure) attrs.push('Secure');
   return attrs;

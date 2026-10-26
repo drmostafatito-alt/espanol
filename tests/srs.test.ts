@@ -4,13 +4,14 @@
  *   2) التكامل عبر worker الحقيقي + D1 في الذاكرة: بطاقات، حدود، تكرار، استئناف.
  */
 import { beforeEach, describe, expect, it } from 'vitest';
+import { createHash } from 'node:crypto';
 import {
   scheduleCard, resolveLimits, isRating, ratingToQuality, qualityToRating,
   MIN_EASE, MAX_EASE, MAX_INTERVAL_DAYS, LEECH_THRESHOLD, DEFAULT_LIMITS,
   type CardLike,
 } from '../src/worker/lib/srs';
 import { makeHarness, signupAndGetCookie, type Harness } from './harness';
-import { importExemplars } from './content-fixture';
+import { importExemplars, correctAnswer } from './content-fixture';
 
 const NOW = new Date('2026-10-21T08:00:00.000Z');
 const newCard: CardLike = { state: 'new', ease: 2.5, intervalDays: 0, reps: 0, lapses: 0 };
@@ -411,5 +412,385 @@ describe('SRS عبر الخادم الحقيقي', () => {
     // تظهر المصرية لبعض البطاقات المستوردة
     const hasAnyEg = resEg.cards.some(c => typeof c.revealArEg === 'string' && c.revealArEg.length > 0);
     expect(hasAnyEg).toBe(true);
+  });
+});
+
+// ---------------------------------------------------------------------------
+
+const STABLE_ENC = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
+
+/** معرّف التمرين في القاعدة كما يشتقه الـ importer (نفس خوارزمية stableId). */
+function dbExId(slug: string, jsonId: string): string {
+  const digest = createHash('sha256').update(`${slug}/${jsonId}`).digest();
+  let out = '';
+  for (let i = 0; i < 12; i++) out += STABLE_ENC[(digest[i] ?? 0) % 32]!;
+  return `ex_${out}`;
+}
+
+describe('ربط الإجابات الخاطئة ببطاقات المراجعة', () => {
+  beforeEach(async () => {
+    h = makeHarness({ ALLOW_UNREVIEWED_CONTENT: 'true', ALLOW_PUBLIC_SIGNUP: 'true' });
+    importExemplars(h);
+    const { cookie: c } = await signupAndGetCookie(h);
+    cookie = c!;
+  });
+
+  function entryIdFor(word: string): string {
+    const row = h.db.raw
+      .prepare(`SELECT id FROM vocabulary_entries WHERE headword_normalized = ?`)
+      .get(word) as { id: string } | undefined;
+    if (!row) throw new Error(`مدخل المفردات غير موجود: ${word}`);
+    return row.id;
+  }
+
+  function cardFor(word: string) {
+    return h.db.raw
+      .prepare(
+        `SELECT ease, interval_days, repetitions, lapses, due_at, state
+         FROM review_schedule
+         WHERE user_id = (SELECT id FROM users LIMIT 1) AND item_type = 'vocab' AND item_id = ? AND card_kind = 'recognition'`,
+      )
+      .get(entryIdFor(word)) as { ease: number; interval_days: number; repetitions: number; lapses: number; due_at: string; state: string };
+  }
+
+  function answer(exDbId: string, response: unknown, eventId: string) {
+    return h.call(`/api/lessons/${LESSON}/answers`, {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ eventId, exerciseId: exDbId, response }),
+    });
+  }
+
+  it('الإجابة الصحيحة لا تمسّ بطاقات المراجعة', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const res = await h.json(await answer(exId, correctAnswer(h, exId) ?? '', 'ev_corr_0000001'));
+    expect(res.correct).toBe(true);
+
+    const card = cardFor('me llamo');
+    expect(card.state).toBe('new');
+    expect(card.ease).toBeCloseTo(2.5, 5);
+    expect(card.interval_days).toBe(0);
+    expect(card.lapses).toBe(0);
+    const n = h.db.raw.prepare(`SELECT COUNT(*) AS n FROM srs_reviews`).get() as { n: number };
+    expect(n.n).toBe(0);
+  });
+
+  it('الإجابة الخاطئة تُعيد بطاقة الكلمة المستهدفة إلى إعادة التعلّم', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const res = await h.json(await answer(exId, '__none__', 'ev_wrong_0000001'));
+    expect(res.correct).toBe(false);
+
+    const card = cardFor('me llamo');
+    expect(card.state).toBe('relearning');
+    expect(card.interval_days).toBe(0);
+    expect(card.repetitions).toBe(0);
+    expect(card.lapses).toBe(1);
+    expect(card.ease).toBeCloseTo(2.3, 5);
+    const minutes = (new Date(card.due_at).getTime() - Date.now()) / 60_000;
+    expect(minutes).toBeGreaterThan(9);
+    expect(minutes).toBeLessThan(11);
+
+    // التحويل مسجّل في سجل المراجعات بتقييم again (1)
+    const row = h.db.raw
+      .prepare(`SELECT rating FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { rating: number };
+    expect(row.rating).toBe(1);
+  });
+
+  it('فقط بطاقة الكلمة المستهدفة تتأثر، وبقية بطاقات الدرس ثابتة', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_only_00000001');
+
+    expect(cardFor('me llamo').state).toBe('relearning');
+    for (const w of ['hola', 'buenos días', 'mucho gusto']) {
+      const c = cardFor(w);
+      expect(c.state).toBe('new');
+      expect(c.ease).toBeCloseTo(2.5, 5);
+      expect(c.lapses).toBe(0);
+    }
+  });
+
+  it('غياب الرابط (تمرين بلا targetVocab) ⇒ لا تغيير', async () => {
+    await completeLessonOnce();
+    // prea1_ll_6_sound: word_choice بلا targetVocab
+    const exId = dbExId(LESSON, 'prea1_ll_6_sound');
+    const res = await h.json(await answer(exId, '__none__', 'ev_nolink_000001'));
+    expect(res.correct).toBe(false);
+
+    const n = h.db.raw.prepare(`SELECT COUNT(*) AS n FROM srs_reviews`).get() as { n: number };
+    expect(n.n).toBe(0);
+    expect(cardFor('me llamo').state).toBe('new');
+    expect(cardFor('hola').state).toBe('new');
+  });
+
+  it('كلمة غير موجودة في المفردات ⇒ لا تغيير', async () => {
+    await completeLessonOnce();
+    // نُعدّل content_json بحيث تصبح targetVocab كلمة غير موجودة في المفردات
+    const vid = h.db.raw
+      .prepare(`SELECT id FROM lesson_versions WHERE id = (SELECT current_version_id FROM lessons WHERE slug = ?)`)
+      .get(LESSON) as { id: string };
+    const row = h.db.raw.prepare(`SELECT content_json FROM lesson_versions WHERE id = ?`).get(vid.id) as { content_json: string };
+    const parsed = JSON.parse(row.content_json) as { exercises: { id: string; targetVocab?: string[] }[] };
+    parsed.exercises = parsed.exercises.map(e =>
+      e.id === 'prea1_ll_3_fill' ? { ...e, targetVocab: ['no-existe-xyz'] } : e,
+    );
+    h.db.raw.prepare(`UPDATE lesson_versions SET content_json = ? WHERE id = ?`).run(JSON.stringify(parsed), vid.id);
+
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const res = await h.json(await answer(exId, '__none__', 'ev_noword_000001'));
+    expect(res.correct).toBe(false);
+
+    expect(cardFor('me llamo').state).toBe('new');
+    const n = h.db.raw.prepare(`SELECT COUNT(*) AS n FROM srs_reviews`).get() as { n: number };
+    expect(n.n).toBe(0);
+  });
+
+  it('إعادة الطلب بنفس eventId ⇒ تحديث واحد للبطاقة', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const body = JSON.stringify({ eventId: 'ev_replay_00001', exerciseId: exId, response: '__none__' });
+
+    const a = await h.json(await h.call(`/api/lessons/${LESSON}/answers`, { method: 'POST', cookie, body }));
+    expect(a.replay).toBe(false);
+    const after1 = cardFor('me llamo');
+
+    const b = await h.json(await h.call(`/api/lessons/${LESSON}/answers`, { method: 'POST', cookie, body }));
+    expect(b.replay).toBe(true);
+    const after2 = cardFor('me llamo');
+    expect(after2.due_at).toBe(after1.due_at);
+    expect(after2.lapses).toBe(1);
+
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(n.n).toBe(1);
+  });
+
+  it('طلبان متزامنان لنفس النتيجة ⇒ تحديث واحد للبطاقة', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const body = JSON.stringify({ eventId: 'ev_par_00000001', exerciseId: exId, response: '__none__' });
+    const results = await Promise.all([
+      h.call(`/api/lessons/${LESSON}/answers`, { method: 'POST', cookie, body }),
+      h.call(`/api/lessons/${LESSON}/answers`, { method: 'POST', cookie, body }),
+    ]);
+    expect(results.some(r => r.status === 200)).toBe(true);
+
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(n.n).toBe(1);
+    expect(cardFor('me llamo').lapses).toBe(1);
+  });
+
+  it('فشل تحديث SRS لا يُسقط نتيجة التمرين', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const before = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM user_exercise_attempts WHERE exercise_id = ?`)
+      .get(exId) as { n: number };
+
+    const realPrepare = h.env.DB.prepare.bind(h.env.DB);
+    (h.env.DB as unknown as { prepare: (sql: string) => unknown }).prepare = (sql: string) => {
+      if (sql.includes('INTO srs_reviews')) throw new Error('simulated disk failure');
+      return realPrepare(sql);
+    };
+    const res = await h.json(await answer(exId, '__none__', 'ev_fail_0000001'));
+    (h.env.DB as unknown as { prepare: typeof realPrepare }).prepare = realPrepare;
+
+    // النتيجة صحيحة ومُسجّلة
+    expect(res.correct).toBe(false);
+    const after = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM user_exercise_attempts WHERE exercise_id = ?`)
+      .get(exId) as { n: number };
+    expect(after.n).toBe(before.n + 1);
+    // والبطاقة لم تتغيّر
+    expect(cardFor('me llamo').state).toBe('new');
+    expect(cardFor('me llamo').lapses).toBe(0);
+  });
+
+  it('بطاقات غير مرتبطة (كلمات الحزم الأخرى) لا تتأثر', async () => {
+    await completeLessonOnce();
+    // حزمة مفردات تضيف بطاقات لكلمات ليست من دروس هذا الدرس
+    const packs = await h.json<{ packs: { slug: string }[] }>(await h.call('/api/review/packs', { cookie }));
+    await h.call(`/api/review/packs/${packs.packs[0]!.slug}/start`, { method: 'POST', cookie });
+    const caféCard = cardFor('café');
+    expect(caféCard).toBeTruthy();
+
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_unrel_0000001');
+
+    expect(cardFor('me llamo').state).toBe('relearning');
+    expect(cardFor('café').state).toBe('new');
+    expect(cardFor('café').ease).toBeCloseTo(2.5, 5);
+    expect(cardFor('café').lapses).toBe(0);
+  });
+
+  it('بطاقات مستخدم آخر لا تتأثر', async () => {
+    await completeLessonOnce();
+    // نُكمل الدرس لمستخدم ثانٍ في نفس القاعدة
+    const other = await signupAndGetCookie(h, 'other@example.com');
+    const session = await h.json<{ exercises: { id: string; mode: string }[] }>(
+      await h.call(`/api/lessons/${LESSON}/session`, { cookie: other.cookie }),
+    );
+    for (const ex of session.exercises) {
+      if (ex.mode !== 'graded') continue;
+      await h.call(`/api/lessons/${LESSON}/answers`, {
+        method: 'POST', cookie: other.cookie,
+        body: JSON.stringify({ eventId: `ev_o_${ex.id.slice(-8)}_x1`, exerciseId: ex.id, response: correctAnswer(h, ex.id) ?? '' }),
+      });
+    }
+    await h.call(`/api/lessons/${LESSON}/complete`, { method: 'POST', cookie: other.cookie, body: JSON.stringify({ eventId: 'complete_other_1' }) });
+
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_cross_0000001');
+
+    // البطاقة الحالية تغيّرت
+    expect(cardFor('me llamo').state).toBe('relearning');
+    // بطاقة المستخدم الثاني (نفس الكلمة) ثابتة
+    const otherCard = h.db.raw
+      .prepare(
+        `SELECT state, lapses FROM review_schedule
+         WHERE user_id = (SELECT id FROM users WHERE email_normalized = 'other@example.com') AND item_type = 'vocab' AND item_id = ? AND card_kind = 'recognition'`,
+      )
+      .get(entryIdFor('me llamo')) as { state: string; lapses: number };
+    expect(otherCard.state).toBe('new');
+    expect(otherCard.lapses).toBe(0);
+  });
+
+  it('تحديث البطاقة وسجل المراجعة يحدثان معاً في سيناريو ذري واحد', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_pair_0000001');
+
+    // سجل المراجعة والبطاقة متطابقان — قيم next في السجل = حالة البطاقة الحالية
+    const record = h.db.raw
+      .prepare(`SELECT next_state, next_due_at, next_interval_days, next_ease FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { next_state: string; next_due_at: string; next_interval_days: number; next_ease: number };
+    const card = cardFor('me llamo');
+    expect(record).toBeDefined();
+    expect(record.next_state).toBe(card.state);
+    expect(record.next_due_at).toBe(card.due_at);
+    expect(record.next_interval_days).toBe(card.interval_days);
+    expect(record.next_ease).toBe(card.ease);
+  });
+
+  it('فشل التحديث أو إدخال السجل لا يترك حالة جزئية', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const realBatch = h.env.DB.batch.bind(h.env.DB);
+    (h.env.DB as unknown as { batch: () => Promise<unknown> }).batch = async () => {
+      throw new Error('simulated batch failure');
+    };
+    const res = await h.json(await answer(exId, '__none__', 'ev_batchfail_1'));
+    (h.env.DB as unknown as { batch: typeof realBatch }).batch = realBatch;
+
+    // النتيجة صحيحة ومُسجّلة
+    expect(res.correct).toBe(false);
+    // لا سجل مراجعة منقوص
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(n.n).toBe(0);
+    // ولا تحديث بطاقة منقوص
+    expect(cardFor('me llamo').state).toBe('new');
+    expect(cardFor('me llamo').lapses).toBe(0);
+  });
+
+  it('إعادة المحاولة بعد فشل SRS بنفس eventId تستكمله بشكل محدود', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+
+    // المحاولة الأولى: إدخال سجل المراجعة يفشل ⇒ لا بطاقة ولا سجل
+    const realPrepare = h.env.DB.prepare.bind(h.env.DB);
+    (h.env.DB as unknown as { prepare: (sql: string) => unknown }).prepare = (sql: string) => {
+      if (sql.includes('INTO srs_reviews')) throw new Error('simulated disk failure');
+      return realPrepare(sql);
+    };
+    const first = await h.json(await answer(exId, '__none__', 'ev_retry_000001'));
+    (h.env.DB as unknown as { prepare: typeof realPrepare }).prepare = realPrepare;
+    expect(first.correct).toBe(false);
+    expect(cardFor('me llamo').state).toBe('new');
+    const mid = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(mid.n).toBe(0);
+
+    // إعادة إرسال نفس الحدث ⇒ استكمال محدود للتحديث الفاشل
+    const second = await h.json(await answer(exId, '__none__', 'ev_retry_000001'));
+    expect(second.replay).toBe(true);
+    expect(second.correct).toBe(false);
+    expect(cardFor('me llamo').state).toBe('relearning');
+    expect(cardFor('me llamo').lapses).toBe(1);
+    const after = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(after.n).toBe(1);
+  });
+
+  it('إعادة إرسال حدث إجابة خاطئة بعد مراجعة أحدث لا يعيد تطبيق التحديث القديم', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_stale_000001');
+    expect(cardFor('me llamo').state).toBe('relearning');
+
+    // مراجعة أحدث للبطاقة نفسها (تقييم good في جلسة المراجعة)
+    const entryId = entryIdFor('me llamo');
+    const review = await h.json(
+      await h.call('/api/review/answers', {
+        method: 'POST', cookie,
+        body: JSON.stringify({ clientEventId: 'rv_stale_000001', cardId: `vocab:${entryId}:recognition`, rating: 'good' }),
+      }),
+    );
+    expect(review.replay).toBeFalsy();
+    const dueAfterReview = cardFor('me llamo').due_at;
+    const lapsesAfterReview = cardFor('me llamo').lapses;
+
+    // إعادة إرسال حدث الإجابة الخاطئة القديم
+    const replay = await h.json(await answer(exId, '__none__', 'ev_stale_000001'));
+    expect(replay.replay).toBe(true);
+    expect(replay.correct).toBe(false);
+
+    // لا يُعاد تطبيق التحديث القديم: البطاقة تحافظ على جدولة المراجعة الأحدث
+    expect(cardFor('me llamo').due_at).toBe(dueAfterReview);
+    expect(cardFor('me llamo').lapses).toBe(lapsesAfterReview);
+    // لا يُضاف سجل مراجعة جديد لحدث الإجابة القديم (السجل الموجود فقط)
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE client_event_id = ?`)
+      .get(`ev_stale_000001:${entryId}`) as { n: number };
+    expect(n.n).toBe(1);
+  });
+
+  it('حدثان مختلفان لنفس البطاقة ⇒ سجلان وتحديثان بلا تعارض فريد', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    await answer(exId, '__none__', 'ev_two_0000001');
+    expect(cardFor('me llamo').lapses).toBe(1);
+    await answer(exId, '__none__', 'ev_two_0000002');
+    expect(cardFor('me llamo').state).toBe('relearning');
+    expect(cardFor('me llamo').lapses).toBe(2);
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(n.n).toBe(2);
+  });
+
+  it('طلبان متزامنان بحدثين مختلفين لنفس البطاقة ⇒ كلاهما ينجح بلا تعارض', async () => {
+    await completeLessonOnce();
+    const exId = dbExId(LESSON, 'prea1_ll_3_fill');
+    const results = await Promise.all([
+      answer(exId, '__none__', 'ev_par2_0000001'),
+      answer(exId, '__none__', 'ev_par2_0000002'),
+    ]);
+    for (const r of results) expect(r.status).toBe(200);
+
+    expect(cardFor('me llamo').state).toBe('relearning');
+    const n = h.db.raw
+      .prepare(`SELECT COUNT(*) AS n FROM srs_reviews WHERE item_id = ?`)
+      .get(entryIdFor('me llamo')) as { n: number };
+    expect(n.n).toBe(2);
   });
 });
