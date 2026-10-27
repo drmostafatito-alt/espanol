@@ -30,6 +30,8 @@
     "audio:generate": "node tools/generate-sample-audio.mjs",
     "content:import": "node tools/import-content.mjs",
     "content:import:all": "node tools/import-content.mjs --all",
+    "search-index": "node tools/generate-search-index.mjs",
+    "search-index:check": "node tools/generate-search-index.mjs --check",
     "content:plan": "node tools/import-content.mjs --dry-run"
   },
   "dependencies": {

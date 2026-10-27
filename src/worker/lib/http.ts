@@ -26,13 +26,23 @@ export function isNonProductionEnv(env: Env): boolean {
   return ['development', 'test'].includes(String(env.ENVIRONMENT ?? '').trim().toLowerCase());
 }
 
+/**
+ * HTTPS فقط عندما تكون *كل* الأصول المكوَّنة https — القائمة قد تحوي عدة أصول
+ * مفصولة بفواصل، و`startsWith` على السلسلة كلها كان يقرر Secure/__Host-/HSTS
+ * من الأصل الأول فقط. قائمة مختلطة = إعداد خاطئ ⇒ لا ندّعي Secure (فشل آمن).
+ */
+export function isHttpsOnly(env: Env): boolean {
+  const origins = (env.APP_ORIGIN ?? '').split(',').map(s => s.trim()).filter(Boolean);
+  return origins.length > 0 && origins.every(o => o.startsWith('https://'));
+}
+
 /** HSTS يُرسَل فقط على HTTPS. */
 export function securityHeadersFor(env: Env): Record<string, string> {
   const h: Record<string, string> = { ...SECURITY_HEADERS };
   // AUD-23: بيئات المعاينة/التطوير تعرض التطبيق داخل إطار، فتمنعها X-Frame-Options.
   // التخفيف لغير الإنتاج فقط — إنتاجيًا يبقى DENY بلا تغيير.
   if (isNonProductionEnv(env)) delete h['X-Frame-Options'];
-  if (env.APP_ORIGIN?.startsWith('https://')) {
+  if (isHttpsOnly(env)) {
     h['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains';
   }
   return h;
@@ -159,7 +169,7 @@ export function requestIsSecure(req: Request): boolean {
 
 export function cookieName(env: Env, req?: Request): string {
   // __Host- يتطلب Secure + Path=/ + بلا Domain — لا يُستخدم على http
-  const secure = req ? requestIsSecure(req) : env.APP_ORIGIN.startsWith('https://');
+  const secure = req ? requestIsSecure(req) : isHttpsOnly(env);
   return secure ? '__Host-ses' : 'ses';
 }
 

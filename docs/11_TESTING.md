@@ -74,10 +74,10 @@
 node tools/check-sql.mjs                  # يجب PASS
 node tools/validate-content.mjs           # يجب PASS (0 أخطاء)
 node tools/content-metrics.mjs            # يُحوَّل إلى reports/ للمقارنة
-npm run typecheck && npm run lint
-npm run test                              # وحدة
-npm run test:integration                  # Miniflare + D1 محلي
-npm run test:e2e                          # Playwright
+npm run build                             # tsc --noEmit + vite build (لا سكربت typecheck/lint منفصلًا)
+npm run test                              # وحدة (vitest)
+node tools/smoke-worker.mjs               # تكامل على workerd + D1 محلي (يتطلب worker:dev)
+npm run test:e2e                          # Playwright (يتطلب worker:dev + محتوى مستوردًا)
 npx axe ...                               # إتاحة
 ```
 

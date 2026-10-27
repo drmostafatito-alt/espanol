@@ -72,35 +72,73 @@ export async function signupThroughApi(page: Page, email: string, password = 'E2
 export async function sessionExercises(page: Page, slug: string) {
   const res = await page.context().request.get(`/api/lessons/${slug}/session`);
   expect(res.status()).toBe(200);
-  return (await res.json()) as { exercises: { id: string; type: string; mode: string }[] };
+  return (await res.json()) as {
+    exercises: { id: string; type: string; mode: string; options?: { id: string; text: string }[]; items?: { id: string; text: string }[] }[];
+  };
+}
+
+/** النطق مؤجَّل 60ms بعد cancel() في خدمة الصوت — لا نقرأ __spoken فور النقر.
+ *  نستخدم expect.poll مع page.evaluate (آمن مع CSP) بدل waitForFunction
+ *  الذي يرفضه CSP الصارم (script-src 'self') عند تحويل الدالة إلى نص. */
+export async function waitForSpoken(page: Page, minCount: number) {
+  await expect
+    .poll(
+      async () =>
+        page.evaluate(() => (window as unknown as { __spoken?: unknown[] }).__spoken?.length ?? 0),
+      { timeout: 5000 },
+    )
+    .toBeGreaterThanOrEqual(minCount);
+}
+
+/** شاشة تعريف الدرس (brief) تسبق التمارين في الواجهة المدمجة: نضغط
+ *  «ابدأ التمارين» إن ظهرت، ثم ننتظر زر إرسال أول تمرين. */
+export async function enterExercises(page: Page) {
+  const start = page.getByTestId('lesson-start');
+  const submit = page.getByTestId('lesson-submit');
+  await expect(start.or(submit)).toBeVisible();
+  if (await start.count()) await start.click();
+  await expect(submit).toBeVisible();
 }
 
 /** يمرّ على الدرس كله من الواجهة نفسها، ويجيب إجابة صحيحة كل مرة */
 export async function completeLessonThroughUi(page: Page, slug: string) {
   // لا نتفاعل قبل أن يخرج الدرس من حالة التحميل — وإلا نضغط زرًا معطّلًا
-  await expect(page.getByTestId('lesson-submit')).toBeVisible();
+  await enterExercises(page);
   const { exercises } = await sessionExercises(page, slug);
 
   for (let i = 0; i < exercises.length; i++) {
     const exercise = exercises[i]!;
+    const answer = PLAN.answers[exercise.id];
 
-    // كل نوع تمرين له طريقة إدخال مختلفة — نجرّبها بالترتيب من الأبسط
+    // الخيارات والرموز مخلوطة خادميًا في كل جلسة (AUD-03): الإجابة بالموضع
+    // تفشل عشوائيًا — نجيب بالمعرّف المستقر والنص من خطة المحتوى لا بالترتيب.
     const choice = page.locator('.choice').first();
     const input = page.getByTestId('lesson-text');
     const token = page.locator('.token.ghost').first();
     const textarea = page.locator('textarea');
 
     if (await choice.count()) {
-      await choice.click();
+      const optId = typeof answer === 'string' && answer.startsWith('opt_') ? answer : null;
+      if (optId) {
+        await page.locator(`label.choice:has(input[value="${optId}"])`).click();
+      } else {
+        await choice.click();
+      }
     } else if (await input.count()) {
-      const answer = PLAN.answers[exercise.id];
       await input.fill(typeof answer === 'string' ? answer : 'hola');
     } else if (await token.count()) {
-      // رتّب الكلمات: نضغط كل الرموز بترتيب ظهورها
-      const n = await page.locator('.token.ghost').count();
-      for (let k = 0; k < n; k++) await page.locator('.token.ghost').first().click();
+      const tokens = (answer as { tokens?: string[] } | undefined)?.tokens;
+      if (tokens?.length) {
+        const remaining = page.getByTestId('remaining-tokens');
+        for (const tok of tokens) {
+          await remaining.locator('.token.ghost', { hasText: tok }).first().click();
+        }
+      } else {
+        const n = await page.locator('.token.ghost').count();
+        for (let k = 0; k < n; k++) await page.locator('.token.ghost').first().click();
+      }
     } else if (await textarea.count()) {
-      await textarea.fill('Me llamo estudiante.');
+      await textarea.fill(typeof answer === 'string' ? answer : 'Me llamo estudiante.');
     }
 
     await page.getByTestId('lesson-submit').click();
@@ -109,4 +147,7 @@ export async function completeLessonThroughUi(page: Page, slug: string) {
   }
 
   await expect(page.getByTestId('lesson-result')).toBeVisible();
+  // شاشة النتيجة تظهر فورًا بحالة «جارٍ حساب النتيجة» قبل رد الخادم —
+  // لا نرجع حتى ينتهي الحساب، وإلا سبقنا إنشاء البطاقات/فتح الدرس التالي.
+  await expect(page.getByText(/جارٍ حساب النتيجة/)).toHaveCount(0, { timeout: 15_000 });
 }

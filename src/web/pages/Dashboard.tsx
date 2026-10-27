@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem, type ApiUser } from '../api';
 import { useAuth } from '../state';
+
 import { Icon, type IconName } from '../components/icons';
 import { Avatar, ProgressBar, ProgressRing, LevelBadge, LoadingState, ErrorState, EmptyState } from '../components/ui';
 import { LearningPath } from '../components/LearningPath';
@@ -37,7 +38,9 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const [progressError, setProgressError] = useState<string | null>(null);
   const [pathsError, setPathsError] = useState<string | null>(null);
   const [review, setReview] = useState<ReviewPayload | null>(null);
+  const [reviewError, setReviewError] = useState(false);
   const [selectedTab, setSelectedTab] = useState<string>('ALL');
+
 
   const loadProgress = useCallback(() => {
     setProgressError(null);
@@ -60,10 +63,11 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   }, []);
 
   const loadReview = useCallback(() => {
+    setReviewError(false);
     api
       .reviewSession(0) // عدّادات فقط: بلا مسح بطاقات (AUD-18)
       .then(setReview)
-      .catch(() => undefined); // طلب ثانوي: لا يعطّل اللوحة إطلاقًا
+      .catch(() => setReviewError(true));
   }, []);
 
   useEffect(() => {
@@ -89,6 +93,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
   const lessons = progress?.lessons ?? [];
   const completedLessons = progress?.totals.lessons_completed ?? 0;
+
   const totalLessons = progress?.totals.lessons_total ?? 0;
   const totalXp = progress?.stats.xp_total ?? 0;
   const streak = progress?.stats.streak_current ?? 0;
@@ -155,6 +160,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         </button>
       </header>
 
+
       {progressError && !progress && (
         <div style={{ marginBottom: 'var(--s-4)' }}>
           <ErrorState
@@ -169,6 +175,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
       {progress && (
         <>
+
           {/* ---------------- الإحصائيات الحقيقية — ثلاث فقط، الأهم للمتعلم ---------------- */}
           <div className="stat-chip-row" style={{ marginBottom: 'var(--s-4)' }}>
             <div className="stat-chip">
@@ -244,7 +251,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
             <section className="card full" id="specialized-tracks">
               <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-4)' }}>
                 <h2 style={{ margin: 0 }}>المسارات المتخصصة</h2>
-                <span className="small muted">كل المسارات تُقرأ من المحتوى المنشور فعليًا</span>
+                <span className="small muted">مسارات من محتوى المنصة الحالي</span>
               </div>
               {pathsError && (
                 <ErrorState
@@ -255,7 +262,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
               )}
               {!pathsError && paths === null && <LoadingState text="جارٍ تحميل المسارات…" />}
               {!pathsError && paths && paths.length === 0 && (
-                <EmptyState icon="tracks" title="لا مسارات منشورة بعد" description="سيظهر هنا كل مسار ينشره فريق المحتوى." />
+                <EmptyState icon="tracks" title="لا مسارات متاحة بعد" description="ستظهر هنا المسارات المتاحة في المنصة." />
               )}
               <div className="track-grid">
                 {(paths ?? []).filter(p => p.lessons_count > 0).map(p => {
@@ -286,6 +293,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                 })}
               </div>
             </section>
+
 
             {/* ---------------- مسار التعلم ---------------- */}
             <section className="card full" id="learning-path">
@@ -355,7 +363,9 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                   <div>
                     <h2 style={{ margin: '0 0 4px', fontSize: '1.08rem' }}>المراجعة المتباعدة الذكية</h2>
                     <p className="small muted" style={{ margin: 0 }}>
-                      {review === null
+                      {reviewError
+                        ? 'تعذّر حساب البطاقات المستحقة.'
+                        : review === null
                         ? 'جارٍ حساب ما هو مستحق…'
                         : review.session.totalCards === 0
                           ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
@@ -364,6 +374,9 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                   </div>
                 </div>
                 <div className="row">
+                  {reviewError && (
+                    <button className="btn ghost sm" onClick={loadReview}>أعد المحاولة</button>
+                  )}
                   <button className="btn success sm" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
                   <button className="btn secondary sm" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
                 </div>

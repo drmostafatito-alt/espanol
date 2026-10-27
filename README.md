@@ -7,16 +7,16 @@
 >
 > | التحقق | النتيجة |
 > | --- | --- |
-> | `npx vitest run` | **429/429** ✅ (32 ملفًا) — مُحقَّق في جلسة 2026-10-26 |
-> | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ — مُحقَّق في جلسة 2026-10-25 |
+> | `npx vitest run` | **536/536** ✅ (41 ملفًا) — مُحقَّق في جلسة 2026-10-28 (دمج فرع المراجعة في main المحلي) |
+> | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ — مُحقَّق في جلسة 2026-10-28 |
 > | `node tools/journey-live-19.mjs` · `node tools/test-learner-flow-live.mjs` | **32/32 · ناجح 100%** ✅ — مُحقَّق في جلسة 2026-10-25 |
-> | `./node_modules/.bin/playwright test` (Chromium + Firefox، 5 مشاريع) | **70/70** ✅ (آخر تحقق 2026-10-21؛ يحتاج `npx playwright install`، غير قابل للتشغيل في بيئة بلا إنترنت إلى `cdn.playwright.dev`) |
+> | `./node_modules/.bin/playwright test --project=chromium-desktop --project=chromium-320` | **38/38** ✅ (19 سطح مكتب + 19 بعرض 320px) — مُحقَّق في جلسة 2026-10-28 على الشجرة المدمجة؛ مشروعا Firefox غير قابلين للتشغيل في هذه البيئة (تثبيت المتصفح يفشل شبكيًا) |
 > | `npx tsc --noEmit` · `npx vite build` | نظيف / ناجح ✅ |
 > | `node tools/check-sql.mjs` | PASS ✅ (61 جدولًا، 51 فهرسًا) |
 > | `node tools/check-curriculum.mjs` | PASS ✅ (212 درسًا مكتوبًا، 0 أخطاء، 0 تنبيهات) |
 > | `node tools/validate-content.mjs --dir …` | PASS في exemplars + مسودات a1 / core-vocab / travel / callcenter ✅ |
-> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 0 تنبيهات** ✅ |
-> | `node tools/check-content-integrity.mjs` (فحص تكامل المنهج البنيوي) | **PASS · 0 أخطاء** ✅ (212 درسًا، 1262 تمرينًا، 53 حزمة مفردات، 8046 مدخلًا) — يفحص التناسق بين الخريطة والملفات، مفاتيح الإجابة، الحلقات في التقدم، واللغة العربية |
+> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 33 تنبيهًا** ✅ — مُحقَّق في جلسة 2026-10-28 |
+> | `node tools/check-content-integrity.mjs` (فحص تكامل المنهج البنيوي) | **PASS · 0 أخطاء** ✅ (212 درسًا، 1262 تمرينًا، 58 حزمة مفردات، 8509 مدخلًا) — يفحص التناسق بين الخريطة والملفات، مفاتيح الإجابة، الحلقات في التقدم، واللغة العربية |
 > | `node tools/check-audio-manifest.mjs` | PASS ✅ (63 مدخلًا ← 52 ملفًا، 11 اسمًا مستعارًا) |
 >
 > ⚠️ **بوابة أمنية:** لا تُفتح حسابات حقيقية بعد. قوة تخزين كلمة المرور على الخطة المجانية = 5% من متطلب OWASP (حدّ منصة مقيس).
@@ -77,16 +77,18 @@ EOF
 
 # 3) قاعدة D1 المحلية + البذور + استيراد المحتوى بالترتيب الموثّق
 npm run db:migrate:local && npm run db:seed:local
-for d in a1 core-vocab travel callcenter exemplars; do
-  node tools/import-content.mjs --dir "content/drafts/$d" 2>/dev/null \
-    || node tools/import-content.mjs --dir "content/$d"
-done
+# --all فقط: خطة واحدة لكل content/drafts (كل الحزم معًا) + خطة العينات.
+# الاستيراد مجلدًا بمجلد (--dir لكل مجلد) يكسر روابط الدرس↔المفردة بصمت،
+# لأن كل خطة تربط بمفردات مجلدها فقط (رُصد: 160 رابطًا بدل 1,334).
+node tools/import-content.mjs --all   # 212 درسًا + 3 عينات، draft/unreviewed
+# الافتراضي بلا وسائط يستورد content/exemplars فقط (3 دروس).
 
 # 4) التشغيل والتحقق
 npm run build               # vite build
 npm run worker:dev          # API + SPA على http://localhost:8787
 
-npm test                    # 429 اختبار vitest (32 ملفًا)
+
+npm test                    # اختبارات vitest (العدد الحالي يظهر في مخرجات التشغيل)
 node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
 npm run validate            # DDL + جودة المحتوى + تكامل المنهج + تناسق الأصول الصوتية
 node tools/check-curriculum.mjs

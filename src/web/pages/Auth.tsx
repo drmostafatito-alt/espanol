@@ -143,6 +143,9 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
   return (
     <AuthLayout title="إنشاء حساب جديد" subtitle="ابدأ رحلتك في الإسبانية خلال دقيقة.">
       <form className="stack" onSubmit={onSubmit} noValidate>
+        <p className="muted small">
+          نطلب البريد لتعريف حسابك وحفظ تقدمك فيه. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
+        </p>
         <ErrorBox error={error} />
         <label className="field">
           <span>الاسم الذي تحب أن نناديك به (اختياري)</span>

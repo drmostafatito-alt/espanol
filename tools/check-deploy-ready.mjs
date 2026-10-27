@@ -2,9 +2,11 @@
 /**
  * بوابة ما قبل النشر (Preflight) — تمنع نشر إعدادات التطوير بالخطأ.
  *
- * السبب: الملف المرفوع `wrangler.toml` يحمل إعدادات تطوير (ENVIRONMENT=development،
- * ALLOW_PUBLIC_SIGNUP="true"، database_id أصفهان، APP_ORIGIN على localhost).
+ * السبب: الملف الملتزم `wrangler.toml` يحمل إعدادات تطوير (ENVIRONMENT=development،
+ * ALLOW_PUBLIC_SIGNUP="false"، database_id وهمي، APP_ORIGIN على localhost).
  * نجاح `git push` لا يعني أن المشروع جاهز للنشر — وهذا الفحص يفصل بينهما بأمر واحد.
+ * لا يُتجاوَز بوضع قيم إنتاج وهمية: قسم إنتاج حقيقي يتطلب نطاقًا ومعرّف D1
+ * حقيقيين وقرار مالك بشأن قوة الاشتقاق — وكلها غائبة عمدًا حتى الآن.
  *
  * الاستخدام:
  *   node tools/check-deploy-ready.mjs                     # يفحص wrangler.toml الافتراضي

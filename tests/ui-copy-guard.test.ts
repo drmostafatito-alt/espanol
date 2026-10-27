@@ -41,8 +41,23 @@ const BANNED = [
  * استثناءات وظيفية دقيقة. تُضاف فقط عندما تكون الرسالة ضرورية فعلًا للمتعلم
  * وليست إيحاءً بأن الموقع غير جاهز. القائمة فارغة حاليًا — كل عبارة محصورة
  * في BANNED يجب ألا تظهر.
+ *
+ * الاستثناء الوحيد المعتمد (قرار دمج 2026-10-28): تنبيه مصدر المحتوى في صفحة
+ * البحث — يظهر فقط عندما يعيد الخادم contentProvenance = unreviewed_sample،
+ * أي في بيئة غير إنتاجية مع السماح بالمسودات؛ في الإنتاج لا تُقدَّم مسودات
+ * أصلًا فلا يظهر التنبيه. يفرضه اختبار tests/ui-search-provenance.test.tsx
+ * (إصلاح تسريب المسودات، جولة MAUS 3). لا يُسمح بتوسيع الاستثناء لصفحات أخرى.
  */
-const EXCEPTIONS: { phrase: string; file: string; reason: string }[] = [];
+const EXCEPTIONS: { phrase: string; file: string; reason: string }[] = [
+  {
+    phrase: 'unreviewed',
+    file: 'src/web/pages/Search.tsx',
+    reason: 'تنبيه مصدر المحتوى المعتمد في البحث فقط (غير إنتاجي) — انظر التعليق أعلاه',
+  },
+];
+
+/** الملفات المسموح لها بقراءة حقل provenance من استجابة الخادم (نفس الاستثناء أعلاه) */
+const PROVENANCE_ALLOWED_FILES = ['src/web/pages/Search.tsx'];
 
 /** استخراج كل ملفات الواجهة (TS/TSX/CSS/JSON). */
 function walk(dir: string): string[] {
@@ -75,6 +90,8 @@ describe('حماية نسخ الواجهة ضد رسائل «تجريبي/غير
   it('لا تعرض واجهة المتعلم بيانات provenance أو حالة المراجعة', () => {
     const violations: string[] = [];
     for (const file of walk(WEB).filter(f => f.endsWith('.tsx'))) {
+      // استثناء Search.tsx المعتمد أعلاه: قراءة حقل provenance لتنبيه البحث فقط
+      if (PROVENANCE_ALLOWED_FILES.includes(relative(ROOT, file))) continue;
       const text = readFileSync(file, 'utf8');
       for (const key of ['warningAr', 'provenance', 'contentProvenance']) {
         if (text.includes(key)) violations.push(`${relative(ROOT, file)} ∋ ${key}`);

@@ -3,6 +3,7 @@ import { api } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import type { SearchResponse } from '../../shared/search-engine';
+
 import { Icon } from '../components/icons';
 import { EmptyState } from '../components/ui';
 
@@ -19,19 +20,21 @@ export function Search({
   const [kind, setKind] = useState<'all' | 'vocab' | 'grammar' | 'lesson'>('all');
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [busy, setBusy] = useState(false);
-  const [audioNotice, setAudioNotice] = useState<string | null>(null);
   const [searchError, setSearchError] = useState<string | null>(null);
+  const [audioNotice, setAudioNotice] = useState<string | null>(null);
 
   const performSearch = useCallback(async (q: string, lev: string, k: string) => {
     const trimmed = q.trim();
     if (!trimmed) {
       setResponse(null);
+      setSearchError(null);
       return;
     }
     setBusy(true);
     setAudioNotice(null);
     setSearchError(null);
     try {
+
       // مصدر واحد للحقيقة: بحث الخادم. أزلنا محركًا مدمجًا في المتصفح كان يشحن
       // الفهرس كاملًا (2.3MB) ويعرض نتائج قديمة بصمت (AUD-12).
       const res = await api.search(trimmed, {
@@ -39,7 +42,9 @@ export function Search({
         kind: k === 'all' ? undefined : k,
       });
       setResponse(res);
+      setSearchError(null);
     } catch {
+
       setResponse(null);
       setSearchError('تعذّر الاتصال بالخادم لإتمام البحث. تحقق من الاتصال ثم أعد المحاولة.');
     } finally {
@@ -129,6 +134,18 @@ export function Search({
         <p role="status" className="small" data-testid="search-audio-notice" style={{ color: 'var(--color-primary)' }}>
           {audioNotice}
         </p>
+      )}
+
+      {searchError && (
+        <p role="status" className="small" data-testid="search-error" style={{ color: 'var(--color-error, #b3261e)' }}>
+          {searchError}
+        </p>
+      )}
+
+      {response?.contentProvenance === 'unreviewed_sample' && (
+        <div className="alert" role="status" data-testid="search-provenance-warning">
+          هذه النتائج تتضمن محتوى غير مراجَع: الدروس والقواعد المعروضة هنا مسودات بانتظار المراجعة البشرية، ولا تُعرض للمتعلمين في الوضع العادي.
+        </div>
       )}
 
       {busy && <p className="muted small">جارٍ البحث…</p>}
@@ -261,7 +278,7 @@ export function Search({
       {!query.trim() && (
         <div className="card" style={{ textAlign: 'center', padding: 'var(--s-5) var(--s-3)' }}>
           <p className="muted" style={{ fontSize: '1.1rem', margin: 0 }}>
-            ابحث في معجم يضم أكثر من 8,000 مفردة و212 درسًا تفاعليًا وقواعد الإسبانية كاملة.
+            ابحث في معجم يضم أكثر من 8,000 مفردة ومعانيها، وقواعد الإسبانية، ومواضيع الدروس المتاحة لك.
           </p>
           <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-3)', flexWrap: 'wrap' }}>
             <span className="small muted">كلمات مقترحة:</span>

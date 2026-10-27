@@ -9,7 +9,7 @@
  * مكتبات النظام — انظر playwright.config.ts. ما لا يُغطّى: Safari/WebKit، والأجهزة الحقيقية.
  */
 import { expect, test, type Page } from '@playwright/test';
-import { PREA1, signupThroughApi, uniqueEmail } from './helpers';
+import { PREA1, enterExercises, signupThroughApi, uniqueEmail, waitForSpoken } from './helpers';
 
 /** يتظاهر بوجود/غياب صوت إسباني في المتصفح */
 async function fakeVoices(page: Page, langs: string[]) {
@@ -50,12 +50,13 @@ test.describe('الصوت', () => {
     await signupThroughApi(page, uniqueEmail('audio-ok'));
     await page.goto(`/learn/${PREA1}`);
 
-    // ننتظر خروج الدرس من حالة التحميل قبل الحكم على وجود زر الصوت
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    // ننتظر خروج الدرس من حالة التحميل (شاشة التعريف ثم التمارين) قبل الحكم على زر الصوت
+    await enterExercises(page);
     const btn = page.getByTestId('lesson-audio').first();
     if (!(await btn.count())) test.skip(true, 'أول تمرين بلا مفتاح صوت في هذه العينة');
 
     await btn.click();
+    await waitForSpoken(page, 1);
     const spoken = await page.evaluate(() => (window as unknown as { __spoken: { text: string; lang: string }[] }).__spoken);
     expect(spoken.length).toBeGreaterThan(0);
     expect(spoken[0]!.lang).toMatch(/^es-/);
@@ -67,8 +68,8 @@ test.describe('الصوت', () => {
     await signupThroughApi(page, uniqueEmail('audio-none'));
     await page.goto(`/learn/${PREA1}`);
 
-    // ننتظر خروج الدرس من حالة التحميل قبل الحكم على وجود زر الصوت
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    // ننتظر خروج الدرس من حالة التحميل (شاشة التعريف ثم التمارين) قبل الحكم على زر الصوت
+    await enterExercises(page);
     const btn = page.getByTestId('lesson-audio').first();
     if (!(await btn.count())) test.skip(true, 'أول تمرين بلا مفتاح صوت في هذه العينة');
 
@@ -87,9 +88,8 @@ test.describe('الصوت', () => {
     await signupThroughApi(page, uniqueEmail('audio-net'));
     await page.goto(`/learn/${PREA1}`);
 
-    // ننتظر خروج الدرس من حالة التحميل قبل الحكم على وجود زر الصوت
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    // ننتظر خروج الدرس من حالة التحميل (شاشة التعريف ثم التمارين) قبل الحكم على زر الصوت
+    await enterExercises(page);
     const btn = page.getByTestId('lesson-audio').first();
     if (!(await btn.count())) test.skip(true, 'أول تمرين بلا مفتاح صوت في هذه العينة');
     await btn.click();
@@ -104,8 +104,8 @@ test.describe('الصوت', () => {
     await signupThroughApi(page, uniqueEmail('audio-dup'));
     await page.goto(`/learn/${PREA1}`);
 
-    // ننتظر خروج الدرس من حالة التحميل قبل الحكم على وجود زر الصوت
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    // ننتظر خروج الدرس من حالة التحميل (شاشة التعريف ثم التمارين) قبل الحكم على زر الصوت
+    await enterExercises(page);
     const btn = page.getByTestId('lesson-audio').first();
     if (!(await btn.count())) test.skip(true, 'أول تمرين بلا مفتاح صوت في هذه العينة');
 

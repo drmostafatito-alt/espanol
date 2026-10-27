@@ -343,6 +343,19 @@ describe('SRS عبر الخادم الحقيقي', () => {
     expect(res.emptyReason).toBe('NOTHING_DUE');
   });
 
+  it('بطاقة يتيمة (بلا مدخل معجمي) لا تُعدّ مستحقة ولا تُظهر «وصلت حدّك»', async () => {
+    h.db.raw
+      .prepare(`INSERT INTO review_schedule (user_id, item_type, item_id, card_kind, ease, interval_days, repetitions, lapses, due_at, state)
+                VALUES ((SELECT id FROM users LIMIT 1), 'vocab', 'voc_does_not_exist', 'recognition', 2.5, 0, 0, 0, '2000-01-01T00:00:00.000Z', 'new')`)
+      .run();
+    const res = await h.json<{ cards: unknown[]; session: { dueNow: number }; emptyReason: string }>(
+      await h.call('/api/review/session', { cookie }),
+    );
+    expect(res.cards).toEqual([]);
+    expect(res.session.dueNow).toBe(0);
+    expect(res.emptyReason).toBe('NO_VALID_CARDS');
+  });
+
   it('حزم المفردات: البدء يولّد البطاقات مرة واحدة، ويعيد الاستخدام بلا تكرار', async () => {
     const packs = await h.json<{ packs: { slug: string; entries: number }[] }>(await h.call('/api/review/packs', { cookie }));
     expect(packs.packs.length).toBeGreaterThan(0);

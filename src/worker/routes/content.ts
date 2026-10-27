@@ -3,11 +3,14 @@ import { HttpError, json, readJson } from '../lib/http';
 import { ulid } from '../lib/ids';
 import { writeAudit } from '../db';
 import { allowUnreviewedContent } from '../lib/content-access';
-import { searchEngine } from '../../shared/search-engine';
+import { searchEngine, SearchEngine, normalizeEs } from '../../shared/search-engine';
+import type { CompactGrammarItem, CompactLessonItem, SearchResponse } from '../../shared/search-engine';
+
 
 /**
  * حزمة درس للقراءة. القاعدة: المنشور فقط يُقدَّم للعامة.
  * المستخدم ذو صلاحية content.read يمكنه معاينة إصدار غير منشور بـ ?preview=1.
+ * المحتوى يُقدَّم بعد حذف مفاتيح الإجابة — نشر درس لا يكشف إجاباته للعامة.
  */
 export async function getLesson(req: Request, env: Env, requestId: string, user: SessionUser | null): Promise<Response> {
   const url = new URL(req.url);
@@ -46,6 +49,7 @@ export async function getLesson(req: Request, env: Env, requestId: string, user:
         versionId: row.version_id,
         versionNo: row.version_no,
         contentHash: row.content_hash,
+
         content,
       },
     },
@@ -88,8 +92,13 @@ export async function listPaths(_req: Request, env: Env, requestId: string): Pro
 }
 
 /**
- * البحث الذكي في المعجم والقواعد والدروس والتصريفات.
- * يعمل محليًا وخفيفًا دون أي تكلفة خارجية.
+ * البحث الذكي: المفردات والتصريفات من الفهرس الثابت المضمّن في الحزمة
+ * (بلا بيانات دروس عمدًا)، والدروس والقواعد من قاعدة البيانات وفق قاعدة
+ * الرؤية نفسها المطبقة في كل مكان: المنشور فقط، والمسودات فقط عندما يسمح
+ * allowUnreviewedContent (تطوير صريح، لا إنتاج). ملفات المحتوى المصدرية
+ * لا تحمل حالة نشر، فالفهرس الثابت لا يجوز أن يحمل الدروس أبدًا — وإلا
+ * تسرّبت عناوين المسودات وأهدافها وتراكيبها لأي زائر عبر حزمة الواجهة
+ * أو عبر هذا المسار نفسه. يعمل محليًا وخفيفًا دون أي تكلفة خارجية.
  */
 export async function searchContent(req: Request, env: Env, requestId: string): Promise<Response> {
   const url = new URL(req.url);
@@ -99,25 +108,81 @@ export async function searchContent(req: Request, env: Env, requestId: string): 
   const limitParam = parseInt(url.searchParams.get('limit') ?? '20', 10);
   const limit = Math.min(50, Math.max(1, isNaN(limitParam) ? 20 : limitParam));
 
-  // الفهرس ثابت ويشمل المسودات. خارج وضع «عينة غير مراجعة» لا نربط من البحث
-  // إلا بدروس منشورة فعلًا؛ وإلا عرض البحث دروسًا تردّ 404 عند فتحها.
-  let lessonSlugs: ReadonlySet<string> | undefined;
-  if (!allowUnreviewedContent(env)) {
+
+  const includeDrafts = allowUnreviewedContent(env);
+  const wantsLessons = kind === undefined || kind === 'all' || kind === 'lesson' || kind === 'grammar';
+
+  // المفردات والتصريفات: من الفهرس الثابت (لا دروس فيه).
+  const vocabRes = searchEngine.search(q, { level, kind, limit });
+
+  // الدروس والقواعد: من قاعدة البيانات فقط، بعد فلترة الرؤية.
+  let lessonRes: SearchResponse | null = null;
+  if (wantsLessons) {
+    const statusFilter = includeDrafts
+      ? "l.status IN ('published','draft') AND lv.status IN ('published','draft')"
+      : "l.status = 'published' AND lv.status = 'published'";
     const rows = await env.DB.prepare(
-      `SELECT l.slug FROM lessons l
-       JOIN lesson_versions lv ON lv.id = l.current_version_id
-       WHERE l.status = 'published' AND lv.status = 'published'`,
-    ).all<{ slug: string }>();
-    lessonSlugs = new Set(rows.results.map(r => r.slug));
+      `SELECT l.slug, l.title_ar, l.level_code, l.objective_ar, lv.content_json
+       FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id
+       WHERE ${statusFilter}`,
+    ).all<{ slug: string; title_ar: string; level_code: string; objective_ar: string; content_json: string }>();
+
+    const lessons: CompactLessonItem[] = [];
+    const grammar: CompactGrammarItem[] = [];
+    const seenTopics = new Set<string>();
+    for (const row of rows.results) {
+      // content_json يحمل مفاتيح الإجابة — نستخرج منه التراكيب ومواضيع
+      // القواعد فقط، ولا يغادر الخادم أبدًا.
+      let structures: string[] = [];
+      let topics: string[] = [];
+      try {
+        const content = JSON.parse(row.content_json) as { targetStructures?: unknown; grammarTopics?: unknown };
+        if (Array.isArray(content.targetStructures)) {
+          structures = content.targetStructures.filter((s): s is string => typeof s === 'string');
+        }
+        if (Array.isArray(content.grammarTopics)) {
+          topics = content.grammarTopics.filter((s): s is string => typeof s === 'string');
+        }
+      } catch {
+        // محتوى تالف: الدرس يُبحث بعنوانه وهدفه فقط.
+      }
+      lessons.push({
+        s: row.slug, t: row.title_ar, l: row.level_code, u: null,
+        o: row.objective_ar || undefined, g: topics, st: structures,
+      });
+      for (const topic of topics) {
+        const key = normalizeEs(topic);
+        if (!seenTopics.has(key)) {
+          seenTopics.add(key);
+          grammar.push({ t: topic, l: row.level_code, s: row.slug, a: row.title_ar });
+        }
+      }
+    }
+    const lessonEngine = new SearchEngine({
+      version: '1.0.0', vocab: [], forms: {}, lessons, grammar,
+    });
+    lessonRes = lessonEngine.search(q, { level, kind, limit });
   }
 
-  const result = searchEngine.search(q, { level, kind, limit, lessonSlugs });
+  // دمج النتيجتين وترتيبهما بالدرجة: كل نتيجة ضمن أفضل `limit` لنوعها،
+  // فأفضل `limit` إجمالًا مجموعة جزئية منهما — لا يُسقَط الأعلى درجة.
+  const results = [...vocabRes.results, ...(lessonRes?.results ?? [])]
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
+  const result: SearchResponse = {
+    query: vocabRes.query,
+    total: vocabRes.total + (lessonRes?.total ?? 0),
+    results,
+    suggestion: vocabRes.suggestion ?? lessonRes?.suggestion ?? null,
+    executionMs: vocabRes.executionMs + (lessonRes?.executionMs ?? 0),
+    ...(includeDrafts ? { contentProvenance: 'unreviewed_sample' } : {}),
+  };
 
   return json(
     result,
     {
       headers: {
-        'Cache-Control': 'public, max-age=120, stale-while-revalidate=600',
+        'Cache-Control': includeDrafts ? 'no-store' : 'public, max-age=120, stale-while-revalidate=600',
       },
     },
     requestId,

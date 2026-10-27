@@ -4,7 +4,7 @@ import { Landing } from './pages/Landing';
 import { Login, Signup } from './pages/Auth';
 import { Dashboard } from './pages/Dashboard';
 import { Settings } from './pages/Settings';
-import { Transparency, NotFound } from './pages/Misc';
+import { NotFound } from './pages/Misc';
 import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
@@ -74,8 +74,6 @@ function Shell() {
         />
       </Suspense>
     );
-  } else if (path === '/transparency') {
-    page = <Transparency />;
   } else {
     page = <NotFound navigate={navigate} />;
   }

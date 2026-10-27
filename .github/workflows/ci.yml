@@ -54,6 +54,9 @@ jobs:
       - name: عدّاد المفردات الفريدة (ضد التكرار بين الحزم)
         run: node tools/count-lexicon.mjs --ci
 
+      - name: فهرس البحث محدَّث مع المحتوى
+        run: node tools/generate-search-index.mjs --check
+
       - name: بناء الإنتاج
         run: npx vite build
 

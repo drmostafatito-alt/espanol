@@ -50,8 +50,10 @@ describe('بوابة الجاهزية للنشر', () => {
     expect(codes).toContain('NOT_PRODUCTION');
     expect(codes).toContain('APP_ORIGIN_LOCAL');
     expect(codes).toContain('D1_ID_PLACEHOLDER');
-    // حاجز الإطلاق المعروف يجب أن يظهر لا أن يُخفى
-    expect(codes).toContain('PUBLIC_SIGNUP_OPEN');
+    // الافتراضي الملتزَم مغلق التسجيل: لا يجب أن يظهر PUBLIC_SIGNUP_OPEN هنا؛
+    // حاجز الإطلاق الباقي هو قوة الاشتقاق نفسها (30k < 600k) — لا يُخفى.
+    expect(codes).not.toContain('PUBLIC_SIGNUP_OPEN');
+    expect(codes).toContain('KDF_BELOW_OWASP');
     expect(j.status).toBe('FAIL');
   });
 

@@ -245,6 +245,47 @@ describe('X: النقاط محسوبة على الخادم فقط', () => {
     expect(body.xpAwarded).toBe(0);
   });
 
+  it('النجاح من جولة واحدة: إجابات صحيحة متفرقة عبر جولات فاشلة لا تُجمع', async () => {
+    const session = await h.json(await h.call(`/api/lessons/${slug}/session`, { cookie }));
+    const graded = session.exercises.filter((e: { mode: string }) => e.mode === 'graded');
+    expect(graded.length).toBeGreaterThanOrEqual(4);
+    const half = Math.floor(graded.length / 2);
+    const answerOne = async (ex: { id: string }, tag: string) => {
+      const res = await h.call(`/api/lessons/${slug}/answers`, {
+        method: 'POST', cookie,
+        body: JSON.stringify({ eventId: `ev_${ex.id.slice(-8)}_${tag}`, exerciseId: ex.id, response: correctAnswerFor(ex) }),
+      });
+      expect(res.status).toBe(200);
+    };
+    const complete = async (tag: string) => {
+      const res = await h.call(`/api/lessons/${slug}/complete`, {
+        method: 'POST', cookie, body: JSON.stringify({ eventId: `complete_${tag}` }),
+      });
+      expect(res.status).toBe(200);
+      return h.json(res);
+    };
+
+    // الجولة 1: نصف التمارين فقط ⇒ فشل
+    for (const ex of graded.slice(0, half)) await answerOne(ex, 'round1aa');
+    await new Promise(r => setTimeout(r, 5));
+    expect((await complete('round1xx')).passed).toBe(false);
+    await new Promise(r => setTimeout(r, 5));
+
+    // الجولة 2: النصف الآخر فقط ⇒ ما زال فشلًا (لا تراكم عبر الجولات)
+    for (const ex of graded.slice(half)) await answerOne(ex, 'round2bb');
+    await new Promise(r => setTimeout(r, 5));
+    const second = await complete('round2xx');
+    expect(second.passed).toBe(false);
+    expect(second.xpAwarded).toBe(0);
+    await new Promise(r => setTimeout(r, 5));
+
+    // الجولة 3: كل التمارين في جولة واحدة ⇒ نجاح
+    for (const ex of graded) await answerOne(ex, 'round3cc');
+    const third = await complete('round3xx');
+    expect(third.passed).toBe(true);
+    expect(third.xpAwarded).toBe(30);
+  });
+
   it('إجابة خاطئة لا تُحتسب صحيحة', async () => {
     const session = await h.json(await h.call(`/api/lessons/${slug}/session`, { cookie }));
     const first = session.exercises[0];
@@ -334,6 +375,20 @@ describe('L: قواعد الفتح', () => {
     // التفاصيل تُرسل مسطّحة داخل error (لا داخل details) — الشكل موحّد في apiError
     expect(body.error.missing).toContain('prea1-hola-me-llamo');
     expect(body.error.minAccuracy).toBeGreaterThan(0);
+  });
+
+  it('بدء PREA1 دون إتمامه لا يفتح A1 (نفس تعريف اللوحة)', async () => {
+    const session = await h.json(await h.call('/api/lessons/prea1-hola-me-llamo/session', { cookie }));
+    const first = session.exercises.find((e: { mode: string }) => e.mode === 'graded');
+    await h.call('/api/lessons/prea1-hola-me-llamo/answers', {
+      method: 'POST', cookie,
+      body: JSON.stringify({ eventId: 'ev_inprog_00001', exerciseId: first.id, response: correctAnswerFor(first) }),
+    });
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    const prea1 = prog.lessons.find((l: { slug: string }) => l.slug === 'prea1-hola-me-llamo');
+    expect(prea1.progress_status).toBe('in_progress');
+    const res = await h.call('/api/lessons/a1-un-cafe-por-favor/session', { cookie });
+    expect(res.status).toBe(403);
   });
 
   it('A1 يُفتح بعد إتمام PREA1 بدقة كافية', async () => {
@@ -487,6 +542,7 @@ describe('P: لوحة التقدم تُقرأ من الخادم', () => {
 });
 
 describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة الخادم', () => {
+
   interface PQuestion { id: string; options: { id: string; text: string }[] }
 
   async function startPlacement(): Promise<{ attemptId: string; questions: PQuestion[] }> {
@@ -538,6 +594,7 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     const data = await h.json(res);
     expect(data.passed).toBe(true);
     expect(data.score).toBe(100);
+
     // 100% ≥ عتبة A2 الخادمية (80) — المستوى يُشتق من الدرجة لا يختاره العميل
     expect(data.targetLevel).toBe('A2');
     expect(data.unlockedLevel).toBe('A2');
@@ -552,7 +609,32 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     expect(a1Lesson.is_unlocked).toBe(true);
   });
 
+  it('اختيار الخيار الأول دائمًا لا ينجح — مواضع الصواب متنوّعة', async () => {
+    const { attemptId, questions } = await startPlacement();
+    // مواضع الصواب متنوعة داخل المحاولة نفسها: ليس كل صحيح في الخيار الأول
+    const correctIds = solve(questions);
+    const firstIds: Record<string, string> = {};
+    for (const q of questions) firstIds[q.id] = q.options[0]!.id;
+    const firstCorrect = questions.filter(q => correctIds[q.id] === firstIds[q.id]).length;
+    expect(firstCorrect).toBeLessThan(questions.length);
+    // العميل يحاول إرسال score: 100 للتلاعب — يُتجاهل تمامًا
+    const res = await h.call('/api/me/placement', {
+      method: 'POST',
+      cookie,
+      body: JSON.stringify({ attemptId, answers: firstIds, score: 100 }),
+    });
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    // التوقعات تُحسب من تخطيط المحاولة نفسها (الخيارات مخلوطة عشوائيًا)
+    expect(data.score).toBe(firstCorrect * 10);
+    expect(data.passed).toBe(data.score >= 60);
+    expect(data.targetLevel).toBe(data.score >= 80 ? 'A2' : 'A1');
+    expect(data.unlockedLevel).toBe(data.passed ? data.targetLevel : 'PREA1');
+    expect(data.xpAwarded).toBe(data.passed ? (data.targetLevel === 'A2' ? 80 : 40) : 0);
+  });
+
   it('الخادم يتجاهل الدرجة المرسلة من العميل إذا كانت الإجابات خاطئة (منع التلاعب)', async () => {
+
     const { attemptId, questions } = await startPlacement();
     const allWrong = Object.fromEntries(questions.map(q => [q.id, 'o_x_wrong']));
     const res = await h.call('/api/me/placement', {
@@ -567,6 +649,7 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     expect(data.xpAwarded).toBe(0);
     expect(data.unlockedLevel).toBe('PREA1');
   });
+
 
   it('محاولة مستخدمة لا تُسلَّم مرتين (409)', async () => {
     const { attemptId, questions } = await startPlacement();
@@ -688,6 +771,7 @@ describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة
     const d2 = await h.json(r2);
     expect(d2.passed).toBe(true);
     expect(d2.xpAwarded).toBe(0); // لم يحصل على نقاط مضاعفة
+
 
     const prog = await h.json(await h.call('/api/me/progress', { cookie }));
     expect(prog.stats.xp_total).toBe(80);

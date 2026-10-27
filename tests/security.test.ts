@@ -315,6 +315,37 @@ describe('S-D: الصلاحيات والرؤوس والتسريب', () => {
     env.close();
   });
 
+  it('قائمة أصول مختلطة http/https لا تدّعي Secure ولا HSTS (فشل آمن)', async () => {
+    const env = makeHarness({ APP_ORIGIN: 'https://app.example.com,http://localhost:5173' });
+    const res = await env.call('/api/health');
+    expect(res.headers.get('Strict-Transport-Security')).toBeNull();
+    const signup = await env.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: 'mixed@example.com', password: VALID_PW }),
+    });
+    expect(signup.status).toBe(201);
+    const setCookie = signup.headers.get('Set-Cookie') ?? '';
+    expect(setCookie.startsWith('ses=')).toBe(true);
+    expect(setCookie).not.toContain('Secure');
+    env.close();
+  });
+
+  it('التسجيل ببريد موجود: 409 بلا كوكي جلسة ورسالة لا تكشف الوجود', async () => {
+    await signupAndGetCookie(h);
+    const res = await h.call('/api/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email: VALID_EMAIL, password: VALID_PW }),
+    });
+    expect(res.status).toBe(409);
+    expect(res.headers.get('Set-Cookie')).toBeNull();
+    const body = await h.json(res);
+    expect(body.error.code).toBe('SIGNUP_UNAVAILABLE');
+    expect(body.error.message).not.toMatch(/مسجّل|موجود|بالفعل/);
+    expect(body.error.message).not.toMatch(/نسيت كلمة المرور/);
+    const n = h.db.raw.prepare('SELECT COUNT(*) AS n FROM users').get() as { n: number };
+    expect(n.n).toBe(1);
+  });
+
   it('الاستجابات العامة للمحتوى قابلة للكاش، وبيانات المستخدم لا', async () => {
     const { cookie } = await signupAndGetCookie(h);
     expect((await h.call('/api/content/paths')).headers.get('Cache-Control')).toContain('public');

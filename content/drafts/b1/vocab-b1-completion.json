@@ -1,0 +1,8289 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "b1-completion",
+ "pronunciationNoteAr": "لا تتضمن هذه الحزمة IPA ولا تلميحات نطق عربية؛ أُلّفت بمساعدة الذكاء الاصطناعي وتنتظر مراجعة بشرية (يفضَّل متحدث أصلي) قبل أي نشر. لا تعتمد على أي نطق مكتوب هنا للنطق الدقيق.",
+ "source": {
+  "title": "استكمال المعجم — تأليف بمساعدة الذكاء الاصطناعي، بانتظار مراجعة بشرية قبل أي نشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-27",
+  "rankingNote": "لا يحمل أي مدخل هنا ترتيب شيوع؛ internalRank متروك فارغًا عمدًا حتى تراجعه يد بشرية. كل المدخلات بحالة draft."
+ },
+ "entries": [
+  {
+   "headword": "abono de transporte",
+   "normalized": "abono de transporte",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "اشتراك المواصلات / تذكرة موسمية",
+     "meaningArEg": "اشتراك مواصلات",
+     "glossEs": "abono de transporte",
+     "exampleEs": "Compré un abono de transporte mensual.",
+     "exampleAr": "اشتريتُ اشتراك مواصلات شهريًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Compré un abono de transporte mensual.",
+     "ar": "اشتريتُ اشتراك مواصلات شهريًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "acuerdo",
+   "normalized": "acuerdo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "acuerdos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "اتفاق / توافق",
+     "meaningArEg": "اتفاق",
+     "glossEs": "acuerdo, conformidad",
+     "exampleEs": "Estamos de acuerdo en lo esencial.",
+     "exampleAr": "نحن متفقون على الجوهر.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estamos de acuerdo en lo esencial.",
+     "ar": "نحن متفقون على الجوهر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "adjuntar",
+   "normalized": "adjuntar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يُرفق (مستندًا)",
+     "meaningArEg": "يرفق",
+     "glossEs": "adjuntar",
+     "exampleEs": "Es imprescindible adjuntar el justificante de la reserva.",
+     "exampleAr": "من الضروري إرفاق إثبات الحجز.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es imprescindible adjuntar el justificante de la reserva.",
+     "ar": "من الضروري إرفاق إثبات الحجز.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "adjunto",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjunta",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjunté",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjunte",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjunte",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjunten",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "adjuntaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "adjuntando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "adjuntado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "albergue juvenil",
+   "normalized": "albergue juvenil",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بيت شباب / نزل للشباب",
+     "meaningArEg": "بيت شباب",
+     "glossEs": "albergue juvenil",
+     "exampleEs": "Nos quedamos en un albergue juvenil.",
+     "exampleAr": "أقمنا في بيت شباب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Nos quedamos en un albergue juvenil.",
+     "ar": "أقمنا في بيت شباب.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "alojarse",
+   "normalized": "alojarse",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يُقيم / يسكن (في فندق أو مسكن مؤقت)",
+     "meaningArEg": "يسكن / يقيم",
+     "glossEs": "hospedarse",
+     "exampleEs": "Nos alojamos en un hotel céntrico.",
+     "exampleAr": "أقمنا في فندق وسط المدينة.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة انعكاسية من alojar.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Nos alojamos en un hotel céntrico.",
+     "ar": "أقمنا في فندق وسط المدينة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "alojar"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "me alojo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se aloja",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me alojé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me alojaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me alojaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me alojaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me aloje",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se aloje",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me alojara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te alojaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos alojáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os alojarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se alojaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "alojando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "alojado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "anhelo",
+   "normalized": "anhelo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "anhelos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تمنٍّ عميق وشوق قلبي",
+     "meaningArEg": "تمنّي وشوق",
+     "glossEs": "anhelo, deseo profundo",
+     "exampleEs": "Su anhelo es vivir en paz.",
+     "exampleAr": "تمنّيه العميق أن يعيش في سلام.",
+     "exampleArEg": null,
+     "usageNoteAr": "يظهر في سياق التمني مع ojalá؛ وهو اسم لا فعل، فلا يُصرَّف.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su anhelo es vivir en paz.",
+     "ar": "تمنّيه العميق أن يعيش في سلام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "anhelar"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "análisis de sangre",
+   "normalized": "análisis de sangre",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تحليل الدم",
+     "meaningArEg": "تحليل دم",
+     "glossEs": "análisis de sangre",
+     "exampleEs": "El análisis de sangre es mañana.",
+     "exampleAr": "تحليل الدم بكرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El análisis de sangre es mañana.",
+     "ar": "تحليل الدم بكرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "aparato",
+   "normalized": "aparato",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "aparatos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جهاز / آلة",
+     "meaningArEg": "جهاز",
+     "glossEs": "aparato",
+     "exampleEs": "Llevé el aparato al servicio técnico oficial.",
+     "exampleAr": "أخذتُ الجهاز إلى مركز الصيانة الرسمي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Llevé el aparato al servicio técnico oficial.",
+     "ar": "أخذتُ الجهاز إلى مركز الصيانة الرسمي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "aspiración",
+   "normalized": "aspiración",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "aspiraciones",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طموح / تطلع",
+     "meaningArEg": "طموح",
+     "glossEs": "aspiración",
+     "exampleEs": "Su aspiración es ser médico.",
+     "exampleAr": "طموحه أن يصبح طبيبًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "في سياق الصوتيات تعني «النطق المهموس» (aspiración de la h)؛ المعنى العام: طموح.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su aspiración es ser médico.",
+     "ar": "طموحه أن يصبح طبيبًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "atención al cliente",
+   "normalized": "atención al cliente",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خدمة العملاء",
+     "meaningArEg": "خدمة العملا",
+     "glossEs": "atención al cliente",
+     "exampleEs": "Trabaja en atención al cliente.",
+     "exampleAr": "يعمل في خدمة العملاء.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Trabaja en atención al cliente.",
+     "ar": "يعمل في خدمة العملاء.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "carta",
+   "normalized": "carta",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "cartas",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رسالة / خطاب",
+     "meaningArEg": "رسالة",
+     "glossEs": "carta",
+     "exampleEs": "Ya he escrito la carta para el consulado.",
+     "exampleAr": "كتبتُ الرسالة بالفعل للقنصلية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ya he escrito la carta para el consulado.",
+     "ar": "كتبتُ الرسالة بالفعل للقنصلية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "carterista",
+   "normalized": "carterista",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "mf",
+   "plural": "carteristas",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نشال / لص الجيوب",
+     "meaningArEg": "نشال",
+     "glossEs": "carterista",
+     "exampleEs": "Cuidado con el carterista en el metro.",
+     "exampleAr": "احذر النشال في المترو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cuidado con el carterista en el metro.",
+     "ar": "احذر النشال في المترو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "casa rural",
+   "normalized": "casa rural",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بيت ريفي (للإيجار السياحي)",
+     "meaningArEg": "بيت ريفي",
+     "glossEs": "casa rural",
+     "exampleEs": "Alquilamos una casa rural en el campo.",
+     "exampleAr": "استأجرنا بيتًا ريفيًا في الريف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Alquilamos una casa rural en el campo.",
+     "ar": "استأجرنا بيتًا ريفيًا في الريف.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cobertura mediática",
+   "normalized": "cobertura mediática",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "التغطية الإعلامية",
+     "meaningArEg": "تغطية إعلامية",
+     "glossEs": "cobertura mediática",
+     "exampleEs": "La cobertura mediática fue amplia.",
+     "exampleAr": "كانت التغطية الإعلامية واسعة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La cobertura mediática fue amplia.",
+     "ar": "كانت التغطية الإعلامية واسعة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "coherente",
+   "normalized": "coherente",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "coherentes",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "متسق / متماسك",
+     "meaningArEg": "متسق",
+     "glossEs": "coherente",
+     "exampleEs": "Su argumento es coherente.",
+     "exampleAr": "حجته متسقة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su argumento es coherente.",
+     "ar": "حجته متسقة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "compromiso",
+   "normalized": "compromiso",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "compromisos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "التزام / تعهد",
+     "meaningArEg": "التزام",
+     "glossEs": "compromiso",
+     "exampleEs": "Tengo un compromiso mañana por la tarde.",
+     "exampleAr": "لدي التزام غدًا بعد الظهر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tengo un compromiso mañana por la tarde.",
+     "ar": "لدي التزام غدًا بعد الظهر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "confianza",
+   "normalized": "confianza",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ثقة",
+     "meaningArEg": "ثقة",
+     "glossEs": "confianza",
+     "exampleEs": "Le agradecemos su valiosa colaboración y confianza.",
+     "exampleAr": "نشكركم على تعاونكم القيم وثقتكم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Le agradecemos su valiosa colaboración y confianza.",
+     "ar": "نشكركم على تعاونكم القيم وثقتكم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "confiar en",
+   "normalized": "confiar en",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يثق في / يعتمد على",
+     "meaningArEg": "يثق في",
+     "glossEs": "confiar en",
+     "exampleEs": "Puedes confiar en mí.",
+     "exampleAr": "يمكنك أن تثق بي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Puedes confiar en mí.",
+     "ar": "يمكنك أن تثق بي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "conflicto",
+   "normalized": "conflicto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "conflictos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نزاع / صراع",
+     "meaningArEg": "نزاع",
+     "glossEs": "conflicto",
+     "exampleEs": "El conflicto duró varios años.",
+     "exampleAr": "استمر النزاع سنوات عدة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El conflicto duró varios años.",
+     "ar": "استمر النزاع سنوات عدة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "contar con",
+   "normalized": "contar con",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعتمد على / يثق في دعم",
+     "meaningArEg": "يعتمد على",
+     "glossEs": "contar con",
+     "exampleEs": "Siempre puedes contar con mi apoyo total.",
+     "exampleAr": "يمكنك دائمًا الاعتماد على دعمي الكامل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Siempre puedes contar con mi apoyo total.",
+     "ar": "يمكنك دائمًا الاعتماد على دعمي الكامل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "contrato indefinido",
+   "normalized": "contrato indefinido",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عقد دائم / عقد غير محدد المدة",
+     "meaningArEg": "عقد دائم",
+     "glossEs": "contrato indefinido",
+     "exampleEs": "Firmó un contrato indefinido.",
+     "exampleAr": "وقّع عقدًا دائمًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Firmó un contrato indefinido.",
+     "ar": "وقّع عقدًا دائمًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "copia sellada",
+   "normalized": "copia sellada",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نسخة مختومة",
+     "meaningArEg": "نسخة مختومة",
+     "glossEs": "copia sellada",
+     "exampleEs": "Guardé la copia sellada de la reclamación.",
+     "exampleAr": "احتفظتُ بالنسخة المختومة من الشكوى.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Guardé la copia sellada de la reclamación.",
+     "ar": "احتفظتُ بالنسخة المختومة من الشكوى.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "correlación temporal",
+   "normalized": "correlación temporal",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ترابط زمني / علاقة زمنية",
+     "meaningArEg": "ترابط زمني",
+     "glossEs": "correlación temporal",
+     "exampleEs": "Hay una correlación temporal entre ambos hechos.",
+     "exampleAr": "هناك ترابط زمني بين الحدثين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay una correlación temporal entre ambos hechos.",
+     "ar": "هناك ترابط زمني بين الحدثين.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cualificación",
+   "normalized": "cualificación",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "cualificaciones",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مؤهل / كفاءة",
+     "meaningArEg": "مؤهل",
+     "glossEs": "cualificación",
+     "exampleEs": "Tengo la cualificación adecuada para este sector.",
+     "exampleAr": "لدي المؤهل المناسب لهذا القطاع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tengo la cualificación adecuada para este sector.",
+     "ar": "لدي المؤهل المناسب لهذا القطاع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "currículum vitae",
+   "normalized": "currículum vitae",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "السيرة الذاتية",
+     "meaningArEg": "السي في",
+     "glossEs": "currículum vitae",
+     "exampleEs": "Adjunto mi currículum vitae.",
+     "exampleAr": "أرفق سيرتي الذاتية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Adjunto mi currículum vitae.",
+     "ar": "أرفق سيرتي الذاتية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "debate",
+   "normalized": "debate",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "debates",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مناظرة / نقاش",
+     "meaningArEg": "نقاش",
+     "glossEs": "debate, discusión",
+     "exampleEs": "El debate sobre la educación continúa.",
+     "exampleAr": "النقاش حول التعليم مستمر.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El debate sobre la educación continúa.",
+     "ar": "النقاش حول التعليم مستمر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "defecto de fábrica",
+   "normalized": "defecto de fábrica",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عيب مصنعي / خلل في التصنيع",
+     "meaningArEg": "عيب مصنع",
+     "glossEs": "defecto de fábrica",
+     "exampleEs": "El aparato tiene un defecto de fábrica.",
+     "exampleAr": "الجهاز به عيب مصنعي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El aparato tiene un defecto de fábrica.",
+     "ar": "الجهاز به عيب مصنعي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "desconectar",
+   "normalized": "desconectar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ينفصل / يفصل (عن العمل أو الجهاز)",
+     "meaningArEg": "يفصل",
+     "glossEs": "desconectar",
+     "exampleEs": "Necesito desconectar un rato del trabajo.",
+     "exampleAr": "أحتاج أن أنفصل قليلًا عن العمل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Necesito desconectar un rato del trabajo.",
+     "ar": "أحتاج أن أنفصل قليلًا عن العمل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "desconecto",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconecta",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconecté",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconecte",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconecte",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconecten",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desconectaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "desconectando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "desconectado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "desear que",
+   "normalized": "desear que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتمنى أن",
+     "meaningArEg": "يتمنى إن",
+     "glossEs": "desear que",
+     "exampleEs": "Deseo que tengas un buen día.",
+     "exampleAr": "أتمنى لك يومًا سعيدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Deseo que tengas un buen día.",
+     "ar": "أتمنى لك يومًا سعيدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "dieta mediterránea",
+   "normalized": "dieta mediterránea",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حمية البحر المتوسط",
+     "meaningArEg": "حمية البحر المتوسط",
+     "glossEs": "dieta mediterránea",
+     "exampleEs": "Sigue la dieta mediterránea.",
+     "exampleAr": "يتبع حمية البحر المتوسط.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Sigue la dieta mediterránea.",
+     "ar": "يتبع حمية البحر المتوسط.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "discrepar",
+   "normalized": "discrepar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يخالف / يعارض (رأيًا)",
+     "meaningArEg": "يخالف",
+     "glossEs": "discrepar",
+     "exampleEs": "Sufrió el ostracismo tras discrepar con la cúpula.",
+     "exampleAr": "تعرض للعزل بعد معارضته للقيادة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Sufrió el ostracismo tras discrepar con la cúpula.",
+     "ar": "تعرض للعزل بعد معارضته للقيادة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "discrepo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepa",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparon",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepe",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepe",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparas",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discrepáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "discreparan",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "discrepando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "discrepado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "efecto secundario",
+   "normalized": "efecto secundario",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أثر جانبي",
+     "meaningArEg": "أثر جانبي",
+     "glossEs": "efecto secundario",
+     "exampleEs": "El medicamento tiene un efecto secundario.",
+     "exampleAr": "للدواء أثر جانبي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El medicamento tiene un efecto secundario.",
+     "ar": "للدواء أثر جانبي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "en cambio",
+   "normalized": "en cambio",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أما / في المقابل / بينما",
+     "meaningArEg": "أما",
+     "glossEs": "en cambio",
+     "exampleEs": "Él es serio; en cambio, ella es alegre.",
+     "exampleAr": "هو جاد؛ أما هي فمرحة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Él es serio; en cambio, ella es alegre.",
+     "ar": "هو جاد؛ أما هي فمرحة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "entorno natural",
+   "normalized": "entorno natural",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "البيئة الطبيعية / المحيط الطبيعي",
+     "meaningArEg": "بيئة طبيعية",
+     "glossEs": "entorno natural",
+     "exampleEs": "Protegemos el entorno natural.",
+     "exampleAr": "نحمي البيئة الطبيعية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Protegemos el entorno natural.",
+     "ar": "نحمي البيئة الطبيعية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "entrevista de trabajo",
+   "normalized": "entrevista de trabajo",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مقابلة عمل / مقابلة توظيف",
+     "meaningArEg": "مقابلة شغل",
+     "glossEs": "entrevista de trabajo",
+     "exampleEs": "Tengo una entrevista de trabajo mañana.",
+     "exampleAr": "عندي مقابلة شغل بكرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tengo una entrevista de trabajo mañana.",
+     "ar": "عندي مقابلة شغل بكرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "equipaje perdido",
+   "normalized": "equipaje perdido",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أمتعة مفقودة",
+     "meaningArEg": "شنط ضايعة",
+     "glossEs": "equipaje perdido",
+     "exampleEs": "Reclamé mi equipaje perdido en el aeropuerto.",
+     "exampleAr": "طالبتُ بأمتعتي المفقودة في المطار.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Reclamé mi equipaje perdido en el aeropuerto.",
+     "ar": "طالبتُ بأمتعتي المفقودة في المطار.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "es aconsejable que",
+   "normalized": "es aconsejable que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من المستحسن أن",
+     "meaningArEg": "من المستحسن إن",
+     "glossEs": "es aconsejable que",
+     "exampleEs": "Es aconsejable que reduzcas la sal.",
+     "exampleAr": "من المستحسن أن تقلل الملح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es aconsejable que reduzcas la sal.",
+     "ar": "من المستحسن أن تقلل الملح.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "es conveniente que",
+   "normalized": "es conveniente que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من المناسب أن",
+     "meaningArEg": "من المناسب إن",
+     "glossEs": "es conveniente que",
+     "exampleEs": "Es conveniente que llegues temprano.",
+     "exampleAr": "من المناسب أن تصل مبكرًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es conveniente que llegues temprano.",
+     "ar": "من المناسب أن تصل مبكرًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "es fundamental que",
+   "normalized": "es fundamental que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من الجوهري أن / من الأساسي أن",
+     "meaningArEg": "من الأساسي إن",
+     "glossEs": "es fundamental que",
+     "exampleEs": "Es fundamental que tomes la medicación.",
+     "exampleAr": "من الجوهري أن تتناول الدواء.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es fundamental que tomes la medicación.",
+     "ar": "من الجوهري أن تتناول الدواء.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "es inaceptable que",
+   "normalized": "es inaceptable que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "من غير المقبول أن",
+     "meaningArEg": "من غير المقبول إن",
+     "glossEs": "es inaceptable que",
+     "exampleEs": "Es inaceptable que no den explicaciones.",
+     "exampleAr": "من غير المقبول ألا يقدموا تفسيرًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es inaceptable que no den explicaciones.",
+     "ar": "من غير المقبول ألا يقدموا تفسيرًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "escritura",
+   "normalized": "escritura",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "escrituras",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سند رسمي / كتابة موثقة",
+     "meaningArEg": "سند",
+     "glossEs": "escritura",
+     "exampleEs": "Otorgaron una escritura pública ante notario.",
+     "exampleAr": "حرروا سندًا رسميًا أمام كاتب العدل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Otorgaron una escritura pública ante notario.",
+     "ar": "حرروا سندًا رسميًا أمام كاتب العدل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "especializar",
+   "normalized": "especializar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتخصص (في مجال)",
+     "meaningArEg": "يتخصص",
+     "glossEs": "especializarse en un campo",
+     "exampleEs": "Me especializo en traducción jurídica.",
+     "exampleAr": "أتخصص في الترجمة القانونية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me especializo en traducción jurídica.",
+     "ar": "أتخصص في الترجمة القانونية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "especializo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializa",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especialize",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especialize",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "especializaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "especializando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "especializado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "especializarse",
+   "normalized": "especializarse",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتخصص (في مجال)",
+     "meaningArEg": "يتخصص",
+     "glossEs": "especializarse en un campo",
+     "exampleEs": "Me especializo en traducción jurídica.",
+     "exampleAr": "أتخصص في الترجمة القانونية.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة انعكاسية من especializar؛ تُبنى مع en.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me especializo en traducción jurídica.",
+     "ar": "أتخصص في الترجمة القانونية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "especializar"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "me especializo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializa",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especializé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especializaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especializaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especializaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especialize",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especialize",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me especializara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te especializaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos especializáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os especializarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se especializaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "especializando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "especializado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "esperar que",
+   "normalized": "esperar que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يأمل / يرجو أن",
+     "meaningArEg": "يأمل إن",
+     "glossEs": "esperar que",
+     "exampleEs": "Espero que todo salga bien.",
+     "exampleAr": "آمل أن يسير كل شيء على ما يرام.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Espero que todo salga bien.",
+     "ar": "آمل أن يسير كل شيء على ما يرام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "establecimiento",
+   "normalized": "establecimiento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "establecimientos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "محل / مؤسسة",
+     "meaningArEg": "محل",
+     "glossEs": "establecimiento",
+     "exampleEs": "El establecimiento abre a las nueve.",
+     "exampleAr": "يفتح المحل في التاسعة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El establecimiento abre a las nueve.",
+     "ar": "يفتح المحل في التاسعة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "estimado señor",
+   "normalized": "estimado señor",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سيدي المحترم (افتتاحية رسمية)",
+     "meaningArEg": "سيدي المحترم",
+     "glossEs": "estimado señor",
+     "exampleEs": "Estimado señor: le escribo para solicitar información.",
+     "exampleAr": "سيدي المحترم: أكتب إليكم لطلب معلومات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estimado señor: le escribo para solicitar información.",
+     "ar": "سيدي المحترم: أكتب إليكم لطلب معلومات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "estrés",
+   "normalized": "estrés",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "توتر / إجهاد",
+     "meaningArEg": "توتر",
+     "glossEs": "estrés",
+     "exampleEs": "El estrés afecta la salud.",
+     "exampleAr": "التوتر يؤثر في الصحة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El estrés afecta la salud.",
+     "ar": "التوتر يؤثر في الصحة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "estudio",
+   "normalized": "estudio",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "estudios",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "دراسة / بحث",
+     "meaningArEg": "دراسة",
+     "glossEs": "estudio, investigación",
+     "exampleEs": "El estudio analiza el objeto de estudio.",
+     "exampleAr": "تحلل الدراسة موضوع البحث.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El estudio analiza el objeto de estudio.",
+     "ar": "تحلل الدراسة موضوع البحث.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "expediente académico",
+   "normalized": "expediente académico",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "السجل الأكاديمي / الملف الدراسي",
+     "meaningArEg": "سجل أكاديمي",
+     "glossEs": "expediente académico",
+     "exampleEs": "Solicité mi expediente académico.",
+     "exampleAr": "طلبتُ سجلي الأكاديمي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Solicité mi expediente académico.",
+     "ar": "طلبتُ سجلي الأكاديمي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "feliz",
+   "normalized": "feliz",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "felices",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سعيد / مسرور",
+     "meaningArEg": "مبسوط",
+     "glossEs": "feliz",
+     "exampleEs": "Es una adaptación paulatina y feliz.",
+     "exampleAr": "إنه تكيف تدريجي وسعيد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es una adaptación paulatina y feliz.",
+     "ar": "إنه تكيف تدريجي وسعيد.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "fortaleza",
+   "normalized": "fortaleza",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "fortalezas",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نقطة قوة / حصن",
+     "meaningArEg": "نقطة قوة",
+     "glossEs": "fortaleza",
+     "exampleEs": "Su fortaleza es la paciencia.",
+     "exampleAr": "نقطة قوته الصبر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su fortaleza es la paciencia.",
+     "ar": "نقطة قوته الصبر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "fuente fidedigna",
+   "normalized": "fuente fidedigna",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مصدر موثوق",
+     "meaningArEg": "مصدر موثوق",
+     "glossEs": "fuente fidedigna",
+     "exampleEs": "Es una fuente fidedigna de información.",
+     "exampleAr": "إنه مصدر موثوق للمعلومات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es una fuente fidedigna de información.",
+     "ar": "إنه مصدر موثوق للمعلومات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "grado universitario",
+   "normalized": "grado universitario",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "البكالوريوس الجامعي / الدرجة الجامعية",
+     "meaningArEg": "بكالوريوس",
+     "glossEs": "grado universitario",
+     "exampleEs": "Terminó el grado universitario en 2020.",
+     "exampleAr": "أنهى البكالوريوس الجامعي عام 2020.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Terminó el grado universitario en 2020.",
+     "ar": "أنهى البكالوريوس الجامعي عام 2020.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "habitación compartida",
+   "normalized": "habitación compartida",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "غرفة مشتركة",
+     "meaningArEg": "أوضة مشتركة",
+     "glossEs": "habitación compartida",
+     "exampleEs": "Reservé una habitación compartida.",
+     "exampleAr": "حجزتُ غرفة مشتركة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Reservé una habitación compartida.",
+     "ar": "حجزتُ غرفة مشتركة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "hoja de reclamaciones",
+   "normalized": "hoja de reclamaciones",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نموذج الشكاوى",
+     "meaningArEg": "نموذج شكاوى",
+     "glossEs": "hoja de reclamaciones",
+     "exampleEs": "Pedí la hoja de reclamaciones.",
+     "exampleAr": "طلبتُ نموذج الشكاوى.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Pedí la hoja de reclamaciones.",
+     "ar": "طلبتُ نموذج الشكاوى.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "horas extras",
+   "normalized": "horas extras",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ساعات إضافية",
+     "meaningArEg": "ساعات إضافية",
+     "glossEs": "horas extras",
+     "exampleEs": "Hizo tres horas extras esta semana.",
+     "exampleAr": "عمل ثلاث ساعات إضافية هذا الأسبوع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hizo tres horas extras esta semana.",
+     "ar": "عمل ثلاث ساعات إضافية هذا الأسبوع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "imprevisto",
+   "normalized": "imprevisto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "imprevistos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أمر غير متوقع / طارئ",
+     "meaningArEg": "طارئ",
+     "glossEs": "imprevisto",
+     "exampleEs": "Surgió un imprevisto en el viaje.",
+     "exampleAr": "طرأ أمر غير متوقع في الرحلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Surgió un imprevisto en el viaje.",
+     "ar": "طرأ أمر غير متوقع في الرحلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "incumplimiento",
+   "normalized": "incumplimiento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "incumplimientos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إخلال / عدم وفاء (بالتزام)",
+     "meaningArEg": "إخلال",
+     "glossEs": "incumplimiento",
+     "exampleEs": "El incumplimiento del contrato es grave.",
+     "exampleAr": "الإخلال بالعقد خطير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El incumplimiento del contrato es grave.",
+     "ar": "الإخلال بالعقد خطير.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "intercambio de casas",
+   "normalized": "intercambio de casas",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تبادل المنازل (سياحة)",
+     "meaningArEg": "تبادل بيوت",
+     "glossEs": "intercambio de casas",
+     "exampleEs": "Probamos el intercambio de casas.",
+     "exampleAr": "جرّبنا تبادل المنازل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Probamos el intercambio de casas.",
+     "ar": "جرّبنا تبادل المنازل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "jornada laboral",
+   "normalized": "jornada laboral",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يوم العمل / ساعات العمل",
+     "meaningArEg": "يوم الشغل",
+     "glossEs": "jornada laboral",
+     "exampleEs": "La jornada laboral es de ocho horas.",
+     "exampleAr": "يوم العمل ثماني ساعات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La jornada laboral es de ocho horas.",
+     "ar": "يوم العمل ثماني ساعات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "justificante",
+   "normalized": "justificante",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "justificantes",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إثبات / مستند مؤيد",
+     "meaningArEg": "إثبات",
+     "glossEs": "justificante",
+     "exampleEs": "Pide un justificante de pago.",
+     "exampleAr": "اطلب إثبات دفع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Pide un justificante de pago.",
+     "ar": "اطلب إثبات دفع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "llevarse bien",
+   "normalized": "llevarse bien",
+   "kind": "idiom",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "على وفاق / يتفاهم مع",
+     "meaningArEg": "على وفاق",
+     "glossEs": "llevarse bien",
+     "exampleEs": "Me llevo bien con mis vecinos.",
+     "exampleAr": "أنا على وفاق مع جيراني.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة انعكاسية من llevar؛ لا تعني «يحمل» هنا.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me llevo bien con mis vecinos.",
+     "ar": "أنا على وفاق مع جيراني.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "logro",
+   "normalized": "logro",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "logros",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إنجاز / تحقيق",
+     "meaningArEg": "إنجاز",
+     "glossEs": "logro, éxito",
+     "exampleEs": "El premio fue un gran logro.",
+     "exampleAr": "كانت الجائزة إنجازًا كبيرًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El premio fue un gran logro.",
+     "ar": "كانت الجائزة إنجازًا كبيرًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "malestar",
+   "normalized": "malestar",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "malestares",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "توعك / انزعاج",
+     "meaningArEg": "توعك",
+     "glossEs": "malestar",
+     "exampleEs": "Siente un malestar general.",
+     "exampleAr": "يشعر بتوعك عام.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Siente un malestar general.",
+     "ar": "يشعر بتوعك عام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "matricularse",
+   "normalized": "matricularse",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يُسجِّل نفسه (في جامعة أو دورة)",
+     "meaningArEg": "يسجِّل نفسه",
+     "glossEs": "inscribirse",
+     "exampleEs": "Me matriculé en la universidad en septiembre.",
+     "exampleAr": "سجّلتُ نفسي في الجامعة في سبتمبر.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة انعكاسية من matricular؛ تُبنى مع en.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me matriculé en la universidad en septiembre.",
+     "ar": "سجّلتُ نفسي في الجامعة في سبتمبر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "matricular"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "me matriculo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matriculas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricula",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matriculamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matriculáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matriculé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matriculaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matriculamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matriculasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricularon",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matriculaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matriculabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matriculábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matriculabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matricularé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matricularás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matricularemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matricularéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricularán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matricularía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matricularías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricularía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matricularíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matricularíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricularían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matricule",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matricules",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricule",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matriculemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matriculéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me matriculara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te matricularas",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matriculara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos matriculáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os matricularais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se matricularan",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "matriculando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "matriculado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "me alegra que",
+   "normalized": "me alegra que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يسعدني أن",
+     "meaningArEg": "يسعدني إن",
+     "glossEs": "me alegra que",
+     "exampleEs": "Me alegra que estés aquí.",
+     "exampleAr": "يسعدني أنك هنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me alegra que estés aquí.",
+     "ar": "يسعدني أنك هنا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me da pena que",
+   "normalized": "me da pena que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يحزنني أن",
+     "meaningArEg": "يحزنني إن",
+     "glossEs": "me da pena que",
+     "exampleEs": "Me da pena que te vayas.",
+     "exampleAr": "يحزنني أنك راحل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me da pena que te vayas.",
+     "ar": "يحزنني أنك راحل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me da rabia que",
+   "normalized": "me da rabia que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يغيظني أن",
+     "meaningArEg": "يغيظني إن",
+     "glossEs": "me da rabia que",
+     "exampleEs": "Me da rabia que se corte la conexión.",
+     "exampleAr": "يغيظني انقطاع الاتصال.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me da rabia que se corte la conexión.",
+     "ar": "يغيظني انقطاع الاتصال.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me dirijo a usted",
+   "normalized": "me dirijo a usted",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أتوجه إليكم (افتتاحية رسمية)",
+     "meaningArEg": "أتوجه إليكم",
+     "glossEs": "me dirijo a usted",
+     "exampleEs": "Me dirijo a usted para solicitar información.",
+     "exampleAr": "أتوجه إليكم لطلب معلومات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me dirijo a usted para solicitar información.",
+     "ar": "أتوجه إليكم لطلب معلومات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me indigna que",
+   "normalized": "me indigna que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يثير غضبي أن",
+     "meaningArEg": "يثير غضبي إن",
+     "glossEs": "me indigna que",
+     "exampleEs": "Me indigna que no den explicaciones.",
+     "exampleAr": "يثير غضبي ألا يقدموا تفسيرًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me indigna que no den explicaciones.",
+     "ar": "يثير غضبي ألا يقدموا تفسيرًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me molesta que",
+   "normalized": "me molesta que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يزعجني أن",
+     "meaningArEg": "يزعجني إن",
+     "glossEs": "me molesta que",
+     "exampleEs": "Me molesta que griten en el cine.",
+     "exampleAr": "يزعجني أن يصرخوا في السينما.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me molesta que griten en el cine.",
+     "ar": "يزعجني أن يصرخوا في السينما.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "me sorprende que",
+   "normalized": "me sorprende que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يفاجئني أن",
+     "meaningArEg": "يفاجئني إن",
+     "glossEs": "me sorprende que",
+     "exampleEs": "Me sorprende que hables español tan bien.",
+     "exampleAr": "يفاجئني أنك تتحدث الإسبانية بهذه الجودة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me sorprende que hables español tan bien.",
+     "ar": "يفاجئني أنك تتحدث الإسبانية بهذه الجودة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "medio de comunicación",
+   "normalized": "medio de comunicación",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وسيلة إعلام",
+     "meaningArEg": "وسيلة إعلام",
+     "glossEs": "medio de comunicación",
+     "exampleEs": "Todo medio de comunicación debe verificar los hechos.",
+     "exampleAr": "يجب على كل وسيلة إعلام أن تتحقق من الوقائع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Todo medio de comunicación debe verificar los hechos.",
+     "ar": "يجب على كل وسيلة إعلام أن تتحقق من الوقائع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "no obstante",
+   "normalized": "no obstante",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مع ذلك / غير أن / بيد أن",
+     "meaningArEg": "مع ذلك",
+     "glossEs": "no obstante",
+     "exampleEs": "No obstante, seguiremos trabajando en el proyecto.",
+     "exampleAr": "مع ذلك، سنواصل العمل في المشروع.",
+     "exampleArEg": null,
+     "usageNoteAr": "رابط استدراكي ثابت؛ لا تُستخدم obstante وحدها.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No obstante, seguiremos trabajando en el proyecto.",
+     "ar": "مع ذلك، سنواصل العمل في المشروع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "nutrientes",
+   "normalized": "nutrientes",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "nutrientes",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عناصر غذائية / مغذيات",
+     "meaningArEg": "عناصر غذائية",
+     "glossEs": "nutrientes",
+     "exampleEs": "Los nutrientes son esenciales para la salud.",
+     "exampleAr": "العناصر الغذائية أساسية للصحة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Los nutrientes son esenciales para la salud.",
+     "ar": "العناصر الغذائية أساسية للصحة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "número de incidencia",
+   "normalized": "número de incidencia",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رقم البلاغ / رقم الواقعة",
+     "meaningArEg": "رقم البلاغ",
+     "glossEs": "número de incidencia",
+     "exampleEs": "Anote el número de incidencia, por favor.",
+     "exampleAr": "سجّل رقم البلاغ من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Anote el número de incidencia, por favor.",
+     "ar": "سجّل رقم البلاغ من فضلك.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "ojalá",
+   "normalized": "ojalá",
+   "kind": "word",
+   "pos": "interj",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يا ليت / ليت (للتمني)",
+     "meaningArEg": "يا ليت",
+     "glossEs": "ojalá",
+     "exampleEs": "¡Ojalá todos aprueben el examen!",
+     "exampleAr": "يا ليت الجميع ينجح في الامتحان!",
+     "exampleArEg": null,
+     "usageNoteAr": "تأخذ دائمًا صيغة المنصوب؛ أصلها عربي (لو شاء الله).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¡Ojalá todos aprueben el examen!",
+     "ar": "يا ليت الجميع ينجح في الامتحان!",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "para",
+   "normalized": "para",
+   "kind": "word",
+   "pos": "prep",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لـ / من أجل (الغاية والمستفيد والوجهة)",
+     "meaningArEg": "عشان / لـ",
+     "glossEs": "para, con el fin de",
+     "exampleEs": "Vine a Madrid para estudiar un máster.",
+     "exampleAr": "جئتُ إلى مدريد لدراسة الماجستير.",
+     "exampleArEg": null,
+     "usageNoteAr": "تُفرَّق عن por في درس por مقابل para: para للغاية والوجهة، وpor للسبب والوسيلة.",
+     "commonErrorAr": "لا تخلط بين para حرف الجر وpara صيغة الفعل parar."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vine a Madrid para estudiar un máster.",
+     "ar": "جئتُ إلى مدريد لدراسة الماجستير.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pedir disculpas",
+   "normalized": "pedir disculpas",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعتذر / يطلب العفو",
+     "meaningArEg": "يعتذر",
+     "glossEs": "pedir disculpas",
+     "exampleEs": "Vino a pedir disculpas.",
+     "exampleAr": "جاء ليعتذر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Vino a pedir disculpas.",
+     "ar": "جاء ليعتذر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "perfil profesional",
+   "normalized": "perfil profesional",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الملف المهني",
+     "meaningArEg": "ملف مهني",
+     "glossEs": "perfil profesional",
+     "exampleEs": "Su perfil profesional es excelente.",
+     "exampleAr": "ملفه المهني ممتاز.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su perfil profesional es excelente.",
+     "ar": "ملفه المهني ممتاز.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "periodo de prueba",
+   "normalized": "periodo de prueba",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فترة التجربة (عمل)",
+     "meaningArEg": "فترة تجربة",
+     "glossEs": "periodo de prueba",
+     "exampleEs": "El periodo de prueba dura tres meses.",
+     "exampleAr": "فترة التجربة ثلاثة أشهر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El periodo de prueba dura tres meses.",
+     "ar": "فترة التجربة ثلاثة أشهر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pide que",
+   "normalized": "pide que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يطلب أن",
+     "meaningArEg": "يطلب إن",
+     "glossEs": "pide que",
+     "exampleEs": "El jefe pide que vengas al despacho.",
+     "exampleAr": "يطلب المدير أن تأتي إلى المكتب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El jefe pide que vengas al despacho.",
+     "ar": "يطلب المدير أن تأتي إلى المكتب.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pieza de repuesto",
+   "normalized": "pieza de repuesto",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قطعة غيار",
+     "meaningArEg": "قطعة غيار",
+     "glossEs": "pieza de repuesto",
+     "exampleEs": "Necesito una pieza de repuesto.",
+     "exampleAr": "أحتاج إلى قطعة غيار.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Necesito una pieza de repuesto.",
+     "ar": "أحتاج إلى قطعة غيار.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pirámide invertida",
+   "normalized": "pirámide invertida",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الهرم المقلوب (بنية الخبر)",
+     "meaningArEg": "هرم مقلوب",
+     "glossEs": "pirámide invertida",
+     "exampleEs": "La noticia sigue la pirámide invertida.",
+     "exampleAr": "يتبع الخبر بنية الهرم المقلوب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La noticia sigue la pirámide invertida.",
+     "ar": "يتبع الخبر بنية الهرم المقلوب.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "plazo de entrega",
+   "normalized": "plazo de entrega",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مهلة التسليم / أجل التسليم",
+     "meaningArEg": "مهلة التسليم",
+     "glossEs": "plazo de entrega",
+     "exampleEs": "El plazo de entrega es de dos semanas.",
+     "exampleAr": "مهلة التسليم أسبوعان.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El plazo de entrega es de dos semanas.",
+     "ar": "مهلة التسليم أسبوعان.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "por lo tanto",
+   "normalized": "por lo tanto",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لذلك / ومن ثم",
+     "meaningArEg": "لذلك",
+     "glossEs": "por lo tanto",
+     "exampleEs": "Estudió mucho; por lo tanto, aprobó.",
+     "exampleAr": "ذاكر كثيرًا؛ لذلك نجح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estudió mucho; por lo tanto, aprobó.",
+     "ar": "ذاكر كثيرًا؛ لذلك نجح.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "postura",
+   "normalized": "postura",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "posturas",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "موقف / وضعية",
+     "meaningArEg": "موقف",
+     "glossEs": "postura",
+     "exampleEs": "Defiende su postura con firmeza.",
+     "exampleAr": "يدافع عن موقفه بحزم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Defiende su postura con firmeza.",
+     "ar": "يدافع عن موقفه بحزم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pregunta si",
+   "normalized": "pregunta si",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يسأل إن / عما إذا",
+     "meaningArEg": "يسأل إن",
+     "glossEs": "pregunta si",
+     "exampleEs": "Me pregunta si viene mañana.",
+     "exampleAr": "يسألني إن كان سيأتي غدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Me pregunta si viene mañana.",
+     "ar": "يسألني إن كان سيأتي غدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pretensión",
+   "normalized": "pretensión",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "pretensiones",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مطالبة / ادعاء / طموح",
+     "meaningArEg": "مطالبة",
+     "glossEs": "pretensión",
+     "exampleEs": "Su pretensión es justa.",
+     "exampleAr": "مطالبتها عادلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su pretensión es justa.",
+     "ar": "مطالبتها عادلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "prevenir",
+   "normalized": "prevenir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يمنع / يحذّر / يتوقع (مثل venir)",
+     "meaningArEg": "يمنع",
+     "glossEs": "prevenir",
+     "exampleEs": "Hay que prevenir los riesgos.",
+     "exampleAr": "يجب منع المخاطر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay que prevenir los riesgos.",
+     "ar": "يجب منع المخاطر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "prevengo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previenes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previene",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previenen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previne",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previniste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previno",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previneron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "preveníamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "preveníais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendrás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendrá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendrán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendrías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevendrían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevengas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevenga",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevengamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevengáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "prevengan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previneras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnéramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previnerais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "previneran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "gerund",
+     "formEs": "previniendo",
+     "irregular": true
+    },
+    {
+     "kind": "participle",
+     "formEs": "prevenido",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "puede que",
+   "normalized": "puede que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قد / ربما",
+     "meaningArEg": "قد",
+     "glossEs": "puede que",
+     "exampleEs": "Puede que llueva mañana.",
+     "exampleAr": "قد تمطر غدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Puede que llueva mañana.",
+     "ar": "قد تمطر غدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "punto de vista",
+   "normalized": "punto de vista",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وجهة نظر",
+     "meaningArEg": "وجهة نظر",
+     "glossEs": "punto de vista",
+     "exampleEs": "Defiende tu punto de vista con argumentos.",
+     "exampleAr": "دافع عن وجهة نظرك بالحجج.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Defiende tu punto de vista con argumentos.",
+     "ar": "دافع عن وجهة نظرك بالحجج.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "que aproveche",
+   "normalized": "que aproveche",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالهناء والشفاء (عند الأكل)",
+     "meaningArEg": "بالهنا والشفا",
+     "glossEs": "que aproveche",
+     "exampleEs": "¡Que aproveche!",
+     "exampleAr": "بالهناء والشفاء!",
+     "exampleArEg": null,
+     "usageNoteAr": "تُقال عند بدء الأكل.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¡Que aproveche!",
+     "ar": "بالهناء والشفاء!",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "que te mejores",
+   "normalized": "que te mejores",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بالشفاء العاجل",
+     "meaningArEg": "بالشفا العاجل",
+     "glossEs": "que te mejores",
+     "exampleEs": "¡Que te mejores pronto!",
+     "exampleAr": "بالشفاء العاجل!",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¡Que te mejores pronto!",
+     "ar": "بالشفاء العاجل!",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "quedar a su disposición",
+   "normalized": "quedar a su disposición",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يبقى رهن التصرف",
+     "meaningArEg": "يبقى تحت الأمر",
+     "glossEs": "quedar a su disposición",
+     "exampleEs": "Quedo a su disposición para cualquier consulta.",
+     "exampleAr": "أبقى رهن تصرفكم لأي استفسار.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quedo a su disposición para cualquier consulta.",
+     "ar": "أبقى رهن تصرفكم لأي استفسار.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "quizás",
+   "normalized": "quizás",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ربما / قد",
+     "meaningArEg": "يمكن / ربما",
+     "glossEs": "quizás, tal vez",
+     "exampleEs": "Quizás llueva mañana.",
+     "exampleAr": "ربما تمطر غدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة بديلة من quizá بالسين الأخيرة؛ المعنى واحد، وquizá أكثر شيوعًا في الكتابة الرسمية.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quizás llueva mañana.",
+     "ar": "ربما تمطر غدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "quizá"
+   ],
+   "variantNoteAr": "صيغة بديلة من quizá (بالسين الأخيرة)؛ المعنى والاستعمال واحد.",
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "reconciliarse",
+   "normalized": "reconciliarse",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتصالح (مع شخص بعد خلاف)",
+     "meaningArEg": "يتصالح",
+     "glossEs": "hacer las paces",
+     "exampleEs": "Después de años, lograron reconciliarse.",
+     "exampleAr": "بعد سنوات، نجحا في التصالح.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة انعكاسية من reconciliar؛ تُبنى غالبًا مع con.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Después de años, lograron reconciliarse.",
+     "ar": "بعد سنوات، نجحا في التصالح.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "reconciliar"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "me reconcilio",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconcilias",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconcilia",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconcilian",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconcilié",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconciliaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconcilió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconciliaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconciliabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconciliaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconciliarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconciliaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconciliarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconcilie",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconcilies",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconcilie",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconcilien",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "me reconciliara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "te reconciliaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "nos reconciliáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "os reconciliarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "se reconciliaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "reconciliando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "reconciliado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "reunión de trabajo",
+   "normalized": "reunión de trabajo",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "اجتماع عمل",
+     "meaningArEg": "اجتماع شغل",
+     "glossEs": "reunión de trabajo",
+     "exampleEs": "Tenemos una reunión de trabajo a las diez.",
+     "exampleAr": "لدينا اجتماع عمل في العاشرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tenemos una reunión de trabajo a las diez.",
+     "ar": "لدينا اجتماع عمل في العاشرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "salud mental",
+   "normalized": "salud mental",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الصحة النفسية",
+     "meaningArEg": "صحة نفسية",
+     "glossEs": "salud mental",
+     "exampleEs": "Debemos cuidar nuestra salud mental siempre.",
+     "exampleAr": "يجب أن نعتني بصحتنا النفسية دائمًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Debemos cuidar nuestra salud mental siempre.",
+     "ar": "يجب أن نعتني بصحتنا النفسية دائمًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sedentarismo",
+   "normalized": "sedentarismo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "قلة الحركة / الخمول",
+     "meaningArEg": "قلة حركة",
+     "glossEs": "sedentarismo",
+     "exampleEs": "El sedentarismo daña la salud.",
+     "exampleAr": "قلة الحركة تضر بالصحة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El sedentarismo daña la salud.",
+     "ar": "قلة الحركة تضر بالصحة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "servicio técnico",
+   "normalized": "servicio técnico",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خدمة الصيانة / الدعم الفني",
+     "meaningArEg": "صيانة",
+     "glossEs": "servicio técnico",
+     "exampleEs": "Llevé el aparato al servicio técnico oficial.",
+     "exampleAr": "أخذتُ الجهاز إلى مركز الصيانة الرسمي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Llevé el aparato al servicio técnico oficial.",
+     "ar": "أخذتُ الجهاز إلى مركز الصيانة الرسمي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sinceridad",
+   "normalized": "sinceridad",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صدق / صراحة",
+     "meaningArEg": "صدق",
+     "glossEs": "sinceridad",
+     "exampleEs": "Su vínculo se basa en la sinceridad.",
+     "exampleAr": "رابطتهما قائمة على الصدق والصراحة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su vínculo se basa en la sinceridad.",
+     "ar": "رابطتهما قائمة على الصدق والصراحة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "subsanar",
+   "normalized": "subsanar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يصحح / يسد (خللًا)",
+     "meaningArEg": "يصحح",
+     "glossEs": "subsanar",
+     "exampleEs": "Debemos subsanar el error cuanto antes.",
+     "exampleAr": "يجب أن نصحح الخطأ في أقرب وقت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Debemos subsanar el error cuanto antes.",
+     "ar": "يجب أن نصحح الخطأ في أقرب وقت.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "subsano",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsana",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsané",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsane",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanes",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsane",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "subsanaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "subsanando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "subsanado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "suceso",
+   "normalized": "suceso",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "sucesos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حادث / واقعة (إخبارية)",
+     "meaningArEg": "حادث",
+     "glossEs": "suceso",
+     "exampleEs": "El suceso ocurrió ayer por la noche.",
+     "exampleAr": "وقع الحادث أمس مساءً.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El suceso ocurrió ayer por la noche.",
+     "ar": "وقع الحادث أمس مساءً.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sueldo bruto",
+   "normalized": "sueldo bruto",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الراتب الإجمالي (قبل الخصم)",
+     "meaningArEg": "راتب إجمالي",
+     "glossEs": "sueldo bruto",
+     "exampleEs": "El sueldo bruto es de 2.000 euros.",
+     "exampleAr": "الراتب الإجمالي ألفا يورو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El sueldo bruto es de 2.000 euros.",
+     "ar": "الراتب الإجمالي ألفا يورو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sueldo neto",
+   "normalized": "sueldo neto",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "الراتب الصافي (بعد الخصم)",
+     "meaningArEg": "راتب صافي",
+     "glossEs": "sueldo neto",
+     "exampleEs": "El sueldo neto llega a fin de mes.",
+     "exampleAr": "الراتب الصافي يصل آخر الشهر.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El sueldo neto llega a fin de mes.",
+     "ar": "الراتب الصافي يصل آخر الشهر.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sustitución",
+   "normalized": "sustitución",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "sustituciones",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "استبدال",
+     "meaningArEg": "استبدال",
+     "glossEs": "sustitución",
+     "exampleEs": "Pidió la sustitución del aparato.",
+     "exampleAr": "طلب استبدال الجهاز.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Pidió la sustitución del aparato.",
+     "ar": "طلب استبدال الجهاز.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "te sugiero que",
+   "normalized": "te sugiero que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أنصحك أن / أقترح عليك أن",
+     "meaningArEg": "أنصحك إن",
+     "glossEs": "te sugiero que",
+     "exampleEs": "Te sugiero que sigas el tratamiento médico.",
+     "exampleAr": "أنصحك أن تواصل العلاج الطبي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Te sugiero que sigas el tratamiento médico.",
+     "ar": "أنصحك أن تواصل العلاج الطبي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "temo que",
+   "normalized": "temo que",
+   "kind": "expression",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أخشى أن",
+     "meaningArEg": "أخشى إن",
+     "glossEs": "temo que",
+     "exampleEs": "Temo que no llegue a tiempo.",
+     "exampleAr": "أخشى ألا يصل في الوقت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Temo que no llegue a tiempo.",
+     "ar": "أخشى ألا يصل في الوقت.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "testigo presencial",
+   "normalized": "testigo presencial",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شاهد عيان",
+     "meaningArEg": "شاهد عيان",
+     "glossEs": "testigo presencial",
+     "exampleEs": "Hubo un testigo presencial del accidente.",
+     "exampleAr": "كان هناك شاهد عيان على الحادث.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hubo un testigo presencial del accidente.",
+     "ar": "كان هناك شاهد عيان على الحادث.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "texto",
+   "normalized": "texto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "textos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نص",
+     "meaningArEg": "نص",
+     "glossEs": "texto",
+     "exampleEs": "El texto está muy bien organizado.",
+     "exampleAr": "النص منظم جدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El texto está muy bien organizado.",
+     "ar": "النص منظم جدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "timo",
+   "normalized": "timo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "timos",
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "احتيال / خدعة",
+     "meaningArEg": "احتيال",
+     "glossEs": "timo",
+     "exampleEs": "Hay que tomar precauciones para evitar el timo.",
+     "exampleAr": "يجب أخذ الاحتياطات لتجنب الاحتيال.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay que tomar precauciones para evitar el timo.",
+     "ar": "يجب أخذ الاحتياطات لتجنب الاحتيال.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "transmitir",
+   "normalized": "transmitir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ينقل / يبث (شعورًا أو رسالة)",
+     "meaningArEg": "ينقل",
+     "glossEs": "transmitir",
+     "exampleEs": "El pintor usó colores vivos para transmitir alegría.",
+     "exampleAr": "استخدم الرسام ألوانًا زاهية لنقل البهجة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El pintor usó colores vivos para transmitir alegría.",
+     "ar": "استخدم الرسام ألوانًا زاهية لنقل البهجة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "transmito",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmites",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmite",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmiten",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmití",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitirás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitirá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitirán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitirías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitirían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmita",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmita",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitieras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitiéramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitierais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "transmitieran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "transmitiendo",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "transmitido",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "última hora",
+   "normalized": "última hora",
+   "kind": "collocation",
+   "pos": "phrase",
+   "gender": null,
+   "plural": null,
+   "level": "B1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "آخر لحظة / عاجل (خبر)",
+     "meaningArEg": "آخر لحظة",
+     "glossEs": "última hora",
+     "exampleEs": "Es una noticia de última hora.",
+     "exampleAr": "إنه خبر عاجل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es una noticia de última hora.",
+     "ar": "إنه خبر عاجل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  }
+ ]
+}

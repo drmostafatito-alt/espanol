@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
-import { PREA1, signupThroughApi, uniqueEmail } from './helpers';
+import { PREA1, enterExercises, signupThroughApi, uniqueEmail, waitForSpoken } from './helpers';
 
 async function fakeVoices(page: Page, langs: string[]) {
   await page.addInitScript((voiceLangs: string[]) => {
@@ -47,7 +47,7 @@ test.describe('Mission Critical E2E: الصوت وترتيب الكلمات وخ
   test('ترتيب الكلمات: اتجاه LTR وإضافة وحذف الكلمات والإجابة الصحيحة', async ({ page }) => {
     await signupThroughApi(page, uniqueEmail('word-order'));
     await page.goto(`/learn/${PREA1}`);
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    await enterExercises(page);
 
     // نمر عبر التمارين الثلاثة الأولى حتى نصل لتمرين ترتيب الكلمات (التمرين الرابع)
     for (let step = 0; step < 3; step++) {
@@ -119,23 +119,29 @@ test.describe('Mission Critical E2E: الصوت وترتيب الكلمات وخ
     await fakeVoices(page, ['es-ES']);
     await signupThroughApi(page, uniqueEmail('audio-rate'));
     await page.goto(`/learn/${PREA1}`);
-    await expect(page.getByTestId('lesson-submit')).toBeVisible();
+    await enterExercises(page);
 
     const audioBtn = page.getByTestId('lesson-audio').first();
     if (await audioBtn.count()) {
       // التحقق من وجود زر الصوت وسرعة النطق
       await audioBtn.click();
+      await waitForSpoken(page, 1);
       const spoken = await page.evaluate(
         () => (window as unknown as { __spoken: { text: string; lang: string; rate: number }[] }).__spoken,
       );
       expect(spoken.length).toBeGreaterThan(0);
       expect(spoken[0]?.rate).toBe(1);
 
-      // زر تغيير السرعة إلى 0.75x
+      // زر تغيير السرعة إلى 0.75x — النقر على المفتاح نفسه أثناء التشغيل
+      // يوقف (toggle) في خدمة الصوت، فننتظر انتهاء النطق الأول (onend بعد
+      // 50ms في البديل المزيف) قبل تبديل السرعة حتى يُشغَّل الثاني فعلًا.
       const rateBtn = page.getByRole('button', { name: /0\.75x|1x/i }).first();
       if (await rateBtn.count()) {
+        await page.waitForTimeout(200);
         await rateBtn.click();
-        await audioBtn.click();
+        // toggleRate نفسه يشغّل النطق بالسرعة الجديدة — لا ننقر زر الصوت
+        // مرة أخرى فورًا وإلا أوقفنا التشغيل قبل بدئه.
+        await waitForSpoken(page, 2);
         const spoken2 = await page.evaluate(
           () => (window as unknown as { __spoken: { text: string; lang: string; rate: number }[] }).__spoken,
         );

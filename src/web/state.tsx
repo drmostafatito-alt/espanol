@@ -144,3 +144,9 @@ export function useAuth(): AuthValue {
   if (!ctx) throw new Error('useAuth خارج AuthProvider');
   return ctx;
 }
+
+/** نسخة آمنة من useAuth للصفحات العامة التي قد تُرسَم بلا مزوّد (اختبارات/تضمين):
+ *  تعيد null بدل الرمي، فيُعرض الهيرو بحالة «غير مسجَّل». */
+export function useAuthOptional(): AuthValue | null {
+  return useContext(AuthCtx);
+}

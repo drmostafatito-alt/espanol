@@ -147,6 +147,20 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     }
   }, [answer, busy, current, slug]);
 
+  const [completionError, setCompletionError] = useState<string | null>(null);
+
+  const finishLesson = useCallback(() => {
+    setCompletionError(null);
+    void (async () => {
+      try {
+        const res = await api.completeLesson(slug, newEventId());
+        setCompletion(res);
+      } catch (err) {
+        setCompletionError(err instanceof ApiError ? err.message : 'تعذّر حساب النتيجة.');
+      }
+    })();
+  }, [slug]);
+
   const next = useCallback(() => {
     if (index + 1 < exercises.length) {
       setIndex(i => i + 1);
@@ -156,16 +170,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       setPhase('exercise');
     } else {
       setPhase('done');
-      void (async () => {
-        try {
-          const res = await api.completeLesson(slug, newEventId());
-          setCompletion(res);
-        } catch (err) {
-          setError(err instanceof ApiError ? err.message : 'تعذّر حساب النتيجة.');
-        }
-      })();
+      finishLesson();
     }
-  }, [exercises.length, index, slug]);
+  }, [exercises.length, index, finishLesson]);
 
   // اختصارات لوحة المفاتيح: أرقام 1–4 لاختيار الخيارات، وEnter للتأكيد
   useEffect(() => {
@@ -273,6 +280,8 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       <div className="container" style={{ maxWidth: 720 }}>
         <ResultScreen
           completion={completion}
+          completionError={completionError}
+          onRetryCompletion={finishLesson}
           session={session}
           results={results}
           onBack={() => navigate('/learn')}
@@ -281,6 +290,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
             setAnswer(null);
             setResult(null);
             setCompletion(null);
+            setCompletionError(null);
             setResults({});
             startedAt.current = Date.now();
             setPhase('exercise');
@@ -294,6 +304,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
 
   return (
+
     <div className="container lesson-shell">
       {/* شريط علوي للتركيز */}
       <div className="lesson-top" style={{ marginTop: 'var(--s-4)' }}>
@@ -475,6 +486,7 @@ function ExerciseBody({
     recognizerRef.current = recognizer;
     recognizer.start();
   };
+
 
   // زر تشغيل بلا نص منطوق = زر ميت صامت (playAudio يخرج مبكرًا)؛ لا نظهره أصلًا
   const hasAudio = !!(exercise.speechEs || exercise.stemEs);
@@ -756,12 +768,16 @@ function ExerciseBody({
 /* ---------------- شاشة إكمال الدرس ---------------- */
 function ResultScreen({
   completion,
+  completionError,
+  onRetryCompletion,
   session,
   results,
   onBack,
   onRetry,
 }: {
   completion: CompleteResult | null;
+  completionError: string | null;
+  onRetryCompletion: () => void;
   session: LessonSession;
   results: Record<string, boolean | null>;
   onBack: () => void;
@@ -771,6 +787,7 @@ function ResultScreen({
   const passed = completion?.passed ?? false;
 
   return (
+
     <div className="card result-hero" data-testid="lesson-result" style={{ marginTop: 'var(--s-6)', position: 'relative', overflow: 'hidden' }}>
       {passed && (
         <div aria-hidden="true">
@@ -798,7 +815,13 @@ function ResultScreen({
       <h1 style={{ marginTop: 0 }}>
         {passed ? 'أحسنت! أتممت الدرس' : completion ? 'تحتاج مزيدًا من التدريب' : 'جارٍ حساب النتيجة…'}
       </h1>
-      {!completion && <p className="muted">الخادم يحسب نتيجتك الآن…</p>}
+      {!completion && !completionError && <p className="muted">جارٍ حساب النتيجة على الخادم…</p>}
+      {!completion && completionError && (
+        <div className="alert" role="alert">
+          <p style={{ margin: 0 }}>{completionError}</p>
+          <button className="btn sm" style={{ marginTop: 'var(--s-2)' }} onClick={onRetryCompletion}>أعد حساب النتيجة</button>
+        </div>
+      )}
 
       {completion && (
         <>

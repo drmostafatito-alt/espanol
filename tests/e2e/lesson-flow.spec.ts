@@ -4,7 +4,7 @@
  * حالة التحقق: شُغِّلت فعليًا ونجحت على Chromium وFirefox (2026-10-21).
  */
 import { expect, test } from '@playwright/test';
-import { A1, PREA1, completeLessonThroughUi, signupThroughApi, uniqueEmail } from './helpers';
+import { A1, PREA1, completeLessonThroughUi, enterExercises, signupThroughApi, uniqueEmail } from './helpers';
 
 test.describe('مسار الدرس', () => {
   test('زائر بلا جلسة على /learn يُحوَّل إلى الدخول', async ({ page }) => {
@@ -16,7 +16,7 @@ test.describe('مسار الدرس', () => {
     await signupThroughApi(page, uniqueEmail('flow'));
     await page.goto(`/learn/${PREA1}`);
 
-    await expect(page.getByText('عينة تعليمية تجريبية')).toBeVisible();
+    // لا وسم «تجريبي/مسودة» في واجهة المتعلم (قرار حارس النسخ) — التحذير يبقى في استجابة الخادم فقط.
     await completeLessonThroughUi(page, PREA1);
 
     const result = page.getByTestId('lesson-result');
@@ -44,6 +44,7 @@ test.describe('مسار الدرس', () => {
     await completeLessonThroughUi(page, PREA1);
 
     await page.goto(`/learn/${A1}`);
+    await enterExercises(page);
     await expect(page.getByTestId('lesson-submit').or(page.locator('.choice'))).toBeVisible();
   });
 
@@ -91,15 +92,17 @@ test.describe('مسار الدرس', () => {
     await expect(page).toHaveURL(new RegExp(`/learn/${PREA1}`));
   });
 
-  test('اختبار تحديد المستوى /placement: يجيب المتعلم ويُفتح له المستوى مع XP', async ({ page }) => {
+  test('اختبار تحديد المستوى /placement: يجيب المتعلم وتظهر النتيجة من الخادم', async ({ page }) => {
     await signupThroughApi(page, uniqueEmail('placement'));
     await page.goto('/placement');
 
-    // صفحة تحديد المستوى تفتح وتعرض الأسئلة
+    // صفحة تحديد المستوى تفتح وتعرض الأسئلة (الأسئلة من الخادم بلا مفاتيح إجابة)
     await expect(page.getByText('اختبار تحديد المستوى')).toBeVisible();
     await expect(page.getByText('السؤال 1 من 10')).toBeVisible();
 
-    // إجابة الأسئلة العشرة (اختيار أول خيار دائماً وهو الصحيح في بنك الأسئلة)
+    // إجابة الأسئلة العشرة باختيار الخيار الأول دائمًا — مواضع الصواب مخلوطة
+    // في كل محاولة، فالنتيجة تتوقف على التخطيط؛ الاختبار يتحقق من رحلة الإرسال
+    // والنتيجة المعروضة، والتصحيح نفسه مغطّى باختبارات الوحدة الخادمية.
     for (let i = 1; i <= 10; i++) {
       const firstChoice = page.locator('.choice').first();
       await firstChoice.click();
@@ -113,14 +116,15 @@ test.describe('مسار الدرس', () => {
     await expect(finishBtn).toBeEnabled();
     await finishBtn.click();
 
-    // ظهور النتيجة والتهنئة والمكافأة
+    // ظهور النتيجة والمستوى الموصى به (التمهيدي لهذه الإجابات)
     await expect(page.getByText('نتيجة اختبار تحديد المستوى')).toBeVisible();
     await expect(page.getByText(/المستوى الموصى به/)).toBeVisible();
-    await expect(page.getByText(/تمت إضافة/)).toBeVisible();
+    // النسبة من الخادم وتتوقف على تخطيط المحاولة المخلوط — نثبت شكلها لا قيمتها:
+    // فقرة التسمية تعرض نسبة مئوية صالحة (مضاعف 10)، والمستوى الموصى به ظاهر أعلاه.
+    await expect(page.locator('p', { hasText: 'نسبة الإجابات الصحيحة' }).first()).toContainText(/نسبة الإجابات الصحيحة: \d+%/);
 
-    // العودة إلى اللوحة للتحقق من فتح المستوى واحتساب النقاط
+    // العودة إلى اللوحة
     await page.getByRole('button', { name: /الانتقال إلى خريطة المنهج/ }).click();
     await expect(page).toHaveURL('/learn');
-    await expect(page.locator('[data-testid="stat-xp"] .num')).not.toHaveText('0');
   });
 });

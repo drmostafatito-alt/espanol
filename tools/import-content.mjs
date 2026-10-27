@@ -148,7 +148,9 @@ for (const targetDir of targetDirs) {
   }
   console.log(`\n📦 ${targetDir} ⇒ ${statements.length} أمر SQL جاهز`);
   console.log('   ' + Object.entries(counters).map(([k, v]) => `${k}=${v}`).join('  '));
-  allStatements.push(...statements);
+  // دفع بحلقة لا بنشر المصفوفة: النشر يتجاوز حد مكدس الاستدعاء عند ~125 ألف أمر
+  // (وصلنا إليه بعد إضافة صيغ الماضي الناقص من المنصوب لكل الأفعال).
+  for (const s of statements) allStatements.push(s);
   for (const [k, v] of Object.entries(counters)) {
     aggregatedCounters[k] = (aggregatedCounters[k] ?? 0) + v;
   }

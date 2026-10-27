@@ -14,10 +14,12 @@ import { ulid } from '../lib/ids';
 import { createHash } from 'node:crypto';
 import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
 import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
+
 import { scheduleCard, ratingToQuality, SCHEDULER_VERSION, type CardState } from '../lib/srs';
 import { searchEngine } from '../../shared/search-engine';
 import { shuffleSecure } from '../lib/random';
 import { PLACEMENT_QUESTIONS, PLACEMENT_STRATA, PLACEMENT_PASS_SCORE, PLACEMENT_A2_SCORE, PLACEMENT_MAX_STARTS_PER_HOUR, type PlacementQuestion } from '../lib/placement-bank';
+import { rateLimitOrThrow } from '../lib/rate-limit';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -81,6 +83,7 @@ async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
   }
   return row;
 }
+
 
 /** عتبة الإتقان من mastery_criteria_json للدرس السابق (70% في المنهج الحالي).
  *  لا نفرض قيمة افتراضية تعسفية: إن كانت البيانات تالفة أو ناقصة نعامل العتبة
@@ -231,13 +234,19 @@ async function applyWrongAnswerToTargetCards(
   }
 }
 
-/** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية. */
+/** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية.
+ * نفس تعريف «مستوفًى» في لوحة التقدم: إتمامٌ بدقة كافية، لا مجرد بدء.
+ * قاعدة فتح تالفة ⇒ مقفل (فشل مغلق)، لا مفتوح صامتًا. */
 async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): Promise<void> {
   let rule: { type?: string; requires?: string[]; minAccuracy?: number };
   try {
     rule = JSON.parse(lesson.unlock_rule_json);
   } catch {
-    return;
+    throw new HttpError(403, 'LESSON_LOCKED', 'هذا الدرس مقفل: أكمل الدرس السابق بدقة كافية أولًا.', {
+      requires: [],
+      minAccuracy: 0,
+      missing: [],
+    });
   }
   if (!rule.requires?.length) return;
 
@@ -249,6 +258,7 @@ async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): P
   )
     .bind(user.id, ...rule.requires)
     .all<{ slug: string; mastery_criteria_json: string; status: string; best_accuracy: number }>();
+
 
   // عتبة الدقة: إن لم يحدّثها unlock_rule_json صراحةً، نستمدها من إتقان الدرس
   // السابق نفسه (mastery.minAccuracy من محتوى الدرس السابق).
@@ -281,7 +291,9 @@ function publicPrompt(promptJson: string) {
       stemEs: (p.stemEs as string | null) ?? null,
       stemAr: (p.stemAr as string | null) ?? null,
       audioKey: (p.audioKey as string | null) ?? null,
-      // النص الذي يُنطق احتياطيًا (speechSynthesis) — إسباني دائمًا، ولا يُستنتج من خيارات مشتِّتة
+      // النص الذي يُنطق احتياطيًا (speechSynthesis) — إسباني دائمًا، ولا يُستنتج
+      // من خيارات مشتِّتة (الاستثناء الوحيد listen_choose بلا stemEs يُشتق في
+      // lessonSession من نص الخيار الصحيح، لأنه محفّز التمرين نفسه)
       speechEs: (p.speechEs as string | null) ?? (p.stemEs as string | null) ?? null,
     };
   } catch {
@@ -422,11 +434,11 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
     .all<ExerciseRow>();
 
   const options = await env.DB.prepare(
-    `SELECT o.id, o.exercise_id, o.text, o.sort_order FROM exercise_options o
+    `SELECT o.id, o.exercise_id, o.text, o.is_correct, o.sort_order FROM exercise_options o
      JOIN exercises e ON e.id = o.exercise_id WHERE e.lesson_version_id = ? ORDER BY o.sort_order`,
   )
     .bind(lesson.version_id)
-    .all<{ id: string; exercise_id: string; text: string; sort_order: number }>();
+    .all<{ id: string; exercise_id: string; text: string; is_correct: number; sort_order: number }>();
 
   const items = await env.DB.prepare(
     `SELECT i.id, i.exercise_id, i.payload_json, i.ordinal FROM exercise_items i
@@ -443,9 +455,11 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
     .first<{ status: string; best_accuracy: number; attempts_count: number; completed_at: string | null }>();
 
   const optsByExercise = new Map<string, { id: string; text: string }[]>();
+  const correctTextByExercise = new Map<string, string>();
   for (const o of options.results) {
     if (!optsByExercise.has(o.exercise_id)) optsByExercise.set(o.exercise_id, []);
     optsByExercise.get(o.exercise_id)!.push({ id: o.id, text: o.text });
+    if (o.is_correct === 1 && !correctTextByExercise.has(o.exercise_id)) correctTextByExercise.set(o.exercise_id, o.text);
   }
   const itemsByExercise = new Map<string, { id: string; text: string }[]>();
   for (const it of items.results) {
@@ -477,6 +491,7 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
       exercises: exercises.results.map(e => {
         const prompt = publicPrompt(e.prompt_json);
         const opts = optsByExercise.get(e.id) ?? [];
+
         // VER-01: نص النطق يُؤخذ من المحتوى المعلن فقط (speechEs/stemEs) —
         // لا يُشتق أبدًا من مفتاح الإجابة. الاشتقاق القديم كان يرسل الجملة
         // الصحيحة كاملة لتمارين الترتيب (accepted[0]) ونص الخيار الصحيح
@@ -526,6 +541,7 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
   await assertUnlocked(env, user, lesson);
+  await rateLimitOrThrow(env.DB, `answers:user:${user.id}`, 120, 60);
 
   const body = await readJson<{ eventId?: string; exerciseId?: string; response?: unknown; durationMs?: number }>(req);
   const eventId = typeof body.eventId === 'string' ? body.eventId : '';
@@ -573,11 +589,14 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
 
   const result = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), body.response, safeParse(ex.error_feedback_json));
 
-  await env.DB.prepare(
+  // القيد الفريد هو حائط الحماية من سباق الإرسال المتزامن بنفس eventId:
+  // ON CONFLICT DO NOTHING ثم إعادة قراءة — لا 500 ولا محاولة مكررة.
+  const insert = await env.DB.prepare(
     `INSERT INTO user_exercise_attempts
        (id, client_event_id, user_id, lesson_id, lesson_version_id, exercise_id, is_correct, score, answer_json,
         duration_ms, source, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'online', ?)`,
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'online', ?)
+     ON CONFLICT(client_event_id) DO NOTHING`,
   )
     .bind(
       ulid().toLowerCase(),
@@ -593,6 +612,34 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
       new Date().toISOString(),
     )
     .run();
+
+  if ((insert.meta?.changes ?? 0) === 0) {
+    const raced = await env.DB.prepare(
+      `SELECT answer_json, is_correct, score, server_recorded_at FROM user_exercise_attempts
+       WHERE client_event_id = ? AND user_id = ?`,
+    )
+      .bind(eventId, user.id)
+      .first<{ answer_json: string; is_correct: number; score: number; server_recorded_at: string }>();
+    if (raced) {
+      const replay = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), safeParse(raced.answer_json), safeParse(ex.error_feedback_json));
+      return json(
+        {
+          replay: true,
+          correct: raced.is_correct === 1,
+          score: raced.score,
+          mode: replay.mode,
+          explanationAr: ex.explanation_ar,
+          feedbackAr: replay.chosenFeedbackAr ?? null,
+          recordedAt: raced.server_recorded_at,
+        },
+        {},
+        requestId,
+      );
+    }
+    // مفتاح الحدث محجوز لمستخدم آخر (معرّف مولَّد عشوائيًا — نادر جدًا):
+    // لا نسجّل محاولة ولا نُسقط الطلب بخطأ داخلي؛ على العميل إعادة الإرسال بمفتاح جديد.
+    throw new HttpError(409, 'DUPLICATE_EVENT_ID', 'أُعيد إرسال هذا الحدث من قبل. أعد المحاولة.');
+  }
 
   await env.DB.prepare(
     `INSERT INTO user_lesson_progress (user_id, lesson_id, lesson_version_id, status, attempts_count, last_activity_at)
@@ -634,6 +681,7 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
   await assertUnlocked(env, user, lesson);
+  await rateLimitOrThrow(env.DB, `complete:user:${user.id}`, 60, 60);
 
   const body = await readJson<{ eventId?: string }>(req);
   const eventId = typeof body.eventId === 'string' ? body.eventId : '';
@@ -650,14 +698,45 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
   const requiredTypes = (safeParse<{ requiredExerciseTypes?: string[] }>(lesson.mastery_criteria_json)).requiredExerciseTypes ?? [];
   const missingRequiredTypes = requiredTypes.filter(t => !exercises.results.some(e => e.type === t));
 
-  const attempts = await env.DB.prepare(
-    `SELECT exercise_id, is_correct FROM user_exercise_attempts
-     WHERE user_id = ? AND lesson_version_id = ? AND exercise_id IN (${[...gradedIds].map(() => '?').join(',') || "''"})`,
+  // منع الاحتساب المزدوج: XP مرة واحدة لكل درس في حياة الحساب
+  const prior = await env.DB.prepare(
+    `SELECT status, best_accuracy FROM user_lesson_progress WHERE user_id = ? AND lesson_id = ?`,
   )
-    .bind(user.id, lesson.version_id, ...gradedIds)
-    .all<{ exercise_id: string; is_correct: number }>();
+    .bind(user.id, lesson.id)
+    .first<{ status: string; best_accuracy: number }>();
+  const alreadyCompleted = prior?.status === 'completed';
 
-  const solved = new Set(attempts.results.filter(a => a.is_correct === 1).map(a => a.exercise_id));
+  // الدقة من جولة الإكمال الحالية فقط: محاولات بعد آخر استدعاء إكمال لهذا
+  // الدرس. بلا هذا الحدّ كان النجاح تراكميًا عبر جولات — إجابات صحيحة
+  // متفرقة من محاولات فاشلة متعددة تُجمع لتنجح دون جولة ناجحة واحدة.
+  // الدرس المكتمل أصلًا يُحسب تراكميًا كما قبل (حالته لا تتراجع، وXP صُرف).
+  let roundSince: string | null = null;
+  if (!alreadyCompleted) {
+    const lastEvent = await env.DB.prepare(
+      `SELECT MAX(occurred_at) AS last_at FROM learning_events
+       WHERE user_id = ? AND type = 'lesson_completed' AND idempotency_key LIKE ?`,
+    )
+      .bind(user.id, `${user.id}:lesson_complete:${lesson.id}:%`)
+      .first<{ last_at: string | null }>();
+    roundSince = lastEvent?.last_at ?? null;
+  }
+
+  const attempts = await env.DB.prepare(
+    `SELECT exercise_id, is_correct, created_at FROM user_exercise_attempts
+     WHERE user_id = ? AND lesson_version_id = ? AND exercise_id IN (${[...gradedIds].map(() => '?').join(',') || "''"})
+       ${roundSince ? 'AND created_at > ?' : ''}
+     ORDER BY created_at ASC, id ASC`,
+  )
+    .bind(user.id, lesson.version_id, ...gradedIds, ...(roundSince ? [roundSince] : []))
+    .all<{ exercise_id: string; is_correct: number; created_at: string }>();
+
+  // أحدث محاولة لكل تمرين هي الحكم في الجولة — إجابة صحيحة قديمة لا تُنقذ
+  // إجابة خاطئة لاحقة للتمرين نفسه.
+  const latestByExercise = new Map<string, number>();
+  for (const a of attempts.results) {
+    latestByExercise.set(a.exercise_id, a.is_correct);
+  }
+  const solved = new Set([...latestByExercise.entries()].filter(([, v]) => v === 1).map(([k]) => k));
   const answered = new Set(attempts.results.map(a => a.exercise_id));
   const correctCount = solved.size;
   const gradedTotal = graded.length;
@@ -665,16 +744,11 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
 
   const criteria = safeParse<MasteryCriteria>(lesson.mastery_criteria_json);
   const minAccuracy = criteria.minAccuracy ?? 80;
-  const minCorrect = criteria.minCorrectExercises ?? 0;
-  const passed = gradedTotal > 0 && accuracy >= minAccuracy && correctCount >= minCorrect && missingRequiredTypes.length === 0;
-
-  // منع الاحتساب المزدوج: XP مرة واحدة لكل درس في حياة الحساب
-  const prior = await env.DB.prepare(
-    `SELECT status FROM user_lesson_progress WHERE user_id = ? AND lesson_id = ?`,
-  )
-    .bind(user.id, lesson.id)
-    .first<{ status: string }>();
-  const alreadyCompleted = prior?.status === 'completed';
+  // دفاع في العمق: معيار إتقان يطلب أكثر من عدد التمارين المُصحَّحة يجعل
+  // الدرس مستحيل النجاح حتى بالأداء الكامل — يُقصّ إلى الحد الممكن.
+  // (محتوى الـ40 درسًا المتأثرة أُصلح في ملفاته أيضًا، وهذا يحمي من أي قادم.)
+  const minCorrect = Math.min(criteria.minCorrectExercises ?? 0, gradedTotal);
+  const passed = gradedTotal > 0 && accuracy >= minAccuracy && correctCount >= minCorrect;
 
   // سجل الحدث بمفتاح فريد: تكرار نفس eventId لا يضيف شيئًا
   const eventKey = `${user.id}:lesson_complete:${lesson.id}:${eventId}`;
@@ -728,7 +802,9 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
     .run();
 
   // بطاقات مراجعة للمفردات المرتبطة بالدرس — تُنشأ مرة واحدة فقط (ON CONFLICT DO NOTHING)
-  const cardsCreated = await createCardsForLesson(env, user.id, lesson.id);
+  // بطاقات المراجعة لمن أتمّ الدرس فعلًا فقط — الضغط على «إنهاء» بلا نجاح
+  // كان يضيف مفردات الدرس كلها إلى المراجعة ويرفع words_seen.
+  const cardsCreated = passed ? await createCardsForLesson(env, user.id, lesson.id) : 0;
 
   const stats = await env.DB.prepare(`SELECT xp_total FROM user_stats WHERE user_id = ?`)
     .bind(user.id)
@@ -848,9 +924,11 @@ async function derivedStats(env: Env, userId: string): Promise<{ streak_current:
        SELECT substr(created_at, 1, 10) AS d FROM user_exercise_attempts WHERE user_id = ?
        UNION SELECT substr(reviewed_at, 1, 10) AS d FROM srs_reviews WHERE user_id = ?
        UNION SELECT substr(occurred_at, 1, 10) AS d FROM learning_events WHERE user_id = ?
+       UNION SELECT substr(created_at, 1, 10) AS d FROM xp_ledger WHERE user_id = ?
+       UNION SELECT substr(last_reviewed_at, 1, 10) AS d FROM review_schedule WHERE user_id = ? AND last_reviewed_at IS NOT NULL
      ) WHERE d IS NOT NULL`,
   )
-    .bind(userId, userId, userId)
+    .bind(userId, userId, userId, userId, userId)
     .all<{ d: string }>();
   const todayUtc = new Date().toISOString().slice(0, 10);
   const streaks = computeStreaks(days.results.map(r => r.d), todayUtc);
@@ -1001,6 +1079,11 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
 
   // AUD-11: السلسلة/الدقائق/المستقرة تُشتق من نشاط حقيقي لا من أعمدة لم تُحدَّث قط
   const derived = await derivedStats(env, user.id);
+  // استمرارية الخادم: تُحفَظ السلسلة المحسوبة في user_stats (اختبار streak)
+  // حتى لا تعتمد القراءات اللاحقة على إعادة الاشتقاق وحدها
+  await env.DB.prepare(
+    `UPDATE user_stats SET streak_current = ?, streak_longest = ? WHERE user_id = ?`,
+  ).bind(derived.streak_current, derived.streak_longest, user.id).run();
   const statsMerged = {
     ...(stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 }),
     ...derived,
@@ -1014,8 +1097,9 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     .bind(user.id)
     .first<{ lessons_total: number; lessons_completed: number }>();
 
-  return json(
+    return json(
     {
+
       stats: statsMerged,
       lessons,
       nextLesson: nextLesson ? {
@@ -1078,6 +1162,7 @@ function sortLessonsWithinUnits<T extends { unit_id: string; slug: string; unloc
 
   return result;
 }
+
 
 /**
  * اختبار تحديد المستوى — محاولات خادمية (إصلاح AUD-05)
@@ -1235,8 +1320,11 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
 
   if (passed) {
     const levelClause = targetLevel === 'A1' ? "('PREA1')" : "('PREA1', 'A1')";
+    // نفس قاعدة رؤية المحتوى في بقية المنصة: المنشور فقط، والمسودات فقط
+    // كعيّنة غير مراجعة خارج الإنتاج. لا يُفتح درس غير مرئي للمستخدم.
+    const statusClause = allowUnreviewed(env) ? "('published','draft')" : "('published')";
     const lessonsToComplete = await env.DB.prepare(
-      `SELECT l.id, l.current_version_id FROM lessons l WHERE l.level_code IN ${levelClause} AND l.status IN ('published','draft')`,
+      `SELECT l.id, l.current_version_id FROM lessons l WHERE l.level_code IN ${levelClause} AND l.status IN ${statusClause}`,
     ).all<{ id: string; current_version_id: string }>();
 
     // AUD-06: batch مجزّأ بدل استعلام لكل درس (حد D1 على الخطة المجانية)

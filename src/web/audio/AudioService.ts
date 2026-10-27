@@ -30,6 +30,11 @@ export interface SpeechLike {
   cancel(): void;
   getVoices(): { lang: string; name: string }[];
   speaking?: boolean;
+  /**
+   * انتظار تحميل قائمة الأصوات (voiceschanged) بمهلة قصيرة. يعيد true إن
+   * أصبحت القائمة غير فارغة. غيابه = لا انتظار ممكنًا (بيئة اختبار).
+   */
+  awaitVoices?: () => Promise<boolean>;
 }
 export interface SpeechSynthesisUtteranceLike {
   text: string;
@@ -221,17 +226,27 @@ export class AudioService {
     });
   }
 
-  private speak(cue: Cue, gen: number): PlayResult {
+  private async speak(cue: Cue, gen: number): Promise<PlayResult> {
     if (gen !== this.gen) return { ok: true, source: 'none' };
     const speech = this.deps.speech;
     if (!speech) {
       this.diag('speech_unavailable', { key: cue.key });
       return { ok: false, source: 'none', error: 'NOT_SUPPORTED', messageAr: MESSAGES.NOT_SUPPORTED };
     }
-    if (!this.hasSpanishVoice()) {
+    // الأصوات تُحمَّل متأخرة: قائمة فارغة لا تعني «لا صوت إسباني» بعد.
+    // ننتظر حدث voiceschanged (مهلة قصيرة) قبل الحكم؛ وإن حُمّلت القائمة
+    // بلا صوت إسباني نرد NO_VOICE بصدق بدل ادعاء تشغيل صامت.
+    let voices = speech.getVoices?.() ?? [];
+    if (voices.length === 0 && speech.awaitVoices) {
+      await speech.awaitVoices();
+      voices = speech.getVoices?.() ?? [];
+    }
+    if (voices.length > 0 && !voices.some(x => /^es/i.test(x.lang))) {
       this.diag('no_spanish_voice', { key: cue.key });
       return { ok: false, source: 'none', error: 'NO_VOICE', messageAr: MESSAGES.NO_VOICE };
     }
+    // قائمة ما زالت فارغة بعد الانتظار: محاولة متفائلة (بعض المتصفحات
+    // تنطق رغم ذلك) — وonerror يوقف الحالة بهدوء بدل ادعاء مستمر.
     const u: SpeechSynthesisUtteranceLike = { text: cue.text, lang: cue.variant ?? 'es-ES', rate: this.rate };
     u.onend = () => { if (gen === this.gen && this.currentKey === cue.key) this.stop(); };
     u.onerror = () => {

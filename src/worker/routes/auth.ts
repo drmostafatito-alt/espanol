@@ -11,8 +11,8 @@ import {
 import { ulid } from '../lib/ids';
 import { checkRateLimit, pruneRateLimits } from '../lib/rate-limit';
 import {
-  createSession, createUser, emailExists, findSessionUser, findUserByEmail,
-  registerFailedLogin, resetFailedLogin, revokeSession, touchSession,
+  createSession, createUser, emailExists, findSessionUser, findUserByEmail, findUserById,
+  registerFailedLogin, resetFailedLogin, revokeOtherSessions, revokeSession, touchSession,
   revokeExcessSessions, pruneExpiredSessions, updatePasswordHash, writeAudit,
   SESSION_IDLE_DAYS,
 } from '../db';
@@ -57,6 +57,13 @@ async function rateLimitOrThrow(env: Env, bucket: string, limit: number, windowS
   }
 }
 
+/** مدة الجلسة بالأيام، محصورة بين 1 و90 — قيمة إعداد خاطئة لا تصنع جلسات لعشر سنوات. */
+function sessionTtlDays(env: Env): number {
+  const n = Number(env.SESSION_TTL_DAYS);
+  if (!Number.isFinite(n)) return 30;
+  return Math.min(90, Math.max(1, Math.floor(n)));
+}
+
 function policyFor(env: Env): PasswordPolicy {
   try {
     return resolvePolicy(env);
@@ -93,8 +100,14 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
   const signupLimit = signupRateLimit(env);
   await rateLimitOrThrow(env, `signup:ip:${ipHash}`, signupLimit, 3600);
 
-  // رسالة موحّدة: لا نكشف إن كان البريد مسجلًا أم لا
+  // رسالة موحّدة النص: لا نكشف إن كان البريد مسجلًا أم لا.
+  // حدّ صريح: بلا تحقق بالبريد لا يمكن توحيد رمز الحالة (409 مقابل 201 + كوكي)
+  // دون كسر التسجيل نفسه — الرد الناجح يجب أن ينشئ جلسة. التخفيف هنا هو
+  // النص الموحّد + حد المعدل (10/ساعة لكل IP) + إهدار تكلفة اشتقاق مماثلة
+  // لتكلفة الإنشاء حتى لا يكشف التوقيت وجود البريد. التوحيد الكامل يتطلب
+  // قناة تحقق بالبريد (مزود بريد — عائق موثّق، بلا قرار مالك بعد).
   if (await emailExists(env.DB, email)) {
+    await hashPassword(body.password as string, policy);
     throw new HttpError(409, 'SIGNUP_UNAVAILABLE', 'تعذّر إنشاء الحساب بهذا البريد. إن كان لديك حساب قائم جرّب تسجيل الدخول، أو استخدم بريدًا آخر.');
   }
 
@@ -115,7 +128,7 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
     throw err;
   }
 
-  const ttl = Number(env.SESSION_TTL_DAYS) || 30;
+  const ttl = sessionTtlDays(env);
   const token = randomToken(32);
   await createSession(env.DB, userId, token, ttl, ipHash, req.headers.get('User-Agent'));
   await revokeExcessSessions(env.DB, userId);
@@ -185,7 +198,7 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
   }
 
   await resetFailedLogin(env.DB, row.id);
-  const ttl = Number(env.SESSION_TTL_DAYS) || 30;
+  const ttl = sessionTtlDays(env);
   const token = randomToken(32);
   await createSession(env.DB, row.id, token, ttl, ipHash, req.headers.get('User-Agent'));
   await revokeExcessSessions(env.DB, row.id);
@@ -312,11 +325,51 @@ export async function adminAudit(req: Request, env: Env, requestId: string, user
     throw new HttpError(403, 'FORBIDDEN', 'لا تملك صلاحية الوصول إلى سجل التدقيق.');
   }
   const url = new URL(req.url);
-  const limit = Math.min(Number(url.searchParams.get('limit')) || 20, 100);
+  // حدّ أدنى 1: LIMIT -1 في SQLite تعني «بلا حدّ» فتُعيد السجل كاملًا.
+  const limit = Math.min(100, Math.max(1, Math.floor(Number(url.searchParams.get('limit')) || 20)));
   const rows = await env.DB.prepare(
     `SELECT id, action, target_type, result, created_at FROM admin_audit_logs ORDER BY created_at DESC LIMIT ?`,
   ).bind(limit).all();
   return json({ items: rows.results }, {}, requestId);
+}
+
+/** يلغي كل الجلسات الأخرى للمستخدم الحالي — بعد سرقة كوكي أو جهاز مشترك. */
+export async function revokeAllSessions(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const token = readCookie(req, cookieName(env));
+  if (!token) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
+  const revoked = await revokeOtherSessions(env, user.id, token);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: user.id, action: 'auth.sessions.revoke_all', targetType: 'user',
+    targetId: user.id, requestId, result: 'success', after: { revoked },
+  });
+  return json({ ok: true, revoked }, {}, requestId);
+}
+
+/** تغيير كلمة المرور: يتحقق من القديمة، ويطرد كل الجلسات الأخرى فورًا. */
+export async function changePassword(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const policy = policyFor(env);
+  const body = await readJson<{ currentPassword?: string; newPassword?: string }>(req);
+  const currentPassword = typeof body.currentPassword === 'string' ? body.currentPassword : '';
+  const row = await findUserById(env.DB, user.id);
+  if (!row) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
+  const ok = currentPassword ? await verifyPassword(currentPassword, row.password_hash, policy) : false;
+  if (!ok) {
+    await registerFailedLogin(env.DB, row.id);
+    throw new HttpError(401, 'INVALID_CREDENTIALS', GENERIC_AUTH_FAIL);
+  }
+  const pwProblems = passwordProblems(body.newPassword, { email: row.email_normalized });
+  if (pwProblems.length) {
+    throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
+  }
+  await updatePasswordHash(env.DB, row.id, await hashPassword(body.newPassword as string, policy));
+  await resetFailedLogin(env.DB, row.id);
+  const token = readCookie(req, cookieName(env));
+  if (token) await revokeOtherSessions(env, row.id, token);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: row.id, action: 'auth.password.change', targetType: 'user',
+    targetId: row.id, requestId, result: 'success',
+  });
+  return json({ ok: true }, {}, requestId);
 }
 
 export { apiError, normalizeEmail as _normalizeEmail };

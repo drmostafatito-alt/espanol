@@ -12,6 +12,7 @@
    ========================================================================== */
 import type { Env, SessionUser } from '../types';
 import { HttpError, json, readJson } from '../lib/http';
+import { rateLimitOrThrow } from '../lib/rate-limit';
 import { ulid } from '../lib/ids';
 import {
   isCardKind, isRating, resolveLimits, scheduleCard, utcDayStart,
@@ -185,14 +186,18 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
     .filter(c => entries.has(c.item_id))
     .map(c => publicCard(c, entries.get(c.item_id)!, c.card_kind as CardKind, user.explanationStyle));
 
+  // due_now يُحسب بعد ربط المداخل فقط: صف جدول بلا مدخل معجمي (يتيم)
+  // لا يُعرض أبدًا، فعدّه مستحقًا كان يكذب على سبب الفراغ («وصلت حدّك» بلا بطاقات).
   const totals = await env.DB.prepare(
     `SELECT COUNT(*) AS total,
-            SUM(CASE WHEN due_at <= ? AND state != 'suspended' THEN 1 ELSE 0 END) AS due_now,
-            SUM(CASE WHEN state = 'suspended' THEN 1 ELSE 0 END) AS suspended
-     FROM review_schedule WHERE user_id = ?`,
+            SUM(CASE WHEN rs.due_at <= ? AND rs.state != 'suspended' AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS due_now,
+            SUM(CASE WHEN rs.due_at <= ? AND rs.state != 'suspended' AND e.id IS NULL THEN 1 ELSE 0 END) AS due_orphaned,
+            SUM(CASE WHEN rs.state = 'suspended' THEN 1 ELSE 0 END) AS suspended
+     FROM review_schedule rs LEFT JOIN vocabulary_entries e ON e.id = rs.item_id
+     WHERE rs.user_id = ?`,
   )
-    .bind(nowIso, user.id)
-    .first<{ total: number; due_now: number | null; suspended: number | null }>();
+    .bind(nowIso, nowIso, user.id)
+    .first<{ total: number; due_now: number | null; due_orphaned: number | null; suspended: number | null }>();
 
   return json(
     {
@@ -207,7 +212,11 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
         reviewsRemaining: Math.max(0, limits.reviewsPerDay - counts.reviewCount),
         dayBoundary: 'UTC',
       },
-      emptyReason: cards.length === 0 ? (Number(totals?.due_now ?? 0) > 0 ? 'DAILY_LIMIT_REACHED' : 'NOTHING_DUE') : null,
+      emptyReason: cards.length === 0
+        ? (Number(totals?.due_now ?? 0) > 0
+            ? 'DAILY_LIMIT_REACHED'
+            : Number(totals?.due_orphaned ?? 0) > 0 ? 'NO_VALID_CARDS' : 'NOTHING_DUE')
+        : null,
     },
     { headers: { 'Cache-Control': 'no-store' } },
     requestId,
@@ -216,6 +225,7 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
 
 /** POST /api/review/answers — تقييم واحد، والخادم يحسب الجدولة */
 export async function submitReview(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  await rateLimitOrThrow(env.DB, `review:user:${user.id}`, 120, 60);
   const body = await readJson<{ clientEventId?: string; cardId?: string; rating?: string; responseMs?: number }>(req);
   const eventId = typeof body.clientEventId === 'string' ? body.clientEventId : '';
   if (!EVENT_ID_RE.test(eventId)) throw new HttpError(400, 'INVALID_EVENT_ID', 'معرّف الحدث غير صالح.');
@@ -362,7 +372,9 @@ export async function submitReview(req: Request, env: Env, requestId: string, us
   }
 
   const remaining = await env.DB.prepare(
-    `SELECT COUNT(*) AS n FROM review_schedule WHERE user_id = ? AND state != 'suspended' AND due_at <= ?`,
+    `SELECT COUNT(*) AS n FROM review_schedule rs
+     LEFT JOIN vocabulary_entries e ON e.id = rs.item_id
+     WHERE rs.user_id = ? AND rs.state != 'suspended' AND rs.due_at <= ? AND e.id IS NOT NULL`,
   )
     .bind(user.id, new Date().toISOString())
     .first<{ n: number }>();

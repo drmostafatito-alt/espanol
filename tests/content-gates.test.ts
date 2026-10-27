@@ -98,6 +98,19 @@ describe('بوّابات المحتوى', () => {
         }
       });
 
+      it('كل درس قابل للنجاح: معيار الإتقان لا يطلب أكثر من التمارين المُصحَّحة', () => {
+        for (const L of lessons) {
+          const graded = (L.exercises ?? []).filter((ex: any) => gradingModeOf(ex.type) === 'graded');
+          const types = new Set((L.exercises ?? []).map((ex: any) => ex.type));
+          const mastery = L.mastery ?? {};
+          expect(mastery.minCorrectExercises ?? 0, `${L.slug}: minCorrectExercises`).toBeLessThanOrEqual(graded.length);
+          for (const t of mastery.requiredExerciseTypes ?? []) {
+            expect(types.has(t), `${L.slug}: requiredExerciseTypes يطلب ${t} غير الموجود`).toBe(true);
+          }
+          expect(graded.length, `${L.slug}: بلا تمارين مُصحَّحة إطلاقًا`).toBeGreaterThan(0);
+        }
+      });
+
       it('حالة الصوت معلنة: لا مفتاح صوتي بلا بادئة pending (لم يُنتج أي ملف)', () => {
         for (const L of lessons) {
           for (const sc of L.scenarios ?? []) {
@@ -128,6 +141,35 @@ describe('بوّابات المحتوى', () => {
     };
     expect(res.errors).toEqual([]);
     expect(res.stats.authoredLessons).toBeGreaterThanOrEqual(16);
+  });
+
+  it('صرامة التشكيل (strictAccent) مقصورة على أزواج دنيا مثبتة بدليل محتوى', () => {
+    // التصحيح الافتراضي متسامح مع النبرة. strictAccent يُسمح به فقط حيث
+    // تكون الإجابة المقبولة عضوًا في زوج دنيا (si/sí…) والتعليم يثبت أن
+    // التمييز هو هدف السؤال. أي إضافة جديدة هنا تتطلب دليلًا لغويًا وتحديثًا
+    // مقصودًا لهذه القائمة — لا صرامة صامتة جديدة.
+    const PAIR_MEMBERS = new Set([
+      'si', 'sí', 'tu', 'tú', 'el', 'él', 'mi', 'mí', 'se', 'sé', 'te', 'té',
+      'de', 'dé', 'mas', 'más', 'solo', 'sólo', 'aun', 'aún',
+      'papa', 'papá', 'pena', 'peña', 'sonar', 'soñar', 'oir', 'oír',
+      'modem', 'módem', 'ano', 'año',
+    ]);
+    const strictIds: string[] = [];
+    for (const dir of CONTENT_DIRS) {
+      for (const f of walk(join(ROOT, dir)).filter(x => basename(x).startsWith('lesson-'))) {
+        const L = JSON.parse(readFileSync(f, 'utf8')).lesson as Record<string, any>;
+        for (const ex of L.exercises ?? []) {
+          if (ex.answerKey?.strictAccent !== true) continue;
+          strictIds.push(ex.id);
+          const words = (ex.answerKey.accepted ?? []).flatMap((a: string) =>
+            String(a).toLowerCase().replace(/[.,;:!?¡¿"«»']/g, ' ').split(/\s+/));
+          expect(words.some((w: string) => PAIR_MEMBERS.has(w)), `${L.slug}/${ex.id}: strictAccent بلا عضو زوج دنيا`).toBe(true);
+        }
+      }
+    }
+    // القائمة المثبتة حاليًا: ex-b1-ind-2 فقط (si الشرطية، التعليم والشرح
+    // يصرّحان «بدون نبرة»). أي strictAccent جديد يجب أن يُضاف هنا بمراجعة لغوية.
+    expect(strictIds.sort()).toEqual(['ex-b1-ind-2']);
   });
 
   it('لا ادعاء تغطية CEFR كاملة من أسماء المستويات', () => {

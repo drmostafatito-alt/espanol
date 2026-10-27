@@ -44,18 +44,40 @@ describe('البحث الذكي — محرك البحث المحلي الشام�
     expect(fuiMatch).toBeDefined();
   });
 
-  it('5. اسم قاعدة نحوية: استخراج القاعدة والدرس المرتبط بها', () => {
-    const res = engine.search('gustar');
+  it('5. اسم قاعدة نحوية: استخراج القاعدة والدرس المرتبط بها (فهرس مرئي مُمرَّر للمحرك)', () => {
+    // المحرك نفسه بلا دروس في الفهرس المضمّن — الدروس تأتيه من الخادم
+    // بعد فلترة الرؤية. هنا نمرر فهرسًا مرئيًا صريحًا لاختبار المنطق.
+    const visibleEngine = new SearchEngine({
+      version: '1.0.0',
+
+      vocab: [],
+      forms: {},
+      lessons: [
+        { s: 'a1-gustar', t: 'الإعجاب والتفضيل', l: 'A1', u: null, o: 'أن يعبر المتعلم عن الإعجاب', g: ['gustar'], st: ['Me gusta el café'] },
+      ],
+      grammar: [{ t: 'gustar', l: 'A1', s: 'a1-gustar', a: 'الإعجاب والتفضيل' }],
+    });
+    const res = visibleEngine.search('gustar');
     expect(res.total).toBeGreaterThan(0);
-    const grammarOrLesson = res.results.find(r => r.kind === 'grammar' || r.kind === 'lesson' || r.titleEs?.includes('gustar'));
+    const grammarOrLesson = res.results.find(r => r.kind === 'grammar' || r.kind === 'lesson');
     expect(grammarOrLesson).toBeDefined();
+    expect(grammarOrLesson!.url).toBe('/learn/a1-gustar');
   });
 
-  it('6. مثال داخل درس: العثور على الدرس من خلال جملة مستهدفة', () => {
-    const res = engine.search('quedamos');
+  it('6. مثال داخل درس: العثور على الدرس من خلال جملة مستهدفة (فهرس مرئي مُمرَّر للمحرك)', () => {
+    const visibleEngine = new SearchEngine({
+      version: '1.0.0',
+
+      vocab: [],
+      forms: {},
+      lessons: [
+        { s: 'a1-cita', t: 'تحديد موعد', l: 'A1', u: null, o: 'أن يتفق المتعلم على موعد', g: [], st: ['Quedamos mañana', '¿A qué hora quedamos?'] },
+      ],
+      grammar: [],
+    });
+    const res = visibleEngine.search('quedamos');
     expect(res.total).toBeGreaterThan(0);
-    const lessonFound = res.results.some(r => r.kind === 'lesson' || r.kind === 'vocab' || r.kind === 'verb_form');
-    expect(lessonFound).toBe(true);
+    expect(res.results.some(r => r.kind === 'lesson' && r.id === 'lesson-a1-cita')).toBe(true);
   });
 
   it('7. كلمة غير موجودة: يعود بمصفوفة فارغة بلا خطأ وبلا اختلاق نتائج', () => {
@@ -110,6 +132,7 @@ describe('البحث الذكي — محرك البحث المحلي الشام�
     }
   });
 
+
   it('13. قائمة الدروس المسموحة تحجب روابط الدروس والقواعد غير المنشورة', () => {
     const gated = new SearchEngine({
       version: 'test',
@@ -126,6 +149,26 @@ describe('البحث الذكي — محرك البحث المحلي الشام�
       '/learn/published-lesson',
     ]);
     expect(gated.search('gustar', { kind: 'grammar', lessonSlugs: allowed }).results).toEqual([]);
+  });
+
+  it('14. المتجانسات بالتشكيل: البحث عن papa يعيد papa وpapá معًا', () => {
+    const titles = engine.search('papa', { limit: 50 }).results.map(r => r.titleEs);
+    expect(titles).toContain('papa');
+    expect(titles).toContain('papá');
+    const titlesAcc = engine.search('papá', { limit: 50 }).results.map(r => r.titleEs);
+    expect(titlesAcc).toContain('papá');
+    expect(titlesAcc).toContain('papa');
+  });
+
+  it('15. بحث عربي متعدد الكلمات: «صباح الخير» يجد buenos días', () => {
+    const res = engine.search('صباح الخير');
+    expect(res.results.some(r => r.titleEs === 'buenos días')).toBe(true);
+  });
+
+  it('16. فلتر المفردات يشمل صيغ الأفعال: hablamos مع kind=vocab', () => {
+    const res = engine.search('hablamos', { kind: 'vocab' });
+    expect(res.total).toBeGreaterThan(0);
+    expect(res.results.some(r => r.kind === 'verb_form' && r.lemma === 'hablar')).toBe(true);
   });
 
   it('11. أداء فائق السرعة: 100 استعلام خلال أقل من 100ms دون أي تجميد', () => {

@@ -1,3 +1,4 @@
+import { useAuthOptional } from '../state';
 import { Icon, type IconName } from '../components/icons';
 import { SafeImage } from '../components/ui';
 import { LANDING_TOPICS } from '../components/tracks';
@@ -11,6 +12,7 @@ const BENEFITS: { icon: IconName; title: string; text: string }[] = [
 ];
 
 export function Landing({ navigate }: { navigate: (to: string) => void }) {
+  const user = useAuthOptional()?.user ?? null;
   const scrollTo = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -25,10 +27,18 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
               دروس عملية ومحادثات من الحياة اليومية، من الصفر حتى مستوى متقدم.
             </p>
             <div className="hero-actions">
-              <button className="btn lg" onClick={() => navigate('/signup')}>
-                ابدأ التعلّم <Icon name="arrow-left" size={18} />
-              </button>
-              <button className="btn secondary lg" onClick={() => navigate('/login')}>تسجيل الدخول</button>
+              {user ? (
+                <button className="btn lg" onClick={() => navigate('/learn')}>
+                  متابعة التعلّم <Icon name="arrow-left" size={18} />
+                </button>
+              ) : (
+                <>
+                  <button className="btn lg" onClick={() => navigate('/signup')}>
+                    ابدأ التعلّم <Icon name="arrow-left" size={18} />
+                  </button>
+                  <button className="btn secondary lg" onClick={() => navigate('/login')}>تسجيل الدخول</button>
+                </>
+              )}
             </div>
             <button className="hero-link" type="button" onClick={() => scrollTo('topics')}>
               أو استكشف المسارات أولًا
@@ -65,7 +75,7 @@ export function Landing({ navigate }: { navigate: (to: string) => void }) {
         <section className="section" id="topics" aria-labelledby="topics-title">
           <div className="section-head">
             <h2 id="topics-title">اختر مسارك التعليمي</h2>
-            <p className="small muted" style={{ margin: 0 }}>مسارات حقيقية من المحتوى المنشور — كل بطاقة تفتح دروسًا فعلية.</p>
+            <p className="small muted" style={{ margin: 0 }}>مسارات من محتوى المنصة — كل بطاقة تفتح بحثًا في دروس ومفردات ذلك المسار.</p>
           </div>
           <div className="topic-grid">
             {LANDING_TOPICS.map(topic => (

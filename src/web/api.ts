@@ -128,6 +128,7 @@ export const api = {
 
   // ---- المرحلة 2: التعلم ----
   progress: () => request<ProgressPayload>('/api/me/progress'),
+
   placementStart: () =>
     request<{
       attemptId: string;
@@ -210,7 +211,7 @@ export interface ReviewPayload {
     reviewsRemaining: number;
     dayBoundary: string;
   };
-  emptyReason: 'NOTHING_DUE' | 'DAILY_LIMIT_REACHED' | null;
+  emptyReason: 'NOTHING_DUE' | 'DAILY_LIMIT_REACHED' | 'NO_VALID_CARDS' | null;
 }
 
 export interface ReviewResult {

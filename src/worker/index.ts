@@ -8,7 +8,7 @@ import {
   HttpError, apiError, assertJsonContentType, corsHeaders, isOriginAllowed,
   json, newRequestId, readSessionToken, securityHeadersFor, isNonProductionEnv } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
-import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
+import { adminAudit, changePassword, login, logout, me, revokeAllSessions, signup, updateMe } from './routes/auth';
 import { getLesson, listPaths, reviewLesson, searchContent, setLessonPublished } from './routes/content';
 import { completeLesson, lessonSession, myProgress, startPlacementTest, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
@@ -73,6 +73,8 @@ const routes: Route[] = [
   route('POST', '/api/auth/signup', (req, env, ctx) => signup(req, env, ctx.requestId)),
   route('POST', '/api/auth/login', (req, env, ctx) => login(req, env, ctx.requestId)),
   route('POST', '/api/auth/logout', (req, env, ctx) => logout(req, env, ctx.requestId)),
+  route('POST', '/api/auth/change-password', (req, env, ctx) => changePassword(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/auth/sessions/revoke-all', (req, env, ctx) => revokeAllSessions(req, env, ctx.requestId, ctx.user!), 'session'),
   route('GET', '/api/auth/me', (req, env, ctx) => me(req, env, ctx.requestId)),
 
   route('PATCH', '/api/me', (req, env, ctx) => updateMe(req, env, ctx.requestId, ctx.user!), 'session'),

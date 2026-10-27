@@ -44,13 +44,19 @@ export async function createUser(
 }
 
 export async function registerFailedLogin(db: D1Database, userId: string): Promise<void> {
+  // القفل ينتهي فعلًا بانتهاء مدته: فشل واحد بعد انقضاء 15 دقيقة لا يعيد
+  // القفل فورًا — كان العدّاد لا يُصفَّر أبدًا إلا بدخول ناجح، فيبقى الحساب
+  // قابلًا للقفل الدائم بمحاولة خاطئة واحدة كل ربع ساعة.
   await db
     .prepare(
       `UPDATE users
-       SET failed_login_count = failed_login_count + 1,
-           locked_until = CASE WHEN failed_login_count + 1 >= 5
-                               THEN strftime('%Y-%m-%dT%H:%M:%fZ','now','+15 minutes')
-                               ELSE locked_until END
+       SET failed_login_count = CASE
+             WHEN locked_until IS NOT NULL AND locked_until <= strftime('%Y-%m-%dT%H:%M:%fZ','now') THEN 1
+             ELSE failed_login_count + 1 END,
+           locked_until = CASE
+             WHEN locked_until IS NOT NULL AND locked_until <= strftime('%Y-%m-%dT%H:%M:%fZ','now') THEN NULL
+             WHEN failed_login_count + 1 >= 5 THEN strftime('%Y-%m-%dT%H:%M:%fZ','now','+15 minutes')
+             ELSE locked_until END
        WHERE id = ?`,
     )
     .bind(userId)
@@ -150,6 +156,18 @@ export async function touchSession(env: Env, token: string): Promise<void> {
     `UPDATE sessions SET last_seen_at = strftime('%Y-%m-%dT%H:%M:%fZ','now')
      WHERE id = ? AND (last_seen_at IS NULL OR last_seen_at < strftime('%Y-%m-%dT%H:%M:%fZ','now','-5 minutes'))`,
   ).bind(id).run();
+}
+
+/** يلغي كل جلسات المستخدم عدا الجلسة الحالية — لطرد جلسة مسروقة بعد تغيير كلمة المرور. */
+export async function revokeOtherSessions(env: Env, userId: string, currentToken: string): Promise<number> {
+  const keepId = await sha256Hex(currentToken);
+  const res = await env.DB.prepare(
+    `UPDATE sessions SET revoked_at = strftime('%Y-%m-%dT%H:%M:%fZ','now')
+     WHERE user_id = ? AND revoked_at IS NULL AND id <> ?`,
+  )
+    .bind(userId, keepId)
+    .run();
+  return Number(res.meta?.changes ?? 0);
 }
 
 /** سقف الجلسات النشطة لكل مستخدم: يمنع تراكم الرموز المسروقة إلى ما لا نهاية. */

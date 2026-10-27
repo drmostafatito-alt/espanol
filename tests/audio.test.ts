@@ -51,6 +51,8 @@ function makeService(opts: {
   resolve?: (k: string) => string | null;
   voices?: { lang: string; name: string }[];
   withSpeech?: boolean;
+  /** يُستدعى عند قائمة أصوات فارغة؛ يملأ الأصوات المتأخرة ثم يعيد التحميل */
+  awaitVoices?: () => Promise<boolean>;
 } = {}) {
   const created: FakeAudio[] = [];
   const spoken: SpeechSynthesisUtteranceLike[] = [];
@@ -59,6 +61,7 @@ function makeService(opts: {
     speak: (u) => spoken.push(u),
     cancel: () => { cancelled++; },
     getVoices: () => opts.voices ?? [],
+    awaitVoices: opts.awaitVoices,
   };
   const svc = new AudioService({
     createAudio: (url) => {
@@ -135,6 +138,35 @@ describe('AudioService — عقد الصوت', () => {
     expect(r.ok).toBe(false);
     expect(r.error).toBe('NO_VOICE');
     expect(r.messageAr).toMatch(/صوتًا إسبانيًا/);
+  });
+
+  it('قائمة أصوات فارغة ثم تحميل بلا إسباني → NO_VOICE بعد الانتظار', async () => {
+    const voices: { lang: string; name: string }[] = [];
+    const { svc } = makeService({
+      voices,
+      awaitVoices: async () => {
+        voices.push({ lang: 'en-US', name: 'English' });
+        return true;
+      },
+    });
+    const r = await svc.play(cue('pending/x'));
+    expect(r.ok).toBe(false);
+    expect(r.error).toBe('NO_VOICE');
+  });
+
+  it('قائمة أصوات فارغة ثم تحميل صوت إسباني → يُنطق ولا يُرفض', async () => {
+    const voices: { lang: string; name: string }[] = [];
+    const { svc, spoken } = makeService({
+      voices,
+      awaitVoices: async () => {
+        voices.push({ lang: 'es-ES', name: 'Spanish' });
+        return true;
+      },
+    });
+    const r = await svc.play(cue('pending/x'));
+    expect(r.ok).toBe(true);
+    expect(r.source).toBe('speech');
+    expect(spoken).toHaveLength(1);
   });
 
   it('بلا speechSynthesis → NOT_SUPPORTED برسالة مفهومة', async () => {

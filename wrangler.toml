@@ -23,7 +23,9 @@ MEDIA_ORIGIN = "http://localhost:8787/media"
 # قياس workerd الفعلي في reports/kdf-benchmark.md: 30k ≈ 5ms، و600k ≈ 107ms (متطلب OWASP).
 # حد الخطة المجانية 10ms CPU ⇒ 30k أقصى ما يمكن مع هامش. هذا حدّ منصة لا اختيار تصميمي.
 PBKDF2_ITERATIONS = "30000"
-# باب أمان: التسجيل العام يُفتح صراحةً فقط. اتركه "false" في الإنتاج حتى يُعتمد حل تخزين كلمات مرور.
-ALLOW_PUBLIC_SIGNUP = "true"
+# باب أمان: الافتراضي الملتزَم مغلق. الكود يفشل مغلقًا أيضًا، لكن هذا الملف هو ما
+# سيُنشر بأمر `wrangler deploy` افتراضيًا، فلا يجوز أن يفتح التسجيل العام وحده.
+# فتح التسجيل محليًا فقط يكون عبر `.dev.vars` (خارج Git، انظر README §3) — لا هنا.
+ALLOW_PUBLIC_SIGNUP = "false"
 # PASSWORD_PEPPER ليس هنا: سر عبر `wrangler secret put PASSWORD_PEPPER` (إلزامي، ≥32 حرفًا)
 SESSION_TTL_DAYS = "30"
