@@ -49,27 +49,106 @@ const n = (v) => (v === null || v === undefined || Number.isNaN(Number(v)) ? 'NU
  * يبني كل أوامر الاستيراد من مجلد ملفات المحتوى.
  * @returns {{ statements: string[], answers: Record<string, unknown>, counters: Record<string, number>, errors: string[] }}
  */
-export function buildContentPlan(dir, { existingVersions = {} } = {}) {
+const walkJson = (d) => readdirSync(d, { withFileTypes: true }).flatMap(ent => {
+  const full = join(d, ent.name);
+  if (ent.isDirectory()) return walkJson(full);
+  return ent.name.endsWith('.json') ? [full] : [];
+});
+const loadJson = (f) => JSON.parse(readFileSync(f, 'utf8'));
+const foldAccents = (v) => String(v).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+const stripOuterPunctuation = (v) => String(v).trim().replace(/^[¿¡"'«»]+/, '').replace(/[?!.…"'"«»]+$/, '').trim();
+
+/**
+ * فهرس حلّ الكلمات ⇒ معرّفاتها من جذور معجمية (مشترك بين بناء الخطة وجامع
+ * الروابط الشامل في VER-04). المطابقة الاحتياطية بلا تشكيل عند غياب الحرفية
+ * وبشرط عدم الغموض.
+ */
+export function buildLexiconIndex(lexRoots) {
+  const vocabIdByNormalized = new Map();
+  const foldedToId = new Map();
+  const foldedAmbiguous = new Set();
+  for (const root of lexRoots) {
+    for (const f of walkJson(root).filter(x => basename(x).startsWith('vocab-'))) {
+      for (const entry of loadJson(f).entries ?? []) {
+        if (!entry.normalized) continue;
+        vocabIdByNormalized.set(entry.normalized, stableId('voc', entry.normalized));
+        const folded = foldAccents(entry.normalized);
+        if (foldedAmbiguous.has(folded)) continue;
+        const prev = foldedToId.get(folded);
+        if (prev && prev !== entry.normalized) { foldedAmbiguous.add(folded); foldedToId.delete(folded); }
+        else foldedToId.set(folded, entry.normalized);
+      }
+    }
+  }
+  const resolve = (word) => {
+    const rawNorm = String(word).toLowerCase().trim();
+    let id = vocabIdByNormalized.get(rawNorm);
+    const norm = stripOuterPunctuation(rawNorm);
+    if (!id && norm !== rawNorm) id = vocabIdByNormalized.get(norm);
+    if (!id) {
+      const folded = foldedToId.get(foldAccents(norm));
+      if (folded) id = vocabIdByNormalized.get(folded);
+    }
+    return id ?? null;
+  };
+  return { vocabIdByNormalized, foldedToId, resolve };
+}
+
+/** عبارة إدخال رابط محروسة الوجود — نفس الشكل في الخطة والمرور النهائي */
+export function linkInsertStatement({ lessonId, entryId, role }) {
+  return `INSERT INTO lesson_vocabulary (lesson_id, entry_id, role)
+            SELECT ${q(lessonId)}, ${q(entryId)}, ${q(role)}
+            WHERE EXISTS (SELECT 1 FROM vocabulary_entries WHERE id = ${q(entryId)})
+              AND EXISTS (SELECT 1 FROM lessons WHERE id = ${q(lessonId)})
+            ON CONFLICT(lesson_id, entry_id) DO NOTHING`;
+}
+
+/**
+ * VER-04: كل روابط درس↔مفردة القابلة للحل من جذر محتوى كامل، بلا توليد أي
+ * عبارات محتوى. المستورِد ينفّذها كمرور نهائي بعد أي استدعاء، فلا يعود
+ * ترتيب مجلدات الاستيراد مؤثرًا في النتيجة.
+ */
+export function collectGlobalLinks(contentRoot) {
+  const index = buildLexiconIndex([contentRoot]);
+  const links = [];
+  let unresolved = 0;
+  for (const f of walkJson(contentRoot).filter(x => basename(x).startsWith('lesson-'))) {
+    const L = loadJson(f).lesson;
+    if (!L?.slug) continue;
+    const lessonId = stableId('lesson', L.slug);
+    for (const [words, role] of [[L.newVocabulary, 'new'], [L.reviewVocabulary, 'review']]) {
+      for (const w of words ?? []) {
+        const entryId = index.resolve(w);
+        if (!entryId) { unresolved++; continue; }
+        links.push({ lessonId, entryId, role });
+      }
+    }
+  }
+  return { links, unresolved };
+}
+
+export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = null } = {}) {
   // مسح متكرر: المحتوى مُنظَّم في مجلدات فرعية (a1/، travel/، …)، ودمج كل ملفات
   // paths.json يسمح لكل وحدة بإعلان مسارها دون ملف مركزي هش.
-  const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap(ent => {
-    const full = join(d, ent.name);
-    if (ent.isDirectory()) return walk(full);
-    return ent.name.endsWith('.json') ? [full] : [];
-  });
+  const walk = walkJson;
   const allFiles = walk(dir);
   const pathFiles = allFiles.filter(f => basename(f) === 'paths.json');
   const vocabFiles = allFiles.filter(f => basename(f).startsWith('vocab-'));
   const lessonFiles = allFiles.filter(f => basename(f).startsWith('lesson-'));
-  const load = (f) => JSON.parse(readFileSync(f, 'utf8'));
+  const load = loadJson;
 
   const statements = [];
   const answers = {}; // معرّف التمرين في القاعدة ⇒ الإجابة الصحيحة (للاختبارات فقط)
-  // خريطة الكلمة ⇒ معرّفها، مبنية من كل الحزم قبل معالجة الدروس حتى تُربط
-  // مفردات الدرس بمدخلاتها الفعلية.
-  const vocabIdByNormalized = new Map();
+  // خريطة الكلمة ⇒ معرّفها (AUD-07: من كل الجذور المعجمية لا مجلد الاستيراد)
+  const lexRoots = Array.isArray(lexiconDirs) && lexiconDirs.length ? lexiconDirs : [dir];
+  const { vocabIdByNormalized, foldedToId } = buildLexiconIndex(lexRoots);
+  // إحالات دروس لم تُحلّ — تُقرَّر ولا تُصمت عنها (كلمات بلا مدخل معجمي أصلًا)
+  const unresolvedVocabRefs = [];
   // روابط الدرس↔المفردات تُنفَّذ بعد إدخال المفردات (قيد المفتاح الأجنبي يمنع غير ذلك)
   const deferredVocabLinks = [];
+  // VER-04: الروابط بصيغة منظمة أيضًا — ليتحقق المستورِد من المنفَّذ فعليًا
+  // ويعيد تنفيذها في مرور نهائي بعد كل المجلدات (لا اعتماد على الترتيب)
+  const structuredLinks = [];
   const errors = [];
   const counters = { programs: 0, units: 0, lessons: 0, versions: 0, exercises: 0, options: 0, items: 0, vocab: 0, senses: 0, tags: 0 };
 
@@ -102,12 +181,6 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
     for (const u of p.units ?? []) {
       const key = `${p.slug}/${u.slug}`;
       unitLessonOrder.set(key, (u.lessons ?? []).filter(Boolean));
-    }
-  }
-
-  for (const file of vocabFiles) {
-    for (const entry of load(file).entries ?? []) {
-      if (entry.normalized) vocabIdByNormalized.set(entry.normalized, stableId('voc', entry.normalized));
     }
   }
 
@@ -218,11 +291,23 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
     // ربط مفردات الدرس بمدخلاتها (لتوليد بطاقات المراجعة بعد إتمام الدرس)
     const linkVocab = (words, role) => {
       for (const wRaw of words ?? []) {
-        const norm = String(wRaw).toLowerCase().trim();
-        const entryId = vocabIdByNormalized.get(norm);
-        if (!entryId) continue; // مفردة غير موجودة في حزم هذا المجلد — تحذير في المدقق
-        deferredVocabLinks.push(`INSERT INTO lesson_vocabulary (lesson_id, entry_id, role)
-            VALUES (${q(lessonId)}, ${q(entryId)}, ${q(role)}) ON CONFLICT(lesson_id, entry_id) DO NOTHING`);
+        const rawNorm = String(wRaw).toLowerCase().trim();
+        const norm = stripOuterPunctuation(rawNorm);
+        let entryId = vocabIdByNormalized.get(rawNorm) ?? vocabIdByNormalized.get(norm);
+        if (!entryId) {
+          const folded = foldedToId.get(foldAccents(norm));
+          if (folded) entryId = vocabIdByNormalized.get(folded);
+        }
+        if (!entryId) {
+          // كلمة بلا مدخل معجمي في أي مجلد: تُسجَّل في التقرير ولا تُختلَق لها بيانات
+          unresolvedVocabRefs.push({ lesson: L.slug, word: norm, role });
+          counters.vocabLinksUnresolved = (counters.vocabLinksUnresolved ?? 0) + 1;
+          continue;
+        }
+        // محروس بـEXISTS: ترتيب استيراد المجلدات لا يكسر FK إن جاءت الدروس
+        // قبل حزمة الكلمة المحالة إليها؛ إعادة الاستيراد تكمل الرابط لاحقًا.
+        deferredVocabLinks.push(linkInsertStatement({ lessonId, entryId, role }));
+        structuredLinks.push({ lessonId, entryId, role });
         counters.vocabLinks = (counters.vocabLinks ?? 0) + 1;
       }
     };
@@ -268,12 +353,35 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
 
       (entry.senses ?? []).forEach((sense) => {
         const senseId = stableId('sen', `${bundle.bundleSlug}/${entry.normalized}/${sense.senseNo}`);
-        statements.push(`INSERT INTO vocabulary_senses (id, entry_id, sense_no, meaning_ar_fusha, meaning_ar_eg, gloss_es, register, usage_note_ar, common_error_ar)
+        // AUD-09: جدول sentences كان يبقى فارغًا وexample_sentence_id كله NULL
+        // فظهرت كل بطاقة مراجعة بلا مثال. المثال بملف المفردات نفسه — يُستورَد
+        // الآن كجملة + ترجمتها ويُربط بالمعنى قبل إدخال المعنى (FK).
+        let exampleSentenceId = null;
+        const exampleEs = typeof sense.exampleEs === 'string' ? sense.exampleEs.trim() : '';
+        if (exampleEs) {
+          exampleSentenceId = stableId('snt', `vocab-example:${entry.normalized}:${sense.senseNo ?? 1}`);
+          const SREG = new Set(['neutral', 'informal', 'formal', 'colloquial_spain', 'colloquial_latam']);
+          const sReg = SREG.has(entry.register) ? entry.register : 'neutral';
+          statements.push(`INSERT INTO sentences (id, text_es, level_code, register, source_id)
+              VALUES (${q(exampleSentenceId)}, ${q(exampleEs)}, ${q(entry.level ?? null)}, ${q(sReg)}, ${q(sourceId)})
+              ON CONFLICT(id) DO UPDATE SET text_es=excluded.text_es, level_code=excluded.level_code`);
+          for (const [style, text] of [['fusha', sense.exampleAr], ['eg', sense.exampleArEg]]) {
+            if (typeof text === 'string' && text.trim()) {
+              statements.push(`INSERT INTO sentence_translations (id, sentence_id, locale, style, text, is_primary)
+                  VALUES (${q(stableId('snt', `vocab-example:${entry.normalized}:${sense.senseNo ?? 1}:${style}`))},
+                          ${q(exampleSentenceId)}, 'ar', ${q(style)}, ${q(text.trim())}, ${style === 'fusha' ? 1 : 0})
+                  ON CONFLICT(sentence_id, locale, style) DO UPDATE SET text=excluded.text`);
+            }
+          }
+          counters.sentences = (counters.sentences ?? 0) + 1;
+        }
+        statements.push(`INSERT INTO vocabulary_senses (id, entry_id, sense_no, meaning_ar_fusha, meaning_ar_eg, gloss_es, register, usage_note_ar, common_error_ar, example_sentence_id)
             VALUES (${q(senseId)}, ${q(entryId)}, ${n(sense.senseNo ?? 1)}, ${q(sense.meaningArFusha)},
                     ${q(sense.meaningArEg ?? null)}, ${q(sense.glossEs ?? null)}, ${q(entry.register ?? 'neutral')},
-                    ${q(sense.usageNoteAr ?? null)}, ${q(sense.commonErrorAr ?? null)})
+                    ${q(sense.usageNoteAr ?? null)}, ${q(sense.commonErrorAr ?? null)}, ${q(exampleSentenceId)})
             ON CONFLICT(entry_id, sense_no) DO UPDATE SET meaning_ar_fusha=excluded.meaning_ar_fusha,
-              meaning_ar_eg=excluded.meaning_ar_eg, usage_note_ar=excluded.usage_note_ar, common_error_ar=excluded.common_error_ar`);
+              meaning_ar_eg=excluded.meaning_ar_eg, usage_note_ar=excluded.usage_note_ar, common_error_ar=excluded.common_error_ar,
+              example_sentence_id=excluded.example_sentence_id`);
         counters.senses++;
       });
 
@@ -289,5 +397,5 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
 
   statements.push(...deferredVocabLinks);
 
-  return { statements, answers, counters, errors };
+  return { statements, answers, counters, errors, unresolvedVocabRefs, links: structuredLinks, linkStatements: deferredVocabLinks };
 }

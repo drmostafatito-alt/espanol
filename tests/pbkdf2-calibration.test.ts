@@ -47,7 +47,8 @@ describe('معايرة PBKDF2 (تقدير Node)', () => {
     ].join('\n');
 
     mkdirSync(join(process.cwd(), 'reports'), { recursive: true });
-    writeFileSync(join(process.cwd(), 'reports', 'pbkdf2-calibration.md'), md + '\n');
+    // AUD-20: أثر قياس يختلف باختلاف العتاد — ملف محلي مهمل من Git حتى لا توسّخ الاختبارات الشجرة
+    writeFileSync(join(process.cwd(), 'reports', 'pbkdf2-calibration.local.md'), md + '\n');
 
     expect(rows).toHaveLength(ITERATIONS.length);
     expect(rows[0]!.medianMs).toBeGreaterThan(0);

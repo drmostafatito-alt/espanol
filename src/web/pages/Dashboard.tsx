@@ -61,7 +61,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
 
   const loadReview = useCallback(() => {
     api
-      .reviewSession(1)
+      .reviewSession(0) // عدّادات فقط: بلا مسح بطاقات (AUD-18)
       .then(setReview)
       .catch(() => undefined); // طلب ثانوي: لا يعطّل اللوحة إطلاقًا
   }, []);
@@ -258,7 +258,7 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                 <EmptyState icon="tracks" title="لا مسارات منشورة بعد" description="سيظهر هنا كل مسار ينشره فريق المحتوى." />
               )}
               <div className="track-grid">
-                {(paths ?? []).map(p => {
+                {(paths ?? []).filter(p => p.lessons_count > 0).map(p => {
                   const visual = trackVisual(p.slug, p.title_ar);
                   return (
                     <button

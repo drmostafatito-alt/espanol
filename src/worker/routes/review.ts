@@ -47,6 +47,8 @@ interface EntryRow {
   meaning_ar_eg: string | null;
   usage_note_ar: string | null;
   common_error_ar: string | null;
+  example_es: string | null;
+  example_ar: string | null;
 }
 
 async function limitsFor(env: Env, userId: string) {
@@ -94,8 +96,8 @@ function publicCard(card: CardRow, entry: EntryRow, kind: CardKind, explanationS
       promptAr: entry.meaning_ar_fusha ?? '',
       promptHintAr: entry.pos ? `نوع الكلمة: ${entry.pos}` : null,
       revealEs: entry.headword_es,
-      exampleEs: null,
-      exampleAr: null,
+      exampleEs: entry.example_es ?? null,
+      exampleAr: entry.example_ar ?? null,
     };
   }
   // التعرف: تُعرض الكلمة الإسبانية ويُطلب استرجاع المعنى
@@ -108,15 +110,20 @@ function publicCard(card: CardRow, entry: EntryRow, kind: CardKind, explanationS
     revealArEg: explanationStyle === 'fusha' ? null : (entry.meaning_ar_eg ?? null),
     usageNoteAr: entry.usage_note_ar ?? null,
     commonErrorAr: entry.common_error_ar ?? null,
-    exampleEs: null,
-    exampleAr: null,
+    // AUD-09: المثال من جدول sentences المرتبط بالمعنى (يُستورَد الآن من الملفات)
+    exampleEs: entry.example_es ?? null,
+    exampleAr: entry.example_ar ?? null,
   };
 }
 
 /** GET /api/review/session — ما هو مستحق الآن، مع احترام الحدود اليومية */
 export async function reviewSession(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   const url = new URL(req.url);
-  const requested = Number(url.searchParams.get('limit'));
+  // تنبيه: غياب المعامل يختلف عن limit=0 —‏ Number(null) = 0 كان سيجعل كل جلسة «عدّادات فقط»
+  const rawLimit = url.searchParams.get('limit');
+  const requested = rawLimit === null ? NaN : Number(rawLimit);
+  // limit=0 صراحةً ⇒ عدّادات فقط (بطاقة اللوحة) بلا مسح واختيار بطاقات (AUD-18)
+  const countsOnly = Number.isFinite(requested) && requested === 0;
   const limit = Number.isFinite(requested) && requested > 0 ? Math.min(MAX_SESSION_CARDS, Math.floor(requested)) : MAX_SESSION_CARDS;
 
   const now = new Date();
@@ -125,7 +132,9 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
   const limits = await limitsFor(env, user.id);
   const counts = await todayCounts(env, user.id, dayStart);
 
-  const due = await env.DB.prepare(
+  const due = countsOnly
+    ? { results: [] as CardRow[] }
+    : await env.DB.prepare(
     `SELECT user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at, state, card_kind
      FROM review_schedule
      WHERE user_id = ? AND state != 'suspended' AND due_at <= ?
@@ -159,9 +168,12 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
     const placeholders = ids.map(() => '?').join(',');
     const rows = await env.DB.prepare(
       `SELECT e.id, e.headword_es, e.pos, e.level_code, e.ipa, e.pronunciation_hint_ar,
-              s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar
+              s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar,
+              ex.text_es AS example_es, tr.text AS example_ar
        FROM vocabulary_entries e
        LEFT JOIN vocabulary_senses s ON s.entry_id = e.id AND s.sense_no = 1
+       LEFT JOIN sentences ex ON ex.id = s.example_sentence_id
+       LEFT JOIN sentence_translations tr ON tr.sentence_id = ex.id AND tr.locale = 'ar' AND tr.style = 'fusha'
        WHERE e.id IN (${placeholders})`,
     )
       .bind(...ids)
@@ -279,35 +291,50 @@ export async function submitReview(req: Request, env: Env, requestId: string, us
     ? Math.max(0, Math.min(10 * 60_000, Math.floor(Number(body.responseMs))))
     : null;
 
-  // القيد الفريد هو حائط الحماية: إن سبق طلبٌ متزامن تخزين نفس الحدث، لا نُطبّق
-  // الجدولة مرة ثانية.
-  let inserted = false;
+  // AUD-14: الإدراج وتحديث الجدولة والإحصاء في batch ذرّي واحد.
+  // تحديث الجدولة مشروط بوجود سجلّنا نحن (reviewId) حتى لا تُطبَّق الجدولة
+  // إن خسر إدراجنا سباقًا متزامنًا لنفس clientEventId (ON CONFLICT DO NOTHING).
   try {
-    await env.DB.prepare(
-      `INSERT INTO srs_reviews
-         (id, client_event_id, user_id, item_type, item_id, card_kind, rating,
-          prev_state, prev_interval_days, prev_ease, prev_due_at,
-          next_state, next_interval_days, next_ease, next_due_at,
-          response_ms, scheduler_version, reviewed_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-       ON CONFLICT(user_id, client_event_id) DO NOTHING`,
-    )
-      .bind(
+    await env.DB.batch([
+      env.DB.prepare(
+        `INSERT INTO srs_reviews
+           (id, client_event_id, user_id, item_type, item_id, card_kind, rating,
+            prev_state, prev_interval_days, prev_ease, prev_due_at,
+            next_state, next_interval_days, next_ease, next_due_at,
+            response_ms, scheduler_version, reviewed_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(user_id, client_event_id) DO NOTHING`,
+      ).bind(
         reviewId, eventId, user.id, itemType, itemId, kind, RATING_CODE[body.rating],
         card.state, card.interval_days, card.ease, card.due_at,
         next.state, next.intervalDays, next.ease, next.dueAt,
         responseMs, SCHEDULER_VERSION, reviewedAt,
-      )
-      .run();
-    const check = await env.DB.prepare(`SELECT id FROM srs_reviews WHERE user_id = ? AND client_event_id = ?`)
-      .bind(user.id, eventId)
-      .first<{ id: string }>();
-    inserted = check?.id === reviewId;
+      ),
+      env.DB.prepare(
+        `UPDATE review_schedule
+           SET ease = ?, interval_days = ?, repetitions = ?, lapses = ?, due_at = ?, state = ?, last_reviewed_at = ?, last_quality = ?
+         WHERE user_id = ? AND item_type = ? AND item_id = ? AND card_kind = ?
+           AND EXISTS (SELECT 1 FROM srs_reviews WHERE id = ?)`,
+      ).bind(
+        next.ease, next.intervalDays, next.reps, next.lapses, next.dueAt, next.state, reviewedAt,
+        ratingToQuality(body.rating), user.id, itemType, itemId, kind, reviewId,
+      ),
+      env.DB.prepare(
+        `INSERT INTO user_stats (user_id, reviews_done, updated_at)
+         VALUES (?, 1, strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+         ON CONFLICT(user_id) DO UPDATE SET reviews_done = reviews_done + 1, updated_at = excluded.updated_at
+         WHERE EXISTS (SELECT 1 FROM srs_reviews WHERE id = ?)`,
+      ).bind(user.id, reviewId),
+    ]);
   } catch {
-    inserted = false;
+    throw new HttpError(500, 'REVIEW_WRITE_FAILED', 'تعذّر تسجيل المراجعة. لم يُحفظ أي تغيير — أعد المحاولة.');
   }
 
-  if (!inserted) {
+  const insertedRow = await env.DB.prepare(`SELECT id FROM srs_reviews WHERE id = ?`)
+    .bind(reviewId)
+    .first<{ id: string }>();
+  if (!insertedRow) {
+    // سباق متزامن لنفس الحدث: النتيجة المخزَّنة من الطلب الفائز، بلا تطبيق ثانٍ
     const replayRow = await env.DB.prepare(
       `SELECT next_state, next_interval_days, next_ease, next_due_at, reviewed_at
        FROM srs_reviews WHERE user_id = ? AND client_event_id = ?`,
@@ -333,26 +360,6 @@ export async function submitReview(req: Request, env: Env, requestId: string, us
     }
     throw new HttpError(500, 'REVIEW_WRITE_FAILED', 'تعذّر تسجيل المراجعة. لم يُحفظ أي تغيير — أعد المحاولة.');
   }
-
-  await env.DB.prepare(
-    `UPDATE review_schedule
-       SET ease = ?, interval_days = ?, repetitions = ?, lapses = ?, due_at = ?, state = ?, last_reviewed_at = ?, last_quality = ?
-     WHERE user_id = ? AND item_type = ? AND item_id = ? AND card_kind = ?`,
-  )
-    .bind(
-      next.ease, next.intervalDays, next.reps, next.lapses, next.dueAt, next.state, reviewedAt,
-      ratingToQuality(body.rating), user.id, itemType, itemId, kind,
-    )
-    .run();
-
-  // إحصاء الكلمات «المثبَّتة» يُحدَّث من الجدولة نفسها لا من تخمين
-  await env.DB.prepare(
-    `INSERT INTO user_stats (user_id, reviews_done, updated_at)
-     VALUES (?, 1, strftime('%Y-%m-%dT%H:%M:%fZ','now'))
-     ON CONFLICT(user_id) DO UPDATE SET reviews_done = reviews_done + 1, updated_at = excluded.updated_at`,
-  )
-    .bind(user.id)
-    .run();
 
   const remaining = await env.DB.prepare(
     `SELECT COUNT(*) AS n FROM review_schedule WHERE user_id = ? AND state != 'suspended' AND due_at <= ?`,
@@ -392,18 +399,20 @@ export async function startPack(req: Request, env: Env, requestId: string, user:
     .all<{ id: string }>();
 
   const now = new Date().toISOString();
+  // AUD-06: batch مجزّأ — الحزمة الكبيرة (585) كانت 585 استعلامًا متتاليًا
   let created = 0;
-  for (const e of entries.results) {
-    const res = await env.DB.prepare(
+  const stmts = entries.results.map(e =>
+    env.DB.prepare(
       `INSERT INTO review_schedule
          (user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at,
           card_kind, state, scheduler_version, created_at, origin_ref)
        VALUES (?, 'vocab', ?, 2.5, 0, 0, 0, ?, 'recognition', 'new', ?, ?, ?)
        ON CONFLICT(user_id, item_type, item_id) DO NOTHING`,
-    )
-      .bind(user.id, e.id, now, SCHEDULER_VERSION, now, `pack:${bundle.slug}`)
-      .run();
-    if (Number(res.meta?.changes ?? 0) > 0) created++;
+    ).bind(user.id, e.id, now, SCHEDULER_VERSION, now, `pack:${bundle.slug}`),
+  );
+  for (let i = 0; i < stmts.length; i += 50) {
+    const results = await env.DB.batch(stmts.slice(i, i + 50));
+    created += results.reduce((acc, r) => acc + (Number(r.meta?.changes ?? 0) > 0 ? 1 : 0), 0);
   }
 
   return json(

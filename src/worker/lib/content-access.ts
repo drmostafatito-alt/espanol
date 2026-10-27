@@ -7,9 +7,10 @@
    وفي كل استجابة تُوسَم بأنها «عينة غير مراجعة» — لا يمكن أن تمرّ كأنها نهائية.
    ========================================================================== */
 import type { Env } from '../types';
+import { isNonProductionEnv } from './http';
 
 export function allowUnreviewedContent(env: Env): boolean {
-  return env.ALLOW_UNREVIEWED_CONTENT === 'true' && env.ENVIRONMENT !== 'production';
+  return env.ALLOW_UNREVIEWED_CONTENT === 'true' && isNonProductionEnv(env);
 }
 
 export const UNREVIEWED_PROVENANCE = {

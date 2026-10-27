@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { api, ApiError, invalidateInFlightAuth, onUnauthorized, type ApiUser } from './api';
+import { bindPendingQueue, clearPendingQueue } from './pages/Review';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
 export function useRoute(): [string, (to: string) => void] {
@@ -74,6 +75,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (seq === seqRef.current) setLoading(false);
     }
   }, []);
+
+  // AUD-14: قائمة المراجعة المعلّقة مربوطة بهوية صاحبها وتُمسح عند الخروج
+  useEffect(() => {
+    if (user) bindPendingQueue(user.id);
+    else { clearPendingQueue(); bindPendingQueue(null); }
+  }, [user]);
 
   useEffect(() => {
     void refresh();

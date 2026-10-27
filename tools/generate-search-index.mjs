@@ -186,15 +186,16 @@ export function buildSearchIndex() {
     formsObj[k] = v;
   }
 
+  // VER-05: لا حقول متطايرة في الملف (generatedAt/buildMs كانا يجعلان كل توليد
+  // مختلف البايتات ولو تطابق المحتوى، فصارت بوابة حداثة CI «حمراء دائمًا»).
+  // الناتج الآن حتمي: نفس المحتوى المدخَل ⇒ نفس البايتات، وأي فرق = تغيير دلالي.
   const index = {
     version: '1.0.0',
-    generatedAt: new Date().toISOString(),
     stats: {
       vocabCount: vocabList.length,
       formsCount: Object.keys(formsObj).length,
       lessonsCount: lessons.length,
       grammarCount: grammarTopicsMap.size,
-      buildMs: Date.now() - startTime,
     },
     vocab: vocabList,
     forms: formsObj,
@@ -210,7 +211,7 @@ export function buildSearchIndex() {
     `${index.stats.vocabCount} مفردة، ` +
     `${index.stats.formsCount} صيغة مصرّفة، ` +
     `${index.stats.lessonsCount} درسًا، ` +
-    `${index.stats.grammarCount} موضوع قاعدة في ${index.stats.buildMs}ms.`
+    `${index.stats.grammarCount} موضوع قاعدة في ${Date.now() - startTime}ms.`
   );
 
   return index;

@@ -6,6 +6,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { makeHarness, VALID_EMAIL, type Harness } from './harness';
 import { gradeAnswer, gradingModeOf } from '../src/worker/lib/grading';
 import { correctAnswer, importExemplars } from './content-fixture';
+import { PLACEMENT_QUESTIONS } from '../src/worker/lib/placement-bank';
 
 const PW = 'Cairo2026learn';
 
@@ -486,135 +487,210 @@ describe('P: لوحة التقدم تُقرأ من الخادم', () => {
 });
 
 describe('PL: اختبار تحديد المستوى (Placement Test) وسلطة الخادم', () => {
-  it('يرفض المستوى غير الصالح برمز 400', async () => {
+  interface PQuestion { id: string; options: { id: string; text: string }[] }
+
+  async function startPlacement(): Promise<{ attemptId: string; questions: PQuestion[] }> {
+    const res = await h.call('/api/me/placement/start', { method: 'POST', cookie });
+    expect(res.status).toBe(200);
+    const data = await h.json<{ attemptId: string; questions: PQuestion[] }>(res);
+    expect(data.questions).toHaveLength(10);
+    return data;
+  }
+
+  /** الإجابة الصحيحة عبر مطابقة نص الخيار بمعرفة بنك الخادم (للاختبار فقط) */
+  function solve(questions: PQuestion[]): Record<string, string> {
+    const answers: Record<string, string> = {};
+    for (const q of questions) {
+      const bank = PLACEMENT_QUESTIONS.find(b => b.id === q.id)!;
+      const correctText = bank.options.find(o => o.key === bank.correctKey)!.text;
+      answers[q.id] = q.options.find(o => o.text === correctText)!.id;
+    }
+    return answers;
+  }
+
+  it('بدء الاختبار لا يسرّب أي علامة صحة للعميل', async () => {
+    const res = await h.call('/api/me/placement/start', { method: 'POST', cookie });
+    expect(res.status).toBe(200);
+    const raw = JSON.stringify(await h.json(res));
+    expect(raw).not.toContain('correct');
+    expect(raw).not.toContain('explanationAr');
+  });
+
+  it('يرفض الإرسال دون attemptId برمز 400 (لا درجة من العميل مهما ادّعى)', async () => {
     const res = await h.call('/api/me/placement', {
       method: 'POST',
       cookie,
-      body: JSON.stringify({ targetLevel: 'C2', answers: {} }),
+      body: JSON.stringify({ targetLevel: 'A2', score: 100, answersCount: 10 }),
     });
     expect(res.status).toBe(400);
     const body = await h.json(res);
-    expect(body.error.code).toBe('INVALID_LEVEL');
+    expect(body.error.code).toBe('ATTEMPT_REQUIRED');
   });
 
   it('الخادم يصحح الإجابات بنفسه ويمنح XP ويفتح الدروس عند النجاح', async () => {
-    const correctAnswers = {
-      '1': 'a',
-      '2': 'a',
-      '3': 'a',
-      '4': 'a',
-      '5': 'a',
-      '6': 'a',
-      '7': 'a',
-      '8': 'a',
-      '9': 'a',
-      '10': 'a',
-    };
-
+    const { attemptId, questions } = await startPlacement();
     const res = await h.call('/api/me/placement', {
       method: 'POST',
       cookie,
-      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+      body: JSON.stringify({ attemptId, answers: solve(questions) }),
     });
     expect(res.status).toBe(200);
     const data = await h.json(res);
     expect(data.passed).toBe(true);
     expect(data.score).toBe(100);
-    expect(data.targetLevel).toBe('A1');
-    expect(data.unlockedLevel).toBe('A1');
-    expect(data.xpAwarded).toBe(40);
+    // 100% ≥ عتبة A2 الخادمية (80) — المستوى يُشتق من الدرجة لا يختاره العميل
+    expect(data.targetLevel).toBe('A2');
+    expect(data.unlockedLevel).toBe('A2');
+    expect(data.xpAwarded).toBe(80);
+    expect(data.feedback).toHaveLength(10);
+    expect(data.review).toBeUndefined();
 
-    // التحقق من أن لوحة التقدم تعكس فتح المستوى ورصيد الـ XP
-    const progRes = await h.call('/api/me/progress', { cookie });
-    const prog = await h.json(progRes);
-    expect(prog.stats.xp_total).toBe(40);
-
-    // درس A1 أصبح متاحًا (غير مقفل)
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    expect(prog.stats.xp_total).toBe(80);
     const a1Lesson = prog.lessons.find((l: { slug: string }) => l.slug === 'a1-un-cafe-por-favor');
     expect(a1Lesson).toBeDefined();
     expect(a1Lesson.is_unlocked).toBe(true);
   });
 
   it('الخادم يتجاهل الدرجة المرسلة من العميل إذا كانت الإجابات خاطئة (منع التلاعب)', async () => {
-    const fakeAnswers = {
-      '1': 'wrong',
-      '2': 'wrong',
-    };
-
-    // العميل يحاول إرسال score: 100 للتلاعب
+    const { attemptId, questions } = await startPlacement();
+    const allWrong = Object.fromEntries(questions.map(q => [q.id, 'o_x_wrong']));
     const res = await h.call('/api/me/placement', {
       method: 'POST',
       cookie,
-      body: JSON.stringify({ targetLevel: 'A1', answers: fakeAnswers, score: 100 }),
+      body: JSON.stringify({ attemptId, answers: allWrong, score: 100, targetLevel: 'A2' }),
     });
     expect(res.status).toBe(200);
     const data = await h.json(res);
     expect(data.passed).toBe(false);
-    expect(data.score).toBe(0); // الخادم صحح الإجابات الفعلية ووجد 0 صحيحة
+    expect(data.score).toBe(0);
     expect(data.xpAwarded).toBe(0);
     expect(data.unlockedLevel).toBe('PREA1');
   });
 
-  it('يرفض درجة العميل عند غياب الإجابات (لا ثقة بالدرجة المرسلة)', async () => {
-    // محاولة اختراق: إرسال score:100 دون أي إجابة لفتح كل دروس المستوى
-    const res = await h.call('/api/me/placement', {
-      method: 'POST',
-      cookie,
-      body: JSON.stringify({ targetLevel: 'A1', score: 100, answersCount: 10 }),
-    });
-    expect(res.status).toBe(400);
-    const body = await h.json(res);
-    expect(body.error.code).toBe('ANSWERS_REQUIRED');
+  it('محاولة مستخدمة لا تُسلَّم مرتين (409)', async () => {
+    const { attemptId, questions } = await startPlacement();
+    const body = JSON.stringify({ attemptId, answers: solve(questions) });
+    const first = await h.call('/api/me/placement', { method: 'POST', cookie, body });
+    expect(first.status).toBe(200);
+    const second = await h.call('/api/me/placement', { method: 'POST', cookie, body });
+    expect(second.status).toBe(409);
+    expect((await h.json(second)).error.code).toBe('ATTEMPT_USED');
   });
 
-  it('درجة العميل وحدها لا تمنح XP ولا تفتح الدروس', async () => {
-    const before = await h.json(await h.call('/api/me/progress', { cookie }));
+  it('استراتيجية «أول خيار دائمًا» العمياء لا تستطيع الاجتياز (AUD-05)', async () => {
+    // أربع محاولات × عشرة أسئلة (داخل سقف بدء المحاولات): إن بقي الصحيح في
+    // موضع ثابت لفازت بـ100%. التوقع العشوائي ~10 من 40.
+    let totalCorrect = 0;
+    for (let i = 0; i < 4; i++) {
+      const { attemptId, questions } = await startPlacement();
+      const blind = Object.fromEntries(questions.map(q => [q.id, q.options[0]!.id]));
+      const res = await h.call('/api/me/placement', {
+        method: 'POST',
+        cookie,
+        body: JSON.stringify({ attemptId, answers: blind }),
+      });
+      const data = await h.json(res);
+      totalCorrect += data.score / 10;
+    }
+    expect(totalCorrect).toBeLessThan(20);
+  });
+
+  it('VER-02: عيّنة الأسئلة تختلف بين المحاولات (لا مجموعة ثابتة للحصاد)', async () => {
+    const sets = [];
+    for (let i = 0; i < 3; i++) {
+      const { questions } = await startPlacement();
+      sets.push(questions.map(q => q.id).sort().join(','));
+    }
+    expect(new Set(sets).size).toBeGreaterThan(1);
+  });
+
+  it('VER-02: استجابة التسليم لا تحمل أي قناة حصاد (لا نص صحيح ولا علم صحة)', async () => {
+    const { attemptId, questions } = await startPlacement();
     const res = await h.call('/api/me/placement', {
-      method: 'POST',
-      cookie,
-      body: JSON.stringify({ targetLevel: 'A2', score: 100 }),
+      method: 'POST', cookie,
+      body: JSON.stringify({ attemptId, answers: Object.fromEntries(questions.map(q => [q.id, q.options[0]!.id])) }),
     });
-    expect(res.status).toBe(400);
-    const after = await h.json(await h.call('/api/me/progress', { cookie }));
-    expect(after.stats.xp_total).toBe(before.stats.xp_total);
+    expect(res.status).toBe(200);
+    const data = await h.json(res);
+    const raw = JSON.stringify(data);
+    expect(raw).not.toContain('correctText');
+    expect(raw).not.toContain('"correct"');
+    expect(data.feedback).toHaveLength(10);
+    for (const f of data.feedback) expect(Object.keys(f).sort()).toEqual(['explanationAr', 'id']);
+    // ولا شرح من شروح المحاولة يذكر نص الخيار الصحيح لسؤاله
+    for (const f of data.feedback) {
+      const bank = PLACEMENT_QUESTIONS.find(b => b.id === f.id)!;
+      const correctText = bank.options.find(o => o.key === bank.correctKey)!.text;
+      expect(f.explanationAr.toLowerCase()).not.toContain(correctText.toLowerCase());
+    }
+  });
+
+  it('VER-02: حصاد محاولة أولى كاملة القراءة لا ينقل أي إجابة للثانية', async () => {
+    // المهاجم يقرأ كل بايت في استجابة التسليم الأولى ثم يبني «معرفة»:
+    // نتحقق أن الاستجابة لا تربط أي سؤال بخياره الصحيح بأي تمثيل.
+    const first = await startPlacement();
+    const res1 = await h.call('/api/me/placement', {
+      method: 'POST', cookie,
+      body: JSON.stringify({ attemptId: first.attemptId, answers: solve(first.questions) }),
+    });
+    const r1 = await h.json(res1);
+    expect(r1.passed).toBe(true); // الحل بمعرفة حقيقية يعمل
+    // المحاولة الثانية بمستخدم جديد لا يعرف شيئًا إلا ما في الاستجابة:
+    // لا يوجد فيها ما يُبنى عليه اختيار — أول-خيار أعمى يرسب كما قبل.
+    const other = await signup(h, 'harvester@example.com');
+    const st2 = await h.json<{ attemptId: string; questions: PQuestion[] }>(
+      await h.call('/api/me/placement/start', { method: 'POST', cookie: other }),
+    );
+    const blind2 = Object.fromEntries(st2.questions.map(q => [q.id, q.options[0]!.id]));
+    const res2 = await h.call('/api/me/placement', {
+      method: 'POST', cookie: other,
+      body: JSON.stringify({ attemptId: st2.attemptId, answers: blind2 }),
+    });
+    const r2 = await h.json(res2);
+    expect(r2.xpAwarded).toBe(0);
+    expect(r2.passed).toBe(false);
+  });
+
+  it('VER-02: سقف بدء المحاولات 5 في الساعة (429 بعدها)', async () => {
+    for (let i = 0; i < 5; i++) await startPlacement();
+    const sixth = await h.call('/api/me/placement/start', { method: 'POST', cookie });
+    expect(sixth.status).toBe(429);
+    expect((await h.json(sixth)).error.code).toBe('PLACEMENT_RATE_LIMITED');
+  });
+
+  it('VER-10: تسليمان متزامنان لنفس المحاولة — واحد 200 والآخر 409 وXP مرة واحدة', async () => {
+    const { attemptId, questions } = await startPlacement();
+    const body = JSON.stringify({ attemptId, answers: solve(questions) });
+    const [a, b] = await Promise.all([
+      h.call('/api/me/placement', { method: 'POST', cookie, body }),
+      h.call('/api/me/placement', { method: 'POST', cookie, body }),
+    ]);
+    expect([a.status, b.status].sort()).toEqual([200, 409]);
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    expect(prog.stats.xp_total).toBe(80);
   });
 
   it('منع تكرار منح XP عند إعادة اجتياز الاختبار لنفس المستوى (Idempotency)', async () => {
-    const correctAnswers = {
-      '1': 'a',
-      '2': 'a',
-      '3': 'a',
-      '4': 'a',
-      '5': 'a',
-      '6': 'a',
-      '7': 'a',
-      '8': 'a',
-      '9': 'a',
-      '10': 'a',
-    };
-
-    // المحاولة الأولى
-    const res1 = await h.call('/api/me/placement', {
-      method: 'POST',
-      cookie,
-      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    const first = await startPlacement();
+    const r1 = await h.call('/api/me/placement', {
+      method: 'POST', cookie,
+      body: JSON.stringify({ attemptId: first.attemptId, answers: solve(first.questions) }),
     });
-    const d1 = await h.json(res1);
-    expect(d1.xpAwarded).toBe(40);
+    const d1 = await h.json(r1);
+    expect(d1.xpAwarded).toBe(80);
 
-    // المحاولة الثانية لنفس المستوى
-    const res2 = await h.call('/api/me/placement', {
-      method: 'POST',
-      cookie,
-      body: JSON.stringify({ targetLevel: 'A1', answers: correctAnswers }),
+    const second = await startPlacement();
+    const r2 = await h.call('/api/me/placement', {
+      method: 'POST', cookie,
+      body: JSON.stringify({ attemptId: second.attemptId, answers: solve(second.questions) }),
     });
-    const d2 = await h.json(res2);
+    const d2 = await h.json(r2);
     expect(d2.passed).toBe(true);
     expect(d2.xpAwarded).toBe(0); // لم يحصل على نقاط مضاعفة
 
-    const progRes = await h.call('/api/me/progress', { cookie });
-    const prog = await h.json(progRes);
-    expect(prog.stats.xp_total).toBe(40);
+    const prog = await h.json(await h.call('/api/me/progress', { cookie }));
+    expect(prog.stats.xp_total).toBe(80);
   });
 });
 

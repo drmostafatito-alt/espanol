@@ -2,8 +2,7 @@ import type { Env, SessionUser } from '../types';
 import {
   HttpError, apiError, json, readJson,
   serializeSessionCookie, clearSessionCookies, readSessionToken,
-  requestIsSecure, cookieName, cookieAttrs, readCookie,
-} from '../lib/http';
+  requestIsSecure, cookieName, cookieAttrs, readCookie, isNonProductionEnv } from '../lib/http';
 import { randomToken, sha256Hex, hmacSha256Hex } from '../lib/crypto';
 import {
   hashPassword, verifyPassword, needsRehash, passwordProblems, resolvePolicy,
@@ -44,6 +43,8 @@ async function clientIpHash(req: Request, pepper: string, environment: string): 
  * لا يقلّ أبدًا عن 1.
  */
 function signupRateLimit(env: Env): number {
+  // AUD-19: التجاوز للتطوير/الاختبار فقط — في الإنتاج يبقى الحد المعتمد (10) مهما عيّن المتغير
+  if (!isNonProductionEnv(env)) return 10;
   const raw = Number(env.SIGNUP_RATE_LIMIT_PER_HOUR);
   if (!Number.isFinite(raw) || raw <= 0) return 10;
   return Math.max(1, Math.floor(raw));
@@ -94,7 +95,7 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
 
   // رسالة موحّدة: لا نكشف إن كان البريد مسجلًا أم لا
   if (await emailExists(env.DB, email)) {
-    throw new HttpError(409, 'SIGNUP_UNAVAILABLE', 'تعذّر إنشاء الحساب بهذا البريد. جرّب بريدًا آخر أو استخدم «نسيت كلمة المرور».');
+    throw new HttpError(409, 'SIGNUP_UNAVAILABLE', 'تعذّر إنشاء الحساب بهذا البريد. إن كان لديك حساب قائم جرّب تسجيل الدخول، أو استخدم بريدًا آخر.');
   }
 
   const passwordHash = await hashPassword(body.password as string, policy);

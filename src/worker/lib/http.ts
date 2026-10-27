@@ -7,16 +7,31 @@ export const SECURITY_HEADERS: Record<string, string> = {
   'X-Content-Type-Options': 'nosniff',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'X-Frame-Options': 'DENY',
-  // لا نحتاج أي واجهة جهاز؛ الإذن الأضيق هو الصحيح افتراضًا
-  'Permissions-Policy': 'microphone=(), camera=(), geolocation=(), payment=(), usb=()',
+  // الميكروفون لنفس الأصل فقط: تمارين النطق تستخدم SpeechRecognition بالمتصفح
+  // (AUD-10 — كان microphone=() يعطّل الميزة عند الخدمة من Worker).
+  // بقية الواجهات لا نحتاجها؛ الإذن الأضيق هو الصحيح افتراضًا.
+  'Permissions-Policy': 'microphone=(self), camera=(), geolocation=(), payment=(), usb=()',
   'Cross-Origin-Opener-Policy': 'same-origin',
   'Cross-Origin-Resource-Policy': 'same-origin',
   'X-Permitted-Cross-Domain-Policies': 'none',
 };
 
+/**
+ * بيئة معرَّفة صراحة بأنها غير إنتاجية. الاتجاه الفاشل-بأمان: أي قيمة غير
+ * معروفة (معدومة/مخطوءة الكتابة) تُعامَل كإنتاج في كل البوابات المتصلة بها
+ * (تضمين الإطارات، خدمة المسودات، تجاوزات الحدود) — لا يصير خطأ كتابي واحد
+ * في إعداد النشر بابًا صامتًا لوضع التطوير في الإنتاج.
+ */
+export function isNonProductionEnv(env: Env): boolean {
+  return ['development', 'test'].includes(String(env.ENVIRONMENT ?? '').trim().toLowerCase());
+}
+
 /** HSTS يُرسَل فقط على HTTPS. */
 export function securityHeadersFor(env: Env): Record<string, string> {
   const h: Record<string, string> = { ...SECURITY_HEADERS };
+  // AUD-23: بيئات المعاينة/التطوير تعرض التطبيق داخل إطار، فتمنعها X-Frame-Options.
+  // التخفيف لغير الإنتاج فقط — إنتاجيًا يبقى DENY بلا تغيير.
+  if (isNonProductionEnv(env)) delete h['X-Frame-Options'];
   if (env.APP_ORIGIN?.startsWith('https://')) {
     h['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains';
   }

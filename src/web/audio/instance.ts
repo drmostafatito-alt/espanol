@@ -168,10 +168,17 @@ export const audioService = new AudioService({
     const v = variant ?? 'es-ES';
 
     // 1) فحص أصول الصوت المحلية المولدة مسبقًا بمحرك Piper
-    const local = ASSET_MAP[key];
-    if (local && local.file) {
+    // الدروس تمرّر المفاتيح ببادئة pending/ بينما المانيفست مفهرس بلا بادئة،
+    // فكانت التسجيلات الحقيقية القليلة لا تُشغَّل أبدًا. تُجرَّد البادئة للبحث
+    // فقط: مفتاح pending صار له ملف ⇒ يُشغَّل الملف (AUD-09).
+    // الملفات المحلية بلهجة es-ES فقط (public/audio/es-ES). لمستخدم es-419
+    // كان يُبنى مسار /audio/es-419/… فيفشل بـ404 ثم يرتد للنطق بعد مهلة؛
+    // الأصح الانتقال مباشرة لنطق الجهاز بصوت أمريكي لاتيني.
+    const manifestKey = key.startsWith('pending/') ? key.slice('pending/'.length) : key;
+    const local = ASSET_MAP[manifestKey];
+    if (local && local.file && v === 'es-ES') {
       const base = MEDIA_ORIGIN || '';
-      return `${base}/audio/${v}/${local.file}`;
+      return `${base}/audio/es-ES/${local.file}`;
     }
 
     // 2) المفاتيح المعلَّقة التي لم تولّد بعد أو مفاتيح TTS التلقائية: البديل المحلي speechSynthesis يعمل فورًا بلا طلب شبكة فاشل

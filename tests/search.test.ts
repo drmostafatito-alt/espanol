@@ -110,6 +110,24 @@ describe('البحث الذكي — محرك البحث المحلي الشام�
     }
   });
 
+  it('13. قائمة الدروس المسموحة تحجب روابط الدروس والقواعد غير المنشورة', () => {
+    const gated = new SearchEngine({
+      version: 'test',
+      vocab: [],
+      forms: {},
+      lessons: [
+        { s: 'published-lesson', t: 'درس منشور', l: 'A1', u: null, g: [], st: [] },
+        { s: 'draft-lesson', t: 'درس مسودة', l: 'A1', u: null, g: [], st: [] },
+      ],
+      grammar: [{ t: 'gustar', l: 'A1', s: 'draft-lesson', a: 'درس مسودة' }],
+    });
+    const allowed = new Set(['published-lesson']);
+    expect(gated.search('درس', { kind: 'lesson', lessonSlugs: allowed }).results.map(r => r.url)).toEqual([
+      '/learn/published-lesson',
+    ]);
+    expect(gated.search('gustar', { kind: 'grammar', lessonSlugs: allowed }).results).toEqual([]);
+  });
+
   it('11. أداء فائق السرعة: 100 استعلام خلال أقل من 100ms دون أي تجميد', () => {
     const queries = ['hola', 'casa', 'tiempo', 'hablar', 'comer', 'vivir', 'amigo', 'familia', 'madrid', 'gracias'];
     const t0 = Date.now();

@@ -16,6 +16,8 @@ import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
 import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
 import { scheduleCard, ratingToQuality, SCHEDULER_VERSION, type CardState } from '../lib/srs';
 import { searchEngine } from '../../shared/search-engine';
+import { shuffleSecure } from '../lib/random';
+import { PLACEMENT_QUESTIONS, PLACEMENT_STRATA, PLACEMENT_PASS_SCORE, PLACEMENT_A2_SCORE, PLACEMENT_MAX_STARTS_PER_HOUR, type PlacementQuestion } from '../lib/placement-bank';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -475,23 +477,27 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
       exercises: exercises.results.map(e => {
         const prompt = publicPrompt(e.prompt_json);
         const opts = optsByExercise.get(e.id) ?? [];
-        // نص النطق الاحتياطي: إن لم يُحدّده المحتوى صراحةً، يستخدمه الخادم من نص
-        // الإجابة الصحيحة — لا من أول خيار (قد يكون مشتِّتًا فيُنطق نص خاطئ).
-        let speechEs = prompt.speechEs;
-        const key = safeParse<AnswerKey>(e.answer_key_json);
-        const correctId = key?.correctOptionIds?.[0];
-        if (!speechEs) {
-          if (e.type === 'word_order' || e.type === 'dialogue_order') {
-            speechEs = key?.accepted?.[0] ?? null;
-          } else if (e.type === 'listen_choose' || e.type === 'choose_reply' || e.type === 'word_choice') {
-            speechEs = prompt.stemEs ?? opts.find(o => o.id === correctId)?.text ?? key?.accepted?.[0] ?? null;
-          } else {
-            speechEs = prompt.stemEs ?? key?.accepted?.[0] ?? null;
-          }
-        }
+        // VER-01: نص النطق يُؤخذ من المحتوى المعلن فقط (speechEs/stemEs) —
+        // لا يُشتق أبدًا من مفتاح الإجابة. الاشتقاق القديم كان يرسل الجملة
+        // الصحيحة كاملة لتمارين الترتيب (accepted[0]) ونص الخيار الصحيح
+        // لتمارين اختيار بلا سياق، أي الإجابة نفسها في حمولة ما قبل الإجابة.
+        // ما يبقى: المحفّز السمعي المؤلَّف (جملة الاستماع/الإملاء نفسها) لأنه
+        // مادة التمرين لا مفتاحه، ونطقه على الجهاز يتطلب نصه عند العميل.
+        let speechEs = prompt.speechEs ?? prompt.stemEs;
         if (speechEs && typeof speechEs === 'string') {
           speechEs = speechEs.replace(/_{2,}/g, '...').trim();
         }
+        // AUD-03 + DEFECT-1: ترتيب العرض يُخلط بعشوائية خادمية آمنة لكل جلسة.
+        // المحتوى المولَّد يضع الصحيح أولًا في أغلب الأسئلة وعناصر الترتيب
+        // بترتيب الجملة نفسه، فلا بد من الخلط — لكن الخلط الحتمي السابق ببذرة
+        // (userId+exerciseId) كان قابلًا لإعادة الحساب من بيانات يعرفها العميل.
+        // التصحيح بالمعرّف لا بالموضع، فيبقى صحيحًا لأي ترتيب يراه المتعلم
+        // دون أي حاجة لتخزين الترتيب المعروض.
+        const displayOptions = shuffleSecure(opts);
+        const rawItems = itemsByExercise.get(e.id) ?? [];
+        const displayItems = (e.type === 'word_order' || e.type === 'dialogue_order')
+          ? shuffleSecure(rawItems)
+          : rawItems;
         return {
           id: e.id,
           type: e.type,
@@ -499,8 +505,8 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
           hasGrader: gradingModeOf(e.type) === 'graded',
           ...prompt,
           speechEs,
-          options: opts,
-          items: itemsByExercise.get(e.id) ?? [],
+          options: displayOptions,
+          items: displayItems,
         };
       }),
       progress: progress ?? { status: 'not_started', best_accuracy: 0, attempts_count: 0, completed_at: null },
@@ -766,18 +772,20 @@ async function createCardsForLesson(env: Env, userId: string, lessonId: string):
     if (!rows.results.length) return 0;
 
     const now = new Date().toISOString();
+    // AUD-06: إدخالات مجزّأة بـbatch (استدعاء D1 واحد لكل 50) بدل استعلام لكل بطاقة
     let created = 0;
-    for (const r of rows.results) {
-      const res = await env.DB.prepare(
+    const stmts = rows.results.map(r =>
+      env.DB.prepare(
         `INSERT INTO review_schedule
            (user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at,
             card_kind, state, scheduler_version, created_at, origin_ref)
          VALUES (?, 'vocab', ?, 2.5, 0, 0, 0, ?, 'recognition', 'new', 1, ?, ?)
          ON CONFLICT(user_id, item_type, item_id) DO NOTHING`,
-      )
-        .bind(userId, r.entry_id, now, now, `lesson:${lessonId}`)
-        .run();
-      if (Number(res.meta?.changes ?? 0) > 0) created++;
+      ).bind(userId, r.entry_id, now, now, `lesson:${lessonId}`),
+    );
+    for (let i = 0; i < stmts.length; i += 50) {
+      const results = await env.DB.batch(stmts.slice(i, i + 50));
+      created += results.reduce((acc, r) => acc + (Number(r.meta?.changes ?? 0) > 0 ? 1 : 0), 0);
     }
     if (created > 0) {
       await env.DB.prepare(
@@ -792,6 +800,80 @@ async function createCardsForLesson(env: Env, userId: string, lessonId: string):
     // فشل توليد البطاقات لا يُسقط نجاح الدرس: التقدم محفوظ، والبطاقات تُستكمل لاحقًا
     return 0;
   }
+}
+
+
+/**
+ * سلسلة أيام التعلم من قائمة أيام نشاط (YYYY-MM-DD بالتوقيت العالمي).
+ * دالة نقية قابلة للاختبار: السلسلة الحالية تُحتسب من اليوم أو أمس (يوم
+ * لم ينتهِ بعد لا يكسر السلسلة)، والأطول من كل التاريخ.
+ * ملاحظة موثّقة (لا تغيير سلوك): حدود «اليوم» بالتوقيت العالمي UTC؛ لمتعلم
+ * في القاهرة (UTC+2) نشاط الساعة 1:00 صباحًا يُنسب لليوم السابق UTC.
+ * التحول لأيام المنطقة الزمنية للمستخدم تغيير منتج منفصل يحتاج قرار مالك
+ * (يؤثر في تعريف السلسلة القائمة) — خارج نطاق جولة الإصلاح الحالية.
+ */
+export function computeStreaks(activityDays: string[], todayUtc: string): { current: number; longest: number } {
+  const days = [...new Set(activityDays)].sort();
+  if (!days.length) return { current: 0, longest: 0 };
+  const dayMs = 86_400_000;
+  const toTs = (d: string) => Date.parse(`${d}T00:00:00Z`);
+  let longest = 1;
+  let run = 1;
+  for (let i = 1; i < days.length; i++) {
+    if (toTs(days[i]!) - toTs(days[i - 1]!) === dayMs) {
+      run++;
+      longest = Math.max(longest, run);
+    } else {
+      run = 1;
+    }
+  }
+  // السلسلة الحالية: من آخر يوم نشاط تراجعًا — بشرط قربه (اليوم/أمس)
+  const last = days[days.length - 1]!;
+  const gapFromToday = toTs(todayUtc) - toTs(last);
+  let current = 0;
+  if (gapFromToday === 0 || gapFromToday === dayMs) {
+    current = 1;
+    for (let i = days.length - 1; i > 0; i--) {
+      if (toTs(days[i]!) - toTs(days[i - 1]!) === dayMs) current++;
+      else break;
+    }
+  }
+  return { current, longest };
+}
+
+/** مؤشرات مشتقة من نشاط حقيقي (AUD-11) — أعمدة user_stats لهذه القيم لم يكن يحدّثها أي كود */
+async function derivedStats(env: Env, userId: string): Promise<{ streak_current: number; streak_longest: number; minutes_total: number; words_stable: number }> {
+  const days = await env.DB.prepare(
+    `SELECT DISTINCT d FROM (
+       SELECT substr(created_at, 1, 10) AS d FROM user_exercise_attempts WHERE user_id = ?
+       UNION SELECT substr(reviewed_at, 1, 10) AS d FROM srs_reviews WHERE user_id = ?
+       UNION SELECT substr(occurred_at, 1, 10) AS d FROM learning_events WHERE user_id = ?
+     ) WHERE d IS NOT NULL`,
+  )
+    .bind(userId, userId, userId)
+    .all<{ d: string }>();
+  const todayUtc = new Date().toISOString().slice(0, 10);
+  const streaks = computeStreaks(days.results.map(r => r.d), todayUtc);
+
+  const minutes = await env.DB.prepare(
+    `SELECT COALESCE(SUM(COALESCE(duration_ms, 0)), 0) AS ms FROM user_exercise_attempts WHERE user_id = ?`,
+  )
+    .bind(userId)
+    .first<{ ms: number }>();
+
+  const stable = await env.DB.prepare(
+    `SELECT COUNT(*) AS n FROM review_schedule
+     WHERE user_id = ? AND item_type = 'vocab' AND state = 'review' AND interval_days >= 21`,
+  )
+    .bind(userId)
+    .first<{ n: number }>();
+
+  return {
+    streak_current: streaks.current,
+    streak_longest: streaks.longest,
+    minutes_total: Math.round(Number(minutes?.ms ?? 0) / 60_000),
+    words_stable: Number(stable?.n ?? 0),
+  };
 }
 
 /** لوحة التقدم: كل رقم هنا من القاعدة، لا رقم محسوب في المتصفح */
@@ -917,6 +999,13 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     ?? lessons.find(l => l.progress_status !== 'completed' && l.is_unlocked)
     ?? null;
 
+  // AUD-11: السلسلة/الدقائق/المستقرة تُشتق من نشاط حقيقي لا من أعمدة لم تُحدَّث قط
+  const derived = await derivedStats(env, user.id);
+  const statsMerged = {
+    ...(stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 }),
+    ...derived,
+  };
+
   const totals = await env.DB.prepare(
     `SELECT (SELECT COUNT(*) FROM lessons WHERE status IN ${activeStatuses}) AS lessons_total,
             (SELECT COUNT(*) FROM user_lesson_progress p JOIN lessons l ON l.id = p.lesson_id
@@ -927,7 +1016,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
 
   return json(
     {
-      stats: stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 },
+      stats: statsMerged,
       lessons,
       nextLesson: nextLesson ? {
         slug: nextLesson.slug,
@@ -990,61 +1079,156 @@ function sortLessonsWithinUnits<T extends { unit_id: string; slug: string; unloc
   return result;
 }
 
-const PLACEMENT_CANONICAL_KEYS: Record<string, string> = {
-  '1': 'a',
-  '2': 'a',
-  '3': 'a',
-  '4': 'a',
-  '5': 'a',
-  '6': 'a',
-  '7': 'a',
-  '8': 'a',
-  '9': 'a',
-  '10': 'a',
-};
-
 /**
- * اختبار تحديد المستوى (Placement Test)
- * الخادم هو المصحح الوحيد: يتحقق من الإجابات الفعلية ولا يعتمد على ما يرسله العميل من درجات
+ * اختبار تحديد المستوى — محاولات خادمية (إصلاح AUD-05)
+ * ----------------------------------------------------------------------------
+ * العقد الجديد:
+ * 1) `POST /api/me/placement/start` ينشئ محاولة: ترتيب خيارات مخلوط لهذه
+ *    المحاولة وحدها، ويُخزَّن التخطيط (qid ⇒ مفتاح الصحيح بعد الخلط) في
+ *    `assessment_results.details_json` بحالة phase=started. العميل يستلم
+ *    أسئلة بمعرّفات خيارات موضعية مبهمة (o0..o3) بلا أي علامة صحة.
+ * 2) `POST /api/me/placement` يقبل {attemptId, answers} فقط، ويصحّح من
+ *    التخطيط المخزَّن. المحاولة لمرة واحدة (phase=submitted) وبمهلة ساعة.
+ *    أي `score`/`targetLevel` من العميل يُهمَل: الدرجة والمستوى من الخادم.
+ * بذلك لا نمط ثابت (موضع/معرّف) يمكن أن يجتاز أعمى فوق الصدفة.
  */
-export async function submitPlacementTest(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
-  const body = await readJson<{ targetLevel?: string; answers?: Record<string, string>; score?: number; answersCount?: number }>(req);
-  const targetLevel = String(body.targetLevel ?? '').toUpperCase();
+const PLACEMENT_ATTEMPT_TTL_MS = 60 * 60_000;
 
-  if (!['A1', 'A2'].includes(targetLevel)) {
-    throw new HttpError(400, 'INVALID_LEVEL', 'المستوى المحدد لتحديد المستوى غير صالح. اختر A1 أو A2.');
+interface PlacementAttemptDetails {
+  phase: 'started' | 'submitted';
+  /** qid ⇒ معرّف الخيار الصحيح كما عُرض في هذه المحاولة (o0..o3) */
+  keyByQuestion: Record<string, string>;
+  /** معرّفات أسئلة هذه المحاولة فقط (عيّنة من البنك — VER-02) */
+  questionIds: string[];
+  startedAt: string;
+  submittedAt?: string;
+  score?: number;
+}
+
+/** عيّنة طبقية عشوائية آمنة من البنك لهذه المحاولة (VER-02 + DEFECT-1):
+ * لا بذرة ولا اعتماد على معرّف المحاولة أو أي قيمة يعرفها العميل. */
+export function samplePlacementQuestions(): PlacementQuestion[] {
+  const picked: PlacementQuestion[] = [];
+  for (const { level, take } of PLACEMENT_STRATA) {
+    const pool = PLACEMENT_QUESTIONS.filter(q => q.level === level);
+    picked.push(...shuffleSecure(pool).slice(0, take));
+  }
+  return shuffleSecure(picked);
+}
+
+export async function startPlacementTest(_req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  // VER-02: سقف بدء المحاولات بالساعة — إعادة مشروعة مرحّب بها، واستخراج
+  // بنك الإجابات بالتجريب المكثّف مكلف. المحاولات المسروقة البيانات لا
+  // تنتقل بين المحاولات أصلًا (عيّنة مختلفة + تغذية بلا مفاتيح).
+  const hourAgo = new Date(Date.now() - 60 * 60_000).toISOString();
+  const recent = await env.DB.prepare(
+    `SELECT COUNT(*) AS n, MIN(created_at) AS oldest FROM assessment_results
+     WHERE user_id = ? AND kind = 'placement' AND created_at >= ?`,
+  )
+    .bind(user.id, hourAgo)
+    .first<{ n: number; oldest: string | null }>();
+  if (Number(recent?.n ?? 0) >= PLACEMENT_MAX_STARTS_PER_HOUR) {
+    const retryAfterSeconds = recent?.oldest
+      ? Math.max(1, Math.ceil((new Date(recent.oldest).getTime() + 60 * 60_000 - Date.now()) / 1000))
+      : 3600;
+    throw new HttpError(429, 'PLACEMENT_RATE_LIMITED', 'محاولات كثيرة في وقت قصير. خذ استراحة قصيرة ثم أعد المحاولة.', { retryAfterSeconds });
   }
 
-  // التصحيح والحساب على الخادم حصرًا. الإجابات إلزامية: كان هناك مسار تراجع
-  // يقبل «score» من العميل مباشرة، فيُمكنه اختراق الاختبار وفتح كل دروس
-  // المستوى ورصيد XP دون إجابة واحدة. لم يُبقَ أي ثقة بالدرجة المرسلة من العميل.
+  const attemptId = ulid().toLowerCase();
+  const now = new Date().toISOString();
+  const keyByQuestion: Record<string, string> = {};
+  const sampled = samplePlacementQuestions();
+
+  // DEFECT-1: ترتيب خيارات كل سؤال بعشوائية خادمية آمنة؛ التخطيط المعروض
+  // يُحفظ في سجل المحاولة (keyByQuestion) والتصحيح منه حصرًا، فالترتيب
+  // الذي يراه المتعلم هو نفسه المرجع عند التصحيح مهما كانت العشوائية.
+  const questions = sampled.map(q => {
+    const ordered = shuffleSecure(q.options);
+    const presented = ordered.map((opt, idx) => {
+      const presentedId = `o${idx}`;
+      if (opt.key === q.correctKey) keyByQuestion[q.id] = presentedId;
+      return { id: presentedId, text: opt.text };
+    });
+    return {
+      id: q.id,
+      level: q.level,
+      promptAr: q.promptAr,
+      ...(q.stemEs ? { stemEs: q.stemEs } : {}),
+      options: presented,
+    };
+  });
+
+  const details: PlacementAttemptDetails = { phase: 'started', keyByQuestion, questionIds: sampled.map(q => q.id), startedAt: now };
+  await env.DB.prepare(
+    `INSERT INTO assessment_results (id, user_id, kind, score, passed, details_json, created_at)
+     VALUES (?, ?, 'placement', 0, 0, ?, ?)`,
+  )
+    .bind(attemptId, user.id, JSON.stringify(details), now)
+    .run();
+
+  return json({ attemptId, questions, total: questions.length }, {}, requestId);
+}
+
+/** تصحيح تحديد المستوى — الخادم هو المصحح الوحيد من تخطيط المحاولة المخزَّن */
+export async function submitPlacementTest(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const body = await readJson<{ attemptId?: string; answers?: Record<string, string> }>(req);
+  const attemptId = typeof body.attemptId === 'string' ? body.attemptId : '';
+  if (!attemptId) {
+    throw new HttpError(400, 'ATTEMPT_REQUIRED', 'ابدأ الاختبار أولًا من صفحة تحديد المستوى.');
+  }
   if (!body.answers || typeof body.answers !== 'object' || Array.isArray(body.answers)) {
     throw new HttpError(400, 'ANSWERS_REQUIRED', 'يجب إرسال إجابات الاختبار لتصحيحها على الخادم.');
   }
-  const answersCount = Object.keys(body.answers).length;
-  let correct = 0;
-  for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
-    if (body.answers[qid] === expected) correct++;
-  }
-  const score = Math.round((correct / 10) * 100);
 
-  const passed = score >= 60;
-  const assessId = ulid().toLowerCase();
+  const row = await env.DB.prepare(
+    `SELECT id, details_json, created_at FROM assessment_results
+     WHERE id = ? AND user_id = ? AND kind = 'placement'`,
+  )
+    .bind(attemptId, user.id)
+    .first<{ id: string; details_json: string; created_at: string }>();
+  if (!row) throw new HttpError(404, 'ATTEMPT_NOT_FOUND', 'محاولة الاختبار غير موجودة.');
+
+  const details = safeParse<PlacementAttemptDetails>(row.details_json);
+  if (details.phase !== 'started' || !details.keyByQuestion) {
+    throw new HttpError(409, 'ATTEMPT_USED', 'هذه المحاولة سُلِّمت من قبل. ابدأ اختبارًا جديدًا.');
+  }
+  if (Date.now() - new Date(details.startedAt).getTime() > PLACEMENT_ATTEMPT_TTL_MS) {
+    throw new HttpError(409, 'ATTEMPT_EXPIRED', 'انتهت صلاحية هذه المحاولة. ابدأ اختبارًا جديدًا.');
+  }
+
+  const sampled = PLACEMENT_QUESTIONS.filter(q => (details.questionIds ?? []).includes(q.id));
+  if (!sampled.length) throw new HttpError(409, 'ATTEMPT_INVALID', 'محاولة غير صالحة. ابدأ اختبارًا جديدًا.');
+  let correct = 0;
+  for (const q of sampled) {
+    if (body.answers![q.id] === details.keyByQuestion[q.id]) correct++;
+  }
+  // VER-02: التغذية الراجعة شروح قواعد لأسئلة المحاولة كلها (أُصيبت أو أُخطئت)
+  // بلا نص الإجابة الصحيحة وبلا علم صحة لكل سؤال — فلا شيء في هذه الاستجابة
+  // يمكن حصاده لبناء مفتاح إجابات لمحاولة لاحقة، والعيّنة التالية مختلفة أصلًا.
+  const feedback = sampled.map(q => ({ id: q.id, explanationAr: q.explanationAr }));
+  const score = Math.round((correct / sampled.length) * 100);
+  const passed = score >= PLACEMENT_PASS_SCORE;
+  // المستوى يُشتق من الدرجة على الخادم (كان العميل يختاره من درجته المحلية)
+  const targetLevel = score >= PLACEMENT_A2_SCORE ? 'A2' : 'A1';
   const now = new Date().toISOString();
 
-  await env.DB.prepare(
-    `INSERT INTO assessment_results (id, user_id, kind, score, passed, details_json, created_at)
-     VALUES (?, ?, 'placement', ?, ?, ?, ?)`,
+  // إغلاق المحاولة أولًا وبشرط حالتها الحالية (VER-10): تسليمان متزامنان
+  // لنفس المحاولة — واحد فقط يغلقها ويكمل، والآخر يُرفض بـ409 بدل سباق كتابة.
+  const closed = await env.DB.prepare(
+    `UPDATE assessment_results SET score = ?, passed = ?, details_json = ?
+     WHERE id = ? AND user_id = ? AND COALESCE(json_extract(details_json, '$.phase'), 'started') = 'started'`,
   )
     .bind(
-      assessId,
-      user.id,
       score,
       passed ? 1 : 0,
-      JSON.stringify({ targetLevel, score, answersCount, evaluatedAt: now }),
-      now,
+      JSON.stringify({ ...details, phase: 'submitted', submittedAt: now, score, targetLevel }),
+      attemptId,
+      user.id,
     )
     .run();
+  if (Number(closed.meta?.changes ?? 0) !== 1) {
+    throw new HttpError(409, 'ATTEMPT_USED', 'هذه المحاولة سُلِّمت من قبل. ابدأ اختبارًا جديدًا.');
+  }
 
   let unlockedLessonsCount = 0;
   let xpAwarded = 0;
@@ -1055,8 +1239,9 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
       `SELECT l.id, l.current_version_id FROM lessons l WHERE l.level_code IN ${levelClause} AND l.status IN ('published','draft')`,
     ).all<{ id: string; current_version_id: string }>();
 
-    for (const l of lessonsToComplete.results) {
-      const res = await env.DB.prepare(
+    // AUD-06: batch مجزّأ بدل استعلام لكل درس (حد D1 على الخطة المجانية)
+    const stmts = lessonsToComplete.results.map(l =>
+      env.DB.prepare(
         `INSERT INTO user_lesson_progress (user_id, lesson_id, lesson_version_id, status, best_accuracy, attempts_count, completed_at, last_activity_at)
          VALUES (?, ?, ?, 'completed', 100, 1, ?, ?)
          ON CONFLICT(user_id, lesson_id) DO UPDATE SET
@@ -1064,10 +1249,11 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
            best_accuracy = MAX(user_lesson_progress.best_accuracy, 100),
            completed_at = COALESCE(user_lesson_progress.completed_at, excluded.completed_at),
            last_activity_at = excluded.last_activity_at`,
-      )
-        .bind(user.id, l.id, l.current_version_id, now, now)
-        .run();
-      if ((res.meta?.changes ?? 0) > 0) unlockedLessonsCount++;
+      ).bind(user.id, l.id, l.current_version_id, now, now),
+    );
+    for (let i = 0; i < stmts.length; i += 50) {
+      const results = await env.DB.batch(stmts.slice(i, i + 50));
+      unlockedLessonsCount += results.reduce((acc, r) => acc + Number(r.meta?.changes ?? 0), 0);
     }
 
     const xpKey = `${user.id}:xp:placement:${targetLevel}`;
@@ -1099,9 +1285,10 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
       unlockedLevel: passed ? targetLevel : 'PREA1',
       unlockedLessonsCount,
       xpAwarded,
+      feedback,
       messageAr: passed
         ? `أحسنت! حققت نسبة ${score}% وتم فتح مستوى ${targetLevel} لك مباشرة مع ${xpAwarded} XP مكافأة.`
-        : `نتيجتك ${score}% — نوصي بالبدء من المستوى التمهيدي لتثبيت الأساسيات خطوة بخطوة.`,
+        : `نتيجتك ${score}% — نوصي بالبدء من أول دروس المسار الأساسي لتثبيت الأساسيات خطوة بخطوة.`,
     },
     {},
     requestId,
