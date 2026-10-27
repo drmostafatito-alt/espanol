@@ -13,13 +13,23 @@ export interface GradeResult {
   score: number | null; // 0..100
   /** رسالة خاصة بالخيار الخاطئ الذي اختاره المتعلم (إن وُجدت) */
   chosenFeedbackAr?: string;
+  /** true عندما تكون الإجابة خاطئة بعلامة النبرة فقط (تمارين strictAccent فقط) */
+  wrongByAccentOnly?: boolean;
 }
 
 export interface AnswerKey {
   accepted?: string[];
   correctOptionIds?: string[];
   caseSensitive?: boolean;
+  /** قديم/احتياطي: كان يفعّل تسامح التشكيل لتمرين واحد. الافتراضي الآن متسامح، انظر strictAccent. */
   allowMissingAccent?: boolean;
+  /**
+   * صرامة التشكيل: عند ضبطه يُصحَّح التشكيل حرفيًا (si ≠ sí). يُستخدم فقط
+   * حيث يثبت المحتوى أن التمييز هو هدف السؤال (زوج دنيا + تعليم صريح)،
+   * مثل أداة الربط الشرطية si. الافتراضي: متسامح مع غياب النبرة.
+   * strictAccent يتغلب على allowMissingAccent عند تعارضهما.
+   */
+  strictAccent?: boolean;
   punctuationInsensitive?: boolean;
   strictWordMatch?: boolean;
   mode?: string;
@@ -53,12 +63,22 @@ const PARTICIPATION_TYPES = new Set([
 ]);
 
 export function gradingModeOf(type: string): GradingMode {
-  return PARTICIPATION_TYPES.has(type) ? 'participation' : 'graded';
+  // نوع غير معروف لا يُعامل كمُصحَّح: gradeAnswer نفسها تردّ «مشاركة» بلا
+  // مفتاح له، فعدّه graded كان يجعل الدرس مستحيل النجاح صامتًا.
+  if (PARTICIPATION_TYPES.has(type)) return 'participation';
+  return isKnownExerciseType(type) ? 'graded' : 'participation';
 }
 
-/** إزالة التشكيل اللاتيني (á → a) عند السماح بغياب العلامة */
+/**
+ * إزالة التشكيل اللاتيني (á → a) مع الحفاظ على ñ/Ñ حرفًا قائمًا بذاته:
+ * التيلدا هنا حرف لا علامة تشكيل — حذفها يدمج أزواجًا دنيا (año/ano،
+ * peña/pena، soñar/sonar). نستبدل ñ/Ñ بعلامتين خاصتين قبل التفكيك ثم نعيدهما.
+ */
 function stripDiacritics(s: string): string {
-  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').normalize('NFC');
+  const NFC = s.normalize('NFC');
+  const guarded = NFC.replace(/ñ/g, '\uE000').replace(/Ñ/g, '\uE001');
+  return guarded.normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC')
+    .replace(/\uE000/g, 'ñ').replace(/\uE001/g, 'Ñ');
 }
 
 function normalizeText(input: string, key: AnswerKey): string {
@@ -66,8 +86,15 @@ function normalizeText(input: string, key: AnswerKey): string {
   if (!key.caseSensitive) t = t.toLowerCase();
   // علامات الترقيم الإسبانية تُهمَل افتراضيًا: الخطأ فيها ليس خطأ لغويًا يستحق العقاب
   if (key.punctuationInsensitive !== false) t = t.replace(/[.,;:!?¡¿"«»…'’]/g, '');
-  if (key.allowMissingAccent) t = stripDiacritics(t);
+  // الافتراضي: تسامح مع غياب النبرة (está = esta) — لا تمرين حالي يعلّم
+  // التمييز بالنبرة هدفًا إلا ما ضُبط strictAccent صراحةً وبدليل من المحتوى.
+  if (!key.strictAccent) t = stripDiacritics(t);
   return t.trim().replace(/\s+/g, ' ');
+}
+
+/** مقارنة بعد إزالة التشكيل (مع حفظ ñ) — لكشف «خاطئ بالنبرة فقط». */
+function stripForAccentCheck(input: string, key: AnswerKey): string {
+  return normalizeText(input, { ...key, strictAccent: false });
 }
 
 function asText(response: unknown): string {
@@ -128,6 +155,13 @@ export function gradeAnswer(
     const given = normalizeText(asText(response), key);
     if (!given) return { mode, correct: false, score: 0, chosenFeedbackAr: errorFeedback.order };
     const ok = accepted.includes(given);
+    // في تمارين strictAccent: خطأ بالنبرة فقط يستحق تلميحًا صريحًا بالعربية
+    // بدل رسالة الخطأ العامة — المتعلم كتب الكلمة الصحيحة بلا/بنبرة زائدة.
+    let wrongByAccentOnly = false;
+    if (!ok && key.strictAccent) {
+      const strippedGiven = stripForAccentCheck(asText(response), key);
+      wrongByAccentOnly = (key.accepted ?? []).some(a => stripForAccentCheck(a, key) === strippedGiven);
+    }
     // تغذية راجعة مكتوبة للإجابة الخاطئة نفسها (مفاتيح إسبانية في المحتوى،
     // مثل «llego» أو «Soy de Egypto») — تُطابَق بعد نفس تسوية النص.
     const matched = ok
@@ -137,7 +171,14 @@ export function gradeAnswer(
       mode,
       correct: ok,
       score: ok ? 100 : 0,
-      ...(ok ? {} : { chosenFeedbackAr: matched ?? errorFeedback.order }),
+      ...(wrongByAccentOnly
+        ? {
+            wrongByAccentOnly: true,
+            chosenFeedbackAr: 'انتبه لعلامة النبرة فقط: الكلمة صحيحة، لكن التشكيل يغيّر المعنى هنا — راجع الشرح.',
+          }
+        : ok
+          ? {}
+          : { chosenFeedbackAr: matched ?? errorFeedback.order }),
     };
   }
 

@@ -107,19 +107,19 @@ describe('روابط paths.json', () => {
   });
 });
 
-describe('المفردات: 8,046 مصدرًا ↔ 8,041 في الفهرس', () => {
+describe('المفردات: 8,509 مصدرًا ↔ 8,509 في الفهرس', () => {
   const sourceEntries: { normalized: string }[] = walk(DRAFTS)
     .filter(f => basename(f).startsWith('vocab-') && f.endsWith('.json'))
     .flatMap(f => readJson(f).entries ?? []);
   const indexWords = new Set((searchIndex as any).vocab.map((v: any) => v.e as string));
   const stripAccents = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-  it('عدد المدخلات المصدرية 8,046', () => {
-    expect(sourceEntries.length).toBe(8046);
+  it('عدد المدخلات المصدرية 8,509', () => {
+    expect(sourceEntries.length).toBe(8509);
   });
 
-  it('فهرس البحث يحوي 8,046 مفردة (كل المدخلات بعد إصلاح المولّد)', () => {
-    expect((searchIndex as any).vocab.length).toBe(8046);
+  it('فهرس البحث يحوي 8,509 مفردة (كل المدخلات بعد إصلاح المولّد)', () => {
+    expect((searchIndex as any).vocab.length).toBe(8509);
   });
 
   it('الأزواج الخمسة موجودة بكلا عضويها في الفهرس', () => {

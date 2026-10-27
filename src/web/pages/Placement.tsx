@@ -1,148 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
 
 interface Question {
   id: number;
-  level: 'PREA1' | 'A1' | 'A2';
+  level: string;
   promptAr: string;
   stemEs?: string;
-  options: { id: string; text: string; correct: boolean }[];
-  explanationAr: string;
+  options: { id: string; text: string }[];
 }
-
-const QUESTIONS: Question[] = [
-  // المرحلة الأولى: التمهيد وأساسيات البداية (Pre-A1)
-  {
-    id: 1,
-    level: 'PREA1',
-    promptAr: 'ما هي التحية المناسبة في الصباح بالإسبانية؟',
-    options: [
-      { id: 'a', text: 'Buenos días', correct: true },
-      { id: 'b', text: 'Buenas noches', correct: false },
-      { id: 'c', text: 'Hasta luego', correct: false },
-      { id: 'd', text: 'Por favor', correct: false },
-    ],
-    explanationAr: 'Buenos días تعني «صباح الخير»، بينما Buenas noches للمساء والليل، وHasta luego تعني «إلى اللقاء».',
-  },
-  {
-    id: 2,
-    level: 'PREA1',
-    promptAr: 'اختر الرد المناسب على السؤال: «¿Cómo te llamas?» (ما اسمك؟)',
-    options: [
-      { id: 'a', text: 'Me llamo Omar', correct: true },
-      { id: 'b', text: 'Tengo treinta años', correct: false },
-      { id: 'c', text: 'Soy de El Cairo', correct: false },
-      { id: 'd', text: 'Muy bien, gracias', correct: false },
-    ],
-    explanationAr: 'Me llamo… هو التعبير الطبيعي لذكر الاسم (اسمي عمر).',
-  },
-  {
-    id: 3,
-    level: 'PREA1',
-    promptAr: 'ما هو الترتيب الصحيح للأرقام: 1، 2، 3 بالإسبانية؟',
-    options: [
-      { id: 'a', text: 'uno, dos, tres', correct: true },
-      { id: 'b', text: 'tres, dos, uno', correct: false },
-      { id: 'c', text: 'cuatro, cinco, seis', correct: false },
-      { id: 'd', text: 'primero, segundo, tercero', correct: false },
-    ],
-    explanationAr: 'uno = واحد، dos = اثنان، tres = ثلاثة.',
-  },
-
-  // المرحلة الثانية: المستوى التأسيسي (A1)
-  {
-    id: 4,
-    level: 'A1',
-    promptAr: 'أكمل الجملة بأداة التعريف المناسبة: «____ casa es grande.» (المنزل كبير)',
-    options: [
-      { id: 'a', text: 'La', correct: true },
-      { id: 'b', text: 'El', correct: false },
-      { id: 'c', text: 'Los', correct: false },
-      { id: 'd', text: 'Un', correct: false },
-    ],
-    explanationAr: 'كلمة casa اسم مؤنث مفرد ينتهي بـ a، لذا تأخذ أداة التعريف المؤنثة La.',
-  },
-  {
-    id: 5,
-    level: 'A1',
-    promptAr: 'اختر التصريف الصحيح للفعل Hablar مع الضمير Yo (أنا أتكلم الإسبانية):',
-    stemEs: 'Yo ____ español todos los días.',
-    options: [
-      { id: 'a', text: 'hablo', correct: true },
-      { id: 'b', text: 'hablas', correct: false },
-      { id: 'c', text: 'habla', correct: false },
-      { id: 'd', text: 'hablamos', correct: false },
-    ],
-    explanationAr: 'في المضارع البسيط، تصريف أفعال المجموعة الأولى مع Yo ينتهي بـ -o: Yo hablo.',
-  },
-  {
-    id: 6,
-    level: 'A1',
-    promptAr: 'للإخبار عن مكان تواجدك الحالي، أي فعل تختار؟ «أنا في المكتب الآن»:',
-    options: [
-      { id: 'a', text: 'Estoy en la oficina ahora', correct: true },
-      { id: 'b', text: 'Soy en la oficina ahora', correct: false },
-      { id: 'c', text: 'Tengo en la oficina ahora', correct: false },
-      { id: 'd', text: 'Hago en la oficina ahora', correct: false },
-    ],
-    explanationAr: 'الفعل Estar يُستخدم للموقع والحالة المؤقتة (Estoy en… = أنا في مكان كذا). الفعل Ser للسمات الدائمة والهوية.',
-  },
-  {
-    id: 7,
-    level: 'A1',
-    promptAr: 'في المطعم، كيف تطلب كوب ماء بأسلوب مهذب؟',
-    options: [
-      { id: 'a', text: 'Un vaso de agua, por favor', correct: true },
-      { id: 'b', text: 'Quiero agua ahora mismo', correct: false },
-      { id: 'c', text: 'De nada, un vaso', correct: false },
-      { id: 'd', text: '¿Dónde está la cuenta?', correct: false },
-    ],
-    explanationAr: '«Un vaso de agua, por favor» هو الأسلوب اليومي المهذب والقياسي للطلب.',
-  },
-
-  // المرحلة الثالثة: المستوى المتوسط الأساسي (A2)
-  {
-    id: 8,
-    level: 'A2',
-    promptAr: 'اختر الجملة الصحيحة مع فعل الإعجاب Gustar (يعجبني هذا الكتاب):',
-    options: [
-      { id: 'a', text: 'Me gusta este libro', correct: true },
-      { id: 'b', text: 'Yo gusto este libro', correct: false },
-      { id: 'c', text: 'Me gustan este libro', correct: false },
-      { id: 'd', text: 'A mí gusto este libro', correct: false },
-    ],
-    explanationAr: 'الفعل Gustar يُطابق الشيء المُعجَب به؛ بما أن este libro مفرد، فالصيغة هي gusta مع ضمير المفعول me.',
-  },
-  {
-    id: 9,
-    level: 'A2',
-    promptAr: 'اختر صيغة الماضي البسيط (Pretérito Indefinido) لجملة «أمس ذهبتُ إلى السينما»:',
-    stemEs: 'Ayer ____ al cine con mis amigos.',
-    options: [
-      { id: 'a', text: 'fui', correct: true },
-      { id: 'b', text: 'voy', correct: false },
-      { id: 'c', text: 'iba', correct: false },
-      { id: 'd', text: 'he ido', correct: false },
-    ],
-    explanationAr: 'الفعل Ir في الماضي البسيط المكتمل مع Yo هو fui (ذهبتُ).',
-  },
-  {
-    id: 10,
-    level: 'A2',
-    promptAr: 'ما معنى الجملة الإسبانية: «¿Cuánto tiempo hace que vives en Madrid?»',
-    options: [
-      { id: 'a', text: 'منذ متى وأنت تعيش في مدريد؟', correct: true },
-      { id: 'b', text: 'كم تكلفة العيش في مدريد؟', correct: false },
-      { id: 'c', text: 'هل تفضل العيش في مدريد؟', correct: false },
-      { id: 'd', text: 'متى ستسافر إلى مدريد؟', correct: false },
-    ],
-    explanationAr: 'التركيب «¿Cuánto tiempo hace que + فعل في المضارع؟» يُستخدم للسؤال عن مدة استمرار حدث بدأ في الماضي وما زال قائمًا.',
-  },
-];
 
 export function Placement({ navigate }: { navigate: (to: string) => void }) {
   const { user } = useAuth();
+  const [questions, setQuestions] = useState<Question[] | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitting, setSubmitting] = useState(false);
@@ -154,6 +25,16 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
     messageAr: string;
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  // الأسئلة تأتي من الخادم بلا أي علامة صواب — بنك الأسئلة خادم فقط.
+  useEffect(() => {
+    if (!user) return;
+    let alive = true;
+    api.placementQuestions()
+      .then(res => { if (alive) setQuestions(res.questions); })
+      .catch(() => { if (alive) setLoadError('تعذّر تحميل أسئلة التقييم. حاول لاحقًا.'); });
+    return () => { alive = false; };
+  }, [user]);
 
   if (!user) {
     return (
@@ -167,7 +48,27 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
     );
   }
 
-  const current = QUESTIONS[index];
+  if (loadError) {
+    return (
+      <div className="container" style={{ maxWidth: 640 }}>
+        <div className="card">
+          <h2>اختبار تحديد المستوى</h2>
+          <div className="alert" role="alert">{loadError}</div>
+          <button className="btn" onClick={() => navigate('/learn')}>الانتقال إلى الدروس</button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!questions) {
+    return (
+      <div className="container" style={{ maxWidth: 640 }}>
+        <div className="card"><p className="muted">جارٍ تحميل أسئلة التقييم…</p></div>
+      </div>
+    );
+  }
+
+  const current = questions[index];
   if (!current) return null;
   const selectedOptionId = answers[current.id];
 
@@ -177,7 +78,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   };
 
   const handleNext = () => {
-    if (index + 1 < QUESTIONS.length) {
+    if (index + 1 < questions.length) {
       setIndex(i => i + 1);
     }
   };
@@ -191,29 +92,9 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   const handleFinish = async () => {
     setSubmitting(true);
     setError(null);
-
-    // حساب الدرجة الفعلية
-    let correctCount = 0;
-    for (const q of QUESTIONS) {
-      const chosenId = answers[q.id];
-      const correctOption = q.options.find(o => o.correct);
-      if (chosenId && correctOption && chosenId === correctOption.id) {
-        correctCount++;
-      }
-    }
-
-    const scorePct = Math.round((correctCount / QUESTIONS.length) * 100);
-    // إذا أحرز 70% أو أكثر يستحق تخطي Pre-A1 وفتح A1
-    // إذا أحرز 90% أو أكثر يمكنه فتح A2
-    const targetLevel = scorePct >= 80 ? 'A2' : 'A1';
-
     try {
-      const res = await api.submitPlacement({
-        targetLevel,
-        answers,
-        score: scorePct,
-        answersCount: Object.keys(answers).length,
-      });
+      // الخادم وحده يصحّح ويحدد المستوى والدرجة — لا حساب محليًا.
+      const res = await api.submitPlacement({ answers });
       setResult({
         passed: res.passed,
         score: res.score,
@@ -264,7 +145,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   }
 
   const answeredCount = Object.keys(answers).length;
-  const progressPct = Math.round(((index + 1) / QUESTIONS.length) * 100);
+  const progressPct = Math.round(((index + 1) / questions.length) * 100);
 
   return (
     <div className="container" style={{ maxWidth: 680 }}>
@@ -296,7 +177,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
         <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
           <span className="badge">{current.level}</span>
           <span className="small muted num">
-            السؤال {index + 1} من {QUESTIONS.length}
+            السؤال {index + 1} من {questions.length}
           </span>
         </div>
 
@@ -338,7 +219,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
             ← السابق
           </button>
 
-          {index + 1 < QUESTIONS.length ? (
+          {index + 1 < questions.length ? (
             <button
               type="button"
               className="btn sm"
@@ -352,9 +233,9 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
               type="button"
               className="btn sm"
               onClick={handleFinish}
-              disabled={answeredCount < QUESTIONS.length || submitting}
+              disabled={answeredCount < questions.length || submitting}
             >
-              {submitting ? 'جارٍ التقييم…' : `إنهاء التقييم (${answeredCount}/${QUESTIONS.length})`}
+              {submitting ? 'جارٍ التقييم…' : `إنهاء التقييم (${answeredCount}/${questions.length})`}
             </button>
           )}
         </div>

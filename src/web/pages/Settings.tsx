@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { api, ApiError } from '../api';
 import { useAuth } from '../state';
-import { AudioDemo } from '../components/AudioDemo';
 
 export function Settings({ navigate }: { navigate: (to: string) => void }) {
   const { user, setUser } = useAuth();
@@ -75,21 +74,12 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
       </form>
 
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>الصوت</h2>
-        <AudioDemo text="Buenos días, ¿en qué puedo ayudarle?" audioKey="pending/cc1-opening-omar" variant={variant as 'es-ES' | 'es-419'} />
-        <p className="small muted" style={{ marginTop: 'var(--s-3)' }}>
-          لا نرفع تسجيلاتك الصوتية إلى الخادم في هذه المرحلة، ولا نقيّم نطقك آليًا. عندما يصبح متاحًا
-          ستُطلب موافقتك صراحةً قبل أي رفع.
-        </p>
-      </section>
-
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
         <h2>البيانات والحساب</h2>
         <ul className="list-plain small">
           <li>البريد: <span className="es">{user.email}</span></li>
           <li>الدور: <span className="badge">{user.role}</span></li>
           <li>الجلسة: كوكي <code>HttpOnly</code> — لا يمكن لأي سكربت في الصفحة قراءتها.</li>
-          <li>حذف الحساب وتصدير البيانات: غير مفعّلين بعد؛ مطلوبان في المرحلة 5.</li>
+          <li>حذف الحساب وتصدير البيانات: غير مفعّلين حاليًا.</li>
         </ul>
       </section>
     </div>

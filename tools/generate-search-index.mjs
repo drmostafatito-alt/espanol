@@ -5,8 +5,13 @@
  * ============================================================================
  * ينشئ فهرسًا فائق الكفاءة والسرعة يغطي:
  *   1) المعجم الكامل (8,046 مفردة فريدة وتصريفاتها ومعانيها الفصحى والمصرية)
- *   2) الدروس التفاعلية (212 درسًا، أهدافها، تراكيبها المستهدفة، قواعدها، حواراتها)
- *   3) القواعد النحوية ومواضيعها وأمثلتها
+ *
+ * الدروس والقواعد لا تُضمَّن هنا عمدًا: ملفات المحتوى المصدرية لا تحمل
+ * حالة نشر، وكلها مسودات عند الاستيراد، فأي بيانات دروس في هذا الملف
+ * كانت ستُشحن داخل حزمة الواجهة وتكشف عناوين المسودات وأهدافها وتراكيبها
+ * لأي زائر. بحث الدروس والقواعد يتم من الخادم فقط (GET /api/content/search)
+ * من قاعدة البيانات وفق قاعدة الرؤية — المنشور فقط، والمسودات فقط عندما
+ * يسمح allowUnreviewedContent (تطوير صريح، لا إنتاج).
  *
  * الفهرس يُحفظ في:
  *   src/shared/search-index.json
@@ -74,7 +79,6 @@ function listFiles(dir, pattern) {
 export function buildSearchIndex() {
   const startTime = Date.now();
   const vocabFiles = listFiles(DRAFTS_DIR, /^vocab-.*\.json$/);
-  const lessonFiles = listFiles(DRAFTS_DIR, /^lesson-.*\.json$/);
 
   // 1. فهرسة المعجم
   const vocabList = [];
@@ -142,44 +146,11 @@ export function buildSearchIndex() {
     }
   }
 
-  // 2. فهرسة الدروس
+  // 2. الدروس والقواعد: لا تُفهرس هنا أبدًا (انظر رأس الملف).
+  // الفهرس المضمّن في الحزمة يحمل المفردات والتصريفات فقط؛ بحث الدروس
+  // والقواعد خادمي ومقيّد بالرؤية. أي عودة لفهرسة الدروس هنا = تسريب مسودات.
   const lessons = [];
   const grammarTopicsMap = new Map();
-
-  for (const file of lessonFiles) {
-    try {
-      const data = JSON.parse(readFileSync(file, 'utf8'));
-      const l = data.lesson || data;
-      if (!l.slug || !l.titleAr) continue;
-
-      const grammarTopics = l.grammarTopics || [];
-      const targetStructures = l.targetStructures || [];
-
-      for (const topic of grammarTopics) {
-        const topicNorm = normalizeEs(topic);
-        if (!grammarTopicsMap.has(topicNorm)) {
-          grammarTopicsMap.set(topicNorm, {
-            t: topic,
-            l: l.level || 'A1',
-            s: l.slug,
-            a: l.titleAr,
-          });
-        }
-      }
-
-      lessons.push({
-        s: l.slug,
-        t: l.titleAr,
-        l: l.level || 'A1',
-        u: l.unitSlug || null,
-        o: l.objectiveAr || undefined,
-        g: grammarTopics,
-        st: targetStructures,
-      });
-    } catch (err) {
-      console.warn(`تحذير أثناء قراءة ${file}:`, err.message);
-    }
-  }
 
   const formsObj = {};
   for (const [k, v] of formsMap.entries()) {
@@ -202,15 +173,32 @@ export function buildSearchIndex() {
     grammar: Array.from(grammarTopicsMap.values()),
   };
 
+  // وضع --check (لـCI): يقارن الفهرس المولَّد بالملتزَم متجاهلًا الحقول
+  // الزمنية (generatedAt/buildMs) — أي فرق حقيقي = فهرس قديم ويجب إعادة توليده.
+  if (process.argv.includes('--check')) {
+    const existing = JSON.parse(readFileSync(OUT_FILE, 'utf8'));
+    const stripVolatile = (o) => {
+      const c = JSON.parse(JSON.stringify(o));
+      delete c.generatedAt;
+      if (c.stats) delete c.stats.buildMs;
+      return c;
+    };
+    const same = JSON.stringify(stripVolatile(existing)) === JSON.stringify(stripVolatile(index));
+    if (!same) {
+      console.error('فهرس البحث قديم: شغّل `npm run search-index` والتزم الناتج.');
+      process.exit(1);
+    }
+    console.log('فهرس البحث محدَّث.');
+    return index;
+  }
+
   mkdirSync(dirname(OUT_FILE), { recursive: true });
   writeFileSync(OUT_FILE, JSON.stringify(index), 'utf8');
 
   console.log(
     `✅ تم بناء فهرس البحث الذكي بنجاح: ` +
     `${index.stats.vocabCount} مفردة، ` +
-    `${index.stats.formsCount} صيغة مصرّفة، ` +
-    `${index.stats.lessonsCount} درسًا، ` +
-    `${index.stats.grammarCount} موضوع قاعدة في ${index.stats.buildMs}ms.`
+    `${index.stats.formsCount} صيغة مصرّفة (الدروس والقواعد تُبحث من الخادم وفق الرؤية).`
   );
 
   return index;

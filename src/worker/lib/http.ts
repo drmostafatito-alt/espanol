@@ -14,10 +14,20 @@ export const SECURITY_HEADERS: Record<string, string> = {
   'X-Permitted-Cross-Domain-Policies': 'none',
 };
 
+/**
+ * HTTPS فقط عندما تكون *كل* الأصول المكوَّنة https — القائمة قد تحوي عدة أصول
+ * مفصولة بفواصل، و`startsWith` على السلسلة كلها كان يقرر Secure/__Host-/HSTS
+ * من الأصل الأول فقط. قائمة مختلطة = إعداد خاطئ ⇒ لا ندّعي Secure (فشل آمن).
+ */
+export function isHttpsOnly(env: Env): boolean {
+  const origins = (env.APP_ORIGIN ?? '').split(',').map(s => s.trim()).filter(Boolean);
+  return origins.length > 0 && origins.every(o => o.startsWith('https://'));
+}
+
 /** HSTS يُرسَل فقط على HTTPS. */
 export function securityHeadersFor(env: Env): Record<string, string> {
   const h: Record<string, string> = { ...SECURITY_HEADERS };
-  if (env.APP_ORIGIN?.startsWith('https://')) {
+  if (isHttpsOnly(env)) {
     h['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains';
   }
   return h;
@@ -124,12 +134,12 @@ export class HttpError extends Error {
 
 export function cookieName(env: Env): string {
   // __Host- يتطلب Secure + Path=/ + بلا Domain — لا يعمل على http في التطوير المحلي
-  return env.APP_ORIGIN.startsWith('https://') ? '__Host-ses' : 'ses';
+  return isHttpsOnly(env) ? '__Host-ses' : 'ses';
 }
 
 function cookieAttrs(env: Env, maxAge: number): string[] {
   const attrs = ['Path=/', 'HttpOnly', 'SameSite=Lax', `Max-Age=${maxAge}`, 'Priority=High'];
-  if (env.APP_ORIGIN.startsWith('https://')) attrs.push('Secure');
+  if (isHttpsOnly(env)) attrs.push('Secure');
   return attrs;
 }
 

@@ -4,7 +4,7 @@ import { Landing } from './pages/Landing';
 import { Login, Signup } from './pages/Auth';
 import { Dashboard } from './pages/Dashboard';
 import { Settings } from './pages/Settings';
-import { Transparency, NotFound } from './pages/Misc';
+import { NotFound } from './pages/Misc';
 import { Lesson } from './pages/Lesson';
 import { Review } from './pages/Review';
 import { ReviewPacks } from './pages/ReviewPacks';
@@ -47,8 +47,6 @@ function Shell() {
     page = user ? <Settings navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/search' || path.startsWith('/search')) {
     page = <Search navigate={navigate} initialQuery={typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('q') ?? '') : ''} />;
-  } else if (path === '/transparency') {
-    page = <Transparency />;
   } else {
     page = <NotFound navigate={navigate} />;
   }
@@ -71,7 +69,6 @@ function Shell() {
           </>
         ) : (
           <>
-            <a href="/transparency" className="btn ghost sm" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>الشفافية</a>
             <a href="/login" className="btn secondary sm" onClick={e => { e.preventDefault(); navigate('/login'); }}>دخول</a>
             <a href="/signup" className="btn sm" onClick={e => { e.preventDefault(); navigate('/signup'); }}>حساب جديد</a>
           </>
@@ -82,10 +79,7 @@ function Shell() {
 
       <footer className="footer">
         <div className="container row" style={{ justifyContent: 'space-between' }}>
-          <span>© {new Date().getFullYear()} Español بالعربي — نسخة تطوير.</span>
-          <span className="row">
-            <a href="/transparency" onClick={e => { e.preventDefault(); navigate('/transparency'); }}>حدود المنصة</a>
-          </span>
+          <span>© {new Date().getFullYear()} Español بالعربي.</span>
         </div>
       </footer>
     </div>

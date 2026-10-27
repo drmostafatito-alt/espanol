@@ -3,6 +3,7 @@ import { timingSafeEqual, randomToken, sha256Hex, b64url, fromB64url } from '../
 import { hashPassword, verifyPassword, passwordProblems, resolvePolicy, needsRehash, MIN_ITERATIONS } from '../src/worker/lib/password';
 import { ulid, stableId } from '../src/worker/lib/ids';
 import { checkRateLimit } from '../src/worker/lib/rate-limit';
+import { gradingModeOf, gradeAnswer } from '../src/worker/lib/grading';
 import { createTestDb } from '../src/worker/testing/d1-adapter';
 
 describe('crypto', () => {
@@ -120,6 +121,43 @@ describe('ids', () => {
     expect(a).toBe(b);
     expect(a).not.toBe(c);
     expect(a.startsWith('lsn_')).toBe(true);
+  });
+});
+
+describe('سياسة التشكيل في التصحيح (grading.ts)', () => {
+  it('الافتراضي متسامح مع غياب النبرة: esta تقبل está', () => {
+    expect(gradeAnswer('fill_blank', { accepted: ['está'] }, 'esta').correct).toBe(true);
+    expect(gradeAnswer('fill_blank', { accepted: ['café'] }, 'cafe').correct).toBe(true);
+    expect(gradeAnswer('fill_blank', { accepted: ['Hacía'] }, 'hacia').correct).toBe(true);
+  });
+
+  it('ñ حرف قائم بذاته لا يُحذف: año ≠ ano وpeña ≠ pena حتى مع التسامح', () => {
+    expect(gradeAnswer('fill_blank', { accepted: ['año'] }, 'ano').correct).toBe(false);
+    expect(gradeAnswer('fill_blank', { accepted: ['peña'] }, 'pena').correct).toBe(false);
+    expect(gradeAnswer('fill_blank', { accepted: ['mañana'] }, 'manana').correct).toBe(false);
+    expect(gradeAnswer('fill_blank', { accepted: ['año'] }, 'año').correct).toBe(true);
+    expect(gradeAnswer('fill_blank', { accepted: ['soñar'] }, 'sonar').correct).toBe(false);
+  });
+
+  it('strictAccent يميّز الزوج الدنيا ويعطي تلميح نبرة فقط', () => {
+    const key = { accepted: ['si'], strictAccent: true };
+    expect(gradeAnswer('fill_blank', key, 'si').correct).toBe(true);
+    const wrong = gradeAnswer('fill_blank', key, 'sí');
+    expect(wrong.correct).toBe(false);
+    expect(wrong.wrongByAccentOnly).toBe(true);
+    expect(wrong.chosenFeedbackAr).toMatch(/النبرة/);
+  });
+
+  it('الحالة والمسافات والترقيم ما زالت متسامحة افتراضيًا', () => {
+    expect(gradeAnswer('fill_blank', { accepted: ['Está bien.'] }, '  está   bien ').correct).toBe(true);
+  });
+});
+
+describe('gradingModeOf', () => {
+  it('نوع غير معروف يُعامل كمشاركة لا كمُصحَّح (لا درس مستحيل صامتًا)', () => {
+    expect(gradingModeOf('word_choice')).toBe('graded');
+    expect(gradingModeOf('speak_with_text')).toBe('participation');
+    expect(gradingModeOf('some_future_type')).toBe('participation');
   });
 });
 

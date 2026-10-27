@@ -15,12 +15,23 @@ import { useAuth } from '../state';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
+/**
+ * طابور المراجعة مربوط بالمستخدم: مفتاح منفصل لكل userId. المفتاح العام
+ * القديم (بلا userId) كان يُفرَّغ تحت جلسة من سجّل دخوله بعده على جهاز
+ * مشترك، فتُطبَّق تقييمات مستخدم على جدول مستخدم آخر. عند أول قراءة بمستخدم
+ * معروف تُهاجَر العناصر القديمة إليه مختومةً بـuserId ثم يُحذف المفتاح العام.
+ */
 interface PendingReview {
   clientEventId: string;
   cardId: string;
   rating: ReviewRating;
   responseMs: number;
   queuedAt: number;
+  userId: string;
+}
+
+function queueKey(userId: string): string {
+  return `${QUEUE_KEY}:${userId}`;
 }
 
 function newEventId(): string {
@@ -28,9 +39,8 @@ function newEventId(): string {
   return `ev${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
 }
 
-function readQueue(): PendingReview[] {
+function parseQueue(raw: string | null): PendingReview[] {
   try {
-    const raw = localStorage.getItem(QUEUE_KEY);
     const parsed = raw ? (JSON.parse(raw) as unknown) : [];
     return Array.isArray(parsed) ? (parsed as PendingReview[]) : [];
   } catch {
@@ -38,13 +48,41 @@ function readQueue(): PendingReview[] {
   }
 }
 
-function writeQueue(items: PendingReview[]): void {
+function readQueue(userId: string): PendingReview[] {
   try {
-    if (items.length) localStorage.setItem(QUEUE_KEY, JSON.stringify(items));
-    else localStorage.removeItem(QUEUE_KEY);
+    const legacy = parseQueue(localStorage.getItem(QUEUE_KEY));
+    if (legacy.length) {
+      const stamped = legacy.map(item => ({ ...item, userId }));
+      const existing = parseQueue(localStorage.getItem(queueKey(userId)));
+      localStorage.setItem(queueKey(userId), JSON.stringify([...existing, ...stamped]));
+      localStorage.removeItem(QUEUE_KEY);
+      return [...existing, ...stamped];
+    }
+    return parseQueue(localStorage.getItem(queueKey(userId)));
+  } catch {
+    return [];
+  }
+}
+
+function writeQueue(userId: string, items: PendingReview[]): void {
+  try {
+    if (items.length) localStorage.setItem(queueKey(userId), JSON.stringify(items));
+    else localStorage.removeItem(queueKey(userId));
   } catch {
     /* التخزين قد يكون معطّلًا (وضع خاص) — نفشل بهدوء ولا ندّعي حفظًا */
   }
+}
+
+/** لافتة الموعد القادم من dueAt الفعلي، لا من intervalDays (بطاقة hard الجديدة مستحقة بعد 12 ساعة لا «غدًا»). */
+function formatNextDue(dueAt: string): string {
+  const ms = new Date(dueAt).getTime() - Date.now();
+  if (!Number.isFinite(ms)) return 'غدًا';
+  const mins = Math.max(0, Math.round(ms / 60000));
+  const ar = (n: number) => n.toLocaleString('ar-EG');
+  if (mins < 60) return mins <= 1 ? 'بعد دقيقة' : `بعد ${ar(mins)} دقيقة`;
+  const hours = Math.round(mins / 60);
+  if (hours < 48) return `بعد ${ar(hours)} ساعة`;
+  return `بعد ${ar(Math.round(hours / 24))} يوم`;
 }
 
 const RATING_LABEL: Record<ReviewRating, string> = {
@@ -73,14 +111,18 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const cards = useMemo(() => payload?.cards ?? [], [payload]);
   const card: ReviewCard | undefined = cards[index];
 
+  const userId = user?.id ?? null;
+
   const flushQueue = useCallback(async () => {
-    const queued = readQueue();
+    if (!userId) return; // بلا مستخدم معروف لا نلمس أي طابور — ولا طابور غيره
+    const queued = readQueue(userId);
     if (!queued.length) {
       setPendingCount(0);
       return;
     }
     const left: PendingReview[] = [];
     for (const item of queued) {
+      if (item.userId !== userId) continue; // دفاع إضافي: لا يُرسَل تقييم إلا لصاحبه
       try {
         await api.submitReview({
           clientEventId: item.clientEventId,
@@ -94,10 +136,10 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         left.push(item);
       }
     }
-    writeQueue(left);
+    writeQueue(userId, left);
     setPendingCount(left.length);
     setOffline(left.length > 0);
-  }, []);
+  }, [userId]);
 
   const load = useCallback(async () => {
     setPhase('loading');
@@ -114,9 +156,19 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     }
   }, []);
 
+  // التحميل مرة واحدة عند الدخول فقط: إعادة التحميل عند وصول هوية المستخدم
+  // كانت تُعيد الطور إلى 'card' وتمحو كشف الإجابة أثناء تقييم المستخدم.
+  const flushRef = useRef(flushQueue);
+  flushRef.current = flushQueue;
   useEffect(() => {
-    void flushQueue().then(load);
-  }, [flushQueue, load]);
+    void flushRef.current().then(load);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [load]);
+
+  // عند وصول هوية المستخدم (بعد تحميل الجلسة) نُفرّغ طابوره فقط، بلا إعادة تحميل.
+  useEffect(() => {
+    if (userId) void flushQueue();
+  }, [flushQueue, userId]);
 
   useEffect(() => {
     const onOnline = () => void flushQueue();
@@ -131,13 +183,14 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   const rate = useCallback(
     async (rating: ReviewRating) => {
-      if (!card || phase === 'saving') return;
+      if (!card || phase === 'saving' || !userId) return;
       const item: PendingReview = {
         clientEventId: newEventId(),
         cardId: card.id,
         rating,
         responseMs: Date.now() - shownAt.current,
         queuedAt: Date.now(),
+        userId,
       };
       setPhase('saving');
       try {
@@ -147,8 +200,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
           rating: item.rating,
           responseMs: item.responseMs,
         });
-        const days = res.next.intervalDays;
-        setLastNext(days === 0 ? 'بعد ١٠ دقائق' : days === 1 ? 'غدًا' : `بعد ${days} يومًا`);
+        setLastNext(formatNextDue(res.next.dueAt));
         setOffline(false);
       } catch (err) {
         if (err instanceof ApiError && err.status >= 400 && err.status < 500) {
@@ -157,8 +209,8 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
           return;
         }
         // فشل شبكة: نحفظ في قائمة الانتظار ولا نقول إنه حُفظ على الخادم
-        const queued = [...readQueue(), item];
-        writeQueue(queued);
+        const queued = [...readQueue(userId), item];
+        writeQueue(userId, queued);
         setPendingCount(queued.length);
         setOffline(true);
         setLastNext('لم يُرسل بعد — سيُرسل عند عودة الاتصال');
@@ -170,7 +222,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         setPhase('empty');
       }
     },
-    [card, cards.length, index, phase],
+    [card, cards.length, index, phase, userId],
   );
 
   // اختصارات لوحة المفاتيح: مسافة لكشف الإجابة، و1–4 للتقييم
@@ -216,7 +268,12 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
       <div className="container" style={{ maxWidth: 640 }}>
         <div className="card" data-testid="review-empty">
           <h1 style={{ marginTop: 0 }}>لا بطاقات مستحقة الآن</h1>
-          {reason === 'DAILY_LIMIT_REACHED' ? (
+          {reason === 'NO_VALID_CARDS' ? (
+            <p>
+              بطاقاتك المستحقة بلا بيانات عرض صالحة حاليًا (مشكلة بيانات، لا حدّ يومي).
+              جرّب التحقق مرة أخرى، وإن تكرر الأمر أخبرنا.
+            </p>
+          ) : reason === 'DAILY_LIMIT_REACHED' ? (
             <p>
               وصلت إلى حدّك اليومي ({session?.limits.newPerDay} بطاقة جديدة و{session?.limits.reviewsPerDay} مراجعة).
               يمكنك العودة غدًا — التقدّم محفوظ.

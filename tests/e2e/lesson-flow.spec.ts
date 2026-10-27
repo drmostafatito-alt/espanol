@@ -91,15 +91,17 @@ test.describe('مسار الدرس', () => {
     await expect(page).toHaveURL(new RegExp(`/learn/${PREA1}`));
   });
 
-  test('اختبار تحديد المستوى /placement: يجيب المتعلم ويُفتح له المستوى مع XP', async ({ page }) => {
+  test('اختبار تحديد المستوى /placement: يجيب المتعلم وتظهر النتيجة من الخادم', async ({ page }) => {
     await signupThroughApi(page, uniqueEmail('placement'));
     await page.goto('/placement');
 
-    // صفحة تحديد المستوى تفتح وتعرض الأسئلة
+    // صفحة تحديد المستوى تفتح وتعرض الأسئلة (الأسئلة من الخادم بلا مفاتيح إجابة)
     await expect(page.getByText('اختبار تحديد المستوى')).toBeVisible();
     await expect(page.getByText('السؤال 1 من 10')).toBeVisible();
 
-    // إجابة الأسئلة العشرة (اختيار أول خيار دائماً وهو الصحيح في بنك الأسئلة)
+    // إجابة الأسئلة العشرة باختيار الخيار الأول دائمًا — مواضع الصواب متنوّعة
+    // في بنك الأسئلة، فهذه الإجابات لا تنجح؛ الاختبار يتحقق من رحلة الإرسال
+    // والنتيجة المعروضة، والتصحيح نفسه مغطّى باختبارات الوحدة الخادمية.
     for (let i = 1; i <= 10; i++) {
       const firstChoice = page.locator('.choice').first();
       await firstChoice.click();
@@ -113,14 +115,15 @@ test.describe('مسار الدرس', () => {
     await expect(finishBtn).toBeEnabled();
     await finishBtn.click();
 
-    // ظهور النتيجة والتهنئة والمكافأة
+    // ظهور النتيجة والمستوى الموصى به (التمهيدي لهذه الإجابات)
     await expect(page.getByText('نتيجة اختبار تحديد المستوى')).toBeVisible();
     await expect(page.getByText(/المستوى الموصى به/)).toBeVisible();
-    await expect(page.getByText(/تمت إضافة/)).toBeVisible();
+    // «10%» تظهر داخل فقرة النسبة وعنصر strong معًا — نثبتها عبر فقرة التسمية
+    // بدل مطابقة نص عام (مخالفة الوضع الصارم ليست خللًا في التطبيق).
+    await expect(page.getByText(/نسبة الإجابات الصحيحة/)).toContainText('10%');
 
-    // العودة إلى اللوحة للتحقق من فتح المستوى واحتساب النقاط
+    // العودة إلى اللوحة
     await page.getByRole('button', { name: /الانتقال إلى خريطة المنهج/ }).click();
     await expect(page).toHaveURL('/learn');
-    await expect(page.locator('[data-testid="stat-xp"] .num')).not.toHaveText('0');
   });
 });

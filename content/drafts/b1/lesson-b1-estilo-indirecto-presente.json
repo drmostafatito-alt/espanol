@@ -67,8 +67,6 @@
       }
     ],
     "newVocabulary": [
-      "dice que + indicativo",
-      "dice que + subjuntivo",
       "pregunta si",
       "pide que",
       "transmitir",
@@ -159,6 +157,7 @@
         ],
         "explanationAr": "عند نقل سؤال نعم/لا نستخدم أداة الربط si (بدون نبرة): pregunta si vas a venir.",
         "answerKey": {
+          "strictAccent": true,
           "accepted": [
             "si"
           ],

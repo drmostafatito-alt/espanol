@@ -136,8 +136,13 @@ describe('شاشة المراجعة', () => {
     await user.click(screen.getByTestId('review-reveal'));
     await user.click(screen.getByTestId('review-rate-easy'));
 
-    await waitFor(() => expect(localStorage.getItem('srs.pending.v1')).toBeTruthy());
-    const queued = JSON.parse(localStorage.getItem('srs.pending.v1')!) as unknown[];
+    // الطابور مربوط بالمستخدم: مفتاح لكل userId، ولا مفتاح عام إطلاقًا
+    // (المفتاح العام كان يُفرَّغ تحت جلسة مستخدم آخر على جهاز مشترك).
+    const queueKey = () =>
+      Object.keys(localStorage).find(k => k.startsWith('srs.pending.v1:'));
+    await waitFor(() => expect(queueKey()).toBeTruthy());
+    expect(localStorage.getItem('srs.pending.v1')).toBeNull();
+    const queued = JSON.parse(localStorage.getItem(queueKey()!)!) as unknown[];
     expect(queued.length).toBe(1);
     expect(screen.getByTestId('review-offline')).toBeTruthy();
 
@@ -150,7 +155,7 @@ describe('شاشة المراجعة', () => {
       const n = (h.db.raw.prepare('SELECT COUNT(*) AS n FROM srs_reviews').get() as { n: number }).n;
       expect(n).toBe(1);
     }, { timeout: 5000 });
-    await waitFor(() => expect(localStorage.getItem('srs.pending.v1')).toBeNull());
+    await waitFor(() => expect(queueKey()).toBeUndefined());
   });
 
   it('إعادة إرسال نفس التقييم لا تُسجّل مراجعتين', async () => {

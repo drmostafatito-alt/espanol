@@ -1,5 +1,6 @@
 /* حد معدل الطلبات في D1: نافذة زمنية ثابتة، كتابة واحدة لكل نافذة */
 import type { D1Database } from '../types';
+import { HttpError } from './http';
 
 export interface RateResult {
   allowed: boolean;
@@ -31,6 +32,21 @@ export async function checkRateLimit(
 
   const count = row?.count ?? 1;
   return { allowed: count <= limit, limit, remaining: Math.max(0, limit - count), resetAt };
+}
+
+/** يرفض الطلب برمز 429 عند تجاوز الحد — نفس الرسالة في كل المسارات. */
+export async function rateLimitOrThrow(
+  db: D1Database,
+  bucket: string,
+  limit: number,
+  windowSeconds: number,
+): Promise<void> {
+  const r = await checkRateLimit(db, bucket, limit, windowSeconds);
+  if (!r.allowed) {
+    throw new HttpError(429, 'RATE_LIMITED', 'محاولات كثيرة. أعد المحاولة بعد قليل.', {
+      retryAfterSeconds: Math.ceil((r.resetAt - Date.now()) / 1000),
+    });
+  }
 }
 
 /** تنظيف النوافذ القديمة — يُستدعى من cron أو نادرًا */

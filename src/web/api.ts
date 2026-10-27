@@ -50,7 +50,12 @@ export const api = {
 
   // ---- المرحلة 2: التعلم ----
   progress: () => request<ProgressPayload>('/api/me/progress'),
-  submitPlacement: (body: { targetLevel: 'A1' | 'A2'; answers?: Record<string | number, string>; score?: number; answersCount?: number }) =>
+  placementQuestions: () =>
+    request<{
+      questions: { id: number; level: string; promptAr: string; stemEs?: string; options: { id: string; text: string }[] }[];
+    }>('/api/me/placement/questions'),
+  // الخادم وحده يصحّح: العميل يرسل الإجابات فقط، بلا درجة ولا مستوى.
+  submitPlacement: (body: { answers: Record<string | number, string> }) =>
     request<{
       passed: boolean;
       score: number;
@@ -119,7 +124,7 @@ export interface ReviewPayload {
     reviewsRemaining: number;
     dayBoundary: string;
   };
-  emptyReason: 'NOTHING_DUE' | 'DAILY_LIMIT_REACHED' | null;
+  emptyReason: 'NOTHING_DUE' | 'DAILY_LIMIT_REACHED' | 'NO_VALID_CARDS' | null;
 }
 
 export interface ReviewResult {

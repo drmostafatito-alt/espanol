@@ -1,0 +1,604 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "a1-completion",
+ "pronunciationNoteAr": "لا تتضمن هذه الحزمة IPA ولا تلميحات نطق عربية؛ أُلّفت بمساعدة الذكاء الاصطناعي وتنتظر مراجعة بشرية (يفضَّل متحدث أصلي) قبل أي نشر. لا تعتمد على أي نطق مكتوب هنا للنطق الدقيق.",
+ "source": {
+  "title": "استكمال المعجم — تأليف بمساعدة الذكاء الاصطناعي، بانتظار مراجعة بشرية قبل أي نشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-27",
+  "rankingNote": "لا يحمل أي مدخل هنا ترتيب شيوع؛ internalRank متروك فارغًا عمدًا حتى تراجعه يد بشرية. كل المدخلات بحالة draft."
+ },
+ "entries": [
+  {
+   "headword": "cada",
+   "normalized": "cada",
+   "kind": "word",
+   "pos": "det",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "كل / جميع",
+     "meaningArEg": "كل",
+     "glossEs": "cada",
+     "exampleEs": "Cada día estudio español.",
+     "exampleAr": "أذاكر الإسبانية كل يوم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cada día estudio español.",
+     "ar": "أذاكر الإسبانية كل يوم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "centro",
+   "normalized": "centro",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "centros",
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وسط / مركز (المدينة)",
+     "meaningArEg": "وسط",
+     "glossEs": "centro",
+     "exampleEs": "El banco está cerca del centro.",
+     "exampleAr": "البنك قريب من وسط المدينة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El banco está cerca del centro.",
+     "ar": "البنك قريب من وسط المدينة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cien",
+   "normalized": "cien",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مئة",
+     "meaningArEg": "مئة",
+     "glossEs": "número: cien",
+     "exampleEs": "Cuesta cien euros en total.",
+     "exampleAr": "السعر مئة يورو في المجموع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cuesta cien euros en total.",
+     "ar": "السعر مئة يورو في المجموع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cincuenta",
+   "normalized": "cincuenta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خمسون",
+     "meaningArEg": "خمسون",
+     "glossEs": "número: cincuenta",
+     "exampleEs": "Cincuenta y tres euros, por favor.",
+     "exampleAr": "ثلاثة وخمسون يورو، من فضلك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Cincuenta y tres euros, por favor.",
+     "ar": "ثلاثة وخمسون يورو، من فضلك.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cuarenta",
+   "normalized": "cuarenta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أربعون",
+     "meaningArEg": "أربعون",
+     "glossEs": "número: cuarenta",
+     "exampleEs": "Ese cuesta cuarenta y cinco euros.",
+     "exampleAr": "ذاك سعره خمسة وأربعون يورو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ese cuesta cuarenta y cinco euros.",
+     "ar": "ذاك سعره خمسة وأربعون يورو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cuerpo",
+   "normalized": "cuerpo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "cuerpos",
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جسم / جسد",
+     "meaningArEg": "جسم",
+     "glossEs": "cuerpo",
+     "exampleEs": "El deporte es bueno para el cuerpo.",
+     "exampleAr": "الرياضة مفيدة للجسم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El deporte es bueno para el cuerpo.",
+     "ar": "الرياضة مفيدة للجسم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "dónde",
+   "normalized": "dónde",
+   "kind": "word",
+   "pos": "adv",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أين (استفهام)",
+     "meaningArEg": "فين",
+     "glossEs": "dónde",
+     "exampleEs": "¿Dónde está el banco?",
+     "exampleAr": "أين البنك؟",
+     "exampleArEg": null,
+     "usageNoteAr": "dónde بنبرة للسؤال؛ donde بلا نبرة للوصل.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "¿Dónde está el banco?",
+     "ar": "أين البنك؟",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "euro",
+   "normalized": "euro",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "euros",
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يورو (عملة)",
+     "meaningArEg": "يورو",
+     "glossEs": "euro",
+     "exampleEs": "Un euro son cien céntimos.",
+     "exampleAr": "اليورو الواحد يساوي مئة سنت.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Un euro son cien céntimos.",
+     "ar": "اليورو الواحد يساوي مئة سنت.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "hasta",
+   "normalized": "hasta",
+   "kind": "word",
+   "pos": "prep",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حتى / إلى (حد)",
+     "meaningArEg": "لحد",
+     "glossEs": "hasta",
+     "exampleEs": "Trabajo hasta las seis.",
+     "exampleAr": "أعمل حتى السادسة.",
+     "exampleArEg": null,
+     "usageNoteAr": "حرف جر يدل على الحد الزمني أو المكاني.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Trabajo hasta las seis.",
+     "ar": "أعمل حتى السادسة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "ochenta",
+   "normalized": "ochenta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ثمانون",
+     "meaningArEg": "ثمانون",
+     "glossEs": "número: ochenta",
+     "exampleEs": "Ochenta personas asistieron al concierto.",
+     "exampleAr": "حضر الحفل ثمانون شخصًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Ochenta personas asistieron al concierto.",
+     "ar": "حضر الحفل ثمانون شخصًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "primero",
+   "normalized": "primero",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أول",
+     "meaningArEg": "أول",
+     "glossEs": "primero, primer",
+     "exampleEs": "Tomas la primera calle a la derecha.",
+     "exampleAr": "اسلك أول شارع على اليمين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tomas la primera calle a la derecha.",
+     "ar": "اسلك أول شارع على اليمين.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "primera"
+    }
+   ]
+  },
+  {
+   "headword": "sesenta",
+   "normalized": "sesenta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ستون",
+     "meaningArEg": "ستون",
+     "glossEs": "número: sesenta",
+     "exampleEs": "Son sesenta euros en total.",
+     "exampleAr": "المجموع ستون يورو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Son sesenta euros en total.",
+     "ar": "المجموع ستون يورو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "setenta",
+   "normalized": "setenta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سبعون",
+     "meaningArEg": "سبعون",
+     "glossEs": "número: setenta",
+     "exampleEs": "El hotel cuesta setenta euros por noche.",
+     "exampleAr": "الفندق سعره سبعون يورو لليلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El hotel cuesta setenta euros por noche.",
+     "ar": "الفندق سعره سبعون يورو لليلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "treinta",
+   "normalized": "treinta",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ثلاثون",
+     "meaningArEg": "ثلاثون",
+     "glossEs": "número: treinta",
+     "exampleEs": "El libro de gramática cuesta treinta y cinco euros.",
+     "exampleAr": "كتاب القواعد سعره خمسة وثلاثون يورو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El libro de gramática cuesta treinta y cinco euros.",
+     "ar": "كتاب القواعد سعره خمسة وثلاثون يورو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "veinte",
+   "normalized": "veinte",
+   "kind": "word",
+   "pos": "num",
+   "gender": null,
+   "plural": null,
+   "level": "A1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عشرون",
+     "meaningArEg": "عشرون",
+     "glossEs": "número: veinte",
+     "exampleEs": "El libro cuesta veinte euros.",
+     "exampleAr": "سعر الكتاب عشرون يورو.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El libro cuesta veinte euros.",
+     "ar": "سعر الكتاب عشرون يورو.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  }
+ ]
+}

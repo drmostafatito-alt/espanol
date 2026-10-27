@@ -74,16 +74,17 @@ EOF
 
 # 3) قاعدة D1 المحلية + البذور + استيراد المحتوى بالترتيب الموثّق
 npm run db:migrate:local && npm run db:seed:local
-for d in a1 core-vocab travel callcenter exemplars; do
-  node tools/import-content.mjs --dir "content/drafts/$d" 2>/dev/null \
-    || node tools/import-content.mjs --dir "content/$d"
-done
+# --all فقط: خطة واحدة لكل content/drafts (كل الحزم معًا) + خطة العينات.
+# الاستيراد مجلدًا بمجلد (--dir لكل مجلد) يكسر روابط الدرس↔المفردة بصمت،
+# لأن كل خطة تربط بمفردات مجلدها فقط (رُصد: 160 رابطًا بدل 1,334).
+node tools/import-content.mjs --all   # 212 درسًا + 3 عينات، draft/unreviewed
+# الافتراضي بلا وسائط يستورد content/exemplars فقط (3 دروس).
 
 # 4) التشغيل والتحقق
 npm run build               # vite build
 npm run worker:dev          # API + SPA على http://localhost:8787
 
-npm test                    # 200 اختبار vitest (14 ملفًا)
+npm test                    # اختبارات vitest (العدد الحالي يظهر في مخرجات التشغيل)
 node tools/smoke-worker.mjs # 32 اختبار دخان على workerd/D1 (يتطلب worker:dev)
 npm run validate            # DDL + جودة المحتوى
 node tools/check-curriculum.mjs

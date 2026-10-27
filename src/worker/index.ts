@@ -9,9 +9,9 @@ import {
   json, newRequestId, readCookie, securityHeadersFor,
 } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
-import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
+import { adminAudit, changePassword, login, logout, me, revokeAllSessions, signup, updateMe } from './routes/auth';
 import { getLesson, listPaths, searchContent } from './routes/content';
-import { completeLesson, lessonSession, myProgress, submitAnswer, submitPlacementTest } from './routes/learn';
+import { completeLesson, lessonSession, myProgress, placementQuestions, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
 
 interface Ctx {
@@ -74,6 +74,8 @@ const routes: Route[] = [
   route('POST', '/api/auth/signup', (req, env, ctx) => signup(req, env, ctx.requestId)),
   route('POST', '/api/auth/login', (req, env, ctx) => login(req, env, ctx.requestId)),
   route('POST', '/api/auth/logout', (req, env, ctx) => logout(req, env, ctx.requestId)),
+  route('POST', '/api/auth/change-password', (req, env, ctx) => changePassword(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/auth/sessions/revoke-all', (req, env, ctx) => revokeAllSessions(req, env, ctx.requestId, ctx.user!), 'session'),
   route('GET', '/api/auth/me', (req, env, ctx) => me(req, env, ctx.requestId)),
 
   route('PATCH', '/api/me', (req, env, ctx) => updateMe(req, env, ctx.requestId, ctx.user!), 'session'),
@@ -85,6 +87,7 @@ const routes: Route[] = [
 
   // ---- المرحلة 2: التعلم ----
   route('GET', '/api/me/progress', (req, env, ctx) => myProgress(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('GET', '/api/me/placement/questions', (req, env, ctx) => placementQuestions(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/me/placement', (req, env, ctx) => submitPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('GET', '/api/lessons/:slug/session', (req, env, ctx) => lessonSession(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/lessons/:slug/answers', (req, env, ctx) => submitAnswer(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),

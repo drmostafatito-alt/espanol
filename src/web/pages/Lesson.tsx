@@ -110,6 +110,20 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     }
   }, [answer, audio, busy, current, slug]);
 
+  const [completionError, setCompletionError] = useState<string | null>(null);
+
+  const finishLesson = useCallback(() => {
+    setCompletionError(null);
+    void (async () => {
+      try {
+        const res = await api.completeLesson(slug, newEventId());
+        setCompletion(res);
+      } catch (err) {
+        setCompletionError(err instanceof ApiError ? err.message : 'تعذّر حساب النتيجة.');
+      }
+    })();
+  }, [slug]);
+
   const next = useCallback(() => {
     if (index + 1 < exercises.length) {
       setIndex(i => i + 1);
@@ -119,16 +133,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       setPhase('exercise');
     } else {
       setPhase('done');
-      void (async () => {
-        try {
-          const res = await api.completeLesson(slug, newEventId());
-          setCompletion(res);
-        } catch (err) {
-          setError(err instanceof ApiError ? err.message : 'تعذّر حساب النتيجة.');
-        }
-      })();
+      finishLesson();
     }
-  }, [exercises.length, index, slug]);
+  }, [exercises.length, index, finishLesson]);
 
   if (phase === 'loading') return <p className="container muted">جارٍ تحميل الدرس…</p>;
 
@@ -160,6 +167,8 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
       <div className="container" style={{ maxWidth: 720 }}>
         <ResultScreen
           completion={completion}
+          completionError={completionError}
+          onRetryCompletion={finishLesson}
           session={session}
           results={results}
           onBack={() => navigate('/learn')}
@@ -168,6 +177,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
             setAnswer(null);
             setResult(null);
             setCompletion(null);
+            setCompletionError(null);
             setResults({});
             startedAt.current = Date.now();
             setPhase('exercise');
@@ -183,9 +193,9 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   return (
     <div className="container" style={{ maxWidth: 720 }}>
       {session.lesson.provenance && (
-        <span className="sr-only" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', border: 0 }}>
+        <div className="alert" role="status" style={{ marginBottom: 'var(--s-3)' }}>
           {session.lesson.provenance.warningAr}
-        </span>
+        </div>
       )}
 
       <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
@@ -352,7 +362,8 @@ function ExerciseBody({
     recognizer.start();
   };
 
-  const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  // زر الاستماع يظهر فقط عندما يوجد نص قابل للنطق — وإلا كان زرًا صامتًا لا يفعل شيئًا
+  const hasAudio = !!(exercise.speechEs || exercise.stemEs);
   const playButton = hasAudio ? (
     <button className="btn secondary sm" data-testid="lesson-audio" onClick={onPlayAudio} type="button">
       🔊 استمع
@@ -606,12 +617,16 @@ function ExerciseBody({
 
 function ResultScreen({
   completion,
+  completionError,
+  onRetryCompletion,
   session,
   results,
   onBack,
   onRetry,
 }: {
   completion: CompleteResult | null;
+  completionError: string | null;
+  onRetryCompletion: () => void;
   session: LessonSession;
   results: Record<string, boolean | null>;
   onBack: () => void;
@@ -622,7 +637,13 @@ function ResultScreen({
   return (
     <div className="card" data-testid="lesson-result">
       <h1 style={{ marginTop: 0 }}>انتهى الدرس</h1>
-      {!completion && <p className="muted">جارٍ حساب النتيجة على الخادم…</p>}
+      {!completion && !completionError && <p className="muted">جارٍ حساب النتيجة على الخادم…</p>}
+      {!completion && completionError && (
+        <div className="alert" role="alert">
+          <p style={{ margin: 0 }}>{completionError}</p>
+          <button className="btn sm" style={{ marginTop: 'var(--s-2)' }} onClick={onRetryCompletion}>أعد حساب النتيجة</button>
+        </div>
+      )}
       {completion && (
         <>
           <div className="stat-row" style={{ marginTop: 'var(--s-3)' }}>

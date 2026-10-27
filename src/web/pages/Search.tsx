@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
-import { searchEngine, type SearchResponse } from '../../shared/search-engine';
+import type { SearchResponse } from '../../shared/search-engine';
 
 export function Search({
   navigate,
@@ -17,30 +17,31 @@ export function Search({
   const [kind, setKind] = useState<'all' | 'vocab' | 'grammar' | 'lesson'>('all');
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [busy, setBusy] = useState(false);
+  const [searchError, setSearchError] = useState<string | null>(null);
   const [audioNotice, setAudioNotice] = useState<string | null>(null);
 
   const performSearch = useCallback(async (q: string, lev: string, k: string) => {
     const trimmed = q.trim();
     if (!trimmed) {
       setResponse(null);
+      setSearchError(null);
       return;
     }
     setBusy(true);
     setAudioNotice(null);
     try {
-      // نجرّب الخادم أولاً، مع fallback محلي فوري
+      // البحث خادمي فقط: الفهرس المضمّن في الحزمة بلا بيانات دروس عمدًا،
+      // فأي fallback محلي للدروس كان سيكشف المسودات. فشل الخادم = لا
+      // نتائج ورسالة صريحة، لا بيانات من مصدر غير مفحوص الرؤية.
       const res = await api.search(trimmed, {
         level: lev === 'all' ? undefined : lev,
         kind: k === 'all' ? undefined : k,
       });
       setResponse(res);
+      setSearchError(null);
     } catch {
-      // المحرك المحلي يعمل مباشرة في المتصفح أيضًا
-      const res = searchEngine.search(trimmed, {
-        level: lev === 'all' ? undefined : lev,
-        kind: k === 'all' ? undefined : (k as any),
-      });
-      setResponse(res);
+      setResponse({ query: trimmed, total: 0, results: [], executionMs: 0 });
+      setSearchError('تعذّر الاتصال بخدمة البحث. تحقق من الاتصال وحاول مجددًا.');
     } finally {
       setBusy(false);
     }
@@ -124,6 +125,18 @@ export function Search({
         <p role="status" className="small" data-testid="search-audio-notice" style={{ color: 'var(--color-primary)' }}>
           {audioNotice}
         </p>
+      )}
+
+      {searchError && (
+        <p role="status" className="small" data-testid="search-error" style={{ color: 'var(--color-error, #b3261e)' }}>
+          {searchError}
+        </p>
+      )}
+
+      {response?.contentProvenance === 'unreviewed_sample' && (
+        <div className="alert" role="status" data-testid="search-provenance-warning">
+          هذه النتائج تتضمن محتوى غير مراجَع: الدروس والقواعد المعروضة هنا مسودات بانتظار المراجعة البشرية، ولا تُعرض للمتعلمين في الوضع العادي.
+        </div>
       )}
 
       {busy && <p className="muted small">جارٍ البحث…</p>}
@@ -242,7 +255,7 @@ export function Search({
       {!query.trim() && (
         <div className="card" style={{ textAlign: 'center', padding: 'var(--s-5) var(--s-3)' }}>
           <p className="muted" style={{ fontSize: '1.1rem', margin: 0 }}>
-            ابحث في معجم يضم أكثر من 8,000 مفردة و212 درسًا تفاعليًا وقواعد الإسبانية كاملة.
+            ابحث في معجم يضم أكثر من 8,000 مفردة ومعانيها، وقواعد الإسبانية، ومواضيع الدروس المتاحة لك.
           </p>
           <div className="row" style={{ justifyContent: 'center', gap: 'var(--s-2)', marginTop: 'var(--s-3)', flexWrap: 'wrap' }}>
             <span className="small muted">كلمات مقترحة:</span>

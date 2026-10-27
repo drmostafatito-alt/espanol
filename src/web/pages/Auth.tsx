@@ -56,7 +56,7 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
     <div className="container narrow">
       <h1>إنشاء حساب</h1>
       <p className="muted small">
-        نطلب البريد لأتمكن من استعادة حسابك لاحقًا. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
+        نطلب البريد لتعريف حسابك وحفظ تقدمك فيه. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
       </p>
       <form className="card stack" onSubmit={onSubmit} noValidate>
         <ErrorBox error={error} />
@@ -107,7 +107,7 @@ export function Login({ navigate }: { navigate: (to: string) => void }) {
         </label>
         <button className="btn block" type="submit" disabled={busy}>{busy ? 'جارٍ الدخول…' : 'دخول'}</button>
         <p className="small muted">
-          نسيت كلمة المرور؟ <strong>غير مفعّل حاليًا</strong> — لم يُعِد المالك مزوّد بريد بعد، ولا ندّعي أنه يعمل.
+          نسيت كلمة المرور؟ <strong>استعادة كلمة المرور غير متاحة حاليًا.</strong>
         </p>
         <p className="small muted">
           لا تملك حسابًا؟ <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>

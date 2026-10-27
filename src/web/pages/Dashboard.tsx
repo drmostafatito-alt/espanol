@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api, type ProgressPayload, type ReviewPayload, type ProgressLessonItem } from '../api';
 import { useAuth } from '../state';
-import { AudioDemo } from '../components/AudioDemo';
 
 interface PathRow {
   slug: string;
@@ -18,7 +17,14 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const [progress, setProgress] = useState<ProgressPayload | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [review, setReview] = useState<ReviewPayload | null>(null);
+  const [reviewError, setReviewError] = useState(false);
+  const [pathsError, setPathsError] = useState(false);
   const [selectedTab, setSelectedTab] = useState<string>('ALL');
+
+  function loadReview() {
+    setReviewError(false);
+    api.reviewSession(1).then(r => setReview(r)).catch(() => setReviewError(true));
+  }
 
   useEffect(() => {
     let alive = true;
@@ -27,11 +33,11 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
         if (!alive) return;
         setPaths(p.paths);
         setProgress(pr);
-        api.reviewSession(1).then(r => alive && setReview(r)).catch(() => undefined);
+        loadReview();
       })
       .catch(() => {
         if (!alive) return;
-        setPaths([]);
+        setPathsError(true);
         setLoadError('تعذّر تحميل بيانات التقدم. الأرقام أدناه غير معروضة حتى تصل من الخادم.');
       });
     return () => {
@@ -43,9 +49,6 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const style = { fusha: 'العربية الفصحى فقط', eg: 'العامية المصرية', fusha_eg: 'فصحى + توضيح مصري' }[user.explanationStyle];
   const lessons = progress?.lessons ?? [];
   const completedLessons = progress?.totals.lessons_completed ?? 0;
-  const totalXp = progress?.stats.xp_total ?? 0;
-  // رصيد الجواهر الافتراضية المحسوب من الإنجاز الفعلي
-  const gemsCount = (completedLessons * 5) + Math.floor(totalXp / 25);
 
   const filteredLessons = lessons.filter(l => {
     if (selectedTab === 'ALL') return true;
@@ -102,6 +105,12 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
       </header>
 
       {loadError && <div className="alert" role="alert">{loadError}</div>}
+
+      {progress?.contentProvenance && (
+        <div className="alert" role="status" style={{ marginBottom: 'var(--s-3)' }}>
+          {progress.contentProvenance.warningAr}
+        </div>
+      )}
 
       {/* بطاقة خطوتك التالية */}
       {nextLesson && (
@@ -164,65 +173,50 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
           <div>
             <h2 style={{ marginTop: 0, marginBottom: 4 }}>المراجعة المتباعدة الذكية</h2>
             <p className="small muted" style={{ margin: 0 }}>
-              {review === null
-                ? 'جارٍ حساب ما هو مستحق…'
-                : review.session.totalCards === 0
-                  ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
-                  : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
+              {reviewError
+                ? 'تعذّر حساب البطاقات المستحقة.'
+                : review === null
+                  ? 'جارٍ حساب ما هو مستحق…'
+                  : review.session.totalCards === 0
+                    ? 'لا بطاقات بعد — إتمام درس يضيف مفرداته تلقائيًا، أو ابدأ حزمة مفردات.'
+                    : `${review.session.dueNow} بطاقة مستحقة الآن · ${review.session.totalCards} بطاقة في مجموعتك`}
             </p>
           </div>
           <div className="row">
+            {reviewError && (
+              <button className="btn ghost sm" onClick={loadReview}>أعد المحاولة</button>
+            )}
             <button className="btn" onClick={() => navigate('/review')} data-testid="review-start">ابدأ المراجعة</button>
             <button className="btn secondary" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
           </div>
         </div>
       </section>
 
-      {/* الإحصاءات والصوت */}
-      <div className="grid cols-2">
-        <section className="card">
-          <h2>حالة تعلّمك</h2>
-          {progress === null ? (
-            <p className="muted small">جارٍ التحميل من الخادم…</p>
-          ) : (
-            <>
-              <div className="stat-row">
-                <div className="stat" data-testid="stat-lessons">
-                  <b className="num">{progress.totals.lessons_completed}/{progress.totals.lessons_total}</b>
-                  <span>دروس مكتملة</span>
-                </div>
-                <div className="stat" data-testid="stat-xp">
-                  <b className="num">{progress.stats.xp_total}</b>
-                  <span>إجمالي XP</span>
-                </div>
-                <div className="stat">
-                  <b className="num">{progress.stats.streak_current}</b>
-                  <span>أيام متتابعة</span>
-                </div>
-                <div className="stat" data-testid="stat-gems">
-                  <b className="num" style={{ color: 'var(--color-primary, #0066cc)' }}>💎 {gemsCount}</b>
-                  <span>جواهر</span>
-                </div>
-              </div>
-              <p className="small muted" style={{ marginTop: 'var(--s-3)', marginBottom: 0 }}>
-                كل رقم هنا مقروء من قاعدة البيانات بعد تحقّق الخادم. لا عدّادات محلية ولا نقاط غير محفوظة.
-              </p>
-            </>
-          )}
-        </section>
-
-        <section className="card">
-          <h2>تدريب النطق</h2>
-          <AudioDemo
-            text="Quiero un café con leche para llevar, por favor."
-            audioKey="pending/a1-cafe-full-order"
-            variant={user.audioVariant}
-          />
-        </section>
-      </div>
+      {/* الإحصاءات */}
+      <section className="card" style={{ marginBottom: 'var(--s-4)' }}>
+        <h2>حالة تعلّمك</h2>
+        {progress === null ? (
+          <p className="muted small">جارٍ التحميل من الخادم…</p>
+        ) : (
+          <div className="stat-row">
+            <div className="stat" data-testid="stat-lessons">
+              <b className="num">{progress.totals.lessons_completed}/{progress.totals.lessons_total}</b>
+              <span>دروس مكتملة</span>
+            </div>
+            <div className="stat" data-testid="stat-xp">
+              <b className="num">{progress.stats.xp_total}</b>
+              <span>إجمالي XP</span>
+            </div>
+            <div className="stat">
+              <b className="num">{progress.stats.streak_current}</b>
+              <span>أيام متتابعة</span>
+            </div>
+          </div>
+        )}
+      </section>
 
       {/* خريطة المنهج والدروس */}
-      <section className="card" style={{ marginTop: 'var(--s-4)' }}>
+      <section className="card" id="curriculum-map" style={{ marginTop: 'var(--s-4)' }}>
         <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--s-3)' }}>
           <div>
             <h2 style={{ margin: 0 }}>خريطة المنهج والدروس</h2>
@@ -379,7 +373,8 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
       {/* المسارات التخصصية */}
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
         <h2>المسارات التطبيقية المتخصصة</h2>
-        {paths === null && <p className="muted small">جارٍ التحميل…</p>}
+        {paths === null && !pathsError && <p className="muted small">جارٍ التحميل…</p>}
+        {pathsError && <p className="muted small">تعذّر تحميل المسارات. أعد تحميل الصفحة للمحاولة مجددًا.</p>}
         {paths && paths.length === 0 && <p className="muted small">لا مسارات منشورة بعد.</p>}
         <ul className="list-plain">
           {(paths ?? []).map(p => (
@@ -390,6 +385,15 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
               </div>
               <span className="row small muted">
                 <span className="num">{p.lessons_count}</span> درسًا · <span className="num">{p.units_count}</span> وحدة
+                <button
+                  className="btn ghost sm"
+                  onClick={() => {
+                    setSelectedTab(p.slug === 'travel' ? 'travel' : p.slug === 'callcenter' ? 'callcenter' : 'ALL');
+                    document.getElementById('curriculum-map')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  عرض الدروس
+                </button>
               </span>
             </li>
           ))}

@@ -8,6 +8,12 @@
  * لأن النسختين تستخدمان نفس المولّد، لا يمكن أن تنحرف إحداهما عن الأخرى.
  *
  * قاعدة غير قابلة للتفاوض: لا يوجد هنا سطر يكتب 'published'.
+ *
+ * ملاحظة مخطط (2026-10-27): جدول `vocabulary_forms` في المخطط لا يُعبَّأ هنا
+ * عمدًا — لا ميزة في المنتج تستعلمه، والتصريفات تصل للبحث عبر الفهرس الثابت
+ * (tools/generate-search-index.mjs من `forms[]` في ملفات المفردات). لا تحذف
+ * الجدول ولا تبنِ خط تعبئة له حتى تظهر ميزة تستعلمه فعلًا؛ حينها يُعبَّأ من
+ * المصدر نفسه (ملفات المفردات) مع اختبار استعلام.
  */
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync } from 'node:fs';
@@ -40,6 +46,21 @@ export function stableId(prefix, seed) {
   for (let i = 0; i < 12; i++) out += ENC[digest[i] % 32];
   return `${prefix}_${out}`;
 }
+
+/**
+ * صيغ لا تُربط تلقائيًا بمدخلها الفعلي رغم وجودها في `forms[]` — لأن الدرس
+ * يستخدمها بمعنى آخر (اسم/صفة/حرف)، وربطها بالفعل كان سيعلّم الكلمة الخطأ.
+ * الدليل: تدقيق مراجع المفردات 2026-10-27 (جُمل مقتبسة لكل حالة في التقرير).
+ * أي إضافة هنا تتطلب دليل جملة من الدرس نفسه. `visto` محجوز بانتظار تأكيد
+ * بشري (participle لـver مقابل 1s لـvestir)، و`normativa`/`cabria` لقرار
+ * لغوي (اسم مؤنث / صيغة بلا نبرة في المرجع).
+ */
+const FORM_LINK_BLOCKLIST = new Set([
+  'acuerdo', 'argumento', 'como', 'para', 'asombro', 'contraste', 'debate',
+  'enfoque', 'estimado', 'logro', 'sublime', 'cambio', 'comunicado',
+  'estudio', 'incremento', 'mareo', 'parecido', 'pica', 'desarrollo',
+  'fui', 'anhelo', 'cabria', 'normativa', 'visto',
+]);
 
 const q = (v) => (v === null || v === undefined ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`);
 const j = (v) => q(JSON.stringify(v ?? {}));
@@ -105,10 +126,34 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
     }
   }
 
+  // خريطة الصيغ ⇒ المدخل: تُبنى من `forms[]` وحقل `plural` في الحزم نفسها.
+  // تُستخدم احتياطيًا فقط عند غياب تطابق حرفي مع `normalized`، وبشرط أن تكون
+  // الصيغة غير ملتبسة (مدخل واحد فقط) وغير محجوبة في FORM_LINK_BLOCKLIST.
+  // لا مطابقة بلا تشكيل هنا أبدًا: `papa`/`papá` و`año`/`ano` لا تُدمج.
+  const formOwners = new Map(); // formNorm -> Set<entryId>
+  const noteForm = (formEs, entryId) => {
+    const formNorm = String(formEs).toLowerCase().trim();
+    if (!formNorm) return;
+    if (!formOwners.has(formNorm)) formOwners.set(formNorm, new Set());
+    formOwners.get(formNorm).add(entryId);
+  };
+
   for (const file of vocabFiles) {
     for (const entry of load(file).entries ?? []) {
-      if (entry.normalized) vocabIdByNormalized.set(entry.normalized, stableId('voc', entry.normalized));
+      if (!entry.normalized) continue;
+      const entryId = stableId('voc', entry.normalized);
+      vocabIdByNormalized.set(entry.normalized, entryId);
+      for (const f of entry.forms ?? []) noteForm(f.formEs, entryId);
+      if (entry.plural) noteForm(entry.plural, entryId);
     }
+  }
+
+  const formToEntry = new Map(); // formNorm -> entryId (غير ملتبس فقط)
+  for (const [formNorm, owners] of formOwners) {
+    if (owners.size !== 1) continue; // صيغة مشتركة بين مدخلين (fui: ser/ir) — لا تخمين
+    if (vocabIdByNormalized.has(formNorm)) continue; // كلمة قائمة بذاتها تتغلب
+    if (FORM_LINK_BLOCKLIST.has(formNorm)) continue; // معنى آخر في الدرس — قرار بشري
+    formToEntry.set(formNorm, [...owners][0]);
   }
 
   for (const file of lessonFiles) {
@@ -179,6 +224,9 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
               stemEs: ex.stemEs ?? null,
               stemAr: ex.stemAr ?? null,
               audioKey: ex.audioKey ?? null,
+              // نص النطق الذي كتبه المؤلف — يُحفظ كما هو؛ الخادم لا يشتق
+              // speechEs من مفتاح الإجابة، فبدون هذا الحقل تضيع أصوات مؤلفة.
+              speechEs: ex.speechEs ?? null,
             })}, ${j(answerKey)}, ${q(ex.explanationAr)}, ${j(errorFeedback)},
             ${n(ex.difficulty ?? 2)}, ${j(ex.skills ?? [])}, ${j({ audioKey: ex.audioKey ?? null })}, ${n(idx + 1)})
             ON CONFLICT(id) DO UPDATE SET prompt_json=excluded.prompt_json, answer_key_json=excluded.answer_key_json,
@@ -215,7 +263,8 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
     const linkVocab = (words, role) => {
       for (const wRaw of words ?? []) {
         const norm = String(wRaw).toLowerCase().trim();
-        const entryId = vocabIdByNormalized.get(norm);
+        // تطابق حرفي أولًا، ثم صيغة غير ملتبسة من vocabulary_forms (forms[]/plural).
+        const entryId = vocabIdByNormalized.get(norm) ?? formToEntry.get(norm);
         if (!entryId) continue; // مفردة غير موجودة في حزم هذا المجلد — تحذير في المدقق
         deferredVocabLinks.push(`INSERT INTO lesson_vocabulary (lesson_id, entry_id, role)
             VALUES (${q(lessonId)}, ${q(entryId)}, ${q(role)}) ON CONFLICT(lesson_id, entry_id) DO NOTHING`);
@@ -280,6 +329,27 @@ export function buildContentPlan(dir, { existingVersions = {} } = {}) {
         statements.push(`INSERT INTO vocabulary_tag_links (entry_id, tag_id) VALUES (${q(entryId)}, ${q(tagId)}) ON CONFLICT(entry_id, tag_id) DO NOTHING`);
         counters.tags++;
       }
+
+      // تعبئة vocabulary_forms من المصدر نفسه (forms[] + plural في ملف الحزمة):
+      // الجدول كان ميتًا (DDL فقط بلا كتابة ولا قراءة)؛ الآن هو مصدر حقيقة
+      // الصيغ للربط الاحتياطي أعلاه. إزالة تكرار داخل الخطة (نفس الصيغة
+      // لشخصين) بمفتاح كامل؛ وعند إعادة الاستيراد يحمي ON CONFLICT(id).
+      const seenForms = new Set();
+      const emitForm = (kind, formEs, tense, mood, person, irregular) => {
+        const key = `${entryId}|${kind}|${formEs}|${tense ?? ''}|${mood ?? ''}|${person ?? ''}`;
+        if (seenForms.has(key)) return;
+        seenForms.add(key);
+        const formId = stableId('vfm', `${entry.normalized}/${kind}/${formEs}/${tense ?? ''}/${mood ?? ''}/${person ?? ''}`);
+        statements.push(`INSERT INTO vocabulary_forms (id, entry_id, form_kind, form_es, tense, mood, person, is_irregular)
+            VALUES (${q(formId)}, ${q(entryId)}, ${q(kind)}, ${q(formEs)}, ${q(tense ?? null)}, ${q(mood ?? null)}, ${q(person ?? null)}, ${n(irregular ? 1 : 0)})
+            ON CONFLICT(id) DO NOTHING`);
+        counters.forms = (counters.forms ?? 0) + 1;
+      };
+      for (const f of entry.forms ?? []) {
+        if (!f?.formEs || !['conjugation', 'plural', 'feminine', 'participle', 'gerund', 'diminutive'].includes(f.kind)) continue;
+        emitForm(f.kind, f.formEs, f.tense ?? null, f.mood ?? null, f.person ?? null, f.irregular);
+      }
+      if (entry.plural) emitForm('plural', entry.plural, null, null, null, false);
     }
   }
 

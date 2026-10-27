@@ -52,9 +52,9 @@ npx wrangler deploy --env staging
 
 - [ ] `node tools/check-sql.mjs` PASS
 - [ ] `node tools/validate-content.mjs` PASS (0 أخطاء)
-- [ ] `npm run deploy:preflight` **(إلزامي)** — يجب أن يعطي `PASS` (كود خروج 0). أي `FAIL` (1) = إعداد تطوير لا يُنشر، وأي `BLOCKED` (2) = حاجز إطلاق مفتوح يحتاج قرارًا مكتوبًا في `SECURITY_BLOCKERS.md`.
+- [ ] `npm run deploy:preflight` **(إلزامي)** — على `wrangler.toml` الملتزَم (إعداد تطوير) يجب أن يعطي `FAIL` (كود خروج 1): هذا هو سلوكه الصحيح، فهو يرفض نشر إعداد التطوير. `PASS` (0) مطلوب فقط عند فحص ملف/قسم إنتاج حقيقي.
   - يقرأ قسم المتغيّرات تلقائيًا: `[env.production.vars]` إن وُجد، وإلا `[vars]`. لبيئة أخرى: `--env staging`.
-- [ ] `npm run test` + `test:integration` + `test:e2e` كلها خضراء
+- [ ] `npm run test` + `node tools/smoke-worker.mjs` + `test:e2e` كلها خضراء
 - [ ] المراجعة البشرية: 100% من الدروس المنشورة لها سجلا مراجعة
 - [ ] لا `pending/` في أي `audioKey` لدرس منشور
 - [ ] مراجعة المتغيرات والأسرار (`14_ENVIRONMENT_VARIABLES.md`)

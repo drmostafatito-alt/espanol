@@ -1,0 +1,5824 @@
+{
+ "schemaVersion": "1.0.0",
+ "bundleSlug": "c1-completion",
+ "pronunciationNoteAr": "لا تتضمن هذه الحزمة IPA ولا تلميحات نطق عربية؛ أُلّفت بمساعدة الذكاء الاصطناعي وتنتظر مراجعة بشرية (يفضَّل متحدث أصلي) قبل أي نشر. لا تعتمد على أي نطق مكتوب هنا للنطق الدقيق.",
+ "source": {
+  "title": "استكمال المعجم — تأليف بمساعدة الذكاء الاصطناعي، بانتظار مراجعة بشرية قبل أي نشر",
+  "url": "",
+  "license": "internal-draft",
+  "accessedAt": "2026-10-27",
+  "rankingNote": "لا يحمل أي مدخل هنا ترتيب شيوع؛ internalRank متروك فارغًا عمدًا حتى تراجعه يد بشرية. كل المدخلات بحالة draft."
+ },
+ "entries": [
+  {
+   "headword": "abundamiento",
+   "normalized": "abundamiento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "abundamientos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وفرة / زيادة في التأكيد",
+     "meaningArEg": "وفرة",
+     "glossEs": "abundamiento",
+     "exampleEs": "A mayor abundamiento, los testimonios corroboran los hechos.",
+     "exampleAr": "وزيادة في التأكيد، فإن الشهادات تعزز الوقائع.",
+     "exampleArEg": null,
+     "usageNoteAr": "يظهر غالبًا في العبارة a mayor abundamiento (زيادة في التأكيد).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "A mayor abundamiento, los testimonios corroboran los hechos.",
+     "ar": "وزيادة في التأكيد، فإن الشهادات تعزز الوقائع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "acervo",
+   "normalized": "acervo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "acervos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رصيد / مخزون (ثقافي أو لغوي)",
+     "meaningArEg": "رصيد",
+     "glossEs": "acervo",
+     "exampleEs": "Enriquecen el acervo común de nuestra lengua.",
+     "exampleAr": "تثريان الرصيد المشترك للغتنا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Enriquecen el acervo común de nuestra lengua.",
+     "ar": "تثريان الرصيد المشترك للغتنا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "amanecer",
+   "normalized": "amanecer",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يُشرق / يطلع الفجر؛ يبدأ النهار",
+     "meaningArEg": "الفجر يطلع / النهار يبدأ",
+     "glossEs": "salir el sol, hacerse de día",
+     "exampleEs": "No por mucho madrugar amanece más temprano.",
+     "exampleAr": "كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+     "exampleArEg": null,
+     "usageNoteAr": "فعل شبه غير شخصي غالبًا: يُستخدم في صيغة الغائب المفرد للحديث عن الفجر.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No por mucho madrugar amanece más temprano.",
+     "ar": "كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [
+    "madrugar"
+   ],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "amanezco",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneces",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanece",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneciste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneció",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneceré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecerás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecerá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneceremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneceréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecerán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecerías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneceríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneceríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecerían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezca",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezcas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezca",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezcamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezcáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanezcan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneciera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecieras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneciera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amaneciéramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecierais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "amanecieran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "amaneciendo",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "amanecido",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "anteposición",
+   "normalized": "anteposición",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "anteposiciones",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تقديم (عنصر نحوي قبل غيره)",
+     "meaningArEg": "تقديم",
+     "glossEs": "anteposición",
+     "exampleEs": "La anteposición del adjetivo cambia el sentido.",
+     "exampleAr": "تقديم الصفة يغيّر المعنى.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La anteposición del adjetivo cambia el sentido.",
+     "ar": "تقديم الصفة يغيّر المعنى.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "arbitral",
+   "normalized": "arbitral",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تحكيمي (متعلق بالتحكيم)",
+     "meaningArEg": "تحكيمي",
+     "glossEs": "arbitral",
+     "exampleEs": "En virtud del convenio arbitral, se dictó el laudo.",
+     "exampleAr": "استنادًا إلى اتفاقية التحكيم، صدر الحكم التحكيمي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En virtud del convenio arbitral, se dictó el laudo.",
+     "ar": "استنادًا إلى اتفاقية التحكيم، صدر الحكم التحكيمي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "artificio",
+   "normalized": "artificio",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "artificios",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صنعة / زخرف / حيلة",
+     "meaningArEg": "صنعة",
+     "glossEs": "artificio",
+     "exampleEs": "Lejos de ser mero artificio vacío, el poema conmueve.",
+     "exampleAr": "أبعد من أن يكون مجرد صنعة خاوية، القصيدة مؤثرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Lejos de ser mero artificio vacío, el poema conmueve.",
+     "ar": "أبعد من أن يكون مجرد صنعة خاوية، القصيدة مؤثرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "asimetría",
+   "normalized": "asimetría",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "asimetrías",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "انعدام التكافؤ / عدم التناظر",
+     "meaningArEg": "انعدام تكافؤ",
+     "glossEs": "asimetría",
+     "exampleEs": "La asimetría de poder resulta fundamental.",
+     "exampleAr": "انعدام التكافؤ بين الطرفين أساسي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La asimetría de poder resulta fundamental.",
+     "ar": "انعدام التكافؤ بين الطرفين أساسي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "asombro",
+   "normalized": "asombro",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "asombros",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "دهشة / انبهار",
+     "meaningArEg": "دهشة",
+     "glossEs": "asombro, sorpresa",
+     "exampleEs": "Miró el paisaje con asombro.",
+     "exampleAr": "نظر إلى المشهد بدهشة.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Miró el paisaje con asombro.",
+     "ar": "نظر إلى المشهد بدهشة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cadencia",
+   "normalized": "cadencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "cadencias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إيقاع / تناغم (نص أو موسيقى)",
+     "meaningArEg": "إيقاع",
+     "glossEs": "cadencia",
+     "exampleEs": "El poema recrea la cadencia y el misterio.",
+     "exampleAr": "تعيد القصيدة توليد الإيقاع وسحر الغموض.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El poema recrea la cadencia y el misterio.",
+     "ar": "تعيد القصيدة توليد الإيقاع وسحر الغموض.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "celular",
+   "normalized": "celular",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "celulares",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هاتف محمول (في أمريكا اللاتينية)",
+     "meaningArEg": "محمول",
+     "glossEs": "celular",
+     "exampleEs": "Guardé el número en mi celular.",
+     "exampleAr": "حفظتُ الرقم في هاتفي المحمول.",
+     "exampleArEg": null,
+     "usageNoteAr": "في أمريكا اللاتينية؛ في إسبانيا يُقال móvil.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Guardé el número en mi celular.",
+     "ar": "حفظتُ الرقم في هاتفي المحمول.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cierto",
+   "normalized": "cierto",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صحيح / أكيد؛ معيّن",
+     "meaningArEg": "صحيح / أكيد",
+     "glossEs": "cierto, seguro",
+     "exampleEs": "Es cierto que el acuerdo es vinculante.",
+     "exampleAr": "من الصحيح أن الاتفاق ملزم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es cierto que el acuerdo es vinculante.",
+     "ar": "من الصحيح أن الاتفاق ملزم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "cierta"
+    }
+   ]
+  },
+  {
+   "headword": "cohesión",
+   "normalized": "cohesión",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "اتساق / ترابط (نص أو جماعة)",
+     "meaningArEg": "اتساق",
+     "glossEs": "cohesión",
+     "exampleEs": "Es indispensable asegurar una perfecta cohesión.",
+     "exampleAr": "من الضروري تأمين اتساق محكم.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es indispensable asegurar una perfecta cohesión.",
+     "ar": "من الضروري تأمين اتساق محكم.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "comunicado",
+   "normalized": "comunicado",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "comunicados",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بيان / بلاغ رسمي",
+     "meaningArEg": "بيان",
+     "glossEs": "comunicado oficial",
+     "exampleEs": "El comunicado final se publicó ayer.",
+     "exampleAr": "نُشر البيان الختامي أمس.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El comunicado final se publicó ayer.",
+     "ar": "نُشر البيان الختامي أمس.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "conceptismo",
+   "normalized": "conceptismo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مذهب المعنى وتكثيف الفكرة (أدب باروكي)",
+     "meaningArEg": "مذهب المعنى",
+     "glossEs": "conceptismo",
+     "exampleEs": "Quevedo prefiere el conceptismo.",
+     "exampleAr": "يؤثر كيبيدو مذهب المعنى وتكثيف الفكرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quevedo prefiere el conceptismo.",
+     "ar": "يؤثر كيبيدو مذهب المعنى وتكثيف الفكرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "concordia",
+   "normalized": "concordia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "وفاق / وئام",
+     "meaningArEg": "وفاق",
+     "glossEs": "concordia",
+     "exampleEs": "Apeló con vehemencia a la concordia.",
+     "exampleAr": "احتكم بحماس إلى روح الوفاق.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Apeló con vehemencia a la concordia.",
+     "ar": "احتكم بحماس إلى روح الوفاق.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "constipado",
+   "normalized": "constipado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مصاب بنزلة برد / مزكوم",
+     "meaningArEg": "مزكوم",
+     "glossEs": "constipado",
+     "exampleEs": "Está constipado, tiene un resfriado común.",
+     "exampleAr": "إنه مصاب بنزلة برد وزكام.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": "لا تعني «مصاب بالإمساك» كما في الإنجليزية constipated؛ التعبير الإسباني لنزلة البرد."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Está constipado, tiene un resfriado común.",
+     "ar": "إنه مصاب بنزلة برد وزكام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "controversia",
+   "normalized": "controversia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "controversias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جدل / نزاع",
+     "meaningArEg": "جدل",
+     "glossEs": "controversia",
+     "exampleEs": "El tribunal debe dirimir la controversia contractual.",
+     "exampleAr": "على المحكمة الفصل في النزاع التعاقدي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tribunal debe dirimir la controversia contractual.",
+     "ar": "على المحكمة الفصل في النزاع التعاقدي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cordial",
+   "normalized": "cordial",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "cordiales",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ودي / لطيف",
+     "meaningArEg": "ودي",
+     "glossEs": "cordial",
+     "exampleEs": "Aceptó encantado la cordial invitación de boda.",
+     "exampleAr": "قبل بكل سرور دعوة الزفاف الودية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Aceptó encantado la cordial invitación de boda.",
+     "ar": "قبل بكل سرور دعوة الزفاف الودية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "crecimiento",
+   "normalized": "crecimiento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نمو / ازدياد",
+     "meaningArEg": "نمو",
+     "glossEs": "crecimiento",
+     "exampleEs": "El crecimiento económico es rápido.",
+     "exampleAr": "النمو الاقتصادي سريع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El crecimiento económico es rápido.",
+     "ar": "النمو الاقتصادي سريع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "crisis",
+   "normalized": "crisis",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أزمة",
+     "meaningArEg": "أزمة",
+     "glossEs": "crisis",
+     "exampleEs": "El gabinete de crisis adoptó medidas urgentes.",
+     "exampleAr": "اتخذت خلية الأزمة تدابير عاجلة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El gabinete de crisis adoptó medidas urgentes.",
+     "ar": "اتخذت خلية الأزمة تدابير عاجلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "cualitativo",
+   "normalized": "cualitativo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "cualitativos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نوعي (متعلق بالنوع لا الكم)",
+     "meaningArEg": "نوعي",
+     "glossEs": "cualitativo",
+     "exampleEs": "El balance cualitativo evidencia un salto histórico.",
+     "exampleAr": "يثبت التقييم النوعي قفزة تاريخية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El balance cualitativo evidencia un salto histórico.",
+     "ar": "يثبت التقييم النوعي قفزة تاريخية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "culteranismo",
+   "normalized": "culteranismo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مذهب الزخرف اللفظي (أدب باروكي)",
+     "meaningArEg": "زخرف لفظي",
+     "glossEs": "culteranismo",
+     "exampleEs": "Góngora deslumbra con el culteranismo.",
+     "exampleAr": "يبهر غونغورا بمذهب الزخرف اللفظي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Góngora deslumbra con el culteranismo.",
+     "ar": "يبهر غونغورا بمذهب الزخرف اللفظي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "desarticular",
+   "normalized": "desarticular",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يفكك / يبطل (حجة أو بنية)",
+     "meaningArEg": "يفكك",
+     "glossEs": "desarticular",
+     "exampleEs": "Hemos logrado desarticular la teoría adversaria.",
+     "exampleAr": "لقد نجحنا في تفكيك النظرية المنافسة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hemos logrado desarticular la teoría adversaria.",
+     "ar": "لقد نجحنا في تفكيك النظرية المنافسة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticula",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticuláis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticuló",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularon",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularía",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticule",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticules",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticule",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticuléis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularas",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticulara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticuláramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "desarticularan",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "desarticulando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "desarticulado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "desengaño",
+   "normalized": "desengaño",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "desengaños",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خيبة أمل / زوال الوهم",
+     "meaningArEg": "خيبة أمل",
+     "glossEs": "desengaño",
+     "exampleEs": "El tema del desengaño impregna cada verso.",
+     "exampleAr": "تتخلل فكرة خيبة الأمل كل بيت شعري.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tema del desengaño impregna cada verso.",
+     "ar": "تتخلل فكرة خيبة الأمل كل بيت شعري.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "desinencia",
+   "normalized": "desinencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "desinencias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لاحقة صرفية / نهاية الكلمة",
+     "meaningArEg": "لاحقة",
+     "glossEs": "desinencia",
+     "exampleEs": "El voseo conserva una desinencia histórica.",
+     "exampleAr": "يحافظ الـvoseo على لاحقة تاريخية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El voseo conserva una desinencia histórica.",
+     "ar": "يحافظ الـvoseo على لاحقة تاريخية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "disposición",
+   "normalized": "disposición",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "disposiciones",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تصرف / استعداد / ترتيب",
+     "meaningArEg": "تصرف",
+     "glossEs": "disposición",
+     "exampleEs": "Quedo a su entera disposición para cualquier aclaración.",
+     "exampleAr": "أظل تحت تصرفكم التام لأي توضيح.",
+     "exampleArEg": null,
+     "usageNoteAr": "غالبًا في العبارة a disposición de (رهن تصرف).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quedo a su entera disposición para cualquier aclaración.",
+     "ar": "أظل تحت تصرفكم التام لأي توضيح.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "doblaje",
+   "normalized": "doblaje",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "دبلجة (ترجمة صوتية للأفلام)",
+     "meaningArEg": "دبلجة",
+     "glossEs": "doblaje",
+     "exampleEs": "Quieren amortizar los costes de doblaje.",
+     "exampleAr": "يريدون تقليص نفقات الدبلجة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Quieren amortizar los costes de doblaje.",
+     "ar": "يريدون تقليص نفقات الدبلجة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "elipsis",
+   "normalized": "elipsis",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "elipsis",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حذف (بلاغي أو نحوي)",
+     "meaningArEg": "حذف",
+     "glossEs": "elipsis",
+     "exampleEs": "En español la elipsis del sujeto es la norma general.",
+     "exampleAr": "في الإسبانية حذف ضمير الفاعل هو الأصل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En español la elipsis del sujeto es la norma general.",
+     "ar": "في الإسبانية حذف ضمير الفاعل هو الأصل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "entendedor",
+   "normalized": "entendedor",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "entendedores",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "لبيب / فَهِم (في المثل)",
+     "meaningArEg": "لبيب",
+     "glossEs": "entendedor",
+     "exampleEs": "A buen entendedor, pocas palabras bastan.",
+     "exampleAr": "اللبيب تكفيه الإشارة وأقل الكلام.",
+     "exampleArEg": null,
+     "usageNoteAr": "يظهر في المثل a buen entendedor, pocas palabras (bastan).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "A buen entendedor, pocas palabras bastan.",
+     "ar": "اللبيب تكفيه الإشارة وأقل الكلام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "equivalencia",
+   "normalized": "equivalencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "equivalencias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تكافؤ / معادلة",
+     "meaningArEg": "تكافؤ",
+     "glossEs": "equivalencia",
+     "exampleEs": "Buscamos una equivalencia estética.",
+     "exampleAr": "ننشد تكافؤًا جماليًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Buscamos una equivalencia estética.",
+     "ar": "ننشد تكافؤًا جماليًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "estimado",
+   "normalized": "estimado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "estimados",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مُقدَّر / محترم (في المخاطبات الرسمية)",
+     "meaningArEg": "محترم / مقدَّر",
+     "glossEs": "estimado, apreciado",
+     "exampleEs": "Estimado Sr. Director: le escribo por…",
+     "exampleAr": "سيدي المدير المحترم: أكتب إليكم بشأن…",
+     "exampleArEg": null,
+     "usageNoteAr": "يُستخدم في افتتاحيات الرسائل الرسمية قبل اللقب؛ صيغته المؤنثة estimada.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Estimado Sr. Director: le escribo por…",
+     "ar": "سيدي المدير المحترم: أكتب إليكم بشأن…",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "estética",
+   "normalized": "estética",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "علم الجمال / الجمالية",
+     "meaningArEg": "جماليات",
+     "glossEs": "estética",
+     "exampleEs": "La estética del poema es serena.",
+     "exampleAr": "جمالية القصيدة هادئة.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم (علم الجمال)؛ ويُستخدم أيضًا صفة مؤنثة من estético.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La estética del poema es serena.",
+     "ar": "جمالية القصيدة هادئة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "eventual",
+   "normalized": "eventual",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مؤقت / غير مستقر (وظيفة أو ظرف)",
+     "meaningArEg": "مؤقت",
+     "glossEs": "eventual",
+     "exampleEs": "Un empleo eventual es temporal e incierto.",
+     "exampleAr": "الوظيفة المؤقتة غير مستقرة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": "لا تعني «محتمل الحدوث في النهاية» كما في الإنجليزية eventual؛ المعنى الإسباني: مؤقت."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Un empleo eventual es temporal e incierto.",
+     "ar": "الوظيفة المؤقتة غير مستقرة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "eximir",
+   "normalized": "eximir",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يعفي (من التزام أو دفع)",
+     "meaningArEg": "يعفي",
+     "glossEs": "eximir",
+     "exampleEs": "Podrán eximir del pago en casos especiales.",
+     "exampleAr": "يمكن أن تعفي من الدفع في حالات خاصة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Podrán eximir del pago en casos especiales.",
+     "ar": "يمكن أن تعفي من الدفع في حالات خاصة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "eximo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "exime",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximimos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximís",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximen",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximirás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximirá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximirán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximirías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximirían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "exima",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "exima",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximieras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximiéramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximierais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "eximieran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "eximiendo",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "eximido",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "fidelidad",
+   "normalized": "fidelidad",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أمانة / إخلاص / وفاء",
+     "meaningArEg": "أمانة",
+     "glossEs": "fidelidad",
+     "exampleEs": "La verdadera fidelidad no consiste en contar palabras.",
+     "exampleAr": "ليست الأمانة الحقة في عد الكلمات حرفيًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La verdadera fidelidad no consiste en contar palabras.",
+     "ar": "ليست الأمانة الحقة في عد الكلمات حرفيًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "fortuito",
+   "normalized": "fortuito",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "fortuitos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فجائي / غير متوقع (حادث)",
+     "meaningArEg": "فجائي",
+     "glossEs": "fortuito",
+     "exampleEs": "Fuerza mayor o caso fortuito podrán eximir del pago.",
+     "exampleAr": "القوة القاهرة أو الحادث الفجائي قد تعفي من الدفع.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Fuerza mayor o caso fortuito podrán eximir del pago.",
+     "ar": "القوة القاهرة أو الحادث الفجائي قد تعفي من الدفع.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "hito",
+   "normalized": "hito",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "hitos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "معلم / محطة بارزة",
+     "meaningArEg": "معلم",
+     "glossEs": "hito",
+     "exampleEs": "Hemos alcanzado el principal hito estratégico.",
+     "exampleAr": "لقد حققنا المعلم الاستراتيجي الكبير.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hemos alcanzado el principal hito estratégico.",
+     "ar": "لقد حققنا المعلم الاستراتيجي الكبير.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "homogeneización",
+   "normalized": "homogeneización",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "توحيد / تنميط قسري",
+     "meaningArEg": "توحيد",
+     "glossEs": "homogeneización",
+     "exampleEs": "Esta homogeneización empobrece la diversidad dialectal.",
+     "exampleAr": "هذا التوحيد القسري يفقر التنوع اللهجي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Esta homogeneización empobrece la diversidad dialectal.",
+     "ar": "هذا التوحيد القسري يفقر التنوع اللهجي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "incremento",
+   "normalized": "incremento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "incrementos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "زيادة / ارتفاع",
+     "meaningArEg": "زيادة",
+     "glossEs": "incremento, aumento",
+     "exampleEs": "Hubo un notable incremento de ventas.",
+     "exampleAr": "حدثت زيادة ملحوظة في المبيعات.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم لا فعل: لا تخلط بينه وبين صيغة الفعل المتطابقة في الكتابة؛ السياق النحوي (أداة التعريف والسياق) يفرّق بينهما.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hubo un notable incremento de ventas.",
+     "ar": "حدثت زيادة ملحوظة في المبيعات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "interferencia",
+   "normalized": "interferencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "interferencias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تداخل / تشويش",
+     "meaningArEg": "تداخل",
+     "glossEs": "interferencia",
+     "exampleEs": "Muchos traductores caen en la trampa de la interferencia sintáctica.",
+     "exampleAr": "يقع العديد من المترجمين في فخ التداخل النحوي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Muchos traductores caen en la trampa de la interferencia sintáctica.",
+     "ar": "يقع العديد من المترجمين في فخ التداخل النحوي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "laudo",
+   "normalized": "laudo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "laudos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حكم تحكيمي",
+     "meaningArEg": "حكم تحكيمي",
+     "glossEs": "laudo",
+     "exampleEs": "El tribunal dictó el laudo definitivo.",
+     "exampleAr": "أصدرت هيئة التحكيم الحكم النهائي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El tribunal dictó el laudo definitivo.",
+     "ar": "أصدرت هيئة التحكيم الحكم النهائي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "lineal",
+   "normalized": "lineal",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "lineales",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "خطي / متعاقب",
+     "meaningArEg": "خطي",
+     "glossEs": "lineal",
+     "exampleEs": "García Márquez subvierte el tiempo lineal.",
+     "exampleAr": "يعطل غارسيا ماركيز الزمن الخطي المتعاقب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "García Márquez subvierte el tiempo lineal.",
+     "ar": "يعطل غارسيا ماركيز الزمن الخطي المتعاقب.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "llaga",
+   "normalized": "llaga",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "llagas",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جرح / قرحة",
+     "meaningArEg": "جرح",
+     "glossEs": "llaga",
+     "exampleEs": "Puso el dedo en la llaga del problema.",
+     "exampleAr": "وضع إصبعه على الجرح في المشكلة.",
+     "exampleArEg": null,
+     "usageNoteAr": "يظهر في التعبير poner el dedo en la llaga (إصابة موطن الألم).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Puso el dedo en la llaga del problema.",
+     "ar": "وضع إصبعه على الجرح في المشكلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "lorquiano",
+   "normalized": "lorquiano",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "منسوب إلى لوركا / متعلق بأدب لوركا",
+     "meaningArEg": "بتاع لوركا",
+     "glossEs": "lorquiano, relativo a Lorca",
+     "exampleEs": "En la obra lorquiana, la metáfora no es simple adorno.",
+     "exampleAr": "في إبداع لوركا، لا تعد الاستعارة مجرد زينة.",
+     "exampleArEg": null,
+     "usageNoteAr": "صفة مشتقة من اسم الشاعر Federico García Lorca.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En la obra lorquiana, la metáfora no es simple adorno.",
+     "ar": "في إبداع لوركا، لا تعد الاستعارة مجرد زينة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "lorquiana"
+    }
+   ]
+  },
+  {
+   "headword": "madrugar",
+   "normalized": "madrugar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يبكّر / يستيقظ مبكرًا",
+     "meaningArEg": "يبكّر",
+     "glossEs": "madrugar",
+     "exampleEs": "No por mucho madrugar amanece más temprano.",
+     "exampleAr": "كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "No por mucho madrugar amanece más temprano.",
+     "ar": "كثرة التبكير لا تجعل الفجر يبزغ قبل أوانه.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "madrugo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madruga",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugé",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madruge",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madruges",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madruge",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "madrugaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "madrugando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "madrugado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "magistral",
+   "normalized": "magistral",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "magistrales",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رائع / أستاذي (درس أو أداء)",
+     "meaningArEg": "رائع",
+     "glossEs": "magistral",
+     "exampleEs": "Dio una clase magistral.",
+     "exampleAr": "ألقى درسًا رائعًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Dio una clase magistral.",
+     "ar": "ألقى درسًا رائعًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "magno",
+   "normalized": "magno",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "عظيم / كبير (للتعظيم قبل الاسم)",
+     "meaningArEg": "عظيم",
+     "glossEs": "magno",
+     "exampleEs": "Su magno magisterio dejó una huella indeleble.",
+     "exampleAr": "تركت أستاذيته الكبرى أثرًا لا يُمحى.",
+     "exampleArEg": null,
+     "usageNoteAr": "صفة تعظيم تُستخدم قبل الاسم المذكر المفرد فقط (magno magisterio).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su magno magisterio dejó una huella indeleble.",
+     "ar": "تركت أستاذيته الكبرى أثرًا لا يُمحى.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "mayor",
+   "normalized": "mayor",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "mayores",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أكبر / أعظم (مقارنة)",
+     "meaningArEg": "أكبر",
+     "glossEs": "mayor",
+     "exampleEs": "Mi hermano mayor vive en Madrid.",
+     "exampleAr": "أخي الأكبر يعيش في مدريد.",
+     "exampleArEg": null,
+     "usageNoteAr": "صيغة مقارنة من grande؛ وتظهر في العبارة a mayor abundamiento.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Mi hermano mayor vive en Madrid.",
+     "ar": "أخي الأكبر يعيش في مدريد.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "meditativo",
+   "normalized": "meditativo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تأملي / متأمل",
+     "meaningArEg": "تأملي",
+     "glossEs": "meditativo, reflexivo",
+     "exampleEs": "Escribió un ensayo meditativo.",
+     "exampleAr": "كتب مقالًا تأمليًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Escribió un ensayo meditativo.",
+     "ar": "كتب مقالًا تأمليًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "meditativa"
+    }
+   ]
+  },
+  {
+   "headword": "mestizo",
+   "normalized": "mestizo",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "هجين / مختلط الثقافات",
+     "meaningArEg": "هجين",
+     "glossEs": "mestizo, mixto",
+     "exampleEs": "El arte mestizo mezcla tradiciones.",
+     "exampleAr": "الفن الهجين يمزج التقاليد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El arte mestizo mezcla tradiciones.",
+     "ar": "الفن الهجين يمزج التقاليد.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "mestiza"
+    }
+   ]
+  },
+  {
+   "headword": "mitigar",
+   "normalized": "mitigar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يخفف / يلطف (أثرًا)",
+     "meaningArEg": "يخفف",
+     "glossEs": "mitigar",
+     "exampleEs": "Hay que mitigar el impacto sobre los pasajeros.",
+     "exampleAr": "يجب تخفيف الأثر على الركاب.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Hay que mitigar el impacto sobre los pasajeros.",
+     "ar": "يجب تخفيف الأثر على الركاب.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "mitigo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitiga",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigan",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigué",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigue",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigues",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigue",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitiguemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitiguéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitiguen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "mitigaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "mitigando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "mitigado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "modismo",
+   "normalized": "modismo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "modismos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تعبير اصطلاحي / مصطلح شائع",
+     "meaningArEg": "تعبير اصطلاحي",
+     "glossEs": "modismo",
+     "exampleEs": "Este modismo es típico de España.",
+     "exampleAr": "هذا التعبير الاصطلاحي نموذجي في إسبانيا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Este modismo es típico de España.",
+     "ar": "هذا التعبير الاصطلاحي نموذجي في إسبانيا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "mágico",
+   "normalized": "mágico",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "mágicos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سحري",
+     "meaningArEg": "سحري",
+     "glossEs": "mágico",
+     "exampleEs": "El prodigio del realismo mágico estriba en lo cotidiano.",
+     "exampleAr": "تكمن إعجازية الواقعية السحرية في اليومي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El prodigio del realismo mágico estriba en lo cotidiano.",
+     "ar": "تكمن إعجازية الواقعية السحرية في اليومي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "neutro",
+   "normalized": "neutro",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "neutros",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "محايد",
+     "meaningArEg": "محايد",
+     "glossEs": "neutro",
+     "exampleEs": "Exigen un español neutro para el doblaje.",
+     "exampleAr": "يطلبون إسبانية محايدة للدبلجة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Exigen un español neutro para el doblaje.",
+     "ar": "يطلبون إسبانية محايدة للدبلجة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "panhispánico",
+   "normalized": "panhispánico",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "panhispánicos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شامل للإسبانية (كل البلدان الناطقة بها)",
+     "meaningArEg": "شامل للإسبانية",
+     "glossEs": "panhispánico",
+     "exampleEs": "Buscamos el consenso panhispánico siempre.",
+     "exampleAr": "نبحث عن التوافق الشامل للإسبانية دائمًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Buscamos el consenso panhispánico siempre.",
+     "ar": "نبحث عن التوافق الشامل للإسبانية دائمًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "perdiz",
+   "normalized": "perdiz",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "perdices",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "حجل (طائر)",
+     "meaningArEg": "حجل",
+     "glossEs": "perdiz",
+     "exampleEs": "El comité se dedica a marear la perdiz.",
+     "exampleAr": "اللجنة لا تفعل شيئًا سوى المماطلة.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم الطائر؛ يظهر في التعبير marear la perdiz (المماطلة).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El comité se dedica a marear la perdiz.",
+     "ar": "اللجنة لا تفعل شيئًا سوى المماطلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "perjuicio",
+   "normalized": "perjuicio",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "perjuicios",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ضرر / إخلال (بحق)",
+     "meaningArEg": "ضرر",
+     "glossEs": "perjuicio",
+     "exampleEs": "Reclaman sin perjuicio de las indemnizaciones.",
+     "exampleAr": "يطالبون دون الإخلال بحق التعويضات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Reclaman sin perjuicio de las indemnizaciones.",
+     "ar": "يطالبون دون الإخلال بحق التعويضات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pica",
+   "normalized": "pica",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "picas",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رمح / حربة (سلاح قديم)",
+     "meaningArEg": "رمح",
+     "glossEs": "pica, lanza",
+     "exampleEs": "Poner una pica en Flandes era una hazaña.",
+     "exampleAr": "وضع رمح في فلاندرز كان إنجازًا عظيمًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم للسلاح القديم؛ يظهر في التعبير التاريخي «poner una pica en Flandes» بمعنى تحقيق إنجاز صعب.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Poner una pica en Flandes era una hazaña.",
+     "ar": "وضع رمح في فلاندرز كان إنجازًا عظيمًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "platicar",
+   "normalized": "platicar",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "colloquial_latam",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يتحدث / يتجاذب أطراف الحديث (أمريكا اللاتينية)",
+     "meaningArEg": "يتكلم",
+     "glossEs": "platicar",
+     "exampleEs": "Tuvimos la oportunidad de platicar largo y tendido.",
+     "exampleAr": "سنحت لنا الفرصة للتجاذب في أطراف الحديث مطولًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "في أمريكا اللاتينية بمعنى charlar؛ في إسبانيا يُقال charlar.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Tuvimos la oportunidad de platicar largo y tendido.",
+     "ar": "سنحت لنا الفرصة للتجاذب في أطراف الحديث مطولًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "platico",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicas",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platica",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicamos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicáis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platican",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platiqué",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicó",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicamos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicasteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicabas",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaba",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicábamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicabais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaban",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaré",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicarás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicará",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaremos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaréis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicarán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicarías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaría",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaríamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaríais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicarían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platique",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platiques",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platique",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platiquemos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platiquéis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platiquen",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicara",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicáramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicarais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "platicaran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "platicando",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "platicado",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "plenario",
+   "normalized": "plenario",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "plenarios",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جلسة عامة / اجتماع شامل",
+     "meaningArEg": "جلسة عامة",
+     "glossEs": "plenario",
+     "exampleEs": "El plenario aprobó la propuesta.",
+     "exampleAr": "أقرت الجلسة العامة المقترح.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El plenario aprobó la propuesta.",
+     "ar": "أقرت الجلسة العامة المقترح.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "porteño",
+   "normalized": "porteño",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "porteños",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "بوينس-آيرسي / من أهل بوينس آيرس",
+     "meaningArEg": "بوينس آيرسي",
+     "glossEs": "porteño",
+     "exampleEs": "Agradezco tu entusiasmo porteño.",
+     "exampleAr": "أقدر حماسك البوينس-آيرسي.",
+     "exampleArEg": null,
+     "usageNoteAr": "منسوب إلى بوينس آيرس (puerto)؛ يُستخدم اسمًا وصفة.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Agradezco tu entusiasmo porteño.",
+     "ar": "أقدر حماسك البوينس-آيرسي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "precedente",
+   "normalized": "precedente",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "precedentes",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سابقة / ما تقدم ذكره",
+     "meaningArEg": "سابقة",
+     "glossEs": "precedente",
+     "exampleEs": "A la luz de lo precedente, la tesis aporta mucho.",
+     "exampleAr": "وعلى ضوء ما تقدم ذكره، تقدم الأطروحة إسهامًا كبيرًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم بمعنى «السابق/ما تقدم»؛ لا تخلطه بالصفة precedente.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "A la luz de lo precedente, la tesis aporta mucho.",
+     "ar": "وعلى ضوء ما تقدم ذكره، تقدم الأطروحة إسهامًا كبيرًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "pretender",
+   "normalized": "pretender",
+   "kind": "word",
+   "pos": "verb",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "يسعى / ينوي (لا: يتظاهر)",
+     "meaningArEg": "ينوي",
+     "glossEs": "pretender",
+     "exampleEs": "Pretende aprobar el examen este año.",
+     "exampleAr": "يسعى وينوي النجاح في الامتحان هذا العام.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": "لا تعني «يتظاهر»؛ التظاهر = fingir."
+    }
+   ],
+   "examples": [
+    {
+     "es": "Pretende aprobar el examen este año.",
+     "ar": "يسعى وينوي النجاح في الامتحان هذا العام.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "conjugation",
+     "formEs": "pretendo",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendes",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretende",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendemos",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendéis",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenden",
+     "tense": "presente",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendí",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendiste",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendió",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendimos",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendisteis",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendieron",
+     "tense": "pretérito",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendías",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendía",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendíamos",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendíais",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendían",
+     "tense": "imperfecto",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderé",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderás",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderá",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderemos",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderéis",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderán",
+     "tense": "futuro",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderías",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendería",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderíamos",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderíais",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenderían",
+     "tense": "condicional",
+     "mood": "indicativo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenda",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendas",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretenda",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendamos",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendáis",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendan",
+     "tense": "subjuntivo presente",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": true
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendieras",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendiera",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3s",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendiéramos",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "1p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendierais",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "2p",
+     "irregular": false
+    },
+    {
+     "kind": "conjugation",
+     "formEs": "pretendieran",
+     "tense": "imperfecto",
+     "mood": "subjuntivo",
+     "person": "3p",
+     "irregular": false
+    },
+    {
+     "kind": "gerund",
+     "formEs": "pretendiendo",
+     "irregular": false
+    },
+    {
+     "kind": "participle",
+     "formEs": "pretendido",
+     "irregular": false
+    }
+   ]
+  },
+  {
+   "headword": "promulgación",
+   "normalized": "promulgación",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "promulgaciones",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "إصدار (قانون) / إعلان رسمي",
+     "meaningArEg": "إصدار",
+     "glossEs": "promulgación",
+     "exampleEs": "La promulgación de la nueva ley favoreció el comercio.",
+     "exampleAr": "إن إصدار القانون الجديد ساعد التجارة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La promulgación de la nueva ley favoreció el comercio.",
+     "ar": "إن إصدار القانون الجديد ساعد التجارة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "rabo",
+   "normalized": "rabo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "rabos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "ذيل",
+     "meaningArEg": "ديل",
+     "glossEs": "rabo",
+     "exampleEs": "Leyeron el informe de cabo a rabo.",
+     "exampleAr": "قرأوا التقرير من أوله إلى آخره.",
+     "exampleArEg": null,
+     "usageNoteAr": "يظهر في التعبير de cabo a rabo (من البداية إلى النهاية).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Leyeron el informe de cabo a rabo.",
+     "ar": "قرأوا التقرير من أوله إلى آخره.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "refrán",
+   "normalized": "refrán",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "refranes",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مثل شعبي / قول مأثور",
+     "meaningArEg": "مثل شعبي",
+     "glossEs": "refrán",
+     "exampleEs": "El refrán subraya la necesidad de respetar los tiempos.",
+     "exampleAr": "يؤكد المثل الشعبي ضرورة احترام الأوقات.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El refrán subraya la necesidad de respetar los tiempos.",
+     "ar": "يؤكد المثل الشعبي ضرورة احترام الأوقات.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "regañadientes",
+   "normalized": "regañadientes",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تردد / مضض (في العبارة)",
+     "meaningArEg": "مضض",
+     "glossEs": "regañadientes",
+     "exampleEs": "El director aceptó las cláusulas a regañadientes.",
+     "exampleAr": "قبل المدير البنود على مضض.",
+     "exampleArEg": null,
+     "usageNoteAr": "اسم جمعي الشكل؛ يُستخدم غالبًا في العبارة a regañadientes (على مضض).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El director aceptó las cláusulas a regañadientes.",
+     "ar": "قبل المدير البنود على مضض.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "rehilado",
+   "normalized": "rehilado",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "rehilados",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "احتكاكي النطق (صوت ll/y)",
+     "meaningArEg": "احتكاكي",
+     "glossEs": "rehilado",
+     "exampleEs": "Destaca el yeísmo rehilado en el Río de la Plata.",
+     "exampleAr": "يبرز الـYeísmo Rehilado في منطقة ريو دي لا بلاتا.",
+     "exampleArEg": null,
+     "usageNoteAr": "مصطلح صوتي: نطق ll/y بصوت احتكاكي.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Destaca el yeísmo rehilado en el Río de la Plata.",
+     "ar": "يبرز الـYeísmo Rehilado في منطقة ريو دي لا بلاتا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "rendición",
+   "normalized": "rendición",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "مساءلة / تقديم حساب",
+     "meaningArEg": "مساءلة",
+     "glossEs": "rendición",
+     "exampleEs": "Es un ejercicio de rendición de cuentas.",
+     "exampleAr": "إنها ممارسة للمساءلة.",
+     "exampleArEg": null,
+     "usageNoteAr": "غالبًا في العبارة rendición de cuentas (المساءلة).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Es un ejercicio de rendición de cuentas.",
+     "ar": "إنها ممارسة للمساءلة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "resolutorio",
+   "normalized": "resolutorio",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "فاسخ / منهٍ للعقد",
+     "meaningArEg": "فاسخ",
+     "glossEs": "resolutorio",
+     "exampleEs": "Incluyeron una cláusula resolutoria.",
+     "exampleAr": "أدرجوا شرطًا فاسخًا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Incluyeron una cláusula resolutoria.",
+     "ar": "أدرجوا شرطًا فاسخًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": [
+    {
+     "kind": "feminine",
+     "formEs": "resolutoria"
+    }
+   ]
+  },
+  {
+   "headword": "rigor",
+   "normalized": "rigor",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صرامة / رصانة / دقة",
+     "meaningArEg": "صرامة",
+     "glossEs": "rigor",
+     "exampleEs": "La columna exige rigor conceptual y agudeza estilística.",
+     "exampleAr": "يتطلب مقال العمود رصانة مفاهيمية وحدة أسلوبية.",
+     "exampleArEg": null,
+     "usageNoteAr": "كلمة أساسية في الدروس الأكاديمية C1.",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La columna exige rigor conceptual y agudeza estilística.",
+     "ar": "يتطلب مقال العمود رصانة مفاهيمية وحدة أسلوبية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "simbolismo",
+   "normalized": "simbolismo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "رمزية",
+     "meaningArEg": "رمزية",
+     "glossEs": "simbolismo",
+     "exampleEs": "El simbolismo de la luna anticipa el final.",
+     "exampleAr": "رمزية القمر تستشرف النهاية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El simbolismo de la luna anticipa el final.",
+     "ar": "رمزية القمر تستشرف النهاية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "solemne",
+   "normalized": "solemne",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "solemnes",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "جليل / مهيب",
+     "meaningArEg": "جليل",
+     "glossEs": "solemne",
+     "exampleEs": "Rendimos un solemne homenaje al maestro.",
+     "exampleAr": "نقدم تحية جليلة للأستاذ.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Rendimos un solemne homenaje al maestro.",
+     "ar": "نقدم تحية جليلة للأستاذ.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sublime",
+   "normalized": "sublime",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": "sublimes",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سامٍ / رفيع جماليًا",
+     "meaningArEg": "سامي / راقي",
+     "glossEs": "sublime, excelso",
+     "exampleEs": "La emoción sublime del poema conmueve al lector.",
+     "exampleAr": "المشاعر السامية في القصيدة تهز القارئ.",
+     "exampleArEg": null,
+     "usageNoteAr": "صفة لا تتغير مع الجنس (sublime للمذكر والمؤنث).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La emoción sublime del poema conmueve al lector.",
+     "ar": "المشاعر السامية في القصيدة تهز القارئ.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "subtexto",
+   "normalized": "subtexto",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "subtextos",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نص مضمر / معنى باطني",
+     "meaningArEg": "معنى مضمر",
+     "glossEs": "subtexto",
+     "exampleEs": "Atendiendo al subtexto podemos comprender mejor.",
+     "exampleAr": "عبر الإنصات إلى النص المضمر نفهم أفضل.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Atendiendo al subtexto podemos comprender mejor.",
+     "ar": "عبر الإنصات إلى النص المضمر نفهم أفضل.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "sustento",
+   "normalized": "sustento",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "سند / دعم (تجريبي)",
+     "meaningArEg": "سند",
+     "glossEs": "sustento",
+     "exampleEs": "Su razonamiento carece de sustento empírico.",
+     "exampleAr": "طرحه يفتقر إلى أي سند تجريبي.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Su razonamiento carece de sustento empírico.",
+     "ar": "طرحه يفتقر إلى أي سند تجريبي.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "tocante",
+   "normalized": "tocante",
+   "kind": "word",
+   "pos": "adj",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "متعلق بـ / بخصوص",
+     "meaningArEg": "بخصوص / متعلق بـ",
+     "glossEs": "tocante a, relativo a",
+     "exampleEs": "En lo tocante a la metodología, debemos ser precisos.",
+     "exampleAr": "فيما يتعلق بالمنهجية، يجب أن نكون دقيقين.",
+     "exampleArEg": null,
+     "usageNoteAr": "صفة ثابتة الصيغة؛ تُستخدم غالبًا في العبارة «en lo tocante a».",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En lo tocante a la metodología, debemos ser precisos.",
+     "ar": "فيما يتعلق بالمنهجية، يجب أن نكون دقيقين.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "transparencia",
+   "normalized": "transparencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "شفافية / وضوح",
+     "meaningArEg": "شفافية",
+     "glossEs": "transparencia",
+     "exampleEs": "Debemos actuar con absoluta transparencia.",
+     "exampleAr": "يجب أن نعمل بمنتهى الشفافية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Debemos actuar con absoluta transparencia.",
+     "ar": "يجب أن نعمل بمنتهى الشفافية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "transposición",
+   "normalized": "transposición",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "transposiciones",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نقلة / تحويل (إبداعي)",
+     "meaningArEg": "نقلة",
+     "glossEs": "transposición",
+     "exampleEs": "Traducir poesía exige una transposición creadora.",
+     "exampleAr": "تتطلب ترجمة الشعر نقلة إبداعية.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Traducir poesía exige una transposición creadora.",
+     "ar": "تتطلب ترجمة الشعر نقلة إبداعية.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "trascendencia",
+   "normalized": "trascendencia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "تعالٍ / أهمية عميقة",
+     "meaningArEg": "تعالٍ",
+     "glossEs": "trascendencia",
+     "exampleEs": "Busca una forma superior de trascendencia.",
+     "exampleAr": "يبحث عن نمط أسمى من التجرد.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Busca una forma superior de trascendencia.",
+     "ar": "يبحث عن نمط أسمى من التجرد.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "tuteo",
+   "normalized": "tuteo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صيغة المخاطبة بـ tú",
+     "meaningArEg": "توتو",
+     "glossEs": "tuteo",
+     "exampleEs": "En Madrid usamos el tuteo con otra conjugación.",
+     "exampleAr": "في مدريد نستخدم صيغة المخاطبة tuteo بتصريف مختلف.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "En Madrid usamos el tuteo con otra conjugación.",
+     "ar": "في مدريد نستخدم صيغة المخاطبة tuteo بتصريف مختلف.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "vanguardia",
+   "normalized": "vanguardia",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "vanguardias",
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "طليعة (فنية أو أدبية)",
+     "meaningArEg": "طليعة",
+     "glossEs": "vanguardia",
+     "exampleEs": "Siguen las audacias de la vanguardia.",
+     "exampleAr": "يتبعون جرأة مدارس الطليعة.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Siguen las audacias de la vanguardia.",
+     "ar": "يتبعون جرأة مدارس الطليعة.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "verosimilitud",
+   "normalized": "verosimilitud",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "f",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "صدق فني / إقناع سردي",
+     "meaningArEg": "صدق فني",
+     "glossEs": "verosimilitud",
+     "exampleEs": "La perfecta verosimilitud del relato desarma la incredulidad.",
+     "exampleAr": "الصدق الفني المحكم للرواية يبدد الشك.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "La perfecta verosimilitud del relato desarma la incredulidad.",
+     "ar": "الصدق الفني المحكم للرواية يبدد الشك.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "vos",
+   "normalized": "vos",
+   "kind": "word",
+   "pos": "pron",
+   "gender": null,
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "أنت (ضمير الـvoseo بدل tú)",
+     "meaningArEg": "إنت",
+     "glossEs": "vos",
+     "exampleEs": "Che, vos sabés muy bien.",
+     "exampleAr": "اسمع يا صديقي، أنت تعلم جيدًا.",
+     "exampleArEg": null,
+     "usageNoteAr": "ضمير المخاطبة في الـvoseo بدل tú؛ تصريفه خاص (vos sabés).",
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Che, vos sabés muy bien.",
+     "ar": "اسمع يا صديقي، أنت تعلم جيدًا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "voseo",
+   "normalized": "voseo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "استعمال vos بدل tú",
+     "meaningArEg": "فوسيو",
+     "glossEs": "voseo",
+     "exampleEs": "El voseo es típico de Argentina.",
+     "exampleAr": "الـvoseo سمة مميزة للأرجنتين.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "El voseo es típico de Argentina.",
+     "ar": "الـvoseo سمة مميزة للأرجنتين.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  },
+  {
+   "headword": "yeísmo",
+   "normalized": "yeísmo",
+   "kind": "word",
+   "pos": "noun",
+   "gender": "m",
+   "plural": null,
+   "level": "C1",
+   "register": "neutral",
+   "ipa": null,
+   "pronunciationHintAr": null,
+   "tags": [],
+   "senses": [
+    {
+     "senseNo": 1,
+     "meaningArFusha": "نطق ll كـ y (ظاهرة صوتية)",
+     "meaningArEg": "يييسمو",
+     "glossEs": "yeísmo",
+     "exampleEs": "Destaca el yeísmo rehilado en el Río de la Plata.",
+     "exampleAr": "يبرز الـYeísmo Rehilado في منطقة ريو دي لا بلاتا.",
+     "exampleArEg": null,
+     "usageNoteAr": null,
+     "commonErrorAr": null
+    }
+   ],
+   "examples": [
+    {
+     "es": "Destaca el yeísmo rehilado en el Río de la Plata.",
+     "ar": "يبرز الـYeísmo Rehilado في منطقة ريو دي لا بلاتا.",
+     "arEg": null
+    }
+   ],
+   "synonyms": [],
+   "antonyms": [],
+   "related": [],
+   "variantNoteAr": null,
+   "sourceId": null,
+   "forms": []
+  }
+ ]
+}

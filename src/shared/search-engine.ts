@@ -5,7 +5,10 @@
    1) بحث بالكلمات الإسبانية ومعانيها العربية الفصحى والمصرية.
    2) بحث عكسي: من العربية إلى الكلمات والأمثلة الإسبانية.
    3) كشف صيغ الأفعال المصرفة وربطها بالفعل الأصلي (Lemma).
-   4) القواعد النحوية وعناوين ومحتويات وأمثلة الدروس.
+   4) القواعد النحوية وعناوين ومحتويات وأمثلة الدروس — فقط عندما يُبنى
+      المحرك بفهرس يحملها (الخادم يمرر دروسًا مرئية من قاعدة البيانات).
+      الفهرس المضمّن في الحزمة (search-index.json) يحمل المفردات
+      والتصريفات فقط، عمدًا: بيانات الدروس لا تُشحن للعميل أبدًا.
    5) تطبيع النص العربي (همزات، تاء مربوطة، تشكيل) والإسباني (تشكيل، علامات ترقيم).
    6) فهرسة معكوسة O(1) فائقة السرعة واستجابة خلال أجزاء من الملي ثانية.
    7) اقتراح تصحيحي ذكي (Fuzzy suggestion) عند وجود خطأ إملائي دون تضليل.
@@ -78,6 +81,8 @@ export interface SearchResponse {
   results: SearchItemResult[];
   suggestion?: string | null;
   executionMs: number;
+  /** يُقدَّم فقط عندما تضم النتائج مسودات مسموحًا بها (تطوير صريح) — انظر content-access. */
+  contentProvenance?: string;
 }
 
 export interface SearchOptions {
@@ -124,32 +129,44 @@ export function normalizeAr(text: string): string {
     .toLowerCase();
 }
 
-/** حساب المسافة التحريرية Damerau-Levenshtein للاقتراحات الذكية */
-export function damerauLevenshtein(a: string, b: string): number {
+/** حساب المسافة التحريرية Damerau-Levenshtein للاقتراحات الذكية.
+ * `maxDistance` حدّ أعلى اختياري: إذا تجاوزت كل قيم صفٍّ ما الحدّ، يستحيل
+ * أن تنخفض المسافة النهائية عنه لاحقًا (كل خطوة لاحقة تعتمد على الصف
+ * الحالي أو سابقه، وقيمهما فوق الحدّ) — فيُعاد `maxDistance + 1` مبكرًا.
+ * النتيجة مطابقة للحساب الكامل لكل مسافة ≤ الحدّ، وهي كل ما يهمّ
+ * الاقتراحات (لا يُقترح إلا ما هو أقرب من الأفضل الحالي). */
+export function damerauLevenshtein(a: string, b: string, maxDistance = Infinity): number {
   const al = a.length;
   const bl = b.length;
   if (!al) return bl;
   if (!bl) return al;
+  // فرق الطول حدّ أدنى للمسافة — لا حاجة لأي حساب إذا تجاوز الحدّ.
+  if (Math.abs(al - bl) > maxDistance) return maxDistance + 1;
 
-  const m: number[][] = Array.from({ length: al + 1 }, () => Array(bl + 1).fill(0));
-  for (let i = 0; i <= al; i++) m[i]![0] = i;
-  for (let j = 0; j <= bl; j++) m[0]![j] = j;
+  // صفوف متدحرجة بدل مصفوفة كاملة: الاقتراحات تستدعي الدالة آلاف المرات،
+  // وتخصيص المصفوفة كان هو التكلفة الغالبة. النتيجة مطابقة تمامًا.
+  let prev2: number[] = new Array(bl + 1).fill(0);
+  let prev1: number[] = new Array(bl + 1);
+  for (let j = 0; j <= bl; j++) prev1[j] = j;
 
   for (let i = 1; i <= al; i++) {
+    const cur: number[] = new Array(bl + 1);
+    cur[0] = i;
+    let rowMin = Infinity;
     for (let j = 1; j <= bl; j++) {
       const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-      let val = Math.min(
-        m[i - 1]![j]! + 1,
-        m[i]![j - 1]! + 1,
-        m[i - 1]![j - 1]! + cost,
-      );
+      let val = Math.min(prev1[j]! + 1, cur[j - 1]! + 1, prev1[j - 1]! + cost);
       if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
-        val = Math.min(val, m[i - 2]![j - 2]! + 1);
+        val = Math.min(val, prev2[j - 2]! + 1);
       }
-      m[i]![j] = val;
+      cur[j] = val;
+      if (val < rowMin) rowMin = val;
     }
+    if (rowMin > maxDistance) return maxDistance + 1;
+    prev2 = prev1;
+    prev1 = cur;
   }
-  return m[al]![bl]!;
+  return prev1[bl]!;
 }
 
 interface PrecomputedVocab {
@@ -311,13 +328,15 @@ export class SearchEngine {
       for (const lemma of lemmas) {
         if (!lemma) continue;
         const lemmaNorm = normalizeEs(lemma);
-        const idxList = this.normEsMap.get(lemmaNorm);
-        if (idxList && idxList.length > 0 && idxList[0] !== undefined) {
-          const firstVocab = this.precomputedVocab[idxList[0]];
-          if (firstVocab) {
-            const vocabItem = firstVocab.item;
+        const idxList = this.normEsMap.get(lemmaNorm) ?? [];
+        // كل المداخل التي تشترك في الصيغة بعد إزالة التشكيل (مثل hablo/habló
+        // لمداخل مختلفة)، لا الأول فقط — وإلا اختفى المعنى الثاني صامتًا.
+        for (const idx of idxList) {
+          const vocabEntry = this.precomputedVocab[idx];
+          if (vocabEntry) {
+            const vocabItem = vocabEntry.item;
             addResult({
-              id: `form-${qNormEs}-${lemmaNorm}`,
+              id: `form-${qNormEs}-${lemmaNorm}-${idx}`,
               kind: 'verb_form',
               title: `${qCleanEs} ← الفعل: ${vocabItem.e}`,
               titleEs: vocabItem.e,
@@ -348,7 +367,7 @@ export class SearchEngine {
         if (!entry) continue;
         const v = entry.item;
         addResult({
-          id: `vocab-${entry.normEs}`,
+          id: `vocab-${idx}`,
           kind: 'vocab',
           title: v.e,
           titleEs: v.e,
@@ -377,7 +396,7 @@ export class SearchEngine {
         if (!entry) continue;
         const v = entry.item;
         addResult({
-          id: `vocab-${entry.normEs}`,
+          id: `vocab-${idx}`,
           kind: 'vocab',
           title: v.e,
           titleEs: v.e,
@@ -399,7 +418,19 @@ export class SearchEngine {
     }
 
     // 4. فحص التطابق العربي عبر فهرس الكلمات O(1)
-    const arMatches = this.arWordIndex.get(qNormAr);
+    // استعلام متعدد الكلمات («صباح الخير»): يُقسَّم إلى كلماته وتُجمَع
+    // النتائج حسب عدد الكلمات المطابقة — البحث بالعبارة كاملة كمفتاح واحد
+    // كان يعيد صفرًا دائمًا لأن الفهرس مبني كلمات مفردة.
+    const arWords = qNormAr.split(/\s+/).filter(w => w.length >= 2);
+    const arCoverage = new Map<number, number>();
+    const arMatches: number[] | undefined =
+      arWords.length > 1
+        ? arWords.flatMap(w => {
+            const idxs = this.arWordIndex.get(w) ?? [];
+            for (const idx of idxs) arCoverage.set(idx, (arCoverage.get(idx) ?? 0) + 1);
+            return idxs;
+          })
+        : this.arWordIndex.get(qNormAr);
     if (arMatches) {
       for (const idx of arMatches) {
         const entry = this.precomputedVocab[idx];
@@ -411,8 +442,15 @@ export class SearchEngine {
           score = 750;
           reason = 'تطابق دقيق مع المعنى العربي';
         }
+        const covered = arCoverage.get(idx);
+        if (covered !== undefined) {
+          score = covered >= arWords.length ? 750 : 600 + 50 * covered;
+          reason = covered >= arWords.length
+            ? 'كل كلمات البحث واردة في المعنى العربي'
+            : 'بعض كلمات البحث واردة في المعنى العربي';
+        }
         addResult({
-          id: `vocab-${entry.normEs}`,
+          id: `vocab-${idx}`,
           kind: 'vocab',
           title: v.e,
           titleEs: v.e,
@@ -441,7 +479,7 @@ export class SearchEngine {
         if (!entry) continue;
         if (entry.normEs.startsWith(qNormEs)) {
           addResult({
-            id: `vocab-${entry.normEs}`,
+            id: `vocab-${idx}`,
             kind: 'vocab',
             title: entry.item.e,
             titleEs: entry.item.e,
@@ -547,7 +585,7 @@ export class SearchEngine {
       if (qNormEs.length >= 4) {
         for (const entry of this.precomputedVocab) {
           if (Math.abs(entry.normEs.length - qNormEs.length) <= 2) {
-            const dist = damerauLevenshtein(qNormEs, entry.normEs);
+            const dist = damerauLevenshtein(qNormEs, entry.normEs, minDistance);
             if (dist < minDistance) {
               minDistance = dist;
               closestWord = entry.item.e;
@@ -560,7 +598,7 @@ export class SearchEngine {
       if (!closestWord && qNormAr.length >= 4) {
         for (const [w] of this.arWordIndex.entries()) {
           if (Math.abs(w.length - qNormAr.length) <= 1) {
-            const dist = damerauLevenshtein(qNormAr, w);
+            const dist = damerauLevenshtein(qNormAr, w, minDistance);
             if (dist < minDistance) {
               minDistance = dist;
               closestWord = w;
@@ -582,7 +620,10 @@ export class SearchEngine {
       filtered = filtered.filter(r => r.level.toLowerCase() === options.level!.toLowerCase());
     }
     if (options.kind && options.kind !== 'all') {
-      filtered = filtered.filter(r => r.kind === options.kind);
+      // صيغ الأفعال مفردات عمليًا: فلتر «مفردات» يشملها وإلا اختفت نتائجها.
+      filtered = filtered.filter(r =>
+        options.kind === 'vocab' ? r.kind === 'vocab' || r.kind === 'verb_form' : r.kind === options.kind,
+      );
     }
 
     const finalResults = filtered.slice(0, limit);

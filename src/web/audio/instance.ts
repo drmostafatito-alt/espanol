@@ -69,6 +69,29 @@ function createSpeech(): SpeechLike | null {
         return [];
       }
     },
+    // انتظار تحميل الأصوات بمهلة 1000ms: الأصوات تصل متأخرة في Chrome،
+    // والحكم بـ«لا صوت» قبلها كان يعطي NO_VOICE كاذبًا أو تشغيلًا صامتًا.
+    awaitVoices: () => {
+      try {
+        if (window.speechSynthesis.getVoices().length > 0) return Promise.resolve(true);
+        return new Promise<boolean>(resolve => {
+          let done = false;
+          let timer: ReturnType<typeof setTimeout> | undefined;
+          const finish = (v: boolean) => {
+            if (done) return;
+            done = true;
+            clearTimeout(timer);
+            window.speechSynthesis.removeEventListener('voiceschanged', onChange);
+            resolve(v);
+          };
+          const onChange = () => finish(window.speechSynthesis.getVoices().length > 0);
+          timer = setTimeout(() => finish(false), 1000);
+          window.speechSynthesis.addEventListener('voiceschanged', onChange);
+        });
+      } catch {
+        return Promise.resolve(false);
+      }
+    },
   };
 }
 

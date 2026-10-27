@@ -13,6 +13,9 @@ import { HttpError, json, readJson } from '../lib/http';
 import { ulid } from '../lib/ids';
 import { gradeAnswer, gradingModeOf, type AnswerKey } from '../lib/grading';
 import { allowUnreviewedContent, UNREVIEWED_PROVENANCE } from '../lib/content-access';
+import { gradePlacement, PLACEMENT_QUESTION_COUNT, publicPlacementQuestions } from '../lib/placement';
+import { rateLimitOrThrow } from '../lib/rate-limit';
+import { computeStreaks } from '../lib/streak';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -76,13 +79,19 @@ async function loadLesson(env: Env, slug: string): Promise<LessonRow> {
   return row;
 }
 
-/** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية. */
+/** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية.
+ * نفس تعريف «مستوفًى» في لوحة التقدم: إتمامٌ بدقة كافية، لا مجرد بدء.
+ * قاعدة فتح تالفة ⇒ مقفل (فشل مغلق)، لا مفتوح صامتًا. */
 async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): Promise<void> {
   let rule: { type?: string; requires?: string[]; minAccuracy?: number };
   try {
     rule = JSON.parse(lesson.unlock_rule_json);
   } catch {
-    return;
+    throw new HttpError(403, 'LESSON_LOCKED', 'هذا الدرس مقفل: أكمل الدرس السابق بدقة كافية أولًا.', {
+      requires: [],
+      minAccuracy: 0,
+      missing: [],
+    });
   }
   if (!rule.requires?.length) return;
 
@@ -96,7 +105,7 @@ async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): P
     .all<{ slug: string; status: string; best_accuracy: number }>();
 
   const minAccuracy = rule.minAccuracy ?? 0;
-  const missing = rows.results.filter(r => r.status === 'not_started' || r.best_accuracy < minAccuracy);
+  const missing = rows.results.filter(r => r.status !== 'completed' || r.best_accuracy < minAccuracy);
   const found = new Set(rows.results.map(r => r.slug));
   const notFound = rule.requires.filter(s => !found.has(s));
 
@@ -117,7 +126,9 @@ function publicPrompt(promptJson: string) {
       stemEs: (p.stemEs as string | null) ?? null,
       stemAr: (p.stemAr as string | null) ?? null,
       audioKey: (p.audioKey as string | null) ?? null,
-      // النص الذي يُنطق احتياطيًا (speechSynthesis) — إسباني دائمًا، ولا يُستنتج من خيارات مشتِّتة
+      // النص الذي يُنطق احتياطيًا (speechSynthesis) — إسباني دائمًا، ولا يُستنتج
+      // من خيارات مشتِّتة (الاستثناء الوحيد listen_choose بلا stemEs يُشتق في
+      // lessonSession من نص الخيار الصحيح، لأنه محفّز التمرين نفسه)
       speechEs: (p.speechEs as string | null) ?? (p.stemEs as string | null) ?? null,
     };
   } catch {
@@ -139,11 +150,11 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
     .all<ExerciseRow>();
 
   const options = await env.DB.prepare(
-    `SELECT o.id, o.exercise_id, o.text, o.sort_order FROM exercise_options o
+    `SELECT o.id, o.exercise_id, o.text, o.is_correct, o.sort_order FROM exercise_options o
      JOIN exercises e ON e.id = o.exercise_id WHERE e.lesson_version_id = ? ORDER BY o.sort_order`,
   )
     .bind(lesson.version_id)
-    .all<{ id: string; exercise_id: string; text: string; sort_order: number }>();
+    .all<{ id: string; exercise_id: string; text: string; is_correct: number; sort_order: number }>();
 
   const items = await env.DB.prepare(
     `SELECT i.id, i.exercise_id, i.payload_json, i.ordinal FROM exercise_items i
@@ -160,9 +171,11 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
     .first<{ status: string; best_accuracy: number; attempts_count: number; completed_at: string | null }>();
 
   const optsByExercise = new Map<string, { id: string; text: string }[]>();
+  const correctTextByExercise = new Map<string, string>();
   for (const o of options.results) {
     if (!optsByExercise.has(o.exercise_id)) optsByExercise.set(o.exercise_id, []);
     optsByExercise.get(o.exercise_id)!.push({ id: o.id, text: o.text });
+    if (o.is_correct === 1 && !correctTextByExercise.has(o.exercise_id)) correctTextByExercise.set(o.exercise_id, o.text);
   }
   const itemsByExercise = new Map<string, { id: string; text: string }[]>();
   for (const it of items.results) {
@@ -190,20 +203,13 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
       exercises: exercises.results.map(e => {
         const prompt = publicPrompt(e.prompt_json);
         const opts = optsByExercise.get(e.id) ?? [];
-        // نص النطق الاحتياطي: إن لم يُحدّده المحتوى صراحةً، يستخدمه الخادم من نص
-        // الإجابة الصحيحة — لا من أول خيار (قد يكون مشتِّتًا فيُنطق نص خاطئ).
-        let speechEs = prompt.speechEs;
-        const key = safeParse<AnswerKey>(e.answer_key_json);
-        const correctId = key?.correctOptionIds?.[0];
-        if (!speechEs) {
-          if (e.type === 'word_order' || e.type === 'dialogue_order') {
-            speechEs = key?.accepted?.[0] ?? null;
-          } else if (e.type === 'listen_choose' || e.type === 'choose_reply' || e.type === 'word_choice') {
-            speechEs = prompt.stemEs ?? opts.find(o => o.id === correctId)?.text ?? key?.accepted?.[0] ?? null;
-          } else {
-            speechEs = prompt.stemEs ?? key?.accepted?.[0] ?? null;
-          }
-        }
+        // نص النطق: ما كتبه مؤلف المحتوى صراحةً (speechEs) أو نص السؤال
+        // (stemEs) فقط — باستثناء واحد: listen_choose بلا stemEs، فالجملة
+        // المسموعة هي نص الخيار الصحيح، والصوت هو محفّز التمرين نفسه، وكل
+        // نصوص الخيارات مرسلة للعميل أصلًا، فلا تسريب هنا. لا يُشتق لأي
+        // نوع آخر — نطق الخيار الصحيح في word_choice مثلًا كان يكشف الإجابة.
+        let speechEs = prompt.speechEs ?? prompt.stemEs ?? null;
+        if (!speechEs && e.type === 'listen_choose') speechEs = correctTextByExercise.get(e.id) ?? null;
         if (speechEs && typeof speechEs === 'string') {
           speechEs = speechEs.replace(/_{2,}/g, '...').trim();
         }
@@ -235,6 +241,7 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
   await assertUnlocked(env, user, lesson);
+  await rateLimitOrThrow(env.DB, `answers:user:${user.id}`, 120, 60);
 
   const body = await readJson<{ eventId?: string; exerciseId?: string; response?: unknown; durationMs?: number }>(req);
   const eventId = typeof body.eventId === 'string' ? body.eventId : '';
@@ -277,11 +284,14 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
 
   const result = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), body.response, safeParse(ex.error_feedback_json));
 
-  await env.DB.prepare(
+  // القيد الفريد هو حائط الحماية من سباق الإرسال المتزامن بنفس eventId:
+  // ON CONFLICT DO NOTHING ثم إعادة قراءة — لا 500 ولا محاولة مكررة.
+  const insert = await env.DB.prepare(
     `INSERT INTO user_exercise_attempts
        (id, client_event_id, user_id, lesson_id, lesson_version_id, exercise_id, is_correct, score, answer_json,
         duration_ms, source, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'online', ?)`,
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'online', ?)
+     ON CONFLICT(client_event_id) DO NOTHING`,
   )
     .bind(
       ulid().toLowerCase(),
@@ -297,6 +307,34 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
       new Date().toISOString(),
     )
     .run();
+
+  if ((insert.meta?.changes ?? 0) === 0) {
+    const raced = await env.DB.prepare(
+      `SELECT answer_json, is_correct, score, server_recorded_at FROM user_exercise_attempts
+       WHERE client_event_id = ? AND user_id = ?`,
+    )
+      .bind(eventId, user.id)
+      .first<{ answer_json: string; is_correct: number; score: number; server_recorded_at: string }>();
+    if (raced) {
+      const replay = gradeAnswer(ex.type, safeParse<AnswerKey>(ex.answer_key_json), safeParse(raced.answer_json), safeParse(ex.error_feedback_json));
+      return json(
+        {
+          replay: true,
+          correct: raced.is_correct === 1,
+          score: raced.score,
+          mode: replay.mode,
+          explanationAr: ex.explanation_ar,
+          feedbackAr: replay.chosenFeedbackAr ?? null,
+          recordedAt: raced.server_recorded_at,
+        },
+        {},
+        requestId,
+      );
+    }
+    // مفتاح الحدث محجوز لمستخدم آخر (معرّف مولَّد عشوائيًا — نادر جدًا):
+    // لا نسجّل محاولة ولا نُسقط الطلب بخطأ داخلي؛ على العميل إعادة الإرسال بمفتاح جديد.
+    throw new HttpError(409, 'DUPLICATE_EVENT_ID', 'أُعيد إرسال هذا الحدث من قبل. أعد المحاولة.');
+  }
 
   await env.DB.prepare(
     `INSERT INTO user_lesson_progress (user_id, lesson_id, lesson_version_id, status, attempts_count, last_activity_at)
@@ -332,6 +370,7 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
   const slug = slugFrom(req);
   const lesson = await loadLesson(env, slug);
   await assertUnlocked(env, user, lesson);
+  await rateLimitOrThrow(env.DB, `complete:user:${user.id}`, 60, 60);
 
   const body = await readJson<{ eventId?: string }>(req);
   const eventId = typeof body.eventId === 'string' ? body.eventId : '';
@@ -348,14 +387,45 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
   const requiredTypes = (safeParse<{ requiredExerciseTypes?: string[] }>(lesson.mastery_criteria_json)).requiredExerciseTypes ?? [];
   const missingRequiredTypes = requiredTypes.filter(t => !exercises.results.some(e => e.type === t));
 
-  const attempts = await env.DB.prepare(
-    `SELECT exercise_id, is_correct FROM user_exercise_attempts
-     WHERE user_id = ? AND lesson_version_id = ? AND exercise_id IN (${[...gradedIds].map(() => '?').join(',') || "''"})`,
+  // منع الاحتساب المزدوج: XP مرة واحدة لكل درس في حياة الحساب
+  const prior = await env.DB.prepare(
+    `SELECT status, best_accuracy FROM user_lesson_progress WHERE user_id = ? AND lesson_id = ?`,
   )
-    .bind(user.id, lesson.version_id, ...gradedIds)
-    .all<{ exercise_id: string; is_correct: number }>();
+    .bind(user.id, lesson.id)
+    .first<{ status: string; best_accuracy: number }>();
+  const alreadyCompleted = prior?.status === 'completed';
 
-  const solved = new Set(attempts.results.filter(a => a.is_correct === 1).map(a => a.exercise_id));
+  // الدقة من جولة الإكمال الحالية فقط: محاولات بعد آخر استدعاء إكمال لهذا
+  // الدرس. بلا هذا الحدّ كان النجاح تراكميًا عبر جولات — إجابات صحيحة
+  // متفرقة من محاولات فاشلة متعددة تُجمع لتنجح دون جولة ناجحة واحدة.
+  // الدرس المكتمل أصلًا يُحسب تراكميًا كما قبل (حالته لا تتراجع، وXP صُرف).
+  let roundSince: string | null = null;
+  if (!alreadyCompleted) {
+    const lastEvent = await env.DB.prepare(
+      `SELECT MAX(occurred_at) AS last_at FROM learning_events
+       WHERE user_id = ? AND type = 'lesson_completed' AND idempotency_key LIKE ?`,
+    )
+      .bind(user.id, `${user.id}:lesson_complete:${lesson.id}:%`)
+      .first<{ last_at: string | null }>();
+    roundSince = lastEvent?.last_at ?? null;
+  }
+
+  const attempts = await env.DB.prepare(
+    `SELECT exercise_id, is_correct, created_at FROM user_exercise_attempts
+     WHERE user_id = ? AND lesson_version_id = ? AND exercise_id IN (${[...gradedIds].map(() => '?').join(',') || "''"})
+       ${roundSince ? 'AND created_at > ?' : ''}
+     ORDER BY created_at ASC, id ASC`,
+  )
+    .bind(user.id, lesson.version_id, ...gradedIds, ...(roundSince ? [roundSince] : []))
+    .all<{ exercise_id: string; is_correct: number; created_at: string }>();
+
+  // أحدث محاولة لكل تمرين هي الحكم في الجولة — إجابة صحيحة قديمة لا تُنقذ
+  // إجابة خاطئة لاحقة للتمرين نفسه.
+  const latestByExercise = new Map<string, number>();
+  for (const a of attempts.results) {
+    latestByExercise.set(a.exercise_id, a.is_correct);
+  }
+  const solved = new Set([...latestByExercise.entries()].filter(([, v]) => v === 1).map(([k]) => k));
   const answered = new Set(attempts.results.map(a => a.exercise_id));
   const correctCount = solved.size;
   const gradedTotal = graded.length;
@@ -363,16 +433,11 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
 
   const criteria = safeParse<MasteryCriteria>(lesson.mastery_criteria_json);
   const minAccuracy = criteria.minAccuracy ?? 80;
-  const minCorrect = criteria.minCorrectExercises ?? 0;
-  const passed = gradedTotal > 0 && accuracy >= minAccuracy && correctCount >= minCorrect && missingRequiredTypes.length === 0;
-
-  // منع الاحتساب المزدوج: XP مرة واحدة لكل درس في حياة الحساب
-  const prior = await env.DB.prepare(
-    `SELECT status FROM user_lesson_progress WHERE user_id = ? AND lesson_id = ?`,
-  )
-    .bind(user.id, lesson.id)
-    .first<{ status: string }>();
-  const alreadyCompleted = prior?.status === 'completed';
+  // دفاع في العمق: معيار إتقان يطلب أكثر من عدد التمارين المُصحَّحة يجعل
+  // الدرس مستحيل النجاح حتى بالأداء الكامل — يُقصّ إلى الحد الممكن.
+  // (محتوى الـ40 درسًا المتأثرة أُصلح في ملفاته أيضًا، وهذا يحمي من أي قادم.)
+  const minCorrect = Math.min(criteria.minCorrectExercises ?? 0, gradedTotal);
+  const passed = gradedTotal > 0 && accuracy >= minAccuracy && correctCount >= minCorrect;
 
   // سجل الحدث بمفتاح فريد: تكرار نفس eventId لا يضيف شيئًا
   const eventKey = `${user.id}:lesson_complete:${lesson.id}:${eventId}`;
@@ -426,7 +491,9 @@ export async function completeLesson(req: Request, env: Env, requestId: string, 
     .run();
 
   // بطاقات مراجعة للمفردات المرتبطة بالدرس — تُنشأ مرة واحدة فقط (ON CONFLICT DO NOTHING)
-  const cardsCreated = await createCardsForLesson(env, user.id, lesson.id);
+  // بطاقات المراجعة لمن أتمّ الدرس فعلًا فقط — الضغط على «إنهاء» بلا نجاح
+  // كان يضيف مفردات الدرس كلها إلى المراجعة ويرفع words_seen.
+  const cardsCreated = passed ? await createCardsForLesson(env, user.id, lesson.id) : 0;
 
   const stats = await env.DB.prepare(`SELECT xp_total FROM user_stats WHERE user_id = ?`)
     .bind(user.id)
@@ -620,9 +687,40 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     .bind(user.id)
     .first<{ lessons_total: number; lessons_completed: number }>();
 
+  // السلسلة تُحسب من سجل النشاط الفعلي (إكمال دروس، مراجعات، منح XP) لا من
+  // عمود لا يكتبه أحد: أيام النشاط المميزة ثم تتابعها حتى اليوم/أمس.
+  const activityRows = await env.DB.prepare(
+    `SELECT activity_date FROM (
+       SELECT date(COALESCE(occurred_at, recorded_at)) AS activity_date FROM learning_events WHERE user_id = ?
+       UNION
+       SELECT date(last_reviewed_at) FROM review_schedule WHERE user_id = ? AND last_reviewed_at IS NOT NULL
+       UNION
+       SELECT date(created_at) FROM xp_ledger WHERE user_id = ?
+     ) WHERE activity_date IS NOT NULL ORDER BY activity_date DESC`,
+  )
+    .bind(user.id, user.id, user.id)
+    .all<{ activity_date: string }>();
+  const streaks = computeStreaks(
+    activityRows.results.map(r => r.activity_date),
+    new Date().toISOString().slice(0, 10),
+  );
+  const resolvedStats = {
+    ...(stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 }),
+    streak_current: streaks.current,
+    streak_longest: streaks.longest,
+  };
+  // تحديث العمودين المخزنين ليبقيا صادقين لأي قارئ آخر — القراءة هنا لا تعتمد عليهما
+  if (stats) {
+    await env.DB.prepare(
+      `UPDATE user_stats SET streak_current = ?, streak_longest = ? WHERE user_id = ?`,
+    )
+      .bind(streaks.current, streaks.longest, user.id)
+      .run();
+  }
+
   return json(
     {
-      stats: stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 },
+      stats: resolvedStats,
       lessons,
       nextLesson: nextLesson ? {
         slug: nextLesson.slug,
@@ -685,47 +783,39 @@ function sortLessonsWithinUnits<T extends { unit_id: string; slug: string; unloc
   return result;
 }
 
-const PLACEMENT_CANONICAL_KEYS: Record<string, string> = {
-  '1': 'a',
-  '2': 'a',
-  '3': 'a',
-  '4': 'a',
-  '5': 'a',
-  '6': 'a',
-  '7': 'a',
-  '8': 'a',
-  '9': 'a',
-  '10': 'a',
-};
+/** أسئلة اختبار تحديد المستوى — بلا مفاتيح إجابة. بنك الأسئلة في lib/placement.ts (خادم فقط). */
+export async function placementQuestions(_req: Request, _env: Env, requestId: string, _user: SessionUser): Promise<Response> {
+  return json({ questions: publicPlacementQuestions() }, { headers: { 'Cache-Control': 'no-store' } }, requestId);
+}
 
 /**
  * اختبار تحديد المستوى (Placement Test)
- * الخادم هو المصحح الوحيد: يتحقق من الإجابات الفعلية ولا يعتمد على ما يرسله العميل من درجات
+ * الخادم هو المصحح الوحيد: يتطلب الإجابات العشر كاملة، ويتجاهل أي درجة أو
+ * مستوى يرسله العميل، ويشتق المستوى من الدرجة المحسوبة هنا فقط.
+ * لا تراجع بقبول `score` من العميل — كان ذلك يفتح النجاح بلا إجابات.
  */
 export async function submitPlacementTest(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
-  const body = await readJson<{ targetLevel?: string; answers?: Record<string, string>; score?: number; answersCount?: number }>(req);
-  const targetLevel = String(body.targetLevel ?? '').toUpperCase();
+  const body = await readJson<{ answers?: Record<string, string> }>(req);
 
-  if (!['A1', 'A2'].includes(targetLevel)) {
-    throw new HttpError(400, 'INVALID_LEVEL', 'المستوى المحدد لتحديد المستوى غير صالح. اختر A1 أو A2.');
+  const answers = body.answers;
+  const validAnswers =
+    !!answers &&
+    typeof answers === 'object' &&
+    !Array.isArray(answers) &&
+    Object.keys(answers).length === PLACEMENT_QUESTION_COUNT &&
+    Object.keys(answers).every(k => /^[1-9]$|^10$/.test(k)) &&
+    Object.values(answers).every(v => ['a', 'b', 'c', 'd'].includes(v));
+  if (!validAnswers) {
+    throw new HttpError(400, 'INVALID_ANSWERS', 'أجب عن الأسئلة العشرة كاملة قبل إرسال التقييم.');
   }
 
-  // التصحيح والحساب على الخادم حصرًا
-  let score = 0;
-  let answersCount = 0;
-  if (body.answers && typeof body.answers === 'object') {
-    answersCount = Object.keys(body.answers).length;
-    let correct = 0;
-    for (const [qid, expected] of Object.entries(PLACEMENT_CANONICAL_KEYS)) {
-      if (body.answers[qid] === expected) correct++;
-    }
-    score = Math.round((correct / 10) * 100);
-  } else {
-    // تراجع آمن للاختبارات البرمجية التي ترسل score مباشرة
-    score = Math.max(0, Math.min(100, Math.round(Number(body.score ?? 0))));
-    answersCount = Math.max(0, Number(body.answersCount ?? 0));
-  }
+  // حدّ المحاولات: 3 في اليوم لكل مستخدم — بلا إعادة لعب بلا حدود.
+  await rateLimitOrThrow(env.DB, `placement:user:${user.id}`, 3, 86400);
 
+  const { score } = gradePlacement(answers as Record<string, string>);
+  const answersCount = PLACEMENT_QUESTION_COUNT;
+  // المستوى يُشتق من الدرجة على الخادم: 80%+ ← A2، و60%+ ← A1، وأقل ← تمهيدي.
+  const targetLevel = score >= 80 ? 'A2' : 'A1';
   const passed = score >= 60;
   const assessId = ulid().toLowerCase();
   const now = new Date().toISOString();
@@ -749,8 +839,11 @@ export async function submitPlacementTest(req: Request, env: Env, requestId: str
 
   if (passed) {
     const levelClause = targetLevel === 'A1' ? "('PREA1')" : "('PREA1', 'A1')";
+    // نفس قاعدة رؤية المحتوى في بقية المنصة: المنشور فقط، والمسودات فقط
+    // كعيّنة غير مراجعة خارج الإنتاج. لا يُفتح درس غير مرئي للمستخدم.
+    const statusClause = allowUnreviewed(env) ? "('published','draft')" : "('published')";
     const lessonsToComplete = await env.DB.prepare(
-      `SELECT l.id, l.current_version_id FROM lessons l WHERE l.level_code IN ${levelClause} AND l.status IN ('published','draft')`,
+      `SELECT l.id, l.current_version_id FROM lessons l WHERE l.level_code IN ${levelClause} AND l.status IN ${statusClause}`,
     ).all<{ id: string; current_version_id: string }>();
 
     for (const l of lessonsToComplete.results) {
