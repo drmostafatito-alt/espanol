@@ -43,7 +43,6 @@ export interface CompactGrammarItem {
 
 export interface SearchIndex {
   version: string;
-  generatedAt: string;
   vocab: CompactVocabItem[];
   forms: Record<string, string | string[]>;
   lessons: CompactLessonItem[];
@@ -84,6 +83,8 @@ export interface SearchOptions {
   limit?: number;
   level?: string;
   kind?: 'all' | 'vocab' | 'grammar' | 'lesson';
+  /** إن وُجدت، تُقصر نتائج الدروس والقواعد المرتبطة بها على هذه الدروس فقط. */
+  lessonSlugs?: ReadonlySet<string>;
 }
 
 /** تطبيع النص الإسباني (حروف صغيرة، إزالة التشكيل وعلامات الترقيم) */
@@ -481,6 +482,7 @@ export class SearchEngine {
 
     // 6. البحث في القواعد النحوية المسبقة
     for (const g of this.precomputedGrammar) {
+      if (options.lessonSlugs && !options.lessonSlugs.has(g.item.s)) continue;
       let gScore = 0;
       let gReason = '';
 
@@ -514,6 +516,7 @@ export class SearchEngine {
 
     // 7. البحث في الدروس والتراكيب المستهدفة
     for (const l of this.precomputedLessons) {
+      if (options.lessonSlugs && !options.lessonSlugs.has(l.item.s)) continue;
       let lScore = 0;
       let lReason = '';
 

@@ -6,12 +6,11 @@
 import type { Env, SessionUser } from './types';
 import {
   HttpError, apiError, assertJsonContentType, corsHeaders, isOriginAllowed,
-  json, newRequestId, readSessionToken, securityHeadersFor,
-} from './lib/http';
+  json, newRequestId, readSessionToken, securityHeadersFor, isNonProductionEnv } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
 import { adminAudit, login, logout, me, signup, updateMe } from './routes/auth';
-import { getLesson, listPaths, searchContent } from './routes/content';
-import { completeLesson, lessonSession, myProgress, submitAnswer, submitPlacementTest } from './routes/learn';
+import { getLesson, listPaths, reviewLesson, searchContent, setLessonPublished } from './routes/content';
+import { completeLesson, lessonSession, myProgress, startPlacementTest, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
 
 interface Ctx {
@@ -78,6 +77,9 @@ const routes: Route[] = [
 
   route('PATCH', '/api/me', (req, env, ctx) => updateMe(req, env, ctx.requestId, ctx.user!), 'session'),
   route('GET', '/api/admin/audit', (req, env, ctx) => adminAudit(req, env, ctx.requestId, ctx.user!), 'session', 'audit.read'),
+  route('POST', '/api/admin/lessons/:slug/review', (req, env, ctx) => reviewLesson(req, env, ctx.requestId, ctx.user!), 'session', 'content.review_es'),
+  route('POST', '/api/admin/lessons/:slug/publish', (req, env, ctx) => setLessonPublished(req, env, ctx.requestId, ctx.user!, true), 'session', 'content.publish'),
+  route('POST', '/api/admin/lessons/:slug/unpublish', (req, env, ctx) => setLessonPublished(req, env, ctx.requestId, ctx.user!, false), 'session', 'content.publish'),
 
   route('GET', '/api/content/paths', (req, env, ctx) => listPaths(req, env, ctx.requestId)),
   route('GET', '/api/content/search', (req, env, ctx) => searchContent(req, env, ctx.requestId)),
@@ -85,6 +87,7 @@ const routes: Route[] = [
 
   // ---- المرحلة 2: التعلم ----
   route('GET', '/api/me/progress', (req, env, ctx) => myProgress(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/me/placement/start', (req, env, ctx) => startPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/me/placement', (req, env, ctx) => submitPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('GET', '/api/lessons/:slug/session', (req, env, ctx) => lessonSession(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/lessons/:slug/answers', (req, env, ctx) => submitAnswer(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
@@ -116,6 +119,11 @@ function configError(env: Env): string | null {
   return null;
 }
 
+/** AUD-23: منع التضمين صارم في الإنتاج، ومفتوح في بيئات التطوير/المعاينة فقط */
+function frameAncestors(env: Env): string {
+  return isNonProductionEnv(env) ? '*' : "'none'";
+}
+
 function withSecurity(res: Response, origin: string | null, env: Env): Response {
   const headers = new Headers(res.headers);
   for (const [k, v] of Object.entries(securityHeadersFor(env))) if (!headers.has(k)) headers.set(k, v);
@@ -124,7 +132,7 @@ function withSecurity(res: Response, origin: string | null, env: Env): Response 
     headers.set(
       'Content-Security-Policy',
       "default-src 'self'; img-src 'self' data: https:; media-src 'self' https:; script-src 'self'; " +
-        "style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'",
+        "style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; frame-ancestors " + frameAncestors(env) + "; base-uri 'none'; form-action 'self'",
     );
   }
   return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
@@ -153,7 +161,7 @@ async function serveAsset(request: Request, env: Env, url: URL): Promise<Respons
       'Content-Security-Policy',
       "default-src 'self'; img-src 'self' data: https:; media-src 'self' https:; script-src 'self'; " +
         "style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; worker-src 'self'; " +
-        "frame-ancestors 'none'; base-uri 'none'; form-action 'self'; object-src 'none'",
+        "frame-ancestors " + frameAncestors(env) + "; base-uri 'none'; form-action 'self'; object-src 'none'",
     );
     headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
   } else if (url.pathname.startsWith('/assets/')) {

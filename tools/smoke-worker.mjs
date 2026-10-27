@@ -126,11 +126,13 @@ const spaText = await spa.text();
 record('SPA fallback يخدم index.html', spa.status === 200 && spaText.includes('<div id="root">'));
 
 // مستند HTML نفسه: كان يُخدَم من الأصول بلا أي رأس أمني
+// AUD-23: منع التضمين (frame-ancestors 'none' + X-Frame-Options: DENY) صارم في
+// إنتاج فقط؛ بيئة التطوير/المعاينة المحلية تفتحه حتى تعمل المعاينات داخل أطر.
+// الدخان يعمل محليًا فيتحقق من باقي الرؤوس ومن وجود frame-ancestors معلنًا.
 record(
-  'مستند HTML يحمل CSP وnosniff وX-Frame-Options',
-  (spa.headers.get('content-security-policy') || '').includes("frame-ancestors 'none'") &&
+  'مستند HTML يحمل CSP وnosniff وCOOP (ومنع التضمين إنتاجيًا)',
+  (spa.headers.get('content-security-policy') || '').includes('frame-ancestors') &&
     spa.headers.get('x-content-type-options') === 'nosniff' &&
-    spa.headers.get('x-frame-options') === 'DENY' &&
     (spa.headers.get('cross-origin-opener-policy') || '') === 'same-origin',
 );
 

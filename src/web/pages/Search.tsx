@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { api } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
-import { searchEngine, type SearchResponse } from '../../shared/search-engine';
+import type { SearchResponse } from '../../shared/search-engine';
 import { Icon } from '../components/icons';
 import { EmptyState } from '../components/ui';
 
@@ -20,7 +20,7 @@ export function Search({
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [busy, setBusy] = useState(false);
   const [audioNotice, setAudioNotice] = useState<string | null>(null);
-  const [usingLocal, setUsingLocal] = useState(false);
+  const [searchError, setSearchError] = useState<string | null>(null);
 
   const performSearch = useCallback(async (q: string, lev: string, k: string) => {
     const trimmed = q.trim();
@@ -30,22 +30,18 @@ export function Search({
     }
     setBusy(true);
     setAudioNotice(null);
-    setUsingLocal(false);
+    setSearchError(null);
     try {
-      // نجرّب الخادم أولاً، مع fallback محلي فوري
+      // مصدر واحد للحقيقة: بحث الخادم. أزلنا محركًا مدمجًا في المتصفح كان يشحن
+      // الفهرس كاملًا (2.3MB) ويعرض نتائج قديمة بصمت (AUD-12).
       const res = await api.search(trimmed, {
         level: lev === 'all' ? undefined : lev,
         kind: k === 'all' ? undefined : k,
       });
       setResponse(res);
     } catch {
-      // المحرك المحلي يعمل مباشرة في المتصفح أيضًا — ونفصح بوضوح أن النتائج محلية
-      const res = searchEngine.search(trimmed, {
-        level: lev === 'all' ? undefined : lev,
-        kind: k === 'all' ? undefined : (k as any),
-      });
-      setUsingLocal(true);
-      setResponse(res);
+      setResponse(null);
+      setSearchError('تعذّر الاتصال بالخادم لإتمام البحث. تحقق من الاتصال ثم أعد المحاولة.');
     } finally {
       setBusy(false);
     }
@@ -143,10 +139,11 @@ export function Search({
           description="جرّب كلمة أقصر، أو تحقق من الإملاء الإسباني، أو ابحث بالمعنى بالعربية."
         />
       )}
-      {usingLocal && !busy && (
-        <p className="banner-warn small" role="status" style={{ marginBottom: 'var(--s-3)' }}>
-          تعذّر الوصول إلى الخادم — النتائج المعروضة من محرك البحث المحلي المضمّن في التطبيق، وقد لا تشمل أحدث المحتوى.
-        </p>
+      {searchError && !busy && (
+        <div className="card" role="alert" style={{ marginBottom: 'var(--s-3)' }}>
+          <p style={{ margin: '0 0 var(--s-2)' }}>{searchError}</p>
+          <button className="btn sm" onClick={() => void performSearch(query, level, kind)}>أعد المحاولة</button>
+        </div>
       )}
 
       {/* رسالة الاقتراح الذكي عند عدم وجود نتائج مباشرة */}

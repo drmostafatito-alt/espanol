@@ -1,5 +1,7 @@
 import type { Env, SessionUser } from '../types';
-import { HttpError, json } from '../lib/http';
+import { HttpError, json, readJson } from '../lib/http';
+import { ulid } from '../lib/ids';
+import { writeAudit } from '../db';
 import { allowUnreviewedContent } from '../lib/content-access';
 import { searchEngine } from '../../shared/search-engine';
 
@@ -26,6 +28,14 @@ export async function getLesson(req: Request, env: Env, requestId: string, user:
 
   if (!row) throw new HttpError(404, 'LESSON_NOT_FOUND', 'هذا الدرس غير متاح.');
 
+  // AUD-04: content_json لقطة كاملة فيها مفاتيح الإجابة وعلامات الصحة.
+  // للمعاينة بصلاحية محتوى (preview) تُعاد كما هي لغرض المراجعة فقط؛
+  // أما الدرس المنشور للعامة فيمرّ عبر تنقية تُسقط كل ما يصحّح أو يلمّح:
+  // answerKey وisCorrect وerrorFeedback وشروحه. محرك التعلم على الخادم
+  // يصحّح من جداول التمارين لا من هذه اللقطة، فلا يتأثر أي تصحيح.
+  const full = JSON.parse(row.content_json) as unknown;
+  const content = preview ? full : sanitizePublicContent(full);
+
   return json(
     {
       lesson: {
@@ -36,10 +46,10 @@ export async function getLesson(req: Request, env: Env, requestId: string, user:
         versionId: row.version_id,
         versionNo: row.version_no,
         contentHash: row.content_hash,
-        content: JSON.parse(row.content_json),
+        content,
       },
     },
-    { headers: { 'ETag': `"${row.content_hash}"`, 'Cache-Control': 'public, max-age=60, stale-while-revalidate=600' } },
+    { headers: { 'ETag': `"${row.content_hash}"`, 'Cache-Control': preview ? 'no-store' : 'public, max-age=60, stale-while-revalidate=600' } },
     requestId,
   );
 }
@@ -57,7 +67,7 @@ export async function listPaths(_req: Request, env: Env, requestId: string): Pro
 
   const rows = await env.DB.prepare(
     `SELECT p.slug, p.title_ar, p.kind, p.level_code, p.category, p.estimated_minutes, p.status AS program_status,
-            (SELECT COUNT(*) FROM units u WHERE u.program_id = p.id AND ${unitFilter}) AS units_count,
+            (SELECT COUNT(*) FROM units u WHERE u.program_id = p.id AND ${unitFilter} AND EXISTS (SELECT 1 FROM lessons lu WHERE lu.unit_id = u.id AND ${lessonFilter.replaceAll('l.', 'lu.')})) AS units_count,
             (SELECT COUNT(*) FROM lessons l JOIN units u2 ON u2.id = l.unit_id
               WHERE u2.program_id = p.id AND ${lessonFilter}) AS lessons_count
      FROM programs p
@@ -81,7 +91,7 @@ export async function listPaths(_req: Request, env: Env, requestId: string): Pro
  * البحث الذكي في المعجم والقواعد والدروس والتصريفات.
  * يعمل محليًا وخفيفًا دون أي تكلفة خارجية.
  */
-export async function searchContent(req: Request, _env: Env, requestId: string): Promise<Response> {
+export async function searchContent(req: Request, env: Env, requestId: string): Promise<Response> {
   const url = new URL(req.url);
   const q = url.searchParams.get('q') ?? '';
   const level = url.searchParams.get('level') ?? undefined;
@@ -89,7 +99,19 @@ export async function searchContent(req: Request, _env: Env, requestId: string):
   const limitParam = parseInt(url.searchParams.get('limit') ?? '20', 10);
   const limit = Math.min(50, Math.max(1, isNaN(limitParam) ? 20 : limitParam));
 
-  const result = searchEngine.search(q, { level, kind, limit });
+  // الفهرس ثابت ويشمل المسودات. خارج وضع «عينة غير مراجعة» لا نربط من البحث
+  // إلا بدروس منشورة فعلًا؛ وإلا عرض البحث دروسًا تردّ 404 عند فتحها.
+  let lessonSlugs: ReadonlySet<string> | undefined;
+  if (!allowUnreviewedContent(env)) {
+    const rows = await env.DB.prepare(
+      `SELECT l.slug FROM lessons l
+       JOIN lesson_versions lv ON lv.id = l.current_version_id
+       WHERE l.status = 'published' AND lv.status = 'published'`,
+    ).all<{ slug: string }>();
+    lessonSlugs = new Set(rows.results.map(r => r.slug));
+  }
+
+  const result = searchEngine.search(q, { level, kind, limit, lessonSlugs });
 
   return json(
     result,
@@ -100,4 +122,113 @@ export async function searchContent(req: Request, _env: Env, requestId: string):
     },
     requestId,
   );
+}
+
+/** مفاتيح لا تغادر الخادم أبدًا في أي عرض عام للمحتوى (AUD-04) */
+const SECRET_CONTENT_KEYS = new Set(['answerKey', 'isCorrect', 'errorFeedback', 'correctOptionIds', 'distractorRationaleAr']);
+
+/** تنقية عميقة: نسخة جديدة بلا مفاتيح تصحيح/تلميح في أي عمق */
+export function sanitizePublicContent(value: unknown, inExercises = false): unknown {
+  if (Array.isArray(value)) return value.map(v => sanitizePublicContent(v, inExercises));
+  if (value && typeof value === 'object') {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) {
+      if (SECRET_CONTENT_KEYS.has(k)) continue;
+      // VER-01: شرح التمرين تغذية راجعة بعد الإجابة بطبيعته، و71.7% من شروح
+      // تمارين الاختيار تذكر نص الخيار الصحيح حرفيًا — بقاؤه في العرض العام
+      // تسريب دلالي ولو غابت المفاتيح البنوية. يُجرَّد داخل التمارين فقط؛
+      // شروح pedagogy التعليمية (نقاط القواعد قبل الدرس) ليست إجابات وتبقى.
+      if (inExercises && k === 'explanationAr') continue;
+      out[k] = sanitizePublicContent(v, inExercises || k === 'exercises');
+    }
+    return out;
+  }
+  return value;
+}
+
+/* ============================================================================
+   دورة حياة المحتوى: مراجعة ثم نشر (AUD-02) — بلا نشر تلقائي إطلاقًا
+   ----------------------------------------------------------------------------
+   * المراجعة: تتطلب content.review_es **و** content.review_ar معًا (داخل
+     المعالج فوق فحص route المركزي)، وتسجّل اسمَي المراجعين في سجل التدقيق.
+     لا توجد مراجعة «صامتة» ولا أسماء مفبركة: الاسم يصل من المراجع نفسه.
+   * النشر: يتطلب content.publish وأن تكون review_state = 'approved' (حالة الاعتماد في مخطط القاعدة) —
+     درس غير مراجَع يستحيل نشره من هذا المسار (409).
+   * كل انتقال يُسجَّل في admin_audit_logs بممثل الفعل ونتيجته.
+   * هذه المسارات لا تُستدعى من أي واجهة تعلم؛ والاستيراد يبقى draft دائمًا.
+   ========================================================================== */
+
+function slugFrom(req: Request): string {
+  const parts = new URL(req.url).pathname.split('/');
+  const slug = decodeURIComponent(parts[4] ?? '');
+  if (!/^[a-z0-9-]{3,64}$/.test(slug)) throw new HttpError(400, 'INVALID_SLUG', 'معرّف الدرس غير صحيح.');
+  return slug;
+}
+
+async function loadForLifecycle(env: Env, slug: string) {
+  const row = await env.DB.prepare(
+    `SELECT l.id, l.status, l.unit_id, u.program_id, lv.id AS version_id, lv.status AS version_status, lv.review_state
+     FROM lessons l
+     JOIN units u ON u.id = l.unit_id
+     JOIN lesson_versions lv ON lv.id = l.current_version_id
+     WHERE l.slug = ?`,
+  )
+    .bind(slug)
+    .first<{ id: string; status: string; unit_id: string; program_id: string; version_id: string; version_status: string; review_state: string }>();
+  if (!row) throw new HttpError(404, 'LESSON_NOT_FOUND', 'هذا الدرس غير متاح.');
+  return row;
+}
+
+export async function reviewLesson(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  if (!user.permissions.includes('content.review_ar')) {
+    throw new HttpError(403, 'FORBIDDEN', 'يلزم صلاحيتا مراجعة الإسبانية والترجمة معًا.');
+  }
+  const slug = slugFrom(req);
+  const body = await readJson<{ spanishReviewer?: string; translationReviewer?: string }>(req);
+  const spanishReviewer = typeof body.spanishReviewer === 'string' ? body.spanishReviewer.trim() : '';
+  const translationReviewer = typeof body.translationReviewer === 'string' ? body.translationReviewer.trim() : '';
+  if (!spanishReviewer || !translationReviewer || spanishReviewer.length > 80 || translationReviewer.length > 80) {
+    throw new HttpError(400, 'REVIEWERS_REQUIRED', 'يلزم اسم مراجع الإسبانية واسم مراجع الترجمة.');
+  }
+  const row = await loadForLifecycle(env, slug);
+
+  await env.DB.batch([
+    env.DB.prepare(`UPDATE lesson_versions SET review_state = ? WHERE id = ?`).bind('approved', row.version_id),
+  ]);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: user.id, action: 'content.review', targetType: 'lesson',
+    targetId: row.id, requestId, result: 'success',
+    after: { slug, spanishReviewer, translationReviewer, reviewedAt: new Date().toISOString() },
+  });
+  return json({ slug, reviewState: 'approved' }, {}, requestId);
+}
+
+export async function setLessonPublished(req: Request, env: Env, requestId: string, user: SessionUser, publish: boolean): Promise<Response> {
+  const slug = slugFrom(req);
+  const row = await loadForLifecycle(env, slug);
+
+  if (publish && row.review_state !== 'approved') {
+    throw new HttpError(409, 'NOT_REVIEWED', 'لا يُنشر درس غير مراجَع. أكمل المراجعة البشرية أولًا.');
+  }
+  const nextStatus = publish ? 'published' : 'draft';
+  const statements = [
+    env.DB.prepare(`UPDATE lessons SET status = ? WHERE id = ?`).bind(nextStatus, row.id),
+    env.DB.prepare(`UPDATE lesson_versions SET status = ? WHERE id = ?`).bind(nextStatus, row.version_id),
+  ];
+  // كتالوج المسارات لا يعرض البرنامج/الوحدة إلا إذا كانا منشورين أيضًا.
+  // عند نشر درس مراجَع ننشر أسلافه فقط؛ لا نلغي نشرهم عند سحب درس واحد
+  // لأن دروسًا منشورة أخرى قد تعتمد على الأسلاف أنفسهم.
+  if (publish) {
+    statements.push(
+      env.DB.prepare(`UPDATE units SET status = 'published' WHERE id = ?`).bind(row.unit_id),
+      env.DB.prepare(`UPDATE programs SET status = 'published' WHERE id = ?`).bind(row.program_id),
+    );
+  }
+  await env.DB.batch(statements);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: user.id, action: publish ? 'content.publish' : 'content.unpublish', targetType: 'lesson',
+    targetId: row.id, requestId, result: 'success',
+    after: { slug, status: nextStatus, previousStatus: row.status, unitId: row.unit_id, programId: row.program_id, ancestorsPublished: publish },
+  });
+  return json({ slug, status: nextStatus }, {}, requestId);
 }

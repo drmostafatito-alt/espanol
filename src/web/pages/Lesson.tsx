@@ -114,17 +114,28 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
     playAudio(nextRate);
   }, [audioRate, playAudio]);
 
+  // AUD-13: معرّف حدث ثابت لكل تمرين حتى يؤكّد الخادم الاستلام — إعادة
+  // المحاولة بعد ضياع استجابة تعيد نفس الحدث فيعيد الخادم النتيجة (replay)
+  // بلا محاولة مكررة. يُمسح عند النجاح فقط.
+  const eventIdByExercise = useRef(new Map<string, string>());
+
   const submit = useCallback(async () => {
     if (!current || busy || busyRef.current) return;
     busyRef.current = true;
     setBusy(true);
+    let eventId = eventIdByExercise.current.get(current.id);
+    if (!eventId) {
+      eventId = newEventId();
+      eventIdByExercise.current.set(current.id, eventId);
+    }
     try {
       const res = await api.submitAnswer(slug, {
-        eventId: newEventId(),
+        eventId,
         exerciseId: current.id,
         response: answer,
         durationMs: Date.now() - startedAt.current,
       });
+      eventIdByExercise.current.delete(current.id);
       setResult(res);
       setResults(prev => ({ ...prev, [current.id]: res.correct }));
       setPhase('feedback');
@@ -389,7 +400,8 @@ function QuestionScene({ children, mood = 'wave' }: { children: ReactNode; mood?
 }
 
 function hasAnswer(exercise: LessonExercise, answer: unknown): boolean {
-  if (exercise.mode === 'participation') return true;
+  // AUD-16: «المشاركة» تعني محاولة فعلية (نص مكتوب أو منطوق مُتعرف) لا ضغطة فارغة
+  if (exercise.mode === 'participation') return typeof answer === 'string' && answer.trim().length > 0;
   if (Array.isArray(answer)) return answer.length > 0;
   if (exercise.options.length) return typeof answer === 'string' && answer.length > 0;
   return typeof answer === 'string' && answer.trim().length > 0;
@@ -464,7 +476,8 @@ function ExerciseBody({
     recognizer.start();
   };
 
-  const hasAudio = !!(exercise.audioKey || exercise.speechEs || exercise.stemEs);
+  // زر تشغيل بلا نص منطوق = زر ميت صامت (playAudio يخرج مبكرًا)؛ لا نظهره أصلًا
+  const hasAudio = !!(exercise.speechEs || exercise.stemEs);
   // الماسكوت حاضر في كل سؤال: عند غياب الجملة الإسبانية تعرض الفقاعة التعليمات نفسها
   const instructionBubble = (
     <p className="bubble-ar" style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--color-navy)', margin: 0 }}>
@@ -610,16 +623,16 @@ function ExerciseBody({
               <Icon name="refresh" size={16} /> إعادة الاستماع
             </button>
             {rateButton}
-            {exercise.stemEs && (
+            {exercise.stemEs && (disabled || audioNotice) && (
               <button className="btn ghost sm" data-testid="toggle-transcript" onClick={() => setShowTranscript(v => !v)} type="button">
                 {showTranscript ? 'إخفاء النص' : 'إظهار النص المكتوب'}
               </button>
             )}
           </div>
-          {(showTranscript || audioNotice) && exercise.stemEs && (
+          {((showTranscript && disabled) || audioNotice) && exercise.stemEs && (
             <p className="bubble-es es" dir="ltr" style={{ marginTop: 'var(--s-3)', marginBottom: 0 }}>{exercise.stemEs}</p>
           )}
-          {(showTranscript || audioNotice) && exercise.stemAr && (
+          {((showTranscript && disabled) || audioNotice) && exercise.stemAr && (
             <p className="bubble-ar" style={{ marginTop: 'var(--s-1)', marginBottom: 0 }}>{exercise.stemAr}</p>
           )}
         </QuestionScene>
@@ -702,6 +715,20 @@ function ExerciseBody({
       </QuestionScene>
       <label className="field" style={{ marginTop: 'var(--s-4)' }}>
         <span>إجابتك بالإسبانية</span>
+        {(['write_email', 'summarize_dialogue', 'write_sentence'].includes(exercise.type)) ? (
+        <textarea
+          data-testid="lesson-text"
+          dir="ltr"
+          className="es"
+          rows={4}
+          disabled={disabled}
+          value={typeof answer === 'string' ? answer : ''}
+          onChange={e => setAnswer(e.target.value)}
+          placeholder="Escribe aquí…"
+          autoComplete="off"
+          autoCapitalize="off"
+        />
+        ) : (
         <input
           data-testid="lesson-text"
           type="text"
@@ -720,6 +747,7 @@ function ExerciseBody({
           autoComplete="off"
           autoCapitalize="off"
         />
+        )}
       </label>
     </div>
   );

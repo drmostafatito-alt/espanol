@@ -10,6 +10,7 @@ import { join, basename } from 'node:path';
 import { buildContentPlan } from '../tools/lib/content-plan.mjs';
 // @ts-ignore
 import { validateCurriculum } from '../tools/lib/curriculum.mjs';
+import { gradingModeOf } from '../src/worker/lib/grading';
 
 const ROOT = process.cwd();
 const CONTENT_DIRS = [
@@ -47,6 +48,27 @@ describe('بوّابات المحتوى', () => {
       it('خطة الاستيراد بلا أخطاء ولها محتوى فعلي', () => {
         expect(plan.errors).toEqual([]);
         expect(plan.statements.length).toBeGreaterThan(10);
+      });
+
+      it('كل معيار إتقان قابل للتحقيق من التمارين الموجودة', () => {
+        const impossible: string[] = [];
+        for (const L of lessons) {
+          const exercises = (L.exercises ?? []) as { type: string }[];
+          const gradedCount = exercises.filter(ex => gradingModeOf(ex.type) === 'graded').length;
+          const criteria = (L.mastery ?? {}) as {
+            minCorrectExercises?: number;
+            requiredExerciseTypes?: string[];
+          };
+          if (gradedCount === 0) impossible.push(`${L.slug}: لا توجد تمارين مُصحَّحة`);
+          if ((criteria.minCorrectExercises ?? 0) > gradedCount) {
+            impossible.push(`${L.slug}: minCorrectExercises=${criteria.minCorrectExercises} > graded=${gradedCount}`);
+          }
+          const present = new Set(exercises.map(ex => ex.type));
+          for (const type of criteria.requiredExerciseTypes ?? []) {
+            if (!present.has(type)) impossible.push(`${L.slug}: نوع مطلوب غائب ${type}`);
+          }
+        }
+        expect(impossible).toEqual([]);
       });
 
       it('لا شيء منشور، ولا سجل مراجعة بشرية مُفبرأ', () => {

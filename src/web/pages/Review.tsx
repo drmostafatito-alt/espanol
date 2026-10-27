@@ -17,6 +17,20 @@ import { Mascot } from '../components/Mascot';
 
 const QUEUE_KEY = 'srs.pending.v1';
 
+let queueKey = QUEUE_KEY;
+
+/** ربط قائمة الانتظار بحساب مالكها (AUD-14): تقييمات حساب لا تُرسَل باسم حساب آخر */
+export function bindPendingQueue(userId: string | null): void {
+  queueKey = userId ? `${QUEUE_KEY}:${userId}` : QUEUE_KEY;
+  // قائمة قديمة بلا مالك معروف: تُحذف بدل إلصاقها بحساب آخر
+  try { localStorage.removeItem(QUEUE_KEY); } catch { /* noop */ }
+}
+
+/** مسح قائمة المستخدم عند تسجيل الخروج */
+export function clearPendingQueue(): void {
+  writeQueue([]);
+}
+
 interface PendingReview {
   clientEventId: string;
   cardId: string;
@@ -32,7 +46,7 @@ function newEventId(): string {
 
 function readQueue(): PendingReview[] {
   try {
-    const raw = localStorage.getItem(QUEUE_KEY);
+    const raw = localStorage.getItem(queueKey);
     const parsed = raw ? (JSON.parse(raw) as unknown) : [];
     return Array.isArray(parsed) ? (parsed as PendingReview[]) : [];
   } catch {
@@ -42,8 +56,8 @@ function readQueue(): PendingReview[] {
 
 function writeQueue(items: PendingReview[]): void {
   try {
-    if (items.length) localStorage.setItem(QUEUE_KEY, JSON.stringify(items));
-    else localStorage.removeItem(QUEUE_KEY);
+    if (items.length) localStorage.setItem(queueKey, JSON.stringify(items));
+    else localStorage.removeItem(queueKey);
   } catch {
     /* التخزين قد يكون معطّلًا (وضع خاص) — نفشل بهدوء ولا ندّعي حفظًا */
   }
@@ -94,8 +108,10 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
           responseMs: item.responseMs,
         });
       } catch (err) {
-        // 4xx = الطلب مرفوض نهائيًا (بطاقة محذوفة مثلًا) ⇒ لا معنى لإعادة المحاولة
-        if (err instanceof ApiError && err.status >= 400 && err.status < 500) continue;
+        // 400/404 فقط = طلب مرفوض نهائيًا (بطاقة محذوفة مثلًا) ⇒ لا معنى لإعادة المحاولة.
+        // أخطاء الجلسة (401/403) والخادم والشبكة لا تعني أن التقييم فقد قيمته:
+        // يبقى في القائمة لمحاولة لاحقة بدل فقدانه صامتًا (AUD-14).
+        if (err instanceof ApiError && (err.status === 400 || err.status === 404)) continue;
         left.push(item);
       }
     }

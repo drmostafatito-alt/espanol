@@ -57,6 +57,14 @@ jobs:
       - name: بناء الإنتاج
         run: npx vite build
 
+      - name: حداثة فهرس البحث (لا نتائج من فهرس قديم)
+        run: |
+          node tools/generate-search-index.mjs
+          git diff --exit-code -- src/shared/search-index.json
+
+      - name: سقف الأمثلة القالبية (AUD-08 — يُخفَّض مع التحسين اليدوي)
+        run: node tools/audit-example-frames.mjs --ci
+
       # معلوماتي فقط: wrangler.toml المرفوع إعداد تطوير، وفشل هذا الفحص هو الوضع الصحيح.
       # لا نجعله يفشل CI وإلا صار ضجيجًا؛ اختباراته في tests/deploy-preflight.test.ts تضمن سلوكه.
       - name: بوابة ما قبل النشر (معلوماتية)

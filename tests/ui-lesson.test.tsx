@@ -82,13 +82,30 @@ async function playLesson(slug: string, session: { exercises: { id: string; mode
     const area = document.querySelector('textarea');
 
     if (choice) {
-      await user.click(choice);
+      // AUD-03: ترتيب العرض مخلوط خادميًا — المساعد يختار الصحيح بمعرّفه
+      // كمتعلم يعرف الإجابة، لا «الأول دائمًا» (كانت تلك هي الثغرة نفسها)
+      const a = correctAnswer(h, ex.id);
+      const target = typeof a === 'string'
+        ? document.querySelector<HTMLInputElement>(`input[type="radio"][value="${a}"]`)?.closest('label')
+        : null;
+      await user.click((target ?? choice) as HTMLElement);
     } else if (text) {
       const a = correctAnswer(h, ex.id);
       await user.type(text, typeof a === 'string' ? a : 'hola');
     } else if (token) {
-      const n = document.querySelectorAll('.token.ghost').length;
-      for (let k = 0; k < n; k++) await user.click(document.querySelector<HTMLButtonElement>('.token.ghost')!);
+      // عناصر الترتيب مخلوطة أيضًا: ننقر الكلمات بترتيب الجملة الصحيح نصيًا
+      const a = correctAnswer(h, ex.id) as { tokens?: string[] } | string | undefined;
+      const wanted = a && typeof a === 'object' && Array.isArray(a.tokens) ? a.tokens : null;
+      if (wanted) {
+        for (const w of wanted) {
+          const btn = [...document.querySelectorAll<HTMLButtonElement>('.token.ghost')]
+            .find(t => t.textContent?.trim() === w);
+          if (btn) await user.click(btn);
+        }
+      } else {
+        const n = document.querySelectorAll('.token.ghost').length;
+        for (let k = 0; k < n; k++) await user.click(document.querySelector<HTMLButtonElement>('.token.ghost')!);
+      }
     } else if (area) {
       await user.type(area, 'Me llamo estudiante.');
     }

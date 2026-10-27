@@ -128,7 +128,19 @@ export const api = {
 
   // ---- المرحلة 2: التعلم ----
   progress: () => request<ProgressPayload>('/api/me/progress'),
-  submitPlacement: (body: { targetLevel: 'A1' | 'A2'; answers?: Record<string | number, string>; score?: number; answersCount?: number }) =>
+  placementStart: () =>
+    request<{
+      attemptId: string;
+      total: number;
+      questions: {
+        id: string;
+        level: string;
+        promptAr: string;
+        stemEs?: string;
+        options: { id: string; text: string }[];
+      }[];
+    }>('/api/me/placement/start', { method: 'POST' }),
+  submitPlacement: (body: { attemptId: string; answers: Record<string, string> }) =>
     request<{
       passed: boolean;
       score: number;
@@ -137,6 +149,7 @@ export const api = {
       unlockedLessonsCount: number;
       xpAwarded: number;
       messageAr: string;
+      feedback?: { id: string; explanationAr: string }[];
     }>('/api/me/placement', { method: 'POST', body: JSON.stringify(body) }),
   lessonSession: (slug: string) => request<LessonSession>(`/api/lessons/${encodeURIComponent(slug)}/session`),
   submitAnswer: (slug: string, body: { eventId: string; exerciseId: string; response: unknown; durationMs?: number }) =>
@@ -145,7 +158,7 @@ export const api = {
     request<CompleteResult>(`/api/lessons/${encodeURIComponent(slug)}/complete`, { method: 'POST', body: JSON.stringify({ eventId }) }),
 
   // ---- المراجعة المتباعدة ----
-  reviewSession: (limit?: number) => request<ReviewPayload>(`/api/review/session${limit ? `?limit=${limit}` : ''}`),
+  reviewSession: (limit?: number) => request<ReviewPayload>(`/api/review/session${limit !== undefined ? `?limit=${limit}` : ''}`),
   submitReview: (body: { clientEventId: string; cardId: string; rating: ReviewRating; responseMs?: number }) =>
     request<ReviewResult>('/api/review/answers', { method: 'POST', body: JSON.stringify(body) }),
   reviewPacks: () => request<{ packs: ReviewPack[] }>('/api/review/packs'),

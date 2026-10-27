@@ -1,6 +1,17 @@
 import { DatabaseSync } from 'node:sqlite';
 
-const DB_PATH = '.wrangler/state/v3/d1/miniflare-D1DatabaseObject/9ba2b04bf514d9facfd57ed57d849e77241a7adc99d1c1545d06688b43d84248.sqlite';
+// اكتشاف ملف القاعدة المحلية ديناميكيًا (AUD-21) — الاسم هاش يختلف بين الأجهزة/المشاريع
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
+const D1_DIR = '.wrangler/state/v3/d1/miniflare-D1DatabaseObject';
+const dbFiles = (() => { try { return readdirSync(D1_DIR).filter(f => f.endsWith('.sqlite') && !f.includes('-wal') && !f.includes('-shm')); } catch { return []; } })();
+if (dbFiles.length !== 1) {
+  console.error(dbFiles.length === 0
+    ? '❌ لا قاعدة D1 محلية. شغّل: npm run db:migrate:local ثم الاستيراد المحلي أولًا.'
+    : `❌ وُجد ${dbFiles.length} ملفات قاعدة محلية — حدّد المقصودة يدويًا قبل التشغيل.`);
+  process.exit(2);
+}
+const DB_PATH = join(D1_DIR, dbFiles[0]);
 const db = new DatabaseSync(DB_PATH, { open: true, readOnly: true });
 
 const lessons = db.prepare(`

@@ -11,25 +11,12 @@ reports/*.local.*
 test-results/
 playwright-report/
 reports/playwright/
-.dev.vars
-.env
-.env.*
-!.env.example
-node_modules/
-dist/
-.wrangler/
 .git/
-test-results/
-playwright-report/
 coverage/
 *.sqlite
 *.sqlite3
 *.db
 *.db-journal
-.dev.vars
-.env
-.env.*
-!.env.example
 .sudo_as_admin_successful
 
 # Python bytecode (مولّدات tools/gen)
@@ -41,7 +28,6 @@ tools/audio-engine/piper/
 tools/audio-engine/*.zip
 tools/audio-engine/*.onnx*
 tools/audio-engine/*.wav
-
 
 # مخرجات فحص تكامل المنهج (تُولَّد مجددًا بالأداة والاختبارات)
 reports/content-integrity.json

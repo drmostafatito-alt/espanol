@@ -18,7 +18,7 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync, unlinkSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { buildContentPlan } from './lib/content-plan.mjs';
+import { buildContentPlan, collectGlobalLinks, linkInsertStatement } from './lib/content-plan.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const WRANGLER_CLI = join(ROOT, 'tools/wrangler-env/node_modules/wrangler/wrangler-dist/cli.js');
@@ -129,8 +129,18 @@ const existingVersions = currentVersions();
 const allStatements = [];
 const aggregatedCounters = {};
 
+const allUnresolved = [];
+const allLinks = [];
+const allLinkStatements = [];
 for (const targetDir of targetDirs) {
-  const { statements, counters, errors } = buildContentPlan(join(ROOT, targetDir), { existingVersions });
+  // AUD-07: حلّ إحالات المفردات من جذر content/ كله، لا من مجلد الاستيراد فقط
+  const { statements, counters, errors, unresolvedVocabRefs, links, linkStatements } = buildContentPlan(join(ROOT, targetDir), {
+    existingVersions,
+    lexiconDirs: [join(ROOT, 'content')],
+  });
+  if (Array.isArray(unresolvedVocabRefs)) allUnresolved.push(...unresolvedVocabRefs);
+  if (Array.isArray(links)) allLinks.push(...links);
+  if (Array.isArray(linkStatements)) allLinkStatements.push(...linkStatements);
   if (errors.length) {
     console.error(`\n❌ المحتوى في ${targetDir} لم يجتز فحص الاستيراد:`);
     for (const e of errors) console.error('   - ' + e);
@@ -144,10 +154,45 @@ for (const targetDir of targetDirs) {
   }
 }
 
+if (allUnresolved.length) {
+  const uniq = [...new Set(allUnresolved.map(u => u.word))].sort();
+  console.log(`\n⚠️ إحالات مفردات بلا مدخل معجمي: ${allUnresolved.length} إحالة (${uniq.length} كلمة فريدة) — سجّلت ولم تُنشأ لها روابط.`);
+}
+// تقارير الاستيراد تُكتب كملفات محلية مهملة من Git حتى لا توسّخ الشجرة (AUD-20)
+writeFileSync(join(ROOT, 'reports', 'vocab-unresolved-refs.local.json'),
+  JSON.stringify({ count: allUnresolved.length, refs: allUnresolved }, null, 2), 'utf8');
+
 if (DRY) {
   console.log('\n(dry-run) لم تُكتب أي بيانات.\n');
   if (sqliteDb) sqliteDb.close();
   process.exit(0);
+}
+
+// VER-04: مرور ربط نهائي شامل + تحقق من المنفَّذ فعليًا.
+// الروابط داخل خطة كل مجلد محروسة بـEXISTS (أمان FK)، لكنها تُتخطى صامتة إن
+// جاء مجلد الدروس قبل مجلد مفرداتها — والمستورِد نفسه يُستدعى لكل مجلد على
+// حدة. لذلك يُعاد حساب كل الروابط من جذر content/ في كل استدعاء وتُنفَّذ بعد
+// المحتوى، ثم تُطابَق بالأزواج الفعلية في القاعدة: رابط درسه ومدخله موجودان
+// ولم يُنشأ = خطأ صريح يوقف الاستيراد، لا فقد صامت آخر.
+const globalLinks = collectGlobalLinks(join(ROOT, 'content')).links;
+const dedupedLinkStatements = [...new Set([...allLinkStatements, ...globalLinks.map(linkInsertStatement)])];
+const expectedPairs = new Set(globalLinks.map(l => `${l.lessonId}|${l.entryId}`));
+let linkPassInserted = 0;
+let verifyReport = null;
+
+function verifyLinks(readPairs, readEntryIds, readLessonIds) {
+  const dbPairs = new Set(readPairs().map(r => `${r.lesson_id}|${r.entry_id}`));
+  const entryIds = new Set(readEntryIds().map(r => r.id));
+  const lessonIds = new Set(readLessonIds().map(r => r.id));
+  const defects = []; // الدرس والمدخل موجودان والرابط غائب — يجب ألا يحدث
+  const deferred = []; // الدرس أو المدخل غير مستورَد بعد (استيراد جزئي مشروع)
+  let present = 0;
+  for (const pair of expectedPairs) {
+    if (dbPairs.has(pair)) { present++; continue; }
+    const [lessonId, entryId] = pair.split('|');
+    (lessonIds.has(lessonId) && entryIds.has(entryId) ? defects : deferred).push(pair);
+  }
+  return { plannedPairs: expectedPairs.size, present, defects, deferred };
 }
 
 if (sqliteDb) {
@@ -159,9 +204,17 @@ if (sqliteDb) {
         process.stdout.write(`\r   نُفِّذ ${i + 1}/${allStatements.length}`);
       }
     }
+    for (const st of dedupedLinkStatements) {
+      linkPassInserted += Number(sqliteDb.prepare(st).run().changes ?? 0);
+    }
     sqliteDb.exec('COMMIT;');
+    verifyReport = verifyLinks(
+      () => sqliteDb.prepare('SELECT lesson_id, entry_id FROM lesson_vocabulary').all(),
+      () => sqliteDb.prepare('SELECT id FROM vocabulary_entries').all(),
+      () => sqliteDb.prepare('SELECT id FROM lessons').all(),
+    );
   } catch (err) {
-    sqliteDb.exec('ROLLBACK;');
+    try { sqliteDb.exec('ROLLBACK;'); } catch {}
     throw err;
   } finally {
     sqliteDb.close();
@@ -170,19 +223,38 @@ if (sqliteDb) {
   const batchIdx = process.argv.indexOf('--batch');
   const BATCH = batchIdx > 0 && process.argv[batchIdx + 1] ? Number(process.argv[batchIdx + 1]) : 40;
   const tmpFile = join(ROOT, '.wrangler', 'tmp-import.sql');
-  for (let i = 0; i < allStatements.length; i += BATCH) {
-    const chunk = allStatements.slice(i, i + BATCH).join(';\n') + ';';
-    writeFileSync(tmpFile, chunk, 'utf8');
-    try {
-      d1File(tmpFile);
-    } catch (err) {
-      try { unlinkSync(tmpFile); } catch {}
-      console.error(`\n❌ فشل عند الدفعة ${i / BATCH + 1}:`);
-      console.error(String(err.stderr ?? err.message).slice(0, 1500));
-      process.exit(1);
+  const runBatches = (stmts, label) => {
+    for (let i = 0; i < stmts.length; i += BATCH) {
+      writeFileSync(tmpFile, stmts.slice(i, i + BATCH).join(';\n') + ';', 'utf8');
+      try {
+        d1File(tmpFile);
+      } catch (err) {
+        try { unlinkSync(tmpFile); } catch {}
+        console.error(`\n❌ فشل عند دفعة ${label} ${i / BATCH + 1}:`);
+        console.error(String(err.stderr ?? err.message).slice(0, 1500));
+        process.exit(1);
+      }
+      process.stdout.write(`\r   نُفِّذ ${Math.min(i + BATCH, stmts.length)}/${stmts.length}`);
     }
-    process.stdout.write(`\r   نُفِّذ ${Math.min(i + BATCH, allStatements.length)}/${allStatements.length}`);
-  }
+  };
+  runBatches(allStatements, 'المحتوى');
+  runBatches(dedupedLinkStatements, 'الربط النهائي');
   try { unlinkSync(tmpFile); } catch {}
+  verifyReport = verifyLinks(
+    () => d1('SELECT lesson_id, entry_id FROM lesson_vocabulary', { json: true }),
+    () => d1('SELECT id FROM vocabulary_entries', { json: true }),
+    () => d1('SELECT id FROM lessons', { json: true }),
+  );
+}
+
+if (verifyReport) {
+  const { plannedPairs, present, defects, deferred } = verifyReport;
+  console.log(`\n🔗 روابط درس↔مفردة: مخططة ${plannedPairs} · منفَّذة الآن ${present} · أضافها المرور النهائي ${linkPassInserted} · مؤجلة (درس/مدخل غير مستورَد بعد) ${deferred.length} · مفقودة رغم وجود مدخلها ${defects.length}`);
+  writeFileSync(join(ROOT, 'reports', 'vocab-link-gaps.local.json'),
+    JSON.stringify({ plannedPairs, present, linkPassInserted, deferred, defects }, null, 2), 'utf8');
+  if (defects.length) {
+    console.error('❌ روابط مفقودة رغم وجود مدخلاتها — انظر reports/vocab-link-gaps.local.json');
+    process.exit(1);
+  }
 }
 console.log('\n\n✅ تم الاستيراد — كل الصفوف بحالة draft / unreviewed. لم يُنشر شيء.');
