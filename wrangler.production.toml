@@ -31,6 +31,7 @@ database_id = "010988b9-2e64-4bfd-bb41-5ceacd0dba86"
 [vars]
 ENVIRONMENT = "production"
 APP_ORIGIN = "https://espanol-balarabi.espanol-balarabi.workers.dev"
+GOOGLE_CLIENT_ID = "446561850098-ejol9v5jqjkg2fqes4vsr5cgian7prl7.apps.googleusercontent.com"
 # APP_ORIGIN: لا يوجد سطر هنا عمدًا. بعد اختيار النطاق (workers.dev مجاني أو
 # دومين خاص) يُضاف سطر واحد بالأصل الوحيد بصيغة HTTPS، مثال:
 # النطاق الكامل فقط، بلا مسار زائد وبلا أصول محلية مختلطة — الاختلاط يعطّل
