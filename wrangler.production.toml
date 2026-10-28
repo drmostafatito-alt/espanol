@@ -8,7 +8,7 @@
 # فتفشل البوابة بصدق (APP_ORIGIN_MISSING وD1_ID_MISSING) حتى يضيفها المالك.
 # راجع القائمة الدقيقة للقيم وطريقة الحصول عليها في docs/28_LAUNCH_RUNBOOK.md.
 
-name = "espanol-balarabi"
+name = "learn"
 main = "src/worker/index.ts"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
@@ -30,7 +30,7 @@ database_id = "010988b9-2e64-4bfd-bb41-5ceacd0dba86"
 
 [vars]
 ENVIRONMENT = "production"
-APP_ORIGIN = "https://espanol-balarabi.espanol-balarabi.workers.dev"
+APP_ORIGIN = "https://learn.espanol-balarabi.workers.dev"
 GOOGLE_CLIENT_ID = "446561850098-ejol9v5jqjkg2fqes4vsr5cgian7prl7.apps.googleusercontent.com"
 # APP_ORIGIN: لا يوجد سطر هنا عمدًا. بعد اختيار النطاق (workers.dev مجاني أو
 # دومين خاص) يُضاف سطر واحد بالأصل الوحيد بصيغة HTTPS، مثال:

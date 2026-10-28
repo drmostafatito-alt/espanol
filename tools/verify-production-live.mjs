@@ -1,7 +1,7 @@
 // @ts-check
 import { strict as assert } from 'node:assert';
 
-const ORIGIN = process.argv[2] || 'https://espanol-balarabi.espanol-balarabi.workers.dev';
+const ORIGIN = process.argv[2] || 'https://learn.espanol-balarabi.workers.dev';
 
 console.log(`[Verify-Live] Running post-deploy smoke checks against: ${ORIGIN}`);
 
