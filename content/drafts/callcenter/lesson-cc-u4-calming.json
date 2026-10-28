@@ -1,0 +1,405 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u4-calming",
+    "titleAr": "تهدئة عميل غاضب",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u4-complaints",
+    "objectiveAr": "أن يهدّئ المتعلم عميلًا غاضبًا بخفض السرعة والنبرة، والاعتراف بالمشاعر، وتقديم خطوة عملية فورية.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "calmar",
+      "frustración",
+      "paciencia"
+    ],
+    "reviewVocabulary": [
+      "escuchar",
+      "tono",
+      "despacio"
+    ],
+    "targetStructures": [
+      "Entiendo su enfado.",
+      "Vamos paso a paso.",
+      "Voy a ayudarle ahora mismo."
+    ],
+    "grammarTopics": [
+      "calmar-cliente"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل غاضب يرفع صوته. أنت الموظف أندريس. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، عميل غاضب (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Le escucho con calma. Entiendo su frustración después de tanta espera.",
+            "ar": "أستمع إليك بهدوء. أتفهّم إحباطك بعد كل هذا الانتظار.",
+            "arEg": "سامعك بهدوء. فاهم إحباطك بعد الانتظار ده كله.",
+            "audioKey": "pending/cc-u4-calming-line-1"
+          },
+          {
+            "es": "¡Ya basta! ¡Quiero una solución ahora!",
+            "ar": "كفى! أريد حلًا الآن!",
+            "arEg": "كفاية! عاوز حل دلوقتي!",
+            "audioKey": "pending/cc-u4-calming-line-2"
+          },
+          {
+            "es": "Tiene razón. Voy a ayudarle ahora mismo, paso a paso, sin más esperas.",
+            "ar": "معك حق. سأساعدك الآن، خطوة بخطوة، دون مزيد من الانتظار.",
+            "arEg": "عندك حق. هساعدك دلوقتي، خطوة خطوة، من غير انتظار تاني.",
+            "audioKey": "pending/cc-u4-calming-line-3"
+          },
+          {
+            "es": "Bien. Empiece, por favor, que no tengo todo el día.",
+            "ar": "حسنًا. ابدأ من فضلك، فليس لدي اليوم كله.",
+            "arEg": "طيب. ابدأ من فضلك، معنديش اليوم كله.",
+            "audioKey": "pending/cc-u4-calming-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الهدوء مُعدٍ كما الغضب مُعدٍ: خفض السرعة والنبرة من الموظف يخفض حدة العميل دون كلمة «اهدأ» واحدة.",
+    "pedagogicalRationaleAr": "التهدئة إجراء لا شعار: اعتراف بالشعور + خطوة فورية محددة، لا وعود عامة بالهدوء.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u4_calming_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u4_calming_1_listen_a",
+            "text": "Entiendo su enfado. Voy a ayudarle ahora mismo, sin esperas.",
+            "isCorrect": true,
+            "textAr": "أتفهّم غضبك. سأساعدك الآن، دون انتظار."
+          },
+          {
+            "id": "cc_u4_calming_1_listen_b",
+            "text": "Entiendo su enfado. Voy a ayudarle mañana, sin esperas.",
+            "isCorrect": false,
+            "textAr": "أتفهّم غضبك. سأساعدك غدًا، دون انتظار.",
+            "distractorRationaleAr": "الصوت قال «ahora mismo» لا «mañana»."
+          },
+          {
+            "id": "cc_u4_calming_1_listen_c",
+            "text": "No entiendo su enfado. Voy a ayudarle ahora mismo.",
+            "isCorrect": false,
+            "textAr": "لا أفهم غضبك. سأساعدك الآن.",
+            "distractorRationaleAr": "الصوت قال «entiendo» لا «no entiendo»."
+          }
+        ],
+        "targetVocab": [
+          "calmar",
+          "paciencia"
+        ],
+        "explanationAr": "الاعتراف بالغضب + المساعدة الفورية = تهدئة عملية.",
+        "errorFeedback": {
+          "cc_u4_calming_1_listen_b": "الصوت قال «ahora mismo» لا «mañana».",
+          "cc_u4_calming_1_listen_c": "الصوت قال «entiendo» لا «no entiendo»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u4-calming-listen",
+        "speechEs": "Entiendo su enfado. Voy a ayudarle ahora mismo, sin esperas.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_calming_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_calming_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تهدئ عميلًا غاضبًا؟",
+        "options": [
+          {
+            "id": "cc_u4_calming_2_choice_a",
+            "text": "Entiendo su enfado. Vamos paso a paso, sin más esperas.",
+            "isCorrect": true,
+            "textAr": "أتفهّم غضبك. لنسِر خطوة بخطوة، دون مزيد من الانتظار."
+          },
+          {
+            "id": "cc_u4_calming_2_choice_b",
+            "text": "Cálmese o cuelgo.",
+            "isCorrect": false,
+            "textAr": "اهدأ أو أغلق الخط.",
+            "distractorRationaleAr": "تهديد يصعّد الغضب بدل تهدئته."
+          },
+          {
+            "id": "cc_u4_calming_2_choice_c",
+            "text": "Grite menos, por favor.",
+            "isCorrect": false,
+            "textAr": "اصرخ أقل من فضلك.",
+            "distractorRationaleAr": "أمر مهين يزيد التوتر."
+          }
+        ],
+        "targetVocab": [
+          "frustración",
+          "tono"
+        ],
+        "explanationAr": "الاعتراف بالشعور + خطة فورية = تهدئة؛ والأوامر تصعّد.",
+        "errorFeedback": {
+          "cc_u4_calming_2_choice_b": "تهديد يصعّد الغضب بدل تهدئته.",
+          "cc_u4_calming_2_choice_c": "أمر مهين يزيد التوتر."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_calming_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_calming_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يصرخ. اختر الرد المهني.",
+        "stemEs": "— ¡Esto es un desastre! ¡Nadie hace nada!",
+        "stemAr": "— هذه فوضى! لا أحد يفعل شيئًا!",
+        "options": [
+          {
+            "id": "cc_u4_calming_3_reply_a",
+            "text": "Le escucho. Voy a hacer algo ahora mismo: compruebo su pedido y le doy una respuesta.",
+            "isCorrect": true,
+            "textAr": "أستمع إليك. سأفعل شيئًا الآن: أتحقق من طلبك وأعطيك ردًا."
+          },
+          {
+            "id": "cc_u4_calming_3_reply_b",
+            "text": "No grite, por favor.",
+            "isCorrect": false,
+            "textAr": "لا تصرخ من فضلك.",
+            "distractorRationaleAr": "طلب مباشر بلا اعتراف ولا إجراء."
+          },
+          {
+            "id": "cc_u4_calming_3_reply_c",
+            "text": "Ya, ya, tranquilo.",
+            "isCorrect": false,
+            "textAr": "حسنًا حسنًا، اهدأ.",
+            "distractorRationaleAr": "تسويف بلا إجراء يزيد الغضب."
+          }
+        ],
+        "targetVocab": [
+          "escuchar",
+          "despacio"
+        ],
+        "explanationAr": "الإجراء الفوري المحدد يثبت للعميل أن شيئًا يحدث فعلًا.",
+        "errorFeedback": {
+          "cc_u4_calming_3_reply_b": "طلب مباشر بلا اعتراف ولا إجراء.",
+          "cc_u4_calming_3_reply_c": "تسويف بلا إجراء يزيد الغضب."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_calming_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_calming_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة المساعدة الفورية.",
+        "stemEs": "Voy a ____ su caso ahora mismo.",
+        "stemAr": "سأتولّى حالتك الآن.",
+        "targetVocab": [
+          "resolver",
+          "gestionar"
+        ],
+        "explanationAr": "«Voy a resolver/gestionar su caso» = سأتولّى حالتك؛ والفعلان مناسبان هنا.",
+        "errorFeedback": {
+          "ignorar": "«ignorar» عكس المطلوب تمامًا."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "resolver",
+            "gestionar"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u4_calming_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تهدئة.",
+        "items": [
+          {
+            "id": "cc_u4_calming_5_order_t1",
+            "kind": "token",
+            "text": "Entiendo"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t2",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t3",
+            "kind": "token",
+            "text": "molestia"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t4",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t5",
+            "kind": "token",
+            "text": "voy"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t6",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t7",
+            "kind": "token",
+            "text": "ayudarle"
+          },
+          {
+            "id": "cc_u4_calming_5_order_t8",
+            "kind": "token",
+            "text": "ahora."
+          }
+        ],
+        "targetVocab": [
+          "calmar",
+          "escuchar"
+        ],
+        "explanationAr": "ترتيب التهدئة: الاعتراف ثم الالتزام الفوري.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Entiendo su molestia y voy a ayudarle ahora."
+          ],
+          "tokenOrder": [
+            "cc_u4_calming_5_order_t1",
+            "cc_u4_calming_5_order_t2",
+            "cc_u4_calming_5_order_t3",
+            "cc_u4_calming_5_order_t4",
+            "cc_u4_calming_5_order_t5",
+            "cc_u4_calming_5_order_t6",
+            "cc_u4_calming_5_order_t7",
+            "cc_u4_calming_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_calming_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل رد تهدئة بنبرة منخفضة وسرعة بطيئة.",
+        "stemEs": "Entiendo su enfado y voy a ayudarle ahora mismo, paso a paso.",
+        "stemAr": "أتفهّم غضبك وسأساعدك الآن، خطوة بخطوة.",
+        "targetVocab": [
+          "calmar",
+          "frustración"
+        ],
+        "explanationAr": "اخفض صوتك قليلًا؛ فالهدوء يبدأ من نبرتك أنت.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u4-calming-speak",
+          "modelAnswer": "Entiendo su enfado y voy a ayudarle ahora mismo, paso a paso."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «تهدئة عميل غاضب». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

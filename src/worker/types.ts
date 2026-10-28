@@ -30,6 +30,13 @@ export interface Env {
   SESSION_TTL_DAYS: string;
   /** سر خارج القاعدة لتجزئة كلمات المرور (wrangler secret). إلزامي في غير بيئة الاختبار. */
   PASSWORD_PEPPER?: string;
+  /**
+   * Google OAuth (المصادقة الخارجية المجانية — قرار مالك 2026-10-28):
+   * معرّف العميل العام. السر عبر `wrangler secret put GOOGLE_CLIENT_SECRET` حصرًا
+   * ولا يظهر في أي ملف ملتزَم. غياب أيٍّ منهما يغلق مسار Google فشلًا مغلقًا.
+   */
+  GOOGLE_CLIENT_ID?: string;
+  GOOGLE_CLIENT_SECRET?: string;
   /** 'false' يغلق التسجيل العام — يُستخدم كبوابة حتى اعتماد سياسة كلمات مرور مناسبة */
   ALLOW_PUBLIC_SIGNUP?: string;
   /** 'true' يسمح بخدمة محتوى draft في التطوير فقط، مع وسم «عينة غير مراجعة» */

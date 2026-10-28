@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-soy-tengo",
+    "titleAr": "جملتان: أكون وعندي",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u4-first-sentence",
+    "objectiveAr": "أن يفرّق المتعلم بين soy (أكون) و tengo (عندي) في جملة قصيرة عن نفسه.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ser",
+      "tener",
+      "año",
+      "egipcio",
+      "español",
+      "estudiante"
+    ],
+    "reviewVocabulary": [
+      "nombre",
+      "hola",
+      "me llamo",
+      "diez"
+    ],
+    "targetStructures": [
+      "Soy + اسم / جنسية / مهنة",
+      "Tengo + عدد + اسم",
+      "Soy de Egipto."
+    ],
+    "grammarTopics": [
+      "ser-vs-tener-primera-persona"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "طالب مصري يعرف بنفسه أمام زملائه في أول حصة: اسمه وجنسيته ومهنته وما عنده.",
+        "settingAr": "صف لغة، صباحًا",
+        "lines": [
+          {
+            "es": "Hola. Soy Omar. Soy egipcio.",
+            "ar": "مرحبًا. أنا عمر. أنا مصري.",
+            "arEg": "أهلًا. أنا عمر. أنا مصري.",
+            "audioKey": "pending/prea1-soy-tengo-omar"
+          },
+          {
+            "es": "Soy estudiante. Tengo dos hermanos.",
+            "ar": "أنا طالب. عندي أخوان.",
+            "arEg": "أنا طالب. عندي أخين.",
+            "audioKey": "pending/prea1-soy-tengo-estudiante"
+          },
+          {
+            "es": "Soy de Egipto. Tengo un gato.",
+            "ar": "أنا من مصر. عندي قط.",
+            "arEg": "أنا من مصر. عندي قط.",
+            "audioKey": "pending/prea1-soy-tengo-egipto"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في الإسبانية يُقال Soy de Egipto للبلد الأصل، وTengo diez años للعمر؛ فالعمر يُقال بفعل «عندي» لا بفعل «أكون»، وهذا أول فرق مهم بين ser وtener.",
+    "pedagogicalRationaleAr": "فعـلا ser وtener هما أول فعلين يحتاجهما المتعلم للحديث عن نفسه؛ يتدرب على الفرق بين «أكون» للهوية و«عندي» للتملك والعمر في جمل قصيرة عن نفسه.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "soy_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "soy_1_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة: Soy egipcio. والجنسية هوية فتُقال مع soy من الفعل ser.",
+        "errorFeedback": {
+          "soy_1_listen_b": "جنسية مختلفة؛ اسمع الكلمة الأخيرة.",
+          "soy_1_listen_c": "tener للتملك لا للهوية؛ الجنسية مع soy."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-soy-tengo-ex1",
+        "speechEs": "Soy egipcio.",
+        "options": [
+          {
+            "id": "soy_1_listen_a",
+            "text": "Soy egipcio.",
+            "isCorrect": true
+          },
+          {
+            "id": "soy_1_listen_b",
+            "text": "Soy español.",
+            "isCorrect": false,
+            "distractorRationaleAr": "جنسية مختلفة؛ اسمع الكلمة الأخيرة."
+          },
+          {
+            "id": "soy_1_listen_c",
+            "text": "Tengo egipcio.",
+            "isCorrect": false,
+            "distractorRationaleAr": "tener للتملك لا للهوية؛ الجنسية مع soy."
+          }
+        ],
+        "targetVocab": [
+          "ser",
+          "egipcio"
+        ]
+      },
+      {
+        "id": "soy_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة صحيحة للتعريف بالاسم؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "soy_2_word_a"
+          ]
+        },
+        "explanationAr": "للهوية والاسم والجنسية نستخدم soy من الفعل ser. أما tengo من tener فهي للتملك: عندي كتاب، عندي أخ.",
+        "errorFeedback": {
+          "soy_2_word_b": "tener للتملك؛ الاسم هوية فيُقال مع soy.",
+          "soy_2_word_c": "estar للحالة والمكان؛ الاسم هوية فيُقال مع soy."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "soy_2_word_a",
+            "text": "Soy Omar.",
+            "textAr": "أنا عمر.",
+            "isCorrect": true
+          },
+          {
+            "id": "soy_2_word_b",
+            "text": "Tengo Omar.",
+            "isCorrect": false,
+            "textAr": "عندي عمر.",
+            "distractorRationaleAr": "tener للتملك؛ الاسم هوية فيُقال مع soy."
+          },
+          {
+            "id": "soy_2_word_c",
+            "text": "Estoy Omar.",
+            "isCorrect": false,
+            "textAr": "أنا عمر.",
+            "distractorRationaleAr": "estar للحالة والمكان؛ الاسم هوية فيُقال مع soy."
+          }
+        ],
+        "targetVocab": [
+          "ser",
+          "tener"
+        ]
+      },
+      {
+        "id": "soy_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالفعل المناسب.",
+        "stemEs": "____ de Egipto.",
+        "stemAr": "أنا من مصر.",
+        "answerKey": {
+          "accepted": [
+            "Soy"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للأصل والبلد نستخدم soy: Soy de Egipto. ولا نقول tengo de Egipto لأن tener للتملك لا للأصل.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "ser",
+          "egipto"
+        ]
+      },
+      {
+        "id": "soy_4_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب العدد الناقص دون اختيارات.",
+        "stemEs": "Tengo ____ hermanos.",
+        "stemAr": "عندي أخوان.",
+        "answerKey": {
+          "accepted": [
+            "dos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للتملك نستخدم tengo: Tengo dos hermanos. وكلمة hermanos جمع hermano، وتعني «إخوة».",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "tener",
+          "hermano"
+        ]
+      },
+      {
+        "id": "soy_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن الأصل صحيحة.",
+        "items": [
+          {
+            "id": "soy_5_order_t1",
+            "kind": "token",
+            "text": "Egipto"
+          },
+          {
+            "id": "soy_5_order_t2",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "soy_5_order_t3",
+            "kind": "token",
+            "text": "Soy"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Soy de Egipto"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: الفعل Soy، ثم حرف الجر de، ثم اسم البلد Egipto. والجملة تعني «أنا من مصر».",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "ser",
+          "egipto"
+        ]
+      },
+      {
+        "id": "soy_6_translate",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية: أنا طالب.",
+        "answerKey": {
+          "accepted": [
+            "Soy estudiante."
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "للتعريف بالمهنة نستخدم soy: Soy estudiante. ولا نقول tengo estudiante لأن tener للتملك.",
+        "skills": [
+          "translation",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "ser",
+          "estudiante"
+        ]
+      },
+      {
+        "id": "soy_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الجمل الثلاث بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجمل الثلاث بصوت واضح ومسموع:",
+        "stemEs": "Soy Omar. Soy egipcio. Tengo dos hermanos.",
+        "stemAr": "أنا عمر. أنا مصري. عندي أخوان.",
+        "audioKey": "pending/prea1-soy-tengo-ex7",
+        "explanationAr": "انطق soy بوضوح، وtengo بنبر على ten. وفرّق في المعنى: soy للهوية، وtengo للتملك.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-soy-tengo-ex7",
+          "modelAnswer": "Soy Omar. Soy egipcio. Tengo dos hermanos."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        },
+        "targetVocab": [
+          "ser",
+          "tener"
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

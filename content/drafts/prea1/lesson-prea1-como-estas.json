@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-como-estas",
+    "titleAr": "كيف حالك؟",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u3-first-words",
+    "objectiveAr": "أن يسأل المتعلم ¿Cómo estás? ويجيب بـbien / mal / más o menos.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "speaking",
+      "pragmatics",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "cómo estás",
+      "bien",
+      "mal",
+      "más o menos",
+      "regular",
+      "genial"
+    ],
+    "reviewVocabulary": [
+      "gracias",
+      "hola"
+    ],
+    "targetStructures": [
+      "¿Cómo estás?",
+      "Estoy bien / mal / regular.",
+      "Más o menos, gracias."
+    ],
+    "grammarTopics": [
+      "como-estas-respuestas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "زميلان يلتقيان في العمل صباحًا؛ أحدهما يسأل عن حال الآخر، ويجيب الثاني بصدق.",
+        "settingAr": "مكتب، صباحًا",
+        "lines": [
+          {
+            "es": "Hola, ¿cómo estás hoy?",
+            "ar": "مرحبًا، كيف حالك اليوم؟",
+            "arEg": "أهلًا، إزيك النهاردة؟",
+            "audioKey": "pending/prea1-como-estas-hoy"
+          },
+          {
+            "es": "Muy bien, gracias. ¿Y tú?",
+            "ar": "بخير جدًا، شكرًا. وأنت؟",
+            "arEg": "كويس جدًا، شكرًا. وإنت؟",
+            "audioKey": "pending/prea1-como-estas-bien"
+          },
+          {
+            "es": "Más o menos, gracias.",
+            "ar": "نصف نصف، شكرًا.",
+            "arEg": "نص نص، شكرًا.",
+            "audioKey": "pending/prea1-como-estas-mas-o-menos"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الإجابة más o menos تعني «بين بين» وتُقال كثيرًا في إسبانيا بدل «بخير» عندما لا يكون اليوم ممتازًا؛ وهي إجابة مهذبة وصادقة في آن واحد.",
+    "pedagogicalRationaleAr": "سؤال الحال أول حوار حقيقي يخوضه المتعلم؛ يتدرب على السؤال وثلاث إجابات متدرجة، فيجيب بما يشعر به فعلًا لا بحفظ إجابة واحدة.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "como_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر السؤال الذي سمعته.",
+        "answerKey": {
+          "correctOptionIds": [
+            "como_1_listen_a"
+          ]
+        },
+        "explanationAr": "السؤال المسموع هو ¿Cómo estás؟ وهو سؤال الحال الموجه إلى «أنت».",
+        "errorFeedback": {
+          "como_1_listen_b": "صيغة رسمية موجهة لشخص آخر؛ السؤال هنا موجه إليك.",
+          "como_1_listen_c": "جملة تعريف بالاسم، وليست السؤال الذي سُمع."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-como-estas-ex1",
+        "speechEs": "¿Cómo estás?",
+        "options": [
+          {
+            "id": "como_1_listen_a",
+            "text": "¿Cómo estás?",
+            "isCorrect": true
+          },
+          {
+            "id": "como_1_listen_b",
+            "text": "¿Cómo está?",
+            "isCorrect": false,
+            "distractorRationaleAr": "صيغة رسمية موجهة لشخص آخر؛ السؤال هنا موجه إليك."
+          },
+          {
+            "id": "como_1_listen_c",
+            "text": "Me llamo Ana.",
+            "isCorrect": false,
+            "distractorRationaleAr": "جملة تعريف بالاسم، وليست السؤال الذي سُمع."
+          }
+        ],
+        "targetVocab": [
+          "cómo estás"
+        ]
+      },
+      {
+        "id": "como_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي رد يعني «أنا بخير»؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "como_2_word_a"
+          ]
+        },
+        "explanationAr": "Estoy bien تعني «أنا بخير». أما mal فتعني «سيئ»، وregular تعني «عادي، بين بين».",
+        "errorFeedback": {
+          "como_2_word_b": "تعني العكس: لست بخير.",
+          "como_2_word_c": "تعني «عادي» لا «بخير تمامًا»."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "como_2_word_a",
+            "text": "Estoy bien.",
+            "textAr": "أنا بخير.",
+            "isCorrect": true
+          },
+          {
+            "id": "como_2_word_b",
+            "text": "Estoy mal.",
+            "isCorrect": false,
+            "textAr": "أنا لست بخير.",
+            "distractorRationaleAr": "تعني العكس: لست بخير."
+          },
+          {
+            "id": "como_2_word_c",
+            "text": "Estoy regular.",
+            "isCorrect": false,
+            "textAr": "أنا بين بين.",
+            "distractorRationaleAr": "تعني «عادي» لا «بخير تمامًا»."
+          }
+        ],
+        "targetVocab": [
+          "bien",
+          "mal",
+          "regular"
+        ]
+      },
+      {
+        "id": "como_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالكلمة الناقصة.",
+        "stemEs": "Estoy ____, gracias.",
+        "stemAr": "أنا بخير، شكرًا.",
+        "answerKey": {
+          "accepted": [
+            "bien"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الإجابة الكاملة: Estoy bien, gracias. وكلمة bien تعني «بخير»، وتُقال بعد الفعل estoy.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "bien",
+          "gracias"
+        ]
+      },
+      {
+        "id": "como_4_translate",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية: أنا بخير، شكرًا.",
+        "answerKey": {
+          "accepted": [
+            "Estoy bien, gracias.",
+            "Bien, gracias."
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الترجمة الطبيعية: Estoy bien, gracias. ويُقبل أيضًا Bien, gracias. بلا الفعل، لأنها إجابة مختصرة شائعة.",
+        "skills": [
+          "translation",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "bien",
+          "gracias"
+        ]
+      },
+      {
+        "id": "como_5_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "زميل يسألك: «¿Cómo estás؟». ماذا ترد؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "como_5_reply_b"
+          ]
+        },
+        "explanationAr": "الرد الطبيعي على سؤال الحال: Muy bien, gracias. أو Estoy bien, gracias.",
+        "errorFeedback": {
+          "como_5_reply_a": "تعريف بالاسم لا رد على سؤال الحال.",
+          "como_5_reply_c": "وداع لا رد على السؤال."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "contextAr": "تلتقي زميلًا في الصباح.",
+        "options": [
+          {
+            "id": "como_5_reply_a",
+            "text": "Me llamo Omar.",
+            "isCorrect": false,
+            "distractorRationaleAr": "تعريف بالاسم لا رد على سؤال الحال."
+          },
+          {
+            "id": "como_5_reply_b",
+            "text": "Muy bien, gracias.",
+            "textAr": "بخير جدًا، شكرًا.",
+            "isCorrect": true
+          },
+          {
+            "id": "como_5_reply_c",
+            "text": "Adiós.",
+            "isCorrect": false,
+            "textAr": "إلى اللقاء.",
+            "distractorRationaleAr": "وداع لا رد على السؤال."
+          }
+        ],
+        "targetVocab": [
+          "bien",
+          "gracias"
+        ]
+      },
+      {
+        "id": "como_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجواب الذي سمعته.",
+        "contextAr": "في موقف وداع قصير، يرد المتحدث على سؤال عن الحال.",
+        "answerKey": {
+          "correctOptionIds": [
+            "como_6_listen_a"
+          ]
+        },
+        "explanationAr": "الجواب المسموع هو Más o menos, gracias. أي «بين بين، شكرًا».",
+        "errorFeedback": {
+          "como_6_listen_b": "معنى مختلف؛ اسمع الكلمتين الأوليين.",
+          "como_6_listen_c": "معنى مختلف؛ اسمع الكلمة الأولى."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-como-estas-ex6",
+        "speechEs": "Más o menos, gracias.",
+        "options": [
+          {
+            "id": "como_6_listen_a",
+            "text": "Más o menos, gracias.",
+            "isCorrect": true
+          },
+          {
+            "id": "como_6_listen_b",
+            "text": "Muy bien, gracias.",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى مختلف؛ اسمع الكلمتين الأوليين."
+          },
+          {
+            "id": "como_6_listen_c",
+            "text": "Mal, gracias.",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى مختلف؛ اسمع الكلمة الأولى."
+          }
+        ],
+        "targetVocab": [
+          "más o menos",
+          "gracias"
+        ]
+      },
+      {
+        "id": "como_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق السؤال والجواب بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ السؤال والجواب بصوت واضح ومسموع:",
+        "stemEs": "¿Cómo estás? Muy bien, gracias.",
+        "stemAr": "كيف حالك؟ بخير جدًا، شكرًا.",
+        "audioKey": "pending/prea1-como-estas-ex7",
+        "explanationAr": "اصعد بصوتك في نهاية السؤال، واهبط به في نهاية الجواب. وانطق más o menos بلا استعجال إن اخترتها جوابًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-como-estas-ex7",
+          "modelAnswer": "¿Cómo estás? Muy bien, gracias."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

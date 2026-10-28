@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-saludos-basicos",
+    "titleAr": "تحيات وأول عبارات",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u3-first-words",
+    "objectiveAr": "أن يقول المتعلم ويفهم hola, adiós, gracias, por favor في موقف يومي.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "vocabulary",
+      "pragmatics"
+    ],
+    "newVocabulary": [
+      "hola",
+      "adiós",
+      "gracias",
+      "por favor",
+      "buenos días",
+      "buenas tardes"
+    ],
+    "reviewVocabulary": [
+      "buenas noches",
+      "hasta luego"
+    ],
+    "targetStructures": [
+      "Hola / Adiós",
+      "Gracias / Por favor",
+      "Buenos días / Buenas tardes / Buenas noches"
+    ],
+    "grammarTopics": [
+      "saludos-basicos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تلميذ يدخل المدرسة صباحًا فيحيي معلمته، ويشكرها عند خروجه، ويطلب بأدب.",
+        "settingAr": "مدخل مدرسة، صباحًا",
+        "lines": [
+          {
+            "es": "Buenos días, señora. Hola.",
+            "ar": "صباح الخير يا سيدة. مرحبًا.",
+            "arEg": "صباح الخير يا مدام. أهلًا.",
+            "audioKey": "pending/prea1-saludos-buenos-dias"
+          },
+          {
+            "es": "Un café, por favor.",
+            "ar": "قهوة، من فضلك.",
+            "arEg": "قهوة لو سمحت.",
+            "audioKey": "pending/prea1-saludos-por-favor"
+          },
+          {
+            "es": "Gracias, señora. Adiós.",
+            "ar": "شكرًا يا سيدة. إلى اللقاء.",
+            "arEg": "شكرًا يا مدام. سلام.",
+            "audioKey": "pending/prea1-saludos-adios"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا يقول الناس buenos días حتى الظهر تقريبًا، ثم buenas tardes بعد الظهر، وbuenas noches ليلًا؛ ويُقال hola في كل الأوقات بين الأصدقاء.",
+    "pedagogicalRationaleAr": "أربع عبارات يومية تفتح كل موقف تواصلي؛ يتعلم المتعلم متى تُقال كل واحدة ويميز التحية عن الوداع وعن الشكر.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "sal_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر التحية التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "sal_1_listen_a"
+          ]
+        },
+        "explanationAr": "التحية المسموعة هي buenos días، وهي تحية الصباح.",
+        "errorFeedback": {
+          "sal_1_listen_b": "تحية بعد الظهر لا الصباح؛ اسمع الكلمة الأولى.",
+          "sal_1_listen_c": "تحية الليل لا الصباح."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-saludos-ex1",
+        "speechEs": "Buenos días.",
+        "options": [
+          {
+            "id": "sal_1_listen_a",
+            "text": "Buenos días.",
+            "isCorrect": true
+          },
+          {
+            "id": "sal_1_listen_b",
+            "text": "Buenas tardes.",
+            "isCorrect": false,
+            "distractorRationaleAr": "تحية بعد الظهر لا الصباح؛ اسمع الكلمة الأولى."
+          },
+          {
+            "id": "sal_1_listen_c",
+            "text": "Buenas noches.",
+            "isCorrect": false,
+            "distractorRationaleAr": "تحية الليل لا الصباح."
+          }
+        ],
+        "targetVocab": [
+          "buenos días"
+        ]
+      },
+      {
+        "id": "sal_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "ماذا تقول عند الوداع؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "sal_2_word_b"
+          ]
+        },
+        "explanationAr": "عند الوداع نقول adiós. أما hola فتحية لقاء، وgracias للشكر.",
+        "errorFeedback": {
+          "sal_2_word_a": "تحية عند اللقاء لا عند الوداع.",
+          "sal_2_word_c": "للشكر لا للوداع."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "sal_2_word_a",
+            "text": "Hola",
+            "isCorrect": false,
+            "textAr": "مرحبًا",
+            "distractorRationaleAr": "تحية عند اللقاء لا عند الوداع."
+          },
+          {
+            "id": "sal_2_word_b",
+            "text": "Adiós",
+            "textAr": "إلى اللقاء",
+            "isCorrect": true
+          },
+          {
+            "id": "sal_2_word_c",
+            "text": "Gracias",
+            "isCorrect": false,
+            "textAr": "شكرًا",
+            "distractorRationaleAr": "للشكر لا للوداع."
+          }
+        ],
+        "targetVocab": [
+          "adiós"
+        ]
+      },
+      {
+        "id": "sal_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالكلمة الناقصة.",
+        "stemEs": "____ días, señora.",
+        "stemAr": "صباح الخير يا سيدة.",
+        "answerKey": {
+          "accepted": [
+            "Buenos",
+            "buenos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التحية الصباحية هي buenos días. وكلمة días جمع مذكر، لذلك الصفة buenos لا buenas.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "buenos días"
+        ]
+      },
+      {
+        "id": "sal_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين تحية مسائية صحيحة.",
+        "items": [
+          {
+            "id": "sal_4_order_t1",
+            "kind": "token",
+            "text": "López"
+          },
+          {
+            "id": "sal_4_order_t2",
+            "kind": "token",
+            "text": "señora"
+          },
+          {
+            "id": "sal_4_order_t3",
+            "kind": "token",
+            "text": "tardes"
+          },
+          {
+            "id": "sal_4_order_t4",
+            "kind": "token",
+            "text": "Buenas"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Buenas tardes señora López"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: التحية أولًا، ثم المخاطَب. وbuenos تتغير إلى buenas مع tardes لأنها جمع مؤنث.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "buenas tardes"
+        ]
+      },
+      {
+        "id": "sal_5_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "صديق يحييك عند اللقاء في الشارع. ماذا ترد؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "sal_5_reply_a"
+          ]
+        },
+        "explanationAr": "رد التحية تحية مثلها: Hola. وadiós للوداع، وgracias للشكر.",
+        "errorFeedback": {
+          "sal_5_reply_b": "وداع لا رد تحية.",
+          "sal_5_reply_c": "شكر لا رد تحية."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "contextAr": "تلتقي صديقًا في الشارع صباحًا.",
+        "options": [
+          {
+            "id": "sal_5_reply_a",
+            "text": "Hola.",
+            "textAr": "مرحبًا.",
+            "isCorrect": true
+          },
+          {
+            "id": "sal_5_reply_b",
+            "text": "Adiós.",
+            "isCorrect": false,
+            "textAr": "إلى اللقاء.",
+            "distractorRationaleAr": "وداع لا رد تحية."
+          },
+          {
+            "id": "sal_5_reply_c",
+            "text": "Gracias.",
+            "isCorrect": false,
+            "textAr": "شكرًا.",
+            "distractorRationaleAr": "شكر لا رد تحية."
+          }
+        ],
+        "targetVocab": [
+          "hola"
+        ]
+      },
+      {
+        "id": "sal_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الطلب الذي سمعته.",
+        "contextAr": "في مقهى، يطلب زبون مشروبًا بأدب.",
+        "answerKey": {
+          "correctOptionIds": [
+            "sal_6_listen_a"
+          ]
+        },
+        "explanationAr": "الطلب المسموع: Un café, por favor. وكلمة por favor تعني «من فضلك».",
+        "errorFeedback": {
+          "sal_6_listen_b": "الكلمة الأخيرة مختلفة؛ اسمع هل هي por favor أم gracias.",
+          "sal_6_listen_c": "café مذكر، لذلك نقول un لا una."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-saludos-ex6",
+        "speechEs": "Un café, por favor.",
+        "options": [
+          {
+            "id": "sal_6_listen_a",
+            "text": "Un café, por favor.",
+            "isCorrect": true
+          },
+          {
+            "id": "sal_6_listen_b",
+            "text": "Un café, gracias.",
+            "isCorrect": false,
+            "distractorRationaleAr": "الكلمة الأخيرة مختلفة؛ اسمع هل هي por favor أم gracias."
+          },
+          {
+            "id": "sal_6_listen_c",
+            "text": "Una café, por favor.",
+            "isCorrect": false,
+            "distractorRationaleAr": "café مذكر، لذلك نقول un لا una."
+          }
+        ],
+        "targetVocab": [
+          "por favor",
+          "café"
+        ]
+      },
+      {
+        "id": "sal_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق العبارات الأربع بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ العبارات الأربع بصوت واضح ومسموع:",
+        "stemEs": "Hola. Buenos días. Gracias. Adiós.",
+        "stemAr": "مرحبًا. صباح الخير. شكرًا. إلى اللقاء.",
+        "audioKey": "pending/prea1-saludos-ex7",
+        "explanationAr": "انطق hola كأنها «أولا» لأن h صامتة، وadiós بنبر على المقطع الأخير. وقل كل عبارة وحدها ثم توقف قليلًا.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-saludos-ex7",
+          "modelAnswer": "Hola. Buenos días. Gracias. Adiós."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

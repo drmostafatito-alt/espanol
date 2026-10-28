@@ -1,0 +1,430 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u6-ayuda",
+    "titleAr": "طلب المساعدة العاجلة والاتصال بالطوارئ",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u6-emergencies",
+    "objectiveAr": "أن يطلب المتعلم المساعدة في موقف طارئ، ويتصل برقم الطوارئ 112، ويصف ما حدث بجمل قصيرة واضحة.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "emergencia",
+      "bomberos"
+    ],
+    "reviewVocabulary": [
+      "ayuda",
+      "socorro",
+      "llamar",
+      "ambulancia"
+    ],
+    "targetStructures": [
+      "¡Necesito ayuda!",
+      "Llame al 112, por favor.",
+      "Hay un accidente."
+    ],
+    "grammarTopics": [
+      "imperativo-usted-ayuda",
+      "numero-emergencias-112"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تشهد حادثًا في الشارع وتريد مساعدة المصابين، فتطلب من المارة الاتصال بالطوارئ.",
+        "settingAr": "شارع في وسط المدينة بعد حادث",
+        "lines": [
+          {
+            "es": "¡Socorro! ¡Necesito ayuda, por favor!",
+            "ar": "النجدة! أحتاج مساعدة من فضلك!",
+            "arEg": "الحقوني! محتاج مساعدة لو سمحت!",
+            "audioKey": "pending/tr-u6-ayuda-1"
+          },
+          {
+            "es": "¿Qué pasa? ¿Está bien?",
+            "ar": "ماذا حدث؟ هل أنت بخير؟",
+            "arEg": "في إيه؟ إنت كويس؟",
+            "audioKey": "pending/tr-u6-ayuda-2"
+          },
+          {
+            "es": "Hay un accidente. Llame al 112, por favor.",
+            "ar": "هناك حادث. اتصل برقم 112 من فضلك.",
+            "arEg": "في حادثة. اتصل بـ112 لو سمحت.",
+            "audioKey": "pending/tr-u6-ayuda-3"
+          },
+          {
+            "es": "Llamo a una ambulancia ahora. ¿Dónde estamos?",
+            "ar": "أتصل بسيارة إسعاف الآن. أين نحن؟",
+            "arEg": "هتصل بالإسعاف دلوقتي. إحنا فين؟",
+            "audioKey": "pending/tr-u6-ayuda-4"
+          },
+          {
+            "es": "Estamos en la calle Mayor, número diez.",
+            "ar": "نحن في شارع مايور، رقم عشرة.",
+            "arEg": "إحنا في شارع مايور، رقم عشرة.",
+            "audioKey": "pending/tr-u6-ayuda-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "رقم الطوارئ الموحد في إسبانيا وكل الاتحاد الأوروبي هو 112، ويعمل من أي هاتف حتى بلا شريحة. عند الاتصال يُطلب منك: مكانك، وما حدث، وعدد المصابين، فاذكر هذه المعلومات بجمل قصيرة وواضحة.",
+    "pedagogicalRationaleAr": "يبدأ الدرس بنداء الاستغاثة الأقصر والأكثر إلحاحًا، ثم برقم الطوارئ، ثم بوصف الحدث، وهي المعلومات الثلاث التي يطلبها عامل الطوارئ بالترتيب نفسه.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u6_ayuda_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى نداء الاستغاثة واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u6-ayuda-listen-1",
+        "speechEs": "¡Necesito ayuda, por favor!",
+        "options": [
+          {
+            "id": "tr_u6_ayuda_1_a",
+            "text": "¡Necesito ayuda, por favor!",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_ayuda_1_b",
+            "text": "¡Necesito una ambulancia, por favor!",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع ayuda (مساعدة) لا ambulancia (سيارة إسعاف)، والجملة عن طلب المساعدة عامة."
+          },
+          {
+            "id": "tr_u6_ayuda_1_c",
+            "text": "¡Necesito un taxi, por favor!",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع ayuda لا taxi، والتاكسي ليس وسيلة طوارئ."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_ayuda_1_a"
+          ]
+        },
+        "explanationAr": "نداء الاستغاثة: ¡Necesito ayuda, por favor! و«ayuda» مساعدة، و«socorro» استغاثة، وكلاهما يُستخدم في الطوارئ.",
+        "errorFeedback": {
+          "tr_u6_ayuda_1_b": "المسموع ayuda (مساعدة) لا ambulancia (سيارة إسعاف)، والجملة عن طلب المساعدة عامة.",
+          "tr_u6_ayuda_1_c": "المسموع ayuda لا taxi، والتاكسي ليس وسيلة طوارئ."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ayuda",
+          "ambulancia",
+          "taxi"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_2_word",
+        "type": "word_choice",
+        "instructionAr": "ما رقم الطوارئ في إسبانيا؟",
+        "options": [
+          {
+            "id": "tr_u6_ayuda_2_a",
+            "text": "112",
+            "textAr": "مئة واثنا عشر.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_ayuda_2_b",
+            "text": "911",
+            "textAr": "تسعمئة وأحد عشر.",
+            "isCorrect": false,
+            "distractorRationaleAr": "911 رقم طوارئ أمريكا الشمالية، وليس رقم إسبانيا."
+          },
+          {
+            "id": "tr_u6_ayuda_2_c",
+            "text": "999",
+            "textAr": "تسعمئة وتسعة وتسعون.",
+            "isCorrect": false,
+            "distractorRationaleAr": "999 رقم طوارئ بريطانيا، وليس رقم إسبانيا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_ayuda_2_a"
+          ]
+        },
+        "explanationAr": "رقم الطوارئ في إسبانيا هو 112. و911 رقم أمريكا الشمالية، و999 رقم بريطانيا، ولا يعملان كرقم طوارئ رئيسي في إسبانيا.",
+        "errorFeedback": {
+          "tr_u6_ayuda_2_b": "911 رقم طوارئ أمريكا الشمالية، وليس رقم إسبانيا.",
+          "tr_u6_ayuda_2_c": "999 رقم طوارئ بريطانيا، وليس رقم إسبانيا."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "emergencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_3_fill",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي رقم تتصل به للطوارئ في إسبانيا؟",
+        "options": [
+          {
+            "id": "tr_u6_ayuda_3_fill_a",
+            "text": "112",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_ayuda_3_fill_b",
+            "text": "911",
+            "isCorrect": false,
+            "distractorRationaleAr": "911 رقم طوارئ أمريكا الشمالية، لا إسبانيا."
+          },
+          {
+            "id": "tr_u6_ayuda_3_fill_c",
+            "text": "999",
+            "isCorrect": false,
+            "distractorRationaleAr": "999 رقم طوارئ بريطانيا، لا إسبانيا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_ayuda_3_fill_a"
+          ]
+        },
+        "explanationAr": "«Llame al 112» بصيغة المخاطبة الرسمية usted: Llame. و«al» من دمج a + el، والرقم 112 رقم الطوارئ الموحد.",
+        "errorFeedback": {
+          "tr_u6_ayuda_3_fill_b": "911 رقم طوارئ أمريكا الشمالية؛ في إسبانيا اتصل بـ112.",
+          "tr_u6_ayuda_3_fill_c": "999 رقم طوارئ بريطانيا؛ في إسبانيا اتصل بـ112."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "llamar",
+          "emergencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تصف الحادث.",
+        "items": [
+          {
+            "id": "tr_u6_ayuda_4_t1",
+            "kind": "token",
+            "text": "Hay"
+          },
+          {
+            "id": "tr_u6_ayuda_4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "tr_u6_ayuda_4_t3",
+            "kind": "token",
+            "text": "accidente"
+          },
+          {
+            "id": "tr_u6_ayuda_4_t4",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "tr_u6_ayuda_4_t5",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "tr_u6_ayuda_4_t6",
+            "kind": "token",
+            "text": "calle"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hay un accidente en la calle",
+            "Hay un accidente en la calle."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Hay un accidente» تعني هناك حادث، و«hay» للوجود، و«en la calle» في الشارع. وهذه أول جملة تقولها عند وصف الطارئ.",
+        "errorFeedback": {
+          "order": "ابدأ بـ Hay، ثم un accidente، ثم المكان en la calle."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "accidente",
+          "calle"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "شخص غريب يسألك ماذا حدث، وهناك حادث في الشارع.",
+        "stemEs": "— ¿Qué pasa?",
+        "stemAr": "— ماذا حدث؟",
+        "options": [
+          {
+            "id": "tr_u6_ayuda_5_a",
+            "text": "Hay un accidente. Llame al 112, por favor.",
+            "textAr": "هناك حادث. اتصل برقم 112 من فضلك.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_ayuda_5_b",
+            "text": "Hay una rebaja. Llame al 112, por favor.",
+            "textAr": "هناك تخفيض. اتصل برقم 112 من فضلك.",
+            "isCorrect": false,
+            "distractorRationaleAr": "التخفيض موضوع تسوق، ولا يُذكر في موقف طارئ."
+          },
+          {
+            "id": "tr_u6_ayuda_5_c",
+            "text": "Hay un mercado. Llame al 112, por favor.",
+            "textAr": "هناك سوق. اتصل برقم 112 من فضلك.",
+            "isCorrect": false,
+            "distractorRationaleAr": "السوق مكان تسوق، ولا يفسر طلب الاتصال بالطوارئ."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_ayuda_5_a"
+          ]
+        },
+        "explanationAr": "الجواب يذكر الحدث الحقيقي ويطلب الاتصال بالطوارئ: Hay un accidente. Llame al 112, por favor. والتخفيض والسوق لا علاقة لهما بالطارئ.",
+        "errorFeedback": {
+          "tr_u6_ayuda_5_b": "التخفيض موضوع تسوق، ولا يُذكر في موقف طارئ.",
+          "tr_u6_ayuda_5_c": "السوق مكان تسوق، ولا يفسر طلب الاتصال بالطوارئ."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "accidente",
+          "llamar",
+          "emergencia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أحتاج مساعدة من فضلك، هناك حادث.",
+        "answerKey": {
+          "accepted": [
+            "Necesito ayuda, por favor. Hay un accidente.",
+            "Necesito ayuda, por favor, hay un accidente."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«Necesito ayuda» تعني أحتاج مساعدة، و«Hay un accidente» تعني هناك حادث. والجملتان معًا تكفيان لبدء طلب المساعدة.",
+        "errorFeedback": {
+          "Hay un accidente. Necesito un taxi, por favor.": "في الطارئ تُطلب المساعدة لا التاكسي.",
+          "Necesito un accidente, por favor.": "«accidente» لا يُطلب؛ المطلوب ayuda (مساعدة)، والحادث يُذكر بـ Hay un accidente."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "ayuda",
+          "accidente"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_ayuda_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "استغث واطلب الاتصال بالطوارئ. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "¡Socorro! ¡Necesito ayuda, por favor! Hay un accidente. Llame al 112, por favor.",
+        "stemAr": "النجدة! أحتاج مساعدة من فضلك! هناك حادث. اتصل برقم 112 من فضلك.",
+        "answerKey": {
+          "modelAnswer": "¡Socorro! ¡Necesito ayuda, por favor! Hay un accidente. Llame al 112, por favor.",
+          "referenceAudioKey": "pending/tr-u6-ayuda-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "socorro",
+          "ayuda",
+          "accidente"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الطوارئ 1/4 (طلب المساعدة العاجلة والاتصال بالطوارئ). يحتاج مراجعة إسبانية أصلية لصيغ الاستغاثة ورقم الطوارئ 112. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

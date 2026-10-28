@@ -60,6 +60,41 @@ function useAuthForm(onDone: () => void) {
   return { busy, error, submit };
 }
 
+/* الدخول عبر Google: تنقّل كامل (لا SPA) لأن المسار يبدأ تدفق OAuth على الخادم.
+   لا شعار مرسومًا: زر نصي فقط، بلا ادعاء شعار العلامة. */
+function GoogleButton() {
+  return (
+    <button
+      type="button"
+      className="btn block"
+      onClick={() => { window.location.href = '/api/auth/oauth/google/start'; }}
+    >
+      المتابعة بحساب Google
+    </button>
+  );
+}
+
+function AuthDivider() {
+  return (
+    <p className="small muted" style={{ textAlign: 'center', marginBottom: 0 }}>أو</p>
+  );
+}
+
+/* رسائل إعادة التوجيه من مسار OAuth: رموز عامة فقط، بلا تفاصيل مزوّد. */
+const OAUTH_MESSAGES: Record<string, string> = {
+  unavailable: 'تسجيل الدخول عبر Google غير متاح حاليًا. جرّب الدخول بكلمة المرور.',
+  denied: 'ألغيت تسجيل الدخول عبر Google. يمكنك المحاولة مجددًا أو الدخول بكلمة المرور.',
+  invalid: 'انتهت صلاحية محاولة الدخول عبر Google. حاول مجددًا.',
+  failed: 'تعذّر تسجيل الدخول عبر Google. حاول مجددًا أو ادخل بكلمة المرور.',
+};
+
+function oauthErrorFromQuery(): FormError | null {
+  if (typeof window === 'undefined') return null;
+  const code = new URLSearchParams(window.location.search).get('oauth');
+  if (!code || !(code in OAUTH_MESSAGES)) return null;
+  return { message: OAUTH_MESSAGES[code]! };
+}
+
 function ErrorBox({ error }: { error: FormError | null }) {
   if (!error) return null;
   return (
@@ -147,6 +182,8 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
           نطلب البريد لتعريف حسابك وحفظ تقدمك فيه. لا نرسل رسائل تسويقية، ولا نشارك بريدك مع أي جهة إعلانية.
         </p>
         <ErrorBox error={error} />
+        <GoogleButton />
+        <AuthDivider />
         <label className="field">
           <span>الاسم الذي تحب أن نناديك به (اختياري)</span>
           <input type="text" value={displayName} onChange={e => setDisplayName(e.target.value)} autoComplete="nickname" maxLength={80} />
@@ -189,6 +226,7 @@ export function Login({
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { busy, error, submit } = useAuthForm(() => navigate('/learn'));
+  const [oauthError] = useState(oauthErrorFromQuery);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -208,7 +246,9 @@ export function Login({
             )}
           </div>
         )}
-        <ErrorBox error={error} />
+        <ErrorBox error={error ?? oauthError} />
+        <GoogleButton />
+        <AuthDivider />
         <label className="field">
           <span>البريد الإلكتروني</span>
           <div style={{ position: 'relative' }}>

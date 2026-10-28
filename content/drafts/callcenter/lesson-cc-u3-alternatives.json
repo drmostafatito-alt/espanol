@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u3-alternatives",
+    "titleAr": "البدائل عند فشل الخيار الأول",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u3-solutions",
+    "objectiveAr": "أن يقدّم المتعلم بديلًا واضحًا عندما يفشل الخيار الأول، ويشرح الفرق بين الخيارين بصدق.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "alternativa",
+      "opción",
+      "roto"
+    ],
+    "reviewVocabulary": [
+      "ofrecer",
+      "elegir",
+      "proponer"
+    ],
+    "targetStructures": [
+      "La primera opción no es posible, pero…",
+      "Le ofrezco una alternativa.",
+      "¿Qué prefiere usted?"
+    ],
+    "grammarTopics": [
+      "alternativas-condicional"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "الخيار الأول غير ممكن. أنت الموظف سيرخيو. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، عرض بديل (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "La primera opción, el reembolso hoy, no es posible. Pero le ofrezco una alternativa: un nuevo envío.",
+            "ar": "الخيار الأول، الاسترداد اليوم، غير ممكن. لكن أعرض عليك بديلًا: شحنة جديدة.",
+            "arEg": "الاختيار الأول، الاسترداد النهاردة، مش ممكن. بس بعرض عليك بديل: شحنة جديدة.",
+            "audioKey": "pending/cc-u3-alternatives-line-1"
+          },
+          {
+            "es": "¿Y si el producto llega roto otra vez?",
+            "ar": "وماذا لو وصل المنتج مكسورًا مرة أخرى؟",
+            "arEg": "ولو المنتج وصل مكسور تاني؟",
+            "audioKey": "pending/cc-u3-alternatives-line-2"
+          },
+          {
+            "es": "Si llega roto, tramitamos el cambio sin coste. Usted elige: ¿nuevo envío o reembolso en cinco días?",
+            "ar": "إذا وصل مكسورًا، نتولّى التبديل دون تكلفة. أنت تختار: شحنة جديدة أم استرداد خلال خمسة أيام؟",
+            "arEg": "لو وصل مكسور، هنخلّص التبديل من غير تكلفة. انت تختار: شحنة جديدة ولا استرداد في خمس أيام؟",
+            "audioKey": "pending/cc-u3-alternatives-line-3"
+          },
+          {
+            "es": "Elijo el nuevo envío. Gracias por la alternativa.",
+            "ar": "أختار الشحنة الجديدة. شكرًا على البديل.",
+            "arEg": "بختار الشحنة الجديدة. شكرًا على البديل.",
+            "audioKey": "pending/cc-u3-alternatives-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "البديل الصادق يذكر حدوده: «لا أستطيع اليوم، لكن أستطيع خلال خمسة أيام» أصدق من وعد لا يُنفَّذ.",
+    "pedagogicalRationaleAr": "الخيار الواحد الفاشل بلا بديل يغلق المكالمة بالرفض؛ والبديل الواضح يعيد للعميل حق الاختيار.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u3_alternatives_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u3_alternatives_1_listen_a",
+            "text": "La primera opción no es posible, pero le ofrezco una alternativa: un nuevo envío.",
+            "isCorrect": true,
+            "textAr": "الخيار الأول غير ممكن، لكن أعرض عليك بديلًا: شحنة جديدة."
+          },
+          {
+            "id": "cc_u3_alternatives_1_listen_b",
+            "text": "La primera opción es posible, y le ofrezco una alternativa.",
+            "isCorrect": false,
+            "textAr": "الخيار الأول ممكن، وأعرض عليك بديلًا.",
+            "distractorRationaleAr": "الصوت قال «no es posible» لا «es posible»."
+          },
+          {
+            "id": "cc_u3_alternatives_1_listen_c",
+            "text": "La primera opción no es posible, pero no hay alternativa.",
+            "isCorrect": false,
+            "textAr": "الخيار الأول غير ممكن، ولا يوجد بديل.",
+            "distractorRationaleAr": "الصوت قدّم بديلًا لا رفضًا."
+          }
+        ],
+        "targetVocab": [
+          "opción",
+          "alternativa"
+        ],
+        "explanationAr": "بنية البديل: إعلان استحالة الأول + «pero» + البديل.",
+        "errorFeedback": {
+          "cc_u3_alternatives_1_listen_b": "الصوت قال «no es posible» لا «es posible».",
+          "cc_u3_alternatives_1_listen_c": "الصوت قدّم بديلًا لا رفضًا."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u3-alternatives-listen",
+        "speechEs": "La primera opción no es posible, pero le ofrezco una alternativa: un nuevo envío.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_alternatives_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_alternatives_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تقدم بديلًا مهنيًا؟",
+        "options": [
+          {
+            "id": "cc_u3_alternatives_2_choice_a",
+            "text": "No puedo ofrecerle eso hoy, pero puedo ofrecerle un cambio sin coste.",
+            "isCorrect": true,
+            "textAr": "لا أستطيع تقديم ذلك لك اليوم، لكن أستطيع تقديم تبديل دون تكلفة."
+          },
+          {
+            "id": "cc_u3_alternatives_2_choice_b",
+            "text": "No puedo, y punto.",
+            "isCorrect": false,
+            "textAr": "لا أستطيع، ونقطة.",
+            "distractorRationaleAr": "رفض بلا بديل يغلق المكالمة."
+          },
+          {
+            "id": "cc_u3_alternatives_2_choice_c",
+            "text": "Puedo todo, sin problema.",
+            "isCorrect": false,
+            "textAr": "أستطيع كل شيء، دون مشكلة.",
+            "distractorRationaleAr": "وعد عام كاذب بلا حدود."
+          }
+        ],
+        "targetVocab": [
+          "ofrecer",
+          "roto"
+        ],
+        "explanationAr": "الرفض المحدد + البديل الحقيقي = صيغة مهنية صادقة.",
+        "errorFeedback": {
+          "cc_u3_alternatives_2_choice_b": "رفض بلا بديل يغلق المكالمة.",
+          "cc_u3_alternatives_2_choice_c": "وعد عام كاذب بلا حدود."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_alternatives_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_alternatives_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يرفض البديل الأول. اختر الرد المهني.",
+        "stemEs": "— No quiero un nuevo envío, quiero el dinero.",
+        "stemAr": "— لا أريد شحنة جديدة، أريد المال.",
+        "options": [
+          {
+            "id": "cc_u3_alternatives_3_reply_a",
+            "text": "Lo entiendo. Entonces tramito el reembolso en cinco días. ¿Le parece bien?",
+            "isCorrect": true,
+            "textAr": "أفهم ذلك. إذن أتولّى الاسترداد خلال خمسة أيام. هل يناسبك ذلك؟"
+          },
+          {
+            "id": "cc_u3_alternatives_3_reply_b",
+            "text": "El dinero no es posible, elija el envío.",
+            "isCorrect": false,
+            "textAr": "المال غير ممكن، اختر الشحنة.",
+            "distractorRationaleAr": "إجبار العميل على خيار واحد يخالف حقه في الاختيار."
+          },
+          {
+            "id": "cc_u3_alternatives_3_reply_c",
+            "text": "Como quiera, da igual.",
+            "isCorrect": false,
+            "textAr": "كما تريد، لا يهم.",
+            "distractorRationaleAr": "لامبالاة تخالف المهنية."
+          }
+        ],
+        "targetVocab": [
+          "elegir",
+          "proponer"
+        ],
+        "explanationAr": "احترام اختيار العميل + تحديد المدة = بديل ثانٍ مهني.",
+        "errorFeedback": {
+          "cc_u3_alternatives_3_reply_b": "إجبار العميل على خيار واحد يخالف حقه في الاختيار.",
+          "cc_u3_alternatives_3_reply_c": "لامبالاة تخالف المهنية."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_alternatives_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_alternatives_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة عرض البديل.",
+        "stemEs": "Le ofrezco una ____: un nuevo envío.",
+        "stemAr": "أعرض عليك بديلًا: شحنة جديدة.",
+        "targetVocab": [
+          "alternativa",
+          "opción"
+        ],
+        "explanationAr": "«ofrecer una alternativa» تركيب ثابت في خدمة العملاء.",
+        "errorFeedback": {
+          "opción": "«opción» صحيحة المعنى، لكن التركيب الثابت هنا «alternativa»."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "alternativa"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u3_alternatives_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة بديل.",
+        "items": [
+          {
+            "id": "cc_u3_alternatives_5_order_t1",
+            "kind": "token",
+            "text": "Le"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t2",
+            "kind": "token",
+            "text": "ofrezco"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t3",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t4",
+            "kind": "token",
+            "text": "alternativa:"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t5",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t6",
+            "kind": "token",
+            "text": "nuevo"
+          },
+          {
+            "id": "cc_u3_alternatives_5_order_t7",
+            "kind": "token",
+            "text": "envío."
+          }
+        ],
+        "targetVocab": [
+          "alternativa",
+          "ofrecer"
+        ],
+        "explanationAr": "ترتيب العرض: الضمير ثم الفعل ثم المفعول.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Le ofrezco una alternativa: un nuevo envío."
+          ],
+          "tokenOrder": [
+            "cc_u3_alternatives_5_order_t1",
+            "cc_u3_alternatives_5_order_t2",
+            "cc_u3_alternatives_5_order_t3",
+            "cc_u3_alternatives_5_order_t4",
+            "cc_u3_alternatives_5_order_t5",
+            "cc_u3_alternatives_5_order_t6",
+            "cc_u3_alternatives_5_order_t7"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_alternatives_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل عرض بديلين للعميل مع سؤاله عن تفضيله.",
+        "stemEs": "Le ofrezco una alternativa: un nuevo envío sin coste, o el reembolso completo.",
+        "stemAr": "أعرض عليك بديلًا: شحنة جديدة دون تكلفة، أو الاسترداد الكامل.",
+        "targetVocab": [
+          "alternativa",
+          "opción"
+        ],
+        "explanationAr": "توقف بين البديلين، واختم بسؤال التفضيل بنبرة هادئة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u3-alternatives-speak",
+          "modelAnswer": "Le ofrezco una alternativa: un nuevo envío sin coste, o el reembolso completo."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «البدائل». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

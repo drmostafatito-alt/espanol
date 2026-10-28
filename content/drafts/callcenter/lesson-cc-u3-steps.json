@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u3-steps",
+    "titleAr": "عرض الحل خطوة بخطوة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u3-solutions",
+    "objectiveAr": "أن يعرض المتعلم الحل خطوة بخطوة بلغة واضحة، ويتحقق من فهم العميل بعد كل خطوة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "paso",
+      "solución",
+      "en primer lugar"
+    ],
+    "reviewVocabulary": [
+      "explicar",
+      "confirmar",
+      "comprender"
+    ],
+    "targetStructures": [
+      "En primer lugar…",
+      "Después…",
+      "¿Me sigue, por favor?"
+    ],
+    "grammarTopics": [
+      "solucion-pasos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حل يتطلب ثلاث خطوات. أنت الموظفة بولا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، شرح حل متعدد الخطوات (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Le explico la solución paso a paso. En primer lugar, voy a comprobar el pedido. ¿Me sigue, por favor?",
+            "ar": "أشرح لك الحل خطوة بخطوة. أولًا، سأتحقق من الطلب. هل تتابعني من فضلك؟",
+            "arEg": "هشرح لك الحل خطوة خطوة. أولًا، هتأكد من الأوردر. متابعني من فضلك؟",
+            "audioKey": "pending/cc-u3-steps-line-1"
+          },
+          {
+            "es": "Sí, le sigo. ¿Cuál es el segundo paso?",
+            "ar": "نعم، أتابعك. ما الخطوة الثانية؟",
+            "arEg": "أيوه، متابعك. الخطوة التانية إيه؟",
+            "audioKey": "pending/cc-u3-steps-line-2"
+          },
+          {
+            "es": "Después, tramito el reembolso. Y por último, le envío la confirmación por correo.",
+            "ar": "بعد ذلك، أتولّى إجراء الاسترداد. وأخيرًا، أرسل لك التأكيد بالبريد.",
+            "arEg": "بعد كده، هخلّص إجراء الاسترداد. وأخيرًا، هبعت لك التأكيد بالإيميل.",
+            "audioKey": "pending/cc-u3-steps-line-3"
+          },
+          {
+            "es": "Claro: comprobar, reembolsar y confirmar. Perfecto.",
+            "ar": "واضح: التحقق والاسترداد والتأكيد. ممتاز.",
+            "arEg": "واضح: التأكد والاسترداد والتأكيد. ممتاز.",
+            "audioKey": "pending/cc-u3-steps-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "عبارات الترتيب (en primer lugar, después, por último) تعمل كإشارات سمعية تعوّض غياب الكتابة أمام العميل.",
+    "pedagogicalRationaleAr": "الحل الطويل بلا تقسيم يُنسى؛ والتقسيم مع التحقق بعد كل خطوة يحوّل الحل إلى اتفاق مشترك.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u3_steps_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u3_steps_1_listen_a",
+            "text": "En primer lugar, voy a comprobar el pedido. Después, le explico la solución.",
+            "isCorrect": true,
+            "textAr": "أولًا، سأتحقق من الطلب. بعد ذلك، أشرح لك الحل."
+          },
+          {
+            "id": "cc_u3_steps_1_listen_b",
+            "text": "En primer lugar, voy a comprobar la factura. Después, le explico la solución.",
+            "isCorrect": false,
+            "textAr": "أولًا، سأتحقق من الفاتورة. بعد ذلك، أشرح لك الحل.",
+            "distractorRationaleAr": "الصوت قال «pedido» لا «factura»."
+          },
+          {
+            "id": "cc_u3_steps_1_listen_c",
+            "text": "En último lugar, voy a comprobar el pedido. Después, le explico la solución.",
+            "isCorrect": false,
+            "textAr": "في المقام الأخير، سأتحقق من الطلب. بعد ذلك، أشرح لك الحل.",
+            "distractorRationaleAr": "الصوت قال «primer lugar» لا «último lugar»."
+          }
+        ],
+        "targetVocab": [
+          "paso",
+          "solución"
+        ],
+        "explanationAr": "ترتيب الحل يبدأ بالتحقق ثم الشرح.",
+        "errorFeedback": {
+          "cc_u3_steps_1_listen_b": "الصوت قال «pedido» لا «factura».",
+          "cc_u3_steps_1_listen_c": "الصوت قال «primer lugar» لا «último lugar»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u3-steps-listen",
+        "speechEs": "En primer lugar, voy a comprobar el pedido. Después, le explico la solución.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_steps_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_steps_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تفتتح عرض الحل خطوة بخطوة؟",
+        "options": [
+          {
+            "id": "cc_u3_steps_2_choice_a",
+            "text": "Le explico la solución paso a paso. En primer lugar, compruebo el pedido.",
+            "isCorrect": true,
+            "textAr": "أشرح لك الحل خطوة بخطوة. أولًا، أتحقق من الطلب."
+          },
+          {
+            "id": "cc_u3_steps_2_choice_b",
+            "text": "La solución es complicada, no la explico.",
+            "isCorrect": false,
+            "textAr": "الحل معقد، لن أشرحه.",
+            "distractorRationaleAr": "رفض الشرح يترك العميل بلا فهم."
+          },
+          {
+            "id": "cc_u3_steps_2_choice_c",
+            "text": "Hago todo a la vez, sin orden.",
+            "isCorrect": false,
+            "textAr": "أفعل كل شيء دفعة واحدة، دون ترتيب.",
+            "distractorRationaleAr": "غياب الترتيب يربك العميل."
+          }
+        ],
+        "targetVocab": [
+          "en primer lugar",
+          "paso"
+        ],
+        "explanationAr": "إعلان التقسيم + الخطوة الأولى = افتتاح مهني لعرض الحل.",
+        "errorFeedback": {
+          "cc_u3_steps_2_choice_b": "رفض الشرح يترك العميل بلا فهم.",
+          "cc_u3_steps_2_choice_c": "غياب الترتيب يربك العميل."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_steps_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_steps_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يقول إنه فقد التسلسل. اختر الرد المهني.",
+        "stemEs": "— Perdone, me he perdido. ¿Qué paso es este?",
+        "stemAr": "— عذرًا، لقد فقدت التسلسل. أي خطوة هذه؟",
+        "options": [
+          {
+            "id": "cc_u3_steps_3_reply_a",
+            "text": "No se preocupe. Estamos en el segundo paso: tramitar el reembolso. ¿Seguimos?",
+            "isCorrect": true,
+            "textAr": "لا تقلق. نحن في الخطوة الثانية: تولّي إجراء الاسترداد. هل نتابع؟"
+          },
+          {
+            "id": "cc_u3_steps_3_reply_b",
+            "text": "Ya se lo dije, escuche mejor.",
+            "isCorrect": false,
+            "textAr": "لقد قلته لك، استمع جيدًا.",
+            "distractorRationaleAr": "لوم العميل بدل إعادة التموضع."
+          },
+          {
+            "id": "cc_u3_steps_3_reply_c",
+            "text": "Es el último paso, no importa.",
+            "isCorrect": false,
+            "textAr": "إنها الخطوة الأخيرة، لا يهم.",
+            "distractorRationaleAr": "تخطي الخطوات يفسد الاتفاق."
+          }
+        ],
+        "targetVocab": [
+          "comprender",
+          "confirmar"
+        ],
+        "explanationAr": "تحديد موضع الخطوة الحالية ثم طلب المتابعة يعيد العميل إلى التسلسل.",
+        "errorFeedback": {
+          "cc_u3_steps_3_reply_b": "لوم العميل بدل إعادة التموضع.",
+          "cc_u3_steps_3_reply_c": "تخطي الخطوات يفسد الاتفاق."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_steps_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_steps_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل افتتاح عرض الحل.",
+        "stemEs": "En primer ____, compruebo el pedido.",
+        "stemAr": "أولًا، أتحقق من الطلب.",
+        "targetVocab": [
+          "en primer lugar",
+          "paso"
+        ],
+        "explanationAr": "«En primer lugar» تركيب ثابت لافتتاح التسلسل.",
+        "errorFeedback": {
+          "paso": "«primer paso» ممكنة، لكن التركيب الثابت هنا «primer lugar»."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "lugar"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u3_steps_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة خطوة أولى.",
+        "items": [
+          {
+            "id": "cc_u3_steps_5_order_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t2",
+            "kind": "token",
+            "text": "primer"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t3",
+            "kind": "token",
+            "text": "lugar,"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t4",
+            "kind": "token",
+            "text": "voy"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t5",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t6",
+            "kind": "token",
+            "text": "comprobar"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t7",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u3_steps_5_order_t8",
+            "kind": "token",
+            "text": "pedido."
+          }
+        ],
+        "targetVocab": [
+          "paso",
+          "comprobar"
+        ],
+        "explanationAr": "ترتيب التسلسل: عبارة الترتيب ثم المستقبل القريب.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "En primer lugar, voy a comprobar el pedido."
+          ],
+          "tokenOrder": [
+            "cc_u3_steps_5_order_t1",
+            "cc_u3_steps_5_order_t2",
+            "cc_u3_steps_5_order_t3",
+            "cc_u3_steps_5_order_t4",
+            "cc_u3_steps_5_order_t5",
+            "cc_u3_steps_5_order_t6",
+            "cc_u3_steps_5_order_t7",
+            "cc_u3_steps_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_steps_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل عرض حل من خطوتين مع التحقق من متابعة العميل.",
+        "stemEs": "En primer lugar, compruebo el pedido. En segundo lugar, le explico la solución paso a paso.",
+        "stemAr": "أولًا، أتحقق من الطلب. ثانيًا، أشرح لك الحل خطوة بخطوة.",
+        "targetVocab": [
+          "solución",
+          "paso"
+        ],
+        "explanationAr": "توقف بين الخطوتين، واختم بنبرة سؤال: هل تتابعني؟",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u3-steps-speak",
+          "modelAnswer": "En primer lugar, compruebo el pedido. En segundo lugar, le explico la solución paso a paso."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «عرض الحل خطوة بخطوة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

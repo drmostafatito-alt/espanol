@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-hola-me-llamo",
+    "titleAr": "أول كلمات: التحية والاسم",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u4-first-sentence",
+    "objectiveAr": "أن يحيّي المتعلم شخصًا ويُعرّف بنفسه في جملتين قصيرتين، وأن يميّز أن حرف h في الإسبانية لا يُنطق.",
+    "estimatedMinutes": 7,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "pronunciation"
+    ],
+    "newVocabulary": [
+      "hola",
+      "buenos días",
+      "me llamo",
+      "mucho gusto",
+      "nombre"
+    ],
+    "reviewVocabulary": [
+      "gracias"
+    ],
+    "targetStructures": [
+      "Me llamo + اسم",
+      "Soy + اسم",
+      "hola تُقرأ «أولا» لأن h صامتة"
+    ],
+    "grammarTopics": [
+      "pronunciacion-h-muda"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تقابل زميلًا جديدًا في دورة لغة في مدريد في الصباح، فيحيي كل منكما الآخر ويتعرفان.",
+        "settingAr": "قاعة دراسة، صباحًا",
+        "lines": [
+          {
+            "es": "¡Hola! Buenos días.",
+            "ar": "مرحبًا! صباح الخير.",
+            "arEg": "أهلًا! صباح الخير.",
+            "audioKey": "pending/prea1-hola-me-llamo-buenos-dias"
+          },
+          {
+            "es": "Hola. Me llamo Omar.",
+            "ar": "مرحبًا. اسمي عمر.",
+            "arEg": "أهلًا. أنا اسمي عمر.",
+            "audioKey": "pending/prea1-hola-me-llamo-omar"
+          },
+          {
+            "es": "Mucho gusto, Omar. Me llamo Laila.",
+            "ar": "تشرفت بمعرفتك يا عمر. اسمي ليلى.",
+            "arEg": "فرصة سعيدة يا عمر. أنا اسمي ليلى.",
+            "audioKey": "pending/prea1-hola-me-llamo-laila"
+          },
+          {
+            "es": "Gracias. Hasta luego.",
+            "ar": "شكرًا. إلى اللقاء.",
+            "arEg": "شكرًا. سلام.",
+            "audioKey": "pending/prea1-hola-me-llamo-luego"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "عبارة mucho gusto تُقال عند التعرف بشخص جديد، ومعناها الحرفي «سرور كبير»، وهي المقابل الطبيعي لـ«تشرفت بمعرفتك».",
+    "pedagogicalRationaleAr": "أول موقف تواصلي كامل: تحية ثم تعريف بالاسم ثم مجاملة تعارف؛ يتدرب المتعلم على الجملتين الأساسيتين مع نطق h الصامتة من أول درس حواري.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "hola_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "hola_1_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة تعرّف بالاسم: me llamo Omar. ولاحظ أن h في hola لا تُنطق.",
+        "errorFeedback": {
+          "hola_1_listen_b": "اسم مختلف؛ ركز على الاسم بعد me llamo.",
+          "hola_1_listen_c": "تحية وداع لا تحية تعريف."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-hola-me-llamo-ex1",
+        "speechEs": "Hola, me llamo Omar.",
+        "options": [
+          {
+            "id": "hola_1_listen_a",
+            "text": "Hola, me llamo Omar.",
+            "isCorrect": true
+          },
+          {
+            "id": "hola_1_listen_b",
+            "text": "Hola, me llamo Sara.",
+            "isCorrect": false,
+            "distractorRationaleAr": "اسم مختلف؛ ركز على الاسم بعد me llamo."
+          },
+          {
+            "id": "hola_1_listen_c",
+            "text": "Hasta luego, Omar.",
+            "isCorrect": false,
+            "distractorRationaleAr": "تحية وداع لا تحية تعريف."
+          }
+        ],
+        "targetVocab": [
+          "hola",
+          "me llamo"
+        ]
+      },
+      {
+        "id": "hola_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي عبارة تستخدمها في الصباح؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "hola_2_word_a"
+          ]
+        },
+        "explanationAr": "Buenos días تُستخدم صباحًا. وbuenas noches تحية ليلية، وhasta mañana وداع بمعنى «إلى الغد».",
+        "errorFeedback": {
+          "hola_2_word_b": "تحية ليلية؛ خطأ في الوقت لا في اللغة.",
+          "hola_2_word_c": "وداع لا تحية."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "contextAr": "تدخل مكان العمل الساعة الثامنة صباحًا.",
+        "options": [
+          {
+            "id": "hola_2_word_a",
+            "text": "Buenos días",
+            "textAr": "صباح الخير",
+            "isCorrect": true
+          },
+          {
+            "id": "hola_2_word_b",
+            "text": "Buenas noches",
+            "isCorrect": false,
+            "textAr": "مساء الخير ليلًا",
+            "distractorRationaleAr": "تحية ليلية؛ خطأ في الوقت لا في اللغة."
+          },
+          {
+            "id": "hola_2_word_c",
+            "text": "Hasta mañana",
+            "isCorrect": false,
+            "textAr": "إلى الغد",
+            "distractorRationaleAr": "وداع لا تحية."
+          }
+        ],
+        "targetVocab": [
+          "buenos días"
+        ]
+      },
+      {
+        "id": "hola_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالكلمة المناسبة.",
+        "stemEs": "Hola, ____ llamo Sara.",
+        "stemAr": "مرحبًا، اسمي سارة.",
+        "answerKey": {
+          "accepted": [
+            "me"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير الثابت هو me llamo أي «اسمي». ولا نقول mi llamo، لأن mi تعني «خاصتي» بينما llamarse فعل انعكاسي يحتاج الضمير me.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "me llamo"
+        ]
+      },
+      {
+        "id": "hola_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تعريف صحيحة.",
+        "items": [
+          {
+            "id": "hola_4_order_t1",
+            "kind": "token",
+            "text": "llamo"
+          },
+          {
+            "id": "hola_4_order_t2",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "hola_4_order_t3",
+            "kind": "token",
+            "text": "Sara"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me llamo Sara"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب الطبيعي: الضمير الانعكاسي me، ثم الفعل llamo، ثم الاسم. ولا نحتاج ضمير الفاعل yo هنا.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "me llamo"
+        ]
+      },
+      {
+        "id": "hola_5_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "____ días, ¿cómo estás?",
+        "stemAr": "صباح الخير، كيف حالك؟",
+        "answerKey": {
+          "accepted": [
+            "Buenos",
+            "buenos"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "Buenos días هي التحية الصباحية. والكلمة الأولى تُكتب بحرف كبير في بداية الجملة فقط.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "buenos días",
+          "cómo estás"
+        ]
+      },
+      {
+        "id": "hola_6_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "في كلمة hola، أي حرف لا يُنطق؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "hola_6_word_a"
+          ]
+        },
+        "explanationAr": "حرف h في الإسبانية صامت دائمًا: hola تُنطق «أولا». والحروف المتحركة a وe وi وo وu تُنطق قصيرة وواضحة دائمًا.",
+        "errorFeedback": {
+          "hola_6_word_b": "حرف متحرك واضح دائمًا في الإسبانية.",
+          "hola_6_word_c": "حرف منطوق؛ لا تسقطه عند القراءة."
+        },
+        "skills": [
+          "pronunciation"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "hola_6_word_a",
+            "text": "h",
+            "isCorrect": true
+          },
+          {
+            "id": "hola_6_word_b",
+            "text": "o",
+            "isCorrect": false,
+            "distractorRationaleAr": "حرف متحرك واضح دائمًا في الإسبانية."
+          },
+          {
+            "id": "hola_6_word_c",
+            "text": "l",
+            "isCorrect": false,
+            "distractorRationaleAr": "حرف منطوق؛ لا تسقطه عند القراءة."
+          }
+        ]
+      },
+      {
+        "id": "hola_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الجملة بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "انطق الجملة بصوت واضح ومسموع:",
+        "stemEs": "Hola, me llamo Omar. Mucho gusto.",
+        "stemAr": "مرحبًا، اسمي عمر. تشرفت بمعرفتك.",
+        "audioKey": "pending/prea1-hola-me-llamo-ex7",
+        "explanationAr": "انطق hola كأنها «أولا»، وme llamo بوضوح، وmucho gusto بنبر على gus. وسجّل صوتك وقارنه بالنموذج؛ الهدف الوضوح لا محاكاة لهجة بعينها.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-hola-me-llamo-ex7",
+          "modelAnswer": "Hola, me llamo Omar. Mucho gusto."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النطق",
+              "weight": 50
+            },
+            {
+              "code": "completeness",
+              "labelAr": "نطق الجملة كاملة",
+              "weight": 30
+            },
+            {
+              "code": "rhythm",
+              "labelAr": "الإيقاع وعدم التقطيع",
+              "weight": 20
+            }
+          ]
+        },
+        "targetVocab": [
+          "hola",
+          "me llamo",
+          "mucho gusto"
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

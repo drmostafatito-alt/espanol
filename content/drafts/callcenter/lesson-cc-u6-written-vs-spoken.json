@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u6-written-vs-spoken",
+    "titleAr": "الصيغ المكتوبة الرسمية مقابل المنطوقة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u6-writing",
+    "objectiveAr": "أن يميّز المتعلم بين الصيغ المكتوبة الرسمية والصيغ المنطوقة، ويختار الصيغة المناسبة لكل قناة تواصل.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "oral",
+      "escrito",
+      "por último"
+    ],
+    "reviewVocabulary": [
+      "formal",
+      "registro",
+      "tuteo"
+    ],
+    "targetStructures": [
+      "En un correo escribo…",
+      "En una llamada digo…",
+      "Por último…"
+    ],
+    "grammarTopics": [
+      "registro-escrito-oral"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مقارنة بين صيغة مكالمة وصيغة بريد للمعنى نفسه. أنت الموظف بابلو. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مقارنة قناتي تواصل (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "En una llamada digo: «¿Me confirma el código, por favor?». Es una fórmula oral, breve y directa.",
+            "ar": "في المكالمة أقول: «هل تؤكد الرمز من فضلك؟». هذه صيغة شفهية، قصيرة ومباشرة.",
+            "arEg": "في المكالمة بقول: «ممكن تأكد الكود من فضلك؟». دي صيغة شفهية، قصيرة ومباشرة.",
+            "audioKey": "pending/cc-u6-written-vs-spoken-line-1"
+          },
+          {
+            "es": "En un correo escribo: «Le agradecería que confirmara el código de referencia». Es una fórmula escrita, más formal.",
+            "ar": "في البريد أكتب: «سأكون ممتنًا لو أكدت رمز المرجع». هذه صيغة مكتوبة، أكثر رسمية.",
+            "arEg": "في الإيميل بكتب: «هكون ممتن لو أكدت كود المرجع». دي صيغة مكتوبة، أكثر رسمية.",
+            "audioKey": "pending/cc-u6-written-vs-spoken-line-2"
+          },
+          {
+            "es": "Por último, recuerde: el tuteo no se usa con el cliente en ninguna de las dos.",
+            "ar": "أخيرًا، تذكّر: صيغة المخاطبة غير الرسمية لا تُستخدم مع العميل في أي منهما.",
+            "arEg": "أخيرًا، افتكر: صيغة المخاطبة غير الرسمية مش بتتستخدم مع العميل في ولا واحدة فيهم.",
+            "audioKey": "pending/cc-u6-written-vs-spoken-line-3"
+          },
+          {
+            "es": "Claro: oral breve, escrito formal, y usted siempre.",
+            "ar": "واضح: الشفهي قصير، والمكتوب رسمي، وصيغة usted دائمًا.",
+            "arEg": "واضح: الشفهي قصير، والمكتوب رسمي، وصيغة usted دايمًا.",
+            "audioKey": "pending/cc-u6-written-vs-spoken-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "القناة تغير الصيغة لا المضمون: المعنى نفسه يُقال باختصار شفهي ويُكتب بصيغة رسمية كاملة؛ والخلط بينهما يبدو إما متكلفًا أو مبتورًا.",
+    "pedagogicalRationaleAr": "الوعي بالسجل آخر مهارات المسار: من يميّز المنطوق من المكتوب يختار الصيغة الصحيحة دون تفكير في المكالمة التالية.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u6_written_vs_spoken_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u6_written_vs_spoken_1_listen_a",
+            "text": "En un correo, la fórmula es más formal que en una llamada.",
+            "isCorrect": true,
+            "textAr": "في البريد، الصيغة أكثر رسمية منها في المكالمة."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_1_listen_b",
+            "text": "En un correo, la fórmula es menos formal que en una llamada.",
+            "isCorrect": false,
+            "textAr": "في البريد، الصيغة أقل رسمية منها في المكالمة.",
+            "distractorRationaleAr": "الصوت قال «más formal» لا «menos formal»."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_1_listen_c",
+            "text": "En una llamada, la fórmula es más formal que en un correo.",
+            "isCorrect": false,
+            "textAr": "في المكالمة، الصيغة أكثر رسمية منها في البريد.",
+            "distractorRationaleAr": "الصوت قارن البريد بالمكالمة بالعكس."
+          }
+        ],
+        "targetVocab": [
+          "formal",
+          "escrito"
+        ],
+        "explanationAr": "القاعدة: المكتوب أكثر رسمية من المنطوق.",
+        "errorFeedback": {
+          "cc_u6_written_vs_spoken_1_listen_b": "الصوت قال «más formal» لا «menos formal».",
+          "cc_u6_written_vs_spoken_1_listen_c": "الصوت قارن البريد بالمكالمة بالعكس."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u6-written-vs-spoken-listen",
+        "speechEs": "En un correo, la fórmula es más formal que en una llamada.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_written_vs_spoken_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_written_vs_spoken_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي صيغة مكتوبة رسمية؟",
+        "options": [
+          {
+            "id": "cc_u6_written_vs_spoken_2_choice_a",
+            "text": "Le agradecería que confirmara el código de referencia.",
+            "isCorrect": true,
+            "textAr": "سأكون ممتنًا لو أكدت رمز المرجع."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_2_choice_b",
+            "text": "Confírmame el código ya.",
+            "isCorrect": false,
+            "textAr": "أكّد لي الرمز الآن.",
+            "distractorRationaleAr": "أمر بصيغة tuteo غير رسمية."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_2_choice_c",
+            "text": "¿Código? Dímelo.",
+            "isCorrect": false,
+            "textAr": "الرمز؟ قله لي.",
+            "distractorRationaleAr": "اختصار شفهي لا يصلح كتابةً."
+          }
+        ],
+        "targetVocab": [
+          "oral",
+          "registro"
+        ],
+        "explanationAr": "الصيغة المكتوبة: condicional + subjuntivo + usted.",
+        "errorFeedback": {
+          "cc_u6_written_vs_spoken_2_choice_b": "أمر بصيغة tuteo غير رسمية.",
+          "cc_u6_written_vs_spoken_2_choice_c": "اختصار شفهي لا يصلح كتابةً."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_written_vs_spoken_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_written_vs_spoken_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "زميلك يسألك أي صيغة تستخدم في مكالمة. اختر الرد المهني.",
+        "stemEs": "— ¿Uso la fórmula larga del correo también en la llamada?",
+        "stemAr": "— هل أستخدم صيغة البريد الطويلة في المكالمة أيضًا؟",
+        "options": [
+          {
+            "id": "cc_u6_written_vs_spoken_3_reply_a",
+            "text": "No. En la llamada, una fórmula oral breve: «¿Me confirma el código, por favor?».",
+            "isCorrect": true,
+            "textAr": "لا. في المكالمة، صيغة شفهية قصيرة: «هل تؤكد الرمز من فضلك؟»."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_3_reply_b",
+            "text": "Sí, igual, sin diferencia.",
+            "isCorrect": false,
+            "textAr": "نعم، نفس الشيء، دون فرق.",
+            "distractorRationaleAr": "إنكار الفرق بين القناتين."
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_3_reply_c",
+            "text": "No hable, solo escriba.",
+            "isCorrect": false,
+            "textAr": "لا تتحدث، اكتب فقط.",
+            "distractorRationaleAr": "رفض التواصل الشفهي في مكالمة."
+          }
+        ],
+        "targetVocab": [
+          "tuteo",
+          "formal"
+        ],
+        "explanationAr": "لكل قناة صيغتها؛ والقصيرة للمنطوق والكاملة للمكتوب.",
+        "errorFeedback": {
+          "cc_u6_written_vs_spoken_3_reply_b": "إنكار الفرق بين القناتين.",
+          "cc_u6_written_vs_spoken_3_reply_c": "رفض التواصل الشفهي في مكالمة."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_written_vs_spoken_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_written_vs_spoken_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل قاعدة اختيار الصيغة.",
+        "stemEs": "En un correo usamos fórmulas más ____.",
+        "stemAr": "في البريد نستخدم صيغًا أكثر رسمية.",
+        "targetVocab": [
+          "formal",
+          "escrito"
+        ],
+        "explanationAr": "«fórmulas más formales» = صيغ أكثر رسمية؛ والصفة تجمع مع «fórmulas».",
+        "errorFeedback": {
+          "orales": "«orales» صيغ منطوقة؛ والمطلوب صيغ مكتوبة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "formales"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u6_written_vs_spoken_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين قاعدة القناة.",
+        "items": [
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t3",
+            "kind": "token",
+            "text": "correo,"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t4",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t5",
+            "kind": "token",
+            "text": "fórmula"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t6",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t7",
+            "kind": "token",
+            "text": "más"
+          },
+          {
+            "id": "cc_u6_written_vs_spoken_5_order_t8",
+            "kind": "token",
+            "text": "formal."
+          }
+        ],
+        "targetVocab": [
+          "escrito",
+          "oral"
+        ],
+        "explanationAr": "ترتيب القاعدة: القناة ثم الحكم.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "En un correo, la fórmula es más formal."
+          ],
+          "tokenOrder": [
+            "cc_u6_written_vs_spoken_5_order_t1",
+            "cc_u6_written_vs_spoken_5_order_t2",
+            "cc_u6_written_vs_spoken_5_order_t3",
+            "cc_u6_written_vs_spoken_5_order_t4",
+            "cc_u6_written_vs_spoken_5_order_t5",
+            "cc_u6_written_vs_spoken_5_order_t6",
+            "cc_u6_written_vs_spoken_5_order_t7",
+            "cc_u6_written_vs_spoken_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_written_vs_spoken_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "اقرأ بصوت واضح صيغة مكتوبة رسمية كاملة كما لو كنت تمليها.",
+        "stemEs": "En un correo escribo: «Estimada señora Soler, le agradezco su mensaje».",
+        "stemAr": "في البريد أكتب: «سيدتي العزيزة سولير، أشكرك على رسالتك».",
+        "targetVocab": [
+          "oral",
+          "escrito"
+        ],
+        "explanationAr": "اقرأها ببطء رسمي؛ فالصيغة المكتوبة تُسمَع كاملة لا مختصرة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النص وبنيته الكاملة",
+              "weight": 25
+            },
+            {
+              "code": "formality",
+              "labelAr": "السجل الرسمي المناسب للكتابة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "ترتيب الأجزاء ترتيبًا منطقيًا",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u6-written-vs-spoken-speak",
+          "modelAnswer": "En un correo escribo: «Estimada señora Soler, le agradezco su mensaje»."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «الصيغ المكتوبة والمنطوقة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

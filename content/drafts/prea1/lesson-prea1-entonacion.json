@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-entonacion",
+    "titleAr": "نبرة السؤال والنفي",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u2-stress",
+    "objectiveAr": "أن يفرّق المتعلم بنبرة صوته بين الجملة الخبرية والسؤال.",
+    "estimatedMinutes": 7,
+    "skills": [
+      "listening",
+      "speaking",
+      "pronunciation",
+      "pragmatics"
+    ],
+    "newVocabulary": [
+      "cómo estás",
+      "bien",
+      "gracias",
+      "mamá",
+      "casa"
+    ],
+    "reviewVocabulary": [
+      "hola"
+    ],
+    "targetStructures": [
+      "الجملة الخبرية: نبرة هابطة في النهاية",
+      "السؤال: نبرة صاعدة في النهاية وعلامتا ¿ ؟"
+    ],
+    "grammarTopics": [
+      "entonacion-pregunta-afirmacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "صديقان يتحدثان في الهاتف؛ أحدهما يسأل والآخر يجيب، وتتغير النبرة بين السؤال والجواب.",
+        "settingAr": "مكالمة هاتفية، مساءً",
+        "lines": [
+          {
+            "es": "¿Cómo estás? ¿Mamá está en casa?",
+            "ar": "كيف حالك؟ هل ماما في البيت؟",
+            "arEg": "إزيك؟ ماما في البيت؟",
+            "audioKey": "pending/prea1-entonacion-pregunta"
+          },
+          {
+            "es": "Muy bien, gracias. Mamá está en casa.",
+            "ar": "بخير جدًا، شكرًا. ماما في البيت.",
+            "arEg": "كويس جدًا، شكرًا. ماما في البيت.",
+            "audioKey": "pending/prea1-entonacion-respuesta"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في الإسبانية تُكتب علامتا الاستفهام في البداية والنهاية: ¿ في البداية و؟ في النهاية، لتُعرف نبرة السؤال من أول الجملة.",
+    "pedagogicalRationaleAr": "قبل أي قاعدة نحوية يتعلم المتعلم أن النبرة وحدها تفرق بين الخبر والسؤال؛ يتدرب بالأذن أولًا ثم بصوته.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "ent_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ent_1_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة سؤال: ¿Cómo estás؟ وتنطق بنبرة صاعدة في النهاية.",
+        "errorFeedback": {
+          "ent_1_listen_b": "تحية كاملة بسؤال؛ والمسموع سؤال قصير بلا تحية.",
+          "ent_1_listen_c": "ضمير مختلف؛ السؤال موجه إليك لا إليه."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-entonacion-ex1",
+        "speechEs": "¿Cómo estás?",
+        "options": [
+          {
+            "id": "ent_1_listen_a",
+            "text": "¿Cómo estás?",
+            "isCorrect": true
+          },
+          {
+            "id": "ent_1_listen_b",
+            "text": "Hola, ¿cómo estás?",
+            "isCorrect": false,
+            "distractorRationaleAr": "تحية كاملة بسؤال؛ والمسموع سؤال قصير بلا تحية."
+          },
+          {
+            "id": "ent_1_listen_c",
+            "text": "¿Cómo está?",
+            "isCorrect": false,
+            "distractorRationaleAr": "ضمير مختلف؛ السؤال موجه إليك لا إليه."
+          }
+        ],
+        "targetVocab": [
+          "cómo estás"
+        ]
+      },
+      {
+        "id": "ent_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة سؤال؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "ent_2_word_b"
+          ]
+        },
+        "explanationAr": "السؤال يحمل علامتي ¿ ؟ وينطق بنبرة صاعدة في النهاية. أما Bien. فخبر بنبرة هابطة.",
+        "errorFeedback": {
+          "ent_2_word_a": "جملة خبرية بلا علامتي سؤال؛ والمطلوب جملة سؤال.",
+          "ent_2_word_c": "كلمة مختلفة، وجملة خبرية بلا علامتي سؤال."
+        },
+        "skills": [
+          "reading",
+          "pragmatics"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "ent_2_word_a",
+            "text": "Muy bien.",
+            "isCorrect": false,
+            "textAr": "بخير.",
+            "distractorRationaleAr": "جملة خبرية بلا علامتي سؤال؛ والمطلوب جملة سؤال."
+          },
+          {
+            "id": "ent_2_word_b",
+            "text": "¿Bien?",
+            "textAr": "بخير؟",
+            "isCorrect": true
+          },
+          {
+            "id": "ent_2_word_c",
+            "text": "Bueno.",
+            "isCorrect": false,
+            "textAr": "بخير",
+            "distractorRationaleAr": "كلمة مختلفة، وجملة خبرية بلا علامتي سؤال."
+          }
+        ],
+        "targetVocab": [
+          "bien"
+        ]
+      },
+      {
+        "id": "ent_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالكلمة الناقصة.",
+        "stemEs": "¿Cómo ____?",
+        "stemAr": "كيف حالك؟",
+        "answerKey": {
+          "accepted": [
+            "estás"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "السؤال الكامل هو ¿Cómo estás؟ والفعل estás موجه إلى «أنت». والنبرة الصاعدة في النهاية تدل على أنه سؤال.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "cómo estás"
+        ]
+      },
+      {
+        "id": "ent_4_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "Mamá está en ____.",
+        "stemAr": "ماما في البيت.",
+        "answerKey": {
+          "accepted": [
+            "casa"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الجملة خبرية: Mamá está en casa. وتُنطق بنبرة هابطة في النهاية، بلا علامتي سؤال.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "mamá",
+          "casa"
+        ]
+      },
+      {
+        "id": "ent_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة خبرية صحيحة.",
+        "items": [
+          {
+            "id": "ent_5_order_t1",
+            "kind": "token",
+            "text": "casa"
+          },
+          {
+            "id": "ent_5_order_t2",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "ent_5_order_t3",
+            "kind": "token",
+            "text": "Mamá"
+          },
+          {
+            "id": "ent_5_order_t4",
+            "kind": "token",
+            "text": "está"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mamá está en casa"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: الفاعل Mamá، ثم الفعل está، ثم حرف الجر en، ثم المكان casa. وهي جملة خبرية بنبرة هابطة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "mamá",
+          "casa"
+        ]
+      },
+      {
+        "id": "ent_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع إلى الرد واختر الجملة التي سمعتها.",
+        "contextAr": "صديق يسألك عن حالك فترد عليه بجملة قصيرة.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ent_6_listen_b"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة: Bien, gracias. وهي جواب خبري بنبرة هابطة في النهاية.",
+        "errorFeedback": {
+          "ent_6_listen_a": "أطول من المسموع؛ اسمع هل فيها muy أم لا.",
+          "ent_6_listen_c": "كلمة أخيرة مختلفة؛ المسموع ينتهي بـ gracias."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-entonacion-ex6",
+        "speechEs": "Bien, gracias.",
+        "options": [
+          {
+            "id": "ent_6_listen_a",
+            "text": "Muy bien, gracias.",
+            "isCorrect": false,
+            "distractorRationaleAr": "أطول من المسموع؛ اسمع هل فيها muy أم لا."
+          },
+          {
+            "id": "ent_6_listen_b",
+            "text": "Bien, gracias.",
+            "isCorrect": true
+          },
+          {
+            "id": "ent_6_listen_c",
+            "text": "Bien, adiós.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة أخيرة مختلفة؛ المسموع ينتهي بـ gracias."
+          }
+        ],
+        "targetVocab": [
+          "bien",
+          "gracias"
+        ]
+      },
+      {
+        "id": "ent_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق السؤال والجواب بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ السؤال بنبرة صاعدة والجواب بنبرة هابطة:",
+        "stemEs": "¿Cómo estás? Bien, gracias.",
+        "stemAr": "كيف حالك؟ بخير، شكرًا.",
+        "audioKey": "pending/prea1-entonacion-ex7",
+        "explanationAr": "اصعد بصوتك في نهاية السؤال: ¿Cómo estás؟ ثم اهبط به في نهاية الجواب: Bien, gracias. فالفرق في النبرة لا في الكلمات وحدها.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-entonacion-ex7",
+          "modelAnswer": "¿Cómo estás? Bien, gracias."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

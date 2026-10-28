@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleSlug": "prea1-core",
+  "pronunciationNoteAr": "النطق المكتوب بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق؛ خاصة الأصوات: ñ، وr الخفيفة، وc قبل e وi، وj.",
+  "source": {
+    "title": "مفردات المرحلة التمهيدية PREA1 — إعداد داخلي لمراجعة بشرية قبل أي نشر",
+    "url": "",
+    "license": "internal-draft",
+    "accessedAt": "2026-10-28",
+    "rankingNote": "internalRank هنا لسَلسَلة التدريس داخل هذه المرحلة فقط، وليس ادعاءً بأن الكلمة من الأكثر شيوعًا في الإسبانية."
+  },
+  "entries": [
+    {
+      "headword": "seis",
+      "normalized": "seis",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈseis/",
+      "pronunciationHintAr": "سيس — تُنطق كما تُكتب، والـ s في النهاية تُسمع بوضوح",
+      "internalRank": 1,
+      "tags": [
+        "أرقام",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ستة (الرقم 6)",
+          "meaningArEg": "ستة",
+          "glossEs": "número seis",
+          "exampleEs": "Tengo seis gatos.",
+          "exampleAr": "عندي ستة قطط.",
+          "exampleArEg": "عندي ست قطط.",
+          "usageNoteAr": "الأرقام لا تتغير مع المذكر والمؤنث.",
+          "commonErrorAr": "لا تُنطق s الأخيرة مثل «ز»؛ بل s واضحة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo seis gatos.",
+          "ar": "عندي ستة قطط.",
+          "arEg": "عندي ست قطط."
+        }
+      ]
+    },
+    {
+      "headword": "siete",
+      "normalized": "siete",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈsjete/",
+      "pronunciationHintAr": "سييتي — الـ i تُنطق «ي» قصيرة",
+      "internalRank": 2,
+      "tags": [
+        "أرقام",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "سبعة (الرقم 7)",
+          "meaningArEg": "سبعة",
+          "glossEs": "número siete",
+          "exampleEs": "Tengo siete libros.",
+          "exampleAr": "عندي سبعة كتب.",
+          "exampleArEg": "عندي سبع كتب.",
+          "usageNoteAr": "الأرقام لا تتغير مع المذكر والمؤنث.",
+          "commonErrorAr": "لا تخلط بين siete وseis؛ فالأولى 7 والثانية 6."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo siete libros.",
+          "ar": "عندي سبعة كتب.",
+          "arEg": "عندي سبع كتب."
+        }
+      ]
+    },
+    {
+      "headword": "ocho",
+      "normalized": "ocho",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈotʃo/",
+      "pronunciationHintAr": "أوتشو — الـ ch تُنطق «تش»",
+      "internalRank": 3,
+      "tags": [
+        "أرقام",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "ثمانية (الرقم 8)",
+          "meaningArEg": "تمانية",
+          "glossEs": "número ocho",
+          "exampleEs": "Tengo ocho años.",
+          "exampleAr": "عمري ثماني سنوات.",
+          "exampleArEg": "عندي تمن سنين.",
+          "usageNoteAr": "الأرقام لا تتغير مع المذكر والمؤنث.",
+          "commonErrorAr": "لا تُنطق ch مثل «ش»؛ بل «تش» واضحة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo ocho años.",
+          "ar": "عمري ثماني سنوات.",
+          "arEg": "عندي تمن سنين."
+        }
+      ]
+    },
+    {
+      "headword": "nueve",
+      "normalized": "nueve",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈnweβe/",
+      "pronunciationHintAr": "نويبي — الـ v بين حركتين تُنطق قريبة من «ب» خفيفة",
+      "internalRank": 4,
+      "tags": [
+        "أرقام",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "تسعة (الرقم 9)",
+          "meaningArEg": "تسعة",
+          "glossEs": "número nueve",
+          "exampleEs": "Tengo nueve hermanos.",
+          "exampleAr": "عندي تسعة إخوة.",
+          "exampleArEg": "عندي تسع إخوات.",
+          "usageNoteAr": "الأرقام لا تتغير مع المذكر والمؤنث.",
+          "commonErrorAr": "لا تخلط بين nueve وnuevo بمعنى «جديد»."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo nueve hermanos.",
+          "ar": "عندي تسعة إخوة.",
+          "arEg": "عندي تسع إخوات."
+        }
+      ]
+    },
+    {
+      "headword": "diez",
+      "normalized": "diez",
+      "kind": "word",
+      "pos": "num",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈdjeθ/",
+      "pronunciationHintAr": "دييث — الـ z تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية",
+      "internalRank": 5,
+      "tags": [
+        "أرقام",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عشرة (الرقم 10)",
+          "meaningArEg": "عشرة",
+          "glossEs": "número diez",
+          "exampleEs": "Tengo diez gatos.",
+          "exampleAr": "عندي عشرة قطط.",
+          "exampleArEg": "عندي عشر قطط.",
+          "usageNoteAr": "الأرقام لا تتغير مع المذكر والمؤنث.",
+          "commonErrorAr": "لا تُسقط الـ z في النطق؛ فهي مسموعة في آخر الكلمة."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Tengo diez gatos.",
+          "ar": "عندي عشرة قطط.",
+          "arEg": "عندي عشر قطط."
+        }
+      ]
+    },
+    {
+      "headword": "mal",
+      "normalized": "mal",
+      "kind": "word",
+      "pos": "adv",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/ˈmal/",
+      "pronunciationHintAr": "مال — تُنطق كما تُكتب",
+      "internalRank": 6,
+      "tags": [
+        "حال",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "بشكل سيئ / لست بخير",
+          "meaningArEg": "مش كويس",
+          "glossEs": "de mala manera",
+          "exampleEs": "Estoy mal hoy.",
+          "exampleAr": "أنا لست بخير اليوم.",
+          "exampleArEg": "أنا مش كويس النهاردة.",
+          "usageNoteAr": "تُقال جوابًا عن سؤال الحال: Estoy mal.",
+          "commonErrorAr": "لا تستخدم mal مع soy للهوية؛ فهي وصف حال مع estar."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Estoy mal hoy.",
+          "ar": "أنا لست بخير اليوم.",
+          "arEg": "أنا مش كويس النهاردة."
+        }
+      ]
+    },
+    {
+      "headword": "regular",
+      "normalized": "regular",
+      "kind": "word",
+      "pos": "adj",
+      "gender": null,
+      "plural": null,
+      "level": "PREA1",
+      "register": "neutral",
+      "ipa": "/reɣuˈlaɾ/",
+      "pronunciationHintAr": "ريغولار — الـ g بين حركتين تُنطق قريبة من «غ» خفيفة",
+      "internalRank": 7,
+      "tags": [
+        "حال",
+        "PREA1"
+      ],
+      "senses": [
+        {
+          "senseNo": 1,
+          "meaningArFusha": "عادي / بين بين",
+          "meaningArEg": "نص نص",
+          "glossEs": "ni bien ni mal",
+          "exampleEs": "Estoy regular hoy.",
+          "exampleAr": "حالي عادي اليوم.",
+          "exampleArEg": "حالي نص نص النهاردة.",
+          "usageNoteAr": "تُقال جوابًا عن سؤال الحال بمعنى «بين بين».",
+          "commonErrorAr": "لا تخلط بين regular بمعنى «عادي» وregular بمعنى «منتظم» في سياقات أخرى."
+        }
+      ],
+      "examples": [
+        {
+          "es": "Estoy regular hoy.",
+          "ar": "حالي عادي اليوم.",
+          "arEg": "حالي نص نص النهاردة."
+        }
+      ]
+    }
+  ]
+}

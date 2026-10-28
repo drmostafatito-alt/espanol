@@ -10,6 +10,23 @@
       "objectiveAr": "تدريب مهني على مكالمات خدمة العملاء بالإسبانية بسيناريوهات وبيانات وهمية، مع وعي صريح بحدود التدريب.",
       "units": [
         {
+          "slug": "cc-u0-phonetics-support",
+          "levelCode": "B1",
+          "titleAr": "الأصوات واللهجات على الهاتف",
+          "sortOrder": 0,
+          "status": "draft",
+          "lessons": [
+            "cc-u0-diction",
+            "cc-u0-spelling",
+            "cc-u0-numbers",
+            "cc-u0-accents"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
+          ]
+        },
+        {
           "slug": "cc-u1-opening-verification",
           "levelCode": "B1",
           "titleAr": "الافتتاح والتحقق من الهوية",
@@ -23,6 +40,91 @@
           ],
           "vocabularyBundles": [
             "cc-shared"
+          ]
+        },
+        {
+          "slug": "cc-u2-understanding",
+          "levelCode": "B1",
+          "titleAr": "فهم المشكلة وإعادة الصياغة",
+          "sortOrder": 2,
+          "status": "draft",
+          "lessons": [
+            "cc-u2-listening",
+            "cc-u2-paraphrasing",
+            "cc-u2-vague",
+            "cc-u2-notes"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
+          ]
+        },
+        {
+          "slug": "cc-u3-solutions",
+          "levelCode": "B1",
+          "titleAr": "الحل والبدائل",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "cc-u3-steps",
+            "cc-u3-alternatives",
+            "cc-u3-deadlines",
+            "cc-u3-acceptance"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
+          ]
+        },
+        {
+          "slug": "cc-u4-complaints",
+          "levelCode": "B1",
+          "titleAr": "الشكاوى والتصعيد",
+          "sortOrder": 4,
+          "status": "draft",
+          "lessons": [
+            "cc-u4-empathy",
+            "cc-u4-calming",
+            "cc-u4-escalation",
+            "cc-u4-saying-no"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
+          ]
+        },
+        {
+          "slug": "cc-u5-closing-quality",
+          "levelCode": "B1",
+          "titleAr": "الإغلاق وضمان الجودة",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "cc-u5-recap",
+            "cc-u5-followup",
+            "cc-u5-farewell",
+            "cc-u5-quality"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
+          ]
+        },
+        {
+          "slug": "cc-u6-writing",
+          "levelCode": "B1",
+          "titleAr": "البريد والتذاكر المكتوبة",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "cc-u6-email-structure",
+            "cc-u6-ticket",
+            "cc-u6-complaint-reply",
+            "cc-u6-written-vs-spoken"
+          ],
+          "vocabularyBundles": [
+            "cc-shared",
+            "cc-new"
           ]
         }
       ]

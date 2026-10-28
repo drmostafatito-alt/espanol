@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u6-denuncia",
+    "titleAr": "البلاغ في الشرطة ومساعدة السفارة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u6-emergencies",
+    "objectiveAr": "أن يقدم المتعلم بلاغًا في مركز الشرطة عن سرقة، ويذكر بياناته ووثائقه، ويطلب مساعدة السفارة.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "denuncia",
+      "consulado"
+    ],
+    "reviewVocabulary": [
+      "comisaría",
+      "embajada",
+      "firmar",
+      "documento"
+    ],
+    "targetStructures": [
+      "Quiero poner una denuncia.",
+      "Me robaron …",
+      "Firme aquí, por favor."
+    ],
+    "grammarTopics": [
+      "poner-denuncia",
+      "embajada-consulado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تذهب إلى مركز الشرطة لتقديم بلاغ عن سرقة جواز سفرك ومحفظتك، ثم تسأل عن السفارة.",
+        "settingAr": "مركز شرطة في مدريد",
+        "lines": [
+          {
+            "es": "Buenos días, quiero poner una denuncia.",
+            "ar": "صباح الخير، أريد تقديم بلاغ.",
+            "arEg": "صباح الخير، عايز أعمل محضر.",
+            "audioKey": "pending/tr-u6-denuncia-1"
+          },
+          {
+            "es": "¿Qué le pasó?",
+            "ar": "ماذا حدث لك؟",
+            "arEg": "إيه اللي حصلك؟",
+            "audioKey": "pending/tr-u6-denuncia-2"
+          },
+          {
+            "es": "Me robaron el pasaporte y la cartera ayer en el metro.",
+            "ar": "سُرق جواز سفري ومحفظتي أمس في المترو.",
+            "arEg": "جواز سفري ومحفظتي اتسرقوا امبارح في المترو.",
+            "audioKey": "pending/tr-u6-denuncia-3"
+          },
+          {
+            "es": "¿Tiene una copia del pasaporte? Firme aquí, por favor.",
+            "ar": "هل لديك نسخة من جواز السفر؟ وقّع هنا من فضلك.",
+            "arEg": "معاك صورة من جواز السفر؟ امضي هنا لو سمحت.",
+            "audioKey": "pending/tr-u6-denuncia-4"
+          },
+          {
+            "es": "Sí, tengo una copia. ¿Puedo ir a la embajada con esta denuncia?",
+            "ar": "نعم، لدي نسخة. هل يمكنني الذهاب إلى السفارة بهذا البلاغ؟",
+            "arEg": "أيوه، معايا صورة. ممكن أروح السفارة بالمحضر ده؟",
+            "audioKey": "pending/tr-u6-denuncia-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "مركز الشرطة في إسبانيا يُسمى la comisaría، والبلاغ الرسمي la denuncia. عند تقديم بلاغ سرقة يُطلب منك وصف ما سُرق ومكان الحادث ووقته، وتُعطى نسخة من المحضر تحتاجها السفارة وشركة التأمين.",
+    "pedagogicalRationaleAr": "يجمع الدرس مهارات الوحدة في إجراء رسمي واحد: طلب البلاغ، وسرد السرقة بالماضي، وتوقيع المحضر، وربطه بالسفارة، من العبارة الجاهزة إلى السرد الكامل.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u6_denuncia_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى جملة الزائر واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u6-denuncia-listen-1",
+        "speechEs": "Quiero poner una denuncia.",
+        "options": [
+          {
+            "id": "tr_u6_denuncia_1_a",
+            "text": "Quiero poner una denuncia.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_denuncia_1_b",
+            "text": "Quiero poner una receta.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع denuncia (بلاغ) لا receta (وصفة)، والسياق مركز شرطة لا صيدلية."
+          },
+          {
+            "id": "tr_u6_denuncia_1_c",
+            "text": "Quiero poner una reserva.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع denuncia لا reserva (حجز)، والسياق بلاغ لا حجز."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_denuncia_1_a"
+          ]
+        },
+        "explanationAr": "تقديم البلاغ: Quiero poner una denuncia. و«poner una denuncia» تعبير ثابت بمعنى يقدم بلاغًا، و«denuncia» مؤنثة.",
+        "errorFeedback": {
+          "tr_u6_denuncia_1_b": "المسموع denuncia (بلاغ) لا receta (وصفة)، والسياق مركز شرطة لا صيدلية.",
+          "tr_u6_denuncia_1_c": "المسموع denuncia لا reserva (حجز)، والسياق بلاغ لا حجز."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "denuncia",
+          "receta",
+          "reserva"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_2_word",
+        "type": "word_choice",
+        "instructionAr": "أين تقدم البلاغ عن السرقة؟",
+        "options": [
+          {
+            "id": "tr_u6_denuncia_2_a",
+            "text": "En la comisaría.",
+            "textAr": "في مركز الشرطة.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_denuncia_2_b",
+            "text": "En la farmacia.",
+            "textAr": "في الصيدلية.",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصيدلية للدواء، وليست مكان تقديم البلاغات."
+          },
+          {
+            "id": "tr_u6_denuncia_2_c",
+            "text": "En el mercado.",
+            "textAr": "في السوق.",
+            "isCorrect": false,
+            "distractorRationaleAr": "السوق للتسوق، وليس مكان تقديم البلاغات."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_denuncia_2_a"
+          ]
+        },
+        "explanationAr": "البلاغ يُقدم في مركز الشرطة: En la comisaría. و«farmacia» للدواء و«mercado» للتسوق، ولا علاقة لهما بالبلاغ.",
+        "errorFeedback": {
+          "tr_u6_denuncia_2_b": "الصيدلية للدواء، وليست مكان تقديم البلاغات.",
+          "tr_u6_denuncia_2_c": "السوق للتسوق، وليس مكان تقديم البلاغات."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "comisaría",
+          "farmacia",
+          "mercado"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل طلب تقديم البلاغ بالكلمة المناسبة.",
+        "stemEs": "Quiero poner una ____.",
+        "stemAr": "أريد تقديم بلاغ.",
+        "answerKey": {
+          "accepted": [
+            "denuncia"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Quiero poner una denuncia» تعني أريد تقديم بلاغ. و«poner» هنا فعل مساعد في التعبير الثابت، و«denuncia» مؤنثة لذلك una.",
+        "errorFeedback": {
+          "receta": "«receta» وصفة طبية، والمطلوب البلاغ: denuncia.",
+          "reserva": "«reserva» حجز، والمطلوب في مركز الشرطة هو البلاغ: denuncia."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "denuncia"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن السرقة.",
+        "items": [
+          {
+            "id": "tr_u6_denuncia_4_t1",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t2",
+            "kind": "token",
+            "text": "robaron"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t3",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t4",
+            "kind": "token",
+            "text": "pasaporte"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t5",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t6",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "tr_u6_denuncia_4_t7",
+            "kind": "token",
+            "text": "cartera"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me robaron el pasaporte y la cartera",
+            "Me robaron el pasaporte y la cartera."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Me robaron el pasaporte y la cartera» تعني سُرق جواز سفري ومحفظتي. و«me» هنا ضمير المتضرر، والفعل robaron جمع لأن الفاعل مجهول.",
+        "errorFeedback": {
+          "order": "ابدأ بـ Me robaron، ثم el pasaporte، ثم y la cartera."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "robar",
+          "pasaporte",
+          "cartera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "الشرطي يسألك إن كان لديك نسخة من جواز السفر.",
+        "stemEs": "— ¿Tiene una copia del pasaporte?",
+        "stemAr": "— هل لديك نسخة من جواز السفر؟",
+        "options": [
+          {
+            "id": "tr_u6_denuncia_5_a",
+            "text": "Sí, tengo una copia. ¿Puedo ir a la embajada?",
+            "textAr": "نعم، لدي نسخة. هل يمكنني الذهاب إلى السفارة؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_denuncia_5_b",
+            "text": "Sí, tengo una copia. ¿Puedo ir a la farmacia?",
+            "textAr": "نعم، لدي نسخة. هل يمكنني الذهاب إلى الصيدلية؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصيدلية للدواء، ولا علاقة لها بالبلاغ أو بالسفارة."
+          },
+          {
+            "id": "tr_u6_denuncia_5_c",
+            "text": "No, no tengo nada. Me queda bien.",
+            "textAr": "لا، ليس لدي شيء. المقاس مناسب لي.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«me queda bien» للمقاس المناسب، ولا معنى لها في مركز الشرطة."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_denuncia_5_a"
+          ]
+        },
+        "explanationAr": "الجواب يؤكد وجود النسخة ويربطها بالخطوة التالية: الذهاب إلى السفارة بالمحضر. والصيدلية لا علاقة لها بالبلاغ، و«me queda bien» للمقاس.",
+        "errorFeedback": {
+          "tr_u6_denuncia_5_b": "الصيدلية للدواء، ولا علاقة لها بالبلاغ أو بالسفارة.",
+          "tr_u6_denuncia_5_c": "«me queda bien» للمقاس المناسب، ولا معنى لها في مركز الشرطة."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "embajada",
+          "pasaporte"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أريد تقديم بلاغ، سُرق جواز سفري ومحفظتي.",
+        "answerKey": {
+          "accepted": [
+            "Quiero poner una denuncia. Me robaron el pasaporte y la cartera.",
+            "Quiero poner una denuncia, me robaron el pasaporte y la cartera."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "البلاغ يبدأ بطلب تقديمه: Quiero poner una denuncia، ثم شرح ما حدث: Me robaron el pasaporte y la cartera.",
+        "errorFeedback": {
+          "Me robaron el pasaporte y la cartera. Quiero poner una denuncia.": "الترتيب الطبيعي: طلب البلاغ أولًا ثم شرح السرقة، كما في النموذج.",
+          "Quiero hacer una denuncia.": "التعبير الثابت هو «poner una denuncia» لا «hacer una denuncia»."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "denuncia",
+          "robar",
+          "pasaporte"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_denuncia_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "قدّم البلاغ واشرح السرقة واسأل عن السفارة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Buenos días, quiero poner una denuncia. Me robaron el pasaporte y la cartera ayer en el metro. ¿Puedo ir a la embajada con esta denuncia?",
+        "stemAr": "صباح الخير، أريد تقديم بلاغ. سُرق جواز سفري ومحفظتي أمس في المترو. هل يمكنني الذهاب إلى السفارة بهذا البلاغ؟",
+        "answerKey": {
+          "modelAnswer": "Buenos días, quiero poner una denuncia. Me robaron el pasaporte y la cartera ayer en el metro. ¿Puedo ir a la embajada con esta denuncia?",
+          "referenceAudioKey": "pending/tr-u6-denuncia-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "denuncia",
+          "robar",
+          "embajada"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الطوارئ 4/4 (البلاغ في الشرطة ومساعدة السفارة). يحتاج مراجعة إسبانية أصلية لإجراءات البلاغ في إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

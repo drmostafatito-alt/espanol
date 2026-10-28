@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u6-email-structure",
+    "titleAr": "بنية البريد المهني",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u6-writing",
+    "objectiveAr": "أن يكتب المتعلم بريدًا مهنيًا ببنية كاملة: موضوع واضح وتحية ونص منظم ووداع وتوقيع.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "asunto",
+      "correo",
+      "formal"
+    ],
+    "reviewVocabulary": [
+      "saludo",
+      "despedida",
+      "firma"
+    ],
+    "targetStructures": [
+      "Asunto: …",
+      "Estimada señora…",
+      "Atentamente, …"
+    ],
+    "grammarTopics": [
+      "correo-estructura"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "بريد تأكيد بعد مكالمة. أنت الموظفة سارة تكتب بريدًا وهميًا للتدريب. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "كتابة بريد بعد مكالمة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Asunto: confirmación del reembolso, referencia ficticia REF-0007.",
+            "ar": "الموضوع: تأكيد الاسترداد، مرجع وهمي REF-0007.",
+            "arEg": "الموضوع: تأكيد الاسترداد، مرجع وهمي REF-0007.",
+            "audioKey": "pending/cc-u6-email-structure-line-1"
+          },
+          {
+            "es": "Estimada señora Soler: le confirmo el reembolso del importe total en cinco días.",
+            "ar": "سيدتي العزيزة سولير: أؤكد لك استرداد المبلغ الإجمالي خلال خمسة أيام.",
+            "arEg": "سيدتي العزيزة سولير: بأكد لك استرداد المبلغ كله في خمس أيام.",
+            "audioKey": "pending/cc-u6-email-structure-line-2"
+          },
+          {
+            "es": "Por último, le envío el resumen en un archivo adjunto. Gracias por su llamada.",
+            "ar": "أخيرًا، أرسل لك الملخص في ملف مرفق. شكرًا على اتصالك.",
+            "arEg": "أخيرًا، ببعت لك الملخص في ملف مرفق. شكرًا على اتصالك.",
+            "audioKey": "pending/cc-u6-email-structure-line-3"
+          },
+          {
+            "es": "Atentamente, Sara, Atención al Cliente.",
+            "ar": "مع خالص التقدير، سارة، خدمة العملاء.",
+            "arEg": "مع خالص التقدير، سارة، خدمة العملاء.",
+            "audioKey": "pending/cc-u6-email-structure-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "البريد المهني الإسباني يفتتح بـ«Estimado/Estimada» + اللقب، ويُغلق بـ«Atentamente» + الاسم والقسم؛ وحذف أي جزء يجعله رسالة غير مكتملة.",
+    "pedagogicalRationaleAr": "الكتابة بعد المكالمة توثيق: البريد الجيد يقول ما اتُّفق عليه كتابةً، فلا يعتمد الاتفاق على ذاكرة أحد.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u6_email_structure_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u6_email_structure_1_listen_a",
+            "text": "El asunto debe ser claro: confirmación del reembolso, referencia ficticia REF-0007.",
+            "isCorrect": true,
+            "textAr": "يجب أن يكون الموضوع واضحًا: تأكيد الاسترداد، مرجع وهمي REF-0007."
+          },
+          {
+            "id": "cc_u6_email_structure_1_listen_b",
+            "text": "El asunto debe ser largo: confirmación del reembolso, referencia ficticia REF-0007.",
+            "isCorrect": false,
+            "textAr": "يجب أن يكون الموضوع طويلًا: تأكيد الاسترداد، مرجع وهمي REF-0007.",
+            "distractorRationaleAr": "الصوت قال «claro» لا «largo»."
+          },
+          {
+            "id": "cc_u6_email_structure_1_listen_c",
+            "text": "El asunto debe ser claro: confirmación del cambio, referencia ficticia REF-0007.",
+            "isCorrect": false,
+            "textAr": "يجب أن يكون الموضوع واضحًا: تأكيد التبديل، مرجع وهمي REF-0007.",
+            "distractorRationaleAr": "الصوت قال «reembolso» لا «cambio»."
+          }
+        ],
+        "targetVocab": [
+          "asunto",
+          "correo"
+        ],
+        "explanationAr": "موضوع البريد: واضح + الغرض + المرجع.",
+        "errorFeedback": {
+          "cc_u6_email_structure_1_listen_b": "الصوت قال «claro» لا «largo».",
+          "cc_u6_email_structure_1_listen_c": "الصوت قال «reembolso» لا «cambio»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u6-email-structure-listen",
+        "speechEs": "El asunto debe ser claro: confirmación del reembolso, referencia ficticia REF-0007.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_email_structure_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_email_structure_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي تحية افتتاحية مناسبة لبريد رسمي؟",
+        "options": [
+          {
+            "id": "cc_u6_email_structure_2_choice_a",
+            "text": "Estimada señora Soler:",
+            "isCorrect": true,
+            "textAr": "سيدتي العزيزة سولير:"
+          },
+          {
+            "id": "cc_u6_email_structure_2_choice_b",
+            "text": "Hola, ¿qué tal?",
+            "isCorrect": false,
+            "textAr": "مرحبًا، كيف حالك؟",
+            "distractorRationaleAr": "تحية غير رسمية لا تصلح لبريد مهني."
+          },
+          {
+            "id": "cc_u6_email_structure_2_choice_c",
+            "text": "Oye, Soler:",
+            "isCorrect": false,
+            "textAr": "اسمعي يا سولير:",
+            "distractorRationaleAr": "أمر وتسمية بلا لقب يخالفان الرسمية."
+          }
+        ],
+        "targetVocab": [
+          "saludo",
+          "formal"
+        ],
+        "explanationAr": "«Estimada + señora + اللقب» = تحية رسمية مكتوبة.",
+        "errorFeedback": {
+          "cc_u6_email_structure_2_choice_b": "تحية غير رسمية لا تصلح لبريد مهني.",
+          "cc_u6_email_structure_2_choice_c": "أمر وتسمية بلا لقب يخالفان الرسمية."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_email_structure_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_email_structure_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "اختر الوداع المكتوب المناسب لبريد مهني.",
+        "stemEs": "— El cuerpo del correo ya está escrito. ¿Cómo lo cierro?",
+        "stemAr": "— نص البريد مكتوب. كيف أغلقه؟",
+        "options": [
+          {
+            "id": "cc_u6_email_structure_3_reply_a",
+            "text": "Atentamente, Sara, Atención al Cliente.",
+            "isCorrect": true,
+            "textAr": "مع خالص التقدير، سارة، خدمة العملاء."
+          },
+          {
+            "id": "cc_u6_email_structure_3_reply_b",
+            "text": "Adiós, Sara.",
+            "isCorrect": false,
+            "textAr": "وداعًا، سارة.",
+            "distractorRationaleAr": "وداع شفهي قصير لا يصلح ختام بريد."
+          },
+          {
+            "id": "cc_u6_email_structure_3_reply_c",
+            "text": "Vale, chao.",
+            "isCorrect": false,
+            "textAr": "تمام، باي.",
+            "distractorRationaleAr": "عامية غير رسمية."
+          }
+        ],
+        "targetVocab": [
+          "firma",
+          "despedida"
+        ],
+        "explanationAr": "«Atentamente» + الاسم + القسم = ختام بريد مهني.",
+        "errorFeedback": {
+          "cc_u6_email_structure_3_reply_b": "وداع شفهي قصير لا يصلح ختام بريد.",
+          "cc_u6_email_structure_3_reply_c": "عامية غير رسمية."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_email_structure_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_email_structure_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "الموضوع: تأكيد استرداد المبلغ.",
+        "targetVocab": [
+          "asunto",
+          "correo"
+        ],
+        "explanationAr": "«Asunto» يفتتح سطر الموضوع؛ و«confirmación» تأكيد.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Asunto: confirmación del reembolso."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u6_email_structure_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين قاعدة الموضوع.",
+        "items": [
+          {
+            "id": "cc_u6_email_structure_5_order_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t2",
+            "kind": "token",
+            "text": "asunto"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t3",
+            "kind": "token",
+            "text": "debe"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t4",
+            "kind": "token",
+            "text": "ser"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t5",
+            "kind": "token",
+            "text": "claro"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t6",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u6_email_structure_5_order_t7",
+            "kind": "token",
+            "text": "breve."
+          }
+        ],
+        "targetVocab": [
+          "asunto",
+          "formal"
+        ],
+        "explanationAr": "ترتيب القاعدة: الفاعل ثم الفعل ثم الصفتان.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "El asunto debe ser claro y breve."
+          ],
+          "tokenOrder": [
+            "cc_u6_email_structure_5_order_t1",
+            "cc_u6_email_structure_5_order_t2",
+            "cc_u6_email_structure_5_order_t3",
+            "cc_u6_email_structure_5_order_t4",
+            "cc_u6_email_structure_5_order_t5",
+            "cc_u6_email_structure_5_order_t6",
+            "cc_u6_email_structure_5_order_t7"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_email_structure_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "اقرأ بصوت واضح موضوع بريد وتحيته كما لو كنت تمليه للمراجعة.",
+        "stemEs": "Asunto: confirmación del reembolso. Estimada señora Soler: le confirmo el reembolso.",
+        "stemAr": "الموضوع: تأكيد الاسترداد. سيدتي العزيزة سولير: أؤكد لك الاسترداد.",
+        "targetVocab": [
+          "asunto",
+          "saludo"
+        ],
+        "explanationAr": "اقرأ علامات الترقيم بوقفات؛ فالبريد المكتوب يُسمَع بوقفاته.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النص وبنيته الكاملة",
+              "weight": 25
+            },
+            {
+              "code": "formality",
+              "labelAr": "السجل الرسمي المناسب للكتابة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "ترتيب الأجزاء ترتيبًا منطقيًا",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u6-email-structure-speak",
+          "modelAnswer": "Asunto: confirmación del reembolso. Estimada señora Soler: le confirmo el reembolso."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «بنية البريد المهني». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

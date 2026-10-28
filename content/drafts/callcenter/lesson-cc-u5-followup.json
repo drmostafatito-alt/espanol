@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u5-followup",
+    "titleAr": "التزامات المتابعة وأرقام المرجع",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u5-closing-quality",
+    "objectiveAr": "أن يحدد المتعلم التزامات المتابعة بوضوح، ويزوّد العميل برقم مرجع وهمي للتدريب وطريقة التواصل التالية.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "seguimiento",
+      "código",
+      "recordatorio"
+    ],
+    "reviewVocabulary": [
+      "referencia",
+      "compromiso",
+      "llamar"
+    ],
+    "targetStructures": [
+      "Su número de referencia es…",
+      "Le llamaré el…",
+      "Le envío un recordatorio."
+    ],
+    "grammarTopics": [
+      "seguimiento-referencia"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "إغلاق مع التزام متابعة واضح. أنت الموظف ماركوس. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، التزام متابعة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Su código de referencia ficticio es REF-0007. Guárdelo, por favor, para la próxima llamada.",
+            "ar": "رمز المرجع الوهمي الخاص بك هو REF-0007. احتفظ به من فضلك للمكالمة التالية.",
+            "arEg": "الكود الوهمي بتاعك هو REF-0007. احتفظ بيه من فضلك للمكالمة الجاية.",
+            "audioKey": "pending/cc-u5-followup-line-1"
+          },
+          {
+            "es": "REF-0007. ¿Y cuándo me llaman?",
+            "ar": "REF-0007. ومتى تتصلون بي؟",
+            "arEg": "REF-0007. وهتكلموني إمتى؟",
+            "audioKey": "pending/cc-u5-followup-line-2"
+          },
+          {
+            "es": "Le llamaré el lunes para el seguimiento. Además, le envío un recordatorio por correo.",
+            "ar": "سأتصل بك يوم الاثنين للمتابعة. وأيضًا أرسل لك تذكيرًا بالبريد.",
+            "arEg": "هكلمك يوم الاتنين للمتابعة. وكمان هبعت لك تذكير بالإيميل.",
+            "audioKey": "pending/cc-u5-followup-line-3"
+          },
+          {
+            "es": "Perfecto. El lunes, con el código REF-0007.",
+            "ar": "ممتاز. يوم الاثنين، بالرمز REF-0007.",
+            "arEg": "ممتاز. يوم الاتنين، بالكود REF-0007.",
+            "audioKey": "pending/cc-u5-followup-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "رقم المرجع يحوّل الوعد إلى ملف قابل للتتبع؛ والعميل الذي يملك رقمًا لا يحتاج أن يروي قصته من جديد.",
+    "pedagogicalRationaleAr": "المتابعة التزام لا أمنية: يوم محدد + قناة محددة + رقم مرجع، وإلا كانت مجرد كلام لطيف قبل الوداع.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u5_followup_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u5_followup_1_listen_a",
+            "text": "Su número de referencia es REF-0007. Le llamaré el lunes para el seguimiento.",
+            "isCorrect": true,
+            "textAr": "رقم المرجع الخاص بك هو REF-0007. سأتصل بك يوم الاثنين للمتابعة."
+          },
+          {
+            "id": "cc_u5_followup_1_listen_b",
+            "text": "Su número de referencia es REF-0008. Le llamaré el lunes.",
+            "isCorrect": false,
+            "textAr": "رقم المرجع الخاص بك هو REF-0008. سأتصل بك يوم الاثنين.",
+            "distractorRationaleAr": "الرمز «0007» لا «0008»."
+          },
+          {
+            "id": "cc_u5_followup_1_listen_c",
+            "text": "Su número de referencia es REF-0007. Le llamaré el viernes.",
+            "isCorrect": false,
+            "textAr": "رقم المرجع الخاص بك هو REF-0007. سأتصل بك يوم الجمعة.",
+            "distractorRationaleAr": "يوم الاتصال «lunes» لا «viernes»."
+          }
+        ],
+        "targetVocab": [
+          "referencia",
+          "código"
+        ],
+        "explanationAr": "الرمز الوهمي ويوم المتابعة يُذكران معًا.",
+        "errorFeedback": {
+          "cc_u5_followup_1_listen_b": "الرمز «0007» لا «0008».",
+          "cc_u5_followup_1_listen_c": "يوم الاتصال «lunes» لا «viernes»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u5-followup-listen",
+        "speechEs": "Su número de referencia es REF-0007. Le llamaré el lunes para el seguimiento.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_followup_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_followup_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تحدد التزام المتابعة؟",
+        "options": [
+          {
+            "id": "cc_u5_followup_2_choice_a",
+            "text": "Le llamaré el lunes para el seguimiento, con su código REF-0007.",
+            "isCorrect": true,
+            "textAr": "سأتصل بك يوم الاثنين للمتابعة، برمزك REF-0007."
+          },
+          {
+            "id": "cc_u5_followup_2_choice_b",
+            "text": "Ya le llamaremos algún día.",
+            "isCorrect": false,
+            "textAr": "سنتصل بك يومًا ما.",
+            "distractorRationaleAr": "«algún día» ليس التزامًا."
+          },
+          {
+            "id": "cc_u5_followup_2_choice_c",
+            "text": "No hace falta seguimiento.",
+            "isCorrect": false,
+            "textAr": "لا حاجة للمتابعة.",
+            "distractorRationaleAr": "إلغاء المتابعة يترك العميل بلا ضمان."
+          }
+        ],
+        "targetVocab": [
+          "seguimiento",
+          "compromiso"
+        ],
+        "explanationAr": "اليوم + الغرض + الرمز = التزام متابعة كامل.",
+        "errorFeedback": {
+          "cc_u5_followup_2_choice_b": "«algún día» ليس التزامًا.",
+          "cc_u5_followup_2_choice_c": "إلغاء المتابعة يترك العميل بلا ضمان."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_followup_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_followup_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يسأل كيف يتابع هو. اختر الرد المهني.",
+        "stemEs": "— ¿Y si necesito llamar yo antes del lunes?",
+        "stemAr": "— وماذا لو احتجت أن أتصل أنا قبل الاثنين؟",
+        "options": [
+          {
+            "id": "cc_u5_followup_3_reply_a",
+            "text": "Llame con su código REF-0007 y cualquier compañero verá su caso. No tendrá que repetir los datos.",
+            "isCorrect": true,
+            "textAr": "اتصل برمزك REF-0007 وسيطّلع أي زميل على حالتك. لن تضطر لتكرار البيانات."
+          },
+          {
+            "id": "cc_u5_followup_3_reply_b",
+            "text": "Espere al lunes, no llame.",
+            "isCorrect": false,
+            "textAr": "انتظر حتى الاثنين، لا تتصل.",
+            "distractorRationaleAr": "منع العميل من الاتصال يخالف حقه."
+          },
+          {
+            "id": "cc_u5_followup_3_reply_c",
+            "text": "Llame y explique todo otra vez.",
+            "isCorrect": false,
+            "textAr": "اتصل واشرح كل شيء مرة أخرى.",
+            "distractorRationaleAr": "تكرار القصة يهدم فائدة رقم المرجع."
+          }
+        ],
+        "targetVocab": [
+          "recordatorio",
+          "llamar"
+        ],
+        "explanationAr": "الرمز يمنح العميل طريق متابعة بلا تكرار.",
+        "errorFeedback": {
+          "cc_u5_followup_3_reply_b": "منع العميل من الاتصال يخالف حقه.",
+          "cc_u5_followup_3_reply_c": "تكرار القصة يهدم فائدة رقم المرجع."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_followup_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_followup_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة المتابعة.",
+        "stemEs": "Le llamaré para el ____ el lunes.",
+        "stemAr": "سأتصل بك للمتابعة يوم الاثنين.",
+        "targetVocab": [
+          "seguimiento",
+          "referencia"
+        ],
+        "explanationAr": "«para el seguimiento» = للمتابعة؛ واليوم محدد: el lunes.",
+        "errorFeedback": {
+          "cierre": "«cierre» الإغلاق؛ والمطلوب هنا المتابعة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "seguimiento"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u5_followup_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة متابعة.",
+        "items": [
+          {
+            "id": "cc_u5_followup_5_order_t1",
+            "kind": "token",
+            "text": "Le"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t2",
+            "kind": "token",
+            "text": "llamaré"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t3",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t4",
+            "kind": "token",
+            "text": "lunes"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t5",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t6",
+            "kind": "token",
+            "text": "confirmar"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t7",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u5_followup_5_order_t8",
+            "kind": "token",
+            "text": "seguimiento."
+          }
+        ],
+        "targetVocab": [
+          "seguimiento",
+          "llamar"
+        ],
+        "explanationAr": "ترتيب الوعد: الضمير ثم المستقبل ثم اليوم ثم الغرض.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Le llamaré el lunes para confirmar el seguimiento."
+          ],
+          "tokenOrder": [
+            "cc_u5_followup_5_order_t1",
+            "cc_u5_followup_5_order_t2",
+            "cc_u5_followup_5_order_t3",
+            "cc_u5_followup_5_order_t4",
+            "cc_u5_followup_5_order_t5",
+            "cc_u5_followup_5_order_t6",
+            "cc_u5_followup_5_order_t7",
+            "cc_u5_followup_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_followup_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل التزام متابعة برمز مرجع وهمي ويوم محدد.",
+        "stemEs": "Su número de referencia es REF-0007 y le llamaré el lunes para el seguimiento.",
+        "stemAr": "رقم المرجع الخاص بك هو REF-0007 وسأتصل بك يوم الاثنين للمتابعة.",
+        "targetVocab": [
+          "código",
+          "seguimiento"
+        ],
+        "explanationAr": "تهجَّ الرمز حرفًا حرفًا ورقمًا رقمًا؛ فالرمز يُسمَع ليُكتَب.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u5-followup-speak",
+          "modelAnswer": "Su número de referencia es REF-0007 y le llamaré el lunes para el seguimiento."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «المتابعة وأرقام المرجع». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-practica-integrada",
+    "titleAr": "تدريب متكامل قصير",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u4-first-sentence",
+    "objectiveAr": "أن يجمع المتعلم التحية والاسم والبلد في حوار من ثلاث جمل.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "pragmatics"
+    ],
+    "newVocabulary": [
+      "encantado",
+      "hasta luego"
+    ],
+    "reviewVocabulary": [
+      "hola",
+      "me llamo",
+      "mucho gusto",
+      "buenos días",
+      "ser",
+      "tener",
+      "egipto",
+      "cómo estás",
+      "bien",
+      "gracias"
+    ],
+    "targetStructures": [
+      "Hola. Me llamo + اسم. Soy de + بلد.",
+      "¿Cómo estás? Muy bien, gracias.",
+      "Mucho gusto. Hasta luego."
+    ],
+    "grammarTopics": [
+      "dialogo-integrado"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حوار قصير من ثلاث جمل بين زميلين جديدين يلتقيان صباحًا في دورة لغة.",
+        "settingAr": "قاعة دراسة، صباحًا",
+        "lines": [
+          {
+            "es": "¡Hola! Buenos días. Me llamo Laila.",
+            "ar": "مرحبًا! صباح الخير. اسمي ليلى.",
+            "arEg": "أهلًا! صباح الخير. أنا اسمي ليلى.",
+            "audioKey": "pending/prea1-practica-laila"
+          },
+          {
+            "es": "Hola, Laila. Soy Omar. Soy de Egipto.",
+            "ar": "مرحبًا يا ليلى. أنا عمر. أنا من مصر.",
+            "arEg": "أهلًا يا ليلى. أنا عمر. أنا من مصر.",
+            "audioKey": "pending/prea1-practica-omar"
+          },
+          {
+            "es": "Mucho gusto, Omar. ¿Cómo estás?",
+            "ar": "تشرفت بمعرفتك يا عمر. كيف حالك؟",
+            "arEg": "فرصة سعيدة يا عمر. إزيك؟",
+            "audioKey": "pending/prea1-practica-gusto"
+          },
+          {
+            "es": "Muy bien, gracias. Hasta luego.",
+            "ar": "بخير جدًا، شكرًا. إلى اللقاء.",
+            "arEg": "كويس جدًا، شكرًا. سلام.",
+            "audioKey": "pending/prea1-practica-luego"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في اللقاء الأول بالإسبانية يُكتفى غالبًا بتحية واسم وبلد وسؤال عن الحال؛ ولا يُسأل عن العمر أو العمل في أول جملتين.",
+    "pedagogicalRationaleAr": "درس تجميعي بلا قاعدة جديدة: يركّب المتعلم كل ما تعلمه في المسار التمهيدي في حوار واحد قصير، فينتقل من كلمات منفصلة إلى حديث حقيقي.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "prac_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "prac_1_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة: Hola, me llamo Laila. وهي أول جملة في الحوار.",
+        "errorFeedback": {
+          "prac_1_listen_b": "اسم مختلف؛ اسمع الاسم بعد me llamo.",
+          "prac_1_listen_c": "جملة صحيحة لكنها ليست المسموعة؛ اسمع الفعل: llamo لا soy."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-practica-ex1",
+        "speechEs": "Hola, me llamo Laila.",
+        "options": [
+          {
+            "id": "prac_1_listen_a",
+            "text": "Hola, me llamo Laila.",
+            "isCorrect": true
+          },
+          {
+            "id": "prac_1_listen_b",
+            "text": "Hola, me llamo Omar.",
+            "isCorrect": false,
+            "distractorRationaleAr": "اسم مختلف؛ اسمع الاسم بعد me llamo."
+          },
+          {
+            "id": "prac_1_listen_c",
+            "text": "Hola, soy Laila.",
+            "isCorrect": false,
+            "distractorRationaleAr": "جملة صحيحة لكنها ليست المسموعة؛ اسمع الفعل: llamo لا soy."
+          }
+        ],
+        "targetVocab": [
+          "hola",
+          "me llamo"
+        ]
+      },
+      {
+        "id": "prac_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تعني «أنا من مصر»؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "prac_2_word_a"
+          ]
+        },
+        "explanationAr": "للأصل نقول Soy de Egipto. أما me llamo فهي للاسم، وtengo للتملك.",
+        "errorFeedback": {
+          "prac_2_word_b": "tener للتملك؛ الأصل مع soy.",
+          "prac_2_word_c": "me llamo للاسم لا للبلد."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "prac_2_word_a",
+            "text": "Soy de Egipto.",
+            "textAr": "أنا من مصر.",
+            "isCorrect": true
+          },
+          {
+            "id": "prac_2_word_b",
+            "text": "Tengo Egipto.",
+            "isCorrect": false,
+            "textAr": "عندي مصر.",
+            "distractorRationaleAr": "tener للتملك؛ الأصل مع soy."
+          },
+          {
+            "id": "prac_2_word_c",
+            "text": "Me llamo Egipto.",
+            "isCorrect": false,
+            "textAr": "اسمي مصر.",
+            "distractorRationaleAr": "me llamo للاسم لا للبلد."
+          }
+        ],
+        "targetVocab": [
+          "ser",
+          "egipto"
+        ]
+      },
+      {
+        "id": "prac_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالكلمة الناقصة.",
+        "stemEs": "Soy ____ Egipto.",
+        "stemAr": "أنا من مصر.",
+        "answerKey": {
+          "accepted": [
+            "de"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الجملة الكاملة: Soy de Egipto. وحرف الجر de هنا بمعنى «من».",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "ser",
+          "egipto"
+        ]
+      },
+      {
+        "id": "prac_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تعريف صحيحة.",
+        "items": [
+          {
+            "id": "prac_4_order_t1",
+            "kind": "token",
+            "text": "llamo"
+          },
+          {
+            "id": "prac_4_order_t2",
+            "kind": "token",
+            "text": "Me"
+          },
+          {
+            "id": "prac_4_order_t3",
+            "kind": "token",
+            "text": "Laila"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Me llamo Laila"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: me ثم llamo ثم الاسم. وهذه أول جملة تعريف في الحوار.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "me llamo"
+        ]
+      },
+      {
+        "id": "prac_5_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "زميلة تقول لك: «¿Cómo estás؟». ماذا ترد؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "prac_5_reply_b"
+          ]
+        },
+        "explanationAr": "الرد على سؤال الحال يكون بوصف الحال: Muy bien, gracias. أو Estoy bien, gracias.",
+        "errorFeedback": {
+          "prac_5_reply_a": "جواب عن البلد لا عن الحال.",
+          "prac_5_reply_c": "تعريف بالاسم لا رد على سؤال الحال."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "contextAr": "تلتقي زميلة جديدة في الصباح.",
+        "options": [
+          {
+            "id": "prac_5_reply_a",
+            "text": "Soy de Egipto.",
+            "isCorrect": false,
+            "textAr": "أنا من مصر.",
+            "distractorRationaleAr": "جواب عن البلد لا عن الحال."
+          },
+          {
+            "id": "prac_5_reply_b",
+            "text": "Muy bien, gracias.",
+            "textAr": "بخير جدًا، شكرًا.",
+            "isCorrect": true
+          },
+          {
+            "id": "prac_5_reply_c",
+            "text": "Me llamo Omar.",
+            "isCorrect": false,
+            "textAr": "اسمي عمر.",
+            "distractorRationaleAr": "تعريف بالاسم لا رد على سؤال الحال."
+          }
+        ],
+        "targetVocab": [
+          "bien",
+          "gracias"
+        ]
+      },
+      {
+        "id": "prac_6_translate",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية: مرحبًا، اسمي ليلى.",
+        "answerKey": {
+          "accepted": [
+            "Hola, me llamo Laila."
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الترجمة: Hola, me llamo Laila. ولا تنطق h في hola لأنها صامتة.",
+        "skills": [
+          "translation",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "hola",
+          "me llamo"
+        ]
+      },
+      {
+        "id": "prac_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الحوار القصير بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الحوار القصير بصوت واضح ومسموع:",
+        "stemEs": "Hola, me llamo Laila. Soy de Egipto. Mucho gusto.",
+        "stemAr": "مرحبًا، اسمي ليلى. أنا من مصر. تشرفت بمعرفتك.",
+        "audioKey": "pending/prea1-practica-ex7",
+        "explanationAr": "قل الجمل الثلاث بترتيبها: تحية واسم، ثم بلد، ثم مجاملة تعارف. وانطق hola كأنها «أولا».",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-practica-ex7",
+          "modelAnswer": "Hola, me llamo Laila. Soy de Egipto. Mucho gusto."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        },
+        "targetVocab": [
+          "hola",
+          "me llamo",
+          "ser",
+          "mucho gusto"
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

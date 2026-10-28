@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-numeros-1-10",
+    "titleAr": "الأرقام من 1 إلى 10",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u3-first-words",
+    "objectiveAr": "أن يعدّ المتعلم من 1 إلى 10 ويفهم رقمًا مسموعًا.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "pronunciation",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "uno",
+      "dos",
+      "tres",
+      "cuatro",
+      "cinco",
+      "seis",
+      "siete",
+      "ocho",
+      "nueve",
+      "diez"
+    ],
+    "reviewVocabulary": [],
+    "targetStructures": [
+      "العد من uno إلى diez",
+      "سماع رقم وفهمه"
+    ],
+    "grammarTopics": [
+      "numeros-1-10"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "بائع في سوق يعدّ حبات البرتقال لزبون، والزبون يكرر الأرقام وراءه.",
+        "settingAr": "سوق، صباحًا",
+        "lines": [
+          {
+            "es": "Uno, dos, tres, cuatro, cinco.",
+            "ar": "واحد، اثنان، ثلاثة، أربعة، خمسة.",
+            "arEg": "واحد، اتنين، تلاتة، أربعة، خمسة.",
+            "audioKey": "pending/prea1-numeros-cinco"
+          },
+          {
+            "es": "Seis, siete, ocho, nueve, diez.",
+            "ar": "ستة، سبعة، ثمانية، تسعة، عشرة.",
+            "arEg": "ستة، سبعة، تمانية، تسعة، عشرة.",
+            "audioKey": "pending/prea1-numeros-diez"
+          }
+        ]
+      }
+    ],
+    "pedagogicalRationaleAr": "الأرقام العشرة الأولى أساس كل عدّ وسعر وعمر ووقت؛ يتعلمها المتعلم سمعًا ونطقًا وكتابة في تسلسل واحد قبل أي رقم أكبر.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "num_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الرقم الذي سمعته.",
+        "answerKey": {
+          "correctOptionIds": [
+            "num_1_listen_b"
+          ]
+        },
+        "explanationAr": "الرقم المسموع هو tres، أي 3.",
+        "errorFeedback": {
+          "num_1_listen_a": "رقم مختلف؛ اسمع المقطع الأول.",
+          "num_1_listen_c": "رقم مختلف؛ أطول من المسموع."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-numeros-ex1",
+        "speechEs": "Tres.",
+        "options": [
+          {
+            "id": "num_1_listen_a",
+            "text": "Dos.",
+            "isCorrect": false,
+            "distractorRationaleAr": "رقم مختلف؛ اسمع المقطع الأول."
+          },
+          {
+            "id": "num_1_listen_b",
+            "text": "Tres.",
+            "isCorrect": true
+          },
+          {
+            "id": "num_1_listen_c",
+            "text": "Seis.",
+            "isCorrect": false,
+            "distractorRationaleAr": "رقم مختلف؛ أطول من المسموع."
+          }
+        ],
+        "targetVocab": [
+          "tres"
+        ]
+      },
+      {
+        "id": "num_2_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الرقم المسموع من بين الأرقام.",
+        "contextAr": "في لعبة أرقام داخل الصف، ينطق المعلم رقمًا واحدًا.",
+        "answerKey": {
+          "correctOptionIds": [
+            "num_2_listen_a"
+          ]
+        },
+        "explanationAr": "الرقم المسموع هو ocho، أي 8.",
+        "errorFeedback": {
+          "num_2_listen_b": "رقم مختلف.",
+          "num_2_listen_c": "رقم مختلف؛ اسمع المقطع الأول."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-numeros-ex2",
+        "speechEs": "Ocho.",
+        "options": [
+          {
+            "id": "num_2_listen_a",
+            "text": "Ocho.",
+            "isCorrect": true
+          },
+          {
+            "id": "num_2_listen_b",
+            "text": "Cinco.",
+            "isCorrect": false,
+            "distractorRationaleAr": "رقم مختلف."
+          },
+          {
+            "id": "num_2_listen_c",
+            "text": "Diez.",
+            "isCorrect": false,
+            "distractorRationaleAr": "رقم مختلف؛ اسمع المقطع الأول."
+          }
+        ],
+        "targetVocab": [
+          "ocho"
+        ]
+      },
+      {
+        "id": "num_3_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي كلمة تعني الرقم 7؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "num_3_word_b"
+          ]
+        },
+        "explanationAr": "الرقم 7 هو siete، ويُنطق «سييتي». أما seis فهو 6، وnueve فهو 9.",
+        "errorFeedback": {
+          "num_3_word_a": "هذا الرقم 6 لا 7.",
+          "num_3_word_c": "هذا الرقم 9 لا 7."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "num_3_word_a",
+            "text": "Seis",
+            "isCorrect": false,
+            "textAr": "ستة",
+            "distractorRationaleAr": "هذا الرقم 6 لا 7."
+          },
+          {
+            "id": "num_3_word_b",
+            "text": "Siete",
+            "textAr": "سبعة",
+            "isCorrect": true
+          },
+          {
+            "id": "num_3_word_c",
+            "text": "Nueve",
+            "isCorrect": false,
+            "textAr": "تسعة",
+            "distractorRationaleAr": "هذا الرقم 9 لا 7."
+          }
+        ],
+        "targetVocab": [
+          "siete"
+        ]
+      },
+      {
+        "id": "num_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالرقم الناقص.",
+        "stemEs": "Uno, dos, ____, cuatro.",
+        "stemAr": "واحد، اثنان، ثلاثة، أربعة.",
+        "answerKey": {
+          "accepted": [
+            "tres"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "بعد dos يأتي tres ثم cuatro. واحفظ التسلسل: uno, dos, tres, cuatro, cinco.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "tres"
+        ]
+      },
+      {
+        "id": "num_5_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الرقم الناقص دون اختيارات.",
+        "stemEs": "____, dos, tres.",
+        "stemAr": "واحد، اثنان، ثلاثة.",
+        "answerKey": {
+          "accepted": [
+            "Uno",
+            "uno"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "العد يبدأ بـ uno ثم dos ثم tres. وuno تُكتب بحرف كبير في بداية الجملة فقط.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "uno"
+        ]
+      },
+      {
+        "id": "num_6_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين تسلسل العد الصحيح.",
+        "items": [
+          {
+            "id": "num_6_order_t1",
+            "kind": "token",
+            "text": "tres"
+          },
+          {
+            "id": "num_6_order_t2",
+            "kind": "token",
+            "text": "Uno"
+          },
+          {
+            "id": "num_6_order_t3",
+            "kind": "token",
+            "text": "dos"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Uno dos tres"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: uno ثم dos ثم tres. وقلها بصوت عالٍ مع كل ترتيب لتثبيت التسلسل.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "uno",
+          "dos",
+          "tres"
+        ]
+      },
+      {
+        "id": "num_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "عدّ من واحد إلى خمسة بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "عدّ من واحد إلى خمسة بصوت واضح ومسموع:",
+        "stemEs": "Uno, dos, tres, cuatro, cinco.",
+        "stemAr": "واحد، اثنان، ثلاثة، أربعة، خمسة.",
+        "audioKey": "pending/prea1-numeros-ex7",
+        "explanationAr": "انطق كل رقم واضحًا: uno وdos وtres وcuatro وcinco. ويُنطق c قبل e مثل «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-numeros-ex7",
+          "modelAnswer": "Uno, dos, tres, cuatro, cinco."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

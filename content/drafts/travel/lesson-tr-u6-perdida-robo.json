@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u6-perdida-robo",
+    "titleAr": "ضياع الوثائق والسرقة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u6-emergencies",
+    "objectiveAr": "أن يشرح المتعلم أنه فقد جواز سفره أو سُرقت محفظته، ويصف ما ضاع، ويطلب المساعدة لاسترجاعه.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "perdido",
+      "bolso"
+    ],
+    "reviewVocabulary": [
+      "perder",
+      "robar",
+      "pasaporte",
+      "cartera"
+    ],
+    "targetStructures": [
+      "Perdí …",
+      "Me robaron …",
+      "He perdido …"
+    ],
+    "grammarTopics": [
+      "preterito-perder-robar",
+      "me-robaron"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "في استقبال الفندق تشرح أنك فقدت جواز سفرك وسُرقت محفظتك، وتطلب المساعدة.",
+        "settingAr": "استقبال فندق في مدريد",
+        "lines": [
+          {
+            "es": "Perdone, perdí mi pasaporte esta mañana.",
+            "ar": "عذرًا، فقدت جواز سفري هذا الصباح.",
+            "arEg": "معلش، جواز سفري ضاع الصبح ده.",
+            "audioKey": "pending/tr-u6-perdida-1"
+          },
+          {
+            "es": "¿Dónde lo perdió? ¿Cuándo lo perdió?",
+            "ar": "أين فقدته؟ ومتى فقدته؟",
+            "arEg": "فقدته فين؟ وامتى؟",
+            "audioKey": "pending/tr-u6-perdida-2"
+          },
+          {
+            "es": "No sé. Me robaron la cartera en el metro.",
+            "ar": "لا أعرف. سُرقَت محفظتي في المترو.",
+            "arEg": "مش عارف. محفظتي اتسرقت في المترو.",
+            "audioKey": "pending/tr-u6-perdida-3"
+          },
+          {
+            "es": "Tiene que ir a la comisaría. ¿Quiere que llame a la policía?",
+            "ar": "عليك الذهاب إلى مركز الشرطة. هل تريد أن أتصل بالشرطة؟",
+            "arEg": "لازم تروح القسم. عايز أتصل بالبوليس؟",
+            "audioKey": "pending/tr-u6-perdida-4"
+          },
+          {
+            "es": "Sí, por favor. Necesito mi documento para volver.",
+            "ar": "نعم من فضلك. أحتاج وثيقتي للعودة.",
+            "arEg": "أيوه لو سمحت. محتاج ورقي عشان أرجع.",
+            "audioKey": "pending/tr-u6-perdida-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "عند ضياع جواز السفر في إسبانيا، أول خطوة هي البلاغ في مركز الشرطة للحصول على محضر، ثم التوجه للسفارة أو القنصلية بوثيقة بديلة. احتفظ دائمًا بنسخة مصورة من جواز سفرك منفصلة عن الأصل.",
+    "pedagogicalRationaleAr": "يبدأ الدرس بالفقد لأنه الأكثر شيوعًا، ثم يميز بين الفقد والسرقة لغويًا، ثم يجمعهما في سرد قصير واحد كما يحدث عند الإبلاغ في الفندق أو الشرطة.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u6_perdida_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى جملة الزبون واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u6-perdida-listen-1",
+        "speechEs": "Perdí mi pasaporte esta mañana.",
+        "options": [
+          {
+            "id": "tr_u6_perdida_1_a",
+            "text": "Perdí mi pasaporte esta mañana.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_perdida_1_b",
+            "text": "Perdí mi cartera esta mañana.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع pasaporte (جواز سفر) لا cartera (محفظة)، والشيء المفقود مختلف."
+          },
+          {
+            "id": "tr_u6_perdida_1_c",
+            "text": "Perdí mi móvil esta mañana.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع pasaporte لا móvil (هاتف)، والشيء المفقود مختلف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_perdida_1_a"
+          ]
+        },
+        "explanationAr": "الإخبار عن الفقد بالماضي: Perdí mi pasaporte esta mañana. و«perdí» ماضٍ للمتكلم، و«esta mañana» هذا الصباح.",
+        "errorFeedback": {
+          "tr_u6_perdida_1_b": "المسموع pasaporte (جواز سفر) لا cartera (محفظة)، والشيء المفقود مختلف.",
+          "tr_u6_perdida_1_c": "المسموع pasaporte لا móvil (هاتف)، والشيء المفقود مختلف."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "perder",
+          "pasaporte",
+          "cartera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_2_word",
+        "type": "word_choice",
+        "instructionAr": "ماذا تقول عندما سُرقت محفظتك في المترو؟",
+        "options": [
+          {
+            "id": "tr_u6_perdida_2_a",
+            "text": "Me robaron la cartera.",
+            "textAr": "سُرقَت محفظتي.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_perdida_2_b",
+            "text": "Me robaron el pasaporte.",
+            "textAr": "سُرق جواز سفري.",
+            "isCorrect": false,
+            "distractorRationaleAr": "السؤال عن المحفظة، وذكر جواز السفر يغيّر الشيء المسروق."
+          },
+          {
+            "id": "tr_u6_perdida_2_c",
+            "text": "Perdí la cartera.",
+            "textAr": "فقدت المحفظة.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«Perdí» تعني فقدت بنفسك، بينما السؤال عن سرقة قام بها شخص آخر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_perdida_2_a"
+          ]
+        },
+        "explanationAr": "السرقة تُقال بـ«Me robaron la cartera»: حرفيًا سرقوا مني المحفظة، وهي الصيغة الطبيعية للإخبار عن السرقة. و«Perdí» تعني فقدت بنفسك لا أن أحدًا سرقها.",
+        "errorFeedback": {
+          "tr_u6_perdida_2_b": "السؤال عن المحفظة، وذكر جواز السفر يغيّر الشيء المسروق.",
+          "tr_u6_perdida_2_c": "«Perdí» تعني فقدت بنفسك، بينما السؤال عن سرقة قام بها شخص آخر."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "robar",
+          "cartera",
+          "perder"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بالشيء المسروق.",
+        "stemEs": "Me robaron la ____ en el metro.",
+        "stemAr": "سُرقَت محفظتي في المترو.",
+        "answerKey": {
+          "accepted": [
+            "cartera"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Me robaron la cartera en el metro» تعني سُرقَت محفظتي في المترو. و«en el metro» في المترو.",
+        "errorFeedback": {
+          "móvil": "الجملة عن المحفظة لا عن الهاتف؛ المطلوب cartera.",
+          "pasaporte": "الجملة عن المحفظة لا عن جواز السفر؛ المطلوب cartera."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "robar",
+          "cartera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن جواز السفر المفقود.",
+        "items": [
+          {
+            "id": "tr_u6_perdida_4_t1",
+            "kind": "token",
+            "text": "Mi"
+          },
+          {
+            "id": "tr_u6_perdida_4_t2",
+            "kind": "token",
+            "text": "pasaporte"
+          },
+          {
+            "id": "tr_u6_perdida_4_t3",
+            "kind": "token",
+            "text": "está"
+          },
+          {
+            "id": "tr_u6_perdida_4_t4",
+            "kind": "token",
+            "text": "perdido"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mi pasaporte está perdido",
+            "Mi pasaporte está perdido."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Mi pasaporte está perdido» تعني جواز سفري مفقود. و«perdido» صفة تُطابق الاسم المذكر pasaporte.",
+        "errorFeedback": {
+          "order": "ابدأ بـ Mi pasaporte، ثم الفعل está، ثم الصفة perdido."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "pasaporte",
+          "perdido"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "موظفة الاستقبال تسألك ماذا حدث لك.",
+        "stemEs": "— ¿Qué le pasó?",
+        "stemAr": "— ماذا حدث لك؟",
+        "options": [
+          {
+            "id": "tr_u6_perdida_5_a",
+            "text": "Perdí mi pasaporte y me robaron la cartera.",
+            "textAr": "فقدت جواز سفري وسُرقَت محفظتي.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_perdida_5_b",
+            "text": "Perdí mi pasaporte y compré una cartera.",
+            "textAr": "فقدت جواز سفري واشتريت محفظة.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«compré» تعني اشتريت، والسياق سرقة وفقد لا شراء."
+          },
+          {
+            "id": "tr_u6_perdida_5_c",
+            "text": "Tengo mi pasaporte y mi cartera.",
+            "textAr": "أملك جواز سفري ومحفظتي.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«Tengo» تعني أملك، وهي عكس الفقد والسرقة المذكورين."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_perdida_5_a"
+          ]
+        },
+        "explanationAr": "الجواب يجمع الحدثين: فقدان الجواز وسرقة المحفظة. و«compré» اشتريت لا علاقة لها بالطارئ، و«Tengo» أملك عكس المعنى.",
+        "errorFeedback": {
+          "tr_u6_perdida_5_b": "«compré» تعني اشتريت، والسياق سرقة وفقد لا شراء.",
+          "tr_u6_perdida_5_c": "«Tengo» تعني أملك، وهي عكس الفقد والسرقة المذكورين."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "perder",
+          "robar",
+          "pasaporte",
+          "cartera"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "فقدت جواز سفري هذا الصباح.",
+        "answerKey": {
+          "accepted": [
+            "Perdí mi pasaporte esta mañana.",
+            "He perdido mi pasaporte esta mañana."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«Perdí mi pasaporte esta mañana» بالماضي البسيط، و«He perdido» بالماضي القريب، وكلاهما صحيح هنا. و«esta mañana» تعني هذا الصباح.",
+        "errorFeedback": {
+          "Perdí mi cartera esta mañana.": "المطلوب جواز السفر pasaporte لا المحفظة cartera.",
+          "Pierdo mi pasaporte esta mañana.": "«esta mañana» زمن ماضٍ، لذلك الفعل ماضٍ: Perdí، لا مضارع Pierdo."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "perder",
+          "pasaporte"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_perdida_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اشرح فقدان جواز السفر وسرقة المحفظة واطلب المساعدة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Perdone, perdí mi pasaporte esta mañana. Me robaron la cartera en el metro. Necesito ayuda, por favor.",
+        "stemAr": "عذرًا، فقدت جواز سفري هذا الصباح. سُرقَت محفظتي في المترو. أحتاج مساعدة من فضلك.",
+        "answerKey": {
+          "modelAnswer": "Perdone, perdí mi pasaporte esta mañana. Me robaron la cartera en el metro. Necesito ayuda, por favor.",
+          "referenceAudioKey": "pending/tr-u6-perdida-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "perder",
+          "robar",
+          "ayuda"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الطوارئ 2/4 (ضياع الوثائق والسرقة). يحتاج مراجعة إسبانية أصلية لصيغة Me robaron والماضي البسيط. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-acento-escrito",
+    "titleAr": "علامة النبر المكتوبة",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u2-stress",
+    "objectiveAr": "أن يعرف المتعلم متى تحمل الكلمة علامة النبر (´) وأنها تُغيّر موضع النبر لا الصوت.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "pronunciation",
+      "grammar"
+    ],
+    "newVocabulary": [
+      "mamá",
+      "papá",
+      "café",
+      "teléfono",
+      "música",
+      "difícil"
+    ],
+    "reviewVocabulary": [
+      "casa",
+      "tomate"
+    ],
+    "targetStructures": [
+      "علامة النبر (´) فوق الحرف المتحرك المنبور",
+      "mamá: النبر على المقطع الأخير",
+      "teléfono: النبر على المقطع الثالث من الآخر"
+    ],
+    "grammarTopics": [
+      "acento-escrito",
+      "agudas-llanas-esdrujulas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "طالب يسأل معلمته لماذا تُكتب mamá بعلامة فوق الحرف الأخير بينما تُكتب casa بلا علامة.",
+        "settingAr": "صف لغة، صباحًا",
+        "lines": [
+          {
+            "es": "Mamá lleva tilde. Casa no lleva tilde.",
+            "ar": "كلمة ماما تحمل علامة نبر. وكلمة بيت لا تحمل علامة.",
+            "arEg": "ماما عليها علامة نبر. وبيت لأ.",
+            "audioKey": "pending/prea1-acento-mama"
+          },
+          {
+            "es": "El café es bueno. La música es bonita.",
+            "ar": "القهوة جيدة. الموسيقى جميلة.",
+            "arEg": "القهوة حلوة. المزيكا جميلة.",
+            "audioKey": "pending/prea1-acento-cafe"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "علامة النبر المكتوبة (tilde) جزء من الكلمة في الإسبانية؛ حذفها قد يغير المعنى، مثل papa بمعنى «بطاطس» مقابل papá بمعنى «أب».",
+    "pedagogicalRationaleAr": "في أبسط مستوى يتعلم المتعلم أن العلامة المكتوبة تُظهر أين يقع النبر، لا أنها تغير الصوت؛ ويتدرب على تمييز الكلمات التي تحملها من التي لا تحملها.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "ace_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الكلمة المكتوبة كما سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ace_1_listen_b"
+          ]
+        },
+        "explanationAr": "الكلمة المسموعة هي mamá بعلامة نبر على a الأخيرة، لأن النبر يقع على المقطع الأخير.",
+        "errorFeedback": {
+          "ace_1_listen_a": "كلمة مختلفة تمامًا: mesa تعني طاولة، والمسموع mamá.",
+          "ace_1_listen_c": "كلمة مختلفة؛ اسمع المقطع الأول."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-acento-ex1",
+        "speechEs": "Mamá.",
+        "options": [
+          {
+            "id": "ace_1_listen_a",
+            "text": "Mesa.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة تمامًا: mesa تعني طاولة، والمسموع mamá."
+          },
+          {
+            "id": "ace_1_listen_b",
+            "text": "Mamá.",
+            "isCorrect": true
+          },
+          {
+            "id": "ace_1_listen_c",
+            "text": "Papá.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ اسمع المقطع الأول."
+          }
+        ],
+        "targetVocab": [
+          "mamá"
+        ]
+      },
+      {
+        "id": "ace_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي كلمة تحمل علامة نبر مكتوبة؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "ace_2_word_a"
+          ]
+        },
+        "explanationAr": "كلمة teléfono تحمل علامة نبر على e في المقطع الثالث من الآخر، لذلك هي esdrújula وتُكتب العلامة دائمًا. أما tomate وcasa فبلا علامة.",
+        "errorFeedback": {
+          "ace_2_word_b": "بلا علامة؛ النبر على المقطع الثاني بلا علامة مكتوبة.",
+          "ace_2_word_c": "بلا علامة؛ النبر على المقطع الأول بلا علامة مكتوبة."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "ace_2_word_a",
+            "text": "Teléfono",
+            "textAr": "هاتف",
+            "isCorrect": true
+          },
+          {
+            "id": "ace_2_word_b",
+            "text": "Tomate",
+            "isCorrect": false,
+            "textAr": "طماطم",
+            "distractorRationaleAr": "بلا علامة؛ النبر على المقطع الثاني بلا علامة مكتوبة."
+          },
+          {
+            "id": "ace_2_word_c",
+            "text": "Casa",
+            "isCorrect": false,
+            "textAr": "بيت",
+            "distractorRationaleAr": "بلا علامة؛ النبر على المقطع الأول بلا علامة مكتوبة."
+          }
+        ],
+        "targetVocab": [
+          "teléfono"
+        ]
+      },
+      {
+        "id": "ace_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالحرف المنبور.",
+        "stemEs": "Mam____.",
+        "stemAr": "ماما.",
+        "answerKey": {
+          "accepted": [
+            "á"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة mamá تُكتب بعلامة نبر فوق a الأخيرة، لأن النبر يقع على المقطع الأخير. وبلا العلامة تُقرأ mama بنبر مختلف.",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "mamá"
+        ]
+      },
+      {
+        "id": "ace_4_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "La palabra ____ lleva tilde.",
+        "stemAr": "كلمة «صعب» تحمل علامة نبر.",
+        "answerKey": {
+          "accepted": [
+            "difícil"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة difícil تحمل علامة نبر على i، لأنها llana تنتهي بحرف ساكن غير n أو s. وتعني «صعب».",
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "difícil"
+        ]
+      },
+      {
+        "id": "ace_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة صحيحة.",
+        "items": [
+          {
+            "id": "ace_5_order_t1",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "ace_5_order_t2",
+            "kind": "token",
+            "text": "café"
+          },
+          {
+            "id": "ace_5_order_t3",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "ace_5_order_t4",
+            "kind": "token",
+            "text": "bueno"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El café es bueno"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: el ثم الاسم café ثم الفعل es ثم الصفة bueno. وكلمة café تحمل علامة نبر لأنها aguda تنتهي بحرف متحرك.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "café"
+        ]
+      },
+      {
+        "id": "ace_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة المكتوبة كما سمعتها.",
+        "contextAr": "في مراجعة الدرس، ينطق المعلم جملة كاملة لتختبر علامة النبر.",
+        "answerKey": {
+          "correctOptionIds": [
+            "ace_6_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة: El café es bueno. وكلمة café تحمل علامة النبر دائمًا.",
+        "errorFeedback": {
+          "ace_6_listen_b": "الصفة مختلفة: المسموع يقول bueno، لا grande.",
+          "ace_6_listen_c": "معنى مختلف؛ اسمع الكلمة الأخيرة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-acento-ex6",
+        "speechEs": "El café es bueno.",
+        "options": [
+          {
+            "id": "ace_6_listen_a",
+            "text": "El café es bueno.",
+            "isCorrect": true
+          },
+          {
+            "id": "ace_6_listen_b",
+            "text": "El café es grande.",
+            "isCorrect": false,
+            "distractorRationaleAr": "الصفة مختلفة: المسموع يقول bueno، لا grande."
+          },
+          {
+            "id": "ace_6_listen_c",
+            "text": "El café es malo.",
+            "isCorrect": false,
+            "distractorRationaleAr": "معنى مختلف؛ اسمع الكلمة الأخيرة."
+          }
+        ],
+        "targetVocab": [
+          "café"
+        ]
+      },
+      {
+        "id": "ace_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الكلمات بصوت واضح وركز على المقطع المنبور. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الكلمات بصوت واضح ومسموع، وركز على المقطع المنبور:",
+        "stemEs": "Mamá, papá, café.",
+        "stemAr": "ماما، بابا، قهوة.",
+        "audioKey": "pending/prea1-acento-ex7",
+        "explanationAr": "انبر المقطع الذي يحمل العلامة: ma-MÁ وpa-PÁ وca-FÉ. والعلامة تُظهر موضع النبر ولا تغير صوت الحرف.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-acento-ex7",
+          "modelAnswer": "Mamá, papá, café."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

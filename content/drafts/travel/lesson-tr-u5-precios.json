@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u5-precios",
+    "titleAr": "السؤال عن السعر والمساومة",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u5-shopping-travel",
+    "objectiveAr": "أن يسأل المتعلم عن سعر سلعة في متجر، ويفهم السعر باليورو، ويتفاوض بأدب على تخفيض بسيط.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "cuánto cuesta",
+      "rebaja",
+      "etiqueta"
+    ],
+    "reviewVocabulary": [
+      "precio",
+      "barato",
+      "caro"
+    ],
+    "targetStructures": [
+      "¿Cuánto cuesta …?",
+      "¿Cuánto vale …?",
+      "¿Me hace un descuento?"
+    ],
+    "grammarTopics": [
+      "cuanto-cuesta-vale",
+      "precios-euros"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تدخل متجر ملابس في مدريد وتريد شراء قميص، فتسأل عن سعره وتحاول المساومة.",
+        "settingAr": "متجر ملابس في مدريد",
+        "lines": [
+          {
+            "es": "Buenos días, ¿qué desea?",
+            "ar": "صباح الخير، ماذا تريد؟",
+            "arEg": "صباح الخير، عايز إيه؟",
+            "audioKey": "pending/tr-u5-precios-1"
+          },
+          {
+            "es": "¿Cuánto cuesta esta camisa?",
+            "ar": "كم سعر هذا القميص؟",
+            "arEg": "القميص ده بكام؟",
+            "audioKey": "pending/tr-u5-precios-2"
+          },
+          {
+            "es": "Cuesta treinta y cinco euros.",
+            "ar": "سعره خمسة وثلاثون يورو.",
+            "arEg": "سعره خمسة وتلاتين يورو.",
+            "audioKey": "pending/tr-u5-precios-3"
+          },
+          {
+            "es": "Es un poco cara. ¿Me hace un descuento?",
+            "ar": "إنه غالٍ قليلًا. هل تفعل لي تخفيضًا؟",
+            "arEg": "غالي شوية. ممكن تعملّي تخفيض؟",
+            "audioKey": "pending/tr-u5-precios-4"
+          },
+          {
+            "es": "Le hago una rebaja de cinco euros.",
+            "ar": "أفعل لك تخفيضًا خمسة يورو.",
+            "arEg": "هعملّك تخفيض خمسة يورو.",
+            "audioKey": "pending/tr-u5-precios-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في متاجر إسبانيا الكبيرة الأسعار ثابتة ومكتوبة على بطاقة السلعة، والمساومة غير متوقعة. أما في الأسواق الشعبية والمحلات الصغيرة فالمساومة المهذبة مقبولة، ويُقال فيها: ¿Me hace un descuento؟",
+    "pedagogicalRationaleAr": "يبدأ الدرس بالسؤال الأكثر استعمالًا في التسوق، ثم ينتقل إلى فهم السعر باليورو، ثم إلى المساومة كمهارة تواصلية كاملة، من السؤال البسيط إلى التفاوض المهذب.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u5_precios_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سؤال الزبون واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u5-precios-listen-1",
+        "speechEs": "¿Cuánto cuesta esta camisa?",
+        "options": [
+          {
+            "id": "tr_u5_precios_1_a",
+            "text": "¿Cuánto cuesta esta camisa?",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_precios_1_b",
+            "text": "¿Cuánto cuesta este pantalón?",
+            "isCorrect": false,
+            "distractorRationaleAr": "السلعة مختلفة: pantalón بنطلون، والمسموع camisa قميص."
+          },
+          {
+            "id": "tr_u5_precios_1_c",
+            "text": "¿Cuánto vale esta camisa?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المعنى قريب لكن الفعل المسموع cuesta لا vale، والتمرين يختبر ما سُمع فعلًا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_precios_1_a"
+          ]
+        },
+        "explanationAr": "السؤال عن سعر المفرد: ¿Cuánto cuesta…؟ والجواب يبدأ بالفعل cuesta مع السعر باليورو.",
+        "errorFeedback": {
+          "tr_u5_precios_1_b": "السلعة مختلفة: pantalón بنطلون، والمسموع camisa قميص.",
+          "tr_u5_precios_1_c": "المعنى قريب لكن الفعل المسموع cuesta لا vale، والتمرين يختبر ما سُمع فعلًا."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_2_word",
+        "type": "word_choice",
+        "instructionAr": "أين تجد سعر السلعة مكتوبًا في المتجر؟",
+        "options": [
+          {
+            "id": "tr_u5_precios_2_a",
+            "text": "En la etiqueta.",
+            "textAr": "على بطاقة السلعة.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_precios_2_b",
+            "text": "En el probador.",
+            "textAr": "في غرفة القياس.",
+            "isCorrect": false,
+            "distractorRationaleAr": "probador غرفة تجربة الملابس، وليس مكان كتابة السعر."
+          },
+          {
+            "id": "tr_u5_precios_2_c",
+            "text": "En la ambulancia.",
+            "textAr": "في سيارة الإسعاف.",
+            "isCorrect": false,
+            "distractorRationaleAr": "لا علاقة لسيارة الإسعاف بالمتجر أو بالسعر."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_precios_2_a"
+          ]
+        },
+        "explanationAr": "بطاقة السلعة etiqueta تذكر السعر والمقاس، وهي أول مكان تنظر إليه قبل أن تسأل البائع.",
+        "errorFeedback": {
+          "tr_u5_precios_2_b": "probador غرفة تجربة الملابس، وليس مكان كتابة السعر.",
+          "tr_u5_precios_2_c": "لا علاقة لسيارة الإسعاف بالمتجر أو بالسعر."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "precio",
+          "etiqueta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل السؤال عن السعر بالكلمة المناسبة.",
+        "stemEs": "¿Cuánto ____ esta camisa?",
+        "stemAr": "كم سعر هذا القميص؟",
+        "answerKey": {
+          "accepted": [
+            "cuesta"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "التعبير الثابت للمفرد هو «cuánto cuesta»، وللجمع «cuánto cuestan». والفعل cuesta هنا بمعنى يكلّف أو يساوي.",
+        "errorFeedback": {
+          "es": "لا نقول «¿cuánto es esta camisa؟» للسؤال عن السعر؛ الصواب «cuesta».",
+          "vale": "«vale» صحيحة المعنى لكن التعبير المطلوب هنا هو «cuánto cuesta»."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن السعر.",
+        "items": [
+          {
+            "id": "tr_u5_precios_4_t1",
+            "kind": "token",
+            "text": "treinta"
+          },
+          {
+            "id": "tr_u5_precios_4_t2",
+            "kind": "token",
+            "text": "euros"
+          },
+          {
+            "id": "tr_u5_precios_4_t3",
+            "kind": "token",
+            "text": "Cuesta"
+          },
+          {
+            "id": "tr_u5_precios_4_t4",
+            "kind": "token",
+            "text": "cinco"
+          },
+          {
+            "id": "tr_u5_precios_4_t5",
+            "kind": "token",
+            "text": "y"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Cuesta treinta y cinco euros",
+            "Cuesta treinta y cinco euros."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "ترتيب جملة السعر: الفعل cuesta ثم العدد ثم العملة euros. والأعداد المركبة تُربط بـ y: treinta y cinco.",
+        "errorFeedback": {
+          "order": "ابدأ بالفعل Cuesta، ثم العدد treinta y cinco، واختم بالعملة euros."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "precio",
+          "euro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "البائعة قالت إن سعر القميص خمسون يورو، وتراه غاليًا.",
+        "stemEs": "— Esta camisa cuesta cincuenta euros. ¿La quiere?",
+        "stemAr": "— هذا القميص سعره خمسون يورو. هل تريده؟",
+        "options": [
+          {
+            "id": "tr_u5_precios_5_a",
+            "text": "Es muy cara. ¿Me hace un descuento?",
+            "textAr": "إنه غالٍ جدًا. هل تفعل لي تخفيضًا؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_precios_5_b",
+            "text": "Me queda grande.",
+            "textAr": "المقاس كبير عليّ.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المشكلة هنا السعر لا المقاس، و«me queda» تخصّ المقاس لا السعر."
+          },
+          {
+            "id": "tr_u5_precios_5_c",
+            "text": "Está rota.",
+            "textAr": "إنه تالف.",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر أي عيب في القميص؛ الاعتراض على السعر فقط."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_precios_5_a"
+          ]
+        },
+        "explanationAr": "عندما ترى السعر غاليًا تقول: Es muy caro أو Es muy cara حسب جنس السلعة، ثم تطلب التخفيض: ¿Me hace un descuento؟",
+        "errorFeedback": {
+          "tr_u5_precios_5_b": "المشكلة هنا السعر لا المقاس، و«me queda» تخصّ المقاس لا السعر.",
+          "tr_u5_precios_5_c": "لم يُذكر أي عيب في القميص؛ الاعتراض على السعر فقط."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "caro",
+          "descuento",
+          "rebaja"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "كم سعر هذا القميص؟",
+        "answerKey": {
+          "accepted": [
+            "¿Cuánto cuesta esta camisa?",
+            "¿Cuánto cuesta la camisa?",
+            "Cuánto cuesta esta camisa"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "السؤال عن سعر المفرد المؤنث: ¿Cuánto cuesta esta camisa؟ و«esta» لأن camisa مؤنثة وقريبة منك.",
+        "errorFeedback": {
+          "¿Cuánto cuesta este camisa?": "camisa مؤنثة، فالإشارة esta لا este.",
+          "¿Cuánto cuestan esta camisa?": "camisa مفرد، لذلك الفعل cuesta لا cuestan."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta",
+          "camisa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_precios_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اسأل عن السعر واطلب تخفيضًا بأدب. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "¿Cuánto cuesta esta camisa? Es un poco cara. ¿Me hace un descuento?",
+        "stemAr": "كم سعر هذا القميص؟ إنه غالٍ قليلًا. هل تفعل لي تخفيضًا؟",
+        "answerKey": {
+          "modelAnswer": "¿Cuánto cuesta esta camisa? Es un poco cara. ¿Me hace un descuento?",
+          "referenceAudioKey": "pending/tr-u5-precios-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta",
+          "caro",
+          "descuento"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس التسوق 1/4 (السؤال عن السعر والمساومة). يحتاج مراجعة إسبانية أصلية لصيغ المساومة وعرفها في إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

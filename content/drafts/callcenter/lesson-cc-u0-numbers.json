@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u0-numbers",
+    "titleAr": "الأرقام والتواريخ والمبالغ المسموعة عبر الهاتف",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u0-phonetics-support",
+    "objectiveAr": "أن يفهم المتعلم الأرقام والتواريخ والمبالغ عند سماعها عبر الهاتف، ويؤكدها بتكرارها بصوت واضح.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "cantidad",
+      "fecha",
+      "número"
+    ],
+    "reviewVocabulary": [
+      "euro",
+      "hora",
+      "día"
+    ],
+    "targetStructures": [
+      "El importe es de…",
+      "¿Me confirma la cantidad, por favor?",
+      "La fecha es el…"
+    ],
+    "grammarTopics": [
+      "numeros-fechas-importes"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "العميل يسأل عن مبلغ وتاريخ. أنت الموظفة كارمن. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، استعلام عن مبلغ وتاريخ (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "El importe total es de cuarenta y ocho euros con noventa céntimos. ¿Me confirma la cantidad, por favor?",
+            "ar": "المبلغ الإجمالي ثمانية وأربعون يورو وتسعون سنتًا. هل تؤكد المبلغ من فضلك؟",
+            "arEg": "المبلغ الإجمالي تمانية وأربعين يورو وتسعين سنت. ممكن تأكد المبلغ من فضلك؟",
+            "audioKey": "pending/cc-u0-numbers-line-1"
+          },
+          {
+            "es": "Cuarenta y ocho con noventa. ¿Y la fecha de entrega?",
+            "ar": "ثمانية وأربعون وتسعون. وما تاريخ التسليم؟",
+            "arEg": "تمانية وأربعين وتسعين. وتاريخ التسليم إمتى؟",
+            "audioKey": "pending/cc-u0-numbers-line-2"
+          },
+          {
+            "es": "La entrega está prevista para el viernes. Repito: el viernes, no el jueves.",
+            "ar": "التسليم متوقع يوم الجمعة. أكرر: يوم الجمعة، لا يوم الخميس.",
+            "arEg": "التسليم متوقع يوم الجمعة. بكرر: يوم الجمعة، مش يوم الخميس.",
+            "audioKey": "pending/cc-u0-numbers-line-3"
+          },
+          {
+            "es": "Perfecto: cuarenta y ocho con noventa, el viernes. Muchas gracias.",
+            "ar": "ممتاز: ثمانية وأربعون وتسعون، يوم الجمعة. شكرًا جزيلًا.",
+            "arEg": "ممتاز: تمانية وأربعين وتسعين، يوم الجمعة. شكرًا أوي.",
+            "audioKey": "pending/cc-u0-numbers-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا تُكتب الأرقام العشرية بفاصلة (48,90) وتُقرأ «cuarenta y ocho con noventa»؛ وتكرار الرقم بصوت عالٍ يمنع خطأ السمع.",
+    "pedagogicalRationaleAr": "الأرقام أكثر ما يُسمَع خطأً على الهاتف؛ لذلك ندرّب الفهم ثم التأكيد بالتكرار قبل أي إجراء مالي.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u0_numbers_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u0_numbers_1_listen_a",
+            "text": "El importe total es de cuarenta y ocho euros con noventa céntimos.",
+            "isCorrect": true,
+            "textAr": "المبلغ الإجمالي ثمانية وأربعون يورو وتسعون سنتًا."
+          },
+          {
+            "id": "cc_u0_numbers_1_listen_b",
+            "text": "El importe total es de cuarenta y tres euros con noventa céntimos.",
+            "isCorrect": false,
+            "textAr": "المبلغ الإجمالي ثلاثة وأربعون يورو وتسعون سنتًا.",
+            "distractorRationaleAr": "الصوت قال «ocho» لا «tres»."
+          },
+          {
+            "id": "cc_u0_numbers_1_listen_c",
+            "text": "El importe total es de cuarenta y ocho dólares con noventa céntimos.",
+            "isCorrect": false,
+            "textAr": "المبلغ الإجمالي ثمانية وأربعون دولارًا وتسعون سنتًا.",
+            "distractorRationaleAr": "العملة «euros» لا «dólares»."
+          }
+        ],
+        "targetVocab": [
+          "cantidad",
+          "importe"
+        ],
+        "explanationAr": "المبلغ المسموع 48,90 يورو؛ والخياران يغيران الرقم أو العملة.",
+        "errorFeedback": {
+          "cc_u0_numbers_1_listen_b": "الصوت قال «ocho» لا «tres».",
+          "cc_u0_numbers_1_listen_c": "العملة «euros» لا «dólares»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u0-numbers-listen",
+        "speechEs": "El importe total es de cuarenta y ocho euros con noventa céntimos.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_numbers_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_numbers_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تؤكد مبلغًا مسموعًا بطريقة مهنية؟",
+        "options": [
+          {
+            "id": "cc_u0_numbers_2_choice_a",
+            "text": "Cuarenta y ocho con noventa. ¿Es correcto?",
+            "isCorrect": true,
+            "textAr": "ثمانية وأربعون وتسعون. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u0_numbers_2_choice_b",
+            "text": "Cuarenta y algo, no sé.",
+            "isCorrect": false,
+            "textAr": "أربعون وشيء ما، لا أعرف.",
+            "distractorRationaleAr": "التقريب في المبالغ المالية غير مقبول مهنيًا."
+          },
+          {
+            "id": "cc_u0_numbers_2_choice_c",
+            "text": "El importe no importa.",
+            "isCorrect": false,
+            "textAr": "المبلغ لا يهم.",
+            "distractorRationaleAr": "تجاهل المبلغ يخالف واجب التأكيد."
+          }
+        ],
+        "targetVocab": [
+          "número",
+          "euro"
+        ],
+        "explanationAr": "تأكيد المبلغ بتكراره ثم سؤال «¿Es correcto?» يمنع خطأ السمع.",
+        "errorFeedback": {
+          "cc_u0_numbers_2_choice_b": "التقريب في المبالغ المالية غير مقبول مهنيًا.",
+          "cc_u0_numbers_2_choice_c": "تجاهل المبلغ يخالف واجب التأكيد."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_numbers_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_numbers_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يملي تاريخًا بسرعة. اختر الرد المهني.",
+        "stemEs": "— La cita es el veintitrés de mayo.",
+        "stemAr": "— الموعد في الثالث والعشرين من مايو.",
+        "options": [
+          {
+            "id": "cc_u0_numbers_3_reply_a",
+            "text": "Gracias. Repito: el veintitrés de mayo. ¿Es correcto?",
+            "isCorrect": true,
+            "textAr": "شكرًا. أكرر: الثالث والعشرون من مايو. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u0_numbers_3_reply_b",
+            "text": "Vale, mayo, ya está.",
+            "isCorrect": false,
+            "textAr": "حسنًا، مايو، انتهى.",
+            "distractorRationaleAr": "لا يؤكد اليوم؛ وخطر الخلط بين التواريخ قائم."
+          },
+          {
+            "id": "cc_u0_numbers_3_reply_c",
+            "text": "¿Qué día? Hable más alto.",
+            "isCorrect": false,
+            "textAr": "أي يوم؟ تحدث بصوت أعلى.",
+            "distractorRationaleAr": "طلب غير محدد وبنبرة آمرة."
+          }
+        ],
+        "targetVocab": [
+          "fecha",
+          "día"
+        ],
+        "explanationAr": "تكرار التاريخ كاملًا ثم التأكيد يثبّت اليوم والشهر قبل تسجيل الموعد.",
+        "errorFeedback": {
+          "cc_u0_numbers_3_reply_b": "لا يؤكد اليوم؛ وخطر الخلط بين التواريخ قائم.",
+          "cc_u0_numbers_3_reply_c": "طلب غير محدد وبنبرة آمرة."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_numbers_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_numbers_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "المبلغ خمسة وثلاثون يورو.",
+        "targetVocab": [
+          "cantidad",
+          "euro"
+        ],
+        "explanationAr": "«treinta y cinco» = خمسة وثلاثون؛ و«importe» هو المبلغ المالي.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "El importe es de treinta y cinco euros.",
+            "El importe es treinta y cinco euros."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u0_numbers_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة مبلغ.",
+        "items": [
+          {
+            "id": "cc_u0_numbers_5_order_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t2",
+            "kind": "token",
+            "text": "importe"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t3",
+            "kind": "token",
+            "text": "es"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t4",
+            "kind": "token",
+            "text": "treinta"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t5",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t6",
+            "kind": "token",
+            "text": "cinco"
+          },
+          {
+            "id": "cc_u0_numbers_5_order_t7",
+            "kind": "token",
+            "text": "euros."
+          }
+        ],
+        "targetVocab": [
+          "cantidad",
+          "número"
+        ],
+        "explanationAr": "ترتيب جملة المبلغ: الفاعل ثم الفعل ثم العدد ثم العملة.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "El importe es treinta y cinco euros."
+          ],
+          "tokenOrder": [
+            "cc_u0_numbers_5_order_t1",
+            "cc_u0_numbers_5_order_t2",
+            "cc_u0_numbers_5_order_t3",
+            "cc_u0_numbers_5_order_t4",
+            "cc_u0_numbers_5_order_t5",
+            "cc_u0_numbers_5_order_t6",
+            "cc_u0_numbers_5_order_t7"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_numbers_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل مبلغًا وتاريخًا وهميين للتدريب، ببطء وبتكرار الرقم.",
+        "stemEs": "El importe es de treinta y cinco euros. ¿Me confirma la cantidad, por favor?",
+        "stemAr": "المبلغ خمسة وثلاثون يورو. هل تؤكد المبلغ من فضلك؟",
+        "targetVocab": [
+          "número",
+          "fecha"
+        ],
+        "explanationAr": "انطق كل رقم بوضوح، وتوقف وقفة قصيرة قبل التأكيد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النطق والسرعة المناسبة",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "النبرة المهنية المهذبة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u0-numbers-speak",
+          "modelAnswer": "El importe es de treinta y cinco euros. ¿Me confirma la cantidad, por favor?"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «الأرقام والتواريخ». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

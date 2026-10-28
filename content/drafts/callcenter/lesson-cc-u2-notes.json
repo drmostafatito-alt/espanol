@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u2-notes",
+    "titleAr": "تدوين الملاحظات وتلخيص الحالة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u2-understanding",
+    "objectiveAr": "أن يدوّن المتعلم ملاحظات منظمة أثناء المكالمة، ويلخّص الحالة للعميل للتأكد قبل المتابعة.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "nota",
+      "resumir",
+      "privacidad"
+    ],
+    "reviewVocabulary": [
+      "anotar",
+      "caso",
+      "registro"
+    ],
+    "targetStructures": [
+      "Voy a anotar los datos.",
+      "Le resumo el caso.",
+      "¿Es correcto lo que he anotado?"
+    ],
+    "grammarTopics": [
+      "notas-resumen-caso"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مكالمة طويلة بتفاصيل كثيرة. أنت الموظف خورخي. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تدوين ملاحظات (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Voy a anotar los datos de su caso para no perder ningún detalle. Por su privacidad, solo anoto lo necesario.",
+            "ar": "سأسجّل بيانات حالتك حتى لا أفقد أي تفصيل. وحرصًا على خصوصيتك، أسجّل الضروري فقط.",
+            "arEg": "هسجّل بيانات حالتك عشان مفقدش أي تفصيلة. وعشان خصوصيتك، بسجّل الضروري بس.",
+            "audioKey": "pending/cc-u2-notes-line-1"
+          },
+          {
+            "es": "De acuerdo. El pedido 000123 llegó el lunes, con retraso.",
+            "ar": "موافق. وصل الطلب 000123 يوم الاثنين، متأخرًا.",
+            "arEg": "موافق. الأوردر 000123 وصل يوم الاتنين، متأخر.",
+            "audioKey": "pending/cc-u2-notes-line-2"
+          },
+          {
+            "es": "Le resumo: pedido 000123, llegó el lunes, con retraso y sin aviso. ¿Es correcto?",
+            "ar": "ألخّص لك: الطلب 000123، وصل يوم الاثنين، متأخرًا ودون إشعار. هل هذا صحيح؟",
+            "arEg": "بلخّص لك: الأوردر 000123، وصل يوم الاتنين، متأخر ومن غير تبليغ. كده صح؟",
+            "audioKey": "pending/cc-u2-notes-line-3"
+          },
+          {
+            "es": "Sí, correcto. Gracias por anotarlo todo.",
+            "ar": "نعم، صحيح. شكرًا على تسجيل كل شيء.",
+            "arEg": "أيوه، صح. شكرًا إنك سجلت كل حاجة.",
+            "audioKey": "pending/cc-u2-notes-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الملاحظة الجيدة تفرّق بين الوقائع وآراء العميل: تُسجَّل الوقائع كما قيلت، وتُترك الآراء خارج الملف الرسمي.",
+    "pedagogicalRationaleAr": "التلخيص للعميل اختبار مزدوج: يؤكد الفهم، ويمنح العميل شعورًا بأن كلامه سُمع وسُجّل.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u2_notes_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u2_notes_1_listen_a",
+            "text": "Voy a anotar los datos de su caso para no perder ningún detalle.",
+            "isCorrect": true,
+            "textAr": "سأسجّل بيانات حالتك حتى لا أفقد أي تفصيل."
+          },
+          {
+            "id": "cc_u2_notes_1_listen_b",
+            "text": "Voy a anotar los datos de su caso para olvidar los detalles.",
+            "isCorrect": false,
+            "textAr": "سأسجّل بيانات حالتك لأنسى التفاصيل.",
+            "distractorRationaleAr": "الصوت قال «no perder» لا «olvidar»."
+          },
+          {
+            "id": "cc_u2_notes_1_listen_c",
+            "text": "Voy a anotar su contraseña para no perder ningún detalle.",
+            "isCorrect": false,
+            "textAr": "سأسجّل كلمة مرورك حتى لا أفقد أي تفصيل.",
+            "distractorRationaleAr": "كلمة المرور لا تُسجَّل أبدًا؛ والصوت قال «los datos»."
+          }
+        ],
+        "targetVocab": [
+          "anotar",
+          "nota"
+        ],
+        "explanationAr": "تدوين البيانات يمنع فقدان التفاصيل؛ وكلمة المرور مستثناة دائمًا.",
+        "errorFeedback": {
+          "cc_u2_notes_1_listen_b": "الصوت قال «no perder» لا «olvidar».",
+          "cc_u2_notes_1_listen_c": "كلمة المرور لا تُسجَّل أبدًا؛ والصوت قال «los datos»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u2-notes-listen",
+        "speechEs": "Voy a anotar los datos de su caso para no perder ningún detalle.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_notes_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_notes_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تلخص الحالة للتأكد؟",
+        "options": [
+          {
+            "id": "cc_u2_notes_2_choice_a",
+            "text": "Le resumo: pedido 000123, llegó el lunes, con retraso. ¿Es correcto?",
+            "isCorrect": true,
+            "textAr": "ألخّص لك: الطلب 000123، وصل يوم الاثنين، متأخرًا. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u2_notes_2_choice_b",
+            "text": "Anoté todo, no hace falta resumir.",
+            "isCorrect": false,
+            "textAr": "سجلت كل شيء، لا داعي للتلخيص.",
+            "distractorRationaleAr": "التلخيص للتأكد جزء من المهنية لا رفاهية."
+          },
+          {
+            "id": "cc_u2_notes_2_choice_c",
+            "text": "El caso es complicado, ya veremos.",
+            "isCorrect": false,
+            "textAr": "الحالة معقدة، سنرى.",
+            "distractorRationaleAr": "تأجيل غامض بلا تلخيص ولا تأكيد."
+          }
+        ],
+        "targetVocab": [
+          "resumir",
+          "caso"
+        ],
+        "explanationAr": "التلخيص + سؤال التأكيد يغلق مرحلة الفهم قبل الحل.",
+        "errorFeedback": {
+          "cc_u2_notes_2_choice_b": "التلخيص للتأكد جزء من المهنية لا رفاهية.",
+          "cc_u2_notes_2_choice_c": "تأجيل غامض بلا تلخيص ولا تأكيد."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_notes_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_notes_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يصحح ملاحظة سجلتها. اختر الرد المهني.",
+        "stemEs": "— No, la fecha fue el martes, no el lunes.",
+        "stemAr": "— لا، كان التاريخ يوم الثلاثاء، لا الاثنين.",
+        "options": [
+          {
+            "id": "cc_u2_notes_3_reply_a",
+            "text": "Gracias, lo corrijo ahora: el martes. ¿Hay algo más que corregir?",
+            "isCorrect": true,
+            "textAr": "شكرًا، أصححه الآن: يوم الثلاثاء. هل هناك شيء آخر يحتاج تصحيحًا؟"
+          },
+          {
+            "id": "cc_u2_notes_3_reply_b",
+            "text": "Bueno, casi lo mismo.",
+            "isCorrect": false,
+            "textAr": "حسنًا، تقريبًا نفس الشيء.",
+            "distractorRationaleAr": "التاريخ واقعة؛ والتقريب فيها خطأ."
+          },
+          {
+            "id": "cc_u2_notes_3_reply_c",
+            "text": "Usted dijo el lunes.",
+            "isCorrect": false,
+            "textAr": "أنت قلت الاثنين.",
+            "distractorRationaleAr": "مجادلة العميل في تصحيحه تهدم الثقة."
+          }
+        ],
+        "targetVocab": [
+          "registro",
+          "nota"
+        ],
+        "explanationAr": "شكر + تصحيح فوري + سؤال عن تصحيحات أخرى = تدوين مهني.",
+        "errorFeedback": {
+          "cc_u2_notes_3_reply_b": "التاريخ واقعة؛ والتقريب فيها خطأ.",
+          "cc_u2_notes_3_reply_c": "مجادلة العميل في تصحيحه تهدم الثقة."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_notes_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_notes_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة التدوين.",
+        "stemEs": "Voy a ____ los datos en la ficha del caso.",
+        "stemAr": "سأسجّل البيانات في ملف الحالة.",
+        "targetVocab": [
+          "anotar",
+          "caso"
+        ],
+        "explanationAr": "«Voy a anotar» = سأسجّل؛ وكلمة ficha هي ملف الحالة.",
+        "errorFeedback": {
+          "anoto": "«Voy a» تحتاج المصدر: anotar."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "anotar"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u2_notes_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تدوين.",
+        "items": [
+          {
+            "id": "cc_u2_notes_5_order_t1",
+            "kind": "token",
+            "text": "Voy"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t3",
+            "kind": "token",
+            "text": "anotar"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t4",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t5",
+            "kind": "token",
+            "text": "datos"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t6",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t7",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "cc_u2_notes_5_order_t8",
+            "kind": "token",
+            "text": "caso."
+          }
+        ],
+        "targetVocab": [
+          "nota",
+          "registro"
+        ],
+        "explanationAr": "ترتيب المستقبل القريب: voy a + مصدر + مفعول.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Voy a anotar los datos de su caso."
+          ],
+          "tokenOrder": [
+            "cc_u2_notes_5_order_t1",
+            "cc_u2_notes_5_order_t2",
+            "cc_u2_notes_5_order_t3",
+            "cc_u2_notes_5_order_t4",
+            "cc_u2_notes_5_order_t5",
+            "cc_u2_notes_5_order_t6",
+            "cc_u2_notes_5_order_t7",
+            "cc_u2_notes_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_notes_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل تلخيص حالة وهمية مع طلب التأكيد من العميل.",
+        "stemEs": "Voy a anotar los datos y después le resumo el caso para confirmarlo.",
+        "stemAr": "سأسجّل البيانات وبعد ذلك ألخّص لك الحالة لتأكيدها.",
+        "targetVocab": [
+          "nota",
+          "resumir"
+        ],
+        "explanationAr": "تحدث ببطء كأنك تكتب فعلًا؛ والتلخيص أقصر من السرد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u2-notes-speak",
+          "modelAnswer": "Voy a anotar los datos y después le resumo el caso para confirmarlo."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «تدوين الملاحظات». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

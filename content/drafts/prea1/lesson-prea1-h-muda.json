@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-h-muda",
+    "titleAr": "حرف H الصامت",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u1-sounds",
+    "objectiveAr": "أن يقرأ المتعلم كلمات تبدأ بحرف h (hola, hotel) دون نطقه، ويميّز ذلك عن العربية.",
+    "estimatedMinutes": 7,
+    "skills": [
+      "listening",
+      "reading",
+      "pronunciation",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "hola",
+      "hotel",
+      "hombre",
+      "hermano",
+      "hora",
+      "hablar"
+    ],
+    "reviewVocabulary": [
+      "mamá",
+      "casa"
+    ],
+    "targetStructures": [
+      "حرف h صامت دائمًا في بداية الكلمة",
+      "hola تُقرأ «أولا» وhotel تُقرأ «أوتيل»"
+    ],
+    "grammarTopics": [
+      "h-muda"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "سائح يصل إلى فندق في مدريد ويسأل موظف الاستقبال عن أخيه.",
+        "settingAr": "بهو فندق، ظهرًا",
+        "lines": [
+          {
+            "es": "Hola, soy Omar. Mi hermano habla español.",
+            "ar": "مرحبًا، أنا عمر. أخي يتكلم الإسبانية.",
+            "arEg": "أهلًا، أنا عمر. أخويا بيتكلم إسباني.",
+            "audioKey": "pending/prea1-h-muda-omar"
+          },
+          {
+            "es": "Hola, Omar. El hotel es grande.",
+            "ar": "مرحبًا يا عمر. الفندق كبير.",
+            "arEg": "أهلًا يا عمر. الفندق كبير.",
+            "audioKey": "pending/prea1-h-muda-hotel"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "حرف h لا يُنطق في الإسبانية إطلاقًا، في بداية الكلمة ووسطها؛ لذلك يخطئ كثير من المبتدئين فينطقونه مثل h الإنجليزية.",
+    "pedagogicalRationaleAr": "حرف h الصامت أول عقبة نطقية للمبتدئ العربي؛ يتدرب المتعلم على قراءة كلمات شائعة تبدأ به دون نطقه، ويميزها عن الكلمات بلا h.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "hmuda_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الكلمة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "hmuda_1_listen_b"
+          ]
+        },
+        "explanationAr": "الكلمة المسموعة هي hola، وتُقرأ «أولا» لأن حرف h صامت لا يُنطق.",
+        "errorFeedback": {
+          "hmuda_1_listen_a": "كلمة مختلفة؛ اسمع المقطع الثاني.",
+          "hmuda_1_listen_c": "كلمة مختلفة؛ أطول من hola."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-h-muda-ex1",
+        "speechEs": "Hola.",
+        "options": [
+          {
+            "id": "hmuda_1_listen_a",
+            "text": "Hora.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ اسمع المقطع الثاني."
+          },
+          {
+            "id": "hmuda_1_listen_b",
+            "text": "Hola.",
+            "isCorrect": true
+          },
+          {
+            "id": "hmuda_1_listen_c",
+            "text": "Hotel.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ أطول من hola."
+          }
+        ],
+        "targetVocab": [
+          "hola"
+        ]
+      },
+      {
+        "id": "hmuda_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي كلمة تبدأ بحرف صامت؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "hmuda_2_word_a"
+          ]
+        },
+        "explanationAr": "كلمة hotel تبدأ بحرف h الصامت، فتُقرأ «أوتيل». أما casa وmesa فتبدآن بحرفين منطوقين.",
+        "errorFeedback": {
+          "hmuda_2_word_b": "تبدأ بحرف c المنطوق.",
+          "hmuda_2_word_c": "تبدأ بحرف m المنطوق."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "hmuda_2_word_a",
+            "text": "Hotel",
+            "textAr": "فندق",
+            "isCorrect": true
+          },
+          {
+            "id": "hmuda_2_word_b",
+            "text": "Casa",
+            "isCorrect": false,
+            "textAr": "بيت",
+            "distractorRationaleAr": "تبدأ بحرف c المنطوق."
+          },
+          {
+            "id": "hmuda_2_word_c",
+            "text": "Mesa",
+            "isCorrect": false,
+            "textAr": "طاولة",
+            "distractorRationaleAr": "تبدأ بحرف m المنطوق."
+          }
+        ],
+        "targetVocab": [
+          "hotel"
+        ]
+      },
+      {
+        "id": "hmuda_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالحرف الناقص.",
+        "stemEs": "____ombre.",
+        "stemAr": "رجل.",
+        "answerKey": {
+          "accepted": [
+            "H",
+            "h"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة hombre تبدأ بحرف h الصامت، فتُقرأ «أومبره». لا تنطق h مثل الإنجليزية.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "hombre"
+        ]
+      },
+      {
+        "id": "hmuda_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة صحيحة.",
+        "items": [
+          {
+            "id": "hmuda_4_order_t1",
+            "kind": "token",
+            "text": "hotel"
+          },
+          {
+            "id": "hmuda_4_order_t2",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "hmuda_4_order_t3",
+            "kind": "token",
+            "text": "grande"
+          },
+          {
+            "id": "hmuda_4_order_t4",
+            "kind": "token",
+            "text": "es"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El hotel es grande"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: أداة التعريف el، ثم الاسم hotel، ثم الفعل es، ثم الصفة grande. وhotel تُقرأ «أوتيل» لأن h صامتة.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "hotel"
+        ]
+      },
+      {
+        "id": "hmuda_5_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "Mi ____ habla español.",
+        "stemAr": "أخي يتكلم الإسبانية.",
+        "answerKey": {
+          "accepted": [
+            "hermano"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة hermano تعني «أخ»، وتبدأ بحرف h الصامت فتُقرأ «إرمانو». والفعل habla من hablar بمعنى يتكلم.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "hermano",
+          "hablar"
+        ]
+      },
+      {
+        "id": "hmuda_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها.",
+        "contextAr": "في حوار عائلي، يتحدث شخص عن أخيه وعن اللغة التي يتكلمها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "hmuda_6_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة: Mi hermano habla español. وكلمة hermano تبدأ بحرف h الصامت.",
+        "errorFeedback": {
+          "hmuda_6_listen_b": "لغة مختلفة؛ اسمع الكلمة الأخيرة.",
+          "hmuda_6_listen_c": "hermana تعني «أخت» لا «أخ»؛ اسمع المقطع الأول من الكلمة الثانية."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-h-muda-ex6",
+        "speechEs": "Mi hermano habla español.",
+        "options": [
+          {
+            "id": "hmuda_6_listen_a",
+            "text": "Mi hermano habla español.",
+            "isCorrect": true
+          },
+          {
+            "id": "hmuda_6_listen_b",
+            "text": "Mi hermano habla inglés.",
+            "isCorrect": false,
+            "distractorRationaleAr": "لغة مختلفة؛ اسمع الكلمة الأخيرة."
+          },
+          {
+            "id": "hmuda_6_listen_c",
+            "text": "Mi hermana habla español.",
+            "isCorrect": false,
+            "distractorRationaleAr": "hermana تعني «أخت» لا «أخ»؛ اسمع المقطع الأول من الكلمة الثانية."
+          }
+        ],
+        "targetVocab": [
+          "hermano",
+          "hablar"
+        ]
+      },
+      {
+        "id": "hmuda_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الجملتين بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الجملتين بصوت واضح ومسموع:",
+        "stemEs": "Hola. El hotel es grande.",
+        "stemAr": "مرحبًا. الفندق كبير.",
+        "audioKey": "pending/prea1-h-muda-ex7",
+        "explanationAr": "انطق hola كأنها «أولا» وhotel كأنها «أوتيل»؛ لا تنطق حرف h أبدًا. وركز على نطق r في grande خفيفة.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-h-muda-ex7",
+          "modelAnswer": "Hola. El hotel es grande."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}
