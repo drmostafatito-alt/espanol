@@ -23,12 +23,14 @@ run_worker_first = true
 [[d1_databases]]
 binding = "DB"
 database_name = "es-ar-prod"
+database_id = "010988b9-2e64-4bfd-bb41-5ceacd0dba86"
 # database_id: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء قاعدة الإنتاج بأمر
 # wrangler d1 create (انظر الـrunbook)، ثم يُلصق المعرّف الحقيقي كما يظهر في
 # لوحة Cloudflare أو في مخرجات الأمر. لا تضع معرّفًا وهميًا ولا أصفارًا.
 
 [vars]
 ENVIRONMENT = "production"
+APP_ORIGIN = "https://espanol-balarabi.espanol-balarabi.workers.dev"
 # APP_ORIGIN: لا يوجد سطر هنا عمدًا. بعد اختيار النطاق (workers.dev مجاني أو
 # دومين خاص) يُضاف سطر واحد بالأصل الوحيد بصيغة HTTPS، مثال:
 # النطاق الكامل فقط، بلا مسار زائد وبلا أصول محلية مختلطة — الاختلاط يعطّل
