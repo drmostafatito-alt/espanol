@@ -101,16 +101,20 @@ async function main() {
 
   // 9) إجابات صحيحة لكل تمرين (المعرّفات مثبتة على المحتوى الحالي كسكربت test-learner-flow-live)
   const known = [
-    { optionId: 'opt_6X9SSA9ENXZ3' }, { optionId: 'opt_TTRT2YDBXS7T' },
-    { text: 'me' }, { text: 'Me llamo Sara' }, { text: 'Buenos' },
-    { optionId: 'opt_9Q567FFCENG3' }, { text: 'Hola, me llamo Omar. Mucho gusto.' },
+    { targetText: 'Hola, me llamo Omar.', optionId: 'opt_6X9SSA9ENXZ3' },
+    { targetText: 'Buenos días', optionId: 'opt_TTRT2YDBXS7T' },
+    { text: 'me' },
+    { text: 'Me llamo Sara' },
+    { text: 'Buenos' },
+    { targetText: 'h', optionId: 'opt_9Q567FFCENG3' },
+    { text: 'Hola, me llamo Omar. Mucho gusto.' },
   ];
   let gradedCorrect = 0;
   for (let i = 0; i < session.json.exercises.length; i++) {
     const ex = session.json.exercises[i];
     const r = await api(`/api/lessons/${slug}/answers`, {
       method: 'POST', cookie,
-      body: { eventId: `j19_${suffix}_${i}`, exerciseId: ex.id, response: known[i], durationMs: 1100 },
+      body: { eventId: `j19_${suffix}_${i}`, exerciseId: ex.id, response: known[i].text ? { text: known[i].text } : { optionId: ex.options?.find(o => o.text === known[i].targetText)?.id || known[i].optionId }, durationMs: 1100 },
     });
     check(r.status === 200, `9.${i + 1}`, `إجابة ${ex.type} مقبولة`);
     if (r.json.mode === 'graded' && r.json.correct === true) gradedCorrect++;

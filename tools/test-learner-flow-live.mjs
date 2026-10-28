@@ -86,12 +86,12 @@ async function run() {
   // 4. إرسال إجابات التمارين وتصحيحها على الخادم
   console.log('\n4️⃣ حل التمارين وإرسال الإجابات للتصحيح على الخادم');
   const knownAnswers = [
-    { exIdx: 0, response: { optionId: 'opt_6X9SSA9ENXZ3' } },
-    { exIdx: 1, response: { optionId: 'opt_TTRT2YDBXS7T' } },
+    { exIdx: 0, targetText: 'Hola, me llamo Omar.', fallbackId: 'opt_6X9SSA9ENXZ3' },
+    { exIdx: 1, targetText: 'Buenos días', fallbackId: 'opt_TTRT2YDBXS7T' },
     { exIdx: 2, response: { text: 'me' } },
     { exIdx: 3, response: { text: 'Me llamo Sara' } },
     { exIdx: 4, response: { text: 'Buenos' } },
-    { exIdx: 5, response: { optionId: 'opt_9Q567FFCENG3' } },
+    { exIdx: 5, targetText: 'h', fallbackId: 'opt_9Q567FFCENG3' },
     { exIdx: 6, response: { text: 'Hola, me llamo Omar. Mucho gusto.' } },
   ];
 
@@ -105,7 +105,7 @@ async function run() {
       body: JSON.stringify({
         eventId,
         exerciseId: ex.id,
-        response: ans.response,
+        response: ans.response || { optionId: ex.options?.find(o => o.text === ans.targetText)?.id || ans.fallbackId },
         durationMs: 1200,
       }),
     });

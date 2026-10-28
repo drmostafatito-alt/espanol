@@ -79,9 +79,9 @@ describe('حماية نسخ الواجهة ضد رسائل «تجريبي/غير
         const key = phrase.toLowerCase();
         if (!text.includes(key)) continue;
         const ex = EXCEPTIONS.find(
-          e => e.phrase.toLowerCase() === key && relative(ROOT, file) === e.file,
+          e => e.phrase.toLowerCase() === key && relative(ROOT, file).replace(/\\/g, '/') === e.file,
         );
-        if (!ex) violations.push(`${relative(ROOT, file)} ∋ «${phrase}»`);
+        if (!ex) violations.push(`${relative(ROOT, file).replace(/\\/g, '/')} ∋ «${phrase}»`);
       }
     }
     expect(violations).toEqual([]);
@@ -91,10 +91,10 @@ describe('حماية نسخ الواجهة ضد رسائل «تجريبي/غير
     const violations: string[] = [];
     for (const file of walk(WEB).filter(f => f.endsWith('.tsx'))) {
       // استثناء Search.tsx المعتمد أعلاه: قراءة حقل provenance لتنبيه البحث فقط
-      if (PROVENANCE_ALLOWED_FILES.includes(relative(ROOT, file))) continue;
+      if (PROVENANCE_ALLOWED_FILES.includes(relative(ROOT, file).replace(/\\/g, '/'))) continue;
       const text = readFileSync(file, 'utf8');
       for (const key of ['warningAr', 'provenance', 'contentProvenance']) {
-        if (text.includes(key)) violations.push(`${relative(ROOT, file)} ∋ ${key}`);
+        if (text.includes(key)) violations.push(`${relative(ROOT, file).replace(/\\/g, '/')} ∋ ${key}`);
       }
     }
     expect(violations).toEqual([]);

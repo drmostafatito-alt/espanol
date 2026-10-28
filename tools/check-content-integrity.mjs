@@ -14,7 +14,7 @@
  * يخرج بكود خروج 1 إن found أخطاء، و0 إن لم يُعثر إلا على تحذيرات، و2 للخطأ التقني.
  */
 import { readdirSync, readFileSync, existsSync, writeFileSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { join, relative, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -125,7 +125,7 @@ for (const dir of DRAFT_DIRS) {
 
 /** ملفات «درس» فقط (ليس حزم المفردات). */
 function isLessonFile(file) {
-  const base = file.split('/').pop();
+  const base = basename(file);
   return /^lesson-.*\.json$/.test(base);
 }
 
@@ -303,7 +303,7 @@ for (const file of lessonFiles) {
 }
 
 /* ---------------------------------------------------------------- 3. حزم المفردات */
-const bundleFiles = diskLessons.filter(f => /^vocab-.*\.json$/.test(f.split('/').pop()));
+const bundleFiles = diskLessons.filter(f => /^vocab-.*\.json$/.test(basename(f)));
 const bundles = new Map();
 for (const file of bundleFiles) {
   let doc;
