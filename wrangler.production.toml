@@ -41,7 +41,7 @@ GOOGLE_CLIENT_ID = "446561850098-ejol9v5jqjkg2fqes4vsr5cgian7prl7.apps.googleuse
 # فيُغطّيها TTS المتصفح. لا سطر له هنا؛ ليس حاجب إطلاق.
 # GOOGLE_CLIENT_ID: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء عميل Google OAuth
 # (انظر الـrunbook)؛ وبدونه يفشل مسار Google مغلقًا برسالة عامة دون كشف.
-ALLOW_PUBLIC_SIGNUP = "false"
+ALLOW_PUBLIC_SIGNUP = "true"
 # حد الخطة المجانية 10ms CPU ⇒ 30k أقصى ما يمكن مع هامش (قياس workerd الفعلي
 # في reports/kdf-benchmark.md). هذا حدّ منصة لا اختيار تصميمي، ويبقى حاجب
 # KDF_BELOW_OWASP قائمًا لمسار كلمات المرور؛ مستخدمو Google الجدد غير متأثرين.
