@@ -3,7 +3,11 @@ import {
   HttpError, apiError, json, readJson,
   serializeSessionCookie, clearSessionCookies, readSessionToken,
   requestIsSecure, cookieName, cookieAttrs, readCookie, isNonProductionEnv } from '../lib/http';
-import { randomToken, sha256Hex, hmacSha256Hex } from '../lib/crypto';
+import { randomToken, sha256Hex, hmacSha256Hex, timingSafeEqual } from '../lib/crypto';
+import {
+  buildAuthorizationUrl, exchangeCode, fetchJwks, pkcePair, resolveRedirectUri,
+  verifyIdToken, OAuthError, type GoogleIdentity,
+} from '../lib/google-oauth';
 import {
   hashPassword, verifyPassword, needsRehash, passwordProblems, resolvePolicy,
   type PasswordPolicy,
@@ -12,6 +16,7 @@ import { ulid } from '../lib/ids';
 import { checkRateLimit, pruneRateLimits } from '../lib/rate-limit';
 import {
   createSession, createUser, emailExists, findSessionUser, findUserByEmail, findUserById,
+  findOAuthIdentity, linkOAuthIdentity, markEmailVerified,
   registerFailedLogin, resetFailedLogin, revokeOtherSessions, revokeSession, touchSession,
   revokeExcessSessions, pruneExpiredSessions, updatePasswordHash, writeAudit,
   SESSION_IDLE_DAYS,
@@ -370,6 +375,185 @@ export async function changePassword(req: Request, env: Env, requestId: string, 
     targetId: row.id, requestId, result: 'success',
   });
   return json({ ok: true }, {}, requestId);
+}
+
+/* ============================================================================
+   Google OAuth — الدخول عبر حساب Google (قرار مالك 2026-10-28، خيار «ج»)
+   ----------------------------------------------------------------------------
+   التدفق: start (كوكيز state + PKCE + nonce قصيرة العمر) ←→ Google، ثم
+   callback: تبادل الكود والتحقق من ID token على الخادم، ثم بناء جلسة المنصة
+   المعتادة (نفس الكوكي، نفس حدود الجلسات، نفس التدقيق).
+   كل فشل ينتهي بإعادة توجيه إلى /login?oauth=<رمز عام> — بلا تفاصيل مزوّد،
+   وبلا كشف وجود الحساب أو حالته. الدخول بكلمة المرور يبقى كما هو للحسابات
+   القائمة؛ التسجيل العام بكلمة مرور يبقى مغلقًا.
+   ========================================================================== */
+
+const OAUTH_STATE_COOKIE = 'oauth_state';
+const OAUTH_VERIFIER_COOKIE = 'oauth_verifier';
+const OAUTH_NONCE_COOKIE = 'oauth_nonce';
+/** 10 دقائق: تكفي إتمام تدفق المزوّد، ولا يبقى أثر بعده. */
+const OAUTH_COOKIE_MAX_AGE = 600;
+
+function oauthCookie(name: string, value: string, req: Request, maxAge: number): string {
+  const parts = [`${name}=${value}`, 'Path=/api/auth/oauth', 'HttpOnly', 'SameSite=Lax', `Max-Age=${maxAge}`];
+  if (requestIsSecure(req)) parts.push('Secure');
+  return parts.join('; ');
+}
+
+function clearOAuthCookies(req: Request): string[] {
+  return [OAUTH_STATE_COOKIE, OAUTH_VERIFIER_COOKIE, OAUTH_NONCE_COOKIE].map(n => oauthCookie(n, '', req, 0));
+}
+
+function oauthRedirect(location: string, req: Request, extraCookies: string[] = []): Response {
+  const res = new Response(null, { status: 302, headers: { Location: location, 'Cache-Control': 'no-store' } });
+  for (const c of extraCookies) res.headers.append('Set-Cookie', c);
+  return res;
+}
+
+function sanitizeOAuthDisplayName(name: string | null): string | null {
+  if (!name) return null;
+  const clean = name.trim();
+  if (!clean || clean.length > 80 || clean.includes('<')) return null;
+  return clean;
+}
+
+export async function oauthGoogleStart(req: Request, env: Env, _requestId: string): Promise<Response> {
+  const clientId = env.GOOGLE_CLIENT_ID?.trim();
+  if (!clientId) return oauthRedirect('/login?oauth=unavailable', req);
+  let redirectUri: string;
+  try {
+    redirectUri = resolveRedirectUri(req, env);
+  } catch {
+    return oauthRedirect('/login?oauth=unavailable', req);
+  }
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  try {
+    await rateLimitOrThrow(env, `oauth-start:ip:${ipHash}`, 20, 600);
+  } catch (e) {
+    if (e instanceof HttpError) return oauthRedirect('/login?oauth=failed', req);
+    throw e;
+  }
+  const state = randomToken(32);
+  const nonce = randomToken(32);
+  const { verifier, challenge } = await pkcePair();
+  const url = buildAuthorizationUrl({ clientId, redirectUri, state, nonce, challenge });
+  return oauthRedirect(url, req, [
+    oauthCookie(OAUTH_STATE_COOKIE, state, req, OAUTH_COOKIE_MAX_AGE),
+    oauthCookie(OAUTH_VERIFIER_COOKIE, verifier, req, OAUTH_COOKIE_MAX_AGE),
+    oauthCookie(OAUTH_NONCE_COOKIE, nonce, req, OAUTH_COOKIE_MAX_AGE),
+  ]);
+}
+
+export async function oauthGoogleCallback(req: Request, env: Env, requestId: string): Promise<Response> {
+  const fail = (code: string): Response => oauthRedirect(`/login?oauth=${code}`, req, clearOAuthCookies(req));
+  const params = new URL(req.url).searchParams;
+  // رفض المستخدم عند المزوّد: رمز عام فقط، بلا تفاصيل.
+  if (params.get('error')) return fail('denied');
+
+  const clientId = env.GOOGLE_CLIENT_ID?.trim();
+  const clientSecret = env.GOOGLE_CLIENT_SECRET?.trim();
+  if (!clientId || !clientSecret) return fail('unavailable');
+
+  const code = params.get('code') ?? '';
+  const stateParam = params.get('state') ?? '';
+  const stateCookie = readCookie(req, OAUTH_STATE_COOKIE);
+  const verifier = readCookie(req, OAUTH_VERIFIER_COOKIE);
+  const nonce = readCookie(req, OAUTH_NONCE_COOKIE);
+  if (!code || !stateParam || !stateCookie || !verifier || !nonce) return fail('invalid');
+  const enc = new TextEncoder();
+  if (!timingSafeEqual(enc.encode(stateParam), enc.encode(stateCookie))) return fail('invalid');
+
+  let redirectUri: string;
+  try {
+    redirectUri = resolveRedirectUri(req, env);
+  } catch {
+    return fail('unavailable');
+  }
+
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  try {
+    await rateLimitOrThrow(env, `oauth-callback:ip:${ipHash}`, 10, 60);
+  } catch (e) {
+    if (e instanceof HttpError) return fail('failed');
+    throw e;
+  }
+
+  let identity: GoogleIdentity;
+  try {
+    const { idToken } = await exchangeCode({ code, verifier, redirectUri, clientId, clientSecret, fetchFn: fetch });
+    const jwks = await fetchJwks(fetch);
+    identity = await verifyIdToken(idToken, { jwks, clientId, nonce, nowMs: Date.now() });
+  } catch (e) {
+    if (e instanceof OAuthError) return fail('failed');
+    throw e;
+  }
+
+  const email = normalizeEmail(identity.email);
+  if (!EMAIL_RE.test(email) || email.length > 254) return fail('failed');
+
+  let userId: string | null = (await findOAuthIdentity(env.DB, 'google', identity.sub))?.user_id ?? null;
+  if (userId) {
+    const row = await findUserById(env.DB, userId);
+    // الحساب غير النشط: نفس الرد العام — لا كشف للحالة.
+    if (!row || row.status !== 'active') return fail('failed');
+  } else {
+    const byEmail = await findUserByEmail(env.DB, email);
+    if (byEmail) {
+      if (byEmail.status !== 'active') return fail('failed');
+      userId = byEmail.id;
+    } else {
+      // إنشاء حساب جديد عبر OAuth يخضع لحد التسجيل نفسه (شبكات CGNAT في الاعتبار).
+      try {
+        await rateLimitOrThrow(env, `signup:ip:${ipHash}`, signupRateLimit(env), 3600);
+      } catch (e) {
+        if (e instanceof HttpError) return fail('failed');
+        throw e;
+      }
+      let policy: PasswordPolicy;
+      try {
+        policy = policyFor(env);
+      } catch (e) {
+        if (e instanceof HttpError) return fail('failed');
+        throw e;
+      }
+      // كلمة مرور عشوائية غير قابلة للاستخدام: تُجزَّأ وتُرمى فورًا، فلا دخول
+      // بكلمة مرور لهذا الحساب أبدًا، ويبقى عمود password_hash NOT NULL بلا استثناء.
+      const unusableHash = await hashPassword(randomToken(32), policy);
+      userId = ulid();
+      try {
+        await createUser(env.DB, {
+          id: userId,
+          emailNormalized: email,
+          emailDisplay: identity.email.trim(),
+          passwordHash: unusableHash,
+          displayName: sanitizeOAuthDisplayName(identity.name),
+        });
+      } catch (err) {
+        if (String(err).includes('UNIQUE')) return fail('failed');
+        throw err;
+      }
+    }
+  }
+
+  await linkOAuthIdentity(env.DB, {
+    id: ulid(), userId, provider: 'google', providerSubject: identity.sub, emailAtLink: identity.email,
+  });
+  await markEmailVerified(env.DB, userId, new Date().toISOString());
+  // إثبات هوية جديد من المزوّد ⇒ يُصفَّر عدّاد الفشل، ولا يُطبَّق قفل التخمين هنا.
+  await resetFailedLogin(env.DB, userId);
+
+  const ttl = sessionTtlDays(env);
+  const token = randomToken(32);
+  await createSession(env.DB, userId, token, ttl, ipHash, req.headers.get('User-Agent'));
+  await revokeExcessSessions(env.DB, userId);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: userId, action: 'auth.oauth.login', targetType: 'user',
+    targetId: userId, requestId, ipHash, result: 'success',
+  });
+
+  const res = oauthRedirect('/learn', req, clearOAuthCookies(req));
+  res.headers.append('Set-Cookie', serializeSessionCookie(env, token, ttl, req));
+  return res;
 }
 
 export { apiError, normalizeEmail as _normalizeEmail };

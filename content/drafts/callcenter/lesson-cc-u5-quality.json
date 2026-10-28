@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u5-quality",
+    "titleAr": "الفحص الذاتي للجودة: مكالمة جيدة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u5-closing-quality",
+    "objectiveAr": "أن يقيّم المتعلم مكالمته ذاتيًا وفق معايير الجودة، ويحدد نقطة تحسين واحدة للمكالمة التالية.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "calidad",
+      "supervisión",
+      "criterio"
+    ],
+    "reviewVocabulary": [
+      "valoración",
+      "error",
+      "mejorar"
+    ],
+    "targetStructures": [
+      "Mi llamada ha tenido…",
+      "El criterio es…",
+      "La próxima vez voy a…"
+    ],
+    "grammarTopics": [
+      "autoevaluacion-calidad"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "موظف يراجع مكالمته بعد انتهائها. أنت الموظف دييغو يتحدث مع مشرفته الوهمية للتدريب. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، مراجعة جودة بعد المكالمة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Mi llamada ha tenido escucha, solución clara y cierre con seguimiento. ¿Cumple el criterio de calidad?",
+            "ar": "مكالمتي تضمنت استماعًا وحلًا واضحًا وإغلاقًا بمتابعة. هل تستوفي معيار الجودة؟",
+            "arEg": "مكالمتي كان فيها استماع وحل واضح وقفل بمتابعة. بتستوفي معيار الجودة؟",
+            "audioKey": "pending/cc-u5-quality-line-1"
+          },
+          {
+            "es": "Casi. Olvidó el resumen antes del cierre; ese es el error que hay que corregir.",
+            "ar": "تقريبًا. نسيت الملخص قبل الإغلاق؛ هذا هو الخطأ الذي يجب تصحيحه.",
+            "arEg": "تقريبًا. نسيت الملخص قبل القفل؛ دي الغلطة اللي لازم تتصلح.",
+            "audioKey": "pending/cc-u5-quality-line-2"
+          },
+          {
+            "es": "Tiene razón. La próxima vez voy a resumir el acuerdo antes de despedirme.",
+            "ar": "معك حق. في المرة القادمة سألخص الاتفاق قبل أن أودّع.",
+            "arEg": "عندك حق. المرة الجاية هلخّص الاتفاق قبل ما أودّع.",
+            "audioKey": "pending/cc-u5-quality-line-3"
+          },
+          {
+            "es": "Perfecto. Una mejora por llamada: así sube la valoración.",
+            "ar": "ممتاز. تحسين واحد في كل مكالمة: هكذا يرتفع التقييم.",
+            "arEg": "ممتاز. تحسين واحد في كل مكالمة: كده التقييم بيعلى.",
+            "audioKey": "pending/cc-u5-quality-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "معايير الجودة في مراكز الاتصال تُقاس من التسجيلات لا من انطباع الموظف؛ والفحص الذاتي الصادق يسبق مراجعة المشرف ولا يغني عنها.",
+    "pedagogicalRationaleAr": "التحسين نقطة واحدة: من يحدد عشر نقاط لا يطبق أيًا منها؛ ومن يحدد نقطة واحدة يطبقها في المكالمة التالية.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u5_quality_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u5_quality_1_listen_a",
+            "text": "Una buena llamada tiene escucha, solución clara y cierre con seguimiento.",
+            "isCorrect": true,
+            "textAr": "المكالمة الجيدة تتضمن استماعًا وحلًا واضحًا وإغلاقًا بمتابعة."
+          },
+          {
+            "id": "cc_u5_quality_1_listen_b",
+            "text": "Una buena llamada tiene prisa, solución clara y cierre rápido.",
+            "isCorrect": false,
+            "textAr": "المكالمة الجيدة تتضمن استعجالًا وحلًا واضحًا وإغلاقًا سريعًا.",
+            "distractorRationaleAr": "الصوت قال «escucha» لا «prisa»."
+          },
+          {
+            "id": "cc_u5_quality_1_listen_c",
+            "text": "Una buena llamada tiene escucha, solución confusa y cierre con seguimiento.",
+            "isCorrect": false,
+            "textAr": "المكالمة الجيدة تتضمن استماعًا وحلًا مرتبكًا وإغلاقًا بمتابعة.",
+            "distractorRationaleAr": "الصوت قال «clara» لا «confusa»."
+          }
+        ],
+        "targetVocab": [
+          "calidad",
+          "criterio"
+        ],
+        "explanationAr": "معايير المكالمة الجيدة الثلاثة: استماع وحل واضح وإغلاق بمتابعة.",
+        "errorFeedback": {
+          "cc_u5_quality_1_listen_b": "الصوت قال «escucha» لا «prisa».",
+          "cc_u5_quality_1_listen_c": "الصوت قال «clara» لا «confusa»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u5-quality-listen",
+        "speechEs": "Una buena llamada tiene escucha, solución clara y cierre con seguimiento.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_quality_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_quality_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة فحص ذاتي للجودة؟",
+        "options": [
+          {
+            "id": "cc_u5_quality_2_choice_a",
+            "text": "Mi llamada ha tenido escucha y solución clara, pero olvidé el resumen.",
+            "isCorrect": true,
+            "textAr": "مكالمتي تضمنت استماعًا وحلًا واضحًا، لكنني نسيت الملخص."
+          },
+          {
+            "id": "cc_u5_quality_2_choice_b",
+            "text": "Mi llamada fue perfecta, sin errores.",
+            "isCorrect": false,
+            "textAr": "مكالمتي كانت مثالية، بلا أخطاء.",
+            "distractorRationaleAr": "ادعاء الكمال يلغي الفحص الذاتي."
+          },
+          {
+            "id": "cc_u5_quality_2_choice_c",
+            "text": "La culpa fue del cliente, no mía.",
+            "isCorrect": false,
+            "textAr": "الخطأ خطأ العميل، لا خطئي.",
+            "distractorRationaleAr": "تحميل العميل يلغي التعلم."
+          }
+        ],
+        "targetVocab": [
+          "error",
+          "valoración"
+        ],
+        "explanationAr": "الفحص الصادق يذكر النجاح والنقص معًا.",
+        "errorFeedback": {
+          "cc_u5_quality_2_choice_b": "ادعاء الكمال يلغي الفحص الذاتي.",
+          "cc_u5_quality_2_choice_c": "تحميل العميل يلغي التعلم."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_quality_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_quality_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "المشرفة تسألك عن نقطة التحسين. اختر الرد المهني.",
+        "stemEs": "— ¿Qué va a mejorar en la próxima llamada?",
+        "stemAr": "— ماذا ستحسّن في المكالمة التالية؟",
+        "options": [
+          {
+            "id": "cc_u5_quality_3_reply_a",
+            "text": "Voy a resumir el acuerdo antes de despedirme. Es mi mejora para la próxima vez.",
+            "isCorrect": true,
+            "textAr": "سألخص الاتفاق قبل أن أودّع. هذا تحسيني للمرة القادمة."
+          },
+          {
+            "id": "cc_u5_quality_3_reply_b",
+            "text": "Nada, todo está bien.",
+            "isCorrect": false,
+            "textAr": "لا شيء، كل شيء بخير.",
+            "distractorRationaleAr": "رفض التحسين يوقف التعلم."
+          },
+          {
+            "id": "cc_u5_quality_3_reply_c",
+            "text": "Todo, no sé por dónde empezar.",
+            "isCorrect": false,
+            "textAr": "كل شيء، لا أعرف من أين أبدأ.",
+            "distractorRationaleAr": "تعميم بلا نقطة محددة لا يُطبَّق."
+          }
+        ],
+        "targetVocab": [
+          "mejorar",
+          "supervisión"
+        ],
+        "explanationAr": "نقطة تحسين واحدة محددة قابلة للتطبيق.",
+        "errorFeedback": {
+          "cc_u5_quality_3_reply_b": "رفض التحسين يوقف التعلم.",
+          "cc_u5_quality_3_reply_c": "تعميم بلا نقطة محددة لا يُطبَّق."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_quality_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_quality_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة الفحص الذاتي.",
+        "stemEs": "Una buena llamada empieza con una buena ____.",
+        "stemAr": "المكالمة الجيدة تبدأ باستماع جيد.",
+        "targetVocab": [
+          "atención",
+          "calidad"
+        ],
+        "explanationAr": "«atención» هنا: الانتباه والاستماع الفعّال في بداية المكالمة.",
+        "errorFeedback": {
+          "prisa": "«prisa» عكس ما تتطلبه الجودة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "atención"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u5_quality_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة معايير الجودة.",
+        "items": [
+          {
+            "id": "cc_u5_quality_5_order_t1",
+            "kind": "token",
+            "text": "Una"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t2",
+            "kind": "token",
+            "text": "buena"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t3",
+            "kind": "token",
+            "text": "llamada"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t4",
+            "kind": "token",
+            "text": "tiene"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t5",
+            "kind": "token",
+            "text": "escucha,"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t6",
+            "kind": "token",
+            "text": "solución"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t7",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t8",
+            "kind": "token",
+            "text": "cierre"
+          },
+          {
+            "id": "cc_u5_quality_5_order_t9",
+            "kind": "token",
+            "text": "claro."
+          }
+        ],
+        "targetVocab": [
+          "calidad",
+          "criterio"
+        ],
+        "explanationAr": "ترتيب المعايير: الاستماع ثم الحل ثم الإغلاق.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Una buena llamada tiene escucha, solución y cierre claro."
+          ],
+          "tokenOrder": [
+            "cc_u5_quality_5_order_t1",
+            "cc_u5_quality_5_order_t2",
+            "cc_u5_quality_5_order_t3",
+            "cc_u5_quality_5_order_t4",
+            "cc_u5_quality_5_order_t5",
+            "cc_u5_quality_5_order_t6",
+            "cc_u5_quality_5_order_t7",
+            "cc_u5_quality_5_order_t8",
+            "cc_u5_quality_5_order_t9"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_quality_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل فحصًا ذاتيًا قصيرًا لمكالمة وهمية مع نقطة تحسين واحدة.",
+        "stemEs": "Mi llamada ha tenido escucha, solución clara y cierre con seguimiento.",
+        "stemAr": "مكالمتي تضمنت استماعًا وحلًا واضحًا وإغلاقًا بمتابعة.",
+        "targetVocab": [
+          "calidad",
+          "valoración"
+        ],
+        "explanationAr": "قُلها بصدق لا بتباهٍ؛ والفحص الذاتي يبدأ بالاعتراف.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u5-quality-speak",
+          "modelAnswer": "Mi llamada ha tenido escucha, solución clara y cierre con seguimiento."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «الفحص الذاتي للجودة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

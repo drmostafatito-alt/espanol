@@ -39,7 +39,10 @@ function record(name, ok, detail = '') {
 }
 
 async function call(path, init = {}) {
-  const headers = { 'Content-Type': 'application/json', ...(init.headers || {}) };
+  // workerd يغلق اتصالات keep-alive الخاملة بسرعة؛ وبناء خطة المحتوى بين
+  // المرحلتين يترك الاتصال خاملًا ثواني، فيموت أول طلب بعده بـUND_ERR_SOCKET.
+  // Connection: close يمنع إعادة استخدام اتصال ميت — تغيير في عميل الاختبار فقط.
+  const headers = { 'Content-Type': 'application/json', 'Connection': 'close', ...(init.headers || {}) };
   if (cookies) headers.Cookie = cookies;
   const res = await fetch(BASE + path, { ...init, headers });
   const setCookie = res.headers.get('set-cookie');
@@ -149,7 +152,7 @@ if (assetPath) {
 // ============================================================================
 const { buildContentPlan } = await import('./lib/content-plan.mjs');
 const { resolve } = await import('node:path');
-const plan = buildContentPlan(resolve(process.cwd(), 'content/exemplars'), { existingVersions: {} });
+const plan = buildContentPlan(resolve(process.cwd(), 'content/drafts'), { existingVersions: {} });
 const ANSWERS = plan.answers;
 
 // الاختبارات السابقة سجّلت الخروج وأبطلت الجلسة — نعيد الدخول بنفس الحساب

@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-vocales",
+    "titleAr": "الحروف المتحركة الخمسة",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u1-sounds",
+    "objectiveAr": "أن ينطق المتعلم الحروف الخمسة a e i o u بصوت قصير ثابت ويميّزها داخل كلمة.",
+    "estimatedMinutes": 7,
+    "skills": [
+      "listening",
+      "reading",
+      "pronunciation",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "mamá",
+      "papá",
+      "casa",
+      "mesa",
+      "libro",
+      "luna"
+    ],
+    "reviewVocabulary": [
+      "gato",
+      "hola"
+    ],
+    "targetStructures": [
+      "الحروف المتحركة الخمسة: a, e, i, o, u",
+      "صوت متحرك واحد ثابت لكل حرف"
+    ],
+    "grammarTopics": [
+      "vocales-cinco"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "أم تعلّم ابنها الحروف المتحركة ببطاقات عليها صور بيت وطاولة وقمر.",
+        "settingAr": "البيت، مساءً",
+        "lines": [
+          {
+            "es": "Mamá, mira: casa, mesa, luna.",
+            "ar": "ماما، انظري: بيت، طاولة، قمر.",
+            "arEg": "يا ماما بصي: بيت، ترابيزة، قمر.",
+            "audioKey": "pending/prea1-vocales-mama"
+          },
+          {
+            "es": "Muy bien. A, e, i, o, u.",
+            "ar": "أحسنت. هذه هي الحروف المتحركة الخمسة.",
+            "arEg": "برافو. دي الحروف المتحركة الخمسة.",
+            "audioKey": "pending/prea1-vocales-cinco"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "نطق الحروف المتحركة الإسبانية ثابت وقصير، ولا يتغير مثل الإنجليزية؛ لذلك يتعلم العرب قراءة الإسبانية بسرعة نسبيًا.",
+    "pedagogicalRationaleAr": "تُبنى القراءة كلها على خمسة أصوات متحركة ثابتة؛ يتدرب المتعلم على سماعها وتمييزها داخل كلمات قصيرة مألوفة قبل أي كلمة جديدة.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "voc_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الكلمة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "voc_1_listen_a"
+          ]
+        },
+        "explanationAr": "الكلمة المسموعة هي casa، وتبدأ بالمقطع ca وفيها حرفا a.",
+        "errorFeedback": {
+          "voc_1_listen_b": "كلمة مختلفة؛ انتبه إلى المقطع الأول ca.",
+          "voc_1_listen_c": "كلمة مختلفة؛ انتبه إلى المقطع الأول lu."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-vocales-ex1",
+        "speechEs": "Casa.",
+        "options": [
+          {
+            "id": "voc_1_listen_a",
+            "text": "Casa.",
+            "isCorrect": true
+          },
+          {
+            "id": "voc_1_listen_b",
+            "text": "Mesa.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ انتبه إلى المقطع الأول ca."
+          },
+          {
+            "id": "voc_1_listen_c",
+            "text": "Luna.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ انتبه إلى المقطع الأول lu."
+          }
+        ],
+        "targetVocab": [
+          "casa"
+        ]
+      },
+      {
+        "id": "voc_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي كلمة فيها حرف u؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "voc_2_word_a"
+          ]
+        },
+        "explanationAr": "كلمة luna فيها حرف u في المقطع الأول، ويُنطق «أو» قصيرة ثابتة. وبقية الكلمات فيها a وe وo فقط.",
+        "errorFeedback": {
+          "voc_2_word_b": "فيها e لا u.",
+          "voc_2_word_c": "فيها a وo لا u."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "voc_2_word_a",
+            "text": "Luna",
+            "textAr": "قمر",
+            "isCorrect": true
+          },
+          {
+            "id": "voc_2_word_b",
+            "text": "Mesa",
+            "isCorrect": false,
+            "textAr": "طاولة",
+            "distractorRationaleAr": "فيها e لا u."
+          },
+          {
+            "id": "voc_2_word_c",
+            "text": "Gato",
+            "isCorrect": false,
+            "textAr": "قط",
+            "distractorRationaleAr": "فيها a وo لا u."
+          }
+        ],
+        "targetVocab": [
+          "luna"
+        ]
+      },
+      {
+        "id": "voc_3_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالحرف الناقص.",
+        "stemEs": "M____sa.",
+        "stemAr": "طاولة.",
+        "answerKey": {
+          "accepted": [
+            "e"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة mesa فيها حرف e في المقطع الأول، ويُنطق «إ» قصيرة ثابتة لا تتغير.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "mesa"
+        ]
+      },
+      {
+        "id": "voc_4_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة قصيرة.",
+        "items": [
+          {
+            "id": "voc_4_order_t1",
+            "kind": "token",
+            "text": "papá"
+          },
+          {
+            "id": "voc_4_order_t2",
+            "kind": "token",
+            "text": "Mamá"
+          },
+          {
+            "id": "voc_4_order_t3",
+            "kind": "token",
+            "text": "y"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Mamá y papá"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب: الاسم الأول، ثم حرف العطف y، ثم الاسم الثاني. ولاحظ علامة النبر على mamá وpapá لأن النبر على المقطع الأخير.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "mamá",
+          "papá"
+        ]
+      },
+      {
+        "id": "voc_5_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "El ____ es rojo.",
+        "stemAr": "الكتاب أحمر.",
+        "answerKey": {
+          "accepted": [
+            "libro"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة libro فيها حرف i، ويُنطق «إي» قصيرة. والكلمة مذكرة لذلك نقول el libro.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "libro"
+        ]
+      },
+      {
+        "id": "voc_6_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الكلمة التي نطقها المعلم في المراجعة.",
+        "contextAr": "في مراجعة الحروف المتحركة، ينطق المعلم كلمة فيها نبر مكتوب.",
+        "answerKey": {
+          "correctOptionIds": [
+            "voc_6_listen_b"
+          ]
+        },
+        "explanationAr": "الكلمة المسموعة هي mamá، وتبدأ بالمقطع ma وتنتهي بعلامة نبر على a الأخيرة.",
+        "errorFeedback": {
+          "voc_6_listen_a": "كلمة مختلفة؛ اسمع المقطع الأول: pa لا ma.",
+          "voc_6_listen_c": "كلمة مختلفة تمامًا."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-vocales-ex6",
+        "speechEs": "Mamá.",
+        "options": [
+          {
+            "id": "voc_6_listen_a",
+            "text": "Papá.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ اسمع المقطع الأول: pa لا ma."
+          },
+          {
+            "id": "voc_6_listen_b",
+            "text": "Mamá.",
+            "isCorrect": true
+          },
+          {
+            "id": "voc_6_listen_c",
+            "text": "Luna.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة تمامًا."
+          }
+        ],
+        "targetVocab": [
+          "mamá"
+        ]
+      },
+      {
+        "id": "voc_7_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "انطق الحروف الخمسة بصوت واضح. يمكنك التخطي دون أن يتأثر تقدمك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 2,
+        "promptAr": "اقرأ الحروف الخمسة بصوت واضح ومسموع:",
+        "stemEs": "A, e, i, o, u.",
+        "stemAr": "الحروف المتحركة الخمسة.",
+        "audioKey": "pending/prea1-vocales-ex7",
+        "explanationAr": "انطق كل حرف قصيرًا وثابتًا: a مثل «أ»، وe مثل «إ»، وi مثل «إي»، وo مثل «أو»، وu مثل «أو» عميقة قصيرة. لا تمد الصوت كما في الإنجليزية.",
+        "answerKey": {
+          "referenceAudioKey": "pending/prea1-vocales-ex7",
+          "modelAnswer": "A, e, i, o, u."
+        },
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "pronunciation",
+              "labelAr": "النطق السليم والواضح",
+              "weight": 50
+            },
+            {
+              "code": "fluency",
+              "labelAr": "الطلاقة وإتمام الجملة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

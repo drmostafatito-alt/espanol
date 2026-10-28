@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u3-acceptance",
+    "titleAr": "تأكيد قبول العميل للحل",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u3-solutions",
+    "objectiveAr": "أن يتأكد المتعلم من قبول العميل للحل المقترح، ويوثّق الاتفاق قبل إنهاء المكالمة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "acuerdo",
+      "siguiente"
+    ],
+    "reviewVocabulary": [
+      "aceptar",
+      "solución",
+      "paso"
+    ],
+    "targetStructures": [
+      "¿Está de acuerdo con…?",
+      "Si me lo confirma, lo tramito.",
+      "Queda acordado: …"
+    ],
+    "grammarTopics": [
+      "confirmacion-acuerdo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حل مقترح يحتاج موافقة صريحة. أنت الموظف راؤول. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تأكيد اتفاق (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Le propongo: nuevo envío el viernes, sin coste. ¿Está de acuerdo con esta solución?",
+            "ar": "أقترح عليك: شحنة جديدة يوم الجمعة، دون تكلفة. هل توافق على هذا الحل؟",
+            "arEg": "بقترح عليك: شحنة جديدة يوم الجمعة، من غير تكلفة. موافق على الحل ده؟",
+            "audioKey": "pending/cc-u3-acceptance-line-1"
+          },
+          {
+            "es": "Sí, de acuerdo. ¿Cuál es el siguiente paso?",
+            "ar": "نعم، موافق. ما الخطوة التالية؟",
+            "arEg": "أيوه، موافق. الخطوة اللي بعدها إيه؟",
+            "audioKey": "pending/cc-u3-acceptance-line-2"
+          },
+          {
+            "es": "El siguiente paso es confirmar la dirección. Si me lo confirma, lo tramito ahora mismo.",
+            "ar": "الخطوة التالية هي تأكيد العنوان. إذا أكدته لي، أتولّى الإجراء الآن.",
+            "arEg": "الخطوة اللي بعدها هي تأكيد العنوان. لو أكدته لي، هخلّص الإجراء دلوقتي.",
+            "audioKey": "pending/cc-u3-acceptance-line-3"
+          },
+          {
+            "es": "Confirmo la dirección. Queda acordado, gracias.",
+            "ar": "أؤكد العنوان. تم الاتفاق، شكرًا.",
+            "arEg": "بأكد العنوان. تم الاتفاق، شكرًا.",
+            "audioKey": "pending/cc-u3-acceptance-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الموافقة الصريحة («sí, de acuerdo») تحمي الموظف والعميل معًا؛ والصمت أو «vale» المتردد لا يُعدّ اتفاقًا موثقًا.",
+    "pedagogicalRationaleAr": "لا يُنفَّذ حل قبل قبوله: التأكيد الصريح يحول الاقتراح إلى اتفاق، والاتفاق إلى إجراء موثق.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u3_acceptance_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u3_acceptance_1_listen_a",
+            "text": "¿Está de acuerdo con esta solución? Si es así, lo tramito ahora mismo.",
+            "isCorrect": true,
+            "textAr": "هل توافق على هذا الحل؟ إذا كان كذلك، أتولّى الإجراء الآن."
+          },
+          {
+            "id": "cc_u3_acceptance_1_listen_b",
+            "text": "¿Está de acuerdo con esta solución? Si es así, lo tramito mañana.",
+            "isCorrect": false,
+            "textAr": "هل توافق على هذا الحل؟ إذا كان كذلك، أتولّى الإجراء غدًا.",
+            "distractorRationaleAr": "الصوت قال «ahora mismo» لا «mañana»."
+          },
+          {
+            "id": "cc_u3_acceptance_1_listen_c",
+            "text": "¿Está en contra de esta solución? Si es así, lo tramito ahora mismo.",
+            "isCorrect": false,
+            "textAr": "هل تعارض هذا الحل؟ إذا كان كذلك، أتولّى الإجراء الآن.",
+            "distractorRationaleAr": "الصوت سأل عن الموافقة «de acuerdo» لا عن المعارضة."
+          }
+        ],
+        "targetVocab": [
+          "acuerdo",
+          "aceptar"
+        ],
+        "explanationAr": "سؤال القبول + شرط التنفيذ الفوري = تأكيد مهني.",
+        "errorFeedback": {
+          "cc_u3_acceptance_1_listen_b": "الصوت قال «ahora mismo» لا «mañana».",
+          "cc_u3_acceptance_1_listen_c": "الصوت سأل عن الموافقة «de acuerdo» لا عن المعارضة."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u3-acceptance-listen",
+        "speechEs": "¿Está de acuerdo con esta solución? Si es así, lo tramito ahora mismo.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_acceptance_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_acceptance_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تتأكد من قبول العميل للحل؟",
+        "options": [
+          {
+            "id": "cc_u3_acceptance_2_choice_a",
+            "text": "¿Está de acuerdo con esta solución?",
+            "isCorrect": true,
+            "textAr": "هل توافق على هذا الحل؟"
+          },
+          {
+            "id": "cc_u3_acceptance_2_choice_b",
+            "text": "La solución está decidida, adiós.",
+            "isCorrect": false,
+            "textAr": "الحل محسوم، وداعًا.",
+            "distractorRationaleAr": "فرض الحل بلا قبول يخالف المهنية."
+          },
+          {
+            "id": "cc_u3_acceptance_2_choice_c",
+            "text": "¿Le gusta o no? Da igual.",
+            "isCorrect": false,
+            "textAr": "هل يعجبك أم لا؟ لا يهم.",
+            "distractorRationaleAr": "لامبالاة تلغي معنى السؤال."
+          }
+        ],
+        "targetVocab": [
+          "acuerdo",
+          "solución"
+        ],
+        "explanationAr": "سؤال مباشر عن القبول يمنح العميل القرار قبل التنفيذ.",
+        "errorFeedback": {
+          "cc_u3_acceptance_2_choice_b": "فرض الحل بلا قبول يخالف المهنية.",
+          "cc_u3_acceptance_2_choice_c": "لامبالاة تلغي معنى السؤال."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_acceptance_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_acceptance_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل متردد. اختر الرد المهني.",
+        "stemEs": "— No sé… ¿seguro que llega el viernes?",
+        "stemAr": "— لا أعرف… هل أنت متأكد أنه يصل يوم الجمعة؟",
+        "options": [
+          {
+            "id": "cc_u3_acceptance_3_reply_a",
+            "text": "Le confirmo: llega el viernes. Si prefiere, lo tramito y le envío la confirmación hoy.",
+            "isCorrect": true,
+            "textAr": "أؤكد لك: يصل يوم الجمعة. وإذا تفضل، أتولّى الإجراء وأرسل لك التأكيد اليوم."
+          },
+          {
+            "id": "cc_u3_acceptance_3_reply_b",
+            "text": "Seguro, seguro, no dude.",
+            "isCorrect": false,
+            "textAr": "متأكد، متأكد، لا تتردد.",
+            "distractorRationaleAr": "تكرار بلا دليل لا يبدد التردد."
+          },
+          {
+            "id": "cc_u3_acceptance_3_reply_c",
+            "text": "Si duda, no hay solución.",
+            "isCorrect": false,
+            "textAr": "إذا كنت مترددًا، فلا حل.",
+            "distractorRationaleAr": "معاقبة التردد بدل معالجته."
+          }
+        ],
+        "targetVocab": [
+          "confirmación",
+          "siguiente"
+        ],
+        "explanationAr": "تأكيد الواقعة + عرض خطوة فورية يبدد التردد بلا ضغط.",
+        "errorFeedback": {
+          "cc_u3_acceptance_3_reply_b": "تكرار بلا دليل لا يبدد التردد.",
+          "cc_u3_acceptance_3_reply_c": "معاقبة التردد بدل معالجته."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_acceptance_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_acceptance_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هل توافق على هذا الحل؟",
+        "targetVocab": [
+          "acuerdo",
+          "aceptar"
+        ],
+        "explanationAr": "«estar de acuerdo» = يوافق؛ و«usted» اختيارية في السؤال الرسمي.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Está de acuerdo con esta solución?",
+            "¿Está usted de acuerdo con esta solución?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u3_acceptance_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال قبول.",
+        "items": [
+          {
+            "id": "cc_u3_acceptance_5_order_t1",
+            "kind": "token",
+            "text": "¿Está"
+          },
+          {
+            "id": "cc_u3_acceptance_5_order_t2",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "cc_u3_acceptance_5_order_t3",
+            "kind": "token",
+            "text": "acuerdo"
+          },
+          {
+            "id": "cc_u3_acceptance_5_order_t4",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "cc_u3_acceptance_5_order_t5",
+            "kind": "token",
+            "text": "esta"
+          },
+          {
+            "id": "cc_u3_acceptance_5_order_t6",
+            "kind": "token",
+            "text": "solución?"
+          }
+        ],
+        "targetVocab": [
+          "acuerdo",
+          "solución"
+        ],
+        "explanationAr": "ترتيب السؤال: الفعل ثم «de acuerdo» ثم المفعول.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Está de acuerdo con esta solución?"
+          ],
+          "tokenOrder": [
+            "cc_u3_acceptance_5_order_t1",
+            "cc_u3_acceptance_5_order_t2",
+            "cc_u3_acceptance_5_order_t3",
+            "cc_u3_acceptance_5_order_t4",
+            "cc_u3_acceptance_5_order_t5",
+            "cc_u3_acceptance_5_order_t6"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_acceptance_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل سؤال قبول حل مع عرض التنفيذ الفوري عند الموافقة.",
+        "stemEs": "¿Está de acuerdo con esta solución? Si me lo confirma, lo tramito ahora.",
+        "stemAr": "هل توافق على هذا الحل؟ إذا أكدته لي، أتولّى الإجراء الآن.",
+        "targetVocab": [
+          "acuerdo",
+          "siguiente"
+        ],
+        "explanationAr": "توقف بعد السؤال؛ فالقبول يحتاج صمتًا يسمح للعميل بالرد.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u3-acceptance-speak",
+          "modelAnswer": "¿Está de acuerdo con esta solución? Si me lo confirma, lo tramito ahora."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «تأكيد القبول». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

@@ -74,6 +74,40 @@
             "tr-shared",
             "tr-u4-directions"
           ]
+        },
+        {
+          "slug": "tr-u5-shopping-travel",
+          "levelCode": "A2",
+          "titleAr": "التسوق والأسعار",
+          "sortOrder": 5,
+          "status": "draft",
+          "lessons": [
+            "tr-u5-precios",
+            "tr-u5-tallas",
+            "tr-u5-pagar-devolver",
+            "tr-u5-mercado"
+          ],
+          "vocabularyBundles": [
+            "tr-shared",
+            "tr-u5-u6"
+          ]
+        },
+        {
+          "slug": "tr-u6-emergencies",
+          "levelCode": "A2",
+          "titleAr": "الطوارئ والمساعدة",
+          "sortOrder": 6,
+          "status": "draft",
+          "lessons": [
+            "tr-u6-ayuda",
+            "tr-u6-perdida-robo",
+            "tr-u6-salud",
+            "tr-u6-denuncia"
+          ],
+          "vocabularyBundles": [
+            "tr-shared",
+            "tr-u5-u6"
+          ]
         }
       ]
     }

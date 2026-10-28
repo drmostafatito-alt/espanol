@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "prea1-abecedario",
+    "titleAr": "الأبجدية الإسبانية",
+    "level": "PREA1",
+    "programSlug": "main-track",
+    "unitSlug": "prea1-u1-sounds",
+    "objectiveAr": "أن يتعرّف المتعلم على أسماء الحروف الإسبانية الـ27 ويقرأ كلمة قصيرة حرفًا حرفًا.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "pronunciation",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "hola",
+      "nombre",
+      "mamá",
+      "papá",
+      "gato",
+      "casa"
+    ],
+    "reviewVocabulary": [],
+    "targetStructures": [
+      "أسماء الحروف الإسبانية الـ27",
+      "تهجئة كلمة حرفًا حرفًا: Hola = hache, o, ele, a"
+    ],
+    "grammarTopics": [
+      "alfabeto-27-letras",
+      "nombres-de-las-letras"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "معلمة لغة تتهجى اسم تلميذة جديدة أمام الصف في أول يوم دراسي.",
+        "settingAr": "صف لغة، صباحًا",
+        "lines": [
+          {
+            "es": "Hola. Me llamo Ana.",
+            "ar": "مرحبًا. اسمي آنا.",
+            "arEg": "أهلًا. أنا اسمي آنا.",
+            "audioKey": "pending/prea1-abecedario-ana"
+          },
+          {
+            "es": "Mi nombre es Ana: a, ene, a.",
+            "ar": "اسمي آنا، وأتهجاها: أ، ن، أ.",
+            "arEg": "اسمي آنا، وبتهجاها: أ، ن، أ.",
+            "audioKey": "pending/prea1-abecedario-spelling"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا وأمريكا اللاتينية يتهجى الناس أسماءهم كثيرًا في الهاتف والإدارات، لأن نطق الحروف يختلف عن الإنجليزية؛ وحرف ñ له اسم خاص هو eñe.",
+    "pedagogicalRationaleAr": "يبدأ المتعلم المطلق من الأبجدية قبل أي قاعدة، فيربط اسم كل حرف بشكله وصوته داخل كلمات قصيرة يعرفها، ويتدرب على التهجئة مهارة عملية قبل القراءة.",
+    "status": "draft",
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "مسودة أولية لم تُراجَع بشريًا بعد؛ كل المقاطع الصوتية pending ولم تُنتج. تحتاج مراجعة إسبانية ومراجعة ترجمة قبل أي نشر."
+    },
+    "exercises": [
+      {
+        "id": "abec_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الكلمة التي سمعتها.",
+        "answerKey": {
+          "correctOptionIds": [
+            "abec_1_listen_a"
+          ]
+        },
+        "explanationAr": "الكلمة المسموعة هي hola، وتبدأ بحرف h الصامت فتُقرأ «أولا».",
+        "errorFeedback": {
+          "abec_1_listen_b": "كلمة مختلفة تمامًا؛ انتبه إلى المقطع الأول.",
+          "abec_1_listen_c": "كلمة مختلفة؛ أعد الاستماع وركز على الحرف الأول."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-abecedario-ex1",
+        "speechEs": "Hola.",
+        "options": [
+          {
+            "id": "abec_1_listen_a",
+            "text": "Hola.",
+            "isCorrect": true
+          },
+          {
+            "id": "abec_1_listen_b",
+            "text": "Casa.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة تمامًا؛ انتبه إلى المقطع الأول."
+          },
+          {
+            "id": "abec_1_listen_c",
+            "text": "Gato.",
+            "isCorrect": false,
+            "distractorRationaleAr": "كلمة مختلفة؛ أعد الاستماع وركز على الحرف الأول."
+          }
+        ],
+        "targetVocab": [
+          "hola"
+        ]
+      },
+      {
+        "id": "abec_2_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي حرف اسمه «إينيه» في الإسبانية؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "abec_2_word_b"
+          ]
+        },
+        "explanationAr": "حرف ñ اسمه eñe ويُنطق مثل «ني» تقريبًا، وهو حرف مستقل في الأبجدية الإسبانية ويأتي بعد n.",
+        "errorFeedback": {
+          "abec_2_word_a": "هذا حرف آخر اسمه إل، لا إينيه.",
+          "abec_2_word_c": "هذا حرف eme، وهو m لا ñ."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "abec_2_word_a",
+            "text": "l",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا حرف آخر اسمه إل، لا إينيه."
+          },
+          {
+            "id": "abec_2_word_b",
+            "text": "ñ",
+            "isCorrect": true
+          },
+          {
+            "id": "abec_2_word_c",
+            "text": "m",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا حرف eme، وهو m لا ñ."
+          }
+        ]
+      },
+      {
+        "id": "abec_3_word",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي كلمة تبدأ بحرف c؟",
+        "answerKey": {
+          "correctOptionIds": [
+            "abec_3_word_a"
+          ]
+        },
+        "explanationAr": "كلمة casa تبدأ بحرف c الذي يُنطق «ك» قبل a وo وu. وCasa تُكتب بحرف كبير لأنها في بداية الجملة فقط.",
+        "errorFeedback": {
+          "abec_3_word_b": "تبدأ بحرف m لا c.",
+          "abec_3_word_c": "تبدأ بحرف g لا c."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "options": [
+          {
+            "id": "abec_3_word_a",
+            "text": "Casa",
+            "textAr": "بيت",
+            "isCorrect": true
+          },
+          {
+            "id": "abec_3_word_b",
+            "text": "Mamá",
+            "isCorrect": false,
+            "textAr": "ماما",
+            "distractorRationaleAr": "تبدأ بحرف m لا c."
+          },
+          {
+            "id": "abec_3_word_c",
+            "text": "Gato",
+            "isCorrect": false,
+            "textAr": "قط",
+            "distractorRationaleAr": "تبدأ بحرف g لا c."
+          }
+        ],
+        "targetVocab": [
+          "casa"
+        ]
+      },
+      {
+        "id": "abec_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل الفراغ بالحرف الناقص.",
+        "stemEs": "____asa.",
+        "stemAr": "بيت.",
+        "answerKey": {
+          "accepted": [
+            "C",
+            "c"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "الكلمة casa تبدأ بحرف c. في بداية الجملة يُكتب الحرف كبيرًا، وداخل الجملة يُكتب صغيرًا، والصوت واحد.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "casa"
+        ]
+      },
+      {
+        "id": "abec_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين تحية وتعريفًا قصيرًا.",
+        "items": [
+          {
+            "id": "abec_5_order_t1",
+            "kind": "token",
+            "text": "soy"
+          },
+          {
+            "id": "abec_5_order_t2",
+            "kind": "token",
+            "text": "Hola"
+          },
+          {
+            "id": "abec_5_order_t3",
+            "kind": "token",
+            "text": "Ana"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Hola soy Ana"
+          ],
+          "caseSensitive": false,
+          "strictWordMatch": true
+        },
+        "explanationAr": "الترتيب الطبيعي: التحية أولًا، ثم الفعل soy، ثم الاسم. وhola تُكتب بحرف h صامت لا يُنطق.",
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "hola"
+        ]
+      },
+      {
+        "id": "abec_6_missing",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الحرف الناقص دون اختيارات.",
+        "stemEs": "____ato.",
+        "stemAr": "قط.",
+        "answerKey": {
+          "accepted": [
+            "G",
+            "g"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "كلمة gato تبدأ بحرف g، واسمه ge. وقبل a وo وu يُنطق g مثل «غ» خفيفة في إسبانيا.",
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "targetVocab": [
+          "gato"
+        ]
+      },
+      {
+        "id": "abec_7_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الاسم الذي سمعته.",
+        "contextAr": "في نهاية الدرس، يراجع المعلم التحية والتعريف بالاسم.",
+        "answerKey": {
+          "correctOptionIds": [
+            "abec_7_listen_a"
+          ]
+        },
+        "explanationAr": "الجملة المسموعة تعرّف بالاسم: me llamo Ana. والاسم هو الكلمة الأخيرة في الجملة.",
+        "errorFeedback": {
+          "abec_7_listen_b": "اسم مختلف في الكلمة الأخيرة؛ أعد الاستماع.",
+          "abec_7_listen_c": "اسم مختلف؛ ركز على الاسم بعد me llamo."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 1,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/prea1-abecedario-ex7",
+        "speechEs": "Me llamo Ana.",
+        "options": [
+          {
+            "id": "abec_7_listen_a",
+            "text": "Me llamo Ana.",
+            "isCorrect": true
+          },
+          {
+            "id": "abec_7_listen_b",
+            "text": "Me llamo Sara.",
+            "isCorrect": false,
+            "distractorRationaleAr": "اسم مختلف في الكلمة الأخيرة؛ أعد الاستماع."
+          },
+          {
+            "id": "abec_7_listen_c",
+            "text": "Me llamo Omar.",
+            "isCorrect": false,
+            "distractorRationaleAr": "اسم مختلف؛ ركز على الاسم بعد me llamo."
+          }
+        ],
+        "targetVocab": [
+          "me llamo"
+        ]
+      }
+    ],
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_choice",
+        "fill_blank"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2
+  }
+}

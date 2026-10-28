@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u5-recap",
+    "titleAr": "تلخيص الاتفاقات قبل الإغلاق",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u5-closing-quality",
+    "objectiveAr": "أن يلخّص المتعلم الاتفاقات قبل إغلاق المكالمة، ويصحح أي سوء فهم قبل الوداع.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "en resumen",
+      "anterior",
+      "resumen"
+    ],
+    "reviewVocabulary": [
+      "acuerdo",
+      "confirmar",
+      "paso"
+    ],
+    "targetStructures": [
+      "En resumen…",
+      "Queda acordado: …",
+      "¿Hay algo más?"
+    ],
+    "grammarTopics": [
+      "resumen-cierre"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مكالمة تقترب من نهايتها باتفاق واضح. أنت الموظفة لوسيا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تلخيص قبل الإغلاق (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "En resumen, tramitamos el reembolso y le llamamos el lunes. ¿Es correcto?",
+            "ar": "باختصار، نتولّى الاسترداد ونتصل بك يوم الاثنين. هل هذا صحيح؟",
+            "arEg": "باختصار، هنخلّص الاسترداد وهنكلمك يوم الاتنين. كده صح؟",
+            "audioKey": "pending/cc-u5-recap-line-1"
+          },
+          {
+            "es": "Sí, pero antes me dijo que el plazo era el viernes, ¿verdad?",
+            "ar": "نعم، لكنك قلت لي من قبل إن المدة تنتهي يوم الجمعة، صحيح؟",
+            "arEg": "أيوه، بس انتي قلتي لي قبل كده إن المدة بتخلص يوم الجمعة، صح؟",
+            "audioKey": "pending/cc-u5-recap-line-2"
+          },
+          {
+            "es": "Correcto: el plazo termina el viernes, como le dije en la llamada anterior, y la llamada de seguimiento es el lunes.",
+            "ar": "صحيح: تنتهي المدة يوم الجمعة، كما أخبرتك في المكالمة السابقة، ومكالمة المتابعة يوم الاثنين.",
+            "arEg": "صح: المدة بتخلص يوم الجمعة، زي ما قلت لك في المكالمة اللي قبلها، ومكالمة المتابعة يوم الاتنين.",
+            "audioKey": "pending/cc-u5-recap-line-3"
+          },
+          {
+            "es": "Perfecto, queda acordado. Gracias por el resumen.",
+            "ar": "ممتاز، تم الاتفاق. شكرًا على الملخص.",
+            "arEg": "ممتاز، تم الاتفاق. شكرًا على الملخص.",
+            "audioKey": "pending/cc-u5-recap-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "التلخيص قبل الإغلاق ليس تكرارًا: هو آخر فرصة لاكتشاف سوء الفهم وهو ما زال رخيصًا، قبل أن يصبح شكوى جديدة.",
+    "pedagogicalRationaleAr": "الإغلاق الجيد يبدأ بالتلخيص: من يودّع قبل تلخيص الاتفاق يترك العميل يتساءل ماذا اتُّفق عليه فعلًا.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u5_recap_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u5_recap_1_listen_a",
+            "text": "En resumen, tramitamos el reembolso y le llamamos el lunes.",
+            "isCorrect": true,
+            "textAr": "باختصار، نتولّى الاسترداد ونتصل بك يوم الاثنين."
+          },
+          {
+            "id": "cc_u5_recap_1_listen_b",
+            "text": "En resumen, tramitamos el cambio y le llamamos el lunes.",
+            "isCorrect": false,
+            "textAr": "باختصار، نتولّى التبديل ونتصل بك يوم الاثنين.",
+            "distractorRationaleAr": "الصوت قال «reembolso» لا «cambio»."
+          },
+          {
+            "id": "cc_u5_recap_1_listen_c",
+            "text": "En resumen, tramitamos el reembolso y le llamamos el viernes.",
+            "isCorrect": false,
+            "textAr": "باختصار، نتولّى الاسترداد ونتصل بك يوم الجمعة.",
+            "distractorRationaleAr": "يوم الاتصال «lunes» لا «viernes»."
+          }
+        ],
+        "targetVocab": [
+          "resumen",
+          "acuerdo"
+        ],
+        "explanationAr": "التلخيص يذكر الإجراء ويوم المتابعة معًا.",
+        "errorFeedback": {
+          "cc_u5_recap_1_listen_b": "الصوت قال «reembolso» لا «cambio».",
+          "cc_u5_recap_1_listen_c": "يوم الاتصال «lunes» لا «viernes»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u5-recap-listen",
+        "speechEs": "En resumen, tramitamos el reembolso y le llamamos el lunes.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_recap_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_recap_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تلخص الاتفاق قبل الإغلاق؟",
+        "options": [
+          {
+            "id": "cc_u5_recap_2_choice_a",
+            "text": "En resumen: reembolso tramitado y llamada el lunes. ¿Es correcto?",
+            "isCorrect": true,
+            "textAr": "باختصار: الاسترداد تم تولّيه والمكالمة يوم الاثنين. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u5_recap_2_choice_b",
+            "text": "Ya está todo, adiós.",
+            "isCorrect": false,
+            "textAr": "انتهى كل شيء، وداعًا.",
+            "distractorRationaleAr": "إغلاق بلا تلخيص يترك الاتفاق غامضًا."
+          },
+          {
+            "id": "cc_u5_recap_2_choice_c",
+            "text": "Creo que quedamos en algo.",
+            "isCorrect": false,
+            "textAr": "أظن أننا اتفقنا على شيء ما.",
+            "distractorRationaleAr": "غموض «algo» يلغي فائدة التلخيص."
+          }
+        ],
+        "targetVocab": [
+          "en resumen",
+          "confirmar"
+        ],
+        "explanationAr": "التلخيص + سؤال التأكيد يغلق مرحلة الاتفاق.",
+        "errorFeedback": {
+          "cc_u5_recap_2_choice_b": "إغلاق بلا تلخيص يترك الاتفاق غامضًا.",
+          "cc_u5_recap_2_choice_c": "غموض «algo» يلغي فائدة التلخيص."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_recap_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_recap_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يصحح تفصيلة في تلخيصك. اختر الرد المهني.",
+        "stemEs": "— No, el plazo era el viernes, no el lunes.",
+        "stemAr": "— لا، كانت المدة يوم الجمعة، لا الاثنين.",
+        "options": [
+          {
+            "id": "cc_u5_recap_3_reply_a",
+            "text": "Gracias por corregirme: el plazo, el viernes; la llamada, el lunes. Queda acordado.",
+            "isCorrect": true,
+            "textAr": "شكرًا على التصحيح: المدة يوم الجمعة؛ والمكالمة يوم الاثنين. تم الاتفاق."
+          },
+          {
+            "id": "cc_u5_recap_3_reply_b",
+            "text": "Da igual, viernes o lunes.",
+            "isCorrect": false,
+            "textAr": "لا يهم، الجمعة أو الاثنين.",
+            "distractorRationaleAr": "الخلط بين الموعدين يفسد الاتفاق."
+          },
+          {
+            "id": "cc_u5_recap_3_reply_c",
+            "text": "Usted no me escuchó bien.",
+            "isCorrect": false,
+            "textAr": "أنت لم تستمع إليّ جيدًا.",
+            "distractorRationaleAr": "لوم العميل بدل تصحيح التلخيص."
+          }
+        ],
+        "targetVocab": [
+          "anterior",
+          "paso"
+        ],
+        "explanationAr": "تصحيح التلخيص فورًا يثبّت الاتفاق الصحيح قبل الوداع.",
+        "errorFeedback": {
+          "cc_u5_recap_3_reply_b": "الخلط بين الموعدين يفسد الاتفاق.",
+          "cc_u5_recap_3_reply_c": "لوم العميل بدل تصحيح التلخيص."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_recap_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_recap_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "باختصار، سيصلك الاسترداد خلال خمسة أيام.",
+        "targetVocab": [
+          "en resumen",
+          "resumen"
+        ],
+        "explanationAr": "«En resumen» تفتتح التلخيص؛ و«en cinco días» = خلال خمسة أيام.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "En resumen, el reembolso llega en cinco días.",
+            "En resumen, recibirá el reembolso en cinco días."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u5_recap_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تلخيص.",
+        "items": [
+          {
+            "id": "cc_u5_recap_5_order_t1",
+            "kind": "token",
+            "text": "En"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t2",
+            "kind": "token",
+            "text": "resumen,"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t3",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t4",
+            "kind": "token",
+            "text": "reembolso"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t5",
+            "kind": "token",
+            "text": "llega"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t6",
+            "kind": "token",
+            "text": "en"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t7",
+            "kind": "token",
+            "text": "cinco"
+          },
+          {
+            "id": "cc_u5_recap_5_order_t8",
+            "kind": "token",
+            "text": "días."
+          }
+        ],
+        "targetVocab": [
+          "resumen",
+          "acuerdo"
+        ],
+        "explanationAr": "ترتيب التلخيص: عبارة الافتتاح ثم الواقعة ثم المدة.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "En resumen, el reembolso llega en cinco días."
+          ],
+          "tokenOrder": [
+            "cc_u5_recap_5_order_t1",
+            "cc_u5_recap_5_order_t2",
+            "cc_u5_recap_5_order_t3",
+            "cc_u5_recap_5_order_t4",
+            "cc_u5_recap_5_order_t5",
+            "cc_u5_recap_5_order_t6",
+            "cc_u5_recap_5_order_t7",
+            "cc_u5_recap_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_recap_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل تلخيص اتفاق وهمي قبل الإغلاق مع طلب التأكيد.",
+        "stemEs": "En resumen, tramitamos el reembolso y le llamamos el lunes para confirmar.",
+        "stemAr": "باختصار، نتولّى الاسترداد ونتصل بك يوم الاثنين للتأكيد.",
+        "targetVocab": [
+          "en resumen",
+          "resumen"
+        ],
+        "explanationAr": "تحدث ببطء؛ فالتلخيص يُسمَع ليُحفَظ.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u5-recap-speak",
+          "modelAnswer": "En resumen, tramitamos el reembolso y le llamamos el lunes para confirmar."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «تلخيص الاتفاقات». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

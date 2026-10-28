@@ -219,7 +219,7 @@ for (const f of lessonFiles.slice().sort()) {
   checkArabicOnly(L.objectiveAr, `${f}.objectiveAr`, { allowEmpty: false });
 
   // مستويات CEFR معلنة
-  if (!['preA1', 'A1', 'A2', 'B1', 'B2', 'C1'].includes(L.level)) {
+  if (!['PREA1', 'A1', 'A2', 'B1', 'B2', 'C1'].includes(L.level)) {
     err('R6-cefr', f, `مستوى غير معروف: ${L.level}`);
   }
 

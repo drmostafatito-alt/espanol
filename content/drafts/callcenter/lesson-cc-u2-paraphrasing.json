@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u2-paraphrasing",
+    "titleAr": "إعادة الصياغة وتأكيد المشكلة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u2-understanding",
+    "objectiveAr": "أن يعيد المتعلم صياغة مشكلة العميل بكلماته، ويؤكد فهمه قبل تقديم أي حل.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "parafrasear",
+      "reformular",
+      "resumen"
+    ],
+    "reviewVocabulary": [
+      "comprender",
+      "entender",
+      "confirmar"
+    ],
+    "targetStructures": [
+      "Si le he entendido bien…",
+      "Es decir…",
+      "¿Es correcto?"
+    ],
+    "grammarTopics": [
+      "parafrasis-confirmacion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل شرح مشكلة معقدة. أنت الموظف دييغو. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تأكيد الفهم (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Si le he entendido bien, su pedido llegó con retraso y la caja está dañada. ¿Es correcto?",
+            "ar": "إذا كنت قد فهمتك جيدًا، فقد وصل طلبك متأخرًا والعلبة تالفة. هل هذا صحيح؟",
+            "arEg": "لو فهمتك صح، الأوردر وصل متأخر والعلبة تالفة. كده صح؟",
+            "audioKey": "pending/cc-u2-paraphrasing-line-1"
+          },
+          {
+            "es": "Sí, exacto. Y además nadie me avisó del retraso.",
+            "ar": "نعم، بالضبط. وأيضًا لم يخبرني أحد بالتأخير.",
+            "arEg": "أيوه، بالظبط. وكمان محدش بلغني بالتأخير.",
+            "audioKey": "pending/cc-u2-paraphrasing-line-2"
+          },
+          {
+            "es": "Es decir: retraso sin aviso y caja dañada. Voy a parafrasear su caso en la ficha.",
+            "ar": "أي: تأخير دون إشعار وعلبة تالفة. سأعيد صياغة حالتك في الملف.",
+            "arEg": "يعني: تأخير من غير تبليغ وعلبة تالفة. هعيد صياغة حالتك في الملف.",
+            "audioKey": "pending/cc-u2-paraphrasing-line-3"
+          },
+          {
+            "es": "Perfecto. Así queda claro para todos.",
+            "ar": "ممتاز. هكذا يصبح واضحًا للجميع.",
+            "arEg": "ممتاز. كده بيبقى واضح للكل.",
+            "audioKey": "pending/cc-u2-paraphrasing-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "«Si le he entendido bien» صيغة تأكيد تحمي الطرفين: تمنح العميل فرصة التصحيح قبل أن يبني الموظف حله على فهم خاطئ.",
+    "pedagogicalRationaleAr": "إعادة الصياغة اختبار للفهم: من لا يستطيع قول المشكلة بكلماته لم يفهمها بعد، مهما ظن أنه فهم.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u2_paraphrasing_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u2_paraphrasing_1_listen_a",
+            "text": "Si le he entendido bien, el envío llegó tres días tarde.",
+            "isCorrect": true,
+            "textAr": "إذا كنت قد فهمتك جيدًا، فقد وصلت الشحنة متأخرة ثلاثة أيام."
+          },
+          {
+            "id": "cc_u2_paraphrasing_1_listen_b",
+            "text": "Si le he entendido bien, el envío llegó tres horas tarde.",
+            "isCorrect": false,
+            "textAr": "إذا كنت قد فهمتك جيدًا، فقد وصلت الشحنة متأخرة ثلاث ساعات.",
+            "distractorRationaleAr": "الصوت قال «días» لا «horas»."
+          },
+          {
+            "id": "cc_u2_paraphrasing_1_listen_c",
+            "text": "Si le he entendido mal, el envío llegó tres días tarde.",
+            "isCorrect": false,
+            "textAr": "إذا كنت قد أسأت فهمك، فقد وصلت الشحنة متأخرة ثلاثة أيام.",
+            "distractorRationaleAr": "الصوت قال «bien» لا «mal»؛ والمعنى ينعكس."
+          }
+        ],
+        "targetVocab": [
+          "comprender",
+          "entender"
+        ],
+        "explanationAr": "إعادة الصياغة تبدأ بتأكيد الفهم ثم تذكر الوقائع.",
+        "errorFeedback": {
+          "cc_u2_paraphrasing_1_listen_b": "الصوت قال «días» لا «horas».",
+          "cc_u2_paraphrasing_1_listen_c": "الصوت قال «bien» لا «mal»؛ والمعنى ينعكس."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u2-paraphrasing-listen",
+        "speechEs": "Si le he entendido bien, el envío llegó tres días tarde.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_paraphrasing_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_paraphrasing_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تعيد صياغة المشكلة للتأكد؟",
+        "options": [
+          {
+            "id": "cc_u2_paraphrasing_2_choice_a",
+            "text": "Es decir, el pedido llegó tarde y sin aviso. ¿Es correcto?",
+            "isCorrect": true,
+            "textAr": "أي أن الطلب وصل متأخرًا ودون إشعار. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u2_paraphrasing_2_choice_b",
+            "text": "El pedido llegó tarde, punto.",
+            "isCorrect": false,
+            "textAr": "الطلب وصل متأخرًا، نقطة.",
+            "distractorRationaleAr": "تأكيد جاف بلا دعوة للتصحيح."
+          },
+          {
+            "id": "cc_u2_paraphrasing_2_choice_c",
+            "text": "Creo que no hay problema.",
+            "isCorrect": false,
+            "textAr": "أظن أنه لا توجد مشكلة.",
+            "distractorRationaleAr": "إنكار للمشكلة بدل إعادة صياغتها."
+          }
+        ],
+        "targetVocab": [
+          "resumen",
+          "confirmar"
+        ],
+        "explanationAr": "«Es decir» + الوقائع + سؤال التأكيد = إعادة صياغة مهنية.",
+        "errorFeedback": {
+          "cc_u2_paraphrasing_2_choice_b": "تأكيد جاف بلا دعوة للتصحيح.",
+          "cc_u2_paraphrasing_2_choice_c": "إنكار للمشكلة بدل إعادة صياغتها."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_paraphrasing_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_paraphrasing_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "أعدت الصياغة والعميل يصححك. اختر الرد المهني.",
+        "stemEs": "— No, no fue el lunes, fue el martes.",
+        "stemAr": "— لا، لم يكن يوم الاثنين، بل يوم الثلاثاء.",
+        "options": [
+          {
+            "id": "cc_u2_paraphrasing_3_reply_a",
+            "text": "Gracias por corregirme. Entonces: el martes, con retraso y sin aviso. ¿Es así?",
+            "isCorrect": true,
+            "textAr": "شكرًا على التصحيح. إذن: يوم الثلاثاء، مع تأخير ودون إشعار. هل هذا صحيح؟"
+          },
+          {
+            "id": "cc_u2_paraphrasing_3_reply_b",
+            "text": "Da igual, lunes o martes.",
+            "isCorrect": false,
+            "textAr": "لا يهم، الاثنين أو الثلاثاء.",
+            "distractorRationaleAr": "التاريخ يحدد الحقائق؛ والتقليل منه خطأ مهني."
+          },
+          {
+            "id": "cc_u2_paraphrasing_3_reply_c",
+            "text": "Usted no lo explicó bien.",
+            "isCorrect": false,
+            "textAr": "أنت لم تشرح جيدًا.",
+            "distractorRationaleAr": "لوم العميل بدل شكره على التصحيح."
+          }
+        ],
+        "targetVocab": [
+          "reformular",
+          "confirmar"
+        ],
+        "explanationAr": "شكر العميل على التصحيح ثم إعادة الصياغة المصححة يثبّت الفهم المشترك.",
+        "errorFeedback": {
+          "cc_u2_paraphrasing_3_reply_b": "التاريخ يحدد الحقائق؛ والتقليل منه خطأ مهني.",
+          "cc_u2_paraphrasing_3_reply_c": "لوم العميل بدل شكره على التصحيح."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_paraphrasing_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_paraphrasing_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة تأكيد الفهم.",
+        "stemEs": "Si le he ____ bien, el pedido llegó tarde.",
+        "stemAr": "إذا كنت قد فهمتك جيدًا، فقد وصل الطلب متأخرًا.",
+        "targetVocab": [
+          "entender",
+          "comprender"
+        ],
+        "explanationAr": "«Si le he entendido bien» تركيب ثابت لتأكيد الفهم.",
+        "errorFeedback": {
+          "entiendo": "بعد «he» يأتي اسم المفعول: entendido."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "entendido"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u2_paraphrasing_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين إعادة صياغة.",
+        "items": [
+          {
+            "id": "cc_u2_paraphrasing_5_order_t1",
+            "kind": "token",
+            "text": "Si"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t2",
+            "kind": "token",
+            "text": "le"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t3",
+            "kind": "token",
+            "text": "he"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t4",
+            "kind": "token",
+            "text": "entendido"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t5",
+            "kind": "token",
+            "text": "bien,"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t7",
+            "kind": "token",
+            "text": "envío"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t8",
+            "kind": "token",
+            "text": "llegó"
+          },
+          {
+            "id": "cc_u2_paraphrasing_5_order_t9",
+            "kind": "token",
+            "text": "tarde."
+          }
+        ],
+        "targetVocab": [
+          "parafrasear",
+          "resumen"
+        ],
+        "explanationAr": "ترتيب التأكيد: الشرط ثم الوقائع.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Si le he entendido bien, el envío llegó tarde."
+          ],
+          "tokenOrder": [
+            "cc_u2_paraphrasing_5_order_t1",
+            "cc_u2_paraphrasing_5_order_t2",
+            "cc_u2_paraphrasing_5_order_t3",
+            "cc_u2_paraphrasing_5_order_t4",
+            "cc_u2_paraphrasing_5_order_t5",
+            "cc_u2_paraphrasing_5_order_t6",
+            "cc_u2_paraphrasing_5_order_t7",
+            "cc_u2_paraphrasing_5_order_t8",
+            "cc_u2_paraphrasing_5_order_t9"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_paraphrasing_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل إعادة صياغة لمشكلة عميل وهمية مع طلب التأكيد.",
+        "stemEs": "Si le he entendido bien, el pedido llegó tarde y la caja está dañada.",
+        "stemAr": "إذا كنت قد فهمتك جيدًا، فقد وصل الطلب متأخرًا والعلبة تالفة.",
+        "targetVocab": [
+          "parafrasear",
+          "resumen"
+        ],
+        "explanationAr": "توقف وقفة قصيرة قبل الوقائع، واختم بنبرة سؤال تأكيدي.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u2-paraphrasing-speak",
+          "modelAnswer": "Si le he entendido bien, el pedido llegó tarde y la caja está dañada."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «إعادة الصياغة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

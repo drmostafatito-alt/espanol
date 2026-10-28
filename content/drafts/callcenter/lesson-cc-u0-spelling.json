@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u0-spelling",
+    "titleAr": "تهجئة الأسماء والكلمات بصوت عالٍ",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u0-phonetics-support",
+    "objectiveAr": "أن يهجّئ المتعلم الأسماء والكلمات حرفًا حرفًا، ويستخدم أمثلة توضيحية لكل حرف عند الحاجة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "alfabeto",
+      "consonante",
+      "dígito"
+    ],
+    "reviewVocabulary": [
+      "letra",
+      "vocal",
+      "deletrear"
+    ],
+    "targetStructures": [
+      "¿Podría deletrear su apellido, por favor?",
+      "Se escribe con…",
+      "B de Barcelona, V de Valencia."
+    ],
+    "grammarTopics": [
+      "deletreo-alfabeto"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "العميل يملي لقبه، والحروف متشابهة سمعيًا. أنت الموظف لويس. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تسجيل بيانات عميل (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "¿Podría deletrear su apellido, por favor? La letra «b» y la «v» suenan igual por teléfono.",
+            "ar": "هل يمكنك تهجئة لقبك من فضلك؟ حرفا «b» و«v» يبدوان متشابهين عبر الهاتف.",
+            "arEg": "ممكن تهجّي اللقب من فضلك؟ حرف «b» وحرف «v» صوتهم واحد في التليفون.",
+            "audioKey": "pending/cc-u0-spelling-line-1"
+          },
+          {
+            "es": "Claro: Soler, con ese. S de Sevilla, o, ele, e, erre.",
+            "ar": "بالطبع: سولير، بحرف السين. سين من إشبيلية، واو، لام، ياء، راء.",
+            "arEg": "طبعًا: سولير، بحرف السين. سين من إشبيلية، واو، لام، ياء، راء.",
+            "audioKey": "pending/cc-u0-spelling-line-2"
+          },
+          {
+            "es": "Gracias. Anoto: ese, o, ele, e, erre. ¿Es correcto?",
+            "ar": "شكرًا. أسجّل: سين، واو، لام، ياء، راء. هل هذا صحيح؟",
+            "arEg": "شكرًا. بسجّل: سين، واو، لام، ياء، راء. كده صح؟",
+            "audioKey": "pending/cc-u0-spelling-line-3"
+          },
+          {
+            "es": "Sí, perfecto. Soler, con ese, no con ce.",
+            "ar": "نعم، ممتاز. سولير، بالسين، لا بالثاء.",
+            "arEg": "أيوه، ممتاز. سولير، بالسين، مش بالثاء.",
+            "audioKey": "pending/cc-u0-spelling-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا تُهجّى الحروف المتشابهة بأمثلة من أسماء المدن: B de Barcelona وV de Valencia؛ والهدف منع الخطأ لا إظهار المعرفة.",
+    "pedagogicalRationaleAr": "التهجئة مهارة وقائية: حرف واحد خاطئ يفسد ملف العميل كله، لذلك ندرّبها قبل الأرقام والعناوين.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u0_spelling_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u0_spelling_1_listen_a",
+            "text": "Mi apellido es Soler: ese, o, ele, e, erre.",
+            "isCorrect": true,
+            "textAr": "لقبي سولير: سين، واو، لام، ياء، راء."
+          },
+          {
+            "id": "cc_u0_spelling_1_listen_b",
+            "text": "Mi apellido es Soler: ce, o, ele, e, erre.",
+            "isCorrect": false,
+            "textAr": "لقبي سولير: ثاء، واو، لام، ياء، راء.",
+            "distractorRationaleAr": "الصوت قال «ese» لا «ce»؛ والفرق يغير اللقب."
+          },
+          {
+            "id": "cc_u0_spelling_1_listen_c",
+            "text": "Mi apellido es Soler: ese, o, ele, e, te.",
+            "isCorrect": false,
+            "textAr": "لقبي سولير: سين، واو، لام، ياء، تاء.",
+            "distractorRationaleAr": "الحرف الأخير «erre» لا «te»."
+          }
+        ],
+        "targetVocab": [
+          "deletrear",
+          "deletreo"
+        ],
+        "explanationAr": "التهجئة المسموعة تطابق حروف لقب Soler حرفًا حرفًا؛ والخياران يبدلان حرفًا واحدًا.",
+        "errorFeedback": {
+          "cc_u0_spelling_1_listen_b": "الصوت قال «ese» لا «ce»؛ والفرق يغير اللقب.",
+          "cc_u0_spelling_1_listen_c": "الحرف الأخير «erre» لا «te»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u0-spelling-listen",
+        "speechEs": "Mi apellido es Soler: ese, o, ele, e, erre.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_spelling_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_spelling_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي صيغة تطلب التهجئة بأدب؟",
+        "options": [
+          {
+            "id": "cc_u0_spelling_2_choice_a",
+            "text": "¿Podría deletrear su apellido, por favor?",
+            "isCorrect": true,
+            "textAr": "هل يمكنك تهجئة لقبك من فضلك؟"
+          },
+          {
+            "id": "cc_u0_spelling_2_choice_b",
+            "text": "Deletree su apellido ahora.",
+            "isCorrect": false,
+            "textAr": "هجّئ لقبك الآن.",
+            "distractorRationaleAr": "أمر مباشر بلا usted ولا «por favor»."
+          },
+          {
+            "id": "cc_u0_spelling_2_choice_c",
+            "text": "¿Cuál es su apellido? No lo deletree.",
+            "isCorrect": false,
+            "textAr": "ما لقبك؟ لا تهجّه.",
+            "distractorRationaleAr": "السؤال وحده لا يمنع خطأ السمع في الحروف المتشابهة."
+          }
+        ],
+        "targetVocab": [
+          "alfabeto",
+          "dígito"
+        ],
+        "explanationAr": "طلب التهجئة بصيغة condicional + por favor يمنع أخطاء الحروف المتشابهة سمعيًا.",
+        "errorFeedback": {
+          "cc_u0_spelling_2_choice_b": "أمر مباشر بلا usted ولا «por favor».",
+          "cc_u0_spelling_2_choice_c": "السؤال وحده لا يمنع خطأ السمع في الحروف المتشابهة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_spelling_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_spelling_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يملي اسمًا بحروف متشابهة. اختر الرد المهني.",
+        "stemEs": "— Mi nombre es Vega, con uve.",
+        "stemAr": "— اسمي فيغا، بحرف الـ«uve».",
+        "options": [
+          {
+            "id": "cc_u0_spelling_3_reply_a",
+            "text": "Gracias. ¿V de Valencia, verdad? Anoto: uve, e, ge, a.",
+            "isCorrect": true,
+            "textAr": "شكرًا. «V» من فالنسيا، صحيح؟ أسجّل: uve وe وge وa."
+          },
+          {
+            "id": "cc_u0_spelling_3_reply_b",
+            "text": "Vale, Vega, ya está.",
+            "isCorrect": false,
+            "textAr": "حسنًا، فيغا، انتهى.",
+            "distractorRationaleAr": "لا يؤكد الحروف؛ وخطر الخلط بين B وV قائم."
+          },
+          {
+            "id": "cc_u0_spelling_3_reply_c",
+            "text": "Repita todo otra vez, no entiendo.",
+            "isCorrect": false,
+            "textAr": "أعد كل شيء مرة أخرى، لا أفهم.",
+            "distractorRationaleAr": "طلب إعادة كاملة بلا تحديد يضيع وقت العميل."
+          }
+        ],
+        "targetVocab": [
+          "consonante",
+          "vocal"
+        ],
+        "explanationAr": "التأكيد بمثال توضيحي (V de Valencia) ثم تكرار الحروف يثبّت التهجئة الصحيحة.",
+        "errorFeedback": {
+          "cc_u0_spelling_3_reply_b": "لا يؤكد الحروف؛ وخطر الخلط بين B وV قائم.",
+          "cc_u0_spelling_3_reply_c": "طلب إعادة كاملة بلا تحديد يضيع وقت العميل."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_spelling_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_spelling_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة التهجئة.",
+        "stemEs": "Marta se escribe con ____, a, erre, te, a.",
+        "stemAr": "يُكتب اسم مارتا بحرف الـ«eme» ثم a وerre وte وa.",
+        "targetVocab": [
+          "letra",
+          "alfabeto"
+        ],
+        "explanationAr": "اسم Marta يبدأ بحرف «eme»؛ وبقية الحروف مذكورة في الجملة.",
+        "errorFeedback": {
+          "ene": "«ene» حرف النون؛ واسم Marta يبدأ بالميم."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "eme"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u0_spelling_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين طلب تهجئة مهذب.",
+        "items": [
+          {
+            "id": "cc_u0_spelling_5_order_t1",
+            "kind": "token",
+            "text": "¿Podría"
+          },
+          {
+            "id": "cc_u0_spelling_5_order_t2",
+            "kind": "token",
+            "text": "deletrear"
+          },
+          {
+            "id": "cc_u0_spelling_5_order_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "cc_u0_spelling_5_order_t4",
+            "kind": "token",
+            "text": "apellido,"
+          },
+          {
+            "id": "cc_u0_spelling_5_order_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "cc_u0_spelling_5_order_t6",
+            "kind": "token",
+            "text": "favor?"
+          }
+        ],
+        "targetVocab": [
+          "deletrear",
+          "apellido"
+        ],
+        "explanationAr": "ترتيب الطلب: condicional ثم المصدر ثم المفعول ثم «por favor».",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Podría deletrear su apellido, por favor?"
+          ],
+          "tokenOrder": [
+            "cc_u0_spelling_5_order_t1",
+            "cc_u0_spelling_5_order_t2",
+            "cc_u0_spelling_5_order_t3",
+            "cc_u0_spelling_5_order_t4",
+            "cc_u0_spelling_5_order_t5",
+            "cc_u0_spelling_5_order_t6"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_spelling_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل تهجئة لقب وهمي للتدريب، حرفًا حرفًا وببطء.",
+        "stemEs": "Mi apellido es Soler: ese, o, ele, e, erre. ¿Lo ha anotado bien?",
+        "stemAr": "لقبي سولير: سين، واو، لام، ياء، راء. هل سجلته جيدًا؟",
+        "targetVocab": [
+          "alfabeto",
+          "deletrear"
+        ],
+        "explanationAr": "انطق كل حرف منفصلًا، وتوقف وقفة قصيرة بين الحروف المتشابهة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النطق والسرعة المناسبة",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "النبرة المهنية المهذبة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u0-spelling-speak",
+          "modelAnswer": "Mi apellido es Soler: ese, o, ele, e, erre. ¿Lo ha anotado bien?"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «التهجئة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

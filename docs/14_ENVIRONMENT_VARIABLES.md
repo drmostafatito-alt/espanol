@@ -12,6 +12,7 @@
 | `APP_ORIGIN` | var | أصل التطبيق للتحقق من Origin | كلها |
 | `MEDIA_ORIGIN` | var | نطاق الوسائط المخصص | كلها |
 | `PBKDF2_ITERATIONS` | var | عدد التكرارات المعايَر | كلها |
+| `GOOGLE_CLIENT_ID` | var | معرّف عميل Google OAuth (عام — ليس سرًا) | staging/prod (وdev عند اختبار Google حقيقيًا) |
 | `SESSION_TTL_DAYS` | var | 30 افتراضيًا | كلها |
 | `FEATURE_PUSH` | var | `true` عندما يُعد VAPID | staging/prod |
 | `FEATURE_EMAIL` | var | `true` عندما يُعد مزود البريد | staging/prod |
@@ -26,6 +27,7 @@
 | `VAPID_PRIVATE_KEY` | Web Push | عند تفعيل Push |
 | `EMAIL_API_KEY` | مزود البريد | عند تفعيل البريد |
 | `TURNSTILE_SECRET` | حماية إنشاء الحساب (اختياري، مجاني) | اختياري |
+| `GOOGLE_CLIENT_SECRET` | سر عميل Google OAuth — تبادل الكود على الخادم فقط، لا يظهر في أي ملف | عند تفعيل الدخول عبر Google |
 
 ## 3. متغيرات تطوير محلية (`.dev.vars` — غير مُتتبَّع في Git)
 

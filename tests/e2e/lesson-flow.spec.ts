@@ -4,7 +4,7 @@
  * حالة التحقق: شُغِّلت فعليًا ونجحت على Chromium وFirefox (2026-10-21).
  */
 import { expect, test } from '@playwright/test';
-import { A1, PREA1, completeLessonThroughUi, enterExercises, signupThroughApi, uniqueEmail } from './helpers';
+import { A1, FIRST_LESSON, PREA1, completeLessonThroughUi, enterExercises, signupThroughApi, uniqueEmail } from './helpers';
 
 test.describe('مسار الدرس', () => {
   test('زائر بلا جلسة على /learn يُحوَّل إلى الدخول', async ({ page }) => {
@@ -87,9 +87,9 @@ test.describe('مسار الدرس', () => {
     await expect(page.getByRole('tab', { name: 'مستوى A1' })).toBeVisible();
     await expect(page.getByRole('tab', { name: 'مسار السفر' })).toBeVisible();
 
-    // الضغط على بطاقة خطوتك التالية ينقل مباشرة لأول درس
+    // الضغط على بطاقة خطوتك التالية ينقل مباشرة لأول درس في ترتيب المنهج
     await page.getByTestId('next-lesson-btn').click();
-    await expect(page).toHaveURL(new RegExp(`/learn/${PREA1}`));
+    await expect(page).toHaveURL(new RegExp(`/learn/${FIRST_LESSON}`));
   });
 
   test('اختبار تحديد المستوى /placement: يجيب المتعلم وتظهر النتيجة من الخادم', async ({ page }) => {

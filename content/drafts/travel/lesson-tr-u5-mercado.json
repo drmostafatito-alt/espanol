@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u5-mercado",
+    "titleAr": "السوق وشراء الهدايا التذكارية",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u5-shopping-travel",
+    "objectiveAr": "أن يشتري المتعلم هدايا تذكارية في سوق، ويسأل عن سعرها، ويتحدث عن الحرف اليدوية والبائع.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "artesanía",
+      "vendedor",
+      "regateo"
+    ],
+    "reviewVocabulary": [
+      "mercado",
+      "recuerdo",
+      "regalo"
+    ],
+    "targetStructures": [
+      "Busco un regalo para …",
+      "¿Cuánto cuesta …?",
+      "¿Me deja … por … euros?"
+    ],
+    "grammarTopics": [
+      "regateo-mercado",
+      "buscar-regalo"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تتجول في سوق شعبي في مدريد وتريد شراء هدايا تذكارية لأمك، فتتحدث مع البائع وتساومه.",
+        "settingAr": "كشك في سوق شعبي",
+        "lines": [
+          {
+            "es": "Pase, pase. ¿Busca un recuerdo?",
+            "ar": "تفضل، تفضل. هل تبحث عن تذكار؟",
+            "arEg": "اتفضل، اتفضل. بتدوّر على تذكار؟",
+            "audioKey": "pending/tr-u5-mercado-1"
+          },
+          {
+            "es": "Sí, busco un regalo para mi madre. ¿Cuánto cuesta este imán?",
+            "ar": "نعم، أبحث عن هدية لأمي. كم سعر هذا المغناطيس؟",
+            "arEg": "أيوه، بدوّر على هدية لأمي. المغناطيس ده بكام؟",
+            "audioKey": "pending/tr-u5-mercado-2"
+          },
+          {
+            "es": "Cuesta ocho euros. Es artesanía de la ciudad.",
+            "ar": "سعره ثمانية يورو. إنه منتج يدوي من المدينة.",
+            "arEg": "سعره تمانية يورو. ده شغل يدوي من المدينة.",
+            "audioKey": "pending/tr-u5-mercado-3"
+          },
+          {
+            "es": "¿Me deja los tres por veinte euros?",
+            "ar": "هل تترك لي الثلاثة بعشرين يورو؟",
+            "arEg": "تسيب لي التلاتة بعشرين يورو؟",
+            "audioKey": "pending/tr-u5-mercado-4"
+          },
+          {
+            "es": "De acuerdo, veinte euros por los tres.",
+            "ar": "اتفقنا، عشرون يورو للثلاثة.",
+            "arEg": "اتفقنا، عشرين يورو للتلاتة.",
+            "audioKey": "pending/tr-u5-mercado-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "أسواق إسبانيا مثل El Rastro في مدريد أماكن شعبية للهدايا والحرف اليدوية، والمساومة فيها مهذبة ومقبولة، ويُتوقع أن يبدأ البائع بسعر أعلى قليلًا وأن يعرض الزبون سعرًا أقل بهدوء ودون إلحاح.",
+    "pedagogicalRationaleAr": "يجمع الدرس مهارات الوحدة الأربع في موقف واحد: البحث عن هدية، والسؤال عن السعر، ووصف المنتج اليدوي، والمساومة المهذبة، من الفهم إلى الإنتاج.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u5_mercado_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سؤال البائع واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u5-mercado-listen-1",
+        "speechEs": "¿Busca un recuerdo?",
+        "options": [
+          {
+            "id": "tr_u5_mercado_1_a",
+            "text": "¿Busca un recuerdo?",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_mercado_1_b",
+            "text": "¿Busca un mercado?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع recuerdo (تذكار) لا mercado (السوق)، والفعل busca يحتاج مفعولًا به."
+          },
+          {
+            "id": "tr_u5_mercado_1_c",
+            "text": "¿Busca un regalo?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع recuerdo لا regalo، والفرق بينهما مهم في هذا الدرس."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_mercado_1_a"
+          ]
+        },
+        "explanationAr": "سؤال البائع في السوق: ¿Busca un recuerdo؟ و«recuerdo» تذكار، و«regalo» هدية، و«mercado» السوق نفسه، والثلاثة مختلفة المعنى رغم تشابه الصوت.",
+        "errorFeedback": {
+          "tr_u5_mercado_1_b": "المسموع recuerdo (تذكار) لا mercado (السوق)، والفعل busca يحتاج مفعولًا به.",
+          "tr_u5_mercado_1_c": "المسموع recuerdo لا regalo، والفرق بينهما مهم في هذا الدرس."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "recuerdo",
+          "mercado",
+          "regalo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_2_word",
+        "type": "word_choice",
+        "instructionAr": "ماذا يقول البائع عن منتجه اليدوي؟",
+        "options": [
+          {
+            "id": "tr_u5_mercado_2_a",
+            "text": "Es artesanía de la ciudad.",
+            "textAr": "إنه منتج يدوي من المدينة.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_mercado_2_b",
+            "text": "Es una etiqueta de la ciudad.",
+            "textAr": "إنه بطاقة سعر من المدينة.",
+            "isCorrect": false,
+            "distractorRationaleAr": "etiqueta بطاقة السعر على السلعة، وليست وصفًا للمنتج اليدوي."
+          },
+          {
+            "id": "tr_u5_mercado_2_c",
+            "text": "Es una rebaja de la ciudad.",
+            "textAr": "إنه تخفيض من المدينة.",
+            "isCorrect": false,
+            "distractorRationaleAr": "rebaja تخفيض في السعر، وليست وصفًا لطريقة الصنع."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_mercado_2_a"
+          ]
+        },
+        "explanationAr": "«artesanía» تعني منتجًا يدويًا، وهي ما يميز هدايا السوق عن المنتجات الصناعية. أما etiqueta فبطاقة السعر، وrebaja تخفيض.",
+        "errorFeedback": {
+          "tr_u5_mercado_2_b": "etiqueta بطاقة السعر على السلعة، وليست وصفًا للمنتج اليدوي.",
+          "tr_u5_mercado_2_c": "rebaja تخفيض في السعر، وليست وصفًا لطريقة الصنع."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "artesanía",
+          "etiqueta",
+          "rebaja"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بالكلمة المناسبة.",
+        "stemEs": "El ____ es normal en el mercado.",
+        "stemAr": "المساومة أمر طبيعي في السوق.",
+        "answerKey": {
+          "accepted": [
+            "regateo"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«El regateo es normal en el mercado» تعني المساومة أمر طبيعي في السوق. والفعل regatear يساوم، والاسم regateo المساومة.",
+        "errorFeedback": {
+          "descuento": "«descuento» تخفيض يُعرض عليك، أما «regateo» فهو المساومة نفسها.",
+          "mercado": "«mercado» هو المكان، والفراغ يحتاج اسم المساومة: regateo."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "regateo",
+          "mercado"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن البحث عن هدية.",
+        "items": [
+          {
+            "id": "tr_u5_mercado_4_t1",
+            "kind": "token",
+            "text": "Busco"
+          },
+          {
+            "id": "tr_u5_mercado_4_t2",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "tr_u5_mercado_4_t3",
+            "kind": "token",
+            "text": "regalo"
+          },
+          {
+            "id": "tr_u5_mercado_4_t4",
+            "kind": "token",
+            "text": "para"
+          },
+          {
+            "id": "tr_u5_mercado_4_t5",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "tr_u5_mercado_4_t6",
+            "kind": "token",
+            "text": "madre"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Busco un regalo para mi madre",
+            "Busco un regalo para mi madre."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Busco un regalo para mi madre» تعني أبحث عن هدية لأمي. و«para» هنا تعني لأجل أو لـ، و«mi madre» أمي.",
+        "errorFeedback": {
+          "order": "ابدأ بالفعل Busco، ثم un regalo، ثم para mi madre."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "regalo",
+          "madre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "البائع قال إن سعر المغناطيس ثمانية يورو، وتريد شراء ثلاثة.",
+        "stemEs": "— Cuesta ocho euros.",
+        "stemAr": "— سعره ثمانية يورو.",
+        "options": [
+          {
+            "id": "tr_u5_mercado_5_a",
+            "text": "¿Me deja los tres por veinte euros?",
+            "textAr": "هل تترك لي الثلاثة بعشرين يورو؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_mercado_5_b",
+            "text": "Me queda grande.",
+            "textAr": "المقاس كبير عليّ.",
+            "isCorrect": false,
+            "distractorRationaleAr": "«me queda» تخصّ مقاس الملابس، ولا علاقة لها بسعر المغناطيس."
+          },
+          {
+            "id": "tr_u5_mercado_5_c",
+            "text": "Está rota.",
+            "textAr": "إنه تالف.",
+            "isCorrect": false,
+            "distractorRationaleAr": "لم يُذكر أي عيب في السلعة، والحديث عن السعر لا عن التلف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_mercado_5_a"
+          ]
+        },
+        "explanationAr": "عرض السعر الجماعي: ¿Me deja los tres por veinte euros؟ أي هل تتركه لي بثلاثة بعشرين يورو. و«me queda» للمقاس و«está rota» للعيب، وكلاهما خارج السياق.",
+        "errorFeedback": {
+          "tr_u5_mercado_5_b": "«me queda» تخصّ مقاس الملابس، ولا علاقة لها بسعر المغناطيس.",
+          "tr_u5_mercado_5_c": "لم يُذكر أي عيب في السلعة، والحديث عن السعر لا عن التلف."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "precio",
+          "euro"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "كم سعر هذا المغناطيس؟ إنه هدية لأمي.",
+        "answerKey": {
+          "accepted": [
+            "¿Cuánto cuesta este imán? Es un regalo para mi madre.",
+            "¿Cuánto cuesta el imán? Es un regalo para mi madre."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«imán» مذكر: este imán. والسؤال عن سعره: ¿Cuánto cuesta este imán؟ ثم توضح الغرض: Es un regalo para mi madre.",
+        "errorFeedback": {
+          "¿Cuánto cuesta esta imán?": "imán مذكر، فالإشارة este لا esta.",
+          "¿Cuánto cuestan este imán?": "imán مفرد، لذلك الفعل cuesta لا cuestan."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cuánto cuesta",
+          "imán",
+          "regalo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_mercado_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اشرح ما تبحث عنه واسأل عن السعر واعرض سعرًا جماعيًا. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Busco un regalo para mi madre. ¿Cuánto cuesta este imán? ¿Me deja los tres por veinte euros?",
+        "stemAr": "أبحث عن هدية لأمي. كم سعر هذا المغناطيس؟ هل تترك لي الثلاثة بعشرين يورو؟",
+        "answerKey": {
+          "modelAnswer": "Busco un regalo para mi madre. ¿Cuánto cuesta este imán? ¿Me deja los tres por veinte euros?",
+          "referenceAudioKey": "pending/tr-u5-mercado-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "regalo",
+          "cuánto cuesta",
+          "imán"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس التسوق 4/4 (السوق وشراء الهدايا التذكارية). يحتاج مراجعة إسبانية أصلية لعرف المساومة في الأسواق الإسبانية. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

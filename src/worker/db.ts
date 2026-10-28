@@ -24,6 +24,48 @@ export async function emailExists(db: D1Database, emailNormalized: string): Prom
   return !!row;
 }
 
+/** هوية خارجية مرتبطة: (المزوّد، المعرّف عنده) ⇒ مستخدم محلي. */
+export async function findOAuthIdentity(
+  db: D1Database,
+  provider: string,
+  providerSubject: string,
+): Promise<{ user_id: string } | null> {
+  return await db
+    .prepare('SELECT user_id FROM oauth_identities WHERE provider = ? AND provider_subject = ?')
+    .bind(provider, providerSubject)
+    .first<{ user_id: string }>();
+}
+
+/**
+ * ربط هوية خارجية بحساب محلي. INSERT OR IGNORE: قيد (user_id, provider) يعني
+ * أن أول حساب Google مرتبط يبقى هو المرتبط؛ ربط حساب Google ثانٍ لنفس المستخدم
+ * يُتجاهل بصمت ويبقى الربط الأول — الدخول نفسه لا يُمنع (الهوية أُثبتت بالبريد).
+ */
+export async function linkOAuthIdentity(
+  db: D1Database,
+  link: { id: string; userId: string; provider: string; providerSubject: string; emailAtLink: string },
+): Promise<void> {
+  await db
+    .prepare(
+      `INSERT OR IGNORE INTO oauth_identities (id, user_id, provider, provider_subject, email_at_link)
+       VALUES (?, ?, ?, ?, ?)`,
+    )
+    .bind(link.id, link.userId, link.provider, link.providerSubject, link.emailAtLink)
+    .run();
+  await db
+    .prepare('UPDATE oauth_identities SET last_used_at = strftime(\'%Y-%m-%dT%H:%M:%fZ\',\'now\') WHERE provider = ? AND provider_subject = ?')
+    .bind(link.provider, link.providerSubject)
+    .run();
+}
+
+/** بريد موثّق من المزوّد الخارجي ⇒ يُسجَّل التحقق إن لم يكن مسجلًا من قبل. */
+export async function markEmailVerified(db: D1Database, userId: string, at: string): Promise<void> {
+  await db
+    .prepare('UPDATE users SET email_verified_at = ? WHERE id = ? AND email_verified_at IS NULL')
+    .bind(at, userId)
+    .run();
+}
+
 export async function createUser(
   db: D1Database,
   u: { id: string; emailNormalized: string; emailDisplay: string; passwordHash: string; displayName?: string | null },

@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u6-ticket",
+    "titleAr": "كتابة ملخص التذكرة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u6-writing",
+    "objectiveAr": "أن يكتب المتعلم ملخص تذكرة دقيقًا يفرّق بين الوقائع والإجراء والنتيجة، دون آراء أو بيانات غير مؤكدة.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "ticket",
+      "tramitar",
+      "cuerpo"
+    ],
+    "reviewVocabulary": [
+      "incidencia",
+      "gestionar",
+      "nota"
+    ],
+    "targetStructures": [
+      "Hechos: …",
+      "Acción: …",
+      "Resultado: …"
+    ],
+    "grammarTopics": [
+      "ticket-hechos-accion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تذكرة تلخص مكالمة منتهية. أنت الموظف لويس يكتب التذكرة الوهمية. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "كتابة تذكرة بعد مكالمة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Hechos: el cliente llamó el lunes. El pedido 000123 llegó con retraso.",
+            "ar": "الوقائع: اتصل العميل يوم الاثنين. وصل الطلب 000123 متأخرًا.",
+            "arEg": "الوقائع: العميل اتصل يوم الاتنين. الأوردر 000123 وصل متأخر.",
+            "audioKey": "pending/cc-u6-ticket-line-1"
+          },
+          {
+            "es": "Acción: abrí una incidencia y tramité el reembolso del importe total.",
+            "ar": "الإجراء: فتحت بلاغ مشكلة وتولّيت إجراء استرداد المبلغ الإجمالي.",
+            "arEg": "الإجراء: فتحت بلاغ مشكلة وخلّصت إجراء استرداد المبلغ كله.",
+            "audioKey": "pending/cc-u6-ticket-line-2"
+          },
+          {
+            "es": "Resultado: reembolso tramitado; seguimiento el lunes, con el código REF-0007.",
+            "ar": "النتيجة: الاسترداد تم تولّيه؛ والمتابعة يوم الاثنين، بالرمز REF-0007.",
+            "arEg": "النتيجة: الاسترداد اتخلّص؛ والمتابعة يوم الاتنين، بالكود REF-0007.",
+            "audioKey": "pending/cc-u6-ticket-line-3"
+          },
+          {
+            "es": "Cuerpo de la ficha: solo hechos, sin opiniones. Así lo entiende cualquier compañero.",
+            "ar": "نص الملف: وقائع فقط، دون آراء. هكذا يفهمه أي زميل.",
+            "arEg": "نص الملف: وقائع بس، من غير آراء. كده أي زميل يفهمه.",
+            "audioKey": "pending/cc-u6-ticket-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "التذكرة الجيدة تُقرأ دون الاتصال بالعميل: وقائع + إجراء + نتيجة + موعد متابعة؛ وكل رأي فيها يفسد ثقة الزميل التالي.",
+    "pedagogicalRationaleAr": "الكتابة الموجزة مهارة مهنية: ثلاث فقرات قصيرة منظمة أفضل من صفحة سرد بلا بنية.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u6_ticket_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u6_ticket_1_listen_a",
+            "text": "El resumen separa los hechos, la acción y el resultado, sin opiniones.",
+            "isCorrect": true,
+            "textAr": "الملخص يفصل الوقائع والإجراء والنتيجة، دون آراء."
+          },
+          {
+            "id": "cc_u6_ticket_1_listen_b",
+            "text": "El resumen mezcla los hechos, la acción y las opiniones.",
+            "isCorrect": false,
+            "textAr": "الملخص يخلط الوقائع والإجراء والآراء.",
+            "distractorRationaleAr": "الصوت قال «separa» و«sin opiniones»."
+          },
+          {
+            "id": "cc_u6_ticket_1_listen_c",
+            "text": "El resumen separa los hechos, la acción y el resultado, con opiniones.",
+            "isCorrect": false,
+            "textAr": "الملخص يفصل الوقائع والإجراء والنتيجة، مع آراء.",
+            "distractorRationaleAr": "الصوت قال «sin opiniones» لا «con opiniones»."
+          }
+        ],
+        "targetVocab": [
+          "ticket",
+          "cuerpo"
+        ],
+        "explanationAr": "بنية التذكرة الثلاثية بلا آراء.",
+        "errorFeedback": {
+          "cc_u6_ticket_1_listen_b": "الصوت قال «separa» و«sin opiniones».",
+          "cc_u6_ticket_1_listen_c": "الصوت قال «sin opiniones» لا «con opiniones»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u6-ticket-listen",
+        "speechEs": "El resumen separa los hechos, la acción y el resultado, sin opiniones.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_ticket_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_ticket_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي سطر يصلح قسم «الوقائع» في التذكرة؟",
+        "options": [
+          {
+            "id": "cc_u6_ticket_2_choice_a",
+            "text": "Hechos: el pedido 000123 llegó con retraso el lunes.",
+            "isCorrect": true,
+            "textAr": "الوقائع: وصل الطلب 000123 متأخرًا يوم الاثنين."
+          },
+          {
+            "id": "cc_u6_ticket_2_choice_b",
+            "text": "Hechos: el cliente es impaciente y difícil.",
+            "isCorrect": false,
+            "textAr": "الوقائع: العميل متعجل وصعب.",
+            "distractorRationaleAr": "رأي في العميل لا واقعة قابلة للتحقق."
+          },
+          {
+            "id": "cc_u6_ticket_2_choice_c",
+            "text": "Hechos: creo que el envío fue un desastre.",
+            "isCorrect": false,
+            "textAr": "الوقائع: أظن أن الشحن كان كارثة.",
+            "distractorRationaleAr": "رأي وتعميم لا واقعة محددة."
+          }
+        ],
+        "targetVocab": [
+          "incidencia",
+          "nota"
+        ],
+        "explanationAr": "الوقائع: ما حدث ومتى، بلا أحكام على العميل.",
+        "errorFeedback": {
+          "cc_u6_ticket_2_choice_b": "رأي في العميل لا واقعة قابلة للتحقق.",
+          "cc_u6_ticket_2_choice_c": "رأي وتعميم لا واقعة محددة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_ticket_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_ticket_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "زميلك يسألك ماذا كتبت في قسم «الإجراء». اختر الرد المهني.",
+        "stemEs": "— ¿Qué puso en «Acción»?",
+        "stemAr": "— ماذا كتبت في «الإجراء»؟",
+        "options": [
+          {
+            "id": "cc_u6_ticket_3_reply_a",
+            "text": "Abrí una incidencia y tramité el reembolso. Solo hechos, sin opiniones.",
+            "isCorrect": true,
+            "textAr": "فتحت بلاغ مشكلة وتولّيت الاسترداد. وقائع فقط، دون آراء."
+          },
+          {
+            "id": "cc_u6_ticket_3_reply_b",
+            "text": "Puse que el cliente gritaba mucho.",
+            "isCorrect": false,
+            "textAr": "كتبت أن العميل كان يصرخ كثيرًا.",
+            "distractorRationaleAr": "وصف انفعالي لا إجراء."
+          },
+          {
+            "id": "cc_u6_ticket_3_reply_c",
+            "text": "Puse que todo salió mal.",
+            "isCorrect": false,
+            "textAr": "كتبت أن كل شيء سار سيئًا.",
+            "distractorRationaleAr": "تعميم بلا إجراء محدد."
+          }
+        ],
+        "targetVocab": [
+          "tramitar",
+          "gestionar"
+        ],
+        "explanationAr": "قسم الإجراء يذكر ما فعله الموظف فعلًا.",
+        "errorFeedback": {
+          "cc_u6_ticket_3_reply_b": "وصف انفعالي لا إجراء.",
+          "cc_u6_ticket_3_reply_c": "تعميم بلا إجراء محدد."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_ticket_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_ticket_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة قسم الوقائع.",
+        "stemEs": "En el resumen, primero van los ____.",
+        "stemAr": "في الملخص، تأتي الوقائع أولًا.",
+        "targetVocab": [
+          "ticket",
+          "nota"
+        ],
+        "explanationAr": "«los hechos» = الوقائع؛ وهي أول أقسام التذكرة.",
+        "errorFeedback": {
+          "opiniones": "الآراء لا مكان لها في التذكرة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "hechos"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u6_ticket_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين قاعدة التذكرة.",
+        "items": [
+          {
+            "id": "cc_u6_ticket_5_order_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t2",
+            "kind": "token",
+            "text": "resumen"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t3",
+            "kind": "token",
+            "text": "separa"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t4",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t5",
+            "kind": "token",
+            "text": "hechos"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t6",
+            "kind": "token",
+            "text": "de"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t7",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "cc_u6_ticket_5_order_t8",
+            "kind": "token",
+            "text": "opinión."
+          }
+        ],
+        "targetVocab": [
+          "ticket",
+          "cuerpo"
+        ],
+        "explanationAr": "ترتيب القاعدة: الفاعل ثم الفعل ثم المفعولان.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "El resumen separa los hechos de la opinión."
+          ],
+          "tokenOrder": [
+            "cc_u6_ticket_5_order_t1",
+            "cc_u6_ticket_5_order_t2",
+            "cc_u6_ticket_5_order_t3",
+            "cc_u6_ticket_5_order_t4",
+            "cc_u6_ticket_5_order_t5",
+            "cc_u6_ticket_5_order_t6",
+            "cc_u6_ticket_5_order_t7",
+            "cc_u6_ticket_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_ticket_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "اقرأ بصوت واضح ملخص تذكرة وهمية من ثلاثة أقسام.",
+        "stemEs": "Hechos: el cliente llamó el lunes. Acción: abrí una incidencia. Resultado: reembolso tramitado.",
+        "stemAr": "الوقائع: اتصل العميل يوم الاثنين. الإجراء: فتحت بلاغ مشكلة. النتيجة: الاسترداد تم تولّيه.",
+        "targetVocab": [
+          "ticket",
+          "tramitar"
+        ],
+        "explanationAr": "توقف بين الأقسام الثلاثة؛ فالتذكرة تُسمَع ببنيتها.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النص وبنيته الكاملة",
+              "weight": 25
+            },
+            {
+              "code": "formality",
+              "labelAr": "السجل الرسمي المناسب للكتابة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "ترتيب الأجزاء ترتيبًا منطقيًا",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u6-ticket-speak",
+          "modelAnswer": "Hechos: el cliente llamó el lunes. Acción: abrí una incidencia. Resultado: reembolso tramitado."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «ملخص التذكرة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

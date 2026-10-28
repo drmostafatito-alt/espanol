@@ -1,0 +1,20 @@
+# Español بالعربي — متغيرات بيئة التطوير المحلي (مثال)
+# انسخ هذا الملف إلى `.dev.vars` ثم عدّل القيم. لا ترفع `.dev.vars` إلى Git أبدًا.
+# القيم أدناه وهمية وغير صالحة عمدًا؛ استبدلها قبل التشغيل.
+#
+# توليد pepper محلي قوي (32 حرفًا عشوائيًا على الأقل):
+#   PowerShell: [Convert]::ToBase64String((1..48 | ForEach-Object { Get-Random -Maximum 256 }))
+#   Bash:       openssl rand -base64 36
+PASSWORD_PEPPER=REPLACE_WITH_A_RANDOM_VALUE_32_PLUS_CHARS
+ALLOW_UNREVIEWED_CONTENT="true"
+# للتطوير المحلي فقط يمكنك وضع "true" مؤقتًا لإنشاء حسابات اختبار،
+# وأعدها "false" قبل أي نشر؛ التسجيل العام مغلق في الإنتاج دائمًا.
+ALLOW_PUBLIC_SIGNUP="false"
+PBKDF2_ITERATIONS="30000"
+ENVIRONMENT="development"
+APP_ORIGIN="http://127.0.0.1:8787,http://localhost:8787"
+# الدخول عبر Google محليًا (اختياري): يلزم عميل OAuth حقيقي من Google Cloud Console
+# مع تسجيل http://127.0.0.1:8787/api/auth/oauth/google/callback كـredirect URI.
+# اترك السطرين التاليين فارغين إن لم تنشئ العميل بعد — بدء Google يفشل مغلقًا بأمان.
+# GOOGLE_CLIENT_ID=
+# GOOGLE_CLIENT_SECRET=

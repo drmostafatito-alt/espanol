@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u3-deadlines",
+    "titleAr": "شرح المواعيد والخطوات التالية",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u3-solutions",
+    "objectiveAr": "أن يشرح المتعلم المواعيد والخطوات التالية بدقة، ويحدد ما سيفعله هو وما يُنتظر من العميل.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "fecha límite",
+      "compromiso",
+      "vacaciones"
+    ],
+    "reviewVocabulary": [
+      "plazo",
+      "plazo de entrega",
+      "día"
+    ],
+    "targetStructures": [
+      "El plazo termina el…",
+      "Yo me encargo de…",
+      "Usted solo tiene que…"
+    ],
+    "grammarTopics": [
+      "plazos-siguientes-pasos"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حل يحتاج موعدًا ومتابعة. أنت الموظفة باولا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تحديد مواعيد (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "El plazo termina el viernes. Yo me encargo de tramitar el reembolso y usted solo tiene que esperar el correo.",
+            "ar": "تنتهي المدة يوم الجمعة. أنا أتولّى إجراء الاسترداد، وأنت فقط تنتظر البريد.",
+            "arEg": "المدة بتخلص يوم الجمعة. أنا هخلّص إجراء الاسترداد، وانت بس تستنى الإيميل.",
+            "audioKey": "pending/cc-u3-deadlines-line-1"
+          },
+          {
+            "es": "¿Y si no llega el correo el viernes?",
+            "ar": "وماذا لو لم يصل البريد يوم الجمعة؟",
+            "arEg": "ولو الإيميل موصلش يوم الجمعة؟",
+            "audioKey": "pending/cc-u3-deadlines-line-2"
+          },
+          {
+            "es": "Entonces me llama usted el lunes. Mi compañera está de vacaciones, pero yo sigo su caso.",
+            "ar": "إذن اتصل بي يوم الاثنين. زميلتي في إجازة، لكنني أتابع حالتك.",
+            "arEg": "إذن كلمني يوم الاتنين. زميلتي في أجازة، بس أنا بتابع حالتك.",
+            "audioKey": "pending/cc-u3-deadlines-line-3"
+          },
+          {
+            "es": "De acuerdo: viernes el correo, lunes la llamada si hace falta.",
+            "ar": "موافق: الجمعة البريد، والاثنين المكالمة عند الحاجة.",
+            "arEg": "موافق: الجمعة الإيميل، والاتنين المكالمة لو احتاجنا.",
+            "audioKey": "pending/cc-u3-deadlines-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الموعد الغامض («pronto», «en unos días») يولّد مكالمات متابعة غاضبة؛ والموعد المحدد بيوم يحمي الطرفين.",
+    "pedagogicalRationaleAr": "توضيح الأدوار يمنع سوء الفهم: ما يفعله الموظف، وما يُنتظر من العميل، ومتى يتدخل كل منهما.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u3_deadlines_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u3_deadlines_1_listen_a",
+            "text": "El plazo termina el viernes. Le llamaré el lunes con la confirmación.",
+            "isCorrect": true,
+            "textAr": "تنتهي المدة يوم الجمعة. سأتصل بك يوم الاثنين مع التأكيد."
+          },
+          {
+            "id": "cc_u3_deadlines_1_listen_b",
+            "text": "El plazo termina el jueves. Le llamaré el lunes con la confirmación.",
+            "isCorrect": false,
+            "textAr": "تنتهي المدة يوم الخميس. سأتصل بك يوم الاثنين مع التأكيد.",
+            "distractorRationaleAr": "الصوت قال «viernes» لا «jueves»."
+          },
+          {
+            "id": "cc_u3_deadlines_1_listen_c",
+            "text": "El plazo termina el viernes. Le llamaré el viernes con la confirmación.",
+            "isCorrect": false,
+            "textAr": "تنتهي المدة يوم الجمعة. سأتصل بك يوم الجمعة مع التأكيد.",
+            "distractorRationaleAr": "يوم الاتصال «lunes» لا «viernes»."
+          }
+        ],
+        "targetVocab": [
+          "plazo",
+          "fecha límite"
+        ],
+        "explanationAr": "الموعدان محددان: نهاية المدة الجمعة، والاتصال الاثنين.",
+        "errorFeedback": {
+          "cc_u3_deadlines_1_listen_b": "الصوت قال «viernes» لا «jueves».",
+          "cc_u3_deadlines_1_listen_c": "يوم الاتصال «lunes» لا «viernes»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u3-deadlines-listen",
+        "speechEs": "El plazo termina el viernes. Le llamaré el lunes con la confirmación.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_deadlines_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_deadlines_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تحدد المواعيد بدقة؟",
+        "options": [
+          {
+            "id": "cc_u3_deadlines_2_choice_a",
+            "text": "El plazo termina el viernes y le llamaré el lunes.",
+            "isCorrect": true,
+            "textAr": "تنتهي المدة يوم الجمعة وسأتصل بك يوم الاثنين."
+          },
+          {
+            "id": "cc_u3_deadlines_2_choice_b",
+            "text": "El plazo termina pronto, ya le llamaré.",
+            "isCorrect": false,
+            "textAr": "تنتهي المدة قريبًا، وسأتصل بك.",
+            "distractorRationaleAr": "«pronto» غامض ولا يلتزم بيوم."
+          },
+          {
+            "id": "cc_u3_deadlines_2_choice_c",
+            "text": "No hay plazo, no se preocupe.",
+            "isCorrect": false,
+            "textAr": "لا توجد مدة، لا تقلق.",
+            "distractorRationaleAr": "إنكار الموعد يخالف الصدق المهني."
+          }
+        ],
+        "targetVocab": [
+          "compromiso",
+          "día"
+        ],
+        "explanationAr": "اليومان المحددان يحولان الوعد إلى التزام قابل للمتابعة.",
+        "errorFeedback": {
+          "cc_u3_deadlines_2_choice_b": "«pronto» غامض ولا يلتزم بيوم.",
+          "cc_u3_deadlines_2_choice_c": "إنكار الموعد يخالف الصدق المهني."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_deadlines_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_deadlines_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يسأل ماذا عليه أن يفعل. اختر الرد المهني.",
+        "stemEs": "— ¿Tengo que hacer algo yo?",
+        "stemAr": "— هل عليّ فعل شيء أنا؟",
+        "options": [
+          {
+            "id": "cc_u3_deadlines_3_reply_a",
+            "text": "Usted solo tiene que esperar el correo. Yo me encargo de todo lo demás.",
+            "isCorrect": true,
+            "textAr": "عليك فقط انتظار البريد. أنا أتولّى كل ما عداه."
+          },
+          {
+            "id": "cc_u3_deadlines_3_reply_b",
+            "text": "Sí, llame todos los días.",
+            "isCorrect": false,
+            "textAr": "نعم، اتصل كل يوم.",
+            "distractorRationaleAr": "تحميل العميل متابعة لا يحتاجها."
+          },
+          {
+            "id": "cc_u3_deadlines_3_reply_c",
+            "text": "No sé, ya veremos.",
+            "isCorrect": false,
+            "textAr": "لا أعرف، سنرى.",
+            "distractorRationaleAr": "غموض يترك العميل بلا دور واضح."
+          }
+        ],
+        "targetVocab": [
+          "plazo de entrega",
+          "compromiso"
+        ],
+        "explanationAr": "تحديد دور العميل (الانتظار فقط) ودور الموظف (كل شيء آخر) يمنع سوء الفهم.",
+        "errorFeedback": {
+          "cc_u3_deadlines_3_reply_b": "تحميل العميل متابعة لا يحتاجها.",
+          "cc_u3_deadlines_3_reply_c": "غموض يترك العميل بلا دور واضح."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u3_deadlines_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_deadlines_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة الموعد النهائي.",
+        "stemEs": "El plazo ____ el viernes.",
+        "stemAr": "تنتهي المدة يوم الجمعة.",
+        "targetVocab": [
+          "plazo",
+          "fecha límite"
+        ],
+        "explanationAr": "«El plazo termina el viernes» = تنتهي المدة يوم الجمعة.",
+        "errorFeedback": {
+          "empieza": "«empieza» تعني يبدأ؛ والمطلوب نهاية المدة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "termina"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u3_deadlines_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة موعد.",
+        "items": [
+          {
+            "id": "cc_u3_deadlines_5_order_t1",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t2",
+            "kind": "token",
+            "text": "plazo"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t3",
+            "kind": "token",
+            "text": "termina"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t4",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t5",
+            "kind": "token",
+            "text": "viernes,"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t6",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t7",
+            "kind": "token",
+            "text": "las"
+          },
+          {
+            "id": "cc_u3_deadlines_5_order_t8",
+            "kind": "token",
+            "text": "seis."
+          }
+        ],
+        "targetVocab": [
+          "plazo",
+          "hora"
+        ],
+        "explanationAr": "ترتيب الموعد: الفاعل ثم الفعل ثم اليوم ثم الساعة.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "El plazo termina el viernes, a las seis."
+          ],
+          "tokenOrder": [
+            "cc_u3_deadlines_5_order_t1",
+            "cc_u3_deadlines_5_order_t2",
+            "cc_u3_deadlines_5_order_t3",
+            "cc_u3_deadlines_5_order_t4",
+            "cc_u3_deadlines_5_order_t5",
+            "cc_u3_deadlines_5_order_t6",
+            "cc_u3_deadlines_5_order_t7",
+            "cc_u3_deadlines_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u3_deadlines_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل شرح موعد وخطوات تالية بدقة، مع تحديد دور العميل.",
+        "stemEs": "El plazo termina el viernes y le llamaré el lunes con la confirmación.",
+        "stemAr": "تنتهي المدة يوم الجمعة وسأتصل بك يوم الاثنين مع التأكيد.",
+        "targetVocab": [
+          "fecha límite",
+          "compromiso"
+        ],
+        "explanationAr": "انطق اليومين بوضوح وببطء؛ فالموعد أهم ما في الجملة.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u3-deadlines-speak",
+          "modelAnswer": "El plazo termina el viernes y le llamaré el lunes con la confirmación."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «المواعيد والخطوات التالية». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

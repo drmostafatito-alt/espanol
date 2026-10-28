@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u5-farewell",
+    "titleAr": "فحص الرضا وصيغ الوداع",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u5-closing-quality",
+    "objectiveAr": "أن يفحص المتعلم رضا العميل قبل الوداع، ويغلق المكالمة بصيغ وداع مهنية دافئة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "despedida",
+      "despedirse",
+      "cierre"
+    ],
+    "reviewVocabulary": [
+      "gracias",
+      "encuesta",
+      "saludo"
+    ],
+    "targetStructures": [
+      "¿Hay algo más en lo que pueda ayudarle?",
+      "Gracias por su llamada.",
+      "Que tenga un buen día."
+    ],
+    "grammarTopics": [
+      "satisfaccion-despedida"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل راضٍ يقترب من الوداع. أنت الموظفة كلارا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، فحص رضا ووداع (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "¿Hay algo más en lo que pueda ayudarle? Quiero confirmar que queda satisfecho.",
+            "ar": "هل هناك شيء آخر أساعدك به؟ أريد التأكد من أنك راضٍ.",
+            "arEg": "فيه حاجة تانية أساعدك فيها؟ عاوزة أتأكد إنك راضي.",
+            "audioKey": "pending/cc-u5-farewell-line-1"
+          },
+          {
+            "es": "No, todo claro. Gracias por su paciencia.",
+            "ar": "لا، كل شيء واضح. شكرًا على صبرك.",
+            "arEg": "لأ، كل حاجة واضحة. شكرًا على صبرك.",
+            "audioKey": "pending/cc-u5-farewell-line-2"
+          },
+          {
+            "es": "Gracias a usted. Le llegará una encuesta breve de satisfacción; su opinión nos ayuda a mejorar.",
+            "ar": "شكرًا لك. سيصلك استبيان رضا قصير؛ ورأيك يساعدنا على التحسن.",
+            "arEg": "شكرًا ليك. هيوصلك استبيان رضا قصير؛ ورأيك بيساعدنا نتحسن.",
+            "audioKey": "pending/cc-u5-farewell-line-3"
+          },
+          {
+            "es": "De acuerdo, la completo. Que tenga un buen día.",
+            "ar": "موافق، سأكمله. أتمنى لك يومًا طيبًا.",
+            "arEg": "موافق، هكمله. يومك حلو.",
+            "audioKey": "pending/cc-u5-farewell-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "سؤال الرضا الصادق يُطرح قبل الوداع لا بعده؛ وبعده لا يبقى للعميل إلا الاستبيان، وهو أبرد من الكلام.",
+    "pedagogicalRationaleAr": "الوداع المهني ثلاثي: سؤال أخير + شكر + تحية؛ وحذف أي جزء يجعل الإغلاق مبتورًا.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u5_farewell_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u5_farewell_1_listen_a",
+            "text": "Gracias por su llamada. Que tenga un buen día.",
+            "isCorrect": true,
+            "textAr": "شكرًا على اتصالك. أتمنى لك يومًا طيبًا."
+          },
+          {
+            "id": "cc_u5_farewell_1_listen_b",
+            "text": "Gracias por su llamada. Que tenga una buena noche.",
+            "isCorrect": false,
+            "textAr": "شكرًا على اتصالك. أتمنى لك ليلة طيبة.",
+            "distractorRationaleAr": "الصوت قال «buen día» لا «buena noche»."
+          },
+          {
+            "id": "cc_u5_farewell_1_listen_c",
+            "text": "Adiós, sin más.",
+            "isCorrect": false,
+            "textAr": "وداعًا، دون زيادة.",
+            "distractorRationaleAr": "وداع مبتور بلا شكر ولا تحية."
+          }
+        ],
+        "targetVocab": [
+          "gracias",
+          "despedida"
+        ],
+        "explanationAr": "الإغلاق المهني يجمع الشكر والتحية.",
+        "errorFeedback": {
+          "cc_u5_farewell_1_listen_b": "الصوت قال «buen día» لا «buena noche».",
+          "cc_u5_farewell_1_listen_c": "وداع مبتور بلا شكر ولا تحية."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u5-farewell-listen",
+        "speechEs": "Gracias por su llamada. Que tenga un buen día.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_farewell_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_farewell_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي إغلاق مهني كامل؟",
+        "options": [
+          {
+            "id": "cc_u5_farewell_2_choice_a",
+            "text": "¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada. Que tenga un buen día.",
+            "isCorrect": true,
+            "textAr": "هل هناك شيء آخر أساعدك به؟ شكرًا على اتصالك. أتمنى لك يومًا طيبًا."
+          },
+          {
+            "id": "cc_u5_farewell_2_choice_b",
+            "text": "Ya está, adiós.",
+            "isCorrect": false,
+            "textAr": "انتهى، وداعًا.",
+            "distractorRationaleAr": "مبتور بلا سؤال أخير ولا شكر."
+          },
+          {
+            "id": "cc_u5_farewell_2_choice_c",
+            "text": "Vale, vale, vale.",
+            "isCorrect": false,
+            "textAr": "تمام تمام تمام.",
+            "distractorRationaleAr": "عامية متكررة لا تصلح إغلاقًا."
+          }
+        ],
+        "targetVocab": [
+          "cierre",
+          "saludo"
+        ],
+        "explanationAr": "السؤال الأخير + الشكر + التحية = إغلاق كامل.",
+        "errorFeedback": {
+          "cc_u5_farewell_2_choice_b": "مبتور بلا سؤال أخير ولا شكر.",
+          "cc_u5_farewell_2_choice_c": "عامية متكررة لا تصلح إغلاقًا."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_farewell_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_farewell_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يقول: «هذا كل شيء». اختر الرد المهني.",
+        "stemEs": "— Vale, gracias. Eso es todo.",
+        "stemAr": "— حسنًا، شكرًا. هذا كل شيء.",
+        "options": [
+          {
+            "id": "cc_u5_farewell_3_reply_a",
+            "text": "Gracias por su llamada. Me despido y le deseo un buen día.",
+            "isCorrect": true,
+            "textAr": "شكرًا على اتصالك. أودّعك وأتمنى لك يومًا طيبًا."
+          },
+          {
+            "id": "cc_u5_farewell_3_reply_b",
+            "text": "Vale, adiós.",
+            "isCorrect": false,
+            "textAr": "حسنًا، وداعًا.",
+            "distractorRationaleAr": "وداع جاف بلا شكر."
+          },
+          {
+            "id": "cc_u5_farewell_3_reply_c",
+            "text": "¿Seguro? No me creo que sea todo.",
+            "isCorrect": false,
+            "textAr": "متأكد؟ لا أصدق أن هذا كل شيء.",
+            "distractorRationaleAr": "تشكيك في كلام العميل."
+          }
+        ],
+        "targetVocab": [
+          "despedirse",
+          "encuesta"
+        ],
+        "explanationAr": "الشكر + الوداع الصريح + التحية يغلق المكالمة بدفء.",
+        "errorFeedback": {
+          "cc_u5_farewell_3_reply_b": "وداع جاف بلا شكر.",
+          "cc_u5_farewell_3_reply_c": "تشكيك في كلام العميل."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u5_farewell_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_farewell_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة الشكر الختامية.",
+        "stemEs": "Gracias por su ____. Que tenga un buen día.",
+        "stemAr": "شكرًا على اتصالك. أتمنى لك يومًا طيبًا.",
+        "targetVocab": [
+          "llamada",
+          "gracias"
+        ],
+        "explanationAr": "«Gracias por su llamada» صيغة شكر ختامية ثابتة.",
+        "errorFeedback": {
+          "visita": "المكالمة هاتفية؛ و«visita» زيارة حضورية."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "llamada"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u5_farewell_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة وداع.",
+        "items": [
+          {
+            "id": "cc_u5_farewell_5_order_t1",
+            "kind": "token",
+            "text": "Gracias"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t2",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t3",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t4",
+            "kind": "token",
+            "text": "llamada."
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t5",
+            "kind": "token",
+            "text": "Que"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t6",
+            "kind": "token",
+            "text": "tenga"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t7",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t8",
+            "kind": "token",
+            "text": "buen"
+          },
+          {
+            "id": "cc_u5_farewell_5_order_t9",
+            "kind": "token",
+            "text": "día."
+          }
+        ],
+        "targetVocab": [
+          "despedida",
+          "cierre"
+        ],
+        "explanationAr": "ترتيب الوداع: الشكر ثم التحية الختامية.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Gracias por su llamada. Que tenga un buen día."
+          ],
+          "tokenOrder": [
+            "cc_u5_farewell_5_order_t1",
+            "cc_u5_farewell_5_order_t2",
+            "cc_u5_farewell_5_order_t3",
+            "cc_u5_farewell_5_order_t4",
+            "cc_u5_farewell_5_order_t5",
+            "cc_u5_farewell_5_order_t6",
+            "cc_u5_farewell_5_order_t7",
+            "cc_u5_farewell_5_order_t8",
+            "cc_u5_farewell_5_order_t9"
+          ]
+        }
+      },
+      {
+        "id": "cc_u5_farewell_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل إغلاق مكالمة كاملًا: سؤال أخير وشكر وتحية.",
+        "stemEs": "¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada. Que tenga un buen día.",
+        "stemAr": "هل هناك شيء آخر أساعدك به؟ شكرًا على اتصالك. أتمنى لك يومًا طيبًا.",
+        "targetVocab": [
+          "cierre",
+          "despedida"
+        ],
+        "explanationAr": "توقف بين الأجزاء الثلاثة؛ فالوداع المتعجل يفسد انطباع المكالمة كلها.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u5-farewell-speak",
+          "modelAnswer": "¿Hay algo más en lo que pueda ayudarle? Gracias por su llamada. Que tenga un buen día."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «فحص الرضا والوداع». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

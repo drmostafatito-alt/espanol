@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u0-diction",
+    "titleAr": "النطق الواضح وسرعة الكلام على الهاتف",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u0-phonetics-support",
+    "objectiveAr": "أن ينطق المتعلم بوضوح وبسرعة مناسبة على الهاتف، ويستخدم الوقفات القصيرة لتسهيل فهم العميل.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "pronunciación",
+      "ritmo",
+      "sílaba"
+    ],
+    "reviewVocabulary": [
+      "voz",
+      "tono",
+      "pausa"
+    ],
+    "targetStructures": [
+      "Hable despacio, por favor.",
+      "Voy a hablar con claridad.",
+      "¿Me escucha bien?"
+    ],
+    "grammarTopics": [
+      "diccion-ritmo-pausas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "مكالمة واردة، والعميل يشتكي من سرعة الكلام. أنت الموظفة سارة. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، مكالمة واردة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Buenos días, le atiende Sara de Atención al Cliente. Voy a hablar despacio y con claridad.",
+            "ar": "صباح الخير، تخدمك سارة من خدمة العملاء. سأتحدث ببطء ووضوح.",
+            "arEg": "صباح الخير، معاكي سارة من خدمة العملاء. هتكلم ببطء وبوضوح.",
+            "audioKey": "pending/cc-u0-diction-line-1"
+          },
+          {
+            "es": "Perdone, antes hablaba usted muy rápido y no entendía nada.",
+            "ar": "عذرًا، كنت تتحدثين بسرعة كبيرة من قبل ولم أفهم شيئًا.",
+            "arEg": "معلش، كنتي بتتكلمي بسرعة أوي ومفهمتش حاجة.",
+            "audioKey": "pending/cc-u0-diction-line-2"
+          },
+          {
+            "es": "Tiene razón. Ahora hablo sílaba por sílaba, con pausas cortas. ¿Me escucha bien?",
+            "ar": "معك حق. الآن أتحدث مقطعًا مقطعًا، مع وقفات قصيرة. هل تسمعني جيدًا؟",
+            "arEg": "عندك حق. دلوقتي بتكلم مقطع مقطع، بوقفات قصيرة. سامعني كويس؟",
+            "audioKey": "pending/cc-u0-diction-line-3"
+          },
+          {
+            "es": "Sí, ahora sí. Muchas gracias por hablar despacio.",
+            "ar": "نعم، الآن نعم. شكرًا جزيلًا على التحدث ببطء.",
+            "arEg": "أيوه، دلوقتي أيوه. شكرًا أوي إنك بتتكلمي ببطء.",
+            "audioKey": "pending/cc-u0-diction-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في المكالمات لا يرى العميل وجهك؛ لذلك يحمل صوتك كل المعنى: السرعة والنبرة والوقفات القصيرة.",
+    "pedagogicalRationaleAr": "الوضوح قبل السرعة: تدريب الإيقاع والوقفات يسبق تدريب المحتوى، لأن العميل لا يستطيع إعادة قراءة ما سمعه.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u0_diction_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u0_diction_1_listen_a",
+            "text": "Buenos días, le atiende Sara. Voy a hablar despacio y con claridad.",
+            "isCorrect": true,
+            "textAr": "صباح الخير، تخدمك سارة. سأتحدث ببطء ووضوح."
+          },
+          {
+            "id": "cc_u0_diction_1_listen_b",
+            "text": "Buenos días, le atiende Sara. Voy a hablar muy rápido hoy.",
+            "isCorrect": false,
+            "textAr": "صباح الخير، تخدمك سارة. سأتحدث بسرعة كبيرة اليوم.",
+            "distractorRationaleAr": "الصوت قال «despacio» (ببطء)، لا «muy rápido»."
+          },
+          {
+            "id": "cc_u0_diction_1_listen_c",
+            "text": "Buenos días, le atiende Sara. Voy a colgar ahora.",
+            "isCorrect": false,
+            "textAr": "صباح الخير، تخدمك سارة. سأغلق الخط الآن.",
+            "distractorRationaleAr": "الصوت لم يذكر إغلاق الخط؛ بل وعد بالوضوح."
+          }
+        ],
+        "targetVocab": [
+          "pronunciación",
+          "ritmo"
+        ],
+        "explanationAr": "الجملة المسموعة تعد بالكلام البطيء الواضح؛ والخياران الآخران يغيران المعنى تمامًا.",
+        "errorFeedback": {
+          "cc_u0_diction_1_listen_b": "الصوت قال «despacio» (ببطء)، لا «muy rápido».",
+          "cc_u0_diction_1_listen_c": "الصوت لم يذكر إغلاق الخط؛ بل وعد بالوضوح."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u0-diction-listen",
+        "speechEs": "Buenos días, le atiende Sara. Voy a hablar despacio y con claridad.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_diction_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_diction_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تُظهر نطقًا واضحًا وسرعة مناسبة؟",
+        "options": [
+          {
+            "id": "cc_u0_diction_2_choice_a",
+            "text": "Hable despacio y con claridad, por favor.",
+            "isCorrect": true,
+            "textAr": "تحدث ببطء ووضوح من فضلك."
+          },
+          {
+            "id": "cc_u0_diction_2_choice_b",
+            "text": "Hable rápido, que tengo prisa.",
+            "isCorrect": false,
+            "textAr": "تحدث بسرعة، فأنا مستعجل.",
+            "distractorRationaleAr": "السرعة تضر الفهم على الهاتف."
+          },
+          {
+            "id": "cc_u0_diction_2_choice_c",
+            "text": "No hable, solo escriba.",
+            "isCorrect": false,
+            "textAr": "لا تتحدث، اكتب فقط.",
+            "distractorRationaleAr": "العميل يتصل ليتحدث؛ والكتابة ليست بديلًا في مكالمة."
+          }
+        ],
+        "targetVocab": [
+          "pausa",
+          "claro"
+        ],
+        "explanationAr": "الطلب المهذب يجمع السرعة المناسبة والوضوح؛ والخياران الآخران يرفضان التواصل الصوتي.",
+        "errorFeedback": {
+          "cc_u0_diction_2_choice_b": "السرعة تضر الفهم على الهاتف.",
+          "cc_u0_diction_2_choice_c": "العميل يتصل ليتحدث؛ والكتابة ليست بديلًا في مكالمة."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_diction_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_diction_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يقول إنه لا يسمعك جيدًا. اختر الرد المهني.",
+        "stemEs": "— Perdone, no le oigo bien.",
+        "stemAr": "— عذرًا، لا أسمعك جيدًا.",
+        "options": [
+          {
+            "id": "cc_u0_diction_3_reply_a",
+            "text": "Disculpe, voy a hablar más despacio y con claridad. ¿Me escucha mejor ahora?",
+            "isCorrect": true,
+            "textAr": "عذرًا، سأتحدث أبطأ وبوضوح. هل تسمعني أفضل الآن؟"
+          },
+          {
+            "id": "cc_u0_diction_3_reply_b",
+            "text": "Hable usted más alto, que yo no puedo.",
+            "isCorrect": false,
+            "textAr": "تحدث بصوت أعلى، فأنا لا أستطيع.",
+            "distractorRationaleAr": "تحميل العميل مسؤولية السمع يخالف المهنية."
+          },
+          {
+            "id": "cc_u0_diction_3_reply_c",
+            "text": "Es problema de su teléfono.",
+            "isCorrect": false,
+            "textAr": "المشكلة في هاتفك.",
+            "distractorRationaleAr": "اتهام جهاز العميل بلا دليل يزيد التوتر."
+          }
+        ],
+        "targetVocab": [
+          "voz",
+          "tono"
+        ],
+        "explanationAr": "الرد المهني يعدل السرعة والوضوح أولًا، ثم يتحقق من التحسن بسؤال مهذب.",
+        "errorFeedback": {
+          "cc_u0_diction_3_reply_b": "تحميل العميل مسؤولية السمع يخالف المهنية.",
+          "cc_u0_diction_3_reply_c": "اتهام جهاز العميل بلا دليل يزيد التوتر."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_diction_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_diction_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل طلب الكلام البطيء.",
+        "stemEs": "Hable ____, por favor, para que le entienda bien.",
+        "stemAr": "تحدث ببطء من فضلك، لكي أفهمك جيدًا.",
+        "targetVocab": [
+          "ritmo",
+          "despacio"
+        ],
+        "explanationAr": "«Hable despacio» صيغة أمر مهذبة مع usted؛ و«más despacio» تعني أبطأ من السرعة الحالية.",
+        "errorFeedback": {
+          "rápido": "«rápido» عكس المطلوب على الهاتف."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "despacio",
+            "más despacio"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u0_diction_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين طلب مهذب.",
+        "items": [
+          {
+            "id": "cc_u0_diction_5_order_t1",
+            "kind": "token",
+            "text": "Hable"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t2",
+            "kind": "token",
+            "text": "despacio"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t3",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t4",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t5",
+            "kind": "token",
+            "text": "claridad,"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t6",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "cc_u0_diction_5_order_t7",
+            "kind": "token",
+            "text": "favor."
+          }
+        ],
+        "targetVocab": [
+          "claridad",
+          "pausa"
+        ],
+        "explanationAr": "ترتيب الطلب: الفعل ثم الحال ثم ظرف الوضوح ثم «por favor».",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Hable despacio y con claridad, por favor."
+          ],
+          "tokenOrder": [
+            "cc_u0_diction_5_order_t1",
+            "cc_u0_diction_5_order_t2",
+            "cc_u0_diction_5_order_t3",
+            "cc_u0_diction_5_order_t4",
+            "cc_u0_diction_5_order_t5",
+            "cc_u0_diction_5_order_t6",
+            "cc_u0_diction_5_order_t7"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_diction_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل افتتاحك بصوت واضح وبطيء، مع وقفة قصيرة بعد التعريف.",
+        "stemEs": "Buenos días, le atiende Sara de Atención al Cliente. Voy a hablar despacio y con claridad.",
+        "stemAr": "صباح الخير، تخدمك سارة من خدمة العملاء. سأتحدث ببطء ووضوح.",
+        "targetVocab": [
+          "pronunciación",
+          "ritmo"
+        ],
+        "explanationAr": "الوضوح أهم من السرعة: انطق نهاية الكلمات، وتوقف وقفة قصيرة بعد التعريف.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النطق والسرعة المناسبة",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "النبرة المهنية المهذبة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u0-diction-speak",
+          "modelAnswer": "Buenos días, le atiende Sara de Atención al Cliente. Voy a hablar despacio y con claridad."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «النطق الواضح». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

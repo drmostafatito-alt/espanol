@@ -2,9 +2,8 @@
   "schemaVersion": "2.0.0",
   "status": "proposed",
   "titleAr": "خريطة المنهج — من PREA1 إلى C1 + مسارات جانبية",
-
-  "updatedAt": "2026-10-27",
-  "note": "الهيكل الكامل للمستويات والوحدات. أهداف على مستوى الدرس موجودة لكل الدروس الـ212 المكتوبة ولكل الدروس الـ12 المخططة في PREA1؛ أما محتوى PREA1 نفسه فلم يُكتب بعد (فجوة معلنة، انظر gaps).",
+  "updatedAt": "2026-10-28",
+  "note": "الهيكل الكامل للمستويات والوحدات. أهداف على مستوى الدرس موجودة لكل الدروس الـ256 المخططة، وملفات محتوى مؤلَّفة كمسودات لكل الدروس الـ256 (بما فيها PREA1 والمساران الجانبيان)؛ كل المحتوى draft غير مراجَع بشريًا وغير منشور (انظر gaps).",
   "honestyRules": [
     "وجود اسم مستوى لا يعني تغطية CEFR: التغطية تُقاس بالدروس المكتوبة والمراجَعة لا بالعناوين.",
     "الأعداد في plannedLessonCount أهداف تخطيطية لا محتوى منتَج.",
@@ -60,7 +59,10 @@
                     "pronunciation"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-abecedario.json",
+                  "vocabPack": null,
+                  "requires": []
                 },
                 {
                   "slug": "prea1-vocales",
@@ -71,7 +73,12 @@
                     "pronunciation"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-vocales.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-abecedario"
+                  ]
                 },
                 {
                   "slug": "prea1-h-muda",
@@ -83,7 +90,12 @@
                     "vocabulary"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-h-muda.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-vocales"
+                  ]
                 }
               ]
             },
@@ -103,7 +115,10 @@
                     "pronunciation"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-silabas.json",
+                  "vocabPack": null,
+                  "requires": []
                 },
                 {
                   "slug": "prea1-acento-escrito",
@@ -114,7 +129,12 @@
                     "pronunciation"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-acento-escrito.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-silabas"
+                  ]
                 },
                 {
                   "slug": "prea1-entonacion",
@@ -125,7 +145,12 @@
                     "speaking"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-entonacion.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-acento-escrito"
+                  ]
                 }
               ]
             },
@@ -146,7 +171,10 @@
                     "vocabulary"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-saludos-basicos.json",
+                  "vocabPack": null,
+                  "requires": []
                 },
                 {
                   "slug": "prea1-numeros-1-10",
@@ -157,7 +185,12 @@
                     "vocabulary"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-numeros-1-10.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-saludos-basicos"
+                  ]
                 },
                 {
                   "slug": "prea1-como-estas",
@@ -168,7 +201,12 @@
                     "listening"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-como-estas.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-numeros-1-10"
+                  ]
                 }
               ]
             },
@@ -191,7 +229,10 @@
                   ],
                   "status": "planned",
                   "levelCode": "PREA1",
-                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد."
+                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد.",
+                  "filePath": "content/drafts/prea1/lesson-prea1-hola-me-llamo.json",
+                  "vocabPack": null,
+                  "requires": []
                 },
                 {
                   "slug": "prea1-soy-tengo",
@@ -202,7 +243,12 @@
                     "writing"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-soy-tengo.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-hola-me-llamo"
+                  ]
                 },
                 {
                   "slug": "prea1-practica-integrada",
@@ -214,7 +260,12 @@
                     "speaking"
                   ],
                   "status": "planned",
-                  "levelCode": "PREA1"
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-practica-integrada.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-soy-tengo"
+                  ]
                 }
               ]
             }
@@ -4462,7 +4513,82 @@
               "objectiveAr": "أن يتسوق المتعلم ويسأل عن السعر والمقاس.",
               "levelCode": "A1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "tr-u5-precios",
+                  "titleAr": "السؤال عن السعر والمساومة",
+                  "objectiveAr": "أن يسأل المتعلم عن سعر سلعة في متجر، ويفهم السعر باليورو، ويتفاوض بأدب على تخفيض بسيط.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u5-precios.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u5-tallas",
+                  "titleAr": "المقاسات وتجربة الملابس",
+                  "objectiveAr": "أن يسأل المتعلم عن مقاسه، ويطلب تجربة قطعة ملابس في غرفة القياس، ويقول إنها مناسبة أو كبيرة أو صغيرة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u5-tallas.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u5-precios"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u5-pagar-devolver",
+                  "titleAr": "الدفع والإرجاع والتبديل",
+                  "objectiveAr": "أن يدفع المتعلم في الصندوق، ويحتفظ بالإيصال، ويطلب إرجاع سلعة معيبة أو تبديلها بمقاس آخر.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u5-pagar-devolver.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u5-tallas"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u5-mercado",
+                  "titleAr": "السوق وشراء الهدايا التذكارية",
+                  "objectiveAr": "أن يشتري المتعلم هدايا تذكارية في سوق، ويسأل عن سعرها، ويتحدث عن الحرف اليدوية والبائع.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u5-mercado.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u5-pagar-devolver"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "tr-u6-emergencies",
@@ -4470,7 +4596,82 @@
               "objectiveAr": "أن يطلب المتعلم المساعدة في موقف طارئ.",
               "levelCode": "A2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "tr-u6-ayuda",
+                  "titleAr": "طلب المساعدة العاجلة والاتصال بالطوارئ",
+                  "objectiveAr": "أن يطلب المتعلم المساعدة في موقف طارئ، ويتصل برقم الطوارئ 112، ويصف ما حدث بجمل قصيرة واضحة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u6-ayuda.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u6-perdida-robo",
+                  "titleAr": "ضياع الوثائق والسرقة",
+                  "objectiveAr": "أن يشرح المتعلم أنه فقد جواز سفره أو سُرقت محفظته، ويصف ما ضاع، ويطلب المساعدة لاسترجاعه.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u6-perdida-robo.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u6-ayuda"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u6-salud",
+                  "titleAr": "طوارئ الصحة والصيدلية",
+                  "objectiveAr": "أن يصف المتعلم أعراضًا بسيطة في الصيدلية، ويطلب دواءً، ويفهم سؤال الصيدلي عن الحساسية والوصفة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u6-salud.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u6-perdida-robo"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "tr-u6-denuncia",
+                  "titleAr": "البلاغ في الشرطة ومساعدة السفارة",
+                  "objectiveAr": "أن يقدم المتعلم بلاغًا في مركز الشرطة عن سرقة، ويذكر بياناته ووثائقه، ويطلب مساعدة السفارة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/travel/lesson-tr-u6-denuncia.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "tr-u6-salud"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -4494,7 +4695,82 @@
               "objectiveAr": "أن يميّز المتعلم الأصوات واللهجات عبر الهاتف.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u0-diction",
+                  "titleAr": "النطق الواضح وسرعة الكلام على الهاتف",
+                  "objectiveAr": "أن ينطق المتعلم بوضوح وبسرعة مناسبة على الهاتف، ويستخدم الوقفات القصيرة لتسهيل فهم العميل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u0-diction.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u0-spelling",
+                  "titleAr": "تهجئة الأسماء والكلمات بصوت عالٍ",
+                  "objectiveAr": "أن يهجّئ المتعلم الأسماء والكلمات حرفًا حرفًا، ويستخدم أمثلة توضيحية لكل حرف عند الحاجة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u0-spelling.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u0-diction"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u0-numbers",
+                  "titleAr": "الأرقام والتواريخ والمبالغ المسموعة عبر الهاتف",
+                  "objectiveAr": "أن يفهم المتعلم الأرقام والتواريخ والمبالغ عند سماعها عبر الهاتف، ويؤكدها بتكرارها بصوت واضح.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u0-numbers.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u0-spelling"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u0-accents",
+                  "titleAr": "اللهجات الإقليمية وطلب التكرار بأدب",
+                  "objectiveAr": "أن يميّز المتعلم الفروق بين اللهجات الإقليمية، ويطلب التكرار أو التوضيح بصيغ مهذبة دون مقاطعة العميل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u0-accents.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u0-numbers"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "cc-u1-opening-verification",
@@ -4585,7 +4861,82 @@
               "objectiveAr": "أن يفهم المتعلم المشكلة ويعيد صياغتها للتأكد.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u2-listening",
+                  "titleAr": "الاستماع الفعّال والأسئلة المفتوحة",
+                  "objectiveAr": "أن يستمع المتعلم بفاعلية دون مقاطعة، ويطرح أسئلة مفتوحة تكشف تفاصيل المشكلة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u2-listening.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u2-paraphrasing",
+                  "titleAr": "إعادة الصياغة وتأكيد المشكلة",
+                  "objectiveAr": "أن يعيد المتعلم صياغة مشكلة العميل بكلماته، ويؤكد فهمه قبل تقديم أي حل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u2-paraphrasing.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u2-listening"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u2-vague",
+                  "titleAr": "توضيح الشكاوى الغامضة",
+                  "objectiveAr": "أن يحوّل المتعلم الشكوى الغامضة إلى وصف دقيق، بأسئلة توضيحية مهذبة عن الزمان والمكان والتفاصيل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u2-vague.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u2-paraphrasing"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u2-notes",
+                  "titleAr": "تدوين الملاحظات وتلخيص الحالة",
+                  "objectiveAr": "أن يدوّن المتعلم ملاحظات منظمة أثناء المكالمة، ويلخّص الحالة للعميل للتأكد قبل المتابعة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u2-notes.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u2-vague"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "cc-u3-solutions",
@@ -4593,7 +4944,82 @@
               "objectiveAr": "أن يقدّم المتعلم حلولًا وبدائل واضحة.",
               "levelCode": "B1",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u3-steps",
+                  "titleAr": "عرض الحل خطوة بخطوة",
+                  "objectiveAr": "أن يعرض المتعلم الحل خطوة بخطوة بلغة واضحة، ويتحقق من فهم العميل بعد كل خطوة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u3-steps.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u3-alternatives",
+                  "titleAr": "البدائل عند فشل الخيار الأول",
+                  "objectiveAr": "أن يقدّم المتعلم بديلًا واضحًا عندما يفشل الخيار الأول، ويشرح الفرق بين الخيارين بصدق.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u3-alternatives.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u3-steps"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u3-deadlines",
+                  "titleAr": "شرح المواعيد والخطوات التالية",
+                  "objectiveAr": "أن يشرح المتعلم المواعيد والخطوات التالية بدقة، ويحدد ما سيفعله هو وما يُنتظر من العميل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u3-deadlines.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u3-alternatives"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u3-acceptance",
+                  "titleAr": "تأكيد قبول العميل للحل",
+                  "objectiveAr": "أن يتأكد المتعلم من قبول العميل للحل المقترح، ويوثّق الاتفاق قبل إنهاء المكالمة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u3-acceptance.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u3-deadlines"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "cc-u4-complaints",
@@ -4601,7 +5027,82 @@
               "objectiveAr": "أن يتعامل المتعلم مع شكوى ويصعّدها عند الحاجة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u4-empathy",
+                  "titleAr": "التعاطف وصيغ الاعتذار",
+                  "objectiveAr": "أن يعبّر المتعلم عن التعاطف والاعتذار بصيغ مهنية صادقة، دون تحميل العميل مسؤولية المشكلة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u4-empathy.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u4-calming",
+                  "titleAr": "تهدئة عميل غاضب",
+                  "objectiveAr": "أن يهدّئ المتعلم عميلًا غاضبًا بخفض السرعة والنبرة، والاعتراف بالمشاعر، وتقديم خطوة عملية فورية.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u4-calming.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u4-empathy"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u4-escalation",
+                  "titleAr": "معايير التصعيد وتسليم الحالة",
+                  "objectiveAr": "أن يميّز المتعلم الحالات التي تستدعي التصعيد، ويسلّم الحالة لزميل مختص بملخص كامل ودون تكرار الأسئلة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u4-escalation.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u4-calming"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u4-saying-no",
+                  "titleAr": "قول لا بأدب مع الحفاظ على العميل",
+                  "objectiveAr": "أن يرفض المتعلم طلبًا غير ممكن بأدب، ويقدّم بديلًا حقيقيًا يحافظ على علاقة العميل بالشركة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u4-saying-no.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u4-escalation"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "cc-u5-closing-quality",
@@ -4609,7 +5110,82 @@
               "objectiveAr": "أن يغلق المتعلم المكالمة ويؤكد المتابعة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u5-recap",
+                  "titleAr": "تلخيص الاتفاقات قبل الإغلاق",
+                  "objectiveAr": "أن يلخّص المتعلم الاتفاقات قبل إغلاق المكالمة، ويصحح أي سوء فهم قبل الوداع.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u5-recap.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u5-followup",
+                  "titleAr": "التزامات المتابعة وأرقام المرجع",
+                  "objectiveAr": "أن يحدد المتعلم التزامات المتابعة بوضوح، ويزوّد العميل برقم مرجع وهمي للتدريب وطريقة التواصل التالية.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u5-followup.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u5-recap"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u5-farewell",
+                  "titleAr": "فحص الرضا وصيغ الوداع",
+                  "objectiveAr": "أن يفحص المتعلم رضا العميل قبل الوداع، ويغلق المكالمة بصيغ وداع مهنية دافئة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u5-farewell.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u5-followup"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u5-quality",
+                  "titleAr": "الفحص الذاتي للجودة: مكالمة جيدة",
+                  "objectiveAr": "أن يقيّم المتعلم مكالمته ذاتيًا وفق معايير الجودة، ويحدد نقطة تحسين واحدة للمكالمة التالية.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u5-quality.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u5-farewell"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             },
             {
               "slug": "cc-u6-writing",
@@ -4617,7 +5193,82 @@
               "objectiveAr": "أن يكتب المتعلم بريدًا/تذكرة تلخّص المكالمة.",
               "levelCode": "B2",
               "plannedLessonCount": 4,
-              "lessons": []
+              "lessons": [
+                {
+                  "slug": "cc-u6-email-structure",
+                  "titleAr": "بنية البريد المهني",
+                  "objectiveAr": "أن يكتب المتعلم بريدًا مهنيًا ببنية كاملة: موضوع واضح وتحية ونص منظم ووداع وتوقيع.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u6-email-structure.json",
+                  "vocabPack": null,
+                  "requires": [],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u6-ticket",
+                  "titleAr": "كتابة ملخص التذكرة",
+                  "objectiveAr": "أن يكتب المتعلم ملخص تذكرة دقيقًا يفرّق بين الوقائع والإجراء والنتيجة، دون آراء أو بيانات غير مؤكدة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u6-ticket.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u6-email-structure"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u6-complaint-reply",
+                  "titleAr": "الرد الكتابي على شكوى",
+                  "objectiveAr": "أن يرد المتعلم كتابيًا على شكوى بتعاطف واعتذار وحل محدد وموعد متابعة، بلغة رسمية مكتوبة.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u6-complaint-reply.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u6-ticket"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                },
+                {
+                  "slug": "cc-u6-written-vs-spoken",
+                  "titleAr": "الصيغ المكتوبة الرسمية مقابل المنطوقة",
+                  "objectiveAr": "أن يميّز المتعلم بين الصيغ المكتوبة الرسمية والصيغ المنطوقة، ويختار الصيغة المناسبة لكل قناة تواصل.",
+                  "status": "planned",
+                  "filePath": "content/drafts/callcenter/lesson-cc-u6-written-vs-spoken.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "cc-u6-complaint-reply"
+                  ],
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "writing",
+                    "grammar",
+                    "vocabulary"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -4631,25 +5282,22 @@
     "مسار المفردات لا يُغلق أبدًا ولا يعتمد على تقدم أي درس."
   ],
   "gaps": [
-
-    "PREA1: 12 درسًا مخططًا بأهداف بلا ملفات محتوى بعد.",
-    "المسارات الجانبية: السفر 16 درسًا من 24 مخططًا، والكول سنتر 4 دروس من 28 مخططًا؛ باقي الوحدات هيكل بلا دروس.",
+    "اكتملت الملفات المخططة: 256 درسًا مؤلَّفًا كمسودات (بما فيها PREA1 والمساران الجانبيان)؛ لا درس منشور بعد.",
     "مسار المفردات الأساسية: لا مصدر تكرار مرخَّص بعد؛ الترتيب داخلي.",
-    "المراجعة البشرية: 0 من 212 درسًا مراجَعًا (spanishReviewer وtranslationReviewer فارغتان).",
+    "المراجعة البشرية: 0 من 256 درسًا مراجَعًا (spanishReviewer وtranslationReviewer فارغتان).",
     "لا يوجد محتوى صوتي مُنتَج ولا محتوى منشور ولا مراجعة بشرية موثّقة."
   ],
   "coverage": {
     "claimFullCefr": false,
-
-    "noteAr": "أسماء المستويات (PREA1…C1) تصف هيكل المنهج المخطَّط، وليست دليل تغطية. ما هو مكتوب فعلًا الآن: 212 ملف درس (A1–C1 والمساران الجانبيان)، و12 درس PREA1 مخططًا بلا ملفات، و58 حزمة مفردات (8,509 مدخلًا). كل المحتوى draft غير مراجَع بشريًا.",
-    "asOf": "2026-10-27",
-    "authoredLessonFiles": 212,
+    "noteAr": "أسماء المستويات (PREA1…C1) تصف هيكل المنهج المخطَّط، وليست دليل تغطية. ما هو مكتوب فعلًا الآن: 256 ملف درس (المسار الأساسي 204 بما فيها PREA1، والسفر 24، والكول سنتر 28)، و61 حزمة مفردات (8,572 مدخلًا). كل المحتوى draft غير مراجَع بشريًا.",
+    "asOf": "2026-10-28",
+    "authoredLessonFiles": 256,
     "byTrack": {
       "main-track": {
         "plannedLessons": 204,
-        "authoredLessons": 192,
+        "authoredLessons": 204,
         "units": 52,
-        "unitsWithContent": 48
+        "unitsWithContent": 52
       },
       "core-vocab": {
         "plannedLessons": 0,
@@ -4659,19 +5307,18 @@
       },
       "travel": {
         "plannedLessons": 24,
-        "authoredLessons": 16,
+        "authoredLessons": 24,
         "units": 6,
-        "unitsWithContent": 4
+        "unitsWithContent": 6
       },
       "callcenter": {
         "plannedLessons": 28,
-        "authoredLessons": 4,
+        "authoredLessons": 28,
         "units": 7,
-        "unitsWithContent": 1
+        "unitsWithContent": 7
       }
     },
     "coreVocabPacks": {
-
       "authored": 46,
       "entries": 7955,
       "planned": 50,
@@ -4686,19 +5333,16 @@
       "vocabulary": "حزم مفردات مرتبطة بدروسها عبر lesson_vocabulary"
     },
     "gaps": [
-      "PREA1: 12 درس مخطط بلا ملفات (لم تُؤلَّف بعد)؛ المسار يبدأ من أول درس مكتوب.",
-      "المسار الأساسي: 192 من 204 درس مكتوب (12 بلا ملفات). كل المحتوى draft غير منشور.",
-      "مسار السفر: 4 وحدات من 6 بها محتوى (16 من 24 درسًا).",
-      "مسار الكول سنتر: وحدة واحدة من 7 بها محتوى (4 من 28 درسًا).",
-      "المفردات: 58 حزمة مكتوبة (8509 مدخلًا) مقابل 50 مخططة؛ الحزم الزائدة وحدات موضوعية.",
+      "كل الدروس المخططة مؤلَّفة كمسودات: 256 من 256 درسًا (المسار الأساسي 204، السفر 24، الكول سنتر 28)؛ لا درس منشور بعد.",
+      "المفردات: 61 حزمة مكتوبة (8572 مدخلًا) مقابل 50 مخططة؛ الحزم الزائدة وحدات موضوعية ومسارية.",
       "لا صوت مُنتَج لأي درس؛ كل audioKey بحالة pending.",
       "لا مراجعة بشرية إسبانية أو عربية لأي درس (المطلوب قبل النشر)."
     ],
     "totals": {
       "plannedLessonsAllTracks": 256,
       "plannedLessonsMainTrackOnly": 204,
-      "authoredLessons": 212,
-      "noteAr": "الرقم 256 = مجموع الدروس المخطّطة في كل المسارات؛ و204 = المسار الأساسي وحده. 212 درس مكتوب فعليًا (كلها draft)."
+      "authoredLessons": 256,
+      "noteAr": "الرقم 256 = مجموع الدروس المخطّطة في كل المسارات؛ و204 = المسار الأساسي وحده. 256 درس مكتوب فعليًا (كلها draft)."
     }
   }
 }

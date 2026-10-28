@@ -172,6 +172,7 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
   const structuredLinks = [];
   const errors = [];
   const counters = { programs: 0, units: 0, lessons: 0, versions: 0, exercises: 0, options: 0, items: 0, vocab: 0, senses: 0, tags: 0 };
+  const versions = {}; // slug ⇒ {versionNo, contentHash} — ليُسلسل المستورِد أرقام الإصدارات عبر مجلدات متعددة
 
   const mergedPrograms = pathFiles.flatMap(f => load(f).programs ?? []);
   if (mergedPrograms.length) {
@@ -255,6 +256,7 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
     const prior = existingVersions[L.slug];
     const versionNo = prior && prior.contentHash !== contentHash ? prior.versionNo + 1 : (prior?.versionNo ?? 1);
     const versionId = stableId('lv', `${L.slug}#${versionNo}#${contentHash.slice(0, 12)}`);
+    versions[L.slug] = { versionNo, contentHash };
 
     // قاعدة الفتح: إن كانت «متسلسل» ولم يعلن الدرس متطلباته صراحةً، نشتقها من
     // ترتيب الوحدة في paths.json. بلا هذا الاشتقاق يبقى كل درس مفتوحًا.
@@ -475,5 +477,5 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
 
   statements.push(...deferredVocabLinks);
 
-  return { statements, answers, counters, errors, unresolvedVocabRefs, links: structuredLinks, linkStatements: deferredVocabLinks };
+  return { statements, answers, counters, errors, unresolvedVocabRefs, links: structuredLinks, linkStatements: deferredVocabLinks, versions };
 }

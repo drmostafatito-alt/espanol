@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u4-empathy",
+    "titleAr": "التعاطف وصيغ الاعتذار",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u4-complaints",
+    "objectiveAr": "أن يعبّر المتعلم عن التعاطف والاعتذار بصيغ مهنية صادقة، دون تحميل العميل مسؤولية المشكلة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "empatía",
+      "daño",
+      "lamentar"
+    ],
+    "reviewVocabulary": [
+      "disculpa",
+      "molestia",
+      "inconveniente"
+    ],
+    "targetStructures": [
+      "Lamento mucho…",
+      "Entiendo su molestia.",
+      "Le pido disculpas por…"
+    ],
+    "grammarTopics": [
+      "empatia-disculpas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل متضرر من تلف منتج. أنت الموظفة مارتا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، اعتذار عن تلف (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Lamento mucho lo ocurrido. Entiendo su molestia: el producto llegó con un daño visible.",
+            "ar": "آسفة جدًا لما حدث. أتفهّم انزعاجك: وصل المنتج بتلف ظاهر.",
+            "arEg": "آسفة أوي للي حصل. فاهمة انزعاجك: المنتج وصل وفيه تلف باين.",
+            "audioKey": "pending/cc-u4-empathy-line-1"
+          },
+          {
+            "es": "Sí, y nadie me llamó para avisarme.",
+            "ar": "نعم، ولم يتصل بي أحد ليخبرني.",
+            "arEg": "أيوه، ومحدش كلمني عشان يبلغني.",
+            "audioKey": "pending/cc-u4-empathy-line-2"
+          },
+          {
+            "es": "Le pido disculpas por la falta de aviso. Voy a tramitar el cambio ahora mismo.",
+            "ar": "أعتذر عن غياب الإشعار. سأتولّى إجراء التبديل الآن.",
+            "arEg": "بعتذر عن غياب التبليغ. هخلّص إجراء التبديل دلوقتي.",
+            "audioKey": "pending/cc-u4-empathy-line-3"
+          },
+          {
+            "es": "Gracias. El daño no es culpa mía, ¿verdad?",
+            "ar": "شكرًا. التلف ليس خطئي، صحيح؟",
+            "arEg": "شكرًا. التلف مش غلطتي، صح؟",
+            "audioKey": "pending/cc-u4-empathy-line-4"
+          },
+          {
+            "es": "Claro que no. Es un error nuestro y lo corregimos.",
+            "ar": "بالطبع لا. إنه خطأ منا وسنصححه.",
+            "arEg": "طبعًا لأ. ده غلط مننا وهنصلحه.",
+            "audioKey": "pending/cc-u4-empathy-line-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الاعتذار المهني يعترف بالواقعة («lamento lo ocurrido») دون اعتراف قانوني مبالغ فيه؛ والصدق في حدوده يحمي العميل والشركة معًا.",
+    "pedagogicalRationaleAr": "التعاطف يُسمَع قبل الحل: جملة اعتراف واحدة صادقة تخفض حدة المكالمة أكثر من ثلاث جمل حل متعجلة.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u4_empathy_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u4_empathy_1_listen_a",
+            "text": "Lamento mucho los inconvenientes. Entiendo su molestia.",
+            "isCorrect": true,
+            "textAr": "آسف جدًا للإزعاج. أتفهّم انزعاجك."
+          },
+          {
+            "id": "cc_u4_empathy_1_listen_b",
+            "text": "Lamento poco los inconvenientes. Entiendo su molestia.",
+            "isCorrect": false,
+            "textAr": "آسف قليلًا للإزعاج. أتفهّم انزعاجك.",
+            "distractorRationaleAr": "الصوت قال «mucho» لا «poco»."
+          },
+          {
+            "id": "cc_u4_empathy_1_listen_c",
+            "text": "Lamento mucho los inconvenientes. No entiendo su molestia.",
+            "isCorrect": false,
+            "textAr": "آسف جدًا للإزعاج. لا أفهم انزعاجك.",
+            "distractorRationaleAr": "الصوت قال «entiendo» لا «no entiendo»."
+          }
+        ],
+        "targetVocab": [
+          "lamento",
+          "molestia"
+        ],
+        "explanationAr": "الاعتذار الكامل + الاعتراف بالشعور = تعاطف مهني.",
+        "errorFeedback": {
+          "cc_u4_empathy_1_listen_b": "الصوت قال «mucho» لا «poco».",
+          "cc_u4_empathy_1_listen_c": "الصوت قال «entiendo» لا «no entiendo»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u4-empathy-listen",
+        "speechEs": "Lamento mucho los inconvenientes. Entiendo su molestia.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_empathy_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_empathy_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة اعتذار مهنية صادقة؟",
+        "options": [
+          {
+            "id": "cc_u4_empathy_2_choice_a",
+            "text": "Lamento mucho lo ocurrido. Le pido disculpas por el retraso.",
+            "isCorrect": true,
+            "textAr": "آسف جدًا لما حدث. أعتذر عن التأخير."
+          },
+          {
+            "id": "cc_u4_empathy_2_choice_b",
+            "text": "Lo siento, pero es culpa suya.",
+            "isCorrect": false,
+            "textAr": "آسف، لكنه خطؤك.",
+            "distractorRationaleAr": "اعتذار ملغى بتحميل العميل المسؤولية."
+          },
+          {
+            "id": "cc_u4_empathy_2_choice_c",
+            "text": "No pasó nada, no exagere.",
+            "isCorrect": false,
+            "textAr": "لم يحدث شيء، لا تبالغ.",
+            "distractorRationaleAr": "إنكار الواقعة يهين العميل."
+          }
+        ],
+        "targetVocab": [
+          "disculpa",
+          "inconveniente"
+        ],
+        "explanationAr": "الاعتذار يسمّي الواقعة ولا يحمّل العميل شيئًا.",
+        "errorFeedback": {
+          "cc_u4_empathy_2_choice_b": "اعتذار ملغى بتحميل العميل المسؤولية.",
+          "cc_u4_empathy_2_choice_c": "إنكار الواقعة يهين العميل."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_empathy_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_empathy_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يقول: «هذا غير مقبول». اختر الرد المهني.",
+        "stemEs": "— Esto es inaceptable.",
+        "stemAr": "— هذا غير مقبول.",
+        "options": [
+          {
+            "id": "cc_u4_empathy_3_reply_a",
+            "text": "Tiene razón en estar molesto. Lamento lo ocurrido y voy a corregirlo ahora.",
+            "isCorrect": true,
+            "textAr": "معك حق في الانزعاج. آسف لما حدث وسأصححه الآن."
+          },
+          {
+            "id": "cc_u4_empathy_3_reply_b",
+            "text": "Cálmese, no es tan grave.",
+            "isCorrect": false,
+            "textAr": "اهدأ، الأمر ليس بهذه الخطورة.",
+            "distractorRationaleAr": "التقليل من الواقعة يزيد الغضب."
+          },
+          {
+            "id": "cc_u4_empathy_3_reply_c",
+            "text": "No es mi problema.",
+            "isCorrect": false,
+            "textAr": "ليست مشكلتي.",
+            "distractorRationaleAr": "التنصل من المسؤولية يغلق الحوار."
+          }
+        ],
+        "targetVocab": [
+          "empatía",
+          "daño"
+        ],
+        "explanationAr": "الاعتراف بحق العميل في الانزعاج + الاعتذار + الإجراء = رد مهني.",
+        "errorFeedback": {
+          "cc_u4_empathy_3_reply_b": "التقليل من الواقعة يزيد الغضب.",
+          "cc_u4_empathy_3_reply_c": "التنصل من المسؤولية يغلق الحوار."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_empathy_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_empathy_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة الاعتذار.",
+        "stemEs": "____ mucho los inconvenientes.",
+        "stemAr": "آسف جدًا للإزعاج.",
+        "targetVocab": [
+          "lamento",
+          "inconveniente"
+        ],
+        "explanationAr": "«Lamento mucho los inconvenientes» صيغة اعتذار ثابتة في خدمة العملاء.",
+        "errorFeedback": {
+          "Siento": "«Lo siento» صحيحة، لكن الصيغة المطلوبة هنا «Lamento»."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Lamento"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u4_empathy_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة اعتذار.",
+        "items": [
+          {
+            "id": "cc_u4_empathy_5_order_t1",
+            "kind": "token",
+            "text": "Lamento"
+          },
+          {
+            "id": "cc_u4_empathy_5_order_t2",
+            "kind": "token",
+            "text": "mucho"
+          },
+          {
+            "id": "cc_u4_empathy_5_order_t3",
+            "kind": "token",
+            "text": "los"
+          },
+          {
+            "id": "cc_u4_empathy_5_order_t4",
+            "kind": "token",
+            "text": "inconvenientes"
+          },
+          {
+            "id": "cc_u4_empathy_5_order_t5",
+            "kind": "token",
+            "text": "ocasionados."
+          }
+        ],
+        "targetVocab": [
+          "lamento",
+          "disculpa"
+        ],
+        "explanationAr": "ترتيب الاعتذار: الفعل ثم الظرف ثم المفعول.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Lamento mucho los inconvenientes ocasionados."
+          ],
+          "tokenOrder": [
+            "cc_u4_empathy_5_order_t1",
+            "cc_u4_empathy_5_order_t2",
+            "cc_u4_empathy_5_order_t3",
+            "cc_u4_empathy_5_order_t4",
+            "cc_u4_empathy_5_order_t5"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_empathy_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل اعتذارًا مهنيًا عن تلف منتج وهمي مع اعتراف بشعور العميل.",
+        "stemEs": "Lamento mucho los inconvenientes y entiendo su molestia.",
+        "stemAr": "آسف جدًا للإزعاج وأتفهّم انزعاجك.",
+        "targetVocab": [
+          "empatía",
+          "lamentar"
+        ],
+        "explanationAr": "نبرة صادقة هادئة؛ ولا تبتسم بصوتك وأنت تعتذر.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u4-empathy-speak",
+          "modelAnswer": "Lamento mucho los inconvenientes y entiendo su molestia."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «التعاطف والاعتذار». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

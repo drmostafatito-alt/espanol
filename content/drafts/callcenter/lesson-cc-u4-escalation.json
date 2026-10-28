@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u4-escalation",
+    "titleAr": "معايير التصعيد وتسليم الحالة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u4-complaints",
+    "objectiveAr": "أن يميّز المتعلم الحالات التي تستدعي التصعيد، ويسلّم الحالة لزميل مختص بملخص كامل ودون تكرار الأسئلة.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "escalación",
+      "derivar",
+      "colega"
+    ],
+    "reviewVocabulary": [
+      "supervisor",
+      "departamento",
+      "responsable"
+    ],
+    "targetStructures": [
+      "Voy a derivar su caso a…",
+      "Mi compañera es especialista en…",
+      "No tendrá que repetir los datos."
+    ],
+    "grammarTopics": [
+      "escalado-traspaso"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "حالة تتجاوز صلاحيات الموظف. أنت الموظفة إيلينا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، تصعيد حالة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Su caso necesita a una especialista. Voy a derivar su caso a mi colega del departamento de envíos.",
+            "ar": "حالتك تحتاج مختصة. سأحوّل حالتك إلى زميلتي في قسم الشحن.",
+            "arEg": "حالتك محتاجة مختصة. هحوّل حالتك لزميلتي في قسم الشحن.",
+            "audioKey": "pending/cc-u4-escalation-line-1"
+          },
+          {
+            "es": "¿Tendré que repetir todo otra vez?",
+            "ar": "هل سأضطر لتكرار كل شيء مرة أخرى؟",
+            "arEg": "هضطر أكرر كل حاجة تاني؟",
+            "audioKey": "pending/cc-u4-escalation-line-2"
+          },
+          {
+            "es": "No. Le resumo todo a mi colega: pedido 000123, retraso y caja dañada. Usted no repetirá los datos.",
+            "ar": "لا. ألخّص كل شيء لزميلتي: الطلب 000123، التأخير والعلبة التالفة. لن تكرر البيانات.",
+            "arEg": "لأ. بلخّص كل حاجة لزميلتي: الأوردر 000123، التأخير والعلبة التالفة. مش هتكرر البيانات.",
+            "audioKey": "pending/cc-u4-escalation-line-3"
+          },
+          {
+            "es": "Gracias. Eso es lo que más me molesta: repetirlo todo.",
+            "ar": "شكرًا. هذا ما يزعجني أكثر: تكرار كل شيء.",
+            "arEg": "شكرًا. ده اللي بيضايقني أكتر: تكرار كل حاجة.",
+            "audioKey": "pending/cc-u4-escalation-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "التصعيد ليس فشلًا: هو قرار مهني عندما تتجاوز الحالة الصلاحيات أو الخبرة؛ والفشل الحقيقي هو التمسك بحالة لا تملك حلها.",
+    "pedagogicalRationaleAr": "التسليم الجيد ملخص كامل: من يعيد الأسئلة على العميل لم يسلّم الحالة، بل نقل الإزعاج إلى زميله.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u4_escalation_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u4_escalation_1_listen_a",
+            "text": "Voy a derivar su caso a mi compañera, que es especialista en este tema.",
+            "isCorrect": true,
+            "textAr": "سأحوّل حالتك إلى زميلتي، المختصة في هذا الموضوع."
+          },
+          {
+            "id": "cc_u4_escalation_1_listen_b",
+            "text": "Voy a derivar su caso a mi compañera, que es nueva en este tema.",
+            "isCorrect": false,
+            "textAr": "سأحوّل حالتك إلى زميلتي، الجديدة في هذا الموضوع.",
+            "distractorRationaleAr": "الصوت قال «especialista» لا «nueva»."
+          },
+          {
+            "id": "cc_u4_escalation_1_listen_c",
+            "text": "Voy a olvidar su caso y mi compañera es especialista.",
+            "isCorrect": false,
+            "textAr": "سأنسى حالتك وزميلتي مختصة.",
+            "distractorRationaleAr": "الصوت قال «derivar» لا «olvidar»."
+          }
+        ],
+        "targetVocab": [
+          "derivar",
+          "colega"
+        ],
+        "explanationAr": "التصعيد يحدد الشخص المختص وسبب التحويل.",
+        "errorFeedback": {
+          "cc_u4_escalation_1_listen_b": "الصوت قال «especialista» لا «nueva».",
+          "cc_u4_escalation_1_listen_c": "الصوت قال «derivar» لا «olvidar»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u4-escalation-listen",
+        "speechEs": "Voy a derivar su caso a mi compañera, que es especialista en este tema.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_escalation_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_escalation_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تعلن التصعيد مهنيًا؟",
+        "options": [
+          {
+            "id": "cc_u4_escalation_2_choice_a",
+            "text": "Su caso necesita a una especialista. Voy a derivar su caso a mi colega.",
+            "isCorrect": true,
+            "textAr": "حالتك تحتاج مختصة. سأحوّل حالتك إلى زميلتي."
+          },
+          {
+            "id": "cc_u4_escalation_2_choice_b",
+            "text": "No sé qué hacer, hable con otra persona.",
+            "isCorrect": false,
+            "textAr": "لا أعرف ماذا أفعل، تحدث مع شخص آخر.",
+            "distractorRationaleAr": "تخلٍّ بلا ملخص ولا تسمية للمختص."
+          },
+          {
+            "id": "cc_u4_escalation_2_choice_c",
+            "text": "Yo lo resuelvo todo, no hace falta nadie.",
+            "isCorrect": false,
+            "textAr": "أنا أحل كل شيء، لا حاجة لأحد.",
+            "distractorRationaleAr": "ادعاء قدرة كاملة يخالف حدود الصلاحيات."
+          }
+        ],
+        "targetVocab": [
+          "escalación",
+          "departamento"
+        ],
+        "explanationAr": "سبب التصعيد + الشخص المختص = إعلان مهني.",
+        "errorFeedback": {
+          "cc_u4_escalation_2_choice_b": "تخلٍّ بلا ملخص ولا تسمية للمختص.",
+          "cc_u4_escalation_2_choice_c": "ادعاء قدرة كاملة يخالف حدود الصلاحيات."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_escalation_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_escalation_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يخشى تكرار البيانات. اختر الرد المهني.",
+        "stemEs": "— ¿Tendré que repetirlo todo otra vez?",
+        "stemAr": "— هل سأضطر لتكرار كل شيء مرة أخرى؟",
+        "options": [
+          {
+            "id": "cc_u4_escalation_3_reply_a",
+            "text": "No. Le resumo todo a mi colega y usted no repetirá los datos.",
+            "isCorrect": true,
+            "textAr": "لا. ألخّص كل شيء لزميلتي ولن تكرر البيانات."
+          },
+          {
+            "id": "cc_u4_escalation_3_reply_b",
+            "text": "Sí, repítalo todo, es el procedimiento.",
+            "isCorrect": false,
+            "textAr": "نعم، كرر كل شيء، هذا الإجراء.",
+            "distractorRationaleAr": "تكرار الأسئلة يهدم ثقة العميل."
+          },
+          {
+            "id": "cc_u4_escalation_3_reply_c",
+            "text": "No sé, pregúntele a ella.",
+            "isCorrect": false,
+            "textAr": "لا أعرف، اسألها هي.",
+            "distractorRationaleAr": "تنصل من مسؤولية التسليم."
+          }
+        ],
+        "targetVocab": [
+          "responsable",
+          "caso"
+        ],
+        "explanationAr": "ضمان عدم التكرار هو جوهر التسليم الجيد.",
+        "errorFeedback": {
+          "cc_u4_escalation_3_reply_b": "تكرار الأسئلة يهدم ثقة العميل.",
+          "cc_u4_escalation_3_reply_c": "تنصل من مسؤولية التسليم."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_escalation_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_escalation_4_fill",
+        "type": "type_missing_word",
+        "mode": "graded",
+        "instructionAr": "اكتب الكلمة الناقصة دون اختيارات.",
+        "stemEs": "Voy a ____ su caso a mi compañera especialista.",
+        "stemAr": "سأحوّل حالتك إلى زميلتي المختصة.",
+        "targetVocab": [
+          "derivar",
+          "colega"
+        ],
+        "explanationAr": "«derivar su caso a alguien» = تحويل الحالة إلى شخص مختص.",
+        "errorFeedback": {
+          "transferir": "«transferir» للمكالمة نفسها؛ و«derivar» للحالة."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "derivar"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u4_escalation_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة تصعيد.",
+        "items": [
+          {
+            "id": "cc_u4_escalation_5_order_t1",
+            "kind": "token",
+            "text": "Voy"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t2",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t3",
+            "kind": "token",
+            "text": "derivar"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t4",
+            "kind": "token",
+            "text": "su"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t5",
+            "kind": "token",
+            "text": "caso"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t6",
+            "kind": "token",
+            "text": "a"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t7",
+            "kind": "token",
+            "text": "mi"
+          },
+          {
+            "id": "cc_u4_escalation_5_order_t8",
+            "kind": "token",
+            "text": "compañera."
+          }
+        ],
+        "targetVocab": [
+          "derivar",
+          "caso"
+        ],
+        "explanationAr": "ترتيب التصعيد: المستقبل القريب ثم الفعل ثم الحالة ثم المختص.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Voy a derivar su caso a mi compañera."
+          ],
+          "tokenOrder": [
+            "cc_u4_escalation_5_order_t1",
+            "cc_u4_escalation_5_order_t2",
+            "cc_u4_escalation_5_order_t3",
+            "cc_u4_escalation_5_order_t4",
+            "cc_u4_escalation_5_order_t5",
+            "cc_u4_escalation_5_order_t6",
+            "cc_u4_escalation_5_order_t7",
+            "cc_u4_escalation_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_escalation_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل إعلان تصعيد مع ملخص يضمن عدم تكرار الأسئلة.",
+        "stemEs": "Voy a derivar su caso a mi compañera especialista y le resumo todo para que no repita los datos.",
+        "stemAr": "سأحوّل حالتك إلى زميلتي المختصة وألخّص لها كل شيء حتى لا تكرر البيانات.",
+        "targetVocab": [
+          "escalación",
+          "derivar"
+        ],
+        "explanationAr": "اذكر الملخص باختصار؛ فالتسليم الكامل يظهر في كلامك.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u4-escalation-speak",
+          "modelAnswer": "Voy a derivar su caso a mi compañera especialista y le resumo todo para que no repita los datos."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «التصعيد وتسليم الحالة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

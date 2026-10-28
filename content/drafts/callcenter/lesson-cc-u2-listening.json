@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u2-listening",
+    "titleAr": "الاستماع الفعّال والأسئلة المفتوحة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u2-understanding",
+    "objectiveAr": "أن يستمع المتعلم بفاعلية دون مقاطعة، ويطرح أسئلة مفتوحة تكشف تفاصيل المشكلة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "pregunta",
+      "escuchar",
+      "interrumpir"
+    ],
+    "reviewVocabulary": [
+      "atención",
+      "paciencia",
+      "momento"
+    ],
+    "targetStructures": [
+      "Le escucho.",
+      "¿Podría contarme qué ocurrió?",
+      "Cuénteme, por favor."
+    ],
+    "grammarTopics": [
+      "escucha-activa-preguntas"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل يشرح مشكلة طويلة. أنت الموظفة إيلينا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، شرح مشكلة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Buenos días, le atiende Elena. Le escucho sin interrumpirle; cuénteme, por favor.",
+            "ar": "صباح الخير، تخدمك إيلينا. أستمع إليك دون مقاطعة؛ حدّثني من فضلك.",
+            "arEg": "صباح الخير، معاكي إيلينا. سامعاك من غير مقاطعة؛ احكي لي من فضلك.",
+            "audioKey": "pending/cc-u2-listening-line-1"
+          },
+          {
+            "es": "El pedido llegó tarde, la caja estaba abierta y nadie me llamó.",
+            "ar": "وصل الطلب متأخرًا، وكانت العلبة مفتوحة، ولم يتصل بي أحد.",
+            "arEg": "الأوردر وصل متأخر، والعلبة كانت مفتوحة، ومحدش كلمني.",
+            "audioKey": "pending/cc-u2-listening-line-2"
+          },
+          {
+            "es": "Gracias por explicarlo. ¿Podría contarme qué día llegó el pedido?",
+            "ar": "شكرًا على الشرح. هل يمكنك إخباري في أي يوم وصل الطلب؟",
+            "arEg": "شكرًا على الشرح. ممكن تقول لي الأوردر وصل يوم إيه؟",
+            "audioKey": "pending/cc-u2-listening-line-3"
+          },
+          {
+            "es": "El lunes. Y desde entonces llamo todos los días.",
+            "ar": "يوم الاثنين. ومنذ ذلك الحين أتصل كل يوم.",
+            "arEg": "يوم الاتنين. ومن ساعتها بتصل كل يوم.",
+            "audioKey": "pending/cc-u2-listening-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الأسئلة المفتوحة (qué, cuándo, cómo) تدعو العميل للشرح؛ أما الأسئلة المغلقة (sí/no) فتضيّق الإجابة وتُستخدم للتأكيد فقط.",
+    "pedagogicalRationaleAr": "الاستماع يسبق الحل: من يقاطع العميل ليقترح حلًا سريعًا يفقد التفاصيل التي تحدد الحل الصحيح.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u2_listening_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u2_listening_1_listen_a",
+            "text": "Cuénteme, por favor, qué ocurrió con su pedido.",
+            "isCorrect": true,
+            "textAr": "حدّثني من فضلك، ماذا حدث لطلبك؟"
+          },
+          {
+            "id": "cc_u2_listening_1_listen_b",
+            "text": "Cuénteme, por favor, qué ocurrió con su factura.",
+            "isCorrect": false,
+            "textAr": "حدّثني من فضلك، ماذا حدث لفاتورتك؟",
+            "distractorRationaleAr": "الصوت سأل عن «pedido» لا «factura»."
+          },
+          {
+            "id": "cc_u2_listening_1_listen_c",
+            "text": "No me cuente nada, que tengo prisa.",
+            "isCorrect": false,
+            "textAr": "لا تحدثني بشيء، فأنا مستعجل.",
+            "distractorRationaleAr": "الصوت دعا العميل للشرح لا لمنعه."
+          }
+        ],
+        "targetVocab": [
+          "pregunta",
+          "escuchar"
+        ],
+        "explanationAr": "السؤال المفتوح يدعو العميل لشرح ما حدث للطلب.",
+        "errorFeedback": {
+          "cc_u2_listening_1_listen_b": "الصوت سأل عن «pedido» لا «factura».",
+          "cc_u2_listening_1_listen_c": "الصوت دعا العميل للشرح لا لمنعه."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u2-listening-listen",
+        "speechEs": "Cuénteme, por favor, qué ocurrió con su pedido.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_listening_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_listening_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي سؤال مفتوح يكشف تفاصيل المشكلة؟",
+        "options": [
+          {
+            "id": "cc_u2_listening_2_choice_a",
+            "text": "¿Podría contarme qué ocurrió exactamente?",
+            "isCorrect": true,
+            "textAr": "هل يمكنك إخباري بما حدث بالضبط؟"
+          },
+          {
+            "id": "cc_u2_listening_2_choice_b",
+            "text": "¿Llegó tarde o no?",
+            "isCorrect": false,
+            "textAr": "هل وصل متأخرًا أم لا؟",
+            "distractorRationaleAr": "سؤال مغلق يضيّق الإجابة على نعم/لا."
+          },
+          {
+            "id": "cc_u2_listening_2_choice_c",
+            "text": "¿Por qué llama usted?",
+            "isCorrect": false,
+            "textAr": "لماذا تتصل؟",
+            "distractorRationaleAr": "سؤال مباشر بلا دعوة للشرح، ويبدو اتهاميًا."
+          }
+        ],
+        "targetVocab": [
+          "pregunta",
+          "atención"
+        ],
+        "explanationAr": "السؤال المفتوح بـ«qué» + «exactamente» يدعو العميل لسرد التفاصيل.",
+        "errorFeedback": {
+          "cc_u2_listening_2_choice_b": "سؤال مغلق يضيّق الإجابة على نعم/لا.",
+          "cc_u2_listening_2_choice_c": "سؤال مباشر بلا دعوة للشرح، ويبدو اتهاميًا."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_listening_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_listening_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يشرح ولم ينتهِ بعد. اختر الرد المهني.",
+        "stemEs": "— Y después llamé tres veces y…",
+        "stemAr": "— وبعد ذلك اتصلت ثلاث مرات و…",
+        "options": [
+          {
+            "id": "cc_u2_listening_3_reply_a",
+            "text": "Le escucho. Siga, por favor; anoto todo lo que me dice.",
+            "isCorrect": true,
+            "textAr": "أستمع إليك. تابع من فضلك؛ أسجل كل ما تقوله."
+          },
+          {
+            "id": "cc_u2_listening_3_reply_b",
+            "text": "Ya, ya, lo sé todo.",
+            "isCorrect": false,
+            "textAr": "حسنًا حسنًا، أعرف كل شيء.",
+            "distractorRationaleAr": "المقاطعة بادعاء المعرفة تفقد تفاصيل مهمة."
+          },
+          {
+            "id": "cc_u2_listening_3_reply_c",
+            "text": "Vaya al grano, por favor.",
+            "isCorrect": false,
+            "textAr": "ادخل في الموضوع من فضلك.",
+            "distractorRationaleAr": "أمر وقح يقطع سرد العميل."
+          }
+        ],
+        "targetVocab": [
+          "interrumpir",
+          "paciencia"
+        ],
+        "explanationAr": "تشجيع العميل على إكمال السرد مع تأكيد التسجيل = استماع فعّال.",
+        "errorFeedback": {
+          "cc_u2_listening_3_reply_b": "المقاطعة بادعاء المعرفة تفقد تفاصيل مهمة.",
+          "cc_u2_listening_3_reply_c": "أمر وقح يقطع سرد العميل."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_listening_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_listening_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل السؤال المفتوح.",
+        "stemEs": "¿Podría ____ qué ocurrió exactamente?",
+        "stemAr": "هل يمكنك إخباري بما حدث بالضبط؟",
+        "targetVocab": [
+          "pregunta",
+          "escuchar"
+        ],
+        "explanationAr": "بعد «¿Podría» يأتي المصدر مع ضمير: contarme / explicarme.",
+        "errorFeedback": {
+          "cuenta": "بعد «Podría» يأتي المصدر لا المضارع."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "contarme",
+            "explicarme"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u2_listening_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال مفتوح.",
+        "items": [
+          {
+            "id": "cc_u2_listening_5_order_t1",
+            "kind": "token",
+            "text": "¿Podría"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t2",
+            "kind": "token",
+            "text": "contarme"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t3",
+            "kind": "token",
+            "text": "qué"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t4",
+            "kind": "token",
+            "text": "ocurrió"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t5",
+            "kind": "token",
+            "text": "con"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t6",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u2_listening_5_order_t7",
+            "kind": "token",
+            "text": "pedido?"
+          }
+        ],
+        "targetVocab": [
+          "pregunta",
+          "caso"
+        ],
+        "explanationAr": "ترتيب السؤال: condicional ثم المصدر ثم أداة الاستفهام ثم الجملة.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Podría contarme qué ocurrió con el pedido?"
+          ],
+          "tokenOrder": [
+            "cc_u2_listening_5_order_t1",
+            "cc_u2_listening_5_order_t2",
+            "cc_u2_listening_5_order_t3",
+            "cc_u2_listening_5_order_t4",
+            "cc_u2_listening_5_order_t5",
+            "cc_u2_listening_5_order_t6",
+            "cc_u2_listening_5_order_t7"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_listening_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل دعوة مهذبة للعميل ليشرح مشكلته دون مقاطعة.",
+        "stemEs": "Le escucho sin interrumpirle. Cuénteme qué ocurrió, por favor.",
+        "stemAr": "أستمع إليك دون مقاطعة. حدّثني بما حدث من فضلك.",
+        "targetVocab": [
+          "escuchar",
+          "atención"
+        ],
+        "explanationAr": "نبرة هادئة وسرعة بطيئة؛ ولا تبدأ الحل قبل انتهاء العميل.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u2-listening-speak",
+          "modelAnswer": "Le escucho sin interrumpirle. Cuénteme qué ocurrió, por favor."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «الاستماع الفعّال». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

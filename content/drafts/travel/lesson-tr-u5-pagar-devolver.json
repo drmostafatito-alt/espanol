@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u5-pagar-devolver",
+    "titleAr": "الدفع والإرجاع والتبديل",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u5-shopping-travel",
+    "objectiveAr": "أن يدفع المتعلم في الصندوق، ويحتفظ بالإيصال، ويطلب إرجاع سلعة معيبة أو تبديلها بمقاس آخر.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "roto",
+      "reembolso"
+    ],
+    "reviewVocabulary": [
+      "devolver",
+      "cambiar",
+      "recibo"
+    ],
+    "targetStructures": [
+      "¿Puedo cambiar …?",
+      "¿Puedo devolver …?",
+      "¿Me da el recibo?"
+    ],
+    "grammarTopics": [
+      "devolver-cambiar",
+      "recibo-reembolso"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "بعد شراء قميص تكتشف أنه تالف، فتعود إلى المتجر للدفع عن بديل أو لطلب التبديل.",
+        "settingAr": "صندوق الدفع في متجر ملابس",
+        "lines": [
+          {
+            "es": "¿Paga con tarjeta o en efectivo?",
+            "ar": "هل تدفع بالبطاقة أم نقدًا؟",
+            "arEg": "هتدفع بالكارت ولا كاش؟",
+            "audioKey": "pending/tr-u5-pagar-1"
+          },
+          {
+            "es": "Con tarjeta, por favor. ¿Me da el recibo?",
+            "ar": "بالبطاقة من فضلك. هل تعطيني الإيصال؟",
+            "arEg": "بالكارت لو سمحت. ممكن تديني الإيصال؟",
+            "audioKey": "pending/tr-u5-pagar-2"
+          },
+          {
+            "es": "Claro, aquí tiene el recibo.",
+            "ar": "بالطبع، هذا هو الإيصال.",
+            "arEg": "طبعًا، اتفضل الإيصال.",
+            "audioKey": "pending/tr-u5-pagar-3"
+          },
+          {
+            "es": "Perdone, esta camisa está rota. ¿Puedo cambiarla por otra talla?",
+            "ar": "عذرًا، هذا القميص تالف. هل يمكنني تبديله بمقاس آخر؟",
+            "arEg": "معلش، القميص ده بايظ. ممكن أبدّله بمقاس تاني؟",
+            "audioKey": "pending/tr-u5-pagar-4"
+          },
+          {
+            "es": "Sí, puede cambiarla. ¿Quiere un reembolso o otra talla?",
+            "ar": "نعم، يمكنك تبديله. هل تريد استرداد المال أم مقاسًا آخر؟",
+            "arEg": "أيوه، تقدر تبدّله. عايز فلوسك ولا مقاس تاني؟",
+            "audioKey": "pending/tr-u5-pagar-5"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "في إسبانيا تُحتفظ بالإيصال دائمًا لأنه شرط الإرجاع أو التبديل، والكثير من المتاجر يقبل التبديل خلال أيام محددة، بينما استرداد المال نقدًا أقل شيوعًا من التبديل بمقاس آخر أو بقسيمة شراء.",
+    "pedagogicalRationaleAr": "يبدأ الدرس بالدفع لأنه نهاية الشراء المعتادة، ثم ينتقل إلى المشكلة بعد الشراء: وصف العيب، ثم طلب الإرجاع أو التبديل بلغة مهذبة وواضحة.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u5_pagar_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سؤال الصندوق واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u5-pagar-listen-1",
+        "speechEs": "¿Paga con tarjeta o en efectivo?",
+        "options": [
+          {
+            "id": "tr_u5_pagar_1_a",
+            "text": "¿Paga con tarjeta o en efectivo?",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_pagar_1_b",
+            "text": "¿Paga con tarjeta o en la tienda?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع en efectivo (نقدًا) لا en la tienda (في المتجر)، والجملة عن طريقة الدفع."
+          },
+          {
+            "id": "tr_u5_pagar_1_c",
+            "text": "¿Llega con tarjeta o en efectivo?",
+            "isCorrect": false,
+            "distractorRationaleAr": "الفعل المسموع Paga (تدفع) لا Llega (تصل)، والسياق سياق دفع لا وصول."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_pagar_1_a"
+          ]
+        },
+        "explanationAr": "السؤال عن طريقة الدفع: ¿Paga con tarjeta o en efectivo؟ وجوابه يختار إحدى الطريقتين: Con tarjeta أو En efectivo.",
+        "errorFeedback": {
+          "tr_u5_pagar_1_b": "المسموع en efectivo (نقدًا) لا en la tienda (في المتجر)، والجملة عن طريقة الدفع.",
+          "tr_u5_pagar_1_c": "الفعل المسموع Paga (تدفع) لا Llega (تصل)، والسياق سياق دفع لا وصول."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "tarjeta de crédito",
+          "efectivo"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_2_word",
+        "type": "word_choice",
+        "instructionAr": "ماذا تطلب بعد الدفع لإثبات شرائك؟",
+        "options": [
+          {
+            "id": "tr_u5_pagar_2_a",
+            "text": "¿Me da el recibo, por favor?",
+            "textAr": "هل تعطيني الإيصال من فضلك؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_pagar_2_b",
+            "text": "¿Me da la etiqueta, por favor?",
+            "textAr": "هل تعطيني بطاقة السلعة من فضلك؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "etiqueta بطاقة على السلعة تذكر السعر، وليست مستند الشراء."
+          },
+          {
+            "id": "tr_u5_pagar_2_c",
+            "text": "¿Me da el probador, por favor?",
+            "textAr": "هل تعطيني غرفة القياس من فضلك؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "probador غرفة تجربة الملابس، ولا علاقة له بالإيصال."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_pagar_2_a"
+          ]
+        },
+        "explanationAr": "الإيصال recibo هو المستند الذي يثبت الشراء، ويُطلب بعد الدفع. أما etiqueta فهي بطاقة السلعة، وprobador غرفة القياس.",
+        "errorFeedback": {
+          "tr_u5_pagar_2_b": "etiqueta بطاقة على السلعة تذكر السعر، وليست مستند الشراء.",
+          "tr_u5_pagar_2_c": "probador غرفة تجربة الملابس، ولا علاقة له بالإيصال."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "recibo",
+          "etiqueta",
+          "probador"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بوصف التلف المناسب.",
+        "stemEs": "El zapato está ____.",
+        "stemAr": "الحذاء تالف.",
+        "answerKey": {
+          "accepted": [
+            "roto"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«estar roto» للمذكر و«estar rota» للمؤنث، وكلاهما بمعنى تالف. والحذاء zapato مذكر، لذلك نقول: El zapato está roto.",
+        "errorFeedback": {
+          "nuevo": "«nuevo» عكس المعنى: المطلوب وصف التلف لا الجدة.",
+          "rota": "«rota» صحيحة مع المؤنث، لكن الجملة عن zapato المذكر، لذلك الصواب roto."
+        },
+        "skills": [
+          "writing",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "roto",
+          "zapato"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين طلب تبديل.",
+        "items": [
+          {
+            "id": "tr_u5_pagar_4_t1",
+            "kind": "token",
+            "text": "Quiero"
+          },
+          {
+            "id": "tr_u5_pagar_4_t2",
+            "kind": "token",
+            "text": "cambiar"
+          },
+          {
+            "id": "tr_u5_pagar_4_t3",
+            "kind": "token",
+            "text": "camisa"
+          },
+          {
+            "id": "tr_u5_pagar_4_t4",
+            "kind": "token",
+            "text": "esta"
+          },
+          {
+            "id": "tr_u5_pagar_4_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "tr_u5_pagar_4_t6",
+            "kind": "token",
+            "text": "otra"
+          },
+          {
+            "id": "tr_u5_pagar_4_t7",
+            "kind": "token",
+            "text": "talla"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Quiero cambiar esta camisa por otra talla",
+            "Quiero cambiar esta camisa por otra talla."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "طلب التبديل: cambiar … por … أي يبدّل شيئًا بشيء آخر. و«otra talla» تعني مقاسًا آخر.",
+        "errorFeedback": {
+          "order": "ابدأ بالفعل Quiero، ثم cambiar، ثم السلعة esta camisa، ثم por otra talla."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "cambiar",
+          "camisa",
+          "talla"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "البائعة تعرض عليك الاختيار بين استرداد المال ومقاس آخر.",
+        "stemEs": "— ¿Quiere un reembolso o otra talla?",
+        "stemAr": "— هل تريد استرداد المال أم مقاسًا آخر؟",
+        "options": [
+          {
+            "id": "tr_u5_pagar_5_a",
+            "text": "Otra talla, por favor.",
+            "textAr": "مقاس آخر من فضلك.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_pagar_5_b",
+            "text": "Una rebaja, por favor.",
+            "textAr": "تخفيضًا من فضلك.",
+            "isCorrect": false,
+            "distractorRationaleAr": "rebaja تخفيض سعر، والسؤال عن الاسترداد أو المقاس الآخر لا عن التخفيض."
+          },
+          {
+            "id": "tr_u5_pagar_5_c",
+            "text": "Un probador, por favor.",
+            "textAr": "غرفة قياس من فضلك.",
+            "isCorrect": false,
+            "distractorRationaleAr": "probador غرفة القياس، ولا علاقة لها بالاختيار المطروح."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_pagar_5_a"
+          ]
+        },
+        "explanationAr": "الجواب يختار أحد الخيارين المطروحين: مقاس آخر أو استرداد المال. والتخفيض rebaja موضوع مختلف لا يُعرض هنا.",
+        "errorFeedback": {
+          "tr_u5_pagar_5_b": "rebaja تخفيض سعر، والسؤال عن الاسترداد أو المقاس الآخر لا عن التخفيض.",
+          "tr_u5_pagar_5_c": "probador غرفة القياس، ولا علاقة لها بالاختيار المطروح."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "reembolso",
+          "talla",
+          "rebaja"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أريد إرجاع هذا القميص لأنه تالف.",
+        "answerKey": {
+          "accepted": [
+            "Quiero devolver esta camisa porque está rota.",
+            "Quiero devolver la camisa porque está rota."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«devolver … porque está roto/rota» تعني يرجع شيئًا لأنه تالف، و«porque» تعني لأن. وcamisa مؤنثة لذلك rota.",
+        "errorFeedback": {
+          "Quiero cambiar esta camisa porque está rota.": "«cambiar» تبديل لا إرجاع؛ المطلوب هنا devolver.",
+          "Quiero devolver esta camisa porque es rota.": "مع الصفة المؤقتة نستخدم estar لا ser: está rota."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "devolver",
+          "camisa",
+          "roto"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_pagar_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اشرح العيب واطلب التبديل والإيصال. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Perdone, esta camisa está rota. ¿Puedo cambiarla por otra talla? ¿Me da el recibo, por favor?",
+        "stemAr": "عذرًا، هذا القميص تالف. هل يمكنني تبديله بمقاس آخر؟ هل تعطيني الإيصال من فضلك؟",
+        "answerKey": {
+          "modelAnswer": "Perdone, esta camisa está rota. ¿Puedo cambiarla por otra talla? ¿Me da el recibo, por favor?",
+          "referenceAudioKey": "pending/tr-u5-pagar-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "roto",
+          "cambiar",
+          "recibo"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس التسوق 3/4 (الدفع والإرجاع والتبديل). يحتاج مراجعة إسبانية أصلية لسياسات الإرجاع في إسبانيا وصيغة cambiarla. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

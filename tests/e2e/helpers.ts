@@ -11,11 +11,12 @@ import { expect, type Page } from '@playwright/test';
 /**
  * نحسب خطة المحتوى في عملية Node فرعية بدل استيراد tools/lib/content-plan.mjs مباشرة:
  * محمّل Playwright 1.49 يتجمّد عند استيراد هذا الوحدة من ملفات tests/e2e (تم التحقق).
- * الحساب نفسه: buildContentPlan على content/exemplars.
+ * الحساب نفسه: buildContentPlan على content/drafts — لأن الخادم يقدّم إصدار المسودة
+ * الحالي، لا ملف العينة؛ الإجابات من العينة لا تطابق تمارين الدرس المقدَّم.
  */
 const PLAN_SCRIPT = `import { join } from 'node:path';
 import { buildContentPlan } from './tools/lib/content-plan.mjs';
-const plan = buildContentPlan(join(process.cwd(), 'content', 'exemplars'), { existingVersions: {} });
+const plan = buildContentPlan(join(process.cwd(), 'content', 'drafts'), { existingVersions: {} });
 process.stdout.write(JSON.stringify({ answers: plan.answers, errors: plan.errors }));`;
 
 export const PLAN = JSON.parse(
@@ -27,6 +28,7 @@ export const PLAN = JSON.parse(
 ) as { answers: Record<string, unknown>; errors: string[] };
 
 export const PREA1 = 'prea1-hola-me-llamo';
+export const FIRST_LESSON = 'prea1-abecedario'; // أول درس في ترتيب المنهج (prea1-u1-sounds) — ما تشير إليه بطاقة «خطوتك التالية» للمتعلم الجديد
 export const A1 = 'a1-un-cafe-por-favor';
 
 export function uniqueEmail(tag = 'e2e') {

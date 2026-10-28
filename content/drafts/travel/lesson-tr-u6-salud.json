@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u6-salud",
+    "titleAr": "طوارئ الصحة والصيدلية",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u6-emergencies",
+    "objectiveAr": "أن يصف المتعلم أعراضًا بسيطة في الصيدلية، ويطلب دواءً، ويفهم سؤال الصيدلي عن الحساسية والوصفة.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "urgencias",
+      "tirita",
+      "herido"
+    ],
+    "reviewVocabulary": [
+      "farmacia",
+      "dolor",
+      "fiebre",
+      "pastilla"
+    ],
+    "targetStructures": [
+      "Me duele …",
+      "Tengo fiebre/dolor.",
+      "¿Tiene algo para …?"
+    ],
+    "grammarTopics": [
+      "doler-tener-sintomas",
+      "receta-alergia"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "تشعر بصداع وحرارة أثناء رحلتك، فتدخل صيدلية وتشرح أعراضك للصيدلي.",
+        "settingAr": "صيدلية في وسط المدينة",
+        "lines": [
+          {
+            "es": "Buenas, me duele la cabeza y tengo fiebre.",
+            "ar": "مرحبًا، يؤلمني رأسي وعندي حرارة.",
+            "arEg": "أهلًا، راسي بيوجعني وعندي سخونية.",
+            "audioKey": "pending/tr-u6-salud-1"
+          },
+          {
+            "es": "¿Tiene alergia a algún medicamento?",
+            "ar": "هل لديك حساسية من أي دواء؟",
+            "arEg": "عندك حساسية من أي دوا؟",
+            "audioKey": "pending/tr-u6-salud-2"
+          },
+          {
+            "es": "No, no tengo alergia. ¿Tiene algo para el dolor?",
+            "ar": "لا، ليس لدي حساسية. هل لديك شيء للألم؟",
+            "arEg": "لأ، معنديش حساسية. عندك حاجة للألم؟",
+            "audioKey": "pending/tr-u6-salud-3"
+          },
+          {
+            "es": "Sí, esta pastilla es para la fiebre. Tome una cada ocho horas.",
+            "ar": "نعم، هذه الحبة للحرارة. خذ واحدة كل ثماني ساعات.",
+            "arEg": "أيوه، الحباية دي للسخونية. خد واحدة كل تمن ساعات.",
+            "audioKey": "pending/tr-u6-salud-4"
+          },
+          {
+            "es": "Gracias. ¿Necesito una receta?",
+            "ar": "شكرًا. هل أحتاج وصفة؟",
+            "arEg": "شكرًا. محتاج روشتة؟",
+            "audioKey": "pending/tr-u6-salud-5"
+          },
+          {
+            "es": "No, no necesita receta para esta pastilla.",
+            "ar": "لا، لا تحتاج وصفة لهذه الحبة.",
+            "arEg": "لأ، مش محتاج روشتة للحباية دي.",
+            "audioKey": "pending/tr-u6-salud-6"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الصيدليات في إسبانيا تُعرف بالصليب الأخضر المضيء، وكثير منها يبيع أدوية بسيطة بلا وصفة، لكن الصيدلي يسأل دائمًا عن الحساسية قبل صرف الدواء. وفي الحالات الخطيرة يُتوجه إلى قسم الطوارئ لا إلى الصيدلية.",
+    "pedagogicalRationaleAr": "يبدأ الدرس بوصف الألم لأنه أول ما يُقال، ثم بسؤال الحساسية لأنه سؤال الصيدلي الثابت، ثم بالوصفة والجرعة، وهي خطوات الزيارة الحقيقية للصيدلية بالترتيب نفسه.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u6_salud_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى جملة المريض واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u6-salud-listen-1",
+        "speechEs": "Me duele la cabeza.",
+        "options": [
+          {
+            "id": "tr_u6_salud_1_a",
+            "text": "Me duele la cabeza.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_salud_1_b",
+            "text": "Me duele la mano.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع cabeza (رأس) لا mano (يد)، والعضو المؤلم مختلف."
+          },
+          {
+            "id": "tr_u6_salud_1_c",
+            "text": "Me duele el pie.",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع cabeza لا pie (قدم)، والعضو المؤلم مختلف."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_salud_1_a"
+          ]
+        },
+        "explanationAr": "وصف الألم: Me duele la cabeza. و«doler» فعل خاص: يأتي مع الضمير me ويُطابق العضو المؤلم: la cabeza مفرد لذلك duele.",
+        "errorFeedback": {
+          "tr_u6_salud_1_b": "المسموع cabeza (رأس) لا mano (يد)، والعضو المؤلم مختلف.",
+          "tr_u6_salud_1_c": "المسموع cabeza لا pie (قدم)، والعضو المؤلم مختلف."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "dolor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_2_word",
+        "type": "word_choice",
+        "instructionAr": "ماذا يسأل الصيدلي قبل أن يعطيك دواءً؟",
+        "options": [
+          {
+            "id": "tr_u6_salud_2_a",
+            "text": "¿Tiene alergia a algún medicamento?",
+            "textAr": "هل لديك حساسية من أي دواء؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_salud_2_b",
+            "text": "¿Tiene fiebre a algún medicamento?",
+            "textAr": "هل لديك حرارة من أي دواء؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«fiebre» حرارة، ولا تُقال «fiebre a un medicamento»؛ السؤال عن الحساسية."
+          },
+          {
+            "id": "tr_u6_salud_2_c",
+            "text": "¿Tiene dolor a algún medicamento?",
+            "textAr": "هل لديك ألم من أي دواء؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«dolor» ألم، ولا تُقال «dolor a un medicamento»؛ السؤال عن الحساسية."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_salud_2_a"
+          ]
+        },
+        "explanationAr": "سؤال الصيدلي عن الحساسية: ¿Tiene alergia a algún medicamento؟ و«alergia» حساسية، و«medicamento» دواء. و«fiebre» و«dolor» أعراض لا تُسأل بهذه الصيغة.",
+        "errorFeedback": {
+          "tr_u6_salud_2_b": "«fiebre» حرارة، ولا تُقال «fiebre a un medicamento»؛ السؤال عن الحساسية.",
+          "tr_u6_salud_2_c": "«dolor» ألم، ولا تُقال «dolor a un medicamento»؛ السؤال عن الحساسية."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "alergia",
+          "fiebre",
+          "dolor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بالعرض المناسب.",
+        "stemEs": "Tengo ____ y me duele la cabeza.",
+        "stemAr": "عندي حرارة ويؤلمني رأسي.",
+        "answerKey": {
+          "accepted": [
+            "fiebre"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Tengo fiebre» تعني عندي حرارة، و«Tengo dolor» تعني عندي ألم. والجملة تجمع العرضين: حرارة وألم في الرأس.",
+        "errorFeedback": {
+          "alergia": "«alergia» حساسية، والجملة تحتاج عرض الحرارة: fiebre.",
+          "dolor": "«dolor» ألم عام، والجملة تحتاج عرض الحرارة: fiebre."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "fiebre",
+          "dolor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين طلب في الصيدلية.",
+        "items": [
+          {
+            "id": "tr_u6_salud_4_t1",
+            "kind": "token",
+            "text": "Necesito"
+          },
+          {
+            "id": "tr_u6_salud_4_t2",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "tr_u6_salud_4_t3",
+            "kind": "token",
+            "text": "tirita,"
+          },
+          {
+            "id": "tr_u6_salud_4_t4",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "tr_u6_salud_4_t5",
+            "kind": "token",
+            "text": "favor"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "Necesito una tirita, por favor",
+            "Necesito una tirita, por favor."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«Necesito una tirita» تعني أحتاج لاصق جروح، و«tirita» مؤنثة لذلك أداتها una.",
+        "errorFeedback": {
+          "order": "ابدأ بالفعل Necesito، ثم una tirita، واختم بعبارة التأدب por favor."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 1,
+        "targetVocab": [
+          "tirita"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "الصيدلي قال إن هذه الحبة لا تحتاج وصفة، وتريد معرفة طريقة تناولها.",
+        "stemEs": "— Esta pastilla no necesita receta.",
+        "stemAr": "— هذه الحبة لا تحتاج وصفة. —",
+        "options": [
+          {
+            "id": "tr_u6_salud_5_a",
+            "text": "Gracias. ¿Tomo una cada ocho horas?",
+            "textAr": "شكرًا. هل آخذ واحدة كل ثماني ساعات؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u6_salud_5_b",
+            "text": "Gracias. ¿Me duele la cabeza?",
+            "textAr": "شكرًا. هل يؤلمني رأسي؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«me duele» وصف عرض سبق ذكره، وليس سؤالًا عن طريقة تناول الدواء."
+          },
+          {
+            "id": "tr_u6_salud_5_c",
+            "text": "Gracias. ¿Tiene alergia?",
+            "textAr": "شكرًا. هل لديك حساسية؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "سؤال الحساسية يسأله الصيدلي لك، لا تسأله أنت له."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u6_salud_5_a"
+          ]
+        },
+        "explanationAr": "السؤال الطبيعي بعد معرفة عدم الحاجة لوصفة هو عن الجرعة: ¿Tomo una cada ocho horas؟ و«me duele» وصف عرض لا سؤال عن الجرعة، و«tiene alergia» سؤال الصيدلي لا سؤالك.",
+        "errorFeedback": {
+          "tr_u6_salud_5_b": "«me duele» وصف عرض سبق ذكره، وليس سؤالًا عن طريقة تناول الدواء.",
+          "tr_u6_salud_5_c": "سؤال الحساسية يسأله الصيدلي لك، لا تسأله أنت له."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "receta",
+          "pastilla",
+          "dolor"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أحتاج شيئًا للألم، عندي صداع وحرارة.",
+        "answerKey": {
+          "accepted": [
+            "Necesito algo para el dolor. Me duele la cabeza y tengo fiebre.",
+            "Necesito algo para el dolor, me duele la cabeza y tengo fiebre."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "«Necesito algo para el dolor» تعني أحتاج شيئًا للألم، و«Me duele la cabeza» يؤلمني رأسي، و«Tengo fiebre» عندي حرارة. وهذه الجمل الثلاث هي ما يقوله المريض في الصيدلية.",
+        "errorFeedback": {
+          "Necesito algo por el dolor.": "الصواب «para el dolor» بمعنى لعلاج الألم، لا «por el dolor».",
+          "Tengo dolor de cabeza y fiebre.": "الصيغة الطبيعية للألم الموضعي هي «Me duele la cabeza»، لا «Tengo dolor de cabeza»."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "targetVocab": [
+          "dolor",
+          "fiebre"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u6_salud_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اشرح أعراضك واسأل عن الدواء والوصفة. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Buenas, me duele la cabeza y tengo fiebre. ¿Tiene algo para el dolor? ¿Necesito una receta?",
+        "stemAr": "مرحبًا، يؤلمني رأسي وعندي حرارة. هل لديك شيء للألم؟ هل أحتاج وصفة؟",
+        "answerKey": {
+          "modelAnswer": "Buenas, me duele la cabeza y tengo fiebre. ¿Tiene algo para el dolor? ¿Necesito una receta?",
+          "referenceAudioKey": "pending/tr-u6-salud-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "dolor",
+          "fiebre",
+          "receta"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الطوارئ 3/4 (طوارئ الصحة والصيدلية). يحتاج مراجعة إسبانية أصلية لفعل doler وعرف الوصفات في إسبانيا. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

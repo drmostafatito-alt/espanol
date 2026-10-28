@@ -1,22 +1,22 @@
 # Español بالعربي — منصة عربية لتعلّم الإسبانية (من الصفر إلى C1)
 
-> **حالة المشروع: مراحل التنفيذ المستقل 0→9 — التطبيق يعمل محليًا بالكامل.**
-> دروس A1 (وحدة كاملة)، مسار سفر (8 دروس)، وحدة كول سنتر (4 دروس)، 60 كلمة أساسية في 3 حزم،
-> محرك مراجعة متباعدة (SM-2 معدّل) على الخادم، وواجهة RTL من 320px.
+> **حالة المشروع: التطبيق يعمل محليًا بالكامل.**
+> 256 درسًا مسودة (PREA1 ‏12 + A1/A2/B1/B2 ‏40 لكل مستوى + C1 ‏32 + سفر 24 + كول سنتر 28)،
+> 1,546 تمرينًا، 8,572 مدخل مفردات، محرك مراجعة متباعدة (SM-2 معدّل) على الخادم، وواجهة RTL من 320px.
 > **لا شيء منشور:** كل المحتوى `draft` / `unreviewed`، ولا سجل مراجعة بشرية واحد.
 >
 > | التحقق | النتيجة |
 > | --- | --- |
-> | `npx vitest run` | **536/536** ✅ (41 ملفًا) — مُحقَّق في جلسة 2026-10-28 (دمج فرع المراجعة في main المحلي) |
+> | `npx vitest run` | **585/585** ✅ (46 ملفًا) — مُحقَّق في جلسة 2026-10-28 (سدّ الفجوات التنفيذية) |
 > | `node tools/smoke-worker.mjs` (workerd + D1) | **32/32** ✅ — مُحقَّق في جلسة 2026-10-28 |
 > | `node tools/journey-live-19.mjs` · `node tools/test-learner-flow-live.mjs` | **32/32 · ناجح 100%** ✅ — مُحقَّق في جلسة 2026-10-25 |
 > | `./node_modules/.bin/playwright test --project=chromium-desktop --project=chromium-320` | **38/38** ✅ (19 سطح مكتب + 19 بعرض 320px) — مُحقَّق في جلسة 2026-10-28 على الشجرة المدمجة؛ مشروعا Firefox غير قابلين للتشغيل في هذه البيئة (تثبيت المتصفح يفشل شبكيًا) |
 > | `npx tsc --noEmit` · `npx vite build` | نظيف / ناجح ✅ |
-> | `node tools/check-sql.mjs` | PASS ✅ (61 جدولًا، 51 فهرسًا) |
-> | `node tools/check-curriculum.mjs` | PASS ✅ (212 درسًا مكتوبًا، 0 أخطاء، 0 تنبيهات) |
-> | `node tools/validate-content.mjs --dir …` | PASS في exemplars + مسودات a1 / core-vocab / travel / callcenter ✅ |
-> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 33 تنبيهًا** ✅ — مُحقَّق في جلسة 2026-10-28 |
-> | `node tools/check-content-integrity.mjs` (فحص تكامل المنهج البنيوي) | **PASS · 0 أخطاء** ✅ (212 درسًا، 1262 تمرينًا، 58 حزمة مفردات، 8509 مدخلًا) — يفحص التناسق بين الخريطة والملفات، مفاتيح الإجابة، الحلقات في التقدم، واللغة العربية |
+> | `node tools/check-sql.mjs` | PASS ✅ (62 جدولًا) |
+> | `node tools/check-curriculum.mjs` | PASS ✅ (256 درسًا مكتوبًا، 0 أخطاء) |
+> | `node tools/validate-content.mjs --dir …` | PASS في exemplars + كل مسودات المستويات والمسارات ✅ |
+> | `node tools/audit-content-quality.mjs` (تدقيق الجودة الكامل) | **0 أخطاء · 113 تنبيهًا** ✅ — مُحقَّق في جلسة 2026-10-28 |
+> | `node tools/check-content-integrity.mjs` (فحص تكامل المنهج البنيوي) | **PASS · 0 أخطاء** ✅ (256 درسًا، 1546 تمرينًا، 8572 مدخلًا) — يفحص التناسق بين الخريطة والملفات، مفاتيح الإجابة، الحلقات في التقدم، واللغة العربية |
 > | `node tools/check-audio-manifest.mjs` | PASS ✅ (63 مدخلًا ← 52 ملفًا، 11 اسمًا مستعارًا) |
 >
 > ⚠️ **بوابة أمنية:** لا تُفتح حسابات حقيقية بعد. قوة تخزين كلمة المرور على الخطة المجانية = 5% من متطلب OWASP (حدّ منصة مقيس).
@@ -63,16 +63,41 @@
 
 ## 3. التشغيل والتحقق
 
+### 0) التنزيل — Clone هو الطريقة الموصى بها
+
 ```bash
-# 1) الاعتماديات (إلزامية: better-sqlite3 وحدة أصلية — لا تعمل الأدوات بدونها)
+git clone https://github.com/drmostafatito-alt/espanol.git
+cd espanol
+```
+
+> تنزيل ZIP يعطيك نفس الملفات لكن بلا مجلد `.git`: لا تاريخ، ولا تحديث بـ`git pull`، ولا فروع.
+> لمواصلة التطوير استخدم `git clone` دائمًا.
+
+**متطلبات التشغيل:** Node.js ‏24 LTS ‏(الحد الأدنى 22.5 — الأدوات والاختبارات تستخدم `node:sqlite`) + npm المرفق معه + Git.
+لا يلزم تسجيل دخول Cloudflare ولا قاعدة إنتاج للتشغيل المحلي.
+
+```bash
+# 1) الاعتماديات (better-sqlite3 بديل اختياري فقط — node:sqlite هو الأساسي؛
+# إن فشل بناء الوحدة الأصلية لعدم وجود أدوات C++، استخدم npm ci --ignore-scripts وسيعمل كل شيء)
 npm ci
 npm ci --prefix tools/wrangler-env          # wrangler المحلي (يحتاجه db:migrate:local أدناه)
 
 # 2) سرّ محلي + فتح المحتوى المسودّ في التطوير فقط (الملف مستثنى من Git)
+# الطريقة الأسرع: انسخ ملف المثال وعدّل القيم (انظر .dev.vars.example):
+#   PowerShell: Copy-Item .dev.vars.example .dev.vars
+#   Bash:       cp .dev.vars.example .dev.vars
+# ثم ضع pepper عشوائيًا (32+ حرفًا) — توليده:
+#   PowerShell: [Convert]::ToBase64String((1..48 | ForEach-Object { Get-Random -Maximum 256 }))
+#   Bash:       openssl rand -base64 36
+# أو يدويًا بالشكل التالي (Bash):
 cat > .dev.vars <<'EOF'
 PASSWORD_PEPPER=local-dev-pepper-0123456789abcdefghijklmnop
 ALLOW_UNREVIEWED_CONTENT="true"
 ALLOW_PUBLIC_SIGNUP="true"
+# الدخول عبر Google محليًا (اختياري): يلزم عميل OAuth حقيقي من Google Cloud Console
+# مع تسجيل http://127.0.0.1:8787/api/auth/oauth/google/callback كـredirect URI.
+# GOOGLE_CLIENT_ID=...
+# GOOGLE_CLIENT_SECRET=...
 EOF
 
 # 3) قاعدة D1 المحلية + البذور + استيراد المحتوى بالترتيب الموثّق
@@ -80,7 +105,7 @@ npm run db:migrate:local && npm run db:seed:local
 # --all فقط: خطة واحدة لكل content/drafts (كل الحزم معًا) + خطة العينات.
 # الاستيراد مجلدًا بمجلد (--dir لكل مجلد) يكسر روابط الدرس↔المفردة بصمت،
 # لأن كل خطة تربط بمفردات مجلدها فقط (رُصد: 160 رابطًا بدل 1,334).
-node tools/import-content.mjs --all   # 212 درسًا + 3 عينات، draft/unreviewed
+node tools/import-content.mjs --all   # 256 درسًا مسودة + 3 ملفات عينات = 258 درسًا مميزًا، الكل draft/unreviewed
 # الافتراضي بلا وسائط يستورد content/exemplars فقط (3 دروس).
 
 # 4) التشغيل والتحقق

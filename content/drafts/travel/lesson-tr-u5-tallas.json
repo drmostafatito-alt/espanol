@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "tr-u5-tallas",
+    "titleAr": "المقاسات وتجربة الملابس",
+    "level": "A2",
+    "programSlug": "travel",
+    "unitSlug": "tr-u5-shopping-travel",
+    "objectiveAr": "أن يسأل المتعلم عن مقاسه، ويطلب تجربة قطعة ملابس في غرفة القياس، ويقول إنها مناسبة أو كبيرة أو صغيرة.",
+    "estimatedMinutes": 10,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "mediano",
+      "color",
+      "guantes"
+    ],
+    "reviewVocabulary": [
+      "talla",
+      "probador",
+      "quedar"
+    ],
+    "targetStructures": [
+      "¿Qué talla usa?",
+      "¿Puedo probarme …?",
+      "Me queda bien/grande/pequeño."
+    ],
+    "grammarTopics": [
+      "quedar-bien-grande",
+      "tallas-eu"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "في متجر ملابس تريد تجربة قميص، فتسأل البائعة عن المقاس المناسب وتجربه في غرفة القياس.",
+        "settingAr": "متجر ملابس، قسم الرجال",
+        "lines": [
+          {
+            "es": "¿Qué talla usa?",
+            "ar": "ما مقاسك؟",
+            "arEg": "بتلبس مقاس كام؟",
+            "audioKey": "pending/tr-u5-tallas-1"
+          },
+          {
+            "es": "Uso la cuarenta.",
+            "ar": "ألبس مقاس أربعين.",
+            "arEg": "بلبس مقاس أربعين.",
+            "audioKey": "pending/tr-u5-tallas-2"
+          },
+          {
+            "es": "¿Puedo probarme esta camisa?",
+            "ar": "هل يمكنني تجربة هذا القميص؟",
+            "arEg": "ممكن أجرّب القميص ده؟",
+            "audioKey": "pending/tr-u5-tallas-3"
+          },
+          {
+            "es": "Claro, el probador está al fondo.",
+            "ar": "بالطبع، غرفة القياس في آخر المحل.",
+            "arEg": "طبعًا، غرفة القياس في آخر المحل.",
+            "audioKey": "pending/tr-u5-tallas-4"
+          },
+          {
+            "es": "Me queda un poco grande. ¿Tiene una talla mediana?",
+            "ar": "المقاس كبير عليّ قليلًا. هل لديك مقاس متوسط؟",
+            "arEg": "المقاس كبير عليّا شوية. عندك مقاس ميديم؟",
+            "audioKey": "pending/tr-u5-tallas-5"
+          },
+          {
+            "es": "Sí, aquí tiene la mediana. Y estos guantes están en oferta.",
+            "ar": "نعم، هذا هو المقاس المتوسط، وهذه القفازات معروضة أيضًا.",
+            "arEg": "أيوه، ده المقاس الميديم، والجوانتي دي عليها عرض كمان.",
+            "audioKey": "pending/tr-u5-tallas-6"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "مقاسات الملابس في إسبانيا أوروبية: مقاس 40 أو 42 مثلًا، ومقاسات الأحذية 40 أو 41. غرفة القياس تُسمى el probador، وطلب التجربة قبل الشراء أمر طبيعي تمامًا.",
+    "pedagogicalRationaleAr": "يتدرج الدرس من سؤال المقاس إلى طلب التجربة، ثم إلى الحكم على المقاس بعد التجربة، وهي خطوات الموقف الحقيقي في المتجر بالترتيب نفسه.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "translate_short"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 2,
+    "exercises": [
+      {
+        "id": "tr_u5_tallas_1_listen",
+        "type": "listen_choose",
+        "instructionAr": "استمع إلى سؤال البائعة واختر الجملة التي سمعتها.",
+        "audioKey": "pending/tr-u5-tallas-listen-1",
+        "speechEs": "¿Qué talla usa?",
+        "options": [
+          {
+            "id": "tr_u5_tallas_1_a",
+            "text": "¿Qué talla usa?",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_tallas_1_b",
+            "text": "¿Qué calle es?",
+            "isCorrect": false,
+            "distractorRationaleAr": "المسموع talla (مقاس) لا calle (شارع)، والسؤال عن المقاس لا عن المكان."
+          },
+          {
+            "id": "tr_u5_tallas_1_c",
+            "text": "¿Cuánto cuesta?",
+            "isCorrect": false,
+            "distractorRationaleAr": "السؤال المسموع عن المقاس لا عن السعر، و«cuesta» لم تُسمع هنا."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_tallas_1_a"
+          ]
+        },
+        "explanationAr": "السؤال عن المقاس: ¿Qué talla usa؟ والجواب يذكر الرقم الأوروبي: Uso la cuarenta. و«usa» هنا بمعنى يلبس مقاسًا معينًا.",
+        "errorFeedback": {
+          "tr_u5_tallas_1_b": "المسموع talla (مقاس) لا calle (شارع)، والسؤال عن المقاس لا عن المكان.",
+          "tr_u5_tallas_1_c": "السؤال المسموع عن المقاس لا عن السعر، و«cuesta» لم تُسمع هنا."
+        },
+        "skills": [
+          "listening",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "talla"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_2_word",
+        "type": "word_choice",
+        "instructionAr": "ماذا تقول عندما تريد تجربة قميص قبل شرائه؟",
+        "options": [
+          {
+            "id": "tr_u5_tallas_2_a",
+            "text": "¿Puedo probarme esta camisa?",
+            "textAr": "هل يمكنني تجربة هذا القميص؟",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_tallas_2_b",
+            "text": "¿Puedo pagar esta camisa?",
+            "textAr": "هل يمكنني دفع ثمن هذا القميص؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«pagar» تعني يدفع، وهذا بعد التجربة والشراء لا قبلها."
+          },
+          {
+            "id": "tr_u5_tallas_2_c",
+            "text": "¿Puedo devolver esta camisa?",
+            "textAr": "هل يمكنني إرجاع هذا القميص؟",
+            "isCorrect": false,
+            "distractorRationaleAr": "«devolver» تعني يرجع سلعة اشتراها، لا أن يجربها قبل الشراء."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_tallas_2_a"
+          ]
+        },
+        "explanationAr": "طلب التجربة: ¿Puedo probarme…؟ والفعل probarse انعكاسي، لذلك يأتي مع الضمير me: probarme. و«pagar» للدفع و«devolver» للإرجاع، وكلاهما لا يصلح هنا.",
+        "errorFeedback": {
+          "tr_u5_tallas_2_b": "«pagar» تعني يدفع، وهذا بعد التجربة والشراء لا قبلها.",
+          "tr_u5_tallas_2_c": "«devolver» تعني يرجع سلعة اشتراها، لا أن يجربها قبل الشراء."
+        },
+        "skills": [
+          "reading",
+          "grammar"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "probarse",
+          "pagar",
+          "devolver"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_3_fill",
+        "type": "fill_blank",
+        "instructionAr": "أكمل الجملة بالكلمة المناسبة لوصف المقاس.",
+        "stemEs": "Me queda un poco ____. ¿Tiene una talla mediana?",
+        "stemAr": "المقاس كبير عليّ قليلًا. هل لديك مقاس متوسط؟",
+        "answerKey": {
+          "accepted": [
+            "grande"
+          ],
+          "caseSensitive": false
+        },
+        "explanationAr": "«Me queda grande» تعني المقاس كبير عليّ، و«me queda pequeño» تعني صغير عليّ، و«me queda bien» تعني مناسب. والفعل quedar هنا بمعنى يناسب أو يقع على الجسم.",
+        "errorFeedback": {
+          "mediano": "«mediano» مقاس وسط، لكن الجملة تحتاج وصف المقاس الحالي: grande.",
+          "pequeño": "«pequeño» عكس المعنى المطلوب: الجملة تقول إن المقاس كبير."
+        },
+        "skills": [
+          "writing",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "quedar",
+          "grande",
+          "mediano"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_4_order",
+        "type": "word_order",
+        "instructionAr": "رتّب الكلمات لتكوين جملة عن مكان غرفة القياس.",
+        "items": [
+          {
+            "id": "tr_u5_tallas_4_t1",
+            "kind": "token",
+            "text": "probador"
+          },
+          {
+            "id": "tr_u5_tallas_4_t2",
+            "kind": "token",
+            "text": "está"
+          },
+          {
+            "id": "tr_u5_tallas_4_t3",
+            "kind": "token",
+            "text": "El"
+          },
+          {
+            "id": "tr_u5_tallas_4_t4",
+            "kind": "token",
+            "text": "al"
+          },
+          {
+            "id": "tr_u5_tallas_4_t5",
+            "kind": "token",
+            "text": "fondo"
+          }
+        ],
+        "answerKey": {
+          "accepted": [
+            "El probador está al fondo",
+            "El probador está al fondo."
+          ],
+          "caseSensitive": false,
+          "punctuationInsensitive": true
+        },
+        "explanationAr": "«al fondo» تعني في آخر المحل. و«estar» للمكان، و«el probador» مذكر لذلك أداته el.",
+        "errorFeedback": {
+          "order": "ابدأ بأداة التعريف والاسم El probador، ثم الفعل está، ثم المكان al fondo."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "probador"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_5_reply",
+        "type": "choose_reply",
+        "instructionAr": "اختر الرد الطبيعي في هذا الموقف.",
+        "contextAr": "البائعة تسألك عن مقاسك في متجر ملابس.",
+        "stemEs": "— ¿Qué talla usa?",
+        "stemAr": "— ما مقاسك؟",
+        "options": [
+          {
+            "id": "tr_u5_tallas_5_a",
+            "text": "Uso la cuarenta.",
+            "textAr": "ألبس مقاس أربعين.",
+            "isCorrect": true
+          },
+          {
+            "id": "tr_u5_tallas_5_b",
+            "text": "Cuesta cuarenta euros.",
+            "textAr": "سعره أربعون يورو.",
+            "isCorrect": false,
+            "distractorRationaleAr": "هذا جواب عن السعر، والسؤال عن المقاس لا عن السعر."
+          },
+          {
+            "id": "tr_u5_tallas_5_c",
+            "text": "Me llamo Omar.",
+            "textAr": "اسمي عمر.",
+            "isCorrect": false,
+            "distractorRationaleAr": "السؤال عن المقاس لا عن الاسم، وذكر الاسم هنا لا يجيب عنه."
+          }
+        ],
+        "answerKey": {
+          "correctOptionIds": [
+            "tr_u5_tallas_5_a"
+          ]
+        },
+        "explanationAr": "الجواب عن المقاس يذكر الرقم: Uso la cuarenta. و«cuesta cuarenta euros» جواب عن السعر لا عن المقاس.",
+        "errorFeedback": {
+          "tr_u5_tallas_5_b": "هذا جواب عن السعر، والسؤال عن المقاس لا عن السعر.",
+          "tr_u5_tallas_5_c": "السؤال عن المقاس لا عن الاسم، وذكر الاسم هنا لا يجيب عنه."
+        },
+        "skills": [
+          "pragmatics",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "talla",
+          "precio"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_6_translate",
+        "type": "translate_short",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هل يمكنني تجربة هذا القميص؟",
+        "answerKey": {
+          "accepted": [
+            "¿Puedo probarme esta camisa?",
+            "¿Puedo probarme la camisa?",
+            "Puedo probarme esta camisa"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        },
+        "explanationAr": "طلب التجربة بصيغة مهذبة: ¿Puedo probarme esta camisa؟ ولاحظ الضمير me المتصل بالمصدر probarme.",
+        "errorFeedback": {
+          "¿Puedo probar esta camisa?": "الفعل انعكاسي: probarme لا probar وحدها في هذا التعبير.",
+          "¿Puedo probarme este camisa?": "camisa مؤنثة، فالإشارة esta لا este."
+        },
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "probarse",
+          "camisa"
+        ],
+        "scoring": {
+          "mode": "all_or_nothing"
+        }
+      },
+      {
+        "id": "tr_u5_tallas_7_speak",
+        "type": "speak_with_text",
+        "instructionAr": "اذكر مقاسك واطلب التجربة وقل إن المقاس مناسب. تمرين مشاركة لا يُصحَّح آليًا (لا يوجد تقييم نطق).",
+        "stemEs": "Uso la cuarenta. ¿Puedo probarme esta camisa? Me queda bien, gracias.",
+        "stemAr": "ألبس مقاس أربعين. هل يمكنني تجربة هذا القميص؟ المقاس مناسب، شكرًا.",
+        "answerKey": {
+          "modelAnswer": "Uso la cuarenta. ¿Puedo probarme esta camisa? Me queda bien, gracias.",
+          "referenceAudioKey": "pending/tr-u5-tallas-model-1"
+        },
+        "explanationAr": "قِس نفسك على الوضوح واللباقة وسلامة الصيغة. لا يوجد تقييم نطق آلي، والملف الصوتي المرجعي غير متوفر بعد (كل الصوت pending).",
+        "skills": [
+          "speaking"
+        ],
+        "difficulty": 2,
+        "targetVocab": [
+          "talla",
+          "probarse",
+          "quedar"
+        ],
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "الوضوح",
+              "weight": 50
+            },
+            {
+              "code": "accuracy",
+              "labelAr": "سلامة الصيغة واللباقة",
+              "weight": 50
+            }
+          ]
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس التسوق 2/4 (المقاسات وتجربة الملابس). يحتاج مراجعة إسبانية أصلية لمقاسات الاتحاد الأوروبي وصيغة probarse. كل مقاطع الصوت pending ولم يُنتج أي ملف."
+    }
+  }
+}

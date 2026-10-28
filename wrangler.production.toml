@@ -1,0 +1,51 @@
+# إعداد الإنتاج المجاني — ملف مستقل عن wrangler.toml (ملف التطوير الملتزَم).
+# لا يُقرأ تلقائيًا: النشر به يتطلب أمرًا صريحًا:
+#   npx wrangler deploy --config wrangler.production.toml
+# وفحص الجاهزية به:
+#   node tools/check-deploy-ready.mjs --file wrangler.production.toml
+# (بدون --env: البوابة تقرأ قسم [vars] في هذا الملف.)
+# لا أسرار في هذا الملف أبدًا. القيم الناقصة مُحذوفة عمدًا لا مُخترعة،
+# فتفشل البوابة بصدق (APP_ORIGIN_MISSING وD1_ID_MISSING) حتى يضيفها المالك.
+# راجع القائمة الدقيقة للقيم وطريقة الحصول عليها في docs/28_LAUNCH_RUNBOOK.md.
+
+name = "espanol-balarabi"
+main = "src/worker/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+# يجعل Worker يرى كل طلب (لا الأصول فقط) حتى تُضاف الرؤوس الأمنية إلى مستند HTML نفسه.
+run_worker_first = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "es-ar-prod"
+# database_id: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء قاعدة الإنتاج بأمر
+# wrangler d1 create (انظر الـrunbook)، ثم يُلصق المعرّف الحقيقي كما يظهر في
+# لوحة Cloudflare أو في مخرجات الأمر. لا تضع معرّفًا وهميًا ولا أصفارًا.
+
+[vars]
+ENVIRONMENT = "production"
+# APP_ORIGIN: لا يوجد سطر هنا عمدًا. بعد اختيار النطاق (workers.dev مجاني أو
+# دومين خاص) يُضاف سطر واحد بالأصل الوحيد بصيغة HTTPS، مثال:
+# النطاق الكامل فقط، بلا مسار زائد وبلا أصول محلية مختلطة — الاختلاط يعطّل
+# كوكي __Host- وSecure وHSTS بصمت (انظر src/worker/lib/http.ts).
+# MEDIA_ORIGIN: غير مستهلَك من الـWorker (مُعلن في الأنواع فقط)، ومتغيّر
+# البناء VITE_MEDIA_ORIGIN غير مضبوط أصلًا، وكل مفاتيح الصوت pending
+# فيُغطّيها TTS المتصفح. لا سطر له هنا؛ ليس حاجب إطلاق.
+# GOOGLE_CLIENT_ID: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء عميل Google OAuth
+# (انظر الـrunbook)؛ وبدونه يفشل مسار Google مغلقًا برسالة عامة دون كشف.
+ALLOW_PUBLIC_SIGNUP = "false"
+# حد الخطة المجانية 10ms CPU ⇒ 30k أقصى ما يمكن مع هامش (قياس workerd الفعلي
+# في reports/kdf-benchmark.md). هذا حدّ منصة لا اختيار تصميمي، ويبقى حاجب
+# KDF_BELOW_OWASP قائمًا لمسار كلمات المرور؛ مستخدمو Google الجدد غير متأثرين.
+PBKDF2_ITERATIONS = "30000"
+SESSION_TTL_DAYS = "30"
+
+# الأسرار (لا تُكتب هنا ولا في أي ملف ولا في Git ولا في المحادثة):
+# - PASSWORD_PEPPER: إلزامي، 32 حرفًا على الأقل، ويُضبط فقط عبر أمر الأسرار
+#   الآمن في Cloudflare (انظر الـrunbook) — بدونه يفشل المصادقة مغلقًا.
+# - GOOGLE_CLIENT_SECRET: يُضبط بالآلية نفسها فقط، ولا يُرسل في المحادثة أبدًا.

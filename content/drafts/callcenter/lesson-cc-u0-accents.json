@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u0-accents",
+    "titleAr": "اللهجات الإقليمية وطلب التكرار بأدب",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u0-phonetics-support",
+    "objectiveAr": "أن يميّز المتعلم الفروق بين اللهجات الإقليمية، ويطلب التكرار أو التوضيح بصيغ مهذبة دون مقاطعة العميل.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "acento",
+      "entonación",
+      "claridad"
+    ],
+    "reviewVocabulary": [
+      "escuchar",
+      "repetir",
+      "despacio"
+    ],
+    "targetStructures": [
+      "¿Podría repetir, por favor?",
+      "No le he entendido bien.",
+      "¿Podría hablar más despacio?"
+    ],
+    "grammarTopics": [
+      "acentos-aclaracion"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل يتحدث بلهجة سريعة ونبرة مختلفة. أنت الموظف بابلو. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، مكالمة بلهجة إقليمية سريعة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Buenos días, le atiende Pablo. Le escucho; hable con calma, por favor.",
+            "ar": "صباح الخير، يخدمك بابلو. أستمع إليك؛ تحدث بهدوء من فضلك.",
+            "arEg": "صباح الخير، معاك بابلو. سامعك؛ اتكلم على مهلك من فضلك.",
+            "audioKey": "pending/cc-u0-accents-line-1"
+          },
+          {
+            "es": "Es que llevo días llamando y nadie me explica nada, ¡qué desastre!",
+            "ar": "المشكلة أنني أتصل منذ أيام ولا أحد يشرح لي شيئًا، يا لها من فوضى!",
+            "arEg": "المشكلة إني بتصل من أيام ومحدش بيشرح لي حاجة، إيه الفوضى دي!",
+            "audioKey": "pending/cc-u0-accents-line-2"
+          },
+          {
+            "es": "Entiendo su molestia. Disculpe, no le he entendido bien. ¿Podría repetir la fecha, por favor?",
+            "ar": "أتفهّم انزعاجك. عذرًا، لم أفهمك جيدًا. هل يمكنك تكرار التاريخ من فضلك؟",
+            "arEg": "فاتهم انزعاجك. معلش، مفهمتكش كويس. ممكن تكرر التاريخ من فضلك؟",
+            "audioKey": "pending/cc-u0-accents-line-3"
+          },
+          {
+            "es": "Claro: el viernes, con calma. Gracias por escucharme.",
+            "ar": "بالطبع: يوم الجمعة، بهدوء. شكرًا لاستماعك إليّ.",
+            "arEg": "طبعًا: يوم الجمعة، على مهلك. شكرًا إنك سمعتني.",
+            "audioKey": "pending/cc-u0-accents-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "تختلف اللهجات في الإيقاع والتنغيم وبعض الأصوات؛ ولا يجوز تقليد لهجة العميل أو التعليق عليها، بل طلب التكرار بأدب.",
+    "pedagogicalRationaleAr": "طلب التكرار مهارة مهنية لا اعتراف بالضعف: ندرّبها مبكرًا حتى لا يخمن الموظف ما لم يسمعه.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u0_accents_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u0_accents_1_listen_a",
+            "text": "Disculpe, ¿podría repetir la fecha, por favor? No le he entendido bien.",
+            "isCorrect": true,
+            "textAr": "عذرًا، هل يمكنك تكرار التاريخ من فضلك؟ لم أفهمك جيدًا."
+          },
+          {
+            "id": "cc_u0_accents_1_listen_b",
+            "text": "Disculpe, ¿podría repetir el precio, por favor? No le he entendido bien.",
+            "isCorrect": false,
+            "textAr": "عذرًا، هل يمكنك تكرار السعر من فضلك؟ لم أفهمك جيدًا.",
+            "distractorRationaleAr": "الصوت طلب «la fecha» لا «el precio»."
+          },
+          {
+            "id": "cc_u0_accents_1_listen_c",
+            "text": "Disculpe, hable más alto, por favor. No le he entendido bien.",
+            "isCorrect": false,
+            "textAr": "عذرًا، تحدث بصوت أعلى من فضلك. لم أفهمك جيدًا.",
+            "distractorRationaleAr": "الصوت طلب التكرار لا رفع الصوت."
+          }
+        ],
+        "targetVocab": [
+          "repetir",
+          "acento"
+        ],
+        "explanationAr": "طلب التكرار المهذب يحدد ما لم يُفهم (التاريخ) ولا يلوم العميل.",
+        "errorFeedback": {
+          "cc_u0_accents_1_listen_b": "الصوت طلب «la fecha» لا «el precio».",
+          "cc_u0_accents_1_listen_c": "الصوت طلب التكرار لا رفع الصوت."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u0-accents-listen",
+        "speechEs": "Disculpe, ¿podría repetir la fecha, por favor? No le he entendido bien.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_accents_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_accents_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تطلب التكرار بأدب؟",
+        "options": [
+          {
+            "id": "cc_u0_accents_2_choice_a",
+            "text": "Disculpe, ¿podría repetir la última palabra, por favor?",
+            "isCorrect": true,
+            "textAr": "عذرًا، هل يمكنك تكرار الكلمة الأخيرة من فضلك؟"
+          },
+          {
+            "id": "cc_u0_accents_2_choice_b",
+            "text": "Repita, que no entiendo nada.",
+            "isCorrect": false,
+            "textAr": "كرر، فأنا لا أفهم شيئًا.",
+            "distractorRationaleAr": "أمر مباشر وتعميم «لا أفهم شيئًا» يحرج العميل."
+          },
+          {
+            "id": "cc_u0_accents_2_choice_c",
+            "text": "Hable como yo, por favor.",
+            "isCorrect": false,
+            "textAr": "تحدث كما أتحدث أنا من فضلك.",
+            "distractorRationaleAr": "طلب تغيير لهجة العميل غير مهني ومهين."
+          }
+        ],
+        "targetVocab": [
+          "entonación",
+          "claridad"
+        ],
+        "explanationAr": "الاعتذار + condicional + تحديد الكلمة المطلوبة = طلب تكرار مهني.",
+        "errorFeedback": {
+          "cc_u0_accents_2_choice_b": "أمر مباشر وتعميم «لا أفهم شيئًا» يحرج العميل.",
+          "cc_u0_accents_2_choice_c": "طلب تغيير لهجة العميل غير مهني ومهين."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_accents_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_accents_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يتحدث بسرعة كبيرة. اختر الرد المهني.",
+        "stemEs": "— Y además el envío, y la factura, y todo, ¡todo mal!",
+        "stemAr": "— وأيضًا الشحنة، والفاتورة، وكل شيء، كل شيء سيئ!",
+        "options": [
+          {
+            "id": "cc_u0_accents_3_reply_a",
+            "text": "Le escucho con calma. ¿Podría hablar más despacio, por favor, para anotar todo bien?",
+            "isCorrect": true,
+            "textAr": "أستمع إليك بهدوء. هل يمكنك التحدث أبطأ من فضلك، لأسجل كل شيء جيدًا؟"
+          },
+          {
+            "id": "cc_u0_accents_3_reply_b",
+            "text": "Cálmese, que no es para tanto.",
+            "isCorrect": false,
+            "textAr": "اهدأ، فالأمر ليس بهذا السوء.",
+            "distractorRationaleAr": "التقليل من مشكلة العميل يزيد غضبه."
+          },
+          {
+            "id": "cc_u0_accents_3_reply_c",
+            "text": "No entiendo su acento.",
+            "isCorrect": false,
+            "textAr": "لا أفهم لهجتك.",
+            "distractorRationaleAr": "التعليق على اللهجة مهين وغير مهني."
+          }
+        ],
+        "targetVocab": [
+          "escuchar",
+          "despacio"
+        ],
+        "explanationAr": "الهدوء + طلب الإبطاء بسبب واضح (التسجيل الدقيق) يحفظ كرامة العميل.",
+        "errorFeedback": {
+          "cc_u0_accents_3_reply_b": "التقليل من مشكلة العميل يزيد غضبه.",
+          "cc_u0_accents_3_reply_c": "التعليق على اللهجة مهين وغير مهني."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u0_accents_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_accents_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل طلب التكرار المهذب.",
+        "stemEs": "Disculpe, ¿podría ____ la última palabra, por favor?",
+        "stemAr": "عذرًا، هل يمكنك تكرار الكلمة الأخيرة من فضلك؟",
+        "targetVocab": [
+          "repetir",
+          "claridad"
+        ],
+        "explanationAr": "بعد «¿podría» يأتي المصدر: repetir.",
+        "errorFeedback": {
+          "repite": "«repite» مضارع؛ وبعد «podría» نستخدم المصدر."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "repetir"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u0_accents_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين طلب تكرار.",
+        "items": [
+          {
+            "id": "cc_u0_accents_5_order_t1",
+            "kind": "token",
+            "text": "¿Podría"
+          },
+          {
+            "id": "cc_u0_accents_5_order_t2",
+            "kind": "token",
+            "text": "repetir"
+          },
+          {
+            "id": "cc_u0_accents_5_order_t3",
+            "kind": "token",
+            "text": "la"
+          },
+          {
+            "id": "cc_u0_accents_5_order_t4",
+            "kind": "token",
+            "text": "fecha,"
+          },
+          {
+            "id": "cc_u0_accents_5_order_t5",
+            "kind": "token",
+            "text": "por"
+          },
+          {
+            "id": "cc_u0_accents_5_order_t6",
+            "kind": "token",
+            "text": "favor?"
+          }
+        ],
+        "targetVocab": [
+          "repetir",
+          "fecha"
+        ],
+        "explanationAr": "ترتيب الطلب: condicional ثم المصدر ثم المفعول ثم «por favor».",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Podría repetir la fecha, por favor?"
+          ],
+          "tokenOrder": [
+            "cc_u0_accents_5_order_t1",
+            "cc_u0_accents_5_order_t2",
+            "cc_u0_accents_5_order_t3",
+            "cc_u0_accents_5_order_t4",
+            "cc_u0_accents_5_order_t5",
+            "cc_u0_accents_5_order_t6"
+          ]
+        }
+      },
+      {
+        "id": "cc_u0_accents_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل طلب تكرار مهذب بنبرة هادئة وسرعة بطيئة.",
+        "stemEs": "Disculpe, no le he entendido bien. ¿Podría repetir la fecha, por favor?",
+        "stemAr": "عذرًا، لم أفهمك جيدًا. هل يمكنك تكرار التاريخ من فضلك؟",
+        "targetVocab": [
+          "acento",
+          "entonación"
+        ],
+        "explanationAr": "لا ترفع صوتك؛ اخفض السرعة فقط، وتوقف قبل الطلب.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النطق والسرعة المناسبة",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "النبرة المهنية المهذبة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u0-accents-speak",
+          "modelAnswer": "Disculpe, no le he entendido bien. ¿Podría repetir la fecha, por favor?"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «اللهجات وطلب التكرار». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

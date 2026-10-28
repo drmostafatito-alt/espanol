@@ -134,10 +134,13 @@ const allLinks = [];
 const allLinkStatements = [];
 for (const targetDir of targetDirs) {
   // AUD-07: حلّ إحالات المفردات من جذر content/ كله، لا من مجلد الاستيراد فقط
-  const { statements, counters, errors, unresolvedVocabRefs, links, linkStatements } = buildContentPlan(join(ROOT, targetDir), {
+  const { statements, counters, errors, unresolvedVocabRefs, links, linkStatements, versions: planVersions } = buildContentPlan(join(ROOT, targetDir), {
     existingVersions,
     lexiconDirs: [join(ROOT, 'content')],
   });
+  // تسلسل أرقام الإصدارات عبر المجلدات: بلا هذا يحسب كل مجلد رقم الإصدار من لقطة
+  // البداية نفسها، فيتصادم درسٌ واحد بمحتوى مختلف (العينة + المسودة) على
+  // UNIQUE(lesson_id, version_no) ويُسقط الاستيراد كاملًا.
   if (Array.isArray(unresolvedVocabRefs)) allUnresolved.push(...unresolvedVocabRefs);
   if (Array.isArray(links)) allLinks.push(...links);
   if (Array.isArray(linkStatements)) allLinkStatements.push(...linkStatements);
@@ -146,6 +149,7 @@ for (const targetDir of targetDirs) {
     for (const e of errors) console.error('   - ' + e);
     process.exit(1);
   }
+  if (planVersions) Object.assign(existingVersions, planVersions);
   console.log(`\n📦 ${targetDir} ⇒ ${statements.length} أمر SQL جاهز`);
   console.log('   ' + Object.entries(counters).map(([k, v]) => `${k}=${v}`).join('  '));
   // دفع بحلقة لا بنشر المصفوفة: النشر يتجاوز حد مكدس الاستدعاء عند ~125 ألف أمر

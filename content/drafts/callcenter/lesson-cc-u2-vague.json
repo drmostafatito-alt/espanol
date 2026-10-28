@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u2-vague",
+    "titleAr": "توضيح الشكاوى الغامضة",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u2-understanding",
+    "objectiveAr": "أن يحوّل المتعلم الشكوى الغامضة إلى وصف دقيق، بأسئلة توضيحية مهذبة عن الزمان والمكان والتفاصيل.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "vago",
+      "preciso",
+      "equivocado"
+    ],
+    "reviewVocabulary": [
+      "aclarar",
+      "dato",
+      "pregunta"
+    ],
+    "targetStructures": [
+      "¿Podría aclararme…?",
+      "¿Cuándo ocurrió exactamente?",
+      "Necesito un dato preciso."
+    ],
+    "grammarTopics": [
+      "preguntas-aclaratorias"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل يشتكي بكلام عام بلا تفاصيل. أنت الموظفة نوريا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، شكوى غامضة (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Entiendo que algo no funciona. ¿Podría aclararme cuándo ocurrió el problema, por favor?",
+            "ar": "أفهم أن شيئًا ما لا يعمل. هل يمكنك توضيح متى حدثت المشكلة من فضلك؟",
+            "arEg": "فاهمة إن فيه حاجة مش شغالة. ممكن توضح لي المشكلة حصلت إمتى من فضلك؟",
+            "audioKey": "pending/cc-u2-vague-line-1"
+          },
+          {
+            "es": "No sé… hace días. Todo mal, todo.",
+            "ar": "لا أعرف… منذ أيام. كل شيء سيئ، كل شيء.",
+            "arEg": "مش عارف… من أيام. كل حاجة وحشة، كل حاجة.",
+            "audioKey": "pending/cc-u2-vague-line-2"
+          },
+          {
+            "es": "Gracias. ¿El problema es el envío o el producto? Necesito un dato preciso para ayudarle.",
+            "ar": "شكرًا. هل المشكلة في الشحن أم في المنتج؟ أحتاج بيانًا دقيقًا لمساعدتك.",
+            "arEg": "شكرًا. المشكلة في الشحن ولا في المنتج؟ محتاجة بيان محدد عشان أساعدك.",
+            "audioKey": "pending/cc-u2-vague-line-3"
+          },
+          {
+            "es": "El envío. Llegó tarde y la dirección estaba equivocada.",
+            "ar": "الشحن. وصل متأخرًا وكان العنوان خاطئًا.",
+            "arEg": "الشحن. وصل متأخر والعنوان كان غلط.",
+            "audioKey": "pending/cc-u2-vague-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الشكوى الغامضة ليست كسلًا من العميل؛ بل غالبًا انفعال أو نقص معلومات. الأسئلة المحددة المهذبة تحوّل الانفعال إلى وقائع قابلة للحل.",
+    "pedagogicalRationaleAr": "التوضيح قبل الحل: سؤال واحد دقيق عن الزمان أو الموضوع يختصر عشر دقائق من التخمين.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u2_vague_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u2_vague_1_listen_a",
+            "text": "¿Podría decirme cuándo ocurrió el problema y dónde estaba el pedido?",
+            "isCorrect": true,
+            "textAr": "هل يمكنك إخباري متى حدثت المشكلة وأين كان الطلب؟"
+          },
+          {
+            "id": "cc_u2_vague_1_listen_b",
+            "text": "¿Podría decirme cuándo ocurrió el problema y cuánto costó?",
+            "isCorrect": false,
+            "textAr": "هل يمكنك إخباري متى حدثت المشكلة وكم كلفت؟",
+            "distractorRationaleAr": "الصوت سأل عن المكان «dónde» لا عن السعر."
+          },
+          {
+            "id": "cc_u2_vague_1_listen_c",
+            "text": "Dígame cuándo ocurrió el problema, sin detalles.",
+            "isCorrect": false,
+            "textAr": "أخبرني متى حدثت المشكلة، دون تفاصيل.",
+            "distractorRationaleAr": "أمر مباشر يطلب حذف التفاصيل؛ والصوت طلب التوضيح."
+          }
+        ],
+        "targetVocab": [
+          "aclarar",
+          "dato"
+        ],
+        "explanationAr": "السؤال التوضيحي يجمع الزمان والمكان معًا.",
+        "errorFeedback": {
+          "cc_u2_vague_1_listen_b": "الصوت سأل عن المكان «dónde» لا عن السعر.",
+          "cc_u2_vague_1_listen_c": "أمر مباشر يطلب حذف التفاصيل؛ والصوت طلب التوضيح."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u2-vague-listen",
+        "speechEs": "¿Podría decirme cuándo ocurrió el problema y dónde estaba el pedido?",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_vague_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_vague_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي سؤال يحوّل شكوى غامضة إلى وصف دقيق؟",
+        "options": [
+          {
+            "id": "cc_u2_vague_2_choice_a",
+            "text": "¿El problema es el envío o el producto? Necesito un dato preciso.",
+            "isCorrect": true,
+            "textAr": "هل المشكلة في الشحن أم في المنتج؟ أحتاج بيانًا دقيقًا."
+          },
+          {
+            "id": "cc_u2_vague_2_choice_b",
+            "text": "¿Todo mal, verdad?",
+            "isCorrect": false,
+            "textAr": "كل شيء سيئ، صحيح؟",
+            "distractorRationaleAr": "يكرر الغموض بدل توضيحه."
+          },
+          {
+            "id": "cc_u2_vague_2_choice_c",
+            "text": "¿Por qué se queja tanto?",
+            "isCorrect": false,
+            "textAr": "لماذا تشتكي كثيرًا؟",
+            "distractorRationaleAr": "سؤال اتهامي يغلق الحوار."
+          }
+        ],
+        "targetVocab": [
+          "vago",
+          "preciso"
+        ],
+        "explanationAr": "سؤال الاختيار بين احتمالين + طلب بيان دقيق يحدد المشكلة.",
+        "errorFeedback": {
+          "cc_u2_vague_2_choice_b": "يكرر الغموض بدل توضيحه.",
+          "cc_u2_vague_2_choice_c": "سؤال اتهامي يغلق الحوار."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_vague_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_vague_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يقول: «كل شيء سيئ». اختر الرد المهني.",
+        "stemEs": "— Todo mal, todo. No sé por dónde empezar.",
+        "stemAr": "— كل شيء سيئ، كل شيء. لا أعرف من أين أبدأ.",
+        "options": [
+          {
+            "id": "cc_u2_vague_3_reply_a",
+            "text": "No se preocupe, vamos paso a paso. ¿Qué ocurrió primero: el envío o el producto?",
+            "isCorrect": true,
+            "textAr": "لا تقلق، سنسير خطوة بخطوة. ماذا حدث أولًا: الشحن أم المنتج؟"
+          },
+          {
+            "id": "cc_u2_vague_3_reply_b",
+            "text": "Explíquelo todo de una vez.",
+            "isCorrect": false,
+            "textAr": "اشرح كل شيء دفعة واحدة.",
+            "distractorRationaleAr": "طلب مستحيل يزيد ارتباك العميل."
+          },
+          {
+            "id": "cc_u2_vague_3_reply_c",
+            "text": "Si no sabe, no puedo ayudarle.",
+            "isCorrect": false,
+            "textAr": "إذا كنت لا تعرف، لا أستطيع مساعدتك.",
+            "distractorRationaleAr": "رفض المساعدة عند أول غموض."
+          }
+        ],
+        "targetVocab": [
+          "aclarar",
+          "caso"
+        ],
+        "explanationAr": "تقسيم المشكلة إلى خطوات وسؤال عن الأولى يفتح السرد الغامض.",
+        "errorFeedback": {
+          "cc_u2_vague_3_reply_b": "طلب مستحيل يزيد ارتباك العميل.",
+          "cc_u2_vague_3_reply_c": "رفض المساعدة عند أول غموض."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u2_vague_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_vague_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "هل يمكنك أن تخبرني متى حدثت المشكلة بالضبط؟",
+        "targetVocab": [
+          "preciso",
+          "pregunta"
+        ],
+        "explanationAr": "«cuándo ocurrió» = متى حدثت؛ و«exactamente» تحدد المطلوب بدقة.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Podría decirme cuándo ocurrió el problema exactamente?",
+            "¿Podría decirme cuándo ocurrió exactamente el problema?"
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u2_vague_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين سؤال توضيحي.",
+        "items": [
+          {
+            "id": "cc_u2_vague_5_order_t1",
+            "kind": "token",
+            "text": "¿Podría"
+          },
+          {
+            "id": "cc_u2_vague_5_order_t2",
+            "kind": "token",
+            "text": "decirme"
+          },
+          {
+            "id": "cc_u2_vague_5_order_t3",
+            "kind": "token",
+            "text": "cuándo"
+          },
+          {
+            "id": "cc_u2_vague_5_order_t4",
+            "kind": "token",
+            "text": "ocurrió"
+          },
+          {
+            "id": "cc_u2_vague_5_order_t5",
+            "kind": "token",
+            "text": "el"
+          },
+          {
+            "id": "cc_u2_vague_5_order_t6",
+            "kind": "token",
+            "text": "problema?"
+          }
+        ],
+        "targetVocab": [
+          "aclarar",
+          "dato"
+        ],
+        "explanationAr": "ترتيب السؤال: condicional ثم المصدر ثم أداة الاستفهام.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "¿Podría decirme cuándo ocurrió el problema?"
+          ],
+          "tokenOrder": [
+            "cc_u2_vague_5_order_t1",
+            "cc_u2_vague_5_order_t2",
+            "cc_u2_vague_5_order_t3",
+            "cc_u2_vague_5_order_t4",
+            "cc_u2_vague_5_order_t5",
+            "cc_u2_vague_5_order_t6"
+          ]
+        }
+      },
+      {
+        "id": "cc_u2_vague_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل سؤالًا توضيحيًا مهذبًا عن شكوى غامضة.",
+        "stemEs": "¿Podría aclararme cuándo ocurrió el problema y qué producto es?",
+        "stemAr": "هل يمكنك توضيح متى حدثت المشكلة وأي منتج هو؟",
+        "targetVocab": [
+          "vago",
+          "aclarar"
+        ],
+        "explanationAr": "نبرة هادئة مشجعة؛ ولا تكرر كلمة «vago» أمام العميل.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u2-vague-speak",
+          "modelAnswer": "¿Podría aclararme cuándo ocurrió el problema y qué producto es?"
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «توضيح الشكاوى الغامضة». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

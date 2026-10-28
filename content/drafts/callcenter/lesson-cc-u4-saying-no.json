@@ -1,0 +1,411 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u4-saying-no",
+    "titleAr": "قول لا بأدب مع الحفاظ على العميل",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u4-complaints",
+    "objectiveAr": "أن يرفض المتعلم طلبًا غير ممكن بأدب، ويقدّم بديلًا حقيقيًا يحافظ على علاقة العميل بالشركة.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "rechazar",
+      "disponible",
+      "encargado",
+      "ausente"
+    ],
+    "reviewVocabulary": [
+      "ofrecer",
+      "alternativa",
+      "disculpe"
+    ],
+    "targetStructures": [
+      "No puedo ofrecerle…, pero puedo…",
+      "Lo entiendo, y…",
+      "El encargado revisará…"
+    ],
+    "grammarTopics": [
+      "decir-no-alternativa"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "عميل يطلب استردادًا فوريًا غير ممكن. أنت الموظف خورخي. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "مركز اتصال، رفض مهذب (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Entiendo que quiere el reembolso hoy. No puedo ofrecerle el reembolso hoy, pero puedo ofrecerle un cambio sin coste.",
+            "ar": "أفهم أنك تريد الاسترداد اليوم. لا أستطيع تقديم الاسترداد اليوم، لكن أستطيع تقديم تبديل دون تكلفة.",
+            "arEg": "فاهم إنك عاوز الاسترداد النهاردة. مقدرش أقدّم الاسترداد النهاردة، بس أقدر أقدّم تبديل من غير تكلفة.",
+            "audioKey": "pending/cc-u4-saying-no-line-1"
+          },
+          {
+            "es": "¿Y el encargado? ¿Está disponible?",
+            "ar": "وماذا عن المسؤول؟ هل هو متاح؟",
+            "arEg": "والمسؤول؟ متاح؟",
+            "audioKey": "pending/cc-u4-saying-no-line-2"
+          },
+          {
+            "es": "El encargado está ausente hoy. Si prefiere, él revisará su caso mañana y le llamará.",
+            "ar": "المسؤول غائب اليوم. وإذا تفضل، سيراجع حالتك غدًا ويتصل بك.",
+            "arEg": "المسؤول غايب النهاردة. ولو تحب، هيراجع حالتك بكرة وهيكلمك.",
+            "audioKey": "pending/cc-u4-saying-no-line-3"
+          },
+          {
+            "es": "De acuerdo: cambio hoy, y el encargado me llama mañana.",
+            "ar": "موافق: تبديل اليوم، والمسؤول يتصل بي غدًا.",
+            "arEg": "موافق: تبديل النهاردة، والمسؤول يكلمني بكرة.",
+            "audioKey": "pending/cc-u4-saying-no-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "«لا» المهنية تُقال مرة واحدة بوضوح، ثم يُفتح باب البديل؛ وتكرار الرفض بلا بديل يحوّل المكالمة إلى جدال.",
+    "pedagogicalRationaleAr": "الرفض مهارة لغوية: الصيغة «لا أستطيع X، لكن أستطيع Y» تحفظ ماء وجه العميل وتمنحه قرارًا.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u4_saying_no_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u4_saying_no_1_listen_a",
+            "text": "No puedo ofrecerle el reembolso hoy, pero puedo ofrecerle un cambio sin coste.",
+            "isCorrect": true,
+            "textAr": "لا أستطيع تقديم الاسترداد اليوم، لكن أستطيع تقديم تبديل دون تكلفة."
+          },
+          {
+            "id": "cc_u4_saying_no_1_listen_b",
+            "text": "Puedo ofrecerle el reembolso hoy, pero no puedo ofrecerle un cambio.",
+            "isCorrect": false,
+            "textAr": "أستطيع تقديم الاسترداد اليوم، لكن لا أستطيع تقديم تبديل.",
+            "distractorRationaleAr": "الصوت نفى الاسترداد وأثبت التبديل؛ والخيار يعكسهما."
+          },
+          {
+            "id": "cc_u4_saying_no_1_listen_c",
+            "text": "No puedo ofrecerle nada hoy.",
+            "isCorrect": false,
+            "textAr": "لا أستطيع تقديم أي شيء اليوم.",
+            "distractorRationaleAr": "الصوت قدّم بديلًا حقيقيًا لا رفضًا مطلقًا."
+          }
+        ],
+        "targetVocab": [
+          "rechazar",
+          "ofrecer"
+        ],
+        "explanationAr": "بنية الرفض المهذب: نفي محدد + «pero» + بديل.",
+        "errorFeedback": {
+          "cc_u4_saying_no_1_listen_b": "الصوت نفى الاسترداد وأثبت التبديل؛ والخيار يعكسهما.",
+          "cc_u4_saying_no_1_listen_c": "الصوت قدّم بديلًا حقيقيًا لا رفضًا مطلقًا."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u4-saying-no-listen",
+        "speechEs": "No puedo ofrecerle el reembolso hoy, pero puedo ofrecerle un cambio sin coste.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_saying_no_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_saying_no_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة ترفض طلبًا مع الحفاظ على العميل؟",
+        "options": [
+          {
+            "id": "cc_u4_saying_no_2_choice_a",
+            "text": "No puedo ofrecerle eso, pero puedo ofrecerle un cambio sin coste.",
+            "isCorrect": true,
+            "textAr": "لا أستطيع تقديم ذلك، لكن أستطيع تقديم تبديل دون تكلفة."
+          },
+          {
+            "id": "cc_u4_saying_no_2_choice_b",
+            "text": "No, imposible. Adiós.",
+            "isCorrect": false,
+            "textAr": "لا، مستحيل. وداعًا.",
+            "distractorRationaleAr": "رفض مطلق بلا بديل ولا إغلاق مهني."
+          },
+          {
+            "id": "cc_u4_saying_no_2_choice_c",
+            "text": "Sí a todo, sin problema.",
+            "isCorrect": false,
+            "textAr": "نعم لكل شيء، دون مشكلة.",
+            "distractorRationaleAr": "موافقة كاذبة على ما لا يمكن تنفيذه."
+          }
+        ],
+        "targetVocab": [
+          "disponible",
+          "alternativa"
+        ],
+        "explanationAr": "الرفض المحدد + البديل = حفظ للعلاقة.",
+        "errorFeedback": {
+          "cc_u4_saying_no_2_choice_b": "رفض مطلق بلا بديل ولا إغلاق مهني.",
+          "cc_u4_saying_no_2_choice_c": "موافقة كاذبة على ما لا يمكن تنفيذه."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_saying_no_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_saying_no_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يصر على المستحيل. اختر الرد المهني.",
+        "stemEs": "— Lo quiero hoy, sí o sí.",
+        "stemAr": "— أريده اليوم، حتمًا.",
+        "options": [
+          {
+            "id": "cc_u4_saying_no_3_reply_a",
+            "text": "Entiendo su urgencia. Hoy no es posible, pero mañana el encargado revisará su caso. ¿Le llamamos mañana?",
+            "isCorrect": true,
+            "textAr": "أتفهّم إلحاحك. اليوم غير ممكن، لكن المسؤول سيراجع حالتك غدًا. هل نتصل بك غدًا؟"
+          },
+          {
+            "id": "cc_u4_saying_no_3_reply_b",
+            "text": "Imposible, no insista.",
+            "isCorrect": false,
+            "textAr": "مستحيل، لا تصر.",
+            "distractorRationaleAr": "أمر بوقف الإصرار يغلق الحوار."
+          },
+          {
+            "id": "cc_u4_saying_no_3_reply_c",
+            "text": "Vale, hoy mismo, aunque no pueda.",
+            "isCorrect": false,
+            "textAr": "حسنًا، اليوم نفسه، رغم أنني لا أستطيع.",
+            "distractorRationaleAr": "وعد كاذب ينهار عند التنفيذ."
+          }
+        ],
+        "targetVocab": [
+          "encargado",
+          "disculpe"
+        ],
+        "explanationAr": "الاعتراف بالإلحاح + الحد الزمني الحقيقي + خطوة تالية = رفض محترم.",
+        "errorFeedback": {
+          "cc_u4_saying_no_3_reply_b": "أمر بوقف الإصرار يغلق الحوار.",
+          "cc_u4_saying_no_3_reply_c": "وعد كاذب ينهار عند التنفيذ."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u4_saying_no_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_saying_no_4_fill",
+        "type": "fill_blank",
+        "mode": "graded",
+        "instructionAr": "أكمل جملة الرفض المهذب.",
+        "stemEs": "No puedo ofrecerle eso, ____ puedo ofrecerle un cambio.",
+        "stemAr": "لا أستطيع تقديم ذلك، لكن أستطيع تقديم تبديل.",
+        "targetVocab": [
+          "rechazar",
+          "ofrecer"
+        ],
+        "explanationAr": "«pero» تربط الرفض بالبديل في جملة واحدة.",
+        "errorFeedback": {
+          "y": "«y» تضيف لا تعارض؛ والمطلوب أداة الاستدراك «pero»."
+        },
+        "skills": [
+          "grammar",
+          "writing"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "pero"
+          ],
+          "caseSensitive": false
+        }
+      },
+      {
+        "id": "cc_u4_saying_no_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة رفض وبديل.",
+        "items": [
+          {
+            "id": "cc_u4_saying_no_5_order_t1",
+            "kind": "token",
+            "text": "No"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t2",
+            "kind": "token",
+            "text": "puedo"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t3",
+            "kind": "token",
+            "text": "ofrecerle"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t4",
+            "kind": "token",
+            "text": "eso,"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t5",
+            "kind": "token",
+            "text": "pero"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t6",
+            "kind": "token",
+            "text": "puedo"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t7",
+            "kind": "token",
+            "text": "ofrecerle"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t8",
+            "kind": "token",
+            "text": "un"
+          },
+          {
+            "id": "cc_u4_saying_no_5_order_t9",
+            "kind": "token",
+            "text": "cambio."
+          }
+        ],
+        "targetVocab": [
+          "rechazar",
+          "alternativa"
+        ],
+        "explanationAr": "ترتيب الجملة: النفي ثم الاستدراك ثم البديل.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "No puedo ofrecerle eso, pero puedo ofrecerle un cambio."
+          ],
+          "tokenOrder": [
+            "cc_u4_saying_no_5_order_t1",
+            "cc_u4_saying_no_5_order_t2",
+            "cc_u4_saying_no_5_order_t3",
+            "cc_u4_saying_no_5_order_t4",
+            "cc_u4_saying_no_5_order_t5",
+            "cc_u4_saying_no_5_order_t6",
+            "cc_u4_saying_no_5_order_t7",
+            "cc_u4_saying_no_5_order_t8",
+            "cc_u4_saying_no_5_order_t9"
+          ]
+        }
+      },
+      {
+        "id": "cc_u4_saying_no_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "سجّل رفضًا مهذبًا مع بديل حقيقي، بنبرة هادئة وصادقة.",
+        "stemEs": "No puedo ofrecerle eso, pero puedo ofrecerle un cambio sin coste.",
+        "stemAr": "لا أستطيع تقديم ذلك، لكن أستطيع تقديم تبديل دون تكلفة.",
+        "targetVocab": [
+          "rechazar",
+          "disponible"
+        ],
+        "explanationAr": "لا تعتذر خمس مرات؛ اعتذار واحد ثم البديل.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "understanding",
+              "labelAr": "فهم المشكلة قبل الرد",
+              "weight": 25
+            },
+            {
+              "code": "politeness",
+              "labelAr": "الرد المهذب بصيغة usted",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "اكتمال الجملة وبنيتها الصحيحة",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u4-saying-no-speak",
+          "modelAnswer": "No puedo ofrecerle eso, pero puedo ofrecerle un cambio sin coste."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «قول لا بأدب». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}

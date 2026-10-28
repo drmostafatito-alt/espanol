@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "1.0.0",
+  "lesson": {
+    "slug": "cc-u6-complaint-reply",
+    "titleAr": "الرد الكتابي على شكوى",
+    "level": "B1",
+    "programSlug": "callcenter",
+    "unitSlug": "cc-u6-writing",
+    "objectiveAr": "أن يرد المتعلم كتابيًا على شكوى بتعاطف واعتذار وحل محدد وموعد متابعة، بلغة رسمية مكتوبة.",
+    "estimatedMinutes": 13,
+    "skills": [
+      "listening",
+      "reading",
+      "speaking",
+      "writing",
+      "grammar",
+      "vocabulary"
+    ],
+    "newVocabulary": [
+      "remitente",
+      "destinatario",
+      "adjunto"
+    ],
+    "reviewVocabulary": [
+      "reclamación",
+      "disculpa",
+      "respuesta"
+    ],
+    "targetStructures": [
+      "Estimada señora…",
+      "Lamento lo ocurrido.",
+      "Le ofrezco…"
+    ],
+    "grammarTopics": [
+      "respuesta-escrita-queja"
+    ],
+    "scenarios": [
+      {
+        "contextAr": "رد كتابي على شكوى وصلت بالبريد. أنت الموظفة إيلينا. (أسماء وأرقام وهمية للتدريب فقط)",
+        "settingAr": "رد كتابي على شكوى (بيانات وهمية)",
+        "lines": [
+          {
+            "es": "Estimada señora Soler: lamento lo ocurrido con su pedido 000123.",
+            "ar": "سيدتي العزيزة سولير: آسفة لما حدث لطلبك 000123.",
+            "arEg": "سيدتي العزيزة سولير: آسفة للي حصل للأوردر بتاعك 000123.",
+            "audioKey": "pending/cc-u6-complaint-reply-line-1"
+          },
+          {
+            "es": "Le ofrezco una solución concreta: nuevo envío sin coste, o reembolso en cinco días.",
+            "ar": "أعرض عليك حلًا محددًا: شحنة جديدة دون تكلفة، أو استرداد خلال خمسة أيام.",
+            "arEg": "بعرض عليك حل محدد: شحنة جديدة من غير تكلفة، أو استرداد في خمس أيام.",
+            "audioKey": "pending/cc-u6-complaint-reply-line-2"
+          },
+          {
+            "es": "Le envío el resumen en un archivo adjunto. Le llamaré el lunes para el seguimiento.",
+            "ar": "أرسل لك الملخص في ملف مرفق. سأتصل بك يوم الاثنين للمتابعة.",
+            "arEg": "ببعت لك الملخص في ملف مرفق. هكلمك يوم الاتنين للمتابعة.",
+            "audioKey": "pending/cc-u6-complaint-reply-line-3"
+          },
+          {
+            "es": "Atentamente, Elena, Atención al Cliente. El remitente es nuestro departamento; usted es la destinataria.",
+            "ar": "مع خالص التقدير، إيلينا، خدمة العملاء. المُرسِل قسمنا؛ وأنت المُرسَل إليها.",
+            "arEg": "مع خالص التقدير، إيلينا، خدمة العملاء. المُرسِل قسمنا؛ وانتي المُرسَل إليها.",
+            "audioKey": "pending/cc-u6-complaint-reply-line-4"
+          }
+        ]
+      }
+    ],
+    "culturalNoteAr": "الرد الكتابي يبقى: العميل يقرؤه مرتين ويحتفظ به؛ لذلك يُكتب بهدوء وبدقة لا تسمح بها حرارة المكالمة.",
+    "pedagogicalRationaleAr": "الشكوى المكتوبة تُجاب كتابةً ببنية كاملة: تعاطف + حل + موعد؛ والاعتذار وحده بلا حل رسالة ناقصة.",
+    "status": "draft",
+    "mastery": {
+      "minAccuracy": 70,
+      "minCorrectExercises": 5,
+      "requiredExerciseTypes": [
+        "listen_choose",
+        "word_order",
+        "speak_with_text"
+      ]
+    },
+    "unlock": {
+      "type": "sequential"
+    },
+    "offlinePriority": 1,
+    "exercises": [
+      {
+        "id": "cc_u6_complaint_reply_1_listen",
+        "type": "listen_choose",
+        "mode": "graded",
+        "instructionAr": "استمع واختر الجملة التي سمعتها حرفيًا.",
+        "options": [
+          {
+            "id": "cc_u6_complaint_reply_1_listen_a",
+            "text": "Lamento lo ocurrido. Le ofrezco una solución concreta y un plazo claro.",
+            "isCorrect": true,
+            "textAr": "آسف لما حدث. أعرض عليك حلًا محددًا وموعدًا واضحًا."
+          },
+          {
+            "id": "cc_u6_complaint_reply_1_listen_b",
+            "text": "Lamento lo ocurrido. No le ofrezco ninguna solución.",
+            "isCorrect": false,
+            "textAr": "آسف لما حدث. لا أعرض عليك أي حل.",
+            "distractorRationaleAr": "الصوت قدّم حلًا محددًا لا رفضًا."
+          },
+          {
+            "id": "cc_u6_complaint_reply_1_listen_c",
+            "text": "Celebro lo ocurrido. Le ofrezco una solución concreta.",
+            "isCorrect": false,
+            "textAr": "أحتفي بما حدث. أعرض عليك حلًا محددًا.",
+            "distractorRationaleAr": "الصوت قال «lamento» لا «celebro»."
+          }
+        ],
+        "targetVocab": [
+          "reclamación",
+          "disculpa"
+        ],
+        "explanationAr": "الرد الكتابي: اعتذار + حل + موعد.",
+        "errorFeedback": {
+          "cc_u6_complaint_reply_1_listen_b": "الصوت قدّم حلًا محددًا لا رفضًا.",
+          "cc_u6_complaint_reply_1_listen_c": "الصوت قال «lamento» لا «celebro»."
+        },
+        "skills": [
+          "listening"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "audioKey": "pending/cc-u6-complaint-reply-listen",
+        "speechEs": "Lamento lo ocurrido. Le ofrezco una solución concreta y un plazo claro.",
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_complaint_reply_1_listen_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_complaint_reply_2_choice",
+        "type": "word_choice",
+        "mode": "graded",
+        "instructionAr": "أي جملة تفتتح ردًا كتابيًا على شكوى؟",
+        "options": [
+          {
+            "id": "cc_u6_complaint_reply_2_choice_a",
+            "text": "Estimada señora Soler: lamento lo ocurrido con su pedido.",
+            "isCorrect": true,
+            "textAr": "سيدتي العزيزة سولير: آسفة لما حدث لطلبك."
+          },
+          {
+            "id": "cc_u6_complaint_reply_2_choice_b",
+            "text": "Oye, Soler, lo siento.",
+            "isCorrect": false,
+            "textAr": "اسمعي يا سولير، آسفة.",
+            "distractorRationaleAr": "تحية شفهية غير رسمية."
+          },
+          {
+            "id": "cc_u6_complaint_reply_2_choice_c",
+            "text": "Su queja no tiene sentido.",
+            "isCorrect": false,
+            "textAr": "شكواك لا معنى لها.",
+            "distractorRationaleAr": "رفض الشكوى بدل الرد عليها."
+          }
+        ],
+        "targetVocab": [
+          "remitente",
+          "destinatario"
+        ],
+        "explanationAr": "تحية رسمية + اعتذار يسمّي الواقعة = افتتاح مهني.",
+        "errorFeedback": {
+          "cc_u6_complaint_reply_2_choice_b": "تحية شفهية غير رسمية.",
+          "cc_u6_complaint_reply_2_choice_c": "رفض الشكوى بدل الرد عليها."
+        },
+        "skills": [
+          "reading",
+          "vocabulary"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_complaint_reply_2_choice_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_complaint_reply_3_reply",
+        "type": "choose_reply",
+        "mode": "graded",
+        "instructionAr": "العميل يطلب حلًا محددًا كتابةً. اختر الرد المهني.",
+        "stemEs": "— Quiero la solución por escrito, no solo por teléfono.",
+        "stemAr": "— أريد الحل كتابةً، لا عبر الهاتف فقط.",
+        "options": [
+          {
+            "id": "cc_u6_complaint_reply_3_reply_a",
+            "text": "De acuerdo. Le envío la solución por correo, con el plazo y el código REF-0007.",
+            "isCorrect": true,
+            "textAr": "موافق. أرسل لك الحل بالبريد، مع الموعد والرمز REF-0007."
+          },
+          {
+            "id": "cc_u6_complaint_reply_3_reply_b",
+            "text": "No hace falta escribir nada.",
+            "isCorrect": false,
+            "textAr": "لا حاجة لكتابة أي شيء.",
+            "distractorRationaleAr": "رفض التوثيق الكتابي."
+          },
+          {
+            "id": "cc_u6_complaint_reply_3_reply_c",
+            "text": "Ya se lo dije por teléfono, basta.",
+            "isCorrect": false,
+            "textAr": "لقد قلته لك عبر الهاتف، يكفي.",
+            "distractorRationaleAr": "الكلام الهاتفي لا يغني عن التوثيق."
+          }
+        ],
+        "targetVocab": [
+          "respuesta",
+          "adjunto"
+        ],
+        "explanationAr": "الحل المكتوب + الموعد + الرمز = توثيق كامل.",
+        "errorFeedback": {
+          "cc_u6_complaint_reply_3_reply_b": "رفض التوثيق الكتابي.",
+          "cc_u6_complaint_reply_3_reply_c": "الكلام الهاتفي لا يغني عن التوثيق."
+        },
+        "skills": [
+          "speaking",
+          "pragmatics"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "correctOptionIds": [
+            "cc_u6_complaint_reply_3_reply_a"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_complaint_reply_4_fill",
+        "type": "translate_short",
+        "mode": "graded",
+        "instructionAr": "ترجم إلى الإسبانية.",
+        "stemAr": "أعتذر عما حدث وأعرض عليك حلًا محددًا.",
+        "targetVocab": [
+          "disculpa",
+          "respuesta"
+        ],
+        "explanationAr": "«Lamento lo ocurrido» = أعتذر عما حدث؛ و«concreta» = محدد.",
+        "skills": [
+          "writing",
+          "translation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Lamento lo ocurrido y le ofrezco una solución concreta.",
+            "Lamento lo ocurrido y le ofrezco una solución."
+          ],
+          "caseSensitive": false,
+          "ignorePunctuation": true
+        }
+      },
+      {
+        "id": "cc_u6_complaint_reply_5_order",
+        "type": "word_order",
+        "mode": "graded",
+        "instructionAr": "رتّب الكلمات لتكوين جملة رد كتابي.",
+        "items": [
+          {
+            "id": "cc_u6_complaint_reply_5_order_t1",
+            "kind": "token",
+            "text": "Lamento"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t2",
+            "kind": "token",
+            "text": "lo"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t3",
+            "kind": "token",
+            "text": "ocurrido"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t4",
+            "kind": "token",
+            "text": "y"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t5",
+            "kind": "token",
+            "text": "le"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t6",
+            "kind": "token",
+            "text": "ofrezco"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t7",
+            "kind": "token",
+            "text": "una"
+          },
+          {
+            "id": "cc_u6_complaint_reply_5_order_t8",
+            "kind": "token",
+            "text": "solución."
+          }
+        ],
+        "targetVocab": [
+          "reclamación",
+          "disculpa"
+        ],
+        "explanationAr": "ترتيب الرد: الاعتذار ثم العرض.",
+        "skills": [
+          "grammar",
+          "speaking"
+        ],
+        "difficulty": 2,
+        "scoring": {
+          "mode": "all_or_nothing"
+        },
+        "answerKey": {
+          "accepted": [
+            "Lamento lo ocurrido y le ofrezco una solución."
+          ],
+          "tokenOrder": [
+            "cc_u6_complaint_reply_5_order_t1",
+            "cc_u6_complaint_reply_5_order_t2",
+            "cc_u6_complaint_reply_5_order_t3",
+            "cc_u6_complaint_reply_5_order_t4",
+            "cc_u6_complaint_reply_5_order_t5",
+            "cc_u6_complaint_reply_5_order_t6",
+            "cc_u6_complaint_reply_5_order_t7",
+            "cc_u6_complaint_reply_5_order_t8"
+          ]
+        }
+      },
+      {
+        "id": "cc_u6_complaint_reply_6_speak",
+        "type": "speak_with_text",
+        "mode": "graded",
+        "instructionAr": "اقرأ بصوت واضح افتتاح رد كتابي على شكوى وهمية.",
+        "stemEs": "Estimada señora Soler: lamento lo ocurrido y le ofrezco una solución concreta.",
+        "stemAr": "سيدتي العزيزة سولير: آسفة لما حدث وأعرض عليك حلًا محددًا.",
+        "targetVocab": [
+          "remitente",
+          "destinatario"
+        ],
+        "explanationAr": "اقرأ التحية بوقفة بعد النقطتين؛ فالترقيم جزء من المعنى.",
+        "skills": [
+          "speaking",
+          "pronunciation"
+        ],
+        "difficulty": 3,
+        "scoring": {
+          "mode": "rubric",
+          "rubric": [
+            {
+              "code": "clarity",
+              "labelAr": "وضوح النص وبنيته الكاملة",
+              "weight": 25
+            },
+            {
+              "code": "formality",
+              "labelAr": "السجل الرسمي المناسب للكتابة",
+              "weight": 25
+            },
+            {
+              "code": "structure",
+              "labelAr": "ترتيب الأجزاء ترتيبًا منطقيًا",
+              "weight": 25
+            },
+            {
+              "code": "vocabulary",
+              "labelAr": "استخدام مفردات الدرس بدقة",
+              "weight": 25
+            }
+          ]
+        },
+        "answerKey": {
+          "referenceAudioKey": "pending/cc-u6-complaint-reply-speak",
+          "modelAnswer": "Estimada señora Soler: lamento lo ocurrido y le ofrezco una solución concreta."
+        }
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "authors": [
+        "إعداد آلي — يتطلب مراجعة بشرية قبل النشر"
+      ],
+      "spanishReviewer": null,
+      "translationReviewer": null,
+      "reviewedAt": null,
+      "notes": "درس الكول سنتر «الرد الكتابي على شكوى». يحتاج مراجعة بشرية من مدرّب خدمة عملاء قبل أي نشر. كل المقاطع الصوتية pending ولم يُنتج أي ملف صوتي. جميع الأسماء والأرقام وهمية للتدريب فقط."
+    }
+  }
+}
