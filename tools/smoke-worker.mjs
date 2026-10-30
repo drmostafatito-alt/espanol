@@ -120,8 +120,15 @@ record('طلب من أصل خارجي مرفوض (CSRF)', csrf.status === 403 &&
 const dup = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, password)) }) });
 record('بريد مكرر يُرفض دون كشف', dup.status === 409 && !/موجود|مسجل|already/i.test(JSON.stringify(dup.body)));
 
-const badLogin = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, 'WrongPass2026')) }) });
-record('كلمة مرور خاطئة (401)', badLogin.status === 401);
+// بروتوكول v2: أي فشل في مسار المفتاح المشتق يعطي 409 موحّدًا (لا يميّز حسابًا
+// موجودًا من غيره ولا الحساب القديم)، ثم تعيد إعادة المحاولة الخام 401 عامة.
+const badStep = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, 'WrongPass2026')) }) });
+const badLogin = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password: 'WrongPass2026' }) });
+record(
+  'كلمة مرور خاطئة (409 ثم 401 عام)',
+  badStep.status === 409 && badStep.body?.error?.code === 'LEGACY_CREDENTIALS' &&
+    badLogin.status === 401 && badLogin.body?.error?.code === 'INVALID_CREDENTIALS',
+);
 
 const logout = await call('/api/auth/logout', { method: 'POST' });
 const meAfter = await call('/api/auth/me');
@@ -152,8 +159,14 @@ const crossSite = await call('/api/me', {
 });
 record('Sec-Fetch-Site: cross-site مرفوض (403)', crossSite.status === 403);
 
-const ghost = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: 'ghost_' + Date.now() + '@example.com', ...(await credential('ghost_' + Date.now() + '@example.com', 'WrongPass2026x')) }) });
-record('بريد غير مسجَّل لا يكشف شيئًا (401 عام)', ghost.status === 401 && ghost.body?.error?.code === 'INVALID_CREDENTIALS');
+const ghostEmail = 'ghost_' + Date.now() + '@example.com';
+const ghost = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: ghostEmail, ...(await credential(ghostEmail, 'WrongPass2026x')) }) });
+const ghostRaw = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: ghostEmail, password: 'WrongPass2026x' }) });
+record(
+  'بريد غير مسجَّل يعطي نفس رد الحساب الموجود تمامًا (409 ثم 401)',
+  ghost.status === badStep.status && ghost.body?.error?.code === badStep.body?.error?.code &&
+    ghostRaw.status === badLogin.status && ghostRaw.body?.error?.code === badLogin.body?.error?.code,
+);
 
 const spa = await fetch(BASE + '/learn');
 const spaText = await spa.text();

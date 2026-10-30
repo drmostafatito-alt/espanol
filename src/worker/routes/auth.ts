@@ -465,9 +465,17 @@ export async function changePassword(req: Request, env: Env, requestId: string, 
       upgraded = await hashDerivedKey(next, policy, clientKdf.iterations);
     }
   } else {
+    // صف قديم (v1): الخادم يملك ما يكفي للتحقق من كلمة المرور الخام، لكني لا أسمح
+    // بالمسار الخام إلا هنا — وهو المسار الوحيد الذي يقبل كلمة مرور خام أصلًا.
+    // إن أرسل العميل مفتاحًا مشتقًا (عميل v2 يجهل أن الصف قديم) نطلب منه إعادة
+    // المحاولة بكلمة المرور الخام مرة واحدة.
+    if (isWellFormedDerivedKey(body.currentDerivedKey) && !body.currentPassword) throw legacyHint();
     const currentPassword = typeof body.currentPassword === 'string' ? body.currentPassword : '';
     ok = currentPassword ? await verifyPassword(currentPassword, row.password_hash, policy) : false;
-    if (ok) {
+    if (ok && isWellFormedDerivedKey(body.newDerivedKey)) {
+      // ترقية حقيقية: كلمة المرور الجديدة تُخزَّن بصيغة kdfv2 للمرة الأولى.
+      upgraded = await hashDerivedKey(body.newDerivedKey, policy, clientKdf.iterations);
+    } else if (ok) {
       const pwProblems = passwordProblems(body.newPassword, { email: row.email_normalized });
       if (pwProblems.length) {
         throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
@@ -605,7 +613,8 @@ export async function requestPasswordReset(req: Request, env: Env, requestId: st
   const row = await findUserByEmail(env.DB, email);
   if (row && row.status === 'active') {
     const token = await issueOneTimeToken(env, 'password_reset_tokens', row.id, RESET_TTL_MINUTES * 60);
-    const link = `${appBaseUrl(env)}/reset?token=${encodeURIComponent(token)}`;
+    // البريد مضمَّن لأن الملح حتمي منه: بدونه لا يستطيع المتصفح اشتقاق المفتاح.
+    const link = `${appBaseUrl(env)}/reset?token=${encodeURIComponent(token)}&email=${encodeURIComponent(row.email_display)}`;
     const mail = resetPasswordMail(link, RESET_TTL_MINUTES);
     const sent = await sendMail(env, { to: row.email_display, subject: mail.subject, text: mail.text, html: mail.html, kind: 'reset_password' });
     await writeAudit(env.DB, {

@@ -1,4 +1,4 @@
-import { useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useState, type FormEvent, type ReactNode } from 'react';
 import { api, ApiError, type AuthCredentials } from '../api';
 import { deriveKeyB64, supportsClientKdf } from '../kdf';
 import { useAuth } from '../state';
@@ -309,10 +309,249 @@ export function Login({
           لا تملك حسابًا؟{' '}
           <a href="/signup" onClick={e => { e.preventDefault(); navigate('/signup'); }}>أنشئ حسابًا</a>
         </p>
-        <p className="auth-note small muted">
-          لا تتوفر حاليًا خاصية استعادة كلمة المرور. إن نسيتها، تواصل مع فريق المنصة لحل المشكلة.
+        <p className="small muted" style={{ textAlign: 'center', margin: 0 }}>
+          <a href="/forgot" onClick={e => { e.preventDefault(); navigate('/forgot'); }}>نسيت كلمة المرور؟</a>
         </p>
       </form>
+    </AuthLayout>
+  );
+}
+
+
+/* ============================================================================
+   استعادة الوصول — ثلاث شاشات عامة
+   ----------------------------------------------------------------------------
+   • /forgot: نطلب رابطًا؛ الخادم يعيد 200 دائمًا فلا يُعرف إن كان البريد مسجلًا.
+   • /reset?token=…&email=…: المفتاح الجديد يُشتق في المتصفح (نفس مسار kdfv2)،
+     ثم يُستهلك الرمز مرة واحدة وتُبطَل كل الجلسات.
+   • /verify?token=…: يؤكّد البريد فور فتح الرابط (بلا جلسة، يعمل على أي جهاز).
+   الرمز في العنوان سرّ: يُقرأ عند التركيب ثم يُمسح من شريط العنوان ومن البحث
+   التاريخي عبر replaceState، فلا يبقى في سجل التصفح ولا ينتقل في Referer.
+   ========================================================================== */
+
+function readQuery() {
+  if (typeof window === 'undefined') return { token: '', email: '' };
+  const q = new URLSearchParams(window.location.search);
+  return { token: q.get('token') ?? '', email: q.get('email') ?? '' };
+}
+
+/** يمسح المعاملات الحسّاسة من شريط العنوان بعد قراءتها. */
+function scrubQuery() {
+  if (typeof window === 'undefined') return;
+  if (!window.location.search) return;
+  window.history.replaceState({}, '', window.location.pathname);
+}
+
+const NETWORK_MESSAGE = 'تعذّر الاتصال بالخادم. تحقق من الشبكة ثم أعد المحاولة.';
+
+export function ForgotPassword({ navigate }: { navigate: (to: string) => void }) {
+  const [email, setEmail] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState<FormError | null>(null);
+
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setBusy(true);
+    setError(null);
+    void api
+      .passwordResetRequest(email.trim())
+      .then(() => setSent(true))
+      .catch((err: unknown) => {
+        setError({
+          message: err instanceof ApiError && err.isNetwork() ? NETWORK_MESSAGE : 'تعذّر إرسال الطلب الآن. حاول بعد قليل.',
+        });
+      })
+      .finally(() => setBusy(false));
+  };
+
+  return (
+    <AuthLayout title="استعادة كلمة المرور" subtitle="أدخل بريدك وسنرسل رابطًا لإعادة التعيين.">
+      {sent ? (
+        <div className="stack">
+          <div className="alert info" role="status">
+            <strong style={{ display: 'block' }}>إن كان هذا البريد مسجلًا فسيصلك رابط خلال دقائق.</strong>
+            <span className="small muted">
+              الرابط صالح 30 دقيقة ويُستخدم مرة واحدة. إن لم يصل، تحقق من مجلد «الرسائل غير المرغوبة».
+            </span>
+          </div>
+          <button className="btn block lg" type="button" onClick={() => navigate('/login')}>العودة إلى الدخول</button>
+        </div>
+      ) : (
+        <form className="stack" onSubmit={onSubmit} noValidate>
+          <ErrorBox error={error} />
+          <label className="field">
+            <span>البريد الإلكتروني</span>
+            <input
+              className="ltr"
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              autoComplete="email"
+              required
+            />
+          </label>
+          <button className="btn block lg" type="submit" disabled={busy || !email.trim()}>
+            {busy ? <><span className="spinner spinner-sm" aria-hidden="true" /> جارٍ الإرسال…</> : 'أرسل رابط الاستعادة'}
+          </button>
+          <p className="small muted" style={{ textAlign: 'center', margin: 0 }}>
+            تذكّرت كلمة المرور؟{' '}
+            <a href="/login" onClick={e => { e.preventDefault(); navigate('/login'); }}>سجّل الدخول</a>
+          </p>
+        </form>
+      )}
+    </AuthLayout>
+  );
+}
+
+export function ResetPassword({ navigate }: { navigate: (to: string) => void }) {
+  const [{ token, email }] = useState(readQuery);
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [done, setDone] = useState(false);
+  const [error, setError] = useState<FormError | null>(null);
+
+  useEffect(() => {
+    if (token) scrubQuery();
+  }, [token]);
+
+  const validLink = token.length >= 20 && email.includes('@');
+
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    const problems = passwordProblemsClient(password, email);
+    if (password !== confirm) problems.push('الكلمتان غير متطابقتين.');
+    if (problems.length) {
+      setError({ message: 'لم تُحفظ كلمة المرور بعد.', problems });
+      return;
+    }
+    setBusy(true);
+    setError(null);
+    void (async () => {
+      try {
+        const params = await api.kdfParams(email);
+        const derivedKey = await deriveKeyB64(password, params.salt, params.iterations);
+        await api.passwordResetConfirm(token, derivedKey);
+        setDone(true);
+      } catch (err) {
+        if (err instanceof ApiError && err.isNetwork()) {
+          setError({ message: NETWORK_MESSAGE });
+        } else if (err instanceof ApiError && (err.code === 'INVALID_TOKEN' || err.status === 400)) {
+          setError({ message: 'انتهت صلاحية الرابط أو استُخدم سابقًا. اطلب رابطًا جديدًا.' });
+        } else if (err instanceof ApiError && err.status === 429) {
+          setError({ message: 'محاولات كثيرة. انتظر قليلًا ثم أعد المحاولة.' });
+        } else {
+          setError({ message: 'تعذّرت إعادة التعيين الآن. حاول لاحقًا.' });
+        }
+      } finally {
+        setBusy(false);
+      }
+    })();
+  };
+
+  if (!validLink) {
+    return (
+      <AuthLayout title="رابط غير صالح" subtitle="الرابط ناقص أو تالف.">
+        <div className="stack">
+          <div className="alert" role="alert">
+            <strong style={{ display: 'block' }}>هذا الرابط غير صالح أو منتهي.</strong>
+            <span className="small muted">اطلب رابطًا جديدًا من صفحة الاستعادة.</span>
+          </div>
+          <button className="btn block lg" type="button" onClick={() => navigate('/forgot')}>اطلب رابطًا جديدًا</button>
+        </div>
+      </AuthLayout>
+    );
+  }
+
+  if (done) {
+    return (
+      <AuthLayout title="تم تغيير كلمة المرور" subtitle="سجّل الدخول بكلمة المرور الجديدة.">
+        <div className="stack">
+          <div className="alert info" role="status">
+            <strong style={{ display: 'block' }}>حُفظت كلمة المرور الجديدة.</strong>
+            <span className="small muted">
+              أُغلقت كل الجلسات السابقة على جميع الأجهزة. المفتاح لم يغادر متصفحك.
+            </span>
+          </div>
+          <button className="btn block lg" type="button" onClick={() => navigate('/login')}>الذهاب إلى الدخول</button>
+        </div>
+      </AuthLayout>
+    );
+  }
+
+  return (
+    <AuthLayout title="كلمة مرور جديدة" subtitle="اختر كلمة مرور قوية لحسابك.">
+      <form className="stack" onSubmit={onSubmit} noValidate>
+        <ErrorBox error={error} />
+        <PasswordField value={password} onChange={setPassword} autoComplete="new-password" minLength={12} />
+        <PasswordField value={confirm} onChange={setConfirm} autoComplete="new-password" minLength={12} />
+        <p className="small muted" style={{ margin: 0 }}>
+          12 حرفًا على الأقل، مع حرف ورقم. تُشتق الكلمة في متصفحك ولا تُرسل إلى الخادم.
+        </p>
+        <button className="btn block lg" type="submit" disabled={busy}>
+          {busy ? <><span className="spinner spinner-sm" aria-hidden="true" /> جارٍ الحفظ…</> : 'احفظ كلمة المرور'}
+        </button>
+      </form>
+    </AuthLayout>
+  );
+}
+
+export function VerifyEmail({ navigate }: { navigate: (to: string) => void }) {
+  const [{ token }] = useState(readQuery);
+  const [state, setState] = useState<'checking' | 'ok' | 'invalid' | 'network'>('checking');
+
+  useEffect(() => {
+    if (token) scrubQuery();
+    if (token.length < 20) {
+      setState('invalid');
+      return;
+    }
+    let alive = true;
+    api
+      .verifyEmailConfirm(token)
+      .then(() => { if (alive) setState('ok'); })
+      .catch((err: unknown) => {
+        if (!alive) return;
+        setState(err instanceof ApiError && err.isNetwork() ? 'network' : 'invalid');
+      });
+    return () => { alive = false; };
+  }, [token]);
+
+  const title =
+    state === 'ok' ? 'تم تأكيد بريدك'
+    : state === 'checking' ? 'جارٍ التحقق من الرابط'
+    : 'لم نتمكن من تأكيد البريد';
+
+  return (
+    <AuthLayout title={title} subtitle="تأكيد البريد يفتح استعادة كلمة المرور برابط آمن.">
+      {state === 'checking' && (
+        <p className="muted" role="status" style={{ display: 'flex', gap: 'var(--s-2)', alignItems: 'center' }}>
+          <span className="spinner spinner-sm" aria-hidden="true" /> لحظة واحدة…
+        </p>
+      )}
+      {state === 'ok' && (
+        <div className="stack">
+          <div className="alert info" role="status">
+            <strong style={{ display: 'block' }}>صار بريدك مؤكدًا.</strong>
+            <span className="small muted">يمكنك الآن استعادة كلمة المرور برابط عند الحاجة.</span>
+          </div>
+          <button className="btn block lg" type="button" onClick={() => navigate('/learn')}>متابعة التعلّم</button>
+        </div>
+      )}
+      {(state === 'invalid' || state === 'network') && (
+        <div className="stack">
+          <div className="alert" role="alert">
+            <strong style={{ display: 'block' }}>
+              {state === 'network' ? 'تعذّر الاتصال بالخادم.' : 'الرابط غير صالح أو منتهي أو استُخدم سابقًا.'}
+            </strong>
+            <span className="small muted">
+              {state === 'network' ? 'تحقق من الشبكة وأعد فتح الرابط.' : 'اطلب رابطًا جديدًا من إعدادات حسابك.'}
+            </span>
+          </div>
+          <button className="btn block lg" type="button" onClick={() => navigate('/settings')}>إعدادات الحساب</button>
+        </div>
+      )}
     </AuthLayout>
   );
 }

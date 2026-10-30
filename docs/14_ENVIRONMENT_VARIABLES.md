@@ -20,6 +20,8 @@
 | `FEATURE_PUSH` | var | `true` عندما يُعد VAPID | staging/prod |
 | `FEATURE_EMAIL` | var | `true` عندما يُعد مزود البريد | staging/prod |
 | `ADMIN_BOOTSTRAP_DONE` | var | يمنع إعادة إنشاء حساب إدارة | staging/prod |
+| `MAIL_FROM` | var | مرسل الرسائل بصيغة `الاسم <no-reply@نطاق-موثّق>`؛ النطاق يُوثَّق عند المزوّد وإلا رُفض الإرسال | مع `RESEND_API_KEY` |
+| `DEBUG_MAIL_OUTBOX` | var | `"true"` يفعّل صندوق بريد في الذاكرة يُقرأ من `GET /api/dev/mail-outbox` لاختبارات E2E فقط. محجوب في `ENVIRONMENT=production`، وبوابة preflight تفشل إذا ظهر في إعداد الإنتاج | dev/test فقط |
 
 ## 2. أسرار (`wrangler secret put`)
 
@@ -28,7 +30,7 @@
 | `PASSWORD_PEPPER` | إضافة سرية إلى تجزئة كلمة المرور (حماية من هجوم قاموس على قاعدة مسروقة). **هذا هو الاسم الذي يقرأه الكود**؛ `SESSION_PEPPER` اسم قديم في وثائق سابقة ولا أثر له — ضبطه لا يفعّل شيئًا ويترك المصادقة معطَّلة (503). | **نعم — ≥32 محرفًا عشوائيًا** |
 | `VAPID_PUBLIC_KEY` | Web Push | عند تفعيل Push |
 | `VAPID_PRIVATE_KEY` | Web Push | عند تفعيل Push |
-| `EMAIL_API_KEY` | مزود البريد | عند تفعيل البريد |
+| `RESEND_API_KEY` | مفتاح Resend للبريد الصادر (تحقق البريد + استعادة كلمة المرور). الخطة المجانية: 3,000 رسالة/شهر و100/يوم. **الاسم الذي يقرأه الكود** (`EMAIL_API_KEY` اسم قديم بلا أثر) | عند تفعيل البريد — غيابه يُعطّل الإرسال فقط ولا يُعطّل التسجيل |
 | `TURNSTILE_SECRET` | حماية إنشاء الحساب (اختياري، مجاني) | اختياري |
 | `GOOGLE_CLIENT_SECRET` | سر عميل Google OAuth — تبادل الكود على الخادم فقط، لا يظهر في أي ملف | عند تفعيل الدخول عبر Google |
 
@@ -39,6 +41,10 @@ PASSWORD_PEPPER=<قيمة عشوائية 32B للـdev فقط>
 ALLOW_PUBLIC_SIGNUP=true          # الإنتاج أيضًا true: التسجيل مجاني ومفتوح
 CLIENT_KDF_REQUIRED=true          # الإنتاج: true (لا مسار كلمة مرور خام)
 CLIENT_KDF_ITERATIONS=600000      # الإنتاج: 600000
+# البريد المحلي: بلا مزوّد، الرمز يُنشأ ويُقرأ من الصندوق التطويري في اختبارات E2E
+# RESEND_API_KEY=            (اتركه فارغًا محليًا — لا مفاتيح حقيقية في ملفات التطوير)
+# MAIL_FROM="Espanol <no-reply@example.org>"
+DEBUG_MAIL_OUTBOX=true            # dev فقط؛ preflight يرفضه في الإنتاج
 ALLOW_UNREVIEWED_CONTENT=false
 ENVIRONMENT=development
 APP_ORIGIN=http://localhost:5173

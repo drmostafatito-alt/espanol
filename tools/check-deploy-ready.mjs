@@ -155,6 +155,26 @@ if (!existsSync(abs)) {
     warn('PUBLIC_SIGNUP_IMPLICIT', 'ALLOW_PUBLIC_SIGNUP غير موجود؛ الكود سيغلق التسجيل. صرّح بالقيمة صراحةً للوضوح.', 'أضف ALLOW_PUBLIC_SIGNUP = "false".');
   }
 
+  // 3b) البريد: صندوق التطوير ممنوع في الإنتاج، ولا مفتاح داخل [vars]
+  if (getVar('DEBUG_MAIL_OUTBOX') === 'true') {
+    err(
+      'MAIL_OUTBOX_IN_PROD',
+      'DEBUG_MAIL_OUTBOX="true" في إعداد الإنتاج — يفتح GET /api/dev/mail-outbox برموز تحقق واستعادة.',
+      'احذف المتغير من الإنتاج؛ الصندوق التطويري للتطوير والاختبار فقط.',
+    );
+  }
+  const mailFrom = getVar('MAIL_FROM');
+  if (mailFrom && /example\.(com|org|net)|REPLACE|<|>/i.test(mailFrom)) {
+    err('MAIL_FROM_PLACEHOLDER', `MAIL_FROM قيمة قالب لا نطاقًا حقيقيًا: ${mailFrom}`, 'وثّق نطاقًا حقيقيًا عند المزوّد ثم ضعه هنا.');
+  }
+  if (getVar('RESEND_API_KEY')) {
+    err(
+      'SECRET_IN_VARS',
+      'RESEND_API_KEY مكتوب داخل [vars] — سيُحفظ في Git وفي نص الإعداد.',
+      'انقله إلى سر: wrangler secret put RESEND_API_KEY --config wrangler.production.toml',
+    );
+  }
+
   // 4) قاعدة البيانات
   const dbId = text.match(/database_id\s*=\s*"([^"]*)"/)?.[1];
   if (!dbId) {

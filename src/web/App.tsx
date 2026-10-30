@@ -27,6 +27,9 @@ const loadMisc = () => import('./pages/Misc');
 
 const Login = lazy(() => loadAuth().then(m => ({ default: m.Login })));
 const Signup = lazy(() => loadAuth().then(m => ({ default: m.Signup })));
+const ForgotPassword = lazy(() => loadAuth().then(m => ({ default: m.ForgotPassword })));
+const ResetPassword = lazy(() => loadAuth().then(m => ({ default: m.ResetPassword })));
+const VerifyEmail = lazy(() => loadAuth().then(m => ({ default: m.VerifyEmail })));
 const Lesson = lazy(() => loadLesson().then(m => ({ default: m.Lesson })));
 const Review = lazy(() => loadReview().then(m => ({ default: m.Review })));
 const ReviewPacks = lazy(() => loadReviewPacks().then(m => ({ default: m.ReviewPacks })));
@@ -45,7 +48,7 @@ const NotFound = lazy(() => loadMisc().then(m => ({ default: m.NotFound })));
  */
 function prefetchPage(path: string): void {
   const job =
-    path === '/login' || path === '/signup' ? loadAuth
+    path === '/login' || path === '/signup' || path === '/forgot' || path === '/reset' || path === '/verify' ? loadAuth
     : path.startsWith('/learn/') ? loadLesson
     : path === '/review' ? loadReview
     : path === '/review/packs' ? loadReviewPacks
@@ -98,6 +101,12 @@ function Shell() {
     page = <Landing navigate={navigate} />;
   } else if (path === '/signup') {
     page = user ? <Dashboard navigate={navigate} /> : <Signup navigate={navigate} />;
+  } else if (path === '/forgot') {
+    page = <ForgotPassword navigate={navigate} />;
+  } else if (path === '/reset') {
+    page = <ResetPassword navigate={navigate} />;
+  } else if (path === '/verify') {
+    page = <VerifyEmail navigate={navigate} />;
   } else if (path === '/login') {
     page = user
       ? <Dashboard navigate={navigate} />
@@ -128,7 +137,9 @@ function Shell() {
   }
 
   // شاشات التركيز: الدرس والمراجعة وتحديد المستوى والمصادقة — بلا هيدر جانبي أو شريط سفلي
-  const isFocus = !!lessonSlug || path === '/review' || path === '/placement' || path === '/login' || path === '/signup';
+  const isFocus =
+    !!lessonSlug || path === '/review' || path === '/placement' || path === '/login' || path === '/signup' ||
+    path === '/forgot' || path === '/reset' || path === '/verify';
   // مناطق لوحة المتعلم (الهيكل الجانبي)
   const isAppArea =
     !!user && !isFocus &&
