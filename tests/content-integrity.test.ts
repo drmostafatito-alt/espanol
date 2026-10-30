@@ -27,9 +27,9 @@ const lessons = FILES.filter(f => basename(f).startsWith('lesson-')).map(f => {
   const doc = JSON.parse(readFileSync(f, 'utf8'));
   return { file: f, lesson: (doc.lesson ?? doc) as Record<string, any> };
 });
-const draftLessons = lessons.filter(l => l.file.includes(`${'/'}drafts${'/'}`));
+const draftLessons = lessons.filter(l => /[/\\]drafts[/\\]/.test(l.file));
 const pathFiles = FILES.filter(f => basename(f) === 'paths.json');
-const draftPathFiles = pathFiles.filter(f => f.includes(`${'/'}drafts${'/'}`));
+const draftPathFiles = pathFiles.filter(f => /[/\\]drafts[/\\]/.test(f));
 
 interface UnitRef {
   program: string;
@@ -91,7 +91,7 @@ describe('المنهج — المراجع والترتيب', () => {
   it('تداخل المسودات مع العيّنة محصور في الدروس المعروفة (إصدارات مختلفة لا دروس مكررة)', () => {
     const draftSlugs = new Set(draftLessons.map(l => l.lesson.slug));
     const overlap = lessons
-      .filter(l => !l.file.includes(`${'/'}drafts${'/'}`) && draftSlugs.has(l.lesson.slug))
+      .filter(l => !/[/\\]drafts[/\\]/.test(l.file) && draftSlugs.has(l.lesson.slug))
       .map(l => l.lesson.slug);
     // العيّنة تعرض نسخًا مبكرة من دروس أُضيفت لاحقًا للمسودات — مقصود ومُدار بالإصدارات
     expect(overlap).toEqual(['prea1-hola-me-llamo']);

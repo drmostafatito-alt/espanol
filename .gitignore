@@ -42,3 +42,7 @@ reports/content-review/review-records.sql
 
 # إعداد Playwright المؤقت لبيئة الصندوق (مسارات /tmp) — ليس جزءًا من التطبيق
 playwright.sandbox.config.ts
+
+# نسخ احتياطية لقاعدة البيانات
+backups/
+*.sql
