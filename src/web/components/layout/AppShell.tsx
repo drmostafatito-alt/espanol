@@ -39,13 +39,13 @@ export function AppShell({
   };
 
   const navItems: ShellNavItem[] = [
-    { label: 'الرئيسية', to: '/learn', icon: 'home', active: p => p === '/learn' },
-    { label: 'مسار التعلم', to: '/learn', section: 'learning-path', icon: 'route', active: () => false },
-    { label: 'المسارات المتخصصة', to: '/learn', section: 'specialized-tracks', icon: 'tracks', active: () => false },
-    { label: 'مراجعة الكلمات', to: '/review', icon: 'cards', active: p => p.startsWith('/review') },
-    { label: 'حزم المفردات', to: '/review/packs', icon: 'book', active: () => false },
+    { label: 'اليوم', to: '/learn', icon: 'home', active: p => p === '/learn' },
+    { label: 'خريطة المسار', to: '/path', icon: 'route', active: p => p === '/path' },
+    { label: 'مراجعة الكلمات', to: '/review', icon: 'cards', active: p => p === '/review' },
+    { label: 'حزم المفردات', to: '/review/packs', icon: 'book', active: p => p === '/review/packs' },
     { label: 'اختبار تحديد المستوى', to: '/placement', icon: 'target', active: p => p === '/placement' },
-    { label: 'الإعدادات والملف', to: '/settings', icon: 'settings', active: p => p === '/settings' },
+    { label: 'ملفي وتقدمي', to: '/profile', icon: 'trophy', active: p => p === '/profile' },
+    { label: 'الإعدادات', to: '/settings', icon: 'settings', active: p => p === '/settings' },
   ];
 
   const onSearch = (e: FormEvent) => {
@@ -55,10 +55,10 @@ export function AppShell({
   };
 
   const bottomNav: { label: string; icon: IconName; onClick: () => void; active: boolean }[] = [
-    { label: 'الرئيسية', icon: 'home', onClick: () => navigate('/learn'), active: path === '/learn' },
-    { label: 'التعلم', icon: 'route', onClick: () => goSection('learning-path'), active: false },
-    { label: 'المراجعة', icon: 'cards', onClick: () => navigate('/review'), active: path.startsWith('/review') },
-    { label: 'البحث', icon: 'search', onClick: () => navigate('/search'), active: path.startsWith('/search') },
+    { label: 'اليوم', icon: 'home', onClick: () => navigate('/learn'), active: path === '/learn' },
+    { label: 'المسار', icon: 'route', onClick: () => navigate('/path'), active: path === '/path' },
+    { label: 'المراجعة', icon: 'cards', onClick: () => navigate('/review'), active: path === '/review' },
+    { label: 'تقدمي', icon: 'trophy', onClick: () => navigate('/profile'), active: path === '/profile' },
     { label: 'المزيد', icon: 'menu', onClick: () => setSheetOpen(true), active: false },
   ];
 
@@ -76,7 +76,7 @@ export function AppShell({
             }}
           >
             <span className="brand-mark"><BrandMark size={30} /></span>
-            <span>Español<small>لوحة المتعلم</small></span>
+            <span>Español<small>رحلتك اليومية</small></span>
           </a>
         </div>
         <nav className="sidebar-nav">

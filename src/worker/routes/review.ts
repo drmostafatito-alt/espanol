@@ -14,6 +14,7 @@ import type { Env, SessionUser } from '../types';
 import { HttpError, json, readJson } from '../lib/http';
 import { rateLimitOrThrow } from '../lib/rate-limit';
 import { ulid } from '../lib/ids';
+import { resolvePackTitle } from '../../shared/vocab-titles';
 import {
   isCardKind, isRating, resolveLimits, scheduleCard, utcDayStart,
   DEFAULT_LIMITS, SCHEDULER_VERSION, ratingToQuality,
@@ -458,7 +459,8 @@ export async function listPacks(_req: Request, env: Env, requestId: string, user
     {
       packs: rows.results.map(r => ({
         slug: r.slug,
-        titleAr: r.title_ar,
+        // صف قديم قد يحمل المعرّف الإنجليزي في عمود العنوان — لا يُعرض للطالب
+        titleAr: resolvePackTitle(r.title_ar, r.slug, r.level_code),
         level: r.level_code,
         entries: Number(r.entries),
         started: Number(r.started),

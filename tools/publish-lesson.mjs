@@ -13,6 +13,9 @@
  *   node tools/publish-lesson.mjs --slug prea1-abecedario --cookie-file /tmp/cookie.txt \
  *     --spanish-reviewer "..." --translation-reviewer "..."
  *   node tools/publish-lesson.mjs --slug prea1-abecedario --dry-run
+ *   node tools/publish-lesson.mjs --slug prea1-abecedario --ai-automated [--run-id X]
+ *     ← المسار الآلي الموثّق: لا يمرّ إلا إذا كانت النسخة تحمل سجلات المراحل
+ *       الثلاث passed (language_es/translation_ar/automated) من مسار الإفراج.
  * عند غياب الأسماء وكون الإدخال طرفيةً تفاعلية، تُطلب الأسماء بسؤال مباشر.
  * ملف الكوكي: سطر واحد بقيمة ترويسة Cookie كما يرسلها المتصفح (لا تُطبع ولا تُسجَّل).
  * الخروج: 0 نجاح · 1 فشل تدفق · 2 مرفوض/بوابات.
@@ -49,6 +52,8 @@ const cookieFile = arg('--cookie-file');
 const dryRun = argv.includes('--dry-run');
 let spanishReviewer = arg('--spanish-reviewer');
 let translationReviewer = arg('--translation-reviewer');
+const aiAutomated = argv.includes('--ai-automated');
+const validationRunId = arg('--run-id') ?? null;
 
 if (!slug) fail(2, 'يلزم --slug. مثال: --slug prea1-abecedario');
 
@@ -60,7 +65,7 @@ async function prompt(question) {
     rl.close();
   }
 }
-if ((!spanishReviewer || !translationReviewer) && !dryRun && process.stdin.isTTY) {
+if ((!spanishReviewer || !translationReviewer) && !dryRun && !aiAutomated && process.stdin.isTTY) {
   if (!spanishReviewer) spanishReviewer = await prompt('اسم مراجع الإسبانية (الحقيقي): ');
   if (!translationReviewer) translationReviewer = await prompt('اسم مراجع الترجمة (الحقيقي): ');
 }
@@ -102,7 +107,8 @@ for (const w of gateResult.warnings.slice(0, 10)) console.log(`   تنبيه ت�
 
 try {
   const result = await runPublishFlow({
-    base, slug, cookie, spanishReviewer, translationReviewer, dryRun, gateResult,
+    base, slug, cookie, spanishReviewer, translationReviewer,
+    aiAutomated, validationRunId, dryRun, gateResult,
   });
   if (result.dryRun) {
     console.log('(dry-run) لم يُرسل أي طلب. الخطة:');
@@ -112,7 +118,11 @@ try {
   for (const step of result.steps) {
     console.log(`✅ ${step.step}: HTTP ${step.status} — ${JSON.stringify(step.data)}`);
   }
-  console.log(`\n✅ نُشر الدرس ${slug} (ومعه أسلافه من الوحدة والبرنامج) بعد اعتماد مسجَّل باسمَي المراجعين.`);
+  console.log(
+    aiAutomated
+      ? `\n✅ نُشر الدرس ${slug} بعد اعتماد آلي موثّق (ai+automated) بسجلات تحقق مكتملة — لا مراجعة بشرية.`
+      : `\n✅ نُشر الدرس ${slug} (ومعه أسلافه من الوحدة والبرنامج) بعد اعتماد مسجَّل باسمَي المراجعين.`,
+  );
 } catch (e) {
   if (e instanceof PublishFlowError) fail(e.step === 'gates' ? 2 : 1, e.message);
   throw e;

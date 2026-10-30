@@ -99,12 +99,14 @@
           {
             "id": "cc1_1_b",
             "text": "Vale, dame el número.",
-            "distractorRationaleAr": "مخالفة السجل الرسمي: dame و vale غير مناسبتين في خدمة العملاء، وتفتقدان عبارة التأدب."
+            "distractorRationaleAr": "مخالفة السجل الرسمي: dame و vale غير مناسبتين في خدمة العملاء، وتفتقدان عبارة التأدب.",
+            "isCorrect": false
           },
           {
             "id": "cc1_1_c",
             "text": "No se puede cancelar.",
-            "distractorRationaleAr": "ردّ يغلق الحوار ويقدّم معلومة غير متحقَّق منها، وهو ممنوع في سياسة الخدمة."
+            "distractorRationaleAr": "ردّ يغلق الحوار ويقدّم معلومة غير متحقَّق منها، وهو ممنوع في سياسة الخدمة.",
+            "isCorrect": false
           }
         ],
         "answerKey": {
@@ -144,12 +146,14 @@
           {
             "id": "cc1_2_b",
             "text": "Di tu nombre ahora.",
-            "distractorRationaleAr": "أمر مباشر يزيد التوتر مع عميل غاضب."
+            "distractorRationaleAr": "أمر مباشر يزيد التوتر مع عميل غاضب.",
+            "isCorrect": false
           },
           {
             "id": "cc1_2_c",
             "text": "¿Cómo te llamas?",
-            "distractorRationaleAr": "صحيحة لغويًا لكنها informal (tú) وتخالف سجل الخدمة الرسمي."
+            "distractorRationaleAr": "صحيحة لغويًا لكنها informal (tú) وتخالف سجل الخدمة الرسمي.",
+            "isCorrect": false
           }
         ],
         "answerKey": {
@@ -237,7 +241,6 @@
         "contextAr": "العميل يتحدث بسرعة ويذكر رقم طلب غير واضح. لا تفترض الرقم.",
         "stemEs": "Cliente: Mira, es que el pedido número cuarenta y dos mil... no sé, algo así, y no ha llegado nada.",
         "answerKey": {
-          "mode": "rubric",
           "modelAnswer": "Disculpe, ¿podría repetirlo más despacio, por favor? Quiero asegurarme del número de pedido antes de continuar.",
           "acceptableVariants": [
             "Perdone, no le he entendido bien el número. ¿Me lo puede repetir más despacio, por favor?",
@@ -285,7 +288,6 @@
         "contextAr": "البيانات الوهمية: العميل «Lucía Ferrer»، رقم الطلب 48219، الطلب متأخر يومين، تاريخ الشراء 2026-03-04 (بيانات خيالية للتدريب فقط).",
         "stemEs": "Cliente: Llevo dos días esperando y nadie me dice nada. ¿Dónde está mi pedido?",
         "answerKey": {
-          "mode": "rubric",
           "modelScript": [
             "— Buenos días, le atiende Omar de Atención al Cliente. ¿En qué puedo ayudarle?",
             "— Entiendo su molestia. ¿Podría facilitarme su número de pedido, por favor?",

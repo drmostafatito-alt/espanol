@@ -170,7 +170,13 @@ record('جلسة درس متاحة للمستخدم المسجَّل', draft404.
 const session = draft404.body;
 const exs = session?.exercises ?? [];
 record('جلسة بلا مفاتيح إجابة ولا خيار صحيح', !JSON.stringify(exs).match(/answerKey|correctOptionIds|is_correct|isCorrect/i));
-record('وسم «عينة غير مراجعة» حاضر في الاستجابة', session?.lesson?.provenance?.status === 'unreviewed_sample');
+/* العقد الحالي: الدرس المُفرج عنه (published + مراجعة آلية) لا يحمل وسم
+ * «عينة غير مراجعة»؛ الوسم يخصّ المحتوى غير المُفرج عنه وحده. كان الفحص
+ * القديم يطلب الوسم، فصار يطلبه على العكس — وهذا هو السلوك الصحيح. */
+record(
+  'درس مُفرج عنه بلا وسم «عينة غير مراجعة»',
+  !!session?.lesson?.versionId && session?.lesson?.provenance === undefined,
+);
 
 const firstGraded = exs.find(e => e.mode === 'graded');
 const evid = (tag) => `${tag}_smoke_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;

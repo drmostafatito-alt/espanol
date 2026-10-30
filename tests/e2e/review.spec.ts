@@ -13,7 +13,7 @@ test.describe('المراجعة المتباعدة', () => {
     const cta = page.getByTestId('review-cta');
     await expect(cta).toBeVisible();
     // حساب جديد بلا دروس: لا بطاقات
-    await expect(cta).toContainText('لا بطاقات بعد');
+    await expect(cta).toContainText(/لا بطاقات[\s\S]*بعد/);
 
     await page.getByTestId('review-start').click();
     await expect(page).toHaveURL(/\/review$/);

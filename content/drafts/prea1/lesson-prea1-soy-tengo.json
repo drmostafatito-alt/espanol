@@ -276,7 +276,7 @@
         "id": "soy_6_translate",
         "type": "translate_short",
         "mode": "graded",
-        "instructionAr": "ترجم إلى الإسبانية: أنا طالب.",
+        "instructionAr": "ترجم إلى الإسبانية.",
         "answerKey": {
           "accepted": [
             "Soy estudiante."
@@ -295,7 +295,8 @@
         "targetVocab": [
           "ser",
           "estudiante"
-        ]
+        ],
+        "stemAr": "أنا طالب."
       },
       {
         "id": "soy_7_speak",

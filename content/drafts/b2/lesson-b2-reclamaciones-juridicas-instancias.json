@@ -98,13 +98,13 @@
         ],
         "difficulty": 1,
         "promptAr": "تحت أي عنوان نكتب حيثيات وسوابق المشكلة في العريضة الرسمية الإسبانية؟",
-        "stemEs": "En el apartado _____, el solicitante expone cronológicamente los hechos ocurridos.",
-        "stemAr": "في قسم ...، يعرض مقدم الطلب زمنياً الوقائع التي حدثت.",
+        "stemEs": "En el apartado _____, el solicitante relata por orden cronológico los hechos ocurridos.",
+        "stemAr": "في قسم ...، يسرد مقدم الطلب الوقائع التي حدثت بترتيب زمني.",
         "options": [
           {
             "id": "ex-b2-rji-1_a",
             "text": "EXPONE",
-            "textAr": "قسم عرض الحيثيات والوقائع (الصواب)",
+            "textAr": "قسم عرض الحيثيات والوقائع",
             "isCorrect": true
           },
           {
@@ -190,7 +190,7 @@
           {
             "id": "ex-b2-rji-3_a",
             "text": "interponer un recurso",
-            "textAr": "تقديم طعن وتظلم قانوني (الصواب)",
+            "textAr": "تقديم طعن وتظلم قانوني",
             "isCorrect": true
           },
           {
@@ -315,7 +315,7 @@
           {
             "id": "ex-b2-rji-5_a",
             "text": "silencio administrativo",
-            "textAr": "قاعدة السكوت والصمت الإداري القانونية (الصواب)",
+            "textAr": "قاعدة السكوت والصمت الإداري القانونية",
             "isCorrect": true
           },
           {

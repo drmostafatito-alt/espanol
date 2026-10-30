@@ -282,6 +282,10 @@ export interface AnswerResult {
   mode: 'graded' | 'participation';
   explanationAr: string;
   feedbackAr: string | null;
+  /** يُرسل بعد الإجابة فقط: معرّف الخيار الصحيح لتلوين الاختيارات */
+  correctOptionId?: string | null;
+  /** الإجابة الصحيحة كنص (للتمارين الكتابية والترتيب) — بعد الإجابة فقط */
+  correctText?: string | null;
 }
 
 export interface CompleteResult {
@@ -297,6 +301,8 @@ export interface CompleteResult {
   xpAwarded: number;
   xpTotal: number;
   alreadyCompleted: boolean;
+  /** بطاقات المراجعة المضافة من مفردات الدرس (تُضاف مرة واحدة فقط) */
+  reviewCardsCreated?: number;
 }
 
 export interface ProgressLessonItem {
@@ -316,6 +322,34 @@ export interface ProgressLessonItem {
   program_kind?: string;
   is_unlocked?: boolean;
   missing_prerequisites?: string[];
+  estimated_minutes?: number | null;
+}
+
+/** نشاط يوم واحد — كله مشتق من جداول النشاط على الخادم */
+export interface DayActivity {
+  date: string;
+  xp: number;
+  minutes: number;
+  lessons: number;
+  reviews: number;
+}
+
+export interface AchievementItem {
+  code: string;
+  titleAr: string;
+  descriptionAr: string;
+  icon: string;
+  tier: 'bronze' | 'silver' | 'gold';
+  earned: boolean;
+  current: number;
+  target: number;
+  percent: number;
+}
+
+export interface LevelSummary {
+  code: string;
+  total: number;
+  completed: number;
 }
 
 export interface ProgressPayload {
@@ -327,7 +361,15 @@ export interface ProgressPayload {
     level_code: string | null;
     unit_title_ar?: string;
     program_title_ar?: string;
+    unit_id?: string;
+    estimated_minutes?: number | null;
   } | null;
   totals: { lessons_total: number; lessons_completed: number };
+  today?: DayActivity;
+  week?: DayActivity[];
+  goalMinutes?: number;
+  review?: { dueNow: number; total: number };
+  levels?: LevelSummary[];
+  achievements?: AchievementItem[];
   contentProvenance: { status: string; warningAr: string } | null;
 }

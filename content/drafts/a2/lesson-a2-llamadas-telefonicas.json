@@ -261,17 +261,17 @@
           {
             "id": "ex-a2-tel-4_t5",
             "kind": "token",
-            "text": "director?"
+            "text": "director,"
           },
           {
             "id": "ex-a2-tel-4_t6",
             "kind": "token",
-            "text": "gracias"
+            "text": "gracias?"
           }
         ],
         "answerKey": {
           "accepted": [
-            "¿Podría ponerme con el director? gracias"
+            "¿Podría ponerme con el director, gracias?"
           ],
           "tokenOrder": [
             "ex-a2-tel-4_t1",
@@ -306,21 +306,21 @@
         "options": [
           {
             "id": "ex-a2-tel-5_a",
-            "text": "teléfono",
-            "textAr": "هاتف",
+            "text": "el doctor Ruiz",
+            "textAr": "الطبيب رويز",
             "isCorrect": false,
             "distractorRationaleAr": "المتصل يسأل عن شخص محدد في العيادة."
           },
           {
             "id": "ex-a2-tel-5_b",
-            "text": "llamada",
-            "textAr": "مكالمة هاتفية",
+            "text": "la doctora García",
+            "textAr": "الدكتورة غارثيا",
             "isCorrect": true
           },
           {
             "id": "ex-a2-tel-5_c",
-            "text": "prefijo",
-            "textAr": "كود الاتصال",
+            "text": "la enfermera del turno",
+            "textAr": "ممرضة المناوبة",
             "isCorrect": false,
             "distractorRationaleAr": "المتصل يجري مكالمة هاتفية مباشرة."
           }
@@ -330,7 +330,7 @@
           "llamada",
           "prefijo"
         ],
-        "explanationAr": "المتحدث يجري مكالمة هاتفية رسمية للسؤال عن الطبيبة.",
+        "explanationAr": "السؤال «¿está la doctora García en su consulta?» يعني: هل الدكتورة غارثيا موجودة في عيادتها؟ فالشخص المطلوب هو الدكتورة غارثيا.",
         "scoring": {
           "mode": "all_or_nothing"
         },

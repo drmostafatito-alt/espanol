@@ -115,6 +115,84 @@ export function buildLexiconIndex(lexRoots) {
   return { vocabIdByNormalized, foldedToId, resolve };
 }
 
+/* -----------------------------------------------------------------------------
+ * تنقية الخطة من تكرار المفتاح نفسه.
+ *
+ * كانت الخطة تصدر صفًّا واحدًا لكل (حزمة × وسم) حتى لو كان الوسم نفسه: 16384 أمر
+ * `vocabulary_tags` لـ75 وسمًا فقط، و`programs` للسَّلّة نفسها ستّ مرات بوصف
+ * مختلف لكل مستوى (آخر أمر يفوز ⇒ وصف البرنامج يعتمد على ترتيب الملفات).
+ * هنا: أول ظهور يفوز، والتكرار الحرفي يُسقط بصمت، والتكرار بمحتوى مختلف يُبلَّغ
+ * فيقف المحرّر على تعارض حقيقي بدل أن يُحسم عشوائيًا.
+ * -------------------------------------------------------------------------- */
+const INSERT_HEAD = /^\s*INSERT\s+INTO\s+(\w+)\s*\(([^)]*)\)\s*VALUES\s*\(/i;
+
+/** يقرأ قيم الصفّ الأول (نصوص وأرقام وNULL) باحترام علامات التنصيص والفواصل داخل JSON. */
+function firstRowValues(text) {
+  const vals = [];
+  let i = 0;
+  let cur = '';
+  let inStr = false;
+  let depth = 0;
+  for (; i < text.length; i += 1) {
+    const ch = text[i];
+    if (inStr) {
+      if (ch === "'" && text[i + 1] === "'") { cur += "''"; i += 1; continue; }
+      if (ch === "'") { inStr = false; cur += ch; continue; }
+      cur += ch; continue;
+    }
+    if (ch === "'") { inStr = true; cur += ch; continue; }
+    if (ch === '(' || ch === '[' || ch === '{') { depth += 1; cur += ch; continue; }
+    if (ch === ')' || ch === ']' || ch === '}') {
+      if (depth === 0) break; // نهاية الصفّ
+      depth -= 1; cur += ch; continue;
+    }
+    if (ch === ',' && depth === 0) { vals.push(cur.trim()); cur = ''; continue; }
+    cur += ch;
+  }
+  if (cur.trim()) vals.push(cur.trim());
+  return vals;
+}
+
+/** مفتاح الصفّ: عمود id إن وُجد، وإلا أول عمودين (جداول الربط). */
+export function statementRowKey(stmt) {
+  const m = INSERT_HEAD.exec(stmt);
+  if (!m) return null;
+  const table = m[1];
+  const cols = m[2].split(',').map(c => c.trim());
+  const vals = firstRowValues(stmt.slice(m[0].length));
+  if (vals.length < cols.length) return null;
+  const idIdx = cols.indexOf('id');
+  if (idIdx >= 0) return { table, key: `${table}:${vals[idIdx]}`, id: vals[idIdx] };
+  if (cols.length >= 2 && /_id$/.test(cols[0]) && /_id$/.test(cols[1])) {
+    return { table, key: `${table}:${vals[0]}|${vals[1]}`, id: `${vals[0]}|${vals[1]}` };
+  }
+  return null;
+}
+
+const normSql = s => s.replace(/\s+/g, ' ').trim();
+
+/**
+ * يزيل الأوامر المكررة بالمفتاح نفسه. يعيد { statements, conflicts, dropped }.
+ * conflicts: [{ table, key, first, later }] — تعارضات محتوى حقيقية (تبقى الأولى).
+ */
+export function dedupePlanStatements(statements) {
+  const seen = new Map();
+  const out = [];
+  const conflicts = [];
+  let dropped = 0;
+  for (const stmt of statements) {
+    const parsed = statementRowKey(stmt);
+    if (!parsed) { out.push(stmt); continue; }
+    const prev = seen.get(parsed.key);
+    if (prev === undefined) { seen.set(parsed.key, stmt); out.push(stmt); continue; }
+    dropped += 1;
+    if (normSql(prev) !== normSql(stmt)) {
+      conflicts.push({ table: parsed.table, key: parsed.id, first: prev, later: stmt });
+    }
+  }
+  return { statements: out, conflicts, dropped };
+}
+
 /** عبارة إدخال رابط محروسة الوجود — نفس الشكل في الخطة والمرور النهائي */
 export function linkInsertStatement({ lessonId, entryId, role }) {
   return `INSERT INTO lesson_vocabulary (lesson_id, entry_id, role)
@@ -148,7 +226,33 @@ export function collectGlobalLinks(contentRoot) {
   return { links, unresolved };
 }
 
-export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = null } = {}) {
+/**
+ * `releasePolicy`: سياسة الإفراج المحسوبة آليًا (content/review/release-policy.v1.json).
+ * عند تمريرها يصبح الدرس المُفرج عنه منشورًا (published/approved) ويُسجَّل له
+ * سجل مراجعة آلي، وما عدا ذلك يبقى draft/unreviewed. بلا تمريرها (اختبارات
+ * المجلدات المعزولة) يبقى السلوك القديم كما هو.
+ */
+/**
+ * أرقام دروس المحتوى الحقيقي (content/drafts). تُمرَّر إلى بناء خطة مجلد
+ * العيّنات (`content/exemplars`) ليتخطى كل درس مكرَّر بمعرّف موجود — بدل أن
+ * يُصدر نسخة ثانية منه تتعارض مع الأصل في `objective_ar`/التمارين.
+ */
+export function collectLessonSlugs(rootDir) {
+  const slugs = new Set();
+  for (const file of walkJson(rootDir)) {
+    if (!basename(file).startsWith('lesson-')) continue;
+    try {
+      const doc = loadJson(file);
+      const slug = doc?.lesson?.slug ?? doc?.slug;
+      if (slug) slugs.add(String(slug));
+    } catch {
+      // ملف تالف يُترك لمدقّق المحتوى، لا لهذه الدالة
+    }
+  }
+  return slugs;
+}
+
+export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = null, skipLessonSlugs = null, releasePolicy = null } = {}) {
   // مسح متكرر: المحتوى مُنظَّم في مجلدات فرعية (a1/، travel/، …)، ودمج كل ملفات
   // paths.json يسمح لكل وحدة بإعلان مسارها دون ملف مركزي هش.
   const walk = walkJson;
@@ -159,10 +263,64 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
   const load = loadJson;
 
   const statements = [];
-  const answers = {}; // معرّف التمرين في القاعدة ⇒ الإجابة الصحيحة (للاختبارات فقط)
-  // خريطة الكلمة ⇒ معرّفها (AUD-07: من كل الجذور المعجمية لا مجلد الاستيراد)
+  const answers = {};
+  const releasedSlugs = new Set(
+    Object.entries(releasePolicy?.lessons ?? {})
+      .filter(([, v]) => v?.released)
+      .map(([slug]) => slug),
+  );
+  const releaseDate = String(releasePolicy?.generatedAt ?? '').slice(0, 10) || '1970-01-01';
+  const reviewRecords = [];
+  const emittedTags = new Set();
+  const emittedSources = new Set(); // content_sources المُصدرة في هذه الخطة // معرّف التمرين في القاعدة ⇒ الإجابة الصحيحة (للاختبارات فقط)
+
+  /* ---------------------------------------------------------------------------
+   * كلمة واحدة في حزمتين: أي ظهور يُعتمد؟
+   *
+   * المشكلة الفعلية: 15 كلمة أساسية (hola، café، ser، ir…) معلنة في حزمتين
+   * بمستويين و«internalRank» و«pronunciationHint» مختلفين، فتخرج صفوف متعارضة
+   * لنفس المفتاح: entries 15 وسنses 15 وsentences 15 وtranslations 12 وforms 12.
+   * كان الحسم بترتيب الملفات (آخر ظهور يفوز) ⇒ بيانات غير حتمية ومعرّفات معانٍ
+   * تتغير بتغيّر الترتيب.
+   *
+   * القاعدة الآن (حتمية وموثّقة): الظهور المعتمد هو **الأدنى مستوى** لأن الكلمة
+   * تُعلَّم أولًا هناك (PREA1 < A1 < A2 < B1 < B2 < C1 < بلا مستوى)، ثم أبجديًا
+   * باسم الحزمة، ثم بمسار الملف. الظهور الآخر يُسهم بعضويته في الحزم والوسوم
+   * (جدول ربط) ولا يعيد تعريف الكلمة نفسها.
+   * ------------------------------------------------------------------------- */
   const lexRoots = Array.isArray(lexiconDirs) && lexiconDirs.length ? lexiconDirs : [dir];
+  const LEVEL_RANK = { PREA1: 0, A1: 1, A2: 2, B1: 3, B2: 4, C1: 5 };
+  const rankOf = (entry) => (entry?.level && LEVEL_RANK[entry.level] !== undefined ? LEVEL_RANK[entry.level] : 9);
+  // كل ظهورات الكلمة في المعجم — لدمج الحقول التي ينقصها الظهور المعتمد
+  // (ترجمة مصرية، ملاحظة استعمال) بدل إسقاطها مع الظهور الآخر.
+  const occurrencesByNormalized = new Map();
+  // الظهور المعتمد يُحسب من **كل** الجذور المعجمية لا من المجلد الحالي: التصدير
+  // يبني الخطة مرتين (exemplars ثم drafts)، فلو حُسب لكل مجلد على حدة لاختير
+  // «ser» من exemplars في المرور الأول ومن drafts في الثاني ⇒ صفّان متعارضان.
+  // الآن يخرج الصفّ نفسه نصًّا في المرورين، فتُسقطه التنقية بلا تعارض ولا فقدان.
+  const canonicalOwner = new Map(); // normalized ⇒ { file, idx, bundleSlug, level, entry }
+  for (const root of lexRoots) {
+    for (const file of walkJson(root).filter(f => basename(f).startsWith('vocab-'))) {
+      const doc = loadJson(file);
+      if (!doc?.bundleSlug) continue;
+      for (const [idx, entry] of (doc.entries ?? []).entries()) {
+        if (!entry?.normalized) continue;
+        const cand = { file, idx, bundleSlug: doc.bundleSlug, level: entry.level ?? null, entry, source: doc.source ?? {}, rankingNoteAr: doc.rankingNoteAr ?? null };
+        if (!occurrencesByNormalized.has(entry.normalized)) occurrencesByNormalized.set(entry.normalized, []);
+        occurrencesByNormalized.get(entry.normalized).push(entry);
+        const prev = canonicalOwner.get(entry.normalized);
+        if (!prev) { canonicalOwner.set(entry.normalized, cand); continue; }
+        const better = rankOf(cand.entry) < rankOf(prev.entry) ||
+          (rankOf(cand.entry) === rankOf(prev.entry) && `${cand.bundleSlug}` < `${prev.bundleSlug}`) ||
+          (rankOf(cand.entry) === rankOf(prev.entry) && cand.bundleSlug === prev.bundleSlug && cand.file < prev.file);
+        if (better) canonicalOwner.set(entry.normalized, cand);
+      }
+    }
+  }
+
+  // خريطة الكلمة ⇒ معرّفها (AUD-07: من كل الجذور المعجمية لا مجلد الاستيراد)
   const { vocabIdByNormalized, foldedToId } = buildLexiconIndex(lexRoots);
+
   // إحالات دروس لم تُحلّ — تُقرَّر ولا تُصمت عنها (كلمات بلا مدخل معجمي أصلًا)
   const unresolvedVocabRefs = [];
   // روابط الدرس↔المفردات تُنفَّذ بعد إدخال المفردات (قيد المفتاح الأجنبي يمنع غير ذلك)
@@ -170,27 +328,103 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
   // VER-04: الروابط بصيغة منظمة أيضًا — ليتحقق المستورِد من المنفَّذ فعليًا
   // ويعيد تنفيذها في مرور نهائي بعد كل المجلدات (لا اعتماد على الترتيب)
   const structuredLinks = [];
+  // حزم بلا عنوان عربي (أو عنوان == المعرّف) — تُبلَّغ للمراجعة، ولا تُكتب كمعرّف تقني
+  const missingBundleTitles = [];
   const errors = [];
   const counters = { programs: 0, units: 0, lessons: 0, versions: 0, exercises: 0, options: 0, items: 0, vocab: 0, senses: 0, tags: 0 };
   const versions = {}; // slug ⇒ {versionNo, contentHash} — ليُسلسل المستورِد أرقام الإصدارات عبر مجلدات متعددة
 
   const mergedPrograms = pathFiles.flatMap(f => load(f).programs ?? []);
+  /* نشر الأسلاف شرط ظهور المسار في الكتالوج: البرنامج/الوحدة لا يظهران إلا
+   * منشورَين. يُشتق النشر من **كل** إعلانات paths.json في جذور المعجم (لا من
+   * المجلد الحالي): إعلان الوحدة في مجلد العيّنات لا يعرف دروس المحتوى الحقيقي،
+   * فكان يُصدر الصفّ نفسه بحالة مختلفة ⇒ تعارض «أول ظهور فوز».
+   */
+  const publishedUnits = new Set();
+  const publishedPrograms = new Set();
+  const computeReleaseStatus = () => {
+    if (!releasedSlugs.size) return;
+    for (const root of lexRoots) {
+      for (const f of walkJson(root).filter(x => basename(x) === 'paths.json')) {
+        for (const program of loadJson(f).programs ?? []) {
+          for (const unit of program.units ?? []) {
+            if ((unit.lessons ?? []).some(l => releasedSlugs.has(l))) {
+              publishedUnits.add(`${program.slug}/${unit.slug}`);
+              publishedPrograms.add(program.slug);
+            }
+          }
+        }
+      }
+    }
+  };
+  computeReleaseStatus();
+
+  /* ---------------------------------------------------------------------------
+   * البرنامج الواحد يُعلَن في كل ملف `paths.json` لمستوى: سبعة إعلانات لـmain-track
+   * بوصف مختلف لكل مستوى («المسار الأساسي للمستوى B2» …). الصفّ في `programs` صفّ
+   * برنامج لا صفّ مستوى، فكان آخر إعلان يفوز ⇒ وصف البرنامج يتغيّر بتغيّر ترتيب
+   * الملفات، و`level_code`/`sort_order` كذلك.
+   *
+   * الحسم هنا: الإعلان المعتمد هو الذي **بلا مستوى** (تعريف البرنامج الشامل)،
+   * ويُفضَّل ما له وصف، ثم الأول حسب ترتيب الملفات. إعلانات بقية المستويات تُسهم
+   * بوحداتها فقط — هي مصادر حقيقية لا يجوز إسقاطها.
+   * ------------------------------------------------------------------------- */
+  const canonicalProgram = new Map();
+  /* التعريف المعتمد للبرنامج يُختار من **كل** الجذور لا من المجلد الحالي:
+   * `main-track` معلن في ستة `paths.json` (prea1→c1) وفي exemplars. الأولوية:
+   * تعريف داخل content/drafts (المحتوى الحقيقي لا العيّنات)، ثم إعلان بلا
+   * مستوى، ثم الوصف الأطول. النتيجة واحدة أيًّا كان المجلد الذي بُني منه الملف. */
+  const globalPrograms = [];
+  for (const root of lexRoots) {
+    for (const f of walkJson(root).filter(x => basename(x) === 'paths.json')) {
+      for (const program of loadJson(f).programs ?? []) globalPrograms.push({ program, file: f });
+    }
+  }
+  for (const { program } of globalPrograms) {
+    if (!program?.slug) continue;
+    const prev = canonicalProgram.get(program.slug);
+    const score = (p, file) => [file.includes('/drafts/') ? 0 : 1, p.levelCode ? 1 : 0, -String(p.objectiveAr ?? '').length];
+    if (!prev) { canonicalProgram.set(program.slug, program); continue; }
+    const a = score(program, globalPrograms.find(g => g.program === program).file);
+    const b = score(prev, globalPrograms.find(g => g.program === prev).file);
+    if (a[0] < b[0] || (a[0] === b[0] && (a[1] < b[1] || (a[1] === b[1] && a[2] < b[2])))) {
+      canonicalProgram.set(program.slug, program);
+    }
+  }
+  for (const program of mergedPrograms) {
+    if (!program?.slug) continue;
+    const prev = canonicalProgram.get(program.slug);
+    const score = (p) => [p.levelCode ? 1 : 0, String(p.objectiveAr ?? '').trim() ? 0 : 1];
+    if (!prev) { canonicalProgram.set(program.slug, program); continue; }
+    const a = score(program), b = score(prev);
+    if (a[0] < b[0] || (a[0] === b[0] && a[1] < b[1])) canonicalProgram.set(program.slug, program);
+  }
   if (mergedPrograms.length) {
+    const emittedPrograms = new Set();
+    // ترتيب حتمي عند غياب sortOrder صريح: أبجديًا باسم البرنامج — لا بترتيب
+    // ظهور الملفات (كان callcenter يأخذ 2 أو 6 بحسب المرور).
+    const programOrder = new Map([...new Set(mergedPrograms.map(p => p.slug))].sort().map((slug, i) => [slug, i + 1]));
     mergedPrograms.forEach((program, pIdx) => {
       const programId = stableId('prog', program.slug);
-      statements.push(`INSERT INTO programs (id, slug, title_ar, description_ar, kind, level_code, category, status, sort_order, is_active)
-        VALUES (${q(programId)}, ${q(program.slug)}, ${q(program.titleAr)}, ${q(program.objectiveAr ?? '')},
-                ${q(program.kind ?? 'path')}, ${q(program.levelCode)}, ${q(program.category)},
-                'draft', ${n(program.sortOrder ?? pIdx + 1)}, 1)
-        ON CONFLICT(id) DO UPDATE SET title_ar=excluded.title_ar, description_ar=excluded.description_ar`);
-      counters.programs++;
+      const canon = canonicalProgram.get(program.slug) ?? program;
+      if (!emittedPrograms.has(program.slug)) {
+        emittedPrograms.add(program.slug);
+        statements.push(`INSERT INTO programs (id, slug, title_ar, description_ar, kind, level_code, category, status, sort_order, is_active)
+        VALUES (${q(programId)}, ${q(program.slug)}, ${q(canon.titleAr)}, ${q(canon.objectiveAr ?? '')},
+                ${q(canon.kind ?? 'path')}, ${q(canon.levelCode ?? null)}, ${q(canon.category ?? program.category)},
+                ${q(publishedPrograms.has(program.slug) ? 'published' : 'draft')}, ${n(canon.sortOrder ?? program.sortOrder ?? programOrder.get(program.slug))}, 1)
+        ON CONFLICT(id) DO UPDATE SET title_ar=excluded.title_ar, description_ar=excluded.description_ar,
+          level_code=excluded.level_code, sort_order=excluded.sort_order, status=excluded.status`);
+        counters.programs++;
+      }
 
       (program.units ?? []).forEach((unit, uIdx) => {
         const unitId = stableId('unit', `${program.slug}/${unit.slug}`);
         statements.push(`INSERT INTO units (id, program_id, level_code, slug, title_ar, objective_ar, sort_order, status)
           VALUES (${q(unitId)}, ${q(programId)}, ${q(unit.levelCode ?? null)}, ${q(unit.slug)},
-                  ${q(unit.titleAr)}, ${q(unit.objectiveAr ?? '')}, ${n(unit.sortOrder ?? uIdx + 1)}, 'draft')
-          ON CONFLICT(id) DO UPDATE SET title_ar=excluded.title_ar, sort_order=excluded.sort_order`);
+                  ${q(unit.titleAr)}, ${q(unit.objectiveAr ?? '')}, ${n(unit.sortOrder ?? uIdx + 1)},
+                  ${q(publishedUnits.has(`${program.slug}/${unit.slug}`) ? 'published' : 'draft')})
+          ON CONFLICT(id) DO UPDATE SET title_ar=excluded.title_ar, sort_order=excluded.sort_order, status=excluded.status`);
         counters.units++;
       });
     });
@@ -229,6 +463,18 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
     }
   }
 
+  /* حسم مكتوب للحالات الملتبسة التي يوضّحها الدرس نفسه (لا تخمين):
+   * - `fui` تصلح لـser ولـir. درس a2-indefinido-irregular يشرح في نصّه:
+   *   «Fui al cine… الفعل fui هنا مشتق من ir بمعنى ذهب» ⇒ تُربط بـir.
+   * - `visto` تصلح لـver (اسم مفعول) ولـvestir (أنا ألبس). درس
+   *   a2-participios-irregulares يسرد «ver -> visto» ⇒ تُربط بـver.
+   * المفتاح: "<slug الدرس>|<الصيغة>" والقيمة: الكلمة الأساسية المعتمدة.
+   */
+  const LESSON_FORM_OVERRIDES = new Map([
+    ['a2-indefinido-irregular|fui', 'ir'],
+    ['a2-participios-irregulares|visto', 'ver'],
+  ]);
+
   const formToEntry = new Map(); // formNorm -> entryId (غير ملتبس فقط)
   for (const [formNorm, owners] of formOwners) {
     if (owners.size !== 1) continue; // صيغة مشتركة بين مدخلين (fui: ser/ir) — لا تخمين
@@ -237,9 +483,13 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
     formToEntry.set(formNorm, [...owners][0]);
   }
 
+  const skippedLessons = [];
   for (const file of lessonFiles) {
     const L = load(file).lesson;
     if (!L?.slug) { errors.push(`درس بلا slug في ${file}`); continue; }
+    // درس عيّنة مكرر بمعرّف درس موجود في المحتوى الحقيقي: يُسقَط من الاستيراد
+    // ويُبلَّغ، فلا يدخل الدرس مرتين بنسختين وتمارين مكرّرة.
+    if (skipLessonSlugs && skipLessonSlugs.has(L.slug)) { skippedLessons.push({ slug: L.slug, file }); continue; }
 
     for (const ex of L.exercises ?? []) {
       if (!EXERCISE_TYPES.has(ex.type)) errors.push(`نوع تمرين غير معرَّف: ${ex.type} (${file})`);
@@ -251,6 +501,9 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
     const unitId = stableId('unit', `${programSlug}/${L.unitSlug}`);
     const lessonId = stableId('lesson', L.slug);
     const contentHash = sha256(JSON.stringify(L));
+    const released = releasedSlugs.has(L.slug);
+    const lessonStatus = released ? 'published' : 'draft';
+    const reviewState = released ? 'approved' : 'unreviewed';
     // رقم الإصدار يجيء من القاعدة (يمرّره المستدعي). بلا ذلك يبقى 1 — وهو الصحيح
     // فقط عند أول استيراد أو في بيئة اختبار فارغة.
     const prior = existingVersions[L.slug];
@@ -272,19 +525,40 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
                              status, unlock_rule_json, mastery_criteria_json, offline_priority, sort_order)
         VALUES (${q(lessonId)}, ${q(unitId)}, ${q(L.slug)}, ${q(L.titleAr)}, ${q(L.level)},
                 ${q(L.objectiveAr)}, ${n(L.estimatedMinutes ?? 8)}, ${j(L.skills ?? [])},
-                'draft', ${j(unlockRule)}, ${j(L.mastery ?? {})},
+                ${q(lessonStatus)}, ${j(unlockRule)}, ${j(L.mastery ?? {})},
                 ${n(L.offlinePriority ?? 0)}, 1)
         ON CONFLICT(id) DO UPDATE SET
           title_ar=excluded.title_ar, objective_ar=excluded.objective_ar, estimated_minutes=excluded.estimated_minutes,
           skills_json=excluded.skills_json, unlock_rule_json=excluded.unlock_rule_json,
-          mastery_criteria_json=excluded.mastery_criteria_json`);
+          mastery_criteria_json=excluded.mastery_criteria_json, status=excluded.status`);
     counters.lessons++;
 
     statements.push(`INSERT INTO lesson_versions (id, lesson_id, version_no, status, content_json, content_hash, change_summary, review_state)
-        VALUES (${q(versionId)}, ${q(lessonId)}, ${n(versionNo)}, 'draft', ${j(L)}, ${q(contentHash)},
-                ${q('استيراد من ' + file)}, 'unreviewed')
+        VALUES (${q(versionId)}, ${q(lessonId)}, ${n(versionNo)}, ${q(lessonStatus)}, ${j(L)}, ${q(contentHash)},
+                ${q('استيراد من ' + file)}, ${q(reviewState)})
         ON CONFLICT(id) DO NOTHING`);
     statements.push(`UPDATE lessons SET current_version_id = ${q(versionId)} WHERE id = ${q(lessonId)}`);
+    /* إصدار كان مستوردًا قبل الإفراج: نصّه لا يُعاد كتابته (الإصدارات لقطة
+     * ثابتة)، لكن حالته تُرقّى إلى published/approved مرة واحدة، فتظهر النسخة
+     * المُفرج عنها في المسار التعليمي بدل بقائها unreviewed. */
+    if (released) {
+      statements.push(`UPDATE lesson_versions SET status = 'published', review_state = 'approved'
+        WHERE id = ${q(versionId)} AND (status <> 'published' OR review_state <> 'approved')`);
+    }
+    /* سجل مراجعة آلي للنسخة المُفرج عنها: ثلاث مراحل صريحة (الإسبانية، الترجمة،
+     * الفحص الآلي) قرارها passed بمصدر ai+automated. reviewer_id = NULL لأن
+     * المراجعة آلية لا بشرية — ولا يُكتب اسم مراجع بشري وهمي. */
+    if (released) {
+      const stages = [['language_es', 'فحص الإسبانية آليًا + مراجعة الذكاء الاصطناعي'], ['translation_ar', 'فحص الترجمة العربية (فصحى/مصرية)'], ['automated', 'بوابات آلية: validate-content · audit-content-quality · فحص التمارين']];
+      for (const [stage, note] of stages) {
+        const recId = stableId('crr', `${L.slug}#${stage}`);
+        statements.push(`INSERT INTO content_review_records (id, target_type, target_id, stage, reviewer_id, decision, notes, created_at)
+        VALUES (${q(recId)}, 'lesson_version', ${q(versionId)}, ${q(stage)}, NULL, 'passed',
+                ${q(`${note} — provenance: ai+automated (no human reviewer)`)}, ${q(releaseDate + 'T00:00:00.000Z')})
+        ON CONFLICT(id) DO NOTHING`);
+        reviewRecords.push(recId);
+      }
+    }
     counters.versions++;
 
     (L.exercises ?? []).forEach((ex, idx) => {
@@ -357,6 +631,11 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
         }
         // صيغة غير ملتبسة من forms[]/plural (احتياطي بعد التطابق الحرفي والمطوي)
         if (!entryId) entryId = formToEntry.get(norm) ?? formToEntry.get(rawNorm);
+        // حسم مكتوب للحالات التي يوضّحها الدرس (fui→ir، visto→ver)
+        if (!entryId) {
+          const lemma = LESSON_FORM_OVERRIDES.get(`${L.slug}|${norm}`);
+          if (lemma) entryId = vocabIdByNormalized.get(lemma) ?? null;
+        }
         if (!entryId) {
           // كلمة بلا مدخل معجمي في أي مجلد: تُسجَّل في التقرير ولا تُختلَق لها بيانات
           unresolvedVocabRefs.push({ lesson: L.slug, word: norm, role });
@@ -384,9 +663,19 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
         ON CONFLICT(id) DO UPDATE SET notes=excluded.notes, license=excluded.license`);
 
     const bundleId = stableId('vbn', bundle.bundleSlug);
+    // عنوان عربي إلزامي للعرض: لا نكتب المعرّف الإنجليزي في عمود العنوان (كان يظهر
+    // للطالب «cv-lex-nouns-core»). البديل واضح، والمصدر الصحيح titleAr في ملف الحزمة.
+    const bundleLevel = bundle.levelCode ?? bundle.entries?.[0]?.level ?? null;
+    const titleAr = String(bundle.titleAr ?? '').trim();
+    if (!titleAr || titleAr === bundle.bundleSlug) {
+      missingBundleTitles.push(bundle.bundleSlug);
+    }
+    const displayTitle = titleAr && titleAr !== bundle.bundleSlug
+      ? titleAr
+      : (bundleLevel ? `حزمة مفردات ${bundleLevel}` : 'حزمة مفردات');
     statements.push(`INSERT INTO vocabulary_bundles (id, slug, title_ar, level_code, sort_order, status, source_id, notes_ar)
-        VALUES (${q(bundleId)}, ${q(bundle.bundleSlug)}, ${q(bundle.titleAr ?? bundle.bundleSlug)},
-                ${q(bundle.levelCode ?? bundle.entries?.[0]?.level ?? null)}, ${n(bundle.sortOrder ?? 0)},
+        VALUES (${q(bundleId)}, ${q(bundle.bundleSlug)}, ${q(displayTitle)},
+                ${q(bundleLevel)}, ${n(bundle.sortOrder ?? 0)},
                 'draft', ${q(sourceId)}, ${q(bundle.rankingNoteAr ?? bundle.source?.rankingNote ?? null)})
         ON CONFLICT(slug) DO UPDATE SET title_ar=excluded.title_ar, notes_ar=excluded.notes_ar`);
     counters.bundles = (counters.bundles ?? 0) + 1;
@@ -395,87 +684,156 @@ export function buildContentPlan(dir, { existingVersions = {}, lexiconDirs = nul
       // المعرّف مشتق من الكلمة نفسها لا من الحزمة: نفس الكلمة في حزمتين = صف واحد
       // يُعاد استخدامه بدل تكرار الشرح (قاعدة crossTrackRules في المنهج).
       const entryId = stableId('voc', entry.normalized);
-      statements.push(`INSERT INTO vocabulary_entries (id, headword_es, headword_normalized, entry_kind, pos, gender, plural_es,
-                                          level_code, frequency_rank, frequency_source_id, ipa, pronunciation_hint_ar,
-                                          register, status, notes_ar)
-          VALUES (${q(entryId)}, ${q(entry.headword)}, ${q(entry.normalized)}, ${q(entry.kind ?? 'word')},
-                  ${q(entry.pos ?? null)}, ${q(entry.gender ?? null)}, ${q(entry.plural ?? null)}, ${q(entry.level ?? null)},
-                  ${n(entry.internalRank ?? null)}, ${q(sourceId)}, ${q(entry.ipa ?? null)},
-                  ${q(entry.pronunciationHintAr ?? null)}, ${q(entry.register ?? 'neutral')}, 'draft', ${q(entry.variantNoteAr ?? null)})
-          ON CONFLICT(headword_normalized) DO UPDATE SET headword_es=excluded.headword_es, ipa=excluded.ipa,
-            pronunciation_hint_ar=excluded.pronunciation_hint_ar, level_code=excluded.level_code`);
-      counters.vocab++;
+      // الظهور المعتمد عالميًا (أدنى مستوى ← الحزمة أبجديًا) هو وحده الذي يُصدر
+      // التعريف والمعاني والأمثلة والصيغ. الظهورات الأخرى تُصدر ارتباطها بالحزمة
+      // ووسومها فقط. قبل ذلك كانت كل حزمة تُصدر صفّ المفردة نفسها بقيم مختلفة
+      // (مستوى/رتبة/تلميح نطق) ⇒ 15 تعارضًا كان يُحسم بالترتيب، وهو ما رُفض.
+      const canonicalRec = canonicalOwner.get(entry.normalized);
+      const meta = canonicalRec?.entry ?? entry;
+      const isCanonicalOccurrence = !canonicalRec || (canonicalRec.file === file && canonicalRec.idx === eIdx);
+      /* يُصدر التعريف من الظهور المعتمد إن كان **داخل هذه الخطة**، وإلا فلابد
+       * من إصداره من هنا (وإلا بقي المدخل بلا صفّ عند استيراد مجلد منفرد،
+       * كخطة مجلد العيّنات وحدها أو خطة اختبار معزولة). الصفّ نفسه نصًّا في
+       * الحالتين، فإعادة الإصدار تُسقطها التنقية بلا تعارض. */
+      const canonicalInPlan = canonicalRec ? vocabFiles.includes(canonicalRec.file) : true;
+      const emitDefinition = isCanonicalOccurrence || !canonicalInPlan;
+      const metaSourceId = canonicalRec ? stableId('src', `${canonicalRec.bundleSlug}/source`) : sourceId;
+
+      if (emitDefinition) {
+        if (metaSourceId !== sourceId && !emittedSources.has(metaSourceId)) {
+          emittedSources.add(metaSourceId);
+          const cs = canonicalRec?.source ?? {};
+          statements.push(`INSERT INTO content_sources (id, title, url, publisher, license, accessed_at, notes)
+              VALUES (${q(metaSourceId)}, ${q(cs.title ?? 'حزمة مفردات داخلية')}, ${q(cs.url ?? '')},
+                      ${q(cs.publisher ?? null)}, ${q(cs.license ?? 'internal-draft')},
+                      ${q(cs.accessedAt ?? null)}, ${q(cs.rankingNote ?? canonicalRec?.rankingNoteAr ?? '')})
+              ON CONFLICT(id) DO UPDATE SET notes=excluded.notes, license=excluded.license`);
+        }
+        statements.push(`INSERT INTO vocabulary_entries (id, headword_es, headword_normalized, entry_kind, pos, gender, plural_es,
+                                            level_code, frequency_rank, frequency_source_id, ipa, pronunciation_hint_ar,
+                                            register, status, notes_ar)
+            VALUES (${q(entryId)}, ${q(meta.headword)}, ${q(meta.normalized)}, ${q(meta.kind ?? 'word')},
+                    ${q(meta.pos ?? null)}, ${q(meta.gender ?? null)}, ${q(meta.plural ?? null)}, ${q(meta.level ?? null)},
+                    ${n(meta.internalRank ?? null)}, ${q(metaSourceId)}, ${q(meta.ipa ?? null)},
+                    ${q(meta.pronunciationHintAr ?? null)}, ${q(meta.register ?? 'neutral')}, 'draft', ${q(meta.variantNoteAr ?? null)})
+            ON CONFLICT(headword_normalized) DO UPDATE SET headword_es=excluded.headword_es, ipa=excluded.ipa,
+              pronunciation_hint_ar=excluded.pronunciation_hint_ar, level_code=excluded.level_code`);
+        counters.vocab++;
+      }
 
       statements.push(`INSERT INTO vocabulary_bundle_entries (bundle_id, entry_id, sort_order)
           VALUES (${q(bundleId)}, ${q(entryId)}, ${n(eIdx + 1)})
           ON CONFLICT(bundle_id, entry_id) DO NOTHING`);
 
-      (entry.senses ?? []).forEach((sense) => {
-        const senseId = stableId('sen', `${bundle.bundleSlug}/${entry.normalized}/${sense.senseNo}`);
-        // AUD-09: جدول sentences كان يبقى فارغًا وexample_sentence_id كله NULL
-        // فظهرت كل بطاقة مراجعة بلا مثال. المثال بملف المفردات نفسه — يُستورَد
-        // الآن كجملة + ترجمتها ويُربط بالمعنى قبل إدخال المعنى (FK).
-        let exampleSentenceId = null;
-        const exampleEs = typeof sense.exampleEs === 'string' ? sense.exampleEs.trim() : '';
-        if (exampleEs) {
-          exampleSentenceId = stableId('snt', `vocab-example:${entry.normalized}:${sense.senseNo ?? 1}`);
-          const SREG = new Set(['neutral', 'informal', 'formal', 'colloquial_spain', 'colloquial_latam']);
-          const sReg = SREG.has(entry.register) ? entry.register : 'neutral';
-          statements.push(`INSERT INTO sentences (id, text_es, level_code, register, source_id)
-              VALUES (${q(exampleSentenceId)}, ${q(exampleEs)}, ${q(entry.level ?? null)}, ${q(sReg)}, ${q(sourceId)})
-              ON CONFLICT(id) DO UPDATE SET text_es=excluded.text_es, level_code=excluded.level_code`);
-          for (const [style, text] of [['fusha', sense.exampleAr], ['eg', sense.exampleArEg]]) {
-            if (typeof text === 'string' && text.trim()) {
-              statements.push(`INSERT INTO sentence_translations (id, sentence_id, locale, style, text, is_primary)
-                  VALUES (${q(stableId('snt', `vocab-example:${entry.normalized}:${sense.senseNo ?? 1}:${style}`))},
-                          ${q(exampleSentenceId)}, 'ar', ${q(style)}, ${q(text.trim())}, ${style === 'fusha' ? 1 : 0})
-                  ON CONFLICT(sentence_id, locale, style) DO UPDATE SET text=excluded.text`);
+      if (emitDefinition) {
+        const mergedSenses = (meta.senses ?? []).map((sense) => {
+          const others = (occurrencesByNormalized.get(meta.normalized) ?? []).filter(o => o !== meta);
+          const merged = { ...sense };
+          for (const other of others) {
+            const twin = (other.senses ?? []).find(o => (o.senseNo ?? 1) === (sense.senseNo ?? 1));
+            if (!twin) continue;
+            for (const field of ['meaningArFusha', 'meaningArEg', 'usageNoteAr', 'commonErrorAr', 'glossEs']) {
+              if ((merged[field] == null || merged[field] === '') && twin[field]) merged[field] = twin[field];
+            }
+            // الترجمة تُدمج فقط إذا كان المثال الإسباني نفسه (وإلا فهي ترجمة جملة أخرى)
+            for (const field of ['exampleAr', 'exampleArEg']) {
+              if ((merged[field] == null || merged[field] === '') && twin[field] && twin.exampleEs === sense.exampleEs) {
+                merged[field] = twin[field];
+              }
             }
           }
-          counters.sentences = (counters.sentences ?? 0) + 1;
+          return merged;
+        });
+        mergedSenses.forEach((sense) => {
+          // المعرّف من الكلمة والمعنى وحدهما: إدخال الحزمة في البذرة كان يجعل
+          // معرّف المعنى يتغيّر بتغيّر ترتيب استيراد الحزم، ومعه 15 صفًّا مكرّرًا.
+          const senseId = stableId('sen', `${meta.normalized}/${sense.senseNo ?? 1}`);
+          let exampleSentenceId = null;
+          const exampleEs = typeof sense.exampleEs === 'string' ? sense.exampleEs.trim() : '';
+          if (exampleEs) {
+            const sentenceKey = `vocab-example:${meta.normalized}:${sense.senseNo ?? 1}`;
+            exampleSentenceId = stableId('snt', sentenceKey);
+            const SREG = new Set(['neutral', 'informal', 'formal', 'colloquial_spain', 'colloquial_latam']);
+            const sReg = SREG.has(meta.register) ? meta.register : 'neutral';
+            statements.push(`INSERT INTO sentences (id, text_es, level_code, register, source_id)
+                VALUES (${q(exampleSentenceId)}, ${q(exampleEs)}, ${q(meta.level ?? null)}, ${q(sReg)}, ${q(metaSourceId)})
+                ON CONFLICT(id) DO UPDATE SET text_es=excluded.text_es, level_code=excluded.level_code`);
+            for (const [style, text] of [['fusha', sense.exampleAr], ['eg', sense.exampleArEg]]) {
+              if (typeof text === 'string' && text.trim()) {
+                statements.push(`INSERT INTO sentence_translations (id, sentence_id, locale, style, text, is_primary)
+                    VALUES (${q(stableId('snt', `${sentenceKey}:${style}`))},
+                            ${q(exampleSentenceId)}, 'ar', ${q(style)}, ${q(text.trim())}, ${style === 'fusha' ? 1 : 0})
+                    ON CONFLICT(sentence_id, locale, style) DO UPDATE SET text=excluded.text`);
+              }
+            }
+            counters.sentences = (counters.sentences ?? 0) + 1;
+          }
+          statements.push(`INSERT INTO vocabulary_senses (id, entry_id, sense_no, meaning_ar_fusha, meaning_ar_eg, gloss_es, register, usage_note_ar, common_error_ar, example_sentence_id)
+              VALUES (${q(senseId)}, ${q(entryId)}, ${n(sense.senseNo ?? 1)}, ${q(sense.meaningArFusha)},
+                      ${q(sense.meaningArEg ?? null)}, ${q(sense.glossEs ?? null)}, ${q(meta.register ?? 'neutral')},
+                      ${q(sense.usageNoteAr ?? null)}, ${q(sense.commonErrorAr ?? null)}, ${q(exampleSentenceId)})
+              ON CONFLICT(entry_id, sense_no) DO UPDATE SET meaning_ar_fusha=excluded.meaning_ar_fusha,
+                meaning_ar_eg=excluded.meaning_ar_eg, usage_note_ar=excluded.usage_note_ar, common_error_ar=excluded.common_error_ar,
+                example_sentence_id=excluded.example_sentence_id`);
+          counters.senses++;
+        });
+
+        // الصيغ: اتحاد صيغ كل الظهورات (قد يحمل ظهور صيغةً ينقصها الآخر)، بلا
+        // تكرار داخل الخطة — والمفتاح من الكلمة نفسها لا من الحزمة.
+        const seenForms = new Set();
+        const emitForm = (kind, formEs, tense, mood, person, irregular) => {
+          const key = `${entryId}|${kind}|${formEs}|${tense ?? ''}|${mood ?? ''}|${person ?? ''}`;
+          if (seenForms.has(key)) return;
+          seenForms.add(key);
+          const formId = stableId('vfm', `${meta.normalized}/${kind}/${formEs}/${tense ?? ''}/${mood ?? ''}/${person ?? ''}`);
+          statements.push(`INSERT INTO vocabulary_forms (id, entry_id, form_kind, form_es, tense, mood, person, is_irregular)
+              VALUES (${q(formId)}, ${q(entryId)}, ${q(kind)}, ${q(formEs)}, ${q(tense ?? null)}, ${q(mood ?? null)}, ${q(person ?? null)}, ${n(irregular ? 1 : 0)})
+              ON CONFLICT(id) DO NOTHING`);
+          counters.forms = (counters.forms ?? 0) + 1;
+        };
+        const allForms = [];
+        for (const occ of occurrencesByNormalized.get(meta.normalized) ?? [meta]) allForms.push(...(occ.forms ?? []));
+        for (const f of allForms) {
+          if (!f?.formEs || !['conjugation', 'plural', 'feminine', 'participle', 'gerund', 'diminutive'].includes(f.kind)) continue;
+          emitForm(f.kind, f.formEs, f.tense ?? null, f.mood ?? null, f.person ?? null, f.irregular);
         }
-        statements.push(`INSERT INTO vocabulary_senses (id, entry_id, sense_no, meaning_ar_fusha, meaning_ar_eg, gloss_es, register, usage_note_ar, common_error_ar, example_sentence_id)
-            VALUES (${q(senseId)}, ${q(entryId)}, ${n(sense.senseNo ?? 1)}, ${q(sense.meaningArFusha)},
-                    ${q(sense.meaningArEg ?? null)}, ${q(sense.glossEs ?? null)}, ${q(entry.register ?? 'neutral')},
-                    ${q(sense.usageNoteAr ?? null)}, ${q(sense.commonErrorAr ?? null)}, ${q(exampleSentenceId)})
-            ON CONFLICT(entry_id, sense_no) DO UPDATE SET meaning_ar_fusha=excluded.meaning_ar_fusha,
-              meaning_ar_eg=excluded.meaning_ar_eg, usage_note_ar=excluded.usage_note_ar, common_error_ar=excluded.common_error_ar,
-              example_sentence_id=excluded.example_sentence_id`);
-        counters.senses++;
-      });
+        const plurals = new Set([meta.plural, ...(occurrencesByNormalized.get(meta.normalized) ?? []).map(o => o.plural)].filter(Boolean));
+        for (const plural of plurals) emitForm('plural', plural, null, null, null, false);
+      }
 
       for (const tagName of entry.tags ?? []) {
         const tagSlug = tagName.trim().replace(/\s+/g, '-');
         const tagId = stableId('tag', tagSlug);
-        statements.push(`INSERT INTO vocabulary_tags (id, slug, name_ar) VALUES (${q(tagId)}, ${q(tagSlug)}, ${q(tagName)}) ON CONFLICT(slug) DO NOTHING`);
+        // صفّ الوسم يُصدر مرة واحدة: كان يُكتب مع كل مفردة (16,384 أمرًا لـ75
+        // وسمًا) وهو تكرار ضرره حجم ملف SQL لا صحّة البيانات.
+        if (!emittedTags.has(tagSlug)) {
+          emittedTags.add(tagSlug);
+          statements.push(`INSERT INTO vocabulary_tags (id, slug, name_ar) VALUES (${q(tagId)}, ${q(tagSlug)}, ${q(tagName)}) ON CONFLICT(slug) DO NOTHING`);
+        }
         statements.push(`INSERT INTO vocabulary_tag_links (entry_id, tag_id) VALUES (${q(entryId)}, ${q(tagId)}) ON CONFLICT(entry_id, tag_id) DO NOTHING`);
         counters.tags++;
       }
 
-      // تعبئة vocabulary_forms من المصدر نفسه (forms[] + plural في ملف الحزمة):
-      // الجدول كان ميتًا (DDL فقط بلا كتابة ولا قراءة)؛ الآن هو مصدر حقيقة
-      // الصيغ للربط الاحتياطي أعلاه. إزالة تكرار داخل الخطة (نفس الصيغة
-      // لشخصين) بمفتاح كامل؛ وعند إعادة الاستيراد يحمي ON CONFLICT(id).
-      const seenForms = new Set();
-      const emitForm = (kind, formEs, tense, mood, person, irregular) => {
-        const key = `${entryId}|${kind}|${formEs}|${tense ?? ''}|${mood ?? ''}|${person ?? ''}`;
-        if (seenForms.has(key)) return;
-        seenForms.add(key);
-        const formId = stableId('vfm', `${entry.normalized}/${kind}/${formEs}/${tense ?? ''}/${mood ?? ''}/${person ?? ''}`);
-        statements.push(`INSERT INTO vocabulary_forms (id, entry_id, form_kind, form_es, tense, mood, person, is_irregular)
-            VALUES (${q(formId)}, ${q(entryId)}, ${q(kind)}, ${q(formEs)}, ${q(tense ?? null)}, ${q(mood ?? null)}, ${q(person ?? null)}, ${n(irregular ? 1 : 0)})
-            ON CONFLICT(id) DO NOTHING`);
-        counters.forms = (counters.forms ?? 0) + 1;
-      };
-      for (const f of entry.forms ?? []) {
-        if (!f?.formEs || !['conjugation', 'plural', 'feminine', 'participle', 'gerund', 'diminutive'].includes(f.kind)) continue;
-        emitForm(f.kind, f.formEs, f.tense ?? null, f.mood ?? null, f.person ?? null, f.irregular);
-      }
-      if (entry.plural) emitForm('plural', entry.plural, null, null, null, false);
     }
   }
 
   statements.push(...deferredVocabLinks);
 
-  return { statements, answers, counters, errors, unresolvedVocabRefs, links: structuredLinks, linkStatements: deferredVocabLinks, versions };
+  // تنقية أخيرة: لا يُصدر الأمر نفسه مرتين، ولا يُحسم تعارض محتوى بالترتيب وحده بلا إبلاغ.
+  const deduped = dedupePlanStatements(statements);
+
+  return {
+    statements: deduped.statements,
+    answers,
+    counters,
+    errors,
+    unresolvedVocabRefs,
+    links: structuredLinks,
+    linkStatements: deferredVocabLinks,
+    versions,
+    missingBundleTitles,
+    conflicts: deduped.conflicts,
+    dedupedStatements: deduped.dropped,
+    skippedLessons,
+  };
 }

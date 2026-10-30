@@ -100,7 +100,7 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
 
   if (result) {
     return (
-      <div className="container" style={{ maxWidth: 680 }}>
+      <div className="path-page" style={{ maxWidth: 760, margin: '0 auto', padding: 'var(--s-5) var(--s-4)' }}>
         <div className="card result-hero" style={{ marginTop: 'var(--s-6)' }}>
           <div className="result-mascot" style={{ width: 150 }}>
             <Mascot mood={result.passed ? 'celebrate' : 'wave'} size={150} />
@@ -174,14 +174,16 @@ export function Placement({ navigate }: { navigate: (to: string) => void }) {
   };
 
   return (
-    <div className="container" style={{ maxWidth: 720 }}>
-      <div className="lesson-top" style={{ marginTop: 'var(--s-4)' }}>
+    <div className="path-page" style={{ maxWidth: 820, margin: '0 auto', padding: 'var(--s-5) var(--s-4)' }}>
+      <div className="path-head" style={{ marginTop: 0 }}>
         <button className="btn ghost icon-btn" onClick={() => navigate('/learn')} aria-label="خروج من الاختبار">
           <Icon name="close" size={22} />
         </button>
-        <div className="lesson-title">
-          <h1 style={{ fontSize: '1.25rem' }}>اختبار تحديد المستوى</h1>
-          <span className="small muted">{questions.length} أسئلة سريعة لتقييم معرفتك الحالية — التصحيح على الخادم</span>
+        <div style={{ minWidth: 0 }}>
+          <h1 style={{ fontSize: '1.35rem', margin: 0 }}>اختبار تحديد المستوى</h1>
+          <p className="muted small" style={{ margin: '2px 0 0' }}>
+            {questions.length} أسئلة سريعة لتقييم معرفتك الحالية — يُصحَّح كل سؤال على الخادم
+          </p>
         </div>
         <span className="badge navy">{current.level}</span>
       </div>

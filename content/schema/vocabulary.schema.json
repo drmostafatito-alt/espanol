@@ -16,6 +16,13 @@
     "bundleSlug": {
       "$ref": "common.schema.json#/$defs/slug"
     },
+    "titleAr": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60,
+      "pattern": "[\\u0600-\\u06FF]",
+      "description": "عنوان عربي قصير يظهر للطالب في صفحة حزم المفردات — لا يُعيد استخدام المعرّف الإنجليزي"
+    },
     "source": {
       "type": "object",
       "required": [

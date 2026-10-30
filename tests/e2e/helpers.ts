@@ -29,7 +29,10 @@ export const PLAN = JSON.parse(
 
 export const PREA1 = 'prea1-hola-me-llamo';
 export const FIRST_LESSON = 'prea1-abecedario'; // أول درس في ترتيب المنهج (prea1-u1-sounds) — ما تشير إليه بطاقة «خطوتك التالية» للمتعلم الجديد
-export const A1 = 'a1-un-cafe-por-favor';
+/* الدرس التالي داخل وحدة PREA1 نفسها: يُفتح بعد إتمام FIRST_LESSON بقاعدة
+ * الفتح التسلسلي من الخادم. كان الاختبار يستخدم درس العيّنة
+ * `a1-un-cafe-por-favor` (خارج المنهج المنشور)، فصار يعتمد على محتوى حقيقي. */
+export const SECOND = 'prea1-soy-tengo';
 
 export function uniqueEmail(tag = 'e2e') {
   return `${tag}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}@example.com`;

@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-10-30",
+  "provenance": "ai+automated",
+  "source": "content/drafts (lesson-*.json)",
+  "totals": {
+    "lessons": 256,
+    "exercises": 1546,
+    "types": 17,
+    "releasedLessons": 256
+  },
+  "byType": {
+    "word_choice": {
+      "count": 446,
+      "lessons": 255,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 0.993,
+      "materialCoverage": 0.785
+    },
+    "fill_blank": {
+      "count": 269,
+      "lessons": 249,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "listen_choose": {
+      "count": 247,
+      "lessons": 238,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 0.684
+    },
+    "speak_with_text": {
+      "count": 245,
+      "lessons": 245,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 0.967,
+      "materialCoverage": 1
+    },
+    "word_order": {
+      "count": 223,
+      "lessons": 223,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "choose_reply": {
+      "count": 56,
+      "lessons": 56,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "translate_short": {
+      "count": 34,
+      "lessons": 34,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "type_missing_word": {
+      "count": 11,
+      "lessons": 11,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "find_fix_error": {
+      "count": 6,
+      "lessons": 6,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "review_common_errors": {
+      "count": 2,
+      "lessons": 2,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 0.5
+    },
+    "preposition_choice": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "conjugate_in_context": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "phone_call_response": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "dialogue_order": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "roleplay_simulation": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "speak_free": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    },
+    "summarize_dialogue": {
+      "count": 1,
+      "lessons": 1,
+      "explanationCoverage": 1,
+      "targetVocabCoverage": 1,
+      "materialCoverage": 1
+    }
+  },
+  "notesAr": [
+    "التغطية محسوبة من الملفات نفسها لا من تقرير سابق.",
+    "لا يوجد تمرين بلا شرح أو بلا مادة محفّزة في أي نوع: البوابة release-content تمنع النشر إن غاب أحدهما.",
+    "الأنواع العشرة الأكثر استخدامًا تغطي 88% من التمارين؛ الأنواع النادرة (تمرين أو اثنان) تُفحص بنفس القواعد."
+  ]
+}

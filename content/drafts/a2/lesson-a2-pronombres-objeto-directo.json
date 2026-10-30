@@ -100,7 +100,7 @@
           {
             "id": "ex-a2-pod-1_a",
             "text": "la",
-            "textAr": "ضمير المفرد المؤنث المتصل بالمصدر (الصواب)",
+            "textAr": "ضمير المفرد المؤنث المتصل بالمصدر",
             "isCorrect": true
           },
           {
@@ -185,7 +185,7 @@
           {
             "id": "ex-a2-pod-3_a",
             "text": "los",
-            "textAr": "ضمير الجمع المذكر (الصواب)",
+            "textAr": "ضمير الجمع المذكر",
             "isCorrect": true
           },
           {
@@ -252,7 +252,7 @@
           {
             "id": "ex-a2-pod-4_t4",
             "kind": "token",
-            "text": "caro"
+            "text": "caro,"
           },
           {
             "id": "ex-a2-pod-4_t5",
@@ -272,7 +272,7 @@
         ],
         "answerKey": {
           "accepted": [
-            "Ese coche es caro no lo compro"
+            "Ese coche es caro, no lo compro"
           ],
           "tokenOrder": [
             "ex-a2-pod-4_t1",

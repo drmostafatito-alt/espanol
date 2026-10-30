@@ -74,3 +74,33 @@ export const EXPLANATION_STYLES: { id: 'fusha' | 'fusha_eg' | 'eg'; label: strin
   { id: 'fusha_eg', label: 'فصحى مع توضيح مصري', hint: 'الافتراضي — الأنسب لمعظم المتعلمين' },
   { id: 'eg', label: 'العامية المصرية', hint: 'الشرح كله بالعامية المصرية' },
 ];
+
+/* ---------------- نسخ الصور المتجاوبة ----------------
+   نفس الأصول الأصلية، بأحجام مولّدة عبر tools/build-image-variants.mjs.
+   المسارات حقيقية وموجودة في public/img؛ لا تُضاف مسارات غير مولّدة. */
+export function trackImageSources(src: string): { webp: string } {
+  const base = src.replace(/\.jpg$/, '');
+  return { webp: `${base}-320.webp 320w, ${base}-640.webp 640w` };
+}
+
+export function trackImageSrcSet(src: string): string {
+  const base = src.replace(/\.jpg$/, '');
+  return `${base}-320.jpg 320w, ${base}-640.jpg 640w`;
+}
+
+/* الهيرو: أكبر نسخة JPEG هي الملف الأصلي نفسه (لا نسخة 1100 معاد ترميزها) */
+export const HERO_IMAGE = {
+  src: '/img/hero-spain.jpg',
+  srcSet: '/img/hero-spain-400.jpg 400w, /img/hero-spain-700.jpg 700w, /img/hero-spain.jpg 1100w',
+  sizes: '(max-width: 900px) 92vw, 520px',
+  sources: [
+    {
+      type: 'image/avif',
+      srcSet: '/img/hero-spain-400.avif 400w, /img/hero-spain-700.avif 700w, /img/hero-spain-1100.avif 1100w',
+    },
+    {
+      type: 'image/webp',
+      srcSet: '/img/hero-spain-400.webp 400w, /img/hero-spain-700.webp 700w, /img/hero-spain-1100.webp 1100w',
+    },
+  ],
+};

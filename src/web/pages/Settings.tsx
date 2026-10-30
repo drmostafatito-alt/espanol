@@ -33,14 +33,20 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
   }
 
   return (
-    <div className="container narrow">
-      <div className="row" style={{ justifyContent: 'space-between' }}>
-        <h1>الإعدادات</h1>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>عودة</button>
-      </div>
+    <div className="narrow" style={{ maxWidth: 720 }}>
+      <header className="path-head" style={{ marginBottom: 'var(--s-4)' }}>
+        <div>
+          <h1>الإعدادات</h1>
+          <p className="small muted" style={{ margin: 0 }}>تخصيص تجربة التعلّم والشرح والصوت</p>
+        </div>
+        <div className="row">
+          <button className="btn secondary sm" onClick={() => navigate('/profile')}>ملفي وتقدمي</button>
+          <button className="btn ghost sm" onClick={() => navigate('/learn')}>عودة</button>
+        </div>
+      </header>
 
       <form className="card stack" onSubmit={e => { e.preventDefault(); void save(); }}>
-        <h2>التعلّم</h2>
+        <h2 style={{ margin: 0 }}>التعلّم</h2>
         <label className="field">
           <span>الاسم</span>
           <input type="text" value={name} onChange={e => setName(e.target.value)} maxLength={80} />
@@ -74,7 +80,7 @@ export function Settings({ navigate }: { navigate: (to: string) => void }) {
       </form>
 
       <section className="card" style={{ marginTop: 'var(--s-4)' }}>
-        <h2>البيانات والحساب</h2>
+        <h2 style={{ marginTop: 0 }}>البيانات والحساب</h2>
         <ul className="list-plain small">
           <li>البريد: <span className="es">{user.email}</span></li>
           <li>الدور: <span className="badge">{user.role}</span></li>

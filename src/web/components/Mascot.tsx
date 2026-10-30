@@ -1,4 +1,7 @@
-/* الشخصية الكرتونية التعليمية — تظهر داخل شاشات الأسئلة فقط (لا تسيطر على بقية الموقع). */
+/* الشخصية التعليمية — تُعرض داخل شاشات الأسئلة فقط (لا تسيطر على بقية الموقع).
+   الصورة النقطية القديمة (1.5–1.8MB لكل صورة) استُبدلت برسم متجهي أصلي
+   (Solecito) بنفس الواجهة البرمجية، فلا يتغير أي مكان يستدعيها. */
+import { Solecito } from './Illustrations';
 
 export type MascotMood = 'wave' | 'celebrate';
 
@@ -11,10 +14,9 @@ export function Mascot({
   size?: number;
   alt?: string;
 }) {
-  const src = mood === 'celebrate' ? '/img/mascot-celebrate.png' : '/img/mascot-wave.png';
   return (
-    <div className="mascot" style={{ width: size }}>
-      <img src={src} alt={alt} loading="lazy" width={size} height={size} />
+    <div className="mascot" style={{ width: size }} role="img" aria-label={alt}>
+      <Solecito mood={mood} size={size} />
     </div>
   );
 }

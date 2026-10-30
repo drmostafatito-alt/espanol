@@ -20,6 +20,7 @@ import { searchEngine } from '../../shared/search-engine';
 import { shuffleSecure } from '../lib/random';
 import { PLACEMENT_QUESTIONS, PLACEMENT_STRATA, PLACEMENT_PASS_SCORE, PLACEMENT_A2_SCORE, PLACEMENT_MAX_STARTS_PER_HOUR, type PlacementQuestion } from '../lib/placement-bank';
 import { rateLimitOrThrow } from '../lib/rate-limit';
+import { evaluateAchievements } from '../lib/achievements';
 
 /** XP ثابت على الخادم. العميل لا يشارك في تحديده. */
 export const XP_PER_LESSON = 30;
@@ -580,6 +581,7 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
         mode: replay.mode,
         explanationAr: ex.explanation_ar,
         feedbackAr: replay.chosenFeedbackAr ?? null,
+        ...revealAnswer(ex.answer_key_json),
         recordedAt: existing.server_recorded_at,
       },
       {},
@@ -630,6 +632,7 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
           mode: replay.mode,
           explanationAr: ex.explanation_ar,
           feedbackAr: replay.chosenFeedbackAr ?? null,
+          ...revealAnswer(ex.answer_key_json),
           recordedAt: raced.server_recorded_at,
         },
         {},
@@ -665,10 +668,35 @@ export async function submitAnswer(req: Request, env: Env, requestId: string, us
       mode: result.mode,
       explanationAr: ex.explanation_ar,
       feedbackAr: result.chosenFeedbackAr ?? null,
+      ...revealAnswer(ex.answer_key_json),
     },
     {},
     requestId,
   );
+}
+
+
+/**
+ * معرّف الخيار الصحيح + نص الإجابة الصحيحة — يُرسلان **بعد** الإجابة فقط.
+ *
+ * لماذا؟ بلا هذا لا يمكن للواجهة أن تُعلّم الخيار الصحيح بالأخضر والخاطئ بالأحمر
+ * كما تفعل تطبيقات التعلّم، فيبقى المتعلم يقرأ شرحًا نصيًا بدل رؤية موضع الخطأ.
+ * الأمان: يُستدعى فقط بعد تسجيل المحاولة، ولا يظهر في جلسة الدرس إطلاقًا
+ * (tests/answer-leakage.test.ts يمنع أي تسريب من الجلسة).
+ */
+function revealAnswer(answerKeyJson: string): { correctOptionId: string | null; correctText: string | null } {
+  try {
+    const key = JSON.parse(answerKeyJson) as { correctOptionIds?: string[]; accepted?: string[]; tokens?: string[] };
+    const correctOptionId = Array.isArray(key.correctOptionIds) && key.correctOptionIds.length === 1
+      ? key.correctOptionIds[0] ?? null
+      : null;
+    let correctText: string | null = null;
+    if (Array.isArray(key.tokens) && key.tokens.length) correctText = key.tokens.join(' ');
+    else if (Array.isArray(key.accepted) && key.accepted.length) correctText = key.accepted[0] ?? null;
+    return { correctOptionId, correctText };
+  } catch {
+    return { correctOptionId: null, correctText: null };
+  }
 }
 
 interface MasteryCriteria {
@@ -966,7 +994,8 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   const activeStatuses = allowUnreviewed(env) ? "('published','draft')" : "('published')";
 
   const rawLessons = await env.DB.prepare(
-    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.status, l.unlock_rule_json, l.mastery_criteria_json, l.sort_order AS sort_order,
+    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.status, l.unlock_rule_json, l.mastery_criteria_json,
+            l.estimated_minutes, l.sort_order AS sort_order,
             u.id AS unit_id, u.slug AS unit_slug, u.title_ar AS unit_title_ar, u.sort_order AS unit_sort_order,
             p.id AS program_id, p.slug AS program_slug, p.title_ar AS program_title_ar, p.kind AS program_kind, p.sort_order AS program_sort_order,
             COALESCE(ulp.status, 'not_started') AS progress_status,
@@ -1002,6 +1031,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       status: string;
       unlock_rule_json: string;
       mastery_criteria_json: string;
+      estimated_minutes: number | null;
       sort_order: number;
       unit_id: string;
       unit_slug: string;
@@ -1069,6 +1099,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       program_kind: l.program_kind,
       is_unlocked,
       missing_prerequisites: missing,
+      estimated_minutes: l.estimated_minutes,
     };
   });
 
@@ -1085,7 +1116,9 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     `UPDATE user_stats SET streak_current = ?, streak_longest = ? WHERE user_id = ?`,
   ).bind(derived.streak_current, derived.streak_longest, user.id).run();
   const statsMerged = {
-    ...(stats ?? { xp_total: 0, minutes_total: 0, streak_current: 0, streak_longest: 0, reviews_done: 0, words_seen: 0, words_stable: 0 }),
+    xp_total: Number(stats?.xp_total ?? 0),
+    reviews_done: Number(stats?.reviews_done ?? 0),
+    words_seen: Number(stats?.words_seen ?? 0),
     ...derived,
   };
 
@@ -1097,9 +1130,47 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     .bind(user.id)
     .first<{ lessons_total: number; lessons_completed: number }>();
 
-    return json(
-    {
+  // ---------------- نشاط اليوم والأسبوع (بيانات حقيقية فقط) ----------------
+  // كل الأرقام مشتقة من جداول النشاط: دفتر XP، محاولات التمارين، إكمال الدروس،
+  // وجدول المراجعة. لا عدّادات مصطنعة ولا «أرقام تحفيزية» غير محسوبة.
+  const period = activityPeriod(new Date(), 7);
+  const activity = await dailyActivity(env, user.id, period);
+  const reviewDue = await dueReviewCount(env, user.id);
 
+  // ---------------- ملخص المستويات ----------------
+  const levelMap = new Map<string, { code: string; total: number; completed: number }>();
+  for (const l of lessons) {
+    const code = (l.level_code ?? 'غير محدد').toUpperCase().replace('PRE-A1', 'PREA1');
+    const entry = levelMap.get(code) ?? { code, total: 0, completed: 0 };
+    entry.total += 1;
+    if (l.progress_status === 'completed') entry.completed += 1;
+    levelMap.set(code, entry);
+  }
+  const levels = [...levelMap.values()].sort((a, b) => levelRank(a.code) - levelRank(b.code));
+
+  // ---------------- الإنجازات ----------------
+  const lessonsByLevel: Record<string, number> = {};
+  let bestAccuracy = 0;
+  for (const l of lessons) {
+    const code = (l.level_code ?? '').toUpperCase().replace('PRE-A1', 'PREA1');
+    if (l.progress_status === 'completed' && code) {
+      lessonsByLevel[code] = (lessonsByLevel[code] ?? 0) + 1;
+    }
+    if (l.best_accuracy > bestAccuracy) bestAccuracy = l.best_accuracy;
+  }
+  const achievements = evaluateAchievements({
+    lessonsCompleted: Number(totals?.lessons_completed ?? 0),
+    lessonsByLevel,
+    xpTotal: Number(statsMerged.xp_total ?? 0),
+    streakLongest: Number(statsMerged.streak_longest ?? 0),
+    wordsSeen: Number(statsMerged.words_seen ?? 0),
+    wordsStable: Number(statsMerged.words_stable ?? 0),
+    reviewsDone: Number(statsMerged.reviews_done ?? 0),
+    bestAccuracy,
+  });
+
+  return json(
+    {
       stats: statsMerged,
       lessons,
       nextLesson: nextLesson ? {
@@ -1108,13 +1179,118 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
         level_code: nextLesson.level_code,
         unit_title_ar: nextLesson.unit_title_ar,
         program_title_ar: nextLesson.program_title_ar,
+        unit_id: nextLesson.unit_id,
+        estimated_minutes: nextLesson.estimated_minutes,
       } : null,
       totals: totals ?? { lessons_total: 0, lessons_completed: 0 },
+      today: activity.today,
+      week: activity.week,
+      goalMinutes: user.dailyGoalMinutes,
+      review: { dueNow: reviewDue.due, total: reviewDue.total },
+      levels,
+      achievements,
       contentProvenance: allowUnreviewed(env) ? PROVENANCE : null,
     },
     {},
     requestId,
   );
+}
+
+/** ترتيب المستويات للعرض: PREA1 → A1 → … → C1 ثم ما لا يُعرف في النهاية */
+function levelRank(code: string): number {
+  const order = ['PREA1', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  const i = order.indexOf(code.toUpperCase());
+  return i === -1 ? 99 : i;
+}
+
+export interface DayActivity {
+  date: string;
+  xp: number;
+  minutes: number;
+  lessons: number;
+  reviews: number;
+}
+
+/** آخر `days` يومًا بالتوقيت العالمي (نفس تعريف سلسلة الأيام الموثّق في computeStreaks) */
+export function activityPeriod(now: Date, days: number): string[] {
+  const out: string[] = [];
+  for (let i = days - 1; i >= 0; i--) {
+    out.push(new Date(now.getTime() - i * 86_400_000).toISOString().slice(0, 10));
+  }
+  return out;
+}
+
+/**
+ * يجمع نشاط المستخدم اليومي من أربعة مصادر مستقلة ثم يوحّدها في صفوف يومية.
+ * الغرض: صفحة «اليوم» تحتاج هدفًا يوميًا حقيقيًا وسجل أسبوعي، وكان ذلك
+ * يتطلب ثلاثة طلبات من العميل (تقدّم + مراجعة + مسارات). هنا طلب واحد.
+ */
+export async function dailyActivity(
+  env: Env,
+  userId: string,
+  days: string[],
+): Promise<{ today: DayActivity; week: DayActivity[] }> {
+  const since = days[0] ?? new Date().toISOString().slice(0, 10);
+  const empty = (date: string): DayActivity => ({ date, xp: 0, minutes: 0, lessons: 0, reviews: 0 });
+  const byDate = new Map<string, DayActivity>(days.map(d => [d, empty(d)]));
+
+  const [xpRows, minuteRows, lessonRows, reviewRows] = await Promise.all([
+    env.DB.prepare(
+      `SELECT substr(created_at, 1, 10) AS d, COALESCE(SUM(amount), 0) AS n
+       FROM xp_ledger WHERE user_id = ? AND substr(created_at, 1, 10) >= ? GROUP BY d`,
+    ).bind(userId, since).all<{ d: string; n: number }>(),
+    env.DB.prepare(
+      `SELECT substr(server_recorded_at, 1, 10) AS d, COALESCE(SUM(COALESCE(duration_ms, 0)), 0) AS ms
+       FROM user_exercise_attempts WHERE user_id = ? AND substr(server_recorded_at, 1, 10) >= ? GROUP BY d`,
+    ).bind(userId, since).all<{ d: string; ms: number }>(),
+    env.DB.prepare(
+      `SELECT substr(completed_at, 1, 10) AS d, COUNT(*) AS n
+       FROM user_lesson_progress
+       WHERE user_id = ? AND status = 'completed' AND completed_at IS NOT NULL AND substr(completed_at, 1, 10) >= ?
+       GROUP BY d`,
+    ).bind(userId, since).all<{ d: string; n: number }>(),
+    env.DB.prepare(
+      `SELECT substr(last_reviewed_at, 1, 10) AS d, COUNT(*) AS n
+       FROM review_schedule
+       WHERE user_id = ? AND last_reviewed_at IS NOT NULL AND substr(last_reviewed_at, 1, 10) >= ?
+       GROUP BY d`,
+    ).bind(userId, since).all<{ d: string; n: number }>(),
+  ]);
+
+  for (const row of xpRows.results) {
+    const day = byDate.get(row.d);
+    if (day) day.xp = Number(row.n ?? 0);
+  }
+  for (const row of minuteRows.results) {
+    const day = byDate.get(row.d);
+    if (day) day.minutes = Math.round(Number(row.ms ?? 0) / 60_000);
+  }
+  for (const row of lessonRows.results) {
+    const day = byDate.get(row.d);
+    if (day) day.lessons = Number(row.n ?? 0);
+  }
+  for (const row of reviewRows.results) {
+    const day = byDate.get(row.d);
+    if (day) day.reviews = Number(row.n ?? 0);
+  }
+
+  const week = days.map(d => byDate.get(d) ?? empty(d));
+  const today = week[week.length - 1] ?? empty(new Date().toISOString().slice(0, 10));
+  return { today, week };
+}
+
+/** بطاقات مستحقة الآن (نفس تعريف جلسة المراجعة: غير موقوفة، ومفردتها موجودة) */
+export async function dueReviewCount(env: Env, userId: string, nowIso = new Date().toISOString()): Promise<{ due: number; total: number }> {
+  const row = await env.DB.prepare(
+    `SELECT COUNT(*) AS total,
+            SUM(CASE WHEN rs.due_at <= ? AND rs.state != 'suspended' AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS due
+     FROM review_schedule rs
+     LEFT JOIN vocabulary_entries e ON e.id = rs.item_id AND rs.item_type = 'vocab'
+     WHERE rs.user_id = ?`,
+  )
+    .bind(nowIso, userId)
+    .first<{ total: number; due: number | null }>();
+  return { due: Number(row?.due ?? 0), total: Number(row?.total ?? 0) };
 }
 
 /** ترتيب الدروس داخل كل وحدة بحيث تسبق المتطلبات السابقة الدروس التي تطلبها */

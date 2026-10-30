@@ -8,7 +8,7 @@ if (!existsSync(sqliteDir)) {
   console.error('🛑 لم يتم العثور على مجلد D1 المحلي.');
   process.exit(1);
 }
-const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
 if (sqliteFiles.length !== 1) {
   console.error(`🛑 عدد ملفات SQLite غير متوقع (${sqliteFiles.length}).`);
   process.exit(1);

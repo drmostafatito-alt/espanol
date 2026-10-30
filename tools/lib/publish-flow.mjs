@@ -134,6 +134,8 @@ export async function runPublishFlow({
   cookie,
   spanishReviewer,
   translationReviewer,
+  aiAutomated = false,
+  validationRunId = null,
   fetchFn = globalThis.fetch,
   dryRun = false,
   gateResult = null,
@@ -142,9 +144,14 @@ export async function runPublishFlow({
   const origin = assertLocalBase(base);
   // في وضع dry-run لا تُشترط الأسماء: الخطة تُعرض كما ستُرسل (بأسماء فارغة
   // إن لم تُعطَ)، ولا يُرسل شيء. في الوضع الحقيقي الأسماء إلزامية.
-  const reviewers = dryRun
-    ? { spanishReviewer: (spanishReviewer ?? '').trim(), translationReviewer: (translationReviewer ?? '').trim() }
-    : validateReviewers(spanishReviewer, translationReviewer);
+  /* مسارَان: بشري (اسمَان حقيقيان) أو آلي موثّق. المسار الآلي لا يُقبل في
+     الـWorker إلا إذا كانت النسخة تحمل سجلات المراحل الثلاث passed التي
+     أنشأها مسار الإفراج — فلا تستطيع هذه الأداة «تأكيد» إفراج لم يحدث. */
+  const reviewers = aiAutomated
+    ? { mode: 'ai_automated', ...(validationRunId ? { validationRunId: String(validationRunId) } : {}) }
+    : dryRun
+      ? { spanishReviewer: (spanishReviewer ?? '').trim(), translationReviewer: (translationReviewer ?? '').trim() }
+      : validateReviewers(spanishReviewer, translationReviewer);
   if (!dryRun && (!cookie || typeof cookie !== 'string' || !cookie.trim())) {
     throw new PublishFlowError('auth', 'يلزم كوكي جلسة لحساب يملك صلاحيات المراجعة والنشر (PUBLISH_SESSION_COOKIE أو --cookie-file). سجّل الدخول في المتصفح وانسخ قيمة الكوكي.');
   }

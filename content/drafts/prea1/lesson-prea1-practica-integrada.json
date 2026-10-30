@@ -306,7 +306,7 @@
         "id": "prac_6_translate",
         "type": "translate_short",
         "mode": "graded",
-        "instructionAr": "ترجم إلى الإسبانية: مرحبًا، اسمي ليلى.",
+        "instructionAr": "ترجم إلى الإسبانية.",
         "answerKey": {
           "accepted": [
             "Hola, me llamo Laila."
@@ -325,7 +325,8 @@
         "targetVocab": [
           "hola",
           "me llamo"
-        ]
+        ],
+        "stemAr": "مرحبًا، اسمي ليلى."
       },
       {
         "id": "prac_7_speak",

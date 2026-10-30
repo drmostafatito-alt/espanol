@@ -1,0 +1,293 @@
+{
+ "base": "http://127.0.0.1:8787",
+ "when": "2026-10-30T13:39:59.808Z",
+ "signupStatus": 201,
+ "results": [
+  {
+   "viewport": "desktop",
+   "route": "/",
+   "status": 200,
+   "ms": 808,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1751,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/login",
+   "status": 200,
+   "ms": 632,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4688,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/signup",
+   "status": 200,
+   "ms": 636,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4688,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/learn",
+   "status": 200,
+   "ms": 638,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4821,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/path",
+   "status": 200,
+   "ms": 642,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 836,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/learn/prea1-hola-me-llamo",
+   "status": 200,
+   "ms": 620,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1101,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/learn/prea1-soy-tengo",
+   "status": 200,
+   "ms": 639,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 133,
+   "overflowX": 0,
+   "newErrors": 1,
+   "firstError": "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+  },
+  {
+   "viewport": "desktop",
+   "route": "/review",
+   "status": 200,
+   "ms": 645,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 154,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/review/packs",
+   "status": 200,
+   "ms": 650,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1915,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/profile",
+   "status": 200,
+   "ms": 631,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1234,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/settings",
+   "status": 200,
+   "ms": 635,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 635,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/placement",
+   "status": 200,
+   "ms": 628,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 291,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "desktop",
+   "route": "/search?q=casa",
+   "status": 200,
+   "ms": 636,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 2647,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/",
+   "status": 200,
+   "ms": 652,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1664,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/login",
+   "status": 200,
+   "ms": 632,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4688,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/signup",
+   "status": 200,
+   "ms": 632,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4688,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/learn",
+   "status": 200,
+   "ms": 637,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 4725,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/path",
+   "status": 200,
+   "ms": 647,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 740,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/learn/prea1-hola-me-llamo",
+   "status": 200,
+   "ms": 630,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1101,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/learn/prea1-soy-tengo",
+   "status": 200,
+   "ms": 643,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 133,
+   "overflowX": 0,
+   "newErrors": 1,
+   "firstError": "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/review",
+   "status": 200,
+   "ms": 626,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 154,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/review/packs",
+   "status": 200,
+   "ms": 626,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1819,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/profile",
+   "status": 200,
+   "ms": 631,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 1138,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/settings",
+   "status": 200,
+   "ms": 623,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 539,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/placement",
+   "status": 200,
+   "ms": 623,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 228,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  },
+  {
+   "viewport": "mobile320",
+   "route": "/search?q=casa",
+   "status": 200,
+   "ms": 627,
+   "heading": "تخطَّ إلى المحتوى",
+   "textLen": 2551,
+   "overflowX": 0,
+   "newErrors": 0,
+   "firstError": ""
+  }
+ ]
+}
