@@ -8,7 +8,7 @@ import {
   HttpError, apiError, assertJsonContentType, corsHeaders, isOriginAllowed,
   json, newRequestId, readSessionToken, securityHeadersFor, isNonProductionEnv } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
-import { adminAudit, changePassword, login, logout, me, oauthGoogleCallback, oauthGoogleStart, revokeAllSessions, signup, updateMe } from './routes/auth';
+import { adminAudit, changePassword, kdfParams, login, logout, me, oauthGoogleCallback, oauthGoogleStart, revokeAllSessions, signup, updateMe } from './routes/auth';
 import { getLesson, listPaths, reviewLesson, searchContent, setLessonPublished } from './routes/content';
 import { completeLesson, lessonSession, myProgress, startPlacementTest, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
@@ -70,6 +70,7 @@ const routes: Route[] = [
     return json({ settings }, { headers: { 'Cache-Control': 'public, max-age=60' } }, ctx.requestId);
   }),
 
+  route('POST', '/api/auth/kdf-params', (req, env, ctx) => kdfParams(req, env, ctx.requestId)),
   route('POST', '/api/auth/signup', (req, env, ctx) => signup(req, env, ctx.requestId)),
   route('POST', '/api/auth/login', (req, env, ctx) => login(req, env, ctx.requestId)),
   route('GET', '/api/auth/oauth/google/start', (req, env, ctx) => oauthGoogleStart(req, env, ctx.requestId)),

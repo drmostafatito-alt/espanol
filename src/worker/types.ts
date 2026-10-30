@@ -39,6 +39,12 @@ export interface Env {
   GOOGLE_CLIENT_SECRET?: string;
   /** 'false' يغلق التسجيل العام — يُستخدم كبوابة حتى اعتماد سياسة كلمات مرور مناسبة */
   ALLOW_PUBLIC_SIGNUP?: string;
+  /**
+   * اشتقاق العميل (الطبقة الثانية): تكرارات المتصفح — 600,000 افتراضيًا (متطلب OWASP).
+   * `CLIENT_KDF_REQUIRED="true"` يمنع قبول كلمة مرور خام في التسجيل/الدخول.
+   */
+  CLIENT_KDF_ITERATIONS?: string;
+  CLIENT_KDF_REQUIRED?: string;
   /** 'true' يسمح بخدمة محتوى draft في التطوير فقط، مع وسم «عينة غير مراجعة» */
   ALLOW_UNREVIEWED_CONTENT?: string;
   /** تطوير/اختبار محلي فقط: رفع حد التسجيل لكل عنوان في الساعة (الافتراضي 10) */

@@ -1,7 +1,32 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
-import { api, ApiError } from '../api';
+import { api, ApiError, type AuthCredentials } from '../api';
+import { deriveKeyB64, supportsClientKdf } from '../kdf';
 import { useAuth } from '../state';
 import { BrandMark, Icon } from '../components/icons';
+
+/**
+ * سياسة كلمة المرور — تُطبَّق في المتصفح لأن كلمة المرور لا تصل إلى الخادم أصلًا
+ * في المسار v2 (الخادم يرى مفتاحًا مشتقًا فقط). نفس الحدود المعروضة للمستخدم.
+ */
+export function passwordProblemsClient(pw: string, email: string): string[] {
+  const problems: string[] = [];
+  if (pw.length < 12) problems.push('استخدم 12 حرفًا على الأقل.');
+  if (pw.length > 200) problems.push('كلمة المرور طويلة جدًا (200 حرف كحد أقصى).');
+  if (!/[A-Za-zÀ-ÿ]/.test(pw)) problems.push('أضف حرفًا واحدًا على الأقل.');
+  if (!/\d/.test(pw)) problems.push('أضف رقمًا واحدًا على الأقل.');
+  const local = email.split('@')[0]?.toLowerCase() ?? '';
+  if (local.length >= 3 && pw.toLowerCase().includes(local)) problems.push('لا تُدخل بريدك داخل كلمة المرور.');
+  return problems;
+}
+
+/** اشتقاق المفتاح في المتصفح ثم إرساله بدل كلمة المرور. */
+async function prepareCredential(email: string, password: string): Promise<AuthCredentials> {
+  if (!supportsClientKdf()) {
+    throw new Error('CLIENT_KDF_UNSUPPORTED');
+  }
+  const params = await api.kdfParams(email);
+  return { derivedKey: await deriveKeyB64(password, params.salt, params.iterations) };
+}
 
 interface FormError {
   message: string;
@@ -172,7 +197,12 @@ export function Signup({ navigate }: { navigate: (to: string) => void }) {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    void submit(() => api.signup(email, password, displayName || undefined));
+    const problems = passwordProblemsClient(password, email);
+    if (problems.length) {
+      submit(async () => { throw new ApiError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + problems.join(' '), { problems }); });
+      return;
+    }
+    void submit(async () => api.signup(email, await prepareCredential(email, password), displayName || undefined));
   };
 
   return (
@@ -230,7 +260,18 @@ export function Login({
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    void submit(() => api.login(email, password));
+    void submit(async () => {
+      const credential = await prepareCredential(email, password);
+      try {
+        return await api.login(email, credential);
+      } catch (err) {
+        // حساب قديم (v1) يحتاج كلمة المرور نفسها للتحقق ثم يُرقّى. يحدث مرة واحدة.
+        if (err instanceof ApiError && err.status === 409 && err.code === 'LEGACY_CREDENTIALS') {
+          return api.login(email, { password });
+        }
+        throw err;
+      }
+    });
   };
 
   return (

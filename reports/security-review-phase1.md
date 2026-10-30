@@ -2,7 +2,7 @@
 
 > **مولَّد آليًا** بـ`node tools/security-audit.mjs`. كل رقم صلاحية أدناه ناتج تنفيذ فعلي في هذه الجلسة، لا تقدير.
 
-- تاريخ التشغيل: 2026-10-30T20:17:35.744Z
+- تاريخ التشغيل: 2026-10-30T20:38:06.621Z
 - Node v22.22.3 · منصة التطوير (لم يُنشر شيء، لا حسابات حقيقية، لا أسرار إنتاج)
 
 ## 1) ملخص
@@ -21,10 +21,10 @@
 | الأمر | الحالة | التفصيل |
 | --- | --- | --- |
 | `npx tsc --noEmit` | ✅ نجح | نجح (بلا مخرجات مختصرة) |
-| `npx vitest run` | ✅ نجح | 671 اختبارًا ناجحًا في 54 ملفات |
+| `npx vitest run` | ✅ نجح | 680 اختبارًا ناجحًا في 55 ملفات |
 | `node tools/check-sql.mjs` | ✅ نجح | PASS |
 | `node tools/validate-content.mjs` | ✅ نجح | PASS |
-| `node tools/smoke-worker.mjs` | ✅ نجح | 32/32 |
+| `node tools/smoke-worker.mjs` | ✅ نجح | 33/33 |
 | `npx vite build` | ✅ نجح | 0.31 kB │ gzip:  0.27 kB |
 | `node tools/db.mjs status --remote` | ✅ نجح | رُفض بنجاح (exit 2) |
 | `node tools/db.mjs status` | ✅ نجح | رُفض بنجاح (exit 2) |

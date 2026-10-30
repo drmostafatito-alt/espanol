@@ -110,12 +110,24 @@ async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpt
   return body as T;
 }
 
+export type AuthCredentials = { derivedKey: string };
+
 export const api = {
   me: (opts?: RequestOpts) => request<{ user: ApiUser }>('/api/auth/me', {}, opts),
-  signup: (email: string, password: string, displayName?: string) =>
-    request<{ user: ApiUser }>('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password, displayName }) }),
-  login: (email: string, password: string) =>
-    request<{ user: ApiUser }>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) }),
+  /**
+   * معاملات اشتقاق العميل: ملح حتمي للبريد + عدد التكرارات (600,000 افتراضيًا).
+   * لا يكشف وجود الحساب — نفس الشكل لأي بريد.
+   */
+  kdfParams: (email: string) =>
+    request<{ version: number; algorithm: string; iterations: number; salt: string; required: boolean }>(
+      '/api/auth/kdf-params',
+      { method: 'POST', body: JSON.stringify({ email }) },
+    ),
+  signup: (email: string, credentials: AuthCredentials, displayName?: string) =>
+    request<{ user: ApiUser }>('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, ...credentials, displayName }) }),
+  /** `password` للمسار القديم فقط (حساب v1 يطلب تأكيد كلمة المرور من المتصفح). */
+  login: (email: string, credentials: AuthCredentials | { password: string }) =>
+    request<{ user: ApiUser }>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...credentials }) }),
   logout: () => request<{ ok: true }>('/api/auth/logout', { method: 'POST' }),
   updateMe: (patch: Partial<Pick<ApiUser, 'displayName' | 'explanationStyle' | 'audioVariant' | 'dailyGoalMinutes'>>) =>
     request<{ user: ApiUser }>('/api/me', { method: 'PATCH', body: JSON.stringify(patch) }),

@@ -136,7 +136,12 @@ if (!existsSync(abs)) {
   // 3) بوابة التسجيل العام — التعرّض الفعلي هو ما يحدّد الشدّة
   const signup = getVar('ALLOW_PUBLIC_SIGNUP');
   const iterations = Number(getVar('PBKDF2_ITERATIONS') ?? 0);
-  const kdfMeetsOwasp = iterations >= 600000;
+  // 2026-10-30 (بعد قرار «تسجيل مجاني»): القوة الفعلية = تكرارات المتصفح + تكرارات الخادم.
+  // الطبقة الأولى تُنفَّذ مجانًا في المتصفح (WebCrypto)، فلا تستهلك ميزانية CPU في Worker.
+  const clientIters = Number(getVar('CLIENT_KDF_ITERATIONS') ?? 0);
+  const clientRequired = getVar('CLIENT_KDF_REQUIRED') === 'true';
+  const layered = clientRequired && clientIters >= 600000 && iterations >= 20000;
+  const kdfMeetsOwasp = iterations >= 600000 || layered;
   if (signup === 'true' && !kdfMeetsOwasp) {
     // أخطر تركيبة: حسابات عامة بلا حد معدل كافٍ وتجزئة ضعيفة. هذه ليست «قرار مالك»
     // بل عيب إعداد يجب أن يفشل به النشر، لا أن يُتجاوَز بكود خروج 2.
@@ -158,7 +163,7 @@ if (!existsSync(abs)) {
     err('D1_ID_PLACEHOLDER', 'database_id ما زال معرّفًا وهميًا (أصفار).', 'ضع معرّف D1 الإنتاجي الحقيقي.');
   }
 
-  // 5) السياسة الأمنية المطلوبة — حاجز يبقى ما لم يُسجَّل قبول مخاطرة مطابق النطاق
+  // 5) السياسة الأمنية المطلوبة — حاجز يبقى ما لم تُطبَّق الطبقتان أو يُسجَّل تنازل مطابق
   if (getVar('PBKDF2_ITERATIONS') && !kdfMeetsOwasp) {
     block(
       'KDF_BELOW_OWASP',
@@ -191,7 +196,7 @@ if (acceptances.length) {
   for (const b of [...blockers]) {
     if (!b.waivable) continue;
     const hit = acceptances.find(a =>
-      a && a.risk === b.code &&
+      a && a.risk === b.code && !a.revokedAt &&
       typeof a.expiresAt === 'string' && a.expiresAt >= today &&
       a.scope && Object.entries(a.scope).every(([k, v]) => (b.scope?.[k] ?? null) === v));
     if (!hit) continue;

@@ -1,0 +1,28 @@
+# عيّنة اختبار: تسجيل مفتوح + اشتقاق على طبقتين (600k عميل + 30k خادم).
+# تُستخدم في tests/deploy-preflight.test.ts لإثبات أن بوابة ما قبل النشر تمرّ على إعداد إنتاجي سليم،
+# فلا تكون بوابة ترفض كل شيء. المعرّفات وهمية وليست لأي قاعدة موجودة.
+
+name = "espanol-balarabi"
+main = "src/worker/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "es-ar-prod"
+database_id = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+
+[vars]
+ENVIRONMENT = "production"
+APP_ORIGIN = "https://learn.espanol-balarabi.workers.dev"
+MEDIA_ORIGIN = "https://learn.espanol-balarabi.workers.dev/media"
+PBKDF2_ITERATIONS = "30000"
+ALLOW_PUBLIC_SIGNUP = "true"
+CLIENT_KDF_REQUIRED = "true"
+CLIENT_KDF_ITERATIONS = "600000"
+SESSION_TTL_DAYS = "30"

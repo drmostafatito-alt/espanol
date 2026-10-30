@@ -10,6 +10,8 @@ import {
 } from '../lib/google-oauth';
 import {
   hashPassword, verifyPassword, needsRehash, passwordProblems, resolvePolicy,
+  resolveClientKdf, clientKdfSalt, hashDerivedKey, verifyDerivedKey, isV2Hash,
+  isWellFormedDerivedKey, dummyVerifyWork,
   type PasswordPolicy,
 } from '../lib/password';
 import { ulid } from '../lib/ids';
@@ -78,6 +80,27 @@ function policyFor(env: Env): PasswordPolicy {
   }
 }
 
+/**
+ * معاملات اشتقاق العميل — حتميّة لكل بريد (HMAC بالـpepper)، فترد نفس الشكل
+ * للبريد المسجَّل وغير المسجَّل ⇒ لا تكشف وجود حساب. الحد هنا لكل IP فقط.
+ */
+export async function kdfParams(req: Request, env: Env, requestId: string): Promise<Response> {
+  const policy = policyFor(env);
+  const body = await readJson<{ email?: string }>(req);
+  const email = typeof body.email === 'string' ? normalizeEmail(body.email) : '';
+  if (!EMAIL_RE.test(email) || email.length > 254) {
+    throw new HttpError(400, 'INVALID_EMAIL', 'صيغة البريد الإلكتروني غير صحيحة.');
+  }
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  await rateLimitOrThrow(env, `kdf:ip:${ipHash}`, 60, 600);
+  const client = resolveClientKdf(env);
+  return json(
+    { version: 2, algorithm: 'PBKDF2-SHA256', iterations: client.iterations, salt: await clientKdfSalt(email, policy), required: client.required },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+
 export async function signup(req: Request, env: Env, requestId: string): Promise<Response> {
   // فشل مغلق: التسجيل يُفتح بمفتاح صريح `true` فقط.
   // أي قيمة أخرى — بما فيها المتغيّر الغائب تمامًا (نسيان `[vars]` في بيئة نشر) — تُغلق التسجيل.
@@ -86,14 +109,25 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
     throw new HttpError(503, 'SIGNUP_DISABLED', 'التسجيل غير متاح حاليًا. نفتحه بعد اعتماد سياسة حماية كلمات المرور.');
   }
   const policy = policyFor(env);
-  const body = await readJson<{ email?: string; password?: string; displayName?: string }>(req);
+  const clientKdf = resolveClientKdf(env);
+  const body = await readJson<{ email?: string; password?: string; derivedKey?: string; displayName?: string }>(req);
   const email = typeof body.email === 'string' ? normalizeEmail(body.email) : '';
   if (!EMAIL_RE.test(email) || email.length > 254) {
     throw new HttpError(400, 'INVALID_EMAIL', 'صيغة البريد الإلكتروني غير صحيحة.');
   }
-  const pwProblems = passwordProblems(body.password, { email });
-  if (pwProblems.length) {
-    throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
+  // المسار v2 (الافتراضي): العميل يُشتق المفتاح بـ600,000 تكرار، فلا تصل كلمة المرور
+  // إلى الخادم أصلًا. المسار القديم (كلمة مرور خام) يبقى متاحًا فقط إذا نصّ الإعداد
+  // على CLIENT_KDF_REQUIRED="false" — وهو ممنوع في الإنتاج (بوابة preflight).
+  const derivedKey = body.derivedKey;
+  const useV2 = isWellFormedDerivedKey(derivedKey);
+  if (!useV2 && clientKdf.required) {
+    throw new HttpError(400, 'CLIENT_KDF_REQUIRED', 'يجب إرسال المفتاح المشتق من المتصفح. حدّث الصفحة ثم أعد المحاولة.');
+  }
+  if (!useV2) {
+    const pwProblems = passwordProblems(body.password, { email });
+    if (pwProblems.length) {
+      throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
+    }
   }
   if (body.displayName && (body.displayName.length > 80 || body.displayName.includes('<'))) {
     throw new HttpError(400, 'INVALID_NAME', 'الاسم غير مقبول.');
@@ -112,11 +146,13 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
   // لتكلفة الإنشاء حتى لا يكشف التوقيت وجود البريد. التوحيد الكامل يتطلب
   // قناة تحقق بالبريد (مزود بريد — عائق موثّق، بلا قرار مالك بعد).
   if (await emailExists(env.DB, email)) {
-    await hashPassword(body.password as string, policy);
+    await (useV2 ? hashDerivedKey(derivedKey!, policy, clientKdf.iterations) : hashPassword(body.password as string, policy));
     throw new HttpError(409, 'SIGNUP_UNAVAILABLE', 'تعذّر إنشاء الحساب بهذا البريد. إن كان لديك حساب قائم جرّب تسجيل الدخول، أو استخدم بريدًا آخر.');
   }
 
-  const passwordHash = await hashPassword(body.password as string, policy);
+  const passwordHash = useV2
+    ? await hashDerivedKey(derivedKey!, policy, clientKdf.iterations)
+    : await hashPassword(body.password as string, policy);
   const userId = ulid();
   try {
     await createUser(env.DB, {
@@ -157,11 +193,14 @@ export async function signup(req: Request, env: Env, requestId: string): Promise
 
 export async function login(req: Request, env: Env, requestId: string): Promise<Response> {
   const policy = policyFor(env);
-  const body = await readJson<{ email?: string; password?: string }>(req);
+  const clientKdf = resolveClientKdf(env);
+  const body = await readJson<{ email?: string; derivedKey?: string; password?: string }>(req);
   const email = typeof body.email === 'string' ? normalizeEmail(body.email) : '';
+  const derivedKey = body.derivedKey;
+  const useV2 = isWellFormedDerivedKey(derivedKey);
   const password = typeof body.password === 'string' ? body.password : '';
   // صيغة البريد غير الصحيحة خطأ إدخال لا يكشف شيئًا؛ نُبقي 400 لرسالة أوضح للمستخدم
-  if (!EMAIL_RE.test(email) || !password) {
+  if (!EMAIL_RE.test(email) || (!useV2 && !password)) {
     throw new HttpError(400, 'INVALID_CREDENTIALS', GENERIC_AUTH_FAIL);
   }
 
@@ -175,23 +214,39 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
 
   if (!row) {
     // نُهدر تكلفة اشتقاق مماثلة لمنع كشف وجود البريد عبر التوقيت
-    await hashPassword(password, policy);
+    await dummyVerifyWork(policy);
     throw generic;
   }
 
   // الحساب غير النشط: نفس الرد العام — الرسالة الخاصة كانت تكشف وجود الحساب
   if (row.status !== 'active') {
-    await hashPassword(password, policy);
+    await dummyVerifyWork(policy);
     throw generic;
   }
 
   // القفل التجريبي: نفس رمز ورسالة حد المعدل حتى لا يميّز المهاجم الحساب الموجود
   if (row.locked_until && new Date(row.locked_until).getTime() > Date.now()) {
-    await hashPassword(password, policy);
+    await dummyVerifyWork(policy);
     throw new HttpError(429, 'RATE_LIMITED', RATE_LIMIT_MSG);
   }
 
-  const ok = await verifyPassword(password, row.password_hash, policy);
+  const rowIsV2 = isV2Hash(row.password_hash);
+  if (rowIsV2 && !useV2) {
+    // حساب v2 لا يمكن التحقق منه بكلمة مرور خام؛ نرفض بتكلفة مماثلة.
+    await dummyVerifyWork(policy);
+    throw generic;
+  }
+  if (!rowIsV2 && useV2) {
+    // حساب قديم (v1/legacy) يحتاج كلمة المرور الخام للتحقق. العميل يعيد المحاولة
+    // مرة واحدة بمساره القديم. لا يكشف ذلك وجود الحساب: البريد غير الموجود يأخذ
+    // نفس التكلفة ثم 401 عام.
+    await dummyVerifyWork(policy);
+    throw new HttpError(409, 'LEGACY_CREDENTIALS', 'يتطلب هذا الحساب تأكيد كلمة المرور من المتصفح. أعد المحاولة.');
+  }
+
+  const ok = rowIsV2
+    ? await verifyDerivedKey(derivedKey!, row.password_hash, policy)
+    : await verifyPassword(password, row.password_hash, policy);
   if (!ok) {
     await registerFailedLogin(env.DB, row.id);
     throw generic;
@@ -199,7 +254,10 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
 
   // ترقية صامتة: إن تغيّرت السياسة (تكرارات أعلى/صيغة أحدث) نُعيد التجزئة الآن
   if (needsRehash(row.password_hash, policy)) {
-    await updatePasswordHash(env.DB, row.id, await hashPassword(password, policy));
+    const upgraded = rowIsV2
+      ? await hashDerivedKey(derivedKey!, policy, clientKdf.iterations)
+      : await hashPassword(password, policy);
+    await updatePasswordHash(env.DB, row.id, upgraded);
   }
 
   await resetFailedLogin(env.DB, row.id);

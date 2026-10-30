@@ -8,6 +8,16 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { AuthProvider, useAuth } from '../src/web/state';
+
+/*
+ * اشتقاق كلمة المرور يتم في المتصفح (WebCrypto). بيئة jsdom هنا لا توفره،
+ * فنستبدل وحدة الاشتقاق بدالة ثابتة — الهدف من هذا الملف اختبار سباق الجلسة،
+ * لا الرياضيات. الاشتقاق الحقيقي مغطّى في tests/client-kdf.test.ts و smoke-worker.
+ */
+vi.mock('../src/web/kdf', () => ({
+  supportsClientKdf: () => true,
+  deriveKeyB64: async () => 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+}));
 import { api } from '../src/web/api';
 import { Login } from '../src/web/pages/Auth';
 
@@ -58,6 +68,12 @@ describe('سباق طلب الإقلاع مع تسجيل الدخول', () => {
           status: 200,
           headers: { 'Content-Type': 'application/json' },
         });
+      }
+      if (path === '/api/auth/kdf-params' && method === 'POST') {
+        return new Response(
+          JSON.stringify({ version: 2, algorithm: 'PBKDF2-SHA256', iterations: 600000, salt: 'AAAAAAAAAAAAAAAAAAAAAA', required: true }),
+          { status: 200, headers: { 'Content-Type': 'application/json' } },
+        );
       }
       if (path === '/api/auth/login' && method === 'POST') {
         return new Response(JSON.stringify({ user: USER }), {
@@ -117,6 +133,12 @@ describe('سباق طلب الإقلاع مع تسجيل الدخول', () => {
               status: 200,
               headers: { 'Content-Type': 'application/json' },
             });
+      }
+      if (path === '/api/auth/kdf-params' && method === 'POST') {
+        return new Response(
+          JSON.stringify({ version: 2, algorithm: 'PBKDF2-SHA256', iterations: 600000, salt: 'AAAAAAAAAAAAAAAAAAAAAA', required: true }),
+          { status: 200, headers: { 'Content-Type': 'application/json' } },
+        );
       }
       if (path === '/api/auth/login' && method === 'POST') {
         return new Response(JSON.stringify({ user: USER }), {

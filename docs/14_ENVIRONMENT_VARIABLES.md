@@ -11,7 +11,10 @@
 | `ENVIRONMENT` | var | `development` \| `staging` \| `production` | كلها |
 | `APP_ORIGIN` | var | أصل التطبيق للتحقق من Origin | كلها |
 | `MEDIA_ORIGIN` | var | نطاق الوسائط المخصص | كلها |
-| `PBKDF2_ITERATIONS` | var | عدد التكرارات المعايَر | كلها |
+| `PBKDF2_ITERATIONS` | var | تكرارات **الخادم** لـPBKDF2. `30000` في الإنتاج (حدّ 10ms للخطة المجانية) | كلها |
+| `ALLOW_PUBLIC_SIGNUP` | var | `"true"` يفتح التسجيل العام بالبريد+كلمة المرور (قرار 2026-10-30). أي قيمة غير `"true"` = مغلق (فشل مغلق) | كلها |
+| `CLIENT_KDF_REQUIRED` | var | `"true"`: إلزام اشتقاق المتصفح ورفض كلمة المرور الخام (400 `CLIENT_KDF_REQUIRED`). **يجب أن يبقى `true` في الإنتاج** | staging/prod |
+| `CLIENT_KDF_ITERATIONS` | var | تكرارات المتصفح. `600000` = متطلب OWASP. الأرضية المقبولة 100,000، والبوابة ترفض أقل من 600,000 مع تسجيل مفتوح | staging/prod |
 | `GOOGLE_CLIENT_ID` | var | معرّف عميل Google OAuth (عام — ليس سرًا) | staging/prod (وdev عند اختبار Google حقيقيًا) |
 | `SESSION_TTL_DAYS` | var | 30 افتراضيًا | كلها |
 | `FEATURE_PUSH` | var | `true` عندما يُعد VAPID | staging/prod |
@@ -33,7 +36,9 @@
 
 ```
 PASSWORD_PEPPER=<قيمة عشوائية 32B للـdev فقط>
-ALLOW_PUBLIC_SIGNUP=false        # الإنتاج: false دائمًا (docs/SECURITY_BLOCKERS.md)
+ALLOW_PUBLIC_SIGNUP=true          # الإنتاج أيضًا true: التسجيل مجاني ومفتوح
+CLIENT_KDF_REQUIRED=true          # الإنتاج: true (لا مسار كلمة مرور خام)
+CLIENT_KDF_ITERATIONS=600000      # الإنتاج: 600000
 ALLOW_UNREVIEWED_CONTENT=false
 ENVIRONMENT=development
 APP_ORIGIN=http://localhost:5173
@@ -46,5 +51,6 @@ APP_ORIGIN=http://localhost:5173
 1. لا سر في كود الواجهة. لا `import.meta.env.VITE_*` لأي سر (القيم التي تُبنى في العميل **عامة**).
 2. `VITE_*` مسموح فقط لـ: `VITE_APP_ORIGIN`, `VITE_MEDIA_ORIGIN`, `VITE_FEATURE_FLAGS` (عامة بطبيعتها).
 3. مفاتيح مختلفة لكل بيئة؛ لا إعادة استخدام مفتاح production في staging.
-4. تدوير `PASSWORD_PEPPER` **يُبطل كل كلمات المرور القائمة** (لا يمكن إعادة تجزئتها بلا كلمة المرور الأصلية) — التدوير يحتاج إعادة تعيين عبر Google أو كلمة مرور جديدة؛ لا يُدوَّر بلا خطة ترحيل.
+4. تدوير `PASSWORD_PEPPER` **يُبطل كل كلمات المرور القائمة** — وأشد في v2: الملح الحتمي نفسه مشتق بالـpepper، فلا يمكن التحقق من أي حساب v2 بعده. لا يُدوَّر بلا مسار إعادة تعيين/ترحيل كامل مسبقًا.
+5. تغيير `CLIENT_KDF_ITERATIONS` لا يكسر الحسابات القائمة: التكرارات تُقرأ من الصف المخزَّن (`kdfv2$server$client$salt$hash`) لا من الإعداد.
 5. عند تغيّر متغير يؤثر على السلوك، يُسجَّل في `CHANGELOG.md`.

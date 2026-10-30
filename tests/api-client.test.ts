@@ -47,7 +47,7 @@ describe('عميل API — معالجة الأخطاء والجلسات', () => 
         { status: 429, headers: { 'Content-Type': 'application/json' } },
       ),
     );
-    await expect(api.login('a@b.com', 'whatever12')).rejects.toMatchObject({
+    await expect(api.login('a@b.com', { derivedKey: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' })).rejects.toMatchObject({
       status: 429,
       code: 'RATE_LIMITED',
     });

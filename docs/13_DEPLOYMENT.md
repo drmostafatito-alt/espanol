@@ -12,6 +12,29 @@
 | نطاق (domain) | ❌ | يُستخدم للنطاق المخصص للوسائط |
 | مزود بريد | ❌ | اختياري للنسخة الأولى (يُعلن غير مفعّل) |
 
+## 1.1 التحقق من إعداد KDF قبل النشر (إلزامي)
+
+```bash
+node tools/check-deploy-ready.mjs --file wrangler.production.toml
+```
+
+المتوقع: `PASS` مع **0 أخطاء · 0 حواجز · 0 تنبيهات**. الشرط الذي يفحصه صريحًا:
+
+| الشرط | القيمة المطلوبة | لماذا |
+| --- | --- | --- |
+| `ALLOW_PUBLIC_SIGNUP` | `"true"` | التسجيل العام مجاني ومفتوح (قرار 2026-10-30) |
+| `CLIENT_KDF_REQUIRED` | `"true"` | بدونها يقبل الخادم كلمة مرور خامًا على 30k فقط (5% من OWASP) |
+| `CLIENT_KDF_ITERATIONS` | `≥ 600000` | متطلب OWASP. أقل من ذلك مع تسجيل مفتوح = **خطأ مانع** لا تنازل |
+| `PBKDF2_ITERATIONS` | `≥ 20000` (الفعلي `30000`) | حدّ الخطة المجانية: 30k ≈ 5ms داخل 10ms |
+
+بعد النشر، تحقّق يدوي واحد (بلا أسرار في المخرجات):
+
+```bash
+curl -s -X POST https://<origin>/api/auth/kdf-params -H 'content-type: application/json' \
+  -d '{"email":"probe@example.com"}'   # يجب: 200 + iterations=600000 + cache-control: no-store
+```
+
+
 ## 2. البنية المستهدفة
 
 ```
