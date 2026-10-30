@@ -2143,6 +2143,52 @@
         "vocab:cv-alphabet-exp-n-z#vinícola",
         "vocab:cv-alphabet-exp-n-z#vocacional"
       ]
+    },
+    "tpl-b1-alpha-bm-1": {
+      "appliedAt": "2026-10-30",
+      "entries": 40,
+      "itemIds": [
+        "vocab:cv-alphabet-exp-b-m#bajamar",
+        "vocab:cv-alphabet-exp-b-m#balanza de precisión",
+        "vocab:cv-alphabet-exp-b-m#balazo",
+        "vocab:cv-alphabet-exp-b-m#bamboleo",
+        "vocab:cv-alphabet-exp-b-m#bandolero",
+        "vocab:cv-alphabet-exp-b-m#barítono solista",
+        "vocab:cv-alphabet-exp-b-m#baronesa",
+        "vocab:cv-alphabet-exp-b-m#barricada",
+        "vocab:cv-alphabet-exp-b-m#basculante",
+        "vocab:cv-alphabet-exp-b-m#bastón de mando",
+        "vocab:cv-alphabet-exp-b-m#benévolo",
+        "vocab:cv-alphabet-exp-b-m#bienal",
+        "vocab:cv-alphabet-exp-b-m#bienhechor",
+        "vocab:cv-alphabet-exp-b-m#bifurcación del camino",
+        "vocab:cv-alphabet-exp-b-m#bilingüismo",
+        "vocab:cv-alphabet-exp-b-m#biografía no autorizada",
+        "vocab:cv-alphabet-exp-b-m#bisturí quirúrgico",
+        "vocab:cv-alphabet-exp-b-m#bitácora de navegación",
+        "vocab:cv-alphabet-exp-b-m#blancura",
+        "vocab:cv-alphabet-exp-b-m#blandura",
+        "vocab:cv-alphabet-exp-b-m#blindaje de acero",
+        "vocab:cv-alphabet-exp-b-m#bocanada de aire",
+        "vocab:cv-alphabet-exp-b-m#boicot comercial",
+        "vocab:cv-alphabet-exp-b-m#bomba atómica",
+        "vocab:cv-alphabet-exp-b-m#bordo del barco",
+        "vocab:cv-alphabet-exp-b-m#borrasca invernal",
+        "vocab:cv-alphabet-exp-b-m#botín de guerra",
+        "vocab:cv-alphabet-exp-b-m#bóveda celeste",
+        "vocab:cv-alphabet-exp-b-m#brasero de cisco",
+        "vocab:cv-alphabet-exp-b-m#bravura",
+        "vocab:cv-alphabet-exp-b-m#brecha digital",
+        "vocab:cv-alphabet-exp-b-m#brida de caballo",
+        "vocab:cv-alphabet-exp-b-m#brigada de bomberos",
+        "vocab:cv-alphabet-exp-b-m#brizna de hierba",
+        "vocab:cv-alphabet-exp-b-m#brujería",
+        "vocab:cv-alphabet-exp-b-m#bruma matinal",
+        "vocab:cv-alphabet-exp-b-m#bucle infinito",
+        "vocab:cv-alphabet-exp-b-m#bufón de la corte",
+        "vocab:cv-alphabet-exp-b-m#cabeceo",
+        "vocab:cv-alphabet-exp-b-m#cacería en el monte"
+      ]
     }
   },
   "fields": [
@@ -41757,6 +41803,966 @@
           "path": "senses.0.exampleArEg",
           "before": null,
           "after": "اختار كورس مهني في الميكانيكا كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bajamar",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bajamar",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bajamar resulta muy común en el entorno cotidiano.",
+          "after": "La bajamar dejó al descubierto las rocas."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الجزر البحر وانحسار الماء شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "كشف الجزر الصخور."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "الجزر كشف الصخور اللي كانت مغطية بالميّة."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#balanza de precisión",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "balanza de precisión",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La balanza de precisión resulta muy común en el entorno cotidiano.",
+          "after": "Pesaron la muestra en una balanza de precisión."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الميزان صيدلي دقيق وحساس شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "وزنوا العينة في ميزان دقيق."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "وزنوا العينة على ميزان دقيق جدًا كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#balazo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "balazo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El balazo resulta muy común en el entorno cotidiano.",
+          "after": "El balazo rozó el hombro del guardia."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الطلقة نارية وجرح رصاصة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "خدشت الطلقة كتف الحارس."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "الرصاصة خدشت كتف الخفير كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bamboleo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bamboleo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bamboleo resulta muy común en el entorno cotidiano.",
+          "after": "El bamboleo del barco mareó a los pasajeros."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد التأرجح وتمايل يمنة ويسرة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أصاب تمايل السفينة الركاب بالدوار."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "مرجحة المركب دوّخت الركاب خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bandolero",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bandolero",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bandolero resulta muy común en el entorno cotidiano.",
+          "after": "El bandolero asaltaba caminos en la sierra."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد القاطع طريق مسلح بالأندلس شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "كان قاطع الطريق يسطو على الدروب في الجبل."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "قاطع الطريق كان بيقطع على الناس في الجبل."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#barítono solista",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "barítono solista",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El barítono solista resulta muy común en el entorno cotidiano.",
+          "after": "El barítono solista abrió el concierto."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المنشد جهير بصوت رجالي دافئ شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "افتتح منشد الباريتون الحفل."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "مغني الباريتون بدأ الحفلة كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#baronesa",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "baronesa",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La baronesa resulta muy común en el entorno cotidiano.",
+          "after": "La baronesa donó su colección al museo."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد البارونة ونبيلة رفيعة المقام شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تبرعت البارونة بمجموعتها للمتحف."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "البارونة اتبرعت بمجموعتها للمتحف كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#barricada",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "barricada",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La barricada resulta muy común en el entorno cotidiano.",
+          "after": "Los vecinos levantaron una barricada en la calle."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المتراس وحاجز شارع دفاعي شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أقام السكان متراسًا في الشارع."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "أهل الحتة عملوا متراس في الشارع كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#basculante",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "basculante",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "Este rasgo resulta muy basculante en muchas situaciones reales.",
+          "after": "El camión basculante descargó la arena."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يبدو هذا الأمر قلاب ومائل بحركة محورية جداً في مواقف واقعية كثيرة.",
+          "after": "أفرغت الشاحنة القلابة الرمل."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "عربية النقل القلابة فرّغت الرمل خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bastón de mando",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bastón de mando",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bastón de mando resulta muy común en el entorno cotidiano.",
+          "after": "El alcalde recibió el bastón de mando."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد العصا السلطة والوجاهة الرسمية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تسلّم رئيس البلدية عصا السلطة."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "المحافظ استلم عصاية الرياسة دي."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#benévolo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "benévolo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "Este rasgo resulta muy benévolo en muchas situaciones reales.",
+          "after": "Es un jefe benévolo con los nuevos."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يبدو هذا الأمر حنون وعطوف وسمح المعاملة جداً في مواقف واقعية كثيرة.",
+          "after": "هو رئيس متسامح مع الجدد."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "هو مدير طيب وحنين على الناس الجداد خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bienal",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bienal",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bienal resulta muy común en el entorno cotidiano.",
+          "after": "La bienal de arte abre en marzo."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المعرض فني يقام كل عامين شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "يفتح بينالي الفنون في مارس."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "بينالي الفنون بيفتح في مارس."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bienhechor",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bienhechor",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bienhechor resulta muy común en el entorno cotidiano.",
+          "after": "Un bienhechor anónimo pagó las obras."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الفاعل خير ومحسن كريم شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "دفع محسن مجهول تكاليف الأعمال."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "فاعل خير من غير اسم دفع تكاليف الشغل كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bifurcación del camino",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bifurcación del camino",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bifurcación del camino resulta muy común en el entorno cotidiano.",
+          "after": "En la bifurcación del camino tomamos la izquierda."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المفترق طريقين وتشعب المسار شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "عند مفترق الطريق أخذنا اليسار."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "عند مفترق الطريق خدنا شمال كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bilingüismo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bilingüismo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bilingüismo resulta muy común en el entorno cotidiano.",
+          "after": "El bilingüismo facilita encontrar trabajo."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الثنائية لغوية وإتقان لسانين شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تسهّل ثنائية اللغة إيجاد العمل."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "إتقان لغتين بيسهّل تلاقي شغل."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#biografía no autorizada",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "biografía no autorizada",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La biografía no autorizada resulta muy común en el entorno cotidiano.",
+          "after": "Leyó una biografía no autorizada del cantante."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد السيرة حياة غير رسمية لشخصية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "قرأ سيرة غير رسمية للمغني."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "قرا سيرة من غير إذن عن المطرب كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bisturí quirúrgico",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bisturí quirúrgico",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bisturí quirúrgico resulta muy común en el entorno cotidiano.",
+          "after": "El bisturí quirúrgico debe estar estéril."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المشرط جراحي حاد ومعقم شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "يجب أن يكون المشرط الجراحي معقمًا."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "المشرط لازم يكون معقم خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bitácora de navegación",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bitácora de navegación",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bitácora de navegación resulta muy común en el entorno cotidiano.",
+          "after": "El capitán anotó la tormenta en la bitácora de navegación."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد السجل يوميات القبطان بالسفينة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "سجّل القبطان العاصفة في سجل الملاحة."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "القبطان كتب العاصفة في سجل الملاحة بتاعه."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#blancura",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "blancura",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La blancura resulta muy común en el entorno cotidiano.",
+          "after": "La blancura de la nieve cegaba."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد البياض ناصع ونقاء اللون شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "كان بياض الثلج يعمي البصر."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "بياض التلج كان بيعمي العين."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#blandura",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "blandura",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La blandura resulta muy común en el entorno cotidiano.",
+          "after": "La blandura del colchón le molesta."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الليونة وطراوة في الملمس شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تضايقه طراوة الفراش."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "طراوة المرتبة بتضايقه."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#blindaje de acero",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "blindaje de acero",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El blindaje de acero resulta muy común en el entorno cotidiano.",
+          "after": "El blindaje de acero detuvo el proyectil."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد التصفيح ودروع فولاذية واقية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أوقف التدريع الفولاذي المقذوف."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "التصفيح الحديد وقّف الرصاصة كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bocanada de aire",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bocanada de aire",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bocanada de aire resulta muy común en el entorno cotidiano.",
+          "after": "Abrió la ventana para tomar una bocanada de aire."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الجرعة هواء وشهيق عميق شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "فتح النافذة ليأخذ شهيقًا من الهواء."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "فتح الشباك عشان ياخد نفس هوا نضيف."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#boicot comercial",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "boicot comercial",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El boicot comercial resulta muy común en el entorno cotidiano.",
+          "after": "El boicot comercial afectó las ventas."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المقاطعة بضائع وسلع احتجاجاً شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أثرت المقاطعة التجارية على المبيعات."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "المقاطعة التجارية أثرت على البيع خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bomba atómica",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bomba atómica",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bomba atómica resulta muy común en el entorno cotidiano.",
+          "after": "La bomba atómica cambió la historia."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد القنبلة نووية مدمرة وذرية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "غيّرت القنبلة الذرية التاريخ."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "القنبلة الذرية قلبت الدنيا وغيرت مسار التاريخ."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bordo del barco",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bordo del barco",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bordo del barco resulta muy común en el entorno cotidiano.",
+          "after": "Los marineros limpiaron el bordo del barco."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الجانب وظاهر ظهر السفينة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "نظّف البحارة جانب السفينة."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "البحارة نضفوا جانب المركب كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#borrasca invernal",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "borrasca invernal",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La borrasca invernal resulta muy común en el entorno cotidiano.",
+          "after": "Una borrasca invernal cerró los puertos."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المنخفض جوي عاصف بالأمطار شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أغلقت عاصفة شتوية الموانئ."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "نوة شتا قفلت المواني خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#botín de guerra",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "botín de guerra",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El botín de guerra resulta muy común en el entorno cotidiano.",
+          "after": "El botín de guerra se expone en el museo."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الغنائم وأسلاب المعركة الظافرة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تُعرض غنائم الحرب في المتحف."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "غنايم الحرب معروضة في المتحف ده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bóveda celeste",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bóveda celeste",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bóveda celeste resulta muy común en el entorno cotidiano.",
+          "after": "Las estrellas brillan en la bóveda celeste."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد القبة السماء الزرقاء اللانهائية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تلمع النجوم في قبة السماء."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "النجوم بتلمع في قبة السما."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brasero de cisco",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brasero de cisco",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El brasero de cisco resulta muy común en el entorno cotidiano.",
+          "after": "Se calentaban junto al brasero de cisco."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الموقد جمر تدفئة تقليدي بالنحاس شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "كانوا يتدفّئون بجانب موقد الجمر."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "كانوا بيدفوا جنب منقلة الفحم."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bravura",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bravura",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bravura resulta muy común en el entorno cotidiano.",
+          "after": "El torero mostró bravura ante el animal."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد البسالة وشجاعة نادرة في الميدان شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أظهر مصارع الثيران بسالة أمام الحيوان."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "مصارع الثيران ورّى شجاعة قدام الحيوان كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brecha digital",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brecha digital",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La brecha digital resulta muy común en el entorno cotidiano.",
+          "after": "La brecha digital separa a jóvenes y mayores."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الفجوة وهوة رقمية بين الأجيال شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تفصل الفجوة الرقمية بين الشباب والكبار."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "الفجوة الرقمية بتفرّق بين الشباب والكبار."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brida de caballo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brida de caballo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La brida de caballo resulta muy común en el entorno cotidiano.",
+          "after": "Aflojó la brida de caballo para beber."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد اللجام ورسن الحصان لتوجيهه شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أرخى لجام الحصان ليشرب."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "رخّى لجام الحصان عشان يشرب."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brigada de bomberos",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brigada de bomberos",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La brigada de bomberos resulta muy común en el entorno cotidiano.",
+          "after": "La brigada de bomberos llegó en cinco minutos."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الفرقة ولواء إطفائيين للإنقاذ شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "وصلت فرقة الإطفاء في خمس دقائق."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "فرقة المطافي وصلت في خمس دقايق كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brizna de hierba",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brizna de hierba",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La brizna de hierba resulta muy común en el entorno cotidiano.",
+          "after": "Ni una brizna de hierba crecía allí."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد القشة وورقة عشب خضراء رقيقة شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "لم تنمُ هناك ورقة عشب واحدة."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "ولا عود عشب واحد مكنش بيطلع هناك."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#brujería",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "brujería",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La brujería resulta muy común en el entorno cotidiano.",
+          "after": "La brujería aparece en muchas leyendas."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الشعوذة وطقوس سحر خرافية شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "تظهر الشعوذة في أساطير كثيرة."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "السحر والدجل بيظهروا في حكايات كتير."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bruma matinal",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bruma matinal",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La bruma matinal resulta muy común en el entorno cotidiano.",
+          "after": "La bruma matinal cubría el valle."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الشابورة وضباب صباحي رطب شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "غطّت شابورة الصباح الوادي."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "شبورة الصبح غطّت الوادي خالص."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bucle infinito",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bucle infinito",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bucle infinito resulta muy común en el entorno cotidiano.",
+          "after": "El programa entró en un bucle infinito."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الحلقة تكرار لا نهائية بالكود شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "دخل البرنامج في حلقة لا نهائية."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "البرنامج دخل في لوب مبيخلصش."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#bufón de la corte",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "bufón de la corte",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El bufón de la corte resulta muy común en el entorno cotidiano.",
+          "after": "El bufón de la corte entretenía al rey."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد المهرج البلاط الملكي المضحك شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "كان مهرج البلاط يسلّي الملك."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "مهرج البلاط كان بيسلّي الملك."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#cabeceo",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "cabeceo",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "El cabeceo resulta muy común en el entorno cotidiano.",
+          "after": "El cabeceo del pasajero despertó risas."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد التأرجح وضرب بالرأس / نعاس شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "أثار تمايل الراكب الضحك."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "تمايل راس الراكب ضحّك الناس كده."
+        }
+      ]
+    },
+    {
+      "batch": "tpl-b1-alpha-bm-1",
+      "itemId": "vocab:cv-alphabet-exp-b-m#cacería en el monte",
+      "bundle": "cv-alphabet-exp-b-m",
+      "headword": "cacería en el monte",
+      "level": "B1",
+      "changes": [
+        {
+          "path": "senses.0.exampleEs",
+          "before": "La cacería en el monte resulta muy común en el entorno cotidiano.",
+          "after": "Organizaron una cacería en el monte."
+        },
+        {
+          "path": "senses.0.exampleAr",
+          "before": "يعد الرحلة صيد بري للطرائد شائعاً جداً في الحياة اليومية والبيئة المحيطة.",
+          "after": "نظّموا رحلة صيد في الجبل."
+        },
+        {
+          "path": "senses.0.exampleArEg",
+          "before": null,
+          "after": "نظّموا طلعة صيد في الجبل كده."
         }
       ]
     }
