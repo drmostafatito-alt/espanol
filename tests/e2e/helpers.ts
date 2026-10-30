@@ -55,9 +55,27 @@ async function clearRateLimits() {
   );
 }
 
+/**
+ * يحسب المفتاح المشتق كما يفعل المتصفح (WebCrypto، PBKDF2-SHA256) على الملح
+ * الحتمي الذي يقدّمه الخادم. لا تُرسل كلمة المرور إلى الخادم في المسار v2.
+ */
+export async function clientCredential(page: Page, email: string, password: string): Promise<Record<string, string>> {
+  const res = await page.context().request.post('/api/auth/kdf-params', { data: { email } });
+  expect(res.status(), 'kdf-params فشل').toBe(200);
+  const { salt, iterations } = (await res.json()) as { salt: string; iterations: number };
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
+  const bits = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', salt: Buffer.from(salt.replace(/-/g, '+').replace(/_/g, '/'), 'base64'), iterations, hash: 'SHA-256' },
+    key,
+    256,
+  );
+  return { derivedKey: Buffer.from(new Uint8Array(bits)).toString('base64url') };
+}
+
 export async function signupThroughApi(page: Page, email: string, password = 'E2eLearn2026x') {
+  const credential = await clientCredential(page, email, password);
   const attempt = () =>
-    page.context().request.post('/api/auth/signup', { data: { email, password, displayName: 'متعلم اختبار' } });
+    page.context().request.post('/api/auth/signup', { data: { email, ...credential, displayName: 'متعلم اختبار' } });
 
   let res = await attempt();
   if (res.status() === 429) {
