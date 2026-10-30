@@ -39,8 +39,10 @@ npx wrangler d1 migrations apply es-ar-staging --remote
 npm run seed:reference -- --env staging
 npm run admin:create -- --env staging --email <owner-email>   # لا كلمة مرور في المستودع
 
-# 5) أسرار
-npx wrangler secret put SESSION_PEPPER --env staging
+# 5) أسرار (الأسماء كما يقرأها الكود فعليًا — لا SESSION_PEPPER)
+#    PASSWORD_PEPPER: إلزامي، ≥32 محرفًا عشوائيًا. بدونه كل مسار مصادقة يعيد 503.
+npx wrangler secret put PASSWORD_PEPPER --env staging
+npx wrangler secret put GOOGLE_CLIENT_SECRET --env staging   # لتفعيل الدخول عبر Google
 npx wrangler secret put VAPID_PRIVATE_KEY --env staging      # عند تفعيل Push
 
 # 6) نشر
@@ -52,7 +54,8 @@ npx wrangler deploy --env staging
 
 - [ ] `node tools/check-sql.mjs` PASS
 - [ ] `node tools/validate-content.mjs` PASS (0 أخطاء)
-- [ ] `npm run deploy:preflight` **(إلزامي)** — على `wrangler.toml` الملتزَم (إعداد تطوير) يجب أن يعطي `FAIL` (كود خروج 1): هذا هو سلوكه الصحيح، فهو يرفض نشر إعداد التطوير. `PASS` (0) مطلوب فقط عند فحص ملف/قسم إنتاج حقيقي.
+- [ ] `node tools/check-deploy-ready.mjs --file wrangler.production.toml` **(إلزامي — PASS مطلوب على ملف الإنتاج)**
+- [ ] `npm run deploy:preflight` (على `wrangler.toml` التطويري) — على `wrangler.toml` الملتزَم (إعداد تطوير) يجب أن يعطي `FAIL` (كود خروج 1): هذا هو سلوكه الصحيح، فهو يرفض نشر إعداد التطوير. `PASS` (0) مطلوب فقط عند فحص ملف/قسم إنتاج حقيقي.
   - يقرأ قسم المتغيّرات تلقائيًا: `[env.production.vars]` إن وُجد، وإلا `[vars]`. لبيئة أخرى: `--env staging`.
 - [ ] `npm run test` + `node tools/smoke-worker.mjs` + `test:e2e` كلها خضراء
 - [ ] المراجعة البشرية: 100% من الدروس المنشورة لها سجلا مراجعة

@@ -1,12 +1,11 @@
-# إعداد الإنتاج المجاني — ملف مستقل عن wrangler.toml (ملف التطوير الملتزَم).
-# لا يُقرأ تلقائيًا: النشر به يتطلب أمرًا صريحًا:
-#   npx wrangler deploy --config wrangler.production.toml
-# وفحص الجاهزية به:
-#   node tools/check-deploy-ready.mjs --file wrangler.production.toml
-# (بدون --env: البوابة تقرأ قسم [vars] في هذا الملف.)
-# لا أسرار في هذا الملف أبدًا. القيم الناقصة مُحذوفة عمدًا لا مُخترعة،
-# فتفشل البوابة بصدق (APP_ORIGIN_MISSING وD1_ID_MISSING) حتى يضيفها المالك.
-# راجع القائمة الدقيقة للقيم وطريقة الحصول عليها في docs/28_LAUNCH_RUNBOOK.md.
+# إعداد الإنتاج — Español بالعربي
+#
+# ملف مستقل عن wrangler.toml (ملف التطوير الملتزَم)، ولا يُقرأ تلقائيًا:
+#   نشر:  npx wrangler deploy --config wrangler.production.toml
+#   فحص:  node tools/check-deploy-ready.mjs --file wrangler.production.toml
+#
+# لا أسرار في هذا الملف أبدًا. الأسرار تُضبط بأمر واحد لكل سر (انظر §الأسرار أدناه).
+# كل قيمة هنا موجودة فعليًا في إعداد المشروع؛ لا معرّفات ولا نطاقات مُختلَقة.
 
 name = "learn"
 main = "src/worker/index.ts"
@@ -23,32 +22,41 @@ run_worker_first = true
 [[d1_databases]]
 binding = "DB"
 database_name = "es-ar-prod"
+# معرّف قاعدة الإنتاج كما هو في حساب المالك. لا يُعاد توليده ولا يُخترع.
 database_id = "010988b9-2e64-4bfd-bb41-5ceacd0dba86"
-# database_id: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء قاعدة الإنتاج بأمر
-# wrangler d1 create (انظر الـrunbook)، ثم يُلصق المعرّف الحقيقي كما يظهر في
-# لوحة Cloudflare أو في مخرجات الأمر. لا تضع معرّفًا وهميًا ولا أصفارًا.
 
 [vars]
 ENVIRONMENT = "production"
+# النطاق الفعلي على workers.dev (مجاني، بلا دومين مخصص). الكوكي يصبح __Host-ses
+# وSecure تلقائيًا لأن الأصل https، والتحقق من Origin يقبل هذا الأصل وحده.
 APP_ORIGIN = "https://learn.espanol-balarabi.workers.dev"
+
+# معرّف عميل Google OAuth — **عام** ليس سرًا (السر هو GOOGLE_CLIENT_SECRET).
+# بدونه يُغلق مسار Google فشلًا مغلقًا برسالة عامة، ولا يُنشأ أي مستخدم جديد.
 GOOGLE_CLIENT_ID = "446561850098-ejol9v5jqjkg2fqes4vsr5cgian7prl7.apps.googleusercontent.com"
-# APP_ORIGIN: لا يوجد سطر هنا عمدًا. بعد اختيار النطاق (workers.dev مجاني أو
-# دومين خاص) يُضاف سطر واحد بالأصل الوحيد بصيغة HTTPS، مثال:
-# النطاق الكامل فقط، بلا مسار زائد وبلا أصول محلية مختلطة — الاختلاط يعطّل
-# كوكي __Host- وSecure وHSTS بصمت (انظر src/worker/lib/http.ts).
-# MEDIA_ORIGIN: غير مستهلَك من الـWorker (مُعلن في الأنواع فقط)، ومتغيّر
-# البناء VITE_MEDIA_ORIGIN غير مضبوط أصلًا، وكل مفاتيح الصوت pending
-# فيُغطّيها TTS المتصفح. لا سطر له هنا؛ ليس حاجب إطلاق.
-# GOOGLE_CLIENT_ID: لا يوجد سطر هنا عمدًا. يُضاف بعد إنشاء عميل Google OAuth
-# (انظر الـrunbook)؛ وبدونه يفشل مسار Google مغلقًا برسالة عامة دون كشف.
-ALLOW_PUBLIC_SIGNUP = "true"
-# حد الخطة المجانية 10ms CPU ⇒ 30k أقصى ما يمكن مع هامش (قياس workerd الفعلي
-# في reports/kdf-benchmark.md). هذا حدّ منصة لا اختيار تصميمي، ويبقى حاجب
-# KDF_BELOW_OWASP قائمًا لمسار كلمات المرور؛ مستخدمو Google الجدد غير متأثرين.
+
+# ⛔ بوابة التسجيل بالبريد وكلمة المرور — **مغلقة في الإنتاج، وهذا قرار أمني لا عيب**.
+# السبب: PBKDF2 على خطة Workers المجانية محدود بـ30,000 تكرار (5% من متطلب OWASP
+# 600,000) لأن حد الخطة 10ms CPU لكل طلب. فتح تسجيل عام بكلمة مرور بهذه القوة
+# يُنشئ دَينًا أمنيًا جماعيًا؛ ولهذا يمنعه tools/check-deploy-ready.mjs **خطأً** لا حاجزًا.
+# المستخدمون الجدد يدخلون عبر Google (بلا كلمة مرور محلية أصلًا).
+#
+# لفتح التسجيل بالبريد لاحقًا (طريق واحد فقط من اثنين، لا ثالث):
+#   1) خطة Workers المدفوعة (5 دولار/شهر): PBKDF2_ITERATIONS = "600000"
+#      ثم ALLOW_PUBLIC_SIGNUP = "true" — الترقية تلقائية عند أول دخول ناجح لكل حساب.
+#   2) مزوّد هوية خارجي مجاني (Firebase Auth / Supabase Auth) يتولى تجزئة كلمات
+#      المرور، ويبقى هذا الـWorker يتحقق من التوكن فقط — يحتاج مشروعًا ومفاتيح من المالك.
+ALLOW_PUBLIC_SIGNUP = "false"
+
+# قياس workerd الفعلي (reports/kdf-benchmark.md، 2026-10-30): 30k ≈ 5ms، 600k ≈ 94ms،
+# وميزانية الخطة المجانية 10ms CPU/طلب. القيمة هنا هي أقصى ما يدخل الميزانية بهامش،
+# وتبقى للحسابات القائمة فقط. التنازل مسجَّل في docs/risk-acceptances.json (مؤقت).
 PBKDF2_ITERATIONS = "30000"
+
 SESSION_TTL_DAYS = "30"
 
-# الأسرار (لا تُكتب هنا ولا في أي ملف ولا في Git ولا في المحادثة):
-# - PASSWORD_PEPPER: إلزامي، 32 حرفًا على الأقل، ويُضبط فقط عبر أمر الأسرار
-#   الآمن في Cloudflare (انظر الـrunbook) — بدونه يفشل المصادقة مغلقًا.
-# - GOOGLE_CLIENT_SECRET: يُضبط بالآلية نفسها فقط، ولا يُرسل في المحادثة أبدًا.
+# --- الأسرار (لا تُكتب هنا ولا في أي ملف ولا في Git ولا في المحادثة) -------------
+#   npx wrangler secret put PASSWORD_PEPPER --config wrangler.production.toml
+#       إلزامي، ≥32 حرفًا عشوائيًا. بدونه يفشل كل مسار مصادقة بـ503 (فشل مغلق).
+#   npx wrangler secret put GOOGLE_CLIENT_SECRET --config wrangler.production.toml
+#       إلزامي لتفعيل الدخول عبر Google. تبادل الكود على الخادم فقط.

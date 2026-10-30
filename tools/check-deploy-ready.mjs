@@ -14,6 +14,13 @@
  *   node tools/check-deploy-ready.mjs --file wrangler.toml --env production
  *   node tools/check-deploy-ready.mjs --json
  *
+ * 2026-10-30 (قرار قوة الاشتقاق): صار الحاجز مقيَّدًا بالحالة الفعلية للتعرّض:
+ *   - تسجيل عام مفتوح + تكرارات < 600,000 ⇒ **خطأ** يمنع النشر (لا «حاجز» قابل للتجاوز).
+ *   - تسجيل عام مغلق + تكرارات < 600,000 ⇒ حاجز يبقى قائمًا إلا إذا سُجّل **قبول مخاطرة**
+ *     صريح مطابق النطاق في docs/risk-acceptances.json، عندئذٍ يظهر كتنبيه WAIVED
+ *     بمعرّفه وتاريخ انتهائه (لا يختفي، ولا يُدّعى أنه مطابق لـOWASP).
+ *   - تسجيل عام مفتوح + تكرارات ≥ 600,000 ⇒ يمرّ (خطة Workers المدفوعة).
+ *
  * قسم المتغيّرات: يُقرأ [env.<name>.vars] عند تمرير --env، وإلا [env.production.vars] إن وُجد،
  * وإلا [vars]. مع --env صريح لا تراجع إلى [vars] التطويري بالصمت.
  *
@@ -40,8 +47,26 @@ const blockers = [];
 const warnings = [];
 
 const err = (code, msg, fix) => errors.push({ code, msg, fix });
-const block = (code, msg, fix) => blockers.push({ code, msg, fix });
+const block = (code, msg, fix, meta = {}) => blockers.push({ code, msg, fix, ...meta });
 const warn = (code, msg, fix) => warnings.push({ code, msg, fix });
+
+/**
+ * قبولات المخاطرة المسجّلة: قائمة صريحة (لا استنتاج) بتوقيع المالك وتاريخ انتهاء
+ * ونطاق مطابقة. لا تُلغي شرطًا أمنيًا، بل تسجّل تنازلًا معلنًا يمكن حذفه فيرتد
+ * الحاجز فورًا. ملف غائب أو تالف ⇒ لا قبول ⇒ الحواجز تبقى كما هي.
+ */
+const ACCEPTANCES_PATH = join(ROOT, 'docs/risk-acceptances.json');
+const ACCEPTANCE_GRACE_DAYS = 0;
+let acceptances = [];
+let acceptancesError = null;
+try {
+  if (existsSync(ACCEPTANCES_PATH)) {
+    const doc = JSON.parse(readFileSync(ACCEPTANCES_PATH, 'utf8'));
+    acceptances = Array.isArray(doc.acceptances) ? doc.acceptances : [];
+  }
+} catch (e) {
+  acceptancesError = String(e && e.message ? e.message : e);
+}
 /** قسم المتغيّرات الذي قُرئ فعلًا — يُذكر في التقرير ليعرف المستخدم أي قيم فُحصت. */
 let usedSection = null;
 
@@ -103,15 +128,22 @@ if (!existsSync(abs)) {
     if (origins.some(o => o !== 'https' && !o.startsWith('https://'))) {
       warn('APP_ORIGIN_INSECURE', 'توجد أصول بلا HTTPS — الكوكي لن يأخذ __Host- ولن يُضاف Secure.', 'استخدم https:// فقط في الإنتاج.');
     }
+    if (origins.some(o => /example\.(com|org|net)|REPLACE|your-domain|<|>/.test(o))) {
+      err('APP_ORIGIN_PLACEHOLDER', `APP_ORIGIN تحتوي قيمة قالب لا نطاقًا حقيقيًا: ${appOrigin}`, 'ضع النطاق الحقيقي بعد شرائه/تسميته.');
+    }
   }
 
-  // 3) بوابة التسجيل العام
+  // 3) بوابة التسجيل العام — التعرّض الفعلي هو ما يحدّد الشدّة
   const signup = getVar('ALLOW_PUBLIC_SIGNUP');
-  if (signup === 'true') {
-    block(
-      'PUBLIC_SIGNUP_OPEN',
-      'ALLOW_PUBLIC_SIGNUP="true" — التسجيل العام مفتوح مع PBKDF2 بـ30k (5% من متطلب OWASP).',
-      'اجعلها "false" حتى يُعتمد قرار قوة الاشتقاق (docs/SECURITY_BLOCKERS.md §1).',
+  const iterations = Number(getVar('PBKDF2_ITERATIONS') ?? 0);
+  const kdfMeetsOwasp = iterations >= 600000;
+  if (signup === 'true' && !kdfMeetsOwasp) {
+    // أخطر تركيبة: حسابات عامة بلا حد معدل كافٍ وتجزئة ضعيفة. هذه ليست «قرار مالك»
+    // بل عيب إعداد يجب أن يفشل به النشر، لا أن يُتجاوَز بكود خروج 2.
+    err(
+      'PUBLIC_SIGNUP_WEAK_KDF',
+      `ALLOW_PUBLIC_SIGNUP="true" مع PBKDF2 = ${iterations || 'غير محدد'} < 600,000 — تسجيل عام بتجزئة أضعف من متطلب OWASP.`,
+      'إمّا PBKDF2_ITERATIONS="600000" على خطة Workers المدفوعة، أو ALLOW_PUBLIC_SIGNUP="false" (الدخول عبر Google للمستخدمين الجدد).',
     );
   } else if (signup === undefined) {
     // الكود يفشل مغلقًا الآن، فلا خطر فتح — لكن الإعداد يجب أن يكون صريحًا
@@ -126,12 +158,13 @@ if (!existsSync(abs)) {
     err('D1_ID_PLACEHOLDER', 'database_id ما زال معرّفًا وهميًا (أصفار).', 'ضع معرّف D1 الإنتاجي الحقيقي.');
   }
 
-  // 5) السياسة الأمنية المطلوبة
-  if (getVar('PBKDF2_ITERATIONS') && Number(getVar('PBKDF2_ITERATIONS')) < 600000) {
+  // 5) السياسة الأمنية المطلوبة — حاجز يبقى ما لم يُسجَّل قبول مخاطرة مطابق النطاق
+  if (getVar('PBKDF2_ITERATIONS') && !kdfMeetsOwasp) {
     block(
       'KDF_BELOW_OWASP',
       `PBKDF2_ITERATIONS = ${getVar('PBKDF2_ITERATIONS')} < 600,000 (متطلب OWASP).`,
       'إما خطة Workers المدفوعة (30s CPU) لرفع التكرارات، أو قبول البقاء بلا تسجيل عام (docs/SECURITY_BLOCKERS.md).',
+      { waivable: true, scope: { ENVIRONMENT: environment ?? null, ALLOW_PUBLIC_SIGNUP: signup ?? null } },
     );
   }
 
@@ -148,15 +181,44 @@ if (!existsSync(abs)) {
   if (!compat) warn('COMPAT_DATE_MISSING', 'compatibility_date غير محدد.', 'ثبّته لتجنب تغيّر سلوك workerd.');
 }
 
+/**
+ * تطبيق قبولات المخاطرة: الحاجز القابل للتنازل ينتقل إلى التنبيهات بمعرّف قبوله
+ * وتاريخ انتهائه. شروط القبول: نفس الكود، غير منتهٍ، ونطاق مطابق للقيم الفعلية.
+ */
+const appliedWaivers = [];
+if (acceptances.length) {
+  const today = new Date().toISOString().slice(0, 10);
+  for (const b of [...blockers]) {
+    if (!b.waivable) continue;
+    const hit = acceptances.find(a =>
+      a && a.risk === b.code &&
+      typeof a.expiresAt === 'string' && a.expiresAt >= today &&
+      a.scope && Object.entries(a.scope).every(([k, v]) => (b.scope?.[k] ?? null) === v));
+    if (!hit) continue;
+    blockers.splice(blockers.indexOf(b), 1);
+    appliedWaivers.push({ id: hit.id, code: b.code, expiresAt: hit.expiresAt, recordedIn: hit.recordedIn });
+    warn(
+      `WAIVED:${hit.id}`,
+      `${b.msg} — تنازل مسجَّل (${hit.id}) حتى ${hit.expiresAt}: ${hit.decision ?? ''}`.trim(),
+      'هذا تنازل معلن لا مطابقة لـOWASP. يعود الحاجز فور حذف السجل من docs/risk-acceptances.json أو انتهاء تاريخه.',
+    );
+  }
+}
+if (acceptancesError) {
+  warn('ACCEPTANCES_UNREADABLE', `تعذّرت قراءة docs/risk-acceptances.json: ${acceptancesError}`, 'لا قبولات مطبَّقة — أصلح الملف أو احذفه.');
+}
+
 const status = errors.length ? 'FAIL' : blockers.length ? 'BLOCKED' : 'PASS';
 
 if (AS_JSON) {
-  console.log(JSON.stringify({ file: TARGET, section: usedSection ?? null, status, errors, blockers, warnings }, null, 2));
+  console.log(JSON.stringify({ file: TARGET, section: usedSection ?? null, status, errors, blockers, warnings, waivers: appliedWaivers }, null, 2));
 } else {
   console.log(`# فحص الجاهزية للنشر — ${TARGET}${usedSection ? ` (قسم المتغيّرات: [${usedSection}])` : ''}\n`);
   console.log(`- أخطاء تمنع النشر: ${errors.length}`);
   console.log(`- حواجز إطلاق مفتوحة (قرار مالك): ${blockers.length}`);
-  console.log(`- تنبيهات: ${warnings.length}\n`);
+  console.log(`- تنبيهات: ${warnings.length}`);
+  if (appliedWaivers.length) console.log(`- تنازلات مسجَّلة (مخاطرة مقبولة صراحةً): ${appliedWaivers.length}`);
+  console.log('');
 
   const section = (title, list, icon) => {
     if (!list.length) return;

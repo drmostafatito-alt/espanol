@@ -22,7 +22,7 @@
 
 | الاسم | الغرض | إلزامي؟ |
 | --- | --- | --- |
-| `SESSION_PEPPER` | إضافة سرية إلى تجزئة كلمة المرور (حماية من هجوم قاموس على قاعدة مسروقة) | **نعم** |
+| `PASSWORD_PEPPER` | إضافة سرية إلى تجزئة كلمة المرور (حماية من هجوم قاموس على قاعدة مسروقة). **هذا هو الاسم الذي يقرأه الكود**؛ `SESSION_PEPPER` اسم قديم في وثائق سابقة ولا أثر له — ضبطه لا يفعّل شيئًا ويترك المصادقة معطَّلة (503). | **نعم — ≥32 محرفًا عشوائيًا** |
 | `VAPID_PUBLIC_KEY` | Web Push | عند تفعيل Push |
 | `VAPID_PRIVATE_KEY` | Web Push | عند تفعيل Push |
 | `EMAIL_API_KEY` | مزود البريد | عند تفعيل البريد |
@@ -32,7 +32,9 @@
 ## 3. متغيرات تطوير محلية (`.dev.vars` — غير مُتتبَّع في Git)
 
 ```
-SESSION_PEPPER=<قيمة عشوائية 32B للـdev فقط>
+PASSWORD_PEPPER=<قيمة عشوائية 32B للـdev فقط>
+ALLOW_PUBLIC_SIGNUP=false        # الإنتاج: false دائمًا (docs/SECURITY_BLOCKERS.md)
+ALLOW_UNREVIEWED_CONTENT=false
 ENVIRONMENT=development
 APP_ORIGIN=http://localhost:5173
 ```
@@ -44,5 +46,5 @@ APP_ORIGIN=http://localhost:5173
 1. لا سر في كود الواجهة. لا `import.meta.env.VITE_*` لأي سر (القيم التي تُبنى في العميل **عامة**).
 2. `VITE_*` مسموح فقط لـ: `VITE_APP_ORIGIN`, `VITE_MEDIA_ORIGIN`, `VITE_FEATURE_FLAGS` (عامة بطبيعتها).
 3. مفاتيح مختلفة لكل بيئة؛ لا إعادة استخدام مفتاح production في staging.
-4. تدوير `SESSION_PEPPER` يُبطل كل الجلسات (خطة موثقة: تدوير مع نافذة سماح مزدوجة).
+4. تدوير `PASSWORD_PEPPER` **يُبطل كل كلمات المرور القائمة** (لا يمكن إعادة تجزئتها بلا كلمة المرور الأصلية) — التدوير يحتاج إعادة تعيين عبر Google أو كلمة مرور جديدة؛ لا يُدوَّر بلا خطة ترحيل.
 5. عند تغيّر متغير يؤثر على السلوك، يُسجَّل في `CHANGELOG.md`.

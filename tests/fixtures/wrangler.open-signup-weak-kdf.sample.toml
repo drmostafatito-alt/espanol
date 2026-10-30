@@ -1,0 +1,26 @@
+# عيّنة اختبار: تسجيل عام مفتوح + تجزئة أضعف من OWASP (يجب أن تفشل كخطأ).
+# تُستخدم في tests/deploy-preflight.test.ts لإثبات أن بوابة ما قبل النشر تمرّ على إعداد إنتاجي سليم،
+# فلا تكون بوابة ترفض كل شيء. المعرّفات وهمية وليست لأي قاعدة موجودة.
+
+name = "espanol-balarabi"
+main = "src/worker/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "es-ar-prod"
+database_id = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+
+[vars]
+ENVIRONMENT = "production"
+APP_ORIGIN = "https://learn.espanol-balarabi.workers.dev"
+MEDIA_ORIGIN = "https://learn.espanol-balarabi.workers.dev/media"
+PBKDF2_ITERATIONS = "30000"
+ALLOW_PUBLIC_SIGNUP = "true"
+SESSION_TTL_DAYS = "30"
