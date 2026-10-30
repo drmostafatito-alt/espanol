@@ -20,7 +20,6 @@ export function makeHarness(overrides: Partial<Env> = {}): Harness {
     APP_ORIGIN: 'http://localhost:5173',
     MEDIA_ORIGIN: 'http://localhost:8787/media',
     PBKDF2_ITERATIONS: '20000', // أرضية السياسة؛ القياس والقرار في reports/kdf-benchmark.md
-    CLIENT_KDF_ITERATIONS: '100000', // أرضية العميل — تسريع الاختبار فقط، الإنتاج 600,000
     SESSION_TTL_DAYS: '30',
     PASSWORD_PEPPER: 'test-pepper-0123456789abcdefghijklmnop',
     // مفتاح صريح: التسجيل مغلق افتراضيًا في الكود، فتُعلنه الاختبارات هنا بدلًا من الاعتماد على غيابه.

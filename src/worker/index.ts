@@ -8,7 +8,11 @@ import {
   HttpError, apiError, assertJsonContentType, corsHeaders, isOriginAllowed,
   json, newRequestId, readSessionToken, securityHeadersFor, isNonProductionEnv } from './lib/http';
 import { findSessionUser, getPublicSettings } from './db';
-import { adminAudit, changePassword, kdfParams, login, logout, me, oauthGoogleCallback, oauthGoogleStart, revokeAllSessions, signup, updateMe } from './routes/auth';
+import {
+  adminAudit, changePassword, confirmEmailVerification, devMailOutbox, kdfParams, login, logout, me,
+  oauthGoogleCallback, oauthGoogleStart, requestEmailVerification, requestPasswordReset, resetPassword,
+  revokeAllSessions, signup, updateMe,
+} from './routes/auth';
 import { getLesson, listPaths, reviewLesson, searchContent, setLessonPublished } from './routes/content';
 import { completeLesson, lessonSession, myProgress, startPlacementTest, submitAnswer, submitPlacementTest } from './routes/learn';
 import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
@@ -79,6 +83,12 @@ const routes: Route[] = [
   route('POST', '/api/auth/change-password', (req, env, ctx) => changePassword(req, env, ctx.requestId, ctx.user!), 'session'),
   route('POST', '/api/auth/sessions/revoke-all', (req, env, ctx) => revokeAllSessions(req, env, ctx.requestId, ctx.user!), 'session'),
   route('GET', '/api/auth/me', (req, env, ctx) => me(req, env, ctx.requestId)),
+  // تحقق البريد واستعادة كلمة المرور: رموز لمرة واحدة بانتهاء صريح
+  route('POST', '/api/auth/verify-email/request', (req, env, ctx) => requestEmailVerification(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('POST', '/api/auth/verify-email/confirm', (req, env, ctx) => confirmEmailVerification(req, env, ctx.requestId)),
+  route('POST', '/api/auth/password-reset/request', (req, env, ctx) => requestPasswordReset(req, env, ctx.requestId)),
+  route('POST', '/api/auth/password-reset/confirm', (req, env, ctx) => resetPassword(req, env, ctx.requestId)),
+  route('GET', '/api/dev/mail-outbox', (req, env, ctx) => devMailOutbox(req, env, ctx.requestId)),
 
   route('PATCH', '/api/me', (req, env, ctx) => updateMe(req, env, ctx.requestId, ctx.user!), 'session'),
   route('GET', '/api/admin/audit', (req, env, ctx) => adminAudit(req, env, ctx.requestId, ctx.user!), 'session', 'audit.read'),

@@ -19,7 +19,7 @@ const PROD = {
   APP_ORIGIN: 'https://app.example.com',
   ALLOW_PUBLIC_SIGNUP: 'true',
   CLIENT_KDF_REQUIRED: 'true',
-  CLIENT_KDF_ITERATIONS: '100000',
+  CLIENT_KDF_ITERATIONS: '600000',
   PBKDF2_ITERATIONS: '20000',
 } as const;
 
@@ -36,6 +36,20 @@ async function derive(password: string, saltB64: string, iterations: number): Pr
     256,
   );
   return Buffer.from(new Uint8Array(bits)).toString('base64url');
+}
+
+/**
+ * محاكاة بروتوكول العميل الحقيقي (src/web/pages/Auth.tsx): يُرسل المفتاح المشتق،
+ * فإن ردّ الخادم 409 LEGACY_CREDENTIALS أعاد المحاولة مرة واحدة بكلمة المرور الخام.
+ * الرد النهائي هو ما يراه المستخدم.
+ */
+async function loginLikeClient(h: Harness, email: string, password: string): Promise<Response> {
+  const first = await h.call('/api/auth/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, derivedKey: await derive(password, (await params(h, email)).salt, 600000) }),
+  });
+  if (first.status !== 409) return first;
+  return h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) });
 }
 
 async function params(h: Harness, email: string) {
@@ -72,7 +86,7 @@ describe('اشتقاق كلمة المرور على طبقتين — تسجيل 
     const after = await params(h, 'ghost@example.com');
     expect(after.salt).toBe(before.salt);
     expect(after).toMatchObject({ version: 2, required: true });
-    expect(after.iterations).toBe(100000);
+    expect(after.iterations).toBe(600000);
     // شكل الاستجابة واحد للبريد غير الموجود
     const other = await params(h, 'nobody-else@example.com');
     expect(Object.keys(other).sort()).toEqual(Object.keys(after).sort());
@@ -106,7 +120,11 @@ describe('اشتقاق كلمة المرور على طبقتين — تسجيل 
     const email = 'login@example.com';
     await h.call('/api/auth/signup', { method: 'POST', body: JSON.stringify(await credential(h, email, 'Cairo2026learn')) });
 
-    const wrong = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify(await credential(h, email, 'Cairo2026wrong')) });
+    // مسار v2 وحده يعيد 409 موحّدًا (لا يميّز حسابًا موجودًا من غيره)؛
+    // بعد إعادة المحاولة الخام التي يقوم بها العميل تكون النتيجة 401 عامة.
+    const step = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify(await credential(h, email, 'Cairo2026wrong')) });
+    expect(step.status).toBe(409);
+    const wrong = await loginLikeClient(h, email, 'Cairo2026wrong');
     expect(wrong.status).toBe(401);
     expect((await h.json(wrong)).error.code).toBe('INVALID_CREDENTIALS');
 
@@ -150,9 +168,13 @@ describe('اشتقاق كلمة المرور على طبقتين — تسجيل 
     await h.call('/api/auth/signup', { method: 'POST', body: JSON.stringify(first) });
 
     // نفس البريد بملح مختلف (كما لو تغيّر pepper أو حاول المهاجم تخمينًا بملح ثابت)
-    const wrongSalt = await derive('Cairo2026learn', 'AAAAAAAAAAAAAAAAAAAAAA', 100000);
-    const res = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, derivedKey: wrongSalt }) });
-    expect(res.status).toBe(401);
+    const wrongSalt = await derive('Cairo2026learn', 'AAAAAAAAAAAAAAAAAAAAAA', 600000);
+    const step = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, derivedKey: wrongSalt }) });
+    expect(step.status).toBe(409);
+    // عودة العميل بالمسار الخام لا تنجح لحساب v2 حتى بكلمة المرور الصحيحة (منع التخفيض)
+    const raw = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password: 'Cairo2026learn' }) });
+    expect(raw.status).toBe(401);
+    expect((await h.json(raw)).error.code).toBe('INVALID_CREDENTIALS');
     // والمفتاح الصحيح ما زال يعمل
     const ok = await h.call('/api/auth/login', { method: 'POST', body: JSON.stringify(first) });
     expect(ok.status).toBe(200);

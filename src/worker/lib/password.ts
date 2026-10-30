@@ -199,11 +199,20 @@ export interface ClientKdfConfig {
  */
 export function resolveClientKdf(env: { CLIENT_KDF_ITERATIONS?: string; CLIENT_KDF_REQUIRED?: string; ENVIRONMENT?: string }): ClientKdfConfig {
   const raw = Number(env.CLIENT_KDF_ITERATIONS);
-  let iterations = Number.isFinite(raw) && raw > 0 ? Math.floor(raw) : CLIENT_KDF_ITERATIONS;
-  if (iterations < MIN_CLIENT_KDF_ITERATIONS) iterations = MIN_CLIENT_KDF_ITERATIONS;
-  if (iterations > MAX_ITERATIONS) iterations = MAX_ITERATIONS;
+  const configured = Number.isFinite(raw) && raw > 0 ? Math.floor(raw) : CLIENT_KDF_ITERATIONS;
+  // عدد تكرارات المتصفح **جزء من الصيغة** لا إعداد حرّ: المفتاح المشتق يعتمد عليه،
+  // والخادم لا يستطيع معرفة العدد الذي استخدمه العميل إلا من الصف المخزَّن.
+  // لو تغيّر المتغيّر بين نشرين لاشتقّ كل مستخدم قائم مفتاحًا مختلفًا ⇒ قفل شامل
+  // للحسابات. ولو تجاهلناه صامتًا لسجّلنا clientIterations لا يطابق العمل الفعلي
+  // (تكرار «قوة» وهمية في سجل التدقيق الأمني). لذلك: قيمة مختلفة = فشل مغلق.
+  if (configured !== CLIENT_KDF_ITERATIONS) {
+    throw new PasswordPolicyError(
+      'BAD_ITERATIONS',
+      `CLIENT_KDF_ITERATIONS=${configured} يخالف ثابت الصيغة ${CLIENT_KDF_ITERATIONS}`,
+    );
+  }
   const required = env.CLIENT_KDF_REQUIRED === 'true' || (env.CLIENT_KDF_REQUIRED !== 'false' && env.ENVIRONMENT !== 'test');
-  return { iterations, required };
+  return { iterations: CLIENT_KDF_ITERATIONS, required };
 }
 
 /**
@@ -234,8 +243,13 @@ export async function hashDerivedKey(derivedKey: string, policy: PasswordPolicy,
   const salt = crypto.getRandomValues(new Uint8Array(16));
   const kim = await initialKeyMaterial(derivedKey, policy.pepper);
   const hash = await derive(kim, salt, policy.iterations);
-  const ci = Math.min(Math.max(clientIterations | 0, MIN_CLIENT_KDF_ITERATIONS), MAX_ITERATIONS);
-  return `${FORMAT_V2}$${policy.iterations}$${ci}$${b64url(salt)}$${b64url(hash)}`;
+  // لا نكتب في الصف رقمًا لم نتحقق منه: الصيغة تعني أن العدد ثابت بروتوكوليًا.
+  // أي قيمة أخرى تعني أن المتغيّر تغيّر (سيُرفض عند القراءة أصلًا) — نرفض هنا أيضًا
+  // بدل تسجيل «قوة» لا وجود لها.
+  if (clientIterations !== CLIENT_KDF_ITERATIONS) {
+    throw new PasswordPolicyError('BAD_ITERATIONS', `clientIterations=${clientIterations} ≠ ${CLIENT_KDF_ITERATIONS}`);
+  }
+  return `${FORMAT_V2}$${policy.iterations}$${CLIENT_KDF_ITERATIONS}$${b64url(salt)}$${b64url(hash)}`;
 }
 
 interface ParsedV2 {

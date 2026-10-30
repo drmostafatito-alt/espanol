@@ -14,12 +14,14 @@ import {
   isWellFormedDerivedKey, dummyVerifyWork,
   type PasswordPolicy,
 } from '../lib/password';
+import { sendMail, mailConfigured, readOutbox } from '../lib/mailer';
+import { verifyEmailMail, resetPasswordMail } from '../lib/email-templates';
 import { ulid } from '../lib/ids';
 import { checkRateLimit, pruneRateLimits } from '../lib/rate-limit';
 import {
   createSession, createUser, emailExists, findSessionUser, findUserByEmail, findUserById,
   findOAuthIdentity, linkOAuthIdentity, markEmailVerified,
-  registerFailedLogin, resetFailedLogin, revokeOtherSessions, revokeSession, touchSession,
+  registerFailedLogin, resetFailedLogin, revokeAllSessionsForUser, revokeOtherSessions, revokeSession, touchSession,
   revokeExcessSessions, pruneExpiredSessions, updatePasswordHash, writeAudit,
   SESSION_IDLE_DAYS,
 } from '../db';
@@ -30,6 +32,17 @@ export const normalizeEmail = (e: string) => e.trim().toLowerCase();
 /** رسالة موحّدة لكل حالات فشل الدخول — لا تكشف وجود الحساب ولا حالته. */
 const GENERIC_AUTH_FAIL = 'البريد أو كلمة المرور غير صحيحة.';
 const RATE_LIMIT_MSG = 'محاولات كثيرة. أعد المحاولة بعد قليل.';
+
+/**
+ * رد موحّد لكل فشل في مسار الاشتقاق (v2): الحساب غير موجود، أو كلمة المرور
+ * خاطئة، أو الحساب قديم يحتاج كلمة المرور الخام. السبب: لو أعاد الخادم 409
+ * للحساب القديم و401 لغيره لصار الرد نفسه وسيلة كشف حسابات. الآن **كل** فشل
+ * في مسار v2 = 409، فيعيد العميل المحاولة مرة واحدة بكلمة المرور الخام، وهي
+ * التي تعطي 401 عند الفشل الحقيقي. لا تراجع أمني: الحسابات v2 ترفض المسار
+ * الخام دائمًا (401)، والحد الأقصى للمحاولات لم يتغير.
+ */
+const legacyHint = (): HttpError =>
+  new HttpError(409, 'LEGACY_CREDENTIALS', 'أعد المحاولة بتأكيد كلمة المرور من المتصفح.');
 
 /**
  * بصمة عنوان الشبكة: HMAC بمفتاح مشتق من سر التطبيق (فصل نطاقات)، بلا تخزين IP صريح.
@@ -213,9 +226,12 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
   const generic: HttpError = new HttpError(401, 'INVALID_CREDENTIALS', GENERIC_AUTH_FAIL);
 
   if (!row) {
-    // نُهدر تكلفة اشتقاق مماثلة لمنع كشف وجود البريد عبر التوقيت
+    // نُهدر تكلفة اشتقاق مماثلة لمنع كشف وجود البريد عبر التوقيت.
+    // ولا نعيد 401 هنا: مسار العميل v2 يجب أن يحصل على نفس الرد في كل حالات
+    // الفشل (حساب غير موجود / حساب v2 بكلمة خطأ / حساب قديم) — وإلا صار
+    // 409 LEGACY_CREDENTIALS وسيلةً لكشف الحسابات القديمة. التفصيل أدناه.
     await dummyVerifyWork(policy);
-    throw generic;
+    throw useV2 ? legacyHint() : generic;
   }
 
   // الحساب غير النشط: نفس الرد العام — الرسالة الخاصة كانت تكشف وجود الحساب
@@ -233,6 +249,7 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
   const rowIsV2 = isV2Hash(row.password_hash);
   if (rowIsV2 && !useV2) {
     // حساب v2 لا يمكن التحقق منه بكلمة مرور خام؛ نرفض بتكلفة مماثلة.
+    // لا تراجع: المسار الخام لا يعمل أبدًا لحساب مشتق من المتصفح.
     await dummyVerifyWork(policy);
     throw generic;
   }
@@ -241,7 +258,7 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
     // مرة واحدة بمساره القديم. لا يكشف ذلك وجود الحساب: البريد غير الموجود يأخذ
     // نفس التكلفة ثم 401 عام.
     await dummyVerifyWork(policy);
-    throw new HttpError(409, 'LEGACY_CREDENTIALS', 'يتطلب هذا الحساب تأكيد كلمة المرور من المتصفح. أعد المحاولة.');
+    throw legacyHint();
   }
 
   const ok = rowIsV2
@@ -249,7 +266,8 @@ export async function login(req: Request, env: Env, requestId: string): Promise<
     : await verifyPassword(password, row.password_hash, policy);
   if (!ok) {
     await registerFailedLogin(env.DB, row.id);
-    throw generic;
+    // نفس الرد الموحّد: لا يعلن أن الحساب v2 ولا أنه قديم.
+    throw useV2 ? legacyHint() : generic;
   }
 
   // ترقية صامتة: إن تغيّرت السياسة (تكرارات أعلى/صيغة أحدث) نُعيد التجزئة الآن
@@ -408,23 +426,62 @@ export async function revokeAllSessions(req: Request, env: Env, requestId: strin
   return json({ ok: true, revoked }, {}, requestId);
 }
 
-/** تغيير كلمة المرور: يتحقق من القديمة، ويطرد كل الجلسات الأخرى فورًا. */
+/**
+ * تغيير كلمة المرور.
+ *
+ * لماذا لا تُستخدم `verifyPassword` هنا؟ لأن كل حساب جديد مخزَّن بصيغة `kdfv2`
+ * (يسأل المتصفح 600,000 تكرار ثم الخادم 30,000). `verifyPassword` تفهم صيغة v1
+ * فقط، فكانت سترفض كل حساب جديد، ثم تكتب عند النجاح تجزئة v1 بكلمة مرور خام —
+ * أي **إسقاط صامت** من 630k إلى 30k. المسار الصحيح: العميل يشتق القديمة
+ * والجديدة، والخادم يتحقق من القديمة مقابل الصف ويكتب الجديدة بنفس الصيغة.
+ * يبقى المسار الخام للخادم لحساب v1 قديم فقط (ثم يُرقّى إلى v2 إن أمكن).
+ */
 export async function changePassword(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   const policy = policyFor(env);
-  const body = await readJson<{ currentPassword?: string; newPassword?: string }>(req);
-  const currentPassword = typeof body.currentPassword === 'string' ? body.currentPassword : '';
+  const clientKdf = resolveClientKdf(env);
+  const body = await readJson<{
+    currentPassword?: string; newPassword?: string;
+    currentDerivedKey?: string; newDerivedKey?: string;
+  }>(req);
   const row = await findUserById(env.DB, user.id);
   if (!row) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
-  const ok = currentPassword ? await verifyPassword(currentPassword, row.password_hash, policy) : false;
+
+  const rowIsV2 = isV2Hash(row.password_hash);
+  let ok = false;
+  let upgraded: string | null = null;
+
+  if (rowIsV2) {
+    const current = body.currentDerivedKey;
+    if (!isWellFormedDerivedKey(current)) {
+      throw new HttpError(400, 'CLIENT_KDF_REQUIRED', 'أعد إدخال كلمة المرور الحالية من هذه الصفحة.');
+    }
+    ok = await verifyDerivedKey(current, row.password_hash, policy);
+    if (ok) {
+      const next = body.newDerivedKey;
+      if (!isWellFormedDerivedKey(next)) {
+        throw new HttpError(400, 'CLIENT_KDF_REQUIRED', 'أعد إدخال كلمة المرور الجديدة.');
+      }
+      if (next === current) throw new HttpError(400, 'SAME_PASSWORD', 'كلمة المرور الجديدة مطابقة للحالية.');
+      upgraded = await hashDerivedKey(next, policy, clientKdf.iterations);
+    }
+  } else {
+    const currentPassword = typeof body.currentPassword === 'string' ? body.currentPassword : '';
+    ok = currentPassword ? await verifyPassword(currentPassword, row.password_hash, policy) : false;
+    if (ok) {
+      const pwProblems = passwordProblems(body.newPassword, { email: row.email_normalized });
+      if (pwProblems.length) {
+        throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
+      }
+      upgraded = await hashPassword(body.newPassword as string, policy);
+    }
+  }
+
   if (!ok) {
     await registerFailedLogin(env.DB, row.id);
     throw new HttpError(401, 'INVALID_CREDENTIALS', GENERIC_AUTH_FAIL);
   }
-  const pwProblems = passwordProblems(body.newPassword, { email: row.email_normalized });
-  if (pwProblems.length) {
-    throw new HttpError(400, 'WEAK_PASSWORD', 'كلمة المرور غير مقبولة: ' + pwProblems.join(' '), { problems: pwProblems });
-  }
-  await updatePasswordHash(env.DB, row.id, await hashPassword(body.newPassword as string, policy));
+
+  await updatePasswordHash(env.DB, row.id, upgraded!);
   await resetFailedLogin(env.DB, row.id);
   const token = readCookie(req, cookieName(env));
   if (token) await revokeOtherSessions(env, row.id, token);
@@ -433,6 +490,172 @@ export async function changePassword(req: Request, env: Env, requestId: string, 
     targetId: row.id, requestId, result: 'success',
   });
   return json({ ok: true }, {}, requestId);
+}
+
+/* ============================================================================
+   تحقق البريد واستعادة كلمة المرور
+   ----------------------------------------------------------------------------
+   رموز لمرة واحدة، مخزَّنة كتجزئة SHA-256 فقط (سرقة القاعدة لا تعطي رمزًا صالحًا)،
+   لها انتهاء صريح، وتُستهلك بعملية ذرّية (WHERE used_at IS NULL).
+   كل مسار «اطلب» يعيد 200 دائمًا — سواء وُجد الحساب أو لا — فلا كشف حسابات.
+   ========================================================================== */
+
+const VERIFY_TTL_HOURS = 24;
+const RESET_TTL_MINUTES = 30;
+
+function appBaseUrl(env: Env): string {
+  const first = String(env.APP_ORIGIN || '').split(',')[0]!.trim();
+  return first.replace(/\/+$/, '');
+}
+
+async function issueOneTimeToken(
+  env: Env,
+  table: 'verification_tokens' | 'password_reset_tokens',
+  userId: string,
+  ttlSeconds: number,
+  purpose?: 'email_verify',
+): Promise<string> {
+  const token = randomToken(32);
+  const tokenHash = await sha256Hex(token);
+  const expiresAt = new Date(Date.now() + ttlSeconds * 1000).toISOString();
+  // نُبطل الرموز السابقة غير المستخدمة من نفس الغرض: لا تتراكم روابط صالحة.
+  if (table === 'verification_tokens') {
+    await env.DB.prepare('UPDATE verification_tokens SET used_at = ? WHERE user_id = ? AND purpose = ? AND used_at IS NULL')
+      .bind(new Date().toISOString(), userId, purpose ?? 'email_verify').run();
+    await env.DB.prepare('INSERT INTO verification_tokens (id, user_id, purpose, token_hash, expires_at) VALUES (?, ?, ?, ?, ?)')
+      .bind(ulid(), userId, purpose ?? 'email_verify', tokenHash, expiresAt).run();
+  } else {
+    await env.DB.prepare('UPDATE password_reset_tokens SET used_at = ? WHERE user_id = ? AND used_at IS NULL')
+      .bind(new Date().toISOString(), userId).run();
+    await env.DB.prepare('INSERT INTO password_reset_tokens (id, user_id, token_hash, expires_at) VALUES (?, ?, ?, ?)')
+      .bind(ulid(), userId, tokenHash, expiresAt).run();
+  }
+  return token;
+}
+
+interface TokenRow { id: string; user_id: string; expires_at: string }
+
+/** استهلاك ذرّي: أول تحديث يفوز، والباقي يرى used_at != NULL ⇒ لا إعادة استخدام. */
+async function consumeOneTimeToken(
+  env: Env,
+  table: 'verification_tokens' | 'password_reset_tokens',
+  token: string,
+): Promise<TokenRow | null> {
+  const tokenHash = await sha256Hex(token);
+  const now = new Date().toISOString();
+  const row = await env.DB.prepare(
+    `SELECT id, user_id, expires_at FROM ${table} WHERE token_hash = ? AND used_at IS NULL AND expires_at > ?`,
+  ).bind(tokenHash, now).first<TokenRow>();
+  if (!row) return null;
+  const res = await env.DB.prepare(`UPDATE ${table} SET used_at = ? WHERE id = ? AND used_at IS NULL`).bind(now, row.id).run();
+  if ((res.meta?.changes ?? 0) !== 1) return null;
+  return row;
+}
+
+/** يطلب إرسال رابط تحقق للبريد (يتطلب جلسة). */
+export async function requestEmailVerification(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  await rateLimitOrThrow(env, `verify:ip:${ipHash}`, 5, 3600);
+  await rateLimitOrThrow(env, `verify:user:${user.id}`, 3, 3600);
+  const row = await env.DB.prepare('SELECT id, email_display, email_verified_at FROM users WHERE id = ?').bind(user.id)
+    .first<{ id: string; email_display: string; email_verified_at: string | null }>();
+  if (!row) throw new HttpError(401, 'UNAUTHENTICATED', 'يلزم تسجيل الدخول.');
+  if (row.email_verified_at) return json({ ok: true, alreadyVerified: true }, {}, requestId);
+
+  const token = await issueOneTimeToken(env, 'verification_tokens', row.id, VERIFY_TTL_HOURS * 3600, 'email_verify');
+  const link = `${appBaseUrl(env)}/verify?token=${encodeURIComponent(token)}`;
+  const mail = verifyEmailMail(link, VERIFY_TTL_HOURS);
+  const sent = await sendMail(env, { to: row.email_display, subject: mail.subject, text: mail.text, html: mail.html, kind: 'verify_email' });
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: row.id, action: 'auth.email.verify_request', targetType: 'user',
+    targetId: row.id, requestId, ipHash, result: sent.delivered ? 'success' : 'error',
+  });
+  // `mailSent` معلومة تشغيلية للمستخدم المسجَّل فقط (لا تكشف حسابات لغيره).
+  return json({ ok: true, mailSent: sent.delivered }, {}, requestId);
+}
+
+/** تأكيد الرمز — بلا جلسة (قد يفتحه المستخدم على جهاز آخر). */
+export async function confirmEmailVerification(req: Request, env: Env, requestId: string): Promise<Response> {
+  const body = await readJson<{ token?: string }>(req);
+  const token = typeof body.token === 'string' ? body.token.trim() : '';
+  if (!token || token.length < 20 || token.length > 200) throw new HttpError(400, 'INVALID_TOKEN', 'الرابط غير صالح أو منتهي.');
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  await rateLimitOrThrow(env, `verify-confirm:ip:${ipHash}`, 30, 3600);
+  const row = await consumeOneTimeToken(env, 'verification_tokens', token);
+  if (!row) throw new HttpError(400, 'INVALID_TOKEN', 'الرابط غير صالح أو منتهي أو استُخدم سابقًا.');
+  await markEmailVerified(env.DB, row.user_id, new Date().toISOString());
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: row.user_id, action: 'auth.email.verified', targetType: 'user',
+    targetId: row.user_id, requestId, ipHash, result: 'success',
+  });
+  return json({ ok: true }, {}, requestId);
+}
+
+/** طلب استعادة كلمة المرور — 200 دائمًا، بلا كشف وجود الحساب. */
+export async function requestPasswordReset(req: Request, env: Env, requestId: string): Promise<Response> {
+  const body = await readJson<{ email?: string }>(req);
+  const email = typeof body.email === 'string' ? normalizeEmail(body.email) : '';
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  await rateLimitOrThrow(env, `reset:ip:${ipHash}`, 5, 900);
+  if (!EMAIL_RE.test(email) || email.length > 254) {
+    // نفس الشكل: لا نكشف شيئًا عن البريد أيضًا
+    return json({ ok: true }, {}, requestId);
+  }
+  await rateLimitOrThrow(env, `reset:acct:${await sha256Hex(email)}`, 5, 900);
+  const row = await findUserByEmail(env.DB, email);
+  if (row && row.status === 'active') {
+    const token = await issueOneTimeToken(env, 'password_reset_tokens', row.id, RESET_TTL_MINUTES * 60);
+    const link = `${appBaseUrl(env)}/reset?token=${encodeURIComponent(token)}`;
+    const mail = resetPasswordMail(link, RESET_TTL_MINUTES);
+    const sent = await sendMail(env, { to: row.email_display, subject: mail.subject, text: mail.text, html: mail.html, kind: 'reset_password' });
+    await writeAudit(env.DB, {
+      id: ulid(), actorUserId: row.id, action: 'auth.password.reset_request', targetType: 'user',
+      targetId: row.id, requestId, ipHash, result: sent.delivered ? 'success' : 'error',
+    });
+  } else {
+    // تكلفة مكافئة للبريد غير الموجود (لا كشف عبر التوقيت)
+    await dummyVerifyWork(policyFor(env));
+  }
+  return json({ ok: true }, {}, requestId);
+}
+
+/**
+ * تنفيذ الاستعادة: الرمز أحادي الاستخدام + مفتاح جديد مشتق في المتصفح.
+ * تُلغى كل الجلسات بعد النجاح (جهاز مسروق لا يبقى داخًلا).
+ */
+export async function resetPassword(req: Request, env: Env, requestId: string): Promise<Response> {
+  const policy = policyFor(env);
+  const clientKdf = resolveClientKdf(env);
+  const body = await readJson<{ token?: string; derivedKey?: string }>(req);
+  const token = typeof body.token === 'string' ? body.token.trim() : '';
+  const derivedKey = body.derivedKey;
+  if (!token || token.length < 20 || token.length > 200) throw new HttpError(400, 'INVALID_TOKEN', 'الرابط غير صالح أو منتهي.');
+  if (!isWellFormedDerivedKey(derivedKey)) throw new HttpError(400, 'CLIENT_KDF_REQUIRED', 'حدّث الصفحة ثم أعد المحاولة.');
+
+  const ipHash = await clientIpHash(req, env.PASSWORD_PEPPER ?? '', env.ENVIRONMENT);
+  await rateLimitOrThrow(env, `reset-confirm:ip:${ipHash}`, 10, 900);
+
+  const row = await consumeOneTimeToken(env, 'password_reset_tokens', token);
+  if (!row) throw new HttpError(400, 'INVALID_TOKEN', 'الرابط غير صالح أو منتهي أو استُخدم سابقًا.');
+  const user = await findUserById(env.DB, row.user_id);
+  if (!user || user.status !== 'active') throw new HttpError(400, 'INVALID_TOKEN', 'الرابط غير صالح.');
+
+  await updatePasswordHash(env.DB, user.id, await hashDerivedKey(derivedKey, policy, clientKdf.iterations));
+  await resetFailedLogin(env.DB, user.id);
+  const revoked = await revokeAllSessionsForUser(env, user.id);
+  await writeAudit(env.DB, {
+    id: ulid(), actorUserId: user.id, action: 'auth.password.reset', targetType: 'user',
+    targetId: user.id, requestId, ipHash, result: 'success', after: { revokedSessions: revoked },
+  });
+  return json({ ok: true }, {}, requestId);
+}
+
+/** صندوق بريد تطويري (محلي فقط). محجوب خلف شرطين، وpreflight يمنعه في الإنتاج. */
+export async function devMailOutbox(req: Request, env: Env, requestId: string): Promise<Response> {
+  if (env.ENVIRONMENT === 'production' || env.DEBUG_MAIL_OUTBOX !== 'true') {
+    throw new HttpError(404, 'NOT_FOUND', 'غير موجود.');
+  }
+  return json({ items: readOutbox(env), configured: mailConfigured(env) }, {}, requestId);
 }
 
 /* ============================================================================
