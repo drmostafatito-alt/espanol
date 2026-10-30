@@ -5,7 +5,7 @@ import { buildContentPlan } from './lib/content-plan.mjs';
 
 const ROOT = process.cwd();
 const sqliteDir = join(ROOT, '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
-const files = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+const files = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
 if (files.length !== 1) {
   console.error('Expected exactly one sqlite file in miniflare directory');
   process.exit(1);

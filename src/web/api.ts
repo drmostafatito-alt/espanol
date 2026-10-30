@@ -110,13 +110,44 @@ async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpt
   return body as T;
 }
 
+export type AuthCredentials = { derivedKey: string };
+
 export const api = {
   me: (opts?: RequestOpts) => request<{ user: ApiUser }>('/api/auth/me', {}, opts),
-  signup: (email: string, password: string, displayName?: string) =>
-    request<{ user: ApiUser }>('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password, displayName }) }),
-  login: (email: string, password: string) =>
-    request<{ user: ApiUser }>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) }),
+  /**
+   * معاملات اشتقاق العميل: ملح حتمي للبريد + عدد التكرارات (600,000 افتراضيًا).
+   * لا يكشف وجود الحساب — نفس الشكل لأي بريد.
+   */
+  kdfParams: (email: string) =>
+    request<{ version: number; algorithm: string; iterations: number; salt: string; required: boolean }>(
+      '/api/auth/kdf-params',
+      { method: 'POST', body: JSON.stringify({ email }) },
+    ),
+  signup: (email: string, credentials: AuthCredentials, displayName?: string) =>
+    request<{ user: ApiUser }>('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, ...credentials, displayName }) }),
+  /** `password` للمسار القديم فقط (حساب v1 يطلب تأكيد كلمة المرور من المتصفح). */
+  login: (email: string, credentials: AuthCredentials | { password: string }) =>
+    request<{ user: ApiUser }>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...credentials }) }),
   logout: () => request<{ ok: true }>('/api/auth/logout', { method: 'POST' }),
+  /** رابط تحقق للبريد الحالي (يتطلب جلسة). `mailSent` لا يعني أن المزوّد مضبوط. */
+  verifyEmailRequest: () =>
+    request<{ ok: true; mailSent?: boolean; alreadyVerified?: boolean }>('/api/auth/verify-email/request', {
+      method: 'POST',
+      body: '{}',
+    }),
+  verifyEmailConfirm: (token: string) =>
+    request<{ ok: true }>('/api/auth/verify-email/confirm', { method: 'POST', body: JSON.stringify({ token }) }),
+  /** يعيد 200 دائمًا (لا كشف وجود الحساب). */
+  passwordResetRequest: (email: string) =>
+    request<{ ok: true }>('/api/auth/password-reset/request', { method: 'POST', body: JSON.stringify({ email }) }),
+  passwordResetConfirm: (token: string, derivedKey: string) =>
+    request<{ ok: true }>('/api/auth/password-reset/confirm', { method: 'POST', body: JSON.stringify({ token, derivedKey }) }),
+  /**
+   * تغيير كلمة المرور: المفتاحان مشتقان في المتصفح.
+   * `currentPassword` يُرسل فقط بعد 409 LEGACY_CREDENTIALS (حساب قديم ما زال v1).
+   */
+  changePassword: (body: { currentDerivedKey?: string; currentPassword?: string; newDerivedKey: string }) =>
+    request<{ ok: true }>('/api/auth/change-password', { method: 'POST', body: JSON.stringify(body) }),
   updateMe: (patch: Partial<Pick<ApiUser, 'displayName' | 'explanationStyle' | 'audioVariant' | 'dailyGoalMinutes'>>) =>
     request<{ user: ApiUser }>('/api/me', { method: 'PATCH', body: JSON.stringify(patch) }),
   publicSettings: () => request<{ settings: Record<string, unknown> }>('/api/settings/public'),
@@ -282,6 +313,10 @@ export interface AnswerResult {
   mode: 'graded' | 'participation';
   explanationAr: string;
   feedbackAr: string | null;
+  /** يُرسل بعد الإجابة فقط: معرّف الخيار الصحيح لتلوين الاختيارات */
+  correctOptionId?: string | null;
+  /** الإجابة الصحيحة كنص (للتمارين الكتابية والترتيب) — بعد الإجابة فقط */
+  correctText?: string | null;
 }
 
 export interface CompleteResult {
@@ -297,6 +332,8 @@ export interface CompleteResult {
   xpAwarded: number;
   xpTotal: number;
   alreadyCompleted: boolean;
+  /** بطاقات المراجعة المضافة من مفردات الدرس (تُضاف مرة واحدة فقط) */
+  reviewCardsCreated?: number;
 }
 
 export interface ProgressLessonItem {
@@ -316,6 +353,34 @@ export interface ProgressLessonItem {
   program_kind?: string;
   is_unlocked?: boolean;
   missing_prerequisites?: string[];
+  estimated_minutes?: number | null;
+}
+
+/** نشاط يوم واحد — كله مشتق من جداول النشاط على الخادم */
+export interface DayActivity {
+  date: string;
+  xp: number;
+  minutes: number;
+  lessons: number;
+  reviews: number;
+}
+
+export interface AchievementItem {
+  code: string;
+  titleAr: string;
+  descriptionAr: string;
+  icon: string;
+  tier: 'bronze' | 'silver' | 'gold';
+  earned: boolean;
+  current: number;
+  target: number;
+  percent: number;
+}
+
+export interface LevelSummary {
+  code: string;
+  total: number;
+  completed: number;
 }
 
 export interface ProgressPayload {
@@ -327,7 +392,15 @@ export interface ProgressPayload {
     level_code: string | null;
     unit_title_ar?: string;
     program_title_ar?: string;
+    unit_id?: string;
+    estimated_minutes?: number | null;
   } | null;
   totals: { lessons_total: number; lessons_completed: number };
+  today?: DayActivity;
+  week?: DayActivity[];
+  goalMinutes?: number;
+  review?: { dueNow: number; total: number };
+  levels?: LevelSummary[];
+  achievements?: AchievementItem[];
   contentProvenance: { status: string; warningAr: string } | null;
 }

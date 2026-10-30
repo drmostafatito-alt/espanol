@@ -39,6 +39,22 @@ export interface Env {
   GOOGLE_CLIENT_SECRET?: string;
   /** 'false' يغلق التسجيل العام — يُستخدم كبوابة حتى اعتماد سياسة كلمات مرور مناسبة */
   ALLOW_PUBLIC_SIGNUP?: string;
+  /**
+   * اشتقاق العميل (الطبقة الثانية): تكرارات المتصفح — 600,000 افتراضيًا (متطلب OWASP).
+   * `CLIENT_KDF_REQUIRED="true"` يمنع قبول كلمة مرور خام في التسجيل/الدخول.
+   */
+  CLIENT_KDF_ITERATIONS?: string;
+  CLIENT_KDF_REQUIRED?: string;
+  /**
+   * البريد الصادر (Verification + Reset). Resend خطة مجانية: 3,000 رسالة/شهر،
+   * 100/يوم، بلا بطاقة. غياب المفتاح لا يعطّل التسجيل: الرمز يُنشأ ولا تُرسَل
+   * رسالة، ويُعلن ذلك للسجل بدل الادعاء بأنها أُرسلت.
+   */
+  RESEND_API_KEY?: string;
+  /** مرسل الرسائل، بصيغة `الاسم <no-reply@domain>` — نطاق موثَّق عند المزوّد. */
+  MAIL_FROM?: string;
+  /** صندوق تطويري محلي لاختبارات E2E فقط؛ محجوب في الإنتاج ويفشل معه preflight. */
+  DEBUG_MAIL_OUTBOX?: string;
   /** 'true' يسمح بخدمة محتوى draft في التطوير فقط، مع وسم «عينة غير مراجعة» */
   ALLOW_UNREVIEWED_CONTENT?: string;
   /** تطوير/اختبار محلي فقط: رفع حد التسجيل لكل عنوان في الساعة (الافتراضي 10) */

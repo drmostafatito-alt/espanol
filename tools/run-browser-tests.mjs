@@ -23,7 +23,7 @@ import { join } from 'node:path';
 async function resetRateLimits() {
   const sqliteDir = join(ROOT, '.wrangler/state/v3/d1/miniflare-D1DatabaseObject');
   if (existsSync(sqliteDir)) {
-    const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+    const f = readdirSync(sqliteDir).find(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
     if (f) {
       try {
         const { DatabaseSync } = await import('node:sqlite');

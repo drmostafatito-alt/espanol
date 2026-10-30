@@ -1,0 +1,27 @@
+{
+  "migrations": [
+    {
+      "date": "2026-10-30",
+      "bundle": "cv-alphabet-u-z",
+      "oldHeadword": "sabíamente",
+      "newHeadword": "sabiamente",
+      "oldNormalized": "sabíamente",
+      "newNormalized": "sabiamente",
+      "oldStableId": "voc_3X0V3PYPRFFW",
+      "newStableId": "voc_AED34GR8C9J6",
+      "reason": "ياء مكسورة زائدة بعد الألف (sabía + mente)، والصواب sabiamente — خطأ مطبعي لا صيغة معجمية."
+    },
+    {
+      "date": "2026-10-30",
+      "bundle": "cv-topic-health",
+      "oldHeadword": "traquea",
+      "newHeadword": "tráquea",
+      "oldNormalized": "traquea",
+      "newNormalized": "tráquea",
+      "oldStableId": "voc_17S0Y1RRTZ69",
+      "newStableId": "voc_GRRJ79JMCK2Y",
+      "reason": "الكلمة مقطوعة الصوت على الألف (tra-que-a) فتحتاج نبرة: tráquea، وجمعها tráqueas."
+    }
+  ],
+  "updatedAt": "2026-10-30"
+}

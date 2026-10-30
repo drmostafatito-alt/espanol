@@ -31,3 +31,14 @@ tools/audio-engine/*.wav
 
 # مخرجات فحص تكامل المنهج (تُولَّد مجددًا بالأداة والاختبارات)
 reports/content-integrity.json
+
+# لقطات واجهة المتصفح وأدلة الفحص البصري — نتائج محلية لا تُشحن مع الكود
+reports/ui-shots/
+
+# بيئة wrangler المحلية (تُثبَّت عند الحاجة، ليست مصدرًا)
+tools/wrangler-env/node_modules/
+reports/content-review/candidates.json
+reports/content-review/review-records.sql
+
+# إعداد Playwright المؤقت لبيئة الصندوق (مسارات /tmp) — ليس جزءًا من التطبيق
+playwright.sandbox.config.ts

@@ -210,12 +210,28 @@ function checkExercise(ex, where, errors, warnings) {
 }
 
 // ---------- تحميل المحتوى ----------
-const lessonFiles = existsSync(EX_DIR) ? readdirSync(EX_DIR).filter(f => /^lesson-.*\.json$/.test(f)) : [];
-const vocabFiles = existsSync(EX_DIR) ? readdirSync(EX_DIR).filter(f => /^vocab-.*\.json$/.test(f)) : [];
+// مسح متتابع للمجلدات الفرعية: content/drafts منظم في مجلدات حسب المستوى/البرنامج
+function collectJson(dir, prefix = '') {
+  if (!existsSync(dir)) return [];
+  const out = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const rel = prefix ? `${prefix}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) out.push(...collectJson(join(dir, entry.name), rel));
+    else if (/^(lesson|vocab)-.*\.json$/.test(entry.name)) out.push(rel);
+  }
+  return out.sort();
+}
+const allJson = collectJson(EX_DIR);
+const lessonFiles = allJson.filter(f => /(^|\/)lesson-.*\.json$/.test(f));
+const vocabFiles = allJson.filter(f => /(^|\/)vocab-.*\.json$/.test(f));
 const pathsFile = join(EX_DIR, 'paths.json');
 
 const errors = [];
 const warnings = [];
+if (allJson.length === 0) {
+  console.error(`❌ لم يُعثر على أي ملف درس أو مفردات داخل ${EX_DIR} — لا يصح إصدار PASS على مجلد فارغ.`);
+  process.exit(2);
+}
 const lessons = [];
 const vocabEntries = new Map(); // normalized -> entry
 

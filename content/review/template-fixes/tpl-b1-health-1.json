@@ -1,0 +1,367 @@
+{
+ "queue": "tpl-b1-health-1",
+ "level": "B1",
+ "generatedAt": "2026-10-30",
+ "items": [
+  {
+   "id": "vocab:cv-topic-health#alvéolo",
+   "es": "El alvéolo es la unidad básica del pulmón.",
+   "ar": "الحويصلة الهوائية هي الوحدة الأساسية في الرئة.",
+   "eg": "الحويصلة الهوائية هي أساس الرئة."
+  },
+  {
+   "id": "vocab:cv-topic-health#anorexia",
+   "es": "La anorexia nerviosa requiere tratamiento psicológico.",
+   "ar": "فقدان الشهية العصبي يحتاج إلى علاج نفسي.",
+   "eg": "الأنوركسيا محتاجة علاج نفسي."
+  },
+  {
+   "id": "vocab:cv-topic-health#arritmia",
+   "es": "La arritmia puede aparecer sin síntomas claros.",
+   "ar": "قد يظهر عدم انتظام ضربات القلب دون أعراض واضحة.",
+   "eg": "اضطراب ضربات القلب ممكن يجي من غير علامات واضحة."
+  },
+  {
+   "id": "vocab:cv-topic-health#artrosis",
+   "es": "La artrosis afecta sobre todo a las rodillas.",
+   "ar": "خشونة المفاصل تصيب الرُّكب خاصة.",
+   "eg": "خشونة المفاصل بتضرب الرُكب أكتر حاجة."
+  },
+  {
+   "id": "vocab:cv-topic-health#astenia",
+   "es": "La astenia primaveral deja mucho cansancio.",
+   "ar": "الوهن الربيعي يترك تعبًا شديدًا.",
+   "eg": "الخمول بتاع أول الربيع بيسيب تعب كبير."
+  },
+  {
+   "id": "vocab:cv-topic-health#aurícula",
+   "es": "La aurícula recibe la sangre que llega al corazón.",
+   "ar": "الأذين يستقبل الدم الواصل إلى القلب.",
+   "eg": "الأذين بياخد الدم اللي داخل على القلب."
+  },
+  {
+   "id": "vocab:cv-topic-health#auscultación",
+   "es": "El médico hizo una auscultación completa del pecho.",
+   "ar": "أجرى الطبيب تسمعًا كاملًا للصدر.",
+   "eg": "الدكتور سمع الصدر كله بالسماعة."
+  },
+  {
+   "id": "vocab:cv-topic-health#autopsia",
+   "es": "La autopsia reveló la causa real de la muerte.",
+   "ar": "كشف التشريح السبب الحقيقي للوفاة.",
+   "eg": "التشريح ورّانا السبب الحقيقي للموت."
+  },
+  {
+   "id": "vocab:cv-topic-health#biopsia",
+   "es": "El resultado de la biopsia llegará el lunes.",
+   "ar": "ستصل نتيجة الخزعة يوم الاثنين.",
+   "eg": "نتيجة العيّنة هتوصل يوم الاتنين."
+  },
+  {
+   "id": "vocab:cv-topic-health#capilar",
+   "es": "Un capilar es más fino que un cabello.",
+   "ar": "الشعيرة الدموية أرفع من خصلة الشعر.",
+   "eg": "الشعيرة أرفع من شعرة الراس."
+  },
+  {
+   "id": "vocab:cv-topic-health#catéter",
+   "es": "Colocaron un catéter para administrar el antibiótico.",
+   "ar": "وضعوا قسطرة لإعطاء المضاد الحيوي.",
+   "eg": "ركّبوا قسطرة عشان يدّوا مضاد حيوي."
+  },
+  {
+   "id": "vocab:cv-topic-health#cefalalgia",
+   "es": "La cefalalgia empeora por la tarde.",
+   "ar": "الصداع يشتد بعد الظهر.",
+   "eg": "الصداع بيزيد بعد الضهر."
+  },
+  {
+   "id": "vocab:cv-topic-health#cerebelo",
+   "es": "El cerebelo coordina el equilibrio y los movimientos.",
+   "ar": "المخيخ ينسق التوازن والحركات.",
+   "eg": "المخيخ بينظّم التوازن والحركة."
+  },
+  {
+   "id": "vocab:cv-topic-health#cirrosis",
+   "es": "La cirrosis puede aparecer tras años de enfermedad.",
+   "ar": "قد يظهر تليف الكبد بعد سنوات من المرض.",
+   "eg": "تليف الكبد ممكن يبان بعد سنين مرض."
+  },
+  {
+   "id": "vocab:cv-topic-health#ciática",
+   "es": "La ciática provoca un dolor que baja por la pierna.",
+   "ar": "عرق النسا يسبب ألمًا ينزل في الساق.",
+   "eg": "عرق النسا بيعمل وجع بينزل في الرجل."
+  },
+  {
+   "id": "vocab:cv-topic-health#colitis",
+   "es": "La colitis se nota con dolor y gases.",
+   "ar": "التهاب القولون يظهر بألم وغازات.",
+   "eg": "التهاب القولون ببان منه وجع وغازات."
+  },
+  {
+   "id": "vocab:cv-topic-health#colonoscopia",
+   "es": "Le practicaron una colonoscopia de control.",
+   "ar": "أجروا له تنظير قولون للمتابعة.",
+   "eg": "عملوا له منظار قولون للمتابعة."
+  },
+  {
+   "id": "vocab:cv-topic-health#convalecencia",
+   "es": "La convalecencia duró tres semanas en casa.",
+   "ar": "استمرت النقاهة ثلاثة أسابيع في البيت.",
+   "eg": "فترة النقاهة خدت تلات أسابيع في البيت."
+  },
+  {
+   "id": "vocab:cv-topic-health#convulsión",
+   "es": "Una convulsión repentina asustó a la familia.",
+   "ar": "أخافت تشنجات مفاجئة الأسرة.",
+   "eg": "تشنج مفاجئ خوّف العيلة."
+  },
+  {
+   "id": "vocab:cv-topic-health#desfibrilador",
+   "es": "El desfibrilador salvó al paciente en la calle.",
+   "ar": "أنقذ جهاز الصدمات المريض في الشارع.",
+   "eg": "جهاز الصدمات هو اللي رجّع للمريض نبضه في الشارع."
+  },
+  {
+   "id": "vocab:cv-topic-health#diafragma",
+   "es": "El diafragma separa el pecho del abdomen.",
+   "ar": "الحجاب الحاجز يفصل الصدر عن البطن.",
+   "eg": "الحجاب الحاجز هو اللي بين الصدر والبطن."
+  },
+  {
+   "id": "vocab:cv-topic-health#disfonía",
+   "es": "La disfonía le duró dos días tras el concierto.",
+   "ar": "استمرت بحة صوته يومين بعد الحفل.",
+   "eg": "صوته بقي مبحوح يومين بعد الحفلة."
+  },
+  {
+   "id": "vocab:cv-topic-health#disnea",
+   "es": "La disnea obliga a parar al subir escaleras.",
+   "ar": "ضيق النفس يجبره على التوقف عند صعود السلالم.",
+   "eg": "ضيق النفس بيخلّيه يقف لما يطلع السلم."
+  },
+  {
+   "id": "vocab:cv-topic-health#diálisis",
+   "es": "Mi tío acude a diálisis tres veces por semana.",
+   "ar": "يذهب عمي إلى الغسيل الكلوي ثلاث مرات أسبوعيًا.",
+   "eg": "عمي بيروح الغسيل الكلوي تلات مرات في الأسبوع."
+  },
+  {
+   "id": "vocab:cv-topic-health#duodeno",
+   "es": "El duodeno recibe los jugos del páncreas.",
+   "ar": "يتلقى الاثنا عشر عصارات البنكرياس.",
+   "eg": "الاثنا عشر بياخد عصارة البنكرياس."
+  },
+  {
+   "id": "vocab:cv-topic-health#edema",
+   "es": "El edema bajó con el tratamiento y el reposo.",
+   "ar": "تراجعت الوذمة مع العلاج والراحة.",
+   "eg": "التورم نزل مع العلاج والراحة."
+  },
+  {
+   "id": "vocab:cv-topic-health#embolia",
+   "es": "Una embolia pulmonar exige atención inmediata.",
+   "ar": "الانسداد الرئوي يستلزم عناية فورية.",
+   "eg": "الجلطة في الرئة محتاجة تدخل فوري."
+  },
+  {
+   "id": "vocab:cv-topic-health#endoscopia",
+   "es": "La endoscopia mostró una úlcera pequeña.",
+   "ar": "أظهر التنظير قرحة صغيرة.",
+   "eg": "المنظار بيّن قرحة صغيرة."
+  },
+  {
+   "id": "vocab:cv-topic-health#epilepsia",
+   "es": "La epilepsia se controla con medicación diaria.",
+   "ar": "يُضبط الصرع بدواء يومي.",
+   "eg": "الصرع بيتظبّط بدوا يومي."
+  },
+  {
+   "id": "vocab:cv-topic-health#eritema",
+   "es": "El eritema apareció tras la picadura.",
+   "ar": "ظهر الاحمرار بعد اللسعة.",
+   "eg": "الجلد احمرّ بعد القرصة."
+  },
+  {
+   "id": "vocab:cv-topic-health#esclerosis",
+   "es": "La esclerosis múltiple afecta a los nervios.",
+   "ar": "التصلب المتعدد يؤثر في الأعصاب.",
+   "eg": "التصلب المتعدد بيأثر على الأعصاب."
+  },
+  {
+   "id": "vocab:cv-topic-health#escoliosis",
+   "es": "La escoliosis leve se corrige con ejercicios.",
+   "ar": "انحراف العمود الفقري الخفيف يُصحح بالتمارين.",
+   "eg": "اعوجاج الضهر الخفيف بيتظبط بالتمارين."
+  },
+  {
+   "id": "vocab:cv-topic-health#escápula",
+   "es": "La escápula se movió al levantar el brazo.",
+   "ar": "تحركت لوح الكتف عند رفع الذراع.",
+   "eg": "لوح الكتف اتحرك لما رفع إيده."
+  },
+  {
+   "id": "vocab:cv-topic-health#esputo",
+   "es": "El esputo debe analizarse en el laboratorio.",
+   "ar": "يجب تحليل البلغم في المختبر.",
+   "eg": "البلغم لازم يتحلل في المعمل."
+  },
+  {
+   "id": "vocab:cv-topic-health#esternón",
+   "es": "Sintió presión en el esternón al correr.",
+   "ar": "شعر بضغط في عظم القص عند الجري.",
+   "eg": "حسّ بضغط في عظم الصدر وهو بيجري."
+  },
+  {
+   "id": "vocab:cv-topic-health#hemorroides",
+   "es": "Las hemorroides mejoran con fibra y agua.",
+   "ar": "تتحسن البواسير بالألياف والماء.",
+   "eg": "البواسير بترتاح مع الألياف والمية الكتير."
+  },
+  {
+   "id": "vocab:cv-topic-health#hipotermia",
+   "es": "La hipotermia es un riesgo en la montaña.",
+   "ar": "انخفاض حرارة الجسم خطر في الجبال.",
+   "eg": "هبوط حرارة الجسم خطر في الجبل."
+  },
+  {
+   "id": "vocab:cv-topic-health#ictericia",
+   "es": "La ictericia del bebé se controló en el hospital.",
+   "ar": "ضُبط يرقان الرضيع في المستشفى.",
+   "eg": "اصفرار البيبي اتظبط في المستشفى."
+  },
+  {
+   "id": "vocab:cv-topic-health#leucemia",
+   "es": "La leucemia necesita tratamiento en centro especializado.",
+   "ar": "يحتاج سرطان الدم علاجًا في مركز متخصص.",
+   "eg": "سرطان الدم بيتعالج في مركز مخصوص."
+  },
+  {
+   "id": "vocab:cv-topic-health#marcapasos",
+   "es": "Le pusieron un marcapasos hace dos años.",
+   "ar": "وضعوا له منظم ضربات قلب منذ عامين.",
+   "eg": "ركّبوا له منظم نبضات من سنتين."
+  },
+  {
+   "id": "vocab:cv-topic-health#meninges",
+   "es": "Las meninges protegen el cerebro y la médula.",
+   "ar": "تحمي السحايا الدماغ والنخاع الشوكي.",
+   "eg": "السحايا زي غلاف بيحمي المخ والنخاع."
+  },
+  {
+   "id": "vocab:cv-topic-health#meningitis",
+   "es": "La meningitis exige hospitalización inmediata.",
+   "ar": "التهاب السحايا يستلزم دخول المستشفى فورًا.",
+   "eg": "التهاب السحايا لازم يدخل المستشفى على طول."
+  },
+  {
+   "id": "vocab:cv-topic-health#miocardio",
+   "es": "El miocardio se debilitó tras el infarto.",
+   "ar": "ضعفت عضلة القلب بعد الجلطة.",
+   "eg": "القلب نفسه ضعف بعد الأزمة."
+  },
+  {
+   "id": "vocab:cv-topic-health#nefritis",
+   "es": "La nefritis se detectó en un análisis de rutina.",
+   "ar": "اكتُشف التهاب الكلى في تحليل روتيني.",
+   "eg": "التهاب الكلى اتكشف في تحليل عادي."
+  },
+  {
+   "id": "vocab:cv-topic-health#nefrólogo",
+   "es": "El nefrólogo revisó los resultados del análisis.",
+   "ar": "راجع طبيب الكلى نتائج التحليل.",
+   "eg": "دكتور الكلى راجع نتيجة التحليل."
+  },
+  {
+   "id": "vocab:cv-topic-health#obstetricia",
+   "es": "Estudia obstetricia desde hace cinco años.",
+   "ar": "يدرس علم التوليد منذ خمس سنوات.",
+   "eg": "بيدرس توليد بقاله خمس سنين."
+  },
+  {
+   "id": "vocab:cv-topic-health#osteoporosis",
+   "es": "La osteoporosis se previene con calcio y sol.",
+   "ar": "تُتوقى هشاشة العظام بالكالسيوم والشمس.",
+   "eg": "هشاشة العظام بنحمي منها بالكالسيوم والشمس."
+  },
+  {
+   "id": "vocab:cv-topic-health#otorrinolaringólogo",
+   "es": "El otorrinolaringólogo revisó mis oídos.",
+   "ar": "فحص طبيب الأنف والأذن أذنيّ.",
+   "eg": "دكتور الأنف والأذن كشف على وداني."
+  },
+  {
+   "id": "vocab:cv-topic-health#pancreatitis",
+   "es": "La pancreatitis aguda causa dolor intenso.",
+   "ar": "التهاب البنكرياس الحاد يسبب ألمًا شديدًا.",
+   "eg": "التهاب البنكرياس الحاد وجعه بيكسر الضلوع."
+  },
+  {
+   "id": "vocab:cv-topic-health#patología",
+   "es": "La patología estudia los tejidos enfermos.",
+   "ar": "يدرس علم الأمراض الأنسجة المريضة.",
+   "eg": "علم الأمراض بيدرس شكل الأنسجة لما تمرض."
+  },
+  {
+   "id": "vocab:cv-topic-health#pericardio",
+   "es": "El pericardio rodea y protege el corazón.",
+   "ar": "يحيط التامور بالقلب ويحميه.",
+   "eg": "غشاء التامور بيلف حوالين القلب ويحميه."
+  },
+  {
+   "id": "vocab:cv-topic-health#peritoneo",
+   "es": "El peritoneo recubre los órganos del abdomen.",
+   "ar": "يبطن الصفاق أعضاء البطن.",
+   "eg": "الصفاق بيغطّي أعضاء البطن."
+  },
+  {
+   "id": "vocab:cv-topic-health#peritonitis",
+   "es": "La peritonitis es una urgencia quirúrgica.",
+   "ar": "التهاب الصفاق حالة جراحية طارئة.",
+   "eg": "التهاب الصفاق لازم يتعملّه عملية على طول."
+  },
+  {
+   "id": "vocab:cv-topic-health#pleura",
+   "es": "La pleura rodea cada pulmón.",
+   "ar": "يحيط غشاء الجنب بكل رئة.",
+   "eg": "غشاء الجنب بيلف كل رئة."
+  },
+  {
+   "id": "vocab:cv-topic-health#radioterapia",
+   "es": "La radioterapia duró cinco semanas.",
+   "ar": "استمر العلاج الإشعاعي خمسة أسابيع.",
+   "eg": "العلاج الإشعاعي خد خمس أسابيع."
+  },
+  {
+   "id": "vocab:cv-topic-health#reanimación",
+   "es": "La reanimación empezó en menos de un minuto.",
+   "ar": "بدأ الإنعاش في أقل من دقيقة.",
+   "eg": "عملوا له إنعاش في أقل من دقيقة."
+  },
+  {
+   "id": "vocab:cv-topic-health#trombosis",
+   "es": "La trombosis apareció en la pierna izquierda.",
+   "ar": "ظهر التجلط في الساق اليسرى.",
+   "eg": "الجلطة ظهرت في الرجل الشمال."
+  },
+  {
+   "id": "vocab:cv-topic-health#tuberculosis",
+   "es": "La tuberculosis se trata durante seis meses.",
+   "ar": "يُعالج الدرن ستة أشهر.",
+   "eg": "الدرن بيتعالج ست شهور."
+  },
+  {
+   "id": "vocab:cv-topic-health#uretra",
+   "es": "La uretra se inflamó por la infección.",
+   "ar": "التهاب مجرى البول بسبب العدوى.",
+   "eg": "مجرى البول التهب من العدوى."
+  },
+  {
+   "id": "vocab:cv-topic-health#ventrículo",
+   "es": "El ventrículo izquierdo empuja la sangre a la aorta.",
+   "ar": "يدفع البطين الأيسر الدم إلى الأورطى.",
+   "eg": "البطين الشمال بيدفع الدم في الشريان الأورطي."
+  }
+ ]
+}

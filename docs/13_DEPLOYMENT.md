@@ -12,6 +12,29 @@
 | نطاق (domain) | ❌ | يُستخدم للنطاق المخصص للوسائط |
 | مزود بريد | ❌ | اختياري للنسخة الأولى (يُعلن غير مفعّل) |
 
+## 1.1 التحقق من إعداد KDF قبل النشر (إلزامي)
+
+```bash
+node tools/check-deploy-ready.mjs --file wrangler.production.toml
+```
+
+المتوقع: `PASS` مع **0 أخطاء · 0 حواجز · 0 تنبيهات**. الشرط الذي يفحصه صريحًا:
+
+| الشرط | القيمة المطلوبة | لماذا |
+| --- | --- | --- |
+| `ALLOW_PUBLIC_SIGNUP` | `"true"` | التسجيل العام مجاني ومفتوح (قرار 2026-10-30) |
+| `CLIENT_KDF_REQUIRED` | `"true"` | بدونها يقبل الخادم كلمة مرور خامًا على 30k فقط (5% من OWASP) |
+| `CLIENT_KDF_ITERATIONS` | `≥ 600000` | متطلب OWASP. أقل من ذلك مع تسجيل مفتوح = **خطأ مانع** لا تنازل |
+| `PBKDF2_ITERATIONS` | `≥ 20000` (الفعلي `30000`) | حدّ الخطة المجانية: 30k ≈ 5ms داخل 10ms |
+
+بعد النشر، تحقّق يدوي واحد (بلا أسرار في المخرجات):
+
+```bash
+curl -s -X POST https://<origin>/api/auth/kdf-params -H 'content-type: application/json' \
+  -d '{"email":"probe@example.com"}'   # يجب: 200 + iterations=600000 + cache-control: no-store
+```
+
+
 ## 2. البنية المستهدفة
 
 ```
@@ -39,8 +62,10 @@ npx wrangler d1 migrations apply es-ar-staging --remote
 npm run seed:reference -- --env staging
 npm run admin:create -- --env staging --email <owner-email>   # لا كلمة مرور في المستودع
 
-# 5) أسرار
-npx wrangler secret put SESSION_PEPPER --env staging
+# 5) أسرار (الأسماء كما يقرأها الكود فعليًا — لا SESSION_PEPPER)
+#    PASSWORD_PEPPER: إلزامي، ≥32 محرفًا عشوائيًا. بدونه كل مسار مصادقة يعيد 503.
+npx wrangler secret put PASSWORD_PEPPER --env staging
+npx wrangler secret put GOOGLE_CLIENT_SECRET --env staging   # لتفعيل الدخول عبر Google
 npx wrangler secret put VAPID_PRIVATE_KEY --env staging      # عند تفعيل Push
 
 # 6) نشر
@@ -52,7 +77,8 @@ npx wrangler deploy --env staging
 
 - [ ] `node tools/check-sql.mjs` PASS
 - [ ] `node tools/validate-content.mjs` PASS (0 أخطاء)
-- [ ] `npm run deploy:preflight` **(إلزامي)** — على `wrangler.toml` الملتزَم (إعداد تطوير) يجب أن يعطي `FAIL` (كود خروج 1): هذا هو سلوكه الصحيح، فهو يرفض نشر إعداد التطوير. `PASS` (0) مطلوب فقط عند فحص ملف/قسم إنتاج حقيقي.
+- [ ] `node tools/check-deploy-ready.mjs --file wrangler.production.toml` **(إلزامي — PASS مطلوب على ملف الإنتاج)**
+- [ ] `npm run deploy:preflight` (على `wrangler.toml` التطويري) — على `wrangler.toml` الملتزَم (إعداد تطوير) يجب أن يعطي `FAIL` (كود خروج 1): هذا هو سلوكه الصحيح، فهو يرفض نشر إعداد التطوير. `PASS` (0) مطلوب فقط عند فحص ملف/قسم إنتاج حقيقي.
   - يقرأ قسم المتغيّرات تلقائيًا: `[env.production.vars]` إن وُجد، وإلا `[vars]`. لبيئة أخرى: `--env staging`.
 - [ ] `npm run test` + `node tools/smoke-worker.mjs` + `test:e2e` كلها خضراء
 - [ ] المراجعة البشرية: 100% من الدروس المنشورة لها سجلا مراجعة

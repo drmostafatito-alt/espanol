@@ -29,9 +29,9 @@
 
 - **الخطة المجانية فقط** — رُفض خيار Workers ‏المدفوع صراحةً («عاوزه حل مجاني مش عاوز اي حاجه بفلوس»).
 - **مصادقة خارجية مجانية للهوية** — ‏Google، كاستثناء ضيّق من قاعدة «لا خدمات تشغيل خارجية» للمصادقة فقط.
-- **التسجيل العام بكلمة مرور مغلق** (`ALLOW_PUBLIC_SIGNUP = "false"`)، وكلمة المرور تبقى لحسابات قائمة فقط.
-- **PBKDF2 ‏30k** هو سقف الخطة المجانية (‏5% ‏من ‏OWASP ‏600k)؛ يبقى حاجز إطلاق موثّقًا
-  لمسار كلمة المرور، ولا يُرفع إلى ‏600k ‏على الخطة المجانية (كان سيتجاوز حد ‏CPU ‏10ms).
+- **التسجيل العام بالبريد + كلمة المرور مفتوح ومجاني** (`ALLOW_PUBLIC_SIGNUP = "true"`) — قرار 2026-10-30 (أُلغي إغلاق التسجيل).
+- **اشتقاق على طبقتين** بدل رفع تكرارات الخادم: ‏600k ‏في المتصفح (‏WebCrypto، مجاني) + ‏30k ‏على الخادم مع pepper
+  ⇒ ‏≥630k ‏لكل تخمين. لا يُرفع `PBKDF2_ITERATIONS` فوق ‏30k ‏على الخطة المجانية (‏94ms ‏تتجاوز حد ‏CPU ‏10ms ‏فيُقتل الطلب).
 - **لا حذف ولا إعادة رفع للمستودع** لإصلاح ‏CI؛ لا تغيير لبيانات الإنتاج أو الأسرار دون إذن صريح.
 
 ## 3. المتطلبات الخارجية (على المالك، قبل أي أمر نشر)
@@ -57,7 +57,7 @@
 فالملف المستقل آمن من الفحص التلقائي.
 
 الملف يحمل القيم المعروفة فقط (`ENVIRONMENT = "production"`،
-`ALLOW_PUBLIC_SIGNUP = "false"`، `PBKDF2_ITERATIONS = "30000"`،
+`ALLOW_PUBLIC_SIGNUP = "true"`، `CLIENT_KDF_REQUIRED = "true"`، `CLIENT_KDF_ITERATIONS = "600000"`، `PBKDF2_ITERATIONS = "30000"`،
 `SESSION_TTL_DAYS = "30"`، الاسم والتوافق والأصول وربط D1 بالاسم `es-ar-prod`)،
 والقيم الناقصة **محذوفة عمدًا لا مخترعة**: لا سطر `database_id`، ولا
 `APP_ORIGIN`، ولا `GOOGLE_CLIENT_ID`، ولا أي سر. فحصه الحالي (موثّق بتشغيل
@@ -345,3 +345,45 @@ PUBLISH_SESSION_COOKIE='ses=...' node tools/publish-lesson.mjs --slug prea1-abec
 مسرَّبة؛ التخفيف القائم: الـpepper ‏(فصل نطاقي ‏HMAC — قاعدة مسروقة وحدها
 لا تكفي دون السر الخارجي) + سياسة كلمة مرور قوية + حدود معدل/قفل تخمين.
 الرقم الملزم مستقبلًا من ‏`wrangler tail` ‏بعد أول نشر، لا من القياس المحلي.
+
+---
+
+## 13. تحديث 2026-10-30 (يُلغي ما يخالفه في §1 و§3 و§6)
+
+| البند | الحالة الآن |
+| --- | --- |
+| التسجيل العام | **مفتوح مجانًا** (`ALLOW_PUBLIC_SIGNUP="true"`) — لم يعد مغلقًا |
+| كلمة المرور | **لا تُرسل إلى الخادم**: 600,000 PBKDF2 في المتصفح + 30,000 على الخادم + pepper ⇒ صيغة `kdfv2` |
+| بوابة KDF | لم تعد حاجزًا: `check-deploy-ready` يعتبر التركيب الطبقي مطابقًا (600k عميل + 30k خادم). آخر تشغيل: **PASS 0/0/0** |
+| الدروس | 258 (PREA1 12 · A1 41 · A2 64 · B1 69 · B2 40 · C1 32)، كلها published/approved بمراجعة آلية |
+| المفردات | 8,577 مدخلًا · 8,580 جملة · فصحى 8,580 · مصرية **4,606 (53.7%)** |
+| الأمثلة القالبية المتبقية | **292** (كانت 414) |
+| البريد | مسارات تحقق/استعادة جاهزة ومُختبَرة بالصندوق التطويري؛ **الإرسال الفعلي غير مُتحقَّق** (لا `RESEND_API_KEY`) |
+| المتصفح | Chromium فقط، ثلاثة أحجام (320 / desktop / Android): **63/63** |
+| الاختبارات | vitest **695/695** · دخان Worker **33/33** · validate PASS (9538 تنبيهًا، بلا زيادة) · SQL 141,418 أمرًا ×2 بلا تكرار |
+
+### 13.1 ما يجب فعله قبل النشر (بالترتيب)
+
+1. `wrangler secret put PASSWORD_PEPPER --config wrangler.production.toml` (≥32 بايت عشوائي).
+2. `wrangler secret put RESEND_API_KEY --config wrangler.production.toml` — **اختياري لكنه شرط عمل البريد**.
+   إن غاب: التسجيل والدخول يعملان، ورسائل التحقق/الاستعادة لا تُرسل، والواجهة تقول ذلك صراحةً.
+3. توثيق نطاق الإرسال عند Resend ثم `MAIL_FROM="الاسم <no-reply@النطاق>"` في `[vars]`.
+4. تعيين `database_id` الحقيقي في `wrangler.production.toml` (النائب الحالي يرفضه preflight).
+5. `node tools/check-deploy-ready.mjs --file wrangler.production.toml` ⇒ يجب أن يبقى PASS.
+6. `node tools/export-content-sql.mjs --out release.sql` ثم
+   `wrangler d1 execute <DB> --remote --file=release.sql --config wrangler.production.toml`.
+7. `wrangler deploy --config wrangler.production.toml`.
+8. `node tools/verify-production-live.mjs` بعد النشر (قراءة فقط).
+
+### 13.2 النسخ الاحتياطي والتراجع
+
+```
+# نسخة قبل أي كتابة على الإنتاج
+wrangler d1 export <DB> --remote --output=backup-$(date +%Y%m%d-%H%M).sql --config wrangler.production.toml
+# تراجع الكود والأصول
+wrangler deployments list --config wrangler.production.toml
+wrangler rollback <deployment-id> --config wrangler.production.toml
+```
+
+- **لا يُدوَّر `PASSWORD_PEPPER`** بلا مسار إعادة تعيين كامل: تدويره يبطل كل الحسابات (الملح الحتمي مشتق به).
+- المحتوى قابل لإعادة الاستيراد بلا مضاعفة: أُثبت بإعادة تنفيذ 141,418 أمرًا مرتين على قاعدة نظيفة.

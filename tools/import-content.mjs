@@ -52,7 +52,21 @@ if (dbId && dbId !== '00000000-0000-0000-0000-000000000000') refuse('database_id
 let sqliteDb = null;
 const sqliteDir = join(ROOT, '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
 if (existsSync(sqliteDir)) {
-  const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+  // metadata.sqlite ملف wrangler الداخلي وليس قاعدة D1 — كان يمنع اكتشاف القاعدة
+  // (length === 1) فيهبط الاستيراد إلى مسار wrangler البطيء: 150 ألف أمر عبر CLI.
+  const sqliteFiles = readdirSync(sqliteDir)
+    .filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
+  const realDbFiles = [];
+  for (const name of sqliteFiles) {
+    try {
+      const probe = new (await import('node:sqlite')).DatabaseSync(join(sqliteDir, name));
+      const n = probe.prepare("SELECT count(1) AS n FROM sqlite_master WHERE type='table' AND name IN ('lessons','programs','units')").get()?.n;
+      probe.close();
+      if (Number(n) === 3) realDbFiles.push(name);
+    } catch { /* ملف غير قابل للفتح = ليس قاعدة D1 */ }
+  }
+  sqliteFiles.length = 0;
+  sqliteFiles.push(...realDbFiles);
   if (sqliteFiles.length === 1) {
     const dbPath = join(sqliteDir, sqliteFiles[0]);
     // تجربة node:sqlite أولاً، ثم better-sqlite3 كبديل مدعوم
@@ -125,6 +139,19 @@ function currentVersions() {
   return map;
 }
 
+/* سياسة الإفراج الآلية: نفس ما يقرأه مُصدِّر SQL — فما يُنشر في الإنتاج
+ * يُنشر في القاعدة المحلية أيضًا، وتُسجَّل مراجعة آلية لكل نسخة مُفرج عنها.
+ * تُقرأ من الملف إن وُجد، ويمكن تعطيلها صريحًا بـ--no-release. */
+function loadReleasePolicy() {
+  if (process.argv.includes('--no-release')) return null;
+  try {
+    return JSON.parse(readFileSync(join(ROOT, 'content/review/release-policy.v1.json'), 'utf8'));
+  } catch {
+    return null;
+  }
+}
+const releasePolicy = loadReleasePolicy();
+
 const existingVersions = currentVersions();
 const allStatements = [];
 const aggregatedCounters = {};
@@ -132,12 +159,15 @@ const aggregatedCounters = {};
 const allUnresolved = [];
 const allLinks = [];
 const allLinkStatements = [];
+const missingBundleTitles = [];
 for (const targetDir of targetDirs) {
   // AUD-07: حلّ إحالات المفردات من جذر content/ كله، لا من مجلد الاستيراد فقط
-  const { statements, counters, errors, unresolvedVocabRefs, links, linkStatements, versions: planVersions } = buildContentPlan(join(ROOT, targetDir), {
+  const { statements, counters, errors, unresolvedVocabRefs, links, linkStatements, versions: planVersions, missingBundleTitles: missingTitles } = buildContentPlan(join(ROOT, targetDir), {
     existingVersions,
     lexiconDirs: [join(ROOT, 'content')],
+    releasePolicy,
   });
+  if (Array.isArray(missingTitles)) missingBundleTitles.push(...missingTitles);
   // تسلسل أرقام الإصدارات عبر المجلدات: بلا هذا يحسب كل مجلد رقم الإصدار من لقطة
   // البداية نفسها، فيتصادم درسٌ واحد بمحتوى مختلف (العينة + المسودة) على
   // UNIQUE(lesson_id, version_no) ويُسقط الاستيراد كاملًا.
@@ -158,6 +188,12 @@ for (const targetDir of targetDirs) {
   for (const [k, v] of Object.entries(counters)) {
     aggregatedCounters[k] = (aggregatedCounters[k] ?? 0) + v;
   }
+}
+
+if (missingBundleTitles.length) {
+  const uniqTitles = [...new Set(missingBundleTitles)].sort();
+  console.log(`\n⚠️ حزم مفردات بلا عنوان عربي (titleAr): ${uniqTitles.length} — كُتب لها عنوان بديل واضح، وأُبلغ عنها.`);
+  for (const slug of uniqTitles) console.log(`   - ${slug}`);
 }
 
 if (allUnresolved.length) {
@@ -263,4 +299,16 @@ if (verifyReport) {
     process.exit(1);
   }
 }
-console.log('\n\n✅ تم الاستيراد — كل الصفوف بحالة draft / unreviewed. لم يُنشر شيء.');
+/* الرسالة تُشتق من السياسة نفسها لا من نص ثابت: لا تدّعِ «لم يُنشر شيء»
+ * إذا كانت سياسة الإفراج قد نشرت دروسًا. */
+{
+  let released = 0, blocked = 0;
+  for (const v of Object.values(releasePolicy?.lessons ?? {})) {
+    if (v?.released) released += 1; else blocked += 1;
+  }
+  if (released) {
+    console.log(`\n\n✅ تم الاستيراد — ${released} درسًا published/approved بمراجعة آلية (ai+automated، reviewer_id=NULL)${blocked ? `، ${blocked} درسًا بقي draft` : ''}.`);
+  } else {
+    console.log('\n\n✅ تم الاستيراد — كل الصفوف بحالة draft / unreviewed. لم يُنشر شيء.');
+  }
+}

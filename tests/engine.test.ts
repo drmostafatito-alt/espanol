@@ -3,7 +3,7 @@
  * كل اختبار هنا يقابل بندًا في docs/22_PHASE2_REPORT.md.
  */
 import { describe, it, expect, beforeEach } from 'vitest';
-import { makeHarness, VALID_EMAIL, type Harness } from './harness';
+import { makeHarness, authBody, VALID_EMAIL, type Harness } from './harness';
 import { gradeAnswer, gradingModeOf } from '../src/worker/lib/grading';
 import { correctAnswer, importExemplars } from './content-fixture';
 import { PLACEMENT_QUESTIONS } from '../src/worker/lib/placement-bank';
@@ -14,7 +14,7 @@ let h: Harness;
 let cookie: string;
 
 async function signup(hh: Harness, email = VALID_EMAIL) {
-  const res = await hh.call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password: PW, displayName: 'سارة' }) });
+  const res = await hh.call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ ...(await authBody(hh, email, PW)), displayName: 'سارة' }) });
   expect(res.status).toBe(201);
   return hh.cookieOf(res)!;
 }

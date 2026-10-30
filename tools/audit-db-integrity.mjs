@@ -10,7 +10,7 @@ if (!targetFile) {
     console.error('🛑 لم يتم العثور على مجلد D1 المحلي (.wrangler/.../miniflare-D1DatabaseObject).');
     process.exit(1);
   }
-  const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+  const sqliteFiles = readdirSync(sqliteDir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
   if (sqliteFiles.length !== 1) {
     console.error(`🛑 عدد ملفات SQLite غير متوقع (${sqliteFiles.length}). يجب أن يكون ملف واحد فقط.`);
     process.exit(1);

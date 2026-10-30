@@ -73,16 +73,55 @@ describe('المسار الكامل على ملف تجريبي محلي', () => 
       const count = (t: string) => (db.prepare(`SELECT COUNT(*) AS n FROM ${t}`).get() as { n: number }).n;
       expect(count('schema_migrations')).toBe(5);
       expect(count('lessons')).toBe(258);
-      expect(count('exercises')).toBe(1567);
+      // 1560 لا 1567: درس العيّنة `content/exemplars/lesson-prea1-hola-me-llamo.json`
+      // يكرّر درس المنهج نفسه (slug واحد) بسبعة تمارين بمعرّفات مختلفة. المحتوى
+      // الحقيقي (drafts) هو المرجع، والعيّنة تُسقَط من الاستيراد بدل إدخال نسختين
+      // للدرس الواحد (ملفها باقٍ في المستودع ومُبلَّغ في سجل الاستيراد).
+      expect(count('exercises')).toBe(1560);
       expect(count('vocabulary_entries')).toBe(8577);
-      // الروابط: 2120 زوجًا مخططًا (يتحقق منها السكربت نفسه: موجودة 2120/2120،
-      // بلا مفقود)، و2163 صفًا إجمالًا — الفرق روابط تصدرها خطط المجلدات خارج
+      // الروابط: 2122 زوجًا مخططًا (يتحقق منها السكربت نفسه: موجودة 2122/2122،
+      // بلا مفقود)، و2165 صفًا إجمالًا — الفرق روابط تصدرها خطط المجلدات خارج
       // مجموعة collectGlobalLinks (مشروع، بمفتاح فريد). قاعدة العمل المحلية
-      // تحوي 2168 لتراكم 5 روابط قديمة عبر تاريخ المحتوى (الاستيراد إلحاقي
+      // تحوي 2170 لتراكم 5 روابط قديمة عبر تاريخ المحتوى (الاستيراد إلحاقي
       // بلا حذف) — ليست تكرارًا: كل زوج فريد بمفتاحه.
-      expect(count('lesson_vocabulary')).toBe(2163);
-      expect((db.prepare("SELECT COUNT(*) AS n FROM lessons WHERE status <> 'draft'").get() as { n: number }).n).toBe(0);
-      expect((db.prepare("SELECT COUNT(*) AS n FROM lesson_versions WHERE review_state <> 'unreviewed'").get() as { n: number }).n).toBe(0);
+      // 2165 بدل 2163: حُسمت إحالتان في الدرس نفسه — «fui» تشير إلى ir و«visto»
+      // إلى ver (LESSON_FORM_OVERRIDES في tools/lib/content-plan.mjs، الحسم مكتوب
+      // من نص الدرسين) فصارتا رابطين فعليين بدل إحالتين غير محلولة.
+      expect(count('lesson_vocabulary')).toBe(2165);
+      /* سير العمل: كل درس مستورد له قرار صريح في سياسة الإفراج
+         (content/review/release-policy.v1.json). الحالة تُشتق من المصدر نفسه
+         لا من أرقام مكتوبة يدويًا: كل slug مُفرَج عنه ⇒ published/approved،
+         وغيره ⇒ draft/unreviewed. */
+      const policy = JSON.parse(
+        readFileSync(join(process.cwd(), 'content/review/release-policy.v1.json'), 'utf8'),
+      ) as { lessons: Record<string, { released: boolean }>; totals: { released: number } };
+      const releasedSlugs = new Set(
+        Object.entries(policy.lessons).filter(([, v]) => v.released).map(([slug]) => slug),
+      );
+      const rows = db
+        .prepare(
+          `SELECT l.slug, l.status, lv.review_state
+             FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id`,
+        )
+        .all() as Array<{ slug: string; status: string; review_state: string }>;
+      expect(rows.length).toBe(258);
+      let publishedCount = 0;
+      for (const row of rows) {
+        const want = releasedSlugs.has(row.slug);
+        expect(row.status, `حالة ${row.slug}`).toBe(want ? 'published' : 'draft');
+        expect(row.review_state, `مراجعة ${row.slug}`).toBe(want ? 'approved' : 'unreviewed');
+        if (want) publishedCount += 1;
+      }
+      expect(publishedCount).toBeGreaterThanOrEqual(policy.totals.released - 1); // -1: درس عيّنة مكرر يُسقَط
+      /* إثبات المصدر: سجل مراجعة آلي لكل نسخة مُفرج عنها (3 مراحل)، بلا اسم
+         مراجع بشري — reviewer_id NULL في كل صفّ. */
+      expect((db.prepare("SELECT COUNT(*) AS n FROM content_review_records").get() as { n: number }).n).toBe(publishedCount * 3);
+      expect((db.prepare("SELECT COUNT(*) AS n FROM content_review_records WHERE reviewer_id IS NOT NULL").get() as { n: number }).n).toBe(0);
+      expect((db.prepare("SELECT COUNT(*) AS n FROM content_review_records WHERE decision <> 'passed'").get() as { n: number }).n).toBe(0);
+      expect((db.prepare(`SELECT COUNT(*) AS n FROM lessons l
+        JOIN lesson_versions lv ON lv.id = l.current_version_id
+        WHERE l.status = 'published'
+          AND (SELECT COUNT(*) FROM content_review_records r WHERE r.target_id = lv.id) <> 3`).get() as { n: number }).n).toBe(0);
       db.close();
 
       // إعادة التطبيق: نفس الأعداد تمامًا — بلا صفوف مكررة وبلا إصدارات جديدة
@@ -91,9 +130,9 @@ describe('المسار الكامل على ملف تجريبي محلي', () => 
       const db2 = new DatabaseSync(dbPath);
       const count2 = (t: string) => (db2.prepare(`SELECT COUNT(*) AS n FROM ${t}`).get() as { n: number }).n;
       expect(count2('lessons')).toBe(258);
-      expect(count2('exercises')).toBe(1567);
+      expect(count2('exercises')).toBe(1560);
       expect(count2('vocabulary_entries')).toBe(8577);
-      expect(count2('lesson_vocabulary')).toBe(2163);
+      expect(count2('lesson_vocabulary')).toBe(2165);
       expect(count2('schema_migrations')).toBe(5);
       db2.close();
     } finally {

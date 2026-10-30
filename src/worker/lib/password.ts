@@ -35,6 +35,24 @@ export const OWASP_ITERATIONS_SHA256 = 600_000;
 
 export const FORMAT_V1 = 'pbkdf2-sha256';
 export const FORMAT_LEGACY = 'pbkdf2';
+/**
+ * الصيغة v2 — اشتقاق مُطبَّق على طبقتين (client-side stretching + server-side hash):
+ *   kdfv2$<serverIters>$<clientIters>$<salt-b64url>$<hash-b64url>
+ *
+ * لماذا؟ حد الخطة المجانية 10ms CPU/طلب يسمح بـ≈30,000 تكرار على الخادم فقط (5% من
+ * OWASP). المتصفح مجاني تمامًا: يُشتق المفتاح هناك بـ600,000 تكرار (متطلب OWASP)،
+ * ثم يطبّق الخادم 30,000 على الناتج عالي العشوائية + pepper. العبء على من يسرق
+ * القاعدة = 630,000 تكرار لكل تخمين + pepper غائب عن القاعدة، أي ≥ متطلب OWASP.
+ * القيد المعلن: التحقق من سياسة طول كلمة المرور يصبح في العميل، وعميل مخصّص يمكنه
+ * اختيار تكرارات أقل لحسابه هو فقط (لا يضر غيره). التفصيل في docs/SECURITY_BLOCKERS.md.
+ */
+export const FORMAT_V2 = 'kdfv2';
+/** تكرارات الاشتقاق في المتصفح — يجب أن تطابق CLIENT_KDF_ITERATIONS في إعداد الإنتاج. */
+export const CLIENT_KDF_ITERATIONS = 600_000;
+/** أرضية معقولة للعميل: أقل منها يُرفض الحساب (عميل قديم/معطوب). */
+export const MIN_CLIENT_KDF_ITERATIONS = 100_000;
+/** بادئة النطاق في اشتقاق ملح العميل — تمنع إعادة استخدام الملح في سياق آخر. */
+const CLIENT_SALT_PREFIX = 'es-kdfv2:';
 
 export interface PasswordPolicy {
   iterations: number;
@@ -145,10 +163,125 @@ export async function verifyPassword(password: string, stored: string, policy: P
 
 /** هل التجزئة المخزَّنة أقدم من السياسة الحالية؟ (تُرقّى عند أول دخول ناجح) */
 export function needsRehash(stored: string, policy: PasswordPolicy): boolean {
+  const v2 = parseV2(stored);
+  if (v2) return v2.serverIterations < policy.iterations;
   const p = parse(stored);
   if (!p) return true;
   if (p.legacy) return true;
   return p.iterations < policy.iterations;
+}
+
+/** هل الصف مُخزَّن بصيغة v2 (اشتقاق عميل)؟ يُستخدم لاختيار مسار التحقق بلا كشف خارجي. */
+export function isV2Hash(stored: string): boolean {
+  return parseV2(stored) !== null;
+}
+
+/**
+ * عمل وهمي بنفس تكلفة التحقق — لتوحيد الزمن بين «بريد غير موجود» و«بريد موجود».
+ * بلا ذلك يصبح زمن الاستجابة قناة كشف حسابات.
+ */
+export async function dummyVerifyWork(policy: PasswordPolicy): Promise<void> {
+  const salt = new Uint8Array(16);
+  const kim = await initialKeyMaterial('dummy-workload', policy.pepper);
+  await derive(kim, salt, policy.iterations);
+}
+
+/* ---------- الطبقة الثانية: اشتقاق العميل (v2) ---------- */
+
+export interface ClientKdfConfig {
+  iterations: number;
+  required: boolean;
+}
+
+/**
+ * إعداد اشتقاق العميل من البيئة. الافتراضي في غير بيئة الاختبار: إلزامي 600,000.
+ * القيمة تُقصّ إلى [MIN_CLIENT_KDF_ITERATIONS, MAX_ITERATIONS].
+ */
+export function resolveClientKdf(env: { CLIENT_KDF_ITERATIONS?: string; CLIENT_KDF_REQUIRED?: string; ENVIRONMENT?: string }): ClientKdfConfig {
+  const raw = Number(env.CLIENT_KDF_ITERATIONS);
+  const configured = Number.isFinite(raw) && raw > 0 ? Math.floor(raw) : CLIENT_KDF_ITERATIONS;
+  // عدد تكرارات المتصفح **جزء من الصيغة** لا إعداد حرّ: المفتاح المشتق يعتمد عليه،
+  // والخادم لا يستطيع معرفة العدد الذي استخدمه العميل إلا من الصف المخزَّن.
+  // لو تغيّر المتغيّر بين نشرين لاشتقّ كل مستخدم قائم مفتاحًا مختلفًا ⇒ قفل شامل
+  // للحسابات. ولو تجاهلناه صامتًا لسجّلنا clientIterations لا يطابق العمل الفعلي
+  // (تكرار «قوة» وهمية في سجل التدقيق الأمني). لذلك: قيمة مختلفة = فشل مغلق.
+  if (configured !== CLIENT_KDF_ITERATIONS) {
+    throw new PasswordPolicyError(
+      'BAD_ITERATIONS',
+      `CLIENT_KDF_ITERATIONS=${configured} يخالف ثابت الصيغة ${CLIENT_KDF_ITERATIONS}`,
+    );
+  }
+  const required = env.CLIENT_KDF_REQUIRED === 'true' || (env.CLIENT_KDF_REQUIRED !== 'false' && env.ENVIRONMENT !== 'test');
+  return { iterations: CLIENT_KDF_ITERATIONS, required };
+}
+
+/**
+ * ملح اشتقاق العميل: HMAC-SHA256(key=pepper, "es-kdfv2:"+email) مقتطعًا إلى 16 بايت.
+ * حتميّ لكل بريد ⇒ لا حاجة لتخزينه ولا يكشف وجود حساب: أي بريد يعطي ملحًا.
+ * وبما أن الـpepper مفتاح هذا الـHMAC، فمن يسرق القاعدة وحدها لا يستطيع حتى بدء
+ * الاشتقاق للتحقق من تخمين — وهذا سبب إضافي لبقاء الـpepper خارج القاعدة.
+ */
+export async function clientKdfSalt(emailNormalized: string, policy: PasswordPolicy): Promise<string> {
+  const key = await crypto.subtle.importKey('raw', enc.encode(policy.pepper), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(CLIENT_SALT_PREFIX + emailNormalized));
+  return b64url(new Uint8Array(sig).slice(0, 16));
+}
+
+/** شكل المفتاح المشتق المقبول من العميل: b64url لِـ32 بايت (43 محرفًا). */
+const DERIVED_KEY_RE = /^[A-Za-z0-9_-]{42,44}$/;
+
+export function isWellFormedDerivedKey(value: unknown): value is string {
+  if (typeof value !== 'string' || !DERIVED_KEY_RE.test(value)) return false;
+  try {
+    return fromB64url(value).length === 32;
+  } catch {
+    return false;
+  }
+}
+
+export async function hashDerivedKey(derivedKey: string, policy: PasswordPolicy, clientIterations: number): Promise<string> {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const kim = await initialKeyMaterial(derivedKey, policy.pepper);
+  const hash = await derive(kim, salt, policy.iterations);
+  // لا نكتب في الصف رقمًا لم نتحقق منه: الصيغة تعني أن العدد ثابت بروتوكوليًا.
+  // أي قيمة أخرى تعني أن المتغيّر تغيّر (سيُرفض عند القراءة أصلًا) — نرفض هنا أيضًا
+  // بدل تسجيل «قوة» لا وجود لها.
+  if (clientIterations !== CLIENT_KDF_ITERATIONS) {
+    throw new PasswordPolicyError('BAD_ITERATIONS', `clientIterations=${clientIterations} ≠ ${CLIENT_KDF_ITERATIONS}`);
+  }
+  return `${FORMAT_V2}$${policy.iterations}$${CLIENT_KDF_ITERATIONS}$${b64url(salt)}$${b64url(hash)}`;
+}
+
+interface ParsedV2 {
+  serverIterations: number;
+  clientIterations: number;
+  salt: Uint8Array;
+  hash: Uint8Array;
+}
+
+export function parseV2(stored: string): ParsedV2 | null {
+  const parts = stored.split('$');
+  if (parts.length !== 5 || parts[0] !== FORMAT_V2) return null;
+  const serverIterations = Number(parts[1]);
+  const clientIterations = Number(parts[2]);
+  if (!Number.isInteger(serverIterations) || serverIterations < 1_000 || serverIterations > MAX_ITERATIONS) return null;
+  if (!Number.isInteger(clientIterations) || clientIterations < 1) return null;
+  try {
+    const salt = fromB64url(parts[3]!);
+    const hash = fromB64url(parts[4]!);
+    if (salt.length !== 16 || hash.length !== 32) return null;
+    return { serverIterations, clientIterations, salt, hash };
+  } catch {
+    return null;
+  }
+}
+
+export async function verifyDerivedKey(derivedKey: string, stored: string, policy: PasswordPolicy): Promise<boolean> {
+  const p = parseV2(stored);
+  if (!p) return false;
+  const kim = await initialKeyMaterial(derivedKey, policy.pepper);
+  const actual = await derive(kim, p.salt, p.serverIterations);
+  return timingSafeEqual(actual, p.hash);
 }
 
 /* ---------- سياسة كلمة المرور نفسها ---------- */

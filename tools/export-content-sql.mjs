@@ -18,9 +18,20 @@
  *   node tools/export-content-sql.mjs --out /tmp/content.sql --dir content/drafts
  * الخروج: 1 عند أخطاء فحص المحتوى، 0 عند النجاح. لا يقرأ أي قاعدة ولا يكتب فيها.
  */
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readdirSync, statSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { buildContentPlan, collectGlobalLinks, linkInsertStatement } from './lib/content-plan.mjs';
+import { buildContentPlan, collectLessonSlugs, collectGlobalLinks, linkInsertStatement, dedupePlanStatements } from './lib/content-plan.mjs';
+
+
+/** سياسة الإفراج الآلية (إن وُجدت): تُنشر دروسها وتُسجَّل لها مراجعة آلية. */
+function loadReleasePolicy() {
+  const file = join(ROOT, 'content/review/release-policy.v1.json');
+  try {
+    return JSON.parse(readFileSync(file, 'utf8'));
+  } catch {
+    return null;
+  }
+}
 
 const ROOT = resolve(import.meta.dirname, '..');
 
@@ -50,17 +61,28 @@ if (argv.includes('--remote') || argv.some(a => a.startsWith('--env'))) {
 }
 
 const targetDirs = dirArg ? [dirArg] : ['content/exemplars', 'content/drafts'];
+
+/* درس العيّنة (exemplars) المكرر بمعرّف درس موجود في المحتوى الحقيقي (drafts):
+ * `prea1-hola-me-llamo` موجود في المجلدين بنصّين متقاربين، فيدخل الدرس مرتين
+ * بنسختين وإصدارين وتمارين مكرّرة. المحتوى الحقيقي هو المرجع، والعيّنة تُسقَط
+ * من الاستيراد (لا تُحذف من المستودع) مع إبلاغ صريح. */
+const draftLessonSlugs = dirArg ? null : collectLessonSlugs(join(ROOT, 'content/drafts'));
+const releasePolicy = loadReleasePolicy();
 const existingVersions = {};
 const allStatements = [];
 const allLinkStatements = [];
 const allUnresolved = [];
+const allConflicts = [];
 const aggregatedCounters = {};
 
 for (const targetDir of targetDirs) {
-  const { statements, counters, errors, unresolvedVocabRefs, linkStatements, versions: planVersions } = buildContentPlan(join(ROOT, targetDir), {
+  const { statements, counters, errors, unresolvedVocabRefs, linkStatements, versions: planVersions, conflicts: planConflicts } = buildContentPlan(join(ROOT, targetDir), {
     existingVersions,
     lexiconDirs: [join(ROOT, 'content')],
+    skipLessonSlugs: targetDir === 'content/exemplars' ? draftLessonSlugs : null,
+    releasePolicy,
   });
+  if (Array.isArray(planConflicts)) allConflicts.push(...planConflicts);
   if (Array.isArray(unresolvedVocabRefs)) allUnresolved.push(...unresolvedVocabRefs);
   if (Array.isArray(linkStatements)) allLinkStatements.push(...linkStatements);
   if (errors.length) {
@@ -95,18 +117,29 @@ const header = [
   'PRAGMA foreign_keys = ON;',
   '',
 ].join('\n');
-const body = [...allStatements, ...dedupedLinkStatements].join(`;\n${STMT_BOUNDARY}\n`) + ';\n';
+// تنقية عبر المجلدات أيضًا (نفس المدخل قد يرد في exemplars وdrafts)
+const finalPlan = dedupePlanStatements([...allStatements, ...dedupedLinkStatements]);
+const finalStatements = finalPlan.statements;
+allConflicts.push(...finalPlan.conflicts);
+if (allConflicts.length) {
+  console.log(`⚠️ تعارضات مفتاح (أول ظهور فاز، والباقي أُسقط): ${allConflicts.length}`);
+  for (const c of allConflicts.slice(0, 8)) console.log(`   - ${c.table}: ${c.key}`);
+  if (allConflicts.length > 8) console.log(`   … و${allConflicts.length - 8} أخرى`);
+}
+const body = finalStatements.join(`;\n${STMT_BOUNDARY}\n`) + ';\n';
 writeFileSync(resolve(outPath), header + body, 'utf8');
 
 const manifest = {
   generatedAt: new Date().toISOString(),
   dirs: targetDirs,
-  statements: allStatements.length,
+  statements: finalStatements.length,
   linkStatements: dedupedLinkStatements.length,
-  total: allStatements.length + dedupedLinkStatements.length,
+  total: finalStatements.length,
+  conflicts: allConflicts.length,
+  conflictKeys: allConflicts.slice(0, 50).map(c => `${c.table}:${c.key}`),
   counters: aggregatedCounters,
   unresolvedRefs: allUnresolved.length,
   unresolvedWords: [...new Set(allUnresolved.map(u => u.word))].sort(),
 };
 if (manifestPath) writeFileSync(resolve(manifestPath), JSON.stringify(manifest, null, 2), 'utf8');
-console.log(`✅ كُتب ${manifest.total} أمرًا (${allStatements.length} محتوى + ${dedupedLinkStatements.length} ربطًا) إلى ${outPath}`);
+console.log(`✅ كُتب ${manifest.total} أمرًا (${allStatements.length} من الخطة + ${dedupedLinkStatements.length} ربطًا، بعد إسقاط ${allStatements.length + dedupedLinkStatements.length - finalStatements.length} تكرارًا) إلى ${outPath}`);

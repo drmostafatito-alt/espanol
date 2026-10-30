@@ -4,7 +4,7 @@
  * حالة التحقق: شُغِّلت فعليًا ونجحت على Chromium وFirefox (2026-10-21).
  */
 import { expect, test } from '@playwright/test';
-import { A1, FIRST_LESSON, PREA1, completeLessonThroughUi, enterExercises, signupThroughApi, uniqueEmail } from './helpers';
+import { FIRST_LESSON, PREA1, SECOND, completeLessonThroughUi, enterExercises, signupThroughApi, uniqueEmail } from './helpers';
 
 test.describe('مسار الدرس', () => {
   test('زائر بلا جلسة على /learn يُحوَّل إلى الدخول', async ({ page }) => {
@@ -33,19 +33,19 @@ test.describe('مسار الدرس', () => {
     expect(progress.totals.lessons_completed).toBe(1);
   });
 
-  test('درس A1 مقفل قبل إتمام PREA1، ويُفتح بعده', async ({ page }) => {
+  test('الدرس التالي في الوحدة مقفل قبل إتمام السابق، ويُفتح بعده', async ({ page }) => {
     await signupThroughApi(page, uniqueEmail('lock'));
 
-    await page.goto(`/learn/${A1}`);
+    await page.goto(`/learn/${SECOND}`);
     await expect(page.getByText(/مقفل/)).toBeVisible();
     await expect(page.getByTestId('lesson-submit')).toHaveCount(0);
 
     await page.goto(`/learn/${PREA1}`);
     await completeLessonThroughUi(page, PREA1);
 
-    await page.goto(`/learn/${A1}`);
+    await page.goto(`/learn/${SECOND}`);
     await enterExercises(page);
-    await expect(page.getByTestId('lesson-submit').or(page.locator('.choice'))).toBeVisible();
+    await expect(page.getByTestId('lesson-submit').or(page.locator('.choice')).first()).toBeVisible();
   });
 
   test('لوحة التقدم لا تعرض أرقامًا وهمية', async ({ page }) => {

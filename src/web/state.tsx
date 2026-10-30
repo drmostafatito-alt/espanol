@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { api, ApiError, invalidateInFlightAuth, onUnauthorized, type ApiUser } from './api';
-import { bindPendingQueue, clearPendingQueue } from './pages/Review';
+import { bindPendingQueue, clearPendingQueue } from './review-queue';
 
 /* ---------- التوجيه (بلا مكتبة: مسارات بسيطة + سجل المتصفح) ---------- */
 export function useRoute(): [string, (to: string) => void] {

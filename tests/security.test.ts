@@ -3,7 +3,7 @@
  * كل اختبار هنا يقابل بندًا في docs/21_SECURITY_REVIEW_PHASE1.md.
  */
 import { describe, it, expect, beforeEach } from 'vitest';
-import { makeHarness, signupAndGetCookie, VALID_PW, VALID_EMAIL, type Harness } from './harness';
+import { makeHarness, signupAndGetCookie, authBody, VALID_PW, VALID_EMAIL, type Harness } from './harness';
 import { b64url } from '../src/worker/lib/crypto';
 
 const PEPPER = 'test-pepper-0123456789abcdefghijklmnop';
@@ -239,13 +239,13 @@ describe('S-B: الجلسات والكوكيز وCSRF', () => {
     // نفس الحساب مرتين بعنوانين مختلفين: يجب أن تتطابق البصمة لأن XFF مُهمَل
     const a = await prod.call('/api/auth/signup', {
       method: 'POST', headers: { 'X-Forwarded-For': '1.2.3.4' },
-      body: JSON.stringify({ email: 'xff@example.com', password: 'Cairo2026learn' }),
+      body: JSON.stringify(await authBody(prod, 'xff@example.com', 'Cairo2026learn')),
     });
     expect(a.status).toBe(201);
     const rowA = prod.db.raw.prepare('SELECT ip_hash FROM sessions').get() as { ip_hash: string };
     const b = await prod.call('/api/auth/signup', {
       method: 'POST', headers: { 'X-Forwarded-For': '9.9.9.9' },
-      body: JSON.stringify({ email: 'xff2@example.com', password: 'Cairo2026learn' }),
+      body: JSON.stringify(await authBody(prod, 'xff2@example.com', 'Cairo2026learn')),
     });
     expect(b.status).toBe(201);
     const rows = prod.db.raw.prepare('SELECT ip_hash FROM sessions').all() as { ip_hash: string }[];

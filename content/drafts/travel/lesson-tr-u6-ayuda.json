@@ -189,32 +189,14 @@
       },
       {
         "id": "tr_u6_ayuda_3_fill",
-        "type": "word_choice",
+        "type": "fill_blank",
         "mode": "graded",
-        "instructionAr": "أي رقم تتصل به للطوارئ في إسبانيا؟",
-        "options": [
-          {
-            "id": "tr_u6_ayuda_3_fill_a",
-            "text": "112",
-            "isCorrect": true
-          },
-          {
-            "id": "tr_u6_ayuda_3_fill_b",
-            "text": "911",
-            "isCorrect": false,
-            "distractorRationaleAr": "911 رقم طوارئ أمريكا الشمالية، لا إسبانيا."
-          },
-          {
-            "id": "tr_u6_ayuda_3_fill_c",
-            "text": "999",
-            "isCorrect": false,
-            "distractorRationaleAr": "999 رقم طوارئ بريطانيا، لا إسبانيا."
-          }
-        ],
+        "instructionAr": "اكتب صيغة الأمر الرسمية من الفعل llamar داخل الفراغ.",
         "answerKey": {
-          "correctOptionIds": [
-            "tr_u6_ayuda_3_fill_a"
-          ]
+          "accepted": [
+            "Llame"
+          ],
+          "caseSensitive": false
         },
         "explanationAr": "«Llame al 112» بصيغة المخاطبة الرسمية usted: Llame. و«al» من دمج a + el، والرقم 112 رقم الطوارئ الموحد.",
         "errorFeedback": {
@@ -232,7 +214,9 @@
         ],
         "scoring": {
           "mode": "all_or_nothing"
-        }
+        },
+        "stemEs": "____ al 112 ahora, por favor.",
+        "stemAr": "____ بالرقم 112 الآن من فضلك."
       },
       {
         "id": "tr_u6_ayuda_4_order",

@@ -4,7 +4,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 const D1_DIR = '.wrangler/state/v3/d1/miniflare-D1DatabaseObject';
-const dbFiles = (() => { try { return readdirSync(D1_DIR).filter(f => f.endsWith('.sqlite') && !f.includes('-wal') && !f.includes('-shm')); } catch { return []; } })();
+const dbFiles = (() => { try { return readdirSync(D1_DIR).filter(f => f.endsWith('.sqlite') && !f.includes('-wal') && !f.includes('-shm') && !f.startsWith('metadata')); } catch { return []; } })();
 if (dbFiles.length !== 1) {
   console.error(dbFiles.length === 0
     ? '❌ لا قاعدة D1 محلية. شغّل: npm run db:migrate:local ثم الاستيراد المحلي أولًا.'

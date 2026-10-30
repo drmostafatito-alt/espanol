@@ -212,6 +212,17 @@ export async function revokeOtherSessions(env: Env, userId: string, currentToken
   return Number(res.meta?.changes ?? 0);
 }
 
+/** يُبطل كل جلسات المستخدم (بلا استثناء) — يُستعمل بعد إعادة تعيين كلمة المرور. */
+export async function revokeAllSessionsForUser(env: Env, userId: string): Promise<number> {
+  const res = await env.DB.prepare(
+    `UPDATE sessions SET revoked_at = strftime('%Y-%m-%dT%H:%M:%fZ','now')
+     WHERE user_id = ? AND revoked_at IS NULL`,
+  )
+    .bind(userId)
+    .run();
+  return Number(res.meta?.changes ?? 0);
+}
+
 /** سقف الجلسات النشطة لكل مستخدم: يمنع تراكم الرموز المسروقة إلى ما لا نهاية. */
 export const MAX_SESSIONS_PER_USER = 10;
 

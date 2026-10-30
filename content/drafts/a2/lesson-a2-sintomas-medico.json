@@ -104,7 +104,7 @@
           {
             "id": "ex-a2-sin-1_a",
             "text": "estoy",
-            "textAr": "يعبر عن الحالة الصحية المتغيرة (الصواب)",
+            "textAr": "يعبر عن الحالة الصحية المتغيرة",
             "isCorrect": true
           },
           {
@@ -187,7 +187,7 @@
           {
             "id": "ex-a2-sin-3_a",
             "text": "el síntoma",
-            "textAr": "مذكر مفرد (الصواب)",
+            "textAr": "مذكر مفرد",
             "isCorrect": true
           },
           {
@@ -253,12 +253,12 @@
           {
             "id": "ex-a2-sin-4_t4",
             "kind": "token",
-            "text": "mucha"
+            "text": "una"
           },
           {
             "id": "ex-a2-sin-4_t5",
             "kind": "token",
-            "text": "temperatura"
+            "text": "fiebre"
           },
           {
             "id": "ex-a2-sin-4_t6",
@@ -268,7 +268,7 @@
         ],
         "answerKey": {
           "accepted": [
-            "Tengo gripe y mucha temperatura alta"
+            "Tengo gripe y una fiebre alta"
           ],
           "tokenOrder": [
             "ex-a2-sin-4_t1",
@@ -279,7 +279,7 @@
             "ex-a2-sin-4_t6"
           ]
         },
-        "explanationAr": "الترتيب السليم: الفعل Tengo ثم المرض gripe ثم أداة العطف y والاسم والصفة mucha temperatura alta.",
+        "explanationAr": "الترتيب السليم: الفعل Tengo ثم المرض gripe ثم أداة العطف y ثم una fiebre alta (حرارة عالية).",
         "targetVocab": [
           "gripe",
           "temperatura"

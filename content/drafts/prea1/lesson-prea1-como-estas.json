@@ -203,7 +203,7 @@
         "id": "como_4_translate",
         "type": "translate_short",
         "mode": "graded",
-        "instructionAr": "ترجم إلى الإسبانية: أنا بخير، شكرًا.",
+        "instructionAr": "ترجم إلى الإسبانية.",
         "answerKey": {
           "accepted": [
             "Estoy bien, gracias.",
@@ -223,7 +223,8 @@
         "targetVocab": [
           "bien",
           "gracias"
-        ]
+        ],
+        "stemAr": "أنا بخير، شكرًا."
       },
       {
         "id": "como_5_reply",

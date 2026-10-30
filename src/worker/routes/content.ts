@@ -214,9 +214,14 @@ export function sanitizePublicContent(value: unknown, inExercises = false): unkn
 /* ============================================================================
    دورة حياة المحتوى: مراجعة ثم نشر (AUD-02) — بلا نشر تلقائي إطلاقًا
    ----------------------------------------------------------------------------
-   * المراجعة: تتطلب content.review_es **و** content.review_ar معًا (داخل
-     المعالج فوق فحص route المركزي)، وتسجّل اسمَي المراجعين في سجل التدقيق.
-     لا توجد مراجعة «صامتة» ولا أسماء مفبركة: الاسم يصل من المراجع نفسه.
+   * المراجعة مسارَان صريحان:
+     أ) البشري (mode='human'): يتطلب الصلاحيتين، واسمَي مراجعين حقيقيين يصلان
+        من المراجع نفسه — لا أسماء مفبركة.
+     ب) الآلي (mode='ai_automated'): لا يُقبل إلا إذا كانت النسخة الحالية تحمل
+        في content_review_records ثلاث مراحل passed (language_es، translation_ar،
+        automated) أنشأها مسار الإفراج الآلي من بوابات حقيقية. لا يُنشئ هذا
+        المسار السجلات بنفسه، فمن يستدعيه لا يستطيع «تأكيد» إفراج لم يحدث.
+        ويُسجَّل في سجل التدقيق بمصدر provenance=ai+automated وبلا اسم بشري.
    * النشر: يتطلب content.publish وأن تكون review_state = 'approved' (حالة الاعتماد في مخطط القاعدة) —
      درس غير مراجَع يستحيل نشره من هذا المسار (409).
    * كل انتقال يُسجَّل في admin_audit_logs بممثل الفعل ونتيجته.
@@ -244,18 +249,66 @@ async function loadForLifecycle(env: Env, slug: string) {
   return row;
 }
 
+const AI_REVIEW_STAGES = ['language_es', 'translation_ar', 'automated'] as const;
+
 export async function reviewLesson(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   if (!user.permissions.includes('content.review_ar')) {
     throw new HttpError(403, 'FORBIDDEN', 'يلزم صلاحيتا مراجعة الإسبانية والترجمة معًا.');
   }
   const slug = slugFrom(req);
-  const body = await readJson<{ spanishReviewer?: string; translationReviewer?: string }>(req);
+  const body = await readJson<{
+    spanishReviewer?: string;
+    translationReviewer?: string;
+    mode?: string;
+    validationRunId?: string;
+  }>(req);
+  const aiMode = body.mode === 'ai_automated';
+  const row = await loadForLifecycle(env, slug);
+
+  if (aiMode) {
+    const runId = typeof body.validationRunId === 'string' ? body.validationRunId.trim() : '';
+    if (runId && runId.length > 120) {
+      throw new HttpError(400, 'INVALID_VALIDATION_RUN', 'معرّف تشغيل التحقق طويل جدًا.');
+    }
+    /* الاعتماد الآلي لا يُبنى على ثقة الطالب: يشترط وجود سجلات passed فعلية
+       أنشأها مسار الإفراج (content_review_records) لهذه النسخة تحديدًا. */
+    const recs = await env.DB.prepare(
+      `SELECT stage, decision FROM content_review_records
+       WHERE target_type = 'lesson_version' AND target_id = ? AND stage IN ('language_es','translation_ar','automated')`,
+    ).bind(row.version_id).all<{ stage: string; decision: string }>();
+    const passed = new Set(
+      (recs.results ?? []).filter((r) => r.decision === 'passed').map((r) => String(r.stage)),
+    );
+    const missing = AI_REVIEW_STAGES.filter((stage) => !passed.has(stage));
+    if (missing.length) {
+      throw new HttpError(
+        409,
+        'AUTOMATED_VALIDATION_REQUIRED',
+        `لا اعتماد آلي بلا سجلات تحقق مكتملة لهذه النسخة (الناقص: ${missing.join(', ')}). شغّل مسار الإفراج أولًا.`,
+      );
+    }
+    await env.DB.batch([
+      env.DB.prepare(`UPDATE lesson_versions SET review_state = ? WHERE id = ?`).bind('approved', row.version_id),
+    ]);
+    await writeAudit(env.DB, {
+      id: ulid(), actorUserId: user.id, action: 'content.review.ai', targetType: 'lesson',
+      targetId: row.id, requestId, result: 'success',
+      after: {
+        slug,
+        provenance: 'ai+automated',
+        stages: [...AI_REVIEW_STAGES],
+        validationRunId: runId || null,
+        reviewedAt: new Date().toISOString(),
+      },
+    });
+    return json({ slug, reviewState: 'approved', provenance: 'ai+automated' }, {}, requestId);
+  }
+
   const spanishReviewer = typeof body.spanishReviewer === 'string' ? body.spanishReviewer.trim() : '';
   const translationReviewer = typeof body.translationReviewer === 'string' ? body.translationReviewer.trim() : '';
   if (!spanishReviewer || !translationReviewer || spanishReviewer.length > 80 || translationReviewer.length > 80) {
     throw new HttpError(400, 'REVIEWERS_REQUIRED', 'يلزم اسم مراجع الإسبانية واسم مراجع الترجمة.');
   }
-  const row = await loadForLifecycle(env, slug);
 
   await env.DB.batch([
     env.DB.prepare(`UPDATE lesson_versions SET review_state = ? WHERE id = ?`).bind('approved', row.version_id),
@@ -273,7 +326,7 @@ export async function setLessonPublished(req: Request, env: Env, requestId: stri
   const row = await loadForLifecycle(env, slug);
 
   if (publish && row.review_state !== 'approved') {
-    throw new HttpError(409, 'NOT_REVIEWED', 'لا يُنشر درس غير مراجَع. أكمل المراجعة البشرية أولًا.');
+    throw new HttpError(409, 'NOT_REVIEWED', 'لا يُنشر درس لم يجتز اعتمادًا (آليًا موثّقًا أو بشريًا). شغّل مسار الإفراج/المراجعة أولًا.');
   }
   const nextStatus = publish ? 'published' : 'draft';
   const statements = [

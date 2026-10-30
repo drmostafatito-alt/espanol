@@ -105,6 +105,10 @@ export function isOriginAllowed(req: Request, env: Env): boolean {
 /** يرفض أي طلب يغيّر الحالة وله جسم بلا Content-Type: application/json. */
 export function assertJsonContentType(req: Request): void {
   if (!UNSAFE_METHODS.has(req.method)) return;
+  // جسم فارغ مُعلَن صراحةً (Content-Length: 0) ليس جسمًا: بعض العملاء (ومنها
+  // Playwright APIRequestContext) ترسل هذا الترويس مع POST بلا بيانات، وكان
+  // يتحول إلى 415 على مسارات لا تقرأ جسمًا أصلًا (طلب رابط التحقق/الخروج).
+  if (req.headers.get('Content-Length') === '0') return;
   // Request في workerd/undici قد لا يحمل Content-Length؛ الحكم على وجود جسم فعلي
   const hasBody = req.body !== null || Number(req.headers.get('Content-Length') || 0) > 0 || !!req.headers.get('Transfer-Encoding');
   if (!hasBody) return;

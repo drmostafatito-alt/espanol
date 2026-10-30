@@ -147,6 +147,57 @@ describe('AUD-02/AUD-04: دورة المراجعة والنشر وتنقية ا�
     const auditCount = h!.db.raw.prepare("SELECT COUNT(*) AS n FROM admin_audit_logs WHERE action LIKE 'content.%'").get() as { n: number };
     expect(auditCount.n).toBeGreaterThanOrEqual(3); // review + publish + unpublish
   });
+
+  it('الاعتماد الآلي: مرفوض بلا سجلات تحقق مكتملة، ومقبول بعدها، وبلا أي اسم بشري', async () => {
+    const { admin } = await setup();
+    const readState = () =>
+      h!.db.raw
+        .prepare(
+          `SELECT lv.review_state FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id WHERE l.slug = ?`,
+        )
+        .get(SLUG) as { review_state: string };
+
+    // 1) بلا سجلات: لا يمكن «تأكيد» إفراج لم يحدث
+    const denied = await h!.call(`/api/admin/lessons/${SLUG}/review`, {
+      method: 'POST', cookie: admin, body: JSON.stringify({ mode: 'ai_automated' }),
+    });
+    expect(denied.status).toBe(409);
+    expect((await h!.json(denied)).error.code).toBe('AUTOMATED_VALIDATION_REQUIRED');
+    expect(readState()).toEqual({ review_state: 'unreviewed' });
+
+    // 2) سجلات المراحل الثلاث كما يكتبها مسار الإفراج (reviewer_id = NULL)
+    const version = h!.db.raw
+      .prepare(
+        `SELECT lv.id FROM lessons l JOIN lesson_versions lv ON lv.id = l.current_version_id WHERE l.slug = ?`,
+      )
+      .get(SLUG) as { id: string };
+    for (const stage of ['language_es', 'translation_ar', 'automated']) {
+      h!.db.raw
+        .prepare(
+          `INSERT INTO content_review_records (id, target_type, target_id, stage, reviewer_id, decision, notes, created_at)
+           VALUES (?, 'lesson_version', ?, ?, NULL, 'passed', 'provenance: ai+automated (no human reviewer)', '2026-10-30T00:00:00.000Z')`,
+        )
+        .run(`rr_${stage}`, version.id, stage);
+    }
+
+    const ok = await h!.call(`/api/admin/lessons/${SLUG}/review`, {
+      method: 'POST', cookie: admin, body: JSON.stringify({ mode: 'ai_automated', validationRunId: 'run-2026-10-30' }),
+    });
+    expect(ok.status).toBe(200);
+    expect((await h!.json(ok)).provenance).toBe('ai+automated');
+    expect(readState()).toEqual({ review_state: 'approved' });
+
+    const audit = h!.db.raw
+      .prepare(`SELECT after_json FROM admin_audit_logs WHERE action = 'content.review.ai' ORDER BY created_at DESC LIMIT 1`)
+      .get() as { after_json: string } | undefined;
+    expect(audit?.after_json).toContain('ai+automated');
+    expect(audit?.after_json).not.toContain('spanishReviewer');
+    expect(audit?.after_json).not.toContain('translationReviewer');
+
+    // 3) النشر يمرّ الآن (الاعتماد موجود)، وبلا تغيير في منطق النشر نفسه
+    const publish = await h!.call(`/api/admin/lessons/${SLUG}/publish`, { method: 'POST', cookie: admin });
+    expect(publish.status).toBe(200);
+  });
 });
 
 

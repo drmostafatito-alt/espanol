@@ -128,7 +128,7 @@ try {
 function discoverLocalDb() {
   const dir = join(ROOT, '.wrangler', 'state', 'v3', 'd1', 'miniflare-D1DatabaseObject');
   if (!existsSync(dir)) return null;
-  const files = readdirSync(dir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal'));
+  const files = readdirSync(dir).filter(x => x.endsWith('.sqlite') && !x.includes('-shm') && !x.includes('-wal') && !x.startsWith('metadata'));
   if (files.length !== 1) return null;
   return join(dir, files[0]);
 }

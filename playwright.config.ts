@@ -19,6 +19,17 @@ import { defineConfig, devices } from '@playwright/test';
  *   npx wrangler dev --local --port 8787
  *   npx playwright test                  # أو: npx playwright test --project=chromium-desktop
  */
+/**
+ * مسار متصفح Chromium بديل (بيئات بلا تنزيل من CDN).
+ * يُضبط بـPW_CHROMIUM_PATH؛ وإن غاب استخدم Playwright نسخته المثبَّتة عادةً.
+ * في هذه الحاضنة: chromium من @sparticuz/chromium + libnss3 من chrome-aws-lambda
+ * + NSPR مبني من المصدر، ويُضبط LD_LIBRARY_PATH قبل التشغيل.
+ */
+const chromiumPath = process.env.PW_CHROMIUM_PATH;
+const chromiumLaunch = chromiumPath
+  ? { executablePath: chromiumPath, args: ['--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu'] }
+  : undefined;
+
 export default defineConfig({
   testDir: './tests/e2e',
   timeout: 60_000,
@@ -36,12 +47,15 @@ export default defineConfig({
     screenshot: 'only-on-failure',
   },
   projects: [
-    { name: 'chromium-320', use: { ...devices['Desktop Chrome'], viewport: { width: 320, height: 720 }, hasTouch: true } },
-    { name: 'chromium-desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 } } },
-    { name: 'android-chrome', use: { ...devices['Pixel 7'] } },
+    { name: 'chromium-320', use: { ...devices['Desktop Chrome'], viewport: { width: 320, height: 720 }, hasTouch: true, launchOptions: chromiumLaunch } },
+    { name: 'chromium-desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 }, launchOptions: chromiumLaunch } },
+    { name: 'android-chrome', use: { ...devices['Pixel 7'], launchOptions: chromiumLaunch } },
     // محرّك ثانٍ مختلف فعليًا (Gecko) — يمسك أخطاء تعتمد على محرّك العرض
-    { name: 'firefox-desktop', use: { ...devices['Desktop Firefox'], viewport: { width: 1280, height: 800 } } },
-    { name: 'firefox-320', use: { ...devices['Desktop Firefox'], viewport: { width: 320, height: 720 } } },
+    // Firefox يحتاج ثنائيًا غير متاح في هذه الحاضنة (لا شبكة لـCDN المتصفحات).
+    ...(process.env.E2E_SKIP_FIREFOX ? [] : [
+      { name: 'firefox-desktop', use: { ...devices['Desktop Firefox'], viewport: { width: 1280, height: 800 } } },
+      { name: 'firefox-320', use: { ...devices['Desktop Firefox'], viewport: { width: 320, height: 720 } } },
+    ]),
     // Safari/WebKit غير قابل للتشغيل هنا: بناء Playwright لـwebkit يحتاج sonames قديمة
     // غير موجودة في Debian 13 (libicu66, libwebp.so.6, libjpeg.so.8, libffi.so.7).
     // يُفعَّل بـE2E_WEBKIT=1 على نظام مدعوم فقط — لا تدّعِ تشغيله قبل ذلك.

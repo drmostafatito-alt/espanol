@@ -1,6 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "bundleSlug": "cv-topic-callcenter",
+  "titleAr": "الكول سنتر: خدمة العملاء",
   "pronunciationNoteAr": "النقل بالحروف العربية تقريب فقط ولا يُعتمد للنطق الدقيق. راعِ أن h صامتة، وج قريبة من الخاء قبل e/i، وñ = نْي، وc/z قبل e/i تُنطق «ث» في إسبانيا و«س» في أمريكا اللاتينية.",
   "source": {
     "title": "حزمة مفردات: معجم خدمة العملاء والدعم الفني ومراكز الاتصال — مسودة قابلة للمراجعة",
@@ -70,7 +71,7 @@
           "meaningArEg": "لباقة وحزم في الرد من غير ما تزعل العميل",
           "glossEs": null,
           "exampleEs": "La asertividad es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـحزم ولباقة في التعامل مع شكاوى العملاء مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "الحزم ولباقة في التعامل مع شكاوى العملاء مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -79,7 +80,7 @@
       "examples": [
         {
           "es": "La asertividad es un término fundamental en la atención al cliente.",
-          "ar": "الـحزم ولباقة في التعامل مع شكاوى العملاء مصطلح أساسي في خدمة العملاء.",
+          "ar": "الحزم ولباقة في التعامل مع شكاوى العملاء مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -143,8 +144,8 @@
           "meaningArFusha": "إلغاء الحجز أو الطلب وإعادة المبلغ",
           "meaningArEg": "إلغاء الأوردر والحجز وترجيع الفلوس للعميل",
           "glossEs": null,
-          "exampleEs": "La cancelación es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـإلغاء الحجز أو الطلب وإعادة المبلغ مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "La cancelación del vuelo nos costó mucho dinero.",
+          "exampleAr": "ألحق إلغاء الرحلة بنا خسارة كبيرة.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -152,8 +153,8 @@
       ],
       "examples": [
         {
-          "es": "La cancelación es un término fundamental en la atención al cliente.",
-          "ar": "الـإلغاء الحجز أو الطلب وإعادة المبلغ مصطلح أساسي في خدمة العملاء.",
+          "es": "La cancelación del vuelo nos costó mucho dinero.",
+          "ar": "ألحق إلغاء الرحلة بنا خسارة كبيرة.",
           "arEg": null
         }
       ]
@@ -180,18 +181,18 @@
           "meaningArFusha": "سنترال ومحول الهاتف لتوزيع المكالمات",
           "meaningArEg": "سنترال وبدالة تليفونات بتوزع المكالمات",
           "glossEs": null,
-          "exampleEs": "La centralita es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـسنترال ومحول الهاتف لتوزيع المكالمات مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "La centralita deriva las llamadas.",
+          "exampleAr": "يحوّل السنترال المكالمات.",
+          "exampleArEg": "السنترال بيحوّل المكالمات.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La centralita es un término fundamental en la atención al cliente.",
-          "ar": "الـسنترال ومحول الهاتف لتوزيع المكالمات مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "La centralita deriva las llamadas.",
+          "ar": "يحوّل السنترال المكالمات.",
+          "arEg": "السنترال بيحوّل المكالمات."
         }
       ]
     },
@@ -217,8 +218,8 @@
           "meaningArFusha": "محادثة فورية مباشرة عبر الموقع الإلكتروني",
           "meaningArEg": "شات لايف مباشر مع خدمة العملاء ع الويبسايت",
           "glossEs": null,
-          "exampleEs": "El chat es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـمحادثة فورية مباشرة عبر الموقع الإلكتروني مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "El chat del banco abre a las nueve.",
+          "exampleAr": "تفتح محادثة البنك في التاسعة.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -226,8 +227,8 @@
       ],
       "examples": [
         {
-          "es": "El chat es un término fundamental en la atención al cliente.",
-          "ar": "الـمحادثة فورية مباشرة عبر الموقع الإلكتروني مصطلح أساسي في خدمة العملاء.",
+          "es": "El chat del banco abre a las nueve.",
+          "ar": "تفتح محادثة البنك في التاسعة.",
           "arEg": null
         }
       ]
@@ -291,18 +292,18 @@
           "meaningArFusha": "منسق ومشرف فريق خدمة العملاء بالوردية",
           "meaningArEg": "تيم ليدر ومنسق الشفت في الكول سنتر",
           "glossEs": null,
-          "exampleEs": "El coordinador es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـمنسق ومشرف فريق خدمة العملاء بالوردية مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "El coordinador organiza los turnos.",
+          "exampleAr": "ينظم المنسق الورديات.",
+          "exampleArEg": "المنسق بينظم الورديات.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "El coordinador es un término fundamental en la atención al cliente.",
-          "ar": "الـمنسق ومشرف فريق خدمة العملاء بالوردية مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "El coordinador organiza los turnos.",
+          "ar": "ينظم المنسق الورديات.",
+          "arEg": "المنسق بينظم الورديات."
         }
       ]
     },
@@ -366,7 +367,7 @@
           "meaningArEg": "تحويل المكالمة للقسم المختص لحلها",
           "glossEs": null,
           "exampleEs": "La derivación es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـتحويل المكالمة إلى القسم المختص لمعالجتها مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "التحويل المكالمة إلى القسم المختص لمعالجتها مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -375,7 +376,7 @@
       "examples": [
         {
           "es": "La derivación es un término fundamental en la atención al cliente.",
-          "ar": "الـتحويل المكالمة إلى القسم المختص لمعالجتها مصطلح أساسي في خدمة العملاء.",
+          "ar": "التحويل المكالمة إلى القسم المختص لمعالجتها مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -402,8 +403,8 @@
           "meaningArFusha": "سماعة رأس كول سنتر تثبت فوق الرأس",
           "meaningArEg": "طوق وسماعة هيدسيت بتتحط ع الراس للشغل",
           "glossEs": null,
-          "exampleEs": "La diadema es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـسماعة رأس كول سنتر تثبت فوق الرأس مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "Uso una diadema con micrófono.",
+          "exampleAr": "أرتدي سماعة رأس بميكروفون.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -411,8 +412,8 @@
       ],
       "examples": [
         {
-          "es": "La diadema es un término fundamental en la atención al cliente.",
-          "ar": "الـسماعة رأس كول سنتر تثبت فوق الرأس مصطلح أساسي في خدمة العملاء.",
+          "es": "Uso una diadema con micrófono.",
+          "ar": "أرتدي سماعة رأس بميكروفون.",
           "arEg": null
         }
       ]
@@ -477,7 +478,7 @@
           "meaningArEg": "تصعيد المشكلة للمستوى التاني في الدعم الفني",
           "glossEs": null,
           "exampleEs": "El escalamiento es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـتصعيد التذكرة والشكوى إلى المستوى الإداري الأعلى مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "التصعيد التذكرة والشكوى إلى المستوى الإداري الأعلى مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -486,7 +487,7 @@
       "examples": [
         {
           "es": "El escalamiento es un término fundamental en la atención al cliente.",
-          "ar": "الـتصعيد التذكرة والشكوى إلى المستوى الإداري الأعلى مصطلح أساسي في خدمة العملاء.",
+          "ar": "التصعيد التذكرة والشكوى إلى المستوى الإداري الأعلى مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -514,7 +515,7 @@
           "meaningArEg": "برنامج ولاء ومكافآت ونقاط للعميل القديم",
           "glossEs": null,
           "exampleEs": "La fidelización es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـبرامج ولاء العملاء لمنحهم نقاط ومزايا مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "البرامج ولاء العملاء لمنحهم نقاط ومزايا مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -523,7 +524,7 @@
       "examples": [
         {
           "es": "La fidelización es un término fundamental en la atención al cliente.",
-          "ar": "الـبرامج ولاء العملاء لمنحهم نقاط ومزايا مصطلح أساسي في خدمة العملاء.",
+          "ar": "البرامج ولاء العملاء لمنحهم نقاط ومزايا مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -550,18 +551,18 @@
           "meaningArFusha": "انقطاع مؤقت لشبكة الاتصالات أو الإنترنت",
           "meaningArEg": "فصل وانقطاع مؤقت للنت أو شبكة المحمول",
           "glossEs": null,
-          "exampleEs": "La interrupción es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـانقطاع مؤقت لشبكة الاتصالات أو الإنترنت مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "Hubo una interrupción de internet ayer.",
+          "exampleAr": "حدث انقطاع للإنترنت أمس.",
+          "exampleArEg": "حصل قطع في النت إمبارح.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La interrupción es un término fundamental en la atención al cliente.",
-          "ar": "الـانقطاع مؤقت لشبكة الاتصالات أو الإنترنت مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "Hubo una interrupción de internet ayer.",
+          "ar": "حدث انقطاع للإنترنت أمس.",
+          "arEg": "حصل قطع في النت إمبارح."
         }
       ]
     },
@@ -587,18 +588,18 @@
           "meaningArFusha": "نظام وباقة الاشتراك كالدفع المسبق أو الفاتورة",
           "meaningArEg": "نظام الخط كارت شحن ولا فاتورة شهرية",
           "glossEs": null,
-          "exampleEs": "La modalidad es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـنظام وباقة الاشتراك كالدفع المسبق أو الفاتورة مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "Elijo la modalidad de pago mensual.",
+          "exampleAr": "أختار نظام الدفع الشهري.",
+          "exampleArEg": "بختار نظام الدفع الشهري.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La modalidad es un término fundamental en la atención al cliente.",
-          "ar": "الـنظام وباقة الاشتراك كالدفع المسبق أو الفاتورة مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "Elijo la modalidad de pago mensual.",
+          "ar": "أختار نظام الدفع الشهري.",
+          "arEg": "بختار نظام الدفع الشهري."
         }
       ]
     },
@@ -624,8 +625,8 @@
           "meaningArFusha": "مودم وراوتر لتوصيل شبكة الواي فاي بالمنزل",
           "meaningArEg": "راوتر ومودم لتشغيل النت والواي فاي في الشقة",
           "glossEs": null,
-          "exampleEs": "El modem es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـمودم وراوتر لتوصيل شبكة الواي فاي بالمنزل مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "El modem está en el salón, junto al sofá.",
+          "exampleAr": "المودم في الصالون بجانب الأريكة.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -633,8 +634,8 @@
       ],
       "examples": [
         {
-          "es": "El modem es un término fundamental en la atención al cliente.",
-          "ar": "الـمودم وراوتر لتوصيل شبكة الواي فاي بالمنزل مصطلح أساسي في خدمة العملاء.",
+          "es": "El modem está en el salón, junto al sofá.",
+          "ar": "المودم في الصالون بجانب الأريكة.",
           "arEg": null
         }
       ]
@@ -662,7 +663,7 @@
           "meaningArEg": "مراقبة وتفتيش ع جودة مكالمات الموظف",
           "glossEs": null,
           "exampleEs": "El monitoreo es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـمراقبة وتقييم أداء الوكلاء من قبل فريق الجودة مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "المراقبة وتقييم أداء الوكلاء من قبل فريق الجودة مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -671,7 +672,7 @@
       "examples": [
         {
           "es": "El monitoreo es un término fundamental en la atención al cliente.",
-          "ar": "الـمراقبة وتقييم أداء الوكلاء من قبل فريق الجودة مصطلح أساسي في خدمة العملاء.",
+          "ar": "المراقبة وتقييم أداء الوكلاء من قبل فريق الجودة مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -699,7 +700,7 @@
           "meaningArEg": "شرط جزائي والتزام بالبقاء سنة في العقد",
           "glossEs": null,
           "exampleEs": "La permanencia es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـشرط الالتزام والبقاء في العقد لمدة معينة مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "الشرط الالتزام والبقاء في العقد لمدة معينة مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -708,7 +709,7 @@
       "examples": [
         {
           "es": "La permanencia es un término fundamental en la atención al cliente.",
-          "ar": "الـشرط الالتزام والبقاء في العقد لمدة معينة مصطلح أساسي في خدمة العملاء.",
+          "ar": "الشرط الالتزام والبقاء في العقد لمدة معينة مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -735,18 +736,18 @@
           "meaningArFusha": "نقل الرقم بنفس النمرة إلى شبكة اتصالات أخرى",
           "meaningArEg": "تحويل ونقل الخط بنفس الرقم لشركة تانية",
           "glossEs": null,
-          "exampleEs": "La portabilidad es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـنقل الرقم بنفس النمرة إلى شبكة اتصالات أخرى مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "Pedí la portabilidad de mi número.",
+          "exampleAr": "طلبت نقل رقمي إلى شبكة أخرى.",
+          "exampleArEg": "طلبت أنقل رقمي لشبكة تانية.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La portabilidad es un término fundamental en la atención al cliente.",
-          "ar": "الـنقل الرقم بنفس النمرة إلى شبكة اتصالات أخرى مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "Pedí la portabilidad de mi número.",
+          "ar": "طلبت نقل رقمي إلى شبكة أخرى.",
+          "arEg": "طلبت أنقل رقمي لشبكة تانية."
         }
       ]
     },
@@ -772,18 +773,18 @@
           "meaningArFusha": "إعادة تشغيل وتفعيل الخط بعد سداد الفاتورة",
           "meaningArEg": "إعادة تشغيل الخط ورجوع الخدمة بعد الدفع",
           "glossEs": null,
-          "exampleEs": "La reactivación es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـإعادة تشغيل وتفعيل الخط بعد سداد الفاتورة مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "La reactivación de la línea tarda un día.",
+          "exampleAr": "يستغرق إعادة تفعيل الخط يومًا.",
+          "exampleArEg": "إعادة تفعيل الخط بتاخد يوم.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La reactivación es un término fundamental en la atención al cliente.",
-          "ar": "الـإعادة تشغيل وتفعيل الخط بعد سداد الفاتورة مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "La reactivación de la línea tarda un día.",
+          "ar": "يستغرق إعادة تفعيل الخط يومًا.",
+          "arEg": "إعادة تفعيل الخط بتاخد يوم."
         }
       ]
     },
@@ -809,8 +810,8 @@
           "meaningArFusha": "شحن الرصيد بالبطاقة أو الدفع الإلكتروني",
           "meaningArEg": "شحن رصيد وكارت شحن للخط ع الموبايل",
           "glossEs": null,
-          "exampleEs": "La recarga es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـشحن الرصيد بالبطاقة أو الدفع الإلكتروني مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "Hice una recarga de diez euros en el móvil.",
+          "exampleAr": "قمت بشحن رصيد الهاتف بعشرة يورو.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -818,8 +819,8 @@
       ],
       "examples": [
         {
-          "es": "La recarga es un término fundamental en la atención al cliente.",
-          "ar": "الـشحن الرصيد بالبطاقة أو الدفع الإلكتروني مصطلح أساسي في خدمة العملاء.",
+          "es": "Hice una recarga de diez euros en el móvil.",
+          "ar": "قمت بشحن رصيد الهاتف بعشرة يورو.",
           "arEg": null
         }
       ]
@@ -847,7 +848,7 @@
           "meaningArEg": "إعادة فتح الشكوى تاني عشان العطل لسه موجود",
           "glossEs": null,
           "exampleEs": "El reingreso es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـإعادة فتح التذكرة المغلقة لعدم زوال العطل مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "الإعادة فتح التذكرة المغلقة لعدم زوال العطل مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -856,7 +857,7 @@
       "examples": [
         {
           "es": "El reingreso es un término fundamental en la atención al cliente.",
-          "ar": "الـإعادة فتح التذكرة المغلقة لعدم زوال العطل مصطلح أساسي في خدمة العملاء.",
+          "ar": "الإعادة فتح التذكرة المغلقة لعدم زوال العطل مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -884,7 +885,7 @@
           "meaningArEg": "تكرار نفس الشكوى كذا مرة من غير حل",
           "glossEs": null,
           "exampleEs": "La reiteración es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـتكرار الشكوى لنفس العطل لعدة مرات متتالية مصطلح أساسي في خدمة العملاء.",
+          "exampleAr": "التكرار الشكوى لنفس العطل لعدة مرات متتالية مصطلح أساسي في خدمة العملاء.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -893,7 +894,7 @@
       "examples": [
         {
           "es": "La reiteración es un término fundamental en la atención al cliente.",
-          "ar": "الـتكرار الشكوى لنفس العطل لعدة مرات متتالية مصطلح أساسي في خدمة العملاء.",
+          "ar": "التكرار الشكوى لنفس العطل لعدة مرات متتالية مصطلح أساسي في خدمة العملاء.",
           "arEg": null
         }
       ]
@@ -920,8 +921,8 @@
           "meaningArFusha": "تقرير فني يرسل لفريق الصيانة لإصلاح العطل",
           "meaningArEg": "تقرير وإخطار بيتبعت للدعم الفني للنزول",
           "glossEs": null,
-          "exampleEs": "El reporte es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـتقرير فني يرسل لفريق الصيانة لإصلاح العطل مصطلح أساسي في خدمة العملاء.",
+          "exampleEs": "El técnico escribe un reporte del problema.",
+          "exampleAr": "يكتب الفني تقريرًا عن المشكلة.",
           "exampleArEg": null,
           "usageNoteAr": null,
           "commonErrorAr": null
@@ -929,8 +930,8 @@
       ],
       "examples": [
         {
-          "es": "El reporte es un término fundamental en la atención al cliente.",
-          "ar": "الـتقرير فني يرسل لفريق الصيانة لإصلاح العطل مصطلح أساسي في خدمة العملاء.",
+          "es": "El técnico escribe un reporte del problema.",
+          "ar": "يكتب الفني تقريرًا عن المشكلة.",
           "arEg": null
         }
       ]
@@ -957,18 +958,18 @@
           "meaningArFusha": "مشرف الصالة الذي يتدخل عند تعقد المكالمة",
           "meaningArEg": "سوبرفايزر بياخد المكالمة لو العميل طالب مديره",
           "glossEs": null,
-          "exampleEs": "El supervisor es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـمشرف الصالة الذي يتدخل عند تعقد المكالمة مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "El supervisor revisó las llamadas.",
+          "exampleAr": "راجع المشرف المكالمات.",
+          "exampleArEg": "المشرف راجع المكالمات.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "El supervisor es un término fundamental en la atención al cliente.",
-          "ar": "الـمشرف الصالة الذي يتدخل عند تعقد المكالمة مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "El supervisor revisó las llamadas.",
+          "ar": "راجع المشرف المكالمات.",
+          "arEg": "المشرف راجع المكالمات."
         }
       ]
     },
@@ -1031,18 +1032,18 @@
           "meaningArFusha": "إجراء ومعاملة ورقية لتغيير الملكية أو العنوان",
           "meaningArEg": "إجراء وتخليص ورق لنقل الخط أو الملكية",
           "glossEs": null,
-          "exampleEs": "El trámite es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـإجراء ومعاملة ورقية لتغيير الملكية أو العنوان مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "El trámite de la beca tarda meses.",
+          "exampleAr": "تستغرق معاملة المنحة شهورًا.",
+          "exampleArEg": "إجراءات المنحة بتاخد شهور.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "El trámite es un término fundamental en la atención al cliente.",
-          "ar": "الـإجراء ومعاملة ورقية لتغيير الملكية أو العنوان مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "El trámite de la beca tarda meses.",
+          "ar": "تستغرق معاملة المنحة شهورًا.",
+          "arEg": "إجراءات المنحة بتاخد شهور."
         }
       ]
     },
@@ -1068,18 +1069,18 @@
           "meaningArFusha": "تأكيد والتحقق من صحة بيانات هوية المتصل",
           "meaningArEg": "تأكيد والتأكد من بيانات صاحب الخط بالأمان",
           "glossEs": null,
-          "exampleEs": "La validación es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـتأكيد والتحقق من صحة بيانات هوية المتصل مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "La validación del código tarda segundos.",
+          "exampleAr": "يستغرق التحقق من الرمز ثواني.",
+          "exampleArEg": "التحقق من الكود بياخد ثواني.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La validación es un término fundamental en la atención al cliente.",
-          "ar": "الـتأكيد والتحقق من صحة بيانات هوية المتصل مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "La validación del código tarda segundos.",
+          "ar": "يستغرق التحقق من الرمز ثواني.",
+          "arEg": "التحقق من الكود بياخد ثواني."
         }
       ]
     },
@@ -1105,18 +1106,18 @@
           "meaningArFusha": "فحص والتأكد من مطابقة الرمز السري للهاتف",
           "meaningArEg": "تأكيد برمز الأمان اللي اتبعت في رسالة",
           "glossEs": null,
-          "exampleEs": "La verificación es un término fundamental en la atención al cliente.",
-          "exampleAr": "الـفحص والتأكد من مطابقة الرمز السري للهاتف مصطلح أساسي في خدمة العملاء.",
-          "exampleArEg": null,
+          "exampleEs": "La verificación de la identidad es obligatoria.",
+          "exampleAr": "التحقق من الهوية إلزامي.",
+          "exampleArEg": "التحقق من الهوية إجباري.",
           "usageNoteAr": null,
           "commonErrorAr": null
         }
       ],
       "examples": [
         {
-          "es": "La verificación es un término fundamental en la atención al cliente.",
-          "ar": "الـفحص والتأكد من مطابقة الرمز السري للهاتف مصطلح أساسي في خدمة العملاء.",
-          "arEg": null
+          "es": "La verificación de la identidad es obligatoria.",
+          "ar": "التحقق من الهوية إلزامي.",
+          "arEg": "التحقق من الهوية إجباري."
         }
       ]
     }

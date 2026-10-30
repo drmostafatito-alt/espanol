@@ -4,7 +4,7 @@ import type { ReactElement, SVGProps } from 'react';
 export type IconName =
   | 'home' | 'route' | 'tracks' | 'cards' | 'target' | 'trophy' | 'user' | 'settings' | 'logout'
   | 'search' | 'flame' | 'gem' | 'star' | 'lock' | 'check' | 'check-circle' | 'play' | 'arrow-right'
-  | 'arrow-left' | 'chevron-down' | 'globe' | 'menu' | 'close' | 'book' | 'headset' | 'chat'
+  | 'arrow-left' | 'chevron-down' | 'chevron-up' | 'globe' | 'menu' | 'close' | 'book' | 'headset' | 'chat'
   | 'mic' | 'volume' | 'clock' | 'refresh' | 'mail' | 'key' | 'coffee' | 'plane' | 'utensils'
   | 'briefcase' | 'buildings' | 'sparkles' | 'graduation' | 'sort' | 'warning' | 'info' | 'x-circle'
   | 'image-off' | 'heart' | 'eye' | 'eye-off';
@@ -30,6 +30,7 @@ const PATHS: Record<IconName, ReactElement> = {
   'arrow-right': <path d="M4 12h16m-6-6 6 6-6 6" />,
   'arrow-left': <path d="M20 12H4m6 6-6-6 6-6" />,
   'chevron-down': <path d="m6 9 6 6 6-6" />,
+  'chevron-up': <path d="m6 15 6-6 6 6" />,
   globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z" /></>,
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
   close: <path d="M6 6l12 12M18 6 6 18" />,

@@ -11,87 +11,20 @@
    ========================================================================== */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating } from '../api';
+import { readQueue, writeQueue, type PendingReview } from '../review-queue';
 import { useAuth } from '../state';
-import { ErrorState, LoadingState } from '../components/ui';
+import { ErrorState, LoadingState, ProgressBar } from '../components/ui';
+import { Icon } from '../components/icons';
+import { Solecito } from '../components/Illustrations';
 import { Mascot } from '../components/Mascot';
 
-const QUEUE_KEY = 'srs.pending.v1';
-
-
-/** ربط قائمة الانتظار بحساب مالكها (AUD-14): تقييمات حساب لا تُرسَل باسم حساب آخر.
- *  يُهاجَر أي طابور قديم بالمفتاح العام إلى مفتاح المستخدم بدل حذفه بصمت. */
-let boundUserId: string | null = null;
-
-export function bindPendingQueue(userId: string | null): void {
-  boundUserId = userId;
-  if (!userId) return;
-  try {
-    const legacy = parseQueue(localStorage.getItem(QUEUE_KEY));
-    if (legacy.length) {
-      const stamped = legacy.map(item => ({ ...item, userId }));
-      const existing = parseQueue(localStorage.getItem(queueKey(userId)));
-      localStorage.setItem(queueKey(userId), JSON.stringify([...existing, ...stamped]));
-      localStorage.removeItem(QUEUE_KEY);
-    }
-  } catch { /* noop */ }
-}
-
-/** مسح قائمة المستخدم المرتبط عند تسجيل الخروج */
-export function clearPendingQueue(): void {
-  if (boundUserId) writeQueue(boundUserId, []);
-  else { try { localStorage.removeItem(QUEUE_KEY); } catch { /* noop */ } }
-}
-
-interface PendingReview {
-  clientEventId: string;
-  cardId: string;
-  rating: ReviewRating;
-  responseMs: number;
-  queuedAt: number;
-  userId: string;
-}
-
-function queueKey(userId: string): string {
-  return `${QUEUE_KEY}:${userId}`;
-}
+// قائمة الانتظار انتقلت إلى وحدة مستقلة (src/web/review-queue.ts) حتى لا
+// تُحمَّل صفحة المراجعة كاملة مع الحزمة الأساسية. نعيد التصدير للتوافق.
+export { bindPendingQueue, clearPendingQueue } from '../review-queue';
 
 function newEventId(): string {
   if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID().replace(/-/g, '');
   return `ev${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
-}
-
-function parseQueue(raw: string | null): PendingReview[] {
-  try {
-    const parsed = raw ? (JSON.parse(raw) as unknown) : [];
-    return Array.isArray(parsed) ? (parsed as PendingReview[]) : [];
-  } catch {
-    return [];
-  }
-}
-
-function readQueue(userId: string): PendingReview[] {
-  try {
-    const legacy = parseQueue(localStorage.getItem(QUEUE_KEY));
-    if (legacy.length) {
-      const stamped = legacy.map(item => ({ ...item, userId }));
-      const existing = parseQueue(localStorage.getItem(queueKey(userId)));
-      localStorage.setItem(queueKey(userId), JSON.stringify([...existing, ...stamped]));
-      localStorage.removeItem(QUEUE_KEY);
-      return [...existing, ...stamped];
-    }
-    return parseQueue(localStorage.getItem(queueKey(userId)));
-  } catch {
-    return [];
-  }
-}
-
-function writeQueue(userId: string, items: PendingReview[]): void {
-  try {
-    if (items.length) localStorage.setItem(queueKey(userId), JSON.stringify(items));
-    else localStorage.removeItem(queueKey(userId));
-  } catch {
-    /* التخزين قد يكون معطّلًا (وضع خاص) — نفشل بهدوء ولا ندّعي حفظًا */
-  }
 }
 
 /** لافتة الموعد القادم من dueAt الفعلي، لا من intervalDays (بطاقة hard الجديدة مستحقة بعد 12 ساعة لا «غدًا»). */
@@ -332,8 +265,9 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     const reason = payload?.emptyReason;
     return (
       <div className="container" style={{ maxWidth: 640 }}>
-        <div className="card" data-testid="review-empty">
-          <h1 style={{ marginTop: 0 }}>لا بطاقات مستحقة الآن</h1>
+        <div className="card" data-testid="review-empty" style={{ textAlign: 'center' }}>
+          <Solecito mood="happy" size={132} />
+          <h1 style={{ marginTop: 'var(--s-2)' }}>لا بطاقات مستحقة الآن</h1>
           {reason === 'NO_VALID_CARDS' ? (
             <p>
               بطاقاتك المستحقة بلا بيانات عرض صالحة حاليًا (مشكلة بيانات، لا حدّ يومي).
@@ -365,13 +299,27 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   const revealed = phase === 'revealed' || phase === 'saving';
 
+  const progressPct = Math.round((index / Math.max(1, cards.length)) * 100);
+
   return (
-    <div className="container" style={{ maxWidth: 640 }}>
-      <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-        <button className="btn ghost sm" onClick={() => navigate('/learn')}>← خروج</button>
-        <span className="small muted num">
-          {index + 1} / {cards.length} · متبقٍ اليوم: {session?.newRemaining ?? 0} جديد
-        </span>
+    <div className="lesson-shell" style={{ paddingBlock: 'var(--s-4) var(--s-6)' }}>
+      <div className="lesson-top">
+        <div className="row" style={{ gap: 'var(--s-3)', flexWrap: 'nowrap' }}>
+          <button className="lesson-close" onClick={() => navigate('/learn')} aria-label="خروج من المراجعة">
+            <Icon name="close" size={20} />
+          </button>
+          <div className="lesson-title" style={{ minWidth: 0, flex: 1 }}>
+            <h1>مراجعة الكلمات</h1>
+            <span className="small muted">
+              بطاقة <span className="num">{index + 1}</span> من <span className="num">{cards.length}</span> · متبقٍ اليوم:{' '}
+              <span className="num">{session?.newRemaining ?? 0}</span> جديدة
+            </span>
+          </div>
+          <span className="node-badge current num">{progressPct}%</span>
+        </div>
+        <div className="lesson-progress-wrap" style={{ marginTop: 'var(--s-2)' }}>
+          <ProgressBar value={progressPct} label="تقدم المراجعة" height={12} />
+        </div>
       </div>
 
       {offline && (

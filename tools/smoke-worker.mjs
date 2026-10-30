@@ -56,18 +56,49 @@ async function call(path, init = {}) {
 const email = `smoke_${Date.now()}@example.com`;
 const password = 'SmokeTest2026';
 
+/**
+ * بيانات اعتماد المسار v2: يشتق المفتاح في Node بنفس ما يفعله المتصفح (WebCrypto)،
+ * على الملح الحتمي الذي يرجعه الخادم. كلمة المرور لا تُرسل إلى الخادم إطلاقًا.
+ * التخزين المؤقت آمن لأن الملح حتميّ لكل بريد (HMAC بالـpepper).
+ */
+const credentialCache = new Map();
+async function credential(mail, pw) {
+  const key = mail + '\u0000' + pw;
+  if (credentialCache.has(key)) return credentialCache.get(key);
+  const res = await fetch(BASE + '/api/auth/kdf-params', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: mail }),
+  });
+  const params = await res.json();
+  if (!res.ok || !params.salt) throw new Error('kdf-params failed: ' + res.status);
+  const salt = Buffer.from(params.salt.replace(/-/g, '+').replace(/_/g, '/'), 'base64');
+  const imported = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveBits']);
+  const bits = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', salt, iterations: params.iterations, hash: 'SHA-256' }, imported, 256,
+  );
+  const out = { derivedKey: Buffer.from(new Uint8Array(bits)).toString('base64url') };
+  credentialCache.set(key, out);
+  return out;
+}
+
 const health = await call('/api/health');
 record('GET /api/health يعمل ويصل إلى D1', health.status === 200 && health.body?.db?.reachable === true, `levels=${health.body?.db?.levels}`);
 
 const settings = await call('/api/settings/public');
 record('الإعدادات العامة تُقرأ من القاعدة', settings.status === 200 && settings.body?.settings?.['branding.platform_name'] === 'Español بالعربي');
 
-const weak = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password: '123' }) });
-record('كلمة مرور ضعيفة مرفوضة (400)', weak.status === 400 && weak.body?.error?.code === 'WEAK_PASSWORD');
+const kdfParams = await call('/api/auth/kdf-params', { method: 'POST', body: JSON.stringify({ email: 'ghost_' + Date.now() + '@example.com' }) });
+record(
+  'معاملات الاشتقاق تُقدَّم لبريد غير موجود (لا كشف حسابات) وتُمنع من التخزين المؤقت',
+  kdfParams.status === 200 && kdfParams.body?.iterations >= 100000 && typeof kdfParams.body?.salt === 'string' && /no-store/.test(kdfParams.headers?.get?.('cache-control') ?? ''),
+  `تكرارات=${kdfParams.body?.iterations}`,
+);
 
-const signup = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password, displayName: 'اختبار' }) });
+const noKdf = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password: 'weakpass1' }) });
+record('كلمة مرور خام مرفوضة: الاشتقاق في المتصفح إلزامي (400)', noKdf.status === 400 && noKdf.body?.error?.code === 'CLIENT_KDF_REQUIRED');
+
+const signup = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, password)), displayName: 'اختبار' }) });
 record('إنشاء حساب حقيقي (201) + كوكي جلسة', signup.status === 201 && !!cookies, `دور=${signup.body?.user?.role}`);
-const setCookieHeader = (await (async () => (await fetch(BASE + '/api/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password }) })).headers.get('set-cookie'))()) || '';
+const setCookieHeader = (await (async () => (await fetch(BASE + '/api/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, ...(await credential(email, password)) }) })).headers.get('set-cookie'))()) || '';
 record('الكوكي HttpOnly + SameSite=Lax', /HttpOnly/i.test(setCookieHeader) && /SameSite=Lax/i.test(setCookieHeader));
 
 const me = await call('/api/auth/me');
@@ -86,11 +117,18 @@ const csrf = await call('/api/me', {
 });
 record('طلب من أصل خارجي مرفوض (CSRF)', csrf.status === 403 && csrf.body?.error?.code === 'ORIGIN_NOT_ALLOWED');
 
-const dup = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, password }) });
+const dup = await call('/api/auth/signup', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, password)) }) });
 record('بريد مكرر يُرفض دون كشف', dup.status === 409 && !/موجود|مسجل|already/i.test(JSON.stringify(dup.body)));
 
+// بروتوكول v2: أي فشل في مسار المفتاح المشتق يعطي 409 موحّدًا (لا يميّز حسابًا
+// موجودًا من غيره ولا الحساب القديم)، ثم تعيد إعادة المحاولة الخام 401 عامة.
+const badStep = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, 'WrongPass2026')) }) });
 const badLogin = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password: 'WrongPass2026' }) });
-record('كلمة مرور خاطئة (401)', badLogin.status === 401);
+record(
+  'كلمة مرور خاطئة (409 ثم 401 عام)',
+  badStep.status === 409 && badStep.body?.error?.code === 'LEGACY_CREDENTIALS' &&
+    badLogin.status === 401 && badLogin.body?.error?.code === 'INVALID_CREDENTIALS',
+);
 
 const logout = await call('/api/auth/logout', { method: 'POST' });
 const meAfter = await call('/api/auth/me');
@@ -121,8 +159,14 @@ const crossSite = await call('/api/me', {
 });
 record('Sec-Fetch-Site: cross-site مرفوض (403)', crossSite.status === 403);
 
-const ghost = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: 'ghost_' + Date.now() + '@example.com', password: 'WrongPass2026x' }) });
-record('بريد غير مسجَّل لا يكشف شيئًا (401 عام)', ghost.status === 401 && ghost.body?.error?.code === 'INVALID_CREDENTIALS');
+const ghostEmail = 'ghost_' + Date.now() + '@example.com';
+const ghost = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: ghostEmail, ...(await credential(ghostEmail, 'WrongPass2026x')) }) });
+const ghostRaw = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: ghostEmail, password: 'WrongPass2026x' }) });
+record(
+  'بريد غير مسجَّل يعطي نفس رد الحساب الموجود تمامًا (409 ثم 401)',
+  ghost.status === badStep.status && ghost.body?.error?.code === badStep.body?.error?.code &&
+    ghostRaw.status === badLogin.status && ghostRaw.body?.error?.code === badLogin.body?.error?.code,
+);
 
 const spa = await fetch(BASE + '/learn');
 const spaText = await spa.text();
@@ -156,7 +200,7 @@ const plan = buildContentPlan(resolve(process.cwd(), 'content/drafts'), { existi
 const ANSWERS = plan.answers;
 
 // الاختبارات السابقة سجّلت الخروج وأبطلت الجلسة — نعيد الدخول بنفس الحساب
-const relogin = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) });
+const relogin = await call('/api/auth/login', { method: 'POST', body: JSON.stringify({ email, ...(await credential(email, password)) }) });
 record('إعادة الدخول بعد الخروج تعمل', relogin.status === 200 && !!cookies);
 
 const progress0 = await call('/api/me/progress');
@@ -170,7 +214,13 @@ record('جلسة درس متاحة للمستخدم المسجَّل', draft404.
 const session = draft404.body;
 const exs = session?.exercises ?? [];
 record('جلسة بلا مفاتيح إجابة ولا خيار صحيح', !JSON.stringify(exs).match(/answerKey|correctOptionIds|is_correct|isCorrect/i));
-record('وسم «عينة غير مراجعة» حاضر في الاستجابة', session?.lesson?.provenance?.status === 'unreviewed_sample');
+/* العقد الحالي: الدرس المُفرج عنه (published + مراجعة آلية) لا يحمل وسم
+ * «عينة غير مراجعة»؛ الوسم يخصّ المحتوى غير المُفرج عنه وحده. كان الفحص
+ * القديم يطلب الوسم، فصار يطلبه على العكس — وهذا هو السلوك الصحيح. */
+record(
+  'درس مُفرج عنه بلا وسم «عينة غير مراجعة»',
+  !!session?.lesson?.versionId && session?.lesson?.provenance === undefined,
+);
 
 const firstGraded = exs.find(e => e.mode === 'graded');
 const evid = (tag) => `${tag}_smoke_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;

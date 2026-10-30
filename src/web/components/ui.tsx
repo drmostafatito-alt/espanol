@@ -64,16 +64,41 @@ export function Avatar({ name, email, large }: { name: string | null; email: str
 }
 
 /* ---------------- صورة بمعالجة فشل التحميل ---------------- */
+export interface ImageSource {
+  type: string;
+  srcSet: string;
+  sizes?: string;
+}
+
 export function SafeImage({
   src,
   alt,
   className,
   loading = 'lazy',
+  width,
+  height,
+  fetchPriority,
+  decoding = 'async',
+  srcSet,
+  sizes,
+  sources,
 }: {
   src: string;
   alt: string;
   className?: string;
   loading?: 'lazy' | 'eager';
+  /** أبعاد معلنة تمنع إزاحة التخطيط (CLS) قبل تحميل الصورة */
+  width?: number;
+  height?: number;
+  /** 'high' لصورة LCP (الهيرو) حتى يرفعها المتصفح بأولوية */
+  fetchPriority?: 'high' | 'low' | 'auto';
+  /** صور LCP تُفكَّك متزامنة حتى لا تتأخر عن أول رسم */
+  decoding?: 'sync' | 'async';
+  /** نسخ JPEG بأحجام متعددة؛ يختار المتصفح الأنسب حسب DPR وعرض الحاوية */
+  srcSet?: string;
+  sizes?: string;
+  /** نسخ WebP/AVIF عبر <picture>، مع JPEG احتياطي في srcSet دائمًا */
+  sources?: ImageSource[];
 }) {
   const [failed, setFailed] = useState(false);
   if (failed) {
@@ -83,7 +108,30 @@ export function SafeImage({
       </div>
     );
   }
-  return <img src={src} alt={alt} className={className} loading={loading} onError={() => setFailed(true)} />;
+  const img = (
+    <img
+      src={src}
+      srcSet={srcSet}
+      sizes={sizes}
+      alt={alt}
+      className={className}
+      loading={loading}
+      width={width}
+      height={height}
+      fetchPriority={fetchPriority}
+      decoding={decoding}
+      onError={() => setFailed(true)}
+    />
+  );
+  if (!sources?.length) return img;
+  return (
+    <picture>
+      {sources.map(s => (
+        <source key={s.type} type={s.type} srcSet={s.srcSet} sizes={s.sizes} />
+      ))}
+      {img}
+    </picture>
+  );
 }
 
 /* ---------------- حالات الصفحة ---------------- */

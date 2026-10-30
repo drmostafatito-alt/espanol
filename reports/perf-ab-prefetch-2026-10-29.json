@@ -1,0 +1,50 @@
+{
+  "measuredAt": "2026-10-29T15:34:00Z",
+  "method": "controlled A/B: same commit (e0d860a), same worker (wrangler dev :8787), same simulated RTT 150ms; variant A built with prefetchPage() disabled, variant B = HEAD build. 5 cold runs per page, median reported. Static servers via tools/serve-dist.mjs on :4175 (A) and :4176 (B).",
+  "tool": "tools/critical-path-probe.mjs --rtt 150 --runs 5",
+  "variants": {
+    "A_no_prefetch": {
+      "dist": "/tmp/dist-noprefetch",
+      "mainJs": { "raw": 306010, "gzip": 91740 },
+      "profileChunk": "Profile-CoJUJtwJ.js",
+      "reviewChunk": "Review-DD3QXR99.js"
+    },
+    "B_prefetch": {
+      "dist": "/home/user/espanol/dist",
+      "mainJs": { "raw": 306250, "gzip": 91810 },
+      "profileChunk": "Profile-DVhQw3Pr.js",
+      "reviewChunk": "Review-BqK3CRxu.js"
+    }
+  },
+  "results": {
+    "/profile": {
+      "A_samples_ms": [1015, 957, 959, 968, 960],
+      "A_median_ms": 960,
+      "B_samples_ms": [867, 806, 799, 802, 812],
+      "B_median_ms": 806,
+      "delta_ms": -154,
+      "delta_pct": -16.0,
+      "milestones_median_ms": {
+        "A": { "html": 153, "mainJs": 155, "chunk": 154, "auth": 162, "data": 183, "lastCritical": 960 },
+        "B": { "html": 154, "mainJs": 154, "chunkStart": 154, "auth": 163, "data": 181, "lastCritical": 806 }
+      }
+    },
+    "/review": {
+      "A_samples_ms": [979, 942, 944, 945, 935],
+      "A_median_ms": 944,
+      "B_samples_ms": [825, 783, 805, 795, 779],
+      "B_median_ms": 795,
+      "delta_ms": -149,
+      "delta_pct": -15.8,
+      "milestones_median_ms": {
+        "A": { "html": 153, "mainJs": 153, "chunk": 153, "auth": 162, "data": 163, "lastCritical": 944 },
+        "B": { "html": 153, "mainJs": 153, "chunkStart": 153, "auth": 162, "data": 166, "lastCritical": 795 }
+      }
+    }
+  },
+  "notes": [
+    "Both variants serve the same API and the same session cookie; authStatus=200 and dataStatus=200 in all 20 runs.",
+    "Chunk hashes differ between builds because the main bundle hash changes; chunk byte size is unchanged (Profile 6.69 kB, Review 10.32 kB raw).",
+    "Browser-based LCP measurement was not possible in this session (no Chromium/libnss3 available); these are HTTP critical-path waterfall timings, which measure the same two-request serialisation the prefetch removes."
+  ]
+}

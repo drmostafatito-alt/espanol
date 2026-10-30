@@ -139,12 +139,14 @@
           {
             "id": "a1_cafe_2_b",
             "text": "Para tomar aquí.",
-            "distractorRationaleAr": "مقبول لغويًا لكنه يخالف المطلوب في التعليمات (للخارج)."
+            "distractorRationaleAr": "مقبول لغويًا لكنه يخالف المطلوب في التعليمات (للخارج).",
+            "isCorrect": false
           },
           {
             "id": "a1_cafe_2_c",
             "text": "Sí, gracias.",
-            "distractorRationaleAr": "لا يجيب عن سؤال «هنا أم للخارج»، وهو خطأ تواصلي شائع لدى المبتدئ."
+            "distractorRationaleAr": "لا يجيب عن سؤال «هنا أم للخارج»، وهو خطأ تواصلي شائع لدى المبتدئ.",
+            "isCorrect": false
           }
         ],
         "answerKey": {
@@ -234,12 +236,14 @@
           {
             "id": "a1_cafe_4_b",
             "text": "De nada.",
-            "distractorRationaleAr": "رد على «شكرًا»، لا جواب عن السعر."
+            "distractorRationaleAr": "رد على «شكرًا»، لا جواب عن السعر.",
+            "isCorrect": false
           },
           {
             "id": "a1_cafe_4_c",
             "text": "Mucho gusto.",
-            "distractorRationaleAr": "تعبير تعارف، خطأ وظيفي واضح."
+            "distractorRationaleAr": "تعبير تعارف، خطأ وظيفي واضح.",
+            "isCorrect": false
           }
         ],
         "answerKey": {
@@ -308,12 +312,14 @@
           {
             "id": "a1_cafe_6_b",
             "text": "jugo de naranja",
-            "distractorRationaleAr": "صحيحة في أمريكا اللاتينية؛ يختبرها النظام للتأكد من فهم الفرق الإقليمي لا لوصفها بالخطأ."
+            "distractorRationaleAr": "صحيحة في أمريكا اللاتينية؛ يختبرها النظام للتأكد من فهم الفرق الإقليمي لا لوصفها بالخطأ.",
+            "isCorrect": false
           },
           {
             "id": "a1_cafe_6_c",
             "text": "sopa de naranja",
-            "distractorRationaleAr": "sopa = شوربة؛ تركيب غير موجود."
+            "distractorRationaleAr": "sopa = شوربة؛ تركيب غير موجود.",
+            "isCorrect": false
           }
         ],
         "answerKey": {
@@ -344,7 +350,6 @@
         "stemEs": "Quiero un café con leche para llevar, por favor. ¿Cuánto cuesta?",
         "stemAr": "أريد قهوة بالحليب للخارج من فضلك. كم السعر؟",
         "answerKey": {
-          "mode": "self_assessment",
           "referenceAudioKey": "pending/a1-cafe-full-order",
           "modelAnswer": "Quiero un café con leche para llevar, por favor. ¿Cuánto cuesta?"
         },

@@ -53,7 +53,10 @@ describe('بوابة الجاهزية للنشر', () => {
     // الافتراضي الملتزَم مغلق التسجيل: لا يجب أن يظهر PUBLIC_SIGNUP_OPEN هنا؛
     // حاجز الإطلاق الباقي هو قوة الاشتقاق نفسها (30k < 600k) — لا يُخفى.
     expect(codes).not.toContain('PUBLIC_SIGNUP_OPEN');
-    expect(codes).toContain('KDF_BELOW_OWASP');
+    // 2026-10-30: إعداد التطوير يفعّل الطبقتين (CLIENT_KDF_REQUIRED + 600k)،
+    // فلا حاجز KDF عليه أصلًا. الشدّة تتبع التعرّض الفعلي لا اسم الملف.
+    expect(codes).not.toContain('KDF_BELOW_OWASP');
+    expect(j.blockers).toEqual([]);
     expect(j.status).toBe('FAIL');
   });
 
@@ -65,13 +68,55 @@ describe('بوابة الجاهزية للنشر', () => {
     expect(run(['--file', SAMPLE]).code).toBe(0);
   });
 
-  it('تميّز "حاجز إطلاق بقرار مالك" عن "خطأ إعداد" (كود خروج مختلف)', () => {
-    // العيّنة مع تسجيل عام مفتوح: ليست خطأ برمجيًا لكنها تمنع الإطلاق ⇒ 2 لا 1
-    const res = run(['--file', 'tests/fixtures/wrangler.open-signup.sample.toml', '--json']);
-    expect(res.code).toBe(2);
-    expect(res.json.status).toBe('BLOCKED');
-    expect(res.json.errors).toEqual([]);
-    expect(res.json.blockers.map((b: any) => b.code)).toContain('PUBLIC_SIGNUP_OPEN');
+  it('تسجيل عام مفتوح + تجزئة مطابقة لـOWASP = يمرّ (لا رفض دائم للخطة المدفوعة)', () => {
+    // 2026-10-30: كان الحاجز هنا يرفض أي تسجيل مفتوح حتى مع 600,000 تكرار — رفض زائد.
+    // السياسة الحالية: الشدّة تتبع التعرّض الفعلي (تجزئة قوية + تسجيل عام = مقبول).
+    const j = jsonOf(['--file', 'tests/fixtures/wrangler.open-signup.sample.toml']);
+    expect(j.status).toBe('PASS');
+    expect(j.errors).toEqual([]);
+    expect(j.blockers).toEqual([]);
+    expect(run(['--file', 'tests/fixtures/wrangler.open-signup.sample.toml']).code).toBe(0);
+  });
+
+  it('تسجيل عام مفتوح + تجزئة أضعف من OWASP = خطأ مانع للنشر لا «حاجز» (2 ← 1)', () => {
+    // أخطر تركيبة: حسابات عامة بتجزئة ضعيفة. كانت «حاجزًا» يكفي لتجاوزه كود خروج 2،
+    // فصارت خطأً يمنع النشر أصلًا.
+    const res = run(['--file', 'tests/fixtures/wrangler.open-signup-weak-kdf.sample.toml', '--json']);
+    expect(res.code).toBe(1);
+    expect(res.json.status).toBe('FAIL');
+    expect(res.json.errors.map((e: any) => e.code)).toContain('PUBLIC_SIGNUP_WEAK_KDF');
+    // ولا يُشفع لها أي تنازل: القبول المسجَّل نطاقه تسجيل مغلق فقط
+    expect(res.json.blockers.map((b: any) => b.code)).toContain('KDF_BELOW_OWASP');
+  });
+
+  it('التسجيل المغلق + 30k بلا طبقتين: يبقى حاجزًا معلنًا (لا تنازل مسجَّل الآن)', () => {
+    const j = jsonOf(['--file', 'tests/fixtures/wrangler.closed-signup-weak-kdf.sample.toml']);
+    expect(j.errors).toEqual([]);
+    expect(j.blockers.map((b: any) => b.code)).toContain('KDF_BELOW_OWASP');
+    expect(j.status).toBe('BLOCKED');
+  });
+
+  it('إعداد الإنتاج الملتزَم يمرّ نظيفًا: تسجيل مجاني + اشتقاق على طبقتين (بلا تنازلات)', () => {
+    const j = jsonOf(['--file', 'wrangler.production.toml']);
+    expect(j.errors).toEqual([]);
+    expect(j.blockers).toEqual([]);
+    expect(j.warnings).toEqual([]);
+    expect(j.status).toBe('PASS');
+    expect(j.waivers).toEqual([]);
+  });
+
+  it('تسجيل مفتوح + طبقة عميل 600k + خادم 30k = مقبول (البديل المجاني الآمن)', () => {
+    // هذه هي الحالة الإنتاجية الفعلية: 600k في المتصفح + 30k على الخادم.
+    const j = jsonOf(['--file', 'tests/fixtures/wrangler.layered-kdf.sample.toml']);
+    expect(j.errors).toEqual([]);
+    expect(j.blockers).toEqual([]);
+    expect(j.status).toBe('PASS');
+  });
+
+  it('تسجيل مفتوح + طبقة عميل أقل من 600k = خطأ (لا يُقبل اشتقاق ضعيف بغطاء «طبقتين»)', () => {
+    const j = jsonOf(['--file', 'tests/fixtures/wrangler.layered-kdf-weak.sample.toml']);
+    expect(j.errors.map((e: any) => e.code)).toContain('PUBLIC_SIGNUP_WEAK_KDF');
+    expect(j.status).toBe('FAIL');
   });
 
   it('تقرأ [env.production.vars] لا [vars] التطويري (عيب حقيقي كان موجودًا)', () => {

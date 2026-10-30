@@ -1,0 +1,74 @@
+{
+  "base": "http://127.0.0.1:4174",
+  "measuredAt": "2026-10-29T08:49:34.665Z",
+  "results": [
+    {
+      "url": "/",
+      "lcpMs": 121,
+      "cls": 0.014,
+      "interactionMs": null,
+      "loadMs": 618,
+      "domContentLoadedMs": 29,
+      "longTasks": 0,
+      "domNodes": 180,
+      "bytes": {
+        "total": 1630653,
+        "js": 353119,
+        "css": 46113,
+        "font": 118328,
+        "img": 1110963
+      }
+    },
+    {
+      "url": "/login",
+      "lcpMs": 86,
+      "cls": 0.0006,
+      "interactionMs": null,
+      "loadMs": 574,
+      "domContentLoadedMs": 27,
+      "longTasks": 0,
+      "domNodes": 58,
+      "bytes": {
+        "total": 489882,
+        "js": 353119,
+        "css": 46113,
+        "font": 88520,
+        "img": 0
+      }
+    },
+    {
+      "url": "/learn",
+      "lcpMs": 398,
+      "cls": 0.0108,
+      "interactionMs": 16,
+      "loadMs": 831,
+      "domContentLoadedMs": 30,
+      "longTasks": 1,
+      "domNodes": 5942,
+      "bytes": {
+        "total": 1694134,
+        "js": 353119,
+        "css": 46113,
+        "font": 104140,
+        "img": 1030080
+      }
+    },
+    {
+      "url": "/path",
+      "lcpMs": 91,
+      "cls": 0.0132,
+      "interactionMs": null,
+      "loadMs": 594,
+      "domContentLoadedMs": 28,
+      "longTasks": 0,
+      "domNodes": 91,
+      "bytes": {
+        "total": 505691,
+        "js": 353119,
+        "css": 46113,
+        "font": 104140,
+        "img": 0
+      }
+    }
+  ]
+}

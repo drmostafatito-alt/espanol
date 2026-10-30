@@ -50,6 +50,22 @@ export function makeHarness(overrides: Partial<Env> = {}): Harness {
   };
 }
 
+/**
+ * جسم طلب مصادقة صالح في أي بيئة: إذا كان الخادم يطلب اشتقاق العميل (الإنتاج)
+ * نشتق المفتاح هنا كما يفعل المتصفح (WebCrypto)، وإلا نرسل كلمة المرور (بيئة الاختبار).
+ * تكرارات الاختبار 100,000 (أرضية العميل) لإبقاء الزمن معقولًا؛ الإنتاج 600,000.
+ */
+export async function authBody(h: Harness, email: string, password: string): Promise<Record<string, string>> {
+  const res = await h.call('/api/auth/kdf-params', { method: 'POST', body: JSON.stringify({ email }) });
+  if (res.status !== 200) return { email, password };
+  const p = (await res.json()) as { salt: string; iterations: number; required: boolean };
+  if (!p.required) return { email, password };
+  const salt = Buffer.from(p.salt.replace(/-/g, '+').replace(/_/g, '/'), 'base64');
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
+  const bits = await crypto.subtle.deriveBits({ name: 'PBKDF2', salt, iterations: p.iterations, hash: 'SHA-256' }, key, 256);
+  return { email, derivedKey: Buffer.from(new Uint8Array(bits)).toString('base64url') };
+}
+
 export const VALID_PW = 'Cairo2026learn';
 export const VALID_EMAIL = 'sara@example.com';
 
