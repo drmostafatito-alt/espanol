@@ -156,6 +156,7 @@ PUBLIC_SIGNUP_WEAK_KDF (exit 1) — لا يقبل تسجيلًا عامًا بت
 | دخان Worker (workerd + D1) | `smoke-worker.mjs` | ✅ **32/32** |
 | بناء الإنتاج | `npm run build` | ✅ |
 | إعداد الإنتاج | `check-deploy-ready --file wrangler.production.toml` | ✅ PASS (0/0 + تنازل معلن) |
+| حزمة النشر (بلا نشر) | `wrangler deploy --dry-run --config wrangler.production.toml` | ✅ الإعداد يُحلَّل والارتباطات تُقرأ: D1 `es-ar-prod` · 572.59 KiB gzip |
 | إعداد التطوير | `check-deploy-ready` | ✅ FAIL كما يجب (رفض نشر إعداد تطوير) |
 | قاعدة البيانات | `db.mjs status` / `status --remote` | ✅ القاعدة محدَّثة / رفض اللمس البعيد |
 | تصدير خطة المحتوى | `export-content-sql.mjs --out /tmp/content-check.sql` | ✅ 654,333 سطرًا، 1,101 صفًا `published` (سياسة الإفراج مطبَّقة) |
@@ -190,6 +191,8 @@ npm run build && node tools/check-deploy-ready.mjs --file wrangler.production.to
 # 5) النشر
 npx wrangler deploy --config wrangler.production.toml
 ```
+
+> `--dry-run` يثبت أن حزمة النشر تُبنى وأن الإعداد صالح، لكنه **لا يثبت وجود الأسرار** (`PASSWORD_PEPPER`/`GOOGLE_CLIENT_SECRET`) في حساب Cloudflare — ذلك يظهر فقط عند أول طلب مصادقة بعد النشر.
 
 **بعد النشر (تحقق لا يمكن إجراؤه الآن)**: `GET /api/health` 200 · `GET /` يحمل `Content-Security-Policy` و`X-Frame-Options` · تسجيل بالبريد يعيد 503 · زر Google يعيد التوجيه إلى `accounts.google.com` · الدخول العام يعمل · `wrangler tail` لمراقبة الأخطاء.
 
