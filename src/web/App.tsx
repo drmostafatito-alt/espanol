@@ -23,6 +23,11 @@ const loadPlacement = () => import('./pages/Placement');
 const loadSettings = () => import('./pages/Settings');
 const loadProfile = () => import('./pages/Profile');
 const loadSearch = () => import('./pages/Search');
+const loadVocabulary = () => import('./pages/Vocabulary');
+const loadGrammar = () => import('./pages/Grammar');
+const loadConversations = () => import('./pages/Conversations');
+const loadListening = () => import('./pages/Listening');
+const loadStats = () => import('./pages/Stats');
 const loadMisc = () => import('./pages/Misc');
 
 const Login = lazy(() => loadAuth().then(m => ({ default: m.Login })));
@@ -38,6 +43,11 @@ const Settings = lazy(() => loadSettings().then(m => ({ default: m.Settings })))
 
 const Profile = lazy(() => loadProfile().then(m => ({ default: m.Profile })));
 const Search = lazy(() => loadSearch().then(m => ({ default: m.Search })));
+const Vocabulary = lazy(() => loadVocabulary().then(m => ({ default: m.Vocabulary })));
+const Grammar = lazy(() => loadGrammar().then(m => ({ default: m.Grammar })));
+const Conversations = lazy(() => loadConversations().then(m => ({ default: m.Conversations })));
+const Listening = lazy(() => loadListening().then(m => ({ default: m.Listening })));
+const Stats = lazy(() => loadStats().then(m => ({ default: m.Stats })));
 const NotFound = lazy(() => loadMisc().then(m => ({ default: m.NotFound })));
 
 /**
@@ -55,6 +65,11 @@ function prefetchPage(path: string): void {
     : path === '/placement' ? loadPlacement
     : path === '/settings' ? loadSettings
     : path === '/profile' ? loadProfile
+    : path === '/vocabulary' ? loadVocabulary
+    : path === '/grammar' ? loadGrammar
+    : path === '/conversations' ? loadConversations
+    : path === '/listening' ? loadListening
+    : path === '/stats' ? loadStats
     : path.startsWith('/search') ? loadSearch
     : null;
   if (job) void job().catch(() => undefined); // فشل التحميل المسبق لا يمنع lazy() من إعادة المحاولة
@@ -69,7 +84,9 @@ function Shell() {
   const isProtected =
     path === '/settings' || path === '/profile' || path === '/path' ||
     path === '/learn' || path.startsWith('/learn/') ||
-    path === '/review' || path.startsWith('/review/') || path === '/placement';
+    path === '/review' || path.startsWith('/review/') || path === '/placement' ||
+    path === '/vocabulary' || path === '/grammar' || path === '/conversations' ||
+    path === '/listening' || path === '/stats';
   useEffect(() => {
     prefetchPage(path);
   }, [path]);
@@ -115,6 +132,16 @@ function Shell() {
     page = user ? <Dashboard navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/path') {
     page = user ? <Path navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/vocabulary') {
+    page = user ? <Vocabulary navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/grammar') {
+    page = user ? <Grammar navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/conversations') {
+    page = user ? <Conversations navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/listening') {
+    page = user ? <Listening navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
+  } else if (path === '/stats') {
+    page = user ? <Stats navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/profile') {
     page = user ? <Profile navigate={navigate} /> : <p className="container muted">جارٍ التحقق من الجلسة…</p>;
   } else if (path === '/placement') {
@@ -144,6 +171,8 @@ function Shell() {
   const isAppArea =
     !!user && !isFocus &&
     (path === '/learn' || path === '/settings' || path === '/profile' || path === '/path' ||
+      path === '/vocabulary' || path === '/grammar' || path === '/conversations' ||
+      path === '/listening' || path === '/stats' ||
       path === '/review/packs' || path.startsWith('/search'));
 
   return (

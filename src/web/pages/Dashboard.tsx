@@ -98,21 +98,30 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
   const goalPct = goalMinutes > 0 ? Math.min(100, Math.round((todayMinutes / goalMinutes) * 100)) : 0;
   const dueNow = progress?.review?.dueNow ?? 0;
   const reviewTotal = progress?.review?.total ?? 0;
+  const weakCount = progress?.review?.weakCount ?? 0;
+  const masteredCount = progress?.review?.masteredCount ?? 0;
+  const familiarCount = progress?.review?.familiarCount ?? 0;
+  const learningCount = progress?.review?.learningCount ?? 0;
+  const accuracyAvg = progress?.stats?.accuracy_avg ?? null;
   const week = progress?.week ?? [];
   const achievements = progress?.achievements ?? [];
   const earned = achievements.filter(a => a.earned);
   const nextUp = achievements.find(a => !a.earned) ?? null;
 
   const currentLevel = useMemo(() => {
-    const done = new Set(
-      lessons.filter(l => l.progress_status === 'completed' && l.level_code).map(l => l.level_code!.toUpperCase()),
+    const nextCode = progress?.nextLesson?.level_code?.toUpperCase();
+    if (nextCode && LEVEL_ORDER.includes(nextCode)) return nextCode;
+    const doneMain = new Set(
+      lessons
+        .filter(l => l.progress_status === 'completed' && l.level_code && (l.program_slug ?? 'main-track') === 'main-track')
+        .map(l => l.level_code!.toUpperCase()),
     );
     for (let i = LEVEL_ORDER.length - 1; i >= 0; i--) {
       const lvl = LEVEL_ORDER[i]!;
-      if (done.has(lvl)) return lvl;
+      if (doneMain.has(lvl)) return lvl;
     }
     return 'PREA1';
-  }, [lessons]);
+  }, [lessons, progress?.nextLesson?.level_code]);
 
   const filteredLessons = useMemo(
     () =>
@@ -162,6 +171,12 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
               <Icon name="check-circle" size={17} />
               <span className="num">{todayLessons}</span> درس اليوم
             </span>
+            {accuracyAvg !== null && (
+              <span className="pill-stat">
+                <Icon name="target" size={17} />
+                دقة <span className="num">{accuracyAvg}%</span>
+              </span>
+            )}
           </div>
         </div>
         <div className="today-hero-side">
@@ -265,6 +280,77 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
                 راجع
               </button>
             </div>
+          </div>
+
+          {/* ---------------- إتقان المفردات والوصول السريع للمهارات ---------------- */}
+          <div className="dash-columns">
+            <section className="week-card" aria-labelledby="vocab-mastery-title">
+              <div className="week-head">
+                <h2 id="vocab-mastery-title">إتقان المفردات</h2>
+                <span className="small muted num">
+                  {progress.stats.words_stable}/{progress.stats.words_seen} راسخة
+                </span>
+              </div>
+              {reviewTotal > 0 ? (
+                <>
+                  <div className="mastery-stack" aria-label="توزيع إتقان المفردات">
+                    {masteredCount > 0 && (
+                      <span className="seg-mastered" style={{ width: `${Math.round((masteredCount / reviewTotal) * 100)}%` }} />
+                    )}
+                    {familiarCount > 0 && (
+                      <span className="seg-familiar" style={{ width: `${Math.round((familiarCount / reviewTotal) * 100)}%` }} />
+                    )}
+                    {learningCount > 0 && (
+                      <span className="seg-learning" style={{ width: `${Math.round((learningCount / reviewTotal) * 100)}%` }} />
+                    )}
+                    {weakCount > 0 && (
+                      <span className="seg-weak" style={{ width: `${Math.round((weakCount / reviewTotal) * 100)}%` }} />
+                    )}
+                  </div>
+                  <div className="mastery-legend">
+                    <span><i className="dot mastered" /> متقنة: <b className="num">{masteredCount}</b></span>
+                    <span><i className="dot familiar" /> مألوفة: <b className="num">{familiarCount}</b></span>
+                    <span><i className="dot learning" /> قيد التعلّم: <b className="num">{learningCount}</b></span>
+                    <span><i className="dot weak" /> متعثرة: <b className="num">{weakCount}</b></span>
+                  </div>
+                </>
+              ) : (
+                <p className="small muted" style={{ margin: 'var(--s-2) 0' }}>
+                  أكمل درسك الأول أو افتح مكتبة المفردات لتظهر بطاقات التعلّم والإتقان هنا.
+                </p>
+              )}
+              <div className="row" style={{ marginTop: 'var(--s-3)', gap: 'var(--s-2)', flexWrap: 'wrap' }}>
+                <button type="button" className="btn sm secondary" onClick={() => navigate('/vocabulary')}>
+                  <Icon name="book" size={16} /> مكتبة المفردات
+                </button>
+                {weakCount > 0 && (
+                  <button type="button" className="btn sm navy" onClick={() => navigate('/review?mode=weak')}>
+                    <Icon name="cards" size={16} /> راجع المتعثرة ({weakCount})
+                  </button>
+                )}
+              </div>
+            </section>
+
+            <section className="week-card" aria-labelledby="skills-hub-title">
+              <div className="week-head">
+                <h2 id="skills-hub-title">مختبرات المهارات</h2>
+                <span className="small muted">تدرّب حسب مهارتك</span>
+              </div>
+              <div className="skills-shortcut-grid">
+                <button type="button" className="skill-shortcut" onClick={() => navigate('/grammar')}>
+                  <Icon name="sparkles" size={18} /> <span>القواعد</span>
+                </button>
+                <button type="button" className="skill-shortcut" onClick={() => navigate('/conversations')}>
+                  <Icon name="chat" size={18} /> <span>المحادثات</span>
+                </button>
+                <button type="button" className="skill-shortcut" onClick={() => navigate('/listening')}>
+                  <Icon name="headset" size={18} /> <span>الاستماع والنطق</span>
+                </button>
+                <button type="button" className="skill-shortcut" onClick={() => navigate('/stats')}>
+                  <Icon name="trophy" size={18} /> <span>الإحصائيات</span>
+                </button>
+              </div>
+            </section>
           </div>
 
           {/* ---------------- الأسبوع + الإنجازات ---------------- */}

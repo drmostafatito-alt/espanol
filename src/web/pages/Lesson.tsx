@@ -8,6 +8,7 @@ import { Mascot } from '../components/Mascot';
 import { Solecito } from '../components/Illustrations';
 import { ProgressBar } from '../components/ui';
 import { LessonBriefView } from '../components/LessonBrief';
+import { AccentBar, insertAtCursor } from '../components/AccentBar';
 
 /** معرّف حدث فريد لكل محاولة — أساس منع تكرار النقاط */
 function newEventId(): string {
@@ -26,6 +27,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
+  const [reviewingBrief, setReviewingBrief] = useState(false);
   const [answer, setAnswer] = useState<unknown>(null);
   const [result, setResult] = useState<AnswerResult | null>(null);
   const [completion, setCompletion] = useState<CompleteResult | null>(null);
@@ -46,6 +48,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   useEffect(() => {
     let cancelled = false;
     setPhase('loading');
+    setReviewingBrief(false);
     setError(null);
     setLocked(null);
     void api
@@ -110,7 +113,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   );
 
   const toggleRate = useCallback(() => {
-    const nextRate = audioRate === 1.0 ? 0.75 : 1.0;
+    const nextRate = audioRate === 1.0 ? 0.75 : audioRate === 0.75 ? 1.25 : 1.0;
     setAudioRate(nextRate);
     playAudio(nextRate);
   }, [audioRate, playAudio]);
@@ -282,16 +285,21 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   if (!session) return null;
 
-  if (phase === 'brief') {
+  if (phase === 'brief' || reviewingBrief) {
     return (
       <LessonBriefView
         brief={session.lesson.brief}
         title={session.lesson.titleAr}
         level={session.lesson.level}
         exerciseCount={exercises.length}
+        startLabel={reviewingBrief ? 'العودة إلى التمارين' : 'ابدأ التمارين'}
         onStart={() => {
-          startedAt.current = Date.now();
-          setPhase('exercise');
+          if (reviewingBrief) {
+            setReviewingBrief(false);
+          } else {
+            startedAt.current = Date.now();
+            setPhase('exercise');
+          }
         }}
         onBack={() => navigate('/learn')}
       />
@@ -330,6 +338,14 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
 
   const label = exerciseLabel(current.type);
+  const userAnswerText =
+    current.options.length === 0
+      ? Array.isArray(answer)
+        ? answer.map(String).join(' ')
+        : typeof answer === 'string'
+          ? answer.trim()
+          : null
+      : null;
 
   return (
     <div className="lesson-shell" style={{ paddingBottom: 'var(--s-6)' }}>
@@ -346,6 +362,14 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
               <span className="num">{exercises.length}</span>
             </span>
           </div>
+          <button
+            type="button"
+            className="btn ghost sm"
+            onClick={() => setReviewingBrief(true)}
+            title="راجع شرح الدرس والمفردات"
+          >
+            <Icon name="book" size={15} /> الشرح
+          </button>
           <span className={`node-badge${phase === 'feedback' ? ' done' : ' current'}`}>
             <Icon name={phase === 'feedback' ? 'check' : 'clock'} size={13} />
             <span className="num">{progressPct}%</span>
@@ -396,6 +420,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
         <div ref={feedbackRef} tabIndex={-1} style={{ outline: 'none' }}>
         <FeedbackPanel
           result={result}
+          userAnswerText={userAnswerText}
           action={
             <button className="btn success lg" data-testid="lesson-next" onClick={next} autoFocus>
               {index + 1 < exercises.length ? 'متابعة' : 'إنهاء الدرس'} <Icon name="arrow-left" size={18} />
@@ -420,7 +445,15 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 }
 
 /* ---------------- التغذية الراجعة ---------------- */
-function FeedbackPanel({ result, action }: { result: AnswerResult; action?: ReactNode }) {
+function FeedbackPanel({
+  result,
+  userAnswerText,
+  action,
+}: {
+  result: AnswerResult;
+  userAnswerText?: string | null;
+  action?: ReactNode;
+}) {
   const participation = result.mode === 'participation';
   const bad = !participation && !result.correct;
   const cls = participation ? 'neutral' : result.correct ? 'ok' : 'bad';
@@ -436,6 +469,18 @@ function FeedbackPanel({ result, action }: { result: AnswerResult; action?: Reac
       <div style={{ minWidth: 0, flex: 1 }}>
         <h3>{title}</h3>
         {result.feedbackAr && <p style={{ margin: '0 0 4px', fontWeight: 600 }}>{result.feedbackAr}</p>}
+        {bad && result.correctText && (
+          <div className="feedback-compare">
+            {userAnswerText && (
+              <p className="small" style={{ margin: 0 }}>
+                <strong>إجابتك:</strong> <span className="es" dir="ltr">{userAnswerText}</span>
+              </p>
+            )}
+            <p className="small" style={{ margin: 0 }}>
+              <strong>الإجابة الصحيحة:</strong> <span className="es" dir="ltr">{result.correctText}</span>
+            </p>
+          </div>
+        )}
         {result.explanationAr && <p>{result.explanationAr}</p>}
         {participation && (
           <p className="small muted" style={{ marginTop: 4 }}>
@@ -462,23 +507,34 @@ function QuestionScene({ children, mood = 'wave' }: { children: ReactNode; mood?
 const EXERCISE_LABEL: Record<string, { label: string; icon: 'volume' | 'cards' | 'sort' | 'chat' | 'book' | 'mic' }> = {
   listen_choose: { label: 'استمع واختر', icon: 'volume' },
   listen_type: { label: 'استمع واكتب', icon: 'volume' },
+  audio_dictation: { label: 'إملاء صوتي', icon: 'volume' },
   match_pairs: { label: 'وصّل الكلمات بمعانيها', icon: 'cards' },
   word_order: { label: 'رتّب الجملة', icon: 'sort' },
+  sentence_building: { label: 'كوّن الجملة', icon: 'sort' },
   dialogue_order: { label: 'رتّب الحوار', icon: 'sort' },
   fill_blank: { label: 'أكمل الفراغ', icon: 'book' },
   translate_es_ar: { label: 'ترجم إلى العربية', icon: 'chat' },
   translate_ar_es: { label: 'ترجم إلى الإسبانية', icon: 'chat' },
+  translation_es_ar: { label: 'ترجم إلى العربية', icon: 'chat' },
+  translation_ar_es: { label: 'ترجم إلى الإسبانية', icon: 'chat' },
   multiple_choice: { label: 'اختر الإجابة الصحيحة', icon: 'cards' },
+  word_choice: { label: 'اختر الكلمة الصحيحة', icon: 'cards' },
   reading_comprehension: { label: 'اقرأ ثم أجب', icon: 'book' },
+  read_answer: { label: 'اقرأ ثم أجب', icon: 'book' },
+  correct_error: { label: 'صحّح الخطأ', icon: 'book' },
+  error_correction: { label: 'صحّح الخطأ', icon: 'book' },
+  grammar_transform: { label: 'تطبيق القاعدة', icon: 'book' },
+  roleplay: { label: 'حوار وتمثيل دور', icon: 'chat' },
   speak_with_text: { label: 'تدرّب على النطق', icon: 'mic' },
   speak_free: { label: 'تحدّث بحرية', icon: 'mic' },
+  speaking_prompt: { label: 'تدرّب على التحدّث', icon: 'mic' },
   write_sentence: { label: 'اكتب جملة', icon: 'book' },
   write_email: { label: 'اكتب رسالة', icon: 'book' },
   summarize_dialogue: { label: 'لخّص الحوار', icon: 'chat' },
 };
 
 function exerciseLabel(type: string): { label: string; icon: 'volume' | 'cards' | 'sort' | 'chat' | 'book' | 'mic' } {
-  return EXERCISE_LABEL[type] ?? { label: 'تمرين', icon: 'book' };
+  return EXERCISE_LABEL[type] ?? { label: 'تمرين تطبيقي', icon: 'book' };
 }
 
 function hasAnswer(exercise: LessonExercise, answer: unknown): boolean {
@@ -525,6 +581,8 @@ function ExerciseBody({
   const [speechTranscript, setSpeechTranscript] = useState('');
   const [speechError, setSpeechError] = useState<string | null>(null);
   const recognizerRef = useRef<ReturnType<typeof createSpeechRecognizer> | null>(null);
+  const textInputRef = useRef<HTMLInputElement | null>(null);
+  const textAreaRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     setTokens([]);
@@ -586,7 +644,7 @@ function ExerciseBody({
 
   const rateButton = hasAudio ? (
     <button className="btn ghost sm" data-testid="lesson-audio-rate" onClick={onToggleRate} type="button">
-      {audioRate === 1.0 ? 'سرعة بطيئة (0.75x)' : 'السرعة العادية (1.0x)'}
+      {audioRate === 1.0 ? 'سرعة بطيئة (0.75x)' : audioRate === 0.75 ? 'سرعة سريعة (1.25x)' : 'السرعة العادية (1.0x)'}
     </button>
   ) : null;
 
@@ -806,6 +864,7 @@ function ExerciseBody({
   }
 
   /* إدخال نصي حر */
+  const currentText = typeof answer === 'string' ? answer : '';
   return (
     <div>
       <QuestionScene>
@@ -816,12 +875,13 @@ function ExerciseBody({
         <span>إجابتك بالإسبانية</span>
         {(['write_email', 'summarize_dialogue', 'write_sentence'].includes(exercise.type)) ? (
         <textarea
+          ref={textAreaRef}
           data-testid="lesson-text"
           dir="ltr"
           className="es"
           rows={4}
           disabled={disabled}
-          value={typeof answer === 'string' ? answer : ''}
+          value={currentText}
           onChange={e => setAnswer(e.target.value)}
           placeholder="Escribe aquí…"
           autoComplete="off"
@@ -829,12 +889,13 @@ function ExerciseBody({
         />
         ) : (
         <input
+          ref={textInputRef}
           data-testid="lesson-text"
           type="text"
           dir="ltr"
           className="es"
           disabled={disabled}
-          value={typeof answer === 'string' ? answer : ''}
+          value={currentText}
           onChange={e => setAnswer(e.target.value)}
           onKeyDown={e => {
             if (e.key === 'Enter' && !disabled && hasAnswer(exercise, answer) && onSubmit) {
@@ -848,6 +909,19 @@ function ExerciseBody({
         />
         )}
       </label>
+      <AccentBar
+        disabled={disabled}
+        onInsert={ch =>
+          insertAtCursor(
+            ['write_email', 'summarize_dialogue', 'write_sentence'].includes(exercise.type)
+              ? textAreaRef.current
+              : textInputRef.current,
+            currentText,
+            ch,
+            setAnswer,
+          )
+        }
+      />
     </div>
   );
 }
@@ -876,9 +950,14 @@ function ResultScreen({
   onNext?: () => void;
   nextTitle: string | null;
 }) {
+  const { user } = useAuth();
   const participation = Object.values(results).filter(v => v === null).length;
   const passed = completion?.passed ?? false;
   const firstCompletion = passed && !completion?.alreadyCompleted;
+  const newVocab = session.lesson.brief.newVocabulary.filter(v => v.word);
+  const missedExercises = session.exercises.filter(ex => results[ex.id] === false);
+  const grammarPoints = session.lesson.brief.grammarPoints ?? [];
+  const grammarTopics = session.lesson.brief.grammarTopics ?? [];
 
   return (
     <div
@@ -963,6 +1042,62 @@ function ResultScreen({
           )}
           {!completion.passed && completion.missingRequiredTypes.length > 0 && (
             <p className="small error-text">أنواع تمارين مطلوبة غير موجودة في هذا الدرس: {completion.missingRequiredTypes.join('، ')}</p>
+          )}
+
+          {(newVocab.length > 0 || missedExercises.length > 0 || grammarPoints.length > 0 || grammarTopics.length > 0) && (
+            <div className="result-summary-panels">
+              {newVocab.length > 0 && (
+                <div className="result-panel">
+                  <h2>مفردات تعلّمتها في هذا الدرس ({newVocab.length})</h2>
+                  <div className="vocab-list">
+                    {newVocab.map(v => (
+                      <button
+                        key={v.word}
+                        type="button"
+                        className="vocab-chip"
+                        style={{ cursor: 'pointer', font: 'inherit' }}
+                        onClick={() => {
+                          audioService.setRate(1.0);
+                          void audioService.play({ key: `res-${v.word}`, text: v.word, variant: user?.audioVariant });
+                        }}
+                      >
+                        <Icon name="volume" size={13} />
+                        <b className="es" dir="ltr">{v.word}</b>
+                        <span>{v.meaningFusha ?? v.meaningEg ?? ''}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {(grammarPoints.length > 0 || grammarTopics.length > 0) && (
+                <div className="result-panel">
+                  <h2>القواعد والمفاهيم المغطاة</h2>
+                  <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
+                    {grammarPoints.map((gp, i) => (
+                      <span key={`gp-${i}`} className="badge navy">{gp.titleAr}</span>
+                    ))}
+                    {grammarTopics.map(t => (
+                      <span key={`gt-${t}`} className="badge">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {missedExercises.length > 0 && (
+                <div className="result-panel">
+                  <h2>نقاط تحتاج منك مراجعة ({missedExercises.length})</h2>
+                  <ul className="list-plain" style={{ margin: 0 }}>
+                    {missedExercises.map(ex => (
+                      <li key={ex.id} className="small">
+                        {ex.stemEs ? <b className="es" dir="ltr">{ex.stemEs}</b> : <b>{ex.instructionAr}</b>}
+                        {ex.stemAr ? ` — ${ex.stemAr}` : ''}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           )}
         </>
       )}

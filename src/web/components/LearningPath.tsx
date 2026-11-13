@@ -19,8 +19,12 @@ export function LearningPath({
   useEffect(() => {
     if (nextSlug) {
       const activeEl = document.querySelector('.path-node.current');
-      if (typeof activeEl?.scrollIntoView === 'function') {
-        activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      const scrollBox = activeEl?.closest('.path-scroll');
+      if (scrollBox && activeEl instanceof HTMLElement && typeof scrollBox.scrollBy === 'function') {
+        const boxRect = scrollBox.getBoundingClientRect();
+        const elRect = activeEl.getBoundingClientRect();
+        const delta = (elRect.left + elRect.width / 2) - (boxRect.left + boxRect.width / 2);
+        scrollBox.scrollBy({ left: delta, behavior: 'smooth' });
       }
     }
   }, [nextSlug]);

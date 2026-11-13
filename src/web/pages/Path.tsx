@@ -174,6 +174,32 @@ export function Path({ navigate }: { navigate: (to: string) => void }) {
         ))}
       </div>
 
+      {progress?.levels && progress.levels.length > 0 && (
+        <section className="cefr-strip" aria-label="مراحل الإطار الأوروبي CEFR">
+          {progress.levels.map(lv => {
+            const code = lv.code.toUpperCase();
+            const lvPct = lv.total ? Math.round((lv.completed / lv.total) * 100) : 0;
+            const active = level === code;
+            return (
+              <button
+                key={code}
+                type="button"
+                className={`cefr-step${active ? ' active' : ''}`}
+                onClick={() => {
+                  setAutoFocused(true);
+                  setLevel(code);
+                  window.history.replaceState({}, '', `/path?level=${code}`);
+                }}
+              >
+                <span className="cefr-code">{code === 'PREA1' ? 'A0 / Pre-A1' : code}</span>
+                <span className="cefr-pct num">{lvPct}%</span>
+                <span className="cefr-count small muted num">{lv.completed}/{lv.total}</span>
+              </button>
+            );
+          })}
+        </section>
+      )}
+
       {error && <ErrorState title="تعذّر تحميل المسار" description={error} onRetry={load} />}
       {!error && !progress && <LoadingState text="جارٍ تحميل خريطة المسار…" />}
 

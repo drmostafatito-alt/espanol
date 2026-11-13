@@ -14,6 +14,9 @@ import { api, ApiError, type ReviewCard, type ReviewPayload, type ReviewRating }
 import { readQueue, writeQueue, type PendingReview } from '../review-queue';
 import { useAuth } from '../state';
 import { ErrorState, LoadingState, ProgressBar } from '../components/ui';
+import { AccentBar, insertAtCursor } from '../components/AccentBar';
+import { audioService } from '../audio/instance';
+import { normalizeEs } from '../../shared/normalize-es';
 import { Icon } from '../components/icons';
 import { Solecito } from '../components/Illustrations';
 import { Mascot } from '../components/Mascot';
@@ -53,6 +56,10 @@ type ErrorKind = 'network' | 'server' | 'generic';
 
 export function Review({ navigate }: { navigate: (to: string) => void }) {
   const { user } = useAuth();
+  const [mode, setMode] = useState<'due' | 'weak'>(() => {
+    if (typeof window === 'undefined') return 'due';
+    return new URLSearchParams(window.location.search).get('mode') === 'weak' ? 'weak' : 'due';
+  });
   const [payload, setPayload] = useState<ReviewPayload | null>(null);
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('loading');
@@ -61,6 +68,8 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const [lastNext, setLastNext] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
+  const [typedGuess, setTypedGuess] = useState('');
+  const guessInputRef = useRef<HTMLInputElement | null>(null);
   const shownAt = useRef<number>(Date.now());
   const cardRef = useRef<HTMLDivElement | null>(null);
   const savingRef = useRef(false);
@@ -69,6 +78,18 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   const card: ReviewCard | undefined = cards[index];
 
   const userId = user?.id ?? null;
+
+  useEffect(() => {
+    return () => {
+      void audioService.stop();
+    };
+  }, []);
+
+  const playWord = (key: string, text: string | null | undefined) => {
+    if (!text) return;
+    audioService.setRate(1.0);
+    void audioService.play({ key, text, variant: user?.audioVariant });
+  };
 
   const flushQueue = useCallback(async () => {
     if (!userId) return; // بلا مستخدم معروف لا نلمس أي طابور — ولا طابور غيره
@@ -104,9 +125,10 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
     setPhase('loading');
     setError(null);
     try {
-      const res = await api.reviewSession();
+      const res = await api.reviewSession(undefined, mode);
       setPayload(res);
       setIndex(0);
+      setTypedGuess('');
       setPhase(res.cards.length ? 'card' : 'empty');
       setOffline(false);
     } catch (err) {
@@ -124,7 +146,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
       }
       setPhase('error');
     }
-  }, []);
+  }, [mode]);
 
   // التحميل مرة واحدة عند الدخول فقط: إعادة التحميل عند وصول هوية المستخدم
   // كانت تُعيد الطور إلى 'card' وتمحو كشف الإجابة أثناء تقييم المستخدم.
@@ -148,6 +170,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
 
   useEffect(() => {
     shownAt.current = Date.now();
+    setTypedGuess('');
     cardRef.current?.focus();
   }, [index, phase === 'card']);
 
@@ -267,7 +290,9 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
       <div className="container" style={{ maxWidth: 640 }}>
         <div className="card" data-testid="review-empty" style={{ textAlign: 'center' }}>
           <Solecito mood="happy" size={132} />
-          <h1 style={{ marginTop: 'var(--s-2)' }}>لا بطاقات مستحقة الآن</h1>
+          <h1 style={{ marginTop: 'var(--s-2)' }}>
+            {mode === 'weak' ? 'لا توجد كلمات متعثرة للمراجعة الآن' : 'لا بطاقات مستحقة الآن'}
+          </h1>
           {reason === 'NO_VALID_CARDS' ? (
             <p>
               بطاقاتك المستحقة بلا بيانات عرض صالحة حاليًا (مشكلة بيانات، لا حدّ يومي).
@@ -278,6 +303,8 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
               وصلت إلى حدّك اليومي ({session?.limits.newPerDay} بطاقة جديدة و{session?.limits.reviewsPerDay} مراجعة).
               يمكنك العودة غدًا — التقدّم محفوظ.
             </p>
+          ) : mode === 'weak' ? (
+            <p>لا توجد لديك بطاقات متعثرة حاليًا — أداء ممتاز! يمكنك مراجعة البطاقات المستحقة أو استعراض مكتبة المفردات.</p>
           ) : (
             <p>أتممت كل ما هو مستحق. العودة غدًا تعطي دماغك وقتًا لتثبيت ما تعلّمته.</p>
           )}
@@ -287,8 +314,19 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
               {pendingCount} تقييم لم يُرسل بعد. سيُرسل تلقائيًا عند عودة الاتصال — لا يضيع.
             </p>
           )}
-          <div className="row" style={{ marginTop: 'var(--s-4)' }}>
+          <div className="row" style={{ marginTop: 'var(--s-4)', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button className="btn" onClick={() => void load()}>تحقّق مرة أخرى</button>
+            {mode === 'weak' && (
+              <button
+                className="btn navy"
+                onClick={() => {
+                  setMode('due');
+                  window.history.replaceState({}, '', '/review');
+                }}
+              >
+                كل البطاقات المستحقة
+              </button>
+            )}
             <button className="btn secondary" onClick={() => navigate('/learn')}>رجوع إلى لوحتي</button>
             <button className="btn ghost" onClick={() => navigate('/review/packs')}>حزم المفردات</button>
           </div>
@@ -298,8 +336,12 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
   }
 
   const revealed = phase === 'revealed' || phase === 'saving';
-
   const progressPct = Math.round((index / Math.max(1, cards.length)) * 100);
+  const expectedEs = card.kind === 'production' ? card.revealEs : card.headwordEs;
+  const guessExact =
+    typedGuess.trim().length > 0 && expectedEs
+      ? normalizeEs(typedGuess) === normalizeEs(expectedEs)
+      : null;
 
   return (
     <div className="lesson-shell" style={{ paddingBlock: 'var(--s-4) var(--s-6)' }}>
@@ -309,12 +351,24 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
             <Icon name="close" size={20} />
           </button>
           <div className="lesson-title" style={{ minWidth: 0, flex: 1 }}>
-            <h1>مراجعة الكلمات</h1>
+            <h1>{mode === 'weak' ? 'تركيز على الكلمات المتعثرة' : 'مراجعة الكلمات'}</h1>
             <span className="small muted">
               بطاقة <span className="num">{index + 1}</span> من <span className="num">{cards.length}</span> · متبقٍ اليوم:{' '}
               <span className="num">{session?.newRemaining ?? 0}</span> جديدة
             </span>
           </div>
+          {mode === 'weak' && (
+            <button
+              type="button"
+              className="btn ghost sm"
+              onClick={() => {
+                setMode('due');
+                window.history.replaceState({}, '', '/review');
+              }}
+            >
+              المراجعة العادية
+            </button>
+          )}
           <span className="node-badge current num">{progressPct}%</span>
         </div>
         <div className="lesson-progress-wrap" style={{ marginTop: 'var(--s-2)' }}>
@@ -336,10 +390,15 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
         aria-live="polite"
       >
         <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s-2)' }}>
-          <p className="small muted" style={{ margin: 0 }}>
-            {card.kind === 'production' ? 'أنتج الكلمة' : 'تعرّف على الكلمة'}
-            {card.level ? ` · ${card.level}` : ''}
-          </p>
+          <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
+            <p className="small muted" style={{ margin: 0 }}>
+              {card.kind === 'production' ? 'أنتج الكلمة' : 'تعرّف على الكلمة'}
+              {card.level ? ` · ${card.level}` : ''}
+            </p>
+            {(card.lapses ?? 0) > 0 && (
+              <span className="badge danger">تعثرت <span className="num">{card.lapses}</span>×</span>
+            )}
+          </div>
           <Mascot size={64} alt="" />
         </div>
 
@@ -347,21 +406,102 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
           <>
             <p className="review-prompt" data-testid="review-prompt">{card.promptAr}</p>
             {card.promptHintAr && <p className="small muted">{card.promptHintAr}</p>}
+            {!revealed && (
+              <div style={{ marginTop: 'var(--s-3)' }}>
+                <label className="field">
+                  <span className="small muted">اختبر تذكّرك بكتابة الكلمة بالإسبانية (اختياري)</span>
+                  <input
+                    ref={guessInputRef}
+                    type="text"
+                    dir="ltr"
+                    className="es"
+                    value={typedGuess}
+                    onChange={e => setTypedGuess(e.target.value)}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter') {
+                        e.preventDefault();
+                        setPhase('revealed');
+                      }
+                    }}
+                    placeholder="اكتب الإجابة ثم اضغط إظهار الإجابة…"
+                    autoComplete="off"
+                    autoCapitalize="off"
+                  />
+                </label>
+                <AccentBar
+                  onInsert={ch => insertAtCursor(guessInputRef.current, typedGuess, ch, setTypedGuess)}
+                />
+              </div>
+            )}
             {revealed && (
               <div data-testid="review-answer">
-                <p className="es" style={{ fontSize: '1.5rem', fontWeight: 700 }}>{card.revealEs}</p>
+                <div className="row" style={{ gap: 8, alignItems: 'center' }}>
+                  <p className="es" dir="ltr" style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0 }}>{card.revealEs}</p>
+                  {card.revealEs && (
+                    <button
+                      type="button"
+                      className="btn ghost sm icon-only-btn"
+                      onClick={() => playWord(`rev-prod-${card.id}`, card.revealEs)}
+                      aria-label={`استمع إلى ${card.revealEs}`}
+                    >
+                      <Icon name="volume" size={18} />
+                    </button>
+                  )}
+                </div>
+                {guessExact !== null && (
+                  <p className={`small ${guessExact ? 'success-text' : 'error-text'}`} style={{ marginTop: 6 }}>
+                    {guessExact ? 'كتابتك مطابقة تمامًا!' : `كتبتَ: «${typedGuess}»`}
+                  </p>
+                )}
+                {card.exampleEs && (
+                  <div className="row" style={{ gap: 8, alignItems: 'center', marginTop: 8 }}>
+                    <span className="es small" dir="ltr">«{card.exampleEs}»</span>
+                    <button
+                      type="button"
+                      className="btn ghost sm icon-only-btn"
+                      onClick={() => playWord(`rev-ex-${card.id}`, card.exampleEs)}
+                      aria-label="استمع إلى المثال"
+                    >
+                      <Icon name="volume" size={14} />
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </>
         ) : (
           <>
-            <p className="es review-prompt" dir="ltr" data-testid="review-prompt">{card.headwordEs}</p>
+            <div className="row" style={{ gap: 10, alignItems: 'center', justifyContent: 'center' }}>
+              <p className="es review-prompt" dir="ltr" data-testid="review-prompt" style={{ margin: 0 }}>{card.headwordEs}</p>
+              {card.headwordEs && (
+                <button
+                  type="button"
+                  className="btn ghost sm icon-only-btn"
+                  onClick={() => playWord(`rev-rec-${card.id}`, card.headwordEs)}
+                  aria-label={`استمع إلى ${card.headwordEs}`}
+                >
+                  <Icon name="volume" size={18} />
+                </button>
+              )}
+            </div>
             {card.ipa && <p className="small muted" dir="ltr">{card.ipa}</p>}
             {revealed && (
               <div data-testid="review-answer">
                 <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>{card.revealAr}</p>
                 {user?.explanationStyle !== 'fusha' && card.revealArEg && <p className="small muted">بالعامية: {card.revealArEg}</p>}
-                {card.exampleEs && <p className="es small">«{card.exampleEs}»</p>}
+                {card.exampleEs && (
+                  <div className="row" style={{ gap: 8, alignItems: 'center', justifyContent: 'center' }}>
+                    <p className="es small" dir="ltr" style={{ margin: 0 }}>«{card.exampleEs}»</p>
+                    <button
+                      type="button"
+                      className="btn ghost sm icon-only-btn"
+                      onClick={() => playWord(`rev-ex-${card.id}`, card.exampleEs)}
+                      aria-label="استمع إلى المثال"
+                    >
+                      <Icon name="volume" size={14} />
+                    </button>
+                  </div>
+                )}
                 {card.usageNoteAr && <p className="small muted">{card.usageNoteAr}</p>}
                 {card.commonErrorAr && <p className="small error-text">خطأ شائع: {card.commonErrorAr}</p>}
               </div>

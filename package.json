@@ -13,7 +13,7 @@
     "test": "vitest run",
     "db:reset:local": "node tools/db.mjs reset",
     "validate": "node tools/check-sql.mjs && node tools/validate-content.mjs && node tools/check-content-integrity.mjs && node tools/check-audio-manifest.mjs",
-  "content:integrity": "node tools/check-content-integrity.mjs",
+    "content:integrity": "node tools/check-content-integrity.mjs",
     "validate:audio": "node tools/check-audio-manifest.mjs",
     "db:status": "node tools/db.mjs status",
     "db:audit": "node tools/audit-db-integrity.mjs",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@fontsource/cairo": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

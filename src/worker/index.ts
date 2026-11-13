@@ -13,9 +13,9 @@ import {
   oauthGoogleCallback, oauthGoogleStart, requestEmailVerification, requestPasswordReset, resetPassword,
   revokeAllSessions, signup, updateMe,
 } from './routes/auth';
-import { getLesson, listPaths, reviewLesson, searchContent, setLessonPublished } from './routes/content';
+import { conversationsHub, getLesson, grammarHub, listPaths, listeningHub, reviewLesson, searchContent, setLessonPublished } from './routes/content';
 import { completeLesson, lessonSession, myProgress, startPlacementTest, submitAnswer, submitPlacementTest } from './routes/learn';
-import { listPacks, reviewSession, startPack, submitReview } from './routes/review';
+import { listPacks, myVocabulary, reviewSession, startPack, submitReview } from './routes/review';
 
 interface Ctx {
   requestId: string;
@@ -99,9 +99,13 @@ const routes: Route[] = [
   route('GET', '/api/content/paths', (req, env, ctx) => listPaths(req, env, ctx.requestId)),
   route('GET', '/api/content/search', (req, env, ctx) => searchContent(req, env, ctx.requestId)),
   route('GET', '/api/content/lessons/:slug', (req, env, ctx) => getLesson(req, env, ctx.requestId, ctx.user), 'optional'),
+  route('GET', '/api/content/hub/grammar', (req, env, ctx) => grammarHub(req, env, ctx.requestId, ctx.user), 'optional'),
+  route('GET', '/api/content/hub/conversations', (req, env, ctx) => conversationsHub(req, env, ctx.requestId, ctx.user), 'optional'),
+  route('GET', '/api/content/hub/listening', (req, env, ctx) => listeningHub(req, env, ctx.requestId, ctx.user), 'optional'),
 
   // ---- المرحلة 2: التعلم ----
   route('GET', '/api/me/progress', (req, env, ctx) => myProgress(req, env, ctx.requestId, ctx.user!), 'session'),
+  route('GET', '/api/me/vocabulary', (req, env, ctx) => myVocabulary(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/me/placement/start', (req, env, ctx) => startPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
   route('POST', '/api/me/placement', (req, env, ctx) => submitPlacementTest(req, env, ctx.requestId, ctx.user!), 'session', 'learn.submit'),
   route('GET', '/api/lessons/:slug/session', (req, env, ctx) => lessonSession(req, env, ctx.requestId, ctx.user!), 'session', 'learn.read'),
