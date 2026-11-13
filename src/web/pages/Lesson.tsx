@@ -418,7 +418,10 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
             }
           }}
           onPlayAudio={() => playAudio()}
-          onReplayAudio={() => playAudio()}
+          onReplayAudio={() => {
+            audio.stop();
+            playAudio();
+          }}
           onToggleRate={toggleRate}
           audioRate={audioRate}
           audioNotice={audioNotice}

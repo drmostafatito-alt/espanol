@@ -516,7 +516,7 @@ export function Review({ navigate }: { navigate: (to: string) => void }) {
             style={{ marginTop: 'var(--s-4)' }}
             onClick={() => setPhase('revealed')}
           >
-            أظهر الإجابة <span className="small muted">(مسافة)</span>
+            أظهر الإجابة <span className="small" style={{ opacity: 0.88, fontWeight: 500 }}>(مسافة)</span>
           </button>
         )}
 

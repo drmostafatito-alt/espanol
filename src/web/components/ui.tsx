@@ -240,3 +240,71 @@ export function SectionHeading({ children, action }: { children: ReactNode; acti
     </div>
   );
 }
+
+/**
+ * يستخرج الكلمات/العبارات الإسبانية فقط من نص قد يحتوي على شرح عربي أو رموز قوالب (+)
+ * حتى لا يحاول محرك النطق الإسباني قراءة الكلمات العربية.
+ */
+export function extractSpanishForAudio(text: string): string {
+  if (!/[\u0600-\u06FF]/.test(text)) return text.trim();
+  const matches = text.match(/[¿¡]?[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+(?:[\s,.'’-]+[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)*/g);
+  if (!matches || matches.length === 0) return text.trim();
+  return matches.map(m => m.trim()).filter(Boolean).join('. ');
+}
+
+/**
+ * يعرض النصوص الإسبانية الخالصة أو المختلطة بالعربية (مثل قوالب القواعد والشروح)
+ * مع عزل ثنائي الاتجاه (Bidi Isolation) يمنع انعكاس ترتيب الكلمات أو التصاق حرف العطف «و».
+ */
+export function BidiText({ text, className }: { text: string; className?: string }) {
+  if (!text) return null;
+  const hasArabic = /[\u0600-\u06FF]/.test(text);
+  if (!hasArabic) {
+    return (
+      <span className={`es${className ? ` ${className}` : ''}`} dir="ltr">
+        {text}
+      </span>
+    );
+  }
+
+  // فصل حرف العطف العربي «و» الملتصق مباشرة بكلمة لاتينية (مثل: وtener -> و tener)
+  const normalized = text
+    .replace(/([\u0600-\u06FF])([A-Za-zÁÉÍÓÚÜÑáéíóúüñ¿¡])/g, '$1 $2')
+    .replace(/([A-Za-zÁÉÍÓÚÜÑáéíóúüñ.!?])([\u0600-\u06FF])/g, '$1 $2');
+
+  // قوالب التراكيب التي تبدأ بالإسبانية وتحتوي على «+» (مثل: Me llamo + اسم)
+  if (normalized.includes('+')) {
+    const parts = normalized.split(/([\u0600-\u06FF]+(?:\s*\/\s*[\u0600-\u06FF]+|\s+[\u0600-\u06FF]+)*)/g);
+    return (
+      <span className={`es${className ? ` ${className}` : ''}`} dir="ltr" style={{ unicodeBidi: 'isolate' }}>
+        {parts.map((part, idx) =>
+          /[\u0600-\u06FF]/.test(part) ? (
+            <bdi key={idx} dir="rtl" style={{ fontFamily: 'var(--font-ar)', fontWeight: 700 }}>
+              {part}
+            </bdi>
+          ) : (
+            <span key={idx}>{part}</span>
+          ),
+        )}
+      </span>
+    );
+  }
+
+  // نص عربي يتضمن كلمات أو جملاً إسبانية مدمجة
+  const latinPattern = /([¿¡]?[A-Za-zÁÉÍÓÚÜÑáéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9\s,.'’!?-]*[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9.!?]|[A-Za-zÁÉÍÓÚÜÑáéíóúüñ])/g;
+  const segments = normalized.split(latinPattern);
+  return (
+    <span className={className} dir="rtl" style={{ unicodeBidi: 'isolate' }}>
+      {segments.map((seg, idx) =>
+        /[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/.test(seg) ? (
+          <bdi key={idx} dir="ltr" className="es" style={{ unicodeBidi: 'isolate' }}>
+            {seg}
+          </bdi>
+        ) : (
+          <span key={idx}>{seg}</span>
+        ),
+      )}
+    </span>
+  );
+}
+

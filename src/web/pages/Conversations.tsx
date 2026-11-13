@@ -3,7 +3,7 @@ import { api, type ConversationsHubPayload, type ScenarioDomain } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { Icon } from '../components/icons';
-import { EmptyState, ErrorState, LevelBadge, LoadingState } from '../components/ui';
+import { BidiText, EmptyState, ErrorState, extractSpanishForAudio, LevelBadge, LoadingState } from '../components/ui';
 
 const DOMAINS: { id: 'all' | ScenarioDomain; label: string }[] = [
   { id: 'all', label: 'كل المواقف' },
@@ -38,6 +38,9 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
   useEffect(() => () => { void audioService.stop(); }, []);
 
   const playLine = (key: string, text: string, rate = 1.0) => {
+    if (audioService.getRate() !== rate) {
+      audioService.stop();
+    }
     audioService.setRate(rate);
     void audioService.play({ key, text, variant: user?.audioVariant });
   };
@@ -298,9 +301,9 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
                         type="button"
                         key={i}
                         className="vocab-chip phrase-btn"
-                        onClick={() => playLine(`${sc.id}-kp-${i}`, p)}
+                        onClick={() => playLine(`${sc.id}-kp-${i}`, extractSpanishForAudio(p))}
                       >
-                        <b className="es" dir="ltr">{p}</b>
+                        <b><BidiText text={p} /></b>
                         <Icon name="volume" size={14} />
                       </button>
                     ))}
@@ -309,7 +312,7 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
 
                 {sc.culturalNoteAr && (
                   <p className="small muted" style={{ margin: 'var(--s-3) 0 0' }}>
-                    <Icon name="globe" size={14} style={{ display: 'inline', verticalAlign: '-2px' }} /> {sc.culturalNoteAr}
+                    <Icon name="globe" size={14} style={{ display: 'inline', verticalAlign: '-2px' }} /> <BidiText text={sc.culturalNoteAr} />
                   </p>
                 )}
               </article>

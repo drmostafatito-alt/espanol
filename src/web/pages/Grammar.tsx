@@ -3,7 +3,7 @@ import { api, type GrammarHubPayload } from '../api';
 import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { Icon } from '../components/icons';
-import { EmptyState, ErrorState, LevelBadge, LoadingState } from '../components/ui';
+import { BidiText, EmptyState, ErrorState, extractSpanishForAudio, LevelBadge, LoadingState } from '../components/ui';
 
 const LEVELS = ['ALL', 'PREA1', 'A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
@@ -111,7 +111,7 @@ export function Grammar({ navigate }: { navigate: (to: string) => void }) {
               </div>
 
               <h2 className="grammar-title">{g.titleAr}</h2>
-              <p className="grammar-body">{g.explanationAr}</p>
+              <p className="grammar-body"><BidiText text={g.explanationAr} /></p>
 
               {g.examples.length > 0 && (
                 <div className="grammar-examples">
@@ -119,12 +119,12 @@ export function Grammar({ navigate }: { navigate: (to: string) => void }) {
                   <ul className="list-plain">
                     {g.examples.map((ex, i) => (
                       <li key={i} className="grammar-example-row">
-                        <span className="es" dir="ltr">{ex}</span>
+                        <BidiText text={ex} />
                         <button
                           type="button"
                           className="btn ghost sm icon-btn"
-                          aria-label={`استمع إلى ${ex}`}
-                          onClick={() => void audioService.play({ key: `gram-${g.id}-${i}`, text: ex, variant: user.audioVariant })}
+                          aria-label={`استمع إلى ${extractSpanishForAudio(ex)}`}
+                          onClick={() => void audioService.play({ key: `gram-${g.id}-${i}`, text: extractSpanishForAudio(ex), variant: user.audioVariant })}
                         >
                           <Icon name="volume" size={15} />
                         </button>
@@ -139,7 +139,7 @@ export function Grammar({ navigate }: { navigate: (to: string) => void }) {
                   <strong>أخطاء شائعة تجنّبها:</strong>
                   <ul>
                     {g.commonMistakesAr.map((m, i) => (
-                      <li key={i} className="small">{m}</li>
+                      <li key={i} className="small"><BidiText text={m} /></li>
                     ))}
                   </ul>
                 </div>
@@ -147,7 +147,7 @@ export function Grammar({ navigate }: { navigate: (to: string) => void }) {
 
               {g.culturalNoteAr && (
                 <p className="small muted" style={{ margin: 0 }}>
-                  <Icon name="globe" size={14} style={{ display: 'inline', verticalAlign: '-2px' }} /> {g.culturalNoteAr}
+                  <Icon name="globe" size={14} style={{ display: 'inline', verticalAlign: '-2px' }} /> <BidiText text={g.culturalNoteAr} />
                 </p>
               )}
 

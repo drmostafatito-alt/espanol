@@ -238,6 +238,15 @@ async function applyWrongAnswerToTargetCards(
 /** يتحقق من قواعد الفتح. لا يوجد تجاوز — حتى في التطوير، حتى تكون الاختبارات حقيقية.
  * نفس تعريف «مستوفًى» في لوحة التقدم: إتمامٌ بدقة كافية، لا مجرد بدء.
  * قاعدة فتح تالفة ⇒ مقفل (فشل مغلق)، لا مفتوح صامتًا. */
+const OPTIONAL_PHONETIC_LESSONS = new Set([
+  'prea1-abecedario',
+  'prea1-vocales',
+  'prea1-h-muda',
+  'prea1-silabas',
+  'prea1-acento-escrito',
+  'prea1-entonacion',
+]);
+
 async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): Promise<void> {
   let rule: { type?: string; requires?: string[]; minAccuracy?: number };
   try {
@@ -250,6 +259,7 @@ async function assertUnlocked(env: Env, user: SessionUser, lesson: LessonRow): P
     });
   }
   if (!rule.requires?.length) return;
+  if (OPTIONAL_PHONETIC_LESSONS.has(lesson.slug) && rule.type === 'sequential') return;
 
   const placeholders = rule.requires.map(() => '?').join(',');
   const rows = await env.DB.prepare(
@@ -1175,12 +1185,13 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   }
 
   const lessons = sortedLessons.map(l => {
-    let rule: { requires?: string[]; minAccuracy?: number } = {};
+    let rule: { type?: string; requires?: string[]; minAccuracy?: number } = {};
     try {
       rule = JSON.parse(l.unlock_rule_json || '{}');
     } catch {}
 
-    const requires = Array.isArray(rule.requires) ? rule.requires : [];
+    const isOptionalPhonetic = OPTIONAL_PHONETIC_LESSONS.has(l.slug) && rule.type === 'sequential';
+    const requires = isOptionalPhonetic ? [] : (Array.isArray(rule.requires) ? rule.requires : []);
     const missing = requires.filter(reqSlug => {
       const isStarted = startedSet.has(reqSlug);
       const acc = accuracyMap.get(reqSlug) ?? 0;

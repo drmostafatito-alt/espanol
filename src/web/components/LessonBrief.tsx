@@ -14,6 +14,7 @@ import { useAuth } from '../state';
 import { audioService } from '../audio/instance';
 import { posLabelAr } from '../pages/Vocabulary';
 import { Solecito } from './Illustrations';
+import { BidiText, extractSpanishForAudio } from './ui';
 
 interface Props {
   brief: LessonBrief;
@@ -226,12 +227,12 @@ export function LessonBriefView({
               <ul className="list-plain" style={{ margin: 0 }}>
                 {brief.targetStructures.map((st, i) => (
                   <li key={i} className="row" style={{ justifyContent: 'space-between', gap: 8 }}>
-                    <span className="es" dir="ltr" style={{ fontWeight: 700 }}>{st}</span>
+                    <span style={{ fontWeight: 700 }}><BidiText text={st} /></span>
                     <button
                       type="button"
                       className="btn ghost sm icon-only-btn"
-                      onClick={() => playText(`brief-st-${i}`, st)}
-                      aria-label={`استمع إلى ${st}`}
+                      onClick={() => playText(`brief-st-${i}`, extractSpanishForAudio(st))}
+                      aria-label={`استمع إلى ${extractSpanishForAudio(st)}`}
                     >
                       <Icon name="volume" size={15} />
                     </button>
@@ -248,7 +249,7 @@ export function LessonBriefView({
               {brief.grammarPoints.map((gp, gi) => (
                 <div key={gi} style={{ marginBottom: gi < brief.grammarPoints.length - 1 ? 'var(--s-3)' : 0 }}>
                   <p style={{ margin: '0 0 var(--s-1)', fontWeight: 800 }}>{gp.titleAr}</p>
-                  <p className="small muted" style={{ margin: 0, whiteSpace: 'pre-line' }}>{gp.explanationAr}</p>
+                  <p className="small muted" style={{ margin: 0, whiteSpace: 'pre-line' }}><BidiText text={gp.explanationAr} /></p>
                 </div>
               ))}
             </Section>
@@ -258,7 +259,7 @@ export function LessonBriefView({
             <Section title="أخطاء شائعة تجنّبها" icon="warning">
               <ul className="grammar-mistakes" style={{ margin: 0 }}>
                 {mistakes.map((m, i) => (
-                  <li key={i} className="small">{m}</li>
+                  <li key={i} className="small"><BidiText text={m} /></li>
                 ))}
               </ul>
             </Section>

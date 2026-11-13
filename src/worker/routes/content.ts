@@ -469,10 +469,20 @@ async function loadVisibleHubLessons(env: Env, user: SessionUser | null): Promis
       }
       const prog = progressMap.get(row.slug);
       let isUnlocked = true;
+      const optionalPhonetics = new Set([
+        'prea1-abecedario',
+        'prea1-vocales',
+        'prea1-h-muda',
+        'prea1-silabas',
+        'prea1-acento-escrito',
+        'prea1-entonacion',
+      ]);
       if (user) {
         try {
-          const rule = JSON.parse(row.unlock_rule_json || '{}') as { requires?: string[]; minAccuracy?: number };
-          const reqs = Array.isArray(rule.requires) ? rule.requires : [];
+          const rule = JSON.parse(row.unlock_rule_json || '{}') as { type?: string; requires?: string[]; minAccuracy?: number };
+          const reqs = optionalPhonetics.has(row.slug) && rule.type === 'sequential'
+            ? []
+            : Array.isArray(rule.requires) ? rule.requires : [];
           isUnlocked = reqs.every(reqSlug => {
             const p = progressMap.get(reqSlug);
             if (!p || p.status === 'not_started') return false;
@@ -804,11 +814,12 @@ export async function listeningHub(req: Request, env: Env, requestId: string, us
       if (clips.length >= limit) break;
     }
 
-    // للدروس التي لا تحتوي حوارًا، نضيف العبارات المستهدفة للتدرب على النطق والاستماع
+    // للدروس التي لا تحتوي حوارًا، نضيف العبارات المستهدفة الإسبانية الخالصة للتدرب على النطق والاستماع
     if (clips.length < limit && rawScenarios.length === 0) {
       const structures = strArray(l.targetStructures);
       for (let ti = 0; ti < structures.length; ti++) {
         const es = structures[ti]!;
+        if (/[\u0600-\u06FF+]/.test(es)) continue;
         clips.push({
           id: `${item.row.slug}:st:${ti}`,
           es,

@@ -726,6 +726,7 @@ a { color: var(--color-link); }
 }
 .vocab-chip b { font-weight: 800; color: var(--color-navy); }
 .vocab-chip span { color: var(--color-muted); }
+.vocab-list .vocab-chip .es, bdi.es { min-width: 0; display: inline; }
 .dialogue { display: flex; flex-direction: column; gap: var(--s-2); }
 .dialogue-line { display: flex; gap: var(--s-2); }
 .dialogue-line .bubble {

@@ -205,7 +205,17 @@ function createSpeech(): BrowserSpeech | null {
 }
 
 export const audioService = new AudioService({
-  createAudio: url => new Audio(url) as unknown as AudioLike,
+  createAudio: url => {
+    const a = new Audio(url) as HTMLAudioElement & {
+      preservesPitch?: boolean;
+      mozPreservesPitch?: boolean;
+      webkitPreservesPitch?: boolean;
+    };
+    a.preservesPitch = true;
+    a.mozPreservesPitch = true;
+    a.webkitPreservesPitch = true;
+    return a as unknown as AudioLike;
+  },
   speech: createSpeech(),
   resolveUrl: (key, variant, text) => {
     if (!key) return null;
