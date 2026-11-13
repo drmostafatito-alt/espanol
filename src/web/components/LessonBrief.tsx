@@ -7,8 +7,12 @@
  *
  * لا تُعرض مفاتيح الإجابة ولا أي بيانات تصحيح — هذه الشاشة تعليمية فقط.
  */
+import { useEffect, useState } from 'react';
 import { Icon, type IconName } from './icons';
-import type { LessonBrief } from '../api';
+import type { LessonBrief, VocabBriefItem } from '../api';
+import { useAuth } from '../state';
+import { audioService } from '../audio/instance';
+import { posLabelAr } from '../pages/Vocabulary';
 import { Solecito } from './Illustrations';
 
 interface Props {
@@ -18,6 +22,7 @@ interface Props {
   exerciseCount: number;
   onStart: () => void;
   onBack: () => void;
+  startLabel?: string;
 }
 
 function Section({
@@ -46,9 +51,103 @@ function Section({
   );
 }
 
-export function LessonBriefView({ brief, title, level, exerciseCount, onStart, onBack }: Props) {
+function VocabIntroCard({
+  item,
+  showEg,
+  onPlay,
+}: {
+  item: VocabBriefItem;
+  showEg: boolean;
+  onPlay: (key: string, text: string) => void;
+}) {
+  const posText = posLabelAr(item.pos, item.gender);
+  return (
+    <article className="vocab-intro-card">
+      <div className="vocab-intro-top">
+        <div className="row" style={{ gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          <b className="es vocab-intro-word" dir="ltr">{item.word}</b>
+          {posText && <span className="badge navy">{posText}</span>}
+          {item.ipa && <span className="small muted" dir="ltr">[{item.ipa}]</span>}
+        </div>
+        <button
+          type="button"
+          className="btn ghost sm icon-only-btn"
+          onClick={() => onPlay(`brief-word-${item.word}`, item.word)}
+          aria-label={`استمع إلى ${item.word}`}
+        >
+          <Icon name="volume" size={16} />
+        </button>
+      </div>
+
+      <p className="vocab-intro-meaning">
+        {item.meaningFusha ?? item.meaningEg ?? '—'}
+        {showEg && item.meaningEg && item.meaningEg !== item.meaningFusha ? (
+          <span className="small muted"> · بالمصرية: {item.meaningEg}</span>
+        ) : null}
+      </p>
+
+      {item.pronunciationHintAr && (
+        <p className="small muted" style={{ margin: '2px 0 0' }}>
+          النطق التقريبي: {item.pronunciationHintAr}
+        </p>
+      )}
+
+      {item.exampleEs && (
+        <div className="vocab-intro-example">
+          <div className="row" style={{ justifyContent: 'space-between', gap: 6 }}>
+            <span className="es small" dir="ltr">{item.exampleEs}</span>
+            <button
+              type="button"
+              className="btn ghost sm icon-only-btn"
+              onClick={() => onPlay(`brief-ex-${item.word}`, item.exampleEs!)}
+              aria-label={`استمع إلى مثال ${item.word}`}
+            >
+              <Icon name="volume" size={14} />
+            </button>
+          </div>
+          {item.exampleAr && <span className="small muted">{item.exampleAr}</span>}
+        </div>
+      )}
+
+      {item.usageNoteAr && (
+        <p className="small muted" style={{ margin: '4px 0 0' }}>
+          💡 {item.usageNoteAr}
+        </p>
+      )}
+      {item.commonErrorAr && (
+        <p className="small error-text" style={{ margin: '4px 0 0' }}>
+          انتبه: {item.commonErrorAr}
+        </p>
+      )}
+    </article>
+  );
+}
+
+export function LessonBriefView({
+  brief,
+  title,
+  level,
+  exerciseCount,
+  onStart,
+  onBack,
+  startLabel = 'ابدأ التمارين',
+}: Props) {
+  const { user } = useAuth();
+  const [showEg, setShowEg] = useState(user?.explanationStyle !== 'fusha');
   const vocab = brief.newVocabulary.filter(v => v.word);
   const reviewVocab = brief.reviewVocabulary.filter(v => v.word);
+  const mistakes = brief.commonMistakesAr ?? [];
+
+  useEffect(() => {
+    return () => {
+      void audioService.stop();
+    };
+  }, []);
+
+  const playText = (key: string, text: string) => {
+    audioService.setRate(1.0);
+    void audioService.play({ key, text, variant: user?.audioVariant });
+  };
 
   return (
     <div className="lesson-shell" style={{ paddingBlock: 'var(--s-4)' }}>
@@ -65,6 +164,14 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
               {exerciseCount} تمرين
             </span>
           </div>
+          <button
+            type="button"
+            className="btn ghost sm"
+            onClick={() => setShowEg(v => !v)}
+            aria-pressed={showEg}
+          >
+            {showEg ? 'إخفاء العامية' : 'إظهار العامية'}
+          </button>
         </div>
       </div>
 
@@ -93,12 +200,9 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
         <div className="card">
           {vocab.length > 0 && (
             <Section title="المفردات الجديدة" icon="book">
-              <div className="vocab-list">
+              <div className="vocab-intro-grid">
                 {vocab.map(v => (
-                  <span className="vocab-chip" key={v.word}>
-                    <b className="es">{v.word}</b>
-                    <span>{v.meaningFusha ?? v.meaningEg ?? '—'}</span>
-                  </span>
+                  <VocabIntroCard key={v.word} item={v} showEg={showEg} onPlay={playText} />
                 ))}
               </div>
             </Section>
@@ -109,7 +213,7 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
               <div className="vocab-list">
                 {reviewVocab.map(v => (
                   <span className="vocab-chip" key={v.word}>
-                    <b className="es">{v.word}</b>
+                    <b className="es" dir="ltr">{v.word}</b>
                     <span>{v.meaningFusha ?? v.meaningEg ?? '—'}</span>
                   </span>
                 ))}
@@ -121,7 +225,17 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
             <Section title="جمل وعبارات تُستخدم فعلًا" icon="sparkles">
               <ul className="list-plain" style={{ margin: 0 }}>
                 {brief.targetStructures.map((st, i) => (
-                  <li key={i}><span className="es" style={{ fontWeight: 700 }}>{st}</span></li>
+                  <li key={i} className="row" style={{ justifyContent: 'space-between', gap: 8 }}>
+                    <span className="es" dir="ltr" style={{ fontWeight: 700 }}>{st}</span>
+                    <button
+                      type="button"
+                      className="btn ghost sm icon-only-btn"
+                      onClick={() => playText(`brief-st-${i}`, st)}
+                      aria-label={`استمع إلى ${st}`}
+                    >
+                      <Icon name="volume" size={15} />
+                    </button>
+                  </li>
                 ))}
               </ul>
             </Section>
@@ -140,6 +254,16 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
             </Section>
           )}
 
+          {mistakes.length > 0 && (
+            <Section title="أخطاء شائعة تجنّبها" icon="warning">
+              <ul className="grammar-mistakes" style={{ margin: 0 }}>
+                {mistakes.map((m, i) => (
+                  <li key={i} className="small">{m}</li>
+                ))}
+              </ul>
+            </Section>
+          )}
+
           {brief.scenarios.length > 0 && (
             <Section title="حوار من الموقف" icon="chat">
               {brief.scenarios.map((sc, i) => (
@@ -152,10 +276,23 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
                   <div className="dialogue">
                     {sc.lines.map((ln, j) => (
                       <div className="dialogue-line" key={j}>
-                        <span className="bubble">
-                          <span className="es">{ln.es}</span>
+                        <div className="bubble" style={{ width: '100%' }}>
+                          <div className="row" style={{ justifyContent: 'space-between', gap: 8 }}>
+                            <span className="es" dir="ltr" style={{ fontWeight: 700 }}>{ln.es}</span>
+                            <button
+                              type="button"
+                              className="btn ghost sm icon-only-btn"
+                              onClick={() => playText(`brief-sc-${i}-${j}`, ln.es)}
+                              aria-label={`استمع إلى السطر ${j + 1}`}
+                            >
+                              <Icon name="volume" size={14} />
+                            </button>
+                          </div>
                           <span className="small muted" style={{ display: 'block' }}>{ln.ar}</span>
-                        </span>
+                          {showEg && ln.arEg && ln.arEg !== ln.ar && (
+                            <span className="small muted" style={{ display: 'block' }}>بالمصرية: {ln.arEg}</span>
+                          )}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -181,7 +318,7 @@ export function LessonBriefView({ brief, title, level, exerciseCount, onStart, o
       <div className="row" style={{ marginTop: 'var(--s-5)', justifyContent: 'space-between' }}>
         <button className="btn ghost" onClick={onBack}>لاحقًا</button>
         <button className="btn lg" onClick={onStart} data-testid="lesson-start">
-          <Icon name="play" size={18} /> ابدأ التمارين
+          <Icon name="play" size={18} /> {startLabel}
         </button>
       </div>
     </div>

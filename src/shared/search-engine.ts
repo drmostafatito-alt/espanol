@@ -93,16 +93,8 @@ export interface SearchOptions {
 }
 
 /** تطبيع النص الإسباني (حروف صغيرة، إزالة التشكيل وعلامات الترقيم) */
-export function normalizeEs(text: string): string {
-  if (!text) return '';
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[¿?¡!.,;:"'«»()…—\-_/\\\[\]]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+import { normalizeEs } from './normalize-es';
+export { normalizeEs };
 
 /** تطبيع النص الإسباني مع حفظ التشكيل لمقارنة التطابق التام */
 export function cleanEs(text: string): string {

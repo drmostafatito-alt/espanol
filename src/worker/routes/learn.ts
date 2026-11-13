@@ -313,6 +313,14 @@ export interface VocabBriefItem {
   word: string;
   meaningFusha: string | null;
   meaningEg: string | null;
+  pos?: string | null;
+  gender?: string | null;
+  ipa?: string | null;
+  pronunciationHintAr?: string | null;
+  exampleEs?: string | null;
+  exampleAr?: string | null;
+  usageNoteAr?: string | null;
+  commonErrorAr?: string | null;
 }
 
 export interface LessonBrief {
@@ -323,11 +331,13 @@ export interface LessonBrief {
   targetStructures: string[];
   scenarios: { contextAr: string; settingAr: string; lines: { es: string; ar: string; arEg?: string }[] }[];
   grammarPoints: { titleAr: string; explanationAr: string }[];
+  grammarTopics?: string[];
+  commonMistakesAr?: string[];
   culturalNoteAr: string | null;
   pedagogicalRationaleAr: string | null;
 }
 
-/** يحوّل قائمة الكلمات الإسبانية إلى بنود مع الترجمة العربية من معجم المفردات. */
+/** يحوّل قائمة الكلمات الإسبانية إلى بنود مع الترجمة العربية والمعلومات اللغوية من المعجم. */
 function resolveVocab(words: string[]): VocabBriefItem[] {
   const seen = new Set<string>();
   const out: VocabBriefItem[] = [];
@@ -339,18 +349,82 @@ function resolveVocab(words: string[]): VocabBriefItem[] {
     seen.add(key);
     let meaningFusha: string | null = null;
     let meaningEg: string | null = null;
+    let pos: string | null = null;
+    let gender: string | null = null;
+    let exampleEs: string | null = null;
+    let exampleAr: string | null = null;
     try {
       const hit = searchEngine.lookupVocab(word);
       if (hit) {
         if (hit.f) meaningFusha = hit.f;
         if (hit.eg) meaningEg = hit.eg;
+        if (hit.p) pos = hit.p;
+        if (hit.g) gender = hit.g;
+        if (Array.isArray(hit.ex)) {
+          exampleEs = hit.ex[0] ?? null;
+          exampleAr = hit.ex[1] ?? null;
+        }
       }
     } catch {
       // معجم تالف — نُبقي الكلمة دون ترجمة ولا نكسر الدرس
     }
-    out.push({ word, meaningFusha, meaningEg });
+    out.push({ word, meaningFusha, meaningEg, pos, gender, exampleEs, exampleAr });
   }
   return out;
+}
+
+/** يثري مفردات ملخص الدرس من قاعدة البيانات (IPA، تلميح النطق، ملاحظات الاستخدام، والأمثلة). */
+async function resolveVocabWithDb(env: Env, items: VocabBriefItem[]): Promise<VocabBriefItem[]> {
+  if (!items.length) return items;
+  const norms = [...new Set(items.map(v => v.word.toLowerCase().trim()).filter(Boolean))];
+  if (!norms.length) return items;
+  try {
+    const placeholders = norms.map(() => '?').join(',');
+    const rows = await env.DB.prepare(
+      `SELECT e.headword_normalized, e.pos, e.gender, e.ipa, e.pronunciation_hint_ar,
+              s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar,
+              ex.text_es AS example_es, tr.text AS example_ar
+       FROM vocabulary_entries e
+       LEFT JOIN vocabulary_senses s ON s.entry_id = e.id AND s.sense_no = 1
+       LEFT JOIN sentences ex ON ex.id = s.example_sentence_id
+       LEFT JOIN sentence_translations tr ON tr.sentence_id = ex.id AND tr.locale = 'ar' AND tr.style = 'fusha'
+       WHERE e.headword_normalized IN (${placeholders})`,
+    )
+      .bind(...norms)
+      .all<{
+        headword_normalized: string;
+        pos: string | null;
+        gender: string | null;
+        ipa: string | null;
+        pronunciation_hint_ar: string | null;
+        meaning_ar_fusha: string | null;
+        meaning_ar_eg: string | null;
+        usage_note_ar: string | null;
+        common_error_ar: string | null;
+        example_es: string | null;
+        example_ar: string | null;
+      }>();
+    const byNorm = new Map(rows.results.map(r => [r.headword_normalized, r]));
+    return items.map(item => {
+      const db = byNorm.get(item.word.toLowerCase().trim());
+      if (!db) return item;
+      return {
+        ...item,
+        meaningFusha: item.meaningFusha ?? db.meaning_ar_fusha ?? null,
+        meaningEg: item.meaningEg ?? db.meaning_ar_eg ?? null,
+        pos: db.pos ?? item.pos ?? null,
+        gender: db.gender ?? item.gender ?? null,
+        ipa: db.ipa ?? item.ipa ?? null,
+        pronunciationHintAr: db.pronunciation_hint_ar ?? item.pronunciationHintAr ?? null,
+        exampleEs: db.example_es ?? item.exampleEs ?? null,
+        exampleAr: db.example_ar ?? item.exampleAr ?? null,
+        usageNoteAr: db.usage_note_ar ?? item.usageNoteAr ?? null,
+        commonErrorAr: db.common_error_ar ?? item.commonErrorAr ?? null,
+      };
+    });
+  } catch {
+    return items;
+  }
 }
 
 export function buildLessonBrief(
@@ -365,6 +439,8 @@ export function buildLessonBrief(
     targetStructures: [],
     scenarios: [],
     grammarPoints: [],
+    grammarTopics: [],
+    commonMistakesAr: [],
     culturalNoteAr: null,
     pedagogicalRationaleAr: null,
   };
@@ -374,17 +450,26 @@ export function buildLessonBrief(
       parsed.lesson ?? (parsed as unknown as Record<string, unknown>);
     const strArr = (v: unknown): string[] =>
       Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : [];
+    const ped = (l.pedagogy && typeof l.pedagogy === 'object' ? l.pedagogy : undefined) as
+      | { grammarPoints?: unknown; culturalNoteAr?: unknown; commonMistakesAr?: unknown }
+      | undefined;
     base.newVocabulary = resolveVocab(strArr(l.newVocabulary));
     base.reviewVocabulary = resolveVocab(strArr(l.reviewVocabulary));
     base.targetStructures = strArr(l.targetStructures);
+    base.grammarTopics = strArr(l.grammarTopics);
+    base.commonMistakesAr = strArr(ped?.commonMistakesAr);
     if (typeof l.objectiveAr === 'string' && l.objectiveAr.trim()) base.objectiveAr = l.objectiveAr;
-    if (typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim()) base.culturalNoteAr = l.culturalNoteAr;
+    if (typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim()) {
+      base.culturalNoteAr = l.culturalNoteAr;
+    } else if (typeof ped?.culturalNoteAr === 'string' && ped.culturalNoteAr.trim()) {
+      base.culturalNoteAr = ped.culturalNoteAr;
+    }
     if (typeof l.pedagogicalRationaleAr === 'string' && l.pedagogicalRationaleAr.trim()) {
       base.pedagogicalRationaleAr = l.pedagogicalRationaleAr;
     }
     // شروح القواعد: تُعرض في شاشة المقدمة (الدرس الذي يشرح القاعدة قبل التمارين).
     // تُهمَل العناصر الناقصة ولا تؤثر على بقية الشاشة.
-    const gpRaw = (l.pedagogy as { grammarPoints?: unknown } | undefined)?.grammarPoints;
+    const gpRaw = ped?.grammarPoints;
     if (Array.isArray(gpRaw)) {
       for (const gpRawItem of gpRaw) {
         if (!gpRawItem || typeof gpRawItem !== 'object') continue;
@@ -427,6 +512,13 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
   const lesson = await loadLesson(env, slug);
   await assertUnlocked(env, user, lesson);
 
+  const unitMeta = await env.DB.prepare(
+    `SELECT u.title_ar AS unit_title_ar, u.objective_ar AS unit_objective_ar, p.slug AS program_slug, p.title_ar AS program_title_ar
+     FROM lessons l JOIN units u ON u.id = l.unit_id JOIN programs p ON p.id = u.program_id WHERE l.id = ?`,
+  )
+    .bind(lesson.id)
+    .first<{ unit_title_ar: string; unit_objective_ar: string | null; program_slug: string; program_title_ar: string }>();
+
   const exercises = await env.DB.prepare(
     `SELECT id, type, prompt_json, answer_key_json, explanation_ar, error_feedback_json, sort_order
      FROM exercises WHERE lesson_version_id = ? ORDER BY sort_order`,
@@ -455,6 +547,20 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
     .bind(user.id, lesson.id)
     .first<{ status: string; best_accuracy: number; attempts_count: number; completed_at: string | null }>();
 
+  const briefRaw = buildLessonBrief(lesson.content_json, {
+    objectiveAr: lesson.objective_ar,
+    estimatedMinutes: lesson.estimated_minutes,
+  });
+  const [enrichedNew, enrichedReview] = await Promise.all([
+    resolveVocabWithDb(env, briefRaw.newVocabulary),
+    resolveVocabWithDb(env, briefRaw.reviewVocabulary),
+  ]);
+  const brief: LessonBrief = {
+    ...briefRaw,
+    newVocabulary: enrichedNew,
+    reviewVocabulary: enrichedReview,
+  };
+
   const optsByExercise = new Map<string, { id: string; text: string }[]>();
   const correctTextByExercise = new Map<string, string>();
   for (const o of options.results) {
@@ -480,13 +586,14 @@ export async function lessonSession(req: Request, env: Env, requestId: string, u
         level: lesson.level_code,
         objectiveAr: lesson.objective_ar,
         estimatedMinutes: lesson.estimated_minutes,
+        unitTitleAr: unitMeta?.unit_title_ar ?? null,
+        unitObjectiveAr: unitMeta?.unit_objective_ar ?? null,
+        programSlug: unitMeta?.program_slug ?? null,
+        programTitleAr: unitMeta?.program_title_ar ?? null,
         versionId: lesson.version_id,
         versionNo: lesson.version_no,
         contentHash: lesson.content_hash,
-        brief: buildLessonBrief(lesson.content_json, {
-          objectiveAr: lesson.objective_ar,
-          estimatedMinutes: lesson.estimated_minutes,
-        }),
+        brief,
         ...(lesson.status === 'published' ? {} : { provenance: PROVENANCE }),
       },
       exercises: exercises.results.map(e => {
@@ -996,7 +1103,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   const rawLessons = await env.DB.prepare(
     `SELECT l.id, l.slug, l.title_ar, l.level_code, l.status, l.unlock_rule_json, l.mastery_criteria_json,
             l.estimated_minutes, l.sort_order AS sort_order,
-            u.id AS unit_id, u.slug AS unit_slug, u.title_ar AS unit_title_ar, u.sort_order AS unit_sort_order,
+            u.id AS unit_id, u.slug AS unit_slug, u.title_ar AS unit_title_ar, u.objective_ar AS unit_objective_ar, u.sort_order AS unit_sort_order,
             p.id AS program_id, p.slug AS program_slug, p.title_ar AS program_title_ar, p.kind AS program_kind, p.sort_order AS program_sort_order,
             COALESCE(ulp.status, 'not_started') AS progress_status,
             COALESCE(ulp.best_accuracy, 0) AS best_accuracy,
@@ -1036,6 +1143,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       unit_id: string;
       unit_slug: string;
       unit_title_ar: string;
+      unit_objective_ar: string | null;
       unit_sort_order: number;
       program_id: string;
       program_slug: string;
@@ -1093,6 +1201,7 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       unit_id: l.unit_id,
       unit_slug: l.unit_slug,
       unit_title_ar: l.unit_title_ar,
+      unit_objective_ar: l.unit_objective_ar,
       unit_sort_order: l.unit_sort_order,
       program_slug: l.program_slug,
       program_title_ar: l.program_title_ar,
@@ -1115,10 +1224,22 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
   await env.DB.prepare(
     `UPDATE user_stats SET streak_current = ?, streak_longest = ? WHERE user_id = ?`,
   ).bind(derived.streak_current, derived.streak_longest, user.id).run();
+
+  const attemptStats = await env.DB.prepare(
+    `SELECT COUNT(*) AS total, SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) AS ok
+     FROM user_exercise_attempts WHERE user_id = ?`,
+  )
+    .bind(user.id)
+    .first<{ total: number; ok: number | null }>();
+  const attemptsTotal = Number(attemptStats?.total ?? 0);
+  const attemptsCorrect = Number(attemptStats?.ok ?? 0);
+
   const statsMerged = {
     xp_total: Number(stats?.xp_total ?? 0),
     reviews_done: Number(stats?.reviews_done ?? 0),
     words_seen: Number(stats?.words_seen ?? 0),
+    attempts_total: attemptsTotal,
+    accuracy_avg: attemptsTotal > 0 ? Math.round((attemptsCorrect / attemptsTotal) * 100) : null,
     ...derived,
   };
 
@@ -1186,7 +1307,15 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
       today: activity.today,
       week: activity.week,
       goalMinutes: user.dailyGoalMinutes,
-      review: { dueNow: reviewDue.due, total: reviewDue.total },
+      review: {
+        dueNow: reviewDue.due,
+        total: reviewDue.total,
+        weakCount: reviewDue.weak,
+        masteredCount: reviewDue.mastered,
+        familiarCount: reviewDue.familiar,
+        learningCount: reviewDue.learning,
+        newCount: reviewDue.fresh,
+      },
       levels,
       achievements,
       contentProvenance: allowUnreviewed(env) ? PROVENANCE : null,
@@ -1279,18 +1408,43 @@ export async function dailyActivity(
   return { today, week };
 }
 
-/** بطاقات مستحقة الآن (نفس تعريف جلسة المراجعة: غير موقوفة، ومفردتها موجودة) */
-export async function dueReviewCount(env: Env, userId: string, nowIso = new Date().toISOString()): Promise<{ due: number; total: number }> {
+/** بطاقات مستحقة الآن وتوزيع إتقان المفردات (نفس تعريف جلسة المراجعة: غير موقوفة، ومفردتها موجودة) */
+export async function dueReviewCount(
+  env: Env,
+  userId: string,
+  nowIso = new Date().toISOString(),
+): Promise<{ due: number; total: number; weak: number; mastered: number; familiar: number; learning: number; fresh: number }> {
   const row = await env.DB.prepare(
     `SELECT COUNT(*) AS total,
-            SUM(CASE WHEN rs.due_at <= ? AND rs.state != 'suspended' AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS due
+            SUM(CASE WHEN rs.due_at <= ? AND rs.state != 'suspended' AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS due,
+            SUM(CASE WHEN rs.state != 'suspended' AND e.id IS NOT NULL AND (rs.lapses > 0 OR rs.state = 'relearning' OR rs.ease < 2.2) THEN 1 ELSE 0 END) AS weak,
+            SUM(CASE WHEN rs.state = 'review' AND rs.interval_days >= 21 AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS mastered,
+            SUM(CASE WHEN rs.state = 'review' AND rs.interval_days >= 3 AND rs.interval_days < 21 AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS familiar,
+            SUM(CASE WHEN (rs.state IN ('learning','relearning') OR (rs.state = 'review' AND rs.interval_days < 3)) AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS learning,
+            SUM(CASE WHEN rs.state = 'new' AND e.id IS NOT NULL THEN 1 ELSE 0 END) AS fresh
      FROM review_schedule rs
      LEFT JOIN vocabulary_entries e ON e.id = rs.item_id AND rs.item_type = 'vocab'
      WHERE rs.user_id = ?`,
   )
     .bind(nowIso, userId)
-    .first<{ total: number; due: number | null }>();
-  return { due: Number(row?.due ?? 0), total: Number(row?.total ?? 0) };
+    .first<{
+      total: number;
+      due: number | null;
+      weak: number | null;
+      mastered: number | null;
+      familiar: number | null;
+      learning: number | null;
+      fresh: number | null;
+    }>();
+  return {
+    due: Number(row?.due ?? 0),
+    total: Number(row?.total ?? 0),
+    weak: Number(row?.weak ?? 0),
+    mastered: Number(row?.mastered ?? 0),
+    familiar: Number(row?.familiar ?? 0),
+    learning: Number(row?.learning ?? 0),
+    fresh: Number(row?.fresh ?? 0),
+  };
 }
 
 /** ترتيب الدروس داخل كل وحدة بحيث تسبق المتطلبات السابقة الدروس التي تطلبها */

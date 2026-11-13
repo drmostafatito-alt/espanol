@@ -16,6 +16,7 @@ import { ProgressBar } from './ui';
 export interface PathUnit {
   id: string;
   title: string;
+  objectiveAr?: string | null;
   level: string | null;
   programSlug: string;
   programTitle: string;
@@ -38,6 +39,7 @@ export function groupUnits(lessons: ProgressLessonItem[]): PathUnit[] {
       unit = {
         id,
         title,
+        objectiveAr: lesson.unit_objective_ar ?? null,
         level: lesson.level_code ?? null,
         programSlug: lesson.program_slug ?? 'main-track',
         programTitle: lesson.program_title_ar ?? 'المسار الأساسي',
@@ -175,6 +177,11 @@ export function PathMap({
                   وحدة {unitIndex + 1} · {unit.level || unit.programTitle}
                   {!open ? ` · ${unit.completed}/${unit.total} درسًا` : ''}
                 </p>
+                {open && unit.objectiveAr ? (
+                  <p className="small muted unit-obj" style={{ margin: '4px 0 0' }}>
+                    {unit.objectiveAr}
+                  </p>
+                ) : null}
                 {!open ? (
                   <p className="unit-locked-hint">
                     {unit.locked ? (

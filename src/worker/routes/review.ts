@@ -42,6 +42,7 @@ interface EntryRow {
   id: string;
   headword_es: string;
   pos: string | null;
+  gender: string | null;
   level_code: string | null;
   ipa: string | null;
   pronunciation_hint_ar: string | null;
@@ -90,6 +91,11 @@ function publicCard(card: CardRow, entry: EntryRow, kind: CardKind, explanationS
     state: card.state,
     dueAt: card.due_at,
     level: entry.level_code,
+    pos: entry.pos,
+    gender: entry.gender,
+    lapses: card.lapses,
+    intervalDays: card.interval_days,
+    ease: Number(card.ease.toFixed(2)),
   };
   if (kind === 'production') {
     // الإنتاج: يُعرض المعنى العربي ويُطلب استرجاع الكلمة الإسبانية
@@ -118,7 +124,7 @@ function publicCard(card: CardRow, entry: EntryRow, kind: CardKind, explanationS
   };
 }
 
-/** GET /api/review/session — ما هو مستحق الآن، مع احترام الحدود اليومية */
+/** GET /api/review/session — ما هو مستحق الآن (أو mode=weak للبطاقات المتعثرة)، مع احترام الحدود اليومية */
 export async function reviewSession(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
   const url = new URL(req.url);
   // تنبيه: غياب المعامل يختلف عن limit=0 —‏ Number(null) = 0 كان سيجعل كل جلسة «عدّادات فقط»
@@ -127,6 +133,7 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
   // limit=0 صراحةً ⇒ عدّادات فقط (بطاقة اللوحة) بلا مسح واختيار بطاقات (AUD-18)
   const countsOnly = Number.isFinite(requested) && requested === 0;
   const limit = Number.isFinite(requested) && requested > 0 ? Math.min(MAX_SESSION_CARDS, Math.floor(requested)) : MAX_SESSION_CARDS;
+  const mode = url.searchParams.get('mode') === 'weak' ? 'weak' : 'due';
 
   const now = new Date();
   const nowIso = now.toISOString();
@@ -136,14 +143,23 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
 
   const due = countsOnly
     ? { results: [] as CardRow[] }
-    : await env.DB.prepare(
-    `SELECT user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at, state, card_kind
-     FROM review_schedule
-     WHERE user_id = ? AND state != 'suspended' AND due_at <= ?
-     ORDER BY due_at ASC LIMIT 500`,
-  )
-    .bind(user.id, nowIso)
-    .all<CardRow>();
+    : mode === 'weak'
+      ? await env.DB.prepare(
+        `SELECT user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at, state, card_kind
+         FROM review_schedule
+         WHERE user_id = ? AND state != 'suspended' AND (lapses > 0 OR state = 'relearning' OR ease < 2.2)
+         ORDER BY lapses DESC, ease ASC, due_at ASC LIMIT 200`,
+      )
+        .bind(user.id)
+        .all<CardRow>()
+      : await env.DB.prepare(
+        `SELECT user_id, item_type, item_id, ease, interval_days, repetitions, lapses, due_at, state, card_kind
+         FROM review_schedule
+         WHERE user_id = ? AND state != 'suspended' AND due_at <= ?
+         ORDER BY lapses DESC, due_at ASC LIMIT 500`,
+      )
+        .bind(user.id, nowIso)
+        .all<CardRow>();
 
   const newRemaining = Math.max(0, limits.newPerDay - counts.newCount);
   const reviewRemaining = Math.max(0, limits.reviewsPerDay - counts.reviewCount);
@@ -169,7 +185,7 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
     const ids = [...new Set(picked.map(c => c.item_id))];
     const placeholders = ids.map(() => '?').join(',');
     const rows = await env.DB.prepare(
-      `SELECT e.id, e.headword_es, e.pos, e.level_code, e.ipa, e.pronunciation_hint_ar,
+      `SELECT e.id, e.headword_es, e.pos, e.gender, e.level_code, e.ipa, e.pronunciation_hint_ar,
               s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar,
               ex.text_es AS example_es, tr.text AS example_ar
        FROM vocabulary_entries e
@@ -200,10 +216,12 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
     .bind(nowIso, nowIso, user.id)
     .first<{ total: number; due_now: number | null; due_orphaned: number | null; suspended: number | null }>();
 
+  const hasMatchingInMode = due.results.length > 0;
   return json(
     {
       cards,
       session: {
+        mode,
         dueNow: Number(totals?.due_now ?? 0),
         totalCards: Number(totals?.total ?? 0),
         suspended: Number(totals?.suspended ?? 0),
@@ -214,9 +232,11 @@ export async function reviewSession(req: Request, env: Env, requestId: string, u
         dayBoundary: 'UTC',
       },
       emptyReason: cards.length === 0
-        ? (Number(totals?.due_now ?? 0) > 0
-            ? 'DAILY_LIMIT_REACHED'
-            : Number(totals?.due_orphaned ?? 0) > 0 ? 'NO_VALID_CARDS' : 'NOTHING_DUE')
+        ? (mode === 'weak'
+            ? (hasMatchingInMode ? 'DAILY_LIMIT_REACHED' : 'NOTHING_DUE')
+            : Number(totals?.due_now ?? 0) > 0
+              ? 'DAILY_LIMIT_REACHED'
+              : Number(totals?.due_orphaned ?? 0) > 0 ? 'NO_VALID_CARDS' : 'NOTHING_DUE')
         : null,
     },
     { headers: { 'Cache-Control': 'no-store' } },
@@ -471,3 +491,199 @@ export async function listPacks(_req: Request, env: Env, requestId: string, user
     requestId,
   );
 }
+
+type MasteryBucket = 'weak' | 'mastered' | 'familiar' | 'learning' | 'new';
+
+function classifyCard(row: { state: string; interval_days: number; lapses: number; ease: number }): MasteryBucket {
+  if (row.lapses > 0 || row.state === 'relearning' || row.ease < 2.2) return 'weak';
+  if (row.state === 'review' && row.interval_days >= 21) return 'mastered';
+  if (row.state === 'review' && row.interval_days >= 3) return 'familiar';
+  if (row.state === 'learning' || (row.state === 'review' && row.interval_days < 3)) return 'learning';
+  return 'new';
+}
+
+/** GET /api/me/vocabulary — مفردات المتعلم وحالة الإتقان + مستكشف المعجم */
+export async function myVocabulary(req: Request, env: Env, requestId: string, user: SessionUser): Promise<Response> {
+  const url = new URL(req.url);
+  const filter = url.searchParams.get('filter') ?? 'all';
+  const level = (url.searchParams.get('level') ?? '').toUpperCase().trim();
+  const q = (url.searchParams.get('q') ?? '').trim().toLowerCase();
+  const limitParam = parseInt(url.searchParams.get('limit') ?? '60', 10);
+  const limit = Math.min(120, Math.max(10, Number.isNaN(limitParam) ? 60 : limitParam));
+  const nowIso = new Date().toISOString();
+
+  const cardRows = await env.DB.prepare(
+    `SELECT rs.item_id, rs.card_kind, rs.state, rs.interval_days, rs.repetitions, rs.lapses, rs.ease, rs.due_at,
+            rs.last_reviewed_at, rs.origin_ref,
+            e.headword_es, e.headword_normalized, e.pos, e.gender, e.level_code, e.ipa, e.pronunciation_hint_ar,
+            s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar,
+            ex.text_es AS example_es, tr.text AS example_ar
+     FROM review_schedule rs
+     JOIN vocabulary_entries e ON e.id = rs.item_id
+     LEFT JOIN vocabulary_senses s ON s.entry_id = e.id AND s.sense_no = 1
+     LEFT JOIN sentences ex ON ex.id = s.example_sentence_id
+     LEFT JOIN sentence_translations tr ON tr.sentence_id = ex.id AND tr.locale = 'ar' AND tr.style = 'fusha'
+     WHERE rs.user_id = ? AND rs.item_type = 'vocab' AND rs.state != 'suspended'
+     ORDER BY rs.lapses DESC, rs.due_at ASC, e.headword_es ASC`,
+  )
+    .bind(user.id)
+    .all<{
+      item_id: string;
+      card_kind: string;
+      state: string;
+      interval_days: number;
+      repetitions: number;
+      lapses: number;
+      ease: number;
+      due_at: string;
+      last_reviewed_at: string | null;
+      origin_ref: string | null;
+      headword_es: string;
+      headword_normalized: string;
+      pos: string | null;
+      gender: string | null;
+      level_code: string | null;
+      ipa: string | null;
+      pronunciation_hint_ar: string | null;
+      meaning_ar_fusha: string | null;
+      meaning_ar_eg: string | null;
+      usage_note_ar: string | null;
+      common_error_ar: string | null;
+      example_es: string | null;
+      example_ar: string | null;
+    }>();
+
+  const summary = {
+    totalCards: 0,
+    dueNow: 0,
+    weak: 0,
+    learning: 0,
+    familiar: 0,
+    mastered: 0,
+    fresh: 0,
+    dictionaryTotal: 0,
+  };
+
+  const userBucketByItemId = new Map<string, MasteryBucket>();
+  const allCards = cardRows.results.map(r => {
+    const bucket = classifyCard(r);
+    summary.totalCards += 1;
+    if (r.due_at <= nowIso) summary.dueNow += 1;
+    if (bucket === 'new') summary.fresh += 1;
+    else summary[bucket] += 1;
+    userBucketByItemId.set(r.item_id, bucket);
+    return {
+      id: r.item_id,
+      cardKind: r.card_kind,
+      state: r.state,
+      bucket,
+      dueAt: r.due_at,
+      isDue: r.due_at <= nowIso,
+      intervalDays: r.interval_days,
+      repetitions: r.repetitions,
+      lapses: r.lapses,
+      ease: Number(r.ease.toFixed(2)),
+      lastReviewedAt: r.last_reviewed_at,
+      headwordEs: r.headword_es,
+      pos: r.pos,
+      gender: r.gender,
+      level: r.level_code,
+      ipa: r.ipa,
+      pronunciationHintAr: r.pronunciation_hint_ar,
+      meaningArFusha: r.meaning_ar_fusha ?? '',
+      meaningArEg: user.explanationStyle === 'fusha' ? null : (r.meaning_ar_eg ?? null),
+      usageNoteAr: r.usage_note_ar ?? null,
+      commonErrorAr: r.common_error_ar ?? null,
+      exampleEs: r.example_es ?? null,
+      exampleAr: r.example_ar ?? null,
+    };
+  });
+
+  const filteredCards = allCards
+    .filter(c => {
+      if (filter !== 'all' && c.bucket !== filter) return false;
+      if (level && level !== 'ALL' && (c.level ?? '').toUpperCase() !== level) return false;
+      if (q) {
+        const hay = `${c.headwordEs} ${c.meaningArFusha} ${c.meaningArEg ?? ''}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    })
+    .slice(0, limit);
+
+  const dictCountRow = await env.DB.prepare(`SELECT COUNT(*) AS n FROM vocabulary_entries`)
+    .first<{ n: number }>();
+  summary.dictionaryTotal = Number(dictCountRow?.n ?? 0);
+
+  const where: string[] = [];
+  const params: unknown[] = [];
+  if (level && level !== 'ALL') {
+    where.push('UPPER(e.level_code) = ?');
+    params.push(level);
+  }
+  if (q) {
+    const like = `%${q}%`;
+    where.push('(LOWER(e.headword_es) LIKE ? OR LOWER(COALESCE(s.meaning_ar_fusha, \'\')) LIKE ? OR LOWER(COALESCE(s.meaning_ar_eg, \'\')) LIKE ?)');
+    params.push(like, like, like);
+  }
+  const whereSql = where.length ? `WHERE ${where.join(' AND ')}` : '';
+  const dictRows = await env.DB.prepare(
+    `SELECT e.id, e.headword_es, e.pos, e.gender, e.level_code, e.ipa, e.pronunciation_hint_ar, e.frequency_rank,
+            s.meaning_ar_fusha, s.meaning_ar_eg, s.usage_note_ar, s.common_error_ar,
+            ex.text_es AS example_es, tr.text AS example_ar
+     FROM vocabulary_entries e
+     LEFT JOIN vocabulary_senses s ON s.entry_id = e.id AND s.sense_no = 1
+     LEFT JOIN sentences ex ON ex.id = s.example_sentence_id
+     LEFT JOIN sentence_translations tr ON tr.sentence_id = ex.id AND tr.locale = 'ar' AND tr.style = 'fusha'
+     ${whereSql}
+     ORDER BY
+       CASE UPPER(COALESCE(e.level_code, ''))
+         WHEN 'PREA1' THEN 0 WHEN 'A1' THEN 1 WHEN 'A2' THEN 2
+         WHEN 'B1' THEN 3 WHEN 'B2' THEN 4 WHEN 'C1' THEN 5 ELSE 6
+       END,
+       COALESCE(e.frequency_rank, 99999),
+       e.headword_es
+     LIMIT ?`,
+  )
+    .bind(...params, limit)
+    .all<{
+      id: string;
+      headword_es: string;
+      pos: string | null;
+      gender: string | null;
+      level_code: string | null;
+      ipa: string | null;
+      pronunciation_hint_ar: string | null;
+      frequency_rank: number | null;
+      meaning_ar_fusha: string | null;
+      meaning_ar_eg: string | null;
+      usage_note_ar: string | null;
+      common_error_ar: string | null;
+      example_es: string | null;
+      example_ar: string | null;
+    }>();
+
+  const explorer = dictRows.results.map(r => ({
+    id: r.id,
+    headwordEs: r.headword_es,
+    pos: r.pos,
+    gender: r.gender,
+    level: r.level_code,
+    ipa: r.ipa,
+    pronunciationHintAr: r.pronunciation_hint_ar,
+    meaningArFusha: r.meaning_ar_fusha ?? '',
+    meaningArEg: user.explanationStyle === 'fusha' ? null : (r.meaning_ar_eg ?? null),
+    usageNoteAr: r.usage_note_ar ?? null,
+    commonErrorAr: r.common_error_ar ?? null,
+    exampleEs: r.example_es ?? null,
+    exampleAr: r.example_ar ?? null,
+    masteryBucket: userBucketByItemId.get(r.id) ?? null,
+  }));
+
+  return json(
+    { summary, cards: filteredCards, explorer },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+

@@ -7,6 +7,10 @@ import { App } from './App';
 import '@fontsource/cairo/400.css';
 import '@fontsource/cairo/700.css';
 import '@fontsource/cairo/800.css';
+import '@fontsource/nunito/latin-400.css';
+import '@fontsource/nunito/latin-600.css';
+import '@fontsource/nunito/latin-700.css';
+import '@fontsource/nunito/latin-800.css';
 import './styles.css';
 // طبقة الهوية v2 فوق طبقة التوافق — كل التعديلات البصرية الجديدة هنا
 import './theme.css';

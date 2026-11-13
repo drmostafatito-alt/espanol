@@ -136,13 +136,35 @@ export async function searchContent(req: Request, env: Env, requestId: string): 
       let structures: string[] = [];
       let topics: string[] = [];
       try {
-        const content = JSON.parse(row.content_json) as { targetStructures?: unknown; grammarTopics?: unknown };
+        const parsed = JSON.parse(row.content_json) as {
+          lesson?: Record<string, unknown>;
+          targetStructures?: unknown;
+          grammarTopics?: unknown;
+          pedagogy?: { grammarPoints?: unknown };
+        };
+        const content = (parsed.lesson ?? parsed) as {
+          targetStructures?: unknown;
+          grammarTopics?: unknown;
+          pedagogy?: { grammarPoints?: unknown };
+        };
         if (Array.isArray(content.targetStructures)) {
           structures = content.targetStructures.filter((s): s is string => typeof s === 'string');
         }
+        const topicSet = new Set<string>();
         if (Array.isArray(content.grammarTopics)) {
-          topics = content.grammarTopics.filter((s): s is string => typeof s === 'string');
+          for (const g of content.grammarTopics) {
+            if (typeof g === 'string' && g.trim()) topicSet.add(g.trim());
+          }
         }
+        if (Array.isArray(content.pedagogy?.grammarPoints)) {
+          for (const gp of content.pedagogy.grammarPoints) {
+            if (gp && typeof gp === 'object' && typeof (gp as { titleAr?: unknown }).titleAr === 'string') {
+              const title = ((gp as { titleAr: string }).titleAr).trim();
+              if (title) topicSet.add(title);
+            }
+          }
+        }
+        topics = [...topicSet];
       } catch {
         // محتوى تالف: الدرس يُبحث بعنوانه وهدفه فقط.
       }
@@ -350,3 +372,464 @@ export async function setLessonPublished(req: Request, env: Env, requestId: stri
   });
   return json({ slug, status: nextStatus }, {}, requestId);
 }
+
+/* ============================================================================
+   مراكز المحتوى التعليمية: القواعد، المحادثات والكول سنتر، والاستماع والنطق
+   ----------------------------------------------------------------------------
+   * تطبق قاعدة الرؤية نفسها (منشور افتراضيًا، والمسودات فقط مع ALLOW_UNREVIEWED_CONTENT).
+   * لا ترجع أي مفاتيح تصحيح أو تمارين داخلية أو answerKey أبدًا.
+   ========================================================================== */
+
+interface HubLessonRow {
+  id: string;
+  slug: string;
+  title_ar: string;
+  level_code: string | null;
+  objective_ar: string;
+  unlock_rule_json: string;
+  mastery_criteria_json: string;
+  sort_order: number;
+  unit_slug: string;
+  unit_title_ar: string;
+  unit_sort_order: number;
+  program_slug: string;
+  program_title_ar: string;
+  content_json: string;
+}
+
+interface ParsedHubLesson {
+  row: HubLessonRow;
+  progressStatus: string;
+  isUnlocked: boolean;
+  level: string;
+  parsed: Record<string, unknown>;
+}
+
+const HUB_LEVEL_ORDER: Record<string, number> = {
+  PREA1: 0,
+  A1: 1,
+  A2: 2,
+  B1: 3,
+  B2: 4,
+  C1: 5,
+};
+
+async function loadVisibleHubLessons(env: Env, user: SessionUser | null): Promise<ParsedHubLesson[]> {
+  const includeDrafts = allowUnreviewedContent(env);
+  const statusFilter = includeDrafts
+    ? "l.status IN ('published','draft') AND lv.status IN ('published','draft')"
+    : "l.status = 'published' AND lv.status = 'published'";
+
+  const rows = await env.DB.prepare(
+    `SELECT l.id, l.slug, l.title_ar, l.level_code, l.objective_ar,
+            l.unlock_rule_json, l.mastery_criteria_json, l.sort_order,
+            u.slug AS unit_slug, u.title_ar AS unit_title_ar, u.sort_order AS unit_sort_order,
+            p.slug AS program_slug, p.title_ar AS program_title_ar,
+            lv.content_json
+     FROM lessons l
+     JOIN lesson_versions lv ON lv.id = l.current_version_id
+     JOIN units u ON u.id = l.unit_id
+     JOIN programs p ON p.id = u.program_id
+     WHERE ${statusFilter}
+     ORDER BY p.sort_order, u.sort_order, l.sort_order, l.slug`,
+  ).all<HubLessonRow>();
+
+  const progressMap = new Map<string, { status: string; bestAccuracy: number }>();
+  if (user) {
+    const pRows = await env.DB.prepare(
+      `SELECT l.slug, p.status, p.best_accuracy
+       FROM user_lesson_progress p JOIN lessons l ON l.id = p.lesson_id
+       WHERE p.user_id = ?`,
+    )
+      .bind(user.id)
+      .all<{ slug: string; status: string; best_accuracy: number }>();
+    for (const p of pRows.results) {
+      progressMap.set(p.slug, { status: p.status, bestAccuracy: Number(p.best_accuracy ?? 0) });
+    }
+  }
+
+  const thresholdMap = new Map<string, number>();
+  for (const r of rows.results) {
+    try {
+      const m = JSON.parse(r.mastery_criteria_json || '{}') as { minAccuracy?: unknown };
+      if (typeof m.minAccuracy === 'number' && Number.isFinite(m.minAccuracy)) {
+        thresholdMap.set(r.slug, m.minAccuracy);
+      }
+    } catch { /* تجاهل البيانات التالفة */ }
+  }
+
+  return rows.results
+    .map(row => {
+      let parsed: Record<string, unknown> = {};
+      try {
+        const raw = JSON.parse(row.content_json) as { lesson?: Record<string, unknown> };
+        parsed = raw.lesson ?? (raw as unknown as Record<string, unknown>);
+      } catch {
+        parsed = {};
+      }
+      const prog = progressMap.get(row.slug);
+      let isUnlocked = true;
+      if (user) {
+        try {
+          const rule = JSON.parse(row.unlock_rule_json || '{}') as { requires?: string[]; minAccuracy?: number };
+          const reqs = Array.isArray(rule.requires) ? rule.requires : [];
+          isUnlocked = reqs.every(reqSlug => {
+            const p = progressMap.get(reqSlug);
+            if (!p || p.status === 'not_started') return false;
+            const minAcc = rule.minAccuracy ?? thresholdMap.get(reqSlug) ?? 0;
+            return p.bestAccuracy >= minAcc;
+          });
+        } catch {
+          isUnlocked = false;
+        }
+      }
+      const level = (row.level_code ?? 'A1').toUpperCase().replace('PRE-A1', 'PREA1');
+      return {
+        row,
+        progressStatus: prog?.status ?? 'not_started',
+        isUnlocked,
+        level,
+        parsed,
+      };
+    })
+    .sort((a, b) => {
+      const la = HUB_LEVEL_ORDER[a.level] ?? 99;
+      const lb = HUB_LEVEL_ORDER[b.level] ?? 99;
+      if (la !== lb) return la - lb;
+      if (a.row.unit_sort_order !== b.row.unit_sort_order) return a.row.unit_sort_order - b.row.unit_sort_order;
+      return a.row.sort_order - b.row.sort_order;
+    });
+}
+
+function strArray(v: unknown): string[] {
+  return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim().length > 0) : [];
+}
+
+function humanizeGrammarTopicSlug(slug: string): string {
+  return slug.replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+/** GET /api/content/hub/grammar — فهرس القواعد الشامل مصنَّفًا حسب CEFR */
+export async function grammarHub(req: Request, env: Env, requestId: string, user: SessionUser | null): Promise<Response> {
+  const url = new URL(req.url);
+  const levelFilter = (url.searchParams.get('level') ?? '').toUpperCase().trim();
+  const q = (url.searchParams.get('q') ?? '').toLowerCase().trim();
+  const items = await loadVisibleHubLessons(env, user);
+
+  const grammarTopicsTable = await env.DB.prepare(
+    `SELECT slug, level_code, title_ar, explanation_md, eg_note_md FROM grammar_topics ORDER BY sort_order, slug`,
+  ).all<{ slug: string; level_code: string | null; title_ar: string; explanation_md: string; eg_note_md: string | null }>();
+  const topicLookup = new Map(grammarTopicsTable.results.map(t => [t.slug, t]));
+
+  const entries: {
+    id: string;
+    lessonSlug: string;
+    lessonTitleAr: string;
+    level: string;
+    unitTitleAr: string;
+    programSlug: string;
+    isUnlocked: boolean;
+    progressStatus: string;
+    titleAr: string;
+    explanationAr: string;
+    topicTags: string[];
+    examples: string[];
+    commonMistakesAr: string[];
+    culturalNoteAr: string | null;
+  }[] = [];
+
+  for (const item of items) {
+    if (levelFilter && levelFilter !== 'ALL' && item.level !== levelFilter) continue;
+    const l = item.parsed;
+    const ped = (l.pedagogy && typeof l.pedagogy === 'object' ? l.pedagogy : undefined) as
+      | { grammarPoints?: unknown; commonMistakesAr?: unknown; culturalNoteAr?: unknown }
+      | undefined;
+
+    const pointsRaw = Array.isArray(ped?.grammarPoints) ? ped!.grammarPoints : [];
+    const points: { titleAr: string; explanationAr: string }[] = [];
+    for (const gpRaw of pointsRaw) {
+      if (!gpRaw || typeof gpRaw !== 'object') continue;
+      const gp = gpRaw as { titleAr?: unknown; explanationAr?: unknown };
+      if (typeof gp.titleAr === 'string' && gp.titleAr.trim() && typeof gp.explanationAr === 'string' && gp.explanationAr.trim()) {
+        points.push({ titleAr: gp.titleAr.trim(), explanationAr: gp.explanationAr.trim() });
+      }
+    }
+
+    const topicSlugs = strArray(l.grammarTopics);
+    const targetStructures = strArray(l.targetStructures);
+    const commonMistakesAr = strArray(ped?.commonMistakesAr);
+    const culturalNoteAr =
+      typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim()
+        ? l.culturalNoteAr.trim()
+        : typeof ped?.culturalNoteAr === 'string' && ped.culturalNoteAr.trim()
+          ? ped.culturalNoteAr.trim()
+          : null;
+
+    // إن كان الدرس يحمل شروحات grammarPoints نُخرج نقطة واضحة لكل قاعدة؛
+    // وإلا نُخرج بطاقة قاعدة موحّدة من عنوان الدرس وهدف التعلم وgrammarTopics والتراكيب المستهدفة.
+    if (points.length > 0) {
+      points.forEach((gp, idx) => {
+        const hay = `${gp.titleAr} ${gp.explanationAr} ${item.row.title_ar} ${targetStructures.join(' ')}`.toLowerCase();
+        if (q && !hay.includes(q)) return;
+        entries.push({
+          id: `${item.row.slug}:gp:${idx}`,
+          lessonSlug: item.row.slug,
+          lessonTitleAr: item.row.title_ar,
+          level: item.level,
+          unitTitleAr: item.row.unit_title_ar,
+          programSlug: item.row.program_slug,
+          isUnlocked: item.isUnlocked,
+          progressStatus: item.progressStatus,
+          titleAr: gp.titleAr,
+          explanationAr: gp.explanationAr,
+          topicTags: topicSlugs.map(humanizeGrammarTopicSlug),
+          examples: targetStructures.slice(0, 4),
+          commonMistakesAr,
+          culturalNoteAr,
+        });
+      });
+    } else if (topicSlugs.length > 0 || targetStructures.length > 0) {
+      const dbTopics = topicSlugs.map(s => topicLookup.get(s)).filter((t): t is NonNullable<typeof t> => !!t);
+      const titleAr = dbTopics[0]?.title_ar ?? item.row.title_ar;
+      const explanationAr =
+        dbTopics.map(t => t.explanation_md).filter(Boolean).join('\n\n') ||
+        (typeof l.pedagogicalRationaleAr === 'string' && l.pedagogicalRationaleAr.trim()) ||
+        item.row.objective_ar;
+      const hay = `${titleAr} ${explanationAr} ${topicSlugs.join(' ')} ${item.row.title_ar} ${targetStructures.join(' ')}`.toLowerCase();
+      if (q && !hay.includes(q)) continue;
+      entries.push({
+        id: `${item.row.slug}:topic`,
+        lessonSlug: item.row.slug,
+        lessonTitleAr: item.row.title_ar,
+        level: item.level,
+        unitTitleAr: item.row.unit_title_ar,
+        programSlug: item.row.program_slug,
+        isUnlocked: item.isUnlocked,
+        progressStatus: item.progressStatus,
+        titleAr,
+        explanationAr,
+        topicTags: topicSlugs.map(humanizeGrammarTopicSlug),
+        examples: targetStructures.slice(0, 5),
+        commonMistakesAr,
+        culturalNoteAr,
+      });
+    }
+  }
+
+  return json(
+    {
+      total: entries.length,
+      entries,
+    },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+
+type ScenarioDomain = 'callcenter' | 'travel' | 'food' | 'shopping' | 'work' | 'health' | 'everyday';
+
+function classifyConversationDomain(programSlug: string, slug: string, unitSlug: string): ScenarioDomain {
+  if (programSlug === 'callcenter' || slug.startsWith('cc-')) return 'callcenter';
+  if (programSlug === 'travel' || slug.startsWith('tr-') || /aeropuerto|hotel|vuelo|tren|direcciones|equipaje|ciudad|viaj/.test(slug + ' ' + unitSlug)) {
+    return 'travel';
+  }
+  if (/cafe|restaurante|comida|bebida|desayuno|pedir-en-cafe|food/.test(slug + ' ' + unitSlug)) return 'food';
+  if (/comprar|ropa|tienda|precio|mercado|shopping/.test(slug + ' ' + unitSlug)) return 'shopping';
+  if (/trabajo|horario|entrevista|oficina|profesion|work/.test(slug + ' ' + unitSlug)) return 'work';
+  if (/farmacia|doler|emergencia|salud|medico|cuerpo|health/.test(slug + ' ' + unitSlug)) return 'health';
+  return 'everyday';
+}
+
+function callCenterPhaseFor(unitSlug: string): { code: string; labelAr: string } | null {
+  if (unitSlug.startsWith('cc-u0')) return { code: 'phonetics', labelAr: 'الصوتيات والوضوح الهاتفي' };
+  if (unitSlug.startsWith('cc-u1')) return { code: 'opening', labelAr: 'استقبال المكالمة والتحقق' };
+  if (unitSlug.startsWith('cc-u2')) return { code: 'billing', labelAr: 'الفواتير والحساب والباقات' };
+  if (unitSlug.startsWith('cc-u3')) return { code: 'diagnosis', labelAr: 'فهم المشكلة واقتراح الحل' };
+  if (unitSlug.startsWith('cc-u4')) return { code: 'complaints', labelAr: 'الشكاوى وتهدئة العميل' };
+  if (unitSlug.startsWith('cc-u5')) return { code: 'closing', labelAr: 'التصعيد وإغلاق المكالمة' };
+  if (unitSlug.startsWith('cc-u6')) return { code: 'written', labelAr: 'المتابعة الكتابية والمحاكاة' };
+  return null;
+}
+
+/** GET /api/content/hub/conversations — حوارات الحياة اليومية ومحاكاة الكول سنتر */
+export async function conversationsHub(req: Request, env: Env, requestId: string, user: SessionUser | null): Promise<Response> {
+  const url = new URL(req.url);
+  const domainFilter = (url.searchParams.get('domain') ?? 'all').toLowerCase().trim();
+  const levelFilter = (url.searchParams.get('level') ?? '').toUpperCase().trim();
+  const items = await loadVisibleHubLessons(env, user);
+
+  const scenarios: {
+    id: string;
+    domain: ScenarioDomain;
+    callCenterPhase: { code: string; labelAr: string } | null;
+    lessonSlug: string;
+    lessonTitleAr: string;
+    level: string;
+    unitSlug: string;
+    unitTitleAr: string;
+    programSlug: string;
+    isUnlocked: boolean;
+    progressStatus: string;
+    contextAr: string;
+    settingAr: string;
+    culturalNoteAr: string | null;
+    keyPhrases: string[];
+    lines: { es: string; ar: string; arEg?: string; audioKey?: string }[];
+  }[] = [];
+
+  const domainCounts: Record<ScenarioDomain, number> = {
+    callcenter: 0,
+    travel: 0,
+    food: 0,
+    shopping: 0,
+    work: 0,
+    health: 0,
+    everyday: 0,
+  };
+
+  for (const item of items) {
+    const l = item.parsed;
+    const rawScenarios = Array.isArray(l.scenarios) ? l.scenarios : [];
+    if (!rawScenarios.length) continue;
+
+    const domain = classifyConversationDomain(item.row.program_slug, item.row.slug, item.row.unit_slug);
+    const phase = domain === 'callcenter' ? callCenterPhaseFor(item.row.unit_slug) : null;
+    const culturalNoteAr = typeof l.culturalNoteAr === 'string' && l.culturalNoteAr.trim() ? l.culturalNoteAr.trim() : null;
+    const keyPhrases = strArray(l.targetStructures).slice(0, 4);
+
+    rawScenarios.forEach((scRaw, idx) => {
+      if (!scRaw || typeof scRaw !== 'object') return;
+      const sc = scRaw as { contextAr?: unknown; settingAr?: unknown; lines?: unknown };
+      if (!Array.isArray(sc.lines)) return;
+      const lines: { es: string; ar: string; arEg?: string; audioKey?: string }[] = [];
+      for (const lnRaw of sc.lines) {
+        if (!lnRaw || typeof lnRaw !== 'object') continue;
+        const ln = lnRaw as { es?: unknown; ar?: unknown; arEg?: unknown; audioKey?: unknown };
+        if (typeof ln.es !== 'string' || typeof ln.ar !== 'string') continue;
+        lines.push({
+          es: ln.es,
+          ar: ln.ar,
+          ...(typeof ln.arEg === 'string' && ln.arEg.trim() ? { arEg: ln.arEg } : {}),
+          ...(typeof ln.audioKey === 'string' && ln.audioKey.trim() ? { audioKey: ln.audioKey } : {}),
+        });
+      }
+      if (!lines.length) return;
+      domainCounts[domain] += 1;
+      if (domainFilter !== 'all' && domain !== domainFilter) return;
+      if (levelFilter && levelFilter !== 'ALL' && item.level !== levelFilter) return;
+
+      scenarios.push({
+        id: `${item.row.slug}:sc:${idx}`,
+        domain,
+        callCenterPhase: phase,
+        lessonSlug: item.row.slug,
+        lessonTitleAr: item.row.title_ar,
+        level: item.level,
+        unitSlug: item.row.unit_slug,
+        unitTitleAr: item.row.unit_title_ar,
+        programSlug: item.row.program_slug,
+        isUnlocked: item.isUnlocked,
+        progressStatus: item.progressStatus,
+        contextAr: typeof sc.contextAr === 'string' ? sc.contextAr : item.row.objective_ar,
+        settingAr: typeof sc.settingAr === 'string' ? sc.settingAr : item.row.unit_title_ar,
+        culturalNoteAr,
+        keyPhrases,
+        lines,
+      });
+    });
+  }
+
+  return json(
+    {
+      total: scenarios.length,
+      domainCounts,
+      scenarios,
+    },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+
+/** GET /api/content/hub/listening — استوديو الاستماع والإملاء والنطق */
+export async function listeningHub(req: Request, env: Env, requestId: string, user: SessionUser | null): Promise<Response> {
+  const url = new URL(req.url);
+  const levelFilter = (url.searchParams.get('level') ?? '').toUpperCase().trim();
+  const trackFilter = (url.searchParams.get('track') ?? 'all').toLowerCase().trim();
+  const limitParam = parseInt(url.searchParams.get('limit') ?? '80', 10);
+  const limit = Math.min(150, Math.max(10, Number.isNaN(limitParam) ? 80 : limitParam));
+  const items = await loadVisibleHubLessons(env, user);
+
+  const clips: {
+    id: string;
+    es: string;
+    ar: string;
+    arEg?: string;
+    audioKey?: string;
+    level: string;
+    lessonSlug: string;
+    lessonTitleAr: string;
+    programSlug: string;
+    contextAr: string;
+    isUnlocked: boolean;
+  }[] = [];
+
+  for (const item of items) {
+    if (levelFilter && levelFilter !== 'ALL' && item.level !== levelFilter) continue;
+    if (trackFilter !== 'all' && item.row.program_slug !== trackFilter) continue;
+    const l = item.parsed;
+    const rawScenarios = Array.isArray(l.scenarios) ? l.scenarios : [];
+
+    for (let si = 0; si < rawScenarios.length; si++) {
+      const sc = rawScenarios[si] as { contextAr?: unknown; lines?: unknown };
+      if (!sc || !Array.isArray(sc.lines)) continue;
+      const contextAr = typeof sc.contextAr === 'string' ? sc.contextAr : item.row.title_ar;
+      for (let li = 0; li < sc.lines.length; li++) {
+        const ln = sc.lines[li] as { es?: unknown; ar?: unknown; arEg?: unknown; audioKey?: unknown };
+        if (typeof ln?.es !== 'string' || typeof ln?.ar !== 'string') continue;
+        clips.push({
+          id: `${item.row.slug}:${si}:${li}`,
+          es: ln.es,
+          ar: ln.ar,
+          ...(typeof ln.arEg === 'string' && ln.arEg.trim() ? { arEg: ln.arEg } : {}),
+          ...(typeof ln.audioKey === 'string' && ln.audioKey.trim() ? { audioKey: ln.audioKey } : {}),
+          level: item.level,
+          lessonSlug: item.row.slug,
+          lessonTitleAr: item.row.title_ar,
+          programSlug: item.row.program_slug,
+          contextAr,
+          isUnlocked: item.isUnlocked,
+        });
+        if (clips.length >= limit) break;
+      }
+      if (clips.length >= limit) break;
+    }
+
+    // للدروس التي لا تحتوي حوارًا، نضيف العبارات المستهدفة للتدرب على النطق والاستماع
+    if (clips.length < limit && rawScenarios.length === 0) {
+      const structures = strArray(l.targetStructures);
+      for (let ti = 0; ti < structures.length; ti++) {
+        const es = structures[ti]!;
+        clips.push({
+          id: `${item.row.slug}:st:${ti}`,
+          es,
+          ar: item.row.title_ar,
+          level: item.level,
+          lessonSlug: item.row.slug,
+          lessonTitleAr: item.row.title_ar,
+          programSlug: item.row.program_slug,
+          contextAr: item.row.objective_ar,
+          isUnlocked: item.isUnlocked,
+        });
+        if (clips.length >= limit) break;
+      }
+    }
+    if (clips.length >= limit) break;
+  }
+
+  return json(
+    { total: clips.length, clips },
+    { headers: { 'Cache-Control': 'no-store' } },
+    requestId,
+  );
+}
+

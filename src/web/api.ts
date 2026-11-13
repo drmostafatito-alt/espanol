@@ -45,6 +45,7 @@ interface RequestOpts {
    * نمنع ازدواج المعالجة المركزية حتى لا يطرد رد 401 قديم مستخدمًا دخل للتو.
    */
   silentUnauth?: boolean;
+  timeoutMs?: number;
 }
 
 /**
@@ -62,16 +63,22 @@ export function invalidateInFlightAuth(): void {
 
 async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpts = {}): Promise<T> {
   const epochAtSend = authEpoch;
+  const ctrl = typeof AbortController !== 'undefined' && opts.timeoutMs ? new AbortController() : null;
+  const timer = ctrl && opts.timeoutMs ? setTimeout(() => ctrl.abort(), opts.timeoutMs) : null;
   let res: Response;
   try {
     res = await fetch(path, {
       ...init,
+      ...(ctrl ? { signal: ctrl.signal } : {}),
       credentials: 'include',
       headers: { 'Content-Type': 'application/json', ...(init.headers ?? {}) },
     });
   } catch {
+    if (timer) clearTimeout(timer);
     // المتصفح يرفض الطلب أصلًا: الخادم غير متاح أو انقطع الاتصال — ليس رفض مصادقة
     throw new ApiError(0, 'NETWORK_ERROR', 'تعذّر الاتصال بالخادم. تحقق من اتصالك بالإنترنت ثم أعد المحاولة.');
+  } finally {
+    if (timer) clearTimeout(timer);
   }
 
   const text = await res.text();
@@ -113,7 +120,19 @@ async function request<T>(path: string, init: RequestInit = {}, opts: RequestOpt
 export type AuthCredentials = { derivedKey: string };
 
 export const api = {
-  me: (opts?: RequestOpts) => request<{ user: ApiUser }>('/api/auth/me', {}, opts),
+  me: async (opts?: RequestOpts) => {
+    if (opts?.silentUnauth) {
+      try {
+        return await request<{ user: ApiUser }>('/api/auth/me', {}, { ...opts, timeoutMs: opts.timeoutMs ?? 4000 });
+      } catch (err) {
+        if (err instanceof ApiError && err.status === 0) {
+          return request<{ user: ApiUser }>('/api/auth/me', {}, { ...opts, timeoutMs: opts.timeoutMs ?? 6000 });
+        }
+        throw err;
+      }
+    }
+    return request<{ user: ApiUser }>('/api/auth/me', {}, opts);
+  },
   /**
    * معاملات اشتقاق العميل: ملح حتمي للبريد + عدد التكرارات (600,000 افتراضيًا).
    * لا يكشف وجود الحساب — نفس الشكل لأي بريد.
@@ -189,8 +208,14 @@ export const api = {
   completeLesson: (slug: string, eventId: string) =>
     request<CompleteResult>(`/api/lessons/${encodeURIComponent(slug)}/complete`, { method: 'POST', body: JSON.stringify({ eventId }) }),
 
-  // ---- المراجعة المتباعدة ----
-  reviewSession: (limit?: number) => request<ReviewPayload>(`/api/review/session${limit !== undefined ? `?limit=${limit}` : ''}`),
+  // ---- المراجعة المتباعدة والمفردات ----
+  reviewSession: (limit?: number, mode?: 'due' | 'weak') => {
+    const params = new URLSearchParams();
+    if (limit !== undefined) params.set('limit', String(limit));
+    if (mode === 'weak') params.set('mode', 'weak');
+    const qs = params.toString();
+    return request<ReviewPayload>(`/api/review/session${qs ? `?${qs}` : ''}`);
+  },
   submitReview: (body: { clientEventId: string; cardId: string; rating: ReviewRating; responseMs?: number }) =>
     request<ReviewResult>('/api/review/answers', { method: 'POST', body: JSON.stringify(body) }),
   reviewPacks: () => request<{ packs: ReviewPack[] }>('/api/review/packs'),
@@ -199,6 +224,37 @@ export const api = {
       `/api/review/packs/${encodeURIComponent(slug)}/start`,
       { method: 'POST' },
     ),
+  myVocabulary: (opts?: { filter?: string; level?: string; q?: string; limit?: number }) => {
+    const params = new URLSearchParams();
+    if (opts?.filter) params.set('filter', opts.filter);
+    if (opts?.level) params.set('level', opts.level);
+    if (opts?.q) params.set('q', opts.q);
+    if (opts?.limit) params.set('limit', String(opts.limit));
+    const qs = params.toString();
+    return request<VocabularyHubPayload>(`/api/me/vocabulary${qs ? `?${qs}` : ''}`);
+  },
+  grammarHub: (opts?: { level?: string; q?: string }) => {
+    const params = new URLSearchParams();
+    if (opts?.level) params.set('level', opts.level);
+    if (opts?.q) params.set('q', opts.q);
+    const qs = params.toString();
+    return request<GrammarHubPayload>(`/api/content/hub/grammar${qs ? `?${qs}` : ''}`);
+  },
+  conversationsHub: (opts?: { domain?: string; level?: string }) => {
+    const params = new URLSearchParams();
+    if (opts?.domain) params.set('domain', opts.domain);
+    if (opts?.level) params.set('level', opts.level);
+    const qs = params.toString();
+    return request<ConversationsHubPayload>(`/api/content/hub/conversations${qs ? `?${qs}` : ''}`);
+  },
+  listeningHub: (opts?: { level?: string; track?: string; limit?: number }) => {
+    const params = new URLSearchParams();
+    if (opts?.level) params.set('level', opts.level);
+    if (opts?.track) params.set('track', opts.track);
+    if (opts?.limit) params.set('limit', String(opts.limit));
+    const qs = params.toString();
+    return request<ListeningHubPayload>(`/api/content/hub/listening${qs ? `?${qs}` : ''}`);
+  },
   search: (query: string, opts?: { level?: string; kind?: string; limit?: number }) => {
     const params = new URLSearchParams({ q: query });
     if (opts?.level) params.set('level', opts.level);
@@ -216,6 +272,11 @@ export interface ReviewCard {
   state: string;
   dueAt: string;
   level: string | null;
+  pos?: string | null;
+  gender?: string | null;
+  lapses?: number;
+  intervalDays?: number;
+  ease?: number;
   headwordEs?: string;
   ipa?: string | null;
   pronunciationHintAr?: string | null;
@@ -233,6 +294,7 @@ export interface ReviewCard {
 export interface ReviewPayload {
   cards: ReviewCard[];
   session: {
+    mode?: 'due' | 'weak';
     dueNow: number;
     totalCards: number;
     suspended: number;
@@ -283,23 +345,49 @@ export interface LessonScenario {
   lines: { es: string; ar: string; arEg?: string }[];
 }
 
+export interface VocabBriefItem {
+  word: string;
+  meaningFusha: string | null;
+  meaningEg: string | null;
+  pos?: string | null;
+  gender?: string | null;
+  ipa?: string | null;
+  pronunciationHintAr?: string | null;
+  exampleEs?: string | null;
+  exampleAr?: string | null;
+  usageNoteAr?: string | null;
+  commonErrorAr?: string | null;
+}
+
 /** ملخص الدرس الذي يُعرض للمتعلم قبل التمارين: هدف، قاعدة، مفردات، أمثلة، حوار، ملاحظة. */
 export interface LessonBrief {
   objectiveAr: string;
   estimatedMinutes: number;
-  newVocabulary: { word: string; meaningFusha: string | null; meaningEg: string | null }[];
-  reviewVocabulary: { word: string; meaningFusha: string | null; meaningEg: string | null }[];
+  newVocabulary: VocabBriefItem[];
+  reviewVocabulary: VocabBriefItem[];
   targetStructures: string[];
   scenarios: LessonScenario[];
   grammarPoints: { titleAr: string; explanationAr: string }[];
+  grammarTopics?: string[];
+  commonMistakesAr?: string[];
   culturalNoteAr: string | null;
   pedagogicalRationaleAr: string | null;
 }
 
 export interface LessonSession {
   lesson: {
-    slug: string; titleAr: string; level: string | null; objectiveAr: string; estimatedMinutes: number;
-    versionNo: number; brief: LessonBrief; provenance?: { status: string; warningAr: string };
+    slug: string;
+    titleAr: string;
+    level: string | null;
+    objectiveAr: string;
+    estimatedMinutes: number;
+    unitTitleAr?: string | null;
+    unitObjectiveAr?: string | null;
+    programSlug?: string | null;
+    programTitleAr?: string | null;
+    versionNo: number;
+    brief: LessonBrief;
+    provenance?: { status: string; warningAr: string };
   };
   exercises: LessonExercise[];
   progress: { status: string; best_accuracy: number; attempts_count: number; completed_at: string | null };
@@ -347,6 +435,7 @@ export interface ProgressLessonItem {
   unit_id?: string;
   unit_slug?: string;
   unit_title_ar?: string;
+  unit_objective_ar?: string | null;
   unit_sort_order?: number;
   program_slug?: string;
   program_title_ar?: string;
@@ -384,7 +473,17 @@ export interface LevelSummary {
 }
 
 export interface ProgressPayload {
-  stats: { xp_total: number; minutes_total: number; streak_current: number; streak_longest: number; reviews_done: number; words_seen: number; words_stable: number };
+  stats: {
+    xp_total: number;
+    minutes_total: number;
+    streak_current: number;
+    streak_longest: number;
+    reviews_done: number;
+    words_seen: number;
+    words_stable: number;
+    attempts_total?: number;
+    accuracy_avg?: number | null;
+  };
   lessons: ProgressLessonItem[];
   nextLesson?: {
     slug: string;
@@ -399,8 +498,143 @@ export interface ProgressPayload {
   today?: DayActivity;
   week?: DayActivity[];
   goalMinutes?: number;
-  review?: { dueNow: number; total: number };
+  review?: {
+    dueNow: number;
+    total: number;
+    weakCount?: number;
+    masteredCount?: number;
+    familiarCount?: number;
+    learningCount?: number;
+    newCount?: number;
+  };
   levels?: LevelSummary[];
   achievements?: AchievementItem[];
   contentProvenance: { status: string; warningAr: string } | null;
 }
+
+export interface VocabularyCardItem {
+  id: string;
+  cardKind: string;
+  state: string;
+  bucket: 'weak' | 'mastered' | 'familiar' | 'learning' | 'new';
+  dueAt: string;
+  isDue: boolean;
+  intervalDays: number;
+  repetitions: number;
+  lapses: number;
+  ease: number;
+  lastReviewedAt: string | null;
+  headwordEs: string;
+  pos: string | null;
+  gender: string | null;
+  level: string | null;
+  ipa: string | null;
+  pronunciationHintAr: string | null;
+  meaningArFusha: string;
+  meaningArEg: string | null;
+  usageNoteAr: string | null;
+  commonErrorAr: string | null;
+  exampleEs: string | null;
+  exampleAr: string | null;
+}
+
+export interface VocabularyExplorerItem {
+  id: string;
+  headwordEs: string;
+  pos: string | null;
+  gender: string | null;
+  level: string | null;
+  ipa: string | null;
+  pronunciationHintAr: string | null;
+  meaningArFusha: string;
+  meaningArEg: string | null;
+  usageNoteAr: string | null;
+  commonErrorAr: string | null;
+  exampleEs: string | null;
+  exampleAr: string | null;
+  masteryBucket: 'weak' | 'mastered' | 'familiar' | 'learning' | 'new' | null;
+}
+
+export interface VocabularyHubPayload {
+  summary: {
+    totalCards: number;
+    dueNow: number;
+    weak: number;
+    learning: number;
+    familiar: number;
+    mastered: number;
+    fresh: number;
+    dictionaryTotal: number;
+  };
+  cards: VocabularyCardItem[];
+  explorer: VocabularyExplorerItem[];
+}
+
+export interface GrammarHubEntry {
+  id: string;
+  lessonSlug: string;
+  lessonTitleAr: string;
+  level: string;
+  unitTitleAr: string;
+  programSlug: string;
+  isUnlocked: boolean;
+  progressStatus: string;
+  titleAr: string;
+  explanationAr: string;
+  topicTags: string[];
+  examples: string[];
+  commonMistakesAr: string[];
+  culturalNoteAr: string | null;
+}
+
+export interface GrammarHubPayload {
+  total: number;
+  entries: GrammarHubEntry[];
+}
+
+export type ScenarioDomain = 'callcenter' | 'travel' | 'food' | 'shopping' | 'work' | 'health' | 'everyday';
+
+export interface ConversationsHubScenario {
+  id: string;
+  domain: ScenarioDomain;
+  callCenterPhase: { code: string; labelAr: string } | null;
+  lessonSlug: string;
+  lessonTitleAr: string;
+  level: string;
+  unitSlug: string;
+  unitTitleAr: string;
+  programSlug: string;
+  isUnlocked: boolean;
+  progressStatus: string;
+  contextAr: string;
+  settingAr: string;
+  culturalNoteAr: string | null;
+  keyPhrases: string[];
+  lines: { es: string; ar: string; arEg?: string; audioKey?: string }[];
+}
+
+export interface ConversationsHubPayload {
+  total: number;
+  domainCounts: Record<ScenarioDomain, number>;
+  scenarios: ConversationsHubScenario[];
+}
+
+export interface ListeningHubClip {
+  id: string;
+  es: string;
+  ar: string;
+  arEg?: string;
+  audioKey?: string;
+  level: string;
+  lessonSlug: string;
+  lessonTitleAr: string;
+  programSlug: string;
+  contextAr: string;
+  isUnlocked: boolean;
+}
+
+export interface ListeningHubPayload {
+  total: number;
+  clips: ListeningHubClip[];
+}
+

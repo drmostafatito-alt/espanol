@@ -41,6 +41,12 @@ export function Profile({ navigate }: { navigate: (to: string) => void }) {
   const total = progress?.totals.lessons_total ?? 0;
   const pct = total ? Math.round((completed / total) * 100) : 0;
 
+  const activeLevel = useMemo(() => {
+    const nextCode = progress?.nextLesson?.level_code?.toUpperCase();
+    if (nextCode && LEVEL_TITLES[nextCode]) return nextCode;
+    return currentLevelCode(levels);
+  }, [levels, progress?.nextLesson?.level_code]);
+
   if (!user) return null;
 
   return (
@@ -54,7 +60,7 @@ export function Profile({ navigate }: { navigate: (to: string) => void }) {
           </p>
           <div className="row" style={{ marginTop: 'var(--s-2)', gap: 'var(--s-2)' }}>
             <span className="badge primary">
-              <Icon name="graduation" size={14} /> {LEVEL_TITLES[currentLevelCode(levels)] ?? 'مبتدئ'}
+              <Icon name="graduation" size={14} /> {LEVEL_TITLES[activeLevel] ?? 'مبتدئ'} ({activeLevel})
             </span>
             <span className="badge success">
               <Icon name="star" size={14} /> <span className="num">{stats?.xp_total ?? 0}</span> XP
@@ -64,7 +70,13 @@ export function Profile({ navigate }: { navigate: (to: string) => void }) {
             </span>
           </div>
         </div>
-        <div className="profile-action row" style={{ gap: 'var(--s-2)' }}>
+        <div className="profile-action row" style={{ gap: 'var(--s-2)', flexWrap: 'wrap' }}>
+          <button className="btn secondary sm" onClick={() => navigate('/stats')}>
+            <Icon name="trophy" size={16} /> الإحصائيات
+          </button>
+          <button className="btn secondary sm" onClick={() => navigate('/vocabulary')}>
+            <Icon name="book" size={16} /> المفردات
+          </button>
           <button className="btn secondary sm" onClick={() => navigate('/settings')}>
             <Icon name="settings" size={16} /> الإعدادات
           </button>

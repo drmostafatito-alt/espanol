@@ -60,7 +60,7 @@
 
   /* الخطوط */
   --font-ar: "Cairo", "Noto Kufi Arabic", "Segoe UI", "Tahoma", system-ui, sans-serif;
-  --font-es: "Cairo", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-es: "Nunito", "Cairo", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 
   /* الحركة */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -1238,4 +1238,507 @@ body .path-node .node-sub { font-size: max(12px, 0.7rem); }
 input:focus, select:focus, textarea:focus {
   border-color: var(--color-focus);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 30%, transparent);
+}
+
+/* ============================================================================
+   التصميم التربوي الجديد: التنقل المجموعي، لوحة المهارات، شريط الأحرف، والاستوديوهات
+   ========================================================================== */
+.nav-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--s-3); }
+.nav-group-label {
+  font-size: max(12px, 0.72rem);
+  font-weight: 800;
+  color: var(--color-muted);
+  padding: 4px var(--s-3);
+  letter-spacing: 0.01em;
+}
+.icon-only-btn {
+  min-width: 36px;
+  min-height: 36px;
+  padding: 6px;
+  border-radius: var(--r-md);
+}
+.success-text { color: var(--color-success-text); font-weight: 700; }
+
+/* شريط الإتقان والمختبرات في لوحة اليوم */
+.mastery-stack {
+  display: flex;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--color-surface-3);
+  gap: 2px;
+  margin-block: var(--s-2);
+}
+.mastery-stack .seg-mastered, .mastery-stack .seg.mastered { background: var(--color-success); }
+.mastery-stack .seg-familiar, .mastery-stack .seg.familiar { background: var(--color-info); }
+.mastery-stack .seg-learning, .mastery-stack .seg.learning { background: var(--color-accent); }
+.mastery-stack .seg-weak, .mastery-stack .seg.weak { background: var(--color-danger); }
+.mastery-stack .seg.fresh { background: #94a3b8; }
+.mastery-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+  font-size: max(12px, 0.82rem);
+  color: var(--color-muted);
+}
+.mastery-legend > span { display: inline-flex; align-items: center; gap: 6px; }
+.mastery-legend .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.mastery-legend .dot.mastered { background: var(--color-success); }
+.mastery-legend .dot.familiar { background: var(--color-info); }
+.mastery-legend .dot.learning { background: var(--color-accent); }
+.mastery-legend .dot.weak { background: var(--color-danger); }
+.mastery-legend .dot.fresh { background: #94a3b8; }
+
+.skills-shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+.skill-shortcut {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-3);
+  min-height: 46px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  color: var(--color-navy);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out), background var(--dur-1) var(--ease-out);
+}
+.skill-shortcut:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+/* شريط مراحل CEFR في خريطة المسار */
+.cefr-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: var(--s-2);
+  margin-bottom: var(--s-4);
+}
+.cefr-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  cursor: pointer;
+  min-height: 54px;
+}
+.cefr-step.active {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+.cefr-code { font-weight: 800; font-size: 0.85rem; }
+.cefr-pct { font-weight: 800; font-size: 0.95rem; color: var(--color-navy); }
+.cefr-step.active .cefr-pct { color: var(--color-primary-text); }
+
+/* بطاقات المفردات في مقدمة الدرس */
+.vocab-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--s-3);
+}
+.vocab-intro-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.vocab-intro-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+.vocab-intro-word {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--color-navy);
+}
+.vocab-intro-meaning {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.vocab-intro-example {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border-radius: var(--r-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+/* شريط الأحرف الإسبانية */
+.accent-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--s-2);
+  justify-content: flex-start;
+}
+.accent-key {
+  min-width: 38px;
+  min-height: 38px;
+  padding: 0 10px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-navy);
+  font-family: var(--font-es);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-grid;
+  place-items: center;
+  transition: background var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
+}
+.accent-key:hover:not(:disabled) {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+.accent-key:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* مقارنة الإجابة في التغذية الراجعة + ملخص نتيجة الدرس */
+.feedback-compare {
+  margin: var(--s-2) 0;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.result-summary-panels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  text-align: start;
+  margin: var(--s-4) 0;
+}
+.result-panel {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-md);
+  padding: var(--s-3);
+}
+.result-panel h2 {
+  margin: 0 0 var(--s-2);
+  font-size: 0.96rem;
+  color: var(--color-navy);
+}
+
+/* صفحات المهارات الجديدة (المفردات / القواعد / المحادثات / الاستماع / الإحصائيات) */
+.hub-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.hub-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--s-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-xl);
+  padding: var(--s-5);
+  box-shadow: var(--shadow-1);
+}
+.hub-hero h1 { margin: var(--s-1) 0; font-size: clamp(1.35rem, 2.8vw, 1.85rem); color: var(--color-navy); }
+.hub-hero p { margin: 0; max-width: 62ch; }
+.hub-hero-actions { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
+
+.hub-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.hub-search {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 0 var(--s-3);
+  min-height: 46px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+}
+.hub-search input {
+  border: 0;
+  background: transparent;
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  color: var(--color-text);
+  min-height: 44px;
+}
+.hub-search input:focus { outline: none; box-shadow: none; }
+.hub-search:focus-within {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 24%, transparent);
+}
+
+.mastery-overview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.vocab-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--s-3);
+}
+.vocab-rich-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-lg);
+  padding: var(--s-4);
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.vocab-rich-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+.vocab-rich-head h2, .vocab-headword {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-navy);
+}
+.icon-btn { min-width: 36px; min-height: 36px; padding: 6px; border-radius: var(--r-md); }
+.vocab-rich-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.vocab-rich-meaning, .vocab-meaning { margin: 0; font-weight: 700; font-size: 1.02rem; }
+.vocab-rich-example, .vocab-example {
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.vocab-notes { display: flex; flex-direction: column; gap: 4px; }
+.vocab-rich-meta, .vocab-srs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  font-size: max(12px, 0.78rem);
+  color: var(--color-muted);
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--s-2);
+  margin-top: auto;
+}
+
+.grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: var(--s-4);
+}
+.grammar-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.grammar-card h2 { margin: 0; font-size: 1.12rem; color: var(--color-navy); }
+.grammar-explain { margin: 0; white-space: pre-line; line-height: 1.7; }
+.grammar-examples {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-2) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.grammar-examples li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding: 6px 10px;
+  border-radius: var(--r-sm);
+  background: var(--color-surface-2);
+}
+.grammar-mistakes {
+  margin: 0;
+  padding-inline-start: var(--s-4);
+  color: var(--color-danger);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.callcenter-banner {
+  background: linear-gradient(135deg, #f3f7ff, #fff9f2);
+  border-color: color-mix(in srgb, var(--color-navy) 22%, var(--color-border));
+}
+.callcenter-banner h2 { margin: 0 0 4px; font-size: 1.1rem; color: var(--color-navy); }
+.cc-phases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+.cc-phase-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+.cc-phase-chip i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-navy);
+  color: #fff;
+  font-style: normal;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.75rem;
+}
+
+.scenarios-list { display: flex; flex-direction: column; gap: var(--s-4); }
+.scenario-card { display: flex; flex-direction: column; gap: var(--s-3); }
+.scenario-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--s-3);
+}
+.scenario-head h2 { margin: var(--s-1) 0 2px; font-size: 1.12rem; color: var(--color-navy); }
+.dialogue-studio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.studio-turn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: var(--s-3);
+  border-radius: var(--r-md);
+  border: 1px solid var(--color-border);
+}
+.studio-turn.speaker-a {
+  background: var(--color-surface-2);
+  margin-inline-end: var(--s-4);
+}
+.studio-turn.speaker-b {
+  background: var(--color-info-soft);
+  border-color: color-mix(in srgb, var(--color-info) 24%, var(--color-border));
+  margin-inline-start: var(--s-4);
+}
+.studio-turn-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.studio-es { font-size: 1.05rem; font-weight: 700; color: var(--color-navy); }
+.studio-turn-controls { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+.scenario-phrases { display: flex; flex-wrap: wrap; gap: 6px; }
+.scenario-phrase-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.listening-studio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.listening-player {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  border-radius: var(--r-lg);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+}
+.listening-play-row { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
+.listening-script-box {
+  padding: var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.stats-kv-list { display: flex; flex-direction: column; gap: var(--s-2); }
+.stats-kv, .stats-kv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-sm);
+  background: var(--color-surface-2);
+}
+.hub-controls .tabs-row {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.hub-controls .level-pill {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+@media (min-width: 641px) {
+  .hub-controls .hub-search {
+    min-width: 260px;
+    flex: 1 1 260px;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .studio-turn.speaker-a, .studio-turn.speaker-b {
+    margin-inline: 0;
+  }
+  .hub-hero { padding: var(--s-4); }
+  .accent-key { min-width: 44px; min-height: 44px; }
+  .skills-shortcut-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 380px) {
+  .vocab-intro-grid, .vocab-cards-grid, .grammar-grid { grid-template-columns: 1fr; }
+  .cefr-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
