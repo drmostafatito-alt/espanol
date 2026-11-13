@@ -297,6 +297,154 @@ export function Listening({ navigate }: { navigate: (to: string) => void }) {
           )}
         </section>
       )}
+
+      {/* ---------------- مختبر المقاطع والمقطع المشدود (§8) ---------------- */}
+      <section className="card" style={{ marginTop: 'var(--s-4)' }} aria-labelledby="syllables-lab-title">
+        <div className="row" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
+          <div>
+            <span className="continue-eyebrow">
+              <Icon name="volume" size={14} /> دليل النطق الصوتي للمتحدث العربي
+            </span>
+            <h2 id="syllables-lab-title" style={{ margin: '4px 0 0', fontSize: '1.2rem' }}>
+              تقطيع المقاطع والمقطع المشدود (Sílaba Tónica)
+            </h2>
+          </div>
+          <span className="badge info">تسجيلات صوتية حقيقية · سرعة عادية وبطيئة</span>
+        </div>
+        <p className="small muted" style={{ margin: '0 0 14px' }}>
+          في الإسبانية يُنطق كل حرف مكتوب تقريبًا (ما عدا حرف <b>h</b> الصامت)، ويبرز مقطع واحد في كل كلمة يُسمّى <b>المقطع المشدود</b> (المميز باللون الأخضر أدناه):
+        </p>
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+            gap: 12,
+          }}
+        >
+          {[
+            {
+              key: 'vocab-hola',
+              word: 'Hola',
+              meaningAr: 'مرحبًا',
+              syllables: ['HO', 'la'],
+              stressedIndex: 0,
+              phoneticAr: 'أُو - لا (حرف H صامت لا يُنطق)',
+            },
+            {
+              key: 'vocab-gracias',
+              word: 'Gracias',
+              meaningAr: 'شكرًا',
+              syllables: ['GRA', 'cias'],
+              stressedIndex: 0,
+              phoneticAr: 'غْرا - ثياس / غْرا - سياس',
+            },
+            {
+              key: 'core_cafe',
+              word: 'Café',
+              meaningAr: 'قهوة',
+              syllables: ['ca', 'FÉ'],
+              stressedIndex: 1,
+              phoneticAr: 'كا - فِيه (النبر على المقطع الأخير لوجود علامة ´)',
+            },
+            {
+              key: 'core_buenos_dias',
+              word: 'Buenos días',
+              meaningAr: 'صباح الخير',
+              syllables: ['BUE', 'nos', 'DÍ', 'as'],
+              stressedIndex: 2,
+              phoneticAr: 'بْوِي - نوس دِي - آس',
+            },
+            {
+              key: 'vocab-me-llamo',
+              word: 'Me llamo',
+              meaningAr: 'اسمي',
+              syllables: ['me', 'LLA', 'mo'],
+              stressedIndex: 1,
+              phoneticAr: 'مِي يَا - مو (حرفا ll يُنطقان ياءً)',
+            },
+            {
+              key: 'phonetic_h_habitacion',
+              word: 'Habitación',
+              meaningAr: 'غرفة فندق',
+              syllables: ['ha', 'bi', 'ta', 'CIÓN'],
+              stressedIndex: 3,
+              phoneticAr: 'آ - بي - تا - ثْيُون (H صامتة والنبر في الآخر)',
+            },
+          ].map(item => (
+            <div
+              key={item.key}
+              className="card tight"
+              style={{
+                background: 'var(--bg-subtle)',
+                border: '1px solid var(--border-subtle)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8,
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <strong className="es" dir="ltr" style={{ fontSize: '1.15rem' }}>
+                  {item.word}
+                </strong>
+                <span className="badge neutral">{item.meaningAr}</span>
+              </div>
+
+              <div dir="ltr" style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                {item.syllables.map((syl, sIdx) => {
+                  const isStressed = sIdx === item.stressedIndex;
+                  return (
+                    <span
+                      key={sIdx}
+                      className="es"
+                      style={{
+                        padding: '3px 10px',
+                        borderRadius: 999,
+                        fontWeight: 800,
+                        fontSize: '0.88rem',
+                        background: isStressed ? 'var(--primary-soft)' : 'var(--bg-surface)',
+                        color: isStressed ? 'var(--primary-hover)' : 'var(--text-secondary)',
+                        border: isStressed ? '1.5px solid var(--primary)' : '1px solid var(--border-subtle)',
+                      }}
+                      title={isStressed ? 'المقطع المشدود (Sílaba tónica)' : 'مقطع غير مشدود'}
+                    >
+                      {syl}
+                    </span>
+                  );
+                })}
+              </div>
+
+              <p className="small muted" style={{ margin: 0 }}>
+                النطق التقريبي: <b>{item.phoneticAr}</b>
+              </p>
+
+              <div style={{ display: 'flex', gap: 6, marginTop: 'auto' }}>
+                <button
+                  type="button"
+                  className="btn sm secondary"
+                  onClick={() => {
+                    audioService.setRate(1.0);
+                    void audioService.play({ key: item.key, text: item.word, variant: user?.audioVariant });
+                  }}
+                >
+                  <Icon name="volume" size={14} /> عادي (1x)
+                </button>
+                <button
+                  type="button"
+                  className="btn sm ghost"
+                  onClick={() => {
+                    audioService.setRate(0.75);
+                    void audioService.play({ key: item.key, text: item.word, variant: user?.audioVariant });
+                  }}
+                >
+                  🐢 بطيء (0.75x)
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
+

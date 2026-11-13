@@ -1,16 +1,22 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const ROOT = process.cwd();
 const AUDIO_DIR = join(ROOT, 'public', 'audio', 'es-ES');
-const PIPER_EXE = join(ROOT, 'tools', 'audio-engine', 'piper', 'piper.exe');
+const PIPER_EXE = join(
+  ROOT,
+  'tools',
+  'audio-engine',
+  'piper',
+  process.platform === 'win32' ? 'piper.exe' : 'piper',
+);
 const MODEL_ONNX = join(ROOT, 'tools', 'audio-engine', 'es_ES-davefx-medium.onnx');
 const MANIFEST_PATH = join(ROOT, 'src', 'web', 'audio', 'assetManifest.json');
 
 if (!existsSync(AUDIO_DIR)) mkdirSync(AUDIO_DIR, { recursive: true });
 
-export const SAMPLE_ITEMS = [
+export const BASE_SAMPLE_ITEMS = [
   // 1. أصوات صعبة وحالات النبر (Phonetics)
   { id: 'phonetic_rr_perro', cat: 'phonetic', text: 'El perro corre rápido por el parque.', notes: 'نطق الراء المكررة المشددة (rr)' },
   { id: 'phonetic_rr_ferrocarril', cat: 'phonetic', text: 'El ferrocarril llega a las cinco.', notes: 'راءات متتالية في كلمة واحدة' },
@@ -76,7 +82,83 @@ export const SAMPLE_ITEMS = [
   // 7. جمل طويلة ومركبة (Complex Sentences)
   { id: 'complex_condicional', cat: 'complex', text: 'Si tuviera más tiempo libre este año, estudiaría español todos los días con entusiasmo.', notes: 'جملة شرطية افتراضية مع subjunctive' },
   { id: 'complex_academico', cat: 'complex', text: 'Es imprescindible que todos los participantes confirmen su asistencia antes del inicio de la conferencia internacional.', notes: 'تركيب رسمي متقدم' },
+
+  // 8. مفردات التأسيس ذات الأولوية القصوى (Priority Vocabulary Words)
+  { id: 'vocab-hola', cat: 'core_vocab', text: 'Hola', notes: 'تحية: مرحبًا' },
+  { id: 'vocab-gracias', cat: 'core_vocab', text: 'Gracias', notes: 'شكرًا' },
+  { id: 'vocab-me-llamo', cat: 'core_vocab', text: 'Me llamo', notes: 'اسمي' },
+  { id: 'vocab-mucho-gusto', cat: 'core_vocab', text: 'Mucho gusto', notes: 'تشرفت بمعرفتك' },
+  { id: 'vocab-hasta-luego', cat: 'core_vocab', text: 'Hasta luego', notes: 'إلى اللقاء' },
+  { id: 'vocab-buenas-tardes', cat: 'core_vocab', text: 'Buenas tardes', notes: 'مساء الخير' },
+  { id: 'vocab-como-estas', cat: 'core_vocab', text: '¿Cómo estás?', notes: 'كيف حالك؟' },
+  { id: 'vocab-muy-bien', cat: 'core_vocab', text: 'Muy bien', notes: 'بخير جدًا' },
+  { id: 'vocab-mas-o-menos', cat: 'core_vocab', text: 'Más o menos', notes: 'بين بين' },
+  { id: 'vocab-soy-de-egipto', cat: 'core_vocab', text: 'Soy de Egipto', notes: 'أنا من مصر' },
+  { id: 'vocab-hablo-espanol', cat: 'core_vocab', text: 'Hablo español', notes: 'أتحدث الإسبانية' },
+  { id: 'vocab-quiero', cat: 'core_vocab', text: 'Quiero', notes: 'أريد' },
+  { id: 'vocab-necesito', cat: 'core_vocab', text: 'Necesito', notes: 'أحتاج' },
+  { id: 'vocab-la-cuenta', cat: 'core_vocab', text: 'La cuenta, por favor', notes: 'الحساب من فضلك' },
 ];
+
+function collectLessonAudioItems() {
+  const collected = [];
+  const lessonPaths = [
+    ...readdirSync(join(ROOT, 'content/drafts/prea1'))
+      .filter(f => f.startsWith('lesson-'))
+      .map(f => join(ROOT, 'content/drafts/prea1', f)),
+    join(ROOT, 'content/drafts/a1/lesson-a1-origen-de-donde-eres.json'),
+    join(ROOT, 'content/drafts/a1/lesson-a1-saludos-formalidad.json'),
+    join(ROOT, 'content/drafts/a1/lesson-a1-presentar-a-otro.json'),
+    join(ROOT, 'content/drafts/a1/lesson-a1-nacionalidades.json'),
+  ];
+
+  for (const p of lessonPaths) {
+    if (!existsSync(p)) continue;
+    const j = JSON.parse(readFileSync(p, 'utf8')).lesson;
+    for (const sc of j.scenarios || []) {
+      for (const l of sc.lines || []) {
+        if (l.audioKey && l.es) {
+          collected.push({
+            id: l.audioKey.replace(/^pending\//, ''),
+            cat: 'lesson_dialogue',
+            text: l.es,
+            notes: `حوار درس ${j.slug}`,
+            hasPendingAlias: l.audioKey.startsWith('pending/'),
+          });
+        }
+      }
+    }
+    for (const ex of j.exercises || []) {
+      const ak = ex.audioKey || ex.prompt?.audioKey || ex.answerKey?.referenceAudioKey;
+      const txt =
+        ex.speechEs ||
+        ex.stemEs ||
+        ex.transcriptEs ||
+        ex.targetTextEs ||
+        ex.answerKey?.modelAnswer ||
+        ex.prompt?.transcriptEs ||
+        ex.prompt?.targetTextEs;
+      if (ak && txt) {
+        collected.push({
+          id: ak.replace(/^pending\//, ''),
+          cat: 'lesson_exercise',
+          text: txt,
+          notes: `تمرين صوتي في درس ${j.slug}`,
+          hasPendingAlias: ak.startsWith('pending/'),
+        });
+      }
+    }
+  }
+  return collected;
+}
+
+export const SAMPLE_ITEMS = (() => {
+  const byId = new Map();
+  for (const item of [...BASE_SAMPLE_ITEMS, ...collectLessonAudioItems()]) {
+    if (!byId.has(item.id)) byId.set(item.id, item);
+  }
+  return [...byId.values()];
+})();
 
 function parseWavHeader(buffer) {
   if (buffer.length < 44) return null;
@@ -95,7 +177,8 @@ function parseWavHeader(buffer) {
 }
 
 function generate() {
-  console.log(`\n🎙️ بدء توليد العينة الصوتية المحدودة (52 عنصرًا) باستخدام محرك Piper محليًا\n`);
+  const force = process.argv.includes('--force');
+  console.log(`\n🎙️ بدء توليد الأصول الصوتية (${SAMPLE_ITEMS.length} عنصرًا) باستخدام محرك Piper محليًا\n`);
   const manifest = {};
   let totalBytes = 0;
   let totalDuration = 0;
@@ -106,18 +189,20 @@ function generate() {
     const wavName = `${item.id}.wav`;
     const wavPath = join(AUDIO_DIR, wavName);
 
-    // تشغيل Piper عبر تمرير النص إلى stdin
-    const proc = spawnSync(PIPER_EXE, [
-      '--model', MODEL_ONNX,
-      '--output_file', wavPath,
-    ], {
-      input: item.text,
-      encoding: 'utf-8',
-    });
+    if (force || !existsSync(wavPath)) {
+      const proc = spawnSync(
+        PIPER_EXE,
+        ['--model', MODEL_ONNX, '--output_file', wavPath],
+        {
+          input: item.text + '\n',
+          encoding: 'utf-8',
+        },
+      );
 
-    if (proc.error || proc.status !== 0) {
-      console.error(`❌ فشل توليد [${item.id}]:`, proc.stderr || proc.error);
-      throw new Error(`Piper generation failed for ${item.id}`);
+      if (proc.error || proc.status !== 0) {
+        console.error(`❌ فشل توليد [${item.id}]:`, proc.stderr || proc.error);
+        throw new Error(`Piper generation failed for ${item.id}`);
+      }
     }
 
     const fileBuf = readFileSync(wavPath);
@@ -138,8 +223,12 @@ function generate() {
       sampleRate: wavInfo.sampleRate,
     };
 
-    // إضافة مفتاح معلّق موازي إذا كان يطابق مفاتيح المحتوى (مثل pending/a1-cafe-...)
-    if (item.id.startsWith('a1-cafe-') || item.id.startsWith('cc1-')) {
+    if (
+      item.hasPendingAlias ||
+      item.id.startsWith('a1-') ||
+      item.id.startsWith('cc1-') ||
+      item.id.startsWith('prea1-')
+    ) {
       manifest[`pending/${item.id}`] = manifest[item.id];
     }
 
@@ -156,7 +245,6 @@ function generate() {
     console.log(`  ✓ [${i + 1}/${SAMPLE_ITEMS.length}] ${item.id} (${wavInfo.durationSec.toFixed(2)}s, ${Math.round(fileBuf.length / 1024)} KB)`);
   }
 
-  // حفظ سجل الأصول في src/web/audio/assetManifest.json
   writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8');
   console.log(`\n📄 كُتب بيان الأصول الصوتية: ${MANIFEST_PATH}`);
 
@@ -164,9 +252,9 @@ function generate() {
   console.log(`  • إجمالي الملفات المولدة: ${SAMPLE_ITEMS.length}`);
   console.log(`  • المدة الزمنية الكلية: ${totalDuration.toFixed(1)} ثانية (~${(totalDuration / 60).toFixed(1)} دقيقة)`);
   console.log(`  • الحجم الإجمالي على القرص: ${(totalBytes / 1024 / 1024).toFixed(2)} MB (صيغة WAV 22.05kHz 16-bit)`);
-  console.log(`  • الحجم التقديري إذا ضُغط بـ Opus (24kbps): ${(totalDuration * 3 / 1024).toFixed(2)} MB (~${Math.round(totalDuration * 3)} KB)`);
 
   return { generatedList, totalDuration, totalBytes };
 }
 
 generate();
+

@@ -116,6 +116,9 @@ export function PathMap({
     setOverrides(prev => ({ ...prev, [unit.id]: !isOpen(unit) }));
   };
 
+  const [guideOpenId, setGuideOpenId] = useState<string | null>(null);
+  const OPTIONAL_UNITS = new Set(['prea1-u1-sounds', 'prea1-u2-stress']);
+
   if (units.length === 0) {
     return (
       <div className="state-box">
@@ -155,12 +158,19 @@ export function PathMap({
         const allDone = unit.total > 0 && unit.completed === unit.total;
         const open = isOpen(unit);
         const isCurrent = unit.id === currentUnitId;
+        const isOptionalUnit =
+          OPTIONAL_UNITS.has(unit.id) ||
+          unit.lessons.some(l => OPTIONAL_UNITS.has(l.unit_slug ?? '')) ||
+          unit.title.includes('(اختياري)');
+        const guideOpen = guideOpenId === unit.id;
         const panelId = `unit-panel-${unit.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+        const stepOffsets = ['step-center', 'step-start', 'step-center', 'step-end'];
+
         return (
           <section
             className={`unit-block${unit.locked ? ' locked-unit' : ''}${open ? ' open' : ' collapsed'}${
               isCurrent ? ' is-current' : ''
-            }`}
+            }${isOptionalUnit ? ' is-optional-unit' : ''}`}
             key={unit.id}
             aria-label={`وحدة ${unitIndex + 1}: ${unit.title}`}
           >
@@ -169,10 +179,17 @@ export function PathMap({
                 <SceneIllustration kind={unit.scene} />
               </div>
               <div style={{ minWidth: 0 }}>
-                <h2>
-                  {unit.title}
-                  {isCurrent ? <span className="unit-now">وحدتك الآن</span> : null}
-                </h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+                  <h2>
+                    {unit.title}
+                    {isCurrent ? <span className="unit-now">وحدتك الآن</span> : null}
+                  </h2>
+                  {isOptionalUnit ? (
+                    <span className="badge info" style={{ fontSize: '0.72rem' }}>
+                      قسم نطق اختياري · غير مانع للتقدم
+                    </span>
+                  ) : null}
+                </div>
                 <p className="unit-sub">
                   وحدة {unitIndex + 1} · {unit.level || unit.programTitle}
                   {!open ? ` · ${unit.completed}/${unit.total} درسًا` : ''}
@@ -201,6 +218,16 @@ export function PathMap({
               <div className="unit-head-progress">
                 {open ? <ProgressBar value={pct} height={8} label={`تقدم وحدة ${unit.title}`} /> : null}
                 <span className="unit-count num">{unit.completed}/{unit.total}</span>
+                {open ? (
+                  <button
+                    type="button"
+                    className="btn ghost sm"
+                    style={{ padding: '4px 10px', fontSize: '0.76rem' }}
+                    onClick={() => setGuideOpenId(guideOpen ? null : unit.id)}
+                  >
+                    <Icon name="book" size={14} /> {guideOpen ? 'إخفاء الدليل' : 'دليل الوحدة'}
+                  </button>
+                ) : null}
               </div>
               <button
                 type="button"
@@ -222,6 +249,38 @@ export function PathMap({
               </button>
             </header>
 
+            {open && guideOpen ? (
+              <div
+                style={{
+                  margin: '0 18px 14px',
+                  padding: '14px 16px',
+                  borderRadius: 14,
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border-strong)',
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+                  <strong style={{ fontSize: '0.92rem', color: 'var(--primary-hover)' }}>
+                    📖 ملخص الوحدة وخطة التعلم
+                  </strong>
+                  <span className="badge neutral">{unit.lessons.length} محطات</span>
+                </div>
+                <p className="small" style={{ margin: '0 0 10px', color: 'var(--text-secondary)' }}>
+                  {unit.objectiveAr || 'تعلّم المفردات والتراكيب الأساسية في هذه الوحدة عبر مواقف تواصلية متدرجة.'}
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {unit.lessons.map((l, idx) => (
+                    <span
+                      key={l.slug}
+                      className={`badge ${l.progress_status === 'completed' ? 'success' : l.slug === nextSlug ? 'accent' : 'neutral'}`}
+                    >
+                      {idx + 1}. {l.title_ar}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
             {open ? (
             <div className="path-track-v" id={panelId}>
               {unit.lessons.map((lesson, i) => {
@@ -229,18 +288,30 @@ export function PathMap({
                 const current = !done && lesson.slug === nextSlug;
                 const inProgress = !done && lesson.progress_status === 'in_progress';
                 const locked = lesson.is_unlocked === false && !done;
+                const mastered = done && (lesson.best_accuracy ?? 0) >= 90;
                 const minutes = lesson.estimated_minutes ?? null;
-                const cls = ['node-row', done ? 'done' : '', current ? 'current' : '', locked ? 'locked' : '']
+                const offsetCls = stepOffsets[i % stepOffsets.length] ?? 'step-center';
+                const cls = ['node-row', offsetCls, done ? 'done' : '', current ? 'current' : '', locked ? 'locked' : '']
                   .filter(Boolean)
                   .join(' ');
-                const badge = done ? 'مكتمل' : current ? 'التالي' : inProgress ? 'قيد الحل' : locked ? 'مقفل' : 'متاح';
+                const badge = mastered
+                  ? 'متقن 👑'
+                  : done
+                    ? 'مكتمل'
+                    : current
+                      ? 'التالي ⚡'
+                      : inProgress
+                        ? 'قيد الحل'
+                        : locked
+                          ? 'مقفل'
+                          : 'متاح';
                 const prereqTitles = (lesson.missing_prerequisites ?? []).map(slug => titleBySlug[slug] ?? slug);
                 const note = locked
                   ? `يتطلب أولًا: ${prereqTitles.join('، ') || 'إتمام الدرس السابق'}`
                   : done
                     ? `أفضل نتيجة ${lesson.best_accuracy}% — الإعادة لا تمنح نقاطًا إضافية`
                     : current
-                      ? 'درسك التالي في المسار'
+                      ? 'درسك التالي في المسار — اضغط للبدء فورًا'
                       : inProgress
                         ? 'بدأت هذا الدرس ولم تُكمله'
                         : 'متاح للبدء الآن';
@@ -267,7 +338,12 @@ export function PathMap({
                     </button>
 
                     <div className="node-main">
-                      <b className="node-title">{lesson.title_ar}</b>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                        <b className="node-title">{lesson.title_ar}</b>
+                        {current ? (
+                          <span className="duo-start-pill">ابدأ هنا ⚡</span>
+                        ) : null}
+                      </div>
                       <div className="node-meta">
                         <span className={`node-badge${done ? ' done' : current ? ' current' : ''}`}>
                           {done ? <Icon name="check" size={12} /> : null}
@@ -313,18 +389,31 @@ export function PathMap({
                     <Icon name="star" size={22} />
                   </button>
                   <div className="node-main">
-                    <b className="node-title">محطة مراجعة الوحدة</b>
+                    <b className="node-title">محطة مراجعة الوحدة وتثبيت المفردات 🏆</b>
                     <p className="node-note">
                       {reviewDue > 0
                         ? `${reviewDue} بطاقة مستحقة الآن — ثبّت مفردات هذه الوحدة قبل التالي`
-                        : 'لا بطاقات مستحقة الآن — المراجعة تُفتح عند استحقاقها'}
+                        : 'أحسنت إتمام الوحدة! لا بطاقات مستحقة الآن — المراجعة تُفتح عند استحقاقها'}
                     </p>
                   </div>
                   <button type="button" className="btn sm secondary node-action" onClick={onOpenReview}>
                     <Icon name="cards" size={16} /> المراجعة
                   </button>
                 </div>
-              ) : null}
+              ) : (
+                <div className="node-row checkpoint-row locked" style={{ opacity: 0.78 }}>
+                  <span className="node-btn checkpoint" aria-hidden="true" style={{ filter: 'grayscale(0.5)' }}>
+                    <Icon name="trophy" size={20} />
+                  </span>
+                  <div className="node-main">
+                    <b className="node-title">تحدي ومراجعة نهاية الوحدة 🏆</b>
+                    <p className="node-note">
+                      يُفتح تلقائيًا بعد إكمال دروس هذه الوحدة ({unit.completed}/{unit.total} مكتمل) لتثبيت الكلمات والمهارات.
+                    </p>
+                  </div>
+                  <span className="badge neutral">محطة التتويج</span>
+                </div>
+              )}
             </div>
             ) : null}
           </section>
@@ -351,3 +440,4 @@ export function PathMap({
     </div>
   );
 }
+

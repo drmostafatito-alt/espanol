@@ -502,5 +502,1461 @@
     "durationMs": 6632,
     "sizeBytes": 292512,
     "sampleRate": 22050
+  },
+  "vocab-hola": {
+    "file": "vocab-hola.wav",
+    "text": "Hola",
+    "category": "core_vocab",
+    "durationMs": 641,
+    "sizeBytes": 28320,
+    "sampleRate": 22050
+  },
+  "vocab-gracias": {
+    "file": "vocab-gracias.wav",
+    "text": "Gracias",
+    "category": "core_vocab",
+    "durationMs": 955,
+    "sizeBytes": 42144,
+    "sampleRate": 22050
+  },
+  "vocab-me-llamo": {
+    "file": "vocab-me-llamo.wav",
+    "text": "Me llamo",
+    "category": "core_vocab",
+    "durationMs": 815,
+    "sizeBytes": 36000,
+    "sampleRate": 22050
+  },
+  "vocab-mucho-gusto": {
+    "file": "vocab-mucho-gusto.wav",
+    "text": "Mucho gusto",
+    "category": "core_vocab",
+    "durationMs": 1024,
+    "sizeBytes": 45216,
+    "sampleRate": 22050
+  },
+  "vocab-hasta-luego": {
+    "file": "vocab-hasta-luego.wav",
+    "text": "Hasta luego",
+    "category": "core_vocab",
+    "durationMs": 862,
+    "sizeBytes": 38048,
+    "sampleRate": 22050
+  },
+  "vocab-buenas-tardes": {
+    "file": "vocab-buenas-tardes.wav",
+    "text": "Buenas tardes",
+    "category": "core_vocab",
+    "durationMs": 1152,
+    "sizeBytes": 50848,
+    "sampleRate": 22050
+  },
+  "vocab-como-estas": {
+    "file": "vocab-como-estas.wav",
+    "text": "¿Cómo estás?",
+    "category": "core_vocab",
+    "durationMs": 1140,
+    "sizeBytes": 50336,
+    "sampleRate": 22050
+  },
+  "vocab-muy-bien": {
+    "file": "vocab-muy-bien.wav",
+    "text": "Muy bien",
+    "category": "core_vocab",
+    "durationMs": 815,
+    "sizeBytes": 36000,
+    "sampleRate": 22050
+  },
+  "vocab-mas-o-menos": {
+    "file": "vocab-mas-o-menos.wav",
+    "text": "Más o menos",
+    "category": "core_vocab",
+    "durationMs": 1129,
+    "sizeBytes": 49824,
+    "sampleRate": 22050
+  },
+  "vocab-soy-de-egipto": {
+    "file": "vocab-soy-de-egipto.wav",
+    "text": "Soy de Egipto",
+    "category": "core_vocab",
+    "durationMs": 1175,
+    "sizeBytes": 51872,
+    "sampleRate": 22050
+  },
+  "vocab-hablo-espanol": {
+    "file": "vocab-hablo-espanol.wav",
+    "text": "Hablo español",
+    "category": "core_vocab",
+    "durationMs": 1187,
+    "sizeBytes": 52384,
+    "sampleRate": 22050
+  },
+  "vocab-quiero": {
+    "file": "vocab-quiero.wav",
+    "text": "Quiero",
+    "category": "core_vocab",
+    "durationMs": 653,
+    "sizeBytes": 28832,
+    "sampleRate": 22050
+  },
+  "vocab-necesito": {
+    "file": "vocab-necesito.wav",
+    "text": "Necesito",
+    "category": "core_vocab",
+    "durationMs": 1082,
+    "sizeBytes": 47776,
+    "sampleRate": 22050
+  },
+  "vocab-la-cuenta": {
+    "file": "vocab-la-cuenta.wav",
+    "text": "La cuenta, por favor",
+    "category": "core_vocab",
+    "durationMs": 1419,
+    "sizeBytes": 62624,
+    "sampleRate": 22050
+  },
+  "prea1-abecedario-ana": {
+    "file": "prea1-abecedario-ana.wav",
+    "text": "Hola. Me llamo Ana.",
+    "category": "lesson_dialogue",
+    "durationMs": 1712,
+    "sizeBytes": 75540,
+    "sampleRate": 22050
+  },
+  "pending/prea1-abecedario-ana": {
+    "file": "prea1-abecedario-ana.wav",
+    "text": "Hola. Me llamo Ana.",
+    "category": "lesson_dialogue",
+    "durationMs": 1712,
+    "sizeBytes": 75540,
+    "sampleRate": 22050
+  },
+  "prea1-abecedario-spelling": {
+    "file": "prea1-abecedario-spelling.wav",
+    "text": "Mi nombre es Ana: a, ene, a.",
+    "category": "lesson_dialogue",
+    "durationMs": 2452,
+    "sizeBytes": 108192,
+    "sampleRate": 22050
+  },
+  "pending/prea1-abecedario-spelling": {
+    "file": "prea1-abecedario-spelling.wav",
+    "text": "Mi nombre es Ana: a, ene, a.",
+    "category": "lesson_dialogue",
+    "durationMs": 2452,
+    "sizeBytes": 108192,
+    "sampleRate": 22050
+  },
+  "prea1-abecedario-ex1": {
+    "file": "prea1-abecedario-ex1.wav",
+    "text": "Hola.",
+    "category": "lesson_exercise",
+    "durationMs": 676,
+    "sizeBytes": 29856,
+    "sampleRate": 22050
+  },
+  "pending/prea1-abecedario-ex1": {
+    "file": "prea1-abecedario-ex1.wav",
+    "text": "Hola.",
+    "category": "lesson_exercise",
+    "durationMs": 676,
+    "sizeBytes": 29856,
+    "sampleRate": 22050
+  },
+  "prea1-abecedario-ex7": {
+    "file": "prea1-abecedario-ex7.wav",
+    "text": "Me llamo Ana.",
+    "category": "lesson_exercise",
+    "durationMs": 978,
+    "sizeBytes": 43168,
+    "sampleRate": 22050
+  },
+  "pending/prea1-abecedario-ex7": {
+    "file": "prea1-abecedario-ex7.wav",
+    "text": "Me llamo Ana.",
+    "category": "lesson_exercise",
+    "durationMs": 978,
+    "sizeBytes": 43168,
+    "sampleRate": 22050
+  },
+  "prea1-acento-mama": {
+    "file": "prea1-acento-mama.wav",
+    "text": "Mamá lleva tilde. Casa no lleva tilde.",
+    "category": "lesson_dialogue",
+    "durationMs": 2699,
+    "sizeBytes": 119060,
+    "sampleRate": 22050
+  },
+  "pending/prea1-acento-mama": {
+    "file": "prea1-acento-mama.wav",
+    "text": "Mamá lleva tilde. Casa no lleva tilde.",
+    "category": "lesson_dialogue",
+    "durationMs": 2699,
+    "sizeBytes": 119060,
+    "sampleRate": 22050
+  },
+  "prea1-acento-cafe": {
+    "file": "prea1-acento-cafe.wav",
+    "text": "El café es bueno. La música es bonita.",
+    "category": "lesson_dialogue",
+    "durationMs": 3233,
+    "sizeBytes": 142612,
+    "sampleRate": 22050
+  },
+  "pending/prea1-acento-cafe": {
+    "file": "prea1-acento-cafe.wav",
+    "text": "El café es bueno. La música es bonita.",
+    "category": "lesson_dialogue",
+    "durationMs": 3233,
+    "sizeBytes": 142612,
+    "sampleRate": 22050
+  },
+  "prea1-acento-ex1": {
+    "file": "prea1-acento-ex1.wav",
+    "text": "Mamá.",
+    "category": "lesson_exercise",
+    "durationMs": 699,
+    "sizeBytes": 30880,
+    "sampleRate": 22050
+  },
+  "pending/prea1-acento-ex1": {
+    "file": "prea1-acento-ex1.wav",
+    "text": "Mamá.",
+    "category": "lesson_exercise",
+    "durationMs": 699,
+    "sizeBytes": 30880,
+    "sampleRate": 22050
+  },
+  "prea1-acento-ex6": {
+    "file": "prea1-acento-ex6.wav",
+    "text": "El café es bueno.",
+    "category": "lesson_exercise",
+    "durationMs": 1442,
+    "sizeBytes": 63648,
+    "sampleRate": 22050
+  },
+  "pending/prea1-acento-ex6": {
+    "file": "prea1-acento-ex6.wav",
+    "text": "El café es bueno.",
+    "category": "lesson_exercise",
+    "durationMs": 1442,
+    "sizeBytes": 63648,
+    "sampleRate": 22050
+  },
+  "prea1-acento-ex7": {
+    "file": "prea1-acento-ex7.wav",
+    "text": "Mamá, papá, café.",
+    "category": "lesson_exercise",
+    "durationMs": 1419,
+    "sizeBytes": 62624,
+    "sampleRate": 22050
+  },
+  "pending/prea1-acento-ex7": {
+    "file": "prea1-acento-ex7.wav",
+    "text": "Mamá, papá, café.",
+    "category": "lesson_exercise",
+    "durationMs": 1419,
+    "sizeBytes": 62624,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-hoy": {
+    "file": "prea1-como-estas-hoy.wav",
+    "text": "Hola, ¿cómo estás hoy?",
+    "category": "lesson_dialogue",
+    "durationMs": 1640,
+    "sizeBytes": 72352,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-hoy": {
+    "file": "prea1-como-estas-hoy.wav",
+    "text": "Hola, ¿cómo estás hoy?",
+    "category": "lesson_dialogue",
+    "durationMs": 1640,
+    "sizeBytes": 72352,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-bien": {
+    "file": "prea1-como-estas-bien.wav",
+    "text": "Muy bien, gracias. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2153,
+    "sizeBytes": 94996,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-bien": {
+    "file": "prea1-como-estas-bien.wav",
+    "text": "Muy bien, gracias. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2153,
+    "sizeBytes": 94996,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-mas-o-menos": {
+    "file": "prea1-como-estas-mas-o-menos.wav",
+    "text": "Más o menos, gracias.",
+    "category": "lesson_dialogue",
+    "durationMs": 1558,
+    "sizeBytes": 68768,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-mas-o-menos": {
+    "file": "prea1-como-estas-mas-o-menos.wav",
+    "text": "Más o menos, gracias.",
+    "category": "lesson_dialogue",
+    "durationMs": 1558,
+    "sizeBytes": 68768,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-ex1": {
+    "file": "prea1-como-estas-ex1.wav",
+    "text": "¿Cómo estás?",
+    "category": "lesson_exercise",
+    "durationMs": 1152,
+    "sizeBytes": 50848,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-ex1": {
+    "file": "prea1-como-estas-ex1.wav",
+    "text": "¿Cómo estás?",
+    "category": "lesson_exercise",
+    "durationMs": 1152,
+    "sizeBytes": 50848,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-ex6": {
+    "file": "prea1-como-estas-ex6.wav",
+    "text": "Más o menos, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 1593,
+    "sizeBytes": 70304,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-ex6": {
+    "file": "prea1-como-estas-ex6.wav",
+    "text": "Más o menos, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 1593,
+    "sizeBytes": 70304,
+    "sampleRate": 22050
+  },
+  "prea1-como-estas-ex7": {
+    "file": "prea1-como-estas-ex7.wav",
+    "text": "¿Cómo estás? Muy bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 2478,
+    "sizeBytes": 109332,
+    "sampleRate": 22050
+  },
+  "pending/prea1-como-estas-ex7": {
+    "file": "prea1-como-estas-ex7.wav",
+    "text": "¿Cómo estás? Muy bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 2478,
+    "sizeBytes": 109332,
+    "sampleRate": 22050
+  },
+  "prea1-entonacion-pregunta": {
+    "file": "prea1-entonacion-pregunta.wav",
+    "text": "¿Cómo estás? ¿Mamá está en casa?",
+    "category": "lesson_dialogue",
+    "durationMs": 2420,
+    "sizeBytes": 106772,
+    "sampleRate": 22050
+  },
+  "pending/prea1-entonacion-pregunta": {
+    "file": "prea1-entonacion-pregunta.wav",
+    "text": "¿Cómo estás? ¿Mamá está en casa?",
+    "category": "lesson_dialogue",
+    "durationMs": 2420,
+    "sizeBytes": 106772,
+    "sampleRate": 22050
+  },
+  "prea1-entonacion-respuesta": {
+    "file": "prea1-entonacion-respuesta.wav",
+    "text": "Muy bien, gracias. Mamá está en casa.",
+    "category": "lesson_dialogue",
+    "durationMs": 2641,
+    "sizeBytes": 116500,
+    "sampleRate": 22050
+  },
+  "pending/prea1-entonacion-respuesta": {
+    "file": "prea1-entonacion-respuesta.wav",
+    "text": "Muy bien, gracias. Mamá está en casa.",
+    "category": "lesson_dialogue",
+    "durationMs": 2641,
+    "sizeBytes": 116500,
+    "sampleRate": 22050
+  },
+  "prea1-entonacion-ex1": {
+    "file": "prea1-entonacion-ex1.wav",
+    "text": "¿Cómo estás?",
+    "category": "lesson_exercise",
+    "durationMs": 1129,
+    "sizeBytes": 49824,
+    "sampleRate": 22050
+  },
+  "pending/prea1-entonacion-ex1": {
+    "file": "prea1-entonacion-ex1.wav",
+    "text": "¿Cómo estás?",
+    "category": "lesson_exercise",
+    "durationMs": 1129,
+    "sizeBytes": 49824,
+    "sampleRate": 22050
+  },
+  "prea1-entonacion-ex6": {
+    "file": "prea1-entonacion-ex6.wav",
+    "text": "Bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 1164,
+    "sizeBytes": 51360,
+    "sampleRate": 22050
+  },
+  "pending/prea1-entonacion-ex6": {
+    "file": "prea1-entonacion-ex6.wav",
+    "text": "Bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 1164,
+    "sizeBytes": 51360,
+    "sampleRate": 22050
+  },
+  "prea1-entonacion-ex7": {
+    "file": "prea1-entonacion-ex7.wav",
+    "text": "¿Cómo estás? Bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 2350,
+    "sizeBytes": 103700,
+    "sampleRate": 22050
+  },
+  "pending/prea1-entonacion-ex7": {
+    "file": "prea1-entonacion-ex7.wav",
+    "text": "¿Cómo estás? Bien, gracias.",
+    "category": "lesson_exercise",
+    "durationMs": 2350,
+    "sizeBytes": 103700,
+    "sampleRate": 22050
+  },
+  "prea1-h-muda-omar": {
+    "file": "prea1-h-muda-omar.wav",
+    "text": "Hola, soy Omar. Mi hermano habla español.",
+    "category": "lesson_dialogue",
+    "durationMs": 2931,
+    "sizeBytes": 129300,
+    "sampleRate": 22050
+  },
+  "pending/prea1-h-muda-omar": {
+    "file": "prea1-h-muda-omar.wav",
+    "text": "Hola, soy Omar. Mi hermano habla español.",
+    "category": "lesson_dialogue",
+    "durationMs": 2931,
+    "sizeBytes": 129300,
+    "sampleRate": 22050
+  },
+  "prea1-h-muda-hotel": {
+    "file": "prea1-h-muda-hotel.wav",
+    "text": "Hola, Omar. El hotel es grande.",
+    "category": "lesson_dialogue",
+    "durationMs": 2606,
+    "sizeBytes": 114964,
+    "sampleRate": 22050
+  },
+  "pending/prea1-h-muda-hotel": {
+    "file": "prea1-h-muda-hotel.wav",
+    "text": "Hola, Omar. El hotel es grande.",
+    "category": "lesson_dialogue",
+    "durationMs": 2606,
+    "sizeBytes": 114964,
+    "sampleRate": 22050
+  },
+  "prea1-h-muda-ex1": {
+    "file": "prea1-h-muda-ex1.wav",
+    "text": "Hola.",
+    "category": "lesson_exercise",
+    "durationMs": 606,
+    "sizeBytes": 26784,
+    "sampleRate": 22050
+  },
+  "pending/prea1-h-muda-ex1": {
+    "file": "prea1-h-muda-ex1.wav",
+    "text": "Hola.",
+    "category": "lesson_exercise",
+    "durationMs": 606,
+    "sizeBytes": 26784,
+    "sampleRate": 22050
+  },
+  "prea1-h-muda-ex6": {
+    "file": "prea1-h-muda-ex6.wav",
+    "text": "Mi hermano habla español.",
+    "category": "lesson_exercise",
+    "durationMs": 1640,
+    "sizeBytes": 72352,
+    "sampleRate": 22050
+  },
+  "pending/prea1-h-muda-ex6": {
+    "file": "prea1-h-muda-ex6.wav",
+    "text": "Mi hermano habla español.",
+    "category": "lesson_exercise",
+    "durationMs": 1640,
+    "sizeBytes": 72352,
+    "sampleRate": 22050
+  },
+  "prea1-h-muda-ex7": {
+    "file": "prea1-h-muda-ex7.wav",
+    "text": "Hola. El hotel es grande.",
+    "category": "lesson_exercise",
+    "durationMs": 2153,
+    "sizeBytes": 94996,
+    "sampleRate": 22050
+  },
+  "pending/prea1-h-muda-ex7": {
+    "file": "prea1-h-muda-ex7.wav",
+    "text": "Hola. El hotel es grande.",
+    "category": "lesson_exercise",
+    "durationMs": 2153,
+    "sizeBytes": 94996,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-buenos-dias": {
+    "file": "prea1-hola-me-llamo-buenos-dias.wav",
+    "text": "¡Hola! Buenos días.",
+    "category": "lesson_dialogue",
+    "durationMs": 1770,
+    "sizeBytes": 78100,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-buenos-dias": {
+    "file": "prea1-hola-me-llamo-buenos-dias.wav",
+    "text": "¡Hola! Buenos días.",
+    "category": "lesson_dialogue",
+    "durationMs": 1770,
+    "sizeBytes": 78100,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-omar": {
+    "file": "prea1-hola-me-llamo-omar.wav",
+    "text": "Hola. Me llamo Omar.",
+    "category": "lesson_dialogue",
+    "durationMs": 1758,
+    "sizeBytes": 77588,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-omar": {
+    "file": "prea1-hola-me-llamo-omar.wav",
+    "text": "Hola. Me llamo Omar.",
+    "category": "lesson_dialogue",
+    "durationMs": 1758,
+    "sizeBytes": 77588,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-laila": {
+    "file": "prea1-hola-me-llamo-laila.wav",
+    "text": "Mucho gusto, Omar. Me llamo Laila.",
+    "category": "lesson_dialogue",
+    "durationMs": 2281,
+    "sizeBytes": 100628,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-laila": {
+    "file": "prea1-hola-me-llamo-laila.wav",
+    "text": "Mucho gusto, Omar. Me llamo Laila.",
+    "category": "lesson_dialogue",
+    "durationMs": 2281,
+    "sizeBytes": 100628,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-luego": {
+    "file": "prea1-hola-me-llamo-luego.wav",
+    "text": "Gracias. Hasta luego.",
+    "category": "lesson_dialogue",
+    "durationMs": 1921,
+    "sizeBytes": 84756,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-luego": {
+    "file": "prea1-hola-me-llamo-luego.wav",
+    "text": "Gracias. Hasta luego.",
+    "category": "lesson_dialogue",
+    "durationMs": 1921,
+    "sizeBytes": 84756,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-ex1": {
+    "file": "prea1-hola-me-llamo-ex1.wav",
+    "text": "Hola, me llamo Omar.",
+    "category": "lesson_exercise",
+    "durationMs": 1419,
+    "sizeBytes": 62624,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-ex1": {
+    "file": "prea1-hola-me-llamo-ex1.wav",
+    "text": "Hola, me llamo Omar.",
+    "category": "lesson_exercise",
+    "durationMs": 1419,
+    "sizeBytes": 62624,
+    "sampleRate": 22050
+  },
+  "prea1-hola-me-llamo-ex7": {
+    "file": "prea1-hola-me-llamo-ex7.wav",
+    "text": "Hola, me llamo Omar. Mucho gusto.",
+    "category": "lesson_exercise",
+    "durationMs": 2583,
+    "sizeBytes": 113940,
+    "sampleRate": 22050
+  },
+  "pending/prea1-hola-me-llamo-ex7": {
+    "file": "prea1-hola-me-llamo-ex7.wav",
+    "text": "Hola, me llamo Omar. Mucho gusto.",
+    "category": "lesson_exercise",
+    "durationMs": 2583,
+    "sizeBytes": 113940,
+    "sampleRate": 22050
+  },
+  "prea1-numeros-cinco": {
+    "file": "prea1-numeros-cinco.wav",
+    "text": "Uno, dos, tres, cuatro, cinco.",
+    "category": "lesson_dialogue",
+    "durationMs": 2000,
+    "sizeBytes": 88224,
+    "sampleRate": 22050
+  },
+  "pending/prea1-numeros-cinco": {
+    "file": "prea1-numeros-cinco.wav",
+    "text": "Uno, dos, tres, cuatro, cinco.",
+    "category": "lesson_dialogue",
+    "durationMs": 2000,
+    "sizeBytes": 88224,
+    "sampleRate": 22050
+  },
+  "prea1-numeros-diez": {
+    "file": "prea1-numeros-diez.wav",
+    "text": "Seis, siete, ocho, nueve, diez.",
+    "category": "lesson_dialogue",
+    "durationMs": 2359,
+    "sizeBytes": 104096,
+    "sampleRate": 22050
+  },
+  "pending/prea1-numeros-diez": {
+    "file": "prea1-numeros-diez.wav",
+    "text": "Seis, siete, ocho, nueve, diez.",
+    "category": "lesson_dialogue",
+    "durationMs": 2359,
+    "sizeBytes": 104096,
+    "sampleRate": 22050
+  },
+  "prea1-numeros-ex1": {
+    "file": "prea1-numeros-ex1.wav",
+    "text": "Tres.",
+    "category": "lesson_exercise",
+    "durationMs": 815,
+    "sizeBytes": 36000,
+    "sampleRate": 22050
+  },
+  "pending/prea1-numeros-ex1": {
+    "file": "prea1-numeros-ex1.wav",
+    "text": "Tres.",
+    "category": "lesson_exercise",
+    "durationMs": 815,
+    "sizeBytes": 36000,
+    "sampleRate": 22050
+  },
+  "prea1-numeros-ex2": {
+    "file": "prea1-numeros-ex2.wav",
+    "text": "Ocho.",
+    "category": "lesson_exercise",
+    "durationMs": 722,
+    "sizeBytes": 31904,
+    "sampleRate": 22050
+  },
+  "pending/prea1-numeros-ex2": {
+    "file": "prea1-numeros-ex2.wav",
+    "text": "Ocho.",
+    "category": "lesson_exercise",
+    "durationMs": 722,
+    "sizeBytes": 31904,
+    "sampleRate": 22050
+  },
+  "prea1-numeros-ex7": {
+    "file": "prea1-numeros-ex7.wav",
+    "text": "Uno, dos, tres, cuatro, cinco.",
+    "category": "lesson_exercise",
+    "durationMs": 2011,
+    "sizeBytes": 88736,
+    "sampleRate": 22050
+  },
+  "pending/prea1-numeros-ex7": {
+    "file": "prea1-numeros-ex7.wav",
+    "text": "Uno, dos, tres, cuatro, cinco.",
+    "category": "lesson_exercise",
+    "durationMs": 2011,
+    "sizeBytes": 88736,
+    "sampleRate": 22050
+  },
+  "prea1-practica-laila": {
+    "file": "prea1-practica-laila.wav",
+    "text": "¡Hola! Buenos días. Me llamo Laila.",
+    "category": "lesson_dialogue",
+    "durationMs": 3015,
+    "sizeBytes": 133000,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-laila": {
+    "file": "prea1-practica-laila.wav",
+    "text": "¡Hola! Buenos días. Me llamo Laila.",
+    "category": "lesson_dialogue",
+    "durationMs": 3015,
+    "sizeBytes": 133000,
+    "sampleRate": 22050
+  },
+  "prea1-practica-omar": {
+    "file": "prea1-practica-omar.wav",
+    "text": "Hola, Laila. Soy Omar. Soy de Egipto.",
+    "category": "lesson_dialogue",
+    "durationMs": 3352,
+    "sizeBytes": 147848,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-omar": {
+    "file": "prea1-practica-omar.wav",
+    "text": "Hola, Laila. Soy Omar. Soy de Egipto.",
+    "category": "lesson_dialogue",
+    "durationMs": 3352,
+    "sizeBytes": 147848,
+    "sampleRate": 22050
+  },
+  "prea1-practica-gusto": {
+    "file": "prea1-practica-gusto.wav",
+    "text": "Mucho gusto, Omar. ¿Cómo estás?",
+    "category": "lesson_dialogue",
+    "durationMs": 2269,
+    "sizeBytes": 100116,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-gusto": {
+    "file": "prea1-practica-gusto.wav",
+    "text": "Mucho gusto, Omar. ¿Cómo estás?",
+    "category": "lesson_dialogue",
+    "durationMs": 2269,
+    "sizeBytes": 100116,
+    "sampleRate": 22050
+  },
+  "prea1-practica-luego": {
+    "file": "prea1-practica-luego.wav",
+    "text": "Muy bien, gracias. Hasta luego.",
+    "category": "lesson_dialogue",
+    "durationMs": 2281,
+    "sizeBytes": 100628,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-luego": {
+    "file": "prea1-practica-luego.wav",
+    "text": "Muy bien, gracias. Hasta luego.",
+    "category": "lesson_dialogue",
+    "durationMs": 2281,
+    "sizeBytes": 100628,
+    "sampleRate": 22050
+  },
+  "prea1-practica-ex1": {
+    "file": "prea1-practica-ex1.wav",
+    "text": "Hola, me llamo Laila.",
+    "category": "lesson_exercise",
+    "durationMs": 1524,
+    "sizeBytes": 67232,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-ex1": {
+    "file": "prea1-practica-ex1.wav",
+    "text": "Hola, me llamo Laila.",
+    "category": "lesson_exercise",
+    "durationMs": 1524,
+    "sizeBytes": 67232,
+    "sampleRate": 22050
+  },
+  "prea1-practica-ex7": {
+    "file": "prea1-practica-ex7.wav",
+    "text": "Hola, me llamo Laila. Soy de Egipto. Mucho gusto.",
+    "category": "lesson_exercise",
+    "durationMs": 3851,
+    "sizeBytes": 169864,
+    "sampleRate": 22050
+  },
+  "pending/prea1-practica-ex7": {
+    "file": "prea1-practica-ex7.wav",
+    "text": "Hola, me llamo Laila. Soy de Egipto. Mucho gusto.",
+    "category": "lesson_exercise",
+    "durationMs": 3851,
+    "sizeBytes": 169864,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-buenos-dias": {
+    "file": "prea1-saludos-buenos-dias.wav",
+    "text": "Buenos días, señora. Hola.",
+    "category": "lesson_dialogue",
+    "durationMs": 2083,
+    "sizeBytes": 91924,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-buenos-dias": {
+    "file": "prea1-saludos-buenos-dias.wav",
+    "text": "Buenos días, señora. Hola.",
+    "category": "lesson_dialogue",
+    "durationMs": 2083,
+    "sizeBytes": 91924,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-por-favor": {
+    "file": "prea1-saludos-por-favor.wav",
+    "text": "Un café, por favor.",
+    "category": "lesson_dialogue",
+    "durationMs": 1315,
+    "sizeBytes": 58016,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-por-favor": {
+    "file": "prea1-saludos-por-favor.wav",
+    "text": "Un café, por favor.",
+    "category": "lesson_dialogue",
+    "durationMs": 1315,
+    "sizeBytes": 58016,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-adios": {
+    "file": "prea1-saludos-adios.wav",
+    "text": "Gracias, señora. Adiós.",
+    "category": "lesson_dialogue",
+    "durationMs": 2211,
+    "sizeBytes": 97556,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-adios": {
+    "file": "prea1-saludos-adios.wav",
+    "text": "Gracias, señora. Adiós.",
+    "category": "lesson_dialogue",
+    "durationMs": 2211,
+    "sizeBytes": 97556,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-ex1": {
+    "file": "prea1-saludos-ex1.wav",
+    "text": "Buenos días.",
+    "category": "lesson_exercise",
+    "durationMs": 1187,
+    "sizeBytes": 52384,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-ex1": {
+    "file": "prea1-saludos-ex1.wav",
+    "text": "Buenos días.",
+    "category": "lesson_exercise",
+    "durationMs": 1187,
+    "sizeBytes": 52384,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-ex6": {
+    "file": "prea1-saludos-ex6.wav",
+    "text": "Un café, por favor.",
+    "category": "lesson_exercise",
+    "durationMs": 1291,
+    "sizeBytes": 56992,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-ex6": {
+    "file": "prea1-saludos-ex6.wav",
+    "text": "Un café, por favor.",
+    "category": "lesson_exercise",
+    "durationMs": 1291,
+    "sizeBytes": 56992,
+    "sampleRate": 22050
+  },
+  "prea1-saludos-ex7": {
+    "file": "prea1-saludos-ex7.wav",
+    "text": "Hola. Buenos días. Gracias. Adiós.",
+    "category": "lesson_exercise",
+    "durationMs": 3644,
+    "sizeBytes": 160764,
+    "sampleRate": 22050
+  },
+  "pending/prea1-saludos-ex7": {
+    "file": "prea1-saludos-ex7.wav",
+    "text": "Hola. Buenos días. Gracias. Adiós.",
+    "category": "lesson_exercise",
+    "durationMs": 3644,
+    "sizeBytes": 160764,
+    "sampleRate": 22050
+  },
+  "prea1-silabas-tomate": {
+    "file": "prea1-silabas-tomate.wav",
+    "text": "Tomate: to-ma-te. Tres sílabas.",
+    "category": "lesson_dialogue",
+    "durationMs": 2757,
+    "sizeBytes": 121620,
+    "sampleRate": 22050
+  },
+  "pending/prea1-silabas-tomate": {
+    "file": "prea1-silabas-tomate.wav",
+    "text": "Tomate: to-ma-te. Tres sílabas.",
+    "category": "lesson_dialogue",
+    "durationMs": 2757,
+    "sizeBytes": 121620,
+    "sampleRate": 22050
+  },
+  "prea1-silabas-casa": {
+    "file": "prea1-silabas-casa.wav",
+    "text": "Casa: ca-sa. Dos sílabas.",
+    "category": "lesson_dialogue",
+    "durationMs": 2548,
+    "sizeBytes": 112404,
+    "sampleRate": 22050
+  },
+  "pending/prea1-silabas-casa": {
+    "file": "prea1-silabas-casa.wav",
+    "text": "Casa: ca-sa. Dos sílabas.",
+    "category": "lesson_dialogue",
+    "durationMs": 2548,
+    "sizeBytes": 112404,
+    "sampleRate": 22050
+  },
+  "prea1-silabas-ex1": {
+    "file": "prea1-silabas-ex1.wav",
+    "text": "Tomate.",
+    "category": "lesson_exercise",
+    "durationMs": 757,
+    "sizeBytes": 33440,
+    "sampleRate": 22050
+  },
+  "pending/prea1-silabas-ex1": {
+    "file": "prea1-silabas-ex1.wav",
+    "text": "Tomate.",
+    "category": "lesson_exercise",
+    "durationMs": 757,
+    "sizeBytes": 33440,
+    "sampleRate": 22050
+  },
+  "prea1-silabas-ex6": {
+    "file": "prea1-silabas-ex6.wav",
+    "text": "Casa.",
+    "category": "lesson_exercise",
+    "durationMs": 734,
+    "sizeBytes": 32416,
+    "sampleRate": 22050
+  },
+  "pending/prea1-silabas-ex6": {
+    "file": "prea1-silabas-ex6.wav",
+    "text": "Casa.",
+    "category": "lesson_exercise",
+    "durationMs": 734,
+    "sizeBytes": 32416,
+    "sampleRate": 22050
+  },
+  "prea1-silabas-ex7": {
+    "file": "prea1-silabas-ex7.wav",
+    "text": "Ca-sa. To-ma-te. Man-za-na.",
+    "category": "lesson_exercise",
+    "durationMs": 2655,
+    "sizeBytes": 117128,
+    "sampleRate": 22050
+  },
+  "pending/prea1-silabas-ex7": {
+    "file": "prea1-silabas-ex7.wav",
+    "text": "Ca-sa. To-ma-te. Man-za-na.",
+    "category": "lesson_exercise",
+    "durationMs": 2655,
+    "sizeBytes": 117128,
+    "sampleRate": 22050
+  },
+  "prea1-soy-tengo-omar": {
+    "file": "prea1-soy-tengo-omar.wav",
+    "text": "Hola. Soy Omar. Soy egipcio.",
+    "category": "lesson_dialogue",
+    "durationMs": 2632,
+    "sizeBytes": 116104,
+    "sampleRate": 22050
+  },
+  "pending/prea1-soy-tengo-omar": {
+    "file": "prea1-soy-tengo-omar.wav",
+    "text": "Hola. Soy Omar. Soy egipcio.",
+    "category": "lesson_dialogue",
+    "durationMs": 2632,
+    "sizeBytes": 116104,
+    "sampleRate": 22050
+  },
+  "prea1-soy-tengo-estudiante": {
+    "file": "prea1-soy-tengo-estudiante.wav",
+    "text": "Soy estudiante. Tengo dos hermanos.",
+    "category": "lesson_dialogue",
+    "durationMs": 2583,
+    "sizeBytes": 113940,
+    "sampleRate": 22050
+  },
+  "pending/prea1-soy-tengo-estudiante": {
+    "file": "prea1-soy-tengo-estudiante.wav",
+    "text": "Soy estudiante. Tengo dos hermanos.",
+    "category": "lesson_dialogue",
+    "durationMs": 2583,
+    "sizeBytes": 113940,
+    "sampleRate": 22050
+  },
+  "prea1-soy-tengo-egipto": {
+    "file": "prea1-soy-tengo-egipto.wav",
+    "text": "Soy de Egipto. Tengo un gato.",
+    "category": "lesson_dialogue",
+    "durationMs": 2292,
+    "sizeBytes": 101140,
+    "sampleRate": 22050
+  },
+  "pending/prea1-soy-tengo-egipto": {
+    "file": "prea1-soy-tengo-egipto.wav",
+    "text": "Soy de Egipto. Tengo un gato.",
+    "category": "lesson_dialogue",
+    "durationMs": 2292,
+    "sizeBytes": 101140,
+    "sampleRate": 22050
+  },
+  "prea1-soy-tengo-ex1": {
+    "file": "prea1-soy-tengo-ex1.wav",
+    "text": "Soy egipcio.",
+    "category": "lesson_exercise",
+    "durationMs": 1117,
+    "sizeBytes": 49312,
+    "sampleRate": 22050
+  },
+  "pending/prea1-soy-tengo-ex1": {
+    "file": "prea1-soy-tengo-ex1.wav",
+    "text": "Soy egipcio.",
+    "category": "lesson_exercise",
+    "durationMs": 1117,
+    "sizeBytes": 49312,
+    "sampleRate": 22050
+  },
+  "prea1-soy-tengo-ex7": {
+    "file": "prea1-soy-tengo-ex7.wav",
+    "text": "Soy Omar. Soy egipcio. Tengo dos hermanos.",
+    "category": "lesson_exercise",
+    "durationMs": 3340,
+    "sizeBytes": 147336,
+    "sampleRate": 22050
+  },
+  "pending/prea1-soy-tengo-ex7": {
+    "file": "prea1-soy-tengo-ex7.wav",
+    "text": "Soy Omar. Soy egipcio. Tengo dos hermanos.",
+    "category": "lesson_exercise",
+    "durationMs": 3340,
+    "sizeBytes": 147336,
+    "sampleRate": 22050
+  },
+  "prea1-vocales-mama": {
+    "file": "prea1-vocales-mama.wav",
+    "text": "Mamá, mira: casa, mesa, luna.",
+    "category": "lesson_dialogue",
+    "durationMs": 2545,
+    "sizeBytes": 112288,
+    "sampleRate": 22050
+  },
+  "pending/prea1-vocales-mama": {
+    "file": "prea1-vocales-mama.wav",
+    "text": "Mamá, mira: casa, mesa, luna.",
+    "category": "lesson_dialogue",
+    "durationMs": 2545,
+    "sizeBytes": 112288,
+    "sampleRate": 22050
+  },
+  "prea1-vocales-cinco": {
+    "file": "prea1-vocales-cinco.wav",
+    "text": "Muy bien. A, e, i, o, u.",
+    "category": "lesson_dialogue",
+    "durationMs": 2211,
+    "sizeBytes": 97556,
+    "sampleRate": 22050
+  },
+  "pending/prea1-vocales-cinco": {
+    "file": "prea1-vocales-cinco.wav",
+    "text": "Muy bien. A, e, i, o, u.",
+    "category": "lesson_dialogue",
+    "durationMs": 2211,
+    "sizeBytes": 97556,
+    "sampleRate": 22050
+  },
+  "prea1-vocales-ex1": {
+    "file": "prea1-vocales-ex1.wav",
+    "text": "Casa.",
+    "category": "lesson_exercise",
+    "durationMs": 711,
+    "sizeBytes": 31392,
+    "sampleRate": 22050
+  },
+  "pending/prea1-vocales-ex1": {
+    "file": "prea1-vocales-ex1.wav",
+    "text": "Casa.",
+    "category": "lesson_exercise",
+    "durationMs": 711,
+    "sizeBytes": 31392,
+    "sampleRate": 22050
+  },
+  "prea1-vocales-ex6": {
+    "file": "prea1-vocales-ex6.wav",
+    "text": "Mamá.",
+    "category": "lesson_exercise",
+    "durationMs": 664,
+    "sizeBytes": 29344,
+    "sampleRate": 22050
+  },
+  "pending/prea1-vocales-ex6": {
+    "file": "prea1-vocales-ex6.wav",
+    "text": "Mamá.",
+    "category": "lesson_exercise",
+    "durationMs": 664,
+    "sizeBytes": 29344,
+    "sampleRate": 22050
+  },
+  "prea1-vocales-ex7": {
+    "file": "prea1-vocales-ex7.wav",
+    "text": "A, e, i, o, u.",
+    "category": "lesson_exercise",
+    "durationMs": 1384,
+    "sizeBytes": 61088,
+    "sampleRate": 22050
+  },
+  "pending/prea1-vocales-ex7": {
+    "file": "prea1-vocales-ex7.wav",
+    "text": "A, e, i, o, u.",
+    "category": "lesson_exercise",
+    "durationMs": 1384,
+    "sizeBytes": 61088,
+    "sampleRate": 22050
+  },
+  "a1-origen-sara-1": {
+    "file": "a1-origen-sara-1.wav",
+    "text": "¡Hola! Me llamo Sara. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2550,
+    "sizeBytes": 112520,
+    "sampleRate": 22050
+  },
+  "pending/a1-origen-sara-1": {
+    "file": "a1-origen-sara-1.wav",
+    "text": "¡Hola! Me llamo Sara. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2550,
+    "sizeBytes": 112520,
+    "sampleRate": 22050
+  },
+  "a1-origen-omar-1": {
+    "file": "a1-origen-omar-1.wav",
+    "text": "Hola, soy Omar. ¿De dónde eres?",
+    "category": "lesson_dialogue",
+    "durationMs": 2594,
+    "sizeBytes": 114452,
+    "sampleRate": 22050
+  },
+  "pending/a1-origen-omar-1": {
+    "file": "a1-origen-omar-1.wav",
+    "text": "Hola, soy Omar. ¿De dónde eres?",
+    "category": "lesson_dialogue",
+    "durationMs": 2594,
+    "sizeBytes": 114452,
+    "sampleRate": 22050
+  },
+  "a1-origen-sara-2": {
+    "file": "a1-origen-sara-2.wav",
+    "text": "Soy de España, de Madrid. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2385,
+    "sizeBytes": 105236,
+    "sampleRate": 22050
+  },
+  "pending/a1-origen-sara-2": {
+    "file": "a1-origen-sara-2.wav",
+    "text": "Soy de España, de Madrid. ¿Y tú?",
+    "category": "lesson_dialogue",
+    "durationMs": 2385,
+    "sizeBytes": 105236,
+    "sampleRate": 22050
+  },
+  "a1-origen-omar-2": {
+    "file": "a1-origen-omar-2.wav",
+    "text": "Soy de Egipto. Soy egipcio, de El Cairo.",
+    "category": "lesson_dialogue",
+    "durationMs": 3024,
+    "sizeBytes": 133396,
+    "sampleRate": 22050
+  },
+  "pending/a1-origen-omar-2": {
+    "file": "a1-origen-omar-2.wav",
+    "text": "Soy de Egipto. Soy egipcio, de El Cairo.",
+    "category": "lesson_dialogue",
+    "durationMs": 3024,
+    "sizeBytes": 133396,
+    "sampleRate": 22050
+  },
+  "a1-origen-11-model-1": {
+    "file": "a1-origen-11-model-1.wav",
+    "text": "Soy de Egipto. Soy egipcio.",
+    "category": "lesson_exercise",
+    "durationMs": 2304,
+    "sizeBytes": 101652,
+    "sampleRate": 22050
+  },
+  "pending/a1-origen-11-model-1": {
+    "file": "a1-origen-11-model-1.wav",
+    "text": "Soy de Egipto. Soy egipcio.",
+    "category": "lesson_exercise",
+    "durationMs": 2304,
+    "sizeBytes": 101652,
+    "sampleRate": 22050
+  },
+  "a1-saludos-recep-1": {
+    "file": "a1-saludos-recep-1.wav",
+    "text": "Buenos días. ¿En qué puedo ayudarle?",
+    "category": "lesson_dialogue",
+    "durationMs": 2629,
+    "sizeBytes": 115988,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-recep-1": {
+    "file": "a1-saludos-recep-1.wav",
+    "text": "Buenos días. ¿En qué puedo ayudarle?",
+    "category": "lesson_dialogue",
+    "durationMs": 2629,
+    "sizeBytes": 115988,
+    "sampleRate": 22050
+  },
+  "a1-saludos-omar-1": {
+    "file": "a1-saludos-omar-1.wav",
+    "text": "Buenos días, señora. Soy Omar. Traigo un documento para la oficina.",
+    "category": "lesson_dialogue",
+    "durationMs": 4547,
+    "sizeBytes": 200584,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-omar-1": {
+    "file": "a1-saludos-omar-1.wav",
+    "text": "Buenos días, señora. Soy Omar. Traigo un documento para la oficina.",
+    "category": "lesson_dialogue",
+    "durationMs": 4547,
+    "sizeBytes": 200584,
+    "sampleRate": 22050
+  },
+  "a1-saludos-recep-2": {
+    "file": "a1-saludos-recep-2.wav",
+    "text": "Encantada, señor. ¿Cómo está usted hoy?",
+    "category": "lesson_dialogue",
+    "durationMs": 2896,
+    "sizeBytes": 127764,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-recep-2": {
+    "file": "a1-saludos-recep-2.wav",
+    "text": "Encantada, señor. ¿Cómo está usted hoy?",
+    "category": "lesson_dialogue",
+    "durationMs": 2896,
+    "sizeBytes": 127764,
+    "sampleRate": 22050
+  },
+  "a1-saludos-omar-2": {
+    "file": "a1-saludos-omar-2.wav",
+    "text": "Muy bien, gracias. ¿Y usted?",
+    "category": "lesson_dialogue",
+    "durationMs": 2188,
+    "sizeBytes": 96532,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-omar-2": {
+    "file": "a1-saludos-omar-2.wav",
+    "text": "Muy bien, gracias. ¿Y usted?",
+    "category": "lesson_dialogue",
+    "durationMs": 2188,
+    "sizeBytes": 96532,
+    "sampleRate": 22050
+  },
+  "a1-saludos-recep-3": {
+    "file": "a1-saludos-recep-3.wav",
+    "text": "Con permiso, voy a llamar a mi compañera.",
+    "category": "lesson_dialogue",
+    "durationMs": 2348,
+    "sizeBytes": 103584,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-recep-3": {
+    "file": "a1-saludos-recep-3.wav",
+    "text": "Con permiso, voy a llamar a mi compañera.",
+    "category": "lesson_dialogue",
+    "durationMs": 2348,
+    "sizeBytes": 103584,
+    "sampleRate": 22050
+  },
+  "a1-saludos-11-model-1": {
+    "file": "a1-saludos-11-model-1.wav",
+    "text": "Buenos días, señora. Encantado, me llamo Omar. ¿Cómo está usted?",
+    "category": "lesson_exercise",
+    "durationMs": 4350,
+    "sizeBytes": 191880,
+    "sampleRate": 22050
+  },
+  "pending/a1-saludos-11-model-1": {
+    "file": "a1-saludos-11-model-1.wav",
+    "text": "Buenos días, señora. Encantado, me llamo Omar. ¿Cómo está usted?",
+    "category": "lesson_exercise",
+    "durationMs": 4350,
+    "sizeBytes": 191880,
+    "sampleRate": 22050
+  },
+  "a1-presentar-omar-1": {
+    "file": "a1-presentar-omar-1.wav",
+    "text": "Hola, Marta. Te presento a mi amiga Nour.",
+    "category": "lesson_dialogue",
+    "durationMs": 3035,
+    "sizeBytes": 133908,
+    "sampleRate": 22050
+  },
+  "pending/a1-presentar-omar-1": {
+    "file": "a1-presentar-omar-1.wav",
+    "text": "Hola, Marta. Te presento a mi amiga Nour.",
+    "category": "lesson_dialogue",
+    "durationMs": 3035,
+    "sizeBytes": 133908,
+    "sampleRate": 22050
+  },
+  "a1-presentar-marta-1": {
+    "file": "a1-presentar-marta-1.wav",
+    "text": "Encantada, Nour. ¿De dónde eres?",
+    "category": "lesson_dialogue",
+    "durationMs": 2594,
+    "sizeBytes": 114452,
+    "sampleRate": 22050
+  },
+  "pending/a1-presentar-marta-1": {
+    "file": "a1-presentar-marta-1.wav",
+    "text": "Encantada, Nour. ¿De dónde eres?",
+    "category": "lesson_dialogue",
+    "durationMs": 2594,
+    "sizeBytes": 114452,
+    "sampleRate": 22050
+  },
+  "a1-presentar-nour-1": {
+    "file": "a1-presentar-nour-1.wav",
+    "text": "Soy de Egipto, de Alejandría.",
+    "category": "lesson_dialogue",
+    "durationMs": 2046,
+    "sizeBytes": 90272,
+    "sampleRate": 22050
+  },
+  "pending/a1-presentar-nour-1": {
+    "file": "a1-presentar-nour-1.wav",
+    "text": "Soy de Egipto, de Alejandría.",
+    "category": "lesson_dialogue",
+    "durationMs": 2046,
+    "sizeBytes": 90272,
+    "sampleRate": 22050
+  },
+  "a1-presentar-omar-2": {
+    "file": "a1-presentar-omar-2.wav",
+    "text": "Ella es Marta, es de España.",
+    "category": "lesson_dialogue",
+    "durationMs": 1941,
+    "sizeBytes": 85664,
+    "sampleRate": 22050
+  },
+  "pending/a1-presentar-omar-2": {
+    "file": "a1-presentar-omar-2.wav",
+    "text": "Ella es Marta, es de España.",
+    "category": "lesson_dialogue",
+    "durationMs": 1941,
+    "sizeBytes": 85664,
+    "sampleRate": 22050
+  },
+  "a1-presentar-9-model-1": {
+    "file": "a1-presentar-9-model-1.wav",
+    "text": "Te presento a mi amigo Karim. Es de Egipto.",
+    "category": "lesson_exercise",
+    "durationMs": 3221,
+    "sizeBytes": 142100,
+    "sampleRate": 22050
+  },
+  "pending/a1-presentar-9-model-1": {
+    "file": "a1-presentar-9-model-1.wav",
+    "text": "Te presento a mi amigo Karim. Es de Egipto.",
+    "category": "lesson_exercise",
+    "durationMs": 3221,
+    "sizeBytes": 142100,
+    "sampleRate": 22050
+  },
+  "a1-nac-anna-1": {
+    "file": "a1-nac-anna-1.wav",
+    "text": "Hola, soy Anna. Soy alemana, de Múnich.",
+    "category": "lesson_dialogue",
+    "durationMs": 2885,
+    "sizeBytes": 127252,
+    "sampleRate": 22050
+  },
+  "pending/a1-nac-anna-1": {
+    "file": "a1-nac-anna-1.wav",
+    "text": "Hola, soy Anna. Soy alemana, de Múnich.",
+    "category": "lesson_dialogue",
+    "durationMs": 2885,
+    "sizeBytes": 127252,
+    "sampleRate": 22050
+  },
+  "a1-nac-marco-1": {
+    "file": "a1-nac-marco-1.wav",
+    "text": "Encantado. Yo soy Marco, italiano de Roma.",
+    "category": "lesson_dialogue",
+    "durationMs": 3035,
+    "sizeBytes": 133908,
+    "sampleRate": 22050
+  },
+  "pending/a1-nac-marco-1": {
+    "file": "a1-nac-marco-1.wav",
+    "text": "Encantado. Yo soy Marco, italiano de Roma.",
+    "category": "lesson_dialogue",
+    "durationMs": 3035,
+    "sizeBytes": 133908,
+    "sampleRate": 22050
+  },
+  "a1-nac-salma-1": {
+    "file": "a1-nac-salma-1.wav",
+    "text": "Y yo soy Salma. Soy marroquí, de Rabat.",
+    "category": "lesson_dialogue",
+    "durationMs": 2861,
+    "sizeBytes": 126228,
+    "sampleRate": 22050
+  },
+  "pending/a1-nac-salma-1": {
+    "file": "a1-nac-salma-1.wav",
+    "text": "Y yo soy Salma. Soy marroquí, de Rabat.",
+    "category": "lesson_dialogue",
+    "durationMs": 2861,
+    "sizeBytes": 126228,
+    "sampleRate": 22050
+  },
+  "a1-nac-omar-1": {
+    "file": "a1-nac-omar-1.wav",
+    "text": "¡Qué bien! Yo soy egipcio, de El Cairo.",
+    "category": "lesson_dialogue",
+    "durationMs": 2931,
+    "sizeBytes": 129300,
+    "sampleRate": 22050
+  },
+  "pending/a1-nac-omar-1": {
+    "file": "a1-nac-omar-1.wav",
+    "text": "¡Qué bien! Yo soy egipcio, de El Cairo.",
+    "category": "lesson_dialogue",
+    "durationMs": 2931,
+    "sizeBytes": 129300,
+    "sampleRate": 22050
+  },
+  "a1-nac-10-model-1": {
+    "file": "a1-nac-10-model-1.wav",
+    "text": "Soy egipcia, de El Cairo. Soy egipcia y hablo español.",
+    "category": "lesson_exercise",
+    "durationMs": 3732,
+    "sizeBytes": 164628,
+    "sampleRate": 22050
+  },
+  "pending/a1-nac-10-model-1": {
+    "file": "a1-nac-10-model-1.wav",
+    "text": "Soy egipcia, de El Cairo. Soy egipcia y hablo español.",
+    "category": "lesson_exercise",
+    "durationMs": 3732,
+    "sizeBytes": 164628,
+    "sampleRate": 22050
   }
 }

@@ -50,8 +50,8 @@ export interface PlayResult { ok: boolean; source: 'asset' | 'speech' | 'none'; 
 export interface AudioDeps {
   createAudio: (url: string) => AudioLike;
   speech: SpeechLike | null;
-  /** يحوّل مفتاح الأصل إلى رابط. يعيد null إن كان المفتاح معلَّقًا (pending/) */
-  resolveUrl: (key: string, variant?: string) => string | null;
+  /** يحوّل مفتاح الأصل (أو النص الإسباني المطبّع) إلى رابط. يعيد null إن لم يتوفر أصل جاهز */
+  resolveUrl: (key: string, variant?: string, text?: string) => string | null;
   now?: () => number;
   /** مهلة انتظار تحميل الأصل قبل الانتقال للبديل */
   loadTimeoutMs?: number;
@@ -152,7 +152,7 @@ export class AudioService {
     this.stop();
     const gen = this.gen;
 
-    const url = this.deps.resolveUrl(cue.key, cue.variant);
+    const url = this.deps.resolveUrl(cue.key, cue.variant, cue.text);
     if (url) {
       const res = await this.tryAsset(url, cue, gen);
       // طلب جديد/إيقاف حدث أثناء انتظار الأصل: لا بديل ولا نطق للنص القديم

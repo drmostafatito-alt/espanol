@@ -1212,10 +1212,20 @@ export async function myProgress(_req: Request, env: Env, requestId: string, use
     };
   });
 
-  // تحديد «خطوتك التالية»: أول درس متاح وغير مكتمل في المسار التعليمي
-  const nextLesson = lessons.find(l => l.program_slug === 'main-track' && l.progress_status !== 'completed' && l.is_unlocked)
-    ?? lessons.find(l => l.progress_status !== 'completed' && l.is_unlocked)
-    ?? null;
+  // تحديد «خطوتك التالية»: أول درس تواصلي عملي متاح وغير مكتمل في المسار الأساسي
+  // (مع جعل ملحقي الأبجدية والمقاطع الصوتية اختياريين غير مانعين للانتقال إلى A1).
+  const OPTIONAL_PHONETIC_UNITS = new Set(['prea1-u1-sounds', 'prea1-u2-stress']);
+  const nextLesson =
+    lessons.find(
+      l =>
+        l.program_slug === 'main-track' &&
+        !OPTIONAL_PHONETIC_UNITS.has(l.unit_slug) &&
+        l.progress_status !== 'completed' &&
+        l.is_unlocked,
+    ) ??
+    lessons.find(l => l.program_slug === 'main-track' && l.progress_status !== 'completed' && l.is_unlocked) ??
+    lessons.find(l => l.progress_status !== 'completed' && l.is_unlocked) ??
+    null;
 
   // AUD-11: السلسلة/الدقائق/المستقرة تُشتق من نشاط حقيقي لا من أعمدة لم تُحدَّث قط
   const derived = await derivedStats(env, user.id);

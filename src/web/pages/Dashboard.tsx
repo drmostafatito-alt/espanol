@@ -282,6 +282,86 @@ export function Dashboard({ navigate }: { navigate: (to: string) => void }) {
             </div>
           </div>
 
+          {/* ---------------- مهام وتحديات اليوم + ملحق الحروف الاختياري ---------------- */}
+          <div className="dash-columns" style={{ marginBottom: 'var(--s-4)' }}>
+            <section className="week-card duo-quests-card" aria-labelledby="daily-quests-title">
+              <div className="week-head">
+                <h2 id="daily-quests-title">⚡ تحديات ومهام اليوم</h2>
+                <span className="badge accent">
+                  {[todayLessons >= 1, todayMinutes >= goalMinutes, (progress.stats.reviews_done ?? 0) >= 1].filter(Boolean).length}/3 مكتمل
+                </span>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                <div className="duo-quest-row">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }}>
+                    <strong style={{ fontSize: '0.9rem' }}>🎯 أكمل درسًا عمليًا واحدًا اليوم</strong>
+                    <span className={`badge ${todayLessons >= 1 ? 'success' : 'neutral'} num`}>
+                      {Math.min(1, todayLessons)}/1 · +30 XP
+                    </span>
+                  </div>
+                  <ProgressBar value={todayLessons >= 1 ? 100 : 12} height={8} label="تقدم مهمة الدرس اليومي" />
+                </div>
+
+                <div className="duo-quest-row">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }}>
+                    <strong style={{ fontSize: '0.9rem' }}>🔥 حقق هدفك اليومي ({goalMinutes} دقائق)</strong>
+                    <span className={`badge ${goalPct >= 100 ? 'success' : 'neutral'} num`}>
+                      {todayMinutes}/{goalMinutes} د
+                    </span>
+                  </div>
+                  <ProgressBar value={goalPct} height={8} label="تقدم هدف الدقائق اليومي" />
+                </div>
+
+                <div className="duo-quest-row">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }}>
+                    <strong style={{ fontSize: '0.9rem' }}>🧠 راجع مفرداتك بالجدولة المتباعدة</strong>
+                    <span className={`badge ${(progress.stats.reviews_done ?? 0) >= 5 ? 'success' : 'neutral'} num`}>
+                      {Math.min(5, progress.stats.reviews_done ?? 0)}/5 مراجعات
+                    </span>
+                  </div>
+                  <ProgressBar
+                    value={Math.min(100, Math.round(((progress.stats.reviews_done ?? 0) / 5) * 100))}
+                    height={8}
+                    label="تقدم مهمة المراجعة الذكية"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section className="week-card duo-phonetics-helper" aria-labelledby="phonetics-helper-title">
+              <div className="week-head">
+                <h2 id="phonetics-helper-title">🔤 ملحق الحروف والنطق (اختياري)</h2>
+                <span className="badge info">غير مانع للتقدم</span>
+              </div>
+              <p className="small muted" style={{ margin: '0 0 12px', lineHeight: 1.65 }}>
+                منهجنا يبدأ معك مباشرةً بـ<b>المحادثات اليومية العملية</b> (التحية، التعارف، الشكر، الطلب في المقهى). إذا أردت مراجعة الحروف الأبجدية أو قواعد النطق الإسباني في أي وقت، فهي متاحة هنا كقسم مساعد حر دون أن تعطل تقدمك:
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                <button
+                  type="button"
+                  className="btn sm secondary"
+                  onClick={() => navigate('/learn/prea1-abecedario')}
+                >
+                  <Icon name="book" size={15} /> الأبجدية الإسبانية (A–Z)
+                </button>
+                <button
+                  type="button"
+                  className="btn sm secondary"
+                  onClick={() => navigate('/learn/prea1-h-muda')}
+                >
+                  <Icon name="volume" size={15} /> حرف H الصامت والأصوات
+                </button>
+                <button
+                  type="button"
+                  className="btn sm ghost"
+                  onClick={() => navigate('/listening')}
+                >
+                  <Icon name="headset" size={15} /> مختبر المقاطع والنطق
+                </button>
+              </div>
+            </section>
+          </div>
+
           {/* ---------------- إتقان المفردات والوصول السريع للمهارات ---------------- */}
           <div className="dash-columns">
             <section className="week-card" aria-labelledby="vocab-mastery-title">

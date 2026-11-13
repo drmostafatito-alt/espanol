@@ -23,6 +23,7 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
   const [domain, setDomain] = useState<'all' | ScenarioDomain>('all');
   const [rolePlayMode, setRolePlayMode] = useState<Record<string, boolean>>({});
   const [revealedLines, setRevealedLines] = useState<Record<string, number>>({});
+  const [quizChoice, setQuizChoice] = useState<Record<string, string>>({});
   const [showEg, setShowEg] = useState(user?.explanationStyle !== 'fusha');
 
   const load = useCallback(() => {
@@ -43,6 +44,13 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
 
   if (!user) return null;
 
+  const masteredScenariosCount = data
+    ? data.scenarios.filter(sc => {
+        const targetLine = sc.lines[Math.min(1, sc.lines.length - 1)];
+        return targetLine && quizChoice[sc.id] === targetLine.es;
+      }).length
+    : 0;
+
   return (
     <div className="hub-page">
       <header className="hub-hero">
@@ -50,12 +58,15 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
           <span className="continue-eyebrow">
             <Icon name="chat" size={14} /> مواقف التواصل الحقيقية
           </span>
-          <h1>المحادثات ومحاكاة الكول سنتر</h1>
+          <h1>المحادثات التفاعلية ومحاكاة الكول سنتر</h1>
           <p className="muted">
-            حوارات عملية جاهزة للاستماع وتمثيل الأدوار، مع مسار متخصص لخدمة العملاء من استقبال المكالمة حتى إغلاقها.
+            حوارات عملية جاهزة للاستماع، مع تحدي اختيار الرد المناسب في كل موقف ومسار متخصص لخدمة العملاء.
           </p>
         </div>
         <div className="hub-hero-actions">
+          <span className="badge success num" style={{ alignSelf: 'center' }}>
+            🏆 {masteredScenariosCount} موقف مُتقن في هذه الجلسة
+          </span>
           <button type="button" className="btn secondary" onClick={() => setShowEg(v => !v)}>
             {showEg ? 'عرض الفصحى فقط' : 'إظهار العامية المصرية'}
           </button>
@@ -118,9 +129,24 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
 
       {data && data.scenarios.length > 0 && (
         <div className="scenarios-list">
-          {data.scenarios.map(sc => {
+          {data.scenarios.map((sc, scIdx) => {
             const isRolePlay = !!rolePlayMode[sc.id];
             const visibleCount = isRolePlay ? (revealedLines[sc.id] ?? 1) : sc.lines.length;
+            const promptLine = sc.lines[0];
+            const replyLine = sc.lines[Math.min(1, sc.lines.length - 1)];
+            const otherScenario = data.scenarios[(scIdx + 1) % data.scenarios.length];
+            const distractor1 =
+              otherScenario?.lines[0]?.es && otherScenario.lines[0].es !== replyLine?.es
+                ? otherScenario.lines[0].es
+                : 'No sé dónde está la estación de tren.';
+            const distractor2 =
+              sc.lines.length > 2 && sc.lines[sc.lines.length - 1]?.es !== replyLine?.es
+                ? sc.lines[sc.lines.length - 1]!.es
+                : 'Perdón, ahora no puedo hablar.';
+            const options = replyLine ? [replyLine.es, distractor1, distractor2] : [];
+            const chosen = quizChoice[sc.id] ?? null;
+            const isCorrectChoice = chosen !== null && replyLine && chosen === replyLine.es;
+
             return (
               <article className="card scenario-card" key={sc.id}>
                 <div className="row" style={{ justifyContent: 'space-between', gap: 'var(--s-2)', flexWrap: 'wrap' }}>
@@ -128,6 +154,7 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
                     <LevelBadge level={sc.level} />
                     {sc.callCenterPhase && <span className="badge primary">{sc.callCenterPhase.labelAr}</span>}
                     <span className="small muted">{sc.settingAr}</span>
+                    {isCorrectChoice ? <span className="badge success">✓ أتقنت الرد</span> : null}
                   </div>
                   <div className="row" style={{ gap: 'var(--s-2)' }}>
                     <button
@@ -206,6 +233,64 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
                   </div>
                 )}
 
+                {/* تحدي الرد التفاعلي للمحادثة (§9) */}
+                {promptLine && replyLine && sc.lines.length >= 2 && (
+                  <div
+                    style={{
+                      marginTop: 'var(--s-3)',
+                      padding: '12px 14px',
+                      borderRadius: 14,
+                      background: 'var(--bg-subtle)',
+                      border: '1px solid var(--border-subtle)',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8, flexWrap: 'wrap', gap: 6 }}>
+                      <strong style={{ fontSize: '0.88rem', color: 'var(--text-primary)' }}>
+                        🎯 تمرين الرد التفاعلي: لو قال لك المتحدث «<span className="es" dir="ltr">{promptLine.es}</span>»، ما أنسب رد في هذا الموقف؟
+                      </strong>
+                      {chosen ? (
+                        <span className={`badge ${isCorrectChoice ? 'success' : 'danger'}`}>
+                          {isCorrectChoice ? 'إجابة صحيحة! +10 XP' : 'حاول مرة أخرى'}
+                        </span>
+                      ) : null}
+                    </div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                      {options.map((optEs, oIdx) => {
+                        const isSelected = chosen === optEs;
+                        const isRight = optEs === replyLine.es;
+                        return (
+                          <button
+                            key={oIdx}
+                            type="button"
+                            className={`btn sm ${
+                              isSelected
+                                ? isRight
+                                  ? 'primary'
+                                  : 'danger'
+                                : 'secondary'
+                            }`}
+                            onClick={() => {
+                              setQuizChoice(prev => ({ ...prev, [sc.id]: optEs }));
+                              if (isRight) {
+                                playLine(replyLine.audioKey || `${sc.id}-reply`, replyLine.es, 1.0);
+                              }
+                            }}
+                          >
+                            <span className="es" dir="ltr">{optEs}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                    {chosen && (
+                      <p className="small muted" style={{ margin: '8px 0 0' }}>
+                        {isCorrectChoice
+                          ? `أحسنت! المعنى: «${replyLine.ar}» — رد مناسب تمامًا لسياق «${sc.settingAr}».`
+                          : `الرد الأنسب في هذا السياق هو: «${replyLine.es}» بمعنى «${replyLine.ar}».`}
+                      </p>
+                    )}
+                  </div>
+                )}
+
                 {sc.keyPhrases.length > 0 && (
                   <div className="vocab-list" style={{ marginTop: 'var(--s-3)' }}>
                     {sc.keyPhrases.map((p, i) => (
@@ -235,3 +320,4 @@ export function Conversations({ navigate }: { navigate: (to: string) => void }) 
     </div>
   );
 }
+

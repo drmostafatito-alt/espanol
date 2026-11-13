@@ -1,7 +1,28 @@
 import { AudioService, type AudioLike, type SpeechLike, type SpeechSynthesisUtteranceLike } from './AudioService';
 import assetManifest from './assetManifest.json';
 
-const ASSET_MAP = assetManifest as Record<string, { file?: string } | undefined>;
+const ASSET_MAP = assetManifest as Record<string, { file?: string; text?: string } | undefined>;
+
+function normalizeAudioText(s: string | undefined): string {
+  if (!s) return '';
+  return s
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[¡!¿?.,;:()"'«»—–-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const TEXT_ASSET_MAP: Record<string, string> = {};
+for (const entry of Object.values(ASSET_MAP)) {
+  if (entry?.file && entry?.text) {
+    const norm = normalizeAudioText(entry.text);
+    if (norm && !TEXT_ASSET_MAP[norm]) {
+      TEXT_ASSET_MAP[norm] = entry.file;
+    }
+  }
+}
 
 /** ربط الخدمة ببيئة المتصفح — المُكوّنات لا تعرف تفاصيل الصوت */
 const MEDIA_ORIGIN = (import.meta.env.VITE_MEDIA_ORIGIN as string | undefined) ?? '';
@@ -186,22 +207,23 @@ function createSpeech(): BrowserSpeech | null {
 export const audioService = new AudioService({
   createAudio: url => new Audio(url) as unknown as AudioLike,
   speech: createSpeech(),
-  resolveUrl: (key, variant) => {
+  resolveUrl: (key, variant, text) => {
     if (!key) return null;
     const v = variant ?? 'es-ES';
 
-    // 1) فحص أصول الصوت المحلية المولدة مسبقًا بمحرك Piper
-    // الدروس تمرّر المفاتيح ببادئة pending/ بينما المانيفست مفهرس بلا بادئة،
-    // فكانت التسجيلات الحقيقية القليلة لا تُشغَّل أبدًا. تُجرَّد البادئة للبحث
-    // فقط: مفتاح pending صار له ملف ⇒ يُشغَّل الملف (AUD-09).
-    // الملفات المحلية بلهجة es-ES فقط (public/audio/es-ES). لمستخدم es-419
-    // كان يُبنى مسار /audio/es-419/… فيفشل بـ404 ثم يرتد للنطق بعد مهلة؛
-    // الأصح الانتقال مباشرة لنطق الجهاز بصوت أمريكي لاتيني.
     const manifestKey = key.startsWith('pending/') ? key.slice('pending/'.length) : key;
     const local = ASSET_MAP[manifestKey];
     if (local && local.file && v === 'es-ES') {
       const base = MEDIA_ORIGIN || '';
       return `${base}/audio/es-ES/${local.file}`;
+    }
+
+    if (text && v === 'es-ES') {
+      const matchedFile = TEXT_ASSET_MAP[normalizeAudioText(text)];
+      if (matchedFile) {
+        const base = MEDIA_ORIGIN || '';
+        return `${base}/audio/es-ES/${matchedFile}`;
+      }
     }
 
     // 2) المفاتيح المعلَّقة التي لم تولّد بعد أو مفاتيح TTS التلقائية: البديل المحلي speechSynthesis يعمل فورًا بلا طلب شبكة فاشل

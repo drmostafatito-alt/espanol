@@ -38,14 +38,129 @@
       "levels": [
         {
           "levelCode": "PREA1",
-          "titleAr": "تمهيد: أصوات وكتابة وأول جملة",
+          "titleAr": "تمهيد: التحية والتعريف بالنفس وأول العبارات العملية",
           "plannedLessonCount": 12,
           "vocabTarget": 60,
           "units": [
             {
+              "slug": "prea1-u4-first-sentence",
+              "titleAr": "أول محادثة: التحية والتعريف بالنفس",
+              "objectiveAr": "أن يكوّن المتعلم جملتين قصيرتين صحيحتين للتحية والتعريف بنفسه وبلده منذ اللحظة الأولى.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-hola-me-llamo",
+                  "titleAr": "أول كلمات: التحية والاسم",
+                  "objectiveAr": "أن يحيّي المتعلم شخصًا ويُعرّف بنفسه في جملتين قصيرتين، وأن يميّز أن حرف h في الإسبانية لا يُنطق.",
+                  "skills": [
+                    "listening",
+                    "reading",
+                    "speaking",
+                    "pronunciation"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد.",
+                  "filePath": "content/drafts/prea1/lesson-prea1-hola-me-llamo.json",
+                  "vocabPack": null,
+                  "requires": []
+                },
+                {
+                  "slug": "prea1-soy-tengo",
+                  "titleAr": "جملتان: أكون وعندي",
+                  "objectiveAr": "أن يفرّق المتعلم بين soy (أكون) و tengo (عندي) في جملة قصيرة عن نفسه.",
+                  "skills": [
+                    "grammar",
+                    "writing"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-soy-tengo.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-hola-me-llamo"
+                  ]
+                },
+                {
+                  "slug": "prea1-practica-integrada",
+                  "titleAr": "تدريب متكامل قصير",
+                  "objectiveAr": "أن يجمع المتعلم التحية والاسم والبلد في حوار من ثلاث جمل.",
+                  "skills": [
+                    "reading",
+                    "writing",
+                    "speaking"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-practica-integrada.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-soy-tengo"
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "prea1-u3-first-words",
+              "titleAr": "العبارات الأساسية والأرقام والأسئلة",
+              "objectiveAr": "أن يستخدم المتعلم كلمات التحية والشكر والطلب المؤدب والأرقام من 1 إلى 10 في موقف بسيط.",
+              "levelCode": "PREA1",
+              "plannedLessonCount": 3,
+              "lessons": [
+                {
+                  "slug": "prea1-saludos-basicos",
+                  "titleAr": "تحيات وأول عبارات",
+                  "objectiveAr": "أن يقول المتعلم ويفهم hola, adiós, gracias, por favor في موقف يومي.",
+                  "skills": [
+                    "listening",
+                    "speaking",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-saludos-basicos.json",
+                  "vocabPack": null,
+                  "requires": []
+                },
+                {
+                  "slug": "prea1-numeros-1-10",
+                  "titleAr": "الأرقام من 1 إلى 10",
+                  "objectiveAr": "أن يعدّ المتعلم من 1 إلى 10 ويفهم رقمًا مسموعًا.",
+                  "skills": [
+                    "listening",
+                    "vocabulary"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-numeros-1-10.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-saludos-basicos"
+                  ]
+                },
+                {
+                  "slug": "prea1-como-estas",
+                  "titleAr": "كيف حالك؟",
+                  "objectiveAr": "أن يسأل المتعلم ¿Cómo estás? ويجيب بـbien / mal / más o menos.",
+                  "skills": [
+                    "speaking",
+                    "listening"
+                  ],
+                  "status": "planned",
+                  "levelCode": "PREA1",
+                  "filePath": "content/drafts/prea1/lesson-prea1-como-estas.json",
+                  "vocabPack": null,
+                  "requires": [
+                    "prea1-numeros-1-10"
+                  ]
+                }
+              ]
+            },
+            {
               "slug": "prea1-u1-sounds",
-              "titleAr": "أصوات وحروف",
-              "objectiveAr": "أن يتعرّف المتعلم على حروف الإسبانية وأصواتها الأساسية ويقرأ كلمات قصيرة بصوت مفهوم.",
+              "titleAr": "ملحق النطق: الأبجدية والأصوات (اختياري)",
+              "objectiveAr": "قسم مساعد غير مانع للتقدم لتعرّف حروف الإسبانية وأصواتها الأساسية لمن يرغب في مراجعة التهجئة.",
               "levelCode": "PREA1",
               "plannedLessonCount": 3,
               "lessons": [
@@ -101,8 +216,8 @@
             },
             {
               "slug": "prea1-u2-stress",
-              "titleAr": "المقاطع والنبر",
-              "objectiveAr": "أن يقطّع المتعلم الكلمة إلى مقاطع ويضع النبر في موضعه في الكلمات الشائعة.",
+              "titleAr": "ملحق النطق: المقاطع والنبر (اختياري)",
+              "objectiveAr": "قسم مساعد غير مانع للتقدم لتقطيع الكلمة إلى مقاطع ومعرفة موضع النبر في الكلمات الشائعة.",
               "levelCode": "PREA1",
               "plannedLessonCount": 3,
               "lessons": [
@@ -150,121 +265,6 @@
                   "vocabPack": null,
                   "requires": [
                     "prea1-acento-escrito"
-                  ]
-                }
-              ]
-            },
-            {
-              "slug": "prea1-u3-first-words",
-              "titleAr": "أول كلمات",
-              "objectiveAr": "أن يستخدم المتعلم كلمات التحية والأرقام من 1 إلى 10 في موقف بسيط.",
-              "levelCode": "PREA1",
-              "plannedLessonCount": 3,
-              "lessons": [
-                {
-                  "slug": "prea1-saludos-basicos",
-                  "titleAr": "تحيات وأول عبارات",
-                  "objectiveAr": "أن يقول المتعلم ويفهم hola, adiós, gracias, por favor في موقف يومي.",
-                  "skills": [
-                    "listening",
-                    "speaking",
-                    "vocabulary"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "filePath": "content/drafts/prea1/lesson-prea1-saludos-basicos.json",
-                  "vocabPack": null,
-                  "requires": []
-                },
-                {
-                  "slug": "prea1-numeros-1-10",
-                  "titleAr": "الأرقام من 1 إلى 10",
-                  "objectiveAr": "أن يعدّ المتعلم من 1 إلى 10 ويفهم رقمًا مسموعًا.",
-                  "skills": [
-                    "listening",
-                    "vocabulary"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "filePath": "content/drafts/prea1/lesson-prea1-numeros-1-10.json",
-                  "vocabPack": null,
-                  "requires": [
-                    "prea1-saludos-basicos"
-                  ]
-                },
-                {
-                  "slug": "prea1-como-estas",
-                  "titleAr": "كيف حالك؟",
-                  "objectiveAr": "أن يسأل المتعلم ¿Cómo estás? ويجيب بـbien / mal / más o menos.",
-                  "skills": [
-                    "speaking",
-                    "listening"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "filePath": "content/drafts/prea1/lesson-prea1-como-estas.json",
-                  "vocabPack": null,
-                  "requires": [
-                    "prea1-numeros-1-10"
-                  ]
-                }
-              ]
-            },
-            {
-              "slug": "prea1-u4-first-sentence",
-              "titleAr": "أول جملة: أقدّم نفسي",
-              "objectiveAr": "أن يكوّن المتعلم جملتين قصيرتين صحيحتين عن نفسه.",
-              "levelCode": "PREA1",
-              "plannedLessonCount": 3,
-              "lessons": [
-                {
-                  "slug": "prea1-hola-me-llamo",
-                  "titleAr": "أول كلمات: التحية والاسم",
-                  "objectiveAr": "أن يحيّي المتعلم شخصًا ويُعرّف بنفسه في جملتين قصيرتين، وأن يميّز أن حرف h في الإسبانية لا يُنطق.",
-                  "skills": [
-                    "listening",
-                    "reading",
-                    "speaking",
-                    "pronunciation"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "fileNoteAr": "درس عيّنة يستخدمه اختبار التدفق الكامل؛ يُدار خارج content/drafts عن قصد.",
-                  "filePath": "content/drafts/prea1/lesson-prea1-hola-me-llamo.json",
-                  "vocabPack": null,
-                  "requires": []
-                },
-                {
-                  "slug": "prea1-soy-tengo",
-                  "titleAr": "جملتان: أكون وعندي",
-                  "objectiveAr": "أن يفرّق المتعلم بين soy (أكون) و tengo (عندي) في جملة قصيرة عن نفسه.",
-                  "skills": [
-                    "grammar",
-                    "writing"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "filePath": "content/drafts/prea1/lesson-prea1-soy-tengo.json",
-                  "vocabPack": null,
-                  "requires": [
-                    "prea1-hola-me-llamo"
-                  ]
-                },
-                {
-                  "slug": "prea1-practica-integrada",
-                  "titleAr": "تدريب متكامل قصير",
-                  "objectiveAr": "أن يجمع المتعلم التحية والاسم والبلد في حوار من ثلاث جمل.",
-                  "skills": [
-                    "reading",
-                    "writing",
-                    "speaking"
-                  ],
-                  "status": "planned",
-                  "levelCode": "PREA1",
-                  "filePath": "content/drafts/prea1/lesson-prea1-practica-integrada.json",
-                  "vocabPack": null,
-                  "requires": [
-                    "prea1-soy-tengo"
                   ]
                 }
               ]

@@ -336,6 +336,15 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   if (!current) return <p className="container muted">لا توجد تمارين في هذا الدرس.</p>;
   const progressPct = Math.round((index / Math.max(1, exercises.length)) * 100);
+  const mistakesCount = Object.values(results).filter(v => v === false).length;
+  const heartsLeft = Math.max(1, 5 - mistakesCount);
+  let comboStreak = 0;
+  for (let i = index; i >= 0; i--) {
+    const exId = exercises[i]?.id;
+    if (!exId || results[exId] === undefined) continue;
+    if (results[exId] === true) comboStreak++;
+    else if (results[exId] === false) break;
+  }
 
   const label = exerciseLabel(current.type);
   const userAnswerText =
@@ -349,7 +358,7 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
 
   return (
     <div className="lesson-shell" style={{ paddingBottom: 'var(--s-6)' }}>
-      {/* شريط علوي للتركيز: خروج + عنوان + عدّاد + شريط تقدم */}
+      {/* شريط علوي للتركيز: خروج + عنوان + عدّاد + قلوب التركيز + شريط تقدم */}
       <div className="lesson-top">
         <div className="row" style={{ gap: 'var(--s-3)', flexWrap: 'nowrap' }}>
           <button className="lesson-close" onClick={() => navigate('/learn')} aria-label="خروج إلى صفحة اليوم">
@@ -362,6 +371,18 @@ export function Lesson({ slug, navigate }: { slug: string; navigate: (to: string
               <span className="num">{exercises.length}</span>
             </span>
           </div>
+          {comboStreak >= 2 ? (
+            <span className="duo-combo-pill" title="سلسلة إجابات صحيحة متتالية">
+              🔥 <span className="num">{comboStreak}</span> متتالية!
+            </span>
+          ) : null}
+          <span
+            className="duo-heart-pill"
+            title="نقاط التركيز في هذا الدرس (لا تمنع إكمال الدرس)"
+            aria-label={`نقاط التركيز: ${heartsLeft} من 5`}
+          >
+            ❤️ <span className="num">{heartsLeft}</span>
+          </span>
           <button
             type="button"
             className="btn ghost sm"
@@ -467,8 +488,19 @@ function FeedbackPanel({
     <div data-testid="lesson-feedback" className={`feedback-sheet ${cls}`} role="status" aria-live="polite">
       <span className="fb-icon"><Icon name={icon as 'info'} size={21} /></span>
       <div style={{ minWidth: 0, flex: 1 }}>
-        <h3>{title}</h3>
-        {result.feedbackAr && <p style={{ margin: '0 0 4px', fontWeight: 600 }}>{result.feedbackAr}</p>}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <h3 style={{ margin: 0 }}>{title}</h3>
+          {bad ? (
+            <span className="badge danger" style={{ fontSize: '0.72rem' }}>
+              📌 سُجّلت في المراجعة الذكية لتثبيتها
+            </span>
+          ) : !participation ? (
+            <span className="badge success" style={{ fontSize: '0.72rem' }}>
+              +XP إتقان
+            </span>
+          ) : null}
+        </div>
+        {result.feedbackAr && <p style={{ margin: '4px 0', fontWeight: 600 }}>{result.feedbackAr}</p>}
         {bad && result.correctText && (
           <div className="feedback-compare">
             {userAnswerText && (
@@ -507,24 +539,39 @@ function QuestionScene({ children, mood = 'wave' }: { children: ReactNode; mood?
 const EXERCISE_LABEL: Record<string, { label: string; icon: 'volume' | 'cards' | 'sort' | 'chat' | 'book' | 'mic' }> = {
   listen_choose: { label: 'استمع واختر', icon: 'volume' },
   listen_type: { label: 'استمع واكتب', icon: 'volume' },
+  dictation: { label: 'إملاء صوتي', icon: 'volume' },
   audio_dictation: { label: 'إملاء صوتي', icon: 'volume' },
+  reconstruct_audio_sentence: { label: 'استمع وركّب الجملة', icon: 'volume' },
   match_pairs: { label: 'وصّل الكلمات بمعانيها', icon: 'cards' },
-  word_order: { label: 'رتّب الجملة', icon: 'sort' },
+  image_choice: { label: 'اختر الكلمة المطابقة للمعنى', icon: 'cards' },
+  word_order: { label: 'رتّب الكلمات لتكوين جملة', icon: 'sort' },
   sentence_building: { label: 'كوّن الجملة', icon: 'sort' },
   dialogue_order: { label: 'رتّب الحوار', icon: 'sort' },
   fill_blank: { label: 'أكمل الفراغ', icon: 'book' },
+  type_missing_word: { label: 'اكتب الكلمة الناقصة', icon: 'book' },
+  preposition_choice: { label: 'اختر حرف الجر المناسب', icon: 'book' },
+  conjugate_in_context: { label: 'صرّف الفعل في السياق', icon: 'book' },
+  translate_short: { label: 'ترجمة سريعة', icon: 'chat' },
   translate_es_ar: { label: 'ترجم إلى العربية', icon: 'chat' },
   translate_ar_es: { label: 'ترجم إلى الإسبانية', icon: 'chat' },
   translation_es_ar: { label: 'ترجم إلى العربية', icon: 'chat' },
   translation_ar_es: { label: 'ترجم إلى الإسبانية', icon: 'chat' },
   multiple_choice: { label: 'اختر الإجابة الصحيحة', icon: 'cards' },
   word_choice: { label: 'اختر الكلمة الصحيحة', icon: 'cards' },
+  distinguish_similar: { label: 'فرّق بين المتشابهات', icon: 'cards' },
+  infer_meaning: { label: 'استنتج المعنى من السياق', icon: 'book' },
+  choose_reply: { label: 'اختر الرد المناسب في الحوار', icon: 'chat' },
+  phone_call_response: { label: 'ردّ على المكالمة المهنية', icon: 'chat' },
+  resolve_customer_issue: { label: 'حلّ مشكلة العميل', icon: 'chat' },
   reading_comprehension: { label: 'اقرأ ثم أجب', icon: 'book' },
   read_answer: { label: 'اقرأ ثم أجب', icon: 'book' },
+  find_fix_error: { label: 'اكتشف الخطأ وصحّحه', icon: 'book' },
+  review_common_errors: { label: 'تجنّب الخطأ الشائع', icon: 'book' },
   correct_error: { label: 'صحّح الخطأ', icon: 'book' },
   error_correction: { label: 'صحّح الخطأ', icon: 'book' },
   grammar_transform: { label: 'تطبيق القاعدة', icon: 'book' },
   roleplay: { label: 'حوار وتمثيل دور', icon: 'chat' },
+  roleplay_simulation: { label: 'محاكاة حوار تفاعلي', icon: 'chat' },
   speak_with_text: { label: 'تدرّب على النطق', icon: 'mic' },
   speak_free: { label: 'تحدّث بحرية', icon: 'mic' },
   speaking_prompt: { label: 'تدرّب على التحدّث', icon: 'mic' },
@@ -957,7 +1004,6 @@ function ResultScreen({
   const newVocab = session.lesson.brief.newVocabulary.filter(v => v.word);
   const missedExercises = session.exercises.filter(ex => results[ex.id] === false);
   const grammarPoints = session.lesson.brief.grammarPoints ?? [];
-  const grammarTopics = session.lesson.brief.grammarTopics ?? [];
 
   return (
     <div
@@ -1044,7 +1090,7 @@ function ResultScreen({
             <p className="small error-text">أنواع تمارين مطلوبة غير موجودة في هذا الدرس: {completion.missingRequiredTypes.join('، ')}</p>
           )}
 
-          {(newVocab.length > 0 || missedExercises.length > 0 || grammarPoints.length > 0 || grammarTopics.length > 0) && (
+          {(newVocab.length > 0 || missedExercises.length > 0 || grammarPoints.length > 0) && (
             <div className="result-summary-panels">
               {newVocab.length > 0 && (
                 <div className="result-panel">
@@ -1070,15 +1116,12 @@ function ResultScreen({
                 </div>
               )}
 
-              {(grammarPoints.length > 0 || grammarTopics.length > 0) && (
+              {grammarPoints.length > 0 && (
                 <div className="result-panel">
                   <h2>القواعد والمفاهيم المغطاة</h2>
                   <div className="row" style={{ gap: 6, flexWrap: 'wrap' }}>
                     {grammarPoints.map((gp, i) => (
                       <span key={`gp-${i}`} className="badge navy">{gp.titleAr}</span>
-                    ))}
-                    {grammarTopics.map(t => (
-                      <span key={`gt-${t}`} className="badge">{t}</span>
                     ))}
                   </div>
                 </div>

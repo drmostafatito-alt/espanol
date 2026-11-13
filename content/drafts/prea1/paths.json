@@ -10,36 +10,23 @@
       "objectiveAr": "المسار الرئيسي المتسلسل من التمهيد إلى C1 بالأهداف التواصلية.",
       "units": [
         {
-          "slug": "prea1-u1-sounds",
+          "slug": "prea1-u4-first-sentence",
           "levelCode": "PREA1",
-          "titleAr": "أصوات وحروف",
+          "titleAr": "أول محادثة: التحية والتعريف بالنفس",
           "sortOrder": 1,
           "status": "draft",
           "lessons": [
-            "prea1-abecedario",
-            "prea1-vocales",
-            "prea1-h-muda"
-          ],
-          "vocabularyBundles": []
-        },
-        {
-          "slug": "prea1-u2-stress",
-          "levelCode": "PREA1",
-          "titleAr": "المقاطع والنبر",
-          "sortOrder": 2,
-          "status": "draft",
-          "lessons": [
-            "prea1-silabas",
-            "prea1-acento-escrito",
-            "prea1-entonacion"
+            "prea1-hola-me-llamo",
+            "prea1-soy-tengo",
+            "prea1-practica-integrada"
           ],
           "vocabularyBundles": []
         },
         {
           "slug": "prea1-u3-first-words",
           "levelCode": "PREA1",
-          "titleAr": "أول كلمات",
-          "sortOrder": 3,
+          "titleAr": "العبارات الأساسية والأرقام والأسئلة",
+          "sortOrder": 2,
           "status": "draft",
           "lessons": [
             "prea1-saludos-basicos",
@@ -51,15 +38,28 @@
           ]
         },
         {
-          "slug": "prea1-u4-first-sentence",
+          "slug": "prea1-u1-sounds",
           "levelCode": "PREA1",
-          "titleAr": "أول جملة: أقدّم نفسي",
+          "titleAr": "ملحق النطق: الأبجدية والأصوات (اختياري)",
+          "sortOrder": 3,
+          "status": "draft",
+          "lessons": [
+            "prea1-abecedario",
+            "prea1-vocales",
+            "prea1-h-muda"
+          ],
+          "vocabularyBundles": []
+        },
+        {
+          "slug": "prea1-u2-stress",
+          "levelCode": "PREA1",
+          "titleAr": "ملحق النطق: المقاطع والنبر (اختياري)",
           "sortOrder": 4,
           "status": "draft",
           "lessons": [
-            "prea1-hola-me-llamo",
-            "prea1-soy-tengo",
-            "prea1-practica-integrada"
+            "prea1-silabas",
+            "prea1-acento-escrito",
+            "prea1-entonacion"
           ],
           "vocabularyBundles": []
         }

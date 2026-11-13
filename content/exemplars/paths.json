@@ -9,10 +9,10 @@
       "category": "core",
       "objectiveAr": "المسار الرئيسي المتسلسل: تمهيد ثم A1 إلى C1 بالأهداف التواصلية.",
       "units": [
-        { "slug": "prea1-u1-sounds", "levelCode": "PREA1", "titleAr": "أصوات وحروف", "sortOrder": 1, "status": "draft", "lessons": [] },
-        { "slug": "prea1-u2-stress", "levelCode": "PREA1", "titleAr": "المقاطع والنبر", "sortOrder": 2, "status": "draft", "lessons": [] },
-        { "slug": "prea1-u3-first-words", "levelCode": "PREA1", "titleAr": "أول كلمات", "sortOrder": 3, "status": "draft", "lessons": [] },
-        { "slug": "prea1-u4-first-sentence", "levelCode": "PREA1", "titleAr": "أول جملة: أقدّم نفسي", "sortOrder": 4, "status": "draft", "lessons": ["prea1-hola-me-llamo"] },
+        { "slug": "prea1-u4-first-sentence", "levelCode": "PREA1", "titleAr": "أول محادثة: التحية والتعريف بالنفس", "sortOrder": 1, "status": "draft", "lessons": ["prea1-hola-me-llamo"] },
+        { "slug": "prea1-u3-first-words", "levelCode": "PREA1", "titleAr": "العبارات الأساسية والأرقام والأسئلة", "sortOrder": 2, "status": "draft", "lessons": [] },
+        { "slug": "prea1-u1-sounds", "levelCode": "PREA1", "titleAr": "ملحق النطق: الأبجدية والأصوات (اختياري)", "sortOrder": 3, "status": "draft", "lessons": [] },
+        { "slug": "prea1-u2-stress", "levelCode": "PREA1", "titleAr": "ملحق النطق: المقاطع والنبر (اختياري)", "sortOrder": 4, "status": "draft", "lessons": [] },
         { "slug": "a1-u4-food-drink", "levelCode": "A1", "titleAr": "الطعام والشراب والأسعار", "sortOrder": 4, "status": "draft", "lessons": ["a1-un-cafe-por-favor"] }
       ]
     },
